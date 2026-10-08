@@ -12,8 +12,8 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Validate every TOML file under data/
@@ -21,7 +21,7 @@ jobs:
       - name: Build the JSON export
         run: python3 -I tools/export.py dist/hobbydex-rc.json
       - name: Keep the export as a build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: hobbydex-rc-export
           path: dist/hobbydex-rc.json
