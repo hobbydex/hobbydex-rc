@@ -73,7 +73,9 @@ contains = [
 - `listed`: appears in the release's parts list without a kit or option mark
   (tools, consumables, related products, or lists that have no such marks).
 
-Quantities are not yet captured; they come from the manual, not the parts list.
+Rows read from a build manual also carry `qty`, the number of pieces the car
+uses (summed over the steps that use the part), and `step`, the manual's
+reference ("Bag 4 - Step 2"). Rows read from a parts list have neither.
 
 ## part
 
