@@ -33,6 +33,7 @@ ENUMS = {
     "contains.role": {"kit", "option", "listed"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "product_page"},
     "equivalent_to.match": {"exact", "functional", "close"},
+    "fits.type": {"direct", "replaces", "modification"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "unknown"},
 }
 
