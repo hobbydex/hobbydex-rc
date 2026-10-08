@@ -110,6 +110,20 @@ equivalent_to = [
 the spec; material, grade and finish live on the part, because that is what
 differs between a kit screw and its replacement.
 
+`fits`: the kits a part is sold for, from the brand's own fitment data (option
+parts catalogs, matching lists, product pages). Distinct from `contains`,
+which says what comes in a release's box.
+
+```toml
+fits = [
+  { kit = "kit/tamiya/dt-03", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/tt-02", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2" },
+]
+```
+
+`type` is direct (bolt-on), replaces (replaces a stock part) or modification
+(needs changes or extra parts; see notes).
+
 Planned: `numbers` (aliases such as Tamiya's 7-digit spare number, 8-digit SKU
 and X-number for one part), `supersedes`.
 
