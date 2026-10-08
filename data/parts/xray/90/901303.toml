@@ -3,3 +3,7 @@ brand = "brand/xray"
 number = "901303"
 name = "HEX SCREW SB M3x3"
 pack_qty = 10
+equivalent_to = [
+  { spec = "spec/screw/m3x3-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
