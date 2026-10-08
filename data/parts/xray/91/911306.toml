@@ -3,3 +3,7 @@ brand = "brand/xray"
 number = "911306"
 name = "HEX SCREW FLANGED SH M3x6"
 pack_qty = 10
+equivalent_to = [
+  { spec = "spec/screw/m3x6-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

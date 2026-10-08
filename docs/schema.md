@@ -93,6 +93,9 @@ pack_qty = 2
 former_names = ["COMPOSITE STEERING BLOCK"]
 ```
 
+Optional, generated when the source states it: `applies_to`, the models the
+brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
+
 Optional, hand-curated (the importer preserves them when it regenerates the
 file): `material` (steel | stainless | titanium | aluminium | brass | plastic |
 unknown), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
