@@ -1,0 +1,15 @@
+id = "release/ftx/mk2rs-rally"
+kit = "kit/ftx/mk2rs-rally"
+brand = "brand/ftx"
+name = "MK2RS Rally"
+year = 2025
+kind = "rtr"
+status = "discontinued"
+documents = ["doc/ftx/cml-mk2rs-rally-manual"]
+notes = "Year of the oldest document; part numbers and names read by OCR from scanned FTX documents"
+contains = [
+  { part = "part/ftx/FTX1131", role = "kit", source = "doc/ftx/cml-mk2rs-rally-manual" },
+  { part = "part/ftx/FTX1135", role = "kit", source = "doc/ftx/cml-mk2rs-rally-manual" },
+  { part = "part/ftx/FTX1155", role = "kit", source = "doc/ftx/cml-mk2rs-rally-manual" },
+  { part = "part/ftx/FTX6550", role = "kit", source = "doc/ftx/cml-mk2rs-rally-manual" },
+]
