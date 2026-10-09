@@ -6,5 +6,6 @@ pack_qty = 10
 material = "steel"
 equivalent_to = [
   { spec = "spec/screw/m3x10-button-hex", match = "functional", source = "doc/xray/xb2-2026-part-list", notes = "Geometry from the XRAY description (SH/SFH/SB = socket, flat, button head); the standard is not cited by XRAY" },
+  { spec = "spec/screw/m3x10-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
