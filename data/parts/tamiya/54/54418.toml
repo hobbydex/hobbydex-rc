@@ -1,7 +1,7 @@
 id = "part/tamiya/54418"
 brand = "brand/tamiya"
 number = "54418"
-name = "Silicone Diff. Oil"
+name = "Silicone Diff. Oil #500000"
 fits = [
   { kit = "kit/tamiya/m-07", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/ta07", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -20,3 +20,9 @@ fits = [
   { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
 ]
 category = "oil-grease"
+category_source = "curated"
+volume_ml = 30
+equivalent_to = [
+  { spec = "spec/oil/silicone-500000cst", match = "close", notes = "Tamiya #500000; Tamiya grades by number and does not state cSt" },
+]
+notes = "Grade and volume from the Tamiya product page (https://www.tamiya.com/english/products/54418/index.html)"
