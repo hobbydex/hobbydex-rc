@@ -1,5 +1,11 @@
 id = "part/yokomo/RP-042-12A"
 brand = "brand/yokomo"
 number = "RP-042-12A"
-name = "M3x12mm フラットヘッドスクリュー 高精度切削チタン製"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "M3x12mm Flat Head Screw Precision Machined Titanium"
+name_ja = "M3x12mm フラットヘッドスクリュー 高精度切削チタン製"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"
+category = "screw"

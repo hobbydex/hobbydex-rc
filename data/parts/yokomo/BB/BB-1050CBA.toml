@@ -1,6 +1,11 @@
 id = "part/yokomo/BB-1050CBA"
 brand = "brand/yokomo"
 number = "BB-1050CBA"
-name = "φ 5x φ 10x4mm セラミックボールベアリング"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "5x 10x4mm Ceramic Ball Bearing"
+name_ja = "φ 5x φ 10x4mm セラミックボールベアリング"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

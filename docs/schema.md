@@ -209,6 +209,9 @@ Releases can carry a `gtin` too, the barcode on the kit's box.
 Planned: `numbers` (aliases such as Tamiya's 7-digit spare number, 8-digit SKU
 and X-number for one part).
 
+`name_ja`: the brand's Japanese name, kept when the English `name` is a
+translation (Yokomo publishes Japanese-only parts lists).
+
 `supersedes`: the part this one replaces, when the brand has replaced it with
 an upgraded version (`supersedes = "part/team-corally/C-00180-194"` on
 C-00180-714). The site shows it on both parts.

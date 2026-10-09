@@ -1,6 +1,11 @@
 id = "part/yokomo/BB-850PA"
 brand = "brand/yokomo"
 number = "BB-850PA"
-name = "φ 5x φ 8x2.5mm スーパープレシジョンベアリング"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "5x 8x2.5mm Super Precision Bearing"
+name_ja = "φ 5x φ 8x2.5mm スーパープレシジョンベアリング"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

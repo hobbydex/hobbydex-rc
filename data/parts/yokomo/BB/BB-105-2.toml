@@ -1,6 +1,12 @@
 id = "part/yokomo/BB-105-2"
 brand = "brand/yokomo"
 number = "BB-105-2"
-name = "ボール ベアリング Φ 5x Φ 10x4mm 2"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Ball Bearing 5x 10x4mm"
+pack_qty = 2
+name_ja = "ボール ベアリング Φ 5x Φ 10x4mm 2"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

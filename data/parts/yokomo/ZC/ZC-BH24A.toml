@@ -1,5 +1,12 @@
 id = "part/yokomo/ZC-BH24A"
 brand = "brand/yokomo"
 number = "ZC-BH24A"
-name = "Ｍ２ｘ４mm ボタンヘッド スクリュー（10 本入）"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "M2x4mm Button Head Screw"
+pack_qty = 10
+name_ja = "Ｍ２ｘ４mm ボタンヘッド スクリュー（10 本入）"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m2x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
