@@ -1,5 +1,11 @@
 id = "part/quanum/10232"
 brand = "brand/quanum"
 number = "10232"
-name = "10232"
-notes = "Read by OCR from a scanned Quanum manual drawing; the manual gives no name"
+name = "Ball Bearing 10x15x4mm"
+pack_qty = 6
+notes = "Name from the Part List of a scanned Quanum manual"
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
