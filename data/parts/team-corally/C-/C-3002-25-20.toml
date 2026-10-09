@@ -5,6 +5,6 @@ name = "Hex Flat Head Screw M2.5x20"
 pack_qty = 10
 material = "steel"
 equivalent_to = [
-  { spec = "spec/screw/m2.5x20-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/screw/m2.5x20-countersunk-hex", match = "exact", source = "doc/team-corally/screw-chart", notes = "DIN 7991 stated by Corally" },
 ]
 category = "screw"

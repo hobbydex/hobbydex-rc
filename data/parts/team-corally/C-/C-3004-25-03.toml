@@ -1,5 +1,11 @@
 id = "part/team-corally/C-3004-25-03"
 brand = "brand/team-corally"
 number = "C-3004-25-03"
-name = "C-3004-25-03"
-notes = "Corally publishes this part by number on an exploded view; no name in the source documents"
+name = "Steel Set Screws M2.5 x 3mm - Hex"
+pack_qty = 10
+notes = "Name from the Corally web shop, https://corally.com/en/product/C-3004-25-03"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

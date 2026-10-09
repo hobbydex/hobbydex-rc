@@ -1,5 +1,11 @@
 id = "part/team-corally/C-3003-30-23"
 brand = "brand/team-corally"
 number = "C-3003-30-23"
-name = "C-3003-30-23"
-notes = "Corally publishes this part by number on an exploded view; no name in the source documents"
+name = "Hex Button Head Screw - M3x23 - Steel"
+pack_qty = 10
+notes = "Name from the Corally web shop, https://corally.com/en/product/C-3003-30-23"
+equivalent_to = [
+  { spec = "spec/screw/m3x23-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

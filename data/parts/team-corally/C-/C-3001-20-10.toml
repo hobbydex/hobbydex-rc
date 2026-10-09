@@ -1,5 +1,11 @@
 id = "part/team-corally/C-3001-20-10"
 brand = "brand/team-corally"
 number = "C-3001-20-10"
-name = "C-3001-20-10"
-notes = "Corally publishes this part by number on an exploded view; no name in the source documents"
+name = "Steel Screws M2 x 10mm - Hex Socket Head"
+pack_qty = 10
+notes = "Name from the Corally web shop, https://corally.com/en/product/C-3001-20-10"
+equivalent_to = [
+  { spec = "spec/screw/m2x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
