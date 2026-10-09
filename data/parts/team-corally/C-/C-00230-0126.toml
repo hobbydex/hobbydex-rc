@@ -4,3 +4,6 @@ number = "C-00230-0126"
 name = "48 DP Pinion - 19T - Shaft Dia. 3.14mm"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-00230-0126"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-19t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

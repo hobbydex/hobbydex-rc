@@ -9,3 +9,7 @@ fits = [
   { kit = "kit/tamiya/trf421", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
 ]
 category = "pinion"
+includes = [
+  { spec = "spec/pinion/mod0.4-30t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.4-31t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]
