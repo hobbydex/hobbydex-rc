@@ -1,0 +1,15 @@
+id = "part/futaba/BLS671SV"
+brand = "brand/futaba"
+number = "BLS671SV"
+name = "BLS671SV (S.Bus2/Brushless)"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 8.3
+voltage = 7.4
+speed_s = 0.1
+dimensions_mm = [33, 15, 27.1]
+weight_g = 28
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]

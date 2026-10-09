@@ -1,0 +1,15 @@
+id = "part/futaba/BLS373SV"
+brand = "brand/futaba"
+number = "BLS373SV"
+name = "BLS373SV (S.Bus2/Brushless)"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 37
+voltage = 7.4
+speed_s = 0.11
+dimensions_mm = [40.5, 21, 40]
+weight_g = 84
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]

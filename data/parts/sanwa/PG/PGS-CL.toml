@@ -1,0 +1,15 @@
+id = "part/sanwa/PGS-CL"
+brand = "brand/sanwa"
+number = "PGS-CL"
+name = "PGS-CL"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 16.6
+voltage = 7.4
+speed_s = 0.08
+dimensions_mm = [40.5, 20.5, 26.5]
+weight_g = 49.6
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/low-profile", match = "functional", notes = "Size class from the case size from Sanwa's specifications; check the mounting holes" },
+]

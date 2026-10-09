@@ -1,0 +1,15 @@
+id = "part/futaba/HPS-CT500"
+brand = "brand/futaba"
+number = "HPS-CT500"
+name = "HPS-CT500 (No BEC, S.Bus2/Brushless)"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 21
+voltage = 7.4
+speed_s = 0.06
+dimensions_mm = [40.5, 21, 26.9]
+weight_g = 44
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]

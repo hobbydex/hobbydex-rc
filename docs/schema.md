@@ -270,7 +270,7 @@ wing) and `spline_teeth`; id `spec/servo/standard-25t`. Two servos of one
 spec can still differ in case size and mounting holes, so the part keeps
 `dimensions_mm`, `weight_g`, `torque_kgcm` and `speed_s` (seconds per 60
 degrees) at `voltage`, `voltage_range`, `gear_material`, `motor` (brushless |
-coreless | cored) and `connector`.
+coreless | cored), `connector` and `rotation_deg` (the throw, when the brand states it).
 
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.

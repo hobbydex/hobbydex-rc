@@ -1,0 +1,15 @@
+id = "part/sanwa/PGS-XR"
+brand = "brand/sanwa"
+number = "PGS-XR"
+name = "PGS-XR"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 17.3
+voltage = 7.4
+speed_s = 0.09
+dimensions_mm = [40.2, 20.5, 38.7]
+weight_g = 72
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from Sanwa's specifications; check the mounting holes" },
+]
