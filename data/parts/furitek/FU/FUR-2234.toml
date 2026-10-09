@@ -5,3 +5,7 @@ name = "SPRINGBOK METAL GEAR 9G DIGITAL SERVO"
 category = "servo"
 category_source = "curated"
 motor = "cored"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/micro-21t", match = "functional", notes = "Size class and spline from Furitek's description; check the case size and mounting holes" },
+]

@@ -7,3 +7,7 @@ category = "servo"
 category_source = "curated"
 weight_g = 4.3
 motor = "coreless"
+dimensions_mm = [20.2, 8.5, 19.3]
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", notes = "Size class and spline from Furitek's description; check the case size and mounting holes" },
+]
