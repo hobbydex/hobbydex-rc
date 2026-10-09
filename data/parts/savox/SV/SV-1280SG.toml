@@ -1,0 +1,18 @@
+id = "part/savox/SV-1280SG"
+brand = "brand/savox"
+number = "SV-1280SG"
+name = "SV-1280SG Standard Size Digital HV Coreless Steel Gear Servo"
+category = "servo"
+gtin = "4710006994314"
+dimensions_mm = [40.3, 20.2, 38.2]
+weight_g = 76
+torque_kgcm = 55
+voltage = 8.4
+speed_s = 0.12
+voltage_range = "6.0V - 8.4V"
+gear_material = "steel"
+motor = "coreless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

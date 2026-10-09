@@ -1,0 +1,17 @@
+id = "part/savox/SG-1213MG"
+brand = "brand/savox"
+number = "SG-1213MG"
+name = "SG-1213MG Micro Digital HV Coreless Metal Gear Servo"
+category = "servo"
+dimensions_mm = [24, 9.2, 26.4]
+weight_g = 14
+torque_kgcm = 5.5
+voltage = 8.4
+speed_s = 0.16
+voltage_range = "6.0V - 8.4V"
+gear_material = "metal gears"
+motor = "coreless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/micro-21t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

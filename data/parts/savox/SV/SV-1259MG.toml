@@ -1,0 +1,17 @@
+id = "part/savox/SV-1259MG"
+brand = "brand/savox"
+number = "SV-1259MG"
+name = "SV-1259MG Low Profile Digital HV Coreless Metal Gear Servo"
+category = "servo"
+dimensions_mm = [40.8, 20.2, 27.4]
+weight_g = 49
+torque_kgcm = 22
+voltage = 8.4
+speed_s = 0.075
+voltage_range = "6.0V - 8.4V"
+gear_material = "composite + metal gears"
+motor = "coreless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

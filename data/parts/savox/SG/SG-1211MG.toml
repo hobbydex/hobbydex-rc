@@ -1,0 +1,18 @@
+id = "part/savox/SG-1211MG"
+brand = "brand/savox"
+number = "SG-1211MG"
+name = "SG-1211MG Micro Digital HV Coreless Metal Gear Servo"
+category = "servo"
+gtin = "4710006993591"
+dimensions_mm = [30, 10, 36]
+weight_g = 30
+torque_kgcm = 13
+voltage = 8.4
+speed_s = 0.14
+voltage_range = "6.0V - 8.4V"
+gear_material = "metal gears"
+motor = "coreless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/wing-21t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

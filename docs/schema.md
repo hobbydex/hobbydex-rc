@@ -265,6 +265,13 @@ dimensions_mm = [61, 26, 21]
 weight_g = 69
 ```
 
+Servos: `size_class` (micro | mini | midi | standard | low-profile | jumbo |
+wing) and `spline_teeth`; id `spec/servo/standard-25t`. Two servos of one
+spec can still differ in case size and mounting holes, so the part keeps
+`dimensions_mm`, `weight_g`, `torque_kgcm` and `speed_s` (seconds per 60
+degrees) at `voltage`, `voltage_range`, `gear_material`, `motor` (brushless |
+coreless | cored) and `connector`.
+
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.
 

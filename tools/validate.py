@@ -37,7 +37,7 @@ ENUMS = {
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "ceramic", "carbide", "unknown"},
-    "part.category": {"ball-end", "battery", "bearing", "body", "bumper-guard", "chassis", "decal", "differential", "drivetrain", "electronics", "engine-fuel", "gear", "motor", "nut", "o-ring-seal", "oil-grease", "pin-clip", "pinion", "screw", "shock", "shock-spring", "spur-gear", "steering", "suspension", "tire", "tool", "washer-shim", "wheel", "wing"},
+    "part.category": {"ball-end", "battery", "bearing", "body", "bumper-guard", "charger", "chassis", "decal", "differential", "drivetrain", "electronics", "engine-fuel", "gear", "motor", "nut", "o-ring-seal", "oil-grease", "pin-clip", "pinion", "screw", "servo", "shock", "shock-spring", "spur-gear", "steering", "suspension", "tire", "tool", "washer-shim", "wheel", "wing"},
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.lubricant": {"oil", "grease"},

@@ -1,0 +1,18 @@
+id = "part/savox/B-12KG"
+brand = "brand/savox"
+number = "B-12KG"
+name = "B-12KG Standard Size Analog DC Motor Servo"
+category = "servo"
+gtin = "4710006994062"
+dimensions_mm = [40.7, 20, 41.4]
+weight_g = 52
+torque_kgcm = 12
+voltage = 6
+speed_s = 0.23
+voltage_range = "4.8V - 6.0V"
+gear_material = "metal gears"
+motor = "cored"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

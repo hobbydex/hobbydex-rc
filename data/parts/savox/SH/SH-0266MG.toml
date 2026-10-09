@@ -1,0 +1,17 @@
+id = "part/savox/SH-0266MG"
+brand = "brand/savox"
+number = "SH-0266MG"
+name = "SH-0266MG Mini Digital DC Motor Metal Gear Servo"
+category = "servo"
+dimensions_mm = [32.4, 16.8, 30.3]
+weight_g = 25
+torque_kgcm = 8.5
+voltage = 6
+speed_s = 0.13
+voltage_range = "4.8V - 6.0V"
+gear_material = "composite + metal gears"
+motor = "cored"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]
