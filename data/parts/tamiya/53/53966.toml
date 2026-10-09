@@ -12,3 +12,7 @@ category = "pinion"
 equivalent_to = [
   { spec = "spec/pinion/48dp-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
+includes = [
+  { spec = "spec/pinion/48dp-20t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/48dp-21t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]

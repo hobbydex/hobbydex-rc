@@ -7,3 +7,7 @@ fits = [
   { kit = "kit/tamiya/tt-02ft", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
 ]
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod0.6-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "aluminium"
