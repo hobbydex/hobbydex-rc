@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEA11K4S10E5GT"
+brand = "brand/gens-ace"
+number = "GEA11K4S10E5GT"
+name = "11000mAh 4S 100C 14.8V Lipo Battery | EC5 Plug | Bashing Pro"
+category = "battery"
+chemistry = "lipo"
+cells = 4
+capacity_mah = 11000
+c_rating = 100
+connector = "EC5"
+case = "hard"
+dimensions_mm = [178, 51, 52]
+weight_g = 989
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-11000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

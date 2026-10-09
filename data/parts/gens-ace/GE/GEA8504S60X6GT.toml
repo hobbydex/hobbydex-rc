@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA8504S60X6GT"
+brand = "brand/gens-ace"
+number = "GEA8504S60X6GT"
+name = "850mAh 4S 60C 14.8V Lipo Battery | XT60 Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 4
+capacity_mah = 850
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [58, 31, 29]
+weight_g = 108
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-850mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

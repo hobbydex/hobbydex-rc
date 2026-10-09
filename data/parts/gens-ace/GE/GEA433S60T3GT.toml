@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA433S60T3GT"
+brand = "brand/gens-ace"
+number = "GEA433S60T3GT"
+name = "4300mAh 3S 60C 11.4V(HV) Lipo Battery | XT60 / 1To3 Plug"
+category = "battery"
+chemistry = "lihv"
+cells = 3
+capacity_mah = 4300
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [92, 42, 29]
+weight_g = 244
+equivalent_to = [
+  { spec = "spec/battery/lihv-3s-4300mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEA222S60X76GT"
+brand = "brand/gens-ace"
+number = "GEA222S60X76GT"
+name = "2200mAh 2S 60C 7.4V Lipo Battery | Hardcase | XT60 Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2200
+c_rating = 60
+connector = "XT60"
+case = "hard"
+dimensions_mm = [92, 31, 17]
+weight_g = 108
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2200mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

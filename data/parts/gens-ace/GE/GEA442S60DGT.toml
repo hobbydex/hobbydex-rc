@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEA442S60DGT"
+brand = "brand/gens-ace"
+number = "GEA442S60DGT"
+name = "4400mAh 2S 60C 7.4V Lipo Battery | Hardcase | Deans Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4400
+c_rating = 60
+connector = "Deans"
+case = "hard"
+dimensions_mm = [134, 45, 24]
+weight_g = 231
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4400mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

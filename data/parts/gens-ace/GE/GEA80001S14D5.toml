@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA80001S14D5"
+brand = "brand/gens-ace"
+number = "GEA80001S14D5"
+name = "Redline 2.0 Series 8000mAh 1S2P 3.8V 140C HardCase HV Lipo Battery Pack with Hardcase 65#"
+category = "battery"
+chemistry = "lihv"
+cells = 1
+capacity_mah = 8000
+c_rating = 140
+case = "hard"
+dimensions_mm = [92, 46, 18]
+weight_g = 145
+equivalent_to = [
+  { spec = "spec/battery/lihv-1s-8000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

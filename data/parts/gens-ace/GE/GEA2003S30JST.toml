@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA2003S30JST"
+brand = "brand/gens-ace"
+number = "GEA2003S30JST"
+name = "200mAh 11.1V 30C 3S1P Lipo Battery Pack with JST-SYP Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 3
+capacity_mah = 200
+c_rating = 30
+connector = "JST"
+dimensions_mm = [30, 18, 18]
+weight_g = 17
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-200mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

@@ -245,6 +245,21 @@ pitch, 48) or `module` (0.5, 1); id `spec/pinion/48dp-20t` or
 material, because one geometry is sold for several shaft sizes and brands
 often leave the bore out.
 
+Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh),
+`cells`, `capacity_mah` and `nominal_v`; id `spec/battery/lipo-2s-5000mah`.
+Whether a pack fits a car depends on the part's `c_rating`, `case` (hard |
+soft | shorty), `dimensions_mm` ([length, width, height]), `weight_g` and
+`connector` (XT60, EC5, Deans, ...), so those stay on the part.
+
+```toml
+name = "1100mAh 3S 60C 11.4V(HV) Lipo Battery | XT30 Plug"
+equivalent_to = [{ spec = "spec/battery/lihv-3s-1100mah", match = "functional" }]
+c_rating = 60
+connector = "XT30"
+dimensions_mm = [61, 26, 21]
+weight_g = 69
+```
+
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.
 

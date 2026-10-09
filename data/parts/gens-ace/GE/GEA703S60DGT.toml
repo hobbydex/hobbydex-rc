@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEA703S60DGT"
+brand = "brand/gens-ace"
+number = "GEA703S60DGT"
+name = "7000mAh 3S 60C 11.1V Lipo Battery | Deans Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 3
+capacity_mah = 7000
+c_rating = 60
+connector = "Deans"
+case = "hard"
+dimensions_mm = [138, 46, 38]
+weight_g = 447
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-7000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

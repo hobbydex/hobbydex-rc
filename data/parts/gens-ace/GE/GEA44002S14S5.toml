@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEA44002S14S5"
+brand = "brand/gens-ace"
+number = "GEA44002S14S5"
+name = "4400mAh 2S 140C 7.6V(HV) Shorty Lipo Battery | 5.0mm bullet | Redline"
+category = "battery"
+chemistry = "lihv"
+cells = 2
+capacity_mah = 4400
+c_rating = 140
+connector = "5mm bullet"
+case = "shorty"
+dimensions_mm = [95, 46, 18]
+weight_g = 161
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4400mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

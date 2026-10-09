@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA243S60X6GT"
+brand = "brand/gens-ace"
+number = "GEA243S60X6GT"
+name = "2400mAh 3S 60C 11.1V Lipo Battery | XT60 Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2400
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [109, 34, 21]
+weight_g = 177
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2400mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
