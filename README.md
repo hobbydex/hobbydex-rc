@@ -27,6 +27,10 @@ python3 -I tools/validate.py
 ```
 
 `tools/export.py` writes the JSON export the website is built from.
+`tools/audit.py` lists what is still missing (parts named only by number,
+OCR-read names, screws and bearings without a spec link, kits without
+scale or power), per brand; `--list <check>` prints the entities, a
+to-do list for contributors.
 
 Parts and release contents are generated from manufacturer documents by
 importers that are kept out of this repository; each generated row names its
