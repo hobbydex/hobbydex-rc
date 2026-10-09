@@ -189,7 +189,7 @@ and X-number for one part), `supersedes`.
 
 A generic, brand-independent specification. Category-specific fields; for
 screws: `thread`, `length_mm`, `head` (countersunk | socket-cap | button |
-pan | ...), `drive` (hex | torx | phillips | slot), `standards`. No material:
+pan | ...), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
 the same geometry exists in many materials.
 
 ```toml

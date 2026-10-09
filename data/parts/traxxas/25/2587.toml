@@ -2,3 +2,7 @@ id = "part/traxxas/2587"
 brand = "brand/traxxas"
 number = "2587"
 name = "Screws, 3x10mm caphead machine (6) (no washer)"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
