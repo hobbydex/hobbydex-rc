@@ -3,4 +3,12 @@ brand = "brand/furitek"
 number = "FUR-2837"
 name = "RAPTOR 11KG High-Speed Servo for 1/24 & 1/18 RC Crawlers with Aluminum Servo Horn"
 applies_to = "1/24 & 1/18 RC Crawlers with Aluminum Servo Horn"
-category = "steering"
+category = "servo"
+dimensions_mm = [23, 12, 27.4]
+weight_g = 20
+category_source = "curated"
+gear_material = "steel"
+connector = "JST ZHR-3"
+equivalent_to = [
+  { spec = "spec/servo/micro-25t", match = "functional", notes = "Size class and spline from Furitek's description; check the case size and mounting holes" },
+]
