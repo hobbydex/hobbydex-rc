@@ -1,7 +1,7 @@
 id = "part/tamiya/22006"
 brand = "brand/tamiya"
 number = "22006"
-name = "Silicone Oil"
+name = "Silicone Oil #4000"
 fits = [
   { kit = "kit/tamiya/bb-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2: 1 54875 #2 54471" },
   { kit = "kit/tamiya/m-07", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -25,3 +25,8 @@ fits = [
   { kit = "kit/tamiya/xv-02rs", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
 ]
 category = "oil-grease"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/oil/silicone-4000cst", match = "close", notes = "Tamiya #4000; Tamiya grades by number and does not state cSt" },
+]
+notes = "Name corrected by hand from the Tamiya product page (https://www.tamiya.com/english/products/22006/index.html)"
