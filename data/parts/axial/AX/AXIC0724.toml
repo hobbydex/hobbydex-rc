@@ -3,3 +3,7 @@ brand = "brand/axial"
 number = "AXIC0724"
 name = "Pinion Gear 32P 13T Steel 3mm Motor Shaft"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"

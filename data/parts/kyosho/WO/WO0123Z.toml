@@ -4,3 +4,6 @@ number = "WO0123Z"
 name = "Hard Pinion Gear (23T-48P)"
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-23t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

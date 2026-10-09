@@ -9,3 +9,6 @@ fits = [
   { kit = "kit/tamiya/td4", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: 22031" },
 ]
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-22t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

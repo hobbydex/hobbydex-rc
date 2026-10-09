@@ -5,3 +5,6 @@ name = "Stee! Pinion Gear (17T-48P)"
 former_names = ["! Steel Pinion Gear (17T-48P)", "Steel Pinion Gear(17T)1/48 Pitch RF-IVELAVE VITAE YF"]
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-17t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

@@ -3,3 +3,7 @@ brand = "brand/losi"
 number = "LOS242054"
 name = "Pinion Gear, 14T, 1.0M. 5mm shaft"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

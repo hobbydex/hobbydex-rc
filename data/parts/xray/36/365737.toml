@@ -3,3 +3,7 @@ brand = "brand/xray"
 number = "365737"
 name = "ALU PINION GEAR - HARD COATED 37T / 48"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-37t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "aluminium"

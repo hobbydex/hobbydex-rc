@@ -7,3 +7,6 @@ fits = [
   { kit = "kit/tamiya/xv-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: 54378" },
 ]
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-26t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

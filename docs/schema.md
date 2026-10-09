@@ -230,6 +230,12 @@ designation = "MR105"
 
 Oils: `base` (silicone) and `viscosity_cst`; id `spec/oil/silicone-350cst`.
 
+Pinions: the meshing geometry, `teeth` and either `pitch_dp` (diametral
+pitch, 48) or `module` (0.5, 1); id `spec/pinion/48dp-20t` or
+`spec/pinion/mod0.5-20t`. The bore is on the part (`bore_mm`), with the
+material, because one geometry is sold for several shaft sizes and brands
+often leave the bore out.
+
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.
 

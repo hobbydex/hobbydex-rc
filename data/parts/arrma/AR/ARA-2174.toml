@@ -3,3 +3,7 @@ brand = "brand/arrma"
 number = "ARA-2174"
 name = "Pinion Gear 23T MOD 0.5 CNC 3.2mm Bore"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod0.5-23t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 3.2

@@ -4,3 +4,7 @@ number = "TKR4173"
 name = ">TKR4178 - M5 Pinion Gear (12t-18t, MOD1, 5mm bore, M5 set screw)"
 former_names = ["M5 Pinion Gear (13t, MOD1, 5mm bore, M5 set screw)"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5
