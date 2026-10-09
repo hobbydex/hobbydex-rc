@@ -4,3 +4,7 @@ number = "PNGS0821"
 name = "Steel Pinion Gear (21T/0.8M/ ゆ 5.0)"
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod0.8-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"

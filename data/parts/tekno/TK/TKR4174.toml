@@ -3,3 +3,7 @@ brand = "brand/tekno"
 number = "TKR4174"
 name = "M5 Pinion Gear (14t, MOD1, 5mm bore, M5 set screw)"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

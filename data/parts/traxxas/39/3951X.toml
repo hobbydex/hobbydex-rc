@@ -3,3 +3,8 @@ brand = "brand/traxxas"
 number = "3951X"
 name = "Gear, 21-T pinion (32-p), heavy duty (machined, hardened steel) (fits 3mm shaft)/ set screw"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 3
+material = "steel"

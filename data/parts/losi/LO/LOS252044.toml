@@ -3,3 +3,7 @@ brand = "brand/losi"
 number = "LOS252044"
 name = "Pinion Gear 21T 8mm Shaft 1.5M"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod1.5-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 8

@@ -4,3 +4,7 @@ number = "PNGS4829"
 name = "Steel Pinion Gear (29T-48P)"
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-29t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"

@@ -5,3 +5,6 @@ name = "Stéel Pinion Gear (16T-48P)"
 former_names = ["Steel Pinion Gear (16T-48P)", "~ PNGS4836"]
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
