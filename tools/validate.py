@@ -34,6 +34,8 @@ ENUMS = {
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "product_page"},
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
+    "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
+    "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "unknown"},
 }
 

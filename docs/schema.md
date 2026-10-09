@@ -48,6 +48,19 @@ drive = "2wd"        # 2wd | 4wd
 power = "electric"   # electric | nitro
 ```
 
+Optional on a kit: `rebrand_of`, the kits this one is the same car as under
+another name, and `same_platform_as`, kits that share a chassis platform without
+being the same car. Each entry names the kit, `parts` (interchangeable |
+partly | unknown) and a `source` document or `notes` saying where the claim
+comes from. The relation is recorded once, on the rebranded kit; the site
+shows it from both sides.
+
+```toml
+rebrand_of = [
+  { kit = "kit/ftx/vantage", parts = "interchangeable", notes = "Same car sold by HobbyKing under its Quanum brand" },
+]
+```
+
 ## release
 
 One sold product: a yearly edition, a Carpet or Dirt version, an RTR, a
