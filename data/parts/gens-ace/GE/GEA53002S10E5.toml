@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA53002S10E5"
 name = "5300mAh 2S 100C 7.4V Lipo Battery | EC5 Plug | Bashing Pro"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5300mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 2
 capacity_mah = 5300
@@ -11,6 +14,3 @@ connector = "EC5"
 case = "hard"
 dimensions_mm = [138, 46, 24]
 weight_g = 276
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-5300mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

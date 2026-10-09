@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA61002S14D5"
 name = "6100mAh 2S 140C 7.6V(HV) Lipo Battery | 5.0mm bullet | Redline"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6100mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lihv"
 cells = 2
 capacity_mah = 6100
@@ -10,6 +13,3 @@ c_rating = 140
 connector = "5mm bullet"
 dimensions_mm = [138, 46, 18]
 weight_g = 224
-equivalent_to = [
-  { spec = "spec/battery/lihv-2s-6100mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

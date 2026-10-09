@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA172S35E2GT"
 name = "1700mAh 2S 35C 7.4V Lipo Battery | Hardcase | IEC2 Plug"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1700mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 2
 capacity_mah = 1700
@@ -10,6 +13,3 @@ c_rating = 35
 connector = "EC2"
 case = "hard"
 dimensions_mm = [100, 30, 20]
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-1700mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

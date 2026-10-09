@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA653S60E5GT"
 name = "6500mAh 3S 60C 11.1V Lipo Battery | EC5 Plug"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-6500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 3
 capacity_mah = 6500
@@ -11,6 +14,3 @@ connector = "EC5"
 case = "soft"
 dimensions_mm = [154, 47, 26]
 weight_g = 421
-equivalent_to = [
-  { spec = "spec/battery/lipo-3s-6500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

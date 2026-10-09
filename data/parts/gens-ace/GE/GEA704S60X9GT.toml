@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA704S60X9GT"
 name = "G-Tech 7000mAh 14.8V 60C 4S1P Lipo Battery Pack with XT90 Plug Bashing Series"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-7000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 4
 capacity_mah = 7000
@@ -11,6 +14,3 @@ connector = "XT90"
 case = "hard"
 dimensions_mm = [138, 46, 49]
 weight_g = 588
-equivalent_to = [
-  { spec = "spec/battery/lipo-4s-7000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

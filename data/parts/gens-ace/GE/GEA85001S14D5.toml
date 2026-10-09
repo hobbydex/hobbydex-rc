@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA85001S14D5"
 name = "8500mAh 1S 140C 3.7V Shorty Lipo Battery | 5.0mm bullet | Redline"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-8500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 1
 capacity_mah = 8500
@@ -11,6 +14,3 @@ connector = "5mm bullet"
 case = "shorty"
 dimensions_mm = [92, 46, 18]
 weight_g = 161
-equivalent_to = [
-  { spec = "spec/battery/lipo-1s-8500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

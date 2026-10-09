@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA67504S60GT"
 name = "6750mAh 4S 60C 14.8V Lipo Battery | XT90 Plug"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6750mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 4
 capacity_mah = 6750
@@ -10,6 +13,3 @@ c_rating = 60
 connector = "XT90"
 dimensions_mm = [181, 49, 34]
 weight_g = 658
-equivalent_to = [
-  { spec = "spec/battery/lipo-4s-6750mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

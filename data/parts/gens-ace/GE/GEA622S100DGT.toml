@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA622S100DGT"
 name = "6200mAh 2S 100C 7.4V Lipo Battery | Deans Plug | Bashing Pro"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6200mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 2
 capacity_mah = 6200
@@ -10,6 +13,3 @@ c_rating = 100
 connector = "Deans"
 dimensions_mm = [138, 46, 25]
 weight_g = 309
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-6200mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

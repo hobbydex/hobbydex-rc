@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA60004S13S"
 name = "6000mAh 4S 130C 15.2V(HV) Shorty Lipo Battery | 5.0mm bullet | Redline"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-6000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lihv"
 cells = 4
 capacity_mah = 6000
@@ -11,6 +14,3 @@ connector = "5mm bullet"
 case = "shorty"
 dimensions_mm = [97, 46, 46]
 weight_g = 410
-equivalent_to = [
-  { spec = "spec/battery/lihv-4s-6000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]
