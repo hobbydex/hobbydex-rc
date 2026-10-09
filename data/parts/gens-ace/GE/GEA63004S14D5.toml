@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA63004S14D5"
+brand = "brand/gens-ace"
+number = "GEA63004S14D5"
+name = "6300mAh 4S 140C 15.2V(HV) Lipo Battery | 5.0mm bullet | Redline"
+category = "battery"
+chemistry = "lihv"
+cells = 4
+capacity_mah = 6300
+c_rating = 140
+connector = "5mm bullet"
+dimensions_mm = [138, 46, 37]
+weight_g = 448
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-6300mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

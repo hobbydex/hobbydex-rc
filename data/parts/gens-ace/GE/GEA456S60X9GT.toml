@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEA456S60X9GT"
+brand = "brand/gens-ace"
+number = "GEA456S60X9GT"
+name = "4500mAh 6S 60C 22.2V Lipo Battery | XT90 Plug | Hardcase"
+category = "battery"
+chemistry = "lipo"
+cells = 6
+capacity_mah = 4500
+c_rating = 60
+connector = "XT90"
+case = "hard"
+dimensions_mm = [138, 46, 49]
+weight_g = 614
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-4500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

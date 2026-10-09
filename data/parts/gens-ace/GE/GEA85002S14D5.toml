@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA85002S14D5"
+brand = "brand/gens-ace"
+number = "GEA85002S14D5"
+name = "8500mAh 2S 140C 7.6V(HV) Lipo Battery | 5.0mm bullet | Redline"
+category = "battery"
+chemistry = "lihv"
+cells = 2
+capacity_mah = 8500
+c_rating = 140
+connector = "5mm bullet"
+dimensions_mm = [138, 46, 24]
+weight_g = 305
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-8500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

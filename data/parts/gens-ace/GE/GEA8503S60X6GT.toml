@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA8503S60X6GT"
+brand = "brand/gens-ace"
+number = "GEA8503S60X6GT"
+name = "850mAh 3S 60C 11.1V Lipo Battery | XT60 Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 3
+capacity_mah = 850
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [58, 29, 23]
+weight_g = 87
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-850mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

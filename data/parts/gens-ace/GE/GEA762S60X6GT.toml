@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA762S60X6GT"
+brand = "brand/gens-ace"
+number = "GEA762S60X6GT"
+name = "7600mAh 2S 60C 7.4V Lipo Battery | XT60 Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 2
+capacity_mah = 7600
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [153, 47, 25]
+weight_g = 363
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-7600mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

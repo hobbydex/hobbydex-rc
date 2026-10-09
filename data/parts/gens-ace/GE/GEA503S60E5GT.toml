@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA503S60E5GT"
+brand = "brand/gens-ace"
+number = "GEA503S60E5GT"
+name = "5000mAh 3S 60C 11.1V Lipo Battery | EC5 Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 60
+connector = "EC5"
+dimensions_mm = [136, 42, 24]
+weight_g = 324
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

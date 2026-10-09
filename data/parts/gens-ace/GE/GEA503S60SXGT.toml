@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEA503S60SXGT"
+brand = "brand/gens-ace"
+number = "GEA503S60SXGT"
+name = "5000mAh 3S 60C 11.1V Shorty Lipo Battery | XT60 Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 60
+connector = "XT60"
+case = "shorty"
+dimensions_mm = [130, 45, 28]
+weight_g = 346
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEA8K6S10E5GT"
+brand = "brand/gens-ace"
+number = "GEA8K6S10E5GT"
+name = "8000mAh 6S 100C 22.2V Lipo Battery | EC5 Plug | Bashing Pro"
+category = "battery"
+chemistry = "lipo"
+cells = 6
+capacity_mah = 8000
+c_rating = 100
+connector = "EC5"
+case = "hard"
+dimensions_mm = [158, 46, 64]
+weight_g = 984
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-8000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

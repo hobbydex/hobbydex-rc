@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA15002S40D"
+brand = "brand/gens-ace"
+number = "GEA15002S40D"
+name = "1500mAh 2S 40C 7.4V Lipo Battery | Deans Plug"
+category = "battery"
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1500
+c_rating = 40
+connector = "Deans"
+dimensions_mm = [70, 35, 15]
+weight_g = 70
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]

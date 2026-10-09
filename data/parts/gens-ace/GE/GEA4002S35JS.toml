@@ -1,0 +1,15 @@
+id = "part/gens-ace/GEA4002S35JS"
+brand = "brand/gens-ace"
+number = "GEA4002S35JS"
+name = "400mAh 2S 35C 7.4V Lipo Battery | JST-PHR Plug | Bashing (Non-G-Tech)"
+category = "battery"
+chemistry = "lipo"
+cells = 2
+capacity_mah = 400
+c_rating = 35
+connector = "JST"
+dimensions_mm = [43, 19, 11]
+weight_g = 17
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-400mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
