@@ -3,3 +3,9 @@ brand = "brand/xray"
 number = "930308"
 name = "BALL-BEARING 3x8x4 STEEL SEALED - OIL"
 pack_qty = 2
+equivalent_to = [
+  { spec = "spec/bearing/3x8x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "metal"
+lubricant = "oil"

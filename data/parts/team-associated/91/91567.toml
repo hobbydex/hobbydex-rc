@@ -3,3 +3,7 @@ brand = "brand/team-associated"
 number = "91567"
 name = "5x12x4mm bearing"
 former_names = ["5 x 12 x 4 Bearing (right and left side)", "5 x 12 x 4 Bearing Build (right and", "5 x 12 x 4 Bearing Build (right and left", "5 x 12 x 4 Bearing Build (right and left side)", "5x12x4mm Tab bearing Tab", "5x12x4mm bearing Tab"]
+equivalent_to = [
+  { spec = "spec/bearing/5x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

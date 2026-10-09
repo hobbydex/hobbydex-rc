@@ -3,3 +3,12 @@ brand = "brand/xray"
 number = "329000"
 name = "XB2 SET OF HIGH-SPEED BALL-BEARINGS"
 pack_qty = 24
+notes = "Contents summed from the XB2 2026 manual's build steps; they account for 22 of the 24 bearings the parts list gives for the set"
+includes = [
+  { part = "part/xray/930306", qty = 4, source = "doc/xray/xb2-2026-manual" },
+  { part = "part/xray/930508", qty = 2, source = "doc/xray/xb2-2026-manual" },
+  { part = "part/xray/940510", qty = 6, source = "doc/xray/xb2-2026-manual" },
+  { part = "part/xray/940513", qty = 2, source = "doc/xray/xb2-2026-manual" },
+  { part = "part/xray/940612", qty = 2, source = "doc/xray/xb2-2026-manual" },
+  { part = "part/xray/941014", qty = 6, source = "doc/xray/xb2-2026-manual" },
+]

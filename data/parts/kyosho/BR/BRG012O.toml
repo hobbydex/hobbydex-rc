@@ -4,3 +4,8 @@ number = "BRG012O"
 name = "Open Bearing (8x16x4 / 2pcs)"
 pack_qty = 2
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+equivalent_to = [
+  { spec = "spec/bearing/8x16x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "open"

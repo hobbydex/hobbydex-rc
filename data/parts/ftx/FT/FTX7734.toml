@@ -3,3 +3,7 @@ brand = "brand/ftx"
 number = "FTX7734"
 name = "Ball Bearings 6*12*3mm"
 notes = "Read by OCR from a scanned FTX document"
+equivalent_to = [
+  { spec = "spec/bearing/6x12x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

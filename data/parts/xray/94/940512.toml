@@ -4,3 +4,9 @@ number = "940512"
 name = "BALL-BEARING 5x12x4 RUBBER SEALED - OIL"
 pack_qty = 2
 former_names = ["HIGH-SPEED BALL-BEARING 5x12x4 RUBBER SEALED"]
+equivalent_to = [
+  { spec = "spec/bearing/5x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "rubber"
+lubricant = "oil"

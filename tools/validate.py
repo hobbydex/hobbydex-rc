@@ -36,7 +36,10 @@ ENUMS = {
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
-    "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "unknown"},
+    "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "ceramic", "carbide", "unknown"},
+    "part.seal": {"open", "metal", "rubber", "rubber-metal"},
+    "part.lubricant": {"oil", "grease"},
+    "spec.type": {"radial-ball", "thrust"},
 }
 
 def main():

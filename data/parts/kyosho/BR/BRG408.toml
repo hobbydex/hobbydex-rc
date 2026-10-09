@@ -4,3 +4,8 @@ number = "BRG408"
 name = "Shield Bearing (5x11x4 / 2pcs)"
 pack_qty = 2
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "metal"

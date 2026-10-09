@@ -2,3 +2,8 @@ id = "part/traxxas/5035"
 brand = "brand/traxxas"
 number = "5035"
 name = "Oil, shock (60 wt, 700 cSt, 60cc) (silicone)"
+volume_ml = 60
+equivalent_to = [
+  { spec = "spec/oil/silicone-700cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]
+viscosity_wt = 60
