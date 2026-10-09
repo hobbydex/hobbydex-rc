@@ -108,7 +108,9 @@ pack_qty = 2
 former_names = ["COMPOSITE STEERING BLOCK"]
 ```
 
-Optional, generated when the source states it: `applies_to`, the models the
+Optional, generated when the source states it: `released`, the date the
+brand lists the part as released (HUDY's product list gives one per item),
+and `applies_to`, the models the
 brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 
 `category`: what kind of part it is, one of a fixed list: `ball-end`, `bearing`, `body`, `bumper-guard`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `pin-clip`, `pinion`, `screw`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
