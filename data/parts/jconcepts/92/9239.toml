@@ -1,6 +1,11 @@
 id = "part/jconcepts/9239"
 brand = "brand/jconcepts"
 number = "9239"
-name = "Set Screw"
-notes = "Name from the label on a manual drawing"
+name = "REACTOR Set Screw M4 x 4"
+pack_qty = 10
+notes = "Name from the jconcepts.net listing"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m4x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
