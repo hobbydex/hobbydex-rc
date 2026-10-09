@@ -1,0 +1,15 @@
+id = "part/futaba/HPS-CB500"
+brand = "brand/futaba"
+number = "HPS-CB500"
+name = "HPS-CB500 (S.Bus2/Brushless)"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 25.5
+voltage = 7.4
+speed_s = 0.06
+dimensions_mm = [40.5, 21, 34.8]
+weight_g = 57
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]

@@ -1,0 +1,15 @@
+id = "part/futaba/HPS-CB700"
+brand = "brand/futaba"
+number = "HPS-CB700"
+name = "HPS-CB700 (No BEC, S.Bus2/Brushless)"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 49
+voltage = 7.4
+speed_s = 0.075
+dimensions_mm = [40.5, 21, 37.8]
+weight_g = 76
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]
