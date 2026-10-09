@@ -1,5 +1,10 @@
 id = "part/mst/110109"
 brand = "brand/mst"
 number = "110109"
-name = "110109"
-notes = "Read by OCR from an MST manual drawing; the manual gives no name"
+name = "Countersunk screw M2.5x12"
+pack_qty = 6
+notes = "Read by OCR from an MST manual parts list"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
