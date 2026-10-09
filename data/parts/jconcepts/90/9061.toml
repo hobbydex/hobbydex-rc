@@ -4,3 +4,7 @@ number = "9061"
 name = "Bearing 10x 15x4"
 notes = "Name from the label on a manual drawing"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

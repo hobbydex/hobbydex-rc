@@ -1,5 +1,10 @@
 id = "part/team-corally/C-3003-40-22"
 brand = "brand/team-corally"
 number = "C-3003-40-22"
-name = "C-3003-40-22"
+name = "Hex Button Head Screw M4x22"
 notes = "Corally publishes this part by number on an exploded view; no name in the source documents"
+equivalent_to = [
+  { spec = "spec/screw/m4x22-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

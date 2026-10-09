@@ -1,5 +1,9 @@
 id = "part/team-corally/C-3001-20-05"
 brand = "brand/team-corally"
 number = "C-3001-20-05"
-name = "C-3001-20-05"
+name = "10pcs"
 notes = "Corally publishes this part by number on an exploded view; no name in the source documents"
+equivalent_to = [
+  { spec = "spec/screw/m2x5-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

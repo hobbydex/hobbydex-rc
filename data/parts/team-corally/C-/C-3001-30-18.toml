@@ -1,5 +1,10 @@
 id = "part/team-corally/C-3001-30-18"
 brand = "brand/team-corally"
 number = "C-3001-30-18"
-name = "C-3001-30-18"
+name = "Hex Socket Head Screw M3x18"
 notes = "Corally publishes this part by number on an exploded view; no name in the source documents"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
