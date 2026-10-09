@@ -3,3 +3,10 @@ brand = "brand/traxxas"
 number = "2843X"
 name = "5800mah 7.4v 2-Cell 25C LiPo Battery"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5800
+c_rating = 25

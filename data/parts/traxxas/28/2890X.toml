@@ -3,3 +3,10 @@ brand = "brand/traxxas"
 number = "2890X"
 name = "6700mah 14.8v 4-Cell 25C LiPo Battery"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 6700
+c_rating = 25

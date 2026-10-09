@@ -4,3 +4,10 @@ number = "SPMXB4S68"
 name = "14.8V 6800mAh 4S 120C Smart G2 Pro Basher LiPo Battery"
 applies_to = "IC5"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 6800
+c_rating = 120
