@@ -1,7 +1,7 @@
 id = "part/tamiya/22007"
 brand = "brand/tamiya"
 number = "22007"
-name = "Silicone Oil"
+name = "Silicone Oil #5000"
 fits = [
   { kit = "kit/tamiya/bb-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2: 1 54875 #2 54471" },
   { kit = "kit/tamiya/m-07", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -25,3 +25,8 @@ fits = [
   { kit = "kit/tamiya/xv-02rs", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
 ]
 category = "oil-grease"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/oil/silicone-5000cst", match = "close", notes = "Tamiya #5000; Tamiya grades by number and does not state cSt" },
+]
+notes = "Name corrected by hand: Tamiya 22007 is the #5000 silicone (diff) oil"
