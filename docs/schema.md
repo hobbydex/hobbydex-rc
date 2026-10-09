@@ -188,6 +188,24 @@ file = "xb2-2026-part-list.pdf"
 releases = ["release/xray/320020", "release/xray/320021"]
 ```
 
+## Owner reports
+
+Knowledge that exists in no manufacturer document, such as two cars being the
+same, parts that fit although no brand says so, or a known weak part, is
+recorded as a document of kind `owner_report` under
+`data/documents/community/`, and cited as the `source` like any manual. It
+keeps who reported it, when, on what basis, and the statement in their words.
+
+```toml
+id = "doc/community/2026-10-09-quanum-vandal-is-ftx-vantage"
+kind = "owner_report"
+title = "Quanum Vandal is a rebranded FTX Vantage"
+date = "2026-10-09"
+reported_by = "francisdb"
+statement = "The FTX Vantage and the Quanum Vandal are the same car; ..."
+basis = "Owner of both cars"
+```
+
 ## Conventions
 
 - Brand attribution of HUDY items inside XRAY lists is a heuristic in the
