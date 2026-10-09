@@ -1,6 +1,26 @@
 id = "part/lc-racing/L6094"
 brand = "brand/lc-racing"
 number = "L6094"
-name = "BATAN D135F Digtal Servo"
+name = "BATAN D135F Digital Servo"
 applies_to = "LC12B1, EMB-WRC, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT"
 category = "servo"
+dimensions_mm = [32.2, 15, 28.1]
+weight_g = 30
+torque_kgcm = 4.4
+speed_s = 0.08
+voltage = 6
+motor = "coreless"
+gear_material = "metal"
+documents = ["doc/lc-racing/l6094-product-page"]
+equivalent_to = [
+  { spec = "spec/servo/mini", match = "close", notes = "Size class from the case size (32.2x15x28.1 mm); spline not stated" },
+]
+notes = "Dual ball bearings, digital. Upgrade for the BATAN D115F (L6045): same case, more torque, faster"
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "replaces", replaces = "part/lc-racing/L6045", source = "doc/lc-racing/l6094-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "replaces", replaces = "part/lc-racing/L6045", source = "doc/lc-racing/l6094-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "replaces", replaces = "part/lc-racing/L6045", source = "doc/lc-racing/l6094-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "replaces", replaces = "part/lc-racing/L6045", source = "doc/lc-racing/l6094-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "replaces", replaces = "part/lc-racing/L6045", source = "doc/lc-racing/l6094-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "replaces", replaces = "part/lc-racing/L6045", source = "doc/lc-racing/l6094-product-page" },
+]
