@@ -155,7 +155,14 @@ lubricant = "grease"
 Silicone oils link to `spec/oil/silicone-<cSt>cst` only when the brand states
 the viscosity in cSt. The "wt" and "K" scales differ between brands, so a
 brand's wt goes on the part as `viscosity_wt`, never on a spec. `volume_ml` is
-the bottle size.
+the bottle size. Brands that grade by their own number without a unit
+(Tamiya #400) link with match "close" and say so in the notes. A set of
+oils lists its bottles with `includes`, one row per spec:
+
+```toml
+name = "Silicone Damper Oil Soft Set (#200, #300, #400)"
+includes = [{ spec = "spec/oil/silicone-200cst", qty = 1, notes = "Tamiya #200" }, ...]
+```
 
 ```toml
 name = "Oil, shock (30 wt, 350 cSt, 60cc) (silicone)"
