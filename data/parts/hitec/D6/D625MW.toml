@@ -1,0 +1,16 @@
+id = "part/hitec/D625MW"
+brand = "brand/hitec"
+number = "D625MW"
+name = "D625MW High Speed Metal Gear 25T Digital Sport Servo"
+category = "servo"
+dimensions_mm = [40.8, 20, 37.8]
+weight_g = 60
+torque_kgcm = 10
+voltage = 7.4
+speed_s = 0.13
+voltage_range = "3.5V ~ 8.4V (2S LiPo)"
+gear_material = "metal"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]

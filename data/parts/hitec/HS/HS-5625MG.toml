@@ -1,0 +1,16 @@
+id = "part/hitec/HS-5625MG"
+brand = "brand/hitec"
+number = "HS-5625MG"
+name = "HS-5625MG High Speed Metal Gear 24T Digital Sport Servo"
+category = "servo"
+dimensions_mm = [40.8, 20, 37.8]
+weight_g = 60
+torque_kgcm = 9.4
+voltage = 6
+speed_s = 0.14
+voltage_range = "3.5V ~ 6.8V (2S LiFe)"
+gear_material = "metal"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]

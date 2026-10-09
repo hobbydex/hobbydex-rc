@@ -1,0 +1,16 @@
+id = "part/hitec/D89MW"
+brand = "brand/hitec"
+number = "D89MW"
+name = "D89MW 25g Metal Gear 25-Tooth Digital Micro Servo"
+category = "servo"
+dimensions_mm = [29, 13, 30]
+weight_g = 25
+torque_kgcm = 8.5
+voltage = 7.4
+speed_s = 0.11
+voltage_range = "4.8V ~ 7.4V"
+gear_material = "metal"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]

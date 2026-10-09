@@ -1,0 +1,16 @@
+id = "part/hitec/HS-5070MH"
+brand = "brand/hitec"
+number = "HS-5070MH"
+name = "HS-5070MH 12.7g Metal Gear Digital Micro Servo"
+category = "servo"
+dimensions_mm = [23.6, 11.6, 30]
+weight_g = 12.7
+torque_kgcm = 3.8
+voltage = 7.4
+speed_s = 0.12
+voltage_range = "3.5V ~ 8.4V (2S LiPo)"
+gear_material = "metal"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/micro-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]

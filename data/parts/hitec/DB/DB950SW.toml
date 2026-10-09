@@ -1,0 +1,16 @@
+id = "part/hitec/DB950SW"
+brand = "brand/hitec"
+number = "DB950SW"
+name = "DB950SW Wide Voltage Steel Gear 25T Digital Brushless Servo"
+category = "servo"
+dimensions_mm = [40, 20, 38]
+weight_g = 68
+torque_kgcm = 40
+voltage = 6
+speed_s = 0.17
+voltage_range = "4.8V ~ 6.0V"
+gear_material = "steel"
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]
