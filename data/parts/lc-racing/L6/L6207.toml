@@ -1,5 +1,10 @@
 id = "part/lc-racing/L6207"
 brand = "brand/lc-racing"
 number = "L6207"
-name = "L6207"
-notes = "Listed by number in a build manual; no exploded view in the sources names its components"
+name = "Ball Bearings, 7x11x3"
+pack_qty = 4
+applies_to = "EMB-RA"
+equivalent_to = [
+  { spec = "spec/bearing/7x11x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

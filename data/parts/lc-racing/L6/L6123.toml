@@ -1,5 +1,10 @@
 id = "part/lc-racing/L6123"
 brand = "brand/lc-racing"
 number = "L6123"
-name = "L6123"
-notes = "Listed by number in a build manual; no exploded view in the sources names its components"
+name = "Ball Bearings 4x8x3"
+pack_qty = 11
+applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT"
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
