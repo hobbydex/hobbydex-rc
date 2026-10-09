@@ -100,7 +100,7 @@ def main():
             key = f"{kind}.{k}"
             if key in ENUMS and v not in ENUMS[key]:
                 errors.append(f"{path}: {key} = {v!r} not in {sorted(ENUMS[key])}")
-        if kind == "part" and "gtin" in d:
+        if kind in ("part", "release") and "gtin" in d:
             g = str(d["gtin"])
             digits = [int(c) for c in g] if g.isdigit() else []
             ok = len(digits) in (8, 12, 13, 14) and (10 - sum(x * (3 if i % 2 == 0 else 1) for i, x in enumerate(reversed(digits[:-1]))) % 10) % 10 == digits[-1]

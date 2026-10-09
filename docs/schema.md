@@ -144,6 +144,7 @@ fits = [
 
 `gtin`: the product barcode (UPC-A, EAN-13 or another GTIN) as a string of
 digits, as printed by the brand; the validator checks length and check digit.
+Releases can carry a `gtin` too, the barcode on the kit's box.
 
 Planned: `numbers` (aliases such as Tamiya's 7-digit spare number, 8-digit SKU
 and X-number for one part), `supersedes`.
