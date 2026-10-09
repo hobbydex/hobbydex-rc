@@ -1,5 +1,9 @@
 id = "part/ftx/FTX9657"
 brand = "brand/ftx"
 number = "FTX9657"
-name = "Flat head hex screw"
+name = "Flat head hex screw M4x10"
 notes = "Read by OCR from a scanned FTX document"
+equivalent_to = [
+  { spec = "spec/screw/m4x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
