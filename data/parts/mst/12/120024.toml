@@ -4,3 +4,7 @@ number = "120024"
 name = "Bearing 3x6x2.5"
 pack_qty = 4
 notes = "Read by OCR from an MST manual parts list"
+equivalent_to = [
+  { spec = "spec/bearing/3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

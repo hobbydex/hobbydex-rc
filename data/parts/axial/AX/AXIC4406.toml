@@ -3,3 +3,7 @@ brand = "brand/axial"
 number = "AXIC4406"
 name = "Bearing 7x14x3.5mm"
 pack_qty = 2
+equivalent_to = [
+  { spec = "spec/bearing/7x14x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

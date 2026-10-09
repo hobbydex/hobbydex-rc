@@ -3,3 +3,8 @@ brand = "brand/losi"
 number = "LOSA6943"
 name = "10X15x4mm Sealed Ball Bearing"
 pack_qty = 2
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "rubber"

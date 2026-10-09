@@ -113,7 +113,8 @@ brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 
 Optional, hand-curated (the importer preserves them when it regenerates the
 file): `material` (steel | stainless | titanium | aluminium | brass | plastic |
-unknown), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
+ceramic | carbide | unknown; for a bearing, the balls: ceramic is a hybrid
+bearing), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
 `thread_type` (machine | self-tapping), and `equivalent_to`:
 
 ```toml
@@ -127,6 +128,41 @@ equivalent_to = [
 (interchangeable in practice) or close (check before use). Geometry lives on
 the spec; material, grade and finish live on the part, because that is what
 differs between a kit screw and its replacement.
+
+Bearings work the same way: the size is on the spec, the variant on the part.
+A ceramic 5x10x4 and a steel one link to the same spec and differ in
+`material`; `seal` is open | metal (shields, ZZ) | rubber (2RS) |
+rubber-metal, `lubricant` is oil | grease.
+
+```toml
+name = "BALL-BEARING 13x19x4 RUBBER & STEEL SEALED - GREASE"
+equivalent_to = [{ spec = "spec/bearing/13x19x4", match = "functional" }]
+material = "steel"
+seal = "rubber-metal"
+lubricant = "grease"
+```
+
+Silicone oils link to `spec/oil/silicone-<cSt>cst` only when the brand states
+the viscosity in cSt. The "wt" and "K" scales differ between brands, so a
+brand's wt goes on the part as `viscosity_wt`, never on a spec. `volume_ml` is
+the bottle size.
+
+```toml
+name = "Oil, shock (30 wt, 350 cSt, 60cc) (silicone)"
+equivalent_to = [{ spec = "spec/oil/silicone-350cst", match = "functional" }]
+volume_ml = 60
+viscosity_wt = 30
+```
+
+`includes`: what a set holds, as parts or specs with a count, when the brand
+lists the contents (a bearing set, a screw kit):
+
+```toml
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 8, source = "doc/xray/..." },
+  { part = "part/xray/940512", qty = 4 },
+]
+```
 
 `fits`: the kits a part is sold for, from the brand's own fitment data (option
 parts catalogs, matching lists, product pages). Distinct from `contains`,
@@ -166,6 +202,23 @@ head = "countersunk"
 drive = "hex"
 standards = ["ISO 10642", "DIN 7991"]
 ```
+
+Bearings: `type` (radial-ball | thrust), `bore_mm`, `outer_mm`, `width_mm`
+and, for standard sizes, the ISO `designation` (MR105, 6700). Ids are
+`spec/bearing/<bore>x<outer>x<width>`, thrust bearings `spec/bearing/thrust-...`.
+
+```toml
+id = "spec/bearing/5x10x4"
+category = "bearing"
+name = "5x10x4mm ball bearing (MR105)"
+type = "radial-ball"
+bore_mm = 5
+outer_mm = 10
+width_mm = 4
+designation = "MR105"
+```
+
+Oils: `base` (silicone) and `viscosity_cst`; id `spec/oil/silicone-350cst`.
 
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.

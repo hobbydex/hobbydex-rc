@@ -4,3 +4,7 @@ number = "120018"
 name = "Ball bearing 4x10x4"
 pack_qty = 2
 notes = "Read by OCR from an MST manual parts list"
+equivalent_to = [
+  { spec = "spec/bearing/4x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
