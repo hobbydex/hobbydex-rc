@@ -111,6 +111,16 @@ former_names = ["COMPOSITE STEERING BLOCK"]
 Optional, generated when the source states it: `applies_to`, the models the
 brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 
+`category`: what kind of part it is, one of a fixed list: `ball-end`, `bearing`, `body`, `bumper-guard`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `pin-clip`, `pinion`, `screw`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
+from the name by a classifier and recomputed when the rules improve; set
+`category_source = "curated"` to fix a category by hand. Parts named only by
+number have none.
+
+```toml
+name = "Shock Spring, Internal, 1.6lb"
+category = "shock-spring"
+```
+
 Optional, hand-curated (the importer preserves them when it regenerates the
 file): `material` (steel | stainless | titanium | aluminium | brass | plastic |
 ceramic | carbide | unknown; for a bearing, the balls: ceramic is a hybrid

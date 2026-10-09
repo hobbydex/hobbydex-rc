@@ -7,6 +7,7 @@
 Checks:
   unnamed       parts whose name is just their number
   ocr           parts whose name was read by OCR (notes say so): worth a look
+  uncategorised named parts without a category
   screw-unlinked  parts named like a metric screw with no screw spec link
   bearing-unlinked  parts named like a bearing with a size and no bearing spec
   empty-release releases with no contains rows
@@ -40,6 +41,8 @@ def checks(db):
             yield "unnamed", p
         elif re.search(r"\bOCR\b", notes):
             yield "ocr", p
+        if name != p["number"] and not p.get("category"):
+            yield "uncategorised", p
         specs = [e["spec"] for e in p.get("equivalent_to", [])]
         n = name.lower()
         if re.search(r"\bscrews?\b", n) and re.search(r"\bm?\d(\.\d)?\s?x\s?\d", n) and not any(s.startswith("spec/screw/") for s in specs):
@@ -74,7 +77,7 @@ def main():
             print(f"{d['id']}\t{d.get('name', d.get('title', ''))}")
         return
     total = {"part": len(db["part"]), "release": len(db["release"]), "kit": len(db["kit"]), "doc": len(db["doc"]), "spec": len(db["spec"])}
-    for check in ("unnamed", "ocr", "screw-unlinked", "bearing-unlinked", "empty-release", "kit-fields", "doc-source", "orphan-spec"):
+    for check in ("unnamed", "ocr", "uncategorised", "screw-unlinked", "bearing-unlinked", "empty-release", "kit-fields", "doc-source", "orphan-spec"):
         ds = found.get(check, [])
         kind = ds[0]["id"].split("/")[0] if ds else ""
         per = collections.Counter(brand_of(d) for d in ds)
