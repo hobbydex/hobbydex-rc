@@ -4,3 +4,10 @@ number = "C-49231-X"
 name = "Power Racing 50C - 5000MAH - 3S - 11,1V - XT-90 - Semi-Soft Case"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-49231-X"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 50

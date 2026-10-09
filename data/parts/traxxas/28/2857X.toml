@@ -3,3 +3,10 @@ brand = "brand/traxxas"
 number = "2857X"
 name = "6400mah 11.1v 3-Cell 25C LiPo Battery"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-6400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 6400
+c_rating = 25

@@ -4,3 +4,10 @@ number = "C-49232-X"
 name = "Power Racing 60C - 5200MAH - 4S - 14,8V - XT-90 - Semi-Soft Case"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-49232-X"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-5200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 5200
+c_rating = 60

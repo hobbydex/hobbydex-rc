@@ -4,3 +4,10 @@ number = "SPMX-1089"
 name = "11.1V 1300mAh 3S 30C Smart G2 LiPo Battery"
 applies_to = "IC2 SmartFit Case"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 1300
+c_rating = 30

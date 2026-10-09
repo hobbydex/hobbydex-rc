@@ -4,3 +4,11 @@ number = "C-49164-X"
 name = "Sport Racing 60C - 4600Mah - 6S - 22,2V - XT-90 - Hard Case"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-49164-X"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-4600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 6
+capacity_mah = 4600
+c_rating = 60
+case = "hard"

@@ -4,3 +4,11 @@ number = "SPMX53S50H5"
 name = "11.1V 5000mAh 3S 50C Smart G2 Hardcase LiPo Battery"
 applies_to = "IC5"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 50
+case = "hard"
