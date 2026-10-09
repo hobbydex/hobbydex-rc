@@ -4,3 +4,7 @@ number = "110105"
 name = "Cap screw M1.6x10"
 pack_qty = 10
 notes = "Read by OCR from an MST manual parts list"
+equivalent_to = [
+  { spec = "spec/screw/m1.6x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

@@ -3,3 +3,7 @@ brand = "brand/ftx"
 number = "FTX9756"
 name = "Set Screw 2.5x2.5mm"
 notes = "Read by OCR from a scanned FTX document"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x2.5-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
