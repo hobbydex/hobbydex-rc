@@ -1,0 +1,16 @@
+id = "part/hitec/HS-648MG"
+brand = "brand/hitec"
+number = "HS-648MG"
+name = "HS-648MG High Torque Metal Gear 25T Analog Sport Servo"
+category = "servo"
+dimensions_mm = [40.6, 19.8, 37.8]
+weight_g = 55.2
+torque_kgcm = 9.6
+voltage = 6
+speed_s = 0.2
+voltage_range = "3.5V ~ 6.8V (2S LiFe)"
+gear_material = "metal"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]

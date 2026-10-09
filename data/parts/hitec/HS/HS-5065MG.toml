@@ -1,0 +1,16 @@
+id = "part/hitec/HS-5065MG"
+brand = "brand/hitec"
+number = "HS-5065MG"
+name = "HS-5065MG 11.9g Metal Gear Digital Micro Servo"
+category = "servo"
+dimensions_mm = [23.6, 11.6, 30]
+weight_g = 11.9
+torque_kgcm = 2.2
+voltage = 6
+speed_s = 0.11
+voltage_range = "3.5V ~ 6.8V (2S LiFe)"
+gear_material = "metal"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/micro-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]

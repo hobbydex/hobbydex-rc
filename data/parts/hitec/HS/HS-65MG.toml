@@ -1,0 +1,16 @@
+id = "part/hitec/HS-65MG"
+brand = "brand/hitec"
+number = "HS-65MG"
+name = "HS-65MG 11.9g Metal Gear Analog Micro Servo"
+category = "servo"
+dimensions_mm = [23.6, 11.6, 24]
+weight_g = 11.9
+torque_kgcm = 2.2
+voltage = 6
+speed_s = 0.11
+voltage_range = "4.8V ~ 6.0V"
+gear_material = "metal"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/micro-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]

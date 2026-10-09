@@ -1,0 +1,16 @@
+id = "part/hitec/HS-7954SH"
+brand = "brand/hitec"
+number = "HS-7954SH"
+name = "HS-7954SH High Torque Steel Gear 24T Digital Coreless Servo"
+category = "servo"
+dimensions_mm = [40, 20, 37]
+weight_g = 65
+torque_kgcm = 24
+voltage = 6
+speed_s = 0.15
+voltage_range = "4.8V ~ 6.0V"
+gear_material = "steel"
+motor = "coreless"
+equivalent_to = [
+  { spec = "spec/servo/standard-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]
