@@ -31,7 +31,7 @@ ENUMS = {
     "release.kind": {"kit", "rtr", "arr"},
     "brand.status": {"active", "dormant", "gone"},
     "contains.role": {"kit", "option", "listed"},
-    "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "product_page"},
+    "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "product_page", "owner_report"},
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
