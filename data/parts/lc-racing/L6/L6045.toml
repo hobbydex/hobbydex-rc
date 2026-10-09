@@ -3,4 +3,11 @@ brand = "brand/lc-racing"
 number = "L6045"
 name = "BATAN D115F Servo,32.2x15x28.1mm 26g, 4.0kg/cm(6v) 0.1sec/60deg (6v),dual ball bearing digital"
 applies_to = "EMB-WRC, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT, LC12B1"
-category = "bearing"
+category = "servo"
+dimensions_mm = [32.2, 15, 28.1]
+weight_g = 26
+torque_kgcm = 4
+voltage = 6
+equivalent_to = [
+  { spec = "spec/servo/mini", match = "close", notes = "Size class from the case size in the name (32.2x15x28.1 mm); spline not stated" },
+]

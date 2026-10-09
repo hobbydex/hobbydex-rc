@@ -1,0 +1,18 @@
+id = "part/savox/SA-1231SG"
+brand = "brand/savox"
+number = "SA-1231SG"
+name = "SA-1231SG Standard Size Digital Coreless Steel Gear Servo"
+category = "servo"
+gtin = "4710006990620"
+dimensions_mm = [40.3, 20.2, 44.9]
+weight_g = 79
+torque_kgcm = 32
+voltage = 6
+speed_s = 0.14
+voltage_range = "4.8V - 6.0V"
+gear_material = "steel"
+motor = "coreless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

@@ -1,0 +1,18 @@
+id = "part/savox/SB-2280SG"
+brand = "brand/savox"
+number = "SB-2280SG"
+name = "SB-2280SG Standard Size Digital HV Brushless Steel Gear Servo"
+category = "servo"
+gtin = "4710006994321"
+dimensions_mm = [40.3, 20.2, 38.7]
+weight_g = 83
+torque_kgcm = 60
+voltage = 8.4
+speed_s = 0.12
+voltage_range = "6.0V - 8.4V"
+gear_material = "steel"
+motor = "brushless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

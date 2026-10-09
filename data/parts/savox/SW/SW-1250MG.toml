@@ -1,0 +1,18 @@
+id = "part/savox/SW-1250MG"
+brand = "brand/savox"
+number = "SW-1250MG"
+name = "SW-1250MG Micro Digital HV Waterproof Coreless Metal Gear Servo"
+category = "servo"
+gtin = "4710006993737"
+dimensions_mm = [29.5, 15, 32.5]
+weight_g = 36
+torque_kgcm = 10
+voltage = 8.4
+speed_s = 0.085
+voltage_range = "6.0V - 8.4V"
+gear_material = "metal gears"
+motor = "coreless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/micro-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

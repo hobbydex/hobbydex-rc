@@ -1,0 +1,18 @@
+id = "part/savox/SB-2252MG"
+brand = "brand/savox"
+number = "SB-2252MG"
+name = "SB-2252MG Standard Size Digital Brushless Metal Gear Servo"
+category = "servo"
+gtin = "4710006992273"
+dimensions_mm = [40.3, 20.2, 37.2]
+weight_g = 62
+torque_kgcm = 5
+voltage = 7.4
+speed_s = 0.045
+voltage_range = "6.0V - 7.4V"
+gear_material = "metal gears"
+motor = "brushless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]
