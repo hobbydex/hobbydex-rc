@@ -195,7 +195,9 @@ fits = [
 ```
 
 `type` is direct (bolt-on), replaces (replaces a stock part) or modification
-(needs changes or extra parts; see notes).
+(needs changes or extra parts; see notes). A `replaces` row may name the stock
+part it replaces, `replaces = "part/lc-racing/L6045"`; the site then shows the
+upgrade on both parts.
 
 `documents`: the part's own documents, such as a radio's user manual. Radios
 and receivers also carry `channels` and `protocol` (AFHDS 3, ANT, DSMR) and
