@@ -1,6 +1,11 @@
 id = "part/yokomo/BB-1510P"
 brand = "brand/yokomo"
 number = "BB-1510P"
-name = "スーパープレシジョン ベアリング 2 Φ 10x Φ 15x4mm"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Super Precision Bearing 2 10x 15x4mm"
+name_ja = "スーパープレシジョン ベアリング 2 Φ 10x Φ 15x4mm"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

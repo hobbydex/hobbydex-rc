@@ -1,6 +1,11 @@
 id = "part/yokomo/BB-1140-2"
 brand = "brand/yokomo"
 number = "BB-1140-2"
-name = "ベアリング (4 φ x11 φ x4mm)"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Bearing (4 x11 x4mm)"
+name_ja = "ベアリング (4 φ x11 φ x4mm)"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/4x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

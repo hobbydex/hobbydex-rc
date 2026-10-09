@@ -1,5 +1,12 @@
 id = "part/yokomo/ZC-F25A"
 brand = "brand/yokomo"
 number = "ZC-F25A"
-name = "M2x5mm フラットヘッド ソケット スクリュー (4 本入 )"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "M2x5mm Flat Head Socket Screw"
+pack_qty = 4
+name_ja = "M2x5mm フラットヘッド ソケット スクリュー (4 本入 )"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m2x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

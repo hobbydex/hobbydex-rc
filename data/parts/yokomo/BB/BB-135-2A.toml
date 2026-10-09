@@ -1,6 +1,12 @@
 id = "part/yokomo/BB-135-2A"
 brand = "brand/yokomo"
 number = "BB-135-2A"
-name = "φ５×φ１３ × 4mm ベアリング ( ２個入 ) BM-415R05/R10 用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "5×13 × 4mm Bearing BM-415R05 / R10"
+pack_qty = 2
+name_ja = "φ５×φ１３ × 4mm ベアリング ( ２個入 ) BM-415R05/R10 用"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x13x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

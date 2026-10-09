@@ -1,6 +1,12 @@
 id = "part/yokomo/BB-730-4A"
 brand = "brand/yokomo"
 number = "BB-730-4A"
-name = "φ 3 ×φ 7 × 3mm ベアリング（4 個入）"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "3 × 7 × 3mm Bearing"
+pack_qty = 4
+name_ja = "φ 3 ×φ 7 × 3mm ベアリング（4 個入）"
+notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/3x7x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
