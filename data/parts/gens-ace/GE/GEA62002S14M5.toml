@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA62002S14M5"
 name = "6200mAh 2S 140C 7.6V(HV) Mid-size Lipo Battery | 5.0mm bullet | Redline"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6200mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lihv"
 cells = 2
 capacity_mah = 6200
@@ -10,6 +13,3 @@ c_rating = 140
 connector = "5mm bullet"
 dimensions_mm = [112, 46, 22]
 weight_g = 227
-equivalent_to = [
-  { spec = "spec/battery/lihv-2s-6200mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA552S60D20GT"
 name = "5500mAh 2S 60C 7.6V(HV) Lipo Battery | Hardcase | Deans Plug"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lihv"
 cells = 2
 capacity_mah = 5500
@@ -11,6 +14,3 @@ connector = "Deans"
 case = "hard"
 dimensions_mm = [139, 46, 25]
 weight_g = 248
-equivalent_to = [
-  { spec = "spec/battery/lihv-2s-5500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

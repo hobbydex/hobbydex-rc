@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA503S60X6GT"
 name = "5000mAh 3S 60C 11.1V Lipo Battery | XT60 Plug"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 3
 capacity_mah = 5000
@@ -10,6 +13,3 @@ c_rating = 60
 connector = "XT60"
 dimensions_mm = [154, 43, 25]
 weight_g = 359
-equivalent_to = [
-  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

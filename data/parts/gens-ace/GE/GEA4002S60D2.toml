@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA4002S60D2"
 name = "400mAh 2S 60C 7.6V(HV) Lipo Battery | Hardcase | 2mm Bullet to XT60 Adapter"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-400mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lihv"
 cells = 2
 capacity_mah = 400
@@ -11,6 +14,3 @@ connector = "XT60"
 case = "hard"
 dimensions_mm = [45, 24, 12]
 weight_g = 19
-equivalent_to = [
-  { spec = "spec/battery/lihv-2s-400mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

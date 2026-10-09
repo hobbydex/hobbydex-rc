@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA50002S14NV"
 name = "5000mAh 2S 140C 7.4V Shorty Lipo Battery | 5.0mm bullet | Redline"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lipo"
 cells = 2
 capacity_mah = 5000
@@ -11,6 +14,3 @@ connector = "5mm bullet"
 case = "shorty"
 dimensions_mm = [96, 46, 24]
 weight_g = 214
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

@@ -3,6 +3,9 @@ brand = "brand/gens-ace"
 number = "GEA363S60DGT"
 name = "3600mAh 3S 60C 11.4V(HV) Lipo Battery | Deans Plug"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-3s-3600mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
 chemistry = "lihv"
 cells = 3
 capacity_mah = 3600
@@ -11,6 +14,3 @@ connector = "Deans"
 case = "soft"
 dimensions_mm = [91, 42, 24]
 weight_g = 209
-equivalent_to = [
-  { spec = "spec/battery/lihv-3s-3600mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-]

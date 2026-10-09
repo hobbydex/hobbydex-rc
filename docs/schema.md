@@ -250,6 +250,8 @@ pitch, 48) or `module` (0.5, 1); id `spec/pinion/48dp-20t` or
 material, because one geometry is sold for several shaft sizes and brands
 often leave the bore out.
 
+Chargers are parts with category charger and, when stated, `power_w`.
+
 Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh),
 `cells`, `capacity_mah` and `nominal_v`; id `spec/battery/lipo-2s-5000mah`.
 Whether a pack fits a car depends on the part's `c_rating`, `case` (hard |
