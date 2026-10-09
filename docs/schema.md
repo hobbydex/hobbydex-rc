@@ -197,6 +197,11 @@ fits = [
 `type` is direct (bolt-on), replaces (replaces a stock part) or modification
 (needs changes or extra parts; see notes).
 
+`documents`: the part's own documents, such as a radio's user manual. Radios
+and receivers also carry `channels` and `protocol` (AFHDS 3, ANT, DSMR) and
+`weight_g`; their model code is the part number (FS-NB4+, so a number may
+contain `+`).
+
 `gtin`: the product barcode (UPC-A, EAN-13 or another GTIN) as a string of
 digits, as printed by the brand; the validator checks length and check digit.
 Releases can carry a `gtin` too, the barcode on the kit's box.
