@@ -1,5 +1,13 @@
 id = "part/quanum/85274"
 brand = "brand/quanum"
 number = "85274"
-name = "85274"
-notes = "Read by OCR from a scanned Quanum manual drawing; the manual gives no name"
+name = "Li-Po Battery 7.4V 2700mAh"
+pack_qty = 1
+notes = "Name from the Part List of a scanned Quanum manual"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2700
+category = "battery"

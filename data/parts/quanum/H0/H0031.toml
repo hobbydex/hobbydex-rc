@@ -1,0 +1,13 @@
+id = "part/quanum/H0031"
+brand = "brand/quanum"
+number = "H0031"
+name = "Ni-MH Battery 7.2V 3000mAh"
+pack_qty = 1
+notes = "Name from the Part List of a scanned Quanum manual"
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 3000
+category = "battery"

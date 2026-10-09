@@ -1,6 +1,11 @@
 id = "part/quanum/85184"
 brand = "brand/quanum"
 number = "85184"
-name = "Screw M3x12"
-notes = "Read by OCR from a scanned Quanum manual drawing"
+name = "Button Head Hex Screw M3x12"
+pack_qty = 6
+notes = "Name from the Part List of a scanned Quanum manual"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
