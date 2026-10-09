@@ -2,3 +2,7 @@ id = "part/team-corally/C-3001-40-20"
 brand = "brand/team-corally"
 number = "C-3001-40-20"
 name = "SH - M4x20mm)"
+equivalent_to = [
+  { spec = "spec/screw/m4x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

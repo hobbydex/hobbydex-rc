@@ -4,3 +4,6 @@ number = "C-3002-25-16"
 name = "Hex Flat Head Screw M2.5x16"
 pack_qty = 10
 material = "steel"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -4,3 +4,6 @@ number = "C-3000-40-14"
 name = "Hex Socket Head Screw M4x14"
 pack_qty = 10
 material = "steel"
+equivalent_to = [
+  { spec = "spec/screw/m4x14-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

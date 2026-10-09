@@ -3,3 +3,7 @@ brand = "brand/team-associated"
 number = "25225"
 name = "M3 x 3mm Set Screw"
 former_names = ["3x3mm Set Screw", "3x3mm Set Screw *Not Included", "M3 x3mm Set Screw", "M3x3mm Set Screw", "M3x3mm Set Screw, rear"]
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

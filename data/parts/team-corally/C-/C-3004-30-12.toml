@@ -4,3 +4,6 @@ number = "C-3004-30-12"
 name = "Hex Set Screw M3x12"
 pack_qty = 10
 material = "steel"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
