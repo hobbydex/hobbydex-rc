@@ -46,6 +46,7 @@ ENUMS = {
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.case": {"hard", "soft", "shorty"},
+    "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
 
 def categories():
