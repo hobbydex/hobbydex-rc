@@ -1,7 +1,14 @@
 id = "category/wheel"
 name = "Wheels"
-description = "Wheels and rims, with the hex they mount on where known."
+description = "Wheels and rims: rim size, the hex they mount on, scale, vehicle class, position, offset and width, where the brand states them. Short course wheels are 2.2\"/3.0\"; their fit also depends on the offset family, given as the car they are made for."
 spec_type = "wheel-hex"
 key_fields = [
+  { field = "wheel_size", label = "Rim", from = "part" },
   { field = "hex_mm", label = "Hex", from = "spec", unit = "mm" },
+  { field = "scale", label = "Scale", from = "part" },
+  { field = "vehicle", label = "Vehicle", from = "part" },
+  { field = "position", label = "Position", from = "part" },
+  { field = "offset_mm", label = "Offset", from = "part", unit = "mm" },
+  { field = "width_mm", label = "Width", from = "part", unit = "mm", compare_only = true },
+  { field = "beadlock", label = "Beadlock", from = "part", compare_only = true },
 ]
