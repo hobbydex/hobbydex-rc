@@ -1,0 +1,17 @@
+id = "part/turnigy/9067160065"
+brand = "brand/turnigy"
+number = "9067160065"
+name = "Rapid LiHV 8400mAh 2S 7.6V 100C Hardcase LiPo Battery w/XT60 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-8400mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-rapid-lihv-8400mah-2s-7-6v-100c-hardcase-lipo-battery-w-xt60-connector-for-rc-cars.html" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 8400
+c_rating = 100
+connector = "XT60"
+case = "hard"

@@ -1,0 +1,17 @@
+id = "part/turnigy/9067160069"
+brand = "brand/turnigy"
+number = "9067160069"
+name = "Rapid LiHV 5100mAh 2S 7.6V 100C Shorty Hardcase LiPo Battery with 5mm Bullet to XT60 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5100mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/5100mah-2s-7-6v-100c-lihv-shorty-hardcase.html" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 5100
+c_rating = 100
+connector = "XT60"
+case = "shorty"

@@ -1,0 +1,17 @@
+id = "part/turnigy/9067160064"
+brand = "brand/turnigy"
+number = "9067160064"
+name = "Rapid 7500mAh 1S 3.7V 140C Hardcase LiPo Battery with 5mm Bullet to XT60 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-7500mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/rapid-7500mah-1s-140c-hardcase.html" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 7500
+c_rating = 140
+connector = "XT60"
+case = "hard"

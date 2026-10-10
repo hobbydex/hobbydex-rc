@@ -1,0 +1,17 @@
+id = "part/turnigy/9067160067"
+brand = "brand/turnigy"
+number = "9067160067"
+name = "Rapid LiHV 6200mAh 2S 7.6V 100C Hardcase LiPo Battery w/XT60 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6200mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-rapid-orange-lihv-hardcase-6200mah-2s-7-6v-100c-high-voltage-lipo-battery-w-xt60-connector-for-rc-cars.html" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 6200
+c_rating = 100
+connector = "XT60"
+case = "hard"

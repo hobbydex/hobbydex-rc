@@ -1,0 +1,16 @@
+id = "part/turnigy/9067160598"
+brand = "brand/turnigy"
+number = "9067160598"
+name = "3S 4000mAh 11.1V 40C Lipo Battery Pack w/XT60"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-4000mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-4000mah-3s-40c-lipo-pack-xt-60-1.html" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 4000
+c_rating = 40
+connector = "XT60"

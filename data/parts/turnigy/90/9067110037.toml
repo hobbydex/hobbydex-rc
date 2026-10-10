@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110037"
+brand = "brand/turnigy"
+number = "9067110037"
+name = "Graphene 1500mAh 6S 22.2V 100C LiPo Battery Pack w/XT60 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-1500mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-graphene-1500mah-6s-75c-battery-pack-w-xt90.html" },
+]
+chemistry = "lipo"
+cells = 6
+capacity_mah = 1500
+c_rating = 100
+connector = "XT60"

@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110028"
+brand = "brand/turnigy"
+number = "9067110028"
+name = "4S 1500mAh 14.8V 40C Lipo Battery Pack w/XT60"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-1500mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-1500mah-4s-40c-lipoly-battery-w-xt60.html" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 1500
+c_rating = 40
+connector = "XT60"

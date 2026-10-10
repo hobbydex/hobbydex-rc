@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110003"
+brand = "brand/turnigy"
+number = "9067110003"
+name = "Rapid 5000mAh 2S (7.4V) 100C LiPo Battery Pack w/T-Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-rapid-5000mah-2s-7-4v-100c-lipo-battery-pack-w-t-connector.html" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5000
+c_rating = 100
+connector = "Deans"

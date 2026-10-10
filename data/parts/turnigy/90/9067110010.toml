@@ -1,0 +1,17 @@
+id = "part/turnigy/9067110010"
+brand = "brand/turnigy"
+number = "9067110010"
+name = "3300mAh 3S (11.1V) 30C Shorty LiPo Battery Pack w/XT60"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3300mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-3300mah-3s-11-1v-30c-shorty.html" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 3300
+c_rating = 30
+connector = "XT60"
+case = "shorty"

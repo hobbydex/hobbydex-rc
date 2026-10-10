@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110106"
+brand = "brand/turnigy"
+number = "9067110106"
+name = "10000mAh 6S 22.2V 40C LiPo Battery w/XT90"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-10000mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-high-capacity-6s-10000mah-40c-battery-pack-xt-90.html" },
+]
+chemistry = "lipo"
+cells = 6
+capacity_mah = 10000
+c_rating = 40
+connector = "XT90"

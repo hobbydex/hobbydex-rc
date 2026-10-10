@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110064"
+brand = "brand/turnigy"
+number = "9067110064"
+name = "Nano-Tech 4S 2800mAh 14.8V 70C Lipo Battery Pack w/XT60"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-2800mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-nano-tech-2800mah-4s-40c-lipoly-pack-w-xt60.html" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 2800
+c_rating = 70
+connector = "XT60"
