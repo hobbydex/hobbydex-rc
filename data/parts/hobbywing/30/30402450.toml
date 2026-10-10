@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402450"
+brand = "brand/hobbywing"
+number = "30402450"
+name = "EZRUN 4990SD G2-1650KV"
+category = "motor"
+category_source = "curated"
+kv = 1650
+lipo_cells = [3, 8]
+diameter_mm = 49
+length_mm = 90
+shaft_mm = 5
+weight_g = 701
+notes = "Bearings (Hobbywing's specifications): front 6x19x6, rear 6x19x6"
+equivalent_to = [
+  { spec = "spec/motor/brushless-4990-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 49 mm, length 90 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-4990-5690-sd-g2-manual"]

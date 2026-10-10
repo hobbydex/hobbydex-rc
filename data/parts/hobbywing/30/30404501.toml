@@ -1,0 +1,16 @@
+id = "part/hobbywing/30404501"
+brand = "brand/hobbywing"
+number = "30404501"
+name = "QuicRun 3660SL G2"
+category = "motor"
+category_source = "curated"
+lipo_cells = [2, 3]
+diameter_mm = 36
+length_mm = 60
+shaft_mm = 5
+weight_g = 273
+notes = "Bearings (Hobbywing's specifications): front 5x16x5, rear 5x13x4"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3660-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 36 mm, length 60 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/quicrun-3652-3660-sl-g2-manual"]

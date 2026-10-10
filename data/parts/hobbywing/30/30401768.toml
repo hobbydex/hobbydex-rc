@@ -1,0 +1,18 @@
+id = "part/hobbywing/30401768"
+brand = "brand/hobbywing"
+number = "30401768"
+name = "XERUN V10 G5 25.5T-TORQUE"
+category = "motor"
+category_source = "curated"
+kv = 2100
+turns = 25.5
+lipo_cells = [1, 3]
+diameter_mm = 35.8
+length_mm = 51.5
+shaft_mm = 3.175
+weight_g = 135
+notes = "Bearings (Hobbywing's specifications): front 4x9x4, rear 3x8x4"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 35.8 mm, length 51.5 mm, shaft 3.175 mm)" },
+]
+documents = ["doc/hobbywing/xerun-v10-g5-manual"]

@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402604"
+brand = "brand/hobbywing"
+number = "30402604"
+name = "EZRUN 3665SD-2400KV G3"
+category = "motor"
+category_source = "curated"
+kv = 2400
+lipo_cells = [2, 4]
+diameter_mm = 37
+length_mm = 65.8
+shaft_mm = 5
+weight_g = 304
+notes = "Bearings (Hobbywing's specifications): front 5x16x5, rear 5x11x5"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3665-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 37 mm, length 65.8 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-3652-3665-sd-g3-manual"]

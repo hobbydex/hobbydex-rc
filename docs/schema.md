@@ -304,6 +304,52 @@ spec can still differ in case size and mounting holes, so the part keeps
 degrees) at `voltage`, `voltage_range`, `gear_material`, `motor` (brushless |
 coreless | cored), `connector` and `rotation_deg` (the throw, when the brand states it).
 
+Motors: the can and the shaft, which decide whether a motor drops into a
+motor mount and takes the pinion: `motor_type` (brushed | brushless), `can`
+(the industry's size name, a string), `diameter_mm` and `length_mm` (the can
+rounded to whole millimetres) and `shaft_mm`; id
+`spec/motor/<motor_type>-<can>-<shaft>mm`. Brushless cans are named
+diameter then length, `3652` for 36 x 52 mm; the brand's own can number is
+used when its name has one that fits the dimensions (QuicRun 3650SD at 36 x
+52.8 mm is a 3650), otherwise the measured O.D. and length are rounded to
+whole millimetres (35.8 x 51.5 mm is a 3652). Brushed motors keep their can
+class from the name (540, 555) and have no `diameter_mm` or `length_mm` on
+the spec.
+
+```toml
+id = "spec/motor/brushless-3652-3.175mm"
+category = "motor"
+name = "Brushless motor, 3652 can, 3.175 mm shaft"
+motor_type = "brushless"
+can = "3652"
+diameter_mm = 36
+length_mm = 52
+shaft_mm = 3.175
+```
+
+The motor part keeps what differs between motors of one can: `kv`, `turns`
+(13.5 for a 13.5T stock motor), `lipo_cells` ([min, max] LiPo cells, also on
+ESCs), the measured `diameter_mm`, `length_mm` and `shaft_mm`, and
+`weight_g`. Bearing sizes go in `notes` (a motor is not a set, so no
+`includes`).
+
+```toml
+name = "XeRun V10 G5 13.5T"
+kv = 4050
+turns = 13.5
+lipo_cells = [1, 3]
+diameter_mm = 35.8
+length_mm = 51.5
+shaft_mm = 3.175
+weight_g = 138
+notes = "Bearings (Hobbywing's specifications): front 4x9x4, rear 3x8x4"
+equivalent_to = [{ spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (...)" }]
+```
+
+ESCs are parts with category electronics and, when stated, `current_a` and
+`peak_current_a` (continuous and burst amps), `lipo_cells`, `dimensions_mm`
+and `weight_g`. A motor and ESC combo lists its components with `includes`.
+
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.
 

@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402500"
+brand = "brand/hobbywing"
+number = "30402500"
+name = "EzRun 4274-SL-2200KV"
+category = "motor"
+category_source = "curated"
+kv = 2200
+lipo_cells = [2, 6]
+diameter_mm = 42
+length_mm = 74
+shaft_mm = 5
+weight_g = 418
+notes = "Bearings (Hobbywing's specifications): front 5x16x5, rear 5x13x4"
+equivalent_to = [
+  { spec = "spec/motor/brushless-4274-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 42 mm, length 74 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-4274-4268-manual"]

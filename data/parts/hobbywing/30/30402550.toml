@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402550"
+brand = "brand/hobbywing"
+number = "30402550"
+name = "EZRUN-5687SL-1100KV"
+category = "motor"
+category_source = "curated"
+kv = 1100
+lipo_cells = [3, 8]
+diameter_mm = 56
+length_mm = 87
+shaft_mm = 8
+weight_g = 916
+notes = "Bearings (Hobbywing's specifications): front 8x22x7, rear 8x22x7"
+equivalent_to = [
+  { spec = "spec/motor/brushless-5687-8mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 56 mm, length 87 mm, shaft 8 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-4985-manual"]

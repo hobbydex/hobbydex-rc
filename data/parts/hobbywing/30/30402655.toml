@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402655"
+brand = "brand/hobbywing"
+number = "30402655"
+name = "EZRUN 1626SD 6500KV"
+category = "motor"
+category_source = "curated"
+kv = 6500
+lipo_cells = [2, 2]
+diameter_mm = 16
+length_mm = 26
+shaft_mm = 2
+weight_g = 18
+notes = "Bearings (Hobbywing's specifications): bearing 2x5x2.5"
+equivalent_to = [
+  { spec = "spec/motor/brushless-1626-2mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 16 mm, length 26 mm, shaft 2 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-1626-manual"]

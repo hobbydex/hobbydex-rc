@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402950"
+brand = "brand/hobbywing"
+number = "30402950"
+name = "EZRUN-4985SL-1650KV"
+category = "motor"
+category_source = "curated"
+kv = 1650
+lipo_cells = [3, 6]
+diameter_mm = 49
+length_mm = 86.5
+shaft_mm = 5
+weight_g = 587
+notes = "Bearings (Hobbywing's specifications): front 6x19x6"
+equivalent_to = [
+  { spec = "spec/motor/brushless-4985-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 49 mm, length 86.5 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-4985-manual"]
