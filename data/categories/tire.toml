@@ -1,3 +1,11 @@
 id = "category/tire"
 name = "Tires"
 description = "Tires and tire inserts."
+key_fields = [
+  { field = "compound", label = "Compound", from = "part" },
+  { field = "scale", label = "Scale", from = "part" },
+  { field = "vehicle", label = "Vehicle", from = "part" },
+  { field = "position", label = "Position", from = "part" },
+  { field = "mounting", label = "Mounting", from = "part" },
+  { field = "wheel_size", label = "Rim", from = "part", compare_only = true },
+]

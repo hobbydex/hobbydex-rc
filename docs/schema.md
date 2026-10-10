@@ -369,6 +369,24 @@ and `weight_g`. A motor and ESC combo lists its components with `includes`.
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.
 
+Tyres carry, when the brand states them: `compound` (the brand's name for
+it, "Super Soft Long Wear"), `scale` ("1/8"), `vehicle` (buggy | truggy |
+short-course | stadium-truck), `position` (front | rear | front-rear |
+front-2wd | front-4wd), `wheel_size` (the rim diameter as written,
+`2.2"`, `2.2"/3.0"`), `insert` (closed-cell) and `mounting` (unmounted:
+tyres and inserts only | wheels-included: wheels in the box, to be mounted |
+pre-mounted | pre-mounted-not-glued). A tyre on a wheel links to the wheel
+hex spec like a wheel.
+
+```toml
+name = "Reverb 1/8 Buggy Pre-Mounted Tires (White) (Super Soft - Long Wear) w/EVO Wheels"
+compound = "Super Soft Long Wear"
+scale = "1/8"
+vehicle = "buggy"
+position = "front-rear"
+mounting = "pre-mounted"
+```
+
 ### Wheel hex specs
 
 `spec/wheel-hex/<size>mm` (category "wheel-hex", `hex_mm`) is the hex a wheel
