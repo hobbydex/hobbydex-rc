@@ -139,7 +139,10 @@ ceramic | carbide | unknown; for a bearing, the balls: ceramic is a hybrid
 bearing), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
 `thread_type` (machine | self-tapping), for shocks `shock_part` (complete | body |
 shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
-and `shaft_mm` (shaft diameter), and `equivalent_to`:
+and `shaft_mm` (shaft diameter), for ball studs and ball cups `ball_mm` (the ball
+diameter both must share) and for balls `ball_type` (stud: has its own thread |
+nut: bored or threaded, on a separate screw | set-screw: held on a link bar by a
+set screw), and `equivalent_to`:
 
 ```toml
 material = "steel"
