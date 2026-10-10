@@ -1,0 +1,16 @@
+id = "part/thunder-tiger/PD0677"
+brand = "brand/thunder-tiger"
+number = "PD0677"
+name = "Flat Head Socket Screw 3x8mm"
+fits = [
+  { kit = "kit/thunder-tiger/mt4-g3", type = "direct", source = "doc/thunder-tiger/shop" },
+  { kit = "kit/thunder-tiger/k-rock", type = "direct", source = "doc/thunder-tiger/shop" },
+]
+links = [
+  { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/mt-4-g3-parts-flat-head-socket-screw" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

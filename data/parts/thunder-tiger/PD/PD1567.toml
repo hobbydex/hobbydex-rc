@@ -1,0 +1,16 @@
+id = "part/thunder-tiger/PD1567"
+brand = "brand/thunder-tiger"
+number = "PD1567"
+name = "Set Screw 5x4mm"
+pack_qty = 20
+fits = [
+  { kit = "kit/thunder-tiger/eb4-g3", type = "direct", source = "doc/thunder-tiger/shop" },
+]
+links = [
+  { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/eb-4-g3-buggy-parts-set-screw-5x4mm" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m5x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

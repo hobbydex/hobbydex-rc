@@ -1,0 +1,16 @@
+id = "part/thunder-tiger/PD1963"
+brand = "brand/thunder-tiger"
+number = "PD1963"
+name = "4x12mm Set Screws"
+fits = [
+  { kit = "kit/thunder-tiger/mt4-g3", type = "direct", source = "doc/thunder-tiger/shop" },
+  { kit = "kit/thunder-tiger/k-rock", type = "direct", source = "doc/thunder-tiger/shop" },
+]
+links = [
+  { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/mt-4-g3-monster-truck-parts-4-12-mm-set-screws" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x12-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

@@ -1,0 +1,17 @@
+id = "part/thunder-tiger/PD0681"
+brand = "brand/thunder-tiger"
+number = "PD0681"
+name = "K-Rock eMTA/MT-4 G3 Flat Head Machined Screw 3x16mm"
+fits = [
+  { kit = "kit/thunder-tiger/mt4-g3", type = "direct", source = "doc/thunder-tiger/shop" },
+  { kit = "kit/thunder-tiger/emta", type = "direct", source = "doc/thunder-tiger/shop" },
+  { kit = "kit/thunder-tiger/k-rock", type = "direct", source = "doc/thunder-tiger/shop" },
+]
+links = [
+  { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/emta-mt-4-g3-flat-head-machined-screw-3-16" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
