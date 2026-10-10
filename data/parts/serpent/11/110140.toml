@@ -1,0 +1,16 @@
+id = "part/serpent/110140"
+brand = "brand/serpent"
+number = "110140"
+name = "Screw allen rh M3x20"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-gen4-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110140" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

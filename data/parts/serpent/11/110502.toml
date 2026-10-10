@@ -1,0 +1,16 @@
+id = "part/serpent/110502"
+brand = "brand/serpent"
+number = "110502"
+name = "Ballbearing 8x16x5 NSK"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-gen4-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110502" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"
