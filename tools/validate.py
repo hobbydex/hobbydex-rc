@@ -128,6 +128,9 @@ def main():
         for l in d.get("links", []) if kind in ("part", "release") else []:
             if not (isinstance(l, dict) and l.get("site") and str(l.get("url", "")).startswith("https://")):
                 errors.append(f"{path}: link {l!r} needs a site and an https url")
+        rg = d.get("range") if kind == "part" else None
+        if rg is not None and not (isinstance(rg, str) and re.fullmatch(r"[a-z0-9-]+/[a-z0-9.-]+", rg) and rg.split("/")[0] == d["brand"].split("/")[1]):
+            errors.append(f"{path}: range {rg!r} should be <brand slug>/<slug> of the part's own brand")
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")

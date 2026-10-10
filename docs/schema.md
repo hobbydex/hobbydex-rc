@@ -139,7 +139,9 @@ ceramic | carbide | unknown; for a bearing, the balls: ceramic is a hybrid
 bearing), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
 `thread_type` (machine | self-tapping), for shocks `shock_part` (complete | body |
 shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
-and `shaft_mm` (shaft diameter), for ball studs and ball cups `ball_mm` (the ball
+and `shaft_mm` (shaft diameter), `range` (a shared id such as "rc4wd/540-crawler-brushed-motor" for the
+parts of one product range that differ only in wind, kV or a similar rating;
+the site lists the other versions on each part page), for ball studs and ball cups `ball_mm` (the ball
 diameter both must share) and for balls `ball_type` (stud: has its own thread |
 nut: threaded inside, on a separate screw | through-hole: bored through, a screw
 passes through it | set-screw: has its own set screw that clamps it on an
