@@ -382,6 +382,13 @@ tyres and inserts only | wheels-included: wheels in the box, to be mounted |
 pre-mounted | pre-mounted-not-glued). A tyre on a wheel links to the wheel
 hex spec like a wheel.
 
+Wheels carry the same `scale`, `vehicle`, `position` and `wheel_size`, and
+when stated `beadlock` (true), `offset_mm` (as written, +2 or -0.75) and
+`width_mm`. `vehicle` also takes monster, crawler, touring, on-road,
+drift, rally, formula and pan-car. Short course wheels and tyres are
+`2.2"/3.0"`. tools/link_wheel_props.py fills these from names; values an
+importer read from the manufacturer's specs win.
+
 ```toml
 name = "Reverb 1/8 Buggy Pre-Mounted Tires (White) (Super Soft - Long Wear) w/EVO Wheels"
 compound = "Super Soft Long Wear"
