@@ -1,0 +1,14 @@
+id = "part/castle/010-0184-01"
+brand = "brand/castle"
+number = "010-0184-01"
+name = "COBRA 6 8S MAX, 33.6V MAX, 8A PEAK BEC w/ 2028-800KV SENSORED MOTOR"
+category = "electronics"
+category_source = "curated"
+documents = ["doc/castle/cobra-series-drivers-ed-guide", "doc/castle/cobra-6-quick-start-guide"]
+links = [
+  { site = "Castle Creations", url = "https://castlecreations.com/products/surface-esc-motor-combo-cobra-6-8s-max-33-6v-8a-bec-1717-1260kv-sensored-motor-010-0184-01" },
+]
+includes = [
+  { part = "part/castle/010-0184-00", qty = 1 },
+  { part = "part/castle/060-0064-00", qty = 1 },
+]

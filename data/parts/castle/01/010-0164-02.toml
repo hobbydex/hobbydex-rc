@@ -1,0 +1,14 @@
+id = "part/castle/010-0164-02"
+brand = "brand/castle"
+number = "010-0164-02"
+name = "SW 4, 12.6V, 2A BEC, WP SENSORLESS ESC w/1406-5700 SENSORED MOTOR"
+category = "electronics"
+category_source = "curated"
+documents = ["doc/castle/sidewinder-drivers-ed-guide", "doc/castle/sidewinder-quick-start-guide"]
+links = [
+  { site = "Castle Creations", url = "https://castlecreations.com/products/surface-esc-motor-combo-sw-4-12-6v-2a-bec-wp-sensorless-esc-w-1406-5700-sensored-motor-010-0164-02" },
+]
+includes = [
+  { part = "part/castle/010-0164-00", qty = 1 },
+  { part = "part/castle/060-0057-00", qty = 1 },
+]
