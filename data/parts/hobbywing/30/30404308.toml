@@ -1,0 +1,18 @@
+id = "part/hobbywing/30404308"
+brand = "brand/hobbywing"
+number = "30404308"
+name = "QuicRun-3650SD-25.5T G2"
+category = "motor"
+category_source = "curated"
+kv = 1520
+turns = 25.5
+lipo_cells = [2, 3]
+diameter_mm = 36
+length_mm = 52.8
+shaft_mm = 3.175
+weight_g = 186
+notes = "Bearings (Hobbywing's specifications): front 3.175x9.525x3.967, rear 3.175x9.525x3.967"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3650-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 36 mm, length 52.8 mm, shaft 3.175 mm)" },
+]
+documents = ["doc/hobbywing/quicrun-3650-sd-g2-manual"]

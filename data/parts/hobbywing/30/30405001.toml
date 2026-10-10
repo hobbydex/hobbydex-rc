@@ -1,0 +1,17 @@
+id = "part/hobbywing/30405001"
+brand = "brand/hobbywing"
+number = "30405001"
+name = "XeRun-4274SD-2250KV-G3"
+category = "motor"
+category_source = "curated"
+kv = 2250
+lipo_cells = [2, 6]
+diameter_mm = 42
+length_mm = 74
+shaft_mm = 5
+weight_g = 354
+notes = "Bearings (Hobbywing's specifications): front 5x16x5, rear 5x11x5"
+equivalent_to = [
+  { spec = "spec/motor/brushless-4274-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 42 mm, length 74 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/xerun-4268-4274-g3-manual"]

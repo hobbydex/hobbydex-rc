@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402750"
+brand = "brand/hobbywing"
+number = "30402750"
+name = "EZRUN-4268-SL-2600KV"
+category = "motor"
+category_source = "curated"
+kv = 2600
+lipo_cells = [2, 4]
+diameter_mm = 42
+length_mm = 68
+shaft_mm = 5
+weight_g = 343
+notes = "Bearings (Hobbywing's specifications): front 5x16x5, rear 5x13x4"
+equivalent_to = [
+  { spec = "spec/motor/brushless-4268-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 42 mm, length 68 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-4274-4268-manual"]

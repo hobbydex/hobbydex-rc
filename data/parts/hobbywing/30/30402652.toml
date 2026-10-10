@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402652"
+brand = "brand/hobbywing"
+number = "30402652"
+name = "EzRun-3660SL-4600KV-G2"
+category = "motor"
+category_source = "curated"
+kv = 4600
+lipo_cells = [2, 2]
+diameter_mm = 36
+length_mm = 60
+shaft_mm = 5
+weight_g = 262
+notes = "Bearings (Hobbywing's specifications): front 5x13x4, rear 5x13x4"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3660-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 36 mm, length 60 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-3652-3660-sl-g2-manual"]

@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402141"
+brand = "brand/hobbywing"
+number = "30402141"
+name = "EZRUN 4278SD G2R"
+category = "motor"
+category_source = "curated"
+kv = 2250
+lipo_cells = [3, 6]
+diameter_mm = 42
+length_mm = 78
+shaft_mm = 5
+weight_g = 465
+notes = "Bearings (Hobbywing's specifications): front 5x16x5, rear 5x11x5"
+equivalent_to = [
+  { spec = "spec/motor/brushless-4278-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 42 mm, length 78 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-4268-4278-sd-g2r-manual"]

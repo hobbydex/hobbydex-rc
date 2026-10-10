@@ -1,0 +1,17 @@
+id = "part/hobbywing/30401909"
+brand = "brand/hobbywing"
+number = "30401909"
+name = "XeRun-4268SD-2800KV-G3-OnRoad"
+category = "motor"
+category_source = "curated"
+kv = 2800
+lipo_cells = [2, 4]
+diameter_mm = 42
+length_mm = 67.8
+shaft_mm = 5
+weight_g = 300
+notes = "Bearings (Hobbywing's specifications): front 5x16x5, rear 5x11x5"
+equivalent_to = [
+  { spec = "spec/motor/brushless-4268-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 42 mm, length 67.8 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/xerun-4268-4274-g3-manual"]

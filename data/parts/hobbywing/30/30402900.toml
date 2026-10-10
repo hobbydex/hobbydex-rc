@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402900"
+brand = "brand/hobbywing"
+number = "30402900"
+name = "EzRun-56113SL-800KV"
+category = "motor"
+category_source = "curated"
+kv = 800
+lipo_cells = [3, 8]
+diameter_mm = 56
+length_mm = 113
+shaft_mm = 8
+weight_g = 1210
+notes = "Bearings (Hobbywing's specifications): front 8x22x7, rear 8x22x7"
+equivalent_to = [
+  { spec = "spec/motor/brushless-56113-8mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 56 mm, length 113 mm, shaft 8 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-4985-manual"]

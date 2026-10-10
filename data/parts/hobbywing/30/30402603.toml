@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402603"
+brand = "brand/hobbywing"
+number = "30402603"
+name = "EZRUN 3652SD-3300KV G3"
+category = "motor"
+category_source = "curated"
+kv = 3300
+lipo_cells = [2, 3]
+diameter_mm = 37
+length_mm = 53
+shaft_mm = 3.175
+weight_g = 228
+notes = "Bearings (Hobbywing's specifications): front 5x13x4, rear 5x11x5"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 37 mm, length 53 mm, shaft 3.175 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-3652-3665-sd-g3-manual"]

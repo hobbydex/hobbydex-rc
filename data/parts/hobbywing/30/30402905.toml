@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402905"
+brand = "brand/hobbywing"
+number = "30402905"
+name = "EZRUN 56118SL G2"
+category = "motor"
+category_source = "curated"
+kv = 1600
+lipo_cells = [6, 12]
+diameter_mm = 56
+length_mm = 118
+shaft_mm = 8
+weight_g = 1270
+notes = "Bearings (Hobbywing's specifications): front 8x22x7, rear 8x19x6"
+equivalent_to = [
+  { spec = "spec/motor/brushless-56118-8mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 56 mm, length 118 mm, shaft 8 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-5690-56118-sl-g2-manual"]

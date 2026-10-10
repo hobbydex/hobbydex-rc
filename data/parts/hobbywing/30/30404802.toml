@@ -1,0 +1,17 @@
+id = "part/hobbywing/30404802"
+brand = "brand/hobbywing"
+number = "30404802"
+name = "QUICRUN 2030SL G2 7800KV"
+category = "motor"
+category_source = "curated"
+kv = 7800
+lipo_cells = [2, 2]
+diameter_mm = 20
+length_mm = 31
+shaft_mm = 2
+weight_g = 43
+notes = "Bearings (Hobbywing's specifications): front 3x8x4, rear 3x8x4"
+equivalent_to = [
+  { spec = "spec/motor/brushless-2030-2mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 20 mm, length 31 mm, shaft 2 mm)" },
+]
+documents = ["doc/hobbywing/quicrun-2030-g2-manual"]

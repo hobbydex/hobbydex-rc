@@ -1,0 +1,17 @@
+id = "part/hobbywing/30401352"
+brand = "brand/hobbywing"
+number = "30401352"
+name = "XeRun 3662 DRX 6500KV"
+category = "motor"
+category_source = "curated"
+kv = 6500
+lipo_cells = [2, 2]
+diameter_mm = 36
+length_mm = 63
+shaft_mm = 5
+weight_g = 240
+notes = "Bearings (Hobbywing's specifications): front 5x11x5, rear 3x8x4"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3662-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 36 mm, length 63 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/xerun-3652-3662-drx-manual"]

@@ -1,0 +1,17 @@
+id = "part/hobbywing/30402350"
+brand = "brand/hobbywing"
+number = "30402350"
+name = "EZRUN 5690SD G2-1250KV"
+category = "motor"
+category_source = "curated"
+kv = 1250
+lipo_cells = [3, 8]
+diameter_mm = 56
+length_mm = 90.2
+shaft_mm = 8
+weight_g = 867
+notes = "Bearings (Hobbywing's specifications): front 8x22x7, rear 8x19x6"
+equivalent_to = [
+  { spec = "spec/motor/brushless-5690-8mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 56 mm, length 90.2 mm, shaft 8 mm)" },
+]
+documents = ["doc/hobbywing/ezrun-4990-5690-sd-g2-manual"]

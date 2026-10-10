@@ -42,6 +42,7 @@ ENUMS = {
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.lubricant": {"oil", "grease"},
     "spec.type": {"radial-ball", "thrust"},
+    "spec.motor_type": {"brushed", "brushless"},
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.case": {"hard", "soft", "shorty"},
@@ -117,6 +118,9 @@ def main():
         for l in d.get("links", []) if kind in ("part", "release") else []:
             if not (isinstance(l, dict) and l.get("site") and str(l.get("url", "")).startswith("https://")):
                 errors.append(f"{path}: link {l!r} needs a site and an https url")
+        lc = d.get("lipo_cells") if kind == "part" else None
+        if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
+            errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
         if kind == "part" and not re.match(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$", str(d.get("number", ""))):
             errors.append(f"{path}: odd part number {d.get('number')!r}")
     counts = {}

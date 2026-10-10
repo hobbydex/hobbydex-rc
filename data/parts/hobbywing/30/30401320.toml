@@ -1,0 +1,17 @@
+id = "part/hobbywing/30401320"
+brand = "brand/hobbywing"
+number = "30401320"
+name = "XeRun 2848SD 2800KV"
+category = "motor"
+category_source = "curated"
+kv = 2800
+lipo_cells = [2, 3]
+diameter_mm = 28.5
+length_mm = 48
+shaft_mm = 3.175
+weight_g = 100
+notes = "Bearings (Hobbywing's specifications): front 3.175x9.525x3.9675, rear 3.175x6.35x2.778"
+equivalent_to = [
+  { spec = "spec/motor/brushless-2848-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 28.5 mm, length 48 mm, shaft 3.175 mm)" },
+]
+documents = ["doc/hobbywing/xerun-2848-manual"]
