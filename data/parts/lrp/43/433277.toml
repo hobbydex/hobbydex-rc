@@ -1,0 +1,20 @@
+id = "part/lrp/433277"
+brand = "brand/lrp"
+number = "433277"
+name = "HV Ultra LCG Stock Spec GRAPHENE-4.2 6300mAh Hardcase Battery - 7.6V LiPo - 145C/70C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/433277/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 6300
+c_rating = 145
+case = "hard"
+dimensions_mm = [139, 47, 20]
+weight_g = 237
+connector = "5mm bullet"

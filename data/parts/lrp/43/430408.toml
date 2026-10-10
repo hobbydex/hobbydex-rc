@@ -1,0 +1,20 @@
+id = "part/lrp/430408"
+brand = "brand/lrp"
+number = "430408"
+name = "ANTIX by LRP - 6400 GRAPHENE - 11.4V LiHV - 45C LiPo Car Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430408/" },
+]
+chemistry = "lihv"
+cells = 3
+equivalent_to = [
+  { spec = "spec/battery/lihv-3s-6400mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 6400
+c_rating = 45
+case = "hard"
+dimensions_mm = [137, 47, 37]
+weight_g = 418
+documents = ["doc/lrp/430408-de-manual"]

@@ -1,0 +1,20 @@
+id = "part/lrp/431276"
+brand = "brand/lrp"
+number = "431276"
+name = "HV Stock Spec GRAPHENE-4 7400mAh Hardcase Battery - 7.6V LiPo - 135C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/431276/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-7400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 7400
+c_rating = 135
+case = "hard"
+dimensions_mm = [139, 47, 25.1]
+weight_g = 302
+connector = "5mm bullet"

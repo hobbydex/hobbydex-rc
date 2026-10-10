@@ -1,0 +1,20 @@
+id = "part/lrp/431286"
+brand = "brand/lrp"
+number = "431286"
+name = "HV LCG Modified Shorty GRAPHENE-4 4600mAh Hardcase Akku - 7.6V LiPo - 120C / 60C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/431286/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4600
+c_rating = 120
+case = "shorty"
+dimensions_mm = [97, 47, 22.5]
+weight_g = 186
+connector = "5mm bullet"

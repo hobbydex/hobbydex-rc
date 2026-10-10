@@ -1,0 +1,19 @@
+id = "part/lrp/520821"
+brand = "brand/lrp"
+number = "520821"
+name = "X45 Modified 1950 kV"
+category = "motor"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/520821/" },
+]
+kv = 1950
+lipo_cells = [4, 4]
+diameter_mm = 42
+length_mm = 68.5
+shaft_mm = 5
+weight_g = 345
+equivalent_to = [
+  { spec = "spec/motor/brushless-4269-5mm", match = "functional", notes = "Derived from LRP's specifications (diameter 42 mm, length 68.5 mm, shaft 5 mm)" },
+]
+range = "lrp/x45-modified"

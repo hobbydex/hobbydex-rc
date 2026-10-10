@@ -1,0 +1,20 @@
+id = "part/lrp/432277"
+brand = "brand/lrp"
+number = "432277"
+name = "HV Ultra LCG Stock Spec GRAPHENE - 4.1 5100mAh Hardcase Battery - 7.6V LiPo - 135C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/432277/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5100mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5100
+c_rating = 135
+case = "hard"
+dimensions_mm = [139, 47, 20]
+weight_g = 248
+connector = "5mm bullet"

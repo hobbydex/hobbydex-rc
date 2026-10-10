@@ -1,0 +1,20 @@
+id = "part/lrp/433266"
+brand = "brand/lrp"
+number = "433266"
+name = "1/12 Hyper LCG Modified GRAPHENE-4.2 8200mAh Hardcase Battery - 3.7V - 130C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/433266/" },
+]
+chemistry = "lipo"
+cells = 1
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-8200mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 8200
+c_rating = 130
+case = "hard"
+dimensions_mm = [93, 47, 18.5]
+weight_g = 158
+connector = "5mm bullet"

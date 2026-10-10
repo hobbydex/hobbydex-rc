@@ -1,0 +1,19 @@
+id = "part/lrp/520822"
+brand = "brand/lrp"
+number = "520822"
+name = "X45 Modified 2100 kV"
+category = "motor"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/520822/" },
+]
+kv = 2100
+lipo_cells = [4, 4]
+diameter_mm = 42
+length_mm = 68.5
+shaft_mm = 5
+weight_g = 345
+equivalent_to = [
+  { spec = "spec/motor/brushless-4269-5mm", match = "functional", notes = "Derived from LRP's specifications (diameter 42 mm, length 68.5 mm, shaft 5 mm)" },
+]
+range = "lrp/x45-modified"

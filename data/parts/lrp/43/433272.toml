@@ -1,0 +1,20 @@
+id = "part/lrp/433272"
+brand = "brand/lrp"
+number = "433272"
+name = "HV Hyper LCG Modified GRAPHENE-4.2 5900mAh Hardcase Battery - 7.6V LiPo - 130C/65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/433272/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5900mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5900
+c_rating = 130
+case = "hard"
+dimensions_mm = [139, 47, 17.5]
+weight_g = 217
+connector = "5mm bullet"

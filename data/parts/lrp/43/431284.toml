@@ -1,0 +1,20 @@
+id = "part/lrp/431284"
+brand = "brand/lrp"
+number = "431284"
+name = "HV Stock Spec Shorty GRAPHENE-4 4900mAh Hardcase Battery - 7.6V LiPo - 135C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/431284/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4900mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4900
+c_rating = 135
+case = "shorty"
+dimensions_mm = [97, 47, 25.1]
+weight_g = 210
+connector = "5mm bullet"
