@@ -20,11 +20,12 @@ REQUIRED = {
     "doc": ["id", "kind", "title"],
     "shop": ["id", "name", "status"],
     "category": ["id", "name"],
+    "standard": ["id", "code", "title"],
 }
 KINDS = {k: dict(dir=DIRS[k], required=REQUIRED[k]) for k in REQUIRED}
 REFS = {  # field -> expected id prefix
     "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/",
-    "publisher": "brand/", "replaces": "part/", "supersedes": "part/",
+    "publisher": "brand/", "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
 }
 LIST_REFS = {"documents": "doc/", "releases": "release/"}
 ENUMS = {
@@ -90,6 +91,7 @@ def main():
                 if r not in d:
                     errors.append(f"{path}: missing required field {r}")
             docs.append((path, kind, d))
+    codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     for path, kind, d in docs:
         def check_ref(field, value, where):
             prefix = REFS.get(field)
@@ -128,6 +130,10 @@ def main():
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
+        if kind == "spec":
+            for code in d.get("standards", []):
+                if code not in codes:
+                    errors.append(f"{path}: standard {code!r} has no data/standards entry (code = {code!r})")
         if kind == "release" and "released" in d:
             rd = str(d["released"])
             if not re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", rd):
