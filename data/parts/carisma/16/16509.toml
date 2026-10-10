@@ -1,0 +1,15 @@
+id = "part/carisma/16509"
+brand = "brand/carisma"
+number = "16509"
+name = "M48S 12T PINION GEAR SET M1 module(5mm SHAFT)"
+fits = [
+  { kit = "kit/carisma/m48s", type = "direct", source = "doc/carisma/store" },
+]
+links = [
+  { site = "Carisma", url = "https://carisma-shop.com/products/m48s-12t-pinion-gear-set-m1-module5mm-shaft" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod1-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5
+category = "pinion"
