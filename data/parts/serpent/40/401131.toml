@@ -1,0 +1,18 @@
+id = "part/serpent/401131"
+brand = "brand/serpent"
+number = "401131"
+name = "Ball bearing 5x10x3"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/viper-990", type = "direct", source = "doc/serpent/viper-990r-spares" },
+  { kit = "kit/serpent/f190", type = "direct", source = "doc/serpent/f190-spares" },
+  { kit = "kit/serpent/medius-x20fwd", type = "direct", source = "doc/serpent/medius-x20fwd-21-carbon-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser401131" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

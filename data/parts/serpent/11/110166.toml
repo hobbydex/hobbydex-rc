@@ -1,0 +1,20 @@
+id = "part/serpent/110166"
+brand = "brand/serpent"
+number = "110166"
+name = "Screw allen countersunk M2.5x5"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/medius-x25", type = "direct", source = "doc/serpent/medius-x25-steel-spares" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-23-spares" },
+  { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-spares" },
+  { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-parts" },
+  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110166" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

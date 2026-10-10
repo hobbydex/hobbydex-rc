@@ -1,0 +1,19 @@
+id = "part/serpent/401133"
+brand = "brand/serpent"
+number = "401133"
+name = "Ball-bearing 4x8x3"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8gtr-ec-spares" },
+  { kit = "kit/serpent/viper-990e", type = "direct", source = "doc/serpent/viper-990e-r-spares" },
+  { kit = "kit/serpent/spyder-srx2", type = "direct", source = "doc/serpent/spyder-srx2-gen3-spares" },
+  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser401133" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

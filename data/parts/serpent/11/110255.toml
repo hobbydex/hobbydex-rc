@@ -1,0 +1,17 @@
+id = "part/serpent/110255"
+brand = "brand/serpent"
+number = "110255"
+name = "Screw allen cilinderhead M2.5x4"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/viper-990e", type = "direct", source = "doc/serpent/viper-990e-r-spares" },
+  { kit = "kit/serpent/viper-990", type = "direct", source = "doc/serpent/viper-990r-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110255" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x4-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

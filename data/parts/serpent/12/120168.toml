@@ -1,0 +1,15 @@
+id = "part/serpent/120168"
+brand = "brand/serpent"
+number = "120168"
+name = "Motor-pinion alu hard 48P / 30T"
+fits = [
+  { kit = "kit/serpent/spyder-srx2", type = "direct", source = "doc/serpent/spyder-srx-2-mm-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser120168" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-30t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "aluminium"
+category = "pinion"

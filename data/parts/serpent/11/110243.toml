@@ -1,0 +1,16 @@
+id = "part/serpent/110243"
+brand = "brand/serpent"
+number = "110243"
+name = "Screw allen countersunk m3x30"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/f190", type = "direct", source = "doc/serpent/f190-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110243" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x30-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

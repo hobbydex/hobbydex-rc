@@ -1,0 +1,17 @@
+id = "part/serpent/110143"
+brand = "brand/serpent"
+number = "110143"
+name = "Screw allen rh M4x18"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8gtr-ec-spares" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8gte-r-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110143" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

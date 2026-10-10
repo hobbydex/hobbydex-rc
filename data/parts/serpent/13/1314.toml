@@ -1,0 +1,17 @@
+id = "part/serpent/1314"
+brand = "brand/serpent"
+number = "1314"
+name = "Ballbearing 6x12x4"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/natrix-750e", type = "direct", source = "doc/serpent/natrix-750-e-spares" },
+  { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser1314" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

@@ -1,0 +1,18 @@
+id = "part/serpent/110231"
+brand = "brand/serpent"
+number = "110231"
+name = "Screw allen flathead M3x10"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/medius-x26", type = "direct", source = "doc/serpent/medius-x26-steel-spares" },
+  { kit = "kit/serpent/medius-x25", type = "direct", source = "doc/serpent/medius-x25-steel-spares" },
+  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110231" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
