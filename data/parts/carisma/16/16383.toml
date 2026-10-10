@@ -1,0 +1,14 @@
+id = "part/carisma/16383"
+brand = "brand/carisma"
+number = "16383"
+name = "MSA-1E 2.0 16T MOTOR PINION GEAR (0.3M)"
+fits = [
+  { kit = "kit/carisma/msa-1e", type = "direct", source = "doc/carisma/store" },
+]
+links = [
+  { site = "Carisma", url = "https://carisma-shop.com/products/msa-1e-2-0-16t-motor-pinion-gear-0-3m" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod0.3-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"

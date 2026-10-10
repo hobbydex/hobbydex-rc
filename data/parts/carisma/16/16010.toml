@@ -1,0 +1,17 @@
+id = "part/carisma/16010"
+brand = "brand/carisma"
+number = "16010"
+name = "MSA-1E 7.2v 130 MAH NiMH Stick Pack Battery"
+fits = [
+  { kit = "kit/carisma/msa-1e", type = "direct", source = "doc/carisma/store" },
+]
+links = [
+  { site = "Carisma", url = "https://carisma-shop.com/products/msa-1e-7-2v-130-mah-nimh-stick-pack-battery" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-130mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 130
+category = "battery"
