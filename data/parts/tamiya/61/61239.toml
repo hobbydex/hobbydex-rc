@@ -4,3 +4,7 @@ number = "61239"
 name = "1050 Ball Bearing"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "close", notes = "Tamiya size code 1050: 10 mm outer, 5 mm bore, 4 mm wide (usual width for this size, not confirmed for Tamiya)" },
+]
+material = "steel"
