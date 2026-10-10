@@ -1,0 +1,20 @@
+id = "part/lrp/432283"
+brand = "brand/lrp"
+number = "432283"
+name = "HV Hyper LCG Stock Spec GRAPHENE-4.1 4600mAh Hardcase Battery - 7.6V LiPo - 135C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/432283/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4600
+c_rating = 135
+case = "hard"
+dimensions_mm = [139, 47, 17.5]
+weight_g = 219
+connector = "5mm bullet"

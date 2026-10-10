@@ -1,0 +1,18 @@
+id = "part/lrp/57462"
+brand = "brand/lrp"
+number = "57462"
+name = "Truck Puller 3 - 12V"
+category = "motor"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/57462/" },
+]
+lipo_cells = [1, 4]
+diameter_mm = 35.9
+shaft_mm = 3.175
+weight_g = 156
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Derived from LRP's specifications (can class 540, shaft 3.175 mm)" },
+]
+notes = "No-load speed 6,300 rpm at 12 V"
+documents = ["doc/lrp/57462-de-manual"]

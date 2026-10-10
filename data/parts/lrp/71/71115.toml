@@ -1,0 +1,17 @@
+id = "part/lrp/71115"
+brand = "brand/lrp"
+number = "71115"
+name = "Power Pack 3000 - 7.2V - 6-Zellen - Tamiya / JST Stecker - NiMH Stickpack"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/71115/" },
+]
+chemistry = "nimh"
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3000mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 3000
+connector = "Tamiya"
+documents = ["doc/lrp/71115-de-manual"]

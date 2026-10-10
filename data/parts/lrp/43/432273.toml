@@ -1,0 +1,20 @@
+id = "part/lrp/432273"
+brand = "brand/lrp"
+number = "432273"
+name = "HV Hyper LCG Modified Shorty GRAPHENE-4.1 4200mAh Hardcase Battery - 7.6V LiPo - 120C / 60C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/432273/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4200
+c_rating = 120
+case = "shorty"
+dimensions_mm = [97, 47, 18.5]
+weight_g = 160
+connector = "5mm bullet"

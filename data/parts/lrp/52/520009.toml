@@ -1,0 +1,20 @@
+id = "part/lrp/520009"
+brand = "brand/lrp"
+number = "520009"
+name = "X22 Modified 8.0T"
+category = "motor"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/520009/" },
+]
+turns = 8
+lipo_cells = [1, 2]
+diameter_mm = 35.9
+length_mm = 50.8
+shaft_mm = 3.175
+weight_g = 161
+equivalent_to = [
+  { spec = "spec/motor/brushless-3651-3.175mm", match = "functional", notes = "Derived from LRP's specifications (diameter 35.9 mm, length 50.8 mm, shaft 3.175 mm)" },
+]
+documents = ["doc/lrp/520009-manual"]
+range = "lrp/x22-modified"

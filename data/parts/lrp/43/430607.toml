@@ -1,0 +1,18 @@
+id = "part/lrp/430607"
+brand = "brand/lrp"
+number = "430607"
+name = "XTEC Race Pack Stick 2/3A NiMH - Micro - 7.2V - 1600mAh"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430607/" },
+]
+chemistry = "nimh"
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 1600
+dimensions_mm = [90, 32, 17]
+weight_g = 140
+documents = ["doc/lrp/430607-de-manual"]

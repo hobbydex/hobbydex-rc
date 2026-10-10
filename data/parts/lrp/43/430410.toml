@@ -1,0 +1,20 @@
+id = "part/lrp/430410"
+brand = "brand/lrp"
+number = "430410"
+name = "ANTIX by LRP - 9000 GRAPHENE - 7.6V LiHV - 45C LiPo Car Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430410/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-9000mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 9000
+c_rating = 45
+case = "hard"
+dimensions_mm = [137, 47, 25]
+weight_g = 352
+documents = ["doc/lrp/430410-de-manual"]

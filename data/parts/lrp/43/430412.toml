@@ -1,0 +1,21 @@
+id = "part/lrp/430412"
+brand = "brand/lrp"
+number = "430412"
+name = "ANTIX by LRP - 2100 1/18th GRAPHENE - 7.6V LiHV - 45C LiPo Car Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430412/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-2100mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 2100
+c_rating = 45
+case = "hard"
+dimensions_mm = [87, 32, 18]
+weight_g = 94
+connector = "5mm bullet"
+documents = ["doc/lrp/430412-de-manual"]

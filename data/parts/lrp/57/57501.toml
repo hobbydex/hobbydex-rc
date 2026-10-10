@@ -1,0 +1,18 @@
+id = "part/lrp/57501"
+brand = "brand/lrp"
+number = "57501"
+name = "Crawler Special 3"
+category = "motor"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/57501/" },
+]
+lipo_cells = [1, 3]
+diameter_mm = 35.9
+shaft_mm = 3.175
+weight_g = 156
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Derived from LRP's specifications (can class 540, shaft 3.175 mm)" },
+]
+notes = "No-load speed 8,900 rpm at 7.2 V"
+documents = ["doc/lrp/57501-de-manual"]

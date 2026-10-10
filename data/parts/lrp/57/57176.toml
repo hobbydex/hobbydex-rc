@@ -1,0 +1,17 @@
+id = "part/lrp/57176"
+brand = "brand/lrp"
+number = "57176"
+name = "V10 SPEC.6 17x2T"
+category = "motor"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/57176/" },
+]
+lipo_cells = [1, 2]
+diameter_mm = 35.9
+shaft_mm = 3.175
+weight_g = 156
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Derived from LRP's specifications (can class 540, shaft 3.175 mm)" },
+]
+notes = "Winding 17x2T; No-load speed 26,500 rpm at 7.2 V"

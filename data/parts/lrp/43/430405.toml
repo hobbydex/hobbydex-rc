@@ -1,0 +1,20 @@
+id = "part/lrp/430405"
+brand = "brand/lrp"
+number = "430405"
+name = "ANTIX by LRP - 5200 GRAPHENE - 7.6V LiHV - 45C LiPo Car Stickpack Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430405/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5200mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 5200
+c_rating = 45
+case = "hard"
+dimensions_mm = [137.5, 46.5, 24.5]
+weight_g = 234
+documents = ["doc/lrp/430405-de-manual"]

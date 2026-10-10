@@ -1,0 +1,20 @@
+id = "part/lrp/432263"
+brand = "brand/lrp"
+number = "432263"
+name = "HV Mid Size Modified GRAPHENE-4.1 7000mAh Hardcase Battery - 7.6V LiPo - 120C / 60C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/432263/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-7000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 7000
+c_rating = 120
+case = "hard"
+dimensions_mm = [113, 47, 25.1]
+weight_g = 261
+connector = "5mm bullet"

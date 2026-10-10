@@ -1,0 +1,19 @@
+id = "part/lrp/520015"
+brand = "brand/lrp"
+number = "520015"
+name = "X10 Outlaw Brushless Motor - 6.5T"
+category = "motor"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/520015/" },
+]
+turns = 6.5
+lipo_cells = [1, 2]
+diameter_mm = 36.02
+length_mm = 50.4
+shaft_mm = 3.175
+weight_g = 160
+equivalent_to = [
+  { spec = "spec/motor/brushless-3650-3.175mm", match = "functional", notes = "Derived from LRP's specifications (diameter 36.02 mm, length 50.4 mm, shaft 3.175 mm)" },
+]
+range = "lrp/x10-outlaw-brushless-motor"

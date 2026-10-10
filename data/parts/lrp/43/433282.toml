@@ -1,0 +1,20 @@
+id = "part/lrp/433282"
+brand = "brand/lrp"
+number = "433282"
+name = "HV Ultra LCG Modified GRAPHENE-4.2 7200mAh Hardcase Battery - 7.6V LiPo - 130C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/433282/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-7200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 7200
+c_rating = 130
+case = "hard"
+dimensions_mm = [139, 47, 20]
+weight_g = 246
+connector = "5mm bullet"
