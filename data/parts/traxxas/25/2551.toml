@@ -1,5 +1,10 @@
 id = "part/traxxas/2551"
 brand = "brand/traxxas"
 number = "2551"
-name = "2551"
+name = "Screws, 3x10mm countersunk machine (6) (hex drive)"
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
