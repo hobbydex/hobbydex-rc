@@ -4,3 +4,6 @@ number = "201032"
 name = "Motor FRS540 - 4.8V"
 released = "2024-07-26"
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

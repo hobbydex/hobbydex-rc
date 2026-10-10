@@ -7,3 +7,6 @@ fits = [
   { kit = "kit/absima/ab1", type = "direct", source = "doc/absima/spares-ab1" },
 ]
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

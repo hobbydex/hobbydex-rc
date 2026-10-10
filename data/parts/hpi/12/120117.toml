@@ -3,3 +3,6 @@ brand = "brand/hpi"
 number = "120117"
 name = "Saturn 12T 550 Motor"
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

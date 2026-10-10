@@ -4,3 +4,6 @@ number = "C-00230-0127"
 name = "Turbo 540 Brushed Motor - 17T - 21.500 rpm"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-00230-0127"
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
