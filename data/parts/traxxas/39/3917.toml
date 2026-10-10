@@ -3,3 +3,7 @@ brand = "brand/traxxas"
 number = "3917"
 name = "Gear, 15-T pinion (32-pitch) (fits 3mm shaft)/ set screw"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 3

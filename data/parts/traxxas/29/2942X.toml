@@ -3,3 +3,9 @@ brand = "brand/traxxas"
 number = "2942X"
 name = "3300mAh 7.2V 6-cell flat NiMH Battery, Series 3 Power Cell"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 3300
