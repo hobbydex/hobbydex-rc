@@ -1,0 +1,17 @@
+id = "part/team-magic/TM123525BU"
+brand = "brand/team-magic"
+number = "TM123525BU"
+name = "Screws Button Head M3.5 x 25mm"
+pack_qty = 6
+fits = [
+  { kit = "kit/team-magic/b8er", type = "direct", source = "doc/team-magic/rc-race-shop-b8er" },
+  { kit = "kit/team-magic/seth", type = "direct", source = "doc/team-magic/rc-race-shop-seth" },
+]
+links = [
+  { site = "RC Race Shop", url = "https://www.rc-race-shop.de/en/team-magic/tm123525bu-screws-button-head-m35-x-25mm" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3.5x25-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
