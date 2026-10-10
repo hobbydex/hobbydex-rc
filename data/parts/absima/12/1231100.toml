@@ -1,0 +1,11 @@
+id = "part/absima/1231100"
+brand = "brand/absima"
+number = "1231100"
+name = "Metal Pinion Gear 14T-M0.6 CR4.4"
+fits = [
+  { kit = "kit/absima/cr4-4", type = "direct", source = "doc/absima/spares-cr4-4" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod0.6-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"

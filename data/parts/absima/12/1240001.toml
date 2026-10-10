@@ -1,0 +1,14 @@
+id = "part/absima/1240001"
+brand = "brand/absima"
+number = "1240001"
+name = "3.7V 300mAh LiPo Battery for 1:24 Scale"
+fits = [
+  { kit = "kit/absima/x-racer", type = "direct", source = "doc/absima/spares-x-racer" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 300
+category = "battery"
