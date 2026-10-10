@@ -121,6 +121,12 @@ def main():
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
+        if kind == "release" and "released" in d:
+            rd = str(d["released"])
+            if not re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", rd):
+                errors.append(f"{path}: released {rd!r} is not YYYY, YYYY-MM or YYYY-MM-DD")
+            elif "year" in d and int(rd[:4]) != d["year"]:
+                errors.append(f"{path}: released {rd} does not match year {d['year']}")
         if kind == "part" and not re.match(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$", str(d.get("number", ""))):
             errors.append(f"{path}: odd part number {d.get('number')!r}")
     counts = {}
