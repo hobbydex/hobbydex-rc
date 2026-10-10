@@ -1,0 +1,22 @@
+id = "part/ko-propo/30222"
+brand = "brand/ko-propo"
+number = "30222"
+name = "BSx4S-Grasper STD MAX"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 45.6
+speed_s = 0.12
+voltage = 7.4
+voltage_range = "6.0V ~ 7.4V"
+dimensions_mm = [40.4, 20, 37.5]
+weight_g = 77
+motor = "brushless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from KO Propo's page; spline not stated; check the mounting holes" },
+]
+notes = "KO Propo specifications: Torque: 45.6Kg-cm Speed: 0.12sec/60deg(@7.4V); Torque: 37.3Kg-cm Speed: 0.15sec/60deg(@6.0V); Reference Spec; Torque: 50.0Kg-cm Speed: 0.10sec/60deg(@8.4V); Dimensions: 40.4×37.5×20mm (Standard size); Weight: 77.0g; Servo Lead: 230mm; Operating voltage: 6.0～7.4V (Lipo, Life, Ni-MH); Brush-less motor; Reinforced stainless steel final gear; Hard anodized aluminum gear; Dual ball bearings; Hard servo gear shaft; Aluminum top case; Aluminum heat sink middle case; Black cable; Gold plated connector; Serial Compatible; HCS Compatible; Recommend category; 1/8 Off road, 1/8GT, Crawler"
+links = [
+  { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/30222" },
+]
+documents = ["doc/ko-propo/bsx4s-rsx4s-manual-v1-3-j-e", "doc/ko-propo/servo-lineup-2022-05-en", "doc/ko-propo/servo-lineup-2021-09-en"]
