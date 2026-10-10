@@ -1,0 +1,11 @@
+id = "part/redcat/RER43605"
+brand = "brand/redcat"
+number = "RER43605"
+name = "3x10mm Cap Head Screw"
+pack_qty = 10
+category = "screw"
+documents = ["doc/redcat/vertex-10-manual", "doc/redcat/vertex-10w-manual"]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
