@@ -1,3 +1,10 @@
 id = "category/shock"
 name = "Shocks"
 description = "Shocks, shock bodies, caps, shafts and pistons."
+key_fields = [
+  { field = "shock_part", label = "Kind", from = "part" },
+  { field = "length_mm", label = "Length", from = "part", unit = "mm" },
+  { field = "bore_mm", label = "Bore", from = "part", unit = "mm" },
+  { field = "shaft_mm", label = "Shaft", from = "part", unit = "mm" },
+  { field = "material", label = "Material", from = "part" },
+]

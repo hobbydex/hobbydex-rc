@@ -137,7 +137,9 @@ Optional, hand-curated (the importer preserves them when it regenerates the
 file): `material` (steel | stainless | titanium | aluminium | brass | plastic |
 ceramic | carbide | unknown; for a bearing, the balls: ceramic is a hybrid
 bearing), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
-`thread_type` (machine | self-tapping), and `equivalent_to`:
+`thread_type` (machine | self-tapping), for shocks `shock_part` (complete | body |
+shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
+and `shaft_mm` (shaft diameter), and `equivalent_to`:
 
 ```toml
 material = "steel"
