@@ -3,3 +3,6 @@ brand = "brand/tlr"
 number = "TLR232114"
 name = "Wheel Hex, 12mm x 5.5mm"
 category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
