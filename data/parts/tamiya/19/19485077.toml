@@ -1,10 +1,14 @@
 id = "part/tamiya/19485077"
 brand = "brand/tamiya"
 number = "19485077"
-name = "Sx4mm Grub Screw (MAA x6)"
-former_names = ["3x4mm Gnih Screw", "3x4mm Grub Screw"]
+name = "3x4mm Grub Screw"
+former_names = ["3x4mm Gnih Screw", "Sx4mm Grub Screw (MAA x6)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/12711-19485077" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
