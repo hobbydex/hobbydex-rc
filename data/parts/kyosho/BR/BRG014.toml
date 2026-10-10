@@ -1,5 +1,13 @@
 id = "part/kyosho/BRG014"
 brand = "brand/kyosho"
 number = "BRG014"
-name = "BRG100 PNGS4825"
+name = "Shield Bearing (10x15x4) 2pcs"
+pack_qty = 2
+former_names = ["BRG100 PNGS4825"]
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "metal"
+category = "bearing"
