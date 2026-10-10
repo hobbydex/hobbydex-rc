@@ -9,5 +9,5 @@ key_fields = [
   { field = "c_rating", label = "C", from = "part" },
   { field = "case", label = "Case", from = "part" },
   { field = "connector", label = "Plug", from = "part" },
-  { field = "weight_g", label = "Weight", from = "part", unit = "g" },
+  { field = "weight_g", label = "Weight", from = "part", unit = "g", compare_only = true },
 ]
