@@ -1,9 +1,15 @@
 id = "part/tamiya/19804201"
 brand = "brand/tamiya"
 number = "19804201"
-name = "3x18mm Countersunk Head"
+name = "3x18mm Countersunk Head Screw (Black) every"
+former_names = ["3x18mm Countersunk Head"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13088-19804201" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x18-countersunk-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+finish = "black"

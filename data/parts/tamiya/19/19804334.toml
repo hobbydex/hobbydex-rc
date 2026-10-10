@@ -1,8 +1,14 @@
 id = "part/tamiya/19804334"
 brand = "brand/tamiya"
 number = "19804334"
-name = "earn Geb Soro MBS AIG"
+name = "2.6x8mm Cap Screw"
+former_names = ["earn Geb Soro MBS AIG"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13198-19804334" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
