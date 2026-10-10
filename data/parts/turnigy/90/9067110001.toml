@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110001"
+brand = "brand/turnigy"
+number = "9067110001"
+name = "Rapid 5000mAh 3S (11.1V) 100C LiPo Battery Pack w/XT60 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-rapid-5000mah-3s-11-1v-100c-lipo-battery-pack-w-xt60-connector.html" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 100
+connector = "XT60"

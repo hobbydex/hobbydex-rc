@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110038"
+brand = "brand/turnigy"
+number = "9067110038"
+name = "Graphene 3000mAh 3S 11.1V 100C LiPo Battery Pack w/XT90 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3000mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-graphene-3000mah-3s-100c-battery-pack-w-xt90.html" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 3000
+c_rating = 100
+connector = "XT90"

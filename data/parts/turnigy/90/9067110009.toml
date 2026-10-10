@@ -1,0 +1,17 @@
+id = "part/turnigy/9067110009"
+brand = "brand/turnigy"
+number = "9067110009"
+name = "2200mAh 2S (7.4V) 30C Shorty LiPo Battery Pack w/T plug"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2200mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-2200mah-2s-7-4v-30c-shorty-t-plug.html" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2200
+c_rating = 30
+connector = "Deans"
+case = "shorty"

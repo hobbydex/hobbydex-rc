@@ -1,0 +1,17 @@
+id = "part/turnigy/9067160061"
+brand = "brand/turnigy"
+number = "9067160061"
+name = "Rapid LiHV 8600mAh 2S 7.6V 140C Hardcase LiPo Battery with 5mm Bullet to XT60 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-8600mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/rapid-8600mah-2s1p-7-6v-140c-hv-hardcase.html" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 8600
+c_rating = 140
+connector = "XT60"
+case = "hard"

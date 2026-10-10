@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110016"
+brand = "brand/turnigy"
+number = "9067110016"
+name = "Graphene 6000mAh 4S 14.8V 100C Low profile LiPo Battery Pack w/XT90 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6000mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-graphene-panther-6000mah-4s-80c-battery-pack-w-xt90.html" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 6000
+c_rating = 100
+connector = "XT90"

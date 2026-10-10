@@ -1,0 +1,16 @@
+id = "part/turnigy/9067110026"
+brand = "brand/turnigy"
+number = "9067110026"
+name = "1500mAh 3S (11.1V) 40C Lipo Battery Pack w/EC3"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1500mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-1500mah-3s-40c-lipoly-battery-w-ec-3.html" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 1500
+c_rating = 40
+connector = "EC3"

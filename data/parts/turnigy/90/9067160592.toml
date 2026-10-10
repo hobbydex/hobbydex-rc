@@ -1,0 +1,16 @@
+id = "part/turnigy/9067160592"
+brand = "brand/turnigy"
+number = "9067160592"
+name = "Graphene 1300mAh 4S 14.8V 100C LiPo Battery Pack w/XT60 Connector"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-1300mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+links = [
+  { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-graphene-1300mah-4s-100c-battery-pack-w-xt60.html" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 1300
+c_rating = 100
+connector = "XT60"
