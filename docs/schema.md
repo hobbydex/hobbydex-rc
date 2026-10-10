@@ -384,7 +384,9 @@ hex spec like a wheel.
 
 Wheels carry the same `scale`, `vehicle`, `position` and `wheel_size`, and
 when stated `beadlock` (true), `offset_mm` (as written, +2 or -0.75) and
-`width_mm`. `vehicle` also takes monster, crawler, touring, on-road,
+`width_mm`, and `color` as named ("black/blue": a black wheel with blue
+beadlock rings); a pre-mounted tyre carries its wheel's colour as
+`wheel_color`. `vehicle` also takes monster, crawler, touring, on-road,
 drift, rally, formula and pan-car. Short course wheels and tyres are
 `2.2"/3.0"`. tools/link_wheel_props.py fills these from names; values an
 importer read from the manufacturer's specs win.
