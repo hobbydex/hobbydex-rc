@@ -5,12 +5,14 @@ knows the file layout: the validator checks against it, importers write with it.
     release/xray/320020   -> data/releases/xray/320020.toml
     brand/xray            -> data/brands/xray.toml
     category/servo        -> data/categories/servo.toml
+    standard/iso-4762     -> data/standards/iso-4762.toml
 
 Parts get a prefix directory (the first PART_PREFIX characters of the number)
 so no directory holds more than a few hundred files.
 """
 DIRS = {"brand": "brands", "kit": "kits", "release": "releases", "part": "parts",
-        "spec": "specs", "doc": "documents", "shop": "shops", "category": "categories"}
+        "spec": "specs", "doc": "documents", "shop": "shops", "category": "categories",
+        "standard": "standards"}
 PART_PREFIX = 2
 
 def path_for(entity_id, root="data"):

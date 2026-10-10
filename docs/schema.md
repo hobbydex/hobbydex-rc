@@ -389,6 +389,20 @@ key_fields = [
 ]
 ```
 
+## standard
+
+`data/standards/<slug>.toml`: a published standard that specs cite in their
+`standards` list, matched by `code`. `title` is the standard's own title,
+`url` its public page (title, scope and edition; the text itself is sold),
+`replaced_by` the standard that superseded a withdrawn one (DIN 912 -> ISO 4762).
+
+```toml
+id = "standard/din-912"
+code = "DIN 912"
+title = "Hexagon socket head cap screws"
+replaced_by = "standard/iso-4762"
+```
+
 ## doc
 
 A manufacturer document used as a source. Only facts and the link; the PDF
