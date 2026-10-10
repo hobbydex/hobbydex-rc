@@ -3,3 +3,7 @@ brand = "brand/hobbywing"
 number = "30820202"
 name = "23T 5MM 48P STEEL PINION GEAR"
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-23t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"
