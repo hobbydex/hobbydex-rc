@@ -1,0 +1,17 @@
+id = "part/mugen/E2601A"
+brand = "brand/mugen"
+number = "E2601A"
+name = "Ball Bearing 5x10x4mm (x2)"
+pack_qty = 2
+fits = [
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
+]
+notes = "RC Team lists it as E2601a"
+links = [
+  { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-ball-bearing-5x10x4mm-x2-e2601a" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"
