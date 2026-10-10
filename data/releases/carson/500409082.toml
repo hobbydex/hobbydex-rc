@@ -1,0 +1,20 @@
+id = "release/carson/500409082"
+kit = "kit/carson/akuma"
+brand = "brand/carson"
+number = "500409082"
+name = "1:8 Akuma Buggy, 4WD 100% RTR"
+kind = "rtr"
+status = "released"
+gtin = "4005299015328"
+notes = "Release year unknown: the shop and the manuals state none"
+documents = ["doc/carson/500409082-anleitung-instruction-fahrregler-dragsterturbo-09-2024", "doc/carson/shop"]
+links = [
+  { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/categories/rc-models/rc-vehicles/rc-cars-off-road/rc-buggys/1-8-akuma-buggy-rc-car-4wd-100-rtr-500409082-en.html" },
+]
+contains = [
+  { part = "part/carson/409082-10", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/409082-11", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405588", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405767", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405985", role = "listed", source = "doc/carson/shop" },
+]
