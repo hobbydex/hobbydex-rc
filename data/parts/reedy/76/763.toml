@@ -1,0 +1,21 @@
+id = "part/reedy/763"
+brand = "brand/reedy"
+number = "763"
+name = "Reedy WolfPack LiPo 2600mAh 35C 11.1V, 28.86Wh, T-plug"
+category = "battery"
+category_source = "curated"
+gtin = "784695007635"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2600mah", match = "functional", notes = "Chemistry, cells and capacity from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2600
+c_rating = 35
+dimensions_mm = [139, 47, 25.1]
+weight_g = 240
+connector = "Deans"
+documents = ["doc/reedy/lipo-manual-5-31-17-english-french"]
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/reedy-wolfpack-lipo-2600mah-35c-11-1v-28-86wh-t-plug/" },
+]
