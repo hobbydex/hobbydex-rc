@@ -1,0 +1,18 @@
+id = "part/tekin/TT2507"
+brand = "brand/tekin"
+number = "TT2507"
+name = "PRO4 2400kV Brushless Motor"
+category = "motor"
+category_source = "curated"
+kv = 2400
+diameter_mm = 35.85
+length_mm = 52.9
+shaft_mm = 5
+weight_g = 179
+equivalent_to = [
+  { spec = "spec/motor/brushless-3653-5mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 35.85 mm, length 52.9 mm, shaft 5 mm)" },
+]
+notes = "Voltage limit 4S LiPo; Bearings (Tekin's specifications): front 5x14x5, rear 5x11x5"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/pro4-2400kv-brushless-motor/" },
+]

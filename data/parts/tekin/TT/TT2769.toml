@@ -1,0 +1,19 @@
+id = "part/tekin/TT2769"
+brand = "brand/tekin"
+number = "TT2769"
+name = "GEN4 6.5T Modified Brushless Motor"
+category = "motor"
+category_source = "curated"
+turns = 6.5
+lipo_cells = [1, 2]
+diameter_mm = 35.85
+length_mm = 50.25
+shaft_mm = 3.175
+weight_g = 145
+equivalent_to = [
+  { spec = "spec/motor/brushless-3650-3.175mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 35.85 mm, length 50.25 mm, shaft 3.175 mm)" },
+]
+notes = "Bearings (Tekin's specifications): front 4x13x5, rear 1/8x3/8x5/32 in"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/gen4-6-5t-brushless-motor/" },
+]
