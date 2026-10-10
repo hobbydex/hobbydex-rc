@@ -46,7 +46,7 @@ name = "XB2"
 category = "buggy"
 scale = "1/10"
 drive = "2wd"        # 2wd | 4wd
-power = "electric"   # electric | nitro
+power = "electric"   # electric | nitro | petrol
 ```
 
 Optional on a kit: `rebrand_of`, the kits this one is the same car as under
