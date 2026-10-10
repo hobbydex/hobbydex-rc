@@ -4,3 +4,7 @@ number = "63008"
 name = "1150 Ball Bearing"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", source = "doc/tamiyabase/bearings", notes = "Tamiya size code 1150: 11 mm outer, 5 mm bore, 4 mm wide" },
+]
+material = "steel"

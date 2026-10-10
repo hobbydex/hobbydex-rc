@@ -4,3 +4,7 @@ number = "19416929"
 name = "1280 Ball Bearing (BAT? x4)"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "functional", source = "doc/tamiyabase/bearings", notes = "Tamiya size code 1280: 12 mm outer, 8 mm bore, 3.5 mm wide" },
+]
+material = "steel"
