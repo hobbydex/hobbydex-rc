@@ -296,6 +296,10 @@ pitch, 48) or `module` (0.5, 1); id `spec/pinion/48dp-20t` or
 material, because one geometry is sold for several shaft sizes and brands
 often leave the bore out.
 
+Spur gears carry `teeth` and either `pitch_dp` or `module` on the part
+itself, read from the name. They get no generic spec: spurs of one
+pitch and tooth count mesh the same pinions but mount differently.
+
 Chargers are parts with category charger and, when stated, `power_w`.
 
 Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh),
