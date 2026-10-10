@@ -6,4 +6,9 @@ category = "motor"
 equivalent_to = [
   { spec = "spec/motor/brushed-540-3.175mm", match = "exact", source = "doc/community/2026-10-10-tamiya-stock-540-is-mabuchi-rs-540sh" },
 ]
-notes = "Not in Mabuchi's public product search (checked 2026-10-10); known from the motors themselves, which are stamped RS-540SH."
+notes = "Not in Mabuchi's public product search (checked 2026-10-10); the RS-540RH/SH data sheet lists it as RS-540SH-5045, CCW shifted commutation (CCW+): 4.5-12 V, 12 V nominal; no load 17500 rpm at 0.95 A; at maximum efficiency 15080 rpm, 5.93 A, 31.8 mN·m (324 g·cm), 50.1 W; stall 230 mN·m (2345 g·cm) at 37.0 A. Can 35.8 mm, body 50 mm, shaft 3.17 mm, about 160 g. Two M3x0.5 tapped mounting holes 25 mm apart; screws may enter at most 5 mm."
+diameter_mm = 35.8
+length_mm = 50
+shaft_mm = 3.17
+weight_g = 160
+documents = ["doc/mabuchi/rs-540rh-sh-datasheet"]
