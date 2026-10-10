@@ -4,7 +4,10 @@ number = "600301"
 name = "Wing washer alu"
 pack_qty = 2
 fits = [
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-gen4-parts" },
+  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8e-gen4-options" },
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-gen4-options" },
+  { kit = "kit/serpent/srx8-truggy-e", type = "direct", source = "doc/serpent/srx8-truggy-e-options" },
+  { kit = "kit/serpent/srx8-truggy", type = "direct", source = "doc/serpent/srx8-truggy-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser600301" },

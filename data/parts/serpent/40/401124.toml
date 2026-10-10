@@ -1,0 +1,22 @@
+id = "part/serpent/401124"
+brand = "brand/serpent"
+number = "401124"
+name = "Ball bearing 3x6x2.5"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/medius-x26", type = "direct", source = "doc/serpent/medius-x26-steel-spares" },
+  { kit = "kit/serpent/spyder-srx4", type = "direct", source = "doc/serpent/spyder-srx4-gen3-spares" },
+  { kit = "kit/serpent/medius-x25", type = "direct", source = "doc/serpent/medius-x25-steel-spares" },
+  { kit = "kit/serpent/medius-x20fwd", type = "direct", source = "doc/serpent/medius-x20fwd-21-carbon-spares" },
+  { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-spares" },
+  { kit = "kit/serpent/taipan-988e", type = "direct", source = "doc/serpent/taipan-988e-spares" },
+  { kit = "kit/serpent/s240", type = "direct", source = "doc/serpent/s240-40th-anniversary-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser401124" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

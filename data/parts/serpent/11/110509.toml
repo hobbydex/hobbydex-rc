@@ -1,0 +1,18 @@
+id = "part/serpent/110509"
+brand = "brand/serpent"
+number = "110509"
+name = "Ballbearing 1.5x4x2"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/medius-x26", type = "direct", source = "doc/serpent/medius-x26-steel-spares" },
+  { kit = "kit/serpent/medius-x25", type = "direct", source = "doc/serpent/medius-x25-steel-spares" },
+  { kit = "kit/serpent/medius-x20fwd", type = "direct", source = "doc/serpent/medius-x20fwd-21-carbon-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110509" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/1.5x4x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

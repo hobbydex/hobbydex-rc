@@ -1,0 +1,17 @@
+id = "part/serpent/110511"
+brand = "brand/serpent"
+number = "110511"
+name = "Ballbearing 3x8x2.5"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-parts" },
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110511" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/3x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

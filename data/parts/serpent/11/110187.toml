@@ -1,0 +1,16 @@
+id = "part/serpent/110187"
+brand = "brand/serpent"
+number = "110187"
+name = "Setscrew allen M3x16"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8gte-r-spares" },
+  { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110187" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x16-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

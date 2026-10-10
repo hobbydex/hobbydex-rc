@@ -1,0 +1,17 @@
+id = "part/serpent/1399"
+brand = "brand/serpent"
+number = "1399"
+name = "Ball bearing 3x6x2,5 flanged"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/medius-x20fwd", type = "direct", source = "doc/serpent/medius-x20fwd-21-carbon-spares" },
+  { kit = "kit/serpent/s240", type = "direct", source = "doc/serpent/s240-40th-anniversary-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser1399" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/flanged-3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

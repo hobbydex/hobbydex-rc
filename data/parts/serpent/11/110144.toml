@@ -1,0 +1,19 @@
+id = "part/serpent/110144"
+brand = "brand/serpent"
+number = "110144"
+name = "Screw allen rh M3x18"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8gtr-ec-spares" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8gte-r-spares" },
+  { kit = "kit/serpent/srx8-truggy", type = "direct", source = "doc/serpent/srx8-truggy-spares" },
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-pro-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110144" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

@@ -1,0 +1,18 @@
+id = "part/serpent/110185"
+brand = "brand/serpent"
+number = "110185"
+name = "Screw allen cilinderhead M3x30"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8e-gen4-spares" },
+  { kit = "kit/serpent/viper-990e", type = "direct", source = "doc/serpent/viper-990e-r-spares" },
+  { kit = "kit/serpent/viper-990", type = "direct", source = "doc/serpent/viper-990r-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110185" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x30-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

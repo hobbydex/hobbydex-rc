@@ -1,0 +1,18 @@
+id = "part/serpent/1396"
+brand = "brand/serpent"
+number = "1396"
+name = "Ballbearing 8x16x5 SS"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/srx8-truggy-e", type = "direct", source = "doc/serpent/srx8-truggy-e-rtr-parts" },
+  { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-parts" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser1396" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

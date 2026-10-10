@@ -1,0 +1,19 @@
+id = "part/serpent/110151"
+brand = "brand/serpent"
+number = "110151"
+name = "Screw allen cilinderhead M4x10"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8e-gen4-spares" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8gte-r-spares" },
+  { kit = "kit/serpent/srx8-truggy-e", type = "direct", source = "doc/serpent/srx8-truggy-e-spares" },
+  { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-parts" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110151" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

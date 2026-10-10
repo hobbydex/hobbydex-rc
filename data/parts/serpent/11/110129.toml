@@ -1,0 +1,20 @@
+id = "part/serpent/110129"
+brand = "brand/serpent"
+number = "110129"
+name = "Screw allen cilinderhead m3x10"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/viper-990e", type = "direct", source = "doc/serpent/viper-990e-r-spares" },
+  { kit = "kit/serpent/f190", type = "direct", source = "doc/serpent/f190-spares" },
+  { kit = "kit/serpent/medius-x20fwd", type = "direct", source = "doc/serpent/medius-x20fwd-21-carbon-spares" },
+  { kit = "kit/serpent/natrix-750e", type = "direct", source = "doc/serpent/natrix-750-e-spares" },
+  { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110129" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
