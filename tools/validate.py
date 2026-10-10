@@ -47,6 +47,7 @@ ENUMS = {
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.case": {"hard", "soft", "shorty"},
+    "part.name_source": {"ocr", "manufacturer"},
     "part.ball_type": {"stud", "nut", "through-hole", "set-screw"},
     "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
