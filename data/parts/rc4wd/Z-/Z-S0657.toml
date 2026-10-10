@@ -1,0 +1,17 @@
+id = "part/rc4wd/Z-S0657"
+brand = "brand/rc4wd"
+number = "Z-S0657"
+name = "Steel Button Head Cap Screws M3 x 18mm"
+pack_qty = 10
+fits = [
+  { kit = "kit/rc4wd/bully-ii-moa", type = "direct", source = "doc/rc4wd/store" },
+  { kit = "kit/rc4wd/trail-finder-2", type = "direct", source = "doc/rc4wd/store" },
+]
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/Steel-Button-Head-Cap-Screws-M3-x-18mm-10_p_2096.html" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

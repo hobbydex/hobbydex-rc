@@ -1,0 +1,16 @@
+id = "part/rc4wd/Z-S0124"
+brand = "brand/rc4wd"
+number = "Z-S0124"
+name = "M3 X 3mm Set screw"
+pack_qty = 10
+fits = [
+  { kit = "kit/rc4wd/bully-ii-moa", type = "direct", source = "doc/rc4wd/store" },
+]
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/M3-X-3mm-Set-screw-10_p_380.html" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
