@@ -4,3 +4,6 @@ number = "FTX7266"
 name = "Hinge Pins 2.5*37.6mm (4P)"
 notes = "Read by OCR from a scanned FTX document"
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2.5x37.6", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]
