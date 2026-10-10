@@ -141,8 +141,9 @@ bearing), `seal` and `lubricant` for bearings (see below), `strength_class` ("12
 shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
 and `shaft_mm` (shaft diameter), for ball studs and ball cups `ball_mm` (the ball
 diameter both must share) and for balls `ball_type` (stud: has its own thread |
-nut: bored or threaded, on a separate screw | set-screw: held on a link bar by a
-set screw), and `equivalent_to`:
+nut: threaded inside, on a separate screw | through-hole: bored through, a screw
+passes through it | set-screw: has its own set screw that clamps it on an
+anti-roll bar wire or link bar), and `equivalent_to`:
 
 ```toml
 material = "steel"
