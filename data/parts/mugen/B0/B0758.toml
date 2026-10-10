@@ -1,0 +1,16 @@
+id = "part/mugen/B0758"
+brand = "brand/mugen"
+number = "B0758"
+name = "Screw M2x16 Button Head (x8)"
+pack_qty = 8
+fits = [
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
+]
+links = [
+  { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-screw-m2x16-curly-head-x8-b0758" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
