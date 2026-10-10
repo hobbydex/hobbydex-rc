@@ -1,0 +1,21 @@
+id = "part/louise/L-T3266B"
+brand = "brand/louise"
+number = "L-T3266B"
+name = "B-ROCKET 1/5 Buggy Front Tires (Sport) Mounted on Black Wheels for HPI BAJA 5b, 24mm Hex"
+compound = "Sport"
+scale = "1/5"
+vehicle = "buggy"
+position = "front"
+mounting = "pre-mounted"
+wheel_color = "black"
+applies_to = "HPI BAJA 5b HEX 24 mm"
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/louise/tire-product-pages" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/24mm", match = "exact", source = "doc/louise/tire-product-pages", notes = "Hex size from the product page" },
+]
+links = [
+  { site = "Louise RC", url = "https://tire.louiserc.com/products_detail/208" },
+]
+category = "tire"
