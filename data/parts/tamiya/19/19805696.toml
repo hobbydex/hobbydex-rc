@@ -1,10 +1,15 @@
 id = "part/tamiya/19805696"
 brand = "brand/tamiya"
 number = "19805696"
-name = "3x8mm Countersunk Head"
-former_names = ["3x8mm Countersunk Head Screw", "3x8mm Countersunk Head Screw (Black)"]
+name = "3x8mm Countersunk Head Screw (Black)"
+former_names = ["3x8mm Countersunk Head", "3x8mm Countersunk Head Screw"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6599-19805696" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-countersunk-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+finish = "black"
