@@ -1,6 +1,11 @@
 id = "part/losi/LOS235008"
 brand = "brand/losi"
 number = "LOS235008"
-name = "Flat Head Screws M2.5 5mm"
+name = "Flat Head Screws M2.5x5mm"
 pack_qty = 10
+former_names = ["Flat Head Screws M2.5 5mm"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

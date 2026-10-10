@@ -1,7 +1,11 @@
 id = "part/tlr/TLR235007"
 brand = "brand/tlr"
 number = "TLR235007"
-name = "Flat Head Screws, M2.5 10mm"
+name = "Flat Head Screw M2.5 x 10mm"
 pack_qty = 10
-former_names = ["Flat Head Screws, M2.5 x"]
+former_names = ["Flat Head Screws, M2.5 x", "Flat Head Screws, M2.5 10mm", "Flat Head Screw M2.5 x 10mm (10"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

@@ -1,0 +1,14 @@
+id = "part/spektrum/SPMX52S120HT"
+brand = "brand/spektrum"
+number = "SPMX52S120HT"
+name = "7.6V 5000mAh 2S 120C Smart Pro Race Shorty Hardcase LiHV Battery"
+applies_to = "Tubes, 5mm"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 5000
+c_rating = 120
+case = "hard"
+category = "battery"

@@ -1,0 +1,14 @@
+id = "part/spektrum/SPMX53S30H5"
+brand = "brand/spektrum"
+number = "SPMX53S30H5"
+name = "11.1V 5000mAh 3S 30C Smart G2 Hardcase LiPo Battery"
+applies_to = "IC5"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 30
+case = "hard"
+category = "battery"

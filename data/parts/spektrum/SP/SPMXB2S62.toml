@@ -1,0 +1,13 @@
+id = "part/spektrum/SPMXB2S62"
+brand = "brand/spektrum"
+number = "SPMXB2S62"
+name = "7.4V 6200mAh 2S 120C Smart G2 Pro Basher LiPo Battery"
+applies_to = "IC5"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 6200
+c_rating = 120
+category = "battery"
