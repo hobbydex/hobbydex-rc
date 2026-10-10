@@ -6,3 +6,7 @@ links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-mtg4816t-bk-gpm-steel-16t-48dp-0-5mod-pinion-gear/" },
 ]
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"

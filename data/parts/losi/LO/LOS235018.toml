@@ -3,3 +3,7 @@ brand = "brand/losi"
 number = "LOS235018"
 name = "Setscrew, M3 x 3mm"
 pack_qty = 10
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
