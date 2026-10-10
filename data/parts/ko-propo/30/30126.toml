@@ -1,0 +1,21 @@
+id = "part/ko-propo/30126"
+brand = "brand/ko-propo"
+number = "30126"
+name = "RSx3-12"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 7.5
+speed_s = 0.13
+voltage = 6
+dimensions_mm = [33, 15, 26]
+weight_g = 26
+motor = "coreless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/mini", match = "functional", notes = "Size class from KO Propo's page; spline not stated; check the mounting holes" },
+]
+notes = "End of production (KO Propo product page). KO Propo specifications: Torque: 7.5Kg-cm Speed: 0.13sec/60deg(@6.0V); Dimensions: 33×26×15mm (Mini size); Weight: 26.0g; Operating voltage: 6.0V; The hard alumite aluminum gear (first gear made by plastic); Core-less motor; Dual ball bearings; The hard servo gear shaft; Black cable; Gold plated connector; Recommended category; 1/12 Racing, GTcar, F1."
+links = [
+  { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/30126" },
+]
+documents = ["doc/ko-propo/rsx-bsx-manual-j-e-20160915", "doc/ko-propo/servo-lineup-2022-05-en", "doc/ko-propo/servo-lineup-2021-09-en"]

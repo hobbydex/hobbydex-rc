@@ -1,0 +1,22 @@
+id = "part/ko-propo/30120"
+brand = "brand/ko-propo"
+number = "30120"
+name = "RSx-one10 Type-S"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 8.2
+speed_s = 0.08
+voltage = 7.4
+voltage_range = "6.0V ~ 7.4V"
+dimensions_mm = [40.5, 21, 26.5]
+weight_g = 42.1
+motor = "coreless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/low-profile", match = "functional", notes = "Size class from the case size; spline not stated; check the mounting holes" },
+]
+notes = "End of production (KO Propo product page). KO Propo specifications: Torque: 8.2Kg-cm Speed:0.08sec/60deg (@7.4V); Torque: 7.0Kg-cm Speed:0.09sec/60deg (@6.0V); Dimensions: 40.5×26.5×21mm（Low profile）; Weight: 42.1g; Operating Voltage: 6.0 to 7.4V (Lipo,Life,Ni-MH); Metal and plastic Gear; Core-less motor; The aluminum heat sink middle case; Gold plated connector; Recommended category; 1/10 EP on road, 1/10 GP on road, 1/10 EP off road."
+links = [
+  { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/30120" },
+]
+documents = ["doc/ko-propo/rsx2-manual-e", "doc/ko-propo/servo-lineup-2022-05-en", "doc/ko-propo/servo-lineup-2021-09-en"]

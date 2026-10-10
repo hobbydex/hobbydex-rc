@@ -1,0 +1,22 @@
+id = "part/ko-propo/30124"
+brand = "brand/ko-propo"
+number = "30124"
+name = "RSx3-Power"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 31.6
+speed_s = 0.11
+voltage = 7.4
+voltage_range = "6.0V ~ 7.4V"
+dimensions_mm = [41, 20, 38]
+weight_g = 65.5
+motor = "coreless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from KO Propo's page; spline not stated; check the mounting holes" },
+]
+notes = "End of production (KO Propo product page). KO Propo specifications: Torque:31.6Kg-cm Speed: 0.11sec/60deg (@7.4V); Torque:26.3Kg-cm Speed: 0.13sec/60deg (@6.0V); Dimensions: 41x38x20mm(Standard size); Weight: 65.5g; Operating voltage:6.0 to 7.4V(Lipo,Life,Ni-MH); The hard alumite aluminum gear; Core-less motor; Dual ball bearings; The hard servo gear shaft; The aluminum heat shink middle case; Gold plated connector; Black cable; HCS Compatible; Recommend category; 1/8 Off road, 1/8 On road, 1/8GT."
+links = [
+  { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/30124" },
+]
+documents = ["doc/ko-propo/rsx-bsx-manual-j-e-20160915", "doc/ko-propo/servo-lineup-2022-05-en", "doc/ko-propo/servo-lineup-2021-09-en"]
