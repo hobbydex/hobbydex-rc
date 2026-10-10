@@ -95,6 +95,10 @@ document's date (a later scan, a reprinted manual) or the day a shop was read
 is not a release year. The site shows such releases as year unknown and leaves
 them out of the by-date lists.
 
+`released`: the release date as precise as a source states it, `YYYY-MM-DD`
+or `YYYY-MM` (Tamiya's from TamiyaBase's model pages). It must agree with
+`year`. Never a document's date.
+
 ## part
 
 A branded, numbered product. `number` is exactly as the manufacturer prints it,
