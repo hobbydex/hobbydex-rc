@@ -1,0 +1,14 @@
+id = "part/spektrum/SPMX52S100H5"
+brand = "brand/spektrum"
+number = "SPMX52S100H5"
+name = "7.4V 5000mAh 2S 100C Smart G2 Hardcase LiPo Battery"
+applies_to = "IC5"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5000
+c_rating = 100
+case = "hard"
+category = "battery"
