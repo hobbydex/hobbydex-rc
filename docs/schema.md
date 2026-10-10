@@ -264,9 +264,12 @@ drive = "hex"
 standards = ["ISO 10642", "DIN 7991"]
 ```
 
-Bearings: `type` (radial-ball | thrust), `bore_mm`, `outer_mm`, `width_mm`
-and, for standard sizes, the ISO `designation` (MR105, 6700). Ids are
-`spec/bearing/<bore>x<outer>x<width>`, thrust bearings `spec/bearing/thrust-...`.
+Bearings: `type` (radial-ball | flanged | thrust), `bore_mm`, `outer_mm`, `width_mm`
+and, for standard sizes, the ISO `designation` (MR105, 6700; flanged MF105,
+F685). Ids are `spec/bearing/<bore>x<outer>x<width>`, flanged bearings
+`spec/bearing/flanged-...`, thrust bearings `spec/bearing/thrust-...`. A
+flanged bearing has a collar on its outer ring, so it does not replace a
+plain one of the same size (and the other way round).
 
 ```toml
 id = "spec/bearing/5x10x4"
