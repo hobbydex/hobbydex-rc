@@ -1,0 +1,24 @@
+id = "part/fast-eddy/TFE6541"
+brand = "brand/fast-eddy"
+number = "TFE6541"
+name = "Serpent Medius X20 ’21 Carbon Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/1.5x4x2", qty = 16, notes = "Metal Shielded" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4 },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 4 },
+  { spec = "spec/bearing/5x8x2.5", qty = 1 },
+  { spec = "spec/bearing/5x10x3", qty = 2 },
+  { spec = "spec/bearing/5x10x4", qty = 6 },
+  { spec = "spec/bearing/8x12x3.5", qty = 1 },
+  { spec = "spec/bearing/10x15x4", qty = 4 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Medius X20 ’21 Carbon" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/serpent-medius-x20-21-carbon-sealed-bearing-kit" },
+]

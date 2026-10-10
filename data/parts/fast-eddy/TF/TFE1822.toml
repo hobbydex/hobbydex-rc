@@ -1,0 +1,18 @@
+id = "part/fast-eddy/TFE1822"
+brand = "brand/fast-eddy"
+number = "TFE1822"
+name = "Axial Yeti Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 18, notes = "Rubber Sealed Bearings" },
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Rubber Sealed Bearings" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/fast-eddy/store" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/axial-yeti-sealed-bearing-kit" },
+]

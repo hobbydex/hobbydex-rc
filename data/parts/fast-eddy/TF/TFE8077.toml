@@ -1,0 +1,21 @@
+id = "part/fast-eddy/TFE8077"
+brand = "brand/fast-eddy"
+number = "TFE8077"
+name = "Axial UTB18 Capra RTR Ceramic Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/2x5x2.5", qty = 2, notes = "Metal Shielded" },
+  { spec = "spec/bearing/3x6x2.5", qty = 5 },
+  { spec = "spec/bearing/4x8x3", qty = 11 },
+  { spec = "spec/bearing/5x8x2.5", qty = 6 },
+  { spec = "spec/bearing/8x12x3.5", qty = 6 },
+]
+category = "bearing"
+category_source = "curated"
+material = "ceramic"
+seal = "rubber"
+fits = [
+  { kit = "kit/axial/utb18", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the UTB18 Capra RTR" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/axial-utb18-capra-rtr-ceramic-sealed-bearing-kit" },
+]

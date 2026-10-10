@@ -1,0 +1,22 @@
+id = "part/fast-eddy/TFE9047"
+brand = "brand/fast-eddy"
+number = "TFE9047"
+name = "Vanquish VRD Stance RTR Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 23 },
+  { spec = "spec/bearing/5x14x5", qty = 2 },
+  { spec = "spec/bearing/6x11x4", qty = 2 },
+  { spec = "spec/bearing/6x12x4", qty = 6 },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Open" },
+  { spec = "spec/bearing/12x18x4", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/vanquish/vrd", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the VRD Stance RTR" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/vanquish-vrd-stance-rtr-sealed-bearing-kit" },
+]

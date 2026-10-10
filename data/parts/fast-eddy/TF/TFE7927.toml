@@ -1,0 +1,21 @@
+id = "part/fast-eddy/TFE7927"
+brand = "brand/fast-eddy"
+number = "TFE7927"
+name = "Vanquish VS4-10 Phoenix Straight Axle Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x9x3", qty = 4 },
+  { spec = "spec/bearing/5x11x4", qty = 23 },
+  { spec = "spec/bearing/5x14x5", qty = 2 },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Open" },
+  { spec = "spec/bearing/10x15x4", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/vanquish/vs4-10", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the VS4-10 Phoenix Straight Axle" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/vanquish-vs4-10-phoenix-straight-axle-sealed-bearing-kit" },
+]

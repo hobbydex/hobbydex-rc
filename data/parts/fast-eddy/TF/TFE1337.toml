@@ -1,0 +1,20 @@
+id = "part/fast-eddy/TFE1337"
+brand = "brand/fast-eddy"
+number = "TFE1337"
+name = "Hot Bodies D413 Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x14x4", qty = 6 },
+  { spec = "spec/bearing/5x11x4", qty = 6 },
+  { spec = "spec/bearing/10x15x4", qty = 6 },
+  { spec = "spec/bearing/4x8x3", qty = 4 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/hb-racing/d413", type = "direct", source = "doc/fast-eddy/store" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/hot-bodies-d413-sealed-bearing-kit" },
+]

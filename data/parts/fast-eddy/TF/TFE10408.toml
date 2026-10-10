@@ -1,0 +1,24 @@
+id = "part/fast-eddy/TFE10408"
+brand = "brand/fast-eddy"
+number = "TFE10408"
+name = "Redcat Vertex-10 Ceramic Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 12 },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 4 },
+  { spec = "spec/bearing/5x11x4", qty = 2 },
+  { spec = "spec/bearing/5x14x5", qty = 2 },
+  { spec = "spec/bearing/6x10x3", qty = 4 },
+  { spec = "spec/bearing/6x12x4", qty = 6 },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Open" },
+  { spec = "spec/bearing/12x18x4", qty = 4 },
+]
+category = "bearing"
+category_source = "curated"
+material = "ceramic"
+seal = "rubber"
+fits = [
+  { kit = "kit/redcat/vertex-10", type = "direct", source = "doc/fast-eddy/store" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/redcat-vertex-10-ceramic-sealed-bearing-kit" },
+]

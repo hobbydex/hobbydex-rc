@@ -1,0 +1,22 @@
+id = "part/fast-eddy/TFE2464"
+brand = "brand/fast-eddy"
+number = "TFE2464"
+name = "Axial Yeti XL Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x10x3", qty = 4 },
+  { spec = "spec/bearing/5x11x4", qty = 4 },
+  { spec = "spec/bearing/6x12x4", qty = 2 },
+  { spec = "spec/bearing/8x16x5", qty = 4 },
+  { spec = "spec/bearing/10x16x5", qty = 4 },
+  { spec = "spec/bearing/15x21x4", qty = 6 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/axial/yeti-xl", type = "direct", source = "doc/fast-eddy/store" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/axial-yeti-xl-sealed-bearing-kit" },
+]
