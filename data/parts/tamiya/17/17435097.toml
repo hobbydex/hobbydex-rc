@@ -8,3 +8,9 @@ category = "motor"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/10231-17435097" },
 ]
+rebrand_of = [
+  { part = "part/mabuchi/RS-540SH", source = "doc/community/2026-10-10-tamiya-stock-540-is-mabuchi-rs-540sh", notes = "Mabuchi-made and stamped Mabuchi; sometimes with a Tamiya sticker" },
+]
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", source = "doc/community/2026-10-10-tamiya-stock-540-is-mabuchi-rs-540sh" },
+]
