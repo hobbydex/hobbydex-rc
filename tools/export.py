@@ -8,7 +8,7 @@ Run from the repo root: python3 -I tools/export.py [out.json]
 """
 import datetime, json, os, sys, tomllib
 
-KINDS = {"brands": "brand", "kits": "kit", "releases": "release", "parts": "part", "documents": "doc", "specs": "spec", "shops": "shop"}
+KINDS = {"brands": "brand", "kits": "kit", "releases": "release", "parts": "part", "documents": "doc", "specs": "spec", "shops": "shop", "categories": "category"}
 
 def main():
     out = sys.argv[1] if len(sys.argv) > 1 else "dist/hobbydex-rc.json"

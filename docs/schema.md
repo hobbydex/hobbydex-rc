@@ -14,6 +14,7 @@ read the tree directly; they read the export (`tools/export.py`).
 | part | `data/parts/<brand>/<prefix>/<number>.toml` | id, brand, number, name |
 | doc | `data/documents/<brand>/<slug>.toml` | id, kind, title |
 | spec | `data/specs/<category>/<slug>.toml` | id, category |
+| category | `data/categories/<slug>.toml` | id, name |
 | shop | `data/shops/<country>/<slug>.toml` | id, name, status (not used yet) |
 
 `<prefix>` is the first two characters of the part number, so that no directory
@@ -364,6 +365,25 @@ mounts on. Wheels and wheel hexes link to it: match "exact" when the part's
 name states the size ("WITH 12MM HEX"), "close" when the wheels of a release
 take the size of that release's wheel hexes (the notes say which release).
 Other mounts (pin drive, centre lock) are not modelled yet.
+
+## category
+
+`data/categories/<slug>.toml`: the part categories. A part's `category` must be
+one of them. `name` is the label; `spec_type` names the generic spec type the
+category's parts link to; `key_fields` are the properties that matter when
+choosing such a part, in display order, each read from the part itself or from
+its linked spec (`from = "part" | "spec"`), with an optional `unit` and
+`format` ("cells": a [min, max] LiPo range shown as 1-3S).
+
+```toml
+id = "category/servo"
+name = "Servos"
+spec_type = "servo"
+key_fields = [
+  { field = "size_class", label = "Size", from = "spec" },
+  { field = "torque_kgcm", label = "Torque", from = "part", unit = "kg·cm" },
+]
+```
 
 ## doc
 

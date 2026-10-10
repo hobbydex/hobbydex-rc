@@ -1,0 +1,12 @@
+id = "category/servo"
+name = "Servos"
+spec_type = "servo"
+key_fields = [
+  { field = "size_class", label = "Size", from = "spec" },
+  { field = "spline_teeth", label = "Spline", from = "spec" },
+  { field = "torque_kgcm", label = "Torque", from = "part", unit = "kg·cm" },
+  { field = "speed_s", label = "Speed", from = "part", unit = "s/60°" },
+  { field = "voltage", label = "at", from = "part", unit = "V" },
+  { field = "weight_g", label = "Weight", from = "part", unit = "g" },
+  { field = "rotation_deg", label = "Throw", from = "part", unit = "°" },
+]

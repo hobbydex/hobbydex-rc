@@ -1,0 +1,8 @@
+id = "category/oil-grease"
+name = "Oils and greases"
+spec_type = "oil"
+key_fields = [
+  { field = "viscosity_cst", label = "Viscosity", from = "spec", unit = "cSt" },
+  { field = "viscosity_wt", label = "Weight", from = "part", unit = "wt" },
+  { field = "volume_ml", label = "Volume", from = "part", unit = "ml" },
+]
