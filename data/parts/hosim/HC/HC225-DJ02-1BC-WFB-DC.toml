@@ -1,0 +1,21 @@
+id = "part/hosim/HC225-DJ02-1BC-WFB-DC"
+brand = "brand/hosim"
+number = "HC225-DJ02-1BC-WFB-DC"
+name = "Hosim 2pcs 2000mah lipo Battery 7.4v 25C RC Cars Battery for 1/10 Scale 9125 9126 HS9125"
+pack_qty = 2
+applies_to = "1/10 Scale 9125 9126 HS9125"
+fits = [
+  { kit = "kit/hosim/9125", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/9126", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-2pcs-2000mah-lipo-battery-7-4v-25c-rc-cars-battery-for-1-10-scale-9125-hs9125" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2000
+c_rating = 25
+category = "battery"

@@ -1,0 +1,23 @@
+id = "part/hosim/2-M13-DC26"
+brand = "brand/hosim"
+number = "2-M13-DC26"
+name = "RC Car Battery 2pcs 11.1V 2600mah 30C Li-Po Battery for X25 X27 M13 X17 RC Cars"
+pack_qty = 2
+applies_to = "X25 X27 M13 X17 RC Cars"
+fits = [
+  { kit = "kit/hosim/m13", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-2pcs-11-1v-2600mah-30c-li-po-battery-for-x25-x27-m13-x17-rc-cars" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2600
+c_rating = 30
+category = "battery"

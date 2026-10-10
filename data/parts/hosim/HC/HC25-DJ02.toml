@@ -1,0 +1,19 @@
+id = "part/hosim/HC25-DJ02"
+brand = "brand/hosim"
+number = "HC25-DJ02"
+name = "Hosim 7.4V 2000mAh Li-Po Battery+USB For 9125 9126 HS9125 RC Car Truck"
+applies_to = "9125 9126 HS9125 RC Car Truck"
+fits = [
+  { kit = "kit/hosim/9125", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/9126", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-rc-cars-replacement-battery-7-4v-2000mah-li-po-rechargeable-battery-9125-truggy-high-speed-truck" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2000
+category = "battery"

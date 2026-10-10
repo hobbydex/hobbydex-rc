@@ -1,0 +1,24 @@
+id = "part/hosim/F22-DC"
+brand = "brand/hosim"
+number = "F22-DC"
+name = "Hosim RC Cars Replacement 25C 11.1V 3S 2600mAh Battery F22-DC Hard Case Use for High Speed RC Truck 1:8 Scale X07 X08 X17 X25 X27"
+applies_to = "High Speed RC Truck 1:8 Scale X07 X08 X17 X25 X27"
+fits = [
+  { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-8-scale-rc-cars-replacement-11-1v-2600mah-battery-f22-dc-hard-case-use-for-high-speed-rc-truck-1-8-scale-x17" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2600
+c_rating = 25
+case = "hard"
+category = "battery"
