@@ -4,3 +4,6 @@ number = "PN101"
 name = "PIN(1.5X8.8MM)"
 notes = "Name from the vkarracing.com parts listing, https://vkarracing.com/PIN-1-5X8-8MM-PG7283321"
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/1.5x8.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

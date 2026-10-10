@@ -1,3 +1,9 @@
 id = "category/pin-clip"
 name = "Pins and clips"
 description = "Pins, clips, E-clips, keys and retainers."
+spec_type = "pin"
+key_fields = [
+  { field = "diameter_mm", label = "Diameter", from = "spec", unit = "mm" },
+  { field = "length_mm", label = "Length", from = "spec", unit = "mm" },
+  { field = "material", label = "Material", from = "part" },
+]

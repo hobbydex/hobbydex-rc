@@ -6,3 +6,6 @@ pack_qty = 6
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pin-clip"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/pin/2.5x12.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

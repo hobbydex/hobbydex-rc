@@ -5,3 +5,6 @@ name = "Pin 2x11"
 pack_qty = 6
 notes = "Name from the Part List of a scanned Quanum manual"
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
