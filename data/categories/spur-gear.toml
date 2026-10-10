@@ -1,3 +1,9 @@
 id = "category/spur-gear"
 name = "Spur gears"
-description = "Spur gears."
+description = "Spur gears by pitch and tooth count."
+key_fields = [
+  { field = "pitch_dp", label = "Pitch", from = "part", unit = "DP" },
+  { field = "module", label = "Module", from = "part" },
+  { field = "teeth", label = "Teeth", from = "part" },
+  { field = "material", label = "Material", from = "part" },
+]
