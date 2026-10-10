@@ -2,4 +2,8 @@ id = "part/spektrum/SPMS680"
 brand = "brand/spektrum"
 number = "SPMS680"
 name = "S680 High Torque, Metal Top, Steel Gear 25T"
-category = "gear"
+category = "servo"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", source = "doc/losi/los04028-lmt-grave-digger-manual", notes = "Spline from the name; standard case size assumed for the 1/8 LMT, check the mounting holes" },
+]

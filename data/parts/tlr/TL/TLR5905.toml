@@ -1,7 +1,11 @@
 id = "part/tlr/TLR5905"
 brand = "brand/tlr"
 number = "TLR5905"
-name = "Button Head Screws, M3 18mm"
+name = "Button Head Screws, M3 x 18mm"
 pack_qty = 10
-former_names = ["Button Head Screws, M3 x", "Button Head Screws, M3"]
+former_names = ["Button Head Screws, M3 x", "Button Head Screws, M3", "Button Head Screws, M3 18mm", "Button Hd Screws, M3 x 18mm"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
