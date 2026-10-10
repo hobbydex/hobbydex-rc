@@ -6,3 +6,6 @@ fits = [
   { kit = "kit/absima/rapid-devotee-reckless", type = "direct", source = "doc/absima/spares-rapid-devotee-reckless" },
 ]
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

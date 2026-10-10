@@ -4,3 +4,6 @@ number = "17435108"
 name = "540 Motor w/170mm Cables"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
