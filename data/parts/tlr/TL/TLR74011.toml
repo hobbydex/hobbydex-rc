@@ -5,3 +5,6 @@ name = "SIL SHOCK OIL,42.5WT,563CST,2OZ"
 former_names = ["Silicone Shock Oil, 42.5wt"]
 viscosity_wt = 42.5
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-563cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]

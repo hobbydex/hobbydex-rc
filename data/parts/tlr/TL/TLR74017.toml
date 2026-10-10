@@ -3,3 +3,7 @@ brand = "brand/tlr"
 number = "TLR74017"
 name = "SIL SHOCK OIL,90WT,1130CST,2OZ"
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-1130cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]
+viscosity_wt = 90
