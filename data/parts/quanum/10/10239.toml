@@ -5,3 +5,7 @@ name = "Round Head Self Tapping Hex Screw M3x6"
 pack_qty = 6
 notes = "Name from the Part List of a scanned Quanum manual"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x6-button-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

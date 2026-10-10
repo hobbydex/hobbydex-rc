@@ -8,3 +8,7 @@ fits = [
   { kit = "kit/absima/at-v2", type = "direct", source = "doc/absima/spares-at-v2" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x11-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
