@@ -357,6 +357,14 @@ and `weight_g`. A motor and ESC combo lists its components with `includes`.
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.
 
+### Wheel hex specs
+
+`spec/wheel-hex/<size>mm` (category "wheel-hex", `hex_mm`) is the hex a wheel
+mounts on. Wheels and wheel hexes link to it: match "exact" when the part's
+name states the size ("WITH 12MM HEX"), "close" when the wheels of a release
+take the size of that release's wheel hexes (the notes say which release).
+Other mounts (pin drive, centre lock) are not modelled yet.
+
 ## doc
 
 A manufacturer document used as a source. Only facts and the link; the PDF
