@@ -1,0 +1,16 @@
+id = "part/rc4wd/Z-S0308"
+brand = "brand/rc4wd"
+number = "Z-S0308"
+name = "M3 X 10mm Set Screw"
+pack_qty = 10
+fits = [
+  { kit = "kit/rc4wd/trail-finder-2", type = "direct", source = "doc/rc4wd/store" },
+]
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/M3-X-10mm-Set-Screw-10_p_1500.html" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

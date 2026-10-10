@@ -1,0 +1,18 @@
+id = "part/rc4wd/Z-E0090"
+brand = "brand/rc4wd"
+number = "Z-E0090"
+name = "6-Cell 3000mAh NIMH Battery Pack"
+fits = [
+  { kit = "kit/rc4wd/gelande-ii", type = "direct", source = "doc/rc4wd/store" },
+  { kit = "kit/rc4wd/trail-finder-2", type = "direct", source = "doc/rc4wd/store" },
+]
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-6-Cell-3000mAh-NIMH-Battery-Pack_p_5486.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 3000
+category = "battery"
