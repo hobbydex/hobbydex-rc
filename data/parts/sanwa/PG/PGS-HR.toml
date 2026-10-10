@@ -8,5 +8,5 @@ dimensions_mm = [27, 21.1, 30.5]
 weight_g = 24
 motor = "coreless"
 equivalent_to = [
-  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from Sanwa's specifications; check the mounting holes" },
+  { spec = "spec/servo/standard-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
 ]
