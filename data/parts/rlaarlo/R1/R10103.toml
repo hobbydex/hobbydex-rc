@@ -1,0 +1,17 @@
+id = "part/rlaarlo/R10103"
+brand = "brand/rlaarlo"
+number = "R10103"
+name = "Flat Head Hex Machine Screw (M2*6 & M2.5X14 & M3*8 & M3*10 ) For 1/10 Scale On-Road Cars"
+applies_to = "1/10 Scale On-Road Cars"
+fits = [
+  { kit = "kit/rlaarlo/ak-787", type = "direct", source = "doc/rlaarlo/store" },
+  { kit = "kit/rlaarlo/ak-917", type = "direct", source = "doc/rlaarlo/store" },
+]
+links = [
+  { site = "Rlaarlo", url = "https://rlaarlo.com/products/flat-head-hex-machine-screw-1-10-scale" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x14-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

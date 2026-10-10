@@ -1,0 +1,18 @@
+id = "part/rlaarlo/MK07-025"
+brand = "brand/rlaarlo"
+number = "MK07-025"
+name = "Bearing(6*10*3) for MK-07 and UM07"
+pack_qty = 6
+applies_to = "MK-07 and UM07"
+fits = [
+  { kit = "kit/rlaarlo/mk-07", type = "direct", source = "doc/rlaarlo/store" },
+  { kit = "kit/rlaarlo/unimog-u4000", type = "direct", source = "doc/rlaarlo/store" },
+]
+links = [
+  { site = "Rlaarlo", url = "https://rlaarlo.com/products/bearing-for-mk-07-025" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

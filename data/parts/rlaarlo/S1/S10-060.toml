@@ -1,0 +1,18 @@
+id = "part/rlaarlo/S10-060"
+brand = "brand/rlaarlo"
+number = "S10-060"
+name = "Pinion Gear, 32P For RZ001 and 1/10 Rally Car, 3.17 MM / 17T"
+applies_to = "RZ001 and XTS-F10、XTS-S10、SBK10"
+fits = [
+  { kit = "kit/rlaarlo/omni-terminator", type = "direct", source = "doc/rlaarlo/store" },
+  { kit = "kit/rlaarlo/sbk10", type = "direct", source = "doc/rlaarlo/store" },
+  { kit = "kit/rlaarlo/xts-f10", type = "direct", source = "doc/rlaarlo/store" },
+  { kit = "kit/rlaarlo/xts-s10", type = "direct", source = "doc/rlaarlo/store" },
+]
+links = [
+  { site = "Rlaarlo", url = "https://rlaarlo.com/products/pinion-gear-32p-for-rz001-and-1-10-rally-car" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/32dp-17t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
