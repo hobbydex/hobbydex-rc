@@ -1,0 +1,19 @@
+id = "part/tekin/TT2691E"
+brand = "brand/tekin"
+number = "TT2691E"
+name = "SPEC-R2 13.5T GEN4 ELITE Brushless Motor"
+category = "motor"
+category_source = "curated"
+turns = 13.5
+lipo_cells = [1, 2]
+diameter_mm = 35.85
+length_mm = 50.25
+shaft_mm = 3.175
+weight_g = 150
+equivalent_to = [
+  { spec = "spec/motor/brushless-3650-3.175mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 35.85 mm, length 50.25 mm, shaft 3.175 mm)" },
+]
+notes = "Bearings (Tekin's specifications): front 4x13x5, rear 1/8x3/8x5/32 in"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/spec-r2-13-5t-gen4-elite-brushless-motor/" },
+]

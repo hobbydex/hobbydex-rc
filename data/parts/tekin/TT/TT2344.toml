@@ -1,0 +1,18 @@
+id = "part/tekin/TT2344"
+brand = "brand/tekin"
+number = "TT2344"
+name = "T8 GEN3 Buggy 1400KV Brushless Motor"
+category = "motor"
+category_source = "curated"
+kv = 1400
+diameter_mm = 40
+length_mm = 69
+shaft_mm = 5
+weight_g = 311
+equivalent_to = [
+  { spec = "spec/motor/brushless-4069-5mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 40 mm, length 69 mm, shaft 5 mm)" },
+]
+notes = "Voltage limit 6S LiPo; Bearings (Tekin's specifications): front 5x16x5, rear 5x11x5"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/t8-gen3-1400kv-brushless-buggy-motor/" },
+]

@@ -1,0 +1,18 @@
+id = "part/tekin/TT2503"
+brand = "brand/tekin"
+number = "TT2503"
+name = "PRO2 5800kV Brushless Motor"
+category = "motor"
+category_source = "curated"
+kv = 5800
+diameter_mm = 35.85
+length_mm = 52.9
+shaft_mm = 3.175
+weight_g = 179
+equivalent_to = [
+  { spec = "spec/motor/brushless-3653-3.175mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 35.85 mm, length 52.9 mm, shaft 3.175 mm)" },
+]
+notes = "Voltage limit 2S LiPo; Bearings (Tekin's specifications): front 5x14x5, rear 5x11x5"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/pro2-5800kv-brushless-motor/" },
+]

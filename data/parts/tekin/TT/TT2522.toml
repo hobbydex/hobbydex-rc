@@ -1,0 +1,18 @@
+id = "part/tekin/TT2522"
+brand = "brand/tekin"
+number = "TT2522"
+name = "PRO4 HD 1850kV Brushless Motor"
+category = "motor"
+category_source = "curated"
+kv = 1850
+diameter_mm = 35.85
+length_mm = 62.5
+shaft_mm = 5
+weight_g = 221
+equivalent_to = [
+  { spec = "spec/motor/brushless-3663-5mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 35.85 mm, length 62.5 mm, shaft 5 mm)" },
+]
+notes = "Voltage limit 4S LiPo; Bearings (Tekin's specifications): front 5x14x5, rear 5x11x5"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/pro4-hd-1850kv-brushless-motor/" },
+]

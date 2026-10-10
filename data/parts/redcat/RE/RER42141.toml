@@ -8,3 +8,10 @@ links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer42141" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 200
+connector = "JST"
