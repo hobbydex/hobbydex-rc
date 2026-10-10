@@ -1,0 +1,21 @@
+id = "part/reedy/907"
+brand = "brand/reedy"
+number = "907"
+name = "Reedy 540-SL4 Sensorless Brushless Motor"
+category = "motor"
+category_source = "curated"
+gtin = "784695009073"
+kv = 3300
+lipo_cells = [2, 3]
+diameter_mm = 36
+length_mm = 52
+shaft_mm = 3.17
+weight_g = 211
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Derived from Reedy's dimensions (diameter 36 mm, length 52 mm, shaft 3.175 mm)" },
+]
+notes = "Bearings (Reedy's specifications): 13x5x4mm (shielded)"
+documents = ["doc/reedy/reedy-motor-manual-sl4-web"]
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/reedy-540-sl4-sensorless-brushless-motor/" },
+]

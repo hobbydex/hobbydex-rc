@@ -1,0 +1,20 @@
+id = "part/reedy/752"
+brand = "brand/reedy"
+number = "752"
+name = "WolfPack LiPo 4000mAh 35C 7.4V"
+category = "battery"
+category_source = "curated"
+gtin = "784695007529"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4000
+c_rating = 35
+dimensions_mm = [24.5, 47, 139]
+weight_g = 212
+documents = ["doc/reedy/lipo-manual-5-31-17-english-french"]
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/wolfpack-lipo-4000mah-35c-7-4v/" },
+]
