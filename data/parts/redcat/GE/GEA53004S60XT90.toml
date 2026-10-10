@@ -1,0 +1,19 @@
+id = "part/redcat/GEA53004S60XT90"
+brand = "brand/redcat"
+number = "GEA53004S60XT90"
+name = "Gens Ace 5300mAh 4s 60C 14.8V HardCase Lipo Battery (XT90)"
+pack_qty = 1
+applies_to = "VALKYRIE MT, VALKYRIE TR, VIGILANTE"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/gea53004s60xt90" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-5300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 5300
+c_rating = 60
+connector = "XT90"
+case = "hard"
+category = "battery"

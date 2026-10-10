@@ -8,3 +8,9 @@ links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer44283" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-180mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 180
