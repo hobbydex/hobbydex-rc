@@ -373,7 +373,9 @@ one of them. `name` is the label; `spec_type` names the generic spec type the
 category's parts link to; `key_fields` are the properties that matter when
 choosing such a part, in display order, each read from the part itself or from
 its linked spec (`from = "part" | "spec"`), with an optional `unit` and
-`format` ("cells": a [min, max] LiPo range shown as 1-3S).
+`format` ("cells": a [min, max] LiPo range shown as 1-3S). `compare_only = true`
+keeps a field out of the parts table and shows it only when parts are
+compared side by side.
 
 ```toml
 id = "category/servo"
