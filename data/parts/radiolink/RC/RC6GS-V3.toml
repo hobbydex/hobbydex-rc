@@ -1,0 +1,14 @@
+id = "part/radiolink/RC6GS-V3"
+brand = "brand/radiolink"
+number = "RC6GS-V3"
+name = "RC6GS V3 radio"
+category = "electronics"
+category_source = "curated"
+channels = 7
+protocol = "FHSS"
+weight_g = 319
+notes = "RadioLink comparison of surface transmitters: Channels: 7; Control Distance: 600 meters; Response Latency: 14ms; Operating Voltage: 4.8~16.8V DC; Screen: No color screen; Storage Model Quantity: 30 groups; Signal support: PWM&SBUS&PPM; Weight: 319g; Dimension: 174.8*116.4*224.2mm. Compatible receivers: R7FG, R16SM, R16F, R12F, R8FGH, R8EF, R8FG, R6FG, R6F, R4FGM."
+includes = [
+  { part = "part/radiolink/R7FG", qty = 1, source = "doc/radiolink/rc6gsv3" },
+]
+documents = ["doc/radiolink/rc6gsv3", "doc/radiolink/rc6gsv3-manual", "doc/radiolink/comparison-of-surface-transmitters"]

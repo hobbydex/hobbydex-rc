@@ -1,0 +1,14 @@
+id = "part/radiolink/RC8P"
+brand = "brand/radiolink"
+number = "RC8P"
+name = "RC8P radio"
+category = "electronics"
+category_source = "curated"
+channels = 8
+protocol = "FHSS"
+weight_g = 193
+notes = "RadioLink comparison of surface transmitters: Channels: 8; Control Distance: 600 meters; Response Latency: 3ms, 4ms, 14ms can be selected; Operating Voltage: 3.4V~4.2V DC; Screen: 2.4inches, 16 colorful screens, 320*240 pixels; Storage Model Quantity: 30 groups; Signal support: PWM&SBUS&PPM; Weight: 193g; Dimension: 124.32*147.39mm. Compatible receivers: R8FG, R16F, R16SM, R12F, R8FGH, R8EF, R8FM, R8SM, R8XM, R7FG, R6FG, R6F, R4FGM."
+includes = [
+  { part = "part/radiolink/R8FG", qty = 1, source = "doc/radiolink/rc8p" },
+]
+documents = ["doc/radiolink/rc8p", "doc/radiolink/rc8p-user-manual", "doc/radiolink/comparison-of-surface-transmitters"]
