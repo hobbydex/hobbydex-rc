@@ -4,3 +4,6 @@ number = "ARA390305"
 name = "Mega 380 brushed motor"
 notes = "Number read by OCR from an ARRMA exploded view (ARA2130FF-EXPLODED-VIEW.pdf); named from its Horizon Hobby product URL"
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
