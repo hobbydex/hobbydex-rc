@@ -4,3 +4,7 @@ number = "10565015"
 name = "1150 Plastic Bearing"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "close", source = "doc/tamiyabase/bearings", notes = "A plain plastic bushing, Tamiya size 1150; the 5x11x4 ball bearing replaces it" },
+]
+material = "plastic"
