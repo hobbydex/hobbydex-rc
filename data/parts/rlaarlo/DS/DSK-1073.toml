@@ -3,6 +3,7 @@ brand = "brand/rlaarlo"
 number = "DSK-1073"
 name = "Pinion Gear for DSK Buggy, 17T"
 applies_to = "DSK Buggy"
+module = 1.0
 fits = [
   { kit = "kit/rlaarlo/dsk", type = "direct", source = "doc/rlaarlo/store" },
 ]
@@ -10,3 +11,6 @@ links = [
   { site = "Rlaarlo", url = "https://rlaarlo.com/products/pinion-gear-for-dsk-buggy" },
 ]
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-17t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
