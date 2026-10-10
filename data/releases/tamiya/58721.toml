@@ -1,10 +1,41 @@
 id = "release/tamiya/58721"
-kit = "kit/tamiya/1-10-r-c-fiat-abarth-1000-tcr-berlina-corse-mb-01"
+kit = "kit/tamiya/mb-01"
 brand = "brand/tamiya"
 number = "58721"
-name = "1/10 R/C Fiat Abarth 1000 TCR Berlina Corse (MB-01)"
-year = 2026
+name = "Fiat Abarth 1000 TCR Berlina Corse (MB-01)"
+year = 2023
 kind = "kit"
-status = "announced"
-documents = ["doc/tamiya/58721-product-page"]
+status = "released"
+documents = ["doc/tamiya/58721-product-page", "doc/tamiya/58721-manual"]
 notes = "Announced on Tamiya's new items list; length 374 mm, wheelbase 210 mm"
+contains = [
+  { part = "part/tamiya/11057662", role = "kit", source = "doc/tamiya/58721-manual" },
+  { part = "part/tamiya/11057663", role = "kit", source = "doc/tamiya/58721-manual" },
+  { part = "part/tamiya/12500032", role = "kit", source = "doc/tamiya/58721-manual", qty = 1, step = "MC9" },
+  { part = "part/tamiya/13451486", role = "kit", source = "doc/tamiya/58721-manual", step = "MA11" },
+  { part = "part/tamiya/13461485", role = "kit", source = "doc/tamiya/58721-manual", step = "MA12" },
+  { part = "part/tamiya/14306125", role = "kit", source = "doc/tamiya/58721-manual", step = "MA14" },
+  { part = "part/tamiya/16096003", role = "kit", source = "doc/tamiya/58721-manual" },
+  { part = "part/tamiya/16275042", role = "kit", source = "doc/tamiya/58721-manual" },
+  { part = "part/tamiya/19007478", role = "kit", source = "doc/tamiya/58721-manual" },
+  { part = "part/tamiya/19335209", role = "kit", source = "doc/tamiya/58721-manual" },
+  { part = "part/tamiya/19490097", role = "kit", source = "doc/tamiya/58721-manual" },
+  { part = "part/tamiya/19803049", role = "kit", source = "doc/tamiya/58721-manual", qty = 4, step = "MA8" },
+  { part = "part/tamiya/19803204", role = "kit", source = "doc/tamiya/58721-manual", qty = 5, step = "MA9" },
+  { part = "part/tamiya/19804159", role = "kit", source = "doc/tamiya/58721-manual", qty = 10, step = "MA1" },
+  { part = "part/tamiya/19804194", role = "kit", source = "doc/tamiya/58721-manual", notes = "Kit needs 4 of this pack" },
+  { part = "part/tamiya/19804392", role = "kit", source = "doc/tamiya/58721-manual", qty = 10, step = "MA3" },
+  { part = "part/tamiya/19804394", role = "kit", source = "doc/tamiya/58721-manual", qty = 5, step = "MC3" },
+  { part = "part/tamiya/19805385", role = "kit", source = "doc/tamiya/58721-manual", qty = 2, step = "MD1" },
+  { part = "part/tamiya/19805557", role = "kit", source = "doc/tamiya/58721-manual", qty = 4, step = "MC5" },
+  { part = "part/tamiya/19805629", role = "kit", source = "doc/tamiya/58721-manual", qty = 4, step = "MA2", notes = "Kit needs 3 of this pack" },
+  { part = "part/tamiya/19805758", role = "kit", source = "doc/tamiya/58721-manual", qty = 5, step = "MC7" },
+  { part = "part/tamiya/19805826", role = "kit", source = "doc/tamiya/58721-manual", qty = 2, step = "MB4", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/19805868", role = "kit", source = "doc/tamiya/58721-manual", qty = 10, step = "MC1" },
+  { part = "part/tamiya/50582", role = "kit", source = "doc/tamiya/58721-manual", qty = 5, step = "MB2", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/50592", role = "kit", source = "doc/tamiya/58721-manual", qty = 10, step = "MB3", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/50875", role = "kit", source = "doc/tamiya/58721-manual", qty = 5, step = "MC2", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/51005", role = "kit", source = "doc/tamiya/58721-manual", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/51239", role = "kit", source = "doc/tamiya/58721-manual", qty = 4, step = "MA7", notes = "Kit needs 3 of this pack" },
+  { part = "part/tamiya/58721", role = "kit", source = "doc/tamiya/58721-manual" },
+]

@@ -2,9 +2,74 @@ id = "release/tamiya/58705"
 kit = "kit/tamiya/cc-02"
 brand = "brand/tamiya"
 number = "58705"
-name = "4WD OFF-ROAD Car Ford Bronco 2021 (CC-02)"
-year = 2026
+name = "Ford Bronco 2021 (CC-02)"
+year = 2022
 kind = "kit"
-status = "announced"
-documents = ["doc/tamiya/58705-product-page"]
+status = "released"
+documents = ["doc/tamiya/58705-product-page", "doc/tamiya/58705-manual"]
 notes = "Announced on Tamiya's new items list; length 447 mm, wheelbase 252 mm"
+contains = [
+  { part = "part/tamiya/10015091", role = "kit", source = "doc/tamiya/58705-manual", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/10115936", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/10555015", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "MA12", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/11057568", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/12300010", role = "kit", source = "doc/tamiya/58705-manual", qty = 1, step = "MC8", notes = "Kit needs 3 of this pack" },
+  { part = "part/tamiya/13486238", role = "kit", source = "doc/tamiya/58705-manual", qty = 1, step = "MC20", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/13535032", role = "kit", source = "doc/tamiya/58705-manual", step = "MA20" },
+  { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/15310002", role = "kit", source = "doc/tamiya/58705-manual", qty = 1, step = "MC10" },
+  { part = "part/tamiya/15725015", role = "kit", source = "doc/tamiya/58705-manual", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/16095003", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/16294011", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19003354", role = "kit", source = "doc/tamiya/58705-manual", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/19004206", role = "kit", source = "doc/tamiya/58705-manual", qty = 4, step = "MD6" },
+  { part = "part/tamiya/19005097", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19005185", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19005859", role = "kit", source = "doc/tamiya/58705-manual", qty = 4, step = "MB3", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/19006747", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19006748", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19006751", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19008112", role = "kit", source = "doc/tamiya/58705-manual", qty = 2, step = "MB9", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/19009206", role = "kit", source = "doc/tamiya/58705-manual", qty = 1, step = "MA15, MA16, MA17" },
+  { part = "part/tamiya/19116863", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19400462", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19490068", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19801208", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19803209", role = "kit", source = "doc/tamiya/58705-manual", step = "MC24" },
+  { part = "part/tamiya/19803211", role = "kit", source = "doc/tamiya/58705-manual", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/19803356", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19803400", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "ME2", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/19803707", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19804159", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "MD2" },
+  { part = "part/tamiya/19804285", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19804392", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19804455", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "MA1" },
+  { part = "part/tamiya/19804511", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "MC2" },
+  { part = "part/tamiya/19804662", role = "kit", source = "doc/tamiya/58705-manual", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/19804699", role = "kit", source = "doc/tamiya/58705-manual", qty = 5, step = "MD7" },
+  { part = "part/tamiya/19804778", role = "kit", source = "doc/tamiya/58705-manual", qty = 4, step = "MF5" },
+  { part = "part/tamiya/19804962", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "MD12" },
+  { part = "part/tamiya/19805486", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19805575", role = "kit", source = "doc/tamiya/58705-manual", qty = 2, step = "MD3", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/19805645", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "MA9" },
+  { part = "part/tamiya/19805674", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19805746", role = "kit", source = "doc/tamiya/58705-manual", qty = 2, step = "MA6", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/19805818", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19805895", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "MD1" },
+  { part = "part/tamiya/19805896", role = "kit", source = "doc/tamiya/58705-manual", notes = "Kit needs 3 of this pack" },
+  { part = "part/tamiya/19805898", role = "kit", source = "doc/tamiya/58705-manual", qty = 10, step = "MB4", notes = "Kit needs 3 of this pack" },
+  { part = "part/tamiya/19806386", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19806662", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19806823", role = "kit", source = "doc/tamiya/58705-manual", qty = 4, step = "MA14" },
+  { part = "part/tamiya/19808058", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19808183", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19835895", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19903135", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/19903708", role = "kit", source = "doc/tamiya/58705-manual", qty = 1, step = "MG22, MG23" },
+  { part = "part/tamiya/50197", role = "kit", source = "doc/tamiya/58705-manual", qty = 15, step = "MB12, ME8", notes = "Kit needs 1 of this pack" },
+  { part = "part/tamiya/50389", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/50568", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/53443", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/58705", role = "kit", source = "doc/tamiya/58705-manual" },
+  { part = "part/tamiya/61008", role = "kit", source = "doc/tamiya/58705-manual", qty = 6, step = "MG16, MG15, MC14" },
+]

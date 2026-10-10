@@ -14,7 +14,7 @@ ROOT = "data"
 REQUIRED = {
     "brand": ["id", "name", "status"],
     "kit": ["id", "brand", "name", "category"],
-    "release": ["id", "kit", "brand", "name", "year", "kind", "status"],
+    "release": ["id", "kit", "brand", "name", "kind", "status"],   # year: optional, left out when unknown
     "part": ["id", "brand", "number", "name"],
     "spec": ["id", "category"],
     "doc": ["id", "kind", "title"],

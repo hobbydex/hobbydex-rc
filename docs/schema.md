@@ -90,6 +90,11 @@ Rows read from a build manual also carry `qty`, the number of pieces the car
 uses (summed over the steps that use the part), and `step`, the manual's
 reference ("Bag 4 - Step 2"). Rows read from a parts list have neither.
 
+`year` is the year the release came out. Leave it out when it is unknown: a
+document's date (a later scan, a reprinted manual) or the day a shop was read
+is not a release year. The site shows such releases as year unknown and leaves
+them out of the by-date lists.
+
 ## part
 
 A branded, numbered product. `number` is exactly as the manufacturer prints it,
