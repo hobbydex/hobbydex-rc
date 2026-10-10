@@ -1,0 +1,26 @@
+id = "part/hosim/2-DC-3S-2600"
+brand = "brand/hosim"
+number = "2-DC-3S-2600"
+name = "RC Car Battery 2PCS 3S 11.1V 2600mAh Li-po Battery 25C for 1/10 Scale"
+pack_qty = 2
+applies_to = "1/10 Scale"
+fits = [
+  { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x07w", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x15w", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-2pcs-3s-11-1v-2600mah-li-po-battery-25c-for-1-10-scale" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2600
+c_rating = 25
+category = "battery"

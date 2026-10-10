@@ -1,0 +1,20 @@
+id = "part/hosim/25-DJ02"
+brand = "brand/hosim"
+number = "25-DJ02"
+name = "Hosim 2S 7.4V 25C 1600mAh Li-Po Battery For 9125 9126 HS9125 RC Truck"
+applies_to = "9125 9126 HS9125 RC Truck"
+fits = [
+  { kit = "kit/hosim/9125", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/9126", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-2s-7-4v-25c-1600mah-li-po-rechargeable-battery-pack-for-rc-car-truck-9125" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1600
+c_rating = 25
+category = "battery"

@@ -1,0 +1,25 @@
+id = "part/hosim/2FY-2600K"
+brand = "brand/hosim"
+number = "2FY-2600K"
+name = "RC Cars Battery 25C 2S 7.4V 2600mAh for X07 X08 X17 X27 X07W X25 2PCS"
+pack_qty = 2
+applies_to = "X07 X08 X17 X27 X07W X25 2PCS"
+fits = [
+  { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x07w", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-cars-battery-25c-2s-7-4v-2600mah-for-x07-x08-x17-x27-x07w-x25-2pcs" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2600
+c_rating = 25
+category = "battery"

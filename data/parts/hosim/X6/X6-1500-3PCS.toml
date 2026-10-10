@@ -1,0 +1,28 @@
+id = "part/hosim/X6-1500-3PCS"
+brand = "brand/hosim"
+number = "X6-1500-3PCS"
+name = "RC Car Battery 3PCS 1500 mAh 7.4V Li-Po Battery For X03 X05 X06 X15 X16 X07 X08 X17 X27 X25"
+pack_qty = 3
+applies_to = "X03 X05 X06 X15 X16 X07 X08 X17 X27 X25"
+fits = [
+  { kit = "kit/hosim/x03", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x05", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x06", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x15", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x16", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-3pcs-1500-mah-7-4v-li-po-battery-for-x03-x05-x06-x15-x16-x07-x08-x17-x27-x25" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1500
+category = "battery"

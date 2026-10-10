@@ -1,0 +1,21 @@
+id = "part/hosim/2HC55-DJ02-1BC-WFB-DC"
+brand = "brand/hosim"
+number = "2HC55-DJ02-1BC-WFB-DC"
+name = "Hosim RC Cars 2pcs 2S 7.4V 20C 2000mAh Battery for 1/12 Scale Remote Control 9155 9156"
+pack_qty = 2
+applies_to = "1/12 Scale Remote Control 9155 9156"
+fits = [
+  { kit = "kit/hosim/9155", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/9156", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-rc-cars-2pcs-2s-7-4v-20c-2000mah-battery-for-1-12-scale-remote-control-9155-9156" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2000
+c_rating = 20
+category = "battery"

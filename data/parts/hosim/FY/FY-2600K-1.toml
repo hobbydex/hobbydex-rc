@@ -1,0 +1,24 @@
+id = "part/hosim/FY-2600K-1"
+brand = "brand/hosim"
+number = "FY-2600K-1"
+name = "RC Cars Battery 25C 7.4V 2S 2600mAh for High Speed RC Truck X07 X08 X17 X25 X27 X15W, 1"
+applies_to = "High Speed RC Truck X07 X08 X17 X25 X27 X15W"
+fits = [
+  { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x15w", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-cars-battery-25c-7-4v-2s-2600mah-for-high-speed-rc-truck-x07-x08-x17-x25-x27" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2600
+c_rating = 25
+category = "battery"

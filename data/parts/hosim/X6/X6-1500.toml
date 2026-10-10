@@ -1,0 +1,22 @@
+id = "part/hosim/X6-1500"
+brand = "brand/hosim"
+number = "X6-1500"
+name = "Hosim 2S 7.4V 15C 1500mAh Li-Po Battery for 1:10 X05 X15 X16 M12 RC Car"
+applies_to = "1:10 X05 X15 X16 M12 RC Car"
+fits = [
+  { kit = "kit/hosim/m12", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x05", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x15", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x16", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-2s-7-4v-25c-1500mah-li-po-battery-for-1-10-x05-rc-car" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1500
+c_rating = 15
+category = "battery"

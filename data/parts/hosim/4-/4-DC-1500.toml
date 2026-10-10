@@ -1,0 +1,30 @@
+id = "part/hosim/4-DC-1500"
+brand = "brand/hosim"
+number = "4-DC-1500"
+name = "RC Car Battery 7.4V 1500mAh 15C Lipo Battery 4PCS"
+pack_qty = 4
+fits = [
+  { kit = "kit/hosim/x03", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x05", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x06", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x07w", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x15", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x15w", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x16", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-7-4v-1500mah-15c-lipo-battery-4pcs" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1500
+c_rating = 15
+category = "battery"
