@@ -1,0 +1,22 @@
+id = "part/fast-eddy/TFE8990"
+brand = "brand/fast-eddy"
+number = "TFE8990"
+name = "Vanquish VRD Carbon Kit Ceramic Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 23 },
+  { spec = "spec/bearing/5x14x5", qty = 2 },
+  { spec = "spec/bearing/6x11x4", qty = 2, notes = "Black Rubber Sealed" },
+  { spec = "spec/bearing/6x12x4", qty = 6 },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Open" },
+  { spec = "spec/bearing/12x18x4", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+material = "ceramic"
+seal = "rubber"
+fits = [
+  { kit = "kit/vanquish/vrd", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the VRD Carbon Kit" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/vanquish-vrd-carbon-kit-ceramic-sealed-bearing-kit" },
+]

@@ -1,0 +1,23 @@
+id = "part/fast-eddy/TFE10417"
+brand = "brand/fast-eddy"
+number = "TFE10417"
+name = "Serpent Medius X26 Steel Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/1.5x4x2", qty = 12, notes = "Metal Shielded" },
+  { spec = "spec/bearing/2x5x2.5", qty = 2, notes = "Metal Shielded" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4 },
+  { spec = "spec/bearing/5x8x2.5", qty = 3 },
+  { spec = "spec/bearing/6x10x3", qty = 8 },
+  { spec = "spec/bearing/8x12x3.5", qty = 1 },
+  { spec = "spec/bearing/10x15x4", qty = 4 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/serpent/medius-x26", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Medius X26 Steel" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/serpent-medius-x26-steel-sealed-bearing-kit" },
+]

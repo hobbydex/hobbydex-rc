@@ -1,0 +1,22 @@
+id = "part/fast-eddy/TFE6346"
+brand = "brand/fast-eddy"
+number = "TFE6346"
+name = "Axial SCX10 II 1955 Ford F-100 RTR Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 4 },
+  { spec = "spec/bearing/5x11x4", qty = 8 },
+  { spec = "spec/bearing/5x14x5", qty = 2 },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Open" },
+  { spec = "spec/bearing/8x16x5", qty = 2 },
+  { spec = "spec/bearing/10x15x4", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the SCX10 II 1955 Ford F-100 RTR" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/axial-scx10-ii-1955-ford-f-100-rtr-sealed-bearing-kit" },
+]

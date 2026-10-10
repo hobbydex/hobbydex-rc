@@ -1,0 +1,26 @@
+id = "part/fast-eddy/TFE7180"
+brand = "brand/fast-eddy"
+number = "TFE7180"
+name = "Traxxas Compatible TRX-4 Mercedes-Benz G 500 Ceramic Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x10x4", qty = 4 },
+  { spec = "spec/bearing/5x8x2.5", qty = 3 },
+  { spec = "spec/bearing/5x10x4", qty = 1 },
+  { spec = "spec/bearing/5x11x4", qty = 12 },
+  { spec = "spec/bearing/6x12x4", qty = 4 },
+  { spec = "spec/bearing/6x13x5", qty = 6 },
+  { spec = "spec/bearing/7x14x5", qty = 2, notes = "Not ceramic" },
+  { spec = "spec/bearing/10x15x4", qty = 4 },
+  { spec = "spec/bearing/12x18x4", qty = 2 },
+  { spec = "spec/bearing/15x21x4", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+material = "ceramic"
+seal = "rubber"
+fits = [
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the TRX-4 Mercedes-Benz G 500" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/traxxas-trx-4-mercedes-benz-g-500-ceramic-sealed-bearing-kit" },
+]

@@ -1,0 +1,21 @@
+id = "part/fast-eddy/TFE9545"
+brand = "brand/fast-eddy"
+number = "TFE9545"
+name = "HPI Venture18 1985 Hilux SR5 Ceramic Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/2x5x2.5", qty = 1, notes = "Metal Shielded" },
+  { spec = "spec/bearing/3x6x2.5", qty = 7 },
+  { spec = "spec/bearing/4x7x2.5", qty = 4 },
+  { spec = "spec/bearing/5x8x2.5", qty = 4 },
+  { spec = "spec/bearing/8x12x3.5", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+material = "ceramic"
+seal = "rubber"
+fits = [
+  { kit = "kit/hpi/venture18", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Venture18 1985 Hilux SR5" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/hpi-venture18-1985-hilux-sr5-ceramic-sealed-bearing-kit" },
+]

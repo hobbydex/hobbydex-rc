@@ -1,0 +1,22 @@
+id = "part/fast-eddy/TFE9906"
+brand = "brand/fast-eddy"
+number = "TFE9906"
+name = "FTX Outback Centaur 4X4 RTR Crawler Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 1 },
+  { spec = "spec/bearing/5x10x4", qty = 10 },
+  { spec = "spec/bearing/5x11x4", qty = 8 },
+  { spec = "spec/bearing/5x14x5", qty = 2 },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Open" },
+  { spec = "spec/bearing/10x15x4", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/ftx/outback-centaur", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Outback Centaur 4X4 RTR Crawler" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/ftx-outback-centaur-4x4-rtr-crawler-sealed-bearing-kit" },
+]

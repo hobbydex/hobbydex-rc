@@ -1,0 +1,19 @@
+id = "part/fast-eddy/TFE10106"
+brand = "brand/fast-eddy"
+number = "TFE10106"
+name = "Carisma SCA-1E 2.1 Coyote Kit Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x8x2.5", qty = 2 },
+  { spec = "spec/bearing/5x10x4", qty = 15 },
+  { spec = "spec/bearing/10x15x4", qty = 6 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/carisma/sca-1e", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the SCA-1E 2.1 Coyote Kit" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/carisma-sca-1e-2-1-coyote-kit-sealed-bearing-kit" },
+]

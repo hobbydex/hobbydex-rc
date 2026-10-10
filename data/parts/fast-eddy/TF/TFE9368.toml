@@ -1,0 +1,23 @@
+id = "part/fast-eddy/TFE9368"
+brand = "brand/fast-eddy"
+number = "TFE9368"
+name = "Serpent Medius X20 ’24 Carbon Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/1.5x4x2", qty = 16, notes = "Metal Shielded" },
+  { spec = "spec/bearing/3x6x2.5", qty = 2 },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 4 },
+  { spec = "spec/bearing/5x8x2.5", qty = 3 },
+  { spec = "spec/bearing/6x10x3", qty = 8 },
+  { spec = "spec/bearing/8x12x3.5", qty = 1 },
+  { spec = "spec/bearing/10x15x4", qty = 4 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Medius X20 ’24 Carbon" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/serpent-medius-x20-24-carbon-sealed-bearing-kit" },
+]

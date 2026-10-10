@@ -1,0 +1,21 @@
+id = "part/fast-eddy/TFE9988"
+brand = "brand/fast-eddy"
+number = "TFE9988"
+name = "Redcat Ascent-18 Apex Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/3x6x2.5", qty = 12 },
+  { spec = "spec/bearing/3.5x7x2.5", qty = 4 },
+  { spec = "spec/bearing/4x8x3", qty = 8 },
+  { spec = "spec/bearing/7x11x3", qty = 4 },
+  { spec = "spec/bearing/8x12x3.5", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/redcat/ascent-18", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Ascent-18 Apex" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/redcat-ascent-18-apex-sealed-bearing-kit" },
+]

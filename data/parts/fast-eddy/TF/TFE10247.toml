@@ -1,0 +1,23 @@
+id = "part/fast-eddy/TFE10247"
+brand = "brand/fast-eddy"
+number = "TFE10247"
+name = "Axial SCX10 III CJ-7 RTR V2 Sealed Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 1 },
+  { spec = "spec/bearing/5x10x4", qty = 2 },
+  { spec = "spec/bearing/5x11x4", qty = 20 },
+  { spec = "spec/bearing/5x14x5", qty = 2 },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Open" },
+  { spec = "spec/bearing/10x15x4", qty = 2 },
+  { spec = "spec/bearing/15x21x4", qty = 1 },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+fits = [
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the SCX10 III CJ-7 RTR V2" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/axial-scx10-iii-cj-7-rtr-v2-sealed-bearing-kit" },
+]
