@@ -1,0 +1,16 @@
+id = "part/thunder-tiger/PD1339"
+brand = "brand/thunder-tiger"
+number = "PD1339"
+name = "Socket Head Cap Screw 3x20mm"
+fits = [
+  { kit = "kit/thunder-tiger/mt4-g3", type = "direct", source = "doc/thunder-tiger/shop" },
+  { kit = "kit/thunder-tiger/k-rock", type = "direct", source = "doc/thunder-tiger/shop" },
+]
+links = [
+  { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/mt-4-g3-parts-socket-head-cap-screw-3-20" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

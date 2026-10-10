@@ -1,0 +1,17 @@
+id = "part/thunder-tiger/PD90407S1"
+brand = "brand/thunder-tiger"
+number = "PD90407S1"
+name = "Ball Bearing 5x10x4"
+pack_qty = 12
+fits = [
+  { kit = "kit/thunder-tiger/kaiser-xs", type = "direct", source = "doc/thunder-tiger/shop" },
+  { kit = "kit/thunder-tiger/hilux", type = "direct", source = "doc/thunder-tiger/shop" },
+]
+links = [
+  { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/kaiser-xs-parts-ball-bearing-5x10x4-12" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"
