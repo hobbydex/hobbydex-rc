@@ -1,0 +1,15 @@
+id = "part/absima/1610066"
+brand = "brand/absima"
+number = "1610066"
+name = "Li-Po Battery 7.4V/15C 1500mAh"
+fits = [
+  { kit = "kit/absima/fun-maker", type = "direct", source = "doc/absima/spares-fun-maker" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1500
+c_rating = 15
+category = "battery"

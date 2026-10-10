@@ -1,0 +1,12 @@
+id = "part/absima/2310362"
+brand = "brand/absima"
+number = "2310362"
+name = "Steel Pinion Module 1.0 - 13T"
+fits = [
+  { kit = "kit/absima/mamba", type = "direct", source = "doc/absima/spares-mamba" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod1-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"
+category = "pinion"

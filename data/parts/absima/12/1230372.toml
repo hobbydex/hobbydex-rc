@@ -1,0 +1,15 @@
+id = "part/absima/1230372"
+brand = "brand/absima"
+number = "1230372"
+name = "Cap Head Self-tapping Screw M3x14"
+pack_qty = 10
+fits = [
+  { kit = "kit/absima/ab-v2", type = "direct", source = "doc/absima/spares-ab-v2" },
+  { kit = "kit/absima/amt-v2", type = "direct", source = "doc/absima/spares-amt-v2" },
+  { kit = "kit/absima/at-v2", type = "direct", source = "doc/absima/spares-at-v2" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x14-socket-cap-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

@@ -1,0 +1,13 @@
+id = "part/absima/1230042"
+brand = "brand/absima"
+number = "1230042"
+name = "Ball Bearing 6x12x4 (2) Buggy/Truggy"
+fits = [
+  { kit = "kit/absima/asb1", type = "direct", source = "doc/absima/spares-asb1" },
+  { kit = "kit/absima/ab1", type = "direct", source = "doc/absima/spares-ab1" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

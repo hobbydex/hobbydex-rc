@@ -1,0 +1,13 @@
+id = "part/absima/1610140"
+brand = "brand/absima"
+number = "1610140"
+name = "Motor Pinion 15T 48dp"
+fits = [
+  { kit = "kit/absima/neon-furry", type = "direct", source = "doc/absima/spares-neon-furry" },
+  { kit = "kit/absima/speed-demon", type = "direct", source = "doc/absima/spares-speed-demon" },
+  { kit = "kit/absima/mini-amt-bl", type = "direct", source = "doc/absima/spares-mini-amt-bl" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"

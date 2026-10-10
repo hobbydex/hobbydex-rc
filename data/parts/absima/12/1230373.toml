@@ -1,0 +1,13 @@
+id = "part/absima/1230373"
+brand = "brand/absima"
+number = "1230373"
+name = "Set Screw M3x4"
+pack_qty = 8
+fits = [
+  { kit = "kit/absima/amt-v2", type = "direct", source = "doc/absima/spares-amt-v2" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

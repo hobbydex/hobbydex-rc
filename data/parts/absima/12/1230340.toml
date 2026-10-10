@@ -1,0 +1,12 @@
+id = "part/absima/1230340"
+brand = "brand/absima"
+number = "1230340"
+name = "Pinion steel 21T Module 0.6"
+fits = [
+  { kit = "kit/absima/amt-v2", type = "direct", source = "doc/absima/spares-amt-v2" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod0.6-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"
+category = "pinion"

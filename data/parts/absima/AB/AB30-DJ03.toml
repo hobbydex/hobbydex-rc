@@ -1,0 +1,14 @@
+id = "part/absima/AB30-DJ03"
+brand = "brand/absima"
+number = "AB30-DJ03"
+name = "7.4V 800mAh Battery LiPo"
+fits = [
+  { kit = "kit/absima/spirit-x-truck-racer", type = "direct", source = "doc/absima/spares-spirit-x-truck-racer" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 800
+category = "battery"
