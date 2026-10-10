@@ -1,0 +1,15 @@
+id = "part/isdt/Q8-Max"
+brand = "brand/isdt"
+number = "Q8-Max"
+name = "Q8 Max DC charger"
+category = "charger"
+category_source = "curated"
+power_w = 1000
+lipo_cells = [1, 8]
+dimensions_mm = [95, 95, 45]
+weight_g = 290
+notes = "Specifications: Input voltage: DC 10~34V, Output voltage: DC 1~34V, Max. input current: 33A, Charging current: 0.2~30.0A, Discharging current: 0.2~3.0A, Max. charging power: 1000W, Max. discharging power: 30W, Balance current: 1.5A/Cell Max, Supported battery types and cell count: LiFe,LiIon,LiPo 1~8S; LiHv 1~7S; Pb 1~12S; NiMH/Cd 1~16S; Specifications from the Q8 Max manual (isdt.co shows them only in pictures)"
+documents = ["doc/isdt/q8max-manual"]
+links = [
+  { site = "ISDT", url = "https://www.isdt.co/qseries.html?lang=en" },
+]
