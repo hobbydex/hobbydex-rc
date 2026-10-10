@@ -1,0 +1,12 @@
+id = "category/battery"
+name = "Batteries"
+spec_type = "battery"
+key_fields = [
+  { field = "chemistry", label = "Chemistry", from = "spec" },
+  { field = "cells", label = "Cells", from = "spec" },
+  { field = "capacity_mah", label = "Capacity", from = "spec", unit = "mAh" },
+  { field = "c_rating", label = "C", from = "part" },
+  { field = "case", label = "Case", from = "part" },
+  { field = "connector", label = "Plug", from = "part" },
+  { field = "weight_g", label = "Weight", from = "part", unit = "g" },
+]

@@ -19,6 +19,7 @@ REQUIRED = {
     "spec": ["id", "category"],
     "doc": ["id", "kind", "title"],
     "shop": ["id", "name", "status"],
+    "category": ["id", "name"],
 }
 KINDS = {k: dict(dir=DIRS[k], required=REQUIRED[k]) for k in REQUIRED}
 REFS = {  # field -> expected id prefix
@@ -37,7 +38,6 @@ ENUMS = {
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "ceramic", "carbide", "unknown"},
-    "part.category": {"ball-end", "battery", "bearing", "body", "bumper-guard", "charger", "chassis", "decal", "differential", "drivetrain", "electronics", "engine-fuel", "gear", "motor", "nut", "o-ring-seal", "oil-grease", "pin-clip", "pinion", "screw", "servo", "shock", "shock-spring", "spur-gear", "steering", "suspension", "tire", "tool", "washer-shim", "wheel", "wing"},
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.lubricant": {"oil", "grease"},
@@ -48,7 +48,13 @@ ENUMS = {
     "part.case": {"hard", "soft", "shorty"},
 }
 
+def categories():
+    """Part categories are the files in data/categories (category/<slug>)."""
+    d = os.path.join(ROOT, "categories")
+    return {f[:-5] for f in os.listdir(d) if f.endswith(".toml")} if os.path.isdir(d) else set()
+
 def main():
+    ENUMS["part.category"] = categories()
     errors, ids, docs = [], {}, []
     for dirpath, _, files in os.walk(ROOT):
         for fn in sorted(files):
@@ -127,6 +133,12 @@ def main():
                 errors.append(f"{path}: released {rd!r} is not YYYY, YYYY-MM or YYYY-MM-DD")
             elif "year" in d and int(rd[:4]) != d["year"]:
                 errors.append(f"{path}: released {rd} does not match year {d['year']}")
+        if kind == "category":
+            for kf in d.get("key_fields", []):
+                if not kf.get("field") or not kf.get("label") or kf.get("from") not in ("part", "spec"):
+                    errors.append(f"{path}: key_fields entry {kf!r} needs field, label and from = part|spec")
+                elif kf["from"] == "spec" and not d.get("spec_type"):
+                    errors.append(f"{path}: key field {kf['field']} comes from the spec, but the category names no spec")
         if kind == "part" and not re.match(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$", str(d.get("number", ""))):
             errors.append(f"{path}: odd part number {d.get('number')!r}")
     counts = {}

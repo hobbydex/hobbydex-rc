@@ -1,0 +1,10 @@
+id = "category/screw"
+name = "Screws"
+spec_type = "screw"
+key_fields = [
+  { field = "thread", label = "Thread", from = "spec" },
+  { field = "length_mm", label = "Length", from = "spec", unit = "mm" },
+  { field = "head", label = "Head", from = "spec" },
+  { field = "drive", label = "Drive", from = "spec" },
+  { field = "material", label = "Material", from = "part" },
+]

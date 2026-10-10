@@ -1,0 +1,12 @@
+id = "category/motor"
+name = "Motors"
+spec_type = "motor"
+key_fields = [
+  { field = "motor_type", label = "Type", from = "spec" },
+  { field = "can", label = "Can", from = "spec" },
+  { field = "kv", label = "kV", from = "part" },
+  { field = "turns", label = "Turns", from = "part", unit = "T" },
+  { field = "shaft_mm", label = "Shaft", from = "spec", unit = "mm" },
+  { field = "lipo_cells", label = "LiPo", from = "part", format = "cells" },
+  { field = "weight_g", label = "Weight", from = "part", unit = "g" },
+]
