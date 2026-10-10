@@ -4,3 +4,6 @@ number = "81681"
 name = "Pin 2.5x12mm"
 former_names = ["Diff Crosspin", "Diff Planet Gear, 10T, HTC", "Diff Planet Gears", "Diff Planet Gears, 19mm and 20mm HTC", "Diff Shim 3.6x12x0.12mm", "Diff Sun B4.2 Gear, Diff", "Diff Sun B4.2 Gear, Diff 19mm HTC 0.5mm", "Diff Sun Gear, 19mm HTC", "HTC and HTC Sun Gears included. DO NOT MIX!"]
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2.5x12", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

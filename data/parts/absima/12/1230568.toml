@@ -8,3 +8,6 @@ fits = [
   { kit = "kit/absima/cr1-8", type = "direct", source = "doc/absima/spares-cr1-8" },
 ]
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/1.6x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

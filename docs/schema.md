@@ -400,6 +400,15 @@ position = "front-rear"
 mounting = "pre-mounted"
 ```
 
+### Pin specs
+
+`spec/pin/<d>x<L>` (category "pin", `diameter_mm`, `length_mm`) is a plain
+parallel pin, with standards ISO 2338 and ISO 8734 when the size is in
+their tables (RC makers also use odd lengths such as 2x9.8): drive-shaft cross pins,
+wheel hex drive pins, diff pins. Parts link with match "functional" (size
+from the name; hardness and tolerance seldom stated). Hinge, pivot, body,
+king, roll and spring pins and grooved or threaded pins get no pin spec.
+
 ### Wheel hex specs
 
 `spec/wheel-hex/<size>mm` (category "wheel-hex", `hex_mm`) is the hex a wheel

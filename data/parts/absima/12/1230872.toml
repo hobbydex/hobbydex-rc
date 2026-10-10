@@ -7,3 +7,6 @@ fits = [
   { kit = "kit/absima/adb1", type = "direct", source = "doc/absima/spares-adb1" },
 ]
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
