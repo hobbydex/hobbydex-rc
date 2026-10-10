@@ -219,6 +219,14 @@ links = [{ site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13934-10
 Planned: `numbers` (aliases such as Tamiya's 7-digit spare number, 8-digit SKU
 and X-number for one part).
 
+`rebrand_of`: the part this one is the same product as under another brand
+(a radio HobbyKing sold as Turnigy), with a `source` or `notes`. Recorded once,
+on the rebranded part; the site shows it from both sides.
+
+```toml
+rebrand_of = [{ part = "part/flysky/FS-GT5", source = "doc/community/2026-10-10-turnigy-gt5-is-flysky-gt5" }]
+```
+
 `name_ja`: the brand's Japanese name, kept when the English `name` is a
 translation (Yokomo publishes Japanese-only parts lists).
 
