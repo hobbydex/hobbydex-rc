@@ -1,0 +1,17 @@
+id = "part/protek-rc/PTK-5188"
+brand = "brand/protek-rc"
+number = "PTK-5188"
+name = "LiFe Futaba Transmitter Battery Pack (6.6V/2100mAh) (3PV/4PK/4PM/4PLS/4PX/4PV/7PX/7PXR/16SZ)"
+category = "battery"
+category_source = "curated"
+dimensions_mm = [76, 41, 17]
+weight_g = 105
+equivalent_to = [
+  { spec = "spec/battery/life-2s-2100mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/life-6-6v-2100mah-tx-pack" },
+]
+chemistry = "life"
+cells = 2
+capacity_mah = 2100

@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-STHV5750"
+brand = "brand/muchmore-racing"
+number = "MLSG-STHV5750"
+name = "IMPACT [Silicon Graphene] Shorty FD4 Li-Po Battery 5750mAh/7.6V 140C Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5750mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5750
+c_rating = 140
+case = "shorty"

@@ -200,7 +200,9 @@ lubricant = "grease"
 Silicone oils link to `spec/oil/silicone-<cSt>cst` only when the brand states
 the viscosity in cSt. The "wt" and "K" scales differ between brands, so a
 brand's wt goes on the part as `viscosity_wt`, never on a spec. `volume_ml` is
-the bottle size. Brands that grade by their own number without a unit
+the bottle size. Glues (CA, tyre glue) give their grade as `viscosity`
+(thin | medium | thick, as the brand names it; a gel counts as thick).
+Brands that grade by their own number without a unit
 (Tamiya #400) link with match "close" and say so in the notes. A set of
 oils lists its bottles with `includes`, one row per spec:
 

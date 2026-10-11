@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLE-RP220"
+brand = "brand/muchmore-racing"
+number = "MLE-RP220"
+name = "Much More Li-Fe Battery 220mAh/6.6V 2C for1/12 Receiver"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/life-2s-220mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "life"
+cells = 2
+capacity_mah = 220
+c_rating = 2

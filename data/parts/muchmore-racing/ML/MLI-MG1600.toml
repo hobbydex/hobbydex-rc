@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLI-MG1600"
+brand = "brand/muchmore-racing"
+number = "MLI-MG1600"
+name = "Much More Li-Po Battery 1600mAh/11.1V/ 20C for 1/18 & Gun"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1600mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 1600
+c_rating = 20
