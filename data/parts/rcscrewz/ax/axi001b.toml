@@ -1,0 +1,21 @@
+id = "part/rcscrewz/axi001b"
+brand = "brand/rcscrewz"
+number = "axi001b"
+name = "Axial AX10 Scorpion (#90011) Metal Shielded Bearing Kit"
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "metal"
+includes = [
+  { spec = "spec/bearing/5x10x4" },
+  { spec = "spec/bearing/5x11x4" },
+  { spec = "spec/bearing/8x16x5" },
+  { spec = "spec/bearing/10x15x4" },
+]
+fits = [
+  { kit = "kit/axial/ax10-scorpion", type = "direct", source = "doc/rcscrewz/store" },
+]
+notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
+links = [
+  { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/axi001b-axial-racing-scorpion-metal-shielded-bearings/" },
+]

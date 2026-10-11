@@ -1,0 +1,21 @@
+id = "part/rcscrewz/gma009r"
+brand = "brand/rcscrewz"
+number = "gma009r"
+name = "GMade GS02 BOM 4wd (#GM57000) Rubber Shielded Bearing Kit"
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+includes = [
+  { spec = "spec/bearing/5x8x2.5" },
+  { spec = "spec/bearing/5x11x4" },
+  { spec = "spec/bearing/8x12x3.5" },
+  { spec = "spec/bearing/10x15x4" },
+]
+fits = [
+  { kit = "kit/gmade/gs02-bom", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the GMade GS02 BOM 4wd (#GM57000)" },
+]
+notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
+links = [
+  { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/gma009r-gmade-gs02-bom-4wd-rubber-shielded-bearings/" },
+]

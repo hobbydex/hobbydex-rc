@@ -1,0 +1,23 @@
+id = "part/rcscrewz/axi039b"
+brand = "brand/rcscrewz"
+number = "axi039b"
+name = "Axial SCX10 III Ford Bronco (#AXI03014T1/T2) Metal Shielded Bearing Kit"
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "metal"
+includes = [
+  { spec = "spec/bearing/5x10x4" },
+  { spec = "spec/bearing/5x11x4" },
+  { spec = "spec/bearing/5x14x5" },
+  { spec = "spec/bearing/7x14x3", notes = "5mm open" },
+  { spec = "spec/bearing/10x15x4" },
+  { spec = "spec/bearing/15x21x4" },
+]
+fits = [
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SCX10 III Ford Bronco (#AXI03014T1)" },
+]
+notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
+links = [
+  { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/axi039b-axial-scx10-iii-ford-bronco-axi03014t1-t2-metal-shielded-bearing-kit/" },
+]
