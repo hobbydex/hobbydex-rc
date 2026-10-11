@@ -1,0 +1,20 @@
+id = "part/udirc/P10-063"
+brand = "brand/udirc"
+number = "P10-063"
+name = "Motor Pinion Gear 0.8M 15T"
+applies_to = "UD1001/UD1002SE/UD1002/UD1002P"
+notes = "Store title: RC Car Motor Pinion Gear 0.8M 15T for UD1001/UD1002SE/UD1002/UD1002P, 1PC (Part No. P10-063)"
+fits = [
+  { kit = "kit/udirc/ud1002", type = "direct", source = "doc/udirc/store" },
+  { kit = "kit/udirc/ud1002p", type = "direct", source = "doc/udirc/store" },
+  { kit = "kit/udirc/ud1002se", type = "direct", source = "doc/udirc/store" },
+]
+links = [
+  { site = "UDIRC", url = "https://www.udirc.com/products/p10-063" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod0.8-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 15
+module = 0.8
