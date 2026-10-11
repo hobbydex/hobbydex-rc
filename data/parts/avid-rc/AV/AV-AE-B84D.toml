@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-AE-B84D"
+brand = "brand/avid-rc"
+number = "AV-AE-B84D"
+name = "Team Associated B84D Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x12x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 4, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+lubricant = "grease"
+applies_to = "Team Associated B84D (also T84, B84.1D)"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4488/B84D" },
+]

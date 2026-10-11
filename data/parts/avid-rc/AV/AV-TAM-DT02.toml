@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-TAM-DT02"
+brand = "brand/avid-rc"
+number = "AV-TAM-DT02"
+name = "Tamiya DT-02 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 14, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "rubber"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/dt-02", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/tamiya/dt-03", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4532/DT02" },
+]

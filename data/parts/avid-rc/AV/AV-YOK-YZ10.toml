@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-YOK-YZ10"
+brand = "brand/avid-rc"
+number = "AV-YOK-YZ10"
+name = "Yokomo YZ-10 Classic Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-5x10x4", qty = 9, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/3x7x3", qty = 1, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/flanged-3x7x3", qty = 1, notes = "Only option: Flanged Metal (greased)" },
+  { spec = "spec/bearing/flanged-4x8x3", qty = 1, notes = "Default: Flanged Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+lubricant = "grease"
+applies_to = "Yokomo YZ-10 Classic"
+notes = "Each size can be ordered as one of: Rubber, Revolution | Aura, Metal, Ceramic Metal | Aura, Revolution, Ceramic Revolution, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4431/YZ10-Classic" },
+]

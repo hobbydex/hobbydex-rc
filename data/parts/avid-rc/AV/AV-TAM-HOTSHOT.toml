@@ -1,0 +1,19 @@
+id = "part/avid-rc/AV-TAM-HOTSHOT"
+brand = "brand/avid-rc"
+number = "AV-TAM-HOTSHOT"
+name = "Tamiya Hotshot Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 17, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 5, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/super-sabre", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4541/Hotshot" },
+]
