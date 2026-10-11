@@ -2,6 +2,12 @@ id = "part/arrma/ARA310997"
 brand = "brand/arrma"
 number = "ARA310997"
 name = "14T 0.8Mod Safe-D5 Pinion Gear"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-14t-0.8mod-safe-d5-pinion-gear/ARA310997.html" },
+]
 category = "pinion"
 teeth = 14
 module = 0.8
+equivalent_to = [
+  { spec = "spec/pinion/mod0.8-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

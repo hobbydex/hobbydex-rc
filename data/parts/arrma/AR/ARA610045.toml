@@ -1,8 +1,12 @@
 id = "part/arrma/ARA610045"
 brand = "brand/arrma"
 number = "ARA610045"
-name = "Ball bearing 5x10x4mm 2rs 2"
-notes = "Number read by OCR from an ARRMA exploded view (ARA3530SFF_TECH_PACK.pdf); named from its Horizon Hobby product URL"
+name = "Ball Bearing 5x10x4mm 2RS"
+pack_qty = 2
+notes = "Number read by OCR from an ARRMA exploded view (ARA3530SFF_TECH_PACK.pdf); named from its Horizon Hobby product title"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-ball-bearing-5x10x4mm-2rs-2/ARA610045.html" },
+]
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

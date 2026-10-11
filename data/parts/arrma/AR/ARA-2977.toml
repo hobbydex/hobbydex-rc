@@ -1,6 +1,13 @@
 id = "part/arrma/ARA-2977"
 brand = "brand/arrma"
 number = "ARA-2977"
-name = "Body parts set gorgon grom"
-notes = "Number read by OCR from an ARRMA exploded view (ARA2130FF-EXPLODED-VIEW.pdf); named from its Horizon Hobby product URL"
+name = "Body Parts Set"
+applies_to = "GORGON GROM"
+notes = "Number read by OCR from an ARRMA exploded view (ARA2130FF-EXPLODED-VIEW.pdf); named from its Horizon Hobby product title"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-body-parts-set-gorgon-grom/ARA-2977.html" },
+]
 category = "body"
+fits = [
+  { kit = "kit/arrma/gorgon-grom", type = "direct", source = "doc/arrma/horizon-product-catalogue" },
+]
