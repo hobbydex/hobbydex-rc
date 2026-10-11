@@ -1,0 +1,16 @@
+id = "part/robitronic/RX361"
+brand = "brand/robitronic"
+number = "RX361"
+name = "NiMH Battery 3600mAh, 5 cells Sub-C for RX 1:5"
+category = "battery"
+category_source = "curated"
+chemistry = "nimh"
+capacity_mah = 3600
+cells = 5
+equivalent_to = [
+  { spec = "spec/battery/nimh-5s-3600mah", match = "functional", source = "doc/robitronic/shop-brand-listing", notes = "Chemistry, cells and capacity from Robitronic's name; check size and plug" },
+]
+gtin = "4046032087950"
+links = [
+  { site = "Robitronic", url = "https://shop.robitronic.com/en/ep-nimh-battery-3600mah-5-cells-sub-c-rx361" },
+]

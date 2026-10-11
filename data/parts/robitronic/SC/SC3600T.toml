@@ -1,0 +1,18 @@
+id = "part/robitronic/SC3600T"
+brand = "brand/robitronic"
+number = "SC3600T"
+name = "NiMH Battery 3600mAh 7,2V Stick Pack T-Plug & Tamiya"
+category = "battery"
+category_source = "curated"
+chemistry = "nimh"
+capacity_mah = 3600
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3600mah", match = "functional", source = "doc/robitronic/shop-brand-listing", notes = "Chemistry, cells and capacity from Robitronic's name; check size and plug" },
+]
+dimensions_mm = [133, 46.5, 24]
+weight_g = 374
+gtin = "4046032075247"
+links = [
+  { site = "Robitronic", url = "https://shop.robitronic.com/en/robitronic-nimh-battery-3600mah-72v-sc3600t" },
+]
