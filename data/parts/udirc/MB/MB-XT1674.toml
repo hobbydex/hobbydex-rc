@@ -1,0 +1,21 @@
+id = "part/udirc/MB-XT1674"
+brand = "brand/udirc"
+number = "MB-XT1674"
+name = "1600mAh 7.4V 2S Battery XT60"
+applies_to = "UD1610PRO / UD1610S"
+notes = "Store title: UDIRC 1600mAh 7.4V 2S Battery XT60 for UD1610PRO / UD1610S (Part No. MB-XT1674) - 1 Pcs"
+fits = [
+  { kit = "kit/udirc/ud1610pro", type = "direct", source = "doc/udirc/store" },
+  { kit = "kit/udirc/ud1610s", type = "direct", source = "doc/udirc/store" },
+]
+links = [
+  { site = "UDIRC", url = "https://www.udirc.com/products/mb-xt1674" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1600
+connector = "XT60"
+category = "battery"

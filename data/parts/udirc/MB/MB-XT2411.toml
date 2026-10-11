@@ -1,0 +1,20 @@
+id = "part/udirc/MB-XT2411"
+brand = "brand/udirc"
+number = "MB-XT2411"
+name = "2400mAh 11.1V 3S Battery XT60"
+applies_to = "UD1610S"
+notes = "Store title: UDIRC 2400mAh 11.1V 3S Battery XT60 for UD1610S (Part No. MB-XT2411) - 1 Pc"
+fits = [
+  { kit = "kit/udirc/ud1610s", type = "direct", source = "doc/udirc/store" },
+]
+links = [
+  { site = "UDIRC", url = "https://www.udirc.com/products/mb-xt2411" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2400
+connector = "XT60"
+category = "battery"

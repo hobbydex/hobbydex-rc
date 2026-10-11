@@ -1,0 +1,20 @@
+id = "part/udirc/M01-063"
+brand = "brand/udirc"
+number = "M01-063"
+name = "RC Car Countersunk Hex Machine Screw 2.0x6mm"
+applies_to = "UD1203/UD1203PRO/UD1204/UD1204PRO"
+notes = "Store title: UDIRC RC Car Countersunk Hex Machine Screw 2.0×6mm for UD1203/UD1203PRO/UD1204/UD1204PRO, OEM Replacement Hardware Part M01-063"
+fits = [
+  { kit = "kit/udirc/ud1203", type = "direct", source = "doc/udirc/store" },
+  { kit = "kit/udirc/ud1203pro", type = "direct", source = "doc/udirc/store" },
+  { kit = "kit/udirc/ud1204", type = "direct", source = "doc/udirc/store" },
+  { kit = "kit/udirc/ud1204pro", type = "direct", source = "doc/udirc/store" },
+]
+links = [
+  { site = "UDIRC", url = "https://www.udirc.com/products/m01-063" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
