@@ -1,0 +1,23 @@
+id = "part/louise/L-T3188SB"
+brand = "brand/louise"
+number = "L-T3188SB"
+name = "ST-ROCKET 1/16 Stadium Truck Tires (Soft) Mounted on Black Wheels"
+compound = "Soft"
+scale = "1/16"
+vehicle = "stadium-truck"
+position = "front-rear"
+wheel_size = "2.2\""
+mounting = "pre-mounted"
+wheel_color = "black"
+applies_to = "Traxxas 1:16 E-REVO Front & Rear; Traxxas 1:16 SUMMIT Front & Rear; HPI SAVAGE XS Flux Front & Rear; 1/10 Buggy Rear"
+fits = [
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/louise/tire-product-pages" },
+  { kit = "kit/traxxas/e-revo-1-16", type = "direct", source = "doc/louise/tire-product-pages" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/louise/tire-product-pages", notes = "Hex size from the product page" },
+]
+links = [
+  { site = "Louise RC", url = "https://tire.louiserc.com/products_detail/165" },
+]
+category = "tire"
