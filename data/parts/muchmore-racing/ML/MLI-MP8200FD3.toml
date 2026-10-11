@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLI-MP8200FD3"
+brand = "brand/muchmore-racing"
+number = "MLI-MP8200FD3"
+name = "IMPACT Max-Punch FD3 Li-Po Battery 8200mAh/7.4V 120C Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-8200mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 8200
+c_rating = 120
+case = "hard"

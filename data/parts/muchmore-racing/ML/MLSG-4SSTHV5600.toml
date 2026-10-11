@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-4SSTHV5600"
+brand = "brand/muchmore-racing"
+number = "MLSG-4SSTHV5600"
+name = "IMPACT [Silicon Graphene] HV FD4 5600mAh/15.2V 130C Shorty Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-5600mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lihv"
+cells = 4
+capacity_mah = 5600
+c_rating = 130
+case = "shorty"

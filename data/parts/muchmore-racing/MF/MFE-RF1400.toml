@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MFE-RF1400"
+brand = "brand/muchmore-racing"
+number = "MFE-RF1400"
+name = "Much More Li-Fe Battery 1400mAh/6.6V 15C Flat Size for Tx & Rx"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/life-2s-1400mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "life"
+cells = 2
+capacity_mah = 1400
+c_rating = 15
