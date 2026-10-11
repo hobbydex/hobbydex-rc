@@ -1,0 +1,17 @@
+id = "part/protek-rc/PTK-5187"
+brand = "brand/protek-rc"
+number = "PTK-5187"
+name = "LiFe Futaba, JR, Spektrum, KO, Transmitter Battery (9.9V/2100mAh)"
+category = "battery"
+category_source = "curated"
+dimensions_mm = [95, 29, 29]
+weight_g = 150
+equivalent_to = [
+  { spec = "spec/battery/life-3s-2100mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-life-futaba-jr-spektrum-ko-transmitter-battery-9-9v-2100mah" },
+]
+chemistry = "life"
+cells = 3
+capacity_mah = 2100

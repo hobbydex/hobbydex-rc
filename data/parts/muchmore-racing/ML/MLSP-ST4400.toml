@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSP-ST4400"
+brand = "brand/muchmore-racing"
+number = "MLSP-ST4400"
+name = "IMPACT Sport 4400mAh/7.4V 135C Shorty Shorty Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4400mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4400
+c_rating = 135
+case = "shorty"
