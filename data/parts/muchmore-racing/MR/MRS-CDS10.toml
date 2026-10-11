@@ -1,0 +1,17 @@
+id = "part/muchmore-racing/MRS-CDS10"
+brand = "brand/muchmore-racing"
+number = "MRS-CDS10"
+name = "Muchmore CDS10 Low Profile High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 12.5
+speed_s = 0.055
+voltage = 7.4
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [41, 20, 26.4]
+weight_g = 42
+motor = "coreless"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", notes = "Size class from the name or case size, spline from Muchmore's specifications; check the mounting holes" },
+]
+notes = "Gears Titanium & Alu"

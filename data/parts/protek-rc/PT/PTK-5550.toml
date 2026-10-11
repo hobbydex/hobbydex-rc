@@ -1,0 +1,15 @@
+id = "part/protek-rc/PTK-5550"
+brand = "brand/protek-rc"
+number = "PTK-5550"
+name = "1S High Capacity Sanwa M17 LiPo Transmitter Battery (3.7V/5500mAh)"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-5500mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-1s-high-capacity-sanw" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 5500

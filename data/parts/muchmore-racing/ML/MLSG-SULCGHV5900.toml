@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-SULCGHV5900"
+brand = "brand/muchmore-racing"
+number = "MLSG-SULCGHV5900"
+name = "IMPACT [Silicon Graphene] Ultra LCG HV FD4 5900mAh/7.6V 135C Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5900mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 5900
+c_rating = 135
+case = "hard"

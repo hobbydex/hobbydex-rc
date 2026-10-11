@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-STLCGMP4400"
+brand = "brand/muchmore-racing"
+number = "MLSG-STLCGMP4400"
+name = "IMPACT Silicon Graphene LCG Max-Punch FD4 4400mAh/7.4V 130C Shorty Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4400mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4400
+c_rating = 130
+case = "shorty"

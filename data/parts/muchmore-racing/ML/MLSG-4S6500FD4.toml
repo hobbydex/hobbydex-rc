@@ -1,0 +1,15 @@
+id = "part/muchmore-racing/MLSG-4S6500FD4"
+brand = "brand/muchmore-racing"
+number = "MLSG-4S6500FD4"
+name = "IMPACT Silicon Graphene FD4 Li-Po Battery 6500mAh/14.8V 130C XT90 Wire Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6500mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 6500
+c_rating = 130
+case = "hard"
+connector = "XT90"

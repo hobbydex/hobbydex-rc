@@ -1,0 +1,14 @@
+id = "part/protek-rc/PTK-5500"
+brand = "brand/protek-rc"
+number = "PTK-5500"
+name = "HV LiPo Receiver Battery Pack (HB/TLR 8IGHT) (7.6V/2350mAh) (w/Balancer Plug)"
+category = "battery"
+category_source = "curated"
+dimensions_mm = [51, 39, 21]
+weight_g = 90
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-2350mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-hv-lipo-receiver-batt" },
+]
