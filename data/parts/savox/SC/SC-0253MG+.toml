@@ -1,0 +1,19 @@
+id = "part/savox/SC-0253MG+"
+brand = "brand/savox"
+number = "SC-0253MG+"
+name = "SC-0253MG+ Standard Size Digital DC Motor Metal Gear Servo"
+category = "servo"
+category_source = "curated"
+gtin = "4710006994772"
+dimensions_mm = [40.8, 20, 38]
+weight_g = 59
+torque_kgcm = 6
+voltage = 6
+speed_s = 0.15
+voltage_range = "4.8V - 6.0V"
+gear_material = "metal"
+motor = "cored"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

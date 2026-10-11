@@ -1,0 +1,19 @@
+id = "part/savox/SH-0350+"
+brand = "brand/savox"
+number = "SH-0350+"
+name = "SH-0350+ Micro Digital DC Motor Servo"
+category = "servo"
+category_source = "curated"
+gtin = "4715104190156"
+dimensions_mm = [22.8, 12, 25.4]
+weight_g = 12
+torque_kgcm = 2.6
+voltage = 6
+speed_s = 0.16
+voltage_range = "4.8V - 6.0V"
+gear_material = "composite"
+motor = "cored"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/micro-21t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

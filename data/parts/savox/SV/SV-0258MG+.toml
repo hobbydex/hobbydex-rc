@@ -1,0 +1,18 @@
+id = "part/savox/SV-0258MG+"
+brand = "brand/savox"
+number = "SV-0258MG+"
+name = "SV-0258MG+ Low Profile Digital HV DC Motor Metal Gear Servo"
+category = "servo"
+category_source = "curated"
+dimensions_mm = [40.8, 20.2, 27.8]
+weight_g = 36
+torque_kgcm = 8
+voltage = 7.4
+speed_s = 0.11
+voltage_range = "6.0V - 7.4V"
+gear_material = "composite and metal"
+motor = "cored"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

@@ -1,0 +1,19 @@
+id = "part/savox/SV-0320+"
+brand = "brand/savox"
+number = "SV-0320+"
+name = "SV-0320+ Standard Size Digital HV DC Motor Servo"
+category = "servo"
+category_source = "curated"
+gtin = "4710006994628"
+dimensions_mm = [40.8, 20, 38]
+weight_g = 46
+torque_kgcm = 6
+voltage = 7.4
+speed_s = 0.13
+voltage_range = "6.0V - 7.4V"
+gear_material = "composite"
+motor = "cored"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]
