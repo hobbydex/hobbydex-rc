@@ -2,6 +2,15 @@ id = "part/rc4wd/Z-W0011"
 brand = "brand/rc4wd"
 number = "Z-W0011"
 name = "KMC 1.7\" Hex Beadlock Wheels"
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-kmc-17-hex-beadlock-wheels.html" },
+]
+material = "aluminium"
+width_mm = 25
+offset_mm = -7.38
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.7\""
 beadlock = true

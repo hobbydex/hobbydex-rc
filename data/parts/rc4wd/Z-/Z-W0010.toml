@@ -2,5 +2,14 @@ id = "part/rc4wd/Z-W0010"
 brand = "brand/rc4wd"
 number = "Z-W0010"
 name = "Center Line 1.9\" Warrior Deep Dish Wheels"
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-centerline-19-warrior-deep-dish-wheels.html" },
+]
+material = "aluminium"
+width_mm = 32
+offset_mm = -4.3
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""

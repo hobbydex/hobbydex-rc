@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0160"
 brand = "brand/rc4wd"
 number = "Z-W0160"
 name = "American Racing 1.55\" Outlaw II Deep Dish Beadlock Wheels"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-american-racing-155-outlaw-ii-deep-dish-beadlock-wheels.html" },
+]
+material = "aluminium"
+width_mm = 39.8
+offset_mm = -10.7
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.55\""

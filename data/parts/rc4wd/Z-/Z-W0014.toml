@@ -2,5 +2,15 @@ id = "part/rc4wd/Z-W0014"
 brand = "brand/rc4wd"
 number = "Z-W0014"
 name = "Center Line 1.55\" Scorpion Deep Dish Wheels"
+pack_qty = 4
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-centerline-155-scorpion-deep-dish-wheels.html" },
+]
+material = "aluminium"
+width_mm = 28
+offset_mm = -9.36
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.55\""
