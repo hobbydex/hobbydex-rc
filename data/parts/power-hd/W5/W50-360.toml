@@ -1,0 +1,21 @@
+id = "part/power-hd/W50-360"
+brand = "brand/power-hd"
+number = "W50-360"
+name = "W50-360° High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 50
+voltage = 8.4
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [40.7, 20.5, 38.7]
+weight_g = 80
+gear_material = "steel"
+motor = "coreless"
+rotation_deg = 360
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/w50-360-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=214" },
+]

@@ -1,0 +1,21 @@
+id = "part/power-hd/WT35"
+brand = "brand/power-hd"
+number = "WT35"
+name = "WT35 High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 3.8
+voltage = 7.4
+speed_s = 0.075
+voltage_range = "4.8V - 7.4V"
+dimensions_mm = [22.5, 12.9, 24.5]
+weight_g = 35
+gear_material = "aluminium"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/wt35-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=262" },
+]

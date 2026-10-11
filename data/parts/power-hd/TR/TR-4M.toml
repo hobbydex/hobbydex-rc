@@ -1,0 +1,21 @@
+id = "part/power-hd/TR-4M"
+brand = "brand/power-hd"
+number = "TR-4M"
+name = "TR-4M High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 3.2
+voltage = 7.4
+speed_s = 0.085
+voltage_range = "4.8V - 7.4V"
+dimensions_mm = [22.5, 12.5, 24]
+weight_g = 14
+gear_material = "aluminium"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/tr-4m-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=261" },
+]

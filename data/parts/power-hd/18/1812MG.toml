@@ -1,0 +1,21 @@
+id = "part/power-hd/1812MG"
+brand = "brand/power-hd"
+number = "1812MG"
+name = "1812MG Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 18
+voltage = 6
+speed_s = 0.12
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [40.7, 20.5, 39.5]
+weight_g = 56
+gear_material = "aluminium"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/1812mg-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=192" },
+]

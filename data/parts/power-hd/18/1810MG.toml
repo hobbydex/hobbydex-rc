@@ -1,0 +1,21 @@
+id = "part/power-hd/1810MG"
+brand = "brand/power-hd"
+number = "1810MG"
+name = "1810MG Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 3.9
+voltage = 6
+speed_s = 0.13
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [22.8, 12, 29.4]
+weight_g = 15.8
+gear_material = "copper"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=57" },
+]

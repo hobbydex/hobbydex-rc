@@ -1,0 +1,21 @@
+id = "part/power-hd/H25"
+brand = "brand/power-hd"
+number = "H25"
+name = "H25 HV Brushless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 30
+voltage = 8.4
+speed_s = 0.068
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [40, 20, 38.5]
+weight_g = 75
+gear_material = "titanium"
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/h25-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=185" },
+]

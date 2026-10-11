@@ -1,0 +1,20 @@
+id = "part/power-hd/TR-5"
+brand = "brand/power-hd"
+number = "TR-5"
+name = "TR-5 High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 8.8
+voltage = 8.4
+speed_s = 0.06
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [29.5, 14, 31.4]
+weight_g = 35
+gear_material = "titanium"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size, spline from Power HD's specifications; check the mounting holes" },
+]
+documents = ["doc/power-hd/tr-5-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=205" },
+]

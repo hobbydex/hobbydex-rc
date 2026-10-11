@@ -1,0 +1,21 @@
+id = "part/power-hd/R30S"
+brand = "brand/power-hd"
+number = "R30S"
+name = "R30S High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 35
+voltage = 8.4
+speed_s = 0.13
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [41, 20.5, 38.3]
+weight_g = 67
+gear_material = "titanium"
+motor = "coreless"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/r30s-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=226" },
+]

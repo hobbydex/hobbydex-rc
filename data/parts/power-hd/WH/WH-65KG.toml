@@ -1,0 +1,21 @@
+id = "part/power-hd/WH-65KG"
+brand = "brand/power-hd"
+number = "WH-65KG"
+name = "WH-65KG High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 65
+voltage = 8.4
+speed_s = 0.15
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [65.8, 30, 55.6]
+weight_g = 200
+gear_material = "steel"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/jumbo", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/wh-65kg-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=191" },
+]

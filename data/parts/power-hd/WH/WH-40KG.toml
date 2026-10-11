@@ -1,0 +1,21 @@
+id = "part/power-hd/WH-40KG"
+brand = "brand/power-hd"
+number = "WH-40KG"
+name = "WH-40KG High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 40
+voltage = 8.4
+speed_s = 0.17
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [40.7, 20.5, 38.5]
+weight_g = 82
+gear_material = "steel"
+motor = "coreless"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/wh-40kg-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=196" },
+]

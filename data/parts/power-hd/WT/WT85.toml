@@ -1,0 +1,21 @@
+id = "part/power-hd/WT85"
+brand = "brand/power-hd"
+number = "WT85"
+name = "WT85 HV Brushless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 70
+voltage = 8.4
+speed_s = 0.1
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [40.7, 20.5, 38.7]
+weight_g = 85
+gear_material = "steel"
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/wt85-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=243" },
+]

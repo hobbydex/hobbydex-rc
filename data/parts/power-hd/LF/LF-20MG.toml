@@ -1,0 +1,21 @@
+id = "part/power-hd/LF-20MG"
+brand = "brand/power-hd"
+number = "LF-20MG"
+name = "LF-20MG Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 20
+voltage = 6.6
+speed_s = 0.16
+voltage_range = "4.8V - 6.6V"
+dimensions_mm = [40.7, 20.5, 39.5]
+weight_g = 60
+gear_material = "aluminium"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/lf-20mg-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=142" },
+]

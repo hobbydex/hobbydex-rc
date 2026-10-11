@@ -1,0 +1,22 @@
+id = "part/power-hd/S15"
+brand = "brand/power-hd"
+number = "S15"
+name = "S15 HV Brushless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 16.5
+voltage = 8.4
+speed_s = 0.05
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [41, 20, 26]
+weight_g = 55
+gear_material = "titanium"
+motor = "brushless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/low-profile", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/s15-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=188" },
+]
