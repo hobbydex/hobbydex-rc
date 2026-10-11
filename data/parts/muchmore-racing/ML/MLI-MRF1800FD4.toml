@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLI-MRF1800FD4"
+brand = "brand/muchmore-racing"
+number = "MLI-MRF1800FD4"
+name = "IMPACT Li-Po Battery 1800mAh/7.4V 4C Flat"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1800mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1800
+c_rating = 4

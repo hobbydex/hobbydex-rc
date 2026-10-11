@@ -29,7 +29,8 @@ jobs:
       - name: Validate every TOML file under data/
         run: python3 -I tools/validate.py
       - name: Ids are permanent (none removed without former_ids or retired.toml)
-        run: python3 -I tools/check_ids.py ${{ github.event_name == 'pull_request' && format('origin/{0}', github.base_ref) || 'HEAD^' }}
+        # compare with where the branch left main, so records merged to main since then do not count as removed
+        run: python3 -I tools/check_ids.py ${{ github.event_name == 'pull_request' && format('$(git merge-base origin/{0} HEAD)', github.base_ref) || 'HEAD^' }}
       - name: Build the JSON export
         run: python3 -I tools/export.py dist/hobbydex-rc.json
       - name: Keep the export as a build artifact

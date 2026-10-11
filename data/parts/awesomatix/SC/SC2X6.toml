@@ -1,0 +1,16 @@
+id = "part/awesomatix/SC2X6"
+brand = "brand/awesomatix"
+number = "SC2X6"
+name = "M2x6 Cap Head Screw"
+pack_qty = 4
+fits = [
+  { kit = "kit/awesomatix/a700", type = "direct", source = "doc/awesomatix/shop-category-608" },
+]
+links = [
+  { site = "Awesomatix", url = "https://shop.awesomatix.com/index.php?productID=983" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2x6-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
