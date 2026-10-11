@@ -1,0 +1,15 @@
+id = "part/os-engines/2BN01000"
+brand = "brand/os-engines"
+number = "2BN01000"
+name = "Crankcase"
+category = "engine-fuel"
+category_source = "curated"
+applies_to = "O.S. SPEED B2103 Type R, O.S. SPEED B2103 Type S"
+related = [
+  { part = "part/os-engines/1BP00", relation = "fits" },
+  { part = "part/os-engines/1BN00", relation = "fits" },
+]
+links = [
+  { site = "O.S. Engines", url = "https://www.os-engines.co.jp/parts_list_english/car_engine/osspeed_b2103_type_r.html" },
+]
+documents = ["doc/os-engines/osspeed-b2103-type-r-parts-list", "doc/os-engines/osspeed-b2103-type-s-parts-list"]
