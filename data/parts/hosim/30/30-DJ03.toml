@@ -1,0 +1,22 @@
+id = "part/hosim/30-DJ03"
+brand = "brand/hosim"
+number = "30-DJ03"
+name = "7.4V 800mAh LiPo battery"
+applies_to = "9130 9135 9136 9138 1/16 Scale All Terrain RC Trucks FPV"
+notes = "Sold in the store only with a charger, bag or USB lead (SKU 230-DJ03+1BC-U)"
+fits = [
+  { kit = "kit/hosim/9130", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/9135", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/9136", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/9138", type = "direct", source = "doc/hosim/store" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 800
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-800mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/new-version-hosim-2pcs-7-4v-800mah-rc-cars-rechargeable-li-po-battery-1-2ausb-1-battery-bag-1-balance-charger-spare-replacement-parts-for-9130-9135-9136-9138-1-16-scale-all-terrain-rc-trucks-fpv" },
+]
+category = "battery"
