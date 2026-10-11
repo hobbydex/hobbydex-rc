@@ -1,0 +1,17 @@
+id = "part/reve-d/M1-RA-03L"
+brand = "brand/reve-d"
+number = "M1-RA-03L"
+name = "Rear Upper Arm for M1-RAC (Left)"
+name_ja = "M1-RAC用 リア アッパーアーム(左側)"
+fits = [
+  { kit = "kit/reve-d/mc-1", type = "direct", source = "doc/reve-d/teamreved-products" },
+]
+notes = "English name translated from Reve D's Japanese listing."
+links = [
+  { site = "Rêve D", url = "https://teamreved.com/product/m1-ra-03l" },
+]
+documents = ["doc/reve-d/teamreved-products"]
+category = "suspension"
+related = [
+  { part = "part/reve-d/M1-RAC", relation = "for", notes = "link_part_refs" },
+]
