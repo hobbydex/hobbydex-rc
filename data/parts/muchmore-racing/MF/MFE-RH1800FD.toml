@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MFE-RH1800FD"
+brand = "brand/muchmore-racing"
+number = "MFE-RH1800FD"
+name = "IMPACT Li-Fe Battery 1800mAh/6.6V 4C Hmp Size for Receiver"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/life-2s-1800mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "life"
+cells = 2
+capacity_mah = 1800
+c_rating = 4

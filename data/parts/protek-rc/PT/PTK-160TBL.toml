@@ -1,0 +1,21 @@
+id = "part/protek-rc/PTK-160TBL"
+brand = "brand/protek-rc"
+number = "PTK-160TBL"
+name = "160TBL \"Black Label\" Low Profile High Torque Brushless Servo (High Voltage/Metal Case)"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 20.9
+voltage = 7.4
+speed_s = 0.06
+voltage_range = "4.8V - 7.4V"
+dimensions_mm = [39.5, 20, 30.6]
+weight_g = 55
+motor = "brushless"
+gear_material = "metal"
+spline_teeth = 25
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Size class from the case size, spline from ProTek's specifications; check the mounting holes" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-160tbl-black-label-low-profile-high-torque-brushless-servo-high-voltage-metal-case" },
+]

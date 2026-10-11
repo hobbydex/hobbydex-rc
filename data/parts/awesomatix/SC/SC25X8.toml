@@ -1,0 +1,18 @@
+id = "part/awesomatix/SC25X8"
+brand = "brand/awesomatix"
+number = "SC25X8"
+name = "M2.5x8 Cap Head Screw"
+pack_qty = 2
+fits = [
+  { kit = "kit/awesomatix/a12", type = "direct", source = "doc/awesomatix/shop-category-604" },
+  { kit = "kit/awesomatix/a12wc", type = "direct", source = "doc/awesomatix/shop-category-629" },
+  { kit = "kit/awesomatix/a12x", type = "direct", source = "doc/awesomatix/shop-category-628" },
+]
+links = [
+  { site = "Awesomatix", url = "https://shop.awesomatix.com/index.php?productID=1562" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

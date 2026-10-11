@@ -1,0 +1,20 @@
+id = "part/protek-rc/PTK-100T"
+brand = "brand/protek-rc"
+number = "PTK-100T"
+name = "100T Standard Digital \"High Torque\" Metal Gear Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 15.6
+voltage = 6
+speed_s = 0.14
+voltage_range = "4.8V - 6.0V"
+weight_g = 54.9
+motor = "cored"
+gear_material = "metal"
+spline_teeth = 25
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Size class from the case size, spline from ProTek's specifications; check the mounting holes" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-100t-standard-digital-high-torque-metal-gear-servo" },
+]
