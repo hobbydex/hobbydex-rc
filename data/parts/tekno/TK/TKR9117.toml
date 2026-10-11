@@ -5,3 +5,8 @@ name = "Spur Gear (44t, hardened steel, EB/ET48 2.0)"
 category = "spur-gear"
 teeth = 44
 material = "steel"
+fits = [
+  { kit = "kit/tekno/eb48", type = "replaces", replaces = "part/tekno/TKR9237", source = "doc/tekno/eb48-2-2-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tekno/et48", type = "replaces", replaces = "part/tekno/TKR9237", source = "doc/tekno/et48-2-2-manual-rev06", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tekno/mt48", type = "replaces", replaces = "part/tekno/TKR9237", source = "doc/tekno/mt48-2-0-manual-rev01", notes = "Same part in another material (link_upgrades.py)" },
+]
