@@ -1,0 +1,21 @@
+id = "part/sanwa/PGS-CL-II"
+brand = "brand/sanwa"
+number = "PGS-CL-II"
+name = "PGS-CL II"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 16.6
+voltage = 7.4
+speed_s = 0.08
+dimensions_mm = [40.5, 20.5, 26.5]
+weight_g = 49.6
+motor = "brushless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: FH5U: SXR(SANWA XTREME RESPONSE) MODE-COMPATIBLE; SSL-COMPATIBLE PROGRAMMABLE SERVO # Compatible with CODE 10 (M12S, EXZES ZZ, MT-44) Not Compatible with CODE 5 (M12, EXZES Z, MT-4S, MT-4, MT-S); PGS SETTING GEAR-COMPATIBLE; SUPER RESPONSE (SSR) MODE-COMPATIBLE; HIGH RESPONSE (SHR) MODE-COMPATIBLE; Li-Po 2 CELL-COMPATIBLE; HIGH TORQUE TYPE; BRUSH LESS MOTOR; FULL ALUMINUM CASE; FULL METAL GEAR (Strengthening Gears)."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/pgs-cl_ii.html" },
+]
+documents = ["doc/sanwa/pgs-servo-2series-egn-manual"]

@@ -10,6 +10,12 @@ speed_s = 0.11
 dimensions_mm = [40, 20, 33.6]
 weight_g = 50
 motor = "coreless"
+gear_material = "metal"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
 ]
+notes = "Futaba specifications: Futaba stock number 01102169-1; features: Digital, Metal Gear; case size class Standard."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/s9452/" },
+]
+documents = ["doc/futaba/s9452"]

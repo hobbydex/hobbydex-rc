@@ -4,4 +4,18 @@ number = "HPS-CD700"
 name = "HPS-CD700 (S.Bus2/Brushless)"
 category = "servo"
 category_source = "curated"
-motor = "cored"
+torque_kgcm = 17
+voltage = 7.4
+speed_s = 0.045
+dimensions_mm = [40.5, 21, 26.2]
+motor = "brushless"
+weight_g = 53
+voltage_range = "4.8V ~ 8.4V"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]
+notes = "Futaba specifications: features: S.Bus, S.Bus2, SR Mode (Super Response), Brushless, HV, Metal Case; case size class Standard."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/hps-cd700-s-bus2-brushless/" },
+]

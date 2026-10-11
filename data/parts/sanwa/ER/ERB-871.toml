@@ -10,6 +10,11 @@ speed_s = 0.09
 dimensions_mm = [40.8, 20.2, 25.4]
 weight_g = 57
 motor = "brushless"
+gear_material = "metal"
 equivalent_to = [
   { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: Digital Low Profiled Servo; WATERPROOF (IPX4); Brushless Motor; Double bearing; Full Metal Gear; Full Aluminium Case."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/erb-871.html" },
 ]

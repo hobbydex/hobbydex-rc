@@ -5,3 +5,14 @@ name = "S148"
 category = "servo"
 category_source = "curated"
 motor = "cored"
+torque_kgcm = 3
+voltage = 6
+speed_s = 0.22
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from Futaba's servo size, spline from Futaba's specifications; check the mounting holes" },
+]
+notes = "Futaba specifications: Futaba stock number 01102217-1; features: Analog; case size class Standard; discontinued within 12 months (Futaba); torque converted from Futaba's oz-in figures."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/s148/" },
+]
+documents = ["doc/futaba/s148"]

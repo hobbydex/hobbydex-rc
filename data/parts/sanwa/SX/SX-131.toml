@@ -4,9 +4,16 @@ number = "SX-131"
 name = "SX-131"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 4.8
+voltage = 6
+speed_s = 0.12
 dimensions_mm = [40.5, 21, 26.5]
 weight_g = 40
 motor = "cored"
 equivalent_to = [
   { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: Low-profile analog servo; Double plastic bearing."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/sx-131.html" },
 ]

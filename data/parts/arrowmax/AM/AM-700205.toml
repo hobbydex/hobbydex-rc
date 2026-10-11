@@ -1,0 +1,17 @@
+id = "part/arrowmax/AM-700205"
+brand = "brand/arrowmax"
+number = "AM-700205"
+name = "AM Lipo 5800mAh 2S Shorty - 7.4V 65C Continuous 130C Burst (Si-Graphene)"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Arrowmax", url = "https://www.arrowmax-rc.com/products/am-lipo-5800mah-2s-shorty-7-4v-65c-continuous-130c-burst-si-graphene-am-700205" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5800
+c_rating = 65
+case = "shorty"

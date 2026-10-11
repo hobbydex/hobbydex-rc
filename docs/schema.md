@@ -145,7 +145,7 @@ list gives a day per item, Tamiya's monthly new-items list a month),
 and `applies_to`, the models the
 brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 
-`category`: what kind of part it is, one of a fixed list: `ball-end`, `bearing`, `body`, `bumper-guard`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `pin-clip`, `pinion`, `screw`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
+`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
 number have none.
@@ -200,8 +200,7 @@ lubricant = "grease"
 Silicone oils link to `spec/oil/silicone-<cSt>cst` only when the brand states
 the viscosity in cSt. The "wt" and "K" scales differ between brands, so a
 brand's wt goes on the part as `viscosity_wt`, never on a spec. `volume_ml` is
-the bottle size. Glues (CA, tyre glue) give their grade as `viscosity`
-(thin | medium | thick, as the brand names it; a gel counts as thick).
+the bottle size.
 Brands that grade by their own number without a unit
 (Tamiya #400) link with match "close" and say so in the notes. A set of
 oils lists its bottles with `includes`, one row per spec:
@@ -216,6 +215,39 @@ name = "Oil, shock (30 wt, 350 cSt, 60cc) (silicone)"
 equivalent_to = [{ spec = "spec/oil/silicone-350cst", match = "functional" }]
 volume_ml = 60
 viscosity_wt = 30
+```
+
+Glues (category `glue`: CA and tyre glue, epoxy, kickers, debonders,
+threadlockers, glue tips and applicators) give their grade as `viscosity`
+(thin | medium | thick, as the brand names it; a gel counts as thick) and
+the bottle size as `volume_ml` when the brand states it in ml or fl oz.
+Parts sold "with threadlock" or "with glue" are not glues.
+
+Paints (category `paint`) carry, as the brand states them: `paint_role`
+(paint | clear: a clear coat | primer | thinner: also retarders |
+cleaner | masking: tape, sheets and fluid for masking), `paint_type`
+(polycarbonate: for clear bodies, sprayed on the inside | lacquer |
+acrylic | enamel; for a thinner or cleaner, the paint it is made for),
+`application` for paints, clear coats and primers (spray-can | airbrush:
+ready to spray from an airbrush | brush | marker: a paint pen), `finish` (gloss | flat |
+semi-gloss | metallic | pearl | fluorescent | translucent | clear |
+chrome; only what the brand says, left out otherwise), `color` in plain
+colour words ("white", "dark green", "purple/green"; the brand's own
+colour name stays in `name`) and `volume_ml`, the can or bottle size.
+Brushes and other painting tools are category `tool`. A kit whose
+manual names a paint or a tool to use (Tamiya: "PS-1", "ITEM 74005")
+lists it in `contains` with role `listed`, the manual as source and the
+pages in the notes.
+
+```toml
+number = "86001"
+name = "PS-1 White"
+category = "paint"
+paint_role = "paint"
+paint_type = "polycarbonate"
+application = "spray-can"
+color = "white"
+volume_ml = 100
 ```
 
 `includes`: what a set holds, as parts or specs with a count, when the brand
@@ -279,7 +311,10 @@ translation (Yokomo publishes Japanese-only parts lists).
 name or page says: `[{ part, relation }]` with relation requires (needs the
 other part: Tekno "requires TKR9057B"), fits (made to fit that part: Corally
 "fits part C-00180-022"), use-with, for (an accessory made for it: HUDY
-"Ejector for 106000") or replaces. Recorded on the citing part; the site
+"Ejector for 106000"), replaces or same-colour (a paint the brand's own colour
+matching list gives as the same colour in another range, though the shade
+may differ slightly: Tamiya LP-1 Black, X-1 Black and TS-14 Black; recorded
+on each of the paints). Others are recorded on the citing part; the site
 shows it from both sides. tools/link_part_refs.py reads them from names.
 
 `supersedes`: the part this one replaces, when the brand has replaced it with

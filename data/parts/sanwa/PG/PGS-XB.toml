@@ -10,6 +10,11 @@ speed_s = 0.11
 dimensions_mm = [40.2, 20.5, 38.7]
 weight_g = 72
 motor = "brushless"
+gear_material = "metal"
 equivalent_to = [
   { spec = "spec/servo/standard-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: SSL-COMPATIBLE PROGRAMMABLE SERVO # Compatible with CODE 10 (M12S, EXZES ZZ, MT-44) Not Compatible with CODE 5 (M12, EXZES Z, MT-4S, MT-4, MT-S); PGS SETTING GEAR-COMPATIBLE; SUPER RESPONSE (SSR) MODE-COMPATIBLE; HIGH RESPONSE (SHR) MODE-COMPATIBLE; Li-Po 2 CELL-COMPATIBLE; HIGH TORQUE TYPE; BRUSH LESS MOTOR; FULL ALUMINUM CASE; FULL METAL GEAR (Strengthening Gears); AL HEAT SINK."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/pgs-xb.html" },
 ]

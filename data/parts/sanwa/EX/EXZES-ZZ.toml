@@ -1,0 +1,18 @@
+id = "part/sanwa/EXZES-ZZ"
+brand = "brand/sanwa"
+number = "EXZES-ZZ"
+name = "EXZES ZZ radio"
+category = "electronics"
+category_source = "curated"
+protocol = "FH4"
+related = [
+  { part = "part/sanwa/RX-482", relation = "use-with" },
+  { part = "part/sanwa/RX-481", relation = "use-with" },
+  { part = "part/sanwa/RX-472", relation = "use-with" },
+  { part = "part/sanwa/RX-471", relation = "use-with" },
+]
+notes = "Sanwa radio: RF modes FH4, FH3; compatible receivers RX-482, RX-481, RX-472, RX-471."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/propo/exzes_zz.html" },
+]
+documents = ["doc/sanwa/exzes-zz-eng-manual-c"]

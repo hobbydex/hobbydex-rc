@@ -4,3 +4,17 @@ number = "M17"
 name = "M17 radio"
 category = "electronics"
 category_source = "curated"
+protocol = "FH5"
+weight_g = 510
+related = [
+  { part = "part/sanwa/RX-491", relation = "use-with" },
+  { part = "part/sanwa/RX-492", relation = "use-with" },
+  { part = "part/sanwa/RX-492i", relation = "use-with" },
+  { part = "part/sanwa/RX-493", relation = "use-with" },
+  { part = "part/sanwa/RX-493i", relation = "use-with" },
+]
+notes = "Sanwa radio: RF modes FH5, FH4, FH3; compatible receivers RX-491, RX-492, RX-492i, RX-493, RX-493i."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/propo/m17.html" },
+]
+documents = ["doc/sanwa/m17-eng-manual-c"]

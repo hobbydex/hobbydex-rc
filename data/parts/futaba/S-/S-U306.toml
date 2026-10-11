@@ -10,6 +10,11 @@ speed_s = 0.18
 dimensions_mm = [40, 20, 38.1]
 weight_g = 46.5
 motor = "cored"
+gear_material = "metal"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]
+notes = "Futaba specifications: Futaba stock number 01102396-3, 01102253-3; features: Analog, Metal Gear; case size class Standard."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/s-u306/" },
 ]

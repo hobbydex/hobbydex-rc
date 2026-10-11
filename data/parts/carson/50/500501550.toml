@@ -6,4 +6,11 @@ gtin = "4005299016875"
 links = [
   { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/spare-parts-accessories/rc-accessories/remote-controlled-systems/reflex-wheel-pro-4-gyro-receiver-4-channel-500501550-en.html" },
 ]
-category = "wheel"
+category = "electronics"
+category_source = "curated"
+channels = 4
+related = [
+  { part = "part/carson/500500113", relation = "use-with" },
+  { part = "part/carson/500500119", relation = "use-with" },
+  { part = "part/carson/500500121", relation = "use-with" },
+]

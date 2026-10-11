@@ -1,0 +1,21 @@
+id = "part/futaba/BLS671SVi"
+brand = "brand/futaba"
+number = "BLS671SVi"
+name = "BLS671SVi (S.Bus2/Brushless, Removable Cable)"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 8.3
+voltage = 7.4
+speed_s = 0.1
+dimensions_mm = [33, 15, 27.1]
+weight_g = 28
+motor = "brushless"
+voltage_range = "4.0V ~ 8.4V"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]
+notes = "Futaba specifications: Futaba stock number 01102275-1; features: S.Bus, S.Bus2, Brushless, Removable Cable, HV; case size class Mini/Slim."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/bls671svi/" },
+]
+documents = ["doc/futaba/bls671svi"]

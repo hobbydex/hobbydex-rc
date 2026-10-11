@@ -4,3 +4,13 @@ number = "7PX"
 name = "7PX radio"
 category = "electronics"
 category_source = "curated"
+channels = 7
+protocol = "T-FHSS"
+related = [
+  { part = "part/futaba/R334SBS", relation = "use-with" },
+]
+notes = "Futaba radio set (transmitter and receiver). transmitter: WHEEL SYSTEM, 7 CHANNELS (S-FHSS SYSTEM), 4 CHANNELS WITH TFHSS-SR, T-FHSS, FASST SYSTEM; systems: T-FHSS, S-FHSS, FASST; receiver options: R334SBSE, R334SBS."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/7px/" },
+]
+documents = ["doc/futaba/7px"]
