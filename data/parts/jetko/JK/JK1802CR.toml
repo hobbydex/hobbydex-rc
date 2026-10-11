@@ -1,0 +1,23 @@
+id = "part/jetko/JK1802CR"
+brand = "brand/jetko"
+number = "JK1802CR"
+name = "EX King Cobra 1/8 MT 3.8 Tyres on Wheels"
+category = "tire"
+scale = "1/8"
+vehicle = "monster"
+wheel_size = "3.8\""
+mounting = "pre-mounted"
+weight_g = 455
+fits = [
+  { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/jetko/catalogue-copy64" },
+  { kit = "kit/traxxas/summit", type = "direct", source = "doc/jetko/catalogue-copy64" },
+  { kit = "kit/arrma/kraton", type = "direct", source = "doc/jetko/catalogue-copy64" },
+  { kit = "kit/arrma/outcast", type = "direct", source = "doc/jetko/catalogue-copy64" },
+  { kit = "kit/arrma/notorious", type = "direct", source = "doc/jetko/catalogue-copy64" },
+  { kit = "kit/tekno/mt410", type = "direct", source = "doc/jetko/catalogue-copy64" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "exact", source = "doc/jetko/catalogue-copy64", notes = "Hex from the catalogue sheet's connectors or HEX column" },
+]
+documents = ["doc/jetko/catalogue-copy64"]
+notes = "Tyre W 80.5 x diameter 165 mm; wheel diameter 92.5 mm; belted; weight per piece; connectors JK7301B1, JK7301B2; fits (sheet): Traxxas E-Revo/Summit/T-Maxx; Arrma Kraton/Outcast/Notorious; Tekno MT410; other monster trucks with 17mm hex"

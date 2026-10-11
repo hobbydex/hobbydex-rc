@@ -1,0 +1,17 @@
+id = "part/jetko/JK7302B2"
+brand = "brand/jetko"
+number = "JK7302B2"
+name = "EX Hub Connector 12mm 1/2 offset Wide (for Traxxas Stampede/Rustler 2wd & 4wd front and rear)"
+category = "drivetrain"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/jetko/catalogue-copy61", notes = "Hex size from the catalogue sheet" },
+]
+fits = [
+  { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/jetko/catalogue-copy61" },
+  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/jetko/catalogue-copy61" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/jetko/catalogue-copy61" },
+  { kit = "kit/traxxas/rustler-4x4", type = "direct", source = "doc/jetko/catalogue-copy61" },
+]
+documents = ["doc/jetko/catalogue-copy61"]
+notes = "Hex adaptor of Jetko's EX wheels, listed in the CONNECTOR column of the catalogue sheet"
