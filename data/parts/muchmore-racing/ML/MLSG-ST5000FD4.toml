@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-ST5000FD4"
+brand = "brand/muchmore-racing"
+number = "MLSG-ST5000FD4"
+name = "IMPACT [Silicon Graphene] FD4 LI-Po Battery 5000mAh/7.4V 130C Shorty Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5000
+c_rating = 130
+case = "shorty"

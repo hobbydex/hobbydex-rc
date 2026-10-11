@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLI-RF2500FD"
+brand = "brand/muchmore-racing"
+number = "MLI-RF2500FD"
+name = "IMPACT Li-Po Battery 2500mAh/7.4V 4C Flat Size for Tx & Rx"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2500mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2500
+c_rating = 4

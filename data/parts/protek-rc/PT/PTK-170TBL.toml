@@ -1,0 +1,21 @@
+id = "part/protek-rc/PTK-170TBL"
+brand = "brand/protek-rc"
+number = "PTK-170TBL"
+name = "170TBL \"Black Label\" High Torque Brushless Servo (High Voltage/Metal Case) (Digital)"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 46.8
+voltage = 7.4
+speed_s = 0.11
+voltage_range = "4.8V - 7.4V"
+dimensions_mm = [40, 20, 37.8]
+weight_g = 72
+motor = "brushless"
+gear_material = "metal"
+spline_teeth = 25
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Size class from the case size, spline from ProTek's specifications; check the mounting holes" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-170tbl-servo" },
+]

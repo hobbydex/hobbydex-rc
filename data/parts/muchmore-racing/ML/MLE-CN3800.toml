@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLE-CN3800"
+brand = "brand/muchmore-racing"
+number = "MLE-CN3800"
+name = "Much More Li-Fe Battery 3800mAh/6.6V 40C Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/life-2s-3800mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "life"
+cells = 2
+capacity_mah = 3800
+c_rating = 40
+case = "hard"

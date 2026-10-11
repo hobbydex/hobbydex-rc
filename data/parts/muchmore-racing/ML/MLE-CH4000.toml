@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLE-CH4000"
+brand = "brand/muchmore-racing"
+number = "MLE-CH4000"
+name = "Much More LiFe Battery 4000mAh/6.6V 23C Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/life-2s-4000mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "life"
+cells = 2
+capacity_mah = 4000
+c_rating = 23
+case = "hard"
