@@ -73,6 +73,8 @@ def main():
                 errors.append(f"{path}: parse error: {e}")
                 continue
             rel = os.path.relpath(path, ROOT)
+            if rel == "retired.toml":
+                continue   # retired ids, checked below
             top = rel.split(os.sep)[0]
             kind = next((k for k, v in KINDS.items() if v["dir"] == top), None)
             if kind is None:
@@ -94,6 +96,30 @@ def main():
                 if r not in d:
                     errors.append(f"{path}: missing required field {r}")
             docs.append((path, kind, d))
+    # stable ids: an id is never reused; a changed id stays as former_ids on its successor or in retired.toml
+    claimed = {}
+    for path, kind, d in docs:
+        for old in d.get("former_ids", []):
+            if not isinstance(old, str) or not old.startswith(f"{kind}/"):
+                errors.append(f"{path}: former_ids entry {old!r} is not a {kind} id")
+            elif old in ids:
+                errors.append(f"{path}: former id {old} is a live id again ({ids[old]})")
+            elif old in claimed:
+                errors.append(f"{path}: former id {old} is also claimed by {claimed[old]}")
+            claimed[old] = path
+    retired_path = os.path.join(ROOT, "retired.toml")
+    if os.path.exists(retired_path):
+        with open(retired_path, "rb") as f:
+            for r in tomllib.load(f).get("retired", []):
+                rid = r.get("id")
+                if rid in ids:
+                    errors.append(f"{retired_path}: retired id {rid} is a live id again ({ids[rid]})")
+                if rid in claimed:
+                    errors.append(f"{retired_path}: retired id {rid} is also a former id of {claimed[rid]}")
+                if not r.get("reason"):
+                    errors.append(f"{retired_path}: retired id {rid} needs a reason")
+                if r.get("replaced_by") and r["replaced_by"] not in ids:
+                    errors.append(f"{retired_path}: {rid} replaced_by {r['replaced_by']} does not exist")
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     for path, kind, d in docs:
         def check_ref(field, value, where):
