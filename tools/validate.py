@@ -43,6 +43,7 @@ ENUMS = {
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.lubricant": {"oil", "grease"},
+    "part.viscosity": {"thin", "medium", "thick"},
     "spec.type": {"radial-ball", "flanged", "thrust"},
     "spec.motor_type": {"brushed", "brushless"},
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
