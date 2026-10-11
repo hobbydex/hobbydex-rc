@@ -2,4 +2,9 @@ id = "part/mst/230144"
 brand = "brand/mst"
 number = "230144"
 name = "RMX 2.5 fittings"
-notes = "Read by OCR from an MST manual parts list"
+fits = [
+  { kit = "kit/mst/rmx-2-5", type = "direct", source = "doc/mst/website", notes = "The model is named in MST's product name" },
+]
+links = [
+  { site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=14&class_sn2=36&sn=3749" },
+]

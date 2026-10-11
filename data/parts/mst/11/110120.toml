@@ -1,10 +1,13 @@
 id = "part/mst/110120"
 brand = "brand/mst"
 number = "110120"
-name = "Round head screw w/washer M3x8"
+name = "Round head screw w/washer M3X8"
 pack_qty = 6
-notes = "Read by OCR from an MST manual parts list"
-category = "washer-shim"
+category = "screw"
+category_source = "curated"
+links = [
+  { site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=14&class_sn2=37&sn=3646" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
