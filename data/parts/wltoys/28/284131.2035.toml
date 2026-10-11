@@ -1,0 +1,19 @@
+id = "part/wltoys/284131.2035"
+brand = "brand/wltoys"
+number = "284131.2035"
+name = "Bearings 3x7x2mm"
+pack_qty = 5
+notes = "Name from the wl-toys.com reseller listing: \"Wltoys 284131 Parts-284131-2035 Bearings.3X7X2mm.Total5pcs.\""
+links = [
+  { site = "wl-toys.com", url = "https://www.wl-toys.com/Wltoys-284131-284131-2035-Bearings-3X7X2mm-46336.html" },
+]
+fits = [
+  { kit = "kit/wltoys/284010", type = "direct", source = "doc/wltoys/284010-reseller-parts" },
+  { kit = "kit/wltoys/284131", type = "direct", source = "doc/wltoys/284131-reseller-parts" },
+  { kit = "kit/wltoys/284161", type = "direct", source = "doc/wltoys/284161-reseller-parts" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/3x7x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"
