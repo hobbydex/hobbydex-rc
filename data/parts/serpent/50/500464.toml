@@ -5,6 +5,7 @@ name = "Bellcrank post alu SRX4"
 pack_qty = 2
 fits = [
   { kit = "kit/serpent/spyder-srx4", type = "direct", source = "doc/serpent/spyder-srx4-gen3-spares" },
+  { kit = "kit/serpent/spyder-srx4", type = "replaces", replaces = "part/serpent/500427", source = "doc/serpent/spyder-srx4-gen3-spares", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser500464" },

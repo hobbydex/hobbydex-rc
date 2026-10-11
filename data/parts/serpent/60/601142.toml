@@ -5,6 +5,8 @@ name = "Upright L+R alu SRX8T"
 fits = [
   { kit = "kit/serpent/srx8-truggy-e", type = "direct", source = "doc/serpent/srx8-truggy-e-options" },
   { kit = "kit/serpent/srx8-truggy", type = "direct", source = "doc/serpent/srx8-truggy-options" },
+  { kit = "kit/serpent/srx8-truggy", type = "replaces", replaces = "part/serpent/601122", source = "doc/serpent/srx8-truggy-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-truggy-e", type = "replaces", replaces = "part/serpent/601122", source = "doc/serpent/srx8-truggy-e-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 notes = "serpent.com marks it discontinued"
 links = [

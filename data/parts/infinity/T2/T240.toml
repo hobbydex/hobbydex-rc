@@ -5,3 +5,6 @@ name = "ALU FRONT SPOOL OUTDRIVE"
 pack_qty = 2
 category = "differential"
 material = "aluminium"
+fits = [
+  { kit = "kit/infinity/if14-2-mid", type = "replaces", replaces = "part/infinity/T217", source = "doc/infinity/10255-001", notes = "Same part in another material (link_upgrades.py)" },
+]

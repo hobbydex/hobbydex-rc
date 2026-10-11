@@ -6,6 +6,8 @@ pack_qty = 2
 fits = [
   { kit = "kit/serpent/natrix-750e", type = "direct", source = "doc/serpent/natrix-750-e-options" },
   { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-options" },
+  { kit = "kit/serpent/natrix-750", type = "replaces", replaces = "part/serpent/802335", source = "doc/serpent/natrix-750-evo-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750e", type = "replaces", replaces = "part/serpent/802335", source = "doc/serpent/natrix-750-e-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser804254" },

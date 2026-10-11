@@ -5,3 +5,6 @@ name = "Plate, motor, 6061-T6 aluminum (red-anodized)"
 category = "chassis"
 material = "aluminium"
 material_grade = "6061-T6"
+fits = [
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", replaces = "part/traxxas/6890", source = "doc/traxxas/67454-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+]
