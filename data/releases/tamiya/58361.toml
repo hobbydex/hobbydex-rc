@@ -7,4 +7,6 @@ kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
 documents = ["doc/tamiya/58361-manual"]
-contains = []
+contains = [
+  { part = "part/tamiya/86004", role = "listed", source = "doc/tamiya/58361-manual", notes = "Named in the manual as a paint to use, not in the box (page 19)" },
+]

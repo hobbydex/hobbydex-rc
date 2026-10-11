@@ -145,7 +145,7 @@ list gives a day per item, Tamiya's monthly new-items list a month),
 and `applies_to`, the models the
 brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 
-`category`: what kind of part it is, one of a fixed list: `ball-end`, `bearing`, `body`, `bumper-guard`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `pin-clip`, `pinion`, `screw`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
+`category`: what kind of part it is, one of a fixed list: `ball-end`, `bearing`, `body`, `bumper-guard`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `pin-clip`, `pinion`, `screw`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
 number have none.
@@ -216,6 +216,33 @@ name = "Oil, shock (30 wt, 350 cSt, 60cc) (silicone)"
 equivalent_to = [{ spec = "spec/oil/silicone-350cst", match = "functional" }]
 volume_ml = 60
 viscosity_wt = 30
+```
+
+Paints (category `paint`) carry, as the brand states them: `paint_role`
+(paint | clear: a clear coat | primer | thinner: also retarders |
+cleaner | masking: tape, sheets and fluid for masking), `paint_type`
+(polycarbonate: for clear bodies, sprayed on the inside | lacquer |
+acrylic | enamel; for a thinner or cleaner, the paint it is made for),
+`application` for paints, clear coats and primers (spray-can | airbrush:
+ready to spray from an airbrush | brush), `finish` (gloss | flat |
+semi-gloss | metallic | pearl | fluorescent | translucent | clear |
+chrome; only what the brand says, left out otherwise), `color` in plain
+colour words ("white", "dark green", "purple/green"; the brand's own
+colour name stays in `name`) and `volume_ml`, the can or bottle size.
+Brushes and other painting tools are category `tool`. A kit whose
+manual names a paint or a tool to use (Tamiya: "PS-1", "ITEM 74005")
+lists it in `contains` with role `listed`, the manual as source and the
+pages in the notes.
+
+```toml
+number = "86001"
+name = "PS-1 White"
+category = "paint"
+paint_role = "paint"
+paint_type = "polycarbonate"
+application = "spray-can"
+color = "white"
+volume_ml = 100
 ```
 
 `includes`: what a set holds, as parts or specs with a count, when the brand
