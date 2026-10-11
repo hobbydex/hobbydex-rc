@@ -1,0 +1,20 @@
+id = "part/reefs-rc/REEFS135"
+brand = "brand/reefs-rc"
+number = "REEFS135"
+name = "RAW 100 MINI BLK"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 7.4
+voltage = 8.4
+speed_s = 0.08
+voltage_range = "6V - 8.4V"
+dimensions_mm = [29.5, 14, 29]
+weight_g = 30
+motor = "coreless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/raw100-mini-blk" },
+]

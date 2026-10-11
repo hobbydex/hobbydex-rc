@@ -1,0 +1,21 @@
+id = "part/reefs-rc/REEFS12"
+brand = "brand/reefs-rc"
+number = "REEFS12"
+name = "400:SC V2 Racing Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 31.3
+voltage = 8.4
+speed_s = 0.07
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [39.9, 19.8, 38.1]
+weight_g = 80.8
+motor = "brushless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+notes = "Dimensions converted from inches (1.57 x .78 x 1.5 in, L x W x H); Weight converted from 2.85 oz"
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/400-sc-v2-racing-servo" },
+]

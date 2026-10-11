@@ -1,0 +1,22 @@
+id = "part/reefs-rc/REEFS118"
+brand = "brand/reefs-rc"
+number = "REEFS118"
+name = "900 Smart Brushless Servo"
+gtin = "602024523406"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 67.7
+voltage = 8.4
+speed_s = 0.1
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [39.9, 20.1, 38.1]
+weight_g = 84.8
+motor = "brushless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+notes = "Dimensions converted from inches (1.57 x .79 x 1.5 in, L x W x H); Weight converted from 2.99 oz"
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/900-smart-brushless-servo" },
+]

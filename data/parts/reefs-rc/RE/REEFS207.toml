@@ -1,0 +1,20 @@
+id = "part/reefs-rc/REEFS207"
+brand = "brand/reefs-rc"
+number = "REEFS207"
+name = "49Sub Micro Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 3.5
+voltage = 8.4
+speed_s = 0.05
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [20, 8, 17.8]
+weight_g = 7
+gear_material = "metal"
+rotation_deg = 180
+equivalent_to = [
+  { spec = "spec/servo/micro-20t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/49sub-micro-servo-reefs207" },
+]

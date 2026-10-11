@@ -1,0 +1,23 @@
+id = "part/reefs-rc/REEFS179"
+brand = "brand/reefs-rc"
+number = "REEFS179"
+name = "1100 Smart BRASS EDITION"
+gtin = "602024524014"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 79.2
+voltage = 8.4
+speed_s = 0.12
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [39.9, 20.1, 38.1]
+weight_g = 150
+motor = "brushless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+notes = "Dimensions converted from inches (1.57 x .79 x 1.5 in, L x W x H)"
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/1100-smart-brushless-servo-copy" },
+]
+material = "brass"

@@ -1,0 +1,21 @@
+id = "part/reefs-rc/REEFS25"
+brand = "brand/reefs-rc"
+number = "REEFS25"
+name = "99 Micro Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 8.28
+voltage = 8.4
+speed_s = 0.08
+voltage_range = "6V - 8.4V"
+dimensions_mm = [22.9, 11.9, 27.4]
+weight_g = 19.8
+motor = "brushless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/micro-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+notes = "Dimensions converted from inches (.90 x .47 x 1.08 in, L x W x H); Weight converted from .70 oz"
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/99-micro-servo" },
+]

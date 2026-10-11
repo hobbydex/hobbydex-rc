@@ -1,0 +1,21 @@
+id = "part/reefs-rc/REEFS03"
+brand = "brand/reefs-rc"
+number = "REEFS03"
+name = "Triple5 V2 High Torque Servo"
+gtin = "718879949893"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 40
+voltage = 7.4
+speed_s = 0.17
+dimensions_mm = [40.6, 20.3, 40.6]
+weight_g = 62.4
+motor = "coreless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+notes = "Torque converted from 555 oz-in at 7.4V; Dimensions converted from inches (1.6 x .8 x 1.6 in, L x W x H); Weight converted from 2.2 oz; Discontinued (Reefs RC)"
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/triple5-v2-brushless-servo" },
+]

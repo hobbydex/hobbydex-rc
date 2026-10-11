@@ -1,0 +1,20 @@
+id = "part/reefs-rc/REEFS24"
+brand = "brand/reefs-rc"
+number = "REEFS24"
+name = "299:LP Low Profile Racing Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 22.5
+voltage = 8.4
+speed_s = 0.057
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [40.8, 20.2, 26.5]
+weight_g = 57.2
+motor = "brushless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/299-lp-racing-servo" },
+]

@@ -1,0 +1,19 @@
+id = "part/reefs-rc/REEFS171"
+brand = "brand/reefs-rc"
+number = "REEFS171"
+name = "55Micro Digital Core Sub-Micro Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 4
+voltage = 8.4
+speed_s = 0.08
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [22.9, 12.8, 22]
+weight_g = 19
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/micro-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/55micro-digital-sub-micro-servo" },
+]
