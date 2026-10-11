@@ -4,9 +4,17 @@ number = "SRG-HS"
 name = "SRG-HS"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 3.7
+voltage = 3.7
+speed_s = 0.16
 dimensions_mm = [27, 12.1, 30.5]
 weight_g = 22
 motor = "coreless"
+gear_material = "metal"
 equivalent_to = [
   { spec = "spec/servo/mini-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: Sanwa Super Response (SSR) Support; Sanwa High Response (SSH) Support; Specialized for 1/12 models; LiPo (1cell) Battery Support; Digital Servo; Coreless Motor; Full metal gear."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/srg-hs.html" },
 ]

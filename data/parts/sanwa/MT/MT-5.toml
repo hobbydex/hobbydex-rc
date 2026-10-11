@@ -4,3 +4,16 @@ number = "MT-5"
 name = "MT-5 radio"
 category = "electronics"
 category_source = "curated"
+protocol = "FH5"
+channels = 4
+related = [
+  { part = "part/sanwa/RX-491", relation = "use-with" },
+  { part = "part/sanwa/RX-492", relation = "use-with" },
+  { part = "part/sanwa/RX-493", relation = "use-with" },
+  { part = "part/sanwa/RX-493i", relation = "use-with" },
+]
+notes = "Sanwa radio: RF modes FH5, FH4T, FH3; compatible receivers RX-491, RX-492, RX-493, RX-493i."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/propo/mt-5.html" },
+]
+documents = ["doc/sanwa/mt-5-eng-manual-c"]

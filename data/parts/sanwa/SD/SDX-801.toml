@@ -4,9 +4,17 @@ number = "SDX-801"
 name = "SDX-801"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 6.4
+voltage = 6
+speed_s = 0.08
 dimensions_mm = [40.5, 21, 26.5]
 weight_g = 50
 motor = "coreless"
+gear_material = "metal"
 equivalent_to = [
   { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: Low-profile; Coreless motor; Metal gear; Double bearing."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/sdx-801.html" },
 ]
