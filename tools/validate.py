@@ -51,8 +51,12 @@ ENUMS = {
     "part.case": {"hard", "soft", "shorty"},
     "part.name_source": {"ocr", "manufacturer"},
     "part.ball_type": {"stud", "nut", "through-hole", "set-screw"},
+    "part.paint_type": {"polycarbonate", "lacquer", "acrylic", "enamel"},
+    "part.application": {"spray-can", "airbrush", "brush"},
+    "part.paint_role": {"paint", "clear", "primer", "thinner", "cleaner", "masking"},
     "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
+PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent", "translucent", "clear", "chrome"}   # part.finish of a paint; other parts' finish ("black oxide") is free
 
 def categories():
     """Part categories are the files in data/categories (category/<slug>)."""
@@ -157,6 +161,8 @@ def main():
         for l in d.get("links", []) if kind in ("part", "release") else []:
             if not (isinstance(l, dict) and l.get("site") and str(l.get("url", "")).startswith("https://")):
                 errors.append(f"{path}: link {l!r} needs a site and an https url")
+        if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
+            errors.append(f"{path}: paint finish = {d['finish']!r} not in {sorted(PAINT_FINISH)}")
         rg = d.get("range") if kind == "part" else None
         if rg is not None and not (isinstance(rg, str) and re.fullmatch(r"[a-z0-9-]+/[a-z0-9.-]+", rg) and rg.split("/")[0] == d["brand"].split("/")[1]):
             errors.append(f"{path}: range {rg!r} should be <brand slug>/<slug> of the part's own brand")

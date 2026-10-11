@@ -1,0 +1,10 @@
+id = "category/paint"
+name = "Paints"
+description = "Paints for bodies and parts: spray cans, airbrush-ready and brush paints, with their primers and clear coats."
+key_fields = [
+  { field = "paint_type", label = "Type", from = "part" },
+  { field = "application", label = "Application", from = "part" },
+  { field = "finish", label = "Finish", from = "part" },
+  { field = "color", label = "Colour", from = "part" },
+  { field = "volume_ml", label = "Volume", from = "part", unit = "ml" },
+]
