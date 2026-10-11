@@ -21,6 +21,26 @@ read the tree directly; they read the export (`tools/export.py`).
 holds more than a few hundred files (GitHub lists at most 1000). Changing the
 layout later means editing `layout.py` and moving files; ids do not change.
 
+
+## Ids are permanent
+
+Every record's `id` is also its address: the site builds the page URL from
+it (`part/traxxas/6890` -> hobbydex.com/rc/parts/traxxas/6890/), and people,
+forums and search engines link to those pages. So:
+
+- An id is never reused for something else.
+- When a record's id has to change (a renamed kit slug, a part number
+  corrected after an OCR misread, two records merged), the record keeps the
+  old id in `former_ids = ["part/tamiya/19805186"]`. The site serves a
+  redirect at every former id.
+- A record removed with no successor (a misread number that was never a real
+  part) goes in data/retired.toml with a `reason` and, when there is one, a
+  `replaced_by`.
+
+The validator rejects a former or retired id that is live again or claimed
+twice, and CI runs tools/check_ids.py, which fails a change that drops an id
+without either trace.
+
 ## brand
 
 ```toml

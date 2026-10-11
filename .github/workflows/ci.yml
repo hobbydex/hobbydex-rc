@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # check_ids compares with the base revision
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
@@ -26,6 +28,8 @@ jobs:
           fi
       - name: Validate every TOML file under data/
         run: python3 -I tools/validate.py
+      - name: Ids are permanent (none removed without former_ids or retired.toml)
+        run: python3 -I tools/check_ids.py ${{ github.event_name == 'pull_request' && format('origin/{0}', github.base_ref) || 'HEAD^' }}
       - name: Build the JSON export
         run: python3 -I tools/export.py dist/hobbydex-rc.json
       - name: Keep the export as a build artifact
