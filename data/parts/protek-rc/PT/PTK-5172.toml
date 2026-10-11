@@ -1,0 +1,15 @@
+id = "part/protek-rc/PTK-5172"
+brand = "brand/protek-rc"
+number = "PTK-5172"
+name = "LiPo 3PK/M11 Car Transmitter Battery Pack (11.1V/2300mAh)"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2300mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-lipo-3pk-m11-car-transmitter-battery-pack-11-1v-2300mah" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2300
