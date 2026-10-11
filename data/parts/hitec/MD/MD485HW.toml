@@ -4,4 +4,13 @@ number = "MD485HW"
 name = "MD485HW Magnetic Encoder HD Resin Gear 25T Digital Drag Servo"
 category = "servo"
 category_source = "curated"
+dimensions_mm = [39.8, 19.8, 38]
+weight_g = 45
+torque_kgcm = 7.4
+voltage = 7.4
+speed_s = 0.15
+voltage_range = "4.8V ~ 7.4V"
 motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]

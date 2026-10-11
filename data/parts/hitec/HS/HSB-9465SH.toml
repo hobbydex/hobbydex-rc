@@ -4,6 +4,15 @@ number = "HSB-9465SH"
 name = "HSB-9465SH High Speed Steel Gear 25T Digital Brushless Servo"
 category = "servo"
 category_source = "curated"
+dimensions_mm = [40, 20, 37.7]
+weight_g = 62
+torque_kgcm = 13.5
+voltage = 7.4
+speed_s = 0.07
+voltage_range = "4.0 ~ 8.4V"
 gear_material = "steel"
 motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
+]
 material = "steel"

@@ -6,6 +6,9 @@ category = "servo"
 category_source = "curated"
 dimensions_mm = [40, 20, 39]
 weight_g = 90
+torque_kgcm = 38
+voltage = 7.4
+speed_s = 0.1
 motor = "brushless"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
