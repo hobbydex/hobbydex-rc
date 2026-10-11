@@ -1,8 +1,12 @@
 id = "part/arrma/ARA-2369"
 brand = "brand/arrma"
 number = "ARA-2369"
-name = "Button head screw m3x12mm with washer 8"
-notes = "Number read by OCR from an ARRMA exploded view (ARA3530SFF_TECH_PACK.pdf); named from its Horizon Hobby product URL"
+name = "Button Head Screw M3x12mm with Washer"
+pack_qty = 8
+notes = "Number read by OCR from an ARRMA exploded view (ARA3530SFF_TECH_PACK.pdf); named from its Horizon Hobby product title"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-button-head-screw-m3x12mm-with-washer-8/ARA-2369.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

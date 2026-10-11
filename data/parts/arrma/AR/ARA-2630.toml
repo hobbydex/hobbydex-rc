@@ -1,8 +1,11 @@
 id = "part/arrma/ARA-2630"
 brand = "brand/arrma"
 number = "ARA-2630"
-name = "Pinion gear 15t mod 0.5 cnc 2.3mm bore"
-notes = "Number read by OCR from an ARRMA exploded view (ARA2130FF-EXPLODED-VIEW.pdf); named from its Horizon Hobby product URL"
+name = "Pinion Gear 15T MOD 0.5 CNC 2.3mm Bore"
+notes = "Number read by OCR from an ARRMA exploded view (ARA2130FF-EXPLODED-VIEW.pdf); named from its Horizon Hobby product title"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-pinion-gear-15t-mod-0.5-cnc-2.3mm-bore/ARA-2630.html" },
+]
 equivalent_to = [
   { spec = "spec/pinion/mod0.5-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]

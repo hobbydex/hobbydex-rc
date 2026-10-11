@@ -1,8 +1,15 @@
 id = "part/arrma/ARA311202"
 brand = "brand/arrma"
 number = "ARA311202"
-name = "Pinion gear 16t 0.5 mod cnc 2.3mm bore"
-notes = "Number read by OCR from an ARRMA exploded view (ARA2130FF-EXPLODED-VIEW.pdf); named from its Horizon Hobby product URL"
+name = "Pinion Gear 16T 0.5 MOD CNC 2.3mm Bore"
+notes = "Number read by OCR from an ARRMA exploded view (ARA2130FF-EXPLODED-VIEW.pdf); named from its Horizon Hobby product title"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-pinion-gear-16t-0.5-mod-cnc-2.3mm-bore/ARA311202.html" },
+]
 category = "pinion"
 teeth = 16
 module = 0.5
+equivalent_to = [
+  { spec = "spec/pinion/mod0.5-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 2.3
