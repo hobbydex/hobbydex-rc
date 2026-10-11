@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLI-RH2700FD"
+brand = "brand/muchmore-racing"
+number = "MLI-RH2700FD"
+name = "IMPACT Li-Po Battery 2700mAh/7.4V 4C Hmp Size for Receiver"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2700mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2700
+c_rating = 4

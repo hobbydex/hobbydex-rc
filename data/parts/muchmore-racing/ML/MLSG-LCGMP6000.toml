@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-LCGMP6000"
+brand = "brand/muchmore-racing"
+number = "MLSG-LCGMP6000"
+name = "IMPACT [Silicon Graphene] LCG Max-Punch FD4 Li-Po Battery 6000mAh/7.4V 130C Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6000mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 6000
+c_rating = 130
+case = "hard"

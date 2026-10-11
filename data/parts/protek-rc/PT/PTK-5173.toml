@@ -1,0 +1,16 @@
+id = "part/protek-rc/PTK-5173"
+brand = "brand/protek-rc"
+number = "PTK-5173"
+name = "LiPo Transmitter Battery (11.1V/2800mAh) (Futaba/JR/Spektrum/KO)"
+category = "battery"
+category_source = "curated"
+weight_g = 155
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2800mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+]
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-lipo-transmitter-battery-11-1v-2800mah-futaba-jr-spektrum-ko" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2800
