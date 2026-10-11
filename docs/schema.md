@@ -229,7 +229,7 @@ cleaner | masking: tape, sheets and fluid for masking), `paint_type`
 (polycarbonate: for clear bodies, sprayed on the inside | lacquer |
 acrylic | enamel; for a thinner or cleaner, the paint it is made for),
 `application` for paints, clear coats and primers (spray-can | airbrush:
-ready to spray from an airbrush | brush), `finish` (gloss | flat |
+ready to spray from an airbrush | brush | marker: a paint pen), `finish` (gloss | flat |
 semi-gloss | metallic | pearl | fluorescent | translucent | clear |
 chrome; only what the brand says, left out otherwise), `color` in plain
 colour words ("white", "dark green", "purple/green"; the brand's own
@@ -311,7 +311,10 @@ translation (Yokomo publishes Japanese-only parts lists).
 name or page says: `[{ part, relation }]` with relation requires (needs the
 other part: Tekno "requires TKR9057B"), fits (made to fit that part: Corally
 "fits part C-00180-022"), use-with, for (an accessory made for it: HUDY
-"Ejector for 106000") or replaces. Recorded on the citing part; the site
+"Ejector for 106000"), replaces or same-colour (a paint the brand's own colour
+matching list gives as the same colour in another range, though the shade
+may differ slightly: Tamiya LP-1 Black, X-1 Black and TS-14 Black; recorded
+on each of the paints). Others are recorded on the citing part; the site
 shows it from both sides. tools/link_part_refs.py reads them from names.
 
 `supersedes`: the part this one replaces, when the brand has replaced it with
