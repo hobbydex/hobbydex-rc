@@ -3,7 +3,11 @@ brand = "brand/mst"
 number = "210151"
 name = "Alum. damper cylinder"
 pack_qty = 4
-notes = "Read by OCR from an MST manual parts list"
+applies_to = "ALL DRIFT / XXX-RA / XXX-R"
+fits = [
+  { kit = "kit/mst/xxx-rally", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/xxx-r", type = "direct", source = "doc/mst/option-parts-list-2018" },
+]
 category = "shock"
 shock_part = "body"
 material = "aluminium"
