@@ -54,6 +54,20 @@ Python reads TOML without any dependency. The cost is that TOML is less
 familiar than YAML for hand editing; most contributions are expected to come
 through tools, and the validator catches the rest.
 
+## Thanks
+
+The records are read from manufacturers' manuals, parts lists and product
+pages by importers built on open source. Thank you to the people behind:
+
+- [Python](https://www.python.org) - the validator, the export and every importer (TOML is read with the standard library)
+- [Tesseract](https://github.com/tesseract-ocr/tesseract) - reading scanned manuals and parts cards, in English and Japanese
+- [Poppler](https://poppler.freedesktop.org) - pdftotext, pdftoppm, pdftohtml and pdfinfo, which turn manuals into text and page images
+- [Pillow](https://python-pillow.org) and [NumPy](https://numpy.org) - cropping and measuring scanned pages
+- [ImageMagick](https://imagemagick.org) - image conversion
+- [SQLite](https://sqlite.org) - the queue that keeps every site's requests slow and polite
+
+The website is thanked separately in [hobbydex](https://github.com/hobbydex/hobbydex#thanks).
+
 ## License
 
 - Data under `data/` is released under [CC0 1.0](data/LICENSE): public
