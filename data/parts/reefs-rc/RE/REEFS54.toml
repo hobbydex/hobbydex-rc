@@ -1,0 +1,22 @@
+id = "part/reefs-rc/REEFS54"
+brand = "brand/reefs-rc"
+number = "REEFS54"
+name = "RAW 500 HD Brushless Servo"
+gtin = "610406248564"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 40
+voltage = 8.4
+speed_s = 0.08
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [39.9, 20.1, 38.1]
+weight_g = 78
+motor = "brushless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+notes = "Dimensions converted from inches (1.57 x .79 x 1.5 in, L x W x H); Weight converted from 2.75 oz"
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/raw500-hd-brushless-servo" },
+]

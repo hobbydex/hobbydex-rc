@@ -1,0 +1,20 @@
+id = "part/reefs-rc/REEFS137"
+brand = "brand/reefs-rc"
+number = "REEFS137"
+name = "RAW 400LP Black"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 33.1
+voltage = 8.4
+speed_s = 0.065
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [40.6, 20.1, 29.5]
+weight_g = 65.2
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+notes = "Dimensions converted from inches (1.6 x .79 x 1.16 in, L x W x H); Weight converted from 2.30 oz"
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/raw-400lp-black" },
+]

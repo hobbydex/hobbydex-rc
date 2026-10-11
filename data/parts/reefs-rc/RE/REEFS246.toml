@@ -1,0 +1,21 @@
+id = "part/reefs-rc/REEFS246"
+brand = "brand/reefs-rc"
+number = "REEFS246"
+name = "1400 Smart 16.8V Brushless Servo"
+gtin = "602024524687"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 101
+voltage = 16.8
+speed_s = 0.11
+voltage_range = "10V - 16.8V"
+dimensions_mm = [40, 20, 42]
+weight_g = 90
+motor = "brushless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/1400-smart-brushless-servo-reefs246" },
+]

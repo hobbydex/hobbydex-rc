@@ -1,0 +1,19 @@
+id = "part/reefs-rc/REEFS129"
+brand = "brand/reefs-rc"
+number = "REEFS129"
+name = "179 Smart Brushless Micro Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 12.9
+voltage = 8.4
+speed_s = 0.06
+dimensions_mm = [23, 12, 27.5]
+weight_g = 21
+motor = "brushless"
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/micro-25t", match = "functional", source = "doc/reefs-rc/store", notes = "Size class from the case size, spline from Reefs RC's specifications; check the mounting holes" },
+]
+links = [
+  { site = "Reefs RC", url = "https://reefsrc.com/products/179-smart-brushless-micro-servo" },
+]
