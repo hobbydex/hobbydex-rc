@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLSG-STULCGHV5100"
+brand = "brand/muchmore-racing"
+number = "MLSG-STULCGHV5100"
+name = "IMPACT [Silicon Graphene] Ultra LCG HV FD4 5100mAh/7.6V 135C"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5100mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 5100
+c_rating = 135

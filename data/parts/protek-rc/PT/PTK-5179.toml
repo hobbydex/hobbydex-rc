@@ -1,0 +1,17 @@
+id = "part/protek-rc/PTK-5179"
+brand = "brand/protek-rc"
+number = "PTK-5179"
+name = "3S \"High Power\" LiPo 20C Battery Pack (11.1V/1100mAh) (Blade SR)"
+category = "battery"
+category_source = "curated"
+weight_g = 86
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1100mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+]
+c_rating = 20
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-3s-high-power-lipo-20c-battery-pack-11-1v-1100mah-blade-sr" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 1100

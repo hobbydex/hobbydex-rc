@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSP-LCG5200"
+brand = "brand/muchmore-racing"
+number = "MLSP-LCG5200"
+name = "IMPACT Sport Pack LCG 5200mAh/7.4V 135C Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5200mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5200
+c_rating = 135
+case = "hard"
