@@ -1,0 +1,12 @@
+id = "part/muchmore-racing/MLI-T3000"
+brand = "brand/muchmore-racing"
+number = "MLI-T3000"
+name = "Much More LiPo Tx Battery 3000mAh 11.1V (KO, JR)"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3000mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 3000

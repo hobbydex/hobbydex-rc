@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-STLCGHV3800"
+brand = "brand/muchmore-racing"
+number = "MLSG-STLCGHV3800"
+name = "IMPACT [Silicon Graphene] LCG HV FD4 3800mAh/7.6V 130C Shorty Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-3800mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 3800
+c_rating = 130
+case = "shorty"

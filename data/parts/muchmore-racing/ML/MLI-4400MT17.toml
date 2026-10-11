@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLI-4400MT17"
+brand = "brand/muchmore-racing"
+number = "MLI-4400MT17"
+name = "IMPACT Li-Po Battery 4400mAh/3.7V 4C for SANWA M17 Transmitter"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-4400mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 4400
+c_rating = 4
