@@ -1,0 +1,17 @@
+id = "part/arrowmax/AM-700603"
+brand = "brand/arrowmax"
+number = "AM-700603"
+name = "AM Lipo 7200mAh 3S - 11.1V 55C Continuous 110C Burst wire with Deans"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Arrowmax", url = "https://www.arrowmax-rc.com/products/am-lipo-7200mah-3s-11-1v-55c-continuous-110c-burst-wire-with-deans-am-700603" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-7200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 7200
+c_rating = 55
+connector = "Deans"
