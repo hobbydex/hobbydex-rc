@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-STLCGHV5300"
+brand = "brand/muchmore-racing"
+number = "MLSG-STLCGHV5300"
+name = "IMPACT \"Silicon Graphene\" LCG HV FD4 5300mAh/7.6V 130C Shorty Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5300mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 5300
+c_rating = 130
+case = "shorty"

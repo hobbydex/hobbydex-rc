@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLI-3200MT44"
+brand = "brand/muchmore-racing"
+number = "MLI-3200MT44"
+name = "IMPACT Li-Po Battery 3200mAh/3.7V 4C for SANWA MT44 Transmitter"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-3200mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 3200
+c_rating = 4
