@@ -10,6 +10,11 @@ speed_s = 0.075
 dimensions_mm = [40.5, 21, 37.8]
 weight_g = 75
 motor = "brushless"
+voltage_range = "4.8V ~ 8.4V"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]
+notes = "Futaba specifications: Futaba stock number 01102359-1; features: S.Bus, S.Bus2, SR Mode (Super Response), Brushless, HV, Metal Case; case size class Standard."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/hps-cb701/" },
 ]

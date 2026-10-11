@@ -6,6 +6,15 @@ category = "servo"
 category_source = "curated"
 dimensions_mm = [27.2, 13, 30.5]
 motor = "brushless"
+torque_kgcm = 6.7
+voltage = 7.4
+speed_s = 0.09
+weight_g = 28
+gear_material = "plastic"
 equivalent_to = [
   { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
+]
+notes = "Futaba specifications: ."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/bls-cm600-mini-servo/" },
 ]

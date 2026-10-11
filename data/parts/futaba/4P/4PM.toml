@@ -1,6 +1,17 @@
 id = "part/futaba/4PM"
 brand = "brand/futaba"
 number = "4PM"
-name = "4PM (w/R334SBS) + R334SBS"
+name = "4PM radio"
 category = "electronics"
 category_source = "curated"
+channels = 4
+protocol = "T-FHSS"
+related = [
+  { part = "part/futaba/R304SB", relation = "use-with" },
+  { part = "part/futaba/R334SBS", relation = "use-with" },
+]
+notes = "Futaba radio set (transmitter and receiver). Futaba stock numbers 01004387-3, 01004388-3, 01004397-3; transmitter: T-FHSS SR/T-FHSS/S-FHSS SYSTEM, WHEEL TYPE, 4 CHANNELS; systems: T-FHSS, S-FHSS; receiver options: R304SB, R334SBS, No Receiver."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/4pm/" },
+]
+documents = ["doc/futaba/4pm-e"]

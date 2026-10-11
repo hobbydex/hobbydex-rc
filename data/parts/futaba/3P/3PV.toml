@@ -4,3 +4,14 @@ number = "3PV"
 name = "3PV radio"
 category = "electronics"
 category_source = "curated"
+channels = 3
+protocol = "T-FHSS"
+related = [
+  { part = "part/futaba/R203GF", relation = "use-with" },
+  { part = "part/futaba/R304SB", relation = "use-with" },
+]
+notes = "Futaba radio set (transmitter and receiver). Futaba stock numbers 01004347-3, 01004353-1; transmitter: T-FHSS/S-FHSS SYSTEM, WHEEL TYPE, 3+1* CHANNELS *The 4th channel is used for mixing functions only.; systems: T-FHSS, S-FHSS; receiver options: R203GF, R304SB."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/3pv/" },
+]
+documents = ["doc/futaba/3pv"]

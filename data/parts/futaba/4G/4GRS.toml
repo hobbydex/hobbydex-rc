@@ -4,3 +4,13 @@ number = "4GRS"
 name = "4GRS radio"
 category = "electronics"
 category_source = "curated"
+channels = 4
+protocol = "T-FHSS"
+related = [
+  { part = "part/futaba/R304SB", relation = "use-with" },
+]
+notes = "Futaba radio set (transmitter and receiver). Futaba stock numbers 01004366-1; transmitter: T-FHSS/S-FHSS/FHSS SYSTEM, 2-STICK TYPE, 4 CHANNELS; systems: T-FHSS, S-FHSS, FHSS."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/4grs/" },
+]
+documents = ["doc/futaba/4grs"]

@@ -9,7 +9,13 @@ voltage = 7.4
 speed_s = 0.1
 dimensions_mm = [40, 20, 36.8]
 weight_g = 63
-motor = "cored"
+motor = "brushless"
+voltage_range = "4.0V ~ 8.4V"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
 ]
+notes = "Futaba specifications: Futaba stock number 01102224-3; features: S.Bus, S.Bus2, Brushless, HV; case size class Standard."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/bls371sv/" },
+]
+documents = ["doc/futaba/bls371sv"]

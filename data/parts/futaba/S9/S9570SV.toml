@@ -10,6 +10,12 @@ speed_s = 0.08
 dimensions_mm = [40.5, 20, 25.4]
 weight_g = 43
 motor = "cored"
+voltage_range = "4.0V ~ 8.4V"
 equivalent_to = [
   { spec = "spec/servo/low-profile-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
 ]
+notes = "Futaba specifications: Futaba stock number 01102308-3; features: S.Bus, S.Bus2, Digital, HV; case size class Low Profile."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/s9570sv/" },
+]
+documents = ["doc/futaba/s9570sv"]

@@ -4,3 +4,14 @@ number = "4PM-P"
 name = "4PM Plus radio"
 category = "electronics"
 category_source = "curated"
+channels = 4
+protocol = "T-FHSS"
+related = [
+  { part = "part/futaba/R304SB", relation = "use-with" },
+  { part = "part/futaba/R334SBS", relation = "use-with" },
+]
+notes = "Futaba radio set (transmitter and receiver). Futaba stock numbers 01004414-3, 01004416-3, 01004415-1, 01004418-1; transmitter: T-FHSS SR/T-FHSS/S-FHSS SYSTEM, WHEEL TYPE, 4 CHANNELS; systems: T-FHSS, S-FHSS; receiver options: R304SB, R334SBS, No Receiver, R304SBE."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/4pmplus/" },
+]
+documents = ["doc/futaba/4pmp-e2-let"]
