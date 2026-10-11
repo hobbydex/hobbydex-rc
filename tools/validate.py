@@ -37,7 +37,7 @@ ENUMS = {
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
-    "related.relation": {"requires", "fits", "use-with", "for", "replaces"},
+    "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     "part.category_source": {"curated"},
@@ -52,7 +52,7 @@ ENUMS = {
     "part.name_source": {"ocr", "manufacturer"},
     "part.ball_type": {"stud", "nut", "through-hole", "set-screw"},
     "part.paint_type": {"polycarbonate", "lacquer", "acrylic", "enamel"},
-    "part.application": {"spray-can", "airbrush", "brush"},
+    "part.application": {"spray-can", "airbrush", "brush", "marker"},
     "part.paint_role": {"paint", "clear", "primer", "thinner", "cleaner", "masking"},
     "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
