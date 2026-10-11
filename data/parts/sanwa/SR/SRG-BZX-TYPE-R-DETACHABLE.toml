@@ -1,0 +1,20 @@
+id = "part/sanwa/SRG-BZX-TYPE-R-DETACHABLE"
+brand = "brand/sanwa"
+number = "SRG-BZX-TYPE-R-DETACHABLE"
+name = "SRG-BZX Type R DETACHABLE"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 19
+voltage = 7.4
+speed_s = 0.09
+dimensions_mm = [40.5, 21, 38]
+weight_g = 76
+motor = "brushless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/standard-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: Lead-Detachable Servo; Sanwa Super Response (SSR) Mode-Compatible; High Response Mode-Compatible; Li-Po 2cell - Compatible; High Torque Type; Digital Servo; Mounted Brushless Motor; Double ball bearing; Metal Gear; Stainless B Gear/ C Gear."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/srg-bzx_type_r_detachable.html" },
+]

@@ -4,9 +4,17 @@ number = "PGS-LHR"
 name = "PGS-LHR"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 9.6
+voltage = 7.4
+speed_s = 0.06
 dimensions_mm = [40.5, 20.5, 26]
 weight_g = 53
 motor = "cored"
+gear_material = "metal"
 equivalent_to = [
   { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: Compatible with SXR response mode; Compatible with SSL; SSL-COMPATIBLE PROGRAMMABLE SERVO; Specialized for 1/10 Electric Touring (Can used for 1/10 Electric Off-Road); PGS-LHR Special Program preinstalled; Specialized Gear ratio for 1/10 Electric Scale; Full Aluminium Cases; Full Metal Gears; Blushless motor; Compatible with MULTI SETTING GEAR *Appearance difference of PGS-LHⅡand PGS-LHR is only nameplate.."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/pgs-lhr.html" },
 ]

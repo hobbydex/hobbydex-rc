@@ -4,5 +4,17 @@ number = "ERS-971"
 name = "ERS-971"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 9.2
+voltage = 6
+speed_s = 0.09
+dimensions_mm = [40.8, 20.2, 25.5]
 weight_g = 44.5
 motor = "coreless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: For car, Digital Low-profile servo; WATERPROOF(IPX4); Coreless motor; Double bearing; Full Metal gear; Aluminum heatsink."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/ers-971.html" },
+]

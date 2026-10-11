@@ -12,3 +12,7 @@ motor = "coreless"
 equivalent_to = [
   { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
 ]
+notes = "Sanwa specifications: FH5U: SXR(SANWA XTREME RESPONSE) MODE-COMPATIBLE; SSL-COMPATIBLE PROGRAMMABLE SERVO # Compatible with CODE 10 (M17S, EXZES ZⅢ, M17, MT-5, MT-R, M12S(RS), EXZES ZZ, MT-44) Not Compatible with CODE 5 (M12, EXZES Z, MT-4S, MT-4, MT-S); Multi SETTING GEAR-COMPATIBLE; ULTRA RESPONSE (SUR) MODE-COMPATIBLE; SUPER RESPONSE (SSR) MODE-COMPATIBLE; HIGH RESPONSE (SHR) MODE-COMPATIBLE; Li-Po 2 CELL-COMPATIBLE; LOW PROFILED SERVO; CORELESS MOTOR; FULL ALUMINUM CASE."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/pgs-clx.html" },
+]

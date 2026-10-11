@@ -1,0 +1,20 @@
+id = "part/sanwa/PGS-LH-TYPE-D"
+brand = "brand/sanwa"
+number = "PGS-LH-TYPE-D"
+name = "PGS-LH TYPE-D"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 15.6
+voltage = 7.4
+speed_s = 0.09
+dimensions_mm = [40.2, 20.5, 26]
+weight_g = 53
+motor = "brushless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: Written specialized program for drift; SSL-COMPATIBLE PROGRAMMABLE SERVO # Compatible with CODE 10 (M12S, EXZES ZZ, MT-44) Not Compatible with CODE 5 (M12, EXZES Z, MT-4S, MT-4, MT-S); PGS SETTING GEAR-COMPATIBLE; SUPER RESPONSE (SSR) MODE-COMPATIBLE; HIGH RESPONSE (SHR) MODE-COMPATIBLE; Li-Po 2 CELL-COMPATIBLE; LOW PROFILED; HIGH SPEED TYPE; BRUSH LESS MOTOR; FULL ALUMINUM CASE."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/pgs-lh_type-d.html" },
+]

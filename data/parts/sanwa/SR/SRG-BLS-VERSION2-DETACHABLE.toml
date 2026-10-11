@@ -1,0 +1,20 @@
+id = "part/sanwa/SRG-BLS-VERSION2-DETACHABLE"
+brand = "brand/sanwa"
+number = "SRG-BLS-VERSION2-DETACHABLE"
+name = "SRG-BLS Version2 DETACHABLE"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 9.3
+voltage = 7.4
+speed_s = 0.07
+dimensions_mm = [40.5, 21, 26.5]
+weight_g = 47
+motor = "brushless"
+gear_material = "metal"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-23t", match = "functional", notes = "Size class from the case size, spline from Sanwa's specifications (23T spline: Sanwa standard, owner report); check the mounting holes", source = "doc/community/2026-10-10-sanwa-servos-23t-spline" },
+]
+notes = "Sanwa specifications: Lead-Detachable Servo; Sanwa Super Response (SSR) Mode-Compatible; High Response Mode-Compatible; Li-Po 2cell - Compatible; For Drift Car; Low Profile; High Speed Type; Digital Servo; Brushless Motor; Double ball bearing."
+links = [
+  { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/servo/srg-bls_version2_detachable.html" },
+]
