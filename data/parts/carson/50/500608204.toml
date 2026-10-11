@@ -1,0 +1,16 @@
+id = "part/carson/500608204"
+brand = "brand/carson"
+number = "500608204"
+name = "7.2V 700mAh NiMH Battery Pack"
+gtin = "4005299682049"
+links = [
+  { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/categories/rc-batteries-rechargeable-batteries/nimh-batteries/72v-700mah-nimh-battery-pack-rc-accessory-500608204-en.html" },
+]
+category = "battery"
+chemistry = "nimh"
+cells = 6
+capacity_mah = 700
+connector = "JST"
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

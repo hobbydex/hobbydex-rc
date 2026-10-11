@@ -1,0 +1,16 @@
+id = "part/carson/500608240"
+brand = "brand/carson"
+number = "500608240"
+name = "RC Sport Race Battery, 4.8V 400mAh, NiMH pack"
+gtin = "4005299008276"
+links = [
+  { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/categories/rc-batteries-rechargeable-batteries/nimh-batteries/rc-sport-race-battery-48v-400mah-nimh-pack-500608240-en.html" },
+]
+category = "battery"
+chemistry = "nimh"
+cells = 4
+capacity_mah = 400
+connector = "JST"
+equivalent_to = [
+  { spec = "spec/battery/nimh-4s-400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
