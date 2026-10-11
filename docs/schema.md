@@ -234,6 +234,11 @@ semi-gloss | metallic | pearl | fluorescent | translucent | clear |
 chrome; only what the brand says, left out otherwise), `color` in plain
 colour words ("white", "dark green", "purple/green"; the brand's own
 colour name stays in `name`) and `volume_ml`, the can or bottle size.
+`swatch` is an approximate colour as a lowercase hex value ("#e81c24"),
+sampled from the middle of the colour chip on the manufacturer's own
+colour chart. It is a guide, not a match: the chart is printed ink, and
+screens and photos shift colours; metallic, pearl and fluorescent paints
+are a flat sample of a chip that shines in real life.
 Brushes and other painting tools are category `tool`. A kit whose
 manual names a paint or a tool to use (Tamiya: "PS-1", "ITEM 74005")
 lists it in `contains` with role `listed`, the manual as source and the
@@ -247,6 +252,7 @@ paint_role = "paint"
 paint_type = "polycarbonate"
 application = "spray-can"
 color = "white"
+swatch = "#ffffff"
 volume_ml = 100
 ```
 
