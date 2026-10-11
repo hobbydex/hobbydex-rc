@@ -3,6 +3,11 @@ brand = "brand/kyosho"
 number = "LA402-03"
 name = "Diff Bevel Shaft (2pcs/ZX7.5)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+released = "2026-06"
 category = "differential"
+documents = ["doc/kyosho/rc-newitem-2026-06-parts"]
+notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/rc-newitem-2026-06-parts" },
+]

@@ -3,6 +3,11 @@ brand = "brand/kyosho"
 number = "IFW703"
 name = "Universal Swing Shaft (L=92/2pcs/MP11)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+released = "2026-02"
 category = "drivetrain"
+documents = ["doc/kyosho/rc-newitem-2026-02-parts"]
+notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/rc-newitem-2026-02-parts" },
+]
