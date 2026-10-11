@@ -145,7 +145,7 @@ list gives a day per item, Tamiya's monthly new-items list a month),
 and `applies_to`, the models the
 brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 
-`category`: what kind of part it is, one of a fixed list: `ball-end`, `bearing`, `body`, `bumper-guard`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `pin-clip`, `pinion`, `screw`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
+`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
 number have none.
@@ -200,8 +200,7 @@ lubricant = "grease"
 Silicone oils link to `spec/oil/silicone-<cSt>cst` only when the brand states
 the viscosity in cSt. The "wt" and "K" scales differ between brands, so a
 brand's wt goes on the part as `viscosity_wt`, never on a spec. `volume_ml` is
-the bottle size. Glues (CA, tyre glue) give their grade as `viscosity`
-(thin | medium | thick, as the brand names it; a gel counts as thick).
+the bottle size.
 Brands that grade by their own number without a unit
 (Tamiya #400) link with match "close" and say so in the notes. A set of
 oils lists its bottles with `includes`, one row per spec:
@@ -217,6 +216,12 @@ equivalent_to = [{ spec = "spec/oil/silicone-350cst", match = "functional" }]
 volume_ml = 60
 viscosity_wt = 30
 ```
+
+Glues (category `glue`: CA and tyre glue, epoxy, kickers, debonders,
+threadlockers, glue tips and applicators) give their grade as `viscosity`
+(thin | medium | thick, as the brand names it; a gel counts as thick) and
+the bottle size as `volume_ml` when the brand states it in ml or fl oz.
+Parts sold "with threadlock" or "with glue" are not glues.
 
 Paints (category `paint`) carry, as the brand states them: `paint_role`
 (paint | clear: a clear coat | primer | thinner: also retarders |
