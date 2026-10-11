@@ -1,0 +1,20 @@
+id = "part/haiboxing/11122S"
+brand = "brand/haiboxing"
+number = "11122S"
+name = "11.1V, 2200mAh 3S Polymer Lithium-ion battery"
+applies_to = "HBX 2997A & 3100A"
+notes = "Store title: HAIBOXING Brushless RC Cars 3S Polymer Lithium-ion battery HPY 133465,1/16th 1/12 Scale Spare Parts 11.1V, 2200mAh, 24.42Wh RC Truck Upgraded Batteries Apply to 2997A & 3100A(11122S)"
+fits = [
+  { kit = "kit/haiboxing/2997a", type = "direct", source = "doc/haiboxing/store" },
+  { kit = "kit/haiboxing/3100a", type = "direct", source = "doc/haiboxing/store" },
+]
+links = [
+  { site = "Haiboxing", url = "https://www.haiboxing.com/products/haiboxing-brushless-rc-cars-3s-polymer-lithium-ion-battery-hpy-133465-1-16th-1-12-scale-spare-parts-11-1v-2200mah-24-42wh-rc-truck-upgraded-batteries-apply-to-2997a-3100a11122s" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2200
+category = "battery"
