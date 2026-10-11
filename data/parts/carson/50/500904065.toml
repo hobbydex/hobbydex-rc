@@ -11,3 +11,8 @@ links = [
   { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/spare-parts-accessories/rc-spares/ball-bearings/ball-bearing-set-bt-01mb-01-model-spare-part-500904065-en.html" },
 ]
 category = "bearing"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 12, source = "doc/carson/shop", notes = "Width not stated; 4 mm is the usual width of Tamiya size 1050 (not confirmed for Tamiya)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, source = "doc/carson/shop", notes = "Width not stated; 2.5 mm is the usual width of Tamiya size 850" },
+  { spec = "spec/bearing/8x12x3.5", qty = 2, source = "doc/carson/shop", notes = "Width not stated; 3.5 mm is the usual width of Tamiya size 1280" },
+]
