@@ -1,0 +1,19 @@
+id = "part/robitronic/SC4000"
+brand = "brand/robitronic"
+number = "SC4000"
+name = "NiMH Battery 4000mAh 7,2V Stick Pack Tamiya Plug"
+category = "battery"
+category_source = "curated"
+chemistry = "nimh"
+capacity_mah = 4000
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-4000mah", match = "functional", source = "doc/robitronic/shop-brand-listing", notes = "Chemistry, cells and capacity from Robitronic's name; check size and plug" },
+]
+connector = "Tamiya"
+dimensions_mm = [134, 46.5, 24]
+weight_g = 410
+gtin = "4046032024795"
+links = [
+  { site = "Robitronic", url = "https://shop.robitronic.com/en/robitronic-nimh-battery-4000mah-72v-sc4000" },
+]

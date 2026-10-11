@@ -1,0 +1,20 @@
+id = "part/robitronic/R05226"
+brand = "brand/robitronic"
+number = "R05226"
+name = "LiPo Battery 4000mAh 2S 45C Stick Pack T-Plug"
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 4000
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", source = "doc/robitronic/shop-brand-listing", notes = "Chemistry, cells and capacity from Robitronic's name; check size and plug" },
+]
+c_rating = 45
+connector = "Deans"
+dimensions_mm = [133, 45, 22]
+weight_g = 225
+gtin = "4046032091032"
+links = [
+  { site = "Robitronic", url = "https://shop.robitronic.com/en/robitronic-lipo-battery-4000mah-2s-45c-r05226" },
+]

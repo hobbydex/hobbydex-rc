@@ -1,0 +1,17 @@
+id = "part/robitronic/SC5000T"
+brand = "brand/robitronic"
+number = "SC5000T"
+name = "NiMH Battery 5000mAh 7,2V Stick Pack T-Plug & Tamiya"
+category = "battery"
+category_source = "curated"
+chemistry = "nimh"
+capacity_mah = 5000
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-5000mah", match = "functional", source = "doc/robitronic/shop-brand-listing", notes = "Chemistry, cells and capacity from Robitronic's name; check size and plug" },
+]
+dimensions_mm = [132, 46.5, 24]
+gtin = "4046032094668"
+links = [
+  { site = "Robitronic", url = "https://shop.robitronic.com/en/robitronic-nimh-battery-5000mah-72v-sc5000t" },
+]

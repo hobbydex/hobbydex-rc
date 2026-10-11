@@ -1,0 +1,16 @@
+id = "part/robitronic/EP3600"
+brand = "brand/robitronic"
+number = "EP3600"
+name = "NiMH Battery 3600mAh 1,2V Sub-C single cell"
+category = "battery"
+category_source = "curated"
+chemistry = "nimh"
+capacity_mah = 3600
+cells = 1
+equivalent_to = [
+  { spec = "spec/battery/nimh-1s-3600mah", match = "functional", source = "doc/robitronic/shop-brand-listing", notes = "Chemistry, cells and capacity from Robitronic's name; check size and plug" },
+]
+gtin = "4046032028359"
+links = [
+  { site = "Robitronic", url = "https://shop.robitronic.com/en/ep-nimh-battery-3600mah-12v-sub-c-ep3600" },
+]
