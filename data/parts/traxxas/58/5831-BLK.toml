@@ -3,3 +3,8 @@ brand = "brand/traxxas"
 number = "5831-BLK"
 name = "Lower chassis, low CG (black) (requires #5832-BLK, 5832-BLUE, 5832-DGRY, or 5832-STGRY chassis)"
 category = "chassis"
+related = [
+  { part = "part/traxxas/5832-BLK", relation = "requires", notes = "link_part_refs" },
+  { part = "part/traxxas/5832-BLUE", relation = "requires", notes = "link_part_refs" },
+  { part = "part/traxxas/5832-DGRY", relation = "requires", notes = "link_part_refs" },
+]

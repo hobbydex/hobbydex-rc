@@ -5,3 +5,7 @@ name = "Differential Case (f/c/r, composite, fits TKR5150/B)"
 pack_qty = 3
 category = "differential"
 material = "plastic"
+related = [
+  { part = "part/tekno/TKR5150", relation = "fits", notes = "link_part_refs" },
+  { part = "part/tekno/TKR5150B", relation = "fits", notes = "link_part_refs" },
+]

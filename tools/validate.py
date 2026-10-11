@@ -37,6 +37,7 @@ ENUMS = {
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
+    "related.relation": {"requires", "fits", "use-with", "for", "replaces"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     "part.category_source": {"curated"},

@@ -3,3 +3,7 @@ brand = "brand/traxxas"
 number = "2252"
 name = "Gear set, metal (for 2250, 2255 servos)"
 category = "gear"
+related = [
+  { part = "part/traxxas/2250", relation = "for", notes = "link_part_refs" },
+  { part = "part/traxxas/2255", relation = "for", notes = "link_part_refs" },
+]

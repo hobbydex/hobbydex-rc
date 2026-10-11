@@ -3,3 +3,8 @@ brand = "brand/traxxas"
 number = "8084"
 name = "LED headlight/tail light kit (fits #8111 or #8112 body, requires #8028 power supply)"
 category = "body"
+related = [
+  { part = "part/traxxas/8028", relation = "requires", notes = "link_part_refs" },
+  { part = "part/traxxas/8111", relation = "fits", notes = "link_part_refs" },
+  { part = "part/traxxas/8112", relation = "fits", notes = "link_part_refs" },
+]

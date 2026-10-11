@@ -3,3 +3,6 @@ brand = "brand/traxxas"
 number = "8025"
 name = "LED lightbar (Rigid), TRX-4® (requires #8028 power supply)"
 category = "electronics"
+related = [
+  { part = "part/traxxas/8028", relation = "requires", notes = "link_part_refs" },
+]

@@ -3,3 +3,6 @@ brand = "brand/traxxas"
 number = "2968"
 name = "LiPo cell voltage checker/balancer (requires #2938X adapter for Traxxas® iD® batteries)"
 category = "battery"
+related = [
+  { part = "part/traxxas/2938X", relation = "requires", notes = "link_part_refs" },
+]

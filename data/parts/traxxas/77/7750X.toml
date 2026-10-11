@@ -4,3 +4,8 @@ number = "7750X"
 name = "Driveshaft, steel constant-velocity (heavy duty, shaft only, 160mm) (1) (replacing #7750 also requires #7751X, #7754X and #7768 or #7768R)"
 category = "drivetrain"
 material = "steel"
+related = [
+  { part = "part/traxxas/7751X", relation = "requires", notes = "link_part_refs" },
+  { part = "part/traxxas/7768", relation = "requires", notes = "link_part_refs" },
+  { part = "part/traxxas/7768R", relation = "requires", notes = "link_part_refs" },
+]

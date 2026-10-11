@@ -3,3 +3,7 @@ brand = "brand/traxxas"
 number = "7792"
 name = "Ring gear, differential, 35-tooth (heavy duty) (use with #7790, #7791 11-tooth differential pinion gears)"
 category = "differential"
+related = [
+  { part = "part/traxxas/7790", relation = "use-with", notes = "link_part_refs" },
+  { part = "part/traxxas/7791", relation = "use-with", notes = "link_part_refs" },
+]

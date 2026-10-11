@@ -3,3 +3,8 @@ brand = "brand/traxxas"
 number = "8086"
 name = "LED expedition rack scene light kit (fits #8111 or 8213 series bodies, requires #8028 power supply)"
 category = "steering"
+related = [
+  { part = "part/traxxas/8028", relation = "requires", notes = "link_part_refs" },
+  { part = "part/traxxas/8111", relation = "fits", notes = "link_part_refs" },
+  { part = "part/traxxas/8213", relation = "fits", notes = "link_part_refs" },
+]
