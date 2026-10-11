@@ -12,14 +12,14 @@ fits = [
   { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
   { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
 ]
-links = [
-  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-3s-11-1v-2600mah-li-po-battery-25c-for-1-10-scale" },
-]
-equivalent_to = [
-  { spec = "spec/battery/lipo-3s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-]
 chemistry = "lipo"
 cells = 3
 capacity_mah = 2600
 c_rating = 25
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-3s-11-1v-2600mah-li-po-battery-25c-for-1-10-scale" },
+]
 category = "battery"

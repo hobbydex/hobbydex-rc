@@ -1,0 +1,23 @@
+id = "part/hosim/FY-2600K"
+brand = "brand/hosim"
+number = "FY-2600K"
+name = "7.4V 2600mAh 2S 25C battery"
+notes = "Sold in the store as a pack of 3 (SKU 3*FY-2600K)"
+fits = [
+  { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-cars-battery-25c-2s-7-4v-2600mah-forrc-truck-x07-x08-x17-x17-x27-3pcs" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2600
+c_rating = 25
+category = "battery"
