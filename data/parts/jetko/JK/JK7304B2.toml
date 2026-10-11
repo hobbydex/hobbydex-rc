@@ -1,0 +1,15 @@
+id = "part/jetko/JK7304B2"
+brand = "brand/jetko"
+number = "JK7304B2"
+name = "EX Hub Connector 24mm for Arrma (Kraton 8s & Outcast 8s)"
+category = "drivetrain"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/wheel-hex/24mm", match = "exact", source = "doc/jetko/catalogue-copy60", notes = "Hex size from the catalogue sheet" },
+]
+fits = [
+  { kit = "kit/arrma/kraton-8s", type = "direct", source = "doc/jetko/catalogue-copy60" },
+  { kit = "kit/arrma/outcast-8s", type = "direct", source = "doc/jetko/catalogue-copy60" },
+]
+documents = ["doc/jetko/catalogue-copy60"]
+notes = "Hex adaptor of Jetko's EX wheels, listed in the CONNECTOR column of the catalogue sheet"

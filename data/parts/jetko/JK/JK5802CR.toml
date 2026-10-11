@@ -1,0 +1,19 @@
+id = "part/jetko/JK5802CR"
+brand = "brand/jetko"
+number = "JK5802CR"
+name = "EX King Cobra 1/5 XMT Tyres on Wheels"
+category = "tire"
+scale = "1/5"
+vehicle = "monster"
+mounting = "pre-mounted"
+weight_g = 730
+fits = [
+  { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/jetko/catalogue-copy63" },
+  { kit = "kit/arrma/kraton-8s", type = "direct", source = "doc/jetko/catalogue-copy63" },
+  { kit = "kit/arrma/outcast-8s", type = "direct", source = "doc/jetko/catalogue-copy63" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/24mm", match = "exact", source = "doc/jetko/catalogue-copy63", notes = "Hex from the catalogue sheet's connectors or HEX column" },
+]
+documents = ["doc/jetko/catalogue-copy63"]
+notes = "Tyre W 99 x diameter 204 mm; wheel diameter 135.5 mm; belted; weight per piece; connectors JK7304B1, JK7304B2; fits (sheet): Traxxas X-Maxx; Arrma Kraton 8S/Outcast 8S; other 1/5 monster trucks / stadium trucks with 24mm hex"
