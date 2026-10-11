@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-HN-X5B"
+brand = "brand/avid-rc"
+number = "AV-HN-X5B"
+name = "HongNor X5B Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-4x8x3", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal | Clutch (greased)" },
+  { spec = "spec/bearing/13x20x4", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/flanged-5x8x2.5", qty = 2, notes = "Default: Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+lubricant = "grease"
+applies_to = "HongNor X5B"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4719/X5B" },
+]

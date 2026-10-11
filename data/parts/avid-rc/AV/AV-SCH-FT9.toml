@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-SCH-FT9"
+brand = "brand/avid-rc"
+number = "AV-SCH-FT9"
+name = "Schumacher FT9 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x10x3", qty = 10, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/1.5x4x2", qty = 4, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/3.175x6.35x2.778", qty = 4, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4.762x7.938x3.175", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/schumacher/ft9", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4557/FT9" },
+]

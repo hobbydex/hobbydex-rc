@@ -1,0 +1,19 @@
+id = "part/avid-rc/AV-TAM-WILDONE"
+brand = "brand/avid-rc"
+number = "AV-TAM-WILDONE"
+name = "Tamiya Wild One Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 10, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 3, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/wild-one", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4531/Wild-One" },
+]

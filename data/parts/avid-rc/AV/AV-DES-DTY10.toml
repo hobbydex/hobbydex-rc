@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-DES-DTY10"
+brand = "brand/avid-rc"
+number = "AV-DES-DTY10"
+name = "Destiny DTY-10 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x10x3", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6x11x4", qty = 4, notes = "Only option: Rubber (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/3x8x4", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 1, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+applies_to = "Destiny DTY-10"
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4670/DTY10" },
+]

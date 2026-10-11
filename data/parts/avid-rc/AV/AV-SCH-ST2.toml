@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-SCH-ST2"
+brand = "brand/avid-rc"
+number = "AV-SCH-ST2"
+name = "Schumacher Storm ST2 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 8, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x12x4", qty = 3, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Revolution (not Clutch) (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+lubricant = "grease"
+applies_to = "Schumacher Storm ST2"
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Revolution (not Clutch), Metal (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4460/Storm-ST2" },
+]

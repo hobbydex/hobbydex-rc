@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-SCH-PBD"
+brand = "brand/avid-rc"
+number = "AV-SCH-PBD"
+name = "Schumacher Cat PB Dirt Spec Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 4, notes = "Default: Revolution (not Clutch) (greased)" },
+  { spec = "spec/bearing/3x7x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x12x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-10x15x4", qty = 1, notes = "Default: Flanged Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+material = "steel"
+lubricant = "grease"
+applies_to = "Schumacher Cat PB Dirt Spec"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Revolution (not Clutch), Metal (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4559/Cat-PB-Dirt-Spec" },
+]
