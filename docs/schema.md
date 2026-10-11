@@ -97,8 +97,9 @@ is not a release year. The site shows such releases as year unknown and leaves
 them out of the by-date lists.
 
 `released`: the release date as precise as a source states it, `YYYY-MM-DD`
-or `YYYY-MM` (Tamiya's from TamiyaBase's model pages). It must agree with
-`year`. Never a document's date.
+or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
+from another source in that month is kept). It must agree with `year`. Never
+a document's date. For an announced release it is the planned date.
 
 ## part
 
@@ -119,7 +120,8 @@ former_names = ["COMPOSITE STEERING BLOCK"]
 ```
 
 Optional, generated when the source states it: `released`, the date the
-brand lists the part as released (HUDY's product list gives one per item),
+brand lists the part as released, `YYYY-MM-DD` or `YYYY-MM` (HUDY's product
+list gives a day per item, Tamiya's monthly new-items list a month),
 and `applies_to`, the models the
 brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 
