@@ -6,6 +6,10 @@ category = "servo"
 category_source = "curated"
 dimensions_mm = [64, 33, 73]
 weight_g = 363
+torque_kgcm = 110
+voltage = 14.8
+speed_s = 0.19
+voltage_range = "11.1V ~ 14.8V"
 motor = "cored"
 equivalent_to = [
   { spec = "spec/servo/jumbo-15t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
