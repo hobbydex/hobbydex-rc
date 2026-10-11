@@ -1,0 +1,19 @@
+id = "part/savox/SV-0235MG+"
+brand = "brand/savox"
+number = "SV-0235MG+"
+name = "SV-0235MG+ Jumbo Digital HV DC Motor Metal Gear Servo"
+category = "servo"
+category_source = "curated"
+gtin = "4710006994758"
+dimensions_mm = [65.8, 30, 57.9]
+weight_g = 200
+torque_kgcm = 35
+voltage = 7.4
+speed_s = 0.15
+voltage_range = "6.0V - 7.4V"
+gear_material = "metal"
+motor = "cored"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/jumbo-15t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

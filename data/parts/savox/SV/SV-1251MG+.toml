@@ -1,0 +1,19 @@
+id = "part/savox/SV-1251MG+"
+brand = "brand/savox"
+number = "SV-1251MG+"
+name = "SV-1251MG+ Mini Digital HV Coreless Metal Gear Servo"
+category = "servo"
+category_source = "curated"
+gtin = "4710006994857"
+dimensions_mm = [35, 15, 27.4]
+weight_g = 30
+torque_kgcm = 10
+voltage = 8.4
+speed_s = 0.085
+voltage_range = "6.0V - 8.4V"
+gear_material = "metal"
+motor = "coreless"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]

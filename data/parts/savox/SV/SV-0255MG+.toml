@@ -1,0 +1,18 @@
+id = "part/savox/SV-0255MG+"
+brand = "brand/savox"
+number = "SV-0255MG+"
+name = "SV-0255MG+ Micro Digital HV DC Motor Metal Gear Servo"
+category = "servo"
+category_source = "curated"
+dimensions_mm = [22.8, 12, 29.4]
+weight_g = 16
+torque_kgcm = 4.5
+voltage = 7.4
+speed_s = 0.13
+voltage_range = "6.0V - 7.4V"
+gear_material = "metal"
+motor = "cored"
+connector = "JR Universal + Colored Lead"
+equivalent_to = [
+  { spec = "spec/servo/micro-21t", match = "functional", notes = "Size class and spline from Savox's specifications; check the case size and mounting holes" },
+]
