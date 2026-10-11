@@ -1,0 +1,23 @@
+id = "part/rcscrewz/axi029b"
+brand = "brand/rcscrewz"
+number = "axi029b"
+name = "Axial SCX10 II 1955 Ford (AXI03001) Metal Shielded Bearing Kit"
+category = "bearing"
+category_source = "curated"
+material = "steel"
+seal = "metal"
+includes = [
+  { spec = "spec/bearing/5x10x4" },
+  { spec = "spec/bearing/5x11x4" },
+  { spec = "spec/bearing/5x14x5" },
+  { spec = "spec/bearing/7x14x3.5", notes = "Open" },
+  { spec = "spec/bearing/8x16x5" },
+  { spec = "spec/bearing/10x15x4" },
+]
+fits = [
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SCX10 II 1955 Ford (AXI03001)" },
+]
+notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
+links = [
+  { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/axi029b-axial-scx10-ii-1955-ford-axi03001-metal-shielded-bearing-kit/" },
+]
