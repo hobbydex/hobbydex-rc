@@ -1,0 +1,12 @@
+id = "part/muchmore-racing/MLI-T2500"
+brand = "brand/muchmore-racing"
+number = "MLI-T2500"
+name = "Much More LiPo Tx Battery 2500mAh 11.1V (Futaba, Sanwa)"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2500mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2500

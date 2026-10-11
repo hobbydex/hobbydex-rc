@@ -1,0 +1,14 @@
+id = "part/muchmore-racing/MLSG-HV10K"
+brand = "brand/muchmore-racing"
+number = "MLSG-HV10K"
+name = "IMPACT [Silicon Graphene] HV FD4 10000mAh/7.6V 135C Flat Hard Case"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-10000mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 10000
+c_rating = 135
+case = "hard"

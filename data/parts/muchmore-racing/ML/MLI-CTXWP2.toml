@@ -1,0 +1,13 @@
+id = "part/muchmore-racing/MLI-CTXWP2"
+brand = "brand/muchmore-racing"
+number = "MLI-CTXWP2"
+name = "CTXWP2 Li-Po Battery 4200mAh/11.1V 40C for CTXWP Tire Warmer"
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-4200mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 4200
+c_rating = 40
