@@ -3,3 +3,8 @@ brand = "brand/traxxas"
 number = "8267"
 name = "Weight, portal housing, brass (2) (34 grams)/ 2.5x8 CS (6) (requires #8251X, 8251R, 8251A, or 8251G outer portal housing)"
 material = "brass"
+related = [
+  { part = "part/traxxas/8251X", relation = "requires", notes = "link_part_refs" },
+  { part = "part/traxxas/8251R", relation = "requires", notes = "link_part_refs" },
+  { part = "part/traxxas/8251A", relation = "requires", notes = "link_part_refs" },
+]

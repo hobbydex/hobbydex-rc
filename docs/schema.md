@@ -253,6 +253,13 @@ rebrand_of = [{ part = "part/flysky/FS-GT5", source = "doc/community/2026-10-10-
 `name_ja`: the brand's Japanese name, kept when the English `name` is a
 translation (Yokomo publishes Japanese-only parts lists).
 
+`related`: other parts of the same brand this part goes with, as the brand's
+name or page says: `[{ part, relation }]` with relation requires (needs the
+other part: Tekno "requires TKR9057B"), fits (made to fit that part: Corally
+"fits part C-00180-022"), use-with, for (an accessory made for it: HUDY
+"Ejector for 106000") or replaces. Recorded on the citing part; the site
+shows it from both sides. tools/link_part_refs.py reads them from names.
+
 `supersedes`: the part this one replaces, when the brand has replaced it with
 an upgraded version (`supersedes = "part/team-corally/C-00180-194"` on
 C-00180-714). The site shows it on both parts.

@@ -5,3 +5,8 @@ name = "Shock Cap Bushings (requires TKR8727, fits TKR8702, TKR6003/B)"
 pack_qty = 4
 former_names = ["Shock Cap Bushings (4pcs, requires TKR8727)", "Shock Cap Bushings (4pcs, requires TKR8727) Differential List"]
 category = "shock"
+related = [
+  { part = "part/tekno/TKR8727", relation = "requires", notes = "link_part_refs" },
+  { part = "part/tekno/TKR8702", relation = "fits", notes = "link_part_refs" },
+  { part = "part/tekno/TKR6003", relation = "fits", notes = "link_part_refs" },
+]
