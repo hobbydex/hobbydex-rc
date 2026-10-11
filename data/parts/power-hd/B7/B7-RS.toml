@@ -1,0 +1,21 @@
+id = "part/power-hd/B7-RS"
+brand = "brand/power-hd"
+number = "B7-RS"
+name = "B7-RS HV Brushless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 13
+voltage = 7.4
+speed_s = 0.055
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [41, 20, 26.4]
+weight_g = 48
+gear_material = "titanium"
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/low-profile", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/b7-rs-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=189" },
+]

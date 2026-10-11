@@ -1,0 +1,21 @@
+id = "part/power-hd/EP-XYT"
+brand = "brand/power-hd"
+number = "EP-XYT"
+name = "EP-XYT High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 12
+voltage = 7.4
+speed_s = 0.06
+voltage_range = "6.0V - 7.4V"
+dimensions_mm = [40, 20, 26.4]
+weight_g = 48
+gear_material = "titanium"
+motor = "coreless"
+equivalent_to = [
+  { spec = "spec/servo/low-profile", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/ep-xyt-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=170" },
+]

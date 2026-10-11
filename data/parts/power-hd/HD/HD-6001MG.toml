@@ -1,0 +1,21 @@
+id = "part/power-hd/HD-6001MG"
+brand = "brand/power-hd"
+number = "HD-6001MG"
+name = "HD-6001MG Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 7
+voltage = 6
+speed_s = 0.14
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [40.7, 20.5, 39.5]
+weight_g = 56
+gear_material = "copper"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/hd-6001mg-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=42" },
+]

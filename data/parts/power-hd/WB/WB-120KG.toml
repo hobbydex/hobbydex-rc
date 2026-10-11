@@ -1,0 +1,21 @@
+id = "part/power-hd/WB-120KG"
+brand = "brand/power-hd"
+number = "WB-120KG"
+name = "WB-120KG HV Brushless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 120
+voltage = 16.8
+speed_s = 0.1
+voltage_range = "12.6V - 16.8V"
+dimensions_mm = [59.5, 29.5, 54.4]
+weight_g = 212
+gear_material = "steel"
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/jumbo-15t", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size, spline from Power HD's specifications; check the mounting holes" },
+]
+documents = ["doc/power-hd/wb-120kg-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=259" },
+]

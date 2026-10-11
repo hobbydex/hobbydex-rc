@@ -1,0 +1,20 @@
+id = "part/power-hd/DSM44"
+brand = "brand/power-hd"
+number = "DSM44"
+name = "DSM44 Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 1.6
+voltage = 6
+speed_s = 0.07
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [20.2, 8.7, 24]
+weight_g = 5.8
+gear_material = "aluminium"
+motor = "coreless"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=87" },
+]

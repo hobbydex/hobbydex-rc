@@ -1,0 +1,21 @@
+id = "part/power-hd/HD-1900A"
+brand = "brand/power-hd"
+number = "HD-1900A"
+name = "HD-1900A Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 1.5
+voltage = 6
+speed_s = 0.08
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [23, 12, 27.5]
+weight_g = 9
+gear_material = "plastic"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/hd-1900a-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=35" },
+]

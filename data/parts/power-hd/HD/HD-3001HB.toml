@@ -1,0 +1,21 @@
+id = "part/power-hd/HD-3001HB"
+brand = "brand/power-hd"
+number = "HD-3001HB"
+name = "HD-3001HB Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 4.4
+voltage = 6
+speed_s = 0.12
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [40.7, 20.5, 39.5]
+weight_g = 43
+gear_material = "plastic"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/hd-3001hb-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=37" },
+]

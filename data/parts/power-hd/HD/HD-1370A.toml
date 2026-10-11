@@ -1,0 +1,21 @@
+id = "part/power-hd/HD-1370A"
+brand = "brand/power-hd"
+number = "HD-1370A"
+name = "HD-1370A Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 0.6
+voltage = 6
+speed_s = 0.1
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [20.2, 8.5, 17.6]
+weight_g = 3.7
+gear_material = "plastic"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/hd-1370a-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=30" },
+]

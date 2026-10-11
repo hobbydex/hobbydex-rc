@@ -1,0 +1,22 @@
+id = "part/power-hd/1025PH"
+brand = "brand/power-hd"
+number = "1025PH"
+name = "1025PH Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 1.5
+voltage = 6
+speed_s = 0.07
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [17.2, 9, 18.7]
+weight_g = 4.8
+gear_material = "metal"
+motor = "cored"
+connector = "JST ZH 1.5 3Pin"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/1025ph-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=265" },
+]

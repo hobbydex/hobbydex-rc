@@ -1,0 +1,21 @@
+id = "part/power-hd/HD-1800A"
+brand = "brand/power-hd"
+number = "HD-1800A"
+name = "HD-1800A Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 1.3
+voltage = 6
+speed_s = 0.08
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [22.8, 11.5, 23.7]
+weight_g = 8
+gear_material = "plastic"
+motor = "coreless"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/hd-1800a-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=34" },
+]

@@ -1,0 +1,20 @@
+id = "part/power-hd/WH-80V1"
+brand = "brand/power-hd"
+number = "WH-80V1"
+name = "WH-80V1 High Voltage Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 80
+voltage = 8.4
+speed_s = 0.16
+voltage_range = "7.4V - 8.4V"
+dimensions_mm = [59.4, 29.5, 54.4]
+weight_g = 200
+gear_material = "steel"
+equivalent_to = [
+  { spec = "spec/servo/jumbo-15t", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size, spline from Power HD's specifications; check the mounting holes" },
+]
+documents = ["doc/power-hd/wh-80v1-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=206" },
+]

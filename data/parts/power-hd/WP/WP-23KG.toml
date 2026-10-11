@@ -1,0 +1,21 @@
+id = "part/power-hd/WP-23KG"
+brand = "brand/power-hd"
+number = "WP-23KG"
+name = "WP-23KG Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 23
+voltage = 6
+speed_s = 0.12
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [40.7, 20.5, 38.5]
+weight_g = 75
+gear_material = "titanium"
+motor = "coreless"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/wp-23kg-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=157" },
+]

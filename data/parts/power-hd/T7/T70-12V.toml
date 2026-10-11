@@ -1,0 +1,21 @@
+id = "part/power-hd/T70-12V"
+brand = "brand/power-hd"
+number = "T70-12V"
+name = "T70-12V HV Brushless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 75
+voltage = 12
+speed_s = 0.1
+voltage_range = "8.4V - 12V"
+dimensions_mm = [40.7, 20.5, 38.7]
+weight_g = 83
+gear_material = "steel"
+motor = "brushless"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/power-hd/website", notes = "Size class from the case size; Power HD states no spline; check the mounting holes" },
+]
+documents = ["doc/power-hd/t70-12v-spec-sheet"]
+links = [
+  { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=213" },
+]
