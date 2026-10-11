@@ -414,6 +414,14 @@ tyres and inserts only | wheels-included: wheels in the box, to be mounted |
 pre-mounted | pre-mounted-not-glued). A tyre on a wheel links to the wheel
 hex spec like a wheel.
 
+Shock springs carry, when the name states them: `rate` (the brand's word:
+soft | medium | hard | super soft | super hard), `rate_n_mm` (XRAY's C=0.86),
+`rate_lb_in` (3.95 lb), `wire_mm` and `free_length_mm` (a number, or a range
+as written, "75-77"). Rates are kept as stated, never converted. A brand's
+series of springs that differ only in those values shares a `range`
+("team-corally/shock-spring-free-rate-wire-c-00180-springs"), set by
+tools/link_spring_props.py.
+
 Wheels carry the same `scale`, `vehicle`, `position` and `wheel_size`, and
 when stated `beadlock` (true), `offset_mm` (as written, +2 or -0.75) and
 `width_mm`, and `color` as named ("black/blue": a black wheel with blue
