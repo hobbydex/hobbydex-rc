@@ -1,3 +1,10 @@
 id = "category/shock-spring"
 name = "Shock springs"
 description = "Shock springs by rate and length."
+key_fields = [
+  { field = "rate", label = "Rate", from = "part" },
+  { field = "rate_n_mm", label = "Rate", from = "part", unit = "N/mm" },
+  { field = "rate_lb_in", label = "Rate", from = "part", unit = "lb/in" },
+  { field = "wire_mm", label = "Wire", from = "part", unit = "mm" },
+  { field = "free_length_mm", label = "Length", from = "part", unit = "mm" },
+]
