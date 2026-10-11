@@ -6,5 +6,10 @@ category = "electronics"
 category_source = "curated"
 channels = 4
 protocol = "FHSS"
-notes = "Older RadioLink surface radio, not in the current product menu (2026-10-10). RadioLink's comparison page: the same FHSS spread spectrum as the AT9S Pro, up to 800 m with an R8F."
-documents = ["doc/radiolink/rc4gsv2-manual", "doc/radiolink/comparison-of-surface-transmitters"]
+notes = "Discontinued: RadioLink's receiver pages list it under out of production transmitters. Older RadioLink surface radio, not in the current product menu (2026-10-10). RadioLink's comparison page: the same FHSS spread spectrum as the AT9S Pro, up to 800 m with an R8F."
+dimensions_mm = [213, 117, 115.5]
+weight_g = 330
+includes = [
+  { part = "part/radiolink/R6FG", qty = 1, source = "doc/radiolink/rc4gsv2" },
+]
+documents = ["doc/radiolink/rc4gsv2", "doc/radiolink/rc4gsv2-manual", "doc/radiolink/comparison-of-surface-transmitters"]

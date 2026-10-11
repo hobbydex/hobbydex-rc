@@ -7,8 +7,9 @@ category_source = "curated"
 channels = 5
 protocol = "FHSS"
 weight_g = 319
-notes = "RadioLink comparison of surface transmitters: Channels: 5; Control Distance: 400 meters; Response Latency: 14ms; Operating Voltage: 4.8~16.8V DC; Screen: No color screen; Storage Model Quantity: 30 groups; Signal support: PWM&SBUS&PPM; Weight: 319g; Dimension: 174.8*116.4*224.2mm. Compatible receivers: R6FG, R16SM, R16F, R12F, R8FGH, R8EF, R8FG, R7FG, R6F, R4FGM."
+dimensions_mm = [174.8, 116.4, 224.2]
+notes = "RadioLink comparison of surface transmitters: Channels: 5; Control Distance: 400 meters; Response Latency: 14ms; Operating Voltage: 4.8~16.8V DC; Screen: No color screen; Storage Model Quantity: 30 groups; Signal support: PWM&SBUS&PPM; Weight: 319g; Dimension: 174.8*116.4*224.2mm. Compatible receivers: R6FG, R16SM, R16F, R12F, R8FGH, R8EF, R8FG, R7FG, R6F, R4FGM. RadioLink specifications: Operating Voltage: 4.8-15V, 6pcs of AA batteries or a 2S-4S LiPo battery; Operating Current: 80~120mA（Depending on power supply）; Antenna Length: 106mm (4.17”); Channel Resolution: 4096 with regular jitter of 0.25us; Battery Case Dimension: 89*59*25mm (3.5”*2.32”*0.98)."
 includes = [
   { part = "part/radiolink/R6FG", qty = 1, source = "doc/radiolink/rc4gsv3" },
 ]
-documents = ["doc/radiolink/rc4gsv3", "doc/radiolink/rc4gsv3-manual", "doc/radiolink/comparison-of-surface-transmitters"]
+documents = ["doc/radiolink/rc4gsv3", "doc/radiolink/rc4gsv3-specifications", "doc/radiolink/rc4gsv3-manual", "doc/radiolink/comparison-of-surface-transmitters"]
