@@ -6,3 +6,6 @@ pack_qty = 4
 notes = "Name from the Part List of a scanned Quanum manual"
 category = "drivetrain"
 material = "aluminium"
+fits = [
+  { kit = "kit/quanum/vandal-xl", type = "replaces", replaces = "part/quanum/10444", source = "doc/quanum/vandal-xl-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

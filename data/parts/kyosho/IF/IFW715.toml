@@ -6,3 +6,6 @@ notes = "Name read by OCR from a scanned Kyosho parts list; verify before relyin
 category = "chassis"
 name_source = "ocr"
 material = "carbon"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "replaces", replaces = "part/kyosho/IF706", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts", notes = "Same part in another material (link_upgrades.py)" },
+]

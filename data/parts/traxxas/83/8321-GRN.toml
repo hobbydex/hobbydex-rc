@@ -5,3 +5,6 @@ name = "Chassis brace, front, 6061-T6 aluminum (green-anodized)"
 category = "chassis"
 material = "aluminium"
 material_grade = "6061-T6"
+fits = [
+  { kit = "kit/traxxas/4-tec", type = "replaces", replaces = "part/traxxas/8321", source = "doc/traxxas/83424-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+]
