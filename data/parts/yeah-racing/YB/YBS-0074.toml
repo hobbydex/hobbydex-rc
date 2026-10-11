@@ -3,6 +3,11 @@ brand = "brand/yeah-racing"
 number = "YBS-0074"
 name = "Ball bearing set (16Pcs) RC10"
 pack_qty = 16
+includes = [
+  { spec = "spec/bearing/flanged-4.762x7.938x3.175", qty = 9, source = "doc/yeah-racing/rcteam-catalogue" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 5, source = "doc/yeah-racing/rcteam-catalogue" },
+  { spec = "spec/bearing/4.762x7.938x3.175", qty = 2, source = "doc/yeah-racing/rcteam-catalogue" },
+]
 fits = [
   { kit = "kit/team-associated/rc10", type = "direct", source = "doc/yeah-racing/rcteam-catalogue" },
 ]
