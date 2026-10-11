@@ -405,6 +405,19 @@ and `weight_g`. A motor and ESC combo lists its components with `includes`.
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.
 
+Bodies carry, when the brand states them, `wheelbase_mm` (the wheelbase
+the body is made for, Killerbody's "Long Wheelbase: 313 mm") and
+`width_mm` (the body's width), with `scale`. The chassis a body is made for
+go into `fits` like any other part.
+
+```toml
+name = "1/10 Jeep Gladiator Rubicon Hard Body Kit"
+category = "body"
+scale = "1/10"
+wheelbase_mm = 313
+width_mm = 193
+```
+
 Tyres carry, when the brand states them: `compound` (the brand's name for
 it, "Super Soft Long Wear"), `scale` ("1/8"), `vehicle` (buggy | truggy |
 short-course | stadium-truck), `position` (front | rear | front-rear |

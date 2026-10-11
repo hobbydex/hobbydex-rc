@@ -1,3 +1,8 @@
 id = "category/body"
 name = "Body and covers"
-description = "Bodies, body shells and body parts such as mirrors, lights and covers."
+description = "Bodies, body shells and body parts such as mirrors, lights and covers. A body's wheelbase and width are given when the brand states them."
+key_fields = [
+  { field = "scale", label = "Scale", from = "part" },
+  { field = "wheelbase_mm", label = "Wheelbase", from = "part", unit = "mm" },
+  { field = "width_mm", label = "Width", from = "part", unit = "mm" },
+]
