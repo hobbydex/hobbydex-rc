@@ -1,0 +1,14 @@
+id = "part/isdt/BC-8S"
+brand = "brand/isdt"
+number = "BC-8S"
+name = "BC-8S battery checker"
+category = "charger"
+category_source = "curated"
+lipo_cells = [1, 8]
+dimensions_mm = [54, 30, 9]
+weight_g = 15
+notes = "Specifications: Minimum operating voltage: 2.6V (1S battery), Voltage measurement range: 1.0 to 5.0V, Supports battery type: LiPo, LiHv, LiFe, LiIon, Support the number of batteries: 1 to 8S, Voltage measurement accuracy: + 5 mV, Buzzer sound pressure: 85dB; Specifications from the BC 8S manual; isdt.co lists the BC-8S only on its support page (no product page)"
+documents = ["doc/isdt/bc8s-manual"]
+links = [
+  { site = "ISDT", url = "https://www.isdt.co/down/pdf/BC-8S_en.pdf" },
+]
