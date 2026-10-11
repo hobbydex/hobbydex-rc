@@ -1,0 +1,18 @@
+id = "part/awesomatix/SC3X5"
+brand = "brand/awesomatix"
+number = "SC3X5"
+name = "M3x5 Small Button Head Screw"
+pack_qty = 6
+fits = [
+  { kit = "kit/awesomatix/a12", type = "direct", source = "doc/awesomatix/shop-category-604" },
+  { kit = "kit/awesomatix/a12wc", type = "direct", source = "doc/awesomatix/shop-category-629" },
+  { kit = "kit/awesomatix/a12x", type = "direct", source = "doc/awesomatix/shop-category-628" },
+]
+links = [
+  { site = "Awesomatix", url = "https://shop.awesomatix.com/index.php?productID=1848" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x5-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
