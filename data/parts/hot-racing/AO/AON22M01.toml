@@ -4,8 +4,8 @@ number = "AON22M01"
 name = "Kraton/Outcast Aluminum \"HD Bearings\" Rear Axle Carriers (Black) (2)"
 pack_qty = 2
 fits = [
-  { kit = "kit/arrma/kraton", type = "direct", source = "doc/hot-racing/rcvisions-catalogue" },
-  { kit = "kit/arrma/outcast", type = "direct", source = "doc/hot-racing/rcvisions-catalogue" },
+  { kit = "kit/arrma/kraton", type = "replaces", replaces = "part/arrma/AR330404", source = "doc/hot-racing/rcvisions-catalogue" },
+  { kit = "kit/arrma/outcast", type = "replaces", replaces = "part/arrma/AR330404", source = "doc/hot-racing/rcvisions-catalogue" },
 ]
 links = [
   { site = "RC Visions", url = "https://rcvisions.com/products/aluminum-rear-hubs-hd-bearings-kraton-outcast" },

@@ -3,8 +3,8 @@ brand = "brand/hot-racing"
 number = "AON21M01"
 name = "Kraton/Outcast Aluminum \"HD Bearings\" Axle Carriers (Black)"
 fits = [
-  { kit = "kit/arrma/kraton", type = "direct", source = "doc/hot-racing/rcvisions-catalogue" },
-  { kit = "kit/arrma/outcast", type = "direct", source = "doc/hot-racing/rcvisions-catalogue" },
+  { kit = "kit/arrma/kraton", type = "replaces", replaces = "part/arrma/AR330505", source = "doc/hot-racing/rcvisions-catalogue" },
+  { kit = "kit/arrma/outcast", type = "replaces", replaces = "part/arrma/AR330505", source = "doc/hot-racing/rcvisions-catalogue" },
 ]
 links = [
   { site = "RC Visions", url = "https://rcvisions.com/products/aluminum-steering-blocks-hd-bearings-kraton-outcast" },
