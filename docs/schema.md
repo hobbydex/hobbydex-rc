@@ -135,8 +135,11 @@ category = "shock-spring"
 
 Optional, hand-curated (the importer preserves them when it regenerates the
 file): `material` (steel | stainless | titanium | aluminium | brass | plastic |
-ceramic | carbide | unknown; for a bearing, the balls: ceramic is a hybrid
-bearing), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
+carbon | ceramic | carbide | unknown; carbon is carbon fibre, which brands also
+call graphite; plastic covers composite, nylon and POM; for a bearing, the
+balls: ceramic is a hybrid bearing), `material_grade` (the alloy as named:
+"7075-T6", "6061"; tools/link_material.py reads both from names and leaves
+a name with two materials unset), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
 `thread_type` (machine | self-tapping), for shocks `shock_part` (complete | body |
 shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
 and `shaft_mm` (shaft diameter), `name_source` (`ocr`: the name was read by OCR from a scanned document and not checked yet; `manufacturer`: corrected from the manufacturer's own product page), `range` (a shared id such as "rc4wd/540-crawler-brushed-motor" for the
