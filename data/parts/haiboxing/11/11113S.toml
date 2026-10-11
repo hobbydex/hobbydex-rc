@@ -1,0 +1,20 @@
+id = "part/haiboxing/11113S"
+brand = "brand/haiboxing"
+number = "11113S"
+name = "11.1V, 1300mAh 3S Polymer Lithium-ion battery"
+applies_to = "HBX 16890SA & 3100A"
+notes = "Store title: HAIBOXING Brushless RC Cars 3S Polymer Lithium-ion battery HPY 703462,1/16th 1/14 Scale Spare Parts 11.1V, 1300mAh, 14.43Wh RC Truck Upgraded Batteries Apply to 16890SA & 3100A(11113S)"
+fits = [
+  { kit = "kit/haiboxing/16890sa", type = "direct", source = "doc/haiboxing/store" },
+  { kit = "kit/haiboxing/3100a", type = "direct", source = "doc/haiboxing/store" },
+]
+links = [
+  { site = "Haiboxing", url = "https://www.haiboxing.com/products/haiboxing-brushless-rc-cars-3s-polymer-lithium-ion-battery-hpy-703462-1-16th-1-14-scale-spare-parts-11-1v-1300mah-14-43wh-rc-truck-upgraded-batteries-apply-to-16890sa-3100a11113s" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 1300
+category = "battery"
