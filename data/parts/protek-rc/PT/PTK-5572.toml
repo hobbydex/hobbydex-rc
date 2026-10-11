@@ -1,0 +1,15 @@
+id = "part/protek-rc/PTK-5572"
+brand = "brand/protek-rc"
+number = "PTK-5572"
+name = "3S 90C Si-Graphene + HV LiPo Battery w/XT60 Connector (11.4V/1800mAh)"
+category = "battery"
+category_source = "curated"
+weight_g = 135
+equivalent_to = [
+  { spec = "spec/battery/lihv-3s-1800mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+]
+c_rating = 90
+connector = "XT60"
+links = [
+  { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-3s-90c-si-graphene-hv-lipo-battery-w-xt60-connector-11-4v-1800mah" },
+]
