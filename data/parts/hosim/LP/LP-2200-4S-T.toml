@@ -1,0 +1,17 @@
+id = "part/hosim/LP-2200-4S-T"
+brand = "brand/hosim"
+number = "LP-2200-4S-T"
+name = "Hosim 14.8V 2200mAh 4S 100C LiPo Battery with T Connector for RC Cars & Models"
+applies_to = "RC Cars & Models"
+chemistry = "lipo"
+cells = 4
+capacity_mah = 2200
+c_rating = 100
+connector = "Deans"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-2200mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-14-8v-2200mah-4s-100c-lipo-battery-with-t-connector-for-rc-cars-models" },
+]
+category = "battery"

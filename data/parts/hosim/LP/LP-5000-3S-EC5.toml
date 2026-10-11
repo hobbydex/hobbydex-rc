@@ -1,0 +1,17 @@
+id = "part/hosim/LP-5000-3S-EC5"
+brand = "brand/hosim"
+number = "LP-5000-3S-EC5"
+name = "Hosim 11.1V 5000mAh 3S 50C LiPo Battery with EC5 Connector for RC Cars & Models"
+applies_to = "RC Cars & Models"
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 50
+connector = "EC5"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-11-1v-5000mah-3s-50c-lipo-battery-with-ec5-connector-for-rc-cars-models" },
+]
+category = "battery"

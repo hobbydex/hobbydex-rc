@@ -1,0 +1,17 @@
+id = "part/hosim/LP-5000-6S-XT90"
+brand = "brand/hosim"
+number = "LP-5000-6S-XT90"
+name = "Hosim 22.2V 5000mAh 6S 100C LiPo Battery with XT90 Connector for RC Cars & Models"
+applies_to = "RC Cars & Models"
+chemistry = "lipo"
+cells = 6
+capacity_mah = 5000
+c_rating = 100
+connector = "XT90"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-5000mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-22-2v-5000mah-6s-100c-lipo-battery-with-xt90-connector-for-rc-cars-models" },
+]
+category = "battery"

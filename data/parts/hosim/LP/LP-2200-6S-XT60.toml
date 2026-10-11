@@ -1,0 +1,17 @@
+id = "part/hosim/LP-2200-6S-XT60"
+brand = "brand/hosim"
+number = "LP-2200-6S-XT60"
+name = "Hosim 22.2V 2200mAh 6S 100C LiPo Battery with XT60 Connector for RC Cars & Models"
+applies_to = "RC Cars & Models"
+chemistry = "lipo"
+cells = 6
+capacity_mah = 2200
+c_rating = 100
+connector = "XT60"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-2200mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-22-2v-2200mah-6s-100c-lipo-battery-with-xt60-connector-for-rc-cars-models" },
+]
+category = "battery"

@@ -17,14 +17,14 @@ fits = [
   { kit = "kit/hosim/x25", type = "direct", source = "doc/hosim/store" },
   { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
 ]
-links = [
-  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-7-4v-1500mah-15c-lipo-battery-4pcs" },
-]
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-]
 chemistry = "lipo"
 cells = 2
 capacity_mah = 1500
 c_rating = 15
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-7-4v-1500mah-15c-lipo-battery-4pcs" },
+]
 category = "battery"
