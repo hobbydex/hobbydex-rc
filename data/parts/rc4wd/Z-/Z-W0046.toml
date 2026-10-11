@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0046"
 brand = "brand/rc4wd"
 number = "Z-W0046"
 name = "American Racing 1.3\" Outlaw II Deep Dish Beadlock Wheels"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-american-racing-13-outlaw-ii-deep-dish-beadlock-wheels.html" },
+]
+material = "aluminium"
+width_mm = 28
+offset_mm = -7.5
+equivalent_to = [
+  { spec = "spec/wheel-hex/7mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.3\""

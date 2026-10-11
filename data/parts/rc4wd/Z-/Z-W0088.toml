@@ -2,6 +2,16 @@ id = "part/rc4wd/Z-W0088"
 brand = "brand/rc4wd"
 number = "Z-W0088"
 name = "American Racing 1.9\" Outlaw II Deep Dish Beadlock Wheels"
+pack_qty = 4
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-american-racing-19-outlaw-2-deep-dish-beadlock-wheels.html" },
+]
+material = "aluminium"
+width_mm = 32.2
+offset_mm = -12.1
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""
 beadlock = true

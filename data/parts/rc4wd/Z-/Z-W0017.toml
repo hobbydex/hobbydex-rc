@@ -2,6 +2,16 @@ id = "part/rc4wd/Z-W0017"
 brand = "brand/rc4wd"
 number = "Z-W0017"
 name = "Sasquatch 1.9\" Beadlock Wheels"
+pack_qty = 4
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/sasquatch-19-beadlock-wheels.html" },
+]
+material = "aluminium"
+width_mm = 32.1
+offset_mm = 1.5
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""
 beadlock = true

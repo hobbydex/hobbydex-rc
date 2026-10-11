@@ -2,7 +2,15 @@ id = "part/rc4wd/Z-W0136"
 brand = "brand/rc4wd"
 number = "Z-W0136"
 name = "Landies Vintage 1.9\" Stamped Steel Beadlock Wheels"
+pack_qty = 4
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-19-landies-vintage-stamped-steel-beadlock-wheels.html" },
+]
+material = "aluminium"
+width_mm = 22.9
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""
 beadlock = true
-material = "steel"

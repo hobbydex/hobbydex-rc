@@ -2,6 +2,15 @@ id = "part/rc4wd/Z-W0020"
 brand = "brand/rc4wd"
 number = "Z-W0020"
 name = "Black Rhino Ouray 1.9\" Beadlock Wheels"
+links = [
+  { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-black-rhino-ouray-19-ouray-beadlock-wheels.html" },
+]
+material = "aluminium"
+width_mm = 27.1
+offset_mm = -5.25
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""
 beadlock = true
