@@ -10,6 +10,12 @@ speed_s = 0.2
 dimensions_mm = [31, 16, 30.7]
 weight_g = 34
 motor = "cored"
+gear_material = "metal"
 equivalent_to = [
   { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from Futaba's specifications; check the mounting holes" },
 ]
+notes = "Futaba specifications: Futaba stock number 01102221-3; features: Analog, Metal Gear; case size class Mini/Slim."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/s3016/" },
+]
+documents = ["doc/futaba/s3016"]

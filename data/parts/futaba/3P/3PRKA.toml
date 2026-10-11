@@ -4,3 +4,13 @@ number = "3PRKA"
 name = "3PRKA radio"
 category = "electronics"
 category_source = "curated"
+channels = 3
+protocol = "FHSS"
+related = [
+  { part = "part/futaba/R203GF", relation = "use-with" },
+]
+notes = "Futaba radio set (transmitter and receiver). Futaba stock numbers 01004363-3; transmitter: FHSS SYSTEM, WHEEL TYPE, 3 CHANNELS."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/3prka/" },
+]
+documents = ["doc/futaba/3prk"]

@@ -4,3 +4,14 @@ number = "6PV"
 name = "6PV radio"
 category = "electronics"
 category_source = "curated"
+channels = 6
+protocol = "F-4G"
+related = [
+  { part = "part/futaba/R404SBS", relation = "use-with" },
+  { part = "part/futaba/R404SBS-E", relation = "use-with" },
+]
+notes = "Futaba radio set (transmitter and receiver). Futaba stock numbers 01004442-1, 01004441-1; transmitter: WHEEL SYSTEM, 6 CHANNELS (F-4G SYSTEM), 4 CHANNELS WITH TFHSS-SR, T-FHSS SYSTEM; systems: F-4G, T-FHSS, S-FHSS; receiver options: R404SBS, R404SBSE."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/6pv/" },
+]
+documents = ["doc/futaba/t6pv-full-manual-eng"]

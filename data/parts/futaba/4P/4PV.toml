@@ -4,3 +4,13 @@ number = "4PV"
 name = "4PV radio"
 category = "electronics"
 category_source = "curated"
+channels = 4
+protocol = "T-FHSS"
+related = [
+  { part = "part/futaba/R304SB", relation = "use-with" },
+]
+notes = "Futaba radio set (transmitter and receiver). Futaba stock numbers 01004348-3; transmitter: T-FHSS/S-FHSS SYSTEM, WHEEL TYPE, 4 CHANNELS; systems: T-FHSS, S-FHSS."
+links = [
+  { site = "Futaba", url = "https://futabausa.com/product/4pv/" },
+]
+documents = ["doc/futaba/4pv-e"]
