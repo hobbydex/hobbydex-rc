@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0300"
 brand = "brand/rc4wd"
 number = "Z-W0300"
 name = "Level 8 Bully Pro 6 1.9\" Beadlock Wheels"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Level-8-Bully-Pro-6-19-Beadlock-Wheels_p_7555.html" },
+]
+material = "aluminium"
+width_mm = 26
+offset_mm = -2.3
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.9\""

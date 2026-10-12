@@ -1,0 +1,16 @@
+id = "part/serpent/110190"
+brand = "brand/serpent"
+number = "110190"
+name = "Screw allen countersunk M2.2x4"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/f110", type = "direct", source = "doc/serpent/f110-sf4-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110190" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.2x4-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

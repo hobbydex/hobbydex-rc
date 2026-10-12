@@ -1,0 +1,16 @@
+id = "part/reve-d/RT-005A"
+brand = "brand/reve-d"
+number = "RT-005A"
+name = "SPM Titanium M4x8mm Set Screw"
+pack_qty = 4
+name_ja = "SPMチタン製 M4×8mm セットスクリュー(4本入)"
+notes = "Discontinued (生産終了) on Reve D's site when read (2026-10). English name translated from Reve D's Japanese listing."
+links = [
+  { site = "Rêve D", url = "https://teamreved.com/product/rt-005" },
+]
+documents = ["doc/reve-d/teamreved-products"]
+equivalent_to = [
+  { spec = "spec/screw/m4x8-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"
+category = "screw"

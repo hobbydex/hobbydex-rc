@@ -2,12 +2,16 @@ id = "release/arrma/ara7704v3"
 kit = "kit/arrma/mojave-6s"
 brand = "brand/arrma"
 number = "ARA7704V3"
-name = "Mojave 6S EXB V3 4X4 RTR, black"
+name = "Mojave 6S EXB 4X4 RTR Brushless Desert Truck, black"
 year = 2026
 kind = "rtr"
 status = "released"
+gtin = "660132664435"
 documents = ["doc/arrma/ara7704v3-manual", "doc/arrma/ara7704v3-part-list", "doc/arrma/ara7704v3-product-page"]
 contains = [
+  { part = "part/arrma/ARA-4298", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA330645", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA610054", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/AR310431", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
   { part = "part/arrma/AR310449", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
   { part = "part/arrma/AR310450", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
@@ -143,7 +147,6 @@ contains = [
   { part = "part/arrma/ARA330606", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
   { part = "part/arrma/ARA330607", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
   { part = "part/arrma/ARA330608", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
-  { part = "part/arrma/ARA330645", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
   { part = "part/arrma/ARA330657", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
   { part = "part/arrma/ARA330658", role = "listed", source = "doc/arrma/ara7704v3-part-list" },
   { part = "part/arrma/ARA330681", role = "listed", source = "doc/arrma/ara7704v3-part-list" },

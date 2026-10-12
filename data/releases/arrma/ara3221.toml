@@ -1,0 +1,15 @@
+id = "release/arrma/ara3221"
+kit = "kit/arrma/fury-2wd"
+brand = "brand/arrma"
+number = "ARA3221"
+name = "Fury 2WD RTR Brushed Short Course Truck, green"
+kind = "rtr"
+status = "discontinued"
+gtin = "660132944964"
+documents = ["doc/arrma/ara3221-exploded-view", "doc/arrma/ara3221-manual-ml", "doc/arrma/ara3221-parts-tech-pack-ml", "doc/arrma/ara3221-product-page"]
+contains = [
+  { part = "part/arrma/ARA-1575", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA311158", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/arrma/ara3221-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz transmitter" },
+  { part = "part/spektrum/SPMS660", role = "kit", source = "doc/arrma/ara3221-product-page", qty = 1, notes = "In the box: Spektrum S660 servo" },
+]

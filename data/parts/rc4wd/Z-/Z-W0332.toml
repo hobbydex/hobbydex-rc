@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0332"
 brand = "brand/rc4wd"
 number = "Z-W0332"
 name = "Slot Mag 1.55\" Wheels"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/slot-mag-155-wheels.html" },
+]
+material = "aluminium"
+width_mm = 28
+offset_mm = -9.4
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.55\""

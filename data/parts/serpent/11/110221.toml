@@ -1,0 +1,16 @@
+id = "part/serpent/110221"
+brand = "brand/serpent"
+number = "110221"
+name = "Pin 1.7x7.6"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/medius-x20-mid", type = "direct", source = "doc/serpent/medius-x20-mid-alu-spares" },
+  { kit = "kit/serpent/project-4x", type = "direct", source = "doc/serpent/project-4x-pro-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110221" },
+]
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/1.7x7.6", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

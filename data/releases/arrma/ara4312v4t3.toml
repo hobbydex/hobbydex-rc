@@ -8,6 +8,7 @@ status = "released"
 gtin = "660132936334"
 documents = ["doc/arrma/ar4312v4-parts-tech-pack-ml", "doc/arrma/ara4312v4-exploded-view", "doc/arrma/ara4312v4-manual-ml", "doc/arrma/ara4312v4-product-page"]
 contains = [
+  { part = "part/arrma/ARA-1575", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/AR310775", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
   { part = "part/arrma/AR310780", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
   { part = "part/arrma/AR310783", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
@@ -82,7 +83,6 @@ contains = [
   { part = "part/arrma/ARA-1382", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
   { part = "part/arrma/ARA-1383", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
   { part = "part/arrma/ARA-1386", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
-  { part = "part/arrma/ARA-1575", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
   { part = "part/arrma/ARA-2091", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
   { part = "part/arrma/ARA-2092", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },
   { part = "part/arrma/ARA-2257", role = "listed", source = "doc/arrma/ara4312v4-exploded-view" },

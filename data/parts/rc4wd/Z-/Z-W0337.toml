@@ -2,8 +2,14 @@ id = "part/rc4wd/Z-W0337"
 brand = "brand/rc4wd"
 number = "Z-W0337"
 name = "OEM 6-Lug Stamped Steel 1.55\" Beadlock Wheels (Black and Chrome)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/oem-6-lug-stamped-steel-155-beadlock-wheels-black-and-chrome.html" },
+]
+width_mm = 21.5
+offset_mm = 5.7
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.55\""

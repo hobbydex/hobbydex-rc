@@ -2,10 +2,15 @@ id = "part/rc4wd/Z-W0345"
 brand = "brand/rc4wd"
 number = "Z-W0345"
 name = "Stamped Steel 1.0\" Stock Beadlock Wheels (Plain)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/stamped-steel-10-stock-beadlock-wheels-plain.html" },
+]
+material = "steel"
+width_mm = 14.8
+equivalent_to = [
+  { spec = "spec/wheel-hex/7mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.0\""
 beadlock = true
-material = "steel"

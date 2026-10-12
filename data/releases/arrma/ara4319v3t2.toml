@@ -1,0 +1,13 @@
+id = "release/arrma/ara4319v3t2"
+kit = "kit/arrma/vendetta"
+brand = "brand/arrma"
+number = "ARA4319V3T2"
+name = "Vendetta 3S 4X4 RTR Brushless All-Road Street Bash, blue"
+kind = "rtr"
+status = "discontinued"
+documents = ["doc/arrma/ara4102v4-boost-upgrade-chart", "doc/arrma/ara4102v4-boost-upgrade-path-en", "doc/arrma/ara4319v3-manual-multi", "doc/arrma/ara4319v3-product-page", "doc/arrma/vendetta-3s-blx-exploded-view"]
+contains = [
+  { part = "part/arrma/ARA311158", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/spektrum/SPMS651", role = "kit", source = "doc/arrma/ara4319v3-product-page", qty = 1 },
+  { part = "part/spektrum/SPMSR6200A", role = "kit", source = "doc/arrma/ara4319v3-product-page", qty = 1, notes = "In the box: Spektrum SR6200A AVC Receiver" },
+]

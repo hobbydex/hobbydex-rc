@@ -1,0 +1,17 @@
+id = "part/lrp/430421U"
+brand = "brand/lrp"
+number = "430421U"
+name = "ANTIX by LRP - 5900 - 7.4V - 50C LiPo Car Hardcase - T-Plug"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430421u/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5900mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 5900
+c_rating = 50
+case = "hard"
