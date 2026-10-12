@@ -1,0 +1,15 @@
+id = "release/arrma/ara3205"
+kit = "kit/arrma/vorteks-2wd"
+brand = "brand/arrma"
+number = "ARA3205"
+name = "Vorteks 2WD RTR Brushed Stadium Truck, blue"
+kind = "rtr"
+status = "discontinued"
+gtin = "660132950323"
+documents = ["doc/arrma/ara3205-exploded-view", "doc/arrma/ara3205-manual-ml", "doc/arrma/ara3205-parts-tech-pack-ml", "doc/arrma/ara3205-product-page"]
+contains = [
+  { part = "part/arrma/ARA-1575", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA311158", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/arrma/ara3205-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz Transmitter" },
+  { part = "part/spektrum/SPMS660", role = "kit", source = "doc/arrma/ara3205-product-page", qty = 1, notes = "In the box: Spektrum S660 Servo" },
+]

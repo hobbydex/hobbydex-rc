@@ -7,6 +7,8 @@ kind = "rtr"
 status = "discontinued"
 documents = ["doc/arrma/ara8710-manual-multi", "doc/arrma/ara8710-product-page", "doc/arrma/outcast-6s-exb-exploded-view"]
 contains = [
+  { part = "part/arrma/ARA310981", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA330645", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/spektrum/SPMS652", role = "kit", source = "doc/arrma/ara8710-product-page", qty = 1 },
   { part = "part/spektrum/SPMSR6110AT", role = "kit", source = "doc/arrma/ara8710-product-page", qty = 1, notes = "In the box: Spektrum SR6110AT AVC Receiver" },
   { part = "part/spektrum/SPMXSM1700", role = "kit", source = "doc/arrma/ara8710-product-page", qty = 1 },
@@ -117,7 +119,6 @@ contains = [
   { part = "part/arrma/ARA310978", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA310979", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA310980", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
-  { part = "part/arrma/ARA310981", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA310982", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA310983", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA310984", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
@@ -152,7 +153,6 @@ contains = [
   { part = "part/arrma/ARA330608", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA330621", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA330622", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
-  { part = "part/arrma/ARA330645", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA330654", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA330655", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
   { part = "part/arrma/ARA330656", role = "listed", source = "doc/arrma/outcast-6s-exb-exploded-view" },
