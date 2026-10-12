@@ -3,10 +3,11 @@ kit = "kit/tamiya/hornet"
 brand = "brand/tamiya"
 number = "58336"
 name = "The Hornet"
+year = 2004
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58336-manual"]
+documents = ["doc/tamiya/58336-manual", "doc/tamiya/58336-product-page", "doc/tamiya/58336-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
 contains = [
   { part = "part/tamiya/10005072", role = "kit", source = "doc/tamiya/58336-manual", step = "MR6" },
   { part = "part/tamiya/10005127", role = "kit", source = "doc/tamiya/58336-manual" },
@@ -84,3 +85,4 @@ contains = [
   { part = "part/tamiya/81715", role = "listed", source = "doc/tamiya/58336-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 14)" },
   { part = "part/tamiya/86005", role = "listed", source = "doc/tamiya/58336-manual", notes = "Named in the manual as a paint to use, not in the box (page 14)" },
 ]
+released = "2004-12"
