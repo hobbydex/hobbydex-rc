@@ -1,0 +1,15 @@
+id = "part/absima/2000008"
+brand = "brand/absima"
+number = "2000008"
+name = "6-Channel Radio \"CR6P Carbon\" 2.4 GHz incl. Receiver"
+category = "electronics"
+channels = 6
+protocol = "AFHDS 2A"
+includes = [
+  { part = "part/absima/2020013", qty = 1 },
+]
+rebrand_of = [
+  { part = "part/flysky/FS-GT5", source = "doc/community/2026-10-12-absima-cr6p-is-flysky-gt5", notes = "Same 6-channel car and boat radio as the FlySky GT5, with the same low-voltage alarm (AA cells below 4.4 V, 2S lithium below 7.4 V); its receiver, the R6FS, is the FlySky BS6" },
+]
+notes = "Car and boat; powered by AA cells or a 2S lithium pack; receiver R6FS with S.V.C. gyro"
+documents = ["doc/absima/2000008-manual-nl"]
