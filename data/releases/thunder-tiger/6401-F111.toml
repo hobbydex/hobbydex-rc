@@ -6,9 +6,10 @@ name = "Monster Truck MT4-G3 Brushless (Red)"
 kind = "rtr"
 status = "released"
 notes = "Release year unknown; in the Thunder Tiger shop when read (2026-10-10)"
-documents = ["doc/thunder-tiger/6401-f-manual-jd6203", "doc/thunder-tiger/6401-f-part-list-jd7632", "doc/thunder-tiger/shop"]
+documents = ["doc/thunder-tiger/6401-f-manual-jd6203", "doc/thunder-tiger/6401-f-part-list-jd7632", "doc/thunder-tiger/product-page-10", "doc/thunder-tiger/shop"]
 links = [
   { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/thunder-tiger-rc-car-monster-truck-mt4-g3-brushless" },
+  { site = "Thunder Tiger", url = "https://ttg.thundertiger.com/products-detail.php?id=10&lang=en" },
 ]
 contains = [
   { part = "part/thunder-tiger/PD01-0003", role = "kit", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
@@ -183,9 +184,14 @@ contains = [
   { part = "part/thunder-tiger/PD8954", role = "option", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
   { part = "part/thunder-tiger/PD8955", role = "option", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
   { part = "part/thunder-tiger/PD8961", role = "option", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
+  { part = "part/thunder-tiger/PD9016", role = "kit", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
+  { part = "part/thunder-tiger/PD9017", role = "kit", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
   { part = "part/thunder-tiger/PD9041", role = "kit", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
   { part = "part/thunder-tiger/PD9042-L", role = "kit", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
   { part = "part/thunder-tiger/PD9042-R", role = "kit", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
   { part = "part/thunder-tiger/PD9043", role = "kit", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
   { part = "part/thunder-tiger/PD9044", role = "kit", source = "doc/thunder-tiger/6401-f-part-list-jd7632" },
+  { part = "part/thunder-tiger/PD02-0009", role = "listed", source = "doc/thunder-tiger/product-page-10" },
+  { part = "part/thunder-tiger/PD02-0011", role = "listed", source = "doc/thunder-tiger/product-page-10" },
+  { part = "part/thunder-tiger/PD1976", role = "listed", source = "doc/thunder-tiger/product-page-10" },
 ]
