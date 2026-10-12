@@ -1,0 +1,15 @@
+id = "part/toolkitrc/M6"
+brand = "brand/toolkitrc"
+number = "M6"
+name = "M6 DC charger"
+category = "charger"
+category_source = "curated"
+power_w = 150
+lipo_cells = [1, 6]
+dimensions_mm = [70, 50, 26]
+weight_g = 80
+notes = "Specifications: Input: 7-28V@MAX12A; Battery Type: LiPo LiHV LiFe Lion@1-6S / NiMh @1-16S Pb @1-12S; Balance current: 400mA @2-6S; Accuracy: ±0.01V; Charging power: 0.1-10A@10W (as printed; the manual's product description says MAX 10A @150W); Discharging power: 0.1-10A@150W Recycle Mode / 0.1-2A@8W Normal Mode; USB: 2.1A@5V upgrade; Measuring: PWM 880us-2200us @20-400Hz, PPM 880us-2200us*8Ch @20-50hz, SBUS 880us-2200us*16ch @20-100Hz, Voltage 1.0V-5.0V @1-6S, IR 1-500mR @1-8S; Output: PWM 500us-2500us @20-1000Hz, PPM 880us-2200us*8ch @50hz, SBUS 880us-2200us*16ch @74Hz, Power 1-10A@1-28V Mode: CC+CV; Specifications from the M6 manual (download.toolkitrc.com); Discontinued (no longer in the toolkitrc.com shop; manuals still on download.toolkitrc.com)"
+documents = ["doc/toolkitrc/m6-manual"]
+links = [
+  { site = "ToolkitRC", url = "https://download.toolkitrc.com/m6/" },
+]
