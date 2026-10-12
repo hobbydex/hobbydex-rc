@@ -1,0 +1,17 @@
+id = "part/ecx/ECX212019"
+brand = "brand/ecx"
+number = "ECX212019"
+name = "Pinion Gear 48P 16T"
+applies_to = "1.9 Barrage"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-pinion-gear-48p-16t-1.9-barrage/ECX212019.html" },
+]
+fits = [
+  { kit = "kit/ecx/barrage", type = "direct", source = "doc/ecx/horizon-product-catalogue" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 16
+pitch_dp = 48
