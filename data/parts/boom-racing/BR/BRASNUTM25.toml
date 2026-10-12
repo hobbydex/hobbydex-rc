@@ -7,4 +7,6 @@ links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/non-flanged-lock-nut-m25-5-160530" },
 ]
 category = "nut"
-material = "plastic"
+equivalent_to = [
+  { spec = "spec/nut/m2.5-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

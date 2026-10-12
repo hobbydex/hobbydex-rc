@@ -6,3 +6,6 @@ pack_qty = 10
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-3103-30-6"
 category = "nut"
 material = "steel"
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -6,3 +6,6 @@ name_source = "ocr"
 pack_qty = 4
 notes = "Read by OCR from an MST manual parts list"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
