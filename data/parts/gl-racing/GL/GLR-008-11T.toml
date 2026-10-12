@@ -1,0 +1,16 @@
+id = "part/gl-racing/GLR-008-11T"
+brand = "brand/gl-racing"
+number = "GLR-008-11T"
+name = "64P Longlife Pinion set 11T"
+pack_qty = 2
+fits = [
+  { kit = "kit/gl-racing/glr", type = "direct", source = "doc/gl-racing/shop" },
+]
+documents = ["doc/gl-racing/shop"]
+links = [
+  { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=216" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/64dp-11t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"

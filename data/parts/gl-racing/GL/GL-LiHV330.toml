@@ -1,0 +1,17 @@
+id = "part/gl-racing/GL-LiHV330"
+brand = "brand/gl-racing"
+number = "GL-LiHV330"
+pack_qty = 5
+name = "2S 330mAh LiHV hardcase battery"
+documents = ["doc/gl-racing/shop"]
+links = [
+  { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=1134" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-330mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 330
+case = "hard"
+category = "battery"

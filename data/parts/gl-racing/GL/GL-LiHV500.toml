@@ -1,0 +1,20 @@
+id = "part/gl-racing/GL-LiHV500"
+brand = "brand/gl-racing"
+number = "GL-LiHV500"
+pack_qty = 4
+name = "2S 500mAh LiHV hardcase battery for GL Giulia"
+fits = [
+  { kit = "kit/gl-racing/gla-giulia", type = "direct", source = "doc/gl-racing/shop" },
+]
+documents = ["doc/gl-racing/shop"]
+links = [
+  { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=1138" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 500
+case = "hard"
+category = "battery"

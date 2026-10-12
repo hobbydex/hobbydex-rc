@@ -1,0 +1,18 @@
+id = "part/gl-racing/GL-GTR-OP-022"
+brand = "brand/gl-racing"
+number = "GL-GTR-OP-022"
+name = "GL-GTR Alu hard coated 64 pitch pinion（12T）"
+fits = [
+  { kit = "kit/gl-racing/gl-gtr", type = "direct", source = "doc/gl-racing/shop" },
+]
+documents = ["doc/gl-racing/shop"]
+links = [
+  { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=959" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/64dp-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "aluminium"
+category = "pinion"
+teeth = 12
+pitch_dp = 64
