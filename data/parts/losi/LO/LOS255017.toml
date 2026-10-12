@@ -1,7 +1,15 @@
 id = "part/losi/LOS255017"
 brand = "brand/losi"
 number = "LOS255017"
-name = "Flat Head Screws, Stainless, 16mm"
+name = "Flat Head Screws, Steel, Black Oxide, M4x16mm"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flat-head-screws-steel-black-oxide-m4x16mm-10/LOS255017.html" },
+]
+former_names = ["Flat Head Screws, Stainless, 16mm"]
 category = "screw"
 material = "stainless"
+equivalent_to = [
+  { spec = "spec/screw/m4x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+finish = "black"

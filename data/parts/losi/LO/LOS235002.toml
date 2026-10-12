@@ -1,11 +1,19 @@
 id = "part/losi/LOS235002"
 brand = "brand/losi"
 number = "LOS235002"
-name = "Cap Head Screws M2.5x10mm"
+name = "Cap Head Screws M2.5 x 10mm"
 pack_qty = 10
-former_names = ["Cap Head Screws M2.5 x", "Cap Head Screws M2.5 10mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-cap-head-screws-m2.5-x-10mm-10/LOS235002.html" },
+]
+former_names = ["Cap Head Screws M2.5 10mm", "Cap Head Screws M2.5 x", "Cap Head Screws M2.5x10mm"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.5x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+gtin = "605482623657"
+fits = [
+  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
