@@ -1,0 +1,13 @@
+id = "part/team-saxo/TS04010"
+brand = "brand/team-saxo"
+number = "TS04010"
+name = "TS04010"
+includes = [
+  { part = "part/team-saxo/TS0401005", qty = 2, source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { part = "part/team-saxo/TS0401005", qty = 2, source = "doc/team-saxo/f1-future-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
+]
+notes = "Spare pack on the F1-180-V3 parts list"

@@ -1,0 +1,22 @@
+id = "part/team-saxo/TS04002"
+brand = "brand/team-saxo"
+number = "TS04002"
+name = "Motor Mount Chassis"
+includes = [
+  { part = "part/team-saxo/TS0403002", qty = 1, source = "doc/team-saxo/f1-180-v4-part-list" },
+  { part = "part/team-saxo/TS0403002", qty = 1, source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { part = "part/team-saxo/TS0403002", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
+  { part = "part/team-saxo/TS0403002", qty = 1, source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { part = "part/team-saxo/TS0403002", qty = 1, source = "doc/team-saxo/f1-future-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
+]
+notes = "Spare pack on the F1-180-V4 parts list"
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/motor-mount-chassis-1" },
+]
+category = "chassis"

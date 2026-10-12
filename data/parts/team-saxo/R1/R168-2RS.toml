@@ -1,0 +1,18 @@
+id = "part/team-saxo/R168-2RS"
+brand = "brand/team-saxo"
+number = "R168-2RS"
+name = "R168-2RS"
+notes = "Piece of pack R168-2RS-TS on the F1-180-V5 parts list; the list gives no name"
+includes = [
+  { part = "part/team-saxo/R168-2RS-1", qty = 10, source = "doc/team-saxo/f1-180-v4-part-list" },
+  { part = "part/team-saxo/R168-2RS", qty = 10, source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { part = "part/team-saxo/R168-2RS", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
+  { part = "part/team-saxo/MR106-OR", qty = 10, source = "doc/team-saxo/f1-future-parts-list" },
+  { part = "part/team-saxo/MR168-2RS", qty = 10, source = "doc/team-saxo/gt-500w-v2-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
+  { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+]

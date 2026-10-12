@@ -1,0 +1,14 @@
+id = "part/team-saxo/MR105-TS"
+brand = "brand/team-saxo"
+number = "MR105-TS"
+name = "MR105-TS"
+includes = [
+  { part = "part/team-saxo/MR105-T-1", qty = 10, source = "doc/team-saxo/f1-180-v5-parts-list" },
+  { part = "part/team-saxo/FR168ZZ-1", qty = 10, source = "doc/team-saxo/f1-180-v4-part-list" },
+  { part = "part/team-saxo/MR105-OR", qty = 10, source = "doc/team-saxo/f1-200-v2-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+]
+notes = "Spare pack on the F1-180-V5 parts list"

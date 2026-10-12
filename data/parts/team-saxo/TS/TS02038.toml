@@ -1,0 +1,17 @@
+id = "part/team-saxo/TS02038"
+brand = "brand/team-saxo"
+number = "TS02038"
+name = "TS02038"
+includes = [
+  { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/f1-180-v5-parts-list" },
+  { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/f1-180-v4-part-list" },
+  { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/mf-1-200-parts-list" },
+  { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/f1-200-v2-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+]
+notes = "Spare pack on the F1-180-V5 parts list"
