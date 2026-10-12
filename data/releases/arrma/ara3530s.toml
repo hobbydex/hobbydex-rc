@@ -2,12 +2,17 @@ id = "release/arrma/ara3530s"
 kit = "kit/arrma/freedom-flyer"
 brand = "brand/arrma"
 number = "ARA3530S"
-name = "Freedom Flyer 223S 2WD RTR with battery and charger, white"
+name = "Freedom Flyer 223S 2WD RTR Brushless Monster Truck (Battery & Charger Included), white"
 year = 2026
 kind = "rtr"
 status = "released"
+gtin = "660132661939"
 documents = ["doc/arrma/ara3530s-manual", "doc/arrma/ara3530s-part-list", "doc/arrma/ara3530s-product-page"]
 contains = [
+  { part = "part/arrma/ARA-1575", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA311158", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/arrma/ara3530s-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz 2-Channel Transmitter with DSC" },
+  { part = "part/spektrum/SPMXC2090", role = "kit", source = "doc/arrma/ara3530s-product-page", qty = 1 },
   { part = "part/arrma/AR310775", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/AR310779", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/AR310864", role = "listed", source = "doc/arrma/ara3530s-part-list" },
@@ -48,7 +53,6 @@ contains = [
   { part = "part/arrma/ARA-1382", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA-1544", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA-1550", role = "listed", source = "doc/arrma/ara3530s-part-list" },
-  { part = "part/arrma/ARA-1575", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA-1760", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA-2117", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA-2118", role = "listed", source = "doc/arrma/ara3530s-part-list" },
@@ -69,7 +73,6 @@ contains = [
   { part = "part/arrma/ARA311097", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA311100", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA311101", role = "listed", source = "doc/arrma/ara3530s-part-list" },
-  { part = "part/arrma/ARA311158", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA320609", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA320613", role = "listed", source = "doc/arrma/ara3530s-part-list" },
   { part = "part/arrma/ARA320669", role = "listed", source = "doc/arrma/ara3530s-part-list" },

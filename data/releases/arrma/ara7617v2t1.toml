@@ -7,6 +7,7 @@ kind = "rtr"
 status = "released"
 documents = ["doc/arrma/ara7615v2-ara7617v2-manual-multi", "doc/arrma/ara7617v2-exploded-view-multi", "doc/arrma/ara7617v2-product-page", "doc/arrma/arrma-warranty-information"]
 contains = [
+  { part = "part/arrma/ARA330600", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/spektrum/SPMSR6110AT", role = "kit", source = "doc/arrma/ara7617v2-product-page", qty = 1, notes = "In the box: Spektrum SR6110AT AVC Receiver (installed)" },
   { part = "part/arrma/AR310431", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },
   { part = "part/arrma/AR310433", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },
@@ -146,7 +147,6 @@ contains = [
   { part = "part/arrma/ARA330596", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },
   { part = "part/arrma/ARA330597", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },
   { part = "part/arrma/ARA330598", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },
-  { part = "part/arrma/ARA330600", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },
   { part = "part/arrma/ARA330602", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },
   { part = "part/arrma/ARA330627", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },
   { part = "part/arrma/ARA330628", role = "listed", source = "doc/arrma/ara7617v2-exploded-view-multi" },

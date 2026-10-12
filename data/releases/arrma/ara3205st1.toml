@@ -1,0 +1,14 @@
+id = "release/arrma/ara3205st1"
+kit = "kit/arrma/vorteks-2wd"
+brand = "brand/arrma"
+number = "ARA3205ST1"
+name = "Vorteks 2WD RTR Brushed Stadium Truck (Battery & Charger Included), orange"
+kind = "rtr"
+status = "discontinued"
+documents = ["doc/arrma/ara3205-manual-ml", "doc/arrma/ara3205s-exploded-view", "doc/arrma/ara3205s-parts-tech-pack-ml", "doc/arrma/ara3205s-product-page"]
+contains = [
+  { part = "part/arrma/ARA-1575", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA311158", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/arrma/ara3205s-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz Transmitter" },
+  { part = "part/spektrum/SPMS660", role = "kit", source = "doc/arrma/ara3205s-product-page", qty = 1, notes = "In the box: Spektrum S660 Servo" },
+]

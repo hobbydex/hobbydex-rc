@@ -8,6 +8,8 @@ status = "released"
 gtin = "660132675301"
 documents = ["doc/arrma/ara2508-manual-ml", "doc/arrma/ara2508-tech-pack", "doc/arrma/ara2508s-product-page"]
 contains = [
+  { part = "part/arrma/ARA-2673", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA-2719", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/arrma/ara2508s-product-page", qty = 1, notes = "In the box: Spektrum 2.4 GHz SLT2 2 Channel Transmitter" },
   { part = "part/spektrum/SPMXC0060", role = "kit", source = "doc/arrma/ara2508s-product-page", qty = 1, notes = "In the box: Spektrum S22 MINI USB-C 3S Battery Charger with USB C to USB C cable" },
   { part = "part/spektrum/SPMXSM4900", role = "kit", source = "doc/arrma/ara2508s-product-page", qty = 1 },
@@ -51,7 +53,6 @@ contains = [
   { part = "part/arrma/ARA-2670", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2671", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2672", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
-  { part = "part/arrma/ARA-2673", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2674", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2675", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2676", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
@@ -69,7 +70,6 @@ contains = [
   { part = "part/arrma/ARA-2716", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2717", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2718", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
-  { part = "part/arrma/ARA-2719", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2720", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2762", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-2766", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
@@ -91,6 +91,8 @@ contains = [
   { part = "part/arrma/ARA-3442", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-3443", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA-3494", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
+  { part = "part/arrma/ARA-4546", role = "option", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA-4547", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA311183", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA320753", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
   { part = "part/arrma/ARA330803", role = "listed", source = "doc/arrma/ara2508-tech-pack" },
