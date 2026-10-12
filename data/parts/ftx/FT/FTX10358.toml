@@ -1,0 +1,15 @@
+id = "part/ftx/FTX10358"
+brand = "brand/ftx"
+number = "FTX10358"
+name = "Grub Screw Bolt 3x18mm Screws"
+pack_qty = 4
+name_source = "manufacturer"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-tracker-spares/ftx-grub-screw-bolt-x-8mm-screws" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x18-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
