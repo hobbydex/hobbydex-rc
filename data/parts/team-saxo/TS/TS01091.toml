@@ -1,7 +1,7 @@
 id = "part/team-saxo/TS01091"
 brand = "brand/team-saxo"
 number = "TS01091"
-name = "TS01091"
+name = "Front axle"
 includes = [
   { part = "part/team-saxo/TS0102015", qty = 2, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0102015", qty = 2, source = "doc/team-saxo/f1-180-v4-part-list" },
@@ -13,8 +13,13 @@ includes = [
 ]
 fits = [
   { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
-  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
-  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
   { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
 ]
 notes = "Spare pack on the F1-180-V5 parts list"
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/front-axle" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/front-axle" },
+]
+category = "drivetrain"
