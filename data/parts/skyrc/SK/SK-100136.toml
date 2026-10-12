@@ -5,7 +5,10 @@ name = "PC1280 Charger"
 category = "charger"
 category_source = "curated"
 power_w = 1280
-notes = "Discontinued (on SkyRC's Discontinued Products list); Specifications: Input Voltage: 100-240V, Output Power: 1280W (320W x 4), Discharge Power: 200W (50W x 4), Charge Current: 1.0-12.0A, Balance Current: 1.5A, Battery Type: LiPo/LiHV, Battery Cell Count: 6S, Working Mode: Balance Charge Mode"
+lipo_cells = [6, 6]
+dimensions_mm = [272, 202, 118.6]
+weight_g = 4880
+notes = "Discontinued (on SkyRC's Discontinued Products list); Specifications: Input Voltage: 100-240V, Output Power: 1280W (320W x 4), Discharge Power: 200W (50W x 4), Charge Current: 1.0-12.0A, Balance Current: 1.5A, Battery Type: LiPo/LiHV, Battery Cell Count: 6S, Working Mode: Balance Charge Mode; Product page: output power 1280W (320W x 4), discharge power 200W (50W x 4), charge current 1.0-12.0A, LiPo/LiHV 6S"
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/pc1280" },
 ]

@@ -4,7 +4,11 @@ number = "SK-100231"
 name = "PC7200 12-24S Lithium Charger"
 category = "charger"
 category_source = "curated"
-notes = "Not on any SkyRC product listing as of 2026-10-11 (the page is still up)"
+power_w = 7200
+lipo_cells = [12, 24]
+dimensions_mm = [291, 209, 201]
+weight_g = 9600
+notes = "Not on any SkyRC product listing as of 2026-10-11 (the page is still up); Manual: max. output power 7200W (fast charge), standard charge 1200-3600W by AC input voltage; LiPo/LiHV 12S-24S; two 16A AC inputs"
 documents = ["doc/skyrc/sk-100231-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/pc7200" },

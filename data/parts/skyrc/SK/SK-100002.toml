@@ -4,7 +4,11 @@ number = "SK-100002"
 name = "IMAX B6"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 50
+lipo_cells = [1, 6]
+dimensions_mm = [133, 87, 33]
+weight_g = 277
+notes = "Discontinued (on SkyRC's Discontinued Products list); Specifications (product page): DC 11-18V input, max. charge power 50W, max. discharge power 5W, charge current 0.1-5.0A, discharge current 0.1-1.0A, balancing 300mA/cell, NiCd/NiMH 1-15 cells, Li-ion/Fe/Polymer 1-6 cells, Pb 2-20V"
 documents = ["doc/skyrc/sk-100002-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/iMAX_B6_Charger" },

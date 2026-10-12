@@ -4,7 +4,11 @@ number = "SK-100159"
 name = "PC2600"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 2600
+lipo_cells = [12, 14]
+dimensions_mm = [236, 175, 267]
+weight_g = 6780
+notes = "Discontinued (on SkyRC's Discontinued Products list); Product page (Chinese): output power 2600W (1300W x 2), charge current slow 16A / fast 22A, discharge power 100W (50W x 2), LiPo 12S/14S, AC 200-240V input"
 documents = ["doc/skyrc/sk-100159-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/pc2600" },

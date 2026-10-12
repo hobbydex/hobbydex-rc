@@ -6,7 +6,8 @@ category = "charger"
 category_source = "curated"
 power_w = 2500
 weight_g = 5600
-notes = "Power Supply: AC Input: 100-240V, Charging Power: AC220V:2500W, AC120V:1200W; Battery: Type:Lithium Battery, LiPo Battery Cells: 12S/14S, LiHV Battery Cells:12S; Charge/Discharge: AC 220V, Fast Charge Current: max. 45A single channel, Slow Charge Current: max. 20A single channel; max. 45A multi channels in total, AC 120V, Fast Charge Current: max. 1200W single channel, Slow Charge Current: max. 20A single channel; max. 1200W multi channels in total, Storage Discharge Power, Main Port: 75W Max., Balance Port: 80W Max. (The current will be adjusted based on the balance port’s temp), Max Charge Output Power, AC220V Output Power: 2500W, AC120V Output Power: 1200W, Discharge Power:60W, Charging Mode:Fast Charge, Slow, Storage"
+lipo_cells = [12, 14]
+notes = "Power Supply: AC Input: 100-240V, Charging Power: AC220V:2500W, AC120V:1200W; Battery: Type:Lithium Battery, LiPo Battery Cells: 12S/14S, LiHV Battery Cells:12S; Charge/Discharge: AC 220V, Fast Charge Current: max. 45A single channel, Slow Charge Current: max. 20A single channel; max. 45A multi channels in total, AC 120V, Fast Charge Current: max. 1200W single channel, Slow Charge Current: max. 20A single channel; max. 1200W multi channels in total, Storage Discharge Power, Main Port: 75W Max., Balance Port: 80W Max. (The current will be adjusted based on the balance port’s temp), Max Charge Output Power, AC220V Output Power: 2500W, AC120V Output Power: 1200W, Discharge Power:60W, Charging Mode:Fast Charge, Slow, Storage; Manual: LiPo 12S/14S, LiHV 12S; output power 2500W at AC 220V, 1200W at AC 120V"
 documents = ["doc/skyrc/sk-100179-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/pc2500" },

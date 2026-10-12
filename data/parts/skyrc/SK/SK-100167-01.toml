@@ -4,7 +4,11 @@ number = "SK-100167-01"
 name = "PC3000 Charger"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 2500
+lipo_cells = [12, 14]
+dimensions_mm = [340, 240, 270]
+weight_g = 10000
+notes = "Discontinued (on SkyRC's Discontinued Products list); Product page (Chinese): charge power 1200W at 100-175V, 2500W at 176-240V; fast charge 50A (one channel), slow charge 12.5-20A; lithium batteries 12/14 cells; four battery ports"
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/pc3000" },
 ]
