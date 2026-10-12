@@ -1,0 +1,24 @@
+id = "part/scaleart/71000314"
+brand = "brand/scaleart"
+number = "71000314"
+name = "Achsanlenkung"
+category = "steering"
+category_source = "curated"
+links = [
+  { site = "ScaleART", url = "https://www.scaleart-shop.de/products/achsanlenkung-scaledrive-vorderachse-rc-lkw" },
+]
+documents = ["doc/scaleart/scaleart-shop", "doc/scaleart/71000314-manual"]
+related = [
+  { part = "part/scaleart/71000315", relation = "use-with" },
+]
+includes = [
+  { part = "part/scaleart/15000217", qty = 2, source = "doc/scaleart/71000314-manual" },
+  { part = "part/scaleart/15000029", qty = 2, source = "doc/scaleart/71000314-manual" },
+  { part = "part/scaleart/32900414", qty = 6, source = "doc/scaleart/71000314-manual" },
+  { part = "part/scaleart/37030023", qty = 1, source = "doc/scaleart/71000314-manual" },
+  { part = "part/scaleart/32000249", qty = 2, source = "doc/scaleart/71000314-manual" },
+  { part = "part/scaleart/32000056", qty = 5, source = "doc/scaleart/71000314-manual" },
+  { part = "part/scaleart/32000059", qty = 3, source = "doc/scaleart/71000314-manual" },
+  { part = "part/scaleart/32000060", qty = 3, source = "doc/scaleart/71000314-manual" },
+  { part = "part/scaleart/32000913", qty = 10, source = "doc/scaleart/71000314-manual" },
+]
