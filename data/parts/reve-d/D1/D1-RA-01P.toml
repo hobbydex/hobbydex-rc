@@ -1,0 +1,18 @@
+id = "part/reve-d/D1-RA-01P"
+brand = "brand/reve-d"
+number = "D1-RA-01P"
+name = "Rear Lower Arm Plate for D1-RAC"
+pack_qty = 1
+name_ja = "D1-RAC用 リアロアアームプレート(1個入)"
+fits = [
+  { kit = "kit/reve-d/rdx", type = "direct", source = "doc/reve-d/teamreved-products" },
+]
+notes = "English name translated from Reve D's Japanese listing."
+links = [
+  { site = "Rêve D", url = "https://teamreved.com/product/d1-ra-01p" },
+]
+documents = ["doc/reve-d/teamreved-products"]
+category = "suspension"
+related = [
+  { part = "part/reve-d/D1-RAC", relation = "for", notes = "link_part_refs" },
+]
