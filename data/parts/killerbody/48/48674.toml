@@ -5,8 +5,14 @@ name = "Battery Holder Stainless Steel (Fit for Axial SCX10 Chassis)"
 scale = "1/10"
 gtin = "4560394779334"
 material = "stainless"
-applies_to = "Fit for Axial SCX10 Chassis)"
+applies_to = "Fit for Axial SCX10 Chassis"
 fits = [
   { kit = "kit/axial/scx10", type = "direct", source = "doc/killerbody/product-pages" },
+]
+related = [
+  { part = "part/killerbody/48601", relation = "fits", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/battery-holder-stainless-steel-fit-for-axial-scx10-chassis" },
 ]
 category = "chassis"

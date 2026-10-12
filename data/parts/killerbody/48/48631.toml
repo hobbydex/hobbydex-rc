@@ -7,7 +7,13 @@ category_source = "curated"
 scale = "1/10"
 gtin = "4560394778825"
 material = "stainless"
-applies_to = "Fit for RC4WD TF2 LWB Chassis Kit (Z-K0059))"
+applies_to = "Fit for RC4WD TF2 LWB Chassis Kit (Z-K0059)"
 fits = [
   { kit = "kit/rc4wd/trail-finder-2-lwb", type = "direct", source = "doc/killerbody/product-pages" },
+]
+related = [
+  { part = "part/killerbody/48601", relation = "fits", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/installation-mounting-stainless-steel-for-rc4wd-tf2" },
 ]

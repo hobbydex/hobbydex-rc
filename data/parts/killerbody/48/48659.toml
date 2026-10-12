@@ -1,11 +1,16 @@
 id = "part/killerbody/48659"
 brand = "brand/killerbody"
 number = "48659"
-name = "Wide Body Full Kit"
+name = "Wide Body Full Kit (1/10 KB Lexus RC F) Lexan molded / PC material"
 category = "body"
 category_source = "curated"
 scale = "1/10"
 gtin = "4560394779105"
 wheelbase_mm = 257
 width_mm = 205
-material = "plastic"
+related = [
+  { part = "part/killerbody/48627", relation = "fits", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/wide-body-full-kit-1-10-kb-lexus-rc-f" },
+]

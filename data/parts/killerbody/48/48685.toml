@@ -4,5 +4,12 @@ number = "48685"
 name = "LED Unit Set w/Control Box 16 LEDS"
 scale = "1/10"
 gtin = "4560394779440"
-applies_to = "Fit for KB 1/10 Lexus RC F & Wide Body Full Kit"
+applies_to = "Fit for KB 1/10 Lexus RC F & Wide Body Full Kit）"
+related = [
+  { part = "part/killerbody/48627", relation = "for", source = "doc/killerbody/product-pages" },
+  { part = "part/killerbody/48659", relation = "for", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/led-unit-set-w-control-box-16-leds" },
+]
 category = "electronics"

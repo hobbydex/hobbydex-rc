@@ -7,7 +7,16 @@ category_source = "curated"
 scale = "1/10"
 gtin = "4560394779686"
 material = "stainless"
-applies_to = "Fit for RC4WD TF2 LWB Chassis Kit (Z-K0059) 3.75 inch Tire); Fit for KB48631 Installation Mounting Stainless Steel"
+applies_to = "Fit for RC4WD TF2 LWB Chassis Kit (Z-K0059) 3.75 inch Tire; Fit for KB48631 Installation Mounting Stainless Steel; Fit for RC4WD TF2 3.75 inch Tire"
 fits = [
   { kit = "kit/rc4wd/trail-finder-2-lwb", type = "direct", source = "doc/killerbody/product-pages" },
+  { kit = "kit/rc4wd/trail-finder-2", type = "direct", source = "doc/killerbody/store" },
+]
+related = [
+  { part = "part/killerbody/48601", relation = "fits", source = "doc/killerbody/product-pages" },
+  { part = "part/killerbody/48669", relation = "for", source = "doc/killerbody/product-pages" },
+  { part = "part/killerbody/48689", relation = "for", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/bumper-connecting-parts-stainless-steel-fit-for-rc4wd-tf2-3-75-inch-tire" },
 ]
