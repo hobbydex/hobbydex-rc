@@ -14,3 +14,7 @@ links = [
   { site = "Haiboxing", url = "https://www.haiboxing.com/products/s153-countersunk-screws-kmho25-5mm-for-18859e-18858e-18872-18856" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

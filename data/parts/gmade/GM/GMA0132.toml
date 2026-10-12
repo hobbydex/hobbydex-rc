@@ -7,3 +7,7 @@ links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-312mm-socket-set-screw/1135/" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

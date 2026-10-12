@@ -5,3 +5,7 @@ name = "Set Screw M4*10"
 pack_qty = 6
 notes = "Read by OCR from a scanned FTX document"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m4x10-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
