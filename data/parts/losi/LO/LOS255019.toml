@@ -1,0 +1,19 @@
+id = "part/losi/LOS255019"
+brand = "brand/losi"
+number = "LOS255019"
+name = "Flat Head Screws, Steel, Black Oxide, M4x14mm"
+pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flat-head-screws-steel-black-oxide-m4x14mm-10/LOS255019.html" },
+]
+material = "steel"
+gtin = "605482828960"
+fits = [
+  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x14-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+finish = "black"
+category = "screw"
