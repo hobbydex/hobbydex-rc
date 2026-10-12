@@ -1,5 +1,11 @@
 id = "part/traxxas/1548"
 brand = "brand/traxxas"
 number = "1548"
-name = "1548"
+name = "Set (grub) screws, 3x4mm (8)/ 4x4mm (stainless)"
+pack_qty = 4
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
+equivalent_to = [
+  { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "stainless"
+category = "screw"
