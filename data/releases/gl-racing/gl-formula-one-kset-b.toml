@@ -1,0 +1,16 @@
+id = "release/gl-racing/gl-formula-one-kset-b"
+kit = "kit/gl-racing/gl-formula-one"
+brand = "brand/gl-racing"
+number = "GL-Formula One KSET/B"
+name = "GL Formula One chassis with limited body/sensored ESC and servo"
+kind = "kit"
+status = "released"
+documents = ["doc/gl-racing/shop", "doc/gl-racing/gl-formula-one-instruction-manual-ver01"]
+links = [
+  { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=1268" },
+]
+contains = [
+  { part = "part/gl-racing/GL-M60-005", role = "kit", source = "doc/gl-racing/shop" },
+  { part = "part/gl-racing/GL-BT-ESC-060", role = "kit", source = "doc/gl-racing/shop" },
+  { part = "part/gl-racing/GL003-DMG", role = "kit", source = "doc/gl-racing/shop" },
+]
