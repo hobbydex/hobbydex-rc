@@ -1,0 +1,21 @@
+id = "part/agama/0051"
+brand = "brand/agama"
+number = "0051"
+name = "Ball bearing 5*13*4"
+pack_qty = 10
+gtin = "4714781680349"
+equivalent_to = [
+  { spec = "spec/bearing/5x13x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"
+applies_to = "allseries; A215, A215e, A215SV, A215T, A8FR CUP, N2, N2e"
+fits = [
+  { kit = "kit/agama/a215t", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n2", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n2e", type = "direct", source = "doc/agama/nemoracing-com" },
+]
+documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
+links = [
+  { site = "Nemo Racing", url = "https://www.nemoracing.com/products/051-ball-bearing-5-13-4" },
+]
