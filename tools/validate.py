@@ -62,7 +62,7 @@ ENUMS = {
 # engine fields (docs/schema.md "Engines"): only on engine-fuel parts, numbers in these ranges
 ENGINE_NUM = {"displacement_cc": (0.5, 120), "bore_mm": (5, 60), "stroke_mm": (5, 60), "output_hp": (0.05, 20), "output_rpm": (1000, 60000)}
 ENGINE_FIELDS = set(ENGINE_NUM) | {"engine_class", "rpm_range", "fuel"}   # bore_mm is also a shock's bore: checked on engines only
-PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent", "translucent", "clear", "chrome"}   # part.finish of a paint; other parts' finish ("black oxide") is free
+PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent", "translucent", "clear", "chrome", "flake"}   # part.finish of a paint; other parts' finish ("black oxide") is free
 
 # which part categories may be `equivalent_to` a spec of each kind
 SPEC_PART_CATS = {
