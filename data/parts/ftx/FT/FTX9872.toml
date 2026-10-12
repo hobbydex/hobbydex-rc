@@ -1,5 +1,14 @@
 id = "part/ftx/FTX9872"
 brand = "brand/ftx"
 number = "FTX9872"
-name = "FTX9872"
-notes = "Read by OCR from a scanned FTX document; no name could be read"
+name = "Flat Head Screw M3 X 15mm (8pc)"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/rc-texan-spares/ftx-flat-head-screw-mm-8pc" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x15-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

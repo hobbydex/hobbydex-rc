@@ -1,6 +1,15 @@
 id = "part/ftx/FTX6961"
 brand = "brand/ftx"
 number = "FTX6961"
-name = "Screw M4x10 6Gpcs"
-notes = "Read by OCR from a scanned FTX document"
+name = "Zorro Flat Head Hex Screw M4x10mm Self Tapping (6pc)"
+pack_qty = 6
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-zorro-spares/ftx-Zorro-flat-head-hex-screw-m4x10mm-6pc" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x10-countersunk-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
 category = "screw"

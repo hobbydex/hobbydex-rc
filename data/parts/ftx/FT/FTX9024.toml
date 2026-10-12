@@ -1,7 +1,16 @@
 id = "part/ftx/FTX9024"
 brand = "brand/ftx"
 number = "FTX9024"
-name = "Instruction manual"
-notes = "Read by OCR from a scanned FTX document"
-category = "manual"
+name = "Comet Pinion Gears Plastic 13/14t (32DP)"
 former_names = ["Manual.qxp_ENG&FR 12/07/2018"]
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-comet-spares/ftx-comet-pinion-gear-plastic-1314t" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/32dp-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+pitch_dp = 32
+material = "plastic"

@@ -1,6 +1,15 @@
 id = "part/ftx/FTX9746"
 brand = "brand/ftx"
 number = "FTX9746"
-name = "Wheel Hex"
-notes = "Read by OCR from a scanned FTX document"
-category = "drivetrain"
+name = "Tracer Ball Bearings (6.35x9.53x3.17mm)"
+pack_qty = 8
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-tracer-spares/ftx-tracer-ball-bearing" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6.35x9.53x3.17", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

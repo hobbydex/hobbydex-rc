@@ -1,6 +1,13 @@
 id = "part/ftx/FTX6554"
 brand = "brand/ftx"
 number = "FTX6554"
-name = "ESR-1 Receiver"
-notes = "Read by OCR from a scanned FTX document"
-category = "electronics"
+name = "Banzai 540 Brushed Motor"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-banzai-spares/ftx-banzai-540-brushed-motor" },
+]
+category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
