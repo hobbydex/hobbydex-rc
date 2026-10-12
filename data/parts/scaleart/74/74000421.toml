@@ -1,10 +1,17 @@
 id = "part/scaleart/74000421"
 brand = "brand/scaleart"
 number = "74000421"
-name = "Kardanwellen-Set 60-200 mm"
+name = "Driveshaft Set 60-200 mm"
 category = "drivetrain"
 category_source = "curated"
 links = [
   { site = "ScaleART", url = "https://www.scaleart-shop.de/products/kardanwelle-60-200mm-rc-lkw-scaledrive" },
 ]
-documents = ["doc/scaleart/scaleart-shop"]
+documents = ["doc/scaleart/scaleart-shop", "doc/scaleart/74000421-manual"]
+includes = [
+  { part = "part/scaleart/29001001", qty = 1, source = "doc/scaleart/74000421-manual" },
+  { part = "part/scaleart/29001002", qty = 1, source = "doc/scaleart/74000421-manual" },
+  { part = "part/scaleart/29000014", qty = 1, source = "doc/scaleart/74000421-manual" },
+  { part = "part/scaleart/29000013", qty = 2, source = "doc/scaleart/74000421-manual" },
+  { part = "part/scaleart/32000241", qty = 5, source = "doc/scaleart/74000421-manual" },
+]
