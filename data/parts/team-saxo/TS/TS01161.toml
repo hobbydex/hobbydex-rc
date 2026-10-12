@@ -1,0 +1,13 @@
+id = "part/team-saxo/TS01161"
+brand = "brand/team-saxo"
+number = "TS01161"
+name = "TS01161"
+includes = [
+  { part = "part/team-saxo/TS0105006", qty = 10, source = "doc/team-saxo/f1-180-v5-parts-list" },
+  { part = "part/team-saxo/TS0105006", qty = 10, source = "doc/team-saxo/f1-180-v4-part-list" },
+  { part = "part/team-saxo/TS0105006", qty = 10, source = "doc/team-saxo/f1-180-v3-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
+]
+notes = "Spare pack on the F1-180-V5 parts list"

@@ -1,0 +1,23 @@
+id = "part/team-saxo/MR085-OR"
+brand = "brand/team-saxo"
+number = "MR085-OR"
+name = "Ball bearing 5x8x2.5"
+notes = "Piece of pack MR085 on the F1-180-V4 parts list; the list gives no name"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", source = "doc/team-saxo/f1-180-v3-parts-list", notes = "Size as printed on the parts list (inch bearing; ZZ: metal shields)" },
+]
+includes = [
+  { part = "part/team-saxo/MR085-OR", qty = 10, source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { part = "part/team-saxo/MR085-OR", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
+  { part = "part/team-saxo/MR085-OR", qty = 10, source = "doc/team-saxo/f1-future-parts-list" },
+  { part = "part/team-saxo/MR085-OR", qty = 10, source = "doc/team-saxo/gt-300w-v4-parts-list" },
+  { part = "part/team-saxo/MR085-OR", qty = 10, source = "doc/team-saxo/gt-300w-v3-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
+  { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v4-parts-list" },
+]
+category = "bearing"
+material = "steel"

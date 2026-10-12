@@ -1,0 +1,17 @@
+id = "part/team-saxo/MF85ZZ"
+brand = "brand/team-saxo"
+number = "MF85ZZ"
+name = "Flanged ball bearing 5x8x2.5"
+notes = "Piece of pack MF85ZZ-TS on the F1-180-V5 parts list; the list gives no name"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x8x2.5", match = "functional", source = "doc/team-saxo/mf-1-200-parts-list", notes = "Size as printed on the parts list (inch bearing; ZZ: metal shields)" },
+]
+seal = "metal"
+includes = [
+  { part = "part/team-saxo/MF85ZZ", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+]
+category = "bearing"
+material = "steel"

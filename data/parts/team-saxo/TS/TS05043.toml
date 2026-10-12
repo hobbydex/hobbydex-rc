@@ -1,0 +1,20 @@
+id = "part/team-saxo/TS05043"
+brand = "brand/team-saxo"
+number = "TS05043"
+name = "TS05043"
+includes = [
+  { part = "part/team-saxo/TS0503003", qty = 1, source = "doc/team-saxo/f1-180-v4-part-list" },
+  { part = "part/team-saxo/TS0503004", qty = 1, source = "doc/team-saxo/f1-180-v4-part-list" },
+  { part = "part/team-saxo/TS0503003", qty = 1, source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { part = "part/team-saxo/TS0503004", qty = 1, source = "doc/team-saxo/f1-180-v3-parts-list" },
+  { part = "part/team-saxo/TS0503003", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
+  { part = "part/team-saxo/TS0503004", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
+  { part = "part/team-saxo/TS0503003", qty = 1, source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { part = "part/team-saxo/TS0503004", qty = 1, source = "doc/team-saxo/f1-200-v2-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+]
+notes = "Spare pack on the F1-180-V4 parts list"

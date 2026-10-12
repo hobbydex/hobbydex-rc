@@ -1,0 +1,12 @@
+id = "part/team-saxo/MR106-OR"
+brand = "brand/team-saxo"
+number = "MR106-OR"
+name = "MR106-OR"
+notes = "Piece of pack R168-2RS on the F1-FUTURE parts list; the list gives no name"
+includes = [
+  { part = "part/team-saxo/MR106-OR", qty = 10, source = "doc/team-saxo/gt-300w-v4-parts-list" },
+  { part = "part/team-saxo/MR106-OR", qty = 10, source = "doc/team-saxo/gt-300w-v3-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v4-parts-list" },
+]

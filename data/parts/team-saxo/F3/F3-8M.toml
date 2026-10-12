@@ -1,0 +1,17 @@
+id = "part/team-saxo/F3-8M"
+brand = "brand/team-saxo"
+number = "F3-8M"
+name = "F3-8M"
+includes = [
+  { part = "part/team-saxo/F3-8M-1", qty = 2, source = "doc/team-saxo/f1-180-v4-part-list" },
+  { part = "part/team-saxo/F3-8M-1", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
+  { part = "part/team-saxo/F3-8M-1", qty = 2, source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { part = "part/team-saxo/F3-8M", qty = 10, source = "doc/team-saxo/gt-500w-v2-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+]
+notes = "Spare pack on the F1-180-V4 parts list"

@@ -1,0 +1,13 @@
+id = "part/team-saxo/FR168ZZ-TS"
+brand = "brand/team-saxo"
+number = "FR168ZZ-TS"
+name = "FR168ZZ-TS"
+includes = [
+  { part = "part/team-saxo/FR168ZZ", qty = 10, source = "doc/team-saxo/f1-180-v5-parts-list" },
+  { part = "part/team-saxo/FR168ZZ-1", qty = 10, source = "doc/team-saxo/f1-180-v4-part-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+]
+notes = "Spare pack on the F1-180-V5 parts list"

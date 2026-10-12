@@ -1,0 +1,15 @@
+id = "part/team-saxo/TS01107"
+brand = "brand/team-saxo"
+number = "TS01107"
+name = "TS01107"
+includes = [
+  { part = "part/team-saxo/TS0104811", qty = 2, source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { part = "part/team-saxo/TS0102027", qty = 4, source = "doc/team-saxo/f1-future-parts-list" },
+  { part = "part/team-saxo/TS0102027", qty = 4, source = "doc/team-saxo/gt-300w-v3-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
+  { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v3-parts-list" },
+]
+notes = "Spare pack on the F1-200-V2 parts list"

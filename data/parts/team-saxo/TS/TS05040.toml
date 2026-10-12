@@ -1,0 +1,16 @@
+id = "part/team-saxo/TS05040"
+brand = "brand/team-saxo"
+number = "TS05040"
+name = "TS05040"
+includes = [
+  { part = "part/team-saxo/TS0504011", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
+  { part = "part/team-saxo/TS0104011", qty = 1, source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { part = "part/team-saxo/TS0104011", qty = 1, source = "doc/team-saxo/gt-300w-v4-parts-list" },
+  { part = "part/team-saxo/TS0504011", qty = 1, source = "doc/team-saxo/gt-300w-v3-parts-list" },
+]
+fits = [
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v4-parts-list" },
+]
+notes = "Spare pack on the MF-1-200 parts list"
