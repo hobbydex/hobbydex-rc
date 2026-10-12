@@ -3,10 +3,11 @@ kit = "kit/tamiya/lunch-box"
 brand = "brand/tamiya"
 number = "58347"
 name = "Lunch Box"
+year = 2005
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58347-manual"]
+documents = ["doc/tamiya/58347-manual", "doc/tamiya/58347-product-page", "doc/tamiya/58347-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
 contains = [
   { part = "part/tamiya/10005072", role = "kit", source = "doc/tamiya/58347-manual", step = "BT5" },
   { part = "part/tamiya/10005075", role = "kit", source = "doc/tamiya/58347-manual" },
@@ -77,3 +78,4 @@ contains = [
   { part = "part/tamiya/81720", role = "listed", source = "doc/tamiya/58347-manual", notes = "Named in the manual as a paint to use, not in the box (page 2)" },
   { part = "part/tamiya/85016", role = "listed", source = "doc/tamiya/58347-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 13)" },
 ]
+released = "2005-07"
