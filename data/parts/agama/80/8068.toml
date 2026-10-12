@@ -1,0 +1,21 @@
+id = "part/agama/8068"
+brand = "brand/agama"
+number = "8068"
+name = "Dogbone pin 3*11.8"
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/3x11.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
+pack_qty = 10
+applies_to = "allseries; A215, A215e, A215SV, A215T, A319, A319E, N1, N1e, N2, N2e"
+fits = [
+  { kit = "kit/agama/a215t", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n1", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n1e", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n2", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n2e", type = "direct", source = "doc/agama/nemoracing-com" },
+]
+documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
+links = [
+  { site = "Nemo Racing", url = "https://www.nemoracing.com/products/8068-pin-3-11-8" },
+]

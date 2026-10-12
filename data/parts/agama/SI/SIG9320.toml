@@ -1,0 +1,18 @@
+id = "part/agama/SIG9320"
+brand = "brand/agama"
+number = "SIG9320"
+name = "Left hand screws 3*20"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
+pack_qty = 10
+applies_to = "A215, A215e, A215SV, A215T, A319, A319E, A8FR CUP, A8T"
+fits = [
+  { kit = "kit/agama/a215t", type = "direct", source = "doc/agama/nemoracing-com" },
+]
+documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
+links = [
+  { site = "Nemo Racing", url = "https://www.nemoracing.com/products/sig9320" },
+]

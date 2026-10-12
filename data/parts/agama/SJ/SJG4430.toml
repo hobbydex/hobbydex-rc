@@ -1,0 +1,22 @@
+id = "part/agama/SJG4430"
+brand = "brand/agama"
+number = "SJG4430"
+name = "Screw 4*30"
+gtin = "4711256690513"
+equivalent_to = [
+  { spec = "spec/screw/m4x30-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
+pack_qty = 10
+applies_to = "A319E, N1, N1e, N2, N2e"
+fits = [
+  { kit = "kit/agama/n1", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n1e", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n2", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n2e", type = "direct", source = "doc/agama/nemoracing-com" },
+]
+documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
+links = [
+  { site = "Nemo Racing", url = "https://www.nemoracing.com/products/sjg4430-csk-screws-4-30mm10" },
+]
