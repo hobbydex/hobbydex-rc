@@ -89,6 +89,8 @@ re-release. Keyed by manufacturer item number when there is one, otherwise by a
 slug (`xb4-2013`, `xb8e-2021`). `kind` is kit | rtr | arr. `status` is
 announced | released | discontinued.
 
+`year` is the calendar year the release came out, only from a dated source. `model_year` is the year in the maker's edition name when the maker names editions by model year (XRAY's XB2'26 is on sale from late 2025): it is not a release year, and a release can be on sale before its model year.
+
 `surface` (race kits only): the track surface the maker built this version for, as a list of carpet | astro | clay | dirt | asphalt | high-grip, when the maker sells surface-specific versions or says what the car is for ("Carpet Edition", "for clay tracks"). Set only from the maker's own wording, never guessed from the car type; on a kit when the whole line is for one surface.
 
 `documents` lists the docs that describe this release. `contains` lists the
