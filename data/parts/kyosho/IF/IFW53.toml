@@ -1,7 +1,9 @@
 id = "part/kyosho/IFW53"
 brand = "brand/kyosho"
 number = "IFW53"
-name = "3PC Clutch Spring (1.00)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Clutch Spring (1.00)"
 category = "engine-fuel"
-name_source = "ocr"
+pack_qty = 3
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+]

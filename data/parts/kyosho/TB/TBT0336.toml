@@ -1,10 +1,13 @@
 id = "part/kyosho/TBT0336"
 brand = "brand/kyosho"
 number = "TBT0336"
-name = "Turmbuckle Rod (Titanium/3x36/1 pc)"
+name = "Turmbuckle Rod (Titanium/3x36)"
 pack_qty = 1
 former_names = ["Turmbuckle Rod (Titanium/3x36/1pc)", "Turmbuckle Rod (Titanium/8x36/1pc)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "ball-end"
-name_source = "ocr"
 material = "titanium"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

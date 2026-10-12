@@ -1,8 +1,9 @@
 id = "part/kyosho/IF351"
 brand = "brand/kyosho"
 number = "IF351"
-name = "Silicone Switch Boots (1pcs/MP777/ST-RR)"
+name = "Silicone Switch Boots (MP777/ST-RR)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "o-ring-seal"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+]

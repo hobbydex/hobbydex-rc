@@ -1,7 +1,11 @@
 id = "part/kyosho/92213B"
 brand = "brand/kyosho"
 number = "92213B"
-name = "Fuel Tube (24x6x1000mm)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Fuel Tube (2.4x6x1000mm)"
 category = "engine-fuel"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155d-usa-1-nitro-readyset-kt-231p-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257d-usa-1-ve-readyset-kt-231p-spare-and-option-parts" },
+]

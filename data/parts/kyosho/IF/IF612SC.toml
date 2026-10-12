@@ -2,6 +2,7 @@ id = "part/kyosho/IF612SC"
 brand = "brand/kyosho"
 number = "IF612SC"
 name = "Hard Rear Lower Sus. Arm (L,R/Soft/MP10)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "suspension"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

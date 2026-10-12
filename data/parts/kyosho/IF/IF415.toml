@@ -1,8 +1,10 @@
 id = "part/kyosho/IF415"
 brand = "brand/kyosho"
 number = "IF415"
-name = "Brake Rotor (30mm/MP9)"
+name = "Brake Rotor (30mm / MP9)"
 former_names = ["Brake Rotor (30mm / MP9)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+]

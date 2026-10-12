@@ -1,8 +1,9 @@
 id = "part/kyosho/IFW616"
 brand = "brand/kyosho"
 number = "IFW616"
-name = "HD Cap C-Universal Swing Shaft (1pc/116/MP10)"
+name = "HD Center Cup Joint (MP10/MP9RS/IF280B)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

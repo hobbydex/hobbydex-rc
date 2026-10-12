@@ -1,9 +1,11 @@
 id = "part/kyosho/MA073BKD"
 brand = "brand/kyosho"
 number = "MA073BKD"
-name = "Side Plate (2pcs/Black/MAD FORCE KRUISER)"
+name = "Side Plate (Black/MAD FORCE KRUISER)"
 pack_qty = 2
 former_names = ["Side Plate (2pcs/Black/MAD Series/FO-XX)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

@@ -2,5 +2,6 @@ id = "part/kyosho/96441B"
 brand = "brand/kyosho"
 number = "96441B"
 name = "Sponge Tape (1x100x150)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

@@ -2,7 +2,8 @@ id = "part/kyosho/IF488"
 brand = "brand/kyosho"
 number = "IF488"
 name = "Aluminum Knuckle Arm (L,R/Gunmetal/MP9 TKI4)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "suspension"
-name_source = "ocr"
 material = "aluminium"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

@@ -1,8 +1,9 @@
 id = "part/kyosho/IF476"
 brand = "brand/kyosho"
 number = "IF476"
-name = "3PC Flywheel Nut (MP9)"
+name = "Flywheel Nut (MP9)"
 pack_qty = 3
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "nut"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

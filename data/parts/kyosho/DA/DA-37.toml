@@ -2,7 +2,8 @@ id = "part/kyosho/DA-37"
 brand = "brand/kyosho"
 number = "DA-37"
 name = "Pinion Gear (11T)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pinion"
-name_source = "ocr"
 teeth = 11
+fits = [
+  { kit = "kit/kyosho/usa-1", type = "direct", source = "doc/kyosho/3165-usa-1-manual" },
+]

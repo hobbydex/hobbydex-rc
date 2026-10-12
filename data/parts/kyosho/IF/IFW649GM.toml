@@ -1,8 +1,9 @@
 id = "part/kyosho/IFW649GM"
 brand = "brand/kyosho"
 number = "IFW649GM"
-name = "Wheel Nut (Gun Metallic/4pcs/Flange Cap/Serration)"
+name = "Wheel Nut (Gun Metallic/Flange Cap/Serration)"
 pack_qty = 4
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "nut"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

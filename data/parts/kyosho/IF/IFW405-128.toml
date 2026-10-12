@@ -1,9 +1,12 @@
 id = "part/kyosho/IFW405-128"
 brand = "brand/kyosho"
 number = "IFW405-128"
-name = "3PC Clutch Spring (0.90)"
+name = "SP Shock Piston (φ1.2x8 Hole/for Big Boa Shock)"
 pack_qty = 2
 former_names = ["SP Shock Piston ($1.2x8 Hole/2pcs/for Big Boa Shock)", "SP Shock Piston (ø1.2x8 Hole/2pcs/for Big Boa Shock)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "engine-fuel"
-name_source = "ocr"
+category = "shock"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]
+shock_part = "piston"

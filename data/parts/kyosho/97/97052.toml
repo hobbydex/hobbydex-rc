@@ -1,9 +1,13 @@
 id = "part/kyosho/97052"
 brand = "brand/kyosho"
 number = "97052"
-name = "6.8mm Ball End (8pcs/1296)"
+name = "6.8mm Ball End (1296)"
 pack_qty = 8
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "ball-end"
 ball_mm = 6.8
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

@@ -2,6 +2,7 @@ id = "part/kyosho/1951"
 brand = "brand/kyosho"
 number = "1951"
 name = "Shock Oil (S.M.H)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "oil-grease"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1", type = "direct", source = "doc/kyosho/3165-usa-1-manual" },
+]

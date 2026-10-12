@@ -2,6 +2,8 @@ id = "part/kyosho/IF205BKB"
 brand = "brand/kyosho"
 number = "IF205BKB"
 name = "Front Upper Plate (Black)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+]

@@ -1,8 +1,9 @@
 id = "part/kyosho/IFW615B"
 brand = "brand/kyosho"
 number = "IFW615B"
-name = "HD Cap C-Universal Swing Shaft (1pc/82/MP10)"
+name = "HD Cap C-Universal Swing Shaft"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

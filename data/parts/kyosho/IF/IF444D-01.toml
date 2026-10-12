@@ -2,6 +2,8 @@ id = "part/kyosho/IF444D-01"
 brand = "brand/kyosho"
 number = "IF444D-01"
 name = "Fuel Tank Bush Set (MP9)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "engine-fuel"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155d-usa-1-nitro-readyset-kt-231p-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257d-usa-1-ve-readyset-kt-231p-spare-and-option-parts" },
+]

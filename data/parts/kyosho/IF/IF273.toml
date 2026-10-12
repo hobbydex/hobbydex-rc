@@ -1,8 +1,9 @@
 id = "part/kyosho/IF273"
 brand = "brand/kyosho"
 number = "IF273"
-name = "Brake Disk Plate (2pcs/MP9 RS) °"
+name = "Brake Disk Plate (MP9 RS)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

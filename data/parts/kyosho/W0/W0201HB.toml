@@ -1,10 +1,12 @@
 id = "part/kyosho/W0201HB"
 brand = "brand/kyosho"
 number = "W0201HB"
-name = "5.8mm Hard Ball (5pcs)"
+name = "5.8mm Hard Ball"
 pack_qty = 5
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "ball-end"
 ball_mm = 5.8
 ball_type = "through-hole"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+]

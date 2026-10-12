@@ -1,7 +1,8 @@
 id = "part/kyosho/IFW642-1"
 brand = "brand/kyosho"
 number = "IFW642-1"
-name = "Wing Set (1/8 Buggy/PC/1.0mm)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Wing (1/8 Buggy/PC/1.0mm)"
 category = "wing"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

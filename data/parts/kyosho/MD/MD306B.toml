@@ -2,6 +2,7 @@ id = "part/kyosho/MD306B"
 brand = "brand/kyosho"
 number = "MD306B"
 name = "Tie Rod & Motor Plate Set (MINI-Z FWD)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "ball-end"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/32181-mini-z-awd-ma-030evo2-spare-and-option-parts" },
+]

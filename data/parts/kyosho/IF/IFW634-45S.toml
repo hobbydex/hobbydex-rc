@@ -1,9 +1,12 @@
 id = "part/kyosho/IFW634-45S"
 brand = "brand/kyosho"
 number = "IFW634-45S"
-name = "L/Weight Short Shock Bush (MP10/2pcs)"
+name = "Light Weight Spur Gear (45T/MP10/w/IF403B)"
 pack_qty = 2
 former_names = ["Light Weight Spur Gear (45T/MP10/w/IF403B)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "shock"
-name_source = "ocr"
+category = "spur-gear"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]
+teeth = 45

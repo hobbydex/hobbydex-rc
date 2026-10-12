@@ -2,7 +2,8 @@ id = "part/kyosho/MX003"
 brand = "brand/kyosho"
 number = "MX003"
 name = "Shock Parts Set"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "complete"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-4x4", type = "direct", source = "doc/kyosho/mini-z-4x4-series-2023-spare-and-option-parts" },
+]

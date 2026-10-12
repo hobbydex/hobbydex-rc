@@ -1,7 +1,8 @@
 id = "part/kyosho/UB039"
 brand = "brand/kyosho"
 number = "UB039"
-name = "Diff. Gear Set (52T)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Diff. Gear Set(52T)"
 category = "differential"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+]

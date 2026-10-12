@@ -1,9 +1,10 @@
 id = "part/kyosho/IFW647"
 brand = "brand/kyosho"
 number = "IFW647"
-name = "Kp) King Pin Sleeve (4pcs)"
+name = "KPI King Pin Sleeve"
 pack_qty = 4
 former_names = ["Kp} King Pin Sleeve (4pcs)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pin-clip"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

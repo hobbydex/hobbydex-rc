@@ -1,8 +1,9 @@
 id = "part/kyosho/UMW602B"
 brand = "brand/kyosho"
 number = "UMW602B"
-name = "Ball Diff. Set (ULTIMA SC/DB/RB5/RT5)"
+name = "Ball Diff Set (Ultima/Scorpion)"
 former_names = ["Ball Diff. Set (Ulima/Scorpion)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "differential"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+]

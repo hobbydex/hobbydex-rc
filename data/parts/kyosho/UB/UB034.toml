@@ -1,7 +1,8 @@
 id = "part/kyosho/UB034"
 brand = "brand/kyosho"
 number = "UB034"
-name = "Ball Diff. Screw & Tensioner Spring Set"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Ball Diff. Screw & Tensionner Spring Set"
 category = "shock-spring"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+]

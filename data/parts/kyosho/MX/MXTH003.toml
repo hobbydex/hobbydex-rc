@@ -1,8 +1,9 @@
 id = "part/kyosho/MXTH003"
 brand = "brand/kyosho"
 number = "MXTH003"
-name = "Premounted Tire/VVhee"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Premounted Tire/Wheel"
 category = "tire"
-name_source = "ocr"
 mounting = "pre-mounted"
+fits = [
+  { kit = "kit/kyosho/mini-z-4x4", type = "direct", source = "doc/kyosho/mini-z-4x4-series-2023-spare-and-option-parts" },
+]

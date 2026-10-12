@@ -1,8 +1,10 @@
 id = "part/kyosho/IF411B"
 brand = "brand/kyosho"
 number = "IF411B"
-name = "Diff. Bevel Shaft (2pcs/MP9)"
+name = "Diff. Bevel Shaft"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "differential"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

@@ -1,8 +1,9 @@
 id = "part/kyosho/IF455"
 brand = "brand/kyosho"
 number = "IF455"
-name = "Wing Washer (Gunmetal/2pcs/MP9)"
+name = "Wing Washer (Gunmetal/MP9)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "washer-shim"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

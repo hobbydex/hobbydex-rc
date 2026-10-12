@@ -2,6 +2,7 @@ id = "part/kyosho/IF350-916"
 brand = "brand/kyosho"
 number = "IF350-916"
 name = "Big Shock Spring (S/Purple/9-1.6/L=70)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock-spring"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

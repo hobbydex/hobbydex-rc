@@ -1,6 +1,9 @@
 id = "part/kyosho/IFTH004"
 brand = "brand/kyosho"
 number = "IFTH004"
-name = "GMKC"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+name = "GMKC KC Cross Tire"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+]
+category = "tire"

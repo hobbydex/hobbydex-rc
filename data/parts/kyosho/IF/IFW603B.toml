@@ -1,8 +1,9 @@
 id = "part/kyosho/IFW603B"
 brand = "brand/kyosho"
 number = "IFW603B"
-name = "3PC Clutch Set (MP9/MP10)"
+name = "Clutch Set (MP9/MP10)"
 pack_qty = 3
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "engine-fuel"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

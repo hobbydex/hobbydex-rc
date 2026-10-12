@@ -1,9 +1,12 @@
 id = "part/kyosho/IF491KYB"
 brand = "brand/kyosho"
 number = "IF491KYB"
-name = "wing (F-Yellow/MP9 TKI4)"
+name = "Wing (Fluorescent Yellow/MP9 TKI4)"
 former_names = ["Wing (F-Yellow/MP9 TKI4)", "Wing (Fluorescent Yelow/MP9 TKI4)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "wing"
-name_source = "ocr"
+color = "fluorescent yellow"
 range = "kyosho/if491-wing-f-mp9-tki4-f5c4-colours"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+]

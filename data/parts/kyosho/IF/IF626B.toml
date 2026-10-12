@@ -3,8 +3,10 @@ brand = "brand/kyosho"
 number = "IF626B"
 name = "HD Coating Shock Set (L=50/MP10)"
 former_names = ["HD Front Lower Sus. Arm (L,R/Soft/MP10)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "complete"
 length_mm = 50
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

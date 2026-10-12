@@ -2,6 +2,7 @@ id = "part/kyosho/MZW705"
 brand = "brand/kyosho"
 number = "MZW705"
 name = "Ball Differential Set (MR-04)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "differential"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
+]

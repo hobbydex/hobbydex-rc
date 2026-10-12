@@ -1,9 +1,13 @@
 id = "part/kyosho/IS106-814"
 brand = "brand/kyosho"
 number = "IS106-814"
-name = "Big Shock Spring (M/Light Blue/8-1.4/L=84)"
+name = "Big Shock Spring (M / Light Blue / 8-1.4 / L=84)"
 pack_qty = 2
 former_names = ["Diff. Bevel Gear Set (12T/18T/MP10 TKI3)", "Wheel Hub (Wide/Gunmetal/2pcs/MP10)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock-spring"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+]

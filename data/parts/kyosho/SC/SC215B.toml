@@ -1,6 +1,8 @@
 id = "part/kyosho/SC215B"
 brand = "brand/kyosho"
 number = "SC215B"
-name = "Sponge Tape 100x150 mm"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+name = "Slipper Plate 2014"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+]
+category = "chassis"

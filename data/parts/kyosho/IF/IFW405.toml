@@ -1,9 +1,11 @@
 id = "part/kyosho/IFW405"
 brand = "brand/kyosho"
 number = "IFW405"
-name = "Front Stabilizer Set (INFERNO NEO)"
+name = "128 SP Shock Piston (ø1.2x8 Hole/for Big Shock)"
 pack_qty = 2
 former_names = ["128 SP Shock Piston (g1.2x8 Hole / 2pcs / for Big Shock)", "138 SP Shock Piston (eg1.3x8 Hole / 2pcs / for Big Shock)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "suspension"
-name_source = "ocr"
+category = "shock"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+]
+shock_part = "piston"

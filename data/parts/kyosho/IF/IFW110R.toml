@@ -1,8 +1,11 @@
 id = "part/kyosho/IFW110R"
 brand = "brand/kyosho"
 number = "IFW110R"
-name = "3PC Flywheel (ø34/Red)"
+name = "Flywheel (ø34/Red)"
 former_names = ["spc Fiywheel (ゅ 4/Red)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "engine-fuel"
-name_source = "ocr"
+pack_qty = 3
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+]

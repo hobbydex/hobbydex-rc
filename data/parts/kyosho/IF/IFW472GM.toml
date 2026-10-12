@@ -1,11 +1,15 @@
 id = "part/kyosho/IFW472GM"
 brand = "brand/kyosho"
 number = "IFW472GM"
-name = "Wheel Nut (Gunmetal/4pcs/for Serration)"
+name = "Wheel Nut (Gunmetal/for Serration)"
 pack_qty = 4
 former_names = ["™*) Joint Block Set (Cap Universal/2set)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "nut"
-name_source = "ocr"
 color = "gun metal"
 range = "kyosho/ifw472-colours"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

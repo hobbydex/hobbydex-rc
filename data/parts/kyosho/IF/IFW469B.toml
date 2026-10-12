@@ -1,9 +1,11 @@
 id = "part/kyosho/IFW469B"
 brand = "brand/kyosho"
 number = "IFW469B"
-name = "Aluminum Throttle Servo Horn (SANWA/KO/MP9)"
+name = "Aeration Cap Set (Threaded Big Shock/MP9)"
 former_names = ["Aeration Cap Set (Threaded Big Shock/MP9)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "steering"
-name_source = "ocr"
+category = "shock"
 material = "aluminium"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]
+shock_part = "cap"
