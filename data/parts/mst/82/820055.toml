@@ -8,9 +8,9 @@ fits = [
   { kit = "kit/mst/xxx-rally", type = "direct", source = "doc/mst/option-parts-list-2018" },
   { kit = "kit/mst/xxx-r", type = "direct", source = "doc/mst/option-parts-list-2018" },
 ]
-equivalent_to = [
-  { spec = "spec/bearing/4x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
-]
 material = "steel"
 category = "shock"
 shock_part = "rebuild-kit"
+includes = [
+  { spec = "spec/bearing/4x10x4", notes = "Size from the name; the count is not stated" },
+]

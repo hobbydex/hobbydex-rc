@@ -58,6 +58,13 @@ ENUMS = {
 }
 PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent", "translucent", "clear", "chrome"}   # part.finish of a paint; other parts' finish ("black oxide") is free
 
+# which part categories may be `equivalent_to` a spec of each kind
+SPEC_PART_CATS = {
+    "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin-clip"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
+    "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"},
+    "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
+}
+
 def categories():
     """Part categories are the files in data/categories (category/<slug>)."""
     d = os.path.join(ROOT, "categories")
@@ -163,6 +170,12 @@ def main():
                 errors.append(f"{path}: link {l!r} needs a site and an https url")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
             errors.append(f"{path}: paint finish = {d['finish']!r} not in {sorted(PAINT_FINISH)}")
+        # a part is equivalent only to a spec of its own kind; a part that comes with bearings, screws or a battery lists them in `includes`
+        if kind == "part" and d.get("category"):
+            for e in d.get("equivalent_to", []):
+                sk = str(e.get("spec", "")).split("/")[1] if str(e.get("spec", "")).count("/") >= 2 else None
+                if sk in SPEC_PART_CATS and d["category"] not in SPEC_PART_CATS[sk]:
+                    errors.append(f"{path}: equivalent_to {e['spec']} is a {sk} spec, but the part is a {d['category']} (list it in includes if the part comes with one)")
         sw = d.get("swatch") if kind == "part" else None
         if sw is not None and not (isinstance(sw, str) and re.fullmatch(r"#[0-9a-f]{6}", sw)):
             errors.append(f"{path}: swatch {sw!r} should be a lowercase hex colour \"#rrggbb\"")

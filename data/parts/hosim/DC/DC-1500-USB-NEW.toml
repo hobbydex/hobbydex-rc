@@ -20,10 +20,10 @@ chemistry = "lipo"
 cells = 2
 capacity_mah = 1500
 c_rating = 15
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
-]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-batter-7-4v-1500mah-15c-lipo-battery-with-charger" },
 ]
 category = "charger"
+includes = [
+  { spec = "spec/battery/lipo-2s-1500mah", notes = "Size from the name; the count is not stated" },
+]

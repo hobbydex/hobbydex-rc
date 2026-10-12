@@ -179,6 +179,8 @@ equivalent_to = [
 ]
 ```
 
+A part is only `equivalent_to` a spec of its own kind: a bearing spec for a part in category bearing, a screw spec for a screw, and so on (wheel-hex specs also for wheels, tyres, hubs and axles that carry the hex). A part that comes with bearings, screws or a battery (a clutch bell with its bearings, a screw kit with washers, a battery with a charger) lists them in `includes` instead. tools/validate.py checks this.
+
 `match` is exact (same standard, stated by the brand), functional
 (interchangeable in practice) or close (check before use). Geometry lives on
 the spec; material, grade and finish live on the part, because that is what
