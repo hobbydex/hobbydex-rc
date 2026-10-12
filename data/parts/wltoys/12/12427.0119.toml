@@ -11,3 +11,6 @@ fits = [
   { kit = "kit/wltoys/12427", type = "direct", source = "doc/wltoys/12427-reseller-parts" },
 ]
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

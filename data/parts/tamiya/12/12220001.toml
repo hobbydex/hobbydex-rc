@@ -6,3 +6,6 @@ former_names = ["3mm _Lock Nut", "3mmLock Nut", "Ecrou nylstop"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-nylon-lock", match = "functional", notes = "Thread from the manufacturer's description, nylon insert from the brand's other name for the part, \"Ecrou nylstop\"" },
+]
