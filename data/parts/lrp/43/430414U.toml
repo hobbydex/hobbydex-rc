@@ -1,0 +1,17 @@
+id = "part/lrp/430414U"
+brand = "brand/lrp"
+number = "430414U"
+name = "ANTIX by LRP - 4100 - 7.4V - 50C LiPo Car Stickpack Hardcase - T-Plug"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430414u/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4100mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4100
+c_rating = 50
+case = "hard"

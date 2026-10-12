@@ -12,3 +12,8 @@ dimensions_mm = [36, 38.5, 22]
 weight_g = 32
 current_a = 200
 documents = ["doc/lrp/80250-manual"]
+supersedes = "part/lrp/80230"
+fits = [
+  { kit = "kit/lrp/s10-blast-bx3", type = "direct", source = "doc/lrp/120210-product-page" },
+  { kit = "kit/lrp/s10-blast-tc3", type = "direct", source = "doc/lrp/120203-product-page" },
+]
