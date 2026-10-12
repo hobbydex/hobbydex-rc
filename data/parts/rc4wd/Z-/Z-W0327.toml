@@ -2,10 +2,16 @@ id = "part/rc4wd/Z-W0327"
 brand = "brand/rc4wd"
 number = "Z-W0327"
 name = "1.9\" 5 Lug Steel Wheels w/Beauty Ring (Silver)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/19-5-Lug-Steel-Wheels-wBeauty-Ring-Silver_p_7968.html" },
+]
+material = "aluminium"
+width_mm = 32
+offset_mm = 1.4
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.9\""
 color = "silver"
-material = "steel"

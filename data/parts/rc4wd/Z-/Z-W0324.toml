@@ -2,8 +2,14 @@ id = "part/rc4wd/Z-W0324"
 brand = "brand/rc4wd"
 number = "Z-W0324"
 name = "Rally 1.9\" Beadlock Wheels (Gold)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/Rally-19-Beadlock-Wheels-Gold_p_7748.html" },
+]
+width_mm = 32
+offset_mm = 1.7
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.9\""

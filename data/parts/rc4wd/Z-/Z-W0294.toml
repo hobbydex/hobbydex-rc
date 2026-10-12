@@ -5,6 +5,12 @@ name = "Fuel Off-Road Zephyr Beadlock Wheels 1.9\""
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Fuel-Off-Road-Zephyr-Beadlock-Wheels-19_p_7293.html" },
 ]
+material = "aluminium"
+width_mm = 26
+offset_mm = -6
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""
 beadlock = true

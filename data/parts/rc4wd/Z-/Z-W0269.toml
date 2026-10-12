@@ -2,11 +2,17 @@ id = "part/rc4wd/Z-W0269"
 brand = "brand/rc4wd"
 number = "Z-W0269"
 name = "Stamped Steel 1.7\" Beadlock Wagon Wheels (White)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/Stamped-Steel-17-Beadlock-Wagon-Wheels-White_p_7089.html" },
+]
+material = "aluminium"
+width_mm = 22
+offset_mm = -1.5
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.7\""
 beadlock = true
 color = "white"
-material = "steel"

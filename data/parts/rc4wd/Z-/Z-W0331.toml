@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0331"
 brand = "brand/rc4wd"
 number = "Z-W0331"
 name = "Slot Mag 1.9\" Wheels"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/slot-mag-stamped-steel-wheels-19.html" },
+]
+material = "aluminium"
+width_mm = 32.1
+offset_mm = -11.55
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.9\""

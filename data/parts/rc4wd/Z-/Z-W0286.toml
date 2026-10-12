@@ -2,8 +2,13 @@ id = "part/rc4wd/Z-W0286"
 brand = "brand/rc4wd"
 number = "Z-W0286"
 name = "Deep Dish Wagon 1.55\" Stamped Steel Beadlock Wheels (Clear)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/Deep-Dish-Wagon-155-Stamped-Steel-Beadlock-Wheels-Clear_p_7155.html" },
+]
+offset_mm = -9.36
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.55\""
