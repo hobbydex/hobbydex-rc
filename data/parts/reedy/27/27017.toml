@@ -9,6 +9,9 @@ current_a = 160
 lipo_cells = [2, 2]
 dimensions_mm = [38.5, 36.9, 19.5]
 weight_g = 45
+rebrand_of = [
+  { part = "part/hobbywing/30112618", source = "doc/community/2026-10-12-reedy-610r-is-hobbywing-xr10-pro-wp", notes = "Same case as the XeRun XR10 PRO WP: Reedy gives 38.5 x 36.9 x 19.5 mm, Hobbywing 37.7 x 37.2 x 19.6 mm; both 160 A, 2S. Reedy states 45 g, Hobbywing 95.6 g" },
+]
 notes = "BEC Adjustable 6.0-7.4V/5A; Motor limit 4.5T"
 documents = ["doc/reedy/27016-blackbox-610r-n-prgrmr-manual-online-v2"]
 links = [
