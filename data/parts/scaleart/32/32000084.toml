@@ -1,10 +1,14 @@
 id = "part/scaleart/32000084"
 brand = "brand/scaleart"
 number = "32000084"
-name = "Messingsenkkopfschraube M2x4"
+name = "Brass countersunk screw M2x4"
 category = "screw"
 category_source = "curated"
 links = [
   { site = "ScaleART", url = "https://www.scaleart-shop.de/products/messing-senkkopfschraube-m2x4-25-stueck" },
 ]
 documents = ["doc/scaleart/scaleart-shop"]
+equivalent_to = [
+  { spec = "spec/screw/m2x4-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "brass"

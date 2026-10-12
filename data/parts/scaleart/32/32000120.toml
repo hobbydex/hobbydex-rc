@@ -1,10 +1,14 @@
 id = "part/scaleart/32000120"
 brand = "brand/scaleart"
 number = "32000120"
-name = "Senkkopfschraube M3x20 DIN 965"
+name = "Countersunk head screw M3x20 DIN 965"
 category = "screw"
 category_source = "curated"
 links = [
   { site = "ScaleART", url = "https://www.scaleart-shop.de/products/senkkopfschraube-m3x20-din965-25-stueck" },
 ]
 documents = ["doc/scaleart/scaleart-shop", "doc/scaleart/71000316-manual"]
+material = "steel"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

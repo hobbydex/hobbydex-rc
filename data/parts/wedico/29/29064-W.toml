@@ -1,7 +1,7 @@
 id = "part/wedico/29064-W"
 brand = "brand/wedico"
 number = "29064-W"
-name = "Cat 966 G II Lampenset Rückleuchten mit Rahmen und Gläser"
+name = "Cat 966 G II lamp set taillights with frame and glasses"
 category = "electronics"
 category_source = "curated"
 fits = [
@@ -10,4 +10,8 @@ fits = [
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-construction/zubehoer/cat-966-g-ii-lampenset-rueckleuchten-mit-rahmen-und-glaeser" },
+]
+gtin = "4250046199121"
+includes = [
+  { part = "part/wedico/25224-W", qty = 4, source = "doc/wedico/thicon-models-shop" },
 ]
