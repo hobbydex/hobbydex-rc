@@ -9,3 +9,7 @@ links = [
   { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/kaiser-parts-bhcs-m-screw20m3-8-pd9527" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

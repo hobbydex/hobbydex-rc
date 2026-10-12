@@ -4,3 +4,7 @@ number = "FTX9871"
 name = "Cap Head 2.5*11mm Grub Screw Bolt"
 notes = "Read by OCR from a scanned FTX document"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x11-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
