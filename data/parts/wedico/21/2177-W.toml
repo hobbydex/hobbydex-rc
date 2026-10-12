@@ -1,0 +1,16 @@
+id = "part/wedico/2177-W"
+brand = "brand/wedico"
+number = "2177-W"
+name = "NIMH-Akku 12V 2100mAh für alle Zugmaschinen + CAT Modelle"
+category = "battery"
+category_source = "curated"
+documents = ["doc/wedico/thicon-models-shop"]
+links = [
+  { site = "thicon-models", url = "https://www.thicon-models.com/rc-zubehoer/akkus/nimh-akku-12v-2100mah-fuer-alle-zugmaschinen-+-cat-modelle" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-10s-2100mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 10
+capacity_mah = 2100

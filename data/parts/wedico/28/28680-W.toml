@@ -1,0 +1,16 @@
+id = "part/wedico/28680-W"
+brand = "brand/wedico"
+number = "28680-W"
+name = "AKKU 12 V 650 mAH NiMh FÜR AUFL.+ ANH."
+category = "battery"
+category_source = "curated"
+documents = ["doc/wedico/thicon-models-shop"]
+links = [
+  { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/akku-12-v-650-mah-nimh-fUEr-aufl+-anh" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-10s-650mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 10
+capacity_mah = 650
