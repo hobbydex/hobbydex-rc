@@ -1,13 +1,19 @@
 id = "part/killerbody/48776"
 brand = "brand/killerbody"
 number = "48776"
-name = "Cockpit Set (Right & Left)"
+name = "Cockpit Set (Right & Left) (Fit for KB#48765 1/10 Jeep Gladiator Rubicon Hard Body Kit Diy version)"
 category = "body"
 category_source = "curated"
 scale = "1/10"
 gtin = "4895229502154"
 material = "plastic"
-applies_to = "Fit for KB#48765 1/10 Jeep Gladiator Rubicon Hard Body Kit Diy version"
+applies_to = "Fit for KB#48765 1/10 Jeep Gladiator Rubicon Hard Body Kit Diy version 1-Dashboard (right&left) 2-Cockpit base 3-Adjustable seat (ABS) 4-Adjustable steering wheel (rotary) 5-Gear; Hand brake; Clutch; Accelerator pedal; Braking pedal 6-Decal sheet 7-Installation parts(ABS) 8-Lighting panel of dashboard (right&left) 9-PC painted lenses of dashboard (right&left) 10-Accessories bag 11-Instruction sheet"
 fits = [
   { kit = "kit/killerbody/mercury", type = "direct", source = "doc/killerbody/product-pages", notes = "Listed on the chassis kit's product page" },
+]
+related = [
+  { part = "part/killerbody/48765", relation = "fits", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/cockpit-set-left-right-pre-order" },
 ]

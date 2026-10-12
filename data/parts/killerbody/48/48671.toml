@@ -7,7 +7,13 @@ category_source = "curated"
 scale = "1/10"
 gtin = "4560394779303"
 material = "stainless"
-applies_to = "Fit for Axial SCX10 Chassis 3.35/3.75 inch Tire)"
+applies_to = "Fit for Axial SCX10 Chassis 3.35/3.75 inch Tire"
 fits = [
   { kit = "kit/axial/scx10", type = "direct", source = "doc/killerbody/product-pages" },
+]
+related = [
+  { part = "part/killerbody/48601", relation = "fits", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/installation-mounting-stainless-steel-1-10-toyota-land-cruiser-70" },
 ]

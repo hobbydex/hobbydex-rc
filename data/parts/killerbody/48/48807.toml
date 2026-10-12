@@ -7,9 +7,12 @@ category_source = "curated"
 scale = "1/10"
 gtin = "4895229502635"
 material = "stainless"
-applies_to = "Fit for Axial Axial SCX10_III Chassis); Fit for Axial Axial SCX10_III Chassis (KB 1/10 Jeep Gladiator Rubicon)"
+applies_to = "Fit for Axial Axial SCX10_III Chassis (KB 1/10 Jeep Gladiator Rubicon)"
 fits = [
   { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/killerbody/product-pages" },
+]
+related = [
+  { part = "part/killerbody/48765", relation = "fits", source = "doc/killerbody/product-pages" },
 ]
 links = [
   { site = "Killerbody store", url = "https://store.killerbody.com/products/installation-connecting-parts-fit-for-axial-axial-scx10_iii-chassis-kb-1-10-jeep-gladiator-rubicon" },

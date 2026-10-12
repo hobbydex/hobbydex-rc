@@ -6,7 +6,14 @@ category = "body"
 category_source = "curated"
 scale = "1/10"
 gtin = "4560394779563"
+material = "plastic"
 applies_to = "Fit for Axial SCX10 & SCX10_ⅡChassis (1/10 Toyota Land Cruiser 70)"
 fits = [
   { kit = "kit/axial/scx10", type = "direct", source = "doc/killerbody/product-pages" },
+]
+related = [
+  { part = "part/killerbody/48601", relation = "fits", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/installation-mounting-for-rear-shock-absorber" },
 ]
