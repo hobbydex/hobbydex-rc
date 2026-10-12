@@ -4,7 +4,11 @@ number = "SK-100064"
 name = "T6755 Charger"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 55
+lipo_cells = [1, 6]
+dimensions_mm = [140, 165, 60]
+weight_g = 540
+notes = "Discontinued (on SkyRC's Discontinued Products list); Manual: AC 100-240V / DC 11-18V input, charge circuit power 55W, charge current 0.1-7.0A, discharge 5W / 0.1-2.0A, balancing 200mA/cell, LiPo/LiFe/LiIon 1-6 cells, NiCd/NiMH 1-15 cells, Pb 2-20V"
 documents = ["doc/skyrc/sk-100064-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/T6755_Charger" },

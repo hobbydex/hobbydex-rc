@@ -4,7 +4,12 @@ number = "SK-300042-01"
 name = "Leopard 60A ESC for 1_10 Car"
 category = "electronics"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+lipo_cells = [2, 3]
+current_a = 60
+peak_current_a = 90
+dimensions_mm = [51.6, 30, 27.4]
+weight_g = 78
+notes = "Discontinued (on SkyRC's Discontinued Products list); Product page: continuous/burst current 60A/90A, input 2-3S LiPo or 4-8S NiCd/NiMH, linear BEC 5V 2A, brushless (no sensor port named), on resistance 0.001 ohm per phase, motor limits 2S LiPo on-road >=9.0T / off-road >=10.0T, 3S LiPo on-road >=10.0T / off-road >=13.0T, Fwd/Brk or Fwd/Brk/Rev"
 documents = ["doc/skyrc/sk-300042-01-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/Leopard2" },

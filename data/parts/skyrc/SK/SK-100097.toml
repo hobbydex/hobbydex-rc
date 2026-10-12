@@ -4,7 +4,11 @@ number = "SK-100097"
 name = "D200 Charger"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 300
+lipo_cells = [1, 6]
+dimensions_mm = [197, 182, 71]
+weight_g = 1260
+notes = "Discontinued (on SkyRC's Discontinued Products list); Manual: charge wattage AC 200W (shared), DC 200W (channel A) + 100W (channel B); charge current channel A 0.1-20A, channel B 0.1-10A; discharge 10W x 2; LiPo/LiIon/LiFe/LiHV 1-6 cells, NiMH/NiCd 1-15 cells, Pb 2-20V"
 documents = ["doc/skyrc/sk-100097-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/D200_Charger" },

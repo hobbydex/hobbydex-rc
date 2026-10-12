@@ -5,7 +5,10 @@ name = "SKYRC 1400W CHARGER"
 category = "charger"
 category_source = "curated"
 power_w = 1400
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+lipo_cells = [2, 8]
+dimensions_mm = [200, 140, 55]
+weight_g = 1220
+notes = "Discontinued (on SkyRC's Discontinued Products list); Manual: DC 11-30V input, charge wattage 700W x 2, charge current 0.1-30A, discharge 30W x 2, balancing max. 800mA/cell, LiPo/LiIon/LiFe/LiHV 2-8 cells, NiMH/NiCad 1-20 cells, Pb 2-24V"
 documents = ["doc/skyrc/sk-100087-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/SKYRC_1400W_CHARGER" },

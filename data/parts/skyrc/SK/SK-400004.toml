@@ -4,7 +4,14 @@ number = "SK-400004"
 name = "LEOPARD BL MOTOR FOR 1/10 CAR"
 category = "motor"
 category_source = "curated"
-notes = "Not on any SkyRC product listing as of 2026-10-11 (the page is still up)"
+shaft_mm = 3.175
+diameter_mm = 35.8
+length_mm = 50
+weight_g = 168
+equivalent_to = [
+  { spec = "spec/motor/brushless-3650-3.175mm", match = "functional", notes = "Derived from SkyRC's dimensions (diameter 35.8 mm, length 50 mm, shaft 3.175 mm)" },
+]
+notes = "Not on any SkyRC product listing as of 2026-10-11 (the page is still up); Product page spec table (picture): Leopard 380 1/10 motor, sold in four versions under this one number: 9.0T 4370kV (550W, 12V max., 46A max.), 10.0T 3930kV (13V, 42A), 12.0T 3300kV (15V, 35A), 13.0T 3000kV (16V, 32A); length 50mm, outer diameter 35.8mm with fins, shaft 3.175mm x 15mm, 168g, 2-pole rotor, stator length 25mm, max. 50000 RPM"
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/LEOPARD_BL_MOTOR_FOR_1_10_CAR" },
 ]

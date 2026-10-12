@@ -4,7 +4,11 @@ number = "SK-100158"
 name = "Q200 Charger"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 300
+lipo_cells = [1, 6]
+dimensions_mm = [197, 182, 71]
+weight_g = 1335
+notes = "Discontinued (on SkyRC's Discontinued Products list); Manual: charge wattage DC channel A/B 100W, C/D 50W; AC channel A+C 100W, B+D 100W; charge current A/B 0.1-10A, C/D 0.1-5A; discharge 10W x 4; LiPo/LiIon/LiFe/LiHV 1-6 cells, NiMH/NiCd 1-15 cells, Pb 2-20V"
 documents = ["doc/skyrc/sk-100158-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/Q200_Charger" },
