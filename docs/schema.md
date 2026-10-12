@@ -89,6 +89,8 @@ re-release. Keyed by manufacturer item number when there is one, otherwise by a
 slug (`xb4-2013`, `xb8e-2021`). `kind` is kit | rtr | arr. `status` is
 announced | released | discontinued.
 
+`category` (optional) overrides the kit's type for this release, where a car on a shared chassis is another type than the chassis kit: Tamiya's race trucks are releases of the TT-01 Type-E kit (a touring car) with category "race-truck".
+
 `surface` (race kits only): the track surface the maker built this version for, as a list of carpet | astro | clay | dirt | asphalt | high-grip, when the maker sells surface-specific versions or says what the car is for ("Carpet Edition", "for clay tracks"). Set only from the maker's own wording, never guessed from the car type; on a kit when the whole line is for one surface.
 
 `documents` lists the docs that describe this release. `contains` lists the
