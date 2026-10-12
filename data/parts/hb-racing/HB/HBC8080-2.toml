@@ -1,6 +1,10 @@
 id = "part/hb-racing/HBC8080-2"
 brand = "brand/hb-racing"
 number = "HBC8080-2"
-name = "UPPER CHASSIS (SILVER) (LIGHTNING SERIES)"
-name_source = "ocr"
+name = "UPPER CHASSIS (SILVER)"
+name_source = "manufacturer"
 category = "chassis"
+fits = [
+  { kit = "kit/hb-racing/lightning-2", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/lightning-stadium", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+]

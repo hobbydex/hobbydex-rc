@@ -1,5 +1,9 @@
 id = "part/hb-racing/HBC8103"
 brand = "brand/hb-racing"
 number = "HBC8103"
-name = "TUNED PIPE HOLDER SET (LIGHTNING SERIES)"
-name_source = "ocr"
+name = "TUNE PIPE HOLDER SET"
+name_source = "manufacturer"
+fits = [
+  { kit = "kit/hb-racing/lightning-2", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/lightning-stadium", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+]
