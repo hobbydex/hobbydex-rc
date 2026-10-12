@@ -1,0 +1,17 @@
+id = "part/reve-d/D1-RA-05R"
+brand = "brand/reve-d"
+number = "D1-RA-05R"
+name = "Rear Knuckle for D1-RAC (Right)"
+name_ja = "D1-RAC用 リアナックル(右側)"
+fits = [
+  { kit = "kit/reve-d/rdx", type = "direct", source = "doc/reve-d/teamreved-products" },
+]
+notes = "English name translated from Reve D's Japanese listing."
+links = [
+  { site = "Rêve D", url = "https://teamreved.com/product/d1-ra-05r" },
+]
+documents = ["doc/reve-d/teamreved-products"]
+category = "suspension"
+related = [
+  { part = "part/reve-d/D1-RAC", relation = "for", notes = "link_part_refs" },
+]
