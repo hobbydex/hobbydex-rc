@@ -321,6 +321,8 @@ on the rebranded part; the site shows it from both sides.
 rebrand_of = [{ part = "part/flysky/FS-GT5", source = "doc/community/2026-10-10-turnigy-gt5-is-flysky-gt5" }]
 ```
 
+`name_de`: the brand's German name, kept when `name` is an English translation of it (ScaleART kit names, translated with a fixed glossary).
+
 `name_ja`: the brand's Japanese name, kept when the English `name` is a
 translation (Yokomo publishes Japanese-only parts lists).
 
