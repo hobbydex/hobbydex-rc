@@ -453,6 +453,32 @@ ESCs are parts with category electronics and, when stated, `current_a` and
 `peak_current_a` (continuous and burst amps), `lipo_cells`, `dimensions_mm`
 and `weight_g`. A motor and ESC combo lists its components with `includes`.
 
+Engines (nitro and gas) are parts with category engine-fuel. A complete
+engine carries, when the maker states them: `displacement_cc`,
+`engine_class` (the class the maker names, ".12", ".21", ".28", as a string;
+or the stated cubic inches cut to two decimals, 0.213 cu.in is ".21"; never
+worked out from cc alone), `bore_mm` and `stroke_mm`, `output_hp` (in hp:
+the stated hp, or stated PS converted at 1 PS = 0.98632 hp, rounded to
+0.01) at `output_rpm` (the rpm the output is stated at), `rpm_range`
+([min, max], the practical rpm range), `fuel` (nitro: glow fuel, for glow
+plug engines | gasoline: petrol two-strokes of large scale cars) and
+`weight_g`. Engine parts, exhausts and clutches in the same category carry
+none of these. tools/link_engine_specs.py fills them from
+the maker's product pages and the importers' notes.
+
+```toml
+name = "O.S.SPEED R2106"
+category = "engine-fuel"
+weight_g = 345
+displacement_cc = 3.49
+engine_class = ".21"
+bore_mm = 16.08
+stroke_mm = 17.2
+output_hp = 2.76
+output_rpm = 35000
+rpm_range = [4000, 45000]
+```
+
 "Which kits use this screw" is derived: release -> contains -> part ->
 equivalent_to -> spec. Specs are never linked from a release directly.
 
@@ -528,7 +554,7 @@ one of them. `name` is the label; `spec_type` names the generic spec type the
 category's parts link to; `key_fields` are the properties that matter when
 choosing such a part, in display order, each read from the part itself or from
 its linked spec (`from = "part" | "spec"`), with an optional `unit` and
-`format` ("cells": a [min, max] LiPo range shown as 1-3S). `compare_only = true`
+`format` ("cells": a [min, max] LiPo range shown as 1-3S; "range": a [min, max] shown as 4000-45000). `compare_only = true`
 keeps a field out of the parts table and shows it only when parts are
 compared side by side.
 

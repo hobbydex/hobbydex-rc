@@ -1,3 +1,14 @@
 id = "category/engine-fuel"
 name = "Engine and fuel"
 description = "Nitro and gas engines, carburettors, exhausts, fuel tanks and clutches."
+key_fields = [
+  { field = "engine_class", label = "Class", from = "part" },
+  { field = "displacement_cc", label = "Displacement", from = "part", unit = "cc" },
+  { field = "output_hp", label = "Output", from = "part", unit = "hp" },
+  { field = "output_rpm", label = "at", from = "part", unit = "rpm" },
+  { field = "fuel", label = "Fuel", from = "part" },
+  { field = "bore_mm", label = "Bore", from = "part", unit = "mm", compare_only = true },
+  { field = "stroke_mm", label = "Stroke", from = "part", unit = "mm", compare_only = true },
+  { field = "rpm_range", label = "Practical rpm", from = "part", format = "range", compare_only = true },
+  { field = "weight_g", label = "Weight", from = "part", unit = "g", compare_only = true },
+]

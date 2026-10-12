@@ -56,8 +56,12 @@ ENUMS = {
     "part.paint_type": {"polycarbonate", "lacquer", "acrylic", "enamel"},
     "part.application": {"spray-can", "airbrush", "brush", "marker"},
     "part.paint_role": {"paint", "clear", "primer", "thinner", "cleaner", "masking"},
+    "part.fuel": {"nitro", "gasoline"},
     "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
+# engine fields (docs/schema.md "Engines"): only on engine-fuel parts, numbers in these ranges
+ENGINE_NUM = {"displacement_cc": (0.5, 120), "bore_mm": (5, 60), "stroke_mm": (5, 60), "output_hp": (0.05, 20), "output_rpm": (1000, 60000)}
+ENGINE_FIELDS = set(ENGINE_NUM) | {"engine_class", "rpm_range", "fuel"}   # bore_mm is also a shock's bore: checked on engines only
 PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent", "translucent", "clear", "chrome"}   # part.finish of a paint; other parts' finish ("black oxide") is free
 
 # which part categories may be `equivalent_to` a spec of each kind
@@ -197,6 +201,20 @@ def main():
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
+        eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
+        if eng - {"bore_mm"} and d.get("category") != "engine-fuel":
+            errors.append(f"{path}: {', '.join(sorted(eng - {'bore_mm'}))} only on engine parts (category engine-fuel)")
+        if d.get("category") != "engine-fuel":
+            eng = set()
+        for k in eng & set(ENGINE_NUM):
+            lo, hi = ENGINE_NUM[k]
+            if isinstance(d[k], bool) or not isinstance(d[k], (int, float)) or not lo <= d[k] <= hi or (k == "output_rpm" and not isinstance(d[k], int)):
+                errors.append(f"{path}: {k} {d[k]!r} should be a number from {lo} to {hi}")
+        if "engine_class" in eng and not (isinstance(d["engine_class"], str) and re.fullmatch(r"\.\d\d", d["engine_class"])):
+            errors.append(f"{path}: engine_class {d['engine_class']!r} should be a class like \".21\"")
+        rr = d.get("rpm_range") if "rpm_range" in eng else None
+        if rr is not None and not (isinstance(rr, list) and len(rr) == 2 and all(isinstance(x, int) and 500 <= x <= 60000 for x in rr) and rr[0] < rr[1]):
+            errors.append(f"{path}: rpm_range {rr!r} should be [min, max] rpm")
         if kind == "spec":
             for code in d.get("standards", []):
                 if code not in codes:
