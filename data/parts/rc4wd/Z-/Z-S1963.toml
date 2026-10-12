@@ -5,4 +5,8 @@ name = "Baer Brake System Rotor Set (2.2\"/1.9\")"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-baer-brake-systems-rotors-and-caliper-set-1922.html" },
 ]
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "drivetrain"

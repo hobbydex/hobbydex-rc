@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0333"
 brand = "brand/rc4wd"
 number = "Z-W0333"
 name = "Fuel Off-Road 1.55\" Zephyr Beadlock Wheels (Gunmetal)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-fuel-off-road-155-zephyr-beadlock-wheels-gunmetal.html" },
+]
+material = "aluminium"
+width_mm = 28
+offset_mm = -8.5
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.55\""

@@ -2,7 +2,13 @@ id = "part/rc4wd/Z-S2005"
 brand = "brand/rc4wd"
 number = "Z-S2005"
 name = "Medium Offset Hub for Racing Monster Truck Beadlock Wheels (Stepped Hex)"
+pack_qty = 2
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/Medium-Offset-Hub-for-Racing-Monster-Truck-Beadlock-Wheels-Stepped-Hex_p_7755.html" },
+]
+material = "aluminium"
+width_mm = 21.5
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "drivetrain"

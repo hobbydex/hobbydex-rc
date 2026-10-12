@@ -5,6 +5,10 @@ name = "Mickey Thompson Classic Lock 1.9\" Internal Beadlock Wheel"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/rc4wd-mickey-thompson-classic-lock-19-internal-beadlock-wheel.html" },
 ]
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""
 beadlock = true

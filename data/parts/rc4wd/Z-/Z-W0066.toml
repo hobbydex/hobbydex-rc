@@ -2,11 +2,17 @@ id = "part/rc4wd/Z-W0066"
 brand = "brand/rc4wd"
 number = "Z-W0066"
 name = "Stamped Steel 1.7\" Beadlock SR5 Wheels (White/Black)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/stamped-steel-17-beadlock-sr5-wheels-whiteblack.html" },
+]
+material = "steel"
+width_mm = 22
+offset_mm = -2.8
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.7\""
 beadlock = true
 color = "white/black"
-material = "steel"
