@@ -7,7 +7,16 @@ category_source = "curated"
 scale = "1/10"
 gtin = "4560394779747"
 material = "stainless"
-applies_to = "Fit for Traxxas TRX-4 chassis 4.53\" - 4.72\" Tire); Fit for KB48710 Installation Mounting Stainless Steel"
+applies_to = "Fit for Traxxas TRX-4 chassis 4.53\" - 4.72\" Tire; Fit for KB48710 Installation Mounting Stainless Steel"
 fits = [
   { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/killerbody/product-pages" },
+]
+related = [
+  { part = "part/killerbody/48601", relation = "fits", source = "doc/killerbody/product-pages" },
+  { part = "part/killerbody/48732", relation = "for", source = "doc/killerbody/product-pages" },
+  { part = "part/killerbody/48733", relation = "for", source = "doc/killerbody/product-pages" },
+  { part = "part/killerbody/48734", relation = "for", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/bumper-connecting-parts-stainless-steel-1" },
 ]

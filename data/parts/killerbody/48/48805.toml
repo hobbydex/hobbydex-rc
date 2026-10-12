@@ -7,9 +7,12 @@ category_source = "curated"
 scale = "1/10"
 gtin = "4895229502611"
 material = "stainless"
-applies_to = "Fit for Traxxas TRX-4 chassis); Fit for Traxxas TRX-4 chassis (KB 1/10 Jeep Gladiator Rubicon)"
+applies_to = "Fit for Traxxas TRX-4 chassis (KB 1/10 Jeep Gladiator Rubicon)"
 fits = [
   { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/killerbody/product-pages" },
+]
+related = [
+  { part = "part/killerbody/48765", relation = "fits", source = "doc/killerbody/product-pages" },
 ]
 links = [
   { site = "Killerbody store", url = "https://store.killerbody.com/products/installation-connecting-parts-fit-for-traxxas-trx-4-chassis-kb-1-10-jeep-gladiator-rubicon-pre-order" },

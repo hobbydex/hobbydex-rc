@@ -7,8 +7,16 @@ category_source = "curated"
 scale = "1/10"
 gtin = "4560394779679"
 material = "stainless"
-applies_to = "Fit for Axial SCX10 & SCX10_Ⅱ Chassis 4.72 inch Tire); Fit for KB48672 Installation Mounting Stainless Steel"
+applies_to = "Fit for Axial SCX10 & SCX10_Ⅱ Chassis 4.72 inch Tire; Fit for KB48672 Installation Mounting Stainless Steel"
 fits = [
   { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/killerbody/product-pages" },
   { kit = "kit/axial/scx10", type = "direct", source = "doc/killerbody/product-pages" },
+]
+related = [
+  { part = "part/killerbody/48601", relation = "fits", source = "doc/killerbody/product-pages" },
+  { part = "part/killerbody/48669", relation = "for", source = "doc/killerbody/product-pages" },
+  { part = "part/killerbody/48689", relation = "for", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/bumper-connecting-parts-stainless-steel-fit-for-axial-scx10-scx10_-chassis-4-72-inch-tire" },
 ]

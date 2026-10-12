@@ -1,0 +1,20 @@
+id = "part/killerbody/48615"
+brand = "brand/killerbody"
+number = "48615"
+name = "Cockpit Set (Right & Left) (Fit for KB#48601 1/10 Toyota Land Cruiser Hard Body)"
+category = "body"
+category_source = "curated"
+scale = "1/10"
+gtin = "4560394778528"
+applies_to = "Fit for KB#48601 1/10 Toyota Land Cruiser Hard Body; Fit For 1/10 Toyota Land Cruiser 70 RC Car Hard Body Axial SCX10 & Traxxas TRX-4; fit for LC70 Traxxas TRX-4 chassis"
+fits = [
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/killerbody/store" },
+  { kit = "kit/axial/scx10", type = "direct", source = "doc/killerbody/store" },
+  { kit = "kit/killerbody/mercury", type = "direct", source = "doc/killerbody/product-pages", notes = "Listed on the chassis kit's product page" },
+]
+related = [
+  { part = "part/killerbody/48601", relation = "fits", source = "doc/killerbody/product-pages" },
+]
+links = [
+  { site = "Killerbody store", url = "https://store.killerbody.com/products/cockpit-set-r-l-fit-for-kb-48601-1-10-toyota-land-cruiser-70-hard-body" },
+]
