@@ -299,12 +299,14 @@ contain `+`).
 digits, as printed by the brand; the validator checks length and check digit.
 Releases can carry a `gtin` too, the barcode on the kit's box.
 
-`links`: pages about this part or release on community reference sites,
-as `{ site, url }` (https only). The site shows them as buttons next to the
-web search.
+`links`: pages about this part or release elsewhere, as `{ site, url }`
+(https only); the site shows them as buttons next to the web search.
+`kind = "fan-site"` marks a link to a fan or community site (such as
+TamiyaBase): it is a courtesy link for readers, not a source for any value in
+Hobbydex, and the site shows it apart from the brand's own pages.
 
 ```toml
-links = [{ site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13934-10004255" }]
+links = [{ site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13934-10004255", kind = "fan-site" }]
 ```
 
 Planned: `numbers` (aliases such as Tamiya's 7-digit spare number, 8-digit SKU

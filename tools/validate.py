@@ -174,6 +174,8 @@ def main():
         for l in d.get("links", []) if kind in ("part", "release") else []:
             if not (isinstance(l, dict) and l.get("site") and str(l.get("url", "")).startswith("https://")):
                 errors.append(f"{path}: link {l!r} needs a site and an https url")
+            elif "kind" in l and l["kind"] != "fan-site":
+                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site']")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
             errors.append(f"{path}: paint finish = {d['finish']!r} not in {sorted(PAINT_FINISH)}")
         # a part is equivalent only to a spec of its own kind; a part that comes with bearings, screws or a battery lists them in `includes`
