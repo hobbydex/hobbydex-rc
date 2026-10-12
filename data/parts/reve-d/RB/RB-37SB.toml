@@ -1,0 +1,21 @@
+id = "part/reve-d/RB-37SB"
+brand = "brand/reve-d"
+number = "RB-37SB"
+name = "7.4V 3700mAh Short Size Li-Po Battery"
+name_ja = "7.4V/3700mAh ショートサイズ Li-Po バッテリー"
+weight_g = 156
+dimensions_mm = [46.5, 93.0, 18.5]
+c_rating = 100
+connector = "4 mm bullet"
+notes = "English name translated from Reve D's Japanese listing."
+links = [
+  { site = "Rêve D", url = "https://teamreved.com/product/rb-37s" },
+]
+documents = ["doc/reve-d/teamreved-products"]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 3700
+category = "battery"

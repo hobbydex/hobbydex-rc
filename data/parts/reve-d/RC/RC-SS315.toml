@@ -1,0 +1,18 @@
+id = "part/reve-d/RC-SS315"
+brand = "brand/reve-d"
+number = "RC-SS315"
+name = "M3x15mm Set Screw"
+name_ja = "M3 セットスクリューシリーズ"
+fits = [
+  { kit = "kit/reve-d/rdx", type = "direct", source = "doc/reve-d/teamreved-products" },
+]
+notes = "English name translated from Reve D's Japanese listing."
+links = [
+  { site = "Rêve D", url = "https://teamreved.com/product/rc-ss303-304-318-322" },
+]
+documents = ["doc/reve-d/teamreved-products"]
+equivalent_to = [
+  { spec = "spec/screw/m3x15-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
