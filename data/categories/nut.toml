@@ -1,4 +1,13 @@
 id = "category/nut"
 name = "Nuts"
-summary = "Nuts and lock nuts"
-description = "Nuts and lock nuts."
+summary = "Nuts and lock nuts by thread, type and hex size"
+description = "Nuts and lock nuts by thread, type and hex size. Lock nuts are kept apart by how they lock: a nylon insert, an all-metal (deformed) thread or a serrated flange; a nut whose brand only says \"lock nut\" stays a lock nut of unstated kind."
+spec_type = "nut"
+key_fields = [
+  { field = "thread", label = "Thread", from = "spec" },
+  { field = "type", label = "Type", from = "spec" },
+  { field = "profile", label = "Profile", from = "spec" },
+  { field = "across_flats_mm", label = "Across flats", from = "spec", unit = "mm" },
+  { field = "height_mm", label = "Height", from = "spec", unit = "mm", compare_only = true },
+  { field = "material", label = "Material", from = "part" },
+]

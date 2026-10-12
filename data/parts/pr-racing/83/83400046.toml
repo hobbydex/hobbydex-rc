@@ -9,3 +9,6 @@ fits = [
 ]
 applies_to = "2023 PR SB401-R"
 documents = ["doc/pr-racing/pr-rc-com"]
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

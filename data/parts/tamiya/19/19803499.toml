@@ -6,3 +6,6 @@ former_names = ["S 3mm Nut"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "nut"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
