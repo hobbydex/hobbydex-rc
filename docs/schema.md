@@ -240,7 +240,7 @@ acrylic | enamel; for a thinner or cleaner, the paint it is made for),
 ready to spray from an airbrush | brush | marker: a paint pen), or a list when
 the brand names several (["airbrush", "brush"]), `finish` (gloss | flat |
 semi-gloss | metallic | pearl | fluorescent | translucent | clear |
-chrome; only what the brand says, left out otherwise), `color` in plain
+chrome | flake: glitter, lame or metal flake in the paint; only what the brand says, left out otherwise), `color` in plain
 colour words ("white", "dark green", "purple/green"; the brand's own
 colour name stays in `name`) and `volume_ml`, the can or bottle size.
 `swatch` is an approximate colour as a lowercase hex value ("#e81c24"),

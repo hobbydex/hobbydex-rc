@@ -4,7 +4,11 @@ number = "SK-100149"
 name = "e680 Charger"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 80
+lipo_cells = [1, 6]
+dimensions_mm = [135, 110, 60]
+weight_g = 390
+notes = "Discontinued (on SkyRC's Discontinued Products list); Manual: charge wattage 80W, discharge wattage 10W, charge current 0.1-8.0A, LiPo/LiHV/LiFe/LiIon 1-6 cells, NiMH/NiCd 1-15 cells, Pb 2-20V, AC 100-240V / DC 11-18V input"
 documents = ["doc/skyrc/sk-100149-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/e680" },

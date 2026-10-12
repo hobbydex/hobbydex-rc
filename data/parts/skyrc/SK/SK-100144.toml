@@ -4,7 +4,11 @@ number = "SK-100144"
 name = "PC13000 Charger"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 1300
+lipo_cells = [6, 6]
+dimensions_mm = [272, 202, 118.6]
+weight_g = 4880
+notes = "Discontinued (on SkyRC's Discontinued Products list); Manual (Chinese): output power 1300W (650W x 2), discharge power 100W (50W x 2), charge current max. 25A x 2, LiPo/LiHV 6 cells x 2, AC 100-240V input"
 documents = ["doc/skyrc/sk-100144-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/PC1300_Charger" },

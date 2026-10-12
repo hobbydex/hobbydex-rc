@@ -1,10 +1,16 @@
 id = "part/skyrc/SK-400003-21"
 brand = "brand/skyrc"
 number = "SK-400003-21"
-name = "Ares Pro Motor"
+name = "Ares Pro 3.5T 9100KV (Modified)"
 category = "motor"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+lipo_cells = [1, 2]
+kv = 9100
+turns = 3.5
+shaft_mm = 3.175
+weight_g = 178
+range = "skyrc/ares-pro"
+notes = "Discontinued (on SkyRC's Discontinued Products list); Product page spec table (picture): 3.5T, 600W, rotor 12.5 x 5mm 2-pole, kV 9100, 1-2S LiPo, max. current 130A, shaft 3.175mm, 178g, racing type modified"
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/Ares_Pro" },
 ]

@@ -4,7 +4,11 @@ number = "SK-100153"
 name = "PC2400 Charger"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 2400
+lipo_cells = [12, 12]
+dimensions_mm = [236, 175, 267]
+weight_g = 6820
+notes = "Discontinued (on SkyRC's Discontinued Products list); Product page (Chinese): output power 2400W (1200W x 2), charge current slow 15A / fast 25A, discharge power 100W (50W x 2), LiPo 12 cells, AC 200-240V input"
 documents = ["doc/skyrc/sk-100153-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/pc2400" },

@@ -4,6 +4,11 @@ number = "SK-100157"
 name = "D260 Dual Channel Charger"
 category = "charger"
 category_source = "curated"
+power_w = 260
+lipo_cells = [1, 6]
+dimensions_mm = [160, 150, 71]
+weight_g = 896
+notes = "Manual: charge wattage 130W x 2, charge current (0.1-14.0A) x 2, discharge 10W x 2, LiPo/LiIon/LiFe/LiHV 1-6 cells, NiMH/NiCd 1-15 cells, Pb 2-20V, AC 100-240V / DC 11-18V input, DC power supply output 130W per channel"
 documents = ["doc/skyrc/sk-100157-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/d260" },

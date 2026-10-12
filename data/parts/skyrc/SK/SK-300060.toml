@@ -4,6 +4,12 @@ number = "SK-300060"
 name = "Toro TS50 Sensored ESC"
 category = "electronics"
 category_source = "curated"
+lipo_cells = [2, 2]
+current_a = 50
+peak_current_a = 300
+dimensions_mm = [35.3, 32.4, 19.7]
+weight_g = 60
+notes = "Manual: constant/burst current 50A/300A, brushless sensored and sensorless, 1/10 buggy and touring car, 4-6S NiMH or 2S LiPo, BEC 6V@2A, resistance 0.0006 ohm, electronic power switch, fan optional"
 documents = ["doc/skyrc/sk-300060-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/TS50" },

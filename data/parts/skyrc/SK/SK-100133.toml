@@ -4,7 +4,9 @@ number = "SK-100133"
 name = "PC1000 Charger"
 category = "charger"
 category_source = "curated"
-notes = "Discontinued (on SkyRC's Discontinued Products list)"
+power_w = 1000
+lipo_cells = [6, 6]
+notes = "Discontinued (on SkyRC's Discontinued Products list); Product page (Chinese): charge power 1000W (100W x 10), charge current 5A x 10, LiPo/LiHV 6 cells, balancing 500mA/cell, AC 100-240V input; the size given there (200x132x59mm, 4.4kg) is the PC520's, so it is left out"
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/PC1000_Charger" },
 ]
