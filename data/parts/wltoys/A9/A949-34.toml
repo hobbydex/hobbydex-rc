@@ -1,0 +1,20 @@
+id = "part/wltoys/A949-34"
+brand = "brand/wltoys"
+number = "A949-34"
+name = "Bearing 8x12x3.5mm"
+pack_qty = 4
+notes = "Name from the wl-toys.com reseller listing: \"Wltoys K929-B Parts-A949-34 Bearing-(4pcs)-8X12X3.5mm,1/18 Wltoys K929-B RC Car Parts\""
+links = [
+  { site = "wl-toys.com", url = "https://www.wl-toys.com/Wltoys-K929-B-32-Parts-A949-34-Bearing-4pcs-8X12X3-5mm-For-Wltoys-K929-B-RC-Racing-Car-Spare-Parts-14337.html" },
+]
+fits = [
+  { kit = "kit/wltoys/a959-b", type = "direct", source = "doc/wltoys/a959-b-reseller-parts" },
+  { kit = "kit/wltoys/a969-b", type = "direct", source = "doc/wltoys/a969-b-reseller-parts" },
+  { kit = "kit/wltoys/a979-b", type = "direct", source = "doc/wltoys/a979-b-reseller-parts" },
+  { kit = "kit/wltoys/k929-b", type = "direct", source = "doc/wltoys/k929-b-reseller-parts" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

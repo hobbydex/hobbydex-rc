@@ -8,6 +8,13 @@ fits = [
   { kit = "kit/hosim/x17", type = "direct", source = "doc/hosim/store" },
   { kit = "kit/hosim/x27", type = "direct", source = "doc/hosim/store" },
 ]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2600
+c_rating = 25
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2600mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
+]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-11-1v-25c-2600mah-lipo-battery-1pcs-with-charger-battery-strap" },
 ]

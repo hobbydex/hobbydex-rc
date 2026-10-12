@@ -163,6 +163,9 @@ def main():
                 errors.append(f"{path}: link {l!r} needs a site and an https url")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
             errors.append(f"{path}: paint finish = {d['finish']!r} not in {sorted(PAINT_FINISH)}")
+        sw = d.get("swatch") if kind == "part" else None
+        if sw is not None and not (isinstance(sw, str) and re.fullmatch(r"#[0-9a-f]{6}", sw)):
+            errors.append(f"{path}: swatch {sw!r} should be a lowercase hex colour \"#rrggbb\"")
         rg = d.get("range") if kind == "part" else None
         if rg is not None and not (isinstance(rg, str) and re.fullmatch(r"[a-z0-9-]+/[a-z0-9.-]+", rg) and rg.split("/")[0] == d["brand"].split("/")[1]):
             errors.append(f"{path}: range {rg!r} should be <brand slug>/<slug> of the part's own brand")

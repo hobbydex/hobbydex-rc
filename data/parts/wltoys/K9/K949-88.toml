@@ -1,0 +1,18 @@
+id = "part/wltoys/K949-88"
+brand = "brand/wltoys"
+number = "K949-88"
+name = "Flat head inner hexagon Screws M3x10"
+pack_qty = 8
+notes = "Name from the wl-toys.com reseller listing: \"Wltoys 10428 Parts-Flat head inner hexagon Screws-M3X10-(8pcs)-K949-88,Wltoys 10428 RC Car Parts,High speed 1:10 Scale 4wd,10428 Electric Power On Road Drift Racing Truck Car Parts\""
+links = [
+  { site = "wl-toys.com", url = "https://www.wl-toys.com/Wltoys-10428-Parts-88-Flat-head-inner-hexagon-Screws-M3X10-8pcs-Wltoys-10428-Rc-Car-Parts-1-10-Scale-On-Road-Drift-Racing-Truck-Parts-23733.html" },
+]
+fits = [
+  { kit = "kit/wltoys/10428", type = "direct", source = "doc/wltoys/10428-reseller-parts" },
+  { kit = "kit/wltoys/l323", type = "direct", source = "doc/wltoys/l323-reseller-parts" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

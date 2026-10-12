@@ -4,5 +4,9 @@ number = "RC6GS"
 name = "RC6GS radio"
 category = "electronics"
 category_source = "curated"
-notes = "Older RadioLink surface radio, not in the current product menu (2026-10-10)."
-documents = ["doc/radiolink/rc6gs-manual"]
+notes = "Discontinued: RadioLink's receiver pages list it under out of production transmitters. Older RadioLink surface radio, not in the current product menu (2026-10-10)."
+dimensions_mm = [213, 117, 115.5]
+includes = [
+  { part = "part/radiolink/R7FG", qty = 1, source = "doc/radiolink/rc6gs" },
+]
+documents = ["doc/radiolink/rc6gs", "doc/radiolink/rc6gs-manual"]

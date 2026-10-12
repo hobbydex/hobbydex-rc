@@ -8,14 +8,14 @@ fits = [
   { kit = "kit/hosim/9125", type = "direct", source = "doc/hosim/store" },
   { kit = "kit/hosim/9126", type = "direct", source = "doc/hosim/store" },
 ]
-links = [
-  { site = "Hosim", url = "https://www.hosim.com/products/hosim-2pcs-2000mah-lipo-battery-7-4v-25c-rc-cars-battery-for-1-10-scale-9125-hs9125" },
-]
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-]
 chemistry = "lipo"
 cells = 2
 capacity_mah = 2000
 c_rating = 25
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-2pcs-2000mah-lipo-battery-7-4v-25c-rc-cars-battery-for-1-10-scale-9125-hs9125" },
+]
 category = "battery"

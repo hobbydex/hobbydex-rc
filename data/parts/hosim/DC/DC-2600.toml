@@ -8,14 +8,14 @@ fits = [
   { kit = "kit/hosim/x07w", type = "direct", source = "doc/hosim/store" },
   { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
 ]
-links = [
-  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-7-4v-2600mah-lipo-25c-for-x08-x07-x07w" },
-]
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-]
 chemistry = "lipo"
 cells = 2
 capacity_mah = 2600
 c_rating = 25
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-7-4v-2600mah-lipo-25c-for-x08-x07-x07w" },
+]
 category = "battery"

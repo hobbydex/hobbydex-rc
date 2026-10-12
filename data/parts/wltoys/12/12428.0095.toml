@@ -1,0 +1,21 @@
+id = "part/wltoys/12428.0095"
+brand = "brand/wltoys"
+number = "12428.0095"
+name = "Bearing 5x11x4MM"
+pack_qty = 4
+notes = "Name from the wl-toys.com reseller listing: \"Wltoys 12428 Parts Bearing(4pcs-5X11X4MM), 12428-0095.\". The shop also lists it as 12427.0095 (relabelled for the model of each listing)"
+links = [
+  { site = "wl-toys.com", url = "https://www.wl-toys.com/Wltoys-12428-Car-Spare-Parts-0089-Return-spring-Outer-diameter-12-4mm-Wire-diameter-1-2mm-Wltoys-12428-Rc-Car-racing-car-Spare-Parts-Replacement-Accessories-16687.html" },
+]
+fits = [
+  { kit = "kit/wltoys/104001", type = "direct", source = "doc/wltoys/104001-reseller-parts" },
+  { kit = "kit/wltoys/104020", type = "direct", source = "doc/wltoys/104020-reseller-parts" },
+  { kit = "kit/wltoys/104072", type = "direct", source = "doc/wltoys/104072-reseller-parts" },
+  { kit = "kit/wltoys/12427", type = "direct", source = "doc/wltoys/12427-reseller-parts" },
+  { kit = "kit/wltoys/12428", type = "direct", source = "doc/wltoys/12428-reseller-parts" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

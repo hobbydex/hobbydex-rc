@@ -1,0 +1,20 @@
+id = "part/wltoys/A949-44"
+brand = "brand/wltoys"
+number = "A949-44"
+name = "Grub screw M3x6"
+pack_qty = 10
+notes = "Name from the wl-toys.com reseller listing: \"Wltoys K929-B Parts-A949-44 Grub screw-M3X6(10PCS),1/18 Wltoys K929-B RC Car Parts\""
+links = [
+  { site = "wl-toys.com", url = "https://www.wl-toys.com/Wltoys-K929-B-40-Parts-A949-44-Grub-screw-M3X6-10PCS-For-Wltoys-K929-B-RC-Racing-Car-Spare-Parts-14345.html" },
+]
+fits = [
+  { kit = "kit/wltoys/a959-b", type = "direct", source = "doc/wltoys/a959-b-reseller-parts" },
+  { kit = "kit/wltoys/a969-b", type = "direct", source = "doc/wltoys/a969-b-reseller-parts" },
+  { kit = "kit/wltoys/a979-b", type = "direct", source = "doc/wltoys/a979-b-reseller-parts" },
+  { kit = "kit/wltoys/k929-b", type = "direct", source = "doc/wltoys/k929-b-reseller-parts" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x6-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

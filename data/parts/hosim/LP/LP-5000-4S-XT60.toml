@@ -1,0 +1,17 @@
+id = "part/hosim/LP-5000-4S-XT60"
+brand = "brand/hosim"
+number = "LP-5000-4S-XT60"
+name = "Hosim 14.8V 5000mAh 4S 100C LiPo Battery with XT60 Connector for RC Cars & Models"
+applies_to = "RC Cars & Models"
+chemistry = "lipo"
+cells = 4
+capacity_mah = 5000
+c_rating = 100
+connector = "XT60"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-5000mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
+]
+links = [
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-14-8v-5000mah-4s-100c-lipo-battery-with-xt60-connector-for-rc-cars-models" },
+]
+category = "battery"

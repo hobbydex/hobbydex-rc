@@ -7,9 +7,10 @@ category_source = "curated"
 channels = 8
 protocol = "FHSS"
 weight_g = 438.5
-notes = "RadioLink comparison of surface transmitters: Channels: 8; Control Distance: 600 meters; Response Latency: 3ms, 4ms, 14ms can be selected; Operating Voltage: 7V~17V DC; Screen: 4.3 inches, 800*480 full-color, backlit IPS touch screen; Storage Model Quantity: 200 groups; Signal support: PWM&SBUS&PPM; Weight: 438.5g; Dimension: 121*163*209mm. Compatible receivers: R8FG, R16F, R16SM, R12F, R8FGH, R8EF, R8FM, R8SM, R8XM, R7FG, R6FG, R6F, R4FGM."
+dimensions_mm = [121, 163, 209]
+notes = "RadioLink comparison of surface transmitters: Channels: 8; Control Distance: 600 meters; Response Latency: 3ms, 4ms, 14ms can be selected; Operating Voltage: 7V~17V DC; Screen: 4.3 inches, 800*480 full-color, backlit IPS touch screen; Storage Model Quantity: 200 groups; Signal support: PWM&SBUS&PPM; Weight: 438.5g; Dimension: 121*163*209mm. Compatible receivers: R8FG, R16F, R16SM, R12F, R8FGH, R8EF, R8FM, R8SM, R8XM, R7FG, R6FG, R6F, R4FGM. RadioLink specifications: Operating Voltage: 7-17V DC (8 pieces of AAA batteries or a 2S-4S LiPo battery or a 6S Ni-MH battery); Operating Current: 250mA±10mA@8.4V(the IPS screen light on), 190mA±10mA@8.4V(the IPS screen light off); Antenna Length: Built-in antenna; Channel Resolution: 4096 with regular jitter of 0.25us; Dimension of Battery Case: L*W*H =92*52*14.5mm(3.62” *2.05” *0.57”); Response Latency: 3ms, 4ms, 14ms can be selected."
 includes = [
   { part = "part/radiolink/R8FG", qty = 1, source = "doc/radiolink/rc8x" },
   { part = "part/radiolink/R4FGM", qty = 1, source = "doc/radiolink/rc8x" },
 ]
-documents = ["doc/radiolink/rc8x", "doc/radiolink/rc8x-manual", "doc/radiolink/comparison-of-surface-transmitters"]
+documents = ["doc/radiolink/rc8x", "doc/radiolink/rc8x-specifications", "doc/radiolink/rc8x-manual", "doc/radiolink/comparison-of-surface-transmitters"]
