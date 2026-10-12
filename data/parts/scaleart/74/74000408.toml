@@ -1,0 +1,22 @@
+id = "part/scaleart/74000408"
+brand = "brand/scaleart"
+number = "74000408"
+name = "Beadlock-Felge"
+category = "wheel"
+category_source = "curated"
+links = [
+  { site = "ScaleART", url = "https://www.scaleart-shop.de/products/beadlock-felge-1-9-zoll-rc-trial-scaledrive" },
+]
+documents = ["doc/scaleart/scaleart-shop", "doc/scaleart/74000408-manual"]
+related = [
+  { part = "part/scaleart/71000315", relation = "use-with" },
+  { part = "part/scaleart/74000400", relation = "use-with" },
+]
+includes = [
+  { part = "part/scaleart/11000054", qty = 2, source = "doc/scaleart/74000408-manual" },
+  { part = "part/scaleart/11000056", qty = 2, source = "doc/scaleart/74000408-manual" },
+  { part = "part/scaleart/11000055", qty = 2, source = "doc/scaleart/74000408-manual" },
+  { part = "part/scaleart/32000045", qty = 45, source = "doc/scaleart/74000408-manual" },
+  { part = "part/scaleart/32000170", qty = 45, source = "doc/scaleart/74000408-manual" },
+]
+beadlock = true

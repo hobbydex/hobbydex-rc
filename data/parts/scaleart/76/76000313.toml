@@ -1,0 +1,24 @@
+id = "part/scaleart/76000313"
+brand = "brand/scaleart"
+number = "76000313"
+name = "Elektronikeinbausatz Commander für MB Actros II"
+category = "electronics"
+category_source = "curated"
+fits = [
+  { kit = "kit/scaleart/mercedes-benz-actros-arocs-gigaspace-4-achs-sattelzugmaschine-palfinger-ladekran", type = "direct", source = "doc/scaleart/scaleart-shop" },
+  { kit = "kit/scaleart/mercedes-benz-actros-ii-arocs-gigaspace-2-achs-sattelzugmaschine", type = "direct", source = "doc/scaleart/scaleart-shop" },
+  { kit = "kit/scaleart/mercedes-benz-actros-ii-arocs-gigaspace-3-achs-sattelzugmaschine", type = "direct", source = "doc/scaleart/scaleart-shop" },
+  { kit = "kit/scaleart/mercedes-benz-actros-ii-gigaspace-3-achs-abrollkipper", type = "direct", source = "doc/scaleart/scaleart-shop" },
+  { kit = "kit/scaleart/mercedes-benz-arocs-actros-3-achs-abrollkipper", type = "direct", source = "doc/scaleart/scaleart-shop" },
+  { kit = "kit/scaleart/mercedes-benz-arocs-actros-4-achs-abrollkipper", type = "direct", source = "doc/scaleart/scaleart-shop" },
+]
+links = [
+  { site = "ScaleART", url = "https://www.scaleart-shop.de/products/elektronikeinbausatz-mercedes-actros-1-14-5" },
+]
+documents = ["doc/scaleart/scaleart-shop"]
+related = [
+  { part = "part/scaleart/76000359", relation = "use-with" },
+  { part = "part/scaleart/76000364", relation = "use-with" },
+  { part = "part/scaleart/76000314", relation = "use-with" },
+  { part = "part/scaleart/76000075", relation = "use-with" },
+]

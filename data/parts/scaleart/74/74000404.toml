@@ -1,0 +1,18 @@
+id = "part/scaleart/74000404"
+brand = "brand/scaleart"
+number = "74000404"
+name = "Felge schmal für Tamiya®"
+category = "wheel"
+category_source = "curated"
+notes = "For Tamiya 1/14 trucks in general (the shop names no single Tamiya model)"
+links = [
+  { site = "ScaleART", url = "https://www.scaleart-shop.de/products/felge-schmal-tamiya-1-14-scaledrive" },
+]
+documents = ["doc/scaleart/scaleart-shop", "doc/scaleart/74000404-manual"]
+related = [
+  { part = "part/scaleart/71000315", relation = "use-with" },
+  { part = "part/scaleart/74000400", relation = "use-with" },
+]
+includes = [
+  { part = "part/scaleart/11000051", qty = 2, source = "doc/scaleart/74000404-manual" },
+]

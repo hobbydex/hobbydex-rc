@@ -1,0 +1,19 @@
+id = "part/scaleart/74000412"
+brand = "brand/scaleart"
+number = "74000412"
+name = "Differentialsperre ScaleDRIVE"
+category = "differential"
+category_source = "curated"
+links = [
+  { site = "ScaleART", url = "https://www.scaleart-shop.de/products/differentialsperre-scaledrive-achse-rc-lkw" },
+]
+documents = ["doc/scaleart/scaleart-shop", "doc/scaleart/74000412-manual"]
+related = [
+  { part = "part/scaleart/74000400", relation = "use-with" },
+]
+includes = [
+  { part = "part/scaleart/23000301", qty = 2, source = "doc/scaleart/74000412-manual" },
+  { part = "part/scaleart/32000180", qty = 3, source = "doc/scaleart/74000412-manual" },
+  { part = "part/scaleart/32000069", qty = 5, source = "doc/scaleart/74000412-manual" },
+  { part = "part/scaleart/32000171", qty = 3, source = "doc/scaleart/74000412-manual" },
+]
