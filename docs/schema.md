@@ -556,8 +556,9 @@ replaced_by = "standard/iso-4762"
 
 A manufacturer document used as a source. Only facts and the link; the PDF
 itself is not stored in git (`file` is the name in the local `work/manuals/`
-tree). `kind` is manual | part_list | exploded_view | supplement | catalog |
-product_page.
+tree). `kind` is manual | part_list | exploded_view | setup_sheet | supplement |
+catalog | product_page | owner_report. A setup_sheet is the maker's blank or
+baseline setup sheet for a race kit.
 
 ```toml
 id = "doc/xray/xb2-2026-part-list"
