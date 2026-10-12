@@ -28,6 +28,8 @@ REFS = {  # field -> expected id prefix
     "publisher": "brand/", "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
 }
 LIST_REFS = {"documents": "doc/", "releases": "release/"}
+SURFACES = {"carpet", "astro", "clay", "dirt", "asphalt", "high-grip"}   # the track surface a race kit is built for
+
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
     "release.kind": {"kit", "rtr", "arr"},
@@ -182,6 +184,9 @@ def main():
         rg = d.get("range") if kind == "part" else None
         if rg is not None and not (isinstance(rg, str) and re.fullmatch(r"[a-z0-9-]+/[a-z0-9.-]+", rg) and rg.split("/")[0] == d["brand"].split("/")[1]):
             errors.append(f"{path}: range {rg!r} should be <brand slug>/<slug> of the part's own brand")
+        su = d.get("surface") if kind in ("release", "kit") else None
+        if su is not None and not (isinstance(su, list) and su and all(x in SURFACES for x in su)):
+            errors.append(f"{path}: surface {su!r} should be a list of {sorted(SURFACES)}")
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
