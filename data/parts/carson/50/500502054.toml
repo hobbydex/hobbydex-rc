@@ -1,5 +1,19 @@
 id = "part/carson/500502054"
 brand = "brand/carson"
 number = "500502054"
-name = "Lenkservo CS-3,5"
-category = "steering"
+name = "XS Steering Servo CS-3.5, 3.5 kg"
+former_names = ["Lenkservo CS-3,5"]
+gtin = "4005299014536"
+fits = [
+  { kit = "kit/carson/xs-ryken", type = "direct", source = "doc/carson/shop" },
+  { kit = "kit/carson/xs-tekuro", type = "direct", source = "doc/carson/shop" },
+  { kit = "kit/carson/xs-offroad-fighter-cage", type = "direct", source = "doc/carson/shop" },
+  { kit = "kit/carson/xs-stadium-fighter", type = "direct", source = "doc/carson/shop" },
+]
+links = [
+  { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/categories/rc-systems/rc-servos/xs-steering-servo-cs-35-rc-servo-35-kg-500502054-en.html" },
+]
+category = "servo"
+category_source = "curated"
+notes = "From Carson's shop description: 5-wire steering servo (motor and potentiometer leads, driven by the car's receiver unit)."
+torque_kgcm = 3.5
