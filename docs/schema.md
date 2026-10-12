@@ -237,7 +237,8 @@ cleaner | masking: tape, sheets and fluid for masking), `paint_type`
 (polycarbonate: for clear bodies, sprayed on the inside | lacquer |
 acrylic | enamel; for a thinner or cleaner, the paint it is made for),
 `application` for paints, clear coats and primers (spray-can | airbrush:
-ready to spray from an airbrush | brush | marker: a paint pen), `finish` (gloss | flat |
+ready to spray from an airbrush | brush | marker: a paint pen), or a list when
+the brand names several (["airbrush", "brush"]), `finish` (gloss | flat |
 semi-gloss | metallic | pearl | fluorescent | translucent | clear |
 chrome; only what the brand says, left out otherwise), `color` in plain
 colour words ("white", "dark green", "purple/green"; the brand's own
