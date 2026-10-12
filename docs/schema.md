@@ -550,7 +550,9 @@ Other mounts (pin drive, centre lock) are not modelled yet.
 ## category
 
 `data/categories/<slug>.toml`: the part categories. A part's `category` must be
-one of them. `name` is the label; `spec_type` names the generic spec type the
+one of them. `name` is the label; `summary` is a one-line description for the
+category overview (a few words, no full stop); `description` is the longer text
+shown on the category's own page; `spec_type` names the generic spec type the
 category's parts link to; `key_fields` are the properties that matter when
 choosing such a part, in display order, each read from the part itself or from
 its linked spec (`from = "part" | "spec"`), with an optional `unit` and
