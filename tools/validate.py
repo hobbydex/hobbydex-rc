@@ -41,7 +41,7 @@ ENUMS = {
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
-    "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "carbon", "ceramic", "carbide", "unknown"},
+    "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.lubricant": {"oil", "grease"},
