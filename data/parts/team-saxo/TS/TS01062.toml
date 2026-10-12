@@ -1,7 +1,7 @@
 id = "part/team-saxo/TS01062"
 brand = "brand/team-saxo"
 number = "TS01062"
-name = "TS01062"
+name = "Link Ball Stud(65x98x12)"
 includes = [
   { part = "part/team-saxo/TS0102010", qty = 5, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0102010", qty = 5, source = "doc/team-saxo/f1-180-v4-part-list" },
@@ -16,9 +16,15 @@ includes = [
 fits = [
   { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
   { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
-  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
   { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
   { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v4-parts-list" },
-  { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-accessories" },
 ]
 notes = "Spare pack on the F1-180-V5 parts list"
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/o-ring-ph11-5xph1.5" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/ball-stud-5mm" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/gt-500w-v2-accessories-1/ball-stud-5mm" },
+]
+category = "ball-end"

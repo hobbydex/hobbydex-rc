@@ -2,18 +2,19 @@ id = "part/team-saxo/TS02089"
 brand = "brand/team-saxo"
 number = "TS02089"
 name = "Battery Mount Gasket"
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-accessories" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500w-235-accessories/battery-mount-gasket" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/battery-mount-gasket" },
+]
 includes = [
   { part = "part/team-saxo/TS0505004", qty = 4, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0505004", qty = 1, source = "doc/team-saxo/mf-1-200-parts-list" },
   { part = "part/team-saxo/TS0505004", qty = 4, source = "doc/team-saxo/f1-200-v2-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
-  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
-  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
-]
 notes = "Spare pack on the F1-180-V5 parts list"
-links = [
-  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/battery-mount-gasket" },
-]
 category = "o-ring-seal"

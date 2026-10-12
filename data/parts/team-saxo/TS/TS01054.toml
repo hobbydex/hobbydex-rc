@@ -1,13 +1,20 @@
 id = "part/team-saxo/TS01054"
 brand = "brand/team-saxo"
 number = "TS01054"
-name = "TS01054"
+name = "Aluminium shim 3*5.5*2.5mm"
+fits = [
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/copy6_of_aluminium-body-height-adjuster-4" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-future-accessories/copy6_of_aluminium-body-height-adjuster-4" },
+]
 includes = [
   { part = "part/team-saxo/TS0101029", qty = 8, source = "doc/team-saxo/mf-1-200-parts-list" },
   { part = "part/team-saxo/TS0101029", qty = 8, source = "doc/team-saxo/f1-200-v2-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
-  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-parts-list" },
-]
 notes = "Spare pack on the MF-1-200 parts list"
+category = "washer-shim"
+material = "aluminium"
