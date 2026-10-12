@@ -1,6 +1,14 @@
 id = "part/ftx/FTX8220"
 brand = "brand/ftx"
 number = "FTX8220"
-name = "machine screw"
-notes = "Read by OCR from a scanned FTX document"
+name = "Outback Button Head Screw M4*8 (8)"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-outback-spares/ftx-outback-button-head-screw-m4x8-8" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
 category = "screw"
