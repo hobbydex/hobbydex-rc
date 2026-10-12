@@ -4,7 +4,9 @@ number = "9114-BLK"
 name = "Interior, Chevrolet Blazer (1969 -1972) (black) (includes rollbar, gauge bezel, steering wheel and column, shifter, armrest, decals) (fits #9111, 9112, 9130, or 9131 series bodies) (#9111 or 9112 series bodies require #9128 body cage for installation)"
 category = "decal"
 related = [
+  { part = "part/traxxas/9128", relation = "requires", notes = "link_part_refs" },
   { part = "part/traxxas/9111", relation = "fits", notes = "link_part_refs" },
   { part = "part/traxxas/9112", relation = "fits", notes = "link_part_refs" },
+  { part = "part/traxxas/9130", relation = "fits", notes = "link_part_refs" },
 ]
 range = "traxxas/9114-colours"
