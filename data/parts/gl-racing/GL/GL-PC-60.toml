@@ -1,0 +1,16 @@
+id = "part/gl-racing/GL-PC-60"
+brand = "brand/gl-racing"
+number = "GL-PC-60"
+name = "Bluetooth Module for GL-BT-ESC-060 & GL-BT-ESC-060-GTR"
+fits = [
+  { kit = "kit/gl-racing/gl-gtr", type = "direct", source = "doc/gl-racing/shop" },
+]
+related = [
+  { part = "part/gl-racing/GL-BT-ESC-060", relation = "for" },
+  { part = "part/gl-racing/GL-BT-ESC-060-GTR", relation = "for" },
+]
+documents = ["doc/gl-racing/shop"]
+links = [
+  { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=1130" },
+]
+category = "electronics"
