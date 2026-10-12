@@ -162,7 +162,7 @@ category = "shock-spring"
 ```
 
 Optional, hand-curated (the importer preserves them when it regenerates the
-file): `material` (steel | stainless | titanium | aluminium | brass | plastic |
+file): `material` (steel | stainless | titanium | aluminium | brass | bronze | plastic |
 carbon | ceramic | carbide | unknown; carbon is carbon fibre, which brands also
 call graphite; plastic covers composite, nylon and POM; for a bearing, the
 balls: ceramic is a hybrid bearing), `material_grade` (the alloy as named:
