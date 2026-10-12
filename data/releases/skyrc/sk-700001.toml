@@ -1,0 +1,15 @@
+id = "release/skyrc/sk-700001"
+kit = "kit/skyrc/super-rider-sr5"
+brand = "brand/skyrc"
+number = "SK-700001"
+name = "Super Rider SR5"
+kind = "rtr"
+status = "released"
+documents = ["doc/skyrc/sk-700001-manual", "doc/skyrc/sk-700001-product-page"]
+contains = [
+  { part = "part/skyrc/SK-700002-56", role = "option", source = "doc/skyrc/sk-700001-manual" },
+  { part = "part/skyrc/SK-700002-57", role = "option", source = "doc/skyrc/sk-700001-manual" },
+  { part = "part/skyrc/SK-700002-58", role = "option", source = "doc/skyrc/sk-700001-manual" },
+  { part = "part/skyrc/SK-700002-59", role = "option", source = "doc/skyrc/sk-700001-manual" },
+]
+notes = "Ready to run with a 2.4 GHz transmitter, a 6-cell 3000 mAh NiMH battery and the eN20 charger; 540 brushless 3200 kV motor, 60 A ESC, gyro flywheel (Electronic Stability System) in the rear wheel."
