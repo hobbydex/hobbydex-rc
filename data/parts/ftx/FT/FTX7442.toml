@@ -1,6 +1,15 @@
 id = "part/ftx/FTX7442"
 brand = "brand/ftx"
 number = "FTX7442"
-name = "Sleeve Bush"
-notes = "Read by OCR from a scanned FTX document"
+name = "Ravine Ball Bearings 4x7x2.5"
+pack_qty = 6
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-ravine-spares/ftx-ravine-ball-bearings" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/4x7x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
 category = "bearing"

@@ -1,6 +1,9 @@
 id = "part/ftx/FTX6558"
 brand = "brand/ftx"
 number = "FTX6558"
-name = "Splashproof Brushless"
-notes = "Read by OCR from a scanned FTX document"
+name = "550 Brushed Motor"
+notes = "Name read from a scanned FTX parts list; the OCR engines agree"
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

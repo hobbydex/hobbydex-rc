@@ -1,5 +1,14 @@
 id = "part/ftx/FTX6660"
 brand = "brand/ftx"
 number = "FTX6660"
-name = "FTX6660"
-notes = "Read by OCR from a scanned FTX document; no name could be read"
+name = "Edge/Siege Viper/Sidewinder Wheel Hex Pin 2x10mm (8)"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+pack_qty = 8
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-edge-spares/ftx-edge-siege-viper-sidewinder-wheel-hex-pin-2x10mm" },
+]
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
