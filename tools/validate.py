@@ -6,7 +6,7 @@ on any error.
 
 Run from the repo root: python3 -I tools/validate.py
 """
-import os, re, sys, tomllib
+import datetime, os, re, sys, tomllib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layout import DIRS, path_for
 
@@ -184,6 +184,13 @@ def main():
         rg = d.get("range") if kind == "part" else None
         if rg is not None and not (isinstance(rg, str) and re.fullmatch(r"[a-z0-9-]+/[a-z0-9.-]+", rg) and rg.split("/")[0] == d["brand"].split("/")[1]):
             errors.append(f"{path}: range {rg!r} should be <brand slug>/<slug> of the part's own brand")
+        if kind == "release":
+            this_year = datetime.date.today().year
+            if isinstance(d.get("year"), int) and d["year"] > this_year and d.get("status") == "released":
+                errors.append(f"{path}: year {d['year']} is in the future, so status cannot be released (announced; a model year label goes in model_year)")
+            my = d.get("model_year")
+            if my is not None and not (isinstance(my, int) and 1970 <= my <= this_year + 3):
+                errors.append(f"{path}: model_year {my!r} should be a year")
         su = d.get("surface") if kind in ("release", "kit") else None
         if su is not None and not (isinstance(su, list) and su and all(x in SURFACES for x in su)):
             errors.append(f"{path}: surface {su!r} should be a list of {sorted(SURFACES)}")
