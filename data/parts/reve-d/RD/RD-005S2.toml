@@ -1,0 +1,17 @@
+id = "part/reve-d/RD-005S2"
+brand = "brand/reve-d"
+number = "RD-005S2"
+name = "Wheel Spacer 2mm for RD-005"
+pack_qty = 2
+name_ja = "RD-005用 ホイールスペーサー(2.0mm, 2個入)"
+fits = [
+  { kit = "kit/reve-d/rdx", type = "direct", source = "doc/reve-d/rkd-rdx-parts-list" },
+]
+links = [
+  { site = "Rêve D", url = "https://teamreved.com/product/rd-005s2" },
+]
+documents = ["doc/reve-d/rkd-rdx-parts-list", "doc/reve-d/teamreved-products"]
+category = "washer-shim"
+related = [
+  { part = "part/reve-d/RD-005", relation = "for", notes = "link_part_refs" },
+]

@@ -1,0 +1,18 @@
+id = "part/lrp/122224"
+brand = "brand/lrp"
+number = "122224"
+name = "ANTIX by LRP - Ritzel 24Z 48dp"
+category = "pinion"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/122224/" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-24t", match = "functional", notes = "Pitch and teeth from LRP's name (Z: teeth); check the bore" },
+]
+fits = [
+  { kit = "kit/lrp/s10-blast-bx3", type = "direct", source = "doc/lrp/120210-product-page" },
+  { kit = "kit/lrp/s10-blast-tc3", type = "direct", source = "doc/lrp/120203-product-page" },
+]
+teeth = 24
+pitch_dp = 48

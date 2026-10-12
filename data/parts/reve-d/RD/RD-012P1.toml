@@ -1,0 +1,17 @@
+id = "part/reve-d/RD-012P1"
+brand = "brand/reve-d"
+number = "RD-012P1"
+name = "Alu. rear Hub Carrier Plate for RD-012"
+name_ja = "RD-012用 アルミ製 リアハブキャリアプレート"
+fits = [
+  { kit = "kit/reve-d/rdx", type = "direct", source = "doc/reve-d/rkd-rdx-parts-list" },
+]
+links = [
+  { site = "Rêve D", url = "https://teamreved.com/product/rd-012p1" },
+]
+documents = ["doc/reve-d/rkd-rdx-parts-list", "doc/reve-d/teamreved-products"]
+category = "suspension"
+material = "aluminium"
+related = [
+  { part = "part/reve-d/RD-012", relation = "for", notes = "link_part_refs" },
+]
