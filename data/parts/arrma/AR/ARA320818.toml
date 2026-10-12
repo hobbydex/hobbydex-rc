@@ -2,9 +2,12 @@ id = "part/arrma/ARA320818"
 brand = "brand/arrma"
 number = "ARA320818"
 name = "Desert Truck Body Parts Set"
-gtin = "660132908515"
 applies_to = "GROM"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-desert-truck-body-parts-set-grom/ARA320818.html" },
 ]
+gtin = "660132908515"
 category = "body"
+fits = [
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

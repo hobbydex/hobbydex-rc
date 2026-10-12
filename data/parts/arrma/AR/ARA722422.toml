@@ -2,12 +2,18 @@ id = "part/arrma/ARA722422"
 brand = "brand/arrma"
 number = "ARA722422"
 name = "Flat Head Screws, M4x22mm"
-former_names = ["Flat Head Screw M4 X 22mm"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-flat-head-screws-m4x22mm/ARA722422.html" },
 ]
+former_names = ["Flat Head Screw M4 X 22mm"]
 equivalent_to = [
   { spec = "spec/screw/m4x22-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/arrma/kraton", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/mojave-6s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/notorious", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/talion-6s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

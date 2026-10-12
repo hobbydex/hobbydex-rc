@@ -10,3 +10,10 @@ category = "motor"
 equivalent_to = [
   { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
+fits = [
+  { kit = "kit/arrma/gorgon-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/granite-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/quake-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/typhon-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

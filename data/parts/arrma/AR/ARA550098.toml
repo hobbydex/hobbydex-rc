@@ -7,3 +7,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-dboots-exabyte-glued-tire-set-black-2/ARA550098.html" },
 ]
 category = "tire"
+fits = [
+  { kit = "kit/arrma/typhon", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/typhon-3s", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/typhon-mega", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]

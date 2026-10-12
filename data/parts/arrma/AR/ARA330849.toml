@@ -2,8 +2,12 @@ id = "part/arrma/ARA330849"
 brand = "brand/arrma"
 number = "ARA330849"
 name = "EXB Shock Set Bore:16mm, Length:134mm Piston: Machined 8x1.3mm Oil:1300cst Emulsion Caps"
-gtin = "660132890377"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-exb-shock-set-bore16mm-length134mm-piston-machined-8x1.3mm-oil1300cst-emulsion-caps/ARA330849.html" },
 ]
+gtin = "660132890377"
 category = "oil-grease"
+fits = [
+  { kit = "kit/arrma/kraton", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/notorious", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]

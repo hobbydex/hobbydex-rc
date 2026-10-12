@@ -9,3 +9,11 @@ category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
+fits = [
+  { kit = "kit/arrma/gorgon-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/granite-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/infraction-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/mini-kraton", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/quake-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]
