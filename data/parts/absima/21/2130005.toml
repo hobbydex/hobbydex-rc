@@ -2,6 +2,21 @@ id = "part/absima/2130005"
 brand = "brand/absima"
 number = "2130005"
 name = "1:10 Brushless Motor THRUST-V2 3652/3421KV"
+category = "motor"
+category_source = "curated"
+gtin = "4250650927806"
+kv = 3421
+diameter_mm = 36.0
+length_mm = 52.0
+shaft_mm = 3.17
+weight_g = 200
+notes = "Thrust V2 (ECO V2) brushless motor: sensorless, 4 poles, 27,400 rpm at 7.4 V, 4.8-11.1 V; shaft 14.5 mm long; 3.5 mm gold connectors"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Absima gives the can size on the product page" },
+]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=2130005" },
+]
 fits = [
   { kit = "kit/absima/ab-v2", type = "direct", source = "doc/absima/spares-ab-v2" },
   { kit = "kit/absima/adb1", type = "direct", source = "doc/absima/spares-adb1" },
@@ -10,4 +25,3 @@ fits = [
   { kit = "kit/absima/asb1", type = "direct", source = "doc/absima/spares-asb1" },
   { kit = "kit/absima/ab1", type = "direct", source = "doc/absima/spares-ab1" },
 ]
-category = "motor"
