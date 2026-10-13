@@ -1,10 +1,12 @@
 id = "part/pr-racing/66402106"
 brand = "brand/pr-racing"
 number = "66402106"
-name = "-5x8x2.5mm Plastic Bearing"
-equivalent_to = [
-  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
-]
+name = "Steering Post 27.5mm(2pcs)+Shock Ball(4pcs)+5x8x2.5mm POM (4pcs)POM"
 material = "steel"
-category = "bearing"
-documents = ["doc/pr-racing/69000020-725"]
+category = "steering"
+category_source = "curated"
+fits = [
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]

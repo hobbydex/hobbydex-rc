@@ -1,10 +1,14 @@
 id = "part/pr-racing/78400016"
 brand = "brand/pr-racing"
 number = "78400016"
-name = "M4x3mm Set Screw"
+name = "Set Screw M4 x 3mm"
 equivalent_to = [
   { spec = "spec/screw/m4x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-documents = ["doc/pr-racing/77500296-793"]
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

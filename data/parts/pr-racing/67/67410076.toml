@@ -2,7 +2,10 @@ id = "part/pr-racing/67410076"
 brand = "brand/pr-racing"
 number = "67410076"
 name = "PR ST 1 Wheel Black"
-pack_qty = 2
-documents = ["doc/pr-racing/pr-rc-com"]
 category = "wheel"
 color = "black"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for 2024 PR RACING V4TR Off Road Stadium Truck Kit are 12 mm" },
+]
+pack_qty = 2
+documents = ["doc/pr-racing/pr-rc-com"]

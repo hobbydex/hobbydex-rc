@@ -1,6 +1,11 @@
 id = "part/pr-racing/31430017"
 brand = "brand/pr-racing"
 number = "31430017"
-name = "O-ring"
+name = "PR RACING P3 Shock Soft O-Ring V4"
 category = "o-ring-seal"
-documents = ["doc/pr-racing/69000030-790"]
+pack_qty = 8
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

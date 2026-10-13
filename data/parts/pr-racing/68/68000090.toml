@@ -1,11 +1,13 @@
 id = "part/pr-racing/68000090"
 brand = "brand/pr-racing"
 number = "68000090"
-name = "PR SB401-PR SB401 Aluminum Rear Upright"
+name = "PR SB401 Aluminum Rear Upright"
 category = "suspension"
 material = "aluminium"
+pack_qty = 2
 fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
   { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
 ]
-applies_to = "10TH SB401-R-T-SPORT TRUCK"
+applies_to = "PR SB401-LW 4wd; 10TH SB401-R-T-SPORT TRUCK"
 documents = ["doc/pr-racing/pr-rc-com"]

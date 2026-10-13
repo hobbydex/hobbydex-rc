@@ -1,11 +1,12 @@
 id = "part/pr-racing/55500010"
 brand = "brand/pr-racing"
 number = "55500010"
-name = "SB401R CNC Aluminium Cooling fan Mount (30x30)"
+name = "CNC Aluminium Cooling fan Mount (30x30)"
 category = "chassis"
 material = "aluminium"
 fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
   { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
 ]
-applies_to = "10TH SB401-R-T-SPORT TRUCK"
+applies_to = "PR SB401-LW 4wd; 10TH SB401-R-T-SPORT TRUCK"
 documents = ["doc/pr-racing/pr-rc-com"]

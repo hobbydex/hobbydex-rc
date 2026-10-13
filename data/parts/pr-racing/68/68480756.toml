@@ -1,6 +1,11 @@
 id = "part/pr-racing/68480756"
 brand = "brand/pr-racing"
 number = "68480756"
-name = "Anti-Roll bar Balls (2.1mm)"
+name = "SB401 Anti-Roll bar Balls 2.1mm"
 category = "ball-end"
-documents = ["doc/pr-racing/69000045-797"]
+pack_qty = 2
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

@@ -1,6 +1,12 @@
 id = "part/pr-racing/77500156"
 brand = "brand/pr-racing"
 number = "77500156"
-name = "Suspension Hanger Insert"
+name = "PR SB401-R Suspension Hanger Insert Set"
 category = "suspension"
-documents = ["doc/pr-racing/77500256-702"]
+fits = [
+  { kit = "kit/pr-racing/s1-v3", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR S1 V3(FM); PR SB401-Type R 4wd; 10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]

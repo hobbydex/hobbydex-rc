@@ -3,12 +3,12 @@ brand = "brand/pr-racing"
 number = "83400056"
 name = "M4 Flanged & Knurled Locknut"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
 pack_qty = 6
 fits = [
   { kit = "kit/pr-racing/s1", type = "direct", source = "doc/pr-racing/pr-rc-com" },
 ]
 applies_to = "PR S1"
 documents = ["doc/pr-racing/pr-rc-com"]
-equivalent_to = [
-  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
-]

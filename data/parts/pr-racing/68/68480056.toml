@@ -1,6 +1,11 @@
 id = "part/pr-racing/68480056"
 brand = "brand/pr-racing"
 number = "68480056"
-name = "Rear hub"
+name = "SB401 Rear hub & Mid Slipper/Differential Mount"
 category = "suspension"
-documents = ["doc/pr-racing/69000045-797"]
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-LW 4wd; 10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]
