@@ -1,0 +1,17 @@
+id = "part/amewi/013-22700-35"
+brand = "brand/amewi"
+number = "013-22700-35"
+name = "LiPo Akku 7,4V 750mAh MAX20"
+fits = [
+  { kit = "kit/amewi/max20", type = "direct", source = "doc/amewi/22707-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/LiPo-Akku-74V-750mAh-MAX20" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-750mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 750
+category = "battery"
