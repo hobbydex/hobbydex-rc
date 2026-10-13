@@ -12,6 +12,9 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "SWORKz S35-4e (also S35-T2e, S35-5e)"
+fits = [
+  { kit = "kit/sworkz/s35-4e", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the SWORKz S35-4e (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4729/S354e" },

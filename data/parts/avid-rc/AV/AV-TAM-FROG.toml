@@ -11,6 +11,12 @@ material = "steel"
 seal = "rubber"
 lubricant = "grease"
 applies_to = "Tamiya Frog (also Sand Scorcher, Subaru Brat, Blitzer Beetle)"
+fits = [
+  { kit = "kit/tamiya/frog", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya Frog (link_car_kits.py)" },
+  { kit = "kit/tamiya/sand-scorcher", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Sand Scorcher (link_car_kits.py)" },
+  { kit = "kit/tamiya/subaru-brat", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Subaru Brat (link_car_kits.py)" },
+  { kit = "kit/tamiya/blitzer-beetle", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Blitzer Beetle (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4530/Frog" },
