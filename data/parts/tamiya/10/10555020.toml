@@ -1,11 +1,15 @@
 id = "part/tamiya/10555020"
 brand = "brand/tamiya"
 number = "10555020"
-name = "B50 Plastic Bonde (MBS x10)"
-former_names = ["850 Plastic Bearing"]
+name = "850 Plastic Bearing"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1809-10555020", kind = "fan-site" },
 ]
 name_source = "ocr"
 material = "plastic"
+former_names = ["B50 Plastic Bonde (MBS x10)"]
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "A plain plastic bushing, Tamiya size 850; the 5x8x2.5 ball bearing replaces it" },
+]
+category = "bearing"
