@@ -1,8 +1,9 @@
 id = "part/kyosho/W5309"
 brand = "brand/kyosho"
 number = "W5309"
-name = "36 Big Bore Spring (L=44/3.55/2pcs)"
+name = "36 Big Bore Spring (L=44/3.55)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock-spring"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

@@ -1,13 +1,19 @@
 id = "part/kyosho/BRG031"
 brand = "brand/kyosho"
 number = "BRG031"
-name = "Shield Bearing (5x11x4 / 2pcs)"
+name = "Shield Bearing (5x11x4)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 equivalent_to = [
   { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "metal"
 category = "bearing"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31888-inferno-mp9-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-spop-20191228" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-sp" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]

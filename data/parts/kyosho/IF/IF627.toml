@@ -1,8 +1,9 @@
 id = "part/kyosho/IF627"
 brand = "brand/kyosho"
 number = "IF627"
-name = "Center Swing Shaft (L=86/1pc/MP10 TKI3)"
+name = "Center Swing Shaft (L=86/MP10 TKI3)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

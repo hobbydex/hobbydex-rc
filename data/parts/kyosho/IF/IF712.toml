@@ -1,8 +1,10 @@
 id = "part/kyosho/IF712"
 brand = "brand/kyosho"
 number = "IF712"
-name = "King Pin Set (MP11)"
+name = "Front Knuckle Arm Set (MP11)"
 former_names = ["7 Front Knuckle Arm (R/MP11)", "Front Knuckle Arm Set (MP11)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "pin-clip"
-name_source = "ocr"
+category = "suspension"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

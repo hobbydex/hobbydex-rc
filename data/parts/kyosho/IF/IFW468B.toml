@@ -1,7 +1,12 @@
 id = "part/kyosho/IFW468B"
 brand = "brand/kyosho"
 number = "IFW468B"
-name = "Front Hub Carrier Set (L,R/17.5\"/MP9)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Front Hub Carrier Set (L,R/17.5°/MP9)"
 category = "suspension"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-sp" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33022-02-mp10tki2-spop" },
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/34111-mm02-inf-mp9e-evo-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]

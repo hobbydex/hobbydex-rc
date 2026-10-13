@@ -1,9 +1,13 @@
 id = "part/kyosho/IFW415B"
 brand = "brand/kyosho"
 number = "IFW415B"
-name = "Hard Rear Lower Sus. Shaft Screw (3.5x49mm / 2pcs / MP9)"
+name = "Hard Rear Lower Sus. Shaft Screw (3.5x49mm/MP9)"
 pack_qty = 2
 former_names = ["Fly Wheel Tapered Collet Set"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "screw"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

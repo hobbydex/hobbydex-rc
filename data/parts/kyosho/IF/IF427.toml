@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "IF427"
 name = "Front Lower Suspension Arm"
 name_ja = "フロントロアサスアーム"
-documents = ["doc/kyosho/if427-front-lower-suspension-arm"]
 category = "suspension"
+documents = ["doc/kyosho/if427-front-lower-suspension-arm"]
+fits = [
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31888-inferno-mp9-spop" },
+]

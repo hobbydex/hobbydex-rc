@@ -3,6 +3,10 @@ brand = "brand/kyosho"
 number = "UMW735"
 name = "Carbon Battery Plate RB6.6"
 name_ja = "カーボンバッテリープレート"
-documents = ["doc/kyosho/umw735-carbon-battery-plate"]
 category = "chassis"
+documents = ["doc/kyosho/umw735-carbon-battery-plate"]
 material = "carbon"
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34310-ultima-rb6-6-spop" },
+]

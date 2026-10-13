@@ -2,6 +2,7 @@ id = "part/kyosho/UM579"
 brand = "brand/kyosho"
 number = "UM579"
 name = "Front Shock Stay (Ultima SB)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+]

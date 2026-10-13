@@ -1,8 +1,9 @@
 id = "part/kyosho/IFW419-03"
 brand = "brand/kyosho"
 number = "IFW419-03"
-name = "Hard Rear Lower Sus. Shaft Screw (3.5x49mm / 2pcs / MP9)"
+name = "Joint Block Set (Cap Universal)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "screw"
-name_source = "ocr"
+category = "drivetrain"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

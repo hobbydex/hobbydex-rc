@@ -1,8 +1,12 @@
 id = "part/kyosho/IFH006WB"
 brand = "brand/kyosho"
 number = "IFH006WB"
-name = "INFERNO MP10 Decoration Body Set (Red)"
+name = "Dish Wheel (White/MP9 TKI4)"
 former_names = ["INFERNO MP10e Decoration Body Set (Green)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "body"
-name_source = "ocr"
+category = "wheel"
+pack_qty = 4
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1s-inferno-mp10e-readyset-spare-and-option-parts" },
+]
+color = "white"

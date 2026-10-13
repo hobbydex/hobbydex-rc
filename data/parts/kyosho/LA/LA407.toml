@@ -2,8 +2,9 @@ id = "part/kyosho/LA407"
 brand = "brand/kyosho"
 number = "LA407"
 name = "Aluminum Center Shaft (95/7075/ZX7.5)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
 material = "aluminium"
 material_grade = "7075"
+fits = [
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+]

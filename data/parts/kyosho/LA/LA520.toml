@@ -2,6 +2,7 @@ id = "part/kyosho/LA520"
 brand = "brand/kyosho"
 number = "LA520"
 name = "Front Bulkhead (LAZER SB)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

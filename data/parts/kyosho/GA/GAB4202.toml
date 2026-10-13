@@ -1,7 +1,8 @@
 id = "part/kyosho/GAB4202"
 brand = "brand/kyosho"
 number = "GAB4202"
-name = "2S1P-HardCase-8 High power type battery"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "GA-B-60C-4000-2S1P-HardCase-8"
 category = "electronics"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+]

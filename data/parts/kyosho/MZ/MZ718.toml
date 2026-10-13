@@ -2,6 +2,7 @@ id = "part/kyosho/MZ718"
 brand = "brand/kyosho"
 number = "MZ718"
 name = "Shock Post Set (MR-04/LM)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/mini-z-mr-04-rwd-readyset-2025-spare-and-option-parts" },
+]

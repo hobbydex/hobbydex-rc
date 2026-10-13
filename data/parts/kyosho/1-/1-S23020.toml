@@ -1,0 +1,13 @@
+id = "part/kyosho/1-S23020"
+brand = "brand/kyosho"
+number = "1-S23020"
+name = "Cap Screw(M3x20)"
+pack_qty = 5
+fits = [
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

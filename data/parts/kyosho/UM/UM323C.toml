@@ -1,0 +1,15 @@
+id = "part/kyosho/UM323C"
+brand = "brand/kyosho"
+number = "UM323C"
+name = "Steel Pinion Gear(23T) 1/48 Pitch"
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34310-ultima-rb6-6-spop" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-23t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"
+category = "pinion"
+teeth = 23
+pitch_dp = 48

@@ -3,5 +3,10 @@ brand = "brand/kyosho"
 number = "IFW403"
 name = "TCD Gear Set (MP9)"
 name_ja = "LSDギヤセット(MP9)"
-documents = ["doc/kyosho/ifw403-lsd-gear-set-mp9-m"]
 category = "gear"
+documents = ["doc/kyosho/ifw403-lsd-gear-set-mp9-m"]
+fits = [
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30897-inferno-mp9etki-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/33001-t03-inferno-mp9-tki4-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-spop-20191228" },
+]

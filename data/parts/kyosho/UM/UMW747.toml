@@ -3,5 +3,8 @@ brand = "brand/kyosho"
 number = "UMW747"
 name = "Front Wing Mount"
 name_ja = "フロントウイングマウント"
-documents = ["doc/kyosho/umw747-frontwingmount-rb7"]
 category = "wing"
+documents = ["doc/kyosho/umw747-frontwingmount-rb7"]
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
+]

@@ -2,6 +2,7 @@ id = "part/kyosho/MA361"
 brand = "brand/kyosho"
 number = "MA361"
 name = "3-Speed Shaft (MAD Series)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+]

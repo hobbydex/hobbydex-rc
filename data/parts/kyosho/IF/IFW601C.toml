@@ -2,7 +2,9 @@ id = "part/kyosho/IFW601C"
 brand = "brand/kyosho"
 number = "IFW601C"
 name = "Titanium Rod Set (MP10)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "ball-end"
-name_source = "ocr"
 material = "titanium"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1s-inferno-mp10e-readyset-spare-and-option-parts" },
+]

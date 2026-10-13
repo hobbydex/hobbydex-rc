@@ -1,10 +1,12 @@
 id = "part/kyosho/IFW637-095"
 brand = "brand/kyosho"
 number = "IFW637-095"
-name = "Light Weight Spur Gear (47T/MP10/w/IF403B)"
+name = "Clutch Spring (for LW/0.95)"
 pack_qty = 3
 former_names = ["3pC Clutch Spring (for LW/0.95)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "spur-gear"
-name_source = "ocr"
+category = "engine-fuel"
 teeth = 47
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+]

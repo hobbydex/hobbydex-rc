@@ -1,8 +1,9 @@
 id = "part/kyosho/IFW617"
 brand = "brand/kyosho"
 number = "IFW617"
-name = "HD Center Cup Joint (1pc/MP10/MP9RS/IF280B)"
+name = "Center Swing Shaft (L=121/MP10)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

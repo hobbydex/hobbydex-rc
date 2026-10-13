@@ -3,6 +3,11 @@ brand = "brand/kyosho"
 number = "UMW724"
 name = "Aluminum Steering Support"
 name_ja = "アルミステアリングサポート"
-documents = ["doc/kyosho/umw724-aluminum-steering-supports-rb6rt6sc6"]
 category = "steering"
+documents = ["doc/kyosho/umw724-aluminum-steering-supports-rb6rt6sc6"]
 material = "aluminium"
+fits = [
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+]

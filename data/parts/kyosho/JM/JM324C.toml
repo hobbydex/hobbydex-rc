@@ -1,0 +1,14 @@
+id = "part/kyosho/JM324C"
+brand = "brand/kyosho"
+number = "JM324C"
+name = "Steel Pinion Gear (24T) 1/48 Pitch"
+fits = [
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34310-ultima-rb6-6-spop" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-24t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"
+category = "pinion"
+teeth = 24
+pitch_dp = 48

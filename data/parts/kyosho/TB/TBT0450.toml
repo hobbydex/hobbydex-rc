@@ -1,9 +1,11 @@
 id = "part/kyosho/TBT0450"
 brand = "brand/kyosho"
 number = "TBT0450"
-name = "Turmbuckle Rod (Titanium/4x50/2pcs)"
+name = "Turmbuckle Rod (Titanium/4x50)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "ball-end"
-name_source = "ocr"
 material = "titanium"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33024-t01-mp10-30th-op" },
+]

@@ -2,5 +2,6 @@ id = "part/kyosho/MZ717"
 brand = "brand/kyosho"
 number = "MZ717"
 name = "RC Unit Set (MINI-Z MR-04RWD/RA47)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/mini-z-mr-04-rwd-readyset-2025-spare-and-option-parts" },
+]

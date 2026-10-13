@@ -3,6 +3,10 @@ brand = "brand/kyosho"
 number = "UMW734"
 name = "Carbon Rear Shock Stay RB6.6 MID"
 name_ja = "カーボンリヤダンパーステーRB6.6 MID"
-documents = ["doc/kyosho/umw734-carbon-rear-shock-stay"]
 category = "chassis"
+documents = ["doc/kyosho/umw734-carbon-rear-shock-stay"]
 material = "carbon"
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34310-ultima-rb6-6-spop" },
+]

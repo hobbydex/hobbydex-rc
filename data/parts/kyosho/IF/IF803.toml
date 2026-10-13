@@ -1,7 +1,8 @@
 id = "part/kyosho/IF803"
 brand = "brand/kyosho"
 number = "IF803"
-name = "Center Diff. Mount Set (MP116)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Center Diff. Mount Set (MP11e)"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

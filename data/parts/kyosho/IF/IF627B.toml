@@ -1,10 +1,9 @@
 id = "part/kyosho/IF627B"
 brand = "brand/kyosho"
 number = "IF627B"
-name = "HD Coating Shock Case (L=50/2pcs)"
+name = "Center Swing Shaft (L=86/MP10 TKI3)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "shock"
-shock_part = "body"
-length_mm = 50
-name_source = "ocr"
+category = "drivetrain"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+]

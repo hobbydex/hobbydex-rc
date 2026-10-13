@@ -1,8 +1,11 @@
 id = "part/kyosho/IF751"
 brand = "brand/kyosho"
 number = "IF751"
-name = "Engine Mount Plate (Gunmetal/MP11)"
+name = "Diff. Bevel Shaft"
 former_names = ["2.7 SNe 7k (2 入 /MP11)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "chassis"
-name_source = "ocr"
+category = "differential"
+pack_qty = 2
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

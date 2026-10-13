@@ -1,8 +1,9 @@
 id = "part/kyosho/ISW203"
 brand = "brand/kyosho"
 number = "ISW203"
-name = "LW Al Motor Mount (Long Motor/MP10Te)"
+name = "LW AI Motor Mount (Long Motor/MP10Te)"
 former_names = ["Big Shock Spring (M/Gray/7.5-1.4/L=84)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

@@ -1,14 +1,28 @@
 id = "part/kyosho/BRG005"
 brand = "brand/kyosho"
 number = "BRG005"
-name = "Shield Bearing (8x16x5) 2pcs"
+name = "Shield Bearing (8x16x5)"
 pack_qty = 2
 former_names = ["Shield Bearing (8x16x5 / 2pcs)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 equivalent_to = [
   { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "metal"
 category = "bearing"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { kit = "kit/kyosho/inferno-neo-2-0", type = "direct", source = "doc/kyosho/31684-mm01-inferno-neo-2-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31888-inferno-mp9-spop" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-spop-20191228" },
+  { kit = "kit/kyosho/inferno-neo-st", type = "direct", source = "doc/kyosho/33016-inferno-neo-st-3-0-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-sp" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029-inf-neo4-0-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-neo-3-0-ve", type = "direct", source = "doc/kyosho/34108-mm02-inf-neo3-0-ve-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118-t01-spop" },
+]

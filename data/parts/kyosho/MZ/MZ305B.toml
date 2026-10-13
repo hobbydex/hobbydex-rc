@@ -2,6 +2,7 @@ id = "part/kyosho/MZ305B"
 brand = "brand/kyosho"
 number = "MZ305B"
 name = "Motor Case Set (LM)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "motor"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/mini-z-mr-04-rwd-readyset-2025-spare-and-option-parts" },
+]

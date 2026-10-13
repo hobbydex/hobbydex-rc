@@ -1,8 +1,13 @@
 id = "part/kyosho/IFW634-46S"
 brand = "brand/kyosho"
 number = "IFW634-46S"
-name = "Light Weight Spur Gear (45T/MP10/w/IF403B)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Light Weight Spur Gear (46T/MP10/w/IF403B)"
 category = "spur-gear"
-name_source = "ocr"
 teeth = 45
+fits = [
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-op" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33024-t01-mp10-30th-op" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34116-t03-inf-mp10e-tki2-spop" },
+]
