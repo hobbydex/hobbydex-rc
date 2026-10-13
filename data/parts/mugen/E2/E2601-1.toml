@@ -1,13 +1,18 @@
 id = "part/mugen/E2601-1"
 brand = "brand/mugen"
 number = "E2601-1"
-name = "Ball Bearing 5x10x4mm (x10)"
+name = "BEARING NMB 5x10x4"
+gtin = "4944925028274"
 pack_qty = 10
 fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7" },
   { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/rcteam-mbx7t" },
   { kit = "kit/mugen/mgt7", type = "direct", source = "doc/mugen/rcteam-mgt7" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r_eco-option-parts-page" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr_eco-option-parts-page" },
+  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
+  { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-part-list" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-ball-bearings-5x10x4mm-x10-e2601-1" },
@@ -17,3 +22,4 @@ equivalent_to = [
 ]
 material = "steel"
 category = "bearing"
+notes = "Mugen prints the number as E2601/1"

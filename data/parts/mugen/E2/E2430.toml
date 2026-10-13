@@ -1,13 +1,17 @@
 id = "part/mugen/E2430"
 brand = "brand/mugen"
 number = "E2430"
-name = "Aluminum Wing Washer (x2) MBX8R"
+name = "AL. WING BUTTONS"
 pack_qty = 2
 fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-aluminium-fin-washer-x2-mbx8r-e2430" },
 ]
-category = "washer-shim"
+category = "wing"
 material = "aluminium"

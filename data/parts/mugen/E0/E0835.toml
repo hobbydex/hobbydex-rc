@@ -1,0 +1,13 @@
+id = "part/mugen/E0835"
+brand = "brand/mugen"
+number = "E0835"
+name = "TITANIUM STEERING ROD 90"
+fits = [
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr_eco-option-parts-page" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "replaces", replaces = "part/mugen/E0834", source = "doc/mugen/mbx8tr-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/mbx8t-eco", type = "replaces", replaces = "part/mugen/E0834", source = "doc/mugen/mbx8tr-eco-part-list", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "steering"
+material = "titanium"
