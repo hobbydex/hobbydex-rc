@@ -1,8 +1,11 @@
 id = "part/kyosho/IFW453B"
 brand = "brand/kyosho"
 number = "IFW453B"
-name = "Al Long Range Steering Servo Horn (SANWAKO/MP9/ST-RR)"
+name = "Manifold Support (INFERNO MP9)"
 former_names = ["Manifold Support (INFERNO MP9)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "steering"
-name_source = "ocr"
+category = "engine-fuel"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+]

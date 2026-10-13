@@ -2,6 +2,9 @@ id = "part/kyosho/LAW30GMB"
 brand = "brand/kyosho"
 number = "LAW30GMB"
 name = "Cramp Wheel Hub (45/Gunmetal)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+]

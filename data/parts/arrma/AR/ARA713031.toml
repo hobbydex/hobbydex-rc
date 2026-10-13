@@ -10,3 +10,7 @@ category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/3.5x14.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
+fits = [
+  { kit = "kit/arrma/kraton-8s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/outcast-8s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

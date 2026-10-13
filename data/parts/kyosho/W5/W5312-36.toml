@@ -1,7 +1,9 @@
 id = "part/kyosho/W5312-36"
 brand = "brand/kyosho"
 number = "W5312-36"
-name = "Spring (@1.2x5.25x44/3.6/2pcs)"
+name = "Spring (Φ1.2x5.25x44/3.6)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+]

@@ -1,10 +1,12 @@
 id = "part/kyosho/MATH001W"
 brand = "brand/kyosho"
 number = "MATH001W"
-name = "Monster Tire with Wheel (White/V-Shaped/2pcs)"
+name = "Monster Tire with Wheel (White/V-Shaped)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "tire"
-name_source = "ocr"
 mounting = "pre-mounted"
 wheel_color = "white"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

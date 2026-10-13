@@ -2,6 +2,12 @@ id = "part/kyosho/IF290"
 brand = "brand/kyosho"
 number = "IF290"
 name = "Engine Mount Plate (t=4.0/L,R)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-neo-st", type = "direct", source = "doc/kyosho/33016-inferno-neo-st-3-0-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/33021-mm2-inf-mp9-tki4-spop" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029-inf-neo4-0-kt-231p-spop" },
+]
+pack_qty = 2

@@ -1,9 +1,11 @@
 id = "part/kyosho/W5310-23"
 brand = "brand/kyosho"
 number = "W5310-23"
-name = "] Big Bore Spring (L=63/2.3/2pcs)"
+name = "Big Bore Shock Spring"
 pack_qty = 2
 former_names = ["Big Bore Shock Spring (L=63/2.3/2A)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock-spring"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

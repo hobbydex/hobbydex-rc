@@ -1,8 +1,12 @@
 id = "part/kyosho/IFW430"
 brand = "brand/kyosho"
 number = "IFW430"
-name = "HD Front C-Universal Shaft (L=84/1pc/MP9)"
+name = "HD Front C-Universal Shaft (L=84/MP9)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/33001-t03-inferno-mp9-tki4-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]

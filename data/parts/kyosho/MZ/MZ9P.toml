@@ -2,6 +2,7 @@ id = "part/kyosho/MZ9P"
 brand = "brand/kyosho"
 number = "MZ9P"
 name = "Motor Set"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "motor"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/mini-z-mr-03-2009-spare-and-option-parts" },
+]

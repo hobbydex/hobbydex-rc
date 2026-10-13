@@ -2,8 +2,9 @@ id = "part/kyosho/UM589-1B"
 brand = "brand/kyosho"
 number = "UM589-1B"
 name = "Shock Plastic Parts Set (Ultima SB)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "complete"
 material = "plastic"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+]

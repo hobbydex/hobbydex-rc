@@ -2,6 +2,7 @@ id = "part/kyosho/GAC0100D"
 brand = "brand/kyosho"
 number = "GAC0100D"
 name = "Charger Safeguard 2-6S Battery Protector"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "charger"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+]

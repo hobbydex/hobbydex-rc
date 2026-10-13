@@ -2,5 +2,7 @@ id = "part/kyosho/MA077"
 brand = "brand/kyosho"
 number = "MA077"
 name = "Strut Bar (MAD FORCE KRUISER)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

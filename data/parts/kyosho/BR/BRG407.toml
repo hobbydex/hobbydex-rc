@@ -1,17 +1,23 @@
 id = "part/kyosho/BRG407"
 brand = "brand/kyosho"
 number = "BRG407"
-name = "Shield Bearing(5x10x4) 4pcs"
+name = "Shield Bearing (5x10x4)"
 pack_qty = 4
 former_names = ["Shield Bearing (5x10x4 / 4pcs)", "Shield Bearing(5x10x4)4pcs"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "metal"
 category = "bearing"
-name_source = "ocr"
 fits = [
   { kit = "kit/kyosho/hanging-on-racer", type = "direct", source = "doc/kyosho/34937t1-t01-spop" },
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
 ]

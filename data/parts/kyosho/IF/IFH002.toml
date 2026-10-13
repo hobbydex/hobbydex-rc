@@ -1,8 +1,11 @@
 id = "part/kyosho/IFH002"
 brand = "brand/kyosho"
 number = "IFH002"
-name = "GMB Ten-Spoke Wheel (Gun Metallic/4pcs)"
+name = "GMB Ten-Spoke Wheel (Gun Metallic)"
 pack_qty = 4
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "wheel"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-neo-3-0-ve", type = "direct", source = "doc/kyosho/34108-mm02-inf-neo3-0-ve-kt-231p-spop" },
+]

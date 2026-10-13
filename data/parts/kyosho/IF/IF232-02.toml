@@ -1,9 +1,12 @@
 id = "part/kyosho/IF232-02"
 brand = "brand/kyosho"
 number = "IF232-02"
-name = "Diaphragm (@17/4pcSs)"
+name = "Diaphragm (ø17)"
 pack_qty = 4
 former_names = ["Diaphragm (917/4pcs)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "o-ring-seal"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-spop" },
+]

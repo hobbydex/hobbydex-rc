@@ -1,10 +1,13 @@
 id = "part/kyosho/ORG03BK"
 brand = "brand/kyosho"
 number = "ORG03BK"
-name = "O-ring (P3/Black) 10pcs"
+name = "O-ring (P3/Black)"
 pack_qty = 10
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "o-ring-seal"
-name_source = "ocr"
 color = "black"
 range = "kyosho/org03-o-ring-p3-10pcs-2bd6-colours"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

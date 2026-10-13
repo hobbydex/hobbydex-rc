@@ -1,7 +1,13 @@
 id = "part/kyosho/IF243B"
 brand = "brand/kyosho"
 number = "IF243B"
-name = "Manifold (MP9 RS/NEO RACE SPEC) °"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Manifold (MP9 RS/NEO RACE SPEC)"
 category = "engine-fuel"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-2-0", type = "direct", source = "doc/kyosho/31684-mm01-inferno-neo-2-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31888-inferno-mp9-spop" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-neo-st", type = "direct", source = "doc/kyosho/33016-inferno-neo-st-3-0-kt-231p-spop" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029-inf-neo4-0-kt-231p-spop" },
+]

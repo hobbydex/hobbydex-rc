@@ -1,7 +1,9 @@
 id = "part/kyosho/IF410-47C"
 brand = "brand/kyosho"
 number = "IF410-47C"
-name = "Sour Gear (47T/MP10/MP9)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "gear"
-name_source = "ocr"
+name = "Spur Gear (47T/MP10/MP9)"
+category = "spur-gear"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]
+teeth = 47

@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "IFW615"
 name = "HD Cap C-Universal Swing Shaft"
 name_ja = "HDキャップセンターユニバーサルスイングシャフト"
-documents = ["doc/kyosho/ifw434-435-614-615"]
 category = "drivetrain"
+documents = ["doc/kyosho/ifw434-435-614-615"]
+pack_qty = 1
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33022-02-mp10tki2-spop" },
+]

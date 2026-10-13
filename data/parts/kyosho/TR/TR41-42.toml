@@ -2,7 +2,8 @@ id = "part/kyosho/TR41-42"
 brand = "brand/kyosho"
 number = "TR41-42"
 name = "Spur Gear (42T/TR15 ST Ready Set)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "spur-gear"
-name_source = "ocr"
 teeth = 42
+fits = [
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

@@ -1,8 +1,12 @@
 id = "part/kyosho/IFW506"
 brand = "brand/kyosho"
 number = "IFW506"
-name = "Carbon Center Diff.Plate (MP10e)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Carbon Center Diff. Plate (MP10e)"
 category = "chassis"
-name_source = "ocr"
 material = "carbon"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "replaces", replaces = "part/kyosho/IF556", source = "doc/kyosho/34113t1-inf-mp10e-spop", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "replaces", replaces = "part/kyosho/IF556", source = "doc/kyosho/34115-t01-inf-mp10te-spop", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -1,7 +1,9 @@
 id = "part/kyosho/MD203"
 brand = "brand/kyosho"
 number = "MD203"
-name = "(Wide) ES"
+name = "Front Upper Bulk Cover Set (MA-020)"
 former_names = ["Front Upper Bulk Cover Set (MA-020)", "MZ8-1 i, ae"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/mini-z-awd-readyset-kt-531p-2026-spare-and-option-parts" },
+]
+category = "body"

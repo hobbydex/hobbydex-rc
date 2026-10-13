@@ -2,6 +2,7 @@ id = "part/kyosho/LA515"
 brand = "brand/kyosho"
 number = "LA515"
 name = "Outer Sus. Shaft Set (LAZER SB)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

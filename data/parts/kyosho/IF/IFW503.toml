@@ -3,6 +3,9 @@ brand = "brand/kyosho"
 number = "IFW503"
 name = "Titanium Screw Set"
 name_ja = "チタンビスセット"
-documents = ["doc/kyosho/ifw503-t01-titaniumscrewset"]
 category = "screw"
+documents = ["doc/kyosho/ifw503-t01-titaniumscrewset"]
 material = "titanium"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

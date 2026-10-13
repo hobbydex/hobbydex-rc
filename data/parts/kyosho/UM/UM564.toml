@@ -1,10 +1,15 @@
 id = "part/kyosho/UM564"
 brand = "brand/kyosho"
 number = "UM564"
-name = "80B Spur Gear (48P-80T)(RT6)"
+name = "82B Spur Gear -82T)(RT5/RB5/RB5 SP"
 former_names = ["82B"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "spur-gear"
-name_source = "ocr"
 teeth = 80
 pitch_dp = 48
+pack_qty = 48
+fits = [
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

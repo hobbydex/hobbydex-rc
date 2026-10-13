@@ -2,6 +2,7 @@ id = "part/kyosho/IF651"
 brand = "brand/kyosho"
 number = "IF651"
 name = "Main Chassis (MP10 r/s)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+]

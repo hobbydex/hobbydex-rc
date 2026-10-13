@@ -1,8 +1,10 @@
 id = "part/kyosho/IF111-74"
 brand = "brand/kyosho"
 number = "IF111-74"
-name = "Suspension Shaft (4x74mm/2pcs)"
+name = "Suspension Shaft (4x74mm)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "suspension"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-spop" },
+]

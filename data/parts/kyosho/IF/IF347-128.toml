@@ -1,9 +1,13 @@
 id = "part/kyosho/IF347-128"
 brand = "brand/kyosho"
 number = "IF347-128"
-name = "Shock Piston (ø1.2x8Hole/2Pcs/For Big Shock)"
+name = "Shock Piston (φ1.2x8 Hole/For Big Shock)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "piston"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-spop-20191228" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-op" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]

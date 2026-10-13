@@ -1,8 +1,9 @@
 id = "part/kyosho/IF444"
 brand = "brand/kyosho"
 number = "IF444"
-name = "02KYB) Fuel Tank Lever (F-Yellow/2pcs)"
+name = "01 Fuel Tank Bush Set (MP9)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "engine-fuel"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31888-inferno-mp9-spop" },
+]

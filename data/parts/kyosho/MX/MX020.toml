@@ -2,5 +2,6 @@ id = "part/kyosho/MX020"
 brand = "brand/kyosho"
 number = "MX020"
 name = "RC Unit (MINI-Z 4x4/RA-46)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-4x4", type = "direct", source = "doc/kyosho/mini-z-4x4-series-2023-spare-and-option-parts" },
+]

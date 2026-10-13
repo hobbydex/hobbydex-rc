@@ -2,9 +2,12 @@ id = "part/arrma/ARA320819"
 brand = "brand/arrma"
 number = "ARA320819"
 name = "Desert Truck Body Roll Cage Set, Yellow"
-gtin = "660132908522"
 applies_to = "GROM"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-desert-truck-body-roll-cage-set-yellow-grom/ARA320819.html" },
 ]
+gtin = "660132908522"
 category = "body"
+fits = [
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

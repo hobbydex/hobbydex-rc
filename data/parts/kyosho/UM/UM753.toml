@@ -3,6 +3,10 @@ brand = "brand/kyosho"
 number = "UM753"
 name = "Oil Shock Set"
 name_ja = "オイルダンパーセット"
-documents = ["doc/kyosho/um753-oil-shock-set-rb6"]
 category = "shock"
+documents = ["doc/kyosho/um753-oil-shock-set-rb6"]
 shock_part = "complete"
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34310-ultima-rb6-6-spop" },
+]

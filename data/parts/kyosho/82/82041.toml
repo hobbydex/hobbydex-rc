@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "82041"
 name = "MINI-Z EVO Series Receiver Unit RA-41"
 name_ja = "ミニッツEVOシリーズ レシーバーユニットRA41"
-documents = ["doc/kyosho/82041-instruction"]
 category = "electronics"
+documents = ["doc/kyosho/82041-instruction"]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
+  { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
+]

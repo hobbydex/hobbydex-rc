@@ -1,8 +1,9 @@
 id = "part/kyosho/IF623B"
 brand = "brand/kyosho"
 number = "IF623B"
-name = "Universal Center Shaft F (82mm/1pc/MP10)"
+name = "Universal Center Shaft F (82mm/MP10)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+]

@@ -1,7 +1,8 @@
 id = "part/kyosho/IF552C"
 brand = "brand/kyosho"
 number = "IF552C"
-name = "Battery Tray Set (MP106)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Battery Tray Set (MP10e)"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

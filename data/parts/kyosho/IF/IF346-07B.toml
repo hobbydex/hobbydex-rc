@@ -1,8 +1,11 @@
 id = "part/kyosho/IF346-07B"
 brand = "brand/kyosho"
 number = "IF346-07B"
-name = "Adjustment Collar (For Big Shock/4set)"
+name = "Adjustment Collar (For Big Shock)"
 pack_qty = 4
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "washer-shim"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1s-inferno-mp10e-readyset-spare-and-option-parts" },
+]

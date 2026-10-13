@@ -1,7 +1,9 @@
 id = "part/kyosho/IF736"
 brand = "brand/kyosho"
 number = "IF736"
-name = "Rear Hub Carrier Set (MP11)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Long Upper Arm Set (MP11)"
 category = "suspension"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

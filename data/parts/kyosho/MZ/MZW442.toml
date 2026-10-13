@@ -3,6 +3,9 @@ brand = "brand/kyosho"
 number = "MZW442"
 name = "Inner Tube Pitching Shock"
 name_ja = "インナーチューブピッチングダンパー"
-documents = ["doc/kyosho/mzw442-443-t02-20210317"]
 category = "shock"
+documents = ["doc/kyosho/mzw442-443-t02-20210317"]
 shock_part = "complete"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
+]

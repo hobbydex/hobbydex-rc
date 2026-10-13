@@ -1,9 +1,10 @@
 id = "part/kyosho/W5184-04"
 brand = "brand/kyosho"
 number = "W5184-04"
-name = "Shock Shaft (42/2Pcs)"
+name = "Shock Shaft (42)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "shaft"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+]
