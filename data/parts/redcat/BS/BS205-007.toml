@@ -1,0 +1,19 @@
+id = "part/redcat/BS205-007"
+brand = "brand/redcat"
+number = "BS205-007"
+name = "Front/Rear Lower Inner Suspension Arm Hinge Pin(3x45mm)"
+pack_qty = 4
+applies_to = "BLACKOUT SC, BLACKOUT SC PRO, BLACKOUT XBE, BLACKOUT XBE PRO, BLACKOUT XTE, BLACKOUT XTE PRO, THUNDER EPX DRIFT"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/bs205-7" },
+]
+fits = [
+  { kit = "kit/redcat/blackout-sc", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/blackout-xbe", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/blackout-xte", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/thunder-drift", type = "direct", source = "doc/redcat/store" },
+]
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/3x45", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

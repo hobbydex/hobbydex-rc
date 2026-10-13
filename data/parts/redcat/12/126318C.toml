@@ -1,0 +1,17 @@
+id = "part/redcat/126318C"
+brand = "brand/redcat"
+number = "126318C"
+name = "3x18mm Cap Head Hex Machine Thread Screws"
+pack_qty = 6
+applies_to = "RC-MT10E, TR-MT10E"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/126318c-1" },
+]
+fits = [
+  { kit = "kit/redcat/rc-mt10e", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x18-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

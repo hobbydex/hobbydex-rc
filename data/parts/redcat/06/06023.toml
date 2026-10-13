@@ -1,6 +1,14 @@
 id = "part/redcat/06023"
 brand = "brand/redcat"
 number = "06023"
-name = "Shock Ball Studs B Female Thread"
-category = "ball-end"
+name = "Shock Standoffs"
+pack_qty = 4
+applies_to = "TORNADO EPX/EPX PRO, TORNADO S30"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/06023-1" },
+]
+category = "shock"
 documents = ["doc/redcat/volcano-epx-manual"]
+fits = [
+  { kit = "kit/redcat/tornado", type = "direct", source = "doc/redcat/store" },
+]
