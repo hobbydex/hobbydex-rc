@@ -1,11 +1,13 @@
 id = "part/mugen/E2219"
 brand = "brand/mugen"
 number = "E2219"
-name = "Rear CVD Joints X7R/X8 (x2)"
+name = "REAR UNIVERSAL JOINT"
 pack_qty = 2
 fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-x7r-x8-rear-cvd-drive-shafts-x2-e2219" },

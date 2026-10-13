@@ -1,0 +1,14 @@
+id = "part/mugen/E0601-1"
+brand = "brand/mugen"
+number = "E0601-1"
+name = "BEARINGS (15x21x4)"
+pack_qty = 10
+notes = "Mugen prints the number as E0601/1"
+fits = [
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/15x21x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"
