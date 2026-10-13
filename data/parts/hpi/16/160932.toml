@@ -1,7 +1,14 @@
 id = "part/hpi/160932"
 brand = "brand/hpi"
 number = "160932"
-name = "TP.Button Head Screw M2x6mm"
+name = "TP.Button Head Screw M2x6mm (Hex socket/10PCS)"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160932" },
+]
+fits = [
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

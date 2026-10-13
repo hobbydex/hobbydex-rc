@@ -1,0 +1,21 @@
+id = "part/hpi/160152"
+brand = "brand/hpi"
+number = "160152"
+name = "Plazma 7.2V 5000mAh NiMH Stick Battery Pack"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160152" },
+]
+fits = [
+  { kit = "kit/hpi/crawler-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 5000
+category = "battery"

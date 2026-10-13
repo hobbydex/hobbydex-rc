@@ -1,0 +1,17 @@
+id = "part/hpi/160157"
+brand = "brand/hpi"
+number = "160157"
+name = "Plazma 7.2V 1600mAh NiMH Mini Stick Battery Pack"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160157" },
+]
+fits = [
+  { kit = "kit/hpi/mini-recon", type = "direct", source = "doc/hpi/part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 1600
+category = "battery"
