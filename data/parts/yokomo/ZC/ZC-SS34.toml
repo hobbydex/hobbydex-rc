@@ -2,7 +2,11 @@ id = "part/yokomo/ZC-SS34"
 brand = "brand/yokomo"
 number = "ZC-SS34"
 name = "Set Screw (M3 × 4mm)"
-name_ja = "セット スクリュー (M3 × 4mm) 10"
 pack_qty = 10
+name_ja = "セット スクリュー (M3 × 4mm) 10"
 category = "screw"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
+equivalent_to = [
+  { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

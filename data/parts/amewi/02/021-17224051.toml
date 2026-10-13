@@ -10,3 +10,7 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Zylinderkopfschrauben-M4x10mm-8-Stueck" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m4x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

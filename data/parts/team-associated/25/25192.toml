@@ -3,3 +3,7 @@ brand = "brand/team-associated"
 number = "25192"
 name = "M3x20mm SHCS"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

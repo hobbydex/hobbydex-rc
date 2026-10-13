@@ -2,7 +2,11 @@ id = "part/yokomo/ZC-F315"
 brand = "brand/yokomo"
 number = "ZC-F315"
 name = "Flat Head Screw (M3 × 15mm)"
-name_ja = "フラットヘッド スクリュー (M3 × 15mm) 10"
 pack_qty = 10
+name_ja = "フラットヘッド スクリュー (M3 × 15mm) 10"
 category = "screw"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
+equivalent_to = [
+  { spec = "spec/screw/m3x15-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

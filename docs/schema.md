@@ -10,7 +10,7 @@ read the tree directly; they read the export (`tools/export.py`).
 |---|---|---|
 | brand | `data/brands/<brand>.toml` | id, name, status |
 | kit | `data/kits/<brand>/<slug>.toml` | id, brand, name, category |
-| release | `data/releases/<brand>/<number-or-slug>.toml` | id, kit, brand, name, year, kind, status |
+| release | `data/releases/<brand>/<number-or-slug>.toml` | id, kit, brand, name, kind, status (`year` optional: left out when unknown) |
 | part | `data/parts/<brand>/<prefix>/<number>.toml` | id, brand, number, name |
 | doc | `data/documents/<brand>/<slug>.toml` | id, kind, title |
 | spec | `data/specs/<category>/<slug>.toml` | id, category |

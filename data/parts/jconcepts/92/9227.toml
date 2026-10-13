@@ -2,6 +2,10 @@ id = "part/jconcepts/9227"
 brand = "brand/jconcepts"
 number = "9227"
 name = "REACTOR FHCS M2.5 x 6"
+pack_qty = 10
 notes = "Name from the jconcepts.net listing"
 category = "screw"
-pack_qty = 10
+equivalent_to = [
+  { spec = "spec/screw/m2.5x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

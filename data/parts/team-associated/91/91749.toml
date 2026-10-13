@@ -4,3 +4,7 @@ number = "91749"
 name = "M2 x 3mm FHCS"
 former_names = ["M2 x 3mm FHCS THR"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2x3-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

@@ -8,3 +8,7 @@ documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/senkschraube-m4_16-din-7991-innenschskant" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m4x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

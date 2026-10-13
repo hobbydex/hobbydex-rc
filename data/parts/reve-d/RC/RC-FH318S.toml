@@ -2,8 +2,8 @@ id = "part/reve-d/RC-FH318S"
 brand = "brand/reve-d"
 number = "RC-FH318S"
 name = "Stainless Steel M3×18mm FH Screw"
-name_ja = "ステンレス製 M3×18mm フラットヘッドスクリュー (8本入)"
 pack_qty = 8
+name_ja = "ステンレス製 M3×18mm フラットヘッドスクリュー (8本入)"
 fits = [
   { kit = "kit/reve-d/rdx", type = "direct", source = "doc/reve-d/rkd-rdx-parts-list" },
 ]
@@ -13,3 +13,6 @@ links = [
 documents = ["doc/reve-d/rkd-rdx-parts-list", "doc/reve-d/teamreved-products"]
 category = "screw"
 material = "stainless"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

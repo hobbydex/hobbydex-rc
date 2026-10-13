@@ -4,3 +4,7 @@ number = "89204"
 name = "3x24mm BHCS"
 former_names = ["M3 x 24mm BHCS"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x24-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

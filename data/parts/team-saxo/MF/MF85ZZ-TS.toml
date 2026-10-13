@@ -14,3 +14,7 @@ includes = [
 ]
 notes = "Spare pack on the F1-180-V5 parts list"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
