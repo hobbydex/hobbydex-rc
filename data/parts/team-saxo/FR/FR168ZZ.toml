@@ -1,15 +1,29 @@
 id = "part/team-saxo/FR168ZZ"
 brand = "brand/team-saxo"
 number = "FR168ZZ"
-name = "FR168ZZ"
-notes = "Piece of pack FR168ZZ-TS on the F1-180-V5 parts list; the list gives no name"
+name = "Bearing 6.35*9.525*3.175"
+pack_qty = 10
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-accessories" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
+  { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { kit = "kit/team-saxo/gt-500", type = "direct", source = "doc/team-saxo/gt-500-v2-accessories" },
+  { kit = "kit/team-saxo/mgt-225", type = "direct", source = "doc/team-saxo/mgt-225-mgt-210-accessories" },
+  { kit = "kit/team-saxo/mgt-210", type = "direct", source = "doc/team-saxo/mgt-225-mgt-210-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500w-235-accessories/bearing-6-35-9-525-3-175-10" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/bearing-6-35-9-525-3-175-10" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/bearing-6-35-9-525-3-175-10" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500-accessories/bearing-6-35-9-525-3-175-10" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mgt-225-mgt-210-accessories/bearing-6-35-9-525-3-175-10" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/servo/bearing/bearing-6-35-9-525-3-175-10" },
+]
 includes = [
   { part = "part/team-saxo/FR168ZZ", qty = 10, source = "doc/team-saxo/f1-180-v3-parts-list" },
   { part = "part/team-saxo/FR168ZZ", qty = 4, source = "doc/team-saxo/mf-1-200-parts-list" },
   { part = "part/team-saxo/FR168ZZ", qty = 10, source = "doc/team-saxo/gt-500w-v2-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v3-parts-list" },
-  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
-  { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
-]
+notes = "Spare pack on the F1-180-V3 parts list"
+category = "bearing"

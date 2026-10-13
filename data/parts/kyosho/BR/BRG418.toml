@@ -1,0 +1,14 @@
+id = "part/kyosho/BRG418"
+brand = "brand/kyosho"
+number = "BRG418"
+name = "Shield Bearing (5x9x3)"
+pack_qty = 2
+fits = [
+  { kit = "kit/kyosho/kc10", type = "direct", source = "doc/kyosho/kc10-spop" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x9x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "metal"
+category = "bearing"

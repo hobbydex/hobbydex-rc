@@ -1,12 +1,21 @@
 id = "part/team-saxo/MR106-OR"
 brand = "brand/team-saxo"
 number = "MR106-OR"
-name = "MR106-OR"
-notes = "Piece of pack R168-2RS on the F1-FUTURE parts list; the list gives no name"
+name = "Bearing"
+fits = [
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-accessories" },
+  { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v4-accessories" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/lm-500w-parts-list" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-future-accessories/bearing" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/gt-300w-v4-accessories/bearing" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/servo/bearing/bearing-4" },
+]
 includes = [
   { part = "part/team-saxo/MR106-OR", qty = 10, source = "doc/team-saxo/gt-300w-v4-parts-list" },
   { part = "part/team-saxo/MR106-OR", qty = 10, source = "doc/team-saxo/gt-300w-v3-parts-list" },
+  { part = "part/team-saxo/MR106-OR", qty = 10, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v4-parts-list" },
-]
+notes = "Spare pack on the GT-300W-V4 parts list"
+category = "bearing"
