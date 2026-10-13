@@ -7,3 +7,7 @@ fits = [
   { kit = "kit/absima/fun-maker", type = "direct", source = "doc/absima/spares-fun-maker" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

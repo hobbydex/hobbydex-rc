@@ -9,3 +9,6 @@ links = [
 documents = ["doc/reve-d/teamreved-products"]
 category = "pinion"
 material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

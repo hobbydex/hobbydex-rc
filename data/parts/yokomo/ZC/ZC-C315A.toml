@@ -2,8 +2,8 @@ id = "part/yokomo/ZC-C315A"
 brand = "brand/yokomo"
 number = "ZC-C315A"
 name = "M3×15mm Cap Screw"
-name_ja = "M3×15mm キャップスクリュー (10本入)"
 pack_qty = 10
+name_ja = "M3×15mm キャップスクリュー (10本入)"
 category = "screw"
 fits = [
   { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
@@ -18,3 +18,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-c315a" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x15-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

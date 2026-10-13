@@ -7,3 +7,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-flanged-bearing-6x3x2.5mm-2/AXIC1222.html" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

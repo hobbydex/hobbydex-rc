@@ -2,6 +2,10 @@ id = "part/jconcepts/9206"
 brand = "brand/jconcepts"
 number = "9206"
 name = "REACTOR BHCS M3 x 18"
-notes = "Name from the jconcepts.net listing"
 pack_qty = 10
+notes = "Name from the jconcepts.net listing"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

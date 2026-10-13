@@ -15,3 +15,7 @@ fits = [
   { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
