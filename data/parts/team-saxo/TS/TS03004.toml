@@ -1,0 +1,16 @@
+id = "part/team-saxo/TS03004"
+brand = "brand/team-saxo"
+number = "TS03004"
+name = "Motor Mount Chassis"
+fits = [
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-accessories" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/lm-500w-parts-list" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-future-accessories/motor-mount-chassis" },
+]
+includes = [
+  { part = "part/team-saxo/TS0303002", qty = 1, source = "doc/team-saxo/lm-500w-parts-list" },
+]
+notes = "Spare pack on the LM-500W parts list"
+category = "chassis"

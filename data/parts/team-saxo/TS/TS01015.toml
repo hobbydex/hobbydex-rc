@@ -2,17 +2,19 @@ id = "part/team-saxo/TS01015"
 brand = "brand/team-saxo"
 number = "TS01015"
 name = "Front Suspension plastic component"
+fits = [
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/front-suspension-plastic-component" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/copy_of_front-suspension-plastic-component" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-future-accessories/front-suspension-plastic-component" },
+]
 includes = [
   { part = "part/team-saxo/TS0103074", qty = 1, source = "doc/team-saxo/f1-200-v2-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
-  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
-  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
-]
 notes = "The MF-1-200 parts list shows plastic component x1"
-links = [
-  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/copy_of_front-suspension-plastic-component" },
-]
 category = "suspension"
 material = "plastic"

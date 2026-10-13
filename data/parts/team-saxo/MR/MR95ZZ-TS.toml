@@ -1,11 +1,20 @@
 id = "part/team-saxo/MR95ZZ-TS"
 brand = "brand/team-saxo"
 number = "MR95ZZ-TS"
-name = "MR95ZZ-TS"
+name = "Flange Bearing 5*9*3"
+pack_qty = 10
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500w-235-accessories/copy2_of_bearing-1" },
+]
 includes = [
   { part = "part/team-saxo/MR95ZZ-1", qty = 10, source = "doc/team-saxo/f1-180-v5-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
-]
 notes = "Spare pack on the F1-180-V5 parts list"
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x9x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
