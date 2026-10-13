@@ -2,7 +2,11 @@ id = "part/yokomo/ZC-F318"
 brand = "brand/yokomo"
 number = "ZC-F318"
 name = "Flat Head Screw (M3 × 18mm)"
-name_ja = "フラットヘッド スクリュー (M3 × 18mm) 8"
 pack_qty = 8
+name_ja = "フラットヘッド スクリュー (M3 × 18mm) 8"
 category = "screw"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

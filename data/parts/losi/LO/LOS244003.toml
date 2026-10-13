@@ -2,5 +2,13 @@ id = "part/losi/LOS244003"
 brand = "brand/losi"
 number = "LOS244003"
 name = "Spindle Carrier Set (L/R)"
-gtin = "605482717974"
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-spindle-carrier-set-l-r-lmt/LOS244003.html" },
+]
+gtin = "605482717974"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+category = "suspension"

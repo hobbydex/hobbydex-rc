@@ -1,6 +1,14 @@
 id = "part/tlr/TLR341016"
 brand = "brand/tlr"
 number = "TLR341016"
-name = "Aluminum Servo Horn, Throttle, 8X"
+name = "Aluminum Servo Horn Throttle 25T"
+applies_to = "8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-aluminum-servo-horn-throttle-25t-8x/TLR341016.html" },
+]
+former_names = ["Aluminum Servo Horn, Throttle, 8X"]
 category = "steering"
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

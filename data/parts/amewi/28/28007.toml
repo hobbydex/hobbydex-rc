@@ -1,0 +1,19 @@
+id = "part/amewi/28007"
+brand = "brand/amewi"
+number = "28007"
+name = "NiMH Akku 7,2V 5000mAh DEANS-Stecker"
+fits = [
+  { kit = "kit/amewi/amxrock-rcx10p", type = "direct", source = "doc/amewi/22463-product-page" },
+  { kit = "kit/amewi/amxrock-rcx10b", type = "direct", source = "doc/amewi/22462-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/NiMH-Akku-72V-5000mAh-DEANS-Stecker" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 5000
+connector = "Deans"
+category = "battery"

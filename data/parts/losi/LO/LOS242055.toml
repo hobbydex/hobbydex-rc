@@ -1,6 +1,15 @@
 id = "part/losi/LOS242055"
 brand = "brand/losi"
 number = "LOS242055"
-name = "Axle Housing Set,Center Section"
+name = "Axle Housing Set, Center Section"
+applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-axle-housing-set-center-section-lmt/LOS242055.html" },
+]
+former_names = ["Axle Housing Set,Center Section"]
 gtin = "605482769126"
 category = "drivetrain"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

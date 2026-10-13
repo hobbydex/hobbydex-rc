@@ -2,6 +2,22 @@ id = "part/axial/AXIC1181"
 brand = "brand/axial"
 number = "AXIC1181"
 name = "Hex Socket Button Head M3x20mm"
-gtin = "877493008116"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-hex-socket-button-head-m3x20mm-10/AXIC1181.html" },
+]
+gtin = "877493008116"
 category = "screw"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/rbx10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

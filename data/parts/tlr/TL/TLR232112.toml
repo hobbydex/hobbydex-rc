@@ -1,9 +1,21 @@
 id = "part/tlr/TLR232112"
 brand = "brand/tlr"
 number = "TLR232112"
-name = "Wheel Hex, 12mm x 4.5mm"
+name = "Wheel Hex 12mm x 4.5mm"
 pack_qty = 2
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-wheel-hex-12mm-x-4.5mm-2/TLR232112.html" },
+]
+former_names = ["Wheel Hex, 12mm x 4.5mm"]
 category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+gtin = "605482671269"
+fits = [
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/22s-sct", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
 ]

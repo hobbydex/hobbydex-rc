@@ -4,3 +4,7 @@ number = "85763"
 name = "Bearing 16x8x5"
 category = "bearing"
 documents = ["doc/redcat/rampage-chimera-sr-manual", "doc/redcat/rampage-xt-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

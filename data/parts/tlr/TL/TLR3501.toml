@@ -1,6 +1,16 @@
 id = "part/tlr/TLR3501"
 brand = "brand/tlr"
 number = "TLR3501"
-name = "Differential Shaft Set, Aluminum 8B, 8T"
+name = "Differential Shaft Set, Aluminum"
+pack_qty = 6
+applies_to = "8B, 8T 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-differential-shaft-set-aluminum-6-8b-8t-2.0/TLR3501.html" },
+]
+former_names = ["Differential Shaft Set, Aluminum 8B, 8T"]
 category = "differential"
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

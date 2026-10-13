@@ -1,0 +1,15 @@
+id = "part/mugen/A2601"
+brand = "brand/mugen"
+number = "A2601"
+name = "BEARING 3x6x2.5"
+pack_qty = 2
+fits = [
+  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
+  { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-part-list" },
+  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

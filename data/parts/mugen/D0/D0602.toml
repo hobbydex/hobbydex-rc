@@ -1,0 +1,17 @@
+id = "part/mugen/D0602"
+brand = "brand/mugen"
+number = "D0602"
+name = "BEARINGS (6x13x5)"
+pack_qty = 2
+fits = [
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
+  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x13x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

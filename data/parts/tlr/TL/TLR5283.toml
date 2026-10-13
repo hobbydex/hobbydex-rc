@@ -1,5 +1,25 @@
 id = "part/tlr/TLR5283"
 brand = "brand/tlr"
 number = "TLR5283"
-name = "Silicone Differential Fluid"
+name = "Silicone Diff Fluid, 15,000CS"
+former_names = ["Silicone Differential Fluid"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-diff-fluid-15000cs/TLR5283.html" },
+]
 category = "oil-grease"
+gtin = "605482076439"
+fits = [
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+equivalent_to = [
+  { spec = "spec/oil/silicone-15000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]

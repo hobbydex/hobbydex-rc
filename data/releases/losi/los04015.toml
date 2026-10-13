@@ -7,3 +7,13 @@ kind = "rtr"
 status = "discontinued"
 gtin = "605482084328"
 documents = ["doc/losi/los04015-manual-en", "doc/losi/los04015-product-page"]
+contains = [
+  { part = "part/losi/LOS236001", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA4003", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6350", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6942", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR255004", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5902", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR6291", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR8202", role = "kit", source = "doc/losi/horizon-part-pages" },
+]

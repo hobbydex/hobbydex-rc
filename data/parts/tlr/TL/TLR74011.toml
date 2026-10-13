@@ -1,10 +1,28 @@
 id = "part/tlr/TLR74011"
 brand = "brand/tlr"
 number = "TLR74011"
-name = "SIL SHOCK OIL,42.5WT,563CST,2OZ"
-former_names = ["Silicone Shock Oil, 42.5wt"]
+name = "Silicone Shock Oil, 42.5WT, 563CST, 2oz"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-shock-oil-42.5wt-563cst-2oz/TLR74011.html" },
+]
+former_names = ["SIL SHOCK OIL,42.5WT,563CST,2OZ", "Silicone Shock Oil, 42.5wt"]
 viscosity_wt = 42.5
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-563cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]
+gtin = "605482093160"
+fits = [
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/ten-scte", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
 ]

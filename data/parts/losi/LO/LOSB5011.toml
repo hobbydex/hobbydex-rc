@@ -1,6 +1,16 @@
 id = "part/losi/LOSB5011"
 brand = "brand/losi"
 number = "LOSB5011"
-name = "Fuel Tank Lid Pull Fluorescent 8 2.0"
+name = "Fuel Tank Lid Pull, Fluorescent Yellow"
+applies_to = "8 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-fuel-tank-lid-pull-fluorescent-yellow-8-2.0/LOSB5011.html" },
+]
+former_names = ["Fuel Tank Lid Pull Fluorescent 8 2.0"]
 gtin = "605482563236"
 category = "engine-fuel"
+material = "plastic"
+fits = [
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]

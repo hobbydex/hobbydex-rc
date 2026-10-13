@@ -1,9 +1,35 @@
 id = "part/tlr/TLR256005"
 brand = "brand/tlr"
 number = "TLR256005"
-name = "Nylock Nut, M4"
+name = "Nylock Nut M4"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-nylock-nut-m4-10/TLR256005.html" },
+]
+former_names = ["Nylock Nut, M4"]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m4-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "605482629345"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/dbxl", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/dbxl-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db-pro", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-mt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-sct", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-tt-pro", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
 ]

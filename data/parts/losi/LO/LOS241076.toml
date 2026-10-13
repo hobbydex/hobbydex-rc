@@ -1,7 +1,16 @@
 id = "part/losi/LOS241076"
 brand = "brand/losi"
 number = "LOS241076"
-name = "Crossbar Brace & Spacer Set, TT, AL,BLK"
+name = "Aluminum Crossbar Brace & Spacer Set, Black"
+applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-crossbar-brace-and-spacer-set-black-tlr-tuned-lmt/LOS241076.html" },
+]
+former_names = ["Crossbar Brace & Spacer Set, TT, AL,BLK"]
 gtin = "605482169971"
-applies_to = "LMT, TTLMT"
 category = "washer-shim"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+material = "aluminium"

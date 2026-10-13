@@ -10,7 +10,7 @@ read the tree directly; they read the export (`tools/export.py`).
 |---|---|---|
 | brand | `data/brands/<brand>.toml` | id, name, status |
 | kit | `data/kits/<brand>/<slug>.toml` | id, brand, name, category |
-| release | `data/releases/<brand>/<number-or-slug>.toml` | id, kit, brand, name, year, kind, status |
+| release | `data/releases/<brand>/<number-or-slug>.toml` | id, kit, brand, name, kind, status (`year` optional: left out when unknown) |
 | part | `data/parts/<brand>/<prefix>/<number>.toml` | id, brand, number, name |
 | doc | `data/documents/<brand>/<slug>.toml` | id, kind, title |
 | spec | `data/specs/<category>/<slug>.toml` | id, category |
@@ -128,6 +128,12 @@ them out of the by-date lists.
 or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
 from another source in that month is kept). It must agree with `year`. Never
 a document's date. For an announced release it is the planned date.
+
+`released_source`: set only when the date comes from a fan site rather than
+the maker; `"TamiyaBase"` for a Tamiya release dated from TamiyaBase (its
+owner allowed it) when Tamiya's own pages give no first-release day, with the
+model's TamiyaBase link in `links` (kind `fan-site`). The maker's own date
+wins when both exist.
 
 ## part
 
@@ -302,7 +308,7 @@ contain `+`).
 digits, as printed by the brand; the validator checks length and check digit.
 Releases can carry a `gtin` too, the barcode on the kit's box.
 
-`links`: pages about this part or release elsewhere, as `{ site, url }`
+`links`: pages about this part, release or kit elsewhere, as `{ site, url }`
 (https only); the site shows them as buttons next to the web search.
 `kind = "fan-site"` marks a link to a fan or community site (such as
 TamiyaBase): it is a courtesy link for readers, not a source for any value in

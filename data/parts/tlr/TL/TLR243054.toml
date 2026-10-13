@@ -1,7 +1,15 @@
 id = "part/tlr/TLR243054"
 brand = "brand/tlr"
 number = "TLR243054"
-name = "16mm Shock Piston STD 5 x 1.6 V2"
+name = "16mm Shock Piston V2, STD 5 x 1.5, 5 x 1.6"
+applies_to = "8X/E 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-16mm-shock-piston-v2-std-5-x-1.5-5-x-1.6-8x-e-2.0/TLR243054.html" },
+]
+former_names = ["16mm Shock Piston STD 5 x 1.6 V2"]
 category = "shock"
 shock_part = "piston"
 bore_mm = 16
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

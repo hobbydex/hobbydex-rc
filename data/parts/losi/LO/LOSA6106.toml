@@ -2,6 +2,15 @@ id = "part/losi/LOSA6106"
 brand = "brand/losi"
 number = "LOSA6106"
 name = "E-Clips, 4mm"
-gtin = "605482139004"
 pack_qty = 12
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-e-clips-4mm-12-8x-8xe/LOSA6106.html" },
+]
+gtin = "605482139004"
 category = "pin-clip"
+fits = [
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

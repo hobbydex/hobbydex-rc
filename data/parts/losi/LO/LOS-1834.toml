@@ -2,8 +2,14 @@ id = "part/losi/LOS-1834"
 brand = "brand/losi"
 number = "LOS-1834"
 name = "Shock Rebuild/Hardware Set"
-gtin = "660132983871"
 pack_qty = 8
 applies_to = "LMT 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-rebuild-hardware-set-8-lmt-2.0/LOS-1834.html" },
+]
+gtin = "660132983871"
 category = "shock"
 shock_part = "rebuild-kit"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

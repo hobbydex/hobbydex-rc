@@ -1,0 +1,22 @@
+id = "part/losi/LOSA6945"
+brand = "brand/losi"
+number = "LOSA6945"
+name = "8x14x4 Rubber Sealed Ball Bearing"
+pack_qty = 4
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-8x14x4-rubber-sealed-ball-bearing-4/LOSA6945.html" },
+]
+gtin = "660132616564"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/8x14x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "rubber"
+category = "bearing"

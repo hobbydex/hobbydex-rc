@@ -1,7 +1,13 @@
 id = "part/losi/LOS-1825"
 brand = "brand/losi"
 number = "LOS-1825"
-name = "4-link Bar Mounting Set"
-gtin = "660132983789"
+name = "4-Link Bar Mounting Set"
 applies_to = "LMT 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-4-link-bar-mounting-set-lmt-2.0/LOS-1825.html" },
+]
+gtin = "660132983789"
 category = "ball-end"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

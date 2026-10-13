@@ -1,8 +1,14 @@
 id = "part/tamiya/42143"
 brand = "brand/tamiya"
 number = "42143"
-name = "4mm Serrated Wheel Nut (Blue)"
+name = "4mm Flange Nut (Blue)"
+former_names = ["4mm Flanged Nut", "4mm Serrated Wheel Nut (Blue)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "nut"
-former_names = ["4mm Serrated Wheel Nut mL tl x4)"]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7292-42143", kind = "fan-site" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -13,3 +13,7 @@ links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-rc-car-bearing-12-7-a8-a4-1-14-parts-71-057-for-g171-g172-g173-g174" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/8x12.7x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

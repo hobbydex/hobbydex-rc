@@ -1,6 +1,16 @@
 id = "part/tlr/TLR241075"
 brand = "brand/tlr"
 number = "TLR241075"
-name = "Chassis Rib Brace,Alum"
-applies_to = "8X,"
+name = "Chassis Rib Brace, Aluminum"
+applies_to = "8X, 8XE 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-chassis-rib-brace-aluminum-8x-8xe-2.0/TLR241075.html" },
+]
+former_names = ["Chassis Rib Brace,Alum"]
 category = "chassis"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "replaces", replaces = "part/tlr/TLR241054", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
+gtin = "605482155097"
+material = "aluminium"

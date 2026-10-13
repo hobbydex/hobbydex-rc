@@ -3,5 +3,17 @@ brand = "brand/losi"
 number = "LOSA9114"
 name = "Clutch Springs, Gold"
 pack_qty = 4
-applies_to = "8B,"
+applies_to = "8B, 8T, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-clutch-springs-gold4-8b-8t-8x/LOSA9114.html" },
+]
 category = "engine-fuel"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "660132013455"

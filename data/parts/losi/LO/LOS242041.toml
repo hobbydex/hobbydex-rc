@@ -1,6 +1,15 @@
 id = "part/losi/LOS242041"
 brand = "brand/losi"
 number = "LOS242041"
-name = "Diff Spool"
+name = "Differential Spool"
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-differential-spool-lmt/LOS242041.html" },
+]
+former_names = ["Diff Spool"]
 category = "differential"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482718407"

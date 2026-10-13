@@ -1,6 +1,15 @@
 id = "part/losi/LOS241037"
 brand = "brand/losi"
 number = "LOS241037"
-name = "# English ServoSaverSet,25T, Complete"
-former_names = ["Servo Saver Set, 25T, Complete"]
+name = "Servo Saver Set, 25T, Complete"
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-servo-saver-set-25t-complete-lmt/LOS241037.html" },
+]
+former_names = ["# English ServoSaverSet,25T, Complete"]
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482718506"
+category = "steering"

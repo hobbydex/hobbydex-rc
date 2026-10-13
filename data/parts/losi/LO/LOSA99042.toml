@@ -1,7 +1,22 @@
 id = "part/losi/LOSA99042"
 brand = "brand/losi"
 number = "LOSA99042"
-name = "Metal Servo Arm Insert, 24 HRC"
-gtin = "605482014097"
+name = "Metal Servo Arm Insert, 24 Spline, Hitec"
 pack_qty = 2
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-metal-servo-arm-insert-24-spline-hitec-2-8x-8xe/LOSA99042.html" },
+]
+former_names = ["Metal Servo Arm Insert, 24 HRC"]
+gtin = "605482014097"
 category = "suspension"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

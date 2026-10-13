@@ -1,0 +1,19 @@
+id = "part/amewi/28937"
+brand = "brand/amewi"
+number = "28937"
+name = "AMXRacing LiPo Akku 2S 7,4V 5000mAh 40C Softcase, XT90"
+fits = [
+  { kit = "kit/amewi/rxb7", type = "direct", source = "doc/amewi/22554-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/AMXRacing-LiPo-Akku-2S-74V-5000mAh-40C-Softcase-XT90" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5000
+c_rating = 40
+connector = "XT90"
+category = "battery"

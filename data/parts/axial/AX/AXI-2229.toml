@@ -1,0 +1,17 @@
+id = "part/axial/AXI-2229"
+brand = "brand/axial"
+number = "AXI-2229"
+name = "32P Ring/Pinion 13/43T"
+applies_to = "AXP8"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-32p-ring-pinion-13-43t-axp8/AXI-2229.html" },
+]
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-product-catalogue" },
+]
+category = "pinion"
+pitch_dp = 32
+includes = [
+  { spec = "spec/pinion/32dp-13t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-43t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]

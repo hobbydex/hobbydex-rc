@@ -3,5 +3,11 @@ brand = "brand/tlr"
 number = "TLR-1250"
 name = "Front Axle, Steel"
 applies_to = "22X-T"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-front-axle-steel-22x-t/TLR-1250.html" },
+]
 category = "drivetrain"
 material = "steel"
+fits = [
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

@@ -1,5 +1,12 @@
 id = "part/tlr/TLR75005"
 brand = "brand/tlr"
 number = "TLR75005"
-name = "Silicone Differential Fluid"
+name = "Silicone Diff Fluid, 12,500CS"
+former_names = ["Silicone Differential Fluid"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-diff-fluid-12500cs/TLR75005.html" },
+]
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-12500cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]

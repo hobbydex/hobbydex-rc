@@ -3,8 +3,15 @@ brand = "brand/losi"
 number = "LOS-3575"
 name = "M3 Aluminum Lock Nuts, Black"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-m3-aluminum-lock-nuts-black-10/LOS-3575.html" },
+]
 category = "nut"
 material = "aluminium"
 equivalent_to = [
   { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "660132681272"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
 ]

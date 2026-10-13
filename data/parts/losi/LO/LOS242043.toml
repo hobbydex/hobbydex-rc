@@ -1,8 +1,16 @@
 id = "part/losi/LOS242043"
 brand = "brand/losi"
 number = "LOS242043"
-name = "13T Cntr Trans Pinion Gear"
-former_names = ["13T Center Transmission Pinion Gear"]
+name = "13T Center Transmission Pinion Gear"
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-13t-center-transmission-pinion-gear-lmt/LOS242043.html" },
+]
+former_names = ["13T Cntr Trans Pinion Gear"]
 category = "pinion"
 teeth = 13
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482718186"

@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMX13003S30M"
+brand = "brand/spektrum"
+number = "SPMX13003S30M"
+name = "11.1V 1300mAh 3S 30C Smart LiPo Battery"
+applies_to = "IC3"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-11.1v-1300mah-3s-30c-smart-lipo-battery-ic3/SPMX13003S30M.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 1300
+c_rating = 30
+category = "battery"

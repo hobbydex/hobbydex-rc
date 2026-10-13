@@ -1,6 +1,16 @@
 id = "part/axial/AXI236172"
 brand = "brand/axial"
 number = "AXI236172"
-name = "Screw Shaft M3x2.0x12mm"
+name = "Screw Shaft M3 x 2.0 x 12mm"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-screw-shaft-m3-x-2.0-x-12mm/AXI236172.html" },
+]
+former_names = ["Screw Shaft M3x2.0x12mm"]
 gtin = "605482494776"
 category = "screw"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/utb18", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+]

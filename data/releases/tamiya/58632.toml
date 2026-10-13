@@ -9,4 +9,22 @@ kind = "kit"
 status = "released"
 category = "race-truck"
 notes = "TT-01 Type-E chassis (in Tamiya's name); status not checked against Tamiya's current listings"
-documents = ["doc/tamiya/58632-product-page", "doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/58632-product-page", "doc/tamiya/newitems-month", "doc/tamiya/spb-51606-manual"]
+contains = [
+  { part = "part/tamiya/11054836", role = "kit", source = "doc/tamiya/spb-51606-manual" },
+  { part = "part/tamiya/11825882", role = "kit", source = "doc/tamiya/spb-51606-manual" },
+  { part = "part/tamiya/11825883", role = "kit", source = "doc/tamiya/spb-51606-manual" },
+  { part = "part/tamiya/16275067", role = "kit", source = "doc/tamiya/spb-51606-manual" },
+  { part = "part/tamiya/19000877", role = "kit", source = "doc/tamiya/spb-51606-manual" },
+  { part = "part/tamiya/19495886", role = "kit", source = "doc/tamiya/spb-51606-manual" },
+  { part = "part/tamiya/19804159", role = "kit", source = "doc/tamiya/spb-51606-manual", qty = 10 },
+  { part = "part/tamiya/19805754", role = "kit", source = "doc/tamiya/spb-51606-manual", qty = 10 },
+  { part = "part/tamiya/19805896", role = "kit", source = "doc/tamiya/spb-51606-manual", qty = 10 },
+  { part = "part/tamiya/19808058", role = "kit", source = "doc/tamiya/spb-51606-manual", qty = 10 },
+  { part = "part/tamiya/50197", role = "kit", source = "doc/tamiya/spb-51606-manual" },
+  { part = "part/tamiya/51537", role = "kit", source = "doc/tamiya/spb-51606-manual" },
+  { part = "part/tamiya/51588", role = "kit", source = "doc/tamiya/spb-51606-manual", qty = 4 },
+]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58632", kind = "fan-site" },
+]

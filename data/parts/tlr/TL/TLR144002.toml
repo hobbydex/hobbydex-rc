@@ -3,4 +3,12 @@ brand = "brand/tlr"
 number = "TLR144002"
 name = "Steering Spindle Set, AL (L/R)"
 applies_to = "LMT, TTLMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-steering-spindle-set-al-l-r-lmt-ttlmt/TLR144002.html" },
+]
 category = "steering"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482169919"

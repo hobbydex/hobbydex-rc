@@ -1,9 +1,19 @@
 id = "part/tlr/TLR74031"
 brand = "brand/tlr"
 number = "TLR74031"
-name = "Silicone Shock Oil, 47.5WT, 660CST, 2oz"
+name = "Silicone Shock Oil 47.5WT, 660CST, 2oz"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-shock-oil-47.5wt-660cst-2oz/TLR74031.html" },
+]
+former_names = ["Silicone Shock Oil, 47.5WT, 660CST, 2oz"]
 equivalent_to = [
   { spec = "spec/oil/silicone-660cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
 ]
 viscosity_wt = 47.5
 category = "oil-grease"
+gtin = "605482716489"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]

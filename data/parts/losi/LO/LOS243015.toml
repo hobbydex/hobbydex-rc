@@ -1,9 +1,17 @@
 id = "part/losi/LOS243015"
 brand = "brand/losi"
 number = "LOS243015"
-name = "Shock Rebuild Hardware Set"
+name = "Shock Rebuild/Hardware Set"
 pack_qty = 4
-former_names = ["Shock Rebuild/HardwareSet"]
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-rebuild-hardware-set-4-lmt/LOS243015.html" },
+]
+former_names = ["Shock Rebuild Hardware Set", "Shock Rebuild/HardwareSet"]
 category = "shock"
 shock_part = "rebuild-kit"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482718476"

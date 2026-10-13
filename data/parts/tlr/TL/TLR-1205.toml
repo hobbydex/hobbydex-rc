@@ -1,10 +1,19 @@
 id = "part/tlr/TLR-1205"
 brand = "brand/tlr"
 number = "TLR-1205"
-name = "Front Springs, Orange, 3.75lb, 13mm"
+name = "Front Springs, Orange, 3.75 lb, 13mm"
 pack_qty = 2
-former_names = ["Front Springs, Orange, 3.75lb"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-front-springs-orange-3.75-lb-13mm-2/TLR-1205.html" },
+]
+former_names = ["Front Springs, Orange, 3.75lb", "Front Springs, Orange, 3.75lb, 13mm"]
 category = "shock-spring"
 rate_lb_in = 3.75
 free_length_mm = 13
 range = "tlr/springs-free-rate-springs"
+gtin = "660132650759"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

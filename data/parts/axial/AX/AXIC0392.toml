@@ -2,6 +2,16 @@ id = "part/axial/AXIC0392"
 brand = "brand/axial"
 number = "AXIC0392"
 name = "E-Clip E2"
-gtin = "877493003586"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-e-clip-e2-10/AXIC0392.html" },
+]
+gtin = "877493003586"
 category = "pin-clip"
+fits = [
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/utb18", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti-jr", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

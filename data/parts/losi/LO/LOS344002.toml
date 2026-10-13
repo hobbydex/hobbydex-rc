@@ -1,5 +1,16 @@
 id = "part/losi/LOS344002"
 brand = "brand/losi"
 number = "LOS344002"
-name = "Spindle Carrier Set, 0Deg, AL(L/R)"
-applies_to = "LMT, TTLMT"
+name = "Aluminum Spindle Carrier Set, 0 Degree (L/R), TLR Tuned"
+applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-spindle-carrier-set-0-degree-l-r-tlr-tuned-tlr-tuned-lmt/LOS344002.html" },
+]
+former_names = ["Spindle Carrier Set, 0Deg, AL(L/R)"]
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482169926"
+material = "aluminium"
+category = "suspension"

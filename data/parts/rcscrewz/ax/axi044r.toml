@@ -16,6 +16,9 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 applies_to = "Axial AXP Gilamon 2.2 Trail (#AXI1207)"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial AXP Gilamon 2.2 Trail (#AXI1207) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/axi044r-rubber-shielded-bearing-kit-for-the-axial-axp-gilamon-2-2-trail-axi1207/" },

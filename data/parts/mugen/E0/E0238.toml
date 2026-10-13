@@ -1,0 +1,19 @@
+id = "part/mugen/E0238"
+brand = "brand/mugen"
+number = "E0238"
+name = "JOINT PIN (Φ2.5x14.8) (FOR E0220/E0221/E0242)"
+name_source = "ocr"
+notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
+fits = [
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
+]
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2.5x14.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
+related = [
+  { part = "part/mugen/E0220", relation = "for", notes = "link_part_refs" },
+  { part = "part/mugen/E0221", relation = "for", notes = "link_part_refs" },
+  { part = "part/mugen/E0242", relation = "for", notes = "link_part_refs" },
+]

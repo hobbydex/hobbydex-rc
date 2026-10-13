@@ -1,11 +1,20 @@
 id = "part/axial/AXI237009"
 brand = "brand/axial"
 number = "AXI237009"
-name = "Ball Bearing 5x13x4mm"
-gtin = "605482494349"
+name = "5mm x 13mm x 4mm Ball Bearing"
 pack_qty = 2
+former_names = ["Ball Bearing 5x13x4mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-5mm-x-13mm-x-4mm-ball-bearing-2/AXI237009.html" },
+]
+gtin = "605482494349"
 equivalent_to = [
   { spec = "spec/bearing/5x13x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

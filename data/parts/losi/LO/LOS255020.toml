@@ -1,10 +1,21 @@
 id = "part/losi/LOS255020"
 brand = "brand/losi"
 number = "LOS255020"
-name = "Flat Head Screw, Steel, Black Oxide, M4 x 18mm"
+name = "Flat Head Screws, Steel, Black Oxide, M4x18mm"
+pack_qty = 10
+former_names = ["Flat Head Screw, Steel, Black Oxide, M4 x 18mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flat-head-screws-steel-black-oxide-m4x18mm-10/LOS255020.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m4x18-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 finish = "black"
 category = "screw"
+gtin = "605482828977"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

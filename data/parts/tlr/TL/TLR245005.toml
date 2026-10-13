@@ -1,5 +1,16 @@
 id = "part/tlr/TLR245005"
 brand = "brand/tlr"
 number = "TLR245005"
-name = "Motor Mount Screws (8)"
+name = "Motor Mount Screws"
+pack_qty = 4
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-motor-mount-screws-4-8x-8xe/TLR245005.html" },
+]
+former_names = ["Motor Mount Screws (8)"]
 category = "screw"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482207147"

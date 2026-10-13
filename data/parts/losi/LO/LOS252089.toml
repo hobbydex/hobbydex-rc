@@ -1,7 +1,11 @@
 id = "part/losi/LOS252089"
 brand = "brand/losi"
 number = "LOS252089"
-name = "Pinion Gear 24T 8mm Shaft 1.5M"
+name = "Pinion Gear, 24T, 1.5M, 8mm, Steel"
+former_names = ["Pinion Gear 24T 8mm Shaft 1.5M"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-pinion-gear-24t-1.5m-8mm-steel/LOS252089.html" },
+]
 gtin = "605482369302"
 category = "pinion"
 equivalent_to = [
@@ -10,3 +14,8 @@ equivalent_to = [
 bore_mm = 8
 teeth = 24
 module = 1.5
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+material = "steel"

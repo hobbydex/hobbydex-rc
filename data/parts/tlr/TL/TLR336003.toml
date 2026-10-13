@@ -3,8 +3,19 @@ brand = "brand/tlr"
 number = "TLR336003"
 name = "M4 Aluminum Serrated Nuts, Low Profile, Black"
 pack_qty = 4
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-m4-aluminum-serrated-nuts-low-profile-black-4/TLR336003.html" },
+]
 category = "nut"
 material = "aluminium"
 equivalent_to = [
   { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "605482617564"
+fits = [
+  { kit = "kit/losi/22s-late-model", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/22s-sprint", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
 ]

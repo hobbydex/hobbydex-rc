@@ -1,11 +1,19 @@
 id = "part/losi/LOS-5175"
 brand = "brand/losi"
 number = "LOS-5175"
-name = "8x14x4 Flanged Rubber Seal Ball Bearing (4)"
+name = "8x14x4 Flanged Rubber Seal Ball Bearing"
+pack_qty = 4
+former_names = ["8x14x4 Flanged Rubber Seal Ball Bearing (4)"]
 applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-8x14x4-flanged-rubber-seal-ball-bearing-4-8x-8xe/LOS-5175.html" },
+]
 equivalent_to = [
   { spec = "spec/bearing/flanged-8x14x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "rubber"
 category = "bearing"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+]

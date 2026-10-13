@@ -1,0 +1,19 @@
+id = "part/axial/AXIC1243"
+brand = "brand/axial"
+number = "AXIC1243"
+name = "Bearing 15x21x4mm"
+pack_qty = 2
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-bearing-15x21x4mm-2/AXIC1243.html" },
+]
+gtin = "877493008819"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/15x21x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

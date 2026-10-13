@@ -6,5 +6,31 @@ name = "22S ST 2WD Brushless RTR with AVC: Red/Yellow"
 kind = "rtr"
 status = "discontinued"
 gtin = "605482367551"
-color = "red/yellow"
 documents = ["doc/losi/los03017-manual-en", "doc/losi/los03017-product-page"]
+color = "red/yellow"
+contains = [
+  { part = "part/losi/LOS234024", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS235003", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS235018", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS235024", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6937", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6955", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR235007", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5900", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5901", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5902", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5904", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5906", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5909", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5910", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5911", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5961", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5962", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR6352", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR8202", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA99174", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR336000", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR74005", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR74007", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR76007", role = "option", source = "doc/losi/horizon-part-pages" },
+]

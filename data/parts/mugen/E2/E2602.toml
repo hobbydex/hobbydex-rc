@@ -1,13 +1,20 @@
 id = "part/mugen/E2602"
 brand = "brand/mugen"
 number = "E2602"
-name = "Ball Bearing 8x16x5mm (x2)"
+name = "8x16x5 NMB BEARINGS"
+gtin = "4944925030789"
 pack_qty = 2
 fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7" },
   { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/rcteam-mbx7t" },
   { kit = "kit/mugen/mgt7", type = "direct", source = "doc/mugen/rcteam-mgt7" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r_eco-option-parts-page" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr_eco-option-parts-page" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-ball-bearing-8x16x5mm-x2-e2602" },

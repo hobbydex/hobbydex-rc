@@ -1,8 +1,15 @@
 id = "part/losi/LOS244005"
 brand = "brand/losi"
 number = "LOS244005"
-name = "Kingpin, Front"
-gtin = "605482717998"
+name = "Kingpin set, Front"
 pack_qty = 4
-former_names = ["Kingpin set, Front"]
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-kingpin-set-front-4-lmt/LOS244005.html" },
+]
+former_names = ["Kingpin, Front"]
+gtin = "605482717998"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

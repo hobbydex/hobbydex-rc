@@ -1,7 +1,15 @@
 id = "part/tlr/TLR241068"
 brand = "brand/tlr"
 number = "TLR241068"
-name = "Gear Box Gasket Set"
+name = "Gear Box Gasket Set (2) 8XT"
 pack_qty = 2
-applies_to = "8XT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-gear-box-gasket-set-2--8xt/TLR241068.html" },
+]
+former_names = ["Gear Box Gasket Set"]
 category = "o-ring-seal"
+gtin = "605482716076"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

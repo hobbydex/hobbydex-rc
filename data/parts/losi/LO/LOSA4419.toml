@@ -1,6 +1,19 @@
 id = "part/losi/LOSA4419"
 brand = "brand/losi"
 number = "LOSA4419"
-name = "Switch Cover and Foam Pad"
+name = "Switch Cover & Foam Pad"
+applies_to = "8B, 8T, 8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-switch-cover-and-foam-pad-8b-8t-8x-8xe/LOSA4419.html" },
+]
+former_names = ["Switch Cover and Foam Pad"]
 gtin = "660132012854"
 category = "body"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMX-1122"
+brand = "brand/spektrum"
+number = "SPMX-1122"
+name = "7.4V 160mAh 2S 30C LiPo Battery"
+applies_to = "SCX30 PH2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-7.4v-160mah-2s-30c-lipo-battery-scx30-ph2.0/SPMX-1122.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-160mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 160
+c_rating = 30
+category = "battery"

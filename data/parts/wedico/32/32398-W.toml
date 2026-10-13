@@ -8,3 +8,8 @@ documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/kugellager-typ-mr-126-zz-12x6x4-mm" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "metal"

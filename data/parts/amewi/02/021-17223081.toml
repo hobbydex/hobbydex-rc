@@ -1,0 +1,18 @@
+id = "part/amewi/021-17223081"
+brand = "brand/amewi"
+number = "021-17223081"
+name = "Kugellager 14x8x4mm"
+fits = [
+  { kit = "kit/amewi/rcx8p-scale-crawler", type = "direct", source = "doc/amewi/22475-product-page" },
+  { kit = "kit/amewi/rcx8b-scale-crawler", type = "direct", source = "doc/amewi/22474-product-page" },
+  { kit = "kit/amewi/amxrock-rcx10p", type = "direct", source = "doc/amewi/22463-product-page" },
+  { kit = "kit/amewi/amxrock-rcx10b", type = "direct", source = "doc/amewi/22462-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/Kugellager-14x8x4mm" },
+]
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/8x14x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

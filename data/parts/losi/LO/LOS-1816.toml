@@ -1,11 +1,21 @@
 id = "part/losi/LOS-1816"
 brand = "brand/losi"
 number = "LOS-1816"
-name = "2.6” Wheel w’Beadlock Ring, Black"
-gtin = "660132983697"
+name = "2.6\" Wheel with Beadlock Ring, Black"
 pack_qty = 2
 applies_to = "LMT 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-2.6-wheel-with-beadlock-ring-black-2-lmt-2.0/LOS-1816.html" },
+]
+former_names = ["2.6” Wheel w’Beadlock Ring, Black"]
+gtin = "660132983697"
 category = "wheel"
 wheel_size = "2.6\""
 beadlock = true
 color = "black"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for LMT 2.0 Grave Digger 4X4 Solid Axle Brushless Monster Truck RTR, green are 17 mm" },
+]

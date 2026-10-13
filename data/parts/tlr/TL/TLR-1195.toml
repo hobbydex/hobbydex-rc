@@ -3,4 +3,13 @@ brand = "brand/tlr"
 number = "TLR-1195"
 name = "Spindle, Wide, 8 Deg Incline, Aluminum"
 applies_to = "22X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-spindle-wide-8-deg-incline-aluminum-22x/TLR-1195.html" },
+]
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "660132650650"
+category = "suspension"

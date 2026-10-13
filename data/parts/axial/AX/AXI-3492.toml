@@ -1,6 +1,15 @@
 id = "part/axial/AXI-3492"
 brand = "brand/axial"
 number = "AXI-3492"
-name = "F/R Link Set"
+name = "Front/Rear Link Set SR5"
+applies_to = "SCX10 III"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-front-rear-link-set-sr5-scx10-iii/AXI-3492.html" },
+]
+former_names = ["F/R Link Set"]
 gtin = "660132677015"
 category = "ball-end"
+fits = [
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
+material = "steel"

@@ -2,5 +2,11 @@ id = "part/tlr/TLR244055"
 brand = "brand/tlr"
 number = "TLR244055"
 name = "Steering Link"
-applies_to = "8X"
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-steering-link-8x-8xe/TLR244055.html" },
+]
 category = "ball-end"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

@@ -2,5 +2,14 @@ id = "part/tlr/TLR244057"
 brand = "brand/tlr"
 number = "TLR244057"
 name = "Spindle, Aluminum"
-applies_to = "8X"
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-spindle-aluminum-8x-8xe/TLR244057.html" },
+]
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482206928"
+category = "suspension"

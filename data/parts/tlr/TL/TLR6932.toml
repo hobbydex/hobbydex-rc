@@ -1,0 +1,24 @@
+id = "part/tlr/TLR6932"
+brand = "brand/tlr"
+number = "TLR6932"
+name = "5x10x4mm HD Bearings"
+pack_qty = 2
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-5x10x4mm-hd-bearings-2/TLR6932.html" },
+]
+gtin = "605482091357"
+fits = [
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/v100", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22sct", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

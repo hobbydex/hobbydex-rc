@@ -1,9 +1,16 @@
 id = "part/tlr/TLR244051"
 brand = "brand/tlr"
 number = "TLR244051"
-name = "Suspension Ball, 6.8mm"
+name = "Suspension Ball 6.8mm Flanged"
 pack_qty = 4
-applies_to = "8X"
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-suspension-ball-6.8mm-flanged-4-8x-8xe/TLR244051.html" },
+]
+former_names = ["Suspension Ball, 6.8mm"]
 category = "ball-end"
 ball_mm = 6.8
 ball_type = "through-hole"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

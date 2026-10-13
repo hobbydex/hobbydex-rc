@@ -2,6 +2,18 @@ id = "part/tlr/TLR232075"
 brand = "brand/tlr"
 number = "TLR232075"
 name = "72T Spur Gear, SHDS, 48P"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-72t-spur-gear-shds-48p/TLR232075.html" },
+]
 category = "spur-gear"
 teeth = 72
 pitch_dp = 48
+material = "plastic"
+gtin = "605482293621"
+fits = [
+  { kit = "kit/losi/22s-late-model", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/22s-sprint", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

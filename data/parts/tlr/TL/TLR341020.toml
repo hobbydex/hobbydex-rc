@@ -1,6 +1,16 @@
 id = "part/tlr/TLR341020"
 brand = "brand/tlr"
 number = "TLR341020"
-name = "Center Diff Top Brace,Carbon"
+name = "Center Differential Top Brace, Carbon"
+applies_to = "8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-center-differential-top-brace-carbon-8x/TLR341020.html" },
+]
+former_names = ["Center Diff Top Brace,Carbon"]
 category = "chassis"
 material = "carbon"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482299654"

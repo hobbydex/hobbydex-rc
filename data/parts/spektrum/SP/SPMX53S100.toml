@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMX53S100"
+brand = "brand/spektrum"
+number = "SPMX53S100"
+name = "11.1V 5000mAh 3S 100C Smart G2 LiPo Battery"
+applies_to = "IC5"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-11.1v-5000mah-3s-100c-smart-g2-lipo-battery-ic5/SPMX53S100.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 100
+category = "battery"

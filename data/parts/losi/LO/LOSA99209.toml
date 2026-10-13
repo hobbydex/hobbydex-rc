@@ -2,9 +2,12 @@ id = "part/losi/LOSA99209"
 brand = "brand/losi"
 number = "LOSA99209"
 name = "HD Ring & Pinion Grease (10ml)"
-gtin = "605482045442"
 applies_to = "5IVE-T, MINI WRC"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-hd-ring-and-pinion-grease-10ml-5ive-t-mini-wrc/LOSA99209.html" },
 ]
+gtin = "605482045442"
 category = "oil-grease"
+fits = [
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

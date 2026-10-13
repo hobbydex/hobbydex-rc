@@ -2,6 +2,14 @@ id = "part/losi/LOS354006"
 brand = "brand/losi"
 number = "LOS354006"
 name = "Aluminum Axle Housing Upper Track Rod Mount"
+applies_to = "Super Baja Rey/Super Rock Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-axle-housing-upper-track-rod-mount-super-baja-rey-super-rock-rey/LOS354006.html" },
+]
 gtin = "605482207963"
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]

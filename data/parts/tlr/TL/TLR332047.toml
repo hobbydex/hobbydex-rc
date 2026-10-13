@@ -1,6 +1,17 @@
 id = "part/tlr/TLR332047"
 brand = "brand/tlr"
 number = "TLR332047"
-name = "Direct Drive Spur Gear, 69T"
+name = "Direct Drive Spur Gear, 69T, 48P"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-direct-drive-spur-gear-69t-48p/TLR332047.html" },
+]
+former_names = ["Direct Drive Spur Gear, 69T"]
 category = "spur-gear"
 teeth = 69
+gtin = "605482617632"
+fits = [
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+pitch_dp = 48

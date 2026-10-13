@@ -3,6 +3,16 @@ brand = "brand/tlr"
 number = "TLR-1076"
 name = "Threaded Spring Collar, 13mm"
 pack_qty = 2
-former_names = ["Threaded Spring Collar, 13mm 22X"]
 applies_to = "22X"
-category = "washer-shim"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-threaded-spring-collar-13mm-2-22x/TLR-1076.html" },
+]
+former_names = ["Threaded Spring Collar, 13mm 22X"]
+category = "shock"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+material = "aluminium"
+gtin = "660132648633"

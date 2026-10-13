@@ -1,7 +1,14 @@
 id = "part/tlr/TLR341012"
 brand = "brand/tlr"
 number = "TLR341012"
-name = "Front Brace, Aluminum"
-applies_to = "8X"
+name = "Front Brace Aluminum"
+applies_to = "8IGHT-X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-front-brace-aluminum-8ight-x/TLR341012.html" },
+]
+former_names = ["Front Brace, Aluminum"]
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

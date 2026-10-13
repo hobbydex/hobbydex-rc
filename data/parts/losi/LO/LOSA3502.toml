@@ -1,6 +1,18 @@
 id = "part/losi/LOSA3502"
 brand = "brand/losi"
 number = "LOSA3502"
-name = "Differential Gear and Shaft"
+name = "Differential Gear & Shaft Set"
+applies_to = "8B, 8T, 8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-differential-gear-and-shaft-set-8b-8t-8x-8xe/LOSA3502.html" },
+]
+former_names = ["Differential Gear and Shaft"]
 gtin = "660132616038"
 category = "differential"
+fits = [
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

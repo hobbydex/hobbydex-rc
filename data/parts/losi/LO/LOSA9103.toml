@@ -1,6 +1,19 @@
 id = "part/losi/LOSA9103"
 brand = "brand/losi"
 number = "LOSA9103"
-name = "Clutch Nut and Hardware, 8B, 8T"
+name = "Clutch Nut & Hardware, 4 Shoe"
+applies_to = "8B, 8T, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-clutch-nut-and-hardware-4-shoe-8b-8t-8x/LOSA9103.html" },
+]
+former_names = ["Clutch Nut and Hardware, 8B, 8T"]
 gtin = "660132013226"
 category = "nut"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

@@ -1,6 +1,15 @@
 id = "part/losi/LOS251059"
 brand = "brand/losi"
 number = "LOS251059"
-name = "Steering Servo Mount & Bellcrank Set"
+name = "Steering Servo Mount and Bellcrank Set"
+applies_to = "Super Baja Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-steering-servo-mount-and-bellcrank-set-super-baja-rey/LOS251059.html" },
+]
+former_names = ["Steering Servo Mount & Bellcrank Set"]
 gtin = "605482828373"
 category = "steering"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

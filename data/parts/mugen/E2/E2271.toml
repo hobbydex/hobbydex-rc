@@ -1,10 +1,14 @@
 id = "part/mugen/E2271"
 brand = "brand/mugen"
 number = "E2271"
-name = "Differential Pinion HT 20T (x2) MBX8R"
+name = "DIFF. GEAR 20T"
 pack_qty = 2
 fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-gear-ht-differential-20-teeth-x2-mbx8r-e2271" },

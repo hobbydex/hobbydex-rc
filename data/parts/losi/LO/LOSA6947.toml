@@ -1,6 +1,34 @@
 id = "part/losi/LOSA6947"
 brand = "brand/losi"
 number = "LOSA6947"
-name = "5 x 11 x 4 Rubber Sealed"
-gtin = "660132616588"
+name = "5x11x4 Rubber Sealed Ball Bearing"
 pack_qty = 4
+former_names = ["5 x 11 x 4 Rubber Sealed"]
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-5x11x4-rubber-sealed-ball-bearing-4-8x-8xe/LOSA6947.html" },
+]
+gtin = "660132616588"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/night-crawler", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rzr-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/ten-scte", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "rubber"
+category = "bearing"
