@@ -1,14 +1,18 @@
 id = "part/team-saxo/TS01253"
 brand = "brand/team-saxo"
 number = "TS01253"
-name = "TS01253"
+name = "Large Straight Gear Set"
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500w-235-accessories/copy29_of_long-servo-saver" },
+]
 includes = [
   { part = "part/team-saxo/TS0104153", qty = 1, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0104154", qty = 1, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0104156", qty = 1, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0104155", qty = 1, source = "doc/team-saxo/f1-180-v5-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
-]
 notes = "Spare pack on the F1-180-V5 parts list"
+category = "gear"

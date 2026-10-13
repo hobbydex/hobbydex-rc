@@ -1,7 +1,7 @@
 id = "part/team-saxo/TS01158"
 brand = "brand/team-saxo"
 number = "TS01158"
-name = "TS01158"
+name = "Steering Mounted Shaft"
 includes = [
   { part = "part/team-saxo/TS0102032", qty = 2, source = "doc/team-saxo/gk-200-part-list-20251025" },
   { part = "part/team-saxo/TS0102032", qty = 2, source = "doc/team-saxo/f1-180-v4-part-list" },
@@ -9,6 +9,12 @@ includes = [
 ]
 fits = [
   { kit = "kit/team-saxo/gk-200", type = "direct", source = "doc/team-saxo/gk-200-part-list-20251025" },
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-accessories" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
 ]
 notes = "Spare pack on the GK-200 parts list"
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_f1-180-v3-accessories/steering-mounted-shaft" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/steering-mounted-shaft" },
+]
+category = "steering"

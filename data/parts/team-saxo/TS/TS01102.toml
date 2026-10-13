@@ -1,13 +1,19 @@
 id = "part/team-saxo/TS01102"
 brand = "brand/team-saxo"
 number = "TS01102"
-name = "TS01102"
+name = "New Differential Shim Ф6.1mm"
 includes = [
   { part = "part/team-saxo/TS0101045", qty = 4, source = "doc/team-saxo/f1-future-parts-list" },
   { part = "part/team-saxo/TS0101045", qty = 1, source = "doc/team-saxo/gt-300w-v3-parts-list" },
+  { part = "part/team-saxo/TS0101045", qty = 1, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 fits = [
   { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
   { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v3-parts-list" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 notes = "Spare pack on the F1-FUTURE parts list"
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/others/general/copy8_of_aluminium-body-height-adjuster-4" },
+]
+category = "washer-shim"
