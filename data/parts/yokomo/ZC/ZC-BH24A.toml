@@ -1,12 +1,23 @@
 id = "part/yokomo/ZC-BH24A"
 brand = "brand/yokomo"
 number = "ZC-BH24A"
-name = "M2x4mm Button Head Screw"
+name = "M2x4mm Button Head Socket Screw"
+name_ja = "M2x4mm ボタンヘッド ソケットスクリュー 10本入"
 pack_qty = 10
-name_ja = "Ｍ２ｘ４mm ボタンヘッド スクリュー（10 本入）"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/gt", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT series" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh24a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m2x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
-category = "screw"

@@ -1,6 +1,19 @@
 id = "part/yokomo/ZS-011H10A"
 brand = "brand/yokomo"
 number = "ZS-011H10A"
-name = "1.0mm ハイトラクションホイル スペーサー ドリフト / ツーリング"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "High Traction Wheel Spacer (1.0mm thick) for Drift / Touring"
+name_ja = "ドリフト/ツーリング用 ハイトラクション ホイルスペーサー(1.0mm厚)"
 category = "washer-shim"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package Type-C, Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zs-011h10a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

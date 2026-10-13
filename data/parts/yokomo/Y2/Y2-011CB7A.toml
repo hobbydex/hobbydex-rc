@@ -1,7 +1,19 @@
 id = "part/yokomo/Y2-011CB7A"
 brand = "brand/yokomo"
 number = "Y2-011CB7A"
-name = "7.0mm Clamp -type Wheel Hub"
-name_ja = "7.0mm クランプ式ホイルハブ"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "7.0mm Clamp-type Wheel Hub for YD-2"
+name_ja = "YD-2用 7.0mm クランプ式ホイルハブ"
 category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014, BD7 2015, BD7 2016" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8 2018" },
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-011cb7a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

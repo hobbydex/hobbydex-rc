@@ -1,11 +1,28 @@
 id = "part/yokomo/RP-042-06BA"
 brand = "brand/yokomo"
 number = "RP-042-06BA"
-name = "M3x 6mm Flat Head Screw Precision Machined Brass"
-name_ja = "M3x 6mm フラットヘッドスクリュー 高精度切削真鍮製"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Precision Machined Brass Flat Head Screw M3×6mm"
+name_ja = "高精度切削 ブラス製 フラットヘッドスクリュー M3×6mm"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/gt1", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT1" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD3.0" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS2.0, MS2.1" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0, RS2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-042-06ba" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m3x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "brass"
-category = "screw"

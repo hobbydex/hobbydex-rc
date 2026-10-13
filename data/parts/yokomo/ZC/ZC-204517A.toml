@@ -1,5 +1,32 @@
 id = "part/yokomo/ZC-204517A"
 brand = "brand/yokomo"
 number = "ZC-204517A"
-name = "アルミ製 クランプ式 17mm サーボホーン (23T スプライン )( フタバ用 )"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Aluminium 17mm Clamp-type Servo Horn (25T)for FUTABA"
+name_ja = "アルミ製 17mm クランプ式 サーボホーン (25T)for FUTABA"
+material = "aluminium"
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0, MS2.0" },
+  { kit = "kit/yokomo/msfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS FWD" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-204517a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

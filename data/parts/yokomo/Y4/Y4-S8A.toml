@@ -1,7 +1,17 @@
 id = "part/yokomo/Y4-S8A"
 brand = "brand/yokomo"
 number = "Y4-S8A"
-name = "S Cap / End for Ball Big Bore"
-name_ja = "S キャップ / エンド用ボール ビッグボア用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Shock Cap / Shock End Ball"
+name_ja = "ショックキャップ/ショックエンド ボール (4個入)"
+pack_qty = 4
 category = "ball-end"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y4-s8a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

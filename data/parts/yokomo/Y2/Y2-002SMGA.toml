@@ -1,7 +1,17 @@
 id = "part/yokomo/Y2-002SMGA"
 brand = "brand/yokomo"
 number = "Y2-002SMGA"
-name = "CG High Traction Main Chassis"
-name_ja = "CG 製 ハイトラクション メイン シャーシ"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Graphite High Traction Main Chassis for YD-2SXIII"
+name_ja = "YD-2SXIII用 グラファイト製 ハイトラクション メインシャーシ"
+material = "carbon"
 category = "chassis"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-002smga" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

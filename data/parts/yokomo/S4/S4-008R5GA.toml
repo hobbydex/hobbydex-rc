@@ -1,7 +1,18 @@
 id = "part/yokomo/S4-008R5GA"
 brand = "brand/yokomo"
 number = "S4-008R5GA"
-name = "L5 / LD Rear Suspension Arm (Graphite) (Outer 3.0 / Inner 3.5 Pin) for YZ-4SF2"
-name_ja = "YZ-4SF2 用 L5/LD リヤ サスアーム ( グラファイト ) ( アウターφ 3.0/ インナーφ 3.5 ピン )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Graphite Molded L5 / LD Rear Suspension Arm (Outer 3.0 / Inner 3.5 Pin) for YZ-4SF2 / YZ-2CAL DTM3/3.1"
+name_ja = "YZ-4SF2/YZ-2CAL DTM3/3.1用 グラファイト成型 L5/LD リヤサスアーム (アウターφ3.0/インナーφ3.5ピン)"
+material = "carbon"
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-008r5ga" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

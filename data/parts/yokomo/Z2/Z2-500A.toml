@@ -1,7 +1,16 @@
 id = "part/yokomo/Z2-500A"
 brand = "brand/yokomo"
 number = "Z2-500A"
-name = "Ball Diff Kit for YZ-2CA / YZ-2DT / YZ-4"
-name_ja = "YZ-2CA/YZ-2DT/YZ-4 用 ボール デフ キット"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Ball Diff Kit for YZ-2"
+name_ja = "YZ-2用 ボール デフ キット"
 category = "differential"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CA, YZ-2 CAL2, YZ-2 CAL3, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-500a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

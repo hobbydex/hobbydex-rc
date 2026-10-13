@@ -1,7 +1,15 @@
 id = "part/yokomo/Z2-002D31A"
 brand = "brand/yokomo"
 number = "Z2-002D31A"
-name = "Hard Main Chassis (Dirt / Long ver.) for YZ-2DTM3.1"
-name_ja = "YZ-2DTM3.1 用 ハード メイン シャーシ ( ダート / ロング ver.)"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Hard Main Chassis (Dirt facing / Long Ver.) for YZ-2DTM3.1"
+name_ja = "YZ-2DTM3.1用 ハードメインシャーシ (ダート向き/ロングVer.)"
 category = "chassis"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-002d31a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

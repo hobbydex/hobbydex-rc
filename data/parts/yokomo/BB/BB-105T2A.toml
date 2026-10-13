@@ -1,0 +1,19 @@
+id = "part/yokomo/BB-105T2A"
+brand = "brand/yokomo"
+number = "BB-105T2A"
+name = "Thin Ball Bearing 5.0x10.0x3.0mm"
+name_ja = "薄型ボール ベアリング φ5.0xφ10.0x3.0mm(2個入)"
+pack_qty = 2
+category = "bearing"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014, BD7 2015, BD7 2016, BD7 ver.RS, BD7 ver.RS2, BD7 ver.RS3" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS2.0, MS2.1" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-105t2a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

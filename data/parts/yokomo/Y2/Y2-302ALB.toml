@@ -2,7 +2,13 @@ id = "part/yokomo/Y2-302ALB"
 brand = "brand/yokomo"
 number = "Y2-302ALB"
 name = "Aluminium Rear Bulkhead (Left) for SD2.0"
-name_ja = "SD2.0 用 アルミ製 リヤバルクヘッド ( 左 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "chassis"
+name_ja = "SD2.0用 アルミ製 リヤバルクヘッド(左)"
 material = "aluminium"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-302alb" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

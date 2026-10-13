@@ -1,0 +1,17 @@
+id = "part/yokomo/B8-009B"
+brand = "brand/yokomo"
+number = "B8-009B"
+name = "Inner Suspension Arm Pin (3x42mm) for BD8"
+name_ja = "BD8用 インナー サスアーム ピン(φ3x42mm 4本入)"
+pack_qty = 4
+category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/b8-009b" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"
+equivalent_to = [
+  { spec = "spec/pin/3x42", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

@@ -1,5 +1,22 @@
 id = "part/yokomo/B8-500DPA"
 brand = "brand/yokomo"
 number = "B8-500DPA"
-name = "ドライブカッププロテクター アルミ用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Drive Cup Protector (for Aluminium Solid Axle) for BD8 2018"
+name_ja = "BD8 2018用 ドライブカッププロテクター (アルミ製ソリッドアクスル用)"
+material = "aluminium"
+category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS2.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/b8-500dpa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

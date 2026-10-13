@@ -1,0 +1,20 @@
+id = "part/yokomo/BB-1280PA"
+brand = "brand/yokomo"
+number = "BB-1280PA"
+name = "Super Precision Bearing 8.0×12.0×3.5mm"
+name_ja = "スーパープレシジョンベアリング Φ8.0×Φ12.0×3.5mm(2個入)"
+pack_qty = 2
+category = "bearing"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0" },
+  { kit = "kit/yokomo/msfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS FWD" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-1280pa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

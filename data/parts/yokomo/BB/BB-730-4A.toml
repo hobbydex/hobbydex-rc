@@ -1,12 +1,24 @@
 id = "part/yokomo/BB-730-4A"
 brand = "brand/yokomo"
 number = "BB-730-4A"
-name = "3 × 7 × 3mm Bearing"
+name = "Ball Bearing 3.0x7.0x3.0mm"
+name_ja = "ボール ベアリング φ3.0xφ7.0x3.0mm(4個入)"
 pack_qty = 4
-name_ja = "φ 3 ×φ 7 × 3mm ベアリング（4 個入）"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
 category = "bearing"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8 2018" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0, MS2.0, MS2.1" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-730-4a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/3x7x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"

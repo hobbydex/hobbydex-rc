@@ -1,0 +1,25 @@
+id = "part/yokomo/BB-106-4A"
+brand = "brand/yokomo"
+number = "BB-106-4A"
+name = "Ball Bearing 6.0x10.0x3.0mm"
+name_ja = "ボール ベアリング φ6.0xφ10.0x3.0mm(4個入)"
+pack_qty = 4
+category = "bearing"
+fits = [
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+  { kit = "kit/yokomo/d-max", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for D-MAX" },
+  { kit = "kit/yokomo/dpm", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPM" },
+  { kit = "kit/yokomo/dpr", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPR" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package Type-C, Drift Package" },
+  { kit = "kit/yokomo/imadoki-alpha", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for IMADOKI Alpha" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-106-4a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

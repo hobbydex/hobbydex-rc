@@ -1,0 +1,17 @@
+id = "part/yokomo/ZC-F322A"
+brand = "brand/yokomo"
+number = "ZC-F322A"
+name = "M3x22mm Countersunk Socket Screw"
+name_ja = "M3x22mm 皿ソケットスクリュー 8本入"
+pack_qty = 8
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f322a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x22-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

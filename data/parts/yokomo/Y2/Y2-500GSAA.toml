@@ -1,7 +1,17 @@
 id = "part/yokomo/Y2-500GSAA"
 brand = "brand/yokomo"
 number = "Y2-500GSAA"
-name = "Composite Bevel Gear for Aluminium D Cup with Gear Diff YD-2"
-name_ja = "アルミ D カップ付ギヤデフ YD-2 用 樹脂ベベルギヤ"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Composite Bevel Gear Diff Unit (Aluminium Drive Cup 、 Protector Spec 、 Assembled) for YD-2"
+name_ja = "YD-2用 樹脂製 ベベル ギヤ デフユニット (アルミ製 ドライブカップ、プロテクター仕様、組立済)"
 category = "differential"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-500gsaa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

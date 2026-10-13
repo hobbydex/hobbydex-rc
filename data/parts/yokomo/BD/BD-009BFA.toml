@@ -1,7 +1,30 @@
 id = "part/yokomo/BD-009BFA"
 brand = "brand/yokomo"
 number = "BD-009BFA"
-name = "Front Inner Suspension Arm Pin"
-name_ja = "フロント インナー サスアーム ピン"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front Inner Suspension Arm Pin (3×42mm) for BD7 / BD5"
+name_ja = "BD7/BD5用 フロント インナーサスアームピン(φ3×42mm)"
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014, BD7 2015, BD7 2016, BD7 ver.RS" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
+  { kit = "kit/yokomo/dib", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DIB, DIB 275, DIB ver.2, DIB ver.2 Premium, DIB ver.RS" },
+  { kit = "kit/yokomo/drb", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DRB" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/gt", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT series" },
+  { kit = "kit/yokomo/gt1", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT1" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/sd-sports", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD Sports" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+  { kit = "kit/yokomo/yrx12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YRX12" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bd-009bfa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/pin/3x42", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

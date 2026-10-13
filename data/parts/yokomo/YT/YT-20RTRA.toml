@@ -1,9 +1,22 @@
 id = "part/yokomo/YT-20RTRA"
 brand = "brand/yokomo"
 number = "YT-20RTRA"
-name = "Works Wrench 2.0mm Hex Driver (Red)"
-name_ja = "ワークス レンチ 2.0mm ヘックス ドライバー ( 赤 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Yokomo Racing Tool 2.0mm Hex Driver"
+name_ja = "ヨコモ レーシングツール 2.0mm ヘックスドライバー"
 category = "tool"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014" },
+  { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0, MS2.0, MS2.1" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/yt-20rtra" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 color = "red"
 range = "yokomo/yt-20-works-wrench-2.0mm-hex-driver-55cb-colours"

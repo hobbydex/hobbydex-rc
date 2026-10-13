@@ -1,6 +1,14 @@
 id = "part/yokomo/Y2-501GS2A"
 brand = "brand/yokomo"
 number = "Y2-501GS2A"
-name = "ギヤデフ用 ドライブカップ YD-2 專用 ソリッドアクスル"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Drive Cup for Gear Diff"
+name_ja = "ギヤデフ用 ドライブカップ"
 category = "differential"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-501gs2a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,8 +1,14 @@
 id = "part/yokomo/Y2-003ADFA"
 brand = "brand/yokomo"
 number = "Y2-003ADFA"
-name = "Upper Deck Adapter F Aluminium"
-name_ja = "アッパーデッキアダプター F アルミ製"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front Upper Deck Adapter for YD-2"
+name_ja = "YD-2用フロント アッパーデッキアダプター"
 category = "chassis"
-material = "aluminium"
+fits = [
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2R, YD-2S" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-003adfa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

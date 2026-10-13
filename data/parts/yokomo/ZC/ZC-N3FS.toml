@@ -1,0 +1,18 @@
+id = "part/yokomo/ZC-N3FS"
+brand = "brand/yokomo"
+number = "ZC-N3FS"
+name = "M3 Steel Flange Nut"
+name_ja = "M3 スチール製 フランジナット(4個入)"
+pack_qty = 4
+material = "steel"
+category = "nut"
+fits = [
+  { kit = "kit/yokomo/super-dog-fighter", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Super Dog Fighter, Super Dog Fighter Works 91" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-n3fs" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

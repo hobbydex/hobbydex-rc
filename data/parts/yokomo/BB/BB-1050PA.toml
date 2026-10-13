@@ -1,11 +1,26 @@
 id = "part/yokomo/BB-1050PA"
 brand = "brand/yokomo"
 number = "BB-1050PA"
-name = "5x 10x4mm Super Precision Bearing"
-name_ja = "φ 5x φ 10x4mm スーパープレシジョンベアリング"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Super Precision 5.0x10.0x4.0mm"
+name_ja = "スーパー プレシジョン φ5.0xφ10.0x4.0mm(2個入)"
+pack_qty = 2
 category = "bearing"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8 2018" },
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0, MS2.0, MS2.1" },
+  { kit = "kit/yokomo/msfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS FWD" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-1050pa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"

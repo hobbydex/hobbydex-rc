@@ -1,7 +1,19 @@
 id = "part/yokomo/B2-503GMA"
 brand = "brand/yokomo"
 number = "B2-503GMA"
-name = "Metal Bevel Gear Set for Gear Diff"
-name_ja = "ギアデフ用 メタル べベルギア セット"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Metal Bevel Gear Set (10Tx4/18Tx2) for Diff for RO / SO / MO / YZ-834B"
+name_ja = "RO/SO/MO/YZ-834B用 デフ用 メタル ベベルギヤ セット(10Tx4個/18Tx2個)"
 category = "differential"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 CAL3, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4, YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/b2-503gma" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

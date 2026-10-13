@@ -1,8 +1,18 @@
 id = "part/yokomo/Y4-201PA"
 brand = "brand/yokomo"
 number = "Y4-201PA"
-name = "Aluminium Bellcrank Post DP-YD4"
-name_ja = "アルミ製 ベルクランク ポスト DP-YD4 用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "steering"
+name = "Aluminium Bellcrank Post for YD-2 / YD-4"
+name_ja = "YD-2/YD-4用 アルミ製 ベルクランク ポスト"
 material = "aluminium"
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z, YD-2TC" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y4-201pa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,0 +1,17 @@
+id = "part/yokomo/ZC-F330A"
+brand = "brand/yokomo"
+number = "ZC-F330A"
+name = "M3x30mm Countersunk Socket Screw"
+name_ja = "M3x30mm 皿ソケットスクリュー 6本入"
+pack_qty = 6
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2TC" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f330a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x30-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

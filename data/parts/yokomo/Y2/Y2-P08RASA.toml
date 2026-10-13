@@ -1,7 +1,18 @@
 id = "part/yokomo/Y2-P08RASA"
 brand = "brand/yokomo"
 number = "Y2-P08RASA"
-name = "Adjustable -type Rear \"H\" Arm Kit YD-2"
-name_ja = "可変式 リヤ \"H\" アーム キット YD-2 用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Aluminium Adjustable -type Rear Short H Arm (Purple Spec / Chamfered) for YD-2"
+name_ja = "YD-2用 アルミ製可変式 リヤ ショートHアーム (パープル仕様/面取加工済)"
+material = "aluminium"
 category = "suspension"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-p08rasa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

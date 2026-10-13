@@ -1,5 +1,16 @@
 id = "part/yokomo/S4-S913"
 brand = "brand/yokomo"
 number = "S4-S913"
-name = "SO/MO2.0 用 13 ショックプラスティックパーツ"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "13 Shock Plastic Parts"
+name_ja = "13ショック プラスティックパーツ"
+category = "shock"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-s913" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+shock_part = "complete"

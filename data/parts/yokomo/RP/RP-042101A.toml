@@ -1,11 +1,26 @@
 id = "part/yokomo/RP-042101A"
 brand = "brand/yokomo"
 number = "RP-042101A"
-name = "M3x10mm Flat Head Screw Precision Machined Titanium"
-name_ja = "M3x10mm フラットヘッドスクリュー 高精度切削チタン製"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Precision Machined Titanium Flat Head Socket Screw M3×10mm"
+name_ja = "高精度切削チタン製 フラットヘッド ソケットスクリュー M3×10mm(10本入)"
+pack_qty = 10
+material = "titanium"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/gt1", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT1" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD3.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS2.0, MS2.1" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-042101a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "titanium"
-category = "screw"

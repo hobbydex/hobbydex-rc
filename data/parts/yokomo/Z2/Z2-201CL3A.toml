@@ -1,8 +1,16 @@
 id = "part/yokomo/Z2-201CL3A"
 brand = "brand/yokomo"
 number = "Z2-201CL3A"
-name = "Center Link (Aluminium) for DTM3 / CAL3"
-name_ja = "DTM3/CAL3 用 センターリンク（アルミ製）"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "ball-end"
+name = "Aluminium Center Link for YZ-2 DTM3 / CAL3"
+name_ja = "YZ-2 DTM3/CAL3用 アルミ製 センターリンク"
 material = "aluminium"
+category = "ball-end"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-201cl3a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

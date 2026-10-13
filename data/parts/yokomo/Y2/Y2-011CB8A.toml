@@ -1,7 +1,20 @@
 id = "part/yokomo/Y2-011CB8A"
 brand = "brand/yokomo"
 number = "Y2-011CB8A"
-name = "8.0mm Clamp -type Wheel Hub (Black)"
-name_ja = "8.0mm クランプ式ホイルハブ ( 黒 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "8.0mm Clamp-type Wheel Hub"
+name_ja = "8.0mm クランプ式ホイルハブ"
 category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z, YD-2TC" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-011cb8a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

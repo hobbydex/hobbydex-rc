@@ -1,12 +1,29 @@
 id = "part/yokomo/BB-850CB"
 brand = "brand/yokomo"
 number = "BB-850CB"
-name = "Ceramic Ball Bearing 5x 8x2.5mm"
+name = "Ceramic Bearing 5.0x8.0x2.5mm"
+name_ja = "セラミック ベアリング φ5.0xφ8.0x2.5mm(2個入)"
 pack_qty = 2
-name_ja = "セラミック ボール ベアリング Φ 5x Φ 8x2.5mm 2"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+material = "ceramic"
 category = "bearing"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014, BD7 2015, BD7 2016" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z, YD-2TC" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-850cb" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "ceramic"

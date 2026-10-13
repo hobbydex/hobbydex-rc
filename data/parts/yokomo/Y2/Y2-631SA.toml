@@ -1,6 +1,19 @@
 id = "part/yokomo/Y2-631SA"
 brand = "brand/yokomo"
 number = "Y2-631SA"
-name = "スティール製トップ シャフト /48P 20T YD-2 用"
-notes = "Name as printed in Yokomo's Japanese parts list"
-category = "drivetrain"
+name = "Steel Top Shaft (DP48/20T Gear with) for YD-2 Series"
+name_ja = "YD-2シリーズ用 スチール製 トップシャフト(DP48/20Tギヤ付)"
+material = "steel"
+category = "gear"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-631sa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

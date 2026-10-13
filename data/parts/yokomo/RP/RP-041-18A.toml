@@ -1,11 +1,18 @@
 id = "part/yokomo/RP-041-18A"
 brand = "brand/yokomo"
 number = "RP-041-18A"
-name = "M3x18mm Button Head Screw Precision Machined Titanium"
-name_ja = "M3x18mm ボタンヘッドスクリュー 高精度切削チタン製"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Precision Machined Titanium Button Head Socket Screw M3x18mm 4pcs."
+name_ja = "高精度切削 チタン製 ボタンヘッド ソケットスクリュー M3x18mm 4pcs."
+material = "titanium"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-041-18a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "titanium"
-category = "screw"

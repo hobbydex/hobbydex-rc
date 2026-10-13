@@ -1,5 +1,16 @@
 id = "part/yokomo/Z2-201BB3A"
 brand = "brand/yokomo"
 number = "Z2-201BB3A"
-name = "DTM3/CAL3 用 ベルクランク ベース（アルミ製）"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Aluminium Bellcrank Base for YZ-2 DTM3 / CAL3"
+name_ja = "YZ-2 DTM3/CAL3用 アルミ製 ベルクランクベース"
+material = "aluminium"
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-201bb3a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,6 +1,19 @@
 id = "part/yokomo/Z2-206-8A"
 brand = "brand/yokomo"
 number = "Z2-206-8A"
-name = "YZ-2/YZ- ４用 HD φ 5.5mm ロッドエンド ボール ( ネジ部 8mm/4 個入 )"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "HD 5.5mm Rod End Ball (Screw Section 8mm /) for YZ-2 / YZ-4"
+name_ja = "YZ-2/YZ-4用 HD φ5.5mm ロッドエンドボール(ネジ部8mm/4個入)"
+pack_qty = 4
 category = "screw"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 CAL3, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-206-8a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,6 +1,17 @@
 id = "part/yokomo/S4-500GM"
 brand = "brand/yokomo"
 number = "S4-500GM"
-name = "SF2 用 ギヤデフ メンテナンス キット ( φ 15mm シム入 )"
-notes = "Name as printed in Yokomo's Japanese parts list"
-category = "washer-shim"
+name = "Gear Diff Maintenance Kit for YZ-4SF2"
+name_ja = "YZ-4SF2用 ギヤデフ メンテナンス キット"
+category = "differential"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-500gm" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

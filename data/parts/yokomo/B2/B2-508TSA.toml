@@ -1,7 +1,23 @@
 id = "part/yokomo/B2-508TSA"
 brand = "brand/yokomo"
 number = "B2-508TSA"
-name = "T Nut / Diff Spring for MR / RS Diff"
-name_ja = "MR/RS デフ用 Ｔナット / デフ スプリング"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "T Nut / Diff Spring for Diff for YZ-2 / YZ-4 / B-MAX2"
+name_ja = "YZ-2/YZ-4/B-MAX2用 デフ用 Tナット/デフ スプリング"
 category = "nut"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z, YD-2TC" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4, YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/b2-508tsa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

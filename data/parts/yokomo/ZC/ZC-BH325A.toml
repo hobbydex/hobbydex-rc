@@ -1,0 +1,18 @@
+id = "part/yokomo/ZC-BH325A"
+brand = "brand/yokomo"
+number = "ZC-BH325A"
+name = "M3x25mm Button Head Socket Screw"
+name_ja = "M3x25mm ボタンヘッド ソケットスクリュー 8本入"
+pack_qty = 8
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh325a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x25-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

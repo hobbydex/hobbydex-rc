@@ -1,9 +1,18 @@
 id = "part/yokomo/RD-301S"
 brand = "brand/yokomo"
 number = "RD-301S"
-name = "2.0mm Suspension Mount Spacer Composite for RD2.0"
-name_ja = "RD2.0 用 2.0mm サスマウントスペーサー 樹脂製 4"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "washer-shim"
-pack_qty = 4
+name = "Composite Suspension Mount Spacer"
+name_ja = "樹脂製サスマウント スペーサー"
 material = "plastic"
+category = "washer-shim"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rd-301s" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

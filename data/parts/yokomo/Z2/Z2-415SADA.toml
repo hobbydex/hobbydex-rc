@@ -1,8 +1,16 @@
 id = "part/yokomo/Z2-415SADA"
 brand = "brand/yokomo"
 number = "Z2-415SADA"
-name = "Steering Block Plate (Graphite for YZ-2DT"
-name_ja = "YZ-2DT 用 ステアリング ブロック プレート ( グラファイト製"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "ステアリングアーム プレ-ト"
+name_ja = "ステアリングアーム プレ-ト"
 category = "steering"
-material = "carbon"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-415sada" },
+]
+notes = "Name as Yokomo prints it in Japanese; no glossary translation yet"

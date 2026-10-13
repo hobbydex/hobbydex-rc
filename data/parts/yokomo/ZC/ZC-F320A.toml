@@ -1,0 +1,17 @@
+id = "part/yokomo/ZC-F320A"
+brand = "brand/yokomo"
+number = "ZC-F320A"
+name = "M3x20mm Countersunk Socket Screw"
+name_ja = "M3x20mm 皿ソケットスクリュー 8本入"
+pack_qty = 8
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f320a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

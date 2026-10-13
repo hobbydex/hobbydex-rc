@@ -1,8 +1,27 @@
 id = "part/yokomo/BD-500GA"
 brand = "brand/yokomo"
 number = "BD-500GA"
-name = "Aluminium Gear Diff Shaft (1 Set 2 pcs) for BD / B-MAX"
-name_ja = "BD/B-MAX 用 アルミ製 ギヤデフ シャフト ( １セット ２本入 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "differential"
+name = "Aluminium Gear Diff Shaft (1 Set) for BD / B-MAX"
+name_ja = "BD/B-MAX用 アルミ製 ギヤデフ シャフト(1セット 2本入)"
+pack_qty = 2
 material = "aluminium"
+category = "differential"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+  { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX4 3G, B-MAX4 3GF" },
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014, BD7 2015, BD7 2016, BD7 ver.RS, BD7 ver.RS2, BD7 ver.RS3" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4, YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bd-500ga" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

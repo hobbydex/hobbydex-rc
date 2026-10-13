@@ -1,6 +1,17 @@
 id = "part/yokomo/Y2-415CPRA"
 brand = "brand/yokomo"
 number = "Y2-415CPRA"
-name = "リヤ ハブキャリア YD-2 シリーズキャリパー用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Rear Hub Carrier for YD-2 Series Caliper Mounting"
+name_ja = "YD-2シリーズ キャリパー取付用 リヤ ハブキャリア"
 category = "suspension"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-415cpra" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

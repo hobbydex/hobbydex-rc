@@ -1,0 +1,22 @@
+id = "part/yokomo/ZC-N4FRA"
+brand = "brand/yokomo"
+number = "ZC-N4FRA"
+name = "M4 Aluminium Serrated with Flange Nut Red"
+name_ja = "M4 アルミ製 セレート付 フランジナット 4個入 レッド"
+pack_qty = 4
+material = "aluminium"
+category = "nut"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-n4fbka?variant=45652826620013" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+range = "yokomo/zc-n4-m4-aluminium-serrated-with-flange-nut-258e-colours"

@@ -1,7 +1,18 @@
 id = "part/yokomo/S4-010TPCA"
 brand = "brand/yokomo"
 number = "S4-010TPCA"
-name = "Joint Pin for \"C-clip\" Universal"
-name_ja = "\"C-clip\" ユニバーサル用 ジョイントピン"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Joint Pin for C-clip Universal for YZ-4S"
+name_ja = "YZ-4S用 C-clip ユニバーサル用 ジョイントピン"
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 CAL3, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-010tpca" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

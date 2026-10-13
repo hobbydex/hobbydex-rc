@@ -1,7 +1,15 @@
 id = "part/yokomo/Z2-001B3A"
 brand = "brand/yokomo"
 number = "Z2-001B3A"
-name = "Front & Rear Bumper for YZ-2"
-name_ja = "YZ-2 用 フロント＆リヤ バンパー"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front / Rear Bumper for YZ-2DTM3 / CAL3"
+name_ja = "YZ-2DTM3/CAL3用 フロント/リヤバンパー"
 category = "bumper-guard"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-001b3a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

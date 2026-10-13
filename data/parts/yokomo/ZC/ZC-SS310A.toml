@@ -1,0 +1,23 @@
+id = "part/yokomo/ZC-SS310A"
+brand = "brand/yokomo"
+number = "ZC-SS310A"
+name = "M3x10mm Set Screw"
+name_ja = "M3x10mm セットスクリュー(10本入)"
+pack_qty = 10
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS2.0, MS2.1" },
+  { kit = "kit/yokomo/yr-10f", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YR-10F" },
+  { kit = "kit/yokomo/yrf-001", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YRF-001" },
+  { kit = "kit/yokomo/yrx12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YRX12" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-ss310a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

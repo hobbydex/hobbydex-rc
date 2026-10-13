@@ -1,8 +1,15 @@
 id = "part/yokomo/Y2-010FAA"
 brand = "brand/yokomo"
 number = "Y2-010FAA"
-name = "Aluminium Front Axle"
-name_ja = "アルミ製 フロント アクスル"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "drivetrain"
+name = "Aluminium Front Axle for YD-2 Series"
+name_ja = "YD-2シリーズ用 アルミ製 フロントアクスル"
 material = "aluminium"
+category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-010faa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

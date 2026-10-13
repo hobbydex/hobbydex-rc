@@ -1,7 +1,16 @@
 id = "part/yokomo/Z2-304MP"
 brand = "brand/yokomo"
 number = "Z2-304MP"
-name = "RO1.0 Motor Plate"
-name_ja = "RO1.0 モータープレート"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Aluminium Motor Plate for RO1.0"
+name_ja = "RO1.0用 アルミ製 モータープレート"
+material = "aluminium"
 category = "chassis"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-304mp" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

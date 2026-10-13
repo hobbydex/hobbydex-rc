@@ -1,0 +1,25 @@
+id = "part/yokomo/ZC-F36-A"
+brand = "brand/yokomo"
+number = "ZC-F36-A"
+name = "M3x6mm Countersunk Socket Screw"
+name_ja = "M3x6mm 皿ソケットスクリュー 10本入"
+pack_qty = 10
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0, MD3.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0, MS2.0, MS2.1" },
+  { kit = "kit/yokomo/msfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS FWD" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+  { kit = "kit/yokomo/yr-10f", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YR-10F" },
+  { kit = "kit/yokomo/yrf-001", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YRF-001" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f36-a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

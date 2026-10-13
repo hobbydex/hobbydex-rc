@@ -1,0 +1,17 @@
+id = "part/yokomo/MO-203P-3"
+brand = "brand/yokomo"
+number = "MO-203P-3"
+name = "CG Servo Mount Plate (for MO-203A-3) for MO3.0"
+name_ja = "MO3.0用 CG製 サーボマウントプレート(MO-203A-3用)"
+material = "carbon"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/mo-203p-3" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+related = [
+  { part = "part/yokomo/MO-203A-3", relation = "for", notes = "link_part_refs" },
+]

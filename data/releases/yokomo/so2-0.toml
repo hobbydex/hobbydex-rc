@@ -1,12 +1,16 @@
 id = "release/yokomo/so2-0"
 kit = "kit/yokomo/so"
 brand = "brand/yokomo"
-name = "Super Off-road SO2.0"
-year = 2023
+number = "SOR-020"
+name = "SO2.0"
+name_ja = "スーパーオフロード SO2.0 ボディ付き 組み立てキット"
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/yokomo/so2.0-instruction-manual"]
-notes = "Year is when the manual was published; the kit may be older"
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/sor-020" },
+]
+notes = "Status from the store's lifecycle tag; the Japanese product title is in name_ja"
 contains = [
   { part = "part/yokomo/B2-009BFA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-300FL", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
@@ -68,6 +72,7 @@ contains = [
   { part = "part/yokomo/S4-S2MTA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S2SA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S2STA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S3OS", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S3XA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S4AJ13", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S4CA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },

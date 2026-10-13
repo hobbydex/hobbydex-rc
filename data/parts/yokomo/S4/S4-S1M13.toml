@@ -1,8 +1,16 @@
 id = "part/yokomo/S4-S1M13"
 brand = "brand/yokomo"
 number = "S4-S1M13"
-name = "X30 13 Shock Set (Rear / Short for SO / MO2.0"
-name_ja = "SO/MO2.0 用 X30 13 ショックセット ( リヤ／ショート"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "“X30”13 Shock Set (Rear / Short)"
+name_ja = "“X30”13ショックセット(リヤ/ショート)"
 category = "shock"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-s1m13" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 shock_part = "complete"

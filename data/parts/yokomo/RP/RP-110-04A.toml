@@ -1,11 +1,18 @@
 id = "part/yokomo/RP-110-04A"
 brand = "brand/yokomo"
 number = "RP-110-04A"
-name = "Precision Machined Titanium Button Head Screw (M4 x 4mm 4 pcs)"
-name_ja = "高精度切削チタン製 ボタンヘッド スクリュー （M4 x 4mm 4 本入）"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "M2x 4mm Button Head Screw"
+name_ja = "M2x 4mmボタンヘッドスクリュー"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0, MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-110-04a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m4x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/screw/m2x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "titanium"
-category = "screw"

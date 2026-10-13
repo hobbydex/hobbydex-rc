@@ -1,7 +1,13 @@
 id = "part/yokomo/RP-UTGA"
 brand = "brand/yokomo"
 number = "RP-UTGA"
-name = "RP Ultra Thrust / Joint Grease"
-name_ja = "RP ウルトラ スラスト / ジョイント グリス"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Racing Performer Ultra Thrust / Joint Grease"
+name_ja = "レーシングパフォーマー Ultra スラスト/ジョイントグリス"
 category = "oil-grease"
+fits = [
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-utga" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"

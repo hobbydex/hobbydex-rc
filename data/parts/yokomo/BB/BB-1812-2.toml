@@ -1,0 +1,17 @@
+id = "part/yokomo/BB-1812-2"
+brand = "brand/yokomo"
+number = "BB-1812-2"
+name = "12×18×4mm Bearing"
+name_ja = "Φ12×Φ18×4mm ベアリング (2個入)"
+pack_qty = 2
+category = "bearing"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-1812-2" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

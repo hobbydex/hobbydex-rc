@@ -1,0 +1,17 @@
+id = "part/yokomo/ZC-C25MA"
+brand = "brand/yokomo"
+number = "ZC-C25MA"
+name = "M2x5mm Cap Screw (3.2 Head 8pcs.)"
+name_ja = "M2x5mm キャップスクリュー (φ3.2 Head 8pcs.)"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-c25ma" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m2x5-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

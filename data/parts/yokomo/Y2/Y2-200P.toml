@@ -1,8 +1,14 @@
 id = "part/yokomo/Y2-200P"
 brand = "brand/yokomo"
 number = "Y2-200P"
-name = "Graphite Bellcrank Arm Plate for SD2.0"
-name_ja = "SD2.0 用 グラファイト製 ベルクランク アームプレート"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "steering"
+name = "Graphite Bellcrank Arm Plate (3.0mm)"
+name_ja = "グラファイト製 ベルクランク アームプレート(3.0mm)"
 material = "carbon"
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-200p" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,0 +1,18 @@
+id = "part/yokomo/RP-049"
+brand = "brand/yokomo"
+number = "RP-049"
+name = "Precision Machined Titanium 3mm Screw Set for YR-10F"
+name_ja = "YR-10F用 高精度切削 チタン製 3mm スクリューセット (67本入)"
+pack_qty = 67
+material = "titanium"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/yr-10f", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YR-10F" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-049" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"
+related = [
+  { part = "part/yokomo/YR-10F", relation = "for", notes = "link_part_refs" },
+]

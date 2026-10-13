@@ -1,0 +1,17 @@
+id = "part/yokomo/BB-105FP"
+brand = "brand/yokomo"
+number = "BB-105FP"
+name = "5×10×4mm Super Precision Flange Bearing"
+name_ja = "Φ5×Φ10×4mm スーパープレシジョン フランジベアリング(2個入)"
+pack_qty = 2
+category = "bearing"
+fits = [
+  { kit = "kit/yokomo/super-dog-fighter", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Super Dog Fighter" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-105fp" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

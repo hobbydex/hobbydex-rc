@@ -1,11 +1,18 @@
 id = "part/yokomo/BB-1140-2"
 brand = "brand/yokomo"
 number = "BB-1140-2"
-name = "Bearing (4 x11 x4mm)"
-name_ja = "ベアリング (4 φ x11 φ x4mm)"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "4×11×4mm Bearing"
+name_ja = "Φ4×Φ11×4mm ベアリング (2個入)"
+pack_qty = 2
 category = "bearing"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-1140-2" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/4x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"

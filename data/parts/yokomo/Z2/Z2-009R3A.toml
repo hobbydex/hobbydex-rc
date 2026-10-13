@@ -1,7 +1,16 @@
 id = "part/yokomo/Z2-009R3A"
 brand = "brand/yokomo"
 number = "Z2-009R3A"
-name = "Rear Outer Suspension Arm Pin (3 Outer Pin) for DTM3 / CAL3"
-name_ja = "DTM3/CAL3 用 リヤ アウター サス アーム ピン ( φ 3 アウターピン )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "3 Rear Outer Suspension Arm Pin for YZ-2DTM3 / CAL3"
+name_ja = "YZ-2DTM3/CAL3用 Φ3 リヤ アウター サスアームピン"
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-009r3a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

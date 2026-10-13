@@ -1,0 +1,27 @@
+id = "part/yokomo/ZC-SS315A"
+brand = "brand/yokomo"
+number = "ZC-SS315A"
+name = "M3x15mm Set Screw"
+name_ja = "M3x15mm セットスクリュー(10本入)"
+pack_qty = 10
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/gt", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT series" },
+  { kit = "kit/yokomo/gt1", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT1" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/msfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS FWD" },
+  { kit = "kit/yokomo/r12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for R12" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-ss315a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x15-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

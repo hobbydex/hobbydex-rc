@@ -1,8 +1,18 @@
 id = "part/yokomo/RP-089RA"
 brand = "brand/yokomo"
 number = "RP-089RA"
-name = "RP Ultra Rear Spring (Red)(for Dirt)"
-name_ja = "RP ウルトラ リヤ スプリング ( レッド )( ダート用 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Racing Performer Ultra Rear Spring (for Dirt Course) Red"
+name_ja = "レーシングパフォーマー Ultra リヤ スプリング(ダートコース用) レッド"
+category = "suspension"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 CAL3, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-089ga?variant=45652823015533" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 color = "red"
 range = "yokomo/rp-089-rp-ultra-rear-spring-for-dirt-a0af-colours"

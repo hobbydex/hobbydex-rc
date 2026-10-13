@@ -1,0 +1,20 @@
+id = "part/yokomo/ZC-BH318A"
+brand = "brand/yokomo"
+number = "ZC-BH318A"
+name = "M3x18mm Button Head Socket Screw"
+name_ja = "M3x18mm ボタンヘッド ソケットスクリュー 8本入"
+pack_qty = 8
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0, RS2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh318a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

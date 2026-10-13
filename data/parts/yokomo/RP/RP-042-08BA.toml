@@ -1,11 +1,22 @@
 id = "part/yokomo/RP-042-08BA"
 brand = "brand/yokomo"
 number = "RP-042-08BA"
-name = "M3x 8mm Flat Head Screw Precision Machined Brass"
-name_ja = "M3x 8mm フラットヘッドスクリュー 高精度切削真鍮製"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Precision Machined Brass Flat Head Screw M3×8mm"
+name_ja = "高精度切削 ブラス製 フラットヘッドスクリュー M3×8mm"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
+  { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0, MS2.0, MS2.1" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-042-08ba" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "brass"
-category = "screw"

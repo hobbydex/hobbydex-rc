@@ -1,8 +1,21 @@
 id = "part/yokomo/B7-S114A"
 brand = "brand/yokomo"
 number = "B7-S114A"
-name = "SLF Shock Piston 1.1x4 Holes"
-name_ja = "SLF ショックピストンφ 1.1x4 個穴"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Piston (1.1x4 Holes) for SLF Short Shock 2 for BD7 2016"
+name_ja = "BD7 2016用 SLFショートショック2用 ピストン(φ1.1x4個穴)"
 category = "shock"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2016" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z, YD-2TC" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/b7-s114a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 shock_part = "piston"

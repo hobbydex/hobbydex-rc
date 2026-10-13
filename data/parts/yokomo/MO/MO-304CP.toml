@@ -1,0 +1,17 @@
+id = "part/yokomo/MO-304CP"
+brand = "brand/yokomo"
+number = "MO-304CP"
+name = "Graphite Center Mount Plate (for MO-302CM) for MO2.0"
+name_ja = "MO2.0用 グラファイト製 センターマウントプレート(MO-302CM用)"
+material = "carbon"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/mo-304cp" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+related = [
+  { part = "part/yokomo/MO-302CM", relation = "for", notes = "link_part_refs" },
+]

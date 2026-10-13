@@ -1,7 +1,14 @@
 id = "part/yokomo/Y2-415SA3A"
 brand = "brand/yokomo"
 number = "Y2-415SA3A"
-name = "ST Block Weight Set YD-2 Adjustable King Pin ST"
-name_ja = "ST ブロック ウェイト セット YD-2 可変キングピン ST 用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "YD-2 Adjustable King Pin Steering Block Weight Set"
+name_ja = "YD-2 可変キングピン ステアリング ブロック ウェイト セット"
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-415sa3a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

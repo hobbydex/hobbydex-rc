@@ -1,7 +1,14 @@
 id = "part/yokomo/Y4-010TPA"
 brand = "brand/yokomo"
 number = "Y4-010TPA"
-name = "Joint / 2 Pin / Screw"
-name_ja = "ジョイント / φ 2 ピン / スクリュー"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "screw"
+name = "YD-2/YD-4 ユニバーサル用 ジョイント/φ2ピン/スクリュ-"
+name_ja = "YD-2/YD-4 ユニバーサル用 ジョイント/φ2ピン/スクリュ-"
+category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0, MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y4-010tpa" },
+]
+notes = "Name as Yokomo prints it in Japanese; no glossary translation yet"

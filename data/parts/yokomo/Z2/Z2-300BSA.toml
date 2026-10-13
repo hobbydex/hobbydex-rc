@@ -1,7 +1,16 @@
 id = "part/yokomo/Z2-300BSA"
 brand = "brand/yokomo"
 number = "Z2-300BSA"
-name = "Suspension Mount Bushing (for 3.5 Inner Pin) for DTM3 / CAL3"
-name_ja = "DTM3/CAL3 用 サス マウント ブッシュ ( φ 3.5 インナーピン用 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Suspension Mount Bushing for YZ-2DTM3 / CAL3 3.5 Pin"
+name_ja = "YZ-2DTM3/CAL3 Φ3.5ピン用 サスマウントブッシュ"
 category = "suspension"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-300bsa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

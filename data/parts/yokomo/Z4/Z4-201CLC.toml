@@ -1,7 +1,17 @@
 id = "part/yokomo/Z4-201CLC"
 brand = "brand/yokomo"
 number = "Z4-201CLC"
-name = "Center Link Collar for YZ-4"
-name_ja = "YZ-4 用 センター リンク カラー"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Center Link Collar"
+name_ja = "センター リンク カラー"
 category = "washer-shim"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z4-201clc" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

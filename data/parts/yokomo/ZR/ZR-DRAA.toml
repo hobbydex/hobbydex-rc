@@ -1,6 +1,19 @@
 id = "part/yokomo/ZR-DRAA"
 brand = "brand/yokomo"
 number = "ZR-DRAA"
-name = "DRA ドリフトコンペティションタイヤ アスファルト路面用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "DRA Drift Competition Tire (for PC / Asphalt Surface)"
+name_ja = "DRA ドリフトコンペティションタイヤ (PC/アスファルト路面用)"
 category = "tire"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package Type-C" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zr-draa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+vehicle = "drift"

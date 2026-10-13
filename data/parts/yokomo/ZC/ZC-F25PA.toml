@@ -1,0 +1,18 @@
+id = "part/yokomo/ZC-F25PA"
+brand = "brand/yokomo"
+number = "ZC-F25PA"
+name = "M2x5mm Countersunk Screw"
+name_ja = "M2x5mm 皿ビス 12本入"
+pack_qty = 12
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f25pa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m2x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

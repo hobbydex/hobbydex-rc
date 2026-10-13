@@ -1,0 +1,19 @@
+id = "part/yokomo/ZC-BH330A"
+brand = "brand/yokomo"
+number = "ZC-BH330A"
+name = "M3x30mm Button Head Socket Screw"
+name_ja = "M3x30mm ボタンヘッド ソケットスクリュー 6本入"
+pack_qty = 6
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2" },
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh330a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x30-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

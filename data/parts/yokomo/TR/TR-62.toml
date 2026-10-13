@@ -1,8 +1,17 @@
 id = "part/yokomo/TR-62"
 brand = "brand/yokomo"
 number = "TR-62"
-name = "RO1.0 Rear Tire"
-name_ja = "RO1.0 リヤタイヤ"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Rear Tire for RO1.0"
+name_ja = "RO1.0用 リヤタイヤ(2個入)"
+pack_qty = 2
 category = "tire"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/tr-62" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 position = "rear"

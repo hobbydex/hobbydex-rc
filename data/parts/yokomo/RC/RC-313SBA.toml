@@ -1,6 +1,29 @@
 id = "part/yokomo/RC-313SBA"
 brand = "brand/yokomo"
 number = "RC-313SBA"
-name = "フードピン スモールサイズ 黒 10"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "S Size Body Mount Hood Pin (Black /)"
+name_ja = "Sサイズ ボディマウント フードピン (ブラック/10個入)"
+pack_qty = 10
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/dib", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DIB, DIB 275, DIB ver.2, DIB ver.2 Premium, DIB ver.RS" },
+  { kit = "kit/yokomo/dpm", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPM" },
+  { kit = "kit/yokomo/dpr", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPR" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package Type-C, Drift Package" },
+  { kit = "kit/yokomo/imadoki-alpha", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for IMADOKI Alpha" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rc-313sba" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+color = "black"
+range = "yokomo/rc-313-colours"

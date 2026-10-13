@@ -1,5 +1,16 @@
 id = "part/yokomo/DPP-302V4B"
 brand = "brand/yokomo"
 number = "DPP-302V4B"
-name = "EP アジャスト付 ST ジャイロ黒 ドリフトパフォーマー 2/3ch 用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "ドリフトパフォーマンス エンドポイントアジャスト付 ステアリングジャイロ (2/3ch用)"
+name_ja = "ドリフトパフォーマンス エンドポイントアジャスト付 ステアリングジャイロ (2/3ch用)"
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/dpp-302v4b" },
+]
+notes = "Name as Yokomo prints it in Japanese; no glossary translation yet"

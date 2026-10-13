@@ -1,7 +1,17 @@
 id = "part/yokomo/Y2-204523A"
 brand = "brand/yokomo"
 number = "Y2-204523A"
-name = "FUTABA for 23mm Clamp Servo Horn Slide Rack"
-name_ja = "23mm クランプサーボホーン スライドラック用 FUTABA"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "23mm Servo Horn (for 25T Yokomo / Futaba) for Aluminium Clamp-type Slide Rack"
+name_ja = "アルミ製クランプ式 スライドラック用 23mmサーボホーン(25T ヨコモ/フタバ用)"
+material = "aluminium"
 category = "steering"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-204523a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,0 +1,20 @@
+id = "part/yokomo/YB-L300C"
+brand = "brand/yokomo"
+number = "YB-L300C"
+name = "YOKOMO Lipo 30C 7.4V 3000mAh Battery Straight"
+name_ja = "YOKOMO Lipo 30C 7.4V 3000mAh バッテリー ストレート"
+category = "battery"
+fits = [
+  { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX4 3G, B-MAX4 3GF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/yb-l300c" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 3000
+c_rating = 30

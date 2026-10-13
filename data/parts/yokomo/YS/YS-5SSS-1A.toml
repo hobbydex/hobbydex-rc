@@ -1,8 +1,26 @@
 id = "part/yokomo/YS-5SSS-1A"
 brand = "brand/yokomo"
 number = "YS-5SSS-1A"
-name = "SSS Size Shock Shaft MR-4TC"
-name_ja = "SSS サイズ ショックシャフト MR-4TC 用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "SSS Size (29.2mm) Shock Shaft"
+name_ja = "SSS サイズ(29.2mm) ショックシャフト"
 category = "shock"
+fits = [
+  { kit = "kit/yokomo/d-max", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for D-MAX" },
+  { kit = "kit/yokomo/dib", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DIB, DIB 275, DIB ver.2, DIB ver.2 Premium, DIB ver.RS" },
+  { kit = "kit/yokomo/dpm", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPM" },
+  { kit = "kit/yokomo/dpr", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPR" },
+  { kit = "kit/yokomo/drb", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DRB" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package Type-C, Drift Package" },
+  { kit = "kit/yokomo/imadoki-alpha", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for IMADOKI Alpha" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/sd-sports", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD Sports" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/ys-5sss-1a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 shock_part = "shaft"
+length_mm = 29.2

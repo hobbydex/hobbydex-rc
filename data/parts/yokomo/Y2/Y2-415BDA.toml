@@ -1,5 +1,19 @@
 id = "part/yokomo/Y2-415BDA"
 brand = "brand/yokomo"
 number = "Y2-415BDA"
-name = "キャリパー用ブレーキディスク"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Brake Disc (3 types × each 2) for YD-2 Series"
+name_ja = "YD-2シリーズ用 ブレーキディスク(3種×各2)"
+category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-415bda" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

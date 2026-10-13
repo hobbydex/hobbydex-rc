@@ -1,0 +1,26 @@
+id = "part/yokomo/ZC-N3APBB"
+brand = "brand/yokomo"
+number = "ZC-N3APBB"
+name = "Aluminium 3mm Plain Nut (Blue)"
+name_ja = "アルミ製 3mm プレーンナット(青)4個入"
+pack_qty = 4
+material = "aluminium"
+category = "nut"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/gt", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT series" },
+  { kit = "kit/yokomo/gt1", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT1" },
+  { kit = "kit/yokomo/r12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for R12" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S" },
+  { kit = "kit/yokomo/yr-10f", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YR-10F" },
+  { kit = "kit/yokomo/yrf-001", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YRF-001" },
+  { kit = "kit/yokomo/yrx12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YRX12" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-n3apbb" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

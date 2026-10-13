@@ -1,6 +1,16 @@
 id = "part/yokomo/Z2-002RWTA"
 brand = "brand/yokomo"
 number = "Z2-002RWTA"
-name = "YZ-2T/DTM3/CAL3 用 シャーシ バランス ウェイト スチール製"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Chassis Balance Weight for YZ-2T"
+name_ja = "YZ-2T用  シャーシ バランス ウェイト"
 category = "chassis"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-002rwta" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

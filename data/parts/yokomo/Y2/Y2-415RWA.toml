@@ -1,6 +1,14 @@
 id = "part/yokomo/Y2-415RWA"
 brand = "brand/yokomo"
 number = "Y2-415RWA"
-name = "HT リヤハブキャリア ウエイト YD-2 シリーズ用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "High Traction Rear Hub Carrier Weight"
+name_ja = "ハイトラクション リヤハブキャリア ウエイト"
 category = "suspension"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-415rwa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,6 +1,14 @@
 id = "part/yokomo/Z2-010AFA"
 brand = "brand/yokomo"
 number = "Z2-010AFA"
-name = "SO2.0 用 アルミ製 アジャスタブルフロントアクスル (4.5 ㎜ハブ /0.5 スペーサー /2 個入 )"
-notes = "Name as printed in Yokomo's Japanese parts list"
-category = "washer-shim"
+name = "Aluminium S2 Adjust Front Axle (4.5mm)"
+name_ja = "アルミ製 S2アジャスト フロントアクスル(4.5mm)"
+material = "aluminium"
+category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-010afa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

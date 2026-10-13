@@ -1,6 +1,14 @@
 id = "part/yokomo/Y2-302S-A"
 brand = "brand/yokomo"
 number = "Y2-302S-A"
-name = "トランスミッション ケース・4 ギヤ YD-2S 用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Transmission Case for YD-2S Series"
+name_ja = "YD-2Sシリーズ用 トランスミッション ケース"
 category = "gear"
+fits = [
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-302s-a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

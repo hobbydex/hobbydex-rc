@@ -1,8 +1,14 @@
 id = "part/yokomo/Y2-002S2R"
 brand = "brand/yokomo"
 number = "Y2-002S2R"
-name = "Graphite Rear Chassis (2.4mm) for SD2.0"
-name_ja = "SD2.0 用 グラファイト製 リヤシャーシ (2.4mm)"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "chassis"
+name = "Graphite Rear Chassis (2.4mm)"
+name_ja = "グラファイト製 リヤシャーシ(2.4mm)"
 material = "carbon"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-002s2r" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

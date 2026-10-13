@@ -1,7 +1,17 @@
 id = "part/yokomo/S4-008R5BA"
 brand = "brand/yokomo"
 number = "S4-008R5BA"
-name = "L5 / LD Rear Suspension Arm (Type B) (Outer 3.0 / Inner 3.5 Pin) for YZ-4SF2"
-name_ja = "YZ-4SF2 用 L5/LD リヤ サスアーム ( タイプ B) ( アウターφ 3.0/ インナーφ 3.5 ピン )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "pin-clip"
+name = "L5 / LD Rear Suspension Arm (Type B)"
+name_ja = "L5/LD リア サスアーム(タイプB)"
+category = "suspension"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-008r5ba" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

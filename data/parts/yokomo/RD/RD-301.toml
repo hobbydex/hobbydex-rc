@@ -2,7 +2,16 @@ id = "part/yokomo/RD-301"
 brand = "brand/yokomo"
 number = "RD-301"
 name = "Suspension Mount / Servo Horn for RD2.0"
-name_ja = "RD2.0 用 サスマウント / サーボホーン 1"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name_ja = "RD2.0用サスマウント/サーボホーン"
 category = "steering"
-pack_qty = 1
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rd-301" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

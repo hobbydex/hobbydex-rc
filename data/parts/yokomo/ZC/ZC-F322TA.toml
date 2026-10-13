@@ -1,0 +1,19 @@
+id = "part/yokomo/ZC-F322TA"
+brand = "brand/yokomo"
+number = "ZC-F322TA"
+name = "M3x22mm Titanium Countersunk Socket Screw"
+name_ja = "M3x22mm チタン製 皿ソケットスクリュー 4本入"
+pack_qty = 4
+material = "titanium"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f322ta" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x22-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

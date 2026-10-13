@@ -1,0 +1,18 @@
+id = "part/yokomo/ZC-N3P3A"
+brand = "brand/yokomo"
+number = "ZC-N3P3A"
+name = "M3 Steel Plain Nut (1.8mm thick)"
+name_ja = "M3 スチール製 プレーンナット(1.8mm厚) 10個入"
+pack_qty = 10
+material = "steel"
+category = "nut"
+fits = [
+  { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX4 3G, B-MAX4 3GF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-n3p3a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -1,10 +1,19 @@
 id = "part/yokomo/B2-010FHA"
 brand = "brand/yokomo"
 number = "B2-010FHA"
-name = "H12 Front Axle (for H12mm Hex Hub) for B-MAX2"
-name_ja = "B-MAX2 用 H12 フロント アクスル (H12mm ６角ハブ用 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front Axle for Hex H12 Hub"
+name_ja = "6角H12ハブ用フロントアクスル"
 category = "suspension"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CAL2, YZ-2 DTM" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/b2-010fha" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]

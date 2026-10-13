@@ -1,9 +1,20 @@
 id = "part/yokomo/ZC-N3PA"
 brand = "brand/yokomo"
 number = "ZC-N3PA"
-name = "M3x2.4mm プレーンナット 10"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "M3 Plain Nut (2.4mm thick)"
+name_ja = "M3 プレーンナット(2.4mm厚) 10個入"
+pack_qty = 10
 category = "nut"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-n3pa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
-  { spec = "spec/nut/m3-hex-regular", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
