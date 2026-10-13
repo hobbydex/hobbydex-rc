@@ -1,10 +1,16 @@
 id = "part/mugen/E0561"
 brand = "brand/mugen"
 number = "E0561"
-name = "Rear spring F1.6 11.25T"
+name = "REAR DAMPER SPRING"
+pack_qty = 2
 fits = [
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-rear-spring-f1-6-11-25t-e0561" },
 ]
+category = "shock-spring"

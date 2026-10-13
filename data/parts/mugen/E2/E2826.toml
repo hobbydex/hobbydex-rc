@@ -1,10 +1,13 @@
 id = "part/mugen/E2826"
 brand = "brand/mugen"
 number = "E2826"
-name = "Brake Linkage Spring (x2) MBX8R"
+name = "BRAKE SPRINGS"
+gtin = "4944925042713"
 pack_qty = 2
 fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-spring-brake-linkage-x2-mbx8r-e2826" },
