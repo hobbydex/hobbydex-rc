@@ -1,5 +1,15 @@
 id = "part/yokomo/Y2-415CPA"
 brand = "brand/yokomo"
 number = "Y2-415CPA"
-name = "ブレーキディスクキャリパーセット"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Front & Rear Brake Disc / Caliper Spec Set for YD-2 Series"
+name_ja = "YD-2シリーズ用フロント&リヤ ブレーキディスク/キャリパー仕様セット"
+category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-415cpa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"

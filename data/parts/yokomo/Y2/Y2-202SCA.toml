@@ -1,5 +1,17 @@
 id = "part/yokomo/Y2-202SCA"
 brand = "brand/yokomo"
 number = "Y2-202SCA"
-name = "ラウンドリィラック ストッパーカム"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Roundly Rack Stopper Cam for YD-2E Series"
+name_ja = "YD-2Eシリーズ用ラウンドリィ ラック ストッパーカム(3個入)"
+pack_qty = 3
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-202sca" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

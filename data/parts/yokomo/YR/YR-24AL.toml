@@ -1,0 +1,17 @@
+id = "part/yokomo/YR-24AL"
+brand = "brand/yokomo"
+number = "YR-24AL"
+name = "Aluminium Rear Axle for YR-10F"
+name_ja = "YR-10F用 アルミ製 リヤアクスル"
+material = "aluminium"
+category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/yr-10f", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YR-10F" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/yr-24al" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+related = [
+  { part = "part/yokomo/YR-10F", relation = "for", notes = "link_part_refs" },
+]

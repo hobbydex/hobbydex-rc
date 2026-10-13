@@ -1,11 +1,21 @@
 id = "part/yokomo/BB-135-2A"
 brand = "brand/yokomo"
 number = "BB-135-2A"
-name = "5×13 × 4mm Bearing BM-415R05 / R10"
+name = "Ball Bearing 5.0x13.0x4.0mm(for BM-415R05 / R10)"
 pack_qty = 2
-name_ja = "φ５×φ１３ × 4mm ベアリング ( ２個入 ) BM-415R05/R10 用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name_ja = "ボール ベアリング φ5.0xφ13.0x4.0mm(BM-415R05/R10用2個入)"
 category = "bearing"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 CAL3, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-135-2a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/5x13x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

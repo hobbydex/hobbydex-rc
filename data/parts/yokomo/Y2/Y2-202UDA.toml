@@ -1,7 +1,17 @@
 id = "part/yokomo/Y2-202UDA"
 brand = "brand/yokomo"
 number = "Y2-202UDA"
-name = "Roundly Rack U. Deck CG"
-name_ja = "ラウンドリィラック U. デッキ CG 製"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Graphite Upper Deck for YD-2E Series Roundly Rack"
+name_ja = "YD-2Eシリーズ ラウンドリィ ラック用 グラファイト製 アッパーデッキ"
+material = "carbon"
 category = "steering"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-202uda" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

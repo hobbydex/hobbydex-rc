@@ -1,5 +1,18 @@
 id = "part/yokomo/ZC-T16MA"
 brand = "brand/yokomo"
 number = "ZC-T16MA"
-name = "オフロード用 インナースポンジ（ミディアム）"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Inner Sponge Medium 16mm"
+name_ja = "インナースポンジ ミディアム 16mm"
+category = "tire"
+fits = [
+  { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX4 3G" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4, YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-t16ma" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

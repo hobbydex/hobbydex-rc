@@ -1,0 +1,21 @@
+id = "part/yokomo/BM-4820A"
+brand = "brand/yokomo"
+number = "BM-4820A"
+name = "20T Hard Steel Pinion Gear 48 Pitch"
+name_ja = "20T ハード スチール ピニオンギヤ48ピッチ"
+material = "steel"
+category = "pinion"
+fits = [
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bm-4820a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+teeth = 20
+pitch_dp = 48
+equivalent_to = [
+  { spec = "spec/pinion/48dp-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

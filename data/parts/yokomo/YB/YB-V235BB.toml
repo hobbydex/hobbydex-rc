@@ -1,0 +1,21 @@
+id = "part/yokomo/YB-V235BB"
+brand = "brand/yokomo"
+number = "YB-V235BB"
+name = "Yokomo Li-po 3500mAh / 7.4V Short Size Battery"
+name_ja = "ヨコモLi-po 3500mAh/7.4V ショートサイズバッテリー"
+category = "battery"
+fits = [
+  { kit = "kit/yokomo/gt1", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT1" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/yb-v235bb" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 3500

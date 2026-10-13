@@ -1,8 +1,18 @@
 id = "part/yokomo/D-156-27AA"
 brand = "brand/yokomo"
 number = "D-156-27AA"
-name = "Aluminium Hard Coated for 27mmF.L. Rod End Adp YD-2"
-name_ja = "27mmF.L. ロッドエンド Adp YD-2 用 アルミ製ハードコート"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "ball-end"
+name = "Aluminium 27mm Rod End Adapter for Front Lower A Arm"
+name_ja = "フロントロアAアーム用 アルミ製 27mm ロッドエンドアダプター"
 material = "aluminium"
+category = "ball-end"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/d-156-27aa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,5 +1,16 @@
 id = "part/yokomo/ZC-YZ-2A"
 brand = "brand/yokomo"
 number = "ZC-YZ-2A"
-name = "YZ-2 デカルシート"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "YZ-2 Decal Sheet"
+name_ja = "YZ-2 デカル シート"
+category = "decal"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-yz-2a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"

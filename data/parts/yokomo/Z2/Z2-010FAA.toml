@@ -1,6 +1,16 @@
 id = "part/yokomo/Z2-010FAA"
 brand = "brand/yokomo"
 number = "Z2-010FAA"
-name = "YZ-2 シリーズ用 アルミ製 フロントアクスル（ハードアルマイト）"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Aluminium Front Axle for YZ-2"
+name_ja = "YZ-2用 アルミ製 フロント アクスル"
+material = "aluminium"
 category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 CAL3, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-010faa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

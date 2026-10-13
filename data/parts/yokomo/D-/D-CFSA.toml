@@ -1,5 +1,14 @@
 id = "part/yokomo/D-CFSA"
 brand = "brand/yokomo"
 number = "D-CFSA"
-name = "30mm アルミフレーム ファン シルバー"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Aluminium Frame 30mm Cooling Fan Silver"
+name_ja = "アルミフレーム 30mmクーリングファン シルバー"
+material = "aluminium"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/d-cfra?variant=45652818624621" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

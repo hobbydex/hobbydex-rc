@@ -1,7 +1,16 @@
 id = "part/yokomo/Z2-011R8TA"
 brand = "brand/yokomo"
 number = "Z2-011R8TA"
-name = "8mm Rear Wheel Hub for B-YZ2T"
-name_ja = "B-YZ2T 用 8mm リヤ ホイル ハブ"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "8mm Rear Wheel Hub for YZ-2T"
+name_ja = "YZ-2T用  8mm リヤ ホイル ハブ"
 category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 CAL3, YZ-2 DTM2, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-011r8ta" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

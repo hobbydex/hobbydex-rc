@@ -1,7 +1,15 @@
 id = "part/yokomo/Z2-300UA"
 brand = "brand/yokomo"
 number = "Z2-300UA"
-name = "Front Upper Arm Mount (Wide / Narrow) for YZ-2 Series"
-name_ja = "YZ-2 シリーズ用 フロント アッパー アーム マウント ( ワイド / ナロー )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Upper Arm Mount (W&N)"
+name_ja = "アッパー アーム マウント(W&N)"
 category = "suspension"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-300ua" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

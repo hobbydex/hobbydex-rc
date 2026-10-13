@@ -1,7 +1,20 @@
 id = "part/yokomo/SD-TB75NA"
 brand = "brand/yokomo"
 number = "SD-TB75NA"
-name = "75mm Turnbuckle"
-name_ja = "75mm ターンバックル"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "75mm Turnbuckle (Nickel / Across Flats 4mm Hard Steel)"
+name_ja = "75mm ターンバックル(ニッケル/対辺4mm ハードスチール製)"
+material = "steel"
 category = "ball-end"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/sd-tb75na" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

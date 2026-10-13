@@ -1,6 +1,15 @@
 id = "part/yokomo/Z2-002S31A"
 brand = "brand/yokomo"
 number = "Z2-002S31A"
-name = "YZ-2 DTM3.1/CAL3.1 用 サイド プレート (w/BH マウント ) アルミ製シャーシ専用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Side Plate (F Bulk Support One-piece) for YZ-2DTM3.1 / CAL3.1"
+name_ja = "YZ-2DTM3.1/CAL3.1用サイドプレート (Fバルクサポート一体型)"
 category = "chassis"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-002s31a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

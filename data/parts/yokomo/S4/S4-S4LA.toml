@@ -1,8 +1,22 @@
 id = "part/yokomo/S4-S4LA"
 brand = "brand/yokomo"
 number = "S4-S4LA"
-name = "Rear X30 Shock Body (for S4-S3X / S4-S4C) for YZ-4SF2"
-name_ja = "YZ-4SF2 用 リヤ X30 ショックボディ (S4-S3X/S4-S4C 用 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Rear “X30” Shock Body (for S4-S3X / S4-S4C)"
+name_ja = "リヤ “X30”ショックボディ(S4-S3X/S4-S4C用)"
 category = "shock"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-s4la" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 shock_part = "body"
+related = [
+  { part = "part/yokomo/S4-S3X", relation = "for", notes = "link_part_refs" },
+  { part = "part/yokomo/S4-S4C", relation = "for", notes = "link_part_refs" },
+]

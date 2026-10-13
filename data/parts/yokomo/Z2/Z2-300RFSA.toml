@@ -1,8 +1,18 @@
 id = "part/yokomo/Z2-300RFSA"
 brand = "brand/yokomo"
 number = "Z2-300RFSA"
-name = "Steel Rear Suspension Mount (Front Side) for YZ2T / YZ-2"
-name_ja = "YZ2T/YZ-2 用 スティール製 リヤ サスマウント ( 前側 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "suspension"
+name = "Steel Rear Suspension Mount (Front Side) for YZ-2T / YZ-2"
+name_ja = "YZ-2T/YZ-2用 スチール製 リヤサスマウント(前側)"
 material = "steel"
+category = "suspension"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 DT, YZ-2 DTM, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-300rfsa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"

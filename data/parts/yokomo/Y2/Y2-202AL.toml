@@ -1,9 +1,16 @@
 id = "part/yokomo/Y2-202AL"
 brand = "brand/yokomo"
 number = "Y2-202AL"
-name = "Aluminium Steering Bellcrank (Chamfered Left)"
-name_ja = "アルミ製 ステアリング ベルクランク（面取加工済・左） 1"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "steering"
-pack_qty = 1
+name = "Aluminium Steering Bellcrank (Left) for YD-2"
+name_ja = "YD-2用 アルミ製 ステアリング ベルクランク(左)"
 material = "aluminium"
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z, YD-2TC" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-202al" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"

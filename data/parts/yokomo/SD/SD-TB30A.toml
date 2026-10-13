@@ -1,8 +1,16 @@
 id = "part/yokomo/SD-TB30A"
 brand = "brand/yokomo"
 number = "SD-TB30A"
-name = "30mm Turnbuckle Across Flats 7mm Hard Steel"
-name_ja = "30mm ターンバックル 対辺 7mm ハードスティール製"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "30mm Turnbuckle (Across Flats 4mm)"
+name_ja = "30mm ターンバックル(対辺4mm)"
 category = "ball-end"
-material = "steel"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/sd-tb30a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

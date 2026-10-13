@@ -1,6 +1,18 @@
 id = "part/yokomo/S4-412BA"
 brand = "brand/yokomo"
 number = "S4-412BA"
-name = "YZ-4SF 用 スタビ ボール ( φ 2.0mm 穴 )( ハード アルマイト"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Anti-roll Bar Ball for YZ-4S"
+name_ja = "YZ-4S用 スタビ ボール"
 category = "ball-end"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-412ba" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+ball_type = "set-screw"

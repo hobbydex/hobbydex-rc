@@ -1,11 +1,18 @@
 id = "part/yokomo/ZC-F23"
 brand = "brand/yokomo"
 number = "ZC-F23"
-name = "M2x3mm Flat Head HEX Socket Screw (4 pcs"
-name_ja = "M2x3mm フラットヘッド HEX ソケット スクリュー (4 本入"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "M2×3mm FH Socket Screw"
+name_ja = "M2×3mm FHソケットスクリュー(4本入)"
+pack_qty = 4
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f23" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m2x3-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
-category = "screw"

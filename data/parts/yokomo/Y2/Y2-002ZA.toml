@@ -1,7 +1,16 @@
 id = "part/yokomo/Y2-002ZA"
 brand = "brand/yokomo"
 number = "Y2-002ZA"
-name = "Main Chassis"
-name_ja = "メイン シャーシ"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Composite Main Chassis for YD-2Z"
+name_ja = "YD-2Z用 樹脂製メインシャーシ"
+material = "plastic"
 category = "chassis"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2R, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-002za" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

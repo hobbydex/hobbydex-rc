@@ -2,7 +2,13 @@ id = "part/yokomo/RD-118"
 brand = "brand/yokomo"
 number = "RD-118"
 name = "Battery Holder for RD2.0"
-name_ja = "RD2.0 用バッテリーホルダー 1"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-pack_qty = 1
+name_ja = "RD2.0用 バッテリーホルダー"
 category = "chassis"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rd-118" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

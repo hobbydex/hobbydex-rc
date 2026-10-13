@@ -1,8 +1,18 @@
 id = "part/yokomo/S4-S2SA"
 brand = "brand/yokomo"
 number = "S4-S2SA"
-name = "Front X30 Shock Shaft for YZ-4SF2"
-name_ja = "YZ-4SF2 用 フロント X30 ショックシャフト"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front \"X30\" Shock Shaft"
+name_ja = "フロント\"X30\"ショックシャフト"
 category = "shock"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-s2sa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 shock_part = "shaft"

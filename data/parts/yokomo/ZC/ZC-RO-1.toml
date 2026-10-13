@@ -1,6 +1,15 @@
 id = "part/yokomo/ZC-RO-1"
 brand = "brand/yokomo"
 number = "ZC-RO-1"
-name = "RO1.0 ボディ用デカールシート"
-notes = "Name as printed in Yokomo's Japanese parts list"
-category = "body"
+name = "Decal Sheet for RO1.0 Body"
+name_ja = "RO1.0 ボディ用 デカールシート"
+category = "decal"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-ro-1" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

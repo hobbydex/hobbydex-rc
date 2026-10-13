@@ -2,6 +2,12 @@ id = "part/yokomo/S4-200-A"
 brand = "brand/yokomo"
 number = "S4-200-A"
 name = "Steering Bellcrank L / R for YZ-4S"
-name_ja = "YZ-4S 用 ステアリングベルクランク L/R"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name_ja = "YZ-4S用 ステアリングベルクランク L/R"
 category = "steering"
+fits = [
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-200-a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

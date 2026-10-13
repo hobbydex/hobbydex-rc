@@ -1,7 +1,18 @@
 id = "part/yokomo/B2-009BFA"
 brand = "brand/yokomo"
 number = "B2-009BFA"
-name = "Front Inner Suspension Arm Pin"
-name_ja = "フロント インナー サスアーム ピン"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front Inner Suspension Arm Pin for B-MAX2"
+name_ja = "B-MAX2用 フロント インナー サスアーム ピン"
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 CAL3, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/b2-009bfa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

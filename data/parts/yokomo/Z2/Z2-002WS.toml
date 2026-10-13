@@ -1,8 +1,14 @@
 id = "part/yokomo/Z2-002WS"
 brand = "brand/yokomo"
 number = "Z2-002WS"
-name = "Steel S2 Chassis Weight for SO2.0"
-name_ja = "SO2.0 用スチール製 S2 シャーシウェイト"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "chassis"
+name = "Steel S2 Chassis Weight"
+name_ja = "スチール製 S2 シャーシウエイト"
 material = "steel"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-002ws" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

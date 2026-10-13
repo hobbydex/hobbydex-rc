@@ -1,8 +1,17 @@
 id = "part/yokomo/S4-S16213"
 brand = "brand/yokomo"
 number = "S4-S16213"
-name = "13 Shock Piston (1.6 2 Hole 2.0mm / 2 pcs) for SO / MO2.0"
-name_ja = "SO/MO2.0 用 13 ショックピストン ( φ 1.6 2 穴 2.0mm/ ２個入 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "13 Shock Piston 1.6×2×2.0mm"
+name_ja = "13ショックピストン Φ1.6×2×2.0mm(2個入)"
+pack_qty = 2
 category = "shock"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/s4-s16213" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 shock_part = "piston"

@@ -1,12 +1,15 @@
 id = "release/yokomo/yd-2zs"
 kit = "kit/yokomo/yd-2"
 brand = "brand/yokomo"
+number = "DP-YD2ZS"
 name = "YD-2ZS"
-year = 2022
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/yokomo/yd-2zs-manual"]
-notes = "Year is when the manual was published; the kit may be older"
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/dp-yd2zs" },
+]
+notes = "The store lists only the item number for this kit (no title, tags or status)"
 contains = [
   { part = "part/yokomo/B10-S3S", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/B2-501MR", role = "option", source = "doc/yokomo/yd-2zs-manual" },
@@ -106,6 +109,7 @@ contains = [
   { part = "part/yokomo/SD-TB30", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/SD-TB33", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/SD-TBL", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
+  { part = "part/yokomo/SG-A4880", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/SG-A4884", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-001B", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-001GB", role = "option", source = "doc/yokomo/yd-2zs-manual" },

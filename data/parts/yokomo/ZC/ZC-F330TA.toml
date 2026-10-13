@@ -1,0 +1,19 @@
+id = "part/yokomo/ZC-F330TA"
+brand = "brand/yokomo"
+number = "ZC-F330TA"
+name = "M3x30mm Titanium Countersunk Socket Screw"
+pack_qty = 2
+name_ja = "M3x30mm チタン製 皿ソケットスクリュー 2本入"
+material = "titanium"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8 2018" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f330ta" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x30-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -1,8 +1,20 @@
 id = "part/yokomo/ZC-S550A"
 brand = "brand/yokomo"
 number = "ZC-S550A"
-name = "5. 0x7. 0x0. 5mm Shim"
-name_ja = "φ５. ０ｘφ７. ０ｘ０. ５mm シム ( ８枚入 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "washer-shim"
+name = "5.0×7.0×0.5mm Shim"
+name_ja = "Φ5.0×Φ7.0×0.5mmシム(8枚入)"
 pack_qty = 8
+category = "washer-shim"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-s550a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

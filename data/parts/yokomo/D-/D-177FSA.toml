@@ -1,6 +1,17 @@
 id = "part/yokomo/D-177FSA"
 brand = "brand/yokomo"
 number = "D-177FSA"
-name = "Soft for Direct Type Spring Drift F"
-name_ja = "ダイレクト タイプスプリング ドリフト F 用 ソフト"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front Direct Type Spring (Soft) for RWD Drift"
+name_ja = "RWDドリフト用 フロント ダイレクトタイプ スプリング(ソフト)"
+category = "suspension"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/d-177fsa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

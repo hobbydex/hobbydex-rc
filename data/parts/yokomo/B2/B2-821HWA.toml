@@ -1,13 +1,22 @@
 id = "part/yokomo/B2-821HWA"
 brand = "brand/yokomo"
 number = "B2-821HWA"
-name = "H12 Front Wheel (White) (for H12mm Hex Hub) for B-MAX2"
-name_ja = "B-MAX2 用 H12 フロント ホイル ( ホワイト ) (H12mm ６角ハブ用 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "H12 Front Wheel (for H12mm Hex Hub) White for YZ-2 / B-MAX2"
+name_ja = "YZ-2/B-MAX2用 H12 フロント ホイル(H12mm 6角ハブ用) ホワイト"
 category = "wheel"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 CAL3, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/b2-821hwa?variant=45652817772653" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
 position = "front"
 color = "white"
-range = "yokomo/b2-821-colours"
+range = "yokomo/b2-821-h12-front-wheel-for-h12mm-hex-hub-for-yz-2-b-max-a6bb-colours"

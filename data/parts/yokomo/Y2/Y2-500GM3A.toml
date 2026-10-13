@@ -1,6 +1,20 @@
 id = "part/yokomo/Y2-500GM3A"
 brand = "brand/yokomo"
 number = "Y2-500GM3A"
-name = "デフケース用 メインテナンスキット YD-2/YZ-2 ギヤデフ用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Diff Case Maintenance Kit for Gear Diff for RD / SD / MD / SO / YZ-834B"
+name_ja = "RD/SD/MD/SO/YZ-834B用 ギヤデフ 用デフケース メインテナンスキット"
 category = "differential"
+fits = [
+  { kit = "kit/yokomo/dpm", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPM" },
+  { kit = "kit/yokomo/dpr", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPR" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yr-10f", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YR-10F" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-500gm3a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

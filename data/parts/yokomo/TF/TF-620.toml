@@ -1,8 +1,17 @@
 id = "part/yokomo/TF-620"
 brand = "brand/yokomo"
 number = "TF-620"
-name = "RO1.0 Front Tire"
-name_ja = "RO1.0 フロントタイヤ"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front Tire for RO1.0"
+name_ja = "RO1.0用 フロントタイヤ(2個入)"
+pack_qty = 2
 category = "tire"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/tf-620" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 position = "front"

@@ -1,0 +1,19 @@
+id = "part/yokomo/BM-4826A"
+brand = "brand/yokomo"
+number = "BM-4826A"
+name = "26T Hard Steel Pinion Gear 48 Pitch"
+name_ja = "26T ハード スチール ピニオンギヤ48ピッチ"
+material = "steel"
+category = "pinion"
+fits = [
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bm-4826a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+teeth = 26
+pitch_dp = 48
+equivalent_to = [
+  { spec = "spec/pinion/48dp-26t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

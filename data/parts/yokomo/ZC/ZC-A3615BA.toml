@@ -1,8 +1,20 @@
 id = "part/yokomo/ZC-A3615BA"
 brand = "brand/yokomo"
 number = "ZC-A3615BA"
-name = "3x 6x1.5mm Aluminium Shim (Black)"
-name_ja = "φ 3x φ 6x1.5mm アルミシム ( 黒 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "washer-shim"
+name = "3.0x6.0x1.5mm Aluminium Shim Black"
+name_ja = "φ3.0xφ6.0x1.5mm アルミシム 8個入 ブラック"
+pack_qty = 8
 material = "aluminium"
+category = "washer-shim"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014, BD7 ver.RS, BD7 ver.RS2, BD7 ver.RS3" },
+  { kit = "kit/yokomo/dib", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DIB, DIB 275, DIB ver.2, DIB ver.2 Premium, DIB ver.RS" },
+  { kit = "kit/yokomo/drb", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DRB" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-a3615a?variant=45652826718317" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+color = "black"
+range = "yokomo/zc-a3615-colours"

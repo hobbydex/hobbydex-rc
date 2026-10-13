@@ -1,5 +1,19 @@
 id = "part/yokomo/Y4-001A"
 brand = "brand/yokomo"
 number = "Y4-001A"
-name = "フロントプラスティックバンパー YD-2/YD-4 用"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Front Plastic Bumper for YD-2 / YD-4"
+name_ja = "YD-2/YD-4用 フロントプラスティックバンパー"
+category = "bumper-guard"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z, YD-2TC" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y4-001a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+material = "plastic"

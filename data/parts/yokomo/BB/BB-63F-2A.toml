@@ -1,0 +1,18 @@
+id = "part/yokomo/BB-63F-2A"
+brand = "brand/yokomo"
+number = "BB-63F-2A"
+name = "Flange Bearing 3.0x6.0x2.5mm"
+pack_qty = 2
+name_ja = "フランジ ベアリング φ3.0xφ6.0x2.5mm(2個入)"
+category = "bearing"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-63f-2a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

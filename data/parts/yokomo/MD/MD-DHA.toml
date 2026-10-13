@@ -1,7 +1,17 @@
 id = "part/yokomo/MD-DHA"
 brand = "brand/yokomo"
 number = "MD-DHA"
-name = "Diff Height Adjust 3 Gear / 4 Gear L/R for SD2.0"
-name_ja = "SD2.0 用デフハイトアジャスト３ギヤ／４ギヤ左右"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Aluminium Diff Height Adjust (L / R) ±0 for SD2.0"
+name_ja = "SD2.0用 アルミ製 デフ ハイトアジャスト(L/R) ±0"
+material = "aluminium"
 category = "differential"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/md-dha" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

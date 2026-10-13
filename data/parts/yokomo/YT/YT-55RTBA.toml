@@ -1,9 +1,16 @@
 id = "part/yokomo/YT-55RTBA"
 brand = "brand/yokomo"
 number = "YT-55RTBA"
-name = "Works Wrench 5.5mm Nut Driver (Black)"
-name_ja = "ワークス レンチ 5.5mm ナット ドライバー ( 黒 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Yokomo Racing Tool 5.5mm Nut Driver (Black)"
+name_ja = "ヨコモレーシングツール 5.5mm ナットドライバー(ブラック)"
 category = "tool"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS2.0, MS2.1" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/yt-55rtba" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 color = "black"
 range = "yokomo/yt-55-works-wrench-5.5mm-nut-driver-7bb6-colours"

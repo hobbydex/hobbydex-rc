@@ -1,8 +1,14 @@
 id = "part/yokomo/Y2-200U"
 brand = "brand/yokomo"
 number = "Y2-200U"
-name = "Aluminium Bellcrank Upper Adapter for SD2.0"
-name_ja = "SD2.0 用 アルミ製 ベルクランク アッパーアダプター"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Bellcrank Arm Upper Adapter for SD2.0"
+name_ja = "SD2.0用 ベルクランク アーム アッパーアダプター"
 category = "steering"
-material = "aluminium"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-200u" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

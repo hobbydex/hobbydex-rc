@@ -1,12 +1,15 @@
 id = "release/yokomo/yd-2zx"
 kit = "kit/yokomo/yd-2"
 brand = "brand/yokomo"
+number = "DP-YD2ZX"
 name = "YD-2ZX"
-year = 2022
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/yokomo/yd-2zs-manual"]
-notes = "Year is when the manual was published; the kit may be older"
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/dp-yd2zx" },
+]
+notes = "The store lists only the item number for this kit (no title, tags or status)"
 contains = [
   { part = "part/yokomo/B10-S3S", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/B2-501MR", role = "option", source = "doc/yokomo/yd-2zs-manual" },
@@ -29,7 +32,6 @@ contains = [
   { part = "part/yokomo/B8-301BS", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/B8-301C", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/B8-500DP", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
-  { part = "part/yokomo/B9-204", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/BB-105-2", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/BB-1050CB", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/BB-1050P", role = "option", source = "doc/yokomo/yd-2zs-manual" },
@@ -159,13 +161,13 @@ contains = [
   { part = "part/yokomo/Y2-202SC", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-202SM", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-202SZ", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
-  { part = "part/yokomo/Y2-202UM", role = "option", source = "doc/yokomo/yd-2zs-manual" },
+  { part = "part/yokomo/Y2-202UM", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-203Z", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-203ZP", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-203ZR", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-204Z26", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-207", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
-  { part = "part/yokomo/Y2-301", role = "option", source = "doc/yokomo/yd-2zs-manual" },
+  { part = "part/yokomo/Y2-301", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-301AC", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-301D2", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y2-301DB", role = "option", source = "doc/yokomo/yd-2zs-manual" },
@@ -240,7 +242,6 @@ contains = [
   { part = "part/yokomo/Y4-010B", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y4-010TP", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y4-016", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
-  { part = "part/yokomo/Y4-201P", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y4-203A", role = "option", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y4-630", role = "kit", source = "doc/yokomo/yd-2zs-manual" },
   { part = "part/yokomo/Y4-630C", role = "option", source = "doc/yokomo/yd-2zs-manual" },

@@ -2,6 +2,17 @@ id = "part/yokomo/Y2-415FR"
 brand = "brand/yokomo"
 number = "Y2-415FR"
 name = "Steering Block & Rear Hub Carrier for SD2.0"
-name_ja = "SD2.0 用 ステアリングブロック＆リヤハブキャリア"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name_ja = "SD2.0用 ステアリングブロック&リヤハブキャリア"
 category = "steering"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/gt1", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT1" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-415fr" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

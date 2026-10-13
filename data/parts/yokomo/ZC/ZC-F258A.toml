@@ -1,0 +1,18 @@
+id = "part/yokomo/ZC-F258A"
+brand = "brand/yokomo"
+number = "ZC-F258A"
+name = "M2.5x8mm Countersunk Socket Screw"
+pack_qty = 8
+name_ja = "M2.5x8mm 皿ソケットスクリュー 8本入"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-f258a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

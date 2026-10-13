@@ -1,7 +1,19 @@
 id = "part/yokomo/BD-009AA"
 brand = "brand/yokomo"
 number = "BD-009AA"
-name = "Outer Suspension Arm Pin"
-name_ja = "アウター サスアーム ピン"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Outer Suspension Arm Pin (2x23mm) for BD8 / BD7"
+name_ja = "BD8/BD7用 アウター サスアーム ピン(φ2x23mm)(4本入)"
+pack_qty = 4
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/dpm", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPM" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bd-009aa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/pin/2x23", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

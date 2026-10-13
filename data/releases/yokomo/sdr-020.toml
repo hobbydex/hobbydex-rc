@@ -1,13 +1,16 @@
 id = "release/yokomo/sdr-020"
-kit = "kit/yokomo/sd2-0"
+kit = "kit/yokomo/sd"
 brand = "brand/yokomo"
 number = "SDR-020"
-name = "Super Drift SD2.0"
-year = 2024
+name = "SD2.0"
+name_ja = "スーパードリフト SD2.0 組み立てシャーシキット"
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/yokomo/rd2.0-instruction-manual"]
-notes = "Year is when the manual was published; the kit may be older"
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/sdr-020" },
+]
+notes = "Status from the store's lifecycle tag; the Japanese product title is in name_ja"
 contains = [
   { part = "part/yokomo/B10-S3SA", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },
   { part = "part/yokomo/B2-501MRA", role = "option", source = "doc/yokomo/rd2.0-instruction-manual" },
@@ -92,9 +95,6 @@ contains = [
   { part = "part/yokomo/RD-008F17", role = "option", source = "doc/yokomo/rd2.0-instruction-manual" },
   { part = "part/yokomo/RD-008FL", role = "option", source = "doc/yokomo/rd2.0-instruction-manual" },
   { part = "part/yokomo/RD-008FU", role = "option", source = "doc/yokomo/rd2.0-instruction-manual" },
-  { part = "part/yokomo/RD-301", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },
-  { part = "part/yokomo/RD-301S", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },
-  { part = "part/yokomo/RD-302", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },
   { part = "part/yokomo/RP-031A", role = "option", source = "doc/yokomo/rd2.0-instruction-manual" },
   { part = "part/yokomo/RP-032A", role = "option", source = "doc/yokomo/rd2.0-instruction-manual" },
   { part = "part/yokomo/RP-033A", role = "option", source = "doc/yokomo/rd2.0-instruction-manual" },

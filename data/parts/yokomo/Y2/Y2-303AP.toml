@@ -2,7 +2,13 @@ id = "part/yokomo/Y2-303AP"
 brand = "brand/yokomo"
 number = "Y2-303AP"
 name = "Aluminium Upper Deck Post for SD2.0"
-name_ja = "SD2.0 用 アルミ製 アッパーデッキポスト"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "chassis"
+name_ja = "SD2.0用 アルミ製 アッパーデッキポスト"
 material = "aluminium"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-303ap" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

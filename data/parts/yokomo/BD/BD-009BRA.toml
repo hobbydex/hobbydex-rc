@@ -1,7 +1,18 @@
 id = "part/yokomo/BD-009BRA"
 brand = "brand/yokomo"
 number = "BD-009BRA"
-name = "Rear Inner Suspension Arm Pin"
-name_ja = "リヤ インナー サスアーム ピン"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Rear Inner Suspension Arm Pin (3×45mm) for BD7 / BD-5"
+name_ja = "BD7/BD-5用 リヤ インナーサスアームピン(φ3×45mm)"
 category = "pin-clip"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bd-009bra" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/pin/3x45", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

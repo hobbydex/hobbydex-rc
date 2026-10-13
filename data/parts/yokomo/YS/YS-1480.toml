@@ -1,5 +1,24 @@
 id = "part/yokomo/YS-1480"
 brand = "brand/yokomo"
 number = "YS-1480"
-name = "D-MAX 用 多重巻 ロングスプリング（オレンジ） 2"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "HSS Long Shock Spring (Orange)"
+name_ja = "HSS ロング ショックスプリング (オレンジ)"
+category = "shock-spring"
+fits = [
+  { kit = "kit/yokomo/d-max", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for D-MAX" },
+  { kit = "kit/yokomo/dib", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DIB, DIB 275, DIB ver.2, DIB ver.2 Premium, DIB ver.RS" },
+  { kit = "kit/yokomo/dpm", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPM" },
+  { kit = "kit/yokomo/dpr", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPR" },
+  { kit = "kit/yokomo/drb", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DRB" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package Type-C, Drift Package" },
+  { kit = "kit/yokomo/imadoki-alpha", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for IMADOKI Alpha" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4, YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/ys-1480" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+material = "steel"

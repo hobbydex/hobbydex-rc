@@ -1,8 +1,18 @@
 id = "part/yokomo/ZC-S36A"
 brand = "brand/yokomo"
 number = "ZC-S36A"
-name = "3x 6x0.5mm Washer"
-name_ja = "φ 3x φ 6x0.5mm ワッシャー 10"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "washer-shim"
+name = "3.1x6.0x0.5mm Steel Washer ."
+name_ja = "φ3.1xφ6.0x0.5mm スチールワッシャー10枚入."
 pack_qty = 10
+material = "steel"
+category = "washer-shim"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-s36a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

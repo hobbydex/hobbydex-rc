@@ -1,7 +1,16 @@
 id = "part/yokomo/Z4-200"
 brand = "brand/yokomo"
 number = "Z4-200"
-name = "Servo Mount / 17mmS Horn for YZ-4"
-name_ja = "YZ-4 用 サーボマウント /17mmS ホーン"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "chassis"
+name = "Bellcrank / Servo Horn / Servo Mount"
+name_ja = "ベルクランク/サーボホーン/サーボマウント"
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0, MO2.0, MO3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4, YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z4-200" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

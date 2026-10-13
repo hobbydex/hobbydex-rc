@@ -1,5 +1,15 @@
 id = "part/yokomo/Z2-018-5A"
 brand = "brand/yokomo"
 number = "Z2-018-5A"
-name = "DTM3/CAL3 用 CG 製 リヤ ショック タワー （5 段階 ショック取付穴 3mm ダウン／ S4-S1MA 用）"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Rear Shock Tower (5 Hole Spec)"
+name_ja = "リヤ ショックタワー(5穴仕様)"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 DTM" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-018-5a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

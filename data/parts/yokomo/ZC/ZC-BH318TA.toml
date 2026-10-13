@@ -1,0 +1,18 @@
+id = "part/yokomo/ZC-BH318TA"
+brand = "brand/yokomo"
+number = "ZC-BH318TA"
+name = "M3x18mm Titanium Button Head Socket Screw"
+pack_qty = 4
+name_ja = "M3x18mm チタン製 ボタンヘッド ソケットスクリュー 4本入"
+material = "titanium"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh318ta" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

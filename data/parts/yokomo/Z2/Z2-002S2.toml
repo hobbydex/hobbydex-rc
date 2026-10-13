@@ -1,8 +1,15 @@
 id = "part/yokomo/Z2-002S2"
 brand = "brand/yokomo"
 number = "Z2-002S2"
-name = "Aluminium S2 Main Chassis for SO2.0"
-name_ja = "SO2.0 用アルミ製 S2 メインシャーシ"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "chassis"
+name = "Aluminium S2 Main Chassis"
+name_ja = "アルミ製 S2メインシャーシ"
 material = "aluminium"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-002s2" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

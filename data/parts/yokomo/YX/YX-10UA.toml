@@ -1,0 +1,16 @@
+id = "part/yokomo/YX-10UA"
+brand = "brand/yokomo"
+number = "YX-10UA"
+name = "Front Upper A Arm for MD1.0 / YR-X12"
+name_ja = "MD1.0/YR-X12用 フロントアッパーAアーム"
+category = "suspension"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/yx-10ua" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+related = [
+  { part = "part/yokomo/YR-X12", relation = "for", notes = "link_part_refs" },
+]

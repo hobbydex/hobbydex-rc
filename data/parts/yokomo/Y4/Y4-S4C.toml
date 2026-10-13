@@ -1,7 +1,20 @@
 id = "part/yokomo/Y4-S4C"
 brand = "brand/yokomo"
 number = "Y4-S4C"
-name = "SLF Big Bore Shock O Ring Cap / each 2 Adjust Nut / Cap Nut"
-name_ja = "SLF ビックボア ショック Ｏ リングキャップ / 各2 アジャストナット / キャップナット"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "O-Ring Cap / Adjust Nut (Black) for Big Bore Shock"
+name_ja = "ビッグボアショック用 Oリングキャップ/アジャストナット(ブラック)"
 category = "nut"
+fits = [
+  { kit = "kit/yokomo/dib", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DIB" },
+  { kit = "kit/yokomo/dpm", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPM" },
+  { kit = "kit/yokomo/dpr", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPR" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2R, YD-2S, YD-2Z" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4 MR" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y4-s4c" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

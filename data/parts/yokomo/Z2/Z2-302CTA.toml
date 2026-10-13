@@ -1,6 +1,16 @@
 id = "part/yokomo/Z2-302CTA"
 brand = "brand/yokomo"
 number = "Z2-302CTA"
-name = "YZ-2T 用 ギヤ ボックスキャップ / DH アダプター ショックタワースペーサー"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Gear Box Cap / Diff Height Adapter / Shock Tower Spacer for YZ-2T"
+name_ja = "YZ-2T用  ギヤ ボックスキャップ/デフハイト アダプター/ショックタワースペーサー"
 category = "washer-shim"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-302cta" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

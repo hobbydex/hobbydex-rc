@@ -1,5 +1,17 @@
 id = "part/yokomo/RP-089BKA"
 brand = "brand/yokomo"
 number = "RP-089BKA"
-name = "2/4WD/ トラック ウルトラ リヤ スプリング ( ブラック ) ( ダート用、トラック・カーペット用 )"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "Ultra Rear Spring (Black)"
+name_ja = "ウルトラ リヤ スプリング(黒)"
+category = "suspension"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CAL2, YZ-2 DTM" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-089bka" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

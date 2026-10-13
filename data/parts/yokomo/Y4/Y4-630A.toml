@@ -1,8 +1,15 @@
 id = "part/yokomo/Y4-630A"
 brand = "brand/yokomo"
 number = "Y4-630A"
-name = "Aluminium Spur Gear Hub YD-2 / YD-4"
-name_ja = "アルミ製 スパーギヤ ハブ YD-2/YD-4 用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "suspension"
+name = "Aluminium Spur Gear Hub for YD-2 / YD-4"
+name_ja = "YD-2/YD-4用 アルミ製 スパーギヤ ハブ"
 material = "aluminium"
+category = "suspension"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y4-630a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,8 +1,19 @@
 id = "part/yokomo/Y2-303IAA"
 brand = "brand/yokomo"
 number = "Y2-303IAA"
-name = "Aluminium Idler Shaft YD-2"
-name_ja = "アルミ製 アイドラー シャフト YD-2 用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "gear"
+name = "Aluminium Idler Shaft for YD-2"
+name_ja = "YD-2用 アルミ製 アイドラー シャフト"
 material = "aluminium"
+category = "gear"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z, YD-2TC" },
+  { kit = "kit/yokomo/rd", type = "replaces", replaces = "part/yokomo/Y2-303I-A", source = "doc/yokomo/store", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/yokomo/sd", type = "replaces", replaces = "part/yokomo/Y2-303I-A", source = "doc/yokomo/store", notes = "Same part in another material (link_upgrades.py)" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-303iaa" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

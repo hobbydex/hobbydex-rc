@@ -1,0 +1,18 @@
+id = "part/yokomo/ZC-BH322A"
+brand = "brand/yokomo"
+number = "ZC-BH322A"
+name = "M3x22mm Button Head Socket Screw"
+pack_qty = 8
+name_ja = "M3x22mm ボタンヘッド ソケットスクリュー 8本入"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh322a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x22-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

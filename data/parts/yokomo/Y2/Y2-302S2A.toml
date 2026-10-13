@@ -1,6 +1,16 @@
 id = "part/yokomo/Y2-302S2A"
 brand = "brand/yokomo"
 number = "Y2-302S2A"
-name = "HT ギヤ ボックススペーサー 2.0mm 厚"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "High Traction Gearbox Spacer for YD-2SXIII"
+name_ja = "YD-2SXIII用 ハイトラクション ギヤボックススペーサー"
 category = "washer-shim"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-302s2a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

@@ -1,7 +1,14 @@
 id = "part/yokomo/SD-011A"
 brand = "brand/yokomo"
 number = "SD-011A"
-name = "Wheel Hub Pin / Nut"
-name_ja = "ホイルハブピン / ナット"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Wheel Hub Pin / Nut for Drift Package"
+name_ja = "ドリフトパッケージ用 ホイールハブピン/ナット"
 category = "nut"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0, MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/sd-011a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

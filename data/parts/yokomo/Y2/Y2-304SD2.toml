@@ -2,7 +2,15 @@ id = "part/yokomo/Y2-304SD2"
 brand = "brand/yokomo"
 number = "Y2-304SD2"
 name = "Aluminium Motor Mount for SD2.0"
-name_ja = "SD2.0 用 アルミ製 モーターマウント"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "chassis"
+name_ja = "SD2.0用 アルミ製 モーターマウント"
 material = "aluminium"
+category = "chassis"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-304sd2" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

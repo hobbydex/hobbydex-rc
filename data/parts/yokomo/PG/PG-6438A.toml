@@ -1,0 +1,19 @@
+id = "part/yokomo/PG-6438A"
+brand = "brand/yokomo"
+number = "PG-6438A"
+name = "38T Carbide Precision Aluminium Pinion Gear 64 Pitch Lightweight Hard Coated"
+name_ja = "38T 超硬プレシジョン アルミ製ピニオンギヤ 64ピッチ軽量ハードコート"
+material = "aluminium"
+category = "pinion"
+fits = [
+  { kit = "kit/yokomo/bdfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD FWD" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/pg-6438a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+teeth = 38
+pitch_dp = 64
+equivalent_to = [
+  { spec = "spec/pinion/64dp-38t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

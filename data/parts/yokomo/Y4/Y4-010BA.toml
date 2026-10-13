@@ -1,7 +1,14 @@
 id = "part/yokomo/Y4-010BA"
 brand = "brand/yokomo"
 number = "Y4-010BA"
-name = "Universal Bone YD-4"
-name_ja = "ユニバーサル ボーン YD-4 用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Universal Bone for YD-4"
+name_ja = "YD-4用 ユニバーサル ボーン"
 category = "drivetrain"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0, MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/y4-010ba" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

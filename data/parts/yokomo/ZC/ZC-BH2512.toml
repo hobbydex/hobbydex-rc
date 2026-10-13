@@ -1,0 +1,18 @@
+id = "part/yokomo/ZC-BH2512"
+brand = "brand/yokomo"
+number = "ZC-BH2512"
+name = "M2.5x12mm BH Socket Screw"
+pack_qty = 8
+name_ja = "M2.5x12mm BHソケットスクリュー(8本入)"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/super-dog-fighter", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Super Dog Fighter" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh2512" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

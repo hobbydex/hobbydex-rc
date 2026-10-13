@@ -1,19 +1,26 @@
 id = "release/yokomo/so1-0"
 kit = "kit/yokomo/so"
 brand = "brand/yokomo"
-name = "Super Off-road SO1.0"
-year = 2023
+number = "SOR-010"
+name = "SO1.0"
+name_ja = "スーパーオフロード SO1.0 2WDバギーキット"
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/yokomo/so2.0-instruction-manual"]
-notes = "Year is when the manual was published; the kit may be older"
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/sor-010" },
+]
+notes = "Status from the store's lifecycle tag; the Japanese product title is in name_ja"
 contains = [
   { part = "part/yokomo/B2-009BFA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-010FHA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-300FL", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-501GGA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-501GSA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/B2-501MRA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-503GMA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/B2-506A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/B2-508TSA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-670CA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-670PA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/B2-821HWA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
@@ -32,10 +39,12 @@ contains = [
   { part = "part/yokomo/BB-85-4A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/BD-500GA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/BD-500GOA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/BM-508", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/BM-S143A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/BM-S152A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/BM-S162A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/BM-S172A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/BM-S812RA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/BM-T16A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/CS-10000B", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/CS-15000B", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
@@ -65,13 +74,23 @@ contains = [
   { part = "part/yokomo/S4-010TPCA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-303OPA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-303P1A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-412BA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-415RLA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-500GM", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S1LA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S1MA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S1SA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S2LA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S2LTA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S2MA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S2MTA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S2SA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S2STA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S3XA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S4CA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/S4-S4LA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S4MA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/S4-S4SA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/SD-TB45NA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/SD-TB48NA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/SD-TB52NA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
@@ -198,16 +217,22 @@ contains = [
   { part = "part/yokomo/Z2-414A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-415GS3A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-415R1", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-415RDCA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-415RS2A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-415S10A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-415SAA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-415SADA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-415SH3A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-415SP", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-415T05A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-415T10A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-500A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-500MG3A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-503A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-503GH2A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-503GHCA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-503IA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-503ICA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-505TA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-670HDA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-670SA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
@@ -222,11 +247,21 @@ contains = [
   { part = "part/yokomo/Z2-DTMWA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-DTMWBA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-FRST", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S1622A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S162A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S1722A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-S172A", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S182A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-S1FS", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
-  { part = "part/yokomo/Z2-S1RS", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-S1SS", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S3A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S4AJA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S4I3A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S4IA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S6MA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S7TA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-S8TA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
+  { part = "part/yokomo/Z2-S93A", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-SG69SDA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-SG72SDA", role = "option", source = "doc/yokomo/so2.0-instruction-manual" },
   { part = "part/yokomo/Z2-SG80SDA", role = "kit", source = "doc/yokomo/so2.0-instruction-manual" },

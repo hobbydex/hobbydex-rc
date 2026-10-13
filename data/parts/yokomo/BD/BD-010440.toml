@@ -1,8 +1,20 @@
 id = "part/yokomo/BD-010440"
 brand = "brand/yokomo"
 number = "BD-010440"
-name = "Bone (44mm) for Universal Shaft"
-name_ja = "ユニバーサルシャフト用 ボーン（44mm） 1"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "44.0mm Bone for BD7 / BD5"
+name_ja = "BD7/BD5用 44.0mm ボーン"
 category = "drivetrain"
-pack_qty = 1
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014, BD7 2015, BD7 2016, BD7 ver.RS, BD7 ver.RS2, BD7 ver.RS3" },
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD8, BD8 2018" },
+  { kit = "kit/yokomo/dib", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DIB, DIB 275, DIB ver.2, DIB ver.2 Premium, DIB ver.RS" },
+  { kit = "kit/yokomo/drb", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DRB" },
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2E, YD-2R, YD-2S, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bd-010440" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

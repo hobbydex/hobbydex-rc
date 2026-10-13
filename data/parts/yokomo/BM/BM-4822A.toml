@@ -1,0 +1,20 @@
+id = "part/yokomo/BM-4822A"
+brand = "brand/yokomo"
+number = "BM-4822A"
+name = "22T Hard Steel Pinion Gear 48 Pitch"
+name_ja = "22T ハード スチール ピニオンギヤ48ピッチ"
+material = "steel"
+category = "pinion"
+fits = [
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL2, YZ-2 CAL3, YZ-2 DTM2, YZ-2 DTM3" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/bm-4822a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+teeth = 22
+pitch_dp = 48
+equivalent_to = [
+  { spec = "spec/pinion/48dp-22t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

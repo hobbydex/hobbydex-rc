@@ -1,7 +1,18 @@
 id = "part/yokomo/D-155-23-A"
 brand = "brand/yokomo"
 number = "D-155-23-A"
-name = "23mm Rod End Adapter Narrow Steering Block"
-name_ja = "23mm ロッドエンドアダプター ナロー ステアリングブロック用"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "23mm Rod End Adapter (for F Upper A Arm) for Narrow ST Block"
+name_ja = "ナローSTブロック用 23mm ロッドエンド アダプター(F アッパー A アーム用)"
 category = "ball-end"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0" },
+  { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2R, YD-2Z" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/d-155-23-a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

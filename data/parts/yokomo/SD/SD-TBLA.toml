@@ -1,6 +1,18 @@
 id = "part/yokomo/SD-TBLA"
 brand = "brand/yokomo"
 number = "SD-TBLA"
-name = "薄型ターンバックル用 レンチ 対辺 4mm 用"
-notes = "Name as printed in Yokomo's Japanese parts list"
-category = "ball-end"
+name = "Turnbuckle Wrench for Across Flats 4mm"
+name_ja = "対辺4mm用 ターンバックルレンチ"
+category = "tool"
+fits = [
+  { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
+  { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+  { kit = "kit/yokomo/yd-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-4" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/sd-tbla" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

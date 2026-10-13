@@ -1,5 +1,17 @@
 id = "part/yokomo/Z2-20425A"
 brand = "brand/yokomo"
 number = "Z2-20425A"
-name = "YZ2T/YZ-2 用 アルミ製 15.5mm サーボホーン (25T フタバ )"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "25T) for Aluminium 15.5mm Servo Horn (Yokomo / Futaba for YZ-2 / YZ-2T"
+name_ja = "YZ-2/YZ-2T用 アルミ製 15.5mm サーボホーン (ヨコモ/フタバ用25T)"
+material = "aluminium"
+category = "steering"
+fits = [
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CAL2, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-20425a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

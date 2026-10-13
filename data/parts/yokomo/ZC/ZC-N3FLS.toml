@@ -1,9 +1,19 @@
 id = "part/yokomo/ZC-N3FLS"
 brand = "brand/yokomo"
 number = "ZC-N3FLS"
-name = "M3 フランジナイロンロックナット ( スチール製 /4 個入 )"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "M3 Flange Lock Nut"
+name_ja = "M3 フランジ ロックナット(4個入)"
+pack_qty = 4
 category = "nut"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0, SO3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-n3fls" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
-  { spec = "spec/nut/m3-flanged-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

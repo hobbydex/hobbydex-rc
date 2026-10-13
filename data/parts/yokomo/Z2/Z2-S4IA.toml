@@ -2,7 +2,17 @@ id = "part/yokomo/Z2-S4IA"
 brand = "brand/yokomo"
 number = "Z2-S4IA"
 name = "X33 Shock Inner Spacer for YZ-2"
-name_ja = "YZ-2 用 X33 ショック インナー スペーサー ( １０個入 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name_ja = "YZ-2用 X33 ショック インナースペーサー"
 category = "washer-shim"
-pack_qty = 10
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0, MO3.0" },
+  { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
+  { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 CAL3, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
+  { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4, YZ-4SF" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-s4ia" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

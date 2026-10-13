@@ -2,6 +2,13 @@ id = "part/yokomo/MD-303I"
 brand = "brand/yokomo"
 number = "MD-303I"
 name = "Idler Shaft for MD1.0"
-name_ja = "MD1.0 用アイドラーシャフト"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name_ja = "MD1.0用アイドラーシャフト"
 category = "gear"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/md-303i" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

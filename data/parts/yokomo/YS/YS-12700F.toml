@@ -1,7 +1,15 @@
 id = "part/yokomo/YS-12700F"
 brand = "brand/yokomo"
 number = "YS-12700F"
-name = "Front Spring DOT5 (7.0T / 2 pcs) for 13 Shock"
-name_ja = "13 ショック用 フロントスプリングﾞ DOT5 (7.0T/2 本入 )"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
+name = "Front Spring DOT5(7.0T /) for 13 Shock"
+name_ja = "13ショック用 フロントスプリング DOT5(7.0T/2本入)"
+pack_qty = 2
 category = "shock"
+fits = [
+  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO2.0" },
+  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/ys-12700f" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"

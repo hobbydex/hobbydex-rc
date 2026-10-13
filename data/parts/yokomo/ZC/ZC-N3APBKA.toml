@@ -1,9 +1,21 @@
 id = "part/yokomo/ZC-N3APBKA"
 brand = "brand/yokomo"
 number = "ZC-N3APBKA"
-name = "アルミ製 M3 プレーン ナット ( 黒 ) 3mm"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "M3 Aluminium Plain Nut (Black)"
+name_ja = "M3 アルミ製 プレーンナット(ブラック4個入)"
+pack_qty = 4
+material = "aluminium"
 category = "nut"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-n3apbka" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

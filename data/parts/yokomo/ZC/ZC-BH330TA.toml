@@ -1,8 +1,19 @@
 id = "part/yokomo/ZC-BH330TA"
 brand = "brand/yokomo"
 number = "ZC-BH330TA"
-name = "M3x30mmBHS Screw Titanium Hex Hole"
-name_ja = "M3x30mmBHS スクリュー チタン 6 角穴"
-notes = "English translated by Hobbydex from Yokomo's Japanese parts list (name_ja)"
-category = "screw"
+name = "M3x30mm Titanium Button Head Socket Screw"
+pack_qty = 2
+name_ja = "M3x30mm チタン製 ボタンヘッド ソケットスクリュー 2本入"
 material = "titanium"
+category = "screw"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh330ta" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"
+equivalent_to = [
+  { spec = "spec/screw/m3x30-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

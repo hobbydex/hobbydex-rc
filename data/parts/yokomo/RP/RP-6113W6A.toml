@@ -1,5 +1,17 @@
 id = "part/yokomo/RP-6113W6A"
 brand = "brand/yokomo"
 number = "RP-6113W6A"
-name = "5 本スポークホイル ( 白 ) ドリフト用 オフセット 6mm"
-notes = "Name as printed in Yokomo's Japanese parts list"
+name = "RP Drift Wheel 5 Spoke Offset 6mm"
+name_ja = "RP ドリフトホイール 5 Spoke オフセット 6mm"
+category = "wheel"
+fits = [
+  { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0, MD2.0, MD3.0" },
+  { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0, SD2.0, SD3.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-6113w6a" },
+]
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+vehicle = "drift"
