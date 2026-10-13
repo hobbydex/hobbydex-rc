@@ -1,5 +1,9 @@
 id = "part/ftx/FTX11328"
 brand = "brand/ftx"
 number = "FTX11328"
-name = "FTX11328"
-notes = "Read by OCR from a scanned FTX document; no name could be read (the part appears only on drawings or in an unreadable cell)"
+name = "Pin-3*27.8mm"
+notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/3x27.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
