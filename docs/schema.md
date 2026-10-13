@@ -438,7 +438,7 @@ shaft_mm = 3.175
 ```
 
 The motor part keeps what differs between motors of one can: `kv`, `turns`
-(13.5 for a 13.5T stock motor), `lipo_cells` ([min, max] LiPo cells, also on
+(13.5 for a 13.5T stock motor; with `winds` the number of parallel wires of each turn, 2 for LRP's "10x2T"), `lipo_cells` ([min, max] LiPo cells, also on
 ESCs), the measured `diameter_mm`, `length_mm` and `shaft_mm`, and
 `weight_g`. Bearing sizes go in `notes` (a motor is not a set, so no
 `includes`).
