@@ -1,0 +1,14 @@
+id = "part/kyosho/1-S53018"
+brand = "brand/kyosho"
+number = "1-S53018"
+name = "Set Screw(M3x18)"
+pack_qty = 5
+fits = [
+  { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
+  { kit = "kit/kyosho/kc10", type = "direct", source = "doc/kyosho/kc10-spop" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x18-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
