@@ -2,7 +2,10 @@ id = "part/pr-racing/68400326"
 brand = "brand/pr-racing"
 number = "68400326"
 name = "26x38mm 4WD Front Wheel 12mm*2pcs(White)For IFMAR-#2"
-documents = ["doc/pr-racing/pr-rc-com"]
 category = "wheel"
 position = "front-4wd"
 color = "white"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for PR SB401-R 1/10 Electric 4wd Off Road Buggy Kit are 12 mm" },
+]
+documents = ["doc/pr-racing/pr-rc-com"]

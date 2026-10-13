@@ -1,5 +1,13 @@
 id = "part/ftx/FTX11338"
 brand = "brand/ftx"
 number = "FTX11338"
-name = "FTX11338"
-notes = "Read by OCR from a scanned FTX document; no name could be read (the part appears only on drawings or in an unreadable cell)"
+name = "Rally MK2RS Pin-3 X 27.8mm"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-mk2rs-spares/ftx-rally-mk2rs-pin-8mm" },
+]
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/3x27.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

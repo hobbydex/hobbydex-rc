@@ -4,12 +4,14 @@ number = "TS02002"
 name = "Front Bumper"
 fits = [
   { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-accessories" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 links = [
   { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/gt-500w-v2-accessories-1/front-bumper" },
 ]
 includes = [
   { part = "part/team-saxo/TS0203009", qty = 1, source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { part = "part/team-saxo/TS0203009", qty = 1, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 notes = "Spare pack on the GT-500W-V2 parts list"
 category = "bumper-guard"

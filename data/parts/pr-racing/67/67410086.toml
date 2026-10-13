@@ -4,6 +4,9 @@ number = "67410086"
 name = "PR ST 1 Wheel White *2pcs"
 category = "wheel"
 color = "white"
+equivalent_to = [
+  { spec = "spec/wheel-hex/14mm", match = "close", notes = "The wheel hexes listed for PR ST1 V3T 1/10 Electric 2WD Stadium Truck Kit(Gear Diff Version) are 14 mm" },
+]
 fits = [
   { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
   { kit = "kit/pr-racing/st1", type = "direct", source = "doc/pr-racing/pr-rc-com" },

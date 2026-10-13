@@ -1,0 +1,13 @@
+id = "part/kyosho/BRG011"
+brand = "brand/kyosho"
+number = "BRG011"
+name = "Shield Bearing (8x12x3.5)"
+fits = [
+  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "metal"
+category = "bearing"

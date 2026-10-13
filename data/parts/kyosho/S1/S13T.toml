@@ -1,0 +1,14 @@
+id = "part/kyosho/S13T"
+brand = "brand/kyosho"
+number = "S13T"
+name = "Pinion Gear S13T (M1.0/KB10)"
+name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mad-wagon", type = "direct", source = "doc/kyosho/34701-t01-mad-wagon-ve-spop" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod1-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 13
+module = 1

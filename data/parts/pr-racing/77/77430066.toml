@@ -1,6 +1,12 @@
 id = "part/pr-racing/77430066"
 brand = "brand/pr-racing"
 number = "77430066"
-name = "55mm Turnbuckle"
+name = "PR SB401-RT 55mm Turnbuckles steel"
 category = "ball-end"
-documents = ["doc/pr-racing/67510037-745"]
+material = "steel"
+pack_qty = 2
+fits = [
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "10TH SB401-R-T TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]

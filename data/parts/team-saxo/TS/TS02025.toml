@@ -4,9 +4,11 @@ number = "TS02025"
 name = "Chassis Brace"
 includes = [
   { part = "part/team-saxo/TS0203006", qty = 1, source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { part = "part/team-saxo/TS0203006", qty = 1, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 fits = [
   { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/lm-500w-parts-list" },
   { kit = "kit/team-saxo/gt-500", type = "direct", source = "doc/team-saxo/gt-500-v2-accessories" },
 ]
 notes = "Spare pack on the GT-500W-V2 parts list"

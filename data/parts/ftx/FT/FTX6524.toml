@@ -1,7 +1,14 @@
 id = "part/ftx/FTX6524"
 brand = "brand/ftx"
 number = "FTX6524"
-name = "— Button Head Hex Screw"
-notes = "Read by OCR from a scanned FTX document"
+name = "Button Head Hex Screw M3 X 30"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-general-spares/button-head-hex-screw-m3-x-30" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x30-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
 category = "screw"
-name_source = "ocr"

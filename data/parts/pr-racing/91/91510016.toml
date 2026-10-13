@@ -1,6 +1,11 @@
 id = "part/pr-racing/91510016"
 brand = "brand/pr-racing"
 number = "91510016"
-name = "Steering Bolt"
+name = "PRS1B10 Steering Bolt"
 category = "screw"
-documents = ["doc/pr-racing/69000030-790"]
+pack_qty = 2
+fits = [
+  { kit = "kit/pr-racing/b10r", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR B10R"
+documents = ["doc/pr-racing/pr-rc-com"]

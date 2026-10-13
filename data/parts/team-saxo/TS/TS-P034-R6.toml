@@ -1,7 +1,7 @@
 id = "part/team-saxo/TS-P034-R6"
 brand = "brand/team-saxo"
 number = "TS-P034-R6"
-name = "TS-P034-R6"
+name = "Clip"
 notes = "Piece of pack TS-P034-R6 on the F1-180-V5 parts list; the list gives no name. Printed as TS-P034_R6 on the F1-180-V5 parts list"
 includes = [
   { part = "part/team-saxo/TS-P034-R6", qty = 10, source = "doc/team-saxo/f1-180-v5-parts-list" },
@@ -13,6 +13,7 @@ includes = [
   { part = "part/team-saxo/TS-P034-R6", qty = 10, source = "doc/team-saxo/gt-300w-v4-parts-list" },
   { part = "part/team-saxo/TS-P034-R6", qty = 10, source = "doc/team-saxo/gt-300w-v3-parts-list" },
   { part = "part/team-saxo/TS-P034-R6", qty = 10, source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { part = "part/team-saxo/TS-P034-R6", qty = 10, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 fits = [
   { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
@@ -21,4 +22,9 @@ fits = [
   { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
   { kit = "kit/team-saxo/gt-300w", type = "direct", source = "doc/team-saxo/gt-300w-v4-parts-list" },
   { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/lm-500w-parts-list" },
 ]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/servo/copy2_of_washers/copy2_of_clip" },
+]
+category = "pin-clip"

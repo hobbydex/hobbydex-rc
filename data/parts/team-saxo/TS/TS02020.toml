@@ -4,8 +4,10 @@ number = "TS02020"
 name = "TS02020"
 includes = [
   { part = "part/team-saxo/TS020300", qty = 2, source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { part = "part/team-saxo/TS0203003", qty = 2, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 fits = [
   { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 notes = "Spare pack on the GT-500W-V2 parts list"

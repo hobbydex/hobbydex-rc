@@ -1,8 +1,10 @@
 id = "part/kyosho/SC241"
 brand = "brand/kyosho"
 number = "SC241"
-name = "Pivot Ball 5.8xM2.6x11.5mm"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "5.8mmxM3 Pivot Ball 2014"
 category = "ball-end"
 ball_mm = 5.8
-name_source = "ocr"
+pack_qty = 4
+fits = [
+  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34412t2-mad-van-ct2-spop" },
+]

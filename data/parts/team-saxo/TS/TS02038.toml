@@ -2,22 +2,28 @@ id = "part/team-saxo/TS02038"
 brand = "brand/team-saxo"
 number = "TS02038"
 name = "Offset Upright Plastic Component"
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-accessories" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-accessories" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/lm-500w-parts-list" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500w-235-accessories/offset-upright-plastic-component" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_f1-180-v3-accessories/copy_of_offset-upright-plastic-component" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/offset-upright-plastic-component" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/offset-upright-plastic-component" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-future-accessories/offset-upright-plastic-component" },
+]
 includes = [
   { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/f1-180-v4-part-list" },
   { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/f1-180-v3-parts-list" },
   { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/mf-1-200-parts-list" },
   { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/f1-200-v2-parts-list" },
-]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
-  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
-  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
+  { part = "part/team-saxo/TS0104023", qty = 2, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 notes = "Spare pack on the F1-180-V5 parts list"
-links = [
-  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/offset-upright-plastic-component" },
-  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/offset-upright-plastic-component" },
-]
 category = "suspension"
 material = "plastic"

@@ -1,9 +1,15 @@
 id = "part/pr-racing/79400036"
 brand = "brand/pr-racing"
 number = "79400036"
-name = "3x36.8mm Pin"
+name = "Pin - 3 x 36.8mm"
 category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/3x36.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
-documents = ["doc/pr-racing/75400056-742"]
+pack_qty = 4
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-LW 4wd; 10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]

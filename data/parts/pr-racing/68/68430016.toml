@@ -1,6 +1,11 @@
 id = "part/pr-racing/68430016"
 brand = "brand/pr-racing"
 number = "68430016"
-name = "Slipper Pad 19mm"
+name = "SB401 Slipper Pad -19mm"
 category = "gear"
-documents = ["doc/pr-racing/77500296-724"]
+pack_qty = 2
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-LW 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

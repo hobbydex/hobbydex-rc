@@ -1,6 +1,11 @@
 id = "part/pr-racing/77500136"
 brand = "brand/pr-racing"
 number = "77500136"
-name = "RR Suspension Mount"
+name = "PR SB401-R RR Suspension Mount"
 category = "suspension"
-documents = ["doc/pr-racing/77500296-793"]
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd; 10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]

@@ -1,13 +1,21 @@
 id = "part/team-saxo/TS01160"
 brand = "brand/team-saxo"
 number = "TS01160"
-name = "TS01160"
+name = "COMPOSITE ARM BUSHING"
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-accessories" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500w-235-accessories/composite-arm-bushing" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_f1-180-v3-accessories/composite-arm-bushing" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/composite-arm-bushing" },
+]
 includes = [
   { part = "part/team-saxo/TS0104109", qty = 4, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0104109", qty = 4, source = "doc/team-saxo/f1-180-v4-part-list" },
   { part = "part/team-saxo/TS0104109", qty = 4, source = "doc/team-saxo/f1-180-v3-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
-]
 notes = "Spare pack on the F1-180-V5 parts list"
+category = "suspension"
+material = "plastic"
