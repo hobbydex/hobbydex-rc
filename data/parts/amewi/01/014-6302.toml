@@ -1,0 +1,18 @@
+id = "part/amewi/014-6302"
+brand = "brand/amewi"
+number = "014-6302"
+name = "6302 Li-Po Akku 7,4V 1300mAh"
+fits = [
+  { kit = "kit/amewi/gantry", type = "direct", source = "doc/amewi/22606-product-page" },
+  { kit = "kit/amewi/conquer", type = "direct", source = "doc/amewi/22605-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/6302-Li-Po-Akku-74V-1300mAh" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1300
+category = "battery"
