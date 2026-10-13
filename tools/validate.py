@@ -202,6 +202,11 @@ def main():
             this_year = datetime.date.today().year
             if isinstance(d.get("year"), int) and d["year"] > this_year and d.get("status") == "released":
                 errors.append(f"{path}: year {d['year']} is in the future, so status cannot be released (announced; a model year label goes in model_year)")
+            rel = str(d.get("released", ""))
+            if re.fullmatch(r"\d{4}-\d{2}(-\d{2})?", rel) and d.get("status") == "released":
+                y, mo, *dd = (int(x) for x in rel.split("-"))
+                if datetime.date(y, mo, dd[0] if dd else 1) > datetime.date.today():
+                    errors.append(f"{path}: released {rel} is still to come, so status cannot be released (announced)")
             my = d.get("model_year")
             if my is not None and not (isinstance(my, int) and 1970 <= my <= this_year + 3):
                 errors.append(f"{path}: model_year {my!r} should be a year")
