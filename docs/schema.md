@@ -129,6 +129,12 @@ or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
 from another source in that month is kept). It must agree with `year`. Never
 a document's date. For an announced release it is the planned date.
 
+`released_source`: set only when the date comes from a fan site rather than
+the maker; `"TamiyaBase"` for a Tamiya release dated from TamiyaBase (its
+owner allowed it) when Tamiya's own pages give no first-release day, with the
+model's TamiyaBase link in `links` (kind `fan-site`). The maker's own date
+wins when both exist.
+
 ## part
 
 A branded, numbered product. `number` is exactly as the manufacturer prints it,
