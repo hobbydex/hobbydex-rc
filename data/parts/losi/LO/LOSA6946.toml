@@ -1,5 +1,31 @@
 id = "part/losi/LOSA6946"
 brand = "brand/losi"
 number = "LOSA6946"
-name = "6 x 10 x 3mm Rubber Sealed"
+name = "6x10x3 Rubber Sealed Ball Bearing"
+pack_qty = 4
+former_names = ["6 x 10 x 3mm Rubber Sealed"]
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-6x10x3-rubber-sealed-ball-bearing-4-8x-8xe/LOSA6946.html" },
+]
 gtin = "660132616571"
+fits = [
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/v100", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "rubber"
+category = "bearing"

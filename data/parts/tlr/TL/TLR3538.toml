@@ -2,6 +2,13 @@ id = "part/tlr/TLR3538"
 brand = "brand/tlr"
 number = "TLR3538"
 name = "Covered 17mm Wheel Nuts, Aluminum"
-applies_to = "8B, 8"
+applies_to = "8B/8T 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-covered-17mm-wheel-nuts-aluminum-8b-8t-2.0/TLR3538.html" },
+]
 category = "nut"
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

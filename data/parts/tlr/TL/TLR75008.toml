@@ -1,9 +1,18 @@
 id = "part/tlr/TLR75008"
 brand = "brand/tlr"
 number = "TLR75008"
-name = "Silicone Diff Fluid, 200000CS"
-former_names = ["Silicon Diff Fluid, 200,000"]
+name = "Silicone Differential Fluid 200,000CS"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-differential-fluid-200000cs/TLR75008.html" },
+]
+former_names = ["Silicon Diff Fluid, 200,000", "Silicone Diff Fluid, 200000CS"]
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-200000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]
+gtin = "605482672457"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
 ]

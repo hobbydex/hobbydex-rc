@@ -1,6 +1,14 @@
 id = "part/axial/AXI-3430"
 brand = "brand/axial"
 number = "AXI-3430"
-name = "F/R Bumper Set"
+name = "Front/Rear Bumper Set"
+applies_to = "SCX10III SR5"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-front-rear-bumper-set-scx10iii-sr5/AXI-3430.html" },
+]
+former_names = ["F/R Bumper Set"]
 gtin = "660132674519"
 category = "bumper-guard"
+fits = [
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

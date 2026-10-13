@@ -1,6 +1,15 @@
 id = "part/tlr/TLR231096"
 brand = "brand/tlr"
 number = "TLR231096"
-name = "Carbon Spindle Arm Set, #1: 22X-4"
+name = "Carbon Spindle Arm Set #1"
+applies_to = "22X-4"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-carbon-spindle-arm-set-1-22x-4/TLR231096.html" },
+]
+former_names = ["Carbon Spindle Arm Set, #1: 22X-4"]
 category = "suspension"
 material = "carbon"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482671832"

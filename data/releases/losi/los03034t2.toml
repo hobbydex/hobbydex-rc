@@ -6,5 +6,23 @@ name = "1972 Chevy C10 V100 AWD Pickup Truck Brushed RTR, black"
 kind = "rtr"
 status = "discontinued"
 gtin = "605482769355"
-color = "black"
 documents = ["doc/losi/los03034-product-page", "doc/losi/los03034-v100-chevy-rtr-manual-en"]
+color = "black"
+contains = [
+  { part = "part/losi/LOS235003", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS235004", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS235015", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS235024", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS235178", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6940", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6946", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR235008", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR245007", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR245012", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5901", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5910", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5930", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5962", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA99172", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA99173", role = "option", source = "doc/losi/horizon-part-pages" },
+]

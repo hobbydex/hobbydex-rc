@@ -1,7 +1,18 @@
 id = "part/axial/AXIC4403"
 brand = "brand/axial"
 number = "AXIC4403"
-name = "Hex Button Head Shoulder Screw M3x4x10mm"
-gtin = "816874015879"
+name = "M3x4x10mm Hex Button Head Shoulder Screw"
 pack_qty = 6
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-m3x4x10mm-hex-button-head-shoulder-screw-6/AXIC4403.html" },
+]
+former_names = ["Hex Button Head Shoulder Screw M3x4x10mm"]
+gtin = "816874015879"
 category = "screw"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

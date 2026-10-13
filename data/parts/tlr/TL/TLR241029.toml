@@ -1,6 +1,15 @@
 id = "part/tlr/TLR241029"
 brand = "brand/tlr"
 number = "TLR241029"
-name = "Center Differential Mount/Shock Tool"
-applies_to = "8"
+name = "Center Differential Mounts and Shock Tools"
+applies_to = "8IGHT-X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-center-differential-mounts-and-shock-tools-8ight-x/TLR241029.html" },
+]
+former_names = ["Center Differential Mount/Shock Tool"]
 category = "tool"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482206492"

@@ -1,9 +1,16 @@
 id = "part/losi/LOS242056"
 brand = "brand/losi"
 number = "LOS242056"
-name = "Center Drive shaft St"
-gtin = "605482161784"
+name = "Center Slider Driveshaft Set"
 pack_qty = 1
-former_names = ["Center Slider Driveshaft Set"]
 applies_to = "LMT Mega"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-center-slider-driveshaft-set-1-lmt-mega/LOS242056.html" },
+]
+former_names = ["Center Drive shaft St"]
+gtin = "605482161784"
 category = "drivetrain"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

@@ -2,7 +2,13 @@ id = "part/tlr/TLR243038"
 brand = "brand/tlr"
 number = "TLR243038"
 name = "Shock Plastics"
-applies_to = "8X"
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-shock-plastics-8x-8xe/TLR243038.html" },
+]
 category = "shock"
 shock_part = "complete"
 material = "plastic"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

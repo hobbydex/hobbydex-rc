@@ -3,5 +3,13 @@ brand = "brand/tlr"
 number = "TLR-1313"
 name = "HD Turnbuckle Kit Titanium"
 applies_to = "22X-4 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-hd-turnbuckle-kit-titanium-22x-4-2.0/TLR-1313.html" },
+]
 category = "ball-end"
 material = "titanium"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "replaces", replaces = "part/tlr/TLR-1302", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
+gtin = "660132676681"

@@ -2,5 +2,16 @@ id = "part/tlr/TLR241033"
 brand = "brand/tlr"
 number = "TLR241033"
 name = "Front Bumper"
-applies_to = "8X"
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-front-bumper-8x-8xe/TLR241033.html" },
+]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+material = "plastic"
+gtin = "605482206560"

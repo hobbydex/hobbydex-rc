@@ -2,10 +2,14 @@ id = "part/losi/LOS254050"
 brand = "brand/losi"
 number = "LOS254050"
 name = "Shock Stand Off, Front"
-gtin = "605482828694"
 pack_qty = 2
 applies_to = "Super Baja Rey"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-stand-off-front-2-super-baja-rey/LOS254050.html" },
 ]
+gtin = "605482828694"
 category = "shock"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

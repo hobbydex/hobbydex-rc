@@ -1,8 +1,15 @@
 id = "part/losi/LOS241059"
 brand = "brand/losi"
 number = "LOS241059"
-name = "Fr Chassis Plate,Gr"
-gtin = "605482161807"
+name = "Front Chassis Plate, Green"
 pack_qty = 2
-applies_to = "LMT Mega"
+applies_to = "LMT Mega KS"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-front-chassis-plate-green-2-lmt-mega-ks/LOS241059.html" },
+]
+former_names = ["Fr Chassis Plate,Gr"]
+gtin = "605482161807"
 category = "chassis"
+fits = [
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

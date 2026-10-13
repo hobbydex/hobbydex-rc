@@ -2,5 +2,15 @@ id = "part/losi/LOSB5004"
 brand = "brand/losi"
 number = "LOSB5004"
 name = "Fuel Tank Lid Pull"
-applies_to = "8 2.0 RTR"
+applies_to = "8 2.0 RTR, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-fuel-tank-lid-pull-8-2.0-rtr-8x/LOSB5004.html" },
+]
 category = "engine-fuel"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+material = "plastic"
+gtin = "605482684887"

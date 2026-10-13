@@ -1,5 +1,20 @@
 id = "part/losi/LOSA9112"
 brand = "brand/losi"
 number = "LOSA9112"
-name = "Clutch Springs, Black (4)"
+name = "Clutch Springs, Black"
+pack_qty = 4
+applies_to = "8B, 8T"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-clutch-springs-black4-8b-8t/LOSA9112.html" },
+]
+former_names = ["Clutch Springs, Black (4)"]
 category = "engine-fuel"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "660132013264"

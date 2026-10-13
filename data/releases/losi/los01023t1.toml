@@ -6,8 +6,9 @@ name = "Mini 1970 Chevy Chevelle 2S 2WD RTR Brushless No Prep Drag Car (Battery 
 kind = "rtr"
 status = "discontinued"
 gtin = "605482166659"
-color = "blue"
 documents = ["doc/losi/los01023-exploded-view-multi", "doc/losi/los01023-manual-en", "doc/losi/los01023-product-page"]
+color = "blue"
 contains = [
+  { part = "part/losi/LOS235014", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/losi/los01023-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2-Channel 2.4GHz Transmitter" },
 ]

@@ -3,8 +3,21 @@ brand = "brand/tlr"
 number = "TLR237000"
 name = "5x8x2.5mm Bearings"
 pack_qty = 2
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-5x8x2.5mm-bearings-2/TLR237000.html" },
+]
 equivalent_to = [
   { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+gtin = "605482094655"
+fits = [
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22sct", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/ten-scte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

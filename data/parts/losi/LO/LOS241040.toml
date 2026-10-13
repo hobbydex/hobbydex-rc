@@ -1,7 +1,15 @@
 id = "part/losi/LOS241040"
 brand = "brand/losi"
 number = "LOS241040"
-name = "Side Cage & Lower Bar, Black"
+name = "Side Cage and Lower Bar, Black"
+applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-side-cage-and-lower-bar-black-lmt/LOS241040.html" },
+]
+former_names = ["Side Cage & Lower Bar, Black"]
 gtin = "605482718032"
-applies_to = "LM"
 category = "bumper-guard"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

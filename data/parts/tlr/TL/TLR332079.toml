@@ -1,7 +1,16 @@
 id = "part/tlr/TLR332079"
 brand = "brand/tlr"
 number = "TLR332079"
-name = "Center Bulkhead, Aluminum"
+name = "Center Bulkhead Aluminum"
 applies_to = "22X-4"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-center-bulkhead-aluminum-22x-4/TLR332079.html" },
+]
+former_names = ["Center Bulkhead, Aluminum"]
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "replaces", replaces = "part/tlr/TLR232124", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
+gtin = "605482671313"

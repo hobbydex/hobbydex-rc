@@ -6,5 +6,18 @@ name = "DBXL-E 2.0 V2 Fox 8S 4X4 RTR Brushless Desert Buggy, orange"
 kind = "rtr"
 status = "discontinued"
 gtin = "605482764657"
-color = "orange"
 documents = ["doc/losi/los05020v2-manual-en", "doc/losi/los05020v2-manual-ml", "doc/losi/los05020v2-product-page"]
+color = "orange"
+contains = [
+  { part = "part/losi/LOS255003", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS256000", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR256005", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS252039", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS252040", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS252041", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS252042", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS252043", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS252045", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA99172", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA99173", role = "option", source = "doc/losi/horizon-part-pages" },
+]

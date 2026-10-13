@@ -1,8 +1,19 @@
 id = "part/losi/LOS242053"
 brand = "brand/losi"
 number = "LOS242053"
-name = "17mm Hex Adapter w/pin"
+name = "17mm Hex Adapter with Screwpin"
 pack_qty = 4
-former_names = ["17mm Hex Adapter w/ screwpin"]
 applies_to = "LMT"
-category = "pin-clip"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-17mm-hex-adapter-with-screwpin-4-lmt/LOS242053.html" },
+]
+former_names = ["17mm Hex Adapter w/ screwpin", "17mm Hex Adapter w/pin"]
+category = "drivetrain"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482717868"
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },
+]

@@ -2,7 +2,14 @@ id = "part/losi/LOS254044"
 brand = "brand/losi"
 number = "LOS254044"
 name = "Shock Shaft, Front"
-gtin = "605482828571"
 pack_qty = 2
+applies_to = "Super Baja Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-shaft-front-2-super-baja-rey/LOS254044.html" },
+]
+gtin = "605482828571"
 category = "shock"
 shock_part = "shaft"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

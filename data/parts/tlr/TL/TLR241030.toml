@@ -1,6 +1,16 @@
 id = "part/tlr/TLR241030"
 brand = "brand/tlr"
 number = "TLR241030"
-name = "Throttle/Brake Linkage"
-applies_to = "8X"
+name = "Throttle Brake Linkage"
+applies_to = "8IGHT-X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-throttle-brake-linkage-8ight-x/TLR241030.html" },
+]
+former_names = ["Throttle/Brake Linkage"]
 category = "drivetrain"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482206508"

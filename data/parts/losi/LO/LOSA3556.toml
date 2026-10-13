@@ -1,6 +1,19 @@
 id = "part/losi/LOSA3556"
 brand = "brand/losi"
 number = "LOSA3556"
-name = "Center Differential 48T Spur LW"
-applies_to = "8B, 8T"
+name = "Center Differential 48T Spur Gear, Lightweight"
+applies_to = "8B, 8T, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-center-differential-48t-spur-gear-lightweight-8b-8t-8x/LOSA3556.html" },
+]
+former_names = ["Center Differential 48T Spur LW"]
 category = "differential"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482988848"

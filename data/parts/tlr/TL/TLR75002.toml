@@ -2,7 +2,17 @@ id = "part/tlr/TLR75002"
 brand = "brand/tlr"
 number = "TLR75002"
 name = "Silicone Diff Fluid, 60,000CS"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-diff-fluid-60000cs/TLR75002.html" },
+]
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-60000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]
+gtin = "605482628270"
+fits = [
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
 ]

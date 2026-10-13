@@ -1,6 +1,18 @@
 id = "part/tlr/TLR341009"
 brand = "brand/tlr"
 number = "TLR341009"
-name = "Aluminum Servo Horn, 25T"
+name = "Aluminum Servo Horn 25T"
+applies_to = "8IGHT-X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-aluminum-servo-horn-25t-8ight-x/TLR341009.html" },
+]
+former_names = ["Aluminum Servo Horn, 25T"]
 category = "steering"
 material = "aluminium"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482207369"

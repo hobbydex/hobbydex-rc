@@ -1,0 +1,15 @@
+id = "part/axial/AXI-2199"
+brand = "brand/axial"
+number = "AXI-2199"
+name = "32P Overdrive Ring/Pinion 13T/38T (6.30:1)"
+applies_to = "AXP8"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-32p-overdrive-ring-pinion-13t-38t-6.301-axp8/AXI-2199.html" },
+]
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-product-catalogue" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/32dp-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"

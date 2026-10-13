@@ -2,7 +2,15 @@ id = "part/losi/LOS254035"
 brand = "brand/losi"
 number = "LOS254035"
 name = "Shock Pistons"
-gtin = "605482828250"
 pack_qty = 8
+applies_to = "Super Baja Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-pistons-8-super-baja-rey/LOS254035.html" },
+]
+gtin = "605482828250"
 category = "shock"
 shock_part = "piston"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

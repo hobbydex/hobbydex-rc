@@ -2,7 +2,14 @@ id = "part/losi/LOS242051"
 brand = "brand/losi"
 number = "LOS242051"
 name = "Stub Axle, Rear"
-gtin = "605482718285"
 pack_qty = 2
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-stub-axle-rear-2-lmt/LOS242051.html" },
+]
+gtin = "605482718285"
 category = "drivetrain"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

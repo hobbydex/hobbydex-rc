@@ -1,7 +1,16 @@
 id = "part/losi/LOS244012"
 brand = "brand/losi"
 number = "LOS244012"
-name = "Lower 4 Link Bar St 15\"\"WB"
+name = "Lower 4-Link Bar Set, 15\" Wheelbase"
+pack_qty = 4
+applies_to = "LMT Mega"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-lower-4-link-bar-set-15-wheelbase-4-lmt-mega/LOS244012.html" },
+]
+former_names = ["Lower 4 Link Bar St 15\"\"WB", "Lower 4 Link Bar St 15\"\"WB ( 4)"]
 gtin = "605482161821"
-former_names = ["Lower 4 Link Bar St 15\"\"WB ( 4)"]
 category = "ball-end"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

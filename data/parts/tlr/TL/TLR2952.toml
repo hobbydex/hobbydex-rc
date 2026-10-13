@@ -1,6 +1,14 @@
 id = "part/tlr/TLR2952"
 brand = "brand/tlr"
 number = "TLR2952"
-name = "Silicone Diff Grease, 8cc"
-applies_to = "22"
+name = "Silicone Differential Grease, 8cc"
+applies_to = "22/22-4"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-differential-grease-8cc-22-22-4/TLR2952.html" },
+]
+former_names = ["Silicone Diff Grease, 8cc"]
 category = "oil-grease"
+fits = [
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

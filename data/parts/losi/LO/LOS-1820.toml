@@ -1,10 +1,20 @@
 id = "part/losi/LOS-1820"
 brand = "brand/losi"
 number = "LOS-1820"
-name = "Beadlock Rings, Snap in, Green"
-gtin = "660132983734"
+name = "Snap-in Beadlock Rings, Green"
 pack_qty = 4
 applies_to = "LMT 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-snap-in-beadlock-rings-green-4-lmt-2.0/LOS-1820.html" },
+]
+former_names = ["Beadlock Rings, Snap in, Green"]
+gtin = "660132983734"
 category = "wheel"
 beadlock = true
 color = "green"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for LMT 2.0 Grave Digger 4X4 Solid Axle Brushless Monster Truck RTR, green are 17 mm" },
+]

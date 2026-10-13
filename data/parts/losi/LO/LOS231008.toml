@@ -2,10 +2,14 @@ id = "part/losi/LOS231008"
 brand = "brand/losi"
 number = "LOS231008"
 name = "Servo Mount, Steering Servo Set Plastic"
-gtin = "605482622919"
 applies_to = "Baja Rey"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-servo-mount-steering-servo-set-plastic-baja-rey/LOS231008.html" },
 ]
+gtin = "605482622919"
 category = "steering"
 material = "plastic"
+fits = [
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

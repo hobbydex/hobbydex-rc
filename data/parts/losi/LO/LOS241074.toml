@@ -1,8 +1,17 @@
 id = "part/losi/LOS241074"
 brand = "brand/losi"
 number = "LOS241074"
-name = "Aluminum Crossbar & Spacer, Cab Section, Black (6)"
-gtin = "605482169957"
+name = "Aluminum Crossbar & Spacer, Cab Section, Black"
+pack_qty = 6
 applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-crossbar-and-spacer-cab-section-black-6-tlr-tuned-lmt/LOS241074.html" },
+]
+former_names = ["Aluminum Crossbar & Spacer, Cab Section, Black (6)"]
+gtin = "605482169957"
 category = "washer-shim"
 material = "aluminium"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]

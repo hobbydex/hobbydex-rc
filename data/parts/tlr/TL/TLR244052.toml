@@ -1,7 +1,20 @@
 id = "part/tlr/TLR244052"
 brand = "brand/tlr"
 number = "TLR244052"
-name = "Suspension Ball, 6.8mm (4)"
+name = "Suspension Ball 6.8mm"
+pack_qty = 4
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-suspension-ball-6.8mm-4-8x-8xe/TLR244052.html" },
+]
+former_names = ["Suspension Ball, 6.8mm (4)"]
 category = "ball-end"
 ball_mm = 6.8
 ball_type = "through-hole"
+fits = [
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482206812"

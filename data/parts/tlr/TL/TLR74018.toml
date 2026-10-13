@@ -1,9 +1,20 @@
 id = "part/tlr/TLR74018"
 brand = "brand/tlr"
 number = "TLR74018"
-name = "SIL SHOCK OIL,100WT,1325CST,2OZ"
+name = "Silicone Shock Oil, 100WT, 1325CST, 2oz"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-shock-oil-100wt-1325cst-2oz/TLR74018.html" },
+]
+former_names = ["SIL SHOCK OIL,100WT,1325CST,2OZ"]
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-1325cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
 ]
 viscosity_wt = 100
+gtin = "605482093238"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]

@@ -2,9 +2,15 @@ id = "part/losi/LOS-1841"
 brand = "brand/losi"
 number = "LOS-1841"
 name = "Shock Spring, Internal, 1.6lb"
-gtin = "660132983949"
 pack_qty = 4
 applies_to = "LMT 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-spring-internal-1.6lb-4-lmt-2.0/LOS-1841.html" },
+]
+gtin = "660132983949"
 category = "shock-spring"
 rate_lb_in = 1.6
 range = "losi/shock-spring-internal-rate-springs"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

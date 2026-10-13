@@ -2,10 +2,19 @@ id = "part/axial/AXIC1213"
 brand = "brand/axial"
 number = "AXIC1213"
 name = "Bearing 5x8x2.5mm"
-gtin = "877493008796"
 pack_qty = 2
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-bearing-5x8x2.5mm-2/AXIC1213.html" },
+]
+gtin = "877493008796"
 equivalent_to = [
   { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/utb18", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

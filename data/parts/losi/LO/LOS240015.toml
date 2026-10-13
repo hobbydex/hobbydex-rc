@@ -1,7 +1,14 @@
 id = "part/losi/LOS240015"
 brand = "brand/losi"
 number = "LOS240015"
-name = "Fr Headlight Set,GraveDigger"
-gtin = "605482717929"
-former_names = ["Front LED Headlight Set, Grave Digger"]
+name = "Front LED Headlight Set, Grave Digger"
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-front-led-headlight-set-grave-digger-lmt/LOS240015.html" },
+]
+former_names = ["Fr Headlight Set,GraveDigger"]
+gtin = "605482717929"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+category = "electronics"

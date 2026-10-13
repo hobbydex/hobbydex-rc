@@ -1,6 +1,17 @@
 id = "part/tlr/TLR143005"
 brand = "brand/tlr"
 number = "TLR143005"
-name = "ShockSpring,White,2.7lb"
+name = "Shock Spring, White, 2.7 lbs"
+pack_qty = 4
+applies_to = "TTLMT"
+color = "white"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-shock-spring-white-2.7-lbs-4-ttlmt/TLR143005.html" },
+]
+former_names = ["ShockSpring,White,2.7lb"]
 category = "shock-spring"
 rate_lb_in = 2.7
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]
+range = "tlr/shock-spring-rate-springs"

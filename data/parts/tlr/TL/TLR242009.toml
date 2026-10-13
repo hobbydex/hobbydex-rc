@@ -1,6 +1,17 @@
 id = "part/tlr/TLR242009"
 brand = "brand/tlr"
 number = "TLR242009"
-name = "Center Dog Bone"
-applies_to = "8E 3.0"
+name = "Rear Center Dog Bone"
+applies_to = "8E 3.0, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-rear-center-dog-bone-8e-3.0-8x/TLR242009.html" },
+]
+former_names = ["Center Dog Bone"]
 category = "drivetrain"
+fits = [
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482109441"

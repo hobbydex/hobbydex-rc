@@ -3,5 +3,11 @@ brand = "brand/tlr"
 number = "TLR244037"
 name = "Rear Hub"
 pack_qty = 2
-applies_to = "8X"
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-rear-hub-2-8x-8xe/TLR244037.html" },
+]
 category = "suspension"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

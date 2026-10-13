@@ -1,6 +1,13 @@
 id = "part/tlr/TLR242045"
 brand = "brand/tlr"
 number = "TLR242045"
-name = "Heavy Duty Differential Case, V2: 8X"
-former_names = ["Heavy Duty Diff Case,V2"]
+name = "Heavy Duty Differential Case, V2"
+applies_to = "8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-heavy-duty-differential-case-v2-8x/TLR242045.html" },
+]
+former_names = ["Heavy Duty Diff Case,V2", "Heavy Duty Differential Case, V2: 8X"]
 category = "differential"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

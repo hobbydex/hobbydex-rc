@@ -3,6 +3,18 @@ brand = "brand/losi"
 number = "LOSA9108"
 name = "Clutch Shoes, Lightened Aluminum"
 pack_qty = 2
-applies_to = "8B, 8T"
+applies_to = "8B, 8T, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-clutch-shoes-lightened-aluminum-2-8b-8t-8x/LOSA9108.html" },
+]
 category = "engine-fuel"
 material = "aluminium"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "660132013257"

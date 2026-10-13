@@ -1,6 +1,15 @@
 id = "part/losi/LOS244016"
 brand = "brand/losi"
 number = "LOS244016"
-name = "Spindle Carrier Set,5Deg, AL (L/R)"
+name = "Aluminum Spindle Carrier Set, 5 Degree (L/R)"
+applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-spindle-carrier-set-5-degree-l-r-tlr-tuned-lmt/LOS244016.html" },
+]
+former_names = ["Spindle Carrier Set,5Deg, AL (L/R)"]
 gtin = "605482169902"
-applies_to = "LMT, TTLMT"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+material = "aluminium"

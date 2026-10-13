@@ -1,10 +1,31 @@
 id = "part/tlr/TLR74009"
 brand = "brand/tlr"
 number = "TLR74009"
-name = "SIL SHOCK OIL,37.5WT,468CST,2OZ"
-former_names = ["Silicone Shock Oil, 37.5wt"]
+name = "Silicone Shock Oil, 37.5WT, 468CST, 2oz"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-shock-oil-37.5wt-468cst-2oz/TLR74009.html" },
+]
+former_names = ["SIL SHOCK OIL,37.5WT,468CST,2OZ", "Silicone Shock Oil, 37.5wt"]
 viscosity_wt = 37.5
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-468cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]
+gtin = "605482093146"
+fits = [
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/22s-sct", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22sct", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/ten-scte", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
 ]

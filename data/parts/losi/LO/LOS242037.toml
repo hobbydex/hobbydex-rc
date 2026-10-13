@@ -1,8 +1,16 @@
 id = "part/losi/LOS242037"
 brand = "brand/losi"
 number = "LOS242037"
-name = "Internal Diff Rebuild Kit"
+name = "Internal Differential Rebuild Kit"
 pack_qty = 1
-former_names = ["Internal Diff Rebuild Kit LMT"]
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-internal-differential-rebuild-kit-1-lmt/LOS242037.html" },
+]
+former_names = ["Internal Diff Rebuild Kit", "Internal Diff Rebuild Kit LMT"]
 category = "differential"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482718360"

@@ -1,6 +1,15 @@
 id = "part/tlr/TLR234117"
 brand = "brand/tlr"
 number = "TLR234117"
-name = "Spindle Bushing Set, Aluminum 22X-4"
+name = "Spindle Bushing Set Aluminum"
+pack_qty = 8
+applies_to = "22X-4"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-spindle-bushing-set-aluminum-8-22x-4/TLR234117.html" },
+]
+former_names = ["Spindle Bushing Set, Aluminum 22X-4"]
 category = "suspension"
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

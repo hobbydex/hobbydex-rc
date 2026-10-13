@@ -2,14 +2,23 @@ id = "part/losi/LOS235005"
 brand = "brand/losi"
 number = "LOS235005"
 name = "Button Head Screws M2.5 x 6mm"
-gtin = "605482623688"
 pack_qty = 10
 former_names = ["Button Head Screws M2.5x6mm"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-button-head-screws-m2.5-x-6mm-10/LOS235005.html" },
 ]
+gtin = "605482623688"
 equivalent_to = [
   { spec = "spec/screw/m2.5x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/losi/22s-late-model", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-sprint", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rzr-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

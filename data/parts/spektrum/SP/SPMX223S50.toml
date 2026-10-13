@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMX223S50"
+brand = "brand/spektrum"
+number = "SPMX223S50"
+name = "11.1V 2200mAh 3S 50C Smart G2 LiPo Battery"
+applies_to = "IC3"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-11.1v-2200mah-3s-50c-smart-g2-lipo-battery-ic3/SPMX223S50.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2200
+c_rating = 50
+category = "battery"
