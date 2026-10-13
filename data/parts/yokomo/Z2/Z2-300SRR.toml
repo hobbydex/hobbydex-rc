@@ -4,5 +4,8 @@ number = "Z2-300SRR"
 name = "Rear Suspension Mount (Rear Side) (Steel) for YZ-2"
 name_ja = "YZ-2 用 リヤ サスマウント (後側) (スティール製)"
 material = "steel"
-notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
 category = "suspension"
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
+fits = [
+  { kit = "kit/yokomo/yz-2", type = "replaces", replaces = "part/yokomo/Z2-300RR", source = "doc/yokomo/yz-2-dt-instruction-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -3,8 +3,11 @@ brand = "brand/yokomo"
 number = "B4-821W"
 name = "Front Wheel (White)"
 name_ja = "フロント ホイル (ホワイト)"
-notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
 category = "wheel"
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
 position = "front"
 color = "white"
 range = "yokomo/b4-821-front-wheel-b59f-colours"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for YZ-4 (B-YZ4) are 12 mm" },
+]

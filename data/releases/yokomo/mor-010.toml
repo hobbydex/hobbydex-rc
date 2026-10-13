@@ -6,7 +6,7 @@ name = "MO1.0"
 name_ja = "マスターオフロード MO1.0 組み立てシャーシキット"
 kind = "kit"
 status = "discontinued"
-documents = ["doc/yokomo/mo2.0-instruction-manual"]
+documents = ["doc/yokomo/mo2.0-instruction-manual", "doc/yokomo/mo1.0-manual-supplement"]
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/mor-010" },
 ]
@@ -30,6 +30,7 @@ contains = [
   { part = "part/yokomo/BB-1510A", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/BB-63F-2A", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/BM-010BCA", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
+  { part = "part/yokomo/BM-413", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
   { part = "part/yokomo/BM-414WAA", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/BM-S116TA", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/BM-S143A", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
@@ -62,6 +63,12 @@ contains = [
   { part = "part/yokomo/MO-101", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/MO-101LW", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/MO-415P1", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
+  { part = "part/yokomo/RP-083BKA", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/RP-083GA", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/RP-083OA", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/RP-084BKA", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/RP-084OA", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/RP-087-2A", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
   { part = "part/yokomo/RP-088GA", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/RP-088OA", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/RP-088RA", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
@@ -178,6 +185,9 @@ contains = [
   { part = "part/yokomo/SD-TB48NA", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/SD-TB52NA", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/SP-011HA", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
+  { part = "part/yokomo/YAS-1000A", role = "kit", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YAS-650A", role = "kit", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YAS-675", role = "kit", source = "doc/yokomo/mo1.0-manual-supplement" },
   { part = "part/yokomo/YS-1000B", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/YS-1500A", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/YS-2000B", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
@@ -200,6 +210,14 @@ contains = [
   { part = "part/yokomo/YS-8BHA", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/YS-900B", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/YS-950B", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
+  { part = "part/yokomo/YS-A1175", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YS-A1200", role = "kit", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YS-A750", role = "kit", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YS-A775", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YS-A800", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YS-A850", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YS-A875", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/YS-A900", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
   { part = "part/yokomo/YT-RWS10A", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/Z2-009R35A", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/Z2-009R3A", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
@@ -253,6 +271,10 @@ contains = [
   { part = "part/yokomo/ZC-S550A", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/ZC-SS43LFA", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/ZC-T16MA", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
+  { part = "part/yokomo/ZC-TB39C", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/ZC-TB45C", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/ZC-TB48C", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
+  { part = "part/yokomo/ZC-TB52C", role = "option", source = "doc/yokomo/mo1.0-manual-supplement" },
   { part = "part/yokomo/ZR-200GA", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/ZS-412SBK", role = "kit", source = "doc/yokomo/mo2.0-instruction-manual" },
   { part = "part/yokomo/ZS-GWBA", role = "option", source = "doc/yokomo/mo2.0-instruction-manual" },
