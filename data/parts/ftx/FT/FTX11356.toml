@@ -1,9 +1,14 @@
 id = "part/ftx/FTX11356"
 brand = "brand/ftx"
 number = "FTX11356"
-name = "Pin-2*12mm"
+name = "Rally MK2RS Pin-2 X 12mm"
 pack_qty = 4
-notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+former_names = ["Pin-2*12mm"]
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-mk2rs-spares/ftx-rally-mk2rs-pin" },
+]
 category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/2x12", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },

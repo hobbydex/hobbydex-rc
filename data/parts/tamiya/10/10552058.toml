@@ -1,10 +1,15 @@
 id = "part/tamiya/10552058"
 brand = "brand/tamiya"
 number = "10552058"
-name = "830 Plastic Bening"
+name = "830 Plastic Bearing"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/15762-10552058", kind = "fan-site" },
 ]
 name_source = "ocr"
 material = "plastic"
+former_names = ["830 Plastic Bening"]
+equivalent_to = [
+  { spec = "spec/bearing/3x8x3", match = "close", notes = "A plain plastic bushing, Tamiya size 830; the 3x8x3 ball bearing replaces it" },
+]
+category = "bearing"

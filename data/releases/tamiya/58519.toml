@@ -6,10 +6,12 @@ name = "Toyota 4x4 Pick-Up Bruiser (RN36)"
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58519-manual", "doc/tamiya/58519-product-page", "doc/tamiya/58519-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/58519-manual", "doc/tamiya/58519-product-page", "doc/tamiya/58519-product-page-ja", "doc/tamiya/newitems-month", "doc/tamiya/product-classes"]
 contains = [
+  { part = "part/tamiya/13455308", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/13485", role = "kit", source = "doc/tamiya/58519-manual", step = "BC43" },
   { part = "part/tamiya/13485196", role = "kit", source = "doc/tamiya/58519-manual" },
+  { part = "part/tamiya/13485199", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/13585060", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/14305048", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/14305131", role = "kit", source = "doc/tamiya/58519-manual" },
@@ -17,6 +19,7 @@ contains = [
   { part = "part/tamiya/16008008", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/16275002", role = "kit", source = "doc/tamiya/58519-manual", step = "BD19" },
   { part = "part/tamiya/17175133", role = "kit", source = "doc/tamiya/58519-manual" },
+  { part = "part/tamiya/18085926", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19000361", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19005758", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19115336", role = "kit", source = "doc/tamiya/58519-manual" },
@@ -25,6 +28,7 @@ contains = [
   { part = "part/tamiya/19415929", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19804", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19804109", role = "kit", source = "doc/tamiya/58519-manual" },
+  { part = "part/tamiya/19804155", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19804158", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19804189", role = "kit", source = "doc/tamiya/58519-manual", step = "BB2" },
   { part = "part/tamiya/19804504", role = "kit", source = "doc/tamiya/58519-manual", step = "BA41" },
@@ -32,13 +36,16 @@ contains = [
   { part = "part/tamiya/19804587", role = "kit", source = "doc/tamiya/58519-manual", qty = 2, step = "BA22" },
   { part = "part/tamiya/19804593", role = "kit", source = "doc/tamiya/58519-manual", step = "GA38" },
   { part = "part/tamiya/19804598", role = "kit", source = "doc/tamiya/58519-manual", step = "BB8" },
+  { part = "part/tamiya/19804609", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19804613", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19804614", role = "kit", source = "doc/tamiya/58519-manual" },
+  { part = "part/tamiya/19805612", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19805653", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19805746", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19805779", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19805883", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19805965", role = "kit", source = "doc/tamiya/58519-manual" },
+  { part = "part/tamiya/19808013", role = "kit", source = "doc/tamiya/58519-manual" },
   { part = "part/tamiya/19808180", role = "kit", source = "doc/tamiya/58519-manual", qty = 2, step = "BC12" },
   { part = "part/tamiya/19808187", role = "kit", source = "doc/tamiya/58519-manual", qty = 2, step = "BD11" },
   { part = "part/tamiya/19808754", role = "kit", source = "doc/tamiya/58519-manual", qty = 10, step = "BD8" },

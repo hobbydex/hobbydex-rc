@@ -1,8 +1,21 @@
 id = "part/team-saxo/R168-2RS"
 brand = "brand/team-saxo"
 number = "R168-2RS"
-name = "R168-2RS"
-notes = "Piece of pack R168-2RS-TS on the F1-180-V5 parts list; the list gives no name"
+name = "Inner cover bearing 6.35*9.525*3.175"
+pack_qty = 10
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-accessories" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
+  { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { kit = "kit/team-saxo/mgt-225", type = "direct", source = "doc/team-saxo/mgt-225-mgt-210-accessories" },
+  { kit = "kit/team-saxo/mgt-210", type = "direct", source = "doc/team-saxo/mgt-225-mgt-210-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500w-235-accessories/inner-cover-bearing-6-35-9-525-3-175-10" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mgt-225-mgt-210-accessories/inner-cover-bearing-6-35-9-525-3-175-10" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/servo/bearing/inner-cover-bearing-6-35-9-525-3-175-10" },
+]
 includes = [
   { part = "part/team-saxo/R168-2RS-1", qty = 10, source = "doc/team-saxo/f1-180-v4-part-list" },
   { part = "part/team-saxo/R168-2RS", qty = 10, source = "doc/team-saxo/f1-180-v3-parts-list" },
@@ -10,9 +23,5 @@ includes = [
   { part = "part/team-saxo/MR106-OR", qty = 10, source = "doc/team-saxo/f1-future-parts-list" },
   { part = "part/team-saxo/MR168-2RS", qty = 10, source = "doc/team-saxo/gt-500w-v2-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
-  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-parts-list" },
-  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
-  { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
-]
+notes = "Spare pack on the F1-180-V4 parts list"
+category = "bearing"
