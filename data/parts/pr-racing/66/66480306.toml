@@ -1,6 +1,11 @@
 id = "part/pr-racing/66480306"
 brand = "brand/pr-racing"
 number = "66480306"
-name = "Slipper Pad 11mm"
+name = "Slipper Pad -11mm (High Friction)"
 category = "gear"
-documents = ["doc/pr-racing/77500296-724"]
+pack_qty = 2
+fits = [
+  { kit = "kit/pr-racing/s1", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR S1"
+documents = ["doc/pr-racing/pr-rc-com"]

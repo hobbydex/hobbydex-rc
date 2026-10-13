@@ -1,6 +1,11 @@
 id = "part/pr-racing/74500036"
 brand = "brand/pr-racing"
 number = "74500036"
-name = "ESC Weight"
+name = "PRB10 ESC Weight carbon"
 category = "electronics"
-documents = ["doc/pr-racing/75400057b-762"]
+material = "carbon"
+fits = [
+  { kit = "kit/pr-racing/b10r", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR B10R"
+documents = ["doc/pr-racing/pr-rc-com"]

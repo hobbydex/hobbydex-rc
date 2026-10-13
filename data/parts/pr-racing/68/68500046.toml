@@ -1,6 +1,10 @@
 id = "part/pr-racing/68500046"
 brand = "brand/pr-racing"
 number = "68500046"
-name = "Rear Lower gull Wishbone"
+name = "SB401-R Rear Lower gull Wishbone-(medium hardness)"
 category = "suspension"
-documents = ["doc/pr-racing/77500296-793"]
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

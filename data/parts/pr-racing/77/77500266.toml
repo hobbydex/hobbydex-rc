@@ -1,7 +1,12 @@
 id = "part/pr-racing/77500266"
 brand = "brand/pr-racing"
 number = "77500266"
-name = "Ball Studs"
-category = "ball-end"
+name = "Steering Knuckle Bushing2.3mm (aluminum)2pcs +0.8mm(steel)2pcs"
+category = "steering"
 ball_type = "stud"
-documents = ["doc/pr-racing/77500346-701"]
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd; 10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]

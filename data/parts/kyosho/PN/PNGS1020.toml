@@ -1,0 +1,14 @@
+id = "part/kyosho/PNGS1020"
+brand = "brand/kyosho"
+number = "PNGS1020"
+name = "Steel Pinion Gear (20T/1.0M/φ 5.0)"
+fits = [
+  { kit = "kit/kyosho/kb10l", type = "direct", source = "doc/kyosho/34703-kb10l-tacoma-spop" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod1-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"
+category = "pinion"
+teeth = 20
+module = 1

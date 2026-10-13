@@ -7,8 +7,9 @@ year = 2007
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58391-manual", "doc/tamiya/58391-product-page", "doc/tamiya/58391-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/58391-manual", "doc/tamiya/58391-product-page", "doc/tamiya/58391-product-page-ja", "doc/tamiya/newitems-month", "doc/tamiya/product-classes"]
 contains = [
+  { part = "part/tamiya/10005116", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/10006116", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/10225001", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/10555015", role = "kit", source = "doc/tamiya/58391-manual", qty = 10, step = "MS1" },
@@ -22,7 +23,7 @@ contains = [
   { part = "part/tamiya/13455134", role = "kit", source = "doc/tamiya/58391-manual", step = "MR9" },
   { part = "part/tamiya/13515001", role = "kit", source = "doc/tamiya/58391-manual", step = "MR7" },
   { part = "part/tamiya/13515003", role = "kit", source = "doc/tamiya/58391-manual", step = "MR8" },
-  { part = "part/tamiya/13580028", role = "kit", source = "doc/tamiya/58391-manual", qty = 1, step = "MR4" },
+  { part = "part/tamiya/13580028", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/14305118", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/14305119", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/58391-manual", step = "MT4" },
@@ -52,7 +53,7 @@ contains = [
   { part = "part/tamiya/19400641", role = "kit", source = "doc/tamiya/58391-manual", step = "MD1, MD14" },
   { part = "part/tamiya/19440510", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/19440633", role = "kit", source = "doc/tamiya/58391-manual", qty = 2, step = "MR18" },
-  { part = "part/tamiya/19443023", role = "kit", source = "doc/tamiya/58391-manual", qty = 2, step = "BC2" },
+  { part = "part/tamiya/19443023", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/19465717", role = "kit", source = "doc/tamiya/58391-manual", step = "BA1, BA7" },
   { part = "part/tamiya/19465718", role = "kit", source = "doc/tamiya/58391-manual", step = "BB1, BB7" },
   { part = "part/tamiya/19465719", role = "kit", source = "doc/tamiya/58391-manual", step = "BC1, BC7" },
@@ -80,8 +81,8 @@ contains = [
   { part = "part/tamiya/19805754", role = "kit", source = "doc/tamiya/58391-manual", qty = 10, step = "BB4" },
   { part = "part/tamiya/19805756", role = "kit", source = "doc/tamiya/58391-manual", qty = 4, step = "MS3" },
   { part = "part/tamiya/19805758", role = "kit", source = "doc/tamiya/58391-manual", qty = 5, step = "BC5" },
-  { part = "part/tamiya/19805825", role = "kit", source = "doc/tamiya/58391-manual" },
-  { part = "part/tamiya/19805895", role = "kit", source = "doc/tamiya/58391-manual", qty = 10, step = "BA3" },
+  { part = "part/tamiya/19805825", role = "kit", source = "doc/tamiya/58391-manual", qty = 5, step = "MB3" },
+  { part = "part/tamiya/19805895", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/19805897", role = "kit", source = "doc/tamiya/58391-manual", qty = 10, step = "BD2" },
   { part = "part/tamiya/19805922", role = "kit", source = "doc/tamiya/58391-manual", qty = 10, step = "MD2" },
   { part = "part/tamiya/19805976", role = "kit", source = "doc/tamiya/58391-manual", qty = 4, step = "MS2" },
@@ -96,7 +97,7 @@ contains = [
   { part = "part/tamiya/19808135", role = "kit", source = "doc/tamiya/58391-manual", qty = 4, step = "MS6" },
   { part = "part/tamiya/19808136", role = "kit", source = "doc/tamiya/58391-manual", qty = 2, step = "MD13" },
   { part = "part/tamiya/19808137", role = "kit", source = "doc/tamiya/58391-manual", qty = 2, step = "MD14" },
-  { part = "part/tamiya/19808138", role = "kit", source = "doc/tamiya/58391-manual" },
+  { part = "part/tamiya/19808138", role = "kit", source = "doc/tamiya/58391-manual", qty = 2, step = "MD9" },
   { part = "part/tamiya/19808139", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/19808140", role = "kit", source = "doc/tamiya/58391-manual", qty = 2, step = "MD7" },
   { part = "part/tamiya/19808141", role = "kit", source = "doc/tamiya/58391-manual", qty = 2, step = "MD6" },
@@ -106,7 +107,7 @@ contains = [
   { part = "part/tamiya/50038", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/50171", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/50195", role = "kit", source = "doc/tamiya/58391-manual" },
-  { part = "part/tamiya/50197", role = "kit", source = "doc/tamiya/58391-manual", qty = 5, step = "MT2" },
+  { part = "part/tamiya/50197", role = "kit", source = "doc/tamiya/58391-manual", qty = 15, step = "MT2, MT3" },
   { part = "part/tamiya/50204", role = "kit", source = "doc/tamiya/58391-manual" },
   { part = "part/tamiya/50380", role = "kit", source = "doc/tamiya/58391-manual", qty = 19, step = "BC6, BD4" },
   { part = "part/tamiya/50575", role = "kit", source = "doc/tamiya/58391-manual", qty = 5, step = "BB3" },

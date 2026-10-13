@@ -1,9 +1,15 @@
 id = "part/pr-racing/79400086"
 brand = "brand/pr-racing"
 number = "79400086"
-name = "pin 2x10.8mm"
+name = "Pin 2 x 9.8mm"
 category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/2x10.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+  { spec = "spec/pin/2x9.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
-documents = ["doc/pr-racing/67510037-745"]
+pack_qty = 4
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-LW 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

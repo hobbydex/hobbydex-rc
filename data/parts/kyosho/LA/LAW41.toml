@@ -6,3 +6,8 @@ name_ja = "アルミバッテリーポストセット"
 category = "chassis"
 documents = ["doc/kyosho/law41-41gm-alumi-battery-postset"]
 material = "aluminium"
+pack_qty = 2
+fits = [
+  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30045-t01-lazer-zx-5-fs2-spop" },
+  { kit = "kit/kyosho/lazer-zx6", type = "direct", source = "doc/kyosho/30046-lazer-zx6-spop" },
+]

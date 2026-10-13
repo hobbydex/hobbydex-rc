@@ -2,6 +2,7 @@ id = "part/kyosho/IFW502-01B"
 brand = "brand/kyosho"
 number = "IFW502-01B"
 name = "Cooling Fan Set (Hi-Speed Type)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "electronics"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
+]

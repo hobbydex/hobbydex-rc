@@ -1,12 +1,18 @@
 id = "part/team-saxo/TS01156"
 brand = "brand/team-saxo"
 number = "TS01156"
-name = "TS01156"
+name = "Mount Post Φ6.5×26.5MM"
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-accessories" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_f1-180-v3-accessories/mount-post-ph6-5x26.5mm" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/mount-post-ph6-5x26.5mm" },
+]
 includes = [
   { part = "part/team-saxo/TS0101051", qty = 1, source = "doc/team-saxo/f1-180-v4-part-list" },
   { part = "part/team-saxo/TS0101051", qty = 1, source = "doc/team-saxo/f1-180-v3-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
-]
 notes = "Spare pack on the F1-180-V4 parts list"
+category = "chassis"

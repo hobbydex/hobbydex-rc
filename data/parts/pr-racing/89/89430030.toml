@@ -1,10 +1,15 @@
 id = "part/pr-racing/89430030"
 brand = "brand/pr-racing"
 number = "89430030"
-name = "10x15x4mm Ball Bearing"
+name = "10x15x4mm-ZZ Ball Bearing"
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
-documents = ["doc/pr-racing/67510037-745"]
+seal = "metal"
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

@@ -1,12 +1,17 @@
 id = "part/team-saxo/TS01151"
 brand = "brand/team-saxo"
 number = "TS01151"
-name = "TS01151"
+name = "ARM MOUNT PLATE - 2.5MM GRAPHITE"
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_f1-180-v3-accessories/arm-mount-plate-2-5mm-graphite" },
+]
 includes = [
   { part = "part/team-saxo/TS0103039", qty = 1, source = "doc/team-saxo/f1-180-v4-part-list" },
   { part = "part/team-saxo/TS0103039", qty = 1, source = "doc/team-saxo/f1-180-v3-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
-]
 notes = "Spare pack on the F1-180-V4 parts list"
+category = "suspension"
+material = "carbon"

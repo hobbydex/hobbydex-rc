@@ -2,6 +2,7 @@ id = "part/fast-eddy/TFE10380"
 brand = "brand/fast-eddy"
 number = "TFE10380"
 name = "XRAY NT1 ’27 Ceramic Sealed Bearing Kit"
+gtin = "737558926246"
 includes = [
   { spec = "spec/bearing/5x8x2.5", qty = 10 },
   { spec = "spec/bearing/flanged-5x8x2.5", qty = 2 },
@@ -15,6 +16,9 @@ category_source = "curated"
 material = "ceramic"
 seal = "rubber"
 applies_to = "XRAY NT1 ’27"
+fits = [
+  { kit = "kit/xray/nt1", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the XRAY NT1 ’27 (link_car_kits.py)" },
+]
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/xray-nt1-27-ceramic-sealed-bearing-kit" },
 ]

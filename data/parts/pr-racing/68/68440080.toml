@@ -1,6 +1,16 @@
 id = "part/pr-racing/68440080"
 brand = "brand/pr-racing"
 number = "68440080"
-name = "Wheel Hex 5.2mm"
+name = "Aluminium Clamping Wheel Hex 12mm x 5.2mm"
 category = "drivetrain"
-documents = ["doc/pr-racing/69000045-797"]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+material = "aluminium"
+pack_qty = 2
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd; 10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]

@@ -1,11 +1,15 @@
 id = "part/team-saxo/TS04006"
 brand = "brand/team-saxo"
 number = "TS04006"
-name = "TS04006"
+name = "Front Suspension Chassis"
+fits = [
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-future-accessories/front-suspension-chassis" },
+]
 includes = [
   { part = "part/team-saxo/TS0403006", qty = 1, source = "doc/team-saxo/f1-future-parts-list" },
 ]
-fits = [
-  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
-]
 notes = "Spare pack on the F1-FUTURE parts list"
+category = "suspension"

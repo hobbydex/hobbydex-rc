@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/4x8x3" },
 ]
 applies_to = "ECX RC Barrage 4wd (ECX01011)"
+fits = [
+  { kit = "kit/ecx/barrage", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the ECX RC Barrage 4wd (ECX01011) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/ecx009r-ecx-rc-barrage-4wd-rubber-shielded-bearings/" },

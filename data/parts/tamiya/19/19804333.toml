@@ -1,9 +1,15 @@
 id = "part/tamiya/19804333"
 brand = "brand/tamiya"
 number = "19804333"
-name = "ea hep Bret"
+name = "3x40mm Cap Screw"
+former_names = ["ea hep Bret"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13197-19804333", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x40-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

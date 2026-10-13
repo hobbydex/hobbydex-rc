@@ -2,6 +2,21 @@ id = "part/team-saxo/TS01091"
 brand = "brand/team-saxo"
 number = "TS01091"
 name = "Front axle"
+fits = [
+  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-accessories" },
+  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
+  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
+  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-accessories" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/gt-500lm-accessories" },
+]
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_gt-500w-235-accessories/front-axle" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/copy_of_f1-180-v3-accessories/front-axle" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/front-axle" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/front-axle" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-future-accessories/front-axle" },
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/gt-500lm/front-axle" },
+]
 includes = [
   { part = "part/team-saxo/TS0102015", qty = 2, source = "doc/team-saxo/f1-180-v5-parts-list" },
   { part = "part/team-saxo/TS0102015", qty = 2, source = "doc/team-saxo/f1-180-v4-part-list" },
@@ -10,16 +25,7 @@ includes = [
   { part = "part/team-saxo/TS0103078", qty = 1, source = "doc/team-saxo/f1-200-v2-parts-list" },
   { part = "part/team-saxo/TS0102015", qty = 2, source = "doc/team-saxo/f1-200-v2-parts-list" },
   { part = "part/team-saxo/TS0102015", qty = 2, source = "doc/team-saxo/f1-future-parts-list" },
-]
-fits = [
-  { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v5-parts-list" },
-  { kit = "kit/team-saxo/mf-1-200", type = "direct", source = "doc/team-saxo/mf-1-200-accessories" },
-  { kit = "kit/team-saxo/f1-200", type = "direct", source = "doc/team-saxo/f1-200-v2-accessories" },
-  { kit = "kit/team-saxo/f1-future", type = "direct", source = "doc/team-saxo/f1-future-parts-list" },
+  { part = "part/team-saxo/TS0102015", qty = 2, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 notes = "Spare pack on the F1-180-V5 parts list"
-links = [
-  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mf-1-200-accessories/front-axle" },
-  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/f1-200-v2-accessories/front-axle" },
-]
 category = "drivetrain"

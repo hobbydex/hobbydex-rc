@@ -3,12 +3,12 @@ brand = "brand/pr-racing"
 number = "83400046"
 name = "M3 Lock Nut Flange"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
 pack_qty = 5
 fits = [
   { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
 ]
 applies_to = "2023 PR SB401-R"
 documents = ["doc/pr-racing/pr-rc-com"]
-equivalent_to = [
-  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
-]

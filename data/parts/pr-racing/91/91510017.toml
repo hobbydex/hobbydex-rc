@@ -1,11 +1,12 @@
 id = "part/pr-racing/91510017"
 brand = "brand/pr-racing"
 number = "91510017"
-name = "2025 PRB10 Steering Screw Stepped"
+name = "PRB10 Steering Screw Stepped"
 category = "screw"
 pack_qty = 4
 fits = [
+  { kit = "kit/pr-racing/b10r", type = "direct", source = "doc/pr-racing/pr-rc-com" },
   { kit = "kit/pr-racing/b10tr", type = "direct", source = "doc/pr-racing/pr-rc-com" },
 ]
-applies_to = "PR B10TR"
+applies_to = "PR B10R; PR B10TR"
 documents = ["doc/pr-racing/pr-rc-com"]

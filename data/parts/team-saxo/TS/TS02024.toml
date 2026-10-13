@@ -1,11 +1,17 @@
 id = "part/team-saxo/TS02024"
 brand = "brand/team-saxo"
 number = "TS02024"
-name = "TS02024"
+name = "Top Plate"
 includes = [
   { part = "part/team-saxo/TS0203004", qty = 1, source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { part = "part/team-saxo/TS0203004", qty = 1, source = "doc/team-saxo/lm-500w-parts-list" },
 ]
 fits = [
   { kit = "kit/team-saxo/gt-500w", type = "direct", source = "doc/team-saxo/gt-500w-v2-parts-list" },
+  { kit = "kit/team-saxo/lm-500w", type = "direct", source = "doc/team-saxo/gt-500lm-accessories" },
 ]
 notes = "Spare pack on the GT-500W-V2 parts list"
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/gt-500lm/top-plate" },
+]
+category = "chassis"

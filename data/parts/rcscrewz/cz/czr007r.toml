@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 applies_to = "Cross RC EMO-X / RTR (#CZREMOX)"
+fits = [
+  { kit = "kit/cross-rc/emo-x", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Cross RC EMO-X (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/czr007r-cross-rc-emo-x-rtr-czremox-compatible-rubber-shielded-bearing-kit/" },
