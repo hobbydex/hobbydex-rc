@@ -1,0 +1,21 @@
+id = "part/rocket-rc/SP-054007-01"
+brand = "brand/rocket-rc"
+number = "SP-054007-01"
+name = "540 V7 13.5T sensored brushless motor"
+category = "motor"
+category_source = "curated"
+kv = 4030
+turns = 13.5
+lipo_cells = [1, 3]
+diameter_mm = 35.8
+length_mm = 51.8
+shaft_mm = 3.175
+weight_g = 142
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 35.8 mm, length 51.8 mm, shaft 3.175 mm)" },
+]
+notes = "1/10 sensored brushless motor, spec (stock) class; 2-pole rotor, NSK bearings, 0.35 mm stator laminations. Max 190 W, max 49 A, no-load 2.8 A at 7.4 V, resistance 0.0213 ohm."
+range = "rocket-rc/540-v7"
+links = [
+  { site = "ROCKET-RC", url = "https://www.surpass-hobby.com/540-v7ts160-v3-brushless-power-combo/" },
+]

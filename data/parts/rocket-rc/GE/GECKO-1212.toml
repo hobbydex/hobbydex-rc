@@ -1,0 +1,20 @@
+id = "part/rocket-rc/GECKO-1212"
+brand = "brand/rocket-rc"
+number = "GECKO-1212"
+name = "GECKO 1212 3500KV sensorless brushless motor"
+category = "motor"
+category_source = "curated"
+kv = 3500
+diameter_mm = 15.8
+length_mm = 21
+shaft_mm = 2
+weight_g = 16.6
+equivalent_to = [
+  { spec = "spec/motor/brushless-1621-2mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 15.8 mm, length 21 mm, shaft 2 mm)" },
+]
+notes = "The non-PRO version, listed in the GECKO 1212 motor manual on the GECKO 1212 PRO page; 14 rotor poles, stator 12x12 mm, shaft 2 mm x 9 mm; max 120 W, max 8.4 V, max 10 A, no-load 0.38 A at 7.4 V, resistance 0.19 (mOhm as printed); 4 x M2 mounting holes on 12.5 mm or 9 mm."
+range = "rocket-rc/gecko-1212"
+documents = ["doc/rocket-rc/gecko-1212-motor-manual-11024-1028-27", "doc/rocket-rc/gecko-mini-24-esc-manual-11024-1028-28"]
+links = [
+  { site = "ROCKET-RC", url = "https://www.surpass-hobby.com/gecko-1212-promini24-pro/" },
+]

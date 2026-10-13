@@ -1,0 +1,22 @@
+id = "part/rocket-rc/540-V6-S-21.5T"
+brand = "brand/rocket-rc"
+number = "540-V6-S-21.5T"
+name = "540 V6-S 21.5T sensored brushless motor"
+category = "motor"
+category_source = "curated"
+kv = 2600
+turns = 21.5
+lipo_cells = [2, 3]
+diameter_mm = 35.8
+length_mm = 52.5
+shaft_mm = 3.175
+weight_g = 156
+equivalent_to = [
+  { spec = "spec/motor/brushless-3653-3.175mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 35.8 mm, length 52.5 mm, shaft 3.175 mm)" },
+]
+notes = "Max 100 W, max 29 A, no-load 1.5 A at 7.4 V, resistance 0.0555 ohm. 1/10 sensored brushless racing motor (spec class, 2-pole rotor 12.5x7.2x25.5 mm, dual sensor port, adjustable timing, CNC 7075 aluminium heat-sink housing, NSK R2ZZ bearings 3.175x9.525x4 mm, 6 x M3 mounting holes on 25 mm; BRCA and EFRA approved, meets ROAR and IFMA specifications as the manual prints it). Item number SP-054006-06 for the series (printed in one table cell spanning the three winds)."
+range = "rocket-rc/540-v6-s"
+documents = ["doc/rocket-rc/540-v6-s-motor-manual"]
+links = [
+  { site = "ROCKET-RC", url = "https://www.surpass-hobby.com/540-v6-s/" },
+]
