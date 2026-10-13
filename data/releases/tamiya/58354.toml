@@ -3,10 +3,11 @@ kit = "kit/tamiya/frog"
 brand = "brand/tamiya"
 number = "58354"
 name = "The Frog"
+year = 2005
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58354-manual"]
+documents = ["doc/tamiya/58354-manual", "doc/tamiya/58354-product-page", "doc/tamiya/58354-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
 contains = [
   { part = "part/tamiya/12220001", role = "kit", source = "doc/tamiya/58354-manual" },
   { part = "part/tamiya/13555048", role = "kit", source = "doc/tamiya/58354-manual" },
@@ -35,3 +36,4 @@ contains = [
   { part = "part/tamiya/86005", role = "listed", source = "doc/tamiya/58354-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 14)" },
   { part = "part/tamiya/86011", role = "listed", source = "doc/tamiya/58354-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 14)" },
 ]
+released = "2005-12"

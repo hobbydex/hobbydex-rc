@@ -6,7 +6,7 @@ name = "Toyota 4x4 Pick-Up Bruiser (RN36)"
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58519-manual"]
+documents = ["doc/tamiya/58519-manual", "doc/tamiya/58519-product-page", "doc/tamiya/58519-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
 contains = [
   { part = "part/tamiya/13485", role = "kit", source = "doc/tamiya/58519-manual", step = "BC43" },
   { part = "part/tamiya/13485196", role = "kit", source = "doc/tamiya/58519-manual" },
@@ -69,3 +69,5 @@ contains = [
   { part = "part/tamiya/85015", role = "listed", source = "doc/tamiya/58519-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 23, 24)" },
   { part = "part/tamiya/85029", role = "listed", source = "doc/tamiya/58519-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 23, 24, 25)" },
 ]
+released = "2012-03-31"
+year = 2012

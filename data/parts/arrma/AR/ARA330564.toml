@@ -10,3 +10,7 @@ category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/5x74", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
 ]
+fits = [
+  { kit = "kit/arrma/kraton-8s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/outcast-8s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

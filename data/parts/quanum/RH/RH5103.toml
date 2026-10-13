@@ -5,4 +5,6 @@ name = "Nylon Lock Nut M4"
 pack_qty = 6
 notes = "Name from the Part List of a scanned Quanum manual"
 category = "nut"
-material = "plastic"
+equivalent_to = [
+  { spec = "spec/nut/m4-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

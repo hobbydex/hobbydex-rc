@@ -6,3 +6,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-1-7-scale-body-accessories-set-a/ARA480040.html" },
 ]
 category = "body"
+material = "plastic"
+fits = [
+  { kit = "kit/arrma/felony", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/infraction", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/limitless", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]

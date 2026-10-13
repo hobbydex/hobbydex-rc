@@ -3,12 +3,21 @@ brand = "brand/arrma"
 number = "ARA722414"
 name = "Flat Head Screws, M4x14mm"
 pack_qty = 4
-former_names = ["Flat Head Screw M4x14mm"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-flat-head-screws-m4x14mm-4/ARA722414.html" },
 ]
+former_names = ["Flat Head Screw M4x14mm"]
 equivalent_to = [
   { spec = "spec/screw/m4x14-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/arrma/big-rock-6s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/fireteam", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/kraton", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/mojave-6s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/notorious", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/talion-6s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/typhon", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

@@ -2,8 +2,11 @@ id = "part/arrma/ARA550115"
 brand = "brand/arrma"
 number = "ARA550115"
 name = "dBoots 'FORTRESS' Tire Set Glued, Yellow (2 Pairs)"
-gtin = "660132908454"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-dboots-fortress-tire-set-glued-yellow-2-pairs/ARA550115.html" },
 ]
+gtin = "660132908454"
 category = "tire"
+fits = [
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

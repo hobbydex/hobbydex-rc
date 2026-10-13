@@ -2,13 +2,21 @@ id = "part/arrma/ARA724304"
 brand = "brand/arrma"
 number = "ARA724304"
 name = "Set Screw M3x4mm"
-gtin = "660132924546"
 pack_qty = 10
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-set-screw-m3x4mm-10/ARA724304.html" },
 ]
+gtin = "660132924546"
 equivalent_to = [
   { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/arrma/gorgon-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/granite-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/mini-kraton", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/quake-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/typhon-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

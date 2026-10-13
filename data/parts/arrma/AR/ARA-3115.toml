@@ -2,12 +2,16 @@ id = "part/arrma/ARA-3115"
 brand = "brand/arrma"
 number = "ARA-3115"
 name = "dBoots Chevron Mounted Tire Set Glued, Black (2 Pairs)"
-gtin = "660132659905"
 applies_to = "GROM"
 notes = "Number read by OCR from an ARRMA exploded view (ARA2130FF-EXPLODED-VIEW.pdf); named from its Horizon Hobby product title"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-dboots-chevron-mounted-tire-set-glued-black-2-pairs-grom/ARA-3115.html" },
 ]
+gtin = "660132659905"
 category = "tire"
 mounting = "pre-mounted"
 wheel_color = "black"
+fits = [
+  { kit = "kit/arrma/gorgon-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/quake-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]
