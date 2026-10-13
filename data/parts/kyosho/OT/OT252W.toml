@@ -2,8 +2,10 @@ id = "part/kyosho/OT252W"
 brand = "brand/kyosho"
 number = "OT252W"
 name = "Wing (White/Javelin)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "wing"
-name_source = "ocr"
 color = "white"
 range = "kyosho/ot252-colours"
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34312-ultima-sb-dune-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

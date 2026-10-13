@@ -1,9 +1,13 @@
 id = "part/kyosho/UB050-76"
 brand = "brand/kyosho"
 number = "UB050-76"
-name = "Spur Gear (48P-76T)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Spur Gear -76T"
 category = "spur-gear"
-name_source = "ocr"
 teeth = 76
 pitch_dp = 48
+pack_qty = 48
+fits = [
+  { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

@@ -1,7 +1,10 @@
 id = "part/kyosho/W5309-34"
 brand = "brand/kyosho"
 number = "W5309-34"
-name = ") Big Bore Shock Spring (L=44/3.4/2A)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Big Bore Shock Spring"
 category = "shock-spring"
-name_source = "ocr"
+pack_qty = 2
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

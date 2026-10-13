@@ -1,9 +1,14 @@
 id = "part/kyosho/UM611"
 brand = "brand/kyosho"
 number = "UM611"
-name = "Diff Case Packing (2pcs/ULTIMA SC)"
+name = "Diff Case Packing SC) (2 /ULTIMA SC"
 pack_qty = 2
 former_names = ["Diff. Case Packing (2pcs/ULTIMA SC)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "differential"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+]

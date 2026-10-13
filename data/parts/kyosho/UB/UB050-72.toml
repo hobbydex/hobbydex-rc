@@ -1,8 +1,12 @@
 id = "part/kyosho/UB050-72"
 brand = "brand/kyosho"
 number = "UB050-72"
-name = ") Sour Gear (48P-72T)"
+name = "Spur Gear -72T"
 former_names = ["! Sour Gear (48P-72T)", "Spur Gear (48P-72T)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "gear"
-name_source = "ocr"
+category = "spur-gear"
+pack_qty = 48
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]
+teeth = 72

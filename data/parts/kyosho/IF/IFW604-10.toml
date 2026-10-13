@@ -3,8 +3,10 @@ brand = "brand/kyosho"
 number = "IFW604-10"
 name = "Front Chassis Weit"
 name_ja = "フロントシャシーウエイト"
-documents = ["doc/kyosho/ifw604-frontchassisweit"]
 category = "chassis"
+documents = ["doc/kyosho/ifw604-frontchassisweit"]
 fits = [
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-op" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
 ]

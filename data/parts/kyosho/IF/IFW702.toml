@@ -2,7 +2,8 @@ id = "part/kyosho/IFW702"
 brand = "brand/kyosho"
 number = "IFW702"
 name = "Titanium Screw Set (MP11)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "screw"
-name_source = "ocr"
 material = "titanium"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+]

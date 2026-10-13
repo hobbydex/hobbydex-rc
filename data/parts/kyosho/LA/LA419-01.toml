@@ -1,8 +1,9 @@
 id = "part/kyosho/LA419-01"
 brand = "brand/kyosho"
 number = "LA419-01"
-name = "Swing Shaft (67/1pc/ZX7.5)"
+name = "Swing Shaft (67/ZX7.5)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+]

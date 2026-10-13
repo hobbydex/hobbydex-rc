@@ -3,5 +3,10 @@ brand = "brand/kyosho"
 number = "IFW432"
 name = "HD Cap U-Swing Shaft"
 name_ja = "HDキャップユニバーサルスイングシャフト"
-documents = ["doc/kyosho/ifw432-433-613"]
 category = "drivetrain"
+documents = ["doc/kyosho/ifw432-433-613"]
+pack_qty = 2
+fits = [
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/33001-t03-inferno-mp9-tki4-spop" },
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/34106-inferno-mp9e-evo-spop" },
+]

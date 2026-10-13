@@ -1,8 +1,9 @@
 id = "part/kyosho/IF701"
 brand = "brand/kyosho"
 number = "IF701"
-name = "Center Cup Joint (1pc/MP10 TKI3)"
+name = "Hard Main Chassis (MP11)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "drivetrain"
-name_source = "ocr"
+category = "chassis"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+]

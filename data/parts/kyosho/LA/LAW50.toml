@@ -3,5 +3,10 @@ brand = "brand/kyosho"
 number = "LAW50"
 name = "Gear Diff. Set for ZX6"
 name_ja = "ギヤデフセット (ZX6用)"
-documents = ["doc/kyosho/law50-gear-diff-set-zx6"]
 category = "differential"
+documents = ["doc/kyosho/law50-gear-diff-set-zx6"]
+fits = [
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
+]
