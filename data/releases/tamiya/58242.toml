@@ -7,7 +7,7 @@ year = 1999
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58242-manual", "doc/tamiya/58242-product-page", "doc/tamiya/58242-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/58242-manual", "doc/tamiya/58242-product-page", "doc/tamiya/58242-product-page-ja", "doc/tamiya/newitems-month", "doc/tamiya/product-classes"]
 contains = [
   { part = "part/tamiya/10005713", role = "kit", source = "doc/tamiya/58242-manual" },
   { part = "part/tamiya/10005746", role = "kit", source = "doc/tamiya/58242-manual" },
@@ -50,7 +50,7 @@ contains = [
   { part = "part/tamiya/50038", role = "kit", source = "doc/tamiya/58242-manual", qty = 4, step = "MG2" },
   { part = "part/tamiya/50171", role = "kit", source = "doc/tamiya/58242-manual" },
   { part = "part/tamiya/50197", role = "kit", source = "doc/tamiya/58242-manual", qty = 15, step = "MC7, MC8" },
-  { part = "part/tamiya/50355", role = "kit", source = "doc/tamiya/58242-manual", step = "MG6" },
+  { part = "part/tamiya/50355", role = "kit", source = "doc/tamiya/58242-manual", step = "MG6", notes = "Only 18T and 20T can be used" },
   { part = "part/tamiya/50575", role = "kit", source = "doc/tamiya/58242-manual", qty = 5, step = "MB4" },
   { part = "part/tamiya/50576", role = "kit", source = "doc/tamiya/58242-manual", qty = 10, step = "MG2" },
   { part = "part/tamiya/50577", role = "kit", source = "doc/tamiya/58242-manual", qty = 10, step = "MA2" },
