@@ -308,7 +308,7 @@ contain `+`).
 digits, as printed by the brand; the validator checks length and check digit.
 Releases can carry a `gtin` too, the barcode on the kit's box.
 
-`links`: pages about this part or release elsewhere, as `{ site, url }`
+`links`: pages about this part, release or kit elsewhere, as `{ site, url }`
 (https only); the site shows them as buttons next to the web search.
 `kind = "fan-site"` marks a link to a fan or community site (such as
 TamiyaBase): it is a courtesy link for readers, not a source for any value in
