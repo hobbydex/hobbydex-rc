@@ -2,10 +2,13 @@ id = "part/redcat/RER41718"
 brand = "brand/redcat"
 number = "RER41718"
 name = "Link Set Complete (Plastic)(1set)"
-gtin = "843335122586"
 applies_to = "Ascent 32, Ascent 32 V2"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer41718" },
 ]
+gtin = "843335122586"
 category = "ball-end"
 material = "plastic"
+fits = [
+  { kit = "kit/redcat/ascent-32", type = "direct", source = "doc/redcat/store" },
+]

@@ -1,0 +1,19 @@
+id = "part/redcat/BS501-067"
+brand = "brand/redcat"
+number = "BS501-067"
+name = "4x22mm Button Head Hex Machine Thread Screws"
+pack_qty = 12
+applies_to = "BLACKOUT SC, BLACKOUT SC PRO, BLACKOUT XBE, BLACKOUT XBE PRO, BLACKOUT XTE, BLACKOUT XTE PRO, TERREMOTO V2"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/bs501-067" },
+]
+fits = [
+  { kit = "kit/redcat/blackout-sc", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/blackout-xbe", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/blackout-xte", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x22-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

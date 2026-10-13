@@ -1,0 +1,20 @@
+id = "part/redcat/BS903-079"
+brand = "brand/redcat"
+number = "BS903-079"
+name = "3x10mm Button Head Hex Machine Thread Screws"
+pack_qty = 12
+applies_to = "BLACKOUT SC, BLACKOUT SC PRO, BLACKOUT XTE, BLACKOUT XTE PRO, CALDERA 10E, EARTHQUAKE 3.5, GROUND POUNDER"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/bs903-079" },
+]
+fits = [
+  { kit = "kit/redcat/blackout-sc", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/blackout-xte", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/earthquake", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/ground-pounder", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

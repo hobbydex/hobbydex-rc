@@ -1,0 +1,18 @@
+id = "part/redcat/RER15045"
+brand = "brand/redcat"
+number = "RER15045"
+name = "26T Pinion Gear (48p)"
+pack_qty = 1
+applies_to = "RDS, RDS KIT"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer15045" },
+]
+fits = [
+  { kit = "kit/redcat/rds", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-26t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 26
+pitch_dp = 48

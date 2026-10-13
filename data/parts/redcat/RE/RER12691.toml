@@ -1,0 +1,17 @@
+id = "part/redcat/RER12691"
+brand = "brand/redcat"
+number = "RER12691"
+name = "Pin (2x7.8mm)"
+pack_qty = 3
+applies_to = "WENDIGO, MARKSMAN, WENDIGO KIT"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer12691" },
+]
+fits = [
+  { kit = "kit/redcat/marksman", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/wendigo", type = "direct", source = "doc/redcat/store" },
+]
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2x7.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

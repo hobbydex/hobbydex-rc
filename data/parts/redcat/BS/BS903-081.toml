@@ -1,0 +1,18 @@
+id = "part/redcat/BS903-081"
+brand = "brand/redcat"
+number = "BS903-081"
+name = "3x10mm Cap Head Hex Machined Thread Screws"
+pack_qty = 6
+applies_to = "EARTHQUAKE 3.5, GROUND POUNDER, TERREMOTO V2"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/bs903-081" },
+]
+fits = [
+  { kit = "kit/redcat/earthquake", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/ground-pounder", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

@@ -1,0 +1,17 @@
+id = "part/redcat/BS218-019"
+brand = "brand/redcat"
+number = "BS218-019"
+name = "2x8mm Button Head Phillips Self Tapping Screws"
+pack_qty = 12
+applies_to = "BLACKOUT XBE, BLACKOUT XBE PRO"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/bs218-019" },
+]
+fits = [
+  { kit = "kit/redcat/blackout-xbe", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2x8-button-phillips-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
