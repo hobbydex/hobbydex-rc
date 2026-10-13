@@ -2,13 +2,16 @@ id = "part/redcat/RER41719"
 brand = "brand/redcat"
 number = "RER41719"
 name = "Pre-mounted 1/32 Tires and Wheels (Black)"
-gtin = "843335122593"
 pack_qty = 4
 applies_to = "Ascent 32, Ascent 32 V2"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer41719" },
 ]
+gtin = "843335122593"
 category = "tire"
 scale = "1/32"
 mounting = "pre-mounted"
 wheel_color = "black"
+fits = [
+  { kit = "kit/redcat/ascent-32", type = "direct", source = "doc/redcat/store" },
+]

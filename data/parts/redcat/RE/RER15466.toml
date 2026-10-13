@@ -2,5 +2,12 @@ id = "part/redcat/RER15466"
 brand = "brand/redcat"
 number = "RER15466"
 name = "International Scout 800 Body Set(Grey)(1set)"
+applies_to = "GEN8 SCOUT II"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer15466" },
+]
 category = "body"
 documents = ["doc/redcat/gen9-scout-800a-manual"]
+fits = [
+  { kit = "kit/redcat/gen8", type = "direct", source = "doc/redcat/store" },
+]

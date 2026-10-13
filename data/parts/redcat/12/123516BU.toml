@@ -1,0 +1,17 @@
+id = "part/redcat/123516BU"
+brand = "brand/redcat"
+number = "123516BU"
+name = "3.5x16mm Button Head Hex Machine Thread Screws"
+pack_qty = 6
+applies_to = "RC-MT10E, TR-MT10E, TR-MT8E-BE6S, TR-MT8E-V2"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/123516bu" },
+]
+fits = [
+  { kit = "kit/redcat/rc-mt10e", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3.5x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

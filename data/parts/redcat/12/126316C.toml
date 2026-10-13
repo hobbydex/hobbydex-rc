@@ -1,0 +1,17 @@
+id = "part/redcat/126316C"
+brand = "brand/redcat"
+number = "126316C"
+name = "3x16mm Cap Head Hex Machine Thread Screws"
+pack_qty = 6
+applies_to = "RC-MT10E, TR-MT10E, TR-MT8E-BE6S, TR-MT8E-V2"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/126316c" },
+]
+fits = [
+  { kit = "kit/redcat/rc-mt10e", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x16-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

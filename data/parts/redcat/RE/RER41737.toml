@@ -2,9 +2,12 @@ id = "part/redcat/RER41737"
 brand = "brand/redcat"
 number = "RER41737"
 name = "Front Steering Knuckles (1pr)"
-gtin = "843335124702"
 applies_to = "Ascent 32, Ascent 32 V2"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer41737" },
 ]
+gtin = "843335124702"
 category = "steering"
+fits = [
+  { kit = "kit/redcat/ascent-32", type = "direct", source = "doc/redcat/store" },
+]

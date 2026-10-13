@@ -1,0 +1,19 @@
+id = "part/redcat/BS903-070"
+brand = "brand/redcat"
+number = "BS903-070"
+name = "3x10mm Countersunk Hex Machine Thread Screws"
+pack_qty = 12
+applies_to = "BLACKOUT XBE, BLACKOUT XBE PRO, EARTHQUAKE 3.5, GROUND POUNDER"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/bs903-70" },
+]
+fits = [
+  { kit = "kit/redcat/blackout-xbe", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/earthquake", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/ground-pounder", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

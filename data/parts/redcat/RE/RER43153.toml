@@ -2,14 +2,17 @@ id = "part/redcat/RER43153"
 brand = "brand/redcat"
 number = "RER43153"
 name = "1.3\" Beadlock Wheels (-.75 Offset)(Aluminum & Carbon Fiber)(Red)"
-gtin = "843335124504"
 pack_qty = 4
 applies_to = "ASCENT 18, Ascent 18 Brushless, ASCENT 18 SCOUT II, ASCENT 18 SCOUT II BRUSHLESS, Ascent Apex 18"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer43153" },
 ]
+gtin = "843335124504"
 category = "wheel"
 wheel_size = "1.3\""
 beadlock = true
 offset_mm = -0.75
 color = "red"
+fits = [
+  { kit = "kit/redcat/ascent-18", type = "direct", source = "doc/redcat/store" },
+]

@@ -2,11 +2,14 @@ id = "part/redcat/RER44141"
 brand = "brand/redcat"
 number = "RER44141"
 name = "Rod Ends (3mm) (Plastic)"
-gtin = "843335125891"
 pack_qty = 12
 applies_to = "ASCENT FUSION, COE CUSTOM HAULER, EVEREST ASCENT, EVEREST GEN7 PRO, EVEREST GEN7 SPORT, EVEREST-10, GEN 9, GEN8 SCOUT II, Gen8 V2"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer44141" },
 ]
+gtin = "843335125891"
 category = "ball-end"
 material = "plastic"
+fits = [
+  { kit = "kit/redcat/gen8", type = "direct", source = "doc/redcat/store" },
+]
