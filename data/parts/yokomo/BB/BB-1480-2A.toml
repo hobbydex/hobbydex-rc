@@ -2,8 +2,8 @@ id = "part/yokomo/BB-1480-2A"
 brand = "brand/yokomo"
 number = "BB-1480-2A"
 name = "Ball Bearing 8.0x14.0x4.0mm"
-name_ja = "ボール ベアリング φ8.0xφ14.0x4.0mm(2個入)"
 pack_qty = 2
+name_ja = "ボール ベアリング φ8.0xφ14.0x4.0mm(2個入)"
 category = "bearing"
 fits = [
   { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
@@ -24,3 +24,4 @@ notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/8x14x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+material = "steel"

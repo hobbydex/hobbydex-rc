@@ -2,8 +2,8 @@ id = "part/yokomo/ZC-F318A"
 brand = "brand/yokomo"
 number = "ZC-F318A"
 name = "M3x18mm Countersunk Socket Screw"
-name_ja = "M3x18mm 皿ソケットスクリュー 8本入"
 pack_qty = 8
+name_ja = "M3x18mm 皿ソケットスクリュー 8本入"
 category = "screw"
 fits = [
   { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
@@ -21,3 +21,4 @@ notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m3x18-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+material = "steel"

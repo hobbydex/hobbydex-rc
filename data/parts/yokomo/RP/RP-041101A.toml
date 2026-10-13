@@ -2,8 +2,8 @@ id = "part/yokomo/RP-041101A"
 brand = "brand/yokomo"
 number = "RP-041101A"
 name = "M3x10mm Button Head Screw"
-name_ja = "M3x10mmボタンヘッドスクリュー   10本入り"
 pack_qty = 10
+name_ja = "M3x10mmボタンヘッドスクリュー   10本入り"
 category = "screw"
 fits = [
   { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
@@ -19,3 +19,4 @@ notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m3x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+material = "steel"

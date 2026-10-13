@@ -2,8 +2,8 @@ id = "part/yokomo/BB-1050HA"
 brand = "brand/yokomo"
 number = "BB-1050HA"
 name = "Bearing 5.0x10.0x4.0mm(Large Ball Spec) for Off-Road"
-name_ja = "オフロード用ベアリング φ5.0xφ10.0x4.0mm(ラージボール仕様2個入)"
 pack_qty = 2
+name_ja = "オフロード用ベアリング φ5.0xφ10.0x4.0mm(ラージボール仕様2個入)"
 category = "bearing"
 fits = [
   { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX4 3G, B-MAX4 3GF" },
@@ -21,3 +21,4 @@ notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+material = "steel"

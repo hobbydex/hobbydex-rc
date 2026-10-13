@@ -7,3 +7,6 @@ pack_qty = 2
 material = "aluminium"
 category = "drivetrain"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
+fits = [
+  { kit = "kit/yokomo/yd-2", type = "replaces", replaces = "part/yokomo/Y2-010F", source = "doc/yokomo/yd-2zs-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

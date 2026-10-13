@@ -8,6 +8,7 @@ category = "chassis"
 fits = [
   { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
   { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
+  { kit = "kit/yokomo/rd", type = "replaces", replaces = "part/yokomo/RD-002", source = "doc/yokomo/store", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/rd-002g" },

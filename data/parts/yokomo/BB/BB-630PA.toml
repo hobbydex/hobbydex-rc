@@ -2,8 +2,8 @@ id = "part/yokomo/BB-630PA"
 brand = "brand/yokomo"
 number = "BB-630PA"
 name = "Super Precision Bearing 3.0x6.0x2.5mm"
-name_ja = "スーパープレシジョン ベアリング Φ3.0xΦ6.0x2.5mm (2個入)"
 pack_qty = 2
+name_ja = "スーパープレシジョン ベアリング Φ3.0xΦ6.0x2.5mm (2個入)"
 category = "bearing"
 fits = [
   { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
@@ -17,3 +17,4 @@ notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+material = "steel"

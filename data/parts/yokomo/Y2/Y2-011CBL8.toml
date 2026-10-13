@@ -10,6 +10,7 @@ fits = [
   { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
   { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD), RD2.0" },
   { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD3.0" },
+  { kit = "kit/yokomo/md", type = "replaces", replaces = "part/yokomo/Y2-011CB8A", source = "doc/yokomo/store", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/y2-011cbl8" },

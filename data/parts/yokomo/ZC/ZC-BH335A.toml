@@ -2,8 +2,8 @@ id = "part/yokomo/ZC-BH335A"
 brand = "brand/yokomo"
 number = "ZC-BH335A"
 name = "M3x35mm Button Head Socket Screw"
-name_ja = "M3x35mm ボタンヘッド ソケットスクリュー 4本入"
 pack_qty = 4
+name_ja = "M3x35mm ボタンヘッド ソケットスクリュー 4本入"
 category = "screw"
 fits = [
   { kit = "kit/yokomo/rd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RD1.0 (Drift Package 2WD)" },
@@ -17,3 +17,4 @@ notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m3x35-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+material = "steel"

@@ -2,8 +2,8 @@ id = "part/yokomo/BB-85-4A"
 brand = "brand/yokomo"
 number = "BB-85-4A"
 name = "Ball Bearing 5.0x8.0x2.5mm"
-name_ja = "ボール ベアリング φ5.0xφ8.0x2.5mm(4個入)"
 pack_qty = 4
+name_ja = "ボール ベアリング φ5.0xφ8.0x2.5mm(4個入)"
 category = "bearing"
 fits = [
   { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX4 3G" },
@@ -37,3 +37,4 @@ notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+material = "steel"

@@ -2,8 +2,8 @@ id = "part/yokomo/ZC-C214A"
 brand = "brand/yokomo"
 number = "ZC-C214A"
 name = "M2x14mm Cap Screw (3.8mm Head)"
-name_ja = "M2x14mm キャップスクリュー (φ3.8mm頭 8本入)"
 pack_qty = 8
+name_ja = "M2x14mm キャップスクリュー (φ3.8mm頭 8本入)"
 category = "screw"
 fits = [
   { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2E, YD-2R, YD-2S, YD-2Z" },
@@ -15,3 +15,4 @@ notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
 equivalent_to = [
   { spec = "spec/screw/m2x14-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+material = "steel"
