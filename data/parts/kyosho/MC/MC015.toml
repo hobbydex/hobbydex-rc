@@ -1,0 +1,14 @@
+id = "part/kyosho/MC015"
+brand = "brand/kyosho"
+number = "MC015"
+name = "3.7V-120mAh LiPo Battery"
+fits = [
+  { kit = "kit/kyosho/mini-z-moto-racer", type = "direct", source = "doc/kyosho/30051-bd01-yamaha-yzr-m1-sp" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-120mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 120
+category = "battery"

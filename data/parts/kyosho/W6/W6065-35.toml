@@ -1,0 +1,14 @@
+id = "part/kyosho/W6065-35"
+brand = "brand/kyosho"
+number = "W6065-35"
+name = "Pinion Gear (35T-48P)"
+pack_qty = 48
+fits = [
+  { kit = "kit/kyosho/mini-z-buggy", type = "direct", source = "doc/kyosho/30994-mad-bug-spop" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-35t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 35
+pitch_dp = 48
