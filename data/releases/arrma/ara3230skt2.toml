@@ -1,7 +1,7 @@
-id = "release/arrma/ara3230sk"
+id = "release/arrma/ara3230skt2"
 kit = "kit/arrma/gorgon"
 brand = "brand/arrma"
-number = "ARA3230SK"
+number = "ARA3230SKT2"
 name = "Gorgon 2WD RTA Kit Brushed Monster Truck (Battery & Charger Included), clear"
 kind = "kit"
 status = "released"
@@ -14,7 +14,9 @@ contains = [
   { part = "part/arrma/ARA-1575", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA-1606", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA-1760", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA-2368", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA-2369", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA-3396", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA310994", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA311071", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA311095", role = "kit", source = "doc/arrma/horizon-part-pages" },
@@ -49,6 +51,7 @@ contains = [
   { part = "part/arrma/ARA340189", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA340192", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA402352", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/arrma/ARA610041", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA610044", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA610045", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA610051", role = "kit", source = "doc/arrma/horizon-part-pages" },
@@ -100,7 +103,6 @@ contains = [
   { part = "part/arrma/AR724303", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA-1549", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA-2117", role = "option", source = "doc/arrma/horizon-part-pages" },
-  { part = "part/arrma/ARA-2368", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA-2530", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA-2531", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA-2532", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
@@ -113,7 +115,6 @@ contains = [
   { part = "part/arrma/ARA-2608", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA-2875", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA-2876", role = "option", source = "doc/arrma/horizon-part-pages" },
-  { part = "part/arrma/ARA-3396", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA311075", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA311099", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA311102", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
@@ -156,14 +157,15 @@ contains = [
   { part = "part/arrma/ARA330837", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA390307", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARA402349", role = "option", source = "doc/arrma/horizon-part-pages" },
-  { part = "part/arrma/ARA402350", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
+  { part = "part/arrma/ARA402350", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA402351", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA402353", role = "option", source = "doc/arrma/horizon-part-pages" },
-  { part = "part/arrma/ARA402354", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
+  { part = "part/arrma/ARA402354", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA402355", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA402356", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA402357", role = "option", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARA550113", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
-  { part = "part/arrma/ARA610041", role = "listed", source = "doc/arrma/ara3230s-exploded-view" },
   { part = "part/arrma/ARAC9801", role = "listed", source = "doc/arrma/ara3230s-parts-tech-pack-ml" },
 ]
+former_ids = ["release/arrma/ara3230sk"]
+notes = "Horizon Hobby lists this vehicle under master number ARA3230SK; ARA3230SKT2 is the number of the variant sold (on the box)"
