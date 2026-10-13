@@ -7,6 +7,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-wide-flanged-nyloc-nut-m4-4/ARA-2472.html" },
 ]
 category = "nut"
+fits = [
+  { kit = "kit/arrma/vorteks-2wd", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]
 equivalent_to = [
   { spec = "spec/nut/m4-flanged-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

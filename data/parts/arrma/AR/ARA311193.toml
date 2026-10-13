@@ -11,3 +11,8 @@ equivalent_to = [
   { spec = "spec/oil/silicone-3000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
 ]
 category = "oil-grease"
+fits = [
+  { kit = "kit/arrma/granite-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/typhon-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

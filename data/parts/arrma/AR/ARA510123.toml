@@ -12,3 +12,7 @@ vehicle = "monster"
 equivalent_to = [
   { spec = "spec/wheel-hex/24mm", match = "exact", notes = "Hex size from the name" },
 ]
+fits = [
+  { kit = "kit/arrma/kraton-8s", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/outcast-8s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

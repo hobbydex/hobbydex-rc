@@ -2,9 +2,12 @@ id = "part/arrma/ARA311226"
 brand = "brand/arrma"
 number = "ARA311226"
 name = "CVD Driveshaft 44mm"
-gtin = "660132908607"
 pack_qty = 2
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-cvd-driveshaft-44mm-2/ARA311226.html" },
 ]
+gtin = "660132908607"
 category = "drivetrain"
+fits = [
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]
