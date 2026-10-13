@@ -6,3 +6,9 @@ pack_qty = 10
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-hex-socket-tap-flat-head-m3x12mm-black-10/AXIC0129.html" },
 ]
+category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+finish = "black"

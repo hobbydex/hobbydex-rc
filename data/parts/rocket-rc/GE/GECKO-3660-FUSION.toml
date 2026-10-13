@@ -1,0 +1,19 @@
+id = "part/rocket-rc/GECKO-3660-FUSION"
+brand = "brand/rocket-rc"
+number = "GECKO-3660-FUSION"
+name = "GECKO 3660 Fusion 1800KV sensored brushless motor with integrated ESC"
+category = "motor"
+category_source = "curated"
+kv = 1800
+lipo_cells = [2, 3]
+diameter_mm = 36
+length_mm = 56
+shaft_mm = 3.175
+weight_g = 177.8
+equivalent_to = [
+  { spec = "spec/motor/brushless-3656-3.175mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 36 mm, length 56 mm, shaft 3.175 mm)" },
+]
+notes = "Integrated sensored brushless power system for 1/10 crawlers: the ESC is built onto the motor (FOC drive with a built-in magnetic encoder). ESC continuous current 40 A; 2-3S LiPo or 4-9 cells NiMH; BEC 6.0/7.4/8.4 V selectable, 4 A continuous, 8 A max (buck switching mode); IP67 waterproof and dustproof; LED status display in the switch; three modes (forward with brake, forward/reverse with brake, forward/reverse); programmed with the LED programming card (sold separately); 175 mm wires."
+links = [
+  { site = "ROCKET-RC", url = "https://www.surpass-hobby.com/gecko-3660/" },
+]

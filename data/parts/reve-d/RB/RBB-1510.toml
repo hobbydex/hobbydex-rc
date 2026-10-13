@@ -2,10 +2,14 @@ id = "part/reve-d/RBB-1510"
 brand = "brand/reve-d"
 number = "RBB-1510"
 name = "Ball Bearing (Φ15×Φ10×4.0mm, 2pcs, )"
-name_ja = "ボールベアリング (Φ15×Φ10×4.0mm, 2個入)"
 pack_qty = 2
+name_ja = "ボールベアリング (Φ15×Φ10×4.0mm, 2個入)"
 links = [
   { site = "Rêve D", url = "https://teamreved.com/product/rbb-74-2-85-2-105-2" },
 ]
 documents = ["doc/reve-d/teamreved-products"]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

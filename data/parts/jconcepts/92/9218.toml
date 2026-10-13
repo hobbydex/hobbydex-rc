@@ -2,6 +2,10 @@ id = "part/jconcepts/9218"
 brand = "brand/jconcepts"
 number = "9218"
 name = "REACTOR SHCS M3 x 12"
+pack_qty = 10
 notes = "Name from the jconcepts.net listing"
 category = "screw"
-pack_qty = 10
+equivalent_to = [
+  { spec = "spec/screw/m3x12-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
