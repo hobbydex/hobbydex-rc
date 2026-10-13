@@ -2,6 +2,10 @@ id = "part/tamiya/19806557"
 brand = "brand/tamiya"
 number = "19806557"
 name = "4mm Flanged Lock Nut"
+former_names = ["grim eno Leck. it (BDB x4)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

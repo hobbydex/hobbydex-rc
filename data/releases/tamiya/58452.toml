@@ -7,7 +7,7 @@ year = 2010
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58452-manual", "doc/tamiya/58452-product-page", "doc/tamiya/58452-product-page-ja", "doc/tamiya/newitems-month", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58452-manual", "doc/tamiya/58452-product-page", "doc/tamiya/58452-product-page-ja", "doc/tamiya/newitems-month", "doc/tamiya/product-classes", "doc/tamiya/spb-51406-manual"]
 contains = [
   { part = "part/tamiya/10005038", role = "kit", source = "doc/tamiya/58452-manual" },
   { part = "part/tamiya/10005128", role = "kit", source = "doc/tamiya/58452-manual" },
@@ -37,23 +37,25 @@ contains = [
   { part = "part/tamiya/16095010", role = "kit", source = "doc/tamiya/58452-manual" },
   { part = "part/tamiya/16295077", role = "kit", source = "doc/tamiya/58452-manual" },
   { part = "part/tamiya/19005955", role = "kit", source = "doc/tamiya/58452-manual" },
-  { part = "part/tamiya/19115269", role = "kit", source = "doc/tamiya/58452-manual" },
-  { part = "part/tamiya/19115270", role = "kit", source = "doc/tamiya/58452-manual" },
-  { part = "part/tamiya/19115271", role = "kit", source = "doc/tamiya/58452-manual" },
+  { part = "part/tamiya/19115269", role = "kit", source = "doc/tamiya/spb-51406-manual" },
+  { part = "part/tamiya/19115270", role = "kit", source = "doc/tamiya/spb-51406-manual" },
+  { part = "part/tamiya/19115271", role = "kit", source = "doc/tamiya/spb-51406-manual" },
   { part = "part/tamiya/19335553", role = "kit", source = "doc/tamiya/58452-manual" },
   { part = "part/tamiya/19335554", role = "kit", source = "doc/tamiya/58452-manual" },
-  { part = "part/tamiya/19335562", role = "kit", source = "doc/tamiya/58452-manual" },
+  { part = "part/tamiya/19335562", role = "kit", source = "doc/tamiya/spb-51406-manual" },
   { part = "part/tamiya/19401426", role = "kit", source = "doc/tamiya/58452-manual" },
   { part = "part/tamiya/19401427", role = "kit", source = "doc/tamiya/58452-manual", step = "BF1, BF8" },
   { part = "part/tamiya/19401428", role = "kit", source = "doc/tamiya/58452-manual", step = "BG1, BG11" },
   { part = "part/tamiya/19401429", role = "kit", source = "doc/tamiya/58452-manual", step = "BH1, BH8" },
   { part = "part/tamiya/19401430", role = "kit", source = "doc/tamiya/58452-manual", step = "BE1, BE6" },
   { part = "part/tamiya/19401438", role = "kit", source = "doc/tamiya/58452-manual", qty = 2, step = "MB12" },
+  { part = "part/tamiya/19401567", role = "kit", source = "doc/tamiya/spb-51406-manual" },
   { part = "part/tamiya/19443023", role = "kit", source = "doc/tamiya/58452-manual" },
   { part = "part/tamiya/19465785", role = "kit", source = "doc/tamiya/58452-manual", step = "BA1, BA7" },
   { part = "part/tamiya/19465786", role = "kit", source = "doc/tamiya/58452-manual", step = "BB1, BB7" },
   { part = "part/tamiya/19465796", role = "kit", source = "doc/tamiya/58452-manual", step = "BC1, BC7" },
   { part = "part/tamiya/19465797", role = "kit", source = "doc/tamiya/58452-manual", step = "BD1, BD7" },
+  { part = "part/tamiya/19495516", role = "kit", source = "doc/tamiya/spb-51406-manual" },
   { part = "part/tamiya/19495602", role = "kit", source = "doc/tamiya/58452-manual" },
   { part = "part/tamiya/19804224", role = "kit", source = "doc/tamiya/58452-manual", qty = 2, step = "BB2" },
   { part = "part/tamiya/19804230", role = "kit", source = "doc/tamiya/58452-manual" },
@@ -119,6 +121,7 @@ contains = [
   { part = "part/tamiya/50590", role = "kit", source = "doc/tamiya/58452-manual", qty = 5, step = "BB7" },
   { part = "part/tamiya/50594", role = "kit", source = "doc/tamiya/58452-manual", qty = 10, step = "BD7" },
   { part = "part/tamiya/50597", role = "kit", source = "doc/tamiya/58452-manual", qty = 10, step = "BE3" },
+  { part = "part/tamiya/51406", role = "kit", source = "doc/tamiya/spb-51406-manual" },
   { part = "part/tamiya/53008", role = "kit", source = "doc/tamiya/58452-manual", qty = 4, step = "MB1" },
   { part = "part/tamiya/53689", role = "kit", source = "doc/tamiya/58452-manual" },
   { part = "part/tamiya/53968", role = "kit", source = "doc/tamiya/58452-manual", qty = 5, step = "BA7" },
@@ -136,3 +139,6 @@ contains = [
   { part = "part/tamiya/85026", role = "listed", source = "doc/tamiya/58452-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 13, 14, 15)" },
 ]
 released = "2010-02-27"
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58452", kind = "fan-site" },
+]

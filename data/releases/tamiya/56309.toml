@@ -3,9 +3,10 @@ kit = "kit/tamiya/ford-aeromax"
 brand = "brand/tamiya"
 number = "56309"
 name = "Ford Aeromax"
+year = 1997
 kind = "kit"
 status = "released"
-documents = ["doc/tamiya/56309-product-page", "doc/tamiya/56560-product-page", "doc/tamiya/56309-manual"]
+documents = ["doc/tamiya/56309-product-page", "doc/tamiya/56560-product-page", "doc/tamiya/56309-manual", "doc/tamiya/newitems-month"]
 contains = [
   { part = "part/tamiya/10005467", role = "kit", source = "doc/tamiya/56309-manual" },
   { part = "part/tamiya/10005468", role = "kit", source = "doc/tamiya/56309-manual" },
@@ -74,4 +75,8 @@ contains = [
   { part = "part/tamiya/87004", role = "kit", source = "doc/tamiya/56309-manual" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/56309-manual" },
   { part = "part/tamiya/56560", role = "option", source = "doc/tamiya/56560-product-page" },
+]
+released = "1997-12"
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56309", kind = "fan-site" },
 ]

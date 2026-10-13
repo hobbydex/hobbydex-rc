@@ -3,14 +3,16 @@ kit = "kit/tamiya/king-hauler"
 brand = "brand/tamiya"
 number = "56301"
 name = "King Hauler"
+year = 1993
 kind = "kit"
 status = "released"
-documents = ["doc/tamiya/56301-product-page", "doc/tamiya/56546-product-page", "doc/tamiya/56560-product-page", "doc/tamiya/56301-manual"]
+documents = ["doc/tamiya/56301-product-page", "doc/tamiya/56546-product-page", "doc/tamiya/56560-product-page", "doc/tamiya/56301-manual", "doc/tamiya/newitems-month"]
 contains = [
   { part = "part/tamiya/10005467", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/10005468", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/10005470", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/10005471", role = "kit", source = "doc/tamiya/56301-manual" },
+  { part = "part/tamiya/10005472", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/10005473", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/10005474", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/10115104", role = "kit", source = "doc/tamiya/56301-manual" },
@@ -29,6 +31,8 @@ contains = [
   { part = "part/tamiya/13555094", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/14305294", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/15365001", role = "kit", source = "doc/tamiya/56301-manual" },
+  { part = "part/tamiya/15455002", role = "kit", source = "doc/tamiya/56301-manual", qty = 1, step = "SA4" },
+  { part = "part/tamiya/15465016", role = "kit", source = "doc/tamiya/56301-manual", qty = 1, step = "SA5", notes = "Kit needs 3 of this pack" },
   { part = "part/tamiya/15485010", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/17435044", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/19005393", role = "kit", source = "doc/tamiya/56301-manual" },
@@ -56,7 +60,10 @@ contains = [
   { part = "part/tamiya/19495161", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/19805455", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/19805456", role = "kit", source = "doc/tamiya/56301-manual" },
+  { part = "part/tamiya/19805457", role = "kit", source = "doc/tamiya/56301-manual" },
+  { part = "part/tamiya/19805458", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/19805459", role = "kit", source = "doc/tamiya/56301-manual", step = "SA12, SA13" },
+  { part = "part/tamiya/19805460", role = "kit", source = "doc/tamiya/56301-manual", qty = 2, step = "SA9" },
   { part = "part/tamiya/50038", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/50170", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/50171", role = "kit", source = "doc/tamiya/56301-manual" },
@@ -67,4 +74,8 @@ contains = [
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/56301-manual" },
   { part = "part/tamiya/56546", role = "option", source = "doc/tamiya/56546-product-page" },
   { part = "part/tamiya/56560", role = "option", source = "doc/tamiya/56560-product-page" },
+]
+released = "1993-06"
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56301", kind = "fan-site" },
 ]
