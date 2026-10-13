@@ -1,7 +1,16 @@
 id = "part/ftx/FTX10185"
 brand = "brand/ftx"
 number = "FTX10185"
-name = "Ball head cross screw M3x12"
+name = "Rokatan Round Head Cross Screw M3x12"
 pack_qty = 10
-notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+former_names = ["Ball head cross screw M3x12"]
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-rokatan-spares/ftx-rokatan-round-head-cross-screw-m-x-x-x" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
 category = "screw"
