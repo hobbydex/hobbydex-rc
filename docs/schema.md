@@ -10,7 +10,7 @@ read the tree directly; they read the export (`tools/export.py`).
 |---|---|---|
 | brand | `data/brands/<brand>.toml` | id, name, status |
 | kit | `data/kits/<brand>/<slug>.toml` | id, brand, name, category |
-| release | `data/releases/<brand>/<number-or-slug>.toml` | id, kit, brand, name, year, kind, status |
+| release | `data/releases/<brand>/<number-or-slug>.toml` | id, kit, brand, name, kind, status (`year` optional: left out when unknown) |
 | part | `data/parts/<brand>/<prefix>/<number>.toml` | id, brand, number, name |
 | doc | `data/documents/<brand>/<slug>.toml` | id, kind, title |
 | spec | `data/specs/<category>/<slug>.toml` | id, category |
@@ -313,7 +313,7 @@ contain `+`).
 digits, as printed by the brand; the validator checks length and check digit.
 Releases can carry a `gtin` too, the barcode on the kit's box.
 
-`links`: pages about this part or release elsewhere, as `{ site, url }`
+`links`: pages about this part, release or kit elsewhere, as `{ site, url }`
 (https only); the site shows them as buttons next to the web search.
 `kind = "fan-site"` marks a link to a fan or community site (such as
 TamiyaBase): it is a courtesy link for readers, not a source for any value in

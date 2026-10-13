@@ -1,0 +1,19 @@
+id = "part/redcat/RER41730"
+brand = "brand/redcat"
+number = "RER41730"
+name = "3.7V 300mah Battery Lipo"
+pack_qty = 1
+applies_to = "Ascent 32"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer41730" },
+]
+fits = [
+  { kit = "kit/redcat/ascent-32", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 300
+category = "battery"

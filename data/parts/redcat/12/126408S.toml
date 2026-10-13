@@ -1,0 +1,17 @@
+id = "part/redcat/126408S"
+brand = "brand/redcat"
+number = "126408S"
+name = "4x8mm Set Screws"
+pack_qty = 6
+applies_to = "RC-MT10E, TR-MT10E"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/126408s-1" },
+]
+fits = [
+  { kit = "kit/redcat/rc-mt10e", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x8-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

@@ -1,0 +1,16 @@
+id = "part/redcat/705007"
+brand = "brand/redcat"
+number = "705007"
+name = "Front Top Plate Aluminum"
+applies_to = "CAMO TT PRO, CAMO X4 PRO"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/705007" },
+]
+fits = [
+  { kit = "kit/redcat/camo-tt", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/camo-x4", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/camo-tt", type = "replaces", replaces = "part/redcat/70519", source = "doc/redcat/store", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/redcat/camo-x4", type = "replaces", replaces = "part/redcat/70519", source = "doc/redcat/store", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "chassis"
+material = "aluminium"

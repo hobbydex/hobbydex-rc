@@ -4,3 +4,7 @@ number = "80400216"
 name = "BHCS M3x16mm"
 category = "screw"
 documents = ["doc/pr-racing/69000045-797"]
+equivalent_to = [
+  { spec = "spec/screw/m3x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

@@ -2,8 +2,8 @@ id = "part/yokomo/ZC-C320A"
 brand = "brand/yokomo"
 number = "ZC-C320A"
 name = "M3×20mm Cap Screw"
-name_ja = "M3×20mm キャップスクリュー (10本入)"
 pack_qty = 10
+name_ja = "M3×20mm キャップスクリュー (10本入)"
 category = "screw"
 fits = [
   { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2" },
@@ -12,3 +12,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-c320a" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

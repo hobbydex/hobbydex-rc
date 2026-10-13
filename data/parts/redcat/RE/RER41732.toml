@@ -2,9 +2,12 @@ id = "part/redcat/RER41732"
 brand = "brand/redcat"
 number = "RER41732"
 name = "Screw Kit Complete (1set)"
-gtin = "843335123637"
 applies_to = "Ascent 32, Ascent 32 V2"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer41732" },
 ]
+gtin = "843335123637"
 category = "screw"
+fits = [
+  { kit = "kit/redcat/ascent-32", type = "direct", source = "doc/redcat/store" },
+]

@@ -2,8 +2,8 @@ id = "part/reve-d/RC-BH306S"
 brand = "brand/reve-d"
 number = "RC-BH306S"
 name = "Stainless Steel M3×6mm BH Screw"
-name_ja = "ステンレス製 M3×6mm ボタンヘッドスクリュー (10本入)"
 pack_qty = 10
+name_ja = "ステンレス製 M3×6mm ボタンヘッドスクリュー (10本入)"
 fits = [
   { kit = "kit/reve-d/rdx", type = "direct", source = "doc/reve-d/rkd-rdx-parts-list" },
 ]
@@ -13,3 +13,6 @@ links = [
 documents = ["doc/reve-d/rkd-rdx-parts-list", "doc/reve-d/teamreved-products"]
 category = "screw"
 material = "stainless"
+equivalent_to = [
+  { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

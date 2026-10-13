@@ -5,3 +5,7 @@ name = "Senkkopfschraube M2x4"
 category = "screw"
 category_source = "curated"
 documents = ["doc/scaleart/74000410-manual"]
+equivalent_to = [
+  { spec = "spec/screw/m2x4-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

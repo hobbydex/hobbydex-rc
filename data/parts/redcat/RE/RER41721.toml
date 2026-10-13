@@ -2,10 +2,13 @@ id = "part/redcat/RER41721"
 brand = "brand/redcat"
 number = "RER41721"
 name = "Ascent 32 Body (Red)"
-gtin = "843335122616"
 pack_qty = 1
 applies_to = "Ascent 32, Ascent 32 V2"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer41721" },
 ]
+gtin = "843335122616"
 category = "body"
+fits = [
+  { kit = "kit/redcat/ascent-32", type = "direct", source = "doc/redcat/store" },
+]

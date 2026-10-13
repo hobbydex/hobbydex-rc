@@ -2,10 +2,13 @@ id = "part/redcat/RER41716"
 brand = "brand/redcat"
 number = "RER41716"
 name = "Center Driveshaft Set F/R (Plastic)(1set)"
-gtin = "843335122562"
 applies_to = "Ascent 32, Ascent 32 V2"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer41716" },
 ]
+gtin = "843335122562"
 category = "drivetrain"
 material = "plastic"
+fits = [
+  { kit = "kit/redcat/ascent-32", type = "direct", source = "doc/redcat/store" },
+]

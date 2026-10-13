@@ -1,0 +1,17 @@
+id = "part/redcat/BS808-003"
+brand = "brand/redcat"
+number = "BS808-003"
+name = "5mm Serrated Nut"
+pack_qty = 6
+applies_to = "CALDERA 10E, EARTHQUAKE 3.5, GROUND POUNDER"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/bs808-003" },
+]
+fits = [
+  { kit = "kit/redcat/earthquake", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/ground-pounder", type = "direct", source = "doc/redcat/store" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m5-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

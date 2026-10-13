@@ -2,6 +2,10 @@ id = "part/muchmore-racing/OR-1680ZZ"
 brand = "brand/muchmore-racing"
 number = "OR-1680ZZ"
 name = "Off-Road Racing Bearing 16x8x5 (10pcs)"
+pack_qty = 10
 category = "bearing"
 category_source = "curated"
-pack_qty = 10
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

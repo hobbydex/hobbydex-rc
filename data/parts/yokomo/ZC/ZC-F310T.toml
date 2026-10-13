@@ -2,8 +2,11 @@ id = "part/yokomo/ZC-F310T"
 brand = "brand/yokomo"
 number = "ZC-F310T"
 name = "Titanium Flat Head Screw (M3 × 10mm)"
-name_ja = "チタン製 フラットヘッド スクリュー (M3 × 10mm) 5"
 pack_qty = 5
+name_ja = "チタン製 フラットヘッド スクリュー (M3 × 10mm) 5"
 material = "titanium"
 category = "screw"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

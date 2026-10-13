@@ -1,0 +1,17 @@
+id = "part/redcat/RER14686"
+brand = "brand/redcat"
+number = "RER14686"
+name = "2.5x10mm Cap Head Hex Machine Thread Screws"
+pack_qty = 10
+applies_to = "MARKSMAN"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer14686-1" },
+]
+fits = [
+  { kit = "kit/redcat/marksman", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
