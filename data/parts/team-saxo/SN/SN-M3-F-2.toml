@@ -3,3 +3,6 @@ brand = "brand/team-saxo"
 number = "SN-M3-F-2"
 name = "Flanged lock nut M3"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

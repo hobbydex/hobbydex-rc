@@ -7,3 +7,12 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-flanged-lock-nut-m3-black-4/ARA708009.html" },
 ]
 category = "nut"
+fits = [
+  { kit = "kit/arrma/kraton", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/mojave-6s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/notorious", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/talion-6s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

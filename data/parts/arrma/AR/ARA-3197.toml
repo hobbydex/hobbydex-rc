@@ -10,3 +10,7 @@ category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/4x48.5", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
 ]
+material = "steel"
+fits = [
+  { kit = "kit/arrma/quake-4s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

@@ -6,3 +6,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "nut"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m4-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

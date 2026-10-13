@@ -3,3 +3,6 @@ brand = "brand/hpi"
 number = "Z682"
 name = "Flanged Lock Nut M5"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m5-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

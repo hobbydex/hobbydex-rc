@@ -2,10 +2,13 @@ id = "part/arrma/ARA320815"
 brand = "brand/arrma"
 number = "ARA320815"
 name = "Composite Chassis, 204mm"
-gtin = "660132908478"
 applies_to = "GROM"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-composite-chassis-204mm-grom/ARA320815.html" },
 ]
+gtin = "660132908478"
 category = "chassis"
 material = "plastic"
+fits = [
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

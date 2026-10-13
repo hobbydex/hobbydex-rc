@@ -2,11 +2,14 @@ id = "part/arrma/ARA-4776"
 brand = "brand/arrma"
 number = "ARA-4776"
 name = "Steering Links Set F"
-gtin = "660132718756"
 pack_qty = 2
 applies_to = "GROM"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-steering-links-set-f-2-grom/ARA-4776.html" },
 ]
 former_names = ["Steering Links Set F (2)"]
+gtin = "660132718756"
 category = "ball-end"
+fits = [
+  { kit = "kit/arrma/infraction-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]
