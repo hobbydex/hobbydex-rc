@@ -8,4 +8,7 @@ links = [
 ]
 category = "bearing"
 name_source = "ocr"
-former_names = ["1680 Ball Bearin"]
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Tamiya size code 1680: 16 mm outer, 8 mm bore, 5 mm wide" },
+]
+material = "steel"

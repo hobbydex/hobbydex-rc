@@ -1,9 +1,15 @@
 id = "part/tamiya/53162"
 brand = "brand/tamiya"
 number = "53162"
-name = "4mm Anodized Aluminum Flange Lock Nut (Black)"
-former_names = ["4mm Flange Lock Nut (Black)"]
+name = "4mm Flange Lock Nut (Black)"
+former_names = ["4mm Anodized Aluminum Flange Lock Nut (Black)", "4mm Flange Lock Nut (BC1x5)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "nut"
 material = "aluminium"
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1627-53162", kind = "fan-site" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
