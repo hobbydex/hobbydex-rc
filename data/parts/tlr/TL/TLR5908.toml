@@ -1,0 +1,25 @@
+id = "part/tlr/TLR5908"
+brand = "brand/tlr"
+number = "TLR5908"
+name = "Button Head Screws, M3 x 44mm"
+pack_qty = 4
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-button-head-screws-m3-x-44mm-4/TLR5908.html" },
+]
+gtin = "605482023105"
+fits = [
+  { kit = "kit/losi/lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db-pro", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-mt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-sct", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-tt-pro", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x44-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

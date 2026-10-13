@@ -2,8 +2,15 @@ id = "part/losi/LOS243013"
 brand = "brand/losi"
 number = "LOS243013"
 name = "Shock Set Complete"
-gtin = "605482718452"
 pack_qty = 2
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-set-complete-2-lmt/LOS243013.html" },
+]
+gtin = "605482718452"
 category = "shock"
 shock_part = "complete"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

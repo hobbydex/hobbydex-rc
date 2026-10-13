@@ -1,7 +1,17 @@
 id = "part/losi/LOS241072"
 brand = "brand/losi"
 number = "LOS241072"
-name = "Crossbar, End Plates, AL, BLK"
+name = "Aluminum Crossbar, End Plates, Black"
 pack_qty = 8
-applies_to = "LMT, TTLMT"
+applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-crossbar-end-plates-black-8-tlr-tuned-lmt/LOS241072.html" },
+]
+former_names = ["Crossbar, End Plates, AL, BLK"]
 category = "chassis"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482169933"
+material = "aluminium"

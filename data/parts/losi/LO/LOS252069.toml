@@ -1,6 +1,15 @@
 id = "part/losi/LOS252069"
 brand = "brand/losi"
 number = "LOS252069"
-name = "Diff Housing and Gasket"
+name = "Differential Housing and Gasket"
+applies_to = "Super Baja Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-differential-housing-and-gasket-super-baja-rey/LOS252069.html" },
+]
+former_names = ["Diff Housing and Gasket"]
 gtin = "605482828212"
 category = "o-ring-seal"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

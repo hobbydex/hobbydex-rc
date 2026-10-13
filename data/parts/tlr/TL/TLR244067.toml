@@ -1,9 +1,17 @@
 id = "part/tlr/TLR244067"
 brand = "brand/tlr"
 number = "TLR244067"
-name = "16mm Shock Piston,Tapered 1.3"
+name = "16mm Shock Piston, Tapered 6x1.3"
 pack_qty = 4
-applies_to = "8X"
+applies_to = "8XT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-16mm-shock-piston-tapered-6x1.3-4-8xt/TLR244067.html" },
+]
+former_names = ["16mm Shock Piston,Tapered 1.3"]
 category = "shock"
 shock_part = "piston"
 bore_mm = 16
+fits = [
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482693537"

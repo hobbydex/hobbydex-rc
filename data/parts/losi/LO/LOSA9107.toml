@@ -2,6 +2,18 @@ id = "part/losi/LOSA9107"
 brand = "brand/losi"
 number = "LOSA9107"
 name = "Clutch Shoes (2) Composite"
+applies_to = "8B, 8T, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-clutch-shoes-2-composite-8b-8t-8x/LOSA9107.html" },
+]
 gtin = "660132013240"
 category = "engine-fuel"
 material = "plastic"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

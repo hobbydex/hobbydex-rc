@@ -1,8 +1,15 @@
 id = "part/losi/LOS242030"
 brand = "brand/losi"
 number = "LOS242030"
-name = "Axle Housing Set Complete"
-gtin = "605482717950"
-former_names = ["AxleHousingSetComplete,Rear", "Axle Housing Set Complete, Rear"]
+name = "Axle Housing Set Complete, Rear"
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-axle-housing-set-complete-rear-lmt/LOS242030.html" },
+]
+former_names = ["Axle Housing Set Complete", "AxleHousingSetComplete,Rear"]
+gtin = "605482717950"
 category = "drivetrain"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

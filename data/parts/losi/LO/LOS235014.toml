@@ -1,8 +1,23 @@
 id = "part/losi/LOS235014"
 brand = "brand/losi"
 number = "LOS235014"
-name = "Lock Nut, M2 x 0.4 x4mm"
+name = "Lock Nut M2 x 0.4 x4 mm"
+pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-lock-nut-m2-x-0.4-x4-mm-10/LOS235014.html" },
+]
+former_names = ["Lock Nut, M2 x 0.4 x4mm"]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m2-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "605482623770"
+fits = [
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/mini-lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/mini-no-prep", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/mini-t-2", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]

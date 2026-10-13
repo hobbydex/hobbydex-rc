@@ -1,12 +1,28 @@
 id = "part/axial/AXIC0146"
 brand = "brand/axial"
 number = "AXIC0146"
-name = "Hex Socket Flat Head Screw M3x12mm, Black"
-gtin = "877493006310"
+name = "Hex Socket Flat Head M3x12mm, Black"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-hex-socket-flat-head-m3x12mm-black-10/AXIC0146.html" },
+]
+former_names = ["Hex Socket Flat Head Screw M3x12mm, Black"]
+gtin = "877493006310"
 equivalent_to = [
   { spec = "spec/screw/m3x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 finish = "black"
 category = "screw"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/rbx10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti-jr", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

@@ -1,10 +1,26 @@
 id = "part/losi/LOS235015"
 brand = "brand/losi"
 number = "LOS235015"
-name = "Locknut Flanged M5 Serrated"
+name = "Lock Nut Flanged M5 x 0.8 Serrated"
 pack_qty = 10
-former_names = ["Lock Nut, Flanged M5 x 0.8 Serrated"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-lock-nut-flanged-m5-x-0.8-serrated-10/LOS235015.html" },
+]
+former_names = ["Lock Nut, Flanged M5 x 0.8 Serrated", "Locknut Flanged M5 Serrated"]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m5-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "605482623787"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/axial/rbx10", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/dbxl", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rzr-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/v100", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]

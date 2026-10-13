@@ -1,11 +1,24 @@
 id = "part/axial/AXIC1045"
 brand = "brand/axial"
 number = "AXIC1045"
-name = "Nylon Locknut M4, Black"
-gtin = "877493003364"
+name = "Nylon Locknut M4 Black"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-nylon-locknut-m4-black-10/AXIC1045.html" },
+]
+former_names = ["Nylon Locknut M4, Black"]
+gtin = "877493003364"
 category = "nut"
 material = "plastic"
 equivalent_to = [
   { spec = "spec/nut/m4-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

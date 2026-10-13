@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMX323S30"
+brand = "brand/spektrum"
+number = "SPMX323S30"
+name = "11.1V 3200mAh 3S 30C Smart G2 LiPo Battery"
+applies_to = "IC3"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-11.1v-3200mah-3s-30c-smart-g2-lipo-battery-ic3/SPMX323S30.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 3200
+c_rating = 30
+category = "battery"

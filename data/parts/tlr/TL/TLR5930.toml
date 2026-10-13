@@ -1,10 +1,23 @@
 id = "part/tlr/TLR5930"
 brand = "brand/tlr"
 number = "TLR5930"
-name = "Cap Head Screws, M3 x 8mm"
-pack_qty = 10
+name = "Cap Head Screws, M3 x 8mm (10"
+former_names = ["Cap Head Screws, M3 x 8mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-cap-head-screws-m3-x-8mm-10/TLR5930.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+gtin = "605482034026"
+fits = [
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/v100", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

@@ -1,11 +1,18 @@
 id = "part/axial/AXI-1376"
 brand = "brand/axial"
 number = "AXI-1376"
-name = "Axial Slickrock 35T 540 Brushed Motor"
+name = "35T 540 Brushed Motor"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-35t-540-brushed-motor/AXI-1376.html" },
+]
+former_names = ["Axial Slickrock 35T 540 Brushed Motor"]
 gtin = "660132934880"
-former_names = ["35T 540 Brushed Motor"]
 category = "motor"
 turns = 35
 equivalent_to = [
   { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

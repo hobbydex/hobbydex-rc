@@ -2,10 +2,22 @@ id = "part/axial/AXIC0218"
 brand = "brand/axial"
 number = "AXIC0218"
 name = "Bearing 5x10x4mm"
-gtin = "877493003470"
 pack_qty = 2
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-bearing-5x10x4mm-2/AXIC0218.html" },
+]
+gtin = "877493003470"
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti-jr", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

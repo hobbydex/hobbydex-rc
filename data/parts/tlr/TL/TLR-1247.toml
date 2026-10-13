@@ -1,0 +1,14 @@
+id = "part/tlr/TLR-1247"
+brand = "brand/tlr"
+number = "TLR-1247"
+name = "HD Turnbuckle Kit, Titanium"
+applies_to = "22X-T"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-hd-turnbuckle-kit-titanium-22x-t/TLR-1247.html" },
+]
+fits = [
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR-1253", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "ball-end"
+material = "titanium"

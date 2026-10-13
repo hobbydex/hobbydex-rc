@@ -6,5 +6,10 @@ name = "DBXL-E 4WD Brushless Desert Buggy RTR with AVC, black"
 kind = "rtr"
 status = "discontinued"
 gtin = "605482086605"
-color = "black"
 documents = ["doc/losi/los05012-manual-en", "doc/losi/los05012-product-page", "doc/losi/spmsrs6000-vehicle-insert-multi"]
+color = "black"
+contains = [
+  { part = "part/losi/LOS255003", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS256000", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA99172", role = "option", source = "doc/losi/horizon-part-pages" },
+]

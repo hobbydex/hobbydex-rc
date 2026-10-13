@@ -2,7 +2,13 @@ id = "part/losi/LOS343201"
 brand = "brand/losi"
 number = "LOS343201"
 name = "12mm Wheel Hex Screw Pin"
-gtin = "605482718582"
 pack_qty = 10
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-12mm-wheel-hex-screw-pin-10-lmt/LOS343201.html" },
+]
+gtin = "605482718582"
 category = "screw"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]

@@ -2,7 +2,17 @@ id = "part/tlr/TLR-1119"
 brand = "brand/tlr"
 number = "TLR-1119"
 name = "Spring Cups, Shock Ends, 13mm"
-former_names = ["Spring Cups, Shock Ends"]
 applies_to = "22X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-spring-cups-shock-ends-13mm-22x/TLR-1119.html" },
+]
+former_names = ["Spring Cups, Shock Ends"]
 category = "shock"
 shock_part = "rod-end"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+material = "plastic"
+gtin = "660132649050"

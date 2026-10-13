@@ -1,6 +1,16 @@
 id = "part/tlr/TLR342016"
 brand = "brand/tlr"
 number = "TLR342016"
-name = "Flywheel and Collet, Steel"
+name = "Flywheel & Collet Steel 4 Shoe"
+applies_to = "8IGHT-X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-flywheel-and-collet-steel-4-shoe-8ight-x/TLR342016.html" },
+]
+former_names = ["Flywheel and Collet, Steel"]
 category = "engine-fuel"
 material = "steel"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482207437"

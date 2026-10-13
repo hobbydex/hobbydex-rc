@@ -2,7 +2,13 @@ id = "part/losi/LOS-1813"
 brand = "brand/losi"
 number = "LOS-1813"
 name = "Sway Bar Set"
-gtin = "660132983666"
 pack_qty = 2
 applies_to = "LMT 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-sway-bar-set-2-lmt-2.0/LOS-1813.html" },
+]
+gtin = "660132983666"
 category = "suspension"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

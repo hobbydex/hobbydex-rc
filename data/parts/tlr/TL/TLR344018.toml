@@ -1,8 +1,16 @@
 id = "part/tlr/TLR344018"
 brand = "brand/tlr"
 number = "TLR344018"
-name = "16mm EVO Front Shock Spring 4.9, Green"
+name = "16mm EVO Front Shock Spring, 4.9 Green"
 pack_qty = 2
-applies_to = "8B 4.0"
+applies_to = "8B 4.0, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-16mm-evo-front-shock-spring-4.9-green-2-8b-4.0-8x/TLR344018.html" },
+]
+former_names = ["16mm EVO Front Shock Spring 4.9, Green"]
 category = "shock-spring"
 free_length_mm = 16
+fits = [
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

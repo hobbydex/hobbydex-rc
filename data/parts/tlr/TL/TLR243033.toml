@@ -3,5 +3,18 @@ brand = "brand/tlr"
 number = "TLR243033"
 name = "Shock Cap Bushing"
 pack_qty = 4
-applies_to = "8,"
+applies_to = "8T 4.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-shock-cap-bushing-4-8t-4.0/TLR243033.html" },
+]
 category = "shock"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482588710"

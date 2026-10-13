@@ -1,12 +1,24 @@
 id = "part/losi/LOS235008"
 brand = "brand/losi"
 number = "LOS235008"
-name = "Flat Head Screws M2.5x5mm"
-gtin = "605482623718"
+name = "Flat Head Screws M2.5 x 5mm"
 pack_qty = 10
-former_names = ["Flat Head Screws M2.5 5mm"]
+former_names = ["Flat Head Screws M2.5 5mm", "Flat Head Screws M2.5x5mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flat-head-screws-m2.5-x-5mm-10/LOS235008.html" },
+]
+gtin = "605482623718"
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.5x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+fits = [
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rzr-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

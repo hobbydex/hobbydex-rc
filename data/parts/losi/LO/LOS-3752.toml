@@ -1,0 +1,19 @@
+id = "part/losi/LOS-3752"
+brand = "brand/losi"
+number = "LOS-3752"
+name = "6x10x3 Ball Bearing"
+pack_qty = 4
+applies_to = "ALL 5IVE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-6x10x3-ball-bearing-4-all-5ive/LOS-3752.html" },
+]
+fits = [
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/5ive-te-3", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/5ive-tg-3", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

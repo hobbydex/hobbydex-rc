@@ -1,0 +1,17 @@
+id = "part/losi/LOSB5045"
+brand = "brand/losi"
+number = "LOSB5045"
+name = "20T Pinion Gear, 1.5M & Hardware"
+applies_to = "5IVE-T, MINI WRC"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-20t-pinion-gear-1.5m-and-hardware-5ive-t-mini-wrc/LOSB5045.html" },
+]
+fits = [
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/mod1.5-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 20
+module = 1.5

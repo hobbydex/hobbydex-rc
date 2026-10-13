@@ -1,7 +1,15 @@
 id = "part/losi/LOS242052"
 brand = "brand/losi"
 number = "LOS242052"
-name = "Rr Axle Mount set, 0 & 3"
-former_names = ["Rr Axle Mount set, 0 & 3 Deg"]
+name = "Rear Axle Mount set, 0 & 3 Deg"
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-rear-axle-mount-set-0-and-3-deg-lmt/LOS242052.html" },
+]
+former_names = ["Rr Axle Mount set, 0 & 3", "Rr Axle Mount set, 0 & 3 Deg"]
 category = "chassis"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482718292"

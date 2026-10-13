@@ -1,7 +1,15 @@
 id = "part/losi/LOS240024"
 brand = "brand/losi"
 number = "LOS240024"
-name = "Body ButtonSpacers"
-gtin = "605482161852"
+name = "Body Button Spacer Kit"
 pack_qty = 10
-category = "body"
+applies_to = "LMT Mega"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-body-button-spacer-kit-10-lmt-mega/LOS240024.html" },
+]
+former_names = ["Body ButtonSpacers"]
+gtin = "605482161852"
+category = "washer-shim"
+fits = [
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

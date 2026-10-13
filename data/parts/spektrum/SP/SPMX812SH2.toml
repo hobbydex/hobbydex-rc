@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMX812SH2"
+brand = "brand/spektrum"
+number = "SPMX812SH2"
+name = "7.4V 810mAh 2S Smart G2 50C LiPo Battery"
+applies_to = "IC2"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-7.4v-810mah-2s-smart-g2-50c-lipo-battery-ic2/SPMX812SH2.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-810mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 810
+c_rating = 50
+category = "battery"

@@ -1,5 +1,17 @@
 id = "part/losi/LOSA3508"
 brand = "brand/losi"
 number = "LOSA3508"
-name = "F/R Differential Pinion Gear"
+name = "Front/Rear Differential Pinion Gear, 13T"
+applies_to = "8B, 8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-front-rear-differential-pinion-gear-13t-8b-8x-8xe/LOSA3508.html" },
+]
+former_names = ["F/R Differential Pinion Gear"]
 category = "differential"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "660132616076"

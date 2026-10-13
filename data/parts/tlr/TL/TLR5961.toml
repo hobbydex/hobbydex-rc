@@ -1,11 +1,40 @@
 id = "part/tlr/TLR5961"
 brand = "brand/tlr"
 number = "TLR5961"
-name = "Flathead Screw, M3 x 8mm"
+name = "Flathead Screws, M3 x 8mm"
 pack_qty = 10
-former_names = ["Flat Head Screw, M3 x 8mm", "Flathead Screws, M3 x 8mm"]
+former_names = ["Flat Head Screw, M3 x 8mm", "Flathead Screw, M3 x 8mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-flathead-screws-m3-x-8mm-10/TLR5961.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+gtin = "605482023181"
+fits = [
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/22s-late-model", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/22s-sct", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/22s-sprint", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/22s-st", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/rzr-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22sct", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

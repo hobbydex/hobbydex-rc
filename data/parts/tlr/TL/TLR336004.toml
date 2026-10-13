@@ -1,9 +1,28 @@
 id = "part/tlr/TLR336004"
 brand = "brand/tlr"
 number = "TLR336004"
-name = "M3 Aluminum Lock Nuts"
+name = "M3 Aluminum Lock Nuts, Black"
+pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-m3-aluminum-lock-nuts-black-10/TLR336004.html" },
+]
+former_names = ["M3 Aluminum Lock Nuts"]
 category = "nut"
 material = "aluminium"
 equivalent_to = [
   { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "605482617502"
+fits = [
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/22s-sct", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22sct", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
 ]

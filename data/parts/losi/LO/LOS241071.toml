@@ -2,6 +2,13 @@ id = "part/losi/LOS241071"
 brand = "brand/losi"
 number = "LOS241071"
 name = "Helical Servo Saver Set, 25T"
-gtin = "605482169896"
 applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-helical-servo-saver-set-25t-tlr-tuned-lmt/LOS241071.html" },
+]
+gtin = "605482169896"
 category = "steering"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]

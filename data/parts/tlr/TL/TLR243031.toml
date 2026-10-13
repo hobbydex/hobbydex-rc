@@ -1,5 +1,16 @@
 id = "part/tlr/TLR243031"
 brand = "brand/tlr"
 number = "TLR243031"
-name = "16mm Shock Boot Set (8)"
+name = "16mm Shock Boot Set"
+pack_qty = 8
+applies_to = "8B/E 3.0, 8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-16mm-shock-boot-set-8-8b-e-3.0-8x-8xe/TLR243031.html" },
+]
+former_names = ["16mm Shock Boot Set (8)"]
 category = "o-ring-seal"
+fits = [
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

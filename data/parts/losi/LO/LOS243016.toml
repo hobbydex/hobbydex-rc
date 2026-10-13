@@ -1,8 +1,18 @@
 id = "part/losi/LOS243016"
 brand = "brand/losi"
 number = "LOS243016"
-name = "Spring, Soft,Yel,1.1rate"
-gtin = "605482718513"
+name = "Shock Spring Soft, Yellow, 1.1 rate"
 pack_qty = 4
-former_names = ["Spring,Soft,Yel,1.1rate"]
 applies_to = "LMT"
+color = "yellow"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-spring-soft-yellow-1.1-rate-4-lmt/LOS243016.html" },
+]
+former_names = ["Spring, Soft,Yel,1.1rate", "Spring,Soft,Yel,1.1rate"]
+gtin = "605482718513"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+category = "shock-spring"
+rate = "soft"

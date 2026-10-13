@@ -1,6 +1,16 @@
 id = "part/tlr/TLR-1090"
 brand = "brand/tlr"
 number = "TLR-1090"
-name = "Fan, Low Ft Wing Mt, Front Mounts"
+name = "Fan, Low Front Wing Mount, Front Sway Bar Mounts"
 applies_to = "22X"
-category = "chassis"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-fan-low-front-wing-mount-front-sway-bar-mounts-22x/TLR-1090.html" },
+]
+former_names = ["Fan, Low Ft Wing Mt, Front Mounts"]
+category = "suspension"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+material = "plastic"
+gtin = "660132648787"

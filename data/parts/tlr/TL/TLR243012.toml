@@ -2,6 +2,18 @@ id = "part/tlr/TLR243012"
 brand = "brand/tlr"
 number = "TLR243012"
 name = "16mm Shock Piston, Split"
+pack_qty = 2
+applies_to = "8B 3.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-16mm-shock-piston-split-2-8b-3.0/TLR243012.html" },
+]
 category = "shock"
 shock_part = "piston"
 bore_mm = 16
+fits = [
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482068823"

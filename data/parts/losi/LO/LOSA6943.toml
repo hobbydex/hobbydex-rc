@@ -1,12 +1,25 @@
 id = "part/losi/LOSA6943"
 brand = "brand/losi"
 number = "LOSA6943"
-name = "10X15x4mm Sealed Ball Bearing"
-gtin = "660132135324"
+name = "Sealed Ball Bearings, 10mm x 15mm"
 pack_qty = 2
+applies_to = "22/22-4"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-sealed-ball-bearings-10mm-x-15mm-2-22-22-4/LOSA6943.html" },
+]
+former_names = ["10X15x4mm Sealed Ball Bearing"]
+gtin = "660132135324"
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "rubber"
 category = "bearing"
+fits = [
+  { kit = "kit/tlr/22", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

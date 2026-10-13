@@ -1,11 +1,27 @@
 id = "part/losi/LOS235009"
 brand = "brand/losi"
 number = "LOS235009"
-name = "Flat Head Screw, M2.5 x 8mm"
+name = "Flat Head Screws M2.5 x 8mm"
 pack_qty = 10
-former_names = ["Flat Head Screws M2.5 x", "Flat Head Screws M2.5 x 8mm"]
+former_names = ["Flat Head Screw, M2.5 x 8mm", "Flat Head Screws M2.5 x"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flat-head-screws-m2.5-x-8mm-10/LOS235009.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2.5x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+gtin = "605482623725"
+fits = [
+  { kit = "kit/losi/22s-sprint", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

@@ -1,0 +1,19 @@
+id = "part/axial/AXI237003"
+brand = "brand/axial"
+number = "AXI237003"
+name = "4mm x 8mm x 3mm Ball Bearing"
+pack_qty = 2
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-4mm-x-8mm-x-3mm-ball-bearing-2/AXI237003.html" },
+]
+gtin = "605482690017"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/utb18", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

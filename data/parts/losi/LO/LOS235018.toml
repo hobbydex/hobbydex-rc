@@ -2,14 +2,25 @@ id = "part/losi/LOS235018"
 brand = "brand/losi"
 number = "LOS235018"
 name = "Set Screw M3 x 3mm"
-gtin = "605482622728"
 pack_qty = 10
 former_names = ["Setscrew, M3 x 3mm"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-set-screw-m3-x-3mm-10/LOS235018.html" },
 ]
+gtin = "605482622728"
 equivalent_to = [
   { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-sprint", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-st", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

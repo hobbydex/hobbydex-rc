@@ -2,6 +2,13 @@ id = "part/losi/LOS240029"
 brand = "brand/losi"
 number = "LOS240029"
 name = "Body Mount Set"
-gtin = "605482169827"
 applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-body-mount-set-tlr-tuned-lmt/LOS240029.html" },
+]
+gtin = "605482169827"
 category = "chassis"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]

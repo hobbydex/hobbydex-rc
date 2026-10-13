@@ -1,5 +1,17 @@
 id = "part/tlr/TLR241071"
 brand = "brand/tlr"
 number = "TLR241071"
-name = "Batt Tray, Center Diff & Servo 8XE 2.0"
-category = "differential"
+name = "Battery Tray, Center Differential & Servo Mount"
+applies_to = "8XE 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-battery-tray-center-differential-and-servo-mount-8xe-2.0/TLR241071.html" },
+]
+former_names = ["Batt Tray, Center Diff & Servo 8XE 2.0"]
+category = "chassis"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482154977"

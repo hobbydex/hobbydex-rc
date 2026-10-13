@@ -2,9 +2,12 @@ id = "part/axial/AXIC0084"
 brand = "brand/axial"
 number = "AXIC0084"
 name = "Cap Head M3x8mm Black Oxide"
-gtin = "877493003296"
 pack_qty = 10
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-cap-head-m3x8mm-black-oxide-10/AXIC0084.html" },
 ]
+gtin = "877493003296"
 category = "screw"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

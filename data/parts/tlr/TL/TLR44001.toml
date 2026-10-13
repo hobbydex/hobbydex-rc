@@ -1,8 +1,26 @@
 id = "part/tlr/TLR44001"
 brand = "brand/tlr"
 number = "TLR44001"
-name = "1/8 Buggy Dish Wheel, White 8B 3.0"
+name = "1/8 Front/Rear Buggy 3.3 Wheels, 17mm Hex, White"
+pack_qty = 4
+applies_to = "8IGHT 3.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-1-8-front-rear-buggy-3.3-wheels-17mm-hex-white-4-8ight-3.0/TLR44001.html" },
+]
+former_names = ["1/8 Buggy Dish Wheel, White 8B 3.0"]
 category = "wheel"
 scale = "1/8"
 vehicle = "buggy"
 color = "white"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482069134"
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },
+]
+position = "front-rear"

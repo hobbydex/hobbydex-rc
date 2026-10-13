@@ -2,10 +2,21 @@ id = "part/losi/LOS257007"
 brand = "brand/losi"
 number = "LOS257007"
 name = "4 x 8 x 3mm Ball Bearing"
-gtin = "605482828878"
 pack_qty = 4
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-4-x-8-x-3mm-ball-bearing-4/LOS257007.html" },
+]
+gtin = "605482828878"
 equivalent_to = [
   { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/mini-lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/night-crawler", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

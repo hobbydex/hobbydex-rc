@@ -3,4 +3,12 @@ brand = "brand/tlr"
 number = "TLR144003"
 name = "Rear Axle Mount Set,3 Deg, AL, BLK"
 applies_to = "LMT, TTLMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-rear-axle-mount-set3-deg-al-blk-lmt-ttlmt/TLR144003.html" },
+]
 category = "chassis"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482170007"

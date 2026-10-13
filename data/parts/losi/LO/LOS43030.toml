@@ -1,11 +1,20 @@
 id = "part/losi/LOS43030"
 brand = "brand/losi"
 number = "LOS43030"
-name = "BF Goodrich Mud Terrain KM3, Beadlock"
-gtin = "605482717622"
+name = "BFGoodrich Mud Terrain KM3, Beadlock"
 pack_qty = 2
+applies_to = "SBR 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-bfgoodrich-mud-terrain-km3-beadlock-2-sbr-2.0/LOS43030.html" },
+]
+former_names = ["BF Goodrich Mud Terrain KM3, Beadlock"]
+gtin = "605482717622"
 category = "wheel"
 beadlock = true
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for Super Baja Rey 2.0 RTR are 17 mm" },
+]
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]

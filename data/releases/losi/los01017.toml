@@ -7,3 +7,6 @@ kind = "rtr"
 status = "discontinued"
 gtin = "605482670569"
 documents = ["doc/losi/los01017-manual-en", "doc/losi/los01017-product-page"]
+contains = [
+  { part = "part/losi/LOS235014", role = "kit", source = "doc/losi/horizon-part-pages" },
+]

@@ -1,7 +1,18 @@
 id = "part/tlr/TLR243030"
 brand = "brand/tlr"
 number = "TLR243030"
-name = "16mm Shock Piston Set Tapered1.4/1.5: 8T, E 3.0"
+name = "16mm Shockk Piston Set, Tapered 1.4/1.5mm"
+applies_to = "8IGHT-T/E 3.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-16mm-shockk-piston-set-tapered-1.4-1.5mm-8ight-t-e-3.0/TLR243030.html" },
+]
+former_names = ["16mm Shock Piston Set Tapered1.4/1.5: 8T, E 3.0"]
 category = "shock"
 shock_part = "piston"
 bore_mm = 16
+fits = [
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482552001"

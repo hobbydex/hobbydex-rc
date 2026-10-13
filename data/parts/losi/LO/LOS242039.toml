@@ -1,8 +1,16 @@
 id = "part/losi/LOS242039"
 brand = "brand/losi"
 number = "LOS242039"
-name = "Center Diff Output Shafts"
-gtin = "605482718384"
+name = "Center Differential Output Shafts"
 pack_qty = 2
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-center-differential-output-shafts-2-lmt/LOS242039.html" },
+]
+former_names = ["Center Diff Output Shafts"]
+gtin = "605482718384"
 category = "differential"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

@@ -1,6 +1,13 @@
 id = "part/tlr/TLR232135"
 brand = "brand/tlr"
 number = "TLR232135"
-name = "Center Diff Cover"
+name = "Center Differential Cover"
 applies_to = "22X-4"
-category = "chassis"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-center-differential-cover-22x-4/TLR232135.html" },
+]
+former_names = ["Center Diff Cover"]
+category = "differential"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

@@ -2,8 +2,14 @@ id = "part/losi/LOS-1833"
 brand = "brand/losi"
 number = "LOS-1833"
 name = "Shock Shaft, Dampening"
-gtin = "660132983864"
 pack_qty = 2
 applies_to = "LMT 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-shaft-dampening-2-lmt-2.0/LOS-1833.html" },
+]
+gtin = "660132983864"
 category = "shock"
 shock_part = "shaft"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

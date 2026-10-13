@@ -6,8 +6,9 @@ name = "Mini-T 2.0 2S 2WD RTR Brushed Stadium Truck (Battery & Charger included)
 kind = "rtr"
 status = "discontinued"
 gtin = "605482429068"
-color = "red"
 documents = ["doc/losi/los01015-manual-en", "doc/losi/los01015-product-page"]
+color = "red"
 contains = [
   { part = "part/spektrum/SPMSSX107", role = "kit", source = "doc/losi/los01015-product-page", qty = 1, notes = "In the box: Spektrum SX107 Micro Metal Gear Servo (installed)" },
+  { part = "part/losi/LOS236001", role = "option", source = "doc/losi/horizon-part-pages" },
 ]

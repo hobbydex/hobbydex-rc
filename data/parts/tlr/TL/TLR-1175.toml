@@ -3,5 +3,13 @@ brand = "brand/tlr"
 number = "TLR-1175"
 name = "Slipper Shaft, Titanium"
 applies_to = "22X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-slipper-shaft-titanium-22x/TLR-1175.html" },
+]
 category = "gear"
 material = "titanium"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/22x", type = "replaces", replaces = "part/tlr/TLR-1147", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR-1147", source = "doc/tlr/tlr-1053-22x-t-exploded-and-parts-views", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -1,7 +1,16 @@
 id = "part/tlr/TLR244066"
 brand = "brand/tlr"
 number = "TLR244066"
-name = "Shock, Shaft, Rear, 3.5mm"
+name = "Shock Shaft, Rear 3.5mm"
+applies_to = "8XT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-shock-shaft-rear-3.5mm-8xt/TLR244066.html" },
+]
+former_names = ["Shock, Shaft, Rear, 3.5mm"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3.5
+fits = [
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482693520"

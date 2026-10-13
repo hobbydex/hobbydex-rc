@@ -1,11 +1,22 @@
 id = "part/axial/AXI235110"
 brand = "brand/axial"
 number = "AXI235110"
-name = "Button Head Screw M3x16mm"
-gtin = "605482690185"
+name = "M3 x 16mm Button Head Screw"
 pack_qty = 10
+former_names = ["Button Head Screw M3x16mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-m3-x-16mm-button-head-screw-10/AXI235110.html" },
+]
+gtin = "605482690185"
 equivalent_to = [
   { spec = "spec/screw/m3x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/rbx10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

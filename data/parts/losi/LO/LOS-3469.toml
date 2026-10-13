@@ -1,11 +1,19 @@
 id = "part/losi/LOS-3469"
 brand = "brand/losi"
 number = "LOS-3469"
-name = "Flat Head Screws, M3 x 6mm"
-gtin = "660132676100"
+name = "Flat Head Screws, M3x6mm"
 pack_qty = 10
+former_names = ["Flat Head Screws, M3 x 6mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flat-head-screws-m3x6mm-10/LOS-3469.html" },
+]
+gtin = "660132676100"
 equivalent_to = [
   { spec = "spec/screw/m3x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/losi/22s-late-model", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

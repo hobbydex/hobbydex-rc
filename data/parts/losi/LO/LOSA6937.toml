@@ -1,13 +1,35 @@
 id = "part/losi/LOSA6937"
 brand = "brand/losi"
 number = "LOSA6937"
-name = "5x10x4mm Shielded Ball Bearing"
-gtin = "605482138083"
+name = "5x10mm Shielded Ball Bearing"
 pack_qty = 2
-former_names = ["5 x 10mm Shielded Ball Bearing"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-5x10mm-shielded-ball-bearing-2/LOSA6937.html" },
+]
+former_names = ["5 x 10mm Shielded Ball Bearing", "5x10x4mm Shielded Ball Bearing"]
+gtin = "605482138083"
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "metal"
 category = "bearing"
+fits = [
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-late-model", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-sprint", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-st", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/night-crawler", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rzr-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
