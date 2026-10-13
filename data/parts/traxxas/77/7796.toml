@@ -2,11 +2,11 @@ id = "part/traxxas/7796"
 brand = "brand/traxxas"
 number = "7796"
 name = "Center drive, torque biasing (assembled)/ 17x26x5 ball bearings (2) (requires #7727A bulkheads)"
-equivalent_to = [
-  { spec = "spec/bearing/17x26x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
-]
 material = "steel"
-category = "bearing"
+category = "drivetrain"
 related = [
   { part = "part/traxxas/7727A", relation = "requires", notes = "link_part_refs" },
+]
+includes = [
+  { spec = "spec/bearing/17x26x5", qty = 2 },
 ]
