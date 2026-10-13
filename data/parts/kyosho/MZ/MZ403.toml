@@ -2,6 +2,7 @@ id = "part/kyosho/MZ403"
 brand = "brand/kyosho"
 number = "MZ403"
 name = "Small Parts for Suspension (MR-03)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "suspension"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-spare-and-option-parts" },
+]

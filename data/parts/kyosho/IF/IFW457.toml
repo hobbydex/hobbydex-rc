@@ -1,8 +1,10 @@
 id = "part/kyosho/IFW457"
 brand = "brand/kyosho"
 number = "IFW457"
-name = "Big Shock Spring (Gray/7.5-1.4/L=78)"
+name = "814 Big Shock Spring (Light Blue/8-1.4/L=78)"
 former_names = ["Big Shock Spring (Orange/8.5-1.4/L=78)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock-spring"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31889t1-inferno-mp9-tki3-rs-spop" },
+]

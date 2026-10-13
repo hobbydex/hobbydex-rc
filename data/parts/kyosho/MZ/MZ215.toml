@@ -3,6 +3,7 @@ brand = "brand/kyosho"
 number = "MZ215"
 name = "Motor Case Set (MM/MR-03)"
 former_names = ["Motor Case Set (MM)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "motor"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
+]

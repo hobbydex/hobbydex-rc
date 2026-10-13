@@ -2,6 +2,7 @@ id = "part/kyosho/MD209"
 brand = "brand/kyosho"
 number = "MD209"
 name = "Rear Main Chassis Set (ASF/SPORTS)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/mini-z-awd-readyset-kt-531p-2026-spare-and-option-parts" },
+]

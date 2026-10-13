@@ -1,11 +1,14 @@
 id = "part/kyosho/OTH248WB"
 brand = "brand/kyosho"
 number = "OTH248WB"
-name = "} 2'2 Dish Wheel (Rear/White/2pcs)"
+name = "2.2 Dish Wheel (Rear/White)"
 pack_qty = 2
 former_names = ["2'2 Dish Wheel (RearWhite/2pcs)", "22 Dish Wheel (Rear/White/2pcs)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "wheel"
-name_source = "ocr"
 position = "rear"
 color = "white"
+fits = [
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]
+range = "kyosho/oth248-colours"

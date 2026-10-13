@@ -3,6 +3,10 @@ brand = "brand/kyosho"
 number = "MZW403"
 name = "Carbon Rear Sus Plate"
 name_ja = "カーボンリヤサスプレート"
-documents = ["doc/kyosho/mzw403-carbon-rear-sus"]
 category = "chassis"
+documents = ["doc/kyosho/mzw403-carbon-rear-sus"]
 material = "carbon"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
+  { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
+]

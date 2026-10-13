@@ -1,8 +1,11 @@
 id = "part/kyosho/92985B"
 brand = "brand/kyosho"
 number = "92985B"
-name = "Hard Brake Lining (Non asbestos/4pcs)"
+name = "Hard Brake Lining (Non asbestos)"
 pack_qty = 4
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155d-usa-1-nitro-readyset-kt-231p-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-spop" },
+]

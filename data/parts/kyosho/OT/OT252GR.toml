@@ -1,8 +1,11 @@
 id = "part/kyosho/OT252GR"
 brand = "brand/kyosho"
 number = "OT252GR"
-name = "Wing (Peppermint Green/Javelin)"
+name = "Wing (Paper mint Green/Javelin)"
 former_names = ["/ Y / W / OR / BK / R GRGgsee aise"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "wing"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

@@ -1,8 +1,9 @@
 id = "part/kyosho/IF808"
 brand = "brand/kyosho"
 number = "IF808"
-name = "Center Swing Shaft (L=112/1pc/MP116)"
+name = "Center Swing Shaft (L=112/MP11e)"
 pack_qty = 1
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "drivetrain"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

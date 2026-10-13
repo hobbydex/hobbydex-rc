@@ -1,6 +1,8 @@
 id = "part/kyosho/MZ705"
 brand = "brand/kyosho"
 number = "MZ705"
-name = "XSPEED 56"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+name = "XSPEED 56 Sensored Brushless Motor (5600KV)"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
+]
+category = "motor"

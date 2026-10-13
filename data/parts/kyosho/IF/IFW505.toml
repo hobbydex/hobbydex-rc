@@ -3,6 +3,10 @@ brand = "brand/kyosho"
 number = "IFW505"
 name = "Aluminum Servo Mount"
 name_ja = "アルミサーボマウント"
-documents = ["doc/kyosho/ifw505-t02-aluminiumservomount"]
 category = "chassis"
+documents = ["doc/kyosho/ifw505-t02-aluminiumservomount"]
 material = "aluminium"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]

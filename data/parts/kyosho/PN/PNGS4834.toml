@@ -1,13 +1,16 @@
 id = "part/kyosho/PNGS4834"
 brand = "brand/kyosho"
 number = "PNGS4834"
-name = ") Steel Pinion Gear (34T-48P)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Steel Pinion Gear (34T-48P)"
+pack_qty = 48
 category = "pinion"
 equivalent_to = [
   { spec = "spec/pinion/48dp-34t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 material = "steel"
-name_source = "ocr"
 teeth = 34
 pitch_dp = 48
+fits = [
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+]

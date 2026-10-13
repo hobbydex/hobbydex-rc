@@ -2,6 +2,7 @@ id = "part/kyosho/IFB024H"
 brand = "brand/kyosho"
 number = "IFB024H"
 name = "Body (MP10e TKI2/1.0mm/Hard)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "body"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

@@ -1,9 +1,11 @@
 id = "part/kyosho/MAH402BK"
 brand = "brand/kyosho"
 number = "MAH402BK"
-name = "Wheel (Black/2pcs/Mad Crusher)"
+name = "Wheel (Black/Mad Crusher)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "wheel"
-name_source = "ocr"
 color = "black"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+]

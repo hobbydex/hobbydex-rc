@@ -1,6 +1,11 @@
 id = "part/kyosho/IFW605-20"
 brand = "brand/kyosho"
 number = "IFW605-20"
-name = "“<™"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+name = "Rear Chassis Weight (20g/MP10/MP9e EVO.)"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-op" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33022-02-mp10tki2-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]
+category = "chassis"

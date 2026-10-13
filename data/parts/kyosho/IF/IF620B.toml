@@ -2,7 +2,9 @@ id = "part/kyosho/IF620B"
 brand = "brand/kyosho"
 number = "IF620B"
 name = "Sway Bar Ball End (MP10)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "ball-end"
 ball_type = "set-screw"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1-inferno-mp10-readyset-spop" },
+]

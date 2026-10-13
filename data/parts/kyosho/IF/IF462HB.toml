@@ -1,11 +1,16 @@
 id = "part/kyosho/IF462HB"
 brand = "brand/kyosho"
 number = "IF462HB"
-name = "5.8mm Flanged Hard Ball (2pcs/MP9)"
+name = "5.8mm Flanged Hard Ball / MP9"
 pack_qty = 2
 former_names = ["5.8mm Flanged Hard Ball (2pcs / MP9)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "ball-end"
 ball_mm = 5.8
 ball_type = "through-hole"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1s-inferno-mp10e-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

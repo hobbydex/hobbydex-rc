@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "IS205B"
 name = "Rear Lower Sus. Arm"
 name_ja = "リヤロアサスアーム"
-documents = ["doc/kyosho/is205b-hbt01-rearlowersusarm"]
 category = "suspension"
+documents = ["doc/kyosho/is205b-hbt01-rearlowersusarm"]
+fits = [
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-sp" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]

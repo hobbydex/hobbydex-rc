@@ -1,8 +1,11 @@
 id = "part/kyosho/IFW629B"
 brand = "brand/kyosho"
 number = "IFW629B"
-name = "Carbon Upper Plate (MP10)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "chassis"
-name_source = "ocr"
+name = "Al Front Hub Carrier Set(L,R/22° /Gunmetal/MP10)"
+category = "suspension"
 material = "carbon"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1-inferno-mp10-readyset-spop" },
+]
+range = "kyosho/ifw629-colours"

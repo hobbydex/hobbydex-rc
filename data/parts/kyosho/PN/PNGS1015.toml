@@ -1,14 +1,17 @@
 id = "part/kyosho/PNGS1015"
 brand = "brand/kyosho"
 number = "PNGS1015"
-name = "Steel Pinion Gear (15T/1.0M/ ゅ 5.0)"
+name = "Steel Pinion Gear (15T/1.0M/φ5.0)"
 former_names = ["Big Shock Spring (M / Gray / 7.5-1.4 / L=84)", "Steel Pinion Gear (15T/1.0M/5.0)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "pinion"
 equivalent_to = [
   { spec = "spec/pinion/mod1-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 material = "steel"
-name_source = "ocr"
 teeth = 15
 module = 1
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

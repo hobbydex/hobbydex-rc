@@ -3,6 +3,11 @@ brand = "brand/kyosho"
 number = "IFW413"
 name = "Aluminum Rear Torque Rod Set (Gunmetal/MP9)"
 name_ja = "アルミリアトルクロッドセット(ガンメタリックMP9)"
-documents = ["doc/kyosho/ifw413-aluminum-rear-torque-rodset"]
 category = "ball-end"
+documents = ["doc/kyosho/ifw413-aluminum-rear-torque-rodset"]
 material = "aluminium"
+pack_qty = 2
+fits = [
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30897-inferno-mp9etki-spop" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/33001-t03-inferno-mp9-tki4-spop" },
+]

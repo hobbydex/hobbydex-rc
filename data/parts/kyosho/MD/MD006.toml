@@ -1,7 +1,8 @@
 id = "part/kyosho/MD006"
 brand = "brand/kyosho"
 number = "MD006"
-name = "Servo Saver Assy"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "steering"
-name_source = "ocr"
+name = "Pinion & Spur Gears Set"
+category = "pinion"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/mini-z-awd-readyset-kt-531p-2026-spare-and-option-parts" },
+]

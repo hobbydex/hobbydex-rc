@@ -3,5 +3,8 @@ brand = "brand/kyosho"
 number = "UMW746"
 name = "Front Stabilizer Set"
 name_ja = "フロントスタビライザーセット"
-documents = ["doc/kyosho/umw746-front-stabilizer-set"]
 category = "suspension"
+documents = ["doc/kyosho/umw746-front-stabilizer-set"]
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
+]

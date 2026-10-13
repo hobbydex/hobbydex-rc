@@ -1,11 +1,13 @@
 id = "part/kyosho/IFW471D"
 brand = "brand/kyosho"
 number = "IFW471D"
-name = "HD Coating Shock Set (L=47/2pcs)"
+name = "HD Coating Shock Set (S/47/MP9)"
 pack_qty = 2
 former_names = ["HD Coating Shock Set (S/47/MP9)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "complete"
 length_mm = 47
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+]

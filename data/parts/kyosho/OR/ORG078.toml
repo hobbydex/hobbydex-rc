@@ -1,8 +1,13 @@
 id = "part/kyosho/ORG078"
 brand = "brand/kyosho"
 number = "ORG078"
-name = "O-Ring (0.78/Black/4pcs)"
+name = "O-Ring (0.78/Black)"
 pack_qty = 4
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "o-ring-seal"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30068-t03-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
+  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+]

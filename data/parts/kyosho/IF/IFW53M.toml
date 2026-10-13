@@ -1,7 +1,11 @@
 id = "part/kyosho/IFW53M"
 brand = "brand/kyosho"
 number = "IFW53M"
-name = "3PC Clutch Spring (0.95)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Clutch Spring (0.95)"
 category = "engine-fuel"
-name_source = "ocr"
+pack_qty = 3
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-spop-20191228" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-op" },
+]

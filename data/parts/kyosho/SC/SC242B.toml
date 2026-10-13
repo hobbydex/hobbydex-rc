@@ -1,8 +1,9 @@
 id = "part/kyosho/SC242B"
 brand = "brand/kyosho"
 number = "SC242B"
-name = "Pivot Ball 5.8M3x12.5mm"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "ball-end"
+name = "4.8mmxM2.6 Ball Nut 2014"
+category = "nut"
 ball_mm = 5.8
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+]

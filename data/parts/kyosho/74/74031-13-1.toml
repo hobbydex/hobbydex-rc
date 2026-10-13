@@ -1,7 +1,8 @@
 id = "part/kyosho/74031-13-1"
 brand = "brand/kyosho"
 number = "74031-13-1"
-name = "Air Cleaner Sponge (2pcs)"
+name = "Air Cleaner Sponge"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+]

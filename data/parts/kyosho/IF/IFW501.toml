@@ -5,3 +5,7 @@ name = "Battery Spacer for Short Li-PO"
 name_ja = "バッテリースペーサー (ショートリポ用)"
 category = "washer-shim"
 documents = ["doc/kyosho/ifw501-t01-batteryspacer-for-shortli-po"]
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]

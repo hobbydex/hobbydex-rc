@@ -1,10 +1,14 @@
 id = "part/kyosho/W5184"
 brand = "brand/kyosho"
 number = "W5184"
-name = "04 Shock Shaft (42/2pcs)"
+name = "04 Shock Shaft (42)"
 pack_qty = 8
 former_names = ["05 Shock O-Ring (8pcs)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "shaft"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30068-t03-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

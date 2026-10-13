@@ -1,9 +1,10 @@
 id = "part/kyosho/FAT201SB"
 brand = "brand/kyosho"
 number = "FAT201SB"
-name = "Front Tire/Soft/2pcs (Dirt Hog)"
+name = "Front Tire/Soft/ (Dirt Hog)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "tire"
-name_source = "ocr"
 position = "front"
+fits = [
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

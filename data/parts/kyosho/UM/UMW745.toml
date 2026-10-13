@@ -3,6 +3,9 @@ brand = "brand/kyosho"
 number = "UMW745"
 name = "Titanium Screw Set"
 name_ja = "チタンビスセット"
-documents = ["doc/kyosho/umw745-titanium-screw-set"]
 category = "screw"
+documents = ["doc/kyosho/umw745-titanium-screw-set"]
 material = "titanium"
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
+]

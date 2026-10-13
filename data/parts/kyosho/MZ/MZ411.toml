@@ -2,6 +2,7 @@ id = "part/kyosho/MZ411"
 brand = "brand/kyosho"
 number = "MZ411"
 name = "Upper Cover / Servo Motor Cover Set"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/mini-z-mr-03-sports-2013-spare-and-option-parts" },
+]

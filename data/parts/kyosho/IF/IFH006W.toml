@@ -1,9 +1,11 @@
 id = "part/kyosho/IFH006W"
 brand = "brand/kyosho"
 number = "IFH006W"
-name = "Dish Wheel (4pcs/White/MP9 TKI4)"
+name = "Dish Wheel TKI4"
 pack_qty = 4
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "wheel"
-name_source = "ocr"
 color = "white"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33022-02-mp10tki2-spop" },
+]

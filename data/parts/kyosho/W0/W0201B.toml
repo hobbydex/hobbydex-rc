@@ -1,8 +1,12 @@
 id = "part/kyosho/W0201B"
 brand = "brand/kyosho"
 number = "W0201B"
-name = "Ball Nut 4.8xM2.6mm x2pcs"
+name = "5.8φ Steel Ball"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "nut"
-name_source = "ocr"
+category = "ball-end"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]
+ball_mm = 5.8
+material = "steel"

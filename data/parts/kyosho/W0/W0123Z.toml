@@ -2,11 +2,17 @@ id = "part/kyosho/W0123Z"
 brand = "brand/kyosho"
 number = "W0123Z"
 name = "Hard Pinion Gear (23T-48P)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+pack_qty = 48
 category = "pinion"
 equivalent_to = [
   { spec = "spec/pinion/48dp-23t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
-name_source = "ocr"
 teeth = 23
 pitch_dp = 48
+fits = [
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30068-t03-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+]

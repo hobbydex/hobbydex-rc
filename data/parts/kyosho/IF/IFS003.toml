@@ -1,8 +1,11 @@
 id = "part/kyosho/IFS003"
 brand = "brand/kyosho"
 number = "IFS003"
-name = "Big Shock Spring (Light Purple/10-1.5/L=85)"
+name = "915 Big Shock Spring (Blue/9-1.5/L=85)"
 former_names = ["Big Shock Spring (Red/9.5-1.5/L=85)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock-spring"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/33021-mm2-inf-mp9-tki4-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33024-t01-mp10-30th-sp" },
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/34111-mm02-inf-mp9e-evo-spop" },
+]

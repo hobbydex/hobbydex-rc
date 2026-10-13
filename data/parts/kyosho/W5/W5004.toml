@@ -2,7 +2,8 @@ id = "part/kyosho/W5004"
 brand = "brand/kyosho"
 number = "W5004"
 name = "Adjustable Shock (L)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "complete"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/usa-1", type = "direct", source = "doc/kyosho/3165-usa-1-manual" },
+]

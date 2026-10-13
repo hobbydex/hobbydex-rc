@@ -1,8 +1,9 @@
 id = "part/kyosho/IF560B"
 brand = "brand/kyosho"
 number = "IF560B"
-name = "Battery Strap Set (MP106)"
+name = "Motor Spacer & Wire Holder (MP10e TKI2)"
 former_names = ["Motor Spacer & Wire Holder (MP10e TKI2)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "chassis"
-name_source = "ocr"
+category = "washer-shim"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+]

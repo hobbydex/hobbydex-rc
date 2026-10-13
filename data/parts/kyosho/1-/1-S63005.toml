@@ -1,0 +1,14 @@
+id = "part/kyosho/1-S63005"
+brand = "brand/kyosho"
+number = "1-S63005"
+name = "Flat Head Cap Screw (M3x5)(Hex)"
+pack_qty = 8
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

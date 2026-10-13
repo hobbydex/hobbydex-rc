@@ -2,9 +2,10 @@ id = "part/kyosho/JK2009US"
 brand = "brand/kyosho"
 number = "JK2009US"
 name = "1/10 Buggy 4WD Front DESIRER Super Soft w/Insert"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
 category = "tire"
 scale = "1/10"
 vehicle = "buggy"
 position = "front-4wd"
+fits = [
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

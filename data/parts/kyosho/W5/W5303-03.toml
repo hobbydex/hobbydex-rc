@@ -1,9 +1,11 @@
 id = "part/kyosho/W5303-03"
 brand = "brand/kyosho"
 number = "W5303-03"
-name = "Shock Seal (L/4pcs/ For Big Bore Shock)"
+name = "Shock Seal (L/For Big Bore Shock)"
 pack_qty = 4
 former_names = [") Shock Seal (L/4pcs/ For Big Bore Shock)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "o-ring-seal"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-spare-and-option-parts" },
+]

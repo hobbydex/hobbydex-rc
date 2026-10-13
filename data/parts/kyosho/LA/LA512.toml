@@ -1,7 +1,8 @@
 id = "part/kyosho/LA512"
 brand = "brand/kyosho"
 number = "LA512"
-name = "King Pin (LAZER SB)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "SB) King Pin (LAZER SB"
 category = "pin-clip"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
+]

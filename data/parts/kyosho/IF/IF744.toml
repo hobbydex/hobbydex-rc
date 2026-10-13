@@ -1,11 +1,13 @@
 id = "part/kyosho/IF744"
 brand = "brand/kyosho"
 number = "IF744"
-name = "5.8mm Flanged Hard Ball (2pcs/MP9)"
+name = "Rebound Adjust Screw"
 pack_qty = 4
 former_names = ["Rebound Adjust Screw (4pcs/MP11)"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-category = "ball-end"
+category = "screw"
 ball_mm = 5.8
 ball_type = "through-hole"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]

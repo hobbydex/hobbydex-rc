@@ -3,5 +3,8 @@ brand = "brand/kyosho"
 number = "UBW002"
 name = "Front Stabilizer Set (RB7.5)"
 name_ja = "フロントスタビライザーセット(RB7.5)"
-documents = ["doc/kyosho/ubw002-t01"]
 category = "suspension"
+documents = ["doc/kyosho/ubw002-t01"]
+fits = [
+  { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
+]

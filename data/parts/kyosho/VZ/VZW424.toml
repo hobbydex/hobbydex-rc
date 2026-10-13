@@ -3,6 +3,11 @@ brand = "brand/kyosho"
 number = "VZW424"
 name = "Steel Diff. Bevel Gear Set"
 name_ja = "スチールデフベベルギヤセット"
-documents = ["doc/kyosho/vzw424-steel-diff-bevel-gearset"]
 category = "differential"
+documents = ["doc/kyosho/vzw424-steel-diff-bevel-gearset"]
 material = "steel"
+pack_qty = 4
+fits = [
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+]

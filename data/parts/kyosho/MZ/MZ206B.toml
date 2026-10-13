@@ -2,7 +2,8 @@ id = "part/kyosho/MZ206B"
 brand = "brand/kyosho"
 number = "MZ206B"
 name = "Rear Shock Set"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 shock_part = "complete"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-spare-and-option-parts" },
+]
