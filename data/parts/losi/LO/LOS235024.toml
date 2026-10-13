@@ -2,14 +2,38 @@ id = "part/losi/LOS235024"
 brand = "brand/losi"
 number = "LOS235024"
 name = "Button Head Screws M3 x 25mm"
-gtin = "605482087275"
 pack_qty = 10
 former_names = ["Button Head Screws M3 x", "Button Head Screws M3x25mm"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-button-head-screws-m3-x-25mm-10/LOS235024.html" },
 ]
+gtin = "605482087275"
 equivalent_to = [
   { spec = "spec/screw/m3x25-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-late-model", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-sprint", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/22s-st", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rzr-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-mt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-tt-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/v100", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

@@ -1,6 +1,16 @@
 id = "part/losi/LOS250042"
 brand = "brand/losi"
 number = "LOS250042"
-name = "Driver Helmet"
+name = "Driver Helmets"
 pack_qty = 2
+applies_to = "Super Rock Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-driver-helmets-2-super-rock-rey/LOS250042.html" },
+]
+former_names = ["Driver Helmet"]
 category = "tool"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482417478"

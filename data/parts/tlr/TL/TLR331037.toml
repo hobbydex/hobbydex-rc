@@ -4,5 +4,14 @@ number = "TLR331037"
 name = "Carbon Wing Washer"
 pack_qty = 2
 applies_to = "22 5.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-carbon-wing-washer-2-22-5.0/TLR331037.html" },
+]
 category = "washer-shim"
 material = "carbon"
+fits = [
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482294192"

@@ -3,7 +3,16 @@ brand = "brand/tlr"
 number = "TLR6291"
 name = "Setscrew, M5 x 4mm, Flat Point"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-setscrew-m5-x-4mm-flat-point-10/TLR6291.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m5x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+gtin = "605482023266"
+fits = [
+  { kit = "kit/losi/lst-3xl-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

@@ -8,7 +8,7 @@ kind = "kit"
 status = "released"
 released = "2022-02-19"
 notes = "Release day in Japan from Tamiya's Japanese product page; Tamiya classes it as a regular product, made continuously"
-documents = ["doc/tamiya/58698-product-page", "doc/tamiya/58698-product-page-ja", "doc/tamiya/m06-manual", "doc/tamiya/newitems-month", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58698-product-page", "doc/tamiya/58698-product-page-ja", "doc/tamiya/m06-manual", "doc/tamiya/newitems-month", "doc/tamiya/product-classes", "doc/tamiya/spb-2022-51672-manual"]
 contains = [
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/m06-manual" },
   { part = "part/tamiya/10555015", role = "kit", source = "doc/tamiya/m06-manual" },
@@ -78,11 +78,15 @@ contains = [
   { part = "part/tamiya/51434", role = "kit", source = "doc/tamiya/m06-manual" },
   { part = "part/tamiya/51435", role = "kit", source = "doc/tamiya/m06-manual" },
   { part = "part/tamiya/51437", role = "kit", source = "doc/tamiya/m06-manual" },
+  { part = "part/tamiya/51672", role = "kit", source = "doc/tamiya/spb-2022-51672-manual" },
   { part = "part/tamiya/53254", role = "kit", source = "doc/tamiya/m06-manual" },
   { part = "part/tamiya/53255", role = "kit", source = "doc/tamiya/m06-manual" },
   { part = "part/tamiya/53351", role = "kit", source = "doc/tamiya/m06-manual" },
   { part = "part/tamiya/53689", role = "kit", source = "doc/tamiya/m06-manual" },
   { part = "part/tamiya/54277", role = "kit", source = "doc/tamiya/m06-manual" },
-  { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/m06-manual", qty = 10, step = "BB19" },
+  { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/spb-2022-51672-manual", qty = 10 },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/m06-manual" },
+]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58698", kind = "fan-site" },
 ]

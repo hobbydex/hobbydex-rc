@@ -3,9 +3,20 @@ brand = "brand/tlr"
 number = "TLR-1159"
 name = "Ball Stud, 5.8mm x 6mm, Titanium"
 pack_qty = 2
-former_names = ["Ball Stud, 5.8mm x 6mm"]
 applies_to = "22X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-ball-stud-5.8mm-x-6mm-titanium-2-22x/TLR-1159.html" },
+]
+former_names = ["Ball Stud, 5.8mm x 6mm"]
 category = "ball-end"
 ball_mm = 5.8
 ball_type = "stud"
 material = "titanium"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/22x", type = "replaces", replaces = "part/tlr/TLR-1134", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x-4", type = "replaces", replaces = "part/tlr/TLR-1134", source = "doc/tlr/tlr-1264-22x-4-2-0-dc-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR-1134", source = "doc/tlr/tlr-1053-22x-t-exploded-and-parts-views", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x", type = "replaces", replaces = "part/tlr/TLR-1180", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR-1180", source = "doc/tlr/tlr-1053-22x-t-exploded-and-parts-views", notes = "Same part in another material (link_upgrades.py)" },
+]

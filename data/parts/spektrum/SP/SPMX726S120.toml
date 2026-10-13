@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMX726S120"
+brand = "brand/spektrum"
+number = "SPMX726S120"
+name = "22.2V 7200mAh 6S 120C Smart G2 LiPo"
+applies_to = "IC5"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-22.2v-7200mah-6s-120c-smart-g2-lipo-ic5/SPMX726S120.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-7200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 6
+capacity_mah = 7200
+c_rating = 120
+category = "battery"

@@ -1,5 +1,15 @@
 id = "part/losi/LOS251066"
 brand = "brand/losi"
 number = "LOS251066"
-name = "Steering Servo Arm, 15T"
+name = "Steering Servo Arm, 15T Spline"
+applies_to = "Super Baja Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-steering-servo-arm-15t-spline-super-baja-rey/LOS251066.html" },
+]
+former_names = ["Steering Servo Arm, 15T"]
 category = "steering"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482828717"

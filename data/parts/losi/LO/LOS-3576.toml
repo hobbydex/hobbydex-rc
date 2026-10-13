@@ -2,10 +2,16 @@ id = "part/losi/LOS-3576"
 brand = "brand/losi"
 number = "LOS-3576"
 name = "M3 Flanged Aluminum Lock Nuts, Black"
-gtin = "660132681289"
 pack_qty = 10
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-m3-flanged-aluminum-lock-nuts-black-10/LOS-3576.html" },
+]
+gtin = "660132681289"
 category = "nut"
 material = "aluminium"
 equivalent_to = [
   { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
 ]

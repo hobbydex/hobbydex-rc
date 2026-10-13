@@ -2,7 +2,15 @@ id = "part/axial/AXI233036"
 brand = "brand/axial"
 number = "AXI233036"
 name = "Shock Set Complete"
-gtin = "605482169094"
 pack_qty = 2
+applies_to = "1/10 SCX10 PRO"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-shock-set-complete-2-1-10-scx10-pro/AXI233036.html" },
+]
+gtin = "605482169094"
 category = "shock"
 shock_part = "complete"
+fits = [
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

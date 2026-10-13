@@ -2,7 +2,14 @@ id = "part/losi/LOS246003"
 brand = "brand/losi"
 number = "LOS246003"
 name = "Body Clips, Black, Small"
-gtin = "605482718346"
 pack_qty = 10
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-body-clips-black-small-10-lmt/LOS246003.html" },
+]
+gtin = "605482718346"
 category = "pin-clip"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

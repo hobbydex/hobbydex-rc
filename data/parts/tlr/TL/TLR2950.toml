@@ -2,6 +2,13 @@ id = "part/tlr/TLR2950"
 brand = "brand/tlr"
 number = "TLR2950"
 name = "Hex Differential Wrench, Aluminum"
-applies_to = "22"
+applies_to = "22/22-4"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-hex-differential-wrench-aluminum-22-22-4/TLR2950.html" },
+]
 category = "tool"
 material = "aluminium"
+fits = [
+  { kit = "kit/tlr/22", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

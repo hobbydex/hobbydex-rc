@@ -1,6 +1,18 @@
 id = "part/tlr/TLR341011"
 brand = "brand/tlr"
 number = "TLR341011"
-name = "Servo Saver Arm, Aluminum"
+name = "Servo Saver Arm Aluminum"
+applies_to = "8IGHT-X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-servo-saver-arm-aluminum-8ight-x/TLR341011.html" },
+]
+former_names = ["Servo Saver Arm, Aluminum"]
 category = "steering"
 material = "aluminium"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482207390"

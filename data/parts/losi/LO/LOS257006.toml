@@ -1,10 +1,19 @@
 id = "part/losi/LOS257006"
 brand = "brand/losi"
 number = "LOS257006"
-name = "Ball Bearing, 10 x 19 x 5mm"
+name = "10 x 19 x 5mm Ball Bearing"
 pack_qty = 2
+former_names = ["Ball Bearing, 10 x 19 x 5mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-10-x-19-x-5mm-ball-bearing-2/LOS257006.html" },
+]
 equivalent_to = [
   { spec = "spec/bearing/10x19x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+gtin = "605482828861"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

@@ -3,5 +3,14 @@ brand = "brand/losi"
 number = "LOS254033"
 name = "Shock Rebuild Kit"
 pack_qty = 4
+applies_to = "Super Baja Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-rebuild-kit-4-super-baja-rey/LOS254033.html" },
+]
 category = "shock"
 shock_part = "rebuild-kit"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482828236"

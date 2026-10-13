@@ -2,5 +2,13 @@ id = "part/tlr/TLR341010"
 brand = "brand/tlr"
 number = "TLR341010"
 name = "Brass Ballast"
-applies_to = "8X"
+applies_to = "8IGHT-X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-brass-ballast-8ight-x/TLR341010.html" },
+]
 material = "brass"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482207376"

@@ -6,8 +6,16 @@ name = "UTB18 Capra 4X4 RTR Brushed Rock Crawler (Battery & Charger Included), b
 kind = "rtr"
 status = "discontinued"
 gtin = "605482163801"
-color = "black"
 documents = ["doc/axial/axi01002-exploded-view-multi", "doc/axial/axi01002-manual-en", "doc/axial/axi01002-product-page"]
+color = "black"
 contains = [
+  { part = "part/axial/AXI235014", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI237003", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC0114", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC0115", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC0116", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC0392", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC1213", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/axial/axi01002-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz 2-Channel Radio" },
+  { part = "part/axial/AXI236172", role = "option", source = "doc/axial/horizon-part-pages" },
 ]

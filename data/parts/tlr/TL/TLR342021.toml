@@ -1,9 +1,20 @@
 id = "part/tlr/TLR342021"
 brand = "brand/tlr"
 number = "TLR342021"
-name = "16mm EVO Front Shock Spring 5.5, Gray"
-pack_qty = 2
-former_names = ["Ctr Dif 46T Spur Gear, Lgt"]
-applies_to = "8B 4.0"
-category = "shock-spring"
+name = "Center Differential 46T Spur Gear Lightweight"
+applies_to = "8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-center-differential-46t-spur-gear-lightweight-8x/TLR342021.html" },
+]
+former_names = ["16mm EVO Front Shock Spring 5.5, Gray", "Ctr Dif 46T Spur Gear, Lgt"]
+category = "differential"
 free_length_mm = 16
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482672419"

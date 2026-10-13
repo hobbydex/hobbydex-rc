@@ -1,6 +1,15 @@
 id = "part/losi/LOS251062"
 brand = "brand/losi"
 number = "LOS251062"
-name = "Center Brace & Stand Offs"
+name = "Center Chassis Brace and Stand Offs"
+applies_to = "Super Baja Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-center-chassis-brace-and-stand-offs-super-baja-rey/LOS251062.html" },
+]
+former_names = ["Center Brace & Stand Offs"]
 gtin = "605482828625"
 category = "chassis"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

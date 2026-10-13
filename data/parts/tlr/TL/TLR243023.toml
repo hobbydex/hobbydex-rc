@@ -1,7 +1,16 @@
 id = "part/tlr/TLR243023"
 brand = "brand/tlr"
 number = "TLR243023"
-name = "16mm Shock Piston,1.4/1.5 8E 3.0"
+name = "Machined Piston 16mm, 5 Hole, 1.4, 1.5"
+applies_to = "8E 3.0, 8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-machined-piston-16mm-5-hole-1.4-1.5-8e-3.0-8x-8xe/TLR243023.html" },
+]
+former_names = ["16mm Shock Piston,1.4/1.5 8E 3.0"]
 category = "shock"
 shock_part = "piston"
 bore_mm = 16
+fits = [
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

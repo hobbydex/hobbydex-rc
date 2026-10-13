@@ -2,6 +2,21 @@ id = "part/losi/LOSA5421"
 brand = "brand/losi"
 number = "LOSA5421"
 name = "15mm Shock Caps Bottom"
+pack_qty = 2
+applies_to = "8B, 8T, 8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-15mm-shock-caps-bottom-2-8b-8t-8x-8xe/LOSA5421.html" },
+]
 gtin = "660132013028"
 category = "shock"
 shock_part = "cap"
+fits = [
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

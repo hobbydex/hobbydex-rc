@@ -6,9 +6,22 @@ name = "Night Crawler SE 4WD Rock Crawler Brushed RTR, blue"
 kind = "rtr"
 status = "discontinued"
 gtin = "605482826614"
-color = "blue"
 documents = ["doc/losi/los03015-manual-en", "doc/losi/los03015-product-page"]
+color = "blue"
 contains = [
-  { part = "part/spektrum/SPMSTX200", role = "kit", source = "doc/losi/los03015-product-page", qty = 1, notes = "In the box: Spektrum STX2 2CH 2.4GHz FHSS Transmitter (SPMSTX200)" },
+  { part = "part/losi/LOS235003", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS257007", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6294", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6350", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6937", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6940", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA6947", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/spektrum/SPMS605", role = "kit", source = "doc/losi/los03015-product-page", qty = 1, notes = "In the box: Spektrum 9KG 23T Waterproof Servo (SPMS605)" },
+  { part = "part/spektrum/SPMSTX200", role = "kit", source = "doc/losi/los03015-product-page", qty = 1, notes = "In the box: Spektrum STX2 2CH 2.4GHz FHSS Transmitter (SPMSTX200)" },
+  { part = "part/tlr/TLR235008", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR336000", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5902", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR6352", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR8202", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA99173", role = "option", source = "doc/losi/horizon-part-pages" },
 ]

@@ -1,5 +1,17 @@
 id = "part/tlr/TLR240011"
 brand = "brand/tlr"
 number = "TLR240011"
-name = "Wing, White, IFMAR"
+name = "1/8 Wing, White IFMAR"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-1-8-wing-white-ifmar/TLR240011.html" },
+]
+former_names = ["Wing, White, IFMAR"]
 category = "wing"
+material = "plastic"
+gtin = "605482369722"
+fits = [
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]

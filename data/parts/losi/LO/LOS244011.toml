@@ -1,8 +1,15 @@
 id = "part/losi/LOS244011"
 brand = "brand/losi"
 number = "LOS244011"
-name = "Rod Ends, Sway & Drag Links"
-gtin = "605482718261"
-former_names = ["Rod Ends, Drag Link, Sway Bar Link", "RodEnds, Sway & DragLinks"]
+name = "Rod Ends, Drag Link, Sway Bar Link"
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-rod-ends-drag-link-sway-bar-link-lmt/LOS244011.html" },
+]
+former_names = ["Rod Ends, Sway & Drag Links", "RodEnds, Sway & DragLinks"]
+gtin = "605482718261"
 category = "ball-end"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

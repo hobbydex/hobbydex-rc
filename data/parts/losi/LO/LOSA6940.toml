@@ -1,12 +1,34 @@
 id = "part/losi/LOSA6940"
 brand = "brand/losi"
 number = "LOSA6940"
-name = "6x12x4mm Sealed Ball Bearing"
-gtin = "605482138106"
+name = "6x12mm Sealed Ball Bearing"
 pack_qty = 4
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-6x12mm-sealed-ball-bearing-4/LOSA6940.html" },
+]
+former_names = ["6x12x4mm Sealed Ball Bearing"]
+gtin = "605482138106"
 equivalent_to = [
   { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "rubber"
 category = "bearing"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/axial/rbx10", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/night-crawler", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rzr-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-mt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-tt-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/v100", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

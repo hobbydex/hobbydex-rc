@@ -2,5 +2,14 @@ id = "part/axial/AXI233003"
 brand = "brand/axial"
 number = "AXI233003"
 name = "Shock O-Ring Set"
+applies_to = "Capra 1.9 UTB, SCX10 III Base Camp"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-shock-o-ring-set-capra-1.9-utb-scx10-iii-base-camp/AXI233003.html" },
+]
 gtin = "605482494448"
 category = "o-ring-seal"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

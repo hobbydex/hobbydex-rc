@@ -4,6 +4,18 @@ number = "TLR-1134"
 name = "Ball Stud, 5.8mm x 6mm"
 pack_qty = 4
 applies_to = "22X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-ball-stud-5.8mm-x-6mm-4-22x/TLR-1134.html" },
+]
 category = "ball-end"
 ball_mm = 5.8
 ball_type = "stud"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x", type = "replaces", replaces = "part/tlr/TLR-1180", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR-1180", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
+material = "steel"
+gtin = "660132649753"

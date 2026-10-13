@@ -1,0 +1,17 @@
+id = "part/amewi/015-18017"
+brand = "brand/amewi"
+number = "015-18017"
+name = "AM18 LiPo Akku 7,4V 600mAh"
+fits = [
+  { kit = "kit/amewi/amxrock-am18", type = "direct", source = "doc/amewi/22522-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/AM18-LiPo-Akku-74V-600mAh" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 600
+category = "battery"

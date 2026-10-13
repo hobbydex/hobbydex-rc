@@ -2,9 +2,21 @@ id = "part/axial/AXIC1028"
 brand = "brand/axial"
 number = "AXIC1028"
 name = "Pin 2.0x11mm"
-gtin = "816874012366"
 pack_qty = 6
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-pin-2.0x11mm-6/AXIC1028.html" },
+]
+gtin = "816874012366"
 category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/2x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

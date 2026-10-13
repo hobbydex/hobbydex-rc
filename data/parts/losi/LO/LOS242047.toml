@@ -1,9 +1,16 @@
 id = "part/losi/LOS242047"
 brand = "brand/losi"
 number = "LOS242047"
-name = "Center Driveshaft Screw"
-gtin = "605482718216"
+name = "Center Driveshaft Screw Pin"
 pack_qty = 10
-former_names = ["Center Driveshaft Screw Pin", "Cntr Driveshaft Screwpin", "Center Driveshaft Screw pin"]
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-center-driveshaft-screw-pin-10-lmt/LOS242047.html" },
+]
+former_names = ["Center Driveshaft Screw", "Center Driveshaft Screw pin", "Cntr Driveshaft Screwpin"]
+gtin = "605482718216"
 category = "screw"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

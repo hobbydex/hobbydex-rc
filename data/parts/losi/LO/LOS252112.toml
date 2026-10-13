@@ -2,6 +2,14 @@ id = "part/losi/LOS252112"
 brand = "brand/losi"
 number = "LOS252112"
 name = "17mm Flanged Wheel Nut Black"
-gtin = "605482417461"
 pack_qty = 4
+applies_to = "Super Rock Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-17mm-flanged-wheel-nut-black-4-super-rock-rey/LOS252112.html" },
+]
+gtin = "605482417461"
 category = "nut"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

@@ -1,12 +1,37 @@
 id = "part/losi/LOS235012"
 brand = "brand/losi"
 number = "LOS235012"
-name = "Set Screws M4x4mm Cup"
-gtin = "605482623756"
+name = "Set Screw M4 x 4mm Cup Point"
 pack_qty = 10
-former_names = ["Set Screws M4 x 4mm Cup", "Set Screw, M4 x 4mm Cup Point", "Set Screws M4x4mm Cup Point"]
+former_names = ["Set Screw, M4 x 4mm Cup Point", "Set Screws M4 x 4mm Cup", "Set Screws M4x4mm Cup", "Set Screws M4x4mm Cup Point"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-set-screw-m4-x-4mm-cup-point10/LOS235012.html" },
+]
+gtin = "605482623756"
 equivalent_to = [
   { spec = "spec/screw/m4x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-mt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-tt-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

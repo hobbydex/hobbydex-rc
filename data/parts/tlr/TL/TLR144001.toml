@@ -1,5 +1,16 @@
 id = "part/tlr/TLR144001"
 brand = "brand/tlr"
 number = "TLR144001"
-name = "Lwr Shk Mnt 4-Link Bar 13.5\""
+name = "LwrShck Mount 4-Link BarSet, 13.5\""
+pack_qty = 4
+applies_to = "LMT, TTLMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-lwrshck-mount-4-link-barset-13.5-4-lmt-ttlmt/TLR144001.html" },
+]
+former_names = ["Lwr Shk Mnt 4-Link Bar 13.5\""]
 category = "ball-end"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482169858"

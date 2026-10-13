@@ -6,5 +6,21 @@ name = "SCX24 Deadbolt 4X4 RTR Brushed Rock Crawler (Battery & Charger Included)
 kind = "rtr"
 status = "discontinued"
 gtin = "605482298701"
-color = "green"
 documents = ["doc/axial/axi31618-axi31620-manual-en", "doc/axial/axi90081-manual-en", "doc/axial/axi90081-manual-multi", "doc/axial/axi90081-product-page", "doc/axial/scx24-manual-addendum-ml"]
+color = "green"
+contains = [
+  { part = "part/axial/AXI31567", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31599", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31608", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31609", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31610", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31611", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31612", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31613", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31614", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31615", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31616", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31618", role = "listed", source = "doc/axial/axi31618-axi31620-manual-en" },
+  { part = "part/axial/AXI31619", role = "listed", source = "doc/axial/axi90081-manual-en" },
+  { part = "part/axial/AXI31620", role = "listed", source = "doc/axial/axi31618-axi31620-manual-en" },
+]

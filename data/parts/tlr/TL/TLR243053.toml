@@ -1,8 +1,18 @@
 id = "part/tlr/TLR243053"
 brand = "brand/tlr"
 number = "TLR243053"
-name = "Shock Shaft Rear 3.5 x 66.3: 8XE 2.0"
+name = "Shock Shaft, Rear, 3.5 x 66.3mm"
+pack_qty = 1
+applies_to = "8X, 8XE 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-shock-shaft-rear-3.5-x-66.3mm-1-8x-8xe-2.0/TLR243053.html" },
+]
+former_names = ["Shock Shaft Rear 3.5 x 66.3: 8XE 2.0"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3.5
 length_mm = 66.3
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482155172"

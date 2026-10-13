@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMXB4S100"
+brand = "brand/spektrum"
+number = "SPMXB4S100"
+name = "14.8V 10000mAh 4S 120C Smart G2 Pro Basher LiPo Battery"
+applies_to = "IC5"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-14.8v-10000mah-4s-120c-smart-g2-pro-basher-lipo-battery-ic5/SPMXB4S100.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-10000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 10000
+c_rating = 120
+category = "battery"

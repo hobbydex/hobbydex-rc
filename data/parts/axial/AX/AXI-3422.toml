@@ -1,6 +1,14 @@
 id = "part/axial/AXI-3422"
 brand = "brand/axial"
 number = "AXI-3422"
-name = "Trail-Gear AR45P Front Axle Housing: SCX10III"
+name = "Trail-Gear AR45P Front Axle Housing"
+applies_to = "SCX10III"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-trail-gear-ar45p-front-axle-housing-scx10iii/AXI-3422.html" },
+]
+former_names = ["Trail-Gear AR45P Front Axle Housing: SCX10III"]
 gtin = "660132674434"
 category = "gear"
+fits = [
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

@@ -5,4 +5,7 @@ name = "1150 Ball Bearing"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "bearing"
-former_names = ["1150 Rall Rearing (BAG x4)"]
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Tamiya size code 1150: 11 mm outer, 5 mm bore, 4 mm wide" },
+]
+material = "steel"

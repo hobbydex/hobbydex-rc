@@ -1,7 +1,16 @@
 id = "part/losi/LOS243024"
 brand = "brand/losi"
 number = "LOS243024"
-name = "Shock Standoff, Link Mount (4)"
-gtin = "605482170045"
+name = "Shock Standoff, Link Mount"
+pack_qty = 4
 applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-standoff-link-mount-4-tlr-tuned-lmt/LOS243024.html" },
+]
+former_names = ["Shock Standoff, Link Mount (4)"]
+gtin = "605482170045"
 category = "ball-end"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]

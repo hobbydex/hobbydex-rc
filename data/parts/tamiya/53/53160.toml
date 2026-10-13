@@ -2,7 +2,14 @@ id = "part/tamiya/53160"
 brand = "brand/tamiya"
 number = "53160"
 name = "4mm Anodized Aluminum Flange Lock Nut (Red)"
+former_names = ["4mm Flange Lock Nut (Red)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "nut"
 material = "aluminium"
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1625-53160", kind = "fan-site" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

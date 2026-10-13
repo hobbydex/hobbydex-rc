@@ -1,11 +1,26 @@
 id = "part/losi/LOS235027"
 brand = "brand/losi"
 number = "LOS235027"
-name = "Set Screws, M3 x 10mm Cup Point"
-gtin = "605482087305"
+name = "Set Screws M3 x 10mm Cup Point"
 pack_qty = 10
+former_names = ["Set Screws, M3 x 10mm Cup Point"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-set-screws-m3-x-10mm-cup-point-10/LOS235027.html" },
+]
+gtin = "605482087305"
 equivalent_to = [
   { spec = "spec/screw/m3x10-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/losi/22s-sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-mt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-sct", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-tt-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

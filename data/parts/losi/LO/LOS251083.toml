@@ -1,6 +1,15 @@
 id = "part/losi/LOS251083"
 brand = "brand/losi"
 number = "LOS251083"
-name = "Chassis, Motor & Battery Cover Plates"
+name = "Chassis Motor & Battery Cover Plates"
+applies_to = "Super Rock Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-chassis-motor-and-battery-cover-plates-super-rock-rey/LOS251083.html" },
+]
+former_names = ["Chassis, Motor & Battery Cover Plates"]
 gtin = "605482295014"
 category = "chassis"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

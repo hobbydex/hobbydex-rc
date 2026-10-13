@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Axial SMT10 Raw Builders Kit (AXI03020)"
+fits = [
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SMT10 Raw Builders Kit (AXI03020) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/axi032b-axial-smt10-raw-builders-kit-axi03020-metal-shielded-bearing-kit/" },

@@ -1,11 +1,20 @@
 id = "part/axial/AXI235014"
 brand = "brand/axial"
 number = "AXI235014"
-name = "Cap Head Screw M2.5x10mm"
-gtin = "605482494332"
+name = "M2.5 x 10mm Cap Head Screw"
 pack_qty = 10
+former_names = ["Cap Head Screw M2.5x10mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-m2.5-x-10mm-cap-head-screw-10/AXI235014.html" },
+]
+gtin = "605482494332"
 equivalent_to = [
   { spec = "spec/screw/m2.5x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/utb18", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

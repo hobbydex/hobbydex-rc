@@ -1,7 +1,17 @@
 id = "part/losi/LOS241073"
 brand = "brand/losi"
 number = "LOS241073"
-name = "Crossbar, Center Chassis, AL, BLK"
+name = "Aluminum Crossbar, Center Chassis, Black"
 pack_qty = 3
-applies_to = "LMT, TTLMT"
+applies_to = "TLR Tuned LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-crossbar-center-chassis-black-3-tlr-tuned-lmt/LOS241073.html" },
+]
+former_names = ["Crossbar, Center Chassis, AL, BLK"]
 category = "chassis"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482169940"
+material = "aluminium"

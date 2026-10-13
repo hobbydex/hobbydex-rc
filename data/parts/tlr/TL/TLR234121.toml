@@ -1,6 +1,15 @@
 id = "part/tlr/TLR234121"
 brand = "brand/tlr"
 number = "TLR234121"
-name = "VHA Hub Body, Composite"
+name = "VHA Hub Body Composite"
+pack_qty = 2
+applies_to = "22X-4"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-vha-hub-body-composite-2-22x-4/TLR234121.html" },
+]
+former_names = ["VHA Hub Body, Composite"]
 category = "suspension"
 material = "plastic"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+]

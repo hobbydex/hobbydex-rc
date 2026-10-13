@@ -4,10 +4,15 @@ number = "TLR143006"
 name = "Shock Spring, Green, 3.0 lbs"
 pack_qty = 4
 applies_to = "TTLMT"
-color = "green"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-shock-spring-green--3.0-lbs-4-ttlmt/TLR143006.html" },
 ]
+color = "green"
 category = "shock-spring"
 rate_lb_in = 3
 range = "tlr/shock-spring-rate-springs"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482170168"

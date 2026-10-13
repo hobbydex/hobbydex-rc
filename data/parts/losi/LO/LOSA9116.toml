@@ -3,4 +3,13 @@ brand = "brand/losi"
 number = "LOSA9116"
 name = "Clutch Bell 13T"
 applies_to = "8B, 8T"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-clutch-bell-13t-8b-8t/LOSA9116.html" },
+]
 category = "gear"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "660132013479"

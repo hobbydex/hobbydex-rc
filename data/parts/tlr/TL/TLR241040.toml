@@ -1,6 +1,14 @@
 id = "part/tlr/TLR241040"
 brand = "brand/tlr"
 number = "TLR241040"
-name = "Drag Link"
-applies_to = "8X"
+name = "Drag link"
+applies_to = "8X, 8XE"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-drag-link-8x-8xe/TLR241040.html" },
+]
 category = "ball-end"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]
+gtin = "605482206737"

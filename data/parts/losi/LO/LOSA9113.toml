@@ -1,5 +1,20 @@
 id = "part/losi/LOSA9113"
 brand = "brand/losi"
 number = "LOSA9113"
-name = "Clutch Springs, Green (4)"
+name = "Clutch Springs, Green"
+pack_qty = 4
+applies_to = "8B, 8T, 8X"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-clutch-springs-green-4-8b-8t-8x/LOSA9113.html" },
+]
+former_names = ["Clutch Springs, Green (4)"]
 category = "engine-fuel"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "660132013448"

@@ -3,6 +3,15 @@ brand = "brand/tlr"
 number = "TLR-1143"
 name = "13mm Shock Piston, 2 x 1.8mm, 2mm"
 pack_qty = 2
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-13mm-shock-piston-2-x-1.8mm-2mm-2/TLR-1143.html" },
+]
 category = "shock"
 shock_part = "piston"
 bore_mm = 13
+gtin = "660132649845"
+fits = [
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

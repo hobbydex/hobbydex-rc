@@ -1,9 +1,34 @@
 id = "part/tlr/TLR255013"
 brand = "brand/tlr"
 number = "TLR255013"
-name = "Flat Head Screws, M4 x 12mm"
+name = "Flat Head Screws, M4x12mm"
+pack_qty = 10
+former_names = ["Flat Head Screws, M4 x 12mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-flat-head-screws-m4x12mm-10/TLR255013.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m4x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+gtin = "605482629369"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/dbxl", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-db-pro", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-mt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-sct", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/losi/tenacity-tt-pro", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

@@ -1,7 +1,11 @@
 id = "part/losi/LOS252088"
 brand = "brand/losi"
 number = "LOS252088"
-name = "Pinion Gear 23T 8mm Shaft 1.5M"
+name = "Pinion Gear, 23T, 1.5M, 8mm, Steel"
+former_names = ["Pinion Gear 23T 8mm Shaft 1.5M"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-pinion-gear-23t-1.5m-8mm-steel/LOS252088.html" },
+]
 category = "pinion"
 equivalent_to = [
   { spec = "spec/pinion/mod1.5-23t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
@@ -9,3 +13,9 @@ equivalent_to = [
 bore_mm = 8
 teeth = 23
 module = 1.5
+gtin = "605482369296"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+material = "steel"

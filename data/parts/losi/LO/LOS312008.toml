@@ -1,0 +1,14 @@
+id = "part/losi/LOS312008"
+brand = "brand/losi"
+number = "LOS312008"
+name = "Aluminum Axle Housing Set, Black"
+applies_to = "Mini LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-axle-housing-set-black-mini-lmt/LOS312008.html" },
+]
+fits = [
+  { kit = "kit/losi/mini-lmt", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/mini-lmt", type = "replaces", replaces = "part/losi/LOS212035", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "drivetrain"
+material = "aluminium"

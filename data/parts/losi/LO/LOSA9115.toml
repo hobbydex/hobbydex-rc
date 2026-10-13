@@ -1,5 +1,20 @@
 id = "part/losi/LOSA9115"
 brand = "brand/losi"
 number = "LOSA9115"
-name = "Clutch Springs, Silver (4)"
+name = "Clutch Springs, Silver"
+pack_qty = 4
+applies_to = "8B, 8T"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-clutch-springs-silver4-8b-8t/LOSA9115.html" },
+]
+former_names = ["Clutch Springs, Silver (4)"]
 category = "engine-fuel"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "660132013462"

@@ -6,8 +6,39 @@ name = "SCX24 1967 Chevrolet C10 4X4 RTR Brushed Rock Crawler (Battery & Charger
 kind = "rtr"
 status = "discontinued"
 gtin = "660132888947"
-color = "black"
 documents = ["doc/axial/axi00001v2-exploded-view", "doc/axial/axi00001v2-manual-en", "doc/axial/axi00001v2-product-page"]
+color = "black"
 contains = [
+  { part = "part/axial/AXI200001", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI200002", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI201002", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI203002", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI204000", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI31608", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI31609", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI31610", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI31611", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI31614", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI31616", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI31619", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI40000", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI40001", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
   { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/axial/axi00001v2-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz radio system" },
+  { part = "part/spektrum/SPMX3502S30", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/spektrum/SPMXSE2425RX", role = "kit", source = "doc/axial/axi00001v2-exploded-view" },
+  { part = "part/axial/AXI203003", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI206000", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI302001", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI302002", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI302003", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI302004", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI302005", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI302006", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI31567", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/axial/AXI31615", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/spektrum/SPMRSLT300", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/spektrum/SPMXC0030", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/spektrum/SPMXC1050", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/spektrum/SPMXC2050", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
+  { part = "part/spektrum/SPMXCA309", role = "listed", source = "doc/axial/axi00001v2-manual-en" },
 ]

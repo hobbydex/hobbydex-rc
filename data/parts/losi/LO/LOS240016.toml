@@ -1,8 +1,16 @@
 id = "part/losi/LOS240016"
 brand = "brand/losi"
 number = "LOS240016"
-name = "Body Buttons,Top & Bottom"
+name = "Body Buttons, Top and Bottom"
 pack_qty = 10
-former_names = ["Body Buttons, Top and Bottom", "Body Buttons,Top&Bottom"]
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-body-buttons-top-and-bottom-10-lmt/LOS240016.html" },
+]
+former_names = ["Body Buttons,Top & Bottom", "Body Buttons,Top&Bottom"]
 category = "body"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482718339"

@@ -2,7 +2,16 @@ id = "part/axial/AXI234003"
 brand = "brand/axial"
 number = "AXI234003"
 name = "Pivot Ball, Stainless Steel 12.75mm"
-gtin = "605482494455"
 pack_qty = 4
+applies_to = "Capra 1.9 UTB, SCX10 III Base Camp"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-pivot-ball-stainless-steel-12.75mm-4-capra-1.9-utb-scx10-iii-base-camp/AXI234003.html" },
+]
+gtin = "605482494455"
 category = "ball-end"
 material = "stainless"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

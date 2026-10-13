@@ -6,5 +6,10 @@ name = "Monster Truck XL 4WD Gas RTR with AVC, white"
 kind = "rtr"
 status = "discontinued"
 gtin = "605482624678"
-color = "white"
 documents = ["doc/losi/los05009-manual-multi", "doc/losi/los05009-product-page"]
+color = "white"
+contains = [
+  { part = "part/losi/LOS255003", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS256000", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR74022", role = "option", source = "doc/losi/horizon-part-pages" },
+]

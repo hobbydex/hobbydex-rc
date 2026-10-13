@@ -1,7 +1,16 @@
 id = "part/losi/LOS243019"
 brand = "brand/losi"
 number = "LOS243019"
-name = "Nut Shock Shaft F/R"
-gtin = "605482161869"
+name = "Nutted Shock Shaft, F/R"
 pack_qty = 2
-category = "nut"
+applies_to = "LMT Mega"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-nutted-shock-shaft-f-r-2-lmt-mega/LOS243019.html" },
+]
+former_names = ["Nut Shock Shaft F/R"]
+gtin = "605482161869"
+category = "shock"
+fits = [
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+shock_part = "shaft"

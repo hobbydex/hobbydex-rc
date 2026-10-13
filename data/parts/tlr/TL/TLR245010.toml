@@ -1,9 +1,19 @@
 id = "part/tlr/TLR245010"
 brand = "brand/tlr"
 number = "TLR245010"
-name = "Flat Head Screws, M4 x 8mm"
+name = "Flat Head Screws, M4x8mm"
+pack_qty = 10
+former_names = ["Flat Head Screws, M4 x 8mm"]
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-flat-head-screws-m4x8mm-10/TLR245010.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m4x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+gtin = "605482207192"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
+]

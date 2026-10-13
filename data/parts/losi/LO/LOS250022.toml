@@ -1,6 +1,16 @@
 id = "part/losi/LOS250022"
 brand = "brand/losi"
 number = "LOS250022"
-name = "Body Button Set"
+name = "Body Button Base and Top"
 pack_qty = 22
+applies_to = "Super Baja Rey"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-body-button-base-and-top-22-super-baja-rey/LOS250022.html" },
+]
+former_names = ["Body Button Set"]
 category = "body"
+fits = [
+  { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+gtin = "605482828267"

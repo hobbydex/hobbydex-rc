@@ -1,8 +1,16 @@
 id = "part/losi/LOS343200"
 brand = "brand/losi"
 number = "LOS343200"
-name = "12mm Machined Wheel Hex (4) Interco Black Mamba 2.6\" Mud"
+name = "12mm Machined Wheel Hex"
 pack_qty = 4
-former_names = ["12mm Machined Wheel Hex", "12mm Machined Wheel"]
 applies_to = "LMT"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-12mm-machined-wheel-hex-4-lmt/LOS343200.html" },
+]
+former_names = ["12mm Machined Wheel", "12mm Machined Wheel Hex (4) Interco Black Mamba 2.6\" Mud"]
 category = "drivetrain"
+fits = [
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+]
+gtin = "605482718575"

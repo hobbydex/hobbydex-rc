@@ -1,0 +1,14 @@
+id = "part/tlr/TLR341027"
+brand = "brand/tlr"
+number = "TLR341027"
+name = "Chassis Rib Brace, Carbon"
+applies_to = "8X, 8XE 2.0"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-chassis-rib-brace-carbon-8x-8xe-2.0/TLR341027.html" },
+]
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-x", type = "replaces", replaces = "part/tlr/TLR241054", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "chassis"
+material = "carbon"
