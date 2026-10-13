@@ -8,4 +8,6 @@ links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/h003" },
 ]
 category = "nut"
-material = "plastic"
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -5,3 +5,6 @@ name = "Mutter selbstsichernd M3"
 category = "nut"
 category_source = "curated"
 documents = ["doc/scaleart/71000310-manual"]
+equivalent_to = [
+  { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

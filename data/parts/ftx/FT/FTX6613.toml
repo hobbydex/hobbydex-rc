@@ -1,7 +1,10 @@
 id = "part/ftx/FTX6613"
 brand = "brand/ftx"
 number = "FTX6613"
-name = "6pcs Hinge"
-notes = "Read by OCR from a scanned FTX document"
+name = "Pin ∮2*10"
+notes = "Name read from a scanned FTX parts list; the OCR engines agree"
 pack_qty = 6
-category = "suspension"
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

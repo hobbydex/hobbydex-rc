@@ -41,12 +41,12 @@ ENUMS = {
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
-    "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "plastic", "carbon", "ceramic", "carbide", "unknown"},
+    "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.lubricant": {"oil", "grease"},
     "part.viscosity": {"thin", "medium", "thick"},
-    "spec.type": {"radial-ball", "flanged", "thrust"},
+    "spec.profile": {"regular", "thin"},
     "spec.motor_type": {"brushed", "brushless"},
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh"},
@@ -64,10 +64,18 @@ ENGINE_NUM = {"displacement_cc": (0.5, 120), "bore_mm": (5, 60), "stroke_mm": (5
 ENGINE_FIELDS = set(ENGINE_NUM) | {"engine_class", "rpm_range", "fuel"}   # bore_mm is also a shock's bore: checked on engines only
 PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent", "translucent", "clear", "chrome", "flake"}   # part.finish of a paint; other parts' finish ("black oxide") is free
 
+# spec.type per spec category (docs/schema.md: bearing types, nut types)
+SPEC_TYPES = {
+    "bearing": {"radial-ball", "flanged", "thrust"},
+    "nut": {"hex", "nylon-lock", "metal-lock", "lock", "flanged", "flanged-lock", "flanged-nylon-lock", "serrated-flange",
+            "serrated-flange-nylon-lock", "dome", "flanged-dome", "square", "knurled", "wing", "wheel"},
+}
+NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that come in a regular and a thin height
+
 # which part categories may be `equivalent_to` a spec of each kind
 SPEC_PART_CATS = {
     "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin-clip"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
-    "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"},
+    "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
 }
 
@@ -217,6 +225,20 @@ def main():
         rr = d.get("rpm_range") if "rpm_range" in eng else None
         if rr is not None and not (isinstance(rr, list) and len(rr) == 2 and all(isinstance(x, int) and 500 <= x <= 60000 for x in rr) and rr[0] < rr[1]):
             errors.append(f"{path}: rpm_range {rr!r} should be [min, max] rpm")
+        if kind == "spec" and "type" in d:
+            allowed = SPEC_TYPES.get(d.get("category"), set())
+            if d["type"] not in allowed:
+                errors.append(f"{path}: spec.type = {d['type']!r} not in {sorted(allowed)} for a {d.get('category')} spec")
+        if kind == "spec" and d.get("category") == "nut":
+            if not re.fullmatch(r"M\d{1,2}(\.\d)?(x\d(\.\d{1,2})?)?", str(d.get("thread", ""))):
+                errors.append(f"{path}: nut spec needs a thread like \"M3\" or \"M5x0.5\"")
+            if "type" not in d:
+                errors.append(f"{path}: nut spec needs a type")
+            if "profile" in d and d.get("type") not in NUT_PROFILED:
+                errors.append(f"{path}: profile only on {sorted(NUT_PROFILED)} nuts")
+            for k in ("across_flats_mm", "height_mm"):
+                if k in d and not (isinstance(d[k], (int, float)) and 0.5 <= d[k] <= 40):
+                    errors.append(f"{path}: {k} {d[k]!r} should be millimetres")
         if kind == "spec":
             for code in d.get("standards", []):
                 if code not in codes:

@@ -11,4 +11,6 @@ links = [
   { site = "Rlaarlo", url = "https://rlaarlo.com/products/nylon-lock-nut-m2-for-hongyan-hy6" },
 ]
 category = "nut"
-material = "plastic"
+equivalent_to = [
+  { spec = "spec/nut/m2-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

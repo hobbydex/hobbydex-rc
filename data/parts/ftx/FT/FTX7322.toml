@@ -1,6 +1,11 @@
 id = "part/ftx/FTX7322"
 brand = "brand/ftx"
 number = "FTX7322"
-name = "Short Course Truck Body"
-notes = "Read by OCR from a scanned FTX document"
-category = "body"
+name = "OPTIONAL PART Brushless(inner hole:3.2mm) Motor Pinion Gears 16T + Set Screws 3*3mm"
+pack_qty = 2
+notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

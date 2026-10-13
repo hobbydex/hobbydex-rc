@@ -1,5 +1,10 @@
 id = "part/ftx/FTX6662"
 brand = "brand/ftx"
 number = "FTX6662"
-name = "FTX6662"
-notes = "Read by OCR from a scanned FTX document; no name could be read"
+name = "Ball Bearings 8*16*5mm, E-Clip 4mm"
+notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

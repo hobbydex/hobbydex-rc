@@ -162,7 +162,7 @@ category = "shock-spring"
 ```
 
 Optional, hand-curated (the importer preserves them when it regenerates the
-file): `material` (steel | stainless | titanium | aluminium | brass | plastic |
+file): `material` (steel | stainless | titanium | aluminium | brass | bronze | plastic |
 carbon | ceramic | carbide | unknown; carbon is carbon fibre, which brands also
 call graphite; plastic covers composite, nylon and POM; for a bearing, the
 balls: ceramic is a hybrid bearing), `material_grade` (the alloy as named:
@@ -185,7 +185,7 @@ equivalent_to = [
 ]
 ```
 
-A part is only `equivalent_to` a spec of its own kind: a bearing spec for a part in category bearing, a screw spec for a screw, and so on (wheel-hex specs also for wheels, tyres, hubs and axles that carry the hex). A part that comes with bearings, screws or a battery (a clutch bell with its bearings, a screw kit with washers, a battery with a charger) lists them in `includes` instead. tools/validate.py checks this.
+A part is only `equivalent_to` a spec of its own kind: a bearing spec for a part in category bearing, a screw spec for a screw, a nut spec for a nut, and so on (wheel-hex specs also for wheels, tyres, hubs and axles that carry the hex). A part that comes with bearings, screws or a battery (a clutch bell with its bearings, a screw kit with washers, a battery with a charger) lists them in `includes` instead. tools/validate.py checks this.
 
 `match` is exact (same standard, stated by the brand), functional
 (interchangeable in practice) or close (check before use). Geometry lives on
@@ -320,6 +320,8 @@ on the rebranded part; the site shows it from both sides.
 ```toml
 rebrand_of = [{ part = "part/flysky/FS-GT5", source = "doc/community/2026-10-10-turnigy-gt5-is-flysky-gt5" }]
 ```
+
+`name_de`: the brand's German name, kept when `name` is an English translation of it (ScaleART kit names, translated with a fixed glossary).
 
 `name_ja`: the brand's Japanese name, kept when the English `name` is a
 translation (Yokomo publishes Japanese-only parts lists).
@@ -541,6 +543,48 @@ their tables (RC makers also use odd lengths such as 2x9.8): drive-shaft cross p
 wheel hex drive pins, diff pins. Parts link with match "functional" (size
 from the name; hardness and tolerance seldom stated). Hinge, pivot, body,
 king, roll and spring pins and grooved or threaded pins get no pin spec.
+
+### Nut specs
+
+`spec/nut/<thread>-<type>[-thin|-regular]` (category "nut"): `thread`
+("M3"; a fine thread as "M5x0.5"), `type` and, where a standard fixes
+them, `across_flats_mm`, `height_mm` and `standards`. Types:
+
+- `hex`: plain hex nut. `profile` regular (DIN 934 / ISO 4032) or thin
+  (jam nut, DIN 439 B / ISO 4035); without `profile` the height is not stated.
+- `nylon-lock`: nylon insert lock nut (nyloc, nylstop). `profile` thin is
+  the low form DIN 985 / ISO 10511, regular the high form DIN 982 / ISO
+  7040; without `profile` the height is not stated.
+- `metal-lock`: all-metal prevailing-torque lock nut (deformed or oval top,
+  "stover"), ISO 7042 / DIN 980.
+- `lock`: a lock nut whose brand does not say how it locks. Never read as
+  nylon without the brand's word for it.
+- `flanged`, `flanged-lock` (locking kind not stated), `flanged-nylon-lock`,
+  `serrated-flange` (the serrations bite and lock the nut),
+  `serrated-flange-nylon-lock`.
+- `dome` and `flanged-dome` (acorn or cap nut), `square`, `knurled` (thumb
+  nut), `wing`, and `wheel` (a wheel nut whose name gives the thread but
+  not its shape; a 17 mm hex is in the id: `m12x1-wheel-17mm`).
+
+`profile` is only on hex and lock nuts. The across flats is on the spec
+only where the ISO/DIN tables fix it for that type and size (M3: 5.5 mm,
+M4: 7 mm); flanged nuts get none, because flange and hex vary between
+brands. The notes name the standard and give the standard heights per
+size. Parts link "functional" (thread and type from the name), or "exact"
+when the brand cites the standard (Wedico's "STOPPMUTTER M3 DIN 985").
+Special nuts (shock, servo saver, clutch, flywheel, diff, ball and
+adjusting nuts, splined or brand-specific wheel nuts) get no nut spec.
+
+```toml
+id = "spec/nut/m3-nylon-lock-thin"
+category = "nut"
+name = "M3 thin nylon insert lock nut"
+thread = "M3"
+type = "nylon-lock"
+profile = "thin"
+across_flats_mm = 5.5
+standards = ["DIN 985", "ISO 10511"]
+```
 
 ### Wheel hex specs
 

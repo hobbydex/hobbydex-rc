@@ -1,6 +1,15 @@
 id = "part/ftx/FTX9183"
 brand = "brand/ftx"
 number = "FTX9183"
-name = "Light Set Servo Horn"
-notes = "Read by OCR from a scanned FTX document"
-category = "steering"
+name = "Outback Fury Pinion Gear 14t 48dp"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-outback-fury-spares/ftx-outback-fury-pinion-gear-14t" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 14
+pitch_dp = 48

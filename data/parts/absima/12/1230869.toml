@@ -7,3 +7,6 @@ fits = [
   { kit = "kit/absima/adb1", type = "direct", source = "doc/absima/spares-adb1" },
 ]
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

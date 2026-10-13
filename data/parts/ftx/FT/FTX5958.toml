@@ -1,6 +1,11 @@
 id = "part/ftx/FTX5958"
 brand = "brand/ftx"
 number = "FTX5958"
-name = "Socket head cap screw"
-notes = "Read by OCR from a scanned FTX document"
+name = "IIII Socket head cap screw M3*25 mm"
+pack_qty = 6
+notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+equivalent_to = [
+  { spec = "spec/screw/m3x25-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
 category = "screw"

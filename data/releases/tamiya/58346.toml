@@ -3,10 +3,11 @@ kit = "kit/tamiya/grasshopper"
 brand = "brand/tamiya"
 number = "58346"
 name = "The Grasshopper"
+year = 2005
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58346-manual"]
+documents = ["doc/tamiya/58346-manual", "doc/tamiya/58346-product-page", "doc/tamiya/58346-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
 contains = [
   { part = "part/tamiya/10005069", role = "kit", source = "doc/tamiya/58346-manual" },
   { part = "part/tamiya/10005072", role = "kit", source = "doc/tamiya/58346-manual", step = "MD5" },
@@ -70,3 +71,4 @@ contains = [
   { part = "part/tamiya/81720", role = "listed", source = "doc/tamiya/58346-manual", notes = "Named in the manual as a paint to use, not in the box (page 2)" },
   { part = "part/tamiya/85026", role = "listed", source = "doc/tamiya/58346-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 13)" },
 ]
+released = "2005-06"

@@ -1,9 +1,11 @@
 id = "part/ftx/FTX7266"
 brand = "brand/ftx"
 number = "FTX7266"
-name = "Hinge Pins 2.5*37.6mm (4P)"
-notes = "Read by OCR from a scanned FTX document"
-category = "pin-clip"
+name = "Brushed(inner hole:2.3mm) Motor Pinion Gears 13T + Set Screws 3*3mm(2P)"
+pack_qty = 2
+notes = "Name read from a scanned FTX parts list; the OCR engines agree"
 equivalent_to = [
-  { spec = "spec/pin/2.5x37.6", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+material = "steel"
+category = "screw"

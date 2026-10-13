@@ -3,10 +3,11 @@ kit = "kit/tamiya/wr-02"
 brand = "brand/tamiya"
 number = "58242"
 name = "Wild Willy 2 (WR-02)"
+year = 1999
 kind = "kit"
 status = "released"
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58242-manual"]
+documents = ["doc/tamiya/58242-manual", "doc/tamiya/58242-product-page", "doc/tamiya/58242-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/newitems-month"]
 contains = [
   { part = "part/tamiya/10005713", role = "kit", source = "doc/tamiya/58242-manual" },
   { part = "part/tamiya/10005746", role = "kit", source = "doc/tamiya/58242-manual" },
@@ -86,3 +87,4 @@ contains = [
   { part = "part/tamiya/81757", role = "listed", source = "doc/tamiya/58242-manual", notes = "Named in the manual as a paint to use, not in the box (page 2)" },
   { part = "part/tamiya/85028", role = "listed", source = "doc/tamiya/58242-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 13, 14, 15)" },
 ]
+released = "1999-10"

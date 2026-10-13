@@ -15,3 +15,6 @@ documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Nemo Racing", url = "https://www.nemoracing.com/products/0410-4mm-nuts" },
 ]
+equivalent_to = [
+  { spec = "spec/nut/m4-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
