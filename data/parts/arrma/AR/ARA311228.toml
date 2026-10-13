@@ -2,10 +2,13 @@ id = "part/arrma/ARA311228"
 brand = "brand/arrma"
 number = "ARA311228"
 name = "Center Driveshaft Steel 181mm for 204mm Chassis"
-gtin = "660132908492"
 applies_to = "GROM"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-center-driveshaft-steel-181mm-for-204mm-chassis-grom/ARA311228.html" },
 ]
+gtin = "660132908492"
 category = "drivetrain"
 material = "steel"
+fits = [
+  { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

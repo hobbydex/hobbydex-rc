@@ -2,9 +2,13 @@ id = "part/arrma/ARA-2148"
 brand = "brand/arrma"
 number = "ARA-2148"
 name = "Composite Chassis - SWB V2"
-gtin = "660132997175"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-composite-chassis---swb-v2/ARA-2148.html" },
 ]
+gtin = "660132997175"
 category = "chassis"
 material = "plastic"
+fits = [
+  { kit = "kit/arrma/granite", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/vorteks", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]
