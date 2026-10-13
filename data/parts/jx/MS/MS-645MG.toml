@@ -1,0 +1,18 @@
+id = "part/jx/MS-645MG"
+brand = "brand/jx"
+number = "MS-645MG"
+name = "MS-645MG 6V 9.6KG High Performance Standard Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 9.6
+voltage = 6
+speed_s = 0.2
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [40, 19.8, 38]
+weight_g = 60
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 7.7 kg.cm at 4.8 V, 9.6 kg.cm at 6 V; speed 0.24 s/60deg at 4.8 V, 0.2 s/60deg at 6 V; lead 265 mm; two ball bearings; programmable."

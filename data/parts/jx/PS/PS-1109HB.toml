@@ -1,0 +1,19 @@
+id = "part/jx/PS-1109HB"
+brand = "brand/jx"
+number = "PS-1109HB"
+name = "PS-1109HB 9g Plastic Gear Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 1.89
+voltage = 6
+speed_s = 0.07
+dimensions_mm = [22.7, 12.2, 29.2]
+weight_g = 9.45
+gear_material = "plastic"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Mini servo; Stall torque 1.65 kg.cm at 4.8 V, 1.89 kg.cm at 6 V; speed 0.09 s/60deg at 4.8 V, 0.07 s/60deg at 6 V; lead 180 mm."
+material = "plastic"

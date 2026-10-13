@@ -1,0 +1,18 @@
+id = "part/jx/MD946TW"
+brand = "brand/jx"
+number = "MD946TW"
+name = "MD946TW 7.4V 23KG High Performance Full CNC Waterproof Coreless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 23
+voltage = 7.4
+speed_s = 0.1
+voltage_range = "4.8V - 7.4V"
+dimensions_mm = [40, 20, 38]
+weight_g = 80
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 14 kg.cm at 4.8 V, 18 kg.cm at 6 V, 23 kg.cm at 7.4 V; speed 0.16 s/60deg at 4.8 V, 0.12 s/60deg at 6 V, 0.1 s/60deg at 7.4 V; lead 265 mm; waterproof (stated in the features); two ball bearings; programmable."

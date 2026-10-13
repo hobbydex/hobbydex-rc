@@ -4,9 +4,16 @@ number = "PDI-HV2060MG"
 name = "PDI-HV2060MG 60KG Metal gear High Voltage Core Digital Servo 1/5 Car"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 62
+voltage = 7.4
+speed_s = 0.13
+voltage_range = "6.0V - 7.4V"
 dimensions_mm = [65.8, 30, 57.4]
 weight_g = 200
+gear_material = "metal"
 motor = "cored"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/jumbo", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Large Size servo; Stall torque 48 kg.cm at 6 V, 62 kg.cm at 7.4 V; speed 0.15 s/60deg at 6 V, 0.13 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."

@@ -1,0 +1,18 @@
+id = "part/jx/CLS-HV7346MG"
+brand = "brand/jx"
+number = "CLS-HV7346MG"
+name = "CLS-HV7346MG 46KG HV High Precision Steel Gear Full CNC Aluminium Shell Structure Digital Coreless"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 46.9
+voltage = 7.4
+speed_s = 0.12
+dimensions_mm = [40, 20, 37]
+weight_g = 73
+gear_material = "steel"
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Full CNC Aluminium Shell servo; Stall torque 37.5 kg.cm at 6 V, 46.9 kg.cm at 7.4 V; speed 0.14 s/60deg at 6 V, 0.12 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."

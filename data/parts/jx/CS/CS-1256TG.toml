@@ -1,0 +1,19 @@
+id = "part/jx/CS-1256TG"
+brand = "brand/jx"
+number = "CS-1256TG"
+name = "CS-1256TG 6.0V 20KG High Torque Metal Gear Standard Coreless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 20
+voltage = 6
+speed_s = 0.15
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [40.3, 20.2, 37.2]
+weight_g = 64
+gear_material = "metal"
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 16 kg.cm at 4.8 V, 20 kg.cm at 6 V; speed 0.18 s/60deg at 4.8 V, 0.15 s/60deg at 6 V; lead 265 mm; two ball bearings; programmable."

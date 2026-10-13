@@ -1,0 +1,20 @@
+id = "part/jx/PDI-4806HB"
+brand = "brand/jx"
+number = "PDI-4806HB"
+name = "PDI-4806HB 6KG Plastic Gear Digital Standard Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 6.21
+voltage = 6
+speed_s = 0.12
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [40.5, 20.3, 38]
+weight_g = 48.5
+gear_material = "plastic"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Standard servo; Stall torque 5.56 kg.cm at 4.8 V, 6.21 kg.cm at 6 V; speed 0.14 s/60deg at 4.8 V, 0.12 s/60deg at 6 V; lead 265 mm."
+material = "plastic"

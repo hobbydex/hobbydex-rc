@@ -1,0 +1,18 @@
+id = "part/jx/PDI-HV5921MG"
+brand = "brand/jx"
+number = "PDI-HV5921MG"
+name = "PDI-HV5921MG 20KG High Precision Metal Gear High Voltage Digital Coreless Standard Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 20.32
+voltage = 8.4
+speed_s = 0.123
+dimensions_mm = [40.5, 20.5, 36.5]
+weight_g = 59.3
+gear_material = "aluminium"
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Standard servo; Stall torque 17.25 kg.cm at 6 V, 20.32 kg.cm at 8.4 V; speed 0.152 s/60deg at 6 V, 0.123 s/60deg at 8.4 V; lead 265 mm; waterproof (stated in the features); two ball bearings."

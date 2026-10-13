@@ -1,0 +1,18 @@
+id = "part/jx/PDI-HV0703MG"
+brand = "brand/jx"
+number = "PDI-HV0703MG"
+name = "PDI-HV0703MG 7.1g HV High Speed Micro Digital Coreless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 3
+voltage = 8.4
+speed_s = 0.052
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [19.6, 8, 21.8]
+weight_g = 7.1
+motor = "coreless"
+connector = "JST1.5"
+equivalent_to = [
+  { spec = "spec/servo/micro-20t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Mini servo; Stall torque 1.8 kg.cm at 4.8 V, 2.2 kg.cm at 6 V, 3 kg.cm at 8.4 V; speed 0.075 s/60deg at 4.8 V, 0.066 s/60deg at 6 V, 0.052 s/60deg at 8.4 V; lead 100 mm."

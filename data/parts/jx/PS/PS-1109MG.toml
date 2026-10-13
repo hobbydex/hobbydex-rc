@@ -1,0 +1,18 @@
+id = "part/jx/PS-1109MG"
+brand = "brand/jx"
+number = "PS-1109MG"
+name = "PS-1109MG 9g Metal Gear Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 2.5
+voltage = 6
+speed_s = 0.1
+dimensions_mm = [23.2, 12, 24.8]
+weight_g = 10
+gear_material = "metal"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Mini servo; Stall torque 2.2 kg.cm at 4.8 V, 2.5 kg.cm at 6 V; speed 0.12 s/60deg at 4.8 V, 0.1 s/60deg at 6 V; lead 180 mm."

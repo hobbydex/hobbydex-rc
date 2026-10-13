@@ -1,0 +1,19 @@
+id = "part/jx/DS-0211MG"
+brand = "brand/jx"
+number = "DS-0211MG"
+name = "DS-0211MG 6.0V 8.0KG Full Aluminium case RC Drone/Glider/Fixed Wing Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 8
+voltage = 6
+speed_s = 0.13
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [30, 10, 36]
+weight_g = 30
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 6 kg.cm at 4.8 V, 8 kg.cm at 6 V; speed 0.16 s/60deg at 4.8 V, 0.13 s/60deg at 6 V; lead 220 mm."
+material = "aluminium"

@@ -1,0 +1,19 @@
+id = "part/jx/DC6645HV-180"
+brand = "brand/jx"
+number = "DC6645HV-180"
+name = "DC6645HV-180 180° 45KG 8.4V Metal Gear Digital Standard Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 45
+voltage = 8.4
+speed_s = 0.11
+dimensions_mm = [40.5, 20, 40]
+weight_g = 66
+gear_material = "aluminium"
+motor = "cored"
+connector = "JR"
+rotation_deg = 180
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Standard servo; Stall torque 33 kg.cm at 6 V, 45 kg.cm at 8.4 V; speed 0.13 s/60deg at 6 V, 0.11 s/60deg at 8.4 V; lead 265 mm; two ball bearings."

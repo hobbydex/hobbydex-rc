@@ -4,8 +4,16 @@ number = "PDI-2607MG"
 name = "PDI-2607MG Full metal high performance wing servo"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 7.21
+voltage = 6
+speed_s = 0.13
+voltage_range = "4.8V - 6.0V"
 dimensions_mm = [30, 10, 35.5]
+weight_g = 26.2
+gear_material = "aluminium"
 motor = "cored"
+connector = "JR/Futaba"
 equivalent_to = [
-  { spec = "spec/servo/mini", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+  { spec = "spec/servo/wing", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Wing servo; Stall torque 5.85 kg.cm at 4.8 V, 7.21 kg.cm at 6 V; speed 0.16 s/60deg at 4.8 V, 0.13 s/60deg at 6 V; lead 220 mm; two ball bearings; programmable."

@@ -4,9 +4,16 @@ number = "PDI-HV2613MG"
 name = "PDI-HV2613MG 13KG Torque HV Waterproof Digital Metal Gear Servo"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 13
+voltage = 7.4
+speed_s = 0.11
+voltage_range = "4.8V - 7.4V"
 dimensions_mm = [32.4, 16.8, 30.8]
 weight_g = 26
+gear_material = "metal"
 motor = "cored"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Medium servo; Stall torque 11 kg.cm at 4.8 V, 13 kg.cm at 7.4 V; speed 0.13 s/60deg at 4.8 V, 0.11 s/60deg at 7.4 V; lead 220 mm; waterproof, IP67."

@@ -1,0 +1,18 @@
+id = "part/jx/MS-5585MH"
+brand = "brand/jx"
+number = "MS-5585MH"
+name = "MS-5585MH 7.4V 17KG High Performance Standard Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 17
+voltage = 7.4
+speed_s = 0.14
+voltage_range = "4.8V - 7.4V"
+dimensions_mm = [40, 19.8, 38]
+weight_g = 60
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 14 kg.cm at 6 V, 17 kg.cm at 7.4 V; speed 0.17 s/60deg at 6 V, 0.14 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."

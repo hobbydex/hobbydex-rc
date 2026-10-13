@@ -1,0 +1,18 @@
+id = "part/jx/PDI-HV4416MG"
+brand = "brand/jx"
+number = "PDI-HV4416MG"
+name = "PDI-HV4416MG 15KG 8.4V Metal Gear Digital Low Profile Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 15.6
+voltage = 8.4
+speed_s = 0.09
+dimensions_mm = [40.5, 20.2, 28]
+weight_g = 47
+gear_material = "aluminium"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Standard servo; Stall torque 12.6 kg.cm at 6 V, 15.6 kg.cm at 8.4 V; speed 0.11 s/60deg at 6 V, 0.09 s/60deg at 8.4 V; lead 220 mm; two ball bearings."

@@ -1,0 +1,18 @@
+id = "part/jx/PDI-HV2006MG"
+brand = "brand/jx"
+number = "PDI-HV2006MG"
+name = "PDI-HV2006MG 20g HV High Speed Micro Digital Coreless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 6.2
+voltage = 8.4
+speed_s = 0.05
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [23, 12, 27.6]
+weight_g = 20.3
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Mini servo; Stall torque 4.8 kg.cm at 6 V, 6.2 kg.cm at 8.4 V; speed 0.07 s/60deg at 6 V, 0.05 s/60deg at 8.4 V; lead 200 mm."

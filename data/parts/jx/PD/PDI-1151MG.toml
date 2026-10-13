@@ -9,7 +9,10 @@ voltage = 6
 speed_s = 0.1
 dimensions_mm = [23.2, 12.5, 25.6]
 weight_g = 15
+gear_material = "aluminium"
 motor = "cored"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/micro", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Waterproof servo; Stall torque 3.2 kg.cm at 4.8 V, 3.6 kg.cm at 6 V; speed 0.12 s/60deg at 4.8 V, 0.1 s/60deg at 6 V; lead 265 mm; waterproof; two ball bearings."

@@ -4,10 +4,15 @@ number = "PDI-6221MG-360"
 name = "PDI-6221MG-360° 20KG 360° Continuous rotation High Precision Metal Gear Digital Standard Servo for"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 20.32
+voltage = 6
 dimensions_mm = [40.5, 20.2, 38]
-rotation_deg = 360
 weight_g = 62
+gear_material = "aluminium"
 motor = "cored"
+connector = "JR"
+rotation_deg = 360
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Industrial/robot servo; Stall torque 17.25 kg.cm at 4.8 V, 20.32 kg.cm at 6 V; lead 265 mm; two ball bearings."
