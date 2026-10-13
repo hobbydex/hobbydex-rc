@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/flanged-10x15x4" },
 ]
 applies_to = "Awesomatix A700"
+fits = [
+  { kit = "kit/awesomatix/a700", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Awesomatix A700 (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/awe001b-awesomatix-a700-metal-shielded-bearings/" },

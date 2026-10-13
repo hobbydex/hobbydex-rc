@@ -3,6 +3,9 @@ brand = "brand/arrowmax"
 number = "AM-TCXX-68761-V2"
 name = "Upper Deck (2.25MM)"
 applies_to = "HB TCXX"
+fits = [
+  { kit = "kit/hb-racing/tcxx", type = "direct", source = "doc/arrowmax/shop", notes = "Listed for the HB TCXX (link_car_kits.py)" },
+]
 notes = "Arrowmax's version of HB part 68761"
 links = [
   { site = "Arrowmax", url = "https://www.arrowmax-rc.com/products/upper-deck-2-25mm-am-tcxx-68761-v2" },
