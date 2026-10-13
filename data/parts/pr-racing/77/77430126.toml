@@ -1,6 +1,11 @@
 id = "part/pr-racing/77430126"
 brand = "brand/pr-racing"
 number = "77430126"
-name = "Rod End 3x4.85x13.75mm"
+name = "PR Racing Rod End 3x4.85x13.75mm (Black)"
 category = "ball-end"
-documents = ["doc/pr-racing/69000045-797"]
+pack_qty = 8
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "2022 PR SB401-R"
+documents = ["doc/pr-racing/pr-rc-com"]

@@ -1,6 +1,11 @@
 id = "part/pr-racing/77500057"
 brand = "brand/pr-racing"
 number = "77500057"
-name = "Servo Mount A"
+name = "PR SB401-R Servo Mount L Pro"
 category = "chassis"
-documents = ["doc/pr-racing/69000045-797"]
+pack_qty = 1
+fits = [
+  { kit = "kit/pr-racing/sct10", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "69000045-PR SCT 10 4WD Short Course Kit"
+documents = ["doc/pr-racing/pr-rc-com"]

@@ -1,6 +1,11 @@
 id = "part/pr-racing/31450016"
 brand = "brand/pr-racing"
 number = "31450016"
-name = "O-ring"
+name = "Gear Diff Seals"
 category = "o-ring-seal"
-documents = ["doc/pr-racing/75400056-742"]
+pack_qty = 4
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-LW 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

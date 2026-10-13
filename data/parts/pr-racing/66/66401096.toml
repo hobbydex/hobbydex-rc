@@ -3,4 +3,9 @@ brand = "brand/pr-racing"
 number = "66401096"
 name = "CVA Bushing"
 category = "bearing"
-documents = ["doc/pr-racing/67510037-745"]
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-LW 4wd; 10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]

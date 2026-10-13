@@ -3,7 +3,12 @@ brand = "brand/pr-racing"
 number = "83400076"
 name = "M4 Nut"
 category = "nut"
-documents = ["doc/pr-racing/75400056-742"]
 equivalent_to = [
   { spec = "spec/nut/m4-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+pack_qty = 4
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-Type R 4wd"
+documents = ["doc/pr-racing/pr-rc-com"]

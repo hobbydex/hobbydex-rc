@@ -1,6 +1,12 @@
 id = "part/pr-racing/68480986"
 brand = "brand/pr-racing"
 number = "68480986"
-name = "Gear Case"
+name = "SB401 Gear Case - V2"
 category = "gear"
-documents = ["doc/pr-racing/77500296-793"]
+pack_qty = 1
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+]
+applies_to = "PR SB401-LW 4wd; 10TH SB401-R-T-SPORT TRUCK"
+documents = ["doc/pr-racing/pr-rc-com"]
