@@ -3,6 +3,17 @@ brand = "brand/hpi"
 number = "67438"
 name = "Ball Bearing 8x14x4mm"
 pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/67438" },
+]
+fits = [
+  { kit = "kit/hpi/apache-c1", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/apache-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/d8s", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/8x14x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

@@ -1,7 +1,16 @@
 id = "part/hpi/161176"
 brand = "brand/hpi"
 number = "161176"
-name = "TP. Button Head Screw M1.7x5mm"
+name = "TP. Button Head Screw M1.7x5mm (Hex Socket/10pcs)"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161176" },
+]
+fits = [
+  { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m1.7x5-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

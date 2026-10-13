@@ -1,7 +1,17 @@
 id = "part/hpi/114761"
 brand = "brand/hpi"
 number = "114761"
-name = "BUTTON HEAD SCREW M2.5X6MM"
+name = "BUTTON HEAD SCREW M2.5X6MM (HEX SOCKET/10PCS)"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/114761" },
+]
+fits = [
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2.5x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

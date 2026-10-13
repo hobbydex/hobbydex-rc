@@ -2,6 +2,25 @@ id = "part/hpi/6921"
 brand = "brand/hpi"
 number = "6921"
 name = "PINION GEAR 21 TOOTH (48 PITCH)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/6921" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/crawler-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/cyber-10b", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/formula-ten", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/jumpshot-st", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/mini-trophy", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/monster-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-pro-3", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/sprint-2", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/venture", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/wheely-king", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+]
 category = "pinion"
 teeth = 21
 pitch_dp = 48

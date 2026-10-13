@@ -2,6 +2,13 @@ id = "part/hpi/Z451"
 brand = "brand/hpi"
 number = "Z451"
 name = "TP. BUTTON HEAD SCREW M2x8mm"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z451" },
+]
+fits = [
+  { kit = "kit/hpi/monster-king", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

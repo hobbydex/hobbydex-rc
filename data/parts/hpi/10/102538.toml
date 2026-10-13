@@ -1,5 +1,15 @@
 id = "part/hpi/102538"
 brand = "brand/hpi"
 number = "102538"
-name = "SWAY BAR SET"
+name = "SWAY BAR SET (FRONT/REAR/SAVAGE X)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/102538" },
+]
+fits = [
+  { kit = "kit/hpi/savage", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-flux", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/super-5sc", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "suspension"

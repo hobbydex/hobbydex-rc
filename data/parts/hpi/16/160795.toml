@@ -1,7 +1,13 @@
 id = "part/hpi/160795"
 brand = "brand/hpi"
 number = "160795"
-name = "Plazma 11.1V 5300mAh 40C LiPo"
+name = "Plazma 11.1V 5300mAh 40C LiPo Pack 58.83Wh - XT60"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160795" },
+]
+fits = [
+  { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-5300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]
@@ -10,3 +16,4 @@ cells = 3
 capacity_mah = 5300
 c_rating = 40
 category = "battery"
+connector = "XT60"

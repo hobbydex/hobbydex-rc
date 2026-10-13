@@ -2,6 +2,13 @@ id = "part/hpi/106433"
 brand = "brand/hpi"
 number = "106433"
 name = "CAP HEAD SCREW M3x58mm"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/106433" },
+]
+fits = [
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x58-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

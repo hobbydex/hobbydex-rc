@@ -1,9 +1,18 @@
 id = "part/hpi/120134"
 brand = "brand/hpi"
 number = "120134"
-name = "8-SHOT SC WHEEL (4.5mm"
+name = "8-SHOT SC WHEEL (4.5mm Offset/ORANGE/2PCS)"
+pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/120134" },
+]
+fits = [
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "wheel"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for Jumpshot SC Flux - White are 12 mm" },
 ]
 vehicle = "short-course"
+offset_mm = 4.5
+color = "orange"

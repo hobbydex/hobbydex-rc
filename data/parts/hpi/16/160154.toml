@@ -1,7 +1,16 @@
 id = "part/hpi/160154"
 brand = "brand/hpi"
 number = "160154"
-name = "Plazma 6.0V 4300mAh NiMH Baja"
+name = "Plazma 6.0V 4300mAh NiMH Baja Receiver Battery"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160154" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5r", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/battery/nimh-5s-4300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]

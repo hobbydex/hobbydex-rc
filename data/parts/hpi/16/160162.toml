@@ -1,0 +1,27 @@
+id = "part/hpi/160162"
+brand = "brand/hpi"
+number = "160162"
+name = "Plazma 11.1V 3200mAh 40C LiPo Battery Pack"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160162" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/bullet-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 3200
+c_rating = 40
+category = "battery"

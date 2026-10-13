@@ -3,4 +3,16 @@ brand = "brand/hpi"
 number = "87540"
 name = "WASHER 5x10x0.2mm"
 pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/87540" },
+]
+fits = [
+  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/stage-d10", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "washer-shim"
