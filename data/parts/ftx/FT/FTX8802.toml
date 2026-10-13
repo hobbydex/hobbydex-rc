@@ -1,8 +1,12 @@
 id = "part/ftx/FTX8802"
 brand = "brand/ftx"
 number = "FTX8802"
-name = "High Torque 540 20T Motor"
-notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+name = "Mauler High Torque 540 20t Motor"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-mauler-spares/ftx-mauler-high-torque-540-20t-motor" },
+]
 category = "motor"
 equivalent_to = [
   { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
