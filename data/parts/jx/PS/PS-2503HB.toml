@@ -4,9 +4,16 @@ number = "PS-2503HB"
 name = "PS-2503HB 25g Plastic Gear Analog Core Servo"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 3.35
+voltage = 6
+speed_s = 0.1
 dimensions_mm = [36, 15, 32.4]
+weight_g = 25.32
+gear_material = "plastic"
 motor = "cored"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/mini", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Medium servo; Stall torque 2.85 kg.cm at 4.8 V, 3.35 kg.cm at 6 V; speed 0.12 s/60deg at 4.8 V, 0.1 s/60deg at 6 V; lead 180 mm; two ball bearings."
 material = "plastic"

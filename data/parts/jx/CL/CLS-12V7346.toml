@@ -4,9 +4,15 @@ number = "CLS-12V7346"
 name = "CLS-12V7346 46KG 12V High Precision Steel Gear Full CNC Aluminium Shell Structure Digital Coreless"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 47
+voltage = 14
+speed_s = 0.1
 dimensions_mm = [40, 20, 37]
 weight_g = 73
+gear_material = "steel"
 motor = "coreless"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Industrial/robot servo; Stall torque 38 kg.cm at 11.1 V, 47 kg.cm at 14 V; speed 0.12 s/60deg at 11.1 V, 0.1 s/60deg at 14 V; lead 265 mm; two ball bearings; programmable."

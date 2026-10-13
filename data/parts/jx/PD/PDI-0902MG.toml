@@ -4,5 +4,16 @@ number = "PDI-0902MG"
 name = "PDI-0902MG 9.4g Metal Gear coreless wing servo"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 1.9
+voltage = 6
+speed_s = 0.1
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [23.5, 8, 24]
 weight_g = 9.4
+gear_material = "metal"
 motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/wing", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Wing servo; Stall torque 1.4 kg.cm at 4.8 V, 1.9 kg.cm at 6 V; speed 0.12 s/60deg at 4.8 V, 0.1 s/60deg at 6 V; lead 150 mm; two ball bearings."

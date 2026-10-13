@@ -4,6 +4,17 @@ number = "PDI-HV4612MG"
 name = "PDI-HV4612MG 12KG High Precision Metal Gear CNC aluminium middle Shell High Voltage Digital Coreless"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 13.56
+voltage = 8.4
+speed_s = 0.11
+voltage_range = "6V - 8.4V"
+dimensions_mm = [40.5, 20.5, 31]
 weight_g = 46
+gear_material = "aluminium"
 motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Low Profile servo; Stall torque 11.82 kg.cm at 6 V, 13.56 kg.cm at 8.4 V; speed 0.13 s/60deg at 6 V, 0.11 s/60deg at 8.4 V; lead 265 mm; waterproof (stated in the features); two ball bearings."
 material = "aluminium"

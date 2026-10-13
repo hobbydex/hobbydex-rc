@@ -1,0 +1,18 @@
+id = "part/jx/PDI-6208MG"
+brand = "brand/jx"
+number = "PDI-6208MG"
+name = "PDI-6208MG 8KG High Precision Metal Gear Digital Standard Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 8.2
+voltage = 6
+speed_s = 0.07
+dimensions_mm = [40.5, 20.2, 38]
+weight_g = 62
+gear_material = "aluminium"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Standard servo; Stall torque 6.8 kg.cm at 4.8 V, 8.2 kg.cm at 6 V; speed 0.09 s/60deg at 4.8 V, 0.07 s/60deg at 6 V; lead 265 mm; two ball bearings."

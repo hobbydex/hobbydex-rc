@@ -1,0 +1,19 @@
+id = "part/jx/CS-1211MG"
+brand = "brand/jx"
+number = "CS-1211MG"
+name = "CS-1211MG 7.4V 11KG Full Aluminium case RC Drone Glider Coreless Wing Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 11
+voltage = 7.4
+speed_s = 0.15
+voltage_range = "6.0V - 7.4V"
+dimensions_mm = [30, 10, 36]
+weight_g = 30
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/wing-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 9 kg.cm at 6 V, 11 kg.cm at 7.4 V; speed 0.17 s/60deg at 6 V, 0.15 s/60deg at 7.4 V; lead 220 mm."
+material = "aluminium"

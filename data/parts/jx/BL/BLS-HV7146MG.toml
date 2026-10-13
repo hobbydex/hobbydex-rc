@@ -1,0 +1,18 @@
+id = "part/jx/BLS-HV7146MG"
+brand = "brand/jx"
+number = "BLS-HV7146MG"
+name = "BLS-HV7146MG 46KG HV High Precision Steel Gear Full CNC Aluminium Shell Structure Digital Brushles"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 47.8
+voltage = 7.4
+speed_s = 0.1
+dimensions_mm = [40.5, 20.5, 36]
+weight_g = 71
+gear_material = "steel"
+motor = "brushless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Full CNC Aluminium Shell servo; Stall torque 37.6 kg.cm at 6 V, 47.8 kg.cm at 7.4 V; speed 0.12 s/60deg at 6 V, 0.1 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."

@@ -4,9 +4,15 @@ number = "PDI-HV1151MG"
 name = "PDI-HV1151MG 15g Full waterproof HV mini digital servo"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 4.5
+voltage = 8.4
+speed_s = 0.1
 dimensions_mm = [23.2, 12.5, 25.6]
 weight_g = 15
+gear_material = "aluminium"
 motor = "cored"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/micro", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Waterproof servo; Stall torque 3.5 kg.cm at 6 V, 4.5 kg.cm at 8.4 V; speed 0.12 s/60deg at 6 V, 0.1 s/60deg at 8.4 V; lead 265 mm; waterproof; two ball bearings."

@@ -1,0 +1,21 @@
+id = "part/jx/RD-5606HB-300"
+brand = "brand/jx"
+number = "RD-5606HB-300"
+name = "RD-5606HB-300 6kg.cm, 300° Digital, plastic gear robot servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 6.2
+voltage = 6
+speed_s = 0.12
+voltage_range = "4.8V - 6V"
+dimensions_mm = [40.5, 20.3, 40]
+weight_g = 47
+gear_material = "plastic"
+motor = "cored"
+connector = "JR"
+rotation_deg = 300
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Biaxial servo; Stall torque 5.5 kg.cm at 4.8 V, 6.2 kg.cm at 6 V; speed 0.14 s/60deg at 4.8 V, 0.12 s/60deg at 6 V; lead 200 mm."
+material = "plastic"

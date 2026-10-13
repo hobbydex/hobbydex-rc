@@ -1,0 +1,18 @@
+id = "part/jx/MD954SW"
+brand = "brand/jx"
+number = "MD954SW"
+name = "MD954SW 7.4V 29KG High Performance Coreless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 29
+voltage = 7.4
+speed_s = 0.12
+voltage_range = "4.8V - 7.4V"
+dimensions_mm = [40, 20, 37]
+weight_g = 66
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 18 kg.cm at 4.8 V, 24 kg.cm at 6 V, 29 kg.cm at 7.4 V; speed 0.19 s/60deg at 4.8 V, 0.15 s/60deg at 6 V, 0.12 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."

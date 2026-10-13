@@ -4,9 +4,16 @@ number = "BLS6534HV"
 name = "BLS6534HV 33kg Aluminium Shell Metal gear High Voltage Brushless Digital Servo"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 33.7
+voltage = 7.4
+speed_s = 0.11
 dimensions_mm = [40.5, 20.2, 40]
+weight_g = 65
+gear_material = "aluminium"
 motor = "brushless"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Ecoboost servo; Stall torque 26.7 kg.cm at 6.6 V, 33.7 kg.cm at 7.4 V; speed 0.13 s/60deg at 6.6 V, 0.11 s/60deg at 7.4 V; lead 265 mm; two ball bearings."
 material = "aluminium"

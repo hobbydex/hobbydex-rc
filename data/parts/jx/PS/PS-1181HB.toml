@@ -1,0 +1,19 @@
+id = "part/jx/PS-1181HB"
+brand = "brand/jx"
+number = "PS-1181HB"
+name = "PS-1181HB 18g Plastic Gear analog servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 3
+voltage = 6
+speed_s = 0.11
+dimensions_mm = [28, 13, 29.7]
+weight_g = 16
+gear_material = "plastic"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/mini", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Mini servo; Stall torque 2.7 kg.cm at 4.8 V, 3 kg.cm at 6 V; speed 0.13 s/60deg at 4.8 V, 0.11 s/60deg at 6 V; lead 180 mm."
+material = "plastic"

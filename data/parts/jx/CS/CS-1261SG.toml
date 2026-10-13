@@ -1,0 +1,18 @@
+id = "part/jx/CS-1261SG"
+brand = "brand/jx"
+number = "CS-1261SG"
+name = "CS-1261SG 7.4V 20KG High Torque Low Profile Coreless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 20
+voltage = 7.4
+speed_s = 0.08
+voltage_range = "6.0V - 7.4V"
+dimensions_mm = [35, 15, 30.7]
+weight_g = 42
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 15 kg.cm at 6 V, 20 kg.cm at 7.4 V; speed 0.12 s/60deg at 6 V, 0.08 s/60deg at 7.4 V; lead 220 mm; two ball bearings; programmable."

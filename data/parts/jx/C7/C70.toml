@@ -1,0 +1,18 @@
+id = "part/jx/C70"
+brand = "brand/jx"
+number = "C70"
+name = "C70 70kg.cm 12V super coreless servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 72
+voltage = 12
+speed_s = 0.08
+dimensions_mm = [40, 20, 43.3]
+weight_g = 87
+gear_material = "steel"
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Max Power servo; Stall torque 61 kg.cm at 11.1 V, 72 kg.cm at 12 V; speed 0.1 s/60deg at 11.1 V, 0.08 s/60deg at 12 V; lead 265 mm; two ball bearings."

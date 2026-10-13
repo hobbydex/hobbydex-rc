@@ -1,0 +1,18 @@
+id = "part/jx/BLS-HV7032MG"
+brand = "brand/jx"
+number = "BLS-HV7032MG"
+name = "BLS-HV7032MG 32KG HV High Precision Steel Gear Full CNC Aluminium Shell Structure Digital Brushless"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 32.5
+voltage = 7.4
+speed_s = 0.07
+dimensions_mm = [40.5, 20.5, 36]
+weight_g = 70
+gear_material = "steel"
+motor = "brushless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Full CNC Aluminium Shell servo; Stall torque 27.5 kg.cm at 6 V, 32.5 kg.cm at 7.4 V; speed 0.09 s/60deg at 6 V, 0.07 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."

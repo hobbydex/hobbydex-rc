@@ -4,9 +4,15 @@ number = "DC5821LV"
 name = "DC5821LV 20KG Full waterproof digital high quality servo"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 21.8
+voltage = 6
+speed_s = 0.16
 dimensions_mm = [40.5, 20.2, 38]
 weight_g = 58
+gear_material = "aluminium"
 motor = "cored"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Waterproof servo; Stall torque 16.5 kg.cm at 4.8 V, 21.8 kg.cm at 6 V; speed 0.18 s/60deg at 4.8 V, 0.16 s/60deg at 6 V; lead 265 mm; waterproof; two ball bearings."

@@ -1,0 +1,21 @@
+id = "part/jx/RD-B7640HV-180"
+brand = "brand/jx"
+number = "RD-B7640HV-180"
+name = "RD-B7640HV-180 40kg.cm, 180° brushless, full CNC aluminium hulls and structure Robot servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 40
+voltage = 8.4
+speed_s = 0.11
+voltage_range = "5.0V - 8.4V"
+dimensions_mm = [40, 20, 40]
+weight_g = 76
+gear_material = "metal"
+motor = "brushless"
+connector = "JR"
+rotation_deg = 180
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Biaxial servo; Stall torque 33 kg.cm at 5 V, 35 kg.cm at 7.2 V, 40 kg.cm at 8.4 V; speed 0.15 s/60deg at 5 V, 0.13 s/60deg at 7.2 V, 0.11 s/60deg at 8.4 V; lead 265 mm."
+material = "aluminium"

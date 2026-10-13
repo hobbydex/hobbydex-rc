@@ -1,0 +1,18 @@
+id = "part/jx/PS-1143HB"
+brand = "brand/jx"
+number = "PS-1143HB"
+name = "PS-1143HB 3.7g Plastic Gear Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 0.55
+voltage = 6
+speed_s = 0.08
+dimensions_mm = [19.8, 8.2, 22]
+weight_g = 3.7
+gear_material = "plastic"
+motor = "cored"
+equivalent_to = [
+  { spec = "spec/servo/micro", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Mini servo; Stall torque 0.45 kg.cm at 4.8 V, 0.55 kg.cm at 6 V; speed 0.1 s/60deg at 4.8 V, 0.08 s/60deg at 6 V."
+material = "plastic"

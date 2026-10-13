@@ -1,0 +1,18 @@
+id = "part/jx/PDI-HV1511MG"
+brand = "brand/jx"
+number = "PDI-HV1511MG"
+name = "PDI-HV1511MG 15g HV High Speed Micro Digital Coreless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 11.9
+voltage = 8.4
+speed_s = 0.07
+voltage_range = "4.8V - 8.4V"
+dimensions_mm = [23, 12, 27.5]
+weight_g = 15
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/micro-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Mini servo; Stall torque 7.5 kg.cm at 4.8 V, 9.3 kg.cm at 6 V, 11.9 kg.cm at 8.4 V; speed 0.11 s/60deg at 4.8 V, 0.09 s/60deg at 6 V, 0.07 s/60deg at 8.4 V; lead 200 mm."

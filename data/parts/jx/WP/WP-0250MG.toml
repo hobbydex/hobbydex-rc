@@ -1,0 +1,19 @@
+id = "part/jx/WP-0250MG"
+brand = "brand/jx"
+number = "WP-0250MG"
+name = "WP-0250MG 8.4V 6.8KG Metal Gear Mini Waterproof Digital Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 6.8
+voltage = 8.4
+speed_s = 0.12
+voltage_range = "6.0V - 8.4V"
+dimensions_mm = [29.5, 14, 28.6]
+weight_g = 21
+gear_material = "metal"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 5.5 kg.cm at 6 V, 6.8 kg.cm at 8.4 V; speed 0.14 s/60deg at 6 V, 0.12 s/60deg at 8.4 V; lead 220 mm; waterproof, IP67."

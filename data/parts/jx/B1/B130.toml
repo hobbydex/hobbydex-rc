@@ -8,9 +8,12 @@ torque_kgcm = 130
 voltage = 8.4
 speed_s = 0.13
 dimensions_mm = [65.8, 30, 58.8]
-rotation_deg = 180
 weight_g = 260
+gear_material = "aluminium"
 motor = "brushless"
+connector = "JR"
+rotation_deg = 120
 equivalent_to = [
   { spec = "spec/servo/jumbo", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Large Size servo; Stall torque 107 kg.cm at 6 V, 130 kg.cm at 8.4 V; speed 0.15 s/60deg at 6 V, 0.13 s/60deg at 8.4 V; lead 265 mm; two ball bearings."

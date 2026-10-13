@@ -1,0 +1,18 @@
+id = "part/jx/MD940TW"
+brand = "brand/jx"
+number = "MD940TW"
+name = "MD940TW 7.4V 16.5KG High Performance Standard Coreless Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 16.5
+voltage = 7.4
+speed_s = 0.07
+voltage_range = "4.8V - 7.4V"
+dimensions_mm = [40, 20, 37]
+weight_g = 68
+motor = "coreless"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under My servo; Stall torque 10 kg.cm at 4.8 V, 13.5 kg.cm at 6 V, 16.5 kg.cm at 7.4 V; speed 0.11 s/60deg at 4.8 V, 0.08 s/60deg at 6 V, 0.07 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."

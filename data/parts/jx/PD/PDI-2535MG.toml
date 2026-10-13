@@ -4,8 +4,15 @@ number = "PDI-2535MG"
 name = "PDI-2535MG 25g Metal Gear digital coreless Gyro servo"
 category = "servo"
 category_source = "curated"
+torque_kgcm = 3.54
+voltage = 4.8
+speed_s = 0.06
 dimensions_mm = [36, 15, 32.4]
+weight_g = 26.32
+gear_material = "aluminium"
 motor = "coreless"
+connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/mini", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+notes = "JX files it under Medium servo; lead 180 mm; waterproof (stated in the features); two ball bearings."

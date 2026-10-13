@@ -1,0 +1,19 @@
+id = "part/jx/PS-1171MG"
+brand = "brand/jx"
+number = "PS-1171MG"
+name = "PS-1171MG 17g Metal Gear Analog Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 3.5
+voltage = 6
+speed_s = 0.11
+voltage_range = "4.8V - 6.0V"
+dimensions_mm = [29.5, 11.6, 30.2]
+weight_g = 17.5
+gear_material = "metal"
+motor = "cored"
+connector = "JR"
+equivalent_to = [
+  { spec = "spec/servo/mini", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
+]
+notes = "JX files it under Mini servo; Stall torque 3 kg.cm at 4.8 V, 3.5 kg.cm at 6 V; speed 0.13 s/60deg at 4.8 V, 0.11 s/60deg at 6 V; lead 180 mm."
