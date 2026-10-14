@@ -11,3 +11,10 @@ equivalent_to = [
   { spec = "spec/oil/silicone-910cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
 ]
 viscosity_wt = 70
+gtin = "605482093207"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+]

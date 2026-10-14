@@ -9,13 +9,23 @@ gtin = "605482163818"
 documents = ["doc/axial/axi01002-exploded-view-multi", "doc/axial/axi01002-manual-en", "doc/axial/axi01002-product-page"]
 color = "gray"
 contains = [
+  { part = "part/axial/AXI212002", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI213001", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI214001", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI214006", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI235013", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI235014", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI237003", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC0114", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC0115", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC0116", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC0180", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC0392", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC1213", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC1495", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/axial/axi01002-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz 2-Channel Radio" },
+  { part = "part/tlr/TLR245016", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI236172", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI312004", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI314001", role = "option", source = "doc/axial/horizon-part-pages" },
 ]

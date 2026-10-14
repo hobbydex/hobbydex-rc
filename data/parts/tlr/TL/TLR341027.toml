@@ -7,8 +7,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-chassis-rib-brace-carbon-8x-8xe-2.0/TLR341027.html" },
 ]
 fits = [
-  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
-  { kit = "kit/tlr/8ight-x", type = "replaces", replaces = "part/tlr/TLR241054", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "replaces", replaces = "part/tlr/TLR241054", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "carbon"
+gtin = "605482165010"

@@ -6,8 +6,8 @@ name = "Mini LMT Son Uva Digger 2S 4X4 RTR Brushed Monster Truck (Battery & Char
 kind = "rtr"
 status = "released"
 gtin = "605482181539"
-color = "blue"
 documents = ["doc/losi/los01026-exploded-view-multi", "doc/losi/los01026-manual-en", "doc/losi/los01026-product-page", "doc/losi/los01026-quickstart-guide"]
+color = "blue"
 contains = [
   { part = "part/losi/LOS11002", role = "kit", source = "doc/losi/los01026-exploded-view-multi" },
   { part = "part/losi/LOS210042", role = "kit", source = "doc/losi/los01026-exploded-view-multi" },
@@ -84,9 +84,12 @@ contains = [
   { part = "part/spektrum/SPMXC0040", role = "kit", source = "doc/losi/los01026-manual-en" },
   { part = "part/spektrum/SPMXSE3025RX", role = "kit", source = "doc/losi/los01026-exploded-view-multi" },
   { part = "part/tlr/TLR245008", role = "kit", source = "doc/losi/horizon-part-pages" },
-  { part = "part/tlr/TLR245011", role = "kit", source = "doc/losi/los01026-exploded-view-multi" },
-  { part = "part/tlr/TLR245016", role = "kit", source = "doc/losi/los01026-exploded-view-multi" },
+  { part = "part/tlr/TLR245011", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR245016", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/tlr/TLR255003", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5913", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5914", role = "kit", source = "doc/losi/los01026-exploded-view-multi" },
+  { part = "part/tlr/TLR5960", role = "kit", source = "doc/losi/los01026-exploded-view-multi" },
   { part = "part/losi/LOS212052", role = "option", source = "doc/losi/los01026-manual-en" },
   { part = "part/losi/LOS212054", role = "option", source = "doc/losi/los01026-manual-en" },
   { part = "part/losi/LOS311014", role = "option", source = "doc/losi/los01026-manual-en" },
@@ -109,11 +112,11 @@ contains = [
   { part = "part/tlr/TLR314009", role = "option", source = "doc/losi/los01026-manual-en" },
   { part = "part/tlr/TLR314010", role = "option", source = "doc/losi/los01026-manual-en" },
   { part = "part/tlr/TLR336005", role = "option", source = "doc/losi/los01026-manual-en" },
-  { part = "part/tlr/TLR74000", role = "option", source = "doc/losi/los01026-manual-en" },
+  { part = "part/tlr/TLR74000", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/tlr/TLR74001", role = "option", source = "doc/losi/horizon-part-pages" },
-  { part = "part/tlr/TLR74002", role = "option", source = "doc/losi/los01026-manual-en" },
+  { part = "part/tlr/TLR74002", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/tlr/TLR74003", role = "option", source = "doc/losi/horizon-part-pages" },
-  { part = "part/tlr/TLR74004", role = "option", source = "doc/losi/los01026-manual-en" },
+  { part = "part/tlr/TLR74004", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/tlr/TLR76009", role = "option", source = "doc/losi/los01026-manual-en" },
   { part = "part/tlr/TLR77000", role = "option", source = "doc/losi/los01026-manual-en" },
   { part = "part/losi/LOS212039", role = "listed", source = "doc/losi/los01026-manual-en" },

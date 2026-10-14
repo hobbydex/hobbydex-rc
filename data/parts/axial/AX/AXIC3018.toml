@@ -3,8 +3,16 @@ brand = "brand/axial"
 number = "AXIC3018"
 name = "Spring 14x70mm 2.07lbs/in Super Soft, Red"
 pack_qty = 2
-color = "red"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-spring-14x70mm-2.07lbs-in-super-soft-red-2/AXIC3018.html" },
 ]
+color = "red"
 category = "shock-spring"
+gtin = "877493007171"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
+rate = "super soft"
+rate_lb_in = 2.07
+range = "axial/spring-x-rate-rate-springs"

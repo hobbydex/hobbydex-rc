@@ -6,5 +6,12 @@ name = "AX24 XC-1 4WS 4X4 RTR Brushed Rock Crawler (Battery & Charger Included),
 kind = "rtr"
 status = "discontinued"
 gtin = "605482167984"
-color = "orange"
 documents = ["doc/axial/axi00003-exploded-view-multi", "doc/axial/axi00003-manual-en", "doc/axial/axi00003-product-page"]
+color = "orange"
+contains = [
+  { part = "part/axial/AXI201005", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI202001", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI204004", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI302001", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI31567", role = "option", source = "doc/axial/horizon-part-pages" },
+]

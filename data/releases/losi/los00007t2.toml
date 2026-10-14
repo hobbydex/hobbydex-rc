@@ -6,8 +6,8 @@ name = "Micro-B 2S 2WD RTR Race Buggy (Battery & Charger Included), silver"
 kind = "rtr"
 status = "released"
 gtin = "660132889203"
-color = "silver"
 documents = ["doc/losi/los00007-exploded-view-ml", "doc/losi/los00007-manual-en", "doc/losi/los00007-product-page"]
+color = "silver"
 contains = [
   { part = "part/axial/AXI31619", role = "kit", source = "doc/losi/los00007-exploded-view-ml" },
   { part = "part/losi/LOS-1078", role = "kit", source = "doc/losi/los00007-manual-en" },
@@ -37,6 +37,8 @@ contains = [
   { part = "part/losi/LOS-1989", role = "option", source = "doc/losi/los00007-manual-en" },
   { part = "part/losi/LOS-1990", role = "option", source = "doc/losi/los00007-manual-en" },
   { part = "part/losi/LOS-1991", role = "option", source = "doc/losi/los00007-manual-en" },
+  { part = "part/tlr/TLR74002", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR74004", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/spektrum/SPMSLT350", role = "listed", source = "doc/losi/los00007-manual-en" },
   { part = "part/spektrum/SPMXC0030", role = "listed", source = "doc/losi/los00007-manual-en" },
   { part = "part/spektrum/SPMXSE2825RX", role = "listed", source = "doc/losi/los00007-manual-en" },

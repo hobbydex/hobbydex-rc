@@ -3,11 +3,11 @@ brand = "brand/losi"
 number = "LOSA6948"
 name = "8x14x4 Flanged Rubber Seal Ball Bearing"
 pack_qty = 4
+former_names = ["8 x 14 x 4mm Flanged Rubber BB", "8x14x4 Flanged Rubber Seal", "8x14x4 Flanged Rubber Seal BB"]
 applies_to = "8X, 8XE"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-8x14x4-flanged-rubber-seal-ball-bearing-4-8x-8xe/LOSA6948.html" },
 ]
-former_names = ["8 x 14 x 4mm Flanged Rubber BB", "8x14x4 Flanged Rubber Seal", "8x14x4 Flanged Rubber Seal BB"]
 material = "steel"
 seal = "rubber"
 category = "bearing"
@@ -26,3 +26,6 @@ fits = [
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]
 gtin = "660132616595"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-8x14x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

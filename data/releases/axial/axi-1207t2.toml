@@ -6,9 +6,11 @@ name = "AXP8 Gilamon 2.2 4X4 RTR Brushed Trail Buggy, red"
 kind = "rtr"
 status = "released"
 gtin = "660132893170"
-color = "red"
 documents = ["doc/axial/axi-1207-manual-ml", "doc/axial/axi-1207-product-page"]
+color = "red"
 contains = [
+  { part = "part/axial/AXI-2201", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI-2214", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI235109", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI235110", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI237009", role = "kit", source = "doc/axial/horizon-part-pages" },
@@ -25,17 +27,21 @@ contains = [
   { part = "part/axial/AXIC1045", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC1120", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC1146", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC1391", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC1495", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC3066", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC4403", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/losi/LOS235015", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/losi/LOS247001", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/losi/LOSA6940", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/tlr/TLR245016", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/tlr/TLR5900", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/tlr/TLR5907", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/tlr/TLR6289", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-2194", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2195", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2199", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2200", role = "option", source = "doc/axial/axi-1207-manual-ml" },
-  { part = "part/axial/AXI-2201", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2202", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2204", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2205", role = "option", source = "doc/axial/axi-1207-manual-ml" },
@@ -45,7 +51,7 @@ contains = [
   { part = "part/axial/AXI-2858", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI232046", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXIC0834", role = "option", source = "doc/axial/horizon-part-pages" },
-  { part = "part/axial/AXIC0836", role = "option", source = "doc/axial/axi-1207-manual-ml" },
+  { part = "part/axial/AXIC0836", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC2015", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXIC8137", role = "option", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2156", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
@@ -62,7 +68,6 @@ contains = [
   { part = "part/axial/AXI-2210", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2211", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2212", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
-  { part = "part/axial/AXI-2214", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2215", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2216", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXI-2217", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
@@ -93,8 +98,6 @@ contains = [
   { part = "part/axial/AXIC1053", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXIC1072", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/axial/AXIC1195", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
-  { part = "part/axial/AXIC1391", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
-  { part = "part/axial/AXIC1495", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/losi/LOSA6944", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/spektrum/SPM6125", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/spektrum/SPM6420", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
@@ -127,7 +130,4 @@ contains = [
   { part = "part/spektrum/SPMXSEM1040B", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/spektrum/SPMXSEMC08", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
   { part = "part/spektrum/SPMXSEMC09", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
-  { part = "part/tlr/TLR245016", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
-  { part = "part/tlr/TLR5907", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
-  { part = "part/tlr/TLR6289", role = "listed", source = "doc/axial/axi-1207-manual-ml" },
 ]

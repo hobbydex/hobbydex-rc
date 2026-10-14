@@ -6,5 +6,13 @@ name = "SCX24 1967 Chevrolet C10 4X4 RTR Brushed Rock Crawler (Battery & Charger
 kind = "rtr"
 status = "discontinued"
 gtin = "605482496879"
-color = "light green"
 documents = ["doc/axial/axi00001-product-page", "doc/axial/axi00001t1-manual-english", "doc/axial/scx24-manual-addendum-ml"]
+color = "light green"
+contains = [
+  { part = "part/axial/AXI200001", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI302001", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI31567", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI31599", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI40003", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI40005", role = "option", source = "doc/axial/horizon-part-pages" },
+]
