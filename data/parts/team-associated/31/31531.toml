@@ -1,10 +1,17 @@
 id = "part/team-associated/31531"
 brand = "brand/team-associated"
 number = "31531"
-name = "M3 x 6mm BHCS"
-former_names = ["3x6mm BHCS", "3x6mm Servo BHCS and", "M3 x 6mm Horn, BHCS 15.5mm"]
+name = "Screws, M3x6 mm BHCS"
+former_names = ["M3 x 6mm BHCS", "3x6mm BHCS", "3x6mm Servo BHCS and", "M3 x 6mm Horn, BHCS 15.5mm"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x6-mm-bhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/6050-page" },
+  { kit = "kit/team-associated/rc12l", type = "direct", source = "doc/team-associated/4022-page" },
+]

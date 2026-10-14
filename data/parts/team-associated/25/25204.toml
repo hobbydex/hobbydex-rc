@@ -1,9 +1,16 @@
 id = "part/team-associated/25204"
 brand = "brand/team-associated"
 number = "25204"
-name = "M3 x 16mm FHCS"
+name = "Screws, M3x16 mm FHCS"
+former_names = ["M3 x 16mm FHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x16-mm-fhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/dc10", type = "direct", source = "doc/team-associated/30135-page" },
+]

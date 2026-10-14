@@ -1,10 +1,16 @@
 id = "part/team-associated/41095"
 brand = "brand/team-associated"
 number = "41095"
-name = "M3 x 22mm LP SHCS"
-former_names = ["3x22mm LP SHCS", "M3 x 22mm LP SHCS THRE LOC K A D"]
+name = "Screws, LP Low-Profile M3x22mm SHCS"
+former_names = ["M3 x 22mm LP SHCS", "3x22mm LP SHCS", "M3 x 22mm LP SHCS THRE LOC K A D"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x22-low-head-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-lp-low-profile-m3x22mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/dc10", type = "direct", source = "doc/team-associated/30135-page" },
+]

@@ -1,0 +1,21 @@
+id = "part/team-associated/91475"
+brand = "brand/team-associated"
+number = "91475"
+name = "Bearings, 3x7x3 mm"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/bearings-3x7x3-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/pro2-dk10", type = "direct", source = "doc/team-associated/90038-page" },
+  { kit = "kit/team-associated/pro2-lt10", type = "direct", source = "doc/team-associated/70022-page" },
+  { kit = "kit/team-associated/pro2-rt10", type = "direct", source = "doc/team-associated/70024-page" },
+  { kit = "kit/team-associated/pro2-sc10", type = "direct", source = "doc/team-associated/70021-page" },
+  { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/90060-page" },
+  { kit = "kit/team-associated/sr10", type = "direct", source = "doc/team-associated/70033-page" },
+  { kit = "kit/team-associated/trophy-rat", type = "direct", source = "doc/team-associated/70019-page" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/3x7x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

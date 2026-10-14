@@ -1,10 +1,16 @@
 id = "part/team-associated/41090"
 brand = "brand/team-associated"
 number = "41090"
-name = "3x10mm LP SHCS"
-former_names = ["M3x10mm LP SHCS"]
+name = "Screws, LP Low-Profile M3x10mm SHCS"
+former_names = ["3x10mm LP SHCS", "M3x10mm LP SHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x10-low-head-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-lp-low-profile-m3x10mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/dc10", type = "direct", source = "doc/team-associated/30135-page" },
+]

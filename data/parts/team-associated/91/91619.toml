@@ -1,9 +1,15 @@
 id = "part/team-associated/91619"
 brand = "brand/team-associated"
 number = "91619"
-name = "V2 3 x 27.5 Shock Shaft TiN “rear”"
-former_names = ["V2 3x27.5mm shock shaft TiN"]
+name = "3x27.5 mm Shock Shafts (V2), TiN"
+former_names = ["V2 3 x 27.5 Shock Shaft TiN “rear”", "V2 3x27.5mm shock shaft TiN"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 27.5
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3x27-5-mm-shock-shafts-v2-tin/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/90056-page" },
+]

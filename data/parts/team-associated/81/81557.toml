@@ -1,6 +1,12 @@
 id = "part/team-associated/81557"
 brand = "brand/team-associated"
 number = "81557"
-name = "Fuel Tank Clip"
-former_names = ["Fuel Tank"]
-category = "pin-clip"
+name = "RC8B4 Fuel Tank"
+former_names = ["Fuel Tank Clip", "Fuel Tank"]
+category = "engine-fuel"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b4-fuel-tank/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8b4", type = "direct", source = "doc/team-associated/80949-page" },
+]

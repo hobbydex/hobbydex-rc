@@ -1,6 +1,15 @@
 id = "part/team-associated/91996"
 brand = "brand/team-associated"
 number = "91996"
-name = "13mm Shock Cap O-Ring"
-former_names = ["13mm Shock Hat Bushing", "13mm Shock Spacer", "13mm Shock cap", "13mm Shock cap O-Ring", "13mm Shock hat bushing", "13mm Shock spacer", "13mm Threaded Collar O-ring", "13mm Threaded collar"]
-category = "o-ring-seal"
+name = "13mm Shock Rebuild Set"
+former_names = ["13mm Shock Cap O-Ring", "13mm Shock Hat Bushing", "13mm Shock Spacer", "13mm Shock cap", "13mm Shock cap O-Ring", "13mm Shock hat bushing", "13mm Shock spacer", "13mm Threaded Collar O-ring", "13mm Threaded collar"]
+category = "shock"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/13mm-shock-rebuild-set/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/90056-page" },
+  { kit = "kit/team-associated/rc10t", type = "direct", source = "doc/team-associated/7004-page" },
+  { kit = "kit/team-associated/rc10t84", type = "direct", source = "doc/team-associated/90057-page" },
+]
+shock_part = "rebuild-kit"

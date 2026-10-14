@@ -1,9 +1,18 @@
 id = "part/team-associated/91920"
 brand = "brand/team-associated"
 number = "91920"
-name = "13x23mm Shock Bodies “front”"
-former_names = ["13x23mm Shock bodies “front”"]
+name = "Shock Bodies, 13x23mm"
+former_names = ["13x23mm Shock Bodies “front”", "13x23mm Shock bodies “front”"]
 category = "shock"
 shock_part = "body"
 bore_mm = 13
 length_mm = 23
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/shock-bodies-13x23mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b6", type = "direct", source = "doc/team-associated/90035-page" },
+  { kit = "kit/team-associated/rc10b7", type = "direct", source = "doc/team-associated/90047-page" },
+  { kit = "kit/team-associated/rc10b74", type = "direct", source = "doc/team-associated/90045-page" },
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/90059-page" },
+]

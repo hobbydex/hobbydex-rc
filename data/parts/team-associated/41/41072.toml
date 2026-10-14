@@ -1,0 +1,15 @@
+id = "part/team-associated/41072"
+brand = "brand/team-associated"
+number = "41072"
+name = "Screws, M2x10 mm BHCS"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2x10-mm-bhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10-pickup-truck", type = "direct", source = "doc/team-associated/40015-page" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

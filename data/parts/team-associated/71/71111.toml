@@ -1,5 +1,14 @@
 id = "part/team-associated/71111"
 brand = "brand/team-associated"
 number = "71111"
-name = "Front Axle, 8.5mm"
+name = "Front Axles, 8.50 mm"
+former_names = ["Front Axle, 8.5mm"]
 category = "drivetrain"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/front-axles-8-50-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/dc10", type = "direct", source = "doc/team-associated/30134-page" },
+  { kit = "kit/team-associated/rc10sc7", type = "direct", source = "doc/team-associated/70010-page" },
+  { kit = "kit/team-associated/rc10t7", type = "direct", source = "doc/team-associated/70005-page" },
+]

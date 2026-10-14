@@ -1,8 +1,15 @@
 id = "part/team-associated/81611"
 brand = "brand/team-associated"
 number = "81611"
-name = "TiN Shock Shaft, 3.5x44.5mm (Rear)"
+name = "3.5x44.5mm TiN Shock Shafts"
+former_names = ["TiN Shock Shaft, 3.5x44.5mm (Rear)"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3.5
 length_mm = 44.5
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3-5x44-5mm-tin-shock-shafts/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/80958-page" },
+]
