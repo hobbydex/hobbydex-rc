@@ -1,6 +1,14 @@
 id = "part/hpi/108023"
 brand = "brand/hpi"
 number = "108023"
-name = "ALUMINUM FRONT BRACE (HARD"
+name = "ALUMINUM FRONT BRACE (HARD ANODIZED)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/108023" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101210" },
+  { kit = "kit/hpi/bullet-st", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101210" },
+  { kit = "kit/hpi/wr8", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101210" },
+]
 category = "chassis"
 material = "aluminium"

@@ -1,7 +1,13 @@
 id = "part/hpi/160140"
 brand = "brand/hpi"
 number = "160140"
-name = "Savage X 17mm Hex Hub"
+name = "Savage X 17mm Hex Hub Conversion Set"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160140" },
+]
+fits = [
+  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "suspension"
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },

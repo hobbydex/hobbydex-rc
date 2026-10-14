@@ -1,6 +1,16 @@
 id = "part/hpi/160864"
 brand = "brand/hpi"
 number = "160864"
-name = "Oil-Filled Shock Set V2"
+name = "Oil-Filled Shock Set V2 (Assembled/4pcs)"
+pack_qty = 4
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160864" },
+]
+fits = [
+  { kit = "kit/hpi/mini-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "shock"
 shock_part = "complete"

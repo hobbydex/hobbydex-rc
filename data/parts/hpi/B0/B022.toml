@@ -3,6 +3,30 @@ brand = "brand/hpi"
 number = "B022"
 name = "BALL BEARING 5x11x4mm"
 pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/B022" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/crawler-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-savage", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/micro-rs4", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/mini-trophy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/monster-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-mt2", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rush", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-pro-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

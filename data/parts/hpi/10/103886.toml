@@ -1,5 +1,14 @@
 id = "part/hpi/103886"
 brand = "brand/hpi"
 number = "103886"
-name = "NISSAN 350Z HANKOOK BODY"
+name = "NISSAN 350Z HANKOOK BODY (200mm)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103886" },
+]
+fits = [
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/sprint-2", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "body"

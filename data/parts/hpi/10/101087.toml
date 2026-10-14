@@ -2,5 +2,16 @@ id = "part/hpi/101087"
 brand = "brand/hpi"
 number = "101087"
 name = "STEEL DIFFERENTIAL GEAR SET"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/101087" },
+]
+fits = [
+  { kit = "kit/hpi/trophy-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/trophy-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "replaces", replaces = "part/hpi/101142", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/vorza-truggy", type = "replaces", replaces = "part/hpi/101142", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
 category = "differential"
 material = "steel"

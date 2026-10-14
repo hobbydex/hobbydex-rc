@@ -1,5 +1,13 @@
 id = "part/hpi/161445"
 brand = "brand/hpi"
 number = "161445"
-name = "Comp Crawler Chassis Plate Set"
+name = "Comp Crawler Chassis Plate Set (Carbon Fiber)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161445" },
+]
+fits = [
+  { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-cc", type = "replaces", replaces = "part/hpi/161110", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
 category = "chassis"
+material = "carbon"

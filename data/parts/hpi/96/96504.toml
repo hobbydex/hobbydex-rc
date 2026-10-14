@@ -3,6 +3,15 @@ brand = "brand/hpi"
 number = "96504"
 name = "PIN 4x24mm"
 pack_qty = 6
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/96504" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5r", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/4x24", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },

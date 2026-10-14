@@ -2,6 +2,14 @@ id = "part/hpi/160878"
 brand = "brand/hpi"
 number = "160878"
 name = "Pinion Gear 11T (0.4M / 2mm)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160878" },
+]
+fits = [
+  { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/pinion/mod0.4-11t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]

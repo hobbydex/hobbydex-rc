@@ -2,6 +2,17 @@ id = "part/hpi/Z579"
 brand = "brand/hpi"
 number = "Z579"
 name = "TP. FLAT HEAD SCREW M3x15mm"
+pack_qty = 12
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z579" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/bullet-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-savage", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/formula-ten", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/mini-trophy", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x15-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

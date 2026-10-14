@@ -1,6 +1,14 @@
 id = "part/hpi/108078"
 brand = "brand/hpi"
 number = "108078"
-name = "ALUMINUM KNUCKLE SET (HARD"
+name = "ALUMINUM KNUCKLE SET (HARD ANODIZED)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/108078" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101208" },
+  { kit = "kit/hpi/bullet-st", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101208" },
+  { kit = "kit/hpi/wr8", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101208" },
+]
 category = "suspension"
 material = "aluminium"

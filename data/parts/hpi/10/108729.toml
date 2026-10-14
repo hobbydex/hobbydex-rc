@@ -1,6 +1,17 @@
 id = "part/hpi/108729"
 brand = "brand/hpi"
 number = "108729"
-name = "HEAVY-DUTY PINION GEAR 16T"
+name = "HEAVY-DUTY PINION GEAR 16T (8mm BORE/1.5M)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/108729" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "pinion"
 teeth = 16
+equivalent_to = [
+  { spec = "spec/pinion/mod1.5-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 8
+module = 1.5
