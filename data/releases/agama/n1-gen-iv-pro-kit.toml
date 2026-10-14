@@ -5,7 +5,10 @@ name = "N1 Gen IV Pro Kit"
 kind = "kit"
 status = "released"
 notes = "The kit the manual builds (cover: \"GEN IV PRO KIT\"). Contents: the part numbers the build steps print, read by OCR; counts not read."
-documents = ["doc/agama/n1-manual", "doc/agama/n1-setup-sheet", "doc/agama/n1-exploded-view"]
+documents = ["doc/agama/agama-rc-com", "doc/agama/n1-manual", "doc/agama/n1-setup-sheet", "doc/agama/n1-exploded-view"]
+links = [
+  { site = "Agama Racing", url = "https://agama-rc.com/products/category/17/1" },
+]
 contains = [
   { part = "part/agama/SJG4312", role = "kit", step = "Bag A - Step A-3; Bag A - Step A-6; Bag A - Step A-9; Bag L - Step L-1", source = "doc/agama/n1-manual" },
   { part = "part/agama/8056", role = "kit", step = "Bag A - Step A-1; Bag A - Step A-2; Bag A - Step A-4; Bag A - Step A-7", source = "doc/agama/n1-manual" },

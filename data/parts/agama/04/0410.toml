@@ -3,6 +3,9 @@ brand = "brand/agama"
 number = "0410"
 name = "4mm nuts"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
 applies_to = "allseries; A215, A215e, A215SV, A215T, A319, A319E, A8FR CUP, N1, N1e, N2, N2e"
 fits = [
   { kit = "kit/agama/a215t", type = "direct", source = "doc/agama/nemoracing-com" },
@@ -13,8 +16,6 @@ fits = [
 ]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
+  { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=0410" },
   { site = "Nemo Racing", url = "https://www.nemoracing.com/products/0410-4mm-nuts" },
-]
-equivalent_to = [
-  { spec = "spec/nut/m4-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
