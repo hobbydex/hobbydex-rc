@@ -37,6 +37,10 @@ forums and search engines link to those pages. So:
   part) goes in data/retired.toml with a `reason` and, when there is one, a
   `replaced_by`.
 
+A kit or release that changes id takes its art file along (art/ follows the
+id, see "Art" below); the validator reports art left at the old name as an
+orphan.
+
 The validator rejects a former or retired id that is live again or claimed
 twice, and CI runs tools/check_ids.py, which fails a change that drops an id
 without either trace.
@@ -691,12 +695,38 @@ statement = "The FTX Vantage and the Quanum Vandal are the same car; ..."
 basis = "Owner of both cars"
 ```
 
+## Art
+
+A kit or release may have an outline of its own: a flat silhouette traced
+from the maker's photos, drawn by us.
+
+```
+art/kits/<brand>/<slug>.svg         for kit/<brand>/<slug>
+art/releases/<brand>/<key>.svg      for release/<brand>/<key> (a body that differs from the kit's)
+```
+
+The file name is the id's last part exactly (same case). Each file is one line:
+
+```
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24"><path d="M..."/></svg>
+```
+
+One or more `<path>` elements with only a `d` that starts with an absolute
+`M`; no fill, style, class, transform or title, at most 4 KB. The front of
+the car faces left. The site sets the fill from the release's colours.
+
+The export gives such a kit or release `art`: the path data of its file
+(the `d` attributes joined with a space), to be drawn in a `0 0 48 24`
+viewBox. The site draws a release with its own art, else its kit's, else the
+kit type's icon.
+
 ## Conventions
 
 - Brand attribution of HUDY items inside XRAY lists is a heuristic in the
   importer (name starts with HUDY, or number in the 1xxxxx/2xxxxx HUDY ranges).
 - Dates are ISO `YYYY-MM-DD`. Document dates come from the PDF metadata.
-- No prices, stock, images or copied text.
+- No prices, stock, images or copied text. (The outlines in art/ are our own
+  drawings, not the maker's images.)
 
 ## Tools
 

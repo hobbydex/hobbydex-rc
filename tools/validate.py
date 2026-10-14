@@ -1,16 +1,21 @@
 """Validate every TOML file under data/.
 
 Checks: file parses, the file is where tools/layout.py puts its id, required
-fields per entity kind, every reference resolves, no duplicate ids. Exit code 1
-on any error.
+fields per entity kind, every reference resolves, no duplicate ids. Also the
+art under art/ (see check_art). Exit code 1 on any error.
 
 Run from the repo root: python3 -I tools/validate.py
 """
 import datetime, os, re, sys, tomllib
+import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from layout import DIRS, path_for
+from layout import ART_KINDS, DIRS, art_path, path_for
 
 ROOT = "data"
+ART_ROOT = "art"
+ART_MAX = 4096   # bytes per art file
+SVG_NS = "http://www.w3.org/2000/svg"
+PATH_DATA = re.compile(r"[MmLlHhVvCcSsQqTtAaZz0-9.,+\-eE ]+")
 REQUIRED = {
     "brand": ["id", "name", "status"],
     "kit": ["id", "brand", "name", "category"],
@@ -87,6 +92,75 @@ def categories():
     """Part categories are the files in data/categories (category/<slug>)."""
     d = os.path.join(ROOT, "categories")
     return {f[:-5] for f in os.listdir(d) if f.endswith(".toml")} if os.path.isdir(d) else set()
+
+def check_art(ids, errors):
+    """art/<kits|releases>/<brand>/<key>.svg: our own outline of a kit or release, drawn by the site in its
+    colours. One line: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24"> with one or more
+    <path d="..."/> and nothing else (no fill, style, transform, class or title), at most ART_MAX bytes,
+    named after a kit or release that exists. Returns the number of art files."""
+    lower = {i.lower(): i for i in ids if isinstance(i, str)}
+    dirs = {DIRS[k]: k for k in ART_KINDS}
+    n = 0
+    for dirpath, _, files in os.walk(ART_ROOT):
+        for fn in sorted(files):
+            path = os.path.join(dirpath, fn)
+            parts = os.path.relpath(path, ART_ROOT).split(os.sep)
+            if len(parts) != 3 or parts[0] not in dirs or not fn.endswith(".svg"):
+                errors.append(f"{path}: art goes in {ART_ROOT}/kits/<brand>/<slug>.svg or {ART_ROOT}/releases/<brand>/<key>.svg")
+                continue
+            n += 1
+            eid = f"{dirs[parts[0]]}/{parts[1]}/{fn[:-4]}"
+            if os.path.normpath(art_path(eid, ART_ROOT)) != os.path.normpath(path):
+                errors.append(f"{path}: art for {eid} belongs at {art_path(eid, ART_ROOT)}")
+            if eid not in ids:
+                hint = f" (the id is {lower[eid.lower()]}: names match the id exactly)" if eid.lower() in lower else ""
+                errors.append(f"{path}: orphan art, no {eid}{hint}")
+            elif parts[1] != parts[1].lower():
+                errors.append(f"{path}: brand directory must be lowercase")
+            size = os.path.getsize(path)
+            if size > ART_MAX:
+                errors.append(f"{path}: {size} bytes, art is at most {ART_MAX}")
+                continue
+            with open(path, "rb") as f:
+                raw = f.read()
+            text = raw.decode("utf-8", "replace")
+            if not text.startswith("<svg") or "\n" in text.rstrip("\n") or "\r" in text:
+                errors.append(f"{path}: art is one line starting with <svg (no XML declaration, doctype or line breaks)")
+                continue
+            try:
+                root = ET.fromstring(raw)
+            except ET.ParseError as e:
+                errors.append(f"{path}: not well-formed XML: {e}")
+                continue
+            if root.tag != f"{{{SVG_NS}}}svg":
+                errors.append(f"{path}: root must be <svg xmlns=\"{SVG_NS}\">, got {root.tag}")
+                continue
+            if root.get("viewBox") != "0 0 48 24":
+                errors.append(f"{path}: viewBox must be \"0 0 48 24\", got {root.get('viewBox')!r}")
+            extra = sorted(set(root.attrib) - {"viewBox"})
+            if extra:
+                errors.append(f"{path}: <svg> takes only xmlns and viewBox, not {', '.join(extra)}")
+            if (root.text or "").strip():
+                errors.append(f"{path}: text inside <svg>")
+            if not len(root):
+                errors.append(f"{path}: no <path>")
+            for el in root:
+                tag = el.tag.split("}")[-1]
+                if el.tag != f"{{{SVG_NS}}}path":
+                    errors.append(f"{path}: only <path> elements, found <{tag}>")
+                    continue
+                if not el.get("d"):
+                    errors.append(f"{path}: <path> without d")
+                elif not PATH_DATA.fullmatch(el.get("d")):
+                    errors.append(f"{path}: <path> d holds characters that are not path data")
+                elif not el.get("d").lstrip().startswith("M"):
+                    errors.append(f"{path}: <path> d must start with an absolute M (the export joins the paths into one)")
+                extra = sorted(set(el.attrib) - {"d"})
+                if extra:
+                    errors.append(f"{path}: <path> takes only d (the site sets the fill), not {', '.join(extra)}")
+                if len(el) or (el.text or "").strip() or (el.tail or "").strip():
+                    errors.append(f"{path}: <path> must be empty")
+    return n
 
 def main():
     ENUMS["part.category"] = categories()
@@ -275,6 +349,7 @@ def main():
     counts = {}
     for _, kind, _ in docs:
         counts[kind] = counts.get(kind, 0) + 1
+    counts["art"] = check_art(ids, errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:
         print(f"{len(errors)} error(s):")
