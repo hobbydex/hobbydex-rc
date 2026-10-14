@@ -20,7 +20,7 @@ REQUIRED = {
     "brand": ["id", "name", "status"],
     "kit": ["id", "brand", "name", "category"],
     "release": ["id", "kit", "brand", "name", "kind", "status"],   # year: optional, left out when unknown
-    "part": ["id", "brand", "number", "name"],
+    "part": ["id", "brand", "name"],   # number: required unless the brand has item_numbers = false
     "spec": ["id", "category"],
     "doc": ["id", "kind", "title"],
     "shop": ["id", "name", "status"],
@@ -225,6 +225,7 @@ def main():
                 if r.get("replaced_by") and r["replaced_by"] not in ids:
                     errors.append(f"{retired_path}: {rid} replaced_by {r['replaced_by']} does not exist")
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
+    no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     for path, kind, d in docs:
         def check_ref(field, value, where):
             prefix = REFS.get(field)
@@ -344,7 +345,12 @@ def main():
                     errors.append(f"{path}: key_fields compare_only must be true or false")
                 elif kf["from"] == "spec" and not d.get("spec_type"):
                     errors.append(f"{path}: key field {kf['field']} comes from the spec, but the category names no spec")
-        if kind == "part" and not re.match(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$", str(d.get("number", ""))):
+        if kind == "brand" and not isinstance(d.get("item_numbers", True), bool):
+            errors.append(f"{path}: item_numbers must be true or false")
+        if kind == "part" and "number" not in d:
+            if not no_numbers.get(d.get("brand")):
+                errors.append(f"{path}: missing required field number (only parts of a brand with item_numbers = false go without)")
+        elif kind == "part" and not re.match(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$", str(d.get("number", ""))):
             errors.append(f"{path}: odd part number {d.get('number')!r}")
     counts = {}
     for _, kind, _ in docs:

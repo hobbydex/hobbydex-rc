@@ -11,7 +11,7 @@ read the tree directly; they read the export (`tools/export.py`).
 | brand | `data/brands/<brand>.toml` | id, name, status |
 | kit | `data/kits/<brand>/<slug>.toml` | id, brand, name, category |
 | release | `data/releases/<brand>/<number-or-slug>.toml` | id, kit, brand, name, kind, status (`year` optional: left out when unknown) |
-| part | `data/parts/<brand>/<prefix>/<number>.toml` | id, brand, number, name |
+| part | `data/parts/<brand>/<prefix>/<number>.toml` | id, brand, number (unless the brand has `item_numbers = false`), name |
 | doc | `data/documents/<brand>/<slug>.toml` | id, kind, title |
 | spec | `data/specs/<category>/<slug>.toml` | id, category |
 | category | `data/categories/<slug>.toml` | id, name |
@@ -57,6 +57,12 @@ kind = "manufacturer"                    # manufacturer | aftermarket | designer
 status = "active"                        # active | dormant | gone
 notes = "..."
 ```
+
+`item_numbers = false` marks a maker that prints no item numbers (Acer
+Racing): its parts leave out `number`, and the id's last segment is a slug
+from the source (the store's product handle) instead. The site then shows no
+number and builds the part URL from that slug. Left out, it means true and
+every part of the brand needs a `number`.
 
 ## kit
 
@@ -161,6 +167,10 @@ name = "COMPOSITE STEERING BLOCK - MEDIUM - V2"
 pack_qty = 2
 former_names = ["COMPOSITE STEERING BLOCK"]
 ```
+
+A part of a brand with `item_numbers = false` has no `number`: never put a
+store handle or SKU there to fill it. Its id keeps a slug
+(`part/acer-racing/bandit-ball-bearing-kit`), which also names its file.
 
 Optional, generated when the source states it: `released`, the date the
 brand lists the part as released, `YYYY-MM-DD` or `YYYY-MM` (HUDY's product

@@ -24,7 +24,7 @@ def load():
     out = collections.defaultdict(list)
     for dirpath, _, files in os.walk(ROOT):
         for fn in files:
-            if fn.endswith(".toml"):
+            if fn.endswith(".toml") and fn != "retired.toml":
                 with open(os.path.join(dirpath, fn), "rb") as f:
                     d = tomllib.load(f)
                 out[d["id"].split("/", 1)[0]].append(d)
@@ -37,11 +37,11 @@ def checks(db):
     linked = {e["spec"] for p in db["part"] for e in p.get("equivalent_to", [])}
     for p in db["part"]:
         name, notes = p["name"], p.get("notes", "")
-        if name == p["number"]:
+        if name == p.get("number"):
             yield "unnamed", p
         elif re.search(r"\bOCR\b", notes):
             yield "ocr", p
-        if name != p["number"] and not p.get("category"):
+        if name != p.get("number") and not p.get("category"):
             yield "uncategorised", p
         specs = [e["spec"] for e in p.get("equivalent_to", [])]
         n = name.lower()
