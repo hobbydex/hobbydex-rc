@@ -1,0 +1,18 @@
+id = "release/wpl/D22-RTR-R"
+kit = "kit/wpl/d22"
+brand = "brand/wpl"
+number = "D22-RTR-R"
+name = "D22 RTR, red"
+kind = "rtr"
+status = "released"
+color = "red"
+notes = "Release year unknown; D22 in WPL's store (read 2026-10-14)"
+links = [
+  { site = "WPL RC", url = "https://www.wpl-rc.com/products/d22-rtr" },
+]
+contains = [
+  { part = "part/wpl/3x-1s500m", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/A044", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/PB-RMA-B", role = "option", source = "doc/wpl/store" },
+]
+documents = ["doc/wpl/store"]

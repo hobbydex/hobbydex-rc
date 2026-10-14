@@ -1,0 +1,20 @@
+id = "release/wpl/C64-1-RTR-G"
+kit = "kit/wpl/c64"
+brand = "brand/wpl"
+number = "C64-1-RTR-G"
+name = "C64-1 RTR Green"
+kind = "rtr"
+status = "released"
+year = 2024
+notes = "Year from the store's C64-1 page: \"First New Release of 2024\"; C64-1 in WPL's store (read 2026-10-14)"
+links = [
+  { site = "WPL RC", url = "https://www.wpl-rc.com/products/c64-1-rtr-green" },
+]
+contains = [
+  { part = "part/wpl/A049", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11025", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11026", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11027", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11028", role = "listed", source = "doc/wpl/store" },
+]
+documents = ["doc/wpl/wpl-c64-c64-1-manual-eng-040624", "doc/wpl/store"]

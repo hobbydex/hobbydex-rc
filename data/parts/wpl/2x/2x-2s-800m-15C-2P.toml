@@ -1,0 +1,16 @@
+id = "part/wpl/2x-2s-800m-15C-2P"
+brand = "brand/wpl"
+number = "2x-2s-800m-15C-2P"
+name = "2S 7.4V 800mAh 15C LiPo Battery"
+pack_qty = 2
+links = [
+  { site = "WPL RC", url = "https://www.wpl-rc.com/products/2pcs-2s-7-4v-800mah-15c-lipo-battery" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 800
+c_rating = 15
+category = "battery"

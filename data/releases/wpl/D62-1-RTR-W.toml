@@ -1,0 +1,22 @@
+id = "release/wpl/D62-1-RTR-W"
+kit = "kit/wpl/d62"
+brand = "brand/wpl"
+number = "D62-1-RTR-W"
+name = "D62-1 RTR"
+kind = "rtr"
+status = "released"
+notes = "Release year unknown; D62-1 in WPL's store (read 2026-10-14)"
+links = [
+  { site = "WPL RC", url = "https://www.wpl-rc.com/products/d62-1-rtr" },
+]
+contains = [
+  { part = "part/wpl/2x-ABC040-4P", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/A040", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/A041", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/A042", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/ABC044", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11021", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11031", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/PB-RMA-A", role = "option", source = "doc/wpl/store" },
+]
+documents = ["doc/wpl/store"]

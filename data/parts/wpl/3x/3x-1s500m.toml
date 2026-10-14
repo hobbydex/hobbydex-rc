@@ -1,0 +1,17 @@
+id = "part/wpl/3x-1s500m"
+brand = "brand/wpl"
+number = "3x-1s500m"
+name = "1s 500mAh 14500 Li-Ion battery for D12 D22 D32 Mini"
+pack_qty = 3
+links = [
+  { site = "WPL RC", url = "https://www.wpl-rc.com/products/3pcs-1s-500mah-14500-li-ion-battery-for-d12-d22-d32-mini" },
+]
+fits = [
+  { kit = "kit/wpl/d12", type = "direct", source = "doc/wpl/store" },
+  { kit = "kit/wpl/d12-mini", type = "direct", source = "doc/wpl/store" },
+  { kit = "kit/wpl/d22", type = "direct", source = "doc/wpl/store" },
+  { kit = "kit/wpl/d32", type = "direct", source = "doc/wpl/store" },
+]
+category = "battery"
+category_source = "curated"
+notes = "Li-ion cells (14500/18650); the schema has no li-ion battery chemistry, so no battery spec"
