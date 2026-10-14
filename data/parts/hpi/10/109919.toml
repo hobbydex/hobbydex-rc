@@ -1,7 +1,14 @@
 id = "part/hpi/109919"
 brand = "brand/hpi"
 number = "109919"
-name = "FLAT HEAD SCREW M6x12mm (HEX"
+name = "FLAT HEAD SCREW M6x12mm (HEX SOCKET/6pcs)"
+pack_qty = 6
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/109919" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m6x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

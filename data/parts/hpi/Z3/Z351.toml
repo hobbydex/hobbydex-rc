@@ -1,7 +1,19 @@
 id = "part/hpi/Z351"
 brand = "brand/hpi"
 number = "Z351"
-name = "BUTTON HEAD SCREW M3x6mm (HEX"
+name = "BUTTON HEAD SCREW M3x6mm (HEX SOCKET/10pcs)"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z351" },
+]
+fits = [
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/stage-d10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

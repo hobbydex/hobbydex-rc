@@ -1,7 +1,17 @@
 id = "part/hpi/67687"
 brand = "brand/hpi"
 number = "67687"
-name = "Powerpin 2.2\" MT Tire"
+name = "Powerpin 2.2\" MT Tire (White/2pcs)"
+pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/67687" },
+]
+fits = [
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "tire"
 wheel_size = "2.2\""
 vehicle = "monster"

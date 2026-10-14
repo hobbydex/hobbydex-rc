@@ -3,5 +3,14 @@ brand = "brand/hpi"
 number = "86405"
 name = "BALL 6.8x7mm"
 pack_qty = 4
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86405" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5r", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "ball-end"
 ball_mm = 6.8

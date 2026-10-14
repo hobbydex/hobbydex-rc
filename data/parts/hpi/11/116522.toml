@@ -3,5 +3,12 @@ brand = "brand/hpi"
 number = "116522"
 name = "JUMP SC TIRE"
 pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/116522" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "tire"
 vehicle = "short-course"

@@ -1,5 +1,17 @@
 id = "part/hpi/160283"
 brand = "brand/hpi"
 number = "160283"
-name = "CAP HEAD SCREW"
+name = "CAP HEAD SCREW COUNTERCLOCKWISE M3X20MM"
+pack_qty = 6
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160283" },
+]
+fits = [
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

@@ -3,6 +3,13 @@ brand = "brand/hpi"
 number = "161199"
 name = "M3x3mm Set Screw"
 pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161199" },
+]
+fits = [
+  { kit = "kit/hpi/mini-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/stage-d10", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

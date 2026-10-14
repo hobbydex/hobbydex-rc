@@ -1,5 +1,20 @@
 id = "part/hpi/B045"
 brand = "brand/hpi"
 number = "B045"
-name = "STEERING UPGRADE SET (6x10x3mm"
+name = "STEERING UPGRADE SET (6x10x3mm BALL BEARING/4pcs)"
+pack_qty = 4
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/B045" },
+]
+fits = [
+  { kit = "kit/hpi/savage", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85058" },
+  { kit = "kit/hpi/savage-atv", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85058" },
+  { kit = "kit/hpi/savage-flux", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85058" },
+  { kit = "kit/hpi/savage-x", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85058" },
+  { kit = "kit/hpi/savage-xl", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85058" },
+  { kit = "kit/hpi/trophy-buggy", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85058" },
+  { kit = "kit/hpi/trophy-truggy", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85058" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "steering"

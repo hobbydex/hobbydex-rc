@@ -2,4 +2,14 @@ id = "part/hpi/107446"
 brand = "brand/hpi"
 number = "107446"
 name = "SHOCK GUARD SET"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/107446" },
+]
+fits = [
+  { kit = "kit/hpi/apache-c1", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/67351" },
+  { kit = "kit/hpi/apache-sc", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/67351" },
+  { kit = "kit/hpi/d8s", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/67351" },
+  { kit = "kit/hpi/vorza-buggy", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/67351" },
+  { kit = "kit/hpi/vorza-truggy", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/67351" },
+]
 category = "shock"

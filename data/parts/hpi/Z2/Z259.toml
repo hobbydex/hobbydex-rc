@@ -3,6 +3,14 @@ brand = "brand/hpi"
 number = "Z259"
 name = "PIN 2.5X15MM"
 pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z259" },
+]
+fits = [
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/2.5x15", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },

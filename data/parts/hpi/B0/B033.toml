@@ -3,6 +3,14 @@ brand = "brand/hpi"
 number = "B033"
 name = "BALL BEARING 12x18x4mm"
 pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/B033" },
+]
+fits = [
+  { kit = "kit/hpi/brama-10b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/r40", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

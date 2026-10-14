@@ -1,6 +1,15 @@
 id = "part/hpi/86700"
 brand = "brand/hpi"
 number = "86700"
-name = "ALUMINUM AIR FILTER MAINTENANCE"
+name = "ALUMINUM AIR FILTER MAINTENANCE CAP (ORANGE)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86700" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/15411" },
+  { kit = "kit/hpi/baja-5r", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/15411" },
+  { kit = "kit/hpi/baja-5sc", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/15411" },
+  { kit = "kit/hpi/baja-5t", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/15411" },
+]
 category = "engine-fuel"
 material = "aluminium"
