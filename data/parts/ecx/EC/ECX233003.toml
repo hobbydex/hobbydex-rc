@@ -4,8 +4,13 @@ number = "ECX233003"
 name = "Shock Spring, Black, Set"
 pack_qty = 4
 applies_to = "1/10 4WD All"
-color = "black"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-shock-spring-black-set-4-1-10-4wd-all/ECX233003.html" },
 ]
+color = "black"
 category = "shock-spring"
+gtin = "605482117057"
+fits = [
+  { kit = "kit/ecx/ruckus-4wd", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/torment-4wd", type = "direct", source = "doc/ecx/horizon-part-pages" },
+]

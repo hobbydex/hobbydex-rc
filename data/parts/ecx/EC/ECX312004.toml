@@ -8,10 +8,12 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-12mm-wheel-hex-aluminum-4-1-18-4wd-temper/ECX312004.html" },
 ]
 fits = [
-  { kit = "kit/ecx/temper", type = "direct", source = "doc/ecx/horizon-product-catalogue" },
+  { kit = "kit/ecx/temper", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/temper", type = "replaces", replaces = "part/ecx/ECX212017", source = "doc/ecx/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
 category = "drivetrain"
 material = "aluminium"
+gtin = "605482594087"

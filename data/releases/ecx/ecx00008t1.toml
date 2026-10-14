@@ -5,5 +5,13 @@ number = "ECX00008T1"
 name = "Micro Ruckus 2WD Monster Truck RTR, blue"
 kind = "rtr"
 status = "discontinued"
-color = "blue"
 documents = ["doc/ecx/ecx00007-ecx00008-manual-en", "doc/ecx/ecx00008-product-page"]
+contains = [
+  { part = "part/ecx/ECX10017", role = "kit", source = "doc/ecx/ecx00007-ecx00008-manual-en" },
+  { part = "part/ecx/ECX201018", role = "kit", source = "doc/ecx/ecx00007-ecx00008-manual-en" },
+  { part = "part/ecx/ECX201019", role = "kit", source = "doc/ecx/ecx00007-ecx00008-manual-en" },
+  { part = "part/ecx/ECX00007", role = "listed", source = "doc/ecx/ecx00007-ecx00008-manual-en" },
+  { part = "part/ecx/ECX00008", role = "listed", source = "doc/ecx/ecx00007-ecx00008-manual-en" },
+  { part = "part/ecx/ECX100017", role = "listed", source = "doc/ecx/ecx00007-ecx00008-manual-en" },
+]
+color = "blue"

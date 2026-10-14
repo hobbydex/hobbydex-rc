@@ -2,11 +2,17 @@ id = "part/tlr/TLR75005"
 brand = "brand/tlr"
 number = "TLR75005"
 name = "Silicone Diff Fluid, 12,500CS"
-former_names = ["Silicone Differential Fluid"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-silicone-diff-fluid-12500cs/TLR75005.html" },
 ]
+former_names = ["Silicone Differential Fluid"]
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-12500cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]
+gtin = "605482367285"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
 ]

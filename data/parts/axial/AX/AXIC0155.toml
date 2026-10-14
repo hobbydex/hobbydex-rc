@@ -10,3 +10,9 @@ category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 59.5
+gtin = "877493007065"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+]

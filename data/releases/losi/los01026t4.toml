@@ -6,8 +6,8 @@ name = "Mini LMT Zombie 2S 4X4 RTR Brushed Monster Truck (Battery & Charger Incl
 kind = "rtr"
 status = "released"
 gtin = "660132655372"
-color = "red"
 documents = ["doc/losi/los01026t4-exploded-view", "doc/losi/los01026t4-manual-ml", "doc/losi/los01026t4-product-page", "doc/losi/los01026t4-quickstart-guide", "doc/losi/los01026t4-slip-sheet"]
+color = "red"
 contains = [
   { part = "part/axial/AXI235097", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/losi/LOS-1821", role = "kit", source = "doc/losi/horizon-part-pages" },
@@ -115,14 +115,14 @@ contains = [
   { part = "part/spektrum/SPMXSEM0500", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/tlr/TLR245008", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/tlr/TLR245011", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
-  { part = "part/tlr/TLR245016", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
+  { part = "part/tlr/TLR245016", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/tlr/TLR255003", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/tlr/TLR313003", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/tlr/TLR314009", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/tlr/TLR314010", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
-  { part = "part/tlr/TLR74000", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
-  { part = "part/tlr/TLR74002", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
-  { part = "part/tlr/TLR74004", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
+  { part = "part/tlr/TLR5913", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR5914", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
+  { part = "part/tlr/TLR5960", role = "kit", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/losi/LOS210044", role = "option", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/losi/LOS210045", role = "option", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/losi/LOS210046", role = "option", source = "doc/losi/los01026t4-exploded-view" },
@@ -143,6 +143,9 @@ contains = [
   { part = "part/losi/LOS312009", role = "option", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/losi/LOS314006", role = "option", source = "doc/losi/los01026t4-exploded-view" },
   { part = "part/losi/LOS314007", role = "option", source = "doc/losi/los01026t4-exploded-view" },
+  { part = "part/tlr/TLR74000", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/tlr/TLR74001", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR74002", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/tlr/TLR74003", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR74004", role = "option", source = "doc/losi/horizon-part-pages" },
 ]

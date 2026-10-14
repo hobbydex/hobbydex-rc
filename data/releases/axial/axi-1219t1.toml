@@ -6,8 +6,8 @@ name = "SCX24 Base Camp 4X4 RTR Brushed Rock Crawler (Battery & Charger Included
 kind = "rtr"
 status = "released"
 gtin = "660132893811"
-color = "white"
 documents = ["doc/axial/axi-1219-exploded-view", "doc/axial/axi-1219-manual-ml", "doc/axial/axi-1219-product-page"]
+color = "white"
 contains = [
   { part = "part/axial/AXI-1535", role = "kit", source = "doc/axial/axi-1219-exploded-view" },
   { part = "part/axial/AXI-1536", role = "kit", source = "doc/axial/axi-1219-exploded-view" },
@@ -26,10 +26,13 @@ contains = [
   { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/axial/axi-1219-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz Transmitter" },
   { part = "part/spektrum/SPMX3502S30", role = "kit", source = "doc/axial/axi-1219-exploded-view" },
   { part = "part/spektrum/SPMXSE2425RX", role = "kit", source = "doc/axial/axi-1219-exploded-view" },
+  { part = "part/axial/AXI302001", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI31567", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI40003", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI40005", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI203002", role = "listed", source = "doc/axial/axi-1219-manual-ml" },
   { part = "part/axial/AXI203003", role = "listed", source = "doc/axial/axi-1219-manual-ml" },
   { part = "part/axial/AXI206000", role = "listed", source = "doc/axial/axi-1219-manual-ml" },
-  { part = "part/axial/AXI302001", role = "listed", source = "doc/axial/axi-1219-manual-ml" },
   { part = "part/axial/AXI302002", role = "listed", source = "doc/axial/axi-1219-manual-ml" },
   { part = "part/axial/AXI302003", role = "listed", source = "doc/axial/axi-1219-manual-ml" },
   { part = "part/axial/AXI302004", role = "listed", source = "doc/axial/axi-1219-manual-ml" },

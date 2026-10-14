@@ -6,10 +6,11 @@ name = "SCX10 III Base Camp 4X4 RTR Brushed Rock Crawler, gray"
 kind = "rtr"
 status = "released"
 gtin = "660132934866"
-color = "gray"
 documents = ["doc/axial/axi-1375-exploded-view", "doc/axial/axi-1375-manual-en", "doc/axial/axi-1375-product-page"]
+color = "gray"
 contains = [
   { part = "part/axial/AXI-1376", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI-1486", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-2063", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-2064", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-2065", role = "kit", source = "doc/axial/horizon-part-pages" },
@@ -62,7 +63,6 @@ contains = [
   { part = "part/spektrum/SPMSR515", role = "kit", source = "doc/axial/axi-1375-exploded-view" },
   { part = "part/spektrum/SPMXSE1040", role = "kit", source = "doc/axial/axi-1375-exploded-view" },
   { part = "part/axial/AXI238001", role = "option", source = "doc/axial/horizon-part-pages" },
-  { part = "part/axial/AXI-1486", role = "listed", source = "doc/axial/axi-1375-exploded-view" },
   { part = "part/axial/AXI-1487", role = "listed", source = "doc/axial/axi-1375-exploded-view" },
   { part = "part/axial/AXI-1488", role = "listed", source = "doc/axial/axi-1375-exploded-view" },
   { part = "part/axial/AXI-2066", role = "listed", source = "doc/axial/axi-1375-exploded-view" },

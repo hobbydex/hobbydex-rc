@@ -7,3 +7,7 @@ kind = "rtr"
 status = "discontinued"
 gtin = "816874013189"
 documents = ["doc/axial/axid9032-product-page"]
+contains = [
+  { part = "part/axial/AXIC1019", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC1029", role = "kit", source = "doc/axial/horizon-part-pages" },
+]

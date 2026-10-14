@@ -8,7 +8,14 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-steering-spindle-aluminum-2-1.9-barrage-kit-rtr-doomsday/ECX314005.html" },
 ]
 fits = [
-  { kit = "kit/ecx/barrage", type = "direct", source = "doc/ecx/horizon-product-catalogue" },
+  { kit = "kit/ecx/barrage", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/barrage-1-55", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/temper", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/barrage", type = "replaces", replaces = "part/ecx/ECX212027", source = "doc/ecx/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/ecx/barrage-1-55", type = "replaces", replaces = "part/ecx/ECX212027", source = "doc/ecx/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/ecx/temper", type = "replaces", replaces = "part/ecx/ECX212027", source = "doc/ecx/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/ecx/temper", type = "replaces", replaces = "part/ecx/ECX214005", source = "doc/ecx/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "steering"
 material = "aluminium"
+gtin = "605482128572"

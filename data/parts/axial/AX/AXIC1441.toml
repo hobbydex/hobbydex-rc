@@ -3,8 +3,16 @@ brand = "brand/axial"
 number = "AXIC1441"
 name = "Spring 12.5x60mm 1.13lbs in White"
 pack_qty = 2
-color = "white"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-spring-12.5x60mm-1.13lbs-in-white-2/AXIC1441.html" },
 ]
+color = "white"
 category = "shock-spring"
+gtin = "816874016227"
+fits = [
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti-jr", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
+rate_lb_in = 1.13
+range = "axial/spring-x-in-rate-springs"

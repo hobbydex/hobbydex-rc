@@ -8,6 +8,8 @@ status = "discontinued"
 gtin = "605482689325"
 documents = ["doc/axial/axi03007-manual-ml", "doc/axial/axi03007-parts-list-and-exploded-view-ml", "doc/axial/axi03007-product-page"]
 contains = [
+  { part = "part/axial/AXI230017", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI231010", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI231015", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI231016", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI231017", role = "kit", source = "doc/axial/horizon-part-pages" },
@@ -20,11 +22,14 @@ contains = [
   { part = "part/axial/AXI232023", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI232027", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI232028", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI232029", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI233003", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI233011", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI233015", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI234003", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI234004", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI234010", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI234014", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI235014", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI235099", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI235109", role = "kit", source = "doc/axial/horizon-part-pages" },
@@ -53,6 +58,7 @@ contains = [
   { part = "part/axial/AXIC1181", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC1185", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC1243", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXIC1391", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC3066", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC3150", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC3165", role = "kit", source = "doc/axial/horizon-part-pages" },
@@ -60,6 +66,9 @@ contains = [
   { part = "part/axial/AXIC4406", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC4407", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI231046", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI232059", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI233009", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI234017", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI235016", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC2014", role = "option", source = "doc/axial/horizon-part-pages" },
 ]
