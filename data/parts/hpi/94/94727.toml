@@ -1,7 +1,14 @@
 id = "part/hpi/94727"
 brand = "brand/hpi"
 number = "94727"
-name = "FLAT HEAD SCREW M5x10mm (HEX"
+name = "FLAT HEAD SCREW M5x10mm (HEX SOCKET/6pcs)"
+pack_qty = 6
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/94727" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m5x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

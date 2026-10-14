@@ -3,6 +3,15 @@ brand = "brand/hpi"
 number = "86026"
 name = "SHOCK SHAFT 3x57.5mm"
 pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86026" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3

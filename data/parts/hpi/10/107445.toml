@@ -2,4 +2,12 @@ id = "part/hpi/107445"
 brand = "brand/hpi"
 number = "107445"
 name = "TURNBUCKLE SET"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/107445" },
+]
+fits = [
+  { kit = "kit/hpi/apache-c1", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/107394" },
+  { kit = "kit/hpi/apache-sc", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/107394" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "ball-end"

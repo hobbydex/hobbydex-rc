@@ -3,6 +3,18 @@ brand = "brand/hpi"
 number = "B017"
 name = "BALL BEARING 4x8x3mm"
 pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/B017" },
+]
+fits = [
+  { kit = "kit/hpi/crawler-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/r40", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-pro-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/sprint-2", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

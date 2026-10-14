@@ -1,9 +1,13 @@
 id = "part/hpi/161417"
 brand = "brand/hpi"
 number = "161417"
-name = "Aluminum Axle Housing Set"
+name = "Aluminum Axle Housing Set (Gunmetal/1pc)"
+pack_qty = 1
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161417" },
+]
+fits = [
+  { kit = "kit/hpi/mini-king", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "drivetrain"
 material = "aluminium"
-fits = [
-  { kit = "kit/hpi/mini-king", type = "replaces", replaces = "part/hpi/161125", source = "doc/hpi/160807-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-]

@@ -1,6 +1,14 @@
 id = "part/hpi/108021"
 brand = "brand/hpi"
 number = "108021"
-name = "ALUMINUM REAR HUB CARRIER SET"
+name = "ALUMINUM REAR HUB CARRIER SET (0 DEG/HARD ANODIZE)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/108021" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101208" },
+  { kit = "kit/hpi/bullet-st", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101208" },
+  { kit = "kit/hpi/wr8", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101208" },
+]
 category = "suspension"
 material = "aluminium"

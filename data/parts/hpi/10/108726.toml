@@ -2,6 +2,13 @@ id = "part/hpi/108726"
 brand = "brand/hpi"
 number = "108726"
 name = "REAR BRACE (6061)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/108726" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5b", type = "replaces", replaces = "part/hpi/87488", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
 category = "chassis"
 material = "aluminium"
 material_grade = "6061"

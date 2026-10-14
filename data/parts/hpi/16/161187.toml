@@ -3,6 +3,16 @@ brand = "brand/hpi"
 number = "161187"
 name = "Lock Nut M2 (Black/4pcs)"
 pack_qty = 4
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161187" },
+]
+fits = [
+  { kit = "kit/hpi/mini-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/stage-d24", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m2-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },

@@ -1,6 +1,18 @@
 id = "part/hpi/3843"
 brand = "brand/hpi"
 number = "3843"
-name = "TE37 WHEEL 26mm BRONZE (3mm"
+name = "TE37 WHEEL 26mm BRONZE (3mm OFFSET)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/3843" },
+]
+fits = [
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/pro-4", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-pro-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/sprint-2", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "wheel"
 color = "bronze"
+offset_mm = 3

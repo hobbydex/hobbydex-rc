@@ -7,4 +7,12 @@ kind = "kit"
 status = "discontinued"
 documents = ["doc/hpi/101559-kit-page"]
 notes = "Release year unknown; HPI's pages state none"
-contains = []
+contains = [
+  { part = "part/hpi/101320", role = "option", source = "doc/hpi/101559-kit-page" },
+  { part = "part/hpi/7209", role = "option", source = "doc/hpi/101559-kit-page" },
+  { part = "part/hpi/7210", role = "option", source = "doc/hpi/101559-kit-page" },
+  { part = "part/hpi/7213", role = "option", source = "doc/hpi/101559-kit-page" },
+  { part = "part/hpi/7215", role = "option", source = "doc/hpi/101559-kit-page" },
+  { part = "part/hpi/85527", role = "option", source = "doc/hpi/101559-kit-page" },
+  { part = "part/hpi/85529", role = "option", source = "doc/hpi/101559-kit-page" },
+]

@@ -1,7 +1,17 @@
 id = "part/hpi/160867"
 brand = "brand/hpi"
 number = "160867"
-name = "CL-5 Beadlock Wheel 1.2in"
+name = "CL-5 Beadlock Wheel 1.2in (Red/4pcs)"
+pack_qty = 4
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160867" },
+]
+fits = [
+  { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "wheel"
 wheel_size = "1.2\""
 beadlock = true
+color = "red"

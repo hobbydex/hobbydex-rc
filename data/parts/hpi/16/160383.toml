@@ -1,5 +1,17 @@
 id = "part/hpi/160383"
 brand = "brand/hpi"
 number = "160383"
-name = "Pro-Series Silicone Shock Oil"
+name = "Pro-Series Silicone Shock Oil 300Cst (60cc)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160383" },
+]
+fits = [
+  { kit = "kit/hpi/monster-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "oil-grease"
+volume_ml = 60
+equivalent_to = [
+  { spec = "spec/oil/silicone-300cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]
