@@ -1,13 +1,19 @@
 id = "part/hpi/161150"
 brand = "brand/hpi"
 number = "161150"
-name = "Aluminum Oil-Filled Shock Set"
+name = "Aluminum Oil-Filled Shock Set (Assembled/4pcs)"
+pack_qty = 4
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161150" },
+]
+fits = [
+  { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/venture18-cc", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/venture18-u4", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
 category = "shock"
 shock_part = "complete"
 material = "aluminium"
-fits = [
-  { kit = "kit/hpi/venture18", type = "replaces", replaces = "part/hpi/160819", source = "doc/hpi/160800-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/venture18", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/160800-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/venture18-cc", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/160808-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/venture18-u4", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/160804-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-]

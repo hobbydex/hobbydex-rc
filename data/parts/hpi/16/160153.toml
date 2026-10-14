@@ -1,7 +1,21 @@
 id = "part/hpi/160153"
 brand = "brand/hpi"
 number = "160153"
-name = "Plazma 6.0V 1600mAh NiMH"
+name = "Plazma 6.0V 1600mAh NiMH Receiver Battery Pack"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160153" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/bullet-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/trophy-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/trophy-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/battery/nimh-5s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]

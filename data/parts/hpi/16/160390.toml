@@ -1,5 +1,15 @@
 id = "part/hpi/160390"
 brand = "brand/hpi"
 number = "160390"
-name = "Pro-Series Silicone Diff Oil 5"
+name = "Pro-Series Silicone Diff Oil 5,000Cst (60cc)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160390" },
+]
+fits = [
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "oil-grease"
+volume_ml = 60
+equivalent_to = [
+  { spec = "spec/oil/silicone-5000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]

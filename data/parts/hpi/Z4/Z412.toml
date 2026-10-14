@@ -3,6 +3,14 @@ brand = "brand/hpi"
 number = "Z412"
 name = "CAP HEAD SCREW M2x10mm"
 pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z412" },
+]
+fits = [
+  { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/super-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

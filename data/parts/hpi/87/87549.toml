@@ -1,6 +1,16 @@
 id = "part/hpi/87549"
 brand = "brand/hpi"
 number = "87549"
-name = "HD FRONT ALUMINUM SHOCK MOUNT"
+name = "HD FRONT ALUMINUM SHOCK MOUNT (7075/GUNMETAL)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/87549" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85418" },
+  { kit = "kit/hpi/baja-5r", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85418" },
+  { kit = "kit/hpi/baja-5sc", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85418" },
+  { kit = "kit/hpi/baja-5t", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/85418" },
+]
 category = "chassis"
 material = "aluminium"
+material_grade = "7075"

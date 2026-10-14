@@ -3,6 +3,14 @@ brand = "brand/hpi"
 number = "B080"
 name = "METAL BUSHING 10x15x4mm"
 pack_qty = 6
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/B080" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "bearing"
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "close", notes = "A plain bushing, 10x15x4; the ball bearing of that size replaces it" },

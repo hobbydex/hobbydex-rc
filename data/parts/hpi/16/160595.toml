@@ -1,7 +1,15 @@
 id = "part/hpi/160595"
 brand = "brand/hpi"
 number = "160595"
-name = "TP. FLAT HEAD SCREW M4x30mm"
+name = "TP. FLAT HEAD SCREW M4x30mm (HEX SOCKET/10pcs)"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/160595" },
+]
+fits = [
+  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m4x30-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

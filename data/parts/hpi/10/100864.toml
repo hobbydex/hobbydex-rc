@@ -1,7 +1,19 @@
 id = "part/hpi/100864"
 brand = "brand/hpi"
 number = "100864"
-name = "BUTTON HEAD SCREW M2.5x4mm"
+name = "BUTTON HEAD SCREW M2.5x4mm (HEX SOCKET/10pcs)"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/100864" },
+]
+fits = [
+  { kit = "kit/hpi/cyber-10b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/mini-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2.5x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

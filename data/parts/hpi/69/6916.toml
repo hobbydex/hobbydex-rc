@@ -2,6 +2,20 @@ id = "part/hpi/6916"
 brand = "brand/hpi"
 number = "6916"
 name = "PINION GEAR 16 TOOTH (48 PITCH)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/6916" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/crawler-king", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/cyber-10b", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/formula-ten", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/mini-trophy", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/rs4-pro-3", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/sprint-2", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "pinion"
 teeth = 16
 pitch_dp = 48
