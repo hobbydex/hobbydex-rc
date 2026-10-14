@@ -11,3 +11,6 @@ fits = [
   { kit = "kit/redcat/rc-mt10e", type = "direct", source = "doc/redcat/store" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5.2x15x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

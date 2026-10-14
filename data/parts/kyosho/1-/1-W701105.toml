@@ -7,3 +7,6 @@ category = "washer-shim"
 fits = [
   { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
 ]
+equivalent_to = [
+  { spec = "spec/washer/7x11x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

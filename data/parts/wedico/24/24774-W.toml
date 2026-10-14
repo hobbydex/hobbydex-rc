@@ -8,3 +8,6 @@ documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/passscheibe-4_8_03-din-988" },
 ]
+equivalent_to = [
+  { spec = "spec/washer/4x8x0.3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

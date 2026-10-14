@@ -7,3 +7,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-washer-3.2mm-x-7.0mm-x-0.5mm-stl-10/LOS-3964.html" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3.2x7x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

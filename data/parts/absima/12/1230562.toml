@@ -8,3 +8,6 @@ fits = [
   { kit = "kit/absima/cr1-8", type = "direct", source = "doc/absima/spares-cr1-8" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5.1x8x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

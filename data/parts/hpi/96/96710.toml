@@ -13,3 +13,6 @@ fits = [
   { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/8x12x0.8", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
