@@ -1,8 +1,12 @@
 id = "part/axial/AXI252012"
 brand = "brand/axial"
 number = "AXI252012"
-name = "SCX6"
-applies_to = "Motor Plate & Clamp"
+name = "Motor Plate & Clamp"
+applies_to = "SCX6"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-motor-plate-and-clamp/AXI252012.html" },
+]
+gtin = "605482125830"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

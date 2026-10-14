@@ -183,6 +183,10 @@ def main():
             ok = len(digits) in (8, 12, 13, 14) and (10 - sum(x * (3 if i % 2 == 0 else 1) for i, x in enumerate(reversed(digits[:-1]))) % 10) % 10 == digits[-1]
             if not ok:
                 errors.append(f"{path}: gtin {g!r} is not a valid GTIN-8/12/13/14 (length or check digit)")
+        if kind == "doc":
+            for f in ("url", "page"):
+                if f in d and not str(d[f]).startswith(("https://", "http://")):
+                    errors.append(f"{path}: {f} must be a web link, got {d[f]!r}")
         for l in d.get("links", []) if kind in ("part", "release", "kit") else []:
             if not (isinstance(l, dict) and l.get("site") and str(l.get("url", "")).startswith("https://")):
                 errors.append(f"{path}: link {l!r} needs a site and an https url")

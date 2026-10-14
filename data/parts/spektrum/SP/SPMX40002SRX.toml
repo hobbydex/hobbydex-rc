@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMX40002SRX"
+brand = "brand/spektrum"
+number = "SPMX40002SRX"
+name = "7.4V 4000mAh 2S 15C Smart LiPo Receiver Battery"
+applies_to = "Universal Receiver, IC3"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-7.4v-4000mah-2s-15c-smart-lipo-receiver-battery-universal-receiver-ic3/SPMX40002SRX.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4000
+c_rating = 15
+category = "battery"

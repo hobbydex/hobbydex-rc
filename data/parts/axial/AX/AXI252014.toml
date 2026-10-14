@@ -1,8 +1,12 @@
 id = "part/axial/AXI252014"
 brand = "brand/axial"
 number = "AXI252014"
-name = "SCX6"
-applies_to = "50T Metal Spur Gear"
+name = "50T Metal Spur Gear"
+applies_to = "SCX6"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-50t-metal-spur-gear/AXI252014.html" },
+]
+gtin = "605482125960"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

@@ -2,9 +2,15 @@ id = "part/axial/AXIC1070"
 brand = "brand/axial"
 number = "AXIC1070"
 name = "Washer 3x6x0.5"
-gtin = "877493003401"
 pack_qty = 10
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-washer-3x6x0.5-10/AXIC1070.html" },
 ]
+gtin = "877493003401"
 category = "washer-shim"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

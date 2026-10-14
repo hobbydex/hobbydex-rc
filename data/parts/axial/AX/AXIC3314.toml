@@ -2,13 +2,18 @@ id = "part/axial/AXIC3314"
 brand = "brand/axial"
 number = "AXIC3314"
 name = "Aluminum Shock Body 12x47.5mm, Clear Anodized (2)a"
-pack_qty = 2
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-aluminum-shock-body-12x47.5mm-clear-anodized-2a/AXIC3314.html" },
 ]
+pack_qty = 2
 color = "silver"
 category = "shock"
 shock_part = "body"
 bore_mm = 12
 length_mm = 47.5
 material = "aluminium"
+gtin = "816874015060"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+]

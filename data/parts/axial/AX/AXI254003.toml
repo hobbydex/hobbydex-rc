@@ -2,9 +2,12 @@ id = "part/axial/AXI254003"
 brand = "brand/axial"
 number = "AXI254003"
 name = "SCX6: S.S. Turnbuckle M6 x 163.5mm"
-gtin = "605482126363"
 pack_qty = 2
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-s.s.-turnbuckle-m6-x-163.5mm-2/AXI254003.html" },
 ]
+gtin = "605482126363"
 category = "ball-end"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

@@ -9,6 +9,9 @@ gtin = "660132672324"
 documents = ["doc/axial/axi-3408-manual-en", "doc/axial/axi-3408-manual-ml", "doc/axial/axi-3408-product-page", "doc/axial/axi-3408-quickstart-guide"]
 color = "black"
 contains = [
+  { part = "part/axial/AXI-3949", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI31611", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI31614", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/axial/axi-3408-product-page", qty = 1, notes = "In the box: Spektrum SLT2 2.4GHz radio system" },
   { part = "part/spektrum/SPMX3502S30", role = "kit", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/spektrum/SPMXC0030", role = "kit", source = "doc/axial/axi-3408-manual-en" },
@@ -16,7 +19,6 @@ contains = [
   { part = "part/axial/AXI302001", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-3947", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/axial/AXI-3948", role = "listed", source = "doc/axial/axi-3408-manual-en" },
-  { part = "part/axial/AXI-3949", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/axial/AXI200002", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/axial/AXI201002", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/axial/AXI203002", role = "listed", source = "doc/axial/axi-3408-manual-en" },
@@ -29,8 +31,6 @@ contains = [
   { part = "part/axial/AXI31608", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/axial/AXI31609", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/axial/AXI31610", role = "listed", source = "doc/axial/axi-3408-manual-en" },
-  { part = "part/axial/AXI31611", role = "listed", source = "doc/axial/axi-3408-manual-en" },
-  { part = "part/axial/AXI31614", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/axial/AXI31619", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/spektrum/SPMXC2050", role = "listed", source = "doc/axial/axi-3408-manual-en" },
   { part = "part/spektrum/SPMXCA309", role = "listed", source = "doc/axial/axi-3408-manual-en" },
