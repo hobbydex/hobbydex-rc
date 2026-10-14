@@ -1,0 +1,17 @@
+id = "part/team-associated/91738"
+brand = "brand/team-associated"
+number = "91738"
+name = "Wheel Nuts, M4, Serrated, flanged, black steel"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/wheel-nuts-m4-serrated-flanged-black-steel/" },
+]
+fits = [
+  { kit = "kit/team-associated/dc10", type = "direct", source = "doc/team-associated/30135-page" },
+  { kit = "kit/team-associated/rc10-semitruck", type = "direct", source = "doc/team-associated/30143-page" },
+  { kit = "kit/team-associated/reflex-14b", type = "direct", source = "doc/team-associated/20193-page" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

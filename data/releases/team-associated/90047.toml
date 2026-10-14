@@ -3,12 +3,16 @@ kit = "kit/team-associated/rc10b7"
 brand = "brand/team-associated"
 number = "90047"
 name = "RC10B7.1D Team Kit, Dirt"
-year = 2026
 kind = "kit"
 status = "released"
+gtin = "784695900479"
+links = [
+  { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B7.1D/Team_Kit/" },
+]
+year = 2026
 edition = "dirt"
 surface = ["dirt"]
-documents = ["doc/team-associated/90047-rc10b7-1d-manual", "doc/team-associated/90046-90047-rc10b7-1-parts-list"]
+documents = ["doc/team-associated/90047-rc10b7-1d-manual", "doc/team-associated/90046-90047-rc10b7-1-parts-list", "doc/team-associated/90047-page", "doc/team-associated/rc10b71-editable-setup-sheet"]
 contains = [
   { part = "part/team-associated/1370", role = "kit", qty = 1, step = "Bag 2 - Step 3", source = "doc/team-associated/90047-rc10b7-1d-manual" },
   { part = "part/team-associated/25187", role = "kit", qty = 1, step = "Bag 3 - Step 3", source = "doc/team-associated/90047-rc10b7-1d-manual" },

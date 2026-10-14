@@ -1,10 +1,16 @@
 id = "part/team-associated/25189"
 brand = "brand/team-associated"
 number = "25189"
-name = "M3 x 22mm BHCS"
-former_names = ["3x22mm BHCS", "3x22mm, BHCS", "M3x22mm BHCS"]
+name = "Screws, M3x22 mm BHCS"
+former_names = ["M3 x 22mm BHCS", "3x22mm BHCS", "3x22mm, BHCS", "M3x22mm BHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x22-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x22-mm-bhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10-pickup-truck", type = "direct", source = "doc/team-associated/40015-page" },
+]

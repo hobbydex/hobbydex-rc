@@ -1,9 +1,17 @@
 id = "part/team-associated/92324"
 brand = "brand/team-associated"
 number = "92324"
-name = "5x10x4mm flanged bearing"
+name = "FT Bearings, 5 x 10 x 4mm, flanged"
+former_names = ["5x10x4mm flanged bearing"]
 equivalent_to = [
   { spec = "spec/bearing/flanged-5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-bearings-5-x-10-x-4mm-flanged/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/90056-page" },
+  { kit = "kit/team-associated/rc10t84", type = "direct", source = "doc/team-associated/90057-page" },
+]

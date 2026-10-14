@@ -1,7 +1,15 @@
 id = "part/team-associated/81163"
 brand = "brand/team-associated"
 number = "81163"
-name = "Shock Body, 36.5mm (Rear)"
+name = "Shock Bodies, 16 x 36.5mm, hard anodized"
+former_names = ["Shock Body, 36.5mm (Rear)"]
 category = "shock"
 shock_part = "body"
 length_mm = 36.5
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/shock-bodies-16-x-36-5mm-hard-anodized/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8b4", type = "direct", source = "doc/team-associated/80949-page" },
+]
+bore_mm = 16

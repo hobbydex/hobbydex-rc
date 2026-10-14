@@ -1,6 +1,12 @@
 id = "part/team-associated/92600"
 brand = "brand/team-associated"
 number = "92600"
-name = "T84 Chassis"
-former_names = ["T84 Chassis V2 side"]
+name = "RC10T84 Chassis"
+former_names = ["T84 Chassis", "T84 Chassis V2 side"]
 category = "chassis"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10t84-chassis/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10t84", type = "direct", source = "doc/team-associated/90057-page" },
+]

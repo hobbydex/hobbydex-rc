@@ -1,6 +1,14 @@
 id = "part/team-associated/71034"
 brand = "brand/team-associated"
 number = "71034"
-name = "Clamping Wheel Hex, 6mm Oﬀ set (rear)"
-former_names = ["FT clamping wheel hex, 6.0mm (kit setting)"]
+name = "FT Clamping Wheel Hexes, 6.0 mm"
+former_names = ["Clamping Wheel Hex, 6mm Oﬀ set (rear)", "FT clamping wheel hex, 6.0mm (kit setting)"]
 category = "drivetrain"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-clamping-wheel-hexes-6-0-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/pro2-sc10", type = "direct", source = "doc/team-associated/70021-page" },
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/90059-page" },
+  { kit = "kit/team-associated/sr10", type = "direct", source = "doc/team-associated/70033-page" },
+]
