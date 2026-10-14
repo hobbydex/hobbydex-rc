@@ -1,8 +1,15 @@
 id = "part/team-associated/81608"
 brand = "brand/team-associated"
 number = "81608"
-name = "TiN Shock Shaft, 3.5x35.5mm (Front)"
+name = "3.5x35.5mm TiN Shock Shafts"
+former_names = ["TiN Shock Shaft, 3.5x35.5mm (Front)"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3.5
 length_mm = 35.5
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3-5x35-5mm-tin-shock-shafts/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/80958-page" },
+]

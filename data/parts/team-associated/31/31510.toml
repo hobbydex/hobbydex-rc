@@ -1,10 +1,16 @@
 id = "part/team-associated/31510"
 brand = "brand/team-associated"
 number = "31510"
-name = "M2 x 4mm BHCS"
-former_names = ["2x4mm BHCS", "2x4mm HD BHCS", "M2x4mm BHCS"]
+name = "Screws, M2x0.4x4 mm BHCS"
+former_names = ["M2 x 4mm BHCS", "2x4mm BHCS", "2x4mm HD BHCS", "M2x4mm BHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2x0-4x4-mm-bhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/dc10", type = "direct", source = "doc/team-associated/30135-page" },
+]

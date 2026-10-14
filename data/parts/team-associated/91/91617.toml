@@ -1,9 +1,15 @@
 id = "part/team-associated/91617"
 brand = "brand/team-associated"
 number = "91617"
-name = "V2 3x23mm shock shaft TiN"
-former_names = ["V2 3 x 23 Shock Shaft TiN “front”"]
+name = "3x23 mm Shock Shaft V2, TiN"
+former_names = ["V2 3x23mm shock shaft TiN", "V2 3 x 23 Shock Shaft TiN “front”"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 23
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3x23-mm-shock-shaft-v2-tin/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/90056-page" },
+]

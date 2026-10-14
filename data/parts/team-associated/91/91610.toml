@@ -1,6 +1,13 @@
 id = "part/team-associated/91610"
 brand = "brand/team-associated"
 number = "91610"
-name = "Clamping Wheel Hex, 7.0mm Oﬀ set (rear)"
-former_names = ["FT clamping wheel hex, 7.0mm (kit setting)"]
+name = "FT Clamping Wheel Hexes, 7.0 mm offset"
+former_names = ["Clamping Wheel Hex, 7.0mm Oﬀ set (rear)", "FT clamping wheel hex, 7.0mm (kit setting)"]
 category = "drivetrain"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-clamping-wheel-hexes-7-0-mm-offset/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/90055-page" },
+  { kit = "kit/team-associated/rc10t84", type = "direct", source = "doc/team-associated/90057-page" },
+]

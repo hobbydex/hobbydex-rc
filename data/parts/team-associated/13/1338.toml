@@ -1,0 +1,17 @@
+id = "part/team-associated/1338"
+brand = "brand/team-associated"
+number = "1338"
+name = "FT Aluminum Pinion Gear, 20T 48P, 1/8 shaft"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-aluminum-pinion-gear-20t-48p-1-8-shaft/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10-semitruck", type = "direct", source = "doc/team-associated/30143-page" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "aluminium"
+category = "pinion"
+teeth = 20
+pitch_dp = 48

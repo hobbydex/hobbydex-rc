@@ -1,6 +1,15 @@
 id = "part/team-associated/81202"
 brand = "brand/team-associated"
 number = "81202"
-name = "FT Shock Piston (6x1.3 flat) Front"
+name = "FT 16mm Shock Piston, 6x1.3mm, flat"
+former_names = ["FT Shock Piston (6x1.3 flat) Front"]
 category = "shock"
 shock_part = "piston"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-16mm-shock-piston-6x1-3mm-flat/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8b4", type = "direct", source = "doc/team-associated/80954-page" },
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/80957-page" },
+]
+bore_mm = 16

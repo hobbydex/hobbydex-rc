@@ -1,7 +1,14 @@
 id = "part/team-associated/4187"
 brand = "brand/team-associated"
 number = "4187"
-name = "Nylon Washer"
-former_names = ["Nylon spacer", "Nylon spacer (front - 4)", "Shock limiter (front - 2)"]
+name = "Washers, 6x3x1 mm, nylon"
+former_names = ["Nylon Washer", "Nylon spacer", "Nylon spacer (front - 4)", "Shock limiter (front - 2)"]
 category = "washer-shim"
 material = "plastic"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/washers-6x3x1-mm-nylon/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/6050-page" },
+  { kit = "kit/team-associated/rc12l", type = "direct", source = "doc/team-associated/4022-page" },
+]

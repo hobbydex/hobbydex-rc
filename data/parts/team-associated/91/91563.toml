@@ -1,10 +1,19 @@
 id = "part/team-associated/91563"
 brand = "brand/team-associated"
 number = "91563"
-name = "10x15x4mm bearing"
-former_names = ["10 x 15 x 4 Bearing", "10 x 15 x 4, Bearing", "10x15x4 Bearing", "10x15x4mm Bearing", "FT Bearings, 10x15x4mm"]
+name = "FT Bearings, 10x15x4 mm"
+former_names = ["10x15x4mm bearing", "10 x 15 x 4 Bearing", "10 x 15 x 4, Bearing", "10x15x4 Bearing", "10x15x4mm Bearing", "FT Bearings, 10x15x4mm"]
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-bearings-10x15x4-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/dc10", type = "direct", source = "doc/team-associated/30135-page" },
+  { kit = "kit/element-rc/enduro12", type = "direct", source = "doc/element-rc/40011c-page" },
+  { kit = "kit/team-associated/rc10-pickup-truck", type = "direct", source = "doc/team-associated/40015-page" },
+  { kit = "kit/team-associated/rc10-semitruck", type = "direct", source = "doc/team-associated/30143-page" },
+]

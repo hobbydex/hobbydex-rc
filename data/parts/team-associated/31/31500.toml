@@ -1,10 +1,16 @@
 id = "part/team-associated/31500"
 brand = "brand/team-associated"
 number = "31500"
-name = "3x2.5mm Set screw bar"
-former_names = ["3x2.5mm Set screw", "M3x2.5mm set screw (Not included)"]
+name = "Set Screws, M3x2.5 mm"
+former_names = ["3x2.5mm Set screw bar", "3x2.5mm Set screw", "M3x2.5mm set screw (Not included)"]
 equivalent_to = [
   { spec = "spec/screw/m3x2.5-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/set-screws-m3x2-5-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/reflex-14b", type = "direct", source = "doc/team-associated/20193-page" },
+]
