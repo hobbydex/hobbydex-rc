@@ -7,6 +7,11 @@ knows the file layout: the validator checks against it, importers write with it.
     category/servo        -> data/categories/servo.toml
     standard/iso-4762     -> data/standards/iso-4762.toml
 
+Kits and releases may have art: our own traced outline, one SVG per id.
+
+    kit/tamiya/blitzer-beetle -> art/kits/tamiya/blitzer-beetle.svg
+    release/tamiya/58502      -> art/releases/tamiya/58502.svg
+
 Parts get a prefix directory (the first PART_PREFIX characters of the number)
 so no directory holds more than a few hundred files.
 """
@@ -14,6 +19,7 @@ DIRS = {"brand": "brands", "kit": "kits", "release": "releases", "part": "parts"
         "spec": "specs", "doc": "documents", "shop": "shops", "category": "categories",
         "standard": "standards"}
 PART_PREFIX = 2
+ART_KINDS = ("kit", "release")
 
 def path_for(entity_id, root="data"):
     kind, _, rest = entity_id.partition("/")
@@ -25,3 +31,10 @@ def path_for(entity_id, root="data"):
             raise ValueError(f"part id needs brand and number: {entity_id!r}")
         return f"{root}/{DIRS[kind]}/{brand}/{number[:PART_PREFIX]}/{number}.toml"
     return f"{root}/{DIRS[kind]}/{rest}.toml"
+
+def art_path(entity_id, root="art"):
+    """The art file of a kit or release id (whether or not it exists)."""
+    kind, _, rest = entity_id.partition("/")
+    if kind not in ART_KINDS:
+        raise ValueError(f"no art for entity kind in id {entity_id!r}")
+    return f"{root}/{DIRS[kind]}/{rest}.svg"

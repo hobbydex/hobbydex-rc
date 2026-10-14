@@ -15,6 +15,9 @@ data/
   releases/<brand>/<number-or-slug>.toml   # includes generated `contains`
   parts/<brand>/<prefix>/<number>.toml     # prefix: first two characters of the number
   documents/<brand>/<slug>.toml            # manuals and parts lists used as sources
+art/
+  kits/<brand>/<slug>.svg                  # outline of a kit
+  releases/<brand>/<number-or-slug>.svg    # outline of one release, when it differs from its kit
 docs/        schema and conventions
 tools/       layout (id -> path), validator and JSON export (Python 3.11+, no dependencies)
 work/        local only, not committed: downloaded manuals, scratch notes
@@ -36,6 +39,14 @@ Parts and release contents are generated from manufacturer documents by
 importers that are kept out of this repository; each generated row names its
 source document, so it can be checked against the manufacturer's own parts
 list.
+
+## Art
+
+`art/` holds our own outlines of kits and releases, traced from the maker's
+photos into a flat silhouette: one path on a 48x24 canvas, front of the car
+to the left, no colour. The site fills it in the release's colours (or the
+page's text colour), so the same file serves light and dark mode. The
+validator checks the format and that every file belongs to a kit or release.
 
 ## Principles
 
