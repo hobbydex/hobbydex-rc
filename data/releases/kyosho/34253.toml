@@ -4,9 +4,12 @@ brand = "brand/kyosho"
 number = "34253"
 name = "MAD CRUSHER VE"
 name_ja = "マッドクラッシャー VE"
-kind = "kit"
+year = 2017
+released = "2017-11"
+kind = "rtr"
 status = "discontinued"
-documents = ["doc/kyosho/34253-mad-crusher-ve-spop", "doc/kyosho/34253-mad-crusher-ve-ex", "doc/kyosho/34253-mad-crusher-ve-mm", "doc/kyosho/34253-mad-crusher-ve-im"]
+gtin = "4548565330584"
+documents = ["doc/kyosho/34253-mad-crusher-ve-spop", "doc/kyosho/34253-mad-crusher-ve-ex", "doc/kyosho/34253-mad-crusher-ve-mm", "doc/kyosho/34253-mad-crusher-ve-im", "doc/kyosho/34253-product-page"]
 contains = [
   { part = "part/kyosho/28188", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/82135", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
@@ -14,13 +17,14 @@ contains = [
   { part = "part/kyosho/82273", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/92213", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/96441", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/96441B", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/96772", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/96775", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/97001", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/97002", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/97037", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/97044", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/97037-16", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/97044-16", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/97052", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/BRG005", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/BRG006", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
@@ -33,7 +37,7 @@ contains = [
   { part = "part/kyosho/IF30-1", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/IF54", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/IFW107", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/IFW149", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/IFW149-02", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/IH36", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/IS010", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/LA43", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
@@ -55,7 +59,7 @@ contains = [
   { part = "part/kyosho/MA073", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA074", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA075", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/MA076", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/MA076BK", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA077", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA081", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA101", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
@@ -63,7 +67,7 @@ contains = [
   { part = "part/kyosho/MA103", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA105", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA106", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/MA108", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/MA108B", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA201", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA301", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MA303B", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
@@ -78,18 +82,19 @@ contains = [
   { part = "part/kyosho/MA338", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MAB073", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MAB404", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/MAH402", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/MAH402BK", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/MAT402", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/ORG03", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/ORG03BK", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/ORG06", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/TR41", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/TR41-42", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/W0202", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/W5351", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/W5351GM", role = "kit", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/92201", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/IF222R", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/IF348", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/IF350", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/IFW117", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
-  { part = "part/kyosho/IFW328", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/IFW117-01", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
+  { part = "part/kyosho/IFW328GM", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/IFW54B", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/IS106", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
   { part = "part/kyosho/LA43H", role = "option", source = "doc/kyosho/34253-mad-crusher-ve-spop" },
