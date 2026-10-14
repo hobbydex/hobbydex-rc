@@ -1,0 +1,13 @@
+id = "part/mugen/H0277"
+brand = "brand/mugen"
+number = "H0277"
+name = "STEEL REAR AXLE SHAFT"
+fits = [
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
+  { kit = "kit/mugen/mrx5", type = "replaces", replaces = "part/mugen/H0222", source = "doc/mugen/mrx5-part-list", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "drivetrain"
+material = "steel"

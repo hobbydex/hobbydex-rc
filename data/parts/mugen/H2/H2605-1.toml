@@ -6,6 +6,9 @@ pack_qty = 10
 notes = "Mugen prints the number as H2605/1"
 fits = [
   { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },

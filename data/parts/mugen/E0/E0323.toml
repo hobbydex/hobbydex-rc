@@ -5,6 +5,10 @@ name = "Radio Holder Carbon X6"
 fits = [
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7" },
   { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/rcteam-mbx7t" },
+  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6-part-list" },
+  { kit = "kit/mugen/mbx6", type = "replaces", replaces = "part/mugen/E0329", source = "doc/mugen/mbx-6-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/mbx7", type = "replaces", replaces = "part/mugen/E2304", source = "doc/mugen/rcteam-mbx7", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/mbx7t", type = "replaces", replaces = "part/mugen/E2304", source = "doc/mugen/rcteam-mbx7t", notes = "Same part in another material (link_upgrades.py)" },
 ]
 notes = "RC Team lists it as E0323 #3"
 links = [

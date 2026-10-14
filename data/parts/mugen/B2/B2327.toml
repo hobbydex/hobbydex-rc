@@ -2,9 +2,11 @@ id = "part/mugen/B2327"
 brand = "brand/mugen"
 number = "B2327"
 name = "Titanium Front Axles"
+gtin = "4944925904219"
 fits = [
   { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-part-list" },
-  { kit = "kit/mugen/msb1", type = "replaces", replaces = "part/mugen/B2303", source = "doc/mugen/msb1-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-option-parts-page" },
+  { kit = "kit/mugen/msb1", type = "replaces", replaces = "part/mugen/B2303", source = "doc/mugen/msb1-option-parts-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "drivetrain"
 material = "titanium"
