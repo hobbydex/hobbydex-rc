@@ -1,5 +1,15 @@
 id = "part/hpi/7399"
 brand = "brand/hpi"
 number = "7399"
-name = "HPI RACING IMPREZA BODY"
+name = "HPI RACING IMPREZA BODY (190mm/WB255mm)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/7399" },
+]
+fits = [
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/pro-4", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-pro-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/sprint-2", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "body"

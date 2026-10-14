@@ -2,4 +2,13 @@ id = "part/hpi/86712"
 brand = "brand/hpi"
 number = "86712"
 name = "PINION GEAR HEAT SINK"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86712" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/86493" },
+  { kit = "kit/hpi/baja-5r", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/86493" },
+  { kit = "kit/hpi/baja-5sc", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/86493" },
+  { kit = "kit/hpi/baja-5t", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/86493" },
+]
 category = "pinion"

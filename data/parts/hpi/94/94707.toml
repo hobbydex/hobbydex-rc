@@ -3,6 +3,15 @@ brand = "brand/hpi"
 number = "94707"
 name = "CAP HEAD SCREW M5x20mm"
 pack_qty = 6
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/94707" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5r", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m5x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

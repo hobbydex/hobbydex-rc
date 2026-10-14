@@ -3,6 +3,18 @@ brand = "brand/hpi"
 number = "Z527"
 name = "FLAT HEAD SCREW M3x10mm"
 pack_qty = 6
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z527" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/bullet-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/formula-ten", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/mini-trophy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/r40", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

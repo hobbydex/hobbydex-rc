@@ -3,6 +3,15 @@ brand = "brand/hpi"
 number = "Z665"
 name = "LOCK NUT M5"
 pack_qty = 4
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z665" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5r", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m5-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },

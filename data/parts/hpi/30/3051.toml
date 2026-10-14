@@ -1,5 +1,19 @@
 id = "part/hpi/3051"
 brand = "brand/hpi"
 number = "3051"
-name = "SPLIT 5 TRUCK WHEEL"
+name = "SPLIT 5 TRUCK WHEEL (BLACK/2pcs)"
+pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/3051" },
+]
+fits = [
+  { kit = "kit/hpi/crawler-king", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/3052" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/3052" },
+  { kit = "kit/hpi/firestorm", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/3052" },
+  { kit = "kit/hpi/nitro-mt2", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rush", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/3052" },
+  { kit = "kit/hpi/savage-xs", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/3052" },
+  { kit = "kit/hpi/wheely-king", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/3052" },
+]
 category = "wheel"
+color = "black"

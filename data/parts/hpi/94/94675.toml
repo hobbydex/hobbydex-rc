@@ -2,6 +2,16 @@ id = "part/hpi/94675"
 brand = "brand/hpi"
 number = "94675"
 name = "CAP HEAD SCREW M3.5x14mm"
+pack_qty = 8
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/94675" },
+]
+fits = [
+  { kit = "kit/hpi/apache-c1", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/apache-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3.5x14-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

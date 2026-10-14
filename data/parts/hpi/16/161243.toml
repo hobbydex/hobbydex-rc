@@ -1,7 +1,15 @@
 id = "part/hpi/161243"
 brand = "brand/hpi"
 number = "161243"
-name = "Plazma 11.1V 360mAh 10C LiPo"
+name = "Plazma 11.1V 360mAh 10C LiPo Battery Pack"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161243" },
+]
+fits = [
+  { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-360mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]

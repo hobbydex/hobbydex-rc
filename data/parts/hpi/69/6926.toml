@@ -2,6 +2,22 @@ id = "part/hpi/6926"
 brand = "brand/hpi"
 number = "6926"
 name = "PINION GEAR 26 TOOTH (48 PITCH)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/6926" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/jumpshot-mt", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/jumpshot-sc", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/jumpshot-st", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/monster-king", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/rs4-pro-3", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/rs4-sport-3", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/savage-xs", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/sprint-2", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+  { kit = "kit/hpi/venture", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/6928" },
+]
 category = "pinion"
 teeth = 26
 pitch_dp = 48
