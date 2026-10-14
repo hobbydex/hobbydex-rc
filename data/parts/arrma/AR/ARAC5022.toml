@@ -9,3 +9,8 @@ category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/2.5x36", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
 ]
+fits = [
+  { kit = "kit/arrma/fury", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/raider-xl", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/vorteks", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]
