@@ -2,8 +2,14 @@ id = "part/axial/AXIC3806"
 brand = "brand/axial"
 number = "AXIC3806"
 name = "Servo Set Scorpion Crawler"
-gtin = "877493003173"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-servo-set-scorpion-crawler/AXIC3806.html" },
 ]
+gtin = "877493003173"
 category = "servo"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

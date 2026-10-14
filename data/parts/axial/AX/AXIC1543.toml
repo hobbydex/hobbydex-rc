@@ -2,9 +2,12 @@ id = "part/axial/AXIC1543"
 brand = "brand/axial"
 number = "AXIC1543"
 name = "Washer 2x7x.5mm"
-gtin = "816874017347"
 pack_qty = 10
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-washer-2x7x.5mm-10/AXIC1543.html" },
 ]
+gtin = "816874017347"
 category = "washer-shim"
+fits = [
+  { kit = "kit/axial/yeti-jr", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

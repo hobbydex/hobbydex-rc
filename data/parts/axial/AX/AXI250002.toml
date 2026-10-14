@@ -1,8 +1,12 @@
 id = "part/axial/AXI250002"
 brand = "brand/axial"
 number = "AXI250002"
-name = "SCX6"
-applies_to = "CRC JLU Front & Rear Bumper"
+name = "CRC JLU Front & Rear Bumper"
+applies_to = "SCX6"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-crc-jlu-front-and-rear-bumper/AXI250002.html" },
+]
+gtin = "605482124970"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

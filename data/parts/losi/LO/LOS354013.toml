@@ -8,6 +8,7 @@ links = [
 ]
 fits = [
   { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/super-rock-rey", type = "replaces", replaces = "part/losi/LOS254055", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "aluminium"
 category = "suspension"
