@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "RedCat Dukono / Pro (#RER10674)"
+fits = [
+  { kit = "kit/redcat/dukono", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the RedCat Dukono (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/rer068b-redcat-dukono-pro-rer10674-metal-shielded-bearing-kit/" },
