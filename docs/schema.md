@@ -646,10 +646,16 @@ replaced_by = "standard/iso-4762"
 
 ## doc
 
-A manufacturer document used as a source. Only facts and the link; the PDF
+A manufacturer document used as a source. Only facts and the links; the PDF
 itself is not stored in git (`file` is the name in the local `work/manuals/`
 tree). `kind` is manual | part_list | exploded_view | supplement | catalog |
-setup_sheet | product_page. A setup_sheet is a maker's setup sheet (blank
+setup_sheet | product_page. Two links: `page` is the maker's own web page
+where the document is listed (the support or downloads page, stable and
+readable), `url` the file itself as the maker serves it, which may be a CDN
+(Tamiya's CloudFront) or the maker's own Drive or Dropbox share (Redcat,
+Absima). Give `page` whenever the maker has one; a file uploaded by someone
+else (a forum, a fan site, a shop's own copy) is never the `url`. The site
+links the page first and the file as "PDF". A setup_sheet is a maker's setup sheet (blank
 or a driver's setup for a track) or a setup reference chart (gear ratios,
 toe angles), linked to the releases of the car it is for.
 
@@ -661,6 +667,8 @@ title = "XRAY XB2'26 spare parts list"
 version = "25.01"
 date = "2025-10-21"
 publisher = "brand/xray"
+page = "https://www.teamxray.com/teamxray/support/manuals/xb2-26"
+url = "https://www.teamxray.com/downloads/xb2-26-part-list.pdf"
 file = "xb2-2026-part-list.pdf"
 releases = ["release/xray/320020", "release/xray/320021"]
 ```
