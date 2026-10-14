@@ -1,9 +1,12 @@
 id = "part/axial/AXI252024"
 brand = "brand/axial"
 number = "AXI252024"
-name = "SCX6"
-gtin = "605482126103"
-applies_to = "Shift Fork & Shaft Set"
+name = "Shift Fork & Shaft Set"
+applies_to = "SCX6"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-shift-fork-and-shaft-set/AXI252024.html" },
+]
+gtin = "605482126103"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

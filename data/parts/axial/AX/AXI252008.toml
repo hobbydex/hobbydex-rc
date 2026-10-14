@@ -1,8 +1,12 @@
 id = "part/axial/AXI252008"
 brand = "brand/axial"
 number = "AXI252008"
-name = "SCX6"
-applies_to = "AR90 Differential Locker"
+name = "AR90 Differential Locker"
+applies_to = "SCX6"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-ar90-differential-locker/AXI252008.html" },
+]
+gtin = "605482125755"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

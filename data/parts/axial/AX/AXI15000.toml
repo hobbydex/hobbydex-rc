@@ -1,8 +1,12 @@
 id = "part/axial/AXI15000"
 brand = "brand/axial"
 number = "AXI15000"
-name = "SCX6"
-applies_to = "White LED Light String"
+name = "White LED Light String"
+applies_to = "SCX6"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-white-led-light-string/AXI15000.html" },
+]
+gtin = "605482129234"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

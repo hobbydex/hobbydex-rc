@@ -2,9 +2,13 @@ id = "part/axial/AXIC8027"
 brand = "brand/axial"
 number = "AXIC8027"
 name = "Hex Hub Conv Set (12mm)(4) 9026 Wraith"
-pack_qty = 4
-gtin = "816874014568"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-hex-hub-conv-set-12mm4-9026-wraith/AXIC8027.html" },
 ]
+pack_qty = 4
+gtin = "816874014568"
 category = "suspension"
+fits = [
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+]

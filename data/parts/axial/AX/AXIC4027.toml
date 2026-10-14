@@ -2,8 +2,11 @@ id = "part/axial/AXIC4027"
 brand = "brand/axial"
 number = "AXIC4027"
 name = "Wraith Body .040 Clear"
-gtin = "816874010119"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-wraith-body-.040-clear/AXIC4027.html" },
 ]
+gtin = "816874010119"
 category = "body"
+fits = [
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

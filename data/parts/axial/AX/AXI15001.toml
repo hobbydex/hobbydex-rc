@@ -1,8 +1,12 @@
 id = "part/axial/AXI15001"
 brand = "brand/axial"
 number = "AXI15001"
-name = "SCX6"
-applies_to = "Red LED Light String"
+name = "Red LED Light String"
+applies_to = "SCX6"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-red-led-light-string/AXI15001.html" },
+]
+gtin = "605482129463"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

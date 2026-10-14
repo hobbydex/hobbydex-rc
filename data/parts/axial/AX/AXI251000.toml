@@ -1,8 +1,12 @@
 id = "part/axial/AXI251000"
 brand = "brand/axial"
 number = "AXI251000"
-name = "SCX6"
-applies_to = "Frame Rail Set"
+name = "Frame Rail Set"
+applies_to = "SCX6"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-scx6-frame-rail-set/AXI251000.html" },
+]
+gtin = "605482126400"
+fits = [
+  { kit = "kit/axial/scx6", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]
