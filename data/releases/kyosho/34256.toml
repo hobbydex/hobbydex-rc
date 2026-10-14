@@ -4,9 +4,12 @@ brand = "brand/kyosho"
 number = "34256"
 name = "Psycho Kruiser 2.0"
 name_ja = "サイコクルーザー2.0"
-kind = "kit"
+year = 2019
+released = "2019-11"
+kind = "rtr"
 status = "released"
-documents = ["doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop", "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-ex", "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-mm", "doc/kyosho/34256-psycho-kruiser-ve3-0-im"]
+gtin = "4548565372386"
+documents = ["doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop", "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-ex", "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-mm", "doc/kyosho/34256-psycho-kruiser-ve3-0-im", "doc/kyosho/34256-product-page"]
 contains = [
   { part = "part/kyosho/70601", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/82135", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
@@ -30,14 +33,14 @@ contains = [
   { part = "part/kyosho/IF103", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF104", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF110", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IF113", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF113BK", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF114B", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF117", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF119", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IF120", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF120BK", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF124B", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF128", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IF130", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF130BK", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF131", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF145", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF205", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
@@ -47,6 +50,9 @@ contains = [
   { part = "part/kyosho/IF287", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF30-1", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF346", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF346-04", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF346-07", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF346-09", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF35", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF412", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF470", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
@@ -54,16 +60,16 @@ contains = [
   { part = "part/kyosho/IF502", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF503", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF504B", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IF505", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF505-12", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF506", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF508", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF54", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IF55", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IFW125", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IFW140", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IFW149", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IFW140-06", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IFW149-02", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IFW327", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IFW472", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IFW472GM", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IS005C", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IS006B", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IS009", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
@@ -97,9 +103,16 @@ contains = [
   { part = "part/kyosho/W0204", role = "kit", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/92653", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/97044", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/97044-15", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/97044-17", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/BRG022", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IF111", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
-  { part = "part/kyosho/IF347", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF111-74", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF347-126", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF347-136", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF347-138", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF347-145", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF505", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IF505-13", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IFW103", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IFW160", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IFW166", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
@@ -110,8 +123,13 @@ contains = [
   { part = "part/kyosho/IFW332", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IFW337", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IFW405", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IFW405-138", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IFW405-148", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IFW469", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IFW472BL", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IFW472R", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IS050", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IS103", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
   { part = "part/kyosho/IS104", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { part = "part/kyosho/IS106-916", role = "option", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
 ]
