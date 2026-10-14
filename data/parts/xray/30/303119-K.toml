@@ -6,3 +6,6 @@ pack_qty = 10
 former_names = ["ALU SHIM 3x9x2.0MM - BLACK"]
 category = "washer-shim"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/washer/3x9x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

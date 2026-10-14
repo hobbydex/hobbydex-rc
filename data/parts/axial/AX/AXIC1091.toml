@@ -11,3 +11,6 @@ gtin = "877493004767"
 fits = [
   { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/washer/5x10x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

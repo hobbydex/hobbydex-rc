@@ -3,3 +3,7 @@ brand = "brand/traxxas"
 number = "1685"
 name = "PTFE-coated washers (5x11x.5mm) (use with self-lubricating bushings)"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5x11x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "plastic"

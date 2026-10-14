@@ -56,6 +56,7 @@ ENUMS = {
     "part.lubricant": {"oil", "grease"},
     "part.viscosity": {"thin", "medium", "thick"},
     "spec.profile": {"regular", "thin"},
+    "spec.shape": {"flat", "countersunk", "conical"},   # washer specs (docs/schema.md "Washer specs")
     "spec.motor_type": {"brushed", "brushless"},
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh"},
@@ -85,6 +86,7 @@ NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that co
 SPEC_PART_CATS = {
     "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin-clip"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
     "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
+    "washer": {"washer-shim"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
 }
 
@@ -327,6 +329,14 @@ def main():
             for k in ("across_flats_mm", "height_mm"):
                 if k in d and not (isinstance(d[k], (int, float)) and 0.5 <= d[k] <= 40):
                     errors.append(f"{path}: {k} {d[k]!r} should be millimetres")
+        if kind == "spec" and d.get("category") == "washer":
+            b, o, t = (d.get(k) for k in ("bore_mm", "outer_mm", "thickness_mm"))
+            if not all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in (b, o, t)) or not b < o:
+                errors.append(f"{path}: washer spec needs bore_mm, outer_mm and thickness_mm in millimetres, the bore under the outer")
+            else:
+                sid = f"spec/washer/{d['shape'] + '-' if d.get('shape') not in (None, 'flat') else ''}{b}x{o}x{t}"
+                if d["id"] != sid:
+                    errors.append(f"{path}: washer spec id should be {sid} (shape prefix, then bore x outer x thickness)")
         if kind == "spec":
             for code in d.get("standards", []):
                 if code not in codes:

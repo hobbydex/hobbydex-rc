@@ -7,3 +7,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-washer-3x8x0.5mm-10/AXIC1072.html" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

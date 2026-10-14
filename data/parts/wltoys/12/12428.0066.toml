@@ -21,3 +21,6 @@ fits = [
   { kit = "kit/wltoys/144010", type = "direct", source = "doc/wltoys/144010-reseller-parts" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5.2x12x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

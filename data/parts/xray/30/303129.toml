@@ -6,3 +6,7 @@ pack_qty = 2
 former_names = ["COMPOSITE SET OF SHIMS 3x 3x6x1MM; 1x 3x6x2MM", "COMPOSITE SET OF SHIMS 3x 3x6x1mm; 1x 3x6x2mm", "COMPOSITE SET OF SHIMS 3x 3x6x1mm, 1x 3x6x2mm"]
 category = "washer-shim"
 material = "plastic"
+includes = [
+  { spec = "spec/washer/3x6x1", qty = 3 },
+  { spec = "spec/washer/3x6x2", qty = 1 },
+]

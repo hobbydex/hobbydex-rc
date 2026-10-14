@@ -4,3 +4,6 @@ number = "SW-101039"
 name = "Steel Washer 5x12x0.3mm"
 category = "washer-shim"
 material = "steel"
+equivalent_to = [
+  { spec = "spec/washer/5x12x0.3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -13,3 +13,6 @@ fits = [
   { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/12x18x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

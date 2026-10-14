@@ -3,3 +3,6 @@ brand = "brand/team-saxo"
 number = "TS0501017"
 name = "Washer 8.4x6.4x1.0"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/6.4x8.4x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

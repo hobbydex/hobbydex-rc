@@ -6,3 +6,6 @@ pack_qty = 10
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-3301-060-12-10"
 category = "washer-shim"
 material = "steel"
+equivalent_to = [
+  { spec = "spec/washer/6x12x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

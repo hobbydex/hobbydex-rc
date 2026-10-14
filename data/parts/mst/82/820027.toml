@@ -7,3 +7,7 @@ pack_qty = 5
 notes = "Read by OCR from an MST manual parts list"
 category = "washer-shim"
 range = "mst/820027-colours"
+equivalent_to = [
+  { spec = "spec/washer/3x5.5x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "aluminium"

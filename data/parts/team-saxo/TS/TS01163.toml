@@ -21,3 +21,7 @@ includes = [
 ]
 notes = "Spare pack on the F1-180-V5 parts list"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3x5.5x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "aluminium"

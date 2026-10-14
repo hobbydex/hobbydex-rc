@@ -11,3 +11,6 @@ fits = [
   { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5x8x6.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

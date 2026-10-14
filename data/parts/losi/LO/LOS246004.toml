@@ -14,3 +14,6 @@ fits = [
   { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/washer/8x13x0.4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

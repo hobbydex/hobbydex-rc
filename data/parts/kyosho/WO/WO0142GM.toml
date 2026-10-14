@@ -7,3 +7,6 @@ notes = "Name read by OCR from a scanned Kyosho parts list; verify before relyin
 category = "washer-shim"
 name_source = "ocr"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/washer/3x6x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

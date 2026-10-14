@@ -212,7 +212,7 @@ equivalent_to = [
 ]
 ```
 
-A part is only `equivalent_to` a spec of its own kind: a bearing spec for a part in category bearing, a screw spec for a screw, a nut spec for a nut, and so on (wheel-hex specs also for wheels, tyres, hubs and axles that carry the hex). A part that comes with bearings, screws or a battery (a clutch bell with its bearings, a screw kit with washers, a battery with a charger) lists them in `includes` instead. tools/validate.py checks this.
+A part is only `equivalent_to` a spec of its own kind: a bearing spec for a part in category bearing, a screw spec for a screw, a nut spec for a nut, a washer spec for a washer, shim or spacer, and so on (wheel-hex specs also for wheels, tyres, hubs and axles that carry the hex). A part that comes with bearings, screws or a battery (a clutch bell with its bearings, a screw kit with washers, a battery with a charger) lists them in `includes` instead. tools/validate.py checks this.
 
 `match` is exact (same standard, stated by the brand), functional
 (interchangeable in practice) or close (check before use). Geometry lives on
@@ -570,6 +570,34 @@ their tables (RC makers also use odd lengths such as 2x9.8): drive-shaft cross p
 wheel hex drive pins, diff pins. Parts link with match "functional" (size
 from the name; hardness and tolerance seldom stated). Hinge, pivot, body,
 king, roll and spring pins and grooved or threaded pins get no pin spec.
+
+### Washer specs
+
+`spec/washer/<bore>x<outer>x<thickness>` (category "washer", `bore_mm`,
+`outer_mm`, `thickness_mm`, in millimetres as the brands write them:
+3x6x0.5, 5x8x0.2, 3x6x1) is a plain ring: a shim, washer or spacer
+(a thick one is a tube, so 3x6x6 is a spacer). The name says shim under 1
+mm, washer from 1 mm and spacer from 3 mm ("3x6x0.5mm shim", "3x6x1mm
+washer", "3x6x6mm spacer"). `shape` is flat (the default, left out),
+countersunk (a countersunk bore for a countersunk screw head) or conical
+(cone or dish), only where the name says so; a countersunk or conical
+washer does not replace a flat one, so it has its own spec with the shape
+in the id (`spec/washer/countersunk-3x9x1`). No material: aluminium, steel,
+brass and plastic shims of one size share the spec and differ in the
+part's `material`. Parts in category washer-shim link with match
+"functional" (size from the name). Sets of several sizes ("3x5 shim set
+0.1/0.2/0.3mm") list one `includes` row per spec, with `qty` where the name
+gives it. Lock, spring, serrated, wedge and flanged washers, flanged and
+crush tubes and rubber or foam body-mount spacers get no washer spec.
+
+```toml
+id = "spec/washer/3x6x0.5"
+category = "washer"
+name = "3x6x0.5mm shim"
+bore_mm = 3
+outer_mm = 6
+thickness_mm = 0.5
+```
 
 ### Nut specs
 
