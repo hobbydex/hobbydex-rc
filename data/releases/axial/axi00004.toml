@@ -6,5 +6,10 @@ name = "SCX24 B-17 Betty Limited Edition 4WD RTR, green"
 kind = "rtr"
 status = "discontinued"
 gtin = "605482717752"
-color = "green"
 documents = ["doc/axial/axi00004-manual-en", "doc/axial/axi00004-product-page"]
+color = "green"
+contains = [
+  { part = "part/axial/AXI40003", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI302001", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI31567", role = "option", source = "doc/axial/horizon-part-pages" },
+]

@@ -6,8 +6,8 @@ name = "SCX10 III Jeep Cherokee XJ 4X4 RTR Brushed Rock Crawler, white"
 kind = "rtr"
 status = "released"
 gtin = "660132639396"
-color = "white"
 documents = ["doc/axial/axi-2037-manual-en", "doc/axial/axi-2037-manual-exploded-view", "doc/axial/axi-2037-manual-multi", "doc/axial/axi-2037-product-page", "doc/axial/axi-2037-quickstart-guide"]
+color = "white"
 contains = [
   { part = "part/axial/AXI-1376", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-2064", role = "kit", source = "doc/axial/horizon-part-pages" },
@@ -34,15 +34,15 @@ contains = [
   { part = "part/axial/AXI-3979", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
   { part = "part/axial/AXI-4329", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
   { part = "part/axial/AXI-4511", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
-  { part = "part/axial/AXI-4512", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
+  { part = "part/axial/AXI-4512", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-4513", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
   { part = "part/axial/AXI-4514", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
   { part = "part/axial/AXI-4515", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
-  { part = "part/axial/AXI-4516", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
+  { part = "part/axial/AXI-4516", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-4517", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
   { part = "part/axial/AXI-4518", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
   { part = "part/axial/AXI-4519", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
-  { part = "part/axial/AXI-4520", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
+  { part = "part/axial/AXI-4520", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-4521", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
   { part = "part/axial/AXI-4522", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
   { part = "part/axial/AXI-4523", role = "kit", source = "doc/axial/axi-2037-manual-exploded-view" },
@@ -113,15 +113,16 @@ contains = [
   { part = "part/tlr/TLR74008", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/tlr/TLR74010", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/tlr/TLR76009", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/tlr/TLR77000", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI232026", role = "option", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/axial/AXI43014", role = "option", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/axial/AXI43015", role = "option", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/axial/AXI70000", role = "option", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/axial/AXIC0724", role = "option", source = "doc/axial/horizon-part-pages" },
-  { part = "part/axial/AXIC0726", role = "option", source = "doc/axial/axi-2037-manual-en" },
+  { part = "part/axial/AXIC0726", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXIC0727", role = "option", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/axial/AXIC2014", role = "option", source = "doc/axial/horizon-part-pages" },
-  { part = "part/tlr/TLR74006", role = "option", source = "doc/axial/axi-2037-manual-en" },
+  { part = "part/tlr/TLR74006", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-2997", role = "listed", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/axial/AXI-3881", role = "listed", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/axial/AXIC0016", role = "listed", source = "doc/axial/axi-2037-manual-en" },
@@ -144,5 +145,4 @@ contains = [
   { part = "part/spektrum/SPMXSEM1040B", role = "listed", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/spektrum/SPMXSEMC09", role = "listed", source = "doc/axial/axi-2037-manual-en" },
   { part = "part/spektrum/SPMXSM5205", role = "listed", source = "doc/axial/axi-2037-manual-en" },
-  { part = "part/tlr/TLR77000", role = "listed", source = "doc/axial/axi-2037-manual-en" },
 ]

@@ -9,13 +9,14 @@ gtin = "605482429556"
 documents = ["doc/axial/axi00002-manual-en", "doc/axial/axi00002-product-page", "doc/axial/scx24-manual-addendum-ml"]
 color = "white"
 contains = [
+  { part = "part/axial/AXI201000", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI31567", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI302001", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI200000", role = "listed", source = "doc/axial/axi00002-manual-en" },
-  { part = "part/axial/AXI201000", role = "listed", source = "doc/axial/axi00002-manual-en" },
   { part = "part/axial/AXI201001", role = "listed", source = "doc/axial/axi00002-manual-en" },
   { part = "part/axial/AXI201002", role = "listed", source = "doc/axial/axi00002-manual-en" },
   { part = "part/axial/AXI204000", role = "listed", source = "doc/axial/axi00002-manual-en" },
   { part = "part/axial/AXI206000", role = "listed", source = "doc/axial/axi00002-manual-en" },
-  { part = "part/axial/AXI31567", role = "listed", source = "doc/axial/axi00002-manual-en" },
   { part = "part/axial/AXI31608", role = "listed", source = "doc/axial/axi00002-manual-en" },
   { part = "part/axial/AXI31609", role = "listed", source = "doc/axial/axi00002-manual-en" },
   { part = "part/axial/AXI31610", role = "listed", source = "doc/axial/axi00002-manual-en" },

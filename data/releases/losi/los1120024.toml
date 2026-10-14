@@ -6,8 +6,8 @@ name = "NASCAR RC Race Car Jeff Gordon No. 24 Dupont Chevrolet Monte Carlo 2S AW
 kind = "rtr"
 status = "released"
 gtin = "660132659547"
-color = "blue"
 documents = ["doc/losi/los1120024-los1120248-slip-sheet", "doc/losi/los1120024-product-page", "doc/losi/losf11226-exploded-view", "doc/losi/losf11226-manual-en", "doc/losi/losf11226-manual-ml", "doc/losi/losf11226-quickstart-guide"]
+color = "blue"
 contains = [
   { part = "part/arrma/ARA-1251", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/arrma/ARA-1254", role = "kit", source = "doc/losi/horizon-part-pages" },
@@ -87,8 +87,7 @@ contains = [
   { part = "part/spektrum/SPMXSEMC25", role = "kit", source = "doc/losi/losf11226-exploded-view" },
   { part = "part/spektrum/SPMXSM4700", role = "kit", source = "doc/losi/losf11226-exploded-view" },
   { part = "part/tlr/TLR74010", role = "kit", source = "doc/losi/horizon-part-pages" },
-  { part = "part/tlr/TLR74012", role = "kit", source = "doc/losi/losf11226-exploded-view" },
-  { part = "part/tlr/TLR77000", role = "kit", source = "doc/losi/losf11226-exploded-view" },
+  { part = "part/tlr/TLR77000", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/arrma/ARA311203", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/arrma/ARA311204", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/arrma/ARA311206", role = "option", source = "doc/losi/horizon-part-pages" },
@@ -109,4 +108,5 @@ contains = [
   { part = "part/losi/LOS-4561", role = "option", source = "doc/losi/los1120024-los1120248-slip-sheet" },
   { part = "part/losi/LOS-4564", role = "option", source = "doc/losi/los1120024-los1120248-slip-sheet" },
   { part = "part/tlr/TLR74008", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/tlr/TLR74012", role = "option", source = "doc/losi/horizon-part-pages" },
 ]

@@ -6,7 +6,45 @@ name = "Ruckus 4WD Monster Truck RTR, blue/white"
 kind = "rtr"
 status = "discontinued"
 gtin = "605482588093"
-color = "blue/white"
 documents = ["doc/ecx/ecx00013-14-manual-multi", "doc/ecx/ecx00013-product-page", "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi"]
+contains = [
+  { part = "part/ecx/ECX10004", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX10005", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX10007", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX200003", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX200005", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX200006", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX200007", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX201002", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX201003", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX201004", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX201005", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX201006", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX202004", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX202005", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX202006", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX202007", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX202009", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX202010", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX202011", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX202012", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX203001", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX204004", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX204005", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX204006", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX204007", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX206001", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX207001", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX40003", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX40004", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX10003", role = "listed", source = "doc/ecx/ecx00013-14-manual-multi" },
+  { part = "part/ecx/ECX2020", role = "listed", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX301000", role = "option", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX304000", role = "option", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX304001", role = "option", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX304002", role = "option", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+  { part = "part/ecx/ECX304003", role = "option", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
+]
+color = "blue/white"
 former_ids = ["release/ecx/ecx00013"]
 notes = "Horizon Hobby lists this vehicle under master number ECX00013; ECX00013T2 is the number of the variant sold (on the box)"

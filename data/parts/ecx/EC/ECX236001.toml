@@ -9,3 +9,8 @@ category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m2.5-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+gtin = "605482117187"
+fits = [
+  { kit = "kit/ecx/ruckus-4wd", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/torment-4wd", type = "direct", source = "doc/ecx/horizon-part-pages" },
+]

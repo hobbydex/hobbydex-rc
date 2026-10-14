@@ -13,9 +13,14 @@ scale = "1/8"
 vehicle = "buggy"
 color = "yellow"
 fits = [
-  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },
 ]
 position = "front-rear"
+gtin = "605482069127"

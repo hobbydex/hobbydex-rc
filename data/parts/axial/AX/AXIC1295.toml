@@ -2,12 +2,16 @@ id = "part/axial/AXIC1295"
 brand = "brand/axial"
 number = "AXIC1295"
 name = "Aluminum Shock Body 12x41.5mm, Clear Anodized"
-color = "silver"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-aluminum-shock-body-12x41.5mm-clear-anodized/AXIC1295.html" },
 ]
+color = "silver"
 category = "shock"
 shock_part = "body"
 bore_mm = 12
 length_mm = 41.5
 material = "aluminium"
+gtin = "816874015244"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

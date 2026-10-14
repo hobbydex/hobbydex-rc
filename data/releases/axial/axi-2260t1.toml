@@ -6,25 +6,28 @@ name = "SCX30 Chevrolet K10 4X4 RTR Brushed Rock Crawler (Battery & Charger Incl
 kind = "rtr"
 status = "released"
 gtin = "660132632496"
-color = "green"
 documents = ["doc/axial/axi-2260-manual-en", "doc/axial/axi-2260-product-page", "doc/axial/axi-2260-quickstart-guide", "doc/axial/axi-2260-servo-saver-slip-sheet", "doc/axial/axi-2260-slip-sheet"]
+color = "green"
 contains = [
+  { part = "part/axial/AXI-3311", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI-3322", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI-3324", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI-3329", role = "kit", source = "doc/axial/horizon-part-pages" },
   { part = "part/spektrum/SPMRSLT270", role = "kit", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/spektrum/SPMSSX112", role = "kit", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/spektrum/SPMX-1122", role = "kit", source = "doc/axial/axi-2260-product-page", qty = 1, notes = "In the box: Spektrum 7.4V 160mAh 2S 30C LiPo battery (SPMX-1122)" },
   { part = "part/spektrum/SPMXSE3225RX", role = "kit", source = "doc/axial/axi-2260-manual-en" },
+  { part = "part/axial/AXI-4260", role = "option", source = "doc/axial/horizon-part-pages" },
   { part = "part/axial/AXI-3066", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3285", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3307", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3308", role = "listed", source = "doc/axial/axi-2260-manual-en" },
-  { part = "part/axial/AXI-3311", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3314", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3316", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3318", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3320", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3321", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3323", role = "listed", source = "doc/axial/axi-2260-manual-en" },
-  { part = "part/axial/AXI-3324", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3326", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3327", role = "listed", source = "doc/axial/axi-2260-manual-en" },
   { part = "part/axial/AXI-3328", role = "listed", source = "doc/axial/axi-2260-manual-en" },

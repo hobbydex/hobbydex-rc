@@ -6,5 +6,11 @@ name = "SCX24 Jeep JT Gladiator 4X4 RTR Brushed Rock Crawler (Battery & Charger 
 kind = "rtr"
 status = "discontinued"
 gtin = "605482767610"
-color = "blue"
 documents = ["doc/axial/axi00005-manual-en", "doc/axial/axi00005-product-page"]
+color = "blue"
+contains = [
+  { part = "part/axial/AXI202000", role = "kit", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI302001", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI40003", role = "option", source = "doc/axial/horizon-part-pages" },
+  { part = "part/axial/AXI40005", role = "option", source = "doc/axial/horizon-part-pages" },
+]
