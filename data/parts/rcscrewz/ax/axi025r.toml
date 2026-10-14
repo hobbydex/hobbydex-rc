@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Axial SMT10 Max-D (#90057)"
+fits = [
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SMT10 Max-D (#90057) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/axi025-rubber-metal-buggy-shielded-bearing-kits-for-the-axial-smt10-max-d-90057/" },

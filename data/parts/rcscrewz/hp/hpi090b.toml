@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/10x16x5" },
 ]
 applies_to = "HPI Savage XL Flux (#112609)"
+fits = [
+  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the HPI Savage XL Flux (#112609) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/hpi090b-hpi-savage-xl-flux-metal-shielded-bearings/" },

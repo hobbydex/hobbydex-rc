@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "HPI Nitro RS4 RTR (#105936)"
+fits = [
+  { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the HPI Nitro RS4 RTR (#105936) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/hpi094r-hpi-nitro-rs4-evo-rtr-rubber-shielded-bearings/" },

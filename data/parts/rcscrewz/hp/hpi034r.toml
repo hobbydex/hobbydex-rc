@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "HPI Savage X SS"
+fits = [
+  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the HPI Savage X SS (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/hpi034r-hpi-savage-x-ss-rubber-shielded-bearing-kit/" },

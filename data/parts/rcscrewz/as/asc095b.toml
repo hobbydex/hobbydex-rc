@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Associated RC10T6.1 (#70002)"
+fits = [
+  { kit = "kit/team-associated/rc10t6", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Associated RC10T6.1 (#70002) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/ass095b-associated-rc10t6-1-metal-shielded-bearings/" },
