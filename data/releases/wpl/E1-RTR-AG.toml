@@ -1,0 +1,25 @@
+id = "release/wpl/E1-RTR-AG"
+kit = "kit/wpl/e1"
+brand = "brand/wpl"
+number = "E1-RTR-AG"
+name = "E1 RTR"
+kind = "rtr"
+status = "released"
+notes = "Release year unknown; E1 in WPL's store (read 2026-10-14)"
+links = [
+  { site = "WPL RC", url = "https://www.wpl-rc.com/products/e1-rtr" },
+]
+contains = [
+  { part = "part/wpl/2x-ABC040-4P", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/AE001", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/AE002", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/AE003", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/AE004", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/AE005", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11006", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11007", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11008", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11010-V1", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/OP-11010-V2", role = "listed", source = "doc/wpl/store" },
+]
+documents = ["doc/wpl/store"]

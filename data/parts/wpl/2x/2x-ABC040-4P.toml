@@ -1,0 +1,19 @@
+id = "part/wpl/2x-ABC040-4P"
+brand = "brand/wpl"
+number = "2x-ABC040-4P"
+name = "2S 7.4V 500mAh 10C Li-Ion Battery 14500 for D Series & E1 (New 4 Pins)"
+pack_qty = 2
+links = [
+  { site = "WPL RC", url = "https://www.wpl-rc.com/products/2pcs-2s-7-4v-500mah-10c-li-ion-battery-14500-for-d-series-e1-new-4-pins" },
+]
+fits = [
+  { kit = "kit/wpl/d62", type = "direct", source = "doc/wpl/store" },
+  { kit = "kit/wpl/d64", type = "direct", source = "doc/wpl/store" },
+  { kit = "kit/wpl/e1", type = "direct", source = "doc/wpl/store" },
+]
+cells = 2
+capacity_mah = 500
+c_rating = 10
+category = "battery"
+category_source = "curated"
+notes = "Li-ion cells (14500/18650); the schema has no li-ion battery chemistry, so no battery spec"

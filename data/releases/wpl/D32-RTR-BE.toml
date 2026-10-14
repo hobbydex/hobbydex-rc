@@ -1,0 +1,18 @@
+id = "release/wpl/D32-RTR-BE"
+kit = "kit/wpl/d32"
+brand = "brand/wpl"
+number = "D32-RTR-BE"
+name = "D32 RTR, blue"
+kind = "rtr"
+status = "released"
+color = "blue"
+notes = "Release year unknown; D32 in WPL's store (read 2026-10-14)"
+links = [
+  { site = "WPL RC", url = "https://www.wpl-rc.com/products/d32-rtr" },
+]
+contains = [
+  { part = "part/wpl/3x-1s500m", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/A040", role = "option", source = "doc/wpl/store" },
+  { part = "part/wpl/PB-RMA-A", role = "option", source = "doc/wpl/store" },
+]
+documents = ["doc/wpl/store"]
