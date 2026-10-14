@@ -6,8 +6,12 @@ pack_qty = 8
 notes = "Mugen prints the number as B2902W/8"
 fits = [
   { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-part-list" },
+  { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-option-parts-page" },
 ]
 category = "wheel"
 wheel_size = "2.2\""
 position = "rear"
 color = "white"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

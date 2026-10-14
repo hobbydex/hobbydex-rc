@@ -1,0 +1,26 @@
+id = "part/mugen/C0603"
+brand = "brand/mugen"
+number = "C0603"
+name = "BEARING FOR CLUTCH (5X10X4)"
+fits = [
+  { kit = "kit/mugen/mbx5t", type = "direct", source = "doc/mugen/mbx-5t-part-list" },
+  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
+  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
+  { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list" },
+  { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4-part-list" },
+  { kit = "kit/mugen/super-athlete", type = "direct", source = "doc/mugen/super-athlete-part-list" },
+  { kit = "kit/mugen/mst1", type = "direct", source = "doc/mugen/mst-1-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
+  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
+  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
+  { kit = "kit/mugen/mrx3", type = "direct", source = "doc/mugen/mrx-3-part-list" },
+  { kit = "kit/mugen/sting", type = "direct", source = "doc/mugen/sting-part-list" },
+  { kit = "kit/mugen/k2-x-avance", type = "direct", source = "doc/mugen/k2-x-avance-part-list" },
+  { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
+  { kit = "kit/mugen/mtx2", type = "direct", source = "doc/mugen/mtx-2-part-list" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

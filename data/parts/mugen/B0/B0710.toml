@@ -1,0 +1,13 @@
+id = "part/mugen/B0710"
+brand = "brand/mugen"
+number = "B0710"
+name = "M3 Nut"
+fits = [
+  { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list" },
+  { kit = "kit/mugen/mst1", type = "direct", source = "doc/mugen/mst-1-part-list" },
+  { kit = "kit/mugen/prime-12", type = "direct", source = "doc/mugen/prime-12-part-list" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,8 +2,8 @@ id = "part/mugen/E2601"
 brand = "brand/mugen"
 number = "E2601"
 name = "BEARING NMB 5x10x4"
-gtin = "4944925028267"
 pack_qty = 2
+gtin = "4944925028267"
 fits = [
   { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr_eco-option-parts-page" },
   { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
@@ -11,6 +11,22 @@ fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
   { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
   { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8te-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8t-part-list" },
+  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list" },
+  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7t-part-list" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8-world-edition-part-list" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-team-edition-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-part-list" },
+  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7r-part-list" },
+  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
+  { kit = "kit/mugen/mgt7", type = "direct", source = "doc/mugen/mgt7-part-list" },
+  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
+  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc1", type = "direct", source = "doc/mugen/mtc1-part-list" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },

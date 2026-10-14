@@ -4,3 +4,8 @@ number = "B0545B"
 name = "SiG3x6 1pc. SK4x5 1pc"
 name_source = "ocr"
 notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
+fits = [
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
+]

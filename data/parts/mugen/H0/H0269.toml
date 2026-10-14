@@ -1,0 +1,11 @@
+id = "part/mugen/H0269"
+brand = "brand/mugen"
+number = "H0269"
+name = "TITANIUM MIDDLE SHAFT"
+fits = [
+  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
+  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
+  { kit = "kit/mugen/mrx4", type = "replaces", replaces = "part/mugen/J0209", source = "doc/mugen/mrx-4-part-list", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "drivetrain"
+material = "titanium"

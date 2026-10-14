@@ -1,0 +1,12 @@
+id = "part/mugen/C0273"
+brand = "brand/mugen"
+number = "C0273"
+name = "BEVEL GEAR (FOR C0272)"
+fits = [
+  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
+  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
+]
+category = "differential"
+related = [
+  { part = "part/mugen/C0272", relation = "for", notes = "link_part_refs" },
+]

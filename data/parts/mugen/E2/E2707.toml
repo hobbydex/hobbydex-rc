@@ -2,10 +2,15 @@ id = "part/mugen/E2707"
 brand = "brand/mugen"
 number = "E2707"
 name = "Clutch Springs 0.8mm (x4)"
-gtin = "4944925033179"
 pack_qty = 4
+gtin = "4944925033179"
 fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8t-part-list" },
+  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8-part-list" },
+  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7r-part-list" },
+  { kit = "kit/mugen/mgt7", type = "direct", source = "doc/mugen/mgt7-part-list" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-clutch-springs-0-8mm-x4-e2707" },
