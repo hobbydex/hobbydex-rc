@@ -1,7 +1,10 @@
 id = "part/kyosho/OT237R"
 brand = "brand/kyosho"
 number = "OT237R"
-name = "ay ⑥[Mmmm x2pcs"
+name = "Front Shock Case (Red/OPTIMA)"
 pack_qty = 2
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+]
+category = "shock"
+shock_part = "body"

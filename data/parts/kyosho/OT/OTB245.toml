@@ -1,6 +1,8 @@
 id = "part/kyosho/OTB245"
 brand = "brand/kyosho"
 number = "OTB245"
-name = "4x12x0.5mm 4x12x0.75mm 4x12x1mm"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+name = "Non-Decoration Body (OPTIMA)"
+fits = [
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+]
+category = "body"

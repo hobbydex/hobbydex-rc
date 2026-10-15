@@ -1,7 +1,8 @@
 id = "part/kyosho/SIL0250"
 brand = "brand/kyosho"
 number = "SIL0250"
-name = "Silicon Oil (#250/40cc ーー"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Silicone Oil (250)"
 category = "oil-grease"
-name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31777-infernomp777-p" },
+]
