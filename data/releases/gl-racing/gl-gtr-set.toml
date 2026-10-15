@@ -5,7 +5,26 @@ number = "GL-GTR-SET"
 name = "GL-GTR 1/27 RWD Chassis (w/o Servo, ESC)"
 kind = "kit"
 status = "released"
-documents = ["doc/gl-racing/shop"]
+documents = ["doc/gl-racing/shop", "doc/gl-racing/gl-gtr-instruction-manual-ver-n"]
 links = [
   { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=936" },
+]
+contains = [
+  { part = "part/gl-racing/GL-GTR-OP-006", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-017", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-007", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-009-0", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-002", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-012", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-009-1", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-009-2", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-014", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-016", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-004", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-005", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-015", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-018", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-019", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-008", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
+  { part = "part/gl-racing/GL-GTR-OP-013", role = "option", source = "doc/gl-racing/gl-gtr-instruction-manual-ver-n" },
 ]

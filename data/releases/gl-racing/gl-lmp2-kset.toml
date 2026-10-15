@@ -5,7 +5,21 @@ number = "GL-LMP2-KSET"
 name = "GL 1/28 LMP2 Chassis (w/o Servo, ESC)"
 kind = "kit"
 status = "released"
-documents = ["doc/gl-racing/shop"]
+documents = ["doc/gl-racing/shop", "doc/gl-racing/gl-lmp2-instruction-manual"]
 links = [
   { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=1183" },
+]
+contains = [
+  { part = "part/gl-racing/GL-LMP2-OP-001", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-008-0", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-002", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-014", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-010", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-005", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-003", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-007", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-013", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-006", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-011", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
+  { part = "part/gl-racing/GL-LMP2-OP-012", role = "option", source = "doc/gl-racing/gl-lmp2-instruction-manual" },
 ]

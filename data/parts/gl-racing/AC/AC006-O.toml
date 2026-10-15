@@ -3,9 +3,11 @@ brand = "brand/gl-racing"
 number = "AC006-O"
 pack_qty = 10
 name = "0.8 Mini Body clip with Oring set"
-category = "body"
-category_source = "curated"
 documents = ["doc/gl-racing/shop"]
 links = [
   { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=149" },
 ]
+fits = [
+  { kit = "kit/gl-racing/gla", type = "direct", source = "doc/gl-racing/shop" },
+]
+category = "pin-clip"
