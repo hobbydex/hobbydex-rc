@@ -497,6 +497,25 @@ notes = "Bearings (Hobbywing's specifications): front 4x9x4, rear 3x8x4"
 equivalent_to = [{ spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (...)" }]
 ```
 
+Motor heat sinks and motor fan mounts that clamp on the can fit any brand's
+motor of that diameter: `motor_can_mm` gives the can diameter they take (36
+for a 540 or 550 can and 36 mm brushless motors, 28 for 380, 42 for a 1/8
+4268 or 4274, 40 for 4074, 56 ...). Set it only from the maker's own
+wording, in the name, the product page or its spec table ("for 540 motors",
+"Dia 42mm", "fits 36mm motors", "Motor Heatsink 4074"): "540" or "550" is
+36, "380" is 28, a can number is its diameter (4074 is 40) and a stated mm
+wins. Never from the car it comes with; a fan size ("30x30mm") or a heat
+sink's height is not a can size. Heat sinks made for one car or motor
+("TT-02 Aluminum Motor Heat Sink") and motor plates with fins fit through
+`fits` and carry no `motor_can_mm`. Category electronics (or chassis for a
+fan mount), set by tools/link_heatsinks.py in hobbydex-tools.
+
+```toml
+name = "Alu Dual Motor Fan Mount Dia 42mm (2x30mm / 2x40mm)"
+category = "chassis"
+motor_can_mm = 42
+```
+
 ESCs are parts with category electronics and, when stated, `current_a` and
 `peak_current_a` (continuous and burst amps), `lipo_cells`, `dimensions_mm`,
 `weight_g` and `sensored` (true when the ESC has a sensor port and runs
