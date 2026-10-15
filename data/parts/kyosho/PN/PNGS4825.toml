@@ -18,4 +18,5 @@ fits = [
   { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
   { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/javelin", type = "replaces", replaces = "part/kyosho/FA304-25", source = "doc/kyosho/30618-javelin-spare-and-option-parts", notes = "Same part in another material (link_upgrades.py)" },
 ]

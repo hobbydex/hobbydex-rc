@@ -1,0 +1,15 @@
+id = "part/kyosho/1-W401005"
+brand = "brand/kyosho"
+number = "1-W401005"
+name = "Washer (M4x10x0.5)"
+pack_qty = 10
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1-inferno-mp10-readyset-spop" },
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/34106-inferno-mp9e-evo-spop" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/mad-wagon", type = "direct", source = "doc/kyosho/34701-t01-mad-wagon-ve-spop" },
+]
+category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/4x10x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

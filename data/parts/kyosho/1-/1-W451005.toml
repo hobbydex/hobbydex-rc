@@ -1,0 +1,17 @@
+id = "part/kyosho/1-W451005"
+brand = "brand/kyosho"
+number = "1-W451005"
+name = "Washer (M4.5x10x0.5)"
+pack_qty = 10
+fits = [
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-spop-20191228" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-sp" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34110-t04-inferno-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]
+category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/4.5x10x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

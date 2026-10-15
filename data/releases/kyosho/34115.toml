@@ -11,7 +11,11 @@ status = "released"
 gtin = "4548565421541"
 documents = ["doc/kyosho/34115-t01-inf-mp10te-spop", "doc/kyosho/34115-t01-inf-mp10te-ex", "doc/kyosho/34115-t01-inf-mp10te-im", "doc/kyosho/34115-t02-inf-mp10te-spop", "doc/kyosho/34115-t02-inf-mp10te-ex", "doc/kyosho/34115-t02-inf-mp10te-im", "doc/kyosho/34115-product-page"]
 contains = [
+  { part = "part/kyosho/1-S34025H", role = "kit", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
   { part = "part/kyosho/1-S54010", role = "kit", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { part = "part/kyosho/1-W300910", role = "kit", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { part = "part/kyosho/1-W451005", role = "kit", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { part = "part/kyosho/1708B", role = "kit", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
   { part = "part/kyosho/92653H", role = "kit", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
   { part = "part/kyosho/96772", role = "kit", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },

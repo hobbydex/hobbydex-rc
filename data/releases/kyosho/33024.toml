@@ -11,6 +11,9 @@ status = "released"
 gtin = "4548565424115"
 documents = ["doc/kyosho/33024-t01-mp10-30th-op", "doc/kyosho/33024-t01-mp10-30th-sp", "doc/kyosho/33024-t01-mp10-30th-ex", "doc/kyosho/33024-t01-mp10-30th-im", "doc/kyosho/33024-product-page"]
 contains = [
+  { part = "part/kyosho/1-W300910", role = "kit", source = "doc/kyosho/33024-t01-mp10-30th-sp" },
+  { part = "part/kyosho/1-W451005", role = "kit", source = "doc/kyosho/33024-t01-mp10-30th-sp" },
+  { part = "part/kyosho/1708B", role = "kit", source = "doc/kyosho/33024-t01-mp10-30th-sp" },
   { part = "part/kyosho/92213", role = "kit", source = "doc/kyosho/33024-t01-mp10-30th-sp" },
   { part = "part/kyosho/92511", role = "kit", source = "doc/kyosho/33024-t01-mp10-30th-sp" },
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/33024-t01-mp10-30th-sp" },
