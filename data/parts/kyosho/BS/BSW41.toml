@@ -4,6 +4,8 @@ number = "BSW41"
 name = "Steel Shock Bushing"
 fits = [
   { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31779-infmp777-sp2-p" },
+  { kit = "kit/kyosho/inferno-mp7-5", type = "direct", source = "doc/kyosho/31081-inferno-mp75-p" },
+  { kit = "kit/kyosho/inferno-mp7-5", type = "replaces", replaces = "part/kyosho/IFW30-2", source = "doc/kyosho/31081-inferno-mp75-p", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "shock"
 material = "steel"
