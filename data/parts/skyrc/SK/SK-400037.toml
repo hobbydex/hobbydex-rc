@@ -8,6 +8,7 @@ diameter_mm = 35.8
 length_mm = 61.3
 lipo_cells = [1, 3]
 shaft_mm = 3.175
+mount_holes = [{ thread = "M3", circle_mm = 25.2 }]
 equivalent_to = [
   { spec = "spec/motor/brushless-3661-3.175mm", match = "functional", notes = "Derived from SkyRC's dimensions (diameter 35.8 mm, length 61.3 mm, shaft 3.175 mm)" },
 ]

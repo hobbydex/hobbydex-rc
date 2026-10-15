@@ -11,6 +11,7 @@ weight_g = 385
 diameter_mm = 40
 length_mm = 67.7
 shaft_mm = 5
+mount_holes = [{ thread = "M3", circle_mm = 25 }, { thread = "M4", circle_mm = 25 }]
 equivalent_to = [
   { spec = "spec/motor/brushless-4068-5mm", match = "functional", notes = "Derived from Castle's dimensions (diameter 40 mm, length 67.7 mm, shaft 5 mm)" },
 ]
