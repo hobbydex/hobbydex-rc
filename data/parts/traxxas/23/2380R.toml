@@ -3,3 +3,8 @@ brand = "brand/traxxas"
 number = "2380R"
 name = "Differential, complete (fits 1/10-scale 2WD Rustler®, Bandit®, Stampede®, Slash®)"
 category = "differential"
+fits = [
+  { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/traxxas/136454-4-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37454-4-parts-list" },
+  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/traxxas/58434-4-parts-list" },
+]

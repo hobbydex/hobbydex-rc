@@ -4,3 +4,7 @@ number = "6752"
 name = "Half shaft, external splined (steel-spline constant velocity) (1) (fits 2WD Rustler®/Stampede®)"
 category = "drivetrain"
 material = "steel"
+fits = [
+  { kit = "kit/traxxas/bigfoot", type = "direct", source = "doc/traxxas/36034-8-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37054-8-parts-list" },
+]

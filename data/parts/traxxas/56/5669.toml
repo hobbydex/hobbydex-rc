@@ -3,3 +3,8 @@ brand = "brand/traxxas"
 number = "5669"
 name = "Servo horn (with built-in spring and hardware) (for Summit locking differential)"
 category = "steering"
+fits = [
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/110056-4-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88086-4-parts-list" },
+  { kit = "kit/traxxas/summit", type = "direct", source = "doc/traxxas/56076-1-exploded-shift-assembly" },
+]

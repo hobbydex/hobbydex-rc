@@ -3,3 +3,7 @@ brand = "brand/traxxas"
 number = "3725R"
 name = "Mounting plate, electronic speed control (for installation of XL-5/VXL into Bandit® or Rustler®)"
 category = "chassis"
+fits = [
+  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/traxxas/24054-8-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37054-8-parts-list" },
+]

@@ -6,3 +6,8 @@ category = "steering"
 material = "aluminium"
 material_grade = "6061-T6"
 color = "blue"
+fits = [
+  { kit = "kit/traxxas/xo-1", type = "direct", source = "doc/traxxas/64077-3-parts-list" },
+  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67010-4-parts-list" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", replaces = "part/traxxas/6837", source = "doc/traxxas/67010-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+]

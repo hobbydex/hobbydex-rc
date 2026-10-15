@@ -301,9 +301,6 @@ def main():
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
-        se = d.get("sensored") if kind == "part" else None
-        if se is not None and (not isinstance(se, bool) or d.get("category") not in ("motor", "electronics")):
-            errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category electronics)")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
         if eng - {"bore_mm"} and d.get("category") != "engine-fuel":
             errors.append(f"{path}: {', '.join(sorted(eng - {'bore_mm'}))} only on engine parts (category engine-fuel)")

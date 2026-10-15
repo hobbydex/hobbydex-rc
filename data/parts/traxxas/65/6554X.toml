@@ -3,3 +3,9 @@ brand = "brand/traxxas"
 number = "6554X"
 name = "Mount, telemetry expander (fits Rustler®, Bandit, Slash 2WD)"
 category = "chassis"
+fits = [
+  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/traxxas/104354-74-parts-list" },
+  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/traxxas/24054-8-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37054-8-parts-list" },
+  { kit = "kit/traxxas/ford-raptor", type = "direct", source = "doc/traxxas/58094-8-parts-list" },
+]

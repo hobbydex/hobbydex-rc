@@ -4,3 +4,7 @@ number = "5129"
 name = "Rebuild kit (for Revo®/E-Revo® (first generation)/T-Maxx®/E-Maxx steel constant-velocity driveshafts) (includes pins, dustboots, & lube for 2 driveshafts assemblies)"
 category = "pin-clip"
 material = "steel"
+fits = [
+  { kit = "kit/traxxas/t-maxx", type = "direct", source = "doc/traxxas/49077-3-parts-list" },
+  { kit = "kit/traxxas/revo", type = "direct", source = "doc/traxxas/53097-3-parts-list" },
+]

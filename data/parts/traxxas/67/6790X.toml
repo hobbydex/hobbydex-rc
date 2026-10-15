@@ -3,3 +3,7 @@ brand = "brand/traxxas"
 number = "6790X"
 name = "Gear adapters, fixed (fits Rustler® 4X4 or Slash® 4X4 models equipped with Low-CG chassis)"
 category = "gear"
+fits = [
+  { kit = "kit/traxxas/rustler-4x4", type = "direct", source = "doc/traxxas/67464-4-parts-list" },
+  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/traxxas/68454-4-parts-list" },
+]

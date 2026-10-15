@@ -5,3 +5,9 @@ name = "Wheel hubs, 7mm hex (steel) (4)/ axle pins"
 pack_qty = 8
 category = "drivetrain"
 material = "steel"
+fits = [
+  { kit = "kit/traxxas/trx-4m", type = "direct", source = "doc/traxxas/97044-1-parts-list" },
+  { kit = "kit/traxxas/trx-4mt", type = "direct", source = "doc/traxxas/98044-1-parts-list" },
+  { kit = "kit/traxxas/trx-4m", type = "replaces", replaces = "part/traxxas/9750", source = "doc/traxxas/97044-1-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/trx-4mt", type = "replaces", replaces = "part/traxxas/9750", source = "doc/traxxas/98044-1-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+]

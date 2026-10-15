@@ -7,3 +7,8 @@ turns = 20
 equivalent_to = [
   { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
+fits = [
+  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/traxxas/24054-8-parts-list" },
+  { kit = "kit/traxxas/bigfoot", type = "direct", source = "doc/traxxas/36034-8-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37054-8-parts-list" },
+]

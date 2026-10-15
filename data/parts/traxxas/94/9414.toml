@@ -2,7 +2,11 @@ id = "part/traxxas/9414"
 brand = "brand/traxxas"
 number = "9414"
 name = "Wing/ support/ side plates (left & right)/ 3x10 BCS (4) (fits #9411 series bodies)"
+pack_qty = 4
 category = "wing"
 related = [
   { part = "part/traxxas/9411", relation = "fits", notes = "link_part_refs" },
+]
+fits = [
+  { kit = "kit/traxxas/drag-slash", type = "direct", source = "doc/traxxas/94076-4-parts-list" },
 ]

@@ -1,0 +1,12 @@
+id = "part/traxxas/2435"
+brand = "brand/traxxas"
+number = "2435"
+name = "Gear, 35-T pinion (48-pitch) (fits 3mm shaft)/ set screw"
+fits = [
+  { kit = "kit/traxxas/4-tec", type = "direct", source = "doc/traxxas/83076-4-parts-list" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-35t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 3
+category = "pinion"

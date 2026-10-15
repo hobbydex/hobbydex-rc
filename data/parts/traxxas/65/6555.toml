@@ -3,3 +3,9 @@ brand = "brand/traxxas"
 number = "6555"
 name = "Mount, telemetry expander (fits Slash 4X4, Stampede® 4X4, Rally, Jato®)"
 category = "chassis"
+fits = [
+  { kit = "kit/traxxas/jato", type = "direct", source = "doc/traxxas/55077-3-parts-list" },
+  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67010-4-parts-list" },
+  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/traxxas/68277-4-parts-list" },
+  { kit = "kit/traxxas/rally", type = "direct", source = "doc/traxxas/74054-4-parts-list" },
+]

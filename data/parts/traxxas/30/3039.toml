@@ -3,3 +3,8 @@ brand = "brand/traxxas"
 number = "3039"
 name = "Battery holder, 4-cell (no on/off switch) (for Jato® and others that use a male Futaba style connector)"
 category = "chassis"
+fits = [
+  { kit = "kit/traxxas/nitro-rustler", type = "direct", source = "doc/traxxas/44096-3-parts-list" },
+  { kit = "kit/traxxas/jato", type = "direct", source = "doc/traxxas/55077-3-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37076-4-exploded-front-assembly" },
+]

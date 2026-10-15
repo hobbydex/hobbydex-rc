@@ -1,0 +1,11 @@
+id = "part/traxxas/4981X"
+brand = "brand/traxxas"
+number = "4981X"
+name = "Spool (eliminates differential, use off-road only)(requires #4981 ring gear)"
+fits = [
+  { kit = "kit/traxxas/t-maxx", type = "direct", source = "doc/traxxas/49104-1-parts-list" },
+]
+category = "differential"
+related = [
+  { part = "part/traxxas/4981", relation = "requires", notes = "link_part_refs" },
+]

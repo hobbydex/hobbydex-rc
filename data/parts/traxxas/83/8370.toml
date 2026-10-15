@@ -6,3 +6,9 @@ category = "tire"
 wheel_size = "1.9\""
 vehicle = "touring"
 position = "rear"
+fits = [
+  { kit = "kit/traxxas/4-tec", type = "direct", source = "doc/traxxas/83124-4-parts-list" },
+]
+related = [
+  { part = "part/traxxas/8372", relation = "fits", notes = "link_part_refs" },
+]
