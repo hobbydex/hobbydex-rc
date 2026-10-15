@@ -6,20 +6,26 @@ name = "GoPro Monster Sport Super Swift (M-05)"
 kind = "kit"
 status = "discontinued"
 notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2013-09-21, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/58581-product-page-ja", "doc/tamiya/m05-manual", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58581-product-page-ja", "doc/tamiya/m05-manual", "doc/tamiya/product-classes", "doc/tamiya/spb-51545-manual"]
 contains = [
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/m05-manual" },
   { part = "part/tamiya/10555015", role = "kit", source = "doc/tamiya/m05-manual", qty = 10, step = "BA18" },
   { part = "part/tamiya/11050856", role = "kit", source = "doc/tamiya/m05-manual" },
+  { part = "part/tamiya/11053693", role = "kit", source = "doc/tamiya/spb-51545-manual" },
+  { part = "part/tamiya/11825416", role = "kit", source = "doc/tamiya/spb-51545-manual" },
+  { part = "part/tamiya/11835363", role = "kit", source = "doc/tamiya/spb-51545-manual" },
   { part = "part/tamiya/12300010", role = "kit", source = "doc/tamiya/m05-manual", qty = 1, step = "BA21" },
   { part = "part/tamiya/12500016", role = "kit", source = "doc/tamiya/m05-manual", qty = 1, step = "BC9" },
   { part = "part/tamiya/13550027", role = "kit", source = "doc/tamiya/m05-manual" },
   { part = "part/tamiya/13555048", role = "kit", source = "doc/tamiya/m05-manual", qty = 1, step = "BA17" },
   { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/m05-manual", step = "BA27" },
   { part = "part/tamiya/16095003", role = "kit", source = "doc/tamiya/m05-manual" },
+  { part = "part/tamiya/19000561", role = "kit", source = "doc/tamiya/spb-51545-manual" },
   { part = "part/tamiya/19401435", role = "kit", source = "doc/tamiya/m05-manual" },
   { part = "part/tamiya/19401436", role = "kit", source = "doc/tamiya/m05-manual" },
   { part = "part/tamiya/19401437", role = "kit", source = "doc/tamiya/m05-manual" },
+  { part = "part/tamiya/19401594", role = "kit", source = "doc/tamiya/spb-51545-manual" },
+  { part = "part/tamiya/19495800", role = "kit", source = "doc/tamiya/spb-51545-manual" },
   { part = "part/tamiya/19804159", role = "kit", source = "doc/tamiya/m05-manual", qty = 10, step = "BC2" },
   { part = "part/tamiya/19804237", role = "kit", source = "doc/tamiya/m05-manual", qty = 2, step = "BA25" },
   { part = "part/tamiya/19804285", role = "kit", source = "doc/tamiya/m05-manual", qty = 2, step = "BA1" },
@@ -32,7 +38,7 @@ contains = [
   { part = "part/tamiya/19805629", role = "kit", source = "doc/tamiya/m05-manual", qty = 4, step = "BA5" },
   { part = "part/tamiya/19805684", role = "kit", source = "doc/tamiya/m05-manual", qty = 2, step = "BA12" },
   { part = "part/tamiya/19805702", role = "kit", source = "doc/tamiya/m05-manual" },
-  { part = "part/tamiya/19805754", role = "kit", source = "doc/tamiya/m05-manual", qty = 10, step = "BA7" },
+  { part = "part/tamiya/19805754", role = "kit", source = "doc/tamiya/spb-51545-manual" },
   { part = "part/tamiya/19805756", role = "kit", source = "doc/tamiya/m05-manual", qty = 4, step = "BA15" },
   { part = "part/tamiya/19805826", role = "kit", source = "doc/tamiya/m05-manual", qty = 2, step = "BB2" },
   { part = "part/tamiya/19805859", role = "kit", source = "doc/tamiya/m05-manual", qty = 4, step = "BA2" },
@@ -69,6 +75,7 @@ contains = [
   { part = "part/tamiya/51391", role = "kit", source = "doc/tamiya/m05-manual" },
   { part = "part/tamiya/51392", role = "kit", source = "doc/tamiya/m05-manual" },
   { part = "part/tamiya/51393", role = "kit", source = "doc/tamiya/m05-manual" },
+  { part = "part/tamiya/51545", role = "kit", source = "doc/tamiya/spb-51545-manual" },
   { part = "part/tamiya/53689", role = "kit", source = "doc/tamiya/m05-manual" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/m05-manual" },
 ]

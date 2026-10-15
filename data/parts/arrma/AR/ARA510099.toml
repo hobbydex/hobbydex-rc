@@ -14,3 +14,8 @@ color = "black chrome"
 equivalent_to = [
   { spec = "spec/wheel-hex/14mm", match = "exact", notes = "Hex size from the name" },
 ]
+fits = [
+  { kit = "kit/arrma/granite", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/granite-boost", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/vorteks-boost", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]

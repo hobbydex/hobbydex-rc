@@ -1,6 +1,16 @@
 id = "part/team-associated/31385"
 brand = "brand/team-associated"
 number = "31385"
-name = "7.8x1mm Bulkhead washer"
-former_names = ["Bulkhead Washer, 7.8x3.0x1mm"]
+name = "Bulkhead Washers, 7.8x3.0x1.0 mm, blue aluminum"
+former_names = ["7.8x1mm Bulkhead washer", "Bulkhead Washer, 7.8x3.0x1mm"]
 category = "washer-shim"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/bulkhead-washers-7-8x3-0x1-0-mm-blue-aluminum/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10t-4wd", type = "direct", source = "doc/team-associated/6048-page" },
+]
+equivalent_to = [
+  { spec = "spec/washer/3x7.8x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "aluminium"

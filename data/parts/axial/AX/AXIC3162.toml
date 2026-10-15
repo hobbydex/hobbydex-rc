@@ -10,3 +10,10 @@ category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/1.5x8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
+gtin = "877493002923"
+fits = [
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/yeti-jr", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
