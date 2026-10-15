@@ -8,9 +8,18 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-m3-locknut-4-circuit-ruckus-boost/ECX1059.html" },
 ]
 fits = [
-  { kit = "kit/ecx/circuit", type = "direct", source = "doc/ecx/horizon-product-catalogue" },
+  { kit = "kit/ecx/amp-crush", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/amp-db", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/amp-mt", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/axe", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/brutus", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/circuit", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/ruckus-2wd", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/torment-2wd", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/vaterra/ascender", type = "direct", source = "doc/ecx/horizon-part-pages" },
 ]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+gtin = "605482212820"

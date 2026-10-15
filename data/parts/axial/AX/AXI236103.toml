@@ -10,3 +10,9 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/2.5x4.6x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+gtin = "605482726211"
+fits = [
+  { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/rbx10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/losi/baja-rey-2", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
