@@ -32,7 +32,7 @@ REFS = {  # field -> expected id prefix
     "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/",
     "publisher": "brand/", "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
 }
-LIST_REFS = {"documents": "doc/", "releases": "release/"}
+LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": ""}   # requires: kit or release ids, checked above
 SURFACES = {"carpet", "astro", "clay", "dirt", "asphalt", "high-grip"}   # the track surface a race kit is built for
 
 ENUMS = {
@@ -295,6 +295,9 @@ def main():
             my = d.get("model_year")
             if my is not None and not (isinstance(my, int) and 1970 <= my <= this_year + 3):
                 errors.append(f"{path}: model_year {my!r} should be a year")
+        rq = d.get("requires") if kind == "release" else None
+        if rq is not None and not (isinstance(rq, list) and rq and all(isinstance(x, str) and x.startswith(("kit/", "release/")) for x in rq)):
+            errors.append(f"{path}: requires should be a list of kit or release ids (the car the release needs, one of them)")
         su = d.get("surface") if kind in ("release", "kit") else None
         if su is not None and not (isinstance(su, list) and su and all(x in SURFACES for x in su)):
             errors.append(f"{path}: surface {su!r} should be a list of {sorted(SURFACES)}")
