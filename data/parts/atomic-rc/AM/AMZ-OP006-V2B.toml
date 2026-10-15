@@ -3,6 +3,8 @@ brand = "brand/atomic-rc"
 number = "AMZ-OP006-V2B"
 name = "Alu. Knuckle Block V2-Black (F/R for AMZ, BZ, SZ )"
 fits = [
+  { kit = "kit/atomic-rc/amr", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/bz", type = "direct", source = "doc/atomic-rc/site" },
   { kit = "kit/atomic-rc/amz", type = "direct", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site"]

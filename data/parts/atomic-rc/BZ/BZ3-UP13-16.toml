@@ -1,0 +1,19 @@
+id = "part/atomic-rc/BZ3-UP13-16"
+brand = "brand/atomic-rc"
+number = "BZ3-UP13-16"
+name = "Hard Coated 64DP Pinion 16T (BZ3, FFZ, DRZ)"
+fits = [
+  { kit = "kit/atomic-rc/bz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/drz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/ffz", type = "direct", source = "doc/atomic-rc/site" },
+]
+documents = ["doc/atomic-rc/site"]
+links = [
+  { site = "Atomic R/C", url = "https://www.rcatomic.com/atomic/index.php?main_page=product_info&products_id=6034" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/64dp-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 16
+pitch_dp = 64

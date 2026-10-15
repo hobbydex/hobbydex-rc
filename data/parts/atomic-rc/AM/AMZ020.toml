@@ -1,0 +1,21 @@
+id = "part/atomic-rc/AMZ020"
+brand = "brand/atomic-rc"
+number = "AMZ020"
+name = "7.4V 2S Lipo Pack (300mAh 35C Discharge)"
+fits = [
+  { kit = "kit/atomic-rc/amz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/amr", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/bz", type = "direct", source = "doc/atomic-rc/site" },
+]
+documents = ["doc/atomic-rc/site"]
+links = [
+  { site = "Atomic R/C", url = "https://www.rcatomic.com/atomic/index.php?main_page=product_info&products_id=5514" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 300
+c_rating = 35
+category = "battery"
