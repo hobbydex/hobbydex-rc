@@ -5,3 +5,6 @@ name = "4WD Front Wheels, 2.2 in, 12 mm Hex"
 category = "wheel"
 wheel_size = "2.2\""
 position = "front-4wd"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

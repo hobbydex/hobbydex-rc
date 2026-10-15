@@ -2,12 +2,13 @@ id = "part/team-associated/41087"
 brand = "brand/team-associated"
 number = "41087"
 name = "Screws, M2.5x10 mm SHCS"
+former_names = ["2.6x10mm SHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.6x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/screw/m2.5x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
-former_names = ["2.6x10mm SHCS"]
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2-5x10-mm-shcs/" },
 ]
