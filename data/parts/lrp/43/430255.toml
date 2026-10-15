@@ -1,0 +1,18 @@
+id = "part/lrp/430255"
+brand = "brand/lrp"
+number = "430255"
+name = "P5-HV Shorty Stock Spec GRAPHENE 6000mAh Hardcase Akku - 7.6V LiPo - 120C/60C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430255/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 6000
+c_rating = 120
+case = "shorty"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"

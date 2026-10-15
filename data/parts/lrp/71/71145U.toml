@@ -13,6 +13,7 @@ equivalent_to = [
   { spec = "spec/battery/nimh-6s-5000mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
 ]
 capacity_mah = 5000
+documents = ["doc/lrp/71145u-de-manual"]
 fits = [
   { kit = "kit/lrp/s10-blast-bx3", type = "direct", source = "doc/lrp/120210-product-page" },
   { kit = "kit/lrp/s10-blast-tc3", type = "direct", source = "doc/lrp/120203-product-page" },

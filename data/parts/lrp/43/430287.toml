@@ -1,0 +1,18 @@
+id = "part/lrp/430287"
+brand = "brand/lrp"
+number = "430287"
+name = "HV Ultra LCG Stock Spec Shorty GRAPHENE-3 3500mAh Hardcase Akku - 7.6V LiPo - 130C/65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430287/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-3500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 3500
+c_rating = 130
+case = "shorty"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
