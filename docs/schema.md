@@ -465,8 +465,10 @@ shaft_mm = 3.175
 The motor part keeps what differs between motors of one can: `kv`, `turns`
 (13.5 for a 13.5T stock motor; with `winds` the number of parallel wires of each turn, 2 for LRP's "10x2T"), `lipo_cells` ([min, max] LiPo cells, also on
 ESCs), the measured `diameter_mm`, `length_mm` and `shaft_mm`, and
-`weight_g`. Bearing sizes go in `notes` (a motor is not a set, so no
-`includes`).
+`weight_g`, and `sensored` (true for a brushless motor with Hall sensors,
+false for a sensorless one, as the maker states; a brushed motor has no
+sensors and carries no field). Bearing sizes go in `notes` (a motor is not
+a set, so no `includes`).
 
 ```toml
 name = "XeRun V10 G5 13.5T"
@@ -482,8 +484,9 @@ equivalent_to = [{ spec = "spec/motor/brushless-3652-3.175mm", match = "function
 ```
 
 ESCs are parts with category electronics and, when stated, `current_a` and
-`peak_current_a` (continuous and burst amps), `lipo_cells`, `dimensions_mm`
-and `weight_g`. A motor and ESC combo lists its components with `includes`.
+`peak_current_a` (continuous and burst amps), `lipo_cells`, `dimensions_mm`,
+`weight_g` and `sensored` (true when the ESC has a sensor port and runs
+sensored motors, false when it is sensorless only). A motor and ESC combo lists its components with `includes`.
 
 Engines (nitro and gas) are parts with category engine-fuel. A complete
 engine carries, when the maker states them: `displacement_cc`,
