@@ -1,7 +1,8 @@
 # hobbydex-rc
 
 Open RC parts database: kits, releases, parts, generic hardware specs and the
-relations between them, as plain TOML files reviewed through pull requests.
+relations between them, as plain TOML files. The data is maintained by the
+Hobbydex project itself, not crowdsourced: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Status: early. The schema is a draft that grows with the data; see
 `docs/schema.md`.
@@ -33,7 +34,7 @@ python3 -I tools/validate.py
 `tools/audit.py` lists what is still missing (parts named only by number,
 OCR-read names, screws and bearings without a spec link, kits without
 scale or power), per brand; `--list <check>` prints the entities, a
-to-do list for contributors.
+to-do list.
 
 Parts and release contents are generated from manufacturer documents by
 importers that are kept out of this repository; each generated row names its
@@ -62,8 +63,8 @@ into an integer, a float or a boolean, and a validator can't recover what was
 lost. Mistakes fail at parse time instead of surviving as corrupted data.
 That matters here because importers and agents write most of the records.
 Python reads TOML without any dependency. The cost is that TOML is less
-familiar than YAML for hand editing; most contributions are expected to come
-through tools, and the validator catches the rest.
+familiar than YAML for hand editing; the records come through tools, and
+the validator catches the rest.
 
 ## Thanks
 
@@ -87,4 +88,5 @@ The website is thanked separately in [hobbydex](https://github.com/hobbydex/hobb
   home.
 - Code (`tools/`, workflows) is under the [MIT License](LICENSE).
 
-Contributions are accepted under the same terms.
+The project writes every record itself (no outside contributions to the
+data), so it can decide how future releases of the data are licensed.
