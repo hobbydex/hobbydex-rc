@@ -1,0 +1,17 @@
+id = "part/atomic-rc/AWD226-SP"
+brand = "brand/atomic-rc"
+number = "AWD226-SP"
+name = "Delrin Spool set (for AWD226)"
+fits = [
+  { kit = "kit/atomic-rc/amz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/atomic-rc/site" },
+]
+documents = ["doc/atomic-rc/site"]
+links = [
+  { site = "Atomic R/C", url = "https://www.rcatomic.com/atomic/index.php?main_page=product_info&products_id=5605" },
+]
+category = "differential"
+material = "plastic"
+related = [
+  { part = "part/atomic-rc/AWD226", relation = "for", notes = "link_part_refs" },
+]
