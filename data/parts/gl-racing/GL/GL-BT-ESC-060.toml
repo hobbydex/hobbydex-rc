@@ -2,8 +2,12 @@ id = "part/gl-racing/GL-BT-ESC-060"
 brand = "brand/gl-racing"
 number = "GL-BT-ESC-060"
 name = "GL 32-bit brushless sensored ESC"
-documents = ["doc/gl-racing/shop"]
+documents = ["doc/gl-racing/shop", "doc/gl-racing/gl-bt-esc-060-gtr-manual"]
+sensored = true
 links = [
   { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=1133" },
 ]
 category = "electronics"
+fits = [
+  { kit = "kit/gl-racing/gl-formula-one", type = "direct", source = "doc/gl-racing/shop" },
+]
