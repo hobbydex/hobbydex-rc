@@ -10,3 +10,8 @@ category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/2.5x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
+gtin = "605482494615"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
