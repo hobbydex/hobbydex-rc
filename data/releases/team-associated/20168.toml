@@ -5,7 +5,11 @@ number = "20168"
 name = "RC28R Team Kit With Body And Tires"
 kind = "kit"
 status = "released"
-documents = ["doc/team-associated/rc28r-w-body-and-tires-manual-12-12-2025"]
+gtin = "784695201682"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc28r-team-kit-with-body-and-tires/" },
+]
+documents = ["doc/team-associated/rc28r-w-body-and-tires-manual-12-12-2025", "doc/team-associated/20168-page"]
 contains = [
   { part = "part/team-associated/21626", role = "kit", qty = 1, step = "Bag 1 - Step 1", source = "doc/team-associated/rc28r-w-body-and-tires-manual-12-12-2025" },
   { part = "part/team-associated/21627", role = "kit", qty = 2, step = "Bag 3 - Step 1", source = "doc/team-associated/rc28r-w-body-and-tires-manual-12-12-2025" },

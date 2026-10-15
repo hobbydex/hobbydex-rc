@@ -6,3 +6,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-10mm-shock-parts-tree-2-blue/AXIC3300.html" },
 ]
 category = "parts-tree"
+gtin = "816874015268"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+]
