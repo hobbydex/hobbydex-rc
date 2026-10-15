@@ -1,0 +1,18 @@
+id = "part/hpi/114288"
+brand = "brand/hpi"
+number = "114288"
+name = "BUTTON HEAD SCREW M1.7X6MM"
+pack_qty = 20
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/114288" },
+]
+fits = [
+  { kit = "kit/hpi/formula-q32", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/q32-baja-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/q32-trophy-truggy", type = "direct", source = "doc/hpi/part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m1.7x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

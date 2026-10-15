@@ -1,0 +1,19 @@
+id = "part/hpi/Z867"
+brand = "brand/hpi"
+number = "Z867"
+name = "ALUMINUM LOCK NUT M4 (PURPLE/10pcs)"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z867" },
+]
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5r", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "aluminium"
