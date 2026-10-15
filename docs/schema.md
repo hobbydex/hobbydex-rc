@@ -468,6 +468,15 @@ ESCs), the measured `diameter_mm`, `length_mm` and `shaft_mm`, and
 `weight_g`. Bearing sizes go in `notes` (a motor is not a set, so no
 `includes`).
 
+`mount_holes` gives the motor's mounting holes on its shaft end, as the
+maker states them: a list of hole patterns, each
+`{ thread = "M3", count = 2, circle_mm = 25 }`. `circle_mm` is the
+centre-to-centre distance of opposite holes, which is the bolt-circle
+diameter when there are more than two; `count` is 2, 3, 4 or 6, spaced
+evenly on that circle. A motor with two sets of holes (two at 25 mm and
+two at 30 mm) lists both. Set it only from the maker's own drawing or
+specification, never from the can size.
+
 ```toml
 name = "XeRun V10 G5 13.5T"
 kv = 4050
@@ -477,6 +486,7 @@ diameter_mm = 35.8
 length_mm = 51.5
 shaft_mm = 3.175
 weight_g = 138
+mount_holes = [{ thread = "M3", count = 2, circle_mm = 25 }]
 notes = "Bearings (Hobbywing's specifications): front 4x9x4, rear 3x8x4"
 equivalent_to = [{ spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (...)" }]
 ```
