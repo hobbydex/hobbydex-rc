@@ -1,11 +1,17 @@
 id = "part/team-saxo/TS05083"
 brand = "brand/team-saxo"
 number = "TS05083"
-name = "TS05083"
+name = "MGT Steering Shaft 1.5°"
 includes = [
   { part = "part/team-saxo/TS0501030", qty = 2, source = "doc/team-saxo/f1-180-v4-part-list" },
 ]
 fits = [
   { kit = "kit/team-saxo/f1-180", type = "direct", source = "doc/team-saxo/f1-180-v4-part-list" },
+  { kit = "kit/team-saxo/mgt-225", type = "direct", source = "doc/team-saxo/mgt-225-mgt-210-accessories" },
+  { kit = "kit/team-saxo/mgt-210", type = "direct", source = "doc/team-saxo/mgt-225-mgt-210-accessories" },
 ]
 notes = "Spare pack on the F1-180-V4 parts list"
+links = [
+  { site = "Team Saxo", url = "https://www.saxoracing.com/products/t-saxo/car-kit/mgt-225-mgt-210-accessories/copy5_of_ts05060-carbon-fiber-main-chassis-for-mgt-210" },
+]
+category = "steering"
