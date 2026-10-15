@@ -1,0 +1,17 @@
+id = "part/atomic-rc/BZ5-36"
+brand = "brand/atomic-rc"
+number = "BZ5-36"
+name = "Bearing 1.5 x 4 x 1.2"
+pack_qty = 2
+fits = [
+  { kit = "kit/atomic-rc/bz", type = "direct", source = "doc/atomic-rc/site" },
+]
+documents = ["doc/atomic-rc/site"]
+links = [
+  { site = "Atomic R/C", url = "https://www.rcatomic.com/atomic/index.php?main_page=product_info&products_id=6563" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/1.5x4x1.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"
