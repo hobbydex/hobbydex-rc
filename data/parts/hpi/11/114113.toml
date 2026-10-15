@@ -1,0 +1,17 @@
+id = "part/hpi/114113"
+brand = "brand/hpi"
+number = "114113"
+name = "Pinion Gear 11T (48DP 2mm Bore)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/114113" },
+]
+fits = [
+  { kit = "kit/hpi/micro-rs4", type = "direct", source = "doc/hpi/part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-11t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 2
+category = "pinion"
+teeth = 11
+pitch_dp = 48

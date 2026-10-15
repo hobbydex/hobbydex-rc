@@ -1,0 +1,17 @@
+id = "part/hpi/Z360"
+brand = "brand/hpi"
+number = "Z360"
+name = "BUTTON HEAD SCREW M3x30mm (HEX SOCKET/10pcs)"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z360" },
+]
+fits = [
+  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x30-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

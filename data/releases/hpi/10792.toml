@@ -7,4 +7,6 @@ kind = "rtr"
 status = "discontinued"
 documents = ["doc/hpi/10792-kit-page"]
 notes = "Release year unknown; HPI's pages state none"
-contains = []
+contains = [
+  { part = "part/hpi/85649", role = "option", source = "doc/hpi/10792-kit-page" },
+]

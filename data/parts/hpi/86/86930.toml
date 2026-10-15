@@ -8,6 +8,7 @@ links = [
 fits = [
   { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-x", type = "replaces", replaces = "part/hpi/86092", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "shock"
 shock_part = "piston"

@@ -7,4 +7,11 @@ kind = "rtr"
 status = "discontinued"
 documents = ["doc/hpi/822-kit-page"]
 notes = "Release year unknown; HPI's pages state none"
-contains = []
+contains = [
+  { part = "part/hpi/117193", role = "option", source = "doc/hpi/822-kit-page" },
+  { part = "part/hpi/80575", role = "option", source = "doc/hpi/822-kit-page" },
+  { part = "part/hpi/80579", role = "option", source = "doc/hpi/822-kit-page" },
+  { part = "part/hpi/87193", role = "option", source = "doc/hpi/822-kit-page" },
+  { part = "part/hpi/87194", role = "option", source = "doc/hpi/822-kit-page" },
+  { part = "part/hpi/9084", role = "option", source = "doc/hpi/822-kit-page" },
+]
