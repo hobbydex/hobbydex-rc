@@ -1,0 +1,14 @@
+id = "part/kyosho/1-W260705"
+brand = "brand/kyosho"
+number = "1-W260705"
+name = "Washer(M2.6x7x0.5)"
+pack_qty = 10
+fits = [
+  { kit = "kit/kyosho/nitro-tracker", type = "direct", source = "doc/kyosho/33101-nitro-tracker-spop" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+]
+category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/2.6x7x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

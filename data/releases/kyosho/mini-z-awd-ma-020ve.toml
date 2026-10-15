@@ -6,6 +6,7 @@ kind = "rtr"
 status = "released"
 documents = ["doc/kyosho/ma020ve-t12-sp", "doc/kyosho/ma020ve-t12-ex", "doc/kyosho/ma020ve-t12-im"]
 contains = [
+  { part = "part/kyosho/1-S32008TP", role = "kit", source = "doc/kyosho/ma020ve-t12-sp" },
   { part = "part/kyosho/BRG022", role = "kit", source = "doc/kyosho/ma020ve-t12-sp" },
   { part = "part/kyosho/MD003BK", role = "kit", source = "doc/kyosho/ma020ve-t12-sp" },
   { part = "part/kyosho/MD004", role = "kit", source = "doc/kyosho/ma020ve-t12-sp" },
