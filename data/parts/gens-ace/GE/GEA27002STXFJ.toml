@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA27002STXFJ"
+brand = "brand/gens-ace"
+number = "GEA27002STXFJ"
+name = "2700mAh 2S 7.4V Lipo Battery | Futaba+JST-EHR"
+gtin = "6928493317556"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2700mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2700
+c_rating = 1
+connector = "Futaba"
+dimensions_mm = [90, 31, 16]
+weight_g = 91
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gea27002stxfj" },
+]

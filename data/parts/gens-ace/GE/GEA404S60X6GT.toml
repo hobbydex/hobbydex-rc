@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA404S60X6GT"
+brand = "brand/gens-ace"
+number = "GEA404S60X6GT"
+name = "4000mAh 4S 60C 14.8V Lipo Battery | XT60 Plug"
+gtin = "6928493312407"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-4000mah", match = "functional", source = "doc/gens-ace/4s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 4000
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [162, 45, 38]
+weight_g = 408
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-4000mah-60c-14-8v" },
+]

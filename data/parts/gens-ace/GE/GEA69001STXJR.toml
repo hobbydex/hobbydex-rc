@@ -1,0 +1,17 @@
+id = "part/gens-ace/GEA69001STXJR"
+brand = "brand/gens-ace"
+number = "GEA69001STXJR"
+name = "6900mAh 1S 3.8V(HV) Lipo Battery"
+gtin = "6928493300626"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lihv-1s-6900mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lihv"
+cells = 1
+capacity_mah = 6900
+dimensions_mm = [69, 50, 18]
+weight_g = 117
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-6900mah-3-8v-1s2p-lipo-battery-pack" },
+]

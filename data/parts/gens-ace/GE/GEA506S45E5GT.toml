@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA506S45E5GT"
+brand = "brand/gens-ace"
+number = "GEA506S45E5GT"
+name = "5000mAh 6S 45C 22.2V Lipo Battery | EC5 Plug"
+gtin = "6928493309254"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-5000mah", match = "functional", source = "doc/gens-ace/6s-lipo-ec5", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 6
+capacity_mah = 5000
+c_rating = 45
+connector = "EC5"
+dimensions_mm = [155, 46, 44]
+weight_g = 683
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-5000mah-22-2v-45c-6s1p-lipo-battery-pack-with-ec5-plug" },
+]

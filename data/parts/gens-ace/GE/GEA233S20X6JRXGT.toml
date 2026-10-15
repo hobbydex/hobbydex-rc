@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA233S20X6JRXGT"
+brand = "brand/gens-ace"
+number = "GEA233S20X6JRXGT"
+name = "2300mAh 3S 20C 9.9V LiFe Battery | XT60 Plug"
+gtin = "6928493317921"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/life-3s-2300mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "life"
+cells = 3
+capacity_mah = 2300
+c_rating = 20
+connector = "XT60"
+dimensions_mm = [105, 33, 26]
+weight_g = 179
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-mini-g-tech-2300mah-9-9v-3s1p-20c-li-fe-battery-pack-for-receiver-2" },
+]

@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA503S45X9GT"
+brand = "brand/gens-ace"
+number = "GEA503S45X9GT"
+name = "5000mAh 3S 45C 11.1V Lipo Battery | XT90 Plug"
+gtin = "6928493309230"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/gens-ace/3s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 45
+connector = "XT90"
+dimensions_mm = [161, 45, 26]
+weight_g = 408
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-5000mah-11-1v-45c-3s1p-lipo-battery-with-xt90-plug" },
+]

@@ -1,0 +1,15 @@
+id = "part/gens-ace/NiMH-60D-1.2V-5000-HT"
+brand = "brand/gens-ace"
+number = "NiMH-60D-1.2V-5000-HT"
+name = "GREPOW D 5000mAh 1.2V NiMH battery"
+gtin = "6928493397886"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-1s-5000mah", match = "functional", source = "doc/gens-ace/nimh", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "nimh"
+cells = 1
+capacity_mah = 5000
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/grepow-d-5000mah-1-2v-nimh-battery" },
+]

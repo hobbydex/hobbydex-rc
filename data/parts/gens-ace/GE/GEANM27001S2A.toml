@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEANM27001S2A"
+brand = "brand/gens-ace"
+number = "GEANM27001S2A"
+name = "2700mAh 1.2V AA Battery | NiMH (4pcs)"
+gtin = "6928493369456"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-1s-2700mah", match = "functional", source = "doc/gens-ace/nimh-trx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "nimh"
+cells = 1
+capacity_mah = 2700
+pack_qty = 4
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/geanm27001s2a" },
+]

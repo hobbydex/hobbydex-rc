@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA3002S45JST"
+brand = "brand/gens-ace"
+number = "GEA3002S45JST"
+name = "300mAh 2S 45C 7.4V Lipo Battery | JST-SYP Plug"
+gtin = "6928493310366"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-300mah", match = "functional", source = "doc/gens-ace/2s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 300
+c_rating = 45
+connector = "JST-SYP"
+dimensions_mm = [40, 20, 12]
+weight_g = 18
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-300mah-7-4v-45c-2s1p-lipo-battery-pack-with-jst-syp-plug" },
+]

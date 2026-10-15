@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA284S60X6GT"
+brand = "brand/gens-ace"
+number = "GEA284S60X6GT"
+name = "2800mAh 4S 60C 14.8V Lipo Battery | XT60 Plug"
+gtin = "6928493311080"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-2800mah", match = "functional", source = "doc/gens-ace/4s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 2800
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [116, 34, 34]
+weight_g = 282
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-soaring-2800mah-14-8v-60c-4s1p-lipo-battery-pack-with-xt60-plug" },
+]

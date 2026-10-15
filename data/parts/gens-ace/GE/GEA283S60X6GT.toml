@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA283S60X6GT"
+brand = "brand/gens-ace"
+number = "GEA283S60X6GT"
+name = "2800mAh 3S 60C 11.1V Lipo Battery | XT60 Plug"
+gtin = "6928493311073"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2800mah", match = "functional", source = "doc/gens-ace/3s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2800
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [113, 34, 25]
+weight_g = 218
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-soaring-2800mah-11-1v-60c-3s1p-lipo-battery-pack-with-xt60-plug" },
+]

@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA183S45X6GT"
+brand = "brand/gens-ace"
+number = "GEA183S45X6GT"
+name = "1800mAh 3S 45C 11.1V Lipo Battery | XT60 Plug"
+gtin = "6928493309070"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1800mah", match = "functional", source = "doc/gens-ace/3s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 1800
+c_rating = 45
+connector = "XT60"
+dimensions_mm = [94, 31, 25]
+weight_g = 0
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-1800mah-11-1v-45c-3s1p-lipo-battery-pack-with-xt60-plug" },
+]

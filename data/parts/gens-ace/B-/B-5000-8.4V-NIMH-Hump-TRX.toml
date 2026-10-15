@@ -1,0 +1,18 @@
+id = "part/gens-ace/B-5000-8.4V-NIMH-Hump-TRX"
+brand = "brand/gens-ace"
+number = "B-5000-8.4V-NIMH-Hump-TRX"
+name = "5000mAh 7S 8.4V Hump Battery | Deans Plug | NiMH"
+gtin = "6928493354209"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-7s-5000mah", match = "functional", source = "doc/gens-ace/nimh-trx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "nimh"
+cells = 7
+capacity_mah = 5000
+connector = "Traxxas"
+dimensions_mm = [137, 45, 45]
+weight_g = 499
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-traxxas-5000mah-8-4v-7-cell-nimh-hump-battery-pack-with-t-connector" },
+]

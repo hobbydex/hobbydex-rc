@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA374S60X6GT"
+brand = "brand/gens-ace"
+number = "GEA374S60X6GT"
+name = "3700mAh 4S 60C 14.8V Lipo Battery | XT60 Plug"
+gtin = "6928493312377"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-3700mah", match = "functional", source = "doc/gens-ace/4s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 3700
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [137, 42, 28]
+weight_g = 370
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-3700mah-60c-14-8v" },
+]

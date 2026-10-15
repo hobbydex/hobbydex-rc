@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA4503S30JST"
+brand = "brand/gens-ace"
+number = "GEA4503S30JST"
+name = "450mAh 3S 30C 11.1V Lipo Battery | JST-SYP Plug"
+gtin = "6928493302309"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-450mah", match = "functional", source = "doc/gens-ace/3s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 450
+c_rating = 30
+connector = "JST-SYP"
+dimensions_mm = [59, 31, 14]
+weight_g = 43
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-soaring-450mah-11-1v-30c-3s1p-lipo-battery-pack-with-jst-syp-plug-2287" },
+]
