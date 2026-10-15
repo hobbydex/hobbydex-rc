@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "VZW420"
 name = "Rear Stabilizer Holder"
 name_ja = "リヤスタビホルダー"
+gtin = "4548565195787"
 category = "suspension"
-documents = ["doc/kyosho/vzw420-rear-stabilizer-holder"]
+documents = ["doc/kyosho/vzw420-rear-stabilizer-holder", "doc/kyosho/vzw420-product-page"]
+fits = [
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
+]

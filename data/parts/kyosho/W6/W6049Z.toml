@@ -1,0 +1,13 @@
+id = "part/kyosho/W6049Z"
+brand = "brand/kyosho"
+number = "W6049Z"
+name = "Pinion Gear(64P/49T)"
+fits = [
+  { kit = "kit/kyosho/tf-7", type = "direct", source = "doc/kyosho/30026-tf7-parts-list-v02" },
+  { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/64dp-49t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+pitch_dp = 64
