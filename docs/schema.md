@@ -69,7 +69,7 @@ every part of the brand needs a `number`.
 A model line, independent of year or edition. `category` is the kit type:
 buggy | truggy | stadium-truck | short-course | monster | desert-truck |
 truck | race-truck | crawler | touring | formula | pan-car | rally |
-street-basher | drift | drag | lowrider | speed-run | kart | motorcycle |
+street-basher | drift | drag | lowrider | oval | speed-run | kart | motorcycle |
 tank | construction | boat, or car for a car that fits none of them. drag
 is a straight-line drag racer (no prep drag cars, drag trucks); lowrider a
 hopping lowrider on hydraulics or servo-lifted suspension. `scale` as "1/10".
