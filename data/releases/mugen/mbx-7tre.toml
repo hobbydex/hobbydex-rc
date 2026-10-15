@@ -4,7 +4,7 @@ brand = "brand/mugen"
 name = "MBX-7TRE"
 kind = "kit"
 status = "discontinued"
-documents = ["doc/mugen/mbx-7tre-part-list", "doc/mugen/partlist-index"]
+documents = ["doc/mugen/mbx-7tre-part-list", "doc/mugen/partlist-index", "doc/mugen/mbx-7tre-part-list-ja"]
 contains = [
   { part = "part/mugen/E2107", role = "kit", source = "doc/mugen/mbx-7tre-part-list" },
   { part = "part/mugen/E2108", role = "kit", source = "doc/mugen/mbx-7tre-part-list" },
@@ -323,4 +323,6 @@ contains = [
   { part = "part/mugen/B0756T", role = "kit", source = "doc/mugen/mbx-7tre-part-list" },
   { part = "part/mugen/P0402", role = "kit", source = "doc/mugen/mbx-7tre-part-list" },
   { part = "part/mugen/P0403", role = "kit", source = "doc/mugen/mbx-7tre-part-list" },
+  { part = "part/mugen/E2552", role = "option", source = "doc/mugen/mbx-7tre-part-list" },
+  { part = "part/mugen/E2555", role = "kit", source = "doc/mugen/mbx-7tre-part-list" },
 ]

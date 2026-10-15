@@ -4,7 +4,7 @@ brand = "brand/mugen"
 name = "MRX6X"
 kind = "kit"
 status = "discontinued"
-documents = ["doc/mugen/mrx6x-part-list", "doc/mugen/partlist-index"]
+documents = ["doc/mugen/mrx6x-part-list", "doc/mugen/partlist-index", "doc/mugen/mrx6x-part-list-ja"]
 contains = [
   { part = "part/mugen/A2210", role = "kit", source = "doc/mugen/mrx6x-part-list" },
   { part = "part/mugen/A2807", role = "kit", source = "doc/mugen/mrx6x-part-list" },
@@ -221,4 +221,5 @@ contains = [
   { part = "part/mugen/T2805", role = "kit", source = "doc/mugen/mrx6x-part-list" },
   { part = "part/mugen/P0402", role = "kit", source = "doc/mugen/mrx6x-part-list" },
   { part = "part/mugen/P0403", role = "option", source = "doc/mugen/mrx6x-part-list" },
+  { part = "part/mugen/H0555D", role = "kit", source = "doc/mugen/mrx6x-part-list" },
 ]

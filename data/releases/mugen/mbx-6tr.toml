@@ -4,7 +4,7 @@ brand = "brand/mugen"
 name = "MBX-6TR"
 kind = "kit"
 status = "discontinued"
-documents = ["doc/mugen/mbx-6tr-part-list", "doc/mugen/partlist-index"]
+documents = ["doc/mugen/mbx-6tr-part-list", "doc/mugen/partlist-index", "doc/mugen/mbx-6tr-part-list-ja"]
 contains = [
   { part = "part/mugen/B0104", role = "kit", source = "doc/mugen/mbx-6tr-part-list" },
   { part = "part/mugen/E0104-B", role = "kit", source = "doc/mugen/mbx-6tr-part-list" },
@@ -305,4 +305,6 @@ contains = [
   { part = "part/mugen/B0751T", role = "option", source = "doc/mugen/mbx-6tr-part-list" },
   { part = "part/mugen/B0752T", role = "option", source = "doc/mugen/mbx-6tr-part-list" },
   { part = "part/mugen/P0401", role = "option", source = "doc/mugen/mbx-6tr-part-list" },
+  { part = "part/mugen/E0321-B", role = "kit", source = "doc/mugen/mbx-6tr-part-list" },
+  { part = "part/mugen/E0411", role = "kit", source = "doc/mugen/mbx-6tr-part-list" },
 ]
