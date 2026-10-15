@@ -4,9 +4,9 @@ brand = "brand/tamiya"
 number = "58527"
 name = "The Hornet Jun Watanabe"
 kind = "kit"
-status = "released"
-notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58527-manual"]
+status = "discontinued"
+notes = "Name and chassis from the manual's cover; Tamiya's Japanese page gives 2025-08-09, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+documents = ["doc/tamiya/58527-manual", "doc/tamiya/58527-product-page-ja", "doc/tamiya/product-classes"]
 contains = [
   { part = "part/tamiya/10004839", role = "kit", source = "doc/tamiya/58527-manual", step = "MR6" },
   { part = "part/tamiya/10007505", role = "kit", source = "doc/tamiya/58527-manual" },
@@ -98,3 +98,5 @@ contains = [
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58527", kind = "fan-site" },
 ]
+released = "2012-03"
+year = 2012
