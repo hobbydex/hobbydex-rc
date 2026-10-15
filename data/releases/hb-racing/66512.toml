@@ -5,9 +5,10 @@ number = "66512"
 name = "Lightning GT10"
 kind = "rtr"
 status = "discontinued"
-documents = ["doc/hb-racing/66512-kit-page", "doc/hb-racing/66512-model-page"]
+documents = ["doc/hb-racing/66512-kit-page", "doc/hb-racing/66512-model-page", "doc/hb-racing/hotbodiesonline-part-pages"]
 notes = "Sold under the Hot Bodies name, before the brand became HB Racing in 2016; release year unknown: the archived pages state none"
 contains = [
+  { part = "part/hb-racing/HB31500", role = "option", source = "doc/hb-racing/hotbodiesonline-part-pages" },
   { part = "part/hb-racing/HB61716", role = "option", source = "doc/hb-racing/66512-kit-page" },
   { part = "part/hb-racing/HB66870", role = "option", source = "doc/hb-racing/66512-kit-page" },
   { part = "part/hb-racing/HB66871", role = "option", source = "doc/hb-racing/66512-kit-page" },
