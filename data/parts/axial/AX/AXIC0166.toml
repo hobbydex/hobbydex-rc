@@ -10,3 +10,11 @@ category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/1.5x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
+gtin = "877493009649"
+fits = [
+  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/rbx10", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
+]

@@ -3,6 +3,14 @@ brand = "brand/hpi"
 number = "Z273"
 name = "PIN 1.6x8mm"
 pack_qty = 12
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z273" },
+]
+fits = [
+  { kit = "kit/hpi/cyber-10b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/pro-4", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/1.6x8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },

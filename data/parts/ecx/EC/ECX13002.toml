@@ -6,3 +6,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-2.4ghz-surface-transmitter-2-channel-v3/ECX13002.html" },
 ]
 category = "electronics"
+gtin = "605482059166"
+fits = [
+  { kit = "kit/ecx/amp-db", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/amp-mt", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/barrage", type = "direct", source = "doc/ecx/horizon-part-pages" },
+]

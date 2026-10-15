@@ -1,0 +1,16 @@
+id = "part/hpi/Z419"
+brand = "brand/hpi"
+number = "Z419"
+name = "CAP HEAD SCREW M2.6x35mm"
+pack_qty = 10
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z419" },
+]
+fits = [
+  { kit = "kit/hpi/cup-racer", type = "direct", source = "doc/hpi/part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x35-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

@@ -10,10 +10,10 @@ fits = [
   { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18", type = "replaces", replaces = "part/hpi/160819", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/hpi/venture18", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/hpi/venture18-cc", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/hpi/venture18-u4", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/venture18", type = "replaces", replaces = "part/hpi/160819", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "shock"
 shock_part = "complete"

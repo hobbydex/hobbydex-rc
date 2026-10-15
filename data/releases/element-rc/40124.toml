@@ -9,7 +9,7 @@ gtin = "784695401242"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/element/cars_and_trucks/Enduro/Trail_Truck_Zuul_Tan/" },
 ]
-documents = ["doc/element-rc/40124-page", "doc/element-rc/pressrelease-052220-3d-engine-parts", "doc/element-rc/enduro-handout-2019-1", "doc/element-rc/enduro-handout-2019-2", "doc/element-rc/lipo-safety-instructions-and-warnings", "doc/element-rc/enduro-zuul-manual", "doc/element-rc/pressrelease-082223-40124-enduro-zuul-tan", "doc/element-rc/pressrelease-100423-40124-zuul-tan-parts-list", "doc/element-rc/pressrelease-010521-reedy-27461-550-crawler", "doc/element-rc/reedy-esc-sc480x-manual-online-r2", "doc/element-rc/xp130-dvc-manual-r2-online", "doc/element-rc/pressrelease-030719-reedy-27424-27434-radon2", "doc/element-rc/pressrelease-042919-sp281-element-pit-mat", "doc/element-rc/scale-mini-boxes-enduro", "doc/element-rc/videos-rtrs-kits", "doc/element-rc/pressrelease-013124-bushido-plus-parts-list2"]
+documents = ["doc/element-rc/40124-page", "doc/element-rc/pressrelease-052220-3d-engine-parts", "doc/element-rc/enduro-handout-2019-1", "doc/element-rc/enduro-handout-2019-2", "doc/element-rc/lipo-safety-instructions-and-warnings", "doc/element-rc/enduro-zuul-manual", "doc/element-rc/pressrelease-082223-40124-enduro-zuul-tan", "doc/element-rc/pressrelease-100423-40124-zuul-tan-parts-list", "doc/element-rc/pressrelease-010521-reedy-27461-550-crawler", "doc/element-rc/reedy-esc-sc480x-manual-online-r2", "doc/element-rc/xp130-dvc-manual-r2-online", "doc/element-rc/pressrelease-030719-reedy-27424-27434-radon2", "doc/element-rc/pressrelease-042919-sp281-element-pit-mat", "doc/element-rc/scale-mini-boxes-enduro", "doc/element-rc/videos-rtrs-kits", "doc/element-rc/pressrelease-013124-bushido-plus-parts-list2", "doc/team-associated/videos-rtrs-kits"]
 contains = [
   { part = "part/team-associated/21173", role = "kit", qty = 2, step = "Bag 10 - Gate 04 Cage", source = "doc/element-rc/enduro-zuul-manual" },
   { part = "part/team-associated/2308", role = "kit", qty = 2, step = "Bag 7 - Gate 10 Links; Bag 9 - Gate 04 Shock", source = "doc/element-rc/enduro-zuul-manual" },
@@ -87,6 +87,7 @@ contains = [
   { part = "part/element-rc/42275", role = "kit", qty = 2, step = "Bag 10 - Gate 02 Cage", source = "doc/element-rc/enduro-zuul-manual" },
   { part = "part/element-rc/42354", role = "kit", qty = 1, step = "Bag 10 - Gate 03 Cage", source = "doc/element-rc/enduro-zuul-manual" },
   { part = "part/element-rc/42356", role = "kit", qty = 32, step = "Bag 10 - Gate 03 Cage; Bag 10 - Gate 04 Cage", source = "doc/element-rc/enduro-zuul-manual" },
+  { part = "part/element-rc/42357", role = "kit", source = "doc/element-rc/pressrelease-100423-40124-zuul-tan-parts-list" },
   { part = "part/team-associated/4689", role = "kit", qty = 1, step = "Bag 7 - Gate 05 Links", source = "doc/element-rc/enduro-zuul-manual" },
   { part = "part/team-associated/5407", role = "kit", qty = 4, step = "Bag 9 - Gate 01 Shock; Bag 10 - Gate 04 Cage", source = "doc/element-rc/enduro-zuul-manual" },
   { part = "part/team-associated/6299", role = "kit", qty = 2, step = "Bag 9 - Gate 01 Shock", source = "doc/element-rc/enduro-zuul-manual" },
@@ -108,4 +109,5 @@ contains = [
   { part = "part/team-associated/91563", role = "kit", qty = 5, step = "Bag 4 - Gate 01 Gearbox; Bag 4 - Gate 02 Gearbox; Bag 5 - Gate 02 Front Axle", source = "doc/element-rc/enduro-zuul-manual" },
   { part = "part/team-associated/9654", role = "kit", qty = 1, step = "Bag 4 - Gate 03 Gearbox", source = "doc/element-rc/enduro-zuul-manual" },
   { part = "part/team-associated/1336", role = "listed", source = "doc/element-rc/enduro-zuul-manual" },
+  { part = "part/element-rc/42355", role = "option", source = "doc/element-rc/pressrelease-100423-40124-zuul-tan-parts-list" },
 ]

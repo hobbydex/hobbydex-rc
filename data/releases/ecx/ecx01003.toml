@@ -8,6 +8,7 @@ status = "discontinued"
 gtin = "605482593769"
 documents = ["doc/ecx/ecx01003-manual-multi", "doc/ecx/ecx01003-manualaddendum-multi", "doc/ecx/ecx01003-product-page"]
 contains = [
+  { part = "part/ecx/ECX1015", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX210003", role = "kit", source = "doc/ecx/ecx01003-manual-multi" },
   { part = "part/ecx/ECX211005", role = "kit", source = "doc/ecx/ecx01003-manual-multi" },
   { part = "part/ecx/ECX211006", role = "kit", source = "doc/ecx/ecx01003-manual-multi" },
