@@ -88,5 +88,7 @@ The website is thanked separately in [hobbydex](https://github.com/hobbydex/hobb
   home.
 - Code (`tools/`, workflows) is under the [MIT License](LICENSE).
 
-The project writes every record itself (no outside contributions to the
-data), so it can decide how future releases of the data are licensed.
+The data stays open source. The project writes every record itself (no
+direct modifications from outside), so each record keeps a clear
+attribution path: written by the project from a named manufacturer
+source.

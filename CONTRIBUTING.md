@@ -1,7 +1,10 @@
 # Contributing
 
-Hobbydex is not crowdsourced. The project maintains the data and the tools
-that build it; pull requests against `data/` are closed without review.
+Hobbydex is not crowdsourced. The data is open source (CC0), but the
+project maintains it and the tools that build it itself, so that every
+record keeps a clear attribution path: written by the project from a named
+manufacturer source. Pull requests against `data/` are closed without
+review.
 
 What helps: an issue that tells us about
 
