@@ -4,6 +4,12 @@ number = "32173"
 name = "Nitro Motor ZR.21 Spec.4 Pullstart"
 category = "engine-fuel"
 category_source = "curated"
+weight_g = 410
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/32173/" },
+]
+documents = ["doc/lrp/32173-manual", "doc/lrp/32173-exploded-view"]
+supersedes = "part/lrp/32172"
 displacement_cc = 3.49
 engine_class = ".21"
 bore_mm = 16.4
@@ -11,7 +17,3 @@ stroke_mm = 16.4
 output_hp = 2.12
 output_rpm = 35300
 fuel = "nitro"
-weight_g = 410
-links = [
-  { site = "LRP", url = "https://www.lrp.cc/de/produkt/32173/" },
-]

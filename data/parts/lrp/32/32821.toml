@@ -4,6 +4,12 @@ number = "32821"
 name = "Nitro Motor ZR.32 Spec.4 Pullstart"
 category = "engine-fuel"
 category_source = "curated"
+weight_g = 420
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/32821/" },
+]
+documents = ["doc/lrp/32821-manual", "doc/lrp/32821-exploded-view"]
+supersedes = "part/lrp/32820"
 displacement_cc = 5.24
 engine_class = ".32"
 bore_mm = 19.8
@@ -11,7 +17,3 @@ stroke_mm = 17.0
 output_hp = 4.31
 output_rpm = 33300
 fuel = "nitro"
-weight_g = 420
-links = [
-  { site = "LRP", url = "https://www.lrp.cc/de/produkt/32821/" },
-]

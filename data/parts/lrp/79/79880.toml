@@ -1,0 +1,17 @@
+id = "part/lrp/79880"
+brand = "brand/lrp"
+number = "79880"
+name = "LiPo 3600 \"Competition Car Line\" - 11.1V - 28C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/79880/" },
+]
+chemistry = "lipo"
+cells = 3
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 3600
+c_rating = 28
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"

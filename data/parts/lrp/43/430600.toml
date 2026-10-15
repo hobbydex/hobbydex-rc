@@ -13,6 +13,9 @@ equivalent_to = [
   { spec = "spec/battery/nimh-5s-1600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
 ]
 capacity_mah = 1600
+dimensions_mm = [50, 30, 32]
+weight_g = 116
+documents = ["doc/lrp/430600-manual"]
 fits = [
   { kit = "kit/lrp/s8-rebel-bx3", type = "direct", source = "doc/lrp/131330-product-page" },
 ]

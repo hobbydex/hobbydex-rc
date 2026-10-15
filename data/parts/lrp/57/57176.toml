@@ -4,11 +4,11 @@ number = "57176"
 name = "V10 SPEC.6 17x2T"
 category = "motor"
 category_source = "curated"
-turns = 17
-winds = 2
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/57176/" },
 ]
+turns = 17
+winds = 2
 lipo_cells = [1, 2]
 diameter_mm = 35.9
 shaft_mm = 3.175
@@ -18,6 +18,7 @@ equivalent_to = [
 ]
 notes = "Winding 17x2T; No-load speed 26,500 rpm at 7.2 V"
 documents = ["doc/lrp/57176-manual"]
+supersedes = "part/lrp/57672"
 fits = [
   { kit = "kit/lrp/s10-blast-bx3", type = "direct", source = "doc/lrp/120210-product-page" },
   { kit = "kit/lrp/s10-blast-tc3", type = "direct", source = "doc/lrp/120203-product-page" },
