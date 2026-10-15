@@ -300,11 +300,11 @@ def main():
             errors.append(f"{path}: surface {su!r} should be a list of {sorted(SURFACES)}")
         mh = d.get("mount_holes") if kind == "part" else None
         if mh is not None and (d.get("category") != "motor" or not isinstance(mh, list) or not mh or not all(
-                isinstance(h, dict) and set(h) <= {"thread", "count", "circle_mm"} and {"thread", "count", "circle_mm"} <= set(h)
+                isinstance(h, dict) and set(h) <= {"thread", "count", "circle_mm"} and {"thread", "circle_mm"} <= set(h)
                 and isinstance(h["thread"], str) and re.fullmatch(r"M\d+(\.\d+)?", h["thread"])
-                and h["count"] in (2, 3, 4, 6) and isinstance(h["circle_mm"], (int, float)) and not isinstance(h["circle_mm"], bool)
+                and h.get("count", 2) in (2, 3, 4, 6, 8, 12) and not isinstance(h.get("count"), bool) and isinstance(h["circle_mm"], (int, float)) and not isinstance(h["circle_mm"], bool)
                 and 5 <= h["circle_mm"] <= 80 for h in mh)):
-            errors.append(f"{path}: mount_holes should be a list of {{ thread = \"M3\", count = 2|3|4|6, circle_mm = 5..80 }} on a motor")
+            errors.append(f"{path}: mount_holes should be a list of {{ thread = \"M3\", count = 2|3|4|6|8|12 (optional), circle_mm = 5..80 }} on a motor")
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
