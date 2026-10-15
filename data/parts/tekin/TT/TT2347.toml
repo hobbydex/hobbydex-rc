@@ -9,6 +9,7 @@ diameter_mm = 40
 length_mm = 77
 shaft_mm = 5
 weight_g = 368
+mount_holes = [{ thread = "M3", circle_mm = 25.4 }, { thread = "M4", circle_mm = 25.4 }]
 equivalent_to = [
   { spec = "spec/motor/brushless-4077-5mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 40 mm, length 77 mm, shaft 5 mm)" },
 ]
