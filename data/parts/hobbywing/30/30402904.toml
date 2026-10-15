@@ -10,6 +10,7 @@ diameter_mm = 56
 length_mm = 90.5
 shaft_mm = 8
 weight_g = 885
+mount_holes = [{ thread = "M4", count = 4, circle_mm = 30 }, { thread = "M4", count = 2, circle_mm = 30 }, { thread = "M4", count = 2, circle_mm = 30 }]
 notes = "Bearings (Hobbywing's specifications): front 8x22x7, rear 8x19x6"
 equivalent_to = [
   { spec = "spec/motor/brushless-5690-8mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 56 mm, length 90.5 mm, shaft 8 mm)" },
