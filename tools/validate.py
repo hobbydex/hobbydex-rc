@@ -308,6 +308,10 @@ def main():
                 and h.get("count", 2) in (2, 3, 4, 6, 8, 12) and not isinstance(h.get("count"), bool) and isinstance(h["circle_mm"], (int, float)) and not isinstance(h["circle_mm"], bool)
                 and 5 <= h["circle_mm"] <= 80 for h in mh)):
             errors.append(f"{path}: mount_holes should be a list of {{ thread = \"M3\", count = 2|3|4|6|8|12 (optional), circle_mm = 5..80 }} on a motor")
+        mc = d.get("motor_can_mm") if kind == "part" else None
+        if mc is not None and (isinstance(mc, bool) or not isinstance(mc, (int, float)) or not 15 <= mc <= 80
+                               or d.get("category") not in ("motor", "electronics", "chassis")):
+            errors.append(f"{path}: motor_can_mm should be the can diameter 15..80 (mm) on a motor heat sink or fan mount (category motor, electronics or chassis)")
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
