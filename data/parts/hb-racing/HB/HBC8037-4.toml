@@ -1,0 +1,14 @@
+id = "part/hb-racing/HBC8037-4"
+brand = "brand/hb-racing"
+number = "HBC8037-4"
+name = "ALUM. ANODIZED CHASSIS 7075"
+links = [
+  { site = "Hot Bodies (archived)", url = "https://web.archive.org/web/20100116205114/http://hotbodiesonline.com/products/en/hbc8037-4.html" },
+]
+fits = [
+  { kit = "kit/hb-racing/lightning-2", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/lightning-2", type = "replaces", replaces = "part/hb-racing/HBC8037-3", source = "doc/hb-racing/hotbodiesonline-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "chassis"
+material = "aluminium"
+material_grade = "7075"
