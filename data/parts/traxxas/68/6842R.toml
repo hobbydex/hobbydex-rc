@@ -3,3 +3,9 @@ brand = "brand/traxxas"
 number = "6842R"
 name = "Spur gear, 50-tooth (0.8 metric pitch, compatible with 32-pitch) (for Slash 4x4 center differential)"
 category = "differential"
+fits = [
+  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67010-4-parts-list" },
+  { kit = "kit/traxxas/rustler-4x4", type = "direct", source = "doc/traxxas/67097-4-parts-list" },
+  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/traxxas/68154-4-parts-list" },
+  { kit = "kit/traxxas/jato", type = "direct", source = "doc/traxxas/90154-4-parts-list" },
+]

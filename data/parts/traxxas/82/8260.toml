@@ -6,3 +6,21 @@ pack_qty = 2
 category = "shock"
 shock_part = "complete"
 material = "aluminium"
+fits = [
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/110056-4-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88086-4-parts-list" },
+  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/traxxas/24054-1-exploded-front-assembly" },
+  { kit = "kit/traxxas/bigfoot", type = "direct", source = "doc/traxxas/36034-1-exploded-body-assembly" },
+  { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/traxxas/36054-61-exploded-chassis-assembly" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37054-1-exploded-front-assembly" },
+  { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/traxxas/56036-4-exploded-front-assembly" },
+  { kit = "kit/traxxas/summit", type = "direct", source = "doc/traxxas/56076-1-exploded-driveshafts-assembly" },
+  { kit = "kit/traxxas/skully", type = "direct", source = "doc/traxxas/36064-1-exploded-front-assembly" },
+  { kit = "kit/traxxas/e-maxx", type = "direct", source = "doc/traxxas/39036-4-exploded-chassis-assembly" },
+  { kit = "kit/traxxas/bandit", type = "replaces", replaces = "part/traxxas/8260A", source = "doc/traxxas/24054-1-exploded-front-assembly", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/bigfoot", type = "replaces", replaces = "part/traxxas/8260A", source = "doc/traxxas/36034-1-exploded-body-assembly", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", replaces = "part/traxxas/8260A", source = "doc/traxxas/37054-1-exploded-front-assembly", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/skully", type = "replaces", replaces = "part/traxxas/8260A", source = "doc/traxxas/36064-1-exploded-front-assembly", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/stampede-2wd", type = "replaces", replaces = "part/traxxas/8260A", source = "doc/traxxas/36054-61-exploded-chassis-assembly", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/bandit", type = "replaces", replaces = "part/traxxas/8260R", source = "doc/traxxas/24054-1-exploded-front-assembly", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -1,0 +1,13 @@
+id = "part/traxxas/2428"
+brand = "brand/traxxas"
+number = "2428"
+name = "Gear, 12-T pinion (48-pitch) (fits 3mm shaft)/ set screw"
+fits = [
+  { kit = "kit/traxxas/slash-1-16", type = "direct", source = "doc/traxxas/70054-8-parts-list" },
+  { kit = "kit/traxxas/rally", type = "direct", source = "doc/traxxas/74054-4-parts-list" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 3
+category = "pinion"

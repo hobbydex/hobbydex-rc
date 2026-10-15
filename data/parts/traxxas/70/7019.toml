@@ -1,0 +1,16 @@
+id = "part/traxxas/7019"
+brand = "brand/traxxas"
+number = "7019"
+name = "Ball bearings, blue rubber sealed (4x8x3mm)"
+pack_qty = 2
+fits = [
+  { kit = "kit/traxxas/e-revo-1-16", type = "direct", source = "doc/traxxas/71054-8-parts-list" },
+  { kit = "kit/traxxas/summit-1-16", type = "direct", source = "doc/traxxas/72054-5-parts-list" },
+  { kit = "kit/traxxas/slash-1-16", type = "direct", source = "doc/traxxas/70054-8-parts-list" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "rubber"
+category = "bearing"

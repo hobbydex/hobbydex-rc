@@ -3,4 +3,8 @@ brand = "brand/traxxas"
 number = "6928-ORNG"
 name = "Body, Slash® 4X4 (also fits Slash® VXL & Slash® 2WD), orange & blue (painted, decals applied) (assembled with front & rear latches for clipless mounting)"
 category = "body"
-range = "traxxas/6928-colours"
+range = "traxxas/6928-body-slash-4x4-also-fits-slash-vxl-slash-2wd-dec-e7f5-colours"
+fits = [
+  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/traxxas/58214-4-parts-list" },
+  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/traxxas/68277-4-parts-list" },
+]

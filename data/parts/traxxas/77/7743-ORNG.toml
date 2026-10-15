@@ -9,9 +9,10 @@ material_grade = "6061-T6"
 color = "orange"
 range = "traxxas/7743-colours"
 fits = [
+  { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },
   { kit = "kit/traxxas/funco", type = "replaces", replaces = "part/traxxas/7743", source = "doc/traxxas/109076-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/traxxas/maxx", type = "replaces", replaces = "part/traxxas/7743", source = "doc/traxxas/89087-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/traxxas/x-maxx", type = "replaces", replaces = "part/traxxas/7743", source = "doc/traxxas/77097-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/maxx", type = "replaces", replaces = "part/traxxas/7743", source = "doc/traxxas/89086-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/x-maxx", type = "replaces", replaces = "part/traxxas/7743", source = "doc/traxxas/77096-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/x-monster", type = "replaces", replaces = "part/traxxas/7743", source = "doc/traxxas/77036-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/xrt", type = "replaces", replaces = "part/traxxas/7743", source = "doc/traxxas/78086-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
 ]

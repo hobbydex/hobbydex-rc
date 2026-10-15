@@ -7,3 +7,12 @@ category = "bearing"
 equivalent_to = [
   { spec = "spec/bearing/5x11x4", match = "close", notes = "A plain bushing, 5x11x4; the ball bearing of that size replaces it" },
 ]
+fits = [
+  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/traxxas/24054-8-parts-list" },
+  { kit = "kit/traxxas/bigfoot", type = "direct", source = "doc/traxxas/36034-8-parts-list" },
+  { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/traxxas/36254-8-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37054-8-parts-list" },
+  { kit = "kit/traxxas/nitro-rustler", type = "direct", source = "doc/traxxas/44096-3-parts-list" },
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/82234-4-parts-list" },
+  { kit = "kit/traxxas/skully", type = "direct", source = "doc/traxxas/36064-1-exploded-front-assembly" },
+]

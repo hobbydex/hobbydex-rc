@@ -7,3 +7,7 @@ category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m4-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+fits = [
+  { kit = "kit/traxxas/rustler-4x4", type = "direct", source = "doc/traxxas/67464-4-parts-list" },
+  { kit = "kit/traxxas/sledge", type = "direct", source = "doc/traxxas/95096-4-parts-list" },
+]

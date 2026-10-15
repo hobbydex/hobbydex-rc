@@ -8,3 +8,9 @@ equivalent_to = [
   { spec = "spec/washer/6x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "plastic"
+fits = [
+  { kit = "kit/traxxas/nitro-slash", type = "direct", source = "doc/traxxas/44056-3-parts-list" },
+  { kit = "kit/traxxas/t-maxx", type = "direct", source = "doc/traxxas/49077-3-parts-list" },
+  { kit = "kit/traxxas/revo", type = "direct", source = "doc/traxxas/53097-3-parts-list" },
+  { kit = "kit/traxxas/slayer-pro-4x4", type = "direct", source = "doc/traxxas/59076-3-parts-list" },
+]

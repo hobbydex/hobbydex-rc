@@ -5,3 +5,7 @@ name = "Half shafts, center (internal splined, front (2) & internal splined, rea
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
 category = "drivetrain"
 material = "plastic"
+fits = [
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/82010-4-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88086-4-parts-list" },
+]

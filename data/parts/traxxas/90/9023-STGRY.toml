@@ -5,3 +5,7 @@ name = "Nerf bars, chassis (steel gray)"
 pack_qty = 2
 category = "bumper-guard"
 material = "steel"
+fits = [
+  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67454-4-parts-list" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", replaces = "part/traxxas/9023", source = "doc/traxxas/67454-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+]

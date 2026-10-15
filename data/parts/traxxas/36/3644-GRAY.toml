@@ -4,3 +4,7 @@ number = "3644-GRAY"
 name = "Turnbuckles, camber link, 39mm (steel) (69mm center to center) (assembled with rod ends and hollow balls) (1 left, 1 right)"
 category = "ball-end"
 material = "steel"
+fits = [
+  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/traxxas/58434-4-parts-list" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", replaces = "part/traxxas/3644", source = "doc/traxxas/58434-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+]

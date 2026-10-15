@@ -2,4 +2,7 @@ id = "part/traxxas/6250"
 brand = "brand/traxxas"
 number = "6250"
 name = "TRX-4M® Brushless Power System, waterproof (includes ECM Brushless electronic control module (3-channel) and 3350Kv brushless motor)"
-category = "charger"
+category = "motor"
+fits = [
+  { kit = "kit/traxxas/trx-4m", type = "direct", source = "doc/traxxas/97044-1-parts-list" },
+]
