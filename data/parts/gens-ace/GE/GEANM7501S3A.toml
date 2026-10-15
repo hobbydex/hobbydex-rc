@@ -1,0 +1,16 @@
+id = "part/gens-ace/GEANM7501S3A"
+brand = "brand/gens-ace"
+number = "GEANM7501S3A"
+name = "750mAh 1.2V AAA Battery | NiMH (4pcs) (Mini-Z)"
+gtin = "6928493310588"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-1s-750mah", match = "functional", source = "doc/gens-ace/nimh-trx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "nimh"
+cells = 1
+capacity_mah = 750
+pack_qty = 4
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/geanm7501s3a" },
+]

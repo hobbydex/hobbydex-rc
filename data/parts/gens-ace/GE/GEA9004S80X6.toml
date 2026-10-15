@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA9004S80X6"
+brand = "brand/gens-ace"
+number = "GEA9004S80X6"
+name = "900mAh 4S 80C 14.8V Lipo Battery | XT60 Plug"
+gtin = "6928493310915"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-900mah", match = "functional", source = "doc/gens-ace/4s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 900
+c_rating = 80
+connector = "XT60"
+dimensions_mm = [99, 27, 21]
+weight_g = 109
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-900mah-14-8v-80c-4s1p-lipo-battery-pack-with-xt60-plug" },
+]

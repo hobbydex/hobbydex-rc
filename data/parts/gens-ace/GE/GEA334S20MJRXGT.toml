@@ -1,0 +1,18 @@
+id = "part/gens-ace/GEA334S20MJRXGT"
+brand = "brand/gens-ace"
+number = "GEA334S20MJRXGT"
+name = "3300mAh 4S 20C 13.2V LiFe Battery"
+gtin = "6928493317969"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/life-4s-3300mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "life"
+cells = 4
+capacity_mah = 3300
+c_rating = 20
+dimensions_mm = [131, 42, 32]
+weight_g = 337
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-mini-g-tech-3300mah-13-2v-4s1p-20c-li-fe-battery-pack-for-receiver" },
+]

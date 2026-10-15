@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA353S20X6JRXGT"
+brand = "brand/gens-ace"
+number = "GEA353S20X6JRXGT"
+name = "3500mAh 3S 20C 9.9V LiFe Battery | XT60 Plug"
+gtin = "6928493317952"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/life-3s-3500mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "life"
+cells = 3
+capacity_mah = 3500
+c_rating = 20
+connector = "XT60"
+dimensions_mm = [135, 42, 25]
+weight_g = 289
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-mini-g-tech-3500mah-9-9v-3s1p-20c-li-fe-battery-pack-for-receiver" },
+]

@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA23002STXF"
+brand = "brand/gens-ace"
+number = "GEA23002STXF"
+name = "2300mAh 2S 6.6V LiFe Battery | Futaba Plug"
+gtin = "6928493303511"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/life-2s-2300mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "life"
+cells = 2
+capacity_mah = 2300
+c_rating = 1
+connector = "Futaba"
+dimensions_mm = [79, 41, 16]
+weight_g = 92
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace2300mah-6-6v-2s1p-li-fe-battery-for-radio-transmitter" },
+]

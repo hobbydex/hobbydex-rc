@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA306S60E5GT"
+brand = "brand/gens-ace"
+number = "GEA306S60E5GT"
+name = "3000mAh 6S 60C 22.2V Lipo Battery | EC5 Plug"
+gtin = "6928493309131"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-3000mah", match = "functional", source = "doc/gens-ace/6s-lipo-ec5", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 6
+capacity_mah = 3000
+c_rating = 60
+connector = "EC5"
+dimensions_mm = [140, 43, 39]
+weight_g = 499
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-3000mah-22-2v-60c-6s1p-lipo-battery-pack-with-ec5-plug" },
+]

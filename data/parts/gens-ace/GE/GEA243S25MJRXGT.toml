@@ -1,0 +1,18 @@
+id = "part/gens-ace/GEA243S25MJRXGT"
+brand = "brand/gens-ace"
+number = "GEA243S25MJRXGT"
+name = "2400mAh 3S 25C 11.1V Lipo Battery"
+gtin = "6928493317891"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2400mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 2400
+c_rating = 25
+dimensions_mm = [106, 34, 22]
+weight_g = 154
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-mini-g-tech-2400mah-11-1v-3s1p-25c-lipo-battery-pack-for-receiver" },
+]

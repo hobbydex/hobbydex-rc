@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA4002S60JST"
+brand = "brand/gens-ace"
+number = "GEA4002S60JST"
+name = "400mAh 2S 60C 7.4V Lipo Battery | JST Plug"
+gtin = "6928493305546"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-400mah", match = "functional", source = "doc/gens-ace/2s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 400
+c_rating = 60
+connector = "Deans"
+dimensions_mm = [41, 20, 13]
+weight_g = 18
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-400mah-7-4v-60c-2s1p-lipo-battery-pack-with-jst-plug" },
+]

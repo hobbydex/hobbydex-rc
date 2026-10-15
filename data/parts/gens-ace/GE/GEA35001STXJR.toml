@@ -1,0 +1,18 @@
+id = "part/gens-ace/GEA35001STXJR"
+brand = "brand/gens-ace"
+number = "GEA35001STXJR"
+name = "3500mAh 1S 3.7V Lipo Battery | JR Plug"
+gtin = "6928493302583"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-3500mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 3500
+connector = "JR"
+dimensions_mm = [64, 43, 9]
+weight_g = 45
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gens-ace-3500mah-3-7v-tx-1s1p-lipo-battery-pack-with-jr-plug" },
+]

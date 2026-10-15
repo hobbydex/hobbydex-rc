@@ -1,0 +1,19 @@
+id = "part/gens-ace/GEA4004S45J"
+brand = "brand/gens-ace"
+number = "GEA4004S45J"
+name = "400mAh 4S 45C 14.8V Lipo Battery | JST-SYP Plug"
+gtin = "6928493317594"
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-400mah", match = "functional", source = "doc/gens-ace/4s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 400
+c_rating = 45
+connector = "JST-SYP"
+dimensions_mm = [48, 18, 21]
+weight_g = 35
+links = [
+  { site = "Gens ace", url = "https://gensace.de/products/gea4004s45j" },
+]
