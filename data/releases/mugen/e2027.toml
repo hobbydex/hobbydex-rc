@@ -6,7 +6,7 @@ name = "MBX8R"
 gtin = "4944925038709"
 kind = "kit"
 status = "released"
-documents = ["doc/mugen/mbx8r-spec-page", "doc/mugen/exploded-view-e2027", "doc/mugen/mbx8r-setupsheet-2110n-kit", "doc/mugen/manual-e2027", "doc/mugen/kit-bag-details-e2027", "doc/mugen/mbx8r-part-list", "doc/mugen/partlist-index"]
+documents = ["doc/mugen/mbx8r-spec-page", "doc/mugen/exploded-view-e2027", "doc/mugen/mbx8r-setupsheet-2110n-kit", "doc/mugen/manual-e2027", "doc/mugen/kit-bag-details-e2027", "doc/mugen/mbx8r-part-list", "doc/mugen/partlist-index", "doc/mugen/mbx8r-part-list-ja"]
 contains = [
   { part = "part/mugen/B0104", role = "kit", source = "doc/mugen/mbx8r-part-list" },
   { part = "part/mugen/B0123", role = "kit", source = "doc/mugen/mbx8r-part-list" },
@@ -59,7 +59,6 @@ contains = [
   { part = "part/mugen/E0545", role = "kit", source = "doc/mugen/mbx8r-part-list" },
   { part = "part/mugen/E0546", role = "kit", source = "doc/mugen/mbx8r-part-list" },
   { part = "part/mugen/E0548", role = "kit", source = "doc/mugen/mbx8r-part-list" },
-  { part = "part/mugen/E0554", role = "option", source = "doc/mugen/mbx8r-part-list" },
   { part = "part/mugen/E1071-A", role = "kit", source = "doc/mugen/mbx8r-part-list" },
   { part = "part/mugen/E0555", role = "kit", source = "doc/mugen/mbx8r-part-list" },
   { part = "part/mugen/E0556", role = "kit", source = "doc/mugen/mbx8r-part-list" },
@@ -264,4 +263,5 @@ contains = [
   { part = "part/mugen/P0402", role = "kit", source = "doc/mugen/mbx8r-part-list" },
   { part = "part/mugen/P0403", role = "kit", source = "doc/mugen/mbx8r-part-list" },
   { part = "part/mugen/E2807C", role = "kit", source = "doc/mugen/mbx8r-part-list" },
+  { part = "part/mugen/E0554", role = "kit", source = "doc/mugen/mbx8r-part-list" },
 ]

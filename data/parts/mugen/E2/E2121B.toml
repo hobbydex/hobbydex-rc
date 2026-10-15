@@ -1,9 +1,8 @@
 id = "part/mugen/E2121B"
 brand = "brand/mugen"
 number = "E2121B"
-name = "SERVO SAVER SPACER (FOR E2121/E2158)"
-name_source = "ocr"
-notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
+name = "SERVO SAVER SPACER FOR E2121"
+notes = "Name from the store's product URL (https://www.mugenshop.eu/en/SERVO-SAVER-SPACER-FOR-E2121/E2121B); the parts list's print was not legible"
 fits = [
   { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
   { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
@@ -24,5 +23,4 @@ fits = [
 category = "washer-shim"
 related = [
   { part = "part/mugen/E2121", relation = "for", notes = "link_part_refs" },
-  { part = "part/mugen/E2158", relation = "for", notes = "link_part_refs" },
 ]

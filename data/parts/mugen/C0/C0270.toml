@@ -1,9 +1,7 @@
 id = "part/mugen/C0270"
 brand = "brand/mugen"
 number = "C0270"
-name = "JOINT PIN(FOR E2228/E2229/E2261/E2262)"
-name_source = "ocr"
-notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
+name = "JOINT PIN"
 fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
   { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
@@ -35,9 +33,3 @@ fits = [
   { kit = "kit/mugen/mgt7", type = "direct", source = "doc/mugen/mgt7-part-list" },
 ]
 category = "pin-clip"
-related = [
-  { part = "part/mugen/E2228", relation = "for", notes = "link_part_refs" },
-  { part = "part/mugen/E2229", relation = "for", notes = "link_part_refs" },
-  { part = "part/mugen/E2261", relation = "for", notes = "link_part_refs" },
-  { part = "part/mugen/E2262", relation = "for", notes = "link_part_refs" },
-]
