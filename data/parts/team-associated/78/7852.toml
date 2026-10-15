@@ -1,7 +1,17 @@
 id = "part/team-associated/7852"
 brand = "brand/team-associated"
 number = "7852"
-name = "2WD Truck wheels, 2.2”, 12mm hex, white"
+name = "2WD Truck Wheels, 2.2 in, 12 mm Hex, white"
+former_names = ["2WD Truck wheels, 2.2”, 12mm hex, white"]
 category = "wheel"
 wheel_size = "2.2\""
 color = "white"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/2wd-truck-wheels-2-2-in-12-mm-hex-white/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10t-4wd", type = "direct", source = "doc/team-associated/6048-page" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
