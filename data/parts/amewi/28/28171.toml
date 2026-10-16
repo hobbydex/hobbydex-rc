@@ -1,0 +1,19 @@
+id = "part/amewi/28171"
+brand = "brand/amewi"
+number = "28171"
+name = "LiPo Akku 2S 7,4V 5000mAh 35C XT60"
+fits = [
+  { kit = "kit/amewi/allrock-h8-v2-scale-crawler", type = "direct", source = "doc/amewi/22766-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/LiPo-Akku-2S-74V-5000mAh-35C-XT60" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5000
+c_rating = 35
+connector = "XT60"
+category = "battery"

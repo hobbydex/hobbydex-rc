@@ -10,6 +10,7 @@ documents = ["doc/amewi/22522-product-page", "doc/amewi/22420_de_en-manual"]
 gtin = "4260677953825"
 notes = "Release year unknown; on amewi.com when read (2026-10-13). Technische Daten: Maßstab: 1:18; Länge: 260mm; Breite: 110mm; Höhe: 125mm; Gewicht (inkl. Akku): 300g; Radstand: 155mm; Spurbreite vorne: 108mm; Spurbreite hinten: 108mm; Bodenfreiheit: 30mm; Vorderräder: 55/15mm; Hinterräder: 55/15mm; Felgendurchmesser: 25mm; Getriebe: 104:1 FDL; Dämpfer vorne: 25mm; Dämpfer hinten: 25mm; Federung: Spiralfeder; Regler: 3-in-1 Einheit, wasserdicht mit JR Servo-Anschluss; Motor: 050/55T brushed; Antriebssystem: Kardan; Servo: 1kg; Karosserie: Lexan, lackiert mit Scale Anbauteilen im Retro-Look; Rahmen: Metall; Akkufach Abmessungen: 53x22x20mm; Akku: LiPo 2S 7,4V 600mAh 25C, Molex-Stecker, 51x20x15mm, 28g; Fahrzeit: bis zu 15min; Fernsteuerung: 2,4GHz, mit FHSS Modulation; Ladegerät: USB-Ladekabel. Lieferumfang: Modell, fahrfertig aufgebaut, Fernsteuerung 2,4GHz, LiPo Akku 2S 7,4V 600mAh, USB-Ladekabel, Bedienungsanleitung DE/EN"
 contains = [
+  { part = "part/amewi/015-18017", role = "option", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-18001", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-18002", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-18003", role = "listed", source = "doc/amewi/22522-product-page" },
@@ -26,7 +27,6 @@ contains = [
   { part = "part/amewi/015-18014", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-18015", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-18016", role = "listed", source = "doc/amewi/22522-product-page" },
-  { part = "part/amewi/015-18017", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-18018", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-18019", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-18020", role = "listed", source = "doc/amewi/22522-product-page" },
@@ -77,5 +77,6 @@ contains = [
   { part = "part/amewi/015-24031", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-24032", role = "listed", source = "doc/amewi/22522-product-page" },
   { part = "part/amewi/015-24034", role = "listed", source = "doc/amewi/22522-product-page" },
+  { part = "part/amewi/28947", role = "listed", source = "doc/amewi/22522-product-page" },
 ]
 color = "gray"

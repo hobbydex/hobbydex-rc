@@ -1,0 +1,17 @@
+id = "part/amewi/013-21139-01"
+brand = "brand/amewi"
+number = "013-21139-01"
+name = "LiPo Akku 1S 3,7V 500mAh"
+fits = [
+  { kit = "kit/amewi/lr28-pr28-audi-quattro-1980", type = "direct", source = "doc/amewi/21151-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/LiPo-Akku-1S-37V-500mAh" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 500
+category = "battery"

@@ -1,0 +1,21 @@
+id = "part/amewi/28983"
+brand = "brand/amewi"
+number = "28983"
+name = "LiPo Akku 3S 5000mAh 11,1V 35C Softcase XT90"
+gtin = "4260768515925"
+fits = [
+  { kit = "kit/amewi/rxb7", type = "direct", source = "doc/amewi/22554-product-page" },
+  { kit = "kit/amewi/hc7", type = "direct", source = "doc/amewi/21091-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/LiPo-Akku-3S-5000mAh-111V-35C-Softcase-XT90" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 35
+connector = "XT90"
+category = "battery"
