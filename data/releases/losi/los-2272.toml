@@ -6,7 +6,6 @@ name = "Promoto-SM FXR Supermoto Motorcycle RTR Basic, white"
 kind = "rtr"
 status = "discontinued"
 gtin = "660132628758"
-color = "white"
 documents = ["doc/losi/los-2272-2310-exploded-view", "doc/losi/los-2272-2310-quickstart-guide", "doc/losi/los-2272-los-2310-manual-en", "doc/losi/los-2272-product-page"]
 contains = [
   { part = "part/losi/LOS-2281", role = "kit", source = "doc/losi/los-2272-2310-exploded-view" },
@@ -30,6 +29,8 @@ contains = [
   { part = "part/losi/LOS-2301", role = "kit", source = "doc/losi/los-2272-2310-exploded-view" },
   { part = "part/losi/LOS-2303", role = "kit", source = "doc/losi/los-2272-los-2310-manual-en" },
   { part = "part/losi/LOS-2304", role = "kit", source = "doc/losi/los-2272-2310-exploded-view" },
+  { part = "part/losi/LOS-3268", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3269", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS235002", role = "kit", source = "doc/losi/los-2272-los-2310-manual-en" },
   { part = "part/losi/LOS235005", role = "kit", source = "doc/losi/los-2272-2310-exploded-view" },
   { part = "part/losi/LOS235007", role = "kit", source = "doc/losi/los-2272-los-2310-manual-en" },
@@ -149,6 +150,13 @@ contains = [
   { part = "part/losi/LOS-2306", role = "option", source = "doc/losi/los-2272-los-2310-manual-en" },
   { part = "part/losi/LOS-2307", role = "option", source = "doc/losi/los-2272-los-2310-manual-en" },
   { part = "part/losi/LOS-2308", role = "option", source = "doc/losi/los-2272-los-2310-manual-en" },
+  { part = "part/losi/LOS-3262", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3263", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3264", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3265", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3266", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3267", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3270", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS260000", role = "option", source = "doc/losi/los-2272-los-2310-manual-en" },
   { part = "part/losi/LOS260001", role = "option", source = "doc/losi/los-2272-los-2310-manual-en" },
   { part = "part/losi/LOS260002", role = "option", source = "doc/losi/los-2272-los-2310-manual-en" },
@@ -204,3 +212,4 @@ contains = [
   { part = "part/tlr/TLR74032", role = "option", source = "doc/losi/los-2272-los-2310-manual-en" },
   { part = "part/tlr/TLR76007", role = "option", source = "doc/losi/los-2272-los-2310-manual-en" },
 ]
+color = "white"
