@@ -10,9 +10,13 @@ diameter_mm = 42
 length_mm = 74
 shaft_mm = 5
 weight_g = 405
-mount_holes = [{ thread = "M3", count = 4, circle_mm = 25.4 }, { thread = "M4", count = 4, circle_mm = 25.4 }]
+mount_holes = [
+  { thread = "M3", count = 4, circle_mm = 25.4 },
+  { thread = "M4", count = 4, circle_mm = 25.4 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-4274-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 42 mm, length 74 mm, shaft 5 mm)" },
 ]
 documents = ["doc/hobbywing/xerun-axe-r3-manual"]
 range = "hobbywing/xerun-axe-4274-r3"
+sensored = true
