@@ -4,12 +4,15 @@ brand = "brand/carson"
 number = "500409074"
 name = "1:8 Virus Extreme 2.4G 100% RTR blue"
 kind = "rtr"
-status = "released"
-notes = "Release year unknown: the shop and the manuals state none; no longer in the Carson shop"
-color = "blue"
-documents = ["doc/carson/500409074-anleitung-instruction-virusextreme-02-2024", "doc/carson/500409074-montageanleitung-virusextreme-11-2023", "doc/carson/500409074-fahrreglervirus4s-09-2023", "doc/carson/500409074-expertchargerallrounder2a-09-2023", "doc/carson/shop"]
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available"
+documents = ["doc/carson/500409074-anleitung-instruction-virusextreme-02-2024", "doc/carson/500409074-montageanleitung-virusextreme-11-2023", "doc/carson/500409074-fahrreglervirus4s-09-2023", "doc/carson/500409074-expertchargerallrounder2a-09-2023", "doc/carson/shop", "doc/carson/manuals-page"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-8-virus-extreme-24g-100-rtr-blue-500409074-en.html" },
+]
 contains = [
   { part = "part/carson/500205927", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
+  { part = "part/carson/500205928", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500205939", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500205941", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500205943", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
@@ -17,6 +20,7 @@ contains = [
   { part = "part/carson/500205961", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500405619", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500405620", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
+  { part = "part/carson/500405759", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405762", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500405766", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500405768", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
@@ -42,9 +46,9 @@ contains = [
   { part = "part/carson/500405961", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500405962", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500405991", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
-  { part = "part/carson/500409023", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500801031", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500801060", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500801061", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
   { part = "part/carson/500900201", role = "kit", source = "doc/carson/500409074-anleitung-instruction-virusextreme-02-2024" },
 ]
+color = "blue"

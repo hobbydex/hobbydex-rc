@@ -4,10 +4,15 @@ brand = "brand/carson"
 number = "500409063"
 name = "1:8 King of Dirt Buggy 4S RTR"
 kind = "rtr"
-status = "released"
-notes = "Release year unknown: the shop and the manuals state none; no longer in the Carson shop"
-documents = ["doc/carson/500409063-anleitung-instruction-kingofdirt-04-2023", "doc/carson/shop"]
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available"
+documents = ["doc/carson/500409063-anleitung-instruction-kingofdirt-04-2023", "doc/carson/shop", "doc/carson/manuals-page"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-8-king-of-dirt-buggy-4s-rtr-500409063-en.html" },
+]
 contains = [
+  { part = "part/carson/409060-06", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405840", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405881", role = "kit", source = "doc/carson/500409063-anleitung-instruction-kingofdirt-04-2023" },
   { part = "part/carson/500405882", role = "kit", source = "doc/carson/500409063-anleitung-instruction-kingofdirt-04-2023" },
   { part = "part/carson/500405883", role = "kit", source = "doc/carson/500409063-anleitung-instruction-kingofdirt-04-2023" },
