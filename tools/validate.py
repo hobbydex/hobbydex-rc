@@ -33,6 +33,16 @@ REFS = {  # field -> expected id prefix
     "publisher": "brand/", "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
 }
 LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": ""}   # requires: kit or release ids, checked above
+# real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
+VEHICLE_MAKES = {
+    "Abarth", "Acura", "Alfa Romeo", "Alpine", "Aston Martin", "Audi", "BMW", "Bentley", "Bugatti", "Buggyra", "Buick", "Cadillac",
+    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Ferrari", "Fiat", "Ford",
+    "Freightliner", "GMC", "Hino", "Honda", "Hummer", "Hyundai", "International", "Isuzu", "Iveco", "Jaguar", "Jeep", "KTM",
+    "Kawasaki", "Kenworth", "Komatsu", "Lamborghini", "Lancia", "Land Rover", "Lexus", "Liebherr", "Lotus", "MAN", "Mack",
+    "Maserati", "Mazda", "McLaren", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Opel", "Pagani", "Peterbilt", "Peugeot",
+    "Plymouth", "Polaris", "Pontiac", "Porsche", "Ram", "Renault", "Scania", "Seat", "Shelby", "Skoda", "Subaru", "Suzuki",
+    "Toyota", "Tyrrell", "UAZ", "Vauxhall", "Volkswagen", "Volvo", "Willys", "Yamaha",
+}
 SURFACES = {"carpet", "astro", "clay", "dirt", "asphalt", "high-grip"}   # the track surface a race kit is built for
 
 ENUMS = {
@@ -330,6 +340,15 @@ def main():
             my = d.get("model_year")
             if my is not None and not (isinstance(my, int) and 1970 <= my <= this_year + 3):
                 errors.append(f"{path}: model_year {my!r} should be a year")
+        ve = d.get("depicts") if kind in ("release", "part") else None
+        if ve is not None:
+            if kind == "part" and d.get("category") != "body":
+                errors.append(f"{path}: depicts only on a release or a body shell (category body)")
+            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed"} and ve.get("make") in VEHICLE_MAKES
+                      and isinstance(ve.get("model"), str) and ve["model"].strip() == ve["model"] and ve["model"]
+                      and (("year" not in ve) or (isinstance(ve["year"], int) and not isinstance(ve["year"], bool) and 1885 <= ve["year"] <= datetime.date.today().year + 1))
+                      and ve.get("licensed", True) is True):
+                errors.append(f"{path}: depicts should be {{ make = <one of VEHICLE_MAKES>, model = \"...\", year = 1885.. (optional), licensed = true (optional) }}, got {ve!r}")
         rq = d.get("requires") if kind == "release" else None
         if rq is not None and not (isinstance(rq, list) and rq and all(isinstance(x, str) and x.startswith(("kit/", "release/")) for x in rq)):
             errors.append(f"{path}: requires should be a list of kit or release ids (the car the release needs, one of them)")
