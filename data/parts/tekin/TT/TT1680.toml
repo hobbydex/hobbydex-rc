@@ -1,0 +1,19 @@
+id = "part/tekin/TT1680"
+brand = "brand/tekin"
+number = "TT1680"
+name = "2S HV 7.6V 2350mAh 10C Receiver Pack ( TLR 8IGHT / HOT BODIES)"
+category = "battery"
+category_source = "curated"
+fits = [
+  { kit = "kit/tlr/8ight", type = "direct", notes = "Named in Tekin's product name: 2S HV 7.6V 2350mAh 10C Receiver Pack ( TLR 8IGHT / HOT BODIES)" },
+]
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/2s-hv-7-6v-2350mah-10c-receiver-pack-tlr-8ight-hot-bodies/" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 2350
+c_rating = 10
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-2350mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

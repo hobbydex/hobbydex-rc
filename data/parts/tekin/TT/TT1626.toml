@@ -1,0 +1,18 @@
+id = "part/tekin/TT1626"
+brand = "brand/tekin"
+number = "TT1626"
+name = "4S HV 15.2V 6300mAh 140C Brick Shorty 5mm Bullets"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/4s-hv-15-2v-6300mah-140c-brick-shorty-5mm-bullets/" },
+]
+chemistry = "lihv"
+cells = 4
+capacity_mah = 6300
+c_rating = 140
+connector = "5mm bullet"
+case = "shorty"
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-6300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

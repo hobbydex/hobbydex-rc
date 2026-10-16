@@ -1,0 +1,17 @@
+id = "part/tekin/TT1656"
+brand = "brand/tekin"
+number = "TT1656"
+name = "2S 7.4V 6200mAh 160C Stick LCG 5mm Bullets"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/2s-7-4v6200mah-160c-stick-lcg-5mm-bullets/" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 6200
+c_rating = 160
+connector = "5mm bullet"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

@@ -9,13 +9,16 @@ diameter_mm = 36
 length_mm = 67
 shaft_mm = 5
 weight_g = 274
-mount_holes = [{ thread = "M3", circle_mm = 25.4 }, { thread = "M4", circle_mm = 25.4 }]
 equivalent_to = [
   { spec = "spec/motor/brushless-3667-5mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 36 mm, length 67 mm, shaft 5 mm)" },
 ]
 notes = "Voltage limit 4S LiPo; Bearings (Tekin's specifications): front 5x14x5, rear 5x11x5"
 links = [
   { site = "Tekin", url = "https://store.teamtekin.com/t8i-2700kv-lightweight-brushless-1-8-motor/" },
+]
+mount_holes = [
+  { thread = "M3", circle_mm = 25.4 },
+  { thread = "M4", circle_mm = 25.4 },
 ]
 documents = ["doc/tekin/t8i-motor-page"]
 range = "tekin/t8i-lightweight-brushless-1-8-motor"

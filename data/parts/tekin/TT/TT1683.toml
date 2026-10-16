@@ -1,0 +1,16 @@
+id = "part/tekin/TT1683"
+brand = "brand/tekin"
+number = "TT1683"
+name = "2S 7.4V 2500mAh 10C Hump Receiver Pack (TEKNO / KYOSHO)"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/2s-7-4v-2500mah-10c-hump-receiver-pack-tekno-kyosho/" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2500
+c_rating = 10
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

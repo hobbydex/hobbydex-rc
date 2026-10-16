@@ -1,0 +1,18 @@
+id = "part/tekin/TT1621"
+brand = "brand/tekin"
+number = "TT1621"
+name = "2S HV 7.6V 9000mAh 140C Stick 5mm bullets"
+category = "battery"
+category_source = "curated"
+notes = "Discontinued: listed under Discontinued on store.teamtekin.com (2026-10-16)"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/2s-hv-7-6v-9000mah-140c-stick-5mm-bullets/" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 9000
+c_rating = 140
+connector = "5mm bullet"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-9000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

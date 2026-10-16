@@ -1,0 +1,22 @@
+id = "part/tekin/TT1506"
+brand = "brand/tekin"
+number = "TT1506"
+name = "T-360 Torque Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 29.8
+speed_s = 0.09
+voltage = 8.4
+voltage_range = "4.8V - 8.4V"
+gear_material = "metal"
+dimensions_mm = [40, 20, 40]
+weight_g = 73
+motor = "coreless"
+spline_teeth = 25
+size_class = "standard"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional" },
+]
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/t-360-torque-servo/" },
+]

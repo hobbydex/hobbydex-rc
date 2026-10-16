@@ -1,0 +1,17 @@
+id = "part/tekin/TT1660"
+brand = "brand/tekin"
+number = "TT1660"
+name = "4S 14.8V 6000mAh 140C Brick LCG 5mm Bullets"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/4s-14-8v-6000mah-140c-brick-lcg-5mm-bullets/" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 6000
+c_rating = 140
+connector = "5mm bullet"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

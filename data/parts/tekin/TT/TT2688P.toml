@@ -10,13 +10,15 @@ diameter_mm = 35.85
 length_mm = 50.25
 shaft_mm = 3.175
 weight_g = 150
-mount_holes = [{ thread = "M3", circle_mm = 25.4 }]
 equivalent_to = [
   { spec = "spec/motor/brushless-3650-3.175mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 35.85 mm, length 50.25 mm, shaft 3.175 mm)" },
 ]
 notes = "Bearings (Tekin's specifications): front 4x13x5, rear 1/8x3/8x5/32 in"
 links = [
   { site = "Tekin", url = "https://store.teamtekin.com/spec-r2-25-5t-gen4-pro-brushless-motor/" },
+]
+mount_holes = [
+  { thread = "M3", circle_mm = 25.4 },
 ]
 documents = ["doc/tekin/specr2-motor-page"]
 range = "tekin/spec-r2-gen4-pro-brushless-motor"

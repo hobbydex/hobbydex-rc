@@ -1,0 +1,22 @@
+id = "part/tekin/TT1504"
+brand = "brand/tekin"
+number = "TT1504"
+name = "T-250 Standard 1:8 Speed Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 22.3
+speed_s = 0.07
+voltage = 8.4
+voltage_range = "4.8V - 8.4V"
+gear_material = "metal"
+dimensions_mm = [40, 20, 40]
+weight_g = 72
+motor = "coreless"
+spline_teeth = 25
+links = [
+  { site = "Tekin", url = "https://www.teamtekin.com/t250.html" },
+]
+size_class = "standard"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional" },
+]
