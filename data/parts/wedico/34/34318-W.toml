@@ -1,10 +1,16 @@
 id = "part/wedico/34318-W"
 brand = "brand/wedico"
 number = "34318-W"
-name = "Stütze mit 2x Gelenkfuß aus Aluminium gefräst für 424-W"
+name = "Support with 2x swivel foot of aluminium milled for 424-W"
+name_de = "Stütze mit 2x Gelenkfuß aus Aluminium gefräst für 424-W"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/stuetze-mit-2x-gelenkfuss-aus-aluminium-gefraest-fuer-424-w" },
 ]
 material = "aluminium"
 category = "chassis"
+category_source = "curated"
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+related = [
+  { part = "part/wedico/424-W", relation = "for", notes = "link_part_refs" },
+]
