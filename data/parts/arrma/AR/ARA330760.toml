@@ -11,3 +11,7 @@ rate_n_mm = 1.34
 rate_lb_in = 7.65
 free_length_mm = 70
 range = "arrma/shock-springs-free-rate-rate-springs"
+fits = [
+  { kit = "kit/arrma/kraton-4s", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/outcast-4s", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]

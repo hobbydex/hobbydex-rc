@@ -69,6 +69,8 @@ ENUMS = {
     "part.application": {"spray-can", "airbrush", "brush", "marker"},
     "part.paint_role": {"paint", "clear", "primer", "thinner", "cleaner", "masking"},
     "part.fuel": {"nitro", "gasoline"},
+    # what a radio part is (docs/schema.md "documents"): set = a transmitter sold with its receiver
+    "part.radio_unit": {"transmitter", "receiver", "set"},
     "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
 # engine fields (docs/schema.md "Engines"): only on engine-fuel parts, numbers in these ranges
@@ -320,6 +322,8 @@ def main():
         se = d.get("sensored") if kind == "part" else None
         if se is not None and (not isinstance(se, bool) or d.get("category") not in ("motor", "electronics")):
             errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category electronics)")
+        if kind == "part" and "radio_unit" in d and d.get("category") != "electronics":
+            errors.append(f"{path}: radio_unit only on radios and receivers (category electronics)")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
         if eng - {"bore_mm"} and d.get("category") != "engine-fuel":
             errors.append(f"{path}: {', '.join(sorted(eng - {'bore_mm'}))} only on engine parts (category engine-fuel)")

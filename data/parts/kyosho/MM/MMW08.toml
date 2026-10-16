@@ -4,6 +4,7 @@ number = "MMW08"
 name = "Aluminum Wheelie Bar Set"
 fits = [
   { kit = "kit/kyosho/mini-z-monster", type = "direct", source = "doc/kyosho/miniz-monster-op-vol8-m" },
+  { kit = "kit/kyosho/mini-z-monster", type = "replaces", replaces = "part/kyosho/MM05", source = "doc/kyosho/miniz-monster-op-vol8-m", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "bumper-guard"
 material = "aluminium"

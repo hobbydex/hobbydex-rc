@@ -1,0 +1,19 @@
+id = "part/injora/CRAW18345-35T"
+brand = "brand/injora"
+number = "CRAW18345-35T"
+name = "550 3-SLOT Waterproof Brushed Motor 12T 21T 29T 35T 55Tfor 1/10 RC Crawler (550 Motor 35T)"
+scale = "1/10"
+applies_to = "SCX10, SCX10 II, TRX-4"
+fits = [
+  { kit = "kit/axial/scx10", type = "direct", source = "doc/injora/store" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/injora/store" },
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/injora/store" },
+]
+notes = "The store also lists it as \"LCG Carbon Fiber Chassis Kit for 1/10 Axial SCX10 & SCX10 II\""
+links = [
+  { site = "Injora", url = "https://www.injora.com/products/550-brushed-motor-12t-21t-29t-35t-for-1-10-rc-crawler?variant=48257890287874" },
+]
+category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

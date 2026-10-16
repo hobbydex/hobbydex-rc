@@ -3,10 +3,10 @@ brand = "brand/losi"
 number = "LOS235007"
 name = "Button Head Screws M4 x 12mm"
 pack_qty = 10
-former_names = ["Button Head Screw, M3 x 12mm", "Button Head Screws M3 x"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-button-head-screws-m4-x-12mm-10/LOS235007.html" },
 ]
+former_names = ["Button Head Screw, M3 x 12mm", "Button Head Screws M3 x"]
 gtin = "605482623701"
 equivalent_to = [
   { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
@@ -22,4 +22,6 @@ fits = [
   { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]

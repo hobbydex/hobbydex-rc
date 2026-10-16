@@ -8,6 +8,7 @@ status = "discontinued"
 gtin = "605482238851"
 documents = ["doc/tlr/tlr03014-manual-multi", "doc/tlr/tlr03014-product-page", "doc/tlr/tlr03014-setup-sheet-blank", "doc/tlr/tlr03014-setup-sheet-editable", "doc/tlr/tlr03014-setup-sheet-kit"]
 contains = [
+  { part = "part/ecx/ECX1050", role = "kit", source = "doc/tlr/horizon-part-pages" },
   { part = "part/losi/LOS235002", role = "kit", source = "doc/tlr/horizon-part-pages" },
   { part = "part/losi/LOSA4003", role = "kit", source = "doc/tlr/horizon-part-pages" },
   { part = "part/losi/LOSA6356", role = "kit", source = "doc/tlr/horizon-part-pages" },
