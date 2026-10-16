@@ -5,7 +5,7 @@ number = "47349"
 name = "XV-01 Chassis Kit Long Damper Spec"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2020-03-28, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2020-03-28, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/47349-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/47349-manual"]
 contains = [
   { part = "part/tamiya/13450449", role = "kit", source = "doc/tamiya/47349-manual", step = "BA17" },
@@ -111,3 +111,9 @@ contains = [
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/47349-manual", qty = 10, step = "BC18" },
   { part = "part/tamiya/94392", role = "kit", source = "doc/tamiya/47349-manual", qty = 2, step = "BC9" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/47349", kind = "fan-site" },
+]
+released = "2017-06-10"
+year = 2017
+released_source = "TamiyaBase"

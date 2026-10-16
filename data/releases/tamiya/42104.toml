@@ -5,7 +5,7 @@ number = "42104"
 name = "TRF415MSXX Marc Rheinard Edition 2007"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2007-10-20, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2007-10-20, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/42104-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42104-manual"]
 contains = [
   { part = "part/tamiya/11054458", role = "kit", source = "doc/tamiya/42104-manual" },
@@ -140,3 +140,9 @@ contains = [
   { part = "part/tamiya/53917", role = "kit", source = "doc/tamiya/42104-manual" },
   { part = "part/tamiya/53938", role = "kit", source = "doc/tamiya/42104-manual", qty = 2, step = "BL3" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/42104", kind = "fan-site" },
+]
+released = "2007-10-17"
+year = 2007
+released_source = "TamiyaBase"

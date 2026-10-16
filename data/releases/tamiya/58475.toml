@@ -6,7 +6,7 @@ name = "Vodafone McLaren Mercedes MP4-24 (F104)"
 kind = "kit"
 status = "discontinued"
 depicts = { make = "McLaren", model = "Mercedes MP4-24" }
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2010-11-13, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2010-11-13, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/58475-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/spb-51430-manual"]
 contains = [
   { part = "part/tamiya/10225055", role = "kit", source = "doc/tamiya/spb-51430-manual" },
@@ -17,3 +17,9 @@ contains = [
   { part = "part/tamiya/19495646", role = "kit", source = "doc/tamiya/spb-51430-manual" },
   { part = "part/tamiya/51430", role = "kit", source = "doc/tamiya/spb-51430-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58475", kind = "fan-site" },
+]
+released = "2010-11-10"
+year = 2010
+released_source = "TamiyaBase"

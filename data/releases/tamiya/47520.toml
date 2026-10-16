@@ -5,7 +5,7 @@ number = "47520"
 name = "M-07R Chassis Kit"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2025-08-09, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2025-08-09, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/47520-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/84436-manual"]
 contains = [
   { part = "part/tamiya/10440057", role = "kit", source = "doc/tamiya/84436-manual" },
@@ -101,3 +101,9 @@ contains = [
   { part = "part/tamiya/54813", role = "kit", source = "doc/tamiya/84436-manual", qty = 4, step = "MB19" },
   { part = "part/tamiya/94392", role = "kit", source = "doc/tamiya/84436-manual", qty = 2, step = "MA8", notes = "Kit needs 3 of this pack" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/47520", kind = "fan-site" },
+]
+released = "2025-08-09"
+year = 2025
+released_source = "TamiyaBase"
