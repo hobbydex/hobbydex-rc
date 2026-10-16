@@ -783,7 +783,7 @@ from the maker's photos, drawn by us.
 
 ```
 art/kits/<brand>/<slug>.svg         for kit/<brand>/<slug>
-art/releases/<brand>/<key>.svg      for release/<brand>/<key> (a body that differs from the kit's)
+art/releases/<brand>/<key>.svg      for release/<brand>/<key>
 ```
 
 The file name is the id's last part exactly (same case). Each file is one line:
@@ -798,8 +798,10 @@ the car faces left. The site sets the fill from the release's colours.
 
 The export gives such a kit or release `art`: the path data of its file
 (the `d` attributes joined with a space), to be drawn in a `0 0 48 24`
-viewBox. The site draws a release with its own art, else its kit's, else the
-kit type's icon.
+viewBox. The site draws a release with its own art, else the kit type's icon; it
+never borrows the kit's or another release's, which may show another car.
+Releases of one body (colour, kit/RTR and equipment variants) each carry
+the same file.
 
 ## Conventions
 
