@@ -16,6 +16,7 @@ read the tree directly; they read the export (`tools/export.py`).
 | spec | `data/specs/<category>/<slug>.toml` | id, category |
 | category | `data/categories/<slug>.toml` | id, name |
 | shop | `data/shops/<country>/<slug>.toml` | id, name, status (not used yet) |
+| company | `data/companies/<slug>.toml` | id, name |
 
 `<prefix>` is the first two characters of the part number, upper-cased
 (`part/gens-ace/Gens-EC5-P` -> `data/parts/gens-ace/GE/Gens-EC5-P.toml`), so
@@ -65,11 +66,47 @@ status = "active"                        # active | dormant | gone
 notes = "..."
 ```
 
+`owner`: the company that owns the brand, a `company/` id, set only when a
+page of the brand (about, imprint, footer, copyright line, "a division of")
+or of the owning company states it. `owner_source` is that page's URL, or the
+`doc/` id of a document of the brand that states it (a manual's "ARRMA ...
+are trademarks or registered trademarks of Horizon Hobby, LLC"); it is
+required with `owner`. `owner_since` (a year) only when a source states it.
+Only a company with an identity of its own gets a record: a group,
+distributor or retailer that owns the brand, or the maker of several brands
+here. A maker that is its own company (Kyosho, Tamiya), or whose legal entity
+owns nothing else (RC4WD's MNA, Inc.), gets no owner: its `legal_name` says
+it. `legal_name` stays the legal entity as the brand's own site writes it.
+
+```toml
+owner = "company/horizon-hobby"
+owner_source = "doc/arrma/ara2304-manual-ml"
+```
+
 `item_numbers = false` marks a maker that prints no item numbers (Acer
 Racing): its parts leave out `number`, and the id's last segment is a slug
 from the source (the store's product handle) instead. The site then shows no
 number and builds the part URL from that slug. Left out, it means true and
 every part of the brand needs a `number`.
+
+## company
+
+A company that owns one or more brands. It is not a brand itself: it has no
+kits or parts of its own; its brands point at it with `owner`, and the site
+lists them as sister brands. One record per owning company, so several brands
+share it.
+
+```toml
+id = "company/horizon-hobby"
+name = "Horizon Hobby"
+legal_name = "Horizon Hobby, LLC"      # optional
+country = "US"                         # ISO 3166-1 alpha-2
+website = "https://www.horizonhobby.com"
+status = "active"                      # optional: active | dormant | gone
+brand = "brand/..."                    # optional: the brand that carries the company's own range (company/associated-electrics: brand/team-associated)
+parent = "company/..."                 # optional: the company that owns this one, with a source in notes
+notes = "..."
+```
 
 ## kit
 
