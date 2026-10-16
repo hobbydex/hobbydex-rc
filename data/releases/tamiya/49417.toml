@@ -5,7 +5,7 @@ number = "49417"
 name = "M-03R Chassis Kit"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2007-03-31, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2007-03-31, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/49417-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/m03r-manual"]
 contains = [
   { part = "part/tamiya/10005797", role = "kit", source = "doc/tamiya/m03r-manual" },
@@ -85,3 +85,9 @@ contains = [
   { part = "part/tamiya/53642", role = "kit", source = "doc/tamiya/m03r-manual", qty = 10, step = "MA19" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/m03r-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/49417", kind = "fan-site" },
+]
+released = "2007-03-31"
+year = 2007
+released_source = "TamiyaBase"

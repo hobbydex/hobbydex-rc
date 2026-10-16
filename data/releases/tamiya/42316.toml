@@ -5,7 +5,7 @@ number = "42316"
 name = "TRF419XR Chassis Kit"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2017-12-16, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2017-12-16, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/42316-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42316-manual"]
 contains = [
   { part = "part/tamiya/11056475", role = "kit", source = "doc/tamiya/42316-manual" },
@@ -162,3 +162,9 @@ contains = [
   { part = "part/tamiya/54747", role = "kit", source = "doc/tamiya/42316-manual", qty = 8, step = "MB3" },
   { part = "part/tamiya/84189", role = "kit", source = "doc/tamiya/42316-manual", qty = 2, step = "ME21" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/42316", kind = "fan-site" },
+]
+released = "2017-12-16"
+year = 2017
+released_source = "TamiyaBase"

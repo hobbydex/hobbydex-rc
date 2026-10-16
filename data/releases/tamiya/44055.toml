@@ -5,7 +5,7 @@ number = "44055"
 name = "TG10-Mk.2FZ Racing Chassis Kit 2022"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2022-11-19, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2022-11-19, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/44055-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/44055-manual"]
 contains = [
   { part = "part/tamiya/10004247", role = "kit", source = "doc/tamiya/44055-manual" },
@@ -159,3 +159,9 @@ contains = [
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/44055-manual" },
   { part = "part/tamiya/94392", role = "kit", source = "doc/tamiya/44055-manual", qty = 2, step = "MB10" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/44055", kind = "fan-site" },
+]
+released = "2022-11-19"
+year = 2022
+released_source = "TamiyaBase"

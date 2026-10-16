@@ -5,7 +5,7 @@ number = "42326"
 name = "TA07 MS Chassis Kit"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2018-12-15, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2018-12-15, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/42326-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42326-manual"]
 contains = [
   { part = "part/tamiya/10440329", role = "kit", source = "doc/tamiya/42326-manual", step = "MA31" },
@@ -169,3 +169,9 @@ contains = [
   { part = "part/tamiya/84189", role = "kit", source = "doc/tamiya/42326-manual", qty = 2, step = "MF23" },
   { part = "part/tamiya/87022", role = "kit", source = "doc/tamiya/42326-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/42326", kind = "fan-site" },
+]
+released = "2018-12-01"
+year = 2018
+released_source = "TamiyaBase"

@@ -6,10 +6,16 @@ name = "Mercedes-Benz Unimog 406 Series U900 (CR-01)"
 kind = "kit"
 status = "discontinued"
 depicts = { make = "Mercedes-Benz", model = "Unimog 406" }
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2008-09-20, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2008-09-20, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/58414-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/spb-51358-manual"]
 contains = [
   { part = "part/tamiya/11825537", role = "kit", source = "doc/tamiya/spb-51358-manual" },
   { part = "part/tamiya/11825538", role = "kit", source = "doc/tamiya/spb-51358-manual" },
   { part = "part/tamiya/19115225", role = "kit", source = "doc/tamiya/spb-51358-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58414", kind = "fan-site" },
+]
+released = "2008-09-17"
+year = 2008
+released_source = "TamiyaBase"

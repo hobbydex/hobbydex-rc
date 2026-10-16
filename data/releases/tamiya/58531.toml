@@ -6,7 +6,7 @@ name = "Suzuki Jimny (SJ30) Wheelie (WR-02)"
 kind = "kit"
 status = "discontinued"
 depicts = { make = "Suzuki", model = "Jimny" }
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2012-07-21, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2012-07-21, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/58531-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/spb-51495-manual"]
 contains = [
   { part = "part/tamiya/10552058", role = "kit", source = "doc/tamiya/spb-51495-manual" },
@@ -26,3 +26,9 @@ contains = [
   { part = "part/tamiya/50586", role = "kit", source = "doc/tamiya/spb-51495-manual" },
   { part = "part/tamiya/51595", role = "kit", source = "doc/tamiya/spb-51495-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58531", kind = "fan-site" },
+]
+released = "2012-07-18"
+year = 2012
+released_source = "TamiyaBase"

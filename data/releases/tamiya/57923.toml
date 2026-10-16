@@ -6,7 +6,7 @@ name = "XB Volkswagen Karmann Ghia (M-06)"
 kind = "rtr"
 status = "discontinued"
 depicts = { make = "Volkswagen", model = "Karmann Ghia" }
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2020-04-25, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued; XB (Expert Built): built and painted, with radio"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2020-04-25, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued; XB (Expert Built): built and painted, with radio"
 documents = ["doc/tamiya/57923-product-page-ja", "doc/tamiya/m06-manual", "doc/tamiya/product-classes"]
 contains = [
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/m06-manual" },
@@ -85,3 +85,9 @@ contains = [
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/m06-manual", qty = 10, step = "BB19" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/m06-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/57923", kind = "fan-site" },
+]
+released = "2020-04-25"
+year = 2020
+released_source = "TamiyaBase"

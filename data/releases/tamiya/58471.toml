@@ -6,7 +6,7 @@ name = "Alpine Renault A110 (M-05RA)"
 kind = "kit"
 status = "discontinued"
 depicts = { make = "Alpine", model = "A110" }
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2010-09-11, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2010-09-11, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/58471-product-page-ja", "doc/tamiya/m05ra-manual", "doc/tamiya/product-classes", "doc/tamiya/spb-51420-manual"]
 contains = [
   { part = "part/tamiya/10005590", role = "kit", source = "doc/tamiya/spb-51420-manual" },
@@ -90,3 +90,9 @@ contains = [
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/m05ra-manual", qty = 10, step = "BA24" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/m05ra-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58471", kind = "fan-site" },
+]
+released = "2010-09-08"
+year = 2010
+released_source = "TamiyaBase"

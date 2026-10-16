@@ -5,7 +5,7 @@ number = "47498"
 name = "TA08R Chassis Kit"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2024-01-13, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2024-01-13, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/47498-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/47498-manual"]
 contains = [
   { part = "part/tamiya/10015144", role = "kit", source = "doc/tamiya/47498-manual", qty = 1 },
@@ -96,3 +96,9 @@ contains = [
   { part = "part/tamiya/54921", role = "kit", source = "doc/tamiya/47498-manual", qty = 1 },
   { part = "part/tamiya/54922", role = "kit", source = "doc/tamiya/47498-manual", qty = 1 },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/47498", kind = "fan-site" },
+]
+released = "2024-01-13"
+year = 2024
+released_source = "TamiyaBase"
