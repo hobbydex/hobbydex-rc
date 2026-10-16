@@ -6,6 +6,7 @@ knows the file layout: the validator checks against it, importers write with it.
     brand/xray            -> data/brands/xray.toml
     category/servo        -> data/categories/servo.toml
     standard/iso-4762     -> data/standards/iso-4762.toml
+    company/horizon-hobby -> data/companies/horizon-hobby.toml
 
 Kits and releases may have art: our own traced outline, one SVG per id.
 
@@ -23,7 +24,7 @@ only in case (validate.py checks).
 """
 DIRS = {"brand": "brands", "kit": "kits", "release": "releases", "part": "parts",
         "spec": "specs", "doc": "documents", "shop": "shops", "category": "categories",
-        "standard": "standards"}
+        "standard": "standards", "company": "companies"}
 PART_PREFIX = 2
 ART_KINDS = ("kit", "release")
 

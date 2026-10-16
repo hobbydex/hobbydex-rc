@@ -15,7 +15,7 @@ import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layout import ART_KINDS, art_path
 
-KINDS = {"brands": "brand", "kits": "kit", "releases": "release", "parts": "part", "documents": "doc", "specs": "spec", "shops": "shop", "categories": "category", "standards": "standard"}
+KINDS = {"brands": "brand", "kits": "kit", "releases": "release", "parts": "part", "documents": "doc", "specs": "spec", "shops": "shop", "categories": "category", "standards": "standard", "companies": "company"}
 
 def art_of(entity_id):
     """The path data of a kit's or release's art, or None when it has none."""
