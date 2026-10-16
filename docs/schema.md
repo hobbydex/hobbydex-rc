@@ -84,6 +84,12 @@ drive = "2wd"        # 2wd | 4wd
 power = "electric"   # electric | nitro | petrol
 ```
 
+`platform = true` marks a chassis platform: a kit whose releases are
+different cars on one chassis (Tamiya TT-02, MB-01, Kyosho Fazer Mk2, Axial
+SCX24), not versions of one car. The site then draws a release with its own
+art or the kit type's icon, never the kit's art, which shows another car.
+Set by hobbydex-tools `tools/link_platform.py`; left out on any other kit.
+
 Optional on a kit: `rebrand_of`, the kits this one is the same car as under
 another name, and `same_platform_as`, kits that share a chassis platform without
 being the same car. Each entry names the kit, `parts` (interchangeable |
@@ -791,8 +797,8 @@ the car faces left. The site sets the fill from the release's colours.
 
 The export gives such a kit or release `art`: the path data of its file
 (the `d` attributes joined with a space), to be drawn in a `0 0 48 24`
-viewBox. The site draws a release with its own art, else its kit's, else the
-kit type's icon.
+viewBox. The site draws a release with its own art, else its kit's (not on a
+platform kit, see "kit"), else the kit type's icon.
 
 ## Conventions
 

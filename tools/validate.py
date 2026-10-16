@@ -298,6 +298,8 @@ def main():
         rq = d.get("requires") if kind == "release" else None
         if rq is not None and not (isinstance(rq, list) and rq and all(isinstance(x, str) and x.startswith(("kit/", "release/")) for x in rq)):
             errors.append(f"{path}: requires should be a list of kit or release ids (the car the release needs, one of them)")
+        if kind == "kit" and "platform" in d and d["platform"] is not True:
+            errors.append(f"{path}: platform should be true (a chassis platform), or left out")
         su = d.get("surface") if kind in ("release", "kit") else None
         if su is not None and not (isinstance(su, list) and su and all(x in SURFACES for x in su)):
             errors.append(f"{path}: surface {su!r} should be a list of {sorted(SURFACES)}")
