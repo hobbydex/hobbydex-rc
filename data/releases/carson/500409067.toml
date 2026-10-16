@@ -6,8 +6,7 @@ name = "1:8 Virus 4.1 XL 4S 2.4GHz RTR green"
 kind = "rtr"
 status = "released"
 notes = "Release year unknown: the shop and the manuals state none; no longer in the Carson shop"
-color = "green"
-documents = ["doc/carson/500409067-anleitung-instruction-virus-4-1", "doc/carson/500409067-virusxl-extrablatt", "doc/carson/shop"]
+documents = ["doc/carson/500409067-anleitung-instruction-virus-4-1", "doc/carson/500409067-virusxl-extrablatt", "doc/carson/shop", "doc/carson/manuals-page"]
 contains = [
   { part = "part/carson/409060-01", role = "kit", source = "doc/carson/500409067-anleitung-instruction-virus-4-1" },
   { part = "part/carson/409060-02", role = "kit", source = "doc/carson/500409067-anleitung-instruction-virus-4-1" },
@@ -45,6 +44,9 @@ contains = [
   { part = "part/carson/500405766", role = "kit", source = "doc/carson/500409067-anleitung-instruction-virus-4-1" },
   { part = "part/carson/500405767", role = "kit", source = "doc/carson/500409067-anleitung-instruction-virus-4-1" },
   { part = "part/carson/500405768", role = "kit", source = "doc/carson/500409067-anleitung-instruction-virus-4-1" },
+  { part = "part/carson/500405840", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405862", role = "kit", source = "doc/carson/500409067-anleitung-instruction-virus-4-1" },
   { part = "part/carson/500801020", role = "kit", source = "doc/carson/500409067-anleitung-instruction-virus-4-1" },
+  { part = "part/carson/500900168", role = "listed", source = "doc/carson/shop" },
 ]
+color = "green"

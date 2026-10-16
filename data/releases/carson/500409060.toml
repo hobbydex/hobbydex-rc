@@ -4,9 +4,12 @@ brand = "brand/carson"
 number = "500409060"
 name = "1:8 Virus 4.1 4S BL 2.4G RTR"
 kind = "rtr"
-status = "released"
-notes = "Release year unknown: the shop and the manuals state none; no longer in the Carson shop"
-documents = ["doc/carson/500409060-parts-list", "doc/carson/500409060-virus-4-1-dina5-final", "doc/carson/shop"]
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available"
+documents = ["doc/carson/500409060-parts-list", "doc/carson/500409060-virus-4-1-dina5-final", "doc/carson/shop", "doc/carson/manuals-page"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-8-virus-41-4s-bl-24g-rtr-500409060-en.html" },
+]
 contains = [
   { part = "part/carson/409050-10", role = "kit", source = "doc/carson/500409060-parts-list" },
   { part = "part/carson/409060-01", role = "kit", source = "doc/carson/500409060-parts-list" },
@@ -48,6 +51,7 @@ contains = [
   { part = "part/carson/500405766", role = "kit", source = "doc/carson/500409060-parts-list" },
   { part = "part/carson/500405767", role = "kit", source = "doc/carson/500409060-parts-list" },
   { part = "part/carson/500405768", role = "kit", source = "doc/carson/500409060-parts-list" },
+  { part = "part/carson/500405840", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405862", role = "kit", source = "doc/carson/500409060-parts-list" },
   { part = "part/carson/500500052", role = "kit", source = "doc/carson/500409060-parts-list" },
   { part = "part/carson/500501533", role = "kit", source = "doc/carson/500409060-parts-list" },

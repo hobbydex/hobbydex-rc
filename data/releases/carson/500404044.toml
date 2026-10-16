@@ -1,0 +1,18 @@
+id = "release/carson/500404044"
+kit = "kit/carson/fy10-destroyer-truggy"
+brand = "brand/carson"
+number = "500404044"
+name = "FY10 Truggy Destroyer Line BL 100% RTR 2.4 GHz"
+kind = "rtr"
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available"
+documents = ["doc/carson/shop", "doc/carson/manuals-page"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-10-fy10-truggy-dest-bl-24g-100-rtr-500404044-en.html" },
+]
+contains = [
+  { part = "part/carson/500405311", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405326", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405337", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405339", role = "listed", source = "doc/carson/shop" },
+]
