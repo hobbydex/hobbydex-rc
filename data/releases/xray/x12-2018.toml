@@ -4,7 +4,7 @@ brand = "brand/xray"
 name = "X12'18"
 model_year = 2018
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/xray/x12-2018-exploded-view", "doc/xray/x12-2018-manual", "doc/xray/x12-2018-part-list"]
 contains = [
   { part = "part/hudy/102003", role = "option", source = "doc/xray/x12-2018-part-list" },
@@ -362,3 +362,4 @@ contains = [
   { part = "part/xray/971022", role = "kit", source = "doc/xray/x12-2018-manual" },
   { part = "part/xray/980210", role = "kit", source = "doc/xray/x12-2018-manual" },
 ]
+notes = "Sold as 370007 (X12 2018 EU Specs), 370008 (X12 2018 US Specs) (teamxray.com product list)."

@@ -2,5 +2,10 @@ id = "part/xray/336155"
 brand = "brand/xray"
 number = "336155"
 name = "CARBON BATTERY PLATE - V2"
+former_names = ["GRAPHITE BATTERY PLATE - V2"]
 category = "chassis"
 material = "carbon"
+fits = [
+  { kit = "kit/xray/rx8", type = "replaces", replaces = "part/xray/336151", source = "doc/xray/rx8-2026-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/rx8", type = "replaces", replaces = "part/xray/346150", source = "doc/xray/rx8-2026-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

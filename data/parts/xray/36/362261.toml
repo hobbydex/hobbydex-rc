@@ -6,5 +6,6 @@ category = "steering"
 material = "aluminium"
 material_grade = "7075-T6"
 fits = [
+  { kit = "kit/xray/xb4", type = "replaces", replaces = "part/xray/362250-H", source = "doc/xray/xb4-2026-part-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/xray/xb4", type = "replaces", replaces = "part/xray/362250", source = "doc/xray/xb4-2026-part-list", notes = "Same part in another material (link_upgrades.py)" },
 ]
