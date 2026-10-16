@@ -1,0 +1,20 @@
+id = "part/hobbywing/30408001"
+brand = "brand/hobbywing"
+number = "30408001"
+name = "Justock 3650SD-13.5T"
+category = "motor"
+category_source = "curated"
+kv = 2700
+turns = 13.5
+lipo_cells = [2, 3]
+diameter_mm = 35.8
+length_mm = 52.5
+shaft_mm = 3.175
+weight_g = 200
+sensored = true
+equivalent_to = [
+  { spec = "spec/motor/brushless-3650-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 35.8 mm, length 52.5 mm, shaft 3.175 mm)" },
+]
+documents = ["doc/hobbywing/xerun-justock-3650sd-manual"]
+notes = "Discontinued: listed as STOPPED on hobbywing.com"
+range = "hobbywing/justock-3650sd"

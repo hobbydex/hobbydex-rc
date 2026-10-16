@@ -1,0 +1,18 @@
+id = "part/hobbywing/30401905"
+brand = "brand/hobbywing"
+number = "30401905"
+name = "XERUN-4268SD-2600KV-OnRoad-G2"
+category = "motor"
+category_source = "curated"
+kv = 2600
+lipo_cells = [2, 4]
+diameter_mm = 42
+length_mm = 68
+shaft_mm = 5
+weight_g = 319
+sensored = true
+notes = "Bearings (Hobbywing's specifications): front 5x16x5, rear 5x11x5. Discontinued: listed as STOPPED on hobbywing.com"
+equivalent_to = [
+  { spec = "spec/motor/brushless-4268-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 42 mm, length 68 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/xerun-4274-4268-sd-g2-manual"]
