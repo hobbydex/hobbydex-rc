@@ -1,0 +1,17 @@
+id = "part/amewi/013-21114-01"
+brand = "brand/amewi"
+number = "013-21114-01"
+name = "LiPo Akku 7,4V 300mAh 3P Molex"
+fits = [
+  { kit = "kit/amewi/drift-muscle-car", type = "direct", source = "doc/amewi/21114-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/LiPo-Akku-74V-300mAh-3P-Molex" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 300
+category = "battery"

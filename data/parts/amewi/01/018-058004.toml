@@ -2,7 +2,9 @@ id = "part/amewi/018-058004"
 brand = "brand/amewi"
 number = "018-058004"
 name = "Li-Ion Akku 2S 7,4V 2000mAh XT30"
+gtin = "4260564625699"
 fits = [
+  { kit = "kit/amewi/mercedes-benz-arocs-tipper-6x6", type = "direct", source = "doc/amewi/22685-product-page" },
   { kit = "kit/amewi/wheel-loader", type = "direct", source = "doc/amewi/22538-product-page" },
   { kit = "kit/amewi/mercedes-benz-arocs-tipper", type = "direct", source = "doc/amewi/22533-product-page" },
   { kit = "kit/amewi/full-metal-excavator-v4", type = "direct", source = "doc/amewi/22501-product-page" },
@@ -15,3 +17,7 @@ cells = 2
 capacity_mah = 2000
 connector = "XT30"
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"

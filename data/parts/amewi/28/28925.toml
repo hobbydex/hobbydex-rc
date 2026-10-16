@@ -1,0 +1,17 @@
+id = "part/amewi/28925"
+brand = "brand/amewi"
+number = "28925"
+name = "NiMH Akku 7,2V 700mAh, HBX-Stecker"
+fits = [
+  { kit = "kit/amewi/excavator", type = "direct", source = "doc/amewi/22307-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/NiMH-Akku-72V-700mAh-HBX-Stecker" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 700
+category = "battery"
