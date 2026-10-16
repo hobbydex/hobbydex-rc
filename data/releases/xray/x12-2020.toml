@@ -4,7 +4,7 @@ brand = "brand/xray"
 name = "X12'20"
 model_year = 2020
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/xray/x12-2020-exploded-view", "doc/xray/x12-2020-manual", "doc/xray/x12-2020-part-list"]
 contains = [
   { part = "part/hudy/102003", role = "option", source = "doc/xray/x12-2020-part-list" },
@@ -382,3 +382,4 @@ contains = [
   { part = "part/xray/971255", role = "listed", source = "doc/xray/x12-2020-part-list" },
   { part = "part/xray/980210", role = "kit", source = "doc/xray/x12-2020-manual" },
 ]
+notes = "Sold as 370011 (X12'20 EU), 370012 (X12'20 US) (teamxray.com product list)."

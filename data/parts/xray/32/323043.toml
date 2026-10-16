@@ -2,10 +2,12 @@ id = "part/xray/323043"
 brand = "brand/xray"
 number = "323043"
 name = "ALU REAR ROLL-CENTER HOLDER FOR ANTI-ROLL BAR - 7075 T6"
+former_names = ["ALU REAR ROLL-CENTER HOLDER - 7075 T6"]
 category = "suspension"
 material = "aluminium"
 material_grade = "7075-T6"
 fits = [
+  { kit = "kit/xray/scx", type = "replaces", replaces = "part/xray/323044", source = "doc/xray/scx-2021-manual", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/xray/xb2", type = "replaces", replaces = "part/xray/323044", source = "doc/xray/xb2-2021-part-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/xray/xt2", type = "replaces", replaces = "part/xray/323044", source = "doc/xray/xt2-2024-part-list", notes = "Same part in another material (link_upgrades.py)" },
 ]

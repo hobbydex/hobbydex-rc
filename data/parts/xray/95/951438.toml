@@ -6,3 +6,8 @@ pack_qty = 2
 former_names = ["BALL-BEARING 1/4\" x 3/8\" x 1/8\" FLANGED", "BALL-BEARING 1/4\" x 3/8\" x 1/8\" FLANGED - STEEL SEALED - OIL", "BALL-BEARING 1/4\"x3/8\"x1/8\" FLANGED - STEEL SEALED - OIL", "BALL-BEARING 1/4\"x 3/8\"x 1/8\" FLANGED-STEEL SEALED-OIL"]
 category = "bearing"
 material = "steel"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "metal"
+lubricant = "oil"
