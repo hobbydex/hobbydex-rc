@@ -1,0 +1,19 @@
+id = "part/amewi/28897"
+brand = "brand/amewi"
+number = "28897"
+name = "LiPo Akku 4S 14,8V 4000mAh 20C Softcase, DEANS"
+fits = [
+  { kit = "kit/amewi/touring-car-kasa-pro", type = "direct", source = "doc/amewi/21028-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/LiPo-Akku-4S-148V-4000mAh-20C-Softcase-DEANS" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 4000
+c_rating = 20
+connector = "Deans"
+category = "battery"

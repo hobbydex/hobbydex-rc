@@ -1,0 +1,19 @@
+id = "part/amewi/28910"
+brand = "brand/amewi"
+number = "28910"
+name = "LiPo Akku 2S 7.4V 1500mah 20C Softcase, DEANS"
+fits = [
+  { kit = "kit/amewi/short-course-truck-fighter-1-sc12", type = "direct", source = "doc/amewi/22430-product-page" },
+]
+links = [
+  { site = "Amewi", url = "https://amewi.com/LiPo-Akku-2S-74V-1500mah-20C-Softcase-DEANS" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1500
+c_rating = 20
+connector = "Deans"
+category = "battery"

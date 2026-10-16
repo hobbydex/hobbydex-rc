@@ -8,8 +8,10 @@ kind = "rtr"
 status = "released"
 documents = ["doc/amewi/22307-product-page", "doc/amewi/22307_de_en-manual"]
 gtin = "4260476357107"
-notes = "Release year unknown; on amewi.com when read (2026-10-13). Technische Daten: Maßstab: 1:14; Länge: 540mm; Breite: 170mm; Höhe: 450mm; Gewicht (inkl. Akku): 1640g; Hauptmaterial: Kunststoff; Schaufel: Metall; Akku: Li-Ion 2S 7,4V 500mAh, HBX-Stecker 4-polig, 50x28x15mm, 38g; Betriebszeit: 20-25min, je nach Einsatz; Fernsteuerung: 2,4GHz; Reichweite: 40m; Ladekabel: USB; Ladezeit: 60min. Lieferumfang: Modell, Fernsteuerung, Ladekabel, Akku, Bedienungsanleitung DE/EN"
+notes = "Release year unknown; on amewi.com when read (2026-10-13). Specifications: Scale: 1:14; Length: 540mm; Width: 170mm; Height: 450mm; Weight (incl. battery): 1640g; Main material: Plastic; Blade: Metal; Battery: Li-Ion 2S 7.4V 500mAh, HBX plug 4-pin, 50x28x15mm, 38g; Operating time: 20-25min, depending on use; Remote control: 2.4GHz; Range: 40m; Charging cable: USB; Charging time: 60min. In the box: Model, Remote control, Charging cable, Rechargeable battery, Operating instructions DE/EN"
 contains = [
+  { part = "part/amewi/28925", role = "option", source = "doc/amewi/22307-product-page" },
   { part = "part/amewi/010-22307", role = "listed", source = "doc/amewi/22307-product-page" },
   { part = "part/amewi/018-058012", role = "listed", source = "doc/amewi/22307-product-page" },
+  { part = "part/amewi/28365", role = "listed", source = "doc/amewi/22307-product-page" },
 ]

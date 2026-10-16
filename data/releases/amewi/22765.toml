@@ -9,4 +9,7 @@ status = "released"
 documents = ["doc/amewi/22765-product-page", "doc/amewi/22766-manual"]
 gtin = "4262500349485"
 notes = "Release year unknown; on amewi.com when read (2026-10-13). Specifications: Scale: 1:8; Length: 680mm; Width: 298mm; Height: 325 mm; Weight: 5700 g without battery; Wheelbase: 373 mm; Front track width: 245 mm; Rear track width: 245 mm; Ground clearance: 55 mm; Front wheels: Outer diameter/width 128/50 mm; Rear wheels: Outer diameter/width 128/50 mm; Rim diameter: 55 mm; Transmission: 2-speed steel; Front shock absorber: Oil pressure aluminum 100 mm; Rear shock absorber: Oil pressure aluminum 90 mm; Brake: Electronic incl. hill brake; ESC: 80A FOC Vector Control ESC with intelligent torque management; Motor: Brushless 3970 with chip-controlled intelligent sensor 2000KV; Drive system: Cardan steel; Steering servo: Standard 35kg metal gearbox; Main material: Steel, plastic; Battery compartment dimensions: 138x44x35mm; Battery: 2-3S LiPo (not included, recommended from 3000mAh 30C with XT60 plug); Driving time: Several hours possible, depending on battery choice; Maximum speed: With 2S LiPo 1st gear: 8km/h, 2nd gear: 13km/h, with 3S LiPo 1st gear: 18.5km/h, 2nd gear: 29km/h; Remote control: 8-channel, 2.4GHz; Range: approx. 120m. In the box: Model, Remote control, Decal sheet, Attachments, Tools, Instructions DE/EN"
+contains = [
+  { part = "part/amewi/28171", role = "option", source = "doc/amewi/22765-product-page" },
+]
 color = "blue/orange"
