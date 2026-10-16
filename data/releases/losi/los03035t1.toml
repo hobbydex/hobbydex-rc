@@ -8,6 +8,7 @@ status = "discontinued"
 gtin = "605482765166"
 documents = ["doc/losi/los03035-exploded-view-multi", "doc/losi/los03035-manual-en", "doc/losi/los03035-product-page"]
 contains = [
+  { part = "part/losi/LOS230088", role = "kit", source = "doc/losi/los03035-exploded-view-multi" },
   { part = "part/losi/LOS230090", role = "kit", source = "doc/losi/los03035-exploded-view-multi" },
   { part = "part/losi/LOS231043", role = "kit", source = "doc/losi/los03035-exploded-view-multi" },
   { part = "part/losi/LOS231045", role = "kit", source = "doc/losi/los03035-exploded-view-multi" },
@@ -123,7 +124,6 @@ contains = [
   { part = "part/tlr/TLR8202", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS230086", role = "option", source = "doc/losi/los03035-exploded-view-multi" },
   { part = "part/losi/LOS230087", role = "option", source = "doc/losi/los03035-exploded-view-multi" },
-  { part = "part/losi/LOS230088", role = "option", source = "doc/losi/los03035-exploded-view-multi" },
   { part = "part/losi/LOS230089", role = "option", source = "doc/losi/los03035-exploded-view-multi" },
   { part = "part/losi/LOS230091", role = "option", source = "doc/losi/los03035-exploded-view-multi" },
   { part = "part/losi/LOS230092", role = "option", source = "doc/losi/los03035-exploded-view-multi" },
