@@ -332,6 +332,18 @@ and receivers also carry `channels` and `protocol` (AFHDS 3, ANT, DSMR) and
 `weight_g`; their model code is the part number (FS-NB4+, so a number may
 contain `+`).
 
+`radio_unit` says what a radio part is: `transmitter` (the transmitter as the
+maker lists it, with no receiver named as part of it), `receiver` (a
+receiver, also an ESC or a car's control board with a receiver built in) or
+`set` (a transmitter sold with its receiver under one number). On a
+transmitter or a set, `dimensions_mm` and `weight_g` are the transmitter's;
+on a receiver they are the receiver's. A set lists its receiver in
+`includes` when the receiver is a part of its own; when it is not, the
+receiver's size and weight go in `notes` as "Receiver: 35 x 21 x 12 mm,
+11 g". The field is left out where the maker does not make clear what the
+part is. tools/validate.py checks the values and that the part is in
+category electronics.
+
 `gtin`: the product barcode (UPC-A, EAN-13 or another GTIN) as a string of
 digits, as printed by the brand; the validator checks length and check digit.
 Releases can carry a `gtin` too, the barcode on the kit's box.

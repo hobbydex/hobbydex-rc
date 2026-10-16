@@ -3,6 +3,7 @@ name = "Electronics"
 summary = "ESCs, radios, receivers, lights and wiring"
 description = "ESCs, receivers, transmitters, lights, switches, wires and plugs."
 key_fields = [
+  { field = "radio_unit", label = "Radio", from = "part" },
   { field = "current_a", label = "Amps", from = "part", unit = "A" },
   { field = "lipo_cells", label = "LiPo", from = "part", format = "cells" },
   { field = "sensored", label = "Sensor port", from = "part", format = "yesno" },
