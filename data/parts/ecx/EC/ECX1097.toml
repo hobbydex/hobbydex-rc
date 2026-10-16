@@ -9,3 +9,12 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-universal-battery-strap-1-1-10-2wd-all/ECX1097.html" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/ecx/amp-db", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/amp-mt", type = "direct", source = "doc/ecx/horizon-part-pages" },
+  { kit = "kit/ecx/axe", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/brutus", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/circuit", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/ruckus-2wd", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/torment-2wd", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+]

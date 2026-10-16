@@ -8,6 +8,7 @@ status = "discontinued"
 gtin = "605482593769"
 documents = ["doc/ecx/ecx01003-manual-multi", "doc/ecx/ecx01003-manualaddendum-multi", "doc/ecx/ecx01003-product-page"]
 contains = [
+  { part = "part/ecx/ECX10003", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX1015", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX210003", role = "kit", source = "doc/ecx/ecx01003-manual-multi" },
   { part = "part/ecx/ECX211005", role = "kit", source = "doc/ecx/ecx01003-manual-multi" },
@@ -38,6 +39,7 @@ contains = [
   { part = "part/ecx/ECX214010", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX216002", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX217001", role = "kit", source = "doc/ecx/horizon-part-pages" },
+  { part = "part/ecx/ECX41003", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX01003", role = "listed", source = "doc/ecx/ecx01003-manual-multi" },
   { part = "part/ecx/ECX11007", role = "listed", source = "doc/ecx/ecx01003-manualaddendum-multi" },
   { part = "part/ecx/ECX13001", role = "listed", source = "doc/ecx/ecx01003-manualaddendum-multi" },
@@ -45,7 +47,6 @@ contains = [
   { part = "part/ecx/ECX313001", role = "option", source = "doc/ecx/ecx01003-manual-multi" },
   { part = "part/ecx/ECX314003", role = "option", source = "doc/ecx/ecx01003-manual-multi" },
   { part = "part/ecx/ECX314004", role = "option", source = "doc/ecx/ecx01003-manual-multi" },
-  { part = "part/ecx/ECX41003", role = "listed", source = "doc/ecx/ecx01003-manual-multi" },
   { part = "part/spektrum/SPMSTX200", role = "listed", source = "doc/ecx/ecx01003-manual-multi" },
 ]
 color = "blue/white"

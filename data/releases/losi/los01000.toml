@@ -7,3 +7,9 @@ kind = "rtr"
 status = "discontinued"
 gtin = "605482569290"
 documents = ["doc/losi/los01000-blank-setup-sheet", "doc/losi/los01000-filled-setup-sheet", "doc/losi/los01000-manual-en", "doc/losi/los01000-product-page", "doc/losi/los01000-slipsheet-multi"]
+contains = [
+  { part = "part/losi/LOS212006", role = "listed", source = "doc/losi/los01000-slipsheet-multi" },
+  { part = "part/losi/LOS212008", role = "listed", source = "doc/losi/los01000-slipsheet-multi" },
+  { part = "part/losi/LOSB1861", role = "listed", source = "doc/losi/los01000-manual-en" },
+  { part = "part/losi/LOSB1862", role = "listed", source = "doc/losi/los01000-manual-en" },
+]

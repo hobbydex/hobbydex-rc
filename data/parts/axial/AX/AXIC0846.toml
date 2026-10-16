@@ -10,3 +10,10 @@ category = "spur-gear"
 teeth = 64
 pitch_dp = 32
 material = "steel"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/bomber", type = "replaces", replaces = "part/axial/AXIC1065", source = "doc/axial/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/axial/yeti", type = "replaces", replaces = "part/axial/AXIC1065", source = "doc/axial/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]

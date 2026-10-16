@@ -3,10 +3,10 @@ brand = "brand/losi"
 number = "LOS255017"
 name = "Flat Head Screws, Steel, Black Oxide, M4x16mm"
 pack_qty = 10
-former_names = ["Flat Head Screws, Stainless, 16mm"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flat-head-screws-steel-black-oxide-m4x16mm-10/LOS255017.html" },
 ]
+former_names = ["Flat Head Screws, Stainless, 16mm"]
 category = "screw"
 material = "stainless"
 equivalent_to = [
@@ -15,8 +15,6 @@ equivalent_to = [
 finish = "black"
 gtin = "605482828946"
 fits = [
-  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages" },
-  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/axial/scx6", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/losi/8ight-xe", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/losi/8ight-xte", type = "direct", source = "doc/losi/horizon-part-pages" },
@@ -25,4 +23,6 @@ fits = [
   { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]

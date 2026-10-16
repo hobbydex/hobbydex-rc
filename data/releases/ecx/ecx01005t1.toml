@@ -7,6 +7,7 @@ kind = "rtr"
 status = "discontinued"
 documents = ["doc/ecx/ecx01005-product-page", "doc/ecx/ecx01005t1-manual-multi", "doc/ecx/ecx01005t1-parts-explosion", "doc/ecx/ecx01005t1-warranty-multi"]
 contains = [
+  { part = "part/ecx/ECX10003", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX18001", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX210006", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX210008", role = "kit", source = "doc/ecx/horizon-part-pages" },
@@ -30,9 +31,9 @@ contains = [
   { part = "part/ecx/ECX216000", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX216001", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX217000", role = "kit", source = "doc/ecx/horizon-part-pages" },
+  { part = "part/ecx/ECX41001", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX13001", role = "listed", source = "doc/ecx/ecx01005t1-parts-explosion" },
   { part = "part/ecx/ECX210007", role = "listed", source = "doc/ecx/ecx01005t1-parts-explosion" },
   { part = "part/ecx/ECX211013", role = "listed", source = "doc/ecx/ecx01005t1-parts-explosion" },
-  { part = "part/ecx/ECX41001", role = "listed", source = "doc/ecx/ecx01005t1-parts-explosion" },
 ]
 color = "black/orange"
