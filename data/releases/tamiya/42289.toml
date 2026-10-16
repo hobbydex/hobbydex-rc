@@ -5,7 +5,7 @@ number = "42289"
 name = "TRF102 Chassis Kit"
 kind = "kit"
 status = "discontinued"
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2015-07-18, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2015-07-18, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/42289-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42289-manual"]
 contains = [
   { part = "part/tamiya/10115211", role = "kit", source = "doc/tamiya/42289-manual" },
@@ -129,3 +129,9 @@ contains = [
   { part = "part/tamiya/84174", role = "kit", source = "doc/tamiya/42289-manual", qty = 5, step = "BB11" },
   { part = "part/tamiya/84189", role = "kit", source = "doc/tamiya/42289-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/42289", kind = "fan-site" },
+]
+released = "2015-07-18"
+year = 2015
+released_source = "TamiyaBase"

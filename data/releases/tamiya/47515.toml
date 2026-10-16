@@ -6,7 +6,7 @@ name = "Mini Cooper Racing (Blue Painted Body) (MB-01)"
 kind = "kit"
 status = "discontinued"
 depicts = { make = "Mini", model = "Cooper Racing" }
-notes = "Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2026-03-21, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2026-03-21, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/47515-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/58747-manual"]
 contains = [
   { part = "part/tamiya/11057663", role = "kit", source = "doc/tamiya/58747-manual" },
@@ -61,3 +61,9 @@ contains = [
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/58747-manual" },
   { part = "part/tamiya/89835", role = "kit", source = "doc/tamiya/58747-manual", qty = 2, step = "MC10" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/47515", kind = "fan-site" },
+]
+released = "2026-03-21"
+year = 2026
+released_source = "TamiyaBase"

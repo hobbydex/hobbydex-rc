@@ -6,7 +6,7 @@ name = "TB-02D Drift Spec Chassis Kit"
 kind = "kit"
 status = "discontinued"
 category = "drift"
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2007-09-29, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2007-09-29, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/49458-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/49458-manual"]
 contains = [
   { part = "part/tamiya/10445987", role = "kit", source = "doc/tamiya/49458-manual" },
@@ -106,3 +106,9 @@ contains = [
   { part = "part/tamiya/54020", role = "kit", source = "doc/tamiya/49458-manual" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/49458-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/49458", kind = "fan-site" },
+]
+released = "2007-09-29"
+year = 2007
+released_source = "TamiyaBase"

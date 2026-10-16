@@ -6,7 +6,7 @@ name = "Sumo Power GT Nissan GT-R (TA06)"
 kind = "kit"
 status = "discontinued"
 depicts = { make = "Nissan", model = "GT-R" }
-notes = "Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2011-07-09, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2011-07-09, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 documents = ["doc/tamiya/58488-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/spb-51453-manual"]
 contains = [
   { part = "part/tamiya/11051955", role = "kit", source = "doc/tamiya/spb-51453-manual" },
@@ -22,3 +22,9 @@ contains = [
   { part = "part/tamiya/51453", role = "kit", source = "doc/tamiya/spb-51453-manual" },
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/spb-51453-manual" },
 ]
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58488", kind = "fan-site" },
+]
+released = "2011-06-07"
+year = 2011
+released_source = "TamiyaBase"
