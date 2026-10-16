@@ -2,9 +2,13 @@ id = "part/gmade/GM52415"
 brand = "brand/gmade"
 number = "GM52415"
 name = "Gmade Rock sliders (2) for Gmade GS01 Chassis"
-pack_qty = 2
-applies_to = "GS01 KOMODO"
+applies_to = "GS01 KOMODO, GS01 SAWBACK"
+fits = [
+  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+  { kit = "kit/gmade/gs01-sawback", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 SAWBACK option parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-rock-sliders-2-for-gmade-gs01-chassis/637/" },
 ]
+pack_qty = 2
 category = "bumper-guard"

@@ -3,6 +3,10 @@ brand = "brand/gmade"
 number = "GM30008"
 name = "Gmade Aluminum Skid Plate Black for GS01 Front Tube Bumper"
 applies_to = "GS01 KOMODO, GS01 SAWBACK"
+fits = [
+  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+  { kit = "kit/gmade/gs01-sawback", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 SAWBACK option parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-aluminum-skid-plate-black-for-gs01-front-tube-bumper/648/" },
 ]

@@ -1,0 +1,16 @@
+id = "part/gmade/GMA0134"
+brand = "brand/gmade"
+number = "GMA0134"
+name = "3*20mm socket set screw"
+applies_to = "GR01 GOM"
+fits = [
+  { kit = "kit/gmade/gr01-gom", type = "direct", source = "doc/gmade/store", notes = "Listed under GR01 GOM replacement parts" },
+]
+links = [
+  { site = "Gmade", url = "https://www.gmade.net/product/320mm-socket-set-screw/950/" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
