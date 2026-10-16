@@ -59,7 +59,7 @@ ENUMS = {
     "brand.status": {"active", "dormant", "gone"},
     "company.status": {"active", "dormant", "gone"},
     "contains.role": {"kit", "option", "listed"},
-    "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "owner_report"},
+    "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "news", "owner_report"},
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
