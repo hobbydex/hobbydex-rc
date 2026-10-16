@@ -3,6 +3,11 @@ brand = "brand/gmade"
 number = "GM30188"
 name = "Stainless steel pivot ball set for GS02F TS chassis"
 applies_to = "GS02F SPIDER, GS02 KOMODO DOUBLE CAB, GS02 BOM"
+fits = [
+  { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER option parts" },
+  { kit = "kit/gmade/gs02-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 KOMODO DOUBLE CAB option parts" },
+  { kit = "kit/gmade/gs02-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 BOM option parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/stainless-steel-pivot-ball-set-for-gs02f-ts-chassis/2260/" },
 ]

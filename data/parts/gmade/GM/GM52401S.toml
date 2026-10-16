@@ -3,6 +3,10 @@ brand = "brand/gmade"
 number = "GM52401S"
 name = "Gmade GS01 Red Frame Set"
 applies_to = "GS01 KOMODO, GS01 SAWBACK"
+fits = [
+  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+  { kit = "kit/gmade/gs01-sawback", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 SAWBACK option parts" },
+]
 documents = ["doc/gmade/gm52401s-manual"]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-gs01-red-frame-set/605/" },

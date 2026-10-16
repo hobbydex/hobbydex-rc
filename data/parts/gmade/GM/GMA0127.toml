@@ -1,0 +1,16 @@
+id = "part/gmade/GMA0127"
+brand = "brand/gmade"
+number = "GMA0127"
+name = "Gmade 3*4mm socket set screw"
+applies_to = "GS02F SPIDER"
+fits = [
+  { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER replacement parts" },
+]
+links = [
+  { site = "Gmade", url = "https://www.gmade.net/product/gmade-34mm-socket-set-screw/947/" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

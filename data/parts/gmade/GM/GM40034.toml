@@ -2,9 +2,15 @@ id = "part/gmade/GM40034"
 brand = "brand/gmade"
 number = "GM40034"
 name = "Gmade Fog LED Light & Accessory Set"
-applies_to = "GS02 BOM, GS01 KOMODO"
+applies_to = "GS02 BOM, GS01 KOMODO, GS01 SAWBACK"
+fits = [
+  { kit = "kit/gmade/gs02-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 BOM option parts" },
+  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+  { kit = "kit/gmade/gs01-sawback", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 SAWBACK option parts" },
+]
 documents = ["doc/gmade/gm40034-manual"]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-fog-led-light-accessory-set/625/" },
 ]
-category = "electronics"
+category = "body"
+category_source = "curated"

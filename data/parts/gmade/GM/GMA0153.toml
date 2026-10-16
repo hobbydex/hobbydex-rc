@@ -1,0 +1,16 @@
+id = "part/gmade/GMA0153"
+brand = "brand/gmade"
+number = "GMA0153"
+name = "M2.5 nut"
+applies_to = "GS02F MILITARY BUFFALO, GS02F BUFFALO"
+fits = [
+  { kit = "kit/gmade/gs02f-military-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F MILITARY BUFFALO replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
+]
+links = [
+  { site = "Gmade", url = "https://www.gmade.net/product/m25-nut/953/" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m2.5-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

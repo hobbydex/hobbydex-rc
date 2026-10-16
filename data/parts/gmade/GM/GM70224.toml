@@ -3,7 +3,12 @@ brand = "brand/gmade"
 number = "GM70224"
 name = "Gmade 1.9 NR01 beadlock wheels (Black)"
 pack_qty = 2
-applies_to = "GS01 KOMODO"
+applies_to = "GS02F BUFFALO PICKUP, GS02F BUFFALO, GS01 KOMODO"
+fits = [
+  { kit = "kit/gmade/gs02f-buffalo-pickup", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO PICKUP replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
+  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+]
 documents = ["doc/gmade/gm70224-manual"]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-19-nr01-beadlock-wheels-black-2/617/" },
