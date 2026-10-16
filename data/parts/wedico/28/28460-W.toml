@@ -1,7 +1,8 @@
 id = "part/wedico/28460-W"
 brand = "brand/wedico"
 number = "28460-W"
-name = "Innenschskant ZYL.SCHRAUBE M 3*50 DIN 912"
+name = "Socket head cap screw M 3*50 DIN 912"
+name_de = "Innenschskant ZYL.SCHRAUBE M 3*50 DIN 912"
 category = "screw"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
@@ -12,3 +13,4 @@ equivalent_to = [
   { spec = "spec/screw/m3x50-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+notes = "English translated by Hobbydex from the shop's German title (name_de)"

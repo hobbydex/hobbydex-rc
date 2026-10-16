@@ -1,10 +1,15 @@
 id = "part/wedico/24780-W"
 brand = "brand/wedico"
 number = "24780-W"
-name = "ZYLINDERSTIFT 3*8 DIN 6325"
+name = "Dowel pin 3*8 DIN 6325"
+name_de = "ZYLINDERSTIFT 3*8 DIN 6325"
 category = "pin-clip"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/zylinderstift-3_8-din-6325" },
+]
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/pin/3x8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]

@@ -1,7 +1,8 @@
 id = "part/wedico/31084-W"
 brand = "brand/wedico"
 number = "31084-W"
-name = "SENKSCHRAUBE M4*16 DIN 7991 Innenschskant"
+name = "Countersunk screw M4*16 DIN 7991 socket head"
+name_de = "SENKSCHRAUBE M4*16 DIN 7991 Innenschskant"
 category = "screw"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
@@ -12,3 +13,4 @@ equivalent_to = [
   { spec = "spec/screw/m4x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
