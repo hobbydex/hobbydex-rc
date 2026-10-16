@@ -14,7 +14,7 @@ data/
   brands/<brand>.toml
   kits/<brand>/<slug>.toml
   releases/<brand>/<number-or-slug>.toml   # includes generated `contains`
-  parts/<brand>/<prefix>/<number>.toml     # prefix: first two characters of the number
+  parts/<brand>/<prefix>/<number>.toml     # prefix: first two characters of the number, upper-cased
   documents/<brand>/<slug>.toml            # manuals and parts lists used as sources
 art/
   kits/<brand>/<slug>.svg                  # outline of a kit

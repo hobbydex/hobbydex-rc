@@ -12,8 +12,14 @@ Kits and releases may have art: our own traced outline, one SVG per id.
     kit/tamiya/blitzer-beetle -> art/kits/tamiya/blitzer-beetle.svg
     release/tamiya/58502      -> art/releases/tamiya/58502.svg
 
-Parts get a prefix directory (the first PART_PREFIX characters of the number)
-so no directory holds more than a few hundred files.
+Parts get a prefix directory (the first PART_PREFIX characters of the number,
+upper-cased) so no directory holds more than a few hundred files. Upper-cased
+so that numbers starting GE and Ge share one directory: a checkout on a
+case-insensitive filesystem (macOS, Windows) cannot hold both GE/ and Ge/. The
+file name keeps the number as written; two numbers of one brand may not differ
+only in case (validate.py checks).
+
+    part/gens-ace/Gens-EC5-P -> data/parts/gens-ace/GE/Gens-EC5-P.toml
 """
 DIRS = {"brand": "brands", "kit": "kits", "release": "releases", "part": "parts",
         "spec": "specs", "doc": "documents", "shop": "shops", "category": "categories",
@@ -29,7 +35,7 @@ def path_for(entity_id, root="data"):
         brand, _, number = rest.partition("/")
         if not brand or not number:
             raise ValueError(f"part id needs brand and number: {entity_id!r}")
-        return f"{root}/{DIRS[kind]}/{brand}/{number[:PART_PREFIX]}/{number}.toml"
+        return f"{root}/{DIRS[kind]}/{brand}/{number[:PART_PREFIX].upper()}/{number}.toml"
     return f"{root}/{DIRS[kind]}/{rest}.toml"
 
 def art_path(entity_id, root="art"):
