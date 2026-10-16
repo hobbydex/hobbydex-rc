@@ -8,6 +8,7 @@ status = "discontinued"
 gtin = "605482766118"
 documents = ["doc/losi/los03045-exploded-view-diagram", "doc/losi/los03045-manual-en", "doc/losi/los03045-product-page"]
 contains = [
+  { part = "part/axial/AXI230031", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS230090", role = "kit", source = "doc/losi/los03045-exploded-view-diagram" },
   { part = "part/losi/LOS231043", role = "kit", source = "doc/losi/los03045-exploded-view-diagram" },
   { part = "part/losi/LOS231045", role = "kit", source = "doc/losi/los03045-exploded-view-diagram" },

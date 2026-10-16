@@ -11,3 +11,7 @@ category = "bearing"
 equivalent_to = [
   { spec = "spec/bearing/4x8x3", match = "close", notes = "A plain bushing, 4x8x3; the ball bearing of that size replaces it" },
 ]
+fits = [
+  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages" },
+  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages" },
+]

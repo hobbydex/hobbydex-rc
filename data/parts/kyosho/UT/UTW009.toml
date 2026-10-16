@@ -1,7 +1,10 @@
 id = "part/kyosho/UTW009"
 brand = "brand/kyosho"
 number = "UTW009"
-name = "ofl Lie Ol Ole opm a"
+name = "Fine Selection Front Shock Spring Set(MS/MH/2p/Ultima)"
 gtin = "4548565456468"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+documents = ["doc/kyosho/utw009-product-page"]
+fits = [
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+]
+category = "shock-spring"

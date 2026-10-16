@@ -9,6 +9,7 @@ links = [
 ]
 fits = [
   { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/22x-4", type = "replaces", replaces = "part/tlr/TLR232132", source = "doc/tlr/tlr03026-exploded-view", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "drivetrain"
 material = "aluminium"

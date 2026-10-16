@@ -10,3 +10,8 @@ category = "pin-clip"
 equivalent_to = [
   { spec = "spec/pin/1.7x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
+fits = [
+  { kit = "kit/arrma/fury", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/raider-xl", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/vorteks", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

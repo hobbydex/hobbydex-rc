@@ -8,6 +8,7 @@ status = "discontinued"
 gtin = "605482588093"
 documents = ["doc/ecx/ecx00013-14-manual-multi", "doc/ecx/ecx00013-product-page", "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi"]
 contains = [
+  { part = "part/ecx/ECX10003", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX10004", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
   { part = "part/ecx/ECX10005", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
   { part = "part/ecx/ECX10007", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
@@ -34,7 +35,6 @@ contains = [
   { part = "part/ecx/ECX207001", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
   { part = "part/ecx/ECX40003", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
   { part = "part/ecx/ECX40004", role = "kit", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
-  { part = "part/ecx/ECX10003", role = "listed", source = "doc/ecx/ecx00013-14-manual-multi" },
   { part = "part/ecx/ECX2020", role = "listed", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
   { part = "part/ecx/ECX301000", role = "option", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
   { part = "part/ecx/ECX304000", role = "option", source = "doc/ecx/ecx00013t1-ecx00014t1-exploded-multi" },
