@@ -232,6 +232,7 @@ def main():
                     errors.append(f"{retired_path}: {rid} replaced_by {r['replaced_by']} does not exist")
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
+    release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}
     for path, kind, d in docs:
         def check_ref(field, value, where):
             prefix = REFS.get(field)
@@ -258,6 +259,24 @@ def main():
             key = f"{kind}.{k}"
             if key in ENUMS and v not in ENUMS[key]:
                 errors.append(f"{path}: {key} = {v!r} not in {sorted(ENUMS[key])}")
+        # a fit narrowed to the releases the maker lists the part for (releases of that kit, at least one), or to a car
+        for i, f in enumerate(d.get("fits", []) if kind == "part" else []):
+            if "car" in f:   # the car the maker lists the part for, when none of the kit's releases is that car
+                if not (isinstance(f["car"], str) and f["car"].strip()):
+                    errors.append(f"{path}: fits[{i}].car should be the car's name as the maker lists it")
+                if "releases" in f:
+                    errors.append(f"{path}: fits[{i}] has both car and releases (car is only for a car none of the releases is)")
+            if "releases" not in f:
+                continue
+            rs = f["releases"]
+            if not (isinstance(rs, list) and rs and len(set(rs)) == len(rs)):
+                errors.append(f"{path}: fits[{i}].releases should be a non-empty list of distinct release ids")
+                continue
+            for r in rs:
+                if r not in release_kit:
+                    errors.append(f"{path}: fits[{i}].releases -> {r} does not exist")
+                elif release_kit[r] != f.get("kit"):
+                    errors.append(f"{path}: fits[{i}].releases -> {r} is a release of {release_kit[r]}, not of {f.get('kit')}")
         if kind in ("part", "release") and "gtin" in d:
             g = str(d["gtin"])
             digits = [int(c) for c in g] if g.isdigit() else []

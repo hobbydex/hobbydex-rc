@@ -14,7 +14,7 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 fits = [
-  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SCX10 III Jeep JT Gladiator (#AXI03006T1)" },
+  { kit = "kit/axial/scx10-iii", releases = ["release/axial/axi03006bt1", "release/axial/axi03006bt2"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SCX10 III Jeep JT Gladiator (#AXI03006T1)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

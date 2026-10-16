@@ -13,7 +13,7 @@ includes = [
   { spec = "spec/bearing/flanged-8x14x4" },
 ]
 fits = [
-  { kit = "kit/losi/lmt", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Losi LMT 4wd Solid Axle (#LOS04022)" },
+  { kit = "kit/losi/lmt", releases = ["release/losi/los04022"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Losi LMT 4wd Solid Axle (#LOS04022)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

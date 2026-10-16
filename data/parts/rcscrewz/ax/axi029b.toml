@@ -15,7 +15,7 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 fits = [
-  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SCX10 II 1955 Ford (AXI03001)" },
+  { kit = "kit/axial/scx10-ii", releases = ["release/axial/axi03001t1", "release/axial/axi03001t2"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SCX10 II 1955 Ford (AXI03001)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

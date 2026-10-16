@@ -12,7 +12,7 @@ includes = [
   { spec = "spec/bearing/7x14x3.5", notes = "Open" },
 ]
 fits = [
-  { kit = "kit/vanquish/h10", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Vanquish H10 Optic/RTR Crawler (#VPS09010, VPS09027)" },
+  { kit = "kit/vanquish/h10", releases = ["release/vanquish/vps09010a", "release/vanquish/vps09027"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Vanquish H10 Optic/RTR Crawler (#VPS09010, VPS09027)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

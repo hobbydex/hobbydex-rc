@@ -13,7 +13,7 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 fits = [
-  { kit = "kit/gmade/gs02-bom", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the GMade GS02 BOM 4wd (#GM57000)" },
+  { kit = "kit/gmade/gs02-bom", releases = ["release/gmade/GM57000"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the GMade GS02 BOM 4wd (#GM57000)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

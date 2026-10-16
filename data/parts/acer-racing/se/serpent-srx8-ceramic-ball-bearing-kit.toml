@@ -8,8 +8,8 @@ lubricant = "oil"
 applies_to = "Serpent SRX8"
 fits = [
   { kit = "kit/serpent/srx8", type = "direct", source = "doc/acer-racing/store", notes = "Listed for the SRX8" },
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/acer-racing/store", notes = "Listed for the SRX8 GT / SRX8 GT TQ" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/acer-racing/store", notes = "Listed for the SRX8 GTE '23" },
+  { kit = "kit/serpent/srx8-gt", releases = ["release/serpent/600057", "release/serpent/600062", "release/serpent/600063", "release/serpent/600066"], type = "direct", source = "doc/acer-racing/store", notes = "Listed for the SRX8 GT / SRX8 GT TQ" },
+  { kit = "kit/serpent/srx8-gte", releases = ["release/serpent/600058", "release/serpent/600060", "release/serpent/600061", "release/serpent/600065", "release/serpent/600067", "release/serpent/600069", "release/serpent/600071"], type = "direct", source = "doc/acer-racing/store", notes = "Listed for the SRX8 GTE '23" },
   { kit = "kit/serpent/srx8-truggy-e", type = "direct", source = "doc/acer-racing/store", notes = "Listed for the SRX8 Truggy E Corrected from kit/serpent/srx8e (link_car_kits.py --verify)." },
 ]
 notes = "Contents not recorded: the store sells it in several versions and the description gives one list. Sold in versions: SRX8; SRX8 GT; SRX8 GT TQ; SRX8e / SRX8e Pro; SRX8 GTe / LWB; SRX8 GTE '23; SRX8 Truggy E."
