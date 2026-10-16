@@ -1,9 +1,15 @@
 id = "part/wedico/29786-W"
 brand = "brand/wedico"
 number = "29786-W"
-name = "GELENKBOLZEN 4x12,7 MM"
+name = "Joint pin 4x12,7 mm"
+name_de = "GELENKBOLZEN 4x12,7 MM"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/gelenkbolzen-4x127-mm" },
 ]
 category = "pin-clip"
+category_source = "curated"
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/pin/4x12.7", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

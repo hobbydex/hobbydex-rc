@@ -1,10 +1,16 @@
 id = "part/wedico/27666-W"
 brand = "brand/wedico"
 number = "27666-W"
-name = "SENKSCHRAUBE M2*16 DIN 965 A2 kein TX"
+name = "Countersunk screw M2*16 DIN 965 A2 no TX"
+name_de = "SENKSCHRAUBE M2*16 DIN 965 A2 kein TX"
 category = "screw"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/senkschraube-m2_16-din-965-a2-kein-tx" },
 ]
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/screw/m2x16-countersunk-torx", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

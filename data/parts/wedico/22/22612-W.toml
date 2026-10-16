@@ -1,10 +1,16 @@
 id = "part/wedico/22612-W"
 brand = "brand/wedico"
 number = "22612-W"
-name = "STIFT VA 1,5* 40"
+name = "Pin stainless 1,5* 40"
+name_de = "STIFT VA 1,5* 40"
 category = "pin-clip"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/stift-va-15_-40" },
 ]
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/pin/1.5x40", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
+material = "stainless"

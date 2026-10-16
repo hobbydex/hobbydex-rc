@@ -1,10 +1,16 @@
 id = "part/wedico/32590-W"
 brand = "brand/wedico"
 number = "32590-W"
-name = "GEWINDESTIFT M 3 * 5 DIN 913"
+name = "Grub screw M 3 * 5 DIN 913"
+name_de = "GEWINDESTIFT M 3 * 5 DIN 913"
 category = "screw"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/gewindestift-m-3-_-5-din-913" },
 ]
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/screw/m3x5-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

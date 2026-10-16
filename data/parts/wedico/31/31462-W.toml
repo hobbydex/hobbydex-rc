@@ -1,10 +1,15 @@
 id = "part/wedico/31462-W"
 brand = "brand/wedico"
 number = "31462-W"
-name = "Setzmutter M 3 WS 9310 A2"
+name = "Rivet nut M 3 WS 9310 A2"
+name_de = "Setzmutter M 3 WS 9310 A2"
 category = "nut"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/setzmutter-m-3-ws-9310-a2" },
+]
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
