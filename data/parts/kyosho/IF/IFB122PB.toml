@@ -1,8 +1,10 @@
 id = "part/kyosho/IFB122PB"
 brand = "brand/kyosho"
 number = "IFB122PB"
-name = "NEO 4.0VE T1 Decoration Body Set (Pink/ Blue)"
+name = "INFERNO NEO4.0 VE T1 Decoration Body Set (Pink/Blue)"
 gtin = "4548565484157"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "body"
-name_source = "ocr"
+documents = ["doc/kyosho/ifb122pb-product-page"]
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118-t01-spop" },
+]
