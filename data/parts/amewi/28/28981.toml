@@ -2,16 +2,14 @@ id = "part/amewi/28981"
 brand = "brand/amewi"
 number = "28981"
 name = "Li-Ion Akku 2S 7,4V 2000mAh 5600-Stecker"
+gtin = "4260677950237"
+notes = "Specifications: Battery Type Li-Ion; Cells 2; Battery Voltage 7.4V; Battery Capacity 2000mAh; Battery Plug 5600; Dimension 69x37x19mmmm; Battery Weight 93g"
 fits = [
   { kit = "kit/amewi/tracked-drift-vehicle", type = "direct", source = "doc/amewi/22439-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/Li-Ion-Akku-2S-74V-2000mAh-5600-Stecker" },
 ]
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-]
-chemistry = "lipo"
 cells = 2
 capacity_mah = 2000
 category = "battery"

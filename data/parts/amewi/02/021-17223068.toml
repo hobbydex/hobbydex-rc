@@ -1,7 +1,9 @@
 id = "part/amewi/021-17223068"
 brand = "brand/amewi"
 number = "021-17223068"
-name = "Shim Scheiben 6x2,5x0,5"
+name = "Shims 6x2,5x0,2"
+name_de = "Shim Scheiben 6x2,5x0,5"
+gtin = "4260631427881"
 fits = [
   { kit = "kit/amewi/rcx8p-scale-crawler", type = "direct", source = "doc/amewi/22475-product-page" },
   { kit = "kit/amewi/rcx8b-scale-crawler", type = "direct", source = "doc/amewi/22474-product-page" },
@@ -14,4 +16,5 @@ links = [
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/2.5x6x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+  { spec = "spec/washer/2.5x6x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

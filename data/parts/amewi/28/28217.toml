@@ -1,9 +1,10 @@
 id = "part/amewi/28217"
 brand = "brand/amewi"
 number = "28217"
-name = "Kugellager 10x15x4mm"
-gtin = "4260564639801"
+name = "Ball Bearings 5x10x4mm"
 pack_qty = 10
+name_de = "Kugellager 10x15x4mm"
+gtin = "4260564639801"
 fits = [
   { kit = "kit/amewi/crosstrail-ct10", type = "direct", source = "doc/amewi/22657-product-page" },
 ]
@@ -12,6 +13,7 @@ links = [
 ]
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
