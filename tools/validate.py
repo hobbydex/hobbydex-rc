@@ -40,8 +40,10 @@ ENUMS = {
     "release.kind": {"kit", "rtr", "arr"},
     # kit types (docs/schema.md "kit"); the site gives each a label and an icon (hobbydex src/lib/kitTypes.ts)
     "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "race-truck",
-                     "crawler", "touring", "formula", "pan-car", "rally", "street-basher", "drift", "drag", "lowrider",
+                     "crawler", "touring", "formula", "pan-car", "rally", "street-basher", "drift", "drag", "lowrider", "trailer",
                      "speed-run", "kart", "motorcycle", "tank", "construction", "car", "boat", "oval"},
+    # kit drive (docs/schema.md "kit"); tracks: tanks and other tracked vehicles, half-tracks included
+    "kit.drive": {"2wd", "4wd", "6wd", "8wd", "fwd", "tracks"},
     "brand.status": {"active", "dormant", "gone"},
     "contains.role": {"kit", "option", "listed"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "owner_report"},

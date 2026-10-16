@@ -70,9 +70,16 @@ A model line, independent of year or edition. `category` is the kit type:
 buggy | truggy | stadium-truck | short-course | monster | desert-truck |
 truck | race-truck | crawler | touring | formula | pan-car | rally |
 street-basher | drift | drag | lowrider | oval | speed-run | kart | motorcycle |
-tank | construction | boat, or car for a car that fits none of them. drag
-is a straight-line drag racer (no prep drag cars, drag trucks); lowrider a
+tank | construction | trailer | boat, or car for a car that fits none of
+them. trailer is a standalone trailer or dolly, with no `drive` or `power`
+(a truck sold with its trailer stays truck). drag is a straight-line drag
+racer (no prep drag cars, drag trucks); lowrider a
 hopping lowrider on hydraulics or servo-lifted suspension. `scale` as "1/10".
+`drive`: 2wd | 4wd | 6wd | 8wd (driven wheels), fwd (front-wheel drive) or
+tracks for a tracked vehicle (tanks, tracked excavators, dozers and loaders,
+tracked conversions sold as their own kit). A half-track (tracks at the rear,
+skis or wheels in front) is tracks too, with a short note in `notes`. Track
+conversion sets for a wheeled car stay parts and do not change the kit.
 
 ```toml
 id = "kit/xray/xb2"
@@ -80,7 +87,7 @@ brand = "brand/xray"
 name = "XB2"
 category = "buggy"
 scale = "1/10"
-drive = "2wd"        # 2wd | 4wd
+drive = "2wd"        # 2wd | 4wd | 6wd | 8wd | fwd | tracks
 power = "electric"   # electric | nitro | petrol
 ```
 
