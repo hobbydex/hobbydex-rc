@@ -1,8 +1,11 @@
 # hobbydex-rc
 
 Open RC parts database: kits, releases, parts, generic hardware specs and the
-relations between them, as plain TOML files. The data is maintained by the
-Hobbydex project itself, not crowdsourced: see [CONTRIBUTING.md](CONTRIBUTING.md).
+relations between them, as plain TOML files. The data is open (CC0) and
+maintained by the Hobbydex project itself, not crowdsourced: pull requests
+against `data/` are not taken. Report an error, a missing brand or a source
+we do not use yet by [opening an issue](https://github.com/hobbydex/hobbydex-rc/issues/new);
+see [CONTRIBUTING.md](CONTRIBUTING.md) and the [FAQ](https://hobbydex.com/faq/).
 
 Status: early. The schema is a draft that grows with the data; see
 `docs/schema.md`.
