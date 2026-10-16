@@ -1,14 +1,16 @@
 id = "part/agama/31017E"
+former_ids = ["part/agama/31017e"]
 brand = "brand/agama"
 number = "31017E"
 name = "Side guard"
 category = "bumper-guard"
-applies_to = "A319EN1EN2E"
+applies_to = "A319EN1EN2E; A319E, N1e, N2e"
 fits = [
   { kit = "kit/agama/n1e", type = "direct", source = "doc/agama/agama-rc-com" },
   { kit = "kit/agama/n2e", type = "direct", source = "doc/agama/agama-rc-com" },
 ]
-documents = ["doc/agama/agama-rc-com"]
+documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=31017E" },
+  { site = "Nemo Racing", url = "https://www.nemoracing.com/products/31017e-side-guard-n1e" },
 ]

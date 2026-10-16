@@ -17,9 +17,16 @@ read the tree directly; they read the export (`tools/export.py`).
 | category | `data/categories/<slug>.toml` | id, name |
 | shop | `data/shops/<country>/<slug>.toml` | id, name, status (not used yet) |
 
-`<prefix>` is the first two characters of the part number, so that no directory
-holds more than a few hundred files (GitHub lists at most 1000). Changing the
-layout later means editing `layout.py` and moving files; ids do not change.
+`<prefix>` is the first two characters of the part number, upper-cased
+(`part/gens-ace/Gens-EC5-P` -> `data/parts/gens-ace/GE/Gens-EC5-P.toml`), so
+that no directory holds more than a few hundred files (GitHub lists at most
+1000). The file name keeps the number as written. No two paths may differ only
+in case: a checkout on a case-insensitive filesystem (macOS, Windows) cannot
+hold both, so `Ge/` next to `GE/` is not allowed, and neither are two part
+numbers of one brand that differ only in case (`SG-M3x8` and `SG-M3X8` are one
+part: keep one spelling and list the other id in `former_ids`). validate.py
+checks both. Changing the layout later means editing `layout.py` and moving
+files; ids do not change.
 
 
 ## Ids are permanent

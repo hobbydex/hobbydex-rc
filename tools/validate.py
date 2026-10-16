@@ -1,8 +1,8 @@
 """Validate every TOML file under data/.
 
 Checks: file parses, the file is where tools/layout.py puts its id, required
-fields per entity kind, every reference resolves, no duplicate ids. Also the
-art under art/ (see check_art). Exit code 1 on any error.
+fields per entity kind, every reference resolves, no duplicate ids, no two paths
+that differ only in case. Also the art under art/ (see check_art). Exit code 1 on any error.
 
 Run from the repo root: python3 -I tools/validate.py
 """
@@ -98,6 +98,18 @@ def categories():
     """Part categories are the files in data/categories (category/<slug>)."""
     d = os.path.join(ROOT, "categories")
     return {f[:-5] for f in os.listdir(d) if f.endswith(".toml")} if os.path.isdir(d) else set()
+
+def check_case_clashes(errors):
+    """Two paths under data/ or art/ that differ only in case (GE/ and Ge/, SG-M3x8 and
+    SG-M3X8) cannot both exist in a checkout on a case-insensitive filesystem (macOS, Windows)."""
+    seen = {}
+    for top in (ROOT, ART_ROOT):
+        for dirpath, dirs, files in os.walk(top):
+            for name in dirs + files:
+                path = os.path.join(dirpath, name)
+                other = seen.setdefault(path.lower(), path)
+                if other != path:
+                    errors.append(f"{path}: differs only in case from {other}; a case-insensitive filesystem cannot hold both")
 
 def check_art(ids, errors):
     """art/<kits|releases>/<brand>/<key>.svg: our own outline of a kit or release, drawn by the site in its
@@ -408,6 +420,7 @@ def main():
     for _, kind, _ in docs:
         counts[kind] = counts.get(kind, 0) + 1
     counts["art"] = check_art(ids, errors)
+    check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:
         print(f"{len(errors)} error(s):")
