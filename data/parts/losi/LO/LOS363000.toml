@@ -9,8 +9,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-machined-shock-piston-12-x-1.0mm-1-pm-mx-sm/LOS363000.html" },
 ]
 fits = [
-  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-product-catalogue" },
-  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
 ]
 category = "shock"
 shock_part = "piston"
+material = "plastic"

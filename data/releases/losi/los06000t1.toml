@@ -6,11 +6,13 @@ name = "Promoto-MX FXR 2S RTR Brushless Motorcycle, red"
 kind = "rtr"
 status = "released"
 gtin = "605482170458"
-color = "red"
 documents = ["doc/losi/los06000-exploded-view-multi", "doc/losi/los06000-manual-en", "doc/losi/los06000-product-page"]
 contains = [
+  { part = "part/losi/LOS-3269", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3270", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS235002", role = "kit", source = "doc/losi/los06000-manual-en" },
   { part = "part/losi/LOS235005", role = "kit", source = "doc/losi/los06000-exploded-view-multi" },
+  { part = "part/losi/LOS235007", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS235018", role = "kit", source = "doc/losi/los06000-manual-en" },
   { part = "part/losi/LOS235024", role = "kit", source = "doc/losi/los06000-exploded-view-multi" },
   { part = "part/losi/LOS236001", role = "kit", source = "doc/losi/los06000-manual-en" },
@@ -133,6 +135,13 @@ contains = [
   { part = "part/tlr/TLR6932", role = "kit", source = "doc/losi/los06000-exploded-view-multi" },
   { part = "part/tlr/TLR74013", role = "kit", source = "doc/losi/los06000-manual-en" },
   { part = "part/tlr/TLR75009", role = "kit", source = "doc/losi/los06000-manual-en" },
+  { part = "part/losi/LOS-3262", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3263", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3264", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3265", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3266", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3267", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS-3268", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS260002", role = "option", source = "doc/losi/los06000-manual-en" },
   { part = "part/losi/LOS260003", role = "option", source = "doc/losi/los06000-manual-en" },
   { part = "part/losi/LOS260004", role = "option", source = "doc/losi/los06000-manual-en" },
@@ -198,3 +207,4 @@ contains = [
   { part = "part/tlr/TLR77000", role = "option", source = "doc/losi/los06000-manual-en" },
   { part = "part/tlr/TLR77002", role = "option", source = "doc/losi/los06000-manual-en" },
 ]
+color = "red"

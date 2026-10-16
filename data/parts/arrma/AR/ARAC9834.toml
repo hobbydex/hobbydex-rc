@@ -10,3 +10,8 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+fits = [
+  { kit = "kit/arrma/fury", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/raider-xl", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/vorteks", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]

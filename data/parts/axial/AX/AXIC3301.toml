@@ -7,3 +7,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-10mm-shock-caps-parts-tree-blue/AXIC3301.html" },
 ]
 category = "parts-tree"
+fits = [
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+]
