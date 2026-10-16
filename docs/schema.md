@@ -227,7 +227,9 @@ supersedes = "release/xray/xb8-2022"
 `released`: the release date as precise as a source states it, `YYYY-MM-DD`
 or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
 from another source in that month is kept). It must agree with `year`. Never
-a document's date. For an announced release it is the planned date.
+a document's date (a manual's print date, a parts list's revision); the
+exception is a maker's `news` post that announces the item as new or
+available (see doc). For an announced release it is the planned date.
 
 `released_source`: set only when the date comes from a fan site rather than
 the maker; `"TamiyaBase"` for a Tamiya release dated from TamiyaBase (its
@@ -912,7 +914,7 @@ replaced_by = "standard/iso-4762"
 A manufacturer document used as a source. Only facts and the links; the PDF
 itself is not stored in git (`file` is the name in the local `work/manuals/`
 tree). `kind` is manual | part_list | exploded_view | supplement | catalog |
-setup_sheet | product_page. Two links: `page` is the maker's own web page
+setup_sheet | product_page | news. Two links: `page` is the maker's own web page
 where the document is listed (the support or downloads page, stable and
 readable), `url` the file itself as the maker serves it, which may be a CDN
 (Tamiya's CloudFront) or the maker's own Drive or Dropbox share (Redcat,
@@ -921,6 +923,26 @@ else (a forum, a fan site, a shop's own copy) is never the `url`. The site
 links the page first and the file as "PDF". A setup_sheet is a maker's setup sheet (blank
 or a driver's setup for a track) or a setup reference chart (gear ratios,
 toe angles), linked to the releases of the car it is for.
+
+A `news` document is one dated post or press release on the maker's own site
+(news page, blog, newsroom) that announces releases as new or available:
+`page` is the post, `date` the date the post states, `releases` the releases
+it names. A release takes its `released` from the post's date (or the date
+or month the post itself gives) only when the post says the item is new,
+out or available; a "coming soon" or pre-order post dates an announced
+release as planned, never a released one. A post on a news site that reprints
+the maker's text is not a maker document.
+
+```toml
+id = "doc/traxxas/news-2024-03-12-new-slash"
+brand = "brand/traxxas"
+kind = "news"
+title = "Traxxas news: the new Slash 2WD is here"
+date = "2024-03-12"
+publisher = "brand/traxxas"
+page = "https://traxxas.com/news/..."
+releases = ["release/traxxas/58076-74"]
+```
 
 ```toml
 id = "doc/xray/xb2-2026-part-list"
