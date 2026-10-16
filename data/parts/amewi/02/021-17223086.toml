@@ -1,9 +1,10 @@
 id = "part/amewi/021-17223086"
 brand = "brand/amewi"
 number = "021-17223086"
-name = "Rundkopfschrauben M3x8mm"
-gtin = "4260768512238"
+name = "Button Head Screw M3x8mm"
 pack_qty = 8
+name_de = "Rundkopfschrauben M3x8mm"
+gtin = "4260768512238"
 fits = [
   { kit = "kit/amewi/rcx10-3", type = "direct", source = "doc/amewi/22559-product-page" },
 ]
@@ -11,3 +12,7 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Rundkopfschrauben-M3x8mm-8-Stueck" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

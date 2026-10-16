@@ -2,16 +2,13 @@ id = "part/amewi/28014"
 brand = "brand/amewi"
 number = "28014"
 name = "Li-Ion Akku 2S 7,4V 5000mAh XT60"
+notes = "Name in German: the part's English page on amewi.com is not read yet"
 fits = [
   { kit = "kit/amewi/scania-770-s-tractor-unit-6x6", type = "direct", source = "doc/amewi/22741-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/Li-Ion-Akku-2S-74V-5000mAh-XT60" },
 ]
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-]
-chemistry = "lipo"
 cells = 2
 capacity_mah = 5000
 connector = "XT60"
