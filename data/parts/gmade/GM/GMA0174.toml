@@ -2,6 +2,11 @@ id = "part/gmade/GMA0174"
 brand = "brand/gmade"
 number = "GMA0174"
 name = "Gmade 3x6mm round head tapping screw"
+applies_to = "GS02F MILITARY BUFFALO, GS02F BUFFALO"
+fits = [
+  { kit = "kit/gmade/gs02f-military-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F MILITARY BUFFALO replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-3x6mm-round-head-tapping-screw/1395/" },
 ]

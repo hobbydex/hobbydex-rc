@@ -3,7 +3,12 @@ brand = "brand/gmade"
 number = "GM30169"
 name = "Roof rack LED light kit 12V"
 applies_to = "GS02F SPIDER, GS02F BUFFALO"
+fits = [
+  { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER option parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO option parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/roof-rack-led-light-kit-12v/1801/" },
 ]
 category = "body"
+category_source = "curated"

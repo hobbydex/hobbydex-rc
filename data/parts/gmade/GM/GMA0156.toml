@@ -1,0 +1,15 @@
+id = "part/gmade/GMA0156"
+brand = "brand/gmade"
+number = "GMA0156"
+name = "Gmade M3 nylon lock nut"
+applies_to = "GS02F SPIDER"
+fits = [
+  { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER replacement parts" },
+]
+links = [
+  { site = "Gmade", url = "https://www.gmade.net/product/gmade-m3-nylon-lock-nut/955/" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,8 +2,15 @@ id = "part/gmade/GM60199"
 brand = "brand/gmade"
 number = "GM60199"
 name = "LED light bucket & LED light lenses"
-applies_to = "GS02F SPIDER"
+applies_to = "GS02F SPIDER, GS02F BUFFALO PICKUP, GS02F MILITARY BUFFALO, GS02F BUFFALO"
+fits = [
+  { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo-pickup", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO PICKUP replacement parts" },
+  { kit = "kit/gmade/gs02f-military-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F MILITARY BUFFALO replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/led-light-bucket-led-light-lenses/1738/" },
 ]
 category = "body"
+category_source = "curated"

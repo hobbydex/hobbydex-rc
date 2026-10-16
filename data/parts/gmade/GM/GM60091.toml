@@ -3,6 +3,16 @@ brand = "brand/gmade"
 number = "GM60091"
 name = "Gmade Upper link M4x6.8x98mm"
 pack_qty = 2
+applies_to = "GS02F BUFFALO PICKUP, GS02F BOM, GS02F KOMODO DOUBLE CAB, GS02F MILITARY BUFFALO, GS02F BUFFALO, GS02 KOMODO DOUBLE CAB, GS02 BOM"
+fits = [
+  { kit = "kit/gmade/gs02f-buffalo-pickup", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO PICKUP replacement parts" },
+  { kit = "kit/gmade/gs02f-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BOM replacement parts" },
+  { kit = "kit/gmade/gs02f-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F KOMODO DOUBLE CAB replacement parts" },
+  { kit = "kit/gmade/gs02f-military-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F MILITARY BUFFALO replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
+  { kit = "kit/gmade/gs02-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 KOMODO DOUBLE CAB replacement parts" },
+  { kit = "kit/gmade/gs02-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 BOM replacement parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-upper-link-m4x68x98mm-2/1103/" },
 ]

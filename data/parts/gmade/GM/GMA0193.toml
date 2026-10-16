@@ -1,0 +1,16 @@
+id = "part/gmade/GMA0193"
+brand = "brand/gmade"
+number = "GMA0193"
+name = "M2.6 nickel nut"
+pack_qty = 10
+applies_to = "GS02F BUFFALO PICKUP"
+fits = [
+  { kit = "kit/gmade/gs02f-buffalo-pickup", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO PICKUP replacement parts" },
+]
+links = [
+  { site = "Gmade", url = "https://www.gmade.net/product/m26-nickel-nut-10/2140/" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m2.6-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
