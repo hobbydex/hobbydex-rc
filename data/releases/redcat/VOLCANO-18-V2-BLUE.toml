@@ -1,0 +1,26 @@
+id = "release/redcat/VOLCANO-18-V2-BLUE"
+kit = "kit/redcat/volcano-18"
+brand = "brand/redcat"
+number = "VOLCANO-18-V2-BLUE"
+name = "Volcano-18 V2 RTR, blue"
+kind = "rtr"
+status = "discontinued"
+notes = "Release year unknown; not in the Redcat store's catalogue (products.json) when read (2026-10-16); read from a Wayback Machine capture of its product page on Redcat's site (2016-04-04)"
+color = "blue"
+documents = ["doc/redcat/volcano-18-manual", "doc/redcat/store"]
+links = [
+  { site = "Redcat Racing (Wayback Machine)", url = "https://web.archive.org/web/20160404104710/http://www.redcatracing.com:80/VOLCANO-18-V2-BLUE" },
+]
+contains = [
+  { part = "part/redcat/23605", role = "kit", source = "doc/redcat/volcano-18-manual" },
+  { part = "part/redcat/23606", role = "kit", source = "doc/redcat/volcano-18-manual" },
+  { part = "part/redcat/23627", role = "kit", source = "doc/redcat/volcano-18-manual" },
+  { part = "part/redcat/28654", role = "kit", source = "doc/redcat/volcano-18-manual" },
+  { part = "part/redcat/28673", role = "kit", source = "doc/redcat/volcano-18-manual" },
+  { part = "part/redcat/28675", role = "kit", source = "doc/redcat/volcano-18-manual" },
+  { part = "part/redcat/HX-LED-002C", role = "listed", source = "doc/redcat/store" },
+  { part = "part/redcat/HX-LED-003M1", role = "listed", source = "doc/redcat/store" },
+  { part = "part/redcat/MT-201T", role = "listed", source = "doc/redcat/store" },
+  { part = "part/redcat/RER15247", role = "listed", source = "doc/redcat/store" },
+  { part = "part/redcat/RER15248", role = "listed", source = "doc/redcat/store" },
+]

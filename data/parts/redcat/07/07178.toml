@@ -11,3 +11,6 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/4x10x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+fits = [
+  { kit = "kit/redcat/rampage-r5", type = "direct", source = "doc/redcat/store" },
+]
