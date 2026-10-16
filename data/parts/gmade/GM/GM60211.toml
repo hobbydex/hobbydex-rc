@@ -2,7 +2,14 @@ id = "part/gmade/GM60211"
 brand = "brand/gmade"
 number = "GM60211"
 name = "HI/LO sliding clutch"
-applies_to = "GS02F SPIDER"
+applies_to = "GS02F SPIDER, GS02F BUFFALO PICKUP, GS02F BOM, GS02F KOMODO DOUBLE CAB, GS02F BUFFALO"
+fits = [
+  { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo-pickup", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO PICKUP replacement parts" },
+  { kit = "kit/gmade/gs02f-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BOM replacement parts" },
+  { kit = "kit/gmade/gs02f-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F KOMODO DOUBLE CAB replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/hilo-sliding-clutch/1747/" },
 ]

@@ -4,6 +4,11 @@ number = "GM30129"
 name = "Gmade GS02 aluminum front body post"
 pack_qty = 2
 applies_to = "GS02F BOM, GS02 KOMODO DOUBLE CAB, GS02 BOM"
+fits = [
+  { kit = "kit/gmade/gs02f-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BOM option parts" },
+  { kit = "kit/gmade/gs02-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 KOMODO DOUBLE CAB option parts" },
+  { kit = "kit/gmade/gs02-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 BOM option parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-gs02-aluminum-front-body-post-2/1241/" },
 ]

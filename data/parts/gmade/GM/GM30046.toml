@@ -4,7 +4,11 @@ number = "GM30046"
 name = "Gmade Steering block brass bushing for GS01 Aluminum C-Hub Carrier"
 pack_qty = 2
 applies_to = "GS01 KOMODO, GS01 SAWBACK"
+fits = [
+  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+  { kit = "kit/gmade/gs01-sawback", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 SAWBACK option parts" },
+]
 links = [
-  { site = "Gmade", url = "https://www.gmade.net/product/gmade-steering-block-brass-bushing-for-gs01-aluminum-c-hub-carrier-2 /746/" },
+  { site = "Gmade", url = "https://www.gmade.net/product/gmade-steering-block-brass-bushing-for-gs01-aluminum-c-hub-carrier-2%C2%A0/746/" },
 ]
 category = "steering"

@@ -2,7 +2,12 @@ id = "part/gmade/GMA0132"
 brand = "brand/gmade"
 number = "GMA0132"
 name = "Gmade 3*12mm socket set screw"
-applies_to = "GS02F SPIDER"
+applies_to = "GS02F SPIDER, GS02 KOMODO DOUBLE CAB, GS02 BOM"
+fits = [
+  { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER replacement parts" },
+  { kit = "kit/gmade/gs02-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 KOMODO DOUBLE CAB replacement parts" },
+  { kit = "kit/gmade/gs02-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 BOM replacement parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-312mm-socket-set-screw/1135/" },
 ]

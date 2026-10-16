@@ -1,0 +1,18 @@
+id = "part/gmade/GM51602"
+brand = "brand/gmade"
+number = "GM51602"
+name = "Gmade M4 Wheel Nut"
+pack_qty = 10
+applies_to = "GS01 KOMODO, GS01 SAWBACK, R1"
+fits = [
+  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO replacement parts" },
+  { kit = "kit/gmade/gs01-sawback", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 SAWBACK replacement parts" },
+  { kit = "kit/gmade/r1", type = "direct", source = "doc/gmade/store", notes = "Listed under R1 replacement parts" },
+]
+links = [
+  { site = "Gmade", url = "https://www.gmade.net/product/gmade-m4-wheel-nut-10/318/" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-wheel", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

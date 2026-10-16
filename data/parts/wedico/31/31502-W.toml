@@ -1,7 +1,8 @@
 id = "part/wedico/31502-W"
 brand = "brand/wedico"
 number = "31502-W"
-name = "Innenschskant ZYL.SCHRAUBE M3*35 DIN 7984"
+name = "Socket head cap screw M3*35 DIN 7984"
+name_de = "Innenschskant ZYL.SCHRAUBE M3*35 DIN 7984"
 category = "screw"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
@@ -12,3 +13,4 @@ equivalent_to = [
   { spec = "spec/screw/m3x35-low-head-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+notes = "English translated by Hobbydex from the shop's German title (name_de)"

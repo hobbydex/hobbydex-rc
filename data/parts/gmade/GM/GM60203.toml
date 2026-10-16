@@ -2,6 +2,11 @@ id = "part/gmade/GM60203"
 brand = "brand/gmade"
 number = "GM60203"
 name = "Buffalo heavy duty front bumper"
+applies_to = "GS02F BUFFALO PICKUP, GS02F BUFFALO"
+fits = [
+  { kit = "kit/gmade/gs02f-buffalo-pickup", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO PICKUP replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/buffalo-heavy-duty-front-bumper/1742/" },
 ]

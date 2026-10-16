@@ -4,6 +4,15 @@ number = "GM30101"
 name = "Gmade GA44 input shaft 25mm"
 pack_qty = 2
 applies_to = "GS02F SPIDER, GS02F BOM, GS02F KOMODO DOUBLE CAB, GS02F MILITARY BUFFALO, GS02F BUFFALO, GS02 KOMODO DOUBLE CAB, GS02 BOM"
+fits = [
+  { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER option parts" },
+  { kit = "kit/gmade/gs02f-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BOM option parts" },
+  { kit = "kit/gmade/gs02f-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F KOMODO DOUBLE CAB option parts" },
+  { kit = "kit/gmade/gs02f-military-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F MILITARY BUFFALO option parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO option parts" },
+  { kit = "kit/gmade/gs02-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 KOMODO DOUBLE CAB option parts" },
+  { kit = "kit/gmade/gs02-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02 BOM option parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-ga44-input-shaft-25mm-2/1192/" },
 ]

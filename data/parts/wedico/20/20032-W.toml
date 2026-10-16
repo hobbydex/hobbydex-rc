@@ -1,10 +1,16 @@
 id = "part/wedico/20032-W"
 brand = "brand/wedico"
 number = "20032-W"
-name = "SENKSCHRAUBE M3*12 WS 9475 A2"
+name = "Countersunk screw M3*12 WS 9475 A2"
+name_de = "SENKSCHRAUBE M3*12 WS 9475 A2"
 category = "screw"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/senkschraube-m3_12-ws-9475-a2" },
 ]
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

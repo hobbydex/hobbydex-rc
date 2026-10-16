@@ -1,10 +1,16 @@
 id = "part/wedico/23710-W"
 brand = "brand/wedico"
 number = "23710-W"
-name = "SENKSCHRAUBE M3*35 DIN 965 A2"
+name = "Countersunk screw M3*35 DIN 965 A2"
+name_de = "SENKSCHRAUBE M3*35 DIN 965 A2"
 category = "screw"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/senkschraube-m3_35-din-965-a2" },
 ]
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/screw/m3x35-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

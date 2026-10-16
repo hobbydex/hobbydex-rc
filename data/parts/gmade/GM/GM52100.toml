@@ -2,7 +2,11 @@ id = "part/gmade/GM52100"
 brand = "brand/gmade"
 number = "GM52100"
 name = "Gmade GS01 Front and Rear Axle Set"
-applies_to = "GS01 KOMODO"
+applies_to = "GS01 KOMODO, GS01 SAWBACK"
+fits = [
+  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+  { kit = "kit/gmade/gs01-sawback", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 SAWBACK option parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-gs01-front-and-rear-axle-set/635/" },
 ]

@@ -1,10 +1,16 @@
 id = "part/wedico/20028-W"
 brand = "brand/wedico"
 number = "20028-W"
-name = "SENKSCHRAUBE M3*6 ISO 14581 TX A2"
+name = "Countersunk screw M3*6 ISO 14581 TX A2"
+name_de = "SENKSCHRAUBE M3*6 ISO 14581 TX A2"
 category = "screw"
 category_source = "curated"
 documents = ["doc/wedico/thicon-models-shop"]
 links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/senkschraube-m3_6-iso-14581-tx-a2" },
 ]
+notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/screw/m3x6-countersunk-torx", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

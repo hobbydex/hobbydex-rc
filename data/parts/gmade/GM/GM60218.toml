@@ -2,6 +2,12 @@ id = "part/gmade/GM60218"
 brand = "brand/gmade"
 number = "GM60218"
 name = "GS02F front & rear inner fenders"
+applies_to = "GS02F BUFFALO PICKUP, GS02F MILITARY BUFFALO, GS02F BUFFALO"
+fits = [
+  { kit = "kit/gmade/gs02f-buffalo-pickup", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO PICKUP replacement parts" },
+  { kit = "kit/gmade/gs02f-military-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F MILITARY BUFFALO replacement parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
+]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gs02f-front-rear-inner-fenders/1754/" },
 ]
