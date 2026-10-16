@@ -1,7 +1,9 @@
 id = "part/amewi/004-50041"
 brand = "brand/amewi"
 number = "004-50041"
-name = "50041 Achse Querlenker 6x65mm"
+name = "50041 Suspension pin 6x65mm"
+name_de = "50041 Achse Querlenker 6x65mm"
+gtin = "4260189065795"
 pack_qty = 2
 fits = [
   { kit = "kit/amewi/pitbull-x-evolution", type = "direct", source = "doc/amewi/22414-product-page" },
@@ -10,4 +12,7 @@ fits = [
 links = [
   { site = "Amewi", url = "https://amewi.com/50041-Achse-Querlenker-6x65mm-2-Stueck" },
 ]
-category = "suspension"
+category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/6x65", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

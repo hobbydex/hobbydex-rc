@@ -2,6 +2,8 @@ id = "part/amewi/009-PN106"
 brand = "brand/amewi"
 number = "009-PN106"
 name = "PN106 Pin 2,0x10,8mm, 10 Stück EVO-X 6000"
+pack_qty = 10
+notes = "Name in German: the part's English page on amewi.com is not read yet"
 fits = [
   { kit = "kit/amewi/evo-x6000", type = "direct", source = "doc/amewi/22320-product-page" },
 ]
@@ -9,3 +11,6 @@ links = [
   { site = "Amewi", url = "https://amewi.com/PN106-Pin-20x108mm-10-Stueck-EVO-X-6000" },
 ]
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/2x10.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

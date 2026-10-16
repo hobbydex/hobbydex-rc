@@ -2,16 +2,13 @@ id = "part/amewi/28976"
 brand = "brand/amewi"
 number = "28976"
 name = "Li-Ion Akku 2S 7,4V 2000mAh HBX-Stecker"
+notes = "Name in German: the part's English page on amewi.com is not read yet"
 fits = [
   { kit = "kit/amewi/double-bridge-crawler", type = "direct", source = "doc/amewi/22412-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/Li-Ion-Akku-2S-74V-2000mAh-HBX-Stecker" },
 ]
-equivalent_to = [
-  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-]
-chemistry = "lipo"
 cells = 2
 capacity_mah = 2000
 category = "battery"
