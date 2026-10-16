@@ -327,6 +327,43 @@ fits = [
 part it replaces, `replaces = "part/lc-racing/L6045"`; the site then shows the
 upgrade on both parts.
 
+A row may narrow the kit to the releases the maker lists the part for, with
+`releases`: a per-car set (a bearing or screw kit sold for one car, such as
+"Tamiya TT-02 2020 Ford GT Mk II (#58689) Screw Kit") fits that car, not
+every car built on the chassis. Every id must be a release of the row's kit.
+A row without `releases` fits every release of the kit.
+
+```toml
+fits = [
+  { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/58689"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Tamiya TT-02 2020 Ford GT Mk II (#58689)" },
+]
+```
+
+When the maker lists the part for a car that is none of the kit's releases
+(a car not in the data yet), the row says which car with `car`, the car as
+the maker names it, in place of `releases`; the part then fits that car only,
+not the other releases of the kit:
+
+```toml
+fits = [
+  { kit = "kit/tamiya/tt-02", car = "Ferrari 458 Challenge XB", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Ferrari 458 Challenge XB TT-02" },
+]
+```
+
+A row with neither fits the whole kit: a set that names only the chassis
+("Tamiya TT-02 Chassis Bearing Kit"). The site lists a per-car set on a
+release page only when its row names that release or neither field; the
+others go into one collapsed line of sets made for other cars of the kit.
+
+tools/link_car_kits.py in hobbydex-tools sets both from the set's name: an
+item number of a release first, then the car's name against the names of
+the kit's releases (the XB and the kit of one car, and its colour editions,
+all match; shop shorthand such as "Sub" or "Alpha Romeo" is read as the
+maker). `car` is set only for the shops that sell a set per car (Fast
+Eddy, RCScrewZ, Avid RC, Acer Racing ...) on kits sold under many bodies
+(Tamiya's chassis, platforms such as the SCX24 or Fazer Mk2); elsewhere the
+kit is the car.
+
 `documents`: the part's own documents, such as a radio's user manual. Radios
 and receivers also carry `channels` and `protocol` (AFHDS 3, ANT, DSMR) and
 `weight_g`; their model code is the part number (FS-NB4+, so a number may
