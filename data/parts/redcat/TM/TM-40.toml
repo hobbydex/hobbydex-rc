@@ -1,0 +1,16 @@
+id = "part/redcat/TM-40"
+brand = "brand/redcat"
+number = "TM-40"
+name = "Gear Case (1set), 12mm Wheel Hex"
+pack_qty = 2
+applies_to = "TR-SC10E"
+links = [
+  { site = "Redcat Racing", url = "https://www.redcatracing.com/products/tm-40" },
+]
+fits = [
+  { kit = "kit/redcat/tr-sc10e", type = "direct", source = "doc/redcat/store" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+category = "drivetrain"
