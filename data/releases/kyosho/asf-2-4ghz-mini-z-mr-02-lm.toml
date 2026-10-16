@@ -5,3 +5,16 @@ name = "ASF 2.4GHz MINI-Z MR-02 LM"
 kind = "rtr"
 status = "released"
 documents = ["doc/kyosho/miniz-mr02-lm-chassis-p", "doc/kyosho/miniz-mr02-lm-chassis-t", "doc/kyosho/miniz-mr02-lm-chassis-m"]
+contains = [
+  { part = "part/kyosho/MZ203B", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ205", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ206B", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ208", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ213", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ301", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ302", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ303", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ6BK", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ8-1", role = "kit", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+  { part = "part/kyosho/MZ8-3", role = "option", source = "doc/kyosho/miniz-mr02-lm-chassis-p" },
+]
