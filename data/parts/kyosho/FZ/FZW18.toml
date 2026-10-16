@@ -1,0 +1,11 @@
+id = "part/kyosho/FZW18"
+brand = "brand/kyosho"
+number = "FZW18"
+name = "Steel Differential Gear Set"
+fits = [
+  { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/31091-inferno-tr15-p" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "replaces", replaces = "part/kyosho/OT28", source = "doc/kyosho/31091-inferno-tr15-p", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "replaces", replaces = "part/kyosho/TR35", source = "doc/kyosho/31091-inferno-tr15-p", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "differential"
+material = "steel"
