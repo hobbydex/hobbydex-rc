@@ -26,11 +26,13 @@ REQUIRED = {
     "shop": ["id", "name", "status"],
     "category": ["id", "name"],
     "standard": ["id", "code", "title"],
+    "company": ["id", "name"],
 }
 KINDS = {k: dict(dir=DIRS[k], required=REQUIRED[k]) for k in REQUIRED}
 REFS = {  # field -> expected id prefix
     "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/",
     "publisher": "brand/", "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
+    "owner": "company/", "parent": "company/",
 }
 LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": ""}   # requires: kit or release ids, checked above
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
@@ -55,6 +57,7 @@ ENUMS = {
     # kit drive (docs/schema.md "kit"); tracks: tanks and other tracked vehicles, half-tracks included
     "kit.drive": {"2wd", "4wd", "6wd", "8wd", "fwd", "tracks"},
     "brand.status": {"active", "dormant", "gone"},
+    "company.status": {"active", "dormant", "gone"},
     "contains.role": {"kit", "option", "listed"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "owner_report"},
     "equivalent_to.match": {"exact", "functional", "close"},
@@ -428,6 +431,23 @@ def main():
                     errors.append(f"{path}: key_fields compare_only must be true or false")
                 elif kf["from"] == "spec" and not d.get("spec_type"):
                     errors.append(f"{path}: key field {kf['field']} comes from the spec, but the category names no spec")
+        # the company that owns a brand (docs/schema.md "company"): stated on a page of the brand or the company
+        if kind == "brand" and ("owner_source" in d or "owner_since" in d) and "owner" not in d:
+            errors.append(f"{path}: owner_source and owner_since need an owner")
+        if kind == "brand" and "owner" in d:
+            src = str(d.get("owner_source", ""))
+            if src.startswith("doc/"):
+                if src not in ids:
+                    errors.append(f"{path}: owner_source -> {src} does not exist")
+            elif not src.startswith(("https://", "http://")):
+                errors.append(f"{path}: owner needs owner_source: the URL of the page, or the doc/ id of the document, that states it")
+        if kind == "brand" and "owner_since" in d and not (isinstance(d["owner_since"], int) and 1900 <= d["owner_since"] <= datetime.date.today().year):
+            errors.append(f"{path}: owner_since should be a year")
+        if kind == "company":
+            if d.get("parent") == d.get("id"):
+                errors.append(f"{path}: a company cannot be its own parent")
+            if "website" in d and not str(d["website"]).startswith(("https://", "http://")):
+                errors.append(f"{path}: website should be a URL")
         if kind == "brand" and not isinstance(d.get("item_numbers", True), bool):
             errors.append(f"{path}: item_numbers must be true or false")
         if kind == "part" and "number" not in d:
