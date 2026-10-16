@@ -9,13 +9,16 @@ diameter_mm = 35.85
 length_mm = 52.9
 shaft_mm = 5
 weight_g = 179
-mount_holes = [{ thread = "M3", circle_mm = 25.4 }, { thread = "M4", circle_mm = 25.4 }]
 equivalent_to = [
   { spec = "spec/motor/brushless-3653-5mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 35.85 mm, length 52.9 mm, shaft 5 mm)" },
 ]
 notes = "Voltage limit 2S LiPo; Bearings (Tekin's specifications): front 5x14x5, rear 5x11x5"
 links = [
   { site = "Tekin", url = "https://store.teamtekin.com/pro4-4000kv-brushless-motor/" },
+]
+mount_holes = [
+  { thread = "M3", circle_mm = 25.4 },
+  { thread = "M4", circle_mm = 25.4 },
 ]
 documents = ["doc/tekin/pro4-motor-page"]
 range = "tekin/pro4-brushless-motor"

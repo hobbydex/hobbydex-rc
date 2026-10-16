@@ -8,9 +8,11 @@ diameter_mm = 35.85
 length_mm = 52.5
 shaft_mm = 3.175
 weight_g = 171
-mount_holes = [{ thread = "M3", circle_mm = 25.4 }]
 notes = "Voltage limit 4S LiPo"
 links = [
   { site = "Tekin", url = "https://store.teamtekin.com/t40-pro-brushed-crawler-motor/" },
+]
+mount_holes = [
+  { thread = "M3", circle_mm = 25.4 },
 ]
 documents = ["doc/tekin/tseries-brushed-motor-page"]

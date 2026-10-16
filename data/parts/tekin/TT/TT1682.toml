@@ -1,0 +1,15 @@
+id = "part/tekin/TT1682"
+brand = "brand/tekin"
+number = "TT1682"
+name = "1S 3.7 3000mAh LiPo Transmitter Pack (Sanwa MT-5 / MT-44 / M17)"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/1s-3-7-3000mah-lipo-transmitter-pack-sanwa-mt-5-mt-44-m17/" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 3000
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

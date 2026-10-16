@@ -1,0 +1,18 @@
+id = "part/tekin/TT1654"
+brand = "brand/tekin"
+number = "TT1654"
+name = "2S 7.4V 4500mAh 140C Shorty LCG 5mm Bullets"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/2s-4500mah-140c-titanium-shorty-lcg-5mm-bullets/" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4500
+c_rating = 140
+connector = "5mm bullet"
+case = "shorty"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

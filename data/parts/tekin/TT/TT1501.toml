@@ -1,0 +1,22 @@
+id = "part/tekin/TT1501"
+brand = "brand/tekin"
+number = "TT1501"
+name = "T-180 Lo-Profile Torque Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 15.3
+speed_s = 0.06
+voltage = 8.4
+voltage_range = "4.8V - 8.4V"
+gear_material = "metal"
+dimensions_mm = [40, 20, 27]
+weight_g = 54.6
+motor = "coreless"
+spline_teeth = 25
+size_class = "low-profile"
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "functional" },
+]
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/t-180-lo-profile-torque-servo/" },
+]

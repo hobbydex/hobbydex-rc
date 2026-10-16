@@ -1,0 +1,18 @@
+id = "part/tekin/TT1655"
+brand = "brand/tekin"
+number = "TT1655"
+name = "2S 7.4V 4200mAh 140C Shorty ULCG 5mm Bullets"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/2s-7-4v-4200mah-140c-shorty-ulcg-5mm-bullets/" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4200
+c_rating = 140
+connector = "5mm bullet"
+case = "shorty"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

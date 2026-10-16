@@ -1,0 +1,18 @@
+id = "part/tekin/TT1619"
+brand = "brand/tekin"
+number = "TT1619"
+name = "2S HV 7.6V 4800mAh 140C Shorty LCG - 5mm Bullets"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/2s-hv-7-6v-4800mah-140c-shorty-lcg-5mm-bullets/" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 4800
+c_rating = 140
+connector = "5mm bullet"
+case = "shorty"
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

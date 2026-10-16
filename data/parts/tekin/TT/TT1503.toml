@@ -1,0 +1,22 @@
+id = "part/tekin/TT1503"
+brand = "brand/tekin"
+number = "TT1503"
+name = "T-190 Standard Torque Servo"
+category = "servo"
+category_source = "curated"
+torque_kgcm = 17.4
+speed_s = 0.05
+voltage = 8.4
+voltage_range = "4.8V - 8.4V"
+gear_material = "metal"
+dimensions_mm = [40, 20, 40]
+weight_g = 72
+motor = "coreless"
+spline_teeth = 25
+links = [
+  { site = "Tekin", url = "https://www.teamtekin.com/t190.html" },
+]
+size_class = "standard"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "functional" },
+]

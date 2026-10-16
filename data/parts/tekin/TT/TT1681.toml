@@ -1,0 +1,19 @@
+id = "part/tekin/TT1681"
+brand = "brand/tekin"
+number = "TT1681"
+name = "2S 7.4V 2300mAh 10C Stick Receiver Pack (AE / TLR 8IGHT-X / MUGEN)"
+category = "battery"
+category_source = "curated"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "direct", notes = "Named in Tekin's product name: 2S 7.4V 2300mAh 10C Stick Receiver Pack (AE / TLR 8IGHT-X / MUGEN)" },
+]
+links = [
+  { site = "Tekin", url = "https://store.teamtekin.com/2s-7-4v-2300mah-10c-stick-receiver-pack-ae-tlr-8ight-x-mugen/" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2300
+c_rating = 10
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
