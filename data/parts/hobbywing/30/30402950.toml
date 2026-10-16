@@ -10,10 +10,13 @@ diameter_mm = 49
 length_mm = 86.5
 shaft_mm = 5
 weight_g = 587
-mount_holes = [{ thread = "M4", count = 4, circle_mm = 25 }]
+mount_holes = [
+  { thread = "M4", count = 4, circle_mm = 25 },
+]
 notes = "Bearings (Hobbywing's specifications): front 6x19x6"
 equivalent_to = [
   { spec = "spec/motor/brushless-4985-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 49 mm, length 86.5 mm, shaft 5 mm)" },
 ]
 documents = ["doc/hobbywing/ezrun-4985-manual"]
 range = "hobbywing/ezrun-4985sl"
+sensored = false
