@@ -1,0 +1,19 @@
+id = "part/hobbywing/30101103"
+brand = "brand/hobbywing"
+number = "30101103"
+name = "XeRun V10 G2-6.5T"
+category = "motor"
+category_source = "curated"
+kv = 5000
+turns = 6.5
+lipo_cells = [2, 2]
+diameter_mm = 36
+length_mm = 52.5
+shaft_mm = 3.175
+weight_g = 181
+sensored = true
+notes = "Bearings (Hobbywing's specifications): front 3.175x9.525x3.967, rear 3.175x9.525x3.967. Discontinued: listed as STOPPED on hobbywing.com"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3653-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 36 mm, length 52.5 mm, shaft 3.175 mm)" },
+]
+range = "hobbywing/xerun-v10-g2"

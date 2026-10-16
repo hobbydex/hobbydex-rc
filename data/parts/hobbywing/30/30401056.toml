@@ -1,0 +1,19 @@
+id = "part/hobbywing/30401056"
+brand = "brand/hobbywing"
+number = "30401056"
+name = "XERUN-3652SD-3100KV-D5.0-G2"
+category = "motor"
+category_source = "curated"
+kv = 3100
+lipo_cells = [2, 3]
+diameter_mm = 36
+length_mm = 52.5
+shaft_mm = 5
+weight_g = 192
+sensored = true
+notes = "Bearings (Hobbywing's specifications): front 5x13x4, rear 5x11x5. Discontinued: listed as STOPPED on hobbywing.com"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 36 mm, length 52.5 mm, shaft 5 mm)" },
+]
+documents = ["doc/hobbywing/xerun-3652-3660-sd-g2-manual"]
+range = "hobbywing/xerun-3652sd-d5-0-g2"

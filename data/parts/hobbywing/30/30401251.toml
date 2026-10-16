@@ -1,0 +1,19 @@
+id = "part/hobbywing/30401251"
+brand = "brand/hobbywing"
+number = "30401251"
+name = "XERUN AXE540-1800KV-FOC"
+category = "motor"
+category_source = "curated"
+kv = 1800
+lipo_cells = [2, 3]
+diameter_mm = 36
+length_mm = 48.8
+shaft_mm = 3.175
+weight_g = 173
+sensored = true
+notes = "Bearings (Hobbywing's specifications): front 5x13x4, rear 5x13x4. Discontinued: listed as STOPPED on hobbywing.com"
+equivalent_to = [
+  { spec = "spec/motor/brushless-3649-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 36 mm, length 48.8 mm, shaft 3.175 mm)" },
+]
+documents = ["doc/hobbywing/xerun-axe-540-550-manual"]
+range = "hobbywing/xerun-axe540-foc"

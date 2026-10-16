@@ -6,5 +6,8 @@ category = "motor"
 category_source = "curated"
 lipo_cells = [2, 3]
 weight_g = 209
-mount_holes = [{ thread = "M3", count = 6, circle_mm = 25.4 }]
+mount_holes = [
+  { thread = "M3", count = 6, circle_mm = 25.4 },
+]
 documents = ["doc/hobbywing/quicrun-fusion-pro-manual"]
+sensored = true
