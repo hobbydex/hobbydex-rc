@@ -2,9 +2,11 @@ id = "part/kyosho/IF110"
 brand = "brand/kyosho"
 number = "IF110"
 name = "φ2.6x17 Pin"
-pack_qty = 4
 former_names = ["2.6x17 Pin (4pcs)"]
+pack_qty = 4
+gtin = "4955439738443"
 category = "pin-clip"
+documents = ["doc/kyosho/if110-product-page"]
 equivalent_to = [
   { spec = "spec/pin/2.6x17", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
@@ -33,4 +35,6 @@ fits = [
   { kit = "kit/kyosho/inferno-us-sports", type = "direct", source = "doc/kyosho/31277sg-inferno-us-sports2-p" },
   { kit = "kit/kyosho/inferno-mp7-5", type = "direct", source = "doc/kyosho/31081-inferno-mp75-p" },
   { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31352-infst-r-p" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33018-inferno-gt2-rs-srt-demon-spop-20191228" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34107-inferno-gt2-ve-rs-srt-demon-spop" },
 ]

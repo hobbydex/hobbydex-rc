@@ -1,0 +1,15 @@
+id = "part/kyosho/50000B"
+brand = "brand/kyosho"
+number = "50000B"
+name = "Silicone Oil #50000 (40cc)"
+pack_qty = 40
+name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30643-mid-87wc-spop" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+]
+volume_ml = 40
+equivalent_to = [
+  { spec = "spec/oil/silicone-50000cst", match = "functional", notes = "Viscosity number #50000 as the brand states it, on the cSt scale; measuring temperature not given" },
+]
+category = "oil-grease"

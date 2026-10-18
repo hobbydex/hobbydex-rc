@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "OLW009"
 name = "2RSA Series Rear Stabilizer"
 name_ja = "2RSAシリーズ リヤスタビライザー"
+gtin = "4548565522316"
 category = "suspension"
-documents = ["doc/kyosho/olw009-im"]
+documents = ["doc/kyosho/olw009-im", "doc/kyosho/olw009-product-page"]
+fits = [
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34364-outlawrenegade-spop" },
+]

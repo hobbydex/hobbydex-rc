@@ -3,10 +3,11 @@ brand = "brand/kyosho"
 number = "OTB247Y"
 name = "Body (Yellow/Javelin)"
 gtin = "4548565334018"
-fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
-]
 category = "body"
 documents = ["doc/kyosho/otb247y-product-page"]
+fits = [
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+]
 color = "yellow"
 range = "kyosho/otb247-colours"

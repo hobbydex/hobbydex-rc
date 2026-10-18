@@ -5,9 +5,10 @@ name = "Alpine GT4 Decoration Body Set"
 name_ja = "アルピーヌ GT4 デコレーションボディセット"
 gtin = "4548565376353"
 category = "body"
-depicts = { make = "Alpine", model = "GT4" }
 documents = ["doc/kyosho/fab603-ht01-alpine-gt4-bodyset-hosoku-t1", "doc/kyosho/fab603-product-page"]
+depicts = { make = "Alpine", model = "GT4" }
 fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34423-alpine-gt4-spop" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
 ]
 range = "kyosho/fab603-colours"

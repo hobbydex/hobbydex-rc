@@ -1,9 +1,12 @@
 id = "part/kyosho/IF345"
 brand = "brand/kyosho"
 number = "IF345"
-name = "HG Air Cleaner instead of 162, 163, 164. 1365 brands on the stock chassis. For installing engines from other"
-name_source = "ocr"
+name = "HG Air Cleaner Set"
+gtin = "4955439029275"
+category = "engine-fuel"
+documents = ["doc/kyosho/if345-product-page"]
 fits = [
   { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
+  { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-spop" },
+  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/31098-dbx2-opsp" },
 ]
-category = "chassis"

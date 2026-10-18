@@ -5,6 +5,9 @@ name = "Cap Screw(M3x15)"
 pack_qty = 5
 fits = [
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
+  { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34362-04-rsa-out-ram-pro-spop" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m3x15-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },

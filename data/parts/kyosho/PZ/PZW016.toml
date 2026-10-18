@@ -1,0 +1,15 @@
+id = "part/kyosho/PZW016"
+brand = "brand/kyosho"
+number = "PZW016"
+name = "18 7075 Pinion Gear 18T/64 Pitch"
+fits = [
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/64dp-18t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+category = "pinion"
+teeth = 18
+pitch_dp = 64
+material = "aluminium"
+material_grade = "7075"

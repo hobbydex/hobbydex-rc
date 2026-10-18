@@ -2,7 +2,12 @@ id = "part/kyosho/FM353"
 brand = "brand/kyosho"
 number = "FM353"
 name = "Spring Nut"
+gtin = "4955439731185"
+category = "nut"
+documents = ["doc/kyosho/fm353-product-page"]
 fits = [
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
 ]
-category = "nut"

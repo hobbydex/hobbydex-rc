@@ -3,6 +3,11 @@ brand = "brand/kyosho"
 number = "TRW165-40"
 name = "Steel Bevel Gear Set"
 name_ja = "スチールベベルギヤ(40T)"
+gtin = "4548565197217"
 category = "differential"
-documents = ["doc/kyosho/trw165-40-steel-bevel-gearset"]
+documents = ["doc/kyosho/trw165-40-steel-bevel-gearset", "doc/kyosho/trw165-40-product-page"]
 material = "steel"
+fits = [
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/30879-mm01-spop" },
+  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/34201t2-dbx-ve-2-0-spop" },
+]
