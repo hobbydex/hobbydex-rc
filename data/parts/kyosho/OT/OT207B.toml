@@ -3,8 +3,9 @@ brand = "brand/kyosho"
 number = "OT207B"
 name = "Bumper (OPTIMA)"
 gtin = "4548565358021"
-fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
-]
 category = "bumper-guard"
 documents = ["doc/kyosho/ot207b-product-page"]
+fits = [
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+]

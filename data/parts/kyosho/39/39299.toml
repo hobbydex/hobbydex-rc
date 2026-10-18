@@ -4,5 +4,9 @@ number = "39299"
 name = "TOYOTA 86 Body Set"
 name_ja = "TOYOTA 86 ボディセット"
 category = "body"
-depicts = { make = "Toyota", model = "86" }
 documents = ["doc/kyosho/39299-toyota86-bodyset"]
+depicts = { make = "Toyota", model = "86" }
+fits = [
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33206-v-one-r4sii-spop" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+]

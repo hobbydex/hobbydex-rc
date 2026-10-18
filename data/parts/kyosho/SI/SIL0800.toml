@@ -4,5 +4,11 @@ number = "SIL0800"
 name = "Silicone Oil (800)"
 fits = [
   { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31777-infernomp777-p" },
+  { kit = "kit/kyosho/v-one-s", type = "direct", source = "doc/kyosho/31122-vones2-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
 ]
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-800cst", match = "close", notes = "Viscosity stated as a bare 800, read as cSt; measuring temperature not given" },
+]

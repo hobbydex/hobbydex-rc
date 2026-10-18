@@ -2,10 +2,14 @@ id = "part/kyosho/UMW703"
 brand = "brand/kyosho"
 number = "UMW703"
 name = "Titanium Screw Set (RB6)"
+gtin = "4548565220953"
+category = "screw"
+documents = ["doc/kyosho/umw703-product-page"]
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
   { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-spop" },
 ]
-category = "screw"
 material = "titanium"

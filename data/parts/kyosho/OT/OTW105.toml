@@ -1,5 +1,10 @@
 id = "part/kyosho/OTW105"
 brand = "brand/kyosho"
 number = "OTW105"
-name = "OTW105"
-name_source = "ocr"
+name = "Carbon Front Side Plate (OPTIMA)"
+fits = [
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+]
+category = "chassis"
+material = "carbon"

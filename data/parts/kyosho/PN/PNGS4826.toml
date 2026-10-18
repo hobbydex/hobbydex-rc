@@ -2,9 +2,11 @@ id = "part/kyosho/PNGS4826"
 brand = "brand/kyosho"
 number = "PNGS4826"
 name = "Steel Pinion Gear (26T-48P)"
-pack_qty = 48
 former_names = ["Steel Pinion Gear (26T-48P)"]
+pack_qty = 48
+gtin = "4548565374533"
 category = "pinion"
+documents = ["doc/kyosho/pngs4826-product-page"]
 equivalent_to = [
   { spec = "spec/pinion/48dp-26t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
@@ -16,5 +18,7 @@ fits = [
   { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
   { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
   { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-op" },
+  { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/30635-fantom-ep-4wd-spop" },
 ]
 material = "steel"

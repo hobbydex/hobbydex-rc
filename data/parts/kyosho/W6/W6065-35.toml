@@ -3,6 +3,9 @@ brand = "brand/kyosho"
 number = "W6065-35"
 name = "Pinion Gear (35T-48P)"
 pack_qty = 48
+gtin = "4548565131211"
+category = "pinion"
+documents = ["doc/kyosho/w6065-35-product-page"]
 fits = [
   { kit = "kit/kyosho/mad-bug", type = "direct", source = "doc/kyosho/30994-mad-bug-spop" },
   { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/fazer-ve-spop" },
@@ -12,6 +15,5 @@ fits = [
 equivalent_to = [
   { spec = "spec/pinion/48dp-35t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
-category = "pinion"
 teeth = 35
 pitch_dp = 48

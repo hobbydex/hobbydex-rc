@@ -2,12 +2,13 @@ id = "part/kyosho/W0300"
 brand = "brand/kyosho"
 number = "W0300"
 name = "64 Titanium Pillow Ball 5.8mm"
-gtin = "4955439798676"
 pack_qty = 4
-fits = [
-  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34415-t02-dodge-challenger-kt-231p-spop" },
-]
+gtin = "4955439798676"
 category = "ball-end"
 documents = ["doc/kyosho/w0300-product-page"]
+fits = [
+  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34415-t02-dodge-challenger-kt-231p-spop" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+]
 ball_mm = 5.8
 material = "titanium"

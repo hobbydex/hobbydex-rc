@@ -3,12 +3,15 @@ brand = "brand/kyosho"
 number = "BRG404"
 name = "Shield Bearing (4x7x2.5)"
 pack_qty = 2
+gtin = "4548565493395"
+category = "bearing"
+documents = ["doc/kyosho/brg404-product-page"]
 fits = [
   { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/4x7x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "metal"
-category = "bearing"

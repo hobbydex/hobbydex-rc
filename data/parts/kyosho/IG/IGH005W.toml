@@ -2,12 +2,14 @@ id = "part/kyosho/IGH005W"
 brand = "brand/kyosho"
 number = "IGH005W"
 name = "Wheel(10-Spoke/White)"
-gtin = "4548565082032"
 pack_qty = 2
-fits = [
-  { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/inferno-gt3-parts-list-v01-02" },
-]
+gtin = "4548565082032"
 category = "wheel"
 documents = ["doc/kyosho/igh005w-product-page"]
+fits = [
+  { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/inferno-gt3-parts-list-v01-02" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/30935-mm01-infernogt2veracespec-spop" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33018-inferno-gt2-rs-srt-demon-spop-20191228" },
+]
 color = "white"
 range = "kyosho/igh005-colours"

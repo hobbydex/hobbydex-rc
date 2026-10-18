@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "OLB001"
 name = "Outlaw Rampage T1/T2 Printed Body Set"
 name_ja = "アウトローランページT1/T2プリント完成済みボディセット"
+gtin = "4548565333967"
 category = "body"
-documents = ["doc/kyosho/olb001-002-outlaw-rampage-printed-body-set"]
+documents = ["doc/kyosho/olb001-002-outlaw-rampage-printed-body-set", "doc/kyosho/olb001-product-page"]
+fits = [
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+]

@@ -2,7 +2,14 @@ id = "part/kyosho/OT234"
 brand = "brand/kyosho"
 number = "OT234"
 name = "Tie-Rod (OPTIMA)"
+gtin = "4548565301935"
+category = "ball-end"
+documents = ["doc/kyosho/ot234-product-page"]
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
 ]
-category = "ball-end"

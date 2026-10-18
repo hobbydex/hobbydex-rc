@@ -10,6 +10,10 @@ fits = [
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1s-inferno-mp10e-readyset-spare-and-option-parts" },
   { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34413t1-mad-van-mooneyes-spop" },
   { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/inferno-mp10t-parts-list202001" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t02-inf-mp10te-spop" },
 ]
 category = "screw"
 material = "titanium"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

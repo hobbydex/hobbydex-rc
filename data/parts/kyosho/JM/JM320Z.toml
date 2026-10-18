@@ -1,0 +1,18 @@
+id = "part/kyosho/JM320Z"
+brand = "brand/kyosho"
+number = "JM320Z"
+name = "Steel Pinion Gear(20T)1/48 Pitch"
+fits = [
+  { kit = "kit/kyosho/ultima-rb5", type = "direct", source = "doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-spop" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-spop" },
+  { kit = "kit/kyosho/ultima-sc", type = "direct", source = "doc/kyosho/30855-ultima-sc-rs-p" },
+  { kit = "kit/kyosho/ultima-db", type = "direct", source = "doc/kyosho/30856-ultima-db-rs-p" },
+]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "steel"
+category = "pinion"
+teeth = 20
+pitch_dp = 48

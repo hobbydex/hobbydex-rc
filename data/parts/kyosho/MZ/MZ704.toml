@@ -3,10 +3,12 @@ brand = "brand/kyosho"
 number = "MZ704"
 name = "XSPEED 85 Sensored Brushless Motor (8500KV)"
 former_names = ["XSPEED 85 Brushless Motor"]
+gtin = "4548565461714"
+category = "motor"
+documents = ["doc/kyosho/mz704-product-page"]
 sensored = true
 fits = [
   { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/32181-mini-z-awd-ma-030evo2-spare-and-option-parts" },
   { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
 ]
-category = "motor"
 kv = 8500

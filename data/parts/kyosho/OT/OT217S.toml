@@ -3,8 +3,11 @@ brand = "brand/kyosho"
 number = "OT217S"
 name = "Shock Stay (Silver/OPTIMA)"
 gtin = "4548565301768"
-fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
-]
 category = "chassis"
 documents = ["doc/kyosho/ot217s-product-page"]
+fits = [
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+]
+color = "silver"
+range = "kyosho/ot217-colours"

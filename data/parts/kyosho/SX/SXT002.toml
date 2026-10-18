@@ -2,14 +2,15 @@ id = "part/kyosho/SXT002"
 brand = "brand/kyosho"
 number = "SXT002"
 name = "Rear Tire (Scorpion XXL)"
-gtin = "4548565214440"
 pack_qty = 2
+gtin = "4548565214440"
+category = "tire"
+documents = ["doc/kyosho/sxt002-product-page"]
 fits = [
   { kit = "kit/kyosho/fo-xx-ve", type = "direct", source = "doc/kyosho/30887-mm01-fo-xx-ve-spop" },
   { kit = "kit/kyosho/mad-force-kruiser-ve", type = "direct", source = "doc/kyosho/30888-mad-force-kr-2-spop" },
   { kit = "kit/kyosho/fo-xx", type = "direct", source = "doc/kyosho/31228-mm01-fo-xx-spop" },
   { kit = "kit/kyosho/mad-force-kruiser", type = "direct", source = "doc/kyosho/31229-mad-force-kruiser-2-spop" },
+  { kit = "kit/kyosho/scorpion-xxl", type = "direct", source = "doc/kyosho/30972-scorpion-xxl-convertible-spop" },
 ]
-category = "tire"
-documents = ["doc/kyosho/sxt002-product-page"]
 position = "rear"

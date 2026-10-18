@@ -5,3 +5,7 @@ name = "silicon Oil (#150/40cc)"
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "oil-grease"
 name_source = "ocr"
+volume_ml = 40
+equivalent_to = [
+  { spec = "spec/oil/silicone-150cst", match = "functional", notes = "Viscosity number #150 as the brand states it, on the cSt scale; measuring temperature not given" },
+]
