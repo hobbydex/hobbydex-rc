@@ -14,7 +14,7 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 fits = [
-  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/rcscrewz/store" },
+  { kit = "kit/hpi/savage-xl", releases = ["release/hpi/104246", "release/hpi/104248", "release/hpi/10516", "release/hpi/109073", "release/hpi/112601", "release/hpi/112609", "release/hpi/160095", "release/hpi/160102", "release/hpi/160103", "release/hpi/160550"], type = "direct", source = "doc/rcscrewz/store" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

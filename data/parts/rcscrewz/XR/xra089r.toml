@@ -15,6 +15,9 @@ includes = [
   { spec = "spec/bearing/12x18x4" },
 ]
 applies_to = "Xray RX8e 2023 1/8th (#340153)"
+fits = [
+  { kit = "kit/xray/rx8e", releases = ["release/xray/340153"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Xray RX8e 2023 1/8th (#340153) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/xra089r-xray-rx8e-2023-1-8th-340153-rubber-shielded-bearing-kit/" },
