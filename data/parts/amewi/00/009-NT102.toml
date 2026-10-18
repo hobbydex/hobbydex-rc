@@ -1,9 +1,10 @@
 id = "part/amewi/009-NT102"
 brand = "brand/amewi"
 number = "009-NT102"
-name = "NT102 Mutter M3 mit Flansch 10 Stück, EVO-X 6000"
+name = "NT102 NUT(M3.0MMFLANGED)"
+name_de = "NT102 Mutter M3 mit Flansch 10 Stück, EVO-X 6000"
+gtin = "4260476358531"
 pack_qty = 10
-notes = "Name in German: the part's English page on amewi.com is not read yet"
 fits = [
   { kit = "kit/amewi/evo-x6000", type = "direct", source = "doc/amewi/22320-product-page" },
 ]
@@ -12,5 +13,5 @@ links = [
 ]
 category = "nut"
 equivalent_to = [
-  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/nut/m3-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

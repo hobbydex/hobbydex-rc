@@ -1,9 +1,10 @@
 id = "part/amewi/004-02099"
 brand = "brand/amewi"
 number = "004-02099"
-name = "02099 Madenschraube M4x4mm"
+name = "02099 Grub head screw M4x4mm"
+name_de = "02099 Madenschraube M4x4mm"
+gtin = "4260564620038"
 pack_qty = 8
-notes = "Name in German: the part's English page on amewi.com is not read yet"
 fits = [
   { kit = "kit/amewi/breaker-pro", type = "direct", source = "doc/amewi/22232-product-page" },
 ]
@@ -11,3 +12,7 @@ links = [
   { site = "Amewi", url = "https://amewi.com/02099-Madenschraube-M4x4mm-8-Stueck" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m4x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
