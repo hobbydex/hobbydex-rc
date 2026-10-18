@@ -210,6 +210,12 @@ document's date (a later scan, a reprinted manual) or the day a shop was read
 is not a release year. The site shows such releases as year unknown and leaves
 them out of the by-date lists.
 
+`supersedes` (optional, on the newer release): the release this one replaces, a release id. Two sources. A yearly edition of one kit whose name differs from the previous one only by the year marker and keeps the same variant (XRAY's XB8'22 -> XB8'23, X4'24 Alu Flex -> X4'25 Alu Flex, XB4C'25 -> XB4C'26) takes the directly previous year of that variant, or the nearest earlier one when a year is missing; EU and US twins of one year are not successors of each other, and releases that are different bodies or editions of one kit (Tamiya's TT-02 bodies) take none. The other source is the maker saying so: "Replaced by" on its product page, cited in `notes` with the page's prod_id. One predecessor per release. The site shows "Replaced by" on the older release and "Replaces" on the newer one. The maker's statement can also join releases of different kits (XRAY's T1 -> T1 EVO2).
+
+```toml
+supersedes = "release/xray/xb8-2022"
+```
+
 `released`: the release date as precise as a source states it, `YYYY-MM-DD`
 or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
 from another source in that month is kept). It must agree with `year`. Never
