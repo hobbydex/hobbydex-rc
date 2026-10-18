@@ -8,4 +8,10 @@ status = "discontinued"
 depicts = { make = "Lamborghini", model = "Gallardo" }
 documents = ["doc/hpi/10257-kit-page", "doc/hpi/12004-nitro-rs4-3-18ss-glb-m-v1"]
 notes = "Release year unknown; HPI's pages state none"
-contains = []
+contains = [
+  { part = "part/hpi/17524", role = "option", source = "doc/hpi/10257-kit-page" },
+  { part = "part/hpi/4425", role = "option", source = "doc/hpi/10257-kit-page" },
+  { part = "part/hpi/4794", role = "option", source = "doc/hpi/10257-kit-page" },
+  { part = "part/hpi/4798", role = "option", source = "doc/hpi/10257-kit-page" },
+  { part = "part/hpi/85054", role = "option", source = "doc/hpi/10257-kit-page" },
+]
