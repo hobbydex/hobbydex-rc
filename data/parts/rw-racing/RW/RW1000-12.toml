@@ -1,0 +1,14 @@
+id = "part/rw-racing/RW1000-12"
+brand = "brand/rw-racing"
+number = "RW1000-12"
+name = "Pinion Mod 1 for 3,17mm Shafts - 12T"
+category = "pinion"
+module = 1
+bore_mm = 3.17
+links = [
+  { site = "beez2b", url = "https://www.beez2b.com/en/cat/15179-rw1000-12-RW1000-12" },
+]
+source = "doc/rw-racing/beez2b-listing"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
