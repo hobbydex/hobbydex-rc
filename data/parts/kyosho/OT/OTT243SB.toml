@@ -3,8 +3,9 @@ brand = "brand/kyosho"
 number = "OTT243SB"
 name = "Pin Tire 43x86x40mm S (OPTIMA) 43x86x40mm S"
 gtin = "4548565425310"
-fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
-]
 category = "tire"
 documents = ["doc/kyosho/ott243sb-product-page"]
+fits = [
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+]

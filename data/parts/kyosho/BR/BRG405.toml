@@ -1,8 +1,17 @@
 id = "part/kyosho/BRG405"
 brand = "brand/kyosho"
 number = "BRG405"
-name = "rere"
-name_source = "ocr"
+name = "Shield Bearing(4x8x3)"
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/beetle", type = "direct", source = "doc/kyosho/30614-07-beetle-spop" },
+  { kit = "kit/kyosho/turbo-scorpion", type = "direct", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "metal"
+category = "bearing"

@@ -1,0 +1,15 @@
+id = "part/fms/FMSC3209"
+brand = "brand/fms"
+number = "FMSC3209"
+name = "1/10 Chevrolet K5 FCX10 - 550 high performance motor"
+gtin = "5404039240560"
+links = [
+  { site = "beez2b", url = "https://www.beez2b.com/en/cat/17199-fmsc3209-FMSC3209-5404039240560" },
+]
+fits = [
+  { kit = "kit/fms/fcx10", type = "replaces", notes = "Named for FCX10 in the beez2b title" },
+]
+category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

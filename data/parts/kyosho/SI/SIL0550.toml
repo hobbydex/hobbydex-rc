@@ -5,6 +5,13 @@ name = "8 Silicone OIL #550 (80cc)"
 fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34403-monster-tracker-spop" },
   { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31777-infernomp777-p" },
+  { kit = "kit/kyosho/sandmaster", type = "direct", source = "doc/kyosho/30831-t02-sandmaster-rs-spop" },
+  { kit = "kit/kyosho/v-one-s", type = "direct", source = "doc/kyosho/31122-vones2-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
 ]
 volume_ml = 80
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-550cst", match = "functional", notes = "Viscosity number #550 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

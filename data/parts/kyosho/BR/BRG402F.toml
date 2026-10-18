@@ -2,14 +2,17 @@ id = "part/kyosho/BRG402F"
 brand = "brand/kyosho"
 number = "BRG402F"
 name = "Flanged Bearing (3x6x2.5)"
-gtin = "4548565493371"
 pack_qty = 2
+gtin = "4548565493371"
+category = "bearing"
+documents = ["doc/kyosho/brg402f-product-page"]
 fits = [
   { kit = "kit/kyosho/hanging-on-racer", type = "direct", source = "doc/kyosho/34937t1-t01-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
+  { kit = "kit/kyosho/plazma-mk3", type = "direct", source = "doc/kyosho/30639-mm02-spop" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/flanged-3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
-category = "bearing"
-documents = ["doc/kyosho/brg402f-product-page"]

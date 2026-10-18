@@ -1,0 +1,13 @@
+id = "part/kyosho/96995"
+brand = "brand/kyosho"
+number = "96995"
+name = "5x10x4mm Thrust Bearing"
+fits = [
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/fantom-gp", type = "direct", source = "doc/kyosho/31999-fantom2001-p" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/thrust-5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

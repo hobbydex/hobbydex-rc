@@ -4,5 +4,10 @@ number = "SIL20000"
 name = "Silicone Oil (20000)"
 fits = [
   { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31777-infernomp777-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
 ]
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-20000cst", match = "close", notes = "Viscosity stated as a bare 20000, read as cSt; measuring temperature not given" },
+]

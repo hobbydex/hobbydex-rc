@@ -2,10 +2,12 @@ id = "part/kyosho/FA511"
 brand = "brand/kyosho"
 number = "FA511"
 name = "Screw Pin 2x11xM4 FZ02"
-gtin = "4548565359530"
 pack_qty = 4
-fits = [
-  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34412t2-mad-van-ct2-spop" },
-]
+gtin = "4548565359530"
 category = "screw"
 documents = ["doc/kyosho/fa511-product-page"]
+fits = [
+  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34412t2-mad-van-ct2-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+]

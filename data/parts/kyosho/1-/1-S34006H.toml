@@ -1,0 +1,14 @@
+id = "part/kyosho/1-S34006H"
+brand = "brand/kyosho"
+number = "1-S34006H"
+name = "Flat Head Screw(Hex/M4x6)"
+pack_qty = 10
+fits = [
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

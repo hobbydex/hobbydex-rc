@@ -1,0 +1,14 @@
+id = "part/kyosho/1-S53025"
+brand = "brand/kyosho"
+number = "1-S53025"
+name = "Set Screw(M3x25)"
+pack_qty = 5
+fits = [
+  { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x25-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"
