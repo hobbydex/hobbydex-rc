@@ -9,4 +9,10 @@ depicts = { make = "Ford", model = "Mustang", year = 2011 }
 documents = ["doc/hpi/105945-kit-page"]
 category = "drift"
 notes = "Release year unknown; HPI's pages state none"
-contains = []
+contains = [
+  { part = "part/hpi/160247", role = "kit", source = "doc/hpi/105945-kit-page" },
+  { part = "part/hpi/160248", role = "option", source = "doc/hpi/105945-kit-page" },
+  { part = "part/hpi/160336", role = "option", source = "doc/hpi/105945-kit-page" },
+  { part = "part/hpi/160337", role = "option", source = "doc/hpi/105945-kit-page" },
+  { part = "part/hpi/33449", role = "option", source = "doc/hpi/105945-kit-page" },
+]

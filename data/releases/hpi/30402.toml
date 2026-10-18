@@ -8,4 +8,9 @@ status = "discontinued"
 depicts = { make = "Mazda", model = "RX8" }
 documents = ["doc/hpi/30402-kit-page"]
 notes = "Release year unknown; HPI's pages state none"
-contains = []
+contains = [
+  { part = "part/hpi/17524", role = "option", source = "doc/hpi/30402-kit-page" },
+  { part = "part/hpi/4425", role = "option", source = "doc/hpi/30402-kit-page" },
+  { part = "part/hpi/4794", role = "option", source = "doc/hpi/30402-kit-page" },
+  { part = "part/hpi/4798", role = "option", source = "doc/hpi/30402-kit-page" },
+]
