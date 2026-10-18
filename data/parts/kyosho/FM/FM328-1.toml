@@ -1,0 +1,13 @@
+id = "part/kyosho/FM328-1"
+brand = "brand/kyosho"
+number = "FM328-1"
+name = "3x8x12mm Collar"
+fits = [
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
+]
+category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3x8x12", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

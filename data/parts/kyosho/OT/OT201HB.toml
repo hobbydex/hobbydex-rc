@@ -1,5 +1,12 @@
 id = "part/kyosho/OT201HB"
 brand = "brand/kyosho"
 number = "OT201HB"
-name = "OT201HB"
-name_source = "ocr"
+name = "Hard Suspesion Arm (OPTIMA)"
+gtin = "4548565415014"
+documents = ["doc/kyosho/ot201hb-product-page"]
+fits = [
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
+]
+category = "suspension"

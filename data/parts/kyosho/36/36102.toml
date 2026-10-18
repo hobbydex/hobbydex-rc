@@ -2,6 +2,11 @@ id = "part/kyosho/36102"
 brand = "brand/kyosho"
 number = "36102"
 name = "KRF SET UP STAND"
+gtin = "4548565199075"
 name_ja = "KRFセットアップスタンド"
 category = "tool"
 documents = ["doc/kyosho/36102-krf-set-up-stand"]
+fits = [
+  { kit = "kit/kyosho/plazma-ra", type = "direct", source = "doc/kyosho/30422-t02-plazma-ra-spop" },
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+]

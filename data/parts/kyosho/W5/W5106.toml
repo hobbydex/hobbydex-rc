@@ -2,9 +2,15 @@ id = "part/kyosho/W5106"
 brand = "brand/kyosho"
 number = "W5106"
 name = "Shock Plastic Parts"
+gtin = "4955439653777"
+category = "shock"
+documents = ["doc/kyosho/w5106-product-page"]
 fits = [
   { kit = "kit/kyosho/gp-ultima-st", type = "direct", source = "doc/kyosho/31973-gp-ultimast-r-evo-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
+  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp-fw05ske-p" },
 ]
-category = "shock"
 shock_part = "complete"
 material = "plastic"

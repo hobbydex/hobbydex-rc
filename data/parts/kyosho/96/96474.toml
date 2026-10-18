@@ -1,0 +1,14 @@
+id = "part/kyosho/96474"
+brand = "brand/kyosho"
+number = "96474"
+name = "6x12x4mm Ball Bearing"
+fits = [
+  { kit = "kit/kyosho/fantom-gp", type = "direct", source = "doc/kyosho/31041-fantom-sports-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/v-one-s", type = "direct", source = "doc/kyosho/31241-vones-vauxhall-astra-p" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

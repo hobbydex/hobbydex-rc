@@ -3,7 +3,13 @@ brand = "brand/kyosho"
 number = "OT230B"
 name = "Rear Wheel Shaft (OPTIMA)"
 pack_qty = 2
+gtin = "4548565434060"
+category = "drivetrain"
+documents = ["doc/kyosho/ot230b-product-page"]
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30643-mid-87wc-spop" },
 ]
-category = "drivetrain"

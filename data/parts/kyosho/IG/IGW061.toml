@@ -2,8 +2,11 @@ id = "part/kyosho/IGW061"
 brand = "brand/kyosho"
 number = "IGW061"
 name = "Aluminum Front Hub Carrier Set"
-gtin = "4548565343492"
 name_ja = "アルミフロントハブキャリアセット"
+gtin = "4548565343492"
 category = "suspension"
 documents = ["doc/kyosho/igw061-ai-front-hub-carrier-set", "doc/kyosho/igw061-product-page"]
 material = "aluminium"
+fits = [
+  { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/33010-inferno-gt3-spop" },
+]

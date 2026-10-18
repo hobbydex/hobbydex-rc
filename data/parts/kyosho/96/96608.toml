@@ -7,6 +7,13 @@ fits = [
   { kit = "kit/kyosho/lazer-zx-s", type = "direct", source = "doc/kyosho/30075-lazerzx-evo-p" },
   { kit = "kit/kyosho/inferno-mp7-5", type = "direct", source = "doc/kyosho/31192-mp75-sports-p" },
   { kit = "kit/kyosho/gp-ultima-st", type = "direct", source = "doc/kyosho/31971-gp-ultimast-r-p" },
+  { kit = "kit/kyosho/pure-ten-kx-one", type = "direct", source = "doc/kyosho/30101-kx-one-p" },
+  { kit = "kit/kyosho/fantom-gp", type = "direct", source = "doc/kyosho/31041-fantom-sports-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/landmax-2", type = "direct", source = "doc/kyosho/31172-landmax2-p" },
 ]
 volume_ml = 40
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-500cst", match = "functional", notes = "Viscosity number #500 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

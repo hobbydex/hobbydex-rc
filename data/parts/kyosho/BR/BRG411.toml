@@ -2,15 +2,18 @@ id = "part/kyosho/BRG411"
 brand = "brand/kyosho"
 number = "BRG411"
 name = "Shield Bearing (6x12x4)"
-gtin = "4548565493470"
 pack_qty = 2
+gtin = "4548565493470"
+category = "bearing"
+documents = ["doc/kyosho/brg411-product-page"]
 fits = [
   { kit = "kit/kyosho/kc10", type = "direct", source = "doc/kyosho/kc10-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
+  { kit = "kit/kyosho/plazma-mk3", type = "direct", source = "doc/kyosho/30639-mm02-spop" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33217-v-one-r4-evo3-spop" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "metal"
-category = "bearing"
-documents = ["doc/kyosho/brg411-product-page"]

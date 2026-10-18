@@ -2,9 +2,11 @@ id = "part/kyosho/IF244"
 brand = "brand/kyosho"
 number = "IF244"
 name = "Flange Pin (4x78mm)"
-pack_qty = 2
 former_names = ["Flange Pin (4x78mm/2pcs)"]
+pack_qty = 2
+gtin = "4548565347704"
 category = "pin-clip"
+documents = ["doc/kyosho/if244-product-page"]
 fits = [
   { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
   { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
@@ -12,4 +14,6 @@ fits = [
   { kit = "kit/kyosho/inferno-neo-st", type = "direct", source = "doc/kyosho/33016-inferno-neo-st-3-0-kt-231p-spop" },
   { kit = "kit/kyosho/inferno-neo-3-0-ve", type = "direct", source = "doc/kyosho/34108-mm02-inf-neo3-0-ve-kt-231p-spop" },
   { kit = "kit/kyosho/psycho-kruiser", type = "direct", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33018-inferno-gt2-rs-srt-demon-spop-20191228" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34107-inferno-gt2-ve-rs-srt-demon-spop" },
 ]
