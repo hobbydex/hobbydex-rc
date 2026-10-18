@@ -447,8 +447,23 @@ Hobbydex, and the site shows it apart from the brand's own pages.
 links = [{ site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13934-10004255", kind = "fan-site" }]
 ```
 
-Planned: `numbers` (aliases such as Tamiya's 7-digit spare number, 8-digit SKU
-and X-number for one part).
+`numbers`: the part's other numbers, when one part is printed or sold under
+more than one (Tamiya's 7-digit spare number, 8-digit SKU and X-number). One
+part is one record: it is keyed by the number the part is sold under, and a
+record written earlier under another of its numbers is folded in, its id kept
+in `former_ids`. No number of a brand may be a second part's `number` or
+`numbers` (validate.py checks). ARRMA: the manuals print the maker's number
+AR + 6 digits; Horizon sells it as ARA + the same digits (ARA330550 is
+AR330550), or, for older parts, under a store number such as ARAC9098 whose
+page states the maker's number (AR330538) as "Manufacturer #".
+
+```toml
+id = "part/arrma/ARAC9098"
+number = "ARAC9098"
+name = "Front Shock Spring"
+former_ids = ["part/arrma/AR330538"]
+numbers = ["AR330538"]
+```
 
 `rebrand_of`: the part this one is the same product as under another brand
 (a radio HobbyKing sold as Turnigy), with a `source` or `notes`. Recorded once,
