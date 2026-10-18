@@ -4,5 +4,8 @@ number = "PZB203"
 name = "MAZDA 787B Body"
 name_ja = "PLAZMA Lm MAZDA 787B Body"
 category = "body"
-depicts = { make = "Mazda", model = "787B" }
 documents = ["doc/kyosho/pzb203-206-207-mazda-787b-body-shell"]
+depicts = { make = "Mazda", model = "787B" }
+fits = [
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30962-plazma-lm-spop" },
+]

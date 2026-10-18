@@ -2,6 +2,11 @@ id = "part/kyosho/OT205B"
 brand = "brand/kyosho"
 number = "OT205B"
 name = "Holder (OPTIMA)"
+gtin = "4548565469208"
+documents = ["doc/kyosho/ot205b-product-page"]
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
 ]

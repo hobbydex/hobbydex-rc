@@ -3,7 +3,11 @@ brand = "brand/kyosho"
 number = "UM565"
 name = "O-Ring (S-10/9.5x1.5)"
 pack_qty = 10
+gtin = "4548565138272"
+category = "o-ring-seal"
+documents = ["doc/kyosho/um565-product-page"]
 fits = [
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
+  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-sp" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
 ]
-category = "o-ring-seal"

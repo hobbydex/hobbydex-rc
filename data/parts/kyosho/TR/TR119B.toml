@@ -2,12 +2,14 @@ id = "part/kyosho/TR119B"
 brand = "brand/kyosho"
 number = "TR119B"
 name = "Wheel Shaft"
-gtin = "4548565110940"
 pack_qty = 2
+gtin = "4548565110940"
+category = "drivetrain"
+documents = ["doc/kyosho/tr119b-product-page"]
 fits = [
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
   { kit = "kit/kyosho/dst", type = "direct", source = "doc/kyosho/31097t2-dst-kt-6-mm-p" },
   { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
+  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/30843-dmt-ve-spop" },
+  { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-spop" },
 ]
-category = "drivetrain"
-documents = ["doc/kyosho/tr119b-product-page"]

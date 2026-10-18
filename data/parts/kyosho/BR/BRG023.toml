@@ -3,13 +3,15 @@ brand = "brand/kyosho"
 number = "BRG023"
 name = "Shield Bearing (3x7x3)"
 gtin = "4955439768464"
+category = "bearing"
+documents = ["doc/kyosho/brg023-product-page"]
 fits = [
   { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
+  { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34362-04-rsa-out-ram-pro-spop" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/3x7x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "metal"
-category = "bearing"
-documents = ["doc/kyosho/brg023-product-page"]

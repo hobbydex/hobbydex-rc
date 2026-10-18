@@ -2,7 +2,11 @@ id = "part/kyosho/IF242"
 brand = "brand/kyosho"
 number = "IF242"
 name = "Muffler"
+gtin = "4548565175284"
+category = "engine-fuel"
+documents = ["doc/kyosho/if242-product-page"]
 fits = [
   { kit = "kit/kyosho/inferno-neo", type = "direct", source = "doc/kyosho/31682t1-inf-neo-rs-sp" },
+  { kit = "kit/kyosho/inferno-neo-st", type = "direct", source = "doc/kyosho/31683-inferno-neo-st-rs-sp" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
 ]
-category = "engine-fuel"

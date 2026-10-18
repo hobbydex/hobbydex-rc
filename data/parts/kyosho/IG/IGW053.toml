@@ -2,7 +2,11 @@ id = "part/kyosho/IGW053"
 brand = "brand/kyosho"
 number = "IGW053"
 name = "3D Bumper for GT2"
-gtin = "4548565272488"
 name_ja = "3Dバンパー(GT2用)"
+gtin = "4548565272488"
 category = "bumper-guard"
 documents = ["doc/kyosho/igw053-3d-bumper", "doc/kyosho/igw053-product-page"]
+fits = [
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33027-inf-gt2-rs-kt-331p-spop" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34102-mm02-inferno-gt2-ve-spop" },
+]

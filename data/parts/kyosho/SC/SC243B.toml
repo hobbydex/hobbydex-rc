@@ -2,7 +2,11 @@ id = "part/kyosho/SC243B"
 brand = "brand/kyosho"
 number = "SC243B"
 name = "Tie-Rod Set (Scorpion 2014)"
+gtin = "4548565430734"
+category = "ball-end"
+documents = ["doc/kyosho/sc243b-product-page"]
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/scorpion", type = "direct", source = "doc/kyosho/30613-mm07-2-scorpion-spop" },
+  { kit = "kit/kyosho/beetle", type = "direct", source = "doc/kyosho/30614-07-beetle-spop" },
 ]
-category = "ball-end"

@@ -2,6 +2,9 @@ id = "part/kyosho/UM331"
 brand = "brand/kyosho"
 number = "UM331"
 name = "Steel Pinion Gear(31T)1/48 Pitch"
+gtin = "4548565245765"
+category = "pinion"
+documents = ["doc/kyosho/um331-product-page"]
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
@@ -10,11 +13,12 @@ fits = [
   { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/30917-fazer-ve-porsche-918-spop" },
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
   { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30859-ultima-sc6-spop" },
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-31t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 material = "steel"
-category = "pinion"
 teeth = 31
 pitch_dp = 48

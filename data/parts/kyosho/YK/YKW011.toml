@@ -1,7 +1,10 @@
 id = "part/kyosho/YKW011"
 brand = "brand/kyosho"
 number = "YKW011"
-name = "B Spanner (5.5-7.0)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name = "Spanner (5.5-7.0)"
+gtin = "4548565222292"
 category = "tool"
-name_source = "ocr"
+documents = ["doc/kyosho/ykw011-product-page"]
+fits = [
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33211-v-one-r4-evo2-spop" },
+]

@@ -1,0 +1,15 @@
+id = "part/fms/FMSC3694"
+brand = "brand/fms"
+number = "FMSC3694"
+name = "1/10 LC80 FCX10 - 550 HIGH PERFORMANCE MOTOR"
+gtin = "5404039247682"
+links = [
+  { site = "beez2b", url = "https://www.beez2b.com/en/cat/18349-fmsc3694-FMSC3694-5404039247682" },
+]
+fits = [
+  { kit = "kit/fms/fcx10", type = "replaces", notes = "Named for FCX10 in the beez2b title" },
+]
+category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

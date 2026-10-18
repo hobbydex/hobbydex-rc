@@ -2,8 +2,11 @@ id = "part/kyosho/TR305-11"
 brand = "brand/kyosho"
 number = "TR305-11"
 name = "Pinion Gear (11T/DBX-VE)"
+gtin = "4548565147625"
+category = "pinion"
+documents = ["doc/kyosho/tr305-11-product-page"]
 fits = [
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
+  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/30843-dmt-ve-spop" },
 ]
-category = "pinion"
 teeth = 11

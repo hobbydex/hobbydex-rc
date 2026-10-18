@@ -1,0 +1,13 @@
+id = "part/kyosho/96592"
+brand = "brand/kyosho"
+number = "96592"
+name = "12x18x4mm Ball Bearing"
+fits = [
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/v-one-s", type = "direct", source = "doc/kyosho/31241-vones-vauxhall-astra-p" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

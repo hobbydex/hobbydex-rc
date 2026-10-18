@@ -3,11 +3,13 @@ brand = "brand/kyosho"
 number = "UMW701"
 name = "Aluminum Steering Plate (RB6)"
 gtin = "4548565218295"
+category = "steering"
+documents = ["doc/kyosho/umw701-product-page"]
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
   { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-spop" },
 ]
-category = "steering"
-documents = ["doc/kyosho/umw701-product-page"]
 material = "aluminium"

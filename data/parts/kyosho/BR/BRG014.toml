@@ -2,16 +2,16 @@ id = "part/kyosho/BRG014"
 brand = "brand/kyosho"
 number = "BRG014"
 name = "Shield Bearing (10x15x4)"
-gtin = "4955439758960"
-pack_qty = 2
 former_names = ["BRG100 PNGS4825"]
+pack_qty = 2
+gtin = "4955439758960"
+category = "bearing"
+documents = ["doc/kyosho/brg014-product-page"]
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "metal"
-category = "bearing"
-documents = ["doc/kyosho/brg014-product-page"]
 range = "kyosho/brg014-colours"
 fits = [
   { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
@@ -30,4 +30,19 @@ fits = [
   { kit = "kit/kyosho/fazer-kobra", type = "direct", source = "doc/kyosho/30930t1-ep-fazer-kobra-p" },
   { kit = "kit/kyosho/dirt-hog", type = "direct", source = "doc/kyosho/30993-dirthog-soop" },
   { kit = "kit/kyosho/gp-ultima-st", type = "direct", source = "doc/kyosho/31973-gp-ultimast-r-evo-p" },
+  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-sp" },
+  { kit = "kit/kyosho/scorpion", type = "direct", source = "doc/kyosho/30613-mm07-2-scorpion-spop" },
+  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30615-mm07-tomahawk-spop" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop" },
+  { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
+  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp-fw05ske-p" },
+  { kit = "kit/kyosho/v-one-sr", type = "direct", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
 ]

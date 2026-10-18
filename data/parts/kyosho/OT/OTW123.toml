@@ -1,8 +1,10 @@
 id = "part/kyosho/OTW123"
 brand = "brand/kyosho"
 number = "OTW123"
-name = "Fine Selection F Shock Spring Set(MS/MH/Ultima) Fine Selection R Shock Spring Set(MM/MH/Ultima)"
+name = "Front Shock Spring Set (S/M/H/Optima)"
 former_names = ["SILVER PINK BLACK YELLOW GOLD"]
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock-spring"
-name_source = "ocr"
+pack_qty = 2
+fits = [
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-op" },
+]

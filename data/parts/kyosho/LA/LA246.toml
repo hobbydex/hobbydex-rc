@@ -2,8 +2,10 @@ id = "part/kyosho/LA246"
 brand = "brand/kyosho"
 number = "LA246"
 name = "Low Mount 4.8mm Ball Stad(S)"
-gtin = "4955439029077"
 pack_qty = 4
+gtin = "4955439029077"
+category = "ball-end"
+documents = ["doc/kyosho/la246-product-page"]
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
@@ -16,7 +18,8 @@ fits = [
   { kit = "kit/kyosho/tf-7", type = "direct", source = "doc/kyosho/30026-tf7-parts-list-v02" },
   { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
   { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
+  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-sp" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-spop" },
 ]
-category = "ball-end"
-documents = ["doc/kyosho/la246-product-page"]
 ball_mm = 4.8

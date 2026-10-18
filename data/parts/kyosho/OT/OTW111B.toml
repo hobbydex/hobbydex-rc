@@ -2,8 +2,10 @@ id = "part/kyosho/OTW111B"
 brand = "brand/kyosho"
 number = "OTW111B"
 name = "Hard Main Chassis (7075/OPTIMA)"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "chassis"
-name_source = "ocr"
 material = "aluminium"
 material_grade = "7075"
+fits = [
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+]
