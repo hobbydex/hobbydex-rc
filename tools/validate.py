@@ -60,6 +60,8 @@ ENUMS = {
     "brand.status": {"active", "dormant", "gone"},
     "company.status": {"active", "dormant", "gone"},
     "contains.role": {"kit", "option", "listed"},
+    # generic items a release needs from outside the box (docs/schema.md "release", needs); a part is named by part instead
+    "needs.item": {"radio", "receiver", "servo", "esc", "motor", "engine", "battery", "charger", "pinion", "tyres", "wheels", "body", "paint", "glue", "fuel", "glow-starter", "tools"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "owner_report"},
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
@@ -384,6 +386,20 @@ def main():
         rq = d.get("requires") if kind == "release" else None
         if rq is not None and not (isinstance(rq, list) and rq and all(isinstance(x, str) and x.startswith(("kit/", "release/")) for x in rq)):
             errors.append(f"{path}: requires should be a list of kit or release ids (the car the release needs, one of them)")
+        nd = d.get("needs")
+        if nd is not None and kind != "release":
+            errors.append(f"{path}: needs only on a release")
+        elif nd is not None:
+            if not (isinstance(nd, list) and nd):
+                errors.append(f"{path}: needs should be a non-empty list of {{ part = \"part/...\" or item = \"...\", source = \"doc/...\", qty = 1.. (optional), note = \"...\" (optional) }}")
+            for i, n in enumerate(nd if isinstance(nd, list) else []):
+                if not isinstance(n, dict) or not (set(n) <= {"part", "item", "source", "qty", "note"}) or ("part" in n) == ("item" in n) or "source" not in n:
+                    errors.append(f"{path}: needs[{i}] should have exactly one of part or item, and a source")
+                    continue
+                if "qty" in n and not (isinstance(n["qty"], int) and not isinstance(n["qty"], bool) and n["qty"] >= 1):
+                    errors.append(f"{path}: needs[{i}].qty {n['qty']!r} should be an int of 1 or more")
+                if "note" in n and not (isinstance(n["note"], str) and n["note"].strip()):
+                    errors.append(f"{path}: needs[{i}].note should be a short string")
         su = d.get("surface") if kind in ("release", "kit") else None
         if su is not None and not (isinstance(su, list) and su and all(x in SURFACES for x in su)):
             errors.append(f"{path}: surface {su!r} should be a list of {sorted(SURFACES)}")
