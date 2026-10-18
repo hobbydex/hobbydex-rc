@@ -3,5 +3,9 @@ brand = "brand/hobby-details"
 number = "DTMAXX001"
 name = "Stainless Steel Chassis Armor Skid Plate"
 material = "stainless"
+applies_to = "MAXX"
+fits = [
+  { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/hobby-details/catalogue" },
+]
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
 category = "chassis"

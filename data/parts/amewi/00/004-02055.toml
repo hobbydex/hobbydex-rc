@@ -1,9 +1,10 @@
 id = "part/amewi/004-02055"
 brand = "brand/amewi"
 number = "004-02055"
-name = "02055 Stoppmutter M4"
+name = "02055 Nylon Nut M4"
+name_de = "02055 Stoppmutter M4"
+gtin = "4260631424491"
 pack_qty = 8
-notes = "Name in German: the part's English page on amewi.com is not read yet"
 fits = [
   { kit = "kit/amewi/breaker-pro", type = "direct", source = "doc/amewi/22232-product-page" },
 ]
@@ -12,5 +13,6 @@ links = [
 ]
 category = "nut"
 equivalent_to = [
-  { spec = "spec/nut/m4-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/nut/m4-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+material = "plastic"

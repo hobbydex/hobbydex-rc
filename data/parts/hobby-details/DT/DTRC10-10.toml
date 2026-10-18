@@ -4,9 +4,10 @@ number = "DTRC10-10"
 name = "Aluminum Front Case Mounts Cover for 1/10 Redcat Blackout XTE XBE SC 1pc"
 material = "aluminium"
 scale = "1/10"
-applies_to = "Blackout XTE"
+applies_to = "Blackout XTE, Blackout XTE XBE"
 fits = [
-  { kit = "kit/redcat/blackout-xte", type = "direct", source = "doc/hobby-details/catalogue" },
+  { kit = "kit/redcat/blackout-xte", type = "replaces", source = "doc/hobby-details/catalogue" },
+  { kit = "kit/redcat/blackout-xbe", type = "replaces", source = "doc/hobby-details/catalogue" },
 ]
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
 category = "chassis"

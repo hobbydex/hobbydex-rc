@@ -1,8 +1,9 @@
 id = "part/amewi/009-VB1062"
 brand = "brand/amewi"
 number = "009-VB1062"
-name = "VB1062 Querlenkerstift 3x46mm EVO-X 6000"
-notes = "Name in German: the part's English page on amewi.com is not read yet"
+name = "VB1062 Suspension Pin 3x46mm"
+name_de = "VB1062 Querlenkerstift 3x46mm EVO-X 6000"
+gtin = "4260564622438"
 fits = [
   { kit = "kit/amewi/evo-x6000", type = "direct", source = "doc/amewi/22320-product-page" },
 ]
@@ -10,3 +11,6 @@ links = [
   { site = "Amewi", url = "https://amewi.com/VB1062-Querlenkerstift-3x46mm-EVO-X-6000" },
 ]
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/pin/3x46", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

@@ -1,8 +1,10 @@
 id = "part/amewi/015-24019"
 brand = "brand/amewi"
 number = "015-24019"
-name = "3,7V 600mAh LiPo Akku AM24"
-notes = "Name in German: the part's English page on amewi.com is not read yet"
+name = "3,7V 500mAh LiPo battery AM24"
+name_de = "3,7V 600mAh LiPo Akku AM24"
+gtin = "4260564638842"
+notes = "Specifications: Battery Type Li-Po; Cells 1; Battery Voltage 3.7V; Battery Capacity 600mAh; Dimension 20x13x1mm; Battery Weight 20g"
 fits = [
   { kit = "kit/amewi/am24", type = "direct", source = "doc/amewi/22372-product-page" },
 ]
@@ -10,7 +12,7 @@ links = [
   { site = "Amewi", url = "https://amewi.com/37V-600mAh-LiPo-Akku-AM24" },
 ]
 equivalent_to = [
-  { spec = "spec/battery/lipo-1s-600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+  { spec = "spec/battery/lipo-1s-500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]
 chemistry = "lipo"
 cells = 1
