@@ -493,6 +493,8 @@ shows it from both sides. tools/link_part_refs.py reads them from names.
 an upgraded version (`supersedes = "part/team-corally/C-00180-194"` on
 C-00180-714). The site shows it on both parts.
 
+`status` (optional): `discontinued` or `available`, the same words a release uses for being out of production. Set only where the maker or a shop states it: a note such as "Discontinued: ..." or "Listed in KO Propo's Discontinued Products Table", the store's DISC.. marker, a Kyosho product page filed under discontinued or with a discontinued buy box, or a name carrying "(Discontinued)". Left out when not stated; age never decides it. tools/link_part_status.py sets it from those statements and reruns after the importers. A successor the maker names in the discontinued part's notes carries `supersedes` back to the old part, unless two old parts name it.
+
 ## spec
 
 A generic, brand-independent specification. Category-specific fields; for
