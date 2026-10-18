@@ -15,6 +15,9 @@ includes = [
   { spec = "spec/bearing/10x16x4" },
 ]
 applies_to = "Xray NT1/Pro Nitro 2012 (#330006, 330007)"
+fits = [
+  { kit = "kit/xray/nt1", releases = ["release/xray/330006", "release/xray/330007"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Xray NT1/Pro Nitro 2012 (#330006, 330007) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/xra016r-xray-nt1-pro-nitro-2012-330006-7-compatible-rubber-shielded-bearing-kit/" },

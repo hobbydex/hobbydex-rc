@@ -4,6 +4,9 @@ name = "XRAY T2 2009 ED Polyamide Sealed Bearing Kit"
 category = "bearing"
 category_source = "curated"
 applies_to = "XRAY T2 2009 ED"
+fits = [
+  { kit = "kit/xray/t2", releases = ["release/xray/300006", "release/xray/300101", "release/xray/300102"], type = "direct", source = "doc/acer-racing/store", notes = "Listed for the XRAY T2 2009 ED (link_car_kits.py)" },
+]
 notes = "Contents not recorded: the store sells it in several versions and the description gives one list. Sold in versions: EU Spec; US Spec."
 links = [
   { site = "Acer Racing", url = "https://www.acerracing.com/products/xray-t2-2009-ed-polyamide-sealed-bearing-kit" },

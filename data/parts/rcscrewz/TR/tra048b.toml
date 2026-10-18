@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Traxxas NHRA Funny Car"
+fits = [
+  { kit = "kit/traxxas/funny-car", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Traxxas NHRA Funny Car (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tra048b-traxxas-nhra-funny-car-metal-shielded-bearings/" },

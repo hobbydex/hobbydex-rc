@@ -12,10 +12,10 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Element RC Enduro GateKeeper (#40110)"
+fits = [
+  { kit = "kit/element-rc/enduro", releases = ["release/element-rc/40110", "release/element-rc/40111", "release/element-rc/40111C"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Element RC Enduro GateKeeper (#40110) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/ele002b-element-rc-enduro-gatekeeper-40110-metal-shielded-bearing-kit/" },
-]
-fits = [
-  { kit = "kit/element-rc/enduro", releases = ["release/element-rc/40110", "release/element-rc/40111", "release/element-rc/40111C"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Element RC Enduro GateKeeper (#40110) (link_car_kits.py)" },
 ]
