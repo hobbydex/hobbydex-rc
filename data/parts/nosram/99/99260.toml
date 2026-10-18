@@ -1,0 +1,15 @@
+id = "part/nosram/99260"
+brand = "brand/nosram"
+number = "99260"
+name = "Sport Pack 2200 - 7.2V - 6-Zellen NiMH Stickpack"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/99260/" },
+]
+chemistry = "nimh"
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-2200mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 2200

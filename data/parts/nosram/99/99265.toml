@@ -1,0 +1,15 @@
+id = "part/nosram/99265"
+brand = "brand/nosram"
+number = "99265"
+name = "Power Pack 3000 - 7.2V - 6-Zellen NiMH Stickpack"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/99265/" },
+]
+chemistry = "nimh"
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3000mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 3000

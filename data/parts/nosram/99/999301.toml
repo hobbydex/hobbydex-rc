@@ -1,0 +1,18 @@
+id = "part/nosram/999301"
+brand = "brand/nosram"
+number = "999301"
+name = "3100 - 7.4V - 50C LiPo Car Stickpack Hardcase - Tamiya Plug"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999301/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3100mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 3100
+c_rating = 50
+case = "hard"
+connector = "Tamiya"
