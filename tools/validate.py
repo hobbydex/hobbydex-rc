@@ -299,7 +299,14 @@ def main():
             elif value not in ids:
                 errors.append(f"{path}: {where}{field} -> {value} does not exist")
         for k, v in d.items():
-            if k in REFS:
+            if kind == "release" and k == "supersedes":   # the release this one replaces (docs/schema.md "release")
+                if not (isinstance(v, str) and v.startswith("release/")):
+                    errors.append(f"{path}: supersedes = {v!r} should be a release id")
+                elif v == d.get("id"):
+                    errors.append(f"{path}: supersedes itself")
+                elif v not in ids:
+                    errors.append(f"{path}: supersedes -> {v} does not exist")
+            elif k in REFS:
                 check_ref(k, v, "")
             elif k in LIST_REFS and isinstance(v, list):
                 for x in v:
@@ -521,6 +528,15 @@ def main():
     counts = {}
     for _, kind, _ in docs:
         counts[kind] = counts.get(kind, 0) + 1
+    supersedes = {d["id"]: d["supersedes"] for _, kind, d in docs if kind == "release" and isinstance(d.get("supersedes"), str)}
+    for start in supersedes:   # a chain of releases that replace each other must end, never loop
+        seen, cur = [], start
+        while cur in supersedes:
+            if cur in seen:
+                errors.append(f"supersedes cycle: {' -> '.join(seen[seen.index(cur):] + [cur])}")
+                break
+            seen.append(cur)
+            cur = supersedes[cur]
     counts["art"] = check_art(ids, errors)
     check_makes(docs, errors)
     check_case_clashes(errors)
