@@ -1,9 +1,10 @@
 id = "part/amewi/009-NT101"
 brand = "brand/amewi"
 number = "009-NT101"
-name = "NT101 Stoppmutter M3"
+name = "NT101 NUT (M3.0MM NYLON)"
+name_de = "NT101 Stoppmutter M3"
+gtin = "4260476358524"
 pack_qty = 10
-notes = "Name in German: the part's English page on amewi.com is not read yet"
 fits = [
   { kit = "kit/amewi/evo-x6000", type = "direct", source = "doc/amewi/22320-product-page" },
 ]
@@ -12,5 +13,6 @@ links = [
 ]
 category = "nut"
 equivalent_to = [
-  { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/nut/m3-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+material = "plastic"
