@@ -1,6 +1,11 @@
 id = "part/kyosho/MXB03IV"
 brand = "brand/kyosho"
 number = "MXB03IV"
-name = "BS MX-01 Suzuki Jimny Sierra Ivory MXB03IV"
+name = "BS MX-01 Suzuki Jimny Sierra Ivory"
 gtin = "4548565385997"
 documents = ["doc/kyosho/bs-mx-01-mxb03iv-product-page"]
+category = "body"
+category_source = "curated"
+fits = [
+  { kit = "kit/kyosho/mini-z-4x4", type = "direct", source = "doc/kyosho/bs-mx-01-mxb03iv-product-page" },
+]
