@@ -17,6 +17,7 @@ read the tree directly; they read the export (`tools/export.py`).
 | category | `data/categories/<slug>.toml` | id, name |
 | shop | `data/shops/<country>/<slug>.toml` | id, name, status (not used yet) |
 | company | `data/companies/<slug>.toml` | id, name |
+| make | `data/makes/<slug>.toml` | id, name, country, notes |
 
 `<prefix>` is the first two characters of the part number, upper-cased
 (`part/gens-ace/Gens-EC5-P` -> `data/parts/gens-ace/GE/Gens-EC5-P.toml`), so
@@ -807,6 +808,28 @@ mounts on. Wheels and wheel hexes link to it: match "exact" when the part's
 name states the size ("WITH 12MM HEX"), "close" when the wheels of a release
 take the size of that release's wheel hexes (the notes say which release).
 Other mounts (pin drive, centre lock) are not modelled yet.
+
+## Makes
+
+`data/makes/<slug>.toml`: one record per real vehicle make that a release or
+body shell depicts (`depicts.make`, below). The make list is curated in
+`VEHICLE_MAKES` in tools/validate.py, and the validator requires one file per
+entry. `name` is the make as it spells itself and must be an entry of that
+list; `id` is `make/` and the site's slug of the name (`make/mercedes-benz`,
+`make/land-rover`). The site's make page shows `notes` and `country`.
+
+- `country`: ISO 3166-1 alpha-2 code of the make's home country, the country
+  it is from (Ducati: IT, though Audi owns it).
+- `notes`: one or two plain sentences on what the make is and builds. No
+  founding years or other dates unless a source states them, and no marketing
+  words. The validator rejects a year.
+
+```toml
+id = "make/bmw"
+name = "BMW"
+country = "DE"
+notes = "German maker of cars and motorcycles, based in Munich."
+```
 
 ## category
 
