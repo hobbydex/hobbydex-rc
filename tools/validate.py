@@ -6,7 +6,7 @@ that differ only in case. Also the art under art/ (see check_art). Exit code 1 o
 
 Run from the repo root: python3 -I tools/validate.py
 """
-import datetime, os, re, sys, tomllib
+import datetime, os, re, sys, tomllib, unicodedata
 import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layout import ART_KINDS, DIRS, art_path, path_for
@@ -27,6 +27,7 @@ REQUIRED = {
     "category": ["id", "name"],
     "standard": ["id", "code", "title"],
     "company": ["id", "name"],
+    "make": ["id", "name", "country", "notes"],   # a real vehicle make (docs/schema.md "Makes"); one file per VEHICLE_MAKES entry
 }
 KINDS = {k: dict(dir=DIRS[k], required=REQUIRED[k]) for k in REQUIRED}
 REFS = {  # field -> expected id prefix
@@ -123,6 +124,33 @@ def check_case_clashes(errors):
                 other = seen.setdefault(path.lower(), path)
                 if other != path:
                     errors.append(f"{path}: differs only in case from {other}; a case-insensitive filesystem cannot hold both")
+
+def make_slug(name):
+    """The site's makeSlug (hobbydex src/lib/data.ts): the make's name as a URL part."""
+    return re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFKD", name.lower())).strip("-")
+
+def check_makes(docs, errors):
+    """data/makes/<slug>.toml: one record per VEHICLE_MAKES entry, named as the make spells itself. country is the
+    ISO 3166 alpha-2 code of the make's home country; notes describe the make with no dates (docs/schema.md "Makes")."""
+    seen = set()
+    for path, kind, d in docs:
+        if kind != "make":
+            continue
+        name = d.get("name")
+        seen.add(name)
+        if name not in VEHICLE_MAKES:
+            errors.append(f"{path}: make {name!r} is not in VEHICLE_MAKES (add it there first)")
+        elif d.get("id") != f"make/{make_slug(name)}":
+            errors.append(f"{path}: id should be make/{make_slug(name)} for {name!r}")
+        if not (isinstance(d.get("country"), str) and re.fullmatch(r"[A-Z]{2}", d["country"])):
+            errors.append(f"{path}: country {d.get('country')!r} should be an ISO 3166 alpha-2 code, such as DE")
+        notes = d.get("notes")
+        if not (isinstance(notes, str) and notes.strip() == notes and notes):
+            errors.append(f"{path}: notes should be one or two sentences")
+        elif re.search(r"\b(1[5-9]|20)\d\d(s)?\b|\b\d{1,2}(st|nd|rd|th) century\b", notes):
+            errors.append(f"{path}: notes give a date; years need a source, so leave them out")
+    for name in sorted(VEHICLE_MAKES - seen):
+        errors.append(f"data/makes: no make file for {name!r}")
 
 def check_art(ids, errors):
     """art/<kits|releases>/<brand>/<key>.svg: our own outline of a kit or release, drawn by the site in its
@@ -477,6 +505,7 @@ def main():
     for _, kind, _ in docs:
         counts[kind] = counts.get(kind, 0) + 1
     counts["art"] = check_art(ids, errors)
+    check_makes(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:
