@@ -4,8 +4,17 @@ number = "TT2245"
 name = "SC4X 7.5T Brushless Motor"
 category = "motor"
 category_source = "curated"
+kv = 3000
 turns = 7.5
-notes = "Discontinued: listed under Discontinued on store.teamtekin.com (2026-10-16)"
+lipo_cells = [2, 3]
+diameter_mm = 35.8
+length_mm = 66
+shaft_mm = 5
+weight_g = 234
+equivalent_to = [
+  { spec = "spec/motor/brushless-3666-5mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 35.8 mm, length 66 mm, shaft 5 mm)" },
+]
+notes = "Bearings (Tekin's specifications): front 5x16x5, rear 1/8x3/8x5/32 in; Discontinued: listed under Discontinued on store.teamtekin.com (2026-10-16)"
 links = [
   { site = "Tekin", url = "https://store.teamtekin.com/sc4x-7-5t-brushless-motor/" },
 ]
