@@ -3,10 +3,11 @@ brand = "brand/kyosho"
 number = "OTB247R"
 name = "Body (Red/Javelin)"
 gtin = "4548565346066"
-fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
-]
 category = "body"
 documents = ["doc/kyosho/otb247r-product-page"]
+fits = [
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+]
 color = "red"
 range = "kyosho/otb247-colours"

@@ -3,7 +3,11 @@ brand = "brand/kyosho"
 number = "IGH001"
 name = "Wheel(IMPREZA/Inferno GT)"
 pack_qty = 2
+gtin = "4955439863046"
+category = "wheel"
+documents = ["doc/kyosho/igh001-product-page"]
 fits = [
   { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/inferno-gt3-parts-list-v01-02" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/30935-mm01-infernogt2veracespec-spop" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
 ]
-category = "wheel"

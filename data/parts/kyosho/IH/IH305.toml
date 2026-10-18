@@ -1,0 +1,12 @@
+id = "part/kyosho/IH305"
+brand = "brand/kyosho"
+number = "IH305"
+name = "Motor Set (Mini Inferno / 380 class)"
+fits = [
+  { kit = "kit/kyosho/mini-inferno", type = "direct", source = "doc/kyosho/30125-mini-inferno-sp" },
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+]
+category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

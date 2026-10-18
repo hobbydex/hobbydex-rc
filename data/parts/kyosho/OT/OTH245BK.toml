@@ -3,9 +3,16 @@ brand = "brand/kyosho"
 number = "OTH245BK"
 name = "8 Hole Wheel 50mm (Black/OPTIMA)"
 pack_qty = 2
+gtin = "4548565363094"
+category = "wheel"
+documents = ["doc/kyosho/oth245bk-product-page"]
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-op" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
 ]
-category = "wheel"
 color = "black"
 range = "kyosho/oth245-colours"

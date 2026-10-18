@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "OLB051"
 name = "Outlaw Rampage Clear Body Set"
 name_ja = "アウトローランページ クリアボディセット"
+gtin = "4548565333981"
 category = "body"
-documents = ["doc/kyosho/olb051-outlaw-rampage-clear-body-set"]
+documents = ["doc/kyosho/olb051-outlaw-rampage-clear-body-set", "doc/kyosho/olb051-product-page"]
+fits = [
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+]

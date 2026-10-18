@@ -3,7 +3,11 @@ brand = "brand/kyosho"
 number = "IGT001B"
 name = "Tire & Inner Sponge (Inferno GT)"
 pack_qty = 2
+gtin = "4955439066669"
+category = "tire"
+documents = ["doc/kyosho/igt001b-product-page"]
 fits = [
   { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/inferno-gt3-parts-list-v01-02" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/30935-mm01-infernogt2veracespec-spop" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
 ]
-category = "tire"

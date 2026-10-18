@@ -2,7 +2,11 @@ id = "part/kyosho/TR151"
 brand = "brand/kyosho"
 number = "TR151"
 name = "Main Chassis (DRX)"
+gtin = "4548565132997"
+category = "chassis"
+documents = ["doc/kyosho/tr151-product-page"]
 fits = [
   { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
+  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/31071-dmt-spop" },
+  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/31098-dbx2-opsp" },
 ]
-category = "chassis"

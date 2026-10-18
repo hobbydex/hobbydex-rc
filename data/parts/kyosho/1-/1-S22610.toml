@@ -4,6 +4,8 @@ number = "1-S22610"
 name = "Cap Screw(M2.6x10)"
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m2.6x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },

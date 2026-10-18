@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "TRW166"
 name = "HD Hinge Pin Brace Set"
 name_ja = "HD ヒンジピンブレースセット"
+gtin = "4548565199228"
 category = "pin-clip"
-documents = ["doc/kyosho/trw166-hd-hingepin-braceset"]
+documents = ["doc/kyosho/trw166-hd-hingepin-braceset", "doc/kyosho/trw166-product-page"]
+fits = [
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/30879-mm01-spop" },
+]

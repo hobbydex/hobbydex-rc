@@ -5,5 +5,12 @@ name = "Button Screw(Hex/M3x25)"
 pack_qty = 5
 fits = [
   { kit = "kit/kyosho/kc10", type = "direct", source = "doc/kyosho/kc10-spop" },
+  { kit = "kit/kyosho/turbo-scorpion", type = "direct", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
+  { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x25-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
