@@ -5,7 +5,15 @@ name = "T8 GEN2 1700KV Brushless Truggy Motor"
 category = "motor"
 category_source = "curated"
 kv = 1700
-notes = "Discontinued: sold only under Scratch & Dent on store.teamtekin.com (2026-10-16)"
+lipo_cells = [4, 6]
+diameter_mm = 40
+length_mm = 77
+shaft_mm = 5
+weight_g = 368
+equivalent_to = [
+  { spec = "spec/motor/brushless-4077-5mm", match = "functional", notes = "Derived from Tekin's dimensions (diameter 40 mm, length 77 mm, shaft 5 mm)" },
+]
+notes = "Bearings (Tekin's specifications): front 5x16x5, rear 5x11x5; Discontinued: sold only under Scratch & Dent on store.teamtekin.com (2026-10-16)"
 links = [
   { site = "Tekin", url = "https://store.teamtekin.com/t8-gen2-1700kv-brushless-truggy-motor/" },
 ]
