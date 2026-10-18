@@ -17,6 +17,7 @@ read the tree directly; they read the export (`tools/export.py`).
 | category | `data/categories/<slug>.toml` | id, name |
 | shop | `data/shops/<country>/<slug>.toml` | id, name, status (not used yet) |
 | company | `data/companies/<slug>.toml` | id, name |
+| make | `data/makes/<slug>.toml` | id, name, country, notes |
 
 `<prefix>` is the first two characters of the part number, upper-cased
 (`part/gens-ace/Gens-EC5-P` -> `data/parts/gens-ace/GE/Gens-EC5-P.toml`), so
@@ -195,10 +196,25 @@ Rows read from a build manual also carry `qty`, the number of pieces the car
 uses (summed over the steps that use the part), and `step`, the manual's
 reference ("Bag 4 - Step 2"). Rows read from a parts list have neither.
 
+`needs` (optional) lists what a buyer must get separately to complete the release: paints for a Tamiya kit, the radio, servo, ESC, motor, battery, charger, pinion, tyres or body for another maker's kit. It is not `contains` (what is in the box) and not `requires` (another kit or release this one needs). Each entry has exactly one of `part` (an existing part id, when the item is a part the data holds) or `item` (a generic word from the fixed list: radio, receiver, servo, esc, motor, engine, battery, charger, pinion, tyres, wheels, body, paint, glue, fuel, glow-starter, tools), plus `source` (the doc that names the need, from the maker's wording) and optionally `qty` (an int of 1 or more, when more than one is needed) and `note` (a short string).
+
+```toml
+needs = [
+  { part = "part/tamiya/85001", source = "doc/tamiya/58661-product-page" },
+  { item = "radio", source = "doc/kyosho/xxx", qty = 1 },
+]
+```
+
 `year` is the year the release came out. Leave it out when it is unknown: a
 document's date (a later scan, a reprinted manual) or the day a shop was read
 is not a release year. The site shows such releases as year unknown and leaves
 them out of the by-date lists.
+
+`supersedes` (optional, on the newer release): the release this one replaces, a release id. Two sources. A yearly edition of one kit whose name differs from the previous one only by the year marker and keeps the same variant (XRAY's XB8'22 -> XB8'23, X4'24 Alu Flex -> X4'25 Alu Flex, XB4C'25 -> XB4C'26) takes the directly previous year of that variant, or the nearest earlier one when a year is missing; EU and US twins of one year are not successors of each other, and releases that are different bodies or editions of one kit (Tamiya's TT-02 bodies) take none. The other source is the maker saying so: "Replaced by" on its product page, cited in `notes` with the page's prod_id. One predecessor per release. The site shows "Replaced by" on the older release and "Replaces" on the newer one. The maker's statement can also join releases of different kits (XRAY's T1 -> T1 EVO2).
+
+```toml
+supersedes = "release/xray/xb8-2022"
+```
 
 `released`: the release date as precise as a source states it, `YYYY-MM-DD`
 or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
@@ -238,6 +254,8 @@ brand lists the part as released, `YYYY-MM-DD` or `YYYY-MM` (HUDY's product
 list gives a day per item, Tamiya's monthly new-items list a month),
 and `applies_to`, the models the
 brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
+A brand that names the car only in the part's name (RW Racing: "Supalite Spurs
+48DP for Xray 008/009 73T") gives the car's words from the name, "Xray 008/009".
 
 `category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
@@ -491,6 +509,8 @@ shows it from both sides. tools/link_part_refs.py reads them from names.
 `supersedes`: the part this one replaces, when the brand has replaced it with
 an upgraded version (`supersedes = "part/team-corally/C-00180-194"` on
 C-00180-714). The site shows it on both parts.
+
+`status` (optional): `discontinued` or `available`, the same words a release uses for being out of production. Set only where the maker or a shop states it: a note such as "Discontinued: ..." or "Listed in KO Propo's Discontinued Products Table", the store's DISC.. marker, a Kyosho product page filed under discontinued or with a discontinued buy box, or a name carrying "(Discontinued)". Left out when not stated; age never decides it. tools/link_part_status.py sets it from those statements and reruns after the importers. A successor the maker names in the discontinued part's notes carries `supersedes` back to the old part, unless two old parts name it.
 
 ## spec
 
@@ -807,6 +827,28 @@ mounts on. Wheels and wheel hexes link to it: match "exact" when the part's
 name states the size ("WITH 12MM HEX"), "close" when the wheels of a release
 take the size of that release's wheel hexes (the notes say which release).
 Other mounts (pin drive, centre lock) are not modelled yet.
+
+## Makes
+
+`data/makes/<slug>.toml`: one record per real vehicle make that a release or
+body shell depicts (`depicts.make`, below). The make list is curated in
+`VEHICLE_MAKES` in tools/validate.py, and the validator requires one file per
+entry. `name` is the make as it spells itself and must be an entry of that
+list; `id` is `make/` and the site's slug of the name (`make/mercedes-benz`,
+`make/land-rover`). The site's make page shows `notes` and `country`.
+
+- `country`: ISO 3166-1 alpha-2 code of the make's home country, the country
+  it is from (Ducati: IT, though Audi owns it).
+- `notes`: one or two plain sentences on what the make is and builds. No
+  founding years or other dates unless a source states them, and no marketing
+  words. The validator rejects a year.
+
+```toml
+id = "make/bmw"
+name = "BMW"
+country = "DE"
+notes = "German maker of cars and motorcycles, based in Munich."
+```
 
 ## category
 

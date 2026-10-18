@@ -6,7 +6,7 @@ that differ only in case. Also the art under art/ (see check_art). Exit code 1 o
 
 Run from the repo root: python3 -I tools/validate.py
 """
-import datetime, os, re, sys, tomllib
+import datetime, os, re, sys, tomllib, unicodedata
 import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layout import ART_KINDS, DIRS, art_path, path_for
@@ -27,6 +27,7 @@ REQUIRED = {
     "category": ["id", "name"],
     "standard": ["id", "code", "title"],
     "company": ["id", "name"],
+    "make": ["id", "name", "country", "notes"],   # a real vehicle make (docs/schema.md "Makes"); one file per VEHICLE_MAKES entry
 }
 KINDS = {k: dict(dir=DIRS[k], required=REQUIRED[k]) for k in REQUIRED}
 REFS = {  # field -> expected id prefix
@@ -59,6 +60,8 @@ ENUMS = {
     "brand.status": {"active", "dormant", "gone"},
     "company.status": {"active", "dormant", "gone"},
     "contains.role": {"kit", "option", "listed"},
+    # generic items a release needs from outside the box (docs/schema.md "release", needs); a part is named by part instead
+    "needs.item": {"radio", "receiver", "servo", "esc", "motor", "engine", "battery", "charger", "pinion", "tyres", "wheels", "body", "paint", "glue", "fuel", "glow-starter", "tools"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "owner_report"},
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
@@ -66,6 +69,7 @@ ENUMS = {
     "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
+    "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.lubricant": {"oil", "grease"},
@@ -123,6 +127,33 @@ def check_case_clashes(errors):
                 other = seen.setdefault(path.lower(), path)
                 if other != path:
                     errors.append(f"{path}: differs only in case from {other}; a case-insensitive filesystem cannot hold both")
+
+def make_slug(name):
+    """The site's makeSlug (hobbydex src/lib/data.ts): the make's name as a URL part."""
+    return re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFKD", name.lower())).strip("-")
+
+def check_makes(docs, errors):
+    """data/makes/<slug>.toml: one record per VEHICLE_MAKES entry, named as the make spells itself. country is the
+    ISO 3166 alpha-2 code of the make's home country; notes describe the make with no dates (docs/schema.md "Makes")."""
+    seen = set()
+    for path, kind, d in docs:
+        if kind != "make":
+            continue
+        name = d.get("name")
+        seen.add(name)
+        if name not in VEHICLE_MAKES:
+            errors.append(f"{path}: make {name!r} is not in VEHICLE_MAKES (add it there first)")
+        elif d.get("id") != f"make/{make_slug(name)}":
+            errors.append(f"{path}: id should be make/{make_slug(name)} for {name!r}")
+        if not (isinstance(d.get("country"), str) and re.fullmatch(r"[A-Z]{2}", d["country"])):
+            errors.append(f"{path}: country {d.get('country')!r} should be an ISO 3166 alpha-2 code, such as DE")
+        notes = d.get("notes")
+        if not (isinstance(notes, str) and notes.strip() == notes and notes):
+            errors.append(f"{path}: notes should be one or two sentences")
+        elif re.search(r"\b(1[5-9]|20)\d\d(s)?\b|\b\d{1,2}(st|nd|rd|th) century\b", notes):
+            errors.append(f"{path}: notes give a date; years need a source, so leave them out")
+    for name in sorted(VEHICLE_MAKES - seen):
+        errors.append(f"data/makes: no make file for {name!r}")
 
 def check_art(ids, errors):
     """art/<kits|releases>/<brand>/<key>.svg: our own outline of a kit or release, drawn by the site in its
@@ -268,7 +299,14 @@ def main():
             elif value not in ids:
                 errors.append(f"{path}: {where}{field} -> {value} does not exist")
         for k, v in d.items():
-            if k in REFS:
+            if kind == "release" and k == "supersedes":   # the release this one replaces (docs/schema.md "release")
+                if not (isinstance(v, str) and v.startswith("release/")):
+                    errors.append(f"{path}: supersedes = {v!r} should be a release id")
+                elif v == d.get("id"):
+                    errors.append(f"{path}: supersedes itself")
+                elif v not in ids:
+                    errors.append(f"{path}: supersedes -> {v} does not exist")
+            elif k in REFS:
                 check_ref(k, v, "")
             elif k in LIST_REFS and isinstance(v, list):
                 for x in v:
@@ -355,6 +393,20 @@ def main():
         rq = d.get("requires") if kind == "release" else None
         if rq is not None and not (isinstance(rq, list) and rq and all(isinstance(x, str) and x.startswith(("kit/", "release/")) for x in rq)):
             errors.append(f"{path}: requires should be a list of kit or release ids (the car the release needs, one of them)")
+        nd = d.get("needs")
+        if nd is not None and kind != "release":
+            errors.append(f"{path}: needs only on a release")
+        elif nd is not None:
+            if not (isinstance(nd, list) and nd):
+                errors.append(f"{path}: needs should be a non-empty list of {{ part = \"part/...\" or item = \"...\", source = \"doc/...\", qty = 1.. (optional), note = \"...\" (optional) }}")
+            for i, n in enumerate(nd if isinstance(nd, list) else []):
+                if not isinstance(n, dict) or not (set(n) <= {"part", "item", "source", "qty", "note"}) or ("part" in n) == ("item" in n) or "source" not in n:
+                    errors.append(f"{path}: needs[{i}] should have exactly one of part or item, and a source")
+                    continue
+                if "qty" in n and not (isinstance(n["qty"], int) and not isinstance(n["qty"], bool) and n["qty"] >= 1):
+                    errors.append(f"{path}: needs[{i}].qty {n['qty']!r} should be an int of 1 or more")
+                if "note" in n and not (isinstance(n["note"], str) and n["note"].strip()):
+                    errors.append(f"{path}: needs[{i}].note should be a short string")
         su = d.get("surface") if kind in ("release", "kit") else None
         if su is not None and not (isinstance(su, list) and su and all(x in SURFACES for x in su)):
             errors.append(f"{path}: surface {su!r} should be a list of {sorted(SURFACES)}")
@@ -476,7 +528,17 @@ def main():
     counts = {}
     for _, kind, _ in docs:
         counts[kind] = counts.get(kind, 0) + 1
+    supersedes = {d["id"]: d["supersedes"] for _, kind, d in docs if kind == "release" and isinstance(d.get("supersedes"), str)}
+    for start in supersedes:   # a chain of releases that replace each other must end, never loop
+        seen, cur = [], start
+        while cur in supersedes:
+            if cur in seen:
+                errors.append(f"supersedes cycle: {' -> '.join(seen[seen.index(cur):] + [cur])}")
+                break
+            seen.append(cur)
+            cur = supersedes[cur]
     counts["art"] = check_art(ids, errors)
+    check_makes(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:

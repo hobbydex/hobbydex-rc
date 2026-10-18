@@ -1,0 +1,14 @@
+id = "part/rw-racing/RW1000-13"
+brand = "brand/rw-racing"
+number = "RW1000-13"
+name = "Pinion Mod 1 for 3,17mm Shafts - 13T"
+category = "pinion"
+module = 1
+bore_mm = 3.17
+links = [
+  { site = "beez2b", url = "https://www.beez2b.com/en/cat/15180-rw1000-13-RW1000-13" },
+]
+source = "doc/rw-racing/beez2b-listing"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

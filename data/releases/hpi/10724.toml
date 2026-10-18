@@ -6,6 +6,47 @@ name = "RTR E10 with Lamborghini Murcielago"
 kind = "rtr"
 status = "discontinued"
 depicts = { make = "Lamborghini", model = "Murcielago" }
-documents = ["doc/hpi/10724-kit-page"]
+documents = ["doc/hpi/10724-kit-page", "doc/hpi/i12020-e10-glb-m-v1"]
 notes = "Release year unknown; HPI's pages state none"
-contains = []
+contains = [
+  { part = "part/hpi/1144", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/2029", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/6279", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/75106", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/85601", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/85612", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/85614", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88001", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88003", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88012", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88022", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/B033", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z150", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z281", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z297", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z348", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z349", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z477", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z517", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z535", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z561", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z568", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z577", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z676", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z700", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/Z901", role = "kit", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/160248", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/160336", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/160337", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/17524", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/33449", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/4425", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88020", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88024", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88026", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88028", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88030", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88032", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88034", role = "option", source = "doc/hpi/10724-kit-page" },
+  { part = "part/hpi/88060", role = "option", source = "doc/hpi/10724-kit-page" },
+]
