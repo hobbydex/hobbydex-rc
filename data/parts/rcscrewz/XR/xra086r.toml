@@ -15,6 +15,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Xray SCX 2wd ’22 (#320300)"
+fits = [
+  { kit = "kit/xray/scx", releases = ["release/xray/scx-2021"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Xray SCX 2wd ’22 (#320300) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/xra086r-xray-scx-2wd-22-320300-rubber-shielded-bearing-kit/" },

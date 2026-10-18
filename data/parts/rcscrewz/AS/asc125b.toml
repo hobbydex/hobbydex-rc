@@ -13,10 +13,10 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Associated SR10 Dirt Oval (#70030)"
+fits = [
+  { kit = "kit/team-associated/sr10", releases = ["release/team-associated/70030", "release/team-associated/70030C"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Associated SR10 Dirt Oval (#70030) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc125b-metal-shielded-bearing-kits-for-the-associated-sr10-dirt-oval-70030/" },
-]
-fits = [
-  { kit = "kit/team-associated/sr10", releases = ["release/team-associated/70030", "release/team-associated/70030C"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Associated SR10 Dirt Oval (#70030) (link_car_kits.py)" },
 ]

@@ -2,8 +2,13 @@ id = "part/kyosho/OT209B"
 brand = "brand/kyosho"
 number = "OT209B"
 name = "Shock Piston (OPTIMA)"
+gtin = "4548565434015"
+category = "shock"
+documents = ["doc/kyosho/ot209b-product-page"]
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/turbo-scorpion", type = "direct", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
 ]
-category = "shock"
 shock_part = "piston"

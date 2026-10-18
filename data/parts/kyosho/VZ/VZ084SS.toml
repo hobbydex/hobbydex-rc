@@ -3,8 +3,9 @@ brand = "brand/kyosho"
 number = "VZ084SS"
 name = "Front Stabilizer Set(Super Soft)"
 gtin = "4548565178681"
-fits = [
-  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
-]
 category = "suspension"
 documents = ["doc/kyosho/vz084ss-product-page"]
+fits = [
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/fw-06-kt-231p-spop" },
+]

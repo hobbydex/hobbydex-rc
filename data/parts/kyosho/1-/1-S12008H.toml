@@ -5,5 +5,10 @@ name = "Button Screw(Hex/M2x8)"
 pack_qty = 10
 fits = [
   { kit = "kit/kyosho/kc10", type = "direct", source = "doc/kyosho/kc10-spop" },
+  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

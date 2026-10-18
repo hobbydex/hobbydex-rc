@@ -4,6 +4,11 @@ number = "BRG011"
 name = "Shield Bearing (8x12x3.5)"
 fits = [
   { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
+  { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
+  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp-fw05ske-p" },
+  { kit = "kit/kyosho/v-one-sr", type = "direct", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33206-v-one-r4sii-spop" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },

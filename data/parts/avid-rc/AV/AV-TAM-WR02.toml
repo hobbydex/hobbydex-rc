@@ -11,8 +11,8 @@ material = "steel"
 seal = "rubber"
 lubricant = "grease"
 fits = [
-  { kit = "kit/tamiya/wr-02c", type = "direct", source = "doc/avid-rc/flexkit" },
-  { kit = "kit/tamiya/wr-02", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya WR-02 Bearing Kit (link_car_kits.py --verify)" },
+  { kit = "kit/tamiya/wr-02c", releases = ["release/tamiya/58611"], type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/tamiya/wr-02", releases = ["release/tamiya/57985", "release/tamiya/58242", "release/tamiya/58512", "release/tamiya/58531"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya WR-02 Bearing Kit (link_car_kits.py --verify)" },
 ]
 notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [

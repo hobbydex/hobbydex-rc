@@ -2,7 +2,11 @@ id = "part/kyosho/EZ009"
 brand = "brand/kyosho"
 number = "EZ009"
 name = "Differential Gear Assembly (SAND MASTER)"
+gtin = "4548565201839"
+category = "differential"
+documents = ["doc/kyosho/ez009-product-page"]
 fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34403-monster-tracker-spop" },
+  { kit = "kit/kyosho/sandmaster", type = "direct", source = "doc/kyosho/30831-t02-sandmaster-rs-spop" },
+  { kit = "kit/kyosho/axxe", type = "direct", source = "doc/kyosho/30837-t01-axxe-readyset-spop" },
 ]
-category = "differential"

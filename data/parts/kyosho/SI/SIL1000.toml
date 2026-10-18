@@ -5,5 +5,11 @@ name = "Silicone Oil (1000)"
 fits = [
   { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31777-infernomp777-p" },
   { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
+  { kit = "kit/kyosho/v-one-s", type = "direct", source = "doc/kyosho/31122-vones2-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
 ]
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-1000cst", match = "close", notes = "Viscosity stated as a bare 1000, read as cSt; measuring temperature not given" },
+]

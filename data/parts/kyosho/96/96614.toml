@@ -5,6 +5,11 @@ name = "Silicone Oil #900 (40cc)"
 fits = [
   { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/30072-ep-ultimarb-sports-p" },
   { kit = "kit/kyosho/gp-ultima-st", type = "direct", source = "doc/kyosho/31971-gp-ultimast-r-p" },
+  { kit = "kit/kyosho/fantom-gp", type = "direct", source = "doc/kyosho/31041-fantom-sports-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
 ]
 volume_ml = 40
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-900cst", match = "functional", notes = "Viscosity number #900 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

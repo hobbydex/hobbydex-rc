@@ -2,7 +2,12 @@ id = "part/kyosho/SC209B"
 brand = "brand/kyosho"
 number = "SC209B"
 name = "Servo Saver Mount (Scorpion 2014)"
+gtin = "4548565425570"
+category = "steering"
+documents = ["doc/kyosho/sc209b-product-page"]
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/scorpion", type = "direct", source = "doc/kyosho/30613-mm07-2-scorpion-spop" },
+  { kit = "kit/kyosho/beetle", type = "direct", source = "doc/kyosho/30614-07-beetle-spop" },
+  { kit = "kit/kyosho/turbo-scorpion", type = "direct", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
 ]
-category = "steering"

@@ -2,8 +2,12 @@ id = "part/kyosho/NTW002"
 brand = "brand/kyosho"
 number = "NTW002"
 name = "Oil Shock Set"
+gtin = "4548565371228"
+category = "shock"
+documents = ["doc/kyosho/ntw002-product-page"]
 fits = [
   { kit = "kit/kyosho/nitro-tracker", type = "direct", source = "doc/kyosho/33101-nitro-tracker-spop" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33019-gt2-rs-kt-331p-spop" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34109-gt2-ve-rs-spop" },
 ]
-category = "shock"
 shock_part = "complete"

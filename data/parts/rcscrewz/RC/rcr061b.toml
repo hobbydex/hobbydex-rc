@@ -14,10 +14,10 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "RedCat TR-MT8e BE6S"
+fits = [
+  { kit = "kit/redcat/tr-mt8e", releases = ["release/redcat/TR-MT8E-BE6S"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the RedCat TR-MT8e BE6S (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/rcr061b-redcat-tr-mt8e-be6s-metal-shielded-bearing-kit/" },
-]
-fits = [
-  { kit = "kit/redcat/tr-mt8e", releases = ["release/redcat/TR-MT8E-BE6S"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the RedCat TR-MT8e BE6S (link_car_kits.py)" },
 ]

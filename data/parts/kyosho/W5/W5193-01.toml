@@ -3,7 +3,9 @@ brand = "brand/kyosho"
 number = "W5193-01"
 name = "Shock Shaft (L=50)"
 pack_qty = 2
+gtin = "4955439076071"
 category = "shock"
+documents = ["doc/kyosho/w5193-01-product-page"]
 shock_part = "shaft"
 length_mm = 50
 fits = [
@@ -19,4 +21,6 @@ fits = [
   { kit = "kit/kyosho/lazer-sb", type = "direct", source = "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts" },
   { kit = "kit/kyosho/ultima-db", type = "direct", source = "doc/kyosho/30856-ultima-db-rs-p" },
   { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
+  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-sp" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30859-ultima-sc6-spop" },
 ]

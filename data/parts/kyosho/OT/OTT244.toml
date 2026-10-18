@@ -1,6 +1,9 @@
 id = "part/kyosho/OTT244"
 brand = "brand/kyosho"
 number = "OTT244"
-name = "SB / MB/H UTH002 GR/WT/Y"
-notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
-name_source = "ocr"
+name = "Medium (White)"
+fits = [
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30643-mid-87wc-spop" },
+]

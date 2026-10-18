@@ -2,10 +2,14 @@ id = "part/kyosho/W5181-03"
 brand = "brand/kyosho"
 number = "W5181-03"
 name = "Shock Pistons"
+gtin = "4955439729274"
+category = "shock"
+documents = ["doc/kyosho/w5181-03-product-page"]
 fits = [
   { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/30073-ep-ultimarb-r-evo-p" },
   { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
   { kit = "kit/kyosho/gp-ultima-st", type = "direct", source = "doc/kyosho/31973-gp-ultimast-r-evo-p" },
+  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-sp" },
+  { kit = "kit/kyosho/ultima-sc", type = "direct", source = "doc/kyosho/30850-ultima-sc-r-p" },
 ]
-category = "shock"
 shock_part = "piston"

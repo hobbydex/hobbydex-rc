@@ -3,5 +3,9 @@ brand = "brand/kyosho"
 number = "IGW055"
 name = "SP SP Rear Shock Stay for GT2"
 name_ja = "SP リアダンパーステー (GT2用)"
+gtin = "4548565272501"
 category = "chassis"
-documents = ["doc/kyosho/igw055-sp-rear-shock-stay"]
+documents = ["doc/kyosho/igw055-sp-rear-shock-stay", "doc/kyosho/igw055-product-page"]
+fits = [
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34102-mm02-inferno-gt2-ve-spop" },
+]

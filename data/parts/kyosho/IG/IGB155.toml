@@ -3,6 +3,10 @@ brand = "brand/kyosho"
 number = "IGB155"
 name = "Audi R8 LMS Body Set"
 name_ja = "Audi R8 LMS ボディセット"
+gtin = "4548565199693"
 category = "body"
+documents = ["doc/kyosho/igb155-bd01-im", "doc/kyosho/igb155-product-page"]
 depicts = { make = "Audi", model = "R8 LMS" }
-documents = ["doc/kyosho/igb155-bd01-im"]
+fits = [
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/30935-mm01-infernogt2veracespec-spop" },
+]

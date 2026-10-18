@@ -5,6 +5,12 @@ name = "Silicone OIL #300 (80cc)"
 fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34404-monster-tracker2-0-spop" },
   { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
+  { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/30637-mm02-spop" },
+  { kit = "kit/kyosho/plazma-mk3", type = "direct", source = "doc/kyosho/30639-mm01-rev1-spop" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30645-mm01-rev1-spop" },
 ]
 volume_ml = 80
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-300cst", match = "functional", notes = "Viscosity number #300 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

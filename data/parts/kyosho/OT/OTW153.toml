@@ -3,10 +3,14 @@ brand = "brand/kyosho"
 number = "OTW153"
 name = "Ti Coating Shock Shaft 3x37mm (OPTIMA MID)"
 pack_qty = 2
+gtin = "4548565462742"
+category = "shock"
+documents = ["doc/kyosho/otw153-product-page"]
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30643-mid-87wc-spop" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30645-mm01-rev1-spop" },
 ]
-category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 37

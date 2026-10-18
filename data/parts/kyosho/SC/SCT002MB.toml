@@ -3,8 +3,12 @@ brand = "brand/kyosho"
 number = "SCT002MB"
 name = "Rear Tire (Medium/with Inner/Scorpion 2014)"
 pack_qty = 2
+gtin = "4548565353859"
+category = "tire"
+documents = ["doc/kyosho/sct002mb-product-page"]
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/scorpion", type = "direct", source = "doc/kyosho/30613-mm07-2-scorpion-spop" },
+  { kit = "kit/kyosho/beetle", type = "direct", source = "doc/kyosho/30614-07-beetle-spop" },
 ]
-category = "tire"
 position = "rear"
