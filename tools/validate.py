@@ -455,6 +455,24 @@ def main():
                 errors.append(f"{path}: missing required field number (only parts of a brand with item_numbers = false go without)")
         elif kind == "part" and not re.match(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$", str(d.get("number", ""))):
             errors.append(f"{path}: odd part number {d.get('number')!r}")
+    # numbers: the part's other numbers (the maker's number of a part sold under a store number); one record per part
+    claimed = {}
+    for path, kind, d in docs:
+        if kind == "part" and d.get("number"):
+            claimed[(d.get("brand"), str(d["number"]).upper())] = d.get("id")
+    for path, kind, d in docs:
+        if kind != "part" or "numbers" not in d:
+            continue
+        nums = d["numbers"]
+        if not isinstance(nums, list) or not nums or not all(isinstance(n, str) and re.match(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$", n) for n in nums):
+            errors.append(f"{path}: numbers should be a non-empty list of part numbers")
+            continue
+        if len(set(nums)) != len(nums) or d.get("number") in nums:
+            errors.append(f"{path}: numbers repeats a number or the part's own number")
+        for n in nums:
+            other = claimed.setdefault((d.get("brand"), n.upper()), d.get("id"))
+            if other != d.get("id"):
+                errors.append(f"{path}: number {n} is also {other}: one record per part")
     counts = {}
     for _, kind, _ in docs:
         counts[kind] = counts.get(kind, 0) + 1
