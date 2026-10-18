@@ -386,6 +386,23 @@ def main():
             my = d.get("model_year")
             if my is not None and not (isinstance(my, int) and 1970 <= my <= this_year + 3):
                 errors.append(f"{path}: model_year {my!r} should be a year")
+            if "announced" in d:
+                an = str(d["announced"])
+                if not re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", an):
+                    errors.append(f"{path}: announced {an!r} should be YYYY, YYYY-MM or YYYY-MM-DD")
+                elif "released" in d and an > str(d["released"]):
+                    errors.append(f"{path}: announced {an} is after released {d['released']}")
+            has_seen = "seen_by" in d or "seen_by_source" in d
+            if has_seen:
+                sb, ss = d.get("seen_by"), d.get("seen_by_source")
+                if not (isinstance(sb, str) and re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", sb) and int(sb[:4]) <= this_year and (len(sb) < 7 or 1 <= int(sb[5:7]) <= 12)):
+                    errors.append(f"{path}: seen_by {sb!r} should be YYYY, YYYY-MM or YYYY-MM-DD (not after this year)")
+                if not (isinstance(ss, str) and re.fullmatch(r"https://web\.archive\.org/web/\d{14}/https?://.+", ss)):
+                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>")
+                elif isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
+                    errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
+                if "released" in d or "year" in d or "announced" in d:
+                    errors.append(f"{path}: seen_by is only for a release with no released, year or announced (a date a source states)")
         ve = d.get("depicts") if kind in ("release", "part") else None
         if ve is not None:
             if kind == "part" and d.get("category") != "body":

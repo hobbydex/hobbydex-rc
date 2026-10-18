@@ -227,6 +227,12 @@ owner allowed it) when Tamiya's own pages give no first-release day, with the
 model's TamiyaBase link in `links` (kind `fan-site`). The maker's own date
 wins when both exist.
 
+`announced` (optional, `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, at the precision the source gives): the day the maker announced the release (its news, press or new-product page), with that page among the release's documents. Precedence everywhere: `released` or `year` (a date a source states as the release), then `announced`, then `seen_by`. An announced date is not after `released` when both exist. The site shows an announced-only release as "announced Mar 2019" with no asterisk.
+
+`seen_by` (optional, `YYYY`, `YYYY-MM` or `YYYY-MM-DD`; the importer writes `YYYY-MM`) is an upper bound for a release no source dates: the first Internet Archive capture of a maker page or file that names exactly this release (its item number in the URL, or its own product page). The release was on sale no later than that month. It is not a release date: never set it on a release that has `released`, `year` or `announced`, and the site marks it as not the release date. The importer only sets it on releases with no date; when a real date (released, year or announced) is found later, `seen_by` and `seen_by_source` are removed in the same change, and the site shows the real date whenever one exists.
+
+`seen_by_source` (with `seen_by`, and only with it): the capture the month comes from, `https://web.archive.org/web/<14-digit timestamp>/<original URL>`. Set both or neither, never together with `released` or `year`.
+
 ## part
 
 A branded, numbered product. `number` is exactly as the manufacturer prints it,
