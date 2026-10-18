@@ -1,0 +1,14 @@
+id = "part/rw-racing/RW3200E-20"
+brand = "brand/rw-racing"
+number = "RW3200E-20"
+name = "Pinion 32DP for 5mm Shafts - 20T"
+category = "pinion"
+pitch_dp = 32
+bore_mm = 5
+links = [
+  { site = "beez2b", url = "https://www.beez2b.com/en/cat/15220-rw3200e-20-RW3200E-20" },
+]
+source = "doc/rw-racing/beez2b-listing"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
