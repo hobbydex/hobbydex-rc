@@ -6,7 +6,7 @@ that differ only in case. Also the art under art/ (see check_art). Exit code 1 o
 
 Run from the repo root: python3 -I tools/validate.py
 """
-import datetime, os, re, sys, tomllib, unicodedata
+import datetime, os, re, sys, tomllib, unicodedata, urllib.parse
 import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layout import ART_KINDS, DIRS, art_path, path_for
@@ -262,6 +262,9 @@ def main():
                 if r not in d:
                     errors.append(f"{path}: missing required field {r}")
             docs.append((path, kind, d))
+    # hosts of brands whose own site serves http only (website = "http://..."): their maker pages may be linked over http
+    http_hosts = {urllib.parse.urlsplit(d["website"]).hostname for _, k, d in docs
+                  if k == "brand" and str(d.get("website", "")).startswith("http://")}
     # stable ids: an id is never reused; a changed id stays as former_ids on its successor or in retired.toml
     claimed = {}
     for path, kind, d in docs:
@@ -351,8 +354,10 @@ def main():
                 if f in d and not str(d[f]).startswith(("https://", "http://")):
                     errors.append(f"{path}: {f} must be a web link, got {d[f]!r}")
         for l in d.get("links", []) if kind in ("part", "release", "kit") else []:
-            if not (isinstance(l, dict) and l.get("site") and str(l.get("url", "")).startswith("https://")):
-                errors.append(f"{path}: link {l!r} needs a site and an https url")
+            u = str(l.get("url", "")) if isinstance(l, dict) else ""
+            if not (isinstance(l, dict) and l.get("site") and (u.startswith("https://") or
+                    (u.startswith("http://") and urllib.parse.urlsplit(u).hostname in http_hosts))):
+                errors.append(f"{path}: link {l!r} needs a site and an https url (http only for a maker site that has no https)")
             elif "kind" in l and l["kind"] != "fan-site":
                 errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site']")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
