@@ -48,6 +48,8 @@ VEHICLE_MAKES = {
 }
 SURFACES = {"carpet", "astro", "clay", "dirt", "asphalt", "high-grip"}   # the track surface a race kit is built for
 
+DOUBTABLE = {"release": ("released", "year", "announced"), "brand": ("launched", "ended")}   # dates that may carry <field>_doubt
+
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
     "release.kind": {"kit", "rtr", "arr"},
@@ -344,6 +346,15 @@ def main():
                     errors.append(f"{path}: fits[{i}].releases -> {r} does not exist")
                 elif release_kit[r] != f.get("kit"):
                     errors.append(f"{path}: fits[{i}].releases -> {r} is a release of {release_kit[r]}, not of {f.get('kit')}")
+        # a date we keep but doubt (docs/schema.md "Dates"): <field>_doubt says why, next to the date it doubts
+        for k in [k for k in d if k.endswith("_doubt")]:
+            base = k[:-len("_doubt")]
+            if base not in DOUBTABLE.get(kind, ()):
+                errors.append(f"{path}: {k}: only {', '.join(f'{f}_doubt' for f in DOUBTABLE.get(kind, ())) or 'no doubt field'} on a {kind}")
+            elif base not in d:
+                errors.append(f"{path}: {k} needs {base}")
+            elif not (isinstance(d[k], str) and d[k].strip()):
+                errors.append(f"{path}: {k} must say why the date is in doubt")
         if kind in ("part", "release") and d.get("brand") in gone_brands and d.get("status") != "discontinued":
             errors.append(f"{path}: {d['brand']} is gone, so status must be discontinued")
         if kind in ("part", "release") and "gtin" in d:

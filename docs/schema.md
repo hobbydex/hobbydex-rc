@@ -71,6 +71,8 @@ ended_source = "https://..."             # required with ended
 notes = "..."
 ```
 
+A date we keep but doubt gets `<field>_doubt` next to it, a short reason (`launched_doubt = "uncited on Wikipedia"`, `released_doubt = "year from the catalogue edition"`): for `launched` and `ended` on a brand, `released`, `year` and `announced` on a release. The site marks such a date with "?" and shows the reason. Not for `seen_by`, which is a bound, not a claim.
+
 `launched` and `ended`: when the brand started and when it died, as ISO date strings at the precision the source gives ("2016", "2016-06", "2016-06-01"), each with `<field>_source` (the URL of the page, or the `doc/` id of the document, that states it). Never guessed from the oldest or newest product. `ended` goes with status `gone` and is required for it. Every release and part of a gone brand has status `discontinued`.
 
 `owner`: the company that owns the brand, a `company/` id, set only when a
