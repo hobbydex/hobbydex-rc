@@ -35,7 +35,7 @@ REFS = {  # field -> expected id prefix
     "publisher": "brand/", "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
     "owner": "company/", "parent": "company/",
 }
-LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": ""}   # requires: kit or release ids, checked above
+LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": "", "kits": "kit/", "parts": "part/"}   # requires: kit or release ids, checked above
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
 VEHICLE_MAKES = {
     "Abarth", "Acura", "Alfa Romeo", "Alpine", "Aston Martin", "Audi", "BMW", "Bentley", "Bugatti", "Buggyra", "Buick", "Cadillac",
@@ -67,7 +67,7 @@ ENUMS = {
     "contains.role": {"kit", "option", "listed"},
     # generic items a release needs from outside the box (docs/schema.md "release", needs); a part is named by part instead
     "needs.item": {"radio", "receiver", "servo", "esc", "motor", "engine", "battery", "charger", "pinion", "tyres", "wheels", "body", "paint", "glue", "fuel", "glow-starter", "tools"},
-    "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "news", "owner_report"},
+    "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "news", "owner_report", "video"},
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
@@ -386,6 +386,21 @@ def main():
             ok = len(digits) in (8, 12, 13, 14) and (10 - sum(x * (3 if i % 2 == 0 else 1) for i, x in enumerate(reversed(digits[:-1]))) % 10) % 10 == digits[-1]
             if not ok:
                 errors.append(f"{path}: gtin {g!r} is not a valid GTIN-8/12/13/14 (length or check digit)")
+        if kind == "doc" and d.get("kind") == "video":
+            # a maker's own YouTube video (docs/schema.md "Videos")
+            vid = str(d.get("id", "")).rsplit("/", 1)[-1].removeprefix("youtube-")
+            if not re.fullmatch(r"[A-Za-z0-9_-]{11}", vid) or not str(d.get("id", "")).rsplit("/", 1)[-1].startswith("youtube-"):
+                errors.append(f"{path}: a video's id should be doc/<brand>/youtube-<11-character video id>")
+            elif d.get("url") != f"https://www.youtube.com/watch?v={vid}":
+                errors.append(f"{path}: url should be https://www.youtube.com/watch?v={vid}")
+            if not d.get("publisher") or not d.get("channel"):
+                errors.append(f"{path}: a video needs its publisher (the maker) and channel")
+            if not any(d.get(k) for k in ("releases", "kits", "parts")):
+                errors.append(f"{path}: a video should show a release, kit or part (releases, kits or parts)")
+            if "date" in d and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(d["date"])):
+                errors.append(f"{path}: date {d['date']!r} should be YYYY-MM-DD")
+            if "duration_s" in d and not (isinstance(d["duration_s"], int) and d["duration_s"] > 0):
+                errors.append(f"{path}: duration_s should be a whole number of seconds")
         if kind == "doc":
             for f in ("url", "page"):
                 if f in d and not str(d[f]).startswith(("https://", "http://")):
