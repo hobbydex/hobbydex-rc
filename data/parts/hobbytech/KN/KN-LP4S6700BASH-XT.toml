@@ -1,0 +1,18 @@
+id = "part/hobbytech/KN-LP4S6700BASH-XT"
+brand = "brand/hobbytech"
+number = "KN-LP4S6700BASH-XT"
+name = "Konect Lipo SOFT CASE 6700mah 14.8V 60C 4S1P 99.16Wh Bash (XT90)"
+source = "doc/hobbytech/parts-pages"
+links = [
+  { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-ep-xtrem-pieces-detachees/" },
+]
+applies_to = ["NXT EP XTREM"]
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 6700
+c_rating = 60
+connector = "XT90"
+category = "battery"

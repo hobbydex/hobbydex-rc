@@ -1,0 +1,16 @@
+id = "part/hobbytech/KN-LP2S600"
+brand = "brand/hobbytech"
+number = "KN-LP2S600"
+name = "Konect batterie Li-Po 7.4V 600mAh (CRX18)"
+source = "doc/hobbytech/parts-pages"
+links = [
+  { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-crx18-4wd-fc-piece-detachees/" },
+]
+applies_to = ["CRX18 4WD FC", "CRX18 6WD FC", "CRX18"]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 600
+category = "battery"
