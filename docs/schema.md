@@ -144,6 +144,8 @@ drive = "2wd"        # 2wd | 4wd | 6wd | 8wd | fwd | tracks
 power = "electric"   # electric | nitro | petrol
 ```
 
+`placeholder = true` (optional, a kit only): a group for releases whose chassis no source names yet, one per number range (`kit/tamiya/unknown-58`, "Tamiya 58xxx: chassis not yet known"). It holds no parts or fits of its own, and the site leaves it out of platform lists and counts: a release on it shows "Chassis: not yet known" instead of a platform. Left out for every real kit.
+
 Optional on a kit: `rebrand_of`, the kits this one is the same car as under
 another name, and `same_platform_as`, kits that share a chassis platform without
 being the same car. Each entry names the kit, `parts` (interchangeable |
