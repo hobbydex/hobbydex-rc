@@ -172,6 +172,12 @@ announced | released | discontinued.
 
 `color` (optional) is the colour the release is sold in, in plain words from the same palette as a part's `color` ("red"; two or three colours as "blue/black", "green/black/white"), read from the name's colour clause by link_release_colours.py; left out when the name names none.
 
+`scale` (optional) overrides the kit's scale for this release, in the kit's "1/10" format. Set only where the release's scale differs from its kit's and a source states it (Tamiya's CW-01 Lunch Box is 1/12 while the 1/10 Montero Wheelie and Unimog sit on the same chassis); the release's own product page or manual title is the source, and the release notes say which. Left out when it matches the kit.
+
+```toml
+scale = "1/12"
+```
+
 `series` (optional): the maker's car line that runs across chassis and editions, as a string ("Lunch Box": the CW-01 and SW-01 Lunch Box, its Evo. and Red, Gold and Blue editions). Set only when the maker's own release names show the same car (the series name appears in the names) on more than one platform, never for a generic word. Releases of one brand with the same `series` form the group; the site links them from each release ("Lunch Box series") and from the platform page.
 
 ```toml
