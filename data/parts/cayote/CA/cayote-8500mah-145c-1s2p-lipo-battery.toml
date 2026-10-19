@@ -1,0 +1,17 @@
+id = "part/cayote/cayote-8500mah-145c-1s2p-lipo-battery"
+brand = "brand/cayote"
+name = "CAYOTE 8500mAh 145C 1S2P LiPo Battery"
+category = "battery"
+c_rating = 145
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-8500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+links = [
+  { site = "cayote.com", url = "https://cayote.com/battery/" },
+]
+numbers = ["CYE851S145"]
+dimensions_mm = [92.8, 46.5, 18.3]
+weight_g = 150
+chemistry = "lipo"
+cells = 1
+capacity_mah = 8500
