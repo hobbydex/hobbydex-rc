@@ -245,9 +245,20 @@ supersedes = "release/xray/xb8-2022"
 `released`: the release date as precise as a source states it, `YYYY-MM-DD`
 or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
 from another source in that month is kept). It must agree with `year`. Never
-a document's date (a manual's print date, a parts list's revision); the
-exception is a maker's `news` post that announces the item as new or
-available (see doc). For an announced release it is the planned date.
+a document's date (a parts list's revision); the exceptions are a maker's
+`news` post that announces the item as new or available (see doc), and the
+month a release's own owner's manual was first printed or created (below). For
+an announced release it is the planned date.
+
+`released` from a manual is always `YYYY-MM`, with `released_doubt` naming the
+code it comes from, e.g. `released_doubt = "month Traxxas first printed the
+owner's manual (code 230719 101076-4-OM-EN-R00); printing can precede the
+announcement and the release"`. Traxxas owner's manuals print a code
+`YYMMDD <doc>-R00` (R00 is the first print; a later revision is a reprint and is
+never used). Horizon brands' manuals print `Created MM/YY`. A print can precede
+the announcement, so with an `announced` date later than the print month the
+print month goes in `notes` instead, and `released` stays unset. The print month
+must not be after `seen_by`.
 
 `released_source`: set only when the date comes from a fan site rather than
 the maker; `"TamiyaBase"` for a Tamiya release dated from TamiyaBase (its
