@@ -8,10 +8,15 @@ status = "discontinued"
 depicts = { make = "Lexus", model = "GS 400" }
 category = "drift"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/58432-product-page-ja", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58432-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58432", kind = "fan-site" },
 ]
 released = "2009-05-26"
 year = 2009
 released_source = "TamiyaBase"
+contains = [
+  { part = "part/tamiya/19400928", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19400929", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19400930", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]

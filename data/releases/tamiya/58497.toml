@@ -6,7 +6,7 @@ name = "Racing Truck Vajra"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name and chassis from the manual's cover; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/58497-manual", "doc/tamiya/58497-product-page-ja", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58497-manual", "doc/tamiya/58497-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts"]
 contains = [
   { part = "part/tamiya/00810", role = "kit", source = "doc/tamiya/58497-manual" },
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/58497-manual" },
@@ -139,6 +139,8 @@ contains = [
   { part = "part/tamiya/74031", role = "listed", source = "doc/tamiya/58497-manual", notes = "Named in the manual as a tool to use, not in the box (page 8)" },
   { part = "part/tamiya/86005", role = "listed", source = "doc/tamiya/58497-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 21)" },
   { part = "part/tamiya/86031", role = "listed", source = "doc/tamiya/58497-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 21)" },
+  { part = "part/tamiya/19335641", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804843", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58497", kind = "fan-site" },

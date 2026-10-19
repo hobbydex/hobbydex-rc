@@ -6,7 +6,7 @@ name = "F201 Chassis Kit"
 kind = "kit"
 status = "released"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58288-manual"]
+documents = ["doc/tamiya/58288-manual", "doc/tamiya/tamico-dealer-parts"]
 contains = [
   { part = "part/tamiya/10005863", role = "kit", source = "doc/tamiya/58288-manual" },
   { part = "part/tamiya/10225097", role = "kit", source = "doc/tamiya/58288-manual" },
@@ -89,6 +89,7 @@ contains = [
   { part = "part/tamiya/53126", role = "kit", source = "doc/tamiya/58288-manual", qty = 2, step = "MG1" },
   { part = "part/tamiya/53255", role = "kit", source = "doc/tamiya/58288-manual" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/58288-manual" },
+  { part = "part/tamiya/19805886", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58288", kind = "fan-site" },
