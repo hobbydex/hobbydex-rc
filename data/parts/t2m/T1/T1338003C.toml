@@ -1,0 +1,13 @@
+id = "part/t2m/T1338003C"
+brand = "brand/t2m"
+number = "T1338003C"
+name = "Accu LiPo car 3800mAH 3S 35C"
+source = "doc/t2m/t2m-shop"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 3800
+c_rating = 35
+category = "battery"

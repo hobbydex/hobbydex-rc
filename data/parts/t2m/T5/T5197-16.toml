@@ -1,0 +1,13 @@
+id = "part/t2m/T5197-16"
+brand = "brand/t2m"
+number = "T5197-16"
+name = "Batterie LiPo 3,7v 1600mAh"
+source = "doc/t2m/t2m-shop"
+notes = "The store prints the item code as T5197/16."
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 1600
+category = "battery"
