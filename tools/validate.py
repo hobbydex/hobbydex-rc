@@ -157,11 +157,11 @@ def check_makes(docs, errors):
     for name in sorted(VEHICLE_MAKES - seen):
         errors.append(f"data/makes: no make file for {name!r}")
 
-def check_art(ids, errors):
-    """art/<kits|releases>/<brand>/<key>.svg: our own outline of a kit or release, drawn by the site in its
-    colours. One line: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24"> with one or more
-    <path d="..."/> and nothing else (no fill, style, transform, class or title), at most ART_MAX bytes,
-    named after a kit or release that exists. Returns the number of art files."""
+def check_art(ids, errors, body_parts=frozenset()):
+    """art/<kits|releases|parts>/<brand>/<key>.svg: our own outline of a kit, release or body part (category
+    body), drawn by the site in its colours. One line: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24">
+    with one or more <path d="..."/> and nothing else (no fill, style, transform, class or title), at most
+    ART_MAX bytes, named after a kit, release or body part that exists. Returns the number of art files."""
     lower = {i.lower(): i for i in ids if isinstance(i, str)}
     dirs = {DIRS[k]: k for k in ART_KINDS}
     n = 0
@@ -170,7 +170,7 @@ def check_art(ids, errors):
             path = os.path.join(dirpath, fn)
             parts = os.path.relpath(path, ART_ROOT).split(os.sep)
             if len(parts) != 3 or parts[0] not in dirs or not fn.endswith(".svg"):
-                errors.append(f"{path}: art goes in {ART_ROOT}/kits/<brand>/<slug>.svg or {ART_ROOT}/releases/<brand>/<key>.svg")
+                errors.append(f"{path}: art goes in {ART_ROOT}/kits/<brand>/<slug>.svg, {ART_ROOT}/releases/<brand>/<key>.svg or {ART_ROOT}/parts/<brand>/<number>.svg")
                 continue
             n += 1
             eid = f"{dirs[parts[0]]}/{parts[1]}/{fn[:-4]}"
@@ -179,6 +179,8 @@ def check_art(ids, errors):
             if eid not in ids:
                 hint = f" (the id is {lower[eid.lower()]}: names match the id exactly)" if eid.lower() in lower else ""
                 errors.append(f"{path}: orphan art, no {eid}{hint}")
+            elif eid.startswith("part/") and eid not in body_parts:
+                errors.append(f"{path}: art is for body parts only, and {eid} is not of category body")
             elif parts[1] != parts[1].lower():
                 errors.append(f"{path}: brand directory must be lowercase")
             size = os.path.getsize(path)
@@ -591,7 +593,8 @@ def main():
                 break
             seen.append(cur)
             cur = supersedes[cur]
-    counts["art"] = check_art(ids, errors)
+    body_parts = {d.get("id") for _, kind, d in docs if kind == "part" and d.get("category") == "body"}
+    counts["art"] = check_art(ids, errors, body_parts)
     check_makes(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))

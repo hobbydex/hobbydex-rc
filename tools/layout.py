@@ -14,6 +14,11 @@ Kits and releases may have art: our own traced outline, one SVG per id.
     kit/tamiya/blitzer-beetle -> art/kits/tamiya/blitzer-beetle.svg
     release/tamiya/58502      -> art/releases/tamiya/58502.svg
 
+A part of category body may too (no other part may): its file keeps the
+number as written, with no prefix directory.
+
+    part/xray/362250          -> art/parts/xray/362250.svg
+
 Parts get a prefix directory (the first PART_PREFIX characters of the number,
 upper-cased) so no directory holds more than a few hundred files. Upper-cased
 so that numbers starting GE and Ge share one directory: a checkout on a
@@ -27,7 +32,7 @@ DIRS = {"brand": "brands", "kit": "kits", "release": "releases", "part": "parts"
         "spec": "specs", "doc": "documents", "shop": "shops", "category": "categories",
         "standard": "standards", "company": "companies", "make": "makes"}
 PART_PREFIX = 2
-ART_KINDS = ("kit", "release")
+ART_KINDS = ("kit", "release", "part")   # a part only when its category is body (validate.py)
 
 def path_for(entity_id, root="data"):
     kind, _, rest = entity_id.partition("/")
@@ -41,7 +46,7 @@ def path_for(entity_id, root="data"):
     return f"{root}/{DIRS[kind]}/{rest}.toml"
 
 def art_path(entity_id, root="art"):
-    """The art file of a kit or release id (whether or not it exists)."""
+    """The art file of a kit, release or body part id (whether or not it exists)."""
     kind, _, rest = entity_id.partition("/")
     if kind not in ART_KINDS:
         raise ValueError(f"no art for entity kind in id {entity_id!r}")

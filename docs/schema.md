@@ -956,7 +956,12 @@ from the maker's photos, drawn by us.
 ```
 art/kits/<brand>/<slug>.svg         for kit/<brand>/<slug>
 art/releases/<brand>/<key>.svg      for release/<brand>/<key>
+art/parts/<brand>/<number>.svg      for part/<brand>/<number> of category body
 ```
+
+A body part (category `body`, a shell or a painted body) may have art of its
+own, the car it shows as an outline; no other part may. The file name is the
+id's last part, as for kits and releases.
 
 The file name is the id's last part exactly (same case). Each file is one line:
 
@@ -972,6 +977,7 @@ The export gives such a kit or release `art`: the path data of its file
 (the `d` attributes joined with a space), to be drawn in a `0 0 48 24`
 viewBox. The site draws a release with its own art, else the kit type's icon; it
 never borrows the kit's or another release's, which may show another car.
+A body part with art shows it on its part page.
 Releases of one body (colour, kit/RTR and equipment variants) each carry
 the same file.
 
