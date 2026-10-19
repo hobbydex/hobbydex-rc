@@ -3,11 +3,11 @@ brand = "brand/gpm"
 number = "ER1337TS-BK"
 name = "GPM E-Revo Hardened Steel Spiral Crown & Pinion Differential Gears"
 fits = [
-  { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/gpm/store" },
-  { kit = "kit/traxxas/revo", type = "direct", source = "doc/gpm/store" },
-  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/gpm/store" },
-  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/gpm/store" },
-  { kit = "kit/traxxas/summit", type = "direct", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/summit", type = "replaces", source = "doc/gpm/store" },
 ]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-er1337ts-bk-gpm-e-revo-hardened-steel-spiral-crown-amp-pinion-differential-gears/" },
