@@ -301,6 +301,11 @@ def main():
     for path, kind, d in docs:
         if kind == "kit" and "placeholder" in d and not isinstance(d["placeholder"], bool):
             errors.append(f"{path}: placeholder should be true (a group for releases whose chassis no source names yet)")
+        if kind == "category" and "terms" in d:   # glossary on the category page (docs/schema.md "category")
+            ts = d["terms"]
+            if not isinstance(ts, list) or not ts or not all(isinstance(t, dict) and set(t) == {"term", "text"} and all(
+                    isinstance(t[k], str) and t[k].strip() == t[k] and t[k] for k in ("term", "text")) for t in ts):
+                errors.append(f"{path}: terms should be a list of {{ term, text }} strings")
         if kind == "part" and any(isinstance(f, dict) and f.get("kit") in placeholder_kits for f in d.get("fits", []) or []):
             errors.append(f"{path}: fits a placeholder kit; a placeholder holds no parts or fits of its own")
         def check_ref(field, value, where):

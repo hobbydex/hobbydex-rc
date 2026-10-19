@@ -879,6 +879,10 @@ its linked spec (`from = "part" | "spec"`), with an optional `unit` and
 keeps a field out of the parts table and shows it only when parts are
 compared side by side.
 
+`terms` (optional) is a glossary for the category page: a list of `{ term = "...", text = "..." }`
+pairs, one or two plain sentences each, shown under the description. Facts only, no brand names
+and no claims the text cannot back. tools/validate.py checks the shape.
+
 ```toml
 id = "category/servo"
 name = "Servos"
