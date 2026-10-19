@@ -10,7 +10,10 @@ speed_s = 0.054
 dimensions_mm = [40, 20, 37]
 weight_g = 57.6
 material = "aluminium"
-notes = "Other voltages (MKS chart): 6.0V 7.8 kg-cm, 0.075 s/60deg; 7.4V 10.4 kg-cm, 0.061 s/60deg. Aluminium middle case (MKS chart: Mid-Alu)."
+motor = "coreless"
+voltage_range = "6.0V - 8.4V"
+gear_material = "metal"
+notes = "Other voltages (MKS chart): 6.0V 7.8 kg-cm, 0.075 s/60deg; 7.4V 10.4 kg-cm, 0.061 s/60deg. Aluminium middle case (MKS chart: Mid-Alu). Product page adds: 6.8V 9.6 kg-cm, 0.066 s/60deg. MKS product page: 2 ball bearings, dead band 0.0008ms, frequency 1520 us / 333 Hz. MKS product page: \"Waterproof Bearing / Dustproof, Waterproof\"; no IP rating given."
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", source = "doc/mks/servo-chart-c2203", notes = "Size class from MKS's chart group; MKS states no spline; check the mounting holes" },
 ]

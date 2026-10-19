@@ -10,7 +10,10 @@ speed_s = 0.071
 dimensions_mm = [27, 12.1, 27.7]
 weight_g = 18.1
 material = "plastic"
-notes = "Other voltages (MKS chart): 4.8V 4.88 kg-cm, 0.121 s/60deg; 6.0V 6.10 kg-cm, 0.097 s/60deg; 7.4V 7.50 kg-cm, 0.079 s/60deg."
+motor = "coreless"
+voltage_range = "3.7V - 8.4V"
+gear_material = "metal"
+notes = "Other voltages (MKS chart): 4.8V 4.88 kg-cm, 0.121 s/60deg; 6.0V 6.10 kg-cm, 0.097 s/60deg; 7.4V 7.50 kg-cm, 0.079 s/60deg. Product page adds: 3.7V 3.75 kg-cm, 0.157 s/60deg. MKS product page: 2 ball bearings, dead band 0.001 ms, frequency 1520 us / 333 Hz. MKS product page: programmable."
 equivalent_to = [
   { spec = "spec/servo/micro", match = "functional", source = "doc/mks/servo-chart-c2203", notes = "Size class from MKS's chart group; MKS states no spline; check the mounting holes" },
 ]

@@ -11,7 +11,9 @@ dimensions_mm = [40, 20, 38.8]
 weight_g = 71.4
 material = "aluminium"
 motor = "brushless"
-notes = "Other voltages (MKS chart): 6.0V 18.0 kg-cm, 0.082 s/60deg; 7.4V 22.0 kg-cm, 0.066 s/60deg."
+voltage_range = "6.0V - 8.4V"
+gear_material = "metal"
+notes = "Other voltages (MKS chart): 6.0V 18.0 kg-cm, 0.082 s/60deg; 7.4V 22.0 kg-cm, 0.066 s/60deg. MKS product page: 2 ball bearings, dead band 0.0008 ms, frequency 1520 us / 333 Hz. MKS product page: chrome-titanium alloy gear."
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", source = "doc/mks/servo-chart-c2203", notes = "Size class from MKS's chart group; MKS states no spline; check the mounting holes" },
 ]
