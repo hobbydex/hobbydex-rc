@@ -7,7 +7,7 @@ year = 2016
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/58636-manual", "doc/tamiya/58636-product-page", "doc/tamiya/58636-product-page-ja", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58636-manual", "doc/tamiya/58636-product-page", "doc/tamiya/58636-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts"]
 contains = [
   { part = "part/tamiya/10008746", role = "kit", source = "doc/tamiya/58636-manual", qty = 1 },
   { part = "part/tamiya/10115527", role = "kit", source = "doc/tamiya/58636-manual" },
@@ -109,6 +109,7 @@ contains = [
   { part = "part/tamiya/54250", role = "kit", source = "doc/tamiya/58636-manual", qty = 2, step = "BC19" },
   { part = "part/tamiya/84293", role = "kit", source = "doc/tamiya/58636-manual", step = "BE12" },
   { part = "part/tamiya/94392", role = "kit", source = "doc/tamiya/58636-manual", qty = 2, step = "BC9" },
+  { part = "part/tamiya/10008909", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58636", kind = "fan-site" },

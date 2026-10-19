@@ -6,10 +6,14 @@ name = "TRF415MSXX Chassis Kit"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2007-02-17, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/49419-product-page-ja", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/49419-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/49419", kind = "fan-site" },
 ]
 released = "2007-02-17"
 year = 2007
 released_source = "TamiyaBase"
+contains = [
+  { part = "part/tamiya/13454480", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/13454481", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]

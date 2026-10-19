@@ -9,7 +9,11 @@ status = "released"
 depicts = { make = "Toyota", model = "Hilux" }
 released = "2007-11-24"
 notes = "Release day in Japan from Tamiya's Japanese product page; Tamiya classes it as a regular product, made continuously"
-documents = ["doc/tamiya/58397-product-page", "doc/tamiya/58397-product-page-ja", "doc/tamiya/newitems-month", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58397-product-page", "doc/tamiya/58397-product-page-ja", "doc/tamiya/newitems-month", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58397", kind = "fan-site" },
+]
+contains = [
+  { part = "part/tamiya/19335487", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19335488", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
