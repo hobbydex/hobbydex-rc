@@ -1,0 +1,15 @@
+id = "part/t2m/T1350003C"
+brand = "brand/t2m"
+number = "T1350003C"
+name = "Accu LiPo 3S 11.1V 5000mAh + adap."
+source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-accu-lipo-3s-11-1v-5000mah-adap-T1350003C" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+category = "battery"

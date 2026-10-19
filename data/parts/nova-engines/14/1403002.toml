@@ -1,0 +1,16 @@
+id = "part/nova-engines/1403002"
+brand = "brand/nova-engines"
+number = "1403002"
+name = "Crankshaft .21 On Road"
+category = "engine-fuel"
+category_source = "curated"
+applies_to = "Motore Nova r9, Motore Nova R5, Motore Nova G5"
+related = [
+  { part = "part/nova-engines/R9", relation = "fits" },
+  { part = "part/nova-engines/R5", relation = "fits" },
+  { part = "part/nova-engines/G5", relation = "fits" },
+]
+links = [
+  { site = "Nova Engines", url = "https://nova-engines.com/ricambir9/" },
+]
+documents = ["doc/nova-engines/ricambir9-parts-list", "doc/nova-engines/ricambir5-parts-list", "doc/nova-engines/ricambig5-parts-list"]

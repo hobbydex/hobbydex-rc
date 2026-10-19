@@ -1,0 +1,15 @@
+id = "part/t2m/T1006300"
+brand = "brand/t2m"
+number = "T1006300"
+name = "Accu Ni-MH 3000 mAH 7.2V"
+source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-accu-electrique-t2m-accu-ni-mh-3000-mah-7-2v-T1006300" },
+]
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 3000
+category = "battery"
