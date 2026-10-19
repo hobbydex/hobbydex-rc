@@ -172,6 +172,12 @@ announced | released | discontinued.
 
 `color` (optional) is the colour the release is sold in, in plain words from the same palette as a part's `color` ("red"; two or three colours as "blue/black", "green/black/white"), read from the name's colour clause by link_release_colours.py; left out when the name names none.
 
+`series` (optional): the maker's car line that runs across chassis and editions, as a string ("Lunch Box": the CW-01 and SW-01 Lunch Box, its Evo. and Red, Gold and Blue editions). Set only when the maker's own release names show the same car (the series name appears in the names) on more than one platform, never for a generic word. Releases of one brand with the same `series` form the group; the site links them from each release ("Lunch Box series") and from the platform page.
+
+```toml
+series = "Lunch Box"
+```
+
 `category` (optional) overrides the kit's type for this release, where a car on a shared chassis is another type than the chassis kit: Tamiya's race trucks are releases of the TT-01 Type-E kit (a touring car) with category "race-truck".
 
 `year` is the calendar year the release came out, only from a dated source. `model_year` is the year in the maker's edition name when the maker names editions by model year (XRAY's XB2'26 is on sale from late 2025): it is not a release year, and a release can be on sale before its model year.
