@@ -157,6 +157,12 @@ rebrand_of = [
 ]
 ```
 
+A model the maker publishes with its own manual and parts list is its own
+platform: its own kit file, linked to the platform it follows with
+`same_platform_as` and, on the newer release, `supersedes`. The same chassis
+in another box (RTR or kit, colour, limited edition, team kit or factory-lite
+trim) is a release of that platform, not a kit of its own.
+
 ## release
 
 One sold product: a yearly edition, a Carpet or Dirt version, an RTR, a
