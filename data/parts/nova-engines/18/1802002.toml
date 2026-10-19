@@ -1,0 +1,16 @@
+id = "part/nova-engines/1802002"
+brand = "brand/nova-engines"
+number = "1802002"
+name = "ON ROAD SPARE PARTS"
+category = "engine-fuel"
+category_source = "curated"
+applies_to = "Motore Nova r9, Motore Nova r9R, Motore Nova R5"
+related = [
+  { part = "part/nova-engines/R9", relation = "fits" },
+  { part = "part/nova-engines/R9R", relation = "fits" },
+  { part = "part/nova-engines/R5", relation = "fits" },
+]
+links = [
+  { site = "Nova Engines", url = "https://nova-engines.com/spare-parts-carb-trp-adj-on/" },
+]
+documents = ["doc/nova-engines/spare-parts-carb-trp-adj-on-parts-list"]
