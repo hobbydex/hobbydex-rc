@@ -7,7 +7,7 @@ kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 color = "pink"
-documents = ["doc/tamiya/84387-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02b-manual"]
+documents = ["doc/tamiya/84387-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02b-manual", "doc/tamiya/tamico-dealer-parts"]
 contains = [
   { part = "part/tamiya/10555015", role = "kit", source = "doc/tamiya/tt02b-manual", qty = 10, step = "BB2" },
   { part = "part/tamiya/11053619", role = "kit", source = "doc/tamiya/tt02b-manual" },
@@ -69,6 +69,8 @@ contains = [
   { part = "part/tamiya/84175", role = "kit", source = "doc/tamiya/tt02b-manual", qty = 5, step = "MB7" },
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/tt02b-manual", qty = 10, step = "MB15" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/tt02b-manual" },
+  { part = "part/tamiya/19224036", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19224037", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/84387", kind = "fan-site" },

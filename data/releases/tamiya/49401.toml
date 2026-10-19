@@ -6,10 +6,21 @@ name = "TRF501X"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2006-12-02, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/49401-product-page-ja", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/49401-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/49401", kind = "fan-site" },
 ]
 released = "2006-12-02"
 year = 2006
 released_source = "TamiyaBase"
+contains = [
+  { part = "part/tamiya/19804288", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804291", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804292", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804294", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804295", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804298", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804299", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804305", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804313", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]

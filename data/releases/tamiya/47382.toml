@@ -6,7 +6,7 @@ name = "TT-02RR Chassis Kit"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2018-12-15, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/47382-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02rr-manual"]
+documents = ["doc/tamiya/47382-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02rr-manual", "doc/tamiya/tamico-dealer-parts"]
 contains = [
   { part = "part/tamiya/14305026", role = "kit", source = "doc/tamiya/tt02rr-manual" },
   { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/tt02rr-manual", step = "MA25" },
@@ -69,6 +69,7 @@ contains = [
   { part = "part/tamiya/54502", role = "kit", source = "doc/tamiya/tt02rr-manual", qty = 2, step = "MA21" },
   { part = "part/tamiya/54558", role = "kit", source = "doc/tamiya/tt02rr-manual", step = "MA28" },
   { part = "part/tamiya/54733", role = "kit", source = "doc/tamiya/tt02rr-manual", step = "MB18, MB19" },
+  { part = "part/tamiya/10444412", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/47382", kind = "fan-site" },

@@ -7,7 +7,7 @@ year = 2016
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/58633-manual", "doc/tamiya/58633-product-page", "doc/tamiya/58633-product-page-ja", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58633-manual", "doc/tamiya/58633-product-page", "doc/tamiya/58633-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts"]
 contains = [
   { part = "part/tamiya/10005075", role = "kit", source = "doc/tamiya/58633-manual" },
   { part = "part/tamiya/10005162", role = "kit", source = "doc/tamiya/58633-manual" },
@@ -118,6 +118,8 @@ contains = [
   { part = "part/tamiya/81715", role = "listed", source = "doc/tamiya/58633-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 19, 20)" },
   { part = "part/tamiya/85006", role = "listed", source = "doc/tamiya/58633-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 19)" },
   { part = "part/tamiya/85014", role = "listed", source = "doc/tamiya/58633-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 19, 21)" },
+  { part = "part/tamiya/19803204", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19804979", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58633", kind = "fan-site" },
