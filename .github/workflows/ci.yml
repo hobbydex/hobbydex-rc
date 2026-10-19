@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
       - name: Only known file types may be tracked
         run: |
-          bad=$(git ls-files | grep -vE '^(data/.+\.toml|art/(kits|releases)/[^/]+/[^/]+\.svg|data/LICENSE|docs/[^/]+\.md|tools/[^/]+\.py|\.github/workflows/[^/]+\.yml|\.github/dependabot\.yml|README\.md|CONTRIBUTING\.md|LICENSE|\.gitignore)$' || true)
+          bad=$(git ls-files | grep -vE '^(data/.+\.toml|art/(kits|releases|parts)/[^/]+/[^/]+\.svg|data/LICENSE|docs/[^/]+\.md|tools/[^/]+\.py|\.github/workflows/[^/]+\.yml|\.github/dependabot\.yml|README\.md|CONTRIBUTING\.md|LICENSE|\.gitignore)$' || true)
           if [ -n "$bad" ]; then
             echo "files of a type this repository does not accept:" >&2
             echo "$bad" >&2
