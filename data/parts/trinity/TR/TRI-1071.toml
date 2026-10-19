@@ -1,0 +1,18 @@
+id = "part/trinity/TRI-1071"
+brand = "brand/trinity"
+number = "TRI-1071"
+name = "Trinity 7.4V 4500mAh 2S 130C Shorty LiPo Battery: 5mm Bullets"
+category = "battery"
+category_source = "curated"
+c_rating = 130
+case = "shorty"
+links = [
+  { site = "Trinity", url = "https://www.teamtrinity.com/product/trinity-21.5t-stock-racer-bundle/TRI-1180.html" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4500
+connector = "5mm bullet"
