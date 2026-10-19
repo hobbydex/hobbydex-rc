@@ -1,0 +1,17 @@
+id = "part/hobbytech/KN-LP2S5200"
+brand = "brand/hobbytech"
+number = "KN-LP2S5200"
+name = "Konect Lipo 5200mah 7.4V 50C 2S1P 38.4Wh (Slim Pack Dean )"
+source = "doc/hobbytech/parts-pages"
+links = [
+  { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-crx-rtr-piece-detachees/" },
+]
+applies_to = ["CRX RTR", "CRX V1", "CRX V2", "BXR MT", "BXR MT LIMITED", "BXR S1 KIT", "BXR S1 RTR", "SL DB8 OR", "SL DB8 OR RTR"]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5200
+c_rating = 50
+category = "battery"

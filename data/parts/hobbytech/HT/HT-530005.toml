@@ -1,0 +1,13 @@
+id = "part/hobbytech/HT-530005"
+brand = "brand/hobbytech"
+number = "HT-530005"
+name = "Roulements 5x10x4 High speed ABEC5 x10pcs"
+source = "doc/hobbytech/parts-pages"
+links = [
+  { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-db8-rtr-rd-piece-detachees/" },
+]
+applies_to = ["DB8 RTR", "NXT GP2.0", "BX8 RUNNER G", "BX8 RUNNER O", "BXR MT", "BXR MT LIMITED", "SL DB8 OR", "SL DB8 OR RTR"]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
