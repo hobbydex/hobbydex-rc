@@ -3,6 +3,10 @@ brand = "brand/jx"
 number = "BS-1100WP"
 name = "BS-1100WP 14.8V 180KG Large Torque Brushless Servo"
 category = "servo"
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 2
+frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 180
 voltage = 14.8
@@ -15,5 +19,5 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/jumbo-15t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
-notes = "JX files it under My servo; Stall torque 135 kg.cm at 11.1 V, 180 kg.cm at 14.8 V; speed 0.3 s/60deg at 11.1 V, 0.24 s/60deg at 14.8 V; lead 600 mm; two ball bearings; programmable."
+notes = "JX files it under My servo; Stall torque 135 kg.cm at 11.1 V, 180 kg.cm at 14.8 V; speed 0.3 s/60deg at 11.1 V, 0.24 s/60deg at 14.8 V; lead 600 mm; programmable."
 links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/HT/2026-02-06/655.html" } ]

@@ -3,6 +3,10 @@ brand = "brand/jx"
 number = "B220"
 name = "B220 220KG Super Large torque Full CNC Brushless servo"
 category = "servo"
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 4
+frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 215
 voltage = 18
@@ -16,4 +20,4 @@ rotation_deg = 120
 equivalent_to = [
   { spec = "spec/servo/jumbo", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
-notes = "JX files it under Large Size servo; Stall torque 128 kg.cm at 12 V, 160 kg.cm at 15 V, 215 kg.cm at 18 V; speed 0.19 s/60deg at 12 V, 0.17 s/60deg at 15 V, 0.15 s/60deg at 18 V; lead 265 mm; two ball bearings."
+notes = "JX files it under Large Size servo; Stall torque 128 kg.cm at 12 V, 160 kg.cm at 15 V, 215 kg.cm at 18 V; speed 0.19 s/60deg at 12 V, 0.17 s/60deg at 15 V, 0.15 s/60deg at 18 V; lead 265 mm."

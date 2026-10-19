@@ -3,6 +3,10 @@ brand = "brand/jx"
 number = "CLS6322HV"
 name = "CLS6322HV 21kg Aluminium Shell Metal gear High Voltage Coreless Digital Servo"
 category = "servo"
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 1
+frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 21.06
 voltage = 7.4
@@ -15,5 +19,5 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
-notes = "JX files it under Ecoboost servo; Stall torque 17.21 kg.cm at 6.6 V, 21.06 kg.cm at 7.4 V; speed 0.09 s/60deg at 6.6 V, 0.07 s/60deg at 7.4 V; lead 265 mm; two ball bearings."
+notes = "JX files it under Ecoboost servo; Stall torque 17.21 kg.cm at 6.6 V, 21.06 kg.cm at 7.4 V; speed 0.09 s/60deg at 6.6 V, 0.07 s/60deg at 7.4 V; lead 265 mm."
 material = "aluminium"
