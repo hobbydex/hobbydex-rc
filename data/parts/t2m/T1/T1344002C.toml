@@ -1,0 +1,15 @@
+id = "part/t2m/T1344002C"
+brand = "brand/t2m"
+number = "T1344002C"
+name = "Accu Li-Po 4400 mAh HV 7.6v"
+source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-accu-electrique-t2m-accu-li-po-4400-mah-hv-7-6v-T1344002C" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 4400
+category = "battery"

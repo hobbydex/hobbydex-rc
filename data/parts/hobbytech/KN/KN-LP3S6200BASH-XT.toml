@@ -1,0 +1,18 @@
+id = "part/hobbytech/KN-LP3S6200BASH-XT"
+brand = "brand/hobbytech"
+number = "KN-LP3S6200BASH-XT"
+name = "Konect Lipo 6200mah 11.1V 60C 3S1P 68.8Wh bash (XT60)"
+source = "doc/hobbytech/parts-pages"
+links = [
+  { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-ep-xtrem-pieces-detachees/" },
+]
+applies_to = ["NXT EP XTREM"]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-6200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 6200
+c_rating = 60
+connector = "XT60"
+category = "battery"
