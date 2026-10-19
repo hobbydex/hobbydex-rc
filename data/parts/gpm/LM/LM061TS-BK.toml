@@ -2,6 +2,10 @@ id = "part/gpm/LM061TS-BK"
 brand = "brand/gpm"
 number = "LM061TS-BK"
 name = "GPM Hardened Steel Losi Mini B & T 61T Spur Gear"
+fits = [
+  { kit = "kit/losi/mini-t-2", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/losi/mini-b", type = "replaces", source = "doc/gpm/store" },
+]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-lm061ts-bk-gpm-hardened-steel-losi-mini-b-amp-t-61t-spur-gear/" },
 ]

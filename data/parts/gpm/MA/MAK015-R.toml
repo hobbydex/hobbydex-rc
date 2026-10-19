@@ -3,10 +3,12 @@ brand = "brand/gpm"
 number = "MAK015-R"
 name = "GPM Red Aluminium ARRMA Kraton, Talion & Typhon Front Top Brace"
 fits = [
-  { kit = "kit/arrma/kraton", type = "direct", source = "doc/gpm/store" },
-  { kit = "kit/arrma/notorious", type = "direct", source = "doc/gpm/store" },
-  { kit = "kit/arrma/typhon", type = "direct", source = "doc/gpm/store" },
-  { kit = "kit/arrma/talion-6s", type = "direct", source = "doc/gpm/store" },
+  { kit = "kit/arrma/kraton", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/outcast", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/notorious", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/typhon", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/talion-6s", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/senton", type = "replaces", source = "doc/gpm/store" },
 ]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-mak015-r-gpm-red-aluminium-arrma-kraton-talion-amp-typhon-front-top-brace/" },
