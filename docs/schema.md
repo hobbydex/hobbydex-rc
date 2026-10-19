@@ -597,6 +597,10 @@ spec can still differ in case size and mounting holes, so the part keeps
 `dimensions_mm`, `weight_g`, `torque_kgcm` and `speed_s` (seconds per 60
 degrees) at `voltage`, `voltage_range`, `gear_material`, `motor` (brushless |
 coreless | cored), `connector` and `rotation_deg` (the throw, when the brand states it).
+Bearings and PWM: `bearings` (an int count of 1 to 10, when the maker states one: "2 ball bearings" and "dual bearings" both give 2),
+`bearing_kind` ("ball" | "bushing", when the maker names it; it can be set without a count), `dead_band_us` (whole microseconds)
+and `frequency_hz` (the PWM rate in hz: one figure, or `[low, high]` when the maker gives a range; a figure the maker gives only as
+an upper limit is recorded as that figure). Each is set only from the maker's own statement; a field the maker does not state is left out.
 
 Motors: the can and the shaft, which decide whether a motor drops into a
 motor mount and takes the pinion: `motor_type` (brushed | brushless), `can`

@@ -3,6 +3,10 @@ brand = "brand/jx"
 number = "DC6625HV-180"
 name = "DC6625HV-180 180° 25KG 8.4V Metal Gear Digital Standard Servo"
 category = "servo"
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 4
+frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 25
 voltage = 8.4
@@ -16,5 +20,5 @@ rotation_deg = 180
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
-notes = "JX files it under Standard servo; Stall torque 18 kg.cm at 6 V, 25 kg.cm at 8.4 V; speed 0.13 s/60deg at 6 V, 0.11 s/60deg at 8.4 V; lead 265 mm; two ball bearings."
+notes = "JX files it under Standard servo; Stall torque 18 kg.cm at 6 V, 25 kg.cm at 8.4 V; speed 0.13 s/60deg at 6 V, 0.11 s/60deg at 8.4 V; lead 265 mm."
 links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/STANDARD/W/2026-07-28/697.html" } ]

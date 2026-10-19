@@ -3,6 +3,10 @@ brand = "brand/jx"
 number = "CS-1268SG"
 name = "CS-1268SG 7.4V 25KG High Torque High Performance Coreless Servo"
 category = "servo"
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 3
+frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 25
 voltage = 7.4
@@ -15,5 +19,5 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
-notes = "JX files it under My servo; Stall torque 15 kg.cm at 6 V, 25 kg.cm at 7.4 V; speed 0.13 s/60deg at 6 V, 0.11 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."
+notes = "JX files it under My servo; Stall torque 15 kg.cm at 6 V, 25 kg.cm at 7.4 V; speed 0.13 s/60deg at 6 V, 0.11 s/60deg at 7.4 V; lead 265 mm; programmable."
 links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/sa/2025-09-18/640.html" } ]

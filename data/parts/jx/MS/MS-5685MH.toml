@@ -3,6 +3,10 @@ brand = "brand/jx"
 number = "MS-5685MH"
 name = "MS-5685MH 7.4V 12.8KG High Performance Standard Digital Servo"
 category = "servo"
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 3
+frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 12.8
 voltage = 7.4
@@ -15,5 +19,5 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
-notes = "JX files it under My servo; Stall torque 11.3 kg.cm at 6 V, 12.8 kg.cm at 7.4 V; speed 0.2 s/60deg at 6 V, 0.17 s/60deg at 7.4 V; lead 265 mm; two ball bearings; programmable."
+notes = "JX files it under My servo; Stall torque 11.3 kg.cm at 6 V, 12.8 kg.cm at 7.4 V; speed 0.2 s/60deg at 6 V, 0.17 s/60deg at 7.4 V; lead 265 mm; programmable."
 links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/HT/2026-02-07/677.html" } ]

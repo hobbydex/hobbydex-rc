@@ -3,6 +3,10 @@ brand = "brand/jx"
 number = "PDI-HV5212MG"
 name = "PDI-HV5212MG 26.8nn High Precision Metal Gear Full CNC Aluminium Shell Structure High Voltage Digita"
 category = "servo"
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 1
+frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 11.82
 voltage = 8.4
@@ -16,5 +20,5 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/low-profile", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
-notes = "JX files it under Low Profile servo; Stall torque 9.4 kg.cm at 6 V, 11.82 kg.cm at 8.4 V; speed 0.09 s/60deg at 6 V, 0.07 s/60deg at 8.4 V; lead 220 mm; waterproof (stated in the features); two ball bearings."
+notes = "JX files it under Low Profile servo; Stall torque 9.4 kg.cm at 6 V, 11.82 kg.cm at 8.4 V; speed 0.09 s/60deg at 6 V, 0.07 s/60deg at 8.4 V; lead 220 mm; waterproof (stated in the features)."
 material = "aluminium"

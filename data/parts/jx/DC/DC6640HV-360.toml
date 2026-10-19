@@ -3,6 +3,10 @@ brand = "brand/jx"
 number = "DC6640HV-360"
 name = "DC6640HV-360 360° 40KG 8.4V Metal Gear Digital Standard Servo"
 category = "servo"
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 4
+frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 40
 voltage = 8.4
@@ -15,5 +19,5 @@ rotation_deg = 360
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
-notes = "JX files it under Standard servo; Stall torque 29 kg.cm at 6 V, 40 kg.cm at 8.4 V; speed 40 rpm at 6.0 V, 56 rpm at 8.4 V (continuous rotation); lead 265 mm; two ball bearings."
+notes = "JX files it under Standard servo; Stall torque 29 kg.cm at 6 V, 40 kg.cm at 8.4 V; speed 40 rpm at 6.0 V, 56 rpm at 8.4 V (continuous rotation); lead 265 mm."
 links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/STANDARD/W/2026-07-28/708.html" } ]

@@ -93,6 +93,9 @@ ENUMS = {
     "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
 # engine fields (docs/schema.md "Engines"): only on engine-fuel parts, numbers in these ranges
+# servo spec fields (docs/schema.md "Servos"): bearings, bearing_kind, dead_band_us, frequency_hz
+SERVO_FIELDS = ("bearings", "bearing_kind", "dead_band_us", "frequency_hz")
+SERVO_BEARING_KIND = {"ball", "bushing"}
 ENGINE_NUM = {"displacement_cc": (0.5, 120), "bore_mm": (5, 60), "stroke_mm": (5, 60), "output_hp": (0.05, 20), "output_rpm": (1000, 60000)}
 ENGINE_FIELDS = set(ENGINE_NUM) | {"engine_class", "rpm_range", "fuel"}   # bore_mm is also a shock's bore: checked on engines only
 PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent", "translucent", "clear", "chrome", "flake"}   # part.finish of a paint; other parts' finish ("black oxide") is free
@@ -475,6 +478,22 @@ def main():
         se = d.get("sensored") if kind == "part" else None
         if se is not None and (not isinstance(se, bool) or d.get("category") not in ("motor", "electronics")):
             errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category electronics)")
+        if kind == "part" and any(k in d for k in SERVO_FIELDS) and d.get("category") != "servo":
+            errors.append(f"{path}: {', '.join(k for k in SERVO_FIELDS if k in d)} only on servos (category servo)")
+        if kind == "part" and d.get("category") == "servo":
+            bn, bk, db, fq = (d.get(k) for k in SERVO_FIELDS)
+            if bn is not None and not (isinstance(bn, int) and not isinstance(bn, bool) and 1 <= bn <= 10):
+                errors.append(f"{path}: bearings {bn!r} should be a count of 1 to 10")
+            if bk is not None and bk not in SERVO_BEARING_KIND:
+                errors.append(f"{path}: bearing_kind {bk!r} should be one of {sorted(SERVO_BEARING_KIND)}")
+            if db is not None and not (isinstance(db, int) and not isinstance(db, bool) and 1 <= db <= 100):
+                errors.append(f"{path}: dead_band_us {db!r} should be whole microseconds, 1 to 100")
+            if fq is not None:
+                one = isinstance(fq, int) and not isinstance(fq, bool) and 30 <= fq <= 5000
+                rng = isinstance(fq, list) and len(fq) == 2 and all(isinstance(x, int) and not isinstance(x, bool) for x in fq) \
+                    and 30 <= fq[0] < fq[1] <= 5000
+                if not (one or rng):
+                    errors.append(f"{path}: frequency_hz {fq!r} should be an int (hz) or [low, high] in hz, 30 to 5000")
         if kind == "part" and "radio_unit" in d and d.get("category") != "electronics":
             errors.append(f"{path}: radio_unit only on radios and receivers (category electronics)")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
