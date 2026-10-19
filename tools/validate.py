@@ -297,7 +297,12 @@ def main():
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}
+    placeholder_kits = {d.get("id") for _, kind, d in docs if kind == "kit" and d.get("placeholder") is True}
     for path, kind, d in docs:
+        if kind == "kit" and "placeholder" in d and not isinstance(d["placeholder"], bool):
+            errors.append(f"{path}: placeholder should be true (a group for releases whose chassis no source names yet)")
+        if kind == "part" and any(isinstance(f, dict) and f.get("kit") in placeholder_kits for f in d.get("fits", []) or []):
+            errors.append(f"{path}: fits a placeholder kit; a placeholder holds no parts or fits of its own")
         def check_ref(field, value, where):
             prefix = REFS.get(field)
             if prefix is None:
