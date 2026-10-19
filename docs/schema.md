@@ -936,7 +936,7 @@ replaced_by = "standard/iso-4762"
 A manufacturer document used as a source. Only facts and the links; the PDF
 itself is not stored in git (`file` is the name in the local `work/manuals/`
 tree). `kind` is manual | part_list | exploded_view | supplement | catalog |
-setup_sheet | product_page | news. Two links: `page` is the maker's own web page
+setup_sheet | product_page | news | video (see "Videos"). Two links: `page` is the maker's own web page
 where the document is listed (the support or downloads page, stable and
 readable), `url` the file itself as the maker serves it, which may be a CDN
 (Tamiya's CloudFront) or the maker's own Drive or Dropbox share (Redcat,
@@ -979,6 +979,39 @@ url = "https://www.teamxray.com/downloads/xb2-26-part-list.pdf"
 file = "xb2-2026-part-list.pdf"
 releases = ["release/xray/320020", "release/xray/320021"]
 ```
+
+## Videos
+
+A maker's own video about a kit, release or part, from the maker's
+official YouTube channel (never a fan's or a shop's channel), is a document
+of kind `video` under the brand of what it shows. Only facts about the
+video are kept: its title as the channel gives it, the channel's name, the
+day it was published when a source states it, its length when known, and
+its link. Nothing of the video is stored; the site shows YouTube's own
+thumbnail from i.ytimg.com next to the link.
+
+```toml
+id = "doc/arrma/youtube-abcDEF12345"
+brand = "brand/arrma"
+kind = "video"
+title = "ARRMA KRATON 6S BLX EXB RTR"
+channel = "ARRMA RC"                      # the YouTube channel's name
+date = "2024-05-02"                       # optional: when published
+duration_s = 154                          # optional: the length in seconds
+publisher = "brand/arrma"
+url = "https://www.youtube.com/watch?v=abcDEF12345"
+page = "https://www.horizonhobby.com/product/..."   # the maker's page that embeds it, when found there
+releases = ["release/arrma/ara8707"]
+kits = ["kit/arrma/kraton-6s"]            # a video of the whole kit (no one release named)
+parts = ["part/arrma/ARA390290"]          # a video of a part
+```
+
+The id is `doc/<brand>/youtube-<video id>`, the `url` exactly
+`https://www.youtube.com/watch?v=<video id>`. A video is linked only where
+it is certain: from the maker's product page that embeds it (that page's
+release), or from its title when the title names the kit or release
+strictly (the matching of tools/car_releases.py: a TT-02 Type-S video only
+on that release). A video that names no car is not kept.
 
 ## Owner reports
 
