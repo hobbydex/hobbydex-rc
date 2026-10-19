@@ -50,6 +50,9 @@ SURFACES = {"carpet", "astro", "clay", "dirt", "asphalt", "high-grip"}   # the t
 
 DOUBTABLE = {"release": ("released", "year", "announced"), "brand": ("launched", "ended")}   # dates that may carry <field>_doubt
 
+# scale as a fraction of the real vehicle: "1/10", "1/13.5" (docs/schema.md "kit", "release")
+SCALE_RE = re.compile(r"1/\d+(\.\d+)?")
+
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
     "release.kind": {"kit", "rtr", "arr"},
@@ -301,7 +304,12 @@ def main():
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}
     placeholder_kits = {d.get("id") for _, kind, d in docs if kind == "kit" and d.get("placeholder") is True}
+    kit_scale = {d.get("id"): d.get("scale") for _, kind, d in docs if kind == "kit"}
     for path, kind, d in docs:
+        if kind in ("kit", "release") and "scale" in d and not (isinstance(d["scale"], str) and SCALE_RE.fullmatch(d["scale"])):
+            errors.append(f"{path}: scale {d['scale']!r} should be a fraction like \"1/10\"")
+        if kind == "release" and "scale" in d and d["scale"] == kit_scale.get(d.get("kit")):
+            errors.append(f"{path}: scale {d['scale']!r} repeats its kit's; leave it out (docs/schema.md \"release\")")
         if kind == "kit" and "placeholder" in d and not isinstance(d["placeholder"], bool):
             errors.append(f"{path}: placeholder should be true (a group for releases whose chassis no source names yet)")
         if kind == "category" and "terms" in d:   # glossary on the category page (docs/schema.md "category")
