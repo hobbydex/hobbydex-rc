@@ -64,8 +64,14 @@ country = "SK"                           # ISO 3166-1 alpha-2
 website = "https://www.teamxray.com"
 kind = "manufacturer"                    # manufacturer | aftermarket | designer | retailer
 status = "active"                        # active | dormant | gone
+launched = "1993"                        # optional: when the brand launched, ISO date at the source's precision
+launched_source = "https://..."          # required with launched: the page URL or doc/ id that states it
+ended = "2016-06"                        # only for a gone brand: when it stopped
+ended_source = "https://..."             # required with ended
 notes = "..."
 ```
+
+`launched` and `ended`: when the brand started and when it died, as ISO date strings at the precision the source gives ("2016", "2016-06", "2016-06-01"), each with `<field>_source` (the URL of the page, or the `doc/` id of the document, that states it). Never guessed from the oldest or newest product. `ended` goes with status `gone` and is required for it. Every release and part of a gone brand has status `discontinued`.
 
 `owner`: the company that owns the brand, a `company/` id, set only when a
 page of the brand (about, imprint, footer, copyright line, "a division of")

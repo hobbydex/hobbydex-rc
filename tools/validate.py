@@ -262,6 +262,7 @@ def main():
                 if r not in d:
                     errors.append(f"{path}: missing required field {r}")
             docs.append((path, kind, d))
+    gone_brands = {d.get("id") for _, k, d in docs if k == "brand" and d.get("status") == "gone"}   # defunct: everything discontinued
     # hosts of brands whose own site serves http only (website = "http://..."): their maker pages may be linked over http
     http_hosts = {urllib.parse.urlsplit(d["website"]).hostname for _, k, d in docs
                   if k == "brand" and str(d.get("website", "")).startswith("http://")}
@@ -343,6 +344,8 @@ def main():
                     errors.append(f"{path}: fits[{i}].releases -> {r} does not exist")
                 elif release_kit[r] != f.get("kit"):
                     errors.append(f"{path}: fits[{i}].releases -> {r} is a release of {release_kit[r]}, not of {f.get('kit')}")
+        if kind in ("part", "release") and d.get("brand") in gone_brands and d.get("status") != "discontinued":
+            errors.append(f"{path}: {d['brand']} is gone, so status must be discontinued")
         if kind in ("part", "release") and "gtin" in d:
             g = str(d["gtin"])
             digits = [int(c) for c in g] if g.isdigit() else []
@@ -505,6 +508,24 @@ def main():
                     errors.append(f"{path}: key_fields compare_only must be true or false")
                 elif kf["from"] == "spec" and not d.get("spec_type"):
                     errors.append(f"{path}: key field {kf['field']} comes from the spec, but the category names no spec")
+        # when a brand launched and ended (docs/schema.md "brand"): ISO dates at the precision the source gives, each with its source
+        if kind == "brand":
+            for f in ("launched", "ended"):
+                if f not in d:
+                    if f"{f}_source" in d:
+                        errors.append(f"{path}: {f}_source needs {f}")
+                    continue
+                if not (isinstance(d[f], str) and re.fullmatch(r"\d{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01]))?)?", d[f])):
+                    errors.append(f"{path}: {f} {d[f]!r} must be an ISO date string: \"2016\", \"2016-03\" or \"2016-03-01\"")
+                src = str(d.get(f"{f}_source", ""))
+                if not (src.startswith(("https://", "http://")) or src in ids):
+                    errors.append(f"{path}: {f} needs {f}_source: the URL of the page, or the doc/ id of the document, that states it")
+            if d.get("status") == "gone" and "ended" not in d:
+                errors.append(f"{path}: a gone brand needs ended (when it stopped), with ended_source")
+            if "ended" in d and d.get("status") != "gone":
+                errors.append(f"{path}: ended is set, so status must be gone")
+            if "launched" in d and "ended" in d and d["ended"][:len(d["launched"])] < d["launched"][:len(d["ended"])]:
+                errors.append(f"{path}: ended {d['ended']} is before launched {d['launched']}")
         # the company that owns a brand (docs/schema.md "company"): stated on a page of the brand or the company
         if kind == "brand" and ("owner_source" in d or "owner_since" in d) and "owner" not in d:
             errors.append(f"{path}: owner_source and owner_since need an owner")
