@@ -3,7 +3,10 @@ brand = "brand/gpm"
 number = "ER1200S-G2-BK"
 name = "GPM Steel Differential Gear Set"
 fits = [
-  { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/summit", type = "replaces", source = "doc/gpm/store" },
 ]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-er1200s-g2-bk-gpm-steel-differential-gear-set/" },

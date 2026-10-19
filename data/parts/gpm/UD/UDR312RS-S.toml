@@ -3,7 +3,8 @@ brand = "brand/gpm"
 number = "UDR312RS-S"
 name = "GPM UDR Silver Aluminium Rear Left & Right Sway Bar Arm Set W/ Stainless Steel Turnbuckles"
 fits = [
-  { kit = "kit/traxxas/udr", type = "direct", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/udr", type = "replaces", replaces = "part/traxxas/8597", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/udr", type = "replaces", replaces = "part/traxxas/8598", source = "doc/gpm/store" },
 ]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-udr312rs-s-gpm-udr-silver-aluminium-rear-left-amp-right-sway-bar-arm-set-w-stainless-steel-turnbuckles/" },
