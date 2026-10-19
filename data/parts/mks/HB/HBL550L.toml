@@ -10,7 +10,10 @@ speed_s = 0.059
 dimensions_mm = [40.5, 20.5, 25.4]
 weight_g = 58.5
 material = "aluminium"
-notes = "Other voltages (MKS chart): 4.8V 9.0 kg-cm, 0.090 s/60deg; 6.0V 12.0 kg-cm, 0.073 s/60deg."
+motor = "brushless"
+voltage_range = "4.8V - 8.4V"
+gear_material = "metal"
+notes = "Other voltages (MKS chart): 4.8V 9.0 kg-cm, 0.090 s/60deg; 6.0V 12.0 kg-cm, 0.073 s/60deg. MKS product page: 2 ball bearings, dead band 0.001 ms, frequency 1520 us / 333 Hz."
 equivalent_to = [
   { spec = "spec/servo/low-profile", match = "functional", source = "doc/mks/servo-chart-c2203", notes = "Size class from MKS's chart group; MKS states no spline; check the mounting holes" },
 ]
