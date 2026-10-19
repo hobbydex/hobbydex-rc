@@ -1,0 +1,16 @@
+id = "part/exceed-jp/SUB-60100SP"
+brand = "brand/exceed-jp"
+number = "SUB-60100SP"
+name = "(Separate) LIPOバッテリー 7.4V 6000mAh 100C PSE対応"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "EXceed", url = "https://su-creative.com/shop/products/detail/33" },
+]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 6000
+c_rating = 100

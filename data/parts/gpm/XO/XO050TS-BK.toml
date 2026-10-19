@@ -3,7 +3,9 @@ brand = "brand/gpm"
 number = "XO050TS-BK"
 name = "GPM X-Maxx 50T 1Mod Steel Spur Gear"
 fits = [
-  { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/x-maxx", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/xo-1", type = "replaces", source = "doc/gpm/store" },
 ]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-xo050ts-bk-gpm-x-maxx-50t-1mod-steel-spur-gear/" },

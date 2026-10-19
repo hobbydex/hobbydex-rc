@@ -1,0 +1,15 @@
+id = "part/yikong/1846-yikong-yk4107-rc-car-parts-cap-head-screws-m25x10-21222"
+brand = "brand/yikong"
+name = "YK4107 RC Car Parts Cap Head Screws (M2.5x10) 21222"
+source = "doc/yikong/yikongrccar-dealer-listing"
+links = [
+  { site = "yikongrccar.com (dealer)", url = "https://www.yikongrccar.com/yikong-yk4107-parts/1846-yikong-yk4107-rc-car-parts-cap-head-screws-m25x10-21222.html" },
+]
+fits = [
+  { kit = "kit/yikong/yk4107", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+category = "screw"

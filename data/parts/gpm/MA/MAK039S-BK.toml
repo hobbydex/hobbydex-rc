@@ -4,7 +4,12 @@ number = "MAK039S-BK"
 name = "GPM Harden Steel ARRMA Kraton 6S Differential Outdrives 2Pcs"
 pack_qty = 2
 fits = [
-  { kit = "kit/arrma/kraton", type = "direct", source = "doc/gpm/store" },
+  { kit = "kit/arrma/kraton", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/outcast", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/notorious", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/typhon", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/talion-6s", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/arrma/senton", type = "replaces", source = "doc/gpm/store" },
 ]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-mak039s-bk-gpm-harden-steel-arrma-kraton-6s-differential-outdrives-2pcs/" },

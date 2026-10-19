@@ -48,6 +48,8 @@ VEHICLE_MAKES = {
 }
 SURFACES = {"carpet", "astro", "clay", "dirt", "asphalt", "high-grip"}   # the track surface a race kit is built for
 
+DOUBTABLE = {"release": ("released", "year", "announced"), "brand": ("launched", "ended")}   # dates that may carry <field>_doubt
+
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
     "release.kind": {"kit", "rtr", "arr"},
@@ -155,11 +157,11 @@ def check_makes(docs, errors):
     for name in sorted(VEHICLE_MAKES - seen):
         errors.append(f"data/makes: no make file for {name!r}")
 
-def check_art(ids, errors):
-    """art/<kits|releases>/<brand>/<key>.svg: our own outline of a kit or release, drawn by the site in its
-    colours. One line: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24"> with one or more
-    <path d="..."/> and nothing else (no fill, style, transform, class or title), at most ART_MAX bytes,
-    named after a kit or release that exists. Returns the number of art files."""
+def check_art(ids, errors, body_parts=frozenset()):
+    """art/<kits|releases|parts>/<brand>/<key>.svg: our own outline of a kit, release or body part (category
+    body), drawn by the site in its colours. One line: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24">
+    with one or more <path d="..."/> and nothing else (no fill, style, transform, class or title), at most
+    ART_MAX bytes, named after a kit, release or body part that exists. Returns the number of art files."""
     lower = {i.lower(): i for i in ids if isinstance(i, str)}
     dirs = {DIRS[k]: k for k in ART_KINDS}
     n = 0
@@ -168,7 +170,7 @@ def check_art(ids, errors):
             path = os.path.join(dirpath, fn)
             parts = os.path.relpath(path, ART_ROOT).split(os.sep)
             if len(parts) != 3 or parts[0] not in dirs or not fn.endswith(".svg"):
-                errors.append(f"{path}: art goes in {ART_ROOT}/kits/<brand>/<slug>.svg or {ART_ROOT}/releases/<brand>/<key>.svg")
+                errors.append(f"{path}: art goes in {ART_ROOT}/kits/<brand>/<slug>.svg, {ART_ROOT}/releases/<brand>/<key>.svg or {ART_ROOT}/parts/<brand>/<number>.svg")
                 continue
             n += 1
             eid = f"{dirs[parts[0]]}/{parts[1]}/{fn[:-4]}"
@@ -177,6 +179,8 @@ def check_art(ids, errors):
             if eid not in ids:
                 hint = f" (the id is {lower[eid.lower()]}: names match the id exactly)" if eid.lower() in lower else ""
                 errors.append(f"{path}: orphan art, no {eid}{hint}")
+            elif eid.startswith("part/") and eid not in body_parts:
+                errors.append(f"{path}: art is for body parts only, and {eid} is not of category body")
             elif parts[1] != parts[1].lower():
                 errors.append(f"{path}: brand directory must be lowercase")
             size = os.path.getsize(path)
@@ -293,7 +297,17 @@ def main():
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}
+    placeholder_kits = {d.get("id") for _, kind, d in docs if kind == "kit" and d.get("placeholder") is True}
     for path, kind, d in docs:
+        if kind == "kit" and "placeholder" in d and not isinstance(d["placeholder"], bool):
+            errors.append(f"{path}: placeholder should be true (a group for releases whose chassis no source names yet)")
+        if kind == "category" and "terms" in d:   # glossary on the category page (docs/schema.md "category")
+            ts = d["terms"]
+            if not isinstance(ts, list) or not ts or not all(isinstance(t, dict) and set(t) == {"term", "text"} and all(
+                    isinstance(t[k], str) and t[k].strip() == t[k] and t[k] for k in ("term", "text")) for t in ts):
+                errors.append(f"{path}: terms should be a list of {{ term, text }} strings")
+        if kind == "part" and any(isinstance(f, dict) and f.get("kit") in placeholder_kits for f in d.get("fits", []) or []):
+            errors.append(f"{path}: fits a placeholder kit; a placeholder holds no parts or fits of its own")
         def check_ref(field, value, where):
             prefix = REFS.get(field)
             if prefix is None:
@@ -344,6 +358,15 @@ def main():
                     errors.append(f"{path}: fits[{i}].releases -> {r} does not exist")
                 elif release_kit[r] != f.get("kit"):
                     errors.append(f"{path}: fits[{i}].releases -> {r} is a release of {release_kit[r]}, not of {f.get('kit')}")
+        # a date we keep but doubt (docs/schema.md "Dates"): <field>_doubt says why, next to the date it doubts
+        for k in [k for k in d if k.endswith("_doubt")]:
+            base = k[:-len("_doubt")]
+            if base not in DOUBTABLE.get(kind, ()):
+                errors.append(f"{path}: {k}: only {', '.join(f'{f}_doubt' for f in DOUBTABLE.get(kind, ())) or 'no doubt field'} on a {kind}")
+            elif base not in d:
+                errors.append(f"{path}: {k} needs {base}")
+            elif not (isinstance(d[k], str) and d[k].strip()):
+                errors.append(f"{path}: {k} must say why the date is in doubt")
         if kind in ("part", "release") and d.get("brand") in gone_brands and d.get("status") != "discontinued":
             errors.append(f"{path}: {d['brand']} is gone, so status must be discontinued")
         if kind in ("part", "release") and "gtin" in d:
@@ -580,7 +603,8 @@ def main():
                 break
             seen.append(cur)
             cur = supersedes[cur]
-    counts["art"] = check_art(ids, errors)
+    body_parts = {d.get("id") for _, kind, d in docs if kind == "part" and d.get("category") == "body"}
+    counts["art"] = check_art(ids, errors, body_parts)
     check_makes(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
