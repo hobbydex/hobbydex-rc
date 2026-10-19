@@ -82,7 +82,7 @@ ENUMS = {
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.case": {"hard", "soft", "shorty"},
-    "part.name_source": {"ocr", "manufacturer"},
+    "part.name_source": {"ocr", "manufacturer", "manual"},
     "part.ball_type": {"stud", "nut", "through-hole", "set-screw"},
     "part.paint_type": {"polycarbonate", "lacquer", "acrylic", "enamel"},
     "part.application": {"spray-can", "airbrush", "brush", "marker"},
@@ -382,6 +382,8 @@ def main():
             for f in ("url", "page"):
                 if f in d and not str(d[f]).startswith(("https://", "http://")):
                     errors.append(f"{path}: {f} must be a web link, got {d[f]!r}")
+            if "manual_no" in d and not (isinstance(d["manual_no"], str) and d["manual_no"].strip()):
+                errors.append(f"{path}: manual_no must be a non-empty string, got {d['manual_no']!r}")
         for l in d.get("links", []) if kind in ("part", "release", "kit") else []:
             u = str(l.get("url", "")) if isinstance(l, dict) else ""
             if not (isinstance(l, dict) and l.get("site") and (u.startswith("https://") or

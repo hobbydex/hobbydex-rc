@@ -6,10 +6,26 @@ name = "Metal Dump Truck (GF-01)"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2017-04-08, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/47329-product-page-ja", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/47329-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/47329-body-manual", "doc/tamiya/gf01-manual"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/47329", kind = "fan-site" },
 ]
 released = "2017-04-08"
 year = 2017
 released_source = "TamiyaBase"
+contains = [
+  { part = "part/tamiya/19804910", role = "kit", source = "doc/tamiya/47329-body-manual" },
+  { part = "part/tamiya/10008265", role = "kit", source = "doc/tamiya/47329-body-manual" },
+  { part = "part/tamiya/10008618", role = "kit", source = "doc/tamiya/47329-body-manual" },
+  { part = "part/tamiya/10005748", role = "kit", source = "doc/tamiya/47329-body-manual" },
+  { part = "part/tamiya/19000833", role = "kit", source = "doc/tamiya/47329-body-manual" },
+  { part = "part/tamiya/19804364", role = "kit", source = "doc/tamiya/47329-body-manual", qty = 10 },
+  { part = "part/tamiya/19805732", role = "kit", source = "doc/tamiya/47329-body-manual", qty = 4 },
+  { part = "part/tamiya/19804159", role = "kit", source = "doc/tamiya/47329-body-manual", qty = 10 },
+  { part = "part/tamiya/50197", role = "kit", source = "doc/tamiya/47329-body-manual" },
+  { part = "part/tamiya/50586", role = "kit", source = "doc/tamiya/47329-body-manual", qty = 15 },
+  { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/47329-body-manual", qty = 10 },
+  { part = "part/tamiya/19494183", role = "kit", source = "doc/tamiya/47329-body-manual" },
+  { part = "part/tamiya/19333189", role = "kit", source = "doc/tamiya/47329-body-manual", qty = 4 },
+  { part = "part/tamiya/54603", role = "kit", source = "doc/tamiya/47329-body-manual", qty = 2 },
+]

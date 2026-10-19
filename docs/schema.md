@@ -304,7 +304,7 @@ balls: ceramic is a hybrid bearing), `material_grade` (the alloy as named:
 a name with two materials unset), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
 `thread_type` (machine | self-tapping), for shocks `shock_part` (complete | body |
 shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
-and `shaft_mm` (shaft diameter), `name_source` (`ocr`: the name was read by OCR from a scanned document and not checked yet; `manufacturer`: corrected from the manufacturer's own product page), `range` (colour versions of one part share a range ending in `-colours`, e.g. "team-corally/c-00180-1055-colours" for a body in clear and four painted colours, set by tools/link_colour_variants.py; tools/link_part_colours.py then gives each version its `color` in plain words when the name states one colour of the part itself ("(blue-anodized)" -> "blue"); otherwise a shared id such as "rc4wd/540-crawler-brushed-motor" for the
+and `shaft_mm` (shaft diameter), `name_source` (`ocr`: the name was read by OCR from a scanned document and not checked yet; `manufacturer`: corrected from the manufacturer's own product page; `manual`: copied from a maker's manual as printed, read by eye), `range` (colour versions of one part share a range ending in `-colours`, e.g. "team-corally/c-00180-1055-colours" for a body in clear and four painted colours, set by tools/link_colour_variants.py; tools/link_part_colours.py then gives each version its `color` in plain words when the name states one colour of the part itself ("(blue-anodized)" -> "blue"); otherwise a shared id such as "rc4wd/540-crawler-brushed-motor" for the
 parts of one product range that differ only in wind, kV or a similar rating;
 the site lists the other versions on each part page), for ball studs and ball cups `ball_mm` (the ball
 diameter both must share) and for balls `ball_type` (stud: has its own thread |
@@ -936,7 +936,7 @@ readable), `url` the file itself as the maker serves it, which may be a CDN
 (Tamiya's CloudFront) or the maker's own Drive or Dropbox share (Redcat,
 Absima). Give `page` whenever the maker has one; a file uploaded by someone
 else (a forum, a fan site, a shop's own copy) is never the `url`. The site
-links the page first and the file as "PDF". A setup_sheet is a maker's setup sheet (blank
+links the page first and the file as "PDF". `manual_no` (optional) is the maker's manual number as the file prints it in its footer (Tamiya: "(11053802)"), kept per file because a reprint may print another number. A setup_sheet is a maker's setup sheet (blank
 or a driver's setup for a track) or a setup reference chart (gear ratios,
 toe angles), linked to the releases of the car it is for.
 
