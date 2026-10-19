@@ -144,8 +144,6 @@ drive = "2wd"        # 2wd | 4wd | 6wd | 8wd | fwd | tracks
 power = "electric"   # electric | nitro | petrol
 ```
 
-`placeholder = true` (optional, a kit only): a group for releases whose chassis no source names yet, one per number range (`kit/tamiya/unknown-58`, "Tamiya 58xxx: chassis not yet known"). It holds no parts or fits of its own, and the site leaves it out of platform lists and counts: a release on it shows "Chassis: not yet known" instead of a platform. Left out for every real kit.
-
 Optional on a kit: `rebrand_of`, the kits this one is the same car as under
 another name, and `same_platform_as`, kits that share a chassis platform without
 being the same car. Each entry names the kit, `parts` (interchangeable |
@@ -273,7 +271,7 @@ brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 A brand that names the car only in the part's name (RW Racing: "Supalite Spurs
 48DP for Xray 008/009 73T") gives the car's words from the name, "Xray 008/009".
 
-`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
+`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
 number have none.
@@ -722,6 +720,12 @@ wheelbase_mm = 313
 width_mm = 193
 ```
 
+Parts fixed to or holding a body (mirrors, door locks, body posts and
+mounts, clips, pins, magnets, savers, light buckets and lights, grilles,
+interiors, roof and bed racks, wipers, handles, antennas) are category
+`body-accessory`, not `body`: the body category lists only shells. They
+carry no body fields (`wheelbase_mm`, `width_mm`, `depicts`).
+
 Tyres carry, when the brand states them: `compound` (the brand's name for
 it, "Super Soft Long Wear"), `scale` ("1/8"), `vehicle` (buggy | truggy |
 short-course | stadium-truck), `position` (front | rear | front-rear |
@@ -878,10 +882,6 @@ its linked spec (`from = "part" | "spec"`), with an optional `unit` and
 `format` ("cells": a [min, max] LiPo range shown as 1-3S; "range": a [min, max] shown as 4000-45000). `compare_only = true`
 keeps a field out of the parts table and shows it only when parts are
 compared side by side.
-
-`terms` (optional) is a glossary for the category page: a list of `{ term = "...", text = "..." }`
-pairs, one or two plain sentences each, shown under the description. Facts only, no brand names
-and no claims the text cannot back. tools/validate.py checks the shape.
 
 ```toml
 id = "category/servo"
