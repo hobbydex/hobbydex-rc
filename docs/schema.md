@@ -271,7 +271,7 @@ brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 A brand that names the car only in the part's name (RW Racing: "Supalite Spurs
 48DP for Xray 008/009 73T") gives the car's words from the name, "Xray 008/009".
 
-`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
+`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
 number have none.
@@ -720,6 +720,12 @@ wheelbase_mm = 313
 width_mm = 193
 ```
 
+Parts fixed to or holding a body (mirrors, door locks, body posts and
+mounts, clips, pins, magnets, savers, light buckets and lights, grilles,
+interiors, roof and bed racks, wipers, handles, antennas) are category
+`body-accessory`, not `body`: the body category lists only shells. They
+carry no body fields (`wheelbase_mm`, `width_mm`, `depicts`).
+
 Tyres carry, when the brand states them: `compound` (the brand's name for
 it, "Super Soft Long Wear"), `scale` ("1/8"), `vehicle` (buggy | truggy |
 short-course | stadium-truck), `position` (front | rear | front-rear |
@@ -956,7 +962,12 @@ from the maker's photos, drawn by us.
 ```
 art/kits/<brand>/<slug>.svg         for kit/<brand>/<slug>
 art/releases/<brand>/<key>.svg      for release/<brand>/<key>
+art/parts/<brand>/<number>.svg      for part/<brand>/<number> of category body
 ```
+
+A body part (category `body`, a shell or a painted body) may have art of its
+own, the car it shows as an outline; no other part may. The file name is the
+id's last part, as for kits and releases.
 
 The file name is the id's last part exactly (same case). Each file is one line:
 
@@ -972,6 +983,7 @@ The export gives such a kit or release `art`: the path data of its file
 (the `d` attributes joined with a space), to be drawn in a `0 0 48 24`
 viewBox. The site draws a release with its own art, else the kit type's icon; it
 never borrows the kit's or another release's, which may show another car.
+A body part with art shows it on its part page.
 Releases of one body (colour, kit/RTR and equipment variants) each carry
 the same file.
 

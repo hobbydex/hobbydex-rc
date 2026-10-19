@@ -1,0 +1,23 @@
+id = "part/mks/HV1220"
+brand = "brand/mks"
+number = "HV1220"
+category = "servo"
+category_source = "curated"
+name = "HV1220 Standard Servo"
+torque_kgcm = 23
+voltage = 8.2
+speed_s = 0.115
+dimensions_mm = [40, 20, 37]
+weight_g = 57.6
+material = "aluminium"
+motor = "coreless"
+voltage_range = "6.0V - 8.4V"
+gear_material = "metal"
+notes = "Other voltages (MKS chart): 6.0V 16.6 kg-cm, 0.159 s/60deg; 7.4V 22.1 kg-cm, 0.129 s/60deg. Aluminium middle case (MKS chart: Mid-Alu). Product page adds: 6.8V 20.3 kg-cm, 0.14 s/60deg. MKS product page: 2 ball bearings, dead band 0.0008ms, frequency 1520 us / 333 Hz. MKS product page: \"Waterproof Bearing / Dustproof, Waterproof\"; no IP rating given."
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", source = "doc/mks/servo-chart-c2203", notes = "Size class from MKS's chart group; MKS states no spline; check the mounting holes" },
+]
+documents = ["doc/mks/servo-chart-c2203"]
+links = [
+  { site = "MKS", url = "https://mks-servo.com/RC/Car-Series/HV1220" },
+]

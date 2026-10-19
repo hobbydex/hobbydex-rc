@@ -4,9 +4,9 @@ This file is the contract between the data repo and hobbydex/hobbydex: the
 site reads only this export, never the TOML tree. Bump schema_version when a
 field changes meaning or disappears. Every record also carries `toml_path`,
 its file in this repo (data/parts/...), which is not a field of the TOML.
-A kit or release with a file in art/ carries `art`: the `d` attribute of its
-path(s), joined with a space, to draw in a 48x24 viewBox (the viewBox is the
-same for every file, so it is not repeated).
+A kit, release or body part with a file in art/ carries `art`: the `d`
+attribute of its path(s), joined with a space, to draw in a 48x24 viewBox (the
+viewBox is the same for every file, so it is not repeated).
 
 Run from the repo root: python3 -I tools/export.py [out.json]
 """
@@ -18,7 +18,7 @@ from layout import ART_KINDS, art_path
 KINDS = {"brands": "brand", "kits": "kit", "releases": "release", "parts": "part", "documents": "doc", "specs": "spec", "shops": "shop", "categories": "category", "standards": "standard", "companies": "company", "makes": "make"}
 
 def art_of(entity_id):
-    """The path data of a kit's or release's art, or None when it has none."""
+    """The path data of a kit's, release's or body part's art, or None when it has none."""
     path = art_path(entity_id)
     if not os.path.exists(path):
         return None
