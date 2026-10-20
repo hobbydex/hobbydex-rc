@@ -303,6 +303,7 @@ def main():
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}
+    manual_links = {d.get("id"): {d[k] for k in ("url", "page") if d.get(k)} for _, kind, d in docs if kind == "doc" and d.get("kind") == "manual"}   # a manual's own file or maker page
     placeholder_kits = {d.get("id") for _, kind, d in docs if kind == "kit" and d.get("placeholder") is True}
     kit_scale = {d.get("id"): d.get("scale") for _, kind, d in docs if kind == "kit"}
     for path, kind, d in docs:
@@ -453,9 +454,10 @@ def main():
                     errors.append(f"{path}: seen_by {sb!r} should be YYYY, YYYY-MM or YYYY-MM-DD (not after this year)")
                 archive = isinstance(ss, str) and re.fullmatch(r"https://web\.archive\.org/web/\d{14}/https?://.+", ss)
                 shop = isinstance(ss, str) and re.fullmatch(r"https://[^/\s]+/products/[^/\s]+", ss)
-                if not (archive or shop):
-                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL> or the maker's shop product page https://<host>/products/<handle>")
-                elif archive and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
+                manual = isinstance(ss, str) and any(ss in manual_links.get(x, ()) for x in d.get("documents", []))
+                if not (archive or shop or manual):
+                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, or the url or page of the release's own manual")
+                elif archive and not manual and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
                     errors.append(f"{path}: seen_by is only for a release with no released, year or announced (a date a source states)")

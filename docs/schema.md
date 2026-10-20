@@ -249,20 +249,11 @@ supersedes = "release/xray/xb8-2022"
 `released`: the release date as precise as a source states it, `YYYY-MM-DD`
 or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
 from another source in that month is kept). It must agree with `year`. Never
-a document's date (a parts list's revision); the exceptions are a maker's
-`news` post that announces the item as new or available (see doc), and the
-month a release's own owner's manual was first printed or created (below). For
+a document's date (a parts list's revision); the exception is a maker's
+`news` post that announces the item as new or available (see doc). For
 an announced release it is the planned date.
 
-`released` from a manual is always `YYYY-MM`, with `released_doubt` naming the
-code it comes from, e.g. `released_doubt = "month Traxxas first printed the
-owner's manual (code 230719 101076-4-OM-EN-R00); printing can precede the
-announcement and the release"`. Traxxas owner's manuals print a code
-`YYMMDD <doc>-R00` (R00 is the first print; a later revision is a reprint and is
-never used). Horizon brands' manuals print `Created MM/YY`. A print can precede
-the announcement, so with an `announced` date later than the print month the
-print month goes in `notes` instead, and `released` stays unset. The print month
-must not be after `seen_by`.
+A manual's printed date is never `released`: a print month from a manual (Traxxas R00 code, Horizon "Created MM/YY") or a copyright year becomes `seen_by` (below). Traxxas owner's manuals print a code `YYMMDD <doc>-R00` (R00 is the first print; a later revision is a reprint and is never used); Horizon brands' manuals print `Created MM/YY`. The bound's `notes` line names the code or stamp. A print can precede the announcement, so an `announced` date keeps its place and the print month goes in `notes` only.
 
 `released_source`: set only when the date comes from a fan site rather than
 the maker; `"TamiyaBase"` for a Tamiya release dated from TamiyaBase (its
@@ -274,7 +265,9 @@ wins when both exist.
 
 `seen_by` (optional, `YYYY`, `YYYY-MM` or `YYYY-MM-DD`; the importer writes `YYYY-MM`) is an upper bound for a release no source dates: the first Internet Archive capture of a maker page or file that names exactly this release (its item number in the URL, or its own product page). The release was on sale no later than that month. It is not a release date: never set it on a release that has `released`, `year` or `announced`, and the site marks it as not the release date. The importer only sets it on releases with no date; when a real date (released, year or announced) is found later, `seen_by` and `seen_by_source` are removed in the same change, and the site shows the real date whenever one exists.
 
-`seen_by_source` (with `seen_by`, and only with it): the capture the month comes from, `https://web.archive.org/web/<14-digit timestamp>/<original URL>`, or, when the month is the day the maker's own Shopify shop published the product (its products.json `published_at`), the maker's product page `https://<host>/products/<handle>`. Set both or neither, never together with `released` or `year`.
+`seen_by_source` (with `seen_by`, and only with it): the capture the month comes from, `https://web.archive.org/web/<14-digit timestamp>/<original URL>`; or, when the month is the day the maker's own Shopify shop published the product (its products.json `published_at`), the maker's product page `https://<host>/products/<handle>`; or, when the bound is a manual's printed date (a copyright line, a print code, a Created stamp), the maker's page or file for that release's own manual, the `page` or `url` of the manual document in the release's `documents`. Set both or neither, never together with `released` or `year`.
+
+A manual's date is an on-sale bound, not a release year (decisions.md, 2026-10-20). A copyright year gives `seen_by` at year precision, a print month (Traxxas R00 code, Horizon "Created MM/YY") at month precision, and the release's `notes` say where it came from ("on sale by: the manual's copyright line (c) 2023"). The earliest bound wins: an earlier Wayback capture or shop date replaces a later `seen_by`, never the reverse. A release with `announced` keeps the announced date and gets no `seen_by`.
 
 ## part
 
