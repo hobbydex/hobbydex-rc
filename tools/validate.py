@@ -212,6 +212,24 @@ def check_makes(docs, errors):
     for name in sorted(VEHICLE_MAKES - seen):
         errors.append(f"data/makes: no make file for {name!r}")
 
+def check_dealer_links(docs, errors):
+    """A dealer link (a links entry with kind "dealer", a reseller's product page) is a fallback: a release or part
+    with a dealer link has no maker product link (a links entry with no kind) and no maker product page (a
+    document of kind product_page), so no dealer page is shown as the official one (docs/schema.md "Links")."""
+    doc_kind = {d.get("id"): d.get("kind") for _, k, d in docs if k == "doc"}
+    for path, kind, d in docs:
+        if kind not in ("release", "part"):
+            continue
+        links = [l for l in d.get("links", []) if isinstance(l, dict)]
+        if not any(l.get("kind") == "dealer" for l in links):
+            continue
+        maker = [l.get("site") for l in links if "kind" not in l]
+        pages = [x for x in d.get("documents", []) + [d.get("source")] if doc_kind.get(x) == "product_page"]
+        if maker:
+            errors.append(f"{path}: dealer link beside a maker product link ({', '.join(map(str, maker))}); drop the dealer link")
+        if pages:
+            errors.append(f"{path}: dealer link beside a maker product page ({', '.join(pages)}); drop the dealer link")
+
 def check_art(ids, errors, body_parts=frozenset()):
     """art/<kits|releases|parts>/<brand>/<key>.svg: our own outline of a kit, release or body part (category
     body), drawn by the site in its colours. One line: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24">
@@ -734,6 +752,7 @@ def main():
     counts["art"] = check_art(ids, errors, body_parts)
     check_release_related(docs, errors)
     check_makes(docs, errors)
+    check_dealer_links(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:
