@@ -89,8 +89,8 @@ def load_tools(tools):
                 with open(os.path.join(srcdir, fn), "rb") as f:
                     items += tomllib.load(f).get("item", [])
         out["sources"] = items
-    cache = os.path.join(tools, "cache", "manuals")
-    if os.path.isdir(cache):
+    cache = os.path.join(tools, "cache")
+    if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
     return out
 
@@ -173,26 +173,47 @@ def main():
 
     # 6. downloaded manuals (hobbydex-tools cache/manuals) not linked to a release
     if tools["cache"]:
+        # cache/manuals/** and cache/notes/<brand>/pdf/**; paths are relative to cache/
+        pdf_dirs = [os.path.join(tools["cache"], "manuals")]
+        notes = os.path.join(tools["cache"], "notes")
+        if os.path.isdir(notes):
+            pdf_dirs += [os.path.join(notes, b, "pdf") for b in sorted(os.listdir(notes)) if os.path.isdir(os.path.join(notes, b, "pdf"))]
         cached = []
-        for dp, _, fs in os.walk(tools["cache"]):
-            for fn in fs:
-                if fn.lower().endswith(".pdf"):
-                    cached.append(os.path.relpath(os.path.join(dp, fn), tools["cache"]))
+        for top in pdf_dirs:
+            for dp, _, fs in os.walk(top):
+                for fn in fs:
+                    if fn.lower().endswith(".pdf"):
+                        cached.append(os.path.relpath(os.path.join(dp, fn), tools["cache"]))
+        # a doc is linked when a release or a part lists it
+        on_part = {dd for p in parts for dd in p.get("documents", [])}
+        linked_docs = set(doc_rels) | on_part
+        # the crawl queue maps each cached file to the URL it came from
+        url_of = {}
+        crawl = os.path.join(tools["cache"], "crawl.db")
+        if os.path.exists(crawl):
+            import sqlite3
+            con = sqlite3.connect("file:%s?mode=ro" % crawl, uri=True)
+            for path, url in con.execute("select path, url from queue where kind='pdf'"):
+                url_of.setdefault(os.path.relpath(path, tools["cache"]) if path.startswith(tools["cache"]) else path, url)
+            con.close()
         by_name = collections.defaultdict(list)
+        by_url = collections.defaultdict(list)
         for d in docs.values():
             if d.get("file"):
                 by_name[os.path.basename(d["file"])].append(d)
+            if d.get("url"):
+                by_url[d["url"]].append(d)
         unlinked = []
         for rel_path in cached:
             name = os.path.basename(rel_path)
-            ds = by_name.get(name, [])
-            if not ds or not any(doc_rels.get(d["id"]) for d in ds):
+            ds = by_name.get(name, []) + by_url.get(url_of.get(rel_path), [])
+            if not any(d["id"] in linked_docs for d in ds):
                 unlinked.append(rel_path)
-        check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; names are checked by basename",
+        check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked",
               [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5])
         # keep the list ids as paths; url points at the brand
         res = results["manual-unlinked"]
-        res["examples"] = [{"id": u, "url": SITE + "/rc/brands/" + u.split("/")[0] + "/"} for u in unlinked[:args.examples]]
+        res["examples"] = [{"id": u, "url": SITE + "/rc/brands/" + u.split("/")[1] + "/"} for u in unlinked[:args.examples]]
     else:
         results["manual-unlinked"] = {"fix": "hobbydex-tools cache not found (--tools)", "count": None, "examples": [], "all": []}
 
