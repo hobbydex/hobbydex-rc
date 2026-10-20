@@ -296,6 +296,14 @@ def main():
     check("doc-not-back-linked", "add the release id to the document's releases (or remove the document from the release)",
           [r for r in rels for d in r.get("documents", []) if d in docs and r["id"] not in (docs[d].get("releases") or [])])
 
+    # 19b. a release lists one document more than once (a repeated append by an importer)
+    check("duplicate-doc-ref", "remove the repeated entry from the release's documents; the importer that appends it should test membership first",
+          [r for r in rels if len(set(r.get("documents", []))) != len(r.get("documents", []))])
+
+    # 19b. a release lists one document more than once (a repeated append by an importer)
+    check("duplicate-doc-ref", "remove the repeated entry from the release's documents; the importer that appends it should test membership first",
+          [r for r in rels if len(set(r.get("documents", []))) != len(r.get("documents", []))])
+
     # 20. part fits a kit that has no releases
     check("fits-kit-no-release", "add the kit's release, or remove the fit row",
           [p for p in parts for f in p.get("fits", []) if f.get("kit") in kits and not rels_of_kit.get(f["kit"])])
