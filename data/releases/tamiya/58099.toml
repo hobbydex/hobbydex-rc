@@ -3,7 +3,6 @@ kit = "kit/tamiya/unknown-58"
 brand = "brand/tamiya"
 number = "58099"
 name = "Skyline GT-R Nismo"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/2-58xxx-kit-manuals-pdf/254-manual58099" }
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's manual title; Not on Tamiya's current pages (read 2026-10); taken as discontinued"
@@ -17,4 +16,7 @@ year = 1991
 contains = [
   { part = "part/tamiya/19005356", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
-documents = ["doc/tamiya/tamico-dealer-parts"]
+documents = ["doc/tamiya/tamico-dealer-parts", "doc/tamiya/58099-manual"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/2-58xxx-kit-manuals-pdf/254-manual58099"
