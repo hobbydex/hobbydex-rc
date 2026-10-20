@@ -447,6 +447,9 @@ def main():
                     errors.append(f"{path}: announced {an!r} should be YYYY, YYYY-MM or YYYY-MM-DD")
                 elif "released" in d and an > str(d["released"]):
                     errors.append(f"{path}: announced {an} is after released {d['released']}")
+            ans = d.get("announced_source")
+            if ans is not None and ("announced" not in d or not (isinstance(ans, str) and ans.startswith("https://"))):
+                errors.append(f"{path}: announced_source is an https URL that comes with announced (the video or page that gives the day), got {ans!r}")
             has_seen = "seen_by" in d or "seen_by_source" in d
             if has_seen:
                 sb, ss = d.get("seen_by"), d.get("seen_by_source")
