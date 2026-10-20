@@ -459,6 +459,9 @@ def main():
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
                     errors.append(f"{path}: seen_by is only for a release with no released, year or announced (a date a source states)")
+        nsu = d.get("name_source_url")
+        if nsu is not None and (kind != "release" or not (isinstance(nsu, str) and nsu.startswith("https://"))):
+            errors.append(f"{path}: name_source_url is an https URL on a release only (the page the name's title came from), got {nsu!r}")
         ve = d.get("depicts") if kind in ("release", "part") else None
         if ve is not None:
             if kind == "part" and d.get("category") != "body":
