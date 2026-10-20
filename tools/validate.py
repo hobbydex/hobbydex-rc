@@ -142,6 +142,53 @@ def make_slug(name):
     """The site's makeSlug (hobbydex src/lib/data.ts): the make's name as a URL part."""
     return re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFKD", name.lower())).strip("-")
 
+RELEASE_RELATIONS = {"rerelease-of"}   # release `related` relations; more are added as needed (docs/schema.md "related")
+
+
+def _release_date(d):
+    """(year, month, day) of a release from `released` (YYYY, YYYY-MM or YYYY-MM-DD) or `year`; None when neither is set."""
+    r = d.get("released")
+    if isinstance(r, str) and re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", r):
+        p = [int(x) for x in r.split("-")]
+        return tuple(p + [0] * (3 - len(p)))
+    if isinstance(d.get("year"), int):
+        return (d["year"], 0, 0)
+    return None
+
+
+def check_release_related(docs, errors):
+    rels = {d["id"]: d for _, kind, d in docs if kind == "release"}
+    for path, kind, d in docs:
+        if kind != "release" or "related" not in d:
+            continue
+        rows = d["related"]
+        if not isinstance(rows, list) or not rows:
+            errors.append(f"{path}: related should be a non-empty list")
+            continue
+        for i, row in enumerate(rows):
+            if not isinstance(row, dict) or set(row) != {"release", "relation", "source"}:
+                errors.append(f"{path}: related[{i}] should have exactly release, relation and source")
+                continue
+            if row["relation"] not in RELEASE_RELATIONS:
+                errors.append(f"{path}: related[{i}].relation {row['relation']!r} not in {sorted(RELEASE_RELATIONS)}")
+            tgt = row["release"]
+            if not isinstance(tgt, str) or not tgt.startswith("release/"):
+                errors.append(f"{path}: related[{i}].release {tgt!r} should be a release id")
+            elif tgt == d.get("id"):
+                errors.append(f"{path}: related[{i}] links the release to itself")
+            elif tgt not in rels:
+                errors.append(f"{path}: related[{i}].release -> {tgt} does not exist")
+            else:
+                t = rels[tgt]
+                if t.get("brand") != d.get("brand"):
+                    errors.append(f"{path}: related[{i}] points to another brand ({t.get('brand')})")
+                a, b = _release_date(d), _release_date(t)
+                if a and b and not b < a:
+                    errors.append(f"{path}: related[{i}] -> {tgt} is not older ({'-'.join(map(str, b))} vs {'-'.join(map(str, a))})")
+            if not isinstance(row["source"], str) or not row["source"].strip():
+                errors.append(f"{path}: related[{i}].source should name the page that says so (doc id or URL)")
+
+
 def check_makes(docs, errors):
     """data/makes/<slug>.toml: one record per VEHICLE_MAKES entry, named as the make spells itself. country is the
     ISO 3166 alpha-2 code of the make's home country; notes describe the make with no dates (docs/schema.md "Makes")."""
@@ -331,6 +378,8 @@ def main():
             elif value not in ids:
                 errors.append(f"{path}: {where}{field} -> {value} does not exist")
         for k, v in d.items():
+            if kind == "release" and k == "related":   # checked with the other releases in check_release_related
+                continue
             if kind == "release" and k == "supersedes":   # the release this one replaces (docs/schema.md "release")
                 if not (isinstance(v, str) and v.startswith("release/")):
                     errors.append(f"{path}: supersedes = {v!r} should be a release id")
@@ -683,6 +732,7 @@ def main():
             cur = supersedes[cur]
     body_parts = {d.get("id") for _, kind, d in docs if kind == "part" and d.get("category") == "body"}
     counts["art"] = check_art(ids, errors, body_parts)
+    check_release_related(docs, errors)
     check_makes(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
