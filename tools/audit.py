@@ -356,8 +356,8 @@ def main():
     check("duplicate-name-in-kit", "give each release of the kit its own name (edition, colour or item number)", hits)
 
     # 23. release depicting a real vehicle without its make
-    check("depicts-no-make", "set depicts.make to one of the curated makes (tools/validate.py VEHICLE_MAKES)",
-          [r for r in rels if r.get("depicts") and not r["depicts"].get("make")])
+    check("depicts-no-model", "set depicts.model: a real vehicle needs its model (make is optional)",
+          [r for r in rels if r.get("depicts") and not r["depicts"].get("model")])
 
     # 24. never-link hosts and dealer doc references
     banned, scrap, local, dealer = [], [], [], []

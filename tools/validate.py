@@ -491,11 +491,12 @@ def main():
         if ve is not None:
             if kind == "part" and d.get("category") != "body":
                 errors.append(f"{path}: depicts only on a release or a body shell (category body)")
-            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed"} and ve.get("make") in VEHICLE_MAKES
+            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed"}
+                      and ("make" not in ve or ve["make"] in VEHICLE_MAKES)
                       and isinstance(ve.get("model"), str) and ve["model"].strip() == ve["model"] and ve["model"]
                       and (("year" not in ve) or (isinstance(ve["year"], int) and not isinstance(ve["year"], bool) and 1885 <= ve["year"] <= datetime.date.today().year + 1))
                       and ve.get("licensed", True) is True):
-                errors.append(f"{path}: depicts should be {{ make = <one of VEHICLE_MAKES>, model = \"...\", year = 1885.. (optional), licensed = true (optional) }}, got {ve!r}")
+                errors.append(f"{path}: depicts should be {{ make = <one of VEHICLE_MAKES> (optional when model is set), model = \"...\", year = 1885.. (optional), licensed = true (optional) }}, got {ve!r}")
         rq = d.get("requires") if kind == "release" else None
         if rq is not None and not (isinstance(rq, list) and rq and all(isinstance(x, str) and x.startswith(("kit/", "release/")) for x in rq)):
             errors.append(f"{path}: requires should be a list of kit or release ids (the car the release needs, one of them)")
