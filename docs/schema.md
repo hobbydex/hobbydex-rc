@@ -500,6 +500,7 @@ Releases can carry a `gtin` too, the barcode on the kit's box.
 `links`: pages about this part, release or kit elsewhere, as `{ site, url }`
 (https only); the site shows them as buttons next to the web search.
 `kind = "press"` marks a news or press site's post about the release or part (Big Squid RC); see `announced`.
+`kind = "dealer"` marks a retailer's or distributor's product page for this release or part, when the maker has none for it. It is a shop's page, never the maker's: the site shows it as "Dealer page: <host>", never as the product page. A release keeps a dealer link only when it has no maker product page (a maker link or a `product_page` document of the maker); one per release, its own product page on the shop. A shop's listing page that names several releases is a document of kind `catalog`, never a release's link.
 `kind = "fan-site"` marks a link to a fan or community site (such as
 TamiyaBase): it is a courtesy link for readers, not a source for any value in
 Hobbydex, and the site shows it apart from the brand's own pages.
@@ -954,6 +955,8 @@ else (a forum, a fan site, a shop's own copy) is never the `url`. The site
 links the page first and the file as "PDF". `manual_no` (optional) is the maker's manual number as the file prints it in its footer (Tamiya: "(11053802)"), kept per file because a reprint may print another number. A setup_sheet is a maker's setup sheet (blank
 or a driver's setup for a track) or a setup reference chart (gear ratios,
 toe angles), linked to the releases of the car it is for.
+
+A `product_page` is the maker's own page for the release. A shop's page of the maker's product (a dealer, distributor or retailer) is a `catalog` document, never a `product_page`: a release that has no maker page may link that shop page as a release link of kind `dealer`.
 
 A `news` document is one dated post or press release on the maker's own site
 (news page, blog, newsroom) that announces releases as new or available:
