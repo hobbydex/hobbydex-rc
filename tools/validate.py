@@ -451,9 +451,11 @@ def main():
                 sb, ss = d.get("seen_by"), d.get("seen_by_source")
                 if not (isinstance(sb, str) and re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", sb) and int(sb[:4]) <= this_year and (len(sb) < 7 or 1 <= int(sb[5:7]) <= 12)):
                     errors.append(f"{path}: seen_by {sb!r} should be YYYY, YYYY-MM or YYYY-MM-DD (not after this year)")
-                if not (isinstance(ss, str) and re.fullmatch(r"https://web\.archive\.org/web/\d{14}/https?://.+", ss)):
-                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>")
-                elif isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
+                archive = isinstance(ss, str) and re.fullmatch(r"https://web\.archive\.org/web/\d{14}/https?://.+", ss)
+                shop = isinstance(ss, str) and re.fullmatch(r"https://[^/\s]+/products/[^/\s]+", ss)
+                if not (archive or shop):
+                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL> or the maker's shop product page https://<host>/products/<handle>")
+                elif archive and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
                     errors.append(f"{path}: seen_by is only for a release with no released, year or announced (a date a source states)")

@@ -270,7 +270,7 @@ wins when both exist.
 
 `seen_by` (optional, `YYYY`, `YYYY-MM` or `YYYY-MM-DD`; the importer writes `YYYY-MM`) is an upper bound for a release no source dates: the first Internet Archive capture of a maker page or file that names exactly this release (its item number in the URL, or its own product page). The release was on sale no later than that month. It is not a release date: never set it on a release that has `released`, `year` or `announced`, and the site marks it as not the release date. The importer only sets it on releases with no date; when a real date (released, year or announced) is found later, `seen_by` and `seen_by_source` are removed in the same change, and the site shows the real date whenever one exists.
 
-`seen_by_source` (with `seen_by`, and only with it): the capture the month comes from, `https://web.archive.org/web/<14-digit timestamp>/<original URL>`. Set both or neither, never together with `released` or `year`.
+`seen_by_source` (with `seen_by`, and only with it): the capture the month comes from, `https://web.archive.org/web/<14-digit timestamp>/<original URL>`, or, when the month is the day the maker's own Shopify shop published the product (its products.json `published_at`), the maker's product page `https://<host>/products/<handle>`. Set both or neither, never together with `released` or `year`.
 
 ## part
 
