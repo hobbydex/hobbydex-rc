@@ -261,7 +261,7 @@ owner allowed it) when Tamiya's own pages give no first-release day, with the
 model's TamiyaBase link in `links` (kind `fan-site`). The maker's own date
 wins when both exist.
 
-`announced` (optional, `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, at the precision the source gives): the day the maker announced the release (its news, press or new-product page), with that page among the release's documents. Precedence everywhere: `released` or `year` (a date a source states as the release), then `announced`, then `seen_by`. An announced date is not after `released` when both exist. The site shows an announced-only release as "announced Mar 2019" with no asterisk.
+`announced` (optional, `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, at the precision the source gives): the day the maker announced the release: its news, press or new-product page, or the earliest video the brand posts that shows the product (any video type; a video showing a model without colour applies to that model's releases). `announced_source` is required with `announced` and never without it: the https URL that day comes from, the maker's news or press post, product page or video, or a Big Squid RC post when no maker page gives the day (`links` then carries it as kind `press`, a courtesy link and the source of that day only, never of `released`). The maker's page is also among the release's documents. Precedence everywhere: `released` or `year` (a date a source states as the release), then `announced`, then `seen_by`. An announced date is not after `released` when both exist. The site shows an announced-only release as "announced Mar 2019" with no asterisk, and names the source next to it.
 
 `announced_source` (with `announced`): the https URL of the page or video the day comes from, a maker's video (`https://www.youtube.com/watch?v=<id>`) or announcement page; the video is also among the release's documents. Set with every `announced` a maker source gives; the validator checks the form only.
 
@@ -296,7 +296,9 @@ store handle or SKU there to fill it. Its id keeps a slug
 Optional, generated when the source states it: `released`, the date the
 brand lists the part as released, `YYYY-MM-DD` or `YYYY-MM` (HUDY's product
 list gives a day per item, Tamiya's monthly new-items list a month),
-and `applies_to`, the models the
+`announced` (`YYYY-MM-DD`) with `announced_source`, the https URL it comes
+from, as for a release (the brand's news post, product page or video, or a
+Big Squid RC post naming the part by its number or exact name), and `applies_to`, the models the
 brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 A brand that names the car only in the part's name (RW Racing: "Supalite Spurs
 48DP for Xray 008/009 73T") gives the car's words from the name, "Xray 008/009".
@@ -501,6 +503,7 @@ Releases can carry a `gtin` too, the barcode on the kit's box.
 
 `links`: pages about this part, release or kit elsewhere, as `{ site, url }`
 (https only); the site shows them as buttons next to the web search.
+`kind = "press"` marks a news or press site's post about the release or part (Big Squid RC); see `announced`.
 `kind = "fan-site"` marks a link to a fan or community site (such as
 TamiyaBase): it is a courtesy link for readers, not a source for any value in
 Hobbydex, and the site shows it apart from the brand's own pages.
