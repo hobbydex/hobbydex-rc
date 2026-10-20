@@ -415,8 +415,8 @@ def main():
             if not (isinstance(l, dict) and l.get("site") and (u.startswith("https://") or
                     (u.startswith("http://") and urllib.parse.urlsplit(u).hostname in http_hosts))):
                 errors.append(f"{path}: link {l!r} needs a site and an https url (http only for a maker site that has no https)")
-            elif "kind" in l and l["kind"] not in ("fan-site", "press"):
-                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press']")
+            elif "kind" in l and l["kind"] not in ("fan-site", "press", "dealer"):
+                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press', 'dealer']")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
             errors.append(f"{path}: paint finish = {d['finish']!r} not in {sorted(PAINT_FINISH)}")
         if kind in ("release", "part"):
