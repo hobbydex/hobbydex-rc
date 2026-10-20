@@ -242,6 +242,12 @@ them out of the by-date lists.
 supersedes = "release/xray/xb8-2022"
 ```
 
+`related` (optional): links from a release to another release of the same brand, one row per link: `{ release, relation, source }`. The only relation so far is `rerelease-of`: the release is a re-release of the original (its first release), and `release` names that original, never a previous re-release of it (Tamiya's Grasshopper 58346 of 2005 and 47522 of 2025 both point to 58043 of 1984). Set only where the maker says so (its product page: "re-released and updated version of X, the original of which was first released in 1987"), else where TamiyaBase's model page names the original; a same name on the same kit alone counts only when it is unambiguous, with `source = "same name and platform"`. `source` names that page: a document id (`doc/tamiya/58742-product-page`) or the URL. The original must be the same brand and older (its date is earlier than the re-release's `released` or `year`). A colour or body variant that TamiyaBase lists as a reissue of a kit is linked too; factory-built RTR versions of a kit (TamiyaBase's 23xxx numbers) are not re-releases and take no link. The site shows "Re-release of <original> (<year>)" on the re-release and "Re-released as" on the original.
+
+```toml
+related = [{ release = "release/tamiya/58043", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/58346" }]
+```
+
 `released`: the release date as precise as a source states it, `YYYY-MM-DD`
 or `YYYY-MM` (Tamiya's monthly new-items list gives the month; a full date
 from another source in that month is kept). It must agree with `year`. Never
