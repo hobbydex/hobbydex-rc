@@ -174,6 +174,8 @@ announced | released | discontinued.
 
 `name_source_url` (optional, release only, an https URL): the page a release's name was read from when the maker's own pages and manuals give none, e.g. TamiyaBase's download page whose title names a number-only Tamiya release. Never set on a release whose name comes from Tamiya; the release notes say where the name came from.
 
+`tamiyabase_source` (optional, release only, an https URL): the TamiyaBase model page that gave the release's `category` (its "Type of model"), its `kind` (its "Kit type") or the kit it moved to (its "Chassis"), where the maker's own pages give none; the notes say which facts came from it. Not set on a release whose facts all come from the maker.
+
 `scale` (optional) overrides the kit's scale for this release, in the kit's "1/10" format. Set only where the release's scale differs from its kit's and a source states it (Tamiya's CW-01 Lunch Box is 1/12 while the 1/10 Montero Wheelie and Unimog sit on the same chassis); the release's own product page or manual title is the source, and the release notes say which (for Tamiya's Tamtech and Quick Drive series, TamiyaBase's model page gives the scale and the notes say so). Left out when it matches the kit.
 
 ```toml
