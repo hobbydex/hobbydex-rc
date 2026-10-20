@@ -46,6 +46,7 @@ VEHICLE_MAKES = {
     "Plymouth", "Polaris", "Pontiac", "Porsche", "Ram", "Renault", "Scania", "Seat", "Shelby", "Skoda", "Subaru", "Suzuki",
     "Toyota", "Tyrrell", "UAZ", "Vauxhall", "Volkswagen", "Volvo", "Willys", "Yamaha",
 }
+SOURCE_DATE_FIELDS = {"released", "announced", "year", "model_year", "seen_by", "launched", "ended", "owner", "owner_since"}   # dates and dated facts keep their own *_source fields
 SURFACES = {"carpet", "astro", "clay", "dirt", "asphalt", "high-grip"}   # the track surface a race kit is built for
 
 DOUBTABLE = {"release": ("released", "year", "announced"), "brand": ("launched", "ended")}   # dates that may carry <field>_doubt
@@ -471,9 +472,20 @@ def main():
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
                     errors.append(f"{path}: seen_by is only for a release with no released, year or announced (a date a source states)")
-        nsu = d.get("name_source_url")
-        if nsu is not None and (kind != "release" or not (isinstance(nsu, str) and nsu.startswith("https://"))):
-            errors.append(f"{path}: name_source_url is an https URL on a release only (the page the name's title came from), got {nsu!r}")
+        srcs = d.get("sources")
+        if srcs is not None:
+            if kind not in ("kit", "release", "part"):
+                errors.append(f"{path}: sources is only for a kit, release or part")
+            elif not (isinstance(srcs, dict) and srcs):
+                errors.append(f"{path}: sources should be a non-empty table of field = https URL")
+            else:
+                for k, v in srcs.items():
+                    if k in SOURCE_DATE_FIELDS:
+                        errors.append(f"{path}: sources.{k} is not allowed: a date keeps its own {k}_source field")
+                    elif k not in d:
+                        errors.append(f"{path}: sources.{k} names a field the record does not have")
+                    elif not (isinstance(v, str) and v.startswith("https://")):
+                        errors.append(f"{path}: sources.{k} should be an https URL, got {v!r}")
         ve = d.get("depicts") if kind in ("release", "part") else None
         if ve is not None:
             if kind == "part" and d.get("category") != "body":

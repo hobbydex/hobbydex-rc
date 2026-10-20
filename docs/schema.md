@@ -172,10 +172,6 @@ announced | released | discontinued.
 
 `color` (optional) is the colour the release is sold in, in plain words from the same palette as a part's `color` ("red"; two or three colours as "blue/black", "green/black/white"), read from the name's colour clause by link_release_colours.py; left out when the name names none.
 
-`name_source_url` (optional, release only, an https URL): the page a release's name was read from when the maker's own pages and manuals give none, e.g. TamiyaBase's download page whose title names a number-only Tamiya release. Never set on a release whose name comes from Tamiya; the release notes say where the name came from.
-
-`tamiyabase_source` (optional, release only, an https URL): the TamiyaBase model page that gave the release's `category` (its "Type of model"), its `kind` (its "Kit type") or the kit it moved to (its "Chassis"), where the maker's own pages give none; the notes say which facts came from it. Not set on a release whose facts all come from the maker.
-
 `scale` (optional) overrides the kit's scale for this release, in the kit's "1/10" format. Set only where the release's scale differs from its kit's and a source states it (Tamiya's CW-01 Lunch Box is 1/12 while the 1/10 Montero Wheelie and Unimog sit on the same chassis); the release's own product page or manual title is the source, and the release notes say which (for Tamiya's Tamtech and Quick Drive series, TamiyaBase's model page gives the scale and the notes say so). Left out when it matches the kit.
 
 ```toml
@@ -1076,6 +1072,16 @@ never borrows the kit's or another release's, which may show another car.
 A body part with art shows it on its part page.
 Releases of one body (colour, kit/RTR and equipment variants) each carry
 the same file.
+
+## sources
+
+`sources` (optional, on a kit, release or part): an inline table of the page each fact came from, when that page is not the record's main source: a fan site such as TamiyaBase, or a download page whose title gives a name. Keys are the record's own field names (`name`, `category`, `kind`, `kit`, `scale`, `drive` ...), each present on the record; values are https URLs. Dates are not keys: `released`, `announced`, `year`, `model_year`, `seen_by` and the brand's dates keep their own `*_source` fields. Set a key only for a value the page gave; the notes say where the rest came from.
+
+```toml
+sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/32-46xxx-quick-drive-qd-series-pdf/88122-manual-46015", kind = "https://www.tamiyabase.com/tamiya-models/46015" }
+```
+
+The site shows a small source note next to each sourced fact, labelled with the host ("TamiyaBase", else the maker's host) and linked to the URL.
 
 ## Conventions
 
