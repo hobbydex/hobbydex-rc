@@ -45,6 +45,7 @@ VEHICLE_MAKES = {
     "Maserati", "Mazda", "McLaren", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Opel", "Pagani", "Peterbilt", "Peugeot",
     "Plymouth", "Polaris", "Pontiac", "Porsche", "Ram", "Renault", "Scania", "Seat", "Shelby", "Skoda", "Subaru", "Suzuki",
     "Toyota", "Tyrrell", "UAZ", "Vauxhall", "Volkswagen", "Volvo", "Willys", "Yamaha",
+    "Allison", "General Dynamics", "Henschel", "Krauss-Maffei", "Krupp", "MIAG", "Mitsubishi Heavy Industries",  # military vehicle makers (decisions.md 2026-10-20)
 }
 SOURCE_DATE_FIELDS = {"released", "announced", "year", "model_year", "seen_by", "launched", "ended", "owner", "owner_since"}   # dates and dated facts keep their own *_source fields
 SURFACES = {"carpet", "astro", "clay", "dirt", "asphalt", "high-grip"}   # the track surface a race kit is built for
