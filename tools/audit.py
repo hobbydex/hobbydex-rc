@@ -73,11 +73,14 @@ def load_tools(tools):
     if os.path.exists(cls):
         spec = importlib.util.spec_from_file_location("classify_parts", cls)
         mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, HERE)   # classify_parts imports layout.py from the data repo
         try:
             spec.loader.exec_module(mod)
             out["classify"] = mod.classify
         except Exception as e:  # the audit still runs without it
             print(f"note: classifier not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(HERE)
     srcdir = os.path.join(tools, "tools", "art", "sources")
     if os.path.isdir(srcdir):
         items = []
