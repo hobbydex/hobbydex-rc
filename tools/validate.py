@@ -413,10 +413,17 @@ def main():
             if not (isinstance(l, dict) and l.get("site") and (u.startswith("https://") or
                     (u.startswith("http://") and urllib.parse.urlsplit(u).hostname in http_hosts))):
                 errors.append(f"{path}: link {l!r} needs a site and an https url (http only for a maker site that has no https)")
-            elif "kind" in l and l["kind"] != "fan-site":
-                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site']")
+            elif "kind" in l and l["kind"] not in ("fan-site", "press"):
+                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press']")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
             errors.append(f"{path}: paint finish = {d['finish']!r} not in {sorted(PAINT_FINISH)}")
+        if kind in ("release", "part"):
+            if "announced" in d and "announced_source" not in d:
+                errors.append(f"{path}: announced needs announced_source (the https URL the date comes from)")
+            if "announced_source" in d and ("announced" not in d or not str(d["announced_source"]).startswith("https://")):
+                errors.append(f"{path}: announced_source needs announced and an https URL, got {d['announced_source']!r}")
+            if kind == "part" and "announced" in d and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(d["announced"])):
+                errors.append(f"{path}: announced {d['announced']!r} on a part should be YYYY-MM-DD")
         # a part is equivalent only to a spec of its own kind; a part that comes with bearings, screws or a battery lists them in `includes`
         if kind == "part" and d.get("category"):
             for e in d.get("equivalent_to", []):
