@@ -5,7 +5,9 @@ number = "10402"
 name = "10402 1/10 RTR"
 kind = "rtr"
 status = "released"
-documents = ["doc/wltoys/10402-reseller-parts"]
+links = [
+  { site = "wl-toys.com", url = "https://www.wl-toys.com/WLtoys-10402-RC-Car-Spare-Parts-Accessories-WL-toys-10402-rc-racing-Car-parts-Replacement-Accessories-Truck-813-814-1542-1.htm", kind = "dealer" },
+]
 notes = "Parts from a reseller's spare parts listing, not a WLtoys document"
 contains = [
   { part = "part/wltoys/10402.0831", role = "listed", source = "doc/wltoys/10402-reseller-parts" },

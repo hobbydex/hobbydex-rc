@@ -5,7 +5,9 @@ number = "K949"
 name = "K949 1/10 RTR"
 kind = "rtr"
 status = "released"
-documents = ["doc/wltoys/k949-reseller-parts"]
+links = [
+  { site = "wl-toys.com", url = "https://www.wl-toys.com/WLtoys-K949-RC-Car-Parts-WL-toys-K949-rc-racing-car-parts-813-814-1104-1.htm", kind = "dealer" },
+]
 notes = "Parts from a reseller's spare parts listing, not a WLtoys document"
 contains = [
   { part = "part/wltoys/A929-60", role = "listed", source = "doc/wltoys/k949-reseller-parts" },
