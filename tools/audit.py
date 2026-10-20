@@ -314,8 +314,12 @@ def main():
           [d for d in docs.values() if not d.get("page") and not d.get("url")])
 
     # 19. release lists a document that does not list the release back
-    check("doc-not-back-linked", "add the release id to the document's releases (or remove the document from the release)",
-          [r for r in rels for d in r.get("documents", []) if d in docs and r["id"] not in (docs[d].get("releases") or [])])
+    # both sides: a release lists a document that does not list it, or a document lists a release that does not list it
+    rel_by_id = {r["id"]: r for r in rels}
+    one_sided = [r["id"] for r in rels for d in r.get("documents", []) if d in docs and r["id"] not in (docs[d].get("releases") or [])]
+    one_sided += [rid for d in docs.values() for rid in (d.get("releases") or []) if rid in rel_by_id and d["id"] not in (rel_by_id[rid].get("documents") or [])]
+    check("doc-not-back-linked", "run tools/sync_doc_links.py --write in hobbydex-tools (adds the missing side; catalogues, shared shop pages and dealer listings it holds are listed there)",
+          one_sided)
 
     # 19b. a release lists one document more than once (a repeated append by an importer)
     check("duplicate-doc-ref", "remove the repeated entry from the release's documents; the importer that appends it should test membership first",
