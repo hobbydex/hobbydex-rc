@@ -11,7 +11,9 @@ gtin = "605482670569"
 notes = "on sale by: the manual's copyright line (c) 2020"
 documents = ["doc/losi/los01017-manual-en", "doc/losi/los01017-product-page", "doc/losi/los01017-manual-de", "doc/losi/los01017-manual-fr", "doc/losi/los01017-manual-it", "doc/losi/youtube-N8kJmDzXeZs"]
 contains = [
-  { part = "part/losi/LOS235014", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS213002", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS214016", role = "kit", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS312006", role = "kit", source = "doc/losi/horizon-part-pages" },
   { part = "part/spektrum/SPMSSX107", role = "kit", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS212013", role = "option", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS212014", role = "option", source = "doc/losi/los01017-manual-en" },
@@ -26,10 +28,14 @@ contains = [
   { part = "part/losi/LOS311007", role = "option", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS311008", role = "option", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS311009", role = "option", source = "doc/losi/los01017-manual-en" },
+  { part = "part/losi/LOS311010", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS311011", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS312004", role = "option", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS314004", role = "option", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS314005", role = "option", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS41008", role = "option", source = "doc/losi/los01017-manual-en" },
+  { part = "part/losi/LOSB1117", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSB1119", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS210013", role = "listed", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS210014", role = "listed", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS210015", role = "listed", source = "doc/losi/los01017-manual-en" },
@@ -63,6 +69,7 @@ contains = [
   { part = "part/losi/LOS216004", role = "listed", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS216005", role = "listed", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS217001", role = "listed", source = "doc/losi/los01017-manual-en" },
+  { part = "part/losi/LOS235014", role = "listed", source = "doc/losi/los01017-manual-de" },
   { part = "part/losi/LOS41009", role = "listed", source = "doc/losi/los01017-manual-en" },
   { part = "part/losi/LOS41010", role = "listed", source = "doc/losi/los01017-manual-en" },
 ]

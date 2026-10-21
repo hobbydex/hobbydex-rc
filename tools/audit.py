@@ -401,6 +401,19 @@ def main():
     # 27. video docs whose release has a product page with gallery videos not attached: skipped (needs fetched pages)
     results["video-gallery-unattached"] = {"fix": "not checked: needs the cached product pages parsed for gallery video IDs", "count": None, "examples": [], "all": [], "skipped": True}
 
+    # 28. a release whose box (kit rows) holds two gears of one kind at different pitches: two pinions or two spurs
+    part_of = {p["id"]: p for p in parts}
+    clash = []
+    for r in rels:
+        pitches = collections.defaultdict(set)
+        for c in r.get("contains", []):
+            p = part_of.get(c["part"], {})
+            if c.get("role") == "kit" and p.get("category") in ("pinion", "spur") and p.get("pitch_dp"):
+                pitches[p["category"]].add(p["pitch_dp"])
+        if any(len(v) > 1 for v in pitches.values()):
+            clash.append(r)
+    check("release-two-gear-pitches", "mark the other pitch as option or listed: the release's own parts list or exploded view says which one is in the box", clash)
+
     ranked = sorted((n for n in results if results[n]["count"]), key=lambda n: -results[n]["count"])
     skipped = [n for n in results if results[n]["count"] is None]
     if args.list:
