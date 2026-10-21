@@ -157,6 +157,12 @@ rebrand_of = [
 ]
 ```
 
+`supersedes` (optional, on the newer kit): the kit this platform replaces, a kit id of the same brand, one predecessor per kit. Two sources: the maker says so (cited in `notes`), or the kits are numbered generations of one line with the same category, scale and drive: `<line><n>` is replaced by the next number of that line that exists (BD7 -> BD8; BD5 -> BD7 when there is no BD6). Variant suffixes (BD10LC, TA07 PRO) are a line of their own and take no link. Numbers that are model codes rather than generations take none. The releases stay on the kit they were sold for; the site shows "Replaces" and "Replaced by" on the platform page.
+
+```toml
+supersedes = "kit/yokomo/bd7"
+```
+
 A model the maker publishes with its own manual and parts list is its own
 platform: its own kit file, linked to the platform it follows with
 `same_platform_as` and, on the newer release, `supersedes`. The same chassis
