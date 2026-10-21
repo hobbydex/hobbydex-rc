@@ -854,9 +854,13 @@ E-ring" on a 3 mm shaft). A part that states a thickness links to
 name gives one); a part that states none links to the standard spec. Bowed
 (wave) E-rings are `spec/eclip/<shaft>mm-bowed` (`variant = "bowed"`). Parts
 link with match "functional" (size from the name); thin and HD versions link
-"close". A pack of several shafts lists one `includes` row per spec. The DIN 6799
-size numbers and groove sizes are not recorded (no source held), so no spec
-carries a `standards` entry; a name that gives only a DIN size is left unlinked.
+"close". A pack of several shafts lists one `includes` row per spec. A spec
+whose shaft fits a DIN 6799 size (the size whose shaft range covers it, from
+`data/standards/din-6799.toml`) carries `standards = ["DIN 6799"]`, `groove_mm`
+(the DIN size, its nominal groove diameter), `din_outer_mm` and
+`din_thickness_mm`. A thickness variant carries them only when its thickness
+equals the DIN thickness; the others are non-standard and carry none. A name
+that gives only a DIN size links to the spec of the smallest shaft that size fits.
 
 ```toml
 id = "spec/eclip/3mm"
