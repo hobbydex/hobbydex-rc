@@ -2,7 +2,10 @@ id = "part/yokomo/YS-200"
 brand = "brand/yokomo"
 number = "YS-200"
 name = "Shock Oil (# 200)"
-name_ja = "ショックオイル (# 200) 1"
 pack_qty = 1
+name_ja = "ショックオイル (# 200) 1"
 category = "oil-grease"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
+equivalent_to = [
+  { spec = "spec/oil/silicone-200cst", match = "functional", notes = "Viscosity number #200 as the brand states it, on the cSt scale; measuring temperature not given" },
+]
