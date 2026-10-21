@@ -212,6 +212,22 @@ def check_makes(docs, errors):
     for name in sorted(VEHICLE_MAKES - seen):
         errors.append(f"data/makes: no make file for {name!r}")
 
+NAME_BRAND_EXCEPTIONS = {   # a name that starts with its brand's name on purpose (docs/schema.md "release", "kit", "part")
+    "release/kyosho/30645",   # KYOSHO AMERICA: the maker's US company, not a repeat of the brand
+    "release/team-associated/9064", "release/team-associated/9065",   # "Team Associated / Yokomo": a shared kit
+    "part/fms/FMSC2051", "part/fms/FMSC2139",   # "FMS / ROC": shared with ROC
+}
+
+def check_names_no_brand(docs, errors):
+    """A release, kit or part name does not repeat its brand: the site prints the brand in front."""
+    brand_names = {d.get("id"): d.get("name", "") for _, k, d in docs if k == "brand"}
+    for path, kind, d in docs:
+        if kind not in ("release", "kit", "part") or d.get("id") in NAME_BRAND_EXCEPTIONS:
+            continue
+        bn, name = brand_names.get(d.get("brand"), ""), d.get("name", "")
+        if bn and isinstance(name, str) and re.match(re.escape(bn) + " ", name, re.I):
+            errors.append(f"{path}: name {name!r} repeats the brand {bn!r}; the site prints it in front (docs/schema.md \"{kind}\")")
+
 def check_dealer_links(docs, errors):
     """A dealer link (a links entry with kind "dealer", a reseller's product page) is a fallback: a release or part
     with a dealer link has no maker product link (a links entry with no kind) and no maker product page (a
@@ -754,6 +770,7 @@ def main():
     check_release_related(docs, errors)
     check_makes(docs, errors)
     check_dealer_links(docs, errors)
+    check_names_no_brand(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:
