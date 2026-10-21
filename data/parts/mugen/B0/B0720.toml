@@ -2,6 +2,7 @@ id = "part/mugen/B0720"
 brand = "brand/mugen"
 number = "B0720"
 name = "OE-2.3 E-RING"
+category = "pin-clip"
 gtin = "4944925207204"
 fits = [
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
@@ -13,3 +14,6 @@ fits = [
   { kit = "kit/mugen/prime-12", type = "direct", source = "doc/mugen/prime-12-part-list" },
 ]
 pack_qty = 10
+equivalent_to = [
+  { spec = "spec/eclip/2.3mm", match = "functional", notes = "Shaft size from the name" },
+]

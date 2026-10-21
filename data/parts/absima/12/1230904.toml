@@ -7,3 +7,6 @@ fits = [
   { kit = "kit/absima/adb1", type = "direct", source = "doc/absima/spares-adb1" },
 ]
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/eclip/2.5mm-0.4", match = "functional", notes = "Shaft size from the name; the clip's thickness is the spec's" },
+]

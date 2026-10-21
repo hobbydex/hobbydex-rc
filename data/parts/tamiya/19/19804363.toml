@@ -2,5 +2,9 @@ id = "part/tamiya/19804363"
 brand = "brand/tamiya"
 number = "19804363"
 name = "2mm E-ring (Large)"
+category = "pin-clip"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/eclip/2mm", match = "functional", notes = "Shaft size from the name" },
+]

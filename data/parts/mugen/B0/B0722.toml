@@ -2,6 +2,7 @@ id = "part/mugen/B0722"
 brand = "brand/mugen"
 number = "B0722"
 name = "OE-2.5 E-RING"
+category = "pin-clip"
 gtin = "4944925207228"
 fits = [
   { kit = "kit/mugen/mbx5t", type = "direct", source = "doc/mugen/mbx-5t-part-list" },
@@ -14,4 +15,9 @@ fits = [
   { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
   { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
 ]
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/2.5-E-RING/B0722" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/2.5-E-RING/B0722" },
+]
+equivalent_to = [
+  { spec = "spec/eclip/2.5mm", match = "functional", notes = "Shaft size from the name" },
+]

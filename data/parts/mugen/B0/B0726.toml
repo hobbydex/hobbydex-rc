@@ -2,10 +2,16 @@ id = "part/mugen/B0726"
 brand = "brand/mugen"
 number = "B0726"
 name = "OE-5 E-RING"
+category = "pin-clip"
 fits = [
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
   { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
   { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
 ]
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/OE-5-E-RING/B0726" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/OE-5-E-RING/B0726" },
+]
+equivalent_to = [
+  { spec = "spec/eclip/5mm", match = "functional", notes = "Shaft size from the name" },
+]

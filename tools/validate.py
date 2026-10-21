@@ -83,6 +83,7 @@ ENUMS = {
     "part.viscosity": {"thin", "medium", "thick"},
     "spec.profile": {"regular", "thin"},
     "spec.shape": {"flat", "countersunk", "conical"},   # washer specs (docs/schema.md "Washer specs")
+    "spec.variant": {"bowed"},   # e-clip specs (docs/schema.md "E-clip specs")
     "spec.motor_type": {"brushed", "brushless"},
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh"},
@@ -117,7 +118,7 @@ NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that co
 SPEC_PART_CATS = {
     "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin-clip"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
     "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
-    "washer": {"washer-shim"},
+    "washer": {"washer-shim"}, "eclip": {"pin-clip"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
 }
 
@@ -710,6 +711,15 @@ def main():
                 sid = f"spec/washer/{d['shape'] + '-' if d.get('shape') not in (None, 'flat') else ''}{b}x{o}x{t}"
                 if d["id"] != sid:
                     errors.append(f"{path}: washer spec id should be {sid} (shape prefix, then bore x outer x thickness)")
+        if kind == "spec" and d.get("category") == "eclip":
+            s = d.get("shaft_mm")
+            if not isinstance(s, (int, float)) or isinstance(s, bool) or not 1 <= s <= 12:
+                errors.append(f"{path}: e-clip spec needs shaft_mm, the shaft it fits (1 to 12 mm)")
+            else:
+                suffix = "-bowed" if d.get("variant") == "bowed" else f"-{d['thickness_mm']}" if "thickness_mm" in d else ""
+                sid = f"spec/eclip/{s}mm{suffix}"
+                if d["id"] != sid:
+                    errors.append(f"{path}: e-clip spec id should be {sid} (shaft, then thickness or bowed)")
         if kind == "spec":
             for code in d.get("standards", []):
                 if code not in codes:

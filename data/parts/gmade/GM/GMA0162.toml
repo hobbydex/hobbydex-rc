@@ -2,10 +2,14 @@ id = "part/gmade/GMA0162"
 brand = "brand/gmade"
 number = "GMA0162"
 name = "4mm E-Ring"
+category = "pin-clip"
 applies_to = "GS02F SPIDER"
 fits = [
   { kit = "kit/gmade/gs02f-spider", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F SPIDER replacement parts" },
 ]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-4mm-e-ring/961/" },
+]
+equivalent_to = [
+  { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },
 ]
