@@ -7,3 +7,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-outer-axle-bearings-12x24x6mm-2/LOSB5972.html" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/12x24x6", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

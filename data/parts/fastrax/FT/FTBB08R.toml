@@ -6,3 +6,8 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/FTBB08R/fastrax-1-4-x-3-8-x-1-8-rubber-shielded-bearing" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/6.35x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+seal = "rubber-metal"

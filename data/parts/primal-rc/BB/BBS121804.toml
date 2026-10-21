@@ -3,3 +3,7 @@ brand = "brand/primal-rc"
 number = "BBS121804"
 name = "Bearing Φ12×Φ18×4"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

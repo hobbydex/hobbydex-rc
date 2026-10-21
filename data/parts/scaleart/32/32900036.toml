@@ -7,4 +7,6 @@ category_source = "curated"
 documents = ["doc/scaleart/74000400-manual"]
 equivalent_to = [
   { spec = "spec/bearing/flanged-5x9x3", match = "functional", source = "doc/scaleart/74000400-manual" },
+  { spec = "spec/bearing/5x9x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+material = "steel"

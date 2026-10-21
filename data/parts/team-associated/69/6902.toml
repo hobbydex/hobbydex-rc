@@ -3,3 +3,7 @@ brand = "brand/team-associated"
 number = "6902"
 name = "Flanged Bearing 3/16 x 5/16 x 1/8"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-4.762x7.938x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
