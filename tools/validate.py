@@ -218,6 +218,39 @@ NAME_BRAND_EXCEPTIONS = {   # a name that starts with its brand's name on purpos
     "part/fms/FMSC2051", "part/fms/FMSC2139",   # "FMS / ROC": shared with ROC
 }
 
+def check_kit_supersedes(docs, errors):
+    """A kit's supersedes: the kit it replaces, same brand, one predecessor per kit, no cycles (docs/schema.md "kit")."""
+    kits = {d["id"]: d for _, kind, d in docs if kind == "kit"}
+    succ = {}
+    for path, kind, d in docs:
+        if kind != "kit" or "supersedes" not in d:
+            continue
+        v = d["supersedes"]
+        if not (isinstance(v, str) and v.startswith("kit/")):
+            errors.append(f"{path}: supersedes = {v!r} should be a kit id")
+            continue
+        if v == d.get("id"):
+            errors.append(f"{path}: supersedes itself")
+            continue
+        if v not in kits:
+            errors.append(f"{path}: supersedes -> {v} does not exist")
+            continue
+        if kits[v].get("brand") != d.get("brand"):
+            errors.append(f"{path}: supersedes -> {v} is of another brand")
+        succ[d["id"]] = v
+    looped = set()
+    for start in succ:   # a chain of kits that replace each other must end, never loop
+        seen, cur = [], start
+        while cur in succ:
+            if cur in seen:
+                if cur not in looped:
+                    errors.append(f"kit supersedes cycle: {' -> '.join(seen[seen.index(cur):] + [cur])}")
+                    looped.update(seen)
+                break
+            seen.append(cur)
+            cur = succ[cur]
+
+
 def check_names_no_brand(docs, errors):
     """A release, kit or part name does not repeat its brand: the site prints the brand in front."""
     brand_names = {d.get("id"): d.get("name", "") for _, k, d in docs if k == "brand"}
@@ -413,6 +446,8 @@ def main():
                 errors.append(f"{path}: {where}{field} -> {value} does not exist")
         for k, v in d.items():
             if kind == "release" and k == "related":   # checked with the other releases in check_release_related
+                continue
+            if kind == "kit" and k == "supersedes":   # checked in check_kit_supersedes
                 continue
             if kind == "release" and k == "supersedes":   # the release this one replaces (docs/schema.md "release")
                 if not (isinstance(v, str) and v.startswith("release/")):
@@ -768,6 +803,7 @@ def main():
     body_parts = {d.get("id") for _, kind, d in docs if kind == "part" and d.get("category") == "body"}
     counts["art"] = check_art(ids, errors, body_parts)
     check_release_related(docs, errors)
+    check_kit_supersedes(docs, errors)
     check_makes(docs, errors)
     check_dealer_links(docs, errors)
     check_names_no_brand(docs, errors)
