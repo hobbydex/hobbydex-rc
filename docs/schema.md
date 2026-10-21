@@ -965,7 +965,7 @@ readable), `url` the file itself as the maker serves it, which may be a CDN
 (Tamiya's CloudFront) or the maker's own Drive or Dropbox share (Redcat,
 Absima). Give `page` whenever the maker has one; a file uploaded by someone
 else (a forum, a fan site, a shop's own copy) is never the `url`. The site
-links the page first and the file as "PDF". `manual_no` (optional) is the maker's manual number as the file prints it in its footer (Tamiya: "(11053802)"), kept per file because a reprint may print another number. A setup_sheet is a maker's setup sheet (blank
+links the page first and the file as "PDF". `gone` (optional, `YYYY-MM-DD`) is the date the file behind `url` was found no longer to exist (a Drive file deleted or trashed by the maker): `url` is then removed with it, the page stays, and the site shows no PDF. `manual_no` (optional) is the maker's manual number as the file prints it in its footer (Tamiya: "(11053802)"), kept per file because a reprint may print another number. A setup_sheet is a maker's setup sheet (blank
 or a driver's setup for a track) or a setup reference chart (gear ratios,
 toe angles), linked to the releases of the car it is for.
 
