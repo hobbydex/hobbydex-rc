@@ -1,11 +1,16 @@
 id = "release/abc-hobby/25612"
-kit = "kit/abc-hobby/gambado"
 brand = "brand/abc-hobby"
-name = "サイバー CR-X 「無限 CR-X PRO.2」"
+kit = "kit/abc-hobby/gambado"
+name = "Cyber CR-X Mugen CR-X PRO.2"
+name_ja = "サイバー CR-X 「無限 CR-X PRO.2」"
 kind = "kit"
 status = "released"
-depicts = { make = "Honda", model = "CR-X" }
 documents = ["doc/abc-hobby/jp-rc-gamb-gambline"]
 links = [
   { site = "ABC Hobby", url = "https://abchobby.com/JP/page/rc/gamb/gambline.html" },
 ]
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+
+[depicts]
+make = "Honda"
+model = "CR-X"
