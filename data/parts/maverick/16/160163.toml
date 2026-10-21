@@ -6,3 +6,11 @@ fits = [
   { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150350-kit-page" },
   { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/150313-kit-page" },
 ]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5300
+c_rating = 40
+category = "battery"

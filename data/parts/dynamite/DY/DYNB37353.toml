@@ -6,3 +6,11 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-11.1v-3700mah-3s-50c-reaction-2-lipo-battery-ec3/DYNB37353.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 3700
+c_rating = 50
+connector = "EC3"

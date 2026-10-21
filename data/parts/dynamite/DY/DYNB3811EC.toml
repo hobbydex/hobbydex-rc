@@ -6,3 +6,12 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-reaction-11.1v-5000mah-3s-50c-lipo-battery-hardcase-ec5/DYNB3811EC.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 5000
+c_rating = 50
+connector = "EC5"
+case = "hard"

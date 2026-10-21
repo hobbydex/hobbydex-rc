@@ -5,3 +5,11 @@ name = "Plazma 7.4V 5300mAh 40C LiPo"
 fits = [
   { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
 ]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5300
+c_rating = 40
+category = "battery"

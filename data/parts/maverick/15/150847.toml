@@ -2,3 +2,10 @@ id = "part/maverick/150847"
 brand = "brand/maverick"
 number = "150847"
 name = "Element 7.4V 350mAh LiPo"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-350mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 350
+category = "battery"

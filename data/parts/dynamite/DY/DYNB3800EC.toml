@@ -6,3 +6,12 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-reaction-7.4v-4000mah-50c-2s-lipo-hardcase-shorty-96mm-ec3/DYNB3800EC.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4000
+c_rating = 50
+connector = "EC3"
+case = "hard"
