@@ -5,3 +5,6 @@ name = "Wheel Nuts M3"
 pack_qty = 8
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-wheel", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

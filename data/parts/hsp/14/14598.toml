@@ -10,3 +10,6 @@ fits = [
   { kit = "kit/hsp/94601", type = "replaces", source = "doc/hsp/hsprc-shop-listing" },
 ]
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
