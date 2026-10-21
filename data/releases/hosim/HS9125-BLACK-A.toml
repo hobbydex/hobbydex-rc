@@ -1,16 +1,18 @@
 id = "release/hosim/HS9125-BLACK-A"
 kit = "kit/hosim/9125"
 brand = "brand/hosim"
-number = "HS9125-BLACK-A"
-name = "9125 RTR"
+number = "9125"
+name = "9125 RTR, black, 2 batteries"
 kind = "rtr"
 status = "released"
 seen_by = "2021-09"
 seen_by_source = "https://www.hosim.com/products/hosim-1-10-large-scale-rc-car-monster-truck-remote-control-car-upgarded-9125"
-notes = "Store title: Hosim 1:10 Large Scale RC Car Monster Truck Upgraded 9125 Remote Control Car. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/hs9125-black-a-page", "doc/hosim/9125-manual"]
+notes = "Store SKUs: HS9125-BLACK-A, HS9125-BLACK-B, HS9125-BLACK-C. Store title: Hosim 1:10 Large Scale RC Car Monster Truck Upgraded 9125 Remote Control Car. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/hs9125-black-a-page", "doc/hosim/hs9125-black-b-page", "doc/hosim/hs9125-black-c-page", "doc/hosim/9125-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-10-large-scale-rc-car-monster-truck-remote-control-car-upgarded-9125" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-10-rc-car-monster-truck-upgarded-9125-remote-control-car" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-10-large-scale-rc-car-monster-truck-upgarded-9125-remote-control-car" },
 ]
 contains = [
   { part = "part/hosim/15-WJ10", role = "listed", source = "doc/hosim/store" },
@@ -45,3 +47,5 @@ contains = [
   { part = "part/hosim/XLF-SL01", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/HS9125-BLACK-B", "release/hosim/HS9125-BLACK-C"]
+color = "black"

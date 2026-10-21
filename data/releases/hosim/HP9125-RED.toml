@@ -1,16 +1,17 @@
 id = "release/hosim/HP9125-RED"
 kit = "kit/hosim/9125"
 brand = "brand/hosim"
-number = "HP9125-RED"
-name = "9125 RTR"
+number = "9125"
+name = "9125 RTR, red, oil shock, 2 batteries"
 kind = "rtr"
 status = "released"
 seen_by = "2019-11"
 seen_by_source = "https://www.hosim.com/products/hp9125-red"
-notes = "Store title: Hosim Upgraded 9125 RC Monster Truck with Oil Shock + 2 batteries. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/hp9125-red-page", "doc/hosim/9125-manual"]
+notes = "Store SKUs: HP9125-RED, HS9125-BLACK-D. Store title: Hosim Upgraded 9125 RC Monster Truck with Oil Shock + 2 batteries. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/hp9125-red-page", "doc/hosim/hs9125-black-d-page", "doc/hosim/9125-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hp9125-red" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-10-large-scale-rc-car-monster-truck-upgraded-9125-red-remote-control-car-with-oil-shock-dual-batteries" },
 ]
 contains = [
   { part = "part/hosim/15-WJ10", role = "listed", source = "doc/hosim/store" },
@@ -45,3 +46,5 @@ contains = [
   { part = "part/hosim/XLF-SL01", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/HS9125-BLACK-D"]
+color = "red"

@@ -1,17 +1,19 @@
 id = "release/hosim/HP9155-RED-D"
 kit = "kit/hosim/9155"
 brand = "brand/hosim"
-number = "HP9155-RED-D"
-name = "9155 RTR, red"
+number = "9155"
+name = "9155 RTR, red, oil shock, 2 batteries"
 kind = "rtr"
 status = "released"
-seen_by = "2022-08"
-seen_by_source = "https://www.hosim.com/products/hosim-1-12-scale-rc-car-monster-truck-oil-shock-2-dual-batteries-high-speed-9155-red"
-notes = "Store title: Hosim 1:12 Scale RC Car Monster Truck Oil Shock 2 Dual Batteries High Speed 9155 Red. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+seen_by = "2021-05"
+seen_by_source = "https://www.hosim.com/products/hosim-1-12-4wd-30mph-remote-control-car-rc-monster-truck-9155-red"
+notes = "Store SKUs: HP9155-RED-D, HP9155-RED-2B-B, HP9155-RD. Store title: Hosim 1:12 Scale RC Car Monster Truck Oil Shock 2 Dual Batteries High Speed 9155 Red. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
 color = "red"
-documents = ["doc/hosim/hp9155-red-d-page", "doc/hosim/9155-9156-manual"]
+documents = ["doc/hosim/hp9155-red-d-page", "doc/hosim/hp9155-red-2b-b-page", "doc/hosim/hp9155-rd-page", "doc/hosim/9155-9156-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-12-scale-rc-car-monster-truck-oil-shock-2-dual-batteries-high-speed-9155-red" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-12-4wd-30mph-remote-control-car-rc-monster-truck-9155-red" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-12-remote-control-car-rc-monster-truck-9155-red" },
 ]
 contains = [
   { part = "part/hosim/15-LS08", role = "listed", source = "doc/hosim/store" },
@@ -44,3 +46,4 @@ contains = [
   { part = "part/hosim/WF-B", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/HP9155-RD", "release/hosim/HP9155-RED-2B-B"]

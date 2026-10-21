@@ -1,16 +1,17 @@
 id = "release/hosim/X07-B"
 kit = "kit/hosim/x07"
 brand = "brand/hosim"
-number = "X07-B"
+number = "X07"
 name = "Super X07 RTR"
 kind = "rtr"
 status = "released"
-seen_by = "2026-04"
-seen_by_source = "https://www.hosim.com/products/rc-car-x07-1-10-brushless"
-notes = "Store title: RC Car 1/10 Brushless SUPER X07 Fast 40MPH 4WD Off Road RC Monster Truck for Beginners New Version. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/x07-b-page", "doc/hosim/x07-x07w-x08-manual", "doc/hosim/x07-manual"]
+seen_by = "2022-06"
+seen_by_source = "https://www.hosim.com/products/hosim-brushless-rc-cars-1-10-high-speed-68-km-remote-control-car-x-07-4wd-off-road-rc-monster-trucks-2"
+notes = "Store SKUs: X07-B, SP-X07-B-C. Store title: RC Car 1/10 Brushless SUPER X07 Fast 40MPH 4WD Off Road RC Monster Truck for Beginners New Version. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/x07-b-page", "doc/hosim/sp-x07-b-c-page", "doc/hosim/x07-x07w-x08-manual", "doc/hosim/x07-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-x07-1-10-brushless" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-brushless-rc-cars-1-10-high-speed-68-km-remote-control-car-x-07-4wd-off-road-rc-monster-trucks-2" },
 ]
 contains = [
   { part = "part/hosim/2-DC-1500-2USB-NEW", role = "listed", source = "doc/hosim/store" },
@@ -141,3 +142,4 @@ contains = [
   { part = "part/hosim/XWSDT-SET", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/SP-X07-B-C"]

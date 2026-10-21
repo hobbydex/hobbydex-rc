@@ -1,17 +1,20 @@
 id = "release/hosim/M9156-BLUE-A"
 kit = "kit/hosim/9156"
 brand = "brand/hosim"
-number = "M9156-BLUE-A"
-name = "9156 RTR, blue"
+number = "9156"
+name = "9156 RTR, blue, 2 batteries"
 kind = "rtr"
 status = "released"
 seen_by = "2019-12"
 seen_by_source = "https://www.hosim.com/products/9156-blue"
-notes = "Store title: Hosim Large Size 1:12 Scale 46km+/H 4WD 2.4Ghz Monster Truck 9156 blue. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+notes = "Store SKUs: M9156-BLUE-A, M9156-BLUE-2B-C, M9156-BLUE-B, M9156-BLUE-D. Store title: Hosim Large Size 1:12 Scale 46km+/H 4WD 2.4Ghz Monster Truck 9156 blue. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
 color = "blue"
-documents = ["doc/hosim/m9156-blue-a-page", "doc/hosim/9155-9156-manual"]
+documents = ["doc/hosim/m9156-blue-a-page", "doc/hosim/m9156-blue-2b-c-page", "doc/hosim/m9156-blue-b-page", "doc/hosim/m9156-blue-d-page", "doc/hosim/9155-9156-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/9156-blue" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-large-size-1-12-scale-45km-h-4wd-2-4ghz-monster-truck-9156-blue" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-large-size-1-12-scale-46km-h-4wd-2-4ghz-monster-truck-9156-blue-2" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-12-rc-car-large-size-remote-control-car-monster-truck-9156-blue-46km-h-4wd-2-4ghz" },
 ]
 contains = [
   { part = "part/hosim/15-LS08", role = "listed", source = "doc/hosim/store" },
@@ -46,3 +49,4 @@ contains = [
   { part = "part/hosim/WF-B", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/M9156-BLUE-2B-C", "release/hosim/M9156-BLUE-B", "release/hosim/M9156-BLUE-D"]

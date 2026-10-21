@@ -1,17 +1,19 @@
 id = "release/hosim/HP9155-BLUE-C"
 kit = "kit/hosim/9155"
 brand = "brand/hosim"
-number = "HP9155-BLUE-C"
-name = "9155 RTR, blue"
+number = "9155"
+name = "9155 RTR, blue, oil shock, 2 batteries"
 kind = "rtr"
 status = "released"
-seen_by = "2021-10"
-seen_by_source = "https://www.hosim.com/products/hosim-1-12-remote-control-car-rc-car-monster-truck-oil-shock-2-dual-batteries-conector-9155-blue"
-notes = "Store title: Hosim 1:12 Remote Control Car RC Car Monster Truck Oil Shock Dual Batteries Conector 9155 Blue. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+seen_by = "2021-05"
+seen_by_source = "https://www.hosim.com/products/hosim-1-12-scale-rc-car-monster-truck-oil-shock-2-dual-batteries-conector-9155-blue"
+notes = "Store SKUs: HP9155-BLUE-C, HP9155-BLUE-2B-B, HP9155-BLUE-D. Store title: Hosim 1:12 Remote Control Car RC Car Monster Truck Oil Shock Dual Batteries Conector 9155 Blue. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
 color = "blue"
-documents = ["doc/hosim/hp9155-blue-c-page", "doc/hosim/9155-9156-manual"]
+documents = ["doc/hosim/hp9155-blue-c-page", "doc/hosim/hp9155-blue-2b-b-page", "doc/hosim/hp9155-blue-d-page", "doc/hosim/9155-9156-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-12-remote-control-car-rc-car-monster-truck-oil-shock-2-dual-batteries-conector-9155-blue" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-12-scale-rc-car-monster-truck-oil-shock-2-dual-batteries-conector-9155-blue" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-12-scale-rc-car-monster-truck-oil-shock-2-dual-batteries-high-speed-9155-blue" },
 ]
 contains = [
   { part = "part/hosim/15-LS08", role = "listed", source = "doc/hosim/store" },
@@ -44,3 +46,4 @@ contains = [
   { part = "part/hosim/WF-B", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/HP9155-BLUE-2B-B", "release/hosim/HP9155-BLUE-D"]

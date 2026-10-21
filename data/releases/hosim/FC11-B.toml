@@ -1,16 +1,17 @@
 id = "release/hosim/FC11-B"
 kit = "kit/hosim/fc11"
 brand = "brand/hosim"
-number = "FC11-B"
-name = "FC11 RTR"
+number = "FC11"
+name = "FC11 RTR, 2 batteries"
 kind = "rtr"
 status = "released"
 seen_by = "2023-10"
 seen_by_source = "https://www.hosim.com/products/hosim-1-14-4x4-fast-rc-cars-for-adults-40-kph-high-speed-hobby-electric-off-road-jumping-remote-control-rc-trucks-waterproof-toy-crawler-electric-vehicle-car-gift-for-boys-childrenred-1"
-notes = "Store title: Hosim 1:14 RC Cars with Lights for Adults & Children,40+ KPH Remote Control Car Hobby Electric Off-Road RC Monster Trucks Toys Gifts. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/fc11-b-page", "doc/hosim/fc10-fc11-manual"]
+notes = "Store SKUs: FC11-B, FC11-D. Store title: Hosim 1:14 RC Cars with Lights for Adults & Children,40+ KPH Remote Control Car Hobby Electric Off-Road RC Monster Trucks Toys Gifts. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/fc11-b-page", "doc/hosim/fc11-d-page", "doc/hosim/fc10-fc11-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-14-4x4-fast-rc-cars-for-adults-40-kph-high-speed-hobby-electric-off-road-jumping-remote-control-rc-trucks-waterproof-toy-crawler-electric-vehicle-car-gift-for-boys-childrenred-1" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-14-4x4-fast-rc-cars-for-adults-40-kph-high-speed-hobby-electric-off-road-jumping-remote-control-rc-trucks-waterproof-toy-crawler-electric-vehicle-car-gift-for-boys-childrenred-2" },
 ]
 contains = [
   { part = "part/hosim/BCLIP-S-1", role = "listed", source = "doc/hosim/store" },
@@ -34,3 +35,4 @@ contains = [
   { part = "part/hosim/HQ12-052", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/HQ12-055", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/FC11-D"]
