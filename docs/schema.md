@@ -544,7 +544,8 @@ rebrand_of = [{ part = "part/flysky/FS-GT5", source = "doc/community/2026-10-10-
 `name_de`: the brand's German name, kept when `name` is an English translation of it (ScaleART kit names, translated with a fixed glossary).
 
 `name_ja`: the brand's Japanese name, kept when the English `name` is a
-translation (Yokomo publishes Japanese-only parts lists).
+translation (Yokomo, ABC Hobby, Wrap-Up Next, EXceed and O.S. Engines publish Japanese-only names;
+tools/translate_ja.py gives them the English name, with a note).
 
 `related`: other parts of the same brand this part goes with, as the brand's
 name or page says: `[{ part, relation }]` with relation requires (needs the
