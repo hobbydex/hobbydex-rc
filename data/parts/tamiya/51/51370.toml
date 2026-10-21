@@ -4,3 +4,6 @@ number = "51370"
 name = "05 Module Pinion Gear (32T)"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/pinion/mod0.5-32t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
