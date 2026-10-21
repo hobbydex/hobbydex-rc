@@ -392,6 +392,12 @@ def main():
     per_brand = collections.Counter(r["brand"].split("/")[-1] for r in no_page)
     check("release-no-product-page", FIX_PAGE, no_page, per_brand=per_brand.most_common())
 
+    # 25b. releases typed "car": the catch-all, no category on the release or its kit (resolved release, else kit, else car)
+    typed_car = [r for r in rels if (r.get("category") or kits.get(r.get("kit"), {}).get("category") or "car") == "car"]
+    per_brand = collections.Counter(r["brand"].split("/")[-1] for r in typed_car)
+    check("release-typed-other-cars", "give the kit its type from the maker's product page or manual (kit level first; a release-level category only where the release differs from its kit), with a sources entry for the page; a kit with no source stays car and is counted",
+          typed_car, per_brand=per_brand.most_common())
+
     # 26. unnamed parts and cheap structural gaps (kept from the old audit)
     check("part-named-by-number", "give the part its name from the maker's parts list", [p for p in parts if p["name"] == p.get("number")])
     check("release-no-contents", "read the release's parts list into contains (or note there is none)", [r for r in rels if not r.get("contains")])
