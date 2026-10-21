@@ -8,3 +8,6 @@ links = [
 documents = ["doc/scaleart/scaleart-shop", "doc/scaleart/71000310-manual"]
 material = "stainless"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x14-pan-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

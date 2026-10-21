@@ -13,3 +13,8 @@ fits = [
   { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
   { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x30-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+finish = "black"

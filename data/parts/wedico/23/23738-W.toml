@@ -10,3 +10,7 @@ links = [
   { site = "thicon-models", url = "https://www.thicon-models.com/wedico-models/wedico-ersatzteile/schraube-m4_8-din-7985-a2" },
 ]
 notes = "English translated by Hobbydex from the shop's German title (name_de)"
+equivalent_to = [
+  { spec = "spec/screw/m4x8-pan-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

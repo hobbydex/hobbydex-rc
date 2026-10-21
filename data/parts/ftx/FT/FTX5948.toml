@@ -5,3 +5,7 @@ name = "IIII B-Head Cross Screw 2 (BM3*15)"
 pack_qty = 12
 notes = "Name read from a scanned FTX parts list; the OCR engines agree"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x15-button-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
