@@ -552,8 +552,9 @@ def main():
                         errors.append(f"{path}: sources.{k} is not allowed: a date keeps its own {k}_source field")
                     elif k not in d:
                         errors.append(f"{path}: sources.{k} names a field the record does not have")
-                    elif not (isinstance(v, str) and v.startswith("https://")):
-                        errors.append(f"{path}: sources.{k} should be an https URL, got {v!r}")
+                    elif not (isinstance(v, str) and (v.startswith("https://") or
+                              (v.startswith("http://") and urllib.parse.urlsplit(v).hostname in http_hosts))):
+                        errors.append(f"{path}: sources.{k} should be an https URL (http only for a maker site that has no https), got {v!r}")
         ve = d.get("depicts") if kind in ("release", "part") else None
         if ve is not None:
             if kind == "part" and d.get("category") != "body":
