@@ -6,3 +6,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-6v-3000mah-5-cell-speedpack2-flat-nimh-receiver-pack-jst/DYNB2444.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-5s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 5
+capacity_mah = 3000
+connector = "JST"

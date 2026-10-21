@@ -9,3 +9,6 @@ fits = [
   { kit = "kit/hpi/r40", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/13x28x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

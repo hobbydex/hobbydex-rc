@@ -6,3 +6,7 @@ links = [
   { site = "yikongrccar.com (dealer)", url = "https://www.yikongrccar.com/yikong-yk4082-parts/294-yikong-yk4082-spare-parts-pan-head-hexagon-m314-13089.html", kind = "dealer" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x14-pan-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

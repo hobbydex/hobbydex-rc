@@ -10,3 +10,6 @@ fits = [
   { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5x7x4.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

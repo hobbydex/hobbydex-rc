@@ -6,3 +6,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-4.8v-220mah-micro-sct-rally-truggy-nimh-battery-molex/DYNB0007.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-4s-220mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 4
+capacity_mah = 220

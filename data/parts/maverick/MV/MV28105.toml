@@ -2,3 +2,7 @@ id = "part/maverick/MV28105"
 brand = "brand/maverick"
 number = "MV28105"
 name = "FLAT HEAD SCREW M2 X 6MM"
+equivalent_to = [
+  { spec = "spec/screw/m2x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

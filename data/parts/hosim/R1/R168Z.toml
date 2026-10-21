@@ -14,3 +14,7 @@ links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-rc-car-6-39-9-525-3-175-ball-bearing-accessory-spare-parts-r168z-for-hosim-h16p-h17-hb17-h07-car-8-pcs" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/6.39x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

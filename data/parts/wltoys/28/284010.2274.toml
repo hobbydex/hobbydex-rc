@@ -11,3 +11,7 @@ fits = [
   { kit = "kit/wltoys/284161", type = "direct", source = "doc/wltoys/284161-reseller-parts" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/6.35x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

@@ -6,3 +6,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-15-turn-550-2200kv-brushed-marine-motor/DYNM3840.html" },
 ]
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

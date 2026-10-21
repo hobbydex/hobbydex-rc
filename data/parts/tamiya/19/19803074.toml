@@ -8,3 +8,7 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18014-19803074", kind = "fan-site" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2x4-truss-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

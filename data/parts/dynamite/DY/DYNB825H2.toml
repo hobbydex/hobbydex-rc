@@ -6,3 +6,12 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-7.4v-800mah-2s-50c-hardcase-lipo-battery--ec2/DYNB825H2.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 800
+c_rating = 50
+connector = "EC2"
+case = "hard"

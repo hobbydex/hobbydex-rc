@@ -9,3 +9,7 @@ fits = [
 links = [
   { site = "Traxxas", url = "https://traxxas.com/6493-34-tooth-pinion-gear-10-mod-5-mm-bore" },
 ]
+equivalent_to = [
+  { spec = "spec/pinion/mod1-34t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

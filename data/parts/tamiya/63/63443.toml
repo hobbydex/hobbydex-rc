@@ -5,3 +5,6 @@ name = "Damper Oil Soft Sot (#200, #300, #400)"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "oil-grease"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/oil/silicone-200cst", match = "functional", notes = "Viscosity number #200 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

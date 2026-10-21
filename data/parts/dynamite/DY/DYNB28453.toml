@@ -6,3 +6,11 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-14.8v-2800mah-4s-50c-reaction-2-lipo-battery-ec3/DYNB28453.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-2800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 2800
+c_rating = 50
+connector = "EC3"

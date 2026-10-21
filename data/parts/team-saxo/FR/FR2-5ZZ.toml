@@ -4,3 +4,7 @@ number = "FR2-5ZZ"
 name = "Flanged ball bearing 3.175x7.938x2.779"
 notes = "Piece of pack TS02016 on the GT-300W-V4 parts list; the list gives no name"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-3.175x7.938x2.778", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

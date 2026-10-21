@@ -11,3 +11,9 @@ fits = [
   { kit = "kit/hpi/r40", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-5s-1200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 5
+capacity_mah = 1200

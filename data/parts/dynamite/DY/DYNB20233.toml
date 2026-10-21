@@ -6,3 +6,11 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-7.4v-2000mah-2s-30c-reaction-2.0-lipo-battery-ec3/DYNB20233.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 2000
+c_rating = 30
+connector = "EC3"

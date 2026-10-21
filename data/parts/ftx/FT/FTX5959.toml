@@ -5,3 +5,7 @@ name = "Cap Head Hexagon Screw (HM3*10)"
 notes = "Name read from a scanned FTX parts list; the OCR engines agree"
 pack_qty = 12
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

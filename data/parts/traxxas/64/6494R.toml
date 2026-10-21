@@ -14,3 +14,7 @@ fits = [
 links = [
   { site = "Traxxas", url = "https://traxxas.com/6494r-pinion-20-t-10-mp-5mm-shaft" },
 ]
+equivalent_to = [
+  { spec = "spec/pinion/mod1-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

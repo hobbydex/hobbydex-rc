@@ -2,3 +2,7 @@ id = "part/blackzon/548014"
 brand = "brand/blackzon"
 number = "548014"
 name = "Countersunk Screws KMHO2.5x8mm"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

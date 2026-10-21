@@ -13,3 +13,7 @@ fits = [
   { kit = "kit/hpi/rs4-pro-3", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "oil-grease"
+volume_ml = 10
+equivalent_to = [
+  { spec = "spec/oil/silicone-500cst", match = "functional", notes = "Viscosity number #500 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

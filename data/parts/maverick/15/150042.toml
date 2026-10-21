@@ -2,3 +2,7 @@ id = "part/maverick/150042"
 brand = "brand/maverick"
 number = "150042"
 name = "BUTTON HEAD SCREW 2X10mm"
+equivalent_to = [
+  { spec = "spec/screw/m2x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

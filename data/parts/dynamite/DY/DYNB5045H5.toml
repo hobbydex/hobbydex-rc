@@ -6,3 +6,12 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-14.8v-5000mah-4s-50c-reaction-2.0-hardcase-lipo-battery-ec5/DYNB5045H5.html" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 4
+capacity_mah = 5000
+c_rating = 50
+connector = "EC5"
+case = "hard"

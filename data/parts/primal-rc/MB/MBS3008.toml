@@ -3,3 +3,7 @@ brand = "brand/primal-rc"
 number = "MBS3008"
 name = "M3×8 Button head screw"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

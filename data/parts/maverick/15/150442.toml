@@ -2,3 +2,7 @@ id = "part/maverick/150442"
 brand = "brand/maverick"
 number = "150442"
 name = "Flat Head Screw M2.6x10mm"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

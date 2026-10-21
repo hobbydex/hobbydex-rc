@@ -12,3 +12,8 @@ gtin = "816874016883"
 fits = [
   { kit = "kit/axial/yeti-jr", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x25-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
+finish = "black"
