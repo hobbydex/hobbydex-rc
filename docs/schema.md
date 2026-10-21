@@ -184,7 +184,7 @@ scale = "1/12"
 series = "Lunch Box"
 ```
 
-`category` (optional) overrides the kit's type for this release, where a car on a shared chassis is another type than the chassis kit: Tamiya's race trucks are releases of the TT-01 Type-E kit (a touring car) with category "race-truck".
+`category` (optional) overrides the kit's type for this release, where a car on a shared chassis is another type than the chassis kit: Tamiya's race trucks are releases of the TT-01 Type-E kit (a touring car) with category "race-truck". race-truck is the on-road racing semi truck (tractor-unit body, Tamiya TT-01 race trucks); an off-road "race truck" or "TT" by name is a truggy.
 
 `year` is the calendar year the release came out, only from a dated source. `model_year` is the year in the maker's edition name when the maker names editions by model year (XRAY's XB2'26 is on sale from late 2025): it is not a release year, and a release can be on sale before its model year.
 
