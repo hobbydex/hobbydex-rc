@@ -127,7 +127,7 @@ tank | construction | trailer | boat, or car for a car that fits none of
 them. trailer is a standalone trailer or dolly, with no `drive` or `power`
 (a truck sold with its trailer stays truck). drag is a straight-line drag
 racer (no prep drag cars, drag trucks); lowrider a
-hopping lowrider on hydraulics or servo-lifted suspension. `scale` as "1/10".
+hopping lowrider on hydraulics or servo-lifted suspension. `scale` as "1/10". `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 `drive`: 2wd | 4wd | 6wd | 8wd (driven wheels), fwd (front-wheel drive) or
 tracks for a tracked vehicle (tanks, tracked excavators, dozers and loaders,
 tracked conversions sold as their own kit). A half-track (tracks at the rear,
@@ -168,7 +168,7 @@ trim) is a release of that platform, not a kit of its own.
 One sold product: a yearly edition, a Carpet or Dirt version, an RTR, a
 re-release. Keyed by manufacturer item number when there is one, otherwise by a
 slug (`xb4-2013`, `xb8e-2021`). `kind` is kit | rtr | arr. `status` is
-announced | released | discontinued.
+announced | released | discontinued. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
 `color` (optional) is the colour the release is sold in, in plain words from the same palette as a part's `color` ("red"; two or three colours as "blue/black", "green/black/white"), read from the name's colour clause by link_release_colours.py; left out when the name names none.
 
@@ -280,7 +280,7 @@ including variant suffixes (`368014-S`, `362280-K`). `name` is the description
 from the newest source, verbatim apart from trademark glyphs and quote
 normalisation; the trailing pack count `(10)` is moved into `pack_qty`. Older
 differing descriptions go to `former_names` so a rename or a spec change
-(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible.
+(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
 ```toml
 id = "part/xray/362250"
