@@ -11,3 +11,6 @@ category = "pin-clip"
 fits = [
   { kit = "kit/redcat/fiftynine", type = "direct", source = "doc/redcat/store" },
 ]
+equivalent_to = [
+  { spec = "spec/eclip/3.2mm-0.6", match = "functional", notes = "Shaft size from the name; the clip's thickness is the spec's" },
+]

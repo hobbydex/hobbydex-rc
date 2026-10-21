@@ -5,3 +5,6 @@ name = "E clip-8mm"
 notes = "Name read from a scanned FTX parts list; the OCR engines agree"
 pack_qty = 4
 category = "pin-clip"
+equivalent_to = [
+  { spec = "spec/eclip/8mm", match = "functional", notes = "Shaft size from the name" },
+]

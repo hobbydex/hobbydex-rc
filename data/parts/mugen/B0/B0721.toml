@@ -2,8 +2,14 @@ id = "part/mugen/B0721"
 brand = "brand/mugen"
 number = "B0721"
 name = "OE-4 E-RING"
+category = "pin-clip"
 fits = [
   { kit = "kit/mugen/msx3", type = "direct", source = "doc/mugen/msx3-part-list" },
   { kit = "kit/mugen/prime-12", type = "direct", source = "doc/mugen/prime-12-part-list" },
 ]
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/4-E-RING/B0721" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/4-E-RING/B0721" },
+]
+equivalent_to = [
+  { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },
+]

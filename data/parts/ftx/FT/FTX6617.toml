@@ -6,3 +6,6 @@ notes = "Name read from a scanned FTX parts list; the OCR engines agree"
 pack_qty = 6
 category = "pin-clip"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/eclip/2.5mm", match = "functional", notes = "Shaft size from the name" },
+]

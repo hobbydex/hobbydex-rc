@@ -2,6 +2,7 @@ id = "part/tamiya/50588"
 brand = "brand/tamiya"
 number = "50588"
 name = "2mm E-Ring"
+category = "pin-clip"
 former_names = ["2mm E-Ring (BC 2x15)", "2mm E-Ring (BC9x15)", "2mm E-Ring eine 5)", "2mm E-Riny", "2mm E-ring", "2mm F-Ring", "2mm Washer", "aa eg BOS"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
@@ -11,3 +12,6 @@ links = [
 name_source = "ocr"
 released = "1994-11"
 documents = ["doc/tamiya/newitems-month"]
+equivalent_to = [
+  { spec = "spec/eclip/2mm", match = "functional", notes = "Shaft size from the name" },
+]

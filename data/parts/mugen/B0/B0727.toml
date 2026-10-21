@@ -2,6 +2,7 @@ id = "part/mugen/B0727"
 brand = "brand/mugen"
 number = "B0727"
 name = "OE-7 E-RING"
+category = "pin-clip"
 fits = [
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
@@ -10,4 +11,9 @@ fits = [
   { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
 ]
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/OE-7-E-RING/B0727" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/OE-7-E-RING/B0727" },
+]
+equivalent_to = [
+  { spec = "spec/eclip/7mm", match = "functional", notes = "Shaft size from the name" },
+]

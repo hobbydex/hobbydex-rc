@@ -845,6 +845,26 @@ outer_mm = 6
 thickness_mm = 0.5
 ```
 
+### E-clip specs
+
+`spec/eclip/<shaft>mm` (category "eclip", `shaft_mm`): an E-clip (E-ring, DIN
+6799 type) named by the shaft it fits, as the RC makers name them ("3 mm
+E-ring" on a 3 mm shaft). A part that states a thickness links to
+`spec/eclip/<shaft>mm-<thickness>` (`thickness_mm`, and `outer_mm` where the
+name gives one); a part that states none links to the standard spec. Bowed
+(wave) E-rings are `spec/eclip/<shaft>mm-bowed` (`variant = "bowed"`). Parts
+link with match "functional" (size from the name); thin and HD versions link
+"close". A pack of several shafts lists one `includes` row per spec. The DIN 6799
+size numbers and groove sizes are not recorded (no source held), so no spec
+carries a `standards` entry; a name that gives only a DIN size is left unlinked.
+
+```toml
+id = "spec/eclip/3mm"
+category = "eclip"
+name = "3mm E-clip"
+shaft_mm = 3
+```
+
 ### Nut specs
 
 `spec/nut/<thread>-<type>[-thin|-regular]` (category "nut"): `thread`
