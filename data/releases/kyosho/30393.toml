@@ -7,3 +7,8 @@ kind = "rtr"
 status = "released"
 depicts = { make = "Porsche", model = "934 RSR" }
 documents = ["doc/kyosho/30393-mzg116-porsche934-rsr-p"]
+contains = [
+  { part = "part/kyosho/MZG116J", role = "listed", source = "doc/kyosho/30393-mzg116-porsche934-rsr-p" },
+  { part = "part/kyosho/MZG116V", role = "listed", source = "doc/kyosho/30393-mzg116-porsche934-rsr-p" },
+  { part = "part/kyosho/MZH105C", role = "listed", source = "doc/kyosho/30393-mzg116-porsche934-rsr-p" },
+]

@@ -7,3 +7,10 @@ kind = "rtr"
 status = "released"
 depicts = { make = "Porsche", model = "935 Turbo Martini", year = 1976 }
 documents = ["doc/kyosho/30391-mzg114-porsche935-p"]
+contains = [
+  { part = "part/kyosho/1976", role = "listed", source = "doc/kyosho/30391-mzg114-porsche935-p" },
+  { part = "part/kyosho/1977", role = "listed", source = "doc/kyosho/30391-mzg114-porsche935-p" },
+  { part = "part/kyosho/MZG114J", role = "listed", source = "doc/kyosho/30391-mzg114-porsche935-p" },
+  { part = "part/kyosho/MZG114M", role = "listed", source = "doc/kyosho/30391-mzg114-porsche935-p" },
+  { part = "part/kyosho/MZH225BK", role = "listed", source = "doc/kyosho/30391-mzg114-porsche935-p" },
+]

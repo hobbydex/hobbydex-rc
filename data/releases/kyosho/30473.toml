@@ -7,3 +7,9 @@ kind = "kit"
 status = "released"
 depicts = { make = "Lamborghini", model = "LP500S" }
 documents = ["doc/kyosho/30473-mzg316-lamborghini-lp500s-p"]
+contains = [
+  { part = "part/kyosho/MZG316BL", role = "listed", source = "doc/kyosho/30473-mzg316-lamborghini-lp500s-p" },
+  { part = "part/kyosho/MZG316R", role = "listed", source = "doc/kyosho/30473-mzg316-lamborghini-lp500s-p" },
+  { part = "part/kyosho/MZH226GL", role = "listed", source = "doc/kyosho/30473-mzg316-lamborghini-lp500s-p" },
+  { part = "part/kyosho/MZH226S", role = "listed", source = "doc/kyosho/30473-mzg316-lamborghini-lp500s-p" },
+]

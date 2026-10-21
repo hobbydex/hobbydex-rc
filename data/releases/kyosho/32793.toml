@@ -10,3 +10,6 @@ kind = "kit"
 status = "released"
 gtin = "4548565375257"
 documents = ["doc/kyosho/mr-03evo-sp", "doc/kyosho/32793-product-page"]
+contains = [
+  { part = "part/kyosho/SILO150", role = "listed", source = "doc/kyosho/mr-03evo-sp" },
+]
