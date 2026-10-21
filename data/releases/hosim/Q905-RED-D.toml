@@ -1,16 +1,19 @@
 id = "release/hosim/Q905-RED-D"
 kit = "kit/hosim/q905"
 brand = "brand/hosim"
-number = "Q905-RED-D"
-name = "Q905 RTR"
+number = "Q905"
+name = "Q905 RTR, red, 2 batteries"
 kind = "rtr"
 status = "released"
-seen_by = "2022-08"
-seen_by_source = "https://www.hosim.com/products/hosim-1-16-brushless-rc-car-monster-truck-q905-remote-control-car-with-2845-brushless-motro-dual-1000mah-batteries"
-notes = "Store title: Hosim 1:16 Brushless RC Car Monster Truck Q905 Remote Control Car with 2845 Brushless Motro +Dual 1000mAh Batteries. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/q905-red-d-page", "doc/hosim/hp905-q903-q905-manual"]
+seen_by = "2020-09"
+seen_by_source = "https://www.hosim.com/products/1-16-scale-2847-brushless-rc-monster-truck"
+notes = "Store SKUs: Q905-RED-D, Q905-R-2B-A, Q905-R-2B-B, Q905-R-2B-C. Store title: Hosim 1:16 Brushless RC Car Monster Truck Q905 Remote Control Car with 2845 Brushless Motro +Dual 1000mAh Batteries. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/q905-red-d-page", "doc/hosim/q905-r-2b-a-page", "doc/hosim/q905-r-2b-b-page", "doc/hosim/q905-r-2b-c-page", "doc/hosim/hp905-q903-q905-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-16-brushless-rc-car-monster-truck-q905-remote-control-car-with-2845-brushless-motro-dual-1000mah-batteries" },
+  { site = "Hosim", url = "https://www.hosim.com/products/1-16-scale-2847-brushless-rc-monster-truck" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-16-brushless-remote-control-car-rc-car-monster-truck-q905" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-16-scale-2847-brushless-rc-car-monster-truck-q905" },
 ]
 contains = [
   { part = "part/hosim/15-WJ10", role = "listed", source = "doc/hosim/store" },
@@ -36,3 +39,5 @@ contains = [
   { part = "part/hosim/XLF-RL02", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-02", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/Q905-R-2B-A", "release/hosim/Q905-R-2B-B", "release/hosim/Q905-R-2B-C"]
+color = "red"

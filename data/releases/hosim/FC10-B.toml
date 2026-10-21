@@ -1,16 +1,17 @@
 id = "release/hosim/FC10-B"
 kit = "kit/hosim/fc10"
 brand = "brand/hosim"
-number = "FC10-B"
-name = "FC10 RTR"
+number = "FC10"
+name = "FC10 RTR, 2 batteries"
 kind = "rtr"
 status = "released"
 seen_by = "2023-10"
 seen_by_source = "https://www.hosim.com/products/hosim-1-14-rc-car-monster-truck-with-lights-remote-control-racing-car-4wd-drift-high-speed-for-adults-kids"
-notes = "Store title: Hosim 1:14 RC Car Monster Truck with Lights Remote Control Racing Car 4WD Drift High Speed for Adults & Kids. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/fc10-b-page", "doc/hosim/fc10-fc11-manual"]
+notes = "Store SKUs: FC10-B, FC10-B-C. Store title: Hosim 1:14 RC Car Monster Truck with Lights Remote Control Racing Car 4WD Drift High Speed for Adults & Kids. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/fc10-b-page", "doc/hosim/fc10-b-c-page", "doc/hosim/fc10-fc11-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-14-rc-car-monster-truck-with-lights-remote-control-racing-car-4wd-drift-high-speed-for-adults-kids" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-14-remote-control-car-with-lights-rc-monster-truck-drift-racing-car-high-speed-40-kph-hobby-toy-for-adults-kids" },
 ]
 contains = [
   { part = "part/hosim/BCLIP-S-1", role = "listed", source = "doc/hosim/store" },
@@ -37,3 +38,4 @@ contains = [
   { part = "part/hosim/HQ12-052", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/HQ12-055", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/FC10-B-C"]

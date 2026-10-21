@@ -1,16 +1,17 @@
 id = "release/hosim/9135-BLUE-2B-B"
 kit = "kit/hosim/9135"
 brand = "brand/hosim"
-number = "9135-BLUE-2B-B"
-name = "9135 RTR"
+number = "9135"
+name = "9135 RTR, blue, 2 batteries"
 kind = "rtr"
 status = "released"
 seen_by = "2021-05"
 seen_by_source = "https://www.hosim.com/products/hosim-1-16-scale-4wd-high-speed-2-4ghz-off-road-monster-truck-b"
-notes = "Store title: Hosim 1:16 Scale RC Car Monster Truck High Speed 2.4Ghz Off-Road. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/9135-blue-2b-b-page", "doc/hosim/9130-9135-9136-9137-9138-manual"]
+notes = "Store SKUs: 9135-BLUE-2B-B, 9135-BLUE-DE. Store title: Hosim 1:16 Scale RC Car Monster Truck High Speed 2.4Ghz Off-Road. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/9135-blue-2b-b-page", "doc/hosim/9135-blue-de-page", "doc/hosim/9130-9135-9136-9137-9138-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-16-scale-4wd-high-speed-2-4ghz-off-road-monster-truck-b" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-ferngesteuertes-auto-1-16-massstab-rc-offroad-lkw-mit-40km-h-4wd-spielzeug-crawler-mit-lampen-fur-kinder-und-erwachsene-9135-blau" },
 ]
 contains = [
   { part = "part/hosim/15-WJ10", role = "listed", source = "doc/hosim/store" },
@@ -38,3 +39,5 @@ contains = [
   { part = "part/hosim/WF-B", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/9135-BLUE-DE"]
+color = "blue"

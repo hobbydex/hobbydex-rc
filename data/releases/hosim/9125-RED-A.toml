@@ -1,16 +1,19 @@
 id = "release/hosim/9125-RED-A"
 kit = "kit/hosim/9125"
 brand = "brand/hosim"
-number = "9125-RED-A"
-name = "9125 RTR"
+number = "9125"
+name = "9125 RTR, red, 2 batteries"
 kind = "rtr"
 status = "released"
 seen_by = "2019-11"
 seen_by_source = "https://www.hosim.com/products/9125-red"
-notes = "Store title: Hosim 9125 RC Car Monster Truck 1/10 Scale Upgraded 2 Batteries. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/9125-red-a-page", "doc/hosim/9125-manual"]
+notes = "Store SKUs: 9125-RED-A, 9125-RED-2B-B, 9125-RED-2B-C, M9125-RED-D. Store title: Hosim 9125 RC Car Monster Truck 1/10 Scale Upgraded 2 Batteries. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/9125-red-a-page", "doc/hosim/9125-red-2b-b-page", "doc/hosim/9125-red-2b-c-page", "doc/hosim/m9125-red-d-page", "doc/hosim/9125-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/9125-red" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-9125-remote-control-car-rc-car-monster-truck-1-10-2-batteries" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-10-scale-rc-car-monster-truck-9125-with-2-batteries" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-10-rc-car-monster-truck-9125-red-remote-control-car-with-2-batteries-high-speed" },
 ]
 contains = [
   { part = "part/hosim/15-WJ10", role = "listed", source = "doc/hosim/store" },
@@ -45,3 +48,5 @@ contains = [
   { part = "part/hosim/XLF-SL01", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/9125-RED-2B-B", "release/hosim/9125-RED-2B-C", "release/hosim/M9125-RED-D"]
+color = "red"

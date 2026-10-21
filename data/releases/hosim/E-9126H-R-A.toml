@@ -1,16 +1,17 @@
 id = "release/hosim/E-9126H-R-A"
 kit = "kit/hosim/9126"
 brand = "brand/hosim"
-number = "E-9126H-R-A"
-name = "9126 RTR"
+number = "9126H"
+name = "9126H RTR, 2 batteries"
 kind = "rtr"
 status = "released"
 seen_by = "2022-07"
 seen_by_source = "https://www.hosim.com/products/hosim-1-10-rc-cars-48-kmh-2-4ghz-remote-control-car-4wd-off-road-monster-truck-buggy-toy-for-boys-teens-adults-gifts"
-notes = "Store title: Hosim 1:10 RC Cars 48+ KMH 2.4GHz Remote Control Car 4WD Off Road Monster Truck Buggy Toy for Boys Teens Adults Gifts. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/e-9126h-r-a-page", "doc/hosim/9126-manual"]
+notes = "Store SKUs: E-9126H-R-A, E-9126H-R-D. Store title: Hosim 1:10 RC Cars 48+ KMH 2.4GHz Remote Control Car 4WD Off Road Monster Truck Buggy Toy for Boys Teens Adults Gifts. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/e-9126h-r-a-page", "doc/hosim/e-9126h-r-d-page", "doc/hosim/9126-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-10-rc-cars-48-kmh-2-4ghz-remote-control-car-4wd-off-road-monster-truck-buggy-toy-for-boys-teens-adults-gifts" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-10-rc-cars-2-4ghz-remote-control-car-4wd-48-kmh-off-road-monster-truck-buggy-toy-for-boys-adults-gifts" },
 ]
 contains = [
   { part = "part/hosim/15-WJ10", role = "listed", source = "doc/hosim/store" },
@@ -37,3 +38,4 @@ contains = [
   { part = "part/hosim/HC225-DJ02-1BC-WFB-DC", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/HC25-DJ02", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/E-9126H-R-D"]

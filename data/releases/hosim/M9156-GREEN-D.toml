@@ -1,17 +1,18 @@
 id = "release/hosim/M9156-GREEN-D"
 kit = "kit/hosim/9156"
 brand = "brand/hosim"
-number = "M9156-GREEN-D"
-name = "9156 RTR, green"
+number = "9156"
+name = "9156 RTR, green, 2 batteries"
 kind = "rtr"
 status = "released"
-seen_by = "2022-08"
-seen_by_source = "https://www.hosim.com/products/hosim-1-12-rc-car-remote-control-car-monster-truck-dual-batteries-9156-green"
-notes = "Store title: Hosim 1:12 RC Car Remote Control Car Monster Truck Dual Batteries 9156 Green. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+seen_by = "2021-05"
+seen_by_source = "https://www.hosim.com/products/hosim-large-size-1-12-scale-45km-h-4wd-2-4ghz-monster-truck-9156-green"
+notes = "Store SKUs: M9156-GREEN-D, M9156-GREEN-2B-C. Store title: Hosim 1:12 RC Car Remote Control Car Monster Truck Dual Batteries 9156 Green. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
 color = "green"
-documents = ["doc/hosim/m9156-green-d-page", "doc/hosim/9155-9156-manual"]
+documents = ["doc/hosim/m9156-green-d-page", "doc/hosim/m9156-green-2b-c-page", "doc/hosim/9155-9156-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-12-rc-car-remote-control-car-monster-truck-dual-batteries-9156-green" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-large-size-1-12-scale-45km-h-4wd-2-4ghz-monster-truck-9156-green" },
 ]
 contains = [
   { part = "part/hosim/15-LS08", role = "listed", source = "doc/hosim/store" },
@@ -46,3 +47,4 @@ contains = [
   { part = "part/hosim/WF-B", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/ZD-01", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/M9156-GREEN-2B-C"]

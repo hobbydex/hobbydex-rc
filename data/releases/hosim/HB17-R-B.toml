@@ -1,16 +1,17 @@
 id = "release/hosim/HB17-R-B"
 kit = "kit/hosim/hb17"
 brand = "brand/hosim"
-number = "HB17-R-B"
+number = "HB17"
 name = "HB17 RTR"
 kind = "rtr"
 status = "released"
 seen_by = "2023-03"
 seen_by_source = "https://www.hosim.com/products/hosim-brushless-rc-car-1-16-4wd-fast-remote-control-truck-radio-cars-off-road-waterproof-hobby-grade-toy-crawler-electric-vehicle-gift-for-boys-adult-children-60-kmh"
-notes = "Store title: Hosim Brushless RC Car 1:16 4WD Fast Remote Control Truck Radio Cars Off-Road Waterproof Hobby Grade Toy Crawler Electric Vehicle Gift for Boys Adult Children 60+KMH. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/hb17-r-b-page", "doc/hosim/hb17-manual"]
+notes = "Store SKUs: HB17-R-B, HB17-R-DE. Store title: Hosim Brushless RC Car 1:16 4WD Fast Remote Control Truck Radio Cars Off-Road Waterproof Hobby Grade Toy Crawler Electric Vehicle Gift for Boys Adult Children 60+KMH. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/hb17-r-b-page", "doc/hosim/hb17-r-de-page", "doc/hosim/hb17-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-brushless-rc-car-1-16-4wd-fast-remote-control-truck-radio-cars-off-road-waterproof-hobby-grade-toy-crawler-electric-vehicle-gift-for-boys-adult-children-60-kmh" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-ferngesteuertes-auto-1-16-mit-burstenlosem-motor-55km-h-4wd-rc-auto-brushless-offroad-rennauto-mit-ersetzbarer-schale-plus-2-akku-40-min-spielzeit-bei-vollgas-geschenk-fur-kinder-und-erwachsene" },
 ]
 contains = [
   { part = "part/hosim/16100", role = "listed", source = "doc/hosim/store" },
@@ -52,3 +53,4 @@ contains = [
   { part = "part/hosim/R30", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/T3A", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/HB17-R-DE"]

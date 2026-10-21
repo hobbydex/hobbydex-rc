@@ -1,16 +1,17 @@
 id = "release/hosim/H17-G-B"
 kit = "kit/hosim/h17"
 brand = "brand/hosim"
-number = "H17-G-B"
+number = "H17"
 name = "H17 RTR"
 kind = "rtr"
 status = "released"
 seen_by = "2023-03"
 seen_by_source = "https://www.hosim.com/products/hosim-bluetooth-gps-1-16-rc-car-remote-control-truck-with-app-4wd-radio-cars-off-road-waterproof-hobby-grade-trucks-for-child-adults"
-notes = "Store title: Hosim Bluetooth GPS 1:16 RC Car Remote Control Truck with App，4WD Radio Cars Off Road Waterproof Hobby Grade Trucks for Child Adults. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/h17-g-b-page", "doc/hosim/h07-h17-manual"]
+notes = "Store SKUs: H17-G-B, H17-G-C. Store title: Hosim Bluetooth GPS 1:16 RC Car Remote Control Truck with App，4WD Radio Cars Off Road Waterproof Hobby Grade Trucks for Child Adults. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+documents = ["doc/hosim/h17-g-b-page", "doc/hosim/h17-g-c-page", "doc/hosim/h07-h17-manual"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-bluetooth-gps-1-16-rc-car-remote-control-truck-with-app-4wd-radio-cars-off-road-waterproof-hobby-grade-trucks-for-child-adults" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-bluetooth-gps-remote-control-car-1-16-4wd-rc-car-truck-with-app-radio-cars-off-road-waterproof-hobby-grade-trucks-for-child-adults" },
 ]
 contains = [
   { part = "part/hosim/1610E", role = "listed", source = "doc/hosim/store" },
@@ -47,3 +48,4 @@ contains = [
   { part = "part/hosim/RE352B", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/T20", role = "listed", source = "doc/hosim/store" },
 ]
+former_ids = ["release/hosim/H17-G-C"]
