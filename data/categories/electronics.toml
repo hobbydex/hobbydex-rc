@@ -1,11 +1,7 @@
 id = "category/electronics"
 name = "Electronics"
-summary = "ESCs, radios, receivers, lights and wiring"
-description = "ESCs, receivers, transmitters, lights, switches, wires and plugs."
+summary = "Radios, receivers, lights and wiring"
+description = "Radios, receivers, transmitters, lights, switches, wires and plugs, and the accessories made for an ESC (fans, cases, cables, programming cards), which are not ESCs."
 key_fields = [
   { field = "radio_unit", label = "Radio", from = "part" },
-  { field = "current_a", label = "Amps", from = "part", unit = "A" },
-  { field = "lipo_cells", label = "LiPo", from = "part", format = "cells" },
-  { field = "sensored", label = "Sensor port", from = "part", format = "yesno" },
-  { field = "weight_g", label = "Weight", from = "part", unit = "g", compare_only = true },
 ]

@@ -311,7 +311,7 @@ brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 A brand that names the car only in the part's name (RW Racing: "Supalite Spurs
 48DP for Xray 008/009 73T") gives the car's words from the name, "Xray 008/009".
 
-`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
+`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `esc`, `gear`, `glue`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin-clip`, `pinion`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
 number have none.
@@ -503,7 +503,7 @@ on a receiver they are the receiver's. A set lists its receiver in
 receiver's size and weight go in `notes` as "Receiver: 35 x 21 x 12 mm,
 11 g". The field is left out where the maker does not make clear what the
 part is. tools/validate.py checks the values and that the part is in
-category electronics.
+category electronics, or esc for an ESC with a receiver.
 
 `gtin`: the product barcode (UPC-A, EAN-13 or another GTIN) as a string of
 digits, as printed by the brand; the validator checks length and check digit.
@@ -720,7 +720,7 @@ category = "chassis"
 motor_can_mm = 42
 ```
 
-ESCs are parts with category electronics and, when stated, `current_a` and
+ESCs are parts with category esc and, when stated, `current_a` and
 `peak_current_a` (continuous and burst amps), `lipo_cells`, `dimensions_mm`,
 `weight_g` and `sensored` (true when the ESC has a sensor port and runs
 sensored motors, false when it is sensorless only). A motor and ESC combo lists its components with `includes`.
