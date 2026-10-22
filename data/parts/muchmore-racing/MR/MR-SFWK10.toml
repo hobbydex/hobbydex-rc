@@ -4,3 +4,10 @@ number = "MR-SFWK10"
 name = "Super Flexible High Current Silicon Wire 10 AWG Black 100cm"
 category = "wire"
 category_source = "curated"
+equivalent_to = [
+  { spec = "spec/wire/10awg", match = "functional" },
+]
+wire_awg = 10
+insulation = "silicone"
+length_mm = 1000
+color = "black"

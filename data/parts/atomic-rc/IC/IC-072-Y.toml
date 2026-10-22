@@ -9,3 +9,9 @@ links = [
 category = "wire"
 color = "yellow"
 range = "atomic-rc/ic-072-colours"
+equivalent_to = [
+  { spec = "spec/wire/12awg", match = "functional" },
+]
+wire_awg = 12
+insulation = "silicone"
+length_mm = 1000

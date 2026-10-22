@@ -80,6 +80,7 @@ ENUMS = {
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
+    "part.insulation": {"silicone", "pvc", "teflon"},   # wire parts (docs/schema.md "Wires")
     "part.lubricant": {"oil", "grease"},
     "part.viscosity": {"thin", "medium", "thick"},
     "spec.profile": {"regular", "thin"},
@@ -122,7 +123,7 @@ NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that co
 SPEC_PART_CATS = {
     "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
     "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
-    "washer": {"washer-shim"}, "eclip": {"clip"},
+    "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
 }
 
@@ -705,6 +706,39 @@ def main():
                     and 30 <= fq[0] < fq[1] <= 5000
                 if not (one or rng):
                     errors.append(f"{path}: frequency_hz {fq!r} should be an int (hz) or [low, high] in hz, 30 to 5000")
+        if kind == "spec" and d.get("category") == "wire":
+            awg = d.get("awg")
+            if not (isinstance(awg, int) and not isinstance(awg, bool) and 8 <= awg <= 30):
+                errors.append(f"{path}: wire spec needs awg, the gauge from 8 to 30")
+            elif d["id"] != f"spec/wire/{awg}awg":
+                errors.append(f"{path}: wire spec id should be spec/wire/{awg}awg")
+            for k in ("conductor_mm", "cross_section_mm2"):
+                if not (isinstance(d.get(k), (int, float)) and not isinstance(d.get(k), bool) and d[k] > 0):
+                    errors.append(f"{path}: wire spec needs {k} > 0")
+        WIRE_ONLY = ("wire_awg", "insulation", "strands", "shrink_ratio", "flat_width_mm")
+        if kind == "part" and any(k in d for k in WIRE_ONLY) and d.get("category") != "wire":
+            errors.append(f"{path}: {', '.join(k for k in WIRE_ONLY if k in d)} only on wires (category wire)")
+        if kind == "part" and d.get("category") == "wire":
+            wa = d.get("wire_awg")
+            if wa is not None:
+                ok_one = isinstance(wa, int) and not isinstance(wa, bool) and 4 <= wa <= 32
+                ok_two = isinstance(wa, list) and len(wa) == 2 and all(isinstance(x, int) and not isinstance(x, bool) and 4 <= x <= 32 for x in wa) and wa[0] != wa[1]
+                if not (ok_one or ok_two):
+                    errors.append(f"{path}: wire_awg {wa!r} should be a gauge from 4 to 32, or two gauges as a list")
+            st = d.get("strands")
+            if st is not None and not (isinstance(st, int) and not isinstance(st, bool) and 2 <= st <= 100000):
+                errors.append(f"{path}: strands {st!r} should be a count of 2 or more")
+            sr = d.get("shrink_ratio")
+            if sr is not None and not (isinstance(sr, (int, float)) and not isinstance(sr, bool) and 1 <= sr <= 10):
+                errors.append(f"{path}: shrink_ratio {sr!r} should be the ratio as a number (2:1 is 2), 1 to 10")
+            fw = d.get("flat_width_mm")
+            if fw is not None and not (isinstance(fw, (int, float)) and not isinstance(fw, bool) and fw > 0):
+                errors.append(f"{path}: flat_width_mm {fw!r} should be a width in mm")
+            dm = d.get("diameter_mm")
+            if dm is not None:
+                vals = dm if isinstance(dm, list) else [dm]
+                if not (vals and all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in vals)):
+                    errors.append(f"{path}: diameter_mm {dm!r} should be a size in mm, or a list of sizes")
         if kind == "part" and "radio_unit" in d and d.get("category") not in ("radio", "esc"):
             errors.append(f"{path}: radio_unit only on radios and receivers (category radio, or esc for an ESC with a receiver)")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
