@@ -117,9 +117,9 @@ NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that co
 
 # which part categories may be `equivalent_to` a spec of each kind
 SPEC_PART_CATS = {
-    "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin-clip"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
+    "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
     "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
-    "washer": {"washer-shim"}, "eclip": {"pin-clip"},
+    "washer": {"washer-shim"}, "eclip": {"clip"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
 }
 
