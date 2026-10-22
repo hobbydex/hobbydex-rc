@@ -2,6 +2,7 @@ id = "part/fast-eddy/TFE5579"
 brand = "brand/fast-eddy"
 number = "TFE5579"
 name = "Team Losi 8ight 2.0 Truggy Ceramic Sealed Bearing Kit"
+gtin = "758913655441"
 includes = [
   { spec = "spec/bearing/flanged-8x14x4", qty = 6 },
   { spec = "spec/bearing/8x14x4", qty = 4 },
@@ -18,4 +19,8 @@ seal = "rubber"
 applies_to = "Team Losi 8ight 2.0 Truggy"
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/team-losi-8ight-2-0-truggy-ceramic-sealed-bearing-kit" },
+]
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the 8ight 2.0 Truggy" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the 8ight 2.0 Truggy" },
 ]
