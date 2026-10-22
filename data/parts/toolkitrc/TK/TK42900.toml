@@ -7,3 +7,7 @@ category_source = "curated"
 links = [
   { site = "ToolkitRC", url = "https://www.toolkitrc.com/product/xt60-connector-series/" },
 ]
+equivalent_to = [
+  { spec = "spec/connector/xt60", match = "functional" },
+  { spec = "spec/connector/xt90", match = "functional" },
+]

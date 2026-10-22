@@ -14,3 +14,6 @@ links = [
 category = "esc"
 motor_type = "brushless"
 connector = "XT30"
+equivalent_to = [
+  { spec = "spec/connector/xt30", match = "functional" },
+]

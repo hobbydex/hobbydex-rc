@@ -7,3 +7,7 @@ links = [
   { site = "xceedrc.com (maker store)", url = "https://xceedrc.com/shop-usd/ols/products/107277-tamiya-male-adapter-charging-cable-with-xt60-female-plug-150mm" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/tamiya", match = "functional" },
+  { spec = "spec/connector/xt60", match = "functional" },
+]

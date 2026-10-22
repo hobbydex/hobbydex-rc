@@ -5,4 +5,9 @@ name = "Tamiya Female to 4.0 Banana Plug 14AWG Silicone Wire L=100mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=42" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=42" },
+]
+equivalent_to = [
+  { spec = "spec/connector/tamiya", match = "functional" },
+]

@@ -7,6 +7,7 @@ category_source = "curated"
 gtin = "784695007598"
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-3000mah", match = "functional", notes = "Chemistry, cells and capacity from the name; check size and plug" },
+  { spec = "spec/connector/deans", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 3

@@ -5,3 +5,6 @@ name = "Prise XT90 femelle (1 pièce)"
 source = "doc/t2m/t2m-shop"
 notes = "The store prints the item code as T2905/03."
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/xt90", match = "functional" },
+]

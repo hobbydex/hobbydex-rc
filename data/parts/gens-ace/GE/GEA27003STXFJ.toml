@@ -6,6 +6,7 @@ gtin = "6928493304570"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-2700mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+  { spec = "spec/connector/servo-jr-futaba", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 3

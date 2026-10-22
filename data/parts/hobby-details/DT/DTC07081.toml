@@ -5,4 +5,9 @@ name = "Connector XT90 Plug Female (10AWG Silicone 10cm)"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=155" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=155" },
+]
+equivalent_to = [
+  { spec = "spec/connector/xt90", match = "functional" },
+]

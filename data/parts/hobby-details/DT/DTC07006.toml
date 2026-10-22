@@ -4,4 +4,9 @@ number = "DTC07006"
 name = "Mini Tamiya Male to Tamiya Female 16AWG Silicone Wire L=100mm"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
 category = "wire"
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=45" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=45" },
+]
+equivalent_to = [
+  { spec = "spec/connector/tamiya-mini", match = "functional" },
+]

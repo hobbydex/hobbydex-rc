@@ -5,4 +5,10 @@ name = "XT60 Female to 4mm Banana Plug with Housing 14AWG Silicone Wire L=100mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=112" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=112" },
+]
+equivalent_to = [
+  { spec = "spec/connector/banana-4mm", match = "functional" },
+  { spec = "spec/connector/xt60", match = "functional" },
+]

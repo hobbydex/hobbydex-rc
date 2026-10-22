@@ -6,6 +6,7 @@ category = "battery"
 category_source = "curated"
 equivalent_to = [
   { spec = "spec/battery/lihv-2s-8600mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+  { spec = "spec/connector/bullet-5mm", match = "functional" },
 ]
 c_rating = 130
 connector = "5mm bullet"

@@ -498,10 +498,13 @@ contain `+`).
 
 `radio_unit` says what a radio part is: `transmitter` (the transmitter as the
 maker lists it, with no receiver named as part of it), `receiver` (a
-receiver, also an ESC or a car's control board with a receiver built in) or
-`set` (a transmitter sold with its receiver under one number). On a
-transmitter or a set, `dimensions_mm` and `weight_g` are the transmitter's;
-on a receiver they are the receiver's. A set lists its receiver in
+receiver, also an ESC or a car's control board with a receiver built in),
+`set` (a transmitter sold with its receiver under one number) or `gyro` (a
+steering gyro or gyro module, sold on its own or built into a receiver only
+when the name says the receiver part is secondary; a receiver with a built-in
+gyro stays `receiver`; a gyro mount, plate, case or cable is not a gyro and
+has no `radio_unit`). On a transmitter or a set, `dimensions_mm` and
+`weight_g` are the transmitter's; on a receiver they are the receiver's. A set lists its receiver in
 `includes` when the receiver is a part of its own; when it is not, the
 receiver's size and weight go in `notes` as "Receiver: 35 x 21 x 12 mm,
 11 g". The field is left out where the maker does not make clear what the
@@ -898,6 +901,36 @@ id = "spec/eclip/3mm"
 category = "eclip"
 name = "3mm E-clip"
 shaft_mm = 3
+```
+
+### Connector specs
+
+`spec/connector/<slug>` (category "connector"): one connector family and
+size, as the makers name them: XT30, XT60, XT60H and XT90-S (anti-spark),
+XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC3 and IC5
+(EC-compatible), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
+mini Tamiya, JST-RCY, JST-XH, the JR/Futaba servo plug, bullets by
+diameter (`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`,
+`pins` (the contact count, when a family has one), `contact_mm` (pin or
+bullet diameter), `anti_spark` and `polarized` (booleans). A current is set
+only from a source: `current_a` (continuous) and `burst_a` (when stated),
+each with `<field>_source`, the maker's own page; the wire gauge the rating
+depends on goes in `notes`. Parts link with match "functional" from their
+name: a lead or adapter with two connectors links both (see
+tools/link_connector_specs.py). Battery and ESC parts link from their
+`connector` field the same way.
+
+```toml
+id = "spec/connector/ec5"
+category = "connector"
+name = "EC5"
+family = "EC"
+pins = 2
+anti_spark = false
+polarized = true
+current_a = 120
+current_a_source = "https://www.horizonhobby.com/product/connector-ec5-device-2/EFLAEC501.html"
+notes = "More than 120 A continuous with 10 AWG wire, as the maker states it."
 ```
 
 ### Nut specs

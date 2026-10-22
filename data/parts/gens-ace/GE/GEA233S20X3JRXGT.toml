@@ -6,6 +6,7 @@ gtin = "6928493317914"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/life-3s-2300mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+  { spec = "spec/connector/xt30", match = "functional" },
 ]
 chemistry = "life"
 cells = 3
