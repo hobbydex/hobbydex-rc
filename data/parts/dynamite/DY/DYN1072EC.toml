@@ -8,7 +8,6 @@ links = [
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/nimh-7s-3300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-  { spec = "spec/connector/ec3", match = "functional" },
 ]
 chemistry = "nimh"
 cells = 7

@@ -6,7 +6,6 @@ gtin = "6928493312292"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-4s-3300mah", match = "functional", source = "doc/gens-ace/4s-lipo-battery", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/xt60", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 4

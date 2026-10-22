@@ -915,10 +915,12 @@ diameter (`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`,
 bullet diameter), `anti_spark` and `polarized` (booleans). A current is set
 only from a source: `current_a` (continuous) and `burst_a` (when stated),
 each with `<field>_source`, the maker's own page; the wire gauge the rating
-depends on goes in `notes`. Parts link with match "functional" from their
-name: a lead or adapter with two connectors links both (see
-tools/link_connector_specs.py). Battery and ESC parts link from their
-`connector` field the same way.
+depends on goes in `notes`. A wire part (lead, adapter,
+harness, plug) links with match "functional" from its name: a lead or
+adapter with two connectors links both (see tools/link_connector_specs.py).
+Only connector parts are equivalent to a connector spec. A battery or ESC
+is not: it names its plug in `connector` (the site links that field to the
+spec) and has no `equivalent_to` row to a connector spec.
 
 ```toml
 id = "spec/connector/ec5"
