@@ -4,3 +4,8 @@ number = "MR-SW26"
 name = "Servo Wire 26AWG(100cm)"
 category = "wire"
 category_source = "curated"
+equivalent_to = [
+  { spec = "spec/wire/26awg", match = "functional" },
+]
+wire_awg = 26
+length_mm = 1000
