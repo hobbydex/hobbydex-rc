@@ -2,6 +2,7 @@ id = "part/fast-eddy/TFE3682"
 brand = "brand/fast-eddy"
 number = "TFE3682"
 name = "Tamiya Cheetah 58004 Ceramic Rubber Sealed Bearing Kit"
+gtin = "769173978249"
 includes = [
   { spec = "spec/bearing/5x11x4", qty = 4 },
   { spec = "spec/bearing/5x8x2.5", qty = 2 },
@@ -13,4 +14,7 @@ seal = "rubber"
 applies_to = "Tamiya Cheetah 58004"
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/tamiya-cheetah-58004-ceramic-rubber-sealed-bearing-kit" },
+]
+fits = [
+  { kit = "kit/tamiya/xr311-combat-support-vehicle", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Cheetah 58004 Ceramic" },
 ]

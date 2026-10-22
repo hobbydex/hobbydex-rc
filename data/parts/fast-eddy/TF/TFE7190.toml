@@ -2,6 +2,7 @@ id = "part/fast-eddy/TFE7190"
 brand = "brand/fast-eddy"
 number = "TFE7190"
 name = "Tamiya Plasma Edge II 47446 Ceramic Sealed Bearing Kit"
+gtin = "758913671557"
 includes = [
   { spec = "spec/bearing/5x11x4", qty = 12 },
   { spec = "spec/bearing/8x12x3.5", qty = 4 },
@@ -13,4 +14,7 @@ seal = "rubber"
 applies_to = "Tamiya Plasma Edge II 47446"
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/tamiya-plasma-edge-ii-47446-ceramic-sealed-bearing-kit" },
+]
+fits = [
+  { kit = "kit/tamiya/tt-02b", releases = ["release/tamiya/47446"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Plasma Edge II 47446" },
 ]

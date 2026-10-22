@@ -2,6 +2,7 @@ id = "part/fast-eddy/TFE795"
 brand = "brand/fast-eddy"
 number = "TFE795"
 name = "Tamiya Jaguar 58088 Sealed Bearing Kit"
+gtin = "769173949454"
 includes = [
   { spec = "spec/bearing/5x11x4", qty = 6 },
   { spec = "spec/bearing/6x12x4", qty = 2 },
@@ -14,4 +15,7 @@ seal = "rubber"
 applies_to = "Tamiya Jaguar 58088"
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/tamiya-jaguar-58088-sealed-bearing-kit" },
+]
+fits = [
+  { kit = "kit/tamiya/mercedes-benz-c-11", releases = ["release/tamiya/58088"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Jaguar 58088" },
 ]
