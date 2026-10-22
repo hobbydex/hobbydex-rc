@@ -3,8 +3,11 @@ name = "ESCs"
 summary = "Speed controllers, brushed and brushless, and ESC-motor combos"
 description = "Electronic speed controllers, brushed and brushless, ESC and receiver units, and ESC-motor combos. Accessories made for an ESC (fans, cases, cables, programming cards, trays, capacitors) are filed with electronics."
 key_fields = [
+  { field = "motor_type", label = "Type", from = "part" },
   { field = "current_a", label = "Amps", from = "part", unit = "A" },
   { field = "lipo_cells", label = "LiPo", from = "part", format = "cells" },
+  { field = "bec_v", label = "BEC", from = "part", format = "volts" },
+  { field = "waterproof", label = "Waterproof", from = "part", format = "yesno" },
   { field = "sensored", label = "Sensor port", from = "part", format = "yesno" },
   { field = "weight_g", label = "Weight", from = "part", unit = "g", compare_only = true },
 ]
