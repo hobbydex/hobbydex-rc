@@ -1,0 +1,11 @@
+id = "category/clip"
+name = "Clips"
+summary = "E-clips, R-clips and retaining rings"
+description = "E-clips (E-rings, DIN 6799 type), R-clips, circlips, snap rings, retaining washers and body clips. Straight pins are in pins."
+spec_type = "eclip"
+key_fields = [
+  { field = "shaft_mm", label = "Shaft", from = "spec", unit = "mm" },
+  { field = "groove_mm", label = "Groove", from = "spec", unit = "mm" },
+  { field = "thickness_mm", label = "Thickness", from = "spec", unit = "mm" },
+  { field = "material", label = "Material", from = "part" },
+]
