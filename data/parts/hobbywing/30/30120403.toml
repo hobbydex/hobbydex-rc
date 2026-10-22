@@ -2,7 +2,7 @@ id = "part/hobbywing/30120403"
 brand = "brand/hobbywing"
 number = "30120403"
 name = "QuicRun Fusion Mini16"
-category = "esc"
+category = "motor"
 category_source = "curated"
 kv = 3000
 lipo_cells = [2, 3]
@@ -10,6 +10,13 @@ diameter_mm = 24
 length_mm = 42
 shaft_mm = 2.3
 weight_g = 72
+mount_holes = [
+  { thread = "M2.5", count = 2, circle_mm = 14 },
+  { thread = "M2.5", count = 2, circle_mm = 16 },
+  { thread = "M3", count = 2, circle_mm = 17 },
+]
+equivalent_to = [
+  { spec = "spec/motor/brushless-2442-2.3mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 24 mm, length 42 mm, shaft 2.3 mm)" },
+]
 documents = ["doc/hobbywing/quicrun-fusion-mini16-manual"]
 sensored = true
-notes = "Motor mount holes: M2.5 x2 on 14 mm circle, M2.5 x2 on 16 mm circle, M3 x2 on 17 mm circle"

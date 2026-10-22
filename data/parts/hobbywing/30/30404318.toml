@@ -2,12 +2,14 @@ id = "part/hobbywing/30404318"
 brand = "brand/hobbywing"
 number = "30404318"
 name = "QuicRun Fusion SE 1200KV"
-category = "esc"
+category = "motor"
 category_source = "curated"
 kv = 1200
 lipo_cells = [2, 3]
 weight_g = 201
+mount_holes = [
+  { thread = "M3", count = 6, circle_mm = 25.4 },
+]
 documents = ["doc/hobbywing/quicrun-fusion-se-manual"]
 range = "hobbywing/quicrun-fusion-se"
 sensored = true
-notes = "Motor mount holes: M3 x6 on 25.4 mm circle"
