@@ -3,7 +3,7 @@ brand = "brand/hobbywing"
 number = "30109100"
 name = "QuicRun Fusion 8IGHT SE"
 released = "2025-09-23"
-category = "motor"
+category = "esc"
 category_source = "curated"
 kv = 1800
 lipo_cells = [2, 4]
@@ -11,12 +11,6 @@ diameter_mm = 41
 length_mm = 69
 shaft_mm = 5
 weight_g = 326.5
-mount_holes = [
-  { thread = "M3", count = 4, circle_mm = 25.4 },
-  { thread = "M4", count = 4, circle_mm = 25.4 },
-]
-equivalent_to = [
-  { spec = "spec/motor/brushless-4169-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 41 mm, length 69 mm, shaft 5 mm)" },
-]
 documents = ["doc/hobbywing/quicrun-fusion-8ight-se-manual"]
 sensored = true
+notes = "Motor mount holes: M3 x4 on 25.4 mm circle, M4 x4 on 25.4 mm circle"

@@ -3,7 +3,7 @@ brand = "brand/hobbywing"
 number = "30120500"
 name = "QuicRun Fusion Pro Elite"
 released = "2025-09-23"
-category = "motor"
+category = "esc"
 category_source = "curated"
 kv = 2300
 lipo_cells = [2, 4]
@@ -11,11 +11,6 @@ diameter_mm = 37
 length_mm = 48.5
 shaft_mm = 3.175
 weight_g = 178.5
-mount_holes = [
-  { thread = "M3", count = 6, circle_mm = 25.4 },
-]
-equivalent_to = [
-  { spec = "spec/motor/brushless-3749-3.175mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 37 mm, length 48.5 mm, shaft 3.175 mm)" },
-]
 documents = ["doc/hobbywing/quicrun-fusion-pro-elite-manual"]
 sensored = true
+notes = "Motor mount holes: M3 x6 on 25.4 mm circle"

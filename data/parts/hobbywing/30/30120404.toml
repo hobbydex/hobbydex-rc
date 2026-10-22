@@ -2,7 +2,7 @@ id = "part/hobbywing/30120404"
 brand = "brand/hobbywing"
 number = "30120404"
 name = "QuicRun Fusion 8IGHT"
-category = "motor"
+category = "esc"
 category_source = "curated"
 kv = 2300
 lipo_cells = [2, 4]
@@ -10,12 +10,6 @@ diameter_mm = 42
 length_mm = 69
 shaft_mm = 5
 weight_g = 338
-mount_holes = [
-  { thread = "M3", count = 4, circle_mm = 25.4 },
-  { thread = "M4", count = 4, circle_mm = 25.4 },
-]
-equivalent_to = [
-  { spec = "spec/motor/brushless-4269-5mm", match = "functional", notes = "Derived from Hobbywing's dimensions (O.D. 42 mm, length 69 mm, shaft 5 mm)" },
-]
 documents = ["doc/hobbywing/quicrun-fusion-8ight-manual"]
 sensored = true
+notes = "Motor mount holes: M3 x4 on 25.4 mm circle, M4 x4 on 25.4 mm circle"
