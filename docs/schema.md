@@ -1030,6 +1030,35 @@ key_fields = [
 ]
 ```
 
+### Wire specs
+
+`spec/wire/<n>awg` (category "wire"): one AWG gauge from 8 to 30 (`awg`), its
+nominal solid round copper conductor (`conductor_mm`, the diameter, and
+`cross_section_mm2`) from the AWG formula of ASTM B258
+(`standards = ["ASTM B258"]`, the standard's notes give the formula). Wire
+parts with a gauge link to it with match "functional"; a lead with two gauges
+links both. Only the gauge is in the spec: insulation and strands are the
+part's own.
+
+Part fields on wires (category wire; set by tools/link_wire_specs.py from the
+maker's wording, never overwritten):
+- `wire_awg`: the gauge (int, 4 to 32), or a list of two for a lead with two
+  gauges ("12+14AWG").
+- `insulation`: "silicone", "pvc" or "teflon", as the name says.
+- `strands`: the strand count, when stated ("1000 strands").
+- `length_mm`: the length the part is sold in. Inside brackets the first length
+  wins, so a sensor cable "(200mm (7.9"))" is 200; a list of sizes without a
+  bracketed one, or a sum "50+50mm", is no length.
+- `color`: as on other parts (plain words; "red/black" for a pair, "fluorescent
+  pink" with "fluorescence" in the name).
+
+Heat shrink (category wire, name says heat shrink, shrink tube or
+Schrumpfschlauch): `diameter_mm` (the supplied inner diameter; a list for an
+assortment), `shrink_ratio` (the ratio as a number, 2:1 is 2), `flat_width_mm`
+(a flat battery wrap, only when the name says flat) and `length_mm`. The site
+shows "Shrinks to" as diameter / ratio, only when the ratio is stated.
+
+
 ## standard
 
 `data/standards/<slug>.toml`: a published standard that specs cite in their

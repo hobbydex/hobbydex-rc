@@ -1,0 +1,4 @@
+id = "standard/astm-b258"
+code = "ASTM B258"
+title = "Standard Specification for Standard Nominal Diameters and Cross-Sectional Areas of AWG Sizes of Solid Round Wires Used as Electrical Conductors"
+notes = "The AWG size n has the nominal diameter d = 0.127 mm x 92^((36 - n) / 39), the formula the standard gives as the definition of the AWG sizes; the cross-section is pi/4 x d^2. conductor_mm and cross_section_mm2 of each data/specs/wire spec are that formula for a solid round copper conductor, rounded to 4 decimal places. Stranded wire of the same gauge has the same nominal cross-section; its strands are not in the spec. The page of the standard is not cited: the formula is cited as its definition."
