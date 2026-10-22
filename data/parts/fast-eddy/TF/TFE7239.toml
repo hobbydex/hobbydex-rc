@@ -2,6 +2,7 @@ id = "part/fast-eddy/TFE7239"
 brand = "brand/fast-eddy"
 number = "TFE7239"
 name = "Tamiya 4x4 Pick-Up Mountain Rider 57071 Ceramic Sealed Bearing Kit"
+gtin = "758913672042"
 includes = [
   { spec = "spec/bearing/5x8x2.5", qty = 9 },
   { spec = "spec/bearing/5x10x4", qty = 21 },
@@ -17,4 +18,7 @@ seal = "rubber"
 applies_to = "Tamiya 4x4 Pick-Up Mountain Rider 57071"
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/tamiya-4x4-pick-up-mountain-rider-57071-ceramic-sealed-bearing-kit" },
+]
+fits = [
+  { kit = "kit/tamiya/tamtech-modern", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the 4x4 Pick-Up Mountain Rider 57071" },
 ]
