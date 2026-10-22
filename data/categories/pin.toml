@@ -1,0 +1,11 @@
+id = "category/pin"
+name = "Pins"
+summary = "Hinge, king, axle and drive pins"
+description = "Straight pins: hinge, king, axle, drive-shaft and differential pins, dowels, keys and body pins. E-clips and retaining rings are in clips."
+spec_type = "pin"
+former_ids = ["category/pin-clip"]
+key_fields = [
+  { field = "diameter_mm", label = "Diameter", from = "spec", unit = "mm" },
+  { field = "length_mm", label = "Length", from = "spec", unit = "mm" },
+  { field = "material", label = "Material", from = "part" },
+]
