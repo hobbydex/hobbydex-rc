@@ -54,6 +54,7 @@ DOUBTABLE = {"release": ("released", "year", "announced"), "brand": ("launched",
 
 # scale as a fraction of the real vehicle: "1/10", "1/13.5" (docs/schema.md "kit", "release")
 SCALE_RE = re.compile(r"1/\d+(\.\d+)?")
+YOUTUBE_CHANNEL = re.compile(r"https://www\.youtube\.com/@[A-Za-z0-9._-]+")
 
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
@@ -787,6 +788,11 @@ def main():
                 errors.append(f"{path}: ended is set, so status must be gone")
             if "launched" in d and "ended" in d and d["ended"][:len(d["launched"])] < d["launched"][:len(d["ended"])]:
                 errors.append(f"{path}: ended {d['ended']} is before launched {d['launched']}")
+        # a brand's official YouTube channels (docs/schema.md "brand"): a list of channel URLs
+        if kind == "brand" and "youtube" in d:
+            if not (isinstance(d["youtube"], list) and d["youtube"]
+                    and all(isinstance(u, str) and YOUTUBE_CHANNEL.fullmatch(u) for u in d["youtube"])):
+                errors.append(f"{path}: youtube should be a list of https://www.youtube.com/@<handle> URLs")
         # the company that owns a brand (docs/schema.md "company"): stated on a page of the brand or the company
         if kind == "brand" and ("owner_source" in d or "owner_since" in d) and "owner" not in d:
             errors.append(f"{path}: owner_source and owner_since need an owner")
