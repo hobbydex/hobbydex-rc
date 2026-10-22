@@ -97,7 +97,7 @@ ENUMS = {
     "part.paint_role": {"paint", "clear", "primer", "thinner", "cleaner", "masking"},
     "part.fuel": {"nitro", "gasoline"},
     # what a radio part is (docs/schema.md "documents"): set = a transmitter sold with its receiver
-    "part.radio_unit": {"transmitter", "receiver", "set"},
+    "part.radio_unit": {"transmitter", "receiver", "set", "gyro"},
     "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
 # engine fields (docs/schema.md "Engines"): only on engine-fuel parts, numbers in these ranges

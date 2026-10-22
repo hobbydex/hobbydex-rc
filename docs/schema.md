@@ -498,10 +498,13 @@ contain `+`).
 
 `radio_unit` says what a radio part is: `transmitter` (the transmitter as the
 maker lists it, with no receiver named as part of it), `receiver` (a
-receiver, also an ESC or a car's control board with a receiver built in) or
-`set` (a transmitter sold with its receiver under one number). On a
-transmitter or a set, `dimensions_mm` and `weight_g` are the transmitter's;
-on a receiver they are the receiver's. A set lists its receiver in
+receiver, also an ESC or a car's control board with a receiver built in),
+`set` (a transmitter sold with its receiver under one number) or `gyro` (a
+steering gyro or gyro module, sold on its own or built into a receiver only
+when the name says the receiver part is secondary; a receiver with a built-in
+gyro stays `receiver`; a gyro mount, plate, case or cable is not a gyro and
+has no `radio_unit`). On a transmitter or a set, `dimensions_mm` and
+`weight_g` are the transmitter's; on a receiver they are the receiver's. A set lists its receiver in
 `includes` when the receiver is a part of its own; when it is not, the
 receiver's size and weight go in `notes` as "Receiver: 35 x 21 x 12 mm,
 11 g". The field is left out where the maker does not make clear what the
