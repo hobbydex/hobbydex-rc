@@ -85,6 +85,7 @@ ENUMS = {
     "spec.shape": {"flat", "countersunk", "conical"},   # washer specs (docs/schema.md "Washer specs")
     "spec.variant": {"bowed"},   # e-clip specs (docs/schema.md "E-clip specs")
     "spec.motor_type": {"brushed", "brushless"},
+    "part.motor_type": {"brushed", "brushless", "both"},   # ESCs (docs/schema.md "ESCs")
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.case": {"hard", "soft", "shorty"},
@@ -102,6 +103,8 @@ ENUMS = {
 # servo spec fields (docs/schema.md "Servos"): bearings, bearing_kind, dead_band_us, frequency_hz
 SERVO_FIELDS = ("bearings", "bearing_kind", "dead_band_us", "frequency_hz")
 SERVO_BEARING_KIND = {"ball", "bushing"}
+ESC_PROP_FIELDS = ("motor_type", "bec_v", "bec_a", "waterproof", "motor_limit_t", "motor_limit_kv", "nimh_cells", "programming", "resistance_mohm")   # docs/schema.md "ESCs"
+ESC_PROGRAMMING = {"card", "box", "app", "bluetooth", "wifi", "buttons", "transmitter"}
 ENGINE_NUM = {"displacement_cc": (0.5, 120), "bore_mm": (5, 60), "stroke_mm": (5, 60), "output_hp": (0.05, 20), "output_rpm": (1000, 60000)}
 ENGINE_FIELDS = set(ENGINE_NUM) | {"engine_class", "rpm_range", "fuel"}   # bore_mm is also a shock's bore: checked on engines only
 PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent", "translucent", "clear", "chrome", "flake"}   # part.finish of a paint; other parts' finish ("black oxide") is free
@@ -657,6 +660,34 @@ def main():
         se = d.get("sensored") if kind == "part" else None
         if se is not None and (not isinstance(se, bool) or d.get("category") not in ("motor", "esc", "electronics")):
             errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category esc; motor and electronics systems too)")
+        if kind == "part" and any(k in d for k in ESC_PROP_FIELDS) and d.get("category") != "esc":
+            errors.append(f"{path}: {', '.join(k for k in ESC_PROP_FIELDS if k in d)} only on ESCs (category esc)")
+        if kind == "part" and d.get("category") == "esc":
+            def _isnum(x, lo, hi):
+                return isinstance(x, (int, float)) and not isinstance(x, bool) and lo <= x <= hi
+            bv = d.get("bec_v")
+            if bv is not None and not (_isnum(bv, 1, 24) or (isinstance(bv, list) and len(bv) >= 2 and len(set(bv)) == len(bv) and all(_isnum(x, 1, 24) for x in bv))):
+                errors.append(f"{path}: bec_v {bv!r} should be a voltage (1..24) or a list of two or more when switchable")
+            ba = d.get("bec_a")
+            if ba is not None and not _isnum(ba, 0.1, 50):
+                errors.append(f"{path}: bec_a {ba!r} should be the BEC current in A (0.1..50)")
+            if "waterproof" in d and not isinstance(d["waterproof"], bool):
+                errors.append(f"{path}: waterproof should be true or false")
+            mlt = d.get("motor_limit_t")
+            if mlt is not None and not _isnum(mlt, 1, 80):
+                errors.append(f"{path}: motor_limit_t {mlt!r} should be the lowest motor turns allowed (1..80)")
+            mlk = d.get("motor_limit_kv")
+            if mlk is not None and not (isinstance(mlk, int) and not isinstance(mlk, bool) and 500 <= mlk <= 20000):
+                errors.append(f"{path}: motor_limit_kv {mlk!r} should be a kV figure (int, 500..20000)")
+            nc = d.get("nimh_cells")
+            if nc is not None and not (isinstance(nc, list) and len(nc) == 2 and all(isinstance(x, int) and not isinstance(x, bool) for x in nc) and 0 < nc[0] <= nc[1]):
+                errors.append(f"{path}: nimh_cells {nc!r} should be [min, max] cell counts")
+            pg = d.get("programming")
+            if pg is not None and not (isinstance(pg, list) and pg and len(set(pg)) == len(pg) and all(x in ESC_PROGRAMMING for x in pg)):
+                errors.append(f"{path}: programming {pg!r} should be a list of {sorted(ESC_PROGRAMMING)}")
+            rm = d.get("resistance_mohm")
+            if rm is not None and not _isnum(rm, 0.01, 100):
+                errors.append(f"{path}: resistance_mohm {rm!r} should be the internal resistance in milliohms (0.01..100)")
         if kind == "part" and any(k in d for k in SERVO_FIELDS) and d.get("category") != "servo":
             errors.append(f"{path}: {', '.join(k for k in SERVO_FIELDS if k in d)} only on servos (category servo)")
         if kind == "part" and d.get("category") == "servo":

@@ -725,6 +725,34 @@ ESCs are parts with category esc and, when stated, `current_a` and
 `weight_g` and `sensored` (true when the ESC has a sensor port and runs
 sensored motors, false when it is sensorless only). A motor and ESC combo lists its components with `includes`.
 
+ESC properties, all set only from the maker's own wording in the name or notes
+(tools/link_esc_props.py fills them; a value a part already has is never
+changed): `motor_type` (brushed | brushless | both, when the maker names
+both, "Brushed/Brushless"); `bec_v` (the BEC output voltage: one figure, or a
+list of two or more when the maker says it is switchable, "6.0/7.4 V
+switchable" gives [6.0, 7.4]; a range such as "6.0-7.4 V" is not a list and
+is left out); `bec_a` (the BEC's continuous current in A, "BEC 6V/3A" gives
+3, "500 mA" gives 0.5); `waterproof` (true when the maker says waterproof,
+false only for an explicit "not waterproof"); `motor_limit_t` (the lowest
+motor turns the maker allows, "Motor limit 20T" gives 20, a limit that
+depends on the cell count or a class of turns is left out) and
+`motor_limit_kv` (an int kV limit the maker states without a cell count);
+`nimh_cells` ([min, max] NiMH cells, like `lipo_cells`); `programming` (a
+list of how the ESC is set up: card (program card), box (program box), app,
+bluetooth, wifi, buttons, transmitter); and `resistance_mohm` (the internal
+resistance in milliohms, "resistance 0.0014 ohm" gives 1.4). All are
+ESC-only (category esc). Example:
+
+```toml
+name = "Viper Auto Sport 20, speed controller, waterproof"
+category = "esc"
+motor_type = "brushed"
+bec_a = 1.5
+waterproof = true
+motor_limit_t = 20
+nimh_cells = [4, 8]
+```
+
 Engines (nitro and gas) are parts with category engine-fuel. A complete
 engine carries, when the maker states them: `displacement_cc`,
 `engine_class` (the class the maker names, ".12", ".21", ".28", as a string;
@@ -950,7 +978,7 @@ shown on the category's own page; `spec_type` names the generic spec type the
 category's parts link to; `key_fields` are the properties that matter when
 choosing such a part, in display order, each read from the part itself or from
 its linked spec (`from = "part" | "spec"`), with an optional `unit` and
-`format` ("cells": a [min, max] LiPo range shown as 1-3S; "range": a [min, max] shown as 4000-45000). `compare_only = true`
+`format` ("cells": a [min, max] LiPo range shown as 1-3S; "range": a [min, max] shown as 4000-45000; "volts": a voltage shown as 6 V, or a list of them as 6/7.4 V; "yesno": true or false). `compare_only = true`
 keeps a field out of the parts table and shows it only when parts are
 compared side by side.
 
