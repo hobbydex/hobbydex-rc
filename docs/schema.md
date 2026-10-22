@@ -62,6 +62,7 @@ name = "XRAY"
 legal_name = "XRAY Model Racing Cars"   # optional
 country = "SK"                           # ISO 3166-1 alpha-2
 website = "https://www.teamxray.com"
+youtube = ["https://www.youtube.com/@XRAYracing"]   # optional: the maker's official channels, its own first
 kind = "manufacturer"                    # manufacturer | aftermarket | designer | retailer
 status = "active"                        # active | dormant | gone
 launched = "1993"                        # optional: when the brand launched, ISO date at the source's precision
@@ -70,6 +71,8 @@ ended = "2016-06"                        # only for a gone brand: when it stoppe
 ended_source = "https://..."             # required with ended
 notes = "..."
 ```
+
+`youtube`: a list of the maker's YouTube channels as `https://www.youtube.com/@<handle>`, the brand's own channel first. Only official channels, the ones the maker's own site links (home page, footer, about page); never a fan's, a shop's or a racer's channel. A channel shared by a parent company (Horizon Hobby's, for ARRMA, Axial, Losi...) follows the brand's own. Filled by tools/link_brand_youtube.py.
 
 A date we keep but doubt gets `<field>_doubt` next to it, a short reason (`launched_doubt = "uncited on Wikipedia"`, `released_doubt = "year from the catalogue edition"`): for `launched` and `ended` on a brand, `released`, `year` and `announced` on a release. The site marks such a date with "?" and shows the reason. Not for `seen_by`, which is a bound, not a claim.
 
