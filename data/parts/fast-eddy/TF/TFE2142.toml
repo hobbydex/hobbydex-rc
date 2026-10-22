@@ -2,6 +2,7 @@ id = "part/fast-eddy/TFE2142"
 brand = "brand/fast-eddy"
 number = "TFE2142"
 name = "Arrma Vorteks Brushed Sealed Bearing Kit"
+gtin = "769173962859"
 includes = [
   { spec = "spec/bearing/5x10x4", qty = 10 },
   { spec = "spec/bearing/5x13x4", qty = 2 },
@@ -14,6 +15,7 @@ seal = "rubber"
 applies_to = "Arrma Vorteks Brushed"
 fits = [
   { kit = "kit/arrma/vorteks-2wd", releases = ["release/arrma/ara3205st1", "release/arrma/ara3205st2", "release/arrma/ara3505t1", "release/arrma/ara3505t3"], type = "replaces", source = "doc/fast-eddy/store", notes = "Listed for the Arrma Vorteks Brushed (link_car_kits.py)" },
+  { kit = "kit/arrma/vorteks", releases = ["release/arrma/ara4305v3bt3", "release/arrma/ara4305v3t2", "release/arrma/ara4305v3t3", "release/arrma/ara4305v4t2", "release/arrma/ara4305v4t3"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Vorteks Brushed" },
 ]
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/arrma-vorteks-brushed-sealed-bearing-kit" },

@@ -2,6 +2,7 @@ id = "part/fast-eddy/TFE8421"
 brand = "brand/fast-eddy"
 number = "TFE8421"
 name = "Traxxas Compatible Ford Mustang GT 83044-4 Ceramic Sealed Bearing Kit"
+gtin = "758913683864"
 includes = [
   { spec = "spec/bearing/5x8x2.5", qty = 2 },
   { spec = "spec/bearing/5x11x4", qty = 8 },
@@ -18,4 +19,7 @@ seal = "rubber"
 applies_to = "Traxxas Compatible Ford Mustang GT 83044-4"
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/traxxas-compatible-ford-mustang-gt-83044-4-ceramic-sealed-bearing-kit" },
+]
+fits = [
+  { kit = "kit/traxxas/4-tec", releases = ["release/traxxas/83044-4"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Ford Mustang GT 83044-4" },
 ]
