@@ -3,3 +3,6 @@ brand = "brand/spektrum"
 number = "SPMXCA509"
 name = "Parallel Y-Harness: IC5 Battery with 6\" Wires"
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/ic5", match = "functional" },
+]

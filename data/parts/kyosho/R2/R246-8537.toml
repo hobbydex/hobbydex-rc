@@ -5,3 +5,6 @@ name = "XT60-2P Super Plug Adapter"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/xt60", match = "functional" },
+]

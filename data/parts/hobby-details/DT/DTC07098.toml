@@ -5,4 +5,9 @@ name = "EC3 / XH 5 Pin Housing XH 3 Pin Male (12AWG Silicone180mm) (22AWG PVC 20
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=172" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=172" },
+]
+equivalent_to = [
+  { spec = "spec/connector/ec3", match = "functional" },
+]

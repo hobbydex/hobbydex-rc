@@ -11,6 +11,7 @@ chemistry = "lipo"
 cells = 2
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-4100mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+  { spec = "spec/connector/xt60", match = "functional" },
 ]
 capacity_mah = 4100
 c_rating = 50

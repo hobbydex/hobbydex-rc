@@ -6,6 +6,7 @@ category = "battery"
 category_source = "curated"
 equivalent_to = [
   { spec = "spec/battery/lipo-4s-6500mah", match = "functional", source = "doc/muchmore-racing/product-pages", notes = "Chemistry from Muchmore's category and name, cells from the voltage; check size and plug" },
+  { spec = "spec/connector/xt90", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 4

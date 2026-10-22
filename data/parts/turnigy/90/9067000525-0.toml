@@ -5,6 +5,7 @@ name = "Rapid 3S 5500mAh 11.1V 140C Lipo Battery w/XT90"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-5500mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+  { spec = "spec/connector/xt90", match = "functional" },
 ]
 links = [
   { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-rapid-5500mah-3s2p-140c-hardcase-lipo-battery-pack-w-xt90-connector-roar-approved.html" },

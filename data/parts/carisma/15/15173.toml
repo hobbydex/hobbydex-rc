@@ -6,3 +6,7 @@ links = [
   { site = "Carisma", url = "https://carisma-shop.com/products/xt60-to-ec3-adaptor" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/ec3", match = "functional" },
+  { spec = "spec/connector/xt60", match = "functional" },
+]

@@ -5,4 +5,10 @@ name = "HXT 4mm Bullet Male To Ec3 Female ConnecTor Adapter 14AWG"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=169" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=169" },
+]
+equivalent_to = [
+  { spec = "spec/connector/bullet-4mm", match = "functional" },
+  { spec = "spec/connector/ec3", match = "functional" },
+]

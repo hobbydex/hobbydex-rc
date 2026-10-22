@@ -6,3 +6,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-adapter-tamiya-battery-t-plug-device/DYNC0055.html" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/deans", match = "functional" },
+  { spec = "spec/connector/tamiya", match = "functional" },
+]

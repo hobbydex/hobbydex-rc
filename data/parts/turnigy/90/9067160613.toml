@@ -5,6 +5,7 @@ name = "Nano-Tech Plus 4S 850mAh 14.8V 70C Lipo Battery Pack w/XT60"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-4s-850mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+  { spec = "spec/connector/xt60", match = "functional" },
 ]
 links = [
   { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-nano-tech-plus-850mah-4s-70c-lipo-pack-w-xt60-2.html" },

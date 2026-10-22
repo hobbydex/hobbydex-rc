@@ -5,6 +5,7 @@ name = "Rapid 5500mAh 2S 7.4V 140C Hardcase LiPo Battery with 5mm Bullet to XT60
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-5500mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+  { spec = "spec/connector/xt60", match = "functional" },
 ]
 links = [
   { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-rapid-5500mah-2s2p-140c-hardcase-lipo-battery-pack-roar-approved.html" },

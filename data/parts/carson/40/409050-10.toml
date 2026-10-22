@@ -15,3 +15,6 @@ category_source = "curated"
 notes = "Probably a Hobbywing OEM unit: the name follows Hobbywing's QuicRun WP model codes (WP 8BL150, WP 10BL60), but WP-8BL100 is not in Hobbywing's own range; unconfirmed."
 lipo_cells = [4, 4]
 connector = "T-Plug"
+equivalent_to = [
+  { spec = "spec/connector/deans", match = "functional" },
+]

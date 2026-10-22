@@ -5,6 +5,7 @@ name = "Graphene 2200mAh 4S 14.8V 100C Battery Pack with XT60 Connector"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-4s-2200mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
+  { spec = "spec/connector/xt60", match = "functional" },
 ]
 links = [
   { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-graphene-2200mah-4s-100c-battery-pack.html" },

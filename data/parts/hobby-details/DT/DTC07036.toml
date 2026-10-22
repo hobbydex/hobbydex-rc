@@ -5,4 +5,10 @@ name = "XT60 Male to mini Tamiya Male 16AWG Silicone Wire L=50mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=82" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=82" },
+]
+equivalent_to = [
+  { spec = "spec/connector/tamiya-mini", match = "functional" },
+  { spec = "spec/connector/xt60", match = "functional" },
+]

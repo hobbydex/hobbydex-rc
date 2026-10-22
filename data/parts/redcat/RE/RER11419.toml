@@ -12,3 +12,6 @@ connector = "T-Plug"
 fits = [
   { kit = "kit/redcat/gen8", type = "direct", source = "doc/redcat/store" },
 ]
+equivalent_to = [
+  { spec = "spec/connector/deans", match = "functional" },
+]

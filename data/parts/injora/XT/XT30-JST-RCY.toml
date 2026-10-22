@@ -6,3 +6,8 @@ links = [
   { site = "Injora", url = "https://www.injora.com/products/injora-xt30-to-jst-rcy-jst-ph2-0-trx-4m-t-style-ec3-battery-adapter-cable?variant=48257921908994" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/ec3", match = "functional" },
+  { spec = "spec/connector/jst-rcy", match = "functional" },
+  { spec = "spec/connector/xt30", match = "functional" },
+]

@@ -11,3 +11,6 @@ chemistry = "nimh"
 cells = 8
 capacity_mah = 600
 connector = "Mini Tamiya"
+equivalent_to = [
+  { spec = "spec/connector/tamiya-mini", match = "functional" },
+]
