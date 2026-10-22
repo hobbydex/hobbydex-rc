@@ -705,8 +705,8 @@ def main():
                     and 30 <= fq[0] < fq[1] <= 5000
                 if not (one or rng):
                     errors.append(f"{path}: frequency_hz {fq!r} should be an int (hz) or [low, high] in hz, 30 to 5000")
-        if kind == "part" and "radio_unit" in d and d.get("category") not in ("electronics", "esc"):
-            errors.append(f"{path}: radio_unit only on radios and receivers (category electronics, or esc for an ESC with a receiver)")
+        if kind == "part" and "radio_unit" in d and d.get("category") not in ("radio", "esc"):
+            errors.append(f"{path}: radio_unit only on radios and receivers (category radio, or esc for an ESC with a receiver)")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
         if eng - {"bore_mm"} and d.get("category") != "engine-fuel":
             errors.append(f"{path}: {', '.join(sorted(eng - {'bore_mm'}))} only on engine parts (category engine-fuel)")
