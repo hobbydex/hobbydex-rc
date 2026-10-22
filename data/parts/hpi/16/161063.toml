@@ -11,3 +11,6 @@ fits = [
 category = "esc"
 waterproof = true
 connector = "XT60"
+equivalent_to = [
+  { spec = "spec/connector/xt60", match = "functional" },
+]

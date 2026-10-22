@@ -5,4 +5,10 @@ name = "Connector EC3 Male To Deans (T Plug) Female"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=148" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=148" },
+]
+equivalent_to = [
+  { spec = "spec/connector/deans", match = "functional" },
+  { spec = "spec/connector/ec3", match = "functional" },
+]

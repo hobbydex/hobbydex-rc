@@ -5,4 +5,9 @@ name = "EC3 Male To 4.0mm Banana Plug Male (14AWG Silicone 300mm)"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=162" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=162" },
+]
+equivalent_to = [
+  { spec = "spec/connector/ec3", match = "functional" },
+]

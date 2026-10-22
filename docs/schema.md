@@ -903,6 +903,36 @@ name = "3mm E-clip"
 shaft_mm = 3
 ```
 
+### Connector specs
+
+`spec/connector/<slug>` (category "connector"): one connector family and
+size, as the makers name them: XT30, XT60, XT60H and XT90-S (anti-spark),
+XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC3 and IC5
+(EC-compatible), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
+mini Tamiya, JST-RCY, JST-XH, the JR/Futaba servo plug, bullets by
+diameter (`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`,
+`pins` (the contact count, when a family has one), `contact_mm` (pin or
+bullet diameter), `anti_spark` and `polarized` (booleans). A current is set
+only from a source: `current_a` (continuous) and `burst_a` (when stated),
+each with `<field>_source`, the maker's own page; the wire gauge the rating
+depends on goes in `notes`. Parts link with match "functional" from their
+name: a lead or adapter with two connectors links both (see
+tools/link_connector_specs.py). Battery and ESC parts link from their
+`connector` field the same way.
+
+```toml
+id = "spec/connector/ec5"
+category = "connector"
+name = "EC5"
+family = "EC"
+pins = 2
+anti_spark = false
+polarized = true
+current_a = 120
+current_a_source = "https://www.horizonhobby.com/product/connector-ec5-device-2/EFLAEC501.html"
+notes = "More than 120 A continuous with 10 AWG wire, as the maker states it."
+```
+
 ### Nut specs
 
 `spec/nut/<thread>-<type>[-thin|-regular]` (category "nut"): `thread`

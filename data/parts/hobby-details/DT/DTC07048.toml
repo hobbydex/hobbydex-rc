@@ -5,4 +5,9 @@ name = "EC3 to JR Y Wire L=50+50mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=93" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=93" },
+]
+equivalent_to = [
+  { spec = "spec/connector/ec3", match = "functional" },
+]

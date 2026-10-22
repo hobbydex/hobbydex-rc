@@ -6,3 +6,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-adapter-ec3-device-t-plug-battery/DYNC0059.html" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/deans", match = "functional" },
+  { spec = "spec/connector/ec3", match = "functional" },
+]

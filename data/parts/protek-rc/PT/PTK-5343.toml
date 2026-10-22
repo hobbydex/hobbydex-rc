@@ -7,3 +7,7 @@ category_source = "curated"
 links = [
   { site = "RC Visions", url = "https://rcvisions.com/products/proteck-rc-xt30-charge-lead", kind = "dealer" },
 ]
+equivalent_to = [
+  { spec = "spec/connector/banana-4mm", match = "functional" },
+  { spec = "spec/connector/xt30", match = "functional" },
+]

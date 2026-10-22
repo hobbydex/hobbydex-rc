@@ -6,6 +6,7 @@ category = "battery"
 category_source = "curated"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-1100mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
+  { spec = "spec/connector/ec2", match = "functional" },
 ]
 c_rating = 50
 connector = "EC2"

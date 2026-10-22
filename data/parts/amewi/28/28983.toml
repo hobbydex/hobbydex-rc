@@ -13,6 +13,7 @@ links = [
 ]
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+  { spec = "spec/connector/xt90", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 3

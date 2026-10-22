@@ -4,3 +4,6 @@ number = "FUR-2591"
 name = "Power cable conversion EC2 for Furitek PASO ESC"
 applies_to = "Furitek PASO ESC"
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/ec2", match = "functional" },
+]

@@ -10,3 +10,6 @@ links = [
 category = "esc"
 motor_type = "brushed"
 connector = "Deans"
+equivalent_to = [
+  { spec = "spec/connector/deans", match = "functional" },
+]

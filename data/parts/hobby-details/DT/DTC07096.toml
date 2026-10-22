@@ -5,4 +5,10 @@ name = "4mm Bullet Banana To Female Deans"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=170" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=170" },
+]
+equivalent_to = [
+  { spec = "spec/connector/bullet-4mm", match = "functional" },
+  { spec = "spec/connector/deans", match = "functional" },
+]

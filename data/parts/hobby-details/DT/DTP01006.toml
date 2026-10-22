@@ -5,4 +5,9 @@ name = "EC2 Plug Male and Female"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=2&a=view&r=14" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=2&a=view&r=14" },
+]
+equivalent_to = [
+  { spec = "spec/connector/ec2", match = "functional" },
+]

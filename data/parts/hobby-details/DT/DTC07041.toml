@@ -5,4 +5,10 @@ name = "XT60 to EC3 12AWG Silicone Wire L=50mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=88" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=88" },
+]
+equivalent_to = [
+  { spec = "spec/connector/ec3", match = "functional" },
+  { spec = "spec/connector/xt60", match = "functional" },
+]
