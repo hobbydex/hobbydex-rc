@@ -3,6 +3,7 @@ brand = "brand/hpi"
 number = "86196"
 name = "BALL STUD 4.7x6.5mm (2mm SOCKET/4pcs)"
 pack_qty = 4
+pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86196" },
 ]
@@ -11,3 +12,6 @@ fits = [
 ]
 category = "ball-end"
 ball_mm = 4.7
+equivalent_to = [
+  { spec = "spec/ball-end/4.7mm-stud", match = "functional" },
+]

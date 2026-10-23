@@ -3,6 +3,7 @@ brand = "brand/hpi"
 number = "75115"
 name = "BALL STUD 4.3x10.3mm (2mm SOCKET/4pcs)"
 pack_qty = 4
+pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/75115" },
 ]
@@ -15,3 +16,6 @@ fits = [
 ]
 category = "ball-end"
 ball_mm = 4.3
+equivalent_to = [
+  { spec = "spec/ball-end/4.3mm-stud", match = "functional" },
+]
