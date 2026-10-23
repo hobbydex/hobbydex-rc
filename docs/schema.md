@@ -620,6 +620,17 @@ width_mm = 4
 designation = "MR105"
 ```
 
+Inch bearings take the maker's R series (R168 for 1/4x3/8x1/8 in) when all three
+sizes match it exactly; a size written in rounded millimetres is folded into the
+exact spec (former_ids). A flanged bearing takes the flanged designation of its
+series (MF105, F6700, FR168 for inch) only when a maker table confirms it.
+
+A flanged bearing may give its collar: `flange_mm` (flange outer diameter, larger
+than `outer_mm`), `flange_width_mm` (flange thickness) and `flange_source`, the
+URL of the maker's catalogue page the figures come from. A size missing from the
+catalogue gets none of the three.
+
+
 Oils: `base` (silicone) and `viscosity_cst`; id `spec/oil/silicone-350cst`.
 
 Pinions: the meshing geometry, `teeth` and either `pitch_dp` (diametral

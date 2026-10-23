@@ -787,6 +787,18 @@ def main():
                 sid = f"spec/washer/{d['shape'] + '-' if d.get('shape') not in (None, 'flat') else ''}{b}x{o}x{t}"
                 if d["id"] != sid:
                     errors.append(f"{path}: washer spec id should be {sid} (shape prefix, then bore x outer x thickness)")
+        if kind == "spec" and d.get("category") == "bearing":
+            fields = [k for k in ("flange_mm", "flange_width_mm", "flange_source") if k in d]
+            if fields and d.get("type") != "flanged":
+                errors.append(f"{path}: {', '.join(fields)} only on flanged bearings")
+            if d.get("type") == "flanged" and fields:
+                fm, fw = d.get("flange_mm"), d.get("flange_width_mm")
+                if not all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in (fm, fw)):
+                    errors.append(f"{path}: flange_mm and flange_width_mm need numbers in millimetres")
+                elif not fm > d.get("outer_mm", 0):
+                    errors.append(f"{path}: flange_mm {fm} should be larger than outer_mm")
+                if not str(d.get("flange_source", "")).startswith("https://"):
+                    errors.append(f"{path}: flange_source should be the catalogue page URL")
         if kind == "spec" and d.get("category") == "eclip":
             s = d.get("shaft_mm")
             if not isinstance(s, (int, float)) or isinstance(s, bool) or not 1 <= s <= 12:
