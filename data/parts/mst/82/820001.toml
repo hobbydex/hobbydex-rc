@@ -7,3 +7,8 @@ pack_qty = 4
 notes = "Read by OCR from an MST manual parts list"
 category = "nut"
 range = "mst/820001-colours"
+related = [
+  { part = "part/mst/210492", relation = "use-with" },
+  { part = "part/mst/310065", relation = "use-with" },
+  { part = "part/mst/820049", relation = "use-with" },
+]
