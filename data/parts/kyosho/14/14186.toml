@@ -6,7 +6,9 @@ name_source = "ocr"
 fits = [
   { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30962-plazma-lm-spop" },
 ]
-category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/deans", match = "functional" },
-]
+category = "battery"
+chemistry = "lipo"
+cells = 2
+capacity_mah = 3500
+c_rating = 25
+connector = "Deans"

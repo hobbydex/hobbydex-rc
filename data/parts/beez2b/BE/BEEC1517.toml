@@ -7,7 +7,4 @@ links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/1231-beec1517-BEEC1517-5404039200939", kind = "dealer" },
 ]
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/ec3", match = "functional" },
-  { spec = "spec/connector/xt60", match = "functional" },
-]
+connectors = ["XT60", "EC3"]

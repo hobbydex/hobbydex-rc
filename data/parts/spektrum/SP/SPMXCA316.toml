@@ -6,7 +6,4 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-adapter-ic3-battery-5mm-bullet-with-2-wires-smart-2s/SPMXCA316.html" },
 ]
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/bullet-5mm", match = "functional" },
-  { spec = "spec/connector/ic3", match = "functional" },
-]
+connectors = ["IC3", "5mm bullet"]

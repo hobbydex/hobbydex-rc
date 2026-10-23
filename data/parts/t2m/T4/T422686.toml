@@ -4,7 +4,4 @@ number = "T422686"
 name = "prise adaptateur EC8  - XT90"
 source = "doc/t2m/t2m-shop"
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/ec8", match = "functional" },
-  { spec = "spec/connector/xt90", match = "functional" },
-]
+connectors = ["EC8", "XT90"]

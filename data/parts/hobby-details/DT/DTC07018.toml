@@ -5,10 +5,13 @@ name = "T Plug to JST 20AWG Silicone Wire L=100mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=72" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=72" },
+]
 equivalent_to = [
   { spec = "spec/wire/20awg", match = "functional" },
 ]
 wire_awg = 20
 insulation = "silicone"
 length_mm = 100
+connectors = ["Deans"]

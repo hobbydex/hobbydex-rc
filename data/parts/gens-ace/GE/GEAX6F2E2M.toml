@@ -8,7 +8,4 @@ category_source = "curated"
 links = [
   { site = "Gens ace", url = "https://gensace.de/products/gens-ace-xt60-female-to-ec2-male-adapter" },
 ]
-equivalent_to = [
-  { spec = "spec/connector/ec2", match = "functional" },
-  { spec = "spec/connector/xt60", match = "functional" },
-]
+connectors = ["XT60", "EC2"]

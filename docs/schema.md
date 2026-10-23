@@ -932,12 +932,36 @@ diameter (`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`,
 bullet diameter), `anti_spark` and `polarized` (booleans). A current is set
 only from a source: `current_a` (continuous) and `burst_a` (when stated),
 each with `<field>_source`, the maker's own page; the wire gauge the rating
-depends on goes in `notes`. A wire part (lead, adapter,
-harness, plug) links with match "functional" from its name: a lead or
-adapter with two connectors links both (see tools/link_connector_specs.py).
-Only connector parts are equivalent to a connector spec. A battery or ESC
-is not: it names its plug in `connector` (the site links that field to the
-spec) and has no `equivalent_to` row to a connector spec.
+depends on goes in `notes`.
+
+A wire part is either the plug itself or a lead, and only the plug is
+equivalent to a connector spec. A part that is just the plug (a plug or plug
+pair, with or without a short tail of wire sold as "connector") has one
+`equivalent_to` row per connector its name gives, match "functional" (or
+"close" for XT30U). A lead, adapter, charge lead, extension, harness or any
+other part that is not just a plug has no connector-spec row. It lists its
+plugs in `connectors`, in the order its name gives them, using the plug names
+of the battery `connector` field:
+
+```toml
+id = "part/beez2b/BEEC1056"
+name = "XT60 Charge lead : TRX 2019 4S"
+category = "wire"
+connectors = ["XT60", "Traxxas iD"]
+```
+
+BEEC1056 is a lead, so it lists its two plugs (XT60, and Traxxas iD for
+"TRX 2019") and is not equivalent to the XT60 spec; its plug pair from the
+same maker, BEEC2034F "Connector : XT60 Female plug", is equivalent to
+`spec/connector/xt60`. Plug names map to specs in tools/validate.py
+(`PLUG_SPEC`), the same table as tools/link_connector_specs.py (`PLUG_NAME`).
+tools/validate.py checks that each entry maps to an existing connector spec,
+that `connectors` is only on wire parts, and that a part has not both
+`connectors` and a connector-spec row.
+
+A battery or ESC is not equivalent to its plug either: it names its plug in
+`connector` (the site links that field to the spec) and has no `equivalent_to`
+row to a connector spec.
 
 ```toml
 id = "spec/connector/ec5"
