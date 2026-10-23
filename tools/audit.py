@@ -649,9 +649,9 @@ def main():
 
     # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
     hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
-    per_brand = collections.Counter(p["brand"].split("/")[-1] for p in hz)
+    hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
     check("horizon-part-no-maker-link", "run tools/link_horizon_pages.py (queues the item's Horizon page first; a part Horizon lists nowhere stays unlinked)",
-          hz, per_brand=per_brand.most_common())
+          hz, per_brand=hz_brands.most_common())
 
     hw_box = []
     for r in rels:
@@ -662,6 +662,22 @@ def main():
             hw_box.append(r)
     check("kit-box-few-hardware", "read the box's hardware from the manual or exploded view into contains (role kit): fewer than 10 hardware rows here",
           hw_box, per_brand=per_brand(hw_box))
+
+    # bearings: the material most of a brand's bearings carry, that at most 5% of those names say, is a default: no source states it
+    MAT_WORDS = {"steel": r"steel|chrom|hardened", "ceramic": r"ceramic", "stainless": r"stainless", "titanium": r"titan",
+                 "aluminium": r"alumin", "carbide": r"carbide", "brass": r"brass", "bronze": r"bronze", "plastic": r"plastic|nylon|delrin"}
+    per = collections.defaultdict(list)
+    for p in parts:
+        if p.get("category") == "bearing": per[p.get("brand")].append(p)
+    flat = []
+    for b, ps in per.items():
+        for m, word in MAT_WORDS.items():
+            with_m = [p for p in ps if p.get("material") == m]
+            if len(with_m) >= 10 and 2 * len(with_m) >= len(ps) and b in brands \
+                    and 20 * sum(1 for p in with_m if re.search(word, p.get("name", ""), re.I)) <= len(with_m):
+                flat.append(brands[b]); break
+    check("bearing-default-material", "set the bearings' material from the maker's page or name, or remove it: most of the brand's bearings carry one material that none of their names says (a default, not a source)",
+          flat, detail="brands whose most bearings carry a material no name states")
 
     st = os.statvfs("/tmp")
     used = 100 * (st.f_files - st.f_ffree) / st.f_files if st.f_files else 0.0
