@@ -176,8 +176,17 @@ trim) is a release of that platform, not a kit of its own.
 
 One sold product: a yearly edition, a Carpet or Dirt version, an RTR, a
 re-release. Keyed by manufacturer item number when there is one, otherwise by a
-slug (`xb4-2013`, `xb8e-2021`). `kind` is kit | rtr | arr. `status` is
+slug (`xb4-2013`, `xb8e-2021`). `status` is
 announced | released | discontinued. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
+
+`kind` is the build the buyer gets, one of kit | rtr | arr | roller:
+
+- `kit`: built by the buyer; the electronics are usually bought separately.
+- `rtr` (ready to run): built and complete, radio included, often battery and charger.
+- `arr` (almost ready to run): built, without radio and sometimes without battery. PNP (plug and play) is `arr`.
+- `roller`: a built chassis without electronics (and usually without body), as some makers sell it (Axial, Element, Losi, Team Associated "roller" or "rolling chassis").
+
+tools/validate.py rejects any other value.
 
 `color` (optional) is the colour the release is sold in, in plain words from the same palette as a part's `color` ("red"; two or three colours as "blue/black", "green/black/white"), read from the name's colour clause by link_release_colours.py; left out when the name names none.
 
