@@ -103,7 +103,7 @@ def near_local(a, b):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "packqty": None}
+    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "packqty": None, "with_fasteners": None, "fastener_cats": None}
     pq = os.path.join(tools, "tools", "packqty.py")
     if os.path.exists(pq):   # the count reader the importers use (a name's "(2)", "2pcs", "1 pair")
         spec = importlib.util.spec_from_file_location("packqty", pq)
@@ -118,6 +118,8 @@ def load_tools(tools):
         try:
             spec.loader.exec_module(mod)
             out["classify"] = mod.classify
+            out["with_fasteners"] = mod.with_fasteners
+            out["fastener_cats"] = mod.FASTENER_CATS
         except Exception as e:  # the audit still runs without it
             print(f"note: classifier not loaded ({e})", file=sys.stderr)
         finally:
@@ -338,6 +340,16 @@ def main():
               transitions=moves.most_common(10))
     else:
         results["classifier-drift"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
+
+    # 11b. a part that comes with screws, nuts or washers is the part: its category comes from the name before the fasteners
+    if tools["with_fasteners"]:
+        def part_before_fasteners(p):
+            thing = tools["with_fasteners"](p["name"])
+            return bool(thing) and p.get("category") in tools["fastener_cats"] and tools["classify"](thing) not in (None, "", *tools["fastener_cats"])
+        check("with-fasteners-category", "a part that comes with screws, nuts or washers takes the category of the part (rerun tools/classify_parts.py in hobbydex-tools; a curated category is set by hand: the part, not screw)",
+              [p for p in parts if part_before_fasteners(p)])
+    else:
+        results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
 
     # 12. releases named only by their number
     check("release-named-by-number", "give the release its product name from the maker's page",
