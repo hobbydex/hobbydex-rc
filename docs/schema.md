@@ -289,7 +289,7 @@ including variant suffixes (`368014-S`, `362280-K`). `name` is the description
 from the newest source, verbatim apart from trademark glyphs and quote
 normalisation; the trailing pack count `(10)` is moved into `pack_qty`. Older
 differing descriptions go to `former_names` so a rename or a spec change
-(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
+(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. A name read by OCR from a manual, and a manual's bag callout (`(BBS x10)`), is never a former name. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
 ```toml
 id = "part/xray/362250"
@@ -915,10 +915,12 @@ diameter (`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`,
 bullet diameter), `anti_spark` and `polarized` (booleans). A current is set
 only from a source: `current_a` (continuous) and `burst_a` (when stated),
 each with `<field>_source`, the maker's own page; the wire gauge the rating
-depends on goes in `notes`. Parts link with match "functional" from their
-name: a lead or adapter with two connectors links both (see
-tools/link_connector_specs.py). Battery and ESC parts link from their
-`connector` field the same way.
+depends on goes in `notes`. A wire part (lead, adapter,
+harness, plug) links with match "functional" from its name: a lead or
+adapter with two connectors links both (see tools/link_connector_specs.py).
+Only connector parts are equivalent to a connector spec. A battery or ESC
+is not: it names its plug in `connector` (the site links that field to the
+spec) and has no `equivalent_to` row to a connector spec.
 
 ```toml
 id = "spec/connector/ec5"

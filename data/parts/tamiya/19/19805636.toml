@@ -2,10 +2,13 @@ id = "part/tamiya/19805636"
 brand = "brand/tamiya"
 number = "19805636"
 name = "3x6mm Screw"
-former_names = ["10 3x6mm Screw", "23x6mm Screw", "3x6mm Screw (Silver)", "9 3x6mm Screw (Sllver)", "B 3x6mm Screw"]
+former_names = ["10 3x6mm Screw", "3x6mm Screw (Silver)", "B 3x6mm Screw"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6572-19805636", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x6-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

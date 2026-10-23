@@ -2,7 +2,8 @@ id = "part/tamiya/50583"
 brand = "brand/tamiya"
 number = "50583"
 name = "3x15mm Tapping Screw"
-former_names = ["2mm E-Ring", "3x15mm Tapping Screw (Black)", "3x15mm Tapping Screw (MC1x10)", "Schneidschraube", "Vis taraudeuse BA14 U字シャフト"]
+pack_qty = 10
+former_names = ["2mm E-Ring", "3x15mm Tapping Screw (Black)", "Schneidschraube"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50583/index.html" },
@@ -12,3 +13,6 @@ category = "screw"
 name_source = "ocr"
 released = "1994-11"
 documents = ["doc/tamiya/newitems-month"]
+equivalent_to = [
+  { spec = "spec/screw/m3x15-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

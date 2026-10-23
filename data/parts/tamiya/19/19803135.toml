@@ -2,7 +2,7 @@ id = "part/tamiya/19803135"
 brand = "brand/tamiya"
 number = "19803135"
 name = "2x12mm Tapping Screw (Black)"
-former_names = ["2x12mm Tapping Screw", "2x12mm Tapping Screw (Black) (MC5x10)", "3x12mm Tapping Screw (Black)"]
+former_names = ["2x12mm Tapping Screw", "3x12mm Tapping Screw (Black)"]
 color = "black"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
@@ -10,3 +10,6 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18177-19803135", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m2x12-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

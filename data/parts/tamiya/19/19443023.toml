@@ -2,10 +2,13 @@ id = "part/tamiya/19443023"
 brand = "brand/tamiya"
 number = "19443023"
 name = "2x6mm Screw"
-former_names = ["10 2x6mm Screw", "102x6mm Screw", "13 2x6mm Screw", "23 2x6mm Screw", "5 2x6mm Screw", "9 2x6mm Screw", "Vis"]
+former_names = ["10 2x6mm Screw", "102x6mm Screw", "13 2x6mm Screw", "23 2x6mm Screw", "Vis"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/12443-19443023", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m2x6-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

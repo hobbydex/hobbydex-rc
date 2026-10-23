@@ -2,10 +2,13 @@ id = "part/tamiya/19805556"
 brand = "brand/tamiya"
 number = "19805556"
 name = "2x8mm Screw"
-former_names = ["2x8mm Screw (BA5x10)", "2x8mm Switch Screw", "2xßmm Screw", "Vis"]
+former_names = ["2x8mm Switch Screw", "2xßmm Screw", "Vis"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/5627-19805556", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m2x8-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

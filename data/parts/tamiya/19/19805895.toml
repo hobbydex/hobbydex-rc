@@ -2,10 +2,13 @@ id = "part/tamiya/19805895"
 brand = "brand/tamiya"
 number = "19805895"
 name = "3x20mm Screw"
-former_names = ["13x20mm Screw", "3w20mm Screw", "3x20mm Screw (Black)", "Vis"]
+former_names = ["3x20mm Screw (Black)", "Vis"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13620-19805895", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]
