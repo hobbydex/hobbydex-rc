@@ -6,3 +6,6 @@ pack_qty = 4
 former_names = ["12mm Aluminum Hex Adapters (+1mm, aluminum)"]
 category = "drivetrain"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
