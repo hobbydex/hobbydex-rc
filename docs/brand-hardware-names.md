@@ -38,7 +38,11 @@ what the S means, so the washer linker reads the dimensions only.
 The screw convention is the one recorded in hobbydex-tools docs/decisions.md:
 a plain Screw is a pan head with a JIS cross recess, Tapping Screw is a
 self-tapping pan head, Countersunk is countersunk, Binding Head is truss,
-Cap Screw is socket cap, Grub is set. Tamiya's hex screws name their drive.
+Cap Screw is socket cap, Grub is set. Tamiya's hex screws name their drive,
+except Hex Head: a Hex Head screw (the manual's "Hex head tapping screw") is a
+hexagon head with a JIS cross recess, so spec head hex and drive jis. No ISO
+standard is cited for it. The head is stated by the TT-02 manual; the cross
+recess is Tamiya's JIS convention, not drawn in the manual's side view.
 
 ## Traxxas
 
@@ -78,6 +82,7 @@ countersunk, flanged low-head and flanged set screws are not linked.
 | kyosho | Bind Screw | binding head (Tamiya: Binding Head = truss) | truss | Kyosho data names 'Bind Screw(M3x16)', 'TP Bind Screw(M2.6x8)'; Kyosho calls it binding head; Tamiya decision maps Binding Head to truss | inferred |
 | tamiya | Cap Screw | Tamiya: Cap Screw = socket cap | socket-cap | docs/decisions.md (Tamiya screw convention) | stated |
 | tamiya | Binding Head | Tamiya: Binding Head = truss | truss | docs/decisions.md (Tamiya screw convention); Tamiya '2.6x5mm Truss Screw' | stated |
+| tamiya | Hex Head | Tamiya: Hex Head = hexagon head with a JIS cross recess (the manual's 'Hex head tapping screw') | hex | TT-02 manual 300058570, parts page 23: '3x10mm Hex Head Tapping Screw (MB2 x10)', the side view draws a hexagon head; the cross recess is not drawn there (Tamiya JIS convention; user, 2026-10-23) | inferred |
 | tamiya | Screw (no hex, no screw pin) | Tamiya: a plain Screw = pan head, JIS cross recess | pan | docs/decisions.md (Tamiya screw convention) | stated |
 | traxxas | CCS | cap screw (Traxxas CCS), head shape not drawn in the exploded views | socket-cap | Traxxas parts lists '3x8mm CCS (stainless)'; read from usage cap/button/countersunk/set | inferred |
 | traxxas | BCS | button cap screw (Traxxas BCS) | button | Traxxas parts lists '3x15mm BCS (with threadlock)'; read from usage; exploded views not read | inferred |

@@ -597,7 +597,7 @@ C-00180-714). The site shows it on both parts.
 
 A generic, brand-independent specification. Category-specific fields; for
 screws: `thread`, `length_mm`, `head` (countersunk | socket-cap | button |
-pan | flanged-socket-cap | flanged-button | flanged-pan | low-head | set | truss; the brand names each code in [brand-hardware-names.md](brand-hardware-names.md)), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
+pan | flanged-socket-cap | flanged-button | flanged-pan | low-head | set | truss | hex (a hexagon head, with no socket: Tamiya's hex head screws, whose drive is jis); the brand names each code in [brand-hardware-names.md](brand-hardware-names.md)), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
 the same geometry exists in many materials.
 
 ```toml
