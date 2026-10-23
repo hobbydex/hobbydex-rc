@@ -883,7 +883,17 @@ parallel pin, with standards ISO 2338 and ISO 8734 when the size is in
 their tables (RC makers also use odd lengths such as 2x9.8): drive-shaft cross pins,
 wheel hex drive pins, diff pins. Parts link with match "functional" (size
 from the name; hardness and tolerance seldom stated). Hinge, pivot, body,
-king, roll and spring pins and grooved or threaded pins get no pin spec.
+king, roll and spring pins and grooved pins get no pin spec.
+
+Screw pins (a smooth pin with a head, hex socket or cross, and only a short
+thread right under the head; the rest of the shank is smooth, as on a hinge
+pin that screws in) use `spec/pin/<d>x<L>-screw` with `type = "screw"`,
+`diameter_mm`, `length_mm` and `thread`, e.g. `spec/pin/3x25-screw` ("M3").
+`thread` is the metric size of the diameter (M3 for 3 mm) for 2, 2.5, 3, 4, 5
+and 6 mm pins, or the size the name states; other diameters get no thread.
+Parts link with match "functional" from the size in their name, and only
+when the name gives one size: sets and bags of mixed sizes, and screw pins
+inside an assembly, get none. Screw pins are category pin.
 
 ### Washer specs
 

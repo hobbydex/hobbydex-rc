@@ -2,7 +2,11 @@ id = "part/kyosho/MT027"
 brand = "brand/kyosho"
 number = "MT027"
 name = "4x46mm Screw Pin"
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/4x46-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 fits = [
   { kit = "kit/kyosho/megaforce", type = "direct", source = "doc/kyosho/31181-megaforce-p" },
 ]

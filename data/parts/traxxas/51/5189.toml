@@ -3,7 +3,11 @@ brand = "brand/traxxas"
 number = "5189"
 name = "Screw pins, 4x13mm (with threadlock)"
 pack_qty = 4
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/4x13-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 fits = [
   { kit = "kit/traxxas/t-maxx", type = "direct", source = "doc/traxxas/49077-3-parts-list" },
   { kit = "kit/traxxas/revo", type = "direct", source = "doc/traxxas/53097-3-parts-list" },

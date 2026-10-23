@@ -14,7 +14,11 @@ fits = [
   { kit = "kit/tamiya/tt-02", type = "direct", source = "doc/xtra-speed/modelsport-product-page" },
   { kit = "kit/tamiya/wr-02", type = "direct", source = "doc/xtra-speed/modelsport-product-page" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x32-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 material = "stainless"
 pack_qty = 5
 notes = "Name and fits from the dealer listing(s): Model Sport."

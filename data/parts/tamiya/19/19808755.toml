@@ -4,4 +4,8 @@ number = "19808755"
 name = "3x22mm Screw Pin"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x22-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
