@@ -7,4 +7,8 @@ name_source = "ocr"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18000-12590010", kind = "fan-site" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x58-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

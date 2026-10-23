@@ -3,7 +3,11 @@ brand = "brand/tamiya"
 number = "19805756"
 name = "3x32mm Screw Pin"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x32-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6569-19805756", kind = "fan-site" },
 ]
