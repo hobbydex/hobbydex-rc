@@ -639,6 +639,13 @@ Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh),
 Whether a pack fits a car depends on the part's `c_rating`, `case` (hard |
 soft | shorty), `dimensions_mm` ([length, width, height]), `weight_g` and
 `connector` (XT60, EC5, Deans, ...), so those stay on the part.
+`balance_connector` is the balance lead, in the same plug vocabulary as
+`connector` ("JST-XH" only, for now): the maker states it, and no cell count
+alone sets it. Its pin count follows from `cells` (pins = cells + 1), so the
+site links a pack with `cells = 3` and `balance_connector = "JST-XH"` to
+`spec/connector/jst-xh-4`. A pack that states another balance plug (Traxxas
+iD built-in, EHR, TP, Hyperion) takes no value until a spec for it exists.
+NiMH packs have none.
 
 ```toml
 name = "1100mAh 3S 60C 11.4V(HV) Lipo Battery | XT30 Plug"
@@ -918,7 +925,8 @@ shaft_mm = 3
 size, as the makers name them: XT30, XT60, XT60H and XT90-S (anti-spark),
 XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC3 and IC5
 (EC-compatible), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
-mini Tamiya, JST-RCY, JST-XH, the JR/Futaba servo plug, bullets by
+mini Tamiya, JST-RCY, JST-XH (`jst-xh`, and `jst-xh-3` to `jst-xh-9` for the
+2S to 8S balance lead, pins = cells + 1), the JR/Futaba servo plug, bullets by
 diameter (`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`,
 `pins` (the contact count, when a family has one), `contact_mm` (pin or
 bullet diameter), `anti_spark` and `polarized` (booleans). A current is set
