@@ -25,3 +25,6 @@ fits = [
   { kit = "kit/tlr/22x-4", type = "replaces", replaces = "part/tlr/TLR6025", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 gtin = "660132650001"
+equivalent_to = [
+  { spec = "spec/ball-end/5.8mm-stud", match = "functional" },
+]

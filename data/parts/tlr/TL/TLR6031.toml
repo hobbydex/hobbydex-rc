@@ -3,6 +3,7 @@ brand = "brand/tlr"
 number = "TLR6031"
 name = "Titanium Ball Stud, 4.8 x 8mm (2) 22/22T/22-4"
 pack_qty = 2
+pack_qty_basis = "name"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-titanium-ball-stud-4.8-x-8mm-2-22-22t-22-4/TLR6031.html" },
 ]
@@ -10,3 +11,6 @@ category = "ball-end"
 ball_mm = 4.8
 ball_type = "stud"
 material = "titanium"
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]
