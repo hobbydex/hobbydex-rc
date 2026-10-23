@@ -271,30 +271,45 @@ def check_names_no_brand(docs, errors):
 # A pack count, a set or part number and punctuation are not part of a name (former_names_problems)
 NAME_COUNT = re.compile(r"\(\s*\d+\s*(?:pcs?\.?|pieces?|ea)?\s*\)|\b\d+\s*(?:pcs?\.?|pieces?|ea)\b|(?<![a-z0-9])x\d+\b", re.I)
 NAME_NUMBER = re.compile(r"\b\d{5,}\b")
+NAME_CATALOGUE = re.compile(r"^\d{3,6} ")   # a store's catalogue number in front of a name
 
 def name_key(name):
     s = NAME_COUNT.sub(" ", name.lower())
     return re.sub(r"[^a-z0-9]+", " ", NAME_NUMBER.sub(" ", s)).strip()
 
-def former_names_problems(part):
-    """The former_names entries a part may not keep: the part's own name again once counts, numbers and
-    punctuation go, and a repeat of an earlier entry (case and spacing ignored). docs/schema.md "part"."""
-    cur = name_key(part.get("name", "") or "")
+def restate_key(name, brand=""):
+    """name_key() without the brand word (brand: the brand's display name) and a catalogue
+    number in front, either one or both, in any order. Mirrors former_names._norm in hobbydex-tools."""
+    k, bk = name_key(name), name_key(brand)
+    while True:
+        prev = k
+        if bk and k.startswith(bk + " "):
+            k = k[len(bk) + 1:]
+        k = NAME_CATALOGUE.sub("", k + " ", count=1).strip()
+        if k == prev:
+            return k
+
+def former_names_problems(part, brand=""):
+    """The former_names entries a part may not keep: the part's own name again once counts, numbers,
+    the brand word and a catalogue number go, and a repeat of an earlier entry (case and spacing
+    ignored). docs/schema.md "part"."""
+    cur = restate_key(part.get("name", "") or "", brand)
     seen, bad = set(), []
     for n in part.get("former_names", []) or []:
         if not isinstance(n, str):
             continue
         norm = re.sub(r"\s+", " ", n).strip().lower()
-        if (cur and name_key(n) == cur) or norm in seen:
+        if (cur and restate_key(n, brand) == cur) or norm in seen:
             bad.append(n)
         seen.add(norm)
     return bad
 
 def check_former_names(docs, errors):
+    brand_names = {d.get("id"): d.get("name", "") for _, k, d in docs if k == "brand"}
     for path, kind, d in docs:
         if kind == "part":
-            for n in former_names_problems(d):
-                errors.append(f"{path}: former name {n!r} is the part's name again (a pack count, a set number) or listed twice; a former name is a different name the maker published (docs/schema.md \"part\")")
+            for n in former_names_problems(d, brand_names.get(d.get("brand"), "")):
+                errors.append(f"{path}: former name {n!r} is the part's name again (a pack count, a set number, the brand word or a catalogue number) or listed twice; a former name is a different name the maker published (docs/schema.md \"part\")")
 
 def check_dealer_links(docs, errors):
     """A dealer link (a links entry with kind "dealer", a reseller's product page) is a fallback: a release or part
