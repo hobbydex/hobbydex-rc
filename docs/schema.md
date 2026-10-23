@@ -1085,8 +1085,9 @@ key_fields = [
 ### Wire specs
 
 `spec/wire/<n>awg` (category "wire"): one AWG gauge from 8 to 30 (`awg`), its
-nominal solid round copper conductor (`conductor_mm`, the diameter, and
-`cross_section_mm2`) from the AWG formula of ASTM B258
+nominal solid round copper conductor (`conductor_mm`, the diameter,
+`conductor_in`, the same in inches, and `cross_section_mm2`) from the AWG
+formula of ASTM B258, which is defined in inches: 0.005 in x 92^((36 - n)/39)
 (`standards = ["ASTM B258"]`, the standard's notes give the formula). Wire
 parts with a gauge link to it with match "functional"; a lead with two gauges
 links both. Only the gauge is in the spec: insulation and strands are the

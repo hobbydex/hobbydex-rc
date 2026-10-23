@@ -755,7 +755,7 @@ def main():
                 errors.append(f"{path}: wire spec needs awg, the gauge from 8 to 30")
             elif d["id"] != f"spec/wire/{awg}awg":
                 errors.append(f"{path}: wire spec id should be spec/wire/{awg}awg")
-            for k in ("conductor_mm", "cross_section_mm2"):
+            for k in ("conductor_mm", "conductor_in", "cross_section_mm2"):
                 if not (isinstance(d.get(k), (int, float)) and not isinstance(d.get(k), bool) and d[k] > 0):
                     errors.append(f"{path}: wire spec needs {k} > 0")
         WIRE_ONLY = ("wire_awg", "insulation", "strands", "shrink_ratio", "flat_width_mm")
