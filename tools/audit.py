@@ -68,7 +68,19 @@ def walk_strings(v):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None}
+    out = {"classify": None, "sources": None, "cache": None, "ocr": None}
+    guard = os.path.join(tools, "tools", "ocr_numbers.py")   # the OCR number guard: twins and name kinds of OCR-named Tamiya parts
+    if os.path.exists(guard):
+        spec = importlib.util.spec_from_file_location("ocr_numbers", guard)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.join(tools, "tools"))
+        try:
+            spec.loader.exec_module(mod)
+            out["ocr"] = mod
+        except Exception as e:  # the audit still runs without it
+            print(f"note: OCR number guard not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.join(tools, "tools"))
     cls = os.path.join(tools, "tools", "classify_parts.py")
     if os.path.exists(cls):
         spec = importlib.util.spec_from_file_location("classify_parts", cls)
@@ -419,6 +431,19 @@ def main():
         if any(len(v) > 1 for v in pitches.values()):
             clash.append(r)
     check("release-two-gear-pitches", "mark the other pitch as option or listed: the release's own parts list or exploded view says which one is in the box", clash)
+
+    # 29. OCR-named Tamiya parts: a number with a same-name near twin (a digit misread), and a name whose kind
+    # (screw, nut, bearing...) disagrees with the tamico.de German name of the same number (a neighbouring
+    # line's number on a name). The guard lives in hobbydex-tools (tools/ocr_numbers.py).
+    ocr = tools.get("ocr")
+    if ocr:
+        tam = [p for p in parts if p["id"].startswith("part/tamiya/")]
+        twins = ocr.audit_twins(tam)
+        check("tamiya-ocr-number-twin", "the OCR number is likely a misread: fold the read number into its twin (former_ids), or give the part its number from the maker's page; tools/ocr_numbers.py lists the twin",
+              [{"id": f"part/tamiya/{n}"} for n, _ in twins], count=len(twins), twins={f"part/tamiya/{n}": [f"part/tamiya/{t}" for t in ts] for n, ts in twins})
+        kinds = ocr.kind_mismatch(tam, ocr.tamico_rows(os.path.join(ocr.CACHE, "notes", "tamiya", "tamico-names.tsv")))
+        check("tamiya-ocr-kind-mismatch", "the name is another part's (a neighbouring card line's number on it): read the part's name from the card or the maker's page; the tamico.de German name disagrees in kind",
+              [{"id": f"part/tamiya/{n}"} for n, _, _ in kinds], count=len(kinds), names={f"part/tamiya/{n}": [o, t] for n, o, t in kinds})
 
     ranked = sorted((n for n in results if results[n]["count"]), key=lambda n: -results[n]["count"])
     skipped = [n for n in results if results[n]["count"] is None]
