@@ -4,6 +4,7 @@ number = "R11173"
 name = "H12 Green Metals Wheel Hex Set For RZ001 and 1/10 Rally Car"
 pack_qty = 4
 applies_to = "RZ001 and XTS-F10、XTS-S10、SBK10"
+color = "green"
 fits = [
   { kit = "kit/rlaarlo/omni-terminator", type = "direct", source = "doc/rlaarlo/store" },
   { kit = "kit/rlaarlo/sbk10", type = "direct", source = "doc/rlaarlo/store" },
@@ -14,3 +15,6 @@ links = [
   { site = "Rlaarlo", url = "https://rlaarlo.com/products/green-metals-wheel-hex-set-for-rc-car" },
 ]
 category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
