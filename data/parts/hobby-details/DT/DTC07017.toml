@@ -5,10 +5,13 @@ name = "T Plug Male to 4.0 mm Gold plated Banana Plug 14AWG Silicone Wire L=300m
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=71" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=71" },
+]
 equivalent_to = [
   { spec = "spec/wire/14awg", match = "functional" },
 ]
 wire_awg = 14
 insulation = "silicone"
 length_mm = 300
+connectors = ["Deans", "4mm banana"]

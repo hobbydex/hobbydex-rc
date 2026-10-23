@@ -9,9 +9,9 @@ links = [
   { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=86" },
 ]
 equivalent_to = [
-  { spec = "spec/connector/xt60", match = "functional" },
   { spec = "spec/wire/12awg", match = "functional" },
   { spec = "spec/wire/14awg", match = "functional" },
 ]
 wire_awg = [12, 14]
 insulation = "silicone"
+connectors = ["XT60"]

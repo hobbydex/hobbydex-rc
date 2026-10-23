@@ -7,7 +7,4 @@ gtin = "5404039200571"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/11309-beec1067-BEEC1067-5404039200571", kind = "dealer" },
 ]
-equivalent_to = [
-  { spec = "spec/connector/ec5", match = "functional" },
-  { spec = "spec/connector/xt60", match = "functional" },
-]
+connectors = ["XT60", "EC5"]
