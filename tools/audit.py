@@ -622,6 +622,12 @@ def main():
     bat = [p for p in parts if p.get("category") in ("battery", "esc") and not p.get("connector")]
     check("battery-esc-no-connector", "set connector to the plug the pack or ESC uses (from the maker's page or manual)", bat, per_brand=per_brand(bat))
 
+    # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
+    hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
+    per_brand = collections.Counter(p["brand"].split("/")[-1] for p in hz)
+    check("horizon-part-no-maker-link", "run tools/link_horizon_pages.py (queues the item's Horizon page first; a part Horizon lists nowhere stays unlinked)",
+          hz, per_brand=per_brand.most_common())
+
     hw_box = []
     for r in rels:
         if r.get("kind") != "kit" or not any(docs.get(d, {}).get("kind") in ("manual", "exploded_view") for d in r.get("documents", [])):
