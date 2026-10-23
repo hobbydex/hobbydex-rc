@@ -19,6 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(HERE)
 YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
 HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal"}   # hardware part categories
+MAT_CATS = {"pinion", "spur-gear", "screw", "nut", "washer-shim", "pin", "bearing"}          # metal hardware: material from the name or the maker's page
 SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
 SIZE = re.compile(r"\bM\d+(?:\.\d+)?\b|\b\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?(?:\s*x\s*\d+(?:\.\d+)?)?\s*(?:mm)?\b|\b\d+(?:\.\d+)?\s*mm\b", re.I)
 CALLOUT_PAREN = re.compile(r"\(\s*[A-Z][A-Z0-9-]*\s+x\s*\d+\s*\)")   # (CODE xN): a space before the x, so not a size (BM3x15)
@@ -112,7 +113,19 @@ def near_local(a, b):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None}
+    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
+    lpm = os.path.join(tools, "tools", "link_part_material.py")
+    if os.path.exists(lpm):   # its decide() is the rule the material linker writes by: a flag is a value it would set
+        spec = importlib.util.spec_from_file_location("link_part_material", lpm)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.dirname(lpm))
+        try:
+            spec.loader.exec_module(mod)
+            out["material"] = mod
+        except Exception as e:  # the check is skipped without it
+            print(f"note: link_part_material not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.dirname(lpm))
     pq = os.path.join(tools, "tools", "packqty.py")
     if os.path.exists(pq):   # the count reader the importers use (a name's "(2)", "2pcs", "1 pair")
         spec = importlib.util.spec_from_file_location("packqty", pq)
@@ -543,6 +556,18 @@ def main():
     no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes")]
     check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes",
           no_pack, per_brand=per_brand(no_pack))
+
+    # metal hardware whose name or cached maker page states a material the data lacks (tools/link_part_material.py's rule)
+    lpm = tools.get("material")
+    if lpm:
+        idxs, stated = {}, []
+        for p in parts:
+            if p.get("category") in MAT_CATS and p.get("material") in (None, "unknown"):
+                upd, _, _ = lpm.decide(p, brands.get(p.get("brand"), {}), idxs)
+                if upd.get("material"):
+                    stated.append(p)
+        check("hw-no-material", "run tools/link_part_material.py in hobbydex-tools (it sets the material the name or the maker's page states, and reports the conflicts)",
+              stated, per_brand=per_brand(stated))
 
     idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
     if os.path.exists(idx_path):
