@@ -3,7 +3,11 @@ brand = "brand/traxxas"
 number = "5144"
 name = "Screw pin, 2.5x18mm"
 pack_qty = 6
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/2.5x18-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 fits = [
   { kit = "kit/traxxas/revo", type = "direct", source = "doc/traxxas/53097-3-parts-list" },
   { kit = "kit/traxxas/slayer-pro-4x4", type = "direct", source = "doc/traxxas/59076-3-parts-list" },

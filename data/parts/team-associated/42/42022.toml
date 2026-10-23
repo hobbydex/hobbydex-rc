@@ -4,7 +4,11 @@ number = "42022"
 name = "Screw Pins, M4x12mm"
 gtin = "784695420229"
 former_names = ["4x12mm Screw Pin"]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/4x12-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screw-pins-m4x12mm/" },
 ]

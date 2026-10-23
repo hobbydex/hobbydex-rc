@@ -8,4 +8,8 @@ applies_to = "ASCENT FUSION, COE CUSTOM HAULER, EVEREST ASCENT, GEN 9"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer15452" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/4x11.5-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

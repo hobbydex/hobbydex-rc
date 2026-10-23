@@ -12,4 +12,8 @@ fits = [
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33018-inferno-gt2-rs-srt-demon-spop-20191228" },
   { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34107-inferno-gt2-ve-rs-srt-demon-spop" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x46-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
