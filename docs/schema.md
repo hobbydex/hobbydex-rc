@@ -577,6 +577,7 @@ matching list gives as the same colour in another range, though the shade
 may differ slightly: Tamiya LP-1 Black, X-1 Black and TS-14 Black; recorded
 on each of the paints). Others are recorded on the citing part; the site
 shows it from both sides. tools/link_part_refs.py reads them from names.
+A wheel nut that states its hex (17, 23 or 24 mm) is `use-with` each wheel hex or axle of the same brand that shares a release with it and, where both state a size, the same size; the row sits on the nut only, and the site shows "Used with" on the other part.
 
 `supersedes`: the part this one replaces, when the brand has replaced it with
 an upgraded version (`supersedes = "part/team-corally/C-00180-194"` on
@@ -1008,6 +1009,14 @@ them, `across_flats_mm`, `height_mm` and `standards`. Types:
 - `dome` and `flanged-dome` (acorn or cap nut), `square`, `knurled` (thumb
   nut), `wing`, and `wheel` (a wheel nut whose name gives the thread but
   not its shape; a 17 mm hex is in the id: `m12x1-wheel-17mm`).
+
+A big-bore wheel nut (1/8 and 1/5 scale: M12 or M12x1, a 17 mm or 24 mm
+wrench hex) is a wheel nut in shape too: the hex sits outside the wheel, and
+a long threaded collar protrudes from it into the wheel's hex bore, often
+with a flange or serrations and sometimes a closed cap. Length and collar
+dimensions are recorded only where the maker states them; none are invented.
+Standard serrated flange and flanged lock nuts of smaller cars link to the
+generic nut specs.
 
 `profile` is only on hex and lock nuts. The across flats is on the spec
 only where the ISO/DIN tables fix it for that type and size (M3: 5.5 mm,

@@ -13,3 +13,8 @@ equivalent_to = [
   { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
+related = [
+  { part = "part/team-associated/21562", relation = "use-with" },
+  { part = "part/team-associated/21910", relation = "use-with" },
+  { part = "part/team-associated/41115", relation = "use-with" },
+]

@@ -13,3 +13,7 @@ category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m12-wheel-17mm", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+related = [
+  { part = "part/hpi/86387", relation = "use-with" },
+  { part = "part/hpi/87534", relation = "use-with" },
+]
