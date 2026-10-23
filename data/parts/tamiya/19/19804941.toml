@@ -7,4 +7,7 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "ball-end"
 ball_type = "through-hole"
+equivalent_to = [
+  { spec = "spec/ball-end/5mm-through-hole", match = "functional" },
+]
 links = [ { site = "tamico.de", url = "https://tamico.de/Tamiya-19804941-AP5mm-SUS-BALLPOM-WH8pcs-42301", kind = "dealer" } ]

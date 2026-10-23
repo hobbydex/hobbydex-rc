@@ -119,6 +119,7 @@ SPEC_TYPES = {
     "pin": {"screw"},   # screw pins: a smooth pin with a head and a short thread (docs/schema.md "Pin specs")
     "nut": {"hex", "nylon-lock", "metal-lock", "lock", "flanged", "flanged-lock", "flanged-nylon-lock", "serrated-flange",
             "serrated-flange-nylon-lock", "dome", "flanged-dome", "square", "knurled", "wing", "wheel"},
+    "ball-end": {"stud", "nut", "through-hole", "set-screw"},   # docs/schema.md "Ball-end specs"
 }
 NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that come in a regular and a thin height
 
@@ -126,9 +127,48 @@ NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that co
 SPEC_PART_CATS = {
     "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
     "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
-    "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"},
+    "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
+    "ball-end": {"ball-end"}, "o-ring": {"o-ring-seal"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
 }
+
+SIZE_SPEC_CATS = {"ball-end", "o-ring", "circlip"}   # specs keyed by one size, written by tools/link_*_specs.py
+
+
+def size_spec_problems(path, d):
+    """Problems with a ball-end, O-ring or circlip spec: its size fields, and the id they are keyed by."""
+    cat, out = d["category"], []
+    if cat == "ball-end":
+        b, t = d.get("ball_mm"), d.get("type")
+        if not isinstance(b, (int, float)) or isinstance(b, bool) or not 3 <= b <= 14:
+            return [f"{path}: ball-end spec needs ball_mm, the ball diameter (3 to 14 mm)"]
+        if t not in SPEC_TYPES["ball-end"]:
+            return [f"{path}: ball-end spec needs type, one of {sorted(SPEC_TYPES['ball-end'])}"]
+        sid = f"spec/ball-end/{g(b)}mm-{t}" + (f"-{d['thread'].lower()}" if "thread" in d else "") + (f"-h{g(d['height_mm'])}" if "height_mm" in d else "")
+        if d["id"] != sid:
+            out.append(f"{path}: ball-end spec id should be {sid} (ball, type, then thread and height)")
+        if "thread" in d and not re.fullmatch(r"M[2-6](\.\d)?", str(d["thread"])):
+            out.append(f"{path}: ball-end thread {d['thread']!r} should be M2 to M6 (a metric diameter)")
+    elif cat == "o-ring":
+        i, c = d.get("inner_mm"), d.get("cross_mm")
+        if not all(isinstance(x, (int, float)) and not isinstance(x, bool) for x in (i, c)) or not 0 < c < i:
+            return [f"{path}: o-ring spec needs inner_mm and cross_mm, the section thinner than the inner diameter"]
+        if d["id"] != f"spec/o-ring/{g(i)}x{g(c)}":
+            out.append(f"{path}: o-ring spec id should be spec/o-ring/{g(i)}x{g(c)} (inner, then cross section)")
+    elif cat == "circlip":
+        s_, t = d.get("shaft_mm"), d.get("thickness_mm")
+        if not isinstance(s_, (int, float)) or isinstance(s_, bool) or not 1 <= s_ <= 30:
+            return [f"{path}: circlip spec needs shaft_mm (1 to 30 mm)"]
+        sid = f"spec/circlip/{g(s_)}mm" + (f"-{g(t)}" if t is not None else "")
+        if d["id"] != sid:
+            out.append(f"{path}: circlip spec id should be {sid} (shaft, then thickness)")
+    return out
+
+
+def g(v):
+    """A size as the spec ids write it: 4.0 is 4."""
+    return str(int(v)) if float(v).is_integer() else f"{float(v):g}"
+
 
 def categories():
     """Part categories are the files in data/categories (category/<slug>)."""
@@ -878,6 +918,8 @@ def main():
                     errors.append(f"{path}: flange_mm {fm} should be larger than outer_mm")
                 if not str(d.get("flange_source", "")).startswith("https://"):
                     errors.append(f"{path}: flange_source should be the catalogue page URL")
+        if kind == "spec" and d.get("category") in SIZE_SPEC_CATS:
+            errors.extend(size_spec_problems(path, d))
         if kind == "spec" and d.get("category") == "eclip":
             s = d.get("shaft_mm")
             if not isinstance(s, (int, float)) or isinstance(s, bool) or not 1 <= s <= 12:

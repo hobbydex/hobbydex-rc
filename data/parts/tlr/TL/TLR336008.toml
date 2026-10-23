@@ -13,3 +13,6 @@ material = "titanium"
 fits = [
   { kit = "kit/tlr/22", type = "replaces", replaces = "part/tlr/TLR236007", source = "doc/tlr/tlr03016-17-18-manual-multi", notes = "Same part in another material (link_upgrades.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]

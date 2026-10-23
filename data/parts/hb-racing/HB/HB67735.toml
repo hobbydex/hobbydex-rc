@@ -9,3 +9,6 @@ fits = [
   { kit = "kit/hb-racing/cyclone-tc", type = "replaces", replaces = "part/hb-racing/HB75115", source = "doc/hb-racing/67700-kit-page", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/hb-racing/tcx", type = "replaces", replaces = "part/hb-racing/HB75115", source = "doc/hb-racing/68700-kit-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/ball-end/4.3mm-stud", match = "functional" },
+]
