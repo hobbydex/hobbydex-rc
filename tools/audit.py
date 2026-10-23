@@ -186,7 +186,7 @@ def load_tools(tools):
     cache = os.path.join(tools, "cache")
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
-    # the Tamiya hardware photo reader (its cache lookups; it reads no photo itself in the audit)
+    # the hardware photo reader (its cache lookups; it reads no photo itself in the audit)
     hw = os.path.join(tools, "tools", "link_hw_photo_finish.py")
     out["hwphoto"] = None
     if os.path.exists(hw):
@@ -583,11 +583,11 @@ def main():
         check("hw-no-material", "run tools/link_part_material.py in hobbydex-tools (it sets the material the name or the maker's page states, and reports the conflicts)",
               stated, per_brand=per_brand(stated))
 
-    # 29b. Tamiya metal hardware with no colour whose product photo is cached and not read yet
+    # 29b. hardware (any brand) whose cached product photo is not read yet for its colour or its piece count
     if tools["hwphoto"]:
         hw = tools["hwphoto"]
         unread = [p for p in parts if hw.unread_photo(p)]
-        check("tamiya-hw-no-colour-photo", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour by hand from the photo",
+        check("hw-photo-unread", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour or pack_qty by hand from the photo",
               unread, per_brand=per_brand(unread))
 
     # a hardware kit's pack_qty is the sum of its includes qty (hobbydex-tools packqty.from_includes)
