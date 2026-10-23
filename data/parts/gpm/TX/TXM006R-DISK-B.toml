@@ -3,6 +3,7 @@ brand = "brand/gpm"
 number = "TXM006R-DISK-B"
 name = "GPM Blue Aluminum X-Maxx Rear 24mm Claw Wheel Hex W/ 3mm Offset 2Pcs"
 pack_qty = 2
+color = "blue"
 fits = [
   { kit = "kit/traxxas/x-maxx", type = "replaces", source = "doc/gpm/store" },
   { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/gpm/store" },
@@ -12,3 +13,6 @@ links = [
 ]
 category = "drivetrain"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/wheel-hex/24mm", match = "exact", notes = "Hex size from the name" },
+]

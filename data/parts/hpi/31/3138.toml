@@ -3,6 +3,7 @@ brand = "brand/hpi"
 number = "3138"
 name = "8 SPOKE WHEEL SATIN CHROME (83x56mm/2pcs)"
 pack_qty = 2
+color = "chrome"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/3138" },
 ]
@@ -13,3 +14,6 @@ fits = [
   { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "wheel"
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for Savage X 4.6 SS Kit are 17 mm" },
+]

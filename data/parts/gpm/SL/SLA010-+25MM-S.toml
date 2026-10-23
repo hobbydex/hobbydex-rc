@@ -2,6 +2,7 @@ id = "part/gpm/SLA010-+25MM-S"
 brand = "brand/gpm"
 number = "SLA010-+25MM-S"
 name = "GPM Silver Aluminium Traxxas Slash 4×4 12mm Hex Adaptors W/ +25mm Off-Set"
+color = "silver"
 fits = [
   { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/gpm/store" },
   { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/gpm/store" },
@@ -11,3 +12,6 @@ links = [
 ]
 category = "drivetrain"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

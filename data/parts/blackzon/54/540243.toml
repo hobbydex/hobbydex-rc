@@ -7,3 +7,7 @@ fits = [
   { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/540226-kit-page" },
   { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/540225-kit-page" },
 ]
+category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
