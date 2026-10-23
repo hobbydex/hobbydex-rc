@@ -19,6 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(HERE)
 YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
 HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal"}   # hardware part categories
+MAT_CATS = {"pinion", "spur-gear", "screw", "nut", "washer-shim", "pin", "bearing"}          # metal hardware: material from the name or the maker's page
 SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
 SIZE = re.compile(r"\bM\d+(?:\.\d+)?\b|\b\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?(?:\s*x\s*\d+(?:\.\d+)?)?\s*(?:mm)?\b|\b\d+(?:\.\d+)?\s*mm\b", re.I)
 CALLOUT_PAREN = re.compile(r"\(\s*[A-Z][A-Z0-9-]*\s+x\s*\d+\s*\)")   # (CODE xN): a space before the x, so not a size (BM3x15)
@@ -81,6 +82,15 @@ def _classify_one(name):
     return _CLS(name)
 
 
+_TARGET = _KEEP = None   # classify_parts.target and its KEEP marker, set by load_tools
+
+
+def _category_of(p):
+    """What tools/classify_parts.py writes for part p: a category, "" for none, or "keep" (its category stays)."""
+    c = _TARGET(p)
+    return "keep" if c is _KEEP else (c or "")
+
+
 def classify_all(cls, names):
     """cls over the names in forked workers: the classifier is regex-heavy and one process takes about a minute."""
     global _CLS
@@ -103,7 +113,37 @@ def near_local(a, b):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None}
+    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
+    lpm = os.path.join(tools, "tools", "link_part_material.py")
+    if os.path.exists(lpm):   # its decide() is the rule the material linker writes by: a flag is a value it would set
+        spec = importlib.util.spec_from_file_location("link_part_material", lpm)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.dirname(lpm))
+        try:
+            spec.loader.exec_module(mod)
+            out["material"] = mod
+        except Exception as e:  # the check is skipped without it
+            print(f"note: link_part_material not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.dirname(lpm))
+    pq = os.path.join(tools, "tools", "packqty.py")
+    if os.path.exists(pq):   # the count reader the importers use (a name's "(2)", "2pcs", "1 pair")
+        spec = importlib.util.spec_from_file_location("packqty", pq)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out["packqty"] = mod
+    lpc = os.path.join(tools, "tools", "link_part_colours.py")
+    if os.path.exists(lpc):   # the colour a part's name states (tools/link_part_colours.py colour())
+        spec = importlib.util.spec_from_file_location("link_part_colours", lpc)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.join(tools, "tools"))
+        try:
+            spec.loader.exec_module(mod)
+            out["colour"] = mod.colour
+        except Exception as e:
+            print(f"note: colour linker not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.join(tools, "tools"))
     cls = os.path.join(tools, "tools", "classify_parts.py")
     if os.path.exists(cls):
         spec = importlib.util.spec_from_file_location("classify_parts", cls)
@@ -112,6 +152,10 @@ def load_tools(tools):
         try:
             spec.loader.exec_module(mod)
             out["classify"] = mod.classify
+            out["with_fasteners"] = mod.with_fasteners
+            out["fastener_cats"] = mod.FASTENER_CATS
+            global _TARGET, _KEEP
+            _TARGET, _KEEP = mod.target, mod.KEEP
         except Exception as e:  # the audit still runs without it
             print(f"note: classifier not loaded ({e})", file=sys.stderr)
         finally:
@@ -314,12 +358,11 @@ def main():
 
     # 11. classifier drift: stored category vs classify(name)
     if tools["classify"]:
-        cls = tools["classify"]
         moves = collections.Counter()
         drift = collections.defaultdict(list)
         cands = [p for p in parts if not (p.get("category_source") == "curated" or p["name"] == (p.get("number") or ""))]
-        for p, new in zip(cands, classify_all(cls, [p["name"] for p in cands])):
-            if new is None:
+        for p, new in zip(cands, classify_all(_category_of, cands)):   # the classifier's own target(), as the run writes it
+            if new == "keep":
                 continue
             new = new or None
             old = p.get("category")
@@ -332,6 +375,27 @@ def main():
               transitions=moves.most_common(10))
     else:
         results["classifier-drift"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
+
+    # 11b. a part that comes with screws, nuts or washers is the part: its category comes from the name before the fasteners
+    if tools["with_fasteners"]:
+        def part_before_fasteners(p):
+            thing = tools["with_fasteners"](p["name"])
+            return bool(thing) and p.get("category") in tools["fastener_cats"] and tools["classify"](thing) not in (None, "", *tools["fastener_cats"])
+        check("with-fasteners-category", "a part that comes with screws, nuts or washers takes the category of the part (rerun tools/classify_parts.py in hobbydex-tools; a curated category is set by hand: the part, not screw)",
+              [p for p in parts if part_before_fasteners(p)])
+    else:
+        results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
+    # 11b. parts with no category: a name the classifier knows gets one (classify_parts.py --fill); a bare code stays uncategorised
+    check("part-no-category", "run tools/classify_parts.py --fill in hobbydex-tools, or add the name's words to its rules",
+          [p for p in parts if not p.get("category") and p.get("category_source") != "curated" and p["name"] != (p.get("number") or "")])
+
+    # 11c. a colour word in the name that the part has no color for (tools/link_part_colours.py)
+    if tools["colour"]:
+        colour = tools["colour"]
+        check("colour-word-no-color", "run tools/link_part_colours.py in hobbydex-tools (or the word is a product name: add it to its PRODUCT list)",
+              [p for p in parts if not p.get("color") and p.get("category") != "paint" and not str(p.get("range", "")).endswith("-colours") and colour(p["name"])])
+    else:
+        results["colour-word-no-color"] = {"fix": "hobbydex-tools link_part_colours.py not found (--tools)", "count": None, "examples": [], "all": []}
 
     # 12. releases named only by their number
     check("release-named-by-number", "give the release its product name from the maker's page",
@@ -460,6 +524,12 @@ def main():
     used_specs = {e["spec"] for p in parts for e in p.get("equivalent_to", [])}
     check("spec-unlinked", "link a part to the spec, or retire the spec", [s for s in db["specs"] if s["id"] not in used_specs])
 
+    # 26b. a count the name states that the part has no pack_qty for (a name that keeps the maker's count is fine)
+    if tools["packqty"]:
+        gap = [p for p in parts if "pack_qty" not in p and tools["packqty"].from_name(p.get("name", ""))]
+        check("name-count-no-pack-qty", "set pack_qty from the count the name states: rerun the importer that wrote the part (it sets pack_qty from its name) or tools/link_pack_qty.py in hobbydex-tools",
+              gap, per_brand=collections.Counter(p["brand"].split("/")[-1] for p in gap).most_common(12))
+
     # 27. video docs whose release has a product page with gallery videos not attached: skipped (needs fetched pages)
     results["video-gallery-unattached"] = {"fix": "not checked: needs the cached product pages parsed for gallery video IDs", "count": None, "examples": [], "all": [], "skipped": True}
 
@@ -486,6 +556,18 @@ def main():
     no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes")]
     check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes",
           no_pack, per_brand=per_brand(no_pack))
+
+    # metal hardware whose name or cached maker page states a material the data lacks (tools/link_part_material.py's rule)
+    lpm = tools.get("material")
+    if lpm:
+        idxs, stated = {}, []
+        for p in parts:
+            if p.get("category") in MAT_CATS and p.get("material") in (None, "unknown"):
+                upd, _, _ = lpm.decide(p, brands.get(p.get("brand"), {}), idxs)
+                if upd.get("material"):
+                    stated.append(p)
+        check("hw-no-material", "run tools/link_part_material.py in hobbydex-tools (it sets the material the name or the maker's page states, and reports the conflicts)",
+              stated, per_brand=per_brand(stated))
 
     idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
     if os.path.exists(idx_path):
@@ -564,6 +646,12 @@ def main():
 
     bat = [p for p in parts if p.get("category") in ("battery", "esc") and not p.get("connector")]
     check("battery-esc-no-connector", "set connector to the plug the pack or ESC uses (from the maker's page or manual)", bat, per_brand=per_brand(bat))
+
+    # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
+    hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
+    per_brand = collections.Counter(p["brand"].split("/")[-1] for p in hz)
+    check("horizon-part-no-maker-link", "run tools/link_horizon_pages.py (queues the item's Horizon page first; a part Horizon lists nowhere stays unlinked)",
+          hz, per_brand=per_brand.most_common())
 
     hw_box = []
     for r in rels:

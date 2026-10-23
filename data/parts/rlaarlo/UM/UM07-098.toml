@@ -2,6 +2,7 @@ id = "part/rlaarlo/UM07-098"
 brand = "brand/rlaarlo"
 number = "UM07-098"
 name = "Wheel Rims (Pair) For UM07 RC Crawler"
+pack_qty = 2
 fits = [
   { kit = "kit/rlaarlo/unimog-u4000", type = "direct", source = "doc/rlaarlo/store" },
 ]
@@ -10,3 +11,6 @@ links = [
 ]
 category = "wheel"
 vehicle = "crawler"
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for Mercedes-Benz Unimog U4000 UM07 Brushless RTR, black are 17 mm" },
+]

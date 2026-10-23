@@ -9,4 +9,9 @@ fits = [
 ]
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
 category = "drivetrain"
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=101&a=view&r=901" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=101&a=view&r=901" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

@@ -3,6 +3,7 @@ brand = "brand/gpm"
 number = "RUS4010+2MM-B"
 name = "GPM Blue Aluminium Traxxas Rustler 4×4 12mm (+2mm Off-Set) Wheel Hex 2Pcs"
 pack_qty = 2
+color = "blue"
 fits = [
   { kit = "kit/traxxas/rustler-4x4", type = "replaces", source = "doc/gpm/store" },
 ]
@@ -11,3 +12,6 @@ links = [
 ]
 category = "drivetrain"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
