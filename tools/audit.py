@@ -590,6 +590,21 @@ def main():
         check("tamiya-hw-no-colour-photo", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour by hand from the photo",
               unread, per_brand=per_brand(unread))
 
+    # a hardware kit's pack_qty is the sum of its includes qty (hobbydex-tools packqty.from_includes)
+    def kit_sum(p):
+        """The sum of the includes qty of a hardware kit, or None when a row has no integer qty."""
+        rows = p.get("includes") or []
+        qtys = [r.get("qty") for r in rows]
+        return sum(qtys) if rows and all(type(q) is int and q > 0 for q in qtys) else None
+    kits_hw = [p for p in parts if p.get("category") in HW and p.get("includes")]
+    no_qty = [p for p in kits_hw if kit_sum(p) is None]
+    check("kit-includes-no-qty", "give every includes row of the kit its qty (the pieces in the bag); the kit's pack_qty is the sum once all rows have one",
+          no_qty, per_brand=per_brand(no_qty))
+    off = [p for p in kits_hw if "pack_qty" in p and kit_sum(p) is not None and p["pack_qty"] != kit_sum(p)]
+    check("kit-pack-not-sum", "the kit's pack_qty differs from the sum of its includes qty: correct the rows to the bag's count, or the pack_qty to the maker's listing",
+          off, per_brand=per_brand(off))
+    results["kit-pack-not-sum"]["examples"] = [{"id": f"{p['id']} (pack_qty {p['pack_qty']}, includes sum {kit_sum(p)})", "url": url_for(p)} for p in off[:args.examples]]
+
     idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
     if os.path.exists(idx_path):
         with open(idx_path, encoding="utf-8") as f:
