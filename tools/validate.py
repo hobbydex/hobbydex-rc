@@ -77,6 +77,8 @@ ENUMS = {
     "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
+    # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
+    "part.pack_qty_basis": {"name", "page", "includes", "photo", "photos", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
@@ -620,6 +622,8 @@ def main():
                 errors.append(f"{path}: link {l!r} needs a site and an https url (http only for a maker site that has no https)")
             elif "kind" in l and l["kind"] not in ("fan-site", "press", "dealer"):
                 errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press', 'dealer']")
+        if kind == "part" and "pack_qty_basis" in d and not (isinstance(d.get("pack_qty"), int) and d["pack_qty"] >= 1):
+            errors.append(f"{path}: pack_qty_basis needs a pack_qty (a whole number, 1 or more)")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
             errors.append(f"{path}: paint finish = {d['finish']!r} not in {sorted(PAINT_FINISH)}")
         if kind in ("release", "part"):

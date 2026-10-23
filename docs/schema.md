@@ -311,6 +311,8 @@ former_names = ["COMPOSITE STEERING BLOCK"]
 
 `ocr_names` (optional, a list of strings): the names OCR read from a manual or a scan for this part, kept only for the matching tools. The site never shows them and the search index does not hold them (`export.py` writes them with the rest of the record). A reading that has no letters, runs over 60 characters (several names in one) or is a single word is dropped (`former_names.ocr_clean()`). A reading that is the maker's own product page title for the part stays a former name.
 
+`pack_qty_basis` (optional, only with `pack_qty`): where the count came from, written right after it. `name`: the maker's part name states it (`(10)`, `10pcs`). `page`: the maker's (or a dealer's) product page states it. `includes`: the sum of the part's `includes` quantities (a bearing kit). `photo`: counted on one product photo, which does not always show the whole pack, so this is the weakest basis; the site says so. `photos`: two or more independent photos of the item number gave the same count. `owner`: checked by the project owner on the pack. A text basis always wins over a photo count; a photo count that disagrees with a text count is never written (audit "pack-photo-disagrees"). A `pack_qty` with no basis was written before the basis existed and its source is not known (audit "pack-qty-no-basis").
+
 A part of a brand with `item_numbers = false` has no `number`: never put a
 store handle or SKU there to fill it. Its id keeps a slug
 (`part/acer-racing/bandit-ball-bearing-kit`), which also names its file.

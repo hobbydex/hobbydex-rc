@@ -28,6 +28,8 @@ PCS = re.compile(r"\b\d+\s*pcs?\b", re.I)
 PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
 CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
 BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re.I)
+# a tamico.de dealer link (kind = "dealer") is allowed for Tamiya spares without a maker page (tools/link_tamico_spares.py)
+TAMICO_DEALER_LINK = re.compile(r'\{ site = "tamico\.de", url = "[^"]*", kind = "dealer" \}')
 SCRAP_IMG = re.compile(r"https?://[^\s\"')]*rcscrapyard[^\s\"')]*\.(jpe?g|png|gif|webp)", re.I)
 LOCAL_PATH = re.compile(r"(^|[\s\"'(=])(/home/|/Users/|/tmp/|file://|[A-Za-z]:\\|work/manuals/|cache/)")
 FIX_PAGE = "add the maker's product page as a document (kind product_page, page = the maker's URL) and list it in the release's documents"
@@ -504,7 +506,7 @@ def main():
     for path in sorted({d["_path"] for k in db for d in db[k]}):
         with open(os.path.join(RC, path), encoding="utf-8") as f:
             text = f.read()
-        if BANNED_HOSTS.search(text):
+        if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)):
             banned.append(path)
         if SCRAP_IMG.search(text):
             scrap.append(path)
@@ -539,6 +541,27 @@ def main():
     check("release-no-contents", "read the release's parts list into contains (or note there is none)", [r for r in rels if not r.get("contains")])
     used_specs = {e["spec"] for p in parts for e in p.get("equivalent_to", [])}
     check("spec-unlinked", "link a part to the spec, or retire the spec", [s for s in db["specs"] if s["id"] not in used_specs])
+
+    # 26c. Tamiya parts with no maker link and no dealer link, by number form (tools/link_tamico_spares.py adds dealer links)
+    def linked_somewhere(p):
+        return any((l.get("kind") is None and l.get("site") == "Tamiya") or l.get("kind") == "dealer" for l in p.get("links", []))
+    tam = [p for p in parts if p.get("brand") == "brand/tamiya"]
+    bare = [p for p in tam if not linked_somewhere(p)]
+    spares = [p for p in bare if re.fullmatch(r"\d{8}", str(p.get("number", "")))]
+    items = [p for p in bare if re.fullmatch(r"\d{5}", str(p.get("number", "")))]
+    check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker or dealer page: run tools/plan_tamico_spares.py in hobbydex-tools (dealer pages are queued) and then tools/link_tamico_spares.py",
+          spares, count=len(spares))
+    check("tamiya-item-no-link", "a Tamiya item number with no maker product page: give it a maker link (tamiya.com page) or a manual or fan-site source",
+          items, count=len(items))
+    tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamico-spares.tsv")
+    conflicts = []
+    if os.path.exists(tsv):
+        with open(tsv, encoding="utf-8") as fh:
+            for row in csv.DictReader(fh, delimiter="\t"):
+                if row["status"].startswith("conflict"):
+                    conflicts.append({"id": row["part"]})
+    check("tamico-pack-conflict", "no pack_qty from the dealers: the dealers' counts differ or the part's name states another count; set the count from the part's own source or leave it unset (tools/link_tamico_spares.py lists the rows)",
+          conflicts, count=len(conflicts))
 
     # 26b. a count the name states that the part has no pack_qty for (a name that keeps the maker's count is fine)
     if tools["packqty"]:
@@ -610,6 +633,42 @@ def main():
     check("kit-pack-not-sum", "the kit's pack_qty differs from the sum of its includes qty and the rows are not whole sets of it: correct the rows to the bag's count, or the pack_qty to the maker's listing",
           off, per_brand=per_brand(off))
     results["kit-pack-not-sum"]["examples"] = [{"id": f"{p['id']} (pack_qty {p['pack_qty']}, includes sum {kit_sum(p)})", "url": url_for(p)} for p in off[:args.examples]]
+
+    # pack count evidence (docs/schema.md "part", pack_qty_basis): a count with no recorded basis, a photo count that
+    # disagrees with the text, a brand whose photo counts are written although its photos do not match known packs well
+    no_basis = [p for p in parts if "pack_qty" in p and "pack_qty_basis" not in p]
+    check("pack-qty-no-basis", "record pack_qty_basis (python3 -I tools/backfill_pack_basis.py in hobbydex-tools) or leave it: the count's source is not known",
+          no_basis, per_brand=per_brand(no_basis))
+    ev_dir = os.path.join(os.path.abspath(args.tools), "cache", "notes", "pack-evidence")
+    dis = os.path.join(ev_dir, "photo-disagreements.tsv")
+    ids = set()
+    if os.path.exists(dis):
+        with open(dis, encoding="utf-8") as f:
+            next(f, None)
+            ids = {ln.split("\t")[0] for ln in f if ln.strip()}
+    by_id_all = {p["id"]: p for p in parts}
+    check("pack-photo-disagrees", "look at the photo and the maker's text; the text count stands (tools/photo_chain.py lists them in cache/notes/pack-evidence/photo-disagreements.tsv)",
+          [by_id_all[i] for i in sorted(ids) if i in by_id_all])
+    wrong = os.path.join(os.path.abspath(args.tools), "cache", "notes", "review", "wrong-photos.tsv")
+    wp = set()
+    if os.path.exists(wrong):
+        with open(wrong, encoding="utf-8") as f:
+            wp = {ln.split("\t")[0] for ln in f if ln.strip()}
+    check("pack-wrong-photo", "the owner marked the mapped photo as not the part's: fix the photo mapping (tools/link_hw_photo_finish.py gallery_for/photo_for) for the part",
+          [by_id_all[i] for i in sorted(wp) if i in by_id_all])
+    rel = os.path.join(os.path.abspath(args.tools), "tools", "data", "photo_pack_reliability.tsv")
+    ok_brands, known = set(), False
+    if os.path.exists(rel):
+        known = True
+        with open(rel, encoding="utf-8") as f:
+            hdr = next(f).rstrip("\n").split("\t")
+            for ln in f:
+                r = dict(zip(hdr, ln.rstrip("\n").split("\t")))
+                if r.get("passes") == "yes":
+                    ok_brands.add(r["brand"])
+    photo_parts = [p for p in parts if p.get("pack_qty_basis") in ("photo", "photos") and (not known or brand_of(p) not in ok_brands)]
+    check("pack-photo-brand-below-bar", "remove the photo counts of the brand or raise its photo agreement to 97% on 30 cases (tools/photo_pack_reliability.py)",
+          photo_parts, per_brand=per_brand(photo_parts))
 
     idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
     if os.path.exists(idx_path):
