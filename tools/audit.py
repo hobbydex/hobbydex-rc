@@ -81,6 +81,15 @@ def _classify_one(name):
     return _CLS(name)
 
 
+_TARGET = _KEEP = None   # classify_parts.target and its KEEP marker, set by load_tools
+
+
+def _category_of(p):
+    """What tools/classify_parts.py writes for part p: a category, "" for none, or "keep" (its category stays)."""
+    c = _TARGET(p)
+    return "keep" if c is _KEEP else (c or "")
+
+
 def classify_all(cls, names):
     """cls over the names in forked workers: the classifier is regex-heavy and one process takes about a minute."""
     global _CLS
@@ -103,13 +112,25 @@ def near_local(a, b):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "packqty": None, "with_fasteners": None, "fastener_cats": None}
+    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None}
     pq = os.path.join(tools, "tools", "packqty.py")
     if os.path.exists(pq):   # the count reader the importers use (a name's "(2)", "2pcs", "1 pair")
         spec = importlib.util.spec_from_file_location("packqty", pq)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         out["packqty"] = mod
+    lpc = os.path.join(tools, "tools", "link_part_colours.py")
+    if os.path.exists(lpc):   # the colour a part's name states (tools/link_part_colours.py colour())
+        spec = importlib.util.spec_from_file_location("link_part_colours", lpc)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.join(tools, "tools"))
+        try:
+            spec.loader.exec_module(mod)
+            out["colour"] = mod.colour
+        except Exception as e:
+            print(f"note: colour linker not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.join(tools, "tools"))
     cls = os.path.join(tools, "tools", "classify_parts.py")
     if os.path.exists(cls):
         spec = importlib.util.spec_from_file_location("classify_parts", cls)
@@ -120,6 +141,8 @@ def load_tools(tools):
             out["classify"] = mod.classify
             out["with_fasteners"] = mod.with_fasteners
             out["fastener_cats"] = mod.FASTENER_CATS
+            global _TARGET, _KEEP
+            _TARGET, _KEEP = mod.target, mod.KEEP
         except Exception as e:  # the audit still runs without it
             print(f"note: classifier not loaded ({e})", file=sys.stderr)
         finally:
@@ -322,12 +345,11 @@ def main():
 
     # 11. classifier drift: stored category vs classify(name)
     if tools["classify"]:
-        cls = tools["classify"]
         moves = collections.Counter()
         drift = collections.defaultdict(list)
         cands = [p for p in parts if not (p.get("category_source") == "curated" or p["name"] == (p.get("number") or ""))]
-        for p, new in zip(cands, classify_all(cls, [p["name"] for p in cands])):
-            if new is None:
+        for p, new in zip(cands, classify_all(_category_of, cands)):   # the classifier's own target(), as the run writes it
+            if new == "keep":
                 continue
             new = new or None
             old = p.get("category")
@@ -350,6 +372,17 @@ def main():
               [p for p in parts if part_before_fasteners(p)])
     else:
         results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
+    # 11b. parts with no category: a name the classifier knows gets one (classify_parts.py --fill); a bare code stays uncategorised
+    check("part-no-category", "run tools/classify_parts.py --fill in hobbydex-tools, or add the name's words to its rules",
+          [p for p in parts if not p.get("category") and p.get("category_source") != "curated" and p["name"] != (p.get("number") or "")])
+
+    # 11c. a colour word in the name that the part has no color for (tools/link_part_colours.py)
+    if tools["colour"]:
+        colour = tools["colour"]
+        check("colour-word-no-color", "run tools/link_part_colours.py in hobbydex-tools (or the word is a product name: add it to its PRODUCT list)",
+              [p for p in parts if not p.get("color") and p.get("category") != "paint" and not str(p.get("range", "")).endswith("-colours") and colour(p["name"])])
+    else:
+        results["colour-word-no-color"] = {"fix": "hobbydex-tools link_part_colours.py not found (--tools)", "count": None, "examples": [], "all": []}
 
     # 12. releases named only by their number
     check("release-named-by-number", "give the release its product name from the maker's page",
