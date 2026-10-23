@@ -298,7 +298,7 @@ including variant suffixes (`368014-S`, `362280-K`). `name` is the description
 from the newest source, verbatim apart from trademark glyphs and quote
 normalisation; the trailing pack count `(10)` is moved into `pack_qty`. Older
 differing descriptions go to `former_names` so a rename or a spec change
-(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. A name read by OCR from a manual, and a manual's bag callout (`(BBS x10)`), is never a former name. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
+(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. `former_names` holds only the names a maker published: a product it renamed, on its own site or in its catalogue. A name read by OCR from a manual or a scan is not one: it goes to `ocr_names`, and a manual's bag callout (`(BBS x10)`) is no name at all. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
 ```toml
 id = "part/xray/362250"
@@ -308,6 +308,8 @@ name = "COMPOSITE STEERING BLOCK - MEDIUM - V2"
 pack_qty = 2
 former_names = ["COMPOSITE STEERING BLOCK"]
 ```
+
+`ocr_names` (optional, a list of strings): the names OCR read from a manual or a scan for this part, kept only for the matching tools. The site never shows them and the search index does not hold them (`export.py` writes them with the rest of the record). A reading that has no letters, runs over 60 characters (several names in one) or is a single word is dropped (`former_names.ocr_clean()`). A reading that is the maker's own product page title for the part stays a former name.
 
 A part of a brand with `item_numbers = false` has no `number`: never put a
 store handle or SKU there to fill it. Its id keeps a slug
