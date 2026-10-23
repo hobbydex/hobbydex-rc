@@ -31,3 +31,6 @@ fits = [
 links = [
   { site = "Traxxas", url = "https://traxxas.com/3931-flat-head-machine-screws-3x8-mm-6" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

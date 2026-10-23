@@ -8,3 +8,6 @@ links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-vis-tete-fraisee-4x30mm-1-6-T4975_98" },
 ]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4975/98."
+equivalent_to = [
+  { spec = "spec/screw/m4x30-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
