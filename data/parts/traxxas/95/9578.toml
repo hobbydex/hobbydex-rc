@@ -5,6 +5,9 @@ name = "Screw pin, 4x18mm (with threadlock)"
 pack_qty = 6
 category = "pin"
 category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/4x18-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 fits = [
   { kit = "kit/traxxas/sledge", type = "direct", source = "doc/traxxas/95096-4-parts-list" },
   { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/traxxas/36076-3-exploded-chassis-assembly" },

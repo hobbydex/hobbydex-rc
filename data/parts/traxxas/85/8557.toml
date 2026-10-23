@@ -5,6 +5,9 @@ name = "Screw pin, 3x11mm (with threadlock)"
 pack_qty = 6
 category = "pin"
 category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x11-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 fits = [
   { kit = "kit/traxxas/udr", type = "direct", source = "doc/traxxas/85086-4-parts-list" },
 ]

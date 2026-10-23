@@ -7,5 +7,6 @@ pack_qty = 12
 category = "pin"
 category_source = "curated"
 equivalent_to = [
+  { spec = "spec/pin/3x9.5-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
   { spec = "spec/pin/3x9.5", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]

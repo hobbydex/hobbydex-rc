@@ -3,6 +3,9 @@ brand = "brand/traxxas"
 number = "8269"
 name = "Wheel hubs, 12mm hex (2)/ stub axle pins (2) (steel)"
 category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
 material = "steel"
 fits = [
   { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/110056-4-parts-list" },
