@@ -609,6 +609,35 @@ def main():
           off, per_brand=per_brand(off))
     results["kit-pack-not-sum"]["examples"] = [{"id": f"{p['id']} (pack_qty {p['pack_qty']}, includes sum {kit_sum(p)})", "url": url_for(p)} for p in off[:args.examples]]
 
+    # pack count evidence (docs/schema.md "part", pack_qty_basis): a count with no recorded basis, a photo count that
+    # disagrees with the text, a brand whose photo counts are written although its photos do not match known packs well
+    no_basis = [p for p in parts if "pack_qty" in p and "pack_qty_basis" not in p]
+    check("pack-qty-no-basis", "record pack_qty_basis (python3 -I tools/backfill_pack_basis.py in hobbydex-tools) or leave it: the count's source is not known",
+          no_basis, per_brand=per_brand(no_basis))
+    ev_dir = os.path.join(os.path.abspath(args.tools), "cache", "notes", "pack-evidence")
+    dis = os.path.join(ev_dir, "photo-disagreements.tsv")
+    ids = set()
+    if os.path.exists(dis):
+        with open(dis, encoding="utf-8") as f:
+            next(f, None)
+            ids = {ln.split("\t")[0] for ln in f if ln.strip()}
+    by_id_all = {p["id"]: p for p in parts}
+    check("pack-photo-disagrees", "look at the photo and the maker's text; the text count stands (tools/photo_chain.py lists them in cache/notes/pack-evidence/photo-disagreements.tsv)",
+          [by_id_all[i] for i in sorted(ids) if i in by_id_all])
+    rel = os.path.join(os.path.abspath(args.tools), "tools", "data", "photo_pack_reliability.tsv")
+    ok_brands, known = set(), False
+    if os.path.exists(rel):
+        known = True
+        with open(rel, encoding="utf-8") as f:
+            hdr = next(f).rstrip("\n").split("\t")
+            for ln in f:
+                r = dict(zip(hdr, ln.rstrip("\n").split("\t")))
+                if r.get("passes") == "yes":
+                    ok_brands.add(r["brand"])
+    photo_parts = [p for p in parts if p.get("pack_qty_basis") in ("photo", "photos") and (not known or brand_of(p) not in ok_brands)]
+    check("pack-photo-brand-below-bar", "remove the photo counts of the brand or raise its photo agreement to 97% on 30 cases (tools/photo_pack_reliability.py)",
+          photo_parts, per_brand=per_brand(photo_parts))
+
     idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
     if os.path.exists(idx_path):
         with open(idx_path, encoding="utf-8") as f:
