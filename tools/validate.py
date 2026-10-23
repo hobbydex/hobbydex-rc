@@ -356,6 +356,39 @@ def check_art(ids, errors, body_parts=frozenset()):
                     errors.append(f"{path}: <path> must be empty")
     return n
 
+# the plug names of a wire part's `connectors` and of the battery and ESC `connector` field (tools/link_connector_specs.py PLUG_NAME)
+PLUG_SPEC = {
+    "XT30": "xt30", "XT60": "xt60", "XT60H": "xt60h", "XT90": "xt90", "XT90-S": "xt90s", "XT150": "xt150",
+    "AS150": "as150", "QS8": "qs8", "EC2": "ec2", "EC3": "ec3", "EC5": "ec5", "EC8": "ec8", "IC3": "ic3", "IC5": "ic5",
+    "Deans": "deans", "Tamiya": "tamiya", "Mini Tamiya": "tamiya-mini", "JST-RCY": "jst-rcy", "JST-XH": "jst-xh",
+    "JR": "servo-jr-futaba", "Traxxas iD": "traxxas-trx-id", "Traxxas high-current": "traxxas-high-current",
+    "2mm bullet": "bullet-2mm", "3.5mm bullet": "bullet-3.5mm", "4mm bullet": "bullet-4mm", "5mm bullet": "bullet-5mm",
+    "6mm bullet": "bullet-6mm", "8mm bullet": "bullet-8mm", "4mm banana": "banana-4mm",
+}
+
+def check_connectors(docs, ids, errors):
+    """A wire part lists the plugs of a lead, adapter or harness in `connectors`, each a plug name with a connector
+    spec; a part that is the plug itself is equivalent_to its connector spec instead, so it never has both
+    (docs/schema.md "Connector specs")."""
+    for path, kind, d in docs:
+        if kind != "part" or "connectors" not in d:
+            continue
+        if d.get("category") != "wire":
+            errors.append(f"{path}: connectors is for wire parts (leads, adapters, harnesses), not a {d.get('category')}")
+        names = d["connectors"]
+        if not isinstance(names, list) or not names or not all(isinstance(n, str) for n in names):
+            errors.append(f"{path}: connectors should be a non-empty list of plug names, got {names!r}")
+            continue
+        for n in names:
+            if n not in PLUG_SPEC:
+                errors.append(f"{path}: connectors {n!r} is not a plug name (validate.py PLUG_SPEC)")
+            elif f"spec/connector/{PLUG_SPEC[n]}" not in ids:
+                errors.append(f"{path}: connectors {n!r} has no connector spec spec/connector/{PLUG_SPEC[n]}")
+        if len(set(names)) != len(names):
+            errors.append(f"{path}: connectors lists a plug twice: {names!r}")
+        if any(str(e.get("spec", "")).startswith("spec/connector/") for e in d.get("equivalent_to", []) if isinstance(e, dict)):
+            errors.append(f"{path}: has connectors and an equivalent_to connector spec; a lead lists its plugs only in connectors")
+
 def main():
     ENUMS["part.category"] = categories()
     errors, ids, docs = [], {}, []
@@ -909,6 +942,7 @@ def main():
     check_kit_supersedes(docs, errors)
     check_makes(docs, errors)
     check_dealer_links(docs, errors)
+    check_connectors(docs, ids, errors)
     check_names_no_brand(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))

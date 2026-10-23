@@ -6,7 +6,4 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-adapter-ec5-battery-ec3-device/DYNC0030.html" },
 ]
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/ec3", match = "functional" },
-  { spec = "spec/connector/ec5", match = "functional" },
-]
+connectors = ["EC5", "EC3"]

@@ -5,10 +5,13 @@ name = "T plug Y Harness 12AWG Silicone Wire 1F & 2M L=100mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=69" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=69" },
+]
 equivalent_to = [
   { spec = "spec/wire/12awg", match = "functional" },
 ]
 wire_awg = 12
 insulation = "silicone"
 length_mm = 100
+connectors = ["Deans"]
