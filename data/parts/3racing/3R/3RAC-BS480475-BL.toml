@@ -3,6 +3,7 @@ brand = "brand/3racing"
 number = "3RAC-BS480475-BL"
 name = "7075 Aluminum 4.8mm Ball Stud L=4 (10 pcs) - Black"
 pack_qty = 10
+pack_qty_basis = "name"
 color = "black"
 notes = "The shop lists it as 3RAC-BS480475/BL"
 links = [
@@ -13,3 +14,6 @@ ball_mm = 4.8
 ball_type = "stud"
 material = "aluminium"
 material_grade = "7075"
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]

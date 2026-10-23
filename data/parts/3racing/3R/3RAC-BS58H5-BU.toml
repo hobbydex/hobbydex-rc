@@ -3,6 +3,7 @@ brand = "brand/3racing"
 number = "3RAC-BS58H5-BU"
 name = "5.8MM Hex Ball Stud L=5 (10 pcs) (Blue (Aluminium))"
 pack_qty = 10
+pack_qty_basis = "name"
 notes = "The shop lists it as 3RAC-BS58H5/BU"
 links = [
   { site = "3Racing", url = "https://3racing.shop/products/3rac-bs58h5-5-8mm-hex-ball-stud-l-5-10-pcs?variant=39328306495646" },
@@ -13,3 +14,6 @@ ball_type = "stud"
 material = "aluminium"
 color = "blue"
 range = "3racing/3rac-bs58h5-colours"
+equivalent_to = [
+  { spec = "spec/ball-end/5.8mm-stud", match = "functional" },
+]

@@ -5,9 +5,13 @@ name = "Ball Stud 4.8x5 (8pcs)"
 name_ja = "ボールスタッド 4.8x5 (8pcs)"
 notes = "English name translated by Hobbydex from Weld's Japanese shop name (name_ja)"
 pack_qty = 8
+pack_qty_basis = "name"
 links = [
   { site = "Weld online shop", url = "https://shop.weld-jp.com/eshopdo/refer/vidOD1534b.html" },
 ]
 category = "ball-end"
 ball_mm = 4.8
 ball_type = "stud"
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]

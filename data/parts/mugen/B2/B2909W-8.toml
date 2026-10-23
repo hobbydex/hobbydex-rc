@@ -3,6 +3,7 @@ brand = "brand/mugen"
 number = "B2909W-8"
 name = "2WD Front Narrow Wheels 2.2in 12mm Hex (White) 8pcs."
 pack_qty = 8
+pack_qty_basis = "name"
 notes = "Mugen prints the number as B2909W/8"
 fits = [
   { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-option-parts-page" },
@@ -14,4 +15,6 @@ color = "white"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/2WD-Front-Narrow-Wheels-2.2in-12mm-Hex-White-MSB1-8-pcs/B2909W-8" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/2WD-Front-Narrow-Wheels-2.2in-12mm-Hex-White-MSB1-8-pcs/B2909W-8" },
+]

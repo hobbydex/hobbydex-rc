@@ -4,6 +4,7 @@ number = "21697"
 name = "3.5mm Ballstuds, M2x4mm"
 gtin = "784695216976"
 pack_qty = 5
+pack_qty_basis = "page"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3-5mm-ballstuds-m2x4mm-5pcs-rkgs/" },
 ]
@@ -12,3 +13,6 @@ fits = [
 ]
 category = "ball-end"
 ball_type = "stud"
+equivalent_to = [
+  { spec = "spec/ball-end/3.5mm-stud", match = "functional" },
+]

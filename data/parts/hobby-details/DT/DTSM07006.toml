@@ -3,10 +3,13 @@ brand = "brand/hobby-details"
 number = "DTSM07006"
 name = "1/10 RC Car Antidust Nut M4 4pcs/set"
 pack_qty = 4
+pack_qty_basis = "name"
 scale = "1/10"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m4-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=81&a=view&r=800" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=81&a=view&r=800" },
+]

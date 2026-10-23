@@ -10,3 +10,6 @@ fits = [
   { kit = "kit/sworkz/s35-gt2", type = "replaces", replaces = "part/sworkz/SW-330777A", source = "doc/sworkz/s35-gt2-manual", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/sworkz/s35-gt2e", type = "replaces", replaces = "part/sworkz/SW-330777A", source = "doc/sworkz/s35-gt2e-manual", notes = "Same part in another material (link_upgrades.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/ball-end/7mm-stud", match = "functional" },
+]
