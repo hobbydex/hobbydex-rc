@@ -6,4 +6,9 @@ pack_qty = 4
 scale = "1/10"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
 category = "drivetrain"
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=99&a=view&r=802" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=99&a=view&r=802" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
