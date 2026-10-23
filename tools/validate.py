@@ -838,6 +838,10 @@ def main():
             allowed = SPEC_TYPES.get(d.get("category"), set())
             if d["type"] not in allowed:
                 errors.append(f"{path}: spec.type = {d['type']!r} not in {sorted(allowed)} for a {d.get('category')} spec")
+        if kind == "spec" and d.get("category") in ("screw", "pin"):
+            lm = d.get("length_mm")
+            if not isinstance(lm, (int, float)) or isinstance(lm, bool) or lm <= 0:
+                errors.append(f"{path}: {d['category']} spec needs length_mm above 0 (a pitch or an OCR zero is not a length)")
         if kind == "spec" and d.get("category") == "nut":
             if not re.fullmatch(r"M\d{1,2}(\.\d)?(x\d(\.\d{1,2})?)?", str(d.get("thread", ""))):
                 errors.append(f"{path}: nut spec needs a thread like \"M3\" or \"M5x0.5\"")
