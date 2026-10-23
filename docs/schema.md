@@ -327,7 +327,7 @@ brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 A brand that names the car only in the part's name (RW Racing: "Supalite Spurs
 48DP for Xray 008/009 73T") gives the car's words from the name, "Xray 008/009".
 
-`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `clip`, `cooling`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `esc`, `gear`, `glue`, `light`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin`, `pinion`, `radio`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`, `wire`. It is derived
+`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `clip`, `cooling`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `esc`, `gear`, `glue`, `light`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin`, `pinion`, `radio`, `rod-end`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `turnbuckle`, `washer-shim`, `wheel`, `wing`, `wire`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
 number have none.
@@ -348,7 +348,7 @@ a name with two materials unset), `seal` and `lubricant` for bearings (see below
 shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
 and `shaft_mm` (shaft diameter), `name_source` (`ocr`: the name was read by OCR from a scanned document and not checked yet; `manufacturer`: corrected from the manufacturer's own product page; `manual`: copied from a maker's manual as printed, read by eye), `range` (colour versions of one part share a range ending in `-colours`, e.g. "team-corally/c-00180-1055-colours" for a body in clear and four painted colours, set by tools/link_colour_variants.py; tools/link_part_colours.py then gives each version its `color` in plain words when the name states one colour of the part itself ("(blue-anodized)" -> "blue"); otherwise a shared id such as "rc4wd/540-crawler-brushed-motor" for the
 parts of one product range that differ only in wind, kV or a similar rating;
-the site lists the other versions on each part page), for ball studs and ball cups `ball_mm` (the ball
+the site lists the other versions on each part page), for ball studs, rod ends and ball cups `ball_mm` (the ball
 diameter both must share) and for balls `ball_type` (stud: has its own thread |
 nut: threaded inside, on a separate screw | through-hole: bored through, a screw
 passes through it | set-screw: has its own set screw that clamps it on an

@@ -18,7 +18,8 @@ SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(HERE)
 YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
-HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal"}   # hardware part categories
+HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal", "turnbuckle", "rod-end"}   # hardware part categories
+NO_SIZE_SPEC = {"turnbuckle", "rod-end"}   # hardware with no spec kind of their own: no size spec to link
 MAT_CATS = {"pinion", "spur-gear", "screw", "nut", "washer-shim", "pin", "bearing"}          # metal hardware: material from the name or the maker's page
 SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
 SIZE = re.compile(r"\bM\d+(?:\.\d+)?\b|\b\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?(?:\s*x\s*\d+(?:\.\d+)?)?\s*(?:mm)?\b|\b\d+(?:\.\d+)?\s*mm\b", re.I)
@@ -115,7 +116,7 @@ def near_local(a, b):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
+    out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
     lpm = os.path.join(tools, "tools", "link_part_material.py")
     if os.path.exists(lpm):   # its decide() is the rule the material linker writes by: a flag is a value it would set
         spec = importlib.util.spec_from_file_location("link_part_material", lpm)
@@ -154,6 +155,7 @@ def load_tools(tools):
         try:
             spec.loader.exec_module(mod)
             out["classify"] = mod.classify
+            out["ball_end"] = mod.ball_end_kind
             out["with_fasteners"] = mod.with_fasteners
             out["fastener_cats"] = mod.FASTENER_CATS
             global _TARGET, _KEEP
@@ -700,7 +702,13 @@ def main():
     else:
         results["spec-no-bag-drawing"] = {"fix": "hobbydex site not found (--site)", "count": None, "examples": [], "all": []}
 
-    unspec = [p for p in parts if p.get("category") in HW and not has_spec(p) and SIZE.search(p.get("name", ""))]
+    # only real ball ends (ball studs, pivot balls, balls) take a ball spec: a ball-end name that is a link, rod end or turnbuckle
+    # is no ball end, and turnbuckles and rod ends have no spec kind
+    be = tools["ball_end"]
+    def real_ball_end(p):
+        return p.get("category") != "ball-end" or be is None or be(p.get("name", "")) == "ball-end"
+    unspec = [p for p in parts if p.get("category") in HW and p.get("category") not in NO_SIZE_SPEC and not has_spec(p)
+              and SIZE.search(p.get("name", "")) and real_ball_end(p)]
     check("hw-size-no-spec", "link the part to the spec of its size (equivalent_to, match functional), or add that spec",
           unspec, per_brand=per_brand(unspec))
 
