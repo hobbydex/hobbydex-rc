@@ -186,6 +186,20 @@ def load_tools(tools):
     cache = os.path.join(tools, "cache")
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
+    # the Tamiya hardware photo reader (its cache lookups; it reads no photo itself in the audit)
+    hw = os.path.join(tools, "tools", "link_hw_photo_finish.py")
+    out["hwphoto"] = None
+    if os.path.exists(hw):
+        spec = importlib.util.spec_from_file_location("link_hw_photo_finish", hw)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.dirname(hw))
+        try:
+            spec.loader.exec_module(mod)
+            out["hwphoto"] = mod
+        except Exception as e:  # the audit still runs without it
+            print(f"note: link_hw_photo_finish not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.dirname(hw))
     return out
 
 
@@ -568,6 +582,13 @@ def main():
                     stated.append(p)
         check("hw-no-material", "run tools/link_part_material.py in hobbydex-tools (it sets the material the name or the maker's page states, and reports the conflicts)",
               stated, per_brand=per_brand(stated))
+
+    # 29b. Tamiya metal hardware with no colour whose product photo is cached and not read yet
+    if tools["hwphoto"]:
+        hw = tools["hwphoto"]
+        unread = [p for p in parts if hw.unread_photo(p)]
+        check("tamiya-hw-no-colour-photo", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour by hand from the photo",
+              unread, per_brand=per_brand(unread))
 
     idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
     if os.path.exists(idx_path):
