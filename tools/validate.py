@@ -58,7 +58,7 @@ YOUTUBE_CHANNEL = re.compile(r"https://www\.youtube\.com/@[A-Za-z0-9._-]+")
 
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
-    "release.kind": {"kit", "rtr", "arr"},
+    "release.kind": {"kit", "rtr", "arr", "roller"},
     # kit types (docs/schema.md "kit"); the site gives each a label and an icon (hobbydex src/lib/kitTypes.ts)
     "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "race-truck",
                      "crawler", "touring", "formula", "pan-car", "rally", "street-basher", "drift", "drag", "lowrider", "trailer",
@@ -476,7 +476,9 @@ def main():
                         if key in ENUMS and vv not in ENUMS[key]:
                             errors.append(f"{path}: {key} = {vv!r} not in {sorted(ENUMS[key])}")
             key = f"{kind}.{k}"
-            if key in ENUMS and v not in ENUMS[key]:
+            if key == "release.kind" and v not in ENUMS[key]:
+                errors.append(f"{path}: release kind {v!r} is not kit, rtr, arr or roller (docs/schema.md \"release\")")
+            elif key in ENUMS and v not in ENUMS[key]:
                 errors.append(f"{path}: {key} = {v!r} not in {sorted(ENUMS[key])}")
         # a fit narrowed to the releases the maker lists the part for (releases of that kit, at least one), or to a car
         for i, f in enumerate(d.get("fits", []) if kind == "part" else []):
