@@ -624,6 +624,13 @@ def main():
     by_id_all = {p["id"]: p for p in parts}
     check("pack-photo-disagrees", "look at the photo and the maker's text; the text count stands (tools/photo_chain.py lists them in cache/notes/pack-evidence/photo-disagreements.tsv)",
           [by_id_all[i] for i in sorted(ids) if i in by_id_all])
+    wrong = os.path.join(os.path.abspath(args.tools), "cache", "notes", "review", "wrong-photos.tsv")
+    wp = set()
+    if os.path.exists(wrong):
+        with open(wrong, encoding="utf-8") as f:
+            wp = {ln.split("\t")[0] for ln in f if ln.strip()}
+    check("pack-wrong-photo", "the owner marked the mapped photo as not the part's: fix the photo mapping (tools/link_hw_photo_finish.py gallery_for/photo_for) for the part",
+          [by_id_all[i] for i in sorted(wp) if i in by_id_all])
     rel = os.path.join(os.path.abspath(args.tools), "tools", "data", "photo_pack_reliability.tsv")
     ok_brands, known = set(), False
     if os.path.exists(rel):
