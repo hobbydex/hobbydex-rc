@@ -9,3 +9,7 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13837-19808189", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

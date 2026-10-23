@@ -5,3 +5,7 @@ name = "Countersunk screw 3x35 mm"
 name_fr = "Vis tête fraisée 3x35mm"
 source = "doc/t2m/t2m-shop"
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4975/86."
+equivalent_to = [
+  { spec = "spec/screw/m3x35-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

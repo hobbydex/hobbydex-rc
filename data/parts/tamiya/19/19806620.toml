@@ -5,3 +5,7 @@ name = "3x26mm Screw"
 ocr_names = ["3x26mm Sorew"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x26-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

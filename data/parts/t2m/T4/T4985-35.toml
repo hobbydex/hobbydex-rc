@@ -7,3 +7,7 @@ source = "doc/t2m/t2m-shop"
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4985/35."
 pack_qty = 8
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x13-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"
