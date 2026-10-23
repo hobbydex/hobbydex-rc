@@ -289,7 +289,7 @@ including variant suffixes (`368014-S`, `362280-K`). `name` is the description
 from the newest source, verbatim apart from trademark glyphs and quote
 normalisation; the trailing pack count `(10)` is moved into `pack_qty`. Older
 differing descriptions go to `former_names` so a rename or a spec change
-(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
+(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. A name read by OCR from a manual, and a manual's bag callout (`(BBS x10)`), is never a former name. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
 ```toml
 id = "part/xray/362250"
