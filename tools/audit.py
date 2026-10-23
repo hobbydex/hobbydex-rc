@@ -8,16 +8,24 @@ fix. The full list of one check: --list NAME. JSON for scripts: --json FILE.
     python3 -I tools/audit.py                    # ranked summary
     python3 -I tools/audit.py --list manual-unlinked
     python3 -I tools/audit.py --json work/audit.json
-    python3 -I tools/audit.py --tools ../hobbydex-tools
+    python3 -I tools/audit.py --tools ../hobbydex-tools --site ../hobbydex
 
 Exit code 0 always: this is a to-do list. Runs in well under five minutes.
 """
-import argparse, collections, importlib.util, json, os, re, sys, tomllib
+import argparse, collections, csv, glob, importlib.util, json, os, re, sys, tomllib
 
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(HERE)
 YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
+HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal"}   # hardware part categories
+SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
+SIZE = re.compile(r"\bM\d+(?:\.\d+)?\b|\b\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?(?:\s*x\s*\d+(?:\.\d+)?)?\s*(?:mm)?\b|\b\d+(?:\.\d+)?\s*mm\b", re.I)
+CALLOUT_PAREN = re.compile(r"\(\s*[A-Z][A-Z0-9-]*\s+x\s*\d+\s*\)")   # (CODE xN): a space before the x, so not a size (BM3x15)
+CALLOUT_JOINED = re.compile(r"\b[A-Z]{2,3}x\d{1,2}\b")                      # CODExN: letters then x and a count (RSx3, BSx2)
+PCS = re.compile(r"\b\d+\s*pcs?\b", re.I)
+PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
+CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
 BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re.I)
 SCRAP_IMG = re.compile(r"https?://[^\s\"')]*rcscrapyard[^\s\"')]*\.(jpe?g|png|gif|webp)", re.I)
 LOCAL_PATH = re.compile(r"(^|[\s\"'(=])(/home/|/Users/|/tmp/|file://|[A-Za-z]:\\|work/manuals/|cache/)")
@@ -66,9 +74,36 @@ def walk_strings(v):
             yield from walk_strings(x)
 
 
+_CLS = None
+
+
+def _classify_one(name):
+    return _CLS(name)
+
+
+def classify_all(cls, names):
+    """cls over the names in forked workers: the classifier is regex-heavy and one process takes about a minute."""
+    global _CLS
+    _CLS = cls   # set before the fork, so the workers inherit it
+    try:
+        import multiprocessing as mp
+        with mp.get_context("fork").Pool(min(8, os.cpu_count() or 1)) as pool:
+            return pool.map(_classify_one, names, chunksize=4000)
+    except (ValueError, OSError):   # no fork here: one process
+        return [cls(n) for n in names]
+
+
+def near_local(a, b):
+    """b is a's number with one or two digits off, each off digit a confusable pair (same length)."""
+    if len(a) != len(b) or a == b:
+        return False
+    diff = [frozenset((x, y)) for x, y in zip(a, b) if x != y]
+    return len(diff) <= 2 and all(p in CONFUSABLE for p in diff)
+
+
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None}
+    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None}
     cls = os.path.join(tools, "tools", "classify_parts.py")
     if os.path.exists(cls):
         spec = importlib.util.spec_from_file_location("classify_parts", cls)
@@ -81,6 +116,21 @@ def load_tools(tools):
             print(f"note: classifier not loaded ({e})", file=sys.stderr)
         finally:
             sys.path.remove(HERE)
+    ocr = os.path.join(tools, "tools", "ocr_numbers.py")
+    if os.path.exists(ocr):
+        spec = importlib.util.spec_from_file_location("ocr_numbers", ocr)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.dirname(ocr))   # ocr_numbers imports paths.py from the tools
+        try:
+            spec.loader.exec_module(mod)
+            out["near"] = mod.near
+        except Exception as e:  # the local rule (near_local) is used instead
+            print(f"note: ocr_numbers not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.dirname(ocr))
+    tamico = os.path.join(tools, "cache", "notes", "tamiya", "tamico-names.tsv")
+    if os.path.exists(tamico):
+        out["tamico"] = tamico
     srcdir = os.path.join(tools, "tools", "art", "sources")
     if os.path.isdir(srcdir):
         items = []
@@ -98,6 +148,7 @@ def load_tools(tools):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--tools", default=os.path.join(RC, "..", "hobbydex-tools"))
+    ap.add_argument("--site", default=os.path.join(RC, "..", "hobbydex"), help="the site checkout (its hardware drawings)")
     ap.add_argument("--list", metavar="CHECK", help="every id one check flags")
     ap.add_argument("--json", metavar="FILE", help="write the full result as JSON")
     ap.add_argument("--examples", type=int, default=5)
@@ -259,10 +310,8 @@ def main():
         cls = tools["classify"]
         moves = collections.Counter()
         drift = collections.defaultdict(list)
-        for p in parts:
-            if p.get("category_source") == "curated" or p["name"] == (p.get("number") or ""):
-                continue
-            new = cls(p["name"])
+        cands = [p for p in parts if not (p.get("category_source") == "curated" or p["name"] == (p.get("number") or ""))]
+        for p, new in zip(cands, classify_all(cls, [p["name"] for p in cands])):
             if new is None:
                 continue
             new = new or None
@@ -420,6 +469,112 @@ def main():
             clash.append(r)
     check("release-two-gear-pitches", "mark the other pitch as option or listed: the release's own parts list or exploded view says which one is in the box", clash)
 
+    # 29-38. hardware bags, names, release boxes and the /tmp inodes
+    brand_of = lambda x: x.get("brand", "").split("/")[-1]
+    per_brand = lambda items: collections.Counter(brand_of(x) for x in items).most_common()
+
+    def has_spec(p):
+        return any(e.get("spec") for e in p.get("equivalent_to", [])) or any(i.get("spec") for i in p.get("includes", []))
+
+    no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes")]
+    check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes",
+          no_pack, per_brand=per_brand(no_pack))
+
+    idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
+    if os.path.exists(idx_path):
+        with open(idx_path, encoding="utf-8") as f:
+            drawn = set(json.load(f))
+        spec_links = collections.defaultdict(set)   # spec id -> parts that link to it
+        for p in parts:
+            for e in p.get("equivalent_to", []):
+                if e.get("spec"):
+                    spec_links[e["spec"]].add(p["id"])
+            for i in p.get("includes", []):
+                if i.get("spec"):
+                    spec_links[i["spec"]].add(p["id"])
+        undrawn = []
+        for s in db["specs"]:
+            if s.get("category") not in SPEC_CATS:
+                continue
+            key = s["id"].removeprefix("spec/").replace("#", "-")   # hardwareBag.ts: the index key
+            if key not in drawn and key + "-flat" not in drawn:
+                undrawn.append(s)
+        undrawn.sort(key=lambda s: -len(spec_links[s["id"]]))
+        cats = collections.defaultdict(lambda: [0, 0])
+        for s in undrawn:
+            cats[s["category"]][0] += 1
+            cats[s["category"]][1] += len(spec_links[s["id"]])
+        check("spec-no-bag-drawing", "draw the spec's bag drawing (tools/hardware/make_more_drawings.py in hobbydex-tools) so the parts linked to it can show a bag",
+              undrawn, breakdown=("category", [f"{c} {n} specs, {k} parts" for c, (n, k) in sorted(cats.items(), key=lambda kv: -kv[1][1])]))
+        results["spec-no-bag-drawing"]["examples"] = [{"id": f"{s['id']} ({len(spec_links[s['id']])} parts)", "url": SITE + "/rc/"} for s in undrawn[:args.examples]]
+    else:
+        results["spec-no-bag-drawing"] = {"fix": "hobbydex site not found (--site)", "count": None, "examples": [], "all": []}
+
+    unspec = [p for p in parts if p.get("category") in HW and not has_spec(p) and SIZE.search(p.get("name", ""))]
+    check("hw-size-no-spec", "link the part to the spec of its size (equivalent_to, match functional), or add that spec",
+          unspec, per_brand=per_brand(unspec))
+
+    callouts = [p for p in parts if CALLOUT_PAREN.search(p.get("name", "")) or CALLOUT_JOINED.search(p.get("name", "")) or PCS.search(p.get("name", ""))]
+    kinds = collections.Counter()
+    for p in callouts:
+        n = p.get("name", "")
+        kinds["(CODE xN)"] += bool(CALLOUT_PAREN.search(n))
+        kinds["CODExN"] += bool(CALLOUT_JOINED.search(n))
+        kinds["Npcs"] += bool(PCS.search(n))
+    check("name-callout-or-count", "strip the manual callout or count from the name (a count belongs in pack_qty, a callout in the release's notes)",
+          callouts, per_brand=per_brand(callouts), breakdown=("pattern", [f"{k} {v}" for k, v in kinds.items()]))
+
+    if tools["tamico"] and tools["classify"]:
+        cls = tools["classify"]
+        dealer = collections.defaultdict(set)   # part id -> kinds the dealer's German or English name gives
+        with open(tools["tamico"], encoding="utf-8") as f:
+            for row in csv.DictReader(f, delimiter="\t"):
+                kind = cls(row["tamico_name"])
+                if kind:
+                    dealer[row["part"]].add(kind)
+        clash = [p for p in parts if p["id"] in dealer and p.get("name_source") == "ocr" and p.get("category")
+                 and any(k != p["category"] for k in dealer[p["id"]])]
+        check("ocr-kind-vs-dealer", "compare the part's category with the dealer's name: fix the category, or the OCR name if the scan misread it",
+              clash, per_brand=per_brand(clash))
+
+    near = tools["near"] or near_local
+    by_name = collections.defaultdict(list)   # (brand, name) of OCR-named parts -> parts
+    for p in parts:
+        if p.get("name_source") == "ocr" and p.get("number"):
+            by_name[(brand_of(p), p["name"].strip().lower())].append(p)
+    twins = []
+    for group in by_name.values():
+        for i, a in enumerate(group):
+            for b in group[i + 1:]:
+                if near(str(a["number"]), str(b["number"])):
+                    twins.append((a, b))
+    check("ocr-number-twins", "settle the number: the scan's digit may be misread (5/6, 3/8, 0/8, 1/7); check the maker's page and fold the wrong one into the right one",
+          [x["id"] for pair in twins for x in pair], count=len(twins), per_brand=per_brand([a for a, _ in twins]))
+    results["ocr-number-twins"]["examples"] = [{"id": f"{a['id']} ~ {b['id']}", "url": url_for(a)} for a, b in twins[:args.examples]]
+
+    wire = [p for p in parts if p.get("category") == "wire" and PLUG.search(p.get("name", "")) and not p.get("connectors")]
+    check("wire-plug-no-connectors", "set connectors to the plugs the lead carries (from the name or the maker's page)", wire, per_brand=per_brand(wire))
+
+    bat = [p for p in parts if p.get("category") in ("battery", "esc") and not p.get("connector")]
+    check("battery-esc-no-connector", "set connector to the plug the pack or ESC uses (from the maker's page or manual)", bat, per_brand=per_brand(bat))
+
+    hw_box = []
+    for r in rels:
+        if r.get("kind") != "kit" or not any(docs.get(d, {}).get("kind") in ("manual", "exploded_view") for d in r.get("documents", [])):
+            continue
+        n = sum(1 for c in r.get("contains", []) if c.get("role") == "kit" and part_of.get(c["part"], {}).get("category") in HW)
+        if n < 10:
+            hw_box.append(r)
+    check("kit-box-few-hardware", "read the box's hardware from the manual or exploded view into contains (role kit): fewer than 10 hardware rows here",
+          hw_box, per_brand=per_brand(hw_box))
+
+    st = os.statvfs("/tmp")
+    used = 100 * (st.f_files - st.f_ffree) / st.f_files if st.f_files else 0.0
+    scratch = sorted(((sum(len(fs) for _, _, fs in os.walk(sp)), sp) for sp in glob.glob(f"/tmp/claude-{os.getuid()}/*/*/scratchpad")), reverse=True)
+    check("tmp-inodes", "/tmp is above 50% of its inodes: delete the scratchpad folders listed (tmpfs; builds and big exports go on disk)",
+          [], count=int(used > 50), detail=f"/tmp inodes {used:.1f}% used ({st.f_files - st.f_ffree} of {st.f_files})")
+    results["tmp-inodes"]["examples"] = [{"id": f"{n} files {sp}", "url": ""} for n, sp in scratch[:args.examples]]
+
     ranked = sorted((n for n in results if results[n]["count"]), key=lambda n: -results[n]["count"])
     skipped = [n for n in results if results[n]["count"] is None]
     if args.list:
@@ -430,18 +585,26 @@ def main():
     for n in ranked:
         r = results[n]
         print(f"{n:34} {r['count']:>7}  " + "  ".join(e["id"] for e in r["examples"]))
+        if r.get("detail"):
+            print(f"{'':34} {'':>7}    {r['detail']}")
+        if r.get("breakdown"):
+            label, rows = r["breakdown"]
+            print(f"{'':34} {'':>7}    by {label}: " + "; ".join(rows[:15]))
         if r.get("per_brand"):
-            pass
+            print(f"{'':34} {'':>7}    per brand: " + ", ".join(f"{b} {c}" for b, c in r["per_brand"][:15]))
         for e in r["examples"][:args.examples]:
-            print(f"{'':34} {'':>7}    {e['url']}")
+            if e["url"]:
+                print(f"{'':34} {'':>7}    {e['url']}")
+            else:
+                print(f"{'':34} {'':>7}    {e['id']}")
         print(f"{'':34} {'':>7}    fix: {r['fix']}")
         if n == "classifier-drift":
             for k, v in results[n]["transitions"]:
                 print(f"{'':34} {'':>7}    {k}: {v}")
         if n == "art-missing-photo":
             print(f"{'':34} {'':>7}    skip reasons: {results[n]['skip_reasons']}")
-        if n == "release-no-product-page":
-            print(f"{'':34} {'':>7}    per brand: {results[n]['per_brand'][:12]}")
+    for n in [n for n in results if results[n]["count"] == 0 and results[n].get("detail")]:
+        print(f"{n:34} {'ok':>7}  {results[n]['detail']}")
     for n in skipped:
         print(f"{n:34} {'skipped':>7}  {results[n]['fix']}")
     if args.json:
