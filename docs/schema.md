@@ -568,6 +568,10 @@ rebrand_of = [{ part = "part/flysky/FS-GT5", source = "doc/community/2026-10-10-
 translation (Yokomo, ABC Hobby, Wrap-Up Next, EXceed and O.S. Engines publish Japanese-only names;
 tools/translate_ja.py gives them the English name, with a note).
 
+`name_fr`: the brand's French name, kept when the English `name` is a
+translation (T2M and Hobbytech publish French-only names; tools/translate_fr.py
+gives them the English name from tools/data/translate_fr_names.tsv, with a note).
+
 `related`: other parts of the same brand this part goes with, as the brand's
 name or page says: `[{ part, relation }]` with relation requires (needs the
 other part: Tekno "requires TKR9057B"), fits (made to fit that part: Corally

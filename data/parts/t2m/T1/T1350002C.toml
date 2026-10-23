@@ -1,7 +1,8 @@
 id = "part/t2m/T1350002C"
 brand = "brand/t2m"
 number = "T1350002C"
-name = "Accu LiPo 2S 7.4V 5000 mAh + adapt."
+name = "LiPo battery 2S 7.4V 5000 mAh + adapter"
+name_fr = "Accu LiPo 2S 7.4V 5000 mAh + adapt."
 source = "doc/t2m/t2m-shop"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
@@ -10,3 +11,4 @@ chemistry = "lipo"
 cells = 2
 capacity_mah = 5000
 category = "battery"
+notes = "English translated by Hobbydex from the maker's French name (name_fr)"
