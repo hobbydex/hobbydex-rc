@@ -13,3 +13,6 @@ ball_type = "through-hole"
 fits = [
   { kit = "kit/redcat/gen8", type = "direct", source = "doc/redcat/store" },
 ]
+equivalent_to = [
+  { spec = "spec/ball-end/5.9mm-through-hole", match = "functional" },
+]

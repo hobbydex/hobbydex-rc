@@ -3,6 +3,7 @@ brand = "brand/3racing"
 number = "3RAC-BS48H5-PU"
 name = "4.8MM Hex Ball Stud L=5 (10 pcs) (Purple (Aluminium))"
 pack_qty = 10
+pack_qty_basis = "name"
 notes = "The shop lists it as 3RAC-BS48H5/PU"
 links = [
   { site = "3Racing", url = "https://3racing.shop/products/3rac-bs48h5-4-8mm-hex-ball-stud-l-5-10-pcs?variant=39328258556062" },
@@ -13,3 +14,6 @@ ball_type = "stud"
 material = "aluminium"
 color = "purple"
 range = "3racing/3rac-bs48h5-colours"
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]
