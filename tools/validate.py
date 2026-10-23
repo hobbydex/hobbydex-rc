@@ -661,6 +661,14 @@ def main():
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
+        bc = d.get("balance_connector") if kind == "part" else None
+        if bc is not None:
+            nc = d.get("cells")
+            if d.get("category") != "battery" or not isinstance(bc, str) or not bc.strip():
+                errors.append(f"{path}: balance_connector only on batteries, as a plug name (JST-XH)")
+            elif bc == "JST-XH" and not (isinstance(nc, int) and not isinstance(nc, bool) and 1 <= nc <= 8
+                                         and os.path.exists(os.path.join(ROOT, "specs", "connector", f"jst-xh-{nc + 1}.toml"))):
+                errors.append(f"{path}: balance_connector JST-XH needs cells 1..8 (the spec jst-xh-<cells+1> must exist)")
         se = d.get("sensored") if kind == "part" else None
         if se is not None and (not isinstance(se, bool) or d.get("category") not in ("motor", "esc", "electronics")):
             errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category esc; motor and electronics systems too)")
