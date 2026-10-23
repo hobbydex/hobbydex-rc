@@ -9,3 +9,6 @@ fits = [
   { kit = "kit/hpi/pulse", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },
+]
