@@ -103,7 +103,13 @@ def near_local(a, b):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None}
+    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "packqty": None}
+    pq = os.path.join(tools, "tools", "packqty.py")
+    if os.path.exists(pq):   # the count reader the importers use (a name's "(2)", "2pcs", "1 pair")
+        spec = importlib.util.spec_from_file_location("packqty", pq)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out["packqty"] = mod
     cls = os.path.join(tools, "tools", "classify_parts.py")
     if os.path.exists(cls):
         spec = importlib.util.spec_from_file_location("classify_parts", cls)
@@ -459,6 +465,12 @@ def main():
     check("release-no-contents", "read the release's parts list into contains (or note there is none)", [r for r in rels if not r.get("contains")])
     used_specs = {e["spec"] for p in parts for e in p.get("equivalent_to", [])}
     check("spec-unlinked", "link a part to the spec, or retire the spec", [s for s in db["specs"] if s["id"] not in used_specs])
+
+    # 26b. a count the name states that the part has no pack_qty for (a name that keeps the maker's count is fine)
+    if tools["packqty"]:
+        gap = [p for p in parts if "pack_qty" not in p and tools["packqty"].from_name(p.get("name", ""))]
+        check("name-count-no-pack-qty", "set pack_qty from the count the name states: rerun the importer that wrote the part (it sets pack_qty from its name) or tools/link_pack_qty.py in hobbydex-tools",
+              gap, per_brand=collections.Counter(p["brand"].split("/")[-1] for p in gap).most_common(12))
 
     # 27. video docs whose release has a product page with gallery videos not attached: skipped (needs fetched pages)
     results["video-gallery-unattached"] = {"fix": "not checked: needs the cached product pages parsed for gallery video IDs", "count": None, "examples": [], "all": [], "skipped": True}
