@@ -6,3 +6,7 @@ pack_qty = 4
 fits = [
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
 ]
+category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
