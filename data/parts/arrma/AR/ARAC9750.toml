@@ -22,9 +22,6 @@ fits = [
 ]
 former_ids = ["part/arrma/AR708003"]
 numbers = ["AR708003"]
-equivalent_to = [
-  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Serrated flange nut from the name; the M4 thread is the one Horizon Hobby's page states" },
-]
 related = [
   { part = "part/arrma/ARA-1382", relation = "use-with" },
   { part = "part/arrma/ARA-2981", relation = "use-with" },
@@ -50,4 +47,7 @@ related = [
   { part = "part/arrma/ARAC9443", relation = "use-with" },
   { part = "part/arrma/ARAC9472", relation = "use-with" },
   { part = "part/arrma/ARAC9473", relation = "use-with" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
