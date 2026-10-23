@@ -6,3 +6,6 @@ name_source = "ocr"
 pack_qty = 4
 notes = "Read by OCR from an MST manual parts list"
 category = "o-ring-seal"
+equivalent_to = [
+  { spec = "spec/o-ring/4.5x1", match = "functional" },
+]

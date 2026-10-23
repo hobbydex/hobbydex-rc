@@ -10,4 +10,9 @@ category = "ball-end"
 ball_mm = 5.5
 ball_type = "stud"
 material = "titanium"
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/Titanium-5.5-Ball-Studs-6mm/B2136-6" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/Titanium-5.5-Ball-Studs-6mm/B2136-6" },
+]
+equivalent_to = [
+  { spec = "spec/ball-end/6mm-stud", match = "functional" },
+]
