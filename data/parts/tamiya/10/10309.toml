@@ -7,6 +7,7 @@ ocr_names = ["2mm Washer", "2x6mm Washer", "Rondalle (petit)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "washer-shim"
+equivalent_to = [{ spec = "spec/washer/2.2x4.5x0.3", match = "close", notes = "Closest standard size; Tamiya cites no standard; outer diameter measured from the manual drawing (doc/tamiya/56376-manual): 4.3 mm" }]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18198-10309", kind = "fan-site" },
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/10309/index.html" },
