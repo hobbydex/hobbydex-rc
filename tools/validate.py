@@ -268,6 +268,34 @@ def check_names_no_brand(docs, errors):
         if bn and isinstance(name, str) and re.match(re.escape(bn) + " ", name, re.I):
             errors.append(f"{path}: name {name!r} repeats the brand {bn!r}; the site prints it in front (docs/schema.md \"{kind}\")")
 
+# A pack count, a set or part number and punctuation are not part of a name (former_names_problems)
+NAME_COUNT = re.compile(r"\(\s*\d+\s*(?:pcs?\.?|pieces?|ea)?\s*\)|\b\d+\s*(?:pcs?\.?|pieces?|ea)\b|(?<![a-z0-9])x\d+\b", re.I)
+NAME_NUMBER = re.compile(r"\b\d{5,}\b")
+
+def name_key(name):
+    s = NAME_COUNT.sub(" ", name.lower())
+    return re.sub(r"[^a-z0-9]+", " ", NAME_NUMBER.sub(" ", s)).strip()
+
+def former_names_problems(part):
+    """The former_names entries a part may not keep: the part's own name again once counts, numbers and
+    punctuation go, and a repeat of an earlier entry (case and spacing ignored). docs/schema.md "part"."""
+    cur = name_key(part.get("name", "") or "")
+    seen, bad = set(), []
+    for n in part.get("former_names", []) or []:
+        if not isinstance(n, str):
+            continue
+        norm = re.sub(r"\s+", " ", n).strip().lower()
+        if (cur and name_key(n) == cur) or norm in seen:
+            bad.append(n)
+        seen.add(norm)
+    return bad
+
+def check_former_names(docs, errors):
+    for path, kind, d in docs:
+        if kind == "part":
+            for n in former_names_problems(d):
+                errors.append(f"{path}: former name {n!r} is the part's name again (a pack count, a set number) or listed twice; a former name is a different name the maker published (docs/schema.md \"part\")")
+
 def check_dealer_links(docs, errors):
     """A dealer link (a links entry with kind "dealer", a reseller's product page) is a fallback: a release or part
     with a dealer link has no maker product link (a links entry with no kind) and no maker product page (a
@@ -958,6 +986,7 @@ def main():
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
     check_names_no_brand(docs, errors)
+    check_former_names(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:
