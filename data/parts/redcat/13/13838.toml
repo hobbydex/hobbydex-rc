@@ -8,7 +8,11 @@ applies_to = "EVEREST GEN7 PRO, EVEREST GEN7 SPORT, GEN8 SCOUT II, Gen8 V2"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/13838" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x10-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 fits = [
   { kit = "kit/redcat/gen8", type = "direct", source = "doc/redcat/store" },
 ]

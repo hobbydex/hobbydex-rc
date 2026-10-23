@@ -114,6 +114,7 @@ PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent
 # spec.type per spec category (docs/schema.md: bearing types, nut types)
 SPEC_TYPES = {
     "bearing": {"radial-ball", "flanged", "thrust"},
+    "pin": {"screw"},   # screw pins: a smooth pin with a head and a short thread (docs/schema.md "Pin specs")
     "nut": {"hex", "nylon-lock", "metal-lock", "lock", "flanged", "flanged-lock", "flanged-nylon-lock", "serrated-flange",
             "serrated-flange-nylon-lock", "dome", "flanged-dome", "square", "knurled", "wing", "wheel"},
 }
@@ -823,6 +824,16 @@ def main():
                 sid = f"spec/washer/{d['shape'] + '-' if d.get('shape') not in (None, 'flat') else ''}{b}x{o}x{t}"
                 if d["id"] != sid:
                     errors.append(f"{path}: washer spec id should be {sid} (shape prefix, then bore x outer x thickness)")
+        if kind == "spec" and d.get("category") == "pin" and d.get("type") == "screw":
+            dm, lm = d.get("diameter_mm"), d.get("length_mm")
+            if not all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in (dm, lm)):
+                errors.append(f"{path}: screw pin spec needs diameter_mm and length_mm in millimetres")
+            elif d["id"] != f"spec/pin/{dm:g}x{lm:g}-screw":
+                errors.append(f"{path}: screw pin spec id should be spec/pin/{dm:g}x{lm:g}-screw")
+            if "thread" in d and d["thread"] != f"M{dm:g}":
+                errors.append(f"{path}: screw pin thread {d['thread']!r} should be M{dm:g} (the diameter) unless the name states another, which is not yet in the data")
+        elif kind == "spec" and d.get("category") == "pin" and "thread" in d:
+            errors.append(f"{path}: thread only on screw pin specs (type screw)")
         if kind == "spec" and d.get("category") == "bearing":
             fields = [k for k in ("flange_mm", "flange_width_mm", "flange_source") if k in d]
             if fields and d.get("type") != "flanged":

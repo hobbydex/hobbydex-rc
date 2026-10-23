@@ -3,7 +3,11 @@ brand = "brand/kyosho"
 number = "RS31"
 name = "3x46mm Screw Pin"
 status = "discontinued"
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x46-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 documents = ["doc/kyosho/rs31-product-page"]
 fits = [
   { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/30072-ep-ultimarb-sports-p" },
