@@ -597,6 +597,9 @@ def main():
         rg = d.get("range") if kind == "part" else None
         if rg is not None and not (isinstance(rg, str) and re.fullmatch(r"[a-z0-9-]+/[a-z0-9.-]+", rg) and rg.split("/")[0] == d["brand"].split("/")[1]):
             errors.append(f"{path}: range {rg!r} should be <brand slug>/<slug> of the part's own brand")
+        on = d.get("ocr_names") if kind == "part" else None
+        if on is not None and not (isinstance(on, list) and all(isinstance(x, str) and x and x == x.strip() for x in on)):
+            errors.append(f"{path}: ocr_names should be a list of strings (names read by OCR, hidden from the site, kept for the matchers)")
         if kind == "release":
             this_year = datetime.date.today().year
             if isinstance(d.get("year"), int) and d["year"] > this_year and d.get("status") == "released":
