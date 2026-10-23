@@ -3,12 +3,14 @@ brand = "brand/tamiya"
 number = "19805575"
 name = "3x18mm Tapping Screw"
 ocr_names = ["13x18mm Tapping Screw (Silver)"]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. Silver, 2 per bag (checked by hand)."
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/5722-19805575", kind = "fan-site" },
 ]
 point = "flat"
 category = "screw"
+pack_qty = 2
+finish = "bright zinc"
 name_source = "ocr"
 equivalent_to = [
   { spec = "spec/screw/m3x18-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
