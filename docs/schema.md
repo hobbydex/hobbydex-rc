@@ -947,6 +947,59 @@ name = "3mm E-clip"
 shaft_mm = 3
 ```
 
+### Ball-end specs
+
+`spec/ball-end/<ball>mm-<type>[-<thread>][-h<height>]` (category "ball-end"):
+`ball_mm` (the ball diameter, 3 to 14 mm), `type` (stud | nut | through-hole |
+set-screw) and, where the name states them, `thread` ("M3", a metric diameter
+from M2 to M6) and `height_mm` (the ball's height from "H=8.7"). The type is
+read as tools/link_ball_size.py reads it; a name with a stated thread that is
+no nut, hole or set screw is a stud. The ball size is one size in the name:
+"D=4.9" when the name gives it, otherwise the one size a ball word follows.
+Length ("L=6") and the drive size ("2mm Hex") are not in the spec. Parts link
+with match "functional" (set by tools/link_ball_end_specs.py). Turnbuckles,
+links, rod ends, cups and sets are not ball ends.
+
+```toml
+id = "spec/ball-end/4.9mm-stud-m3"
+category = "ball-end"
+name = "4.9mm ball stud, M3 thread"
+ball_mm = 4.9
+type = "stud"
+thread = "M3"
+```
+
+### O-ring specs
+
+`spec/o-ring/<inner>x<cross>` (category "o-ring"): `inner_mm` (the inside
+diameter) and `cross_mm` (the cross section), both as the maker writes them in
+the name: "O-RING 10 x 1.5" is spec/o-ring/10x1.5. The cross section is always
+thinner than the inside diameter. Parts link with match "functional"
+(tools/link_oring_specs.py). X-rings, gaskets, bladders, boots and sets of
+several sizes are not O-rings for this purpose.
+
+```toml
+id = "spec/o-ring/10x1.5"
+category = "o-ring"
+name = "10 x 1.5mm O-ring"
+inner_mm = 10
+cross_mm = 1.5
+```
+
+### Circlip specs
+
+`spec/circlip/<shaft>mm[-<thickness>]` (category "circlip"): a C-clip, Seger
+clip or circlip named by the shaft it fits (`shaft_mm`), with `thickness_mm`
+when the name gives one ("Seger clip 12x1.0" is spec/circlip/12mm-1). Circlips
+are a different standard from E-clips, so they have their own category and no
+DIN 6799 fields. Parts link with match "functional", or "close" when the name
+says thin or HD (tools/link_circlip_specs.py). Body clips are sized by their
+post, not a shaft, and get no spec.
+
+Size specs of the three kinds above are written only when the size occurs on
+at least two parts; a size on one part stays unlinked until a second part
+shows it.
+
 ### Connector specs
 
 `spec/connector/<slug>` (category "connector"): one connector family and
