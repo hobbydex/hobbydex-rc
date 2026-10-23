@@ -194,6 +194,13 @@ def main():
             hits.append(k)
     check("platform-year-name", "rename the platform after its oldest release (the year lives on the release); keep the old id in former_ids", hits)
 
+    # 1b. former names the rule rejects (validate.former_names_problems): must stay 0
+    sys.path.insert(0, HERE)
+    import validate
+    check("former-name-restates", "drop the entry: it is the part's name again with a pack count or set number, or listed twice (former_names.store() in hobbydex-tools)",
+          [p for p in parts if validate.former_names_problems(p)],
+          count=sum(len(validate.former_names_problems(p)) for p in parts))
+
     # 2. release date marker "?" (a *_doubt reason shows as "?" in the date column)
     check("date-marker-question", "the ? sits in the date column of a narrow table: shorten the reason or move it to the release notes, and confirm the date",
           [r for r in rels if any(k in r for k in ("year_doubt", "released_doubt", "announced_doubt"))])
