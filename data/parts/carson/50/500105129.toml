@@ -2,10 +2,13 @@ id = "part/carson/500105129"
 brand = "brand/carson"
 number = "500105129"
 name = "Wheel axle set (2) CV-10"
-pack_qty = 2
-pack_qty_basis = "name"
 gtin = "4005299151293"
+fits = [
+  { kit = "kit/carson/cv10-on-road", type = "direct", source = "doc/carson/shop" },
+]
 links = [
   { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/spare-parts-accessories/rc-spares/axles-drive-shafts/wheel-axle-set-2-cv-10-500105129-en.html" },
 ]
+pack_qty_basis = "name"
 category = "drivetrain"
+pack_qty = 2

@@ -4,12 +4,12 @@ brand = "brand/carson"
 number = "500103039"
 name = "1:10 X10N Onroad VW Scirocco RTR"
 kind = "rtr"
-status = "released"
-depicts = { make = "Volkswagen", model = "Scirocco" }
-seen_by = "2014"
-seen_by_source = "https://customer-service.carson-modelsport.com/en/service/manuals/"
-notes = ": the shop and the manuals state none; no longer in the Carson shop; on sale by: the manual's date (Stand Feb 2014)"
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available; on sale by: the manual's date (Stand Feb 2014)"
 documents = ["doc/carson/500103039-manual-x10nvwsciroccorcup"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-10-x10n-onroad-vw-scirocco-gp-rtr-500103039-en.html" },
+]
 contains = [
   { part = "part/carson/500105301", role = "kit", source = "doc/carson/500103039-manual-x10nvwsciroccorcup" },
   { part = "part/carson/500105306", role = "kit", source = "doc/carson/500103039-manual-x10nvwsciroccorcup" },
@@ -44,3 +44,6 @@ contains = [
   { part = "part/carson/500800089", role = "kit", source = "doc/carson/500103039-manual-x10nvwsciroccorcup" },
   { part = "part/carson/500900115", role = "kit", source = "doc/carson/500103039-manual-x10nvwsciroccorcup" },
 ]
+depicts = { make = "Volkswagen", model = "Scirocco" }
+seen_by = "2014"
+seen_by_source = "https://customer-service.carson-modelsport.com/en/service/manuals/"

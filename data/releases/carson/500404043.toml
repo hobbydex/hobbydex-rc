@@ -4,6 +4,17 @@ brand = "brand/carson"
 number = "500404043"
 name = "Rock Warrior BL Water “Pro” 2.4 GHz 100% RTR"
 kind = "rtr"
-status = "released"
-notes = "Release year unknown: the shop and the manuals state none; no longer in the Carson shop"
-documents = ["doc/carson/500404043-manual", "doc/carson/500404043-manual-regler-dragster-sport-rtr", "doc/carson/500404043-tuningteile-warrior", "doc/carson/500404043-beiblatt-rock-warrior-bl"]
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available"
+documents = ["doc/carson/500404043-manual-regler-dragster-sport-rtr", "doc/carson/500404043-manual", "doc/carson/500404043-tuningteile-warrior", "doc/carson/500404043-beiblatt-rock-warrior-bl"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-10-x10-rockwarrior-waterpro-100-rtr-500404043-en.html" },
+]
+contains = [
+  { part = "part/carson/500405414", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405415", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405416", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405418", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405419", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405424", role = "listed", source = "doc/carson/shop" },
+]
