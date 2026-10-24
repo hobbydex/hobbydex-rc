@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-LOSI-223SCT"
+brand = "brand/avid-rc"
+number = "AV-LOSI-223SCT"
+name = "Team Losi TLR 22SCT 3.0 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 6, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Losi TLR 22SCT 3.0"
+fits = [
+  { kit = "kit/tlr/22sct", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi TLR 22SCT 3.0 (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1576/TLR-22SCT-30" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

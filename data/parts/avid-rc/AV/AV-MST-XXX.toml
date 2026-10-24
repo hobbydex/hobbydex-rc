@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-MST-XXX"
+brand = "brand/avid-rc"
+number = "AV-MST-XXX"
+name = "MST XXX Rally Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 11, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/mst/xxx-rally", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1697/XXX-Rally" },
+]
+pack_qty = 25
+pack_qty_basis = "includes"

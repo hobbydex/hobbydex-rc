@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-TRX-EREVO2"
+brand = "brand/avid-rc"
+number = "AV-TRX-EREVO2"
+name = "Traxxas E-Revo VXL 2.0 (#86086-4) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 4, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/17x26x5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 3, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x21x5", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+fits = [
+  { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas E-Revo VXL 2.0 (#86086-4)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Revolution | Aura, Ceramic Rubber, Rear, Ceramic Rear (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2888/ERevo-VXL-20-860864" },
+]
+pack_qty = 32
+pack_qty_basis = "includes"

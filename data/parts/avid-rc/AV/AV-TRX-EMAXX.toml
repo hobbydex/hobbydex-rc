@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-TRX-EMAXX"
+brand = "brand/avid-rc"
+number = "AV-TRX-EMAXX"
+name = "Traxxas E-Maxx (All Editions) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x12x4", qty = 10, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 4, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/8x16x5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Traxxas E-Maxx (All Editions)"
+fits = [
+  { kit = "kit/traxxas/e-maxx", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas E-Maxx (All Editions) (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Metal | Clutch, Ceramic Rubber, Ceramic Revolution | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/575/EMaxx-All-Editions" },
+]
+pack_qty = 25
+pack_qty_basis = "includes"

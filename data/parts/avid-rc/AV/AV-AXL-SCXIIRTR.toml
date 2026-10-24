@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-AXL-SCXIIRTR"
+brand = "brand/avid-rc"
+number = "AV-AXL-SCXIIRTR"
+name = "Axial SCX10 II (AX90066 - Deadbolt RTR) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Default: Open (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x14x5", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/8x16x5", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/axial/scx10-ii", car = "SCX10 II (AX90066 - Deadbolt RTR)", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Axial SCX10 II (AX90066 - Deadbolt RTR)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Open, Motor Bearing, Ceramic Motor Bearing, Ceramic Revolution | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1859/SCX10-II-AX90066-Deadbolt-RTR" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

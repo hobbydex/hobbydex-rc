@@ -1,0 +1,27 @@
+id = "part/avid-rc/AV-TRX-TRX6"
+brand = "brand/avid-rc"
+number = "AV-TRX-TRX6"
+name = "Traxxas TRX-6 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 14, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 6, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/7x14x5", qty = 3, notes = "Only option: Rubber (greased)" },
+  { spec = "spec/bearing/15x21x4", qty = 3, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 3, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Ceramic Rubber (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3557/TRX6" },
+]
+pack_qty = 55
+pack_qty_basis = "includes"

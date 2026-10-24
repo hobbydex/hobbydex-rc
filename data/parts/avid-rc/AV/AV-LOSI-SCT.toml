@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-LOSI-SCT"
+brand = "brand/avid-rc"
+number = "AV-LOSI-SCT"
+name = "Team Losi XXX-SCT Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4.762x9.525x3.175", qty = 6, notes = "Default: Ceramic Revolution (greased)" },
+  { spec = "spec/bearing/3.175x9.525x3.969", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/12.7x19.05x3.969", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Losi XXX-SCT (also XXX-SCB)"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Motor Bearing, Ceramic Motor Bearing, Metal Shield (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/326/XXXSCT" },
+]
+pack_qty = 16
+pack_qty_basis = "includes"

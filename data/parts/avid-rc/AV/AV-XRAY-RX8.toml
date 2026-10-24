@@ -1,0 +1,26 @@
+id = "part/avid-rc/AV-XRAY-RX8"
+brand = "brand/avid-rc"
+number = "AV-XRAY-RX8"
+name = "Xray RX8 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x18x4", qty = 12, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-8x14x4", qty = 2, notes = "Default: Revolution Flanged (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x12x4", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/xray/rx8", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Rubber, Ceramic Metal, Ceramic Metal | Aura, Serpent Revolution, Ceramic Serpent Revolution, Metal | Clutch, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/336/RX8" },
+]
+pack_qty = 29
+pack_qty_basis = "includes"

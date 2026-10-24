@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-XRAY-80810"
+brand = "brand/avid-rc"
+number = "AV-XRAY-80810"
+name = "Xray 808 2010 Spec Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/13x20x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/13x19x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x12x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Xray 808 2010 Spec"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/249/808-2010-Spec" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

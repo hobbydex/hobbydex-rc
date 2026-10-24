@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-XRAY-X424"
+brand = "brand/avid-rc"
+number = "AV-XRAY-X424"
+name = "Xray X4 '24 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x10x3", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/1.5x4x2", qty = 8, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/3x8x4", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/xray/x4", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XRAY X4 '24" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Metal (oiled), Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4054/X4-24" },
+]
+pack_qty = 32
+pack_qty_basis = "includes"

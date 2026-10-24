@@ -15,6 +15,12 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Team Losi 8ight 2.0 (also 8ight 2.0 RTR, 8ight 2.0 Truggy, 8ight-T 2.0, 8ight 1.0, 8ight 1.0 RTR, 8ight-T 1.0, L8ight)"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight 2.0" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight 2.0" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight-T 2.0" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight-T 2.0" },
+]
 notes = "Each size can be ordered as one of: Revolution, Serpent Revolution, Rubber, Metal, Ceramic Serpent Revolution, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura, Metal Shield, Metal | Clutch (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/208/8ight-20" },

@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-CAR-GTB"
+brand = "brand/avid-rc"
+number = "AV-CAR-GTB"
+name = "Carisma Carisma GTB Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x7x2.5", qty = 9, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x10x3", qty = 1, notes = "Only option: Open (greased)" },
+  { spec = "spec/bearing/7x11x3", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/carisma/gtb", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Carisma Carisma GTB" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura, Open (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1692/Carisma-GTB" },
+]
+pack_qty = 23
+pack_qty_basis = "includes"

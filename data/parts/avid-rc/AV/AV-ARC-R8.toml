@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-ARC-R8"
+brand = "brand/avid-rc"
+number = "AV-ARC-R8"
+name = "ARC RX8 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x18x4", qty = 12, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "ARC RX8"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Rubber, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1431/RX8" },
+]
+pack_qty = 30
+pack_qty_basis = "includes"

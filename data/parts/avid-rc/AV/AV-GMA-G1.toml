@@ -1,0 +1,26 @@
+id = "part/avid-rc/AV-GMA-G1"
+brand = "brand/avid-rc"
+number = "AV-GMA-G1"
+name = "Gmade Gmade G1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x12x3.5", qty = 16, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/gmade/g1", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Gmade Gmade G1" },
+  { kit = "kit/gmade/g1-special", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Gmade Gmade G1 Special" },
+  { kit = "kit/gmade/dragoon", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Gmade Gmade Dragoon" },
+  { kit = "kit/gmade/spider", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Gmade Gmade Spider" },
+  { kit = "kit/gmade/stealth", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Gmade Gmade Stealth" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/540/Gmade-G1" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-MCD-V5"
+brand = "brand/avid-rc"
+number = "AV-MCD-V5"
+name = "MCD RR5 Competition Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x24x6", qty = 12, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/20x32x7", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x26x8", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x22x6", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/17x30x7", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "MCD RR5 Competition (also RR5 Factory Team, RR5 Ultimate, XS5 Factory Team, W5 SCT Factory Team, W5 SCT Competition, W5 SCT Max Factory Team, W5 SCT Max Ultimate, XS5 Factory Team, XS5 Competition, X5 Factory Team, X5 Competition)"
+notes = "Each size can be ordered as one of: Rubber, Metal, Revolution (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1587/RR5-Competition" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

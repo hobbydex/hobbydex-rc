@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-XRAY-XB816"
+brand = "brand/avid-rc"
+number = "AV-XRAY-XB816"
+name = "Xray XB8 '16 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 14, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal | Clutch (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/xray/xb8", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XRAY XB8 '16" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1556/XB8-16" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-RCH-P12"
+brand = "brand/avid-rc"
+number = "AV-RCH-P12"
+name = "Roche Rapide P12 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/flanged-3.175x7.938x3.572", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+applies_to = "Roche Rapide P12 (also Rapide P12-2016, Rapide P12-2017)"
+notes = "Each size can be ordered as one of: Metal, Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2784/Rapide-P12" },
+]
+pack_qty = 9
+pack_qty_basis = "includes"

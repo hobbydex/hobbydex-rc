@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-AE-RC12R6"
+brand = "brand/avid-rc"
+number = "AV-AE-RC12R6"
+name = "Team Associated RC12R6 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-3.175x7.938x3.572", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 3, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 2, notes = "Default: Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/team-associated/rc12r6", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Ceramic Metal, Ceramic Metal | Aura, Revolution (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2913/RC12R6" },
+]
+pack_qty = 9
+pack_qty_basis = "includes"

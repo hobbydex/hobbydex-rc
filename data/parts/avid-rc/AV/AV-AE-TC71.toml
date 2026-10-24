@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-AE-TC71"
+brand = "brand/avid-rc"
+number = "AV-AE-TC71"
+name = "Team Associated TC7.1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x7x2.5", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-4x8x3", qty = 2, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Metal (not Clutch) (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+applies_to = "Team Associated TC7.1"
+notes = "Each size can be ordered as one of: Metal, Revolution, Rubber, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura, Metal | Clutch, Ceramic Revolution, Metal (not Clutch), Revolution (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1565/TC71" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

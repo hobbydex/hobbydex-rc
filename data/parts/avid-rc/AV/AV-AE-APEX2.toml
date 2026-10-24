@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-AE-APEX2"
+brand = "brand/avid-rc"
+number = "AV-AE-APEX2"
+name = "Team Associated Apex2 Hoonitruck Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 6, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Team Associated Apex2 Hoonitruck (also Apex2 Hoonicorn, Apex2 Datsun 620, Apex2 ST550, Apex2 A550 Rally, Apex2 Nissan 240z, Apex2 Nissan Z)"
+fits = [
+  { kit = "kit/team-associated/apex2", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated Apex2 Hoonitruck (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4290/Apex2-Hoonitruck" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

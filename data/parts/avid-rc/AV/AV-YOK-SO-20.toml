@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-YOK-SO-20"
+brand = "brand/avid-rc"
+number = "AV-YOK-SO-20"
+name = "Yokomo SO 2.0 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x7x3", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Yokomo SO 2.0"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4103/SO-20" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

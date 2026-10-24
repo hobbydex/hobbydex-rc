@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-GMA-R1"
+brand = "brand/avid-rc"
+number = "AV-GMA-R1"
+name = "Gmade Gmade R1 Rock Buggy Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x8x2.5", qty = 22, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 14, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Gmade Gmade R1 Rock Buggy"
+fits = [
+  { kit = "kit/gmade/r1", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Gmade Gmade R1 Rock Buggy (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/539/Gmade-R1-Rock-Buggy" },
+]
+pack_qty = 36
+pack_qty_basis = "includes"

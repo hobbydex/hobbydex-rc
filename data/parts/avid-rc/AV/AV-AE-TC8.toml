@@ -13,12 +13,12 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Team Associated TC8"
+fits = [
+  { kit = "kit/team-associated/tc8", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated TC8 (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Metal (not Clutch), Revolution (not Clutch), Revolution | Aura, Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch), Rubber, Metal, Metal (oiled), Revolution, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4490/TC8" },
-]
-fits = [
-  { kit = "kit/team-associated/tc8", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated TC8 (link_car_kits.py)" },
 ]
 pack_qty = 23
 pack_qty_basis = "includes"

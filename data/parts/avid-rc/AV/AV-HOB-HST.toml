@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-HOB-HST"
+brand = "brand/avid-rc"
+number = "AV-HOB-HST"
+name = "Hobao Hyper Star Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x14x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x8x2.5", qty = 1, notes = "Default: Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Hobao Hyper Star"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Revolution | Aura, Ceramic Metal, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2897/Hyper-Star" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

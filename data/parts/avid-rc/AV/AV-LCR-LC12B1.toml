@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-LCR-LC12B1"
+brand = "brand/avid-rc"
+number = "AV-LCR-LC12B1"
+name = "LC Racing LC12B1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/7x11x3", qty = 1, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3888/LC12B1" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

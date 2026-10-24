@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-XRAY-XT2-23E"
+brand = "brand/avid-rc"
+number = "AV-XRAY-XT2-23E"
+name = "Xray XT2 '23 Essentials Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x8x4", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/5x12x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 1, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Xray XT2 '23 | Essentials"
+fits = [
+  { kit = "kit/xray/xt2", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Xray XT2 '23 (link_car_kits.py)" },
+]
+notes = "Essentials kit: Avid leaves out the bearings that seldom need replacing: (4) 3x6 - Ackermann Plate; (4) 5x8 - Steering Rack. Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Motor Bearing, Ceramic Motor Bearing, Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4107/XT2-23-Essentials" },
+]
+pack_qty = 14
+pack_qty_basis = "includes"

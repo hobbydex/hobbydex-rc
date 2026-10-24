@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-LOSI-MIN8"
+brand = "brand/avid-rc"
+number = "AV-LOSI-MIN8"
+name = "Team Losi Mini 8ight Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x10x3", qty = 4, notes = "Only option: Open (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 3, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/7x11x3", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/losi/mini-8ight", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/losi/mini-8ight-t", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Open (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/377/Mini-8ight" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

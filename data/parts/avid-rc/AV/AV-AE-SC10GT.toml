@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-AE-SC10GT"
+brand = "brand/avid-rc"
+number = "AV-AE-SC10GT"
+name = "Team Associated SC10GT Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4.762x9.525x3.175", qty = 10, notes = "Default: Ceramic Revolution (greased)" },
+  { spec = "spec/bearing/3.175x6.35x2.778", qty = 3, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/9.525x15.875x3.969", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/3.969x7.938x3.175", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4.762x12.7x4.978", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x9x3", qty = 1, notes = "Default: Flanged Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/team-associated/sc10gt", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/604/SC10GT" },
+]
+pack_qty = 21
+pack_qty_basis = "includes"

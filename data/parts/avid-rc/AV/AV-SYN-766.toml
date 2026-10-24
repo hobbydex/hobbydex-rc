@@ -1,0 +1,28 @@
+id = "part/avid-rc/AV-SYN-766"
+brand = "brand/avid-rc"
+number = "AV-SYN-766"
+name = "Synergy 766 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/3x8x3", qty = 10, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 4, notes = "Default: Metal (not Clutch) (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x19x5", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 3, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/12x21x5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/thrust-10x18x5.5", qty = 2, notes = "Only option: Thrust Bearing (oiled)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/thrust-12x21x5", qty = 2, notes = "Only option: Thrust Bearing (oiled)" },
+  { spec = "spec/bearing/6x15x5", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Synergy 766"
+notes = "Also holds (not a ball bearing, so not in includes): 16x22x16 One-way Bearing (1). Each size can be ordered as one of: Metal, Metal (not Clutch), Open (not Clutch), Revolution (not Clutch), Revolution | Aura, Ceramic Metal (not Clutch), Ceramic Revolution (not Clutch), Rubber, Revolution, Ceramic Metal, Ceramic Rubber, Ceramic Revolution, Open, Rear, Ceramic Rear, Thrust Bearing, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1640/766" },
+]
+pack_qty = 40
+pack_qty_basis = "includes"

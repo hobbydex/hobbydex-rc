@@ -1,0 +1,26 @@
+id = "part/avid-rc/AV-SER-SRX8GT"
+brand = "brand/avid-rc"
+number = "AV-SER-SRX8GT"
+name = "Serpent Cobra SRX8 GT Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/13x19x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x8x2.5", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal | Clutch (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Serpent Cobra SRX8 GT" },
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Serpent Cobra SRX8 GT" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3270/Cobra-SRX8-GT" },
+]
+pack_qty = 32
+pack_qty_basis = "includes"

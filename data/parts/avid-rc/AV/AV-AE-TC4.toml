@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-AE-TC4"
+brand = "brand/avid-rc"
+number = "AV-AE-TC4"
+name = "Team Associated TC4 Factory Team Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4.762x9.525x3.175", qty = 12, notes = "Default: Ceramic Revolution (greased)" },
+  { spec = "spec/bearing/4.762x7.938x3.175", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/9.525x15.875x3.969", qty = 4, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Team Associated TC4 Factory Team (also TC4 Club Racer)"
+fits = [
+  { kit = "kit/team-associated/tc4", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated TC4 Factory Team (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1728/TC4-Factory-Team" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-TKR-EB48"
+brand = "brand/avid-rc"
+number = "AV-TKR-EB48"
+name = "Tekno EB48 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/13x19x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tekno/eb48", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/505/EB48" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

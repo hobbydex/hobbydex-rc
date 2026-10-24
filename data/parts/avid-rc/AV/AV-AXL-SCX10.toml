@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-AXL-SCX10"
+brand = "brand/avid-rc"
+number = "AV-AXL-SCX10"
+name = "Axial SCX10 (AX90007 - Kit) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Axial SCX10 (AX90007 - Kit) (also SCX10 (AX90012 - Dingo), SCX10 (AX90014 - Trail Honcho), SCX10 (AX90016 - Trail Honcho), AX10 (AX90002 - Scorpion RTR), AX10 (AX90004 - Scorpion ARTR), AX10 (AX90011 - Scorpion RTC), SCX10 (AX90021 - Dingo Kit), SCX10 (AX90022 - Honcho RTR), SCX10 (AX90024 - Jeep RTR), AX10 (AX90019 - Ridgecrest RTR), AX10 (AX90033 - Deadbolt RTR), SCX10 (AX90022 - Trail Honcho), SCX10 (AX90027 - Rubicon Kit), SCX10 (AX90028 - Rubicon RTR), SCX10 (AX90034 - Wrangler Kit), SCX10 (AX90035 - Wrangler RTR), SCX10 (AX90036 - Falken RTR), SCX10 (AX90044 - Deadbolt RTR), SCX10 (AX900347- Ram Power RTR))"
+fits = [
+  { kit = "kit/axial/scx10", car = "SCX10 (AX90007 - Kit)", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Axial SCX10 (AX90007 - Kit) (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Revolution | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/273/SCX10-AX90007-Kit" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"
