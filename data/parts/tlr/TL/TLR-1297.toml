@@ -10,6 +10,7 @@ links = [
 category = "suspension"
 fits = [
   { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
+  { kit = "kit/tlr/22x-4", type = "replaces", replaces = "part/tlr/TLR234127", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 gtin = "660132676476"
 material = "aluminium"

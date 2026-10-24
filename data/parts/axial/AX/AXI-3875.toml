@@ -13,5 +13,6 @@ equivalent_to = [
 gtin = "660132690564"
 fits = [
   { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
+  { kit = "kit/axial/scx10-iii", type = "replaces", replaces = "part/axial/AXI236173", source = "doc/axial/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "steel"

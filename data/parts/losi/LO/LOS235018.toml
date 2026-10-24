@@ -3,6 +3,7 @@ brand = "brand/losi"
 number = "LOS235018"
 name = "Set Screw M3 x 3mm"
 pack_qty = 10
+pack_qty_basis = "includes"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-set-screw-m3-x-3mm-10/LOS235018.html" },
 ]
@@ -24,4 +25,7 @@ fits = [
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+includes = [
+  { spec = "spec/screw/m3x3-set-hex", qty = 10 },
 ]

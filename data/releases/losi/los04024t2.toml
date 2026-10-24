@@ -2,10 +2,10 @@ id = "release/losi/los04024t2"
 kit = "kit/losi/lmt-mega-truck"
 brand = "brand/losi"
 number = "LOS04024T2"
-name = "LMT Mega Truck Bog Hog 4S 4X4 RTR Brushless Mega Truck, orange"
+name = "LMT Mega Truck Bog Hog 4S 4X4 RTR, orange"
 year = 2022
 kind = "rtr"
-status = "discontinued"
+status = "released"
 gtin = "605482161685"
 documents = ["doc/losi/los04024-exploded-view", "doc/losi/los04024-manual", "doc/losi/los04024-product-page", "doc/losi/youtube-3pfRoLhmlh8"]
 color = "orange"
@@ -175,6 +175,7 @@ contains = [
   { part = "part/losi/LOS241076", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS242058", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS242060", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOS243014", role = "listed", source = "doc/losi/los04024-manual" },
   { part = "part/losi/LOS243024", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS244015", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS244016", role = "option", source = "doc/losi/horizon-part-pages" },
@@ -185,13 +186,20 @@ contains = [
   { part = "part/losi/LOS343200", role = "option", source = "doc/losi/los04024-manual" },
   { part = "part/losi/LOS344002", role = "option", source = "doc/losi/horizon-part-pages" },
   { part = "part/losi/LOS344003", role = "option", source = "doc/losi/horizon-part-pages" },
+  { part = "part/losi/LOSA99209", role = "listed", source = "doc/losi/los04024-manual" },
   { part = "part/pro-line/PRO1018100", role = "option", source = "doc/losi/los04024-product-page" },
   { part = "part/pro-line/PRO278903", role = "option", source = "doc/losi/los04024-product-page" },
+  { part = "part/spektrum/SPMR5010", role = "listed", source = "doc/losi/los04024-manual" },
+  { part = "part/spektrum/SPMX50002S50H5", role = "listed", source = "doc/losi/los04024-manual" },
+  { part = "part/spektrum/SPMX50003S50H5", role = "listed", source = "doc/losi/los04024-manual" },
+  { part = "part/spektrum/SPMX50004S100H5", role = "listed", source = "doc/losi/los04024-manual" },
+  { part = "part/spektrum/SPMX50004S50H5", role = "listed", source = "doc/losi/los04024-manual" },
   { part = "part/spektrum/SPMXBC200", role = "option", source = "doc/losi/los04024-product-page" },
   { part = "part/spektrum/SPMXC2050", role = "option", source = "doc/losi/los04024-product-page" },
   { part = "part/spektrum/SPMXC2080", role = "option", source = "doc/losi/los04024-product-page" },
   { part = "part/spektrum/SPMXC2090", role = "option", source = "doc/losi/los04024-product-page" },
   { part = "part/spektrum/SPMXC3040", role = "option", source = "doc/losi/los04024-product-page" },
+  { part = "part/spektrum/SPMXCA200", role = "listed", source = "doc/losi/los04024-manual" },
   { part = "part/spektrum/SPMXGPS100", role = "option", source = "doc/losi/los04024-product-page" },
   { part = "part/spektrum/SPMXPSS200", role = "option", source = "doc/losi/los04024-product-page" },
   { part = "part/spektrum/SPMXPSS300", role = "option", source = "doc/losi/los04024-product-page" },
@@ -214,19 +222,11 @@ contains = [
   { part = "part/tlr/TLR74001", role = "option", source = "doc/losi/los04024-manual" },
   { part = "part/tlr/TLR74002", role = "option", source = "doc/losi/los04024-manual" },
   { part = "part/tlr/TLR74003", role = "option", source = "doc/losi/los04024-manual" },
+  { part = "part/tlr/TLR74004", role = "listed", source = "doc/losi/los04024-manual" },
   { part = "part/tlr/TLR74005", role = "option", source = "doc/losi/los04024-manual" },
   { part = "part/tlr/TLR74006", role = "option", source = "doc/losi/los04024-manual" },
-  { part = "part/tlr/TLR75008", role = "option", source = "doc/losi/los04024-manual" },
-  { part = "part/losi/LOS243014", role = "listed", source = "doc/losi/los04024-manual" },
-  { part = "part/losi/LOSA99209", role = "listed", source = "doc/losi/los04024-manual" },
-  { part = "part/spektrum/SPMR5010", role = "listed", source = "doc/losi/los04024-manual" },
-  { part = "part/spektrum/SPMX50002S50H5", role = "listed", source = "doc/losi/los04024-manual" },
-  { part = "part/spektrum/SPMX50003S50H5", role = "listed", source = "doc/losi/los04024-manual" },
-  { part = "part/spektrum/SPMX50004S100H5", role = "listed", source = "doc/losi/los04024-manual" },
-  { part = "part/spektrum/SPMX50004S50H5", role = "listed", source = "doc/losi/los04024-manual" },
-  { part = "part/spektrum/SPMXCA200", role = "listed", source = "doc/losi/los04024-manual" },
-  { part = "part/tlr/TLR74004", role = "listed", source = "doc/losi/los04024-manual" },
   { part = "part/tlr/TLR74022", role = "listed", source = "doc/losi/los04024-manual" },
   { part = "part/tlr/TLR75004", role = "listed", source = "doc/losi/los04024-manual" },
+  { part = "part/tlr/TLR75008", role = "option", source = "doc/losi/los04024-manual" },
   { part = "part/tlr/TLR75009", role = "listed", source = "doc/losi/los04024-manual" },
 ]
