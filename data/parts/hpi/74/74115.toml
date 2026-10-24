@@ -1,5 +1,22 @@
 id = "part/hpi/74115"
 brand = "brand/hpi"
 number = "74115"
-name = "9062                                    74151"
-links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/74115?show_disc=true" } ]
+name = "HPI FUEL BOTTLE 500cc"
+former_names = ["9062 74151"]
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/74115" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/74115?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/bullet-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/trophy-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/trophy-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+]
+category = "engine-fuel"

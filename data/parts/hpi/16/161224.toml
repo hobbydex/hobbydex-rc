@@ -3,13 +3,13 @@ brand = "brand/hpi"
 number = "161224"
 name = "Button Head Screw M2x18mm (Hex Socket/10pcs)"
 pack_qty = 10
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161224" },
 ]
 fits = [
   { kit = "kit/hpi/mini-king", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/screw/m2x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

@@ -3,8 +3,6 @@ brand = "brand/hpi"
 number = "103729"
 name = "SERRATED FLANGE LOCK NUT M4 (SILVER/10pcs)"
 pack_qty = 10
-pack_qty_basis = "name"
-color = "silver"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103729" },
 ]
@@ -16,6 +14,8 @@ fits = [
   { kit = "kit/hpi/mini-trophy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
+color = "silver"
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },

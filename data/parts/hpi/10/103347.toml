@@ -1,5 +1,15 @@
 id = "part/hpi/103347"
 brand = "brand/hpi"
 number = "103347"
-name = "103804                                          6920 20T      6925 25T   6930 30T   86951 10wt    86956 35wt"
-links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103347?show_disc=true" } ]
+name = "ATTK BELTED TIRE S COMPOUND"
+pack_qty = 2
+former_names = ["103804 6920 20T 6925 25T 6930 30T 86951 10wt 86956 35wt"]
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103347" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103347?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+]
+category = "tire"

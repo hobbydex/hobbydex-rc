@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "94530"
 name = "FLAT HEAD SCREW M4x12mm (HEX SOCKET/10pcs)"
 pack_qty = 10
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/94530" },
 ]
@@ -11,6 +10,7 @@ fits = [
   { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/screw/m4x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

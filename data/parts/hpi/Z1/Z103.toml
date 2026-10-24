@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "Z103"
 name = "E CLIP E-4HD"
 pack_qty = 20
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z103" },
 ]
@@ -13,6 +12,7 @@ fits = [
   { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },

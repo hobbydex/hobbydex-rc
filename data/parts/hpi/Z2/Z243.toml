@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "Z243"
 name = "E CLIP E3mm"
 pack_qty = 10
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z243" },
 ]
@@ -22,6 +21,7 @@ fits = [
   { kit = "kit/hpi/super-5sc", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/3mm", match = "functional", notes = "Shaft size from the name" },

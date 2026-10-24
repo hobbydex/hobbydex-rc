@@ -2,4 +2,13 @@ id = "part/hpi/86883"
 brand = "brand/hpi"
 number = "86883"
 name = "RUBBER BUMP STOP 3x7x4mm"
-links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86883?show_disc=true" } ]
+pack_qty = 12
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86883" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86883?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+]

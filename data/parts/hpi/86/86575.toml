@@ -3,8 +3,12 @@ brand = "brand/hpi"
 number = "86575"
 name = "KNURLED COLLAR"
 pack_qty = 2
-pack_qty_basis = "page"
-category = "washer-shim"
 links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86575" },
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86575?show_disc=true" },
 ]
+fits = [
+  { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
+]
+pack_qty_basis = "page"
+category = "washer-shim"

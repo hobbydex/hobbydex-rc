@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "107895"
 name = "BUTTON HEAD SCREW M3x25mm"
 pack_qty = 10
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/107895" },
 ]
@@ -11,6 +10,7 @@ fits = [
   { kit = "kit/hpi/stage-d10", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m3x25-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

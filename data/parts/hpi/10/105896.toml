@@ -2,14 +2,16 @@ id = "part/hpi/105896"
 brand = "brand/hpi"
 number = "105896"
 name = "ENGINE PLATE 2.5mm (7075/ORANGE)"
-color = "orange"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/105896" },
 ]
 fits = [
   { kit = "kit/hpi/savage", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage", type = "replaces", replaces = "part/hpi/86069", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/savage-x", type = "replaces", replaces = "part/hpi/86069", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
+color = "orange"
 category = "chassis"
 material = "aluminium"
 material_grade = "7075"

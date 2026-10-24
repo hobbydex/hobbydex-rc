@@ -1,11 +1,15 @@
 id = "part/hpi/86599"
 brand = "brand/hpi"
 number = "86599"
-name = "DIFF CASE WASHER 0.7mm"
+name = "DIFF CASE WASHER 0.7mm (ALUMINUM / 3pcs)"
 pack_qty = 3
-pack_qty_basis = "page"
-category = "washer-shim"
 links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86599" },
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86599?show_disc=true" },
 ]
+fits = [
+  { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
+]
+pack_qty_basis = "page"
+category = "washer-shim"
 material = "aluminium"

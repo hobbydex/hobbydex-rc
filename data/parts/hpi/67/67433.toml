@@ -6,8 +6,8 @@ links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/67433" },
 ]
 fits = [
-  { kit = "kit/hpi/apache-c1", type = "replaces", source = "doc/hpi/part-pages", notes = "Hops up #107365" },
-  { kit = "kit/hpi/apache-sc", type = "replaces", source = "doc/hpi/part-pages", notes = "Hops up #107365" },
+  { kit = "kit/hpi/apache-c1", type = "replaces", source = "doc/hpi/part-pages", notes = "Hops up #107365", replaces = "part/hpi/107365" },
+  { kit = "kit/hpi/apache-sc", type = "replaces", source = "doc/hpi/part-pages", notes = "Hops up #107365", replaces = "part/hpi/107365" },
   { kit = "kit/hpi/d8s", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },

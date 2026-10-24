@@ -3,8 +3,14 @@ brand = "brand/hpi"
 number = "B014"
 name = "BALL BEARING 3x8x3mm"
 pack_qty = 2
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/B014" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/B014?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/micro-rs4", type = "direct", source = "doc/hpi/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/3x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
-links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/B014?show_disc=true" } ]

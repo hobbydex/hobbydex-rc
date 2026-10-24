@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "4304"
 name = "HPI PRO FOAM TIRE 26mm FRONT D (37) WITH RACING MESH WHEEL WHITE (1PAIR)"
 pack_qty = 2
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/4304" },
 ]
@@ -13,4 +12,6 @@ fits = [
   { kit = "kit/hpi/r40", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/rs4-pro-3", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/4790" },
 ]
+pack_qty_basis = "name"
 category = "tire"
+position = "front"

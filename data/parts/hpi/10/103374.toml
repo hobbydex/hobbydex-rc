@@ -1,6 +1,17 @@
 id = "part/hpi/103374"
 brand = "brand/hpi"
 number = "103374"
-name = "MOTOR PLATE 3.0mm"
+name = "MOTOR PLATE 3.0mm (7075/SILVER)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103374" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103374?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", replaces = "part/hpi/86949", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
 category = "chassis"
-links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103374?show_disc=true" } ]
+color = "silver"
+material = "aluminium"
+material_grade = "7075"

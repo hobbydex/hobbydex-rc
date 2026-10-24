@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "94304"
 name = "TP. FLAT HEAD SCREW M3x10mm (HEX SOCKET/10pcs)"
 pack_qty = 10
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/94304" },
 ]
@@ -13,6 +12,7 @@ fits = [
   { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

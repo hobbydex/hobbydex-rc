@@ -1,5 +1,36 @@
 id = "part/hpi/101941"
 brand = "brand/hpi"
 number = "101941"
-name = "74151"
-links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/101941?show_disc=true" } ]
+name = "PLAZMA 7.4V 4000mAh 20C LIPO BATTERY PACK"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/101941" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/101941?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/brama-10b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/crawler-king", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/cup-racer", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/cyber-10b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/formula-ten", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/mini-trophy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/sprint-2", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4000
+c_rating = 20

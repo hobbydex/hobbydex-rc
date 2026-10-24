@@ -3,12 +3,17 @@ brand = "brand/hpi"
 number = "A132"
 name = "FLANGED BALL 5.8x7mm"
 pack_qty = 4
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/A132" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/A132?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-pro-3", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "ball-end"
 ball_mm = 5.8
 ball_type = "through-hole"
-links = [
-  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/A132?show_disc=true" },
-]
 equivalent_to = [
   { spec = "spec/ball-end/5.8mm-through-hole", match = "functional" },
 ]

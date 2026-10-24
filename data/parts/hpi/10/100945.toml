@@ -1,0 +1,22 @@
+id = "part/hpi/100945"
+brand = "brand/hpi"
+number = "100945"
+name = "HPI Ni-MH BATTERY PACK (7.2V 2000mAh)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/100945" },
+]
+fits = [
+  { kit = "kit/hpi/brama-10b", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-savage", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/sprint-2", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 2000

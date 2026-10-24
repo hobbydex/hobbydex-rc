@@ -3,8 +3,6 @@ brand = "brand/hpi"
 number = "Z740"
 name = "SET SCREW M5x4mm BLACK"
 pack_qty = 6
-pack_qty_basis = "page"
-color = "black"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z740" },
 ]
@@ -18,6 +16,8 @@ fits = [
   { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
+color = "black"
 equivalent_to = [
   { spec = "spec/screw/m5x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

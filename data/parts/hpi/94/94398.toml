@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "94398"
 name = "CAP HEAD SCREW M3x55mm"
 pack_qty = 6
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/94398" },
 ]
@@ -13,6 +12,7 @@ fits = [
   { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m3x55-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

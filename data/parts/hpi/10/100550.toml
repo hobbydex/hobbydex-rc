@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "100550"
 name = "PAN HEAD SCREW M5x8mm (HEX SOCKET/10pcs)"
 pack_qty = 10
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/100550" },
 ]
@@ -19,6 +18,7 @@ fits = [
   { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m5x8-pan-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },

@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "Z244"
 name = "E CLIP E4mm"
 pack_qty = 10
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z244" },
 ]
@@ -21,6 +20,7 @@ fits = [
   { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },

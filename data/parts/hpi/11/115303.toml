@@ -1,10 +1,16 @@
 id = "part/hpi/115303"
 brand = "brand/hpi"
 number = "115303"
-name = "Camber Link"
+name = "CAMBER LINK"
 pack_qty = 4
-pack_qty_basis = "page"
-category = "suspension"
 links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/115303" },
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/115303?show_disc=true" },
 ]
+fits = [
+  { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
+]
+pack_qty_basis = "page"
+category = "suspension"

@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "161191"
 name = "M3x5x0.2 Shim"
 pack_qty = 10
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161191" },
 ]
@@ -12,6 +11,7 @@ fits = [
   { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/3x5x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
