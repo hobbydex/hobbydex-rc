@@ -2,11 +2,14 @@ id = "part/carson/500105163"
 brand = "brand/carson"
 number = "500105163"
 name = "Oil shock absorber set (2) CV-10B, front"
-pack_qty = 2
-pack_qty_basis = "name"
 gtin = "4005299151637"
+fits = [
+  { kit = "kit/carson/cv10-stormracer", type = "direct", source = "doc/carson/shop" },
+]
 links = [
   { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/spare-parts-accessories/rc-spares/rc-shock-absorbers-damper-bridges/oil-shock-absorber-set-2-cv-10b-front-500105163-en.html" },
 ]
+pack_qty_basis = "name"
 category = "shock"
 shock_part = "complete"
+pack_qty = 2

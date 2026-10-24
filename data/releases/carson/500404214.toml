@@ -4,11 +4,12 @@ brand = "brand/carson"
 number = "500404214"
 name = "1:10 X-Crawlee Pro 2.0 100%RTR"
 kind = "rtr"
-status = "released"
-seen_by = "2021"
-seen_by_source = "https://customer-service.carson-modelsport.com/en/service/manuals/?lp=4&ln=90&ls=name-asc&ps="
-notes = ": the shop and the manuals state none; no longer in the Carson shop; on sale by: the manual's date (Stand May 2021)"
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available; on sale by: the manual's date (Stand May 2021)"
 documents = ["doc/carson/500404214-x-crawlee-pro-dina5-mai2021", "doc/carson/500404214-speedcontroller-extrablatt"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-10-x-crawlee-pro-20-100rtr-500404214-en.html" },
+]
 contains = [
   { part = "part/carson/404214-01", role = "kit", source = "doc/carson/500404214-x-crawlee-pro-dina5-mai2021" },
   { part = "part/carson/500405595", role = "kit", source = "doc/carson/500404214-x-crawlee-pro-dina5-mai2021" },
@@ -36,5 +37,8 @@ contains = [
   { part = "part/carson/500405617", role = "kit", source = "doc/carson/500404214-x-crawlee-pro-dina5-mai2021" },
   { part = "part/carson/500405618", role = "kit", source = "doc/carson/500404214-x-crawlee-pro-dina5-mai2021" },
   { part = "part/carson/500800088", role = "kit", source = "doc/carson/500404214-x-crawlee-pro-dina5-mai2021" },
+  { part = "part/carson/500800113", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500900126", role = "kit", source = "doc/carson/500404214-x-crawlee-pro-dina5-mai2021" },
 ]
+seen_by = "2021"
+seen_by_source = "https://customer-service.carson-modelsport.com/en/service/manuals/?lp=4&ln=90&ls=name-asc&ps="

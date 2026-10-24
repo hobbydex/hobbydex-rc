@@ -4,6 +4,14 @@ brand = "brand/carson"
 number = "500404199"
 name = "1:10 X10 Dirt Warrior Sport 2.0 100% RTR"
 kind = "rtr"
-status = "released"
-notes = "Release year unknown: the shop and the manuals state none; no longer in the Carson shop"
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available"
 documents = ["doc/carson/500404199-dirtwarriorsport20-monsterwarrior-02-2021"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-10-x10-dirt-warrior-sport-20-100-rtr-500404199-en.html" },
+]
+contains = [
+  { part = "part/carson/500405351", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405361", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405447", role = "listed", source = "doc/carson/shop" },
+]
