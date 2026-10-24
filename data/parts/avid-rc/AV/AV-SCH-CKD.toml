@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-SCH-CKD"
+brand = "brand/avid-rc"
+number = "AV-SCH-CKD"
+name = "Schumacher Cougar KD Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Open (not Clutch) (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 1, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Schumacher Cougar KD"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Open (not Clutch), Revolution (not Clutch), Metal (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch), Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2786/Cougar-KD" },
+]
+pack_qty = 25
+pack_qty_basis = "includes"

@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-CAP-TE03"
+brand = "brand/avid-rc"
+number = "AV-CAP-TE03"
+name = "Capricorn TE03 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 4, notes = "Default: Ceramic Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Capricorn TE03"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1781/TE03" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

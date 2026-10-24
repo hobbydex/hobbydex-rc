@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-SER-SDX4"
+brand = "brand/avid-rc"
+number = "AV-SER-SDX4"
+name = "Serpent Spyder SDX4 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-4x7x2.5", qty = 4, notes = "Only option: Flanged Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-10x15x4", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Serpent Spyder SDX4"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1625/Spyder-SDX4" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

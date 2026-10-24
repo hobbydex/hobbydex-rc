@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-YOK-BD8"
+brand = "brand/avid-rc"
+number = "AV-YOK-BD8"
+name = "Yokomo BD8 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x8x2.5", qty = 5, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 5, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/yokomo/bd8", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch, Metal (oiled) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1617/BD8" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

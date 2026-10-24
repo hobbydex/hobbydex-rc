@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-LOSI-8IGHTe"
+brand = "brand/avid-rc"
+number = "AV-LOSI-8IGHTe"
+name = "Team Losi 8ight-E 2.0 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-8x14x4", qty = 6, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12.7x19.05x3.969", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight-E 2.0" },
+  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight-E 2.0" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Serpent Revolution, Metal, Ceramic Serpent Revolution, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura, Metal Shield, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/242/8ightE-20" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

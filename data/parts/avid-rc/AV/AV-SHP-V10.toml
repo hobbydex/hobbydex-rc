@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-SHP-V10"
+brand = "brand/avid-rc"
+number = "AV-SHP-V10"
+name = "Shepherd Micro Racing V10 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Shepherd Micro Racing V10"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/657/V10" },
+]
+pack_qty = 21
+pack_qty_basis = "includes"

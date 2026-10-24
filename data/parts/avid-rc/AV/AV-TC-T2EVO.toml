@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-TC-T2EVO"
+brand = "brand/avid-rc"
+number = "AV-TC-T2EVO"
+name = "Team C T2 Evo Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team C T2 Evo"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/884/T2-Evo" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

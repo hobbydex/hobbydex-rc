@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-TRX-XMAXX6"
+brand = "brand/avid-rc"
+number = "AV-TRX-XMAXX6"
+name = "Traxxas X-Maxx 6s Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/17x26x5", qty = 6, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/15x24x5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/20x27x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 1, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Traxxas X-Maxx 6s"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Rubber (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3793/XMaxx-6s" },
+]
+pack_qty = 33
+pack_qty_basis = "includes"

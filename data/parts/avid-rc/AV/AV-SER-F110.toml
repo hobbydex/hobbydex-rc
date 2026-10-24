@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-SER-F110"
+brand = "brand/avid-rc"
+number = "AV-SER-F110"
+name = "Serpent F110 Formula Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 3, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 2, notes = "Default: Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+applies_to = "Serpent F110 Formula"
+fits = [
+  { kit = "kit/serpent/f110", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Serpent F110 Formula (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/636/F110-Formula" },
+]
+pack_qty = 9
+pack_qty_basis = "includes"

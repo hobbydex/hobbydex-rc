@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-YOK-YZ2DTME"
+brand = "brand/avid-rc"
+number = "AV-YOK-YZ2DTME"
+name = "Yokomo YZ-2 DTM Essentials Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Yokomo YZ-2 DTM | Essentials (also YZ-2T | Essentials, YZ-2 CA L2 | Essentials, YZ-2 DTM 3.0 | Essentials, YZ-2 DTM 2.0 | Essentials, YZ-2 CAL3 | Essentials)"
+fits = [
+  { kit = "kit/yokomo/yz-2", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Yokomo YZ-2 DTM (link_car_kits.py)" },
+  { kit = "kit/yokomo/yz-2t", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the YZ-2T (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1745/YZ2-DTM-Essentials" },
+]
+pack_qty = 14
+pack_qty_basis = "includes"

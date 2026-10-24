@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-YOK-YR10F"
+brand = "brand/avid-rc"
+number = "AV-YOK-YR10F"
+name = "Yokomo YR-10F Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/yokomo/yr-10f", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2882/YR10F" },
+]
+pack_qty = 11
+pack_qty_basis = "includes"

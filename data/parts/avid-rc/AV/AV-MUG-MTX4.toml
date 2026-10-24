@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-MUG-MTX4"
+brand = "brand/avid-rc"
+number = "AV-MUG-MTX4"
+name = "Mugen Seiki MTX-4 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x13x5", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 2, notes = "Default: Flanged Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Ceramic Rubber, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/262/MTX4" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

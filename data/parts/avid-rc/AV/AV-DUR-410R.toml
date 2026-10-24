@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-DUR-410R"
+brand = "brand/avid-rc"
+number = "AV-DUR-410R"
+name = "Team Durango DEX410 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 2, notes = "Default: Ceramic Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Durango DEX410 (also DEX410R)"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/270/DEX410" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

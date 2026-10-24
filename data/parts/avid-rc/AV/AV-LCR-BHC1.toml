@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-LCR-BHC1"
+brand = "brand/avid-rc"
+number = "AV-LCR-BHC1"
+name = "LC Racing BHC-1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x11x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3887/BHC1" },
+]
+pack_qty = 12
+pack_qty_basis = "includes"

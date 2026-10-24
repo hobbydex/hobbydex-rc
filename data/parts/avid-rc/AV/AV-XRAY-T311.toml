@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-XRAY-T311"
+brand = "brand/avid-rc"
+number = "AV-XRAY-T311"
+name = "Xray T3 2011 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 6, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/thrust-3x8x3.5", qty = 1, notes = "Only option: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/xray/t3", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XRAY T3 2011" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled), Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/291/T3-2011" },
+]
+pack_qty = 23
+pack_qty_basis = "includes"

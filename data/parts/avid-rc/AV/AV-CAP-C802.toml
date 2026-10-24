@@ -1,0 +1,26 @@
+id = "part/avid-rc/AV-CAP-C802"
+brand = "brand/avid-rc"
+number = "AV-CAP-C802"
+name = "Capricorn C802 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x21x5", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 6, notes = "Default: Metal (not Clutch) (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 3, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 2, notes = "Default: Flanged Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/8x16x5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Capricorn C802"
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Rear, Ceramic Revolution, Ceramic Metal, Ceramic Rear, Metal (not Clutch), Revolution (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch), Ceramic Metal | Aura, Ceramic Rubber, Metal | Clutch, Ceramic Open | Aura, Metal (oiled), Ceramic Revolution | Aura, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1532/C802" },
+]
+pack_qty = 36
+pack_qty_basis = "includes"

@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-XRAY-X1"
+brand = "brand/avid-rc"
+number = "AV-XRAY-X1"
+name = "Xray X1 '16 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 3, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 2, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/xray/x1", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XRAY X1 '16" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1609/X1-16" },
+]
+pack_qty = 11
+pack_qty_basis = "includes"

@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-XRAY-XB2C17"
+brand = "brand/avid-rc"
+number = "AV-XRAY-XB2C17"
+name = "Xray XB2C '17 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x12x4", qty = 3, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x8x4", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/6x13x5", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/xray/xt2", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled), Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1600/XB2C-17" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

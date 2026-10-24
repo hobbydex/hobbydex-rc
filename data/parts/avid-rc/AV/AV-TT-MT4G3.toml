@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-TT-MT4G3"
+brand = "brand/avid-rc"
+number = "AV-TT-MT4G3"
+name = "Thunder Tiger MT4 G3 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 14, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x19x5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x8x4", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/thunder-tiger/mt4-g3", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Open, Metal | Clutch, Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1866/MT4-G3" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

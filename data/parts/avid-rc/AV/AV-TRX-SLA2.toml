@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-TRX-SLA2"
+brand = "brand/avid-rc"
+number = "AV-TRX-SLA2"
+name = "Traxxas Slash (#58024) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 15, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/traxxas/slash-2wd", releases = ["release/traxxas/58034-2"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Slash Pro 2WD OBA (#58034-2)" },
+  { kit = "kit/traxxas/ford-raptor", releases = ["release/traxxas/58094-1"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Ford F-150 Raptor (#58094-1)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/223/Slash-58024" },
+]
+pack_qty = 19
+pack_qty_basis = "includes"

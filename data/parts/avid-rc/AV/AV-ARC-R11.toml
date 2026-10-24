@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-ARC-R11"
+brand = "brand/avid-rc"
+number = "AV-ARC-R11"
+name = "ARC R11 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 4, notes = "Default: Ceramic Flanged Metal (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "ARC R11"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1502/R11" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

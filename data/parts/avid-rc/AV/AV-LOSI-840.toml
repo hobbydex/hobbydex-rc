@@ -1,0 +1,31 @@
+id = "part/avid-rc/AV-LOSI-840"
+brand = "brand/avid-rc"
+number = "AV-LOSI-840"
+name = "Team Losi 8ight 4.0 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-8x14x4", qty = 6, notes = "Default: Revolution Flanged (greased)" },
+  { spec = "spec/bearing/12.7x19.05x3.969", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/2.381x4.762x2.381", qty = 2, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-4x8x3", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Metal | Clutch (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 1, notes = "Default: Metal | Clutch (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight 4.0" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight 4.0" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight-T 4.0" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi 8ight-T 4.0" },
+]
+notes = "Each size can be ordered as one of: Revolution, Serpent Revolution, Rubber, Metal, Ceramic Serpent Revolution, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Metal Shield, Revolution | Aura, Ceramic Revolution | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1459/8ight-40" },
+]
+pack_qty = 30
+pack_qty_basis = "includes"

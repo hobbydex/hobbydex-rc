@@ -1,0 +1,26 @@
+id = "part/avid-rc/AV-TKR-NB4820E"
+brand = "brand/avid-rc"
+number = "AV-TKR-NB4820E"
+name = "Tekno NB48 2.0 Essentials Bearing Kit"
+includes = [
+  { spec = "spec/bearing/15x21x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-8x16x5", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x14x5", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/6x13x5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 1, notes = "Default: Metal | Clutch (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Metal | Clutch (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Tekno NB48 2.0 | Essentials"
+fits = [
+  { kit = "kit/tekno/nb48", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Tekno NB48 2.0 (link_car_kits.py)" },
+]
+notes = "Essentials kit: Avid leaves out the bearings that seldom need replacing: (4) 5x8 Rubber - Swaybars; (4) 5x8 Revolution - Ackermann Plate; (4) 5x10 Rubber - Caster Blocks; (4) 6x10 Revolutions - Steering Rack Bearing kit is set to include our new Clutch bearings which are metal shielded at $2/ea and designed to handle the most extreme clutch conditions. It is recommended to always blow out the grease in your clutch bearings with an air compressor.. Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Revolution | Aura, Ceramic Metal | Aura, Metal | Clutch, Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3176/NB48-20-Essentials" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-INF-18"
+brand = "brand/avid-rc"
+number = "AV-INF-18"
+name = "Infinity IF18 Onroad Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x8x2.5", qty = 12, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 12, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Metal (not Clutch) (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/infinity/if18", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Infinity IF18 Onroad" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Rubber, Metal (not Clutch), Revolution (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch), Metal | Clutch, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1709/IF18-Onroad" },
+]
+pack_qty = 34
+pack_qty_basis = "includes"

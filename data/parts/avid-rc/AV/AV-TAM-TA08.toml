@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-TAM-TA08"
+brand = "brand/avid-rc"
+number = "AV-TAM-TA08"
+name = "Tamiya TA-08 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x8x2.5", qty = 10, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/flanged-5x9x3", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 1, notes = "Default: Ceramic Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/ta08", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch, Metal (oiled) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3551/TA08" },
+]
+pack_qty = 27
+pack_qty_basis = "includes"

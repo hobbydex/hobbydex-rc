@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-AE-RC10C"
+brand = "brand/avid-rc"
+number = "AV-AE-RC10C"
+name = "Team Associated RC10 Classic Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-4.762x7.938x3.175", qty = 9, notes = "Default: Ceramic Flanged Metal | Aura (oiled)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 5, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/4.762x7.938x3.175", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+applies_to = "Team Associated RC10 Classic (also RC10CC Classic Clear)"
+fits = [
+  { kit = "kit/team-associated/rc10", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated RC10 Classic (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/680/RC10-Classic" },
+]
+pack_qty = 16
+pack_qty_basis = "includes"

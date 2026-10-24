@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-PR-SB401"
+brand = "brand/avid-rc"
+number = "AV-PR-SB401"
+name = "PR Racing SB401 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "PR Racing SB401"
+fits = [
+  { kit = "kit/pr-racing/sb401", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the PR Racing SB401 (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2906/SB401" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

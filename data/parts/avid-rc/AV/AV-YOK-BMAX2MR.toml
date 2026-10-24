@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-YOK-BMAX2MR"
+brand = "brand/avid-rc"
+number = "AV-YOK-BMAX2MR"
+name = "Yokomo B-MAX2 MR Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Yokomo B-MAX2 MR (also B-MAX2 RS)"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/616/BMAX2-MR" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

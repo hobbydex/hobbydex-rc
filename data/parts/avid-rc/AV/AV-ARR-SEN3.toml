@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-ARR-SEN3"
+brand = "brand/avid-rc"
+number = "AV-ARR-SEN3"
+name = "Arrma Granite 4x4 3s Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x18x4", qty = 8, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/10x15x4", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/15x21x4", qty = 1, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/arrma/granite", car = "Granite 4x4 3s", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Arrma Granite 4x4 3s" },
+  { kit = "kit/arrma/senton", car = "Senton 4x4 3s", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Arrma Senton 4x4 3s" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Rubber, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2898/Granite-4x4-3s" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

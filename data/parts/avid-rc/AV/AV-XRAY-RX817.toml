@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-XRAY-RX817"
+brand = "brand/avid-rc"
+number = "AV-XRAY-RX817"
+name = "Xray RX8 '17 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x18x4", qty = 12, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/flanged-8x12x3.5", qty = 2, notes = "Only option: Flanged Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/xray/rx8", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XRAY RX8 '17" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Rubber, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1677/RX8-17" },
+]
+pack_qty = 32
+pack_qty_basis = "includes"

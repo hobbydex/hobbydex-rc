@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-LOSI-MINI2"
+brand = "brand/avid-rc"
+number = "AV-LOSI-MINI2"
+name = "Team Losi Mini-T 2.0 (1/18th Scale) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x7x2.5", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 6, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/losi/mini-b", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi Mini-B (1/16 Scale)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Metal, Ceramic Metal | Aura, Metal (oiled), Ceramic Revolution (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3332/MiniT-20-118th-Scale" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

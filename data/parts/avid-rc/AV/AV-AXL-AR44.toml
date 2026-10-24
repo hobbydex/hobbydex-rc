@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-AXL-AR44"
+brand = "brand/avid-rc"
+number = "AV-AXL-AR44"
+name = "Axial SCX10 II AR44 Axles (Front and Rear) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 10, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Default: Open (greased)" },
+  { spec = "spec/bearing/5x14x5", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/axial/scx10-ii", car = "SCX10 II AR44 Axles (Front and Rear)", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Axial SCX10 II AR44 Axles (Front and Rear)" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Open, Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3174/SCX10-II-AR44-Axles-Front-and-Rear" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"
