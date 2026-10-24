@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "PS-4503HB"
 name = "PS-4503HB 3KG Plastic Gear Analog Standard Servo"
 category = "servo"
-dead_band_us = 7
-frequency_hz = 50
 category_source = "curated"
 torque_kgcm = 3.95
 voltage = 6
@@ -17,6 +15,10 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 7
+frequency_hz = 50
 notes = "JX files it under Standard servo; Stall torque 3.25 kg.cm at 4.8 V, 3.95 kg.cm at 6 V; speed 0.15 s/60deg at 4.8 V, 0.12 s/60deg at 6 V; lead 265 mm."
 material = "plastic"
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/STANDARD/SA/534.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/STANDARD/SA/534.html" },
+]

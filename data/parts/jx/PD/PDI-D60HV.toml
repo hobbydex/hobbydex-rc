@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "PDI-D60HV"
 name = "PDI-D60HV 6g Metal Gear Micro HV Coreless Servo"
 category = "servo"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 4.2
 voltage = 7.4
@@ -18,5 +16,9 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/micro-20t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under Mini servo; Stall torque 3.7 kg.cm at 6 V, 4.2 kg.cm at 7.4 V; speed 0.06 s/60deg at 6 V, 0.05 s/60deg at 7.4 V; lead 150 mm."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2026-09-08/715.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2026-09-08/715.html" },
+]

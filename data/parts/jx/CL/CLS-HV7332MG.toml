@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "CLS-HV7332MG"
 name = "CLS-HV7332MG 32KGHV High Precision Steel Gear Full CNC Aluminium Shell Structure Digital Coreless S"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 1
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 32.3
 voltage = 7.4
@@ -19,5 +15,11 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 1
+frequency_hz = 330
 notes = "JX files it under Full CNC Aluminium Shell servo; Stall torque 27.1 kg.cm at 6 V, 32.3 kg.cm at 7.4 V; speed 0.12 s/60deg at 6 V, 0.09 s/60deg at 7.4 V; lead 265 mm; programmable."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/FULL-METAL/fmcs/459.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/FULL-METAL/fmcs/459.html" },
+]

@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "BLS-12V7146"
 name = "BLS-12V7146 46KG 12V High Precision Steel Gear Full CNC Aluminium Shell Structure Digital Brushless"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 47
 voltage = 14
@@ -19,4 +15,8 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under Industrial/robot servo; Stall torque 38 kg.cm at 11.1 V, 47 kg.cm at 14 V; speed 0.12 s/60deg at 11.1 V, 0.1 s/60deg at 14 V; lead 265 mm; programmable."

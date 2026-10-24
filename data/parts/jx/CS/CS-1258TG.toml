@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "CS-1258TG"
 name = "CS-1258TG 6.0V 12KG High Torque Metal Gear Standard Coreless Servo"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 3
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 12
 voltage = 6
@@ -20,5 +16,11 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 3
+frequency_hz = 330
 notes = "JX files it under My servo; Stall torque 9.6 kg.cm at 4.8 V, 12 kg.cm at 6 V; speed 0.1 s/60deg at 4.8 V, 0.08 s/60deg at 6 V; lead 265 mm; programmable."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/sa/2025-09-18/638.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/sa/2025-09-18/638.html" },
+]
