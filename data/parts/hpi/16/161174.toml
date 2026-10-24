@@ -3,14 +3,14 @@ brand = "brand/hpi"
 number = "161174"
 name = "Button Head Screw M1.4x6mm (Silver/10pcs)"
 pack_qty = 10
-pack_qty_basis = "name"
-color = "silver"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161174" },
 ]
 fits = [
   { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
+color = "silver"
 equivalent_to = [
   { spec = "spec/screw/m1.4x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

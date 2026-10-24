@@ -3,8 +3,6 @@ brand = "brand/hpi"
 number = "67687"
 name = "Powerpin 2.2\" MT Tire (White/2pcs)"
 pack_qty = 2
-pack_qty_basis = "name"
-color = "white"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/67687" },
 ]
@@ -14,6 +12,8 @@ fits = [
   { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
+color = "white"
 category = "tire"
 wheel_size = "2.2\""
 vehicle = "monster"

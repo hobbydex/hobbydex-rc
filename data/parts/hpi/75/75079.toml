@@ -3,8 +3,6 @@ brand = "brand/hpi"
 number = "75079"
 name = "O-RING S13 (13x1.5mm/BLACK/8pcs)"
 pack_qty = 8
-pack_qty_basis = "name"
-color = "black"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/75079" },
 ]
@@ -14,6 +12,8 @@ fits = [
   { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
+color = "black"
 category = "o-ring-seal"
 equivalent_to = [
   { spec = "spec/o-ring/13x1.5", match = "functional" },

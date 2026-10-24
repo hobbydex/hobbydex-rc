@@ -1,7 +1,18 @@
 id = "part/hpi/86914"
 brand = "brand/hpi"
 number = "86914"
-name = "SHOCK SPRING 13x57x1.1mm"
+name = "SHOCK SPRING 13x57x1.1mm 12coils (3.0lb/PINK)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86914" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86914?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/mini-trophy", type = "direct", source = "doc/hpi/part-pages" },
+]
 category = "shock-spring"
 wire_mm = 1.1
-links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86914?show_disc=true" } ]
+color = "pink"
+rate_lb_in = 3
+range = "hpi/shock-spring-x-x-coils-rate-wire-springs"

@@ -3,8 +3,6 @@ brand = "brand/hpi"
 number = "Z683"
 name = "FLANGED LOCK NUT M5 (COUNTERCLOCKWISE/SILVER/4pcs)"
 pack_qty = 4
-pack_qty_basis = "name"
-color = "silver"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z683" },
 ]
@@ -12,6 +10,8 @@ fits = [
   { kit = "kit/hpi/savage", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-atv", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
+color = "silver"
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m5-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },

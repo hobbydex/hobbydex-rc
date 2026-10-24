@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "Z411"
 name = "CAP HEAD SCREW M2x8mm"
 pack_qty = 10
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z411" },
 ]
@@ -14,6 +13,7 @@ fits = [
   { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m2x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

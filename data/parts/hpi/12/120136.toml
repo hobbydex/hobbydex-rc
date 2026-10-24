@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "120136"
 name = "6-SHOT ST WHEEL (SILVER/2PCS)"
 pack_qty = 2
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/120136" },
 ]
@@ -11,8 +10,9 @@ fits = [
   { kit = "kit/hpi/jumpshot-mt", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/jumpshot-st", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 category = "wheel"
 equivalent_to = [
-  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for Jumpshot MT are 12 mm" },
+  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for Jumpshot MT V2 - Red/Blue are 12 mm" },
 ]
 color = "silver"

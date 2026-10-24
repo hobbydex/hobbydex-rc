@@ -8,5 +8,11 @@ links = [
 fits = [
   { kit = "kit/hpi/trophy-buggy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/trophy-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/trophy-buggy", type = "replaces", replaces = "part/hpi/101073", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/trophy-truggy", type = "replaces", replaces = "part/hpi/101073", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/trophy-buggy", type = "replaces", replaces = "part/hpi/101671", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/trophy-truggy", type = "replaces", replaces = "part/hpi/101671", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "steering"
+material = "aluminium"
+material_grade = "7075"

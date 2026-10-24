@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "Z242"
 name = "E CLIP E2mm"
 pack_qty = 20
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z242" },
 ]
@@ -42,6 +41,7 @@ fits = [
   { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/2mm", match = "functional", notes = "Shaft size from the name" },

@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "3115"
 name = "6 SPOKE WHEEL WHITE (83x56mm/2pcs)"
 pack_qty = 2
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/3115" },
 ]
@@ -15,8 +14,9 @@ fits = [
   { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 category = "wheel"
 color = "white"
 equivalent_to = [
-  { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for Savage Flux HP are 17 mm" },
+  { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for Savage Flux HP RTR 2.4GHz are 17 mm" },
 ]

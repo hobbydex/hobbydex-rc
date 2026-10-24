@@ -3,8 +3,6 @@ brand = "brand/hpi"
 number = "67926"
 name = "PROTO TIRE (2pcs/Pink/1/8 Buggy)"
 pack_qty = 2
-pack_qty_basis = "name"
-color = "pink"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/67926" },
 ]
@@ -16,6 +14,8 @@ fits = [
   { kit = "kit/hpi/trophy-buggy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
+color = "pink"
 category = "tire"
 scale = "1/8"
 vehicle = "buggy"

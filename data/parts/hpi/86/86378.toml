@@ -3,8 +3,6 @@ brand = "brand/hpi"
 number = "86378"
 name = "SPACER 4x8x6.5mm(PURPLE/8pcs)"
 pack_qty = 8
-pack_qty_basis = "name"
-color = "purple"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86378" },
 ]
@@ -13,6 +11,8 @@ fits = [
   { kit = "kit/hpi/savage-atv", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
+color = "purple"
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/4x8x6.5", match = "functional", notes = "Size parsed from the manufacturer's description" },

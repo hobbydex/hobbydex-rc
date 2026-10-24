@@ -3,8 +3,16 @@ brand = "brand/hpi"
 number = "Z634"
 name = "TP. BINDER HEAD SCREW M4x15mm"
 pack_qty = 10
-pack_qty_basis = "page"
-category = "screw"
 links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z634" },
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z634?show_disc=true" },
 ]
+fits = [
+  { kit = "kit/hpi/savage", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-atv", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-flux", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
+]
+pack_qty_basis = "page"
+category = "screw"

@@ -3,13 +3,13 @@ brand = "brand/hpi"
 number = "106429"
 name = "CAP HEAD SCREW M3x33mm"
 pack_qty = 10
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/106429" },
 ]
 fits = [
   { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m3x33-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

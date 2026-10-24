@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "86121"
 name = "WASHER 5x10x3mm (BRASS/4pcs)"
 pack_qty = 4
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86121" },
 ]
@@ -12,6 +11,7 @@ fits = [
   { kit = "kit/hpi/savage-atv", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },

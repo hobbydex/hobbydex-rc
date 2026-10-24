@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "Z702"
 name = "SET SCREW M3x5mm"
 pack_qty = 10
-pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z702" },
 ]
@@ -21,6 +20,7 @@ fits = [
   { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m3x5-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

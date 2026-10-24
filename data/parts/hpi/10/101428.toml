@@ -7,5 +7,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/pulse", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/pulse", type = "replaces", replaces = "part/hpi/101364", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
+material = "carbon"

@@ -1,5 +1,20 @@
 id = "part/hpi/106189"
 brand = "brand/hpi"
 number = "106189"
-name = "106192"
-links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/106189?show_disc=true" } ]
+name = "MK.8 V2 WHEEL MATTE CHROME(4.5mm OFFSET/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/106189" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/106189?show_disc=true" },
+]
+fits = [
+  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+]
+category = "wheel"
+color = "chrome"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for JUMPSHOT SC are 12 mm" },
+]
+offset_mm = 4.5

@@ -7,6 +7,7 @@ kind = "rtr"
 status = "discontinued"
 documents = ["doc/hpi/105866-kit-page", "doc/hpi/115876-vol02-rtr-firestorm-10t-060215", "doc/hpi/115876-vol02-rtr-firestorm-10t-060215-e"]
 notes = "Release year unknown; HPI's pages state none"
+supersedes = "release/hpi/10511"
 contains = [
   { part = "part/hpi/100310", role = "kit", source = "doc/hpi/105866-kit-page" },
   { part = "part/hpi/100311", role = "kit", source = "doc/hpi/105866-kit-page" },
@@ -215,4 +216,3 @@ contains = [
   { part = "part/hpi/15148", role = "listed", source = "doc/hpi/115876-vol02-rtr-firestorm-10t-060215" },
   { part = "part/hpi/Z423", role = "listed", source = "doc/hpi/115876-vol02-rtr-firestorm-10t-060215" },
 ]
-supersedes = "release/hpi/10511"

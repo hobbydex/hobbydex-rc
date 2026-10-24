@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "6876"
 name = "SHOCK SHAFT 3x55mm (STAINLESS STEEL/2pcs)"
 pack_qty = 2
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/6876" },
 ]
@@ -11,4 +10,9 @@ fits = [
   { kit = "kit/hpi/nitro-mt2", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/nitro-rush", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 category = "shock"
+shock_part = "shaft"
+shaft_mm = 3
+length_mm = 55
+material = "steel"

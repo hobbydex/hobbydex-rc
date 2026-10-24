@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "Z700"
 name = "SET SCREW M3x3mm"
 pack_qty = 6
-pack_qty_basis = "page"
 former_names = ["#z700 - SET SCREW M3x3mm"]
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z700" },
@@ -53,6 +52,7 @@ fits = [
   { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
