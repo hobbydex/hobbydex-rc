@@ -1,8 +1,9 @@
 id = "part/absima/1230878"
 brand = "brand/absima"
 number = "1230878"
-name = "8*3.2*0.5 Washers"
+name = "8*3.2*0.5 Washers (10)"
 pack_qty = 10
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/adb1", type = "direct", source = "doc/absima/spares-adb1" },
 ]
@@ -10,4 +11,6 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/3.2x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230878" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230878" },
+]
