@@ -3,12 +3,11 @@ kit = "kit/traxxas/mini-rally"
 brand = "brand/traxxas"
 number = "108046-1"
 name = "Mini Rally VXL Ford RS200 RTR (108046-1)"
-kind = "rtr"
-status = "released"
 seen_by = "2025-10"
 seen_by_source = "https://web.archive.org/web/20251026170714/https://traxxas.com/media/productattach/C-108046-1/2/108046-1-OM-DE-R00.pdf"
 depicts = { make = "Ford", model = "RS200" }
-notes = "on sale by: the manual's copyright line (c) 2025"
+kind = "rtr"
+status = "released"
 documents = ["doc/traxxas/108046-1-parts-list", "doc/traxxas/108046-1-owners-manual", "doc/traxxas/108046-1-product-page"]
 contains = [
   { part = "part/traxxas/10719", role = "kit", source = "doc/traxxas/108046-1-parts-list" },
@@ -281,3 +280,4 @@ contains = [
   { part = "part/traxxas/9917", role = "option", source = "doc/traxxas/108046-1-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/108046-1-parts-list" },
 ]
+notes = "on sale by: the manual's copyright line (c) 2025"

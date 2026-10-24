@@ -3,12 +3,11 @@ kit = "kit/traxxas/trx-4"
 brand = "brand/traxxas"
 number = "92144-4"
 name = "TRX-4 Ford F-150 RTR (92144-4)"
-kind = "rtr"
-status = "released"
 seen_by = "2026-05"
 seen_by_source = "https://traxxas.com/trx-4-ford-f-150-92144-4"
 depicts = { make = "Ford", model = "F-150" }
-notes = "on sale by: the manual's print code (260515 92144-4-OM-EN-R00)"
+kind = "rtr"
+status = "released"
 documents = ["doc/traxxas/92144-4-parts-list", "doc/traxxas/92144-4-owners-manual", "doc/traxxas/92144-4-product-page"]
 contains = [
   { part = "part/traxxas/1552", role = "kit", source = "doc/traxxas/92144-4-parts-list" },
@@ -493,3 +492,4 @@ contains = [
   { part = "part/traxxas/9917", role = "option", source = "doc/traxxas/92144-4-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/92144-4-parts-list" },
 ]
+notes = "on sale by: the manual's print code (260515 92144-4-OM-EN-R00)"

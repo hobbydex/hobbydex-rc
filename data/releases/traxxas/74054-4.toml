@@ -3,12 +3,11 @@ kit = "kit/traxxas/rally"
 brand = "brand/traxxas"
 number = "74054-4"
 name = "Ford Fiesta ST XL-5 AWD Rally Car w/ TQ Radio RTR (74054-4)"
-kind = "rtr"
-status = "discontinued"
 seen_by = "2019"
 seen_by_source = "https://traxxas.com/74054-4-110-ford-fiesta-st-xl-5-awd-rally-car-w-tq-radio"
 depicts = { make = "Ford", model = "Fiesta ST XL-5" }
-notes = "on sale by: the manual's copyright line (c) 2019"
+kind = "rtr"
+status = "discontinued"
 documents = ["doc/traxxas/74054-4-parts-list", "doc/traxxas/74054-4-owners-manual", "doc/traxxas/74054-4-product-page"]
 contains = [
   { part = "part/traxxas/1552", role = "kit", source = "doc/traxxas/74054-4-parts-list" },
@@ -43,7 +42,7 @@ contains = [
   { part = "part/traxxas/2254", role = "option", source = "doc/traxxas/74054-4-parts-list" },
   { part = "part/traxxas/2255", role = "option", source = "doc/traxxas/74054-4-parts-list" },
   { part = "part/traxxas/2260", role = "option", source = "doc/traxxas/74054-4-parts-list" },
-  { part = "part/traxxas/2362", role = "listed", source = "doc/traxxas/74054-4-parts-list" },
+  { part = "part/traxxas/2362", role = "option", source = "doc/traxxas/74054-4-parts-list" },
   { part = "part/traxxas/2416", role = "option", source = "doc/traxxas/74054-4-parts-list" },
   { part = "part/traxxas/2419", role = "option", source = "doc/traxxas/74054-4-parts-list" },
   { part = "part/traxxas/2423", role = "option", source = "doc/traxxas/74054-4-parts-list" },
@@ -326,3 +325,4 @@ contains = [
   { part = "part/traxxas/9909", role = "option", source = "doc/traxxas/74054-4-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/74054-4-parts-list" },
 ]
+notes = "on sale by: the manual's copyright line (c) 2019"
