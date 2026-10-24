@@ -3,12 +3,11 @@ kit = "kit/traxxas/trx-6"
 brand = "brand/traxxas"
 number = "88296-4"
 name = "TRX-6 Mercedes-Benz G 63 RTR (88296-4)"
-kind = "rtr"
-status = "discontinued"
 seen_by = "2025-01"
 seen_by_source = "https://web.archive.org/web/20250116034902/https://traxxas.com/products/landing/trx6-g63/images/88296-4-intro-6x6-design.jpg"
 depicts = { make = "Mercedes-Benz", model = "G 63" }
-notes = "on sale by: the manual's copyright line (c) 2025"
+kind = "rtr"
+status = "discontinued"
 documents = ["doc/traxxas/88296-4-parts-list", "doc/traxxas/88296-4-owners-manual", "doc/traxxas/88296-4-product-page"]
 contains = [
   { part = "part/traxxas/1552", role = "kit", source = "doc/traxxas/88296-4-parts-list" },
@@ -405,3 +404,4 @@ contains = [
   { part = "part/traxxas/9909", role = "option", source = "doc/traxxas/88296-4-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/88296-4-parts-list" },
 ]
+notes = "on sale by: the manual's copyright line (c) 2025"
