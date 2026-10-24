@@ -2,8 +2,16 @@ id = "part/maverick/150339"
 brand = "brand/maverick"
 number = "150339"
 name = "Aluminum 17mm Hex Hub Set"
+pack_qty = 2
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150339" },
+]
+fits = [
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },
 ]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150339?show_disc=true" } ]
+material = "aluminium"

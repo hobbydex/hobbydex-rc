@@ -3,5 +3,16 @@ brand = "brand/maverick"
 number = "100551"
 name = "LOCK NUT M2.5"
 pack_qty = 4
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/100551" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "nut"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/100551?show_disc=true" } ]
+equivalent_to = [
+  { spec = "spec/nut/m2.5-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

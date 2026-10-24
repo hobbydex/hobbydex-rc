@@ -1,6 +1,14 @@
 id = "part/maverick/151045"
 brand = "brand/maverick"
 number = "151045"
-name = "Rear Driveshaft"
+name = "Rear Driveshaft (Plastic/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151045" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "drivetrain"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151045?show_disc=true" } ]
+material = "plastic"

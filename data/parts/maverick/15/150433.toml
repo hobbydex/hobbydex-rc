@@ -3,8 +3,14 @@ brand = "brand/maverick"
 number = "150433"
 name = "14mm Hex Hub Set"
 pack_qty = 4
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150433" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/14mm", match = "exact", notes = "Hex size from the name" },
 ]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150433?show_disc=true" } ]

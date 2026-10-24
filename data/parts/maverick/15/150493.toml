@@ -1,9 +1,14 @@
 id = "part/maverick/150493"
 brand = "brand/maverick"
 number = "150493"
-name = "Aluminum Steering Plate"
+name = "Aluminum Steering Plate (Gold)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150493" },
+]
 fits = [
-  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
 ]
 category = "steering"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150493?show_disc=true" } ]
+color = "gold"
+material = "aluminium"

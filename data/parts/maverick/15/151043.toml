@@ -1,9 +1,17 @@
 id = "part/maverick/151043"
 brand = "brand/maverick"
 number = "151043"
-name = "Aluminum Shock Set"
+name = "Aluminum Shock Set (Assembled/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151043" },
+]
 fits = [
-  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbit", type = "replaces", replaces = "part/maverick/151042", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151043?show_disc=true" } ]
+shock_part = "complete"
+material = "aluminium"

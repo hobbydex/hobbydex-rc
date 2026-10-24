@@ -1,10 +1,18 @@
 id = "part/maverick/94304"
 brand = "brand/maverick"
 number = "94304"
-name = "TP. FLAT HEAD SCREW M3x10mm"
+name = "TP. FLAT HEAD SCREW M3x10mm (HEX SOCKET/10pcs)"
+pack_qty = 10
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/94304" },
+]
+fits = [
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/94304?show_disc=true" } ]

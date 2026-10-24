@@ -2,9 +2,13 @@ id = "part/maverick/150669"
 brand = "brand/maverick"
 number = "150669"
 name = "Shock Cap Set (Grey)"
-color = "gray"
-fits = [
-  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150669" },
 ]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
+color = "gray"
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150669?show_disc=true" } ]
+shock_part = "cap"

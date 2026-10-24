@@ -1,6 +1,14 @@
 id = "part/maverick/MV28018"
 brand = "brand/maverick"
 number = "MV28018"
-name = "Composite Diff. Outdrives"
+name = "Composite Diff. Outdrives 2Pcs (ALL Ion)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28018" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "differential"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28018?show_disc=true" } ]
+pack_qty = 2
+pack_qty_basis = "name"
+material = "plastic"

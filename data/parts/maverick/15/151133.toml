@@ -2,9 +2,16 @@ id = "part/maverick/151133"
 brand = "brand/maverick"
 number = "151133"
 name = "Ball Bearing 7.93x12.7x3.96mm"
+pack_qty = 4
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151133" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/7.938x12.7x3.969", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151133?show_disc=true" } ]

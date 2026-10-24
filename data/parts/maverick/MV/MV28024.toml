@@ -3,6 +3,14 @@ brand = "brand/maverick"
 number = "MV28024"
 name = "Pin 2x22mm 6Pcs"
 pack_qty = 6
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28024" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 pack_qty_basis = "name"
 category = "pin"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28024?show_disc=true" } ]
+equivalent_to = [
+  { spec = "spec/pin/2x22", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

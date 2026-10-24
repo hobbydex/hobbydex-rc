@@ -3,10 +3,13 @@ brand = "brand/maverick"
 number = "150536"
 name = "Wheel Washers (Blue/4pcs)"
 pack_qty = 4
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150536" },
+]
+fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
+]
 pack_qty_basis = "name"
 color = "blue"
-fits = [
-  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
-]
 category = "washer-shim"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150536?show_disc=true" } ]

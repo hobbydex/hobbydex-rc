@@ -1,7 +1,13 @@
 id = "part/maverick/160156"
 brand = "brand/maverick"
 number = "160156"
-name = "Plazma 7.2V 1200mAh NiMH Mini"
+name = "Plazma 7.2V 1200mAh NiMH Mini Stick Battery Pack"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160156" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/battery/nimh-6s-1200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]
@@ -9,4 +15,3 @@ chemistry = "nimh"
 cells = 6
 capacity_mah = 1200
 category = "battery"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160156?show_disc=true" } ]

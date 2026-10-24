@@ -1,12 +1,19 @@
 id = "part/maverick/151076"
 brand = "brand/maverick"
 number = "151076"
-name = "Pinion Gear 14T (0.6M/3.175mm"
+name = "Pinion Gear 14T (0.6M/3.175mm Shaft/Sintered)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151076" },
+]
 fits = [
-  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/mod0.6-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 category = "pinion"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151076?show_disc=true" } ]
+bore_mm = 5
+teeth = 14
+module = 0.6

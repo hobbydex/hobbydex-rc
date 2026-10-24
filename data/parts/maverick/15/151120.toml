@@ -1,10 +1,19 @@
 id = "part/maverick/151120"
 brand = "brand/maverick"
 number = "151120"
-name = "Button Head Screw M2.5x15mm"
+name = "Button Head Screw M2.5x15mm (Hex/Socket/8pcs)"
+pack_qty = 8
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151120" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2.5x15-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151120?show_disc=true" } ]

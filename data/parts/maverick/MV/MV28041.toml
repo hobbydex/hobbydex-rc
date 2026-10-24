@@ -3,6 +3,14 @@ brand = "brand/maverick"
 number = "MV28041"
 name = "Flanged Lock Nut M3 6Pcs"
 pack_qty = 6
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28041" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 pack_qty_basis = "name"
 category = "nut"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28041?show_disc=true" } ]
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -3,9 +3,14 @@ brand = "brand/maverick"
 number = "MV24035"
 name = "E-Clips 4.0mm 8 Pcs"
 pack_qty = 8
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV24035" },
+]
+fits = [
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
 pack_qty_basis = "name"
 category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },
 ]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV24035?show_disc=true" } ]

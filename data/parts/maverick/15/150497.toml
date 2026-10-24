@@ -2,9 +2,13 @@ id = "part/maverick/150497"
 brand = "brand/maverick"
 number = "150497"
 name = "Aluminum Motor Mount (Grey)"
-color = "gray"
-fits = [
-  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150497" },
 ]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
+color = "gray"
 category = "chassis"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150497?show_disc=true" } ]
+material = "aluminium"

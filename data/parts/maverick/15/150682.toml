@@ -1,6 +1,18 @@
 id = "part/maverick/150682"
 brand = "brand/maverick"
 number = "150682"
-name = "Mounted Linebacker Tire on MT"
+name = "Mounted Linebacker Tire on MT Wheel (Green/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150682" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "tire"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150682?show_disc=true" } ]
+color = "green"
+vehicle = "monster"
+mounting = "pre-mounted"
+wheel_color = "green"

@@ -1,9 +1,17 @@
 id = "part/maverick/150555"
 brand = "brand/maverick"
 number = "150555"
-name = "Aluminum Oil-Filled Shock"
+name = "Aluminum Oil-Filled Shock Absorber Set (Blue/4pcs)"
+pack_qty = 4
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150555" },
+]
 fits = [
-  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
 ]
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150555?show_disc=true" } ]
+color = "blue"
+shock_part = "complete"
+material = "aluminium"

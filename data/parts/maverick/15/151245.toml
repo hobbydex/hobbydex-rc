@@ -1,9 +1,12 @@
 id = "part/maverick/151245"
 brand = "brand/maverick"
 number = "151245"
-name = "Quantum RX Conversion Set -"
-fits = [
-  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150350-kit-page" },
-  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/150313-kit-page" },
+name = "Quantum RX Conversion Set - Fluoro Green"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151245" },
 ]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151245?show_disc=true" } ]
+fits = [
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+]
+color = "green"

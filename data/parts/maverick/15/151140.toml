@@ -3,5 +3,13 @@ brand = "brand/maverick"
 number = "151140"
 name = "Pin 1.8x9mm"
 pack_qty = 8
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151140" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "pin"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151140?show_disc=true" } ]
+equivalent_to = [
+  { spec = "spec/pin/1.8x9", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

@@ -1,5 +1,13 @@
 id = "part/maverick/151240"
 brand = "brand/maverick"
 number = "151240"
-name = "MTX-314G 2.4GHz 4Ch"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151240?show_disc=true" } ]
+name = "MTX-314G 2.4GHz 4Ch Transmitter"
+former_names = ["MTX-314G 2.4GHz 4Ch"]
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151240" },
+]
+fits = [
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "radio"

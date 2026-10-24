@@ -3,12 +3,16 @@ brand = "brand/maverick"
 number = "151035"
 name = "12mm Hex Hub (Metal/4pcs)"
 pack_qty = 4
-pack_qty_basis = "name"
-fits = [
-  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151035" },
 ]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
+pack_qty_basis = "name"
 category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151035?show_disc=true" } ]

@@ -1,6 +1,11 @@
 id = "part/maverick/MV28107"
 brand = "brand/maverick"
 number = "MV28107"
-name = "MSRS-249 2 IN 1 RECEIVER/ESC"
-category = "esc"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28107?show_disc=true" } ]
+name = "MSRS-249 2 IN 1 RECEIVER/ESC 2.4GHZ"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28107" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "motor"

@@ -1,9 +1,13 @@
 id = "part/maverick/160794"
 brand = "brand/maverick"
 number = "160794"
-name = "Plazma 7.4V 5300mAh 40C LiPo"
+name = "Plazma 7.4V 5300mAh 40C LiPo Pack 39.22Wh - XT60"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160794" },
+]
 fits = [
-  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
 ]
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-5300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
@@ -15,4 +19,4 @@ c_rating = 40
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "convention"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160794?show_disc=true" } ]
+connector = "XT60"

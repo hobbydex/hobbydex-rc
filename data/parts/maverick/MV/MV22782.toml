@@ -1,5 +1,14 @@
 id = "part/maverick/MV22782"
 brand = "brand/maverick"
 number = "MV22782"
-name = "MTX-244 MAVERICK 2.4GHZ 3CH"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22782?show_disc=true" } ]
+name = "MTX-244 MAVERICK 2.4GHZ 3CH TRANSMITTER"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22782" },
+]
+fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "radio"

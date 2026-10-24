@@ -2,8 +2,13 @@ id = "part/maverick/151038"
 brand = "brand/maverick"
 number = "151038"
 name = "Steering Turnbuckle Set"
+pack_qty = 2
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151038" },
+]
 fits = [
-  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
 ]
 category = "turnbuckle"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151038?show_disc=true" } ]

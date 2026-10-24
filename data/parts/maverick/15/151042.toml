@@ -1,6 +1,15 @@
 id = "part/maverick/151042"
 brand = "brand/maverick"
 number = "151042"
-name = "Plastic Shock Set"
+name = "Plastic Shock Set (Assembled/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151042" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151042?show_disc=true" } ]
+shock_part = "complete"
+material = "plastic"

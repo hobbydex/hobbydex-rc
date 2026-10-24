@@ -1,9 +1,18 @@
 id = "part/maverick/160151"
 brand = "brand/maverick"
 number = "160151"
-name = "Plazma 7.2V 3300mAh NiMH Stick"
+name = "Plazma 7.2V 3300mAh NiMH Stick Battery Pack"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160151" },
+]
 fits = [
-  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-dc", type = "direct", source = "doc/maverick/MV12618-kit-page" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-mt", type = "direct", source = "doc/maverick/MV12615-kit-page" },
+  { kit = "kit/maverick/strada-sc", type = "direct", source = "doc/maverick/MV12617-kit-page" },
+  { kit = "kit/maverick/strada-tc", type = "direct", source = "doc/maverick/MV12616-kit-page" },
+  { kit = "kit/maverick/strada-xb", type = "direct", source = "doc/maverick/MV12613-kit-page" },
 ]
 equivalent_to = [
   { spec = "spec/battery/nimh-6s-3300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
@@ -12,4 +21,3 @@ chemistry = "nimh"
 cells = 6
 capacity_mah = 3300
 category = "battery"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160151?show_disc=true" } ]

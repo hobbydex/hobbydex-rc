@@ -1,8 +1,14 @@
 id = "part/maverick/MV28002"
 brand = "brand/maverick"
 number = "MV28002"
-name = "Complete Shock Absorber 2Pcs"
+name = "Complete Shock Absorber 2Pcs (ALL Ion)"
 pack_qty = 2
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28002" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 pack_qty_basis = "name"
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28002?show_disc=true" } ]
+shock_part = "complete"

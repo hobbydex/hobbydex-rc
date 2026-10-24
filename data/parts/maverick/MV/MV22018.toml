@@ -1,6 +1,11 @@
 id = "part/maverick/MV22018"
 brand = "brand/maverick"
 number = "MV22018"
-name = "Differential Drive Pinion"
+name = "Differential Drive Pinion 13T"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22018" },
+]
+fits = [
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "differential"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22018?show_disc=true" } ]

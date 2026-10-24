@@ -1,6 +1,16 @@
 id = "part/maverick/MV30003"
 brand = "brand/maverick"
 number = "MV30003"
-name = "MSC-30BL-WP BRUSHLESS SPEED"
-category = "motor"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV30003?show_disc=true" } ]
+name = "MSC-30BL-WP BRUSHLESS SPEED CONTROLLER (T-PLUG)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV30003" },
+]
+fits = [
+  { kit = "kit/maverick/strada-dc", type = "direct", source = "doc/maverick/MV12618-kit-page" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-mt", type = "direct", source = "doc/maverick/MV12615-kit-page" },
+  { kit = "kit/maverick/strada-sc", type = "direct", source = "doc/maverick/MV12617-kit-page" },
+  { kit = "kit/maverick/strada-tc", type = "direct", source = "doc/maverick/MV12616-kit-page" },
+  { kit = "kit/maverick/strada-xb", type = "direct", source = "doc/maverick/MV12613-kit-page" },
+]
+category = "esc"

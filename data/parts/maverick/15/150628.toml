@@ -1,9 +1,17 @@
 id = "part/maverick/150628"
 brand = "brand/maverick"
 number = "150628"
-name = "18T Aluminium Pinion Gear (0.8"
+name = "18T Aluminium Pinion Gear (0.8 M / 32DP 3.175 Shaft)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150628" },
+]
 fits = [
-  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
 ]
 category = "pinion"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150628?show_disc=true" } ]
+equivalent_to = [
+  { spec = "spec/pinion/mod0.8-18t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "aluminium"
+teeth = 18
+pitch_dp = 32

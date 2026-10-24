@@ -2,4 +2,9 @@ id = "part/maverick/150530"
 brand = "brand/maverick"
 number = "150530"
 name = "Hardware Set (Atom)"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150530?show_disc=true" } ]
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150530" },
+]
+fits = [
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
+]

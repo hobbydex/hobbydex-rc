@@ -2,9 +2,14 @@ id = "part/maverick/150275"
 brand = "brand/maverick"
 number = "150275"
 name = "Aluminum Servo Saver Arm Set"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150275" },
+]
 fits = [
-  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150350-kit-page" },
-  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/150313-kit-page" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "replaces", replaces = "part/maverick/150132", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "replaces", replaces = "part/maverick/150132", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "steering"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150275?show_disc=true" } ]
+material = "aluminium"

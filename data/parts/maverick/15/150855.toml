@@ -2,9 +2,13 @@ id = "part/maverick/150855"
 brand = "brand/maverick"
 number = "150855"
 name = "Aluminum Gear Box Set (Grey)"
-color = "gray"
-fits = [
-  { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/150870-kit-page" },
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150855" },
 ]
+fits = [
+  { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/microbe-sc", type = "direct", source = "doc/maverick/part-pages" },
+]
+color = "gray"
 category = "gear"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150855?show_disc=true" } ]
+material = "aluminium"

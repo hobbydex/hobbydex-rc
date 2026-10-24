@@ -1,10 +1,19 @@
 id = "part/maverick/151118"
 brand = "brand/maverick"
 number = "151118"
-name = "TP. Flat Head Screw M2.6x8mm"
+name = "TP. Flat Head Screw M2.6x8mm (Hex/Socket/8pcs)"
+pack_qty = 8
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151118" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2.6x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151118?show_disc=true" } ]

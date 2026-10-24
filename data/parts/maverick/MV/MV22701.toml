@@ -1,12 +1,21 @@
 id = "part/maverick/MV22701"
 brand = "brand/maverick"
 number = "MV22701"
-name = "25T Pinion Gear (0.8 Module)"
+name = "25T Pinion Gear (0.8 Module) (ALL Strada EVO )"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22701" },
+]
 fits = [
-  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/MV12628-kit-page" },
+  { kit = "kit/maverick/strada-dc", type = "direct", source = "doc/maverick/MV12618-kit-page" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-mt", type = "direct", source = "doc/maverick/MV12615-kit-page" },
+  { kit = "kit/maverick/strada-sc", type = "direct", source = "doc/maverick/MV12617-kit-page" },
+  { kit = "kit/maverick/strada-tc", type = "direct", source = "doc/maverick/MV12616-kit-page" },
+  { kit = "kit/maverick/strada-xb", type = "direct", source = "doc/maverick/MV12613-kit-page" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/mod0.8-25t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 category = "pinion"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22701?show_disc=true" } ]
+teeth = 25
+module = 0.8

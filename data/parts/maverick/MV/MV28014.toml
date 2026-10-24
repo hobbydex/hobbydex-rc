@@ -1,6 +1,15 @@
 id = "part/maverick/MV28014"
 brand = "brand/maverick"
 number = "MV28014"
-name = "Plastic Pinion Gear 13 Tooth"
+name = "Plastic Pinion Gear 13 Tooth 2Pcs (ALL Ion)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28014" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "pinion"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28014?show_disc=true" } ]
+pack_qty = 2
+pack_qty_basis = "name"
+teeth = 13
+material = "plastic"

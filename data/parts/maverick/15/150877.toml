@@ -1,0 +1,17 @@
+id = "part/maverick/150877"
+brand = "brand/maverick"
+number = "150877"
+name = "2mm Motor Plate (7075/Gunmetal)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150877" },
+]
+fits = [
+  { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/microbe-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/microbe", type = "replaces", replaces = "part/maverick/150834", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/microbe-sc", type = "replaces", replaces = "part/maverick/150834", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+]
+category = "chassis"
+color = "gun metal"
+material = "aluminium"
+material_grade = "7075"

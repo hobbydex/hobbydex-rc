@@ -1,5 +1,12 @@
 id = "part/maverick/150540"
 brand = "brand/maverick"
 number = "150540"
-name = "MTX-200 2.4GHz 2Ch"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150540?show_disc=true" } ]
+name = "MTX-200 2.4GHz 2Ch Transmitter"
+former_names = ["MTX-200 2.4GHz 2Ch"]
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150540" },
+]
+fits = [
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "radio"

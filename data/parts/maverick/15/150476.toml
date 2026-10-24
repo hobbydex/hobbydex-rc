@@ -2,9 +2,16 @@ id = "part/maverick/150476"
 brand = "brand/maverick"
 number = "150476"
 name = "Button Head Screw M2x14mm"
+pack_qty = 10
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150476" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150476?show_disc=true" } ]

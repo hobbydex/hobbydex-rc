@@ -1,10 +1,17 @@
 id = "part/maverick/151121"
 brand = "brand/maverick"
 number = "151121"
-name = "Button Head Screw M3x12mm"
+name = "Button Head Screw M3x12mm (Hex/Socket/8pcs)"
+pack_qty = 8
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151121" },
+]
+fits = [
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151121?show_disc=true" } ]

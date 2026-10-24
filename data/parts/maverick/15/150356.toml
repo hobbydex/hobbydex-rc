@@ -1,9 +1,18 @@
 id = "part/maverick/150356"
 brand = "brand/maverick"
 number = "150356"
-name = "Pinion Gear 12T (32DP/3.175mm"
+name = "Pinion Gear 12T (32DP/3.175mm Shaft)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150356" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/pinion/32dp-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 category = "pinion"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150356?show_disc=true" } ]
+bore_mm = 5
+teeth = 12
+pitch_dp = 32

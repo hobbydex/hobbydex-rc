@@ -3,9 +3,13 @@ brand = "brand/maverick"
 number = "151061"
 name = "Differential Cup (Metal/2pcs)"
 pack_qty = 2
-pack_qty_basis = "name"
-fits = [
-  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151061" },
 ]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
+pack_qty_basis = "name"
 category = "differential"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151061?show_disc=true" } ]

@@ -1,6 +1,16 @@
 id = "part/maverick/MV22602"
 brand = "brand/maverick"
 number = "MV22602"
-name = "MM - 22BL 3215KV Brushless"
+name = "MM - 22BL 3215KV Brushless Motor"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22602" },
+]
+fits = [
+  { kit = "kit/maverick/strada-dc", type = "direct", source = "doc/maverick/MV12618-kit-page" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-mt", type = "direct", source = "doc/maverick/MV12615-kit-page" },
+  { kit = "kit/maverick/strada-sc", type = "direct", source = "doc/maverick/MV12617-kit-page" },
+  { kit = "kit/maverick/strada-tc", type = "direct", source = "doc/maverick/MV12616-kit-page" },
+  { kit = "kit/maverick/strada-xb", type = "direct", source = "doc/maverick/MV12613-kit-page" },
+]
 category = "motor"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22602?show_disc=true" } ]

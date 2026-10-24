@@ -1,10 +1,17 @@
 id = "part/maverick/MV28034"
 brand = "brand/maverick"
 number = "MV28034"
-name = "Button Head Screw M2.5 x 10mm"
+name = "Button Head Screw M2.5 x 10mm 6Pcs"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28034" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2.5x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28034?show_disc=true" } ]
+pack_qty = 6
+pack_qty_basis = "name"

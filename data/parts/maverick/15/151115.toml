@@ -1,6 +1,18 @@
 id = "part/maverick/151115"
 brand = "brand/maverick"
 number = "151115"
-name = "TP. Button Head Screw M2"
+name = "TP. Button Head Screw M2.6x15mm (Hex/Socket/8pcs)"
+pack_qty = 8
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151115" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151115?show_disc=true" } ]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x15-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

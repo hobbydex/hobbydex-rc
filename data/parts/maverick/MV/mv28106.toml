@@ -1,5 +1,12 @@
 id = "part/maverick/mv28106"
 brand = "brand/maverick"
 number = "mv28106"
-name = "#MV28106 - MTX-249 2.4GHZ 2CH ION"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/mv28106?show_disc=true" } ]
+name = "MTX-249 2.4GHZ 2CH ION TRANSMITTER"
+former_names = ["#MV28106 - MTX-249 2.4GHZ 2CH ION"]
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/mv28106" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "radio"

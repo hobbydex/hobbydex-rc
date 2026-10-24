@@ -1,9 +1,13 @@
 id = "part/maverick/150314"
 brand = "brand/maverick"
 number = "150314"
-name = "QuantumR Muscle Car Clear"
-color = "clear"
-fits = [
-  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150350-kit-page" },
+name = "QuantumR Muscle Car Clear Body"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150314" },
 ]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150314?show_disc=true" } ]
+fits = [
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+]
+color = "clear"
+category = "body"

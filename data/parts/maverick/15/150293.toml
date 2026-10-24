@@ -1,13 +1,18 @@
 id = "part/maverick/150293"
 brand = "brand/maverick"
 number = "150293"
-name = "QuantumR Muscle Car Wheel"
+name = "QuantumR Muscle Car Wheel (Black/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150293" },
+]
 fits = [
-  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150311-kit-page" },
-  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/150351-kit-page" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
 ]
 category = "wheel"
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for QuantumR Muscle Car - Blue are 17 mm" },
 ]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150293?show_disc=true" } ]
+color = "black"

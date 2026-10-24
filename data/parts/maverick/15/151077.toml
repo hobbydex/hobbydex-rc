@@ -1,13 +1,20 @@
 id = "part/maverick/151077"
 brand = "brand/maverick"
 number = "151077"
-name = "Pinion Gear 10T (0.8M/3.175mm"
+name = "Pinion Gear 10T (0.8M/3.175mm Shaft/Steel)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151077" },
+]
 fits = [
-  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
-  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/151200-kit-page" },
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/mod0.8-10t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 category = "pinion"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151077?show_disc=true" } ]
+bore_mm = 5
+material = "steel"
+teeth = 10
+module = 0.8

@@ -1,10 +1,17 @@
 id = "part/maverick/MV23065"
 brand = "brand/maverick"
 number = "MV23065"
-name = "Flat Head Screw M3x15mm (10"
+name = "Flat Head Screw M3x15mm"
+pack_qty = 10
+former_names = ["Flat Head Screw M3x15mm (10"]
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV23065" },
+]
+fits = [
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x15-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV23065?show_disc=true" } ]
