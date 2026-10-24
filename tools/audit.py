@@ -834,6 +834,11 @@ def main():
     bal_name = re.compile(r"\bbalanc\w*[^,;|()]{0,30}\bjst[- ]?xhr?\b|\bjst[- ]?xhr?\b[^,;|()]{0,30}\bbalanc\w*", re.I)
     bal = [p for p in parts if p.get("category") == "battery" and not p.get("balance_connector") and bal_name.search(p.get("name", ""))]
     check("battery-balance-name-no-connector", "set balance_connector = \"JST-XH\" when the maker states it (tools/link_part_connectors.py --balance)", bal, per_brand=per_brand(bal))
+    # a battery accessory (tape, lid, clasp, cup, strap ...) or a device named with its battery is filed as battery by mistake (tools/classify_parts.py)
+    acc = re.compile(r"\b(tapes?|lids?|clasp|cups?|straps?|holders?|trays?|covers?|clamps?|plates?|mounts?|boosters?)\b", re.I)
+    bat_acc = [p for p in parts if p.get("category") == "battery" and acc.search(p.get("name", ""))
+               and not re.search(r"lipo|li-?po|nimh|li-?ion|\bpack\b|\d{3,5} ?mah", p.get("name", ""), re.I)]
+    check("battery-accessory-name", "set the category an accessory belongs to (tape, lid, clasp, cup, strap: chassis or body; a device with its battery: that device) (tools/classify_parts.py)", bat_acc, per_brand=per_brand(bat_acc))
 
     # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
     hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
