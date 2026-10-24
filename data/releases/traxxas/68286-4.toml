@@ -3,11 +3,10 @@ kit = "kit/traxxas/slash-4x4"
 brand = "brand/traxxas"
 number = "68286-4"
 name = "Slash 4X4 VXL Brushless Short Course Truck w/ TQi RTR (68286-4)"
-kind = "rtr"
-status = "discontinued"
 seen_by = "2023-10"
 seen_by_source = "https://traxxas.com/68286-4-110-slash-4x4-vxl-brushless-short-course-truck-w-tqi"
-notes = "on sale by: the manual's print code (231006 68286-4-OM-FR-R00)"
+kind = "rtr"
+status = "discontinued"
 documents = ["doc/traxxas/68286-4-parts-list", "doc/traxxas/68286-4-owners-manual", "doc/traxxas/68286-4-product-page"]
 contains = [
   { part = "part/traxxas/10125", role = "kit", source = "doc/traxxas/68286-4-parts-list" },
@@ -47,7 +46,7 @@ contains = [
   { part = "part/traxxas/2270", role = "option", source = "doc/traxxas/68286-4-parts-list" },
   { part = "part/traxxas/2271", role = "option", source = "doc/traxxas/68286-4-parts-list" },
   { part = "part/traxxas/2272", role = "option", source = "doc/traxxas/68286-4-parts-list" },
-  { part = "part/traxxas/2362", role = "listed", source = "doc/traxxas/68286-4-parts-list" },
+  { part = "part/traxxas/2362", role = "option", source = "doc/traxxas/68286-4-parts-list" },
   { part = "part/traxxas/2514", role = "option", source = "doc/traxxas/68286-4-parts-list" },
   { part = "part/traxxas/2534", role = "kit", source = "doc/traxxas/68286-4-parts-list" },
   { part = "part/traxxas/2537", role = "kit", source = "doc/traxxas/68286-4-parts-list" },
@@ -531,3 +530,4 @@ contains = [
   { part = "part/traxxas/9917", role = "option", source = "doc/traxxas/68286-4-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/68286-4-parts-list" },
 ]
+notes = "on sale by: the manual's print code (231006 68286-4-OM-FR-R00)"

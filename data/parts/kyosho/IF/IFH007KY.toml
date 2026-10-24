@@ -3,13 +3,16 @@ brand = "brand/kyosho"
 number = "IFH007KY"
 name = "Dish Wheel(4pcs/F-Yellow/MP11)"
 pack_qty = 4
-pack_qty_basis = "name"
 released = "2026-01"
+gtin = "4548565514991"
+category = "wheel"
 documents = ["doc/kyosho/rc-newitem-2026-01-parts"]
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/rc-newitem-2026-01-parts" },
   { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
 ]
-category = "wheel"
 color = "yellow"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ifh007ky.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/ifh007ky.html" },
+]

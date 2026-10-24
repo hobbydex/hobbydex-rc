@@ -3,5 +3,13 @@ brand = "brand/lc-racing"
 number = "L6007"
 name = "Steering Block,C-Hub,Upright Set"
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT, LC12B1"
-notes = "Components: SPINDLE CARRIER L (BE6036); SPINDLE CARRIER R (BE6037); LEFT SPINDLE (BE6038); RIGHT SPINDLE (BE6039); LEFT REAR HUB (BE6040); RIGHT REAR HUB (BE6041); SWERVE BUSHING (HM6025)"
 category = "steering"
+includes = [
+  { part = "part/lc-racing/BE6036" },
+  { part = "part/lc-racing/BE6037" },
+  { part = "part/lc-racing/BE6038" },
+  { part = "part/lc-racing/BE6039" },
+  { part = "part/lc-racing/BE6040" },
+  { part = "part/lc-racing/BE6041" },
+  { part = "part/lc-racing/HM6025" },
+]

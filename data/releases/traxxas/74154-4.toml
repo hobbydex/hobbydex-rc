@@ -3,12 +3,11 @@ kit = "kit/traxxas/rally"
 brand = "brand/traxxas"
 number = "74154-4"
 name = "Ford Fiesta ST Rally BL-2s RTR (74154-4)"
-kind = "rtr"
-status = "released"
 seen_by = "2024-01"
 seen_by_source = "https://web.archive.org/web/20240122040724/https://traxxas.com/products/landing/fiesta-st-rally-bl-2s/images/74154-4-RED-specs-side.jpg"
 depicts = { make = "Ford", model = "Fiesta ST Rally" }
-notes = "on sale by: the manual's copyright line (c) 2024"
+kind = "rtr"
+status = "released"
 documents = ["doc/traxxas/74154-4-parts-list", "doc/traxxas/74154-4-owners-manual", "doc/traxxas/74154-4-product-page"]
 contains = [
   { part = "part/traxxas/1552", role = "kit", source = "doc/traxxas/74154-4-parts-list" },
@@ -38,7 +37,7 @@ contains = [
   { part = "part/traxxas/2272", role = "option", source = "doc/traxxas/74154-4-parts-list" },
   { part = "part/traxxas/2280", role = "option", source = "doc/traxxas/74154-4-parts-list" },
   { part = "part/traxxas/2287", role = "option", source = "doc/traxxas/74154-4-parts-list" },
-  { part = "part/traxxas/2362", role = "listed", source = "doc/traxxas/74154-4-parts-list" },
+  { part = "part/traxxas/2362", role = "option", source = "doc/traxxas/74154-4-parts-list" },
   { part = "part/traxxas/2441A", role = "kit", source = "doc/traxxas/74154-4-parts-list" },
   { part = "part/traxxas/2514", role = "option", source = "doc/traxxas/74154-4-parts-list" },
   { part = "part/traxxas/2534", role = "kit", source = "doc/traxxas/74154-4-parts-list" },
@@ -387,3 +386,4 @@ contains = [
   { part = "part/traxxas/9917", role = "option", source = "doc/traxxas/74154-4-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/74154-4-parts-list" },
 ]
+notes = "on sale by: the manual's copyright line (c) 2024"
