@@ -381,7 +381,7 @@ def main():
                 m = re.match(r"(\S+): parts \d+, linked (\d+)", line)
                 if m and int(m[2]):
                     unlinked[m[1]] = int(m[2])
-                m = re.match(r"(\S+): links removed \(page gone\) (\d+)", line)
+                m = re.match(r"(\S+): links (?:removed \(page gone\)|marked gone) (\d+)", line)
                 if m:
                     pruned[m[1]] = int(m[2])
             rows = [r.rstrip("\n").split("\t") for r in sample]
@@ -391,7 +391,7 @@ def main():
             "count": sum(unlinked.values()), "examples": flagged[:args.examples],
             "all": sorted({r["id"] for r in flagged}), "per_brand": sorted(unlinked.items(), key=lambda x: -x[1])}
         results["maker-link-page-gone"] = {
-            "fix": "the crawl has the page as 404 on a recheck; the daily derive step removes the link (tools/link_maker_pages.py)",
+            "fix": "the crawl has the page as 404 on a recheck; the daily derive step marks the link gone (tools/link_maker_pages.py) and an archive link follows once a capture is cached",
             "count": sum(pruned.values()), "examples": [], "all": [], "per_brand": sorted(pruned.items(), key=lambda x: -x[1])}
     else:
         results["maker-page-unlinked"] = {"fix": "hobbydex-tools link_maker_pages.py not found (--tools)", "count": None, "examples": [], "all": []}
