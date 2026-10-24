@@ -10,7 +10,7 @@ links = [
 fits = [
   { kit = "kit/redcat/earthquake", type = "direct", source = "doc/redcat/store" },
 ]
-equivalent_to = [
-  { spec = "spec/screw/m4x10-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 category = "screw"
+includes = [
+  { spec = "spec/screw/m4x10-countersunk-phillips", notes = "Size from this item's words in the manufacturer's name" },
+]

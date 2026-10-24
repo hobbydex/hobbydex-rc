@@ -5,11 +5,11 @@ name = "2x25mm Cap Screw w/Nut"
 ocr_names = ["2mm Lock Nut", "2x25mm Cap Screw", "2x25mm Cap Screw & 2mm Lock Nut"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. Finish read from the bag photo on Tamiya's site (https://www.tamiya.com/japan_contents/img/usr/item/4/49350/49350_1.jpg)."
 name_source = "ocr"
-equivalent_to = [
-  { spec = "spec/screw/m2x25-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/512-49350", kind = "fan-site" },
 ]
 finish = "black oxide"
+includes = [
+  { spec = "spec/screw/m2x25-socket-cap-hex", qty = 1, notes = "Size from this item's words in the manufacturer's name" },
+]
