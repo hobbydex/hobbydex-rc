@@ -598,7 +598,7 @@ C-00180-714). The site shows it on both parts.
 
 A generic, brand-independent specification. Category-specific fields; for
 screws: `thread`, `length_mm`, `head` (countersunk | socket-cap | button |
-pan | flanged-socket-cap | flanged-button | flanged-pan | low-head | set | truss; the brand names each code in [brand-hardware-names.md](brand-hardware-names.md)), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
+pan | flanged-socket-cap | flanged-button | flanged-pan | low-head | set | truss | hex (a hexagon head, with no socket: Tamiya's hex head screws, whose drive is jis); the brand names each code in [brand-hardware-names.md](brand-hardware-names.md)), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
 the same geometry exists in many materials.
 
 ```toml
@@ -916,6 +916,8 @@ part's `material`. Parts in category washer-shim link with match
 0.1/0.2/0.3mm") list one `includes` row per spec, with `qty` where the name
 gives it. Lock, spring, serrated, wedge and flanged washers, flanged and
 crush tubes and rubber or foam body-mount spacers get no washer spec.
+
+A washer spec that a published standard fixes cites it in `standards` (`standards = ["DIN 125"]`, with a `data/standards` entry). A maker that cites no standard for its washer links it to the closest such spec with match "close": the closest by outer diameter, only within 0.3 mm, and the part's notes give the measured outer diameter and the manual it was measured from (doc/tamiya/56376-manual).
 
 ```toml
 id = "spec/washer/3x6x0.5"
