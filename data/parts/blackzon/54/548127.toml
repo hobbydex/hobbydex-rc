@@ -3,7 +3,11 @@ brand = "brand/blackzon"
 number = "548127"
 name = "Wheels/Tires Assembled"
 pack_qty = 4
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/548127" },
+]
 fits = [
+  { kit = "kit/blackzon/myte", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/myte", type = "direct", source = "doc/blackzon/548100-kit-page" },
 ]
 category = "tire"

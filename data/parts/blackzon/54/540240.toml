@@ -1,10 +1,19 @@
 id = "part/blackzon/540240"
 brand = "brand/blackzon"
 number = "540240"
-name = "Rear Drive Shafts"
+name = "Rear Drive Shafts (Steel/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540240" },
+]
 fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/540227-kit-page" },
   { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/540226-kit-page" },
   { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/540225-kit-page" },
 ]
 category = "drivetrain"
+material = "steel"

@@ -1,5 +1,13 @@
 id = "part/blackzon/540125"
 brand = "brand/blackzon"
 number = "540125"
-name = "Steering Assembly & Servo"
-category = "servo"
+name = "Steering Assembly & Servo Mount Set"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540125" },
+]
+fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
+]
+category = "chassis"

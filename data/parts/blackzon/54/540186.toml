@@ -1,10 +1,19 @@
 id = "part/blackzon/540186"
 brand = "brand/blackzon"
 number = "540186"
-name = "Smyter Oil-Filled Shock Set"
+name = "Smyter Oil-Filled Shock Set (2pcs/Front)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540186" },
+]
 fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/540227-kit-page" },
   { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/540226-kit-page" },
   { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/540225-kit-page" },
 ]
 category = "shock"
+shock_part = "complete"

@@ -9,3 +9,6 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5.1x8x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+fits = [
+  { kit = "kit/yikong/yk4101", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
+]

@@ -1,0 +1,17 @@
+id = "part/yikong/34-yikong-yk4104-parts-6000mah-2s-lipo-battery"
+brand = "brand/yikong"
+name = "YK4104 Parts 6000mAh 2s lipo Battery"
+source = "doc/yikong/yikongrccar-dealer-listing"
+links = [
+  { site = "yikongrccar.com (dealer)", url = "https://www.yikongrccar.com/yikong-yk4104-upgrades/34-yikong-yk4104-parts-6000mah-2s-lipo-battery.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/yikong/yk4104", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 6000
