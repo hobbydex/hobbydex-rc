@@ -673,8 +673,10 @@ soft | shorty), `dimensions_mm` ([length, width, height]), `weight_g` and
 `connector` ("JST-XH" only, for now): the maker states it, and no cell count
 alone sets it. Its pin count follows from `cells` (pins = cells + 1), so the
 site links a pack with `cells = 3` and `balance_connector = "JST-XH"` to
-`spec/connector/jst-xh-4`. A pack that states another balance plug (Traxxas
-iD built-in, EHR, TP, Hyperion) takes no value until a spec for it exists.
+`spec/connector/jst-xh-4`. A pack that states another balance plug (EHR, TP,
+Hyperion) takes no value until a spec for it exists. A Traxxas iD pack takes
+none either: its balance runs through the iD main plug, and no balance value
+names that plug (user, 2026-10-24).
 NiMH and Li-Ion packs have none (a maker's own statement of a lead still counts).
 `balance_connector` is the battery's secondary plug, not its main `connector`
 (the power plug): the site shows the two as separate rows, and a connector spec
@@ -684,7 +686,7 @@ maker's text names JST-XH, `"convention"` when nothing is stated and the pack is
 a LiPo, LiHV or LiFe of 2S to 8S (the usual balance lead; the site says it is not
 stated by the maker). Set by `tools/link_part_connectors.py --category battery
 --balance`, which never changes a maker value and recomputes a convention value on every run (a maker statement of JST-XH relabels it "maker"; another plug or an exclusion clears it); a pack whose maker or name states
-another balance system (EHR, G-Tech, TP, Hyperion, XHP, Traxxas iD), a Spektrum
+another balance system (EHR, G-Tech, TP, Hyperion, XHP), a Traxxas iD pack (its own page claims the iD plug and sells no iD charging port for it), a Spektrum
 Smart pack, a 1S pack, a pack without `chemistry` or `cells`, and NiMH packs get
 none. `chemistry` is set from the name when the name states it (LiPo, LiHV, LiFe, NiMH; tools/name_fields.py), so a pack without a stated chemistry gets none.
 
