@@ -842,6 +842,19 @@ def main():
     wire = [p for p in parts if p.get("category") == "wire" and PLUG.search(p.get("name", "")) and not p.get("connectors")]
     check("wire-plug-no-connectors", "set connectors to the plugs the lead carries (from the name or the maker's page)", wire, per_brand=per_brand(wire))
 
+    # servo plugs: a part whose name gives only Futaba (or a Futaba servo) linked to the JR plug, or only JR to Futaba
+    def servo_plugs(p):
+        eq = {str(e.get("spec", "")) for e in p.get("equivalent_to", []) if isinstance(e, dict)}
+        names = set(p.get("connectors", [])) | ({p["connector"]} if isinstance(p.get("connector"), str) else set())
+        return ({"JR"} if "spec/connector/servo-jr" in eq or "JR" in names else set()) | ({"Futaba"} if "spec/connector/servo-futaba" in eq or "Futaba" in names else set())
+    def servo_named(p):
+        n = p.get("name", "")
+        fut = bool(re.search(r"futaba|\bJ[- ]?plug", n, re.I)) or (p.get("brand") == "brand/futaba" and p.get("category") == "servo")
+        jr = bool(re.search(r"\bJR\b|hitec|universal", n, re.I))
+        return "Futaba" if fut and not jr else "JR" if jr and not fut else None
+    crossed = [p for p in parts if (want := servo_named(p)) and (got := servo_plugs(p)) and want not in got]
+    check("servo-plug-crossed", "link the servo plug the name gives: Futaba (J, with the lip) or JR (bevelled corners); they mate but are two specs", crossed, per_brand=per_brand(crossed))
+
     bat = [p for p in parts if p.get("category") in ("battery", "esc") and not p.get("connector")]
     check("battery-esc-no-connector", "set connector to the plug the pack or ESC uses (from the maker's page or manual)", bat, per_brand=per_brand(bat))
 

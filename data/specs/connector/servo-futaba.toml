@@ -1,0 +1,12 @@
+id = "spec/connector/servo-futaba"
+category = "connector"
+name = "Futaba J servo plug"
+family = "Futaba"
+pins = 3
+pitch_mm = 2.54
+pitch_mm_source = "https://www.flysky-cn.com/g7pdownloads"
+anti_spark = false
+polarized = true
+polarization = "a lip on the short side, next to the signal wire"
+polarization_source = "https://futabausa.com/product-support/manuals/"
+notes = "Futaba's J plug: three contacts 2.54 mm apart, with a lip on the short side of the housing next to the signal (white) wire, as Futaba draws it on its S3004 servo sheet. It plugs into a JR socket and a JR plug into a Futaba socket; where the lip blocks a socket it is cut off, as Tekin's REBEL 2 manual says of its Futaba J plug (\"the side tab ... can be removed to fit\"). The JR plug has two bevelled corners instead of the lip."

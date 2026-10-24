@@ -667,6 +667,17 @@ site links a pack with `cells = 3` and `balance_connector = "JST-XH"` to
 `spec/connector/jst-xh-4`. A pack that states another balance plug (Traxxas
 iD built-in, EHR, TP, Hyperion) takes no value until a spec for it exists.
 NiMH packs have none.
+`balance_connector` is the battery's secondary plug, not its main `connector`
+(the power plug): the site shows the two as separate rows, and a connector spec
+lists a battery under its balance section, never as its main plug.
+`balance_connector_basis` says where the value comes from: `"maker"` when the
+maker's text names JST-XH, `"convention"` when nothing is stated and the pack is
+a LiPo, LiHV or LiFe of 2S to 8S (the usual balance lead; the site says it is not
+stated by the maker). Set by `tools/link_part_connectors.py --category battery
+--balance`, which never changes a maker value and recomputes a convention value on every run (a maker statement of JST-XH relabels it "maker"; another plug or an exclusion clears it); a pack whose maker or name states
+another balance system (EHR, G-Tech, TP, Hyperion, XHP, Traxxas iD), a Spektrum
+Smart pack, a 1S pack, a pack without `chemistry` or `cells`, and NiMH packs get
+none. `chemistry` is set from the name when the name states it (LiPo, LiHV, LiFe, NiMH; tools/name_fields.py), so a pack without a stated chemistry gets none.
 
 ```toml
 name = "1100mAh 3S 60C 11.4V(HV) Lipo Battery | XT30 Plug"
@@ -1012,10 +1023,13 @@ size, as the makers name them: XT30, XT60, XT60H and XT90-S (anti-spark),
 XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC3 and IC5
 (EC-compatible), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
 mini Tamiya, JST-RCY, JST-XH (`jst-xh`, and `jst-xh-3` to `jst-xh-9` for the
-2S to 8S balance lead, pins = cells + 1), the JR/Futaba servo plug, bullets by
-diameter (`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`,
-`pins` (the contact count, when a family has one), `contact_mm` (pin or
-bullet diameter), `anti_spark` and `polarized` (booleans). A current is set
+2S to 8S balance lead, pins = cells + 1), the two servo plugs (`servo-jr`
+with two bevelled corners and `servo-futaba`, the Futaba J plug with a lip;
+they plug into each other but are two shapes), bullets by diameter
+(`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`, `pins`
+(the contact count, when a family has one), `pitch_mm` (contact spacing),
+`contact_mm` (pin or bullet diameter), `anti_spark` and `polarized`
+(booleans), and `polarization` (how the housing keys, in words). A current is set
 only from a source: `current_a` (continuous) and `burst_a` (when stated),
 each with `<field>_source`, the maker's own page; the wire gauge the rating
 depends on goes in `notes`.
@@ -1041,6 +1055,9 @@ BEEC1056 is a lead, so it lists its two plugs (XT60, and Traxxas iD for
 same maker, BEEC2034F "Connector : XT60 Female plug", is equivalent to
 `spec/connector/xt60`. Plug names map to specs in tools/validate.py
 (`PLUG_SPEC`), the same table as tools/link_connector_specs.py (`PLUG_NAME`).
+A servo plug is named "JR" or "Futaba" as the name gives it; "JR/Futaba" is
+one plug sold as fitting both (a charge lead or switch harness named for both
+radios) and links to both specs.
 tools/validate.py checks that each entry maps to an existing connector spec,
 that `connectors` is only on wire parts, and that a part has not both
 `connectors` and a connector-spec row.

@@ -4,6 +4,8 @@ This file is the contract between the data repo and hobbydex/hobbydex: the
 site reads only this export, never the TOML tree. Bump schema_version when a
 field changes meaning or disappears. Every record also carries `toml_path`,
 its file in this repo (data/parts/...), which is not a field of the TOML.
+`retired` lists data/retired.toml: ids that are gone, each with its reason
+and, when one took its place, replaced_by (the site redirects those).
 A kit, release or body part with a file in art/ carries `art`: the `d`
 attribute of its path(s), joined with a space, to draw in a 48x24 viewBox (the
 viewBox is the same for every file, so it is not repeated).
@@ -43,6 +45,8 @@ def main():
                     items.append(d)
         items.sort(key=lambda d: d["id"])
         doc[folder] = items
+    with open(os.path.join("data", "retired.toml"), "rb") as f:
+        doc["retired"] = tomllib.load(f).get("retired", [])
     os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
     with open(out, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
