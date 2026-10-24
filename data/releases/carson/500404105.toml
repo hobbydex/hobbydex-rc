@@ -4,13 +4,15 @@ brand = "brand/carson"
 number = "500404105"
 name = "1:10 Dirt Warrior Brushless 2.0 RTR"
 kind = "rtr"
-status = "released"
-seen_by = "2017"
-seen_by_source = "https://customer-service.carson-modelsport.com/en/service/manuals/?lp=3&ln=90&ls=name-asc&ps="
-notes = ": the shop and the manuals state none; no longer in the Carson shop; on sale by: the manual's date (Stand Jul 2017)"
+status = "discontinued"
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available; on sale by: the manual's date (Stand Jul 2017)"
 documents = ["doc/carson/500404105-dirtwarriorbrushlessii-dina5-final-juli2017"]
+links = [
+  { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-10-dirt-warrior-brushless-20-rtr-500404105-en.html" },
+]
 contains = [
   { part = "part/carson/500405342", role = "kit", source = "doc/carson/500404105-dirtwarriorbrushlessii-dina5-final-juli2017" },
+  { part = "part/carson/500405343", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405344", role = "kit", source = "doc/carson/500404105-dirtwarriorbrushlessii-dina5-final-juli2017" },
   { part = "part/carson/500405345", role = "kit", source = "doc/carson/500404105-dirtwarriorbrushlessii-dina5-final-juli2017" },
   { part = "part/carson/500405346", role = "kit", source = "doc/carson/500404105-dirtwarriorbrushlessii-dina5-final-juli2017" },
@@ -44,3 +46,5 @@ contains = [
   { part = "part/carson/500405836", role = "option", source = "doc/carson/500404105-dirtwarriorbrushlessii-dina5-final-juli2017" },
   { part = "part/carson/500900099", role = "option", source = "doc/carson/500404105-dirtwarriorbrushlessii-dina5-final-juli2017" },
 ]
+seen_by = "2017"
+seen_by_source = "https://customer-service.carson-modelsport.com/en/service/manuals/?lp=3&ln=90&ls=name-asc&ps="

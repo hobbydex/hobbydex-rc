@@ -6,10 +6,14 @@ name = "Dirt Warrior BL Water Pro 2.4 GHz 100% RTR"
 kind = "rtr"
 status = "discontinued"
 notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available"
+documents = ["doc/carson/500404042-manual-brushless-set", "doc/carson/500404042-manual", "doc/carson/500404042-tuningteile-warrior", "doc/carson/500404042-dirtwarrior-ersatzteile-zusatzblatt", "doc/carson/500404042-beiblatt-x10eb-dirtwarrior"]
 links = [
   { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-10-x10-dirt-warbl-water-pro-100rtr-500404042-en.html" },
 ]
 contains = [
+  { part = "part/carson/500405343", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405345", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405348", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405349", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405355", role = "listed", source = "doc/carson/shop" },
 ]
-documents = ["doc/carson/500404042-manual-brushless-set", "doc/carson/500404042-manual", "doc/carson/500404042-tuningteile-warrior", "doc/carson/500404042-dirtwarrior-ersatzteile-zusatzblatt", "doc/carson/500404042-beiblatt-x10eb-dirtwarrior"]

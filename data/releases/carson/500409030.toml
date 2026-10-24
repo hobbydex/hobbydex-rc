@@ -5,6 +5,22 @@ number = "500409030"
 name = "Porsche 934 Turbo RSR CY-5 6S 2,4G RTR"
 kind = "rtr"
 status = "released"
-depicts = { make = "Porsche", model = "934 Turbo RSR CY-5" }
 notes = "Release year unknown: the shop and the manuals state none; no longer in the Carson shop"
 documents = ["doc/carson/500409030-manual"]
+contains = [
+  { part = "part/carson/500205456", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500205457", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500205646", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500205647", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500205648", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500205661", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500205683", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500205733", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500405116", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500405451", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500405452", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500405453", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500405454", role = "kit", source = "doc/carson/500409030-manual" },
+  { part = "part/carson/500405455", role = "kit", source = "doc/carson/500409030-manual" },
+]
+depicts = { make = "Porsche", model = "934 Turbo RSR CY-5" }

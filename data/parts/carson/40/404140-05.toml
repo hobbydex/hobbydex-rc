@@ -2,8 +2,13 @@ id = "part/carson/404140-05"
 brand = "brand/carson"
 number = "404140-05"
 name = "FE-Line Chassis Set gray"
-color = "gray"
+fits = [
+  { kit = "kit/carson/mega-duster", type = "direct", source = "doc/carson/shop" },
+  { kit = "kit/carson/rodstar", type = "direct", source = "doc/carson/shop" },
+  { kit = "kit/carson/torque-beast", type = "direct", source = "doc/carson/shop" },
+]
 links = [
   { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/spare-parts-accessories/rc-spares/additional-spares/fe-line-chassis-set-gray-404140-05-en.html" },
 ]
+color = "gray"
 category = "chassis"

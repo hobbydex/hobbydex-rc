@@ -5,21 +5,23 @@ number = "500404050"
 name = "1:10 X10 Dirt Warrior Sport 2.4G 100%RTR"
 kind = "rtr"
 status = "discontinued"
-seen_by = "2013"
-seen_by_source = "https://customer-service.carson-modelsport.com/en/service/manuals/?lp=3&ln=90&ls=name-asc&ps="
-notes = ": the shop and the manuals state none; the shop lists it in its archive as no longer available; on sale by: the manual's date (Stand Nov 2013)"
-documents = ["doc/carson/500404050-manual-x10eb-dirtwarrior-sport", "doc/carson/500404050-beileger-dirtwarrior-sport", "doc/carson/500404050-tuningteile-warriors"]
+notes = "Release year unknown: the shop and the manuals state none; the shop lists it in its archive as no longer available; on sale by: the manual's date (Stand Nov 2013)"
+documents = ["doc/carson/500404050-manual-x10eb-dirtwarrior-sport", "doc/carson/500404050-tuningteile-warriors", "doc/carson/500404050-beileger-dirtwarrior-sport"]
 links = [
   { site = "Carson archive", url = "https://www.carson-modelsport.com/carson_en/archive/1-10-x10-dirt-warrior-sport-24g-100rtr-500404050-en.html" },
 ]
 contains = [
+  { part = "part/carson/500405343", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405345", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405346", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
   { part = "part/carson/500405348", role = "listed", source = "doc/carson/shop" },
+  { part = "part/carson/500405349", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405350", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
   { part = "part/carson/500405351", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
   { part = "part/carson/500405352", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
   { part = "part/carson/500405353", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
   { part = "part/carson/500405354", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
+  { part = "part/carson/500405355", role = "listed", source = "doc/carson/shop" },
   { part = "part/carson/500405446", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
   { part = "part/carson/500405447", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
   { part = "part/carson/500405565", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
@@ -39,3 +41,5 @@ contains = [
   { part = "part/carson/500800081", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
   { part = "part/carson/500900099", role = "kit", source = "doc/carson/500404050-manual-x10eb-dirtwarrior-sport" },
 ]
+seen_by = "2013"
+seen_by_source = "https://customer-service.carson-modelsport.com/en/service/manuals/?lp=3&ln=90&ls=name-asc&ps="
