@@ -1,5 +1,5 @@
 """python3 -I -m unittest discover -s tools -p test_regression_check.py (from the repository root)"""
-import os, sys, unittest
+import os, shutil, subprocess, sys, tempfile, unittest
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import regression_check as rc
 
@@ -21,6 +21,108 @@ class Repointed(unittest.TestCase):
     def test_other_role_or_source_is_a_removal(self):
         rows = [{"part": "part/arrma/ARAC9074", "role": "kit", "source": "doc/arrma/ara8406-manual"}]
         self.assertIsNone(rc.repointed(self.old, rows, {"part/arrma/ARA330200": "part/arrma/ARAC9074"}))
+
+
+def upgrade_fixture():
+    parts = {
+        "part/a/S1": {"id": "part/a/S1", "brand": "brand/a", "name": "Wheel Hex Adapter", "category": "suspension", "material": "plastic"},
+        "part/a/X1": {"id": "part/a/X1", "brand": "brand/a", "name": "Wheel Hex Adapter - Alu.", "category": "suspension", "material": "aluminium"},
+    }
+    releases = [{"kit": "kit/a/k", "contains": [{"part": "part/a/S1", "role": "kit", "source": "doc/a/m"},
+                                                {"part": "part/a/X1", "role": "option", "source": "doc/a/m"}]}]
+    return parts, releases
+
+
+class Derived(unittest.TestCase):
+    def test_upgrade_of_a_stock_part_is_derived(self):
+        parts, releases = upgrade_fixture()
+        row = dict(kit="kit/a/k", type="replaces", replaces="part/a/S1", source="doc/a/m", notes=rc.LINK_NOTE)
+        self.assertIn(rc.canon(row), rc.derive_upgrades(parts, releases)["part/a/X1"])
+
+    def test_no_stock_part_in_the_kit_is_no_upgrade(self):
+        parts, releases = upgrade_fixture()
+        releases[0]["contains"] = [c for c in releases[0]["contains"] if c["role"] != "kit"]
+        self.assertEqual(rc.derive_upgrades(parts, releases), {})
+
+    def test_material_must_be_an_upgrade(self):
+        parts, releases = upgrade_fixture()
+        parts["part/a/S1"]["material"] = "aluminium"
+        self.assertEqual(rc.derive_upgrades(parts, releases), {})
+
+    def test_gained_only(self):
+        self.assertTrue(rc.gained_only({"k": 1, "releases": ["a"]}, {"k": 1, "releases": ["a", "b"]}))
+        self.assertFalse(rc.gained_only({"k": 1, "releases": ["a"]}, {"k": 2, "releases": ["a", "b"]}))
+        self.assertFalse(rc.gained_only({"k": 1, "releases": ["a", "b"]}, {"k": 1, "releases": ["a"]}))
+
+
+class FormerNames(unittest.TestCase):
+    def test_former_name_equal_to_the_current_name_is_dropped(self):
+        o = {"name": "C-Hubs: 4x4 BLX 4S", "brand": "brand/arrma", "former_names": ["C-Hubs"]}
+        n = {"name": "C-Hubs", "brand": "brand/arrma"}
+        self.assertEqual(rc.canonical_removal(o, n, "former_names", "C-Hubs"), "former name is the current name")
+
+    def test_listing_line_is_dropped(self):
+        o = {"name": "Shock Shaft 4x59.5mm", "brand": "brand/arrma", "former_names": ["Shock Shaft 4x59.5mm (2)"]}
+        n = {"name": "Shock Shaft 4x61mm", "brand": "brand/arrma"}
+        self.assertEqual(rc.canonical_removal(o, n, "former_names", "Shock Shaft 4x59.5mm (2)"), "listing line, never a former name")
+
+    def test_former_name_that_is_not_the_current_name_is_a_loss(self):
+        o = {"name": "Gear 48P 36T", "brand": "brand/a", "former_names": ["Gear 32P 40T"]}
+        n = {"name": "Gear 48P 36T 3mm", "brand": "brand/a"}
+        self.assertIsNone(rc.canonical_removal(o, n, "former_names", "Gear 32P 40T"))
+
+
+class Repository(unittest.TestCase):
+    """Check() on two commits of a small data tree: a derived fits row is explained only when the head no longer
+    derives it."""
+
+    NOTE = rc.LINK_NOTE
+
+    def commit(self, root, files, message):
+        subprocess.run(["git", "-C", root, "rm", "-rq", "--ignore-unmatch", "data"], check=True)
+        for path, text in files.items():
+            full = os.path.join(root, path)
+            os.makedirs(os.path.dirname(full), exist_ok=True)
+            with open(full, "w", encoding="utf-8") as f:
+                f.write(text)
+        subprocess.run(["git", "-C", root, "add", "-A", "data"], check=True)
+        subprocess.run(["git", "-C", root, "-c", "user.name=t", "-c", "user.email=t@example.invalid", "commit", "-qm", message], check=True)
+        return subprocess.run(["git", "-C", root, "rev-parse", "HEAD"], capture_output=True, text=True, check=True).stdout.strip()
+
+    def files(self, stock_name, derived_row):
+        fits = f"fits = [ {derived_row} ]\n" if derived_row else ""
+        return {
+            "data/parts/a/S1.toml": 'id = "part/a/S1"\nbrand = "brand/a"\nname = "%s"\ncategory = "suspension"\nmaterial = "plastic"\n' % stock_name,
+            "data/parts/a/X1.toml": 'id = "part/a/X1"\nbrand = "brand/a"\nname = "Wheel Hex Adapter - Alu."\ncategory = "suspension"\nmaterial = "aluminium"\n' + fits,
+            "data/releases/a/k.toml": 'kit = "kit/a/k"\nname = "Kit"\ncontains = [\n'
+                                      '  { part = "part/a/S1", role = "kit", source = "doc/a/m" },\n'
+                                      '  { part = "part/a/X1", role = "option", source = "doc/a/m" },\n]\n',
+        }
+
+    def check(self, base_files, head_files):
+        root = tempfile.mkdtemp()
+        cwd = os.getcwd()
+        try:
+            subprocess.run(["git", "-C", root, "init", "-q"], check=True)
+            os.chdir(root)
+            base = self.commit(root, base_files, "base")
+            head = self.commit(root, head_files, "head")
+            return rc.Check(base, head).run()
+        finally:
+            os.chdir(cwd)
+            shutil.rmtree(root, ignore_errors=True)
+
+    def test_derived_row_the_head_still_derives_is_a_regression(self):
+        row = f'{{ kit = "kit/a/k", type = "replaces", replaces = "part/a/S1", source = "doc/a/m", notes = "{self.NOTE}" }}'
+        ck = self.check(self.files("Wheel Hex Adapter", row), self.files("Wheel Hex Adapter", None))
+        regs = [e for e in ck.events if e["regression"]]
+        self.assertEqual([e["field"] for e in regs], ["fits"])
+
+    def test_derived_row_the_head_does_not_derive_is_explained(self):
+        row = f'{{ kit = "kit/a/k", type = "replaces", replaces = "part/a/S1", source = "doc/a/m", notes = "{self.NOTE}" }}'
+        ck = self.check(self.files("Wheel Hex Adapter", row), self.files("Wheel Hex Adapter Set", None))
+        self.assertEqual([e for e in ck.events if e["regression"]], [])
+        self.assertTrue(any(e["field"] == "fits" and "not derived" in e["reason"] for e in ck.events))
 
 
 if __name__ == "__main__":

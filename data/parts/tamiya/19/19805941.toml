@@ -5,3 +5,6 @@ name = "7x5x2mm Spacer"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5x7x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
