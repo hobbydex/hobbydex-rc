@@ -1,8 +1,12 @@
 id = "part/blackzon/540448"
 brand = "brand/blackzon"
 number = "540448"
-name = "Pinion Gear 16T with Screw"
+name = "Pinion Gear 16T with Screw Set"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540448" },
+]
 fits = [
-  { kit = "kit/blackzon/vyper-rx", type = "direct", source = "doc/blackzon/540282-kit-page" },
+  { kit = "kit/blackzon/vyper-rx", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/vyper-sc", type = "direct", source = "doc/blackzon/part-pages" },
 ]
 category = "pinion"

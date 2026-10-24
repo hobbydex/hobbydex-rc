@@ -1,8 +1,15 @@
 id = "part/blackzon/540035"
 brand = "brand/blackzon"
 number = "540035"
-name = "Motor Pinions(14T/0.6M) + Set"
+name = "Motor Pinions(14T/0.6M) + Set Screw"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540035" },
+]
+fits = [
+  { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/slyder-st", type = "direct", source = "doc/blackzon/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/pinion/mod0.6-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
-category = "pinion"
+category = "screw"

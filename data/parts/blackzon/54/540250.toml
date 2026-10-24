@@ -2,9 +2,12 @@ id = "part/blackzon/540250"
 brand = "brand/blackzon"
 number = "540250"
 name = "Battery Binding Strap (3S)"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540250" },
+]
 fits = [
-  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/540257-kit-page" },
-  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/540255-kit-page" },
-  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/540253-kit-page" },
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
 ]
 category = "chassis"

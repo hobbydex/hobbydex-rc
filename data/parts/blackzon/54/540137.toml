@@ -1,5 +1,18 @@
 id = "part/blackzon/540137"
 brand = "brand/blackzon"
 number = "540137"
-name = "Lower Inner Hinge Pin 3x47mm"
+name = "Lower Inner Hinge Pin 3x47mm (Front/Rear/4pcs)"
+pack_qty = 4
+pack_qty_basis = "name"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540137" },
+]
+fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
+]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/3x47", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

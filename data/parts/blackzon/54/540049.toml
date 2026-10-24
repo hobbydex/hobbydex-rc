@@ -2,6 +2,13 @@ id = "part/blackzon/540049"
 brand = "brand/blackzon"
 number = "540049"
 name = "Countersunk Screws KM2.5*8"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540049" },
+]
+fits = [
+  { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/slyder-st", type = "direct", source = "doc/blackzon/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2.5x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

@@ -1,6 +1,15 @@
 id = "part/blackzon/540037"
 brand = "brand/blackzon"
 number = "540037"
-name = "Battery Pack (Li-ion 7.4V,"
+name = "Battery Pack (Li-ion 7.4V, 800mAH), W/T-Plug"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540037" },
+]
+fits = [
+  { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/slyder-st", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/spryte-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/spryte-st", type = "direct", source = "doc/blackzon/part-pages" },
+]
 category = "battery"
 chemistry = "liion"

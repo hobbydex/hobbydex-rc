@@ -1,6 +1,16 @@
 id = "part/blackzon/540149"
 brand = "brand/blackzon"
 number = "540149"
-name = "Battery Pack (Li-ion 7.4V,"
+name = "Battery Pack (Li-ion 7.4V, 1500mAh), w/T-Plug"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540149" },
+]
+fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/vyper-rx", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/vyper-sc", type = "direct", source = "doc/blackzon/part-pages" },
+]
 category = "battery"
 chemistry = "liion"
