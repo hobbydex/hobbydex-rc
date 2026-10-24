@@ -1,9 +1,18 @@
 id = "part/maverick/150482"
 brand = "brand/maverick"
 number = "150482"
-name = "Aluminum C-Hub Set"
+name = "Aluminum C-Hub Set (Grey/Left/Right)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150482" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150482?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
+  { kit = "kit/maverick/quantum2-mt", type = "replaces", replaces = "part/maverick/150377", source = "doc/maverick/150406-kit-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/quantum2-xt", type = "replaces", replaces = "part/maverick/150377", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "suspension"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150482?show_disc=true" } ]
+color = "gray"
+material = "aluminium"

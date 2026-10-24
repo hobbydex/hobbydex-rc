@@ -2,9 +2,17 @@ id = "part/maverick/150562"
 brand = "brand/maverick"
 number = "150562"
 name = "Ball Bearing 8x12x3.5mm"
+pack_qty = 8
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150562" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150562?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150562?show_disc=true" } ]

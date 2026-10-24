@@ -2,5 +2,14 @@ id = "part/maverick/150329"
 brand = "brand/maverick"
 number = "150329"
 name = "Aluminum Shock Cap Set"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150329" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150329?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150329?show_disc=true" } ]
+shock_part = "cap"
+material = "aluminium"

@@ -1,8 +1,15 @@
 id = "part/maverick/151111"
 brand = "brand/maverick"
 number = "151111"
-name = "Element 11.1V 2200mAh 50C LiPo"
+name = "Element 11.1V 2200mAh 50C LiPo Battery (XT-60)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151111" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151111?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
   { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/151200-kit-page" },
 ]
@@ -16,8 +23,5 @@ c_rating = 50
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
-links = [
-  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151111?show_disc=true" },
-]
 voltage = 11.1
 connector = "XT60"

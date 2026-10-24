@@ -1,10 +1,19 @@
 id = "part/maverick/151145"
 brand = "brand/maverick"
 number = "151145"
-name = "Metal Shock Tower Set"
+name = "Metal Shock Tower Set (2pcs/Grey)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151145" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151145?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
   { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/151200-kit-page" },
 ]
 category = "chassis"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151145?show_disc=true" } ]
+color = "gray"

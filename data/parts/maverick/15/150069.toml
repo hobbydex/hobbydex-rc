@@ -3,8 +3,12 @@ brand = "brand/maverick"
 number = "150069"
 name = "BALL HEAD 5.8mm"
 pack_qty = 6
-category = "ball-end"
 links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150069" },
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150069?show_disc=true" },
 ]
+fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "ball-end"
 ball_mm = 5.8

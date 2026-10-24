@@ -1,8 +1,14 @@
 id = "part/maverick/160795"
 brand = "brand/maverick"
 number = "160795"
-name = "Plazma 11.1V 5300mAh 40C LiPo"
+name = "Plazma 11.1V 5300mAh 40C LiPo Pack 58.83Wh - XT60"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160795" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160795?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
 ]
 equivalent_to = [
@@ -15,8 +21,5 @@ c_rating = 40
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
-links = [
-  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160795?show_disc=true" },
-]
 voltage = 11.1
 connector = "XT60"

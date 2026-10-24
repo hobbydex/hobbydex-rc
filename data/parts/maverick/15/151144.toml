@@ -1,9 +1,17 @@
 id = "part/maverick/151144"
 brand = "brand/maverick"
 number = "151144"
-name = "Metal Differential Housing"
+name = "Metal Differential Housing (2pcs/Grey)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151144" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151144?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
 ]
 category = "differential"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151144?show_disc=true" } ]
+color = "gray"

@@ -1,9 +1,14 @@
 id = "part/maverick/150352"
 brand = "brand/maverick"
 number = "150352"
-name = "QuantumR Muscle Car Body"
+name = "QuantumR Muscle Car Body (Black/Red)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150352" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150352?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150311-kit-page" },
 ]
 category = "body"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150352?show_disc=true" } ]

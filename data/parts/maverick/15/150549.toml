@@ -2,9 +2,14 @@ id = "part/maverick/150549"
 brand = "brand/maverick"
 number = "150549"
 name = "Heat Sink (Orange)"
-color = "orange"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150549" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150549?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
 ]
+color = "orange"
 category = "cooling"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150549?show_disc=true" } ]

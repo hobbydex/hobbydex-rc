@@ -3,5 +3,14 @@ brand = "brand/maverick"
 number = "150331"
 name = "HD Shock Shaft 41mm"
 pack_qty = 2
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150331" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150331?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150331?show_disc=true" } ]
+shock_part = "shaft"
+length_mm = 41

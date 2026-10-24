@@ -1,8 +1,15 @@
 id = "part/maverick/160161"
 brand = "brand/maverick"
 number = "160161"
-name = "Plazma 7.4V 5300mAh 40C LiPo"
+name = "Plazma 7.4V 5300mAh 40C LiPo Battery Pack"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160161" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160161?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
   { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150350-kit-page" },
   { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/150313-kit-page" },
@@ -17,8 +24,5 @@ c_rating = 40
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
-links = [
-  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160161?show_disc=true" },
-]
 voltage = 7.4
 connector = "Deans"

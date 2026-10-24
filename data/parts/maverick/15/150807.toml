@@ -1,9 +1,14 @@
 id = "part/maverick/150807"
 brand = "brand/maverick"
 number = "150807"
-name = "Top Notch 1/24th Buggy Body"
+name = "Top Notch 1/24th Buggy Body (Red)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150807" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150807?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/150870-kit-page" },
 ]
 category = "body"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150807?show_disc=true" } ]
+color = "red"

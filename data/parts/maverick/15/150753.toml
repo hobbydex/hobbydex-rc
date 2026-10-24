@@ -1,9 +1,14 @@
 id = "part/maverick/150753"
 brand = "brand/maverick"
 number = "150753"
-name = "MTX-201 Transmitter Wheel Foam"
+name = "MTX-201 Transmitter Wheel Foam & Decals (Orange)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150753" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150753?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/doha", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/doha", type = "direct", source = "doc/maverick/150701-kit-page" },
 ]
-category = "electronics"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150753?show_disc=true" } ]
+category = "decal"
+color = "orange"

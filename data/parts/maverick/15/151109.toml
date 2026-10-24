@@ -1,11 +1,15 @@
 id = "part/maverick/151109"
 brand = "brand/maverick"
 number = "151109"
-name = "Element 7.4V 1200mAh Li-Ion"
-category = "battery"
-chemistry = "liion"
+name = "Element 7.4V 1200mAh Li-Ion Battery Pack (T-Plug)"
 links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151109" },
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151109?show_disc=true" },
 ]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "battery"
+chemistry = "liion"
 voltage = 7.4
 connector = "Deans"

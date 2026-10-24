@@ -1,9 +1,14 @@
 id = "part/maverick/150693"
 brand = "brand/maverick"
 number = "150693"
-name = "HD Differential Bevel Gear Set"
+name = "HD Differential Bevel Gear Set (43T/12T/M1.25)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150693" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150693?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
 ]
 category = "differential"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150693?show_disc=true" } ]

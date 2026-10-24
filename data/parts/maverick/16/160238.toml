@@ -2,11 +2,21 @@ id = "part/maverick/160238"
 brand = "brand/maverick"
 number = "160238"
 name = "Reactor 600 Charger (EU)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160238" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160238?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-mt", type = "direct", source = "doc/maverick/MV12615-kit-page" },
+  { kit = "kit/maverick/strada-sc", type = "direct", source = "doc/maverick/MV12617-kit-page" },
+  { kit = "kit/maverick/strada-xb", type = "direct", source = "doc/maverick/MV12613-kit-page" },
   { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
   { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150350-kit-page" },
   { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/150313-kit-page" },
   { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/MV12628-kit-page" },
 ]
 category = "charger"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160238?show_disc=true" } ]

@@ -3,8 +3,18 @@ brand = "brand/maverick"
 number = "MV22804"
 name = "ALUMINUM C-HUBS"
 pack_qty = 2
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22804" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22804?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/strada-dc", type = "direct", source = "doc/maverick/MV12618-kit-page" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-mt", type = "direct", source = "doc/maverick/MV12615-kit-page" },
+  { kit = "kit/maverick/strada-sc", type = "direct", source = "doc/maverick/MV12617-kit-page" },
+  { kit = "kit/maverick/strada-tc", type = "direct", source = "doc/maverick/MV12616-kit-page" },
+  { kit = "kit/maverick/strada-xb", type = "direct", source = "doc/maverick/MV12613-kit-page" },
   { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/MV12628-kit-page" },
 ]
 category = "suspension"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22804?show_disc=true" } ]
+material = "aluminium"

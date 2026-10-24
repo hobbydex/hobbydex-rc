@@ -2,8 +2,12 @@ id = "part/maverick/151241"
 brand = "brand/maverick"
 number = "151241"
 name = "LED Set"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151241" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151241?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/151202-kit-page" },
 ]
 category = "light"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151241?show_disc=true" } ]

@@ -2,8 +2,14 @@ id = "part/maverick/150057"
 brand = "brand/maverick"
 number = "150057"
 name = "ALUM REAR SHOCK ABSORBER 2P"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150057" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150057?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
 ]
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150057?show_disc=true" } ]
+shock_part = "complete"
+material = "aluminium"

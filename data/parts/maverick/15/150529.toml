@@ -3,5 +3,14 @@ brand = "brand/maverick"
 number = "150529"
 name = "Flanged Lock Nut M3"
 pack_qty = 4
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150529" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150529?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "nut"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150529?show_disc=true" } ]
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

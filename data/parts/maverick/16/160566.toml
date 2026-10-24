@@ -1,10 +1,17 @@
 id = "part/maverick/160566"
 brand = "brand/maverick"
 number = "160566"
-name = "HPI HAULER BAG (5"
+name = "HPI HAULER BAG (5 DRAWERS/BLACK)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160566" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160566?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
   { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
 ]
 category = "tool"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160566?show_disc=true" } ]
+color = "black"

@@ -1,6 +1,16 @@
 id = "part/maverick/150395"
 brand = "brand/maverick"
 number = "150395"
-name = "Tredz Linebacker Tire"
+name = "Tredz Linebacker Tire (122x68/2.8in/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150395" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150395?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "tire"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150395?show_disc=true" } ]
+wheel_size = "2.8\""

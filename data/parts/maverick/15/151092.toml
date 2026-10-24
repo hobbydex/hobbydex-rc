@@ -1,9 +1,14 @@
 id = "part/maverick/151092"
 brand = "brand/maverick"
 number = "151092"
-name = "MS-03MG Servo (Metal"
+name = "MS-03MG Servo (Metal Gear)"
+former_names = ["MS-03MG Servo (Metal"]
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151092" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151092?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
 ]
 category = "servo"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151092?show_disc=true" } ]

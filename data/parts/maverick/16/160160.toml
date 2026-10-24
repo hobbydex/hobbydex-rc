@@ -1,8 +1,19 @@
 id = "part/maverick/160160"
 brand = "brand/maverick"
 number = "160160"
-name = "Plazma 7.4V 3200mAh 30C LiPo"
+name = "Plazma 7.4V 3200mAh 30C LiPo Battery Pack"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160160" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160160?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-dc", type = "direct", source = "doc/maverick/MV12618-kit-page" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-mt", type = "direct", source = "doc/maverick/MV12615-kit-page" },
+  { kit = "kit/maverick/strada-sc", type = "direct", source = "doc/maverick/MV12617-kit-page" },
+  { kit = "kit/maverick/strada-tc", type = "direct", source = "doc/maverick/MV12616-kit-page" },
+  { kit = "kit/maverick/strada-xb", type = "direct", source = "doc/maverick/MV12613-kit-page" },
   { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
   { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/MV12628-kit-page" },
 ]
@@ -16,8 +27,5 @@ c_rating = 30
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
-links = [
-  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160160?show_disc=true" },
-]
 voltage = 7.4
 connector = "Deans"

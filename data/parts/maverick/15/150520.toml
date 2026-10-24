@@ -1,9 +1,18 @@
 id = "part/maverick/150520"
 brand = "brand/maverick"
 number = "150520"
-name = "Shock Absorber Set"
+name = "Shock Absorber Set (Orange/4pcs)"
+pack_qty = 4
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150520" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150520?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
 ]
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150520?show_disc=true" } ]
+color = "orange"
+shock_part = "complete"

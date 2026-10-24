@@ -1,6 +1,12 @@
 id = "part/maverick/MV28060"
 brand = "brand/maverick"
 number = "MV28060"
-name = "Servo Horn and Screw (ALL"
+name = "Servo Horn and Screw (ALL Ion)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28060" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28060?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "steering"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28060?show_disc=true" } ]

@@ -2,12 +2,16 @@ id = "part/maverick/151095"
 brand = "brand/maverick"
 number = "151095"
 name = "MSC-6016-BL ESC"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151095" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151095?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
   { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/151200-kit-page" },
 ]
 category = "esc"
-links = [
-  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151095?show_disc=true" },
-]
 connector = "XT60"

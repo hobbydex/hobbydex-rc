@@ -1,6 +1,13 @@
 id = "part/maverick/150425"
 brand = "brand/maverick"
 number = "150425"
-name = "Motor Mount & Receiver Box"
+name = "Motor Mount & Receiver Box Set"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150425" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150425?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "chassis"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150425?show_disc=true" } ]

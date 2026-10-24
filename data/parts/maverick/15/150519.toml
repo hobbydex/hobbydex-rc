@@ -3,10 +3,16 @@ brand = "brand/maverick"
 number = "150519"
 name = "Shock Absorber Set (Red/4pcs)"
 pack_qty = 4
-pack_qty_basis = "name"
-color = "red"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150519" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150519?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
 ]
+pack_qty_basis = "name"
+color = "red"
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150519?show_disc=true" } ]
+shock_part = "complete"

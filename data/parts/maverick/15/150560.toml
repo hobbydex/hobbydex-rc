@@ -1,9 +1,18 @@
 id = "part/maverick/150560"
 brand = "brand/maverick"
 number = "150560"
-name = "Steel Front Universal"
+name = "Steel Front Universal Driveshaft Set"
+pack_qty = 2
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150560" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150560?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
+  { kit = "kit/maverick/atom", type = "replaces", replaces = "part/maverick/150517", source = "doc/maverick/150503-kit-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/atom-at1", type = "replaces", replaces = "part/maverick/150517", source = "doc/maverick/150568-kit-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "drivetrain"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150560?show_disc=true" } ]
+material = "steel"
