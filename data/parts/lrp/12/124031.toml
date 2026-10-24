@@ -1,10 +1,16 @@
 id = "part/lrp/124031"
 brand = "brand/lrp"
 number = "124031"
-name = "S10 Twister - Achsstifte Satz"
+name = "S10 Twister - Achsstifte Satz (10 Stk.)"
 pack_qty = 10
-pack_qty_basis = "page"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/124031/" },
 ]
 category = "pin"
+fits = [
+  { kit = "kit/lrp/s10-twister-2-mt", type = "direct", source = "doc/lrp/120812-product-page" },
+  { kit = "kit/lrp/s10-twister-2-monster-truck-2wd", type = "direct", source = "doc/lrp/120811le-product-page" },
+  { kit = "kit/lrp/s10-twister-2-sc-truck", type = "direct", source = "doc/lrp/120760-product-page" },
+  { kit = "kit/lrp/s10-twister-truggy", type = "direct", source = "doc/lrp/120511-product-page" },
+]
+pack_qty_basis = "page"

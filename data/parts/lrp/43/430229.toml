@@ -1,0 +1,23 @@
+id = "part/lrp/430229"
+brand = "brand/lrp"
+number = "430229"
+name = "2900 - Shorty LCG - 110C/55C - 7.4V LiPo - 1/10 Competition Car Line Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430229/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2900mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 2900
+c_rating = 110
+case = "shorty"
+dimensions_mm = [93, 47, 18.5]
+weight_g = 142
+connector = "4mm bullet"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430229-de-manual"]
+voltage = 7.4

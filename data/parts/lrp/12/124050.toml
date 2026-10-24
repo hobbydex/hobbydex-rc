@@ -1,10 +1,15 @@
 id = "part/lrp/124050"
 brand = "brand/lrp"
 number = "124050"
-name = "S10 Twister BX - Speichen Felge HA schwarz"
+name = "S10 Twister BX - Speichen Felge HA schwarz (2 Stk.)"
 pack_qty = 2
+pack_qty_basis = "name"
 category = "wheel"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/124050/" },
+]
+fits = [
+  { kit = "kit/lrp/s10-twister-truggy", type = "direct", source = "doc/lrp/120610-product-page" },
+  { kit = "kit/lrp/s10-twister-buggy", type = "direct", source = "doc/lrp/120411-product-page" },
 ]

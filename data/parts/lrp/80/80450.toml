@@ -2,7 +2,6 @@ id = "part/lrp/80450"
 brand = "brand/lrp"
 number = "80450"
 name = "SPX Brushless Bullet Reverse"
-status = "discontinued"
 category = "wire"
 category_source = "curated"
 links = [
@@ -11,3 +10,7 @@ links = [
 weight_g = 45
 notes = "Motor limit over 3.0T (Brushless) / over 4.0T (Brushed); Discontinued: in LRP's archive ('Auslaufartikel')"
 documents = ["doc/lrp/80450-de-manual"]
+fits = [
+  { kit = "kit/lrp/s10-twister-2-extreme-100-truggy", type = "direct", source = "doc/lrp/120512-product-page" },
+]
+status = "discontinued"

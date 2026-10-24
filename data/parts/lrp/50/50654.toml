@@ -2,12 +2,18 @@ id = "part/lrp/50654"
 brand = "brand/lrp"
 number = "50654"
 name = "Vector X20 BL Modified - 8.5T"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/50654/" },
 ]
 turns = 8.5
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [1, 2]
+weight_g = 165
+notes = "No-load speed 30,340 rpm; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/50654-de-manual"]
+fits = [
+  { kit = "kit/lrp/s10-blast-tx-2", type = "direct", source = "doc/lrp/120601-product-page" },
+]
+status = "discontinued"
 range = "lrp/vector-x20-bl-modified"

@@ -1,0 +1,22 @@
+id = "part/lrp/430065"
+brand = "brand/lrp"
+number = "430065"
+name = "FPV-Race-Pack 1000mAh -3S -90C/45C -11.4V LiHV Akku -XT60"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430065/" },
+]
+chemistry = "lihv"
+cells = 3
+equivalent_to = [
+  { spec = "spec/battery/lihv-3s-1000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 1000
+c_rating = 45
+dimensions_mm = [74, 35, 20]
+weight_g = 96
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430065-manual"]
+voltage = 11.4
+connector = "XT60"

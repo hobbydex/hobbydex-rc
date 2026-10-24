@@ -1,0 +1,23 @@
+id = "part/lrp/430224"
+brand = "brand/lrp"
+number = "430224"
+name = "7500 - 1/12 1S - 110C/55C - 3.7V LiPo - 1/12 Competition Car Line Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430224/" },
+]
+chemistry = "lipo"
+cells = 1
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-7500mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 7500
+c_rating = 110
+case = "hard"
+dimensions_mm = [93, 47, 18.5]
+weight_g = 150
+connector = "4mm bullet"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430224-de-manual"]
+voltage = 3.7

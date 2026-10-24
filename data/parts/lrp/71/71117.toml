@@ -1,0 +1,18 @@
+id = "part/lrp/71117"
+brand = "brand/lrp"
+number = "71117"
+name = "Power Pack 3000 - 9.6V - 8-Zellen NiMH Stickpack"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/71117/" },
+]
+chemistry = "nimh"
+cells = 8
+equivalent_to = [
+  { spec = "spec/battery/nimh-8s-3000mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 3000
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/71117-de-manual"]
+voltage = 9.6

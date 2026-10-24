@@ -1,9 +1,8 @@
 id = "part/lrp/134111"
 brand = "brand/lrp"
 number = "134111"
-name = "M4x10mm Innensechskant Rundkopfschraube"
+name = "M4x10mm Innensechskant Rundkopfschraube (10 Stk.)"
 pack_qty = 10
-pack_qty_basis = "page"
 category = "screw"
 category_source = "curated"
 links = [
@@ -12,3 +11,5 @@ links = [
 equivalent_to = [
   { spec = "spec/screw/m4x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+supersedes = "part/lrp/133102"
+pack_qty_basis = "page"

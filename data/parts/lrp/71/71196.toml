@@ -1,0 +1,21 @@
+id = "part/lrp/71196"
+brand = "brand/lrp"
+number = "71196"
+name = "2/3 A Hyper Tuning Pack 1600 - 7.2V - 6-Zellen - Tamiya/JST Stecker - NiMH"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/71196/" },
+]
+chemistry = "nimh"
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-1600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 1600
+dimensions_mm = [50, 34, 30]
+weight_g = 144
+connector = "Tamiya"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/71196-de-manual"]
+voltage = 7.2

@@ -1,0 +1,22 @@
+id = "part/lrp/430216"
+brand = "brand/lrp"
+number = "430216"
+name = "LiPo Hyper Pack 4800 - 7.4V - 30C - Multi Plug Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430216/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4800mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4800
+c_rating = 30
+case = "hard"
+dimensions_mm = [137.5, 46.2, 25.2]
+weight_g = 232
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430216-de-manual"]
+voltage = 7.4

@@ -1,18 +1,20 @@
 id = "part/lrp/120954"
 brand = "brand/lrp"
 number = "120954"
-name = "M3x8mm Innensechskant Senkkopfschraube"
+name = "M3x8mm Innensechskant Senkkopfschraube (10 Stk.)"
 pack_qty = 10
-pack_qty_basis = "page"
 category = "screw"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/120954/" },
 ]
+supersedes = "part/lrp/122215"
 fits = [
   { kit = "kit/lrp/s10-blast-bx3", type = "direct", source = "doc/lrp/120210-product-page" },
   { kit = "kit/lrp/s10-blast-tc3", type = "direct", source = "doc/lrp/120203-product-page" },
+  { kit = "kit/lrp/s10-blast-tc-2", type = "direct", source = "doc/lrp/120202-product-page" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+pack_qty_basis = "page"

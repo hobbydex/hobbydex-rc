@@ -1,0 +1,22 @@
+id = "part/lrp/430413E"
+brand = "brand/lrp"
+number = "430413E"
+name = "ANTIX by LRP 3100 - 7.4V - 50C LiPo Car Stickpack Hardcase - EC5-Plug"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430413e/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3100mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 3100
+c_rating = 50
+case = "hard"
+dimensions_mm = [134, 46, 24]
+weight_g = 210
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430413e-manual"]
+voltage = 7.4

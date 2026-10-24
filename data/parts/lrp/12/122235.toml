@@ -1,0 +1,18 @@
+id = "part/lrp/122235"
+brand = "brand/lrp"
+number = "122235"
+name = "Ritzel 35Z 48dp - S10"
+category = "pinion"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/122235/" },
+]
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-35t", match = "functional", notes = "Pitch and teeth from LRP's name (Z: teeth); check the bore" },
+]
+fits = [
+  { kit = "kit/lrp/s10-blast-bx-2", type = "direct", source = "doc/lrp/120303-product-page" },
+]
+teeth = 35
+pitch_dp = 48

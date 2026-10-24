@@ -2,16 +2,17 @@ id = "part/lrp/32112"
 brand = "brand/lrp"
 number = "32112"
 name = "ZR.21X Spec.3 Nitro Wettbewerbsmotor"
-status = "discontinued"
 category = "engine-fuel"
 category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/32112/" },
+]
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/32112-manual", "doc/lrp/32112-zr21x-spec3-manual"]
+supersedes = "part/lrp/32111"
+status = "discontinued"
 displacement_cc = 3.49
 engine_class = ".21"
 output_hp = 2.78
 output_rpm = 39800
 fuel = "nitro"
-links = [
-  { site = "LRP", url = "https://www.lrp.cc/de/produkt/32112/" },
-]
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
-supersedes = "part/lrp/32111"

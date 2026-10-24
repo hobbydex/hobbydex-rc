@@ -2,13 +2,22 @@ id = "part/lrp/50441"
 brand = "brand/lrp"
 number = "50441"
 name = "Vector k7 Brushless Motor - 8.5T"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/50441/" },
 ]
 turns = 8.5
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [1, 2]
+shaft_mm = 3.175
+weight_g = 154
+notes = "No-load speed 31,820 rpm; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/50441-de-manual"]
 supersedes = "part/lrp/50440"
+fits = [
+  { kit = "kit/lrp/s10-blast-tx-2", type = "direct", source = "doc/lrp/120601-product-page" },
+  { kit = "kit/lrp/s10-blast-bx-2", type = "direct", source = "doc/lrp/120401-product-page" },
+  { kit = "kit/lrp/s10-blast-tc-2", type = "direct", source = "doc/lrp/120202-product-page" },
+]
+status = "discontinued"
 range = "lrp/vector-k7-brushless-motor"
