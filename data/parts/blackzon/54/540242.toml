@@ -1,8 +1,14 @@
 id = "part/blackzon/540242"
 brand = "brand/blackzon"
 number = "540242"
-name = "HD Center Driveshaft & Drive"
+name = "HD Center Driveshaft & Drive Cup Set"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540242" },
+]
 fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/540227-kit-page" },
   { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/540226-kit-page" },
   { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/540225-kit-page" },

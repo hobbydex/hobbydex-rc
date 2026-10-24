@@ -1,8 +1,15 @@
 id = "part/blackzon/540223"
 brand = "brand/blackzon"
 number = "540223"
-name = "Battery Pack (LiPo 7.4V,"
+name = "Battery Pack (LiPo 7.4V, 1000mAh), w/T-Plug"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540223" },
+]
 fits = [
+  { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/slyder-st", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/spryte-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/spryte-st", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/540116-kit-page" },
   { kit = "kit/blackzon/slyder-st", type = "direct", source = "doc/blackzon/540117-kit-page" },
   { kit = "kit/blackzon/spryte-mt", type = "direct", source = "doc/blackzon/540290-kit-page" },

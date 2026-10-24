@@ -1,8 +1,14 @@
 id = "part/blackzon/540248"
 brand = "brand/blackzon"
 number = "540248"
-name = "Battery Pack (LiPo 11.1V,"
+name = "Battery Pack (LiPo 11.1V, 2200mAh), w/T-Plug"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540248" },
+]
 fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/540257-kit-page" },
   { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/540255-kit-page" },
   { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/540253-kit-page" },
