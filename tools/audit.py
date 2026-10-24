@@ -774,6 +774,11 @@ def main():
     bat = [p for p in parts if p.get("category") in ("battery", "esc") and not p.get("connector")]
     check("battery-esc-no-connector", "set connector to the plug the pack or ESC uses (from the maker's page or manual)", bat, per_brand=per_brand(bat))
 
+    # a battery whose name states the JST-XH balance lead, and no balance_connector (tools/link_part_connectors.py --balance)
+    bal_name = re.compile(r"\bbalanc\w*[^,;|()]{0,30}\bjst[- ]?xhr?\b|\bjst[- ]?xhr?\b[^,;|()]{0,30}\bbalanc\w*", re.I)
+    bal = [p for p in parts if p.get("category") == "battery" and not p.get("balance_connector") and bal_name.search(p.get("name", ""))]
+    check("battery-balance-name-no-connector", "set balance_connector = \"JST-XH\" when the maker states it (tools/link_part_connectors.py --balance)", bal, per_brand=per_brand(bal))
+
     # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
     hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
     hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
