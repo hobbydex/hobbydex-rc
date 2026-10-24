@@ -1,8 +1,9 @@
 id = "part/absima/1230572"
 brand = "brand/absima"
 number = "1230572"
-name = "Ball Bearing 10*5*4"
+name = "Ball Bearing 10*5*4 (6)"
 pack_qty = 6
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/cr3-4", type = "direct", source = "doc/absima/spares-cr3-4" },
   { kit = "kit/absima/cr1-8", type = "direct", source = "doc/absima/spares-cr1-8" },
@@ -11,4 +12,6 @@ category = "bearing"
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230572" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230572" },
+]

@@ -1,8 +1,9 @@
 id = "part/absima/1232061"
 brand = "brand/absima"
 number = "1232061"
-name = "Grub Screw M2.5*2/M3*3"
+name = "Grub Screw M2.5*2/M3*3 (2)"
 pack_qty = 2
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/aero-x-stix-supraslide", type = "direct", source = "doc/absima/spares-aero-x-stix-supraslide" },
 ]
@@ -10,4 +11,6 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.5x2-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1232061" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1232061" },
+]

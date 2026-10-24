@@ -1,8 +1,9 @@
 id = "part/absima/1230368"
 brand = "brand/absima"
 number = "1230368"
-name = "Set Screw M4x10"
+name = "Set Screw M4x10 (4)"
 pack_qty = 4
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/ab-v2", type = "direct", source = "doc/absima/spares-ab-v2" },
 ]
@@ -10,4 +11,6 @@ equivalent_to = [
   { spec = "spec/screw/m4x10-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230368" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230368" },
+]
