@@ -1,0 +1,20 @@
+id = "part/lrp/430060"
+brand = "brand/lrp"
+number = "430060"
+name = "Expert Line Tuning LiPo 4400 mAh - 11.1V - 30C - LRP Gravit GPS Serie"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430060/" },
+]
+chemistry = "lipo"
+cells = 3
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-4400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4400
+c_rating = 30
+dimensions_mm = [125, 44, 24]
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430060-manual"]
+voltage = 11.1

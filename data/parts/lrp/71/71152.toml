@@ -1,0 +1,18 @@
+id = "part/lrp/71152"
+brand = "brand/lrp"
+number = "71152"
+name = "Power Pack 3000 - 8.4V - 7-Zellen Straight NiMH Stickpack mit Traxxas TRX Stecker"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/71152/" },
+]
+chemistry = "nimh"
+cells = 7
+equivalent_to = [
+  { spec = "spec/battery/nimh-7s-3000mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 3000
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/71152-de-manual"]
+voltage = 8.4

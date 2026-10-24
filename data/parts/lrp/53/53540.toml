@@ -2,12 +2,16 @@ id = "part/lrp/53540"
 brand = "brand/lrp"
 number = "53540"
 name = "Dynamic10L BL Motor 3700kV"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/53540/" },
 ]
 kv = 3700
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [1, 3]
+shaft_mm = 5
+weight_g = 275
+notes = "No-load speed 51,350 rpm at 11.1 V; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/53540-de-manual"]
+status = "discontinued"
 range = "lrp/dynamic10l-bl-motor"

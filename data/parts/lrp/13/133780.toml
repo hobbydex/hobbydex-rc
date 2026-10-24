@@ -2,11 +2,17 @@ id = "part/lrp/133780"
 brand = "brand/lrp"
 number = "133780"
 name = "Servo R-7103WP V2 - 3kg Wasserdicht"
-status = "discontinued"
 category = "servo"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/133780/" },
 ]
-torque_kgcm = 3
-notes = "Torque from LRP's name; LRP states no voltage, size or spline; Discontinued: in LRP's archive ('Auslaufartikel')"
+torque_kgcm = 3.2
+voltage = 6
+dimensions_mm = [40, 20, 40]
+weight_g = 46
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size in LRP's specifications; check the spline and mounting holes" },
+]
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+status = "discontinued"

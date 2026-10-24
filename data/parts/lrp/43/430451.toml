@@ -1,0 +1,22 @@
+id = "part/lrp/430451"
+brand = "brand/lrp"
+number = "430451"
+name = "Deep Blue One/340 Tuning LiPo - 900mAh - 2S2P - 7.4V - 30C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430451/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-900mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 900
+c_rating = 30
+dimensions_mm = [46, 31, 20]
+weight_g = 52
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430451-de-manual"]
+voltage = 7.4
+color = "blue"

@@ -1,0 +1,21 @@
+id = "part/lrp/430020"
+brand = "brand/lrp"
+number = "430020"
+name = "VTEC Expert Line 1800mAh - 3S1P - 11.1V - 45C LiPo"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430020/" },
+]
+chemistry = "lipo"
+cells = 3
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 1800
+c_rating = 45
+dimensions_mm = [103, 35, 22]
+weight_g = 176
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430020-de-manual"]
+voltage = 11.1

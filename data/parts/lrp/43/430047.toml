@@ -1,0 +1,20 @@
+id = "part/lrp/430047"
+brand = "brand/lrp"
+number = "430047"
+name = "VTEC Expert Line 1500mAh - 2S1P - 7.4V - 30C LiPo SP"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430047/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 1500
+c_rating = 30
+weight_g = 80
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+supersedes = "part/lrp/79075"
+voltage = 7.4

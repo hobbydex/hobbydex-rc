@@ -1,0 +1,18 @@
+id = "part/lrp/71105"
+brand = "brand/lrp"
+number = "71105"
+name = "Wild Pack 1800 - 7.2V - 6-Zellen NiMH Stickpack"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/71105/" },
+]
+chemistry = "nimh"
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-1800mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 1800
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/71105-de-manual"]
+voltage = 7.2

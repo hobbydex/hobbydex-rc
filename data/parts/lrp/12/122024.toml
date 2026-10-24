@@ -1,11 +1,16 @@
 id = "part/lrp/122024"
 brand = "brand/lrp"
 number = "122024"
-name = "S10 Blast TC - 10-Speichen Felge weiß"
+name = "S10 Blast TC - 10-Speichen Felge weiß (2 Stk.)"
 pack_qty = 2
+pack_qty_basis = "name"
 category = "wheel"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/122024/" },
 ]
 vehicle = "touring"
+fits = [
+  { kit = "kit/lrp/s10-blast-tc-2", type = "direct", source = "doc/lrp/120202-product-page" },
+  { kit = "kit/lrp/s10-blast-tc", type = "direct", source = "doc/lrp/120201-product-page" },
+]

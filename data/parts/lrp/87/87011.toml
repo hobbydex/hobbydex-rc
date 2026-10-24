@@ -2,10 +2,20 @@ id = "part/lrp/87011"
 brand = "brand/lrp"
 number = "87011"
 name = "A2-STX Pro 2.4GHz F.H.S.S. Fernsteuerungs-Set"
-status = "discontinued"
 category = "radio"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/87011/" },
 ]
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/87011-de-manual"]
+fits = [
+  { kit = "kit/lrp/s8-rebel-bxe", type = "direct", source = "doc/lrp/130305-product-page" },
+  { kit = "kit/lrp/s10-twister-2-sc-truck", type = "direct", source = "doc/lrp/120760-product-page" },
+  { kit = "kit/lrp/s10-blast-sc-2", type = "direct", source = "doc/lrp/120751-product-page" },
+  { kit = "kit/lrp/s10-twister-truggy", type = "direct", source = "doc/lrp/120610-product-page" },
+  { kit = "kit/lrp/s10-blast-tx-2", type = "direct", source = "doc/lrp/120601-product-page" },
+  { kit = "kit/lrp/s10-blast-bx-2", type = "direct", source = "doc/lrp/120401-product-page" },
+  { kit = "kit/lrp/s10-blast-tc-2", type = "direct", source = "doc/lrp/120202-product-page" },
+]
+status = "discontinued"

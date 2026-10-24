@@ -2,10 +2,14 @@ id = "part/lrp/87010"
 brand = "brand/lrp"
 number = "87010"
 name = "A2-STX Pro 2.4GHz Fernsteuerungs-Set"
-status = "discontinued"
 category = "radio"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/87010/" },
 ]
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/87010-de-manual"]
+fits = [
+  { kit = "kit/lrp/s10-blast-mt", type = "direct", source = "doc/lrp/120850-product-page" },
+]
+status = "discontinued"

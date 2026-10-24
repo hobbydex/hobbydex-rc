@@ -2,13 +2,16 @@ id = "part/lrp/50834"
 brand = "brand/lrp"
 number = "50834"
 name = "Vector X20 BL StockSpec - 10.5T"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/50834/" },
 ]
 turns = 10.5
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [1, 2]
+weight_g = 165
+notes = "No-load speed 26,640 rpm; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/50834-de-manual"]
 supersedes = "part/lrp/50832"
+status = "discontinued"
 range = "lrp/vector-x20-bl-stockspec"

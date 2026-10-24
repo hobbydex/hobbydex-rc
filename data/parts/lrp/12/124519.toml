@@ -1,10 +1,14 @@
 id = "part/lrp/124519"
 brand = "brand/lrp"
 number = "124519"
-name = "S10 Twister SC - R / L Spurstangen"
+name = "S10 Twister SC - R / L Spurstangen (6 Stk.)"
 pack_qty = 6
+pack_qty_basis = "name"
 category = "suspension"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/124519/" },
+]
+fits = [
+  { kit = "kit/lrp/s10-twister-2-sc-truck", type = "direct", source = "doc/lrp/120760-product-page" },
 ]

@@ -2,12 +2,19 @@ id = "part/lrp/50491"
 brand = "brand/lrp"
 number = "50491"
 name = "Vector k7 Brushless Motor - 21.5T"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/50491/" },
 ]
 turns = 21.5
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [1, 4]
+shaft_mm = 3.175
+weight_g = 154
+notes = "No-load speed 12,580 rpm; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/50491-de-manual"]
+fits = [
+  { kit = "kit/lrp/s10-blast-bx-2", type = "direct", source = "doc/lrp/120401-product-page" },
+]
+status = "discontinued"
 range = "lrp/vector-k7-brushless-motor"

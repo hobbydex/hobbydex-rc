@@ -1,8 +1,9 @@
 id = "part/lrp/65551J"
 brand = "brand/lrp"
 number = "65551J"
-name = "VTEC - 1/10 Buggy - Heck - Reifen mit Einlage"
+name = "VTEC - 1/10 Buggy - Heck - Reifen mit Einlage (2 Stk.)"
 pack_qty = 2
+pack_qty_basis = "name"
 category = "tire"
 category_source = "curated"
 links = [
@@ -14,4 +15,6 @@ position = "rear"
 mounting = "unmounted"
 fits = [
   { kit = "kit/lrp/s10-blast-bx3", type = "direct", source = "doc/lrp/120210-product-page" },
+  { kit = "kit/lrp/s10-twister-buggy", type = "direct", source = "doc/lrp/120411-product-page" },
+  { kit = "kit/lrp/s10-twister-2-buggy", type = "direct", source = "doc/lrp/120312-product-page" },
 ]

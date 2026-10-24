@@ -1,9 +1,8 @@
 id = "part/lrp/134093"
 brand = "brand/lrp"
 number = "134093"
-name = "M4x4mm Madenschraube"
+name = "M4x4mm Madenschraube (10 Stk.)"
 pack_qty = 10
-pack_qty_basis = "page"
 category = "screw"
 category_source = "curated"
 links = [
@@ -12,3 +11,5 @@ links = [
 equivalent_to = [
   { spec = "spec/screw/m4x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+supersedes = "part/lrp/133075"
+pack_qty_basis = "page"

@@ -1,0 +1,19 @@
+id = "part/lrp/71143"
+brand = "brand/lrp"
+number = "71143"
+name = "Hyper Pack 4600 - 7.2V - 6-Zellen - für Maverick BL 4mm Goldstecker NiMH Stickpack"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/71143/" },
+]
+chemistry = "nimh"
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-4600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4600
+connector = "4mm bullet"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/71143-de-manual"]
+voltage = 7.2

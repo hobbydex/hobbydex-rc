@@ -1,10 +1,14 @@
 id = "part/lrp/124124"
 brand = "brand/lrp"
 number = "124124"
-name = "S10 Twister MT / TX - Antriebsknochen 110mm"
+name = "S10 Twister MT / TX - Antriebsknochen 110mm (2 Stk.)"
 pack_qty = 2
+pack_qty_basis = "name"
 category = "drivetrain"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/124124/" },
+]
+fits = [
+  { kit = "kit/lrp/s10-twister-truggy", type = "direct", source = "doc/lrp/120511-product-page" },
 ]
