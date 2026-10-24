@@ -2,10 +2,10 @@ id = "release/losi/los04027"
 kit = "kit/losi/lmt"
 brand = "brand/losi"
 number = "LOS04027"
-name = "LMT Tlr Tuned 4X4 Kit Monster Truck"
+name = "LMT TLR Tuned 4X4 Kit"
 year = 2022
 kind = "kit"
-status = "discontinued"
+status = "released"
 gtin = "605482169797"
 documents = ["doc/losi/los04027-exploded-view", "doc/losi/los04027-manual", "doc/losi/los04027-product-page", "doc/losi/youtube-ll3tRMU_Occ"]
 contains = [
@@ -168,6 +168,7 @@ contains = [
   { part = "part/pro-line/PRO359200", role = "option", source = "doc/losi/los04027-product-page" },
   { part = "part/pro-line/PRO363000", role = "option", source = "doc/losi/los04027-product-page" },
   { part = "part/spektrum/SPM2340", role = "option", source = "doc/losi/los04027-manual" },
+  { part = "part/spektrum/SPMR5010", role = "listed", source = "doc/losi/los04027-manual" },
   { part = "part/spektrum/SPMR5115", role = "option", source = "doc/losi/los04027-manual" },
   { part = "part/spektrum/SPMSA6350", role = "option", source = "doc/losi/los04027-manual" },
   { part = "part/spektrum/SPMSR2100", role = "option", source = "doc/losi/los04027-manual" },
@@ -177,6 +178,7 @@ contains = [
   { part = "part/spektrum/SPMSR6100AT", role = "option", source = "doc/losi/los04027-product-page" },
   { part = "part/spektrum/SPMSR6110AT", role = "option", source = "doc/losi/los04027-product-page" },
   { part = "part/spektrum/SPMSR6200A", role = "option", source = "doc/losi/los04027-manual" },
+  { part = "part/spektrum/SPMSS6280", role = "listed", source = "doc/losi/los04027-manual" },
   { part = "part/spektrum/SPMSS6290", role = "option", source = "doc/losi/los04027-manual" },
   { part = "part/spektrum/SPMX412S120HT", role = "option", source = "doc/losi/los04027-product-page" },
   { part = "part/spektrum/SPMX52S100H5", role = "option", source = "doc/losi/los04027-product-page" },
@@ -222,10 +224,8 @@ contains = [
   { part = "part/tlr/TLR75004", role = "option", source = "doc/losi/los04027-manual" },
   { part = "part/tlr/TLR75008", role = "option", source = "doc/losi/los04027-manual" },
   { part = "part/tlr/TLR75009", role = "option", source = "doc/losi/los04027-manual" },
+  { part = "part/tlr/TLR76007", role = "listed", source = "doc/losi/los04027-manual" },
   { part = "part/tlr/TLR76009", role = "option", source = "doc/losi/los04027-manual" },
   { part = "part/tlr/TLR77000", role = "option", source = "doc/losi/los04027-manual" },
   { part = "part/tlr/TLR77002", role = "option", source = "doc/losi/los04027-manual" },
-  { part = "part/spektrum/SPMR5010", role = "listed", source = "doc/losi/los04027-manual" },
-  { part = "part/spektrum/SPMSS6280", role = "listed", source = "doc/losi/los04027-manual" },
-  { part = "part/tlr/TLR76007", role = "listed", source = "doc/losi/los04027-manual" },
 ]

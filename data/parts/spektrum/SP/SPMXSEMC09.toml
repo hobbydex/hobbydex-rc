@@ -9,3 +9,7 @@ sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-firma-60a-brushless-smart-esc-2800kv-sensored-motor-crawler-combo/SPMXSEMC09.html" },
 ]
+includes = [
+  { part = "part/spektrum/SPMXSE1060", qty = 1, notes = "Component named in the combo's name" },
+  { part = "part/spektrum/SPMXSM3002", qty = 1, notes = "Component named in the combo's name" },
+]

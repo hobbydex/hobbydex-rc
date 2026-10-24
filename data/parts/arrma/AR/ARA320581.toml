@@ -12,4 +12,5 @@ material = "aluminium"
 fits = [
   { kit = "kit/arrma/kraton", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/notorious", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/kraton", type = "replaces", replaces = "part/arrma/ARA320759", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
