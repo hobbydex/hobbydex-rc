@@ -161,7 +161,7 @@ class Check:
         self.events = []                       # every removed or changed value and every removed record
         self.counts = collections.defaultdict(collections.Counter)   # (kind, field) -> added/removed/changed/regressions
         self.recs = collections.defaultdict(collections.Counter)     # kind -> records added/removed/changed
-        self._former = self._gone = self._replaced = self._docs = None
+        self._former = self._gone = self._replaced = self._docs = self._supersedes = None
 
     def count(self, kind, field, what, n=1):
         self.counts[(kind, field)][what] += n
@@ -187,6 +187,16 @@ class Check:
                 for f in (parse(b, p).get("former_ids", []) if b else []):
                     self._former[f] = id_of(p)
         return self._former
+
+    def supersedes_map(self):
+        """old part id -> the part of the head that supersedes it (its `supersedes` field)."""
+        if self._supersedes is None:
+            self._supersedes = {}
+            for p, b in blobs(self.head, self._grep("supersedes = ", "data/parts")).items():
+                d = parse(b, p) if b else {}
+                if isinstance(d.get("supersedes"), str):
+                    self._supersedes[d["supersedes"]] = id_of(p)
+        return self._supersedes
 
     def doc_pages(self):
         """normalized page URL -> the doc ids whose page it is (documents of the head)."""
@@ -298,6 +308,11 @@ class Check:
         if why:
             self.event(kind, rid, k, "removed", row, MISSING, False, why)
             return
+        if k == "contains" and isinstance(row, dict):
+            new_id = repointed(row, n.get(k, []), self.supersedes_map())
+            if new_id:
+                self.event(kind, rid, k, "removed", row, MISSING, False, f"repointed to {new_id}, which supersedes it")
+                return
         if k == "links":
             url = normalize_url(row.get("url", ""))
             if url in self.gone_pages():
@@ -352,6 +367,16 @@ class Check:
         for r in pure:
             self.count(kind, k, "removed")
             self.removed_row(kind, rid, o, n, k, r)
+
+
+def repointed(row, rows, supersedes):
+    """The part a removed contains row was repointed to: a row of the same role and source in rows names the part
+    that supersedes the removed row's part (the old part record is kept). None when there is no such row."""
+    new_id = supersedes.get(row.get("part"))
+    if new_id and any(isinstance(x, dict) and x.get("part") == new_id and x.get("role") == row.get("role")
+                      and x.get("source") == row.get("source") for x in rows):
+        return new_id
+    return None
 
 
 PROVENANCE = {"source", "sources", "notes", "note"}
