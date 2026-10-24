@@ -5,13 +5,13 @@ name = "Ball bearing 6,35x9,5x3,2mm MT/ST, 4pcs"
 name_de = "Kugellager 6,35x9,5x3,2 MT/ST"
 gtin = "4260768516663"
 pack_qty = 4
-pack_qty_basis = "name"
 fits = [
   { kit = "kit/amewi/daphoenodon-teleoceras", type = "direct", source = "doc/amewi/22609-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/Kugellager-635x95x32-MTST-4-Stueck" },
 ]
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/bearing/6.35x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

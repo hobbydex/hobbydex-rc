@@ -5,7 +5,6 @@ name = "6046 Ball bearing 6.35x9.5x3.2mm, 4pcs"
 name_de = "6046 Kugellager 6.35x9.5x3.2mm"
 gtin = "4260768516793"
 pack_qty = 4
-pack_qty_basis = "name"
 fits = [
   { kit = "kit/amewi/gantry", type = "direct", source = "doc/amewi/22606-product-page" },
   { kit = "kit/amewi/conquer", type = "direct", source = "doc/amewi/22605-product-page" },
@@ -13,6 +12,7 @@ fits = [
 links = [
   { site = "Amewi", url = "https://amewi.com/6046-Kugellager-635x95x32mm-4-Stueck" },
 ]
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/bearing/6.35x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

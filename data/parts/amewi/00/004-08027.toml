@@ -5,7 +5,6 @@ name = "08027 Pin 2x10mm 10 pcs"
 name_de = "08027 Pin 2x10mm"
 gtin = "4260476351006"
 pack_qty = 10
-pack_qty_basis = "name"
 fits = [
   { kit = "kit/amewi/breaker-pro", type = "direct", source = "doc/amewi/22232-product-page" },
   { kit = "kit/amewi/monster-truck-torche", type = "direct", source = "doc/amewi/22032-product-page" },
@@ -13,6 +12,7 @@ fits = [
 links = [
   { site = "Amewi", url = "https://amewi.com/08027-Pin-2x10mm-10-Stueck" },
 ]
+pack_qty_basis = "name"
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },

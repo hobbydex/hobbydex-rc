@@ -4,7 +4,12 @@ number = "021-24000-01-02-03"
 name = "Ball Bearing Set CT10"
 name_de = "Kugellager Set CT10"
 gtin = "4262408974574"
-notes = "Contents: 021-24000 6x16x5mm, 4x; 021-24001 12x18x4mm, 2x; 021-24002 15x21x4mm, 2x; 021-24003 7x14x5mm, 2x"
+includes = [
+  { part = "part/amewi/021-24000", qty = 4 },
+  { part = "part/amewi/021-24001", qty = 2 },
+  { part = "part/amewi/021-24002", qty = 2 },
+  { part = "part/amewi/021-24003", qty = 2 },
+]
 fits = [
   { kit = "kit/amewi/caballo-crawler", type = "direct", source = "doc/amewi/22670-product-page" },
   { kit = "kit/amewi/crosstrail-ct10", type = "direct", source = "doc/amewi/22657-product-page" },
@@ -13,3 +18,5 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Kugellager-Set-CT10" },
 ]
 category = "bearing"
+pack_qty = 10
+pack_qty_basis = "includes"

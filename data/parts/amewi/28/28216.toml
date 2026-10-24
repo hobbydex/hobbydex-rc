@@ -5,13 +5,13 @@ name = "Ball Bearings 5x10x4mm, 10pcs"
 name_de = "Kugellager 5x10x4mm"
 gtin = "4260564639795"
 pack_qty = 10
-pack_qty_basis = "name"
 fits = [
   { kit = "kit/amewi/crosstrail-ct10", type = "direct", source = "doc/amewi/22657-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/Kugellager-5x10x4mm-10-Stueck" },
 ]
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

@@ -3,7 +3,11 @@ brand = "brand/amewi"
 number = "014-M06001"
 name = "Pin Set MT/ST"
 gtin = "4260768516694"
-notes = "Contents: M06002 2x10mm, 8pcs; M06010 2x9mm, 8pcs; M06011 3x54mm, 8pcs"
+includes = [
+  { part = "part/amewi/M06002", qty = 8 },
+  { part = "part/amewi/M06010", qty = 8 },
+  { part = "part/amewi/M06011", qty = 8 },
+]
 fits = [
   { kit = "kit/amewi/daphoenodon-teleoceras", type = "direct", source = "doc/amewi/22609-product-page" },
 ]
@@ -11,3 +15,5 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Pin-Set-MTST" },
 ]
 category = "pin"
+pack_qty = 24
+pack_qty_basis = "includes"
