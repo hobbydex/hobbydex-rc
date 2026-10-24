@@ -1,8 +1,9 @@
 id = "part/absima/1231191"
 brand = "brand/absima"
 number = "1231191"
-name = "Shims 8*3.1*0.5"
+name = "Shims 8*3.1*0.5 (6)"
 pack_qty = 6
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/cr4-4", type = "direct", source = "doc/absima/spares-cr4-4" },
 ]
@@ -10,4 +11,6 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/3.1x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231191" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231191" },
+]

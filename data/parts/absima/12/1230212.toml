@@ -1,8 +1,9 @@
 id = "part/absima/1230212"
 brand = "brand/absima"
 number = "1230212"
-name = "E-clip 2.5"
+name = "E-clip 2.5 (12)"
 pack_qty = 12
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/ab-v2", type = "direct", source = "doc/absima/spares-ab-v2" },
   { kit = "kit/absima/atc-v2", type = "direct", source = "doc/absima/spares-atc-v2" },
@@ -13,4 +14,6 @@ category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/2.5mm", match = "functional", notes = "Shaft size from the name" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230212" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230212" },
+]

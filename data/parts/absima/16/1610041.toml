@@ -1,8 +1,9 @@
 id = "part/absima/1610041"
 brand = "brand/absima"
 number = "1610041"
-name = "M2*5 round head socket screws"
+name = "M2*5 round head socket screws (10)"
 pack_qty = 10
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/fun-maker", type = "direct", source = "doc/absima/spares-fun-maker" },
 ]
@@ -10,4 +11,6 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2x5-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1610041" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1610041" },
+]
