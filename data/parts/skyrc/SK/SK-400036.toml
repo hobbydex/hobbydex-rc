@@ -4,16 +4,18 @@ number = "SK-400036"
 name = "FuriaX Supa Agile 1/10 Sensored Brushless Motor for Drifting"
 category = "motor"
 category_source = "curated"
-sensored = true
 diameter_mm = 35.8
 length_mm = 54.4
 lipo_cells = [1, 3]
 shaft_mm = 3.175
-mount_holes = [{ thread = "M3", circle_mm = 25.2 }]
 equivalent_to = [
   { spec = "spec/motor/brushless-3654-3.175mm", match = "functional", notes = "Derived from SkyRC's dimensions (diameter 35.8 mm, length 54.4 mm, shaft 3.175 mm)" },
 ]
 notes = "Product page: sold in two versions under this one number, 10.5T (3880kV, 250W max.) and 13.5T (3050kV, 190W max.), 1-3S LiPo, rotor 12.0 x 5.00 x 24.1mm, 3.175mm shaft, 25.2mm M3 mounting pattern, sensored; weight 165g (10.5T) / 167g (13.5T)"
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/furiax-supa-agile" },
+]
+sensored = true
+mount_holes = [
+  { thread = "M3", circle_mm = 25.2 },
 ]
