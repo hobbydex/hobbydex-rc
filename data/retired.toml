@@ -1281,3 +1281,8 @@ replaced_by = "spec/screw/m2x4-button-hex"
 [[retired]]
 id = "spec/screw/m3x0-pan-jis"
 reason = "Created from the OCR name '3x0mm Screw': a zero length, not a size. The part is unlinked until its size is checked in the manual."
+
+[[retired]]
+id = "spec/connector/servo-jr-futaba"
+reason = "One spec for two plugs; split into spec/connector/servo-jr (bevelled corners) and spec/connector/servo-futaba (Futaba J, with a lip), which plug into each other but differ in shape (2026-10-24)."
+replaced_by = "spec/connector/servo-jr"

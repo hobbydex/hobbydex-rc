@@ -442,12 +442,13 @@ def check_art(ids, errors, body_parts=frozenset()):
                     errors.append(f"{path}: <path> must be empty")
     return n
 
-# the plug names of a wire part's `connectors` and of the battery and ESC `connector` field (tools/link_connector_specs.py PLUG_NAME)
+# the plug names of a wire part's `connectors` and of the battery and ESC `connector` field (tools/link_connector_specs.py PLUG_NAME);
+# "JR/Futaba" is one plug sold as fitting both servo plugs, so it names both specs
 PLUG_SPEC = {
     "XT30": "xt30", "XT60": "xt60", "XT60H": "xt60h", "XT90": "xt90", "XT90-S": "xt90s", "XT150": "xt150",
     "AS150": "as150", "QS8": "qs8", "EC2": "ec2", "EC3": "ec3", "EC5": "ec5", "EC8": "ec8", "IC3": "ic3", "IC5": "ic5",
     "Deans": "deans", "Tamiya": "tamiya", "Mini Tamiya": "tamiya-mini", "JST-RCY": "jst-rcy", "JST-XH": "jst-xh",
-    "JR": "servo-jr-futaba", "Traxxas iD": "traxxas-trx-id", "Traxxas high-current": "traxxas-high-current",
+    "JR": "servo-jr", "Futaba": "servo-futaba", "JR/Futaba": ("servo-jr", "servo-futaba"), "Traxxas iD": "traxxas-trx-id", "Traxxas high-current": "traxxas-high-current",
     "2mm bullet": "bullet-2mm", "3.5mm bullet": "bullet-3.5mm", "4mm bullet": "bullet-4mm", "5mm bullet": "bullet-5mm",
     "6mm bullet": "bullet-6mm", "8mm bullet": "bullet-8mm", "4mm banana": "banana-4mm",
 }
@@ -468,8 +469,10 @@ def check_connectors(docs, ids, errors):
         for n in names:
             if n not in PLUG_SPEC:
                 errors.append(f"{path}: connectors {n!r} is not a plug name (validate.py PLUG_SPEC)")
-            elif f"spec/connector/{PLUG_SPEC[n]}" not in ids:
-                errors.append(f"{path}: connectors {n!r} has no connector spec spec/connector/{PLUG_SPEC[n]}")
+            else:
+                for slug in (PLUG_SPEC[n],) if isinstance(PLUG_SPEC[n], str) else PLUG_SPEC[n]:
+                    if f"spec/connector/{slug}" not in ids:
+                        errors.append(f"{path}: connectors {n!r} has no connector spec spec/connector/{slug}")
         if len(set(names)) != len(names):
             errors.append(f"{path}: connectors lists a plug twice: {names!r}")
         if any(str(e.get("spec", "")).startswith("spec/connector/") for e in d.get("equivalent_to", []) if isinstance(e, dict)):
