@@ -598,6 +598,12 @@ def main():
     check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes",
           no_pack, per_brand=per_brand(no_pack))
 
+    # a Tamiya "Hex Head" screw is a hexagon head with a JIS cross recess (spec head hex), never a socket cap
+    tamiya_hex = [p for p in parts if p.get("brand") == "brand/tamiya" and p.get("category") == "screw" and re.search(r"\bhex head\b", p.get("name", ""), re.I)
+                  and any("socket-cap" in e.get("spec", "") for e in p.get("equivalent_to", []))]
+    check("tamiya-hex-head-socket", "link the Tamiya hex head screw to its spec/screw/*-hex-jis* (head hex, JIS cross recess), not to a socket cap",
+          tamiya_hex)
+
     # metal hardware whose name or cached maker page states a material the data lacks (tools/link_part_material.py's rule)
     lpm = tools.get("material")
     if lpm:
