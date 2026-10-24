@@ -20,7 +20,11 @@ when a source stated it:
 
 Not regressions: values added; values that only differ in form (TOML layout,
 whitespace, letter form of a URL: https, no www, no trailing slash); a convention
-value (pack_qty without a stated basis, material "unknown") replaced by any value.
+value (pack_qty without a stated basis, material "unknown") replaced by any value;
+a row that keeps every value and only gains some (a releases list that grows); and
+a replaces row of fits that link_upgrades.py derives (see derive_upgrades): it is
+recomputed from the stock and option rows, so it is a loss only when the head
+does not derive it and the basis is lost, which the stock and option rows show.
 
     python3 -I tools/regression_check.py                      # origin/main against HEAD
     python3 -I tools/regression_check.py --base origin/main --head HEAD \\
@@ -47,6 +51,12 @@ CONVENTION = {"material": {"unknown"}}   # placeholder values, never a stated fa
 # keys that name a row, in the order they are tried; rows are paired by them when their content changed
 IDENT_KEYS = ("url", "kit", "spec", "part", "release", "doc", "brand", "item", "site", "name", "text", "role", "relation")
 MISSING = object()
+# link_upgrades.py (hobbydex-tools) derives a fits row {kit, type = "replaces", replaces, source, notes = LINK_NOTE}
+# for an upgrade part; the rules below are copied from it and must stay the same
+LINK_NOTE = "Same part in another material (link_upgrades.py)"
+LINK_STRIP = re.compile(r"\b(alu(minium|minum)?\.?|7075|6061|t6|composite|graphite|carbon( fiber| fibre)?|titanium|steel|stainless|hardened|brass|plastic|nylon|delrin|pom|swiss|cnc|machined|lightweight|light weight|hard|soft|medium|black|blue|red|gold|silver|orange|green|grey|gray|purple|pink|anodi[sz]ed|v\d|\d(\.\d)?\s?mm)\b")
+LINK_SKIP = {None, "radio", "light", "cooling", "wire", "screw", "bearing", "nut", "washer-shim", "decal", "body", "tire", "wheel", "manual", "parts-tree", "oil-grease", "glue", "tool", "battery", "electronics"}
+LINK_BETTER = {"aluminium": {None, "plastic"}, "carbon": {None, "plastic"}, "steel": {None, "plastic"}, "titanium": {None, "plastic", "steel", "aluminium"}}
 FIELD_ROWS_LOG = 60    # field rows printed to stdout; the report file has all
 
 
@@ -161,7 +171,7 @@ class Check:
         self.events = []                       # every removed or changed value and every removed record
         self.counts = collections.defaultdict(collections.Counter)   # (kind, field) -> added/removed/changed/regressions
         self.recs = collections.defaultdict(collections.Counter)     # kind -> records added/removed/changed
-        self._former = self._gone = self._replaced = self._docs = self._supersedes = None
+        self._former = self._gone = self._replaced = self._docs = self._supersedes = self._derived = None
 
     def count(self, kind, field, what, n=1):
         self.counts[(kind, field)][what] += n
@@ -173,6 +183,25 @@ class Check:
             self.count(kind, field, "regressions")
 
     # lookups in the head, made only when a record is removed or a link goes
+    def derived_upgrades(self):
+        """part id -> the replaces rows link_upgrades.py derives on the head. Read once, and only when a derived row
+        is removed or changed."""
+        if self._derived is None:
+            paths = [p for p in git("ls-tree", "-r", "--name-only", self.head, "--", "data/parts", "data/releases").split("\n")
+                     if p.endswith(".toml")]
+            docs = blobs(self.head, paths)
+            parts, releases = {}, []
+            for p in paths:
+                if docs.get(p) is None:
+                    continue
+                d = parse(docs[p], p)
+                if p.startswith("data/parts/"):
+                    parts[d["id"]] = d
+                else:
+                    releases.append(d)
+            self._derived = derive_upgrades(parts, releases)
+        return self._derived
+
     def retired_replaced(self):
         if self._replaced is None:
             blob = blobs(self.head, [RETIRED])[RETIRED]
@@ -313,6 +342,9 @@ class Check:
             if new_id:
                 self.event(kind, rid, k, "removed", row, MISSING, False, f"repointed to {new_id}, which supersedes it")
                 return
+        if derived_row(row) and canon(row) not in self.derived_upgrades().get(rid, ()):
+            self.event(kind, rid, k, "removed", row, MISSING, False, "derived by link_upgrades.py, not derived on this head")
+            return
         if k == "links":
             url = normalize_url(row.get("url", ""))
             if url in self.gone_pages():
@@ -352,6 +384,12 @@ class Check:
             if isinstance(r, dict) and isinstance(a, dict) and differs_only_in_provenance(r, a):
                 self.event(kind, rid, k, "changed", r, a, False, "source or note only")
                 continue
+            if derived_row(r) and derived_row(a) and canon(a) in self.derived_upgrades().get(rid, ()):
+                self.event(kind, rid, k, "changed", r, a, False, "derived by link_upgrades.py, recomputed")
+                continue
+            if gained_only(r, a):
+                self.event(kind, rid, k, "changed", r, a, False, "row kept every value and gained some")
+                continue
             if k == "links" and isinstance(r, dict) and isinstance(a, dict) and "gone" in a and \
                     all(canon(r[x]) == canon(a.get(x, MISSING)) for x in r if x != "gone"):
                 self.event(kind, rid, k, "changed", r, a, False, "page marked gone (link kept)")
@@ -367,6 +405,74 @@ class Check:
         for r in pure:
             self.count(kind, k, "removed")
             self.removed_row(kind, rid, o, n, k, r)
+
+
+def derived_row(row):
+    """A replaces row link_upgrades.py writes on a fits row (see derive_upgrades)."""
+    return isinstance(row, dict) and row.get("type") == "replaces" and row.get("notes") == LINK_NOTE
+
+
+def gained_only(old, new):
+    """True when the new row keeps every value of the old one and only adds to a list value (a releases list that
+    grows). Same keys, scalars equal, lists whose old items are all still there."""
+    if not (isinstance(old, dict) and isinstance(new, dict)) or set(old) != set(new):
+        return False
+    grew = False
+    for k in old:
+        a, b = old[k], new[k]
+        if a == b:
+            continue
+        if isinstance(a, list) and isinstance(b, list) and all(x in b for x in a):
+            grew = True
+            continue
+        return False
+    return grew
+
+
+def link_base(name):
+    """A part name without material, colour, hardness and version words, as link_upgrades.py compares names."""
+    b = LINK_STRIP.sub(" ", name.lower())
+    return re.sub(r"[^a-z0-9]+", " ", b).strip()
+
+
+def derive_upgrades(parts, releases):
+    """part id -> {canon(row)}: the replaces rows link_upgrades.py derives. An upgrade X of a stock part S (same brand
+    and base name, X aluminium, carbon, steel or titanium, S plastic or no material, or steel for titanium) gets a row
+    for each kit K that holds S in its box and that X fits or is an option of. parts: id -> record; releases: the
+    release records. Same rules as tools/link_upgrades.py: change both together."""
+    stock_in, option_in = collections.defaultdict(set), collections.defaultdict(dict)
+    for r in releases:
+        for c in r.get("contains", []):
+            if c.get("role") == "kit":
+                stock_in[c.get("part")].add(r.get("kit"))
+            elif c.get("role") == "option":
+                option_in[c.get("part")].setdefault(r.get("kit"), c.get("source"))
+    groups = collections.defaultdict(list)
+    for pid, d in parts.items():
+        if d.get("category") in LINK_SKIP:
+            continue
+        b = link_base(d.get("name") or "")
+        if len(b) > 8:
+            groups[(d.get("brand"), b)].append(pid)
+    out = collections.defaultdict(set)
+    for ids in groups.values():
+        if len(ids) < 2:
+            continue
+        for x in ids:
+            mx = parts[x].get("material")
+            if mx not in LINK_BETTER:
+                continue
+            kits_x = {f["kit"]: f.get("source") for f in parts[x].get("fits", [])
+                      if f.get("kit") and f.get("note") != LINK_NOTE and f.get("notes") != LINK_NOTE}
+            for k, src in option_in[x].items():
+                kits_x.setdefault(k, src)
+            for s in ids:
+                if s == x or parts[s].get("material") not in LINK_BETTER[mx]:
+                    continue
+                for k in sorted(stock_in[s] & set(kits_x)):
+                    if kits_x[k]:
+                        out[x].add(canon(dict(kit=k, type="replaces", replaces=s, source=kits_x[k], notes=LINK_NOTE)))
+    return out
 
 
 def repointed(row, rows, supersedes):
@@ -417,6 +523,11 @@ def canonical_removal(o, n, k, row):
     c = canon(row)
     if k in ("seen_by", "seen_by_source") and any(f in n for f in ("released", "year", "announced")):
         return "seen_by dropped: a real date now stands"
+    if k == "former_names" and isinstance(row, str):   # before "moved": the current name of the head is the same value
+        if name_key(row, o.get("brand")) == name_key(n.get("name"), n.get("brand")):
+            return "former name is the current name"
+        if LISTING.search(row):
+            return "listing line, never a former name"
     for k2, v2 in n.items():   # moved: the other field gained the value (it did not hold it before)
         if k2 == k:
             continue
@@ -424,11 +535,6 @@ def canonical_removal(o, n, k, row):
         if (canon(v2) == c or (isinstance(v2, list) and any(canon(x) == c for x in v2))) and \
                 not (canon(had) == c or (isinstance(had, list) and any(canon(x) == c for x in had))):
             return f"moved to {k2}"
-    if k == "former_names" and isinstance(row, str):
-        if LISTING.search(row):
-            return "listing line, never a former name"
-        if name_key(row, o.get("brand")) == name_key(n.get("name"), n.get("brand")):
-            return "former name is the current name"
     if k == "links" and is_dealer(row) and any(isinstance(x, dict) and not is_dealer(x) for x in n.get("links", [])):
         return "dealer link beside a maker link (validate.py form)"
     return None
