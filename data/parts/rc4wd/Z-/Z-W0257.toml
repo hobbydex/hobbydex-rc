@@ -5,6 +5,11 @@ name = "Rally 1.9\" Beadlock Wheels (Silver)"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/Rally-19-Beadlock-Wheels-Silver_p_5691.html" },
 ]
+width_mm = 32
+offset_mm = 1.7
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""
 vehicle = "rally"

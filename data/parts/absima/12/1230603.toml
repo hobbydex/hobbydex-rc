@@ -1,8 +1,9 @@
 id = "part/absima/1230603"
 brand = "brand/absima"
 number = "1230603"
-name = "E-Clips 4.0"
+name = "E-Clips 4.0 (6)"
 pack_qty = 6
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/cr3-4", type = "direct", source = "doc/absima/spares-cr3-4" },
   { kit = "kit/absima/cr1-8", type = "direct", source = "doc/absima/spares-cr1-8" },
@@ -11,4 +12,6 @@ category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230603" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230603" },
+]

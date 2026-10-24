@@ -1,8 +1,9 @@
 id = "part/absima/1230901"
 brand = "brand/absima"
 number = "1230901"
-name = "Set Screw M3*3"
+name = "Set Screw M3*3 (10)"
 pack_qty = 10
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/adb1", type = "direct", source = "doc/absima/spares-adb1" },
 ]
@@ -10,4 +11,6 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230901" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230901" },
+]

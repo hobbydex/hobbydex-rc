@@ -2,8 +2,14 @@ id = "part/rc4wd/Z-W0184"
 brand = "brand/rc4wd"
 number = "Z-W0184"
 name = "Raceline Octane 2.2\" Beadlock Wheels (Black)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Raceline-Octane-22-Beadlock-Wheels-Black_p_4114.html" },
+]
+width_mm = 31
+offset_mm = 4.25
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "2.2\""

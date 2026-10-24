@@ -1,8 +1,9 @@
 id = "part/absima/1231193"
 brand = "brand/absima"
 number = "1231193"
-name = "Pins 2*11"
+name = "Pins 2*11 (12)"
 pack_qty = 12
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/cr4-4", type = "direct", source = "doc/absima/spares-cr4-4" },
 ]
@@ -10,4 +11,6 @@ category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231193" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231193" },
+]

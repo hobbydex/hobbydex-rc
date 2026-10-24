@@ -1,8 +1,9 @@
 id = "part/absima/1231176"
 brand = "brand/absima"
 number = "1231176"
-name = "Screw Pin M4*12.5"
+name = "Screw Pin M4*12.5 (8)"
 pack_qty = 8
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/cr4-4", type = "direct", source = "doc/absima/spares-cr4-4" },
 ]
@@ -12,4 +13,6 @@ equivalent_to = [
   { spec = "spec/pin/4x12.5-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
   { spec = "spec/pin/4x12.5", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231176" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231176" },
+]

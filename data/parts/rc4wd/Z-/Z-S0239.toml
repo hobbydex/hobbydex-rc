@@ -5,7 +5,9 @@ name = "12mm Axle Wheel Hexes"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-12mm-Axle-Wheel-Hexes_p_1125.html" },
 ]
-category = "drivetrain"
+material = "steel"
+width_mm = 5.76
 equivalent_to = [
-  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the product page", source = "doc/rc4wd/store" },
 ]
+category = "drivetrain"

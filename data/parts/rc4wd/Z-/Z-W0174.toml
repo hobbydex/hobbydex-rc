@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0174"
 brand = "brand/rc4wd"
 number = "Z-W0174"
 name = "Raceline Monster 2.2\" Beadlock Wheels"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Raceline-Monster-22-Beadlock-Wheels_p_4135.html" },
+]
+material = "aluminium"
+width_mm = 29.5
+offset_mm = -1.5
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "2.2\""

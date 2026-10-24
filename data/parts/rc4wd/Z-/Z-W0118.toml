@@ -5,9 +5,12 @@ name = "Ballistic Off Road Morax 1.7\" Beadlock Wheels"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Ballistic-Off-Road-Morax-17-Beadlock-Wheels_p_6862.html" },
 ]
+material = "aluminium"
+width_mm = 25
+offset_mm = -3.75
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the product page", source = "doc/rc4wd/store" },
+]
 category = "wheel"
 wheel_size = "1.7\""
 beadlock = true
-equivalent_to = [
-  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for Gelande II RTR Truck w/Cruiser Body Set (Red) are 12 mm" },
-]
