@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "PDI-1102MG"
 name = "PDI-1102MG 3.4g Metal Gear Micro Digital Coreless Servo"
 category = "servo"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 0.75
 voltage = 5.5
@@ -18,5 +16,9 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/micro-28t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under Mini servo; Stall torque 0.55 kg.cm at 3.7 V, 0.75 kg.cm at 5.5 V; speed 0.09 s/60deg at 3.7 V, 0.1 s/60deg at 5.5 V; lead 150 mm."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2026-07-28/687.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2026-07-28/687.html" },
+]

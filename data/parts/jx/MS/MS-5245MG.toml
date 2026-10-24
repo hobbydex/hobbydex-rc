@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "MS-5245MG"
 name = "MS-5245MG 6V 5.5KG High Performance Medium Digital Servo"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 3
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 5.5
 voltage = 6
@@ -19,5 +15,11 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 3
+frequency_hz = 330
 notes = "JX files it under My servo; Stall torque 4.4 kg.cm at 4.8 V, 5.5 kg.cm at 6 V; speed 0.15 s/60deg at 4.8 V, 0.12 s/60deg at 6 V; lead 220 mm; programmable."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/HT/2026-02-06/654.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/HT/2026-02-06/654.html" },
+]

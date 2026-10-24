@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "RD-5622MG-180"
 name = "RD-5622MG-180 22kg.cm, 180° Digital, metal gear robot servo"
 category = "servo"
-dead_band_us = 4
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 22
 voltage = 7.4
@@ -18,4 +16,6 @@ rotation_deg = 180
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 4
+frequency_hz = 330
 notes = "JX files it under Biaxial servo; Stall torque 14.8 kg.cm at 4.8 V, 17.6 kg.cm at 6 V, 22 kg.cm at 7.4 V; speed 0.22 s/60deg at 4.8 V, 0.2 s/60deg at 6 V; lead 200 mm."
