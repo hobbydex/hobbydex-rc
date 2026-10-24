@@ -532,6 +532,7 @@ Releases can carry a `gtin` too, the barcode on the kit's box.
 (https only); the site shows them as buttons next to the web search.
 `kind = "press"` marks a news or press site's post about the release or part (Big Squid RC); see `announced`.
 `kind = "dealer"` marks a retailer's or distributor's product page for this release or part, when the maker has none for it. It is a shop's page, never the maker's: the site shows it as "Dealer page: <host>", never as the product page. A release or part keeps a dealer link only when it has no maker product page (a maker link or a `product_page` document of the maker); a release has one, a part one per shop, each its own product page on the shop; tools/validate.py fails a release or part with a dealer link beside a maker link or product page. A shop's listing page that names several releases is a document of kind `catalog`, never a release's link.
+`kind = "maker"` marks a page of the brand's own shop or site that is not its product page (the Tamiya USA spare page of an 8-digit Tamiya spare, `{ site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/...", kind = "maker" }`); the site shows it as a maker page. A part with a maker-kind link keeps its dealer links (user, 2026-10-24), and tools/validate.py counts only a link with no kind as the maker product link for the dealer rule.
 `kind = "fan-site"` marks a link to a fan or community site (such as
 TamiyaBase): it is a courtesy link for readers, not a source for any value in
 Hobbydex, and the site shows it apart from the brand's own pages.
