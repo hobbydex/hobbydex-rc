@@ -1,0 +1,17 @@
+id = "part/yikong/646-yikong-df7-yk4072-pro-parts-6400mah-3s-battery"
+brand = "brand/yikong"
+name = "DF7 YK4072 Parts 3S 6400mah Li-Po Battery"
+source = "doc/yikong/yikongrccar-dealer-listing"
+links = [
+  { site = "yikongrccar.com (dealer)", url = "https://www.yikongrccar.com/home/646-yikong-df7-yk4072-pro-parts-6400mah-3s-battery.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/yikong/yk4072", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-6400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 3
+capacity_mah = 6400

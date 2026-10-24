@@ -1,0 +1,14 @@
+id = "part/yikong/912-yikong-yk4101-rc-car-parts-lock-nuts-m3-13115"
+brand = "brand/yikong"
+name = "YK4101 RC Car Parts Lock Nuts (M3) 13115"
+source = "doc/yikong/yikongrccar-dealer-listing"
+links = [
+  { site = "yikongrccar.com (dealer)", url = "https://www.yikongrccar.com/yikong-yk4101-parts/912-yikong-yk4101-rc-car-parts-lock-nuts-m3-13115.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/yikong/yk4101", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
+]
+category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
