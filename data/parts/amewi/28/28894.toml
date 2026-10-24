@@ -4,7 +4,6 @@ number = "28894"
 name = "LiPo Battery 3S 11,1V 2200mAh"
 name_de = "LiPo Akku 3S 11,1V 2200mAh 40C Softcase, DEANS"
 gtin = "4260414189982"
-notes = "Specifications: Battery Type Li-Po; Cells 3; Battery Voltage 11.1V; Battery Capacity 2200mAh; Battery Plug Deans; Dimension 24x35x101mm; Battery Weight 187g"
 fits = [
   { kit = "kit/amewi/crusher", type = "direct", source = "doc/amewi/22569-product-page" },
 ]
@@ -22,3 +21,6 @@ connector = "Deans"
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
+voltage = 11.1
+dimensions_mm = [24, 35, 101]
+weight_g = 187

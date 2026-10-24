@@ -662,6 +662,10 @@ Chargers are parts with category charger and, when stated, `power_w`.
 
 Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh | liion),
 `cells`, `capacity_mah` and `nominal_v`; id `spec/battery/lipo-2s-5000mah`.
+The part's own `voltage` is the nominal volts its name or maker page states (7.4 for
+"7.4V"), set by tools/name_fields.py; the spec's `nominal_v` is what a spec row is matched on.
+Maker spec dumps in notes ("Battery Type Li-Po; Cells 2; ...", "Li-Ion pack, 7.4V") are read into
+these fields when the part is written, and the note keeps only what no field takes.
 Whether a pack fits a car depends on the part's `c_rating`, `case` (hard |
 soft | shorty), `dimensions_mm` ([length, width, height]), `weight_g` and
 `connector` (XT60, EC5, Deans, ...), so those stay on the part.
