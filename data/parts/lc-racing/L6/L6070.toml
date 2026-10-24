@@ -2,6 +2,9 @@ id = "part/lc-racing/L6070"
 brand = "brand/lc-racing"
 number = "L6070"
 name = "185mm Composite Chassis(L Version)"
-notes = "Components: PLASTIC CHASSIS PATE (BE6078); PLASTIC CHASSIS PATE (BE6081)"
 category = "chassis"
 material = "plastic"
+includes = [
+  { part = "part/lc-racing/BE6078" },
+  { part = "part/lc-racing/BE6081" },
+]

@@ -3,6 +3,8 @@ brand = "brand/lc-racing"
 number = "L6034"
 name = "225mm wheelbase Chassis Aluminum 2.5mm"
 applies_to = "EMB-WRC, EMB-RA, EMB-SC, EMB-TG, EMB-DT"
-notes = "Components: LONG CHASSIS (HM6082)"
 category = "chassis"
 material = "aluminium"
+includes = [
+  { part = "part/lc-racing/HM6082" },
+]
