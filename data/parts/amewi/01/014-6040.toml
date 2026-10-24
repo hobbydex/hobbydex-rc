@@ -5,7 +5,6 @@ name = "6040 Lower sway arm inside huinge pins 2.5x40mm F/R 4pcs"
 name_de = "6040 Innere Querlenkerpins 2.5x40mm vorne/hinten"
 gtin = "4260768516755"
 pack_qty = 4
-pack_qty_basis = "name"
 fits = [
   { kit = "kit/amewi/gantry", type = "direct", source = "doc/amewi/22606-product-page" },
   { kit = "kit/amewi/conquer", type = "direct", source = "doc/amewi/22605-product-page" },
@@ -13,6 +12,7 @@ fits = [
 links = [
   { site = "Amewi", url = "https://amewi.com/6040-Innere-Querlenkerpins-25x40mm-vornehinten-4-Stueck" },
 ]
+pack_qty_basis = "name"
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2.5x40", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },

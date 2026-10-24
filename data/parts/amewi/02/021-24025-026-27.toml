@@ -4,7 +4,10 @@ number = "021-24025-026-27"
 name = "Screw Set A CT10"
 name_de = "Schrauben Set A CT10"
 gtin = "4262408974727"
-notes = "Contents: Socket Step Screw M3x2,5x10mm, 4x; Socket Step Screw M3x2,5x11mm, 4x; Grub Screw M4x3mm, 4x"
+notes = "Contents: Socket Step Screw M3x2,5x10mm, 4x; Socket Step Screw M3x2,5x11mm, 4x"
+includes = [
+  { spec = "spec/screw/m4x3-set-hex", qty = 4 },
+]
 fits = [
   { kit = "kit/amewi/caballo-crawler", type = "direct", source = "doc/amewi/22670-product-page" },
   { kit = "kit/amewi/crosstrail-ct10", type = "direct", source = "doc/amewi/22657-product-page" },
@@ -13,3 +16,5 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Schrauben-Set-A-CT10" },
 ]
 category = "screw"
+pack_qty = 4
+pack_qty_basis = "includes"

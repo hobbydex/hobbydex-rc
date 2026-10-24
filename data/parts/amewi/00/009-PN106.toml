@@ -5,13 +5,13 @@ name = "PN106 Pin 2.0x10.8mm, 10 pcs"
 name_de = "PN106 Pin 2,0x10,8mm, 10 Stück EVO-X 6000"
 gtin = "4260476358340"
 pack_qty = 10
-pack_qty_basis = "name"
 fits = [
   { kit = "kit/amewi/evo-x6000", type = "direct", source = "doc/amewi/22320-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/PN106-Pin-20x108mm-10-Stueck-EVO-X-6000" },
 ]
+pack_qty_basis = "name"
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2x10.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },

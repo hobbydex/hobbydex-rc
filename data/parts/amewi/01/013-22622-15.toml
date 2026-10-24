@@ -3,7 +3,11 @@ brand = "brand/amewi"
 number = "013-22622-15"
 name = "Pin Set M-Land"
 gtin = "4262500341731"
-notes = "Contents: 4x 2,5x40mm; 2x 2,5x29,5mm; 4x 2,5x18mm"
+includes = [
+  { spec = "spec/pin/2.5x40", qty = 4 },
+  { spec = "spec/pin/2.5x29.5", qty = 2 },
+  { spec = "spec/pin/2.5x18", qty = 4 },
+]
 fits = [
   { kit = "kit/amewi/m-land-truggy", type = "direct", source = "doc/amewi/22756-product-page" },
   { kit = "kit/amewi/m-land", type = "direct", source = "doc/amewi/22623-product-page" },
@@ -12,3 +16,5 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Pin-Set-M-Land" },
 ]
 category = "pin"
+pack_qty = 10
+pack_qty_basis = "includes"

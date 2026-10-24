@@ -4,7 +4,12 @@ number = "019-21091111"
 name = "Screw Set I HC7/RXB7"
 name_de = "Schrauben Set I HC7/RXB7"
 gtin = "4260677958776"
-notes = "Contents: 12x Set Screw M3x3mm; 12x Set Screw M3x4mm; 12x Set Screw M5x4mm; 6x Set Screw M4x10mm"
+includes = [
+  { spec = "spec/screw/m3x3-set-hex", qty = 12 },
+  { spec = "spec/screw/m3x4-set-hex", qty = 12 },
+  { spec = "spec/screw/m5x4-set-hex", qty = 12 },
+  { spec = "spec/screw/m4x10-set-hex", qty = 6 },
+]
 fits = [
   { kit = "kit/amewi/rxb7", type = "direct", source = "doc/amewi/22554-product-page" },
   { kit = "kit/amewi/hc7", type = "direct", source = "doc/amewi/21091-product-page" },
@@ -13,3 +18,5 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Schrauben-Set-I-HC7RXB7" },
 ]
 category = "screw"
+pack_qty = 42
+pack_qty_basis = "includes"

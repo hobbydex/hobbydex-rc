@@ -5,13 +5,13 @@ name = "SH102 Shim 5x7x0,15 10 pcs"
 name_de = "SH102 Shim Scheibe 5x7x0,15mm 10 Stück, EVO-X 6000"
 gtin = "4260476358364"
 pack_qty = 10
-pack_qty_basis = "name"
 fits = [
   { kit = "kit/amewi/evo-x6000", type = "direct", source = "doc/amewi/22320-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/SH102-Shim-Scheibe-5x7x015mm-10-Stueck-EVO-X-6000" },
 ]
+pack_qty_basis = "name"
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5x7x0.15", match = "functional", notes = "Size parsed from the manufacturer's description" },

@@ -3,7 +3,10 @@ brand = "brand/amewi"
 number = "013-22700-41"
 name = "Pin Set MAX20"
 gtin = "4262500346064"
-notes = "Contents: 4x 2x18,5mm; 5x 1,5x8mm"
+includes = [
+  { spec = "spec/pin/2x18.5", qty = 4 },
+  { spec = "spec/pin/1.5x8", qty = 5 },
+]
 fits = [
   { kit = "kit/amewi/max20", type = "direct", source = "doc/amewi/22707-product-page" },
 ]
@@ -11,3 +14,5 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Pin-Set-MAX20" },
 ]
 category = "pin"
+pack_qty = 9
+pack_qty_basis = "includes"

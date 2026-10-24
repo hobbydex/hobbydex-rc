@@ -4,7 +4,10 @@ number = "013-22700-40"
 name = "Bearing Set MAX20"
 name_de = "Kuegellager Set MAX20"
 gtin = "4262500346057"
-notes = "Contents: 4x 6,35x9,525x3,175mm; 5x 6x10x3mm"
+notes = "Contents: 4x 6,35x9,525x3,175mm"
+includes = [
+  { spec = "spec/bearing/6x10x3", qty = 5 },
+]
 fits = [
   { kit = "kit/amewi/max20", type = "direct", source = "doc/amewi/22707-product-page" },
 ]
@@ -12,3 +15,5 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Kuegellager-Set-MAX20" },
 ]
 category = "bearing"
+pack_qty = 5
+pack_qty_basis = "includes"

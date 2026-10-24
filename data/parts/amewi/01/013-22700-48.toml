@@ -4,7 +4,10 @@ number = "013-22700-48"
 name = "Screw Set B MAX20"
 name_de = "Schrauben Set C MAX20"
 gtin = "4262500346132"
-notes = "Contents: 8x Set screw M3x3mm; 8x Countersunk 2x6mm; 8x Countersunk 2x8mm; 8x Round head collar screw 3x8mm; 8x Round head 2x10mm; 8x Round head 2x12mm; 8x Round head 2x7mm"
+notes = "Contents: 8x Countersunk 2x6mm; 8x Countersunk 2x8mm; 8x Round head collar screw 3x8mm; 8x Round head 2x10mm; 8x Round head 2x12mm; 8x Round head 2x7mm"
+includes = [
+  { spec = "spec/screw/m3x3-set-hex", qty = 8 },
+]
 fits = [
   { kit = "kit/amewi/max20", type = "direct", source = "doc/amewi/22707-product-page" },
 ]
@@ -12,3 +15,5 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Schrauben-Set-C-MAX20" },
 ]
 category = "screw"
+pack_qty = 8
+pack_qty_basis = "includes"
