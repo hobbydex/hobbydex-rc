@@ -1,9 +1,16 @@
 id = "part/team-associated/91749"
 brand = "brand/team-associated"
 number = "91749"
-name = "M2 x 3mm FHCS"
-former_names = ["M2 x 3mm FHCS THR"]
+name = "Screws, M2x3 mm FHCS"
+former_names = ["M2 x 3mm FHCS", "M2 x 3mm FHCS THR"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2x3-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695917491"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2x3-mm-fhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b71", type = "direct", source = "doc/team-associated/store" },
 ]

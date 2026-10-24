@@ -1,8 +1,8 @@
 id = "part/team-associated/91150"
 brand = "brand/team-associated"
 number = "91150"
-name = "M4 Low Profi le Serrated Steel Wheel Nuts"
-former_names = ["M4 Locknuts"]
+name = "M4 Low Profile Serrated Steel Wheel Nuts"
+former_names = ["M4 Low Profi le Serrated Steel Wheel Nuts", "M4 Locknuts"]
 category = "nut"
 material = "steel"
 equivalent_to = [
@@ -14,4 +14,11 @@ related = [
   { part = "part/team-associated/91609", relation = "use-with" },
   { part = "part/team-associated/91610", relation = "use-with" },
   { part = "part/team-associated/91862", relation = "use-with" },
+]
+gtin = "784695911505"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/m4-low-profile-serrated-steel-wheel-nuts/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
 ]

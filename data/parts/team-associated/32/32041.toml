@@ -1,9 +1,17 @@
 id = "part/team-associated/32041"
 brand = "brand/team-associated"
 number = "32041"
-name = "HD ball stud, short, 4mm"
+name = "HD Ballstuds, Short 4mm"
+former_names = ["HD ball stud, short, 4mm"]
 category = "ball-end"
 ball_type = "stud"
 equivalent_to = [
   { spec = "spec/ball-end/4mm-stud", match = "functional" },
+]
+gtin = "784695320413"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/hd-ballstuds-short-4mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/tc8", type = "direct", source = "doc/team-associated/store" },
 ]

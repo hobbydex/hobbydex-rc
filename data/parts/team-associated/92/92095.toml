@@ -1,10 +1,19 @@
 id = "part/team-associated/92095"
 brand = "brand/team-associated"
 number = "92095"
-name = "4WD Front Wheels, 2.2 in, 12 mm Hex"
+name = "4WD Front Wheels, 2.2 in, 12 mm Hex, white"
+former_names = ["4WD Front Wheels, 2.2 in, 12 mm Hex"]
 category = "wheel"
 wheel_size = "2.2\""
 position = "front-4wd"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
+gtin = "784695920958"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/4wd-front-wheels-2-2-in-12-mm-hex-white/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10-4wd", type = "direct", source = "doc/team-associated/store" },
+]
+color = "white"

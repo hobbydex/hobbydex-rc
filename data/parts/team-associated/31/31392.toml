@@ -1,9 +1,16 @@
 id = "part/team-associated/31392"
 brand = "brand/team-associated"
 number = "31392"
-name = "3x5x0.3mm Washer"
+name = "Washers, 3x5x0.3mm"
+former_names = ["3x5x0.3mm Washer"]
 gtin = "784695313927"
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/3x5x0.3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/washers-3x5x0-3mm/" },
+]
+fits = [
+  { kit = "kit/element-rc/enduro12", type = "direct", source = "doc/team-associated/store" },
 ]

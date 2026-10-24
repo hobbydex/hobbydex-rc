@@ -1,8 +1,16 @@
 id = "part/team-associated/25653"
 brand = "brand/team-associated"
 number = "25653"
-name = "3x35mm SHCS"
+name = "Screws, M3x35 mm SHCS"
+former_names = ["3x35mm SHCS"]
 equivalent_to = [
   { spec = "spec/screw/m3x35-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+gtin = "784695256538"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x35-mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rival-mt8", type = "direct", source = "doc/team-associated/store" },
+]

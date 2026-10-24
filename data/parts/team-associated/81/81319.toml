@@ -1,8 +1,16 @@
 id = "part/team-associated/81319"
 brand = "brand/team-associated"
 number = "81319"
-name = "FT 17mm Wheel Hexes, 11.5 mm"
+name = "RC8T3 FT 17mm Wheel Hexes, 11.5 mm offset"
+former_names = ["FT 17mm Wheel Hexes, 11.5 mm"]
 category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },
+]
+gtin = "784695813199"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8t3-ft-17mm-wheel-hexes-11-5-mm-offset/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
 ]

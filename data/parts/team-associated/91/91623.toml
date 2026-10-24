@@ -1,8 +1,16 @@
 id = "part/team-associated/91623"
 brand = "brand/team-associated"
 number = "91623"
-name = "V2 3 x 35 Shock Shaft TiN “rear”"
+name = "3x35 mm Shock Shafts (V2), TiN"
+former_names = ["V2 3 x 35 Shock Shaft TiN “rear”"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 35
+gtin = "784695916234"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3x35-mm-shock-shafts-v2-tin/" },
+]
+fits = [
+  { kit = "kit/team-associated/pro2-sc10", type = "direct", source = "doc/team-associated/store" },
+]

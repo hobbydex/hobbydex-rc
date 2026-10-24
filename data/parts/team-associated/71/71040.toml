@@ -1,6 +1,17 @@
 id = "part/team-associated/71040"
 brand = "brand/team-associated"
 number = "71040"
-name = "Wheel, Black"
+name = "Method Wheels, 12 mm Hex, black"
+former_names = ["Wheel, Black"]
 category = "wheel"
 color = "black"
+gtin = "784695710405"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/method-wheels-12-mm-hex-black/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10sc6", type = "direct", source = "doc/team-associated/store" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

@@ -1,8 +1,16 @@
 id = "part/team-associated/91489"
 brand = "brand/team-associated"
 number = "91489"
-name = "3 x 27.5 Shock Shaft (front)"
+name = "3x27.5 mm Shock Shafts"
+former_names = ["3 x 27.5 Shock Shaft (front)"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 27.5
+gtin = "784695914896"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3x27-5-mm-shock-shafts/" },
+]
+fits = [
+  { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+]

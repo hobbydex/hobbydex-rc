@@ -1,8 +1,16 @@
 id = "part/team-associated/41096"
 brand = "brand/team-associated"
 number = "41096"
-name = "M3 x 8mm LP SHCS"
+name = "Screws, LP Low-Profile M3x8mm SHCS"
+former_names = ["M3 x 8mm LP SHCS"]
 category = "screw"
 equivalent_to = [
-  { spec = "spec/screw/m3x8-low-head-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695410961"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-lp-low-profile-m3x8mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
 ]

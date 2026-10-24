@@ -1,8 +1,14 @@
 id = "part/team-associated/92580"
 brand = "brand/team-associated"
 number = "92580"
-name = "Front Shock Tower Nut"
-former_names = ["Front Shock M3 x Tower Cover LP SHCS", "Front Shock Tower Cover", "Rear Tower Cover"]
+name = "RC10B7.1 Shock Tower Cover Set"
+former_names = ["Front Shock Tower Nut", "Front Shock M3 x Tower Cover LP SHCS", "Front Shock Tower Cover", "Rear Tower Cover"]
 gtin = "784695925809"
-category = "nut"
-links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b7-shock-tower-cover-set/" } ]
+category = "chassis"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b7-1-shock-tower-cover-set/" },
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b7-shock-tower-cover-set/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b71", type = "direct", source = "doc/team-associated/store" },
+]

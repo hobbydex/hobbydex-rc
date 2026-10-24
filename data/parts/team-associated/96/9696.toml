@@ -1,7 +1,19 @@
 id = "part/team-associated/9696"
 brand = "brand/team-associated"
 number = "9696"
-name = "Rear Wheel, Yellow"
+name = "2WD/4WD Rear Wheels, 2.2 in, 12 mm Hex, yellow"
+former_names = ["Rear Wheel, Yellow"]
 category = "wheel"
 position = "rear"
 color = "yellow"
+gtin = "784695096967"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/2wd-4wd-rear-wheels-2-2-in-12-mm-hex-yellow/" },
+]
+fits = [
+  { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+wheel_size = "2.2\""

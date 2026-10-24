@@ -1,5 +1,16 @@
 id = "part/team-associated/71037"
 brand = "brand/team-associated"
 number = "71037"
-name = "M3 x 45mm Bumper BHCS Brace"
+name = "Screws, M3x45 mm BHCS"
+former_names = ["M3 x 45mm Bumper BHCS Brace"]
 category = "screw"
+gtin = "784695710375"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x45-mm-bhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10sc6", type = "direct", source = "doc/team-associated/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x45-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

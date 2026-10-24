@@ -1,8 +1,16 @@
 id = "part/team-associated/31872"
 brand = "brand/team-associated"
 number = "31872"
-name = "2x9mm Dowel Pin"
+name = "Apex2 Gear Diff Pins, 2.0 x 9.0mm"
+former_names = ["2x9mm Dowel Pin"]
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2x9", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
+gtin = "784695318724"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/apex2-gear-diff-pins-2-0-x-9-0mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/apex2", type = "direct", source = "doc/team-associated/store" },
 ]

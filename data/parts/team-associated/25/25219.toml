@@ -1,8 +1,19 @@
 id = "part/team-associated/25219"
 brand = "brand/team-associated"
 number = "25219"
-name = "Locknut M3"
+name = "M3 Low Profile Locknuts, Black (10pcs)"
+former_names = ["Locknut M3"]
 category = "nut"
 equivalent_to = [
-  { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/nut/m3-lock-thin", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+pack_qty = 10
+pack_qty_basis = "name"
+gtin = "784695252196"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/m3-low-profile-locknuts-black-10pcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10-custom-race-car-6x6", type = "direct", source = "doc/team-associated/store" },
+]
+color = "black"

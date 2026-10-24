@@ -1,6 +1,17 @@
 id = "part/team-associated/91985"
 brand = "brand/team-associated"
 number = "91985"
-name = "blue aluminum RC10B6.4 1mm Scrub Caster and Steering Blocks, carbon FT Shock Bodies, with"
+name = "RC10B6.4 -1mm Scrub Caster and Steering Blocks, carbon"
+former_names = ["blue aluminum RC10B6.4 1mm Scrub Caster and Steering Blocks, carbon FT Shock Bodies, with"]
 category = "steering"
 color = "blue"
+gtin = "784695919853"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b6-4-1mm-scrub-caster-and-steering-blocks-carbon/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10sc6", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10b64", type = "replaces", replaces = "part/team-associated/91901", source = "doc/team-associated/pressrelease-041222-rc10b6-4-d-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/team-associated/rc10sc6", type = "replaces", replaces = "part/team-associated/91901", source = "doc/team-associated/store", notes = "Same part in another material (link_upgrades.py)" },
+]
+material = "carbon"

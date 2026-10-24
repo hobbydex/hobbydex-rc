@@ -5,14 +5,16 @@ number = "20174"
 name = "Reflex 14MT Monster Truck RTR"
 kind = "rtr"
 status = "released"
-announced = "2023-06-19"
-announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Reflex_14MT/PressRelease_050323_20174_Reflex_14MT.pdf"
 gtin = "784695201743"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Reflex_14MT/RTR/" },
 ]
+announced = "2023-06-19"
+announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Reflex_14MT/PressRelease_050323_20174_Reflex_14MT.pdf"
 documents = ["doc/team-associated/20174-page", "doc/team-associated/pressrelease-050323-20174-reflex-14mt", "doc/team-associated/reflex-14mt-manual", "doc/team-associated/reedy-esc-sc300bl-manual", "doc/team-associated/pressrelease-053123-20174-reflex-14mt-parts-list", "doc/team-associated/rc14mt-manual-2023", "doc/team-associated/27202-123s-rtr-charger-manual", "doc/team-associated/xp120-dvc-manual-waden-online", "doc/team-associated/youtube-ViLpPBVCwN8"]
 contains = [
+  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
+  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
   { part = "part/team-associated/21173", role = "kit", qty = 10, step = "Step 1 2; Step 14; Step 33; Step 34", source = "doc/team-associated/reflex-14mt-manual" },
   { part = "part/team-associated/21501", role = "kit", qty = 10, step = "Step 1 5; Step 19; Step 20; Step 31", source = "doc/team-associated/reflex-14mt-manual" },
   { part = "part/team-associated/21502", role = "kit", qty = 8, step = "Step 1 5; Step 19", source = "doc/team-associated/reflex-14mt-manual" },
@@ -64,6 +66,6 @@ contains = [
   { part = "part/team-associated/8691", role = "kit", qty = 2, step = "Step 22; Step 24", source = "doc/team-associated/reflex-14mt-manual" },
   { part = "part/team-associated/89215", role = "kit", qty = 2, step = "Step 10", source = "doc/team-associated/reflex-14mt-manual" },
   { part = "part/team-associated/91738", role = "kit", qty = 2, step = "Step 34", source = "doc/team-associated/reflex-14mt-manual" },
-  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
-  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
+  { part = "part/team-associated/21622", role = "listed", source = "doc/team-associated/pressrelease-053123-20174-reflex-14mt-parts-list" },
+  { part = "part/team-associated/21623", role = "listed", source = "doc/team-associated/pressrelease-053123-20174-reflex-14mt-parts-list" },
 ]

@@ -1,8 +1,16 @@
 id = "part/team-associated/81256"
 brand = "brand/team-associated"
 number = "81256"
-name = "C-Clip, 5mm"
+name = "C-Clips, 5 mm"
+former_names = ["C-Clip, 5mm"]
 category = "clip"
 equivalent_to = [
   { spec = "spec/circlip/5mm", match = "functional" },
+]
+gtin = "784695812567"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/c-clips-5-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8b4", type = "direct", source = "doc/team-associated/store" },
 ]

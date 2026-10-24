@@ -1,9 +1,16 @@
 id = "part/team-associated/91561"
 brand = "brand/team-associated"
 number = "91561"
-name = "6x12x4mm Bearing"
+name = "FT Bearings, 6x12x4 mm"
+former_names = ["6x12x4mm Bearing"]
 gtin = "784695915619"
 equivalent_to = [
   { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-bearings-6x12x4-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
+]

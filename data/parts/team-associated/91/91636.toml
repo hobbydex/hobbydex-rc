@@ -1,10 +1,17 @@
 id = "part/team-associated/91636"
 brand = "brand/team-associated"
 number = "91636"
-name = "12mm front spring (54mm), White (4.10lb)"
+name = "12 mm Shock Springs, 54mm, white, 4.10 lb/in"
+former_names = ["12mm front spring (54mm), White (4.10lb)"]
 gtin = "784695916364"
 category = "shock-spring"
 rate_lb_in = 4.1
 free_length_mm = 12
 color = "white"
 range = "team-associated/spring-free-rate-springs"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/12-mm-shock-springs-54mm-white-4-10-lb-in/" },
+]
+fits = [
+  { kit = "kit/team-associated/pro2-sc10", type = "direct", source = "doc/team-associated/store" },
+]

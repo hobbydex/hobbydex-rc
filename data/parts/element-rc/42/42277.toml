@@ -1,8 +1,13 @@
 id = "part/element-rc/42277"
 brand = "brand/element-rc"
 number = "42277"
-name = "2x6mm BHCS"
-equivalent_to = [
-  { spec = "spec/screw/m2x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+name = "Enduro Knightwalker Body Accessories"
+former_names = ["2x6mm BHCS"]
+category = "body"
+gtin = "784695422773"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/enduro-knightwalker-body-accessories/" },
 ]
-category = "screw"
+fits = [
+  { kit = "kit/element-rc/enduro", type = "direct", source = "doc/team-associated/store" },
+]

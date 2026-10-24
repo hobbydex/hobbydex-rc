@@ -1,9 +1,16 @@
 id = "part/team-associated/92319"
 brand = "brand/team-associated"
 number = "92319"
-name = "Differential Pinion side of Gear Shim, insertion 5 x 6.5 x 1mm the diff Kit"
-former_names = ["Differential Pinion Gear Shims, 5 x 6.5 x 1mm"]
+name = "RC10B74.2 Differential Pinion Gear Shims, 5 x 6.5 x 1mm"
+former_names = ["Differential Pinion side of Gear Shim, insertion 5 x 6.5 x 1mm the diff Kit", "Differential Pinion Gear Shims, 5 x 6.5 x 1mm"]
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5x6.5x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+gtin = "784695923195"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b74-2-differential-pinion-gear-shims-5-x-6-5-x-1mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b74", type = "direct", source = "doc/team-associated/store" },
 ]

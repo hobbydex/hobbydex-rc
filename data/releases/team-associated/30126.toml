@@ -5,14 +5,16 @@ number = "30126"
 name = "Apex2 Sport A550 Rally Car RTR"
 kind = "rtr"
 status = "released"
-announced = "2022-11-22"
-announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Apex2_Sport/RTR/PressRelease_101122_30126-Apex2-A550-Rally.pdf"
 gtin = "784695301269"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Apex2_Sport/RTR/" },
 ]
+announced = "2022-11-22"
+announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Apex2_Sport/RTR/PressRelease_101122_30126-Apex2-A550-Rally.pdf"
 documents = ["doc/team-associated/30126-page", "doc/team-associated/apex2-sport-a550-rally-manual-10-2022", "doc/team-associated/pressrelease-101122-30126-apex2-a550-rally", "doc/team-associated/reedy-sc500x-esc-manual-online", "doc/team-associated/xp120-dvc-manual-waden-online", "doc/team-associated/youtube-BH0hS6PhFYM"]
 contains = [
+  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
+  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
   { part = "part/team-associated/1338", role = "kit", qty = 1, step = "Electronics Build - Step 1", source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022" },
   { part = "part/team-associated/21173", role = "kit", qty = 8, step = "Rear Suspension Build - Step 7; Chassis Build - Step 2; Tires and Body Build - Step 6", source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022" },
   { part = "part/team-associated/2308", role = "kit", qty = 8, step = "Front / Rear Suspension Build - Step 6; Rear Suspension Build - Step 7; Front / Rear Suspension Build - Step 8; Electronics Build - Step 4", source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022" },
@@ -82,6 +84,4 @@ contains = [
   { part = "part/team-associated/92132", role = "kit", qty = 10, step = "Gear Diff Build - Step 1; Gear Diff Build - Step 2", source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022" },
   { part = "part/team-associated/92133", role = "kit", qty = 3, step = "Gear Diff Build - Step 1; Gear Diff Build - Step 2", source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022" },
   { part = "part/team-associated/92143", role = "kit", qty = 2, step = "Gear Diff Build - Step 1", source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022" },
-  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
-  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
 ]

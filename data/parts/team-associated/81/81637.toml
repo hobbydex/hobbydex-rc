@@ -1,7 +1,14 @@
 id = "part/team-associated/81637"
 brand = "brand/team-associated"
 number = "81637"
-name = "Front Upper Suspension Arm Wing"
-former_names = ["Front Upper Arm, Soft", "Front Upper Suspension Arm Bushing"]
+name = "RC8B4 Front Suspension Arms, soft"
+former_names = ["Front Upper Suspension Arm Wing", "Front Upper Arm, Soft", "Front Upper Suspension Arm Bushing"]
 category = "suspension"
-links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b4-front-upper-suspension-arms/" } ]
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b4-front-suspension-arms-soft/" },
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b4-front-upper-suspension-arms/" },
+]
+gtin = "784695816374"
+fits = [
+  { kit = "kit/team-associated/rc8b41", type = "direct", source = "doc/team-associated/store" },
+]

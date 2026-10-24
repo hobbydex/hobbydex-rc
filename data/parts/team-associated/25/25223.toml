@@ -1,8 +1,16 @@
 id = "part/team-associated/25223"
 brand = "brand/team-associated"
 number = "25223"
-name = "4x3mm Setscrew"
+name = "Set Screws, M4x3 mm"
+former_names = ["4x3mm Setscrew"]
 equivalent_to = [
   { spec = "spec/screw/m4x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+gtin = "784695252233"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/set-screws-m4x3-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/sr7", type = "direct", source = "doc/team-associated/store" },
+]

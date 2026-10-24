@@ -5,15 +5,17 @@ number = "20531"
 name = "Pro4 SC10 General Tire RTR"
 kind = "rtr"
 status = "released"
-announced = "2021-11-03"
-announced_source = "https://www.redrc.net/2021/11/associated-pro4-sc10-general-tire-rtr/"
 gtin = "784695205314"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro4SC10/General_Tire_RTR/" },
   { site = "Red RC", url = "https://www.redrc.net/2021/11/associated-pro4-sc10-general-tire-rtr/", kind = "press" },
 ]
+announced = "2021-11-03"
+announced_source = "https://www.redrc.net/2021/11/associated-pro4-sc10-general-tire-rtr/"
 documents = ["doc/team-associated/20531-page", "doc/team-associated/27201-324s-rtr-charger-manual", "doc/team-associated/lipo-safety-instructions-and-warnings", "doc/team-associated/pressrelease-020221-pro4-sc10-parts-list", "doc/team-associated/reedy-27110-27111-servos-press-release", "doc/team-associated/xp120-dvc-manual-waden-online", "doc/team-associated/20531-pro4-manual-gt-1-2023", "doc/team-associated/pressrelease-092921-20531-pro4-sc10", "doc/team-associated/reedy-esc-sc600bl-manual", "doc/team-associated/reedy-motor-manual-sl4-web"]
 contains = [
+  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
+  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
   { part = "part/team-associated/2308", role = "kit", qty = 5, step = "Step 27; Step 29; Step 30", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
   { part = "part/team-associated/25187", role = "kit", qty = 7, step = "Step 8; Step 17; Step 23; Step 32", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
   { part = "part/team-associated/25188", role = "kit", qty = 3, step = "Step 29; Step 35", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
@@ -86,6 +88,4 @@ contains = [
   { part = "part/team-associated/91563", role = "kit", qty = 5, step = "Step 2; Step 9; Step 13; Step 24", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
   { part = "part/team-associated/91564", role = "kit", qty = 2, step = "Step 3; Step 21", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
   { part = "part/team-associated/91738", role = "kit", qty = 2, step = "Step 40", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
-  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
-  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
 ]

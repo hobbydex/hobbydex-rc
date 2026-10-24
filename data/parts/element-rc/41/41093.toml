@@ -1,8 +1,16 @@
 id = "part/element-rc/41093"
 brand = "brand/element-rc"
 number = "41093"
-name = "3x16mm LP SHCS"
+name = "Screws, LP Low-Profile M3x16mm SHCS"
+former_names = ["3x16mm LP SHCS"]
 equivalent_to = [
-  { spec = "spec/screw/m3x16-low-head-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/screw/m3x16-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+gtin = "784695410930"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-lp-low-profile-m3x16mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10-custom-race-car-6x6", type = "direct", source = "doc/team-associated/store" },
+]

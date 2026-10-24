@@ -1,5 +1,16 @@
 id = "part/team-associated/89207"
 brand = "brand/team-associated"
 number = "89207"
-name = "M4x12mm"
+name = "Screws, M4x12 mm BHCS"
+former_names = ["M4x12mm"]
 category = "screw"
+gtin = "784695892071"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m4x12-mm-bhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m4x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

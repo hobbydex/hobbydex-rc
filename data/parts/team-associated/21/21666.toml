@@ -1,8 +1,18 @@
 id = "part/team-associated/21666"
 brand = "brand/team-associated"
 number = "21666"
-name = "2x4mm BHCS"
+name = "M2 Bhcs Hardware Set (30pcs)"
+former_names = ["2x4mm BHCS"]
 equivalent_to = [
   { spec = "spec/screw/m2x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+gtin = "784695216662"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/m2-bhcs-hardware-set-30pcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/tc28", type = "direct", source = "doc/team-associated/store" },
+]
+pack_qty = 30
+pack_qty_basis = "name"

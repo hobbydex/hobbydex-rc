@@ -1,9 +1,16 @@
 id = "part/team-associated/91615"
 brand = "brand/team-associated"
 number = "91615"
-name = "V2 3 x 21 Shock Shaft TiN “front”"
+name = "3x21 mm Shock Shafts (V2), TiN"
+former_names = ["V2 3 x 21 Shock Shaft TiN “front”"]
 gtin = "784695916159"
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 21
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3x21-mm-shock-shafts-v2-tin/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/store" },
+]

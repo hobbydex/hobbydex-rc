@@ -1,8 +1,16 @@
 id = "part/team-associated/91490"
 brand = "brand/team-associated"
 number = "91490"
-name = "3 x 35 Shock Shaft (rear)"
+name = "3 x 35 mm Shock Shafts"
+former_names = ["3 x 35 Shock Shaft (rear)"]
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 35
+gtin = "784695914902"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3-x-35-mm-shock-shafts/" },
+]
+fits = [
+  { kit = "kit/team-associated/pro2-sc10", type = "direct", source = "doc/team-associated/store" },
+]

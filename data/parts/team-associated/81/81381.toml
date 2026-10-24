@@ -1,9 +1,13 @@
 id = "part/team-associated/81381"
 brand = "brand/team-associated"
 number = "81381"
-name = "Diff Shim 6x8x0.20mm"
-former_names = ["Diff Shim 13.5x15.8x0.20mm"]
+name = "RC8B3.1 Differential Shim Set"
+former_names = ["Diff Shim 6x8x0.20mm", "Diff Shim 13.5x15.8x0.20mm"]
 category = "washer-shim"
-equivalent_to = [
-  { spec = "spec/washer/6x8x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+gtin = "784695813816"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b3-1-differential-shim-set/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
 ]

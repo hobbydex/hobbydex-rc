@@ -1,6 +1,14 @@
 id = "part/team-associated/21526"
 brand = "brand/team-associated"
 number = "21526"
-name = "Pinion gear (15T)"
-category = "pinion"
+name = "Ring and Pinion Set, 37T/15T"
+former_names = ["Pinion gear (15T)"]
+category = "differential"
 teeth = 15
+gtin = "784695215269"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ring-and-pinion-set-37t-15t/" },
+]
+fits = [
+  { kit = "kit/team-associated/reflex-14b", type = "direct", source = "doc/team-associated/store" },
+]

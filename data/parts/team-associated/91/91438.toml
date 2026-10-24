@@ -1,6 +1,13 @@
 id = "part/team-associated/91438"
 brand = "brand/team-associated"
 number = "91438"
-name = "CVA barrel"
-former_names = ["CVA Coupler", "CVA Pin"]
+name = "CVA Rebuild Kit"
+former_names = ["CVA barrel", "CVA Coupler", "CVA Pin"]
 category = "drivetrain"
+gtin = "784695914384"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/cva-rebuild-kit/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
+]

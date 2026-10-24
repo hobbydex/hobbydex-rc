@@ -1,8 +1,16 @@
 id = "part/team-associated/31734"
 brand = "brand/team-associated"
 number = "31734"
-name = "5x10x3mm Bearing"
+name = "TC7.1 FT Bearings, 5x10x3 mm"
+former_names = ["5x10x3mm Bearing"]
 equivalent_to = [
   { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
+gtin = "784695317345"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc7-1-ft-bearings-5x10x3-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/pro2-sc10", type = "direct", source = "doc/team-associated/store" },
+]

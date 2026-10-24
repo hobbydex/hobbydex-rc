@@ -1,8 +1,16 @@
 id = "part/team-associated/25843"
 brand = "brand/team-associated"
 number = "25843"
-name = "Bearings, 12x18x4mm"
+name = "Ball Bearings, 12x18x4mm"
+former_names = ["Bearings, 12x18x4mm"]
 equivalent_to = [
   { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
+gtin = "784695258433"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ball-bearings-12x18x4mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/sr7", type = "direct", source = "doc/team-associated/store" },
+]

@@ -1,7 +1,13 @@
 id = "part/team-associated/92579"
 brand = "brand/team-associated"
 number = "92579"
-name = "Steering Link"
-former_names = ["Anti-Roll Bar Link"]
+name = "RC10B7.1 Rod Ends"
+former_names = ["Steering Link", "Anti-Roll Bar Link"]
 gtin = "784695925793"
-category = "steering"
+category = "rod-end"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b7-1-rod-ends/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b71", type = "direct", source = "doc/team-associated/store" },
+]

@@ -5,15 +5,17 @@ number = "70021"
 name = "Pro2 SC10 Method Race Wheels RTR"
 kind = "rtr"
 status = "released"
-announced = "2021-10-27"
-announced_source = "https://www.redrc.net/2021/10/associated-pro2-sc10-method-race-wheels-rtr/"
 gtin = "784695700215"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2SC10/Method_Race_Wheels_RTR/" },
   { site = "Red RC", url = "https://www.redrc.net/2021/10/associated-pro2-sc10-method-race-wheels-rtr/", kind = "press" },
 ]
+announced = "2021-10-27"
+announced_source = "https://www.redrc.net/2021/10/associated-pro2-sc10-method-race-wheels-rtr/"
 documents = ["doc/team-associated/70021-page", "doc/team-associated/blank-editable-2015b", "doc/team-associated/pressrelease-092821-70021-pro2-sc10-rtr", "doc/team-associated/907-reedy-motor-manual-sl4-web", "doc/team-associated/27201-324s-rtr-charger-manual", "doc/team-associated/lipo-safety-instructions-and-warnings", "doc/team-associated/reedy-esc-sc600bl-manual", "doc/team-associated/reedy-27110-27111-servos-press-release", "doc/team-associated/xp120-dvc-manual-waden-online", "doc/team-associated/5-series-rtr-manual-10-11-2021"]
 contains = [
+  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
+  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
   { part = "part/team-associated/1336", role = "kit", qty = 1, step = "Electronics Build - Step 3", source = "doc/team-associated/5-series-rtr-manual-10-11-2021" },
   { part = "part/team-associated/21173", role = "kit", qty = 8, step = "Tires and Body Build - Step 3; Tires and Body Build - Step 4", source = "doc/team-associated/5-series-rtr-manual-10-11-2021" },
   { part = "part/team-associated/25187", role = "kit", qty = 8, step = "Rear Suspension Build - Step 1; Rear Shock Suspension Tower Build and Bumper - Step 3 Build - Bag D - DD - Step 1; Bumper and Chassis Braces Build - Step 3", source = "doc/team-associated/5-series-rtr-manual-10-11-2021" },
@@ -112,6 +114,4 @@ contains = [
   { part = "part/team-associated/9611", role = "kit", qty = 2, step = "Slipper Build - Step 1", source = "doc/team-associated/5-series-rtr-manual-10-11-2021" },
   { part = "part/team-associated/9654", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/5-series-rtr-manual-10-11-2021" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/5-series-rtr-manual-10-11-2021" },
-  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
-  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
 ]

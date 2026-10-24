@@ -1,5 +1,16 @@
 id = "part/team-associated/31870"
 brand = "brand/team-associated"
 number = "31870"
-name = "E-Clip"
+name = "E-Clips, 3.2 x 7.0 x 0.6mm"
+former_names = ["E-Clip"]
 category = "clip"
+gtin = "784695318700"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/e-clips-3-2-x-7-0-x-0-6mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/apex2", type = "direct", source = "doc/team-associated/store" },
+]
+equivalent_to = [
+  { spec = "spec/eclip/3.2mm-0.6", match = "functional", notes = "Shaft size from the name; the clip's thickness is the spec's" },
+]

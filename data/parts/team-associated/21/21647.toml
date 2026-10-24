@@ -1,15 +1,18 @@
 id = "part/team-associated/21647"
 brand = "brand/team-associated"
 number = "21647"
-name = "3.5mm M2 Threaded Pivot Balls"
+name = "3.5mm M2 Threaded Pivot Balls (10pcs)"
 pack_qty = 10
+pack_qty_basis = "name"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3-5mm-m2-threaded-pivot-balls-10pcs/" },
 ]
 fits = [
   { kit = "kit/team-associated/rc28r", type = "direct", source = "doc/team-associated/20165-page" },
+  { kit = "kit/team-associated/tc28", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "ball-end"
 equivalent_to = [
   { spec = "spec/ball-end/3.5mm-stud-m2", match = "functional" },
 ]
+gtin = "784695216471"
