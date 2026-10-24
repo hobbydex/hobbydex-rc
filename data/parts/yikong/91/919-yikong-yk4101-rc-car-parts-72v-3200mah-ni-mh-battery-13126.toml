@@ -1,0 +1,18 @@
+id = "part/yikong/919-yikong-yk4101-rc-car-parts-72v-3200mah-ni-mh-battery-13126"
+brand = "brand/yikong"
+name = "YK4101 RC Car Parts 7.2V 3200mAh Ni-MH Battery 13126"
+source = "doc/yikong/yikongrccar-dealer-listing"
+links = [
+  { site = "yikongrccar.com (dealer)", url = "https://www.yikongrccar.com/yikong-yk4101-parts/919-yikong-yk4101-rc-car-parts-72v-3200mah-ni-mh-battery-13126.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/yikong/yk4101", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 6
+capacity_mah = 3200
+voltage = 7.2

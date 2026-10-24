@@ -1,0 +1,14 @@
+id = "part/yikong/879-yikong-yk4101-rc-car-parts-ball-bearing-18124-13082"
+brand = "brand/yikong"
+name = "YK4101 RC Car Parts Ball Bearing (18*12*4) 13082"
+source = "doc/yikong/yikongrccar-dealer-listing"
+links = [
+  { site = "yikongrccar.com (dealer)", url = "https://www.yikongrccar.com/yikong-yk4101-parts/879-yikong-yk4101-rc-car-parts-ball-bearing-18124-13082.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/yikong/yk4101", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
+]
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -9,3 +9,6 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x14-pan-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+fits = [
+  { kit = "kit/yikong/yk4082", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
+]
