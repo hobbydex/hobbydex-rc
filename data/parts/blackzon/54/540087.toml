@@ -1,8 +1,13 @@
 id = "part/blackzon/540087"
 brand = "brand/blackzon"
 number = "540087"
-name = "Slyder MT Wheels/Tires"
+name = "Slyder MT Wheels/Tires Assembled (Black/Gold)"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540087" },
+]
 fits = [
+  { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/540213-kit-page" },
 ]
 category = "tire"
+vehicle = "monster"

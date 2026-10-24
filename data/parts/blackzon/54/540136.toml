@@ -1,5 +1,15 @@
 id = "part/blackzon/540136"
 brand = "brand/blackzon"
 number = "540136"
-name = "Upper Hinge Pin Screw 3x28mm"
+name = "Upper Hinge Pin Screw 3x28mm (Front/Rear/4pcs)"
+pack_qty = 4
+pack_qty_basis = "name"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540136" },
+]
+fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
+]
 category = "screw"

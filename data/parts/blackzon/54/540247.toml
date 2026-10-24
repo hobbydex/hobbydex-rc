@@ -1,8 +1,16 @@
 id = "part/blackzon/540247"
 brand = "brand/blackzon"
 number = "540247"
-name = "Battery Pack (LiPo 7.4V,"
+name = "Battery Pack (LiPo 7.4V, 1600mAh), w/T-Plug"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540247" },
+]
 fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/vyper-rx", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/vyper-sc", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/540227-kit-page" },
   { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/540226-kit-page" },
   { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/540225-kit-page" },

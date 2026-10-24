@@ -1,9 +1,17 @@
 id = "part/blackzon/548134"
 brand = "brand/blackzon"
 number = "548134"
-name = "Ball Bearings (5x8x2.5mm)"
+name = "Ball Bearings (5x8x2.5mm) 6pcs"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/548134" },
+]
+fits = [
+  { kit = "kit/blackzon/myte", type = "direct", source = "doc/blackzon/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
+pack_qty = 6
+pack_qty_basis = "name"

@@ -3,6 +3,16 @@ brand = "brand/blackzon"
 number = "540152"
 name = "Set Screws M3x3mm"
 pack_qty = 12
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540152" },
+]
+fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/vyper-rx", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/vyper-sc", type = "direct", source = "doc/blackzon/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
