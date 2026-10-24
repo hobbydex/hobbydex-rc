@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-CAR-4XS"
+brand = "brand/avid-rc"
+number = "AV-CAR-4XS"
+name = "Carisma Carisma 4XS Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x12x3.5", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/carisma/4xs", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Carisma Carisma 4XS" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1691/Carisma-4XS" },
+]
+pack_qty = 25
+pack_qty_basis = "includes"

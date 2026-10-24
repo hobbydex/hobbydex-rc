@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-TKR-EB410"
+brand = "brand/avid-rc"
+number = "AV-TKR-EB410"
+name = "Tekno EB410 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 4, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tekno/eb410", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/tekno/et410", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/tekno/sct410sl", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch, Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1700/EB410" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-TAM-M05"
+brand = "brand/avid-rc"
+number = "AV-TAM-M05"
+name = "Tamiya M-05 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 6, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/m-05", releases = ["release/tamiya/47308", "release/tamiya/57065", "release/tamiya/58438", "release/tamiya/58443", "release/tamiya/58453", "release/tamiya/58503", "release/tamiya/58581", "release/tamiya/58593", "release/tamiya/58624", "release/tamiya/58640", "release/tamiya/58655", "release/tamiya/58679", "release/tamiya/58684", "release/tamiya/84204", "release/tamiya/84424"], type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/tamiya/m-06", releases = ["release/tamiya/47431", "release/tamiya/58486", "release/tamiya/58493", "release/tamiya/58532", "release/tamiya/58572", "release/tamiya/58591", "release/tamiya/58594", "release/tamiya/58677", "release/tamiya/58708", "release/tamiya/84267"], type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/610/M05" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

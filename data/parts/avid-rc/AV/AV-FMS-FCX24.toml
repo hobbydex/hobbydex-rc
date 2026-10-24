@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-FMS-FCX24"
+brand = "brand/avid-rc"
+number = "AV-FMS-FCX24"
+name = "FMS FCX24 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/3x6x2.5", qty = 18, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/7x11x3", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "FMS FCX24"
+fits = [
+  { kit = "kit/fms/fcx24", releases = ["release/fms/FMS12401RTR-GN-BL", "release/fms/FMS12401RTR-YEL", "release/fms/FMS12403RTR-BR", "release/fms/FMS12403RTR-OR", "release/fms/FMS12404RTR-GN", "release/fms/FMS12404RTR-OR", "release/fms/FMS12405RTR-GN", "release/fms/FMS12405RTR-GY"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the FMS FCX24 (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Rubber, Metal, Metal (oiled), Revolution | Aura, Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3811/FCX24" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

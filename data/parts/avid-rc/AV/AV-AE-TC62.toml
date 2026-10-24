@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-AE-TC62"
+brand = "brand/avid-rc"
+number = "AV-AE-TC62"
+name = "Team Associated TC6.2 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-4x8x3", qty = 2, notes = "Default: Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/team-associated/tc7", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/841/TC62" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

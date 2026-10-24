@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-XRAY-NT1"
+brand = "brand/avid-rc"
+number = "AV-XRAY-NT1"
+name = "Xray NT1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x16x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 2, notes = "Default: Flanged Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/xray/nt1", releases = ["release/xray/330000", "release/xray/330001", "release/xray/330002", "release/xray/330003", "release/xray/330005", "release/xray/330006", "release/xray/330007", "release/xray/330008", "release/xray/330009", "release/xray/330011", "release/xray/330012", "release/xray/330015", "release/xray/330016", "release/xray/330100", "release/xray/nt1-2017", "release/xray/nt1-2018", "release/xray/nt1-2023", "release/xray/nt1-2027"], type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Revolution | Aura, Ceramic Metal | Aura, Metal | Clutch, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/274/NT1" },
+]
+pack_qty = 25
+pack_qty_basis = "includes"

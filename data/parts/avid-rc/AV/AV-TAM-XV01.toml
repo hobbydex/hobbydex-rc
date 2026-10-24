@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-TAM-XV01"
+brand = "brand/avid-rc"
+number = "AV-TAM-XV01"
+name = "Tamiya XV-01 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 9, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 5, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x7x3", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/xv-01", releases = ["release/tamiya/47349", "release/tamiya/58526", "release/tamiya/58528", "release/tamiya/58562", "release/tamiya/58573"], type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3556/XV01" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

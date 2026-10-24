@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-SCH-L1"
+brand = "brand/avid-rc"
+number = "AV-SCH-L1"
+name = "Schumacher Cat L1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 4, notes = "Default: Flanged Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x9x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x9x3", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Schumacher Cat L1"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2785/Cat-L1" },
+]
+pack_qty = 33
+pack_qty_basis = "includes"

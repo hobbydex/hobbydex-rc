@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-AXL-SCXIII"
+brand = "brand/avid-rc"
+number = "AV-AXL-SCXIII"
+name = "Axial SCX10 III (AXI03007 - Jeep JLU Wrangler Kit) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 24, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Default: Open (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x14x5", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/15x21x4", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/axial/scx10-iii", releases = ["release/axial/axi03007", "release/axial/axi03007b"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Axial SCX10 III (AXI03007 - Jeep JLU Wrangler Kit)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Open, Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3274/SCX10-III-AXI03007-Jeep-JLU-Wrangler-Kit" },
+]
+pack_qty = 40
+pack_qty_basis = "includes"

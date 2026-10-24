@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-HPI-BAJA"
+brand = "brand/avid-rc"
+number = "AV-HPI-BAJA"
+name = "HPI Baja 5B Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x24x6", qty = 13, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/20x32x7", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/17x30x7", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/hpi/baja-5t", car = "HPI Baja 5B", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Metal, Revolution, Revolution | Aura, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/255/Baja-5B" },
+]
+pack_qty = 25
+pack_qty_basis = "includes"

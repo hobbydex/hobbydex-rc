@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-GZM-GZ1"
+brand = "brand/avid-rc"
+number = "AV-GZM-GZ1"
+name = "Gizmo GZ1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x10x3", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-4x7x2.5", qty = 4, notes = "Only option: Flanged Metal (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 3, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Gizmo GZ1"
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1564/GZ1" },
+]
+pack_qty = 23
+pack_qty_basis = "includes"

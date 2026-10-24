@@ -1,0 +1,27 @@
+id = "part/avid-rc/AV-TRX-TRX4"
+brand = "brand/avid-rc"
+number = "AV-TRX-TRX4"
+name = "Traxxas TRX-4 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/4x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 3, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/15x21x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/7x14x5", qty = 2, notes = "Only option: Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/traxxas/trx-4", releases = ["release/traxxas/110056-4", "release/traxxas/82010-4", "release/traxxas/82024-4", "release/traxxas/82034-4", "release/traxxas/82046-4", "release/traxxas/82056-4", "release/traxxas/82066-4", "release/traxxas/82076-4", "release/traxxas/82096-4", "release/traxxas/82216-4", "release/traxxas/82224-4", "release/traxxas/82234-4", "release/traxxas/82246-4", "release/traxxas/82256-4", "release/traxxas/82276-4", "release/traxxas/91076-4", "release/traxxas/92076-4", "release/traxxas/92144-4", "release/traxxas/92154-4"], type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Ceramic Rubber (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1694/TRX4-" },
+]
+pack_qty = 40
+pack_qty_basis = "includes"

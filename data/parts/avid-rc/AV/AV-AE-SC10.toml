@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-AE-SC10"
+brand = "brand/avid-rc"
+number = "AV-AE-SC10"
+name = "Team Associated SC10 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4.762x9.525x3.175", qty = 12, notes = "Default: Ceramic Revolution (greased)" },
+  { spec = "spec/bearing/3.175x6.35x2.778", qty = 4, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/10x16x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/team-associated/sc10", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/team-associated/sc10b", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/290/SC10" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

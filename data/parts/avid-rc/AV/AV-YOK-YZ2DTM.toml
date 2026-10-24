@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-YOK-YZ2DTM"
+brand = "brand/avid-rc"
+number = "AV-YOK-YZ2DTM"
+name = "Yokomo YZ-2 DTM Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 14, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1744/YZ2-DTM" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

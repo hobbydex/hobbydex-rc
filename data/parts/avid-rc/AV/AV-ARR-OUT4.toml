@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-ARR-OUT4"
+brand = "brand/avid-rc"
+number = "AV-ARR-OUT4"
+name = "Arrma Outcast 4x4 4s Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x18x4", qty = 10, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/8x16x5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/15x21x4", qty = 1, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/flanged-10x15x4", qty = 1, notes = "Default: Flanged Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Arrma Outcast 4x4 4s (also Kraton 4x4 4s)"
+fits = [
+  { kit = "kit/arrma/outcast-4s", releases = ["release/arrma/ara102692", "release/arrma/ara4410v2t1", "release/arrma/ara4410v2t3"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Arrma Outcast 4x4 4s (link_car_kits.py)" },
+  { kit = "kit/arrma/kraton-4s", releases = ["release/arrma/ara4408v2t1", "release/arrma/ara4408v2t2", "release/arrma/ara4408v2t4"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Kraton 4x4 4s (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Rubber, Ceramic Metal, Ceramic Metal | Aura, Ceramic Revolution | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3541/Outcast-4x4-4s" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

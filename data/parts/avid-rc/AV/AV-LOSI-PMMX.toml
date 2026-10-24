@@ -1,0 +1,27 @@
+id = "part/avid-rc/AV-LOSI-PMMX"
+brand = "brand/avid-rc"
+number = "AV-LOSI-PMMX"
+name = "Team Losi Promoto MX Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/7x14x5", qty = 2, notes = "Only option: Rubber (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 1, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 1, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Losi Promoto MX"
+fits = [
+  { kit = "kit/losi/promoto-mx", releases = ["release/losi/los06002"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi Promoto MX (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Metal, Ceramic Revolution, Ceramic Metal, Rubber, Revolution | Aura, Ceramic Metal | Aura, Ceramic Open | Aura, Metal | Clutch, Ceramic Rubber (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4001/Promoto-MX" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

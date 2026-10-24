@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-MUG-MRX6"
+brand = "brand/avid-rc"
+number = "AV-MUG-MRX6"
+name = "Mugen Seiki MRX6 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x18x4", qty = 12, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 11, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-10x15x4", qty = 2, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Rubber, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1511/MRX6" },
+]
+pack_qty = 32
+pack_qty_basis = "includes"

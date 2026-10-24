@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-CAR-GT24"
+brand = "brand/avid-rc"
+number = "AV-CAR-GT24"
+name = "Carisma Carisma GT24 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/3x6x2.5", qty = 8, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/carisma/gt24", releases = ["release/carisma/88868", "release/carisma/90268", "release/carisma/90768", "release/carisma/91768", "release/carisma/91968"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Carisma Carisma GT24" },
+]
+notes = "Each size can be ordered as one of: Rubber, Metal, Metal (oiled), Revolution, Revolution | Aura, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1693/Carisma-GT24" },
+]
+pack_qty = 16
+pack_qty_basis = "includes"

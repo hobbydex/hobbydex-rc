@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-SCH-Mi8"
+brand = "brand/avid-rc"
+number = "AV-SCH-Mi8"
+name = "Schumacher MI8 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3.175x6.35x2.778", qty = 4, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4.762x7.938x3.175", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-4.762x7.938x3.175", qty = 2, notes = "Default: Flanged Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Revolution (not Clutch) (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Schumacher MI8"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Revolution (not Clutch), Metal (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3956/MI8" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

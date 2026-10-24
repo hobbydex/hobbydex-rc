@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-CAP-LAB3"
+brand = "brand/avid-rc"
+number = "AV-CAP-LAB3"
+name = "Capricorn Lab C03 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x8x2.5", qty = 10, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x16x4", qty = 8, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/flanged-5x8x2.5", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 2, notes = "Default: Ceramic Flanged Metal (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Capricorn Lab C03"
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Thrust Bearing, Ceramic Thrust Bearing, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1546/Lab-C03" },
+]
+pack_qty = 36
+pack_qty_basis = "includes"

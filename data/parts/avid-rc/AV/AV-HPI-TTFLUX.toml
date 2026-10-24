@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-HPI-TTFLUX"
+brand = "brand/avid-rc"
+number = "AV-HPI-TTFLUX"
+name = "HPI Trophy Truggy Flux Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 18, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "HPI Trophy Truggy Flux (also Trophy Buggy Flux)"
+fits = [
+  { kit = "kit/hpi/trophy-truggy", releases = ["release/hpi/107018"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the HPI Trophy Truggy Flux (link_car_kits.py)" },
+  { kit = "kit/hpi/trophy-buggy", releases = ["release/hpi/107016"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Trophy Buggy Flux (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2779/Trophy-Truggy-Flux" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

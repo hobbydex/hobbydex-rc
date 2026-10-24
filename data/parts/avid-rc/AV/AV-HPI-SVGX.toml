@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-HPI-SVGX"
+brand = "brand/avid-rc"
+number = "AV-HPI-SVGX"
+name = "HPI Savage X Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 17, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/hpi/savage-x", releases = ["release/hpi/104266", "release/hpi/109083", "release/hpi/160100", "release/hpi/160101", "release/hpi/160585", "release/hpi/859", "release/hpi/861", "release/hpi/868", "release/hpi/873", "release/hpi/876"], type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1664/Savage-X" },
+]
+pack_qty = 28
+pack_qty_basis = "includes"

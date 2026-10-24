@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-AE-F6"
+brand = "brand/avid-rc"
+number = "AV-AE-F6"
+name = "Team Associated RC10F6 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 3, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 2, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/thrust-4x10x4", qty = 1, notes = "Only option: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/team-associated/rc10f6", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1660/RC10F6" },
+]
+pack_qty = 12
+pack_qty_basis = "includes"

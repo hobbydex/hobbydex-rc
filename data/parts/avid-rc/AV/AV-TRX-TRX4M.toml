@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-TRX-TRX4M"
+brand = "brand/avid-rc"
+number = "AV-TRX-TRX4M"
+name = "Traxxas TRX-4M Bearing Kit"
+includes = [
+  { spec = "spec/bearing/3x6x2.5", qty = 8, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/3.5x7x2.5", qty = 4, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/traxxas/trx-4m", releases = ["release/traxxas/97054-1", "release/traxxas/97074-1"], type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Metal, Metal (oiled), Revolution, Revolution | Aura, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3813/TRX4M" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

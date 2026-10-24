@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-AE-RC8B4-E"
+brand = "brand/avid-rc"
+number = "AV-AE-RC8B4-E"
+name = "Team Associated RC8B4 Essentials Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-8x16x5", qty = 8, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-6x13x5", qty = 4, notes = "Default: Flanged Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal | Clutch (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Associated RC8B4 | Essentials (also RC8T4 | Essentials)"
+fits = [
+  { kit = "kit/team-associated/rc8b4", releases = ["release/team-associated/80945", "release/team-associated/80945RWB", "release/team-associated/80946", "release/team-associated/80954", "release/team-associated/80955"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated RC8B4 (link_car_kits.py)" },
+  { kit = "kit/team-associated/rc8t4", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the RC8T4 (link_car_kits.py)" },
+]
+notes = "Essentials kit: Avid leaves out the bearings that seldom need replacing: (4) 5x8 Revolutions - Ackermann Plate; (4) 6x10 Revolutions - Steering Rack. Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Revolution | Aura, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3666/RC8B4-Essentials" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-XRAY-XB2C20"
+brand = "brand/avid-rc"
+number = "AV-XRAY-XB2C20"
+name = "Xray XB2C '20 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 9, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x8x4", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/5x12x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 1, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Xray XB2C '20 (also XB2C '21, XB2C '22, XB2C '23)"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled), Motor Bearing, Ceramic Motor Bearing, Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3189/XB2C-20" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

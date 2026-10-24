@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-CAR-SCA1E"
+brand = "brand/avid-rc"
+number = "AV-CAR-SCA1E"
+name = "Carisma SCA-1E Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 14, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/carisma/sca-1e", releases = ["release/carisma/82668", "release/carisma/82768", "release/carisma/88168", "release/carisma/88668", "release/carisma/90468", "release/carisma/91068"], type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1852/SCA1E" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

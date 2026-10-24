@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-CRC-XTI"
+brand = "brand/avid-rc"
+number = "AV-CRC-XTI"
+name = "CRC Xti-WC Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 5, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/flanged-3.175x7.938x3.572", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+applies_to = "CRC Xti-WC"
+notes = "Each size can be ordered as one of: Metal, Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1449/XtiWC" },
+]
+pack_qty = 11
+pack_qty_basis = "includes"

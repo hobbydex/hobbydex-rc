@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-SCH-SX3"
+brand = "brand/avid-rc"
+number = "AV-SCH-SX3"
+name = "Schumacher Cat SX3 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 9, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 4, notes = "Default: Metal (not Clutch) (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Schumacher Cat SX3"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Ceramic Revolution, Ceramic Metal, Metal | Clutch, Metal (not Clutch), Revolution (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/620/Cat-SX3" },
+]
+pack_qty = 31
+pack_qty_basis = "includes"

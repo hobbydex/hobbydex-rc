@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-ELM-END"
+brand = "brand/avid-rc"
+number = "AV-ELM-END"
+name = "Element RC Enduro Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 14, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/7x14x3.5", qty = 4, notes = "Default: Open (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/element-rc/enduro", releases = ["release/element-rc/40100", "release/element-rc/40100C", "release/element-rc/40101", "release/element-rc/40101C", "release/element-rc/40102", "release/element-rc/40104", "release/element-rc/40104C", "release/element-rc/40105", "release/element-rc/40105C", "release/element-rc/40106", "release/element-rc/40106C", "release/element-rc/40107", "release/element-rc/40107C", "release/element-rc/40110", "release/element-rc/40111", "release/element-rc/40111C", "release/element-rc/40112", "release/element-rc/40112C", "release/element-rc/40113", "release/element-rc/40113C", "release/element-rc/40114", "release/element-rc/40117", "release/element-rc/40117C", "release/element-rc/40118", "release/element-rc/40118C", "release/element-rc/40120", "release/element-rc/40120C", "release/element-rc/40124", "release/element-rc/40124C", "release/element-rc/40125", "release/element-rc/40125C", "release/element-rc/40127", "release/element-rc/40129", "release/element-rc/40130", "release/element-rc/40130C", "release/element-rc/40131", "release/element-rc/40131C", "release/element-rc/40135"], type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Open (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3173/Enduro" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

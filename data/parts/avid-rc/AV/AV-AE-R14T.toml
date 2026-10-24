@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-AE-R14T"
+brand = "brand/avid-rc"
+number = "AV-AE-R14T"
+name = "Team Associated Reflex 14T Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 11, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/team-associated/reflex-14t", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2802/Reflex-14T" },
+]
+pack_qty = 21
+pack_qty_basis = "includes"

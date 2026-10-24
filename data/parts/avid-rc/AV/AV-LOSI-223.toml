@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-LOSI-223"
+brand = "brand/avid-rc"
+number = "AV-LOSI-223"
+name = "Team Losi TLR 22 3.0 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 6, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Losi TLR 22 3.0 (also TLR 22T 2.0, TLR 22T 3.0, TLR 22 4.0, TLR 22 5.0 DC, TLR 22 5.0 SR, TLR 22T 4.0)"
+fits = [
+  { kit = "kit/tlr/22", releases = ["release/tlr/tlr03012", "release/tlr/tlr03014", "release/tlr/tlr03016", "release/tlr/tlr03022"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi TLR 22 3.0 (link_car_kits.py)" },
+  { kit = "kit/tlr/22t", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the TLR 22T 2.0 (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1460/TLR-22-30" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

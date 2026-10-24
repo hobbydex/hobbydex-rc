@@ -1,0 +1,27 @@
+id = "part/avid-rc/AV-ARR-KR8S"
+brand = "brand/avid-rc"
+number = "AV-ARR-KR8S"
+name = "Arrma Kraton 8s Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x24x6", qty = 10, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/17x26x5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/15x26x7", qty = 4, notes = "Only option: Rubber (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 1, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x16x5", qty = 1, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber"
+lubricant = "grease"
+fits = [
+  { kit = "kit/arrma/kraton-8s", releases = ["release/arrma/ara110002t1", "release/arrma/ara110002t2"], type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/outcast-8s", car = "Kraton 8s", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Metal, Revolution, Revolution | Aura, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Revolution | Aura, Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3266/Kraton-8s" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-FW-TEN41"
+brand = "brand/avid-rc"
+number = "AV-FW-TEN41"
+name = "Factory Works Ten4 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 6, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/9.525x15.875x3.969", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/4.762x9.525x3.175", qty = 2, notes = "Default: Ceramic Revolution (greased)" },
+  { spec = "spec/bearing/3.175x7.938x3.572", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Factory Works Ten4"
+notes = "Each size can be ordered as one of: Metal, Revolution, Ceramic Metal | Aura, Ceramic Metal, Revolution | Aura, Rubber, Metal | Clutch, Ceramic Revolution, Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4272/Ten4" },
+]
+pack_qty = 17
+pack_qty_basis = "includes"

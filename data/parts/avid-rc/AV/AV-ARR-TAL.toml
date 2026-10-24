@@ -1,0 +1,32 @@
+id = "part/avid-rc/AV-ARR-TAL"
+brand = "brand/avid-rc"
+number = "AV-ARR-TAL"
+name = "Arrma Talion Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/15x21x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x19x6", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/arrma/kraton", car = "Talion", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/typhon", car = "Talion", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/senton", car = "Talion", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/talion-6s", releases = ["release/arrma/ara106048"], type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/outcast", releases = ["release/arrma/ara106042t1", "release/arrma/ara106042t2", "release/arrma/ara106060", "release/arrma/ara8710"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Arrma Outcast 6s" },
+  { kit = "kit/arrma/notorious", releases = ["release/arrma/ara106044t1", "release/arrma/ara106044t2", "release/arrma/ara8611v5t1", "release/arrma/ara8611v5t2", "release/arrma/ara8611v6t1", "release/arrma/ara8611v6t2"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Arrma Notorious 6s" },
+  { kit = "kit/arrma/mojave-6s", car = "Talion", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/limitless", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/infraction", car = "Talion", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/felony", car = "Talion", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1507/Talion" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"
