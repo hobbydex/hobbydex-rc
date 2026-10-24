@@ -18,8 +18,12 @@ class Repointed(unittest.TestCase):
     def test_superseding_part_without_row_is_a_removal(self):
         self.assertIsNone(rc.repointed(self.old, [], {"part/arrma/ARA330200": "part/arrma/ARAC9074"}))
 
-    def test_other_role_or_source_is_a_removal(self):
-        rows = [{"part": "part/arrma/ARAC9074", "role": "kit", "source": "doc/arrma/ara8406-manual"}]
+    def test_same_part_in_another_role_still_repoints(self):
+        rows = [{"part": "part/arrma/ARAC9074", "role": "kit", "source": "doc/arrma/horizon-part-pages"}]
+        self.assertEqual(rc.repointed(self.old, rows, {"part/arrma/ARA330200": "part/arrma/ARAC9074"}), "part/arrma/ARAC9074")
+
+    def test_unrelated_part_is_a_removal(self):
+        rows = [{"part": "part/arrma/ARAC9080", "role": "listed", "source": "doc/arrma/ara8406-manual"}]
         self.assertIsNone(rc.repointed(self.old, rows, {"part/arrma/ARA330200": "part/arrma/ARAC9074"}))
 
 

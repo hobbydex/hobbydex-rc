@@ -370,11 +370,10 @@ class Check:
 
 
 def repointed(row, rows, supersedes):
-    """The part a removed contains row was repointed to: a row of the same role and source in rows names the part
-    that supersedes the removed row's part (the old part record is kept). None when there is no such row."""
+    """The part a removed contains row was repointed to: a row of rows (the release's contains) names the part that
+    supersedes the removed row's part (the old part record is kept). None when there is no such row."""
     new_id = supersedes.get(row.get("part"))
-    if new_id and any(isinstance(x, dict) and x.get("part") == new_id and x.get("role") == row.get("role")
-                      and x.get("source") == row.get("source") for x in rows):
+    if new_id and any(isinstance(x, dict) and x.get("part") == new_id for x in rows):
         return new_id
     return None
 
