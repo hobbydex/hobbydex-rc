@@ -12,6 +12,7 @@ gtin = "605482576854"
 notes = "on sale by: the manual's copyright line (c) 2016"
 documents = ["doc/vaterra/vtr03023-exploded-view", "doc/vaterra/vtr03023-manual", "doc/vaterra/vtr03023-product-page"]
 contains = [
+  { part = "part/dynamite/DYNS2210", role = "kit", source = "doc/vaterra/vtr03023-exploded-view" },
   { part = "part/spektrum/SPMS605", role = "kit", source = "doc/vaterra/vtr03023-exploded-view" },
   { part = "part/vaterra/VTR230040", role = "kit", source = "doc/vaterra/horizon-part-pages" },
   { part = "part/vaterra/VTR230041", role = "kit", source = "doc/vaterra/vtr03023-exploded-view" },

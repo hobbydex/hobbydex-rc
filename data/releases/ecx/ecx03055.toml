@@ -11,6 +11,8 @@ gtin = "605482416907"
 notes = "on sale by: the manual's date (12/2018)"
 documents = ["doc/ecx/ecx03055-manual-en", "doc/ecx/ecx03055-manual-multi", "doc/ecx/ecx03055-product-page", "doc/ecx/youtube-QIGdMqY26w8"]
 contains = [
+  { part = "part/dynamite/DYNS1222", role = "kit", source = "doc/ecx/ecx03055-manual-multi" },
+  { part = "part/dynamite/DYNS2210", role = "kit", source = "doc/ecx/ecx03055-manual-en" },
   { part = "part/ecx/ECX0945", role = "kit", source = "doc/ecx/horizon-part-pages" },
   { part = "part/ecx/ECX1015", role = "kit", source = "doc/ecx/ecx03055-manual-en" },
   { part = "part/ecx/ECX1018", role = "kit", source = "doc/ecx/ecx03055-manual-en" },
@@ -76,6 +78,9 @@ contains = [
   { part = "part/ecx/ECX234000", role = "kit", source = "doc/ecx/ecx03055-manual-en" },
   { part = "part/ecx/ECX236005", role = "kit", source = "doc/ecx/ecx03055-manual-en" },
   { part = "part/ecx/ECX43015", role = "kit", source = "doc/ecx/ecx03055-manual-en" },
+  { part = "part/dynamite/DYN1400", role = "option", source = "doc/ecx/ecx03055-manual-en" },
+  { part = "part/dynamite/DYN1510", role = "option", source = "doc/ecx/ecx03055-manual-en" },
+  { part = "part/dynamite/DYNT0500", role = "option", source = "doc/ecx/ecx03055-manual-en" },
   { part = "part/ecx/ECX03055", role = "listed", source = "doc/ecx/ecx03055-manual-en" },
   { part = "part/ecx/ECX1061", role = "option", source = "doc/ecx/ecx03055-manual-en" },
   { part = "part/ecx/ECX1095", role = "option", source = "doc/ecx/ecx03055-manual-en" },

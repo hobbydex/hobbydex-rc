@@ -11,6 +11,7 @@ gtin = "605482280423"
 notes = "on sale by: the manual's copyright line (c) 2019"
 documents = ["doc/ecx/ecx03056-manual-en", "doc/ecx/ecx03056-product-page", "doc/ecx/youtube-E6QKjcFsFuE"]
 contains = [
+  { part = "part/dynamite/DYNS2210", role = "kit", source = "doc/ecx/ecx03056-manual-en" },
   { part = "part/ecx/ECX1015", role = "kit", source = "doc/ecx/ecx03056-manual-en" },
   { part = "part/ecx/ECX1018", role = "kit", source = "doc/ecx/ecx03056-manual-en" },
   { part = "part/ecx/ECX1019", role = "kit", source = "doc/ecx/ecx03056-manual-en" },
@@ -79,6 +80,9 @@ contains = [
   { part = "part/ecx/ECX234000", role = "kit", source = "doc/ecx/ecx03056-manual-en" },
   { part = "part/ecx/ECX236005", role = "kit", source = "doc/ecx/ecx03056-manual-en" },
   { part = "part/ecx/ECX43015", role = "kit", source = "doc/ecx/ecx03056-manual-en" },
+  { part = "part/dynamite/DYN1400", role = "option", source = "doc/ecx/ecx03056-manual-en" },
+  { part = "part/dynamite/DYN1510", role = "option", source = "doc/ecx/ecx03056-manual-en" },
+  { part = "part/dynamite/DYNT0500", role = "option", source = "doc/ecx/ecx03056-manual-en" },
   { part = "part/ecx/ECX03056", role = "listed", source = "doc/ecx/ecx03056-manual-en" },
   { part = "part/ecx/ECX1061", role = "option", source = "doc/ecx/ecx03056-manual-en" },
   { part = "part/ecx/ECX1095", role = "option", source = "doc/ecx/ecx03056-manual-en" },
