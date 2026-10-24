@@ -12,7 +12,7 @@ fix. The full list of one check: --list NAME. JSON for scripts: --json FILE.
 
 Exit code 0 always: this is a to-do list. Runs in well under five minutes.
 """
-import argparse, collections, csv, glob, importlib.util, json, os, re, sys, tomllib
+import argparse, collections, csv, glob, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib
 
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -367,6 +367,34 @@ def main():
     # 7. Horizon documents without a page
     check("horizon-doc-no-page", "give the document its page (the Horizon product or support page that lists the file)",
           [d for d in docs.values() if d.get("brand") in horizon and not d.get("page")])
+
+    # 10. parts with a cached maker product page but no maker link, and maker links to pages the crawl has as 404
+    # (hobbydex-tools tools/link_maker_pages.py --dry-run reports both per brand; the daily derive step links or prunes them)
+    lmp = os.path.join(os.path.abspath(args.tools), "tools", "link_maker_pages.py")
+    if os.path.exists(lmp):
+        with tempfile.NamedTemporaryFile("r", suffix=".tsv") as sample:
+            env = dict(os.environ, HOBBYDEX_RC=RC, SAMPLE_OUT=sample.name)
+            run = subprocess.run([sys.executable, "-I", lmp, "--dry-run"], cwd=os.path.abspath(args.tools), env=env,
+                                 capture_output=True, text=True)
+            unlinked, pruned, rows = {}, {}, []
+            for line in run.stdout.splitlines():
+                m = re.match(r"(\S+): parts \d+, linked (\d+)", line)
+                if m and int(m[2]):
+                    unlinked[m[1]] = int(m[2])
+                m = re.match(r"(\S+): links removed \(page gone\) (\d+)", line)
+                if m:
+                    pruned[m[1]] = int(m[2])
+            rows = [r.rstrip("\n").split("\t") for r in sample]
+        flagged = [{"id": r[1], "url": r[4]} for r in rows]
+        results["maker-page-unlinked"] = {
+            "fix": "run tools/link_maker_pages.py in hobbydex-tools (the daily derive step does it); a cached 200 page that names the part gives it the link",
+            "count": sum(unlinked.values()), "examples": flagged[:args.examples],
+            "all": sorted({r["id"] for r in flagged}), "per_brand": sorted(unlinked.items(), key=lambda x: -x[1])}
+        results["maker-link-page-gone"] = {
+            "fix": "the crawl has the page as 404 on a recheck; the daily derive step removes the link (tools/link_maker_pages.py)",
+            "count": sum(pruned.values()), "examples": [], "all": [], "per_brand": sorted(pruned.items(), key=lambda x: -x[1])}
+    else:
+        results["maker-page-unlinked"] = {"fix": "hobbydex-tools link_maker_pages.py not found (--tools)", "count": None, "examples": [], "all": []}
 
     # 8. platforms with no releases
     check("platform-no-release", "add the platform's releases, or retire the platform if it is not a product",
