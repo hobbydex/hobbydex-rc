@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0064"
 brand = "brand/rc4wd"
 number = "Z-W0064"
 name = "Raceline Monster 2.2\"/3.0\" Short Course Beadlock Wheels"
+pack_qty = 2
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Raceline-Monster-2230-Short-Course-Beadlock-Wheels_p_4148.html" },
+]
+material = "aluminium"
+width_mm = 43.1
+offset_mm = -22.6
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "2.2\"/3.0\""

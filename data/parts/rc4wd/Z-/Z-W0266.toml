@@ -2,12 +2,16 @@ id = "part/rc4wd/Z-W0266"
 brand = "brand/rc4wd"
 number = "Z-W0266"
 name = "Benchmark 1.7\" Beadlock Wheels"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Benchmark-17-Beadlock-Wheels_p_6997.html" },
+]
+material = "aluminium"
+width_mm = 34
+offset_mm = -8.38
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the product page", source = "doc/rc4wd/store" },
 ]
 category = "wheel"
 wheel_size = "1.7\""
 beadlock = true
-equivalent_to = [
-  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for Gelande II RTR Truck w/Cruiser Body Set (Red) are 12 mm" },
-]

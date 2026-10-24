@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0185"
 brand = "brand/rc4wd"
 number = "Z-W0185"
 name = "Raceline Monster 1.9\" Beadlock Wheels (Black)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Raceline-Monster-19-Beadlock-Wheels-Black_p_4231.html" },
+]
+material = "aluminium"
+width_mm = 27.5
+offset_mm = -12.8
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.9\""

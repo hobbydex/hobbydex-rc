@@ -2,13 +2,15 @@ id = "part/rc4wd/Z-S1844"
 brand = "brand/rc4wd"
 number = "Z-S1844"
 name = "12mm Wheel Hex Conversion for Traxxas TRX-4"
+pack_qty = 4
 fits = [
   { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/rc4wd/store" },
 ]
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-12mm-Wheel-Hex-Conversion-for-Traxxas-TRX-4_p_5810.html" },
 ]
+material = "steel"
 equivalent_to = [
-  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the product page", source = "doc/rc4wd/store" },
 ]
 category = "drivetrain"
