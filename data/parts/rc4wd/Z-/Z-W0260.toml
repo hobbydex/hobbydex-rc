@@ -5,11 +5,12 @@ name = "OEM Stamped Steel 1.55\" Beadlock Wheels (White)"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/OEM-Stamped-Steel-155-Beadlock-Wheels-White_p_5778.html" },
 ]
+offset_mm = -5.7
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the product page", source = "doc/rc4wd/store" },
+]
 category = "wheel"
 wheel_size = "1.55\""
 beadlock = true
 color = "white"
 material = "steel"
-equivalent_to = [
-  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for Gelande II RTR Truck w/Cruiser Body Set (Red) are 12 mm" },
-]

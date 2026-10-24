@@ -2,10 +2,16 @@ id = "part/rc4wd/Z-W0186"
 brand = "brand/rc4wd"
 number = "Z-W0186"
 name = "Dick Cepek DC-2 40 Series 3.8\" Internal Beadlock Plastic Wheels"
+pack_qty = 2
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Dick-Cepek-DC-2-40-Series-38-Internal-Beadlock-Plastic-Wheels_p_4237.html" },
+]
+material = "plastic"
+width_mm = 74.5
+offset_mm = -26
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "3.8\""
 beadlock = true
-material = "plastic"

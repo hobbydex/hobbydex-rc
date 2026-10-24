@@ -5,6 +5,10 @@ name = "Mickey Thompson Classic Lock 2.2\"/3.0\" Short Course Beadlock Wheels"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Mickey-Thompson-Classic-Lock-2230-Short-Course-Beadlock-Wheels_p_3134.html" },
 ]
+offset_mm = -1.58
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "2.2\"/3.0\""
 vehicle = "short-course"

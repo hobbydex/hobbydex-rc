@@ -2,10 +2,16 @@ id = "part/rc4wd/Z-W0212"
 brand = "brand/rc4wd"
 number = "Z-W0212"
 name = "OEM Stamped Steel 1.9\" Beadlock Wheels (Plain)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/OEM-Stamped-Steel-19-Beadlock-Wheels-Plain_p_4762.html" },
+]
+material = "steel"
+width_mm = 24.5
+offset_mm = -4.45
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.9\""
 beadlock = true
-material = "steel"
