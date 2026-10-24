@@ -1,9 +1,9 @@
 id = "part/losi/LOS242060"
 brand = "brand/losi"
 number = "LOS242060"
-name = "Third Member"
-pack_qty = 2
+name = "Third Member (2)"
 applies_to = "TLR Tuned LMT"
+pack_qty_basis = "name"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-third-member-2-tlr-tuned-lmt/LOS242060.html" },
 ]
@@ -12,3 +12,4 @@ fits = [
   { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
 ]
+pack_qty = 2

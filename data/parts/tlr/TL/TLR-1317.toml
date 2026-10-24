@@ -8,6 +8,7 @@ links = [
 ]
 fits = [
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-xt", type = "replaces", replaces = "part/tlr/TLR241067", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "aluminium"
