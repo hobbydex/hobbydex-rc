@@ -129,12 +129,37 @@ def load_tools(tools):
             print(f"note: link_part_material not loaded ({e})", file=sys.stderr)
         finally:
             sys.path.remove(os.path.dirname(lpm))
+    out["multi"] = None
+    out["material_single"] = None
+    tdir = os.path.join(tools, "tools")
+    mi = os.path.join(tdir, "multi_item.py")
+    if os.path.exists(mi):   # the name's items (multi_item.py): is_multi, whole_material, and the reader it gives the material
+        spec = importlib.util.spec_from_file_location("multi_item", mi)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out["multi"] = mod
     pq = os.path.join(tools, "tools", "packqty.py")
     if os.path.exists(pq):   # the count reader the importers use (a name's "(2)", "2pcs", "1 pair")
         spec = importlib.util.spec_from_file_location("packqty", pq)
         mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
+        sys.path.insert(0, tdir)   # packqty imports multi_item from the tools
+        try:
+            spec.loader.exec_module(mod)
+        finally:
+            sys.path.remove(tdir)
         out["packqty"] = mod
+    lmp = os.path.join(tdir, "link_material.py")
+    if os.path.exists(lmp):   # the material a name states, for one item (link_material.single): the audit's reading
+        spec = importlib.util.spec_from_file_location("link_material", lmp)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, tdir)
+        try:
+            spec.loader.exec_module(mod)
+            out["material_single"] = mod.single
+        except Exception as e:
+            print(f"note: link_material not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(tdir)
     lpc = os.path.join(tools, "tools", "link_part_colours.py")
     if os.path.exists(lpc):   # the colour a part's name states (tools/link_part_colours.py colour())
         spec = importlib.util.spec_from_file_location("link_part_colours", lpc)
@@ -405,6 +430,24 @@ def main():
               [p for p in parts if part_before_fasteners(p)])
     else:
         results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
+
+    # 11b2. a name that lists two or more items (a pipe and a screw, a pin and a nut) is read item by item: a fastener
+    # spec on the whole part, or a material that one item states, is the name's error (tools/multi_item.py)
+    if tools["multi"]:
+        mi = tools["multi"]
+        FASTENER_PRE = ("spec/screw/", "spec/nut/", "spec/bearing/", "spec/pin/", "spec/washer/")
+        lm_single = tools["material_single"]
+        def whole_part_fastener(p):
+            return any(e.get("spec", "").startswith(FASTENER_PRE) and "source" not in e for e in p.get("equivalent_to", []))
+        def whole_part_material(p):
+            if not p.get("material"):
+                return False
+            return mi.whole_material(p["name"].lower(), lm_single) != p["material"] and lm_single(p["name"].lower()) == p["material"]
+        multi_parts = [p for p in parts if mi.is_multi(p.get("name", ""))]
+        check("multi-item-whole-part", "a name that lists several items: the item's spec goes into includes (rerun link_screw_specs.py and the other fastener linkers in hobbydex-tools), and a material only when it applies to every item (tools/multi_item.py)",
+              [p for p in multi_parts if whole_part_fastener(p) or whole_part_material(p)])
+    else:
+        results["multi-item-whole-part"] = {"fix": "hobbydex-tools tools/multi_item.py not found (--tools)", "count": None, "examples": [], "all": []}
     # 11b. parts with no category: a name the classifier knows gets one (classify_parts.py --fill); a bare code stays uncategorised
     check("part-no-category", "run tools/classify_parts.py --fill in hobbydex-tools, or add the name's words to its rules",
           [p for p in parts if not p.get("category") and p.get("category_source") != "curated" and p["name"] != (p.get("number") or "")])
