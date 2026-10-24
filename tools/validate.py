@@ -793,6 +793,10 @@ def main():
             elif bc == "JST-XH" and not (isinstance(nc, int) and not isinstance(nc, bool) and 1 <= nc <= 8
                                          and os.path.exists(os.path.join(ROOT, "specs", "connector", f"jst-xh-{nc + 1}.toml"))):
                 errors.append(f"{path}: balance_connector JST-XH needs cells 1..8 (the spec jst-xh-<cells+1> must exist)")
+        bb = d.get("balance_connector_basis") if kind == "part" else None
+        if bb is not None or (bc is not None and kind == "part"):
+            if bc is None or bb not in ("maker", "convention"):
+                errors.append(f"{path}: balance_connector_basis is \"maker\" (the maker's text names the plug) or \"convention\" (LiPo, LiHV or LiFe 2S to 8S, no statement), and only with balance_connector")
         se = d.get("sensored") if kind == "part" else None
         if se is not None and (not isinstance(se, bool) or d.get("category") not in ("motor", "esc", "electronics")):
             errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category esc; motor and electronics systems too)")

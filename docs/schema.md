@@ -667,6 +667,17 @@ site links a pack with `cells = 3` and `balance_connector = "JST-XH"` to
 `spec/connector/jst-xh-4`. A pack that states another balance plug (Traxxas
 iD built-in, EHR, TP, Hyperion) takes no value until a spec for it exists.
 NiMH packs have none.
+`balance_connector` is the battery's secondary plug, not its main `connector`
+(the power plug): the site shows the two as separate rows, and a connector spec
+lists a battery under its balance section, never as its main plug.
+`balance_connector_basis` says where the value comes from: `"maker"` when the
+maker's text names JST-XH, `"convention"` when nothing is stated and the pack is
+a LiPo, LiHV or LiFe of 2S to 8S (the usual balance lead; the site says it is not
+stated by the maker). Set by `tools/link_part_connectors.py --category battery
+--balance`, which never changes a maker value and recomputes a convention value on every run (a maker statement of JST-XH relabels it "maker"; another plug or an exclusion clears it); a pack whose maker or name states
+another balance system (EHR, G-Tech, TP, Hyperion, XHP, Traxxas iD), a Spektrum
+Smart pack, a 1S pack, a pack without `chemistry` or `cells`, and NiMH packs get
+none. `chemistry` is set from the name when the name states it (LiPo, LiHV, LiFe, NiMH; tools/name_fields.py), so a pack without a stated chemistry gets none.
 
 ```toml
 name = "1100mAh 3S 60C 11.4V(HV) Lipo Battery | XT30 Plug"
