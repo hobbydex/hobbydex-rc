@@ -1,0 +1,22 @@
+id = "part/lrp/430215"
+brand = "brand/lrp"
+number = "430215"
+name = "LiPo Power Pack 3800 - 7.4V - 30C - Multi Plug Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430215/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3800mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 3800
+c_rating = 30
+case = "hard"
+dimensions_mm = [137.5, 46.2, 25.2]
+weight_g = 190
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430215-de-manual"]
+voltage = 7.4

@@ -2,12 +2,15 @@ id = "part/lrp/53270"
 brand = "brand/lrp"
 number = "53270"
 name = "Dynamic 8 Brushless Motor 2600kV"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/53270/" },
 ]
 kv = 2600
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [2, 4]
+weight_g = 340
+notes = "No-load speed 38,480 rpm at 14.8 V; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/53270-de-manual"]
+status = "discontinued"
 range = "lrp/dynamic-8-brushless-motor"

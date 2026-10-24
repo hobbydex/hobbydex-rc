@@ -2,12 +2,16 @@ id = "part/lrp/53230"
 brand = "brand/lrp"
 number = "53230"
 name = "Dynamic 8 Brushless Motor 1800kV"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/53230/" },
 ]
 kv = 1800
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [2, 5]
+shaft_mm = 5
+weight_g = 340
+notes = "No-load speed 26,640 rpm; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/53230-de-manual"]
+status = "discontinued"
 range = "lrp/dynamic-8-brushless-motor"

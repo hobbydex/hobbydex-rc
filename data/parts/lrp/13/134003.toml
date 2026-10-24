@@ -1,10 +1,16 @@
 id = "part/lrp/134003"
 brand = "brand/lrp"
 number = "134003"
-name = "S8 Rebel BX / BXe - Querlenker hinten"
+name = "S8 Rebel BX / BXe - Querlenker hinten (2 Stk.)"
 pack_qty = 2
+pack_qty_basis = "name"
 category = "suspension"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/134003/" },
+]
+supersedes = "part/lrp/133003"
+fits = [
+  { kit = "kit/lrp/s8-nxr", type = "direct", source = "doc/lrp/131420b-product-page" },
+  { kit = "kit/lrp/lrp-s8-nxr", type = "direct", source = "doc/lrp/131420-product-page" },
 ]

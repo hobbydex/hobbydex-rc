@@ -2,13 +2,21 @@ id = "part/lrp/50461"
 brand = "brand/lrp"
 number = "50461"
 name = "Vector k7 Brushless Motor - 13.5T"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/50461/" },
 ]
 turns = 13.5
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [1, 3]
+shaft_mm = 3.175
+weight_g = 154
+notes = "No-load speed 22,570 rpm; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/50461-de-manual"]
 supersedes = "part/lrp/50460"
+fits = [
+  { kit = "kit/lrp/lrp-s10-blast-tx-2-non-rtr", type = "direct", source = "doc/lrp/120601-product-page" },
+  { kit = "kit/lrp/lrp-s10-blast-bx-2-non-rtr", type = "direct", source = "doc/lrp/120401-product-page" },
+]
+status = "discontinued"
 range = "lrp/vector-k7-brushless-motor"

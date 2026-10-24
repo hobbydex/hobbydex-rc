@@ -2,11 +2,15 @@ id = "part/lrp/134504"
 brand = "brand/lrp"
 number = "134504"
 name = "Aluminium Servo Horn Gas/Bremse - Hitec (24)"
-status = "discontinued"
 category = "servo"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/134504/" },
 ]
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+fits = [
+  { kit = "kit/lrp/s8-nxr", type = "direct", source = "doc/lrp/131420b-product-page" },
+  { kit = "kit/lrp/lrp-s8-nxr", type = "direct", source = "doc/lrp/131420-product-page" },
+]
+status = "discontinued"
 material = "aluminium"

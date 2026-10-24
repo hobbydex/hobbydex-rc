@@ -16,3 +16,10 @@ capacity_mah = 2200
 connector = "Tamiya"
 documents = ["doc/lrp/71110-de-manual"]
 voltage = 7.2
+supersedes = "part/lrp/71105"
+fits = [
+  { kit = "kit/lrp/s10-twister-2-mt-brushless-2-4ghz-rtr", type = "direct", source = "doc/lrp/120812-product-page" },
+  { kit = "kit/lrp/s10-twister-2-monster-truck-2wd-limited-edition", type = "direct", source = "doc/lrp/120811le-product-page" },
+  { kit = "kit/lrp/lrp-s10-blast-mt-2-rtr-2-4ghz", type = "direct", source = "doc/lrp/120802-product-page" },
+  { kit = "kit/lrp/s10-twister-2wd-sc-truck", type = "direct", source = "doc/lrp/120760-product-page" },
+]

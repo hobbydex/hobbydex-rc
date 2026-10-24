@@ -2,12 +2,19 @@ id = "part/lrp/53240"
 brand = "brand/lrp"
 number = "53240"
 name = "Dynamic 8 Brushless Motor 2200kV"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/53240/" },
 ]
 kv = 2200
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [2, 4]
+shaft_mm = 5
+weight_g = 340
+notes = "No-load speed 32,560 rpm at 14.8 V; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/53240-es-manual"]
+fits = [
+  { kit = "kit/lrp/s8-rebel-bxe-2-4ghz-1-8-electric-buggy", type = "direct", source = "doc/lrp/130305-product-page" },
+]
+status = "discontinued"
 range = "lrp/dynamic-8-brushless-motor"

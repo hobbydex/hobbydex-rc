@@ -1,10 +1,15 @@
 id = "part/lrp/133041"
 brand = "brand/lrp"
 number = "133041"
-name = "S8 Rebel - Getriebeausgang"
+name = "S8 Rebel - Getriebeausgang (2 Stk.)"
 pack_qty = 2
+pack_qty_basis = "name"
 category = "drivetrain"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/133041/" },
+]
+fits = [
+  { kit = "kit/lrp/s8-rebel-tx-2-4ghz-rtr-1-8-verbrenner-truggy-2-4ghz-rtr", type = "direct", source = "doc/lrp/131511-product-page" },
+  { kit = "kit/lrp/s8-rebel-bxe-2-4ghz-rtr-limited-edition", type = "direct", source = "doc/lrp/130306-product-page" },
 ]

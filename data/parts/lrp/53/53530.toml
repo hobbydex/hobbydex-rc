@@ -2,12 +2,16 @@ id = "part/lrp/53530"
 brand = "brand/lrp"
 number = "53530"
 name = "Dynamic10L BL Motor 2400kV"
-status = "discontinued"
 category = "motor"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/53530/" },
 ]
 kv = 2400
-notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+lipo_cells = [1, 4]
+shaft_mm = 5
+weight_g = 275
+notes = "No-load speed 35,520 rpm at 14.8 V; Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/53530-de-manual"]
+status = "discontinued"
 range = "lrp/dynamic10l-bl-motor"

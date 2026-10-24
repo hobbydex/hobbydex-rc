@@ -2,11 +2,15 @@ id = "part/lrp/134502"
 brand = "brand/lrp"
 number = "134502"
 name = "Aluminium Servo Horn Lenkung - Futaba (25)"
-status = "discontinued"
 category = "servo"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/134502/" },
 ]
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+fits = [
+  { kit = "kit/lrp/s8-nxr", type = "direct", source = "doc/lrp/131420b-product-page" },
+  { kit = "kit/lrp/lrp-s8-nxr", type = "direct", source = "doc/lrp/131420-product-page" },
+]
+status = "discontinued"
 material = "aluminium"

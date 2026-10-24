@@ -1,0 +1,23 @@
+id = "part/lrp/430452"
+brand = "brand/lrp"
+number = "430452"
+name = "Deep Blue 450 Tuning LiPo - 1800mAh - 2S2P - 7.4V - 30C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430452/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 1800
+c_rating = 30
+dimensions_mm = [54, 30, 30]
+weight_g = 94
+connector = "Tamiya"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430452-de-manual"]
+voltage = 7.4
+color = "blue"

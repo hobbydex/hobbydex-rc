@@ -1,10 +1,15 @@
 id = "part/lrp/124520"
 brand = "brand/lrp"
 number = "124520"
-name = "S10 Twister SC - CVD-Kardan"
+name = "S10 Twister SC - CVD-Kardan (2 Stk.)"
 pack_qty = 2
+pack_qty_basis = "name"
 category = "drivetrain"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/124520/" },
+]
+fits = [
+  { kit = "kit/lrp/s10-twister-2wd-sc-truck", type = "direct", source = "doc/lrp/120760-product-page" },
+  { kit = "kit/lrp/s10-twister-2-sc-truck-brushless-2-4ghz-rtr", type = "direct", source = "doc/lrp/120712-product-page" },
 ]

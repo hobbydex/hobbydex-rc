@@ -2,10 +2,16 @@ id = "part/lrp/45050"
 brand = "brand/lrp"
 number = "45050"
 name = "2in1 LiPo Guard+BEC (6V/5A for 2S/3S/4S)"
-status = "discontinued"
 category = "charger"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/45050/" },
 ]
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/45050-de-manual"]
+fits = [
+  { kit = "kit/lrp/lrp-s10-blast-mt", type = "direct", source = "doc/lrp/120850-product-page" },
+  { kit = "kit/lrp/lrp-s10-blast-2-4ghz-mt-rtr", type = "direct", source = "doc/lrp/120801-product-page" },
+  { kit = "kit/lrp/lrp-s10-blast-mt-rtr", type = "direct", source = "doc/lrp/120800-product-page" },
+]
+status = "discontinued"

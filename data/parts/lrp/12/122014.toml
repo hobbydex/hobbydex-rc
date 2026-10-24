@@ -1,8 +1,9 @@
 id = "part/lrp/122014"
 brand = "brand/lrp"
 number = "122014"
-name = "VTEC - 1/10 Monster Truck - Komplettrad - High Pin- Weiße Felge"
+name = "VTEC - 1/10 Monster Truck - Komplettrad - High Pin- Weiße Felge (2 Stk.)"
 pack_qty = 2
+pack_qty_basis = "name"
 category = "tire"
 category_source = "curated"
 links = [
@@ -12,3 +13,8 @@ scale = "1/10"
 vehicle = "monster"
 mounting = "pre-mounted"
 wheel_color = "white"
+supersedes = "part/lrp/122016"
+fits = [
+  { kit = "kit/lrp/s10-blast-mt-2-brushless-rtr-2-4ghz", type = "direct", source = "doc/lrp/120803-product-page" },
+  { kit = "kit/lrp/lrp-s10-blast-mt-2-rtr-2-4ghz", type = "direct", source = "doc/lrp/120802-product-page" },
+]

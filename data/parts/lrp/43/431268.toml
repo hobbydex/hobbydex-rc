@@ -2,13 +2,12 @@ id = "part/lrp/431268"
 brand = "brand/lrp"
 number = "431268"
 name = "1/12 Ultra LCG GRAPHENE-4.1 8100mAh Hardcase Battery - 3.7V LiPo - 120C / 60C"
-status = "discontinued"
 category = "battery"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/431268/" },
 ]
-chemistry = "lipo"
+chemistry = "lihv"
 cells = 1
 equivalent_to = [
   { spec = "spec/battery/lipo-1s-8100mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
@@ -16,5 +15,9 @@ equivalent_to = [
 capacity_mah = 8100
 c_rating = 120
 case = "hard"
+dimensions_mm = [93, 47, 18.5]
+weight_g = 158
+connector = "4mm bullet"
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
 voltage = 3.7
+status = "discontinued"

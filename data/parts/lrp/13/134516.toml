@@ -2,11 +2,15 @@ id = "part/lrp/134516"
 brand = "brand/lrp"
 number = "134516"
 name = "Big Bore Teflon Kolbenplatten 6x1,3mm (4Stk.) - S8 NXR"
-status = "discontinued"
 pack_qty = 4
-pack_qty_basis = "name"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/134516/" },
 ]
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
 category = "chassis"
+fits = [
+  { kit = "kit/lrp/s8-nxr", type = "direct", source = "doc/lrp/131420b-product-page" },
+  { kit = "kit/lrp/lrp-s8-nxr", type = "direct", source = "doc/lrp/131420-product-page" },
+]
+status = "discontinued"
+pack_qty_basis = "name"

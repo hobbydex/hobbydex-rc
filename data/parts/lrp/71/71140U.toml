@@ -1,0 +1,18 @@
+id = "part/lrp/71140U"
+brand = "brand/lrp"
+number = "71140U"
+name = "Hyper Pack 4600 - 7.2V - 6-Zellen NiMH Stickpack mit US-style Stecker"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/71140u/" },
+]
+chemistry = "nimh"
+cells = 6
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-4600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4600
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/71140u-de-manual"]
+voltage = 7.2

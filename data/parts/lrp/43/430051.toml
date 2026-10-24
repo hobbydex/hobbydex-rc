@@ -1,0 +1,21 @@
+id = "part/lrp/430051"
+brand = "brand/lrp"
+number = "430051"
+name = "Expert Line 2600mAh -30C -11.1V -Multi-Copter -US-Style"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430051/" },
+]
+chemistry = "lipo"
+cells = 3
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-2600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 2600
+c_rating = 30
+dimensions_mm = [102, 36, 27]
+weight_g = 185
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430051-manual"]
+voltage = 11.1

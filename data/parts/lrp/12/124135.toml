@@ -1,8 +1,14 @@
 id = "part/lrp/124135"
 brand = "brand/lrp"
 number = "124135"
-name = "S10 Twister - Achsstiftbuchsen Metall"
+name = "S10 Twister - Achsstiftbuchsen Metall (10 Stk.)"
 pack_qty = 10
+pack_qty_basis = "name"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/124135/" },
+]
+fits = [
+  { kit = "kit/lrp/s10-twister-truggy-2-4ghz-rtr", type = "direct", source = "doc/lrp/120511-product-page" },
+  { kit = "kit/lrp/s10-twister-buggy-kit", type = "direct", source = "doc/lrp/120411-product-page" },
+  { kit = "kit/lrp/s10-twister-buggy-2-4ghz-rtr", type = "direct", source = "doc/lrp/120311-product-page" },
 ]

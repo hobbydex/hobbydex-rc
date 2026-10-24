@@ -2,10 +2,16 @@ id = "part/lrp/41281"
 brand = "brand/lrp"
 number = "41281"
 name = "Quadra Pro 2 Charger"
-status = "discontinued"
 category = "charger"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/41281/" },
 ]
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/41281-de-manual"]
+fits = [
+  { kit = "kit/lrp/lrp-s10-blast-mt", type = "direct", source = "doc/lrp/120850-product-page" },
+  { kit = "kit/lrp/lrp-s10-blast-2-4ghz-mt-rtr", type = "direct", source = "doc/lrp/120801-product-page" },
+  { kit = "kit/lrp/lrp-s10-blast-mt-rtr", type = "direct", source = "doc/lrp/120800-product-page" },
+]
+status = "discontinued"

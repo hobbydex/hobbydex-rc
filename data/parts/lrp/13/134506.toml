@@ -2,9 +2,13 @@ id = "part/lrp/134506"
 brand = "brand/lrp"
 number = "134506"
 name = "BigBore Feder vorne (silber/weich) - S8 NXR"
-status = "discontinued"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/134506/" },
 ]
 notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
 category = "shock-spring"
+fits = [
+  { kit = "kit/lrp/s8-nxr", type = "direct", source = "doc/lrp/131420b-product-page" },
+  { kit = "kit/lrp/lrp-s8-nxr", type = "direct", source = "doc/lrp/131420-product-page" },
+]
+status = "discontinued"

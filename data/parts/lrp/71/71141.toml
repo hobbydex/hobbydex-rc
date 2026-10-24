@@ -1,0 +1,19 @@
+id = "part/lrp/71141"
+brand = "brand/lrp"
+number = "71141"
+name = "Hyper Pack 4600 - 8.4V - 7-Zellen - Tamiya/JST Stecker - NiMH Stickpack"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/71141/" },
+]
+chemistry = "nimh"
+cells = 7
+equivalent_to = [
+  { spec = "spec/battery/nimh-7s-4600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4600
+connector = "Tamiya"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/71141-de-manual"]
+voltage = 8.4

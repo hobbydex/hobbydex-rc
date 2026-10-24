@@ -1,0 +1,22 @@
+id = "part/lrp/430234"
+brand = "brand/lrp"
+number = "430234"
+name = "5600 - TC LCG P5 - 110C/55C - 7.4V LiPo - 1/10 Competition Car Line Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430234/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 5600
+c_rating = 110
+case = "hard"
+dimensions_mm = [139, 47, 22.5]
+weight_g = 268
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430234-manual"]
+voltage = 7.4

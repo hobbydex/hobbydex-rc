@@ -1,0 +1,23 @@
+id = "part/lrp/430219"
+brand = "brand/lrp"
+number = "430219"
+name = "4800 - Square Pack - 110C/55C - 7.4V LiPo - 1/10 Competition Car Line Hardcase"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/430219/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4800mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4800
+c_rating = 110
+case = "hard"
+dimensions_mm = [92.5, 69, 25.1]
+weight_g = 268
+connector = "4mm bullet"
+notes = "Discontinued: in LRP's archive ('Auslaufartikel')"
+documents = ["doc/lrp/430219-de-manual"]
+voltage = 7.4
