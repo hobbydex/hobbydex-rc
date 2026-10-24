@@ -4,5 +4,11 @@ number = "T4975-66"
 name = "Lower arm pins 4x80 mm"
 name_fr = "Axes inf.triangles 4x80mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-axes-inf-triangles-4x80mm-1-6-T4975_66" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4975/66."
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/4x80", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

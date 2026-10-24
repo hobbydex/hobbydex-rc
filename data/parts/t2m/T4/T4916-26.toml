@@ -4,5 +4,11 @@ number = "T4916-26"
 name = "Pins 3x32.9 mm"
 name_fr = "Axes 3x32,9mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-axes-3x32-9mm-T4916_26" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4916/26."
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/3x32.9", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

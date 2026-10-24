@@ -14,3 +14,8 @@ cells = 3
 balance_connector = "JST-XH"
 balance_connector_basis = "convention"
 voltage = 11.1
+equivalent_to = [
+  { spec = "spec/battery/lihv-3s-10000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 10000
+c_rating = 120

@@ -3,10 +3,14 @@ brand = "brand/t2m"
 number = "T4919-56"
 name = "Round head screw 2x6 mm"
 name_fr = "Vis tête ronde 2x6 mm"
-pack_qty = 12
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-voiture-T4919_56" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4919/56."
 equivalent_to = [
   { spec = "spec/screw/m2x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+pack_qty = 12
+pack_qty_basis = "name"

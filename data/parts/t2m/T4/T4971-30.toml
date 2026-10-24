@@ -4,5 +4,11 @@ number = "T4971-30"
 name = "550 20T brushed motor"
 name_fr = "Moteur Brushed 550 20T"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-moteur-brushed-550-20t-1-10-T4971_30" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4971/30."
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

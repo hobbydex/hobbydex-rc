@@ -4,5 +4,11 @@ number = "T4948-43"
 name = "M3 flanged brake nuts"
 name_fr = "Ecrous frein flasque M3"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-ecrous-frein-flasque-m3-T4948_43" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4948/43."
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

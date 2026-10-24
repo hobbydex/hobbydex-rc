@@ -4,5 +4,12 @@ number = "T4972-29"
 name = "M3 brake nuts"
 name_fr = "Ecrous frein M3"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-ecrous-frein-m3-1-10-T4972_29" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4972/29."
 category = "nut"
+applies_to = ["Pirate XT-C 1/10"]
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

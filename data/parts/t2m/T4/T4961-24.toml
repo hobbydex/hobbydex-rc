@@ -4,5 +4,12 @@ number = "T4961-24"
 name = "Front lower arm pins 3x46 mm"
 name_fr = "Axes triangles inf. Av 3x46mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-axes-triangles-inf-av-3x46mm-T4961_24" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4961/24."
 category = "pin"
+applies_to = ["Pirate RS 3 SPORT 1/8"]
+equivalent_to = [
+  { spec = "spec/pin/3x46", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

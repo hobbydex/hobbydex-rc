@@ -4,5 +4,11 @@ number = "T4973-69"
 name = "Washers 8x5.1x0.2 mm"
 name_fr = "Rondelles 8x5,1x0,2mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-voiture-T4973_69" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4973/69."
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5.1x8x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

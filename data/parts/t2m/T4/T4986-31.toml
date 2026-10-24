@@ -4,5 +4,12 @@ number = "T4986-31"
 name = "550 motor"
 name_fr = "Moteur 550"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-moteur-550-T4986_31" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4986/31."
 category = "motor"
+applies_to = ["Pirate Monster MX 1/10"]
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

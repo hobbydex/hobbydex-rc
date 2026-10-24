@@ -3,7 +3,12 @@ brand = "brand/t2m"
 number = "T4961-33"
 name = "Complete screw kit"
 name_fr = "Kit visserie complét"
-pack_qty = 201
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-kit-visserie-complet-201-pcs-T4961_33" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4961/33."
 category = "screw"
+pack_qty = 201
+pack_qty_basis = "name"
+applies_to = ["Pirate RS 3 SPORT 1/8"]

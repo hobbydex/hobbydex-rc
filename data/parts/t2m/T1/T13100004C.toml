@@ -4,13 +4,18 @@ number = "T13100004C"
 name = "LiPo battery 4S HV 15.2V 10000 mAh 120C"
 name_fr = "Accu LiPo 4S HV 15.2V 10000mA 120C"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m--accu-lipo-4s-hv-15-2v-10000ma-120c-T13100004C" },
+]
+voltage = 15.2
 category = "battery"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 chemistry = "lipo"
 cells = 4
 balance_connector = "JST-XH"
 balance_connector_basis = "convention"
-links = [
-  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m--accu-lipo-4s-hv-15-2v-10000ma-120c-T13100004C" },
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-10000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]
-voltage = 15.2
+capacity_mah = 10000
+c_rating = 120

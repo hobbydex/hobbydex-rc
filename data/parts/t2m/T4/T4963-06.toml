@@ -3,10 +3,12 @@ brand = "brand/t2m"
 number = "T4963-06"
 name = "Screw kit"
 name_fr = "Kit visserie"
-pack_qty = 165
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-voiture-T4963_06" },
 ]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4963/06."
 category = "screw"
+pack_qty = 165
+pack_qty_basis = "name"
+applies_to = ["Pirate RS3 SE Brushless 1/8"]

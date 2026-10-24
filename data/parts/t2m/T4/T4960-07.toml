@@ -4,5 +4,11 @@ number = "T4960-07"
 name = "2.5mm brake nut"
 name_fr = "Ecrou frein 2,5mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-ecrou-frein-2-5mm-T4960_07" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4960/07."
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m2.5-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

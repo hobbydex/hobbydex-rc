@@ -4,6 +4,12 @@ number = "T4939-79"
 name = "Pin 2x10"
 name_fr = "Axe 2x10"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-axe-2x10-6p-T4939_79" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4939/79."
 pack_qty = 6
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

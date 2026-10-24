@@ -4,5 +4,11 @@ number = "T4973-76"
 name = "Pins 1.6x8 mm"
 name_fr = "Axes 1,6x8mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-voiture-T4973_76" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4973/76."
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/1.6x8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

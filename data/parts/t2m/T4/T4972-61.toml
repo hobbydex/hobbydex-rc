@@ -4,8 +4,12 @@ number = "T4972-61"
 name = "Round head screw 2.5x15 mm"
 name_fr = "Vis ronde 2,5x15mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-vis-ronde-2-5x15mm-1-10-T4972_61" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4972/61."
 equivalent_to = [
   { spec = "spec/screw/m2.5x15-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+applies_to = ["Pirate XT-C 1/10"]
