@@ -5,8 +5,12 @@ name = "Aluminum Gear for BSx2 Response"
 status = "discontinued"
 category = "gear"
 category_source = "curated"
-notes = "Listed in KO Propo's Discontinued Products Table (updated 2022-05-20)."
+notes = "Listed in KO Propo's Discontinued Products Table (updated 2022-05-20). KO Propo specifications: BSx2 Response H.C / Response"
 links = [
+  { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/35546" },
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/discontinued/" },
 ]
 material = "aluminium"
+related = [
+  { part = "part/ko-propo/30203", relation = "for" },
+]
