@@ -12,3 +12,8 @@ cells = 2
 balance_connector = "JST-XH"
 balance_connector_basis = "convention"
 voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4000
+c_rating = 15

@@ -11,3 +11,7 @@ motor_type = "brushless"
 current_a = 60
 range = "spektrum/firma-60a-brushless-smart-esc-sensored-motor-crawler-combo"
 kv = 2100
+includes = [
+  { part = "part/spektrum/SPMXSE1060", qty = 1, notes = "Component named in the combo's name" },
+  { part = "part/spektrum/SPMXSM3001", qty = 1, notes = "Component named in the combo's name" },
+]

@@ -8,6 +8,7 @@ links = [
 ]
 fits = [
   { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-x", type = "replaces", replaces = "part/losi/LOSB5004", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "engine-fuel"
 material = "steel"
