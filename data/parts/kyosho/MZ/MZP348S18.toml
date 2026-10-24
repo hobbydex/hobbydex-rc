@@ -3,12 +3,14 @@ brand = "brand/kyosho"
 number = "MZP348S18"
 name = "ASC MR04W-LM Jaguar XJR-14 No.18 SUGO 1991"
 gtin = "4548565529308"
+category = "body"
+category_source = "curated"
 documents = ["doc/kyosho/rc-newitem-2026-12-parts", "doc/kyosho/mzp348s18-product-page"]
 fits = [
   { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/rc-newitem-2026-12-parts" },
 ]
 notes = "Kyosho lists it among the new items of December 2026"
-category = "body"
-category_source = "curated"
 scale = "1/27"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp348s18.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp348s18.html" },
+]

@@ -3,11 +3,13 @@ brand = "brand/kyosho"
 number = "CLW004"
 name = "Counterweight (KC10/2pcs)"
 pack_qty = 2
-pack_qty_basis = "name"
 released = "2026-05"
 gtin = "4548565516889"
 documents = ["doc/kyosho/rc-newitem-2026-05-parts", "doc/kyosho/clw004-product-page"]
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/kyosho/kc10", type = "direct", source = "doc/kyosho/rc-newitem-2026-05-parts" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/clw004.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/clw004.html" },
+]

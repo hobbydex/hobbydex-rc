@@ -3,10 +3,13 @@ brand = "brand/kyosho"
 number = "IF297"
 name = "Manifold (MP10 RS)"
 released = "2026-04"
+gtin = "4548565515158"
 category = "engine-fuel"
 documents = ["doc/kyosho/rc-newitem-2026-04-parts"]
 fits = [
   { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/rc-newitem-2026-04-parts" },
   { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/if297.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/if297.html" },
+]
