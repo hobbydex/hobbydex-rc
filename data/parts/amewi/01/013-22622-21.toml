@@ -4,7 +4,6 @@ number = "013-22622-21"
 name = "Battery M-Land"
 name_de = "Akku M-Land"
 gtin = "4262500341793"
-notes = "Specifications: Battery Type Li-Po; Cells 2; Battery Voltage 7.4V; Battery Capacity 850mAh; Dimension 60x34x31mmmm; Battery Weight 56g"
 fits = [
   { kit = "kit/amewi/m-land-truggy", type = "direct", source = "doc/amewi/22756-product-page" },
   { kit = "kit/amewi/m-land", type = "direct", source = "doc/amewi/22623-product-page" },
@@ -13,3 +12,11 @@ links = [
   { site = "Amewi", url = "https://amewi.com/Akku-M-Land" },
 ]
 category = "battery"
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+capacity_mah = 850
+dimensions_mm = [60, 34, 31]
+weight_g = 56
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

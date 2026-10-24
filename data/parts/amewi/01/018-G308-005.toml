@@ -4,7 +4,6 @@ number = "018-G308-005"
 name = "Li-Ion Battery 3S 11,1V 15.000mAh XT60"
 name_de = "Li-Ion Akku 3S 11,1V 15.000mAh XT60"
 gtin = "4260677955812"
-notes = "Specifications: Battery Type Li-Ion; Cells 3; Battery Voltage 11.1V; Battery Capacity 15000mAh; Battery Plug XT60; Dimension 116x67x57mm; Battery Weight 860g"
 fits = [
   { kit = "kit/amewi/excavator-g308h", type = "direct", source = "doc/amewi/22519-product-page" },
 ]
@@ -16,3 +15,6 @@ capacity_mah = 15000
 connector = "XT60"
 category = "battery"
 chemistry = "liion"
+voltage = 11.1
+dimensions_mm = [116, 67, 57]
+weight_g = 860

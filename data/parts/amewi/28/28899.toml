@@ -3,7 +3,6 @@ brand = "brand/amewi"
 number = "28899"
 name = "LiPo Akku 2S 7,4V 4000mAh 45C Hardcase, DEANS"
 gtin = "4260476350047"
-notes = "Specifications: Battery Type Li-Po; Cells 2; Battery Voltage 7.4V; Battery Capacity 4000mAh; Battery Plug Deans; Dimension 140 x45 x25mm; Battery Weight 170g"
 fits = [
   { kit = "kit/amewi/amxrock-rcx10p", type = "direct", source = "doc/amewi/22463-product-page" },
   { kit = "kit/amewi/amxrock-rcx10b", type = "direct", source = "doc/amewi/22462-product-page" },
@@ -27,3 +26,6 @@ case = "hard"
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
+voltage = 7.4
+dimensions_mm = [140, 45, 25]
+weight_g = 170

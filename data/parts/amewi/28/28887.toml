@@ -4,7 +4,6 @@ number = "28887"
 name = "LiPo Battery 2S 7,4V 3500mAh"
 name_de = "LiPo Akku 2S 7,4V 3500mAh 20C Hardcase, DEANS"
 gtin = "4260414189845"
-notes = "Specifications: Battery Type Li-Po; Cells 2; Battery Voltage 7.4V; Battery Capacity 3500mAh; Battery Plug Dean; Dimension 134x45.8x23mm; Battery Weight 200g"
 fits = [
   { kit = "kit/amewi/amxrock-rcx10p", type = "direct", source = "doc/amewi/22463-product-page" },
   { kit = "kit/amewi/amxrock-rcx10b", type = "direct", source = "doc/amewi/22462-product-page" },
@@ -26,3 +25,6 @@ case = "hard"
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
+voltage = 7.4
+dimensions_mm = [134, 45.8, 23]
+weight_g = 200
