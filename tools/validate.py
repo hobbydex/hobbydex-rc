@@ -660,8 +660,8 @@ def main():
             if not (isinstance(l, dict) and l.get("site") and (u.startswith("https://") or
                     (u.startswith("http://") and urllib.parse.urlsplit(u).hostname in http_hosts))):
                 errors.append(f"{path}: link {l!r} needs a site and an https url (http only for a maker site that has no https)")
-            elif "kind" in l and l["kind"] not in ("fan-site", "press", "dealer"):
-                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press', 'dealer']")
+            elif "kind" in l and l["kind"] not in ("fan-site", "press", "dealer", "maker"):
+                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press', 'dealer', 'maker']")
         if kind == "part" and "pack_qty_basis" in d and not (isinstance(d.get("pack_qty"), int) and d["pack_qty"] >= 1):
             errors.append(f"{path}: pack_qty_basis needs a pack_qty (a whole number, 1 or more)")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:

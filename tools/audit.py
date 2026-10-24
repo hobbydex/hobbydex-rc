@@ -544,17 +544,29 @@ def main():
     used_specs = {e["spec"] for p in parts for e in p.get("equivalent_to", [])}
     check("spec-unlinked", "link a part to the spec, or retire the spec", [s for s in db["specs"] if s["id"] not in used_specs])
 
-    # 26c. Tamiya parts with no maker link and no dealer link, by number form (tools/link_tamico_spares.py adds dealer links)
-    def linked_somewhere(p):
-        return any((l.get("kind") is None and l.get("site") == "Tamiya") or l.get("kind") == "dealer" for l in p.get("links", []))
+    # 26c. Tamiya parts with no maker link, by number form. A maker link is kind "maker" (Tamiya USA's spare page,
+    # tools/link_tamiya_usa_spares.py) or the Tamiya product link with no kind; a dealer link (tools/link_tamico_spares.py)
+    # is counted apart: a spare with a dealer link only still needs its maker page
+    def maker_linked(p):
+        return any((l.get("kind") is None and l.get("site") == "Tamiya") or l.get("kind") == "maker" for l in p.get("links", []))
+    def dealer_linked(p):
+        return any(l.get("kind") == "dealer" for l in p.get("links", []))
     tam = [p for p in parts if p.get("brand") == "brand/tamiya"]
-    bare = [p for p in tam if not linked_somewhere(p)]
-    spares = [p for p in bare if re.fullmatch(r"\d{8}", str(p.get("number", "")))]
-    items = [p for p in bare if re.fullmatch(r"\d{5}", str(p.get("number", "")))]
-    check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker or dealer page: run tools/plan_tamico_spares.py in hobbydex-tools (dealer pages are queued) and then tools/link_tamico_spares.py",
-          spares, count=len(spares))
+    spares_all = [p for p in tam if re.fullmatch(r"\d{8}", str(p.get("number", "")))]
+    spares = [p for p in spares_all if not maker_linked(p)]
+    items = [p for p in tam if re.fullmatch(r"\d{5}", str(p.get("number", ""))) and not maker_linked(p) and not dealer_linked(p)]
+    dealer_only = sum(1 for p in spares if dealer_linked(p))
+    check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker link (Tamiya USA's spare page, kind maker): run tools/link_tamiya_usa_spares.py in hobbydex-tools once the listing captures have landed (tools/plan_tamiya_usa_spares.py queues them); a spare with only a dealer link is counted in dealer_only",
+          spares, count=len(spares), maker=sum(1 for p in spares_all if maker_linked(p)), dealer_only=dealer_only)
     check("tamiya-item-no-link", "a Tamiya item number with no maker product page: give it a maker link (tamiya.com page) or a manual or fan-site source",
           items, count=len(items))
+    usa_tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamiya-usa-spares.tsv")
+    usa_rows = []
+    if os.path.exists(usa_tsv):
+        with open(usa_tsv, encoding="utf-8") as fh:
+            usa_rows = [{"id": row["part"], "reason": row["reason"], "usa": row["usa_names"]} for row in csv.DictReader(fh, delimiter="\t")]
+    check("tamiya-usa-spare-mismatch", "a Tamiya USA spare page that names another part (name or size differs) or several pages: check the two names in cache/notes/tamiya/tamiya-usa-spares.tsv and link by hand or leave unlinked",
+          usa_rows, count=len(usa_rows))
     tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamico-spares.tsv")
     conflicts = []
     if os.path.exists(tsv):
@@ -597,6 +609,12 @@ def main():
     no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes")]
     check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes",
           no_pack, per_brand=per_brand(no_pack))
+
+    # a Tamiya "Hex Head" screw is a hexagon head with a JIS cross recess (spec head hex), never a socket cap
+    tamiya_hex = [p for p in parts if p.get("brand") == "brand/tamiya" and p.get("category") == "screw" and re.search(r"\bhex head\b", p.get("name", ""), re.I)
+                  and any("socket-cap" in e.get("spec", "") for e in p.get("equivalent_to", []))]
+    check("tamiya-hex-head-socket", "link the Tamiya hex head screw to its spec/screw/*-hex-jis* (head hex, JIS cross recess), not to a socket cap",
+          tamiya_hex)
 
     # metal hardware whose name or cached maker page states a material the data lacks (tools/link_part_material.py's rule)
     lpm = tools.get("material")
