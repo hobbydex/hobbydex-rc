@@ -54,6 +54,9 @@ DOUBTABLE = {"release": ("released", "year", "announced"), "brand": ("launched",
 
 # scale as a fraction of the real vehicle: "1/10", "1/13.5" (docs/schema.md "kit", "release")
 SCALE_RE = re.compile(r"1/\d+(\.\d+)?")
+# links: kind (none = the maker's product page); archive = a Wayback capture of a page that is gone (docs/schema.md "links")
+LINK_KINDS = {"fan-site", "press", "dealer", "maker", "archive"}
+ARCHIVE_URL = re.compile(r"https://web\.archive\.org/web/\d{14}/https?://.+")
 YOUTUBE_CHANNEL = re.compile(r"https://www\.youtube\.com/@[A-Za-z0-9._-]+")
 
 ENUMS = {
@@ -364,7 +367,7 @@ def check_dealer_links(docs, errors):
         links = [l for l in d.get("links", []) if isinstance(l, dict)]
         if not any(l.get("kind") == "dealer" for l in links):
             continue
-        maker = [l.get("site") for l in links if "kind" not in l]
+        maker = [l.get("site") for l in links if "kind" not in l and "gone" not in l]   # a page marked gone is no product page
         pages = [x for x in d.get("documents", []) + [d.get("source")] if doc_kind.get(x) == "product_page"]
         if maker:
             errors.append(f"{path}: dealer link beside a maker product link ({', '.join(map(str, maker))}); drop the dealer link")
@@ -663,8 +666,14 @@ def main():
             if not (isinstance(l, dict) and l.get("site") and (u.startswith("https://") or
                     (u.startswith("http://") and urllib.parse.urlsplit(u).hostname in http_hosts))):
                 errors.append(f"{path}: link {l!r} needs a site and an https url (http only for a maker site that has no https)")
-            elif "kind" in l and l["kind"] not in ("fan-site", "press", "dealer", "maker"):
-                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press', 'dealer', 'maker']")
+            elif "kind" in l and l["kind"] not in LINK_KINDS:
+                errors.append(f"{path}: link kind = {l['kind']!r} not in {sorted(LINK_KINDS)}")
+            elif "kind" not in l and urllib.parse.urlsplit(u).hostname == "web.archive.org":
+                errors.append(f"{path}: link {u!r} is a Wayback capture: kind = \"archive\" (the maker product link is the live page)")
+            elif l.get("kind") == "archive" and not ARCHIVE_URL.fullmatch(u):
+                errors.append(f"{path}: archive link {u!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>")
+            if isinstance(l, dict) and "gone" in l and not (isinstance(l["gone"], str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", l["gone"])):
+                errors.append(f"{path}: link gone = {l['gone']!r} should be the day the page answered 404 or 410, \"YYYY-MM-DD\"")
         if kind == "part" and "pack_qty_basis" in d and not (isinstance(d.get("pack_qty"), int) and d["pack_qty"] >= 1):
             errors.append(f"{path}: pack_qty_basis needs a pack_qty (a whole number, 1 or more)")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
