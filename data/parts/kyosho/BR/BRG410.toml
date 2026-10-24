@@ -2,8 +2,8 @@ id = "part/kyosho/BRG410"
 brand = "brand/kyosho"
 number = "BRG410"
 name = "Shield Bearing (6x10x3 / 2pcs)"
-former_names = ["Shield Bearing (6x10x3) 2pcs", "Shield Bearing (6x10x3mm) 2pcs"]
 pack_qty = 2
+pack_qty_basis = "name"
 gtin = "4548565493463"
 category = "bearing"
 documents = ["doc/kyosho/brg410-product-page"]
@@ -11,7 +11,6 @@ notes = "Name transcribed by hand from the Spare Parts table of a Kyosho Mini-Z 
 equivalent_to = [
   { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"
 seal = "metal"
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
@@ -26,3 +25,4 @@ fits = [
   { kit = "kit/kyosho/turbo-scorpion", type = "direct", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
   { kit = "kit/kyosho/plazma-mk3", type = "direct", source = "doc/kyosho/30639-mm02-spop" },
 ]
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/brg410.html" } ]

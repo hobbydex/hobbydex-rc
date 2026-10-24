@@ -1,13 +1,17 @@
 id = "part/t2m/T4975-112"
 brand = "brand/t2m"
 number = "T4975-112"
-name = "Roulements 8x18x4mm (2pcs) 1/6"
+name = "1/6 bearings 8x18x4 mm (2 pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+name_fr = "Roulements 8x18x4mm (2pcs) 1/6"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-roulements-8x18x4mm-2pcs-1-6-T4975_112" },
 ]
-notes = "The store prints the item code as T4975/112."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4975/112."
 equivalent_to = [
   { spec = "spec/bearing/8x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
+category = "bearing"

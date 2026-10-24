@@ -2,10 +2,14 @@ id = "part/tamiya/19805868"
 brand = "brand/tamiya"
 number = "19805868"
 name = "2x10mm Screw"
-former_names = ["2x10mm Screw (Silver)", "Delon Screw", "Schraube", "Vis"]
+ocr_names = ["2x10mm Screw (Silver)", "Delon Screw"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13616-19805868", kind = "fan-site" },
+  { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-2x10mm-screw-57719/", kind = "maker" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m2x10-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

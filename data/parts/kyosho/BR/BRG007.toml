@@ -3,11 +3,11 @@ brand = "brand/kyosho"
 number = "BRG007"
 name = "Shield Bearing (3x6x2.5) 2pcs"
 pack_qty = 2
+pack_qty_basis = "name"
 notes = "Name transcribed by hand from the Spare Parts table of a Kyosho Mini-Z Buggy exploded view"
 equivalent_to = [
   { spec = "spec/bearing/3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"
 seal = "metal"
 category = "bearing"
 fits = [
@@ -19,4 +19,6 @@ fits = [
   { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
   { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
   { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-exploded-view" },
+  { kit = "kit/kyosho/mini-z-4x4", type = "direct", source = "doc/kyosho/mini-z-4x4-series-2023-exploded-view" },
 ]

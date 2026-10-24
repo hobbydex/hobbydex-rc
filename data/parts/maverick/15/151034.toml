@@ -3,3 +3,9 @@ brand = "brand/maverick"
 number = "151034"
 name = "12mm Hex Hub (Plastic/4pcs)"
 pack_qty = 4
+pack_qty_basis = "name"
+category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151034?show_disc=true" } ]

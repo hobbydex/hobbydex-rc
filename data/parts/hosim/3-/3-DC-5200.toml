@@ -3,6 +3,7 @@ brand = "brand/hosim"
 number = "3-DC-5200"
 name = "RC Cars Battery 25C 2S 7.4V 5200mAh forRC Truck X07 X08 X17 X25 X27 3PCS"
 pack_qty = 3
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
   { kit = "kit/hosim/x07w", type = "direct", source = "doc/hosim/store" },
@@ -22,3 +23,5 @@ cells = 2
 capacity_mah = 5200
 c_rating = 25
 category = "battery"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

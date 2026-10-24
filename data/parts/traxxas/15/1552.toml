@@ -3,7 +3,6 @@ brand = "brand/traxxas"
 number = "1552"
 name = "3x8mm Hex Cap Screws (6)/ Washers (6)/ Wrench"
 pack_qty = 1
-material = "steel"
 category = "screw"
 includes = [
   { spec = "spec/screw/m3x8-socket-cap-hex", notes = "Size from the name; the count is not stated" },
@@ -32,9 +31,6 @@ fits = [
   { kit = "kit/traxxas/summit", type = "direct", source = "doc/traxxas/56076-1-exploded-driveshafts-assembly" },
   { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/traxxas/56086-4-exploded-transmission-assembly" },
   { kit = "kit/traxxas/telluride", type = "direct", source = "doc/traxxas/67044-1-exploded-front-assembly" },
-]
-equivalent_to = [
-  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/1552-upgraded-backplate-screws" },

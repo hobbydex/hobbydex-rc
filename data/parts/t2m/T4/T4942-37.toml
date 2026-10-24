@@ -1,11 +1,15 @@
 id = "part/t2m/T4942-37"
 brand = "brand/t2m"
 number = "T4942-37"
-name = "Circlips 2mm"
+name = "Circlip 2 mm"
+name_fr = "Circlips 2mm"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-circlips-2mm-8p-T4942_37" },
 ]
-notes = "The store prints the item code as T4942/37."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4942/37."
 pack_qty = 8
 category = "clip"
+equivalent_to = [
+  { spec = "spec/circlip/2mm", match = "functional" },
+]

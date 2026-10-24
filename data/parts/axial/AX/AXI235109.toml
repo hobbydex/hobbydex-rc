@@ -3,6 +3,7 @@ brand = "brand/axial"
 number = "AXI235109"
 name = "M3 x 14mm Button Head Screw"
 pack_qty = 10
+pack_qty_basis = "page"
 former_names = ["Button Head Screw M3x14mm"]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-m3-x-14mm-button-head-screw-10/AXI235109.html" },
@@ -11,7 +12,6 @@ gtin = "605482494523"
 equivalent_to = [
   { spec = "spec/screw/m3x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"
 fits = [
   { kit = "kit/axial/axp8", type = "direct", source = "doc/axial/horizon-part-pages" },

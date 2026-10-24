@@ -2,10 +2,14 @@ id = "part/tamiya/19804511"
 brand = "brand/tamiya"
 number = "19804511"
 name = "3x4mm Screw"
-former_names = ["Vis"]
+pack_qty = 10
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13333-19804511", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804511-3x4mm-SCREW-10pcs-58500", kind = "dealer" },
 ]
 category = "screw"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x4-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

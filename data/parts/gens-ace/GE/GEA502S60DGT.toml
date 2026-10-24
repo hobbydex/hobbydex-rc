@@ -6,7 +6,6 @@ gtin = "6928493313145"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-5000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/deans", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 2
@@ -19,3 +18,5 @@ weight_g = 251
 links = [
   { site = "Gens ace", url = "https://gensace.de/products/b-60c-5000-2s1p-bashing-hc112-deans-gt" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "maker"

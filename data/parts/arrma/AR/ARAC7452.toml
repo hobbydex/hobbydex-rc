@@ -3,6 +3,7 @@ brand = "brand/arrma"
 number = "ARAC7452"
 name = "O-Ring P-5 4.5x1.5mm Red"
 pack_qty = 4
+color = "red"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-o-ring-p-5-4.5x1.5mm-red-4/ARAC7452.html" },
 ]
@@ -21,3 +22,6 @@ fits = [
 ]
 former_ids = ["part/arrma/AR716011"]
 numbers = ["AR716011"]
+equivalent_to = [
+  { spec = "spec/o-ring/4.5x1.5", match = "functional" },
+]

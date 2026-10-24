@@ -2,17 +2,19 @@ id = "part/tamiya/50574"
 brand = "brand/tamiya"
 number = "50574"
 name = "2x8mm Countersunk Head Tapping Screw"
-former_names = ["Vis taraudeuse"]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+pack_qty = 10
+ocr_names = ["Vis taraudeuse"]
+notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. Finish read from the bag photo on Tamiya's product page (https://www.tamiya.com/english/products/50574/index.html)."
 name_source = "ocr"
 equivalent_to = [
   { spec = "spec/screw/m2x8-countersunk-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
+point = "flat"
 category = "screw"
 released = "1994-11"
 documents = ["doc/tamiya/newitems-month"]
 links = [
-  { site = "Tamiya", url = "https://www.tamiya.com/english/products/50574/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1236-50574", kind = "fan-site" },
+  { site = "Tamiya", url = "https://www.tamiya.com/english/products/50574/index.html" },
 ]
+finish = "bright zinc"

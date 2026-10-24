@@ -2,9 +2,11 @@ id = "part/yokomo/RP-101SHA"
 brand = "brand/yokomo"
 number = "RP-101SHA"
 name = "High-precision Titanium 4.8 Rod End Ball (S Size / 11.5mm)"
+pack_qty = 2
+pack_qty_basis = "page"
 name_ja = "高精度チタン製 Φ4.8 ロッドエンドボール(Sサイズ/11.5mm)"
 material = "titanium"
-category = "ball-end"
+category = "rod-end"
 fits = [
   { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
   { kit = "kit/yokomo/bd9", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD9 2019" },
@@ -18,5 +20,6 @@ fits = [
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-101sha" },
 ]
-notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja). Colour read from the maker's product photo."
 ball_mm = 4.8
+color = "silver"

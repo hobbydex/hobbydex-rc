@@ -3,6 +3,7 @@ brand = "brand/hpi"
 number = "100557"
 name = "FLAT HEAD SCREW M3x16mm (HEX SOCKET/8pcs)"
 pack_qty = 8
+pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/100557" },
 ]
@@ -16,5 +17,4 @@ fits = [
 equivalent_to = [
   { spec = "spec/screw/m3x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"

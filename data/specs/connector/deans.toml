@@ -1,7 +1,12 @@
 id = "spec/connector/deans"
 category = "connector"
-name = "Deans (T-plug)"
+name = "Deans Ultra Plug (T-plug)"
 family = "Deans"
 pins = 2
 anti_spark = false
 polarized = true
+current_a = 25
+current_a_source = "https://www.tme.com/ca/en/details/am1015-m/dc-power-connectors/amass/"
+burst_a = 50
+burst_a_source = "https://www.tme.com/ca/en/details/am1015-m/dc-power-connectors/amass/"
+notes = "W.S. Deans' Ultra Plug, called T-plug or T-connector when other makers build it. The rating is Amass's datasheet for its T-plug (AM-1015 and AM-1015E, V1.2): 25 A rated, 50 A momentary, contact resistance 0.45 mOhm, 12 AWG wire, DC 500 V. Amass also sells a plain T-plug (AM1009) and an insulated version (AM1015)."

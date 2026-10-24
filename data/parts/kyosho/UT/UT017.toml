@@ -3,10 +3,13 @@ brand = "brand/kyosho"
 number = "UT017"
 name = "M3x6 Tapered Washer(Silver/10pcs/ULTIMA)"
 pack_qty = 10
+pack_qty_basis = "name"
 gtin = "4548565376827"
 category = "washer-shim"
 documents = ["doc/kyosho/ut017-product-page"]
+color = "silver"
 fits = [
   { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
   { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-exploded-view" },
 ]

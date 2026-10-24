@@ -7,7 +7,6 @@ category_source = "curated"
 weight_g = 212
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-5500mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
-  { spec = "spec/connector/bullet-5mm", match = "functional" },
 ]
 c_rating = 120
 connector = "5mm bullet"
@@ -15,3 +14,7 @@ case = "shorty"
 links = [
   { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-drag-race-2s-120c-si-graphene-shorty-lipo-battery-7-4v-5500mah-w-5mm-connectors", kind = "dealer" },
 ]
+chemistry = "lipo"
+cells = 2
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

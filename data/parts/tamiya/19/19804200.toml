@@ -2,15 +2,16 @@ id = "part/tamiya/19804200"
 brand = "brand/tamiya"
 number = "19804200"
 name = "3x10mm Countersunk Head Screw"
-former_names = ["13x10mm Countersunk Head Screw", "3x10mm Countersunk Head Screw (Black)"]
+pack_qty = 10
+ocr_names = ["3x10mm Countersunk Head Screw (Black)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 equivalent_to = [
   { spec = "spec/screw/m3x10-countersunk-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13087-19804200", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804200-3x10mmCountersunkHeadScrew10", kind = "dealer" },
 ]
 finish = "black"
 name_source = "ocr"

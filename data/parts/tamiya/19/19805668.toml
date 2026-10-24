@@ -2,9 +2,15 @@ id = "part/tamiya/19805668"
 brand = "brand/tamiya"
 number = "19805668"
 name = "2.6x12mm Tapping Screw"
+pack_qty = 4
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6451-19805668", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805668-26x12mm-Tapping-Screw4-pcs", kind = "dealer" },
 ]
+point = "flat"
 category = "screw"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x12-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

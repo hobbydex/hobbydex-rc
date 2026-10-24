@@ -2,10 +2,11 @@ id = "part/xray/911410"
 brand = "brand/xray"
 number = "911410"
 name = "HEX SCREW FLANGED SH M4x10"
-pack_qty = 10
-former_names = ["903308 HEX SCREW FLANGED 358224 SH M4x10 (10) 358032"]
-equivalent_to = [
-  { spec = "spec/screw/m4x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1354" },
 ]
-material = "steel"
+pack_qty = 10
+equivalent_to = [
+  { spec = "spec/screw/m4x10-flanged-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
 category = "screw"

@@ -2,7 +2,7 @@ id = "part/tamiya/53008"
 brand = "brand/tamiya"
 number = "53008"
 name = "1150 Ball Bearing"
-former_names = ["1 1150 Ball Bearing", "1150 Bail Bearing", "1150 Sealed Bali Bearing Set", "1150 Sealed Ball Bearing", "1150 Sealed Ball Bearing Set", "Bearing"]
+ocr_names = ["1150 Sealed Ball Bearing", "1150 Sealed Ball Bearing Set"]
 fits = [
   { kit = "kit/tamiya/bb-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/df-02", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -24,6 +24,7 @@ fits = [
   { kit = "kit/tamiya/tt-02b", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/tt-02ft", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
 ]
+former_ids = ["part/tamiya/63008"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "bearing"
 links = [
@@ -33,7 +34,6 @@ links = [
 equivalent_to = [
   { spec = "spec/bearing/5x11x4", match = "functional", notes = "Tamiya size code 1150: 11 mm outer, 5 mm bore, 4 mm wide" },
 ]
-material = "steel"
 name_source = "ocr"
 released = "1988-08"
 documents = ["doc/tamiya/newitems-month"]

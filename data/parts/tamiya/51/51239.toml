@@ -2,7 +2,8 @@ id = "part/tamiya/51239"
 brand = "brand/tamiya"
 number = "51239"
 name = "1050 Ball Bearing"
-former_names = ["1 1050 Ball Bearing", "1050 Ball Bearing (BA16x4)", "1050 Ball Bearing Set", "1050 Bearing (B", "1060 Ball Bearing", "51239*1 1050 Ball Bearing B Parts"]
+pack_qty = 4
+ocr_names = ["1050 Ball Bearing Set", "1060 Ball Bearing", "51239*1 1050 Ball Bearing B Parts"]
 fits = [
   { kit = "kit/tamiya/bb-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/db01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -28,6 +29,7 @@ fits = [
   { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/xv-02rs", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
 ]
+former_ids = ["part/tamiya/61239"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "bearing"
 links = [
@@ -37,7 +39,6 @@ links = [
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "close", notes = "Tamiya size code 1050: 10 mm outer, 5 mm bore, 4 mm wide (usual width for this size, not confirmed for Tamiya)" },
 ]
-material = "steel"
 name_source = "ocr"
 released = "2006-03"
 documents = ["doc/tamiya/newitems-month"]

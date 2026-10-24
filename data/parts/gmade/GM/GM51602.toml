@@ -16,3 +16,10 @@ category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m4-wheel", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+related = [
+  { part = "part/gmade/GM51117", relation = "use-with" },
+  { part = "part/gmade/GM70193", relation = "use-with" },
+  { part = "part/gmade/GM70203", relation = "use-with" },
+  { part = "part/gmade/GM70213", relation = "use-with" },
+  { part = "part/gmade/GM70273", relation = "use-with" },
+]

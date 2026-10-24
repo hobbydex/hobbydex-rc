@@ -10,7 +10,6 @@ links = [
 ]
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-5300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-  { spec = "spec/connector/xt90", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 3
@@ -25,3 +24,5 @@ fits = [
   { kit = "kit/redcat/tr-mt10e", type = "direct", source = "doc/redcat/store" },
   { kit = "kit/redcat/tr-mt8e", type = "direct", source = "doc/redcat/store" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

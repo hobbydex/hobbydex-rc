@@ -6,7 +6,6 @@ gtin = "6928493309407"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-6500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/xt90", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 3
@@ -19,3 +18,5 @@ weight_g = 418
 links = [
   { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-6500mah-11-1v-60c-3s1p-lipo-battery-pack-with-xt90-bashing-series" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

@@ -2,9 +2,14 @@ id = "part/tamiya/19808157"
 brand = "brand/tamiya"
 number = "19808157"
 name = "2.6x14mm Screw"
+pack_qty = 5
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18447-19808157", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19808157-26x14mm-Screw-5-pcs", kind = "dealer" },
 ]
 category = "screw"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x14-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

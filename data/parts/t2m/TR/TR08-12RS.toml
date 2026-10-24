@@ -1,15 +1,17 @@
 id = "part/t2m/TR08-12RS"
 brand = "brand/t2m"
 number = "TR08-12RS"
-name = "Roulement 8x12x3,5"
+name = "8x12x3.5 bearing"
+name_fr = "Roulement 8x12x3,5"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-roulement-8x12x3-5-10p-TR08_12RS" },
 ]
-notes = "The store prints the item code as TR08/12RS."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as TR08/12RS."
 pack_qty = 10
 equivalent_to = [
   { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 seal = "rubber"
+category = "bearing"

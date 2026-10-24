@@ -2,9 +2,14 @@ id = "part/kyosho/VZ225"
 brand = "brand/kyosho"
 number = "VZ225"
 name = "Flanged Ball 5.8mm (RRR)"
+pack_qty = 4
 fits = [
   { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
 ]
 category = "ball-end"
 ball_mm = 5.8
 ball_type = "through-hole"
+equivalent_to = [
+  { spec = "spec/ball-end/5.8mm-through-hole", match = "functional" },
+]
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/vz225.html" } ]

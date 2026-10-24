@@ -3,6 +3,7 @@ brand = "brand/hosim"
 number = "X6-1500-3PCS"
 name = "RC Car Battery 3PCS 1500 mAh 7.4V Li-Po Battery For X03 X05 X06 X15 X16 X07 X08 X17 X27 X25"
 pack_qty = 3
+pack_qty_basis = "name"
 applies_to = "X03 X05 X06 X15 X16 X07 X08 X17 X27 X25"
 fits = [
   { kit = "kit/hosim/x03", type = "direct", source = "doc/hosim/store" },
@@ -26,3 +27,5 @@ links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-3pcs-1500-mah-7-4v-li-po-battery-for-x03-x05-x06-x15-x16-x07-x08-x17-x27-x25" },
 ]
 category = "battery"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

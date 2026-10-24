@@ -1,12 +1,17 @@
 id = "part/tamiya/19804169"
 brand = "brand/tamiya"
 number = "19804169"
-name = "3x10mm Screw (Black) (MAT x1"
-former_names = ["3x10mm Screw"]
+name = "3x10mm Screw (Black)"
+ocr_names = ["3x10mm Screw", "3x10mm Screw (Black) (MAT x1"]
 color = "black"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13060-19804169", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804169-Sticker-Bag-for-43510", kind = "dealer" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]
+finish = "black"

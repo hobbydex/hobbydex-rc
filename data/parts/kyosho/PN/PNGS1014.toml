@@ -2,7 +2,7 @@ id = "part/kyosho/PNGS1014"
 brand = "brand/kyosho"
 number = "PNGS1014"
 name = "Steel Pinion Gear (14T/1.0M/φ5.0)"
-former_names = ["LW Al Motor Mount (Long Motor/MP10Te)", "Stéel Pinion Gear (14T/1.0M/ ゅ 5.0)"]
+former_names = ["LW Al Motor Mount (Long Motor/MP10Te)"]
 category = "pinion"
 equivalent_to = [
   { spec = "spec/pinion/mod1-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
@@ -16,3 +16,4 @@ fits = [
   { kit = "kit/kyosho/inferno-mp10e", type = "replaces", replaces = "part/kyosho/97044-14", source = "doc/kyosho/34113t1-inf-mp10e-spop", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "steel"
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/pngs1014.html" } ]

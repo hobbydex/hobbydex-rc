@@ -6,10 +6,13 @@ category = "battery"
 category_source = "curated"
 equivalent_to = [
   { spec = "spec/battery/lihv-2s-8600mah", match = "functional", source = "doc/protek-rc/rc-visions-product-pages", notes = "Chemistry, cells and capacity from the product name; check size and plug" },
-  { spec = "spec/connector/bullet-5mm", match = "functional" },
 ]
 c_rating = 130
 connector = "5mm bullet"
 links = [
   { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-2s-130c-low-ir-si-graphene-hv-lipo-battery-7-6v-8600mah-w-5mm-connectors-roar-approved", kind = "dealer" },
 ]
+chemistry = "lihv"
+cells = 2
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

@@ -14,4 +14,9 @@ fits = [
   { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/30935-mm01-infernogt2veracespec-spop" },
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x25-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+  { spec = "spec/pin/3x25", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

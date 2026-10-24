@@ -2,10 +2,15 @@ id = "part/tamiya/19805853"
 brand = "brand/tamiya"
 number = "19805853"
 name = "3x8mm Screw"
-former_names = ["3x8mm Screw (Black)"]
+pack_qty = 5
+ocr_names = ["3x8mm Screw (Black)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6665-19805853", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805853-3x8mm-Screw-5-pcs", kind = "dealer" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

@@ -3,8 +3,12 @@ brand = "brand/losi"
 number = "LOSA6958"
 name = "6x12x4 BB (2) with Nylon Retainer"
 pack_qty = 2
+pack_qty_basis = "name"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-6x12x4-bb-2-with-nylon-retainer/LOSA6958.html" },
 ]
 category = "bearing"
 material = "plastic"
+equivalent_to = [
+  { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

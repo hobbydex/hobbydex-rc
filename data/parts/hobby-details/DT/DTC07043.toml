@@ -9,6 +9,9 @@ links = [
   { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=90" },
 ]
 equivalent_to = [
-  { spec = "spec/connector/servo-jr-futaba", match = "functional" },
-  { spec = "spec/connector/xt60", match = "functional" },
+  { spec = "spec/wire/22awg", match = "functional" },
 ]
+wire_awg = 22
+insulation = "silicone"
+length_mm = 150
+connectors = ["XT60", "Futaba"]

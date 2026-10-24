@@ -5,6 +5,7 @@ name = "M2.6x 8mm Button Head Socket Screw (with Thread Lock Agent) 4 pcs"
 name_ja = "M2.6x 8mm ボタンヘッド ソケットスクリュー(ねじロック剤付) 4本入"
 status = "discontinued"
 pack_qty = 4
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
 ]
@@ -16,4 +17,3 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.6x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"

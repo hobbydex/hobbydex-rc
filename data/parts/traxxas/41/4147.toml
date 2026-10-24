@@ -15,3 +15,12 @@ fits = [
 links = [
   { site = "Traxxas", url = "https://traxxas.com/4147-5-mm-nylon-lock-nuts-8" },
 ]
+related = [
+  { part = "part/traxxas/4966", relation = "use-with" },
+  { part = "part/traxxas/5172", relation = "use-with" },
+  { part = "part/traxxas/5372", relation = "use-with" },
+  { part = "part/traxxas/5476X", relation = "use-with" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m5-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

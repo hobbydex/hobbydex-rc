@@ -2,10 +2,18 @@ id = "part/tamiya/19805755"
 brand = "brand/tamiya"
 number = "19805755"
 name = "3x22mm Screw Pin"
-former_names = ["BA9 Ball connector Kwaliteit"]
+pack_qty = 4
+ocr_names = ["BA9 Ball connector Kwaliteit"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x22-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+  { spec = "spec/pin/3x22", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6444-19805755", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805755-3x22mm-Screw-Pin-4-pcs", kind = "dealer" },
+  { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x22mm-screw-pin-57709/", kind = "maker" },
 ]
 name_source = "ocr"

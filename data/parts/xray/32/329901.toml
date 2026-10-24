@@ -2,8 +2,14 @@ id = "part/xray/329901"
 brand = "brand/xray"
 number = "329901"
 name = "2WD/4WD REAR WHEEL AERODISK WITH 12MM HEX - V2 - WHITE"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6852" },
+]
 pack_qty = 10
 former_names = ["2WD/4WD REAR WHEEL AERODISK 12MM HEX - V2 - WHITE"]
 category = "wheel"
 position = "rear"
 color = "white"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

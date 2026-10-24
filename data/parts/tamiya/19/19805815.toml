@@ -2,6 +2,11 @@ id = "part/tamiya/19805815"
 brand = "brand/tamiya"
 number = "19805815"
 name = "3x50mm Screw"
+pack_qty = 4
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x50-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]
+links = [ { site = "tamico.de", url = "https://tamico.de/Tamiya-19805815-3x50mm-Screw-4-pcs", kind = "dealer" } ]

@@ -2,10 +2,15 @@ id = "part/tamiya/19804394"
 brand = "brand/tamiya"
 number = "19804394"
 name = "2.6x10mm Binding Screw"
-former_names = ["2.5x10mm Binding Screw (MAG x5)", "2.6x10 Binding Screw", "2.6x10mm Binding Screw (BD4x5)", "2.6x10mm Binding Screw (Black)", "2.6x10mm Binding Scrow (Black)", "2x10mm Screw 2 6x10mm Binding Screw (Black)", "3x(5.5)x5.0mm Spacer (Blue) 2 6x10mm Bindina Screw (Black)", "Vis 5mヒローホール BA11 x6 Schraubzapfen Screw pin Adjuster Einstellstuck"]
+pack_qty = 5
+ocr_names = ["2.6x10 Binding Screw", "2.6x10mm Binding Screw (Black)", "2x10mm Screw 2 6x10mm Binding Screw (Black)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13256-19804394", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804394-26x10mm-Binding-Screw-BK5pcs", kind = "dealer" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x10-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

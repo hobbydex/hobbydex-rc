@@ -1,8 +1,12 @@
 id = "part/t2m/T4985-31"
 brand = "brand/t2m"
 number = "T4985-31"
-name = "Vis tête ronde M3X12mm"
+name = "Round head screw M3x12 mm"
+name_fr = "Vis tête ronde M3X12mm"
 source = "doc/t2m/t2m-shop"
-notes = "The store prints the item code as T4985/31."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4985/31."
 pack_qty = 8
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

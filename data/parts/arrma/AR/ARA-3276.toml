@@ -3,6 +3,8 @@ brand = "brand/arrma"
 number = "ARA-3276"
 name = "12mm Metal Wheel Hex Set (4), Black"
 pack_qty = 4
+pack_qty_basis = "name"
+color = "black"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-12mm-metal-wheel-hex-set-4-black/ARA-3276.html" },
 ]
@@ -16,4 +18,7 @@ fits = [
   { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/arrma/quake-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/arrma/typhon-grom", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]

@@ -3,6 +3,7 @@ brand = "brand/fast-eddy"
 number = "TFE8570"
 name = "HPI Jumpshot ST V2 Yellow Sealed Bearing Kit"
 gtin = "758913685356"
+color = "yellow"
 includes = [
   { spec = "spec/bearing/4x8x3", qty = 1 },
   { spec = "spec/bearing/5x10x4", qty = 2 },
@@ -11,7 +12,6 @@ includes = [
 ]
 category = "bearing"
 category_source = "curated"
-material = "steel"
 seal = "rubber"
 fits = [
   { kit = "kit/hpi/jumpshot-st", releases = ["release/hpi/120082", "release/hpi/160262"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Jumpshot ST V2 Yellow" },
@@ -19,3 +19,5 @@ fits = [
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/hpi-jumpshot-st-v2-yellow-sealed-bearing-kit" },
 ]
+pack_qty = 14
+pack_qty_basis = "includes"

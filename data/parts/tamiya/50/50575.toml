@@ -2,13 +2,18 @@ id = "part/tamiya/50575"
 brand = "brand/tamiya"
 number = "50575"
 name = "2.6x10mm Tapping Screw"
-former_names = ["2.6x10mm Tapping Screw (BD4x5)", "2.6x10mm Tapping Sorew", "2.6x10mr Screw", "2.6x1Omm Tapping Screw", "3x3mm Grub Screw", "5U5/5 2.6x10mm Tapping Screw 3mm Grub Screw", "Schraubenschraube Vis decolletee", "Vis taraudeuse"]
+pack_qty = 5
+ocr_names = ["2.6x10mr Screw", "2.6x1Omm Tapping Screw", "3x3mm Grub Screw", "Schraubenschraube Vis decolletee", "Vis taraudeuse"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50575/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1237-50575", kind = "fan-site" },
 ]
+point = "flat"
 category = "screw"
 name_source = "ocr"
 released = "1994-11"
 documents = ["doc/tamiya/newitems-month"]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x10-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

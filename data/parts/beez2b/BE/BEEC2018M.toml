@@ -4,7 +4,11 @@ number = "BEEC2018M"
 name = "Connector : 4.0mm gold plated Male plug"
 pack_qty = 10
 gtin = "5404039201394"
+color = "gold"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/1265-beec2018m-BEEC2018M-5404039201394", kind = "dealer" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/bullet-4mm", match = "functional" },
+]

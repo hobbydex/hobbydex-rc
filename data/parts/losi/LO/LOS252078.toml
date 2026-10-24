@@ -4,13 +4,18 @@ number = "LOS252078"
 name = "Wheel Nuts, Black"
 pack_qty = 4
 applies_to = "Super Baja Rey"
+color = "black"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-wheel-nuts-black-4-super-baja-rey/LOS252078.html" },
 ]
-former_names = ["Wheel Nut, Black"]
 gtin = "605482828489"
 category = "nut"
 fits = [
   { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+related = [
+  { part = "part/losi/LOS252129", relation = "use-with" },
+  { part = "part/losi/LOS45027", relation = "use-with" },
+  { part = "part/losi/LOS45028", relation = "use-with" },
 ]

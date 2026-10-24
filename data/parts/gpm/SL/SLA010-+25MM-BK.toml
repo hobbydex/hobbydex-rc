@@ -3,6 +3,8 @@ brand = "brand/gpm"
 number = "SLA010-+25MM-BK"
 name = "GPM Black Aluminium Traxxas Slash 4×4 12mm Hex Adaptors W/ +25mm Off-Set 4Pcs"
 pack_qty = 4
+pack_qty_basis = "name"
+color = "black"
 fits = [
   { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/gpm/store" },
 ]
@@ -11,3 +13,6 @@ links = [
 ]
 category = "drivetrain"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

@@ -1,10 +1,15 @@
 id = "part/t2m/T4942-63"
 brand = "brand/t2m"
 number = "T4942-63"
-name = "Vis tête ronde 4x6/5x6,3mm"
+name = "Round head screw 4x6 / 5x6.3 mm"
+name_fr = "Vis tête ronde 4x6/5x6,3mm"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-vis-tete-ronde-4x6-5x6-3mm-12p-T4942_63" },
 ]
-notes = "The store prints the item code as T4942/63."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4942/63."
 pack_qty = 12
+equivalent_to = [
+  { spec = "spec/screw/m5x6.3-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"

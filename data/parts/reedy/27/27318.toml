@@ -7,7 +7,6 @@ category_source = "curated"
 gtin = "784695273184"
 equivalent_to = [
   { spec = "spec/battery/lihv-2s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-  { spec = "spec/connector/bullet-5mm", match = "functional" },
 ]
 chemistry = "lihv"
 cells = 2
@@ -21,3 +20,5 @@ documents = ["doc/reedy/lipo-manual-5-31-17-english-french"]
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/wolfpack-hv-lipo-4200mah-50c-7-6v-shorty/" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

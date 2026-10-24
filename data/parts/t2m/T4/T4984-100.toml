@@ -1,10 +1,16 @@
 id = "part/t2m/T4984-100"
 brand = "brand/t2m"
 number = "T4984-100"
-name = "Vis ronde BTR 4x36mm"
+name = "BTR round head screw 4x36 mm"
+name_fr = "Vis ronde BTR 4x36mm"
 pack_qty = 6
+pack_qty_basis = "page"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-vis-ronde-btr-4x36mm-6pcs-T4984_100" },
 ]
-notes = "The store prints the item code as T4984/100."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4984/100."
+equivalent_to = [
+  { spec = "spec/screw/m4x36-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"

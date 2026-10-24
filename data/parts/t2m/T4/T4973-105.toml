@@ -1,6 +1,11 @@
 id = "part/t2m/T4973-105"
 brand = "brand/t2m"
 number = "T4973-105"
-name = "Vis tête fraisée M2,5X8mm"
+name = "Countersunk screw M2.5x8 mm"
+name_fr = "Vis tête fraisée M2,5X8mm"
 source = "doc/t2m/t2m-shop"
-notes = "The store prints the item code as T4973/105."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4973/105."
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"

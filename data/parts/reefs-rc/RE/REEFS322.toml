@@ -10,4 +10,9 @@ fits = [
 links = [
   { site = "Reefs RC", url = "https://reefsrc.com/products/m2-5-x-13mm-screw-pin" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/2.5x13-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+  { spec = "spec/pin/2.5x13", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

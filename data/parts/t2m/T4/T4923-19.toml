@@ -1,6 +1,11 @@
 id = "part/t2m/T4923-19"
 brand = "brand/t2m"
 number = "T4923-19"
-name = "Vis tête ronde 2 x 8 mm"
+name = "Round head screw 2 x 8 mm"
+name_fr = "Vis tête ronde 2 x 8 mm"
 source = "doc/t2m/t2m-shop"
-notes = "The store prints the item code as T4923/19."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4923/19."
+equivalent_to = [
+  { spec = "spec/screw/m2x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"

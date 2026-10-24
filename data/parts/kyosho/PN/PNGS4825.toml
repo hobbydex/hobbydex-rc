@@ -3,7 +3,6 @@ brand = "brand/kyosho"
 number = "PNGS4825"
 name = "Steel Pinion Gear (25T-48P)"
 pack_qty = 48
-former_names = ["Steel Pinion Gear (25T-48P)"]
 category = "pinion"
 equivalent_to = [
   { spec = "spec/pinion/48dp-25t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
@@ -27,3 +26,4 @@ fits = [
   { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
   { kit = "kit/kyosho/javelin", type = "replaces", replaces = "part/kyosho/FA304-25", source = "doc/kyosho/30618-javelin-spare-and-option-parts", notes = "Same part in another material (link_upgrades.py)" },
 ]
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/pngs4825.html" } ]

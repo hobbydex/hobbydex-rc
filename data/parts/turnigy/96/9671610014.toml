@@ -5,7 +5,6 @@ name = "3500mAh 2S 60C LiPo Pack w/XT60 Connector"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-3500mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/xt60", match = "functional" },
 ]
 links = [
   { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-3500mah-2s-60c-lipo-pack-w-xt60-connector.html" },
@@ -15,3 +14,5 @@ cells = 2
 capacity_mah = 3500
 c_rating = 60
 connector = "XT60"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

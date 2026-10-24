@@ -31,6 +31,28 @@ jobs:
       - name: Ids are permanent (none removed without former_ids or retired.toml)
         # compare with where the branch left main, so records merged to main since then do not count as removed
         run: python3 -I tools/check_ids.py ${{ github.event_name == 'pull_request' && format('$(git merge-base origin/{0} HEAD)', github.base_ref) || 'HEAD^' }}
+      - name: No data regressions (a removed or changed value a source stated)
+        # reports on every PR; fails unless the PR body has a "Regressions: expected" line with a reason
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          printf '%s\n' "$PR_BODY" > "$RUNNER_TEMP/pr-body.md"
+          rc=0
+          python3 -I tools/regression_check.py --base "origin/$BASE_REF" --head HEAD \
+            --body "$RUNNER_TEMP/pr-body.md" --markdown "$RUNNER_TEMP/regression-summary.md" \
+            --report "$RUNNER_TEMP/regression-report.tsv" || rc=$?
+          cat "$RUNNER_TEMP/regression-summary.md" >> "$GITHUB_STEP_SUMMARY"
+          exit $rc
+      - name: Keep the regression report as a build artifact
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: regression-report
+          path: ${{ runner.temp }}/regression-report.tsv
+          retention-days: 14
+          if-no-files-found: ignore
       - name: Build the JSON export
         run: python3 -I tools/export.py dist/hobbydex-rc.json
       - name: Keep the export as a build artifact

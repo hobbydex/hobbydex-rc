@@ -12,8 +12,12 @@ fits = [
 ]
 category = "screw"
 links = [
+  { site = "Tamiya", url = "https://www.tamiya.com/english/products/51632/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18960-51632", kind = "fan-site" },
 ]
 material = "steel"
 released = "2019-08"
 documents = ["doc/tamiya/newitems-month"]
+equivalent_to = [
+  { spec = "spec/screw/m3x16-hex-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (hex head = hexagon head with a JIS cross recess); size from the name" },
+]

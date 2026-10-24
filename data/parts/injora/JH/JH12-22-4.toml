@@ -3,8 +3,12 @@ brand = "brand/injora"
 number = "JH12-22-4"
 name = "12mm Heavy Brass Wheel Hex Hub Extenders Adapters for 1.9 2.2 Beadlock Wheel Rims (4pcs 22mm)"
 pack_qty = 4
+pack_qty_basis = "name"
 material = "brass"
 links = [
   { site = "Injora", url = "https://www.injora.com/products/heavy-brass-wheel-hex-hub-extenders-adapters-for-1-9-2-2-beadlock-wheel-rims?variant=48257905000706" },
 ]
 category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

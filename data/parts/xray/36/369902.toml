@@ -2,7 +2,13 @@ id = "part/xray/369902"
 brand = "brand/xray"
 number = "369902"
 name = "4WD FRONT WHEEL AERODISK WITH 12MM HEX - WHITE"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5677" },
+]
 pack_qty = 10
 category = "wheel"
 position = "front-4wd"
 color = "white"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

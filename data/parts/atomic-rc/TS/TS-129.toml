@@ -3,6 +3,7 @@ brand = "brand/atomic-rc"
 number = "TS-129"
 name = "3 x 6mm Set Screw"
 pack_qty = 6
+pack_qty_basis = "page"
 documents = ["doc/atomic-rc/site"]
 links = [
   { site = "Atomic R/C", url = "https://www.rcatomic.com/atomic/index.php?main_page=product_info&products_id=5265" },
@@ -10,5 +11,4 @@ links = [
 equivalent_to = [
   { spec = "spec/screw/m3x6-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"

@@ -6,7 +6,6 @@ gtin = "6928493314296"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-2200mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/ec2", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 3
@@ -18,3 +17,5 @@ weight_g = 166
 links = [
   { site = "Gens ace", url = "https://gensace.de/products/gea223s35e2gt" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

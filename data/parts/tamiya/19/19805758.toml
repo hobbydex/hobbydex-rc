@@ -1,11 +1,16 @@
 id = "part/tamiya/19805758"
 brand = "brand/tamiya"
 number = "19805758"
+former_ids = ["part/tamiya/19605758"]
 name = "2mm Washer"
-former_names = ["12mm Washer", "2mm Washer (BC4x5)", "2mm Washer (BCR-x0)", "2mm Washer (Large)", "2x6mm Washer", "Medium Flapping Lever (2mm) (2mm Washer (x5))"]
+pack_qty = 5
+ocr_names = ["2mm Washer (Large)", "2x6mm Washer"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "washer-shim"
+equivalent_to = [{ spec = "spec/washer/2.2x6x0.3", match = "close", notes = "Closest standard size; Tamiya cites no standard; outer diameter measured from the manual drawing (doc/tamiya/47500-manual, doc/tamiya/47503-manual, doc/tamiya/47506-manual, doc/tamiya/56376-manual, doc/tamiya/58570-manual, doc/tamiya/58571-manual): 6.0 mm" }]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6452-19805758", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805758-2x6mm-Washer-5-pcs", kind = "dealer" },
+  { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-2mm-washer-57709/", kind = "maker" },
 ]
 name_source = "ocr"

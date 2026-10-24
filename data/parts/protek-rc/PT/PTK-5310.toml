@@ -8,5 +8,7 @@ links = [
   { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-heavy-duty-14awg-xt60", kind = "dealer" },
 ]
 equivalent_to = [
-  { spec = "spec/connector/xt60", match = "functional" },
+  { spec = "spec/wire/14awg", match = "functional" },
 ]
+wire_awg = 14
+connectors = ["XT60"]

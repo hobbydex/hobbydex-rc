@@ -6,7 +6,6 @@ gtin = "6928493313893"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lihv-2s-5100mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/bullet-5mm", match = "functional" },
 ]
 chemistry = "lihv"
 cells = 2
@@ -19,3 +18,5 @@ weight_g = 190
 links = [
   { site = "Gens ace", url = "https://gensace.de/products/gea51002s14m5" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

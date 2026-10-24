@@ -3,11 +3,10 @@ brand = "brand/injora"
 number = "ZH1.5-JR"
 name = "RC Adapter Cable, ZH1.5 to JR, ZH1.5 to Futaba (4pcs ZH1.5 Male to JR Male)"
 pack_qty = 4
+pack_qty_basis = "name"
 released = "2026-10"
 links = [
   { site = "Injora", url = "https://www.injora.com/products/injora-rc-adapter-cable-zh1-5-to-jr-zh1-5-to-futaba?variant=50678548955394" },
 ]
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/servo-jr-futaba", match = "functional" },
-]
+connectors = ["JR"]

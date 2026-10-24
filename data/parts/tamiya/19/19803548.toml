@@ -6,3 +6,14 @@ color = "blue"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "nut"
 name_source = "ocr"
+related = [
+  { part = "part/tamiya/19804299", relation = "use-with" },
+  { part = "part/tamiya/19804300", relation = "use-with" },
+  { part = "part/tamiya/19804801", relation = "use-with" },
+  { part = "part/tamiya/51580", relation = "use-with" },
+  { part = "part/tamiya/51581", relation = "use-with" },
+  { part = "part/tamiya/54668", relation = "use-with" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -13,7 +13,6 @@ links = [
 ]
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-2200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-  { spec = "spec/connector/deans", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 3
@@ -21,3 +20,5 @@ capacity_mah = 2200
 c_rating = 40
 connector = "Deans"
 category = "battery"
+balance_connector = "JST-XH"
+balance_connector_basis = "maker"

@@ -8,3 +8,8 @@ links = [
 color = "red"
 range = "yeah-racing/wpt-0137-colours"
 category = "wire"
+equivalent_to = [
+  { spec = "spec/wire/12awg", match = "functional" },
+]
+wire_awg = 12
+length_mm = 1000

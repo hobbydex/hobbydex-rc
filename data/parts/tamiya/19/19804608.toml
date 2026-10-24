@@ -2,9 +2,14 @@ id = "part/tamiya/19804608"
 brand = "brand/tamiya"
 number = "19804608"
 name = "3x12mm Flat Screw"
+pack_qty = 10
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13404-19804608", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804608-AP3x12mmSCREW-LAMIMATE10pcs58519", kind = "dealer" },
 ]
 name_source = "ocr"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

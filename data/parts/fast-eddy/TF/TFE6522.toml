@@ -10,7 +10,6 @@ includes = [
 ]
 category = "bearing"
 category_source = "curated"
-material = "steel"
 seal = "rubber"
 fits = [
   { kit = "kit/axial/scx24", releases = ["release/axial/axi-3408t1", "release/axial/axi-3408t2", "release/axial/axi00001t1", "release/axial/axi00001t2", "release/axial/axi00001v2t3", "release/axial/axi00001v2t4"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the SCX24 1967 C10" },
@@ -18,3 +17,5 @@ fits = [
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/axial-scx24-1967-c10-sealed-bearing-kit" },
 ]
+pack_qty = 20
+pack_qty_basis = "includes"

@@ -9,7 +9,6 @@ capacity_mah = 4000
 cells = 2
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-4000mah", match = "functional", source = "doc/robitronic/shop-brand-listing", notes = "Chemistry, cells and capacity from Robitronic's name; check size and plug" },
-  { spec = "spec/connector/deans", match = "functional" },
 ]
 c_rating = 45
 connector = "Deans"
@@ -19,3 +18,5 @@ gtin = "4046032091032"
 links = [
   { site = "Robitronic", url = "https://shop.robitronic.com/en/robitronic-lipo-battery-4000mah-2s-45c-r05226" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "maker"

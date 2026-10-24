@@ -3,6 +3,7 @@ brand = "brand/thunder-tiger"
 number = "PD10-0057"
 name = "FHCS M. SCREW(10)M25*14"
 pack_qty = 10
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/thunder-tiger/k-rock", type = "direct", source = "doc/thunder-tiger/shop" },
 ]
@@ -13,4 +14,3 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.5x14-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"

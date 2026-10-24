@@ -2,10 +2,14 @@ id = "part/tamiya/19804885"
 brand = "brand/tamiya"
 number = "19804885"
 name = "3x20mm Tapping Screw"
-former_names = ["3x20mm Tapping Screw (Black)"]
+ocr_names = ["3x20mm Tapping Screw (Black)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+point = "flat"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18469-19804885", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

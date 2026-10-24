@@ -1,7 +1,8 @@
 id = "part/t2m/T1342002C"
 brand = "brand/t2m"
 number = "T1342002C"
-name = "Accu LiPo 2S 4200 mAh 40C"
+name = "LiPo battery 2S 4200 mAh 40C"
+name_fr = "Accu LiPo 2S 4200 mAh 40C"
 source = "doc/t2m/t2m-shop"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
@@ -11,3 +12,7 @@ cells = 2
 capacity_mah = 4200
 c_rating = 40
 category = "battery"
+notes = "English translated by Hobbydex from the maker's French name (name_fr)"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+links = [ { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-accu-lipo-2s-4200-mah-40c-T1342002C" } ]

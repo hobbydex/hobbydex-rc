@@ -1,8 +1,11 @@
 id = "part/tamiya/19806629"
 brand = "brand/tamiya"
 number = "19806629"
-name = "3x12mm Tapping Sorew (MAS x4)"
-former_names = ["aman"]
-pack_qty = 4
+name = "3x12mm Tapping Screw"
+ocr_names = ["3x12mm Tapping Sorew (MAS x4)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"

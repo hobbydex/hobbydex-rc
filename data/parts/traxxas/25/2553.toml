@@ -3,10 +3,10 @@ brand = "brand/traxxas"
 number = "2553"
 name = "Screws, 3x15mm countersunk machine (6) (hex drive)"
 pack_qty = 6
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/screw/m3x15-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"
 fits = [
   { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },

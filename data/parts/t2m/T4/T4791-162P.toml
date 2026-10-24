@@ -1,11 +1,15 @@
 id = "part/t2m/T4791-162P"
 brand = "brand/t2m"
 number = "T4791-162P"
-name = "Vis metal fraisee M3x8"
+name = "Metal countersunk screw M3x8"
+name_fr = "Vis metal fraisee M3x8"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-vis-metal-fraisee-m3x8-10p-T4791_162P" },
 ]
-notes = "The store prints the item code as T4791/162P."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4791/162P."
 pack_qty = 10
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

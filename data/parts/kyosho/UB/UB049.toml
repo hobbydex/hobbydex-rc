@@ -2,7 +2,7 @@ id = "part/kyosho/UB049"
 brand = "brand/kyosho"
 number = "UB049"
 name = "4.8mm Ball Stud (L)"
-former_names = ["4.8mm Ball Stud (L/4pcs)", "48mm Ball Stud (L/4pcs)"]
+former_names = ["48mm Ball Stud (L/4pcs)"]
 pack_qty = 4
 gtin = "4548565494828"
 category = "ball-end"
@@ -15,3 +15,7 @@ fits = [
   { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
 ]
 ball_mm = 4.8
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ub049.html" } ]

@@ -1,11 +1,15 @@
 id = "part/t2m/T4985-32"
 brand = "brand/t2m"
 number = "T4985-32"
-name = "Vis tête ronde M3X10mm"
+name = "Round head screw M3x10 mm"
+name_fr = "Vis tête ronde M3X10mm"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-vis-tete-ronde-m3x10mm-8p-T4985_32" },
 ]
-notes = "The store prints the item code as T4985/32."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4985/32."
 pack_qty = 8
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

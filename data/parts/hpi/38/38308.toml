@@ -3,6 +3,7 @@ brand = "brand/hpi"
 number = "38308"
 name = "Wheel nut M18xHex24mm"
 pack_qty = 4
+pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/38308" },
 ]
@@ -10,3 +11,14 @@ fits = [
   { kit = "kit/hpi/savage", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "nut"
+related = [
+  { part = "part/hpi/102530", relation = "use-with" },
+  { part = "part/hpi/114341", relation = "use-with" },
+  { part = "part/hpi/120277", relation = "use-with" },
+  { part = "part/hpi/160141", relation = "use-with" },
+  { part = "part/hpi/38305", relation = "use-with" },
+  { part = "part/hpi/38306", relation = "use-with" },
+  { part = "part/hpi/86066", relation = "use-with" },
+  { part = "part/hpi/86804", relation = "use-with" },
+  { part = "part/hpi/87042", relation = "use-with" },
+]

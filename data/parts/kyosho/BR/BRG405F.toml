@@ -2,6 +2,7 @@ id = "part/kyosho/BRG405F"
 brand = "brand/kyosho"
 number = "BRG405F"
 name = "Flange Bearing(4x8x3)"
+pack_qty = 2
 category = "bearing"
 fits = [
   { kit = "kit/kyosho/fantom-pzf", type = "direct", source = "doc/kyosho/30640-mm01-spop" },
@@ -9,4 +10,4 @@ fits = [
 equivalent_to = [
   { spec = "spec/bearing/flanged-4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/brg405f.html" } ]

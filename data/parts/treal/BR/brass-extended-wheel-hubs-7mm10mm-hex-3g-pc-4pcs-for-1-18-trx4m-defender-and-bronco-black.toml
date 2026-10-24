@@ -3,6 +3,7 @@ brand = "brand/treal"
 number = "X003K9PC4D"
 name = "Brass Extended Wheel Hubs 7mm*10mm Hex, 3g/pc (4pcs) for 1/18 TRX4M Defender and Bronco (Black)"
 pack_qty = 4
+pack_qty_basis = "name"
 category = "drivetrain"
 category_source = "curated"
 color = "black"
@@ -14,6 +15,6 @@ links = [
   { site = "Treal Hobby", url = "https://trealhobby.com/products/treal-brass-extended-wheel-hubs-7mm10mm-hex-3g-pc-4pcs-for-1-18-trx4m-defender-and-bronco-black" },
 ]
 equivalent_to = [
-  { spec = "spec/wheel-hex/7mm", match = "exact", notes = "Hex size from the description (7MM standard size hex; 10 mm is the length)" },
+  { spec = "spec/wheel-hex/10mm", match = "exact", notes = "Hex size from the name" },
 ]
 material = "brass"

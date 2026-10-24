@@ -6,5 +6,10 @@ pack_qty = 5
 fits = [
   { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
   { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inferno-mp10e-kit-exploded-view" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-flanged-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s23010f.html" } ]

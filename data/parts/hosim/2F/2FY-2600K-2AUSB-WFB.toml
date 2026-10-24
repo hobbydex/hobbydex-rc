@@ -3,6 +3,7 @@ brand = "brand/hosim"
 number = "2FY-2600K-2AUSB-WFB"
 name = "RC Car Battery 2pcs 25C 2S 7.4V 2600mAh for X07 X08 X17 X07W X27 X25 RC Truck"
 pack_qty = 2
+pack_qty_basis = "name"
 applies_to = "X07 X08 X17 X07W X27 X25 RC Truck"
 fits = [
   { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
@@ -23,3 +24,5 @@ cells = 2
 capacity_mah = 2600
 c_rating = 25
 category = "battery"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

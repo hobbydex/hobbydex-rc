@@ -3,8 +3,14 @@ brand = "brand/tamiya"
 number = "12685019"
 name = "3x12mm Screw Pin"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x12-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+  { spec = "spec/pin/3x12", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/2110-12685019", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-12685019-3x12mm-SCREW-PINC", kind = "dealer" },
 ]
 name_source = "ocr"

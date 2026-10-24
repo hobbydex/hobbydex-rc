@@ -2,9 +2,14 @@ id = "part/tamiya/19804327"
 brand = "brand/tamiya"
 number = "19804327"
 name = "3x27mm Screw"
+pack_qty = 2
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13191-19804327", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804327-3x27mm-DAMPER-SCREW2pcs", kind = "dealer" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x27-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
 ]

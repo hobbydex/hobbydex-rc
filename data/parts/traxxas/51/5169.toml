@@ -3,10 +3,10 @@ brand = "brand/traxxas"
 number = "5169"
 name = "Screws, 2.6x8mm countersunk machine (6) (EZ Start 2 motor)"
 pack_qty = 6
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/screw/m2.6x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"
 fits = [
   { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/traxxas/104354-74-parts-list" },
@@ -22,3 +22,4 @@ fits = [
   { kit = "kit/traxxas/drag-slash", type = "direct", source = "doc/traxxas/94076-4-parts-list" },
   { kit = "kit/traxxas/ford-raptor", type = "direct", source = "doc/traxxas/58094-8-parts-list" },
 ]
+links = [ { site = "Traxxas", url = "https://traxxas.com/5169-countersunk-machine-screws-26x8-mm-6" } ]

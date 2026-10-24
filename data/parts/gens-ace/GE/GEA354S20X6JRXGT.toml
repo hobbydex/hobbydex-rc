@@ -6,7 +6,6 @@ gtin = "6928493318003"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/life-4s-3500mah", match = "functional", source = "doc/gens-ace/tx-rx", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/xt60", match = "functional" },
 ]
 chemistry = "life"
 cells = 4
@@ -18,3 +17,5 @@ weight_g = 380
 links = [
   { site = "Gens ace", url = "https://gensace.de/products/gens-ace-mini-g-tech-3500mah-13-2v-4s1p-20c-li-fe-battery-pack-for-receiver-1" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

@@ -4,6 +4,7 @@ number = "LOS352009"
 name = "Wheel Nuts, Captured Black"
 pack_qty = 4
 applies_to = "DBXL-E 2.0"
+color = "black"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-wheel-nuts-captured-black-4-dbxl-e-2.0/LOS352009.html" },
 ]
@@ -11,3 +12,7 @@ fits = [
   { kit = "kit/losi/dbxl-e", type = "direct", source = "doc/losi/horizon-product-catalogue" },
 ]
 category = "nut"
+related = [
+  { part = "part/losi/LOS45032", relation = "use-with" },
+  { part = "part/losi/LOS45033", relation = "use-with" },
+]

@@ -2,8 +2,12 @@ id = "part/tamiya/50577"
 brand = "brand/tamiya"
 number = "50577"
 name = "3x10mm Tapping Screw"
-former_names = ["13x10mm Tapping Screw", "3. = 3x10mm Tapping Screw", "3x10mm beng ts rew", "63x10mm Tapping Screw", "BA2x7 Vis decolletee Cllciip x4 Olabdichtung Ioint d'etancheite BC20x8 Federstift Snap pin", "SP.577 3x10mm Tapping Screw", "Schneidschraube"]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+pack_qty = 10
+ocr_names = ["SP.577 3x10mm Tapping Screw"]
+former_ids = ["part/tamiya/60677"]
+notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. Silver (bright zinc), as on Tamiya's product photo."
+finish = "bright zinc"
+point = "flat"
 category = "screw"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50577/index.html" },
@@ -12,3 +16,6 @@ links = [
 name_source = "ocr"
 released = "1994-11"
 documents = ["doc/tamiya/newitems-month"]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

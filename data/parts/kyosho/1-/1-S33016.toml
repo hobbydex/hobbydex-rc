@@ -5,10 +5,11 @@ name = "Flat Head Screw(M3x16)"
 fits = [
   { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-exploded-view" },
 ]
 pack_qty = 10
 equivalent_to = [
   { spec = "spec/screw/m3x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s33016.html" } ]

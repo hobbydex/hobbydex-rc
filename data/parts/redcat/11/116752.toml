@@ -11,4 +11,8 @@ fits = [
   { kit = "kit/redcat/rc-mt10e", type = "direct", source = "doc/redcat/store" },
   { kit = "kit/redcat/tr-mt10e", type = "direct", source = "doc/redcat/store" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/2.5x14-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

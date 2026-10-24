@@ -3,4 +3,8 @@ brand = "brand/thunder-tiger"
 number = "PD1710"
 name = "C-CLIP(20), 15MM"
 pack_qty = 20
+pack_qty_basis = "name"
 category = "clip"
+equivalent_to = [
+  { spec = "spec/circlip/15mm", match = "functional" },
+]

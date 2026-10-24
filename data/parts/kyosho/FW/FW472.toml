@@ -3,6 +3,7 @@ brand = "brand/kyosho"
 number = "FW472"
 name = "GM Wheel Nut (Gunmetal/for Serration)"
 pack_qty = 4
+color = "gun metal"
 fits = [
   { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/33021-mm2-inf-mp9-tki4-spop" },
   { kit = "kit/kyosho/mad-crusher", type = "direct", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
@@ -10,3 +11,25 @@ fits = [
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33019-gt2-rs-kt-331p-spop" },
 ]
 category = "nut"
+related = [
+  { part = "part/kyosho/FW107", relation = "use-with" },
+  { part = "part/kyosho/FW107B", relation = "use-with" },
+  { part = "part/kyosho/FW107GM", relation = "use-with" },
+  { part = "part/kyosho/FW326", relation = "use-with" },
+  { part = "part/kyosho/FW328", relation = "use-with" },
+  { part = "part/kyosho/FW444", relation = "use-with" },
+  { part = "part/kyosho/FW625", relation = "use-with" },
+  { part = "part/kyosho/FW625WB", relation = "use-with" },
+  { part = "part/kyosho/IFW107", relation = "use-with" },
+  { part = "part/kyosho/IFW107B", relation = "use-with" },
+  { part = "part/kyosho/IFW326", relation = "use-with" },
+  { part = "part/kyosho/IFW326GM", relation = "use-with" },
+  { part = "part/kyosho/IFW328", relation = "use-with" },
+  { part = "part/kyosho/IFW328GM", relation = "use-with" },
+  { part = "part/kyosho/IFW444", relation = "use-with" },
+  { part = "part/kyosho/IFW444GM", relation = "use-with" },
+  { part = "part/kyosho/IFW625", relation = "use-with" },
+  { part = "part/kyosho/IFW625B", relation = "use-with" },
+  { part = "part/kyosho/IFW625N", relation = "use-with" },
+  { part = "part/kyosho/IFW625W", relation = "use-with" },
+]

@@ -3,6 +3,7 @@ brand = "brand/fast-eddy"
 number = "TFE10209"
 name = "Tamiya FH16 Tow Truck Silver 47528 Sealed Bearing Kit"
 gtin = "737558924532"
+color = "silver"
 includes = [
   { spec = "spec/bearing/5x8x2.5", qty = 6 },
   { spec = "spec/bearing/5x11x4", qty = 32 },
@@ -12,7 +13,6 @@ includes = [
 ]
 category = "bearing"
 category_source = "curated"
-material = "steel"
 seal = "rubber"
 applies_to = "Tamiya FH16 Tow Truck Silver 47528"
 links = [
@@ -21,3 +21,5 @@ links = [
 fits = [
   { kit = "kit/tamiya/tamtech", releases = ["release/tamiya/47528"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the FH16 Tow Truck Silver 47528" },
 ]
+pack_qty = 46
+pack_qty_basis = "includes"

@@ -5,7 +5,6 @@ name = "Rapid LiHV 4500mAh 2S 7.6V 100C Shorty Hardcase LiPo Battery with 5mm Bu
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lihv-2s-4500mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/xt60", match = "functional" },
 ]
 links = [
   { site = "HobbyKing", url = "https://hobbyking.com/en_us/4500mah-2s2p-100c-lihv-hardcase-5mm-bullet.html" },
@@ -16,3 +15,5 @@ capacity_mah = 4500
 c_rating = 100
 connector = "XT60"
 case = "shorty"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

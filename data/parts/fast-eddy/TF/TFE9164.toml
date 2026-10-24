@@ -12,7 +12,6 @@ includes = [
 ]
 category = "bearing"
 category_source = "curated"
-material = "steel"
 seal = "rubber"
 fits = [
   { kit = "kit/redcat/ascent-18", releases = ["release/redcat/RER37864", "release/redcat/RER37865", "release/redcat/RER39150", "release/redcat/RER39151", "release/redcat/RER42222", "release/redcat/RER43483", "release/redcat/RER43484"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Ascent-18 Crawler" },
@@ -20,3 +19,5 @@ fits = [
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/redcat-ascent-18-crawler-sealed-bearing-kit" },
 ]
+pack_qty = 30
+pack_qty_basis = "includes"

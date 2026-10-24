@@ -3,6 +3,10 @@ brand = "brand/redcat"
 number = "BS903-106"
 name = "Screw pin (M3x9.5)"
 pack_qty = 12
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x9.5-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 documents = ["doc/redcat/earthquake-3-5-manual"]
 links = [ { site = "Redcat Racing", url = "https://www.redcatracing.com/products/bs903-106.json" } ]

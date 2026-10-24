@@ -2,8 +2,14 @@ id = "part/xray/352652"
 brand = "brand/xray"
 number = "352652"
 name = "BALL STUD 6.8MM"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2627" },
+]
 pack_qty = 4
-former_names = ["XB808 BALL STUD 6.8MM (4) 960030 902310", "XB808 BALL STUD 6.8MM", "BALL STUD 6.8mm"]
+former_names = ["XB808 BALL STUD 6.8MM (4) 960030 902310", "XB808 BALL STUD 6.8MM"]
 category = "ball-end"
 ball_mm = 6.8
 ball_type = "stud"
+equivalent_to = [
+  { spec = "spec/ball-end/6.8mm-stud", match = "functional" },
+]

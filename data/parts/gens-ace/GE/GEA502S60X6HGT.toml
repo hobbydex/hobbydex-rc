@@ -6,7 +6,6 @@ gtin = "6928493317655"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-5000mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/xt60", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 2
@@ -18,3 +17,5 @@ weight_g = 250
 links = [
   { site = "Gens ace", url = "https://gensace.de/products/gea502s60x6hgt" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

@@ -3,7 +3,6 @@ brand = "brand/kyosho"
 number = "W0202HB"
 name = "6.8mm Hard Ball"
 pack_qty = 5
-former_names = ["! 6 Smm Hard Ball (5pcs)", "6.8mm Hard Ball (5pcs)"]
 category = "ball-end"
 ball_type = "through-hole"
 fits = [
@@ -14,3 +13,6 @@ fits = [
   { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
 ]
 ball_mm = 6.8
+equivalent_to = [
+  { spec = "spec/ball-end/6.8mm-through-hole", match = "functional" },
+]

@@ -4,9 +4,8 @@ number = "BEEC1060"
 name = "XT60 Charge lead : gold 4mm"
 category = "wire"
 gtin = "5404039200502"
+color = "gold"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/11302-beec1060-BEEC1060-5404039200502", kind = "dealer" },
 ]
-equivalent_to = [
-  { spec = "spec/connector/xt60", match = "functional" },
-]
+connectors = ["XT60", "4mm bullet"]

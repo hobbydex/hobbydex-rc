@@ -1,12 +1,19 @@
 id = "part/tamiya/19804392"
 brand = "brand/tamiya"
 number = "19804392"
+former_ids = ["part/tamiya/19604392"]
 name = "3x10mm Tapping Screw (Black)"
-former_names = ["3x10 Tapping Screw", "3x10mm Tapping Screw", "3x10mm Tapping Screw (Biack)", "3x10mm Tapping Screw (Black) (M3 x10)", "3x10mm Tapping Screw (Black) (MC6x10)", "3x10mm Tapping Screw {505 x10)", "3x10mm Tapping Scrow (Black)", "3x10mm Tappinq Screw (Black)", "3x10mm Tappiny Screw (Black)", "43x10mm Tapping Screw"]
+ocr_names = ["3x10 Tapping Screw", "3x10mm Tapping Screw"]
 color = "black"
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. 10 per bag (checked by hand)."
+point = "flat"
 category = "screw"
+pack_qty = 10
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13254-19804392", kind = "fan-site" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]
+finish = "black"

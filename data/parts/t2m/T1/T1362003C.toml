@@ -1,12 +1,12 @@
 id = "part/t2m/T1362003C"
 brand = "brand/t2m"
 number = "T1362003C"
-name = "Accu LiPo 3S 11.1V 6200mAh + adapt."
+name = "LiPo battery 3S 11.1V 6200 mAh + adapter"
+name_fr = "Accu LiPo 3S 11.1V 6200mAh + adapt."
 source = "doc/t2m/t2m-shop"
-equivalent_to = [
-  { spec = "spec/battery/lipo-3s-6200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-]
 chemistry = "lipo"
 cells = 3
 capacity_mah = 6200
 category = "battery"
+notes = "English translated by Hobbydex from the maker's French name (name_fr)"
+links = [ { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-accu-lipo-3s-11-1v-6200mah-adapt-T1362003C" } ]

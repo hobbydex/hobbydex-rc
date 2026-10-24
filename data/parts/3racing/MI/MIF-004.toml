@@ -3,6 +3,7 @@ brand = "brand/3racing"
 number = "MIF-004"
 name = "64 Titanium Ball Stud 4.8mm (10 Pcs) For Mini Inferno"
 pack_qty = 10
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/kyosho/mini-inferno", type = "direct", source = "doc/3racing/shop" },
 ]
@@ -13,3 +14,6 @@ category = "ball-end"
 ball_mm = 4.8
 ball_type = "stud"
 material = "titanium"
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]

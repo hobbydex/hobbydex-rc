@@ -3,9 +3,9 @@ brand = "brand/turnigy"
 number = "9671610008"
 name = "Graphene Purple 1350mAh 6S 22.2V 120C LiPo Battery Pack w/XT60 Connector"
 category = "battery"
+color = "purple"
 equivalent_to = [
   { spec = "spec/battery/lipo-6s-1350mah", match = "functional", source = "doc/turnigy/hobbyking-car-batteries", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/xt60", match = "functional" },
 ]
 links = [
   { site = "HobbyKing", url = "https://hobbyking.com/en_us/turnigy-graphene-blue-1350mah-6s-120c-lipo-battery-pack-w-xt60-connector.html" },
@@ -15,3 +15,5 @@ cells = 6
 capacity_mah = 1350
 c_rating = 120
 connector = "XT60"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

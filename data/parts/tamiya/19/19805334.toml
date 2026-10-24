@@ -2,11 +2,15 @@ id = "part/tamiya/19805334"
 brand = "brand/tamiya"
 number = "19805334"
 name = "4x6mm Brass Pipe & 3x15mm Screw"
-former_names = ["4x6mm Brass Pipe (BB14 x2) & 3x15mm Screw", "4x6mm Brass Pipe, 3x15mm Screw", "4x6mm Brass Tube & 3x15mm Screw", "4x6mm Pipe", "4x6mm Pipe & 3x15mm Screw", "4x6mm Pipe (BC10 x2), 3x15mm Screw", "4x6mm Pipe, 3x15mm Screw", "4x6mm Pipe, 3x15mm Screw (Black)", "4x6mm Tube & 3x15mm Screw", "4x6mm Tube (BB9 x2), etc", "4x6mm Tube (BD5 x2), 3x15mm Screw"]
+ocr_names = ["4x6mm Brass Tube & 3x15mm Screw", "4x6mm Pipe", "4x6mm Pipe & 3x15mm Screw", "4x6mm Pipe, 3x15mm Screw", "4x6mm Pipe, 3x15mm Screw (Black)", "4x6mm Tube & 3x15mm Screw"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13492-19805334", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805334-4x6-brass-pipe-3x15-screw", kind = "dealer" },
 ]
 name_source = "ocr"
-category = "screw"
+category = "washer-shim"
 material = "brass"
+includes = [
+  { spec = "spec/screw/m3x15-pan-jis", qty = 1, notes = "Size from this item's words in the manufacturer's name" },
+]

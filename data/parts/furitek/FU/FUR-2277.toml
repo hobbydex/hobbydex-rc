@@ -3,7 +3,4 @@ brand = "brand/furitek"
 number = "FUR-2277"
 name = "High Quality XT30 Male to EC2 Female Conversion Cable"
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/ec2", match = "functional" },
-  { spec = "spec/connector/xt30", match = "functional" },
-]
+connectors = ["XT30", "EC2"]

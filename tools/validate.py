@@ -58,7 +58,7 @@ YOUTUBE_CHANNEL = re.compile(r"https://www\.youtube\.com/@[A-Za-z0-9._-]+")
 
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
-    "release.kind": {"kit", "rtr", "arr"},
+    "release.kind": {"kit", "rtr", "arr", "roller"},
     # kit types (docs/schema.md "kit"); the site gives each a label and an icon (hobbydex src/lib/kitTypes.ts)
     "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "race-truck",
                      "crawler", "touring", "formula", "pan-car", "rally", "street-basher", "drift", "drag", "lowrider", "trailer",
@@ -77,9 +77,12 @@ ENUMS = {
     "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
+    # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
+    "part.pack_qty_basis": {"name", "page", "includes", "photo", "photos", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
+    "part.insulation": {"silicone", "pvc", "teflon"},   # wire parts (docs/schema.md "Wires")
     "part.lubricant": {"oil", "grease"},
     "part.viscosity": {"thin", "medium", "thick"},
     "spec.profile": {"regular", "thin"},
@@ -88,7 +91,7 @@ ENUMS = {
     "spec.motor_type": {"brushed", "brushless"},
     "part.motor_type": {"brushed", "brushless", "both"},   # ESCs (docs/schema.md "ESCs")
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
-    "part.chemistry": {"lipo", "lihv", "life", "nimh"},
+    "part.chemistry": {"lipo", "lihv", "life", "nimh", "liion"},
     "part.case": {"hard", "soft", "shorty"},
     "part.name_source": {"ocr", "manufacturer", "manual"},
     "part.ball_type": {"stud", "nut", "through-hole", "set-screw"},
@@ -113,8 +116,10 @@ PAINT_FINISH = {"gloss", "flat", "semi-gloss", "metallic", "pearl", "fluorescent
 # spec.type per spec category (docs/schema.md: bearing types, nut types)
 SPEC_TYPES = {
     "bearing": {"radial-ball", "flanged", "thrust"},
+    "pin": {"screw"},   # screw pins: a smooth pin with a head and a short thread (docs/schema.md "Pin specs")
     "nut": {"hex", "nylon-lock", "metal-lock", "lock", "flanged", "flanged-lock", "flanged-nylon-lock", "serrated-flange",
             "serrated-flange-nylon-lock", "dome", "flanged-dome", "square", "knurled", "wing", "wheel"},
+    "ball-end": {"stud", "nut", "through-hole", "set-screw"},   # docs/schema.md "Ball-end specs"
 }
 NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that come in a regular and a thin height
 
@@ -122,9 +127,48 @@ NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that co
 SPEC_PART_CATS = {
     "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
     "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
-    "washer": {"washer-shim"}, "eclip": {"clip"},
+    "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
+    "ball-end": {"ball-end"}, "o-ring": {"o-ring-seal"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
 }
+
+SIZE_SPEC_CATS = {"ball-end", "o-ring", "circlip"}   # specs keyed by one size, written by tools/link_*_specs.py
+
+
+def size_spec_problems(path, d):
+    """Problems with a ball-end, O-ring or circlip spec: its size fields, and the id they are keyed by."""
+    cat, out = d["category"], []
+    if cat == "ball-end":
+        b, t = d.get("ball_mm"), d.get("type")
+        if not isinstance(b, (int, float)) or isinstance(b, bool) or not 3 <= b <= 14:
+            return [f"{path}: ball-end spec needs ball_mm, the ball diameter (3 to 14 mm)"]
+        if t not in SPEC_TYPES["ball-end"]:
+            return [f"{path}: ball-end spec needs type, one of {sorted(SPEC_TYPES['ball-end'])}"]
+        sid = f"spec/ball-end/{g(b)}mm-{t}" + (f"-{d['thread'].lower()}" if "thread" in d else "") + (f"-h{g(d['height_mm'])}" if "height_mm" in d else "")
+        if d["id"] != sid:
+            out.append(f"{path}: ball-end spec id should be {sid} (ball, type, then thread and height)")
+        if "thread" in d and not re.fullmatch(r"M[2-6](\.\d)?", str(d["thread"])):
+            out.append(f"{path}: ball-end thread {d['thread']!r} should be M2 to M6 (a metric diameter)")
+    elif cat == "o-ring":
+        i, c = d.get("inner_mm"), d.get("cross_mm")
+        if not all(isinstance(x, (int, float)) and not isinstance(x, bool) for x in (i, c)) or not 0 < c < i:
+            return [f"{path}: o-ring spec needs inner_mm and cross_mm, the section thinner than the inner diameter"]
+        if d["id"] != f"spec/o-ring/{g(i)}x{g(c)}":
+            out.append(f"{path}: o-ring spec id should be spec/o-ring/{g(i)}x{g(c)} (inner, then cross section)")
+    elif cat == "circlip":
+        s_, t = d.get("shaft_mm"), d.get("thickness_mm")
+        if not isinstance(s_, (int, float)) or isinstance(s_, bool) or not 1 <= s_ <= 30:
+            return [f"{path}: circlip spec needs shaft_mm (1 to 30 mm)"]
+        sid = f"spec/circlip/{g(s_)}mm" + (f"-{g(t)}" if t is not None else "")
+        if d["id"] != sid:
+            out.append(f"{path}: circlip spec id should be {sid} (shaft, then thickness)")
+    return out
+
+
+def g(v):
+    """A size as the spec ids write it: 4.0 is 4."""
+    return str(int(v)) if float(v).is_integer() else f"{float(v):g}"
+
 
 def categories():
     """Part categories are the files in data/categories (category/<slug>)."""
@@ -266,6 +310,49 @@ def check_names_no_brand(docs, errors):
         if bn and isinstance(name, str) and re.match(re.escape(bn) + " ", name, re.I):
             errors.append(f"{path}: name {name!r} repeats the brand {bn!r}; the site prints it in front (docs/schema.md \"{kind}\")")
 
+# A pack count, a set or part number and punctuation are not part of a name (former_names_problems)
+NAME_COUNT = re.compile(r"\(\s*\d+\s*(?:pcs?\.?|pieces?|ea)?\s*\)|\b\d+\s*(?:pcs?\.?|pieces?|ea)\b|(?<![a-z0-9])x\d+\b", re.I)
+NAME_NUMBER = re.compile(r"\b\d{5,}\b")
+NAME_CATALOGUE = re.compile(r"^\d{3,6} ")   # a store's catalogue number in front of a name
+
+def name_key(name):
+    s = NAME_COUNT.sub(" ", name.lower())
+    return re.sub(r"[^a-z0-9]+", " ", NAME_NUMBER.sub(" ", s)).strip()
+
+def restate_key(name, brand=""):
+    """name_key() without the brand word (brand: the brand's display name) and a catalogue
+    number in front, either one or both, in any order. Mirrors former_names._norm in hobbydex-tools."""
+    k, bk = name_key(name), name_key(brand)
+    while True:
+        prev = k
+        if bk and k.startswith(bk + " "):
+            k = k[len(bk) + 1:]
+        k = NAME_CATALOGUE.sub("", k + " ", count=1).strip()
+        if k == prev:
+            return k
+
+def former_names_problems(part, brand=""):
+    """The former_names entries a part may not keep: the part's own name again once counts, numbers,
+    the brand word and a catalogue number go, and a repeat of an earlier entry (case and spacing
+    ignored). docs/schema.md "part"."""
+    cur = restate_key(part.get("name", "") or "", brand)
+    seen, bad = set(), []
+    for n in part.get("former_names", []) or []:
+        if not isinstance(n, str):
+            continue
+        norm = re.sub(r"\s+", " ", n).strip().lower()
+        if (cur and restate_key(n, brand) == cur) or norm in seen:
+            bad.append(n)
+        seen.add(norm)
+    return bad
+
+def check_former_names(docs, errors):
+    brand_names = {d.get("id"): d.get("name", "") for _, k, d in docs if k == "brand"}
+    for path, kind, d in docs:
+        if kind == "part":
+            for n in former_names_problems(d, brand_names.get(d.get("brand"), "")):
+                errors.append(f"{path}: former name {n!r} is the part's name again (a pack count, a set number, the brand word or a catalogue number) or listed twice; a former name is a different name the maker published (docs/schema.md \"part\")")
+
 def check_dealer_links(docs, errors):
     """A dealer link (a links entry with kind "dealer", a reseller's product page) is a fallback: a release or part
     with a dealer link has no maker product link (a links entry with no kind) and no maker product page (a
@@ -354,6 +441,42 @@ def check_art(ids, errors, body_parts=frozenset()):
                 if len(el) or (el.text or "").strip() or (el.tail or "").strip():
                     errors.append(f"{path}: <path> must be empty")
     return n
+
+# the plug names of a wire part's `connectors` and of the battery and ESC `connector` field (tools/link_connector_specs.py PLUG_NAME);
+# "JR/Futaba" is one plug sold as fitting both servo plugs, so it names both specs
+PLUG_SPEC = {
+    "XT30": "xt30", "XT60": "xt60", "XT60H": "xt60h", "XT90": "xt90", "XT90-S": "xt90s", "XT150": "xt150",
+    "AS150": "as150", "QS8": "qs8", "EC2": "ec2", "EC3": "ec3", "EC5": "ec5", "EC8": "ec8", "IC3": "ic3", "IC5": "ic5",
+    "Deans": "deans", "Tamiya": "tamiya", "Mini Tamiya": "tamiya-mini", "JST-RCY": "jst-rcy", "JST-XH": "jst-xh",
+    "JR": "servo-jr", "Futaba": "servo-futaba", "JR/Futaba": ("servo-jr", "servo-futaba"), "Traxxas iD": "traxxas-trx-id", "Traxxas high-current": "traxxas-high-current",
+    "2mm bullet": "bullet-2mm", "3.5mm bullet": "bullet-3.5mm", "4mm bullet": "bullet-4mm", "5mm bullet": "bullet-5mm",
+    "6mm bullet": "bullet-6mm", "8mm bullet": "bullet-8mm", "4mm banana": "banana-4mm",
+}
+
+def check_connectors(docs, ids, errors):
+    """A wire part lists the plugs of a lead, adapter or harness in `connectors`, each a plug name with a connector
+    spec; a part that is the plug itself is equivalent_to its connector spec instead, so it never has both
+    (docs/schema.md "Connector specs")."""
+    for path, kind, d in docs:
+        if kind != "part" or "connectors" not in d:
+            continue
+        if d.get("category") != "wire":
+            errors.append(f"{path}: connectors is for wire parts (leads, adapters, harnesses), not a {d.get('category')}")
+        names = d["connectors"]
+        if not isinstance(names, list) or not names or not all(isinstance(n, str) for n in names):
+            errors.append(f"{path}: connectors should be a non-empty list of plug names, got {names!r}")
+            continue
+        for n in names:
+            if n not in PLUG_SPEC:
+                errors.append(f"{path}: connectors {n!r} is not a plug name (validate.py PLUG_SPEC)")
+            else:
+                for slug in (PLUG_SPEC[n],) if isinstance(PLUG_SPEC[n], str) else PLUG_SPEC[n]:
+                    if f"spec/connector/{slug}" not in ids:
+                        errors.append(f"{path}: connectors {n!r} has no connector spec spec/connector/{slug}")
+        if len(set(names)) != len(names):
+            errors.append(f"{path}: connectors lists a plug twice: {names!r}")
+        if any(str(e.get("spec", "")).startswith("spec/connector/") for e in d.get("equivalent_to", []) if isinstance(e, dict)):
+            errors.append(f"{path}: has connectors and an equivalent_to connector spec; a lead lists its plugs only in connectors")
 
 def main():
     ENUMS["part.category"] = categories()
@@ -475,7 +598,9 @@ def main():
                         if key in ENUMS and vv not in ENUMS[key]:
                             errors.append(f"{path}: {key} = {vv!r} not in {sorted(ENUMS[key])}")
             key = f"{kind}.{k}"
-            if key in ENUMS and v not in ENUMS[key]:
+            if key == "release.kind" and v not in ENUMS[key]:
+                errors.append(f"{path}: release kind {v!r} is not kit, rtr, arr or roller (docs/schema.md \"release\")")
+            elif key in ENUMS and v not in ENUMS[key]:
                 errors.append(f"{path}: {key} = {v!r} not in {sorted(ENUMS[key])}")
         # a fit narrowed to the releases the maker lists the part for (releases of that kit, at least one), or to a car
         for i, f in enumerate(d.get("fits", []) if kind == "part" else []):
@@ -538,8 +663,10 @@ def main():
             if not (isinstance(l, dict) and l.get("site") and (u.startswith("https://") or
                     (u.startswith("http://") and urllib.parse.urlsplit(u).hostname in http_hosts))):
                 errors.append(f"{path}: link {l!r} needs a site and an https url (http only for a maker site that has no https)")
-            elif "kind" in l and l["kind"] not in ("fan-site", "press", "dealer"):
-                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press', 'dealer']")
+            elif "kind" in l and l["kind"] not in ("fan-site", "press", "dealer", "maker"):
+                errors.append(f"{path}: link kind = {l['kind']!r} not in ['fan-site', 'press', 'dealer', 'maker']")
+        if kind == "part" and "pack_qty_basis" in d and not (isinstance(d.get("pack_qty"), int) and d["pack_qty"] >= 1):
+            errors.append(f"{path}: pack_qty_basis needs a pack_qty (a whole number, 1 or more)")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
             errors.append(f"{path}: paint finish = {d['finish']!r} not in {sorted(PAINT_FINISH)}")
         if kind in ("release", "part"):
@@ -561,6 +688,9 @@ def main():
         rg = d.get("range") if kind == "part" else None
         if rg is not None and not (isinstance(rg, str) and re.fullmatch(r"[a-z0-9-]+/[a-z0-9.-]+", rg) and rg.split("/")[0] == d["brand"].split("/")[1]):
             errors.append(f"{path}: range {rg!r} should be <brand slug>/<slug> of the part's own brand")
+        on = d.get("ocr_names") if kind == "part" else None
+        if on is not None and not (isinstance(on, list) and all(isinstance(x, str) and x and x == x.strip() for x in on)):
+            errors.append(f"{path}: ocr_names should be a list of strings (names read by OCR, hidden from the site, kept for the matchers)")
         if kind == "release":
             this_year = datetime.date.today().year
             if isinstance(d.get("year"), int) and d["year"] > this_year and d.get("status") == "released":
@@ -658,6 +788,18 @@ def main():
         lc = d.get("lipo_cells") if kind == "part" else None
         if lc is not None and not (isinstance(lc, list) and len(lc) == 2 and all(isinstance(x, int) for x in lc) and 0 < lc[0] <= lc[1]):
             errors.append(f"{path}: lipo_cells {lc!r} should be [min, max] cell counts")
+        bc = d.get("balance_connector") if kind == "part" else None
+        if bc is not None:
+            nc = d.get("cells")
+            if d.get("category") != "battery" or not isinstance(bc, str) or not bc.strip():
+                errors.append(f"{path}: balance_connector only on batteries, as a plug name (JST-XH)")
+            elif bc == "JST-XH" and not (isinstance(nc, int) and not isinstance(nc, bool) and 1 <= nc <= 8
+                                         and os.path.exists(os.path.join(ROOT, "specs", "connector", f"jst-xh-{nc + 1}.toml"))):
+                errors.append(f"{path}: balance_connector JST-XH needs cells 1..8 (the spec jst-xh-<cells+1> must exist)")
+        bb = d.get("balance_connector_basis") if kind == "part" else None
+        if bb is not None or (bc is not None and kind == "part"):
+            if bc is None or bb not in ("maker", "convention"):
+                errors.append(f"{path}: balance_connector_basis is \"maker\" (the maker's text names the plug) or \"convention\" (LiPo, LiHV or LiFe 2S to 8S, no statement), and only with balance_connector")
         se = d.get("sensored") if kind == "part" else None
         if se is not None and (not isinstance(se, bool) or d.get("category") not in ("motor", "esc", "electronics")):
             errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category esc; motor and electronics systems too)")
@@ -705,6 +847,39 @@ def main():
                     and 30 <= fq[0] < fq[1] <= 5000
                 if not (one or rng):
                     errors.append(f"{path}: frequency_hz {fq!r} should be an int (hz) or [low, high] in hz, 30 to 5000")
+        if kind == "spec" and d.get("category") == "wire":
+            awg = d.get("awg")
+            if not (isinstance(awg, int) and not isinstance(awg, bool) and 8 <= awg <= 30):
+                errors.append(f"{path}: wire spec needs awg, the gauge from 8 to 30")
+            elif d["id"] != f"spec/wire/{awg}awg":
+                errors.append(f"{path}: wire spec id should be spec/wire/{awg}awg")
+            for k in ("conductor_mm", "conductor_in", "cross_section_mm2"):
+                if not (isinstance(d.get(k), (int, float)) and not isinstance(d.get(k), bool) and d[k] > 0):
+                    errors.append(f"{path}: wire spec needs {k} > 0")
+        WIRE_ONLY = ("wire_awg", "insulation", "strands", "shrink_ratio", "flat_width_mm")
+        if kind == "part" and any(k in d for k in WIRE_ONLY) and d.get("category") != "wire":
+            errors.append(f"{path}: {', '.join(k for k in WIRE_ONLY if k in d)} only on wires (category wire)")
+        if kind == "part" and d.get("category") == "wire":
+            wa = d.get("wire_awg")
+            if wa is not None:
+                ok_one = isinstance(wa, int) and not isinstance(wa, bool) and 4 <= wa <= 32
+                ok_two = isinstance(wa, list) and len(wa) == 2 and all(isinstance(x, int) and not isinstance(x, bool) and 4 <= x <= 32 for x in wa) and wa[0] != wa[1]
+                if not (ok_one or ok_two):
+                    errors.append(f"{path}: wire_awg {wa!r} should be a gauge from 4 to 32, or two gauges as a list")
+            st = d.get("strands")
+            if st is not None and not (isinstance(st, int) and not isinstance(st, bool) and 2 <= st <= 100000):
+                errors.append(f"{path}: strands {st!r} should be a count of 2 or more")
+            sr = d.get("shrink_ratio")
+            if sr is not None and not (isinstance(sr, (int, float)) and not isinstance(sr, bool) and 1 <= sr <= 10):
+                errors.append(f"{path}: shrink_ratio {sr!r} should be the ratio as a number (2:1 is 2), 1 to 10")
+            fw = d.get("flat_width_mm")
+            if fw is not None and not (isinstance(fw, (int, float)) and not isinstance(fw, bool) and fw > 0):
+                errors.append(f"{path}: flat_width_mm {fw!r} should be a width in mm")
+            dm = d.get("diameter_mm")
+            if dm is not None:
+                vals = dm if isinstance(dm, list) else [dm]
+                if not (vals and all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in vals)):
+                    errors.append(f"{path}: diameter_mm {dm!r} should be a size in mm, or a list of sizes")
         if kind == "part" and "radio_unit" in d and d.get("category") not in ("radio", "esc"):
             errors.append(f"{path}: radio_unit only on radios and receivers (category radio, or esc for an ESC with a receiver)")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
@@ -725,6 +900,10 @@ def main():
             allowed = SPEC_TYPES.get(d.get("category"), set())
             if d["type"] not in allowed:
                 errors.append(f"{path}: spec.type = {d['type']!r} not in {sorted(allowed)} for a {d.get('category')} spec")
+        if kind == "spec" and d.get("category") in ("screw", "pin"):
+            lm = d.get("length_mm")
+            if not isinstance(lm, (int, float)) or isinstance(lm, bool) or lm <= 0:
+                errors.append(f"{path}: {d['category']} spec needs length_mm above 0 (a pitch or an OCR zero is not a length)")
         if kind == "spec" and d.get("category") == "nut":
             if not re.fullmatch(r"M\d{1,2}(\.\d)?(x\d(\.\d{1,2})?)?", str(d.get("thread", ""))):
                 errors.append(f"{path}: nut spec needs a thread like \"M3\" or \"M5x0.5\"")
@@ -743,6 +922,30 @@ def main():
                 sid = f"spec/washer/{d['shape'] + '-' if d.get('shape') not in (None, 'flat') else ''}{b}x{o}x{t}"
                 if d["id"] != sid:
                     errors.append(f"{path}: washer spec id should be {sid} (shape prefix, then bore x outer x thickness)")
+        if kind == "spec" and d.get("category") == "pin" and d.get("type") == "screw":
+            dm, lm = d.get("diameter_mm"), d.get("length_mm")
+            if not all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in (dm, lm)):
+                errors.append(f"{path}: screw pin spec needs diameter_mm and length_mm in millimetres")
+            elif d["id"] != f"spec/pin/{dm:g}x{lm:g}-screw":
+                errors.append(f"{path}: screw pin spec id should be spec/pin/{dm:g}x{lm:g}-screw")
+            if "thread" in d and d["thread"] != f"M{dm:g}":
+                errors.append(f"{path}: screw pin thread {d['thread']!r} should be M{dm:g} (the diameter) unless the name states another, which is not yet in the data")
+        elif kind == "spec" and d.get("category") == "pin" and "thread" in d:
+            errors.append(f"{path}: thread only on screw pin specs (type screw)")
+        if kind == "spec" and d.get("category") == "bearing":
+            fields = [k for k in ("flange_mm", "flange_width_mm", "flange_source") if k in d]
+            if fields and d.get("type") != "flanged":
+                errors.append(f"{path}: {', '.join(fields)} only on flanged bearings")
+            if d.get("type") == "flanged" and fields:
+                fm, fw = d.get("flange_mm"), d.get("flange_width_mm")
+                if not all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in (fm, fw)):
+                    errors.append(f"{path}: flange_mm and flange_width_mm need numbers in millimetres")
+                elif not fm > d.get("outer_mm", 0):
+                    errors.append(f"{path}: flange_mm {fm} should be larger than outer_mm")
+                if not str(d.get("flange_source", "")).startswith("https://"):
+                    errors.append(f"{path}: flange_source should be the catalogue page URL")
+        if kind == "spec" and d.get("category") in SIZE_SPEC_CATS:
+            errors.extend(size_spec_problems(path, d))
         if kind == "spec" and d.get("category") == "eclip":
             s = d.get("shaft_mm")
             if not isinstance(s, (int, float)) or isinstance(s, bool) or not 1 <= s <= 12:
@@ -853,7 +1056,9 @@ def main():
     check_kit_supersedes(docs, errors)
     check_makes(docs, errors)
     check_dealer_links(docs, errors)
+    check_connectors(docs, ids, errors)
     check_names_no_brand(docs, errors)
+    check_former_names(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:

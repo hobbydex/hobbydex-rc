@@ -3,7 +3,15 @@ brand = "brand/kyosho"
 number = "EF244G"
 name = "LW Wheel Nut (Gold/FANTOM EP)"
 pack_qty = 4
+color = "gold"
 fits = [
   { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/30644-mm01-spop" },
 ]
 category = "nut"
+related = [
+  { part = "part/kyosho/EF210", relation = "use-with" },
+  { part = "part/kyosho/EF211", relation = "use-with" },
+  { part = "part/kyosho/EF211G", relation = "use-with" },
+  { part = "part/kyosho/EFW003", relation = "use-with" },
+]
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ef244g.html" } ]

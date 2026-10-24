@@ -2,10 +2,14 @@ id = "part/tamiya/19804161"
 brand = "brand/tamiya"
 number = "19804161"
 name = "3x12mm Flange Tapping Screw"
-former_names = ["3x12mm Flanged Tapping Screw"]
+pack_qty = 10
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13053-19804161", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804161-3x12mmFlangeTappingScrew10", kind = "dealer" },
 ]
 category = "screw"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-flanged-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -1,9 +1,10 @@
 id = "part/t2m/T422650"
 brand = "brand/t2m"
 number = "T422650"
-name = "Cordon de charge XT60 multiprises"
+name = "XT60 charge lead with multi-plug"
+name_fr = "Cordon de charge XT60 multiprises"
 source = "doc/t2m/t2m-shop"
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/xt60", match = "functional" },
-]
+connectors = ["XT60"]
+notes = "English translated by Hobbydex from the maker's French name (name_fr)"
+links = [ { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-cordon-de-charge-xt60-multiprises-T422650" } ]

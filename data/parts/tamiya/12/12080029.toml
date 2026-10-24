@@ -4,3 +4,7 @@ number = "12080029"
 name = "3x22mm Tapping Screw"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x22-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"

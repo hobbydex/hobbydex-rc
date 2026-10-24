@@ -5,4 +5,13 @@ name = "T Plug to JST adapter 24AWG Silicone Wire L=50mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=104" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=104" },
+]
+equivalent_to = [
+  { spec = "spec/wire/24awg", match = "functional" },
+]
+wire_awg = 24
+insulation = "silicone"
+length_mm = 50
+connectors = ["Deans"]

@@ -2,10 +2,15 @@ id = "part/tamiya/19805898"
 brand = "brand/tamiya"
 number = "19805898"
 name = "3x12mm Screw"
-former_names = ["13x12mm Screw (Black)", "2 3x12mm Screw", "3x12mm Screw (10pcs.)", "3x12mm Screw (BC1 x10) Long", "3x12mm Screw (Black)"]
+pack_qty = 10
+ocr_names = ["3x12mm Screw (Black)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/5282-19805898", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805898-3x12mm-Screw-10-pcs", kind = "dealer" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

@@ -2,9 +2,14 @@ id = "part/tamiya/19804491"
 brand = "brand/tamiya"
 number = "19804491"
 name = "5x10mm Screw"
+pack_qty = 5
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13314-19804491", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804491-AP5x10mm-SCREW-5pcs-58496", kind = "dealer" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m5x10-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
 ]

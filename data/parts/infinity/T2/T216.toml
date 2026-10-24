@@ -9,3 +9,9 @@ color = "black"
 equivalent_to = [
   { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+related = [
+  { part = "part/infinity/T043B", relation = "use-with" },
+  { part = "part/infinity/T100", relation = "use-with" },
+  { part = "part/infinity/T127", relation = "use-with" },
+  { part = "part/infinity/TS061", relation = "use-with" },
+]

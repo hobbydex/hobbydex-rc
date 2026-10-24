@@ -3,6 +3,8 @@ brand = "brand/hpi"
 number = "75070"
 name = "O-RING P4 (4x2mm/CLEAR/12pcs)"
 pack_qty = 12
+pack_qty_basis = "name"
+color = "clear"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/75070" },
 ]
@@ -10,3 +12,6 @@ fits = [
   { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "o-ring-seal"
+equivalent_to = [
+  { spec = "spec/o-ring/4x2", match = "functional" },
+]

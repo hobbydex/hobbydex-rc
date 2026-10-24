@@ -3,6 +3,7 @@ brand = "brand/fast-eddy"
 number = "TFE10210"
 name = "Tamiya FH16 Tow Truck Silver 47528 Ceramic Sealed Bearing Kit"
 gtin = "737558924549"
+color = "silver"
 includes = [
   { spec = "spec/bearing/5x8x2.5", qty = 6 },
   { spec = "spec/bearing/5x11x4", qty = 32 },
@@ -21,3 +22,5 @@ links = [
 fits = [
   { kit = "kit/tamiya/tamtech", releases = ["release/tamiya/47528"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the FH16 Tow Truck Silver 47528" },
 ]
+pack_qty = 44
+pack_qty_basis = "includes"

@@ -1,0 +1,20 @@
+id = "part/xtra-speed/XS-TA29140"
+brand = "brand/xtra-speed"
+number = "XS-TA29140"
+name = "14mm Hex Adaptor"
+gtin = "4894711053570"
+links = [
+  { site = "tamico.de", url = "https://tamico.de/Xtra-Speed-14mm-Hex-Adaptor-For-Tamiya-Grasshopper-II-Hornet-Frog", kind = "dealer" },
+  { site = "modelsport.co.uk", url = "https://www.modelsport.co.uk/product/xtra-speed-14mm-hex-adaptor-for-tamiya-grasshopper-and-ii-hornet-frog-1356187", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/tamiya/the-grasshopper-ii", type = "direct", source = "doc/xtra-speed/tamico-brand-listing" },
+  { kit = "kit/tamiya/hornet", type = "direct", source = "doc/xtra-speed/tamico-brand-listing" },
+  { kit = "kit/tamiya/frog", type = "direct", source = "doc/xtra-speed/tamico-brand-listing" },
+  { kit = "kit/tamiya/grasshopper", type = "direct", source = "doc/xtra-speed/modelsport-product-page" },
+]
+category = "drivetrain"
+notes = "Name and fits from the dealer listing(s): Model Sport, tamico. The dealer's own article number: RT-XS-TA29140."
+equivalent_to = [
+  { spec = "spec/wheel-hex/14mm", match = "exact", notes = "Hex size from the name" },
+]

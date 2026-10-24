@@ -1,10 +1,15 @@
 id = "part/t2m/T4941-34"
 brand = "brand/t2m"
 number = "T4941-34"
-name = "Vis tête ronde 3x25mm"
+name = "Round head screw 3x25 mm"
+name_fr = "Vis tête ronde 3x25mm"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-vis-tete-ronde-3x25mm-12p-T4941_34" },
 ]
-notes = "The store prints the item code as T4941/34."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4941/34."
 pack_qty = 12
+equivalent_to = [
+  { spec = "spec/screw/m3x25-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"

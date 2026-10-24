@@ -3,6 +3,7 @@ brand = "brand/atomic-rc"
 number = "BZ5-38"
 name = "Bearing 2 x 5 x 2"
 pack_qty = 2
+pack_qty_basis = "page"
 fits = [
   { kit = "kit/atomic-rc/bz", type = "direct", source = "doc/atomic-rc/site" },
 ]
@@ -13,5 +14,4 @@ links = [
 equivalent_to = [
   { spec = "spec/bearing/2x5x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"
 category = "bearing"

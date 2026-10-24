@@ -7,5 +7,9 @@ notes = "The shop lists it as BRASST3022/DS"
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/m3-2211-ss-steel-driveshaft-screw-pin-5-206610" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
 material = "steel"
+equivalent_to = [
+  { spec = "spec/pin/2.2x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

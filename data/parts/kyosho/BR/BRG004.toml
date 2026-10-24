@@ -2,6 +2,7 @@ id = "part/kyosho/BRG004"
 brand = "brand/kyosho"
 number = "BRG004"
 name = "Shield Bearing (8x14x4)"
+pack_qty = 4
 fits = [
   { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
   { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31398s-fazerkt-200-sp" },
@@ -14,6 +15,6 @@ fits = [
 equivalent_to = [
   { spec = "spec/bearing/8x14x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"
 seal = "metal"
 category = "bearing"
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/brg004.html" } ]

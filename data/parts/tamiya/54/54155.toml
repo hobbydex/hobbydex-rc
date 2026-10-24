@@ -3,6 +3,7 @@ brand = "brand/tamiya"
 number = "54155"
 name = "3mm Thin Aluminum Lock Nut 5pcs./Blue"
 pack_qty = 5
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/tamiya/bb-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/db01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -26,3 +27,6 @@ documents = ["doc/tamiya/newitems-month"]
 equivalent_to = [
   { spec = "spec/nut/m3-lock-thin", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+finish = "anodized"
+color = "blue"
+notes = "Finish read from the bag photo on Tamiya's site (https://www.tamiya.com/japan_contents/img/usr/item/5/54155/54155_1.jpg)."

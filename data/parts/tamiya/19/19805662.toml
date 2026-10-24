@@ -2,10 +2,15 @@ id = "part/tamiya/19805662"
 brand = "brand/tamiya"
 number = "19805662"
 name = "3x10mm Flange Tapping Screw"
-former_names = ["2.6x6mm Cap Screw", "3x10mm Fiange Tapping Screw", "3x10mm FlangeTappingScrew", "3x10mm Flanged Tapping Screw (Black)"]
+pack_qty = 5
+ocr_names = ["2.6x6mm Cap Screw", "3x10mm Flanged Tapping Screw (Black)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6426-19805662", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805662-3x10mm-Flange-Tapping-Screw5", kind = "dealer" },
 ]
 category = "screw"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-flanged-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

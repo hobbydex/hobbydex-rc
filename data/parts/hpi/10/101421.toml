@@ -3,6 +3,8 @@ brand = "brand/hpi"
 number = "101421"
 name = "WHEEL NUT 17MM GUN METAL"
 pack_qty = 4
+pack_qty_basis = "page"
+color = "gun metal"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/101421" },
 ]
@@ -10,3 +12,6 @@ fits = [
   { kit = "kit/hpi/pulse", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "nut"
+related = [
+  { part = "part/hpi/101340", relation = "use-with" },
+]

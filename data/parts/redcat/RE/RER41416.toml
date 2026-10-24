@@ -8,4 +8,9 @@ links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer41416" },
 ]
 gtin = "843335125853"
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/5x17-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+  { spec = "spec/pin/5x17", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

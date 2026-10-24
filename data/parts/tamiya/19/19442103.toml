@@ -2,10 +2,14 @@ id = "part/tamiya/19442103"
 brand = "brand/tamiya"
 number = "19442103"
 name = "3x8mm Tapping Screw"
-former_names = ["Vis taraudeuse (chrome)"]
+ocr_names = ["Vis taraudeuse (chrome)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/12442-19442103", kind = "fan-site" },
 ]
+point = "flat"
 category = "screw"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

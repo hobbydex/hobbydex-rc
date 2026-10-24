@@ -1,10 +1,15 @@
 id = "part/t2m/T4984-89"
 brand = "brand/t2m"
 number = "T4984-89"
-name = "Vis fraisée 3x16mm"
+name = "Countersunk screw 3x16 mm"
+name_fr = "Vis fraisée 3x16mm"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-vis-fraisee-3x16mm-12p-T4984_89" },
 ]
-notes = "The store prints the item code as T4984/89."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4984/89."
 pack_qty = 12
+equivalent_to = [
+  { spec = "spec/screw/m3x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"

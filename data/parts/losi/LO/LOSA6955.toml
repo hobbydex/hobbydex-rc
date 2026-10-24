@@ -7,11 +7,7 @@ applies_to = "8B, 8T, 22, 22T, 22SCT, 22-4, 8X, 8XE"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-5-x-13mm-hd-clutch-bearings-28b-8t-22-22t-22sct-22-4-8x-8xe/LOSA6955.html" },
 ]
-former_names = ["5 x 13mm HD Clutch Bearings 8B/8T", "5x13x4mm HD Cltch Bearings", "5x13x4mm HD Clutch Bearings"]
-equivalent_to = [
-  { spec = "spec/bearing/5x13x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
-]
-material = "steel"
+former_names = ["5 x 13mm HD Clutch Bearings 8B/8T", "5x13x4mm HD Clutch Bearings"]
 category = "bearing"
 fits = [
   { kit = "kit/losi/22s-drag", type = "direct", source = "doc/losi/horizon-part-pages" },

@@ -3,6 +3,7 @@ brand = "brand/hpi"
 number = "100555"
 name = "SET SCREW M4x3mm"
 pack_qty = 4
+pack_qty_basis = "page"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/100555" },
 ]
@@ -14,5 +15,4 @@ fits = [
 equivalent_to = [
   { spec = "spec/screw/m4x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"

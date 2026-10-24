@@ -1,14 +1,16 @@
 id = "part/t2m/TR10-15RS"
 brand = "brand/t2m"
 number = "TR10-15RS"
-name = "Roulement 10x15x4"
+name = "10x15x4 bearing"
+name_fr = "Roulement 10x15x4"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-roulement-10x15x4-10p-TR10_15RS" },
 ]
-notes = "The store prints the item code as TR10/15RS."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as TR10/15RS."
 pack_qty = 10
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
+category = "bearing"

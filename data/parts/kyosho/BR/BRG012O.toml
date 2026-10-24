@@ -3,11 +3,12 @@ brand = "brand/kyosho"
 number = "BRG012O"
 name = "Open Bearing(8x16x4) 2Pcs"
 pack_qty = 2
+pack_qty_basis = "name"
 gtin = "4955439758953"
 category = "bearing"
 documents = ["doc/kyosho/brg012o-product-page"]
 equivalent_to = [
   { spec = "spec/bearing/8x16x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"
 seal = "open"
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/brg012o.html" } ]

@@ -2,11 +2,17 @@ id = "part/tamiya/19803340"
 brand = "brand/tamiya"
 number = "19803340"
 name = "3x8mm Tapping Screw (Silver)"
-former_names = ["3x8mm Tapping Screw"]
+pack_qty = 10
+ocr_names = ["3x8mm Tapping Screw"]
 color = "silver"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+point = "flat"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/19241-19803340", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19803340-AP3x81mm-TP-SCREW10pcs-70247", kind = "dealer" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

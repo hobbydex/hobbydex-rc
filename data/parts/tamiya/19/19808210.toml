@@ -2,10 +2,17 @@ id = "part/tamiya/19808210"
 brand = "brand/tamiya"
 number = "19808210"
 name = "3x38mm Screw Pin"
-former_names = ["3x38mm Screw Pin (Silver)", "3x38mm Scrow Pin"]
+pack_qty = 2
+ocr_names = ["3x38mm Screw Pin (Silver)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/3x38-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+  { spec = "spec/pin/3x38", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13856-19808210", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19808210-3x38mm-Screw-Pin-2-pcs", kind = "dealer" },
 ]
 name_source = "ocr"

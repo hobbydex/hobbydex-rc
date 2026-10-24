@@ -3,6 +3,8 @@ brand = "brand/gpm"
 number = "SLE005A-B"
 name = "GPM Blue Aluminium 17mm Serrated Wheel Nuts 4Pcs"
 pack_qty = 4
+pack_qty_basis = "name"
+color = "blue"
 fits = [
   { kit = "kit/traxxas/sledge", type = "replaces", source = "doc/gpm/store", notes = "GPM's item-number series for the Sledge" },
 ]
@@ -11,3 +13,11 @@ links = [
 ]
 category = "nut"
 material = "aluminium"
+related = [
+  { part = "part/gpm/SLE010-13MM-B", relation = "use-with" },
+  { part = "part/gpm/SLE010-13MM-BK", relation = "use-with" },
+  { part = "part/gpm/SLE010-13MM-G", relation = "use-with" },
+  { part = "part/gpm/SLE010-13MM-GS", relation = "use-with" },
+  { part = "part/gpm/SLE010-13MM-OR", relation = "use-with" },
+  { part = "part/gpm/SLE010-13MM-R", relation = "use-with" },
+]

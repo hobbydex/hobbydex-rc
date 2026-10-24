@@ -3,6 +3,7 @@ brand = "brand/gpm"
 number = "MAK005-OR"
 name = "GPM Orange Aluminium 15mm Serrated Wheel Nuts 4Pcs"
 pack_qty = 4
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/arrma/kraton", type = "replaces", source = "doc/gpm/store", notes = "GPM's item-number series for the Kraton" },
 ]
@@ -13,3 +14,9 @@ category = "nut"
 material = "aluminium"
 color = "orange"
 range = "gpm/mak005-colours"
+related = [
+  { part = "part/gpm/ARR010-+13MM-BK", relation = "use-with" },
+  { part = "part/gpm/ARR010-+13MM-R", relation = "use-with" },
+  { part = "part/gpm/ARR010-13MM-B", relation = "use-with" },
+  { part = "part/gpm/MAKX10-+11MM-R", relation = "use-with" },
+]

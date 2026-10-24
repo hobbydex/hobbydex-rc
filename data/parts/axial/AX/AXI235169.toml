@@ -4,13 +4,13 @@ number = "AXI235169"
 name = "Flat Head Screws, M2.5x12mm"
 gtin = "605482494639"
 pack_qty = 10
+pack_qty_basis = "page"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-flat-head-screws-m2.5x12mm-10/AXI235169.html" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m2.5x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"
 fits = [
   { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages" },

@@ -3,6 +3,7 @@ brand = "brand/atomic-rc"
 number = "AB-026"
 name = "Oiled Ball Bearing 6 x 10 x 2.5"
 pack_qty = 2
+pack_qty_basis = "page"
 documents = ["doc/atomic-rc/site"]
 links = [
   { site = "Atomic R/C", url = "https://www.rcatomic.com/atomic/index.php?main_page=product_info&products_id=5564" },
@@ -10,5 +11,4 @@ links = [
 equivalent_to = [
   { spec = "spec/bearing/6x10x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-material = "steel"
 category = "bearing"

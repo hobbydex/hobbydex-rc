@@ -3,13 +3,13 @@ brand = "brand/fast-eddy"
 number = "TFE2358"
 name = "Tamiya Lunch Box Blue Style XB CW-01 Sealed Bearing Kit"
 gtin = "769173965010"
+color = "blue"
 includes = [
   { spec = "spec/bearing/5x8x2.5", qty = 1 },
   { spec = "spec/bearing/5x11x4", qty = 9 },
 ]
 category = "bearing"
 category_source = "curated"
-material = "steel"
 seal = "rubber"
 fits = [
   { kit = "kit/tamiya/cw-01", releases = ["release/tamiya/57861"], type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Lunch Box Blue Style XB CW-01" },
@@ -17,3 +17,5 @@ fits = [
 links = [
   { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/tamiya-lunch-box-blue-style-xb-cw-01-sealed-bearing-kit" },
 ]
+pack_qty = 10
+pack_qty_basis = "includes"

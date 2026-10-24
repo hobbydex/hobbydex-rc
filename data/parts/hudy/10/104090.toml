@@ -2,8 +2,10 @@ id = "part/hudy/104090"
 brand = "brand/hudy"
 number = "104090"
 name = "Cable 600mm with 4mm Banana Plugs"
+links = [
+  { site = "HUDY", url = "https://www.hudy.net/xhudy/products/proddesc.php?prod_id=908" },
+]
 released = "2019-06-10"
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/banana-4mm", match = "functional" },
-]
+length_mm = 600
+connectors = ["4mm banana"]

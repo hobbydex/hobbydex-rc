@@ -2,10 +2,13 @@ id = "part/tamiya/19805818"
 brand = "brand/tamiya"
 number = "19805818"
 name = "3mm Washer (Large)"
-former_names = ["13mm Washer (Large)", "3mm Washer", "3mm Washer (Large) (IME10 x5)", "Exhaust Tapping Screw (Black)", "Rondelle (grand)"]
+pack_qty = 5
+ocr_names = ["3mm Washer", "Exhaust Tapping Screw (Black)", "Rondelle (grand)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "washer-shim"
+equivalent_to = [{ spec = "spec/washer/3.2x9x0.8", match = "close", notes = "Closest standard size; Tamiya cites no standard; outer diameter measured from the manual drawing (doc/tamiya/56376-manual): 8.8 mm" }]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/5275-19805818", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805818-3mm-Washer-Large-5-pcs", kind = "dealer" },
 ]
 name_source = "ocr"

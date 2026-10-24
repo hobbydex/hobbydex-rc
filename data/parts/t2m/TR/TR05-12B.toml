@@ -1,7 +1,13 @@
 id = "part/t2m/TR05-12B"
 brand = "brand/t2m"
 number = "TR05-12B"
-name = "Butée à bille 5x12x4"
+name = "Thrust ball bearing 5x12x4"
+name_fr = "Butée à bille 5x12x4"
 source = "doc/t2m/t2m-shop"
-notes = "The store prints the item code as TR05/12B."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as TR05/12B."
 pack_qty = 1
+equivalent_to = [
+  { spec = "spec/bearing/thrust-5x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"
+category = "bearing"

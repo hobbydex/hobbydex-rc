@@ -3,7 +3,8 @@ brand = "brand/hpi"
 number = "Z543"
 name = "CAP HEAD SCREW M3x10mm"
 pack_qty = 6
-former_names = ["CAP HEAD SCREW M3x10mm", "#z543 - CAP HEAD SCREW M3x10mm"]
+pack_qty_basis = "page"
+former_names = ["#z543 - CAP HEAD SCREW M3x10mm"]
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z543" },
 ]
@@ -27,5 +28,4 @@ fits = [
 equivalent_to = [
   { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"

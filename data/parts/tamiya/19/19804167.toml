@@ -1,7 +1,9 @@
 id = "part/tamiya/19804167"
 brand = "brand/tamiya"
 number = "19804167"
-name = "2x8mm Countersunk Head Screw (Silver, x5)"
+name = "2x8mm Countersunk Head Screw (Silver)"
+ocr_names = ["2x8mm Countersunk Head Screw (Silver, x5)"]
+color = "silver"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 links = [
@@ -10,5 +12,4 @@ links = [
 equivalent_to = [
   { spec = "spec/screw/m2x8-countersunk-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"

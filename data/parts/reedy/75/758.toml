@@ -7,7 +7,6 @@ category_source = "curated"
 gtin = "784695007581"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-3000mah", match = "functional", notes = "Chemistry, cells and capacity from the name; check size and plug" },
-  { spec = "spec/connector/deans", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 2
@@ -21,3 +20,5 @@ documents = ["doc/reedy/lipo-manual-5-31-17-english-french"]
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/reedy-wolfpack-lipo-3000mah-30c-7-4v-shorty-with-t-plug/" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "maker"

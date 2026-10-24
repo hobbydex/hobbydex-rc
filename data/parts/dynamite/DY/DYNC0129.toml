@@ -6,3 +6,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-connector-t--plug-with-4-wire-13-awg/DYNC0129.html" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/wire/13awg", match = "functional" },
+]
+wire_awg = 13
+length_mm = 102

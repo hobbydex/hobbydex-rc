@@ -1,10 +1,10 @@
 id = "part/t2m/T422686"
 brand = "brand/t2m"
 number = "T422686"
-name = "prise adaptateur EC8  - XT90"
+name = "EC8 - XT90 adapter plug"
+name_fr = "prise adaptateur EC8  - XT90"
 source = "doc/t2m/t2m-shop"
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/ec8", match = "functional" },
-  { spec = "spec/connector/xt90", match = "functional" },
-]
+connectors = ["EC8", "XT90"]
+notes = "English translated by Hobbydex from the maker's French name (name_fr)"
+links = [ { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-prise-adaptateur-ec8-xt90-T422686" } ]

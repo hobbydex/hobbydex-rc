@@ -4,6 +4,7 @@ number = "AXIC1046"
 numbers = ["AXA1046"]
 name = "Wheel Nut M4 Serrated Blue"
 pack_qty = 4
+color = "blue"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-wheel-nut-m4-serrated-blue-4/AXIC1046.html" },
 ]
@@ -17,4 +18,31 @@ fits = [
   { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
   { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
+related = [
+  { part = "part/axial/AXI-4329", relation = "use-with" },
+  { part = "part/axial/AXI31629", relation = "use-with" },
+  { part = "part/axial/AXI43001", relation = "use-with" },
+  { part = "part/axial/AXI43003", relation = "use-with" },
+  { part = "part/axial/AXI43015", relation = "use-with" },
+  { part = "part/axial/AXIC0429", relation = "use-with" },
+  { part = "part/axial/AXIC1009", relation = "use-with" },
+  { part = "part/axial/AXIC1094", relation = "use-with" },
+  { part = "part/axial/AXIC1118", relation = "use-with" },
+  { part = "part/axial/AXIC1120", relation = "use-with" },
+  { part = "part/axial/AXIC3326", relation = "use-with" },
+  { part = "part/axial/AXIC4415", relation = "use-with" },
+  { part = "part/axial/AXIC8010", relation = "use-with" },
+  { part = "part/axial/AXIC8027", relation = "use-with" },
+  { part = "part/axial/AXIC8061", relation = "use-with" },
+  { part = "part/axial/AXIC8076", relation = "use-with" },
+  { part = "part/axial/AXIC8077", relation = "use-with" },
+  { part = "part/axial/AXIC8087", relation = "use-with" },
+  { part = "part/axial/AXIC8092", relation = "use-with" },
+  { part = "part/axial/AXIC8097", relation = "use-with" },
+  { part = "part/axial/AXIC8137", relation = "use-with" },
+  { part = "part/axial/AXIC8138", relation = "use-with" },
+  { part = "part/axial/AXIC8140", relation = "use-with" },
+  { part = "part/axial/AXIC8141", relation = "use-with" },
+  { part = "part/axial/AXIC8142", relation = "use-with" },
 ]

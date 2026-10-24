@@ -3,6 +3,7 @@ brand = "brand/thunder-tiger"
 number = "PD7059"
 name = "BT P.M. SCREW(20),M3*5"
 pack_qty = 20
+pack_qty_basis = "name"
 links = [
   { site = "Thunder Tiger", url = "https://shop.thundertiger.com/products/bt-p-m-screw20-m3-5-pd7059" },
 ]
@@ -10,4 +11,3 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x5-button-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"

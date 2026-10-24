@@ -2,10 +2,14 @@ id = "part/tamiya/50822"
 brand = "brand/tamiya"
 number = "50822"
 name = "3x10mm Hex Head Tapping Screw"
-former_names = ["3x10mm Hex Tapping Screw"]
+ocr_names = ["3x10mm Hex Tapping Screw"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
+point = "flat"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/5923-50822", kind = "fan-site" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-hex-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (hex head = hexagon head with a JIS cross recess); size from the name" },
 ]

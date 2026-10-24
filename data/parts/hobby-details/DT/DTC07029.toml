@@ -5,4 +5,13 @@ name = "4.0mm Banana Plug to 5102 22AWG silicone Wire L=150mm"
 category = "wire"
 category_source = "curated"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=107" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=82&a=view&r=107" },
+]
+equivalent_to = [
+  { spec = "spec/wire/22awg", match = "functional" },
+]
+wire_awg = 22
+insulation = "silicone"
+length_mm = 150
+connectors = ["4mm banana"]

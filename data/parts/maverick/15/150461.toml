@@ -3,7 +3,5 @@ brand = "brand/maverick"
 number = "150461"
 name = "XT60 to Tamiya Adapter"
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/tamiya", match = "functional" },
-  { spec = "spec/connector/xt60", match = "functional" },
-]
+connectors = ["XT60", "Tamiya"]
+links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150461?show_disc=true" } ]

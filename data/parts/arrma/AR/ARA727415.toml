@@ -6,7 +6,11 @@ pack_qty = 4
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-m4x15mm-screw-pin-4/ARA727415.html" },
 ]
-category = "screw"
+category = "pin"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/pin/4x15-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
 fits = [
   { kit = "kit/arrma/limitless", type = "direct", source = "doc/arrma/horizon-part-pages" },
 ]

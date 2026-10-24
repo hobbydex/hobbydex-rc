@@ -3,6 +3,7 @@ brand = "brand/thunder-tiger"
 number = "PD1194"
 name = "SHCS M. Screw (20) M3*14"
 pack_qty = 20
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/thunder-tiger/mt4-g3", type = "direct", source = "doc/thunder-tiger/shop" },
   { kit = "kit/thunder-tiger/k-rock", type = "direct", source = "doc/thunder-tiger/shop" },
@@ -14,4 +15,3 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x14-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"

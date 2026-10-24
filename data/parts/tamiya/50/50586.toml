@@ -2,9 +2,13 @@ id = "part/tamiya/50586"
 brand = "brand/tamiya"
 number = "50586"
 name = "3mm Washer"
-former_names = ["2 Washer (MEY x4)", "3 3mm Washer", "3mm Washer (15pcs.)", "3mm Washer (B04 x15)", "3mm Washer (BC15x15)", "3mm Washer (M45 x15)", "3mm Washer (MA6 x15) 3mm E-Ring", "3mm Washer 5mm PollCoppeoter", "Rondelle"]
+pack_qty = 15
+former_ids = ["part/tamiya/60686"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3.2x7x0.5", match = "close", notes = "Closest standard size; Tamiya cites no standard; outer diameter measured from the manual drawing (doc/tamiya/47500-manual, doc/tamiya/47503-manual, doc/tamiya/47506-manual, doc/tamiya/56376-manual, doc/tamiya/58570-manual, doc/tamiya/58571-manual): 6.8 mm" },
+]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50586/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1248-50586", kind = "fan-site" },

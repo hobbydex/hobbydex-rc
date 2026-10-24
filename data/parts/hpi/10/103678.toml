@@ -3,6 +3,7 @@ brand = "brand/hpi"
 number = "103678"
 name = "V7 WHEEL WHITE (42x83mm/2pcs)"
 pack_qty = 2
+pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/103678" },
 ]
@@ -14,3 +15,6 @@ fits = [
 ]
 category = "wheel"
 color = "white"
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for Pulse 4.6 RTR are 17 mm" },
+]

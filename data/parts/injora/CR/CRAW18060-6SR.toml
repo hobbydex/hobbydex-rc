@@ -3,9 +3,13 @@ brand = "brand/injora"
 number = "CRAW18060-6SR"
 name = "12mm Black/Silver Aluminum Wheel Hex Hubs for 1.9\" 2.2\" Rims (4 pcs / 6mm Silver)"
 pack_qty = 4
+pack_qty_basis = "name"
 material = "aluminium"
 links = [
   { site = "Injora", url = "https://www.injora.com/products/2pcs-12mm-black-silver-aluminum-wheel-hex-hubs-for-1-9-2-2-rims?variant=48257885602050" },
 ]
 category = "drivetrain"
 range = "injora/craw18060-6-colours"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

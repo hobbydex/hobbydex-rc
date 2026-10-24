@@ -6,7 +6,4 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-adapter-ec2-device-deans-battery/DYNC0076.html" },
 ]
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/deans", match = "functional" },
-  { spec = "spec/connector/ec2", match = "functional" },
-]
+connectors = ["EC2", "Deans"]

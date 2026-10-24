@@ -7,7 +7,6 @@ category_source = "curated"
 gtin = "784695273313"
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-  { spec = "spec/connector/deans", match = "functional" },
 ]
 chemistry = "lipo"
 cells = 2
@@ -20,3 +19,5 @@ documents = ["doc/reedy/lipo-manual-5-31-17-english-french"]
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/reedy-wolfpack-lipo-1600mah-30c-7-4v/" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "maker"

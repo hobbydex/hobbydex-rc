@@ -5,6 +5,7 @@ name = "SW203 Screw KM3x8mm"
 name_de = "SW203 Senkkopfschraube M3x8mm 10 Stück, EVO-X 6000"
 gtin = "4260476358449"
 pack_qty = 10
+pack_qty_basis = "page"
 fits = [
   { kit = "kit/amewi/evo-x6000", type = "direct", source = "doc/amewi/22320-product-page" },
 ]
@@ -15,4 +16,3 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"

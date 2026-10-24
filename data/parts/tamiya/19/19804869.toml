@@ -2,10 +2,16 @@ id = "part/tamiya/19804869"
 brand = "brand/tamiya"
 number = "19804869"
 name = "3x25mm Tapping Screw"
-former_names = ["3x25mm Tapping Screw (Black)"]
+pack_qty = 5
+ocr_names = ["3x25mm Tapping Screw (Black)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+point = "flat"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18470-19804869", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19804869-AP3x25mm-TAPPING-SCREW5pcs-58611", kind = "dealer" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x25-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

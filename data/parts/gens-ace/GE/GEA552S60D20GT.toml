@@ -6,7 +6,6 @@ gtin = "6928493308585"
 category = "battery"
 equivalent_to = [
   { spec = "spec/battery/lihv-2s-5500mah", match = "functional", source = "doc/gens-ace/car-line", notes = "Chemistry, cells and capacity from the product title; check size and plug" },
-  { spec = "spec/connector/deans", match = "functional" },
 ]
 chemistry = "lihv"
 cells = 2
@@ -19,3 +18,5 @@ weight_g = 248
 links = [
   { site = "Gens ace", url = "https://gensace.de/products/gens-ace-g-tech-5500mah-7-6v-2s1p-60c-hv-car-lipo-battery-pack-hardcase-20-with-t-plug" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

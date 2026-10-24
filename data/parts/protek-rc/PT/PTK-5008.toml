@@ -2,11 +2,13 @@ id = "part/protek-rc/PTK-5008"
 brand = "brand/protek-rc"
 number = "PTK-5008"
 name = "Futaba Style Servo Connectors (4 Pair)"
+pack_qty = 8
+pack_qty_basis = "name"
 category = "wire"
 category_source = "curated"
 links = [
   { site = "RC Visions", url = "https://rcvisions.com/products/protek-rc-futaba-style-servo-connectors-4-pair", kind = "dealer" },
 ]
 equivalent_to = [
-  { spec = "spec/connector/servo-jr-futaba", match = "functional" },
+  { spec = "spec/connector/servo-futaba", match = "functional" },
 ]

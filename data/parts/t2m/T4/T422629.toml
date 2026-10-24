@@ -1,9 +1,10 @@
 id = "part/t2m/T422629"
 brand = "brand/t2m"
 number = "T422629"
-name = "Prise Dean male - XT30 femelle"
+name = "Dean male - XT30 female"
+name_fr = "Prise Dean male - XT30 femelle"
 source = "doc/t2m/t2m-shop"
 category = "wire"
-equivalent_to = [
-  { spec = "spec/connector/xt30", match = "functional" },
-]
+connectors = ["Deans", "XT30"]
+notes = "English translated by Hobbydex from the maker's French name (name_fr)"
+links = [ { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-prise-dean-male-xt30-femelle-T422629" } ]

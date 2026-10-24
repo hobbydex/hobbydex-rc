@@ -3,6 +3,7 @@ brand = "brand/3racing"
 number = "FGX-123"
 name = "4mm Ball Stud M3 x 5mm (4pcs) For 3racing Sakura FGX"
 pack_qty = 4
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/3racing/sakura-fgx", type = "direct", source = "doc/3racing/shop" },
 ]
@@ -11,3 +12,7 @@ links = [
 ]
 category = "ball-end"
 ball_type = "stud"
+equivalent_to = [
+  { spec = "spec/ball-end/4mm-stud", match = "functional" },
+]
+ball_mm = 4.0

@@ -1,7 +1,8 @@
 id = "part/t2m/T1362004C"
 brand = "brand/t2m"
 number = "T1362004C"
-name = "Accu LiPo 4S 14.8V 6200 mAh 50C"
+name = "LiPo battery 4S 14.8V 6200 mAh 50C"
+name_fr = "Accu LiPo 4S 14.8V 6200 mAh 50C"
 source = "doc/t2m/t2m-shop"
 equivalent_to = [
   { spec = "spec/battery/lipo-4s-6200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
@@ -11,3 +12,7 @@ cells = 4
 capacity_mah = 6200
 c_rating = 50
 category = "battery"
+notes = "English translated by Hobbydex from the maker's French name (name_fr)"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+links = [ { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-accu-electrique-t2m-accu-lipo-4s-14-8v-6200-mah-50c-T1362004C" } ]

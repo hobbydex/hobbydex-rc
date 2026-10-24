@@ -3,6 +3,7 @@ brand = "brand/hosim"
 number = "2-F31-052H"
 name = "XT60 2PCS 11.1V 5000mah 30C Li-Po Battery For M33 M23 RC Cars"
 pack_qty = 2
+pack_qty_basis = "name"
 applies_to = "M33 M23 RC Cars"
 fits = [
   { kit = "kit/hosim/m23", type = "direct", source = "doc/hosim/store" },
@@ -15,9 +16,10 @@ c_rating = 30
 connector = "XT60"
 equivalent_to = [
   { spec = "spec/battery/lipo-3s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
-  { spec = "spec/connector/xt60", match = "functional" },
 ]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-xt60-2pcs-11-1v-5000mah-30c-li-po-battery-for-m33-m23-rc-cars" },
 ]
 category = "battery"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

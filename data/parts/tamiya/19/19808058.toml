@@ -2,10 +2,16 @@ id = "part/tamiya/19808058"
 brand = "brand/tamiya"
 number = "19808058"
 name = "2x6mm Tapping Screw"
-former_names = ["12x6mm Tapping Screw", "16 2x6mm Tapping Screw (Silver)", "2x600m Tapping Screw (ME3xi0) —y", "2x6mm Tapping Screw (Silver)", "2x6mm Tapping`Screw", "Prk i Sorew (ME 1", "Vis taraudeuse"]
+pack_qty = 10
+ocr_names = ["16 2x6mm Tapping Screw (Silver)", "2x600m Tapping Screw (ME3xi0) —y", "2x6mm Tapping Screw (Silver)", "Vis taraudeuse"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13729-19808058", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19808058-2x6mm-Tapping-Screw-10-pcs", kind = "dealer" },
 ]
+point = "flat"
 category = "screw"
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m2x6-pan-jis-tapping", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

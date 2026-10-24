@@ -1,7 +1,8 @@
 id = "part/t2m/T1006180"
 brand = "brand/t2m"
 number = "T1006180"
-name = "Accu Ni-MH 7.2V 1800mAh"
+name = "Ni-MH battery 7.2V 1800 mAh"
+name_fr = "Accu Ni-MH 7.2V 1800mAh"
 source = "doc/t2m/t2m-shop"
 equivalent_to = [
   { spec = "spec/battery/nimh-6s-1800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
@@ -10,3 +11,5 @@ chemistry = "nimh"
 cells = 6
 capacity_mah = 1800
 category = "battery"
+notes = "English translated by Hobbydex from the maker's French name (name_fr)"
+links = [ { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-accu-electrique-t2m-accu-ni-mh-7-2v-1800mah-T1006180" } ]

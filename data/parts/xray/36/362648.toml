@@ -2,7 +2,14 @@ id = "part/xray/362648"
 brand = "brand/xray"
 number = "362648"
 name = "BALL END 4.9MM WITH 4MM THREAD (2) - (replacement for #302652)"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5794" },
+]
 pack_qty = 2
-former_names = ["BALL END 4.9MM WITH THREAD 4MM", "BALL END 4.9MM WITH THREAD 4MM (2) - (replacement for #302652)", "BALL END 4.9mm WITH THREAD 4mm (2) - (replacement for #302652)", "BALL END 4.9mm WITH 4mm THREAD (2) - (replacement for #302652)"]
+pack_qty_basis = "name"
+former_names = ["BALL END 4.9MM WITH THREAD 4MM", "BALL END 4.9MM WITH THREAD 4MM (2) - (replacement for #302652)"]
 category = "ball-end"
 ball_mm = 4.9
+equivalent_to = [
+  { spec = "spec/ball-end/4.9mm-stud-m4", match = "functional" },
+]

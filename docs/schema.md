@@ -176,8 +176,17 @@ trim) is a release of that platform, not a kit of its own.
 
 One sold product: a yearly edition, a Carpet or Dirt version, an RTR, a
 re-release. Keyed by manufacturer item number when there is one, otherwise by a
-slug (`xb4-2013`, `xb8e-2021`). `kind` is kit | rtr | arr. `status` is
+slug (`xb4-2013`, `xb8e-2021`). `status` is
 announced | released | discontinued. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
+
+`kind` is the build the buyer gets, one of kit | rtr | arr | roller:
+
+- `kit`: built by the buyer; the electronics are usually bought separately.
+- `rtr` (ready to run): built and complete, radio included, often battery and charger.
+- `arr` (almost ready to run): built, without radio and sometimes without battery. PNP (plug and play) is `arr`.
+- `roller`: a built chassis without electronics (and usually without body), as some makers sell it (Axial, Element, Losi, Team Associated "roller" or "rolling chassis").
+
+tools/validate.py rejects any other value.
 
 `color` (optional) is the colour the release is sold in, in plain words from the same palette as a part's `color` ("red"; two or three colours as "blue/black", "green/black/white"), read from the name's colour clause by link_release_colours.py; left out when the name names none.
 
@@ -289,7 +298,7 @@ including variant suffixes (`368014-S`, `362280-K`). `name` is the description
 from the newest source, verbatim apart from trademark glyphs and quote
 normalisation; the trailing pack count `(10)` is moved into `pack_qty`. Older
 differing descriptions go to `former_names` so a rename or a spec change
-(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
+(`PIN 2x10` to `PIN 2x9.8` under the same number) stays visible. `former_names` holds only the names a maker published: a product it renamed, on its own site or in its catalogue. A former name is a different name the maker published for the same part. It is not the part's current name again once a pack count (`(10)`, `x10`, `10pcs`), a part or set number (five or more digits), punctuation, the brand word in front (`HUDY PIN` for `Pin`) and a store's catalogue number of three to six digits in front (`1625 Parts Screws` for `1621 Parts Screws`) are removed, and it is not listed twice (case and spacing ignored); validate.py rejects both, and an importer's `former_names.store()` drops them (the pack count of a dropped entry becomes `pack_qty` when the part has none). A listing line such as `HEX SCREW SH M3x14 (10) 107841` is therefore never a former name. A name read by OCR from a manual or a scan is not one: it goes to `ocr_names`, and a manual's bag callout (`(BBS x10)`) is no name at all. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
 ```toml
 id = "part/xray/362250"
@@ -299,6 +308,10 @@ name = "COMPOSITE STEERING BLOCK - MEDIUM - V2"
 pack_qty = 2
 former_names = ["COMPOSITE STEERING BLOCK"]
 ```
+
+`ocr_names` (optional, a list of strings): the names OCR read from a manual or a scan for this part, kept only for the matching tools. The site never shows them and the search index does not hold them (`export.py` writes them with the rest of the record). A reading that has no letters, runs over 60 characters (several names in one) or is a single word is dropped (`former_names.ocr_clean()`). A reading that is the maker's own product page title for the part stays a former name.
+
+`pack_qty_basis` (optional, only with `pack_qty`): where the count came from, written right after it. `name`: the maker's part name states it (`(10)`, `10pcs`). `page`: the maker's (or a dealer's) product page states it. `includes`: the sum of the part's `includes` quantities (a bearing kit). `photo`: counted on one product photo, which does not always show the whole pack, so this is the weakest basis; the site says so. `photos`: two or more independent photos of the item number gave the same count. `owner`: checked by the project owner on the pack. A text basis always wins over a photo count; a photo count that disagrees with a text count is never written (audit "pack-photo-disagrees"). A `pack_qty` with no basis was written before the basis existed and its source is not known (audit "pack-qty-no-basis").
 
 A part of a brand with `item_numbers = false` has no `number`: never put a
 store handle or SKU there to fill it. Its id keeps a slug
@@ -314,7 +327,7 @@ brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 A brand that names the car only in the part's name (RW Racing: "Supalite Spurs
 48DP for Xray 008/009 73T") gives the car's words from the name, "Xray 008/009".
 
-`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `clip`, `cooling`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `esc`, `gear`, `glue`, `light`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin`, `pinion`, `radio`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `washer-shim`, `wheel`, `wing`, `wire`. It is derived
+`category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `clip`, `cooling`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `esc`, `gear`, `glue`, `light`, `manual`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin`, `pinion`, `radio`, `rod-end`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `turnbuckle`, `washer-shim`, `wheel`, `wing`, `wire`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
 number have none.
@@ -331,11 +344,11 @@ call graphite; plastic covers composite, nylon and POM; for a bearing, the
 balls: ceramic is a hybrid bearing), `material_grade` (the alloy as named:
 "7075-T6", "6061"; tools/link_material.py reads both from names and leaves
 a name with two materials unset), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
-`thread_type` (machine | self-tapping), for shocks `shock_part` (complete | body |
+`thread_type` (machine | self-tapping), for self-tapping screws `point` (cone | flat | rounded | blunt: the shape of the end; flat as ISO 7049-F, cut off flat after the thread, as on Tamiya's tapping screws in its product photos; blunt is a longer taper to a flat end; drawings use cone when it is not set), for shocks `shock_part` (complete | body |
 shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
 and `shaft_mm` (shaft diameter), `name_source` (`ocr`: the name was read by OCR from a scanned document and not checked yet; `manufacturer`: corrected from the manufacturer's own product page; `manual`: copied from a maker's manual as printed, read by eye), `range` (colour versions of one part share a range ending in `-colours`, e.g. "team-corally/c-00180-1055-colours" for a body in clear and four painted colours, set by tools/link_colour_variants.py; tools/link_part_colours.py then gives each version its `color` in plain words when the name states one colour of the part itself ("(blue-anodized)" -> "blue"); otherwise a shared id such as "rc4wd/540-crawler-brushed-motor" for the
 parts of one product range that differ only in wind, kV or a similar rating;
-the site lists the other versions on each part page), for ball studs and ball cups `ball_mm` (the ball
+the site lists the other versions on each part page), for ball studs, rod ends and ball cups `ball_mm` (the ball
 diameter both must share) and for balls `ball_type` (stud: has its own thread |
 nut: threaded inside, on a separate screw | through-hole: bored through, a screw
 passes through it | set-screw: has its own set screw that clamps it on an
@@ -519,6 +532,7 @@ Releases can carry a `gtin` too, the barcode on the kit's box.
 (https only); the site shows them as buttons next to the web search.
 `kind = "press"` marks a news or press site's post about the release or part (Big Squid RC); see `announced`.
 `kind = "dealer"` marks a retailer's or distributor's product page for this release or part, when the maker has none for it. It is a shop's page, never the maker's: the site shows it as "Dealer page: <host>", never as the product page. A release or part keeps a dealer link only when it has no maker product page (a maker link or a `product_page` document of the maker); a release has one, a part one per shop, each its own product page on the shop; tools/validate.py fails a release or part with a dealer link beside a maker link or product page. A shop's listing page that names several releases is a document of kind `catalog`, never a release's link.
+`kind = "maker"` marks a page of the brand's own shop or site that is not its product page (the Tamiya USA spare page of an 8-digit Tamiya spare, `{ site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/...", kind = "maker" }`); the site shows it as a maker page. A part with a maker-kind link keeps its dealer links (user, 2026-10-24), and tools/validate.py counts only a link with no kind as the maker product link for the dealer rule.
 `kind = "fan-site"` marks a link to a fan or community site (such as
 TamiyaBase): it is a courtesy link for readers, not a source for any value in
 Hobbydex, and the site shows it apart from the brand's own pages.
@@ -559,6 +573,10 @@ rebrand_of = [{ part = "part/flysky/FS-GT5", source = "doc/community/2026-10-10-
 translation (Yokomo, ABC Hobby, Wrap-Up Next, EXceed and O.S. Engines publish Japanese-only names;
 tools/translate_ja.py gives them the English name, with a note).
 
+`name_fr`: the brand's French name, kept when the English `name` is a
+translation (T2M and Hobbytech publish French-only names; tools/translate_fr.py
+gives them the English name from tools/data/translate_fr_names.tsv, with a note).
+
 `related`: other parts of the same brand this part goes with, as the brand's
 name or page says: `[{ part, relation }]` with relation requires (needs the
 other part: Tekno "requires TKR9057B"), fits (made to fit that part: Corally
@@ -568,6 +586,7 @@ matching list gives as the same colour in another range, though the shade
 may differ slightly: Tamiya LP-1 Black, X-1 Black and TS-14 Black; recorded
 on each of the paints). Others are recorded on the citing part; the site
 shows it from both sides. tools/link_part_refs.py reads them from names.
+A wheel nut that states its hex (17, 23 or 24 mm) is `use-with` each wheel hex or axle of the same brand that shares a release with it and, where both state a size, the same size; the row sits on the nut only, and the site shows "Used with" on the other part.
 
 `supersedes`: the part this one replaces, when the brand has replaced it with
 an upgraded version (`supersedes = "part/team-corally/C-00180-194"` on
@@ -579,7 +598,7 @@ C-00180-714). The site shows it on both parts.
 
 A generic, brand-independent specification. Category-specific fields; for
 screws: `thread`, `length_mm`, `head` (countersunk | socket-cap | button |
-pan | ...), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
+pan | flanged-socket-cap | flanged-button | flanged-pan | low-head | set | truss | hex (a hexagon head, with no socket: Tamiya's hex head screws, whose drive is jis); the brand names each code in [brand-hardware-names.md](brand-hardware-names.md)), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
 the same geometry exists in many materials.
 
 ```toml
@@ -611,6 +630,17 @@ width_mm = 4
 designation = "MR105"
 ```
 
+Inch bearings take the maker's R series (R168 for 1/4x3/8x1/8 in) when all three
+sizes match it exactly; a size written in rounded millimetres is folded into the
+exact spec (former_ids). A flanged bearing takes the flanged designation of its
+series (MF105, F6700, FR168 for inch) only when a maker table confirms it.
+
+A flanged bearing may give its collar: `flange_mm` (flange outer diameter, larger
+than `outer_mm`), `flange_width_mm` (flange thickness) and `flange_source`, the
+URL of the maker's catalogue page the figures come from. A size missing from the
+catalogue gets none of the three.
+
+
 Oils: `base` (silicone) and `viscosity_cst`; id `spec/oil/silicone-350cst`.
 
 Pinions: the meshing geometry, `teeth` and either `pitch_dp` (diametral
@@ -625,11 +655,29 @@ pitch and tooth count mesh the same pinions but mount differently.
 
 Chargers are parts with category charger and, when stated, `power_w`.
 
-Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh),
+Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh | liion),
 `cells`, `capacity_mah` and `nominal_v`; id `spec/battery/lipo-2s-5000mah`.
 Whether a pack fits a car depends on the part's `c_rating`, `case` (hard |
 soft | shorty), `dimensions_mm` ([length, width, height]), `weight_g` and
 `connector` (XT60, EC5, Deans, ...), so those stay on the part.
+`balance_connector` is the balance lead, in the same plug vocabulary as
+`connector` ("JST-XH" only, for now): the maker states it, and no cell count
+alone sets it. Its pin count follows from `cells` (pins = cells + 1), so the
+site links a pack with `cells = 3` and `balance_connector = "JST-XH"` to
+`spec/connector/jst-xh-4`. A pack that states another balance plug (Traxxas
+iD built-in, EHR, TP, Hyperion) takes no value until a spec for it exists.
+NiMH and Li-Ion packs have none (a maker's own statement of a lead still counts).
+`balance_connector` is the battery's secondary plug, not its main `connector`
+(the power plug): the site shows the two as separate rows, and a connector spec
+lists a battery under its balance section, never as its main plug.
+`balance_connector_basis` says where the value comes from: `"maker"` when the
+maker's text names JST-XH, `"convention"` when nothing is stated and the pack is
+a LiPo, LiHV or LiFe of 2S to 8S (the usual balance lead; the site says it is not
+stated by the maker). Set by `tools/link_part_connectors.py --category battery
+--balance`, which never changes a maker value and recomputes a convention value on every run (a maker statement of JST-XH relabels it "maker"; another plug or an exclusion clears it); a pack whose maker or name states
+another balance system (EHR, G-Tech, TP, Hyperion, XHP, Traxxas iD), a Spektrum
+Smart pack, a 1S pack, a pack without `chemistry` or `cells`, and NiMH packs get
+none. `chemistry` is set from the name when the name states it (LiPo, LiHV, LiFe, NiMH; tools/name_fields.py), so a pack without a stated chemistry gets none.
 
 ```toml
 name = "1100mAh 3S 60C 11.4V(HV) Lipo Battery | XT30 Plug"
@@ -849,7 +897,17 @@ parallel pin, with standards ISO 2338 and ISO 8734 when the size is in
 their tables (RC makers also use odd lengths such as 2x9.8): drive-shaft cross pins,
 wheel hex drive pins, diff pins. Parts link with match "functional" (size
 from the name; hardness and tolerance seldom stated). Hinge, pivot, body,
-king, roll and spring pins and grooved or threaded pins get no pin spec.
+king, roll and spring pins and grooved pins get no pin spec.
+
+Screw pins (a smooth pin with a head, hex socket or cross, and only a short
+thread right under the head; the rest of the shank is smooth, as on a hinge
+pin that screws in) use `spec/pin/<d>x<L>-screw` with `type = "screw"`,
+`diameter_mm`, `length_mm` and `thread`, e.g. `spec/pin/3x25-screw` ("M3").
+`thread` is the metric size of the diameter (M3 for 3 mm) for 2, 2.5, 3, 4, 5
+and 6 mm pins, or the size the name states; other diameters get no thread.
+Parts link with match "functional" from the size in their name, and only
+when the name gives one size: sets and bags of mixed sizes, and screw pins
+inside an assembly, get none. Screw pins are category pin.
 
 ### Washer specs
 
@@ -869,6 +927,8 @@ part's `material`. Parts in category washer-shim link with match
 0.1/0.2/0.3mm") list one `includes` row per spec, with `qty` where the name
 gives it. Lock, spring, serrated, wedge and flanged washers, flanged and
 crush tubes and rubber or foam body-mount spacers get no washer spec.
+
+A washer spec that a published standard fixes cites it in `standards` (`standards = ["DIN 125"]`, with a `data/standards` entry). A maker that cites no standard for its washer links it to the closest such spec with match "close": the closest by outer diameter, only within 0.3 mm, and the part's notes give the measured outer diameter and the manual it was measured from (doc/tamiya/56376-manual).
 
 ```toml
 id = "spec/washer/3x6x0.5"
@@ -903,22 +963,108 @@ name = "3mm E-clip"
 shaft_mm = 3
 ```
 
+### Ball-end specs
+
+`spec/ball-end/<ball>mm-<type>[-<thread>][-h<height>]` (category "ball-end"):
+`ball_mm` (the ball diameter, 3 to 14 mm), `type` (stud | nut | through-hole |
+set-screw) and, where the name states them, `thread` ("M3", a metric diameter
+from M2 to M6) and `height_mm` (the ball's height from "H=8.7"). The type is
+read as tools/link_ball_size.py reads it; a name with a stated thread that is
+no nut, hole or set screw is a stud. The ball size is one size in the name:
+"D=4.9" when the name gives it, otherwise the one size a ball word follows.
+Length ("L=6") and the drive size ("2mm Hex") are not in the spec. Parts link
+with match "functional" (set by tools/link_ball_end_specs.py). Turnbuckles,
+links, rod ends, cups and sets are not ball ends.
+
+```toml
+id = "spec/ball-end/4.9mm-stud-m3"
+category = "ball-end"
+name = "4.9mm ball stud, M3 thread"
+ball_mm = 4.9
+type = "stud"
+thread = "M3"
+```
+
+### O-ring specs
+
+`spec/o-ring/<inner>x<cross>` (category "o-ring"): `inner_mm` (the inside
+diameter) and `cross_mm` (the cross section), both as the maker writes them in
+the name: "O-RING 10 x 1.5" is spec/o-ring/10x1.5. The cross section is always
+thinner than the inside diameter. Parts link with match "functional"
+(tools/link_oring_specs.py). X-rings, gaskets, bladders, boots and sets of
+several sizes are not O-rings for this purpose.
+
+```toml
+id = "spec/o-ring/10x1.5"
+category = "o-ring"
+name = "10 x 1.5mm O-ring"
+inner_mm = 10
+cross_mm = 1.5
+```
+
+### Circlip specs
+
+`spec/circlip/<shaft>mm[-<thickness>]` (category "circlip"): a C-clip, Seger
+clip or circlip named by the shaft it fits (`shaft_mm`), with `thickness_mm`
+when the name gives one ("Seger clip 12x1.0" is spec/circlip/12mm-1). Circlips
+are a different standard from E-clips, so they have their own category and no
+DIN 6799 fields. Parts link with match "functional", or "close" when the name
+says thin or HD (tools/link_circlip_specs.py). Body clips are sized by their
+post, not a shaft, and get no spec.
+
+Size specs of the three kinds above are written only when the size occurs on
+at least two parts; a size on one part stays unlinked until a second part
+shows it.
+
 ### Connector specs
 
 `spec/connector/<slug>` (category "connector"): one connector family and
 size, as the makers name them: XT30, XT60, XT60H and XT90-S (anti-spark),
 XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC3 and IC5
 (EC-compatible), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
-mini Tamiya, JST-RCY, JST-XH, the JR/Futaba servo plug, bullets by
-diameter (`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`,
-`pins` (the contact count, when a family has one), `contact_mm` (pin or
-bullet diameter), `anti_spark` and `polarized` (booleans). A current is set
+mini Tamiya, JST-RCY, JST-XH (`jst-xh`, and `jst-xh-3` to `jst-xh-9` for the
+2S to 8S balance lead, pins = cells + 1), the two servo plugs (`servo-jr`
+with two bevelled corners and `servo-futaba`, the Futaba J plug with a lip;
+they plug into each other but are two shapes), bullets by diameter
+(`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`, `pins`
+(the contact count, when a family has one), `pitch_mm` (contact spacing),
+`contact_mm` (pin or bullet diameter), `anti_spark` and `polarized`
+(booleans), and `polarization` (how the housing keys, in words). A current is set
 only from a source: `current_a` (continuous) and `burst_a` (when stated),
 each with `<field>_source`, the maker's own page; the wire gauge the rating
-depends on goes in `notes`. Parts link with match "functional" from their
-name: a lead or adapter with two connectors links both (see
-tools/link_connector_specs.py). Battery and ESC parts link from their
-`connector` field the same way.
+depends on goes in `notes`.
+
+A wire part is either the plug itself or a lead, and only the plug is
+equivalent to a connector spec. A part that is just the plug (a plug or plug
+pair, with or without a short tail of wire sold as "connector") has one
+`equivalent_to` row per connector its name gives, match "functional" (or
+"close" for XT30U). A lead, adapter, charge lead, extension, harness or any
+other part that is not just a plug has no connector-spec row. It lists its
+plugs in `connectors`, in the order its name gives them, using the plug names
+of the battery `connector` field:
+
+```toml
+id = "part/beez2b/BEEC1056"
+name = "XT60 Charge lead : TRX 2019 4S"
+category = "wire"
+connectors = ["XT60", "Traxxas iD"]
+```
+
+BEEC1056 is a lead, so it lists its two plugs (XT60, and Traxxas iD for
+"TRX 2019") and is not equivalent to the XT60 spec; its plug pair from the
+same maker, BEEC2034F "Connector : XT60 Female plug", is equivalent to
+`spec/connector/xt60`. Plug names map to specs in tools/validate.py
+(`PLUG_SPEC`), the same table as tools/link_connector_specs.py (`PLUG_NAME`).
+A servo plug is named "JR" or "Futaba" as the name gives it; "JR/Futaba" is
+one plug sold as fitting both (a charge lead or switch harness named for both
+radios) and links to both specs.
+tools/validate.py checks that each entry maps to an existing connector spec,
+that `connectors` is only on wire parts, and that a part has not both
+`connectors` and a connector-spec row.
+
+A battery or ESC is not equivalent to its plug either: it names its plug in
+`connector` (the site links that field to the spec) and has no `equivalent_to`
+row to a connector spec.
 
 ```toml
 id = "spec/connector/ec5"
@@ -932,6 +1078,10 @@ current_a = 120
 current_a_source = "https://www.horizonhobby.com/product/connector-ec5-device-2/EFLAEC501.html"
 notes = "More than 120 A continuous with 10 AWG wire, as the maker states it."
 ```
+
+A screw spec's head comes from the brand's code table (docs/brand-hardware-names.md):
+the same words map the same way for every brand (see [brand-hardware-names.md](brand-hardware-names.md)). Flanged heads have no ISO standard for
+a flanged socket cap, so their spec cites none.
 
 ### Nut specs
 
@@ -954,6 +1104,14 @@ them, `across_flats_mm`, `height_mm` and `standards`. Types:
 - `dome` and `flanged-dome` (acorn or cap nut), `square`, `knurled` (thumb
   nut), `wing`, and `wheel` (a wheel nut whose name gives the thread but
   not its shape; a 17 mm hex is in the id: `m12x1-wheel-17mm`).
+
+A big-bore wheel nut (1/8 and 1/5 scale: M12 or M12x1, a 17 mm or 24 mm
+wrench hex) is a wheel nut in shape too: the hex sits outside the wheel, and
+a long threaded collar protrudes from it into the wheel's hex bore, often
+with a flange or serrations and sometimes a closed cap. Length and collar
+dimensions are recorded only where the maker states them; none are invented.
+Standard serrated flange and flanged lock nuts of smaller cars link to the
+generic nut specs.
 
 `profile` is only on hex and lock nuts. The across flats is on the spec
 only where the ISO/DIN tables fix it for that type and size (M3: 5.5 mm,
@@ -1027,6 +1185,36 @@ key_fields = [
   { field = "torque_kgcm", label = "Torque", from = "part", unit = "kg·cm" },
 ]
 ```
+
+### Wire specs
+
+`spec/wire/<n>awg` (category "wire"): one AWG gauge from 8 to 30 (`awg`), its
+nominal solid round copper conductor (`conductor_mm`, the diameter,
+`conductor_in`, the same in inches, and `cross_section_mm2`) from the AWG
+formula of ASTM B258, which is defined in inches: 0.005 in x 92^((36 - n)/39)
+(`standards = ["ASTM B258"]`, the standard's notes give the formula). Wire
+parts with a gauge link to it with match "functional"; a lead with two gauges
+links both. Only the gauge is in the spec: insulation and strands are the
+part's own.
+
+Part fields on wires (category wire; set by tools/link_wire_specs.py from the
+maker's wording, never overwritten):
+- `wire_awg`: the gauge (int, 4 to 32), or a list of two for a lead with two
+  gauges ("12+14AWG").
+- `insulation`: "silicone", "pvc" or "teflon", as the name says.
+- `strands`: the strand count, when stated ("1000 strands").
+- `length_mm`: the length the part is sold in. Inside brackets the first length
+  wins, so a sensor cable "(200mm (7.9"))" is 200; a list of sizes without a
+  bracketed one, or a sum "50+50mm", is no length.
+- `color`: as on other parts (plain words; "red/black" for a pair, "fluorescent
+  pink" with "fluorescence" in the name).
+
+Heat shrink (category wire, name says heat shrink, shrink tube or
+Schrumpfschlauch): `diameter_mm` (the supplied inner diameter; a list for an
+assortment), `shrink_ratio` (the ratio as a number, 2:1 is 2), `flat_width_mm`
+(a flat battery wrap, only when the name says flat) and `length_mm`. The site
+shows "Shrinks to" as diameter / ratio, only when the ratio is stated.
+
 
 ## standard
 

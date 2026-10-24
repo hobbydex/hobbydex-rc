@@ -7,7 +7,6 @@ applies_to = "8X, 8XE"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-suspension-ball-6.8mm-4-8x-8xe/TLR244052.html" },
 ]
-former_names = ["Suspension Ball, 6.8mm (4)"]
 category = "ball-end"
 ball_mm = 6.8
 ball_type = "through-hole"
@@ -18,3 +17,6 @@ fits = [
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-part-pages" },
 ]
 gtin = "605482206812"
+equivalent_to = [
+  { spec = "spec/ball-end/6.8mm-through-hole", match = "functional" },
+]

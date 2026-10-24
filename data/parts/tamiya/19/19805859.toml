@@ -2,10 +2,16 @@ id = "part/tamiya/19805859"
 brand = "brand/tamiya"
 number = "19805859"
 name = "3x15mm Screw"
-former_names = ["13x15mm Screw (BC1x4)", "3x15mm Screw (Black)", "3x15mm Screw (MBI x4)", "7 3x15mm Screw"]
+pack_qty = 4
+ocr_names = ["3x15mm Screw (Black)"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 category = "screw"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/6706-19805859", kind = "fan-site" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19805859-3x15mm-Screw-4-pcs", kind = "dealer" },
+  { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x15mm-screw-58293/", kind = "maker" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x15-pan-jis", match = "functional", notes = "Head and drive from Tamiya's naming convention for its screws (round head = pan, cross = JIS); size from the name" },
+]

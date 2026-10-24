@@ -3,6 +3,7 @@ brand = "brand/thunder-tiger"
 number = "PD9008"
 name = "BHCS M.SCREW(20)M2.5x8"
 pack_qty = 20
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/thunder-tiger/kaiser-emta", type = "direct", source = "doc/thunder-tiger/shop" },
 ]
@@ -12,5 +13,4 @@ links = [
 equivalent_to = [
   { spec = "spec/screw/m2.5x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
 category = "screw"
