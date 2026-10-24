@@ -91,7 +91,7 @@ ENUMS = {
     "spec.motor_type": {"brushed", "brushless"},
     "part.motor_type": {"brushed", "brushless", "both"},   # ESCs (docs/schema.md "ESCs")
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
-    "part.chemistry": {"lipo", "lihv", "life", "nimh"},
+    "part.chemistry": {"lipo", "lihv", "life", "nimh", "liion"},
     "part.case": {"hard", "soft", "shorty"},
     "part.name_source": {"ocr", "manufacturer", "manual"},
     "part.ball_type": {"stud", "nut", "through-hole", "set-screw"},

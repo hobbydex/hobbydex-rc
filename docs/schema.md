@@ -655,7 +655,7 @@ pitch and tooth count mesh the same pinions but mount differently.
 
 Chargers are parts with category charger and, when stated, `power_w`.
 
-Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh),
+Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh | liion),
 `cells`, `capacity_mah` and `nominal_v`; id `spec/battery/lipo-2s-5000mah`.
 Whether a pack fits a car depends on the part's `c_rating`, `case` (hard |
 soft | shorty), `dimensions_mm` ([length, width, height]), `weight_g` and
@@ -666,7 +666,7 @@ alone sets it. Its pin count follows from `cells` (pins = cells + 1), so the
 site links a pack with `cells = 3` and `balance_connector = "JST-XH"` to
 `spec/connector/jst-xh-4`. A pack that states another balance plug (Traxxas
 iD built-in, EHR, TP, Hyperion) takes no value until a spec for it exists.
-NiMH packs have none.
+NiMH and Li-Ion packs have none (a maker's own statement of a lead still counts).
 `balance_connector` is the battery's secondary plug, not its main `connector`
 (the power plug): the site shows the two as separate rows, and a connector spec
 lists a battery under its balance section, never as its main plug.
