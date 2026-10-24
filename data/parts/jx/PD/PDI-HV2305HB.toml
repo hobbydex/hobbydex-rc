@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "PDI-HV2305HB"
 name = "PDI-HV2305HB 7.5KG HV Waterproof Digital Core Plastic Gear Servo"
 category = "servo"
-dead_band_us = 4
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 7.5
 voltage = 7.4
@@ -18,5 +16,7 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 4
+frequency_hz = 330
 notes = "JX files it under Medium servo; Stall torque 5.3 kg.cm at 4.8 V, 7.5 kg.cm at 7.4 V; speed 0.13 s/60deg at 4.8 V, 0.11 s/60deg at 7.4 V; lead 220 mm; waterproof, IP67."
 material = "plastic"

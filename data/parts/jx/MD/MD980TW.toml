@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "MD980TW"
 name = "MD980TW 7.4V 44KG High Performance Standard Coreless Servo"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 44
 voltage = 7.4
@@ -19,5 +15,11 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under My servo; Stall torque 26 kg.cm at 4.8 V, 36 kg.cm at 6 V, 44 kg.cm at 7.4 V; speed 0.28 s/60deg at 4.8 V, 0.21 s/60deg at 6 V, 0.17 s/60deg at 7.4 V; lead 265 mm; programmable."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/HT/2026-02-06/660.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/HT/2026-02-06/660.html" },
+]

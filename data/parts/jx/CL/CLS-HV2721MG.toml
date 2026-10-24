@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "CLS-HV2721MG"
 name = "CLS-HV2721MG 22KG Torque HV Waterproof Coreless Metal Gear Servo"
 category = "servo"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 22
 voltage = 8.4
@@ -18,4 +16,6 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/mini-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under Medium servo; Stall torque 18 kg.cm at 6 V, 22 kg.cm at 8.4 V; speed 0.1 s/60deg at 6 V, 0.08 s/60deg at 8.4 V; lead 220 mm; waterproof, IP67."

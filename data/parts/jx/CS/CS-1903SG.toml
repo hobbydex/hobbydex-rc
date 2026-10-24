@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "CS-1903SG"
 name = "CS-1903SG 7.4V 3.2KG Full Aluminium case RC Drone/Glider/Fixed Wing/Airplane Coreless Servo"
 category = "servo"
-dead_band_us = 3
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 3.2
 voltage = 7.4
@@ -17,6 +15,10 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/micro-15t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 3
+frequency_hz = 330
 notes = "JX files it under My servo; Stall torque 2 kg.cm at 6 V, 3.2 kg.cm at 7.4 V; speed 0.12 s/60deg at 6 V, 0.08 s/60deg at 7.4 V; lead 180 mm."
 material = "aluminium"
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/sa/2025-09-18/641.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/sa/2025-09-18/641.html" },
+]

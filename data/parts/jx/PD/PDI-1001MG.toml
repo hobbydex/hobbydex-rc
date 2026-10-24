@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "PDI-1001MG"
 name = "PDI-1001MG 0.04s High Speed Micro Digital Coreless Servo"
 category = "servo"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 1.5
 voltage = 6
@@ -17,5 +15,9 @@ connector = "JST1.5"
 equivalent_to = [
   { spec = "spec/servo/micro-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under Mini servo; Stall torque 1.3 kg.cm at 4.8 V, 1.5 kg.cm at 6 V; speed 0.05 s/60deg at 4.8 V, 0.04 s/60deg at 6 V; lead 100 mm."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2025-10-13/645.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2025-10-13/645.html" },
+]

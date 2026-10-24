@@ -3,9 +3,6 @@ brand = "brand/jx"
 number = "PDI-HV5932MG-180"
 name = "PDI-HV5932MG-180° 32KG 180 Angle High Precision Metal Gear High Voltage Digital Coreless Standard"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 1
 category_source = "curated"
 torque_kgcm = 32.3
 voltage = 8.4
@@ -19,4 +16,7 @@ rotation_deg = 180
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 1
 notes = "JX files it under Industrial/robot servo; Stall torque 25.2 kg.cm at 6 V, 32.3 kg.cm at 8.4 V; speed 0.12 s/60deg at 6 V, 0.1 s/60deg at 8.4 V; lead 265 mm."
