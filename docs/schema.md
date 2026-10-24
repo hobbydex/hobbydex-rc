@@ -916,6 +916,8 @@ part's `material`. Parts in category washer-shim link with match
 gives it. Lock, spring, serrated, wedge and flanged washers, flanged and
 crush tubes and rubber or foam body-mount spacers get no washer spec.
 
+A washer spec that a published standard fixes cites it in `standards` (`standards = ["DIN 125"]`, with a `data/standards` entry). A maker that cites no standard for its washer links it to the closest such spec with match "close": the closest by outer diameter, only within 0.3 mm, and the part's notes give the measured outer diameter and the manual it was measured from (doc/tamiya/56376-manual).
+
 ```toml
 id = "spec/washer/3x6x0.5"
 category = "washer"
