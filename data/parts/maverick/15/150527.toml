@@ -3,5 +3,14 @@ brand = "brand/maverick"
 number = "150527"
 name = "Bushing 8x12x3.5mm"
 pack_qty = 4
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150527" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150527?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/doha", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "bearing"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150527?show_disc=true" } ]
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "close", notes = "A plain bushing, 8x12x3.5; the ball bearing of that size replaces it" },
+]

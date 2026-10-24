@@ -1,9 +1,16 @@
 id = "part/maverick/150865"
 brand = "brand/maverick"
 number = "150865"
-name = "Aluminum Steering Assembly Set"
+name = "Aluminum Steering Assembly Set (Grey)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150865" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150865?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/microbe-sc", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/150870-kit-page" },
 ]
 category = "steering"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150865?show_disc=true" } ]
+color = "gray"
+material = "aluminium"

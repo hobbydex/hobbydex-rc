@@ -1,9 +1,14 @@
 id = "part/maverick/151510"
 brand = "brand/maverick"
 number = "151510"
-name = "Top Line 1/24th SC Body"
+name = "Top Line 1/24th SC Body (Clear)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151510" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151510?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/microbe-sc", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/microbe-sc", type = "direct", source = "doc/maverick/151503-kit-page" },
 ]
 category = "body"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151510?show_disc=true" } ]
+color = "clear"

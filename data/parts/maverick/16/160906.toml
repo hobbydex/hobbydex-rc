@@ -1,10 +1,15 @@
 id = "part/maverick/160906"
 brand = "brand/maverick"
 number = "160906"
-name = "XT60 Female to T-Plug Male"
+name = "XT60 Female to T-Plug Male Adaptor"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160906" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160906?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
 ]
 category = "wire"
 connectors = ["XT60", "Deans"]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160906?show_disc=true" } ]

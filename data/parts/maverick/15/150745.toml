@@ -2,9 +2,13 @@ id = "part/maverick/150745"
 brand = "brand/maverick"
 number = "150745"
 name = "Heat Sink (Orange)"
-color = "orange"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150745" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150745?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/doha", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/doha", type = "direct", source = "doc/maverick/150701-kit-page" },
 ]
+color = "orange"
 category = "cooling"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150745?show_disc=true" } ]

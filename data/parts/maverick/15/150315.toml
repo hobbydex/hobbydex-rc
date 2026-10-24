@@ -1,9 +1,15 @@
 id = "part/maverick/150315"
 brand = "brand/maverick"
 number = "150315"
-name = "QuantumR Race Truck Clear"
-color = "clear"
+name = "QuantumR Race Truck Clear Body"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150315" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150315?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/150350-kit-page" },
 ]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150315?show_disc=true" } ]
+color = "clear"
+category = "body"

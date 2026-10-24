@@ -3,5 +3,11 @@ brand = "brand/maverick"
 number = "MV22105"
 name = "Steering Linkage"
 pack_qty = 2
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22105" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22105?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "steering"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22105?show_disc=true" } ]

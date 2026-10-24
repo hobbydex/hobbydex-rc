@@ -1,10 +1,20 @@
 id = "part/maverick/151128"
 brand = "brand/maverick"
 number = "151128"
-name = "Flat Head Screw M2x8mm"
+name = "Flat Head Screw M2x8mm (Hex/Socket/8pcs)"
+pack_qty = 8
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151128" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151128?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151128?show_disc=true" } ]

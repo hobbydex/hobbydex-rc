@@ -1,11 +1,18 @@
 id = "part/maverick/B030"
 brand = "brand/maverick"
 number = "B030"
-name = "#b030 - BALL BEARING 10x15x4mm"
+name = "BALL BEARING 10x15x4mm"
 pack_qty = 2
+former_names = ["#b030 - BALL BEARING 10x15x4mm"]
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/B030" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/B030?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "steel"
 category = "bearing"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/B030?show_disc=true" } ]

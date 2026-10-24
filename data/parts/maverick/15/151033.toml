@@ -3,10 +3,14 @@ brand = "brand/maverick"
 number = "151033"
 name = "Wheel Washer (Black/4pcs)"
 pack_qty = 4
-pack_qty_basis = "name"
-color = "black"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151033" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151033?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151005-kit-page" },
 ]
+pack_qty_basis = "name"
+color = "black"
 category = "washer-shim"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151033?show_disc=true" } ]

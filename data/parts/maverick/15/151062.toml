@@ -2,5 +2,13 @@ id = "part/maverick/151062"
 brand = "brand/maverick"
 number = "151062"
 name = "Battery Strap"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151062" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151062?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "chassis"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151062?show_disc=true" } ]

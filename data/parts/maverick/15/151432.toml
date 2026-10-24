@@ -2,5 +2,13 @@ id = "part/maverick/151432"
 brand = "brand/maverick"
 number = "151432"
 name = "Shock absorber shaft"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151432" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151432?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "shock"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151432?show_disc=true" } ]
+shock_part = "shaft"

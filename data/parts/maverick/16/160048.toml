@@ -1,10 +1,16 @@
 id = "part/maverick/160048"
 brand = "brand/maverick"
 number = "160048"
-name = "USB 2-6 Cell 500mA NIMH"
-category = "battery"
-chemistry = "nimh"
+name = "USB 2-6 Cell 500mA NIMH Delta-Peak Charger"
 links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160048" },
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160048?show_disc=true" },
 ]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "charger"
+chemistry = "nimh"
 connector = "Tamiya"

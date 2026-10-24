@@ -1,0 +1,16 @@
+id = "part/maverick/MV22693"
+brand = "brand/maverick"
+number = "MV22693"
+name = "17T Pinion Gear (0.8 Module) (ALL Strada EVO )"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22693" },
+]
+fits = [
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod0.8-17t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+teeth = 17
+module = 0.8

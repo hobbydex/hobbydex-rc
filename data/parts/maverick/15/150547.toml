@@ -2,9 +2,14 @@ id = "part/maverick/150547"
 brand = "brand/maverick"
 number = "150547"
 name = "Heat Sink (Blue)"
-color = "blue"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150547" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150547?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
 ]
+color = "blue"
 category = "cooling"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150547?show_disc=true" } ]

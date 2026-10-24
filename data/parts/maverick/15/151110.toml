@@ -1,8 +1,15 @@
 id = "part/maverick/151110"
 brand = "brand/maverick"
 number = "151110"
-name = "Element 7.4V 1600mAh LiPo"
+name = "Element 7.4V 1600mAh LiPo Battery Pack (XT-60)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151110" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151110?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
 ]
 equivalent_to = [
@@ -14,7 +21,4 @@ capacity_mah = 1600
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
-links = [
-  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151110?show_disc=true" },
-]
 voltage = 7.4

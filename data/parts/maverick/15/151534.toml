@@ -1,9 +1,16 @@
 id = "part/maverick/151534"
 brand = "brand/maverick"
 number = "151534"
-name = "Sidepin SC Wheel/Tyre Set"
+name = "Sidepin SC Wheel/Tyre Set (Black/Front/Rear)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151534" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151534?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/microbe-sc", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/microbe-sc", type = "direct", source = "doc/maverick/151502-kit-page" },
 ]
 category = "tire"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151534?show_disc=true" } ]
+color = "black"
+vehicle = "short-course"
+position = "front-rear"

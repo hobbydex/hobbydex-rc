@@ -1,9 +1,13 @@
 id = "part/maverick/118050"
 brand = "brand/maverick"
 number = "118050"
-name = "HPI Reactor 200 Charger (UK 3"
+name = "HPI Reactor 200 Charger (UK 3 Pin)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/118050" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/118050?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
 ]
 category = "charger"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/118050?show_disc=true" } ]

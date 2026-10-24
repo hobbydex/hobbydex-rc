@@ -1,9 +1,16 @@
 id = "part/maverick/150842"
 brand = "brand/maverick"
 number = "150842"
-name = "Sidebar Buggy Wheel/Tyre Set"
+name = "Sidebar Buggy Wheel/Tyre Set (Green/Front/Rear)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150842" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150842?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/150851-kit-page" },
 ]
 category = "tire"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150842?show_disc=true" } ]
+color = "green"
+vehicle = "buggy"
+position = "front-rear"

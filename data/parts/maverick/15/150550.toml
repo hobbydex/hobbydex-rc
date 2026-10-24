@@ -2,9 +2,14 @@ id = "part/maverick/150550"
 brand = "brand/maverick"
 number = "150550"
 name = "Heat Sink (Green)"
-color = "green"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150550" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150550?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150502-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150565-kit-page" },
 ]
+color = "green"
 category = "cooling"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150550?show_disc=true" } ]

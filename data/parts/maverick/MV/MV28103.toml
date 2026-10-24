@@ -1,10 +1,20 @@
 id = "part/maverick/MV28103"
 brand = "brand/maverick"
 number = "MV28103"
-name = "ELEMENT 7.2V 1200MAH"
-category = "battery"
+name = "ELEMENT 7.2V 1200MAH NI-MH BATTERY"
+former_names = ["ELEMENT 7.2V 1200MAH"]
 links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28103" },
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28103?show_disc=true" },
 ]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
+category = "battery"
 chemistry = "nimh"
 voltage = 7.2
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-1200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 6
+capacity_mah = 1200

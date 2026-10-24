@@ -1,9 +1,16 @@
 id = "part/maverick/151148"
 brand = "brand/maverick"
 number = "151148"
-name = "Metal Upright Set"
+name = "Metal Upright Set (4pcs/Front/Grey)"
+pack_qty = 4
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151148" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151148?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
 ]
 category = "suspension"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151148?show_disc=true" } ]
+color = "gray"

@@ -3,5 +3,11 @@ brand = "brand/maverick"
 number = "150001"
 name = "CHASSIS"
 pack_qty = 1
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150001" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150001?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "chassis"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150001?show_disc=true" } ]

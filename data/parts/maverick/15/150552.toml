@@ -1,9 +1,15 @@
 id = "part/maverick/150552"
 brand = "brand/maverick"
 number = "150552"
-name = "Transmitter Wheel Foam &"
+name = "Transmitter Wheel Foam & Decals (Red)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150552" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150552?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
 ]
-category = "electronics"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150552?show_disc=true" } ]
+category = "decal"
+color = "red"

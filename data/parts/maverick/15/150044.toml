@@ -2,9 +2,16 @@ id = "part/maverick/150044"
 brand = "brand/maverick"
 number = "150044"
 name = "BUTTON HEAD SCREW 3X38mm"
+pack_qty = 6
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150044" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150044?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x38-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150044?show_disc=true" } ]

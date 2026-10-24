@@ -1,10 +1,17 @@
 id = "part/maverick/151054"
 brand = "brand/maverick"
 number = "151054"
-name = "Assembled Differential"
+name = "Assembled Differential (Machined Steel)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151054" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151054?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
   { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/151200-kit-page" },
 ]
 category = "differential"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151054?show_disc=true" } ]
+material = "steel"

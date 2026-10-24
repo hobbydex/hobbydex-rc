@@ -1,10 +1,21 @@
 id = "part/maverick/Z351"
 brand = "brand/maverick"
 number = "Z351"
-name = "BUTTON HEAD SCREW M3x6mm (HEX"
+name = "BUTTON HEAD SCREW M3x6mm (HEX SOCKET/10pcs)"
+pack_qty = 10
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/Z351" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/Z351?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/Z351?show_disc=true" } ]

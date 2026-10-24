@@ -1,9 +1,15 @@
 id = "part/maverick/150569"
 brand = "brand/maverick"
 number = "150569"
-name = "Assembled AT1 Bodyshell"
+name = "Assembled AT1 Bodyshell (Blue)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150569" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150569?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/atom", type = "direct", source = "doc/maverick/150503-kit-page" },
+  { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/atom-at1", type = "direct", source = "doc/maverick/150568-kit-page" },
 ]
 category = "body"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150569?show_disc=true" } ]
+color = "blue"

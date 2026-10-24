@@ -2,9 +2,16 @@ id = "part/maverick/MV22049"
 brand = "brand/maverick"
 number = "MV22049"
 name = "Round Head Screw M3x18"
+pack_qty = 4
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22049" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22049?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22049?show_disc=true" } ]

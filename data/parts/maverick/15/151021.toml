@@ -2,9 +2,13 @@ id = "part/maverick/151021"
 brand = "brand/maverick"
 number = "151021"
 name = "QBit MT Printed Body - Red"
-color = "red"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151021" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151021?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151005-kit-page" },
 ]
+color = "red"
 category = "body"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151021?show_disc=true" } ]

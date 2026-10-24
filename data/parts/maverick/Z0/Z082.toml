@@ -1,10 +1,19 @@
 id = "part/maverick/Z082"
 brand = "brand/maverick"
 number = "Z082"
-name = "FLAT HEAD SCREW M3x8mm (HEX"
+name = "FLAT HEAD SCREW M3x8mm (HEX SOCKET/10pcs)"
+pack_qty = 10
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/Z082" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/Z082?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/Z082?show_disc=true" } ]

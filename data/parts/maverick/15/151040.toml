@@ -1,9 +1,17 @@
 id = "part/maverick/151040"
 brand = "brand/maverick"
 number = "151040"
-name = "Universal Driveshaft"
+name = "Universal Driveshaft (Metal/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151040" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151040?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151004-kit-page" },
 ]
 category = "drivetrain"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151040?show_disc=true" } ]

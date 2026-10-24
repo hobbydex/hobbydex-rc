@@ -2,9 +2,13 @@ id = "part/maverick/150734"
 brand = "brand/maverick"
 number = "150734"
 name = "Assembled Bodyshell (Green)"
-color = "green"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150734" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150734?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/doha", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/doha", type = "direct", source = "doc/maverick/150702-kit-page" },
 ]
+color = "green"
 category = "body"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150734?show_disc=true" } ]

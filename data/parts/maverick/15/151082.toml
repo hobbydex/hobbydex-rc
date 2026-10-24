@@ -1,10 +1,17 @@
 id = "part/maverick/151082"
 brand = "brand/maverick"
 number = "151082"
-name = "Differential Bevel Gear 30T"
+name = "Differential Bevel Gear 30T (Machined Steel)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151082" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151082?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
   { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/151200-kit-page" },
 ]
 category = "differential"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151082?show_disc=true" } ]
+material = "steel"

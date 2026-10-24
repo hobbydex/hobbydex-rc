@@ -3,6 +3,15 @@ brand = "brand/maverick"
 number = "150169"
 name = "Servo Horn Set (25T/2pcs)"
 pack_qty = 2
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150169" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150169?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-muscle-car", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumr-race-truck", type = "direct", source = "doc/maverick/part-pages" },
+]
 pack_qty_basis = "name"
 category = "steering"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150169?show_disc=true" } ]

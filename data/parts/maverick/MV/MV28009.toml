@@ -1,6 +1,12 @@
 id = "part/maverick/MV28009"
 brand = "brand/maverick"
 number = "MV28009"
-name = "Steering Ackermann Link 1Pc"
+name = "Steering Ackermann Link 1Pc (ALL Ion)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28009" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28009?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "suspension"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28009?show_disc=true" } ]

@@ -1,9 +1,16 @@
 id = "part/maverick/150856"
 brand = "brand/maverick"
 number = "150856"
-name = "Aluminum Spur Gear Cover"
+name = "Aluminum Spur Gear Cover (Grey)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150856" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150856?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/microbe-sc", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/microbe", type = "direct", source = "doc/maverick/150870-kit-page" },
 ]
 category = "chassis"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150856?show_disc=true" } ]
+color = "gray"
+material = "aluminium"

@@ -1,9 +1,16 @@
 id = "part/maverick/151073"
 brand = "brand/maverick"
 number = "151073"
-name = "38T Spur Gear (0.8M/Machined"
+name = "38T Spur Gear (0.8M/Machined Steel)"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151073" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151073?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
 ]
 category = "spur-gear"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151073?show_disc=true" } ]
+teeth = 38
+module = 0.8
+material = "steel"

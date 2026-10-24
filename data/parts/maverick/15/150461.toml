@@ -2,6 +2,13 @@ id = "part/maverick/150461"
 brand = "brand/maverick"
 number = "150461"
 name = "XT60 to Tamiya Adapter"
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150461" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150461?show_disc=true" },
+]
+fits = [
+  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "wire"
 connectors = ["XT60", "Tamiya"]
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150461?show_disc=true" } ]

@@ -3,8 +3,22 @@ brand = "brand/maverick"
 number = "MV22802"
 name = "ALUMINUM WHEEL HEX"
 pack_qty = 4
+links = [
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22802" },
+  { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22802?show_disc=true" },
+]
 fits = [
+  { kit = "kit/maverick/strada-dc", type = "direct", source = "doc/maverick/MV12618-kit-page" },
+  { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/strada-mt", type = "direct", source = "doc/maverick/MV12615-kit-page" },
+  { kit = "kit/maverick/strada-tc", type = "direct", source = "doc/maverick/MV12616-kit-page" },
+  { kit = "kit/maverick/strada-xb", type = "direct", source = "doc/maverick/MV12613-kit-page" },
   { kit = "kit/maverick/strada-dt", type = "direct", source = "doc/maverick/MV12628-kit-page" },
+  { kit = "kit/maverick/strada-dc", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12618-kit-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-dt", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12628-kit-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-mt", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12615-kit-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-tc", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12616-kit-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-xb", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12613-kit-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "drivetrain"
-links = [ { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22802?show_disc=true" } ]
+material = "aluminium"
