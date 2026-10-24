@@ -1,8 +1,9 @@
 id = "part/absima/1231174"
 brand = "brand/absima"
 number = "1231174"
-name = "Ball Bearing 6*12*4"
+name = "Ball Bearing 6*12*4 (6)"
 pack_qty = 6
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/cr4-4", type = "direct", source = "doc/absima/spares-cr4-4" },
 ]
@@ -10,4 +11,6 @@ equivalent_to = [
   { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231174" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231174" },
+]

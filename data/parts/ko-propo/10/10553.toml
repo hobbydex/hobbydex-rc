@@ -6,7 +6,11 @@ status = "discontinued"
 category = "electronics"
 category_source = "curated"
 color = "red"
-notes = "Listed in KO Propo's Discontinued Products Table (updated 2022-05-20)."
+notes = "Listed in KO Propo's Discontinued Products Table (updated 2022-05-20). KO Propo specifications: Mater Unit EX-1 FHSS /ASF"
 links = [
+  { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/10553" },
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/discontinued/" },
+]
+related = [
+  { part = "part/ko-propo/80537", relation = "for" },
 ]

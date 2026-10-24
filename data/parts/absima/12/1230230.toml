@@ -1,8 +1,9 @@
 id = "part/absima/1230230"
 brand = "brand/absima"
 number = "1230230"
-name = "Flat phillips head screw M3x15"
+name = "Flat phillips head screw M3x15 (9)"
 pack_qty = 9
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/ab-v2", type = "direct", source = "doc/absima/spares-ab-v2" },
   { kit = "kit/absima/atc-v2", type = "direct", source = "doc/absima/spares-atc-v2" },
@@ -10,4 +11,6 @@ fits = [
   { kit = "kit/absima/at-v2", type = "direct", source = "doc/absima/spares-at-v2" },
 ]
 category = "screw"
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230230" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230230" },
+]
