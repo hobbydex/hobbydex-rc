@@ -1,17 +1,18 @@
 id = "part/amewi/021-17223091"
 brand = "brand/amewi"
 number = "021-17223091"
-name = "Button Head Screw M3x18mm"
+name = "Button Head Screw M3x18mm, 8 Stück"
 name_de = "Rundkopfschrauben M3x18mm"
 gtin = "4260768512276"
 pack_qty = 8
-pack_qty_basis = "page"
+former_names = ["Button Head Screw M3x18mm"]
 fits = [
   { kit = "kit/amewi/rcx10-3", type = "direct", source = "doc/amewi/22559-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/Rundkopfschrauben-M3x18mm-8-Stueck" },
 ]
+pack_qty_basis = "page"
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },

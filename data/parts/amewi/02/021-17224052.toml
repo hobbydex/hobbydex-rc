@@ -1,17 +1,18 @@
 id = "part/amewi/021-17224052"
 brand = "brand/amewi"
 number = "021-17224052"
-name = "Cap Head Screw M4x16mm"
+name = "Cap Head Screw M4x16mm, 8 Stück"
 name_de = "Zylinderkopfschrauben M4x16mm"
 gtin = "4260768512436"
 pack_qty = 8
-pack_qty_basis = "page"
+former_names = ["Cap Head Screw M4x16mm"]
 fits = [
   { kit = "kit/amewi/rcx10-3", type = "direct", source = "doc/amewi/22559-product-page" },
 ]
 links = [
   { site = "Amewi", url = "https://amewi.com/Zylinderkopfschrauben-M4x16mm-8-Stueck" },
 ]
+pack_qty_basis = "page"
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m4x16-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
