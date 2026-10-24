@@ -2,4 +2,14 @@ id = "part/blackzon/540485"
 brand = "brand/blackzon"
 number = "540485"
 name = "Wheel Lock nut M2.5"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540485" },
+]
+fits = [
+  { kit = "kit/blackzon/spryte-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/spryte-st", type = "direct", source = "doc/blackzon/part-pages" },
+]
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m2.5-wheel", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,9 +2,14 @@ id = "part/blackzon/540344"
 brand = "brand/blackzon"
 number = "540344"
 name = "Spryte MT Body (Red)"
-color = "red"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540344" },
+]
 fits = [
+  { kit = "kit/blackzon/spryte-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/spryte-st", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/spryte-mt", type = "direct", source = "doc/blackzon/540289-kit-page" },
   { kit = "kit/blackzon/spryte-st", type = "direct", source = "doc/blackzon/540308-kit-page" },
 ]
+color = "red"
 category = "body"

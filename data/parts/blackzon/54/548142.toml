@@ -2,7 +2,13 @@ id = "part/blackzon/548142"
 brand = "brand/blackzon"
 number = "548142"
 name = "Wheels/Tires Assembled - Drift"
+pack_qty = 4
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/548142" },
+]
 fits = [
+  { kit = "kit/blackzon/myte", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/myte", type = "direct", source = "doc/blackzon/548101-kit-page" },
 ]
 category = "tire"
+vehicle = "drift"

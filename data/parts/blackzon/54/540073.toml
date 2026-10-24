@@ -1,9 +1,17 @@
 id = "part/blackzon/540073"
 brand = "brand/blackzon"
 number = "540073"
-name = "Slyder Oil-Filled Shock Set"
+name = "Slyder Oil-Filled Shock Set (2pcs/Front/Rear)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540073" },
+]
 fits = [
+  { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/slyder-st", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/slyder-mt", type = "direct", source = "doc/blackzon/540213-kit-page" },
   { kit = "kit/blackzon/slyder-st", type = "direct", source = "doc/blackzon/540219-kit-page" },
 ]
 category = "shock"
+shock_part = "complete"

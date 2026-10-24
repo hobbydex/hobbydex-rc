@@ -1,8 +1,13 @@
 id = "part/blackzon/540184"
 brand = "brand/blackzon"
 number = "540184"
-name = "Smyter Desert Wheels/Tires"
+name = "Smyter Desert Wheels/Tires Assembled (Black/Blue)"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540184" },
+]
 fits = [
+  { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/part-pages" },
   { kit = "kit/blackzon/smyter-db", type = "direct", source = "doc/blackzon/540257-kit-page" },
   { kit = "kit/blackzon/smyter-dt", type = "direct", source = "doc/blackzon/540255-kit-page" },
 ]

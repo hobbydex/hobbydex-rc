@@ -1,5 +1,16 @@
 id = "part/blackzon/540472"
 brand = "brand/blackzon"
 number = "540472"
-name = "Plastic Shock Set"
+name = "Plastic Shock Set (Assembled/4pcs)"
+pack_qty = 4
+pack_qty_basis = "name"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540472" },
+]
+fits = [
+  { kit = "kit/blackzon/spryte-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/spryte-st", type = "direct", source = "doc/blackzon/part-pages" },
+]
 category = "shock"
+shock_part = "complete"
+material = "plastic"

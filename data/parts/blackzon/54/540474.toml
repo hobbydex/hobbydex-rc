@@ -1,5 +1,15 @@
 id = "part/blackzon/540474"
 brand = "brand/blackzon"
 number = "540474"
-name = "Rear Axle and Drive Shafts"
+name = "Rear Axle and Drive Shafts (Steel/2pcs)"
+pack_qty = 2
+pack_qty_basis = "name"
+links = [
+  { site = "BlackZon", url = "https://www.maverick-rc.com/en/part/540474" },
+]
+fits = [
+  { kit = "kit/blackzon/spryte-mt", type = "direct", source = "doc/blackzon/part-pages" },
+  { kit = "kit/blackzon/spryte-st", type = "direct", source = "doc/blackzon/part-pages" },
+]
 category = "drivetrain"
+material = "steel"
