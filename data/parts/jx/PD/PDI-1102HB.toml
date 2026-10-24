@@ -3,8 +3,6 @@ brand = "brand/jx"
 number = "PDI-1102HB"
 name = "PDI-1102HB 2g Plastic Gear Digital Core Servo"
 category = "servo"
-dead_band_us = 2
-frequency_hz = 300
 category_source = "curated"
 torque_kgcm = 0.24
 voltage = 6
@@ -18,6 +16,10 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/micro", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+dead_band_us = 2
+frequency_hz = 300
 notes = "JX files it under Mini servo; Stall torque 0.19 kg.cm at 4.8 V, 0.24 kg.cm at 6 V; speed 0.11 s/60deg at 4.8 V, 0.09 s/60deg at 6 V; lead 100 mm."
 material = "plastic"
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2025-07-31/626.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2025-07-31/626.html" },
+]

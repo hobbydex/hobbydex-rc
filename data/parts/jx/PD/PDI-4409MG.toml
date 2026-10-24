@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "PDI-4409MG"
 name = "PDI-4409MG 9KG High Precision Metal Gear Digital Standard Servo"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 9.2
 voltage = 6
@@ -19,4 +15,8 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/low-profile", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under Low Profile servo; Stall torque 7.8 kg.cm at 4.8 V, 9.2 kg.cm at 6 V; speed 0.13 s/60deg at 4.8 V, 0.11 s/60deg at 6 V; lead 265 mm."

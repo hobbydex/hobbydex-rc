@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "B130"
 name = "B130 130KG Super Large torque Full CNC Brushless servo"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 4
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 130
 voltage = 8.4
@@ -20,4 +16,8 @@ rotation_deg = 120
 equivalent_to = [
   { spec = "spec/servo/jumbo", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 4
+frequency_hz = 330
 notes = "JX files it under Large Size servo; Stall torque 107 kg.cm at 6 V, 130 kg.cm at 8.4 V; speed 0.15 s/60deg at 6 V, 0.13 s/60deg at 8.4 V; lead 265 mm."

@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "B60"
 name = "B60 60kg.cm super brushless servo"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 62
 voltage = 7.4
@@ -19,4 +15,8 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under Max Power servo; Stall torque 52 kg.cm at 6 V, 62 kg.cm at 7.4 V; speed 0.13 s/60deg at 6 V, 0.11 s/60deg at 7.4 V; lead 265 mm."

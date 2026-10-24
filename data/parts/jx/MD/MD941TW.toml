@@ -3,10 +3,6 @@ brand = "brand/jx"
 number = "MD941TW"
 name = "MD941TW 7.4V 16.5KG High Performance Full CNC Waterproof Coreless Servo"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-dead_band_us = 2
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 16.5
 voltage = 7.4
@@ -19,5 +15,11 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+dead_band_us = 2
+frequency_hz = 330
 notes = "JX files it under My servo; Stall torque 10 kg.cm at 4.8 V, 13.5 kg.cm at 6 V, 16.5 kg.cm at 7.4 V; speed 0.11 s/60deg at 4.8 V, 0.08 s/60deg at 6 V, 0.07 s/60deg at 7.4 V; lead 260 mm; waterproof (stated in the features); programmable."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/HT/2026-02-06/658.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/MY/HT/2026-02-06/658.html" },
+]

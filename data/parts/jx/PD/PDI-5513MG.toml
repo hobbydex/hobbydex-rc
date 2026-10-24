@@ -3,9 +3,6 @@ brand = "brand/jx"
 number = "PDI-5513MG"
 name = "PDI-5513MG 13KG High Precision Metal Gear Digital Standard Servo"
 category = "servo"
-bearings = 2
-bearing_kind = "ball"
-frequency_hz = 330
 category_source = "curated"
 torque_kgcm = 13.06
 voltage = 6
@@ -19,5 +16,10 @@ connector = "JR"
 equivalent_to = [
   { spec = "spec/servo/standard", match = "functional", notes = "Size class from the case size from JX's specifications; check the mounting holes" },
 ]
+bearings = 2
+bearing_kind = "ball"
+frequency_hz = 330
 notes = "JX files it under Standard servo; Stall torque 11.75 kg.cm at 4.8 V, 13.06 kg.cm at 6 V; speed 0.2 s/60deg at 4.8 V, 0.18 s/60deg at 6 V; lead 265 mm."
-links = [ { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/STANDARD/SD/540.html" } ]
+links = [
+  { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/STANDARD/SD/540.html" },
+]
