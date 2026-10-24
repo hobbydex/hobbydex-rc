@@ -15,7 +15,8 @@ when a source stated it:
   maker, owner, includes, photos); any field with a <field>_source beside it or a
   key in `sources`; equivalent_to rows that carry a source;
 - a link removed or changed, unless its page is known gone (a document of the head
-  with gone set and that page).
+  with gone set and that page). Marking a link gone (`gone = "<date>"` added, the
+  link kept) is not a regression.
 
 Not regressions: values added; values that only differ in form (TOML layout,
 whitespace, letter form of a URL: https, no www, no trailing slash); a convention
@@ -334,6 +335,10 @@ class Check:
             a = added[hit]
             if isinstance(r, dict) and isinstance(a, dict) and differs_only_in_provenance(r, a):
                 self.event(kind, rid, k, "changed", r, a, False, "source or note only")
+                continue
+            if k == "links" and isinstance(r, dict) and isinstance(a, dict) and "gone" in a and \
+                    all(canon(r[x]) == canon(a.get(x, MISSING)) for x in r if x != "gone"):
+                self.event(kind, rid, k, "changed", r, a, False, "page marked gone (link kept)")
                 continue
             if isinstance(r, dict) and isinstance(a, dict) and all(canon(r[x]) == canon(a.get(x, MISSING)) for x in r):
                 self.event(kind, rid, k, "changed", r, a, False, "key added, nothing lost")
