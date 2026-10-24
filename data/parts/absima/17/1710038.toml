@@ -1,8 +1,9 @@
 id = "part/absima/1710038"
 brand = "brand/absima"
 number = "1710038"
-name = "Wheel Nut"
+name = "Wheel Nut (4)"
 pack_qty = 4
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/mamba", type = "direct", source = "doc/absima/spares-mamba" },
 ]
@@ -11,4 +12,6 @@ related = [
   { part = "part/absima/1710032", relation = "use-with" },
   { part = "part/absima/1710056", relation = "use-with" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1710038" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1710038" },
+]

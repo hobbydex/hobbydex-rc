@@ -2,11 +2,17 @@ id = "part/rc4wd/Z-W0225"
 brand = "brand/rc4wd"
 number = "Z-W0225"
 name = "TRO 1.7\" Stamped Steel Beadlock Wheels (Red/Chrome)"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/TRO-17-Stamped-Steel-Beadlock-Wheels-RedChrome_p_5318.html" },
+]
+material = "steel"
+width_mm = 24.03
+offset_mm = -4.05
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.7\""
 beadlock = true
 color = "red/chrome"
-material = "steel"

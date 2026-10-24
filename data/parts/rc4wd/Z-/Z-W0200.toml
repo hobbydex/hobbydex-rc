@@ -5,6 +5,12 @@ name = "Fuel Off-Road Maverick 1.9\" Beadlock Wheels"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Fuel-Off-Road-Maverick-19-Beadlock-Wheels_p_4552.html" },
 ]
+material = "aluminium"
+width_mm = 28.8
+offset_mm = -9
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "1.9\""
 beadlock = true

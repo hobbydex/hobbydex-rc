@@ -5,6 +5,10 @@ name = "Mickey Thompson Mickey Metal MT-28 Internal Beadlock Stamped 2.2\" Steel
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/RC4WD-Mickey-Thompson-Mickey-Metal-MT-28-Internal-Beadlock-Stamped-22-Steel-Wheels_p_2914.html" },
 ]
+offset_mm = -2.64
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 wheel_size = "2.2\""
 vehicle = "monster"

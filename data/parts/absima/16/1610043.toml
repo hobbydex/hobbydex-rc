@@ -1,8 +1,9 @@
 id = "part/absima/1610043"
 brand = "brand/absima"
 number = "1610043"
-name = "M3*6 button head screws"
+name = "M3*6 button head screws (10)"
 pack_qty = 10
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/fun-maker", type = "direct", source = "doc/absima/spares-fun-maker" },
 ]
@@ -10,4 +11,6 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1610043" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1610043" },
+]

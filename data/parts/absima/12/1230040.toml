@@ -3,14 +3,16 @@ brand = "brand/absima"
 number = "1230040"
 name = "Nylon Self-lock Nut M4 (6) Buggy/Truggy"
 pack_qty = 6
-pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/asb1", type = "direct", source = "doc/absima/spares-asb1" },
   { kit = "kit/absima/ab1", type = "direct", source = "doc/absima/spares-ab1" },
 ]
+pack_qty_basis = "name"
 category = "nut"
 material = "plastic"
 equivalent_to = [
   { spec = "spec/nut/m4-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230040" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230040" },
+]

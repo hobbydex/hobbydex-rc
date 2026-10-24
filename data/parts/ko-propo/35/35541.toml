@@ -5,8 +5,12 @@ name = "Aluminum Gear Set For RSx one10"
 status = "discontinued"
 category = "gear"
 category_source = "curated"
-notes = "Listed in KO Propo's Discontinued Products Table (updated 2022-05-20)."
+notes = "Listed in KO Propo's Discontinued Products Table (updated 2022-05-20). KO Propo specifications: RSx one10"
 links = [
+  { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/35541" },
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/discontinued/" },
 ]
 material = "aluminium"
+related = [
+  { part = "part/ko-propo/30104", relation = "for" },
+]

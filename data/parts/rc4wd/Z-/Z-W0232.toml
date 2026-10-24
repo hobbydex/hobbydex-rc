@@ -2,8 +2,15 @@ id = "part/rc4wd/Z-W0232"
 brand = "brand/rc4wd"
 number = "Z-W0232"
 name = "Stocker 1.7\" Beadlock Wheels"
+pack_qty = 4
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/Stocker-17-Beadlock-Wheels_p_5062.html" },
+]
+material = "aluminium"
+width_mm = 25
+offset_mm = -4.9
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
 ]
 category = "wheel"
 wheel_size = "1.7\""

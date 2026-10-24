@@ -1,8 +1,9 @@
 id = "part/absima/1230586"
 brand = "brand/absima"
 number = "1230586"
-name = "Button Head Screw M2.5*8"
+name = "Button Head Screw M2.5*8 (8)"
 pack_qty = 8
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/cr3-4", type = "direct", source = "doc/absima/spares-cr3-4" },
   { kit = "kit/absima/cr1-8", type = "direct", source = "doc/absima/spares-cr1-8" },
@@ -11,4 +12,6 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.5x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230586" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230586" },
+]

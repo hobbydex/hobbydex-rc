@@ -5,5 +5,11 @@ name = "Force Directional Semi Rear Wheels w/Spiked Caps"
 links = [
   { site = "RC4WD", url = "https://store.rc4wd.com/Force-Directional-Semi-Rear-Wheels-wSpiked-Caps_p_3199.html" },
 ]
+material = "aluminium"
+width_mm = 45
+offset_mm = -18.4
+equivalent_to = [
+  { spec = "spec/wheel-hex/45mm", match = "exact", source = "doc/rc4wd/store", notes = "Hex size from the product page" },
+]
 category = "wheel"
 position = "rear"
