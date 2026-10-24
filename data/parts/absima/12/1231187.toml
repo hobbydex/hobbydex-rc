@@ -1,8 +1,9 @@
 id = "part/absima/1231187"
 brand = "brand/absima"
 number = "1231187"
-name = "Cap Head Screw M4*40"
+name = "Cap Head Screw M4*40 (8)"
 pack_qty = 8
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/cr4-4", type = "direct", source = "doc/absima/spares-cr4-4" },
 ]
@@ -10,4 +11,6 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m4x40-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231187" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1231187" },
+]

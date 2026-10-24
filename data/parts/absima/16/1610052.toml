@@ -1,8 +1,9 @@
 id = "part/absima/1610052"
 brand = "brand/absima"
 number = "1610052"
-name = "Washers 6*2.6*0.5"
+name = "Washers 6*2.6*0.5 (10)"
 pack_qty = 10
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/fun-maker", type = "direct", source = "doc/absima/spares-fun-maker" },
 ]
@@ -10,4 +11,6 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/2.6x6x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1610052" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1610052" },
+]
