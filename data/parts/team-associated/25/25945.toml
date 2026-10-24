@@ -1,8 +1,17 @@
 id = "part/team-associated/25945"
 brand = "brand/team-associated"
 number = "25945"
-name = "M5 Flanged Lock Nut"
+name = "M5 Locknuts, flanged, black"
+former_names = ["M5 Flanged Lock Nut"]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m5-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+gtin = "784695259454"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/m5-locknuts-flanged-black/" },
+]
+fits = [
+  { kit = "kit/team-associated/rival-mt8", type = "direct", source = "doc/team-associated/store" },
+]
+color = "black"

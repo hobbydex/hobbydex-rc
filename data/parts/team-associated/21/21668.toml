@@ -1,8 +1,18 @@
 id = "part/team-associated/21668"
 brand = "brand/team-associated"
 number = "21668"
-name = "2x6mm Set Screw"
+name = "M2 Set Screw Hardware Set (20pcs)"
+former_names = ["2x6mm Set Screw"]
 equivalent_to = [
   { spec = "spec/screw/m2x6-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+gtin = "784695216686"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/m2-set-screw-hardware-set-20pcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/tc28", type = "direct", source = "doc/team-associated/store" },
+]
+pack_qty = 20
+pack_qty_basis = "name"

@@ -7,7 +7,11 @@ links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b6-1-aluminum-differential-height-inserts-black/" },
 ]
 fits = [
+  { kit = "kit/team-associated/rc10sc6", type = "direct", source = "doc/team-associated/store" },
   { kit = "kit/team-associated/rc10b6", type = "direct", source = "doc/team-associated/90035-page" },
+  { kit = "kit/team-associated/rc10b6", type = "replaces", replaces = "part/team-associated/91792", source = "doc/team-associated/90035-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/team-associated/rc10sc6", type = "replaces", replaces = "part/team-associated/91792", source = "doc/team-associated/store", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "differential"
 material = "aluminium"
+gtin = "784695917934"

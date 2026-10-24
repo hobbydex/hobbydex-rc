@@ -1,6 +1,13 @@
 id = "part/team-associated/9739"
 brand = "brand/team-associated"
 number = "9739"
-name = "Slipper Spring"
+name = "Slipper Spring (Part 9739)"
+former_names = ["Slipper Spring"]
 category = "gear"
-links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/slipper-spring/" } ]
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/slipper-spring/" },
+]
+gtin = "784695097391"
+fits = [
+  { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+]

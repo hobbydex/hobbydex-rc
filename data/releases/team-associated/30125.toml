@@ -5,15 +5,17 @@ number = "30125"
 name = "Apex2 Sport Datsun 240Z RTR"
 kind = "rtr"
 status = "released"
-announced = "2022-11-21"
-announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Apex2_Sport_Datsun/RTR/PressRelease_101322_30125-Apex2-Datsun-240Z.pdf"
-depicts = { make = "Datsun", model = "240Z" }
 gtin = "784695301252"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Apex2_Sport_Datsun/RTR/" },
 ]
+announced = "2022-11-21"
+announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Apex2_Sport_Datsun/RTR/PressRelease_101322_30125-Apex2-Datsun-240Z.pdf"
+depicts = { make = "Datsun", model = "240Z" }
 documents = ["doc/team-associated/30125-page", "doc/team-associated/30125-apex2-datsun-240z-manual", "doc/team-associated/pressrelease-111722-30125-apex2-datsun240z-parts-list", "doc/team-associated/pressrelease-101322-30125-apex2-datsun-240z", "doc/team-associated/reedy-sc500x-esc-manual-online", "doc/team-associated/xp120-dvc-manual-waden-online"]
 contains = [
+  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
+  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
   { part = "part/team-associated/1338", role = "kit", qty = 1, step = "Electronics Build - Step 1", source = "doc/team-associated/30125-apex2-datsun-240z-manual" },
   { part = "part/team-associated/21173", role = "kit", qty = 8, step = "Rear Suspension Build - Step 7; Chassis Build - Step 2; Tires and Body Build - Step 6", source = "doc/team-associated/30125-apex2-datsun-240z-manual" },
   { part = "part/team-associated/2308", role = "kit", qty = 8, step = "Front / Rear Suspension Build - Step 6; Rear Suspension Build - Step 7; Front / Rear Suspension Build - Step 8; Electronics Build - Step 4", source = "doc/team-associated/30125-apex2-datsun-240z-manual" },
@@ -82,6 +84,4 @@ contains = [
   { part = "part/team-associated/92132", role = "kit", qty = 10, step = "Gear Diff Build - Step 1; Gear Diff Build - Step 2", source = "doc/team-associated/30125-apex2-datsun-240z-manual" },
   { part = "part/team-associated/92133", role = "kit", qty = 3, step = "Gear Diff Build - Step 1; Gear Diff Build - Step 2", source = "doc/team-associated/30125-apex2-datsun-240z-manual" },
   { part = "part/team-associated/92143", role = "kit", qty = 2, step = "Gear Diff Build - Step 1", source = "doc/team-associated/30125-apex2-datsun-240z-manual" },
-  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
-  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
 ]

@@ -1,9 +1,16 @@
 id = "part/team-associated/89233"
 brand = "brand/team-associated"
 number = "89233"
-name = "3x24mm FHCS"
+name = "Screws, M3x24mm FHCS"
+former_names = ["3x24mm FHCS"]
 gtin = "784695892330"
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x24-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x24mm-fhcs/" },
+]
+fits = [
+  { kit = "kit/element-rc/enduro", type = "direct", source = "doc/team-associated/store" },
 ]

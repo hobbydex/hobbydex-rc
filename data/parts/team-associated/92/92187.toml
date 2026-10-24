@@ -1,8 +1,13 @@
 id = "part/team-associated/92187"
 brand = "brand/team-associated"
 number = "92187"
-name = "3x30mm hinge pin"
+name = "RC10B74 Hinge Pin Set"
+former_names = ["3x30mm hinge pin"]
 category = "pin"
-equivalent_to = [
-  { spec = "spec/pin/3x30", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+gtin = "784695921870"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b74-hinge-pin-set/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b74", type = "direct", source = "doc/team-associated/store" },
 ]

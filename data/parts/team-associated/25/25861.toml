@@ -1,10 +1,19 @@
 id = "part/team-associated/25861"
 brand = "brand/team-associated"
 number = "25861"
-name = "15T-32P Pinion"
+name = "Pinion Gear, 15T 32P, 1/8 in shaft"
+former_names = ["15T-32P Pinion"]
 equivalent_to = [
   { spec = "spec/pinion/32dp-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 category = "pinion"
 teeth = 15
 pitch_dp = 32
+gtin = "784695258617"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/pinion-gear-15t-32p-1-8-in-shaft/" },
+]
+fits = [
+  { kit = "kit/team-associated/pro4-sc10", type = "direct", source = "doc/team-associated/store" },
+]
+bore_mm = 3.17

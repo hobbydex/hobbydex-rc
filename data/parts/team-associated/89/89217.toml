@@ -1,8 +1,16 @@
 id = "part/team-associated/89217"
 brand = "brand/team-associated"
 number = "89217"
-name = "M4x14mm FHCS"
+name = "Screws, M4x14 mm FHCS"
+former_names = ["M4x14mm FHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m4x14-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695892170"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m4x14-mm-fhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
 ]

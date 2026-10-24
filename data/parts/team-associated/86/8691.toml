@@ -1,8 +1,16 @@
 id = "part/team-associated/8691"
 brand = "brand/team-associated"
 number = "8691"
-name = "M2.5x12mm BHCS"
+name = "Screws, M2.5x12 mm SHCS"
+former_names = ["M2.5x12mm BHCS"]
 equivalent_to = [
-  { spec = "spec/screw/m2.5x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/screw/m2.5x12-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+gtin = "784695086913"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2-5x12-mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/reflex-14b", type = "direct", source = "doc/team-associated/store" },
+]

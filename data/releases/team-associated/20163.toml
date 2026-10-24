@@ -5,14 +5,14 @@ number = "20163"
 name = "HR28 Hot Rod RTR"
 kind = "rtr"
 status = "released"
-announced = "2023-11-15"
-announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/HR28/PressRelease_092623_20163-HR28-HotRod.pdf"
 gtin = "784695201637"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/HR28/Hot_Rod_RTR/" },
 ]
+announced = "2023-11-15"
+announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/HR28/PressRelease_092623_20163-HR28-HotRod.pdf"
 documents = ["doc/team-associated/20163-page", "doc/team-associated/pressrelease-092623-20163-hr28-hotrod", "doc/team-associated/pressrelease-112923-new-parts-f28-hr28", "doc/team-associated/hr28-f28-manual"]
 contains = [
-  { part = "part/team-associated/21456", role = "listed", source = "doc/team-associated/pressrelease-112923-new-parts-f28-hr28" },
   { part = "part/team-associated/92630", role = "listed", source = "doc/team-associated/hr28-f28-manual" },
+  { part = "part/team-associated/21456", role = "listed", source = "doc/team-associated/pressrelease-112923-new-parts-f28-hr28" },
 ]

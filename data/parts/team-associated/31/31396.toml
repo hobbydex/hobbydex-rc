@@ -1,7 +1,7 @@
 id = "part/team-associated/31396"
 brand = "brand/team-associated"
 number = "31396"
-name = "SHIMS, 5x8.5x0.10mm (4pcs), 5x8.5x0.20mm"
+name = "SHIMS, 5x8.5x0.10mm (4pcs), 5x8.5x0.20mm (4pcs)"
 pack_qty = 4
 pack_qty_basis = "name"
 gtin = "784695313965"
@@ -12,4 +12,7 @@ category = "washer-shim"
 includes = [
   { spec = "spec/washer/5x8.5x0.1", qty = 4 },
   { spec = "spec/washer/5x8.5x0.2", qty = 4 },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
 ]

@@ -1,9 +1,16 @@
 id = "part/team-associated/25826"
 brand = "brand/team-associated"
 number = "25826"
-name = "Shock Shaft, 3x47mm"
+name = "Rival MT10 Shock Shaft Set"
+former_names = ["Shock Shaft, 3x47mm"]
 gtin = "784695258266"
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 47
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt10-shock-shaft-set/" },
+]
+fits = [
+  { kit = "kit/team-associated/rival-mt10", type = "direct", source = "doc/team-associated/store" },
+]

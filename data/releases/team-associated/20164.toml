@@ -5,15 +5,15 @@ number = "20164"
 name = "F28 Formula RC RTR"
 kind = "rtr"
 status = "released"
-announced = "2023-11-29"
-announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/F28/Formula_RC/PressRelease_110923_20164-F28.pdf"
 gtin = "784695201644"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/F28/Formula_RC/" },
 ]
+announced = "2023-11-29"
+announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/F28/Formula_RC/PressRelease_110923_20164-F28.pdf"
 documents = ["doc/team-associated/20164-page", "doc/team-associated/pressrelease-112923-new-parts-f28-hr28", "doc/team-associated/hr28-f28-manual", "doc/team-associated/pressrelease-110923-20164-f28", "doc/team-associated/youtube-E7IonOjhz9s"]
 contains = [
+  { part = "part/team-associated/92630", role = "listed", source = "doc/team-associated/hr28-f28-manual" },
   { part = "part/team-associated/21454", role = "listed", source = "doc/team-associated/pressrelease-112923-new-parts-f28-hr28" },
   { part = "part/team-associated/21455", role = "listed", source = "doc/team-associated/pressrelease-112923-new-parts-f28-hr28" },
-  { part = "part/team-associated/92630", role = "listed", source = "doc/team-associated/hr28-f28-manual" },
 ]

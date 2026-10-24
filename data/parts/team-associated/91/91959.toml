@@ -1,10 +1,17 @@
 id = "part/team-associated/91959"
 brand = "brand/team-associated"
 number = "91959"
-name = "13mm Rear Spring, Purple (2.60lb)"
+name = "13mm Rear Shock Springs, Purple 2.6 Lb/In, L61, 8.75t, 1.2d"
+former_names = ["13mm Rear Spring, Purple (2.60lb)"]
 gtin = "784695919594"
 category = "shock-spring"
 rate_lb_in = 2.6
 free_length_mm = 13
 color = "purple"
 range = "team-associated/spring-free-rate-springs"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/13mm-rear-shock-springs-purple-2-6-lb-in-l61-8-75t-1-2d/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b71", type = "direct", source = "doc/team-associated/store" },
+]

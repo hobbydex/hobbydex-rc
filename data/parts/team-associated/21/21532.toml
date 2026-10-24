@@ -1,7 +1,14 @@
 id = "part/team-associated/21532"
 brand = "brand/team-associated"
 number = "21532"
-name = "Pinion gear, 16T"
+name = "Pinion Gear, 16T, 2.3 mm shaft, .5 mod (Part 21532)"
+former_names = ["Pinion gear, 16T"]
 category = "pinion"
 teeth = 16
-links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/pinion-gear-16t-2-3-mm-shaft-5-mod/" } ]
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/pinion-gear-16t-2-3-mm-shaft-5-mod/" },
+]
+gtin = "784695215320"
+fits = [
+  { kit = "kit/team-associated/reflex-14b", type = "direct", source = "doc/team-associated/store" },
+]

@@ -1,8 +1,16 @@
 id = "part/team-associated/91611"
 brand = "brand/team-associated"
 number = "91611"
-name = "M1.6 x 5mm SHCS"
+name = "Screws, M1.6x5 mm SHCS"
+former_names = ["M1.6 x 5mm SHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m1.6x5-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695916111"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m1-6x5-mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
 ]

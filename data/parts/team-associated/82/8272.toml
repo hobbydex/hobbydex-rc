@@ -1,0 +1,17 @@
+id = "part/team-associated/8272"
+brand = "brand/team-associated"
+number = "8272"
+name = "Pinion Gear, 35T 48P, 1/8 shaft"
+gtin = "784695082724"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/pinion-gear-35t-48p-1-8-shaft/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/store" },
+]
+category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-35t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+teeth = 35
+pitch_dp = 48

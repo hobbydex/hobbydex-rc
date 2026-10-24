@@ -1,7 +1,15 @@
 id = "part/team-associated/32070"
 brand = "brand/team-associated"
 number = "32070"
-name = "Spur Gear 114T, 64P Mod"
+name = "RC10TC8 Spur Gear 114t-64p"
+former_names = ["Spur Gear 114T, 64P Mod"]
 category = "spur-gear"
 teeth = 114
 pitch_dp = 64
+gtin = "784695320703"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10tc8-spur-gear-114t-64p/" },
+]
+fits = [
+  { kit = "kit/team-associated/tc8", type = "direct", source = "doc/team-associated/store" },
+]

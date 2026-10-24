@@ -1,0 +1,17 @@
+id = "part/team-associated/26020"
+brand = "brand/team-associated"
+number = "26020"
+name = "SR7 Pinion Gear, 15T, Mod 1"
+gtin = "784695260207"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sr7-pinion-gear-15t-mod-1/" },
+]
+fits = [
+  { kit = "kit/team-associated/sr7", type = "direct", source = "doc/team-associated/store" },
+]
+category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+teeth = 15
+module = 1

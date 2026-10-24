@@ -1,9 +1,16 @@
 id = "part/team-associated/42086"
 brand = "brand/team-associated"
 number = "42086"
-name = "Shock Body, Bronze, 10x32mm"
+name = "FT Enduro Shock Bodies, bronze, 10x32 mm"
+former_names = ["Shock Body, Bronze, 10x32mm"]
 gtin = "784695420861"
 category = "shock"
 shock_part = "body"
 bore_mm = 10
 length_mm = 32
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-enduro-shock-bodies-bronze-10x32-mm/" },
+]
+fits = [
+  { kit = "kit/element-rc/enduro", type = "direct", source = "doc/team-associated/store" },
+]

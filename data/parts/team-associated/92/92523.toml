@@ -1,7 +1,13 @@
 id = "part/team-associated/92523"
 brand = "brand/team-associated"
 number = "92523"
-name = "Steering link rod ends"
+name = "RC10B84 Steering Links And Pivot Ball Sockets"
+former_names = ["Steering link rod ends", "B84 Steering link rod end"]
 gtin = "784695925236"
-former_names = ["B84 Steering link rod end"]
-category = "rod-end"
+category = "ball-end"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b84-steering-links-and-pivot-ball-sockets/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
+]

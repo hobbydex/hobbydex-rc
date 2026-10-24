@@ -1,9 +1,16 @@
 id = "part/team-associated/81264"
 brand = "brand/team-associated"
 number = "81264"
-name = "M4x20mm FHCS"
-former_names = ["M4x20mm M3"]
+name = "Screws, M4x20 mm FHCS"
+former_names = ["M4x20mm FHCS", "M4x20mm M3"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m4x20-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695812642"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m4x20-mm-fhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
 ]

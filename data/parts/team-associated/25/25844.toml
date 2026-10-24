@@ -1,10 +1,18 @@
 id = "part/team-associated/25844"
 brand = "brand/team-associated"
 number = "25844"
-name = "12T-32P Pinion"
+name = "Pinion Gear, 12T 32P"
+former_names = ["12T-32P Pinion"]
 equivalent_to = [
   { spec = "spec/pinion/32dp-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 category = "pinion"
 teeth = 12
 pitch_dp = 32
+gtin = "784695258440"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/pinion-gear-12t-32p/" },
+]
+fits = [
+  { kit = "kit/team-associated/rival-mt10", type = "direct", source = "doc/team-associated/store" },
+]

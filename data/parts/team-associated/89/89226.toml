@@ -1,8 +1,16 @@
 id = "part/team-associated/89226"
 brand = "brand/team-associated"
 number = "89226"
-name = "M3x26mm SHCS"
+name = "Screws, M3x26 mm SHCS"
+former_names = ["M3x26mm SHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x26-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695892262"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x26-mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
 ]

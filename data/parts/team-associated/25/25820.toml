@@ -1,5 +1,16 @@
 id = "part/team-associated/25820"
 brand = "brand/team-associated"
 number = "25820"
-name = "12mm Hex"
+name = "Rival MT10 Wheel Hexes, 12mm"
+former_names = ["12mm Hex"]
 category = "drivetrain"
+gtin = "784695258204"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt10-wheel-hexes-12mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/rival-mt10", type = "direct", source = "doc/team-associated/store" },
+]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

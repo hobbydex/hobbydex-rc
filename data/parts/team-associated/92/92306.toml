@@ -1,10 +1,13 @@
 id = "part/team-associated/92306"
 brand = "brand/team-associated"
 number = "92306"
-name = "5x8x0.2mm shim"
+name = "RC10B74 FT LTC Differential Rebuild Set, metal"
+former_names = ["5x8x0.2mm shim", "Diff planet gear, LTC, metal", "Diff sun gear, LTC, metal", "Gear Diff washer 5x8.5x0.2mm", "Planet Gear Diff Shim 2.55x6.0x0.15mm"]
 gtin = "784695923065"
-former_names = ["Diff planet gear, LTC, metal", "Diff sun gear, LTC, metal", "Gear Diff washer 5x8.5x0.2mm", "Planet Gear Diff Shim 2.55x6.0x0.15mm"]
-category = "washer-shim"
-equivalent_to = [
-  { spec = "spec/washer/5x8x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+category = "differential"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b74-ft-ltc-differential-rebuild-set-metal/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
 ]

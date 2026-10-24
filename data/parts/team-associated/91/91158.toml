@@ -1,8 +1,16 @@
 id = "part/team-associated/91158"
 brand = "brand/team-associated"
 number = "91158"
-name = "M3 x 4mm BHCS"
+name = "Screws, M3x4 mm BHCS"
+former_names = ["M3 x 4mm BHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695911581"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x4-mm-bhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
 ]

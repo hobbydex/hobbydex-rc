@@ -1,9 +1,17 @@
 id = "part/team-associated/25612"
 brand = "brand/team-associated"
 number = "25612"
-name = "M3 Locknut w/Flange"
-former_names = ["M3 Flanged Nut", "M3 Locknut, Flanged", "M3 flanged nut, black"]
+name = "Locknuts, M3, flanged, black"
+former_names = ["M3 Locknut w/Flange", "M3 Flanged Nut", "M3 Locknut, Flanged", "M3 flanged nut, black"]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
+gtin = "784695256125"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/locknuts-m3-flanged-black/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
+]
+color = "black"

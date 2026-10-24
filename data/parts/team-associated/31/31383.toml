@@ -1,7 +1,18 @@
 id = "part/team-associated/31383"
 brand = "brand/team-associated"
 number = "31383"
-name = "FT Ballstud Washer, Aluminum (2mm)"
-former_names = ["Ballstud Washers, 5.5x2.0mm, Blue Aluminum", "Ballstud Washers, 5.5x2.0mm, blue", "Ballstud washer, 2mm", "FT Ballstud"]
+name = "Ballstud Washers, 5.5x3.0x2.0 mm, blue aluminum"
+former_names = ["FT Ballstud Washer, Aluminum (2mm)", "Ballstud Washers, 5.5x2.0mm, Blue Aluminum", "Ballstud Washers, 5.5x2.0mm, blue", "Ballstud washer, 2mm", "FT Ballstud"]
 category = "washer-shim"
 material = "aluminium"
+gtin = "784695313835"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ballstud-washers-5-5x3-0x2-0-mm-blue-aluminum/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc28f", type = "direct", source = "doc/team-associated/store" },
+]
+color = "blue"
+equivalent_to = [
+  { spec = "spec/washer/3x5.5x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

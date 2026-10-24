@@ -1,6 +1,19 @@
 id = "part/team-associated/9690"
 brand = "brand/team-associated"
 number = "9690"
-name = "Front Wheel, Front"
+name = "2WD Front Wheels, 2.2 in, 12 mm Hex, white"
+former_names = ["Front Wheel, Front"]
 category = "wheel"
 position = "front"
+gtin = "784695096905"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/2wd-front-wheels-2-2-in-12-mm-hex-white/" },
+]
+fits = [
+  { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+]
+color = "white"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+wheel_size = "2.2\""

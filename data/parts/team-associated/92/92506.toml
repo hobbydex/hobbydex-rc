@@ -1,7 +1,13 @@
 id = "part/team-associated/92506"
 brand = "brand/team-associated"
 number = "92506"
-name = "B84 Wing nut"
+name = "RC10B84 Wing Mount Set"
+former_names = ["B84 Wing nut", "B84 -2 Rear Wing Mount", "B84 Rear wing mount, -2", "B84 Wing shim", "wing B84 Rear wing mount, standard"]
 gtin = "784695925069"
-former_names = ["B84 -2 Rear Wing Mount", "B84 Rear wing mount, -2", "B84 Wing shim", "wing B84 Rear wing mount, standard"]
-category = "nut"
+category = "wing"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b84-wing-mount-set/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
+]

@@ -1,6 +1,14 @@
 id = "part/team-associated/81375"
 brand = "brand/team-associated"
 number = "81375"
-name = "Clutch Shoes, Hard, 4-Shoe Aluminum"
+name = "Clutch Shoes, hard, 4-shoe, aluminum"
 category = "engine-fuel"
 material = "aluminium"
+gtin = "784695813755"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/clutch-shoes-hard-4-shoe-aluminum/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc8t4", type = "replaces", replaces = "part/team-associated/81402", source = "doc/team-associated/store", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -1,10 +1,18 @@
 id = "part/team-associated/31389"
 brand = "brand/team-associated"
 number = "31389"
-name = "Washer 7.8x3.5x2mm Blue Alum."
+name = "Washers, 7.8x3.5x2.0mm, blue aluminum"
+former_names = ["Washer 7.8x3.5x2mm Blue Alum."]
 category = "washer-shim"
 color = "blue"
 equivalent_to = [
   { spec = "spec/washer/3.5x7.8x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "aluminium"
+gtin = "784695313897"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/washers-7-8x3-5x2-0mm-blue-aluminum/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8b4", type = "direct", source = "doc/team-associated/store" },
+]

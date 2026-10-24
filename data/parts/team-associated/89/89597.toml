@@ -1,0 +1,19 @@
+id = "part/team-associated/89597"
+brand = "brand/team-associated"
+number = "89597"
+name = "FT Aluminum Pinion Gear, 15T, MOD 1, 5mm shaft, aluminum"
+gtin = "784695895973"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-pinion-gear-15t-mod-1-5mm-shaft-aluminum/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8b41", type = "direct", source = "doc/team-associated/store" },
+]
+category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5
+material = "aluminium"
+teeth = 15
+module = 1

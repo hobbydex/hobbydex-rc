@@ -1,8 +1,16 @@
 id = "part/team-associated/25192"
 brand = "brand/team-associated"
 number = "25192"
-name = "M3x20mm SHCS"
+name = "Screws, M3x20 mm SHCS"
+former_names = ["M3x20mm SHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695251922"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m3x20-mm-shcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
 ]

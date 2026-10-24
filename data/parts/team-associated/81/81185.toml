@@ -1,6 +1,14 @@
 id = "part/team-associated/81185"
 brand = "brand/team-associated"
 number = "81185"
-name = "Shock Body O-Ring"
-former_names = ["O-Ring Hat Bushing", "O-Ring Spacer"]
-category = "o-ring-seal"
+name = "RC8B3 Shock Rebuild Kit"
+former_names = ["Shock Body O-Ring", "O-Ring Hat Bushing", "O-Ring Spacer"]
+category = "shock"
+gtin = "784695811850"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b3-shock-rebuild-kit/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
+]
+shock_part = "rebuild-kit"

@@ -8,6 +8,8 @@ links = [
 ]
 fits = [
   { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/80951-page" },
+  { kit = "kit/team-associated/rc8t4", type = "replaces", replaces = "part/team-associated/81604", source = "doc/team-associated/80951-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "aluminium"
+gtin = "784695816244"

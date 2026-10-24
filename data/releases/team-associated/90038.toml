@@ -5,15 +5,17 @@ number = "90038"
 name = "Pro2 DK10SW RTR, orange"
 kind = "rtr"
 status = "released"
-announced = "2023-05-23"
-announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Pro2_DK10SW/RTR_orange/PressRelease_042723_90038-Pro2-DK10SW.pdf"
 gtin = "784695900387"
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2_DK10SW/RTR_orange/" },
 ]
+announced = "2023-05-23"
+announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Pro2_DK10SW/RTR_orange/PressRelease_042723_90038-Pro2-DK10SW.pdf"
 color = "orange"
 documents = ["doc/team-associated/90038-page", "doc/team-associated/pro2-dk10sw-manual", "doc/team-associated/pressrelease-042723-90038-pro2-dk10sw", "doc/team-associated/pressrelease-053123-pro2-dk10sw-parts-list", "doc/team-associated/xp120-dvc-manual-waden-online"]
 contains = [
+  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
+  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
   { part = "part/team-associated/1336", role = "kit", qty = 1, step = "Electronics Build - Step 3", source = "doc/team-associated/pro2-dk10sw-manual" },
   { part = "part/team-associated/21173", role = "kit", qty = 8, step = "Tires and Body Build - Step 2; Tires and Body Build - Step 3", source = "doc/team-associated/pro2-dk10sw-manual" },
   { part = "part/team-associated/25187", role = "kit", qty = 8, step = "Rear Suspension Build - Step 1; Rear Shock Suspension Tower Build and Bumper - Step 3 Build - Bag D - DD - Step 1; Bumper and Chassis Braces Build - Step 2", source = "doc/team-associated/pro2-dk10sw-manual" },
@@ -113,6 +115,4 @@ contains = [
   { part = "part/team-associated/9654", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/pro2-dk10sw-manual" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/pro2-dk10sw-manual" },
   { part = "part/team-associated/9831", role = "kit", qty = 2, step = "Rear Gear Shock Diff Build Tower - Step and 1 Bumper Build - Bag D - DD - Step 2; Gear Diff Build - Step 3", source = "doc/team-associated/pro2-dk10sw-manual" },
-  { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
-  { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
 ]

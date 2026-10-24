@@ -1,7 +1,8 @@
 id = "part/team-associated/81082"
 brand = "brand/team-associated"
 number = "81082"
-name = "Wheel Nuts, 17mm (Blue)"
+name = "FT Wheel Nuts, 17 mm, blue aluminum"
+former_names = ["Wheel Nuts, 17mm (Blue)"]
 category = "nut"
 color = "blue"
 related = [
@@ -12,3 +13,11 @@ related = [
   { part = "part/team-associated/89296", relation = "use-with" },
   { part = "part/team-associated/89297", relation = "use-with" },
 ]
+gtin = "784695810822"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-wheel-nuts-17-mm-blue-aluminum/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
+]
+material = "aluminium"

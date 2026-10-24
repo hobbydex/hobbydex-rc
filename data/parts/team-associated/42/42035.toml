@@ -1,7 +1,15 @@
 id = "part/team-associated/42035"
 brand = "brand/team-associated"
 number = "42035"
-name = "Spur Gear 48P, 87T"
+name = "Octalock Spur Gear, 87T 48P"
+former_names = ["Spur Gear 48P, 87T"]
 category = "spur-gear"
 teeth = 87
 pitch_dp = 48
+gtin = "784695420359"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/octalock-spur-gear-87t-48p/" },
+]
+fits = [
+  { kit = "kit/team-associated/dr10", type = "direct", source = "doc/team-associated/store" },
+]

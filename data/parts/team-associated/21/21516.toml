@@ -1,8 +1,13 @@
 id = "part/team-associated/21516"
 brand = "brand/team-associated"
 number = "21516"
-name = "Pin 1.5 x 6mm"
+name = "Drive Pins"
+former_names = ["Pin 1.5 x 6mm"]
 category = "pin"
-equivalent_to = [
-  { spec = "spec/pin/1.5x6", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+gtin = "784695215160"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/drive-pins/" },
+]
+fits = [
+  { kit = "kit/team-associated/reflex-14b", type = "direct", source = "doc/team-associated/store" },
 ]

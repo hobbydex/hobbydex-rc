@@ -1,9 +1,16 @@
 id = "part/team-associated/91488"
 brand = "brand/team-associated"
 number = "91488"
-name = "3 x 21 Shock Shaft (front)"
+name = "3x21 mm Shock Shafts"
+former_names = ["3 x 21 Shock Shaft (front)"]
 gtin = "784695914889"
 category = "shock"
 shock_part = "shaft"
 shaft_mm = 3
 length_mm = 21
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/3x21-mm-shock-shafts/" },
+]
+fits = [
+  { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+]

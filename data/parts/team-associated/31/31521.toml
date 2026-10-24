@@ -1,8 +1,16 @@
 id = "part/team-associated/31521"
 brand = "brand/team-associated"
 number = "31521"
-name = "M2.5x8mm BHCS"
+name = "Screws, M2.5x8 mm BHCS"
+former_names = ["M2.5x8mm BHCS"]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.5x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695315211"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2-5x8-mm-bhcs/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc10b84", type = "direct", source = "doc/team-associated/store" },
 ]

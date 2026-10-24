@@ -1,0 +1,18 @@
+id = "part/team-associated/1351"
+brand = "brand/team-associated"
+number = "1351"
+name = "FT Aluminum Pinion Gear, 33T 48P, 1/8 shaft"
+gtin = "784695013513"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-aluminum-pinion-gear-33t-48p-1-8-shaft/" },
+]
+fits = [
+  { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+]
+category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-33t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+material = "aluminium"
+teeth = 33
+pitch_dp = 48

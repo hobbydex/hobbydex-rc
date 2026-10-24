@@ -1,8 +1,16 @@
 id = "part/team-associated/91562"
 brand = "brand/team-associated"
 number = "91562"
-name = "6 x 13 x 5 Bearing"
+name = "FT Bearings, 6x13x5 mm"
+former_names = ["6 x 13 x 5 Bearing"]
 equivalent_to = [
   { spec = "spec/bearing/6x13x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
+gtin = "784695915626"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-bearings-6x13x5-mm/" },
+]
+fits = [
+  { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+]

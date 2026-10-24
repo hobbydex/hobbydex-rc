@@ -1,5 +1,18 @@
 id = "part/team-associated/31381"
 brand = "brand/team-associated"
 number = "31381"
-name = "0.5mm Shim"
+name = "Ballstud Washers, 5.5x3.0x0.5 mm, blue aluminum"
+former_names = ["0.5mm Shim"]
 category = "washer-shim"
+gtin = "784695313811"
+links = [
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ballstud-washers-5-5x3-0x0-5-mm-blue-aluminum/" },
+]
+fits = [
+  { kit = "kit/team-associated/rc28f", type = "direct", source = "doc/team-associated/store" },
+]
+color = "blue"
+equivalent_to = [
+  { spec = "spec/washer/3x5.5x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "aluminium"
