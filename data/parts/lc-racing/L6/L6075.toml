@@ -3,6 +3,8 @@ brand = "brand/lc-racing"
 number = "L6075"
 name = "Spur Gear 60T"
 applies_to = "EMB-RA"
-notes = "Components: SPUR GEAR 60T (BE6127)"
 category = "spur-gear"
 teeth = 60
+includes = [
+  { part = "part/lc-racing/BE6127" },
+]

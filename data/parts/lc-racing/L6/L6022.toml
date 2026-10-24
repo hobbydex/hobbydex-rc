@@ -3,6 +3,10 @@ brand = "brand/lc-racing"
 number = "L6022"
 name = "Front Shock Set"
 applies_to = "BHC-1, EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TG, EMB-MT, LC12B1, PTG-2"
-notes = "Components: FRONT SHOCK SPRING (HM6005); FRONT SHOCK BODY (HM6010); FRONT SHOCK SHAFT (HM6014)"
 category = "shock"
 shock_part = "complete"
+includes = [
+  { part = "part/lc-racing/HM6005" },
+  { part = "part/lc-racing/HM6010" },
+  { part = "part/lc-racing/HM6014" },
+]

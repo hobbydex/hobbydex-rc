@@ -10,7 +10,7 @@ when a source stated it:
 - a record removed, unless data/retired.toml lists it with replaced_by, or a record
   of the head names it in former_ids (a rename);
 - a field removed or changed while it is sourced: links, fits, includes, material,
-  color, former_names, name_de, name_fr, name_ja; category with
+  color, former_names, name_de, name_fr, name_ja, documents, contains, notes; category with
   category_source = "curated"; pack_qty with a stated pack_qty_basis (name, page,
   maker, owner, includes, photos); any field with a <field>_source beside it or a
   key in `sources`; equivalent_to rows that carry a source;
@@ -40,7 +40,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from check_ids import id_of
 
 RETIRED = "data/retired.toml"
-SOURCED_FIELDS = {"links", "fits", "includes", "material", "color", "former_names", "name_de", "name_fr", "name_ja"}
+SOURCED_FIELDS = {"links", "fits", "includes", "material", "color", "former_names", "name_de", "name_fr", "name_ja",
+                 "documents", "contains", "notes"}   # list rows and notes: each is some tool's provenance
 STATED_PACK_BASIS = {"maker", "page", "name", "owner", "includes", "photos"}   # pack_qty_basis; "photo" is the weakest, not stated
 CONVENTION = {"material": {"unknown"}}   # placeholder values, never a stated fact
 # keys that name a row, in the order they are tried; rows are paired by them when their content changed

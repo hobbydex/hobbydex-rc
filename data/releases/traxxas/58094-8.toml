@@ -3,12 +3,11 @@ kit = "kit/traxxas/ford-raptor"
 brand = "brand/traxxas"
 number = "58094-8"
 name = "Ford Raptor XL-5 2WD Replica Truck w/ TQ Radio RTR (58094-8)"
-kind = "rtr"
-status = "discontinued"
 seen_by = "2023-09"
 seen_by_source = "https://traxxas.com/58094-8-110-ford-raptor-xl-5-2wd-replica-truck-w-tq-radio"
 depicts = { make = "Ford", model = "Raptor XL-5" }
-notes = "on sale by: the manual's print code (230921 58094-8-OM-N-EN-R00)"
+kind = "rtr"
+status = "discontinued"
 documents = ["doc/traxxas/58094-8-parts-list", "doc/traxxas/58094-8-owners-manual", "doc/traxxas/58094-8-product-page"]
 contains = [
   { part = "part/traxxas/1552", role = "option", source = "doc/traxxas/58094-8-parts-list" },
@@ -434,3 +433,4 @@ contains = [
   { part = "part/traxxas/9917", role = "option", source = "doc/traxxas/58094-8-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/58094-8-parts-list" },
 ]
+notes = "on sale by: the manual's print code (230921 58094-8-OM-N-EN-R00)"
