@@ -62,6 +62,30 @@ the documents). Kyosho states "Hex" in its names; no Kyosho document
 states a JIS or Phillips cross recess, so a Kyosho screw without "Hex" in
 its name gets no drive.
 
+## LC Racing
+
+LC Racing writes the head as a code in front of the size, with no other
+word: "TM2.6X8mm", "KM2.6X6mm". Its manuals spell the code out in the
+parts legend of each step, beside a drawing of the screw:
+
+- TM is a round head (button) screw with a hex socket: "Round Head Screw
+  TM2.6x10mm" (BHC-1 V2 manual), "Round Head Screw TM3x10mm" (PTG-2TC
+  and LC10B5 manuals), "Round Head Screw TM 3.0x18mm" (EMB-SC manual),
+  each drawn with a domed head and a hex socket.
+- KM is a countersunk (flat head) screw with a hex socket: "Countersunk
+  Screw KM2.6x6mm" and the same in the other manuals, drawn with a
+  countersunk head and a hex socket. One label disagrees: the LC10B5
+  manual writes "LCSK19 KM M3x16" on page 32 beside a drawn round head,
+  where page 23 writes "LCSK19 TM M3x16" and LC Racing names LCSK19
+  "Round Head Screw M3x16mm"; the drawing and the name agree with TM.
+- KB (HM6081, 1.4x10mm, the diff case screws) is drawn as a countersunk
+  screw with a cross recess, and the 2021 EMB-1/TG manual calls it
+  "Countersunk screw 1.4x10mm"; no document shows whether its thread is a
+  machine or a tapping thread, so it has no row and no spec link.
+- CM is drawn as a socket cap screw with a hex socket (Chinese label: cup
+  head), but the BHC-1 V2 manual's English label for CM3.0x20mm reads
+  "Button Head Screw": no row until a document settles it.
+
 ## Flanged heads
 
 A flange under the head is its own spec head: flanged-socket-cap,
@@ -82,12 +106,14 @@ countersunk, flanged low-head and flanged set screws are not linked.
 | kyosho | Bind Screw | binding head (Tamiya: Binding Head = truss) | truss | Kyosho data names 'Bind Screw(M3x16)', 'TP Bind Screw(M2.6x8)'; Kyosho calls it binding head; Tamiya decision maps Binding Head to truss | inferred |
 | tamiya | Cap Screw | Tamiya: Cap Screw = socket cap | socket-cap | docs/decisions.md (Tamiya screw convention) | stated |
 | tamiya | Binding Head | Tamiya: Binding Head = truss | truss | docs/decisions.md (Tamiya screw convention); Tamiya '2.6x5mm Truss Screw' | stated |
-| tamiya | Hex Head | Tamiya: Hex Head = hexagon head with a JIS cross recess (the manual's 'Hex head tapping screw') | hex | TT-02 manual 300058570, parts page 23: '3x10mm Hex Head Tapping Screw (MB2 x10)', the side view draws a hexagon head; the cross recess is not drawn there (Tamiya JIS convention; user, 2026-10-23) | inferred |
 | tamiya | Screw (no hex, no screw pin) | Tamiya: a plain Screw = pan head, JIS cross recess | pan | docs/decisions.md (Tamiya screw convention) | stated |
+| tamiya | Hex Head | Tamiya: Hex Head = hexagon head with a JIS cross recess (the manual's 'Hex head tapping screw') | hex | TT-02 manual 300058570, parts page 23: '3x10mm Hex Head Tapping Screw (MB2 x10)', the side view draws a hexagon head; the cross recess is not drawn there (Tamiya JIS convention; user, 2026-10-23) | inferred |
 | traxxas | CCS | cap screw (Traxxas CCS), head shape not drawn in the exploded views | socket-cap | Traxxas parts lists '3x8mm CCS (stainless)'; read from usage cap/button/countersunk/set | inferred |
 | traxxas | BCS | button cap screw (Traxxas BCS) | button | Traxxas parts lists '3x15mm BCS (with threadlock)'; read from usage; exploded views not read | inferred |
 | traxxas | CS | countersunk (flat head), hex drive | countersunk | Traxxas parts list '4859 CS 3x10 flathead (hex drive)' beside 'Screws, 3x10mm countersunk machine (hex drive)' | stated |
 | traxxas | SS | set screw (Traxxas SS), hex drive | set | Traxxas parts list '3x12 SS (hex drive)'; read from usage | inferred |
 | xray | SFH (Hudy names) | Hudy 'Titanium Flat Head Screw' = XRAY SFH | countersunk | XRAY part list 903305-T (xb4-2026-part-list) | stated |
+| lc-racing | TM | round head (button) screw, hex socket | button | BHC-1 V2 manual p14 legend 'Round Head Screw TM2.6x10mm' beside a drawn domed head with a hex socket; the same legend and drawing for TM2.0x4, TM2.6x8, TM3.0x6 (pp15-24), the 1/10 manuals, PTG-2TC and LC10B5 ('Round Head Screw TM3x10mm', 'LCSK04 TM M3x10') and the EMB-SC manual ('Round Head Screw TM 3.0x18mm'); the 2021 EMB-1/TG manual names the L6041 screws 'Round head screw 2.6x10mm' where the parts list has TM2.6X10mm | stated |
+| lc-racing | KM | countersunk (flat head) screw, hex socket | countersunk | BHC-1 V2 manual p14 legend 'Countersunk Screw KM2.6x6mm' beside a drawn countersunk head with a hex socket; the same for KM2.6x8, KM2.0x8, KM2.6x14 (pp12-24), the 1/10 manuals, PTG-2TC and LC10B5 ('Countersunk Screw KM3x10mm', 'LCSK09 KM M3x10') and the EMB-SC manual ('Countersunk Screw KM 2.6x8mm'); the 2021 EMB-1/TG manual names KM2.0X4mm 'Countersunk screw 2.0x4mm' | stated |
 | any | flanged head (FLANGED SH, SHF, flanged cap/button) | flanged head: the plain head plus a flange under it; spec head flanged-socket-cap, flanged-button or flanged-pan; no ISO standard for a flanged socket cap | flanged-* | XRAY: 'HEX SCREW FLANGED SH M3x12' and 'FLANGED SHF M3x12' (xb8e-2026-part-list, 911312); user-confirmed XRAY page prod_id=4987 (black) | stated |
 
