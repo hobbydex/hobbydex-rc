@@ -4,7 +4,7 @@ number = "28140"
 name = "LiPo Battery 2S 7,4V 5000mAh 50C T-Plug"
 name_de = "LiPo Akku 2S 7,4V 5000mAh 50C T-Plug"
 gtin = "4262500340000"
-notes = "Specifications: Battery Type Li-Po; Cells 2; Battery Voltage 7.4V; Battery Capacity 5000mAh; Battery Plug Deans; Dimension 138x45x25mm; Battery Weight 282g. Contents: System: Lithium polymer (LiPo), rechargeable; Voltage: 7.4V; Cells: 2; Capacity: 5000mAh; Constant discharge current: 50C (250A); Max. short-term discharge current: 100C (500A); Max. charging current: 2C (10A); Energy capacity: 37.0Wh; Dimensions: 138x45x25mm; Weight: 282g; Plug system: T-plug; Balancer connection: XH; Packaging: Hard case; Includes adapter T-plug to XT60-plug"
+notes = "Contents: System: Lithium polymer (LiPo), rechargeable; Voltage: 7.4V; Cells: 2; Capacity: 5000mAh; Constant discharge current: 50C (250A); Max. short-term discharge current: 100C (500A); Max. charging current: 2C (10A); Energy capacity: 37.0Wh; Dimensions: 138x45x25mm; Weight: 282g; Plug system: T-plug; Balancer connection: XH; Packaging: Hard case; Includes adapter T-plug to XT60-plug"
 fits = [
   { kit = "kit/amewi/mercedes-benz-arocs-dump-truck-6x6", type = "direct", source = "doc/amewi/22729-product-page" },
 ]
@@ -17,3 +17,8 @@ chemistry = "lipo"
 cells = 2
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
+voltage = 7.4
+capacity_mah = 5000
+dimensions_mm = [138, 45, 25]
+weight_g = 282
+case = "hard"

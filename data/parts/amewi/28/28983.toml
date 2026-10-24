@@ -3,7 +3,6 @@ brand = "brand/amewi"
 number = "28983"
 name = "LiPo Akku 3S 5000mAh 11,1V 35C Softcase XT90"
 gtin = "4260768515925"
-notes = "Specifications: Battery Type Li-Po; Cells 3; Battery Voltage 11.1V; Battery Capacity 5000mAh; Battery Plug XT90; Dimension 140x40x25mm; Battery Weight 350g"
 fits = [
   { kit = "kit/amewi/rxb7", type = "direct", source = "doc/amewi/22554-product-page" },
   { kit = "kit/amewi/hc7", type = "direct", source = "doc/amewi/21091-product-page" },
@@ -22,3 +21,6 @@ connector = "XT90"
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
+voltage = 11.1
+dimensions_mm = [140, 40, 25]
+weight_g = 350

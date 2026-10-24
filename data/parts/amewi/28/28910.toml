@@ -3,7 +3,6 @@ brand = "brand/amewi"
 number = "28910"
 name = "LiPo Akku 2S 7.4V 1500mah 20C Softcase, DEANS"
 gtin = "4260476356902"
-notes = "Specifications: Battery Type Li-Po; Cells 2; Battery Voltage 7.4V; Battery Capacity 1500mAh; Battery Plug Deans; Dimension 76x33x17mm; Battery Weight 95g"
 fits = [
   { kit = "kit/amewi/short-course-truck-fighter-1-sc12", type = "direct", source = "doc/amewi/22430-product-page" },
 ]
@@ -21,3 +20,6 @@ connector = "Deans"
 category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
+voltage = 7.4
+dimensions_mm = [76, 33, 17]
+weight_g = 95

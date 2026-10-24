@@ -3,7 +3,6 @@ brand = "brand/amewi"
 number = "28970"
 name = "Li-Ion Akku 2S 7,4V 2000mAh T-Stecker"
 gtin = "4260564639344"
-notes = "Specifications: Battery Type Li-Ion; Cells 2; Battery Voltage 7.4V; Battery Capacity 2000mAh; Battery Plug T-Stecker; Dimension 70x37x19mm; Battery Weight 105g"
 fits = [
   { kit = "kit/amewi/mew4-monster-truck", type = "direct", source = "doc/amewi/22653-product-page" },
   { kit = "kit/amewi/dirt-climbing-suv-pick-up", type = "direct", source = "doc/amewi/22594-product-page" },
@@ -17,3 +16,7 @@ category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
 chemistry = "liion"
+voltage = 7.4
+connector = "T-Plug"
+dimensions_mm = [70, 37, 19]
+weight_g = 105

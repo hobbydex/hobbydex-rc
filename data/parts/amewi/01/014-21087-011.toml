@@ -4,7 +4,6 @@ number = "014-21087-011"
 name = "Li-Ion Battery 7,4V 1200mAh, BEC Plug"
 name_de = "Li-Ion Akku 7,4V 1200mAh, BEC-Stecker"
 gtin = "4260677955485"
-notes = "Specifications: Battery Type Li-Ion; Cells 2; Battery Voltage 7.4V; Battery Capacity 1200mAh; Battery Plug BEC; Dimension 69x37x19mm; Battery Weight 85g"
 fits = [
   { kit = "kit/amewi/dr1-6", type = "direct", source = "doc/amewi/21098-product-page" },
   { kit = "kit/amewi/lr16-fr16", type = "direct", source = "doc/amewi/21095-product-page" },
@@ -15,3 +14,9 @@ links = [
 ]
 category = "battery"
 chemistry = "liion"
+cells = 2
+voltage = 7.4
+capacity_mah = 1200
+connector = "BEC"
+dimensions_mm = [69, 37, 19]
+weight_g = 85
