@@ -9,8 +9,8 @@ links = [
   { site = "tamico.de", url = "https://tamico.de/Tamiya-19805334-4x6-brass-pipe-3x15-screw", kind = "dealer" },
 ]
 name_source = "ocr"
-category = "screw"
+category = "washer-shim"
 material = "brass"
-equivalent_to = [
-  { spec = "spec/screw/m4x6-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+includes = [
+  { spec = "spec/screw/m3x15-pan-jis", qty = 1, notes = "Size from this item's words in the manufacturer's name" },
 ]

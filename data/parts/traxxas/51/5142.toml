@@ -5,9 +5,6 @@ name = "Screws, 3x15mm caphead machine (hex drive) (with split and flat washers)
 pack_qty = 6
 category = "screw"
 category_source = "curated"
-equivalent_to = [
-  { spec = "spec/screw/m3x15-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 fits = [
   { kit = "kit/traxxas/nitro-slash", type = "direct", source = "doc/traxxas/44056-3-parts-list" },
   { kit = "kit/traxxas/nitro-rustler", type = "direct", source = "doc/traxxas/44096-3-parts-list" },
@@ -24,4 +21,7 @@ fits = [
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/5142-cap-head-machine-screws-3x15-mm-w-washers-6" },
+]
+includes = [
+  { spec = "spec/screw/m3x15-socket-cap-hex", notes = "Size from this item's words in the manufacturer's name" },
 ]

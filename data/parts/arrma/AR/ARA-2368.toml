@@ -10,9 +10,6 @@ links = [
 material = "steel"
 category = "screw"
 category_source = "curated"
-equivalent_to = [
-  { spec = "spec/screw/m3x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 fits = [
   { kit = "kit/arrma/big-rock", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/freedom-flyer", type = "direct", source = "doc/arrma/horizon-part-pages" },
@@ -26,4 +23,7 @@ fits = [
   { kit = "kit/arrma/typhon-mega", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/vorteks", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/vorteks-2wd", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]
+includes = [
+  { spec = "spec/screw/m3x16-button-hex", qty = 1, notes = "Size from this item's words in the manufacturer's name" },
 ]
