@@ -3,5 +3,8 @@ brand = "brand/lc-racing"
 number = "L6025"
 name = "185mm wheelbase Chassis Side Guard Set"
 applies_to = "EMB-1, EMB-TG, EMB-MT"
-notes = "Components: LEFT SAFEGUARD (BE6044); RIGHT SAFEGUARD (BE6045)"
 category = "bumper-guard"
+includes = [
+  { part = "part/lc-racing/BE6044" },
+  { part = "part/lc-racing/BE6045" },
+]

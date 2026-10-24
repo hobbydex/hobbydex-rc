@@ -3,6 +3,9 @@ brand = "brand/lc-racing"
 number = "L6071"
 name = "EMB Composite Shock Tower Set(L Version)"
 applies_to = "EMB series"
-notes = "Components: PLASTIC FRONT SHOCK TOWER (BE6074); PLASTIC REAR SHOCK TOWER (BE6075)"
 category = "chassis"
 material = "plastic"
+includes = [
+  { part = "part/lc-racing/BE6074" },
+  { part = "part/lc-racing/BE6075" },
+]

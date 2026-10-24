@@ -2,8 +2,10 @@ id = "part/lc-racing/L6077"
 brand = "brand/lc-racing"
 number = "L6077"
 name = "380 Brushed Motor"
-notes = "Components: 380 BRUSH MOTOR (MR6000)"
 category = "motor"
 equivalent_to = [
   { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
+includes = [
+  { part = "part/lc-racing/MR6000" },
 ]
