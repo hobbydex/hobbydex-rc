@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-DUR-DETC410"
+brand = "brand/avid-rc"
+number = "AV-DUR-DETC410"
+name = "Team Durango DETC410 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 2, notes = "Default: Ceramic Flanged Metal (greased)" },
+  { spec = "spec/bearing/3x7x3", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Durango DETC410"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1387/DETC410" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

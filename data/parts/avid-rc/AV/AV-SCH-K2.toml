@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-SCH-K2"
+brand = "brand/avid-rc"
+number = "AV-SCH-K2"
+name = "Schumacher Cat K2 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x9x3", qty = 2, notes = "Default: Flanged Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Schumacher Cat K2"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1458/Cat-K2" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

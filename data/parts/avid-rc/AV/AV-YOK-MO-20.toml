@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-YOK-MO-20"
+brand = "brand/avid-rc"
+number = "AV-YOK-MO-20"
+name = "Yokomo MO 2.0 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 1, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Yokomo MO 2.0"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled), Ceramic Rubber (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4105/MO-20" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

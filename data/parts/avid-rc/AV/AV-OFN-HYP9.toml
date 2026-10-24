@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-OFN-HYP9"
+brand = "brand/avid-rc"
+number = "AV-OFN-HYP9"
+name = "OFNA Hyper 9 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x14x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 5, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x8x2.5", qty = 1, notes = "Default: Flanged Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "OFNA Hyper 9"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Ceramic Revolution | Aura, Ceramic Rubber, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/339/Hyper-9" },
+]
+pack_qty = 27
+pack_qty_basis = "includes"

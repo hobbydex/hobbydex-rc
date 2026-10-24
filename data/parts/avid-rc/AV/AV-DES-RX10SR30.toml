@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-DES-RX10SR30"
+brand = "brand/avid-rc"
+number = "AV-DES-RX10SR30"
+name = "Destiny RX-10SR 3.0 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/3x6x2.5", qty = 6, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x11x4", qty = 4, notes = "Only option: Rubber (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/3x8x4", qty = 2, notes = "Default: Motor Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Destiny RX-10SR 3.0"
+notes = "Each size can be ordered as one of: Metal, Rubber, Metal (oiled), Revolution, Revolution | Aura, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3974/RX10SR-30" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

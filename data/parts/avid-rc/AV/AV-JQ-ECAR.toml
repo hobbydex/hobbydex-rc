@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-JQ-ECAR"
+brand = "brand/avid-rc"
+number = "AV-JQ-ECAR"
+name = "JQ The eCAR Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 14, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "JQ The eCAR (also Grey Edition)"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2751/The-eCAR" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

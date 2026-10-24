@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-TAM-CLOD2"
+brand = "brand/avid-rc"
+number = "AV-TAM-CLOD2"
+name = "Tamiya Clodbuster (2 Axles) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x12x4", qty = 20, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/bullhead", car = "Clodbuster (2 Axles)", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/801/Clodbuster-2-Axles" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-TAM-ET01"
+brand = "brand/avid-rc"
+number = "AV-TAM-ET01"
+name = "Tamiya Euro Truck TT-01 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 12, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/tt-01", car = "Euro Truck", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya Euro Truck TT-01" },
+  { kit = "kit/tamiya/tt-02b", car = "Euro Truck", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1626/Euro-Truck-TT01" },
+]
+pack_qty = 16
+pack_qty_basis = "includes"

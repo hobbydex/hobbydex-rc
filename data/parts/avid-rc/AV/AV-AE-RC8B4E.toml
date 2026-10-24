@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-AE-RC8B4E"
+brand = "brand/avid-rc"
+number = "AV-AE-RC8B4E"
+name = "Team Associated RC8T4e Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-8x16x5", qty = 8, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-6x13x5", qty = 4, notes = "Default: Flanged Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Associated RC8T4e (also RC8B4e)"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Revolution | Aura, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3667/RC8T4e" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

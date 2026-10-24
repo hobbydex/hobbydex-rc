@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-YOK-BD7"
+brand = "brand/avid-rc"
+number = "AV-YOK-BD7"
+name = "Yokomo BD7 '13 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-3x6x2.5", qty = 2, notes = "Default: Ceramic Flanged Metal (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Yokomo BD7 '13" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/618/BD7-13" },
+]
+pack_qty = 23
+pack_qty_basis = "includes"

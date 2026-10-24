@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-LOSI-22X4E"
+brand = "brand/avid-rc"
+number = "AV-LOSI-22X4E"
+name = "Team Losi TLR 22X-4 Essentials Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Team Losi TLR 22X-4 | Essentials (also TLR 22X-4 2.0 DC | Essentials)"
+fits = [
+  { kit = "kit/tlr/22x-4", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Losi TLR 22X-4 (link_car_kits.py)" },
+]
+notes = "Essentials kit: Avid leaves out the bearings that seldom need replacing: (4) 3x6 Metal - Steering Rack; (4) 5x8 Metal - Steering Bellcranks. Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3213/TLR-22X4-Essentials" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

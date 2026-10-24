@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-SCH-L1E"
+brand = "brand/avid-rc"
+number = "AV-SCH-L1E"
+name = "Schumacher Cat L1 Evo Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 4, notes = "Default: Revolution (not Clutch) (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 4, notes = "Default: Flanged Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Schumacher Cat L1 Evo"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Revolution (not Clutch), Metal (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3280/Cat-L1-Evo" },
+]
+pack_qty = 33
+pack_qty_basis = "includes"

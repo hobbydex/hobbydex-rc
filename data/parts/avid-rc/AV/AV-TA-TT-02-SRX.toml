@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-TA-TT-02-SRX"
+brand = "brand/avid-rc"
+number = "AV-TA-TT-02-SRX"
+name = "Tamiya TT-02 SRX Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Revolution (not Clutch) (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/tamiya/tt-02", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya TT-02 SRX" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Revolution (not Clutch), Metal (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3992/TT02-SRX" },
+]
+pack_qty = 16
+pack_qty_basis = "includes"

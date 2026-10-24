@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-YOK-BMAX4"
+brand = "brand/avid-rc"
+number = "AV-YOK-BMAX4"
+name = "Yokomo B-MAX4 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x18x4", qty = 4, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/3x7x3", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Rubber, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/617/BMAX4" },
+]
+pack_qty = 14
+pack_qty_basis = "includes"

@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-LCR-PTG2"
+brand = "brand/avid-rc"
+number = "AV-LCR-PTG2"
+name = "LC Racing PTG-2, PTG-2R, PTG-1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "LC Racing PTG-2, PTG-2R, PTG-1"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the PTG-2R (link_car_kits.py)" },
+  { kit = "kit/lc-racing/ptg-1", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the PTG-1 (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3891/PTG2-PTG2R-PTG1" },
+]
+pack_qty = 16
+pack_qty_basis = "includes"

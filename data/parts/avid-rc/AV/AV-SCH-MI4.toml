@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-SCH-MI4"
+brand = "brand/avid-rc"
+number = "AV-SCH-MI4"
+name = "Schumacher Mi4 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Schumacher Mi4"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/244/Mi4" },
+]
+pack_qty = 15
+pack_qty_basis = "includes"

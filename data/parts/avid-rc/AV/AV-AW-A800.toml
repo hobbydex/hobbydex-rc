@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-AW-A800"
+brand = "brand/avid-rc"
+number = "AV-AW-A800"
+name = "Awesomatix A800 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x10x3", qty = 13, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+applies_to = "Awesomatix A800"
+fits = [
+  { kit = "kit/awesomatix/a800", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Awesomatix A800 (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1549/A800" },
+]
+pack_qty = 14
+pack_qty_basis = "includes"

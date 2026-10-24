@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-AE-SC104X4"
+brand = "brand/avid-rc"
+number = "AV-AE-SC104X4"
+name = "Team Associated SC10 4x4 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x12x4", qty = 10, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x16x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 4, notes = "Default: Metal (not Clutch) (greased)" },
+  { spec = "spec/bearing/3x8x4", qty = 4, notes = "Default: Motor Bearing (oiled)" },
+  { spec = "spec/bearing/12x18x4", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/4x8x3", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Metal (not Clutch), Revolution (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch), Motor Bearing, Ceramic Motor Bearing, Ceramic Rubber (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/333/SC10-4x4" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"

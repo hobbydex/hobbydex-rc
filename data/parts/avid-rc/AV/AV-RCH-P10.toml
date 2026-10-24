@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-RCH-P10"
+brand = "brand/avid-rc"
+number = "AV-RCH-P10"
+name = "Roche Rapide P10 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-3.175x7.938x3.572", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 3, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 3, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Roche Rapide P10 (also Rapide P10W, Rapide P10W Evo)"
+notes = "Each size can be ordered as one of: Metal, Ceramic Metal, Ceramic Metal | Aura, Revolution, Rubber, Ceramic Revolution (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2783/Rapide-P10" },
+]
+pack_qty = 12
+pack_qty_basis = "includes"

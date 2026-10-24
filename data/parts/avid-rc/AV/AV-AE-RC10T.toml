@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-AE-RC10T"
+brand = "brand/avid-rc"
+number = "AV-AE-RC10T"
+name = "Team Associated RC10T Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4.762x9.525x3.175", qty = 8, notes = "Default: Ceramic Revolution (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/3.969x7.938x3.175", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/9.525x15.875x3.969", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/team-associated/rc10t", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2967/RC10T" },
+]
+pack_qty = 16
+pack_qty_basis = "includes"

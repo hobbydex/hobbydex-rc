@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-SCH-CLD"
+brand = "brand/avid-rc"
+number = "AV-SCH-CLD"
+name = "Schumacher Cougar Laydown Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x10x4", qty = 2, notes = "Default: Flanged Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 1, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Schumacher Cougar Laydown"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3170/Cougar-Laydown" },
+]
+pack_qty = 23
+pack_qty_basis = "includes"

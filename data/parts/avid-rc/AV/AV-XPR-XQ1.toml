@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-XPR-XQ1"
+brand = "brand/avid-rc"
+number = "AV-XPR-XQ1"
+name = "Xpress XQ1 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Revolution (not Clutch) (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Xpress XQ1"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled), Revolution (not Clutch), Metal (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3187/XQ1" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

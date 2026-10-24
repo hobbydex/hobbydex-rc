@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-TRX-SLAM"
+brand = "brand/avid-rc"
+number = "AV-TRX-SLAM"
+name = "Traxxas Slash Modified (104354-74) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 13, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/traxxas/slash-2wd", releases = ["release/traxxas/104354-74"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Slash Modified (104354-74)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4320/Slash-Modified-10435474" },
+]
+pack_qty = 19
+pack_qty_basis = "includes"

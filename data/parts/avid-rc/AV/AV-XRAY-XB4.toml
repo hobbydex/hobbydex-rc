@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-XRAY-XB4"
+brand = "brand/avid-rc"
+number = "AV-XRAY-XB4"
+name = "Xray XB4 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x12x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/xray/xb4", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/548/XB4" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

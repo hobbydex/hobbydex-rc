@@ -3,13 +3,7 @@ brand = "brand/skyrc"
 number = "SK-300060"
 name = "Toro TS50 Sensored ESC"
 category = "esc"
-motor_type = "brushless"
-bec_v = 6.0
-bec_a = 2
-nimh_cells = [4, 6]
-resistance_mohm = 0.6
 category_source = "curated"
-sensored = true
 lipo_cells = [2, 2]
 current_a = 50
 peak_current_a = 300
@@ -20,3 +14,9 @@ documents = ["doc/skyrc/sk-300060-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/TS50" },
 ]
+motor_type = "brushless"
+bec_v = 6.0
+bec_a = 2
+nimh_cells = [4, 6]
+resistance_mohm = 0.6
+sensored = true

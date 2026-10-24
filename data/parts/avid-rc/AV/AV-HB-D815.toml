@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-HB-D815"
+brand = "brand/avid-rc"
+number = "AV-HB-D815"
+name = "HB Racing D815 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x21x5", qty = 4, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/12x18x4", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal | Clutch (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/hb-racing/d817", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Rear, Ceramic Rear, Ceramic Rubber, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1412/D815" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"
