@@ -3,8 +3,6 @@ brand = "brand/t2m"
 number = "T4919-55"
 name = "Round head screw 2x8 mm"
 name_fr = "Vis tête ronde 2x8 mm"
-pack_qty = 12
-pack_qty_basis = "page"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-vis-tete-ronde-2x8-mm-12pcs-T4919_55" },
@@ -14,3 +12,5 @@ equivalent_to = [
   { spec = "spec/screw/m2x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+pack_qty = 12
+pack_qty_basis = "name"

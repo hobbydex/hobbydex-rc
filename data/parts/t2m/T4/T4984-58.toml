@@ -3,11 +3,14 @@ brand = "brand/t2m"
 number = "T4984-58"
 name = "M4 brake nut"
 name_fr = "Ecrou frein M4"
-pack_qty = 6
-pack_qty_basis = "page"
 source = "doc/t2m/t2m-shop"
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-ecrou-frein-m4-6pcs-T4984_58" },
 ]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4984/58."
 category = "nut"
+pack_qty = 6
+pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/nut/m4-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

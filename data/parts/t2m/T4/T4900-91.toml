@@ -4,5 +4,11 @@ number = "T4900-91"
 name = "Washer (5.2x10x0.2)"
 name_fr = "Rondelle (5,2 x10 x0,2)"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-rondelle-5-2-x10-x0-2-T4900_91" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4900/91."
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5.2x10x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

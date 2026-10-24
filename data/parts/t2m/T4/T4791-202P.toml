@@ -4,6 +4,12 @@ number = "T4791-202P"
 name = "Washers 6.0x12x0.2"
 name_fr = "Rondelles  6,0x12x0,2"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-rondelles-6-0x12x0-2-10p-T4791_202P" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4791/202P."
 pack_qty = 10
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/6x12x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

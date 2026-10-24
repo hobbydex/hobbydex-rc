@@ -3,7 +3,12 @@ brand = "brand/t2m"
 number = "T4963-10"
 name = "Washers"
 name_fr = "Rondelles"
-pack_qty = 10
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-rondelles-10pc-T4963_10" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4963/10."
 category = "washer-shim"
+pack_qty = 10
+pack_qty_basis = "name"
+applies_to = ["Pirate RS3 SE Brushless 1/8"]

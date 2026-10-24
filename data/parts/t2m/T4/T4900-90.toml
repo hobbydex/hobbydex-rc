@@ -4,5 +4,11 @@ number = "T4900-90"
 name = "Pin (2 x 12.5)"
 name_fr = "Axe (2 x12,5)"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-axe-2-x12-5-T4900_90" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4900/90."
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x12.5", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

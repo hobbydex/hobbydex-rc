@@ -3,7 +3,14 @@ brand = "brand/t2m"
 number = "T4919-30"
 name = "Pin 2 x 18 mm"
 name_fr = "Axe 2 x 18 mm"
-pack_qty = 12
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-axe-2-x-18-mm-12pcs-T4919_30" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4919/30."
 category = "pin"
+pack_qty = 12
+pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/pin/2x18", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

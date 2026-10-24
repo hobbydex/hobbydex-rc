@@ -4,5 +4,11 @@ number = "T4915-50"
 name = "Pin 2x15"
 name_fr = "Goupille Axe 2x15"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-voiture-T4915_50" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4915/50."
-category = "scale-accessory"
+category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x15", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

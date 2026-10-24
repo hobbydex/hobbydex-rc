@@ -4,6 +4,12 @@ number = "T4978-15"
 name = "M3 brake nut"
 name_fr = "Ecrou frein M3"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-ecrou-frein-m3-8p-1-10-T4978_15" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4978/15."
 pack_qty = 8
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

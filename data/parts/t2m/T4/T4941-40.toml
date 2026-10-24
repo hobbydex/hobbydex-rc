@@ -4,9 +4,13 @@ number = "T4941-40"
 name = "Countersunk screw 3x10 mm"
 name_fr = "Vis tête fraisée  3x10mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-vis-tete-fraisee-3x10mm-12p-T4941_40" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4941/40."
 pack_qty = 12
 equivalent_to = [
   { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
+applies_to = ["Pirate XT-S 1/10"]

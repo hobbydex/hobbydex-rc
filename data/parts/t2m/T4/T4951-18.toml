@@ -4,5 +4,12 @@ number = "T4951-18"
 name = "Spacer 6x3x5.5 mm"
 name_fr = "Entretoise  6x3x5,5mm"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-entretoise-6x3x5-5mm-T4951_18" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4951/18."
 category = "washer-shim"
+applies_to = ["Pirate Strangler 1/10 XL"]
+equivalent_to = [
+  { spec = "spec/washer/3x6x5.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

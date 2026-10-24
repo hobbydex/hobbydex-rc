@@ -4,6 +4,12 @@ number = "T4942-39"
 name = "M4 wheel nut"
 name_fr = "Ecrou de roues M4"
 source = "doc/t2m/t2m-shop"
+links = [
+  { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-ecrou-de-roues-m4-6p-T4942_39" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4942/39."
 pack_qty = 6
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-wheel", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
