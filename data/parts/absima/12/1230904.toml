@@ -1,8 +1,9 @@
 id = "part/absima/1230904"
 brand = "brand/absima"
 number = "1230904"
-name = "E Clips 2.5*0.4"
+name = "E Clips 2.5*0.4 (10)"
 pack_qty = 10
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/adb1", type = "direct", source = "doc/absima/spares-adb1" },
 ]
@@ -10,4 +11,6 @@ category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/2.5mm-0.4", match = "functional", notes = "Shaft size from the name; the clip's thickness is the spec's" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230904" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230904" },
+]

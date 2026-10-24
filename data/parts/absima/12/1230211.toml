@@ -1,8 +1,9 @@
 id = "part/absima/1230211"
 brand = "brand/absima"
 number = "1230211"
-name = "Washer 8x5.2x0.5"
+name = "Washer 8x5.2x0.5 (2)"
 pack_qty = 2
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/absima/atc-v2", type = "direct", source = "doc/absima/spares-atc-v2" },
   { kit = "kit/absima/amt-v2", type = "direct", source = "doc/absima/spares-amt-v2" },
@@ -11,4 +12,6 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5.2x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230211" } ]
+links = [
+  { site = "Absima", url = "https://www.absima.shop/index.htm?shop=absima_en&a=article&ProdNr=1230211" },
+]
