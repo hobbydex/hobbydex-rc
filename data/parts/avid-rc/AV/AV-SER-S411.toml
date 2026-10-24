@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-SER-S411"
+brand = "brand/avid-rc"
+number = "AV-SER-S411"
+name = "Serpent S411 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-4x7x2.5", qty = 4, notes = "Only option: Flanged Metal (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Serpent S411"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1436/S411" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

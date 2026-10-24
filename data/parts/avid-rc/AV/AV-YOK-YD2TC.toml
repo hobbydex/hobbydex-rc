@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-YOK-YD2TC"
+brand = "brand/avid-rc"
+number = "AV-YOK-YD2TC"
+name = "Yokomo YD-2 TC Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Yokomo YD-2 TC"
+fits = [
+  { kit = "kit/yokomo/yd-2", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Yokomo YD-2 TC (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1742/YD2-TC" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

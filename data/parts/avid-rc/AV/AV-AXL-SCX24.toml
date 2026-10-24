@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-AXL-SCX24"
+brand = "brand/avid-rc"
+number = "AV-AXL-SCX24"
+name = "Axial SCX24 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/3x6x2.5", qty = 16, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/2x5x2.5", qty = 2, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/axial/scx24", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Metal, Metal (oiled), Revolution, Revolution | Aura, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3810/SCX24" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

@@ -1,0 +1,18 @@
+id = "part/avid-rc/AV-XF-SCX60"
+brand = "brand/avid-rc"
+number = "AV-XF-SCX60"
+name = "X Factory SCX-60 CF Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4.762x9.525x3.175", qty = 14, notes = "Default: Ceramic Revolution (greased)" },
+  { spec = "spec/bearing/3.175x6.35x2.778", qty = 4, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/9.525x15.875x3.969", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "X Factory SCX-60 CF (also SCX-60 CF)"
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/583/SCX60-CF" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

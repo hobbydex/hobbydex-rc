@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-TRX-TMAX33"
+brand = "brand/avid-rc"
+number = "AV-TRX-TMAX33"
+name = "Traxxas T-Maxx 3.3 (49077) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x12x4", qty = 11, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 9, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 3, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/traxxas/t-maxx", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas T-Maxx 3.3 (49077)" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Metal | Clutch, Ceramic Rubber, Ceramic Revolution | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1614/TMaxx-33-49077" },
+]
+pack_qty = 31
+pack_qty_basis = "includes"

@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-XRAY-NT117"
+brand = "brand/avid-rc"
+number = "AV-XRAY-NT117"
+name = "Xray NT1 '17 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x16x4", qty = 12, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-5x8x2.5", qty = 2, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Metal | Clutch (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/xray/nt1", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XRAY NT1 '17" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Revolution | Aura, Ceramic Metal | Aura, Thrust Bearing, Ceramic Thrust Bearing, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1678/NT1-17" },
+]
+pack_qty = 30
+pack_qty_basis = "includes"

@@ -11,10 +11,10 @@ seal = "rubber"
 lubricant = "grease"
 applies_to = "Tamiya Frog (also Sand Scorcher, Subaru Brat, Blitzer Beetle)"
 fits = [
-  { kit = "kit/tamiya/frog", releases = ["release/tamiya/58041", "release/tamiya/58354"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya Frog (link_car_kits.py)" },
-  { kit = "kit/tamiya/sand-scorcher", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Sand Scorcher (link_car_kits.py)" },
-  { kit = "kit/tamiya/subaru-brat", releases = ["release/tamiya/58038", "release/tamiya/58384"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Subaru Brat (link_car_kits.py)" },
-  { kit = "kit/tamiya/blitzer-beetle", releases = ["release/tamiya/58122", "release/tamiya/58502"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Blitzer Beetle (link_car_kits.py)" },
+  { kit = "kit/tamiya/frog", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya Frog (link_car_kits.py)", releases = ["release/tamiya/58041", "release/tamiya/58354"] },
+  { kit = "kit/tamiya/sand-scorcher", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Sand Scorcher (link_car_kits.py)" },
+  { kit = "kit/tamiya/subaru-brat", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Subaru Brat (link_car_kits.py)", releases = ["release/tamiya/58038", "release/tamiya/58384"] },
+  { kit = "kit/tamiya/blitzer-beetle", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Blitzer Beetle (link_car_kits.py)", releases = ["release/tamiya/58122", "release/tamiya/58502"] },
 ]
 notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [

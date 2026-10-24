@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-SER-977E"
+brand = "brand/avid-rc"
+number = "AV-SER-977E"
+name = "Serpent 977 EVO Bearing Kit"
+includes = [
+  { spec = "spec/bearing/12x18x4", qty = 12, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-5x8x2.5", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/flanged-6x10x3", qty = 2, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-8x14x4", qty = 2, notes = "Default: Serpent Revolution Flanged (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 1, notes = "Default: Thrust Bearing (oiled)" },
+  { spec = "spec/bearing/5x13x4", qty = 1, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Serpent 977 EVO"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Rubber, Ceramic Metal, Ceramic Metal | Aura, Serpent Revolution, Ceramic Serpent Revolution, Thrust Bearing, Ceramic Thrust Bearing, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1456/977-EVO" },
+]
+pack_qty = 32
+pack_qty_basis = "includes"

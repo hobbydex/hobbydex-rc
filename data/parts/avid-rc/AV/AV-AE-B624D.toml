@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-AE-B624D"
+brand = "brand/avid-rc"
+number = "AV-AE-B624D"
+name = "Team Associated B6.4D Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x7x2.5", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x12x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Associated B6.4D (also T6.4, SC6.4)"
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura, Metal | Clutch, Ceramic Revolution (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3693/B64D" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

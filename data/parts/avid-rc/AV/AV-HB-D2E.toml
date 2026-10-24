@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-HB-D2E"
+brand = "brand/avid-rc"
+number = "AV-HB-D2E"
+name = "HB Racing D2 Evo Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x8x3", qty = 4, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x13x4", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "HB Racing D2 Evo"
+fits = [
+  { kit = "kit/hb-racing/d2", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the HB Racing D2 Evo (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3818/D2-Evo" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

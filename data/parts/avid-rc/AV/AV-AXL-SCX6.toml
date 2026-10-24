@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-AXL-SCX6"
+brand = "brand/avid-rc"
+number = "AV-AXL-SCX6"
+name = "Axial SCX6 (All Versions) Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 20, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/12x24x6", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/15x24x5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Axial SCX6 (All Versions)"
+fits = [
+  { kit = "kit/axial/scx6", car = "SCX6 (All Versions)", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Axial SCX6 (All Versions) (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3555/SCX6-All-Versions" },
+]
+pack_qty = 36
+pack_qty_basis = "includes"

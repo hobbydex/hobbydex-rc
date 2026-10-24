@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-LOSI-MINT"
+brand = "brand/avid-rc"
+number = "AV-LOSI-MINT"
+name = "Team Losi Mini-T Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/4x7x2.5", qty = 5, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Team Losi Mini-T (also Mini-ZT, Mini-Slider, Mini-Late Model, Mini Desert Buggy, Mini-Desert Truck)"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Ceramic Metal, Ceramic Revolution (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/329/MiniT" },
+]
+pack_qty = 15
+pack_qty_basis = "includes"

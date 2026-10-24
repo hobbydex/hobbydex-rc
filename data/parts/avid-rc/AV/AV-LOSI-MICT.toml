@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-LOSI-MICT"
+brand = "brand/avid-rc"
+number = "AV-LOSI-MICT"
+name = "Team Losi Micro-T Bearing Kit"
+includes = [
+  { spec = "spec/bearing/2x5x2.5", qty = 8, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 2, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/losi/micro-t", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Metal, Rubber, Metal (oiled) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/328/MicroT" },
+]
+pack_qty = 10
+pack_qty_basis = "includes"

@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-TKR-EB410E"
+brand = "brand/avid-rc"
+number = "AV-TKR-EB410E"
+name = "Tekno EB410 Essentials Bearing Kit"
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x11x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 4, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Tekno EB410 | Essentials (also ET410 | Essentials, EB410.2 | Essentials, ET410.2 | Essentials, SCT410SL | Essentials)"
+fits = [
+  { kit = "kit/tekno/eb410", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Tekno EB410 (link_car_kits.py)" },
+  { kit = "kit/tekno/et410", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the ET410 (link_car_kits.py)" },
+  { kit = "kit/tekno/sct410sl", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the SCT410SL (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch, Ceramic Open | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1701/EB410-Essentials" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"

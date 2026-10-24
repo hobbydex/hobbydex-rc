@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-YOK-RD20"
+brand = "brand/avid-rc"
+number = "AV-YOK-RD20"
+name = "Yokomo RD 2.0 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 12, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "metal"
+lubricant = "grease"
+applies_to = "Yokomo RD 2.0"
+notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4111/RD-20" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

@@ -1,0 +1,24 @@
+id = "part/avid-rc/AV-LOSI-REY"
+brand = "brand/avid-rc"
+number = "AV-LOSI-REY"
+name = "Team Losi Baja Rey Rock Racer Bearing Kit"
+includes = [
+  { spec = "spec/bearing/6x12x4", qty = 8, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4, notes = "Default: Rubber (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "Team Losi Baja Rey Rock Racer (also Baja Rey Desert Truck, Rock Rey Racer)"
+fits = [
+  { kit = "kit/losi/baja-rey", car = "Baja Rey Desert Truck", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Baja Rey Desert Truck (link_car_kits.py)" },
+  { kit = "kit/losi/rock-rey", car = "Rock Rey Racer", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Rock Rey Racer (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Metal | Clutch, Metal (oiled) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1636/Baja-Rey-Rock-Racer" },
+]
+pack_qty = 24
+pack_qty_basis = "includes"

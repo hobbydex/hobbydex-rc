@@ -1,0 +1,25 @@
+id = "part/avid-rc/AV-AE-RC8"
+brand = "brand/avid-rc"
+number = "AV-AE-RC8"
+name = "Team Associated RC8.2 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 14, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/15x21x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal | Clutch (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/team-associated/rc8t", car = "RC8.2", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/team-associated/sc8", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/209/RC82" },
+]
+pack_qty = 28
+pack_qty_basis = "includes"

@@ -1,0 +1,32 @@
+id = "part/avid-rc/AV-SYN-N5C"
+brand = "brand/avid-rc"
+number = "AV-SYN-N5C"
+name = "Synergy N5C Bearing Kit"
+includes = [
+  { spec = "spec/bearing/3x8x3", qty = 8, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/3x7x3", qty = 5, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/8x16x5", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 4, notes = "Default: Metal (not Clutch) (greased)" },
+  { spec = "spec/bearing/4x8x3", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/12x18x4", qty = 4, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/thrust-8x16x5", qty = 2, notes = "Only option: Thrust Bearing (oiled)" },
+  { spec = "spec/bearing/8x14x4", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 2, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x19x5", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/thrust-5x10x4", qty = 2, notes = "Default: Thrust Bearing (oiled)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/10x19x6", qty = 2, notes = "Only option: Metal (greased)" },
+  { spec = "spec/bearing/6x12x4", qty = 1, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x15x5", qty = 1, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 1, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Synergy N5C"
+notes = "Each size can be ordered as one of: Metal, Rubber, Revolution, Revolution | Aura, Ceramic Metal, Ceramic Revolution, Metal (not Clutch), Open (not Clutch), Revolution (not Clutch), Ceramic Metal (not Clutch), Ceramic Revolution (not Clutch), Ceramic Rubber, Thrust Bearing, Open, Ceramic Thrust Bearing, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1641/N5C" },
+]
+pack_qty = 48
+pack_qty_basis = "includes"

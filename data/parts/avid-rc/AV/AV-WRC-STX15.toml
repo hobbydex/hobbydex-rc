@@ -1,0 +1,20 @@
+id = "part/avid-rc/AV-WRC-STX15"
+brand = "brand/avid-rc"
+number = "AV-WRC-STX15"
+name = "WRC STX 015 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x10x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/flanged-4x7x2.5", qty = 6, notes = "Only option: Flanged Metal (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Metal (not Clutch) (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "WRC STX 015"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (not Clutch), Revolution (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1486/STX-015" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-SCH-CKF"
+brand = "brand/avid-rc"
+number = "AV-SCH-CKF"
+name = "Schumacher Cougar KF Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 10, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x9x3", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 1, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+applies_to = "Schumacher Cougar KF"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1365/Cougar-KF" },
+]
+pack_qty = 25
+pack_qty_basis = "includes"

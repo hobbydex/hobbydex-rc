@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-XRAY-X1215"
+brand = "brand/avid-rc"
+number = "AV-XRAY-X1215"
+name = "Xray X12 '15 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/flanged-3.175x7.938x3.572", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/6.35x9.525x3.175", qty = 3, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 2, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/thrust-3x8x3.5", qty = 1, notes = "Only option: Thrust Bearing (oiled)" },
+]
+category = "bearing"
+category_source = "curated"
+fits = [
+  { kit = "kit/xray/x12", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XRAY X12 '15" },
+]
+notes = "Each size can be ordered as one of: Metal, Ceramic Metal, Ceramic Metal | Aura, Revolution, Thrust Bearing (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1331/X12-15" },
+]
+pack_qty = 10
+pack_qty_basis = "includes"

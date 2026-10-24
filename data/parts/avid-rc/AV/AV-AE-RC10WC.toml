@@ -1,0 +1,22 @@
+id = "part/avid-rc/AV-AE-RC10WC"
+brand = "brand/avid-rc"
+number = "AV-AE-RC10WC"
+name = "Team Associated RC10 Worlds Car Bearing Kit"
+includes = [
+  { spec = "spec/bearing/4.762x9.525x3.175", qty = 12, notes = "Default: Ceramic Revolution (greased)" },
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", qty = 4, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/9.525x15.875x3.969", qty = 2, notes = "Default: Revolution | Aura (oiled)" },
+  { spec = "spec/bearing/3.969x7.938x3.175", qty = 2, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+applies_to = "Team Associated RC10 Worlds Car (also RC10 Kinwald Edition Kit)"
+fits = [
+  { kit = "kit/team-associated/rc10", car = "RC10 Worlds Car", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated RC10 Worlds Car (link_car_kits.py)" },
+]
+notes = "Each size can be ordered as one of: Revolution, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Revolution | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/849/RC10-Worlds-Car" },
+]
+pack_qty = 20
+pack_qty_basis = "includes"

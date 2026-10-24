@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-VBC-D07"
+brand = "brand/avid-rc"
+number = "AV-VBC-D07"
+name = "VBC D07 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x8x2.5", qty = 7, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/3x6x2.5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/5x10x3", qty = 2, notes = "Default: Revolution (not Clutch) (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "VBC D07"
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch, Metal (oiled), Revolution (not Clutch), Metal (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1367/D07" },
+]
+pack_qty = 23
+pack_qty_basis = "includes"

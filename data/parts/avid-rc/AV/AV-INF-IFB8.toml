@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-INF-IFB8"
+brand = "brand/avid-rc"
+number = "AV-INF-IFB8"
+name = "Infinity IFB8 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/8x16x5", qty = 16, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/flanged-5x8x2.5", qty = 6, notes = "Default: Flanged Metal (greased)" },
+  { spec = "spec/bearing/6x10x3", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/6x13x5", qty = 2, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 2, notes = "Default: Metal | Clutch (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+fits = [
+  { kit = "kit/infinity/ifb8", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4302/IFB8" },
+]
+pack_qty = 30
+pack_qty_basis = "includes"

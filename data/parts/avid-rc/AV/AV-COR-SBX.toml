@@ -1,0 +1,23 @@
+id = "part/avid-rc/AV-COR-SBX"
+brand = "brand/avid-rc"
+number = "AV-COR-SBX"
+name = "Corally SBX-410 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/5x11x4", qty = 8, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/10x15x4", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x8x2.5", qty = 4, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/5x10x4", qty = 4, notes = "Default: Revolution (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber-metal"
+lubricant = "grease"
+fits = [
+  { kit = "kit/team-corally/sbx410", type = "direct", source = "doc/avid-rc/flexkit" },
+]
+notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2966/SBX410" },
+]
+pack_qty = 22
+pack_qty_basis = "includes"

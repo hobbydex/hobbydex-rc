@@ -1,0 +1,21 @@
+id = "part/avid-rc/AV-RCMK-XCR"
+brand = "brand/avid-rc"
+number = "AV-RCMK-XCR"
+name = "RCMK XCR-1000 Bearing Kit"
+includes = [
+  { spec = "spec/bearing/9x20x6", qty = 6, notes = "Default: Metal (greased)" },
+  { spec = "spec/bearing/12x24x6", qty = 6, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/15x24x5", qty = 6, notes = "Default: Revolution (greased)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 4, notes = "Default: Rubber (greased)" },
+  { spec = "spec/bearing/20x32x7", qty = 4, notes = "Default: Metal (greased)" },
+]
+category = "bearing"
+category_source = "curated"
+lubricant = "grease"
+applies_to = "RCMK XCR-1000 (also XCR-1200, XCR-1200 SE)"
+notes = "Each size can be ordered as one of: Rubber, Metal, Revolution, Revolution | Aura, Ceramic Metal | Aura (Avid's Flex Kit builder)."
+links = [
+  { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1631/XCR1000" },
+]
+pack_qty = 26
+pack_qty_basis = "includes"
