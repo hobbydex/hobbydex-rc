@@ -1,0 +1,21 @@
+id = "part/ovonic/O-120C-6500-3S1P-HC-EC5-2P"
+brand = "brand/ovonic"
+number = "O-120C-6500-3S1P-HC-EC5-2P"
+name = "2x Ovonic 120C 3S 6500mAh 11.1V LiPo Battery For Arrma with EC5 Plug"
+category = "battery"
+pack_qty = 2
+capacity_mah = 6500
+cells = 3
+chemistry = "lipo"
+voltage = 11.1
+c_rating = 120
+connector = "EC5"
+dimensions_mm = [133, 43, 33]
+weight_g = 814
+notes = "Max burst discharge rate 240C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-6500mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-120c-3s-6500mah-11-1v-lipo-battery-for-arrma-ec5-plug" },
+]

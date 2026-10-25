@@ -1,0 +1,20 @@
+id = "part/ovonic/O-80C-5500-6S1P-XT90"
+brand = "brand/ovonic"
+number = "O-80C-5500-6S1P-XT90"
+name = "80C 22.2V 6S 5500mAh LiPo Battery for RC Car Airplane Heli - XT90 Plug"
+category = "battery"
+capacity_mah = 5500
+cells = 6
+chemistry = "lipo"
+voltage = 22.2
+c_rating = 80
+connector = "XT90"
+dimensions_mm = [160, 46, 46]
+weight_g = 743
+notes = "Max burst discharge rate 160C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-5500mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-80c-22-2v-6s-5500mah-lipo-battery-xt90-plug" },
+]
