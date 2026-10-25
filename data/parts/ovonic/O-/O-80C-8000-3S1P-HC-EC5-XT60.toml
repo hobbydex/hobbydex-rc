@@ -1,0 +1,21 @@
+id = "part/ovonic/O-80C-8000-3S1P-HC-EC5-XT60"
+brand = "brand/ovonic"
+number = "O-80C-8000-3S1P-HC-EC5-XT60"
+name = "80C 3S 8000mAh 11.1V LiPo Battery for 1/8 1/10 Buggy Truck Car - EC5 & XT60 Plug"
+category = "battery"
+capacity_mah = 8000
+cells = 3
+chemistry = "lipo"
+voltage = 11.1
+c_rating = 80
+connector = "XT60"
+dimensions_mm = [139.5, 47.5, 39.5]
+notes = "Max burst discharge rate 160C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-8000mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-80c-3s-8000mah-11-1v-lipo-battery-for-rc-car-ec5" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

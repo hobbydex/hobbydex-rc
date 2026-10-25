@@ -1,0 +1,23 @@
+id = "part/ovonic/O-120C-5000-6S1P-EC5-2P"
+brand = "brand/ovonic"
+number = "O-120C-5000-6S1P-EC5-2P"
+name = "2x Ovonic 5000mah 6S 22.2V 120C Lipo Battery Pack for Aircraft Car SENTON 6S - EC5 Plug"
+category = "battery"
+pack_qty = 2
+capacity_mah = 5000
+cells = 6
+chemistry = "lipo"
+voltage = 22.2
+c_rating = 120
+connector = "EC5"
+balance_connector = "JST-XH"
+balance_connector_basis = "maker"
+dimensions_mm = [156, 44, 48]
+weight_g = 683
+notes = "Max burst discharge rate 240C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-5000mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/2x-ovonic-5000mah-6s-22-2v-120c-lipo-battery-pack-for-aircraft-car-senton-6s-ec5-plug" },
+]

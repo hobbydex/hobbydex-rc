@@ -1,0 +1,22 @@
+id = "part/ovonic/O-120C-6700-3S1P-EC5-AU-G"
+brand = "brand/ovonic"
+number = "O-120C-6700-3S1P-EC5-AU-G"
+name = "120C 11.1V 3S 6700mAh LiPo Battery for ARRMA Car - EC5 Plug | Australia Warehouse / 1pack"
+category = "battery"
+capacity_mah = 6700
+cells = 3
+chemistry = "lipo"
+voltage = 11.1
+c_rating = 120
+connector = "EC5"
+balance_connector = "JST-XH-4P"
+balance_connector_basis = "maker"
+dimensions_mm = [156, 46, 30]
+weight_g = 492
+notes = "Max burst discharge rate 240C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-6700mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-120c-11-1v-3s-6700mah-lipo-battery-for-arrma-car-ec5-plug" },
+]

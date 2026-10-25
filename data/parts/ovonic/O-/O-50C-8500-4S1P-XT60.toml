@@ -1,0 +1,21 @@
+id = "part/ovonic/O-50C-8500-4S1P-XT60"
+brand = "brand/ovonic"
+number = "O-50C-8500-4S1P-XT60"
+name = "50C 4S 8500mAh 14.8V LiPo Battery for Xmaxx 8S - XT60 Plug"
+category = "battery"
+capacity_mah = 8500
+cells = 4
+chemistry = "lipo"
+voltage = 14.8
+c_rating = 50
+connector = "XT60"
+dimensions_mm = [157, 48, 42]
+notes = "Max burst discharge rate 100C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-8500mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-50c-4s-8500mah-14-8v-lipo-battery-for-xmaxx-8s" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

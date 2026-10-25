@@ -1,0 +1,22 @@
+id = "part/ovonic/O-130C-3500-4S1P-XT60-2P"
+brand = "brand/ovonic"
+number = "O-130C-3500-4S1P-XT60-2P"
+name = "2x OVONIC 4S 3500mAh 14.8V 130C LiPo Battery with XT60 Plug for 1/10 scale RC Car Truck RC Aircraft"
+category = "battery"
+pack_qty = 2
+capacity_mah = 3500
+cells = 4
+chemistry = "lipo"
+voltage = 14.8
+c_rating = 130
+connector = "XT60"
+balance_connector = "JST-XHR-5P"
+balance_connector_basis = "maker"
+dimensions_mm = [125, 40, 39.5]
+weight_g = 370
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-3500mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/2x-ovonic-4s-3500mah-14-8v-130c-lipo-battery-with-xt60-plug-for-1-10-scale-rc-car-truck-rc-aircraft" },
+]

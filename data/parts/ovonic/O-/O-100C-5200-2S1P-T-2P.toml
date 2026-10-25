@@ -1,0 +1,23 @@
+id = "part/ovonic/O-100C-5200-2S1P-T-2P"
+brand = "brand/ovonic"
+number = "O-100C-5200-2S1P-T-2P"
+name = "2x OVONIC 7.4V 100C 2S 5200mAh Lipo Battery T Plug For 1/10 RC Car Truck Boat"
+category = "battery"
+pack_qty = 2
+capacity_mah = 5200
+cells = 2
+chemistry = "lipo"
+voltage = 7.4
+c_rating = 100
+connector = "Deans"
+dimensions_mm = [134, 45, 20]
+weight_g = 248
+notes = "Max burst discharge rate 200C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5200mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/2x-ovonic-7-4v-100c-2s-5200mah-lipo-battery-t-plug-for-1-10-rc-car-truck-boat-1" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

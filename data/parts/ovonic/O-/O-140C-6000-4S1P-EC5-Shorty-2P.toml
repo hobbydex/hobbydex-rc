@@ -1,0 +1,22 @@
+id = "part/ovonic/O-140C-6000-4S1P-EC5-Shorty-2P"
+brand = "brand/ovonic"
+number = "O-140C-6000-4S1P-EC5-Shorty-2P"
+name = "2× OVONIC 4S1P 6000mAh 140C 14.8V LiPo Battery with 5mm Bullet to EC5 Plug for for 1/5 Scale RC Cars & Drag Racing"
+category = "battery"
+pack_qty = 2
+capacity_mah = 6000
+cells = 4
+chemistry = "lipo"
+voltage = 14.8
+c_rating = 140
+connector = "EC5"
+dimensions_mm = [138, 48, 41]
+weight_g = 494
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6000mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/2-ovonic-4s1p-6000mah-140c-14-8v-lipo-battery-with-5mm-bullet-to-ec5-plug-for-for-1-5-scale-rc-cars-drag-racing" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

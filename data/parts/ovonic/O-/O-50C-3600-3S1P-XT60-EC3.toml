@@ -1,0 +1,21 @@
+id = "part/ovonic/O-50C-3600-3S1P-XT60-EC3"
+brand = "brand/ovonic"
+number = "O-50C-3600-3S1P-XT60-EC3"
+name = "3S 3600mAh 50C 11.1V LiPo Battery for 1/10 Rock Crawler - XT60 & EC3 Plug"
+category = "battery"
+capacity_mah = 3600
+cells = 3
+chemistry = "lipo"
+voltage = 11.1
+c_rating = 50
+connector = "XT60"
+dimensions_mm = [91, 42, 28]
+notes = "Max burst discharge rate 100C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3600mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-3s-3600mah-50c-11-1v-xt60-lipo-battery" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

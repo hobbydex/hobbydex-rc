@@ -1,0 +1,23 @@
+id = "part/ovonic/O-50C-4600-2S2P-HC29-T"
+brand = "brand/ovonic"
+number = "O-50C-4600-2S2P-HC29-T"
+name = "2S 4600mAh 7.4V 50C Hardcase Short LiPo Battery with 4mm Bullet to T/Deans for 1/10 RC Buggy | Australia Warehouse / 1 pack"
+category = "battery"
+capacity_mah = 4600
+cells = 2
+chemistry = "lipo"
+voltage = 7.4
+c_rating = 50
+case = "hard"
+connector = "4mm bullet"
+balance_connector = "JST-XHR"
+balance_connector_basis = "maker"
+dimensions_mm = [95, 46, 25]
+weight_g = 188
+notes = "Max burst discharge rate 100C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4600mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-2s-shorty-lipo-7-4v-50c-4600mah-hardcase-lipo-battery" },
+]
