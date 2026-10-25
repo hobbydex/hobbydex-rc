@@ -4,7 +4,11 @@ number = "TT2610"
 name = "ROC412 EP Rebuild Kit"
 category = "motor"
 category_source = "curated"
-notes = "Contents (Tekin's www page): End Caps / Bearings / Solder Tabs / Isolator / Hardware"
+notes = "Contents (Tekin's www page): Bearings"
 links = [
   { site = "Tekin", url = "https://www.teamtekin.com/roc412.html" },
+]
+includes = [
+  { part = "part/tekin/TT2611" },
+  { part = "part/tekin/TT2614" },
 ]
