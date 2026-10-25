@@ -8,7 +8,8 @@ seen_by_source = "https://web.archive.org/web/20230822221840/https://traxxas.com
 depicts = { make = "Chevrolet", model = "K10" }
 kind = "rtr"
 status = "released"
-documents = ["doc/traxxas/97064-1-parts-list", "doc/traxxas/97064-1-owners-manual", "doc/traxxas/97064-1-product-page"]
+notes = "Traxxas publishes no parts list for this model; contents are the part numbers on its exploded views, read by OCR (three engines voting). Numbers other Traxxas parts lists confirm are in the box (or options when marked opt.); numbers only OCR has seen stay listed."
+documents = ["doc/traxxas/97064-1-parts-list", "doc/traxxas/97064-1-owners-manual", "doc/traxxas/97064-1-product-page", "doc/traxxas/97064-1-exploded-body-assembly", "doc/traxxas/97064-1-exploded-chassis-assembly", "doc/traxxas/97064-1-exploded-front-assembly", "doc/traxxas/97064-1-exploded-rear-assembly"]
 contains = [
   { part = "part/traxxas/2063A", role = "kit", source = "doc/traxxas/97064-1-parts-list" },
   { part = "part/traxxas/2064A", role = "kit", source = "doc/traxxas/97064-1-parts-list" },
@@ -239,4 +240,11 @@ contains = [
   { part = "part/traxxas/9916", role = "option", source = "doc/traxxas/97064-1-parts-list" },
   { part = "part/traxxas/9917", role = "option", source = "doc/traxxas/97064-1-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/97064-1-parts-list" },
+  { part = "part/traxxas/2534", role = "kit", source = "doc/traxxas/97064-1-exploded-front-assembly" },
+  { part = "part/traxxas/2617", role = "kit", source = "doc/traxxas/97064-1-exploded-front-assembly" },
+  { part = "part/traxxas/5158", role = "kit", source = "doc/traxxas/97064-1-exploded-front-assembly" },
+  { part = "part/traxxas/9726", role = "kit", source = "doc/traxxas/97064-1-exploded-chassis-assembly" },
+  { part = "part/traxxas/9735A", role = "option", source = "doc/traxxas/97064-1-exploded-chassis-assembly" },
+  { part = "part/traxxas/9736", role = "kit", source = "doc/traxxas/97064-1-exploded-chassis-assembly" },
+  { part = "part/traxxas/9869", role = "option", source = "doc/traxxas/97064-1-exploded-front-assembly" },
 ]
