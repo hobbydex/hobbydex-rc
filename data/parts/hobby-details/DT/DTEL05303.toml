@@ -2,9 +2,13 @@ id = "part/hobby-details/DTEL05303"
 brand = "brand/hobby-details"
 number = "DTEL05303"
 name = "M4 Flange Nut"
+pack_qty = 4
+pack_qty_basis = "page"
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m4-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=78&a=view&r=1143" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=78&a=view&r=1143" },
+]
