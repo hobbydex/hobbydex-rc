@@ -3,10 +3,8 @@ brand = "brand/injora"
 number = "YQ-JH09-12"
 name = "4PCS 12mm Black Coating Brass Wheel Hex Hub Extenders for SCX10 & SCX10 II"
 pack_qty = 4
-pack_qty_basis = "name"
 material = "brass"
 applies_to = "SCX10, SCX10 II"
-color = "black"
 fits = [
   { kit = "kit/axial/scx10", type = "replaces", source = "doc/injora/store" },
   { kit = "kit/axial/scx10-ii", type = "replaces", source = "doc/injora/store" },
@@ -14,6 +12,8 @@ fits = [
 links = [
   { site = "Injora", url = "https://www.injora.com/products/4pcs-12mm-black-coating-brass-wheel-hex-extended-adapter-for-scx10-scx10-ii?variant=48257898873090" },
 ]
+pack_qty_basis = "name"
+color = "black"
 category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },

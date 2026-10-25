@@ -9,8 +9,11 @@ fits = [
   { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/injora/store" },
 ]
 links = [
-  { site = "Injora", url = "https://www.injora.com/products/injora-mbl32-g2-waterproof-brushless-esc-1721-purple-viper-motor-for-1-18-trx4m-ascent-18-copy" },
+  { site = "Injora", url = "https://www.injora.com/products/injora-mbl32-g2-waterproof-brushless-esc-1721-purple-viper-motor-for-1-18-trx4m-ascent-18-copy", gone = "2026-10-23" },
 ]
 category = "esc"
 motor_type = "brushless"
 waterproof = true
+includes = [
+  { part = "part/injora/MBL32-G2-USB", qty = 1, notes = "Component named in the combo's name" },
+]
