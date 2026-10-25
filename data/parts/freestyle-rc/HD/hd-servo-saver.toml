@@ -1,0 +1,18 @@
+id = "part/freestyle-rc/hd-servo-saver"
+brand = "brand/freestyle-rc"
+name = "HD Servo Saver"
+links = [
+  { site = "Freestyle RC", url = "https://freestyle-rc.com/products/hd-servo-saver" },
+]
+documents = ["doc/freestyle-rc/store"]
+fits = [
+  { kit = "kit/axial/bomber", type = "replaces", source = "doc/freestyle-rc/store" },
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/freestyle-rc/store" },
+  { kit = "kit/axial/smt10", type = "replaces", source = "doc/freestyle-rc/store" },
+  { kit = "kit/losi/lmt", type = "replaces", source = "doc/freestyle-rc/store" },
+]
+related = [
+  { part = "part/freestyle-rc/axles", relation = "fits" },
+  { part = "part/freestyle-rc/carbon-fiber-race-axles", relation = "fits" },
+]
+category = "steering"
