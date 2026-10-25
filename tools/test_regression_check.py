@@ -125,5 +125,68 @@ class Repository(unittest.TestCase):
         self.assertTrue(any(e["field"] == "fits" and "not derived" in e["reason"] for e in ck.events))
 
 
+
+class Removals(unittest.TestCase):
+    """A removed or changed list row or string field of a part counts when the source stated it."""
+
+    commit, check = Repository.commit, Repository.check
+
+    MAKER = 'https://maker.example/p/1'
+    DEALER = 'https://shop.example/cat/1'
+
+    def part(self, extra):
+        return {"data/parts/a/P1.toml": 'id = "part/a/P1"\nbrand = "brand/a"\nname = "Wing Mount"\n'
+                                        'category = "suspension"\nmaterial = "plastic"\n' + extra,
+                "data/releases/a/k.toml": 'kit = "kit/a/k"\nname = "Kit"\ncontains = [\n'
+                                          '  { part = "part/a/P1", role = "kit", source = "doc/a/m" },\n]\n'}
+
+    def regs(self, ck):
+        return [(e["field"], e["reason"]) for e in ck.events if e["regression"]]
+
+    def test_removed_maker_link_is_a_regression(self):
+        base = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
+        head = self.part('links = []\n')
+        self.assertEqual(self.regs(self.check(base, head)), [("links", "stated link removed")])
+
+    def test_dealer_link_dropped_beside_a_maker_link_is_a_regression(self):
+        base = self.part('links = [ { url = "%s", kind = "dealer", site = "shop" } ]\n' % self.DEALER)
+        head = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
+        self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["links"])
+
+    def test_link_whose_page_is_gone_is_not_a_regression(self):
+        base = self.part('links = [ { url = "%s" }, { url = "%s" } ]\n' % (self.MAKER, self.DEALER))
+        head = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
+        head["data/documents/shop/gone.toml"] = 'id = "doc/shop/gone"\npage = "%s"\ngone = "2026-10-20"\n' % self.DEALER
+        self.assertEqual(self.regs(self.check(base, head)), [])
+
+    def test_link_whose_page_is_a_document_of_the_record_is_not_a_regression(self):
+        base = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
+        head = self.part('links = []\ndocuments = [ "doc/a/m" ]\n')
+        head["data/documents/a/m.toml"] = 'id = "doc/a/m"\npage = "%s"\n' % self.MAKER
+        self.assertEqual(self.regs(self.check(base, head)), [])
+
+    def test_removed_applies_to_is_a_regression(self):
+        base = self.part('applies_to = "ARRMA Granite"\n')
+        head = self.part('')
+        self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["applies_to"])
+
+    def test_changed_applies_to_is_a_regression(self):
+        base = self.part('applies_to = "ARRMA Granite"\n')
+        head = self.part('applies_to = "ARRMA Senton"\n')
+        self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["applies_to"])
+
+    def test_removed_sourced_equivalent_to_row_is_a_regression(self):
+        row = '{ spec = "spec/screw/m3", match = "functional", source = "doc/a/m" }'
+        base = self.part('equivalent_to = [ %s ]\n' % row)
+        head = self.part('')
+        self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["equivalent_to"])
+
+    def test_removed_fits_row_is_a_regression(self):
+        row = '{ kit = "kit/a/k", type = "fits", source = "doc/a/m" }'
+        base = self.part('fits = [ %s ]\n' % row)
+        head = self.part('')
+        self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["fits"])
+
+
 if __name__ == "__main__":
     unittest.main()
