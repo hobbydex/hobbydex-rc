@@ -1,7 +1,7 @@
 id = "part/injora/YQW-1008"
 brand = "brand/injora"
 number = "YQW-1008"
-name = "1.0\" 39g/pcs Brass -2.65mm Offset Wheels for Micro Crawlers (W1008)"
+name = "39g/pcs 1.0\" Brass Beadlock Wheel for for Micro Crawlers (W1008), -2.65mm offset"
 material = "brass"
 applies_to = "Redcat Ascent-18 Apex, SCX24, TRX4M"
 fits = [
@@ -9,9 +9,11 @@ fits = [
   { kit = "kit/axial/scx24", type = "replaces", source = "doc/injora/store" },
   { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/injora/store" },
 ]
+offset_mm = -2.65
 links = [
   { site = "Injora", url = "https://www.injora.com/products/injora-1-0-39g-pcs-black-brass-beadlock-wheels-for-1-24-1-18-rc-crawlers-w1008" },
 ]
 category = "wheel"
 wheel_size = "1.0\""
 vehicle = "crawler"
+beadlock = true
