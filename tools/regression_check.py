@@ -10,13 +10,15 @@ when a source stated it:
 - a record removed, unless data/retired.toml lists it with replaced_by, or a record
   of the head names it in former_ids (a rename);
 - a field removed or changed while it is sourced: links, fits, includes, material,
-  color, former_names, name_de, name_fr, name_ja, documents, contains, notes; category with
+  color, former_names, name_de, name_fr, name_ja, documents, contains, notes, applies_to; category with
   category_source = "curated"; pack_qty with a stated pack_qty_basis (name, page,
   maker, owner, includes, photos); any field with a <field>_source beside it or a
   key in `sources`; equivalent_to rows that carry a source;
 - a link removed or changed, unless its page is known gone (a document of the head
-  with gone set and that page). Marking a link gone (`gone = "<date>"` added, the
-  link kept) is not a regression.
+  with gone set and that page) or a document of the record names its page. Marking a
+  link gone (`gone = "<date>"` added, the link kept) is not a regression. A dealer
+  link dropped because a maker link now stands beside it is a regression too: the
+  change needs its "Regressions: expected" line.
 
 Not regressions: values added; values that only differ in form (TOML layout,
 whitespace, letter form of a URL: https, no www, no trailing slash); a convention
@@ -45,7 +47,7 @@ from check_ids import id_of
 
 RETIRED = "data/retired.toml"
 SOURCED_FIELDS = {"links", "fits", "includes", "material", "color", "former_names", "name_de", "name_fr", "name_ja",
-                 "documents", "contains", "notes"}   # list rows and notes: each is some tool's provenance
+                 "documents", "contains", "notes", "applies_to"}   # list rows and notes: each is some tool's provenance
 STATED_PACK_BASIS = {"maker", "page", "name", "owner", "includes", "photos"}   # pack_qty_basis; "photo" is the weakest, not stated
 CONVENTION = {"material": {"unknown"}}   # placeholder values, never a stated fact
 # keys that name a row, in the order they are tried; rows are paired by them when their content changed
@@ -510,11 +512,6 @@ def name_key(name, brand):
     return re.sub(r"[^0-9a-z]", "", unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().casefold())
 
 
-def is_dealer(link):
-    """A shop's page: kind = "dealer", or a site label that says so ("taylorrc.co.uk (dealer)")."""
-    return link.get("kind") == "dealer" or "(dealer)" in str(link.get("site", ""))
-
-
 LISTING = re.compile(r"\(\s*\d+\s*\)|\bx\s?\d+\b|\b\d+\s?pcs\b|\b\d{5,}\b", re.I)
 
 
@@ -535,8 +532,6 @@ def canonical_removal(o, n, k, row):
         if (canon(v2) == c or (isinstance(v2, list) and any(canon(x) == c for x in v2))) and \
                 not (canon(had) == c or (isinstance(had, list) and any(canon(x) == c for x in had))):
             return f"moved to {k2}"
-    if k == "links" and is_dealer(row) and any(isinstance(x, dict) and not is_dealer(x) for x in n.get("links", [])):
-        return "dealer link beside a maker link (validate.py form)"
     return None
 
 
