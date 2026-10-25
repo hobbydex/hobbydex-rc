@@ -6,9 +6,9 @@ category_source = "curated"
 material = "ceramic"
 applies_to = "Serpent Viper 989 989e 990"
 fits = [
-  { kit = "kit/serpent/viper-989", type = "direct", source = "doc/acer-racing/store", notes = "Listed for the 989" },
-  { kit = "kit/serpent/viper-989e", type = "direct", source = "doc/acer-racing/store", notes = "Listed for the 989e" },
-  { kit = "kit/serpent/viper-990", releases = ["release/serpent/903020", "release/serpent/903022"], type = "direct", source = "doc/acer-racing/store", notes = "Listed for the 990" },
+  { kit = "kit/serpent/viper-989", type = "replaces", source = "doc/acer-racing/store", notes = "Listed for the 989" },
+  { kit = "kit/serpent/viper-989e", type = "replaces", source = "doc/acer-racing/store", notes = "Listed for the 989e" },
+  { kit = "kit/serpent/viper-990", releases = ["release/serpent/903020", "release/serpent/903022"], type = "replaces", source = "doc/acer-racing/store", notes = "Listed for the 990" },
 ]
 notes = "Contents not recorded: the description lists no sizes. Sold in versions: 989; 989e; 989 GP 40th Anniversary Edition; 990."
 links = [

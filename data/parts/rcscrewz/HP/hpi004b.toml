@@ -14,7 +14,7 @@ includes = [
 ]
 applies_to = "HPI Micro RS4 RTR"
 fits = [
-  { kit = "kit/hpi/micro-rs4", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the HPI Micro RS4 RTR (link_car_kits.py)" },
+  { kit = "kit/hpi/micro-rs4", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the HPI Micro RS4 RTR (link_car_kits.py)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

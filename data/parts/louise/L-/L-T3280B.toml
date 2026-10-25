@@ -10,7 +10,7 @@ mounting = "pre-mounted"
 wheel_color = "black"
 applies_to = "HPI BAJA 5b HEX 24 mm"
 fits = [
-  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/louise/tire-product-pages" },
+  { kit = "kit/hpi/baja-5b", type = "replaces", source = "doc/louise/tire-product-pages" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/24mm", match = "exact", source = "doc/louise/tire-product-pages", notes = "Hex size from the product page" },

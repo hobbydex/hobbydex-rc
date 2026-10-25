@@ -14,9 +14,9 @@ category = "bearing"
 category_source = "curated"
 seal = "rubber-metal"
 fits = [
-  { kit = "kit/traxxas/rally", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Rally (#7407)" },
-  { kit = "kit/traxxas/telluride", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Telluride 4X4 (#67044)" },
-  { kit = "kit/traxxas/slash-4x4", releases = ["release/traxxas/68086-4"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Slash 4X4 (TSM) (#68086-4)" },
+  { kit = "kit/traxxas/rally", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Rally (#7407)" },
+  { kit = "kit/traxxas/telluride", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Telluride 4X4 (#67044)" },
+  { kit = "kit/traxxas/slash-4x4", releases = ["release/traxxas/68086-4"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Traxxas Slash 4X4 (TSM) (#68086-4)" },
 ]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Revolution | Aura, Ceramic Open | Aura, Ceramic Rubber (Avid's Flex Kit builder)."
 links = [

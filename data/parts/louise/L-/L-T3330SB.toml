@@ -9,7 +9,7 @@ mounting = "pre-mounted"
 wheel_color = "black"
 applies_to = "TRAXXAS MAXX"
 fits = [
-  { kit = "kit/traxxas/maxx", type = "direct", source = "doc/louise/tire-product-pages" },
+  { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/louise/tire-product-pages" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "exact", source = "doc/louise/tire-product-pages", notes = "Hex size from the product page" },

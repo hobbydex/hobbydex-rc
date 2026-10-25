@@ -8,9 +8,9 @@ vehicle = "monster"
 mounting = "pre-mounted"
 weight_g = 730
 fits = [
-  { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/jetko/catalogue-copy60" },
-  { kit = "kit/arrma/kraton-8s", type = "direct", source = "doc/jetko/catalogue-copy60" },
-  { kit = "kit/arrma/outcast-8s", type = "direct", source = "doc/jetko/catalogue-copy60" },
+  { kit = "kit/traxxas/x-maxx", type = "replaces", source = "doc/jetko/catalogue-copy60" },
+  { kit = "kit/arrma/kraton-8s", type = "replaces", source = "doc/jetko/catalogue-copy60" },
+  { kit = "kit/arrma/outcast-8s", type = "replaces", source = "doc/jetko/catalogue-copy60" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/24mm", match = "exact", source = "doc/jetko/catalogue-copy60", notes = "Hex from the catalogue sheet's connectors or HEX column" },

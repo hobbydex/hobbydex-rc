@@ -6,8 +6,8 @@ material = "aluminium"
 scale = "1/10"
 applies_to = "SCX10, SCX10 II"
 fits = [
-  { kit = "kit/axial/scx10", type = "direct", source = "doc/injora/store" },
-  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/injora/store" },
+  { kit = "kit/axial/scx10", type = "replaces", source = "doc/injora/store" },
+  { kit = "kit/axial/scx10-ii", type = "replaces", source = "doc/injora/store" },
 ]
 links = [
   { site = "Injora", url = "https://www.injora.com/products/injora-cnc-aluminum-complete-transmission-gearbox-for-1-10-scx10-scx10-ii" },

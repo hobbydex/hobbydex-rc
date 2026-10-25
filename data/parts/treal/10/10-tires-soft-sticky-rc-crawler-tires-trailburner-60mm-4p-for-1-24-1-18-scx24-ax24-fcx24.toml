@@ -6,9 +6,9 @@ pack_qty = 4
 wheel_size = "1.0\""
 vehicle = "crawler"
 fits = [
-  { kit = "kit/traxxas/trx-4m", type = "direct", source = "doc/treal/shop" },
-  { kit = "kit/axial/scx24", type = "direct", source = "doc/treal/shop" },
-  { kit = "kit/axial/ax24", type = "direct", source = "doc/treal/shop" },
+  { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/treal/shop" },
+  { kit = "kit/axial/scx24", type = "replaces", source = "doc/treal/shop" },
+  { kit = "kit/axial/ax24", type = "replaces", source = "doc/treal/shop" },
 ]
 links = [
   { site = "Treal Hobby", url = "https://trealhobby.com/products/treal-10-tires-soft-sticky-rc-crawler-tires-trailburner-60mm-4p-for-1-24-1-18-scx24-ax24-fcx24-trx4m" },

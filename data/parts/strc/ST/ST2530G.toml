@@ -5,10 +5,10 @@ name = "Team STRC Stampede/Rustler/Bandit/Slash Aluminum Front Bulkhead (Green)"
 material = "aluminium"
 applies_to = "Bandit, Traxxas Drag Slash, Traxxas Rustler 2WD, Traxxas Slash 2WD, Traxxas Stampede 2WD"
 fits = [
-  { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/strc/shop" },
-  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/strc/shop" },
-  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/strc/shop" },
-  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/strc/shop" },
+  { kit = "kit/traxxas/stampede-2wd", type = "replaces", source = "doc/strc/shop" },
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/strc/shop" },
+  { kit = "kit/traxxas/bandit", type = "replaces", source = "doc/strc/shop" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/strc/shop" },
 ]
 color = "green"
 range = "strc/st2530-colours"

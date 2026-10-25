@@ -10,10 +10,10 @@ mounting = "pre-mounted"
 wheel_color = "black"
 applies_to = "E-REVO Front & Rear; E-MAXX Front & Rear SUMMIT Front & Rear NERO Front & Rear FAZON Front & Rear KRATON Front & Rear OUTCAST Front & Rear SAVAGE Front & Rear HEX 17mm"
 fits = [
-  { kit = "kit/arrma/kraton", type = "direct", source = "doc/louise/tire-product-pages" },
-  { kit = "kit/arrma/outcast", type = "direct", source = "doc/louise/tire-product-pages" },
-  { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/louise/tire-product-pages" },
-  { kit = "kit/traxxas/summit", type = "direct", source = "doc/louise/tire-product-pages" },
+  { kit = "kit/arrma/kraton", type = "replaces", source = "doc/louise/tire-product-pages" },
+  { kit = "kit/arrma/outcast", type = "replaces", source = "doc/louise/tire-product-pages" },
+  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/louise/tire-product-pages" },
+  { kit = "kit/traxxas/summit", type = "replaces", source = "doc/louise/tire-product-pages" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "exact", source = "doc/louise/tire-product-pages", notes = "Hex size from the product page" },

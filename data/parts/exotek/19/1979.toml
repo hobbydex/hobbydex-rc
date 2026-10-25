@@ -7,8 +7,8 @@ pack_qty_basis = "name"
 material = "titanium"
 applies_to = "SLASH, BANDIT"
 fits = [
-  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/exotek/shop" },
-  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/exotek/shop" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/exotek/shop" },
+  { kit = "kit/traxxas/bandit", type = "replaces", source = "doc/exotek/shop" },
 ]
 links = [
   { site = "Exotek Racing", url = "https://www.exotekracing.com/slash-bandit-titanium-front-axles-1-pair-for-street-eliminators" },

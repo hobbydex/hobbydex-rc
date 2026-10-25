@@ -13,7 +13,7 @@ includes = [
   { spec = "spec/bearing/13x19x4" },
 ]
 fits = [
-  { kit = "kit/serpent/srx8-gte", releases = ["release/serpent/600058", "release/serpent/600061"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Serpent SRX8 GTE EP 1/8th (#600058)" },
+  { kit = "kit/serpent/srx8-gte", releases = ["release/serpent/600058", "release/serpent/600061"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Serpent SRX8 GTE EP 1/8th (#600058)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
