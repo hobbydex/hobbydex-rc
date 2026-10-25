@@ -1,0 +1,24 @@
+id = "part/ovonic/O-100C-6000-4S1P-HC32-EC5-2P"
+brand = "brand/ovonic"
+number = "O-100C-6000-4S1P-HC32-EC5-2P"
+name = "Rebel 100C 4S 6000mAh 14.8V Hardcase#32 LiPo Battery For Arrma Outcast Kraton 8S Truck - EC5 Plug | Australia Warehouse / 2 packs"
+category = "battery"
+pack_qty = 2
+capacity_mah = 6000
+cells = 4
+chemistry = "lipo"
+voltage = 14.8
+c_rating = 100
+case = "hard"
+connector = "EC5"
+dimensions_mm = [138, 47, 49]
+weight_g = 573
+notes = "Max burst discharge rate 200C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6000mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-100c-6000mah-4s-14-8v-hardcase-lipo-battery-ec5" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

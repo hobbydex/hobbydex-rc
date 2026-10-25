@@ -1,0 +1,23 @@
+id = "part/ovonic/O-130C-5200-4S1P-EC5-2P"
+brand = "brand/ovonic"
+number = "O-130C-5200-4S1P-EC5-2P"
+name = "2× OVONIC 4S Lipo Battery 5200mAh 130C 14.8V RC Lipo Battery with EC5 Plug for RC 1/10 1/8 Vehicles Car RC Truck"
+category = "battery"
+pack_qty = 2
+capacity_mah = 5200
+cells = 4
+chemistry = "lipo"
+voltage = 14.8
+c_rating = 130
+connector = "EC5"
+dimensions_mm = [137, 43, 37]
+weight_g = 453
+notes = "Max burst discharge rate 260C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-5200mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/2-ovonic-4s-lipo-battery-5200mah-130c-14-8v-rc-lipo-battery-with-ec5-plug-for-rc-1-10-1-8-vehicles-car-rc-truck" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

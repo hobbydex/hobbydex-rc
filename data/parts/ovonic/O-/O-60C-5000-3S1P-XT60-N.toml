@@ -1,0 +1,21 @@
+id = "part/ovonic/O-60C-5000-3S1P-XT60-N"
+brand = "brand/ovonic"
+number = "O-60C-5000-3S1P-XT60-N"
+name = "60C 5000mAh 3S1P 11.1V with XT60 Plug LiPo Battery for RC CAR"
+category = "battery"
+capacity_mah = 5000
+cells = 3
+chemistry = "lipo"
+voltage = 11.1
+c_rating = 60
+connector = "XT60"
+dimensions_mm = [155, 43, 24]
+notes = "Max burst discharge rate 120C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-60c-5000mah-3s1p-11-1v-with-xt60-plug-lipo-battery-for-rc-car" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

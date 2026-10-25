@@ -1,0 +1,23 @@
+id = "part/ovonic/O-80C-5200-3S1P-EC3-2P"
+brand = "brand/ovonic"
+number = "O-80C-5200-3S1P-EC3-2P"
+name = "2x Ovonic 80C 3S1P 5200mAh 11.1V LiPo Battery fo 1/10 scale Arrma 3S RC Car - EC3 Plug | Australia Warehouse / 2packs"
+category = "battery"
+pack_qty = 2
+capacity_mah = 5200
+cells = 3
+chemistry = "lipo"
+voltage = 11.1
+c_rating = 80
+connector = "EC3"
+dimensions_mm = [136, 43, 28]
+weight_g = 343
+notes = "Max burst discharge rate 160C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5200mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/2x-ovonic-80c-3s1p-5200mah-11-1v-lipo-battery-for-rc-car-ec3-plug" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

@@ -1,0 +1,22 @@
+id = "part/ovonic/O-60C-6000-4S1P-EC5"
+brand = "brand/ovonic"
+number = "O-60C-6000-4S1P-EC5"
+name = "60C 14.8V 4S 6000mAh LiPo Battery Pack for 1/5 to 1/8 car- EC5 Plug"
+category = "battery"
+capacity_mah = 6000
+cells = 4
+chemistry = "lipo"
+voltage = 14.8
+c_rating = 60
+connector = "EC5"
+dimensions_mm = [164, 49, 33]
+weight_g = 556
+notes = "Max burst discharge rate 120C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6000mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-60c-14-8v-6000mah-4s-lipo-battery-pack" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

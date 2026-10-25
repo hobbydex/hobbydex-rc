@@ -1,0 +1,21 @@
+id = "part/ovonic/O-120C-5000-3S1P-TRA-4P"
+brand = "brand/ovonic"
+number = "O-120C-5000-3S1P-TRA-4P"
+name = "2x Ovonic 11.1V 120C 3S 5000mAh LiPo Batteries with XT60-TRX Plug for RC Car Heli Jet boat | Australia Warehouse / 4packs"
+category = "battery"
+pack_qty = 4
+capacity_mah = 5000
+cells = 3
+chemistry = "lipo"
+voltage = 11.1
+c_rating = 120
+connector = "TRX"
+notes = "Max burst discharge rate 240C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5000mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-120c-11-1v-3s-5000mah-lipo-battery-with-trx-plug-for-slash-e-revo-udr-x-maxx" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

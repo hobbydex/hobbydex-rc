@@ -1,0 +1,23 @@
+id = "part/ovonic/O-50C-6500-4S1P-HC14-T"
+brand = "brand/ovonic"
+number = "O-50C-6500-4S1P-HC14-T"
+name = "6500mAh 4S 14.8V 50C Hardcase LiPo Battery Pack with T Plug for 1/8 RC Buggy | Global Warehouse / 1pack"
+category = "battery"
+capacity_mah = 6500
+cells = 4
+chemistry = "lipo"
+voltage = 14.8
+c_rating = 50
+case = "hard"
+connector = "Deans"
+balance_connector = "JST-XH"
+balance_connector_basis = "maker"
+dimensions_mm = [138, 46, 49]
+weight_g = 524
+notes = "Max burst discharge rate 100C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6500mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-6500mah-4s-14-8v-50c-hardcase-lipo-battery-pack-with-t-connector-for-1-8-rc-car" },
+]

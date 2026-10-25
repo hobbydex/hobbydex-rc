@@ -1,0 +1,24 @@
+id = "part/ovonic/O-50C-6200-2S1P-HC-T-4P"
+brand = "brand/ovonic"
+number = "O-50C-6200-2S1P-HC-T-4P"
+name = "[2pcs] Ovonic 6200mAh 2S 50C 7.4V Hardcase LiPo Battery Pack for 1:8 1:10 RC Car - T Plug | Australia Warehouse / 4 Packs"
+category = "battery"
+pack_qty = 4
+capacity_mah = 6200
+cells = 2
+chemistry = "lipo"
+voltage = 7.4
+c_rating = 50
+case = "hard"
+connector = "Deans"
+dimensions_mm = [138, 46, 24]
+weight_g = 280
+notes = "Max burst discharge rate 100C"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6200mah", match = "functional", source = "doc/ovonic/shop", notes = "Chemistry, cells and capacity from the store's spec list or title; check size and plug" },
+]
+links = [
+  { site = "Ovonicshop", url = "https://www.ovonicshop.com/products/ovonic-6200mah-7-4v-2s-50c-lipo-battery-pack-for-1-8-1-10-rc-car" },
+]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
