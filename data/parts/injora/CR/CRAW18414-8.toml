@@ -7,8 +7,8 @@ pack_qty_basis = "name"
 material = "brass"
 applies_to = "SCX10 III, UTB10 Capra"
 fits = [
-  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/injora/store" },
-  { kit = "kit/axial/capra", type = "direct", source = "doc/injora/store" },
+  { kit = "kit/axial/scx10-iii", type = "replaces", source = "doc/injora/store" },
+  { kit = "kit/axial/capra", type = "replaces", source = "doc/injora/store" },
 ]
 links = [
   { site = "Injora", url = "https://www.injora.com/products/4pcs-12mm-heavy-brass-wheel-hex-hubs-extended-adapter-for-axial-scx10-iii?variant=48257887502594" },

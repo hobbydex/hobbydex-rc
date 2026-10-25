@@ -13,7 +13,7 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 fits = [
-  { kit = "kit/xray/t4", releases = ["release/xray/300021"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Team Xray T4 2015 (#300021)" },
+  { kit = "kit/xray/t4", releases = ["release/xray/300021"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Team Xray T4 2015 (#300021)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

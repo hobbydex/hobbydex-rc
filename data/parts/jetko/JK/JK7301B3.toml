@@ -8,7 +8,7 @@ equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", source = "doc/jetko/catalogue-copy62", notes = "Hex size from the catalogue sheet" },
 ]
 fits = [
-  { kit = "kit/traxxas/hoss", type = "direct", source = "doc/jetko/catalogue-copy62" },
+  { kit = "kit/traxxas/hoss", type = "replaces", source = "doc/jetko/catalogue-copy62" },
 ]
 documents = ["doc/jetko/catalogue-copy62"]
 notes = "Hex adaptor of Jetko's EX wheels, listed in the CONNECTOR column of the catalogue sheet"

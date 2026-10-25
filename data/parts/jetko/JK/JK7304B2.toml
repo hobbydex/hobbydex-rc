@@ -8,8 +8,8 @@ equivalent_to = [
   { spec = "spec/wheel-hex/24mm", match = "exact", source = "doc/jetko/catalogue-copy60", notes = "Hex size from the catalogue sheet" },
 ]
 fits = [
-  { kit = "kit/arrma/kraton-8s", type = "direct", source = "doc/jetko/catalogue-copy60" },
-  { kit = "kit/arrma/outcast-8s", type = "direct", source = "doc/jetko/catalogue-copy60" },
+  { kit = "kit/arrma/kraton-8s", type = "replaces", source = "doc/jetko/catalogue-copy60" },
+  { kit = "kit/arrma/outcast-8s", type = "replaces", source = "doc/jetko/catalogue-copy60" },
 ]
 documents = ["doc/jetko/catalogue-copy60"]
 notes = "Hex adaptor of Jetko's EX wheels, listed in the CONNECTOR column of the catalogue sheet"

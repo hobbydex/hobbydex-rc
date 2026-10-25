@@ -4,10 +4,10 @@ number = "ST3654-17B"
 name = "Team STRC Performance 17mm Hex Conversion Kit for Slash, Stampede, Rustler and Bandit (Blue)"
 applies_to = "Bandit, Traxxas Rustler 2WD, Traxxas Slash 2WD, Traxxas Stampede 2WD"
 fits = [
-  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/strc/shop" },
-  { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/strc/shop" },
-  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/strc/shop" },
-  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/strc/shop" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/strc/shop" },
+  { kit = "kit/traxxas/stampede-2wd", type = "replaces", source = "doc/strc/shop" },
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/strc/shop" },
+  { kit = "kit/traxxas/bandit", type = "replaces", source = "doc/strc/shop" },
 ]
 color = "blue"
 range = "strc/st3654-17-colours"
@@ -15,3 +15,6 @@ links = [
   { site = "ST Racing Concepts", url = "https://teamstrc.com/products/team-strc-performance-17mm-hex-conversion-kit-for-slash-stampede-rustler-and-bandit?variant=47672265638200" },
 ]
 category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },
+]

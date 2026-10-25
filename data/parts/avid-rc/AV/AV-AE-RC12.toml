@@ -11,10 +11,10 @@ category_source = "curated"
 seal = "metal"
 lubricant = "grease"
 fits = [
-  { kit = "kit/team-associated/rc12", type = "direct", source = "doc/avid-rc/flexkit" },
-  { kit = "kit/team-associated/rc12l", car = "RC12", type = "direct", source = "doc/avid-rc/flexkit" },
-  { kit = "kit/team-associated/rc12r5", type = "direct", source = "doc/avid-rc/flexkit" },
-  { kit = "kit/team-associated/rc12l3", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/team-associated/rc12", type = "replaces", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/team-associated/rc12l", car = "RC12", type = "replaces", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/team-associated/rc12r5", type = "replaces", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/team-associated/rc12l3", type = "replaces", source = "doc/avid-rc/flexkit" },
 ]
 notes = "Each size can be ordered as one of: Metal, Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
 links = [

@@ -9,12 +9,12 @@ wheel_size = "3.8\""
 mounting = "pre-mounted"
 weight_g = 455
 fits = [
-  { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/jetko/catalogue-copy62" },
-  { kit = "kit/traxxas/summit", type = "direct", source = "doc/jetko/catalogue-copy62" },
-  { kit = "kit/arrma/kraton", type = "direct", source = "doc/jetko/catalogue-copy62" },
-  { kit = "kit/arrma/outcast", type = "direct", source = "doc/jetko/catalogue-copy62" },
-  { kit = "kit/arrma/notorious", type = "direct", source = "doc/jetko/catalogue-copy62" },
-  { kit = "kit/tekno/mt410", type = "direct", source = "doc/jetko/catalogue-copy62" },
+  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/jetko/catalogue-copy62" },
+  { kit = "kit/traxxas/summit", type = "replaces", source = "doc/jetko/catalogue-copy62" },
+  { kit = "kit/arrma/kraton", type = "replaces", source = "doc/jetko/catalogue-copy62" },
+  { kit = "kit/arrma/outcast", type = "replaces", source = "doc/jetko/catalogue-copy62" },
+  { kit = "kit/arrma/notorious", type = "replaces", source = "doc/jetko/catalogue-copy62" },
+  { kit = "kit/tekno/mt410", type = "replaces", source = "doc/jetko/catalogue-copy62" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "exact", source = "doc/jetko/catalogue-copy62", notes = "Hex from the catalogue sheet's connectors or HEX column" },

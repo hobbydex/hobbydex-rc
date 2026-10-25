@@ -11,8 +11,8 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 fits = [
-  { kit = "kit/tamiya/mb-01", releases = ["release/tamiya/58721", "release/tamiya/58729", "release/tamiya/58732", "release/tamiya/58734", "release/tamiya/58747", "release/tamiya/58748"], type = "direct", source = "doc/avid-rc/flexkit" },
-  { kit = "kit/tamiya/bt-01", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/tamiya/mb-01", releases = ["release/tamiya/58721", "release/tamiya/58729", "release/tamiya/58732", "release/tamiya/58734", "release/tamiya/58747", "release/tamiya/58748"], type = "replaces", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/tamiya/bt-01", type = "replaces", source = "doc/avid-rc/flexkit" },
 ]
 notes = "Each size can be ordered as one of: Rubber, Revolution | Aura, Metal, Ceramic Metal | Aura, Revolution, Ceramic Revolution, Ceramic Metal (Avid's Flex Kit builder)."
 links = [
