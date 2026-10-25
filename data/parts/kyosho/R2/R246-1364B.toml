@@ -5,3 +5,8 @@ name = "Plastic Parts (for R246-1360/1361/1362)"
 gtin = "4548565514724"
 documents = ["doc/kyosho/r246-1364b-product-page"]
 material = "plastic"
+related = [
+  { part = "part/kyosho/1361", relation = "for", notes = "link_part_refs" },
+  { part = "part/kyosho/1362", relation = "for", notes = "link_part_refs" },
+]
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/r246-1364b.html" } ]

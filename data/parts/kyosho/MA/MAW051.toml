@@ -6,5 +6,9 @@ gtin = "4955439796153"
 category = "chassis"
 fits = [
   { kit = "kit/kyosho/twin-force", type = "direct", source = "doc/kyosho/30522-b-twinforcecsp-p" },
+  { kit = "kit/kyosho/twin-force", type = "replaces", replaces = "part/kyosho/MA021B", source = "doc/kyosho/30522-b-twinforcecsp-p", notes = "Same part in another material (link_upgrades.py)" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/maw051.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/maw051.html" },
+]
+material = "carbon"

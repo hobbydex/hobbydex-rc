@@ -6,3 +6,7 @@ gtin = "4548565359769"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/70707.html" } ]

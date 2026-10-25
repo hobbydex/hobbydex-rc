@@ -6,4 +6,10 @@ gtin = "4548565329489"
 category = "chassis"
 documents = ["doc/kyosho/otw110b-product-page"]
 material = "carbon"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/otw110b.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/otw110b.html" },
+]
+fits = [
+  { kit = "kit/kyosho/javelin", type = "replaces", replaces = "part/kyosho/OT220", source = "doc/kyosho/30618-javelin-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/optima", type = "replaces", replaces = "part/kyosho/OT220", source = "doc/kyosho/30617-05-optima-im", notes = "Same part in another material (link_upgrades.py)" },
+]

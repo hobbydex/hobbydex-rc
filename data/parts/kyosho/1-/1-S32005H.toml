@@ -8,3 +8,6 @@ gtin = "4548565532117"
 documents = ["doc/kyosho/rc-newitem-2026-10-parts"]
 notes = "Kyosho lists it among the new items of October 2026"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -6,3 +6,6 @@ pack_qty = 4
 pack_qty_basis = "name"
 name_source = "ocr"
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2.5x14.5", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
