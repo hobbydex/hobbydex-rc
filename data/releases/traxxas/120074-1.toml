@@ -7,7 +7,8 @@ announced = "2026-10-06"
 announced_source = "https://www.youtube.com/watch?v=HC_gCt62K9A"
 kind = "rtr"
 status = "released"
-documents = ["doc/traxxas/youtube-HC_gCt62K9A", "doc/traxxas/120074-1-parts-list", "doc/traxxas/120074-1-owners-manual", "doc/traxxas/120074-1-product-page"]
+notes = "the manual's copyright line (c) 2026 is not a release year; the announced date stands"
+documents = ["doc/traxxas/youtube-HC_gCt62K9A", "doc/traxxas/120074-1-parts-list", "doc/traxxas/120074-1-owners-manual", "doc/traxxas/120074-1-product-page", "doc/traxxas/120074-1-exploded-body-assembly", "doc/traxxas/120074-1-exploded-chassis-assembly", "doc/traxxas/120074-1-exploded-front-assembly", "doc/traxxas/120074-1-exploded-rear-assembly"]
 contains = [
   { part = "part/traxxas/12012-BLK", role = "option", source = "doc/traxxas/120074-1-parts-list" },
   { part = "part/traxxas/12012-BLUE", role = "kit", source = "doc/traxxas/120074-1-parts-list" },
@@ -172,5 +173,13 @@ contains = [
   { part = "part/traxxas/9916", role = "option", source = "doc/traxxas/120074-1-parts-list" },
   { part = "part/traxxas/9917", role = "option", source = "doc/traxxas/120074-1-parts-list" },
   { part = "part/traxxas/9950", role = "option", source = "doc/traxxas/120074-1-parts-list" },
+  { part = "part/traxxas/10298", role = "kit", source = "doc/traxxas/120074-1-exploded-rear-assembly" },
+  { part = "part/traxxas/12012-GRAY", role = "option", source = "doc/traxxas/120074-1-exploded-body-assembly" },
+  { part = "part/traxxas/12017-BLK", role = "listed", source = "doc/traxxas/120074-1-exploded-body-assembly" },
+  { part = "part/traxxas/12054", role = "listed", source = "doc/traxxas/120074-1-exploded-front-assembly" },
+  { part = "part/traxxas/5158", role = "kit", source = "doc/traxxas/120074-1-exploded-front-assembly" },
+  { part = "part/traxxas/9750", role = "kit", source = "doc/traxxas/120074-1-exploded-front-assembly" },
+  { part = "part/traxxas/9750A", role = "option", source = "doc/traxxas/120074-1-exploded-front-assembly" },
+  { part = "part/traxxas/9750X", role = "option", source = "doc/traxxas/120074-1-exploded-front-assembly" },
+  { part = "part/traxxas/9777", role = "kit", source = "doc/traxxas/120074-1-exploded-rear-assembly" },
 ]
-notes = "the manual's copyright line (c) 2026 is not a release year; the announced date stands"

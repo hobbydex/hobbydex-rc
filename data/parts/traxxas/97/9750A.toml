@@ -9,8 +9,10 @@ material = "steel"
 fits = [
   { kit = "kit/traxxas/trx-4m", type = "direct", source = "doc/traxxas/97044-1-parts-list" },
   { kit = "kit/traxxas/trx-4mt", type = "direct", source = "doc/traxxas/98044-1-parts-list" },
+  { kit = "kit/traxxas/txc-4m", type = "direct", source = "doc/traxxas/120074-1-exploded-front-assembly" },
   { kit = "kit/traxxas/trx-4m", type = "replaces", replaces = "part/traxxas/9750", source = "doc/traxxas/97044-1-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/trx-4mt", type = "replaces", replaces = "part/traxxas/9750", source = "doc/traxxas/98044-1-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/txc-4m", type = "replaces", replaces = "part/traxxas/9750", source = "doc/traxxas/120074-1-exploded-front-assembly", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/9750a-7-mm-steel-wheel-hubs-4-with-axle-pins" },
