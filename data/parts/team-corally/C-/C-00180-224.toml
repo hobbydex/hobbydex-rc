@@ -6,3 +6,10 @@ gtin = "8718057187958"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-00180-224"
 category = "chassis"
 material = "plastic"
+related = [
+  { part = "part/team-corally/C-53112-1", relation = "use-with" },
+  { part = "part/team-corally/C-53112-2", relation = "use-with" },
+  { part = "part/team-corally/C-3101-30-6", relation = "use-with" },
+  { part = "part/team-corally/C-3003-30-35", relation = "use-with" },
+]
+links = [ { site = "Team Corally", url = "https://corally.com/en/product/C-00180-224/" } ]

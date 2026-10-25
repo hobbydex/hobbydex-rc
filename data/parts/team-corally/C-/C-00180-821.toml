@@ -8,3 +8,9 @@ motor_can_mm = 42
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-00180-821"
 category = "cooling"
 material = "plastic"
+related = [
+  { part = "part/team-corally/C-53110-1", relation = "use-with" },
+  { part = "part/team-corally/C-53110-2", relation = "use-with" },
+  { part = "part/team-corally/C-3003-30-14", relation = "use-with" },
+]
+links = [ { site = "Team Corally", url = "https://corally.com/en/product/C-00180-821/" } ]
