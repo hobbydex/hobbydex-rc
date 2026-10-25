@@ -3,6 +3,7 @@ brand = "brand/arrma"
 number = "ARA724304"
 name = "Set Screw M3x4mm"
 pack_qty = 10
+pack_qty_basis = "includes"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-set-screw-m3x4mm-10/ARA724304.html" },
 ]
@@ -19,4 +20,7 @@ fits = [
   { kit = "kit/arrma/mojave-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/quake-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/typhon-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
+]
+includes = [
+  { spec = "spec/screw/m3x4-set-hex", qty = 10 },
 ]

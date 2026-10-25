@@ -2,10 +2,10 @@ id = "release/arrma/ara4437t2"
 kit = "kit/arrma/quake-4s"
 brand = "brand/arrma"
 number = "ARA4437T2"
-name = "Quake 4S DSC 4X4 RTR, white/blue"
+name = "Quake 4S DSC 4X4 RTR Brushless Monster Truck, white/blue"
 year = 2025
 kind = "rtr"
-status = "released"
+status = "announced"
 color = "white/blue"
 documents = ["doc/arrma/ara4437-manual", "doc/arrma/ara4437-part-list", "doc/arrma/ara4437-product-page", "doc/arrma/youtube-FbmWtXoQ-w0"]
 contains = [
@@ -165,6 +165,8 @@ contains = [
   { part = "part/arrma/ARAC9889", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARAC9891", role = "kit", source = "doc/arrma/horizon-part-pages" },
   { part = "part/arrma/ARAC9937", role = "kit", source = "doc/arrma/horizon-part-pages" },
+  { part = "part/spektrum/SPMS662", role = "kit", source = "doc/arrma/ara4437-product-page", qty = 1, notes = "In the box: Spektrum S662 Metal-Geared Waterproof Digital Servo (installed)" },
+  { part = "part/spektrum/SPMSLR370", role = "kit", source = "doc/arrma/ara4437-product-page", qty = 1, notes = "In the box: Spektrum SLR370 DSC SLT Protocol Receiver (installed)" },
   { part = "part/arrma/ARA-1084", role = "listed", source = "doc/arrma/ara4437-part-list" },
   { part = "part/arrma/ARA-1602", role = "listed", source = "doc/arrma/ara4437-part-list" },
   { part = "part/arrma/ARA-1606", role = "listed", source = "doc/arrma/ara4437-part-list" },
@@ -218,8 +220,6 @@ contains = [
   { part = "part/spektrum/SPMR6220G", role = "option", source = "doc/arrma/ara4437-product-page" },
   { part = "part/spektrum/SPMR6220O", role = "option", source = "doc/arrma/ara4437-product-page" },
   { part = "part/spektrum/SPMRSLT370", role = "listed", source = "doc/arrma/ara4437-product-page" },
-  { part = "part/spektrum/SPMS662", role = "kit", source = "doc/arrma/ara4437-product-page", qty = 1, notes = "In the box: Spektrum S662 Metal-Geared Waterproof Digital Servo (installed)" },
-  { part = "part/spektrum/SPMSLR370", role = "kit", source = "doc/arrma/ara4437-product-page", qty = 1, notes = "In the box: Spektrum SLR370 DSC SLT Protocol Receiver (installed)" },
   { part = "part/spektrum/SPMSR315", role = "option", source = "doc/arrma/ara4437-product-page" },
   { part = "part/spektrum/SPMSR6100AT", role = "option", source = "doc/arrma/ara4437-product-page" },
   { part = "part/spektrum/SPMX53S100H5", role = "option", source = "doc/arrma/ara4437-product-page" },
