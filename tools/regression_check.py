@@ -314,6 +314,9 @@ class Check:
                 if k == "name" and name_key(ov, o.get("brand")) == name_key(nv, n.get("brand")):
                     self.event(kind, rid, k, "changed", ov, nv, False, "same name in canonical form (brand, pack count)")
                     continue
+                if k == "notes" and isinstance(ov, str) and isinstance(nv, str) and nv.startswith(ov.rstrip(". ")):
+                    self.event(kind, rid, k, "changed", ov, nv, False, "note kept, text added")
+                    continue
                 reg = field_sourced(o, k, ov)
                 self.event(kind, rid, k, "changed", ov, nv, reg, "stated value changed" if reg else "not stated")
         if changed:

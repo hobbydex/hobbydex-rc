@@ -143,6 +143,16 @@ class Removals(unittest.TestCase):
     def regs(self, ck):
         return [(e["field"], e["reason"]) for e in ck.events if e["regression"]]
 
+    def test_note_with_text_added_is_not_a_regression(self):
+        base = self.part('notes = "The shop lists it as P-1"\n')
+        head = self.part('notes = "The shop lists it as P-1. Colour read from the maker\'s product photo."\n')
+        self.assertEqual(self.regs(self.check(base, head)), [])
+
+    def test_rewritten_note_is_a_regression(self):
+        base = self.part('notes = "The shop lists it as P-1"\n')
+        head = self.part('notes = "Colour read from the maker\'s product photo."\n')
+        self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["notes"])
+
     def test_removed_maker_link_is_a_regression(self):
         base = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
         head = self.part('links = []\n')
