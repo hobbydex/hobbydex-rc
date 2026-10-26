@@ -807,8 +807,7 @@ implies brushless); `bec_v` (the BEC output voltage: one figure, or a
 list of two or more when the maker says it is switchable, "6.0/7.4 V
 switchable" gives [6.0, 7.4]; a range such as "6.0-7.4 V" is not a list and
 is left out); `bec_a` (the BEC's continuous current in A, "BEC 6V/3A" gives
-3, "500 mA" gives 0.5); `waterproof` (true when the maker says waterproof,
-false only for an explicit "not waterproof"); `motor_limit_t` (the lowest
+3, "500 mA" gives 0.5); `motor_limit_t` (the lowest
 motor turns the maker allows, "Motor limit 20T" gives 20, a limit that
 depends on the cell count or a class of turns is left out) and
 `motor_limit_kv` (an int kV limit the maker states without a cell count);
@@ -827,6 +826,25 @@ waterproof = true
 motor_limit_t = 20
 nimh_cells = [4, 8]
 ```
+
+`waterproof` (true when the maker says waterproof, false only for an explicit
+"not waterproof") is set from the maker's wording on esc, motor, servo and
+radio parts (receivers included), in the name, the notes or a spec table
+row; an IP rating goes in `notes`, not in the field. Partly waterproof
+("Partially WP") is left out.
+
+`motor_connector` is the plug on an ESC's motor wires, or on a motor's
+leads, in the same plug vocabulary as `connector` (bullets: "3.5mm bullet",
+"4mm bullet" ...; the spec is spec/connector/bullet-<mm>mm). It is set on esc
+and motor parts only, from the maker's spec table. A plug the maker names
+that has no spec (6.5 mm bullets) takes no value.
+
+`scales` (a list of scales, ["1/10", "1/12"]) is the vehicle scales the maker
+designates an electronic part for ("Scale 1/16th, 1/18th" in the spec table,
+or "Applications: 1/10 touring, 1/12 ..."). It is set on esc, motor, servo and
+battery parts only, from the maker's wording. The single `scale` on other
+parts keeps its meaning and is not converted to a list: `scale` is the one
+scale a part is for, `scales` the list a maker names for an electronic part.
 
 Engines (nitro and gas) are parts with category engine-fuel. A complete
 engine carries, when the maker states them: `displacement_cc`,
