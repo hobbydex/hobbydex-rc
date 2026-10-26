@@ -5,8 +5,12 @@ name = "Losi 8ight-T 2.0 Rubber Shielded Bearing Kit"
 category = "bearing"
 category_source = "curated"
 seal = "rubber"
-applies_to = "Losi 8ight-T 2.0"
 notes = "Contents not recorded: the description lists no sizes."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los048r-losi-8ight-t-2-0-rubber-shielded-bearing-kit/" },
+]
+applies_to = "Losi 8ight-T 2.0"
+fits = [
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight-T 2.0" },
+  { kit = "kit/tlr/8ight-t", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight-T 2.0" },
 ]

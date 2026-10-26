@@ -5,8 +5,12 @@ name = "Losi 8ight Metal Shielded Bearing Kit"
 category = "bearing"
 category_source = "curated"
 seal = "metal"
-applies_to = "Losi 8ight"
 notes = "Contents not recorded: the description lists no sizes."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los025b-losi-8ight-metal-shielded-bearing-kit/" },
+]
+applies_to = "Losi 8ight"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/rcscrewz/store" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/rcscrewz/store" },
 ]

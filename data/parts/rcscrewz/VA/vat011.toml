@@ -5,8 +5,11 @@ name = "Vatera K5 Blazer Ascender (#VTR03023) Stainless Screw Kit"
 category = "screw"
 category_source = "curated"
 material = "stainless"
-applies_to = "Vatera K5 Blazer Ascender (#VTR03023)"
-notes = "Holds all the socket, button, flat head and set screws, nuts and washers of the car plus spares, and hex wrenches (its description; sizes not listed). Self-tapping screws are replaced by machine screws; hinge pins and other special parts are not included."
+notes = "255+ pieces. Holds all the socket, button, flat head and set screws, nuts and washers of the car plus spares, and hex wrenches (its description; sizes not listed). Self-tapping screws are replaced by machine screws; hinge pins and other special parts are not included."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/vat011-vatera-k5-blazer-ascender-stainless-steel-screw-kit/" },
+]
+applies_to = "Vatera K5 Blazer Ascender (#VTR03023)"
+fits = [
+  { kit = "kit/vaterra/ascender", releases = ["release/vaterra/vtr03023"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Vatera K5 Blazer Ascender (#VTR03023)" },
 ]

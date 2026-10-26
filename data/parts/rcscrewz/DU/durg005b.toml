@@ -13,8 +13,11 @@ includes = [
   { spec = "spec/bearing/5x13x4" },
   { spec = "spec/bearing/10x15x4" },
 ]
-applies_to = "Team Durango DEX210 Buggy (#TD102014)"
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/durg005b-team-durango-dex210-buggy-metal-shielded-bearings/" },
+]
+applies_to = "Team Durango DEX210 Buggy (#TD102014)"
+fits = [
+  { kit = "kit/team-durango/dex210", releases = ["release/team-durango/TD102014"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Team Durango DEX210 Buggy (#TD102014)" },
 ]

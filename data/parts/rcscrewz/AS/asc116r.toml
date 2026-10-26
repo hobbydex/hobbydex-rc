@@ -12,11 +12,12 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
   { spec = "spec/bearing/12x18x4" },
 ]
-applies_to = "Associated Pro2 SC10 (#20530, 20531)"
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc116r-associated-pro2-sc10-20530-31-rubber-shielded-bearing-kit/" },
 ]
+applies_to = "Associated Pro2 SC10 (#20530, 20531)"
 fits = [
   { kit = "kit/team-associated/pro2-sc10", releases = ["release/team-associated/70020", "release/team-associated/70020C", "release/team-associated/70021", "release/team-associated/70021C"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated Pro2 SC10 (#20530, 20531) (link_car_kits.py)" },
+  { kit = "kit/team-associated/pro4-sc10", releases = ["release/team-associated/20530", "release/team-associated/20531"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Associated Pro2 SC10 (#20530, 20531)" },
 ]

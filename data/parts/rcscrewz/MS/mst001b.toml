@@ -10,8 +10,11 @@ includes = [
   { spec = "spec/bearing/8x12x3.5" },
   { spec = "spec/bearing/10x15x4" },
 ]
-applies_to = "Max Speed CMX (#532144)"
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/mst001b-max-speed-cmx-532144-metal-shielded-bearing-kit/" },
+]
+applies_to = "Max Speed CMX (#532144)"
+fits = [
+  { kit = "kit/mst/cmx", releases = ["release/mst/532144"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Max Speed CMX (#532144)" },
 ]

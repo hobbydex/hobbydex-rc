@@ -5,8 +5,11 @@ name = "Stainless Steel Screw Kit For The Kyosho ZX-5 Type 3 (#30861)"
 category = "screw"
 category_source = "curated"
 material = "stainless"
-applies_to = "Kyosho ZX-5 Type 3 (#30861)"
 notes = "Holds all the socket, button, flat head and set screws, nuts and washers of the car plus spares, and hex wrenches (its description; sizes not listed). Self-tapping screws are replaced by machine screws; hinge pins and other special parts are not included."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/kyo129-kyosho-zx-5-fs2-stainless-steel-screw-k/" },
+]
+applies_to = "Kyosho ZX-5 Type 3 (#30861)"
+fits = [
+  { kit = "kit/kyosho/lazer-zx-5", releases = ["release/kyosho/lazer-zx-5-readyset"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Kyosho ZX-5 Type 3 (#30861)" },
 ]

@@ -12,8 +12,11 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
   { spec = "spec/bearing/12x18x4" },
 ]
-applies_to = "Rock Rey 4wd (LOS03009T2)"
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los095b-rock-rey-4wd-metal-shielded-bearings/" },
+]
+applies_to = "Rock Rey 4wd (LOS03009T2)"
+fits = [
+  { kit = "kit/losi/rock-rey", car = "Rock Rey 4wd (LOS03009T2)", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Rock Rey 4wd (LOS03009T2)" },
 ]
