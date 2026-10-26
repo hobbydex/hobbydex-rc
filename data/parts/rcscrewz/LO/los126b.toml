@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/8x16x5" },
 ]
 applies_to = "Losi 8IGHT-XT/XTE 4WD (LOS04010)"
+fits = [
+  { kit = "kit/losi/8ight", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8IGHT-XT/XTE 4WD (LOS04010) (link_car_kits.py)", releases = ["release/losi/los04010"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los126b-losi-8ight-xt-xte-4wd-los04010-metal-shielded-bearing-kit/" },

@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 applies_to = "Mugen Seiki MBX8r Nitro (#E2027)"
+fits = [
+  { kit = "kit/mugen/mbx8", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Mugen Seiki MBX8r Nitro (#E2027) (link_car_kits.py)", releases = ["release/mugen/e2027"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/mug043b-mugen-seikii-mbx8r-nitro-e2027-compatible-metal-shielded-bearing-kit/" },

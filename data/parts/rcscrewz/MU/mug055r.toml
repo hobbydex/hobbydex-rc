@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 applies_to = "Mugen Seiki MTX8TR 1/8th (#E2029)"
+fits = [
+  { kit = "kit/mugen/mbx8t", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Mugen Seiki MTX8TR 1/8th (#E2029) (link_car_kits.py)", releases = ["release/mugen/e2029"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/mug55r-mugen-seiki-mtx8tr-1-8th-e2029-compatible-rubber-shielded-bearing-kit/" },

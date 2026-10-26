@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "GMade TA/TS Chassis (#GM57001, GM57002)"
+fits = [
+  { kit = "kit/gmade/gs02-pro-chassis", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the GMade TA/TS Chassis (#GM57001, GM57002) (link_car_kits.py)", releases = ["release/gmade/GM57001", "release/gmade/GM57002"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/gma012b-gmade-ta-ts-chassis-gm5701-02-metal-shielded-bearing-kit/" },

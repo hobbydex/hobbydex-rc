@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Tamiya LandFreeder (#58579)"
+fits = [
+  { kit = "kit/tamiya/cc-01", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Tamiya LandFreeder (#58579) (link_car_kits.py)", releases = ["release/tamiya/58579"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tam226r-tamiya-landfreeder-58579-rubber-shielded-bearing-kit/" },

@@ -11,6 +11,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "HPI MT2/EVO .18 Nitro (#10401, 10402)"
+fits = [
+  { kit = "kit/hpi/nitro-mt2", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the HPI MT2/EVO .18 Nitro (#10401, 10402) (link_car_kits.py)", releases = ["release/hpi/10402"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/hpi024r-hpi-mt2-evo-18-nitro-10401-10402-compatible-rubber-shielded-bearing-kit/" },

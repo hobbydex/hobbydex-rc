@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/12x18x4" },
 ]
 applies_to = "Traxxas Toyota GR Supra GT4 (#93064-4)"
+fits = [
+  { kit = "kit/traxxas/4-tec-3", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Traxxas Toyota GR Supra GT4 (#93064-4) (link_car_kits.py)", releases = ["release/traxxas/93064-4"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tra099b-traxxas-toyota-gr-supra-gt4-93064-4-metal-shielded-bearing-kit/" },

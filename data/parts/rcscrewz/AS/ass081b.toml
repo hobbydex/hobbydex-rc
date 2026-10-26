@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 applies_to = "Associated RC8B3.1 Nitro (ASC80935)"
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated RC8B3.1 Nitro (ASC80935) (link_car_kits.py)", releases = ["release/team-associated/80935"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/ass081b-associated-rc8b3-1-nitro-buggy-metal-shielded-bearings/" },

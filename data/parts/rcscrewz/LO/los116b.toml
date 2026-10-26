@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Losi 22DC Race/5.0 Elite Buggy (#TLR03016, TLR03022)"
+fits = [
+  { kit = "kit/tlr/22", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Losi 22DC Race/5.0 Elite Buggy (#TLR03016, TLR03022) (link_car_kits.py)", releases = ["release/tlr/tlr03016", "release/tlr/tlr03022"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los116b-losi-22dc-race-5-0-elite-buggy-tlr03016-22-metal-shielded-bearing-kit/" },

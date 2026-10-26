@@ -10,6 +10,9 @@ includes = [
   { spec = "spec/bearing/8x12x3.5" },
 ]
 applies_to = "Tamiya TT-02BR 1/10th (#58717)"
+fits = [
+  { kit = "kit/tamiya/tt-02b", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Tamiya TT-02BR 1/10th (#58717) (link_car_kits.py)", releases = ["release/tamiya/58717"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tam256r-tamiya-tt-02br-1-10th-58717-compatible-rubber-shielded-bearing-kit/" },
