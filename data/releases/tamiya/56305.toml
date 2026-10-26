@@ -3,7 +3,6 @@ kit = "kit/tamiya/rc-tractor-truck-1-14"
 brand = "brand/tamiya"
 number = "56305"
 name = "Mercedes Benz 1838LS"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/24-truck-manuals/1153-manual-56305" }
 kind = "kit"
 status = "discontinued"
 depicts = { make = "Mercedes-Benz", model = "1838LS" }
@@ -27,5 +26,9 @@ contains = [
   { part = "part/tamiya/19415147", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/19445517", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/19805522", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/14035040", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 documents = ["doc/tamiya/tamico-dealer-parts"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/24-truck-manuals/1153-manual-56305"

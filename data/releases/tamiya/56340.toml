@@ -3,7 +3,6 @@ kit = "kit/tamiya/rc-tractor-truck-1-14"
 brand = "brand/tamiya"
 number = "56340"
 name = "Cascadia Evolution"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/24-truck-manuals/88049-manual-56340" }
 kind = "kit"
 status = "discontinued"
 notes = "Name from TamiyaBase's manual title; Not on Tamiya's current pages (read 2026-10); taken as discontinued"
@@ -13,5 +12,10 @@ links = [
 ]
 contains = [
   { part = "part/tamiya/19402750", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19402749", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19402751", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 documents = ["doc/tamiya/tamico-dealer-parts"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/24-truck-manuals/88049-manual-56340"

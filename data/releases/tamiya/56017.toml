@@ -7,10 +7,13 @@ kind = "kit"
 status = "released"
 depicts = { make = "Henschel", model = "King Tiger" }
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from Tamiya's Japanese item page; Tamiya lists it as a regular product (std.csv)"
-documents = ["doc/tamiya/product-classes", "doc/tamiya/56017-product-page-ja"]
+documents = ["doc/tamiya/product-classes", "doc/tamiya/56017-product-page-ja", "doc/tamiya/tamico-dealer-parts"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56017", kind = "fan-site" },
 ]
 released = "2002-11-06"
 released_source = "TamiyaBase"
 year = 2002
+contains = [
+  { part = "part/tamiya/19725748", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]

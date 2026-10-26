@@ -3,7 +3,6 @@ kit = "kit/tamiya/unknown-58"
 brand = "brand/tamiya"
 number = "58316"
 name = "58316"
-sources = { category = "https://www.tamiyabase.com/tamiya-models/58316" }
 kind = "kit"
 category = "rally"
 status = "discontinued"
@@ -14,3 +13,10 @@ links = [
 released = "2003-12-17"
 released_source = "TamiyaBase"
 year = 2003
+contains = [
+  { part = "part/tamiya/19400082", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]
+documents = ["doc/tamiya/tamico-dealer-parts"]
+
+[sources]
+category = "https://www.tamiyabase.com/tamiya-models/58316"
