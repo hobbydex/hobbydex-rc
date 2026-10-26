@@ -13,11 +13,12 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
   { spec = "spec/bearing/12x18x4" },
 ]
-applies_to = "Losi 8ight-E 4.0 1/8th (#TLR04004)"
-fits = [
-  { kit = "kit/tlr/8ight-e", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight-E 4.0 1/8th (#TLR04004) (link_car_kits.py)" },
-]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los086r-losi-8ight-e-4-0-buggy-rubber-shielded-bearings/" },
+]
+applies_to = "Losi 8ight-E 4.0 1/8th (#TLR04004)"
+fits = [
+  { kit = "kit/tlr/8ight-e", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight-E 4.0 1/8th (#TLR04004) (link_car_kits.py)" },
+  { kit = "kit/losi/8ight-e", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight-E 4.0 1/8th (#TLR04004)" },
 ]

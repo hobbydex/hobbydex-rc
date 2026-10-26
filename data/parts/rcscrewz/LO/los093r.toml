@@ -5,11 +5,12 @@ name = "Losi 8ight-T 4.0 Nitro (#TLR04005) Rubber Shielded Bearing Kit"
 category = "bearing"
 category_source = "curated"
 seal = "rubber"
-applies_to = "Losi 8ight-T 4.0 Nitro (#TLR04005)"
-fits = [
-  { kit = "kit/tlr/8ight-t", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight-T 4.0 Nitro (#TLR04005) (link_car_kits.py)" },
-]
 notes = "Contents not recorded: line '1/2″ x 3/4″ bearings' could not be read."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los093r-losi-8ight-t-4-0-nitro-rubber-shielded-bearings/" },
+]
+applies_to = "Losi 8ight-T 4.0 Nitro (#TLR04005)"
+fits = [
+  { kit = "kit/tlr/8ight-t", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight-T 4.0 Nitro (#TLR04005) (link_car_kits.py)" },
+  { kit = "kit/losi/8ight-t", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight-T 4.0 Nitro (#TLR04005)" },
 ]

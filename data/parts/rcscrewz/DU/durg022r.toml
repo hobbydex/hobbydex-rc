@@ -11,8 +11,11 @@ includes = [
   { spec = "spec/bearing/5x13x4" },
   { spec = "spec/bearing/10x15x4" },
 ]
-applies_to = "Team Durango DEX410 V5 (#TD102036)"
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/durg022r-team-durango-dex410-v5-rubber-shielded-bearings/" },
+]
+applies_to = "Team Durango DEX410 V5 (#TD102036)"
+fits = [
+  { kit = "kit/team-durango/dex410", releases = ["release/team-durango/TD102036"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Team Durango DEX410 V5 (#TD102036)" },
 ]

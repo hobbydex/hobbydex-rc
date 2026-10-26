@@ -5,8 +5,12 @@ name = "Losi 8ight 1/8th Rubber Shielded Bearing Kit"
 category = "bearing"
 category_source = "curated"
 seal = "rubber"
-applies_to = "Losi 8ight 1/8th"
 notes = "Contents not recorded: the description lists no sizes."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los025r-losi-8ight-1-8th-rubber-shielded-bearing-kit/" },
+]
+applies_to = "Losi 8ight 1/8th"
+fits = [
+  { kit = "kit/losi/8ight", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight 1/8th" },
+  { kit = "kit/tlr/8ight", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Losi 8ight 1/8th" },
 ]
