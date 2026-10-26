@@ -36,9 +36,13 @@ fits = [
   { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp-fw05ske-p" },
   { kit = "kit/kyosho/v-one-sr", type = "direct", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
   { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+  { kit = "kit/kyosho/v-one-r", type = "direct", source = "doc/kyosho/31011-v-one-p" },
+  { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31584-fw05rr-kce-m" },
 ]
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2x11", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/92051.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/92051.html" },
+]
