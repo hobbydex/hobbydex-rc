@@ -8,5 +8,12 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-crx2-rtr-piece-detachees/" },
 ]
 applies_to = ["CRX2 RTR", "NXT RR 2.0", "NXT RR RTR", "ROGT SP", "XMID RTR"]
+fits = [
+  { kit = "kit/hobbytech/crx2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech CRX2 RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-2-0", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR 2.0 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogt-sp", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGT SP (link_car_kits.py)" },
+  { kit = "kit/hobbytech/xmid", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the XMID RTR (link_car_kits.py)" },
+]
 category = "radio"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"

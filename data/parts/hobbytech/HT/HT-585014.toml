@@ -8,5 +8,11 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-gp2-0-pieces-detachees/" },
 ]
 applies_to = ["NXT GP2.0", "NXT XR", "SPIRIT NXTE RR20", "Spirit NXTE RR21"]
+fits = [
+  { kit = "kit/hobbytech/nxt-gp2-0", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT GP2.0 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-xr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT XR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/spirit-nxte-rr20", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the SPIRIT NXTE RR20 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/spirit-nxte-rr21", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Spirit NXTE RR21 (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "shock"

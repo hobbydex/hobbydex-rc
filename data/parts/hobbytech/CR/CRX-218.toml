@@ -8,5 +8,9 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-crx2-rtr-piece-detachees/" },
 ]
 applies_to = ["CRX2 RTR", "CRX2.1 KIT", "CRX2.1"]
+fits = [
+  { kit = "kit/hobbytech/crx2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech CRX2 RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/crx2-1", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the CRX2.1 KIT (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "rod-end"

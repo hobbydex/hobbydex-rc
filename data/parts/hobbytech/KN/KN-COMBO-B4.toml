@@ -8,6 +8,9 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/bxr-s1-pieces-detachees/" },
 ]
 applies_to = ["BXR S1 RTR"]
+fits = [
+  { kit = "kit/hobbytech/bxr-s1", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech BXR S1 RTR (link_car_kits.py)" },
+]
 category = "esc"
 motor_type = "brushless"
 waterproof = true

@@ -10,5 +10,10 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-crx-rtr-piece-detachees/" },
 ]
 applies_to = ["CRX RTR", "CRX V1", "CRX V2"]
+fits = [
+  { kit = "kit/hobbytech/crx", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech CRX RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/crx-v1", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the CRX V1 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/crx-v2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the CRX V2 (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "screw"

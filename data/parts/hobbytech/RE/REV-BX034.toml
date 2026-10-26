@@ -8,5 +8,8 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-bxr-s2-rtr-piece-detachees/" },
 ]
 applies_to = ["BXR S2 RTR", "BXR S2 KIT"]
+fits = [
+  { kit = "kit/hobbytech/bxr-s2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech BXR S2 RTR (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "differential"

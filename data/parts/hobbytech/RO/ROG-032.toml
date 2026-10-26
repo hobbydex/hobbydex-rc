@@ -8,5 +8,12 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-rogb-piece-detachees/" },
 ]
 applies_to = ["ROGB", "ROGB V2 RTR", "ROGT GR RTR", "ROGT RD RTR", "ROGT SP"]
+fits = [
+  { kit = "kit/hobbytech/rogb", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech ROGB (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogb-v2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGB V2 RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogt-gr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGT GR RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogt-rd", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGT RD RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogt-sp", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGT SP (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "spur-gear"

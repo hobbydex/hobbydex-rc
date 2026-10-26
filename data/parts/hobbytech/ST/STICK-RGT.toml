@@ -8,5 +8,9 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-rogt-gr-rtr-1-rogt-rd-rtr-piece-detachees/" },
 ]
 applies_to = ["ROGT GR RTR", "ROGT RD RTR"]
+fits = [
+  { kit = "kit/hobbytech/rogt-gr", type = "direct", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech ROGT GR RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogt-rd", type = "direct", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGT RD RTR (link_car_kits.py)" },
+]
 category = "decal"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"

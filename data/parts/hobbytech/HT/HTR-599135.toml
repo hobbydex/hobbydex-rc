@@ -8,5 +8,11 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-rr-rtr-piece-detachees/" },
 ]
 applies_to = ["NXT RR RTR", "ROGB", "ROGB V2 RTR", "NXT RR RACE GP"]
+fits = [
+  { kit = "kit/hobbytech/nxt-rr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT RR RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogb", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGB (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogb-v2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGB V2 RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-race-gp", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR RACE GP (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "shock"

@@ -8,5 +8,14 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-bxr-s2-rtr-piece-detachees/" },
 ]
 applies_to = ["BXR S2 RTR", "DB8 RTR", "ROGB", "ROGT GR RTR", "ROGT RD RTR", "ROGT SP", "BXR S2 KIT", "SL DB8 OR", "SL DB8 OR RTR"]
+fits = [
+  { kit = "kit/hobbytech/bxr-s2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech BXR S2 RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/db8", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the DB8 RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogb", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGB (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogt-gr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGT GR RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogt-rd", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGT RD RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogt-sp", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGT SP (link_car_kits.py)" },
+  { kit = "kit/hobbytech/sl-db8-or", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the SL DB8 OR (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "spur-gear"

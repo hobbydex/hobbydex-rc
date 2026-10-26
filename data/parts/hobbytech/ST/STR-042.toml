@@ -8,5 +8,12 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-ep-xtrem-pieces-detachees/" },
 ]
 applies_to = ["NXT EP XTREM", "NXT EVO 4S", "NXT EVO V2", "NXT GP2.0", "NXT RR RTR"]
+fits = [
+  { kit = "kit/hobbytech/nxt-ep-xtrem", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT EP XTREM (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-evo-4s", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT EVO 4S (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-evo-v2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT EVO V2 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-gp2-0", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT GP2.0 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR RTR (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "suspension"
