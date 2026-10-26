@@ -12,3 +12,6 @@ fits = [
 ]
 pack_qty_basis = "name"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3x8x0.8", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
