@@ -842,6 +842,16 @@ leads, in the same plug vocabulary as `connector` (bullets: "3.5mm bullet",
 and motor parts only, from the maker's spec table. A plug the maker names
 that has no spec (6.5 mm bullets) takes no value.
 
+`receiver_connector` is the servo plug on the lead that goes to the receiver
+(the throttle lead of an ESC, the lead of a light controller): "JR", "Futaba"
+or "JR/Futaba" (one plug sold for both radios), the servo plug names `connector`
+uses, mapped to spec/connector/servo-jr and servo-futaba. It is set on esc and
+light parts only, from the maker's wording on that lead ("the receiver lead is
+the JR type"). The maker's programming cables (JR plugs at both ends), USB and
+program-box interfaces, transmitters, telemetry and sensor leads are not the
+receiver lead; a plug the maker does not name gives no value. tools/validate.py
+checks the name and its spec.
+
 `scales` (a list of scales, ["1/10", "1/12"]) is the vehicle scales the maker
 designates an electronic part for ("Scale 1/16th, 1/18th" in the spec table,
 or "Applications: 1/10 touring, 1/12 ..."). It is set on esc, motor, servo and
