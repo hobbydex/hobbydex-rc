@@ -3,7 +3,6 @@ brand = "brand/hpi"
 number = "73915"
 name = "MAIN CHASSIS 2.5mm (BLUE/2pcs)"
 pack_qty = 2
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/73915" },
 ]
@@ -12,5 +11,6 @@ fits = [
   { kit = "kit/hpi/savage-atv", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/73917" },
   { kit = "kit/hpi/savage-x", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/73917" },
 ]
+pack_qty_basis = "name"
 category = "chassis"
 color = "blue"

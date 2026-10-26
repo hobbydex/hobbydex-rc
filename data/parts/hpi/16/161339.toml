@@ -1,0 +1,16 @@
+id = "part/hpi/161339"
+brand = "brand/hpi"
+number = "161339"
+name = "Pinion Gear 21T (48DP/2.3mm)"
+links = [
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161339" },
+]
+fits = [
+  { kit = "kit/hpi/vectr4", type = "direct", source = "doc/hpi/part-pages" },
+]
+category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+teeth = 21
+pitch_dp = 48

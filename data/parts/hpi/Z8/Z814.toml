@@ -3,13 +3,16 @@ brand = "brand/hpi"
 number = "Z814"
 name = "ALUMINUM WASHER 3x6x0.75mm (PURPLE/10pcs)"
 pack_qty = 10
-pack_qty_basis = "name"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/Z814" },
 ]
 fits = [
   { kit = "kit/hpi/pro-4", type = "direct", source = "doc/hpi/part-pages" },
 ]
+pack_qty_basis = "name"
 category = "washer-shim"
 color = "purple"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/washer/3x6x0.75", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
