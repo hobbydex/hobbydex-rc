@@ -6,6 +6,9 @@ gtin = "5404039256028"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23828-fmsc21122-110-canyon-yk10-ball-bearing-12184-apsc21122-5404039256028", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/fcx10", releases = ["release/fms/FMS11041RS-BK"], type = "replaces", notes = "Named for Canyon in the beez2b title" },
+]
 equivalent_to = [
   { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

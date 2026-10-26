@@ -6,6 +6,9 @@ gtin = "5404039258305"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/24210-fmsc4227-118-bronco-u4-lipo-battery-2s-74v-2000mah-20c-xt60-5404039258305", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/fsc18", releases = ["release/fms/FMS11871RS-24-BL", "release/fms/FMS11871RS-25-BL", "release/fms/FMS11871RTR-24", "release/fms/FMS11871RTR-24-BL", "release/fms/FMS11871RTR-25", "release/fms/FMS11871RTR-25-BL"], type = "replaces", notes = "Named for Bronco U4 in the beez2b title" },
+]
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]

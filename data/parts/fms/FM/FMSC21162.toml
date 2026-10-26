@@ -6,6 +6,9 @@ gtin = "5404039256424"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23868-fmsc21162-110-canyon-yk10-40-e-clip-apsc21162-5404039256424", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/fcx10", releases = ["release/fms/FMS11041RS-BK"], type = "replaces", notes = "Named for Canyon in the beez2b title" },
+]
 category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },

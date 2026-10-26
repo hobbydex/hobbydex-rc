@@ -6,6 +6,10 @@ gtin = "5404039252679"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23108-fmsc71155-17-u4-funhaver-m3-flange-lock-nuts-apsc71155-5404039252679", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/ford-bronco-u4-funhaver-24", releases = ["release/fms/FMS10702RS-24"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
+  { kit = "kit/fms/ford-bronco-u4-funhaver-25", releases = ["release/fms/FMS10702RS-25"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
+]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },

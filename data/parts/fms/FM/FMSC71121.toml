@@ -6,6 +6,10 @@ gtin = "5404039252334"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23302-fmsc71121-17-u4-funhaver-ball-bearing-21154-apsc71121-5404039252334", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/ford-bronco-u4-funhaver-24", releases = ["release/fms/FMS10702RS-24"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
+  { kit = "kit/fms/ford-bronco-u4-funhaver-25", releases = ["release/fms/FMS10702RS-25"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
+]
 equivalent_to = [
   { spec = "spec/bearing/15x21x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

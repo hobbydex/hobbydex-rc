@@ -6,6 +6,10 @@ gtin = "5404039253096"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23206-fmsc72004-17-u4-funhaver-ec5-loop-connector-jumper-apsc72004-5404039253096", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/ford-bronco-u4-funhaver-24", releases = ["release/fms/FMS10702RS-24"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
+  { kit = "kit/fms/ford-bronco-u4-funhaver-25", releases = ["release/fms/FMS10702RS-25"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
+]
 category = "wire"
 equivalent_to = [
   { spec = "spec/connector/ec5", match = "functional" },
