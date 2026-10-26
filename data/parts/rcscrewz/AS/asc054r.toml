@@ -11,10 +11,10 @@ includes = [
   { spec = "spec/bearing/8x16x5" },
 ]
 applies_to = "Associated Rival MT (#20511)"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated Rival MT (#20511) (link_car_kits.py)", releases = ["release/team-associated/20511"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc054r-rubber-shielded-bearing-kit-for-the-associated-rival-mt-20511/" },
-]
-fits = [
-  { kit = "kit/team-associated/rival", releases = ["release/team-associated/20511"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated Rival MT (#20511) (link_car_kits.py)" },
 ]

@@ -11,10 +11,10 @@ includes = [
   { spec = "spec/bearing/8x12x3.5" },
 ]
 applies_to = "Associated Reflex 14T 1/14th (#20176)"
+fits = [
+  { kit = "kit/team-associated/reflex-14t", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated Reflex 14T 1/14th (#20176) (link_car_kits.py)", releases = ["release/team-associated/20176"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc099b-associated-reflex-14t-1-14th-20176-c-compatible-rubber-shielded-bearing-kit/" },
-]
-fits = [
-  { kit = "kit/team-associated/reflex-14t", releases = ["release/team-associated/20176"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated Reflex 14T 1/14th (#20176) (link_car_kits.py)" },
 ]

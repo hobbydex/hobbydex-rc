@@ -14,10 +14,10 @@ includes = [
   { spec = "spec/bearing/12x18x4" },
 ]
 applies_to = "Kyosho FW-05R 1/10th Nitro (#31581)"
+fits = [
+  { kit = "kit/kyosho/fw-05r", releases = ["release/kyosho/31581"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Kyosho FW-05R 1/10th Nitro (#31581) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/kyo043b-metal-shielded-bearing-kit-for-the-kyosho-fw-05r-1-10th-nitro-31581/" },
-]
-fits = [
-  { kit = "kit/kyosho/fw-05r", type = "replaces", source = "doc/rcscrewz/store", notes = "(link_car_kits.py)" },
 ]
