@@ -110,7 +110,10 @@ ENUMS = {
 # servo spec fields (docs/schema.md "Servos"): bearings, bearing_kind, dead_band_us, frequency_hz
 SERVO_FIELDS = ("bearings", "bearing_kind", "dead_band_us", "frequency_hz")
 SERVO_BEARING_KIND = {"ball", "bushing"}
-ESC_PROP_FIELDS = ("motor_type", "bec_v", "bec_a", "waterproof", "motor_limit_t", "motor_limit_kv", "nimh_cells", "programming", "resistance_mohm")   # docs/schema.md "ESCs"
+ESC_PROP_FIELDS = ("motor_type", "bec_v", "bec_a", "motor_limit_t", "motor_limit_kv", "nimh_cells", "programming", "resistance_mohm")   # docs/schema.md "ESCs"
+# waterproof: the maker's wording on these categories; scales: the vehicle scales a maker names for an electronic part (docs/schema.md "scales")
+WATERPROOF_CATEGORIES = ("esc", "motor", "servo", "radio")
+SCALES_CATEGORIES = ("esc", "motor", "servo", "battery")
 ESC_PROGRAMMING = {"card", "box", "app", "bluetooth", "wifi", "buttons", "transmitter"}
 ENGINE_NUM = {"displacement_cc": (0.5, 120), "bore_mm": (5, 60), "stroke_mm": (5, 60), "output_hp": (0.05, 20), "output_rpm": (1000, 60000)}
 ENGINE_FIELDS = set(ENGINE_NUM) | {"engine_class", "rpm_range", "fuel"}   # bore_mm is also a shock's bore: checked on engines only
@@ -481,6 +484,23 @@ def check_connectors(docs, ids, errors):
         if any(str(e.get("spec", "")).startswith("spec/connector/") for e in d.get("equivalent_to", []) if isinstance(e, dict)):
             errors.append(f"{path}: has connectors and an equivalent_to connector spec; a lead lists its plugs only in connectors")
 
+def check_plugs(docs, ids, errors):
+    """`motor_connector` (the plug on an ESC's motor wires, or on a motor's leads) names a PLUG_SPEC plug that has its
+    connector spec, and is on esc and motor parts only (docs/schema.md "ESCs"). The battery-side `connector` is not
+    checked yet: some values predate PLUG_SPEC (JST-SYP, T-Plug, TRX) and are to be cleaned up first."""
+    for path, kind, d in docs:
+        if kind != "part" or "motor_connector" not in d:
+            continue
+        n = d["motor_connector"]
+        if d.get("category") not in ("esc", "motor"):
+            errors.append(f"{path}: motor_connector only on esc and motor parts, not {d.get('category')}")
+        if not isinstance(n, str) or n not in PLUG_SPEC:
+            errors.append(f"{path}: motor_connector {n!r} is not a plug name (validate.py PLUG_SPEC)")
+            continue
+        for slug in (PLUG_SPEC[n],) if isinstance(PLUG_SPEC[n], str) else PLUG_SPEC[n]:
+            if f"spec/connector/{slug}" not in ids:
+                errors.append(f"{path}: motor_connector {n!r} has no connector spec spec/connector/{slug}")
+
 def main():
     ENUMS["part.category"] = categories()
     errors, ids, docs = [], {}, []
@@ -818,6 +838,17 @@ def main():
             errors.append(f"{path}: {', '.join(k for k in ESC_PROP_FIELDS if k in d and k != 'motor_type')} only on ESCs (category esc)")
         if kind == "part" and "motor_type" in d and d.get("category") not in ("esc", "motor"):
             errors.append(f"{path}: motor_type only on ESCs and motors (category esc or motor)")
+        if kind == "part" and "waterproof" in d:
+            if d.get("category") not in WATERPROOF_CATEGORIES:
+                errors.append(f"{path}: waterproof only on {', '.join(WATERPROOF_CATEGORIES)} parts (docs/schema.md \"ESCs\")")
+            elif not isinstance(d["waterproof"], bool):
+                errors.append(f"{path}: waterproof should be true or false")
+        if kind == "part" and "scales" in d:
+            sc = d["scales"]
+            if d.get("category") not in SCALES_CATEGORIES:
+                errors.append(f"{path}: scales only on {', '.join(SCALES_CATEGORIES)} parts (docs/schema.md \"scales\")")
+            elif not (isinstance(sc, list) and sc and len(set(sc)) == len(sc) and all(isinstance(x, str) and SCALE_RE.fullmatch(x) for x in sc)):
+                errors.append(f"{path}: scales {sc!r} should be a list of scales like [\"1/10\", \"1/12\"]")
         if kind == "part" and d.get("category") == "esc":
             def _isnum(x, lo, hi):
                 return isinstance(x, (int, float)) and not isinstance(x, bool) and lo <= x <= hi
@@ -827,8 +858,6 @@ def main():
             ba = d.get("bec_a")
             if ba is not None and not _isnum(ba, 0.1, 50):
                 errors.append(f"{path}: bec_a {ba!r} should be the BEC current in A (0.1..50)")
-            if "waterproof" in d and not isinstance(d["waterproof"], bool):
-                errors.append(f"{path}: waterproof should be true or false")
             mlt = d.get("motor_limit_t")
             if mlt is not None and not _isnum(mlt, 1, 80):
                 errors.append(f"{path}: motor_limit_t {mlt!r} should be the lowest motor turns allowed (1..80)")
@@ -1079,6 +1108,7 @@ def main():
     check_makes(docs, errors)
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
+    check_plugs(docs, ids, errors)
     check_names_no_brand(docs, errors)
     check_former_names(docs, errors)
     check_case_clashes(errors)
