@@ -6,4 +6,8 @@ gtin = "5404039257582"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/24170-fmsc3249v2-110-lc80-ovr-pro-v2-servo-saver-set-with-horn-arm-v2-5404039257582", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/fcx10", releases = ["release/fms/FMS11042RS-GN-BL"], type = "replaces", notes = "Named for LC80 OVR / Pro V2 in the beez2b title" },
+  { kit = "kit/fms/fcx10pro", releases = ["release/fms/FMS11061RS-BU-PRO2"], type = "replaces", notes = "Named for LC80 OVR / Pro V2 in the beez2b title" },
+]
 category = "steering"

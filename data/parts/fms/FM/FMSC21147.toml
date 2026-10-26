@@ -6,6 +6,9 @@ gtin = "5404039256271"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23853-fmsc21147-110-canyon-yk10-flat-head-hex-screw-m310-apsc21147-5404039256271", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/fcx10", releases = ["release/fms/FMS11041RS-BK"], type = "replaces", notes = "Named for Canyon in the beez2b title" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

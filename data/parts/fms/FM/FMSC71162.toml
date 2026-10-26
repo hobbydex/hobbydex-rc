@@ -6,6 +6,10 @@ gtin = "5404039252730"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23132-fmsc71162-17-u4-funhaver-shims-63105-apsc71162-5404039252730", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/ford-bronco-u4-funhaver-24", releases = ["release/fms/FMS10702RS-24"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
+  { kit = "kit/fms/ford-bronco-u4-funhaver-25", releases = ["release/fms/FMS10702RS-25"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
+]
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/3.1x6x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },

@@ -6,6 +6,9 @@ gtin = "5404039256196"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23845-fmsc21139-110-canyon-yk10-button-head-screw-m316-apsc21139-5404039256196", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/fcx10", releases = ["release/fms/FMS11041RS-BK"], type = "replaces", notes = "Named for Canyon in the beez2b title" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

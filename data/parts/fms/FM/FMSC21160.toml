@@ -6,6 +6,9 @@ gtin = "5404039256400"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/23866-fmsc21160-110-canyon-yk10-shims-85105-apsc21160-5404039256400", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/fcx10", releases = ["release/fms/FMS11041RS-BK"], type = "replaces", notes = "Named for Canyon in the beez2b title" },
+]
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5.1x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },

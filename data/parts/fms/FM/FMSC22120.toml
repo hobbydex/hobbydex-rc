@@ -6,6 +6,10 @@ gtin = "5404039250217"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/22748-fmsc22120-110-ford-100-lipo-battery-74v-3300mah-30c-apsc22120-5404039250217", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/fms/ford-f100", releases = ["release/fms/FMS11023RSBG-BL", "release/fms/FMS11023RSBK-BL"], type = "replaces", notes = "Named for Ford 100 in the beez2b title" },
+  { kit = "kit/fms/ford-f100-monster-truck", releases = ["release/fms/FMS11023RSBK", "release/fms/FMS11023RSFB", "release/fms/FMS11023RSHR", "release/fms/FMS11023RTR-BK", "release/fms/FMS11023RTR-FB", "release/fms/FMS11023RTR-HR"], type = "replaces", notes = "Named for Ford 100 in the beez2b title" },
+]
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-3300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]
