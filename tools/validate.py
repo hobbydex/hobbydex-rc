@@ -114,6 +114,9 @@ ESC_PROP_FIELDS = ("motor_type", "bec_v", "bec_a", "motor_limit_t", "motor_limit
 # waterproof: the maker's wording on these categories; scales: the vehicle scales a maker names for an electronic part (docs/schema.md "scales")
 WATERPROOF_CATEGORIES = ("esc", "motor", "servo", "radio")
 SCALES_CATEGORIES = ("esc", "motor", "servo", "battery")
+# receiver_connector: the servo plug on an ESC or light controller's lead to the receiver (docs/schema.md "ESCs")
+RECEIVER_CATEGORIES = ("esc", "light")
+RECEIVER_PLUGS = {"JR", "Futaba", "JR/Futaba"}
 ESC_PROGRAMMING = {"card", "box", "app", "bluetooth", "wifi", "buttons", "transmitter"}
 ENGINE_NUM = {"displacement_cc": (0.5, 120), "bore_mm": (5, 60), "stroke_mm": (5, 60), "output_hp": (0.05, 20), "output_rpm": (1000, 60000)}
 ENGINE_FIELDS = set(ENGINE_NUM) | {"engine_class", "rpm_range", "fuel"}   # bore_mm is also a shock's bore: checked on engines only
@@ -456,7 +459,7 @@ PLUG_SPEC = {
     "Deans": "deans", "Tamiya": "tamiya", "Mini Tamiya": "tamiya-mini", "JST-RCY": "jst-rcy", "JST-XH": "jst-xh",
     "JR": "servo-jr", "Futaba": "servo-futaba", "JR/Futaba": ("servo-jr", "servo-futaba"), "Traxxas iD": "traxxas-trx-id", "Traxxas high-current": "traxxas-high-current",
     "2mm bullet": "bullet-2mm", "3.5mm bullet": "bullet-3.5mm", "4mm bullet": "bullet-4mm", "5mm bullet": "bullet-5mm",
-    "6mm bullet": "bullet-6mm", "8mm bullet": "bullet-8mm", "4mm banana": "banana-4mm",
+    "6mm bullet": "bullet-6mm", "6.5mm bullet": "bullet-6.5mm", "8mm bullet": "bullet-8mm", "4mm banana": "banana-4mm",
 }
 
 def check_connectors(docs, ids, errors):
@@ -500,6 +503,22 @@ def check_plugs(docs, ids, errors):
         for slug in (PLUG_SPEC[n],) if isinstance(PLUG_SPEC[n], str) else PLUG_SPEC[n]:
             if f"spec/connector/{slug}" not in ids:
                 errors.append(f"{path}: motor_connector {n!r} has no connector spec spec/connector/{slug}")
+
+def check_receiver_plugs(docs, ids, errors):
+    """`receiver_connector` (the servo plug on a lead to the receiver: JR, Futaba or JR/Futaba) is on esc and light parts
+    only, and names one of those plugs with its servo connector spec (docs/schema.md "ESCs")."""
+    for path, kind, d in docs:
+        if kind != "part" or "receiver_connector" not in d:
+            continue
+        n = d["receiver_connector"]
+        if d.get("category") not in RECEIVER_CATEGORIES:
+            errors.append(f"{path}: receiver_connector only on {', '.join(RECEIVER_CATEGORIES)} parts, not {d.get('category')}")
+        if n not in RECEIVER_PLUGS:
+            errors.append(f"{path}: receiver_connector {n!r} is not JR, Futaba or JR/Futaba")
+            continue
+        for slug in (PLUG_SPEC[n],) if isinstance(PLUG_SPEC[n], str) else PLUG_SPEC[n]:
+            if f"spec/connector/{slug}" not in ids:
+                errors.append(f"{path}: receiver_connector {n!r} has no connector spec spec/connector/{slug}")
 
 def main():
     ENUMS["part.category"] = categories()
@@ -1109,6 +1128,7 @@ def main():
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
     check_plugs(docs, ids, errors)
+    check_receiver_plugs(docs, ids, errors)
     check_names_no_brand(docs, errors)
     check_former_names(docs, errors)
     check_case_clashes(errors)
