@@ -4,6 +4,7 @@ number = "060-0038-00"
 name = "1:18th SCALE MOTOR, INRUNNER, 0808-5300KV"
 gtin = "819326010200"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 kv = 5300
 lipo_cells = [2, 3]
@@ -11,7 +12,11 @@ weight_g = 50
 diameter_mm = 20
 length_mm = 38
 shaft_mm = 2
-mount_holes = [{ thread = "M2.5", circle_mm = 12.7 }, { thread = "M2.5", circle_mm = 14 }, { thread = "M2.5", circle_mm = 15.88 }]
+mount_holes = [
+  { thread = "M2.5", circle_mm = 12.7 },
+  { thread = "M2.5", circle_mm = 14 },
+  { thread = "M2.5", circle_mm = 15.88 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-2038-2mm", match = "functional", notes = "Derived from Castle's dimensions (diameter 20 mm, length 38 mm, shaft 2 mm)" },
 ]

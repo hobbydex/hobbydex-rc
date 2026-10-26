@@ -3,13 +3,16 @@ brand = "brand/surpass-hobby"
 number = "KK-F540-3930KV"
 name = "KK F540 3930KV waterproof brushless motor"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 kv = 3930
 diameter_mm = 35.8
 length_mm = 50
 shaft_mm = 3.175
 weight_g = 148
-mount_holes = [{ thread = "M3", count = 6, circle_mm = 25 }]
+mount_holes = [
+  { thread = "M3", count = 6, circle_mm = 25 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-3650-3.175mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 35.8 mm, length 50 mm, shaft 3.175 mm)" },
 ]

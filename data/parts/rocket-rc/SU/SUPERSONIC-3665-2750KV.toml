@@ -3,13 +3,16 @@ brand = "brand/rocket-rc"
 number = "SUPERSONIC-3665-2750KV"
 name = "Supersonic 3665 2750KV brushless motor"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 kv = 2750
 diameter_mm = 36
 length_mm = 65
 shaft_mm = 5
 weight_g = 275
-mount_holes = [{ thread = "M3", count = 6, circle_mm = 25 }]
+mount_holes = [
+  { thread = "M3", count = 6, circle_mm = 25 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-3665-5mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 36 mm, length 65 mm, shaft 5 mm)" },
 ]

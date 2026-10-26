@@ -4,8 +4,11 @@ number = "MZ603"
 name = "XSPEED 120 Brushless Motor"
 gtin = "4548565356591"
 category = "motor"
+motor_type = "brushless"
 documents = ["doc/kyosho/mz603-product-page"]
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mz603.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/mz603.html" },
+]

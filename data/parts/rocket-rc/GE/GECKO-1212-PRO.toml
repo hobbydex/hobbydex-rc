@@ -3,6 +3,7 @@ brand = "brand/rocket-rc"
 number = "GECKO-1212-PRO"
 name = "GECKO 1212 PRO 3500KV sensorless brushless motor"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 sensored = false
 kv = 3500
@@ -10,7 +11,10 @@ diameter_mm = 15.8
 length_mm = 21
 shaft_mm = 2
 weight_g = 16.4
-mount_holes = [{ thread = "M2", count = 2, circle_mm = 12.5 }, { thread = "M2", count = 2, circle_mm = 9 }]
+mount_holes = [
+  { thread = "M2", count = 2, circle_mm = 12.5 },
+  { thread = "M2", count = 2, circle_mm = 9 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-1621-2mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 15.8 mm, length 21 mm, shaft 2 mm)" },
 ]

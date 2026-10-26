@@ -4,8 +4,11 @@ number = "MZ305B"
 name = "Motor Case Set (LM)"
 gtin = "4548565442539"
 category = "motor"
+motor_type = "brushless"
 documents = ["doc/kyosho/mz305b-product-page"]
 fits = [
   { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/mini-z-mr-04-rwd-readyset-2025-spare-and-option-parts" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mz305b.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/mz305b.html" },
+]

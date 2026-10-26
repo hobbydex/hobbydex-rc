@@ -3,6 +3,7 @@ brand = "brand/surpass-hobby"
 number = "KK-3670-1700KV"
 name = "KK 3670 1700KV waterproof brushless motor"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 sensored = false
 kv = 1700
@@ -10,7 +11,9 @@ diameter_mm = 36
 length_mm = 70
 shaft_mm = 5
 weight_g = 267
-mount_holes = [{ thread = "M3", count = 6, circle_mm = 25 }]
+mount_holes = [
+  { thread = "M3", count = 6, circle_mm = 25 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-3670-5mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 36 mm, length 70 mm, shaft 5 mm)" },
 ]

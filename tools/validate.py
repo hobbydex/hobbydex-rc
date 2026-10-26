@@ -812,8 +812,12 @@ def main():
         se = d.get("sensored") if kind == "part" else None
         if se is not None and (not isinstance(se, bool) or d.get("category") not in ("motor", "esc", "electronics")):
             errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category esc; motor and electronics systems too)")
-        if kind == "part" and any(k in d for k in ESC_PROP_FIELDS) and d.get("category") != "esc":
-            errors.append(f"{path}: {', '.join(k for k in ESC_PROP_FIELDS if k in d)} only on ESCs (category esc)")
+        if kind == "part" and d.get("category") == "motor" and d.get("motor_type") == "both":
+            errors.append(f"{path}: motor_type both is for ESCs only (a motor is brushed or brushless)")
+        if kind == "part" and any(k in d for k in ESC_PROP_FIELDS if k != "motor_type") and d.get("category") != "esc":
+            errors.append(f"{path}: {', '.join(k for k in ESC_PROP_FIELDS if k in d and k != 'motor_type')} only on ESCs (category esc)")
+        if kind == "part" and "motor_type" in d and d.get("category") not in ("esc", "motor"):
+            errors.append(f"{path}: motor_type only on ESCs and motors (category esc or motor)")
         if kind == "part" and d.get("category") == "esc":
             def _isnum(x, lo, hi):
                 return isinstance(x, (int, float)) and not isinstance(x, bool) and lo <= x <= hi
