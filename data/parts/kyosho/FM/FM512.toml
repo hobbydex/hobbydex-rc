@@ -4,4 +4,9 @@ number = "FM512"
 name = "FM512"
 gtin = "4955439772713"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/fm512.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/fm512.html" },
+]
+fits = [
+  { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31283-evolva-p" },
+]

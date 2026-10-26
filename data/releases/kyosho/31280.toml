@@ -9,3 +9,8 @@ status = "released"
 seen_by = "2010-09"
 seen_by_source = "https://web.archive.org/web/20100911060342/http://kyosho.com:80/jpn/support/instructionmanual/buggy/pdf/31280_Inferno_neo_IM.pdf"
 documents = ["doc/kyosho/31280-inferno-neo-qsa", "doc/kyosho/31280-inferno-neo-mm", "doc/kyosho/31280-inferno-neo-im", "doc/kyosho/ifb111-inferno-neo-body-set"]
+contains = [
+  { part = "part/kyosho/92696", role = "kit", source = "doc/kyosho/31280-inferno-neo-mm" },
+  { part = "part/kyosho/92985", role = "kit", source = "doc/kyosho/31280-inferno-neo-mm" },
+  { part = "part/kyosho/IF133", role = "kit", source = "doc/kyosho/31280-inferno-neo-mm" },
+]
