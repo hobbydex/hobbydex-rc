@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/flanged-8x16x5" },
 ]
 applies_to = "Associated RC8B4e Team 1/8th (#80946)"
+fits = [
+  { kit = "kit/team-associated/rc8b4", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated RC8B4e Team 1/8th (#80946) (link_car_kits.py)", releases = ["release/team-associated/80946"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc119b-associated-rc8b4e-team-1-8th-80946-metal-shielded-bearing-kit/" },

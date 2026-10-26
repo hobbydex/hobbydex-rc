@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Associated RC107T Team 1/10th (#70005)"
+fits = [
+  { kit = "kit/team-associated/rc10t7", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated RC107T Team 1/10th (#70005) (link_car_kits.py)", releases = ["release/team-associated/70005"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc170b-associated-rc107t-team-1-10th-70005-compatible-metal-shielded-bearing-kit/" },

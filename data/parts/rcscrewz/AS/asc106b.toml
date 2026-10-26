@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 applies_to = "Associated RC8B3.2e 1/8th (#ASC80940)"
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated RC8B3.2e 1/8th (#ASC80940) (link_car_kits.py)", releases = ["release/team-associated/80940"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc106b-associated-rc8b3-2e-1-8th-asc80940-metal-shielded-bearing-kit/" },

@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Associated DR10M / Team (#70029)"
+fits = [
+  { kit = "kit/team-associated/dr10", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated DR10M / Team (#70029) (link_car_kits.py)", releases = ["release/team-associated/70029"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc124-rubber-metal-buggy-shielded-bearing-kits-for-the-associated-dr10m-team-70029/" },

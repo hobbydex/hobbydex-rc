@@ -15,6 +15,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Tamiya TG10 MK.2 FZ Racing 1/10th (#44055)"
+fits = [
+  { kit = "kit/tamiya/tg10-mk-2", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Tamiya TG10 MK.2 FZ Racing 1/10th (#44055) (link_car_kits.py)", releases = ["release/tamiya/44055"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tam289b-tamiya-tg10-mk-2-fz-racing-1-10th-44055-compatible-metal-shielded-bearing-kit/" },

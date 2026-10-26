@@ -11,6 +11,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "CEN HL150 1/10th (#8965)"
+fits = [
+  { kit = "kit/cen/mt-series", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the CEN HL150 1/10th (#8965) (link_car_kits.py)", releases = ["release/cen/8965"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/cen033r-rubber-shielded-bearing-kit-for-the-cen-hl150-1-10th-8965/" },

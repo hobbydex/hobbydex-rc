@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Tamiya DB01-R (#84100)"
+fits = [
+  { kit = "kit/tamiya/db01", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Tamiya DB01-R (#84100) (link_car_kits.py)", releases = ["release/tamiya/84100"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tam130r-rubber-shielded-bearing-kit-for-the-tamiya-db01-r-84100/" },

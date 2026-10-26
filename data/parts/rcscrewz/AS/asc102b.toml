@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Associated TC7.2 (#ASC30122)"
+fits = [
+  { kit = "kit/team-associated/tc7", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated TC7.2 (#ASC30122) (link_car_kits.py)", releases = ["release/team-associated/30122"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc102b-associated-tc7-2-asc30122-metal-shielded-bearing-kit/" },

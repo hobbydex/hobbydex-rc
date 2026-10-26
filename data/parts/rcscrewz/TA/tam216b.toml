@@ -10,6 +10,9 @@ includes = [
   { spec = "spec/bearing/6x12x4" },
 ]
 applies_to = "Tamiya Cascadia Evo 1/14th (#56340)"
+fits = [
+  { kit = "kit/tamiya/rc-tractor-truck-1-14", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Tamiya Cascadia Evo 1/14th (#56340) (link_car_kits.py)", releases = ["release/tamiya/56340"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tam216b-tamiya-1-14-cascadia-evo-1-14th-metal-shielded-bearing/" },

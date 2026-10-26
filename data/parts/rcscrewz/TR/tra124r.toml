@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/8x12x3.5" },
 ]
 applies_to = "Traxxas TRX4 MT 1/18th Ford F-150 (#98044-1)"
+fits = [
+  { kit = "kit/traxxas/trx-4mt", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Traxxas TRX4 MT 1/18th Ford F-150 (#98044-1) (link_car_kits.py)", releases = ["release/traxxas/98044-1"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tra124r-traxxas-trx4-mt-1-18th-ford-f-150-98044-1-compatible-rubber-shielded-bearing-kit/" },

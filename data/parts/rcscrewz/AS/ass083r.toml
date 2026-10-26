@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 applies_to = "Associated Nomad DB8 (ASC80941)"
+fits = [
+  { kit = "kit/team-associated/nomad-db8", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated Nomad DB8 (ASC80941) (link_car_kits.py)", releases = ["release/team-associated/80941"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/ass083r-associated-nomad-db8-rubber-shielded-bearin/" },

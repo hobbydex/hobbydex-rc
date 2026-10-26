@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Associated TC6.2 (ASC30109) Factory"
+fits = [
+  { kit = "kit/team-associated/tc6", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated TC6.2 (ASC30109) Factory (link_car_kits.py)", releases = ["release/team-associated/30109"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/ass058r-associated-tc6-2-asc30109-factory-rubber-shielded-bearing-kit/" },
