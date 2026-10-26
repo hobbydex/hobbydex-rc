@@ -4,6 +4,7 @@ number = "060-0039-00"
 name = "INRUNNER, 0808-8200KV MOTOR"
 gtin = "819326010217"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 kv = 8200
 lipo_cells = [2, 2]
@@ -11,7 +12,11 @@ weight_g = 50
 diameter_mm = 20
 length_mm = 38
 shaft_mm = 2
-mount_holes = [{ thread = "M2.5", circle_mm = 12.7 }, { thread = "M2.5", circle_mm = 14 }, { thread = "M2.5", circle_mm = 15.88 }]
+mount_holes = [
+  { thread = "M2.5", circle_mm = 12.7 },
+  { thread = "M2.5", circle_mm = 14 },
+  { thread = "M2.5", circle_mm = 15.88 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-2038-2mm", match = "functional", notes = "Derived from Castle's dimensions (diameter 20 mm, length 38 mm, shaft 2 mm)" },
 ]

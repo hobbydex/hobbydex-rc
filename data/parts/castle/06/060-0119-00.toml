@@ -3,6 +3,7 @@ brand = "brand/castle"
 number = "060-0119-00"
 name = "GHOST RC 1412-4300KV ADJUSTMENT ENDBELL MOTOR"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 kv = 4300
 lipo_cells = [2, 4]
@@ -10,7 +11,9 @@ weight_g = 325
 diameter_mm = 36
 length_mm = 68.2
 shaft_mm = 5
-mount_holes = [{ thread = "M3", circle_mm = 25.4 }]
+mount_holes = [
+  { thread = "M3", circle_mm = 25.4 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-3668-5mm", match = "functional", notes = "Derived from Castle's dimensions (diameter 36 mm, length 68.2 mm, shaft 5 mm)" },
 ]

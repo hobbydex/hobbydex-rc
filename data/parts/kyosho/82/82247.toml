@@ -5,6 +5,7 @@ name = "SPEED HOUSE BRAINZ 8 ESC"
 status = "discontinued"
 gtin = "4548565364985"
 category = "esc"
+motor_type = "brushless"
 fits = [
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
   { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
@@ -14,4 +15,6 @@ fits = [
   { kit = "kit/kyosho/fo-xx-ve", type = "direct", source = "doc/kyosho/34255-fo-xx-ve-2-0-spop" },
   { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34107-inferno-gt2-ve-rs-srt-demon-spop" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/82247.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/82247.html" },
+]

@@ -4,6 +4,7 @@ number = "060-0082-00"
 name = "4-POLE SENSORED BRUSHLESS 1717-1260KV MOTOR"
 gtin = "819326012402"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 sensored = true
 kv = 1260
@@ -12,7 +13,10 @@ weight_g = 597.6
 diameter_mm = 47.6
 length_mm = 85.1
 shaft_mm = 5
-mount_holes = [{ thread = "M3", circle_mm = 25.4 }, { thread = "M4", circle_mm = 25.4 }]
+mount_holes = [
+  { thread = "M3", circle_mm = 25.4 },
+  { thread = "M4", circle_mm = 25.4 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-4885-5mm", match = "functional", notes = "Derived from Castle's dimensions (diameter 47.6 mm, length 85.1 mm, shaft 5 mm)" },
 ]

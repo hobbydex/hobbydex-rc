@@ -3,6 +3,7 @@ brand = "brand/surpass-hobby"
 number = "KK-3674-1150KV"
 name = "KK 3674 1150KV waterproof brushless motor"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 sensored = false
 kv = 1150
@@ -10,7 +11,9 @@ diameter_mm = 36
 length_mm = 74
 shaft_mm = 5
 weight_g = 297
-mount_holes = [{ thread = "M3", count = 6, circle_mm = 25 }]
+mount_holes = [
+  { thread = "M3", count = 6, circle_mm = 25 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-3674-5mm", match = "functional", notes = "Derived from the brand's stated dimensions (O.D. 36 mm, length 74 mm, shaft 5 mm)" },
 ]

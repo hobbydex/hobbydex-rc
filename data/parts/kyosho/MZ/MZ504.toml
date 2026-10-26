@@ -5,9 +5,12 @@ name = "Brushless Motor"
 status = "discontinued"
 gtin = "4548565217489"
 category = "motor"
+motor_type = "brushless"
 documents = ["doc/kyosho/mz504-product-page"]
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-spare-and-option-parts" },
   { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/ma020ve-t12-sp" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mz504.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/mz504.html" },
+]

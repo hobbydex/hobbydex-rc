@@ -3,6 +3,7 @@ brand = "brand/mabuchi"
 number = "RS-540SH"
 name = "RS-540SH brushed motor"
 category = "motor"
+motor_type = "brushed"
 equivalent_to = [
   { spec = "spec/motor/brushed-540-3.175mm", match = "exact", source = "doc/community/2026-10-10-tamiya-stock-540-is-mabuchi-rs-540sh" },
 ]
@@ -11,5 +12,7 @@ diameter_mm = 35.8
 length_mm = 50
 shaft_mm = 3.17
 weight_g = 160
-mount_holes = [{ thread = "M3", count = 2, circle_mm = 25 }]
+mount_holes = [
+  { thread = "M3", count = 2, circle_mm = 25 },
+]
 documents = ["doc/mabuchi/rs-540rh-sh-datasheet"]

@@ -745,6 +745,11 @@ false for a sensorless one, as the maker states; a brushed motor has no
 sensors and carries no field). Bearing sizes go in `notes` (a motor is not
 a set, so no `includes`).
 
+`motor_type` is set by tools/link_esc_props.py, for motors and ESCs alike, from the first source that gives one
+clear answer: the name and notes (and a maker model code, such as Hobbywing's "BL", which is brushless), the part's
+own manuals (text layer, else OCR), the brand's own product page (dealer pages are never read), and last the
+`sensored` field, which implies brushless. Turns and kV never decide it.
+
 `mount_holes` gives the motor's mounting holes on its shaft end, as the
 maker states them: a list of hole patterns, each
 `{ thread = "M3", count = 2, circle_mm = 25 }`. `circle_mm` is the
@@ -797,7 +802,8 @@ sensored motors, false when it is sensorless only). A motor and ESC combo lists 
 ESC properties, all set only from the maker's own wording in the name or notes
 (tools/link_esc_props.py fills them; a value a part already has is never
 changed): `motor_type` (brushed | brushless | both, when the maker names
-both, "Brushed/Brushless"); `bec_v` (the BEC output voltage: one figure, or a
+both, "Brushed/Brushless"; the sources are as for motors, above, and `sensored`
+implies brushless); `bec_v` (the BEC output voltage: one figure, or a
 list of two or more when the maker says it is switchable, "6.0/7.4 V
 switchable" gives [6.0, 7.4]; a range such as "6.0-7.4 V" is not a list and
 is left out); `bec_a` (the BEC's continuous current in A, "BEC 6V/3A" gives

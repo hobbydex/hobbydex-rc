@@ -5,9 +5,12 @@ name = "Brushless Motor (XSPEED 85)"
 gtin = "4548565356607"
 notes = "Name transcribed by hand from the Spare Parts table of a Kyosho Mini-Z Buggy exploded view"
 category = "motor"
+motor_type = "brushless"
 fits = [
   { kit = "kit/kyosho/mini-z-buggy", type = "direct", source = "doc/kyosho/32292-mini-z-buggy-mb-010ve-2-0-sp-spare-and-option-parts" },
   { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
   { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/32180-ma-030evo-sp" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mz604.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/mz604.html" },
+]

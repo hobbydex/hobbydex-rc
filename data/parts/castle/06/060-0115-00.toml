@@ -4,6 +4,7 @@ number = "060-0115-00"
 name = "4-POLE SENSORED BRUSHLESS 1520-1650KV V2 MOTOR"
 gtin = "819326013287"
 category = "motor"
+motor_type = "brushless"
 category_source = "curated"
 sensored = true
 kv = 1650
@@ -12,7 +13,10 @@ weight_g = 508
 diameter_mm = 41.6
 length_mm = 88.8
 shaft_mm = 5
-mount_holes = [{ thread = "M3", circle_mm = 25.4 }, { thread = "M4", circle_mm = 25.4 }]
+mount_holes = [
+  { thread = "M3", circle_mm = 25.4 },
+  { thread = "M4", circle_mm = 25.4 },
+]
 equivalent_to = [
   { spec = "spec/motor/brushless-4289-5mm", match = "functional", notes = "Derived from Castle's dimensions (diameter 41.6 mm, length 88.8 mm, shaft 5 mm)" },
 ]
