@@ -3,7 +3,6 @@ kit = "kit/tamiya/f104"
 brand = "brand/tamiya"
 number = "58447"
 name = "58447"
-sources = { category = "https://www.tamiyabase.com/tamiya-models/58447", kit = "https://www.tamiyabase.com/tamiya-models/58447" }
 kind = "kit"
 category = "formula"
 status = "discontinued"
@@ -14,3 +13,14 @@ links = [
 released = "2009-12-16"
 released_source = "TamiyaBase"
 year = 2009
+contains = [
+  { part = "part/tamiya/14025071", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19401479", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19401485", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19401486", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]
+documents = ["doc/tamiya/tamico-dealer-parts"]
+
+[sources]
+category = "https://www.tamiyabase.com/tamiya-models/58447"
+kit = "https://www.tamiyabase.com/tamiya-models/58447"

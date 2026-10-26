@@ -3,7 +3,6 @@ kit = "kit/tamiya/rc-tank-1-16"
 brand = "brand/tamiya"
 number = "56013"
 name = "M4 Sherman 105mm Howitzer"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/1111-56013-m4-sherman-105mm-howitzer-manual" }
 kind = "kit"
 status = "discontinued"
 depicts = { model = "M4 Sherman" }
@@ -19,5 +18,9 @@ contains = [
   { part = "part/tamiya/15415049", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/19415793", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/19495373", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/17255032", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 documents = ["doc/tamiya/tamico-dealer-parts", "doc/tamiya/56013-product-page-ja"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/1111-56013-m4-sherman-105mm-howitzer-manual"

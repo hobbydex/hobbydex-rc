@@ -3,7 +3,6 @@ kit = "kit/tamiya/rc-tank-1-16"
 brand = "brand/tamiya"
 number = "56007"
 name = "King Tiger"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/961-56007-king-tiger" }
 kind = "kit"
 status = "discontinued"
 depicts = { make = "Henschel", model = "King Tiger" }
@@ -15,3 +14,10 @@ links = [
 released = "1999-06-22"
 released_source = "TamiyaBase"
 year = 1999
+contains = [
+  { part = "part/tamiya/19415561", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]
+documents = ["doc/tamiya/tamico-dealer-parts"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/961-56007-king-tiger"

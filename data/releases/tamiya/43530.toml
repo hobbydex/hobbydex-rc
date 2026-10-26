@@ -3,7 +3,6 @@ kit = "kit/tamiya/unknown-42-44"
 brand = "brand/tamiya"
 number = "43530"
 name = "43530"
-sources = { category = "https://www.tamiyabase.com/tamiya-models/43530" }
 kind = "kit"
 category = "truggy"
 status = "discontinued"
@@ -14,3 +13,10 @@ links = [
 released = "2006-12-06"
 released_source = "TamiyaBase"
 year = 2006
+contains = [
+  { part = "part/tamiya/13454383", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]
+documents = ["doc/tamiya/tamico-dealer-parts"]
+
+[sources]
+category = "https://www.tamiyabase.com/tamiya-models/43530"

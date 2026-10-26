@@ -3,7 +3,6 @@ kit = "kit/tamiya/unknown-58"
 brand = "brand/tamiya"
 number = "58154"
 name = "M1025 Hummer"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/2-58xxx-kit-manuals-pdf/1132-58154-m1025-hummer-manual" }
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's manual title; Not on Tamiya's current pages (read 2026-10); taken as discontinued"
@@ -17,5 +16,9 @@ year = 1995
 contains = [
   { part = "part/tamiya/19335205", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/19445529", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/10445572", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 documents = ["doc/tamiya/tamico-dealer-parts"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/2-58xxx-kit-manuals-pdf/1132-58154-m1025-hummer-manual"
