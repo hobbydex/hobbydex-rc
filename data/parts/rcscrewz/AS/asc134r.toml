@@ -10,10 +10,10 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Associated MT12 Monster Truck (#40007)"
+fits = [
+  { kit = "kit/team-associated/mt12", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated MT12 Monster Truck (#40007) (link_car_kits.py)", releases = ["release/team-associated/40007C"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/asc134r-associated-mt12-monster-truck-40007-compatible-rubber-shielded-bearing-kit/" },
-]
-fits = [
-  { kit = "kit/team-associated/mt12", releases = ["release/team-associated/40007C"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Associated MT12 Monster Truck (#40007) (link_car_kits.py)" },
 ]

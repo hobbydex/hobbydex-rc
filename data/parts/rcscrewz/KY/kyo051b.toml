@@ -10,10 +10,10 @@ includes = [
   { spec = "spec/bearing/8x16x5" },
 ]
 applies_to = "Kyosho Twin Force (#30521B)"
+fits = [
+  { kit = "kit/kyosho/twin-force", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Kyosho Twin Force (#30521B) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/kyo051b-metal-shielded-bearing-kit-for-the-kyosho-twin-force-30521b/" },
-]
-fits = [
-  { kit = "kit/kyosho/twin-force", type = "replaces", source = "doc/rcscrewz/store", notes = "(link_car_kits.py)" },
 ]

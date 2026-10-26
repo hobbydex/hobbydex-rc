@@ -15,10 +15,10 @@ includes = [
   { spec = "spec/bearing/20x32x7" },
 ]
 applies_to = "Kyosho Giga Crusher DF/SF (#31141)"
+fits = [
+  { kit = "kit/kyosho/giga-crusher", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Kyosho Giga Crusher DF/SF (#31141) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/kyo058b-kyosho-giga-crusher-df-sf-31141-metal-shielded-bearing-kit/" },
-]
-fits = [
-  { kit = "kit/kyosho/giga-crusher", type = "replaces", source = "doc/rcscrewz/store", notes = "(link_car_kits.py)" },
 ]

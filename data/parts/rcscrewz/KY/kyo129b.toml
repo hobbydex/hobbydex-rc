@@ -11,10 +11,10 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Kyosho ZX-5 Type 3 (#30861)"
+fits = [
+  { kit = "kit/kyosho/lazer-zx-5", releases = ["release/kyosho/lazer-zx-5-readyset"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Kyosho ZX-5 Type 3 (#30861) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/kyo129b-metal-shielded-bearing-kit-for-the-kyosho-zx-5-type-3-30861/" },
-]
-fits = [
-  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/rcscrewz/store", notes = "(link_car_kits.py)" },
 ]

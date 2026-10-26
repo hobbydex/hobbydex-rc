@@ -5,7 +5,7 @@ name = "Screws Set For Yokomo BD10 Tungsten"
 pack_qty = 32
 applies_to = "Yokomo BD10"
 fits = [
-  { kit = "kit/yokomo/bd10", releases = ["release/yokomo/mrtc-bd10", "release/yokomo/mrtc-bd10a", "release/yokomo/mrtc-bd10ff"], type = "direct", source = "doc/arrowmax/shop", notes = "Listed for the Yokomo BD10 (link_car_kits.py)" },
+  { kit = "kit/yokomo/bd10", type = "replaces", source = "doc/arrowmax/shop", notes = "Listed for the Yokomo BD10 (link_car_kits.py)", releases = ["release/yokomo/mrtc-bd10", "release/yokomo/mrtc-bd10a", "release/yokomo/mrtc-bd10ff"] },
 ]
 links = [
   { site = "Arrowmax", url = "https://www.arrowmax-rc.com/products/screws-set-for-yokomo-bd10-tungsten32am-144002" },
