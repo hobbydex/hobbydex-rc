@@ -12,7 +12,7 @@ fix. The full list of one check: --list NAME. JSON for scripts: --json FILE.
 
 Exit code 0 always: this is a to-do list. Runs in well under five minutes.
 """
-import argparse, collections, csv, glob, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib
+import argparse, collections, csv, glob, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
 
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -230,6 +230,72 @@ def load_tools(tools):
         finally:
             sys.path.remove(os.path.dirname(hw))
     return out
+
+
+def norm_name(name):
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", name.lower()).split())
+
+
+def twin_pairs(parts):
+    """Records with the same number and the same normalised name under two different brands."""
+    by_number = collections.defaultdict(list)
+    for p in parts:
+        if p.get("number") and p.get("name"):
+            by_number[p["number"]].append(p)
+    out = []
+    for ps in by_number.values():
+        for i, a in enumerate(ps):
+            for b in ps[i + 1:]:
+                if a["brand"] != b["brand"] and norm_name(a["name"]) == norm_name(b["name"]):
+                    out.append((a, b))
+    return out
+
+
+def _host(url):
+    host = urllib.parse.urlsplit(url or "").hostname or ""
+    return host[4:] if host.startswith("www.") else host
+
+
+def twin_class(a, b, brands, companies, docs):
+    """shared: the brands are related (same owner, or one owns the other) and each record cites its own brand's source.
+    copy: a record's source or link is the other brand's site or one of its documents.
+    unclear: anything else."""
+    def sources(p):
+        return [d for d in p.get("documents", [])] + [e.get("source") for e in p.get("fits", []) + p.get("equivalent_to", [])]
+
+    def cites(p, brand):
+        site = _host(brands.get(brand, {}).get("website", ""))
+        if any(docs.get(d, {}).get("brand") == brand for d in sources(p) if d):
+            return True
+        return bool(site) and any(_host(l.get("url")) == site for l in p.get("links", []))
+
+    def related(x, y):
+        ox = brands.get(x, {}).get("owner")
+        oy = brands.get(y, {}).get("owner")
+        if ox and ox == oy:
+            return True
+        return any(companies.get(o, {}).get("brand") == other for o, other in ((ox, y), (oy, x)) if o)
+
+    if a["brand"] != b["brand"] and (cites(a, b["brand"]) or cites(b, a["brand"])):
+        return "copy"
+    if related(a["brand"], b["brand"]) and cites(a, a["brand"]) and cites(b, b["brand"]):
+        return "shared"
+    return "unclear"
+
+
+COMPLETE_DIFF = re.compile(r"\b(complete|assembled|assy|assembly|unit set)\b", re.I)
+DIFF_PARTS = re.compile(r"\b(cases?|gears?|gearbox|cups?|joints?|gaskets?|shims?|o-?rings?)\b", re.I)
+
+
+def complete_diff(part):
+    """A differential part that is a whole assembly by its name, not one of its cases, gears, cups, joints, gaskets, shims or o-rings."""
+    return part.get("category") == "differential" and bool(COMPLETE_DIFF.search(part.get("name", ""))) and not DIFF_PARTS.search(part["name"])
+
+
+def diff_assemblies(release, part_of):
+    """Complete differential assemblies in a release's kit rows, each row counted with its qty (1 when none)."""
+    return sum(int(c.get("qty", 1)) for c in release.get("contains", [])
+               if c.get("role") == "kit" and complete_diff(part_of.get(c["part"], {})))
 
 
 def main():
@@ -669,6 +735,25 @@ def main():
         if any(len(v) > 1 for v in pitches.values()):
             clash.append(r)
     check("release-two-gear-pitches", "mark the other pitch as option or listed: the release's own parts list or exploded view says which one is in the box", clash)
+
+    # 28b. the same part number and name under two brands: shared when the brands are related and each cites its own
+    # source; a copy when a record cites the other brand's site; the rest need a look (the pair's brands are in breakdown)
+    companies = {c["id"]: c for c in db["companies"]}
+    twin_classes = collections.Counter()
+    twin_flagged = []
+    for a, b in twin_pairs(parts):
+        cls = twin_class(a, b, brands, companies, docs)
+        twin_classes[(" / ".join(sorted(x["brand"].split("/")[-1] for x in (a, b))), cls)] += 1
+        if cls != "shared":
+            twin_flagged += [a, b]
+    check("twin-parts", "twins: a copy has a source or link on the other brand's site (the importer wrote it under the wrong brand: move it to the brand that makes it); an unclear pair needs both brands' sources checked, or a note that the two records are different parts",
+          twin_flagged, count=sum(n for (_, c), n in twin_classes.items() if c != "shared"),
+          breakdown=("brand pair and class", [f"{pair} {cls} {n}" for (pair, cls), n in sorted(twin_classes.items())]))
+
+    # 28c. a release whose box holds more than three complete differential assemblies (qty counts; see complete_diff)
+    too_many = [r for r in rels if diff_assemblies(r, part_of) > 3]
+    check("too-many-diffs", "a release lists more than three complete differential assemblies in its box: the extra ones are spares or options (mark them listed or option), or the name of a part is a case, gear or cup set",
+          too_many)
 
     # 29-38. hardware bags, names, release boxes and the /tmp inodes
     brand_of = lambda x: x.get("brand", "").split("/")[-1]
