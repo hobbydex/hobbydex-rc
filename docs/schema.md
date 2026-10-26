@@ -127,10 +127,13 @@ notes = "..."
 
 A model line, independent of year or edition. `category` is the kit type:
 buggy | truggy | stadium-truck | short-course | monster | desert-truck |
-truck | race-truck | crawler | touring | formula | pan-car | rally |
+truck | race-truck | crawler | touring | gt | on-road | formula | pan-car | rally |
 street-basher | drift | drag | lowrider | oval | speed-run | kart | motorcycle |
 tank | construction | trailer | boat, or car for a car that fits none of
-them. trailer is a standalone trailer or dolly, with no `drive` or `power`
+them. gt is a GT-body racing car on a buggy-style chassis (1/8 GT class).
+on-road is an on-road racer with independent suspension that is not a touring
+car (1/8 nitro or electric on-road). Scale is never in the type name; it is
+its own field. trailer is a standalone trailer or dolly, with no `drive` or `power`
 (a truck sold with its trailer stays truck). drag is a straight-line drag
 racer (no prep drag cars, drag trucks); lowrider a
 hopping lowrider on hydraulics or servo-lifted suspension. `scale` as "1/10". `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
