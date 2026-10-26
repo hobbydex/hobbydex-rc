@@ -10,5 +10,10 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-rr-2-0-piece-detachees/" },
 ]
 applies_to = ["NXT RR 2.0", "NXT RR EP RACE", "NXT RR RACE GP"]
+fits = [
+  { kit = "kit/hobbytech/nxt-rr-2-0", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT RR 2.0 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-ep-race", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR EP RACE (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-race-gp", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR RACE GP (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "suspension"

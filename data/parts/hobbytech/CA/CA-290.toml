@@ -8,5 +8,9 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-evo-4s-piece-detachees/" },
 ]
 applies_to = ["NXT EVO 4S", "SPIRIT NXTE RR20"]
+fits = [
+  { kit = "kit/hobbytech/nxt-evo-4s", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT EVO 4S (link_car_kits.py)" },
+  { kit = "kit/hobbytech/spirit-nxte-rr20", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the SPIRIT NXTE RR20 (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "body"

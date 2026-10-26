@@ -9,5 +9,9 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/bx8sl-runner-piece-detachees/" },
 ]
 applies_to = ["BX8 RUNNER G", "BX8 RUNNER O"]
+fits = [
+  { kit = "kit/hobbytech/bx8-runner-g", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech BX8 RUNNER G (link_car_kits.py)" },
+  { kit = "kit/hobbytech/bx8-runner-o", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BX8 RUNNER O (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "wing"

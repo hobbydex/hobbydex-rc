@@ -8,6 +8,12 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-db8-rtr-rd-piece-detachees/" },
 ]
 applies_to = ["DB8 RTR", "BXR MT", "BXR MT LIMITED", "SL DB8 OR", "SL DB8 OR RTR"]
+fits = [
+  { kit = "kit/hobbytech/db8", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech DB8 RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/bxr-mt", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR MT (link_car_kits.py)" },
+  { kit = "kit/hobbytech/bxr-mt-limited", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR MT LIMITED (link_car_kits.py)" },
+  { kit = "kit/hobbytech/sl-db8-or", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the SL DB8 OR (link_car_kits.py)" },
+]
 material = "aluminium"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "chassis"

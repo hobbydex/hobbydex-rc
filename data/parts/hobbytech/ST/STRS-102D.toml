@@ -8,5 +8,12 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-gp2-0-pieces-detachees/" },
 ]
 applies_to = ["NXT GP2.0", "NXT RR EP RACE", "NXT RR RACE GP", "NXT XR", "SPIRIT RR21 GT"]
+fits = [
+  { kit = "kit/hobbytech/nxt-gp2-0", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT GP2.0 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-ep-race", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR EP RACE (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-race-gp", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR RACE GP (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-xr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT XR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/spirit-rr21-gt", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the SPIRIT RR21 GT (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "pin"

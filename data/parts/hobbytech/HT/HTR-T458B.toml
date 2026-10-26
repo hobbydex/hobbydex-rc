@@ -9,5 +9,10 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-rr-2-0-piece-detachees/" },
 ]
 applies_to = ["NXT RR 2.0", "ROGB", "ROGB V2 RTR"]
+fits = [
+  { kit = "kit/hobbytech/nxt-rr-2-0", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT RR 2.0 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogb", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGB (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogb-v2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGB V2 RTR (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "tire"

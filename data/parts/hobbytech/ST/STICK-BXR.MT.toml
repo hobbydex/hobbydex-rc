@@ -8,5 +8,9 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/bxr-mt-pieces-detachees-2/" },
 ]
 applies_to = ["BXR MT", "BXR MT LIMITED"]
+fits = [
+  { kit = "kit/hobbytech/bxr-mt", type = "direct", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech BXR MT (link_car_kits.py)" },
+  { kit = "kit/hobbytech/bxr-mt-limited", type = "direct", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR MT LIMITED (link_car_kits.py)" },
+]
 category = "decal"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"

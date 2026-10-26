@@ -10,6 +10,10 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/8-spirit-nxte-rr20-pieces-detachees/" },
 ]
 applies_to = ["SPIRIT NXTE RR20", "Spirit NXTE RR21"]
+fits = [
+  { kit = "kit/hobbytech/spirit-nxte-rr20", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech SPIRIT NXTE RR20 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/spirit-nxte-rr21", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Spirit NXTE RR21 (link_car_kits.py)" },
+]
 category = "shock"
 shock_part = "piston"
 bore_mm = 15

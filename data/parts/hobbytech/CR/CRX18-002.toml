@@ -8,5 +8,10 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-crx18-4wd-fc-piece-detachees/" },
 ]
 applies_to = ["CRX18 4WD FC", "CRX18 6WD FC", "CRX18"]
+fits = [
+  { kit = "kit/hobbytech/crx18-4wd-fc", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech CRX18 4WD FC (link_car_kits.py)" },
+  { kit = "kit/hobbytech/crx18-6wd-fc", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the CRX18 6WD FC (link_car_kits.py)" },
+  { kit = "kit/hobbytech/crx18", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the CRX18 (link_car_kits.py)" },
+]
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "suspension"

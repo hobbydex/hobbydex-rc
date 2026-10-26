@@ -8,5 +8,14 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-rr-2-0-piece-detachees/" },
 ]
 applies_to = ["NXT RR 2.0", "NXT RR RTR", "NXT RR EP RACE", "NXT XR", "SPIRIT NXTE RR20", "SPIRIT RR21 GT", "Spirit NXTE RR21"]
+fits = [
+  { kit = "kit/hobbytech/nxt-rr-2-0", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT RR 2.0 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-ep-race", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR EP RACE (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-xr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT XR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/spirit-nxte-rr20", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the SPIRIT NXTE RR20 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/spirit-rr21-gt", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the SPIRIT RR21 GT (link_car_kits.py)" },
+  { kit = "kit/hobbytech/spirit-nxte-rr21", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Spirit NXTE RR21 (link_car_kits.py)" },
+]
 category = "chassis"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"

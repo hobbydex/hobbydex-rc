@@ -10,6 +10,14 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-rr-2-0-piece-detachees/" },
 ]
 applies_to = ["NXT RR 2.0", "NXT RR RTR", "ROGB", "ROGB V2 RTR", "NXT RR EP RACE", "NXT RR RACE GP"]
+fits = [
+  { kit = "kit/hobbytech/nxt-rr-2-0", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT RR 2.0 (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogb", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGB (link_car_kits.py)" },
+  { kit = "kit/hobbytech/rogb-v2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the ROGB V2 RTR (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-ep-race", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR EP RACE (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-rr-race-gp", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT RR RACE GP (link_car_kits.py)" },
+]
 category = "shock"
 shock_part = "piston"
 bore_mm = 16

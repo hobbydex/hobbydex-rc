@@ -8,6 +8,10 @@ links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-nxt-evo-4s-piece-detachees/" },
 ]
 applies_to = ["NXT EVO 4S", "NXT EVO V2"]
+fits = [
+  { kit = "kit/hobbytech/nxt-evo-4s", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech NXT EVO 4S (link_car_kits.py)" },
+  { kit = "kit/hobbytech/nxt-evo-v2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the NXT EVO V2 (link_car_kits.py)" },
+]
 category = "motor"
 range = "hobbytech/moteur-brushless-4-poles-1-8-4274"
 kv = 2200

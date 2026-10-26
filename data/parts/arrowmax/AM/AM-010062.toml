@@ -6,6 +6,10 @@ category = "drivetrain"
 category_source = "curated"
 pack_qty = 2
 applies_to = "BD10"
+fits = [
+  { kit = "kit/yokomo/bd9", type = "replaces", source = "doc/arrowmax/shop", notes = "Listed for the Yokomo BD 9 (link_car_kits.py)" },
+  { kit = "kit/yokomo/bd10", type = "replaces", source = "doc/arrowmax/shop", notes = "Listed for the BD10 (link_car_kits.py)" },
+]
 links = [
   { site = "Arrowmax", url = "https://www.arrowmax-rc.com/products/bb-djc-set-for-yokomo-bd-9-bd10-2-am-010062" },
 ]
