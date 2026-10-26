@@ -10,3 +10,22 @@ status = "released"
 seen_by = "2011-06"
 seen_by_source = "https://web.archive.org/web/20110621051639/http://kyosho.com/jpn/support/instructionmanual/mini-z/pdf/32751_MR03_Red_Limited_IM.pdf"
 documents = ["doc/kyosho/32751-mr03-red-limited-im", "doc/kyosho/32751-mr03-tikitiki-extra", "doc/kyosho/32751-product-page"]
+contains = [
+  { part = "part/kyosho/MZ401", role = "kit", source = "doc/kyosho/32751-mr03-tikitiki-extra" },
+  { part = "part/kyosho/MZ403", role = "kit", source = "doc/kyosho/32751-mr03-tikitiki-extra" },
+  { part = "part/kyosho/MZ405", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZ406", role = "kit", source = "doc/kyosho/32751-mr03-tikitiki-extra" },
+  { part = "part/kyosho/MZ407", role = "kit", source = "doc/kyosho/32751-mr03-tikitiki-extra" },
+  { part = "part/kyosho/MZ409", role = "kit", source = "doc/kyosho/32751-mr03-tikitiki-extra" },
+  { part = "part/kyosho/MZ410", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZ410", role = "kit", source = "doc/kyosho/32751-mr03-tikitiki-extra" },
+  { part = "part/kyosho/MZW1", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZW13R", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZW207", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZW301", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZW302", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZW402", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZW412", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZW412-1", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+  { part = "part/kyosho/MZW420", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
+]

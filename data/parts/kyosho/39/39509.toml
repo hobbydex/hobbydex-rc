@@ -6,7 +6,11 @@ gtin = "4955439684214"
 fits = [
   { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/31091-inferno-tr15-p" },
   { kit = "kit/kyosho/inferno-tr-15", type = "replaces", replaces = "part/kyosho/TR37", source = "doc/kyosho/31091-inferno-tr15-p", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "direct", source = "doc/kyosho/31061-tr15-rally-p" },
+  { kit = "kit/kyosho/tr-15-monster-touring", type = "direct", source = "doc/kyosho/31213-xanavinismo-gtr-p" },
 ]
 category = "differential"
 material = "steel"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/39509.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/39509.html" },
+]

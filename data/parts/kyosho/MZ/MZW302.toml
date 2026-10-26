@@ -4,4 +4,9 @@ number = "MZW302"
 name = "MZW302"
 gtin = "4548565099139"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw302.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw302.html" },
+]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32751-mr03-red-limited-im" },
+]

@@ -5,10 +5,13 @@ name = "Silicone OIL #500000 (40cc)"
 gtin = "4955439860496"
 fits = [
   { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34362-04-rsa-out-ram-pro-spop" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31262-v-one-rrr-evo2-p" },
 ]
 volume_ml = 40
 equivalent_to = [
   { spec = "spec/oil/silicone-500000cst", match = "functional", notes = "Viscosity number #500000 as the brand states it, on the cSt scale; measuring temperature not given" },
 ]
 category = "oil-grease"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/sil500000.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/sil500000.html" },
+]

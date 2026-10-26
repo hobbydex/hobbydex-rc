@@ -4,4 +4,9 @@ number = "36235-42"
 name = "36235-42"
 gtin = "4955439793411"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/36235-42.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/36235-42.html" },
+]
+fits = [
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31262-v-one-rrr-evo2-p" },
+]

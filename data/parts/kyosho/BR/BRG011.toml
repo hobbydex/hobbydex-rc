@@ -11,10 +11,14 @@ fits = [
   { kit = "kit/kyosho/v-one-sr", type = "direct", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33206-v-one-r4sii-spop" },
   { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+  { kit = "kit/kyosho/at12", type = "direct", source = "doc/kyosho/30651-a12racing-p" },
+  { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31584-fw05rr-kce-m" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 seal = "metal"
 category = "bearing"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/brg011.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/brg011.html" },
+]

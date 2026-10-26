@@ -4,4 +4,9 @@ number = "MZ410"
 name = "MZ410"
 gtin = "4548565172207"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mz410.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/mz410.html" },
+]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32751-mr03-red-limited-im" },
+]
