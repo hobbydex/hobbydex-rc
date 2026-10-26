@@ -658,6 +658,10 @@ Spur gears carry `teeth` and either `pitch_dp` or `module` on the part
 itself, read from the name. They get no generic spec: spurs of one
 pitch and tooth count mesh the same pinions but mount differently.
 
+`teeth` (an integer from 5 to 300) is the tooth count a part's name or page states, on spur gears and pinions (above), on pulleys (`19T pulley`) and on servo horns when the count is a tooth count. A servo horn's "25T" is usually its spline, which is `spline_teeth` (see Servos), so a horn names no `teeth` unless its maker gives a tooth count apart from the spline. A name with several counts (`13 to 35 teeth`, `72T/76T`) gets none.
+
+`weight_g` (a number of grams above 0 and up to 50000, such as `69` or `4.2`) is set on any part whose source states its weight: "Weight 70g", "70 g", "(70g)", "Gewicht: 70 g", "Poids : 70 g". A weight the source gives in ounces is converted and rounded to whole grams. A figure that is a capacity or a load is never a weight: "70kg servo" is torque, "holds 5 kg" is a load. Parts of any category carry it; the radio, battery, servo, motor, ESC and engine sections above say what else their weight means.
+
 Chargers are parts with category charger and, when stated, `power_w`.
 
 Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh | liion),

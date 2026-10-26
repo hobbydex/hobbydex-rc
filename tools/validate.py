@@ -891,6 +891,15 @@ def main():
                     errors.append(f"{path}: diameter_mm {dm!r} should be a size in mm, or a list of sizes")
         if kind == "part" and "radio_unit" in d and d.get("category") not in ("radio", "esc"):
             errors.append(f"{path}: radio_unit only on radios and receivers (category radio, or esc for an ESC with a receiver)")
+        # weight_g and teeth on any part (docs/schema.md "part"): grams as a number, a tooth count as an integer
+        if kind == "part" and "weight_g" in d:
+            w = d["weight_g"]
+            if isinstance(w, bool) or not isinstance(w, (int, float)) or not 0 < w <= 50000:
+                errors.append(f"{path}: weight_g {w!r} should be grams above 0 and up to 50000")
+        if kind == "part" and "teeth" in d:
+            t = d["teeth"]
+            if isinstance(t, bool) or not isinstance(t, int) or not 5 <= t <= 300:
+                errors.append(f"{path}: teeth {t!r} should be a whole tooth count from 5 to 300")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
         if eng - {"bore_mm"} and d.get("category") != "engine-fuel":
             errors.append(f"{path}: {', '.join(sorted(eng - {'bore_mm'}))} only on engine parts (category engine-fuel)")
