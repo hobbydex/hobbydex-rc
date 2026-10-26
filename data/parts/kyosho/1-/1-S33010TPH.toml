@@ -7,9 +7,12 @@ pack_qty = 10
 fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34411-t02-rage-2-0-t02-spop" },
   { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
+  { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m3x10-countersunk-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s33010tph.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s33010tph.html" },
+]

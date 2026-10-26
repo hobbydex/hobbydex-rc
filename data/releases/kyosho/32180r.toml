@@ -8,4 +8,34 @@ status = "released"
 seen_by = "2023-06"
 seen_by_source = "https://web.archive.org/web/20230602124808/https://rc.kyosho.com/en/rccar/miniz/32180r.html"
 gtin = "4548565436101"
-documents = ["doc/kyosho/32180r-product-page"]
+documents = ["doc/kyosho/32180r-product-page", "doc/kyosho/32180-ma-030evo-sp", "doc/kyosho/32180-ma-030evo-im"]
+contains = [
+  { part = "part/kyosho/BRG022", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD005", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD006B", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD008", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD202", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD204", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD205", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD209", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD301", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD302", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD303", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD304", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD305", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD306", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD307", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD308", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD309", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD401", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD402", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MD403", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MDW001", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MDW100-02", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MDW100-03", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MDW100-04", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MDW100-05", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MDW100-06", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MZ604", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+  { part = "part/kyosho/MZ8-4", role = "kit", source = "doc/kyosho/32180-ma-030evo-sp" },
+]
