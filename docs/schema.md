@@ -185,7 +185,7 @@ re-release. Keyed by manufacturer item number when there is one, otherwise by a
 slug (`xb4-2013`, `xb8e-2021`). `status` is
 announced | released | discontinued. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
-`kind` is the build the buyer gets, one of kit | rtr | arr | roller:
+`kind` (optional: left out when no source states the build) is the build the buyer gets, one of kit | rtr | arr | roller:
 
 - `kit`: built by the buyer; the electronics are usually bought separately.
 - `rtr` (ready to run): built and complete, radio included, often battery and charger.
