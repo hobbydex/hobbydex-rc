@@ -786,6 +786,8 @@ def main():
             ans = d.get("announced_source")
             if ans is not None and ("announced" not in d or not (isinstance(ans, str) and ans.startswith("https://"))):
                 errors.append(f"{path}: announced_source is an https URL that comes with announced (the video or page that gives the day), got {ans!r}")
+        if kind in ("release", "part"):
+            this_year = datetime.date.today().year
             has_seen = "seen_by" in d or "seen_by_source" in d
             if has_seen:
                 sb, ss = d.get("seen_by"), d.get("seen_by_source")
@@ -804,7 +806,7 @@ def main():
                 elif archive and not manual and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
-                    errors.append(f"{path}: seen_by is only for a release with no released, year or announced (a date a source states)")
+                    errors.append(f"{path}: seen_by is only for a release or part with no released, year or announced (a date a source states)")
         srcs = d.get("sources")
         if srcs is not None:
             if kind not in ("kit", "release", "part"):

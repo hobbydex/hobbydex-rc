@@ -335,6 +335,16 @@ brand lists the part for, verbatim (TLR writes "Description (pack): 22X-4 2.0").
 A brand that names the car only in the part's name (RW Racing: "Supalite Spurs
 48DP for Xray 008/009 73T") gives the car's words from the name, "Xray 008/009".
 
+`seen_by` (`YYYY-MM-DD`) with `seen_by_source`, as for a release (below): the
+first day the maker had the part on its own pages, never a release date. It is
+set on a part with no `released` or `announced`, from the day the maker's own
+Shopify shop published the product (`seen_by_source` is its
+`https://<host>/products/<handle>` page) or the day a maker page the part links
+was first fetched (from 2026-10-27 on; `seen_by_source` is that page). Days on
+which a shop published, or we first fetched, dozens of parts at once (a
+migration or a first sweep) are not used. The site's Latest list shows it as
+"seen by".
+
 `category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `clip`, `cooling`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `esc`, `gear`, `glue`, `hardware-set`, `light`, `manual`, `merchandise`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin`, `pinion`, `radio`, `rod-end`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `turnbuckle`, `washer-shim`, `wheel`, `wing`, `wire`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
 `category_source = "curated"` to fix a category by hand. Parts named only by
