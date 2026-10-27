@@ -8,9 +8,6 @@ status = "released"
 seen_by = "2022-01"
 seen_by_source = "https://web.archive.org/web/20220127110237/https://www.wl-toys.com/Wltoys-284131-Car-Parts-813-814-1903-1.htm"
 notes = "Parts from a reseller's spare parts listing, not a WLtoys document; the reseller's car title: \"Wltoys 284131 RC Car,WLtoys 1/28 Force 284131 RC Racing Car,High Spped Mini rc car.\""
-links = [
-  { site = "wl-toys.com", url = "https://www.wl-toys.com/Wltoys-284131-RC-Car-46240.html", kind = "dealer" },
-]
 contains = [
   { part = "part/wltoys/144001.1669", role = "listed", source = "doc/wltoys/284131-reseller-parts" },
   { part = "part/wltoys/284131.2035", role = "listed", source = "doc/wltoys/284131-reseller-parts" },
@@ -65,3 +62,4 @@ contains = [
   { part = "part/wltoys/P929-10", role = "listed", source = "doc/wltoys/284131-reseller-parts" },
   { part = "part/wltoys/P929-20", role = "listed", source = "doc/wltoys/284131-reseller-parts" },
 ]
+documents = ["doc/wltoys/284131-product-page"]
