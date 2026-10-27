@@ -8,7 +8,9 @@ applies_to = "REDCAT ASCENT-18"
 category = "esc"
 motor_type = "brushless"
 lipo_cells = [2, 2]
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-starter-118-brushless-power-system-with-receiver-for-redcat-1-18" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-starter-118-brushless-power-system-with-receiver-for-redcat-1-18" },
+]
 fits = [
   { kit = "kit/redcat/ascent-18", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]

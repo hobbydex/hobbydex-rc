@@ -5,4 +5,9 @@ name = "FX118 KATANA Body Parts Set"
 seen_by = "2024-05-09"
 seen_by_source = "https://furitek.com/products/furitek-fx118-katana-body-parts-set"
 category = "body"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-fx118-katana-body-parts-set" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-fx118-katana-body-parts-set" },
+]
+fits = [
+  { kit = "kit/furitek/fx118", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

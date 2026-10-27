@@ -7,4 +7,9 @@ seen_by_source = "https://furitek.com/products/dual-cnc-aluminum-servo-horn-set-
 applies_to = "TerraX SteelCore Servo"
 category = "steering"
 material = "aluminium"
-links = [{ site = "Furitek", url = "https://furitek.com/products/dual-cnc-aluminum-servo-horn-set-for-terrax-steelcore-servo" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/dual-cnc-aluminum-servo-horn-set-for-terrax-steelcore-servo" },
+]
+fits = [
+  { kit = "kit/furitek/terrax-active-pro-4ws", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

@@ -8,4 +8,9 @@ applies_to = "FURITEK FX118"
 category = "body"
 color = "blue"
 range = "furitek/fx118-61a7-colours"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-blue-fury-wagon-body-for-furitek-fx118" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-blue-fury-wagon-body-for-furitek-fx118" },
+]
+fits = [
+  { kit = "kit/furitek/fx118", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

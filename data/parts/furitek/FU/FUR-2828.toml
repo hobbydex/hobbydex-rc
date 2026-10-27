@@ -5,4 +5,9 @@ name = "ROGUE 6x6 Link Set"
 seen_by = "2026-08-27"
 seen_by_source = "https://furitek.com/products/furitek-rogue-6x6-link-set"
 category = "suspension"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-rogue-6x6-link-set" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-rogue-6x6-link-set" },
+]
+fits = [
+  { kit = "kit/furitek/rogue-6x6", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

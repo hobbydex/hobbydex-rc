@@ -6,4 +6,9 @@ seen_by = "2023-10-16"
 seen_by_source = "https://furitek.com/products/furitek-front-cvd-drive-shaft-set-for-furitek-fx118"
 applies_to = "FURITEK FX118"
 category = "drivetrain"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-front-cvd-drive-shaft-set-for-furitek-fx118" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-front-cvd-drive-shaft-set-for-furitek-fx118" },
+]
+fits = [
+  { kit = "kit/furitek/fx118", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

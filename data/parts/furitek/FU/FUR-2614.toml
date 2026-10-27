@@ -7,7 +7,9 @@ seen_by_source = "https://furitek.com/products/furitek-monster-brushless-power-s
 applies_to = "REDCAT MT-18"
 category = "esc"
 motor_type = "brushless"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-monster-brushless-power-system-with-receiver-for-redcat-mt-18" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-monster-brushless-power-system-with-receiver-for-redcat-mt-18" },
+]
 fits = [
   { kit = "kit/redcat/mt18", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]

@@ -8,4 +8,9 @@ applies_to = "FX118"
 category = "pinion"
 material = "steel"
 teeth = 15
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-cedar-1825-3456kv-inrunner-brushless-motor-with-15t-steel-pinion-for-fx118" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-cedar-1825-3456kv-inrunner-brushless-motor-with-15t-steel-pinion-for-fx118" },
+]
+fits = [
+  { kit = "kit/furitek/fx118", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

@@ -6,7 +6,9 @@ seen_by = "2021-01-06"
 seen_by_source = "https://furitek.com/products/furitek-foc-scx24-4x4-main-board-features-and-specs"
 applies_to = "Axial SCX24 with FOC Technology"
 category = "electronics"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-foc-scx24-4x4-main-board-features-and-specs" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-foc-scx24-4x4-main-board-features-and-specs" },
+]
 fits = [
   { kit = "kit/axial/scx24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]

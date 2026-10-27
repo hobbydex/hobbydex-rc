@@ -9,4 +9,9 @@ category = "tire"
 scale = "1/32"
 vehicle = "monster"
 mounting = "pre-mounted"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-tire-and-wheel-sets-for-fx132-mt-etna-1-32-spare-part" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-tire-and-wheel-sets-for-fx132-mt-etna-1-32-spare-part" },
+]
+fits = [
+  { kit = "kit/furitek/fx132-mt-etna", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

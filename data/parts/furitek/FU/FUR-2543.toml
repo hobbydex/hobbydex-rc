@@ -6,4 +6,9 @@ seen_by = "2024-04-11"
 seen_by_source = "https://furitek.com/products/furitek-links-sets-for-fx132-mt-etna-1-32-spare-part"
 applies_to = "FX132 MT ETNA 1/32 Spare Part"
 category = "suspension"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-links-sets-for-fx132-mt-etna-1-32-spare-part" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-links-sets-for-fx132-mt-etna-1-32-spare-part" },
+]
+fits = [
+  { kit = "kit/furitek/fx132-mt-etna", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

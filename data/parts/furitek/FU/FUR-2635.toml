@@ -7,7 +7,9 @@ seen_by_source = "https://furitek.com/products/furitek-micromodo-2025-brushless-
 applies_to = "REDCAT ASCENT-18"
 category = "esc"
 motor_type = "brushless"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-micromodo-2025-brushless-power-system-with-micropython-and-microkomodo-for-redcat-ascent-18" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-micromodo-2025-brushless-power-system-with-micropython-and-microkomodo-for-redcat-ascent-18" },
+]
 fits = [
   { kit = "kit/redcat/ascent-18", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]

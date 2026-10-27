@@ -7,4 +7,9 @@ seen_by_source = "https://furitek.com/products/furitek-ball-stud-set-for-furitek
 applies_to = "FURITEK FX118"
 category = "ball-end"
 ball_type = "stud"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-ball-stud-set-for-furitek-fx118-fury-wagon" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-ball-stud-set-for-furitek-fx118-fury-wagon" },
+]
+fits = [
+  { kit = "kit/furitek/fx118", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

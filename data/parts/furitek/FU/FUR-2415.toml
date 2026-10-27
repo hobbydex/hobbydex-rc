@@ -8,4 +8,9 @@ applies_to = "FURITEK FX118"
 category = "pinion"
 material = "steel"
 teeth = 15
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-venom-brushless-motor-2mm-shaft" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-venom-brushless-motor-2mm-shaft" },
+]
+fits = [
+  { kit = "kit/furitek/fx118", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

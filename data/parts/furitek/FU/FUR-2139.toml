@@ -7,4 +7,9 @@ seen_by_source = "https://furitek.com/products/furitek-plastic-high-clearance-li
 applies_to = "RAMPART 1/24"
 category = "suspension"
 material = "plastic"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-plastic-high-clearance-links-set-for-scx24-gladiator" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-plastic-high-clearance-links-set-for-scx24-gladiator" },
+]
+fits = [
+  { kit = "kit/furitek/rampart-1-24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

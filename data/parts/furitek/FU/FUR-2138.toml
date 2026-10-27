@@ -6,4 +6,9 @@ seen_by = "2022-05-24"
 seen_by_source = "https://furitek.com/products/furitek-high-quality-metal-driveshafts-for-monster-truck-1-24-axles"
 applies_to = "Rampart 1/24"
 category = "drivetrain"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-high-quality-metal-driveshafts-for-monster-truck-1-24-axles" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-high-quality-metal-driveshafts-for-monster-truck-1-24-axles" },
+]
+fits = [
+  { kit = "kit/furitek/rampart-1-24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

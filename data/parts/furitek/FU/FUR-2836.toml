@@ -7,7 +7,10 @@ seen_by_source = "https://furitek.com/products/furitek-mantis-pre-cut-magnetic-c
 applies_to = "SCX30"
 category = "body"
 color = "clear"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-mantis-pre-cut-magnetic-clear-body-for-scx30" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-mantis-pre-cut-magnetic-clear-body-for-scx30" },
+]
 fits = [
   { kit = "kit/axial/scx30", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+  { kit = "kit/furitek/mantis-lcg", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]

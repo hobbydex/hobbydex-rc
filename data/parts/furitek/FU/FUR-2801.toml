@@ -6,4 +6,9 @@ seen_by = "2026-06-30"
 seen_by_source = "https://furitek.com/products/furitek-33-overdrive-gear-set-for-titan-buggy-ultimate-24-and-titan-u4-24"
 applies_to = "TITAN BUGGY ULTIMATE 24 and TITAN U4 24"
 category = "gear"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-33-overdrive-gear-set-for-titan-buggy-ultimate-24-and-titan-u4-24" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-33-overdrive-gear-set-for-titan-buggy-ultimate-24-and-titan-u4-24" },
+]
+fits = [
+  { kit = "kit/furitek/titan-buggy-ultimate-24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

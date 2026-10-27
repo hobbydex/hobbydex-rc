@@ -9,7 +9,9 @@ category = "motor"
 motor_type = "brushless"
 teeth = 12
 module = 0.5
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-brushless-conversion-for-scx24-0-5m-spur-gear-and-12t-pinion-gear" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-brushless-conversion-for-scx24-0-5m-spur-gear-and-12t-pinion-gear" },
+]
 fits = [
   { kit = "kit/axial/scx24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]
