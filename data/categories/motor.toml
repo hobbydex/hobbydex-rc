@@ -2,6 +2,7 @@ id = "category/motor"
 name = "Motors"
 summary = "Brushed and brushless electric motors"
 description = "Electric motors, brushed and brushless, by can size, shaft and kV."
+any_car = true
 spec_type = "motor"
 key_fields = [
   { field = "motor_type", label = "Type", from = "spec" },

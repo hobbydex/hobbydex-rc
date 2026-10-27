@@ -2,6 +2,7 @@ id = "category/esc"
 name = "ESCs"
 summary = "Speed controllers, brushed and brushless, and ESC-motor combos"
 description = "Electronic speed controllers, brushed and brushless, ESC and receiver units, and ESC-motor combos. Accessories made for an ESC are filed elsewhere: fans and heat sinks with cooling, cables and plugs with wires, weights, trays and cages with chassis, and programming cards and capacitors with electronics. ESC cases and covers are ESC spare parts."
+any_car = true
 key_fields = [
   { field = "motor_type", label = "Type", from = "part" },
   { field = "current_a", label = "Amps", from = "part", unit = "A" },

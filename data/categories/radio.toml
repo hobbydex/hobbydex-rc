@@ -2,6 +2,7 @@ id = "category/radio"
 name = "Radios"
 summary = "Transmitters, receivers, radio sets, gyros and telemetry"
 description = "Transmitters, receivers and radio sets, gyros and telemetry modules. Accessories are filed with electronics (antenna tubes, grips, straps), receiver and battery boxes and their covers are chassis, cables are wires, transmitter and radio cases are tools, and a battery pack for a radio is a battery."
+any_car = true
 key_fields = [
   { field = "radio_unit", label = "Unit", from = "part" },
   { field = "channels", label = "Channels", from = "part" },

@@ -1230,6 +1230,17 @@ its linked spec (`from = "part" | "spec"`), with an optional `unit` and
 keeps a field out of the parts table and shows it only when parts are
 compared side by side.
 
+`any_car = true` (optional) marks a category whose parts are not made for one
+car: tools, radios, chargers, batteries, motors, ESCs, servos, wires, lights,
+paint, engine parts and generic hardware (screws, nuts, bearings, pins, clips,
+pinions). Such a part with no `fits` row and no release naming it is not
+counted as unlinked: the audit check part-no-car-link and the Linked column of
+the statistics page leave it out of the denominator. A part that names the model it is for (`applies_to`) is always counted, whatever its
+category. A part of such a category
+that does have a fits row or a release is linked as before. Leave the flag off
+for a category whose parts belong to a car (arms, hubs, chassis plates, bodies,
+wheels, tyres).
+
 ```toml
 id = "category/servo"
 name = "Servos"
