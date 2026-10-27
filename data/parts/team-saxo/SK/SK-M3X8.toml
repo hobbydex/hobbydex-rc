@@ -4,3 +4,6 @@ number = "SK-M3X8"
 name = "Set screw M3x8"
 notes = "Printed as SK_M3X8 on the F1-FUTURE parts list and as SK_M3X8 on the GT-300W-V3 parts list and as SK_M3X8 on the LM-500W parts list; Printed as SK_M3X8 in the GT-500-V2 manual; Printed as SK_M3X8 in the MGT-225 manual; Printed as SK_M3X8 in the MGT-210 manual"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

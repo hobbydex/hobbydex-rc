@@ -12,3 +12,6 @@ category = "screw"
 fits = [
   { kit = "kit/redcat/gen8", type = "direct", source = "doc/redcat/store" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x18-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

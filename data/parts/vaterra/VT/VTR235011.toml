@@ -6,5 +6,8 @@ name_source = "manual"
 notes = "Name from the Vaterra manual's parts list"
 category = "screw"
 
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
 [sources]
 name = "https://www.horizonhobby.com/product/vaterra-1-10-1968-ford-f-100-ascender-4wd-rock-crawler-brushed-bnd/VTR03093.html"

@@ -14,3 +14,6 @@ fits = [
   { kit = "kit/redcat/shredder", type = "direct", source = "doc/redcat/store" },
   { kit = "kit/redcat/caldera-10e", type = "direct", source = "doc/redcat/store" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m4x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

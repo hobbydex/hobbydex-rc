@@ -67,6 +67,9 @@ ISO 7380), so a name that says Cap Screw, Cap Head, Socket Head, Button Head,
 Button Screw or SH/SCH/SHCS/BH/BHCS/SBH, flanged or not, gets the hex drive
 without the word "Hex" (Kyosho "Cap Screw(M2.6x8)"; XRAY "FLANGED SH"). Flat head, round, pan, bind and truss
 names without a drive word get none.
+A set screw (grub, SB; ISO 4026-4029) is a hex socket too. Where a brand row
+states the drive (LC Racing TM and KM "hex socket"; Traxxas CS and SS "hex
+drive"), the hex spec applies without the word.
 
 ## LC Racing
 
