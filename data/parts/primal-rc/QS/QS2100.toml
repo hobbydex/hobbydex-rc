@@ -1,4 +1,12 @@
 id = "part/primal-rc/QS2100"
 brand = "brand/primal-rc"
 number = "QS2100"
-name = "QS2091"
+name = "Exhaust pipe"
+name_source = "ocr"
+notes = "Name from the Primal manual's parts list"
+numbers = ["PRQS2100"]
+former_ids = ["part/primal-rc/PRQS2100"]
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
+]
+category = "engine-fuel"

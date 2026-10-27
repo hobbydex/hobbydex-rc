@@ -7,3 +7,10 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+fits = [
+  { kit = "kit/primal-rc/grave-digger", type = "direct", source = "doc/primal-rc/grave-digger-collectors-manual", notes = "Listed in the 1/5 Grave Digger Collectors Edition manual parts list" },
+  { kit = "kit/primal-rc/mega-monster-truck", type = "direct", source = "doc/primal-rc/mega-truck-manual", notes = "Listed in the 1/5 Mega Truck manual parts list" },
+  { kit = "kit/primal-rc/primal-mt", type = "direct", source = "doc/primal-rc/primal-mt-v4-manual", notes = "Listed in the 1/5 Primal MT v4 manual parts list" },
+  { kit = "kit/primal-rc/raminator", type = "direct", source = "doc/primal-rc/raminator-v4-manual", notes = "Listed in the 1/5 Raminator Monster Truck v4 manual parts list" },
+  { kit = "kit/primal-rc/son-uva-digger", releases = ["release/primal-rc/prsud3"], type = "direct", source = "doc/primal-rc/son-uva-digger-v3-manual", notes = "Listed in the 1/5 Son-Uva Digger V3 manual parts list" },
+]

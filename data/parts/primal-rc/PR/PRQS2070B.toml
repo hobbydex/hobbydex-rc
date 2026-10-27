@@ -4,3 +4,7 @@ number = "PRQS2070B"
 name = "PRQS2070B"
 gtin = "00840429501562"
 notes = "Name not yet from a Primal source"
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Variant of PRQS2070, which the manual lists" },
+  { kit = "kit/primal-rc/qs1001-electric-dragster", type = "direct", source = "doc/primal-rc/electric-dragster-manual", notes = "Variant of PRQS2070, which the manual lists" },
+]

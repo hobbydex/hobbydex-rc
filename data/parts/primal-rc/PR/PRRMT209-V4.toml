@@ -7,3 +7,7 @@ links = [
   { site = "Primal RC", url = "https://primalrc.com/product/prrmt209-v4/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/primal-rc/primal-mt", type = "direct", source = "doc/primal-rc/primal-mt-v4-manual", notes = "Variant of PRRMT209, which the manual lists" },
+  { kit = "kit/primal-rc/raminator", releases = ["release/primal-rc/prmtr4"], type = "direct", source = "doc/primal-rc/raminator-v4-manual", notes = "Variant of PRRMT209, which the manual lists" },
+]

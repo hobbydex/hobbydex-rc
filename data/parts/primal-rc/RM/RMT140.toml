@@ -4,3 +4,9 @@ number = "RMT140"
 name = "Sway bar"
 pack_qty = 2
 category = "suspension"
+numbers = ["PRRMT140"]
+former_ids = ["part/primal-rc/PRRMT140"]
+fits = [
+  { kit = "kit/primal-rc/mega-monster-truck", type = "direct", source = "doc/primal-rc/mega-truck-manual", notes = "Listed in the 1/5 Mega Truck manual parts list" },
+  { kit = "kit/primal-rc/raminator", releases = ["release/primal-rc/raminator-v1", "release/primal-rc/raminator-v3"], type = "direct", source = "doc/primal-rc/raminator-v1-manual", notes = "Listed in the 1/5 Raminator Monster Truck manual parts list" },
+]

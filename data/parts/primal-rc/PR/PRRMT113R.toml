@@ -1,10 +1,16 @@
 id = "part/primal-rc/PRRMT113R"
 brand = "brand/primal-rc"
 number = "PRRMT113R"
-name = "Raminator Monster Truck Rim PRRMT113R"
+name = "Raminator Monster Truck Rim"
 notes = "Name from taylorrc.co.uk (dealer)"
 links = [
   { site = "Primal RC", url = "https://primalrc.com/product/prrmt113r/" },
 ]
 category = "wheel"
 vehicle = "monster"
+fits = [
+  { kit = "kit/primal-rc/grave-digger", type = "direct", source = "doc/primal-rc/grave-digger-collectors-manual", notes = "Variant of PRRMT113, which the manual lists" },
+  { kit = "kit/primal-rc/primal-mt", type = "direct", source = "doc/primal-rc/primal-mt-v4-manual", notes = "Variant of PRRMT113, which the manual lists" },
+  { kit = "kit/primal-rc/raminator", type = "direct", source = "doc/primal-rc/raminator-v4-manual", notes = "Variant of PRRMT113, which the manual lists" },
+  { kit = "kit/primal-rc/son-uva-digger", releases = ["release/primal-rc/prsud3"], type = "direct", source = "doc/primal-rc/son-uva-digger-v3-manual", notes = "Variant of PRRMT113, which the manual lists" },
+]

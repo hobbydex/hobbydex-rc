@@ -1,4 +1,13 @@
 id = "part/primal-rc/QS2104"
 brand = "brand/primal-rc"
 number = "QS2104"
-name = "/ I Li QS2217"
+name = "1800mAh Ni-MH battery"
+name_source = "ocr"
+notes = "Name from the Primal manual's parts list"
+gtin = "00840429501890"
+numbers = ["PRQS2104"]
+former_ids = ["part/primal-rc/PRQS2104"]
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
+]
+category = "battery"

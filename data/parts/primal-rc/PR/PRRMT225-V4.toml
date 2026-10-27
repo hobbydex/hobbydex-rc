@@ -1,9 +1,16 @@
 id = "part/primal-rc/PRRMT225-V4"
 brand = "brand/primal-rc"
 number = "PRRMT225-V4"
-name = "V4 Monster Truck Sway Bar Complete Conversion Kit - PRRMT225-V4"
+name = "V4 Monster Truck Sway Bar Complete Conversion Kit"
 notes = "Name from taylorrc.co.uk (dealer)"
 links = [
   { site = "Primal RC", url = "https://primalrc.com/product/prrmt225-v4/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/primal-rc/raminator", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "RMT-series number, the series the Monster Truck manuals print" },
+  { kit = "kit/primal-rc/primal-mt", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "RMT-series number, the series the Monster Truck manuals print" },
+  { kit = "kit/primal-rc/mega-monster-truck", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "RMT-series number, the series the Monster Truck manuals print" },
+  { kit = "kit/primal-rc/grave-digger", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "RMT-series number, the series the Monster Truck manuals print" },
+  { kit = "kit/primal-rc/son-uva-digger", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "RMT-series number, the series the Monster Truck manuals print" },
+]

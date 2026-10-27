@@ -4,3 +4,10 @@ number = "QS2076"
 name = "Spur gear 53 tooth"
 category = "spur-gear"
 teeth = 53
+gtin = "00840429501616"
+numbers = ["PRQS2076"]
+former_ids = ["part/primal-rc/PRQS2076"]
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
+  { kit = "kit/primal-rc/qs1001-electric-dragster", type = "direct", source = "doc/primal-rc/electric-dragster-manual", notes = "Listed in the 1/5 Scale Electric Dragster manual parts list" },
+]

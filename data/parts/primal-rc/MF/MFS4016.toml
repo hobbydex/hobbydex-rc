@@ -6,3 +6,10 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m4x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+numbers = ["PRMFS4016"]
+former_ids = ["part/primal-rc/PRMFS4016"]
+fits = [
+  { kit = "kit/primal-rc/dodge-challenger", type = "direct", source = "doc/primal-rc/dodge-challenger-electric-manual", notes = "Listed in the 1/5 Scale Dodge Challenger (electric) manual parts list" },
+  { kit = "kit/primal-rc/grave-digger", releases = ["release/primal-rc/prgd4"], type = "direct", source = "doc/primal-rc/grave-digger-standard-manual", notes = "Listed in the 1/5 Grave Digger Standard Edition manual parts list" },
+  { kit = "kit/primal-rc/son-uva-digger", releases = ["release/primal-rc/prsud3"], type = "direct", source = "doc/primal-rc/son-uva-digger-v3-manual", notes = "Listed in the 1/5 Son-Uva Digger V3 manual parts list" },
+]
