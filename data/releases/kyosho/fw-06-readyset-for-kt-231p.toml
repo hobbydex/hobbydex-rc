@@ -7,6 +7,7 @@ kind = "rtr"
 status = "released"
 documents = ["doc/kyosho/fw-06-kt-231p-spop", "doc/kyosho/fw-06-kt-231p-ex", "doc/kyosho/fw-06-kt-231p-im", "doc/kyosho/fw-06-kt-231p-mm"]
 contains = [
+  { part = "part/kyosho/1-E025", role = "kit", source = "doc/kyosho/fw-06-kt-231p-ex" },
   { part = "part/kyosho/1790BL", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/82133", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/82134", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
@@ -27,6 +28,7 @@ contains = [
   { part = "part/kyosho/92972", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/92985", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/96183BL", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
+  { part = "part/kyosho/96643", role = "kit", source = "doc/kyosho/fw-06-kt-231p-ex" },
   { part = "part/kyosho/97001", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/97008-15", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/97008-20", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
@@ -119,6 +121,7 @@ contains = [
   { part = "part/kyosho/W6006", role = "kit", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/12228", role = "option", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/12244", role = "option", source = "doc/kyosho/fw-06-kt-231p-spop" },
+  { part = "part/kyosho/33201", role = "listed", source = "doc/kyosho/fw-06-kt-231p-im" },
   { part = "part/kyosho/39212", role = "option", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/39285B", role = "option", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/39294B", role = "option", source = "doc/kyosho/fw-06-kt-231p-spop" },
@@ -150,5 +153,4 @@ contains = [
   { part = "part/kyosho/VZ116-27", role = "option", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/VZ217", role = "option", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { part = "part/kyosho/VZW035", role = "option", source = "doc/kyosho/fw-06-kt-231p-spop" },
-  { part = "part/kyosho/33201", role = "listed", source = "doc/kyosho/fw-06-kt-231p-im" },
 ]

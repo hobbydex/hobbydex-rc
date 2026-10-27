@@ -9,6 +9,8 @@ seen_by = "2008-11"
 seen_by_source = "https://web.archive.org/web/20081120022650/http://www.kyosho.com/jpn/support/instructionmanual/superten/pdf/31001_superten_p.pdf"
 documents = ["doc/kyosho/31001-superten-m", "doc/kyosho/31001-superten-p", "doc/kyosho/31001-superten-t"]
 contains = [
+  { part = "part/kyosho/1901", role = "kit", source = "doc/kyosho/31001-superten-t" },
+  { part = "part/kyosho/1911", role = "kit", source = "doc/kyosho/31001-superten-t" },
   { part = "part/kyosho/39645", role = "kit", source = "doc/kyosho/31001-superten-p" },
   { part = "part/kyosho/74901", role = "kit", source = "doc/kyosho/31001-superten-p" },
   { part = "part/kyosho/74901-12", role = "kit", source = "doc/kyosho/31001-superten-p" },

@@ -6,3 +6,12 @@ name_source = "ocr"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 category = "washer-shim"
 documents = ["doc/kyosho/30021-tf-5-m"]
+fits = [
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-t" },
+  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/31096f-dbx-readyset-mm-t" },
+  { kit = "kit/kyosho/inferno-mp7-5", type = "direct", source = "doc/kyosho/31276-mm01-mp75sp2-t" },
+  { kit = "kit/kyosho/inferno-us-sports", type = "direct", source = "doc/kyosho/31277sg-inferno-us-sports2-t" },
+  { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31351-infst-t" },
+  { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-ex" },
+  { kit = "kit/kyosho/dst", type = "direct", source = "doc/kyosho/31097t2-dst-kt-6-mm-t" },
+]

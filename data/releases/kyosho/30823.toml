@@ -12,9 +12,11 @@ gtin = "4548565088942"
 documents = ["doc/kyosho/30823-tf5-readyset-mm-p", "doc/kyosho/30823-tf5-readyset-mm-t", "doc/kyosho/30823-tf5-readyset-im-m", "doc/kyosho/30823-tf5-readyset-mm-m", "doc/kyosho/30823-product-page"]
 depicts = { make = "Mazda", model = "6" }
 contains = [
-  { part = "part/kyosho/71911", role = "listed", source = "doc/kyosho/30823-tf5-readyset-im-m" },
-  { part = "part/kyosho/71912", role = "listed", source = "doc/kyosho/30823-tf5-readyset-im-m" },
-  { part = "part/kyosho/LA224", role = "option", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
+  { part = "part/kyosho/1382", role = "kit", source = "doc/kyosho/30823-tf5-readyset-mm-t" },
+  { part = "part/kyosho/1383", role = "kit", source = "doc/kyosho/30823-tf5-readyset-mm-t" },
+  { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/30823-tf5-readyset-mm-t" },
+  { part = "part/kyosho/BRG001", role = "kit", source = "doc/kyosho/30823-tf5-readyset-mm-t" },
+  { part = "part/kyosho/BRG014", role = "kit", source = "doc/kyosho/30823-tf5-readyset-mm-t" },
   { part = "part/kyosho/1700KP", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/1700KY", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/1701KP", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
@@ -27,6 +29,8 @@ contains = [
   { part = "part/kyosho/36219", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/36901", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/39081", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
+  { part = "part/kyosho/71911", role = "listed", source = "doc/kyosho/30823-tf5-readyset-im-m" },
+  { part = "part/kyosho/71912", role = "listed", source = "doc/kyosho/30823-tf5-readyset-im-m" },
   { part = "part/kyosho/72511", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/80311", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/80460", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
@@ -58,6 +62,7 @@ contains = [
   { part = "part/kyosho/LA213", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/LA22", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/LA221", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
+  { part = "part/kyosho/LA224", role = "option", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/LA228", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/LA230", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },
   { part = "part/kyosho/LA43", role = "listed", source = "doc/kyosho/30823-tf5-readyset-mm-m" },

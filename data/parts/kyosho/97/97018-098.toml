@@ -19,9 +19,13 @@ fits = [
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
   { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34362-04-rsa-out-ram-pro-spop" },
   { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
+  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-ex" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-ex" },
 ]
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2x9.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/97018-098.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/97018-098.html" },
+]

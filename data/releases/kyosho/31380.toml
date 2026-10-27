@@ -9,6 +9,7 @@ seen_by = "2008-11"
 seen_by_source = "https://web.archive.org/web/20081120004014/http://www.kyosho.com/jpn/support/instructionmanual/pureten_fw05/pdf/31380_fw05t_m.pdf"
 documents = ["doc/kyosho/31380-mm01-fw05t-maint-m", "doc/kyosho/31380-mm01-fw05t-maint-p", "doc/kyosho/31380-mm01-fw05t-maint-t", "doc/kyosho/31380-fw05t-m"]
 contains = [
+  { part = "part/kyosho/1382", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-t" },
   { part = "part/kyosho/39171-1", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
   { part = "part/kyosho/39172", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
   { part = "part/kyosho/39172-1", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
@@ -79,6 +80,7 @@ contains = [
   { part = "part/kyosho/92696", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
   { part = "part/kyosho/92971", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
   { part = "part/kyosho/92972", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
+  { part = "part/kyosho/96643", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-t" },
   { part = "part/kyosho/AGH001", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
   { part = "part/kyosho/AGT001", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
   { part = "part/kyosho/BRG001", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
@@ -167,8 +169,6 @@ contains = [
   { part = "part/kyosho/VZW020-01", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
   { part = "part/kyosho/W5018", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
   { part = "part/kyosho/W5161", role = "kit", source = "doc/kyosho/31380-mm01-fw05t-maint-p" },
-  { part = "part/kyosho/VS033", role = "option", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
-  { part = "part/kyosho/VSW004B", role = "option", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/1284", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/1335", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/1808", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
@@ -185,8 +185,10 @@ contains = [
   { part = "part/kyosho/SIL7000", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/SILO150", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/VS011", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
+  { part = "part/kyosho/VS033", role = "option", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/VS058", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/VSW002", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
+  { part = "part/kyosho/VSW004B", role = "option", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/VZ013", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
   { part = "part/kyosho/VZ116", role = "listed", source = "doc/kyosho/31380-mm01-fw05t-maint-m" },
 ]

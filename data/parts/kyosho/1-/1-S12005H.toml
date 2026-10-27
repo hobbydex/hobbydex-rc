@@ -10,9 +10,13 @@ fits = [
   { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
   { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-exploded-view" },
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inferno-mp10e-kit-exploded-view" },
+  { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/33010-inferno-gt3-ex" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-ex" },
 ]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2x5-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s12005h.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s12005h.html" },
+]

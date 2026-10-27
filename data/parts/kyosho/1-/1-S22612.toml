@@ -13,9 +13,13 @@ fits = [
   { kit = "kit/kyosho/turbo-scorpion", type = "direct", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
   { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/33010-inferno-gt3-ex" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33027-inf-gt2-rs-kt-331p-ex" },
 ]
 category = "screw"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s22612.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s22612.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m2.6x12-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

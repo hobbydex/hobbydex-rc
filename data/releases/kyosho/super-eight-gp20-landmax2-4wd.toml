@@ -10,6 +10,7 @@ seen_by = "2016-01"
 seen_by_source = "https://web.archive.org/web/20160117132229/http://www.kyosho.com:80/jpn/support/instructionmanual/supereight_gp/pdf/31172_landmax2_m.pdf"
 documents = ["doc/kyosho/31172-landmax2-p", "doc/kyosho/31172-landmax2-t", "doc/kyosho/31172-landmax2-m"]
 contains = [
+  { part = "part/kyosho/1383", role = "kit", source = "doc/kyosho/31172-landmax2-t" },
   { part = "part/kyosho/BS107", role = "kit", source = "doc/kyosho/31172-landmax2-p" },
   { part = "part/kyosho/BS124", role = "kit", source = "doc/kyosho/31172-landmax2-p" },
   { part = "part/kyosho/BS16", role = "kit", source = "doc/kyosho/31172-landmax2-p" },
