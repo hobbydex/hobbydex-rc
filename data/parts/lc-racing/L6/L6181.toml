@@ -4,5 +4,7 @@ number = "L6181"
 name = "TC Suspension Arm Set (2x Front + 2x Rear)"
 documents = ["doc/lc-racing/l6181-product-page"]
 applies_to = "EMB-TC, EMB-RA"
-fits = []
+fits = [
+  { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/l6181-product-page" },
+]
 category = "suspension"

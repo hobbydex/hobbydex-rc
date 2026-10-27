@@ -4,7 +4,9 @@ number = "L6265"
 name = "25mm 14 Spokes Rally Tires Set 2pcs Gold(12mm Hex)"
 documents = ["doc/lc-racing/l6265-product-page"]
 applies_to = "EMB-RA"
-fits = []
+fits = [
+  { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/l6265-product-page" },
+]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "tire"

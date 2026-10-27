@@ -6,5 +6,7 @@ documents = ["doc/lc-racing/l6178-product-page"]
 pack_qty = 2
 pack_qty_basis = "name"
 applies_to = "EMB-TC, EMB-RA"
-fits = []
+fits = [
+  { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/l6178-product-page" },
+]
 category = "drivetrain"

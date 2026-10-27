@@ -6,5 +6,7 @@ documents = ["doc/lc-racing/l6247-product-page"]
 pack_qty = 2
 pack_qty_basis = "name"
 applies_to = "EMB-TG"
-fits = []
+fits = [
+  { kit = "kit/lc-racing/emb-tgh", type = "direct", source = "doc/lc-racing/l6247-product-page" },
+]
 category = "tire"

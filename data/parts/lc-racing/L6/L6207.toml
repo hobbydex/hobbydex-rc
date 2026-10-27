@@ -9,4 +9,6 @@ equivalent_to = [
   { spec = "spec/bearing/7x11x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
-fits = []
+fits = [
+  { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/l6207-product-page" },
+]

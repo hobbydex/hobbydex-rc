@@ -4,5 +4,7 @@ number = "L6170"
 name = "TC Dogbone/DriveShaft Rear"
 documents = ["doc/lc-racing/l6170-product-page"]
 applies_to = "EMB-TC, EMB-RA"
-fits = []
+fits = [
+  { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/l6170-product-page" },
+]
 category = "drivetrain"
