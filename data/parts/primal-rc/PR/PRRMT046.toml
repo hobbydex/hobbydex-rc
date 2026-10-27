@@ -4,6 +4,10 @@ number = "PRRMT046"
 name = "24mm Wheel hex hub"
 name_source = "manual"
 notes = "Name from the Primal manual's parts list"
+category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/24mm", match = "exact", notes = "Hex size from the name" },
+]
 
 [sources]
 name = "https://primalrc.com/vehicles/"
