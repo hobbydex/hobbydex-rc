@@ -3,10 +3,13 @@ brand = "brand/boom-racing"
 number = "BRW750310"
 name = "BADASS Heavy Duty Stainless Steel End Pivot Balls 5.8x3x7.4mm"
 pack_qty = 5
-pack_qty_basis = "page"
+fits = [
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/badass-heavy-duty-stainless-steel-end-pivot-balls-58x3x74mm-5-204170" },
 ]
+pack_qty_basis = "page"
 category = "ball-end"
 ball_mm = 5.8
 material = "stainless"

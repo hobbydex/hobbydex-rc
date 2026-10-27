@@ -5,6 +5,12 @@ name = "Rear Center Wheel Hub Cap For Boom Racing 1.55\" / 1.9\" Steelie Beadloc
 wheel_size = "1.55\""
 vehicle = "crawler"
 beadlock = true
+fits = [
+  { kit = "kit/boom-racing/brx01", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx01-awb", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop" },
+]
 notes = "The shop lists it as BRW780909/COVERR"
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/rear-center-wheel-hub-cap-for-boom-racing-155-19-steelie-beadlock-wheels-xt5-series-150072" },

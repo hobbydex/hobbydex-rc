@@ -3,10 +3,15 @@ brand = "brand/boom-racing"
 number = "BRD8012"
 name = "Aluminum Rear Lockout for BRX80 PHAT Axle #BRD8023 (2) Black"
 pack_qty = 2
-pack_qty_basis = "name"
+fits = [
+  { kit = "kit/boom-racing/brx01-awb", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-109", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-88", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/aluminum-rear-lockout-for-brx80-phat-axle-brd8023-2-black-205253" },
 ]
+pack_qty_basis = "name"
 category = "drivetrain"
 color = "black"
 material = "aluminium"

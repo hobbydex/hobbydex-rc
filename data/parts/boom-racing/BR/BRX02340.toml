@@ -3,9 +3,12 @@ brand = "brand/boom-racing"
 number = "BRX02340"
 name = "KUDU Aluminum Rock Slider (2) for Land Rover Series 109"
 pack_qty = 2
-pack_qty_basis = "name"
+fits = [
+  { kit = "kit/boom-racing/brx02-109", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/kudu-aluminum-rock-slider-2-for-land-rover-series-109-233641" },
 ]
+pack_qty_basis = "name"
 category = "bumper-guard"
 material = "aluminium"
