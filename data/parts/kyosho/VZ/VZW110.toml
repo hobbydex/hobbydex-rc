@@ -8,4 +8,9 @@ gtin = "4955439070765"
 category = "chassis"
 documents = ["doc/kyosho/vzw110-sp-carbon-upper-plateset", "doc/kyosho/vzw110-product-page"]
 material = "carbon"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/vzw110.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/vzw110.html" },
+]
+fits = [
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
+]
