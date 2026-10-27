@@ -5,7 +5,7 @@ name = "Screws, 3x10mm caphead machine (hex drive) (6)/ lockwashers (6)/ hex wre
 gtin = "020334315908"
 category = "screw"
 includes = [
-  { spec = "spec/screw/m3x10-socket-cap-hex", notes = "Size from the name; the count is not stated" },
+  { spec = "spec/screw/m3x10-socket-cap-hex", qty = 6 },
 ]
 fits = [
   { kit = "kit/traxxas/nitro-slash", type = "direct", source = "doc/traxxas/44056-3-parts-list" },
