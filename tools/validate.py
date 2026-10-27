@@ -801,8 +801,9 @@ def main():
                 own_urls |= {doc_pages[x] for x in d.get("documents", []) if x in doc_pages}
                 own_urls |= {product_urls[x] for x in d.get("documents", []) if x in product_urls}
                 own_page = isinstance(ss, str) and ss in own_urls   # the maker's page we fetched first (the day it was on its site)
-                if not (archive or shop or manual or own_page):
-                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, or the maker's page the release declares (its link, source, product page or document page)")
+                video = isinstance(ss, str) and re.fullmatch(r"https://www\.youtube\.com/watch\?v=[\w-]+", ss)   # a back-catalogue video (the bound is its upload day)
+                if not (archive or shop or manual or own_page or video):
+                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), or the maker's YouTube video of its first 60 days")
                 elif archive and not manual and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
