@@ -2,6 +2,7 @@ id = "category/nut"
 name = "Nuts"
 summary = "Nuts and lock nuts by thread, type and hex size"
 description = "Nuts and lock nuts by thread, type and hex size. Lock nuts are kept apart by how they lock: a nylon insert, an all-metal (deformed) thread or a serrated flange; a nut whose brand only says \"lock nut\" stays a lock nut of unstated kind."
+any_car = true
 spec_type = "nut"
 key_fields = [
   { field = "thread", label = "Thread", from = "spec" },

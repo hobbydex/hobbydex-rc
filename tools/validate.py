@@ -1067,6 +1067,8 @@ def main():
             elif "year" in d and int(rd[:4]) != d["year"]:
                 errors.append(f"{path}: released {rd} does not match year {d['year']}")
         if kind == "category":
+            if "any_car" in d and d["any_car"] is not True:
+                errors.append(f"{path}: any_car is true or left out")
             for kf in d.get("key_fields", []):
                 if not kf.get("field") or not kf.get("label") or kf.get("from") not in ("part", "spec"):
                     errors.append(f"{path}: key_fields entry {kf!r} needs field, label and from = part|spec")

@@ -2,6 +2,7 @@ id = "category/paint"
 name = "Paints"
 summary = "Body and parts paints, primers and clear coats"
 description = "Paints for bodies and parts: spray cans, airbrush-ready and brush paints, with their primers and clear coats."
+any_car = true
 key_fields = [
   { field = "paint_type", label = "Type", from = "part" },
   { field = "application", label = "Application", from = "part" },

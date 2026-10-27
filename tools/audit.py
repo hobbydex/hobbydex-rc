@@ -623,6 +623,19 @@ def main():
     check("duplicate-doc-ref", "remove the repeated entry from the release's documents; the importer that appends it should test membership first",
           [r for r in rels if len(set(r.get("documents", []))) != len(r.get("documents", []))])
 
+    # 19b. parts of a car-specific category with no fits row and no release naming them (categories flagged
+    # any_car = true in data/categories are not made for one car, so they are left out: docs/schema.md "category")
+    any_car = {c["id"].split("/")[-1] for c in db["categories"] if c.get("any_car")}
+    in_box = {c["part"] for r in rels for c in r.get("contains", [])}
+    # a part that names the model it is for (applies_to) is car-specific whatever its category (a Fast Eddy bearing set for one car)
+    is_any = lambda p: p.get("category") in any_car and not p.get("applies_to")
+    no_car = [p for p in parts if p["id"] not in in_box and not p.get("fits") and p.get("category") and not is_any(p)]
+    generic_unlinked = sum(1 for p in parts if p["id"] not in in_box and not p.get("fits") and is_any(p))
+    per_brand = collections.Counter(p["brand"].split("/")[-1] for p in no_car)
+    check("part-no-car-link", "link the part to the kits and releases it fits (a fits row), or to the release that contains it; the list per brand is the linking queue",
+          no_car, per_brand=per_brand.most_common(),
+          detail=f"{generic_unlinked} unlinked parts of any-car categories are left out; {sum(1 for p in parts if not p.get('category') and p['id'] not in in_box and not p.get('fits'))} unlinked parts have no category yet")
+
     # 20. part fits a kit that has no releases
     check("fits-kit-no-release", "add the kit's release, or remove the fit row",
           [p for p in parts for f in p.get("fits", []) if f.get("kit") in kits and not rels_of_kit.get(f["kit"])])
