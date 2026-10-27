@@ -3,7 +3,6 @@ kit = "kit/tamiya/rc-tank-1-16"
 brand = "brand/tamiya"
 number = "56028"
 name = "Russian Heavy Tank KV-1"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/913-56027-56028-russian-heavy-tank-kv-1" }
 kind = "kit"
 status = "discontinued"
 depicts = { model = "KV-1" }
@@ -12,3 +11,36 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56028", kind = "fan-site" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/913-56027-56028-russian-heavy-tank-kv-1", kind = "fan-site" },
 ]
+contains = [
+  { part = "part/tamiya/14205020", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/14205021", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/15365007", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/17255010", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/17255019", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/17255032", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/19443023", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 2, step = "MB2" },
+  { part = "part/tamiya/19483006", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 2, step = "MC2" },
+  { part = "part/tamiya/19485077", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 6, step = "MA6" },
+  { part = "part/tamiya/19804158", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 10, step = "MA4" },
+  { part = "part/tamiya/19804230", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/19804364", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/19805612", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/19805636", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 2, step = "MB1" },
+  { part = "part/tamiya/19805663", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 4, step = "MC3" },
+  { part = "part/tamiya/19805754", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 10, step = "MB3" },
+  { part = "part/tamiya/19805758", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 5, step = "MB7" },
+  { part = "part/tamiya/19805779", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/19805853", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 5, step = "MA3" },
+  { part = "part/tamiya/19805887", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 10, step = "MC1" },
+  { part = "part/tamiya/19805898", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 10, step = "MA2" },
+  { part = "part/tamiya/19808003", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/50573", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 10, step = "MB4" },
+  { part = "part/tamiya/50586", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 15, step = "MB6" },
+  { part = "part/tamiya/50588", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/50590", role = "kit", source = "doc/tamiya/56028-manual-usa" },
+  { part = "part/tamiya/50633", role = "kit", source = "doc/tamiya/56028-manual-usa", qty = 6, step = "MT3" },
+]
+documents = ["doc/tamiya/56028-manual-usa"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/913-56027-56028-russian-heavy-tank-kv-1"

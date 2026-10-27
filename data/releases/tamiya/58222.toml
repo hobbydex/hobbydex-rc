@@ -3,7 +3,6 @@ kit = "kit/tamiya/unknown-58"
 brand = "brand/tamiya"
 number = "58222"
 name = "Ford SVT F-150 Ligthning"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/2-58xxx-kit-manuals-pdf/88110-manual-58222" }
 kind = "kit"
 status = "discontinued"
 depicts = { make = "Ford", model = "SVT F-150 Ligthning" }
@@ -15,3 +14,44 @@ links = [
 released = "1998-10-22"
 released_source = "TamiyaBase"
 year = 1998
+contains = [
+  { part = "part/tamiya/10445703", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/10555015", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 10, step = "MA8" },
+  { part = "part/tamiya/11055828", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/11825181", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/13555120", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/58222-manual-usa", step = "MA15" },
+  { part = "part/tamiya/16095003", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/17435044", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/19415332", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/19415333", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/19415335", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/19415461", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/19495299", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/19805368", role = "kit", source = "doc/tamiya/58222-manual-usa", step = "MB10, MB11" },
+  { part = "part/tamiya/19805369", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 2, step = "MB12" },
+  { part = "part/tamiya/19805485", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 2, step = "MB14" },
+  { part = "part/tamiya/50038", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 4, step = "MA14" },
+  { part = "part/tamiya/50171", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/50197", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 15, step = "MB7, MB8" },
+  { part = "part/tamiya/50355", role = "kit", source = "doc/tamiya/58222-manual-usa", step = "MA13", notes = "Only 19T, 21T and 23T can be used," },
+  { part = "part/tamiya/50419", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/50573", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/50575", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/50576", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 10, step = "MA14" },
+  { part = "part/tamiya/50577", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 10, step = "MA4" },
+  { part = "part/tamiya/50582", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 5, step = "MA2" },
+  { part = "part/tamiya/50594", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 10, step = "MA12" },
+  { part = "part/tamiya/50595", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/50602", role = "kit", source = "doc/tamiya/58222-manual-usa", step = "MA7, MA16, MA18" },
+  { part = "part/tamiya/50650", role = "kit", source = "doc/tamiya/58222-manual-usa", qty = 2, step = "MB13" },
+  { part = "part/tamiya/50735", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/50736", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/50737", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/50738", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+  { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/58222-manual-usa" },
+]
+documents = ["doc/tamiya/58222-manual-usa"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/2-58xxx-kit-manuals-pdf/88110-manual-58222"

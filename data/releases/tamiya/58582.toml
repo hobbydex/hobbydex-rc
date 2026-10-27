@@ -10,7 +10,18 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58582", kind = "fan-site" },
 ]
 documents = ["doc/tamiya/58582-manual-usa"]
-sources = { kit = "https://web.archive.org/web/20150412011518/http://www.tamiyausa.com/pdf/manuals/58582ml.pdf" }
 released = "2013-10-16"
 released_source = "TamiyaBase"
 year = 2013
+contains = [
+  { part = "part/tamiya/11053727", role = "kit", source = "doc/tamiya/58582-manual-usa" },
+  { part = "part/tamiya/19000576", role = "kit", source = "doc/tamiya/58582-manual-usa" },
+  { part = "part/tamiya/19005859", role = "kit", source = "doc/tamiya/58582-manual-usa" },
+  { part = "part/tamiya/19495804", role = "kit", source = "doc/tamiya/58582-manual-usa" },
+  { part = "part/tamiya/19804465", role = "kit", source = "doc/tamiya/58582-manual-usa" },
+  { part = "part/tamiya/19808058", role = "kit", source = "doc/tamiya/58582-manual-usa" },
+  { part = "part/tamiya/51544", role = "kit", source = "doc/tamiya/58582-manual-usa" },
+]
+
+[sources]
+kit = "https://web.archive.org/web/20150412011518/http://www.tamiyausa.com/pdf/manuals/58582ml.pdf"

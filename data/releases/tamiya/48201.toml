@@ -3,7 +3,6 @@ kit = "kit/tamiya/tamtech"
 brand = "brand/tamiya"
 number = "48201"
 name = "48201"
-sources = { category = "https://www.tamiyabase.com/tamiya-models/48201" }
 kind = "kit"
 category = "tank"
 status = "discontinued"
@@ -14,4 +13,16 @@ links = [
 released = "1999-10-20"
 released_source = "TamiyaBase"
 year = 1999
-documents = ["doc/tamiya/48201-product-page-ja"]
+documents = ["doc/tamiya/48201-product-page-ja", "doc/tamiya/48201-manual-usa"]
+contains = [
+  { part = "part/tamiya/10003278", role = "kit", source = "doc/tamiya/48201-manual-usa" },
+  { part = "part/tamiya/10333123", role = "kit", source = "doc/tamiya/48201-manual-usa" },
+  { part = "part/tamiya/11053171", role = "kit", source = "doc/tamiya/48201-manual-usa" },
+  { part = "part/tamiya/19003335", role = "kit", source = "doc/tamiya/48201-manual-usa" },
+  { part = "part/tamiya/19003336", role = "kit", source = "doc/tamiya/48201-manual-usa" },
+  { part = "part/tamiya/19003337", role = "kit", source = "doc/tamiya/48201-manual-usa" },
+  { part = "part/tamiya/19403042", role = "kit", source = "doc/tamiya/48201-manual-usa" },
+]
+
+[sources]
+category = "https://www.tamiyabase.com/tamiya-models/48201"

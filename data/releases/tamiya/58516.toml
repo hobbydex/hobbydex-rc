@@ -3,11 +3,12 @@ kit = "kit/tamiya/unknown-58"
 brand = "brand/tamiya"
 number = "58516"
 name = "BMX 318i STW"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/11-pdf-bodyset-instructions/88332-body-58516", category = "https://www.tamiyabase.com/tamiya-models/58516" }
 kind = "kit"
 category = "touring"
 status = "discontinued"
-related = [{ release = "release/tamiya/58171", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/58516" }]
+related = [
+  { release = "release/tamiya/58171", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/58516" },
+]
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's manual title; Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58516", kind = "fan-site" },
@@ -16,3 +17,18 @@ links = [
 released = "2012-02-08"
 released_source = "TamiyaBase"
 year = 2012
+contains = [
+  { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/58516-manual-de" },
+  { part = "part/tamiya/19805755", role = "kit", source = "doc/tamiya/58516-manual-de" },
+  { part = "part/tamiya/19805756", role = "kit", source = "doc/tamiya/58516-manual-de" },
+  { part = "part/tamiya/50038", role = "kit", source = "doc/tamiya/58516-manual-de" },
+  { part = "part/tamiya/50573", role = "kit", source = "doc/tamiya/58516-manual-de" },
+  { part = "part/tamiya/50581", role = "kit", source = "doc/tamiya/58516-manual-de" },
+  { part = "part/tamiya/50583", role = "kit", source = "doc/tamiya/58516-manual-de" },
+  { part = "part/tamiya/51008", role = "kit", source = "doc/tamiya/58516-manual-de" },
+]
+documents = ["doc/tamiya/58516-manual-de"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/11-pdf-bodyset-instructions/88332-body-58516"
+category = "https://www.tamiyabase.com/tamiya-models/58516"
