@@ -5,9 +5,6 @@ source = "doc/yikong/yikongrccar-dealer-listing"
 links = [
   { site = "yikongrccar.com (dealer)", url = "https://www.yikongrccar.com/yikong-yk4101-parts/885-yikong-yk4101-rc-truck-parts-button-head-screws-m312-13088.html", kind = "dealer" },
 ]
-equivalent_to = [
-  { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 category = "screw"
 fits = [
   { kit = "kit/yikong/yk4101", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },

@@ -3,9 +3,6 @@ brand = "brand/primal-rc"
 number = "QS2220"
 name = "M4×45 Cap head screw"
 category = "screw"
-equivalent_to = [
-  { spec = "spec/screw/m4x45-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 fits = [
   { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
   { kit = "kit/primal-rc/qs1001-electric-dragster", type = "direct", source = "doc/primal-rc/electric-dragster-manual", notes = "Listed in the 1/5 Scale Electric Dragster manual parts list" },

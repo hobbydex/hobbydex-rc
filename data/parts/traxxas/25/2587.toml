@@ -7,9 +7,6 @@ pack_qty = 6
 pack_qty_basis = "page"
 category = "screw"
 category_source = "curated"
-equivalent_to = [
-  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 fits = [
   { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },
   { kit = "kit/traxxas/4-tec-drift", type = "direct", source = "doc/traxxas/105237-4-parts-list" },
