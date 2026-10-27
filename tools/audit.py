@@ -447,9 +447,10 @@ def main():
     else:
         results["manual-unlinked"] = {"fix": "hobbydex-tools cache not found (--tools)", "count": None, "examples": [], "all": []}
 
-    # 7. Horizon documents without a page
+    # 7. Horizon documents without a page (a product_page or owner_report is itself the page: docs/schema.md)
     check("horizon-doc-no-page", "give the document its page (the Horizon product or support page that lists the file)",
-          [d for d in docs.values() if d.get("brand") in horizon and not d.get("page")])
+          [d for d in docs.values() if d.get("brand") in horizon and not d.get("page")
+           and d.get("kind") not in ("product_page", "owner_report")])
 
     # 10. parts with a cached maker product page but no maker link, and maker links to pages the crawl has as 404
     # (hobbydex-tools tools/link_maker_pages.py --dry-run reports both per brand; the daily derive step links or prunes them)
