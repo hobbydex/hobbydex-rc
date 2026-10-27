@@ -2,6 +2,10 @@ id = "part/lc-racing/L5011"
 brand = "brand/lc-racing"
 number = "L5011"
 name = "Chassis Aluminum 2.0mm"
+documents = ["doc/lc-racing/l5011-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5011-product-page" },
+]

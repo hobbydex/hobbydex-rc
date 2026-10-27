@@ -1,0 +1,15 @@
+id = "part/lc-racing/C7142"
+brand = "brand/lc-racing"
+number = "C7142"
+name = "Gear Differential Outdrive Liner"
+documents = ["doc/lc-racing/c7142-product-page"]
+pack_qty = 4
+pack_qty_basis = "name"
+applies_to = "PTG-1/2/2R/2TC and LC10B5/B5V2"
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7142-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c7142-product-page" },
+  { kit = "kit/lc-racing/ptg-2tc", type = "direct", source = "doc/lc-racing/c7142-product-page" },
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7142-product-page" },
+]
+category = "differential"

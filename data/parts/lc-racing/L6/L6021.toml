@@ -2,6 +2,7 @@ id = "part/lc-racing/L6021"
 brand = "brand/lc-racing"
 number = "L6021"
 name = "Rear Shock Set"
+documents = ["doc/lc-racing/l6021-product-page"]
 applies_to = "BHC-1, EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TG, EMB-MT, LC12B1"
 category = "shock"
 shock_part = "complete"
@@ -24,4 +25,13 @@ includes = [
   { part = "part/lc-racing/HM6015" },
   { part = "part/lc-racing/HM6016" },
   { part = "part/lc-racing/HM6023" },
+]
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l6021-product-page" },
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6021-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6021-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6021-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6021-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6021-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6021-product-page" },
 ]

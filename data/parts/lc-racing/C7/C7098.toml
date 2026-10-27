@@ -3,5 +3,11 @@ brand = "brand/lc-racing"
 number = "C7098"
 name = "Antenna Tube With Caps"
 pack_qty = 5
+documents = ["doc/lc-racing/c7098-product-page"]
 applies_to = "LC10B5, PTG-1, PTG-2, PTG-2R"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7098-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7098-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c7098-product-page" },
+]

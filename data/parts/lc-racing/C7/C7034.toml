@@ -2,5 +2,9 @@ id = "part/lc-racing/C7034"
 brand = "brand/lc-racing"
 number = "C7034"
 name = "Slipper Nut+Spring set"
+documents = ["doc/lc-racing/c7034-product-page"]
 applies_to = "LC10B5"
 category = "shock-spring"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7034-product-page" },
+]

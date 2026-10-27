@@ -2,5 +2,11 @@ id = "part/lc-racing/C7070"
 brand = "brand/lc-racing"
 number = "C7070"
 name = "Servo Saver Spring & Adjustable Nut"
+documents = ["doc/lc-racing/c7070-product-page"]
 applies_to = "LC10B5, PTG-1, PTG-2, PTG-2R"
 category = "steering"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7070-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7070-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c7070-product-page" },
+]

@@ -3,6 +3,7 @@ brand = "brand/lc-racing"
 number = "L6061"
 name = "MT Tires Set Mounted, 12mm"
 pack_qty = 2
+documents = ["doc/lc-racing/l6061-product-page"]
 applies_to = "EMB-MT"
 includes = [
   { part = "part/lc-racing/BE6107" },
@@ -12,3 +13,6 @@ includes = [
 category = "tire"
 vehicle = "monster"
 mounting = "pre-mounted"
+fits = [
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6061-product-page" },
+]

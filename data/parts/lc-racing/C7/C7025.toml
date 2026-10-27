@@ -3,6 +3,11 @@ brand = "brand/lc-racing"
 number = "C7025"
 name = "Shock O-Ring Red"
 pack_qty = 10
+documents = ["doc/lc-racing/c7025-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "o-ring-seal"
 color = "red"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7025-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7025-product-page" },
+]

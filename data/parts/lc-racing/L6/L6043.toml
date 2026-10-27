@@ -3,6 +3,7 @@ brand = "brand/lc-racing"
 number = "L6043"
 name = "CVA Drive Shaft"
 pack_qty = 1
+documents = ["doc/lc-racing/l6043-product-page"]
 applies_to = "EMB-WRC, EMB-1, EMB-SC, EMB-DT, EMB-TG, EMB-MT, LC12B1"
 includes = [
   { part = "part/lc-racing/HM6091" },
@@ -12,3 +13,11 @@ includes = [
   { part = "part/lc-racing/HM6095" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6043-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6043-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6043-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6043-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6043-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6043-product-page" },
+]

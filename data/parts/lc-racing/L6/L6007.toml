@@ -2,6 +2,7 @@ id = "part/lc-racing/L6007"
 brand = "brand/lc-racing"
 number = "L6007"
 name = "Steering Block,C-Hub,Upright Set"
+documents = ["doc/lc-racing/l6007-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT, LC12B1"
 category = "steering"
 includes = [
@@ -12,4 +13,12 @@ includes = [
   { part = "part/lc-racing/BE6040" },
   { part = "part/lc-racing/BE6041" },
   { part = "part/lc-racing/HM6025" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6007-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6007-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6007-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6007-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6007-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6007-product-page" },
 ]

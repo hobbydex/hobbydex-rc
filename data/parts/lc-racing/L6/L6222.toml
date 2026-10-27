@@ -2,5 +2,9 @@ id = "part/lc-racing/L6222"
 brand = "brand/lc-racing"
 number = "L6222"
 name = "LC12 Floating Servo Mount"
+documents = ["doc/lc-racing/l6222-product-page"]
 applies_to = ", LC12B1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6222-product-page" },
+]

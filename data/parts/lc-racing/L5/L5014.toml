@@ -2,5 +2,9 @@ id = "part/lc-racing/L5014"
 brand = "brand/lc-racing"
 number = "L5014"
 name = "Steering posts"
+documents = ["doc/lc-racing/l5014-product-page"]
 applies_to = "BHC-1"
 category = "steering"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5014-product-page" },
+]

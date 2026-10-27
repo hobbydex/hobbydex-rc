@@ -2,9 +2,14 @@ id = "part/lc-racing/L6025"
 brand = "brand/lc-racing"
 number = "L6025"
 name = "185mm wheelbase Chassis Side Guard Set"
+documents = ["doc/lc-racing/l6025-product-page"]
 applies_to = "EMB-1, EMB-TG, EMB-MT"
 category = "bumper-guard"
 includes = [
   { part = "part/lc-racing/BE6044" },
   { part = "part/lc-racing/BE6045" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6025-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6025-product-page" },
 ]

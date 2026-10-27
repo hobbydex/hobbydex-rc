@@ -2,9 +2,19 @@ id = "part/lc-racing/L6005"
 brand = "brand/lc-racing"
 number = "L6005"
 name = "Slipper Spur Gear 60T"
+documents = ["doc/lc-racing/l6005-product-page"]
 applies_to = "BHC-1/1ST, EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT, LC12B1"
 category = "spur-gear"
 teeth = 60
 includes = [
   { part = "part/lc-racing/BE6000" },
+]
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l6005-product-page" },
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6005-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6005-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6005-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6005-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6005-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6005-product-page" },
 ]

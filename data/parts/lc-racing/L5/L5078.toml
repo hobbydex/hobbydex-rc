@@ -2,5 +2,9 @@ id = "part/lc-racing/L5078"
 brand = "brand/lc-racing"
 number = "L5078"
 name = "BHC Gearbox V2"
+documents = ["doc/lc-racing/l5078-product-page"]
 applies_to = "BHC-1"
 category = "gear"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5078-product-page" },
+]

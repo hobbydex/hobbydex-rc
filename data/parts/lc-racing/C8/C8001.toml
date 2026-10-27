@@ -2,6 +2,10 @@ id = "part/lc-racing/C8001"
 brand = "brand/lc-racing"
 number = "C8001"
 name = "Shock Parts: Upper and Lower Composite Ball Caps"
+documents = ["doc/lc-racing/c8001-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "ball-end"
 material = "plastic"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8001-product-page" },
+]

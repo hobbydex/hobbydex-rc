@@ -2,5 +2,9 @@ id = "part/lc-racing/C7096"
 brand = "brand/lc-racing"
 number = "C7096"
 name = "Self-Adhesive EVA Foam+Foam Spacer"
+documents = ["doc/lc-racing/c7096-product-page"]
 applies_to = "LC10B5"
 category = "washer-shim"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7096-product-page" },
+]

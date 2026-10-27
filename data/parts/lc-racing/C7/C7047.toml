@@ -2,5 +2,9 @@ id = "part/lc-racing/C7047"
 brand = "brand/lc-racing"
 number = "C7047"
 name = "Front Bumper"
+documents = ["doc/lc-racing/c7047-product-page"]
 applies_to = "LC10B5"
 category = "bumper-guard"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7047-product-page" },
+]

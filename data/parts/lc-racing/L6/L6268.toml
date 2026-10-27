@@ -3,7 +3,11 @@ brand = "brand/lc-racing"
 number = "L6268"
 name = "SC Tires Set Black 22'"
 pack_qty = 2
+documents = ["doc/lc-racing/l6268-product-page"]
 applies_to = "EMB-SC"
 category = "tire"
 vehicle = "short-course"
 color = "black"
+fits = [
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6268-product-page" },
+]

@@ -3,6 +3,11 @@ brand = "brand/lc-racing"
 number = "C7056"
 name = "5.5mm Ball Joint Set"
 pack_qty = 14
+documents = ["doc/lc-racing/c7056-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "ball-end"
 ball_mm = 5.5
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7056-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7056-product-page" },
+]

@@ -2,5 +2,9 @@ id = "part/lc-racing/C8214"
 brand = "brand/lc-racing"
 number = "C8214"
 name = "Chassis Brace with Battery Holder"
+documents = ["doc/lc-racing/c8214-product-page"]
 applies_to = "PTG-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c8214-product-page" },
+]

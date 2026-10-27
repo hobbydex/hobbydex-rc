@@ -2,9 +2,17 @@ id = "part/lc-racing/L6080"
 brand = "brand/lc-racing"
 number = "L6080"
 name = "Copper 19T Motor Pinion Gear For 2.3mm Shaft"
+documents = ["doc/lc-racing/l6080-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT"
 category = "pinion"
 teeth = 19
 includes = [
   { part = "part/lc-racing/HM6117" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6080-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6080-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6080-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6080-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6080-product-page" },
 ]

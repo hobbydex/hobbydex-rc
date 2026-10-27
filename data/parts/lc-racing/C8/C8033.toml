@@ -2,6 +2,10 @@ id = "part/lc-racing/C8033"
 brand = "brand/lc-racing"
 number = "C8033"
 name = "Chassis Mud Cover Clear"
+documents = ["doc/lc-racing/c8033-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "chassis"
 color = "clear"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8033-product-page" },
+]

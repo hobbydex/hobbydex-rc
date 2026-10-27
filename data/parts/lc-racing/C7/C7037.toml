@@ -2,5 +2,9 @@ id = "part/lc-racing/C7037"
 brand = "brand/lc-racing"
 number = "C7037"
 name = "Slipper Set"
+documents = ["doc/lc-racing/c7037-product-page"]
 applies_to = "LC10B5"
 category = "gear"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7037-product-page" },
+]

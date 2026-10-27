@@ -2,6 +2,10 @@ id = "part/lc-racing/C8205"
 brand = "brand/lc-racing"
 number = "C8205"
 name = "Center Drive Shaft Alu"
+documents = ["doc/lc-racing/c8205-product-page"]
 applies_to = "PTG-1"
 category = "drivetrain"
 material = "aluminium"
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c8205-product-page" },
+]

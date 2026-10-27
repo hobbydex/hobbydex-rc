@@ -3,5 +3,12 @@ brand = "brand/lc-racing"
 number = "L6289"
 name = "Shock Cartridge Spacers"
 pack_qty = 8
+documents = ["doc/lc-racing/l6289-product-page"]
 applies_to = "EMB-WRC/RA/1/SC/DT/TG/MT, PTG-2/2R, BHC-1/1ST, LC12B1"
 category = "washer-shim"
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6289-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/l6289-product-page" },
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l6289-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6289-product-page" },
+]

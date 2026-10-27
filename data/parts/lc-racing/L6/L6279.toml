@@ -3,4 +3,8 @@ brand = "brand/lc-racing"
 number = "L6279"
 name = "Springs Spring, L17.8, 3.3T, 1.2D"
 pack_qty = 2
+documents = ["doc/lc-racing/l6279-product-page"]
 applies_to = "PTG-2TC"
+fits = [
+  { kit = "kit/lc-racing/ptg-2tc", type = "direct", source = "doc/lc-racing/l6279-product-page" },
+]

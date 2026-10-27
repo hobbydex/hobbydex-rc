@@ -2,7 +2,11 @@ id = "part/lc-racing/L5051"
 brand = "brand/lc-racing"
 number = "L5051"
 name = "Aluminum BHC Servo Horn 23T +3mm"
+documents = ["doc/lc-racing/l5051-product-page"]
 applies_to = "BHC-1/1ST"
 category = "steering"
 material = "aluminium"
 spline_teeth = 23
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5051-product-page" },
+]

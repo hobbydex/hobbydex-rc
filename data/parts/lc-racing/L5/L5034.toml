@@ -2,6 +2,10 @@ id = "part/lc-racing/L5034"
 brand = "brand/lc-racing"
 number = "L5034"
 name = "BHC-1 Body, Clear"
+documents = ["doc/lc-racing/l5034-product-page"]
 applies_to = "BHC-1"
 category = "body"
 color = "clear"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5034-product-page" },
+]

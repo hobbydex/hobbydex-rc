@@ -2,5 +2,9 @@ id = "part/lc-racing/L5035"
 brand = "brand/lc-racing"
 number = "L5035"
 name = "Rear ballstud Mount"
+documents = ["doc/lc-racing/l5035-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5035-product-page" },
+]

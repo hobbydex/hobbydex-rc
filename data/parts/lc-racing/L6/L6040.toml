@@ -2,6 +2,7 @@ id = "part/lc-racing/L6040"
 brand = "brand/lc-racing"
 number = "L6040"
 name = "Foam Bumper Set"
+documents = ["doc/lc-racing/l6040-product-page"]
 applies_to = "EMB-WRC"
 category = "bumper-guard"
 includes = [
@@ -12,4 +13,7 @@ includes = [
   { part = "part/lc-racing/BE6093" },
   { part = "part/lc-racing/BE6095" },
   { part = "part/lc-racing/HM6074" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6040-product-page" },
 ]

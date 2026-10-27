@@ -2,5 +2,9 @@ id = "part/lc-racing/C8058"
 brand = "brand/lc-racing"
 number = "C8058"
 name = "Mud Flaps (4 cps)"
+documents = ["doc/lc-racing/c8058-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "body"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8058-product-page" },
+]

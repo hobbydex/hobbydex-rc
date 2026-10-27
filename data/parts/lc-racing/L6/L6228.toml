@@ -2,5 +2,9 @@ id = "part/lc-racing/L6228"
 brand = "brand/lc-racing"
 number = "L6228"
 name = "LC12B1 Buggy Body/Rear Aero Wing(Light)"
+documents = ["doc/lc-racing/l6228-product-page"]
 applies_to = ", LC12B1"
 category = "body"
+fits = [
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6228-product-page" },
+]

@@ -2,5 +2,9 @@ id = "part/lc-racing/C8004"
 brand = "brand/lc-racing"
 number = "C8004"
 name = "F+R Suspension Arms SET"
+documents = ["doc/lc-racing/c8004-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "suspension"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8004-product-page" },
+]

@@ -2,6 +2,10 @@ id = "part/lc-racing/L5005"
 brand = "brand/lc-racing"
 number = "L5005"
 name = "Front & Rear Shock Tower, composite"
+documents = ["doc/lc-racing/l5005-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
 material = "plastic"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5005-product-page" },
+]

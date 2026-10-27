@@ -2,8 +2,13 @@ id = "part/lc-racing/C7026"
 brand = "brand/lc-racing"
 number = "C7026"
 name = "E-Clip 2.3(20)"
+documents = ["doc/lc-racing/c7026-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/2.3mm", match = "functional", notes = "Shaft size from the name" },
+]
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7026-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7026-product-page" },
 ]

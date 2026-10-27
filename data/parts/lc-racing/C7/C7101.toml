@@ -2,7 +2,11 @@ id = "part/lc-racing/C7101"
 brand = "brand/lc-racing"
 number = "C7101"
 name = "Slipper Spur Gear 48P 76T"
+documents = ["doc/lc-racing/c7101-product-page"]
 applies_to = "LC10B5"
 category = "spur-gear"
 teeth = 76
 pitch_dp = 48
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7101-product-page" },
+]

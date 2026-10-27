@@ -4,6 +4,10 @@ number = "L6277"
 name = "Shock Body"
 pack_qty = 2
 pack_qty_basis = "name"
+documents = ["doc/lc-racing/l6277-product-page"]
 applies_to = "PTG-2TC"
 category = "shock"
 shock_part = "body"
+fits = [
+  { kit = "kit/lc-racing/ptg-2tc", type = "direct", source = "doc/lc-racing/l6277-product-page" },
+]

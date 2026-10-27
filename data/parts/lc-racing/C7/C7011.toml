@@ -2,6 +2,11 @@ id = "part/lc-racing/C7011"
 brand = "brand/lc-racing"
 number = "C7011"
 name = "Shock Parts"
+documents = ["doc/lc-racing/c7011-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "shock"
 shock_part = "complete"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7011-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7011-product-page" },
+]

@@ -2,5 +2,9 @@ id = "part/lc-racing/L5028"
 brand = "brand/lc-racing"
 number = "L5028"
 name = "Wing Mounts"
+documents = ["doc/lc-racing/l5028-product-page"]
 applies_to = "BHC-1"
 category = "wing"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5028-product-page" },
+]

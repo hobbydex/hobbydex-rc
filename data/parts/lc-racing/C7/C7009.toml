@@ -2,6 +2,7 @@ id = "part/lc-racing/C7009"
 brand = "brand/lc-racing"
 number = "C7009"
 name = "Diff Washer 3x9x0.1(10)/5x15x0.3(10)"
+documents = ["doc/lc-racing/c7009-product-page"]
 applies_to = "LC10B5, PTG-1, PTG-2, PTG-2R"
 category = "washer-shim"
 includes = [
@@ -10,3 +11,8 @@ includes = [
 ]
 pack_qty = 20
 pack_qty_basis = "includes"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7009-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7009-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c7009-product-page" },
+]

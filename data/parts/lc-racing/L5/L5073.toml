@@ -2,5 +2,9 @@ id = "part/lc-racing/L5073"
 brand = "brand/lc-racing"
 number = "L5073"
 name = "Alum Chassis (Long Wheel Base)"
+documents = ["doc/lc-racing/l5073-product-page"]
 applies_to = "BHC-1"
 category = "wheel"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5073-product-page" },
+]

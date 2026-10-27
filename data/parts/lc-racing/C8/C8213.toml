@@ -2,5 +2,9 @@ id = "part/lc-racing/C8213"
 brand = "brand/lc-racing"
 number = "C8213"
 name = "Chassis Brace"
+documents = ["doc/lc-racing/c8213-product-page"]
 applies_to = "PTG-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c8213-product-page" },
+]

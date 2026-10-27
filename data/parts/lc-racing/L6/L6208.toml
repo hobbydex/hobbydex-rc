@@ -3,6 +3,7 @@ brand = "brand/lc-racing"
 number = "L6208"
 name = "Wheel Nuts M3"
 pack_qty = 8
+documents = ["doc/lc-racing/l6208-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT"
 category = "nut"
 equivalent_to = [
@@ -10,4 +11,11 @@ equivalent_to = [
 ]
 related = [
   { part = "part/lc-racing/L6143", relation = "use-with" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6208-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6208-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6208-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6208-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6208-product-page" },
 ]

@@ -2,6 +2,10 @@ id = "part/lc-racing/C8218"
 brand = "brand/lc-racing"
 number = "C8218"
 name = "Buggy Body Clear(Light weight)"
+documents = ["doc/lc-racing/c8218-product-page"]
 applies_to = "PTG-1"
 category = "body"
 color = "clear"
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c8218-product-page" },
+]

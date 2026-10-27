@@ -3,8 +3,13 @@ brand = "brand/lc-racing"
 number = "C7017"
 name = "Shock Cap Alu-7075 T6 Hard Coated"
 pack_qty = 2
+documents = ["doc/lc-racing/c7017-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "shock"
 shock_part = "cap"
 material = "aluminium"
 material_grade = "7075-T6"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7017-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7017-product-page" },
+]

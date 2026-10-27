@@ -1,0 +1,12 @@
+id = "part/lc-racing/LCE012"
+brand = "brand/lc-racing"
+number = "LCE012"
+name = "DPM 2840 Sensored Brushless Motor, 5150KV, 3.175mm Shaft"
+documents = ["doc/lc-racing/lce012-product-page"]
+applies_to = "LC12B1, All EMB and BHC Series"
+fits = [
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/lce012-product-page" },
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/lce012-product-page" },
+  { kit = "kit/lc-racing/bhc-1st", type = "direct", source = "doc/lc-racing/lce012-product-page" },
+]
+category = "motor"

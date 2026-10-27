@@ -2,5 +2,9 @@ id = "part/lc-racing/L5006"
 brand = "brand/lc-racing"
 number = "L5006"
 name = "Front Suspension Arms"
+documents = ["doc/lc-racing/l5006-product-page"]
 applies_to = "BHC-1"
 category = "suspension"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5006-product-page" },
+]

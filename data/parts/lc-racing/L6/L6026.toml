@@ -2,9 +2,14 @@ id = "part/lc-racing/L6026"
 brand = "brand/lc-racing"
 number = "L6026"
 name = "185mm Wheelbase Chassis Aluminum 2.5mm"
+documents = ["doc/lc-racing/l6026-product-page"]
 applies_to = "EMB-1, EMB-MT"
 category = "chassis"
 material = "aluminium"
 includes = [
   { part = "part/lc-racing/HM6051" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6026-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6026-product-page" },
 ]

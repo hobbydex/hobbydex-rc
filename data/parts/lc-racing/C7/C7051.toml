@@ -3,6 +3,11 @@ brand = "brand/lc-racing"
 number = "C7051"
 name = "Steel Bushing-Long"
 pack_qty = 4
+documents = ["doc/lc-racing/c7051-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "washer-shim"
 material = "steel"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7051-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7051-product-page" },
+]

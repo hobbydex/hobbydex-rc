@@ -2,5 +2,9 @@ id = "part/lc-racing/L5033"
 brand = "brand/lc-racing"
 number = "L5033"
 name = "Rear Aero Wing(5'')"
+documents = ["doc/lc-racing/l5033-product-page"]
 applies_to = "BHC-1"
 category = "wing"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5033-product-page" },
+]

@@ -3,6 +3,11 @@ brand = "brand/lc-racing"
 number = "C7092"
 name = "Shock Bushings Alu Hard coated"
 pack_qty = 2
+documents = ["doc/lc-racing/c7092-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "shock"
 material = "aluminium"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7092-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7092-product-page" },
+]

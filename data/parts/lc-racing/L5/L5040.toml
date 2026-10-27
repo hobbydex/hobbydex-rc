@@ -2,5 +2,9 @@ id = "part/lc-racing/L5040"
 brand = "brand/lc-racing"
 number = "L5040"
 name = "BHC Slipper Set"
+documents = ["doc/lc-racing/l5040-product-page"]
 applies_to = "BHC-1/1ST"
 category = "gear"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5040-product-page" },
+]

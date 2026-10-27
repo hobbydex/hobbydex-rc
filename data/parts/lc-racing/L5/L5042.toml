@@ -3,5 +3,14 @@ brand = "brand/lc-racing"
 number = "L5042"
 name = "Jetgo Mini Buggy 2WD Rear Tires Pre-Mounted"
 pack_qty = 2
+documents = ["doc/lc-racing/l5042-product-page"]
 applies_to = "BHC-1, EMB-WRC, EMB-TG, EMB-TC, EMB-SC, EMB-RA, EMB-MT, EMB-DT, EMB-1"
 category = "tire"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5042-product-page" },
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l5042-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l5042-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l5042-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l5042-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l5042-product-page" },
+]

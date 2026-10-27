@@ -2,5 +2,10 @@ id = "part/lc-racing/C7076"
 brand = "brand/lc-racing"
 number = "C7076"
 name = "Chassis Side Guards L+R,Radio Plate"
+documents = ["doc/lc-racing/c7076-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7076-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7076-product-page" },
+]

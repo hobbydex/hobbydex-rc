@@ -2,7 +2,13 @@ id = "part/lc-racing/C7108"
 brand = "brand/lc-racing"
 number = "C7108"
 name = "7075-T6 Alum Steering Rack"
+documents = ["doc/lc-racing/c7108-product-page"]
 applies_to = "LC10B5, PTG-1, PTG-2, PTG-2R"
 category = "steering"
 material = "aluminium"
 material_grade = "7075-T6"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7108-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7108-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c7108-product-page" },
+]

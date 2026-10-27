@@ -2,5 +2,11 @@ id = "part/lc-racing/C8078"
 brand = "brand/lc-racing"
 number = "C8078"
 name = "Motor Ponion Gear (30T/48P Steel)"
+documents = ["doc/lc-racing/c8078-product-page"]
 applies_to = "PTG-2/2R/2TC, LC10B5"
 category = "gear"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8078-product-page" },
+  { kit = "kit/lc-racing/ptg-2tc", type = "direct", source = "doc/lc-racing/c8078-product-page" },
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c8078-product-page" },
+]

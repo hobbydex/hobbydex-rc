@@ -2,6 +2,10 @@ id = "part/lc-racing/C7042"
 brand = "brand/lc-racing"
 number = "C7042"
 name = "Front Carbon Fiber Shock Tower 3.6mm"
+documents = ["doc/lc-racing/c7042-product-page"]
 applies_to = "LC10B5"
 category = "chassis"
 material = "carbon"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7042-product-page" },
+]

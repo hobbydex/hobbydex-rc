@@ -2,5 +2,9 @@ id = "part/lc-racing/C7086"
 brand = "brand/lc-racing"
 number = "C7086"
 name = "Battery Strap+Holders"
+documents = ["doc/lc-racing/c7086-product-page"]
 applies_to = "LC10B5"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7086-product-page" },
+]
