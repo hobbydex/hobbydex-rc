@@ -3,10 +3,13 @@ brand = "brand/team-corally"
 number = "C-3004-30-04"
 name = "Steel Set Screws M3 x 4mm - Hex"
 pack_qty = 10
+pack_qty_basis = "page"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-3004-30-04"
 equivalent_to = [
   { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Team Corally", url = "https://corally.com/en/product/C-3004-30-04/" } ]
+links = [
+  { site = "Team Corally", url = "https://corally.com/en/product/C-3004-30-04/" },
+]

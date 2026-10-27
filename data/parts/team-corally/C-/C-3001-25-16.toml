@@ -4,10 +4,13 @@ number = "C-3001-25-16"
 name = "Steel Screws M2.5 x 16mm - Hex Socket Head"
 gtin = "8718057205041"
 pack_qty = 10
+pack_qty_basis = "page"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-3001-25-16"
 equivalent_to = [
   { spec = "spec/screw/m2.5x16-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "steel"
 category = "screw"
-links = [ { site = "Team Corally", url = "https://corally.com/en/product/C-3001-25-16/" } ]
+links = [
+  { site = "Team Corally", url = "https://corally.com/en/product/C-3001-25-16/" },
+]

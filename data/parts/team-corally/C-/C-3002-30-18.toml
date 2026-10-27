@@ -4,8 +4,11 @@ number = "C-3002-30-18"
 name = "Hex Flat Head Screw M3x18"
 gtin = "8718057252571"
 pack_qty = 10
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m3x18-countersunk-hex", match = "exact", source = "doc/team-corally/screw-chart", notes = "DIN 7991 stated by Corally" },
 ]
 category = "screw"
-links = [ { site = "Team Corally", url = "https://corally.com/en/product/C-3002-30-18/" } ]
+links = [
+  { site = "Team Corally", url = "https://corally.com/en/product/C-3002-30-18/" },
+]
