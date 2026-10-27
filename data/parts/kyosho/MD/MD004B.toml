@@ -5,4 +5,9 @@ name = "Knuckle & Motor Holder Set(MINI-Z AWD)"
 gtin = "4548565442195"
 category = "suspension"
 documents = ["doc/kyosho/md004b-product-page"]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/md004b.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/md004b.html" },
+]
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", releases = ["release/kyosho/32181"], type = "direct", source = "doc/kyosho/32181-mini-z-awd-ma-030evo2-spare-and-option-parts" },
+]

@@ -11,4 +11,9 @@ equivalent_to = [
   { spec = "spec/bearing/8x16x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 seal = "open"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/brg012o.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/brg012o.html" },
+]
+fits = [
+  { kit = "kit/kyosho/inferno-neo-4-0", releases = ["release/kyosho/33029t1s"], type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+]
