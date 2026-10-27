@@ -11,3 +11,7 @@ links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/111300/" },
 ]
 documents = ["doc/lrp/111300-de-manual"]
+contains = [
+  { part = "part/lrp/30700", role = "listed", source = "doc/lrp/111300-de-manual" },
+  { part = "part/lrp/37910", role = "listed", source = "doc/lrp/111300-de-manual" },
+]
