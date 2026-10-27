@@ -4,8 +4,11 @@ number = "MZN119"
 name = "Ferrari F355 Challenge"
 gtin = "4548565160686"
 name_ja = "フェラーリF355 チャレンジ"
-documents = ["doc/kyosho/mzn119-ferrari-f355-challenge"]
+documents = ["doc/kyosho/mzn119-ferrari-f355-challenge", "doc/kyosho/mzn119-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn119.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/mzn119-product-page" },
+]
