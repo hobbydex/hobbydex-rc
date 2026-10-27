@@ -4,10 +4,8 @@ number = "ZC-A3805BA"
 name = "3.0x8.0x0.5mm Aluminium Shim (Black)"
 name_ja = "φ3.0xφ8.0x0.5mm アルミシム(ブラック) 4個入"
 pack_qty = 4
-pack_qty_basis = "page"
 material = "aluminium"
 category = "washer-shim"
-color = "black"
 fits = [
   { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS2.0, MS2.1" },
   { kit = "kit/yokomo/yr-10f", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YR-10F" },
@@ -18,6 +16,8 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-a3805ba" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "page"
+color = "black"
 equivalent_to = [
   { spec = "spec/washer/3x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

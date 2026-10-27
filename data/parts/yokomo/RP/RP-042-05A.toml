@@ -3,7 +3,6 @@ brand = "brand/yokomo"
 number = "RP-042-05A"
 name = "Precision Machined Titanium Flat Head Socket Screw M3x5mm"
 pack_qty = 4
-pack_qty_basis = "name"
 name_ja = "高精度切削 チタン製 フラットヘッド ソケットスクリュー M3x5mm 4pcs."
 material = "titanium"
 category = "screw"
@@ -25,6 +24,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/rp-042-05a" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/screw/m3x5-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

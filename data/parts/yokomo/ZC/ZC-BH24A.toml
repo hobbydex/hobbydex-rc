@@ -2,9 +2,8 @@ id = "part/yokomo/ZC-BH24A"
 brand = "brand/yokomo"
 number = "ZC-BH24A"
 name = "M2x4mm Button Head Socket Screw"
-pack_qty = 10
-pack_qty_basis = "page"
 name_ja = "M2x4mm ボタンヘッド ソケットスクリュー 10本入"
+pack_qty = 10
 category = "screw"
 fits = [
   { kit = "kit/yokomo/gt", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for GT series" },
@@ -19,6 +18,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh24a" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m2x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

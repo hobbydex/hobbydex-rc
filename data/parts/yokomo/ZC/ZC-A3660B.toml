@@ -6,7 +6,6 @@ name_ja = "Φ3×Φ6×6.0mm アルミ製 スペーサー(各8個入/ブラック)
 pack_qty = 8
 material = "aluminium"
 category = "washer-shim"
-color = "black"
 fits = [
   { kit = "kit/yokomo/drift-package", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for Drift Package" },
   { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD3.0" },
@@ -20,6 +19,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-a3660b" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+color = "black"
 equivalent_to = [
   { spec = "spec/washer/3x6x6", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
