@@ -11,6 +11,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Kyosho ZX-5 FS / FS2 (#30078)"
+fits = [
+  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Kyosho ZX-5 FS / FS2 (#30078) (link_car_kits.py)", releases = ["release/kyosho/lazer-zx-5-fs-kit"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/kyo118r-rubber-shielded-bearing-kit-for-the-kyosho-zx-5-fs-1-10th-buggy-30078/" },
