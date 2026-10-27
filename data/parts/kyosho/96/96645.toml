@@ -1,7 +1,13 @@
 id = "part/kyosho/96645"
 brand = "brand/kyosho"
 number = "96645"
-name = "96645"
+name = "11x14mm Shim Set"
 gtin = "4955439690628"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/96645.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/96645.html" },
+]
+fits = [
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822t02f-tf5-readyset-p" },
+]
+category = "washer-shim"

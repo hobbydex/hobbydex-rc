@@ -8,4 +8,9 @@ gtin = "4548565183999"
 category = "wing"
 documents = ["doc/kyosho/kfw024-aluminum-rear-wing-stay", "doc/kyosho/kfw024-product-page"]
 material = "aluminium"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw024.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw024.html" },
+]
+fits = [
+  { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/kf01_parts_list_v01" },
+]

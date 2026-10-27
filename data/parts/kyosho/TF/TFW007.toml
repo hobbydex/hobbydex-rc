@@ -7,4 +7,9 @@ name_ja = "TF6用ギヤデフセット"
 gtin = "4548565190119"
 category = "differential"
 documents = ["doc/kyosho/tfw007-gear-diffset-fortf6", "doc/kyosho/tfw007-product-page"]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/tfw007.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/tfw007.html" },
+]
+fits = [
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30025-tf6sp-t01-spop" },
+]

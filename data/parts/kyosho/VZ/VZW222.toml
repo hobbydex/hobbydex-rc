@@ -6,4 +6,9 @@ gtin = "4955439038369"
 name_ja = "2DクラッチASSY"
 category = "engine-fuel"
 documents = ["doc/kyosho/vzw222-2d-clutch-assembly"]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/vzw222.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/vzw222.html" },
+]
+fits = [
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31263-v-one-rrr-evo2-wc-p" },
+]

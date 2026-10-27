@@ -1,7 +1,11 @@
 id = "part/kyosho/FM541"
 brand = "brand/kyosho"
 number = "FM541"
-name = "FM541"
+name = "2nd Pinion Gear (19T/EVOLVA 2005)"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 ocr_names = ["19 2nd Pinion Gear (19T/EVOLVA 2005)"]
 documents = ["doc/kyosho/31284-evolva2005-m"]
+fits = [
+  { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31284-evolva2005-p" },
+]
+category = "pinion"

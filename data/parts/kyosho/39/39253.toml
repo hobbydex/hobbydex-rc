@@ -1,6 +1,11 @@
 id = "part/kyosho/39253"
 brand = "brand/kyosho"
 number = "39253"
-name = "39253"
+name = "Sponsor Decal (Mobil 1 NSX)"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/31333-vones3-m"]
+fits = [
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31333-vones3-p" },
+  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp2-fw05jpe-p" },
+]
+category = "decal"

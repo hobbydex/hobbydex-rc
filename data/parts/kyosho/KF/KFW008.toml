@@ -10,4 +10,9 @@ gtin = "4548565165803"
 documents = ["doc/kyosho/kfw008-kf01-stainless-hard-kingpin", "doc/kyosho/kfw008-product-page"]
 material = "stainless"
 category = "pin"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw008.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw008.html" },
+]
+fits = [
+  { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/kf01_parts_list_v01" },
+]

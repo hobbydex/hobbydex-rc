@@ -1,6 +1,10 @@
 id = "part/kyosho/VZ412"
 brand = "brand/kyosho"
 number = "VZ412"
-name = "VZ412"
+name = "1st Spur Gear (59T/R4)"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/31266-t01-v-one-r4sp-im"]
+fits = [
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/31265-t01-v-one-r4-op" },
+]
+category = "spur-gear"

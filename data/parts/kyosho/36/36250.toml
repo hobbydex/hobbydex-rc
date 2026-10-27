@@ -1,6 +1,10 @@
 id = "part/kyosho/36250"
 brand = "brand/kyosho"
 number = "36250"
-name = "36250"
+name = "Mold Inner (Hard / Black)"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/30813-tf-5s-chassis-kit-m"]
+fits = [
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30813-tf-5s-chassis-kit-p" },
+]
+color = "black"

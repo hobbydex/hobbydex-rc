@@ -1,6 +1,10 @@
 id = "part/kyosho/36234"
 brand = "brand/kyosho"
 number = "36234"
-name = "36234"
+name = "1/10 Racing Tire Rear (#37)"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/31260-v-one-rrr-evo-wc-t-e-m"]
+fits = [
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31260-v-one-rrr-evo-wc-t-e-p" },
+]
+category = "tire"

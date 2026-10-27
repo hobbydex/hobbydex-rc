@@ -1,6 +1,10 @@
 id = "part/kyosho/ISW053"
 brand = "brand/kyosho"
 number = "ISW053"
-name = "ISW053"
+name = "Torque Rod Pivot Set (For SP Torque Rod)"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/31353-infstrr-m"]
+fits = [
+  { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31375-strr-evo-sp" },
+]
+category = "suspension"

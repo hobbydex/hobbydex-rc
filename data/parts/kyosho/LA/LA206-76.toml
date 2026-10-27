@@ -1,6 +1,15 @@
 id = "part/kyosho/LA206-76"
 brand = "brand/kyosho"
 number = "LA206-76"
-name = "LA206-76"
+name = "Spur Gear -76T)(ZX-5"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/34304-ultima-rb7-ss-im"]
+fits = [
+  { kit = "kit/kyosho/lazer-zx6", type = "direct", source = "doc/kyosho/30046-lazer-zx6-spop" },
+  { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30858-im-ultima-rb6-rs-spop" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30859-ultima-sc6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
+]
+category = "spur-gear"

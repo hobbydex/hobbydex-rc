@@ -6,3 +6,6 @@ color = "black"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
 documents = ["doc/kyosho/30622-01-optima-mid-im", "doc/kyosho/30623-mm02-im", "doc/kyosho/30643-t02-mid-87wc-im"]
+fits = [
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-op" },
+]
