@@ -9,3 +9,6 @@ fits = [
 ]
 applies_to = "PR SB401-Type R 4wd"
 documents = ["doc/pr-racing/pr-rc-com"]
+equivalent_to = [
+  { spec = "spec/screw/m2x5-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

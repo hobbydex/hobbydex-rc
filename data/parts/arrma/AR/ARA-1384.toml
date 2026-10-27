@@ -12,3 +12,6 @@ fits = [
   { kit = "kit/arrma/typhon-3s", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/typhon-mega", type = "direct", source = "doc/arrma/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

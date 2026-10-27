@@ -17,3 +17,6 @@ fits = [
   { kit = "kit/losi/super-lasernut", type = "direct", source = "doc/tlr/horizon-part-pages" },
   { kit = "kit/losi/v100", type = "direct", source = "doc/tlr/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

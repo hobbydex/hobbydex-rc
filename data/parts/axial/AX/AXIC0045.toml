@@ -18,3 +18,6 @@ fits = [
   { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]
 finish = "black"
+equivalent_to = [
+  { spec = "spec/screw/m3x30-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

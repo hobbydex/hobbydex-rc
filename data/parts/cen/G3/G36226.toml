@@ -5,3 +5,6 @@ name = "M3x6mm Cap Screw"
 notes = "Labelled by number only in the CEN manuals"
 name_source = "manufacturer"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x6-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

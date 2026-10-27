@@ -11,3 +11,6 @@ fits = [
   { kit = "kit/fms/ford-bronco-u4-funhaver-25", releases = ["release/fms/FMS10702RS-25"], type = "replaces", notes = "Named for U4 Funhaver in the beez2b title" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x6-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

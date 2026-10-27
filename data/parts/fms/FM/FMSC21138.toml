@@ -10,3 +10,6 @@ fits = [
   { kit = "kit/fms/fcx10", releases = ["release/fms/FMS11041RS-BK"], type = "replaces", notes = "Named for Canyon in the beez2b title" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

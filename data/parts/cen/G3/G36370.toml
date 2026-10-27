@@ -3,3 +3,6 @@ brand = "brand/cen"
 number = "G36370"
 name = "BH M3x4mm Screw"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

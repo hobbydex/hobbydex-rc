@@ -18,3 +18,6 @@ fits = [
   { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/22x-t", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2x6-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

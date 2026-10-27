@@ -9,3 +9,6 @@ category = "screw"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-cap-head-screws-m3-x-10mm-stl-10/LOS-4016.html" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

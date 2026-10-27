@@ -8,3 +8,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-cap-head-screws-m2x25mm-10/LOS215010.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2x25-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

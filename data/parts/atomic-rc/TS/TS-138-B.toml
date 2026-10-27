@@ -11,3 +11,6 @@ category = "screw"
 material_grade = "7075"
 color = "blue"
 range = "atomic-rc/ts-138-colours"
+equivalent_to = [
+  { spec = "spec/screw/m2x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
