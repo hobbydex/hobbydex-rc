@@ -8,3 +8,6 @@ links = [
   { site = "Arrowmax", url = "https://www.arrowmax-rc.com/products/screw-philipshead-countersunk-widethread-m2-5x8-10-am-13cs2508-w" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

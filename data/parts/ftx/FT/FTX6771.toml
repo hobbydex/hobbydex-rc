@@ -6,3 +6,6 @@ notes = "Name from a reseller listing (https://www.toprc.nl/ftx-siege-round-head
 category = "screw"
 category_source = "curated"
 documents = ["doc/ftx/cml-siege-exploded-diagram"]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

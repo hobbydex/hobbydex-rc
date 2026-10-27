@@ -14,3 +14,6 @@ applies_to = ["Pirate Strangler 1/10 XL"]
 fits = [
   { kit = "kit/t2m/pirate-strangler-1-10-xl", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Strangler 1/10 XL (link_car_kits.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m4x30-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
