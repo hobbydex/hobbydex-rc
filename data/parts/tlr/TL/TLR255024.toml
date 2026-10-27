@@ -7,3 +7,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-cap-head-screws-m5x20mm-10/TLR255024.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m5x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -62,6 +62,12 @@ the documents). Kyosho states "Hex" in its names; no Kyosho document
 states a JIS or Phillips cross recess, so a Kyosho screw without "Hex" in
 its name gets no drive.
 
+For any brand: a cap or button head is a hex socket by definition (ISO 4762,
+ISO 7380), so a name that says Cap Screw, Cap Head, Socket Head, Button Head,
+Button Screw or SH/SCH/SHCS/BH/BHCS/SBH gets the hex drive without the word
+"Hex" (Kyosho "Cap Screw(M2.6x8)"). Flat head, round, pan, bind and truss
+names without a drive word get none.
+
 ## LC Racing
 
 LC Racing writes the head as a code in front of the size, with no other

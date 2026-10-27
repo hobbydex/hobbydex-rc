@@ -9,3 +9,6 @@ fits = [
   { kit = "kit/yikong/yk4101", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x25-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -16,3 +16,6 @@ fits = [
   { kit = "kit/losi/dbxl", type = "direct", source = "doc/tlr/horizon-part-pages" },
   { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/tlr/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m4x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
