@@ -646,6 +646,15 @@ def main():
     # 20. part fits a kit that has no releases
     check("fits-kit-no-release", "add the kit's release, or remove the fit row",
           [p for p in parts for f in p.get("fits", []) if f.get("kit") in kits and not rels_of_kit.get(f["kit"])])
+    # the kits each flagged part fits, for --list (id TAB kits) and a per-kit count in the summary
+    nr_kits = collections.defaultdict(set)
+    for p in parts:
+        for f in p.get("fits", []):
+            if f.get("kit") in kits and not rels_of_kit.get(f["kit"]):
+                nr_kits[p["id"]].add(f["kit"])
+    results["fits-kit-no-release"]["kit_of"] = {i: ", ".join(sorted(k)) for i, k in nr_kits.items()}
+    per_kit = collections.Counter(k for ks in nr_kits.values() for k in ks)
+    results["fits-kit-no-release"]["breakdown"] = ("kit", [f"{k} {c}" for k, c in per_kit.most_common(40)])
 
     # 21. orphan art files
     orphans = []
@@ -1056,8 +1065,10 @@ def main():
     ranked = sorted((n for n in results if results[n]["count"]), key=lambda n: -results[n]["count"])
     skipped = [n for n in results if results[n]["count"] is None]
     if args.list:
-        for i in results.get(args.list, {}).get("all", []):
-            print(i)
+        res = results.get(args.list, {})
+        kit_of = res.get("kit_of", {})
+        for i in res.get("all", []):
+            print(f"{i}\t{kit_of[i]}" if kit_of else i)
         return
     print(f"{'check':34} {'count':>7}  examples (hobbydex.com)  ->  fix")
     for n in ranked:
