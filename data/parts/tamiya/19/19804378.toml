@@ -11,3 +11,6 @@ links = [
   { site = "tamico.de", url = "https://tamico.de/Tamiya-19804378-3x18mm-R-H-Socket-Screw-4", kind = "dealer" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

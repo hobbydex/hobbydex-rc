@@ -11,3 +11,6 @@ links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x5mm-hex-screw-84205/", kind = "maker" },
 ]
 name_source = "ocr"
+equivalent_to = [
+  { spec = "spec/screw/m3x5-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
