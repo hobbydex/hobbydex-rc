@@ -4,8 +4,11 @@ number = "MZN36"
 name = "Lamborghini Murcielago"
 gtin = "4955439072523"
 name_ja = "ランボルギーニ ムルシェラゴ"
-documents = ["doc/kyosho/mzn36-lamborghini-murcie0909-m"]
+documents = ["doc/kyosho/mzn36-lamborghini-murcie0909-m", "doc/kyosho/mzn36-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn36.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-02", type = "direct", source = "doc/kyosho/mzn36-product-page" },
+]

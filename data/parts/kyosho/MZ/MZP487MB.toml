@@ -4,9 +4,12 @@ number = "MZP487MB"
 name = "ASC MA020 NISSAN SKYLINE GT-R R34 V.specⅡNur Metallic Blue"
 released = "2026-06"
 gtin = "4548565518609"
-documents = ["doc/kyosho/rc-newitem-2026-06-parts"]
+documents = ["doc/kyosho/rc-newitem-2026-06-parts", "doc/kyosho/mzp487mb-product-page"]
 color = "blue"
 fits = [
   { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/rc-newitem-2026-06-parts" },
+  { kit = "kit/kyosho/mini-z-ma-020", type = "direct", source = "doc/kyosho/mzp487mb-product-page" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp487mb.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp487mb.html" },
+]
