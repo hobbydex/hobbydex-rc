@@ -3,9 +3,12 @@ brand = "brand/jconcepts"
 number = "9209"
 name = "REACTOR FHCS M3 x 6"
 pack_qty = 10
+pack_qty_basis = "page"
 notes = "Name from the jconcepts.net listing"
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "JConcepts", url = "https://jconcepts.net/reactor-fhcs-m3x6-10pc" } ]
+links = [
+  { site = "JConcepts", url = "https://jconcepts.net/reactor-fhcs-m3x6-10pc" },
+]

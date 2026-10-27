@@ -3,10 +3,13 @@ brand = "brand/team-corally"
 number = "C-3301-060-12-05"
 name = "Steel Metric Shim - 6,0x12x0,5mm"
 pack_qty = 10
+pack_qty_basis = "page"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-3301-060-12-05"
 category = "washer-shim"
 material = "steel"
 equivalent_to = [
   { spec = "spec/washer/6x12x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Team Corally", url = "https://corally.com/en/product/C-3301-060-12-05/" } ]
+links = [
+  { site = "Team Corally", url = "https://corally.com/en/product/C-3301-060-12-05/" },
+]

@@ -3,6 +3,7 @@ brand = "brand/team-corally"
 number = "C-3103-20-6"
 name = "Steel nut M2 - Black coated"
 pack_qty = 10
+pack_qty_basis = "page"
 color = "black"
 notes = "Name from the Corally web shop, https://corally.com/en/product/C-3103-20-6"
 category = "nut"
@@ -10,4 +11,6 @@ material = "steel"
 equivalent_to = [
   { spec = "spec/nut/m2-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Team Corally", url = "https://corally.com/en/product/C-3103-20-6/" } ]
+links = [
+  { site = "Team Corally", url = "https://corally.com/en/product/C-3103-20-6/" },
+]
