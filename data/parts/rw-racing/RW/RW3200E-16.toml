@@ -8,7 +8,7 @@ bore_mm = 5
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/15216-rw3200e-16-RW3200E-16", kind = "dealer" },
 ]
-source = "doc/rw-racing/beez2b-listing"
+documents = ["doc/rw-racing/beez2b-listing"]
 equivalent_to = [
   { spec = "spec/pinion/32dp-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]

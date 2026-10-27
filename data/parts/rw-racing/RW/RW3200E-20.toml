@@ -8,7 +8,7 @@ bore_mm = 5
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/15220-rw3200e-20-RW3200E-20", kind = "dealer" },
 ]
-source = "doc/rw-racing/beez2b-listing"
+documents = ["doc/rw-racing/beez2b-listing"]
 equivalent_to = [
   { spec = "spec/pinion/32dp-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
