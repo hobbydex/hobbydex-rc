@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/20x32x7" },
 ]
 applies_to = "Losi Racing Desert Buggy XL (LOS05001)"
+fits = [
+  { kit = "kit/losi/dbxl", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Losi Racing Desert Buggy XL (LOS05001) (link_car_kits.py)", releases = ["release/losi/los05001"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/los071r-losi-racing-desert-buggy-xl-rubber-shielded-bearings/" },

@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Tamiya TA-03F Pro 1/10th (#58177)"
+fits = [
+  { kit = "kit/tamiya/ta03f-pro", releases = ["release/tamiya/58177"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Tamiya TA-03F Pro 1/10th (#58177) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tam263r-tamiya-ta-03f-pro-1-10th-58177-compatible-rubber-shielded-bearing-kit/" },

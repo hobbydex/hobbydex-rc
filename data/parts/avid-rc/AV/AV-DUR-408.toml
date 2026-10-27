@@ -14,6 +14,9 @@ includes = [
 category = "bearing"
 category_source = "curated"
 applies_to = "Team Durango DNX408"
+fits = [
+  { kit = "kit/team-durango/dnx408", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Durango DNX408 (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Ceramic Rubber, Metal | Clutch, Serpent Revolution, Ceramic Serpent Revolution (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/287/DNX408" },
