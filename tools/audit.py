@@ -356,6 +356,20 @@ def main():
           [p for p in parts if fn_bad(p)],
           count=sum(len(fn_bad(p)) for p in parts))
 
+    # 1c. a part name whose brackets do not pair up: the name was cut inside a bracket (an open "(" at the end)
+    def unbalanced(s):
+        depth = 0
+        for ch in s.replace("\uff08", "(").replace("\uff09", ")"):
+            if ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+                if depth < 0:
+                    return True
+        return depth != 0
+    check("name-unbalanced-bracket", "restore the full name from the maker's source (its count goes to pack_qty); a name never ends inside a bracket",
+          [p for p in parts if unbalanced(p.get("name") or "")])
+
     # 2. release date marker "?" (a *_doubt reason shows as "?" in the date column)
     check("date-marker-question", "the ? sits in the date column of a narrow table: shorten the reason or move it to the release notes, and confirm the date",
           [r for r in rels if any(k in r for k in ("year_doubt", "released_doubt", "announced_doubt"))])
