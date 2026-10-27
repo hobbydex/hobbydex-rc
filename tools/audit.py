@@ -367,8 +367,11 @@ def main():
                 if depth < 0:
                     return True
         return depth != 0
+    # a name the maker itself prints unbalanced is kept as printed: name_source manufacturer/manual and a note saying so
+    def printed_by_maker(p):
+        return p.get("name_source") in ("manufacturer", "manual") and "kept as printed by the maker" in (p.get("notes") or "")
     check("name-unbalanced-bracket", "restore the full name from the maker's source (its count goes to pack_qty); a name never ends inside a bracket",
-          [p for p in parts if unbalanced(p.get("name") or "")])
+          [p for p in parts if unbalanced(p.get("name") or "") and not printed_by_maker(p)])
 
     # 2. release date marker "?" (a *_doubt reason shows as "?" in the date column)
     check("date-marker-question", "the ? sits in the date column of a narrow table: shorten the reason or move it to the release notes, and confirm the date",
