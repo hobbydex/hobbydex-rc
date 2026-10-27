@@ -10,6 +10,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Kyosho Blizzard DF-300 (#30983)"
+fits = [
+  { kit = "kit/kyosho/blizzard", releases = ["release/kyosho/30983"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Kyosho Blizzard DF-300 (#30983) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/kyo101r-rubber-shielded-bearing-kit-for-the-kyosho-blizzard-df-300-30983/" },
