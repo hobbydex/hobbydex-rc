@@ -12,3 +12,7 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/2.5x6x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+applies_to = ["Pirate STC-01"]
+fits = [
+  { kit = "kit/t2m/pirate-stc-01", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate STC-01 (link_car_kits.py)" },
+]

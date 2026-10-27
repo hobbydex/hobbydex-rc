@@ -13,3 +13,7 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x15-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+applies_to = ["Pirate Basher"]
+fits = [
+  { kit = "kit/t2m/pirate-basher", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Basher (link_car_kits.py)" },
+]
