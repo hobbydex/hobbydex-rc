@@ -1,7 +1,7 @@
 id = "part/mugen/C0802"
 brand = "brand/mugen"
 number = "C0802"
-name = "C0802"
+name = "Engine Control Linkage"
 pack_qty = 3
 fits = [
   { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
@@ -18,6 +18,9 @@ fits = [
   { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
 ]
-name_source = "ocr"
-notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
+name_source = "manufacturer"
 documents = ["doc/mugen/mbx-6r-part-list", "doc/mugen/mbx-6tr-part-list", "doc/mugen/mbx-7-part-list"]
+links = [
+  { site = "Mugen Seiki", url = "https://www.mugenseiki.com/superap.htm" },
+]
+category = "engine-fuel"
