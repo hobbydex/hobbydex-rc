@@ -4,8 +4,12 @@ number = "MZN121"
 name = "Ferrari 360 Modena"
 gtin = "4548565160334"
 name_ja = "フェラーリ360 モデナ"
-documents = ["doc/kyosho/mzn121-ferrari-360-modena"]
+documents = ["doc/kyosho/mzn121-ferrari-360-modena", "doc/kyosho/mzn121-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn121.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-015", type = "direct", source = "doc/kyosho/mzn121-product-page" },
+  { kit = "kit/kyosho/mini-z-mr-03-n-rm", type = "direct", source = "doc/kyosho/mzn121-product-page" },
+]

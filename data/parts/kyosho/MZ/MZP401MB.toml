@@ -4,9 +4,12 @@ number = "MZP401MB"
 name = "NISSAN SKYLINE GT-R V-spec II Nur / Metallic Blue"
 gtin = "4548565140718"
 name_ja = "日産スカイライン GT-R Vスペック II ニュル / メタリックブルー"
-documents = ["doc/kyosho/mzp401-nissan-gt-r-vsp-m"]
+documents = ["doc/kyosho/mzp401-nissan-gt-r-vsp-m", "doc/kyosho/mzp401mb-product-page"]
 color = "blue"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp401mb.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-ma-010", type = "direct", source = "doc/kyosho/mzp401mb-product-page" },
+]
