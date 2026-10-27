@@ -11,6 +11,9 @@ notes = "English translated by Hobbydex from the maker's French name (name_fr); 
 category = "motor"
 motor_type = "brushed"
 applies_to = ["Pirate XT-C 1/10"]
+fits = [
+  { kit = "kit/t2m/pirate-xt-c", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate XT-C 1/10 (link_car_kits.py)" },
+]
 equivalent_to = [
   { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]

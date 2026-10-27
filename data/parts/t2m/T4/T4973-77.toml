@@ -12,3 +12,7 @@ category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2.5x12", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
+applies_to = ["Pirate STC-01"]
+fits = [
+  { kit = "kit/t2m/pirate-stc-01", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate STC-01 (link_car_kits.py)" },
+]

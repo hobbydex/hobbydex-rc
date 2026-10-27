@@ -10,6 +10,9 @@ links = [
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4951/18."
 category = "washer-shim"
 applies_to = ["Pirate Strangler 1/10 XL"]
+fits = [
+  { kit = "kit/t2m/pirate-strangler-1-10-xl", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Strangler 1/10 XL (link_car_kits.py)" },
+]
 equivalent_to = [
   { spec = "spec/washer/3x6x5.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

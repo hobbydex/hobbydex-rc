@@ -12,6 +12,9 @@ links = [
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4941/24."
 category = "pin"
 applies_to = ["Pirate XT-S 1/10"]
+fits = [
+  { kit = "kit/t2m/pirate-xt-s", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate XT-S 1/10 (link_car_kits.py)" },
+]
 equivalent_to = [
   { spec = "spec/pin/3x27", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
 ]
