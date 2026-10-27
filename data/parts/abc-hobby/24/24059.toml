@@ -10,3 +10,6 @@ name_source = "manufacturer"
 name_ja = "2×9.8ピン"
 notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x9.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

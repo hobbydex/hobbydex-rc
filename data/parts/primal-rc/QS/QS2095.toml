@@ -11,3 +11,6 @@ fits = [
   { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

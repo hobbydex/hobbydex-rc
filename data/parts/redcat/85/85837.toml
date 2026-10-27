@@ -5,3 +5,6 @@ name = "Flat Head Hex Self Tapping Screw 3x10 (12P)"
 pack_qty = 12
 category = "screw"
 documents = ["doc/redcat/camo-tt-pro-manual", "doc/redcat/camo-x4-pro-manual", "doc/redcat/everest-gen7-sport-manual"]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

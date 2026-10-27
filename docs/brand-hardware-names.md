@@ -102,6 +102,15 @@ flanged-button, flanged-pan (spec/screw/m3x12-flanged-socket-cap-hex). No ISO
 standard is cited for a flanged socket cap; flanged heads cite none. Flanged
 countersunk, flanged low-head and flanged set screws are not linked.
 
+A pan head ("Pan head", ISO 7045) is a pan head for any brand. Its drive is read
+from the name only ("hexagonal" or "hex" is hex; "cross" or "phillips" is
+phillips), so a plain "Pan head screw" gets no link. "Binding head" and
+"binder head" (a typo in some lists) are the truss head.
+
+A name with both a set screw and a round head ("Round Head Down Stop Set Screw")
+keeps the head its part already links (set or button); a new part reads the
+round head as a button head.
+
 ## Table
 
 | brand | code | meaning | spec head | source | status |
@@ -111,6 +120,8 @@ countersunk, flanged low-head and flanged set screws are not linked.
 | any | SH, SCH, SHCS, CAP, cap head | socket head cap screw, hex socket | socket-cap | XRAY: 'HEX SCREW SOCKET HEAD CAP SCH M3x12' in xb8e-2026-manual; SH and SOCKET HEAD CAP name the same sizes (902312 vs 908312) | stated |
 | any | LH, LHCS, low head | low head cap screw (flat top, DIN 7984) | low-head | XRAY/HUDY: 'Titanium Super-Low Head Screw Centering Dia' (HUDY 908xxx-T, xb4-2026-part-list) | stated |
 | any | SB, set screw, grub | set screw (grub, headless) | set | XRAY: xb8e-2026-manual 'Setscrew is preassembled' beside SB M3x4, 'Tighten setscrew onto gear flat spot' beside SB M5x4, 'Loosen the 3x5mm setscrew' beside SB M3x5. Kyosho 'Set Screw Set'. Tamiya decision: Grub = set (docs/decisions.md) | stated |
+| any | pan head | pan head (round top) screw; the name's drive only, no drive is read from the head | pan | generic head name (ISO 7045 pan head); no brand row states a drive for it | inferred |
+| any | binding head (binder typo) | binding head (Tamiya: Binding Head = truss) | truss | Tamiya decision maps Binding Head to truss (docs/decisions.md); Kyosho's 'Binding Head' note; 'BINDER HEAD' in an HPI name read as the same word | inferred |
 | kyosho | TP Round Screw | pan head (round top) screw, Kyosho's name | pan | Kyosho javelin parts list 'TP Round Screw(M3x8)' (Javelin spare parts) | stated |
 | kyosho | Bind Screw | binding head (Tamiya: Binding Head = truss) | truss | Kyosho data names 'Bind Screw(M3x16)', 'TP Bind Screw(M2.6x8)'; Kyosho calls it binding head; Tamiya decision maps Binding Head to truss | inferred |
 | tamiya | Cap Screw | Tamiya: Cap Screw = socket cap | socket-cap | docs/decisions.md (Tamiya screw convention) | stated |

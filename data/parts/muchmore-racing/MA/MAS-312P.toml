@@ -10,3 +10,6 @@ notes = "Name from the MB Models shop (search results, rccarshop.co.uk): \"3x12 
 links = [
   { site = "MB Models", url = "https://www.rccarshop.co.uk/mas-312p-muchmore-3x12-button-head-purple-4pcs-p", kind = "dealer" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -8,3 +8,7 @@ links = [
 pack_qty = 10
 pack_qty_basis = "name"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5x6x0.1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "steel"

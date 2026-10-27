@@ -5,3 +5,6 @@ name = "M3 Locknut"
 notes = "A set; the manuals label its pieces BH M3x14mm Scre; M3 Locknuts (6pcs); M3 Nylon Locknut; Nylon Insert"
 name_source = "manufacturer"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

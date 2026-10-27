@@ -4,3 +4,7 @@ number = "C-3303-12-16-05"
 name = "Aluminum Shim Ring 12x16x0.5mm"
 notes = "Name from the manual's exploded view (doc/team-corally/c-00132-ssx8x-manual-v4); not in the web shop"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/12x16x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "aluminium"

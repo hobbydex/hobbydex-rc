@@ -5,3 +5,6 @@ name = "Shim 5x7x0.20mm"
 notes = "A set; the manuals label its pieces 5x7x0.20mm Shim; 5x7x0.2mm Shim"
 name_source = "manufacturer"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5x7x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
