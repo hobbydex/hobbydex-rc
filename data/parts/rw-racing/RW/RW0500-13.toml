@@ -8,7 +8,7 @@ bore_mm = 2
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/10232-rw0500-13-RW0500-13", kind = "dealer" },
 ]
-source = "doc/rw-racing/beez2b-listing"
+documents = ["doc/rw-racing/beez2b-listing"]
 equivalent_to = [
   { spec = "spec/pinion/mod0.5-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]

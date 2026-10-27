@@ -621,6 +621,8 @@ def main():
             if not isinstance(ts, list) or not ts or not all(isinstance(t, dict) and set(t) == {"term", "text"} and all(
                     isinstance(t[k], str) and t[k].strip() == t[k] and t[k] for k in ("term", "text")) for t in ts):
                 errors.append(f"{path}: terms should be a list of {{ term, text }} strings")
+        if kind == "part" and "source" in d:   # the site reads documents, links and sources on a part, not a single source (docs/schema.md "part")
+            errors.append(f"{path}: part has a singular source = {d['source']!r}; put it in documents (a list) instead")
         if kind == "part" and any(isinstance(f, dict) and f.get("kit") in placeholder_kits for f in d.get("fits", []) or []):
             errors.append(f"{path}: fits a placeholder kit; a placeholder holds no parts or fits of its own")
         def check_ref(field, value, where):

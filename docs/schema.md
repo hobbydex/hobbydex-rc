@@ -522,7 +522,7 @@ Eddy, RCScrewZ, Avid RC, Acer Racing ...) on kits sold under many bodies
 (Tamiya's chassis, platforms such as the SCX24 or Fazer Mk2); elsewhere the
 kit is the car.
 
-`documents`: the part's own documents, such as a radio's user manual. Radios
+`documents`: the part's own documents, such as a radio's user manual (a list of `doc/` ids). A part has no singular `source` field: the site does not read it, so tools/validate.py rejects it; the docs the part came from go in `documents`. Radios
 and receivers also carry `channels` and `protocol` (AFHDS 3, ANT, DSMR) and
 `weight_g`; their model code is the part number (FS-NB4+, so a number may
 contain `+`).
