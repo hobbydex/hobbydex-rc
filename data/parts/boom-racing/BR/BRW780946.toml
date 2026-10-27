@@ -5,6 +5,10 @@ name = "SLR 1.9\" Series Land Rover Steel Narrow (21mm) Beadlock Wheel w/ Scale 
 wheel_size = "1.9\""
 vehicle = "crawler"
 beadlock = true
+fits = [
+  { kit = "kit/boom-racing/brx02-88", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-109", type = "direct", source = "doc/boom-racing/shop" },
+]
 notes = "The shop's listing cuts the name; the end is taken from the product URL"
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/slr-19-series-land-rover-steel-narrow-21mm-beadlock-wheel-w-scale-cap-scale-hardware-alum-hub-2-212033" },
