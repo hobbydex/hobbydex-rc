@@ -5,4 +5,6 @@ name = "Floating Servo Mount"
 documents = ["doc/lc-racing/c7122-product-page"]
 applies_to = "LC10B5V2"
 category = "chassis"
-fits = []
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7122-product-page" },
+]
