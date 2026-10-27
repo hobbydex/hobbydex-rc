@@ -5,4 +5,9 @@ name = "Body Mount Set (SB/Dune Master)"
 gtin = "4548565488469"
 category = "body-accessory"
 documents = ["doc/kyosho/um590-product-page"]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/um590.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/um590.html" },
+]
+fits = [
+  { kit = "kit/kyosho/ultima-sb", releases = ["release/kyosho/34312"], type = "direct", source = "doc/kyosho/34312-ultima-sb-dune-master-spare-and-option-parts" },
+]
