@@ -7,4 +7,9 @@ seen_by_source = "https://furitek.com/products/furitek-clear-body-set-for-furite
 applies_to = "FURITEK Terra COMP"
 category = "body"
 color = "clear"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-clear-body-set-for-furitek-terra-comp" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-clear-body-set-for-furitek-terra-comp" },
+]
+fits = [
+  { kit = "kit/furitek/terra-comp", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

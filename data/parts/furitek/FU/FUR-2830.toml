@@ -6,4 +6,9 @@ seen_by = "2026-08-27"
 seen_by_source = "https://furitek.com/products/furitek-rogue-6x6-oil-shock-set"
 category = "shock"
 shock_part = "complete"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-rogue-6x6-oil-shock-set" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-rogue-6x6-oil-shock-set" },
+]
+fits = [
+  { kit = "kit/furitek/rogue-6x6", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

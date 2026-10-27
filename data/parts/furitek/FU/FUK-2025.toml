@@ -9,7 +9,9 @@ category = "esc"
 motor_type = "both"
 current_a = 20
 peak_current_a = 40
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-lizard-20a" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-lizard-20a" },
+]
 fits = [
   { kit = "kit/axial/scx24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]

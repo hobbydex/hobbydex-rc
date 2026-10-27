@@ -7,4 +7,9 @@ seen_by_source = "https://furitek.com/products/furitek-clear-body-set-for-furite
 applies_to = "FURITEK FX118 FURY WAGON"
 category = "body"
 color = "clear"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-clear-body-set-for-furitek-fx118-fury-wagon" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-clear-body-set-for-furitek-fx118-fury-wagon" },
+]
+fits = [
+  { kit = "kit/furitek/fx118", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

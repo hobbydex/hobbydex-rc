@@ -11,7 +11,9 @@ programming = ["bluetooth"]
 current_a = 40
 peak_current_a = 70
 material = "aluminium"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-lizard-ultimate-40a-70a-brushed-brushless-esc-for-axial-scx24-with-aluminium-and-bluetooth" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-lizard-ultimate-40a-70a-brushed-brushless-esc-for-axial-scx24-with-aluminium-and-bluetooth" },
+]
 fits = [
   { kit = "kit/axial/scx24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]

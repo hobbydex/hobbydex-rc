@@ -6,4 +6,9 @@ seen_by = "2026-08-03"
 seen_by_source = "https://furitek.com/products/furitek-rogue-comp-titanium-cage-kit"
 category = "bumper-guard"
 material = "titanium"
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-rogue-comp-titanium-cage-kit" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-rogue-comp-titanium-cage-kit" },
+]
+fits = [
+  { kit = "kit/furitek/rogue-6x6", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

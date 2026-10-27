@@ -8,7 +8,9 @@ applies_to = "Losi Nascar"
 category = "esc"
 motor_type = "brushless"
 sensored = true
-links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-scorpion-5600kv-brushless-sensored-esc-motor-power-system-for-losi-nascar" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/furitek-scorpion-5600kv-brushless-sensored-esc-motor-power-system-for-losi-nascar" },
+]
 fits = [
   { kit = "kit/losi/nascar", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]

@@ -8,4 +8,9 @@ applies_to = "Furitek TerraX Active Pro 4WS"
 category = "servo"
 category_source = "curated"
 motor = "cored"
-links = [{ site = "Furitek", url = "https://furitek.com/products/complete-pre-built-front-axle-and-servo-set-for-furitek-terrax-active-pro-4ws" }]
+links = [
+  { site = "Furitek", url = "https://furitek.com/products/complete-pre-built-front-axle-and-servo-set-for-furitek-terrax-active-pro-4ws" },
+]
+fits = [
+  { kit = "kit/furitek/terrax-active-pro-4ws", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]
