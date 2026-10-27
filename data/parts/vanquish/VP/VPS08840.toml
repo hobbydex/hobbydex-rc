@@ -4,4 +4,9 @@ number = "VPS08840"
 name = "H10 Ram Clamps"
 gtin = "791512786673"
 category = "chassis"
-links = [{ site = "Vanquish", url = "https://vanquishproducts.com/products/h10-ram-clamps" }]
+links = [
+  { site = "Vanquish", url = "https://vanquishproducts.com/products/h10-ram-clamps" },
+]
+fits = [
+  { kit = "kit/vanquish/h10", type = "direct", source = "doc/vanquish/store", notes = "Listed for the Vanquish Products H10 axles (link_car_kits.py)" },
+]
