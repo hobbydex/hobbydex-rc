@@ -6,3 +6,6 @@ notes = "Name read by OCR from a scanned kyosho manual; verify before relying on
 name_source = "ocr"
 category = "oil-grease"
 documents = ["doc/kyosho/30422-t02-plazma-ra-im"]
+fits = [
+  { kit = "kit/kyosho/plazma-ra", type = "direct", source = "doc/kyosho/30422-t02-plazma-ra-spop" },
+]

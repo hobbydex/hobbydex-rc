@@ -5,4 +5,9 @@ name = "Rear Drive Disconnect"
 gtin = "4548565120468"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/rfw001.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/rfw001.html" },
+]
+fits = [
+  { kit = "kit/kyosho/rock-force", type = "direct", source = "doc/kyosho/30984-rockforce-p" },
+]

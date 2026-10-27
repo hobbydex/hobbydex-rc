@@ -1,6 +1,9 @@
 id = "part/kyosho/36221"
 brand = "brand/kyosho"
 number = "36221"
-name = "36221"
-notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
+name = "Sponge Tire (F) Front 35°"
 documents = ["doc/kyosho/31284-evolva2005-m"]
+fits = [
+  { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31284-evolva2005-p" },
+]
+category = "tire"

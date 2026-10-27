@@ -8,4 +8,9 @@ gtin = "4548565177394"
 category = "chassis"
 documents = ["doc/kyosho/kfw021-torque-rod-carbon-front-upper-plate-set", "doc/kyosho/kfw021-product-page"]
 material = "carbon"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw021.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw021.html" },
+]
+fits = [
+  { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/kf01_parts_list_v01" },
+]

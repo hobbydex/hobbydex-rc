@@ -1,7 +1,12 @@
 id = "part/kyosho/92526"
 brand = "brand/kyosho"
 number = "92526"
-name = "92526"
-notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
+name = "5.8mm Hard Ball Joint (w/2.0mm hole)"
 ocr_names = ["5.8mm Hard Ball Joint (w/2.0mm hole)"]
 documents = ["doc/kyosho/31257-vonerrr-ruber-m"]
+fits = [
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31257-vonerrr-ruber-p" },
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31349-v-one-s3-evo-gt-r-p" },
+  { kit = "kit/kyosho/v-one-sr", type = "direct", source = "doc/kyosho/31591-v-one-sr-p" },
+]
+category = "ball-end"

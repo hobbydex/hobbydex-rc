@@ -1,6 +1,9 @@
 id = "part/kyosho/SD002"
 brand = "brand/kyosho"
 number = "SD002"
-name = "SD002"
-notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
+name = "Axle Mount Set (SPADA 09)"
 documents = ["doc/kyosho/31003-spada-09l-m"]
+fits = [
+  { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+]
+category = "chassis"

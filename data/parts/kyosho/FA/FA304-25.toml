@@ -10,10 +10,13 @@ documents = ["doc/kyosho/fa304-25-product-page"]
 fits = [
   { kit = "kit/kyosho/mad-bug", type = "direct", source = "doc/kyosho/30994-mad-bug-spop" },
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
+  { kit = "kit/kyosho/rage-ve", type = "direct", source = "doc/kyosho/30992-rage-ve-spop" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-25t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 teeth = 25
 pitch_dp = 48
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/fa304-25.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/fa304-25.html" },
+]

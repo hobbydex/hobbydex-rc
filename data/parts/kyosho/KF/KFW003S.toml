@@ -8,4 +8,9 @@ gtin = "4548565160020"
 category = "chassis"
 documents = ["doc/kyosho/kfw003s-kf01-alu-center-shaft-mount", "doc/kyosho/kfw003s-product-page"]
 material = "aluminium"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw003s.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw003s.html" },
+]
+fits = [
+  { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/kf01_parts_list_v01" },
+]

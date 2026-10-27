@@ -7,4 +7,9 @@ name_ja = "KF01 ボールデフセット"
 gtin = "4548565166602"
 category = "differential"
 documents = ["doc/kyosho/kfw006-kf01-ball-diff-set", "doc/kyosho/kfw006-product-page"]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw006.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw006.html" },
+]
+fits = [
+  { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/kf01_parts_list_v01" },
+]

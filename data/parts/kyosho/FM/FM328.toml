@@ -1,7 +1,10 @@
 id = "part/kyosho/FM328"
 brand = "brand/kyosho"
 number = "FM328"
-name = "FM328"
-notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
+name = "3x8x12mm Collar"
 ocr_names = ["Disk Brake Pad (Disk Brake Pad)"]
 documents = ["doc/kyosho/31257-vonerrr-ruber-m"]
+fits = [
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31257-vonerrr-ruber-p" },
+]
+category = "washer-shim"
