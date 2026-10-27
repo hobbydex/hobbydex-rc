@@ -5,3 +5,7 @@ name = "Ceramic Bearing 1/4x3/8x1/8 Flanged (pr)"
 gtin = "5051294099213"
 name_source = "manufacturer"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

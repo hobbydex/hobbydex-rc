@@ -18,4 +18,9 @@ fits = [
   { kit = "kit/mugen/mtx2", type = "direct", source = "doc/mugen/mtx-2-part-list" },
   { kit = "kit/mugen/msx3", type = "direct", source = "doc/mugen/msx3-part-list" },
 ]
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M3X16-CAP-SCREW/B0664" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M3X16-CAP-SCREW/B0664" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x16-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

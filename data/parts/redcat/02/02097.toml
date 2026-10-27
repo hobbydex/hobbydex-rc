@@ -5,3 +5,6 @@ name = "Cap Head Machine Screw 3x14"
 pack_qty = 6
 category = "screw"
 documents = ["doc/redcat/volcano-epx-manual"]
+equivalent_to = [
+  { spec = "spec/screw/m3x14-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

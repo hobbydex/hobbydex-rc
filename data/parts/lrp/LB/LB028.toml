@@ -11,3 +11,6 @@ category_source = "curated"
 fits = [
   { kit = "kit/lrp/shark-18-buggy", type = "direct", source = "doc/lrp/110300-de-manual" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

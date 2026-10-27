@@ -6,3 +6,6 @@ name_source = "manual"
 status = "discontinued"
 notes = "Named in the maker's manual TD102006 (team-durango.com)"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3x5x0.1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

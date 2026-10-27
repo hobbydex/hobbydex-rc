@@ -8,4 +8,9 @@ fits = [
   { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
 ]
 category = "screw"
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M3X20-CAP-SCREW/B0666" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M3X20-CAP-SCREW/B0666" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

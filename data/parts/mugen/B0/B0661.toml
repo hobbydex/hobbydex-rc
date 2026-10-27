@@ -11,4 +11,9 @@ fits = [
   { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list" },
   { kit = "kit/mugen/prime-12", type = "direct", source = "doc/mugen/prime-12-part-list" },
 ]
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M3X23-CAP-SCREW/B0661" } ]
+links = [
+  { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M3X23-CAP-SCREW/B0661" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x23-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

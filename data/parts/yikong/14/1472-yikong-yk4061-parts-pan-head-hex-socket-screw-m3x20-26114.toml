@@ -9,3 +9,6 @@ category = "screw"
 fits = [
   { kit = "kit/yikong/yk4061", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-pan-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
