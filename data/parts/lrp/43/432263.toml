@@ -10,7 +10,7 @@ links = [
 chemistry = "lihv"
 cells = 2
 equivalent_to = [
-  { spec = "spec/battery/lihv-2s-7000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+  { spec = "spec/battery/lihv-2s-7000mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
 ]
 capacity_mah = 7000
 c_rating = 120
