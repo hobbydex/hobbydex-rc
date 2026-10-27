@@ -3,7 +3,6 @@ kit = "kit/tamiya/tl-01"
 brand = "brand/tamiya"
 number = "58289"
 name = "58289"
-sources = { kit = "https://www.tamiyabase.com/tamiya-models/58289" }
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name not yet from a Tamiya source; Not on Tamiya's current pages (read 2026-10); taken as discontinued"
@@ -14,3 +13,14 @@ released = "2002-03-13"
 released_source = "TamiyaBase"
 year = 2002
 documents = ["doc/tamiya/tl01-manual"]
+contains = [
+  { part = "part/tamiya/50575", role = "kit", source = "doc/tamiya/tl01-manual", notes = "Item read from the assembly steps; of several parts with this name, the one most Tamiya cards list" },
+  { part = "part/tamiya/50573", role = "kit", source = "doc/tamiya/tl01-manual", notes = "Item read from the assembly steps; of several parts with this name, the one most Tamiya cards list" },
+  { part = "part/tamiya/19805662", role = "kit", source = "doc/tamiya/tl01-manual", notes = "Item read from the assembly steps; of several parts with this name, the one most Tamiya cards list" },
+  { part = "part/tamiya/19808289", role = "kit", source = "doc/tamiya/tl01-manual" },
+  { part = "part/tamiya/19805976", role = "kit", source = "doc/tamiya/tl01-manual" },
+  { part = "part/tamiya/19805557", role = "kit", source = "doc/tamiya/tl01-manual", notes = "Item read from the assembly steps; of several parts with this name, the one most Tamiya cards list" },
+]
+
+[sources]
+kit = "https://www.tamiyabase.com/tamiya-models/58289"
