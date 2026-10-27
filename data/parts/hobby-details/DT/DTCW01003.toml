@@ -3,9 +3,13 @@ brand = "brand/hobby-details"
 number = "DTCW01003"
 name = "1.9\" Aluminum Beadlock Crawler Wheels - Red Beetle"
 pack_qty = 4
-pack_qty_basis = "name"
 material = "aluminium"
+applies_to = "Beetle"
+fits = [
+  { kit = "kit/kyosho/beetle", type = "replaces", source = "doc/hobby-details/catalogue" },
+]
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
+pack_qty_basis = "name"
 category = "wheel"
 wheel_size = "1.9\""
 vehicle = "crawler"

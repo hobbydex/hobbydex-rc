@@ -3,3 +3,7 @@ brand = "brand/vanquish"
 number = "VPS09013"
 name = "VS4-10 Phoenix Portal RTR Falken Edition"
 notes = "Whole-kit listing with no maker page linked; it stays a part until one is found (2026-10-27)."
+applies_to = "VS4-10"
+fits = [
+  { kit = "kit/vanquish/vs4-10", type = "replaces", source = "doc/vanquish/store" },
+]
