@@ -2,8 +2,13 @@ id = "part/kyosho/LA381"
 brand = "brand/kyosho"
 number = "LA381"
 name = "Main Chassis(ZX7)"
+name_source = "ocr"
 gtin = "4548565356959"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
 category = "chassis"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/la381.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/la381.html" },
+]
+fits = [
+  { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
+]

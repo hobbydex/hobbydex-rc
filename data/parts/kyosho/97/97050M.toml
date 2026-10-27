@@ -5,6 +5,7 @@ name = "4.8mm Ball Stad (M)"
 status = "discontinued"
 gtin = "4548565191031"
 pack_qty = 4
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
@@ -15,7 +16,10 @@ fits = [
   { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
   { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-spop" },
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33206-v-one-r4sii-spop" },
+  { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
 ]
 category = "ball-end"
 ball_mm = 4.8
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/97050m.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/97050m.html" },
+]
