@@ -589,6 +589,13 @@ def main():
     check("release-no-date", "date the release from a source (released, year or announced); a seen_by bound is only a fallback",
           [r for r in rels if not any(r.get(k) for k in ("released", "year", "announced", "seen_by"))])
 
+    # 15b. announced later than the seen_by bound: the announcement source is wrong (the car was on sale by the bound)
+    def after_bound(x):
+        a, b = str(x.get("announced", "")), str(x.get("seen_by", ""))
+        return bool(a and b) and a[:len(b)] > b
+    check("announced-after-seen-by", "the announced day is later than the seen_by bound, so its source is wrong: remove announced and announced_source (the bound stays); find the right day or leave the release undated",
+          [r for r in rels if after_bound(r)] + [x for x in parts if after_bound(x)])
+
     # 16. release whose category is the same as its kit's (redundant override)
     check("release-category-redundant", "remove the release's category: it equals the kit's",
           [r for r in rels if r.get("category") and r.get("category") == kits.get(r.get("kit"), {}).get("category")])
