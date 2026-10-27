@@ -4,6 +4,12 @@ number = "DTSL20004"
 name = "Traxxas Slash 2WD 1/10 Aluminum Front C Hub"
 material = "aluminium"
 scale = "1/10"
+applies_to = "Slash 2WD"
+fits = [
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/hobby-details/catalogue" },
+]
 notes = "Listed in the maker's catalogue at hobbydetails.com (http only)."
 category = "suspension"
-links = [ { site = "Hobby Details", url = "http://hobbydetails.com/?p=119&a=view&r=1271" } ]
+links = [
+  { site = "Hobby Details", url = "http://hobbydetails.com/?p=119&a=view&r=1271" },
+]
