@@ -6,3 +6,6 @@ category = "suspension"
 color = "orange"
 material = "aluminium"
 documents = ["doc/xray/t4-2013-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300019"], type = "replaces", source = "doc/xray/t4-2013-part-list" },
+]

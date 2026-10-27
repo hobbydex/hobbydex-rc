@@ -8,3 +8,6 @@ applies_to = "SCX24 Deadbolt"
 category = "suspension"
 material = "carbon"
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-carbon-high-clearance-links-set-for-scx24-deadbolt" }]
+fits = [
+  { kit = "kit/axial/scx24", releases = ["release/axial/axi90081t1", "release/axial/axi90081t2"], type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

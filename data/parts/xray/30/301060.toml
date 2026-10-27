@@ -5,3 +5,6 @@ name = "T4'20 GRAPHITE UPPER DECK 2.0MM"
 category = "chassis"
 material = "carbon"
 documents = ["doc/xray/t4-2020-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300026", "release/xray/300027"], type = "replaces", source = "doc/xray/t4-2020-part-list" },
+]

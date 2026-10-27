@@ -8,3 +8,6 @@ applies_to = "GRASSHOPPER KIT FCX24"
 material = "brass"
 category = "bumper-guard"
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-flat-brass-skid-for-grasshopper-kit-fcx24" }]
+fits = [
+  { kit = "kit/fms/fcx24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

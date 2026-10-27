@@ -10,3 +10,7 @@ equivalent_to = [
 ]
 material = "steel"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1545" }]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300019"], type = "replaces", source = "doc/xray/t4-2013-part-list" },
+  { kit = "kit/xray/x8", releases = ["release/xray/x8-2024"], type = "replaces", source = "doc/xray/x8-2024-part-list" },
+]

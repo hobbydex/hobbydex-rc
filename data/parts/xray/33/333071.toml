@@ -4,3 +4,6 @@ number = "333071"
 name = "BELT TENSIONER SET"
 category = "gear"
 documents = ["doc/xray/nt1-2013-part-list", "doc/xray/nt1-2014-part-list"]
+fits = [
+  { kit = "kit/xray/nt1", releases = ["release/xray/330008", "release/xray/330009"], type = "replaces", source = "doc/xray/nt1-2014-part-list" },
+]

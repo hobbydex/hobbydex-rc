@@ -11,3 +11,6 @@ programming = ["app"]
 current_a = 30
 peak_current_a = 50
 documents = ["doc/furitek/lizard-pro-manual"]
+fits = [
+  { kit = "kit/axial/scx24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

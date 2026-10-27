@@ -11,3 +11,6 @@ programming = ["bluetooth"]
 current_a = 20
 peak_current_a = 40
 documents = ["doc/furitek/lizard-manual"]
+fits = [
+  { kit = "kit/axial/scx24", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

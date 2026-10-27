@@ -9,3 +9,6 @@ category = "servo"
 category_source = "curated"
 motor = "cored"
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-digital-servo-controller-for-kyosho-mini-z-4x4-servo" }]
+fits = [
+  { kit = "kit/kyosho/mini-z-4x4", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

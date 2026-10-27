@@ -7,3 +7,6 @@ color = "black"
 material = "aluminium"
 material_grade = "7075-T6"
 documents = ["doc/xray/t4-2021-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
+]

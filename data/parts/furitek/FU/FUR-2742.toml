@@ -10,3 +10,6 @@ category_source = "curated"
 weight_g = 10
 motor = "brushless"
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-nanomodo-2026-control-system-esc-brushless-motor-servo-controller-gripor-v2-tx-rx-for-redcat-ascent-32" }]
+fits = [
+  { kit = "kit/redcat/ascent-32", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

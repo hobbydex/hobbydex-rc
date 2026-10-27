@@ -8,3 +8,6 @@ applies_to = "REDCAT ASCENT-18"
 category = "esc"
 motor_type = "brushless"
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-mini-komodo-unity-2-in-1-esc-motor-micro-foc-brushless-system-for-redcat-ascent-18" }]
+fits = [
+  { kit = "kit/redcat/ascent-18", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

@@ -4,3 +4,6 @@ number = "303496"
 name = "T4 ANTI-ROLL BAR REAR 1.6 MM"
 category = "suspension"
 documents = ["doc/xray/t4-2014-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300020"], type = "replaces", source = "doc/xray/t4-2014-part-list" },
+]
