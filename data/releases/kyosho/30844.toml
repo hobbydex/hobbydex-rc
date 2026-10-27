@@ -11,6 +11,8 @@ seen_by = "2014-04"
 seen_by_source = "https://web.archive.org/web/20140430150517/http://www.kyosho.com/jpn/support/instructionmanual/d_platform/pdf/DMT_VE-R_30844-EX.pdf"
 documents = ["doc/kyosho/dmt-ve-r-30844-sp", "doc/kyosho/dmt-ve-r-30844-ex", "doc/kyosho/dmt-ve-r-30844-mm01", "doc/kyosho/dmt-ve-r-30844t1-t01", "doc/kyosho/dmt-ve-r-30844-op", "doc/kyosho/30844-product-page"]
 contains = [
+  { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/dmt-ve-r-30844-ex" },
+  { part = "part/kyosho/1-W260705", role = "kit", source = "doc/kyosho/dmt-ve-r-30844-ex" },
   { part = "part/kyosho/92051", role = "kit", source = "doc/kyosho/dmt-ve-r-30844-sp" },
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/dmt-ve-r-30844-sp" },
   { part = "part/kyosho/96646", role = "kit", source = "doc/kyosho/dmt-ve-r-30844-sp" },

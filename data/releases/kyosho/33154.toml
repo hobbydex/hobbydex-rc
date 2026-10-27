@@ -10,6 +10,8 @@ status = "discontinued"
 gtin = "4548565366675"
 documents = ["doc/kyosho/33154-fo-xx-2-0-spop-20191228", "doc/kyosho/33154-fo-xx-2-0-ex-20191228", "doc/kyosho/33154-fo-xx-2-0-mm-20191228", "doc/kyosho/33154-fo-xx-2-0-im-ver02", "doc/kyosho/33154-product-page", "doc/kyosho/youtube-3jfPXmaNgbU"]
 contains = [
+  { part = "part/kyosho/1-E070", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-ex-20191228" },
+  { part = "part/kyosho/1-W701105", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-ex-20191228" },
   { part = "part/kyosho/1701BK", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/74032-09", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/82135", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
@@ -25,11 +27,13 @@ contains = [
   { part = "part/kyosho/92703", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/92985", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/96772", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
+  { part = "part/kyosho/96774", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-ex-20191228" },
   { part = "part/kyosho/96775", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/97001", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/97002", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/97004", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/97011", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
+  { part = "part/kyosho/97011-128B", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-ex-20191228" },
   { part = "part/kyosho/97037-16", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/97045", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/97052", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
@@ -54,8 +58,10 @@ contains = [
   { part = "part/kyosho/IF351", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/IF412", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/IF54", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
+  { part = "part/kyosho/IF7", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-ex-20191228" },
   { part = "part/kyosho/IFW107", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/IFW472", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
+  { part = "part/kyosho/IFW472GM", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-ex-20191228" },
   { part = "part/kyosho/IFW53", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/IG107", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/IG109B", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
@@ -110,6 +116,8 @@ contains = [
   { part = "part/kyosho/ORG06", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/W0202", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/W5351", role = "kit", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
+  { part = "part/kyosho/1228", role = "listed", source = "doc/kyosho/33154-fo-xx-2-0-im-ver02" },
+  { part = "part/kyosho/1511", role = "listed", source = "doc/kyosho/33154-fo-xx-2-0-im-ver02" },
   { part = "part/kyosho/92201", role = "option", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/97054", role = "option", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/97054-2", role = "option", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
@@ -143,7 +151,5 @@ contains = [
   { part = "part/kyosho/MAW029GM", role = "option", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/VZ086", role = "option", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
   { part = "part/kyosho/W0202H", role = "option", source = "doc/kyosho/33154-fo-xx-2-0-spop-20191228" },
-  { part = "part/kyosho/1228", role = "listed", source = "doc/kyosho/33154-fo-xx-2-0-im-ver02" },
-  { part = "part/kyosho/1511", role = "listed", source = "doc/kyosho/33154-fo-xx-2-0-im-ver02" },
 ]
 supersedes = "release/kyosho/31228"

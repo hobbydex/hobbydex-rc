@@ -10,13 +10,17 @@ seen_by = "2007-03"
 seen_by_source = "https://web.archive.org/web/20070322201832/http://www.kyosho.com:80/jpn/support/instructionmanual/buggy/pdf/31192_mp75_sports_m.pdf"
 documents = ["doc/kyosho/31192-mp75-sports-p", "doc/kyosho/31192-mp75-sports-t", "doc/kyosho/31192-mp75-sports-m"]
 contains = [
+  { part = "part/kyosho/1382", role = "kit", source = "doc/kyosho/31192-mp75-sports-t" },
+  { part = "part/kyosho/1383", role = "kit", source = "doc/kyosho/31192-mp75-sports-t" },
   { part = "part/kyosho/92304", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/92405", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
+  { part = "part/kyosho/92418", role = "kit", source = "doc/kyosho/31192-mp75-sports-t" },
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/92703", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/92831", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/92843", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/BRG005", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
+  { part = "part/kyosho/BRG0120", role = "kit", source = "doc/kyosho/31192-mp75-sports-t" },
   { part = "part/kyosho/BS107", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/BS124", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/BS46", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
@@ -81,6 +85,7 @@ contains = [
   { part = "part/kyosho/IF55", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/IF62", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/IF64", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
+  { part = "part/kyosho/IF7", role = "kit", source = "doc/kyosho/31192-mp75-sports-t" },
   { part = "part/kyosho/LD70", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/ORG04", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },
   { part = "part/kyosho/ORG06", role = "kit", source = "doc/kyosho/31192-mp75-sports-p" },

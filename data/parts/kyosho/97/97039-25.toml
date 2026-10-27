@@ -17,6 +17,10 @@ fits = [
   { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/30935-mm01-infernogt2veracespec-spop" },
   { kit = "kit/kyosho/inferno-neo-st", type = "direct", source = "doc/kyosho/31683-inferno-neo-st-rs-sp" },
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
+  { kit = "kit/kyosho/inferno-neo", type = "direct", source = "doc/kyosho/31295-inferno-neo-ex" },
+  { kit = "kit/kyosho/inferno-neo-2-0", type = "direct", source = "doc/kyosho/31684-mm01-inferno-neo-2-ex" },
+  { kit = "kit/kyosho/inferno-ve", type = "direct", source = "doc/kyosho/34101t2-inferno-ve-rs-kt-231p-ex" },
+  { kit = "kit/kyosho/psycho-kruiser", type = "direct", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-ex" },
 ]
 category = "pin"
 category_source = "curated"
@@ -24,4 +28,6 @@ equivalent_to = [
   { spec = "spec/pin/3x25-screw", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
   { spec = "spec/pin/3x25", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/97039-25.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/97039-25.html" },
+]

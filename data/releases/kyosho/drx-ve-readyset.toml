@@ -7,6 +7,8 @@ kind = "rtr"
 status = "released"
 documents = ["doc/kyosho/30879-mm01-spop", "doc/kyosho/30879-mm01-ex", "doc/kyosho/30879-t01-drx-ve-im"]
 contains = [
+  { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/30879-mm01-ex" },
+  { part = "part/kyosho/1-W260705", role = "kit", source = "doc/kyosho/30879-mm01-ex" },
   { part = "part/kyosho/28820", role = "kit", source = "doc/kyosho/30879-mm01-spop" },
   { part = "part/kyosho/65111", role = "kit", source = "doc/kyosho/30879-mm01-spop" },
   { part = "part/kyosho/82122", role = "kit", source = "doc/kyosho/30879-mm01-spop" },

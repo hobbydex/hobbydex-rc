@@ -12,6 +12,10 @@ edition = "TKI4"
 gtin = "4548565347803"
 documents = ["doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop", "doc/kyosho/33014t1-inferno-mp9-tki4-rs-ex", "doc/kyosho/33014t1-inferno-mp9-tki4-rs-mm", "doc/kyosho/33014t1-inferno-mp9-tki4-im", "doc/kyosho/33014t1-product-page"]
 contains = [
+  { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-ex" },
+  { part = "part/kyosho/1-W200604", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-ex" },
+  { part = "part/kyosho/1-W301010", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-ex" },
+  { part = "part/kyosho/1-W401005", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-ex" },
   { part = "part/kyosho/39514-1", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/82135", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/82141", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
@@ -137,6 +141,8 @@ contains = [
   { part = "part/kyosho/IF480", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/IF482", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/IF487", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
+  { part = "part/kyosho/IFW336GM", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-ex" },
+  { part = "part/kyosho/IFW415", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-ex" },
   { part = "part/kyosho/IFW53", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/IS106", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/KE21SP", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
@@ -146,6 +152,8 @@ contains = [
   { part = "part/kyosho/W0204", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/W5015", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/W5040", role = "kit", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
+  { part = "part/kyosho/1228", role = "listed", source = "doc/kyosho/33014t1-inferno-mp9-tki4-im" },
+  { part = "part/kyosho/1511", role = "listed", source = "doc/kyosho/33014t1-inferno-mp9-tki4-im" },
   { part = "part/kyosho/92201", role = "option", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/92214", role = "option", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/96176", role = "option", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
@@ -270,6 +278,4 @@ contains = [
   { part = "part/kyosho/IS106-816", role = "option", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/IS106-914", role = "option", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
   { part = "part/kyosho/W0202", role = "option", source = "doc/kyosho/33014t1-inferno-mp9-tki4-rs-spop" },
-  { part = "part/kyosho/1228", role = "listed", source = "doc/kyosho/33014t1-inferno-mp9-tki4-im" },
-  { part = "part/kyosho/1511", role = "listed", source = "doc/kyosho/33014t1-inferno-mp9-tki4-im" },
 ]

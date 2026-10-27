@@ -10,6 +10,8 @@ seen_by = "2008-11"
 seen_by_source = "https://web.archive.org/web/20081121173224/http://www.kyosho.com/jpn/support/instructionmanual/buggy/pdf/30071_ep_ultimarb_r_m.pdf"
 documents = ["doc/kyosho/30071-ep-ultimarb-r-p", "doc/kyosho/30071-ep-ultimarb-r-t", "doc/kyosho/30071-ep-ultimarb-r-m"]
 contains = [
+  { part = "part/kyosho/1901", role = "kit", source = "doc/kyosho/30071-ep-ultimarb-r-t" },
+  { part = "part/kyosho/1903", role = "kit", source = "doc/kyosho/30071-ep-ultimarb-r-t" },
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/30071-ep-ultimarb-r-p" },
   { part = "part/kyosho/92921", role = "kit", source = "doc/kyosho/30071-ep-ultimarb-r-p" },
   { part = "part/kyosho/92922", role = "kit", source = "doc/kyosho/30071-ep-ultimarb-r-p" },

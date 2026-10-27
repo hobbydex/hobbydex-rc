@@ -10,10 +10,13 @@ seen_by = "2013-05"
 seen_by_source = "https://web.archive.org/web/20130513004703/http://www.kyosho.com:80/jpn/support/instructionmanual/d_platform/pdf/31082-MM01_DRT_EX.pdf"
 documents = ["doc/kyosho/31082-mm01-drt-spop", "doc/kyosho/31082-mm01-drt-ex", "doc/kyosho/31082-drt-qsg", "doc/kyosho/31082-mm01-drt-mm", "doc/kyosho/31082-t01-drt-im"]
 contains = [
+  { part = "part/kyosho/1190", role = "kit", source = "doc/kyosho/31082-mm01-drt-ex" },
   { part = "part/kyosho/82106-01", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
+  { part = "part/kyosho/92051", role = "kit", source = "doc/kyosho/31082-mm01-drt-ex" },
   { part = "part/kyosho/92304", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
   { part = "part/kyosho/92304-1", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
   { part = "part/kyosho/92304-2", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
+  { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/31082-mm01-drt-ex" },
   { part = "part/kyosho/96183BL", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
   { part = "part/kyosho/96646", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
   { part = "part/kyosho/97001", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
@@ -27,6 +30,7 @@ contains = [
   { part = "part/kyosho/BRG001", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
   { part = "part/kyosho/BRG002", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
   { part = "part/kyosho/BRG006", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
+  { part = "part/kyosho/BRG008", role = "kit", source = "doc/kyosho/31082-mm01-drt-ex" },
   { part = "part/kyosho/IF208B", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
   { part = "part/kyosho/IFW136", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },
   { part = "part/kyosho/IFW53", role = "kit", source = "doc/kyosho/31082-mm01-drt-spop" },

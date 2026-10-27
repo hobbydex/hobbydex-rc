@@ -9,6 +9,7 @@ seen_by = "2013-08"
 seen_by_source = "https://web.archive.org/web/20130806085145/http://www.kyosho.com:80/jpn/support/instructionmanual/pureten_fazer/pdf/31398S_FAZERKT-200_EX.pdf"
 documents = ["doc/kyosho/31398s-fazerkt-200-op", "doc/kyosho/31398s-fazerkt-200-ex", "doc/kyosho/31398s-fazerkt-200-im", "doc/kyosho/31398s-fazerkt-200-sp", "doc/kyosho/31398s-fazerkt-200-mm"]
 contains = [
+  { part = "part/kyosho/1-E025", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-ex" },
   { part = "part/kyosho/82120", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
   { part = "part/kyosho/82216", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
   { part = "part/kyosho/92023", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
@@ -23,6 +24,8 @@ contains = [
   { part = "part/kyosho/97024", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
   { part = "part/kyosho/A002C", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
   { part = "part/kyosho/BRG004", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
+  { part = "part/kyosho/BRG008", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-ex" },
+  { part = "part/kyosho/BRG022", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-ex" },
   { part = "part/kyosho/BS107", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
   { part = "part/kyosho/FA001B", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
   { part = "part/kyosho/FA003", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
@@ -54,13 +57,6 @@ contains = [
   { part = "part/kyosho/VZ022BK", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
   { part = "part/kyosho/W5161", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
   { part = "part/kyosho/W6007", role = "kit", source = "doc/kyosho/31398s-fazerkt-200-sp" },
-  { part = "part/kyosho/FAW001-01", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
-  { part = "part/kyosho/FAW001-02", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
-  { part = "part/kyosho/FAW002", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
-  { part = "part/kyosho/FAW003", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
-  { part = "part/kyosho/FAW004", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
-  { part = "part/kyosho/FAW008", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
-  { part = "part/kyosho/FAW008-02", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
   { part = "part/kyosho/74101", role = "listed", source = "doc/kyosho/31398s-fazerkt-200-im" },
   { part = "part/kyosho/74101-01", role = "listed", source = "doc/kyosho/31398s-fazerkt-200-im" },
   { part = "part/kyosho/74101-02", role = "listed", source = "doc/kyosho/31398s-fazerkt-200-im" },
@@ -74,4 +70,11 @@ contains = [
   { part = "part/kyosho/74101-10", role = "listed", source = "doc/kyosho/31398s-fazerkt-200-im" },
   { part = "part/kyosho/74101-11", role = "listed", source = "doc/kyosho/31398s-fazerkt-200-im" },
   { part = "part/kyosho/74101-12", role = "listed", source = "doc/kyosho/31398s-fazerkt-200-im" },
+  { part = "part/kyosho/FAW001-01", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
+  { part = "part/kyosho/FAW001-02", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
+  { part = "part/kyosho/FAW002", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
+  { part = "part/kyosho/FAW003", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
+  { part = "part/kyosho/FAW004", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
+  { part = "part/kyosho/FAW008", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
+  { part = "part/kyosho/FAW008-02", role = "option", source = "doc/kyosho/31398s-fazerkt-200-op" },
 ]
