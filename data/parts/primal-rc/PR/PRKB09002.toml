@@ -1,8 +1,9 @@
 id = "part/primal-rc/PRKB09002"
 brand = "brand/primal-rc"
 number = "PRKB09002"
-name = "PRKB09002"
-notes = "Name not yet from a Primal source"
+name = "Primal Monster Truck Beadlocks - RED"
+name_source = "dealer"
+notes = "Name from a dealer's product page (Taylor RC, taylorrc.co.uk): the page prints the part number"
 fits = [
   { kit = "kit/primal-rc/raminator", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "KB-series number, the series the Monster Truck manuals print" },
   { kit = "kit/primal-rc/primal-mt", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "KB-series number, the series the Monster Truck manuals print" },
@@ -11,3 +12,9 @@ fits = [
   { kit = "kit/primal-rc/son-uva-digger", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "KB-series number, the series the Monster Truck manuals print" },
 ]
 documents = ["doc/primal-rc/vehicles-listing"]
+links = [
+  { site = "Taylor RC", url = "https://taylorrc.co.uk/products/raminator-monster-truck-beadlocks", kind = "dealer" },
+]
+
+[sources]
+name = "https://taylorrc.co.uk/products/raminator-monster-truck-beadlocks"

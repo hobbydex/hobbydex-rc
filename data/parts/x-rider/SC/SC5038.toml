@@ -1,10 +1,14 @@
 id = "part/x-rider/SC5038"
 brand = "brand/x-rider"
 number = "SC5038"
-name = "SC5038"
-notes = "X-Rider lists this number under Body Parts without a name"
+name = "12°Anti-roll Bar Post"
+name_source = "manual"
+notes = "Name from the maker's manual parts list"
 fits = [
   { kit = "kit/x-rider/scorpio", type = "direct", source = "doc/x-rider/scorpio-parts" },
   { kit = "kit/x-rider/scorpio-team-edition", type = "direct", source = "doc/x-rider/scorpio-team-edition-parts" },
 ]
 documents = ["doc/x-rider/scorpio-parts", "doc/x-rider/scorpio-team-edition-parts"]
+
+[sources]
+name = "http://www.cx3rider.com/support"
