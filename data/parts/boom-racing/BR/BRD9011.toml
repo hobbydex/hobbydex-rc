@@ -3,10 +3,15 @@ brand = "brand/boom-racing"
 number = "BRD9011"
 name = "Aluminum C-Hub for BRX90 PHATAxle #BRD9022 (2) Black"
 pack_qty = 2
-pack_qty_basis = "name"
+fits = [
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-d130", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/aluminum-c-hub-for-brx90-phataxle-brd9022-2-black-205257" },
 ]
+pack_qty_basis = "name"
 category = "suspension"
 color = "black"
 material = "aluminium"

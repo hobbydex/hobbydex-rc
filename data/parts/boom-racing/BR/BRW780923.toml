@@ -3,10 +3,16 @@ brand = "brand/boom-racing"
 number = "BRW780923"
 name = "S100 Scale Center Wheel Hub Cap (2) Black (XT5 Series)"
 pack_qty = 2
-pack_qty_basis = "name"
 vehicle = "crawler"
+fits = [
+  { kit = "kit/boom-racing/brx01", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx01-awb", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/s100-scale-center-wheel-hub-cap-2-black-xt5-series-162924" },
 ]
+pack_qty_basis = "name"
 category = "drivetrain"
 color = "black"

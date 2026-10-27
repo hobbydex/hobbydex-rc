@@ -3,11 +3,18 @@ brand = "brand/boom-racing"
 number = "BRXT516V2"
 name = "ProBuild XT516 V2 5-Lug Aluminum 12mm Wheel Hub Adapters 16mm Offset (2) Black"
 pack_qty = 2
-pack_qty_basis = "name"
 vehicle = "crawler"
 color = "black"
+fits = [
+  { kit = "kit/boom-racing/brx01", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx01-awb", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-d130", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/probuild-xt516-v2-5-lug-aluminum-12mm-wheel-hub-adapters-16mm-offset-2-black-201754" },
 ]
+pack_qty_basis = "name"
 category = "drivetrain"
 material = "aluminium"

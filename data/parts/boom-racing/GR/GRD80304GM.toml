@@ -3,10 +3,13 @@ brand = "brand/boom-racing"
 number = "GRD80304GM"
 name = "Aluminum Rear Axle Lock-out (2) Gun Metal"
 pack_qty = 2
-pack_qty_basis = "name"
+fits = [
+  { kit = "kit/gmade/r1", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/aluminum-rear-axle-lock-out-2-gun-metal-97402" },
 ]
+pack_qty_basis = "name"
 category = "drivetrain"
 color = "gun metal"
 material = "aluminium"

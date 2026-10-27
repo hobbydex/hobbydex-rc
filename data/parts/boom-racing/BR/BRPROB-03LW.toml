@@ -5,6 +5,11 @@ name = "ProBuild 1.9\" Delrin Lightweight Beadlock Center Clamp Ring 21.5mm"
 wheel_size = "1.9\""
 vehicle = "crawler"
 beadlock = true
+fits = [
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-d130", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/probuild-19-delrin-lightweight-beadlock-center-clamp-ring-215mm-1-183789" },
 ]

@@ -3,11 +3,20 @@ brand = "brand/boom-racing"
 number = "BRXT504V2"
 name = "ProBuild XT504 V2 5-Lug Aluminum 12mm Wheel Hub Adapters 4MM Offset Version 2 (2) Black"
 pack_qty = 2
-pack_qty_basis = "name"
 vehicle = "crawler"
 color = "black"
+fits = [
+  { kit = "kit/boom-racing/brx01", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx01-awb", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-109", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-88", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-d130", type = "direct", source = "doc/boom-racing/shop" },
+]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/probuild-xt504-v2-5-lug-aluminum-12mm-wheel-hub-adapters-4mm-offset-version-2-2-black-202003" },
 ]
+pack_qty_basis = "name"
 category = "drivetrain"
 material = "aluminium"
