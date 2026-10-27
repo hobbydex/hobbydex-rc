@@ -10,7 +10,11 @@ fits = [
   { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34362-04-rsa-out-ram-pro-spop" },
 ]
 category = "screw"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s53014.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s53014.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x14-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+color = "black"
+notes = "Colour read from the maker's product photo."

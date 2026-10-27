@@ -10,7 +10,11 @@ fits = [
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inferno-mp10e-kit-exploded-view" },
 ]
 category = "screw"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s23008f.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s23008f.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x8-flanged-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+color = "black"
+notes = "Colour read from the maker's product photo."
