@@ -6,7 +6,7 @@ gtin = "020334155207"
 pack_qty = 1
 category = "screw"
 includes = [
-  { spec = "spec/screw/m3x8-socket-cap-hex", notes = "Size from the name; the count is not stated" },
+  { spec = "spec/screw/m3x8-socket-cap-hex", qty = 6 },
 ]
 fits = [
   { kit = "kit/traxxas/ford-raptor-r", type = "direct", source = "doc/traxxas/101076-4-parts-list" },
