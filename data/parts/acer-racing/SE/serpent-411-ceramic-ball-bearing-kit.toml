@@ -5,7 +5,14 @@ category = "bearing"
 category_source = "curated"
 material = "ceramic"
 applies_to = "Serpent 411"
-notes = "Contents not recorded: line 'The Serpent 411 is a racing level 1/10th scale 190mm electric touring car. The S411 is...' could not be read."
 links = [
   { site = "Acer Racing", url = "https://www.acerracing.com/products/serpent-411-ceramic-ball-bearing-kit" },
 ]
+includes = [
+  { spec = "spec/bearing/10x15x4", qty = 4 },
+  { spec = "spec/bearing/5x8x2.5", qty = 2 },
+  { spec = "spec/bearing/5x10x4", qty = 4 },
+  { spec = "spec/bearing/6x12x4", qty = 4 },
+]
+pack_qty = 14
+pack_qty_basis = "includes"
