@@ -3,8 +3,11 @@ brand = "brand/kyosho"
 number = "MZN131"
 name = "HONDA NSX"
 gtin = "4548565185887"
-documents = ["doc/kyosho/mzn131-honda-nsx-im"]
+documents = ["doc/kyosho/mzn131-honda-nsx-im", "doc/kyosho/mzn131-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn131.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/mzn131-product-page" },
+]
