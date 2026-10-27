@@ -3,7 +3,7 @@ brand = "brand/t2m"
 number = "T1006360"
 name = "Ni-MH battery 3600 mAh 7.2V"
 name_fr = "Accu Ni-MH 3600 mAH 7.2V"
-source = "doc/t2m/t2m-shop"
+documents = ["doc/t2m/t2m-shop"]
 equivalent_to = [
   { spec = "spec/battery/nimh-6s-3600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]
