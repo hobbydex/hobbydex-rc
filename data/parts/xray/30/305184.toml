@@ -5,3 +5,6 @@ name = "COMPOSITE SOLID AXLE 34T - SET o"
 category = "drivetrain"
 material = "plastic"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2587" }]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300019"], type = "replaces", source = "doc/xray/t4-2013-part-list" },
+]

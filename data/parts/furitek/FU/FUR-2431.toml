@@ -9,3 +9,6 @@ category = "esc"
 motor_type = "brushless"
 lipo_cells = [2, 2]
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-starter-2s-brushless-power-system-for-traxxas-trx-4m" }]
+fits = [
+  { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

@@ -9,3 +9,6 @@ category = "motor"
 motor_type = "brushless"
 kv = 2500
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-komodo-2208-2500kv-brushless-motor-for-axial-utb18-capra" }]
+fits = [
+  { kit = "kit/axial/utb18", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

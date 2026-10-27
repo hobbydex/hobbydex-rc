@@ -5,3 +5,6 @@ name = "COMPOSITE C-HUB FOR BODY UPSTOP LEFT - 4° DEG. - MEDIUM"
 category = "suspension"
 material = "plastic"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8070" }]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
+]

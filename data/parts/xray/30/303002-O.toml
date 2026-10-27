@@ -6,3 +6,6 @@ category = "chassis"
 color = "orange"
 material = "aluminium"
 documents = ["doc/xray/t4-2018-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300024"], type = "replaces", source = "doc/xray/t4-2018-part-list" },
+]

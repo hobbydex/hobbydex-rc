@@ -5,3 +5,6 @@ name = "GRAPHITE ARS REAR LOWER ARM PLATE 1.6MM (L+R)"
 category = "suspension"
 material = "carbon"
 documents = ["doc/xray/t4-2018-part-list", "doc/xray/t4-2019-part-list", "doc/xray/t4-2020-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300024", "release/xray/300025", "release/xray/300026", "release/xray/300027"], type = "replaces", source = "doc/xray/t4-2020-part-list" },
+]

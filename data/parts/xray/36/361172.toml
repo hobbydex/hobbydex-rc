@@ -5,3 +5,6 @@ name = "GRAPHITE CENTER UPPER DECK SHIM 2.0MM"
 category = "washer-shim"
 material = "carbon"
 documents = ["doc/xray/xb4-2015-part-list"]
+fits = [
+  { kit = "kit/xray/xb4", releases = ["release/xray/360002"], type = "replaces", source = "doc/xray/xb4-2015-part-list" },
+]

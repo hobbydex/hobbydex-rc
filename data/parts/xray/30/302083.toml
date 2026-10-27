@@ -5,3 +5,6 @@ name = "T4'19 ULP SHOCK TOWER FRONT 3.0MM GRAPHITE"
 category = "chassis"
 material = "carbon"
 documents = ["doc/xray/t4-2019-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300025"], type = "replaces", source = "doc/xray/t4-2019-part-list" },
+]

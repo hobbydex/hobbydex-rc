@@ -8,3 +8,6 @@ applies_to = "TRX4M CARBON VERSION"
 category = "parts-tree"
 material = "carbon"
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-rampart-frame-kit-for-trx4m-carbon-version" }]
+fits = [
+  { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

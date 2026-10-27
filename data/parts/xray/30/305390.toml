@@ -9,3 +9,6 @@ equivalent_to = [
   { spec = "spec/pin/1.5x8.5", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2830" }]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300021"], type = "replaces", source = "doc/xray/t4-2015-part-list" },
+]

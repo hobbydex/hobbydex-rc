@@ -6,3 +6,6 @@ pack_qty = 2
 category = "chassis"
 material = "aluminium"
 documents = ["doc/xray/t4-2015-part-list", "doc/xray/t4-2017-part-list", "doc/xray/t4-2018-part-list", "doc/xray/t4-2019-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300021", "release/xray/300023", "release/xray/300024", "release/xray/300025"], type = "replaces", source = "doc/xray/t4-2019-part-list" },
+]

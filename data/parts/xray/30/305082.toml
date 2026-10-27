@@ -9,3 +9,6 @@ equivalent_to = [
   { spec = "spec/washer/17x23x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=145" }]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300019"], type = "replaces", source = "doc/xray/t4-2013-part-list" },
+]

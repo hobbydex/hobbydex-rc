@@ -5,3 +5,6 @@ name = "COMPOSITE BATTERY PLATE - V2"
 category = "chassis"
 material = "plastic"
 documents = ["doc/xray/nt1-2013-part-list"]
+fits = [
+  { kit = "kit/xray/nt1", releases = ["release/xray/330008"], type = "replaces", source = "doc/xray/nt1-2013-part-list" },
+]

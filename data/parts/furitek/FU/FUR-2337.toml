@@ -8,3 +8,6 @@ applies_to = "TRX4M"
 category = "esc"
 motor_type = "brushless"
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-monster-brushless-power-system-for-trx4m-1" }]
+fits = [
+  { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

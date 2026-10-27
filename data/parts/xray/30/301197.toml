@@ -5,3 +5,6 @@ name = "T4 UPPER DECK 2.0MM GRAPHITE"
 category = "chassis"
 material = "carbon"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4709" }]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300020", "release/xray/300021"], type = "replaces", source = "doc/xray/t4-2015-part-list" },
+]

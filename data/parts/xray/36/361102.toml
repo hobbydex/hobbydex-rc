@@ -6,3 +6,6 @@ category = "chassis"
 material = "aluminium"
 material_grade = "7075-T6"
 documents = ["doc/xray/xb4-2015-part-list"]
+fits = [
+  { kit = "kit/xray/xb4", releases = ["release/xray/360002"], type = "replaces", source = "doc/xray/xb4-2015-part-list" },
+]

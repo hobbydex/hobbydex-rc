@@ -9,3 +9,6 @@ category = "esc"
 motor_type = "brushless"
 sensored = true
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-predator-brushless-sensored-esc-motor-power-system-for-losi-1-18-mini-lmt" }]
+fits = [
+  { kit = "kit/losi/mini-lmt", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

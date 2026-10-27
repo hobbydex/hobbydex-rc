@@ -7,3 +7,6 @@ pack_qty = 3
 pack_qty_basis = "name"
 category = "chassis"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=318" }]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300020", "release/xray/300021", "release/xray/300023"], type = "direct", source = "doc/xray/t4-2017-part-list" },
+]

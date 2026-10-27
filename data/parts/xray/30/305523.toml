@@ -5,3 +5,6 @@ name = "ALU SOLID LAYSHAFT WITH BEARINGS"
 category = "gear"
 material = "aluminium"
 documents = ["doc/xray/t4-2020-part-list", "doc/xray/t4-2021-part-list"]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300026", "release/xray/300027", "release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
+]

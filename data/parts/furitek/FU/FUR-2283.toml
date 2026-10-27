@@ -8,3 +8,6 @@ applies_to = "AXIAL UTB18"
 category = "chassis"
 material = "carbon"
 links = [{ site = "Furitek", url = "https://furitek.com/products/fur-2283" }]
+fits = [
+  { kit = "kit/axial/utb18", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

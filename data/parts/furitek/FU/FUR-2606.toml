@@ -10,3 +10,6 @@ motor_type = "brushless"
 waterproof = true
 sensored = true
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-scorpion-pro-waterproof-with-1-8inch-2835-motor-shaft-5600kv-brushless-sensored-esc-motor-power-system-for-arrma-grom-and-losi-nascar" }]
+fits = [
+  { kit = "kit/losi/nascar", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]

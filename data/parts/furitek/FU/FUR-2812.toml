@@ -8,3 +8,6 @@ applies_to = "Axial SCX30"
 category = "esc"
 motor_type = "brushless"
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-nanomodo-speed-2026-brushless-power-system-with-nanopython-speed-and-nanokomodo-speed-for-axial-scx30" }]
+fits = [
+  { kit = "kit/axial/scx30", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
+]
