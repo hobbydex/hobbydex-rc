@@ -4,10 +4,8 @@ number = "ZC-A3620BA"
 name = "3.0x6.0x2.0mm Aluminium Shim (Black)"
 name_ja = "φ3.0xφ6.0x2.0mm アルミシム(ブラック) 8個入"
 pack_qty = 8
-pack_qty_basis = "page"
 material = "aluminium"
 category = "washer-shim"
-color = "black"
 fits = [
   { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2" },
   { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
@@ -35,6 +33,8 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-a3620ba" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "page"
+color = "black"
 equivalent_to = [
   { spec = "spec/washer/3x6x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

@@ -6,7 +6,6 @@ name_ja = "φ2.5xφ5.0x3.0mm アルミシム (ブラック/8個入)"
 pack_qty = 8
 material = "aluminium"
 category = "washer-shim"
-color = "black"
 fits = [
   { kit = "kit/yokomo/yrx12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YRX12" },
 ]
@@ -14,6 +13,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-a2530ba" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+color = "black"
 equivalent_to = [
   { spec = "spec/washer/2.5x5x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

@@ -2,9 +2,8 @@ id = "part/yokomo/ZC-BH38-A"
 brand = "brand/yokomo"
 number = "ZC-BH38-A"
 name = "M3x8mm Button Head Socket Screw"
-pack_qty = 10
-pack_qty_basis = "page"
 name_ja = "M3x8mm ボタンヘッド ソケットスクリュー 10本入"
+pack_qty = 10
 category = "screw"
 fits = [
   { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
@@ -32,6 +31,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-bh38-a" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

@@ -2,8 +2,7 @@ id = "part/yokomo/YB-V242HB"
 brand = "brand/yokomo"
 number = "YB-V242HB"
 name = "HV Li-po Battery 4200mAh / 7.6V 100C Short Size"
-status = "discontinued"
-name_ja = "YOKOMO HV Li-poバッテリー 4200mAh/7.6V 100C ショートサイズ"
+name_ja = "YOKOMO HV Li-poバッテリー  4200mAh/7.6V 100C ショートサイズ"
 category = "battery"
 fits = [
   { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO2.0" },
@@ -13,6 +12,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/yb-v242hb" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"
+status = "discontinued"
 equivalent_to = [
   { spec = "spec/battery/lihv-2s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]

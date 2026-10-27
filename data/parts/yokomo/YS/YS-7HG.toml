@@ -2,11 +2,9 @@ id = "part/yokomo/YS-7HG"
 brand = "brand/yokomo"
 number = "YS-7HG"
 name = "High Grade O-Ring"
-status = "discontinued"
 name_ja = "ハイグレードOリング(8個入)"
 pack_qty = 8
-pack_qty_basis = "page"
-color = "gray"
+category = "o-ring-seal"
 fits = [
   { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
   { kit = "kit/yokomo/bd7", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD7 2014, BD7 2015, BD7 2016, BD7 ver.RS" },
@@ -27,4 +25,6 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/ys-7hg" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"
-category = "o-ring-seal"
+status = "discontinued"
+pack_qty_basis = "page"
+color = "gray"

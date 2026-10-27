@@ -4,7 +4,6 @@ number = "ZC-T3615A"
 name = "Teflon Spacer 3×6×1.5mm for Suspension Arm"
 name_ja = "サスアーム用 テフロン スペーサー Φ3×Φ6×1.5mm(10個入)"
 pack_qty = 10
-pack_qty_basis = "page"
 category = "washer-shim"
 fits = [
   { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
@@ -22,6 +21,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-t3615a" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/washer/3x6x1.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

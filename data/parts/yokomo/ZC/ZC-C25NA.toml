@@ -3,7 +3,6 @@ brand = "brand/yokomo"
 number = "ZC-C25NA"
 name = "M2x5mm Cap Screw (2.9 Head)"
 pack_qty = 8
-pack_qty_basis = "name"
 name_ja = "M2x5mm キャップスクリュー (φ2.9 Head 8pcs.)"
 category = "screw"
 fits = [
@@ -22,6 +21,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/zc-c25na" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/screw/m2x5-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

@@ -4,8 +4,6 @@ number = "YM-S135DRA"
 name = "ZERO-S Drift Spec Brushless Motor 13.5T Red"
 name_ja = "ZERO-S ドリフトスペック ブラシレスモーター 13.5T レッド"
 category = "motor"
-motor_type = "brushless"
-color = "red"
 fits = [
   { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0" },
 ]
@@ -13,5 +11,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/ym-s135dra" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+motor_type = "brushless"
+color = "red"
 range = "yokomo/zero-s-drift-spec-brushless-motor-red"
 turns = 13.5

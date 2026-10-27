@@ -4,7 +4,6 @@ number = "B11-B50A"
 name = "Suspension Ball 5mm for BD11"
 name_ja = "BD11用 サスボールφ 5mm (4個入)"
 pack_qty = 4
-pack_qty_basis = "page"
 category = "ball-end"
 fits = [
   { kit = "kit/yokomo/bd11", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD11" },
@@ -18,6 +17,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/b11-b50a" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "page"
 ball_type = "through-hole"
 equivalent_to = [
   { spec = "spec/ball-end/5mm-through-hole", match = "functional" },

@@ -2,9 +2,8 @@ id = "part/yokomo/BB-730-4A"
 brand = "brand/yokomo"
 number = "BB-730-4A"
 name = "Ball Bearing 3.0x7.0x3.0mm"
-pack_qty = 4
-pack_qty_basis = "page"
 name_ja = "ボール ベアリング φ3.0xφ7.0x3.0mm(4個入)"
+pack_qty = 4
 category = "bearing"
 fits = [
   { kit = "kit/yokomo/bd10", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD10" },
@@ -20,6 +19,7 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/bb-730-4a" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja)"
+pack_qty_basis = "page"
 equivalent_to = [
   { spec = "spec/bearing/3x7x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
