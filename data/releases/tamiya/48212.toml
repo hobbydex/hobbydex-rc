@@ -4,7 +4,6 @@ brand = "brand/tamiya"
 number = "48212"
 name = "U.S Medium Tank M4A3 Sherman"
 depicts = { model = "M4 Sherman" }
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/28-482xx-tank-manuals-pdf/947-48210-t-34-85-tank-135th-scale", category = "https://www.tamiyabase.com/tamiya-models/48212" }
 kind = "kit"
 category = "tank"
 status = "discontinued"
@@ -16,4 +15,34 @@ links = [
 released = "2010-12-18"
 released_source = "TamiyaBase"
 year = 2010
-documents = ["doc/tamiya/48212-product-page-ja"]
+documents = ["doc/tamiya/48212-product-page-ja", "doc/tamiya/48212-manual-usa"]
+contains = [
+  { part = "part/tamiya/10003200", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/10333090", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/10603061", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/10603062", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/11054581", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/11054591", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/11403210", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/14204046", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/14204047", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/17304065", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/18084350", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/18084351", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/18084352", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/18084353", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/18084354", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19004242", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19004281", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19004285", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19334127", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19403146", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19403148", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19403154", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19404915", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+  { part = "part/tamiya/19464168", role = "kit", source = "doc/tamiya/48212-manual-usa" },
+]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/28-482xx-tank-manuals-pdf/947-48210-t-34-85-tank-135th-scale"
+category = "https://www.tamiyabase.com/tamiya-models/48212"

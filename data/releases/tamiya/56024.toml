@@ -3,7 +3,6 @@ kit = "kit/tamiya/rc-tank-1-16"
 brand = "brand/tamiya"
 number = "56024"
 name = "Jagdpanther"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/915-56023-56024-jagdpanther" }
 kind = "kit"
 status = "discontinued"
 depicts = { make = "MIAG", model = "Jagdpanther" }
@@ -12,3 +11,74 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56024", kind = "fan-site" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/915-56023-56024-jagdpanther", kind = "fan-site" },
 ]
+contains = [
+  { part = "part/tamiya/10006479", role = "kit", source = "doc/tamiya/56024-manual-usa", notes = "Kit needs 8 of this pack" },
+  { part = "part/tamiya/10006480", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/10115400", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/11050680", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/11255082", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/13450083", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/14005120", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/14205021", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/14205031", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/14205032", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/14205033", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/14305578", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/14305585", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/14305586", role = "kit", source = "doc/tamiya/56024-manual-usa", step = "MR1" },
+  { part = "part/tamiya/15365007", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/17255010", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/17255018", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/17255019", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/17255020", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/17255032", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/17305064", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/17305090", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/18025017", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19005849", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19005850", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19005851", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19005852", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19005855", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19005875", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19005876", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19115200", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19115201", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19400589", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19400593", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19400595", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 16, step = "MN1" },
+  { part = "part/tamiya/19400680", role = "kit", source = "doc/tamiya/56024-manual-usa", step = "MT1, MT5" },
+  { part = "part/tamiya/19400681", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19400682", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19400683", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19400687", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19440611", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19440670", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19465733", role = "kit", source = "doc/tamiya/56024-manual-usa", step = "MA1, MA7" },
+  { part = "part/tamiya/19465734", role = "kit", source = "doc/tamiya/56024-manual-usa", step = "MB1, MB6" },
+  { part = "part/tamiya/19465735", role = "kit", source = "doc/tamiya/56024-manual-usa", step = "MC1, MC7" },
+  { part = "part/tamiya/19465736", role = "kit", source = "doc/tamiya/56024-manual-usa", step = "MD1, MD6" },
+  { part = "part/tamiya/19495525", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19725879", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19805240", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 7, step = "MT5" },
+  { part = "part/tamiya/19805754", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 10, step = "MB4" },
+  { part = "part/tamiya/19805827", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 5, step = "MC7" },
+  { part = "part/tamiya/19808119", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19808120", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 2, step = "MJ2" },
+  { part = "part/tamiya/19808121", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/19808122", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 2, step = "MJ3" },
+  { part = "part/tamiya/19808158", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/50576", role = "kit", source = "doc/tamiya/56024-manual-usa" },
+  { part = "part/tamiya/50580", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 10, step = "MA2" },
+  { part = "part/tamiya/50586", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 15, step = "MC5" },
+  { part = "part/tamiya/50587", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 15, step = "MC6" },
+  { part = "part/tamiya/50588", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 15, step = "MB6" },
+  { part = "part/tamiya/50590", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 5, step = "MS4" },
+  { part = "part/tamiya/50594", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 10, step = "MA7" },
+  { part = "part/tamiya/50633", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 6, step = "MT3" },
+  { part = "part/tamiya/53065", role = "kit", source = "doc/tamiya/56024-manual-usa", qty = 2, step = "MH1" },
+]
+documents = ["doc/tamiya/56024-manual-usa"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/915-56023-56024-jagdpanther"

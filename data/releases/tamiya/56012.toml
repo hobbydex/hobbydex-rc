@@ -3,7 +3,6 @@ kit = "kit/tamiya/unknown-56"
 brand = "brand/tamiya"
 number = "56012"
 name = "German Kübelwagen Type 82"
-sources = { name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/1109-56012-german-kuebelwagen-type-82-manual" }
 kind = "kit"
 status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's manual title; Not on Tamiya's current pages (read 2026-10); taken as discontinued"
@@ -14,3 +13,31 @@ links = [
 released = "2000-11-29"
 released_source = "TamiyaBase"
 year = 2000
+contains = [
+  { part = "part/tamiya/10005818", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/10005820", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/10115298", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/10115299", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/10225090", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/10225091", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/10605029", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/10605030", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/11055999", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/15365010", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/17308025", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/17308026", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/17308027", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/19415738", role = "kit", source = "doc/tamiya/56012-manual-usa", step = "BB1, BB5" },
+  { part = "part/tamiya/19415739", role = "kit", source = "doc/tamiya/56012-manual-usa", step = "SB1, SB5" },
+  { part = "part/tamiya/19415740", role = "kit", source = "doc/tamiya/56012-manual-usa", step = "MB1, MB4" },
+  { part = "part/tamiya/19495360", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/19805743", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/50038", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+  { part = "part/tamiya/50573", role = "kit", source = "doc/tamiya/56012-manual-usa", qty = 10, step = "BB2" },
+  { part = "part/tamiya/50576", role = "kit", source = "doc/tamiya/56012-manual-usa", qty = 10, step = "BB4" },
+  { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/56012-manual-usa" },
+]
+documents = ["doc/tamiya/56012-manual-usa"]
+
+[sources]
+name = "https://www.tamiyabase.com/downloads/download-categories/download/15-tank-manuals/1109-56012-german-kuebelwagen-type-82-manual"

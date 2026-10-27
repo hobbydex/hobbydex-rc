@@ -3,7 +3,6 @@ kit = "kit/tamiya/tamtech"
 brand = "brand/tamiya"
 number = "48213"
 name = "48213"
-sources = { category = "https://www.tamiyabase.com/tamiya-models/48213", scale = "https://www.tamiyabase.com/tamiya-models/48213" }
 kind = "kit"
 category = "tank"
 scale = "1/35"
@@ -15,4 +14,34 @@ links = [
 released = "2013-11-23"
 released_source = "TamiyaBase"
 year = 2013
-documents = ["doc/tamiya/48213-product-page-ja"]
+documents = ["doc/tamiya/48213-product-page-ja", "doc/tamiya/48213-manual-usa"]
+contains = [
+  { part = "part/tamiya/11054581", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/11054682", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/14603013", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/14613007", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/17254400", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/17304065", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/18084350", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/18084351", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/18084352", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/18084353", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/18084354", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19000551", role = "kit", source = "doc/tamiya/48213-manual-usa", qty = 2 },
+  { part = "part/tamiya/19000552", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19000554", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19000600", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19004281", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19004332", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19334158", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19402685", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19402701", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19402702", role = "kit", source = "doc/tamiya/48213-manual-usa", qty = 2 },
+  { part = "part/tamiya/19403211", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+  { part = "part/tamiya/19442023", role = "kit", source = "doc/tamiya/48213-manual-usa", qty = 4 },
+  { part = "part/tamiya/19493189", role = "kit", source = "doc/tamiya/48213-manual-usa" },
+]
+
+[sources]
+category = "https://www.tamiyabase.com/tamiya-models/48213"
+scale = "https://www.tamiyabase.com/tamiya-models/48213"
