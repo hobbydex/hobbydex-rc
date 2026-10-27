@@ -15,6 +15,7 @@ lubricant = "grease"
 applies_to = "Axial SCX10 (AX90007 - Kit) (also SCX10 (AX90012 - Dingo), SCX10 (AX90014 - Trail Honcho), SCX10 (AX90016 - Trail Honcho), AX10 (AX90002 - Scorpion RTR), AX10 (AX90004 - Scorpion ARTR), AX10 (AX90011 - Scorpion RTC), SCX10 (AX90021 - Dingo Kit), SCX10 (AX90022 - Honcho RTR), SCX10 (AX90024 - Jeep RTR), AX10 (AX90019 - Ridgecrest RTR), AX10 (AX90033 - Deadbolt RTR), SCX10 (AX90022 - Trail Honcho), SCX10 (AX90027 - Rubicon Kit), SCX10 (AX90028 - Rubicon RTR), SCX10 (AX90034 - Wrangler Kit), SCX10 (AX90035 - Wrangler RTR), SCX10 (AX90036 - Falken RTR), SCX10 (AX90044 - Deadbolt RTR), SCX10 (AX900347- Ram Power RTR))"
 fits = [
   { kit = "kit/axial/scx10", releases = ["release/axial/axid9022", "release/axial/axid9044"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Axial SCX10 (AX90007 - Kit) (link_car_kits.py)" },
+  { kit = "kit/axial/ax10-scorpion", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the AX10 (AX90002 - Scorpion RTR) (link_car_kits.py)" },
 ]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Revolution | Aura (Avid's Flex Kit builder)."
 links = [
