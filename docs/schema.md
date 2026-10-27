@@ -354,7 +354,7 @@ balls: ceramic is a hybrid bearing), `material_grade` (the alloy as named:
 a name with two materials unset), `seal` and `lubricant` for bearings (see below), `strength_class` ("12.9", "A2-70"), `finish` ("black oxide"),
 `thread_type` (machine | self-tapping), for self-tapping screws `point` (cone | flat | rounded | blunt: the shape of the end; flat as ISO 7049-F, cut off flat after the thread, as on Tamiya's tapping screws in its product photos; blunt is a longer taper to a flat end; drawings use cone when it is not set), for shocks `shock_part` (complete | body |
 shaft | piston | cap | rebuild-kit | rod-end | spring-cup), `length_mm`, `bore_mm`
-and `shaft_mm` (shaft diameter), `name_source` (`ocr`: the name was read by OCR from a scanned document and not checked yet; `manufacturer`: corrected from the manufacturer's own product page; `manual`: copied from a maker's manual as printed, read by eye), `range` (colour versions of one part share a range ending in `-colours`, e.g. "team-corally/c-00180-1055-colours" for a body in clear and four painted colours, set by tools/link_colour_variants.py; tools/link_part_colours.py then gives each version its `color` in plain words when the name states one colour of the part itself ("(blue-anodized)" -> "blue"); otherwise a shared id such as "rc4wd/540-crawler-brushed-motor" for the
+and `shaft_mm` (shaft diameter), `name_source` (`ocr`: the name was read by OCR from a scanned document and not checked yet; `manufacturer`: corrected from the manufacturer's own product page; `manual`: copied from a maker's manual as printed, read by eye; `dealer`: taken from a dealer's or importer's product page because the maker's own pages do not name the number, with a link of kind `dealer`), `range` (colour versions of one part share a range ending in `-colours`, e.g. "team-corally/c-00180-1055-colours" for a body in clear and four painted colours, set by tools/link_colour_variants.py; tools/link_part_colours.py then gives each version its `color` in plain words when the name states one colour of the part itself ("(blue-anodized)" -> "blue"); otherwise a shared id such as "rc4wd/540-crawler-brushed-motor" for the
 parts of one product range that differ only in wind, kV or a similar rating;
 the site lists the other versions on each part page), for ball studs, rod ends and ball cups `ball_mm` (the ball
 diameter both must share) and for balls `ball_type` (stud: has its own thread |
@@ -512,7 +512,7 @@ Eddy, RCScrewZ, Avid RC, Acer Racing ...) on kits sold under many bodies
 (Tamiya's chassis, platforms such as the SCX24 or Fazer Mk2); elsewhere the
 kit is the car.
 
-`documents`: the documents the part's record comes from and its own documents, such as a radio's user manual. A part with no `source`, `documents` or `links` gets the documents its `fits` rows and the `contains` rows of releases cite (the maker's parts list or manual first, at most three), written by tools/link_part_sources.py. The site shows them as the part's Source. Radios
+`documents`: the part's own documents, such as a radio's user manual. Radios
 and receivers also carry `channels` and `protocol` (AFHDS 3, ANT, DSMR) and
 `weight_g`; their model code is the part number (FS-NB4+, so a number may
 contain `+`).
