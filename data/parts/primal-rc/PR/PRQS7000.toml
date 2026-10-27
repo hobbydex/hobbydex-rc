@@ -3,4 +3,10 @@ brand = "brand/primal-rc"
 number = "PRQS7000"
 name = "PRQS7000"
 notes = "Name not yet from a Primal source"
-links = [ { site = "Primal RC", url = "https://primalrc.com/product/PRQS7000/" } ]
+links = [
+  { site = "Primal RC", url = "https://primalrc.com/product/PRQS7000/" },
+]
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "QS-series number, the series the dragster manuals print" },
+  { kit = "kit/primal-rc/qs1001-electric-dragster", type = "direct", source = "doc/primal-rc/vehicles-listing", notes = "QS-series number, the series the dragster manuals print" },
+]

@@ -1,9 +1,14 @@
 id = "part/primal-rc/PRRMT109-V4"
 brand = "brand/primal-rc"
 number = "PRRMT109-V4"
-name = "HD V4 Heavy Duty Differential Assembly - PRRMT109-V4"
+name = "HD V4 Heavy Duty Differential Assembly"
 notes = "Name from taylorrc.co.uk (dealer)"
 links = [
   { site = "Primal RC", url = "https://primalrc.com/product/prrmt109-v4/" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/primal-rc/grave-digger", type = "direct", source = "doc/primal-rc/grave-digger-collectors-manual", notes = "Variant of PRRMT109, which the manual lists" },
+  { kit = "kit/primal-rc/raminator", releases = ["release/primal-rc/raminator-v1", "release/primal-rc/raminator-v3"], type = "direct", source = "doc/primal-rc/raminator-v1-manual", notes = "Variant of PRRMT109, which the manual lists" },
+  { kit = "kit/primal-rc/son-uva-digger", releases = ["release/primal-rc/prsud3"], type = "direct", source = "doc/primal-rc/son-uva-digger-v3-manual", notes = "Variant of PRRMT109, which the manual lists" },
+]

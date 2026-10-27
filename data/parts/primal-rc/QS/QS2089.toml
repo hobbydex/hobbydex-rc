@@ -1,4 +1,12 @@
 id = "part/primal-rc/QS2089"
 brand = "brand/primal-rc"
 number = "QS2089"
-name = "1fil �"
+name = "Power switch"
+name_source = "ocr"
+notes = "Name from the Primal manual's parts list"
+numbers = ["PRQS2089"]
+former_ids = ["part/primal-rc/PRQS2089"]
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
+]
+category = "electronics"

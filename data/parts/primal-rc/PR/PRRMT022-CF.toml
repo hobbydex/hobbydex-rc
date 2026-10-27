@@ -3,3 +3,8 @@ brand = "brand/primal-rc"
 number = "PRRMT022-CF"
 name = "PRRMT022-CF"
 notes = "Name not yet from a Primal source"
+fits = [
+  { kit = "kit/primal-rc/grave-digger", releases = ["release/primal-rc/grave-digger-collectors"], type = "direct", source = "doc/primal-rc/grave-digger-collectors-manual", notes = "Variant of PRRMT022, which the manual lists" },
+  { kit = "kit/primal-rc/mega-monster-truck", type = "direct", source = "doc/primal-rc/mega-truck-manual", notes = "Variant of PRRMT022, which the manual lists" },
+  { kit = "kit/primal-rc/raminator", releases = ["release/primal-rc/raminator-v1", "release/primal-rc/raminator-v3"], type = "direct", source = "doc/primal-rc/raminator-v1-manual", notes = "Variant of PRRMT022, which the manual lists" },
+]

@@ -1,5 +1,14 @@
 id = "part/primal-rc/QS2039"
 brand = "brand/primal-rc"
 number = "QS2039"
-name = "- Front chassis cover"
+name = "Front wing mount"
 category = "chassis"
+name_source = "ocr"
+notes = "Name from the Primal manual's parts list"
+gtin = "00840429501265"
+numbers = ["PRQS2039"]
+former_ids = ["part/primal-rc/PRQS2039"]
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
+  { kit = "kit/primal-rc/qs1001-electric-dragster", type = "direct", source = "doc/primal-rc/electric-dragster-manual", notes = "Listed in the 1/5 Scale Electric Dragster manual parts list" },
+]

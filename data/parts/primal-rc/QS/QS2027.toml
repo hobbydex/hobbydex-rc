@@ -3,3 +3,10 @@ brand = "brand/primal-rc"
 number = "QS2027"
 name = "Frame cage"
 category = "bumper-guard"
+gtin = "00840429501142"
+numbers = ["PRQS2027"]
+former_ids = ["part/primal-rc/PRQS2027"]
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
+  { kit = "kit/primal-rc/qs1001-electric-dragster", type = "direct", source = "doc/primal-rc/electric-dragster-manual", notes = "Listed in the 1/5 Scale Electric Dragster manual parts list" },
+]

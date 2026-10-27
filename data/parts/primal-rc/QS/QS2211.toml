@@ -1,5 +1,11 @@
 id = "part/primal-rc/QS2211"
 brand = "brand/primal-rc"
 number = "QS2211"
-name = "Bodyshell"
-category = "body"
+name = "M4×10 Button head screw"
+category = "screw"
+name_source = "ocr"
+notes = "Name from the Primal manual's parts list"
+fits = [
+  { kit = "kit/primal-rc/qs1000-gas-dragster", type = "direct", source = "doc/primal-rc/qs1-gas-dragster-manual", notes = "Listed in the QS1 gas dragster manual parts list" },
+  { kit = "kit/primal-rc/qs1001-electric-dragster", type = "direct", source = "doc/primal-rc/electric-dragster-manual", notes = "Listed in the 1/5 Scale Electric Dragster manual parts list" },
+]

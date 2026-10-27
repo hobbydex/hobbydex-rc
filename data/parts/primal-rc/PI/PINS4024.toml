@@ -6,3 +6,8 @@ category = "pin"
 equivalent_to = [
   { spec = "spec/pin/4x24", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
+numbers = ["PRPINS4024"]
+former_ids = ["part/primal-rc/PRPINS4024"]
+fits = [
+  { kit = "kit/primal-rc/dodge-challenger", type = "direct", source = "doc/primal-rc/dodge-challenger-electric-manual", notes = "Listed in the 1/5 Scale Dodge Challenger (electric) manual parts list" },
+]

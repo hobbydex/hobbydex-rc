@@ -4,3 +4,11 @@ number = "RMT145"
 name = "Differential Pad"
 pack_qty = 2
 category = "differential"
+numbers = ["PRRMT145"]
+former_ids = ["part/primal-rc/PRRMT145"]
+fits = [
+  { kit = "kit/primal-rc/grave-digger", type = "direct", source = "doc/primal-rc/grave-digger-collectors-manual", notes = "Listed in the 1/5 Grave Digger Collectors Edition manual parts list" },
+  { kit = "kit/primal-rc/mega-monster-truck", type = "direct", source = "doc/primal-rc/mega-truck-manual", notes = "Listed in the 1/5 Mega Truck manual parts list" },
+  { kit = "kit/primal-rc/raminator", releases = ["release/primal-rc/raminator-v1", "release/primal-rc/raminator-v3"], type = "direct", source = "doc/primal-rc/raminator-v1-manual", notes = "Listed in the 1/5 Raminator Monster Truck manual parts list" },
+  { kit = "kit/primal-rc/son-uva-digger", releases = ["release/primal-rc/prsud3"], type = "direct", source = "doc/primal-rc/son-uva-digger-v3-manual", notes = "Listed in the 1/5 Son-Uva Digger V3 manual parts list" },
+]

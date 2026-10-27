@@ -4,3 +4,10 @@ number = "RMT022"
 name = "Frame"
 pack_qty = 2
 category = "chassis"
+numbers = ["PRRMT022"]
+former_ids = ["part/primal-rc/PRRMT022"]
+fits = [
+  { kit = "kit/primal-rc/grave-digger", releases = ["release/primal-rc/grave-digger-collectors"], type = "direct", source = "doc/primal-rc/grave-digger-collectors-manual", notes = "Listed in the 1/5 Grave Digger Collectors Edition manual parts list" },
+  { kit = "kit/primal-rc/mega-monster-truck", type = "direct", source = "doc/primal-rc/mega-truck-manual", notes = "Listed in the 1/5 Mega Truck manual parts list" },
+  { kit = "kit/primal-rc/raminator", releases = ["release/primal-rc/raminator-v1", "release/primal-rc/raminator-v3"], type = "direct", source = "doc/primal-rc/raminator-v1-manual", notes = "Listed in the 1/5 Raminator Monster Truck manual parts list" },
+]

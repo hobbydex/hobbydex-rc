@@ -6,3 +6,6 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5x10x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+fits = [
+  { kit = "kit/primal-rc/raminator", releases = ["release/primal-rc/raminator-v1"], type = "direct", source = "doc/primal-rc/raminator-v1-manual", notes = "Listed in the 1/5 Raminator Monster Truck manual parts list" },
+]
