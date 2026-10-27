@@ -5,9 +5,6 @@ name = "Screws, 4x15mm countersunk machine"
 gtin = "020334316707"
 pack_qty = 6
 pack_qty_basis = "page"
-equivalent_to = [
-  { spec = "spec/screw/m4x15-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 category = "screw"
 fits = [
   { kit = "kit/traxxas/bandit", type = "direct", source = "doc/traxxas/24054-8-parts-list" },

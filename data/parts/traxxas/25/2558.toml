@@ -5,9 +5,6 @@ name = "Screws, 3x6mm roundhead machine"
 gtin = "020334255808"
 pack_qty = 6
 pack_qty_basis = "page"
-equivalent_to = [
-  { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 category = "screw"
 fits = [
   { kit = "kit/traxxas/bandit", type = "direct", source = "doc/traxxas/24054-8-parts-list" },
