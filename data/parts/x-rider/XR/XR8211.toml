@@ -1,9 +1,13 @@
 id = "part/x-rider/XR8211"
 brand = "brand/x-rider"
 number = "XR8211"
-name = "XR8211"
-notes = "X-Rider lists this number under Body Parts without a name"
+name = "Belt Pulley 12T"
+name_source = "manual"
+notes = "Name from the maker's manual parts list"
 fits = [
   { kit = "kit/x-rider/caferacer", type = "direct", source = "doc/x-rider/caferacer-parts" },
 ]
 documents = ["doc/x-rider/caferacer-parts"]
+
+[sources]
+name = "http://www.cx3rider.com/product/detail?product_detail_category_id=19&_product_id=6"

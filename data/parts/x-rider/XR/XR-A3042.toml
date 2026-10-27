@@ -1,9 +1,13 @@
 id = "part/x-rider/XR-A3042"
 brand = "brand/x-rider"
 number = "XR-A3042"
-name = "XR-A3042"
-notes = "X-Rider lists this number under Body Parts without a name"
+name = "Body"
+name_source = "manual"
+notes = "Name from the maker's manual parts list"
 fits = [
   { kit = "kit/x-rider/cx3-air", type = "direct", source = "doc/x-rider/cx3-air-parts" },
 ]
 documents = ["doc/x-rider/cx3-air-parts"]
+
+[sources]
+name = "http://www.cx3rider.com/support"
