@@ -81,7 +81,7 @@ ENUMS = {
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
-    "part.pack_qty_basis": {"name", "page", "includes", "photo", "photos", "owner"},
+    "part.pack_qty_basis": {"name", "page", "includes", "manual", "photo", "photos", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
