@@ -247,6 +247,21 @@ def check_release_related(docs, errors):
                 errors.append(f"{path}: related[{i}].source should name the page that says so (doc id or URL)")
 
 
+def check_release_ranges(docs, errors):
+    """Releases sharing a `range` are one car in versions that differ in colour or livery: same brand, kit and
+    kind, at least two of them (docs/schema.md "release")."""
+    by = {}
+    for path, kind, d in docs:
+        if kind == "release" and isinstance(d.get("range"), str):
+            by.setdefault(d["range"], []).append((path, d))
+    for rg, rows in by.items():
+        if len(rows) < 2:
+            errors.append(f"{rows[0][0]}: range {rg!r} holds only this release")
+        for path, d in rows:
+            for f in ("brand", "kit", "kind"):
+                if d.get(f) != rows[0][1].get(f):
+                    errors.append(f"{path}: range {rg!r} mixes {f} {d.get(f)!r} with {rows[0][1].get(f)!r}")
+
 def check_makes(docs, errors):
     """data/makes/<slug>.toml: one record per VEHICLE_MAKES entry, named as the make spells itself. country is the
     ISO 3166 alpha-2 code of the make's home country; notes describe the make with no dates (docs/schema.md "Makes")."""
@@ -627,6 +642,15 @@ def main():
                     errors.append(f"{path}: supersedes itself")
                 elif v not in ids:
                     errors.append(f"{path}: supersedes -> {v} does not exist")
+            elif kind == "release" and k == "range":   # versions of one car that differ only in colour or livery (docs/schema.md "release")
+                brand_slug = str(d.get("brand", "")).split("/")[-1]
+                if not (isinstance(v, str) and re.fullmatch(r"[a-z0-9.-]+/[a-z0-9.-]+-colours", v) and v.split("/")[0] == brand_slug):
+                    errors.append(f"{path}: range {v!r} should be <brand slug>/<slug>-colours of the release's own brand")
+            elif kind == "release" and k == "livery":
+                if not (isinstance(v, str) and v.strip() == v and v):
+                    errors.append(f"{path}: livery {v!r} should be a non-empty string without edge spaces")
+                elif "range" not in d:
+                    errors.append(f"{path}: livery without a range; it names what sets a version apart within its range")
             elif k in REFS:
                 check_ref(k, v, "")
             elif k in LIST_REFS and isinstance(v, list):
@@ -1128,6 +1152,7 @@ def main():
     body_parts = {d.get("id") for _, kind, d in docs if kind == "part" and d.get("category") == "body"}
     counts["art"] = check_art(ids, errors, body_parts)
     check_release_related(docs, errors)
+    check_release_ranges(docs, errors)
     check_kit_supersedes(docs, errors)
     check_makes(docs, errors)
     check_dealer_links(docs, errors)
