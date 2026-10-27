@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/10x16x5" },
 ]
 applies_to = "HPI Savage .21 RTR (#12840)"
+fits = [
+  { kit = "kit/hpi/savage", releases = ["release/hpi/12840"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the HPI Savage .21 RTR (#12840) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/hpi003b-hpi-savage-21-rtr-precision-bearing-kit/" },

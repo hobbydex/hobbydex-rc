@@ -10,10 +10,10 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Axial Yeti 1/10th 4wd (#90025/26)"
+fits = [
+  { kit = "kit/axial/yeti", type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Axial Yeti 1/10th 4wd (#90025/26) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/axi014b-axial-yeti-1-10th-4wd-metal-shielded-bearings/" },
-]
-fits = [
-  { kit = "kit/axial/yeti", type = "replaces", source = "doc/rcscrewz/store", notes = "(link_car_kits.py)" },
 ]
