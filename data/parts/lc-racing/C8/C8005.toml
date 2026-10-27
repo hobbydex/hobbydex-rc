@@ -2,5 +2,9 @@ id = "part/lc-racing/C8005"
 brand = "brand/lc-racing"
 number = "C8005"
 name = "Hinge Pin Set"
+documents = ["doc/lc-racing/c8005-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "pin"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8005-product-page" },
+]

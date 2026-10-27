@@ -3,5 +3,9 @@ brand = "brand/lc-racing"
 number = "L6232"
 name = "Outdrive"
 pack_qty = 2
+documents = ["doc/lc-racing/l6232-product-page"]
 applies_to = "LC12B1"
 category = "drivetrain"
+fits = [
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6232-product-page" },
+]

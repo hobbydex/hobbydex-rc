@@ -2,6 +2,12 @@ id = "part/lc-racing/C7091"
 brand = "brand/lc-racing"
 number = "C7091"
 name = "Rod End Ball 5.5mm With Thread 8mm"
+documents = ["doc/lc-racing/c7091-product-page"]
 applies_to = "LC10B5, PTG-1, PTG-2, PTG-2R"
 category = "rod-end"
 ball_mm = 5.5
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7091-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7091-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c7091-product-page" },
+]

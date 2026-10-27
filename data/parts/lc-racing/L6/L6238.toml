@@ -2,6 +2,14 @@ id = "part/lc-racing/L6238"
 brand = "brand/lc-racing"
 number = "L6238"
 name = "Aluminum Servo Arm +2 23T"
+documents = ["doc/lc-racing/l6238-product-page"]
 applies_to = ", LC12B1,EMB-1, EMB-RA, EMB-TG,EMB-DT,EMB-MT,EMB-SC"
 category = "suspension"
 material = "aluminium"
+fits = [
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6238-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6238-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6238-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6238-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6238-product-page" },
+]

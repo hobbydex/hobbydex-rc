@@ -2,6 +2,11 @@ id = "part/lc-racing/C7028"
 brand = "brand/lc-racing"
 number = "C7028"
 name = "Pivot Ball SØ5.8(4)"
+documents = ["doc/lc-racing/c7028-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "ball-end"
 ball_mm = 5.8
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7028-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7028-product-page" },
+]

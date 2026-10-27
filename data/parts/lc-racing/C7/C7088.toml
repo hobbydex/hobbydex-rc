@@ -2,6 +2,11 @@ id = "part/lc-racing/C7088"
 brand = "brand/lc-racing"
 number = "C7088"
 name = "LC10B5 1/10 Buggy Body/Rear Aero Wing(Light)"
+documents = ["doc/lc-racing/c7088-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "body"
 scale = "1/10"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7088-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7088-product-page" },
+]

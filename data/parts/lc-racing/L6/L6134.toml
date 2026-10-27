@@ -2,5 +2,12 @@ id = "part/lc-racing/L6134"
 brand = "brand/lc-racing"
 number = "L6134"
 name = "Anti-Roll Bar Set"
+documents = ["doc/lc-racing/l6134-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-TC, EMB-TG, EMB-MT"
 category = "suspension"
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6134-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6134-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6134-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6134-product-page" },
+]

@@ -2,5 +2,9 @@ id = "part/lc-racing/L5067"
 brand = "brand/lc-racing"
 number = "L5067"
 name = "Alum Arm Mount RR 2 deg"
+documents = ["doc/lc-racing/l5067-product-page"]
 applies_to = "BHC-1/1ST"
 category = "suspension"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5067-product-page" },
+]

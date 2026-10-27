@@ -2,5 +2,9 @@ id = "part/lc-racing/L6270"
 brand = "brand/lc-racing"
 number = "L6270"
 name = "EMB Wheelie Bar"
+documents = ["doc/lc-racing/l6270-product-page"]
 applies_to = "EMB-MT, EMB-RA"
 category = "bumper-guard"
+fits = [
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6270-product-page" },
+]

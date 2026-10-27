@@ -2,5 +2,9 @@ id = "part/lc-racing/L5010"
 brand = "brand/lc-racing"
 number = "L5010"
 name = "Servo Mount, Servo Arms & Rod End"
+documents = ["doc/lc-racing/l5010-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5010-product-page" },
+]

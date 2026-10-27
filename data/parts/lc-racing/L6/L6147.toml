@@ -2,7 +2,11 @@ id = "part/lc-racing/L6147"
 brand = "brand/lc-racing"
 number = "L6147"
 name = "Composite Wing Black"
+documents = ["doc/lc-racing/l6147-product-page"]
 applies_to = "EMB-TG, EMB-1"
 category = "wing"
 material = "plastic"
 color = "black"
+fits = [
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6147-product-page" },
+]

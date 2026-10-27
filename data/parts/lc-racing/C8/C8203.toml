@@ -2,5 +2,9 @@ id = "part/lc-racing/C8203"
 brand = "brand/lc-racing"
 number = "C8203"
 name = "Front Bumper"
+documents = ["doc/lc-racing/c8203-product-page"]
 applies_to = "PTG-1"
 category = "bumper-guard"
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c8203-product-page" },
+]

@@ -1,0 +1,13 @@
+id = "part/lc-racing/C7100"
+brand = "brand/lc-racing"
+number = "C7100"
+name = "1/10 4WD Rear Buggy Wheels"
+documents = ["doc/lc-racing/c7100-product-page"]
+pack_qty = 10
+pack_qty_basis = "name"
+applies_to = "LC10B5, PTG-1"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7100-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7100-product-page" },
+]
+category = "wheel"

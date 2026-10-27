@@ -2,5 +2,9 @@ id = "part/lc-racing/L5059"
 brand = "brand/lc-racing"
 number = "L5059"
 name = "Body Posts Set"
+documents = ["doc/lc-racing/l5059-product-page"]
 applies_to = "BHC-1ST"
 category = "body-accessory"
+fits = [
+  { kit = "kit/lc-racing/bhc-1st", type = "direct", source = "doc/lc-racing/l5059-product-page" },
+]

@@ -2,5 +2,9 @@ id = "part/lc-racing/L5008"
 brand = "brand/lc-racing"
 number = "L5008"
 name = "Front Hinge Pin Brace, Bulkhead & Bumper"
+documents = ["doc/lc-racing/l5008-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5008-product-page" },
+]

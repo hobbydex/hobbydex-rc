@@ -2,6 +2,10 @@ id = "part/lc-racing/L5030"
 brand = "brand/lc-racing"
 number = "L5030"
 name = "Rear Carbon Fiber Shock Tower"
+documents = ["doc/lc-racing/l5030-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
 material = "carbon"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5030-product-page" },
+]

@@ -3,8 +3,12 @@ brand = "brand/lc-racing"
 number = "C8221"
 name = "1/10 4WD Rear Buggy Tire Set"
 pack_qty = 2
+documents = ["doc/lc-racing/c8221-product-page"]
 applies_to = "PTG-1"
 category = "tire"
 scale = "1/10"
 vehicle = "buggy"
 position = "rear"
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c8221-product-page" },
+]

@@ -2,5 +2,9 @@ id = "part/lc-racing/L6283"
 brand = "brand/lc-racing"
 number = "L6283"
 name = "Shock Tower Spacers"
+documents = ["doc/lc-racing/l6283-product-page"]
 applies_to = "PTG-2TC"
 category = "washer-shim"
+fits = [
+  { kit = "kit/lc-racing/ptg-2tc", type = "direct", source = "doc/lc-racing/l6283-product-page" },
+]

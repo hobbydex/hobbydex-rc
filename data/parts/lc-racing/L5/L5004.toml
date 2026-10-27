@@ -2,5 +2,9 @@ id = "part/lc-racing/L5004"
 brand = "brand/lc-racing"
 number = "L5004"
 name = "Top Plate & Ball Stud Mount"
+documents = ["doc/lc-racing/l5004-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5004-product-page" },
+]

@@ -2,6 +2,8 @@ id = "part/lc-racing/L6045"
 brand = "brand/lc-racing"
 number = "L6045"
 name = "BATAN D115F Servo,32.2x15x28.1mm 26g, 4.0kg/cm(6v) 0.1sec/60deg (6v),dual ball bearing digital"
+documents = ["doc/lc-racing/l6045-product-page"]
+notes = "Dual ball bearings, digital"
 applies_to = "EMB-WRC, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT, LC12B1"
 category = "servo"
 dimensions_mm = [32.2, 15, 28.1]
@@ -12,5 +14,11 @@ equivalent_to = [
   { spec = "spec/servo/mini", match = "close", notes = "Size class from the case size (32.2x15x28.1 mm); spline not stated" },
 ]
 speed_s = 0.1
-documents = ["doc/lc-racing/l6045-product-page"]
-notes = "Dual ball bearings, digital"
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6045-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6045-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6045-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6045-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6045-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6045-product-page" },
+]

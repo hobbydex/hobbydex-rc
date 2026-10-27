@@ -2,6 +2,7 @@ id = "part/lc-racing/L6073"
 brand = "brand/lc-racing"
 number = "L6073"
 name = "Composite Shock Set(L Version)"
+documents = ["doc/lc-racing/l6073-product-page"]
 applies_to = "EMB Series, BHC-1"
 category = "shock"
 shock_part = "complete"
@@ -10,4 +11,7 @@ includes = [
   { part = "part/lc-racing/BE6093" },
   { part = "part/lc-racing/BE6094" },
   { part = "part/lc-racing/HM6111" },
+]
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l6073-product-page" },
 ]

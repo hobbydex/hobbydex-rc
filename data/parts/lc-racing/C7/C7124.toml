@@ -2,5 +2,9 @@ id = "part/lc-racing/C7124"
 brand = "brand/lc-racing"
 number = "C7124"
 name = "Front Suspension Arms Ver. 2 (Left and Right)"
+documents = ["doc/lc-racing/c7124-product-page"]
 applies_to = "LC10B5"
 category = "suspension"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7124-product-page" },
+]

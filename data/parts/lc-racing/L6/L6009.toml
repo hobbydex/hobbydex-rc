@@ -2,10 +2,18 @@ id = "part/lc-racing/L6009"
 brand = "brand/lc-racing"
 number = "L6009"
 name = "Shock Tower Set"
+documents = ["doc/lc-racing/l6009-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-TG, EMB-MT, LC12B1"
 category = "chassis"
 includes = [
   { part = "part/lc-racing/BE6046" },
   { part = "part/lc-racing/HM6017" },
   { part = "part/lc-racing/HM6018" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6009-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6009-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6009-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6009-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6009-product-page" },
 ]

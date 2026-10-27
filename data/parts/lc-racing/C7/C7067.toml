@@ -2,7 +2,11 @@ id = "part/lc-racing/C7067"
 brand = "brand/lc-racing"
 number = "C7067"
 name = "Arm Mount RR 7075 Alu T6"
+documents = ["doc/lc-racing/c7067-product-page"]
 applies_to = "LC10B5"
 category = "suspension"
 material = "aluminium"
 material_grade = "7075"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7067-product-page" },
+]

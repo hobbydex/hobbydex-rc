@@ -3,8 +3,16 @@ brand = "brand/lc-racing"
 number = "L6124"
 name = "Ball Bearings 4x7x2.5"
 pack_qty = 4
+documents = ["doc/lc-racing/l6124-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT"
 equivalent_to = [
   { spec = "spec/bearing/4x7x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6124-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6124-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6124-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6124-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6124-product-page" },
+]

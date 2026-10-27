@@ -2,5 +2,10 @@ id = "part/lc-racing/L5088"
 brand = "brand/lc-racing"
 number = "L5088"
 name = "Aluminum Rear Ballstud Mount +2mm"
+documents = ["doc/lc-racing/l5088-product-page"]
 applies_to = "All BHC"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5088-product-page" },
+  { kit = "kit/lc-racing/bhc-1st", type = "direct", source = "doc/lc-racing/l5088-product-page" },
+]

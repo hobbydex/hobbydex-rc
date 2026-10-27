@@ -3,6 +3,12 @@ brand = "brand/lc-racing"
 number = "C7058"
 name = "5.5mm Ball Joint Open"
 pack_qty = 4
+documents = ["doc/lc-racing/c7058-product-page"]
 applies_to = "LC10B5, PTG-1, PTG-2, PTG-2R"
 category = "ball-end"
 ball_mm = 5.5
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7058-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7058-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c7058-product-page" },
+]

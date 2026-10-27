@@ -2,5 +2,9 @@ id = "part/lc-racing/C8010"
 brand = "brand/lc-racing"
 number = "C8010"
 name = "Upper Deck"
+documents = ["doc/lc-racing/c8010-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8010-product-page" },
+]

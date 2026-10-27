@@ -2,6 +2,11 @@ id = "part/lc-racing/C7103"
 brand = "brand/lc-racing"
 number = "C7103"
 name = "Composite Shock Spring Retaining Collars, +1, 0, -1mm (4x3)"
+documents = ["doc/lc-racing/c7103-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "shock-spring"
 material = "plastic"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7103-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7103-product-page" },
+]

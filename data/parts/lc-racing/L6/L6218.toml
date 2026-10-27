@@ -2,5 +2,9 @@ id = "part/lc-racing/L6218"
 brand = "brand/lc-racing"
 number = "L6218"
 name = "Center Slipper Kit"
+documents = ["doc/lc-racing/l6218-product-page"]
 applies_to = ", LC12B1"
 category = "gear"
+fits = [
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6218-product-page" },
+]

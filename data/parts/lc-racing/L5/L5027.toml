@@ -2,5 +2,9 @@ id = "part/lc-racing/L5027"
 brand = "brand/lc-racing"
 number = "L5027"
 name = "Arm Mounts & Pivot Balls Set"
+documents = ["doc/lc-racing/l5027-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5027-product-page" },
+]

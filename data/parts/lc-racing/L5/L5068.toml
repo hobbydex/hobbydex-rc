@@ -2,6 +2,10 @@ id = "part/lc-racing/L5068"
 brand = "brand/lc-racing"
 number = "L5068"
 name = "Aluminum Bulkhead V2 (Front)"
+documents = ["doc/lc-racing/l5068-product-page"]
 applies_to = "BHC-1/1ST"
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5068-product-page" },
+]

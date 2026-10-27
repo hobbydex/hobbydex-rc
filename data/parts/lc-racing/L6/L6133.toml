@@ -2,5 +2,9 @@ id = "part/lc-racing/L6133"
 brand = "brand/lc-racing"
 number = "L6133"
 name = "DT Shock Tower & Mount Plate"
+documents = ["doc/lc-racing/l6133-product-page"]
 applies_to = "EMB-DT"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6133-product-page" },
+]

@@ -2,6 +2,10 @@ id = "part/lc-racing/C8024"
 brand = "brand/lc-racing"
 number = "C8024"
 name = "Chassis Alu 2.0mm"
+documents = ["doc/lc-racing/c8024-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8024-product-page" },
+]

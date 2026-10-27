@@ -3,6 +3,10 @@ brand = "brand/lc-racing"
 number = "L6255"
 name = "MT Tires Set Mounted White, 12mm"
 pack_qty = 2
+documents = ["doc/lc-racing/l6255-product-page"]
 applies_to = "EMB-MT"
 category = "tire"
 color = "white"
+fits = [
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6255-product-page" },
+]

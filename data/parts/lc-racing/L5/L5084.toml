@@ -3,5 +3,10 @@ brand = "brand/lc-racing"
 number = "L5084"
 name = "Steel Turnbuckle (M3x40mm)"
 pack_qty = 2
+documents = ["doc/lc-racing/l5084-product-page"]
 applies_to = "All BHC"
 category = "turnbuckle"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5084-product-page" },
+  { kit = "kit/lc-racing/bhc-1st", type = "direct", source = "doc/lc-racing/l5084-product-page" },
+]

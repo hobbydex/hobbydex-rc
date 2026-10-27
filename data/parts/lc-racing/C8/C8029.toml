@@ -2,5 +2,9 @@ id = "part/lc-racing/C8029"
 brand = "brand/lc-racing"
 number = "C8029"
 name = "Spur Gear Shaft Bearing Covers"
+documents = ["doc/lc-racing/c8029-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "bearing"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8029-product-page" },
+]

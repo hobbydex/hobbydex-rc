@@ -2,5 +2,9 @@ id = "part/lc-racing/C7102"
 brand = "brand/lc-racing"
 number = "C7102"
 name = "Center Differential Spur Gear 48p 76T"
+documents = ["doc/lc-racing/c7102-product-page"]
 applies_to = "LC10B5"
 category = "differential"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7102-product-page" },
+]

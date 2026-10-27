@@ -2,6 +2,11 @@ id = "part/lc-racing/L6038"
 brand = "brand/lc-racing"
 number = "L6038"
 name = "\"185mm Wheelbase\" Middle Drive Shaft Aluminum"
+documents = ["doc/lc-racing/l6038-product-page"]
 applies_to = "EMB-1, EMB-MT"
 category = "drivetrain"
 material = "aluminium"
+fits = [
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6038-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6038-product-page" },
+]

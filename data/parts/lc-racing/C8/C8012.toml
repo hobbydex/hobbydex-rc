@@ -2,6 +2,10 @@ id = "part/lc-racing/C8012"
 brand = "brand/lc-racing"
 number = "C8012"
 name = "Steel Bevel Drive Gear with Shaft & Outdrive"
+documents = ["doc/lc-racing/c8012-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "differential"
 material = "steel"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8012-product-page" },
+]

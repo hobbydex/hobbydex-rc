@@ -2,7 +2,13 @@ id = "part/lc-racing/L5062"
 brand = "brand/lc-racing"
 number = "L5062"
 name = "BHC-1ST Clear Body"
+documents = ["doc/lc-racing/l5062-product-page"]
 applies_to = "BHC-1ST"
 category = "body"
 color = "clear"
-links = [ { site = "LC Racing", url = "https://shop.lcracing.net/products/l5062-bhc-1st-clear-body-br-br-font-size-2-for-bhc-1st-font" } ]
+links = [
+  { site = "LC Racing", url = "https://shop.lcracing.net/products/l5062-bhc-1st-clear-body-br-br-font-size-2-for-bhc-1st-font" },
+]
+fits = [
+  { kit = "kit/lc-racing/bhc-1st", type = "direct", source = "doc/lc-racing/l5062-product-page" },
+]

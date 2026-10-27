@@ -2,5 +2,13 @@ id = "part/lc-racing/C7069"
 brand = "brand/lc-racing"
 number = "C7069"
 name = "Servo Saver, Steering Plate,Servo Arm,Servo Mount, Center Bulkhead cover (10)"
+documents = ["doc/lc-racing/c7069-product-page"]
+pack_qty = 10
+pack_qty_basis = "name"
 applies_to = "LC10B5, PTG-1, PTG-2, PTG-2R"
 category = "steering"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7069-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7069-product-page" },
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c7069-product-page" },
+]

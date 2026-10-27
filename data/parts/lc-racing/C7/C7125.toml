@@ -3,5 +3,9 @@ brand = "brand/lc-racing"
 number = "C7125"
 name = "Front Drive Shaft Set Ver. 2 72mm"
 pack_qty = 2
+documents = ["doc/lc-racing/c7125-product-page"]
 applies_to = "LC10B5"
 category = "drivetrain"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7125-product-page" },
+]

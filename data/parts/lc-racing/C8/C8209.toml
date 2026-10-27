@@ -2,6 +2,10 @@ id = "part/lc-racing/C8209"
 brand = "brand/lc-racing"
 number = "C8209"
 name = "Spur Gear (32p/53T)"
+documents = ["doc/lc-racing/c8209-product-page"]
 applies_to = "PTG-1"
 category = "spur-gear"
 pitch_dp = 32
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c8209-product-page" },
+]

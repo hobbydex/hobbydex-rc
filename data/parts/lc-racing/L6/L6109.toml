@@ -2,5 +2,9 @@ id = "part/lc-racing/L6109"
 brand = "brand/lc-racing"
 number = "L6109"
 name = "Wing Mount Set"
+documents = ["doc/lc-racing/l6109-product-page"]
 applies_to = "EMB-1, EMB-TG"
 category = "wing"
+fits = [
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6109-product-page" },
+]

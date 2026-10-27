@@ -2,8 +2,13 @@ id = "part/lc-racing/L6029"
 brand = "brand/lc-racing"
 number = "L6029"
 name = "185mm wheelbase Upper Deck"
+documents = ["doc/lc-racing/l6029-product-page"]
 applies_to = "EMB-1, EMB-MT"
 category = "chassis"
 includes = [
   { part = "part/lc-racing/BE6021" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6029-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6029-product-page" },
 ]

@@ -2,6 +2,10 @@ id = "part/lc-racing/L6280"
 brand = "brand/lc-racing"
 number = "L6280"
 name = "Shock Set (2 sets)"
+documents = ["doc/lc-racing/l6280-product-page"]
 applies_to = "PTG-2TC"
 category = "shock"
 shock_part = "complete"
+fits = [
+  { kit = "kit/lc-racing/ptg-2tc", type = "direct", source = "doc/lc-racing/l6280-product-page" },
+]

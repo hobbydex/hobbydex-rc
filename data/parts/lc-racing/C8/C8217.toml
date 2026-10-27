@@ -2,6 +2,7 @@ id = "part/lc-racing/C8217"
 brand = "brand/lc-racing"
 number = "C8217"
 name = "Motor Pinion Gear (13T/32P)"
+documents = ["doc/lc-racing/c8217-product-page"]
 applies_to = "PTG-1"
 category = "pinion"
 equivalent_to = [
@@ -9,3 +10,6 @@ equivalent_to = [
 ]
 teeth = 13
 pitch_dp = 32
+fits = [
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c8217-product-page" },
+]

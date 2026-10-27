@@ -2,6 +2,7 @@ id = "part/lc-racing/C8025"
 brand = "brand/lc-racing"
 number = "C8025"
 name = "Aluminum Washers 3x6x1(4), 3x6x2(2), 3x7.5x2.5(2)"
+documents = ["doc/lc-racing/c8025-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "washer-shim"
 material = "aluminium"
@@ -12,3 +13,6 @@ includes = [
 ]
 pack_qty = 8
 pack_qty_basis = "includes"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8025-product-page" },
+]

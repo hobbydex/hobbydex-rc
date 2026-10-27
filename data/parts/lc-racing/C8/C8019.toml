@@ -2,7 +2,11 @@ id = "part/lc-racing/C8019"
 brand = "brand/lc-racing"
 number = "C8019"
 name = "Spur Gear 48p 70T"
+documents = ["doc/lc-racing/c8019-product-page"]
 applies_to = "PTG-2, PTG-2R"
 category = "spur-gear"
 teeth = 70
 pitch_dp = 48
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8019-product-page" },
+]

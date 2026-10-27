@@ -3,8 +3,13 @@ brand = "brand/lc-racing"
 number = "C7057"
 name = "3x32mm Outer Hinge Pin"
 pack_qty = 4
+documents = ["doc/lc-racing/c7057-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/3x32", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7057-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7057-product-page" },
 ]

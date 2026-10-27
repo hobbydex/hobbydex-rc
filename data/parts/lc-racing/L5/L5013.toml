@@ -2,5 +2,9 @@ id = "part/lc-racing/L5013"
 brand = "brand/lc-racing"
 number = "L5013"
 name = "Battery Mount Set"
+documents = ["doc/lc-racing/l5013-product-page"]
 applies_to = "BHC-1"
 category = "chassis"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5013-product-page" },
+]

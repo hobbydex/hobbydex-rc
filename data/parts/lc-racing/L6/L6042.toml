@@ -2,6 +2,7 @@ id = "part/lc-racing/L6042"
 brand = "brand/lc-racing"
 number = "L6042"
 name = "Ball Bearings Set"
+documents = ["doc/lc-racing/l6042-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT, LC12B1"
 category = "bearing"
 includes = [
@@ -9,4 +10,12 @@ includes = [
   { spec = "spec/bearing/8x12x3.5", notes = "BEARING 8X12X3.5 (HM6063); the count is not stated" },
   { part = "part/lc-racing/HM6043" },
   { part = "part/lc-racing/HM6063" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6042-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6042-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6042-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6042-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6042-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6042-product-page" },
 ]

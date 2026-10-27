@@ -2,5 +2,9 @@ id = "part/lc-racing/L6209"
 brand = "brand/lc-racing"
 number = "L6209"
 name = "DT Body Screws, 2.0x6mm"
+documents = ["doc/lc-racing/l6209-product-page"]
 applies_to = "EMB-DT"
 category = "screw"
+fits = [
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6209-product-page" },
+]

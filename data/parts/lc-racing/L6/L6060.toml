@@ -2,6 +2,7 @@ id = "part/lc-racing/L6060"
 brand = "brand/lc-racing"
 number = "L6060"
 name = "MT Bumper Set"
+documents = ["doc/lc-racing/l6060-product-page"]
 applies_to = "EMB-MT"
 category = "bumper-guard"
 includes = [
@@ -10,4 +11,7 @@ includes = [
   { part = "part/lc-racing/BE6111" },
   { part = "part/lc-racing/BE6112" },
   { part = "part/lc-racing/BE6113" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6060-product-page" },
 ]

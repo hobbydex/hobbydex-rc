@@ -2,6 +2,10 @@ id = "part/lc-racing/C7083"
 brand = "brand/lc-racing"
 number = "C7083"
 name = "Carbon Fiber Chassis Brace Upper Front 2.0mm"
+documents = ["doc/lc-racing/c7083-product-page"]
 applies_to = "LC10B5"
 category = "chassis"
 material = "carbon"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7083-product-page" },
+]

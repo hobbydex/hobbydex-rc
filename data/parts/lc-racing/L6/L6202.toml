@@ -2,5 +2,13 @@ id = "part/lc-racing/L6202"
 brand = "brand/lc-racing"
 number = "L6202"
 name = "Pin Set, 1.2x4.7mm, 1.5x8mm, 1.5x6mm 10pcs each"
+documents = ["doc/lc-racing/l6202-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TC, EMB-TG, EMB-MT"
 category = "pin"
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6202-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6202-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6202-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6202-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6202-product-page" },
+]

@@ -2,6 +2,11 @@ id = "part/lc-racing/C7065"
 brand = "brand/lc-racing"
 number = "C7065"
 name = "Rear Carbon Fiber Shock Tower 3.0mm"
+documents = ["doc/lc-racing/c7065-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "chassis"
 material = "carbon"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7065-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7065-product-page" },
+]

@@ -2,6 +2,15 @@ id = "part/lc-racing/L6121"
 brand = "brand/lc-racing"
 number = "L6121"
 name = "Front Shock Accessories"
+documents = ["doc/lc-racing/l6121-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TG, EMB-MT, LC12B1, PTG-2"
 category = "shock"
 shock_part = "complete"
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6121-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6121-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6121-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6121-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6121-product-page" },
+  { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/l6121-product-page" },
+]

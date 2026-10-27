@@ -2,6 +2,11 @@ id = "part/lc-racing/C7073"
 brand = "brand/lc-racing"
 number = "C7073"
 name = "Steel Turnbuckle M3x40mm(1)"
+documents = ["doc/lc-racing/c7073-product-page"]
 applies_to = "LC10B5, PTG-1"
 category = "turnbuckle"
 material = "steel"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7073-product-page" },
+  { kit = "kit/lc-racing/ptg-1", type = "direct", source = "doc/lc-racing/c7073-product-page" },
+]

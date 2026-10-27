@@ -2,7 +2,11 @@ id = "part/lc-racing/C7045"
 brand = "brand/lc-racing"
 number = "C7045"
 name = "Arm Mount FF Alu-7075 T6"
+documents = ["doc/lc-racing/c7045-product-page"]
 applies_to = "LC10B5"
 category = "suspension"
 material = "aluminium"
 material_grade = "7075-T6"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7045-product-page" },
+]

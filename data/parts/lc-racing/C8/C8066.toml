@@ -2,5 +2,10 @@ id = "part/lc-racing/C8066"
 brand = "brand/lc-racing"
 number = "C8066"
 name = "Sway bar Set"
+documents = ["doc/lc-racing/c8066-product-page"]
 applies_to = "PTG-2/2R/2TC"
 category = "suspension"
+fits = [
+  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8066-product-page" },
+  { kit = "kit/lc-racing/ptg-2tc", type = "direct", source = "doc/lc-racing/c8066-product-page" },
+]

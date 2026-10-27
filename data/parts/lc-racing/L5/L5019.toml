@@ -3,5 +3,9 @@ brand = "brand/lc-racing"
 number = "L5019"
 name = "CVA Drive Shaft 82.4mm"
 pack_qty = 2
+documents = ["doc/lc-racing/l5019-product-page"]
 applies_to = "BHC-1"
 category = "drivetrain"
+fits = [
+  { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5019-product-page" },
+]

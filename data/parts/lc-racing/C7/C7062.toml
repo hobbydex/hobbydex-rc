@@ -3,5 +3,9 @@ brand = "brand/lc-racing"
 number = "C7062"
 name = "Rear Drive Shaft"
 pack_qty = 2
+documents = ["doc/lc-racing/c7062-product-page"]
 applies_to = "LC10B5"
 category = "drivetrain"
+fits = [
+  { kit = "kit/lc-racing/lc10b5", type = "direct", source = "doc/lc-racing/c7062-product-page" },
+]

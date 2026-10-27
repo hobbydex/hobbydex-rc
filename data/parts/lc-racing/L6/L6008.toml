@@ -2,10 +2,18 @@ id = "part/lc-racing/L6008"
 brand = "brand/lc-racing"
 number = "L6008"
 name = "EMB Battery Mount Set"
+documents = ["doc/lc-racing/l6008-product-page"]
 applies_to = "EMB-WRC, EMB-RA, EMB-1, EMB-SC, EMB-DT, EMB-TG, EMB-MT"
 category = "chassis"
 includes = [
   { part = "part/lc-racing/BE6022" },
   { part = "part/lc-racing/BE6023" },
   { part = "part/lc-racing/BE6052" },
+]
+fits = [
+  { kit = "kit/lc-racing/emb-wrc", type = "direct", source = "doc/lc-racing/l6008-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6008-product-page" },
+  { kit = "kit/lc-racing/emb-sc", type = "direct", source = "doc/lc-racing/l6008-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6008-product-page" },
+  { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6008-product-page" },
 ]
