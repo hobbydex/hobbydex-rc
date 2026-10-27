@@ -14,3 +14,6 @@ equivalent_to = [
   { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
 applies_to = ["Pirate XTT"]
+fits = [
+  { kit = "kit/t2m/pirate-xt-t-brushless", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate XTT (link_car_kits.py)" },
+]
