@@ -13,3 +13,6 @@ applies_to = ["Pirate Buster"]
 fits = [
   { kit = "kit/t2m/pirate-buster", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Buster (link_car_kits.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

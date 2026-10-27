@@ -13,3 +13,6 @@ applies_to = ["Pirate XT-C 1/10"]
 fits = [
   { kit = "kit/t2m/pirate-xt-c", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate XT-C 1/10 (link_car_kits.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

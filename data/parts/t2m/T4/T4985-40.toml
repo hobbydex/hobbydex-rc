@@ -14,3 +14,6 @@ applies_to = ["Pirate Basher"]
 fits = [
   { kit = "kit/t2m/pirate-basher", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Basher (link_car_kits.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

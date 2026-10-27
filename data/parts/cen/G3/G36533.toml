@@ -7,3 +7,6 @@ notes = "A set; the manuals label its pieces M3x12 RHTP; M3x12m RHTP; M3x12mm RH
 name_source = "manufacturer"
 category = "screw"
 documents = ["doc/cen/q-series-fiat-595-suzuki-jimny-manual"]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
