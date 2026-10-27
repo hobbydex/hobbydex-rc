@@ -19,7 +19,7 @@ PATH_DATA = re.compile(r"[MmLlHhVvCcSsQqTtAaZz0-9.,+\-eE ]+")
 REQUIRED = {
     "brand": ["id", "name", "status"],
     "kit": ["id", "brand", "name", "category"],
-    "release": ["id", "kit", "brand", "name", "kind", "status"],   # year: optional, left out when unknown
+    "release": ["id", "kit", "brand", "name", "status"],   # kind and year: optional, left out when no source states them
     "part": ["id", "brand", "name"],   # number: required unless the brand has item_numbers = false
     "spec": ["id", "category"],
     "doc": ["id", "kind", "title"],
