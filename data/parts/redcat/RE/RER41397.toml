@@ -9,3 +9,6 @@ links = [
 ]
 gtin = "843335123538"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m5x25-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

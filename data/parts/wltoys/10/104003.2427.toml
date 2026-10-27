@@ -10,3 +10,6 @@ fits = [
   { kit = "kit/wltoys/104020", type = "direct", source = "doc/wltoys/104020-reseller-parts" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m4x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

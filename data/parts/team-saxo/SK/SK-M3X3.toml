@@ -4,3 +4,6 @@ number = "SK-M3X3"
 name = "Set screw M3x3"
 notes = "Printed as SK_M3X3 on the F1-180-V4 parts list and as SK_M3X3 on the F1-180-V3 parts list and as SK_M3X3 on the MF-1-200 parts list and as SK_M3X3 on the F1-FUTURE parts list and as SK_M3X3 on the GT-300W-V4 parts list and as SK_M3X3 on the GT-300W-V3 parts list and as SK_M3X3 on the LM-500W parts list"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
