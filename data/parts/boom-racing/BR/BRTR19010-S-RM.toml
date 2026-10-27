@@ -5,6 +5,11 @@ name = "TPD 1.9\" GEKKO RED 4.25\"x1.65\" / 108x41.9mm RC Crawler Tire + Rock Mo
 wheel_size = "1.9\""
 vehicle = "crawler"
 compound = "Gekko"
+fits = [
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-d130", type = "direct", source = "doc/boom-racing/shop" },
+]
 notes = "The shop's listing cuts the name; the end is taken from the product URL"
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/tpd-19-gekko-red-425x165-108x419mm-rc-crawler-tire-rock-monster-green-foam-insert-2-247545" },

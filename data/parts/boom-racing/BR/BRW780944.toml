@@ -3,13 +3,19 @@ brand = "brand/boom-racing"
 number = "BRW780944"
 name = "Retro Nylon Center Wheel Cap (4) (XT5 Series) w/ Tool"
 pack_qty = 4
-pack_qty_basis = "page"
 vehicle = "crawler"
 fits = [
+  { kit = "kit/boom-racing/brx01", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx01-awb", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop" },
   { kit = "kit/boom-racing/brx02-109", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-88", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/boom-racing/brx02-d130", type = "direct", source = "doc/boom-racing/shop" },
 ]
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/retro-nylon-center-wheel-cap-4-xt5-series-w-tool-218507" },
 ]
+pack_qty_basis = "page"
 category = "wheel"
 material = "plastic"
