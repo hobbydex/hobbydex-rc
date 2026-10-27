@@ -985,6 +985,30 @@ def main():
     check("bearing-default-material", "set the bearings' material from the maker's page or name, or remove it: most of the brand's bearings carry one material that none of their names says (a default, not a source)",
           flat, detail="brands whose most bearings carry a material no name states")
 
+    # electronics fields the schema defines for a category: a field fewer than 5% of that category's parts carry (motor_type on motors: 0 of 2,533)
+    ELEC_FIELDS = {
+        "motor": "motor_type kv turns lipo_cells diameter_mm length_mm shaft_mm weight_g sensored mount_holes motor_connector waterproof scales",
+        "esc": "motor_type bec_v bec_a motor_limit_t motor_limit_kv nimh_cells programming resistance_mohm lipo_cells current_a peak_current_a "
+               "dimensions_mm weight_g sensored motor_connector receiver_connector waterproof scales",
+        "servo": "connector size_class spline_teeth torque_kgcm speed_s voltage_range gear_material motor rotation_deg bearings bearing_kind "
+                 "dead_band_us frequency_hz dimensions_mm weight_g waterproof scales",
+        "battery": "chemistry cells capacity_mah nominal_v c_rating connector balance_connector case dimensions_mm weight_g scales",
+    }
+    by_cat = collections.defaultdict(list)
+    for p in parts:
+        by_cat[p.get("category")].append(p)
+    rare = []   # (category, field, with, of)
+    for cat, fields in ELEC_FIELDS.items():
+        ps = by_cat.get(cat, [])
+        for f in fields.split():
+            n_with = sum(1 for p in ps if p.get(f) not in (None, "", []))
+            if ps and 20 * n_with < len(ps):
+                rare.append((cat, f, n_with, len(ps)))
+    check("electronics-field-rare", "fill the field from the maker's own wording (product page, spec table or manual), per the schema's electronics rules; a field the maker does not state stays empty (one line per category and field below)",
+          [], count=len(rare))
+    results["electronics-field-rare"]["all"] = [f"{cat} {f}: {n} of {of} parts ({100 * n / of:.1f}%)" for cat, f, n, of in rare]
+    results["electronics-field-rare"]["examples"] = []   # the rows are printed in full under the summary line
+
     st = os.statvfs("/tmp")
     used = 100 * (st.f_files - st.f_ffree) / st.f_files if st.f_files else 0.0
     scratch = sorted(((sum(len(fs) for _, _, fs in os.walk(sp)), sp) for sp in glob.glob(f"/tmp/claude-{os.getuid()}/*/*/scratchpad")), reverse=True)
@@ -1020,6 +1044,9 @@ def main():
                 print(f"{'':34} {'':>7}    {k}: {v}")
         if n == "art-missing-photo":
             print(f"{'':34} {'':>7}    skip reasons: {results[n]['skip_reasons']}")
+        if n == "electronics-field-rare":
+            for row in r["all"]:
+                print(f"{'':34} {'':>7}    {row}")
     for n in [n for n in results if results[n]["count"] == 0 and results[n].get("detail")]:
         print(f"{n:34} {'ok':>7}  {results[n]['detail']}")
     for n in skipped:
