@@ -970,7 +970,9 @@ def main():
           [x["id"] for pair in twins for x in pair], count=len(twins), per_brand=per_brand([a for a, _ in twins]))
     results["ocr-number-twins"]["examples"] = [{"id": f"{a['id']} ~ {b['id']}", "url": url_for(a)} for a, b in twins[:args.examples]]
 
-    wire = [p for p in parts if p.get("category") == "wire" and PLUG.search(p.get("name", "")) and not p.get("connectors")]
+    # a plug names its connector in equivalent_to (a connector-spec row); a lead lists its plugs in connectors
+    wire = [p for p in parts if p.get("category") == "wire" and PLUG.search(p.get("name", "")) and not p.get("connectors")
+            and not any(str(e.get("spec", "")).startswith("spec/connector/") for e in p.get("equivalent_to", []) if isinstance(e, dict))]
     check("wire-plug-no-connectors", "set connectors to the plugs the lead carries (from the name or the maker's page)", wire, per_brand=per_brand(wire))
 
     # servo plugs: a part whose name gives only Futaba (or a Futaba servo) linked to the JR plug, or only JR to Futaba
