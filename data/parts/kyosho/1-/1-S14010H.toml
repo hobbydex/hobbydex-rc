@@ -7,9 +7,12 @@ pack_qty = 10
 fits = [
   { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33024-t01-mp10-30th-ex" },
 ]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m4x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s14010h.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s14010h.html" },
+]

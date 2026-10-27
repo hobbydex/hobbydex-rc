@@ -4,6 +4,7 @@ number = "1-S13010H"
 name = "Button Screw(Hex/M3x10)"
 gtin = "4548565142378"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
   { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/30917-fazer-ve-porsche-918-spop" },
@@ -29,9 +30,16 @@ fits = [
   { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
   { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-exploded-view" },
   { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-exploded-view" },
+  { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/33010-inferno-gt3-ex" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-ex-20191228" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-ex" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33027-inf-gt2-rs-kt-331p-ex" },
+  { kit = "kit/kyosho/hanging-on-racer", type = "direct", source = "doc/kyosho/34936-yamaha-yzr500-ex" },
 ]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s13010h.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s13010h.html" },
+]

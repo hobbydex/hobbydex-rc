@@ -3,6 +3,7 @@ brand = "brand/kyosho"
 number = "IFW472GM"
 name = "Wheel Nut (Gunmetal/for Serration)"
 pack_qty = 4
+pack_qty_basis = "manual"
 gtin = "4548565332410"
 category = "nut"
 documents = ["doc/kyosho/ifw472gm-product-page"]
@@ -26,6 +27,8 @@ fits = [
   { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/33010-inferno-gt3-spop" },
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33018-inferno-gt2-rs-srt-demon-spop-20191228" },
   { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34107-inferno-gt2-ve-rs-srt-demon-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1-inferno-mp10-readyset-ex" },
+  { kit = "kit/kyosho/fo-xx", type = "direct", source = "doc/kyosho/33154-fo-xx-2-0-ex-20191228" },
 ]
 related = [
   { part = "part/kyosho/FW107", relation = "use-with" },
@@ -52,4 +55,6 @@ related = [
   { part = "part/kyosho/IFW625W", relation = "use-with" },
   { part = "part/kyosho/IFW625WB", relation = "use-with" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ifw472gm.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/ifw472gm.html" },
+]

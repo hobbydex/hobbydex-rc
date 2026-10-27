@@ -4,6 +4,7 @@ number = "1-W260705"
 name = "Washer(M2.6x7x0.5)"
 gtin = "4548565142767"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/nitro-tracker", type = "direct", source = "doc/kyosho/33101-nitro-tracker-spop" },
   { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
@@ -17,9 +18,19 @@ fits = [
   { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-exploded-view" },
   { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-exploded-view" },
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inferno-mp10e-kit-exploded-view" },
+  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/dmt-ve-r-30844-ex" },
+  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30845t1-ex" },
+  { kit = "kit/kyosho/inferno-neo-st", type = "direct", source = "doc/kyosho/31683-inferno-neo-st-rs-ex" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-ex" },
+  { kit = "kit/kyosho/hanging-on-racer", type = "direct", source = "doc/kyosho/34936-yamaha-yzr500-ex" },
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/30879-mm01-ex" },
+  { kit = "kit/kyosho/ultima-rb5", type = "direct", source = "doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-ex" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30045-t01-lazer-zx-5-fs2-ex" },
 ]
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/2.6x7x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-w260705.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-w260705.html" },
+]

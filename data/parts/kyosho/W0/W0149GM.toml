@@ -3,6 +3,7 @@ brand = "brand/kyosho"
 number = "W0149GM"
 name = "Aluminum Collar(5x7x1mm/2mm/Gunmetal)"
 pack_qty = 2
+pack_qty_basis = "manual"
 gtin = "4548565200573"
 category = "washer-shim"
 documents = ["doc/kyosho/w0149gm-product-page"]
@@ -11,10 +12,13 @@ fits = [
   { kit = "kit/kyosho/lazer-zx6", type = "direct", source = "doc/kyosho/30046-lazer-zx6-spop" },
   { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
   { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-spop" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-ex" },
 ]
 material = "aluminium"
 includes = [
   { spec = "spec/washer/5x7x1" },
   { spec = "spec/washer/5x7x2" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/w0149gm.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/w0149gm.html" },
+]

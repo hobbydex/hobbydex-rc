@@ -11,6 +11,8 @@ status = "released"
 gtin = "4548565349906"
 documents = ["doc/kyosho/33153-mad-crusher-spop-20191228", "doc/kyosho/33153-mad-crusher-ex-20191228", "doc/kyosho/33153-mad-crusher-mm-20191228", "doc/kyosho/33153-mad-crusher-im-ver02", "doc/kyosho/33153-product-page", "doc/kyosho/youtube-7siVAEDlLMM"]
 contains = [
+  { part = "part/kyosho/1-E070", role = "kit", source = "doc/kyosho/33153-mad-crusher-ex-20191228" },
+  { part = "part/kyosho/1-W701105", role = "kit", source = "doc/kyosho/33153-mad-crusher-ex-20191228" },
   { part = "part/kyosho/1701BK", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/39514-1", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/82135", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
@@ -38,6 +40,7 @@ contains = [
   { part = "part/kyosho/BRG005", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/BRG006", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/BRG014", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
+  { part = "part/kyosho/F222GM", role = "kit", source = "doc/kyosho/33153-mad-crusher-ex-20191228" },
   { part = "part/kyosho/FW110", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/FW143", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IF101", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
@@ -49,11 +52,13 @@ contains = [
   { part = "part/kyosho/IF143B", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IF150", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IF222", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
+  { part = "part/kyosho/IF222GM", role = "kit", source = "doc/kyosho/33153-mad-crusher-ex-20191228" },
   { part = "part/kyosho/IF242B", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IF243B", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IF30-1", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IF351", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IF54", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
+  { part = "part/kyosho/IF7", role = "kit", source = "doc/kyosho/33153-mad-crusher-ex-20191228" },
   { part = "part/kyosho/IFW107", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IFW53", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/IG107", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
@@ -114,6 +119,8 @@ contains = [
   { part = "part/kyosho/ORG06", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/W0202", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/W5351", role = "kit", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
+  { part = "part/kyosho/1228", role = "listed", source = "doc/kyosho/33153-mad-crusher-im-ver02" },
+  { part = "part/kyosho/1511", role = "listed", source = "doc/kyosho/33153-mad-crusher-im-ver02" },
   { part = "part/kyosho/92201", role = "option", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/FW117-01", role = "option", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/FW122", role = "option", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
@@ -142,6 +149,4 @@ contains = [
   { part = "part/kyosho/MAW027", role = "option", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/VZ086", role = "option", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
   { part = "part/kyosho/W0202H", role = "option", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
-  { part = "part/kyosho/1228", role = "listed", source = "doc/kyosho/33153-mad-crusher-im-ver02" },
-  { part = "part/kyosho/1511", role = "listed", source = "doc/kyosho/33153-mad-crusher-im-ver02" },
 ]

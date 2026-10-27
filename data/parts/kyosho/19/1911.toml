@@ -8,3 +8,7 @@ category = "bearing"
 equivalent_to = [
   { spec = "spec/bearing/8x14x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+fits = [
+  { kit = "kit/kyosho/superten", type = "direct", source = "doc/kyosho/31001-superten-t" },
+  { kit = "kit/kyosho/gp-ultima-st", type = "direct", source = "doc/kyosho/31972-gp-ultimast-sports-t" },
+]

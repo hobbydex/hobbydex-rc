@@ -3,10 +3,14 @@ brand = "brand/kyosho"
 number = "96644"
 name = "8x10mm Shim Set"
 pack_qty = 10
+pack_qty_basis = "manual"
 gtin = "4955439690611"
 fits = [
   { kit = "kit/kyosho/psycho-kruiser-ve", type = "direct", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
   { kit = "kit/kyosho/lazer-zx-s", type = "direct", source = "doc/kyosho/30075-lazerzx-evo-p" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-t" },
 ]
 category = "washer-shim"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/96644.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/96644.html" },
+]

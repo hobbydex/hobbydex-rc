@@ -12,8 +12,14 @@ gtin = "4548565232901"
 documents = ["doc/kyosho/31838-mm-01-inferno-gt2-rs-spop", "doc/kyosho/31838-mm-01-inferno-gt2-rs-ex", "doc/kyosho/31838-mm-01-inferno-gt2-rs-mm", "doc/kyosho/31833-t01-inferno-gt2-rs-impdf", "doc/kyosho/31833-t01-inferno-gt2-rs-spop", "doc/kyosho/31833-t01-inferno-gt2-rs-ex", "doc/kyosho/31833-t01-inferno-gt2-rs-mm", "doc/kyosho/infernogt2-racespec-partslist-v1", "doc/kyosho/31838-product-page"]
 depicts = { make = "Ferrari", model = "458 Italia GT2" }
 contains = [
+  { part = "part/kyosho/1-E025", role = "kit", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-ex" },
+  { part = "part/kyosho/1-E030", role = "kit", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-ex" },
+  { part = "part/kyosho/1-N2620", role = "kit", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-ex" },
+  { part = "part/kyosho/1-W701110", role = "kit", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-ex" },
   { part = "part/kyosho/82121", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/82216", role = "kit", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-spop" },
+  { part = "part/kyosho/92418", role = "kit", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-ex" },
+  { part = "part/kyosho/97004", role = "kit", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-ex" },
   { part = "part/kyosho/BRG001", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/BRG005", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/BRG022", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
@@ -57,6 +63,7 @@ contains = [
   { part = "part/kyosho/IF351", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/IF502", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/IF55", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
+  { part = "part/kyosho/IF7", role = "kit", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-ex" },
   { part = "part/kyosho/IFW140-05", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/IFW2", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/IFW53", role = "kit", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
@@ -87,7 +94,9 @@ contains = [
   { part = "part/kyosho/36228BK", role = "option", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/36228R", role = "option", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/36261", role = "option", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-spop" },
+  { part = "part/kyosho/74019", role = "listed", source = "doc/kyosho/31833-t01-inferno-gt2-rs-impdf" },
   { part = "part/kyosho/74023", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
+  { part = "part/kyosho/74023-13", role = "listed", source = "doc/kyosho/31833-t01-inferno-gt2-rs-impdf" },
   { part = "part/kyosho/74026-04", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/74905", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/80821", role = "option", source = "doc/kyosho/31838-mm-01-inferno-gt2-rs-spop" },
@@ -138,6 +147,7 @@ contains = [
   { part = "part/kyosho/IFW332-01", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/IFW53M", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/IFW53S", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
+  { part = "part/kyosho/IGB151", role = "listed", source = "doc/kyosho/31833-t01-inferno-gt2-rs-impdf" },
   { part = "part/kyosho/IGH005BK", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/IGH005SM", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/IGT003", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
@@ -161,7 +171,4 @@ contains = [
   { part = "part/kyosho/W0137", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/W0141V", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { part = "part/kyosho/W0202", role = "option", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
-  { part = "part/kyosho/74019", role = "listed", source = "doc/kyosho/31833-t01-inferno-gt2-rs-impdf" },
-  { part = "part/kyosho/74023-13", role = "listed", source = "doc/kyosho/31833-t01-inferno-gt2-rs-impdf" },
-  { part = "part/kyosho/IGB151", role = "listed", source = "doc/kyosho/31833-t01-inferno-gt2-rs-impdf" },
 ]

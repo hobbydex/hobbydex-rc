@@ -10,11 +10,16 @@ seen_by = "2007-03"
 seen_by_source = "https://web.archive.org/web/20070322201739/http://www.kyosho.com:80/jpn/support/instructionmanual/buggy/pdf/31276_qs01_mp75sp2_qsg.pdf"
 documents = ["doc/kyosho/31276-mm01-mp75sp2-p", "doc/kyosho/31276-mm01-mp75sp2-t", "doc/kyosho/31276-qs01-mp75sp2-qsg", "doc/kyosho/31276-mm01-mp75sp2-mm", "doc/kyosho/31276-inf75sp2-m"]
 contains = [
+  { part = "part/kyosho/1190", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-t" },
+  { part = "part/kyosho/1382", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-t" },
+  { part = "part/kyosho/1383", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-t" },
   { part = "part/kyosho/92304", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/92405", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
+  { part = "part/kyosho/92418", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-t" },
   { part = "part/kyosho/92515", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/92703", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
+  { part = "part/kyosho/BRG005", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-t" },
   { part = "part/kyosho/BRG0120", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/BS107", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/BS124", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
@@ -84,6 +89,7 @@ contains = [
   { part = "part/kyosho/IF55", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/IF62", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/IF6B", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
+  { part = "part/kyosho/IF7", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-t" },
   { part = "part/kyosho/IFW108", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/IFW109", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/IFW143", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
@@ -92,6 +98,7 @@ contains = [
   { part = "part/kyosho/ORG04", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/ORG06", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/SD54", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
+  { part = "part/kyosho/W0141", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-t" },
   { part = "part/kyosho/W0141V", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
   { part = "part/kyosho/W5651", role = "kit", source = "doc/kyosho/31276-mm01-mp75sp2-p" },
 ]

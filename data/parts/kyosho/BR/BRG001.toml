@@ -3,6 +3,7 @@ brand = "brand/kyosho"
 number = "BRG001"
 name = "Shield Bearing (5x10x4)"
 pack_qty = 4
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
   { kit = "kit/kyosho/inferno-neo-2-0", type = "direct", source = "doc/kyosho/31684-mm01-inferno-neo-2-spop" },
@@ -56,6 +57,8 @@ fits = [
   { kit = "kit/kyosho/tr-15-monster-touring", type = "direct", source = "doc/kyosho/31213-xanavinismo-gtr-p" },
   { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31283-evolva-p" },
   { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31584-fw05rr-kce-m" },
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30022-tf-5-stallion-t" },
+  { kit = "kit/kyosho/scorpion-b-xxl", type = "direct", source = "doc/kyosho/scorpion-b-xxl-ex" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },

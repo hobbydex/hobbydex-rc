@@ -10,9 +10,11 @@ seen_by = "2011-09"
 seen_by_source = "https://web.archive.org/web/20110916022525/http://www.kyosho.com:80/jpn/support/instructionmanual/tf-5/pdf/30024_TF6_IM.pdf"
 documents = ["doc/kyosho/30024-tf6-im", "doc/kyosho/30024-tf6-ex", "doc/kyosho/30024-tf6-p", "doc/kyosho/30024-product-page"]
 contains = [
+  { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/30024-tf6-ex" },
   { part = "part/kyosho/1-W300805", role = "kit", source = "doc/kyosho/30024-tf6-p" },
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/30024-tf6-p" },
   { part = "part/kyosho/96641", role = "kit", source = "doc/kyosho/30024-tf6-p" },
+  { part = "part/kyosho/96643", role = "kit", source = "doc/kyosho/30024-tf6-ex" },
   { part = "part/kyosho/97008-25", role = "kit", source = "doc/kyosho/30024-tf6-p" },
   { part = "part/kyosho/97040", role = "kit", source = "doc/kyosho/30024-tf6-p" },
   { part = "part/kyosho/97041-05R", role = "kit", source = "doc/kyosho/30024-tf6-p" },

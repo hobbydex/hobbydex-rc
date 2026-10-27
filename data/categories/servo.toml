@@ -2,6 +2,7 @@ id = "category/servo"
 name = "Servos"
 summary = "Steering and throttle servos"
 description = "Steering and throttle servos by size class, spline, torque and speed."
+any_car = true
 spec_type = "servo"
 key_fields = [
   { field = "size_class", label = "Size", from = "spec" },

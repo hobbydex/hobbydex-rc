@@ -3,6 +3,7 @@ brand = "brand/kyosho"
 number = "IF211"
 name = "Engine Mount Spacer"
 pack_qty = 2
+pack_qty_basis = "manual"
 status = "discontinued"
 gtin = "4548565109463"
 category = "washer-shim"
@@ -10,5 +11,8 @@ documents = ["doc/kyosho/if211-product-page"]
 fits = [
   { kit = "kit/kyosho/inferno-neo", type = "direct", source = "doc/kyosho/31682t1-inf-neo-rs-sp" },
   { kit = "kit/kyosho/inferno-us-sports", type = "direct", source = "doc/kyosho/31277sg-inferno-us-sports2-p" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31830-inferno-gt2-chassis-t" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/if211.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/if211.html" },
+]

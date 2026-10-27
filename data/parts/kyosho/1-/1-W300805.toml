@@ -4,6 +4,7 @@ number = "1-W300805"
 name = "Washer (M3x8x0.5)"
 gtin = "4548565141975"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
   { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30858-im-ultima-rb6-rs-spop" },
@@ -22,9 +23,18 @@ fits = [
   { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inferno-mp10e-kit-exploded-view" },
   { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34312-ultima-sb-dune-master-exploded-view" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-ex" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-ex" },
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822t02f-tf5-readyset-ex" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-ex-20191228" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-ex" },
+  { kit = "kit/kyosho/kc10", type = "direct", source = "doc/kyosho/kc10-ex" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30045-t01-lazer-zx-5-fs2-ex" },
 ]
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/3x8x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-w300805.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-w300805.html" },
+]

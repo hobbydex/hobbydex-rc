@@ -4,9 +4,13 @@ number = "1-S03015T"
 name = "Bind Screw(Titanium/M3x15)"
 gtin = "4548565142330"
 pack_qty = 8
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34403-monster-tracker-ex" },
 ]
 category = "screw"
 material = "titanium"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s03015t.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s03015t.html" },
+]

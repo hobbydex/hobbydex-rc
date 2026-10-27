@@ -4,6 +4,7 @@ number = "1-S12605H"
 name = "Button Screw(Hex/M2.6x5)"
 gtin = "4548565142347"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
   { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
@@ -17,9 +18,13 @@ fits = [
   { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
   { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-exploded-view" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-ex" },
+  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34365-outlawrampage-pro2-0-ex" },
 ]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.6x5-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s12605h.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s12605h.html" },
+]

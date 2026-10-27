@@ -4,6 +4,7 @@ number = "1-S13005H"
 name = "Button Screw(Hex/M3x5)"
 gtin = "4548565287246"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
   { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
@@ -14,9 +15,14 @@ fits = [
   { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
   { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/30635-fantom-ep-4wd-spop" },
   { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30645-mm01-rev1-spop" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34110-t04-inferno-mp10e-ex" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-ex" },
+  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34304-ultima-rb7-ss-ex" },
 ]
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x5-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s13005h.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s13005h.html" },
+]

@@ -4,6 +4,7 @@ number = "1-S53003"
 name = "Set Screw(M3x3)"
 gtin = "4548565141814"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
   { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
@@ -44,9 +45,21 @@ fits = [
   { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-exploded-view" },
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inferno-mp10e-kit-exploded-view" },
   { kit = "kit/kyosho/ultima-sb", type = "direct", source = "doc/kyosho/34311-ultima-sb-dirt-master-exploded-view" },
+  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/31071-dmt-mm-ex" },
+  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/31098-dbx2-ex" },
+  { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/33010-inferno-gt3-ex" },
+  { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012-05-inf-neo-3-0-kt-231p-ex" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-ex" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33027-inf-gt2-rs-kt-331p-ex" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-ex" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34117-inf-gt2-ve-rs-kt-331p-ex" },
+  { kit = "kit/kyosho/hanging-on-racer", type = "direct", source = "doc/kyosho/34936-yamaha-yzr500-ex" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30045-t01-lazer-zx-5-fs2-ex" },
 ]
 category = "screw"
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s53003.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s53003.html" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

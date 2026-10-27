@@ -2,6 +2,7 @@ id = "category/battery"
 name = "Batteries"
 summary = "LiPo, LiHV and NiMH drive packs"
 description = "Drive packs: LiPo, LiHV and NiMH, by cells, capacity, C rating, case and plug."
+any_car = true
 spec_type = "battery"
 key_fields = [
   { field = "chemistry", label = "Chemistry", from = "spec" },

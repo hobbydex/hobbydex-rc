@@ -4,6 +4,7 @@ number = "1-W501208"
 name = "Washer(M5x12x0.8)"
 gtin = "4548565141999"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33206-v-one-r4sii-spop" },
@@ -12,4 +13,6 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/5x12x0.8", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-w501208.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/1-w501208.html" },
+]

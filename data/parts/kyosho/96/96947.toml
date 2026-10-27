@@ -3,11 +3,15 @@ brand = "brand/kyosho"
 number = "96947"
 name = "Shim Set (15x18x0.2mm)"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31398s-fazerkt-200-sp" },
+  { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/31396-fazer-kt-6-t" },
 ]
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/15x18x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
-links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/96947.html" } ]
+links = [
+  { site = "Kyosho", url = "https://rc.kyosho.com/en/96947.html" },
+]

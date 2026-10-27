@@ -10,6 +10,8 @@ seen_by = "2008-12"
 seen_by_source = "https://web.archive.org/web/20081202031524/http://www.kyosho.com/jpn/support/instructionmanual/21racingcar/pdf/31041_fantomsports_t.pdf"
 documents = ["doc/kyosho/31041-fantom-sports-p", "doc/kyosho/31041-fantomsports-t", "doc/kyosho/31041-fantom-sports-m"]
 contains = [
+  { part = "part/kyosho/1901", role = "kit", source = "doc/kyosho/31041-fantomsports-t" },
+  { part = "part/kyosho/96888", role = "kit", source = "doc/kyosho/31041-fantomsports-t" },
   { part = "part/kyosho/1700KP", role = "option", source = "doc/kyosho/31041-fantom-sports-p" },
   { part = "part/kyosho/1700KY", role = "option", source = "doc/kyosho/31041-fantom-sports-p" },
   { part = "part/kyosho/1701KP", role = "option", source = "doc/kyosho/31041-fantom-sports-p" },

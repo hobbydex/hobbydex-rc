@@ -319,7 +319,7 @@ former_names = ["COMPOSITE STEERING BLOCK"]
 
 `ocr_names` (optional, a list of strings): the names OCR read from a manual or a scan for this part, kept only for the matching tools. The site never shows them and the search index does not hold them (`export.py` writes them with the rest of the record). A reading that has no letters, runs over 60 characters (several names in one) or is a single word is dropped (`former_names.ocr_clean()`). A reading that is the maker's own product page title for the part stays a former name.
 
-`pack_qty_basis` (optional, only with `pack_qty`): where the count came from, written right after it. `name`: the maker's part name states it (`(10)`, `10pcs`). `page`: the maker's (or a dealer's) product page states it. `includes`: the sum of the part's `includes` quantities (a bearing kit). `photo`: counted on one product photo, which does not always show the whole pack, so this is the weakest basis; the site says so. `photos`: two or more independent photos of the item number gave the same count. `owner`: checked by the project owner on the pack. A text basis always wins over a photo count; a photo count that disagrees with a text count is never written (audit "pack-photo-disagrees"). A `pack_qty` with no basis was written before the basis existed and its source is not known (audit "pack-qty-no-basis").
+`pack_qty_basis` (optional, only with `pack_qty`): where the count came from, written right after it. `name`: the maker's part name states it (`(10)`, `10pcs`). `page`: the maker's (or a dealer's) product page states it. `includes`: the sum of the part's `includes` quantities (a bearing kit). `manual`: the count is printed in the maker's manual or parts list, the document is among the part's documents/sources (a line with the part's number and the count, `(10)` or `10pcs`). `photo`: counted on one product photo, which does not always show the whole pack, so this is the weakest basis; the site says so. `photos`: two or more independent photos of the item number gave the same count. `owner`: checked by the project owner on the pack. A text basis (`name`, `page`, `includes`, `manual`) always wins over a photo count; a photo count that disagrees with a text count is never written (audit "pack-photo-disagrees"). A `pack_qty` with no basis was written before the basis existed and its source is not known (audit "pack-qty-no-basis").
 
 A part of a brand with `item_numbers = false` has no `number`: never put a
 store handle or SKU there to fill it. Its id keeps a slug
@@ -1229,6 +1229,17 @@ its linked spec (`from = "part" | "spec"`), with an optional `unit` and
 `format` ("cells": a [min, max] LiPo range shown as 1-3S; "range": a [min, max] shown as 4000-45000; "volts": a voltage shown as 6 V, or a list of them as 6/7.4 V; "yesno": true or false). `compare_only = true`
 keeps a field out of the parts table and shows it only when parts are
 compared side by side.
+
+`any_car = true` (optional) marks a category whose parts are not made for one
+car: tools, radios, chargers, batteries, motors, ESCs, servos, wires, lights,
+paint, engine parts and generic hardware (screws, nuts, bearings, pins, clips,
+pinions). Such a part with no `fits` row and no release naming it is not
+counted as unlinked: the audit check part-no-car-link and the Linked column of
+the statistics page leave it out of the denominator. A part that names the model it is for (`applies_to`) is always counted, whatever its
+category. A part of such a category
+that does have a fits row or a release is linked as before. Leave the flag off
+for a category whose parts belong to a car (arms, hubs, chassis plates, bodies,
+wheels, tyres).
 
 ```toml
 id = "category/servo"

@@ -3,6 +3,7 @@ brand = "brand/kyosho"
 number = "BRG005"
 name = "Shield Bearing (8x16x5)"
 pack_qty = 2
+pack_qty_basis = "manual"
 equivalent_to = [
   { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
@@ -46,5 +47,7 @@ fits = [
   { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/31811-infgt-p" },
+  { kit = "kit/kyosho/scorpion-b-xxl", type = "direct", source = "doc/kyosho/scorpion-b-xxl-ex" },
+  { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-t" },
 ]
 documents = ["doc/kyosho/30077-lazer-zx5-sp-p", "doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30522-b-twinforcecsp-p"]
