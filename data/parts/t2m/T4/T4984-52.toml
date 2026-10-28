@@ -12,3 +12,7 @@ pack_qty = 2
 pack_qty_basis = "page"
 category = "wire"
 applies_to = ["Black Pirate MT", "Black Pirate MT 1/10"]
+fits = [
+  { kit = "kit/t2m/black-pirate-mt", type = "direct", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/t2m/black-pirate-mt-4s", type = "direct", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
