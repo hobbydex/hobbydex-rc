@@ -5,7 +5,7 @@ name = "Wheel Nut (Red)"
 status = "discontinued"
 gtin = "4548565199747"
 category = "nut"
-documents = ["doc/kyosho/if222r-product-page"]
+documents = ["doc/kyosho/if222r-product-page", "doc/kyosho/34101t2-inferno-ve-rs-kt-231p-spop"]
 color = "red"
 fits = [
   { kit = "kit/kyosho/fo-xx-ve", type = "direct", source = "doc/kyosho/30887-mm01-fo-xx-ve-spop" },
@@ -16,7 +16,6 @@ fits = [
   { kit = "kit/kyosho/inferno-ve", type = "direct", source = "doc/kyosho/34101t2-inferno-ve-rs-kt-231p-ex" },
 ]
 related = [
-  { part = "part/kyosho/FW328", relation = "use-with" },
   { part = "part/kyosho/IFW107", relation = "use-with" },
   { part = "part/kyosho/IFW107B", relation = "use-with" },
   { part = "part/kyosho/IFW328", relation = "use-with" },
@@ -25,3 +24,4 @@ related = [
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/if222r.html" },
 ]
+range = "kyosho/f222-colours"

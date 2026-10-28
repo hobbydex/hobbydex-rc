@@ -5,9 +5,10 @@ name = "CHEVROLET CORVETTE C6-R Body Set(GT2)"
 status = "discontinued"
 gtin = "4548565282968"
 category = "body"
-documents = ["doc/kyosho/igb152b-product-page"]
+documents = ["doc/kyosho/igb152b-product-page", "doc/kyosho/33006-inferno-gt2-race-spec-spop", "doc/kyosho/33018-inferno-gt2-rs-srt-demon-spop-20191228"]
 fits = [
   { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/inferno-gt3-parts-list-v01-02" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33006-inferno-gt2-race-spec-spop" },
 ]
 depicts = { make = "Chevrolet", model = "Corvette C6-R" }
 scale = "1/8"
