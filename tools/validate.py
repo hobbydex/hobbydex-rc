@@ -100,7 +100,7 @@ ENUMS = {
     "spec.chemistry": {"lipo", "lihv", "life", "nimh"},
     "part.chemistry": {"lipo", "lihv", "life", "nimh", "liion"},
     "part.case": {"hard", "soft", "shorty"},
-    "part.name_source": {"ocr", "manufacturer", "manual", "dealer"},
+    "part.name_source": {"ocr", "manufacturer", "manual", "dealer", "owner"},
     "part.ball_type": {"stud", "nut", "through-hole", "set-screw"},
     "part.paint_type": {"polycarbonate", "lacquer", "acrylic", "enamel"},
     "part.application": {"spray-can", "airbrush", "brush", "marker"},
