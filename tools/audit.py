@@ -69,7 +69,7 @@ def url_for(item):
     return SITE + "/rc/"
 
 
-ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.toml")   # the per-host English addresses (link_language_variants.py)
+ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.py")   # the per-host English addresses (link_language_variants.py)
 ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
 
 
@@ -77,9 +77,10 @@ def english_swaps():
     """{host: (from, to)} of the swap rules: a maker link under `from` has its English address under `to`."""
     if not os.path.exists(ENGLISH_TABLE):
         return {}
-    with open(ENGLISH_TABLE, "rb") as f:
-        rules = tomllib.load(f).get("host", [])
-    return {r["host"]: (r["from"], r["to"]) for r in rules if r.get("how") == "swap"}
+    spec = importlib.util.spec_from_file_location("english_variants", ENGLISH_TABLE)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return {r["host"]: (r["from"], r["to"]) for r in mod.HOSTS if r.get("how") == "swap"}
 
 
 def non_english(url, swaps):
