@@ -153,6 +153,8 @@ drive = "2wd"        # 2wd | 4wd | 6wd | 8wd | fwd | tracks
 power = "electric"   # electric | nitro | petrol
 ```
 
+`power` is left out on a kit sold both ways: when its releases include both electric and nitro or gas ones (HPI WR8, Savage X, Baja 5B), each release shows its own power and the kit shows none.
+
 Optional on a kit: `rebrand_of`, the kits this one is the same car as under
 another name, and `same_platform_as`, kits that share a chassis platform without
 being the same car. Each entry names the kit, `parts` (interchangeable |
