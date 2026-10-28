@@ -5,3 +5,10 @@ name = "ENGINE MOUNT"
 pack_qty = 2
 category = "chassis"
 documents = ["doc/hb-racing/d817t-instruction-manual", "doc/hb-racing/67800-kit-page"]
+links = [
+  { site = "Hot Bodies (archived)", url = "https://web.archive.org/web/20100116153747/http://hotbodiesonline.com/products/en/67367.html", kind = "archive" },
+]
+fits = [
+  { kit = "kit/hb-racing/d8", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/d8t", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+]

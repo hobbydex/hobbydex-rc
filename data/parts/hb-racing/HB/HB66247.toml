@@ -6,3 +6,11 @@ pack_qty = 4
 category = "ball-end"
 ball_mm = 6.8
 documents = ["doc/hb-racing/d817-v2-instruction-manual", "doc/hb-racing/d817t-instruction-manual", "doc/hb-racing/d819-instruction-manual"]
+links = [
+  { site = "Hot Bodies (archived)", url = "https://web.archive.org/web/20130726145246/http://www.hotbodiesonline.com:80/products/en/66247.html", kind = "archive" },
+]
+fits = [
+  { kit = "kit/hb-racing/lightning-2", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/lightning-stadium-2", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/d8", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+]

@@ -23,9 +23,6 @@ NO_SIZE_SPEC = {"turnbuckle", "rod-end"}   # hardware with no spec kind of their
 MAT_CATS = {"pinion", "spur-gear", "screw", "nut", "washer-shim", "pin", "bearing"}          # metal hardware: material from the name or the maker's page
 SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
 SIZE = re.compile(r"\bM\d+(?:\.\d+)?\b|\b\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?(?:\s*x\s*\d+(?:\.\d+)?)?\s*(?:mm)?\b|\b\d+(?:\.\d+)?\s*mm\b", re.I)
-CALLOUT_PAREN = re.compile(r"\((?!\s*M\d)\s*[A-Z][A-Z0-9-]*\s+x\s*\d+\s*\)")   # (CODE xN): a space before the x, so not a size (BM3x15); "(M3 x 6)" is a thread size
-CALLOUT_JOINED = re.compile(r"\b(?!(?:RS|BS|EP)x\d)[A-Z]{2,3}x\d{1,2}\b")   # CODExN: letters then x and a count (Traxxas-style callouts); Ko Propo's RSx/BSx servos and the Hobbytech EPx2 are model names
-PCS = re.compile(r"\b\d+\s*pcs?\b", re.I)
 PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
 CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
 BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re.I)
@@ -158,6 +155,19 @@ def load_tools(tools):
         finally:
             sys.path.remove(tdir)
         out["packqty"] = mod
+    for mname in ("name_shop", "name_count"):   # the shop-text cleaner and the pack-count reader the importers use
+        mp = os.path.join(tdir, mname + ".py")
+        if os.path.exists(mp):
+            spec = importlib.util.spec_from_file_location(mname, mp)
+            mod = importlib.util.module_from_spec(spec)
+            sys.path.insert(0, tdir)
+            try:
+                spec.loader.exec_module(mod)
+                out[mname] = mod
+            except Exception as e:  # the checks are skipped without them
+                print(f"note: {mname} not loaded ({e})", file=sys.stderr)
+            finally:
+                sys.path.remove(tdir)
     lmp = os.path.join(tdir, "link_material.py")
     if os.path.exists(lmp):   # the material a name states, for one item (link_material.single): the audit's reading
         spec = importlib.util.spec_from_file_location("link_material", lmp)
@@ -947,15 +957,27 @@ def main():
     check("hw-size-no-spec", "link the part to the spec of its size (equivalent_to, match functional), or add that spec",
           unspec, per_brand=per_brand(unspec))
 
-    callouts = [p for p in parts if CALLOUT_PAREN.search(p.get("name", "")) or CALLOUT_JOINED.search(p.get("name", "")) or PCS.search(p.get("name", ""))]
+    # the schema rule (tools/name_count.py): one clear pack count, or a bag callout such as (MOUNTED x4), in the name.
+    # Several counts, "Npcs each" and multi-item names are not a pack count and are not flagged
+    nc = tools.get("name_count")
+    def callout_or_count(p):
+        if nc is None:
+            return False
+        _, q, co = nc.split(p.get("name", "") or "")
+        return q is not None or bool(co)
+    callouts = [p for p in parts if callout_or_count(p)]
     kinds = collections.Counter()
     for p in callouts:
-        n = p.get("name", "")
-        kinds["(CODE xN)"] += bool(CALLOUT_PAREN.search(n))
-        kinds["CODExN"] += bool(CALLOUT_JOINED.search(n))
-        kinds["Npcs"] += bool(PCS.search(n))
+        _, q, co = nc.split(p.get("name", "") or "")
+        kinds["one pack count"] += q is not None
+        kinds["bag callout"] += bool(co)
     check("name-callout-or-count", "strip the manual callout or count from the name (a count belongs in pack_qty, a callout in the release's notes)",
           callouts, per_brand=per_brand(callouts), breakdown=("pattern", [f"{k} {v}" for k, v in kinds.items()]))
+
+    ns = tools.get("name_shop")
+    shop = [p for p in parts if ns is not None and ns.has_shop_text(p.get("name", "") or "")]
+    check("name-shop-text", "strip the shop's price, stock or button text from the name (tools/name_shop.py clean; the maker's name is what is left)",
+          shop, per_brand=per_brand(shop))
 
     if tools["tamico"] and tools["classify"]:
         cls = tools["classify"]
