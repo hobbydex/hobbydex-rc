@@ -11,6 +11,10 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Team Associated RC8B4e | Essentials (also RC8T4e | Essentials)"
+fits = [
+  { kit = "kit/team-associated/rc8b4", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated RC8B4e (link_car_kits.py)", releases = ["release/team-associated/80946"] },
+  { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the RC8T4e (link_car_kits.py)", releases = ["release/team-associated/80948"] },
+]
 notes = "Essentials kit: Avid leaves out the bearings that seldom need replacing: (4) 5x8 Revolutions - Ackermann Plate; (4) 6x10 Revolutions - Steering Rack. Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Revolution | Aura, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3668/RC8B4e-Essentials" },

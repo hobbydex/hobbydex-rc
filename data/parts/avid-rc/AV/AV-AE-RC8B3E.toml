@@ -13,6 +13,10 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Team Associated RC8B3e (also RC8T3e)"
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated RC8B3e (link_car_kits.py)" },
+  { kit = "kit/team-associated/rc8t3", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the RC8T3e (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal, Ceramic Revolution | Aura, Ceramic Metal | Aura, Ceramic Open | Aura (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1433/RC8B3e" },
