@@ -7,3 +7,7 @@ pack_qty = 10
 notes = "A set; the drawings label its pieces 3x20mm xSpes; B/H Screw 3x8mm; Screw 3x8mm; Servo Horn And Mounting Holder Assembly; Steering Linkage Assembly"
 documents = ["doc/hobao/cml-h2-buggy-complete-kit-parts-reference", "doc/hobao/cml-hyper-12-mini-st-parts-list", "doc/hobao/cml-hyper-7-tq2-buggy-complete-kit-parts-reference"]
 links = [ { site = "HoBao", url = "https://hobaorc.myshopify.com/products/33308-m3x8mm-hex-socket-button-head-screws-10pcs" } ]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+category = "screw"
