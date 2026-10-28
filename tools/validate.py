@@ -640,7 +640,9 @@ def main():
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}
-    manual_links = {d.get("id"): {d[k] for k in ("url", "page") if d.get(k)} for _, kind, d in docs if kind == "doc" and d.get("kind") == "manual"}   # a manual's own file or maker page
+    manual_links = {d.get("id"): {d[k] for k in ("url", "page") if d.get(k)} for _, kind, d in docs if kind == "doc" and d.get("kind") == "manual"}
+    # a dated catalogue or manual document whose printed year bounds a part's seen_by (docs/schema.md, seen_by_source)
+    printed_docs = {d.get("id"): str(d["printed"]) for _, kind, d in docs if kind == "doc" and d.get("kind") in ("catalog", "manual") and d.get("printed")}   # a manual's own file or maker page
     doc_pages = {d.get("id"): d["page"] for _, kind, d in docs if kind == "doc" and d.get("kind") != "catalog" and d.get("page")}   # a non-catalogue document's maker page
     product_urls = {d.get("id"): d["url"] for _, kind, d in docs if kind == "doc" and d.get("kind") == "product_page" and d.get("url")}   # a product page document's url
     placeholder_kits = {d.get("id") for _, kind, d in docs if kind == "kit" and d.get("placeholder") is True}
@@ -843,7 +845,8 @@ def main():
                 own_urls |= {product_urls[x] for x in d.get("documents", []) if x in product_urls}
                 own_page = isinstance(ss, str) and ss in own_urls   # the maker's page we fetched first (the day it was on its site)
                 video = isinstance(ss, str) and re.fullmatch(r"https://www\.youtube\.com/watch\?v=[\w-]+", ss)   # a back-catalogue video (the bound is its upload day)
-                if not (archive or shop or manual or own_page or video):
+                printed = isinstance(ss, str) and ss in printed_docs and isinstance(sb, str) and sb[:4] == printed_docs[ss]
+                if not (archive or shop or manual or own_page or video or printed):
                     errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), or the maker's YouTube video of its first 60 days")
                 elif archive and not manual and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
