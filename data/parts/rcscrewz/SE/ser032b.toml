@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Serpent S411 ERYX 4.0 (#400017, 400018)"
+fits = [
+  { kit = "kit/serpent/eryx-411", releases = ["release/serpent/400017", "release/serpent/400018"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Serpent S411 ERYX 4.0 (#400017, 400018) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/ser032b-serpent-411-enyx-onroad-precision-bearing-kit/" },
