@@ -1,0 +1,14 @@
+id = "part/kyosho/FAT304-28"
+brand = "brand/kyosho"
+number = "FAT304-28"
+name = "Pinion Gear 28T-48 Pitch"
+fits = [
+  { kit = "kit/kyosho/dirt-hog", type = "direct", source = "doc/kyosho/30993-dirthog-soop" },
+]
+category = "pinion"
+documents = ["doc/kyosho/30993-dirthog-soop"]
+teeth = 28
+pitch_dp = 48
+equivalent_to = [
+  { spec = "spec/pinion/48dp-28t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
