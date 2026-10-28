@@ -1,11 +1,10 @@
 id = "part/amewi/021-17223094"
 brand = "brand/amewi"
 number = "021-17223094"
-name = "Button Head Screw M2,5x8mm, 8 Stück"
+name = "Button Head Screw M2,5x8mm"
 name_de = "Rundkopfschrauben M2,5x8mm"
 gtin = "4260768512627"
 pack_qty = 8
-former_names = ["Button Head Screw M2,5x8mm"]
 fits = [
   { kit = "kit/amewi/rcx10-3", type = "direct", source = "doc/amewi/22559-product-page" },
 ]
@@ -16,3 +15,4 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m2.5x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+pack_qty_basis = "name"
