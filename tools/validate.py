@@ -62,6 +62,7 @@ YOUTUBE_CHANNEL = re.compile(r"https://www\.youtube\.com/@[A-Za-z0-9._-]+")
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
     "release.kind": {"kit", "rtr", "arr", "roller"},
+    "release.color_source": {"owner"},   # who states a colour the name does not give (docs/schema.md "release", color)
     # kit types (docs/schema.md "kit"); the site gives each a label and an icon (hobbydex src/lib/kitTypes.ts)
     "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "tractor-truck", "race-truck",
                      "crawler", "touring", "formula", "pan-car", "rally", "street-basher", "drift", "drag", "lowrider", "trailer",
@@ -684,6 +685,9 @@ def main():
                 brand_slug = str(d.get("brand", "")).split("/")[-1]
                 if not (isinstance(v, str) and re.fullmatch(r"[a-z0-9.-]+/[a-z0-9.-]+-colours", v) and v.split("/")[0] == brand_slug):
                     errors.append(f"{path}: range {v!r} should be <brand slug>/<slug>-colours of the release's own brand")
+            elif kind == "release" and k == "color_source":
+                if "color" not in d:
+                    errors.append(f"{path}: color_source without color; it says who states the colour")
             elif kind == "release" and k == "livery":
                 if not (isinstance(v, str) and v.strip() == v and v):
                     errors.append(f"{path}: livery {v!r} should be a non-empty string without edge spaces")
