@@ -13,6 +13,9 @@ includes = [
 category = "bearing"
 category_source = "curated"
 applies_to = "Xray XB2C '19 (also XT2C '19)"
+fits = [
+  { kit = "kit/xray/xt2", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XT2C '19 (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled), Motor Bearing, Ceramic Motor Bearing (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/2874/XB2C-19" },

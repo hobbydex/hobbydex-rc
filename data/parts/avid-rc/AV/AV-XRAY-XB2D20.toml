@@ -14,6 +14,9 @@ includes = [
 category = "bearing"
 category_source = "curated"
 applies_to = "Xray XB2D '20 (also XB2D '21, XB2D '22, XB2D '23)"
+fits = [
+  { kit = "kit/xray/xb2", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the XB2D '21 (link_car_kits.py)", car = "XB2D '21" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal (oiled), Motor Bearing, Ceramic Motor Bearing, Ceramic Open | Aura (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3188/XB2D-20" },
