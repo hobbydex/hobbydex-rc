@@ -7,7 +7,7 @@ category = "chassis"
 material = "aluminium"
 material_grade = "6061-T6"
 fits = [
-  { kit = "kit/traxxas/hoss", type = "direct", source = "doc/traxxas/90076-4-exploded-transmission-assembly" },
+  { kit = "kit/traxxas/hoss", type = "replaces", source = "doc/traxxas/90076-4-exploded-transmission-assembly" },
   { kit = "kit/traxxas/bigfoot-4x4", type = "replaces", replaces = "part/traxxas/6890", source = "doc/traxxas/67134-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/ford-raptor-r", type = "replaces", replaces = "part/traxxas/6890", source = "doc/traxxas/101076-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/hoss", type = "replaces", replaces = "part/traxxas/6890", source = "doc/traxxas/90076-4-exploded-transmission-assembly", notes = "Same part in another material (link_upgrades.py)" },

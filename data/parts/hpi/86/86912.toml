@@ -7,7 +7,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/firestorm", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 color = "red"
 category = "shock-spring"

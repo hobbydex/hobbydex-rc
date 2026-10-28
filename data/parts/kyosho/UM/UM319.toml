@@ -3,8 +3,8 @@ brand = "brand/kyosho"
 number = "UM319"
 name = "Steel Pinion Gear (19T) 1/48 Pitch"
 fits = [
-  { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/30073-ep-ultimarb-r-evo-p" },
-  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-sp" },
+  { kit = "kit/kyosho/ultima-rb", type = "replaces", source = "doc/kyosho/30073-ep-ultimarb-r-evo-p" },
+  { kit = "kit/kyosho/ultima-rt5", type = "replaces", source = "doc/kyosho/30065-ultima-rt5-sp" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-19t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

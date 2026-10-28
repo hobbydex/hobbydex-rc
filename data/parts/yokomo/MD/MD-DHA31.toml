@@ -5,8 +5,8 @@ name = "Diff Height Adjust 3 Gear +1mm L/R for MD1.0"
 name_ja = "MD1.0用デフハイトアジャスト3ギヤ+1mm左右"
 category = "differential"
 fits = [
-  { kit = "kit/yokomo/md", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0" },
-  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
+  { kit = "kit/yokomo/md", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MD1.0" },
+  { kit = "kit/yokomo/sd", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD2.0, SD3.0" },
 ]
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/md-dha31" },

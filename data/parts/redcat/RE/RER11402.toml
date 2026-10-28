@@ -8,8 +8,8 @@ links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer11402" },
 ]
 fits = [
-  { kit = "kit/redcat/gen8", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/marksman", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/gen8", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/marksman", type = "replaces", source = "doc/redcat/store" },
   { kit = "kit/redcat/marksman", type = "replaces", replaces = "part/redcat/RER12660", source = "doc/redcat/store", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "gear"

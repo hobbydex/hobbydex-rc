@@ -6,7 +6,7 @@ name_ja = "B-MAX4用 フロント ステアリング ハブキャリア"
 category = "steering"
 fits = [
   { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX4 3G, B-MAX4 3GF" },
-  { kit = "kit/yokomo/mo", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
+  { kit = "kit/yokomo/mo", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MO1.0" },
   { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4, YZ-4SF" },
 ]
 links = [

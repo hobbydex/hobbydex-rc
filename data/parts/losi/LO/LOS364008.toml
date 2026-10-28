@@ -9,8 +9,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-triple-clamp-set-green-pm-mx-sm/LOS364008.html" },
 ]
 fits = [
-  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/promoto-mx", type = "replaces", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/promoto-sm", type = "replaces", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/losi/promoto-mx", type = "replaces", replaces = "part/losi/LOS264004", source = "doc/losi/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/losi/promoto-sm", type = "replaces", replaces = "part/losi/LOS264004", source = "doc/losi/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]

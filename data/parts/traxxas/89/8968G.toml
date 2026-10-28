@@ -10,10 +10,10 @@ material = "aluminium"
 color = "green"
 range = "traxxas/8968-colours"
 fits = [
-  { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },
-  { kit = "kit/traxxas/funco", type = "direct", source = "doc/traxxas/109076-4-parts-list" },
+  { kit = "kit/traxxas/maxx-slash", type = "replaces", source = "doc/traxxas/102076-4-parts-list" },
+  { kit = "kit/traxxas/funco", type = "replaces", source = "doc/traxxas/109076-4-parts-list" },
   { kit = "kit/traxxas/maxx", type = "direct", source = "doc/traxxas/89086-4-parts-list" },
-  { kit = "kit/traxxas/sledge", type = "direct", source = "doc/traxxas/95096-4-parts-list" },
+  { kit = "kit/traxxas/sledge", type = "replaces", source = "doc/traxxas/95096-4-parts-list" },
 ]
 shock_part = "spring-cup"
 links = [

@@ -7,13 +7,13 @@ gtin = "4548565266265"
 category = "pinion"
 documents = ["doc/kyosho/um328-product-page"]
 fits = [
-  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
-  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
-  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
-  { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
-  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30859-ultima-sc6-spop" },
-  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { kit = "kit/kyosho/ultima-rb6", type = "replaces", source = "doc/kyosho/34301-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "replaces", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "replaces", source = "doc/kyosho/34303-ultima-rb7-spop" },
+  { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/javelin-parts-list-en-v01" },
+  { kit = "kit/kyosho/lazer-zx6-6", type = "replaces", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
+  { kit = "kit/kyosho/ultima-sc6", type = "replaces", source = "doc/kyosho/30859-ultima-sc6-spop" },
+  { kit = "kit/kyosho/2rsa", type = "replaces", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
   { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
 ]
 equivalent_to = [

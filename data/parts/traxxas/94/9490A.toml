@@ -11,9 +11,9 @@ material_grade = "6061-T6"
 color = "orange"
 range = "traxxas/9490-colours"
 fits = [
-  { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/traxxas/104354-74-parts-list" },
-  { kit = "kit/traxxas/drag-slash", type = "direct", source = "doc/traxxas/94076-4-parts-list" },
-  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37076-74-exploded-transmission-assembly" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/traxxas/104354-74-parts-list" },
+  { kit = "kit/traxxas/drag-slash", type = "replaces", source = "doc/traxxas/94076-4-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/traxxas/37076-74-exploded-transmission-assembly" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/9490a-4-mm-orange-aluminum-motor-plate" },

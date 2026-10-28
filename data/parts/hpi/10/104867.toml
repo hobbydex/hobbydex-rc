@@ -6,9 +6,9 @@ links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/104867" },
 ]
 fits = [
-  { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/blitz", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/firestorm", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 color = "orange"
 category = "suspension"

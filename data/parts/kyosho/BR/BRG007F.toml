@@ -3,20 +3,20 @@ brand = "brand/kyosho"
 number = "BRG007F"
 name = "Flanged Bearing (3x6x2.5)"
 fits = [
-  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
   { kit = "kit/kyosho/tf-7", type = "direct", source = "doc/kyosho/30026-tf7-parts-list-v02" },
   { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
   { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-op" },
   { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/30635-fantom-ep-4wd-spop" },
   { kit = "kit/kyosho/plazma-mk3", type = "direct", source = "doc/kyosho/30639-mm01-rev1-spop" },
   { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop" },
-  { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
-  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822-tf5-readyset-mm-p" },
-  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
+  { kit = "kit/kyosho/pureten-fazer-gp", type = "replaces", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
+  { kit = "kit/kyosho/tf-5", type = "replaces", source = "doc/kyosho/30822-tf5-readyset-mm-p" },
+  { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
   { kit = "kit/kyosho/gp-mini-inferno-09", type = "direct", source = "doc/kyosho/31311-gpinf09-p" },
   { kit = "kit/kyosho/half-8-st-09", type = "direct", source = "doc/kyosho/31312-half-8-st-09-mini-inferno-inst-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
-  { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/fw-05r", type = "replaces", source = "doc/kyosho/31581-fw05r-p" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/flanged-3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },

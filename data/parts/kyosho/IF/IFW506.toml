@@ -6,8 +6,8 @@ gtin = "4548565409839"
 category = "chassis"
 material = "carbon"
 fits = [
-  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
-  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "replaces", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "replaces", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
   { kit = "kit/kyosho/inferno-mp10e", type = "replaces", replaces = "part/kyosho/IF556", source = "doc/kyosho/34113t1-inf-mp10e-spop", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/kyosho/inferno-mp10te", type = "replaces", replaces = "part/kyosho/IF556", source = "doc/kyosho/34115-t01-inf-mp10te-spop", notes = "Same part in another material (link_upgrades.py)" },
 ]

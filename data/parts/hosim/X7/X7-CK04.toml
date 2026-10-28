@@ -9,7 +9,7 @@ notes = "The store title names the item code HS-11-R"
 fits = [
   { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
   { kit = "kit/hosim/x07w", type = "direct", source = "doc/hosim/store" },
-  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "replaces", source = "doc/hosim/store" },
 ]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-body-shell-1-10-hs-11-r-for-x07-x08-x07w" },

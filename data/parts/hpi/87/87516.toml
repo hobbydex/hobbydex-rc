@@ -7,7 +7,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/savage-flux", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-flux", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 category = "shock"
 shock_part = "piston"

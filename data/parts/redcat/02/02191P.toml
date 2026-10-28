@@ -15,16 +15,16 @@ equivalent_to = [
   { spec = "spec/nut/m3-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
 fits = [
-  { kit = "kit/redcat/dukono", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/earthquake", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/ground-pounder", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/thunder-drift", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/tornado", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/caldera-10e", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/lightning-str", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/monsoon", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/rampage-dunerunner", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/tornado-s30", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/volcano-s30", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/dukono", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/earthquake", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/ground-pounder", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/thunder-drift", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/tornado", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/caldera-10e", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/lightning-str", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/monsoon", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/rampage-dunerunner", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/tornado-s30", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/volcano-s30", type = "replaces", source = "doc/redcat/store" },
 ]
 material = "aluminium"

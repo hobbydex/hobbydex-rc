@@ -7,12 +7,12 @@ pack_qty_basis = "page"
 fits = [
   { kit = "kit/serpent/viper-990e", type = "direct", source = "doc/serpent/viper-990e-r-spares" },
   { kit = "kit/serpent/viper-990", type = "direct", source = "doc/serpent/viper-990r-spares" },
-  { kit = "kit/serpent/f190", type = "direct", source = "doc/serpent/f190-options" },
-  { kit = "kit/serpent/taipan-988e", type = "direct", source = "doc/serpent/taipan-988e-options" },
-  { kit = "kit/serpent/viper-989e", type = "direct", source = "doc/serpent/viper-989e-options" },
+  { kit = "kit/serpent/f190", type = "replaces", source = "doc/serpent/f190-options" },
+  { kit = "kit/serpent/taipan-988e", type = "replaces", source = "doc/serpent/taipan-988e-options" },
+  { kit = "kit/serpent/viper-989e", type = "replaces", source = "doc/serpent/viper-989e-options" },
   { kit = "kit/serpent/viper-989", type = "direct", source = "doc/serpent/viper-989-40th-spares" },
-  { kit = "kit/serpent/viper-988e", type = "direct", source = "doc/serpent/viper-988e-options" },
-  { kit = "kit/serpent/viper-988", type = "direct", source = "doc/serpent/viper-988-options" },
+  { kit = "kit/serpent/viper-988e", type = "replaces", source = "doc/serpent/viper-988e-options" },
+  { kit = "kit/serpent/viper-988", type = "replaces", source = "doc/serpent/viper-988-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser903378" },

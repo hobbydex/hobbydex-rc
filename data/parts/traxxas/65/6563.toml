@@ -5,8 +5,8 @@ name = "Mount, telemetry expander (attaches to chassis brace (T-Bar))"
 gtin = "020334656308"
 category = "chassis"
 fits = [
-  { kit = "kit/traxxas/jato", type = "direct", source = "doc/traxxas/90386-4-parts-list" },
-  { kit = "kit/traxxas/sledge", type = "direct", source = "doc/traxxas/95096-4-parts-list" },
+  { kit = "kit/traxxas/jato", type = "replaces", source = "doc/traxxas/90386-4-parts-list" },
+  { kit = "kit/traxxas/sledge", type = "replaces", source = "doc/traxxas/95096-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/6563-sledge-jato-4x4-telemetry-expander-mount" },

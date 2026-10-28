@@ -5,13 +5,13 @@ name = "GA-B-60C-4000-2S1P-HardCase-8"
 gtin = "4548565431823"
 category = "electronics"
 fits = [
-  { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
-  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34413t1-mad-van-mooneyes-spop" },
-  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
-  { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/30637-mm02-spop" },
-  { kit = "kit/kyosho/plazma-mk3", type = "direct", source = "doc/kyosho/30639-mm01-rev1-spop" },
-  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30643-mid-87wc-spop" },
-  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34362-04-rsa-out-ram-pro-spop" },
+  { kit = "kit/kyosho/tomahawk", type = "replaces", source = "doc/kyosho/30646-mm01-spop" },
+  { kit = "kit/kyosho/fazer-mk2", type = "replaces", source = "doc/kyosho/34413t1-mad-van-mooneyes-spop" },
+  { kit = "kit/kyosho/ultima", type = "replaces", source = "doc/kyosho/30625-mm03-spop" },
+  { kit = "kit/kyosho/fantom-ep-4wd", type = "replaces", source = "doc/kyosho/30637-mm02-spop" },
+  { kit = "kit/kyosho/plazma-mk3", type = "replaces", source = "doc/kyosho/30639-mm01-rev1-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30643-mid-87wc-spop" },
+  { kit = "kit/kyosho/2rsa", type = "replaces", source = "doc/kyosho/34362-04-rsa-out-ram-pro-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/gab4202.html" },

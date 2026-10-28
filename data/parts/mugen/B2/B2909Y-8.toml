@@ -6,8 +6,8 @@ pack_qty = 8
 pack_qty_basis = "page"
 notes = "Mugen prints the number as B2909Y/8"
 fits = [
-  { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-part-list" },
-  { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-option-parts-page" },
+  { kit = "kit/mugen/msb1", type = "replaces", source = "doc/mugen/msb1-part-list" },
+  { kit = "kit/mugen/msb1", type = "replaces", source = "doc/mugen/msb1-option-parts-page" },
 ]
 category = "wheel"
 wheel_size = "2.2\""

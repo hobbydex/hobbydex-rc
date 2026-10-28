@@ -11,14 +11,14 @@ bore_mm = 3
 material = "steel"
 category_source = "curated"
 fits = [
-  { kit = "kit/traxxas/ford-raptor-r", type = "direct", source = "doc/traxxas/101076-4-parts-list" },
-  { kit = "kit/traxxas/mini-rally", type = "direct", source = "doc/traxxas/108046-1-parts-list" },
-  { kit = "kit/traxxas/mini-slash", type = "direct", source = "doc/traxxas/108164-1-parts-list" },
-  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/110056-4-parts-list" },
-  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67010-4-parts-list" },
-  { kit = "kit/traxxas/rustler-4x4", type = "direct", source = "doc/traxxas/67097-4-parts-list" },
-  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/traxxas/68277-4-parts-list" },
-  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88086-4-parts-list" },
+  { kit = "kit/traxxas/ford-raptor-r", type = "replaces", source = "doc/traxxas/101076-4-parts-list" },
+  { kit = "kit/traxxas/mini-rally", type = "replaces", source = "doc/traxxas/108046-1-parts-list" },
+  { kit = "kit/traxxas/mini-slash", type = "replaces", source = "doc/traxxas/108164-1-parts-list" },
+  { kit = "kit/traxxas/trx-4", type = "replaces", source = "doc/traxxas/110056-4-parts-list" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/traxxas/67010-4-parts-list" },
+  { kit = "kit/traxxas/rustler-4x4", type = "replaces", source = "doc/traxxas/67097-4-parts-list" },
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/traxxas/68277-4-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "replaces", source = "doc/traxxas/88086-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/3946x-16-tooth-hd-pinion-gear-32-pitch-3-mm-bore" },

@@ -4,10 +4,10 @@ number = "W6065-26"
 name = "Pinion Gear (26T-48P)"
 pack_qty = 48
 fits = [
-  { kit = "kit/kyosho/mad-bug", type = "direct", source = "doc/kyosho/30994-mad-bug-spop" },
-  { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/fazer-ve-spop" },
-  { kit = "kit/kyosho/fazer-kobra", type = "direct", source = "doc/kyosho/30930t1-ep-fazer-kobra-p" },
-  { kit = "kit/kyosho/rage-ve", type = "direct", source = "doc/kyosho/30992-rage-ve-spop" },
+  { kit = "kit/kyosho/mad-bug", type = "replaces", source = "doc/kyosho/30994-mad-bug-spop" },
+  { kit = "kit/kyosho/fazer", type = "replaces", source = "doc/kyosho/fazer-ve-spop" },
+  { kit = "kit/kyosho/fazer-kobra", type = "replaces", source = "doc/kyosho/30930t1-ep-fazer-kobra-p" },
+  { kit = "kit/kyosho/rage-ve", type = "replaces", source = "doc/kyosho/30992-rage-ve-spop" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-26t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

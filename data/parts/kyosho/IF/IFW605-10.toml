@@ -7,10 +7,10 @@ name_ja = "リヤシャシーウエイト"
 category = "chassis"
 documents = ["doc/kyosho/ifw605-rearchassisweit"]
 fits = [
-  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
-  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-op" },
-  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33022-02-mp10tki2-spop" },
-  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "replaces", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "replaces", source = "doc/kyosho/33017-02-inf-mp10t-op" },
+  { kit = "kit/kyosho/inferno-mp10", type = "replaces", source = "doc/kyosho/33022-02-mp10tki2-spop" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "replaces", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ifw605-10.html" },

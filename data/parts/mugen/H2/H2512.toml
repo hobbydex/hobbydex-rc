@@ -5,7 +5,7 @@ name = "DAMPER SET H.C"
 gtin = "4944925034411"
 fits = [
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
+  { kit = "kit/mugen/mtx6", type = "replaces", source = "doc/mugen/mtx-6r-part-list" },
 ]
 category = "shock"
 shock_part = "complete"

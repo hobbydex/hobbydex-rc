@@ -9,8 +9,8 @@ ball_mm = 4.9
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1854" }]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300026", "release/xray/300027", "release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
-  { kit = "kit/xray/x1", releases = ["release/xray/370710", "release/xray/370711", "release/xray/x1-2020", "release/xray/x1-2021", "release/xray/x1-2023", "release/xray/x1-2024"], type = "replaces", source = "doc/xray/x1-2027-part-list" },
-  { kit = "kit/xray/x12", releases = ["release/xray/x12-2026"], type = "replaces", source = "doc/xray/x12-2026-part-list" },
-  { kit = "kit/xray/x4", releases = ["release/xray/300035", "release/xray/300036", "release/xray/300037", "release/xray/300038", "release/xray/300039", "release/xray/300040", "release/xray/300041", "release/xray/x4-2026"], type = "replaces", source = "doc/xray/x4-2026-part-list" },
-  { kit = "kit/xray/x4f", releases = ["release/xray/x4f-2023", "release/xray/x4f-2024"], type = "replaces", source = "doc/xray/x4f-2024-part-list" },
+  { kit = "kit/xray/x1", releases = ["release/xray/370710", "release/xray/370711", "release/xray/x1-2020", "release/xray/x1-2021", "release/xray/x1-2023", "release/xray/x1-2024"], type = "direct", source = "doc/xray/x1-2027-part-list" },
+  { kit = "kit/xray/x12", releases = ["release/xray/x12-2026"], type = "direct", source = "doc/xray/x12-2026-part-list" },
+  { kit = "kit/xray/x4", releases = ["release/xray/300035", "release/xray/300036", "release/xray/300037", "release/xray/300038", "release/xray/300039", "release/xray/300040", "release/xray/300041", "release/xray/x4-2026"], type = "direct", source = "doc/xray/x4-2026-part-list" },
+  { kit = "kit/xray/x4f", releases = ["release/xray/x4f-2023", "release/xray/x4f-2024"], type = "direct", source = "doc/xray/x4f-2024-part-list" },
 ]

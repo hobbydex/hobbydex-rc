@@ -3,7 +3,7 @@ brand = "brand/mugen"
 number = "T0248"
 name = "TITANIUM MIDDLE SHAFT"
 fits = [
-  { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
+  { kit = "kit/mugen/mtx3", type = "replaces", source = "doc/mugen/mtx-3-part-list" },
   { kit = "kit/mugen/mtx3", type = "replaces", replaces = "part/mugen/T0205", source = "doc/mugen/mtx-3-part-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/mugen/mtx3", type = "replaces", replaces = "part/mugen/T0231", source = "doc/mugen/mtx-3-part-list", notes = "Same part in another material (link_upgrades.py)" },
 ]

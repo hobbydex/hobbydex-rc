@@ -7,7 +7,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-carbon-front-shock-tower-8e-4.0/TLR344011.html" },
 ]
 fits = [
-  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-e", type = "replaces", source = "doc/tlr/horizon-product-catalogue" },
   { kit = "kit/tlr/8ight-e", type = "replaces", replaces = "part/tlr/TLR244014", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"

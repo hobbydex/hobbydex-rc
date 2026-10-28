@@ -10,7 +10,7 @@ former_names = ["Spindle Carrier Set,5Deg, AL (L/R)"]
 gtin = "605482169902"
 fits = [
   { kit = "kit/losi/lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
-  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt-mega-truck", type = "replaces", source = "doc/losi/horizon-part-pages", notes = "Optional part" },
 ]
 material = "aluminium"
 category = "suspension"

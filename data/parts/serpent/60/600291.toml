@@ -4,12 +4,12 @@ number = "600291"
 name = "Servo lever steering 24T alu"
 fits = [
   { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-gen4-options" },
-  { kit = "kit/serpent/srx8-truggy", type = "direct", source = "doc/serpent/srx8-truggy-options" },
-  { kit = "kit/serpent/medius-x20fwd", type = "direct", source = "doc/serpent/medius-x20fwd-21-carbon-options" },
-  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-24-carbon-options" },
-  { kit = "kit/serpent/medius-x20-mini", type = "direct", source = "doc/serpent/medius-x20-mini-options" },
-  { kit = "kit/serpent/medius-x20-mid", type = "direct", source = "doc/serpent/medius-x20-mid-alu-options" },
-  { kit = "kit/serpent/project-4x", type = "direct", source = "doc/serpent/project-4x-pro-options" },
+  { kit = "kit/serpent/srx8-truggy", type = "replaces", source = "doc/serpent/srx8-truggy-options" },
+  { kit = "kit/serpent/medius-x20fwd", type = "replaces", source = "doc/serpent/medius-x20fwd-21-carbon-options" },
+  { kit = "kit/serpent/medius-x20", type = "replaces", source = "doc/serpent/medius-x20-24-carbon-options" },
+  { kit = "kit/serpent/medius-x20-mini", type = "replaces", source = "doc/serpent/medius-x20-mini-options" },
+  { kit = "kit/serpent/medius-x20-mid", type = "replaces", source = "doc/serpent/medius-x20-mid-alu-options" },
+  { kit = "kit/serpent/project-4x", type = "replaces", source = "doc/serpent/project-4x-pro-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser600291" },

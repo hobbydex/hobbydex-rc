@@ -7,13 +7,13 @@ pack_qty = 2
 pack_qty_basis = "page"
 category = "tire"
 fits = [
-  { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },
-  { kit = "kit/traxxas/funco", type = "direct", source = "doc/traxxas/109076-4-parts-list" },
-  { kit = "kit/traxxas/x-monster", type = "direct", source = "doc/traxxas/77036-4-parts-list" },
-  { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/traxxas/77096-4-parts-list" },
-  { kit = "kit/traxxas/xrt", type = "direct", source = "doc/traxxas/78086-4-parts-list" },
+  { kit = "kit/traxxas/maxx-slash", type = "replaces", source = "doc/traxxas/102076-4-parts-list" },
+  { kit = "kit/traxxas/funco", type = "replaces", source = "doc/traxxas/109076-4-parts-list" },
+  { kit = "kit/traxxas/x-monster", type = "replaces", source = "doc/traxxas/77036-4-parts-list" },
+  { kit = "kit/traxxas/x-maxx", type = "replaces", source = "doc/traxxas/77096-4-parts-list" },
+  { kit = "kit/traxxas/xrt", type = "replaces", source = "doc/traxxas/78086-4-parts-list" },
   { kit = "kit/traxxas/maxx", type = "direct", source = "doc/traxxas/89086-4-parts-list" },
-  { kit = "kit/traxxas/sledge", type = "direct", source = "doc/traxxas/95096-4-parts-list" },
+  { kit = "kit/traxxas/sledge", type = "replaces", source = "doc/traxxas/95096-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/7799-rubber-wheelie-bar-tires-2" },

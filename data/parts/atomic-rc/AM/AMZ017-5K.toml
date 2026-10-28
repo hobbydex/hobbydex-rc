@@ -3,8 +3,8 @@ brand = "brand/atomic-rc"
 number = "AMZ017-5K"
 name = "AMZ Brushless Motor (5000KV)"
 fits = [
-  { kit = "kit/atomic-rc/amz", type = "direct", source = "doc/atomic-rc/site" },
-  { kit = "kit/atomic-rc/bz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/amz", type = "replaces", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/bz", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 kv = 5000
 documents = ["doc/atomic-rc/site"]

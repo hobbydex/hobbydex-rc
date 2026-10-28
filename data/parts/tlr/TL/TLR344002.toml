@@ -7,7 +7,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-aluminum-front-spindle-set-8ight-t-e-4.0/TLR344002.html" },
 ]
 fits = [
-  { kit = "kit/tlr/8ight-e", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-e", type = "replaces", source = "doc/tlr/horizon-product-catalogue" },
   { kit = "kit/losi/8ight-e", type = "replaces", replaces = "part/tlr/TLR244003", source = "doc/losi/los04014-manual-en", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/tlr/8ight-e", type = "replaces", replaces = "part/tlr/TLR244003", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]

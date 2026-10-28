@@ -8,8 +8,8 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/hellfire", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/savage-flux", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/super-5sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-flux", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/super-5sc", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 pack_qty_basis = "name"
 color = "black"

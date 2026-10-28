@@ -13,9 +13,9 @@ scale = "1/10"
 color = "black"
 gtin = "816874017569"
 fits = [
-  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/capra", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/axial/horizon-part-pages" },
-  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },

@@ -8,10 +8,10 @@ category = "wheel"
 documents = ["doc/kyosho/mah402kg-product-page"]
 color = "green"
 fits = [
-  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
-  { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
-  { kit = "kit/kyosho/mad-crusher", type = "direct", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
-  { kit = "kit/kyosho/mad-crusher-ve", type = "direct", source = "doc/kyosho/34254-mad-crusher-ve-spop" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "replaces", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/usa-1-ve", type = "replaces", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/mad-crusher", type = "replaces", source = "doc/kyosho/33153-mad-crusher-spop-20191228" },
+  { kit = "kit/kyosho/mad-crusher-ve", type = "replaces", source = "doc/kyosho/34254-mad-crusher-ve-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mah402kg.html" },

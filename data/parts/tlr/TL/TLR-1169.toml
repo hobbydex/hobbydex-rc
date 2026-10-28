@@ -13,8 +13,8 @@ equivalent_to = [
 ]
 gtin = "660132650100"
 fits = [
-  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-t", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
 ]
 material = "aluminium"

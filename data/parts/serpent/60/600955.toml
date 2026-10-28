@@ -3,7 +3,7 @@ brand = "brand/serpent"
 number = "600955"
 name = "Driveshaft center rr 23mm alu block layout SRX8E"
 fits = [
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-pro-options" },
+  { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8-e-pro-options" },
   { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts" },
   { kit = "kit/serpent/srx8e", type = "replaces", replaces = "part/serpent/600945", source = "doc/serpent/srx8-e-pro-options", notes = "Same part in another material (link_upgrades.py)" },
 ]

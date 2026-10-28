@@ -9,8 +9,8 @@ category = "screw"
 material = "titanium"
 fits = [
   { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7tre-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6t-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6t-part-list" },
   { kit = "kit/mugen/mbx5t", type = "direct", source = "doc/mugen/mbx-5t-part-list" },
   { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
   { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
@@ -20,9 +20,9 @@ fits = [
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
   { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
   { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx-4-part-list" },
-  { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
+  { kit = "kit/mugen/mtx4", type = "replaces", source = "doc/mugen/mtx4-r-part-list" },
+  { kit = "kit/mugen/mtx4", type = "replaces", source = "doc/mugen/mtx-4-part-list" },
+  { kit = "kit/mugen/mtx3", type = "replaces", source = "doc/mugen/mtx-3-part-list" },
 ]
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M3X14-B-H-TITANIUM-SCREW-8/B0733T" },

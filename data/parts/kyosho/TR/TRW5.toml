@@ -3,12 +3,12 @@ brand = "brand/kyosho"
 number = "TRW5"
 name = "Tuned Silencer Set"
 fits = [
-  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
-  { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/31094-mm01-inftr15-p" },
-  { kit = "kit/kyosho/dst", type = "direct", source = "doc/kyosho/31097-dst-readyset-mm-p" },
-  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/31071-dmt-spop" },
-  { kit = "kit/kyosho/tr-15-stadium-force", type = "direct", source = "doc/kyosho/31095-tr15-stadiumforce-mt-p" },
-  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/31098-dbx2-opsp" },
+  { kit = "kit/kyosho/drx", type = "replaces", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "replaces", source = "doc/kyosho/31094-mm01-inftr15-p" },
+  { kit = "kit/kyosho/dst", type = "replaces", source = "doc/kyosho/31097-dst-readyset-mm-p" },
+  { kit = "kit/kyosho/dmt", type = "replaces", source = "doc/kyosho/31071-dmt-spop" },
+  { kit = "kit/kyosho/tr-15-stadium-force", type = "replaces", source = "doc/kyosho/31095-tr15-stadiumforce-mt-p" },
+  { kit = "kit/kyosho/dbx", type = "replaces", source = "doc/kyosho/31098-dbx2-opsp" },
 ]
 category = "engine-fuel"
 documents = ["doc/kyosho/31042k-drx-chassis-kit-p", "doc/kyosho/31071-dmt-spop", "doc/kyosho/31094-mm01-inftr15-p"]

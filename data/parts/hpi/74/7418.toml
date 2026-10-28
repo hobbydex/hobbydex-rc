@@ -6,12 +6,12 @@ links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/7418" },
 ]
 fits = [
-  { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/pro-4", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/r40", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/rs4-pro-3", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/sprint-2", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rs4-3", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/pro-4", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/r40", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-pro-3", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/sprint-2", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 category = "body"
 depicts = { make = "Porsche", model = "911 GT3" }

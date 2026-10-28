@@ -5,9 +5,9 @@ name = "Spring (R/#70/L=75)"
 gtin = "4548565138357"
 pack_qty = 2
 fits = [
-  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-sp" },
-  { kit = "kit/kyosho/ultima-sc", type = "direct", source = "doc/kyosho/30850-ultima-sc-r-p" },
-  { kit = "kit/kyosho/ultima-db", type = "direct", source = "doc/kyosho/30856-ultima-db-rs-p" },
+  { kit = "kit/kyosho/ultima-rt5", type = "replaces", source = "doc/kyosho/30065-ultima-rt5-sp" },
+  { kit = "kit/kyosho/ultima-sc", type = "replaces", source = "doc/kyosho/30850-ultima-sc-r-p" },
+  { kit = "kit/kyosho/ultima-db", type = "replaces", source = "doc/kyosho/30856-ultima-db-rs-p" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/w5198-70.html" },

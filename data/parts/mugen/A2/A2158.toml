@@ -4,9 +4,9 @@ number = "A2158"
 name = "bulkhead brace"
 gtin = "4944925040641"
 fits = [
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2r-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2-fwd-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2-part-list" },
 ]
 category = "chassis"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/BRACE-UPPER-DECK/A2158" } ]

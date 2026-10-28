@@ -10,9 +10,9 @@ links = [
 ]
 fits = [
   { kit = "kit/losi/mini-lmt", type = "direct", source = "doc/losi/horizon-product-catalogue" },
-  { kit = "kit/losi/mini-lmt", type = "replaces", replaces = "part/losi/LOS-2052", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/losi/mini-lmt", type = "replaces", replaces = "part/losi/LOS211052", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/losi/mini-lmt", type = "replaces", replaces = "part/losi/LOS211053", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/losi/mini-lmt", type = "direct", replaces = "part/losi/LOS-2052", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/losi/mini-lmt", type = "direct", replaces = "part/losi/LOS211052", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/losi/mini-lmt", type = "direct", replaces = "part/losi/LOS211053", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "aluminium"

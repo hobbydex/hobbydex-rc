@@ -4,9 +4,9 @@ number = "A2423"
 name = "20g UNDER RECEIVER (2 SETS OR PCS. MAY BE REQUIRED FOR ONE CAR)"
 gtin = "4944925040887"
 fits = [
-  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-option-parts-page" },
-  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc3", type = "replaces", source = "doc/mugen/mtc3-option-parts-page" },
+  { kit = "kit/mugen/mtc3", type = "replaces", source = "doc/mugen/mtc3-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2-part-list" },
 ]
 category = "radio"
 links = [

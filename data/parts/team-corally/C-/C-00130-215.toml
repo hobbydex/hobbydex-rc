@@ -8,8 +8,8 @@ notes = "Name from the Corally web shop, https://corally.com/en/product/C-00130-
 category = "ball-end"
 material = "aluminium"
 fits = [
-  { kit = "kit/team-corally/ssx8r", type = "replaces", replaces = "part/team-corally/C-00130-068", source = "doc/team-corally/c-00130-ssx8r-manual-v4", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/team-corally/ssx8x", type = "replaces", replaces = "part/team-corally/C-00130-068", source = "doc/team-corally/c-00132-ssx8x-manual-v4", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/team-corally/ssx8r", type = "direct", replaces = "part/team-corally/C-00130-068", source = "doc/team-corally/c-00130-ssx8r-manual-v4", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/team-corally/ssx8x", type = "direct", replaces = "part/team-corally/C-00130-068", source = "doc/team-corally/c-00132-ssx8x-manual-v4", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Team Corally", url = "https://corally.com/en/product/C-00130-215" },

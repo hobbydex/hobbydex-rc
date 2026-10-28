@@ -3,10 +3,10 @@ brand = "brand/serpent"
 number = "804512"
 name = "Spur gear 36T steel M1"
 fits = [
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8gte-r-options" },
-  { kit = "kit/serpent/natrix-750e", type = "direct", source = "doc/serpent/natrix-750-e-options" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8gte-r-options" },
+  { kit = "kit/serpent/natrix-750e", type = "replaces", source = "doc/serpent/natrix-750-e-options" },
   { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-parts" },
-  { kit = "kit/serpent/viper-989e", type = "direct", source = "doc/serpent/viper-989e-options" },
+  { kit = "kit/serpent/viper-989e", type = "replaces", source = "doc/serpent/viper-989e-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser804512" },

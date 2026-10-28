@@ -9,7 +9,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-wheel-hexes-2mm-wider-2-8x/TLR-1331.html" },
 ]
 fits = [
-  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/8ight-x", type = "replaces", source = "doc/tlr/horizon-product-catalogue" },
   { kit = "kit/losi/8ight-xe", type = "replaces", replaces = "part/tlr/TLR242004", source = "doc/losi/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/losi/8ight-xe", type = "replaces", replaces = "part/tlr/TLR342017", source = "doc/losi/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]

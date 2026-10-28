@@ -12,6 +12,6 @@ equivalent_to = [
   { spec = "spec/pin/4x37", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
 fits = [
-  { kit = "kit/arrma/felony", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/felony", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/arrma/infraction", type = "direct", source = "doc/arrma/horizon-part-pages" },
 ]

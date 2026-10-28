@@ -4,11 +4,11 @@ number = "39509"
 name = "Steel Final Differential Case"
 gtin = "4955439684214"
 fits = [
-  { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/31091-inferno-tr15-p" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "replaces", source = "doc/kyosho/31091-inferno-tr15-p" },
   { kit = "kit/kyosho/inferno-tr-15", type = "replaces", replaces = "part/kyosho/TR37", source = "doc/kyosho/31091-inferno-tr15-p", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/kyosho/gp-tr-15-rally", type = "direct", source = "doc/kyosho/31061-tr15-rally-p" },
-  { kit = "kit/kyosho/tr-15-monster-touring", type = "direct", source = "doc/kyosho/31213-xanavinismo-gtr-p" },
-  { kit = "kit/kyosho/superten", type = "direct", source = "doc/kyosho/31001-superten-p" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "replaces", source = "doc/kyosho/31061-tr15-rally-p" },
+  { kit = "kit/kyosho/tr-15-monster-touring", type = "replaces", source = "doc/kyosho/31213-xanavinismo-gtr-p" },
+  { kit = "kit/kyosho/superten", type = "replaces", source = "doc/kyosho/31001-superten-p" },
 ]
 category = "differential"
 material = "steel"

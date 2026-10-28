@@ -8,7 +8,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-pinion-gear-19t-1.5m-and-hardware-dbxl-2.0/LOS352010.html" },
 ]
 fits = [
-  { kit = "kit/losi/dbxl", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/dbxl", type = "replaces", source = "doc/losi/horizon-product-catalogue" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/mod1.5-19t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

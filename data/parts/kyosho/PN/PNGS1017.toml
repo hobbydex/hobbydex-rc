@@ -6,10 +6,10 @@ gtin = "4548565432660"
 category = "pinion"
 documents = ["doc/kyosho/pngs1017-product-page"]
 fits = [
-  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
-  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "direct", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
-  { kit = "kit/kyosho/kb10l", type = "direct", source = "doc/kyosho/34703-kb10l-tacoma-spop" },
-  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34117-inf-gt2-ve-rs-kt-331p-spop" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "replaces", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "replaces", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
+  { kit = "kit/kyosho/kb10l", type = "replaces", source = "doc/kyosho/34703-kb10l-tacoma-spop" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "replaces", source = "doc/kyosho/34117-inf-gt2-ve-rs-kt-331p-spop" },
   { kit = "kit/kyosho/inferno-gt2-ve", type = "replaces", replaces = "part/kyosho/97044-17", source = "doc/kyosho/34117-inf-gt2-ve-rs-kt-331p-spop", notes = "Same part in another material (link_upgrades.py)" },
 ]
 teeth = 17

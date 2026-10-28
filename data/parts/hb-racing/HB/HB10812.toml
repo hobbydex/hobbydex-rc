@@ -6,8 +6,8 @@ links = [
   { site = "Hot Bodies (archived)", url = "https://web.archive.org/web/20130622035631/http://www.hotbodiesonline.com:80/products/en/hb10812.html", kind = "archive" },
 ]
 fits = [
-  { kit = "kit/hb-racing/big-twin-truckzilla", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
-  { kit = "kit/hb-racing/sport-truckzilla", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/big-twin-truckzilla", type = "replaces", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/sport-truckzilla", type = "replaces", source = "doc/hb-racing/hotbodiesonline-part-pages" },
 ]
 category = "body"
 depicts = { make = "Dodge", model = "Durango Hemi" }

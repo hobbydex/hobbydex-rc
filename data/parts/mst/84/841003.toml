@@ -4,11 +4,11 @@ number = "841003"
 name = "LSD 2.0 S Gyro"
 applies_to = "FXX-D ( RTR ) / XXX-D ( RTR ) / MS-01D ( RTR ) / XXX-RA / XXX-R"
 fits = [
-  { kit = "kit/mst/fxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/xxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/ms-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/xxx-rally", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/xxx-r", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fxx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/xxx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/ms-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/xxx-rally", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/xxx-r", type = "replaces", source = "doc/mst/option-parts-list-2018" },
 ]
 category = "radio"
 radio_unit = "gyro"

@@ -5,7 +5,7 @@ name = "Forward only conversion kit (eliminates reverse)"
 gtin = "020334539496"
 fits = [
   { kit = "kit/traxxas/t-maxx", type = "direct", source = "doc/traxxas/49077-3-parts-list" },
-  { kit = "kit/traxxas/revo", type = "direct", source = "doc/traxxas/53097-3-parts-list" },
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/traxxas/53097-3-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/5394x-forward-only-conversion-kit" },

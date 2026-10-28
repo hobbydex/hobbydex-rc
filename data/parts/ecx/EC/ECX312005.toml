@@ -7,9 +7,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-rear-hub-carrier-aluminum-1.9-barrage-kit-rtr-doomsday/ECX312005.html" },
 ]
 fits = [
-  { kit = "kit/ecx/barrage", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/ecx/barrage-1-55", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/ecx/temper", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/barrage", type = "replaces", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/barrage-1-55", type = "replaces", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/ecx/temper", type = "replaces", source = "doc/ecx/horizon-part-pages", notes = "Optional part" },
 ]
 category = "suspension"
 material = "aluminium"

@@ -12,11 +12,11 @@ equivalent_to = [
   { spec = "spec/pinion/mod0.8-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 fits = [
-  { kit = "kit/arrma/granite", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/granite", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/arrma/kraton-4s", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/outcast-4s", type = "direct", source = "doc/arrma/horizon-part-pages" },
-  { kit = "kit/arrma/senton", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/arrma/typhon-3s", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/senton", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/typhon-3s", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
 ]
 former_ids = ["part/arrma/AR310425"]
 numbers = ["AR310425"]

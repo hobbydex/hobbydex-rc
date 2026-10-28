@@ -7,13 +7,13 @@ pack_qty = 5
 pack_qty_basis = "page"
 fits = [
   { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
-  { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-part-list" },
+  { kit = "kit/mugen/msb1", type = "replaces", source = "doc/mugen/msb1-part-list" },
   { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
   { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
   { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list" },
   { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx-4-part-list" },
-  { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-option-parts-page" },
+  { kit = "kit/mugen/msb1", type = "replaces", source = "doc/mugen/msb1-option-parts-page" },
 ]
 category = "nut"
 links = [

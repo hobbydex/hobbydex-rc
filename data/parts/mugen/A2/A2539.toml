@@ -6,8 +6,8 @@ gtin = "4944925041563"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2r-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2-fwd-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2-part-list" },
 ]
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/SHOCK-SPRING-6.5T-progressive/A2539" } ]

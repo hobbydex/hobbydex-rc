@@ -16,9 +16,9 @@ mounting = "pre-mounted"
 wheel_color = "black chrome"
 fits = [
   { kit = "kit/arrma/big-rock", type = "direct", source = "doc/arrma/horizon-part-pages" },
-  { kit = "kit/arrma/granite", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/arrma/granite-boost", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/arrma/vorteks-boost", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/granite", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/granite-boost", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/vorteks-boost", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
 ]
 former_ids = ["part/arrma/AR550053"]
 numbers = ["AR550053"]

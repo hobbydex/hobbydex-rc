@@ -8,10 +8,10 @@ gtin = "4548565131204"
 category = "pinion"
 documents = ["doc/kyosho/w6065-34-product-page"]
 fits = [
-  { kit = "kit/kyosho/mad-bug", type = "direct", source = "doc/kyosho/30994-mad-bug-spop" },
-  { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/ep-fazer-rally-p" },
-  { kit = "kit/kyosho/fazer-kobra", type = "direct", source = "doc/kyosho/30930t1-ep-fazer-kobra-p" },
-  { kit = "kit/kyosho/rage-ve", type = "direct", source = "doc/kyosho/30992-rage-ve-spop" },
+  { kit = "kit/kyosho/mad-bug", type = "replaces", source = "doc/kyosho/30994-mad-bug-spop" },
+  { kit = "kit/kyosho/fazer", type = "replaces", source = "doc/kyosho/ep-fazer-rally-p" },
+  { kit = "kit/kyosho/fazer-kobra", type = "replaces", source = "doc/kyosho/30930t1-ep-fazer-kobra-p" },
+  { kit = "kit/kyosho/rage-ve", type = "replaces", source = "doc/kyosho/30992-rage-ve-spop" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-34t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

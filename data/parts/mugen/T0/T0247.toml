@@ -9,7 +9,7 @@ fits = [
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
   { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list" },
   { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx-4-part-list" },
-  { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
+  { kit = "kit/mugen/mtx3", type = "replaces", source = "doc/mugen/mtx-3-part-list" },
 ]
 category = "drivetrain"
 documents = ["doc/mugen/mtx-3-part-list", "doc/mugen/mtx-4-part-list", "doc/mugen/mtx-5-part-list"]

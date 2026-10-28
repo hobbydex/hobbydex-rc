@@ -8,7 +8,7 @@ links = [
 fits = [
   { kit = "kit/hpi/nitro-mt2", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/nitro-mt2", type = "replaces", replaces = "part/hpi/85036", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/nitro-mt2", type = "direct", replaces = "part/hpi/85036", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/hpi/nitro-rs4-3", type = "replaces", replaces = "part/hpi/85036", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "gear"

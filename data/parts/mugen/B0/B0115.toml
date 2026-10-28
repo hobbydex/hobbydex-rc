@@ -6,11 +6,11 @@ gtin = "4944925201158"
 pack_qty = 500
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list" },
   { kit = "kit/mugen/mbx5t", type = "direct", source = "doc/mugen/mbx-5t-part-list" },
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7-part-list" },
-  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6r-part-list" },
-  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6-part-list" },
+  { kit = "kit/mugen/mbx6", type = "replaces", source = "doc/mugen/mbx-6r-part-list" },
+  { kit = "kit/mugen/mbx6", type = "replaces", source = "doc/mugen/mbx-6-part-list" },
   { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
   { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
   { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list" },

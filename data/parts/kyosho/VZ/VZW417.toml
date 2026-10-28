@@ -8,10 +8,10 @@ gtin = "4548565190799"
 category = "differential"
 documents = ["doc/kyosho/vzw417-product-page"]
 fits = [
-  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
-  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb6", type = "replaces", source = "doc/kyosho/34301-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "replaces", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/31266-t01-v-one-r4sp-spop" },
-  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30025-tf6sp-t01-spop" },
+  { kit = "kit/kyosho/tf-5", type = "replaces", source = "doc/kyosho/30025-tf6sp-t01-spop" },
 ]
 material = "steel"
 links = [

@@ -6,9 +6,9 @@ links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV28091" },
 ]
 fits = [
-  { kit = "kit/maverick/ion-dt", type = "direct", source = "doc/maverick/MV12806-kit-page" },
-  { kit = "kit/maverick/ion-xb", type = "direct", source = "doc/maverick/MV12807-kit-page" },
-  { kit = "kit/maverick/ion-xt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/ion-dt", type = "replaces", source = "doc/maverick/MV12806-kit-page" },
+  { kit = "kit/maverick/ion-xb", type = "replaces", source = "doc/maverick/MV12807-kit-page" },
+  { kit = "kit/maverick/ion-xt", type = "replaces", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/ion-dt", type = "replaces", replaces = "part/maverick/MV28008", source = "doc/maverick/MV12806-kit-page", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/maverick/ion-xb", type = "replaces", replaces = "part/maverick/MV28008", source = "doc/maverick/MV12807-kit-page", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/maverick/ion-xt", type = "replaces", replaces = "part/maverick/MV28008", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },

@@ -8,9 +8,9 @@ category = "body"
 documents = ["doc/kyosho/39216-alpine-gt4-bodyshell"]
 depicts = { make = "Alpine", model = "GT4" }
 fits = [
-  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/fazer-vol01-20191122" },
-  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33215-v-one-r4sii-kce-spop" },
-  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+  { kit = "kit/kyosho/fazer-mk2", type = "replaces", source = "doc/kyosho/fazer-vol01-20191122" },
+  { kit = "kit/kyosho/v-one-r4", type = "replaces", source = "doc/kyosho/33215-v-one-r4sii-kce-spop" },
+  { kit = "kit/kyosho/fw-06", type = "replaces", source = "doc/kyosho/33216-fw-06-chassis-spop" },
 ]
 scale = "1/10"
 links = [

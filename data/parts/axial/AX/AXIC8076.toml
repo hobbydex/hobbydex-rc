@@ -14,9 +14,9 @@ beadlock = true
 color = "black"
 gtin = "816874014261"
 fits = [
-  { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/axial/capra", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/bomber", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/capra", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/smt10", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
   { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]

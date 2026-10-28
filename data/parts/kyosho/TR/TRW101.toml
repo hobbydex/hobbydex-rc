@@ -4,9 +4,9 @@ number = "TRW101"
 name = "Shock Spring (10-14=L=63)"
 name_source = "ocr"
 fits = [
-  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
-  { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-spop" },
-  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/31098-dbx2-opsp" },
+  { kit = "kit/kyosho/drx", type = "replaces", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
+  { kit = "kit/kyosho/drt", type = "replaces", source = "doc/kyosho/31082-mm01-drt-spop" },
+  { kit = "kit/kyosho/dbx", type = "replaces", source = "doc/kyosho/31098-dbx2-opsp" },
 ]
 category = "shock-spring"
 documents = ["doc/kyosho/31042k-drx-chassis-kit-p"]

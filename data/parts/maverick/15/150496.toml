@@ -7,9 +7,9 @@ links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150496?show_disc=true" },
 ]
 fits = [
-  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
-  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
-  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
+  { kit = "kit/maverick/quantum2-mt", type = "replaces", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "replaces", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-mt", type = "replaces", source = "doc/maverick/150406-kit-page" },
 ]
 color = "gold"
 category = "chassis"

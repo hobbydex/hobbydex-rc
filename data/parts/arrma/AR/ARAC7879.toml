@@ -12,8 +12,8 @@ equivalent_to = [
   { spec = "spec/pinion/mod0.8-26t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 fits = [
-  { kit = "kit/arrma/big-rock", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/arrma/typhon-3s", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/big-rock", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/typhon-3s", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
 ]
 former_ids = ["part/arrma/AR310877"]
 numbers = ["AR310877"]

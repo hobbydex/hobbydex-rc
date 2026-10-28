@@ -5,7 +5,7 @@ name = "DJC driveshaft BB alu"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-23-carbon-options" },
+  { kit = "kit/serpent/medius-x20", type = "replaces", source = "doc/serpent/medius-x20-23-carbon-options" },
   { kit = "kit/serpent/medius-x20", type = "replaces", replaces = "part/serpent/401936", source = "doc/serpent/medius-x20-23-carbon-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [

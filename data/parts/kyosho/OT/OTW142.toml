@@ -5,7 +5,7 @@ name = "Carbon Chassis (OPTIMA Mid)"
 gtin = "4548565417421"
 fits = [
   { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-op" },
-  { kit = "kit/kyosho/optima-mid", type = "replaces", replaces = "part/kyosho/OT261", source = "doc/kyosho/30622-01-optima-mid-op", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", replaces = "part/kyosho/OT261", source = "doc/kyosho/30622-01-optima-mid-op", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "carbon"

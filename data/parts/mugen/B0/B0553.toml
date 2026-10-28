@@ -5,10 +5,10 @@ name = "25T SERVO HORN"
 gtin = "4944925038792"
 fits = [
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7" },
-  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-option-parts-page" },
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-option-parts-page" },
-  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mtc3", type = "replaces", source = "doc/mugen/mtc3-option-parts-page" },
+  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-option-parts-page" },
+  { kit = "kit/mugen/mtc3", type = "replaces", source = "doc/mugen/mtc3-part-list" },
+  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-part-list" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
 ]
 links = [

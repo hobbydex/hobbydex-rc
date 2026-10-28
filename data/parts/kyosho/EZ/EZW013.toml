@@ -7,9 +7,9 @@ gtin = "4548565214747"
 category = "steering"
 documents = ["doc/kyosho/ezw013-product-page"]
 fits = [
-  { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34403-monster-tracker-spop" },
-  { kit = "kit/kyosho/sandmaster", type = "direct", source = "doc/kyosho/30831t4-t01-sanmaster-spop" },
-  { kit = "kit/kyosho/axxe", type = "direct", source = "doc/kyosho/30837-t01-axxe-readyset-spop" },
+  { kit = "kit/kyosho/ez-series", type = "replaces", source = "doc/kyosho/34403-monster-tracker-spop" },
+  { kit = "kit/kyosho/sandmaster", type = "replaces", source = "doc/kyosho/30831t4-t01-sanmaster-spop" },
+  { kit = "kit/kyosho/axxe", type = "replaces", source = "doc/kyosho/30837-t01-axxe-readyset-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ezw013.html" },

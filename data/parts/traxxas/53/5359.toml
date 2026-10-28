@@ -5,10 +5,10 @@ name = "Rocker arm set, progressive-3 (90-T) (requires pushrods part #5319 or 53
 gtin = "020334535900"
 category = "suspension"
 fits = [
-  { kit = "kit/traxxas/revo", type = "direct", source = "doc/traxxas/53097-3-parts-list" },
-  { kit = "kit/traxxas/slayer-pro-4x4", type = "direct", source = "doc/traxxas/59076-3-parts-list" },
-  { kit = "kit/traxxas/e-revo", type = "direct", source = "doc/traxxas/56036-4-exploded-front-assembly" },
-  { kit = "kit/traxxas/summit", type = "direct", source = "doc/traxxas/56076-1-exploded-front-assembly" },
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/traxxas/53097-3-parts-list" },
+  { kit = "kit/traxxas/slayer-pro-4x4", type = "replaces", source = "doc/traxxas/59076-3-parts-list" },
+  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/traxxas/56036-4-exploded-front-assembly" },
+  { kit = "kit/traxxas/summit", type = "replaces", source = "doc/traxxas/56076-1-exploded-front-assembly" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/5359-progressive-3-90-t-rocker-arm-set" },

@@ -11,5 +11,5 @@ category = "parts-tree"
 gtin = "816874015268"
 fits = [
   { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
-  { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/smt10", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
 ]

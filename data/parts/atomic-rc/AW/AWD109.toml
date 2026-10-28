@@ -3,7 +3,7 @@ brand = "brand/atomic-rc"
 number = "AWD109"
 name = "AWD Thrust Ball Bearing"
 fits = [
-  { kit = "kit/atomic-rc/bz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/bz", type = "replaces", source = "doc/atomic-rc/site" },
   { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site"]

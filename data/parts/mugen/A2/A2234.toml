@@ -6,14 +6,14 @@ gtin = "4944925037801"
 pack_qty = 10
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-option-parts-page" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7r-option-parts-page" },
   { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7r-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7-part-list" },
   { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
   { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
   { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
-  { kit = "kit/mugen/mtc1", type = "direct", source = "doc/mugen/mtc1-part-list" },
+  { kit = "kit/mugen/mtc1", type = "replaces", source = "doc/mugen/mtc1-part-list" },
 ]
 category = "o-ring-seal"
 links = [

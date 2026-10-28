@@ -8,8 +8,8 @@ material = "aluminium"
 material_grade = "6061-T6"
 fits = [
   { kit = "kit/traxxas/ford-raptor-r", type = "direct", source = "doc/traxxas/101177-4-parts-list" },
-  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/traxxas/68386-4-parts-list" },
-  { kit = "kit/traxxas/ford-raptor-r", type = "replaces", replaces = "part/traxxas/6890", source = "doc/traxxas/101177-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/traxxas/68386-4-parts-list" },
+  { kit = "kit/traxxas/ford-raptor-r", type = "direct", replaces = "part/traxxas/6890", source = "doc/traxxas/101177-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/slash-4x4", type = "replaces", replaces = "part/traxxas/6890", source = "doc/traxxas/68386-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/stampede-4x4", type = "replaces", replaces = "part/traxxas/6890", source = "doc/traxxas/67454-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/slash-4x4", type = "replaces", replaces = "part/traxxas/7490", source = "doc/traxxas/68386-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },

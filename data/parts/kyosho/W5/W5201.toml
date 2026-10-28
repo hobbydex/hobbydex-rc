@@ -9,12 +9,12 @@ gtin = "4548565094981"
 category = "wheel"
 documents = ["doc/kyosho/w5201-product-page"]
 fits = [
-  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30045-t01-lazer-zx-5-fs2-spop" },
-  { kit = "kit/kyosho/lazer-zx6", type = "direct", source = "doc/kyosho/30046-lazer-zx6-spop" },
-  { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
-  { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
-  { kit = "kit/kyosho/sandmaster", type = "direct", source = "doc/kyosho/30831-t02-sandmaster-rs-spop" },
-  { kit = "kit/kyosho/axxe", type = "direct", source = "doc/kyosho/30837-t01-axxe-readyset-spop" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/kyosho/30045-t01-lazer-zx-5-fs2-spop" },
+  { kit = "kit/kyosho/lazer-zx6", type = "replaces", source = "doc/kyosho/30046-lazer-zx6-spop" },
+  { kit = "kit/kyosho/lazer-zx6-6", type = "replaces", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
+  { kit = "kit/kyosho/lazer-zx7", type = "replaces", source = "doc/kyosho/30048-lazer-zx7-spop" },
+  { kit = "kit/kyosho/sandmaster", type = "replaces", source = "doc/kyosho/30831-t02-sandmaster-rs-spop" },
+  { kit = "kit/kyosho/axxe", type = "replaces", source = "doc/kyosho/30837-t01-axxe-readyset-spop" },
 ]
 wheel_size = "2.2\""
 position = "front-4wd"

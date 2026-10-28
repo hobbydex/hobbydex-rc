@@ -4,9 +4,9 @@ number = "6523"
 name = "Sensor, temperature and voltage (short)"
 gtin = "020334652300"
 fits = [
-  { kit = "kit/traxxas/e-revo-1-16", type = "direct", source = "doc/traxxas/71054-8-parts-list" },
-  { kit = "kit/traxxas/summit-1-16", type = "direct", source = "doc/traxxas/72054-5-parts-list" },
-  { kit = "kit/traxxas/slash-1-16", type = "direct", source = "doc/traxxas/70054-8-parts-list" },
+  { kit = "kit/traxxas/e-revo-1-16", type = "replaces", source = "doc/traxxas/71054-8-parts-list" },
+  { kit = "kit/traxxas/summit-1-16", type = "replaces", source = "doc/traxxas/72054-5-parts-list" },
+  { kit = "kit/traxxas/slash-1-16", type = "replaces", source = "doc/traxxas/70054-8-parts-list" },
 ]
 category = "electronics"
 links = [

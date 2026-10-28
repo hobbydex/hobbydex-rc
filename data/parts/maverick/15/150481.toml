@@ -7,9 +7,9 @@ links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/150481?show_disc=true" },
 ]
 fits = [
-  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
-  { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
-  { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/150406-kit-page" },
+  { kit = "kit/maverick/quantum2-mt", type = "replaces", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-xt", type = "replaces", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-mt", type = "replaces", source = "doc/maverick/150406-kit-page" },
   { kit = "kit/maverick/quantum2-mt", type = "replaces", replaces = "part/maverick/150377", source = "doc/maverick/150406-kit-page", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/maverick/quantum2-xt", type = "replaces", replaces = "part/maverick/150377", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]

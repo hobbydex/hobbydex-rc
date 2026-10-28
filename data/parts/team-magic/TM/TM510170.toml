@@ -5,7 +5,7 @@ name = "E5 Anti-Roll Bar Set"
 gtin = "4712758870380"
 fits = [
   { kit = "kit/team-magic/e5", type = "direct", source = "doc/team-magic/rc-race-shop-e5" },
-  { kit = "kit/team-magic/e5-hx", type = "direct", source = "doc/team-magic/rc-race-shop-e5-hx" },
+  { kit = "kit/team-magic/e5-hx", type = "replaces", source = "doc/team-magic/rc-race-shop-e5-hx" },
 ]
 links = [
   { site = "RC Race Shop", url = "https://www.rc-race-shop.de/en/team-magic/tm510170-e5-anti-roll-bar-set", kind = "dealer" },

@@ -3,7 +3,7 @@ brand = "brand/atomic-rc"
 number = "MRZ-UP07"
 name = "MRZ Double A-Arm Converion Kit"
 fits = [
-  { kit = "kit/atomic-rc/mrz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrz", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site", "doc/atomic-rc/mrz-up07-mrz-double-a-arm-conversion-v1-0"]
 links = [

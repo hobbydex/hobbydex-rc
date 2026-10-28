@@ -7,12 +7,12 @@ pack_qty = 8
 pack_qty_basis = "page"
 category = "rod-end"
 fits = [
-  { kit = "kit/traxxas/txc-4m", type = "direct", source = "doc/traxxas/120074-1-parts-list" },
-  { kit = "kit/traxxas/e-revo-1-16", type = "direct", source = "doc/traxxas/71054-8-parts-list" },
-  { kit = "kit/traxxas/summit-1-16", type = "direct", source = "doc/traxxas/72054-5-parts-list" },
-  { kit = "kit/traxxas/trx-4m", type = "direct", source = "doc/traxxas/97044-1-parts-list" },
-  { kit = "kit/traxxas/trx-4mt", type = "direct", source = "doc/traxxas/98044-1-parts-list" },
-  { kit = "kit/traxxas/slash-1-16", type = "direct", source = "doc/traxxas/70054-8-parts-list" },
+  { kit = "kit/traxxas/txc-4m", type = "replaces", source = "doc/traxxas/120074-1-parts-list" },
+  { kit = "kit/traxxas/e-revo-1-16", type = "replaces", source = "doc/traxxas/71054-8-parts-list" },
+  { kit = "kit/traxxas/summit-1-16", type = "replaces", source = "doc/traxxas/72054-5-parts-list" },
+  { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/traxxas/97044-1-parts-list" },
+  { kit = "kit/traxxas/trx-4mt", type = "replaces", source = "doc/traxxas/98044-1-parts-list" },
+  { kit = "kit/traxxas/slash-1-16", type = "replaces", source = "doc/traxxas/70054-8-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/7059-rod-ends-with-hollow-balls-8" },

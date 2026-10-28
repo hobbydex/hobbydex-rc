@@ -8,10 +8,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-1-10-body-with-decals-clear-granite-4x4/ARAC3337.html" },
 ]
 fits = [
-  { kit = "kit/arrma/granite", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/arrma/granite-boost", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/granite", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/granite-boost", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/arrma/infraction", type = "direct", source = "doc/arrma/horizon-part-pages" },
-  { kit = "kit/arrma/vorteks-boost", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/vorteks-boost", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
 ]
 category = "body"
 former_ids = ["part/arrma/AR402261"]

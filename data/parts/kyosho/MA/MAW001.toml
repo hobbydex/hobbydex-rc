@@ -5,8 +5,8 @@ name = "Special Manifold"
 gtin = "4955439754474"
 category = "engine-fuel"
 fits = [
-  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/31221-madforce-p" },
-  { kit = "kit/kyosho/mad-armour", type = "direct", source = "doc/kyosho/31224-madarmour-p" },
+  { kit = "kit/kyosho/mad-force", type = "replaces", source = "doc/kyosho/31221-madforce-p" },
+  { kit = "kit/kyosho/mad-armour", type = "replaces", source = "doc/kyosho/31224-madarmour-p" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/maw001.html" },

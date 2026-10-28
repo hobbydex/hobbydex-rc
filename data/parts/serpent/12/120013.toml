@@ -4,9 +4,9 @@ number = "120013"
 name = "Spur gear 64P / 106T"
 fits = [
   { kit = "kit/serpent/medius-x26", type = "direct", source = "doc/serpent/medius-x26-steel-spares" },
-  { kit = "kit/serpent/medius-x25", type = "direct", source = "doc/serpent/medius-x25-steel-options" },
+  { kit = "kit/serpent/medius-x25", type = "replaces", source = "doc/serpent/medius-x25-steel-options" },
   { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-24-carbon-options" },
-  { kit = "kit/serpent/medius-x20-mid", type = "direct", source = "doc/serpent/medius-x20-mid-alu-options" },
+  { kit = "kit/serpent/medius-x20-mid", type = "replaces", source = "doc/serpent/medius-x20-mid-alu-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser120013" },

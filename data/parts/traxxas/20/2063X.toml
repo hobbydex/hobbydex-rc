@@ -5,11 +5,11 @@ name = "Servo case/gaskets (for 2065X metal gear, waterproof, sub-micro servo)"
 gtin = "020334206398"
 category = "o-ring-seal"
 fits = [
-  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/110056-4-parts-list" },
-  { kit = "kit/traxxas/latrax-rally", type = "direct", source = "doc/traxxas/75054-5-parts-list" },
-  { kit = "kit/traxxas/latrax-teton", type = "direct", source = "doc/traxxas/76054-5-parts-list" },
-  { kit = "kit/traxxas/latrax-desert-prerunner", type = "direct", source = "doc/traxxas/76064-5-parts-list" },
-  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88086-4-parts-list" },
+  { kit = "kit/traxxas/trx-4", type = "replaces", source = "doc/traxxas/110056-4-parts-list" },
+  { kit = "kit/traxxas/latrax-rally", type = "replaces", source = "doc/traxxas/75054-5-parts-list" },
+  { kit = "kit/traxxas/latrax-teton", type = "replaces", source = "doc/traxxas/76054-5-parts-list" },
+  { kit = "kit/traxxas/latrax-desert-prerunner", type = "replaces", source = "doc/traxxas/76064-5-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "replaces", source = "doc/traxxas/88086-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/2063x-2065x-servo-case-gaskets" },

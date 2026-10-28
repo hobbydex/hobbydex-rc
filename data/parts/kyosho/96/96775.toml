@@ -33,7 +33,7 @@ fits = [
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/33216-fw-06-chassis-spop" },
   { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
-  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822t02f-tf5-readyset-p" },
+  { kit = "kit/kyosho/tf-5", type = "replaces", source = "doc/kyosho/30822t02f-tf5-readyset-p" },
 ]
 equivalent_to = [
   { spec = "spec/washer/4x10x0.15", match = "functional", notes = "Size parsed from the manufacturer's description" },

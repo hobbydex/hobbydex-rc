@@ -8,9 +8,9 @@ material_grade = "6061-T6"
 color = "red"
 range = "traxxas/6765-colours"
 fits = [
-  { kit = "kit/traxxas/rustler-4x4", type = "direct", source = "doc/traxxas/67097-4-parts-list" },
-  { kit = "kit/traxxas/bigfoot-4x4", type = "direct", source = "doc/traxxas/67134-4-parts-list" },
-  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67154-4-parts-list" },
-  { kit = "kit/traxxas/hoss", type = "direct", source = "doc/traxxas/90076-4-exploded-transmission-assembly" },
+  { kit = "kit/traxxas/rustler-4x4", type = "replaces", source = "doc/traxxas/67097-4-parts-list" },
+  { kit = "kit/traxxas/bigfoot-4x4", type = "replaces", source = "doc/traxxas/67134-4-parts-list" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/traxxas/67154-4-parts-list" },
+  { kit = "kit/traxxas/hoss", type = "replaces", source = "doc/traxxas/90076-4-exploded-transmission-assembly" },
 ]
 documents = ["doc/traxxas/67097-4-parts-list", "doc/traxxas/67134-4-parts-list", "doc/traxxas/67154-4-parts-list"]

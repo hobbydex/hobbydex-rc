@@ -4,9 +4,9 @@ number = "T2717"
 name = "2nd. PINION GEAR (19T)"
 gtin = "4944925030215"
 fits = [
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7r-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtx6", type = "replaces", source = "doc/mugen/mtx-6r-part-list" },
 ]
 category = "pinion"
 teeth = 19
