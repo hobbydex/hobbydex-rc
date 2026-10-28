@@ -2,11 +2,15 @@ id = "part/aka/AKA23101W"
 brand = "brand/aka"
 number = "AKA23101W"
 pack_qty = 2
-pack_qty_basis = "page"
+pack_qty_basis = "name"
 name = "12mm Hex \"HEXlite\" 2.2 Rear Wheels (B6/22/RB6/ZX6) (White)"
 applies_to = "B6/22/RB6/ZX6"
+fits = [
+  { kit = "kit/team-associated/rc10b6", type = "direct", source = "doc/aka/amain-product-pages" },
+  { kit = "kit/tlr/22", type = "direct", source = "doc/aka/amain-product-pages" },
+]
 equivalent_to = [
-  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the product page", source = "doc/aka/amain-product-pages" },
 ]
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/aka-12mm-hex-hexlite-2.2-rear-wheels-2-b6-22-rb6-zx6-white-aka23101w/p232939", kind = "dealer" },
