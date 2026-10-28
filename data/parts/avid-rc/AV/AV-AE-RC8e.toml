@@ -13,6 +13,11 @@ category_source = "curated"
 seal = "rubber-metal"
 lubricant = "grease"
 applies_to = "Team Associated RC8Be (also RC8Te, SC8e, RC8.2e)"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Associated RC8Be (link_car_kits.py)" },
+  { kit = "kit/team-associated/rc8t", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the RC8Te (link_car_kits.py)", car = "RC8Te" },
+  { kit = "kit/team-associated/sc8", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the SC8e (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/243/RC8Be" },

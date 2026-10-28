@@ -13,6 +13,10 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Team Associated B6.2D (also SC6.2, T6.2)"
+fits = [
+  { kit = "kit/team-associated/rc10sc6", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the SC6.2 (link_car_kits.py)" },
+  { kit = "kit/team-associated/rc10t6", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the T6.2 (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/3238/B62D" },
