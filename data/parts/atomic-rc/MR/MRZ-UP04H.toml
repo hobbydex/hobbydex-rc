@@ -4,7 +4,7 @@ number = "MRZ-UP04H"
 name = "MRZ Mid Spring Hard (Yellow)"
 color = "yellow"
 fits = [
-  { kit = "kit/atomic-rc/mrz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrz", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site"]
 links = [

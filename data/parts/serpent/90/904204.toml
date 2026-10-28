@@ -4,7 +4,7 @@ number = "904204"
 name = "Spurgear composite 46T M1"
 fits = [
   { kit = "kit/serpent/viper-990e", type = "direct", source = "doc/serpent/viper-990e-r-spares" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8gte-r-options" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8gte-r-options" },
   { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-parts" },
 ]
 links = [

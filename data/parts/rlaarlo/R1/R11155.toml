@@ -5,8 +5,8 @@ name = "Metal Pinion Gear For RZ001, 24T"
 applies_to = "RZ001、SBK10"
 module = 1.0
 fits = [
-  { kit = "kit/rlaarlo/omni-terminator", type = "direct", source = "doc/rlaarlo/store" },
-  { kit = "kit/rlaarlo/sbk10", type = "direct", source = "doc/rlaarlo/store" },
+  { kit = "kit/rlaarlo/omni-terminator", type = "replaces", source = "doc/rlaarlo/store" },
+  { kit = "kit/rlaarlo/sbk10", type = "replaces", source = "doc/rlaarlo/store" },
 ]
 links = [
   { site = "Rlaarlo", url = "https://rlaarlo.com/products/metal-pinion-gear-for-rz001" },

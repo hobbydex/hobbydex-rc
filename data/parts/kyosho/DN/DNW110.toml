@@ -9,5 +9,5 @@ documents = ["doc/kyosho/dnw110-friction"]
 shock_part = "complete"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/dnw110.html" } ]
 fits = [
-  { kit = "kit/kyosho/dnano", type = "direct", source = "doc/kyosho/dnw110-friction", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/dnano", type = "replaces", source = "doc/kyosho/dnw110-friction", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]

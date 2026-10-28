@@ -8,8 +8,8 @@ gtin = "4548565156566"
 category = "spur-gear"
 documents = ["doc/kyosho/tf228-102-product-page"]
 fits = [
-  { kit = "kit/kyosho/tf-7", type = "direct", source = "doc/kyosho/30026-tf7-parts-list-v02" },
-  { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
+  { kit = "kit/kyosho/tf-7", type = "replaces", source = "doc/kyosho/30026-tf7-parts-list-v02" },
+  { kit = "kit/kyosho/tf-7-7", type = "replaces", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30024-tf6-p" },
 ]
 teeth = 102

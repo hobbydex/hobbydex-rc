@@ -7,7 +7,7 @@ applies_to = "GS02F BUFFALO PICKUP, GS02F BUFFALO, GS01 KOMODO"
 fits = [
   { kit = "kit/gmade/gs02f-buffalo-pickup", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO PICKUP replacement parts" },
   { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO replacement parts" },
-  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+  { kit = "kit/gmade/gs01-komodo", type = "replaces", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
 ]
 documents = ["doc/gmade/gm70224-manual"]
 links = [

@@ -10,9 +10,9 @@ wheel_size = "2.2\""
 position = "rear"
 color = "chrome"
 fits = [
-  { kit = "kit/traxxas/nitro-rustler", type = "direct", source = "doc/traxxas/44096-3-parts-list" },
-  { kit = "kit/traxxas/jato", type = "direct", source = "doc/traxxas/55077-3-parts-list" },
-  { kit = "kit/traxxas/nitro-sport", type = "direct", source = "doc/traxxas/45104-1-exploded-rear-assembly" },
+  { kit = "kit/traxxas/nitro-rustler", type = "replaces", source = "doc/traxxas/44096-3-parts-list" },
+  { kit = "kit/traxxas/jato", type = "replaces", source = "doc/traxxas/55077-3-parts-list" },
+  { kit = "kit/traxxas/nitro-sport", type = "replaces", source = "doc/traxxas/45104-1-exploded-rear-assembly" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/4172-pro-star-trx-22-chrome-rear-wheels" },

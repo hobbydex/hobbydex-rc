@@ -7,7 +7,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/vorza-truggy", type = "replaces", replaces = "part/hpi/160198", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/vorza-truggy", type = "direct", replaces = "part/hpi/160198", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "aluminium"

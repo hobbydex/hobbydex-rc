@@ -5,9 +5,9 @@ name = "SP Steering Plate"
 gtin = "4955439768839"
 category = "steering"
 fits = [
-  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp2-fw05jpe-p" },
-  { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31582-fw05r-foam-p" },
-  { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31583-fw05rr-form-p" },
+  { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31480jp2-fw05jpe-p" },
+  { kit = "kit/kyosho/fw-05r", type = "replaces", source = "doc/kyosho/31582-fw05r-foam-p" },
+  { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/31583-fw05rr-form-p" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vsw016.html" },

@@ -7,5 +7,6 @@ seen_by_source = "https://shop.lcracing.net/products/c8068-anti-roll-bar-set-for
 documents = ["doc/lc-racing/c8068-product-page"]
 category = "suspension"
 fits = [
-  { kit = "kit/lc-racing/ptg-2r", type = "direct", source = "doc/lc-racing/c8068-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/lc-racing/ptg-2r", type = "replaces", source = "doc/lc-racing/c8068-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/lc-racing/ptg-2", type = "replaces", source = "doc/lc-racing/c8068-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]

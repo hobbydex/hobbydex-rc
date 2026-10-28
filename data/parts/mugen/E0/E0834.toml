@@ -12,8 +12,8 @@ fits = [
   { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list" },
   { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7t-eco-part-list" },
   { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7t-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6t-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6t-part-list" },
 ]
 category = "steering"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/STEERING-ROD-90-MBX6T/E0834" } ]

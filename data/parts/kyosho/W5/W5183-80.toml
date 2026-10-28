@@ -6,12 +6,12 @@ status = "discontinued"
 gtin = "4955439736586"
 documents = ["doc/kyosho/w5183-80-product-page"]
 fits = [
-  { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/30072-ep-ultimarb-sports-p" },
-  { kit = "kit/kyosho/fazer-kobra", type = "direct", source = "doc/kyosho/30930t1-ep-fazer-kobra-p" },
-  { kit = "kit/kyosho/gp-ultima-st", type = "direct", source = "doc/kyosho/31973-gp-ultimast-r-evo-p" },
-  { kit = "kit/kyosho/tr-15-stadium-force", type = "direct", source = "doc/kyosho/31095-tr15-stadiumforce-mt-p" },
-  { kit = "kit/kyosho/tr-15-monster-touring", type = "direct", source = "doc/kyosho/31213-xanavinismo-gtr-p" },
-  { kit = "kit/kyosho/megaforce", type = "direct", source = "doc/kyosho/31181-megaforce-p" },
+  { kit = "kit/kyosho/ultima-rb", type = "replaces", source = "doc/kyosho/30072-ep-ultimarb-sports-p" },
+  { kit = "kit/kyosho/fazer-kobra", type = "replaces", source = "doc/kyosho/30930t1-ep-fazer-kobra-p" },
+  { kit = "kit/kyosho/gp-ultima-st", type = "replaces", source = "doc/kyosho/31973-gp-ultimast-r-evo-p" },
+  { kit = "kit/kyosho/tr-15-stadium-force", type = "replaces", source = "doc/kyosho/31095-tr15-stadiumforce-mt-p" },
+  { kit = "kit/kyosho/tr-15-monster-touring", type = "replaces", source = "doc/kyosho/31213-xanavinismo-gtr-p" },
+  { kit = "kit/kyosho/megaforce", type = "replaces", source = "doc/kyosho/31181-megaforce-p" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/w5183-80.html" },

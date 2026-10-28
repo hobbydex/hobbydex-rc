@@ -5,11 +5,11 @@ name = "B Clutch Shoe"
 pack_qty = 3
 pack_qty_basis = "manual"
 fits = [
-  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31888-inferno-mp9-spop" },
-  { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31779-infmp777-sp2-p" },
-  { kit = "kit/kyosho/inferno-mp7-5", type = "direct", source = "doc/kyosho/31081-inferno-mp75-p" },
-  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/31071-dmt-spop" },
-  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/31098-dbx2-opsp" },
+  { kit = "kit/kyosho/inferno-mp9", type = "replaces", source = "doc/kyosho/31888-inferno-mp9-spop" },
+  { kit = "kit/kyosho/inferno-mp777", type = "replaces", source = "doc/kyosho/31779-infmp777-sp2-p" },
+  { kit = "kit/kyosho/inferno-mp7-5", type = "replaces", source = "doc/kyosho/31081-inferno-mp75-p" },
+  { kit = "kit/kyosho/dmt", type = "replaces", source = "doc/kyosho/31071-dmt-spop" },
+  { kit = "kit/kyosho/dbx", type = "replaces", source = "doc/kyosho/31098-dbx2-opsp" },
 ]
 category = "engine-fuel"
 documents = ["doc/kyosho/31071-dmt-spop", "doc/kyosho/31081-inferno-mp75-p", "doc/kyosho/31098-dbx2-opsp"]

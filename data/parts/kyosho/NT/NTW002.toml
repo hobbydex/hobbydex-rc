@@ -8,9 +8,9 @@ gtin = "4548565371228"
 category = "shock"
 documents = ["doc/kyosho/ntw002-product-page"]
 fits = [
-  { kit = "kit/kyosho/nitro-tracker", type = "direct", source = "doc/kyosho/33101-nitro-tracker-spop" },
-  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33019-gt2-rs-kt-331p-spop" },
-  { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34109-gt2-ve-rs-spop" },
+  { kit = "kit/kyosho/nitro-tracker", type = "replaces", source = "doc/kyosho/33101-nitro-tracker-spop" },
+  { kit = "kit/kyosho/inferno-gt2", type = "replaces", source = "doc/kyosho/33019-gt2-rs-kt-331p-spop" },
+  { kit = "kit/kyosho/inferno-gt2-ve", type = "replaces", source = "doc/kyosho/34109-gt2-ve-rs-spop" },
 ]
 shock_part = "complete"
 links = [

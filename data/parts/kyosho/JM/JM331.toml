@@ -3,7 +3,7 @@ brand = "brand/kyosho"
 number = "JM331"
 name = "Steel Pinion Gear(31T)1/48 Pitch"
 fits = [
-  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-spop" },
+  { kit = "kit/kyosho/ultima-sc6", type = "replaces", source = "doc/kyosho/30070-ultima-sc6-spop" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-31t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

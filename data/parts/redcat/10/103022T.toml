@@ -13,5 +13,5 @@ category = "chassis"
 material = "carbon"
 fits = [
   { kit = "kit/redcat/lightning", type = "replaces", replaces = "part/redcat/02035", source = "doc/redcat/store", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/redcat/lightning-str", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/lightning-str", type = "replaces", source = "doc/redcat/store" },
 ]

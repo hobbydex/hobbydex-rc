@@ -14,6 +14,6 @@ rate_lb_in = 3.6
 range = "tlr/shock-spring-rate-springs"
 fits = [
   { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages" },
-  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt-mega-truck", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
 ]
 gtin = "605482170175"

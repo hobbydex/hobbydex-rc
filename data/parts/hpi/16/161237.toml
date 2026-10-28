@@ -6,10 +6,10 @@ links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161237" },
 ]
 fits = [
-  { kit = "kit/hpi/mini-king", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/venture18", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/mini-king", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18", type = "replaces", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/venture18-cc", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/venture18-u4", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/venture18-u4", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 category = "shock-spring"
 wire_mm = 0.5

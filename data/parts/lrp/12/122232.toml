@@ -12,11 +12,11 @@ equivalent_to = [
 ]
 fits = [
   { kit = "kit/lrp/s10-blast-tc3", type = "direct", source = "doc/lrp/120203-product-page" },
-  { kit = "kit/lrp/s10-blast-mt-2", type = "direct", source = "doc/lrp/120803-product-page" },
-  { kit = "kit/lrp/s10-blast-sc-2", type = "direct", source = "doc/lrp/120703-product-page" },
-  { kit = "kit/lrp/s10-blast-tx-2", type = "direct", source = "doc/lrp/120503-product-page" },
-  { kit = "kit/lrp/s10-blast-bx-2", type = "direct", source = "doc/lrp/120303-product-page" },
-  { kit = "kit/lrp/s10-blast-tc-2", type = "direct", source = "doc/lrp/120105-product-page" },
+  { kit = "kit/lrp/s10-blast-mt-2", type = "replaces", source = "doc/lrp/120803-product-page" },
+  { kit = "kit/lrp/s10-blast-sc-2", type = "replaces", source = "doc/lrp/120703-product-page" },
+  { kit = "kit/lrp/s10-blast-tx-2", type = "replaces", source = "doc/lrp/120503-product-page" },
+  { kit = "kit/lrp/s10-blast-bx-2", type = "replaces", source = "doc/lrp/120303-product-page" },
+  { kit = "kit/lrp/s10-blast-tc-2", type = "replaces", source = "doc/lrp/120105-product-page" },
 ]
 teeth = 32
 pitch_dp = 48

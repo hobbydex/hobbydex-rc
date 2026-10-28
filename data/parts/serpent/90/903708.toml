@@ -3,15 +3,15 @@ brand = "brand/serpent"
 number = "903708"
 name = "Antirollbar spacer 3.5mm"
 fits = [
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8e-gen4-options" },
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-gen4-options" },
-  { kit = "kit/serpent/viper-990e", type = "direct", source = "doc/serpent/viper-990e-r-options" },
-  { kit = "kit/serpent/viper-990", type = "direct", source = "doc/serpent/viper-990r-options" },
-  { kit = "kit/serpent/viper-989e", type = "direct", source = "doc/serpent/viper-989e-options" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-wc-options" },
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-tq-options" },
-  { kit = "kit/serpent/viper-989", type = "direct", source = "doc/serpent/viper-989-40th-options" },
-  { kit = "kit/serpent/viper-988e", type = "direct", source = "doc/serpent/viper-988e-options" },
+  { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8e-gen4-options" },
+  { kit = "kit/serpent/srx8", type = "replaces", source = "doc/serpent/srx8-gen4-options" },
+  { kit = "kit/serpent/viper-990e", type = "replaces", source = "doc/serpent/viper-990e-r-options" },
+  { kit = "kit/serpent/viper-990", type = "replaces", source = "doc/serpent/viper-990r-options" },
+  { kit = "kit/serpent/viper-989e", type = "replaces", source = "doc/serpent/viper-989e-options" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8-gte-wc-options" },
+  { kit = "kit/serpent/srx8-gt", type = "replaces", source = "doc/serpent/srx8-gt-tq-options" },
+  { kit = "kit/serpent/viper-989", type = "replaces", source = "doc/serpent/viper-989-40th-options" },
+  { kit = "kit/serpent/viper-988e", type = "replaces", source = "doc/serpent/viper-988e-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser903708" },

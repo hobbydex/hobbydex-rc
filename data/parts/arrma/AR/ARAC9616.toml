@@ -8,8 +8,8 @@ links = [
 category = "wing"
 fits = [
   { kit = "kit/arrma/kraton-4s", type = "direct", source = "doc/arrma/horizon-part-pages" },
-  { kit = "kit/arrma/typhon-3s", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/arrma/typhon-mega", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/typhon-3s", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/typhon-mega", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
 ]
 former_ids = ["part/arrma/AR480012"]
 numbers = ["AR480012"]

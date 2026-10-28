@@ -9,5 +9,5 @@ gtin = "4548565440092"
 documents = ["doc/kyosho/faw230-fz02-rcv-rallycs-spop", "doc/kyosho/faw230-fz02-rcv-rallycs-im", "doc/kyosho/faw230-t01-setup-seet", "doc/kyosho/faw230-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/faw230.html" } ]
 fits = [
-  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/faw230-fz02-rcv-rallycs-spop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/fazer-mk2", type = "replaces", source = "doc/kyosho/faw230-fz02-rcv-rallycs-spop", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]

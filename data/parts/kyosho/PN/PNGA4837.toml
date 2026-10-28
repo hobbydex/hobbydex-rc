@@ -7,7 +7,7 @@ gtin = "4548565367023"
 category = "pinion"
 documents = ["doc/kyosho/pnga4837-product-page"]
 fits = [
-  { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "replaces", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-37t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

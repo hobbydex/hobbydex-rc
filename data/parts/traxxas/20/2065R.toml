@@ -5,14 +5,14 @@ name = "Servo, sub-micro, waterproof, metal gear"
 gtin = "020334206589"
 category = "servo"
 fits = [
-  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/110056-4-parts-list" },
-  { kit = "kit/traxxas/latrax-rally", type = "direct", source = "doc/traxxas/75054-5-parts-list" },
-  { kit = "kit/traxxas/latrax-teton", type = "direct", source = "doc/traxxas/76054-5-parts-list" },
-  { kit = "kit/traxxas/latrax-desert-prerunner", type = "direct", source = "doc/traxxas/76064-5-parts-list" },
-  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88096-4-parts-list" },
-  { kit = "kit/traxxas/trx-4m", type = "direct", source = "doc/traxxas/97044-1-parts-list" },
+  { kit = "kit/traxxas/trx-4", type = "replaces", source = "doc/traxxas/110056-4-parts-list" },
+  { kit = "kit/traxxas/latrax-rally", type = "replaces", source = "doc/traxxas/75054-5-parts-list" },
+  { kit = "kit/traxxas/latrax-teton", type = "replaces", source = "doc/traxxas/76054-5-parts-list" },
+  { kit = "kit/traxxas/latrax-desert-prerunner", type = "replaces", source = "doc/traxxas/76064-5-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "replaces", source = "doc/traxxas/88096-4-parts-list" },
+  { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/traxxas/97044-1-parts-list" },
   { kit = "kit/traxxas/trx-4mt", type = "direct", source = "doc/traxxas/98044-1-parts-list" },
-  { kit = "kit/traxxas/summit", type = "direct", source = "doc/traxxas/56076-4-exploded-shift-assembly" },
+  { kit = "kit/traxxas/summit", type = "replaces", source = "doc/traxxas/56076-4-exploded-shift-assembly" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/2065r-metal-gear-sub-micro-servo" },

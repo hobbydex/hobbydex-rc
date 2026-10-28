@@ -8,9 +8,9 @@ fits = [
   { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4-part-list" },
   { kit = "kit/mugen/mtx2", type = "direct", source = "doc/mugen/mtx-2-part-list" },
   { kit = "kit/mugen/super-athlete", type = "direct", source = "doc/mugen/super-athlete-part-list" },
-  { kit = "kit/mugen/mbx4", type = "replaces", replaces = "part/mugen/C0711", source = "doc/mugen/mbx-4-part-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/mugen/mtx2", type = "replaces", replaces = "part/mugen/C0711", source = "doc/mugen/mtx-2-part-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/mugen/super-athlete", type = "replaces", replaces = "part/mugen/C0711", source = "doc/mugen/super-athlete-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/mbx4", type = "direct", replaces = "part/mugen/C0711", source = "doc/mugen/mbx-4-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/mtx2", type = "direct", replaces = "part/mugen/C0711", source = "doc/mugen/mtx-2-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/super-athlete", type = "direct", replaces = "part/mugen/C0711", source = "doc/mugen/super-athlete-part-list", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "pin"
 material = "carbon"

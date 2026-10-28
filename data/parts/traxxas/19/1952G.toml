@@ -13,9 +13,9 @@ range = "traxxas/1952-colours"
 fits = [
   { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67010-4-parts-list" },
   { kit = "kit/traxxas/rustler-4x4", type = "direct", source = "doc/traxxas/67097-4-parts-list" },
-  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/traxxas/68277-4-parts-list" },
-  { kit = "kit/traxxas/rally", type = "direct", source = "doc/traxxas/74054-4-parts-list" },
-  { kit = "kit/traxxas/hoss", type = "direct", source = "doc/traxxas/90076-4-exploded-rear-assembly" },
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/traxxas/68277-4-parts-list" },
+  { kit = "kit/traxxas/rally", type = "replaces", source = "doc/traxxas/74054-4-parts-list" },
+  { kit = "kit/traxxas/hoss", type = "replaces", source = "doc/traxxas/90076-4-exploded-rear-assembly" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/1952g-green-aluminum-axle-carriers-lr" },

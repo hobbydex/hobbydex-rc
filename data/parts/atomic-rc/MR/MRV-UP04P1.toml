@@ -5,7 +5,7 @@ name = "MRV SF Camber Shims (0.2mm)"
 pack_qty = 10
 pack_qty_basis = "name"
 fits = [
-  { kit = "kit/atomic-rc/mrv", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrv", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site"]
 links = [

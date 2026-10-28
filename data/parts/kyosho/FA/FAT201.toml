@@ -9,14 +9,14 @@ gtin = "4548565154418"
 category = "tire"
 documents = ["doc/kyosho/fat201-product-page"]
 fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
-  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
-  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
-  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
-  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30643-mid-87wc-spop" },
-  { kit = "kit/kyosho/sandmaster", type = "direct", source = "doc/kyosho/30831-t02-sandmaster-rs-spop" },
-  { kit = "kit/kyosho/axxe", type = "direct", source = "doc/kyosho/30837-t01-axxe-readyset-spop" },
-  { kit = "kit/kyosho/nexxt", type = "direct", source = "doc/kyosho/30834-t01-nexxt-rs-spop" },
+  { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "replaces", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "replaces", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "replaces", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30643-mid-87wc-spop" },
+  { kit = "kit/kyosho/sandmaster", type = "replaces", source = "doc/kyosho/30831-t02-sandmaster-rs-spop" },
+  { kit = "kit/kyosho/axxe", type = "replaces", source = "doc/kyosho/30837-t01-axxe-readyset-spop" },
+  { kit = "kit/kyosho/nexxt", type = "replaces", source = "doc/kyosho/30834-t01-nexxt-rs-spop" },
 ]
 position = "front"
 links = [

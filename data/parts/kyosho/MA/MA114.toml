@@ -4,7 +4,7 @@ number = "MA114"
 name = "Motor (Monster 550)"
 category = "motor"
 fits = [
-  { kit = "kit/kyosho/twin-force", type = "direct", source = "doc/kyosho/30522-b-twinforcecsp-p" },
+  { kit = "kit/kyosho/twin-force", type = "replaces", source = "doc/kyosho/30522-b-twinforcecsp-p" },
 ]
 equivalent_to = [
   { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },

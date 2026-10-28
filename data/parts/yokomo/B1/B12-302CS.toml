@@ -7,7 +7,7 @@ material = "carbon"
 category = "chassis"
 fits = [
   { kit = "kit/yokomo/bd12", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for BD12" },
-  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0" },
+  { kit = "kit/yokomo/ms", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0" },
 ]
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/b12-302cs" },

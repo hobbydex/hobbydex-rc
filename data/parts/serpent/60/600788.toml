@@ -5,12 +5,12 @@ name = "Steering arm 0 carbon SRX8"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8gtr-ec-options" },
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8e-gen4-options" },
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-gen4-options" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8gte-r-options" },
-  { kit = "kit/serpent/srx8-truggy-e", type = "direct", source = "doc/serpent/srx8-truggy-e-options" },
-  { kit = "kit/serpent/srx8-truggy", type = "direct", source = "doc/serpent/srx8-truggy-options" },
+  { kit = "kit/serpent/srx8-gt", type = "replaces", source = "doc/serpent/srx8gtr-ec-options" },
+  { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8e-gen4-options" },
+  { kit = "kit/serpent/srx8", type = "replaces", source = "doc/serpent/srx8-gen4-options" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8gte-r-options" },
+  { kit = "kit/serpent/srx8-truggy-e", type = "replaces", source = "doc/serpent/srx8-truggy-e-options" },
+  { kit = "kit/serpent/srx8-truggy", type = "replaces", source = "doc/serpent/srx8-truggy-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser600788" },

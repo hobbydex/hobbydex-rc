@@ -4,9 +4,9 @@ number = "T0254"
 name = "2ND. GEAR 52T"
 gtin = "4944925007538"
 fits = [
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx-4-part-list" },
-  { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
+  { kit = "kit/mugen/mtx4", type = "replaces", source = "doc/mugen/mtx4-r-part-list" },
+  { kit = "kit/mugen/mtx4", type = "replaces", source = "doc/mugen/mtx-4-part-list" },
+  { kit = "kit/mugen/mtx3", type = "replaces", source = "doc/mugen/mtx-3-part-list" },
 ]
 category = "gear"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/2ND.-GEAR-52T-MODUL-0.8/T0254" } ]

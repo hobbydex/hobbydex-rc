@@ -5,8 +5,8 @@ name = "Upright alu SRX8"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-pro-options" },
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-pro-options" },
+  { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8-e-pro-options" },
+  { kit = "kit/serpent/srx8", type = "replaces", source = "doc/serpent/srx8-pro-options" },
   { kit = "kit/serpent/srx8", type = "replaces", replaces = "part/serpent/600973", source = "doc/serpent/srx8-pro-options", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/serpent/srx8e", type = "replaces", replaces = "part/serpent/600973", source = "doc/serpent/srx8-e-pro-options", notes = "Same part in another material (link_upgrades.py)" },
 ]

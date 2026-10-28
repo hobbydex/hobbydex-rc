@@ -6,7 +6,7 @@ pack_qty = 2
 applies_to = "GS01 SAWBACK, GS01 KOMODO"
 fits = [
   { kit = "kit/gmade/gs01-sawback", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 SAWBACK replacement parts" },
-  { kit = "kit/gmade/gs01-komodo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
+  { kit = "kit/gmade/gs01-komodo", type = "replaces", source = "doc/gmade/store", notes = "Listed under GS01 KOMODO option parts" },
 ]
 documents = ["doc/gmade/gm70224-manual"]
 links = [

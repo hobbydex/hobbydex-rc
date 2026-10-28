@@ -9,7 +9,7 @@ links = [
 fits = [
   { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/e-firestorm", type = "replaces", replaces = "part/hpi/86949", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/e-firestorm", type = "direct", replaces = "part/hpi/86949", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 color = "silver"

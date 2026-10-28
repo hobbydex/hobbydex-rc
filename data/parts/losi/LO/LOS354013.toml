@@ -8,7 +8,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-front-spindle-set-aluminum-l-r-super-rock-rey/LOS354013.html" },
 ]
 fits = [
-  { kit = "kit/losi/super-rock-rey", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/super-rock-rey", type = "replaces", source = "doc/losi/horizon-product-catalogue" },
   { kit = "kit/losi/super-rock-rey", type = "replaces", replaces = "part/losi/LOS254055", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "aluminium"

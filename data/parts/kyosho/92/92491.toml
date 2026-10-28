@@ -7,14 +7,14 @@ gtin = "4955439678732"
 fits = [
   { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/30917-fazer-ve-porsche-918-spop" },
   { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31382-fazer-impreza-p" },
-  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
-  { kit = "kit/kyosho/pure-ten-kx-one", type = "direct", source = "doc/kyosho/30101-kx-one-p" },
-  { kit = "kit/kyosho/pure-ten-alpha", type = "direct", source = "doc/kyosho/30117-pureten-ep-aipha2-p" },
-  { kit = "kit/kyosho/gp-tr-15-rally", type = "direct", source = "doc/kyosho/31061-tr15-rally-p" },
-  { kit = "kit/kyosho/superten", type = "direct", source = "doc/kyosho/31001-superten-p" },
+  { kit = "kit/kyosho/v-one-r4", type = "replaces", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
+  { kit = "kit/kyosho/pure-ten-kx-one", type = "replaces", source = "doc/kyosho/30101-kx-one-p" },
+  { kit = "kit/kyosho/pure-ten-alpha", type = "replaces", source = "doc/kyosho/30117-pureten-ep-aipha2-p" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "replaces", source = "doc/kyosho/31061-tr15-rally-p" },
+  { kit = "kit/kyosho/superten", type = "replaces", source = "doc/kyosho/31001-superten-p" },
   { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31333-vones3-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
-  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp2-fw05jpe-p" },
+  { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31480jp2-fw05jpe-p" },
 ]
 category = "shock-spring"
 links = [

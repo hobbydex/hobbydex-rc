@@ -10,7 +10,7 @@ ball_mm = 4.8
 ball_type = "through-hole"
 name_source = "ocr"
 fits = [
-  { kit = "kit/kyosho/inferno-mp11", releases = ["release/kyosho/33028"], type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
-  { kit = "kit/kyosho/inferno-mp11e", releases = ["release/kyosho/34119"], type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11", releases = ["release/kyosho/33028"], type = "replaces", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", releases = ["release/kyosho/34119"], type = "replaces", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
 ]
 documents = ["doc/kyosho/33028-inferno-mp11-spare-and-option-parts", "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts"]

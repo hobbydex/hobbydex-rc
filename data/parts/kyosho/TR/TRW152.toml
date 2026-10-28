@@ -4,9 +4,9 @@ number = "TRW152"
 name = "Stabilizer Set (for Front & Rear/DRX)"
 gtin = "4548565140824"
 fits = [
-  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
-  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/30843-dmt-ve-spop" },
-  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/30879-mm01-spop" },
+  { kit = "kit/kyosho/dbx", type = "replaces", source = "doc/kyosho/30842-dbxve-rs-p" },
+  { kit = "kit/kyosho/dmt", type = "replaces", source = "doc/kyosho/30843-dmt-ve-spop" },
+  { kit = "kit/kyosho/drx", type = "replaces", source = "doc/kyosho/30879-mm01-spop" },
 ]
 category = "suspension"
 links = [

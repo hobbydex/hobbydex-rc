@@ -7,8 +7,8 @@ gtin = "4548565514762"
 category = "suspension"
 documents = ["doc/kyosho/rc-newitem-2026-01-parts"]
 fits = [
-  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/rc-newitem-2026-01-parts" },
-  { kit = "kit/kyosho/inferno-mp11e", type = "direct", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp11", type = "replaces", source = "doc/kyosho/rc-newitem-2026-01-parts" },
+  { kit = "kit/kyosho/inferno-mp11e", type = "replaces", source = "doc/kyosho/34119-inferno-mp11e-spare-and-option-parts" },
 ]
 material = "carbon"
 links = [

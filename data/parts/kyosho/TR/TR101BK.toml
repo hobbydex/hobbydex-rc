@@ -9,7 +9,7 @@ documents = ["doc/kyosho/tr101bk-product-page"]
 fits = [
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
   { kit = "kit/kyosho/dst", type = "direct", source = "doc/kyosho/31097t2-dst-kt-6-mm-p" },
-  { kit = "kit/kyosho/mfr", type = "direct", source = "doc/kyosho/31183-mfr-mm-p" },
+  { kit = "kit/kyosho/mfr", type = "replaces", source = "doc/kyosho/31183-mfr-mm-p" },
 ]
 color = "black"
 range = "kyosho/tr101-colours"

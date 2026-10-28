@@ -8,9 +8,9 @@ gtin = "4548565099498"
 category = "shock-spring"
 documents = ["doc/kyosho/trw101-9514-product-page"]
 fits = [
-  { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
-  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
-  { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-spop" },
+  { kit = "kit/kyosho/dbx", type = "replaces", source = "doc/kyosho/30842-dbxve-rs-p" },
+  { kit = "kit/kyosho/drx", type = "replaces", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
+  { kit = "kit/kyosho/drt", type = "replaces", source = "doc/kyosho/31082-mm01-drt-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/trw101-9514.html" },

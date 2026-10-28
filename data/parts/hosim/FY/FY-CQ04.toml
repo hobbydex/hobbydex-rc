@@ -8,7 +8,7 @@ applies_to = "X07 X07W X08"
 fits = [
   { kit = "kit/hosim/x07", type = "direct", source = "doc/hosim/store" },
   { kit = "kit/hosim/x07w", type = "direct", source = "doc/hosim/store" },
-  { kit = "kit/hosim/x08", type = "direct", source = "doc/hosim/store" },
+  { kit = "kit/hosim/x08", type = "replaces", source = "doc/hosim/store" },
 ]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-differential-front-differential-1-10-scale-fy-cq04-for-x07-x07w-x08" },

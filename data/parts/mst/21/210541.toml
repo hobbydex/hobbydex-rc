@@ -4,11 +4,11 @@ number = "210541"
 name = "Short battery holder set"
 applies_to = "FMX-D / FSX-D / FXX-D ( VIP ) / MS-01D ( VIP ) / FS-01D"
 fits = [
-  { kit = "kit/mst/fmx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fsx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/ms-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fs-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fmx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fsx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fxx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/ms-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fs-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
 ]
 category = "chassis"
 documents = ["doc/mst/option-parts-list-2018"]

@@ -7,7 +7,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-hd-turnbuckle-kit-titanium-22x/TLR-1080.html" },
 ]
 fits = [
-  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/22x", type = "replaces", source = "doc/tlr/horizon-product-catalogue" },
   { kit = "kit/tlr/22x", type = "replaces", replaces = "part/tlr/TLR-1114", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "turnbuckle"

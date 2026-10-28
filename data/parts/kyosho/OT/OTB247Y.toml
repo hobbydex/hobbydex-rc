@@ -6,8 +6,8 @@ gtin = "4548565334018"
 category = "body"
 documents = ["doc/kyosho/otb247y-product-page"]
 fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
-  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "replaces", source = "doc/kyosho/30617-05-optima-spop" },
 ]
 color = "yellow"
 range = "kyosho/otb247-colours"

@@ -7,10 +7,10 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/d8s", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/trophy-buggy", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/trophy-truggy", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/vorza-truggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/trophy-buggy", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/trophy-truggy", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-truggy", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 color = "black"
 category = "engine-fuel"

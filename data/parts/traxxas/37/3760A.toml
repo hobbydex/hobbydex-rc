@@ -9,8 +9,8 @@ category = "shock"
 color = "gray"
 fits = [
   { kit = "kit/traxxas/ford-raptor-r", type = "direct", source = "doc/traxxas/101076-4-parts-list" },
-  { kit = "kit/traxxas/mini-maxx", type = "direct", source = "doc/traxxas/107154-1-parts-list" },
-  { kit = "kit/traxxas/mini-xrt", type = "direct", source = "doc/traxxas/108076-1-parts-list" },
+  { kit = "kit/traxxas/mini-maxx", type = "replaces", source = "doc/traxxas/107154-1-parts-list" },
+  { kit = "kit/traxxas/mini-xrt", type = "replaces", source = "doc/traxxas/108076-1-parts-list" },
   { kit = "kit/traxxas/bandit", type = "direct", source = "doc/traxxas/24054-8-parts-list" },
   { kit = "kit/traxxas/bigfoot", type = "direct", source = "doc/traxxas/36034-8-parts-list" },
   { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/traxxas/36254-8-parts-list" },
@@ -25,7 +25,7 @@ fits = [
   { kit = "kit/traxxas/rally", type = "direct", source = "doc/traxxas/74154-4-parts-list" },
   { kit = "kit/traxxas/drag-slash", type = "direct", source = "doc/traxxas/94076-4-parts-list" },
   { kit = "kit/traxxas/ford-raptor", type = "direct", source = "doc/traxxas/58094-8-parts-list" },
-  { kit = "kit/traxxas/skully", type = "direct", source = "doc/traxxas/36064-1-exploded-front-assembly" },
+  { kit = "kit/traxxas/skully", type = "replaces", source = "doc/traxxas/36064-1-exploded-front-assembly" },
   { kit = "kit/traxxas/nitro-sport", type = "direct", source = "doc/traxxas/45104-1-exploded-front-assembly" },
 ]
 shock_part = "complete"

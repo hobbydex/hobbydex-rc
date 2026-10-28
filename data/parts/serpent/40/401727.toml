@@ -5,7 +5,7 @@ name = "Bearing holder central rocker alu 4-X"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/project-4x", type = "direct", source = "doc/serpent/project-4x-pro-options" },
+  { kit = "kit/serpent/project-4x", type = "replaces", source = "doc/serpent/project-4x-pro-options" },
   { kit = "kit/serpent/project-4x", type = "replaces", replaces = "part/serpent/401681", source = "doc/serpent/project-4x-pro-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [

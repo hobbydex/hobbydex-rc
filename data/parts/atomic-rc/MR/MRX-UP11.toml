@@ -3,9 +3,9 @@ brand = "brand/atomic-rc"
 number = "MRX-UP11"
 name = "MRV, MRX, MRZ Dust Guard Center Shock"
 fits = [
-  { kit = "kit/atomic-rc/mrz", type = "direct", source = "doc/atomic-rc/site" },
-  { kit = "kit/atomic-rc/mrx", type = "direct", source = "doc/atomic-rc/site" },
-  { kit = "kit/atomic-rc/mrv", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrz", type = "replaces", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrx", type = "replaces", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrv", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site", "doc/atomic-rc/mrx-up11-mrx-dg-shock-v1-0"]
 links = [

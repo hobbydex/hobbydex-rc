@@ -5,8 +5,8 @@ name = "Tie Rod"
 gtin = "4944925014680"
 fits = [
   { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/rcteam-mbx7t" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6t-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6t-part-list" },
   { kit = "kit/mugen/mbx5t", type = "direct", source = "doc/mugen/mbx-5t-part-list" },
 ]
 links = [

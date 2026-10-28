@@ -10,10 +10,10 @@ fits = [
   { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
   { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8te-part-list" },
   { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8t-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list" },
   { kit = "kit/mugen/mbx7-eco", type = "direct", source = "doc/mugen/mbx-7r-eco-part-list" },
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7-part-list" },
-  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6r-part-list" },
+  { kit = "kit/mugen/mbx6", type = "replaces", source = "doc/mugen/mbx-6r-part-list" },
 ]
 category = "shock-spring"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/FRONT-DAMPER-SPRING-F1.5-75-7-5T/E0574" } ]

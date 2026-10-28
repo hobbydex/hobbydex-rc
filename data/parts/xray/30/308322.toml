@@ -7,11 +7,11 @@ category = "shock"
 material = "aluminium"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2768" }]
 fits = [
-  { kit = "kit/xray/nt1", releases = ["release/xray/330008", "release/xray/330009", "release/xray/nt1-2017", "release/xray/nt1-2018", "release/xray/nt1-2023", "release/xray/nt1-2027"], type = "replaces", source = "doc/xray/nt1-2027-part-list" },
-  { kit = "kit/xray/rx8", releases = ["release/xray/rx8-2013", "release/xray/rx8-2014", "release/xray/rx8-2017", "release/xray/rx8-2018", "release/xray/rx8-2023", "release/xray/rx8-2026"], type = "replaces", source = "doc/xray/rx8-2026-part-list" },
-  { kit = "kit/xray/rx8e", releases = ["release/xray/rx8e-2023", "release/xray/rx8e-2026"], type = "replaces", source = "doc/xray/rx8e-2026-part-list" },
+  { kit = "kit/xray/nt1", releases = ["release/xray/330008", "release/xray/330009", "release/xray/nt1-2017", "release/xray/nt1-2018", "release/xray/nt1-2023", "release/xray/nt1-2027"], type = "direct", source = "doc/xray/nt1-2027-part-list" },
+  { kit = "kit/xray/rx8", releases = ["release/xray/rx8-2013", "release/xray/rx8-2014", "release/xray/rx8-2017", "release/xray/rx8-2018", "release/xray/rx8-2023", "release/xray/rx8-2026"], type = "direct", source = "doc/xray/rx8-2026-part-list" },
+  { kit = "kit/xray/rx8e", releases = ["release/xray/rx8e-2023", "release/xray/rx8e-2026"], type = "direct", source = "doc/xray/rx8e-2026-part-list" },
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300020", "release/xray/300021", "release/xray/300023", "release/xray/300024", "release/xray/300025", "release/xray/300026", "release/xray/300027", "release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
-  { kit = "kit/xray/x1", releases = ["release/xray/x1-2018", "release/xray/x1-2017", "release/xray/x1-2019", "release/xray/x1-2020", "release/xray/x1-2021", "release/xray/x1-2023", "release/xray/x1-2024"], type = "replaces", source = "doc/xray/x1-2024-part-list" },
-  { kit = "kit/xray/x4", releases = ["release/xray/x4-2022"], type = "replaces", source = "doc/xray/x4-2022-part-list" },
-  { kit = "kit/xray/x4f", releases = ["release/xray/x4f-2023", "release/xray/x4f-2024"], type = "replaces", source = "doc/xray/x4f-2024-part-list" },
+  { kit = "kit/xray/x1", releases = ["release/xray/x1-2018", "release/xray/x1-2017", "release/xray/x1-2019", "release/xray/x1-2020", "release/xray/x1-2021", "release/xray/x1-2023", "release/xray/x1-2024"], type = "direct", source = "doc/xray/x1-2024-part-list" },
+  { kit = "kit/xray/x4", releases = ["release/xray/x4-2022"], type = "direct", source = "doc/xray/x4-2022-part-list" },
+  { kit = "kit/xray/x4f", releases = ["release/xray/x4f-2023", "release/xray/x4f-2024"], type = "direct", source = "doc/xray/x4f-2024-part-list" },
 ]

@@ -7,8 +7,8 @@ gtin = "4548565381838"
 category = "differential"
 documents = ["doc/kyosho/ifw621-01-product-page", "doc/kyosho/33024-t01-mp10-30th-op"]
 fits = [
-  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
-  { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
+  { kit = "kit/kyosho/inferno-mp10", type = "replaces", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-mp10e", type = "replaces", source = "doc/kyosho/34113t1-inf-mp10e-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ifw621-01.html" },

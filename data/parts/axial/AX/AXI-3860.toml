@@ -8,7 +8,7 @@ links = [
 ]
 fits = [
   { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
-  { kit = "kit/axial/scx10-iii", type = "replaces", replaces = "part/axial/AXI232034", source = "doc/axial/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/axial/scx10-iii", type = "direct", replaces = "part/axial/AXI232034", source = "doc/axial/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "spur-gear"
 teeth = 40

@@ -11,6 +11,6 @@ category = "tire"
 gtin = "605482672525"
 fits = [
   { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
-  { kit = "kit/axial/rbx10", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/rbx10", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
 ]

@@ -1,7 +1,7 @@
 id = "part/tlr/TLR144000"
 brand = "brand/tlr"
 number = "TLR144000"
-name = "Lwr Shck Mount 4-Link BarSet ,15\""
+name = "Lwr Shck Mount 4-Link BarSet,15\""
 pack_qty = 4
 pack_qty_basis = "page"
 applies_to = "LMT, TTLMT"
@@ -11,6 +11,6 @@ links = [
 category = "chassis"
 fits = [
   { kit = "kit/losi/lmt", type = "direct", source = "doc/tlr/horizon-part-pages" },
-  { kit = "kit/losi/lmt-mega-truck", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/losi/lmt-mega-truck", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
 ]
 gtin = "605482169841"

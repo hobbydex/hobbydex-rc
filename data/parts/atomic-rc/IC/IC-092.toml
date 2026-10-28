@@ -3,9 +3,9 @@ brand = "brand/atomic-rc"
 number = "IC-092"
 name = "Balance Charging Wire for AMZ series- [For XT 60 Plug ]"
 fits = [
-  { kit = "kit/atomic-rc/amz", type = "direct", source = "doc/atomic-rc/site" },
-  { kit = "kit/atomic-rc/amr", type = "direct", source = "doc/atomic-rc/site" },
-  { kit = "kit/atomic-rc/bz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/amz", type = "replaces", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/amr", type = "replaces", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/bz", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site"]
 links = [

@@ -9,6 +9,6 @@ category = "steering"
 material = "aluminium"
 material_grade = "7075-T6"
 fits = [
-  { kit = "kit/xray/gtx8", type = "replaces", replaces = "part/xray/352240", source = "doc/xray/gtx8-2024-manual", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/xray/gtxe", type = "replaces", replaces = "part/xray/352240", source = "doc/xray/gtxe-2023-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/gtx8", type = "direct", replaces = "part/xray/352240", source = "doc/xray/gtx8-2024-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/gtxe", type = "direct", replaces = "part/xray/352240", source = "doc/xray/gtxe-2023-manual", notes = "Same part in another material (link_upgrades.py)" },
 ]

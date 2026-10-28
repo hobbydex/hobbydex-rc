@@ -5,6 +5,6 @@ name = "QRC Clutch Pin"
 category = "pin"
 fits = [
   { kit = "kit/kyosho/megaforce", type = "direct", source = "doc/kyosho/31181-megaforce-p" },
-  { kit = "kit/kyosho/megaforce-jr", type = "direct", source = "doc/kyosho/31231-megaforcejr-p" },
+  { kit = "kit/kyosho/megaforce-jr", type = "replaces", source = "doc/kyosho/31231-megaforcejr-p" },
 ]
 documents = ["doc/kyosho/31181-megaforce-p", "doc/kyosho/31231-megaforcejr-p"]

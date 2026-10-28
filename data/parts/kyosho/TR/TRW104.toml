@@ -7,8 +7,8 @@ gtin = "4548565100828"
 category = "chassis"
 documents = ["doc/kyosho/trw104-product-page"]
 fits = [
-  { kit = "kit/kyosho/dst", type = "direct", source = "doc/kyosho/31097t2-dst-kt-6-mm-p" },
-  { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-spop" },
+  { kit = "kit/kyosho/dst", type = "replaces", source = "doc/kyosho/31097t2-dst-kt-6-mm-p" },
+  { kit = "kit/kyosho/drt", type = "replaces", source = "doc/kyosho/31082-mm01-drt-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/trw104.html" },

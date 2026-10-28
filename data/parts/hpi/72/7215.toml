@@ -7,7 +7,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/cup-racer", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/switch", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/switch", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 category = "body"
 depicts = { make = "BMW", model = "2002 Turbo" }

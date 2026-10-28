@@ -11,9 +11,9 @@ fits = [
   { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
   { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages" },
   { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-part-pages" },
-  { kit = "kit/tlr/22x", type = "replaces", replaces = "part/tlr/TLR231078", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/tlr/22x-4", type = "replaces", replaces = "part/tlr/TLR231078", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR231078", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x", type = "direct", replaces = "part/tlr/TLR231078", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x-4", type = "direct", replaces = "part/tlr/TLR231078", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x-t", type = "direct", replaces = "part/tlr/TLR231078", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "steel"
 gtin = "660132648725"

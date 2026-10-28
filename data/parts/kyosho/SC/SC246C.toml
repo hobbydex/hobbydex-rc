@@ -7,7 +7,7 @@ category = "chassis"
 documents = ["doc/kyosho/sc246c-product-page"]
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30646-mm01-spop" },
-  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
+  { kit = "kit/kyosho/ultima", type = "replaces", source = "doc/kyosho/30625-mm03-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/sc246c.html" },

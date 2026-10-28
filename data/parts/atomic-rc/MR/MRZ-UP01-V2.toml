@@ -3,7 +3,7 @@ brand = "brand/atomic-rc"
 number = "MRZ-UP01-V2"
 name = "MRZ Metal Servo Saver (Atomic 1820)"
 fits = [
-  { kit = "kit/atomic-rc/mrz", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrz", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site", "doc/atomic-rc/mrz-up01-v2-mrz-servo-saver-v2-v1-0"]
 links = [

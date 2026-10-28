@@ -6,7 +6,7 @@ name_ja = "RO1.0用 ステアリングブロック プレート"
 category = "steering"
 fits = [
   { kit = "kit/yokomo/ro", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
-  { kit = "kit/yokomo/so", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
+  { kit = "kit/yokomo/so", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
   { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
 ]
 links = [

@@ -6,9 +6,9 @@ gtin = "020334529602"
 pack_qty = 1
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/traxxas/nitro-slash", type = "direct", source = "doc/traxxas/44056-3-parts-list" },
-  { kit = "kit/traxxas/nitro-rustler", type = "direct", source = "doc/traxxas/44096-3-parts-list" },
-  { kit = "kit/traxxas/t-maxx", type = "direct", source = "doc/traxxas/49104-1-parts-list" },
+  { kit = "kit/traxxas/nitro-slash", type = "replaces", source = "doc/traxxas/44056-3-parts-list" },
+  { kit = "kit/traxxas/nitro-rustler", type = "replaces", source = "doc/traxxas/44096-3-parts-list" },
+  { kit = "kit/traxxas/t-maxx", type = "replaces", source = "doc/traxxas/49104-1-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/5296-90-degree-pipe-inlet-fitting" },

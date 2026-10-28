@@ -6,8 +6,8 @@ pack_qty = 2
 pack_qty_basis = "page"
 gtin = "4944925035609"
 fits = [
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
-  { kit = "kit/mugen/mtc1", type = "direct", source = "doc/mugen/mtc1-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc1", type = "replaces", source = "doc/mugen/mtc1-part-list" },
 ]
 category = "drivetrain"
 links = [

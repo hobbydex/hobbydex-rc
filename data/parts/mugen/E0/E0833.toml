@@ -4,8 +4,8 @@ number = "E0833"
 name = "FUEL TANK"
 gtin = "4944925019937"
 fits = [
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6t-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6t-part-list" },
 ]
 category = "engine-fuel"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/FUEL-TANK-MBX6T-150CC/E0833" } ]

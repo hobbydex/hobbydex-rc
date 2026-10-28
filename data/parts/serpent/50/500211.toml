@@ -5,11 +5,11 @@ name = "Wheelhexagon +0.75mm offset"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/medius-x20fwd", type = "direct", source = "doc/serpent/medius-x20fwd-21-carbon-options" },
+  { kit = "kit/serpent/medius-x20fwd", type = "replaces", source = "doc/serpent/medius-x20fwd-21-carbon-options" },
   { kit = "kit/serpent/spyder-srx2", type = "direct", source = "doc/serpent/spyder-srx-2-mm-rtr-parts" },
-  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-23-carbon-options" },
-  { kit = "kit/serpent/medius-x20-mid", type = "direct", source = "doc/serpent/medius-x20-mid-alu-options" },
-  { kit = "kit/serpent/project-4x", type = "direct", source = "doc/serpent/project-4x-pro-options" },
+  { kit = "kit/serpent/medius-x20", type = "replaces", source = "doc/serpent/medius-x20-23-carbon-options" },
+  { kit = "kit/serpent/medius-x20-mid", type = "replaces", source = "doc/serpent/medius-x20-mid-alu-options" },
+  { kit = "kit/serpent/project-4x", type = "replaces", source = "doc/serpent/project-4x-pro-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser500211" },

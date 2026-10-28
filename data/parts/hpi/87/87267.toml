@@ -8,8 +8,8 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/cup-racer", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/cyber-10b", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/formula-ten", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/cyber-10b", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/formula-ten", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 pack_qty_basis = "name"
 color = "orange"

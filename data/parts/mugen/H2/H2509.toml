@@ -6,12 +6,12 @@ gtin = "4944925033315"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7r-part-list" },
+  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-part-list" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtx6", type = "replaces", source = "doc/mugen/mtx-6r-part-list" },
 ]
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/FRONT-SPRING-SHEET-ALUMINUM-2PCS./H2509" } ]

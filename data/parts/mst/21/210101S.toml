@@ -5,9 +5,9 @@ name = "Alum. Servo mount (silver)"
 pack_qty = 2
 applies_to = "XXX-D / MS-01D / FS-01D"
 fits = [
-  { kit = "kit/mst/xxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/ms-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fs-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/xxx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/ms-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fs-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
 ]
 notes = "Option parts list: Only for MS-01D 2WD"
 category = "chassis"

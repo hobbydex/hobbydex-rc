@@ -7,7 +7,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-front-axle-titanium-22x-t/TLR-1249.html" },
 ]
 fits = [
-  { kit = "kit/tlr/22x-t", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
+  { kit = "kit/tlr/22x-t", type = "replaces", source = "doc/tlr/horizon-product-catalogue" },
   { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR-1156", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR-1250", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR232070", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },

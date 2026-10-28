@@ -5,8 +5,8 @@ name = "BODY STIFFENER"
 gtin = "4944925000546"
 fits = [
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
+  { kit = "kit/mugen/mrx4", type = "replaces", source = "doc/mugen/mrx-4r-part-list" },
+  { kit = "kit/mugen/mrx4", type = "replaces", source = "doc/mugen/mrx-4-part-list" },
   { kit = "kit/mugen/mrx3", type = "direct", source = "doc/mugen/mrx-3-part-list" },
 ]
 category = "body"

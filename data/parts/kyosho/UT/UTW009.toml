@@ -6,11 +6,11 @@ gtin = "4548565456468"
 category = "shock-spring"
 documents = ["doc/kyosho/utw009-product-page"]
 fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
-  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
-  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
+  { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima", type = "replaces", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/turbo-optima", type = "replaces", source = "doc/kyosho/30623-mm02-spop" },
   { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop" },
-  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30643-mid-87wc-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30643-mid-87wc-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/utw009.html" },

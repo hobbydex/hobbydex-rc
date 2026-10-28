@@ -8,7 +8,7 @@ links = [
 fits = [
   { kit = "kit/hpi/bullet-mt", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101210" },
   { kit = "kit/hpi/bullet-st", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101210" },
-  { kit = "kit/hpi/wr8", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/101210" },
+  { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages", replaces = "part/hpi/101210" },
 ]
 category = "chassis"
 material = "aluminium"

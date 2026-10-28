@@ -7,9 +7,9 @@ gtin = "4955439724866"
 category = "tire"
 documents = ["doc/kyosho/w5651h-product-page"]
 fits = [
-  { kit = "kit/kyosho/dst", type = "direct", source = "doc/kyosho/31097t2-dst-kt-6-mm-p" },
-  { kit = "kit/kyosho/inferno-mp7-5", type = "direct", source = "doc/kyosho/31191-inferno-kanai-p" },
-  { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31779-infmp777-sp2-p" },
+  { kit = "kit/kyosho/dst", type = "replaces", source = "doc/kyosho/31097t2-dst-kt-6-mm-p" },
+  { kit = "kit/kyosho/inferno-mp7-5", type = "replaces", source = "doc/kyosho/31191-inferno-kanai-p" },
+  { kit = "kit/kyosho/inferno-mp777", type = "replaces", source = "doc/kyosho/31779-infmp777-sp2-p" },
 ]
 scale = "1/8"
 mounting = "pre-mounted"

@@ -3,10 +3,10 @@ brand = "brand/kyosho"
 number = "37051"
 name = "LE MANS 240S ESC (60A/MAX13.5 Turn)"
 fits = [
-  { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34418-fazer-1969-chevy-camaro-spop" },
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
-  { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/30635-fantom-ep-4wd-spop" },
-  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { kit = "kit/kyosho/fazer-mk2", type = "replaces", source = "doc/kyosho/34418-fazer-1969-chevy-camaro-spop" },
+  { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/javelin-parts-list-en-v01" },
+  { kit = "kit/kyosho/fantom-ep-4wd", type = "replaces", source = "doc/kyosho/30635-fantom-ep-4wd-spop" },
+  { kit = "kit/kyosho/2rsa", type = "replaces", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
 ]
 category = "esc"
 documents = ["doc/kyosho/30635-fantom-ep-4wd-spop", "doc/kyosho/34361t1-t2-outlaw-rampage-spop", "doc/kyosho/34418-fazer-1969-chevy-camaro-spop"]

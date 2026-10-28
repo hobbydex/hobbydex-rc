@@ -9,7 +9,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-chassis-brace-rear-black-aluminum--dbxl-e/LOS351007.html" },
 ]
 fits = [
-  { kit = "kit/losi/dbxl-e", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/dbxl-e", type = "replaces", source = "doc/losi/horizon-product-catalogue" },
   { kit = "kit/losi/dbxl", type = "replaces", replaces = "part/losi/LOS251116", source = "doc/losi/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"

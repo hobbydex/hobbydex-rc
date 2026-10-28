@@ -5,9 +5,9 @@ name = "Gear, 26-T pinion (1.0 metric pitch) (fits 5mm shaft)/ set screw"
 gtin = "020334649706"
 category = "pinion"
 fits = [
-  { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },
-  { kit = "kit/traxxas/funco", type = "direct", source = "doc/traxxas/109076-4-parts-list" },
-  { kit = "kit/traxxas/maxx", type = "direct", source = "doc/traxxas/89086-4-parts-list" },
+  { kit = "kit/traxxas/maxx-slash", type = "replaces", source = "doc/traxxas/102076-4-parts-list" },
+  { kit = "kit/traxxas/funco", type = "replaces", source = "doc/traxxas/109076-4-parts-list" },
+  { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/traxxas/89086-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/6497-26-tooth-pinion-gear-10-mod-5-mm-bore" },

@@ -5,11 +5,11 @@ name = "Gear, 22-T pinion (1.0 metric pitch) (fits 5mm shaft)/ set screw (for us
 gtin = "020334649591"
 category = "pinion"
 fits = [
-  { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },
-  { kit = "kit/traxxas/funco", type = "direct", source = "doc/traxxas/109076-4-parts-list" },
-  { kit = "kit/traxxas/x-monster", type = "direct", source = "doc/traxxas/77036-4-parts-list" },
-  { kit = "kit/traxxas/xrt", type = "direct", source = "doc/traxxas/78086-4-parts-list" },
-  { kit = "kit/traxxas/maxx", type = "direct", source = "doc/traxxas/89086-4-parts-list" },
+  { kit = "kit/traxxas/maxx-slash", type = "replaces", source = "doc/traxxas/102076-4-parts-list" },
+  { kit = "kit/traxxas/funco", type = "replaces", source = "doc/traxxas/109076-4-parts-list" },
+  { kit = "kit/traxxas/x-monster", type = "replaces", source = "doc/traxxas/77036-4-parts-list" },
+  { kit = "kit/traxxas/xrt", type = "replaces", source = "doc/traxxas/78086-4-parts-list" },
+  { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/traxxas/89086-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/6495x-22-tooth-pinion-gear-10-mod-5-mm-bore" },

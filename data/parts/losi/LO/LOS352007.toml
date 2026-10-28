@@ -8,7 +8,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-pinion-gear-and-hardware-21t-1.5m-5ive-t-2.0/LOS352007.html" },
 ]
 fits = [
-  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/5ive-t", type = "replaces", source = "doc/losi/horizon-product-catalogue" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/mod1.5-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

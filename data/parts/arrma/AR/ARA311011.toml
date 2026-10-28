@@ -13,7 +13,7 @@ equivalent_to = [
 ]
 fits = [
   { kit = "kit/arrma/infraction-3s", type = "direct", source = "doc/arrma/horizon-part-pages" },
-  { kit = "kit/arrma/kraton-4s", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/arrma/outcast-4s", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/arrma/vendetta", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/kraton-4s", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/outcast-4s", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/vendetta", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
 ]

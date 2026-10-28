@@ -9,13 +9,13 @@ category = "nut"
 color = "black"
 range = "traxxas/7758-colours"
 fits = [
-  { kit = "kit/traxxas/funco", type = "direct", source = "doc/traxxas/109076-4-parts-list" },
-  { kit = "kit/traxxas/x-monster", type = "direct", source = "doc/traxxas/77036-4-parts-list" },
-  { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/traxxas/77096-4-parts-list" },
-  { kit = "kit/traxxas/xrt", type = "direct", source = "doc/traxxas/78086-4-parts-list" },
-  { kit = "kit/traxxas/maxx", type = "direct", source = "doc/traxxas/89087-4-parts-list" },
+  { kit = "kit/traxxas/funco", type = "replaces", source = "doc/traxxas/109076-4-parts-list" },
+  { kit = "kit/traxxas/x-monster", type = "replaces", source = "doc/traxxas/77036-4-parts-list" },
+  { kit = "kit/traxxas/x-maxx", type = "replaces", source = "doc/traxxas/77096-4-parts-list" },
+  { kit = "kit/traxxas/xrt", type = "replaces", source = "doc/traxxas/78086-4-parts-list" },
+  { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/traxxas/89087-4-parts-list" },
   { kit = "kit/traxxas/jato", type = "direct", source = "doc/traxxas/90154-4-parts-list" },
-  { kit = "kit/traxxas/sledge", type = "direct", source = "doc/traxxas/95096-4-parts-list" },
+  { kit = "kit/traxxas/sledge", type = "replaces", source = "doc/traxxas/95096-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/7758a-serrated-17-mm-black-aluminum-splined-wheel-nuts-4" },

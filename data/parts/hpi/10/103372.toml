@@ -7,7 +7,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 category = "spur-gear"
 teeth = 83

@@ -3,7 +3,7 @@ brand = "brand/atomic-rc"
 number = "MRTP-UP10"
 name = "MRT, DRZV2 Ball Differential"
 fits = [
-  { kit = "kit/atomic-rc/mrt", type = "direct", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrt", type = "replaces", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site", "doc/atomic-rc/mrtp-up10-mrt-ball-differential-manual-v1-0"]
 links = [

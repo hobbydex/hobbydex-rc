@@ -6,8 +6,8 @@ gtin = "4944925041419"
 pack_qty = 2
 pack_qty_basis = "name"
 fits = [
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2r-part-list" },
+  { kit = "kit/mugen/mtc2", type = "replaces", source = "doc/mugen/mtc2-part-list" },
 ]
 category = "chassis"
 links = [

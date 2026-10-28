@@ -5,10 +5,10 @@ name = "Rebuild kit, GTR shocks (x-rings, bladders, pistons, piston nuts, shock 
 gtin = "020334845504"
 category = "nut"
 fits = [
-  { kit = "kit/traxxas/mini-maxx", type = "direct", source = "doc/traxxas/107154-1-parts-list" },
-  { kit = "kit/traxxas/mini-rally", type = "direct", source = "doc/traxxas/108046-1-parts-list" },
-  { kit = "kit/traxxas/mini-xrt", type = "direct", source = "doc/traxxas/108076-1-parts-list" },
-  { kit = "kit/traxxas/mini-slash", type = "direct", source = "doc/traxxas/108164-1-parts-list" },
+  { kit = "kit/traxxas/mini-maxx", type = "replaces", source = "doc/traxxas/107154-1-parts-list" },
+  { kit = "kit/traxxas/mini-rally", type = "replaces", source = "doc/traxxas/108046-1-parts-list" },
+  { kit = "kit/traxxas/mini-xrt", type = "replaces", source = "doc/traxxas/108076-1-parts-list" },
+  { kit = "kit/traxxas/mini-slash", type = "replaces", source = "doc/traxxas/108164-1-parts-list" },
   { kit = "kit/traxxas/udr", type = "direct", source = "doc/traxxas/85086-4-parts-list" },
 ]
 links = [

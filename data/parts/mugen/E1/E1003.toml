@@ -3,8 +3,8 @@ brand = "brand/mugen"
 number = "E1003"
 name = "INNER FOAM S"
 fits = [
-  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
-  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
+  { kit = "kit/mugen/mbx5", type = "replaces", source = "doc/mugen/mbx5r-part-list" },
+  { kit = "kit/mugen/mbx5", type = "replaces", source = "doc/mugen/mbx-5-part-list" },
 ]
 category = "chassis"
 documents = ["doc/mugen/mbx-5-part-list", "doc/mugen/mbx5r-part-list"]

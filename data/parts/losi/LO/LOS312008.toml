@@ -9,7 +9,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-aluminum-axle-housing-set-black-mini-lmt/LOS312008.html" },
 ]
 fits = [
-  { kit = "kit/losi/mini-lmt", type = "direct", source = "doc/losi/horizon-product-catalogue" },
+  { kit = "kit/losi/mini-lmt", type = "replaces", source = "doc/losi/horizon-product-catalogue" },
   { kit = "kit/losi/mini-lmt", type = "replaces", replaces = "part/losi/LOS212035", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "drivetrain"

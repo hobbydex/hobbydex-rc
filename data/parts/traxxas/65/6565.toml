@@ -5,15 +5,15 @@ name = "Data link, telemetry expander (connects #6550X telemetry expander 2.0 to
 gtin = "020334656506"
 category = "suspension"
 fits = [
-  { kit = "kit/traxxas/funco", type = "direct", source = "doc/traxxas/109076-4-parts-list" },
-  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/110056-4-parts-list" },
-  { kit = "kit/traxxas/x-monster", type = "direct", source = "doc/traxxas/77036-4-parts-list" },
-  { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/traxxas/77096-4-parts-list" },
-  { kit = "kit/traxxas/xrt", type = "direct", source = "doc/traxxas/78086-4-parts-list" },
-  { kit = "kit/traxxas/udr", type = "direct", source = "doc/traxxas/85086-4-parts-list" },
-  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88296-4-parts-list" },
-  { kit = "kit/traxxas/maxx", type = "direct", source = "doc/traxxas/89086-4-parts-list" },
-  { kit = "kit/traxxas/sledge", type = "direct", source = "doc/traxxas/95096-4-parts-list" },
+  { kit = "kit/traxxas/funco", type = "replaces", source = "doc/traxxas/109076-4-parts-list" },
+  { kit = "kit/traxxas/trx-4", type = "replaces", source = "doc/traxxas/110056-4-parts-list" },
+  { kit = "kit/traxxas/x-monster", type = "replaces", source = "doc/traxxas/77036-4-parts-list" },
+  { kit = "kit/traxxas/x-maxx", type = "replaces", source = "doc/traxxas/77096-4-parts-list" },
+  { kit = "kit/traxxas/xrt", type = "replaces", source = "doc/traxxas/78086-4-parts-list" },
+  { kit = "kit/traxxas/udr", type = "replaces", source = "doc/traxxas/85086-4-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "replaces", source = "doc/traxxas/88296-4-parts-list" },
+  { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/traxxas/89086-4-parts-list" },
+  { kit = "kit/traxxas/sledge", type = "replaces", source = "doc/traxxas/95096-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/6565-maxx-link-data-cable" },

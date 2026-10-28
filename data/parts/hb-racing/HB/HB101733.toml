@@ -6,7 +6,7 @@ links = [
   { site = "Hot Bodies (archived)", url = "https://web.archive.org/web/20120506140630/http://hotbodiesonline.com:80/products/en/101733.html", kind = "archive" },
 ]
 fits = [
-  { kit = "kit/hb-racing/tcx", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
-  { kit = "kit/hb-racing/tc-fd", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/tcx", type = "replaces", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/tc-fd", type = "replaces", source = "doc/hb-racing/hotbodiesonline-part-pages" },
 ]
 category = "motor"

@@ -9,7 +9,7 @@ links = [
 fits = [
   { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/baja-5sc", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/baja-5t", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/baja-5t", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 pack_qty_basis = "name"
 category = "wheel"

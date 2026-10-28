@@ -10,8 +10,8 @@ color = "green"
 material = "aluminium"
 range = "traxxas/8169-colours"
 fits = [
-  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/82056-4-parts-list" },
-  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88086-4-parts-list" },
+  { kit = "kit/traxxas/trx-4", type = "replaces", source = "doc/traxxas/82056-4-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "replaces", source = "doc/traxxas/88086-4-parts-list" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for TRX-4 Land Rover Defender Trail Truck RTR (82056-4) are 12 mm" },

@@ -11,9 +11,9 @@ category = "shock-spring"
 fits = [
   { kit = "kit/traxxas/bigfoot", type = "direct", source = "doc/traxxas/36034-8-parts-list" },
   { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/traxxas/36254-8-parts-list" },
-  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/traxxas/37054-8-parts-list" },
-  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67010-4-parts-list" },
-  { kit = "kit/traxxas/bigfoot-4x4", type = "direct", source = "doc/traxxas/67134-4-parts-list" },
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/traxxas/37054-8-parts-list" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/traxxas/67010-4-parts-list" },
+  { kit = "kit/traxxas/bigfoot-4x4", type = "replaces", source = "doc/traxxas/67134-4-parts-list" },
   { kit = "kit/traxxas/skully", type = "direct", source = "doc/traxxas/36064-1-exploded-front-assembly" },
 ]
 links = [

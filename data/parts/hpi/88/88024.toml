@@ -7,7 +7,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/brama-10b", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/e10", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 category = "pinion"
 teeth = 24

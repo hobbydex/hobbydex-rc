@@ -5,11 +5,11 @@ name = "Clutch Shoe (Red)"
 gtin = "4955439739525"
 color = "red"
 fits = [
-  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
-  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "replaces", source = "doc/kyosho/31255-vonerr-evo-p" },
   { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
   { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31283-evolva-p" },
-  { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/fw-05r", type = "replaces", source = "doc/kyosho/31581-fw05r-p" },
 ]
 category = "engine-fuel"
 links = [

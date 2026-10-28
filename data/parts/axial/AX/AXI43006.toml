@@ -12,8 +12,8 @@ beadlock = true
 gtin = "605482672501"
 fits = [
   { kit = "kit/axial/bomber", type = "direct", source = "doc/axial/horizon-part-pages" },
-  { kit = "kit/axial/rbx10", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/rbx10", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
 ]
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for RR10 Bomber 4WD Rock Racer RTR, Slawson are 12 mm" },

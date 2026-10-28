@@ -5,7 +5,7 @@ name = "SERVO SAVER SPRING"
 gtin = "4944925032592"
 fits = [
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7-part-list" },
 ]
 category = "steering"
 documents = ["doc/mugen/mrx6-part-list", "doc/mugen/mtx7-part-list"]

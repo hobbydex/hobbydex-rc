@@ -4,11 +4,11 @@ number = "H0752"
 name = "CENTRIFUGAL SHOE"
 gtin = "4944925807527"
 fits = [
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
+  { kit = "kit/mugen/mrx4", type = "replaces", source = "doc/mugen/mrx-4r-part-list" },
+  { kit = "kit/mugen/mrx4", type = "replaces", source = "doc/mugen/mrx-4-part-list" },
   { kit = "kit/mugen/mrx3", type = "direct", source = "doc/mugen/mrx-3-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx-4-part-list" },
+  { kit = "kit/mugen/mtx4", type = "replaces", source = "doc/mugen/mtx4-r-part-list" },
+  { kit = "kit/mugen/mtx4", type = "replaces", source = "doc/mugen/mtx-4-part-list" },
   { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
 ]
 links = [

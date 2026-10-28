@@ -7,7 +7,7 @@ pitch_dp = 48
 notes = "48 pitch: the on-road spur gear it meshes with (R10053-R10055) is MOD0.53 / 48P; the pinion's page states no pitch"
 fits = [
   { kit = "kit/rlaarlo/ak-787", type = "direct", source = "doc/rlaarlo/store" },
-  { kit = "kit/rlaarlo/ak-917", type = "direct", source = "doc/rlaarlo/store" },
+  { kit = "kit/rlaarlo/ak-917", type = "replaces", source = "doc/rlaarlo/store" },
 ]
 links = [
   { site = "Rlaarlo", url = "https://rlaarlo.com/products/pinion-gear-for-1-10-scale" },

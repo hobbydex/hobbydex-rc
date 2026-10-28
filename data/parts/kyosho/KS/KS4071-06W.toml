@@ -4,8 +4,8 @@ number = "KS4071-06W"
 name = "Servo KS4071-06W"
 fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34413t1-mad-van-mooneyes-spop" },
-  { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34364-outlawrenegade-spop" },
-  { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
+  { kit = "kit/kyosho/2rsa", type = "replaces", source = "doc/kyosho/34364-outlawrenegade-spop" },
+  { kit = "kit/kyosho/ez-series", type = "replaces", source = "doc/kyosho/34405-sandmaster2-0-spop" },
 ]
 category = "servo"
 documents = ["doc/kyosho/34364-outlawrenegade-spop", "doc/kyosho/34365-outlawrampage-pro2-0-spop", "doc/kyosho/34405-sandmaster2-0-spop"]

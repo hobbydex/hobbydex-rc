@@ -10,9 +10,9 @@ color = "black"
 range = "traxxas/2555-colours"
 fits = [
   { kit = "kit/traxxas/slash-2wd", type = "direct", source = "doc/traxxas/104354-74-parts-list" },
-  { kit = "kit/traxxas/nitro-slash", type = "direct", source = "doc/traxxas/44056-3-parts-list" },
-  { kit = "kit/traxxas/nitro-rustler", type = "direct", source = "doc/traxxas/44096-3-parts-list" },
-  { kit = "kit/traxxas/ford-raptor", type = "direct", source = "doc/traxxas/58094-8-parts-list" },
+  { kit = "kit/traxxas/nitro-slash", type = "replaces", source = "doc/traxxas/44056-3-parts-list" },
+  { kit = "kit/traxxas/nitro-rustler", type = "replaces", source = "doc/traxxas/44096-3-parts-list" },
+  { kit = "kit/traxxas/ford-raptor", type = "replaces", source = "doc/traxxas/58094-8-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/2555x-black-heavy-duty-rear-suspension-arms-2" },

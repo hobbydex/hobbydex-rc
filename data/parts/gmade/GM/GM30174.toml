@@ -4,10 +4,10 @@ number = "GM30174"
 name = "GS02F stainless steel steering guard"
 applies_to = "GS02F BOM, GS02F KOMODO DOUBLE CAB, GS02F MILITARY BUFFALO, GS02F BUFFALO"
 fits = [
-  { kit = "kit/gmade/gs02f-bom", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BOM option parts" },
-  { kit = "kit/gmade/gs02f-komodo-double-cab", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F KOMODO DOUBLE CAB option parts" },
-  { kit = "kit/gmade/gs02f-military-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F MILITARY BUFFALO option parts" },
-  { kit = "kit/gmade/gs02f-buffalo", type = "direct", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO option parts" },
+  { kit = "kit/gmade/gs02f-bom", type = "replaces", source = "doc/gmade/store", notes = "Listed under GS02F BOM option parts" },
+  { kit = "kit/gmade/gs02f-komodo-double-cab", type = "replaces", source = "doc/gmade/store", notes = "Listed under GS02F KOMODO DOUBLE CAB option parts" },
+  { kit = "kit/gmade/gs02f-military-buffalo", type = "replaces", source = "doc/gmade/store", notes = "Listed under GS02F MILITARY BUFFALO option parts" },
+  { kit = "kit/gmade/gs02f-buffalo", type = "replaces", source = "doc/gmade/store", notes = "Listed under GS02F BUFFALO option parts" },
 ]
 links = [
   { site = "Gmade", url = "https://www.gmade.net/product/gmade-gs02f-stainless-steel-steering-guard/1960/" },

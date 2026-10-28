@@ -6,9 +6,9 @@ gtin = "4548565302710"
 category = "chassis"
 documents = ["doc/kyosho/otw104gm-product-page"]
 fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
-  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30619-07-turbo-optima-spop" },
-  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/javelin-parts-list-en-v01" },
+  { kit = "kit/kyosho/turbo-optima", type = "replaces", source = "doc/kyosho/30619-07-turbo-optima-spop" },
+  { kit = "kit/kyosho/optima-pro", type = "replaces", source = "doc/kyosho/30620-mm02-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/otw104gm.html" },

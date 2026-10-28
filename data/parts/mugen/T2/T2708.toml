@@ -4,11 +4,11 @@ number = "T2708"
 name = "1st. PINION GEAR (14T)"
 gtin = "4944925024610"
 fits = [
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-option-parts-page" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7r-option-parts-page" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7r-part-list" },
+  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtx6", type = "replaces", source = "doc/mugen/mtx-6r-part-list" },
+  { kit = "kit/mugen/mtx6", type = "replaces", source = "doc/mugen/mtx-6-part-list" },
 ]
 category = "pinion"
 teeth = 14

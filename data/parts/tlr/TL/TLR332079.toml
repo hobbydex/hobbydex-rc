@@ -9,7 +9,7 @@ links = [
 category = "chassis"
 material = "aluminium"
 fits = [
-  { kit = "kit/tlr/22x-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/tlr/22x-4", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/tlr/22x-4", type = "replaces", replaces = "part/tlr/TLR232124", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 gtin = "605482671313"

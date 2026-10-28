@@ -7,8 +7,8 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/savage-flux", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/savage-xl", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-x", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xl", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 category = "spur-gear"
 teeth = 44

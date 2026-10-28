@@ -5,10 +5,10 @@ name = "Gear, 18-T pinion (machined) (1.0 metric pitch) (fits 5mm shaft)/ set sc
 gtin = "020334649188"
 category = "pinion"
 fits = [
-  { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },
+  { kit = "kit/traxxas/maxx-slash", type = "replaces", source = "doc/traxxas/102076-4-parts-list" },
   { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/traxxas/77097-4-parts-list" },
-  { kit = "kit/traxxas/maxx", type = "direct", source = "doc/traxxas/89086-4-parts-list" },
-  { kit = "kit/traxxas/sledge", type = "direct", source = "doc/traxxas/95096-4-parts-list" },
+  { kit = "kit/traxxas/maxx", type = "replaces", source = "doc/traxxas/89086-4-parts-list" },
+  { kit = "kit/traxxas/sledge", type = "replaces", source = "doc/traxxas/95096-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/6491r-18-tooth-machined-pinion-gear-10-mod-5-mm-bore" },

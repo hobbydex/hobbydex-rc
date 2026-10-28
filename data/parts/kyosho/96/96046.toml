@@ -10,11 +10,11 @@ fits = [
   { kit = "kit/kyosho/kb10l", type = "direct", source = "doc/kyosho/34703-kb10l-tacoma-spop" },
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
-  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
-  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp-fw05ske-p" },
-  { kit = "kit/kyosho/v-one-sr", type = "direct", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/31102-vone-rr-p" },
+  { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31480jp-fw05ske-p" },
+  { kit = "kit/kyosho/v-one-sr", type = "replaces", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
   { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31258-vonerrr-wcte-p" },
-  { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31584-fw05rr-kce-m" },
+  { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/31584-fw05rr-kce-m" },
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822t02f-tf5-readyset-p" },
 ]
 category = "washer-shim"

@@ -3,11 +3,11 @@ brand = "brand/serpent"
 number = "601280"
 name = "HTD diff X-shaft alu SRX8"
 fits = [
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8gtr-ec-options" },
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8e-gen4-options" },
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-gen4-options" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8gte-r-options" },
-  { kit = "kit/serpent/f190", type = "direct", source = "doc/serpent/f190-options" },
+  { kit = "kit/serpent/srx8-gt", type = "replaces", source = "doc/serpent/srx8gtr-ec-options" },
+  { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8e-gen4-options" },
+  { kit = "kit/serpent/srx8", type = "replaces", source = "doc/serpent/srx8-gen4-options" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8gte-r-options" },
+  { kit = "kit/serpent/f190", type = "replaces", source = "doc/serpent/f190-options" },
   { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-parts" },
 ]
 links = [

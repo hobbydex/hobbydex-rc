@@ -4,8 +4,8 @@ number = "E0311"
 name = "SERVO SAVER PLATE 5mm"
 fits = [
   { kit = "kit/mugen/mbx5t", type = "direct", source = "doc/mugen/mbx-5t-part-list" },
-  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
-  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
+  { kit = "kit/mugen/mbx5", type = "replaces", source = "doc/mugen/mbx5r-part-list" },
+  { kit = "kit/mugen/mbx5", type = "replaces", source = "doc/mugen/mbx-5-part-list" },
 ]
 category = "steering"
 documents = ["doc/mugen/mbx-5-part-list", "doc/mugen/mbx-5t-part-list", "doc/mugen/mbx5r-part-list"]

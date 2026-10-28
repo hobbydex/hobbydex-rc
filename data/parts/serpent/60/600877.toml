@@ -5,10 +5,10 @@ name = "Wheel axle alu SRX8"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8gtr-ec-options" },
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-pro-options" },
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-pro-options" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-23-options" },
+  { kit = "kit/serpent/srx8-gt", type = "replaces", source = "doc/serpent/srx8gtr-ec-options" },
+  { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8-e-pro-options" },
+  { kit = "kit/serpent/srx8", type = "replaces", source = "doc/serpent/srx8-pro-options" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8-gte-23-options" },
   { kit = "kit/serpent/srx8", type = "replaces", replaces = "part/serpent/600780", source = "doc/serpent/srx8-pro-options", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/serpent/srx8-gt", type = "replaces", replaces = "part/serpent/600780", source = "doc/serpent/srx8gtr-ec-options", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/serpent/srx8-gte", type = "replaces", replaces = "part/serpent/600780", source = "doc/serpent/srx8-gte-23-options", notes = "Same part in another material (link_upgrades.py)" },

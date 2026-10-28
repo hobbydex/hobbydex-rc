@@ -5,8 +5,8 @@ name = "Mount, telemetry expander"
 gtin = "020334656100"
 category = "chassis"
 fits = [
-  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/110056-4-parts-list" },
-  { kit = "kit/traxxas/trx-6", type = "direct", source = "doc/traxxas/88086-4-parts-list" },
+  { kit = "kit/traxxas/trx-4", type = "replaces", source = "doc/traxxas/110056-4-parts-list" },
+  { kit = "kit/traxxas/trx-6", type = "replaces", source = "doc/traxxas/88086-4-parts-list" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/6561-trx-4-telemetry-expander-mount" },

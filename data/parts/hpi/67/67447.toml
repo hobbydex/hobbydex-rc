@@ -7,10 +7,10 @@ links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/67447" },
 ]
 fits = [
-  { kit = "kit/hpi/apache-c1", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/apache-sc", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/apache-c1", type = "replaces", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/apache-sc", type = "replaces", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/d8s", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/vorza-buggy", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/vorza-buggy", type = "replaces", source = "doc/hpi/part-pages" },
 ]
 pack_qty_basis = "name"
 color = "white"

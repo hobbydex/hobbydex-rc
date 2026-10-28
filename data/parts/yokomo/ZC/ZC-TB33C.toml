@@ -7,7 +7,7 @@ material = "titanium"
 category = "turnbuckle"
 fits = [
   { kit = "kit/yokomo/dpm", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for DPM" },
-  { kit = "kit/yokomo/sd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0" },
+  { kit = "kit/yokomo/sd", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD1.0" },
   { kit = "kit/yokomo/sd-sports", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SD Sports" },
   { kit = "kit/yokomo/yd-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YD-2, YD-2S" },
 ]

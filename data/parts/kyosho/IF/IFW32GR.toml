@@ -7,10 +7,10 @@ gtin = "4955439739341"
 documents = ["doc/kyosho/ifw32gr-product-page"]
 color = "green"
 fits = [
-  { kit = "kit/kyosho/inferno-mp7-5", type = "direct", source = "doc/kyosho/31081-inferno-mp75-p" },
-  { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31777-infernomp777-p" },
-  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/31221-madforce-p" },
-  { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-p" },
+  { kit = "kit/kyosho/inferno-mp7-5", type = "replaces", source = "doc/kyosho/31081-inferno-mp75-p" },
+  { kit = "kit/kyosho/inferno-mp777", type = "replaces", source = "doc/kyosho/31777-infernomp777-p" },
+  { kit = "kit/kyosho/mad-force", type = "replaces", source = "doc/kyosho/31221-madforce-p" },
+  { kit = "kit/kyosho/giga-crusher", type = "replaces", source = "doc/kyosho/31441-gigacrusher-p" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ifw32gr.html" },

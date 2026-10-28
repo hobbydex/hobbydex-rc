@@ -4,8 +4,8 @@ number = "210408"
 name = "FXX-D S Strengthen lower deck"
 applies_to = "FSX-D ( S ) / FXX-D ( S / RTR / S_IFS )"
 fits = [
-  { kit = "kit/mst/fsx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fsx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fxx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
 ]
 category = "chassis"
 documents = ["doc/mst/option-parts-list-2018"]

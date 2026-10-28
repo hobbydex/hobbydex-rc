@@ -9,11 +9,11 @@ links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151145?show_disc=true" },
 ]
 fits = [
-  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/part-pages" },
-  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbit", type = "replaces", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "replaces", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
-  { kit = "kit/maverick/qbit", type = "direct", source = "doc/maverick/151006-kit-page" },
-  { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/151200-kit-page" },
+  { kit = "kit/maverick/qbit", type = "replaces", source = "doc/maverick/151006-kit-page" },
+  { kit = "kit/maverick/qbyte-sc", type = "replaces", source = "doc/maverick/151200-kit-page" },
 ]
 category = "chassis"
 color = "gray"
