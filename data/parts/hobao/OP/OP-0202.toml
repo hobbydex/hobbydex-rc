@@ -1,0 +1,12 @@
+id = "part/hobao/OP-0202"
+brand = "brand/hobao"
+number = "OP-0202"
+name = "OP-0202"
+notes = "Named by its number only: the name on the scanned HoBao manual page was not clear enough to take"
+pack_qty = 2
+pack_qty_basis = "name"
+category = "turnbuckle"
+material = "titanium"
+fits = [
+  { kit = "kit/hobao/hyper-vste", type = "replaces", replaces = "part/hobao/94120", source = "doc/hobao/cml-hb-vste-c150gn-instruction-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -4,6 +4,11 @@ number = "FTX7727"
 name = "Ball Stud. φ4.8*9"
 name_source = "manual"
 notes = "Name from FTX's replacement parts list (Futura manual, page 14)"
-category = "wheel"
+category = "ball-end"
 position = "rear"
 documents = ["doc/ftx/cml-futura-manual"]
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]
+ball_mm = 4.8
+ball_type = "stud"
