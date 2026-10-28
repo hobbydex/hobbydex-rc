@@ -257,6 +257,17 @@ def load_tools(tools):
     return out
 
 
+# A real vehicle's model under two names in one make: the name without these words is the same (Actros 3363 and
+# Actros 3363 GigaSpace). Colour, decoration and body words, chassis and kit codes are not part of the vehicle.
+NEAR_DUP_WORDS = re.compile(r"\b(gigaspace|streamspace|classicspace|rtr|body|decoration|non[\s-]?deco|nondecoration|pick[\s-]?up|truck|190mm|tough[\s-]color|fcx\d*\w*|fsc\d*\w*|crc)\b")
+# Pairs that stay apart on purpose: the pick-up body of a model that also has its own name
+NEAR_DUP_KEPT = {("Nissan", "sunny"), ("Toyota", "fj45"), ("Toyota", "landcruiser40")}
+
+
+def near_dup_key(model):
+    return re.sub(r"[^a-z0-9]+", "", NEAR_DUP_WORDS.sub(" ", model.lower()))
+
+
 def norm_name(name):
     return " ".join(re.sub(r"[^a-z0-9]+", " ", name.lower()).split())
 
@@ -721,6 +732,18 @@ def main():
     # 23. release depicting a real vehicle without its make
     check("depicts-no-model", "set depicts.model: a real vehicle needs its model (make is optional)",
           [r for r in rels if r.get("depicts") and not r["depicts"].get("model")])
+
+    # 23b. one real vehicle under two model names in a make (depicts.model spelled apart)
+    near = collections.defaultdict(lambda: collections.defaultdict(set))
+    for x in rels + [p for p in parts if p.get("category") == "body"]:
+        d = x.get("depicts") or {}
+        if d.get("make") and d.get("model"):
+            near[(d["make"], near_dup_key(d["model"]))][re.sub(r"[^a-z0-9]", "", d["model"].lower())].add(d["model"])
+    dup_groups = {k: v for k, v in near.items() if k[1] and len(v) > 1 and (k[0], k[1]) not in NEAR_DUP_KEPT}
+    dup_items = [x for x in rels + [p for p in parts if p.get("category") == "body"] if (x.get("depicts") or {}).get("make")
+                 and (x["depicts"]["make"], near_dup_key(x["depicts"].get("model", ""))) in dup_groups]
+    check("near-duplicate-model", "fold the spellings into one depicts.model (data), then add a line to the site's vehicle-moves table",
+          dup_items, count=len(dup_groups), detail="; ".join(f"{mk}: " + " | ".join(sorted(sp)) for (mk, _), sp in sorted(dup_groups.items())[:15]))
 
     # 24. never-link hosts and dealer doc references
     banned, scrap, local, dealer = [], [], [], []
