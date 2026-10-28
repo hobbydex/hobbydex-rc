@@ -665,8 +665,10 @@ def main():
                 errors.append(f"{path}: terms should be a list of {{ term, text }} strings")
         if kind == "part" and "source" in d:   # the site reads documents, links and sources on a part, not a single source (docs/schema.md "part")
             errors.append(f"{path}: part has a singular source = {d['source']!r}; put it in documents (a list) instead")
-        if kind == "part" and any(isinstance(f, dict) and f.get("kit") in placeholder_kits for f in d.get("fits", []) or []):
-            errors.append(f"{path}: fits a placeholder kit; a placeholder holds no parts or fits of its own")
+        # a placeholder kit (its chassis unknown) takes a fits row only for the releases the set names (releases, checked
+        # below against the kit): a whole-kit fit would put the set on cars of unknown chassis (decision 2026-10-28)
+        if kind == "part" and any(isinstance(f, dict) and f.get("kit") in placeholder_kits and not f.get("releases") for f in d.get("fits", []) or []):
+            errors.append(f"{path}: fits a placeholder kit without releases; a placeholder takes a part only for the releases it names")
         def check_ref(field, value, where):
             prefix = REFS.get(field)
             if prefix is None:
