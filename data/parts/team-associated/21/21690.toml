@@ -7,6 +7,11 @@ links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc28r-ft-aluminum-1-28-scale-pinion-gear-set-9-11-tooth-64p/" },
 ]
 category = "pinion"
+includes = [
+  { spec = "spec/pinion/64dp-9t", qty = 1, notes = "Teeth from the maker's name (9-11 tooth)" },
+  { spec = "spec/pinion/64dp-10t", qty = 1, notes = "Teeth from the maker's name (9-11 tooth)" },
+  { spec = "spec/pinion/64dp-11t", qty = 1, notes = "Teeth from the maker's name (9-11 tooth)" },
+]
 material = "aluminium"
 fits = [
   { kit = "kit/team-associated/rc28r", type = "direct", source = "doc/team-associated/store" },
