@@ -28,6 +28,8 @@ jobs:
           fi
       - name: Validate every TOML file under data/
         run: python3 -I tools/validate.py
+      - name: The audit runs on the data within 2 GB
+        run: python3 -I tools/test_audit_memory.py
       - name: Ids are permanent (none removed without former_ids or retired.toml)
         # compare with where the branch left main, so records merged to main since then do not count as removed
         run: python3 -I tools/check_ids.py ${{ github.event_name == 'pull_request' && format('$(git merge-base origin/{0} HEAD)', github.base_ref) || 'HEAD^' }}
