@@ -83,6 +83,9 @@ ENUMS = {
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
     "part.pack_qty_basis": {"name", "page", "includes", "manual", "photo", "photos", "owner"},
+    # where a shell's thickness_mm or a body's width_mm came from (docs/schema.md, bodies)
+    "part.thickness_basis": {"name", "page", "manual", "owner"},
+    "part.width_basis": {"name", "page", "manual", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
@@ -995,6 +998,16 @@ def main():
             for k in ("conductor_mm", "conductor_in", "cross_section_mm2"):
                 if not (isinstance(d.get(k), (int, float)) and not isinstance(d.get(k), bool) and d[k] > 0):
                     errors.append(f"{path}: wire spec needs {k} > 0")
+        if kind == "part" and ("thickness_mm" in d or "thickness_basis" in d):
+            tm = d.get("thickness_mm")
+            if d.get("category") not in ("body", "wing", "body-accessory"):
+                errors.append(f"{path}: thickness_mm only on a body, wing or body-accessory part (the shell's thickness)")
+            elif not (isinstance(tm, (int, float)) and not isinstance(tm, bool) and 0.1 <= tm <= 5):
+                errors.append(f"{path}: thickness_mm {tm!r} should be the shell thickness in mm, 0.1 to 5")
+            if "thickness_basis" in d and "thickness_mm" not in d:
+                errors.append(f"{path}: thickness_basis needs thickness_mm")
+        if kind == "part" and "width_basis" in d and not (d.get("category") == "body" and isinstance(d.get("width_mm"), (int, float))):
+            errors.append(f"{path}: width_basis needs width_mm on a body")
         WIRE_ONLY = ("wire_awg", "insulation", "strands", "shrink_ratio", "flat_width_mm")
         if kind == "part" and any(k in d for k in WIRE_ONLY) and d.get("category") != "wire":
             errors.append(f"{path}: {', '.join(k for k in WIRE_ONLY if k in d)} only on wires (category wire)")

@@ -2,3 +2,6 @@ id = "category/wing"
 name = "Wings"
 summary = "Wings, spoilers and wing mounts"
 description = "Wings, spoilers and wing mounts."
+key_fields = [
+  { field = "thickness_mm", label = "Thickness", from = "part", unit = "mm" },
+]
