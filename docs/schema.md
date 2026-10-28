@@ -916,6 +916,10 @@ the body is made for, Killerbody's "Long Wheelbase: 313 mm") and
 `width_mm` (the body's width), with `scale`. The chassis a body is made for
 go into `fits` like any other part.
 
+`chassis_source` (optional, a document id) on a body whose `scale` differs from the scale of the kit it fits: the maker's own
+document names the chassis the body is made for (Tamiya's race truck bodies, 1/14, "can be used with TT-01 Type-E and TT-02 chassis",
+doc/tamiya/spb-51606-manual). tools/check_body_scale.py leaves such a body out of its scale rows.
+
 `width_mm` on a body is the body width; touring and on-road bodies are sold
 by width class (190, 195, 200 mm), which is the number the name states
 ("Touring Car Body 190mm", "(200mm)"). A number marked as wheelbase (WB,
