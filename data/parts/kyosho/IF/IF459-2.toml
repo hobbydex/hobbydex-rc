@@ -1,6 +1,9 @@
 id = "part/kyosho/IF459-2"
 brand = "brand/kyosho"
 number = "IF459-2"
-name = "IF459-2"
-name_source = "ocr"
+name = "Front Sway Bar (2.2mm/MP9)"
 documents = ["doc/kyosho/34113t1-inferno-mp10e-kit-spare-and-option-parts"]
+fits = [
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+]
+category = "suspension"

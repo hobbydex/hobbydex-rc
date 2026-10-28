@@ -1,6 +1,10 @@
 id = "part/kyosho/IGB104"
 brand = "brand/kyosho"
 number = "IGB104"
-name = "IGB104"
+name = "Complete Body Set (Aston Martin Racing DBR9 No.009 Le Mans 2008)"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/31828-inferno-gt2-aston-08-m"]
+fits = [
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31828-inferno-gt2-aston-08-p" },
+]
+category = "body"
