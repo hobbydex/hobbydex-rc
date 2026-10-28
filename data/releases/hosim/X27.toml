@@ -7,10 +7,12 @@ kind = "rtr"
 status = "released"
 seen_by = "2024-07"
 seen_by_source = "https://www.hosim.com/products/rc-car-vexaro-x27-1-8-brushless"
-notes = "Store SKU: X27. Store title: RC CAR Mini 1/8 Brushless VEXARO X27 High Speed Drift Racing for Adults New Upgraded. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/x27-page", "doc/hosim/x25-x27-manual"]
+notes = "Store SKU: X27. Store title: RC CAR Mini 1/8 Brushless VEXARO X27 High Speed Drift Racing for Adults New Upgraded. Release year unknown; on sale in the Hosim store when read (2026-10-10) Also sold under store SKU X27-R."
+former_ids = ["release/hosim/X27-R"]
+documents = ["doc/hosim/x27-page", "doc/hosim/x25-x27-manual", "doc/hosim/x27-r-page"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-vexaro-x27-1-8-brushless" },
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-mini-1-8-brushless-vexaro-x27-high-speed-drift-racing-for-adults-new-upgraded-copy" },
 ]
 contains = [
   { part = "part/hosim/2-DC-1500-2USB-NEW", role = "listed", source = "doc/hosim/store" },

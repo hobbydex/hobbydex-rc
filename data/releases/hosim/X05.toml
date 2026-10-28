@@ -7,10 +7,12 @@ kind = "rtr"
 status = "released"
 seen_by = "2024-06"
 seen_by_source = "https://www.hosim.com/products/rc-car-zeno-x05-1-10-brushed"
-notes = "Store SKU: X05. Store title: 1/10 RC Car ZENO X05 High Speed 48+ KMH, 4X4 Off-Road All Terrains Waterproof Racing Toy Gift Monster Truck. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/x05-page", "doc/hosim/x05-x06-manual"]
+notes = "Store SKU: X05. Store title: 1/10 RC Car ZENO X05 High Speed 48+ KMH, 4X4 Off-Road All Terrains Waterproof Racing Toy Gift Monster Truck. Release year unknown; on sale in the Hosim store when read (2026-10-10) Also sold under store SKU X05-R."
+former_ids = ["release/hosim/X05-R"]
+documents = ["doc/hosim/x05-page", "doc/hosim/x05-x06-manual", "doc/hosim/x05-r-page"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-zeno-x05-1-10-brushed" },
+  { site = "Hosim", url = "https://www.hosim.com/products/1-10-rc-car-zeno-x05-high-speed-48-kmh-4x4-off-road-all-terrains-waterproof-racing-toy-gift-monster-truck-copy" },
 ]
 contains = [
   { part = "part/hosim/2-DC-1500-2USB-NEW", role = "listed", source = "doc/hosim/store" },

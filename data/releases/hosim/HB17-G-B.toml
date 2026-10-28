@@ -7,11 +7,13 @@ kind = "rtr"
 status = "released"
 seen_by = "2023-03"
 seen_by_source = "https://www.hosim.com/products/hosim-1-16-brushless-rc-car-60-kmh-4wd-waterproof-fast-remote-control-truck-radio-cars-off-road-hobby-grade-toy-crawler-electric-vehicle-gift-for-boys-adult-children-toy"
-notes = "Store SKUs: HB17-G-B, HB17-G-C. Store title: Hosim 1:16 Brushless RC Car 4WD Waterproof 60+KMH Fast Remote Control Truck Radio Cars Off-Road Hobby Grade Toy Crawler Electric Vehicle Gift for Boys Adult Children. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/hb17-g-b-page", "doc/hosim/hb17-g-c-page", "doc/hosim/hb17-manual"]
+notes = "Store SKUs: HB17-G-B, HB17-G-C. Store title: Hosim 1:16 Brushless RC Car 4WD Waterproof 60+KMH Fast Remote Control Truck Radio Cars Off-Road Hobby Grade Toy Crawler Electric Vehicle Gift for Boys Adult Children. Release year unknown; on sale in the Hosim store when read (2026-10-10) Also sold under store SKU HB17-R-B."
+documents = ["doc/hosim/hb17-g-b-page", "doc/hosim/hb17-g-c-page", "doc/hosim/hb17-manual", "doc/hosim/hb17-r-b-page", "doc/hosim/hb17-r-de-page"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-16-brushless-rc-car-60-kmh-4wd-waterproof-fast-remote-control-truck-radio-cars-off-road-hobby-grade-toy-crawler-electric-vehicle-gift-for-boys-adult-children-toy" },
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-1-16-brushless-rc-car-60-kmh-fast-4wd-remote-control-truck-radio-cars-off-road-waterproof-hobby-grade-toy-crawler-electric-vehicle-gift-for-boys-adult-children" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-brushless-rc-car-1-16-4wd-fast-remote-control-truck-radio-cars-off-road-waterproof-hobby-grade-toy-crawler-electric-vehicle-gift-for-boys-adult-children-60-kmh" },
+  { site = "Hosim", url = "https://www.hosim.com/products/hosim-ferngesteuertes-auto-1-16-mit-burstenlosem-motor-55km-h-4wd-rc-auto-brushless-offroad-rennauto-mit-ersetzbarer-schale-plus-2-akku-40-min-spielzeit-bei-vollgas-geschenk-fur-kinder-und-erwachsene" },
 ]
 contains = [
   { part = "part/hosim/16100", role = "listed", source = "doc/hosim/store" },
@@ -53,4 +55,4 @@ contains = [
   { part = "part/hosim/R30", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/T3A", role = "listed", source = "doc/hosim/store" },
 ]
-former_ids = ["release/hosim/HB17-G-C"]
+former_ids = ["release/hosim/HB17-G-C", "release/hosim/HB17-R-B", "release/hosim/HB17-R-DE"]
