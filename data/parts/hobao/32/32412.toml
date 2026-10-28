@@ -1,9 +1,13 @@
 id = "part/hobao/32412"
 brand = "brand/hobao"
 number = "32412"
-name = "M4 x 12mm HEX SOCKET HEAD CAP SCREWS"
+name = "M4x12mm hex socket head cap screws"
 name_source = "manufacturer"
 pack_qty = 10
 notes = "A set; the drawings label its pieces Cap Screw 4x12mm; screw"
 documents = ["doc/hobao/cml-hyper-7-tq2-buggy-complete-kit-parts-reference"]
 links = [ { site = "HoBao", url = "https://hobaorc.myshopify.com/products/32412-m4-x-12mm-hex-socket-head-cap-screws-10pcs" } ]
+category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m4x12-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
