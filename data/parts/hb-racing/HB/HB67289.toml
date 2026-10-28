@@ -8,3 +8,10 @@ shock_part = "body"
 bore_mm = 16
 length_mm = 107
 documents = ["doc/hb-racing/d817-v2-instruction-manual", "doc/hb-racing/d817t-instruction-manual", "doc/hb-racing/d819-instruction-manual"]
+links = [
+  { site = "Hot Bodies (archived)", url = "https://web.archive.org/web/20101124203317/http://hotbodiesonline.com/products/en/67289.html", kind = "archive" },
+]
+fits = [
+  { kit = "kit/hb-racing/d8", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/d8t", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+]
