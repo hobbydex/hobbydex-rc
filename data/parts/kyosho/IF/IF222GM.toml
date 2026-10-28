@@ -19,4 +19,16 @@ fits = [
   { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34102-mm02-inferno-gt2-ve-ex" },
   { kit = "kit/kyosho/mad-crusher-ve", type = "direct", source = "doc/kyosho/34253-mad-crusher-ve-ex" },
   { kit = "kit/kyosho/inferno-neo-3-0", type = "direct", source = "doc/kyosho/33012partslist" },
+  { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/inferno-gt3-parts-list-v01-02" },
 ]
+pack_qty = 4
+range = "kyosho/f222-colours"
+related = [
+  { part = "part/kyosho/IFW107GM", relation = "use-with" },
+  { part = "part/kyosho/IFW625W", relation = "use-with" },
+  { part = "part/kyosho/IFW107B", relation = "use-with" },
+  { part = "part/kyosho/IFW326GM", relation = "use-with" },
+  { part = "part/kyosho/IFW444GM", relation = "use-with" },
+  { part = "part/kyosho/IFW625", relation = "use-with" },
+]
+documents = ["doc/kyosho/inferno-gt3-parts-list-v01-02"]

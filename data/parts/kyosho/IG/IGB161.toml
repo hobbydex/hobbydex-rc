@@ -4,9 +4,10 @@ number = "IGB161"
 name = "2020 Mercedes-AMG GT3 Non Decoraton Body Set"
 name_ja = "2020 メルセデス AMG GT3 ノンデコレーションボディセット"
 category = "body"
-documents = ["doc/kyosho/igb161-im"]
+documents = ["doc/kyosho/igb161-im", "doc/kyosho/33019-gt2-rs-kt-331p-spop"]
 depicts = { make = "Mercedes-Benz", model = "AMG GT3", year = 2020 }
 fits = [
   { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/33010-inferno-gt3-spop" },
+  { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/33019-gt2-rs-kt-331p-spop" },
 ]
 scale = "1/8"

@@ -6,7 +6,7 @@ pack_qty = 4
 pack_qty_basis = "manual"
 gtin = "4548565332410"
 category = "nut"
-documents = ["doc/kyosho/ifw472gm-product-page"]
+documents = ["doc/kyosho/ifw472gm-product-page", "doc/kyosho/33010-inferno-gt3-spop", "doc/kyosho/33015-inferno-mp10-spop-20191228", "doc/kyosho/33017-02-inf-mp10t-sp"]
 color = "gun metal"
 range = "kyosho/ifw472-colours"
 fits = [
@@ -29,17 +29,12 @@ fits = [
   { kit = "kit/kyosho/inferno-gt2-ve", type = "direct", source = "doc/kyosho/34107-inferno-gt2-ve-rs-srt-demon-spop" },
   { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1-inferno-mp10-readyset-ex" },
   { kit = "kit/kyosho/fo-xx", type = "direct", source = "doc/kyosho/33154-fo-xx-2-0-ex-20191228" },
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-sp" },
+  { kit = "kit/kyosho/inferno-mp11", type = "direct", source = "doc/kyosho/33028-inferno-mp11-spare-and-option-parts" },
 ]
 related = [
-  { part = "part/kyosho/FW107", relation = "use-with" },
-  { part = "part/kyosho/FW107B", relation = "use-with" },
-  { part = "part/kyosho/FW107GM", relation = "use-with" },
-  { part = "part/kyosho/FW326", relation = "use-with" },
-  { part = "part/kyosho/FW328", relation = "use-with" },
-  { part = "part/kyosho/FW444", relation = "use-with" },
-  { part = "part/kyosho/FW625", relation = "use-with" },
-  { part = "part/kyosho/FW625W", relation = "use-with" },
-  { part = "part/kyosho/FW625WB", relation = "use-with" },
+  { part = "part/kyosho/IFW107GM", relation = "use-with" },
+  { part = "part/kyosho/IFW328", relation = "use-with" },
   { part = "part/kyosho/IFW107", relation = "use-with" },
   { part = "part/kyosho/IFW107B", relation = "use-with" },
   { part = "part/kyosho/IFW326", relation = "use-with" },
