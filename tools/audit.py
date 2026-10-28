@@ -129,6 +129,16 @@ def load_tools(tools):
             print(f"note: link_part_material not loaded ({e})", file=sys.stderr)
         finally:
             sys.path.remove(os.path.dirname(lpm))
+    out["doc_links"] = None   # the holds and pairs of tools/sync_doc_links.py: one definition for both
+    dlp = os.path.join(tools, "tools", "sync_doc_links.py")
+    if os.path.exists(dlp):
+        spec = importlib.util.spec_from_file_location("sync_doc_links", dlp)
+        mod = importlib.util.module_from_spec(spec)
+        try:
+            spec.loader.exec_module(mod)
+            out["doc_links"] = mod
+        except Exception as e:
+            print(f"note: sync_doc_links not loaded ({e})", file=sys.stderr)
     out["multi"] = None
     out["material_single"] = None
     tdir = os.path.join(tools, "tools")
@@ -620,7 +630,11 @@ def main():
     rel_by_id = {r["id"]: r for r in rels}
     one_sided = [r["id"] for r in rels for d in r.get("documents", []) if d in docs and r["id"] not in (docs[d].get("releases") or [])]
     one_sided += [rid for d in docs.values() for rid in (d.get("releases") or []) if rid in rel_by_id and d["id"] not in (rel_by_id[rid].get("documents") or [])]
-    check("doc-not-back-linked", "run tools/sync_doc_links.py --write in hobbydex-tools (adds the missing side; catalogues, shared shop pages and dealer listings it holds are listed there)",
+    if tools["doc_links"]:   # the pairs sync_doc_links.py would sync: its held documents (catalogues, shared pages, dealer listings) are not gaps
+        dl = tools["doc_links"]
+        held = dl.holds_for(rel_by_id, docs)
+        one_sided = sorted({p[1] for p in dl.pairs(rel_by_id, docs) if p[2] not in held})
+    check("doc-not-back-linked", "run tools/sync_doc_links.py --write in hobbydex-tools (adds the missing side; catalogues, shared shop pages and dealer listings it holds are not gaps)",
           one_sided)
 
     # 19b. a release lists one document more than once (a repeated append by an importer)
