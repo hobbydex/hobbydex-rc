@@ -10,6 +10,9 @@ links = [
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4945/26."
 category = "screw"
 applies_to = ["Pirate Puncher XL"]
+fits = [
+  { kit = "kit/t2m/pirate-puncher-xl", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Puncher XL (link_car_kits.py)" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

@@ -12,6 +12,9 @@ pack_qty = 6
 pack_qty_basis = "page"
 category = "screw"
 applies_to = ["Pirate Warrior"]
+fits = [
+  { kit = "kit/t2m/pirate-warrior", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Warrior (link_car_kits.py)" },
+]
 equivalent_to = [
   { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

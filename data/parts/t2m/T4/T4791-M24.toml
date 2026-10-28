@@ -8,5 +8,8 @@ links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-moteur-T4791_M24" },
 ]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4791/M24."
-applies_to = ["Pirate 8"]
+applies_to = ["Pirate 8.6"]
+fits = [
+  { kit = "kit/t2m/pirate-8-6", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate 8.6 (link_car_kits.py)" },
+]
 category = "engine-fuel"
