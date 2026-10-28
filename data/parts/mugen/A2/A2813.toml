@@ -6,10 +6,10 @@ gtin = "4944925041136"
 pack_qty = 4
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-option-parts-page" },
+  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-option-parts-page" },
   { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
   { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-part-list" },
-  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
   { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
   { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
 ]

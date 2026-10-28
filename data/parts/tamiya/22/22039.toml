@@ -5,8 +5,8 @@ name = "TA08 Lightweight Front One-Way Set (37T)"
 fits = [
   { kit = "kit/tamiya/ta07", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: Use shims to fine-tune setup" },
   { kit = "kit/tamiya/ta07msx", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: Use shims to fine-tune setup" },
-  { kit = "kit/tamiya/ta08", type = "replaces", source = "doc/tamiya/option-parts-matching-list-2025-10" },
-  { kit = "kit/tamiya/trf420x", type = "replaces", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/ta08", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/trf420x", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
 ]
 released = "2021-11"
 documents = ["doc/tamiya/newitems-month"]

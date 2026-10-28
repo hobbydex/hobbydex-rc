@@ -5,7 +5,7 @@ name = "MRZ V1.1 Pivot Mount Spacer (0.2mm)"
 pack_qty = 10
 pack_qty_basis = "name"
 fits = [
-  { kit = "kit/atomic-rc/mrz", type = "replaces", source = "doc/atomic-rc/site" },
+  { kit = "kit/atomic-rc/mrz", type = "direct", source = "doc/atomic-rc/site" },
 ]
 documents = ["doc/atomic-rc/site", "doc/atomic-rc/mrzv11-03-mrzv11-03-pivot-spacer-v1-0"]
 links = [

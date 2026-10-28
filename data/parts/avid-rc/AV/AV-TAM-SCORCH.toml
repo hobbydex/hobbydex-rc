@@ -11,9 +11,9 @@ seal = "rubber"
 lubricant = "grease"
 applies_to = "Tamiya Sand Scorcher (also Buggy Champ, Fighting Buggy 2014)"
 fits = [
-  { kit = "kit/tamiya/sand-scorcher", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya Sand Scorcher (link_car_kits.py)" },
-  { kit = "kit/tamiya/buggy-champ", releases = ["release/tamiya/58441"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Buggy Champ (link_car_kits.py)" },
-  { kit = "kit/tamiya/fighting-buggy", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya Fighting Buggy 2014" },
+  { kit = "kit/tamiya/sand-scorcher", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya Sand Scorcher (link_car_kits.py)" },
+  { kit = "kit/tamiya/buggy-champ", releases = ["release/tamiya/58441"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Buggy Champ (link_car_kits.py)" },
+  { kit = "kit/tamiya/fighting-buggy", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Tamiya Fighting Buggy 2014" },
 ]
 notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [

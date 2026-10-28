@@ -13,7 +13,7 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 fits = [
-  { kit = "kit/arrma/notorious", releases = ["release/arrma/ara106044t1", "release/arrma/ara106044t2", "release/arrma/ara8611v5t1", "release/arrma/ara8611v5t2", "release/arrma/ara8611v6t1", "release/arrma/ara8611v6t2"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Arrma RC Notorious 6s V5 (#ARA8611V5)" },
+  { kit = "kit/arrma/notorious", releases = ["release/arrma/ara106044t1", "release/arrma/ara106044t2", "release/arrma/ara8611v5t1", "release/arrma/ara8611v5t2", "release/arrma/ara8611v6t1", "release/arrma/ara8611v6t2"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Arrma RC Notorious 6s V5 (#ARA8611V5)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

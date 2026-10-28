@@ -10,7 +10,7 @@ includes = [
   { spec = "spec/bearing/5x11x4" },
 ]
 fits = [
-  { kit = "kit/gmade/gs01-komodo", releases = ["release/gmade/GM54000"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the GMade Komodo Rock Crawler (#GM54000)" },
+  { kit = "kit/gmade/gs01-komodo", releases = ["release/gmade/GM54000"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the GMade Komodo Rock Crawler (#GM54000)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

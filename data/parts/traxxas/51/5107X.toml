@@ -6,7 +6,7 @@ gtin = "020334510792"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/traxxas/trx-4", type = "replaces", source = "doc/traxxas/82234-4-parts-list" },
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/82234-4-parts-list" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/17x26x5", match = "functional", notes = "Size parsed from the manufacturer's description" },

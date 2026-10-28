@@ -14,7 +14,7 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 fits = [
-  { kit = "kit/axial/scx10-iii", releases = ["release/axial/axi03014bt1", "release/axial/axi03014bt2", "release/axial/axi03014t1", "release/axial/axi03014t2"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Axial SCX10 III Ford Bronco (#AXI03014T1)" },
+  { kit = "kit/axial/scx10-iii", releases = ["release/axial/axi03014bt1", "release/axial/axi03014bt2", "release/axial/axi03014t1", "release/axial/axi03014t2"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Axial SCX10 III Ford Bronco (#AXI03014T1)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

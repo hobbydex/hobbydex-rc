@@ -12,7 +12,7 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 fits = [
-  { kit = "kit/gmade/gs02-komodo-double-cab", releases = ["release/gmade/GM57004", "release/gmade/GM57005"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Gmade GS02 Komodo Double Cab TS (#GM57004)" },
+  { kit = "kit/gmade/gs02-komodo-double-cab", releases = ["release/gmade/GM57004", "release/gmade/GM57005"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Gmade GS02 Komodo Double Cab TS (#GM57004)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

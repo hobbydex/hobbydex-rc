@@ -16,9 +16,9 @@ category = "bearing"
 category_source = "curated"
 applies_to = "Team Durango DEX210 (also DEST210, DESC210, DEX210v2, DEX210v3)"
 fits = [
-  { kit = "kit/team-durango/dex210", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Durango DEX210 (link_car_kits.py)" },
-  { kit = "kit/team-durango/dest210", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the DEST210 (link_car_kits.py)" },
-  { kit = "kit/team-durango/desc210", type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the DESC210 (link_car_kits.py)" },
+  { kit = "kit/team-durango/dex210", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Team Durango DEX210 (link_car_kits.py)" },
+  { kit = "kit/team-durango/dest210", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the DEST210 (link_car_kits.py)" },
+  { kit = "kit/team-durango/desc210", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the DESC210 (link_car_kits.py)" },
 ]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal, Metal | Clutch, Thrust Bearing (Avid's Flex Kit builder)."
 links = [

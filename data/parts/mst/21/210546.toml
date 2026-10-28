@@ -4,13 +4,13 @@ number = "210546"
 name = "Rear battery base"
 applies_to = "RMX-D / FMX-D / FSX-D / FXX-D / XXX-D / MS-01D ( S / VIP ) / FS-01D"
 fits = [
-  { kit = "kit/mst/rmx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fmx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fsx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fxx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/xxx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/ms-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fs-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/rmx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fmx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fsx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/xxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/ms-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fs-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
 ]
 category = "chassis"
 documents = ["doc/mst/option-parts-list-2018"]

@@ -11,7 +11,7 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 fits = [
-  { kit = "kit/mugen/mbx7t", releases = ["release/mugen/mbx-7t"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Mugen Seiki MBX-7T Nitro (#E2013)" },
+  { kit = "kit/mugen/mbx7t", releases = ["release/mugen/mbx-7t"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Mugen Seiki MBX-7T Nitro (#E2013)" },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

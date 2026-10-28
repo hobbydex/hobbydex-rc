@@ -3,14 +3,14 @@ brand = "brand/kyosho"
 number = "BRG013"
 name = "Shield Bearing (4x7x2.5)"
 fits = [
-  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
   { kit = "kit/kyosho/mini-inferno", type = "direct", source = "doc/kyosho/30125-mini-inferno-sp" },
   { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
   { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/31007-kf01-sp" },
-  { kit = "kit/kyosho/pureten-fazer-gp", type = "replaces", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
+  { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
   { kit = "kit/kyosho/mini-z-4x4", type = "direct", source = "doc/kyosho/mini-z-4x4-series-2023-exploded-view" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-t" },
-  { kit = "kit/kyosho/tf-5", type = "replaces", source = "doc/kyosho/30822-tf5-readyset-mm-p" },
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822-tf5-readyset-mm-p" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/4x7x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
