@@ -437,6 +437,15 @@ def main():
     check("date-marker-question", "the ? sits in the date column of a narrow table: shorten the reason or move it to the release notes, and confirm the date",
           [r for r in rels if any(k in r for k in ("year_doubt", "released_doubt", "announced_doubt"))])
 
+    # 2b. releases of one brand with the same name: the name must say which is which (an edition, colour or re-release word)
+    same_name = collections.defaultdict(list)
+    for r in rels:
+        if r.get("name") and r.get("brand"):
+            same_name[(r["brand"], " ".join(r["name"].split()).casefold())].append(r)
+    groups = [g for g in same_name.values() if len(g) > 1]
+    check("duplicate-release-name", "give each release of the group its own edition, colour or re-release words from the maker's page; a group the maker does not tell apart stays, listed in the brand's backlog entry",
+          [r for g in groups for r in g], count=len(groups))
+
     # 3. bearing category holding a rebuild or service kit
     check("bearing-rebuild-kit", "recategorise the part (not bearing) or remove it from the bearing list; a rebuild kit is a set of parts",
           [p for p in parts if p.get("category") == "bearing" and re.search(r"\b(rebuild|service|overhaul|repair)\b", p["name"], re.I)])
