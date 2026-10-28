@@ -9,3 +9,6 @@ applies_to = "RC10-DS"
 links = [
   { site = "MIP", url = "https://www.miponline.com/24130-mip-cvd-kit-for-associated-rc10-ds.html" },
 ]
+fits = [
+  { kit = "kit/team-associated/rc10ds", type = "replaces", source = "doc/mip/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
