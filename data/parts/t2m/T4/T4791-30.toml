@@ -12,4 +12,7 @@ category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/17mm", match = "exact", notes = "Hex size from the name" },
 ]
-applies_to = ["Pirate 8"]
+applies_to = ["Pirate 8.6"]
+fits = [
+  { kit = "kit/t2m/pirate-8-6", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate 8.6 (link_car_kits.py)" },
+]

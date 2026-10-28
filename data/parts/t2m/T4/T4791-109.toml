@@ -12,4 +12,7 @@ category = "pin"
 equivalent_to = [
   { spec = "spec/pin/4x72", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
 ]
-applies_to = ["Pirate 8"]
+applies_to = ["Pirate 8.6"]
+fits = [
+  { kit = "kit/t2m/pirate-8-6", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate 8.6 (link_car_kits.py)" },
+]
