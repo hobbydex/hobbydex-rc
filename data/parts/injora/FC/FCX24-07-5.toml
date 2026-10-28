@@ -8,3 +8,7 @@ links = [
   { site = "Injora", url = "https://www.injora.com/products/injora-7mm-brass-wheel-hex-hub-extenders-for-1-24-fms-fcx24-fcx24-07?variant=48257905524994" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/fms/fcx18", type = "replaces", source = "doc/injora/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/fms/fcx24", type = "replaces", source = "doc/injora/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

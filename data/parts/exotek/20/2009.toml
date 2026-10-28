@@ -9,3 +9,7 @@ links = [
   { site = "Exotek Racing", url = "https://www.exotekracing.com/mk2-turbine-slipper-for-dr10-dr10m-sr10-tlr22" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/dr10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/sr10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

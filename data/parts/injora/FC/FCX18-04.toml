@@ -8,3 +8,7 @@ links = [
   { site = "Injora", url = "https://www.injora.com/products/injora-aluminum-adjustable-servo-mount-for-1-18-fms-fcx18" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/fms/fcx18", type = "replaces", source = "doc/injora/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/fms/fcx24", type = "replaces", source = "doc/injora/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

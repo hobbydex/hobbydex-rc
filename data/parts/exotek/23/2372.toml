@@ -10,3 +10,8 @@ links = [
   { site = "Exotek Racing", url = "https://www.exotekracing.com/ASSOCIATED-PRO2-SC10-RB10-SR10-B5-HD-STEERING-RACK-7075-GTIN-708498508427_p_894.html" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/team-associated/pro2-sc10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/rb10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/sr10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
