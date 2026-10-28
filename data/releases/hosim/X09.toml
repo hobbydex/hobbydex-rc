@@ -7,9 +7,10 @@ kind = "rtr"
 status = "released"
 seen_by = "2026-05"
 seen_by_source = "https://www.hosim.com/products/rc-car-x09-1-10-brushless-60km-h-4wd-3s-ready-off-road-truck-for-adults"
-notes = "Store SKU: X09. Store title: RC Car X09 1:10 Brushless 60KM/H 4WD 3S Ready Off-Road Truck for Adults. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
+notes = "Store SKU: X09. Store title: RC Car X09 1:10 Brushless 60KM/H 4WD 3S Ready Off-Road Truck for Adults. Release year unknown; on sale in the Hosim store when read (2026-10-10) Also sold under store SKU X09-R."
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-x09-1-10-brushless-60km-h-4wd-3s-ready-off-road-truck-for-adults" },
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-x09-1-10-brushless-60km-h-4wd-3s-ready-off-road-truck-for-adults-copy" },
 ]
 contains = [
   { part = "part/hosim/F28-JS01", role = "listed", source = "doc/hosim/store" },
@@ -82,4 +83,5 @@ contains = [
   { part = "part/hosim/X09-078", role = "listed", source = "doc/hosim/store" },
   { part = "part/hosim/X09-079", role = "listed", source = "doc/hosim/store" },
 ]
-documents = ["doc/hosim/x09-page", "doc/hosim/rc-car-manual"]
+former_ids = ["release/hosim/X09-R"]
+documents = ["doc/hosim/x09-page", "doc/hosim/rc-car-manual", "doc/hosim/x09-r-page"]

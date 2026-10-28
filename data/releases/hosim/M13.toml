@@ -7,10 +7,12 @@ kind = "rtr"
 status = "released"
 seen_by = "2025-03"
 seen_by_source = "https://www.hosim.com/products/hosim-rc-car-1-14-brushless-m13"
-notes = "Store SKU: M13. Store title: RC Car 1/14 Brushless MOXLIN M13 Fast 50 MPH For Adults 4X4 All Terrain Off Road Hobby Electric Monster Truck With 3S Battery. Release year unknown; on sale in the Hosim store when read (2026-10-10)"
-documents = ["doc/hosim/m13-page", "doc/hosim/m13-manual"]
+notes = "Store SKU: M13. Store title: RC Car 1/14 Brushless MOXLIN M13 Fast 50 MPH For Adults 4X4 All Terrain Off Road Hobby Electric Monster Truck With 3S Battery. Release year unknown; on sale in the Hosim store when read (2026-10-10) Also sold under store SKU M13-R."
+former_ids = ["release/hosim/M13-R"]
+documents = ["doc/hosim/m13-page", "doc/hosim/m13-manual", "doc/hosim/m13-r-page"]
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/hosim-rc-car-1-14-brushless-m13" },
+  { site = "Hosim", url = "https://www.hosim.com/products/rc-car-1-14-brushless-moxlin-m13-fast-50-mph-for-adults-4x4-all-terrain-off-road-hobby-electric-monster-truck-with-3s-battery-copy" },
 ]
 contains = [
   { part = "part/hosim/2-M13-DC26", role = "listed", source = "doc/hosim/store" },
