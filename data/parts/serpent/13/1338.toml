@@ -1,0 +1,16 @@
+id = "part/serpent/1338"
+brand = "brand/serpent"
+number = "1338"
+name = "Ball bearing flanged 5x8x2.5"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/viper-977", type = "direct", source = "doc/serpent/viper-977-spares" },
+  { kit = "kit/serpent/s411", type = "direct", source = "doc/serpent/s411-team-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser1338" },
+]
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

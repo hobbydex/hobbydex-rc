@@ -1,0 +1,15 @@
+id = "part/serpent/411073"
+brand = "brand/serpent"
+number = "411073"
+name = "Axial ball bearing 4.2x9x4"
+fits = [
+  { kit = "kit/serpent/s100", type = "direct", source = "doc/serpent/s100-lt-spares" },
+]
+notes = "serpent.com marks it discontinued"
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser411073" },
+]
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/thrust-4.2x9x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

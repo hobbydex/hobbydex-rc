@@ -1,0 +1,15 @@
+id = "part/serpent/110135"
+brand = "brand/serpent"
+number = "110135"
+name = "Screw allen countersunk M2.5x10"
+pack_qty = 10
+fits = [
+  { kit = "kit/serpent/s100", type = "direct", source = "doc/serpent/s100-link-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser110135" },
+]
+category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
