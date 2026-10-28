@@ -6,6 +6,7 @@ fits = [
   { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8-e-pro-options" },
   { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts" },
   { kit = "kit/serpent/srx8e", type = "replaces", replaces = "part/serpent/600945", source = "doc/serpent/srx8-e-pro-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser600955" },

@@ -1,0 +1,18 @@
+id = "part/serpent/1315"
+brand = "brand/serpent"
+number = "1315"
+name = "Ball-bearing 5x10x4"
+pack_qty = 2
+fits = [
+  { kit = "kit/serpent/viper-977", type = "direct", source = "doc/serpent/viper-977-spares" },
+  { kit = "kit/serpent/966", type = "direct", source = "doc/serpent/966-te-v2-spares" },
+  { kit = "kit/serpent/s411", type = "direct", source = "doc/serpent/s411-team-spares" },
+  { kit = "kit/serpent/733", type = "direct", source = "doc/serpent/733-te-spares" },
+]
+links = [
+  { site = "Serpent", url = "https://serpent.com/products/ser1315" },
+]
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
