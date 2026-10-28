@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Team Durango DEX410R"
+fits = [
+  { kit = "kit/team-durango/dex410", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Team Durango DEX410R (link_car_kits.py)", car = "DEX410R" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/durg002r-team-durango-dex410r-rubber-shielded-bearings/" },

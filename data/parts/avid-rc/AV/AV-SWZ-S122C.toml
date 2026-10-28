@@ -13,6 +13,9 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "SWORKz S12-2C"
+fits = [
+  { kit = "kit/sworkz/s12-2", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the SWORKz S12-2C (link_car_kits.py)", car = "S12-2C" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4100/S122C" },

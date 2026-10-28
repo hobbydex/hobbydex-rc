@@ -11,6 +11,10 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Mugen Seiki MBX7R (also MBX7TR)"
+fits = [
+  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Mugen Seiki MBX7R (link_car_kits.py)", releases = ["release/mugen/mbx-7r"] },
+  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the MBX7TR (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1385/MBX7R" },
