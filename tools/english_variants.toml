@@ -1,0 +1,43 @@
+# Per-host English variants of maker links: tools/link_language_variants.py switches a document,
+# part or release link to its English address, and the audit flags a non-English link of these hosts.
+# how = "swap": the prefix `from` becomes `to` (a home page address counts as `from` with its slash).
+# how = "hreflang": the cached page's <link hreflang="en"> alternate is the English address.
+# A host listed here has an English version; a link with none (or whose English page is gone) stays.
+
+[[host]]
+host = "rc.kyosho.com"
+how = "swap"
+from = "https://rc.kyosho.com/ja/"
+to = "https://rc.kyosho.com/en/"
+
+[[host]]
+host = "www.kopropo.co.jp"
+how = "swap"
+from = "https://www.kopropo.co.jp/"
+to = "https://www.kopropo.co.jp/en/"
+
+[[host]]
+host = "www.os-engines.co.jp"
+how = "swap"
+from = "https://www.os-engines.co.jp/"
+to = "https://www.os-engines.co.jp/english/"
+
+[[host]]
+host = "d7z22c0gz59ng.cloudfront.net"
+how = "swap"
+from = "https://d7z22c0gz59ng.cloudfront.net/cms/japan/download/rcmanual/"
+to = "https://www.tamiya.com/cms/english/rc/rcmanual/"
+
+[[host]]
+host = "tamico.de"
+how = "hreflang"
+
+[[host]]
+host = "www.scaleart-shop.de"
+how = "swap"
+from = "https://www.scaleart-shop.de/products/"
+to = "https://scaleart-shop.de/en-de/products/"
+
+[[host]]
+host = "www.rc-race-shop.de"
+how = "hreflang"
