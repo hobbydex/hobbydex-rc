@@ -7,3 +7,7 @@ links = [
   { site = "Exotek Racing", url = "https://www.exotekracing.com/mk3-turbine-slipper-with-3-pads-for-dr10-sr10-tlr22" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/dr10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/sr10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

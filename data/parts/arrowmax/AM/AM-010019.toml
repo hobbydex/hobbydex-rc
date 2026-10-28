@@ -9,3 +9,7 @@ pack_qty_basis = "page"
 links = [
   { site = "Arrowmax", url = "https://www.arrowmax-rc.com/products/cvds-for-mugen-mbx6-mbx7-f-r-universal-joint-set-2-am-010019" },
 ]
+fits = [
+  { kit = "kit/mugen/mbx6", type = "replaces", source = "doc/arrowmax/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/mugen/mbx7", type = "replaces", source = "doc/arrowmax/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

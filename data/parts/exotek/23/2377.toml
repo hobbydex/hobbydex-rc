@@ -11,3 +11,8 @@ links = [
   { site = "Exotek Racing", url = "https://www.exotekracing.com/associated-pro2-sc10-rb10-sr10-b5-motor-plate-slotted-lightweight-gtin-708498508472.html" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/pro2-sc10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/rb10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/sr10", type = "replaces", source = "doc/exotek/shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
