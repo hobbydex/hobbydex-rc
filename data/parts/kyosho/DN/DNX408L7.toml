@@ -7,3 +7,6 @@ gtin = "4548565145348"
 documents = ["doc/kyosho/dnx408l7-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/dnx408l7.html" } ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/dnano", type = "direct", source = "doc/kyosho/dnx408l7-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

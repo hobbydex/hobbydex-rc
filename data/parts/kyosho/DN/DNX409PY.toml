@@ -8,3 +8,6 @@ documents = ["doc/kyosho/dnx409py-product-page"]
 color = "yellow"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/dnx409py.html" } ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/dnano", type = "direct", source = "doc/kyosho/dnx409py-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
