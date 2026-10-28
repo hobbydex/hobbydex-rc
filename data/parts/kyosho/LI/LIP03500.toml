@@ -1,6 +1,11 @@
 id = "part/kyosho/LIP03500"
 brand = "brand/kyosho"
 number = "LIP03500"
-name = "LIP03500"
+name = "RocketTS StickLipo3500IBS 7.4V 30C Deans"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/30025-tf6sp-t01-im"]
+fits = [
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30858-im-ultima-rb6-rs-spop" },
+]
+category = "wire"
