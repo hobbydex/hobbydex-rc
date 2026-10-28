@@ -550,8 +550,8 @@ def main():
                 errors.append(f"{path}: parse error: {e}")
                 continue
             rel = os.path.relpath(path, ROOT)
-            if rel == "retired.toml":
-                continue   # retired ids, checked below
+            if rel in ("retired.toml", "confirmed-distinct.toml"):
+                continue   # retired ids and confirmed pairs, checked below
             top = rel.split(os.sep)[0]
             kind = next((k for k, v in KINDS.items() if v["dir"] == top), None)
             if kind is None:
@@ -601,6 +601,23 @@ def main():
                     errors.append(f"{retired_path}: retired id {rid} needs a reason")
                 if r.get("replaced_by") and r["replaced_by"] not in ids:
                     errors.append(f"{retired_path}: {rid} replaced_by {r['replaced_by']} does not exist")
+    distinct_path = os.path.join(ROOT, "confirmed-distinct.toml")
+    if os.path.exists(distinct_path):   # pairs of parts confirmed as two parts (the audit's ocr-number-twins skips them)
+        with open(distinct_path, "rb") as f:
+            doc_ids = {d.get("id") for _, kind, d in docs if kind == "doc"}
+            seen_pairs = set()
+            for p in tomllib.load(f).get("pair", []):
+                pair = frozenset(p.get("parts", []))
+                if len(pair) != 2 or any(x not in ids for x in pair):
+                    errors.append(f"{distinct_path}: pair {sorted(pair)} needs two live parts")
+                elif pair in seen_pairs:
+                    errors.append(f"{distinct_path}: pair {sorted(pair)} listed twice")
+                seen_pairs.add(pair)
+                if not p.get("evidence"):
+                    errors.append(f"{distinct_path}: pair {sorted(pair)} needs evidence (a manual that prints each number)")
+                for e in p.get("evidence", []):
+                    if e not in doc_ids:
+                        errors.append(f"{distinct_path}: evidence {e} is not a document")
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}

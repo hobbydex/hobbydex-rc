@@ -961,11 +961,17 @@ def main():
     for p in parts:
         if p.get("name_source") == "ocr" and p.get("number"):
             by_name[(brand_of(p), p["name"].strip().lower())].append(p)
+    # pairs confirmed as two parts (data/confirmed-distinct.toml: each number printed in a manual) are not twins
+    confirmed = set()
+    cd = os.path.join(RC, "data", "confirmed-distinct.toml")
+    if os.path.exists(cd):
+        with open(cd, "rb") as fh:
+            confirmed = {frozenset(p["parts"]) for p in tomllib.load(fh).get("pair", [])}
     twins = []
     for group in by_name.values():
         for i, a in enumerate(group):
             for b in group[i + 1:]:
-                if near(str(a["number"]), str(b["number"])):
+                if near(str(a["number"]), str(b["number"])) and frozenset((a["id"], b["id"])) not in confirmed:
                     twins.append((a, b))
     check("ocr-number-twins", "settle the number: the scan's digit may be misread (5/6, 3/8, 0/8, 1/7); check the maker's page and fold the wrong one into the right one",
           [x["id"] for pair in twins for x in pair], count=len(twins), per_brand=per_brand([a for a, _ in twins]))
