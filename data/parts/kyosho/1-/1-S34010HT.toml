@@ -4,9 +4,9 @@ number = "1-S34010HT"
 name = "Flat Head Screw(Hex/Titanium/M4x10)"
 gtin = "4548565148080"
 fits = [
-  { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30622-01-optima-mid-op" },
-  { kit = "kit/kyosho/turbo-optima", type = "replaces", source = "doc/kyosho/30623-mm02-spop" },
-  { kit = "kit/kyosho/ultima", type = "replaces", source = "doc/kyosho/30625-mm03-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-op" },
+  { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m4x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },

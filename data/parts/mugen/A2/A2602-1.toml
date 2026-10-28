@@ -6,7 +6,7 @@ pack_qty = 10
 pack_qty_basis = "page"
 notes = "Mugen prints the number as A2602/1"
 fits = [
-  { kit = "kit/mugen/mtc3", type = "replaces", source = "doc/mugen/mtc3-part-list" },
+  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
   { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
 ]
 equivalent_to = [

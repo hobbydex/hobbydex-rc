@@ -4,9 +4,9 @@ number = "210111-2"
 name = "Pulley 11T/12T/13T"
 applies_to = "RMX-D / MS-01D / FS-01D"
 fits = [
-  { kit = "kit/mst/rmx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/ms-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/fs-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/rmx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/ms-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fs-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
 ]
 category = "gear"
 documents = ["doc/mst/option-parts-list-2018"]

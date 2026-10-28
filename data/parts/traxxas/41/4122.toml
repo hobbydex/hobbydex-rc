@@ -5,10 +5,10 @@ name = "Clutch bell (22-tooth)/5x8x0.5mm fiber washer (2)/ 5mm e-clip (requires 
 gtin = "020334412201"
 category = "washer-shim"
 fits = [
-  { kit = "kit/traxxas/nitro-slash", type = "replaces", source = "doc/traxxas/44056-3-parts-list" },
-  { kit = "kit/traxxas/nitro-rustler", type = "replaces", source = "doc/traxxas/44096-3-parts-list" },
+  { kit = "kit/traxxas/nitro-slash", type = "direct", source = "doc/traxxas/44056-3-parts-list" },
+  { kit = "kit/traxxas/nitro-rustler", type = "direct", source = "doc/traxxas/44096-3-parts-list" },
   { kit = "kit/traxxas/t-maxx", type = "direct", source = "doc/traxxas/49077-3-parts-list" },
-  { kit = "kit/traxxas/jato", type = "replaces", source = "doc/traxxas/55077-3-parts-list" },
+  { kit = "kit/traxxas/jato", type = "direct", source = "doc/traxxas/55077-3-parts-list" },
 ]
 includes = [
   { spec = "spec/washer/5x8x0.5", qty = 2, notes = "Size from this item's words in the manufacturer's name" },

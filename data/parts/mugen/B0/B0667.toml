@@ -6,9 +6,9 @@ gtin = "4944925015274"
 pack_qty = 12
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6t-part-list" },
-  { kit = "kit/mugen/mbx6", type = "replaces", source = "doc/mugen/mbx-6-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6t-part-list" },
+  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6-part-list" },
   { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
 ]
 category = "screw"

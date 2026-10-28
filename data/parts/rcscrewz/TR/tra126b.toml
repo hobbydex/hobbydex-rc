@@ -14,7 +14,7 @@ includes = [
   { spec = "spec/bearing/12x18x4" },
 ]
 fits = [
-  { kit = "kit/traxxas/4-tec-drift", releases = ["release/traxxas/105237-4"], type = "replaces", source = "doc/rcscrewz/store", notes = "Listed for the Traxxas 4-Tec Drift 1/10th (#105237-4) Corrected from kit/traxxas/4-tec (link_car_kits.py --verify)." },
+  { kit = "kit/traxxas/4-tec-drift", releases = ["release/traxxas/105237-4"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Traxxas 4-Tec Drift 1/10th (#105237-4) Corrected from kit/traxxas/4-tec (link_car_kits.py --verify)." },
 ]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [

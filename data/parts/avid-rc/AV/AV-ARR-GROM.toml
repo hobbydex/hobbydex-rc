@@ -10,11 +10,11 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 fits = [
-  { kit = "kit/arrma/typhon-grom", releases = ["release/arrma/ara2106t1", "release/arrma/ara2106t2"], type = "replaces", source = "doc/avid-rc/flexkit", notes = "Listed for the Arrma Typhon Grom Bearing Kit (link_car_kits.py --verify)" },
-  { kit = "kit/arrma/granite-grom", car = "Typhon Grom", type = "replaces", source = "doc/avid-rc/flexkit" },
-  { kit = "kit/arrma/mojave-grom", car = "Typhon Grom", type = "replaces", source = "doc/avid-rc/flexkit" },
-  { kit = "kit/arrma/quake-grom", car = "Typhon Grom", type = "replaces", source = "doc/avid-rc/flexkit" },
-  { kit = "kit/arrma/gorgon-grom", type = "replaces", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/typhon-grom", releases = ["release/arrma/ara2106t1", "release/arrma/ara2106t2"], type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Arrma Typhon Grom Bearing Kit (link_car_kits.py --verify)" },
+  { kit = "kit/arrma/granite-grom", car = "Typhon Grom", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/mojave-grom", car = "Typhon Grom", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/quake-grom", car = "Typhon Grom", type = "direct", source = "doc/avid-rc/flexkit" },
+  { kit = "kit/arrma/gorgon-grom", type = "direct", source = "doc/avid-rc/flexkit" },
 ]
 notes = "Each size can be ordered as one of: Metal, Revolution | Aura, Rubber, Revolution, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [

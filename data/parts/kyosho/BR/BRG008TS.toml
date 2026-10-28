@@ -5,7 +5,7 @@ name = "Teflon Shield Bearing (12x18x4)"
 gtin = "4548565137695"
 pack_qty = 4
 fits = [
-  { kit = "kit/kyosho/dmt", type = "replaces", source = "doc/kyosho/30843-dmt-ve-spop" },
+  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/30843-dmt-ve-spop" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },

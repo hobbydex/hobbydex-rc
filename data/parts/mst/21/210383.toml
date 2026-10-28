@@ -4,8 +4,8 @@ number = "210383"
 name = "FXX CS kit (1.37/1.62/1.82/1.93)"
 applies_to = "FXX-D ( VIP ) / MS-01D"
 fits = [
-  { kit = "kit/mst/fxx-d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/ms-01d", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/fxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/ms-01d", type = "direct", source = "doc/mst/option-parts-list-2018" },
 ]
 notes = "Option parts list: Only for MS-01D 2WD"
 documents = ["doc/mst/option-parts-list-2018"]

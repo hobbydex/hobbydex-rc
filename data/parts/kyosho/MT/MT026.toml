@@ -10,7 +10,7 @@ equivalent_to = [
   { spec = "spec/pin/3x34", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
 fits = [
-  { kit = "kit/kyosho/megaforce", type = "replaces", source = "doc/kyosho/31181-megaforce-p" },
+  { kit = "kit/kyosho/megaforce", type = "direct", source = "doc/kyosho/31181-megaforce-p" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mt026.html" },

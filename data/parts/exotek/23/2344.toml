@@ -5,8 +5,8 @@ name = "TAMIYA F1 1/4\" AXLE ADAPTER BEARINGS SET, for TRF104 F104 etc"
 gtin = "708498508083"
 applies_to = "TRF104, F104"
 fits = [
-  { kit = "kit/tamiya/trf104", type = "replaces", source = "doc/exotek/shop" },
-  { kit = "kit/tamiya/f104", releases = ["release/tamiya/58431", "release/tamiya/58475", "release/tamiya/58534", "release/tamiya/58652", "release/tamiya/84203"], type = "replaces", source = "doc/exotek/shop" },
+  { kit = "kit/tamiya/trf104", type = "direct", source = "doc/exotek/shop" },
+  { kit = "kit/tamiya/f104", releases = ["release/tamiya/58431", "release/tamiya/58475", "release/tamiya/58534", "release/tamiya/58652", "release/tamiya/84203"], type = "direct", source = "doc/exotek/shop" },
 ]
 links = [
   { site = "Exotek Racing", url = "https://www.exotekracing.com/tamiya-f1-14-axle-adapter-bearings-set-for-trf104-f104-etc.html" },

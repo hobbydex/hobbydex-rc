@@ -5,9 +5,9 @@ name = "Ball connector 5.8"
 pack_qty = 10
 applies_to = "CFX-W / CFX / CMX"
 fits = [
-  { kit = "kit/mst/cfx-w", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/cfx", type = "replaces", source = "doc/mst/option-parts-list-2018" },
-  { kit = "kit/mst/cmx", type = "replaces", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/cfx-w", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/cfx", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/cmx", type = "direct", source = "doc/mst/option-parts-list-2018" },
 ]
 category = "ball-end"
 ball_mm = 5.8

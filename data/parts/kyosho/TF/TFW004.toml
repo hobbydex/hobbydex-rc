@@ -7,10 +7,10 @@ category = "washer-shim"
 documents = ["doc/kyosho/tfw004-product-page"]
 color = "red"
 fits = [
-  { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
-  { kit = "kit/kyosho/tf-7", type = "replaces", source = "doc/kyosho/30026-tf7-parts-list-v02" },
-  { kit = "kit/kyosho/tf-7-7", type = "replaces", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
-  { kit = "kit/kyosho/optima", type = "replaces", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/tf-7", type = "direct", source = "doc/kyosho/30026-tf7-parts-list-v02" },
+  { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30024-tf6-p" },
 ]
 links = [
