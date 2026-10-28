@@ -262,6 +262,24 @@ def check_release_ranges(docs, errors):
                 if d.get(f) != rows[0][1].get(f):
                     errors.append(f"{path}: range {rg!r} mixes {f} {d.get(f)!r} with {rows[0][1].get(f)!r}")
 
+POWERS = ("brushed", "brushless", "nitro", "gas", "none")
+POWER_SOURCES = ("name", "kit", "kind", "curated")
+
+def check_release_power(docs, ids, errors):
+    """A release's `power` is one of POWERS and comes with `power_source`: "name" (the maker's wording in the release
+    name), "kit" (the kit's power), "kind" (a roller has none), "curated", or the id of the part or document that
+    states it (docs/schema.md "release")."""
+    for path, kind, d in docs:
+        if kind != "release" or ("power" not in d and "power_source" not in d):
+            continue
+        p, s = d.get("power"), d.get("power_source")
+        if p not in POWERS:
+            errors.append(f"{path}: power = {p!r} not in {list(POWERS)}")
+        if not (isinstance(s, str) and (s in POWER_SOURCES or (s.startswith(("part/", "doc/")) and s in ids))):
+            errors.append(f"{path}: power_source = {s!r} should be one of {list(POWER_SOURCES)} or an existing part or doc id")
+        elif p in ("brushed", "brushless", "nitro", "gas") and s == "kind":
+            errors.append(f"{path}: power_source kind only gives power none")
+
 def check_makes(docs, errors):
     """data/makes/<slug>.toml: one record per VEHICLE_MAKES entry, named as the make spells itself. country is the
     ISO 3166 alpha-2 code of the make's home country; notes describe the make with no dates (docs/schema.md "Makes")."""
@@ -1179,6 +1197,7 @@ def main():
     counts["art"] = check_art(ids, errors, body_parts)
     check_release_related(docs, errors)
     check_release_ranges(docs, errors)
+    check_release_power(docs, ids, errors)
     check_kit_supersedes(docs, errors)
     check_makes(docs, errors)
     check_dealer_links(docs, errors)
