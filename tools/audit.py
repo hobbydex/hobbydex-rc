@@ -69,6 +69,30 @@ def url_for(item):
     return SITE + "/rc/"
 
 
+ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.py")   # the per-host English addresses (link_language_variants.py)
+ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
+
+
+def english_swaps():
+    """{host: (from, to)} of the swap rules: a maker link under `from` has its English address under `to`."""
+    if not os.path.exists(ENGLISH_TABLE):
+        return {}
+    spec = importlib.util.spec_from_file_location("english_variants", ENGLISH_TABLE)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return {r["host"]: (r["from"], r["to"]) for r in mod.HOSTS if r.get("how") == "swap"}
+
+
+def non_english(url, swaps):
+    """Whether url is a maker link of a host with a swap rule that is not under the English address."""
+    host = urllib.parse.urlsplit(url).hostname or ""
+    rule = swaps.get(host)
+    if not rule:
+        return False
+    u = url if url.count("/") > 2 else url + "/"
+    return u.startswith(rule[0]) and not u.startswith(rule[1])
+
+
 def walk_strings(v):
     if isinstance(v, str):
         yield v
@@ -746,12 +770,16 @@ def main():
           dup_items, count=len(dup_groups), detail="; ".join(f"{mk}: " + " | ".join(sorted(sp)) for (mk, _), sp in sorted(dup_groups.items())[:15]))
 
     # 24. never-link hosts and dealer doc references
-    banned, scrap, local, dealer = [], [], [], []
+    banned, scrap, local, dealer, foreign = [], [], [], [], []
+    swaps = english_swaps()
     for path in sorted({d["_path"] for k in db for d in db[k]}):
         with open(os.path.join(RC, path), encoding="utf-8") as f:
             text = f.read()
         if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)):
             banned.append(path)
+        if any(non_english(u, swaps) for line in text.splitlines() if not line.lstrip().startswith("notes")
+               for u in ENGLISH_LINK.findall(line)):
+            foreign.append(path)
         if SCRAP_IMG.search(text):
             scrap.append(path)
         if "doc/tamiya/tamico-dealer-parts" in text:
@@ -767,6 +795,8 @@ def main():
     check("tamico-doc-reference", "cite the maker's own listing instead of the Tamico dealer catalogue", [{"id": p} for p in dealer], count=len(dealer))
     results["tamico-doc-reference"]["examples"] = [{"id": p, "url": SITE + "/rc/"} for p in dealer[:args.examples]]
     check("local-path", "replace the local path with the source's URL", local)
+    check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed",
+          [{"id": p} for p in foreign], count=len(foreign))
 
     # 25. releases with no maker product page (no product_page document, no maker link), per brand
     no_page = [r for r in rels if not any(docs.get(d, {}).get("kind") == "product_page" for d in r.get("documents", []))
