@@ -832,7 +832,7 @@ depends on the cell count or a class of turns is left out) and
 list of how the ESC is set up: card (program card), box (program box), app,
 bluetooth, wifi, buttons, transmitter); and `resistance_mohm` (the internal
 resistance in milliohms, "resistance 0.0014 ohm" gives 1.4). All are
-ESC-only (category esc). Example:
+ESC-only (category esc), except on a 2-in-1 motor (category motor, with its ESC built in: the Furitek UNITY, Spektrum Firma units), which keeps the ESC fields the maker states. Example:
 
 ```toml
 name = "Viper Auto Sport 20, speed controller, waterproof"
