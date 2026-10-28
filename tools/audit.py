@@ -12,7 +12,7 @@ fix. The full list of one check: --list NAME. JSON for scripts: --json FILE.
 
 Exit code 0 always: this is a to-do list. Runs in well under five minutes.
 """
-import argparse, collections, csv, glob, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
+import argparse, atexit, collections, csv, glob, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
 
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -104,14 +104,8 @@ def walk_strings(v):
             yield from walk_strings(x)
 
 
-_CLS = None
-
-
-def _classify_one(name):
-    return _CLS(name)
-
-
 _TARGET = _KEEP = None   # classify_parts.target and its KEEP marker, set by load_tools
+_POOL = None   # forked workers for the classifier, started by load_tools (before the records are loaded)
 
 
 def _category_of(p):
@@ -120,16 +114,23 @@ def _category_of(p):
     return "keep" if c is _KEEP else (c or "")
 
 
-def classify_all(cls, names):
-    """cls over the names in forked workers: the classifier is regex-heavy and one process takes about a minute."""
-    global _CLS
-    _CLS = cls   # set before the fork, so the workers inherit it
+def start_classify_pool():
+    """Forked workers for _category_of. Forked before the records are loaded: a worker forked after the
+    ~1 GB of records copies the pages its refcounts touch, and eight of them took the audit past 6 GB."""
+    global _POOL
     try:
         import multiprocessing as mp
-        with mp.get_context("fork").Pool(min(8, os.cpu_count() or 1)) as pool:
-            return pool.map(_classify_one, names, chunksize=4000)
-    except (ValueError, OSError):   # no fork here: one process
-        return [cls(n) for n in names]
+        _POOL = mp.get_context("fork").Pool(min(8, os.cpu_count() or 1))
+        atexit.register(_POOL.close)
+    except (ValueError, OSError):   # no fork here: the classifier runs in this process
+        _POOL = None
+
+
+def classify_all(parts):
+    """_category_of over the parts in the workers (one process takes about a minute on the full data)."""
+    if _POOL is None:
+        return [_category_of(p) for p in parts]
+    return _POOL.map(_category_of, parts, chunksize=4000)
 
 
 def near_local(a, b):
@@ -234,6 +235,7 @@ def load_tools(tools):
             out["fastener_cats"] = mod.FASTENER_CATS
             global _TARGET, _KEEP
             _TARGET, _KEEP = mod.target, mod.KEEP
+            start_classify_pool()
         except Exception as e:  # the audit still runs without it
             print(f"note: classifier not loaded ({e})", file=sys.stderr)
         finally:
@@ -279,6 +281,14 @@ def load_tools(tools):
         finally:
             sys.path.remove(os.path.dirname(hw))
     return out
+
+
+def by_brand(parts):
+    """The parts grouped by brand, each group in data order (groups in first-seen order)."""
+    groups = collections.OrderedDict()
+    for p in parts:
+        groups.setdefault(p.get("brand"), []).append(p)
+    return list(groups.values())
 
 
 # A real vehicle's model under two names in one make: the name without these words is the same (Actros 3363 and
@@ -368,8 +378,8 @@ def main():
     args = ap.parse_args()
     sys.stdout.reconfigure(errors="backslashreplace")
     os.chdir(RC)
+    tools = load_tools(os.path.abspath(args.tools))   # before the records: the classifier's workers fork from a small heap
     db = load(RC)
-    tools = load_tools(os.path.abspath(args.tools))
     by_id = {}
     for k in db:
         for d in db[k]:
@@ -587,7 +597,7 @@ def main():
         moves = collections.Counter()
         drift = collections.defaultdict(list)
         cands = [p for p in parts if not (p.get("category_source") == "curated" or p["name"] == (p.get("number") or ""))]
-        for p, new in zip(cands, classify_all(_category_of, cands)):   # the classifier's own target(), as the run writes it
+        for p, new in zip(cands, classify_all(cands)):   # the classifier's own target(), as the run writes it
             if new == "keep":
                 continue
             new = new or None
@@ -734,7 +744,7 @@ def main():
                 nr_kits[p["id"]].add(f["kit"])
     results["fits-kit-no-release"]["kit_of"] = {i: ", ".join(sorted(k)) for i, k in nr_kits.items()}
     per_kit = collections.Counter(k for ks in nr_kits.values() for k in ks)
-    results["fits-kit-no-release"]["breakdown"] = ("kit", [f"{k} {c}" for k, c in per_kit.most_common(40)])
+    results["fits-kit-no-release"]["breakdown"] = ("kit", [f"{k} {c}" for k, c in sorted(per_kit.items(), key=lambda kv: (-kv[1], kv[0]))[:40]])
 
     # 21. orphan art files
     orphans = []
@@ -919,19 +929,31 @@ def main():
     # metal hardware whose name or cached maker page states a material the data lacks (tools/link_part_material.py's rule)
     lpm = tools.get("material")
     if lpm:
-        idxs, stated = {}, []
-        for p in parts:
-            if p.get("category") in MAT_CATS and p.get("material") in (None, "unknown"):
-                upd, _, _ = lpm.decide(p, brands.get(p.get("brand"), {}), idxs)
-                if upd.get("material"):
-                    stated.append(p)
+        # the brand's page index is built for its own parts and dropped with them (one brand at a time)
+        stated_ids = set()
+        for brand_parts in by_brand(parts):
+            idxs = {}
+            for p in brand_parts:
+                if p.get("category") in MAT_CATS and p.get("material") in (None, "unknown"):
+                    upd, _, _ = lpm.decide(p, brands.get(p.get("brand"), {}), idxs)
+                    if upd.get("material"):
+                        stated_ids.add(id(p))
+        stated = [p for p in parts if id(p) in stated_ids]
         check("hw-no-material", "run tools/link_part_material.py in hobbydex-tools (it sets the material the name or the maker's page states, and reports the conflicts)",
               stated, per_brand=per_brand(stated))
 
     # 29b. hardware (any brand) whose cached product photo is not read yet for its colour or its piece count
     if tools["hwphoto"]:
         hw = tools["hwphoto"]
-        unread = [p for p in parts if hw.unread_photo(p)]
+        unread_ids = set()
+        for brand_parts in by_brand(parts):   # the photo index of a brand is dropped after its parts (it held every brand at once)
+            for p in brand_parts:
+                if hw.unread_photo(p):
+                    unread_ids.add(id(p))
+            hw._INDEX.pop((brand_parts[0].get("brand") or "")[6:], None)
+        hw._NUM = None   # number_pages: every cached product page, built once for this check
+        hw.L._CRAWLED = None   # the crawl's page map (link_pack_qty.crawled_pages), read by the photo lookups only
+        unread = [p for p in parts if id(p) in unread_ids]
         check("hw-photo-unread", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour or pack_qty by hand from the photo",
               unread, per_brand=per_brand(unread))
 
