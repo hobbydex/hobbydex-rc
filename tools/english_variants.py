@@ -3,6 +3,7 @@ and by the audit (non-english-link).
 
 how = "swap": the address prefix `from` becomes `to` (a home page counts as `from` with its slash).
 how = "hreflang": the cached page's <link hreflang="en"> alternate is the English address.
+how = "suffix": a manual named for its language (-fr, -de, _DE) takes the -en twin, switched only when that address is cached.
 A host listed here has an English version; a link with none (or whose English page is gone) stays.
 """
 
@@ -14,4 +15,7 @@ HOSTS = [
     {"host": "tamico.de", "how": "hreflang"},
     {"host": "www.scaleart-shop.de", "how": "swap", "from": "https://www.scaleart-shop.de/products/", "to": "https://scaleart-shop.de/en-de/products/"},
     {"host": "www.rc-race-shop.de", "how": "hreflang"},
+    {"host": "www.lrp.cc", "how": "swap", "from": "https://www.lrp.cc/de/produkt/", "to": "https://www.lrp.cc/en/product/"},
+    {"host": "www.horizonhobby.com", "how": "suffix"},   # a -fr/-de/-DE manual switches to its -en twin when that file is cached
+    {"host": "traxxas.com", "how": "suffix"},
 ]
