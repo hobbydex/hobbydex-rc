@@ -110,6 +110,7 @@ ENUMS = {
     "part.radio_unit": {"transmitter", "receiver", "set", "gyro"},
     "part.shock_part": {"complete", "body", "shaft", "piston", "cap", "rebuild-kit", "rod-end", "spring-cup"},
 }
+ENUMS["release.category"] = ENUMS["kit.category"]   # a release's kit type override (docs/schema.md "release", category)
 # engine fields (docs/schema.md "Engines"): only on engine-fuel parts, numbers in these ranges
 # servo spec fields (docs/schema.md "Servos"): bearings, bearing_kind, dead_band_us, frequency_hz
 SERVO_FIELDS = ("bearings", "bearing_kind", "dead_band_us", "frequency_hz")
