@@ -8,3 +8,6 @@ gtin = "4548565221233"
 category = "suspension"
 documents = ["doc/kyosho/kfw101-front-sus-conversion", "doc/kyosho/kfw101-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kfw101.html" } ]
+fits = [
+  { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/kfw101-front-sus-conversion", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

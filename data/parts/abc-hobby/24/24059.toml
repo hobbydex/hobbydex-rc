@@ -14,5 +14,5 @@ equivalent_to = [
   { spec = "spec/pin/2x9.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]
 fits = [
-  { kit = "kit/abc-hobby/genetic", type = "replaces", source = "doc/abc-hobby/jp-rc-gene-gene_spline", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/abc-hobby/genetic", type = "direct", source = "doc/abc-hobby/jp-rc-gene-gene_spline", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]

@@ -5,3 +5,6 @@ name = "Volkswagen New Beetle"
 name_ja = "フォルクスワーゲン ニュービートル"
 documents = ["doc/kyosho/mzn55-vw-new-beetle-m"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/beetle", type = "direct", source = "doc/kyosho/mzn55-vw-new-beetle-m", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
