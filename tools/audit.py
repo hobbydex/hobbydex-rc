@@ -30,6 +30,11 @@ BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re
 TAMICO_DEALER_LINK = re.compile(r'\{ site = "tamico\.de", url = "[^"]*", kind = "dealer" \}')
 SCRAP_IMG = re.compile(r"https?://[^\s\"')]*rcscrapyard[^\s\"')]*\.(jpe?g|png|gif|webp)", re.I)
 LOCAL_PATH = re.compile(r"(^|[\s\"'(=])(/home/|/Users/|/tmp/|file://|[A-Za-z]:\\|work/manuals/|cache/)")
+# words of another language in a title: Dutch (YouTube's localised titles), and French, Spanish and German
+# cues ("Guide de", "Fiche de", "instrucciones"); English words, even "van" (Monster Van), are not listed
+NON_ENGLISH = re.compile(r"(?<![A-Za-z])(het|een|voor|met|handleiding|nieuwe|nieuw|frisse|kies|gloednieuwe|garantie|gebruikvoorzorgen|"
+                         r"instructies|lijnen|onze|jouw|bekijk|guide de|fiche de|de r\u00e9f\u00e9rence|r\u00e9glage|"
+                         r"instrucciones|d\u00e9monstration|manual de|bedienungsanleitung|anleitung)(?![A-Za-z])", re.I)
 FIX_PAGE = "add the maker's product page as a document (kind product_page, page = the maker's URL) and list it in the release's documents"
 
 
@@ -605,6 +610,12 @@ def main():
     # 14. video documents without a date
     check("video-no-date", "add the date the maker's video was published, from the channel page",
           [d for d in docs.values() if d.get("kind") == "video" and not d.get("date")])
+
+    # 14b. document titles in another language (decision 2026-10-28: titles are stored in English; YouTube and
+    # some sites localise them): a title with common Dutch, French, Spanish or German words is listed for an
+    # English source copy to fix from (a refetch through the crawl queue), never renamed on a guess
+    check("title-language", "rename the document from an English source copy (the maker's English page or manual, cited): the English title, not a translation",
+          [d for d in docs.values() if NON_ENGLISH.search(d.get("title", ""))])
 
     # 15. release with no date at all
     check("release-no-date", "date the release from a source (released, year or announced); a seen_by bound is only a fallback",
