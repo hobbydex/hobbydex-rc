@@ -4,5 +4,8 @@ number = "FTX7693"
 name = "Wheel Hex. Pins (φ2.5*16.8)"
 name_source = "manual"
 notes = "Name from FTX's replacement parts list (Futura manual, page 13)"
-category = "gear"
+category = "pin"
 documents = ["doc/ftx/cml-futura-manual"]
+equivalent_to = [
+  { spec = "spec/pin/2.5x16.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

@@ -7,3 +7,6 @@ notes = "Name from FTX's replacement parts list (Futura manual, page 15)"
 pack_qty = 4
 category = "bearing"
 documents = ["doc/ftx/cml-futura-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/6x12x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

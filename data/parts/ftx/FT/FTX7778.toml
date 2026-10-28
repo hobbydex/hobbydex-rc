@@ -5,3 +5,6 @@ name = "Cross Recessed Countersunk Self Tapping Screws (KB2.6*14mm)"
 category = "screw"
 name_source = "manual"
 documents = ["doc/ftx/cml-futura-manual"]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x14-countersunk-phillips-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
