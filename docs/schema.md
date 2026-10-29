@@ -358,7 +358,7 @@ migration or a first sweep) are not used. The site's Latest list shows it as
 
 `category`: what kind of part it is, one of the categories in `data/categories` (see category below): `ball-end`, `battery`, `bearing`, `body`, `body-accessory`, `bumper-guard`, `charger`, `chassis`, `clip`, `cooling`, `decal`, `differential`, `drivetrain`, `electronics`, `engine-fuel`, `esc`, `gear`, `glue`, `hardware-set`, `light`, `manual`, `merchandise`, `motor`, `nut`, `o-ring-seal`, `oil-grease`, `paint`, `parts-tree`, `pin`, `pinion`, `radio`, `rod-end`, `scale-accessory`, `screw`, `servo`, `shock`, `shock-spring`, `spur-gear`, `steering`, `suspension`, `tire`, `tool`, `turnbuckle`, `washer-shim`, `wheel`, `wing`, `wire`. It is derived
 from the name by a classifier and recomputed when the rules improve; set
-`category_source = "curated"` to fix a category by hand. Parts named only by
+`category_source = "curated"` to fix a category by hand. The same mark is set on a category the maker states (a section of its parts list or a collection on its site, from the importer or tools/link_maker_sections.py) and the classifier keeps it. Parts named only by
 number have none.
 
 ```toml
