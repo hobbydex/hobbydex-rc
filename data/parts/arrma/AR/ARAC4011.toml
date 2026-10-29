@@ -19,9 +19,9 @@ fits = [
   { kit = "kit/arrma/notorious", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/outcast", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/typhon", type = "direct", source = "doc/arrma/horizon-part-pages" },
-  { kit = "kit/arrma/kraton", type = "direct", replaces = "part/arrma/ARA311187", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/arrma/mojave-6s", type = "direct", replaces = "part/arrma/ARA311187", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/arrma/notorious", type = "direct", replaces = "part/arrma/ARA311187", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/arrma/kraton", type = "replaces", replaces = "part/arrma/ARA311187", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/arrma/mojave-6s", type = "replaces", replaces = "part/arrma/ARA311187", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/arrma/notorious", type = "replaces", replaces = "part/arrma/ARA311187", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/arrma/talion-6s-1-8", type = "direct", source = "doc/arrma/horizon-part-pages" },
 ]
 former_ids = ["part/arrma/AR310439"]

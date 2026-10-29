@@ -25,7 +25,7 @@ fits = [
   { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
   { kit = "kit/kyosho/fantom-ep-4wd", type = "replaces", source = "doc/kyosho/30635-fantom-ep-4wd-spop" },
   { kit = "kit/kyosho/ez-series", type = "replaces", source = "doc/kyosho/34405-sandmaster2-0-spop" },
-  { kit = "kit/kyosho/javelin", type = "direct", replaces = "part/kyosho/FA304-25", source = "doc/kyosho/30618-javelin-spare-and-option-parts", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/javelin", type = "replaces", replaces = "part/kyosho/FA304-25", source = "doc/kyosho/30618-javelin-spare-and-option-parts", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pngs4825.html" },

@@ -4,7 +4,7 @@ number = "600497"
 name = "Steeringblock L+R V2 alu"
 fits = [
   { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", replaces = "part/serpent/600481", source = "doc/serpent/srx8-gte-rtr-parts", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", replaces = "part/serpent/600481", source = "doc/serpent/srx8-gte-rtr-parts", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-options" },
 ]
 links = [

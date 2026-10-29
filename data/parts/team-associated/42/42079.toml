@@ -13,6 +13,6 @@ links = [
 fits = [
   { kit = "kit/team-associated/apex2", type = "direct", source = "doc/team-associated/store" },
   { kit = "kit/element-rc/enduro", type = "direct", source = "doc/element-rc/40118-page" },
-  { kit = "kit/element-rc/enduro", type = "direct", replaces = "part/team-associated/42080", source = "doc/element-rc/40118-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/element-rc/enduro", type = "replaces", replaces = "part/team-associated/42080", source = "doc/element-rc/40118-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
 shock_part = "complete"

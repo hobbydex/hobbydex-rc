@@ -10,7 +10,7 @@ material = "steel"
 color = "gray"
 fits = [
   { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/traxxas/67454-4-parts-list" },
-  { kit = "kit/traxxas/stampede-4x4", type = "direct", replaces = "part/traxxas/9023", source = "doc/traxxas/67454-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", replaces = "part/traxxas/9023", source = "doc/traxxas/67454-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/9023-stgry-steel-gray-chassis-nerf-bars-2" },

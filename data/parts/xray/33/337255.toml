@@ -11,9 +11,9 @@ former_names = ["TITAN PIVOT BALL 8.4 MM"]
 category = "ball-end"
 material = "titanium"
 fits = [
-  { kit = "kit/xray/nt1", type = "direct", replaces = "part/xray/337250", source = "doc/xray/nt1-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/xray/rx8", type = "direct", replaces = "part/xray/337250", source = "doc/xray/rx8-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/xray/nt1", type = "direct", replaces = "part/xray/337256", source = "doc/xray/nt1-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/xray/rx8", type = "direct", replaces = "part/xray/337257", source = "doc/xray/rx8-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/xray/rx8", type = "direct", replaces = "part/xray/343285", source = "doc/xray/rx8-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/nt1", type = "replaces", replaces = "part/xray/337250", source = "doc/xray/nt1-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/rx8", type = "replaces", replaces = "part/xray/337250", source = "doc/xray/rx8-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/nt1", type = "replaces", replaces = "part/xray/337256", source = "doc/xray/nt1-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/rx8", type = "replaces", replaces = "part/xray/337257", source = "doc/xray/rx8-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/rx8", type = "replaces", replaces = "part/xray/343285", source = "doc/xray/rx8-2017-manual", notes = "Same part in another material (link_upgrades.py)" },
 ]
