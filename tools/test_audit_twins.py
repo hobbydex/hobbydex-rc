@@ -43,6 +43,18 @@ def test_unrelated_brands_without_sources_are_unclear():
     assert audit.twin_class(a, b, BRANDS, COMPANIES, {}) == "unclear"
 
 
+def test_number_only_names_never_pair():
+    a = {"id": "part/cross-rc/11202", "brand": "brand/cross-rc", "number": "11202", "name": "11202"}
+    b = {"id": "part/hobao/11202", "brand": "brand/hobao", "number": "11202", "name": "11202"}
+    assert audit.twin_pairs([a, b]) == []
+
+
+def test_same_number_and_real_name_pair():
+    a = part("part/blitz/60419-1", "brand/blitz")
+    b = part("part/team-titan/60419-1", "brand/team-titan")
+    assert audit.twin_pairs([a, b]) == [(a, b)]
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
