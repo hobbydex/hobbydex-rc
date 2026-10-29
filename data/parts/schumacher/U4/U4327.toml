@@ -10,3 +10,8 @@ material = "aluminium"
 color = "black"
 documents = ["doc/schumacher/atom3-instructionmanual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/atom-2/alloy-servo-mount-black-k1-mi5-mi7-l1-aero-a2-icon-u4327" } ]
+fits = [
+  { kit = "kit/schumacher/atom-2", type = "direct", source = "doc/schumacher/atom2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon-2", type = "direct", source = "doc/schumacher/icon2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+]

@@ -11,3 +11,7 @@ notes = "Shown by number in the manual; not on its spares list"
 category = "rod-end"
 documents = ["doc/schumacher/neon-ft-manual", "doc/schumacher/vibeft-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/ball-sockets-pro-grey-pk8-u8321" } ]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+]

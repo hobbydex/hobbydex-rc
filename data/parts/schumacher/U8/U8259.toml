@@ -9,3 +9,7 @@ pack_qty = 4
 category = "bumper-guard"
 documents = ["doc/schumacher/ft9-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/roll-bar-socket-mi8-ft8-pk4-u8259" } ]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+]

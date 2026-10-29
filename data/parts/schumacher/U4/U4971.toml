@@ -9,3 +9,7 @@ name_source = "manufacturer"
 category = "washer-shim"
 documents = ["doc/schumacher/atom3-instructionmanual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-3/diff-spacer-set-e1-e3-u4971" } ]
+fits = [
+  { kit = "kit/schumacher/eclipse-2", type = "direct", source = "doc/schumacher/eclipse2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/eclipse-3", type = "direct", source = "doc/schumacher/eclipse3-exploded", notes = "Shown on the car's exploded diagram" },
+]

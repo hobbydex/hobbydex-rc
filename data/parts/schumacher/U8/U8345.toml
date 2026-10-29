@@ -15,3 +15,7 @@ category_source = "llm"
 equivalent_to = [
   { spec = "spec/o-ring/5x1.5", match = "functional" },
 ]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon-2", type = "direct", source = "doc/schumacher/icon2-exploded", notes = "Shown on the car's exploded diagram" },
+]

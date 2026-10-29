@@ -11,6 +11,8 @@ documents = ["doc/schumacher/vibeft-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mission-ft/speed-pack-m3x12-cap-hd-pk10-u7114" } ]
 fits = [
   { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cat-l1-evo", type = "direct", source = "doc/schumacher/cat-l1-evo-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mission-ft", type = "direct", source = "doc/schumacher/mission-ft-exploded-v2", notes = "Shown on the car's exploded diagram" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m3x12-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },

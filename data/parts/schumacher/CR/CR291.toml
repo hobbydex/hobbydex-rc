@@ -9,3 +9,7 @@ category = "steering"
 spline_teeth = 25
 documents = ["doc/schumacher/c2w-manual", "doc/schumacher/eclipse6-maunal"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-2/1-12-servo-saver-25t-futaba-cr291" } ]
+fits = [
+  { kit = "kit/schumacher/eclipse-2", type = "direct", source = "doc/schumacher/eclipse2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/top-cat", type = "direct", source = "doc/schumacher/topcat-explode", notes = "Shown on the car's exploded diagram" },
+]

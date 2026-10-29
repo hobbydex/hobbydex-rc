@@ -6,3 +6,8 @@ notes = "Shown by number in the manual; not on its spares list"
 documents = ["doc/schumacher/eclipse6-maunal"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/schumacher/icon-2", type = "direct", source = "doc/schumacher/icon2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mission-ft", type = "direct", source = "doc/schumacher/mission-ft-exploded-v2", notes = "Shown on the car's exploded diagram" },
+]

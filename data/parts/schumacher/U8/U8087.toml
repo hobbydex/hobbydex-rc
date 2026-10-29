@@ -10,3 +10,7 @@ shock_part = "body"
 material = "aluminium"
 documents = ["doc/schumacher/eclipse6-maunal"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-4/alloy-damper-body-icon-2-e4-5-a3-u8087" } ]
+fits = [
+  { kit = "kit/schumacher/icon-2", type = "direct", source = "doc/schumacher/icon2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+]

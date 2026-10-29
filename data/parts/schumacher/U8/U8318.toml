@@ -9,3 +9,7 @@ category = "spur-gear"
 teeth = 92
 pitch_dp = 64
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/cnc-stock-spur-gear-92t-64dp-mi8-ft8-u8318" } ]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+]

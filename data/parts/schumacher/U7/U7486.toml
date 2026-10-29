@@ -9,3 +9,7 @@ applies_to = "E2,E3,E4,A3"
 category = "chassis"
 material = "aluminium"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-4/alloy-servo-mounts-e2-e3-e4-a3-u7486" } ]
+fits = [
+  { kit = "kit/schumacher/eclipse-2", type = "direct", source = "doc/schumacher/eclipse2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/eclipse-3", type = "direct", source = "doc/schumacher/eclipse3-exploded", notes = "Shown on the car's exploded diagram" },
+]
