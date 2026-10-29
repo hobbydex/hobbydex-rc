@@ -10,7 +10,7 @@ A host listed here has an English version; a link with none (or whose English pa
 HOSTS = [
     {"host": "rc.kyosho.com", "how": "swap", "from": "https://rc.kyosho.com/ja/", "to": "https://rc.kyosho.com/en/"},
     {"host": "www.kopropo.co.jp", "how": "swap", "from": "https://www.kopropo.co.jp/", "to": "https://www.kopropo.co.jp/en/"},
-    {"host": "www.os-engines.co.jp", "how": "swap", "from": "https://www.os-engines.co.jp/", "to": "https://www.os-engines.co.jp/english/"},
+    # www.os-engines.co.jp: no rule, every link there is already English (/english/, /parts_list_english/, /osspeed/english/)
     {"host": "d7z22c0gz59ng.cloudfront.net", "how": "swap", "from": "https://d7z22c0gz59ng.cloudfront.net/cms/japan/download/rcmanual/", "to": "https://www.tamiya.com/cms/english/rc/rcmanual/"},
     {"host": "tamico.de", "how": "hreflang"},
     {"host": "www.scaleart-shop.de", "how": "swap", "from": "https://www.scaleart-shop.de/products/", "to": "https://scaleart-shop.de/en-de/products/"},
