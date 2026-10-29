@@ -1234,6 +1234,17 @@ def main():
     st = os.statvfs("/tmp")
     used = 100 * (st.f_files - st.f_ffree) / st.f_files if st.f_files else 0.0
     scratch = sorted(((sum(len(fs) for _, _, fs in os.walk(sp)), sp) for sp in glob.glob(f"/tmp/claude-{os.getuid()}/*/*/scratchpad")), reverse=True)
+    # kits no release names, with a page of the maker's site that names the car (tools/parts_only_leads.py in hobbydex-tools writes the leads)
+    leads_tsv = os.path.join(os.path.abspath(args.tools), "cache", "notes", "parts-only-leads.tsv")
+    open_leads = set()
+    if os.path.exists(leads_tsv):
+        with open(leads_tsv, encoding="utf-8") as fh:
+            for ln in list(fh)[1:]:
+                kid = ln.split("\t", 1)[0]
+                if kid in kits and not rels_of_kit.get(kid):
+                    open_leads.add(kid)
+    check("parts-only-lead", "a page of the maker's site names this car (cache/notes/parts-only-leads.tsv: kit, brand, url, why): have the brand's importer read the page and add the release, with its manual and parts list",
+          sorted(open_leads))
     check("tmp-inodes", "/tmp is above 50% of its inodes: delete the scratchpad folders listed (tmpfs; builds and big exports go on disk)",
           [], count=int(used > 50), detail=f"/tmp inodes {used:.1f}% used ({st.f_files - st.f_ffree} of {st.f_files})")
     results["tmp-inodes"]["examples"] = [{"id": f"{n} files {sp}", "url": ""} for n, sp in scratch[:args.examples]]
