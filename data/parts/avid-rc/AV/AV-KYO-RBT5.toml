@@ -12,6 +12,11 @@ category_source = "curated"
 seal = "rubber-metal"
 lubricant = "grease"
 applies_to = "Kyosho RB5 (also RT5, SC, RB6, RB6.6, RT6, RB7)"
+fits = [
+  { kit = "kit/kyosho/ultima-rb5", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Kyosho RB5 (link_car_kits.py)" },
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the RB6 (link_car_kits.py)" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the RB6.6 (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/218/RB5" },

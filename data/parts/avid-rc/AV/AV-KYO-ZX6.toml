@@ -12,6 +12,10 @@ category_source = "curated"
 seal = "rubber-metal"
 lubricant = "grease"
 applies_to = "Kyosho ZX6 (also ZX6.6)"
+fits = [
+  { kit = "kit/kyosho/lazer-zx6", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Kyosho ZX6 (link_car_kits.py)" },
+  { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the ZX6.6 (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Metal | Clutch, Ceramic Revolution, Ceramic Metal | Aura, Ceramic Metal (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1634/ZX6" },
