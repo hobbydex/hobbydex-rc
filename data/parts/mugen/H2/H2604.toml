@@ -19,3 +19,6 @@ fits = [
 category = "bearing"
 documents = ["doc/mugen/mrx5-wc-part-list", "doc/mugen/mrx6-part-list", "doc/mugen/mrx6r-part-list"]
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/THRUST-BEARING-FOR-A-T-CLUTCH-D0603/H2604" } ]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 5x10 bearing (MR105)" },
+]

@@ -17,3 +17,6 @@ fits = [
 ]
 category = "bearing"
 documents = ["doc/mugen/mrx5-part-list", "doc/mugen/mrx5-wc-part-list", "doc/mugen/msx3-part-list"]
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 10x15 bearing (6700)" },
+]

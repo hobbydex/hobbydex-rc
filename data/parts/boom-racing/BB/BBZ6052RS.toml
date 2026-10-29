@@ -5,3 +5,7 @@ name = "High Performance Rubber Sealed Ball Bearing 5x14x5mm (1)"
 notes = "Name read by OCR from a scanned boom-racing manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x14x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

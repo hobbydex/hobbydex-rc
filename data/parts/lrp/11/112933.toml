@@ -12,3 +12,6 @@ fits = [
   { kit = "kit/lrp/s18-tourenwagen", type = "direct", source = "doc/lrp/110100-de-manual" },
 ]
 documents = ["doc/lrp/110100-de-manual", "doc/lrp/110200-de-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 5x8 bearing (MR85)" },
+]

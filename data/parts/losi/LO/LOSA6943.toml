@@ -22,3 +22,6 @@ fits = [
   { kit = "kit/tlr/22x-4", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/22x-t", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 10x15 bearing (6700)" },
+]

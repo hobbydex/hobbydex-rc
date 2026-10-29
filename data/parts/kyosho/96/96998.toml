@@ -11,3 +11,6 @@ fits = [
 ]
 category = "bearing"
 documents = ["doc/kyosho/30072-ep-ultimarb-sports-p", "doc/kyosho/30101-kx-one-p", "doc/kyosho/31092-gp-ultimarb-sports-p"]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "close", notes = "Width not stated in the name; 3 mm is the standard width of a 4x8 bearing (MR84)" },
+]
