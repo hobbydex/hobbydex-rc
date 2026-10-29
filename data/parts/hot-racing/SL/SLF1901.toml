@@ -3,9 +3,9 @@ brand = "brand/hot-racing"
 number = "SLF1901"
 name = "Traxxas Slash 4x4 Aluminum Front Castor Blocks"
 fits = [
-  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/hot-racing/rcvisions-catalogue" },
-  { kit = "kit/traxxas/rustler-4x4", type = "replaces", source = "doc/hot-racing/rcvisions-catalogue" },
-  { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/hot-racing/rcvisions-catalogue" },
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/hot-racing/rcvisions-catalogue", replaces = "part/traxxas/6832" },
+  { kit = "kit/traxxas/rustler-4x4", type = "replaces", source = "doc/hot-racing/rcvisions-catalogue", replaces = "part/traxxas/6832" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/hot-racing/rcvisions-catalogue", replaces = "part/traxxas/6832" },
 ]
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/slf1901-aluminum-c-hub-caster-blocks-tra-ral-rus-sla-sta-tel-4x4", kind = "maker" },
