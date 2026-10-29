@@ -9,4 +9,8 @@ power_source = "doc/element-rc/40107c-page"
 status = "released"
 seen_by = "2021-10"
 seen_by_source = "doc/element-rc/40107c-fs-g4p-bs-flysky-radio-usermanual-20211023"
-documents = ["doc/element-rc/40107c-page", "doc/element-rc/40107c-fs-g4p-bs-flysky-radio-usermanual-20211023"]
+documents = ["doc/element-rc/40107c-page", "doc/element-rc/40107c-fs-g4p-bs-flysky-radio-usermanual-20211023", "doc/element-rc/enduro-handout-2019-1", "doc/element-rc/enduro-handout-2019-2", "doc/element-rc/enduro-se-sendero-manual-8-22-22", "doc/element-rc/fs-r4d-bs-receiver-usermanual-20220708", "doc/element-rc/reedy-esc-sc480x-manual-online-r2", "doc/element-rc/scale-mini-boxes-enduro"]
+contains = [
+  { part = "part/element-rc/42180", role = "listed", source = "doc/element-rc/enduro-se-sendero-manual-8-22-22" },
+  { part = "part/element-rc/42310", role = "listed", source = "doc/element-rc/enduro-se-sendero-manual-8-22-22" },
+]
