@@ -2,7 +2,7 @@ id = "release/gl-racing/glr-001-nel"
 kit = "kit/gl-racing/glr"
 brand = "brand/gl-racing"
 number = "GLR-001-NEL"
-name = "GLR 1/27 RWD Chassis - W/O RX , Servo, ESC"
+name = "GLR 1/27 RWD Chassis - W/O RX, Servo, ESC"
 kind = "kit"
 sources = { kind = "https://gl-racing.com/store/index.php?route=product/product&product_id=200" }
 status = "released"
@@ -11,4 +11,7 @@ seen_by_source = "https://web.archive.org/web/20210106225245/http://gl-racing.co
 documents = ["doc/gl-racing/glr-001-nel-page", "doc/gl-racing/glr-setup-sheet", "doc/gl-racing/glr-assembly-guide-rev2", "doc/gl-racing/glr-assembly-guide-a2"]
 links = [
   { site = "GL Racing", url = "https://gl-racing.com/store/index.php?route=product/product&product_id=490" },
+]
+contains = [
+  { part = "part/gl-racing/GX-031", role = "listed", source = "doc/gl-racing/glr-assembly-guide-a2" },
 ]
