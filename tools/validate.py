@@ -610,6 +610,7 @@ def main():
     # hosts of brands whose own site serves http only (website = "http://..."): their maker pages may be linked over http
     http_hosts = {urllib.parse.urlsplit(d["website"]).hostname for _, k, d in docs
                   if k == "brand" and str(d.get("website", "")).startswith("http://")}
+    brand_site = {d.get("id"): urllib.parse.urlsplit(d["website"]).hostname for _, k, d in docs if k == "brand" and d.get("website")}
     # stable ids: an id is never reused; a changed id stays as former_ids on its successor or in retired.toml
     claimed = {}
     for path, kind, d in docs:
@@ -862,8 +863,11 @@ def main():
                 own_page = isinstance(ss, str) and ss in own_urls   # the maker's page we fetched first (the day it was on its site)
                 video = isinstance(ss, str) and re.fullmatch(r"https://www\.youtube\.com/watch\?v=[\w-]+", ss)   # a back-catalogue video (the bound is its upload day)
                 printed = isinstance(ss, str) and ss in printed_docs and isinstance(sb, str) and sb[:4] == printed_docs[ss]
-                if not (archive or shop or manual or own_page or video or printed):
-                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), or the maker's YouTube video of its first 60 days")
+                # the maker's product sitemap that lists the record's page, its <lastmod> the day (on a host of the brand or of its links)
+                maker_hosts = {urllib.parse.urlsplit(u).hostname for u in own_urls if isinstance(u, str) and u.startswith("https://")} | {brand_site.get(d.get("brand"))}
+                sitemap = isinstance(ss, str) and re.fullmatch(r"https://[^\s/]+/\S+\.xml(\.gz)?", ss) and urllib.parse.urlsplit(ss).hostname in maker_hosts
+                if not (archive or shop or manual or own_page or video or printed or sitemap):
+                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), the maker's YouTube video of its first 60 days, or the maker's product sitemap (https://<host>/....xml) that lists the page")
                 elif archive and not manual and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
