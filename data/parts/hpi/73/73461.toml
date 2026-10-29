@@ -2,7 +2,10 @@ id = "part/hpi/73461"
 brand = "brand/hpi"
 number = "73461"
 name = "WHEEL SET TYPE 2 (BLACK/MICRO RS4)"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/73461" } ]
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/73461" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/73461" }]
+fits = [
+  { kit = "kit/hpi/micro-rs4", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/73416" },
+]
 name_source = "manufacturer"
 category = "wheel"
 color = "black"

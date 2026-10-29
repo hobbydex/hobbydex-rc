@@ -1,6 +1,10 @@
 id = "part/hpi/1075"
 brand = "brand/hpi"
 number = "1075"
-name = "1075"
+name = "LED LIGHT SET (MICRO RS4)"
 notes = "Named by its number only: the name on the scanned hpi manual page was not clear enough to take"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/1075" } ]
+category = "light"
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/1075" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/1075" }]
+fits = [
+  { kit = "kit/hpi/micro-rs4", type = "direct", source = "doc/hpi/part-pages" },
+]

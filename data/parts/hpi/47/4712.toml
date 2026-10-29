@@ -1,6 +1,10 @@
 id = "part/hpi/4712"
 brand = "brand/hpi"
 number = "4712"
-name = "4712"
+name = "HIGH PERFORMANCE TIRE 36x14.5mm (MEDIUM)"
 notes = "Named by its number only: the name on the scanned hpi manual page was not clear enough to take"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/4712" } ]
+category = "tire"
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/4712" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/4712" }]
+fits = [
+  { kit = "kit/hpi/micro-rs4", type = "replaces", source = "doc/hpi/part-pages" },
+]

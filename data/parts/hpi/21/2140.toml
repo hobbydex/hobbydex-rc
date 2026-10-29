@@ -1,6 +1,19 @@
 id = "part/hpi/2140"
 brand = "brand/hpi"
 number = "2140"
-name = "2140"
+name = "SUPER STAR MT WHEELS (BLACK/DEEP OFFSET)"
+pack_qty = 2
+pack_qty_basis = "name"
 notes = "Named by its number only: the name on the scanned hpi manual page was not clear enough to take"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/2140" } ]
+category = "wheel"
+color = "black"
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/2140" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/2140" }]
+fits = [
+  { kit = "kit/hpi/e-firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/firestorm", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-mt2", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/nitro-rush", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
+]
+vehicle = "monster"

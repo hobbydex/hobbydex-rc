@@ -1,6 +1,11 @@
 id = "part/hpi/73411"
 brand = "brand/hpi"
 number = "73411"
-name = "73411"
+name = "WHEEL SET (BLACK/MICRO RS4)"
 notes = "Named by its number only: the name on the scanned hpi manual page was not clear enough to take"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/73411" } ]
+category = "wheel"
+color = "black"
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/73411" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/73411" }]
+fits = [
+  { kit = "kit/hpi/micro-rs4", type = "replaces", source = "doc/hpi/part-pages" },
+]

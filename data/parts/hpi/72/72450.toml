@@ -2,6 +2,9 @@ id = "part/hpi/72450"
 brand = "brand/hpi"
 number = "72450"
 name = "BALL DIFFERENTIAL SET (MICRO RS4)"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/72450" } ]
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/72450" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/72450" }]
+fits = [
+  { kit = "kit/hpi/micro-rs4", type = "replaces", source = "doc/hpi/part-pages", notes = "Hops up #73402, #73404" },
+]
 name_source = "manufacturer"
 category = "differential"
