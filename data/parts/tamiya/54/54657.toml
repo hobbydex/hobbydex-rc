@@ -7,6 +7,7 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/54657/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/17307-54657", kind = "fan-site" },
+  { site = "Tamiya", url = "https://www.tamiya.de/tamiya_en/spare-parts-accessories/rc-spare-parts/shock-absorbers-springs/silicone-diff-oil-3000-model-supply-40cc-300054657-en.html" },
 ]
 name_source = "ocr"
 category = "oil-grease"
@@ -15,3 +16,4 @@ documents = ["doc/tamiya/newitems-month"]
 equivalent_to = [
   { spec = "spec/oil/silicone-3000cst", match = "functional", notes = "Viscosity number #3000 as the brand states it, on the cSt scale; measuring temperature not given" },
 ]
+status = "available"

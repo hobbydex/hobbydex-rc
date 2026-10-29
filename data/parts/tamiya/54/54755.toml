@@ -4,10 +4,14 @@ number = "54755"
 name = "Carbon Stiffener (Upper Deck), Upper Spacer (x2, etc.)"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
-category = "washer-shim"
+category = "chassis"
 material = "carbon"
 released = "2018-02"
 documents = ["doc/tamiya/newitems-month"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/54755/index.html" },
+]
+status = "available"
+fits = [
+  { kit = "kit/tamiya/ta07", type = "replaces" },
 ]

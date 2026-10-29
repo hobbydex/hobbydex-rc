@@ -6,6 +6,11 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/8023-54178", kind = "fan-site" },
+  { site = "Tamiya customer service", url = "https://customer-service.tamiya.de/en/service/manuals/", kind = "maker" },
 ]
 category = "suspension"
 material = "aluminium"
+status = "discontinued"
+fits = [
+  { kit = "kit/tamiya/m-05", type = "replaces" },
+]
