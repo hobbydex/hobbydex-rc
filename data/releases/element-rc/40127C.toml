@@ -10,4 +10,8 @@ status = "released"
 seen_by = "2023-12"
 seen_by_source = "doc/element-rc/40127c-fs-g4p1-bsfs-r4d-esc-dip-switches-user-manual"
 color = "blue"
-documents = ["doc/element-rc/40127c-page", "doc/element-rc/40127c-fs-g4p1-bsfs-r4d-esc-dip-switches-user-manual"]
+documents = ["doc/element-rc/40127c-page", "doc/element-rc/40127c-fs-g4p1-bsfs-r4d-esc-dip-switches-user-manual", "doc/element-rc/enduro-handout-2019-1", "doc/element-rc/enduro-handout-2019-2", "doc/element-rc/enduro-ifs2-zuul-rtr-manual-9-3-2024", "doc/element-rc/scale-mini-boxes-enduro"]
+contains = [
+  { part = "part/element-rc/42025", role = "listed", source = "doc/element-rc/enduro-ifs2-zuul-rtr-manual-9-3-2024" },
+  { part = "part/element-rc/42089", role = "listed", source = "doc/element-rc/enduro-ifs2-zuul-rtr-manual-9-3-2024" },
+]

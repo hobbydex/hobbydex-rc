@@ -10,4 +10,8 @@ status = "released"
 seen_by = "2021-10"
 seen_by_source = "doc/element-rc/40108c-fs-g4p-bs-flysky-radio-usermanual-20211023"
 color = "silver"
-documents = ["doc/element-rc/40108c-page", "doc/element-rc/40108c-fs-g4p-bs-flysky-radio-usermanual-20211023"]
+documents = ["doc/element-rc/40108c-page", "doc/element-rc/40108c-fs-g4p-bs-flysky-radio-usermanual-20211023", "doc/element-rc/enduro-handout-2019-1", "doc/element-rc/enduro-handout-2019-2", "doc/element-rc/enduro-se-utron-rtr", "doc/element-rc/scale-mini-boxes-enduro"]
+contains = [
+  { part = "part/element-rc/42180", role = "listed", source = "doc/element-rc/enduro-se-utron-rtr" },
+  { part = "part/element-rc/42310", role = "listed", source = "doc/element-rc/enduro-se-utron-rtr" },
+]
