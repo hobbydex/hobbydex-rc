@@ -10,3 +10,6 @@ documents = ["doc/hobao/cml-h2-buggy-complete-kit-parts-reference", "doc/hobao/c
 links = [ { site = "HoBao", url = "https://hobaorc.myshopify.com/products/39008-nylon-nut-m3-10pcs" } ]
 category = "nut"
 material = "plastic"
+equivalent_to = [
+  { spec = "spec/nut/m3-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -6,3 +6,6 @@ notes = "Name read by OCR from a scanned hpi manual; verify before relying on ex
 name_source = "ocr"
 category = "nut"
 color = "blue"
+equivalent_to = [
+  { spec = "spec/nut/m4-wheel", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

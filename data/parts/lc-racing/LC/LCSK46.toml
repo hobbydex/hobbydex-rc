@@ -10,3 +10,6 @@ documents = ["doc/lc-racing/lcsk46-product-page"]
 color = "black"
 notes = "Colour as shown on the maker's product photo, confirmed by the user"
 links = [ { site = "LC Racing", url = "https://shop.lcracing.net/products/lcsk46-countersunk-screw-m2-6_12mm-1-5mm-hex-socket-20pcs" } ]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

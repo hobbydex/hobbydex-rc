@@ -17,3 +17,7 @@ category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/2.5x6x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+includes = [
+  { spec = "spec/washer/2.5x6x0.2" },
+  { spec = "spec/washer/2.5x6x0.5" },
+]

@@ -11,5 +11,8 @@ notes = "Name from the Axial manual's parts list"
 documents = ["doc/axial/axi-1532-exploded-view", "doc/axial/axi-2035-manual-ml"]
 
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m2-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
 [sources]
 name = "https://www.horizonhobby.com/product/axial-1-24-scx24-lexus-gx-470-4x4-rock-crawler-rtr/AXI-1532.html"

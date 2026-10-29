@@ -9,3 +9,6 @@ pack_qty = 8
 category = "screw"
 documents = ["doc/schumacher/eclipse6-maunal", "doc/schumacher/neon-ft-manual", "doc/schumacher/neon-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-4/speed-pack-m2-5x10-cap-hd-pk8-u4837" } ]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -9,3 +9,6 @@ links = [ { site = "HoBao", url = "https://hobaorc.myshopify.com/products/32308-
 name_source = "manufacturer"
 pack_qty = 10
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
