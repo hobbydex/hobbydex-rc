@@ -10,7 +10,7 @@ status = "discontinued"
 seen_by = "2026-10"
 seen_by_source = "https://traxxas.com/56086-4-110-e-revo-6s-brushless-racing-truck-w-tqi-radio"
 notes = "Traxxas publishes no parts list for this model; contents are the part numbers on its exploded views, read by OCR (three engines voting). Numbers other Traxxas parts lists confirm are in the box (or options when marked opt.); numbers only OCR has seen stay listed."
-documents = ["doc/traxxas/56086-4-exploded-chassis-assembly", "doc/traxxas/56086-4-exploded-front-assembly", "doc/traxxas/56086-4-exploded-transmission-assembly", "doc/traxxas/56086-4-product-page"]
+documents = ["doc/traxxas/56086-4-exploded-chassis-assembly", "doc/traxxas/56086-4-exploded-front-assembly", "doc/traxxas/56086-4-exploded-transmission-assembly", "doc/traxxas/56086-4-product-page", "doc/traxxas/56086-4-exploded-driveshafts-assembly", "doc/traxxas/56086-4-exploded-rear-assembly"]
 contains = [
   { part = "part/traxxas/1552", role = "kit", source = "doc/traxxas/56086-4-exploded-transmission-assembly" },
   { part = "part/traxxas/1747", role = "kit", source = "doc/traxxas/56086-4-exploded-transmission-assembly" },
@@ -133,7 +133,6 @@ contains = [
   { part = "part/traxxas/5451R", role = "kit", source = "doc/traxxas/56086-4-exploded-front-assembly" },
   { part = "part/traxxas/5451X", role = "kit", source = "doc/traxxas/56086-4-exploded-front-assembly" },
   { part = "part/traxxas/5460X", role = "kit", source = "doc/traxxas/56086-4-exploded-front-assembly" },
-  { part = "part/traxxas/5462", role = "listed", source = "doc/traxxas/56086-4-exploded-front-assembly" },
   { part = "part/traxxas/5463T", role = "kit", source = "doc/traxxas/56086-4-exploded-front-assembly" },
   { part = "part/traxxas/5465", role = "kit", source = "doc/traxxas/56086-4-exploded-front-assembly" },
   { part = "part/traxxas/5466X", role = "kit", source = "doc/traxxas/56086-4-exploded-front-assembly" },
@@ -166,4 +165,30 @@ contains = [
   { part = "part/traxxas/6533", role = "kit", source = "doc/traxxas/56086-4-exploded-chassis-assembly" },
   { part = "part/traxxas/8260X", role = "kit", source = "doc/traxxas/56086-4-exploded-front-assembly" },
   { part = "part/traxxas/9334", role = "kit", source = "doc/traxxas/56086-4-exploded-front-assembly" },
+  { part = "part/traxxas/2578", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/3978", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5118", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5119", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5145", role = "kit", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
+  { part = "part/traxxas/5329", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5333", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5333R", role = "option", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5338A", role = "option", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5348", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5379R", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5379X", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5380", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5382X", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5412", role = "option", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5413", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5446", role = "kit", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5446G", role = "option", source = "doc/traxxas/56086-4-exploded-rear-assembly" },
+  { part = "part/traxxas/5450", role = "kit", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
+  { part = "part/traxxas/5452", role = "kit", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
+  { part = "part/traxxas/5453", role = "kit", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
+  { part = "part/traxxas/5454", role = "kit", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
+  { part = "part/traxxas/5458X", role = "kit", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
+  { part = "part/traxxas/5459", role = "kit", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
+  { part = "part/traxxas/5462", role = "listed", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
+  { part = "part/traxxas/5650", role = "listed", source = "doc/traxxas/56086-4-exploded-driveshafts-assembly" },
 ]

@@ -4,11 +4,13 @@ brand = "brand/traxxas"
 number = "36034-1"
 name = "Bigfoot No. 1 2WD Replica Monster Truck RTR (36034-1)"
 kind = "rtr"
+power = "brushed"
+power_source = "part/traxxas/3785"
 status = "discontinued"
 seen_by = "2026-10"
 seen_by_source = "https://traxxas.com/36034-1-110-bigfoot-no-1-2wd-replica-monster-truck"
 notes = "Traxxas publishes no parts list for this model; contents are the part numbers on its exploded views, read by OCR (three engines voting). Numbers other Traxxas parts lists confirm are in the box (or options when marked opt.); numbers only OCR has seen stay listed."
-documents = ["doc/traxxas/36034-1-exploded-body-assembly", "doc/traxxas/36034-1-exploded-chassis-assembly", "doc/traxxas/36034-1-exploded-front-assembly", "doc/traxxas/36034-1-exploded-rear-assembly", "doc/traxxas/36034-1-product-page"]
+documents = ["doc/traxxas/36034-1-exploded-body-assembly", "doc/traxxas/36034-1-exploded-chassis-assembly", "doc/traxxas/36034-1-exploded-front-assembly", "doc/traxxas/36034-1-exploded-rear-assembly", "doc/traxxas/36034-1-product-page", "doc/traxxas/36034-1-exploded-transmission-assembly"]
 contains = [
   { part = "part/traxxas/1249", role = "listed", source = "doc/traxxas/36034-1-exploded-rear-assembly" },
   { part = "part/traxxas/1654", role = "kit", source = "doc/traxxas/36034-1-exploded-rear-assembly" },
@@ -170,4 +172,34 @@ contains = [
   { part = "part/traxxas/8274", role = "kit", source = "doc/traxxas/36034-1-exploded-rear-assembly" },
   { part = "part/traxxas/8361", role = "kit", source = "doc/traxxas/36034-1-exploded-front-assembly" },
   { part = "part/traxxas/9041", role = "kit", source = "doc/traxxas/36034-1-exploded-front-assembly" },
+  { part = "part/traxxas/1747", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2380", role = "option", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2381X", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2382", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2388X", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2419", role = "option", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2427", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2554", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2558", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2566", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2567", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/2572", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3185X", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3195", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3691", role = "option", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3691A", role = "option", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3696", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3785", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3790", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3792", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/3793", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/4628", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/4628X", role = "option", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/4676", role = "option", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/4683", role = "option", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/4686", role = "option", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/4690", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/5552", role = "listed", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/5552X", role = "listed", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
+  { part = "part/traxxas/5556", role = "kit", source = "doc/traxxas/36034-1-exploded-transmission-assembly" },
 ]
