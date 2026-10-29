@@ -14,3 +14,7 @@ pack_qty_basis = "name"
 equivalent_to = [
   { spec = "spec/screw/m2x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+applies_to = ["Pirate Pigmy"]
+fits = [
+  { kit = "kit/t2m/pirate-pigmy", type = "direct", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -10,4 +10,7 @@ links = [
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4905/7003."
 category = "esc"
 connector = "Tamiya"
-applies_to = ["Pirate 1/10"]
+applies_to = ["Pirate 1/10", "Pirate XL-EP"]
+fits = [
+  { kit = "kit/t2m/pirate-xl-ep", type = "replaces", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
