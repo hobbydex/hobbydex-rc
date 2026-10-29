@@ -1,0 +1,16 @@
+id = "part/tamiya/42257"
+brand = "brand/tamiya"
+number = "42257"
+name = "TRF201 XM Conversion Kit - Midship Motor"
+name_source = "owner"
+status = "discontinued"
+notes = "Named by its supplement sheet in Tamiya's manual listing (customer-service.tamiya.de, TRF-201XM); not in Tamiya's regular product list (std.csv); taken as discontinued. A conversion kit, not a car (owner, 2026-10-29)"
+links = [
+  { site = "Tamiya customer service", url = "https://customer-service.tamiya.de/en/service/manuals/", kind = "maker" },
+]
+documents = ["doc/tamiya/42257-trf-201xm-beiblatt"]
+category = "chassis"
+category_source = "curated"
+fits = [
+  { kit = "kit/tamiya/trf201", type = "direct", source = "doc/tamiya/42257-trf-201xm-beiblatt", notes = "Converts the TRF201 to a midship-motor layout" },
+]
