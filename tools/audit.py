@@ -371,7 +371,8 @@ def twin_class(a, b, brands, companies, docs):
             return True
         return any(companies.get(o, {}).get("brand") == other for o, other in ((ox, y), (oy, x)) if o)
 
-    if a["brand"] != b["brand"] and (cites(a, b["brand"]) or cites(b, a["brand"])):
+    # a record that cites its own brand's site is not a copy, even when the other brand shares that site
+    if a["brand"] != b["brand"] and ((cites(a, b["brand"]) and not cites(a, a["brand"])) or (cites(b, a["brand"]) and not cites(b, b["brand"]))):
         return "copy"
     if related(a["brand"], b["brand"]) and cites(a, a["brand"]) and cites(b, b["brand"]):
         return "shared"
