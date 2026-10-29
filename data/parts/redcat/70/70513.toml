@@ -2,6 +2,8 @@ id = "part/redcat/70513"
 brand = "brand/redcat"
 number = "70513"
 name = "Rear Link Mounts(Gearbox)"
+seen_by = "2020-06-06"
+seen_by_source = "https://web.archive.org/web/20200606133043/https://dealer.redcatracing.com/manuals/CAMOX4_MANUAL.pdf"
 gtin = "843335102168"
 pack_qty = 4
 pack_qty_basis = "page"
@@ -10,7 +12,7 @@ links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/70513" },
 ]
 fits = [
-  { kit = "kit/redcat/camo-tt", type = "replaces", source = "doc/redcat/store" },
-  { kit = "kit/redcat/camo-x4", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/camo-tt", type = "direct", source = "doc/redcat/store" },
+  { kit = "kit/redcat/camo-x4", type = "direct", source = "doc/redcat/store" },
 ]
 category = "chassis"

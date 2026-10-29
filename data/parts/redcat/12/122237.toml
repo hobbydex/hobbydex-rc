@@ -14,5 +14,6 @@ category = "body-accessory"
 material = "aluminium"
 fits = [
   { kit = "kit/redcat/lightning-str", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/lightning", type = "replaces", replaces = "part/redcat/02010", source = "doc/redcat/store", notes = "Same part in another material (link_upgrades.py)" },
 ]
 scale = "1/10"
