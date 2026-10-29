@@ -141,6 +141,18 @@ def near_local(a, b):
     return len(diff) <= 2 and all(p in CONFUSABLE for p in diff)
 
 
+# A cached PDF whose name states no manual kind is a non-manual only when its name says what it is (paint
+# safety sheets, battery and safety notices, press releases, product sheets). Any other name with no kind
+# word (a car-named file such as "300012657_Ducati_Gabel-Set.pdf") is "kind unknown" and stays a gap.
+NOT_MANUAL_NAME = re.compile(r"msds|sicherheit|safety|warning|hinweis|akku|battery|lipo|press|news|video|product|"
+                             r"datenblatt|data ?sheet|spruehfarbe|paint|flyer|leaflet", re.I)
+
+
+def not_manual_name(stem):
+    """True when a file name identifies a non-manual (safety sheet, battery notice, press release, product sheet)."""
+    return NOT_MANUAL_NAME.search(stem) is not None
+
+
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
     out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
@@ -526,20 +538,24 @@ def main():
             if d.get("url"):
                 by_url[d["url"]].append(d)
         unlinked = []
-        not_manuals = 0
+        not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
+        kind_unknown = 0     # the name states no manual kind and says nothing else: still a gap, counted apart
         for rel_path in cached:
             name = os.path.basename(rel_path)
             ds = by_name.get(name, []) + by_url.get(url_of.get(rel_path), [])
             if not any(d["id"] in linked_docs for d in ds):
-                # a file that names no manual kind (paint safety sheet, battery notice, press release, product sheet)
-                # is not a manual: the linker leaves it alone, so it is not a gap; a record naming it still counts
-                if not ds and tools["manual_kind"] and tools["manual_kind"](re.sub(r"(?i)\.pdf$", "", name)) is None:
-                    not_manuals += 1
-                    continue
+                # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
+                stem = re.sub(r"(?i)\.pdf$", "", name)
+                if not ds and tools["manual_kind"] and tools["manual_kind"](stem) is None:
+                    if not_manual_name(stem):
+                        not_manuals += 1
+                        continue
+                    kind_unknown += 1
                 unlinked.append(rel_path)
         check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked",
               [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5],
-              detail=f"{not_manuals} cached PDFs whose name states no manual kind (safety sheets, notices, press releases) are left out")
+              detail=f"{kind_unknown} of them name no manual kind (kind unknown: read the cover or the name); "
+                     f"{not_manuals} cached PDFs named as safety sheets, notices, press releases or product sheets are left out")
         # keep the list ids as paths; url points at the brand
         res = results["manual-unlinked"]
         res["examples"] = [{"id": u, "url": SITE + "/rc/brands/" + u.split("/")[1] + "/"} for u in unlinked[:args.examples]]
