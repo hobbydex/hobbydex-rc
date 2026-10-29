@@ -87,7 +87,7 @@ ENUMS = {
     "part.thickness_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.width_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
-    "part.category_source": {"curated", "fallback", "manual-section", "photo"},   # fallback: misc, a part no rule places; manual-section: a section of the maker's manual; photo: read from its product photo (docs/schema.md "category")
+    "part.category_source": {"curated", "fallback", "manual-section", "photo", "llm"},   # fallback: misc, a part no rule places; manual-section: a section of the maker's manual; photo: read from its product photo; llm: read from its name by a text model (docs/schema.md "category")
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.insulation": {"silicone", "pvc", "teflon"},   # wire parts (docs/schema.md "Wires")
     "part.lubricant": {"oil", "grease"},
@@ -409,7 +409,7 @@ def check_part_category(docs, errors):
             errors.append(f"{path}: a part has no category; every part needs one (a part no rule places is misc with category_source = \"fallback\")")
         elif d.get("category_source") == "fallback" and d["category"] != "misc":
             errors.append(f"{path}: category_source \"fallback\" goes with category misc, not {d['category']}")
-        elif d.get("category_source") in ("manual-section", "photo") and d["category"] == "misc":
+        elif d.get("category_source") in ("manual-section", "photo", "llm") and d["category"] == "misc":
             errors.append(f"{path}: category_source \"{d['category_source']}\" places a part in a real category, not misc")
 
 def check_dealer_links(docs, errors):
