@@ -388,7 +388,9 @@ def former_names_problems(part, brand=""):
         if not isinstance(n, str):
             continue
         norm = re.sub(r"\s+", " ", n).strip().lower()
-        if (cur and restate_key(n, brand) == cur) or norm in seen:
+        # a number the current name carries is part of it: an entry without it is a different name the maker printed
+        lost = set(re.findall(r"\b\d{6}\b", part.get("name", "") or "")) - set(re.findall(r"\b\d{6}\b", n))
+        if (cur and restate_key(n, brand) == cur and not lost) or norm in seen:
             bad.append(n)
         seen.add(norm)
     return bad
