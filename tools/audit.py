@@ -166,6 +166,19 @@ def load_tools(tools):
             out["doc_links"] = mod
         except Exception as e:
             print(f"note: sync_doc_links not loaded ({e})", file=sys.stderr)
+    out["manual_kind"] = None   # the kind a manual's file name states (tools/link_manual_numbers.py): None for safety sheets, press releases, gear tables
+    lmn = os.path.join(tools, "tools", "link_manual_numbers.py")
+    if os.path.exists(lmn):
+        spec = importlib.util.spec_from_file_location("link_manual_numbers", lmn)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.join(tools, "tools"))
+        try:
+            spec.loader.exec_module(mod)
+            out["manual_kind"] = mod.kind_from_name
+        except Exception as e:  # the manual check counts every file without it
+            print(f"note: link_manual_numbers not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.join(tools, "tools"))
     out["multi"] = None
     out["material_single"] = None
     tdir = os.path.join(tools, "tools")
@@ -513,13 +526,20 @@ def main():
             if d.get("url"):
                 by_url[d["url"]].append(d)
         unlinked = []
+        not_manuals = 0
         for rel_path in cached:
             name = os.path.basename(rel_path)
             ds = by_name.get(name, []) + by_url.get(url_of.get(rel_path), [])
             if not any(d["id"] in linked_docs for d in ds):
+                # a file that names no manual kind (paint safety sheet, battery notice, press release, product sheet)
+                # is not a manual: the linker leaves it alone, so it is not a gap; a record naming it still counts
+                if not ds and tools["manual_kind"] and tools["manual_kind"](re.sub(r"(?i)\.pdf$", "", name)) is None:
+                    not_manuals += 1
+                    continue
                 unlinked.append(rel_path)
         check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked",
-              [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5])
+              [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5],
+              detail=f"{not_manuals} cached PDFs whose name states no manual kind (safety sheets, notices, press releases) are left out")
         # keep the list ids as paths; url points at the brand
         res = results["manual-unlinked"]
         res["examples"] = [{"id": u, "url": SITE + "/rc/brands/" + u.split("/")[1] + "/"} for u in unlinked[:args.examples]]
