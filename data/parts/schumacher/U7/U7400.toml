@@ -12,3 +12,8 @@ equivalent_to = [
   { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/titanium-low-profile-m4-serrated-nut-pk4-u7400" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+]

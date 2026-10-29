@@ -9,3 +9,7 @@ pack_qty = 8
 category = "screw"
 documents = ["doc/schumacher/neon-manual", "doc/schumacher/vibeft-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/atom-3/speed-pack-m2-5x6-button-hd-pk8-u3753" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

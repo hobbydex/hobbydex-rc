@@ -9,3 +9,8 @@ pack_qty = 10
 category = "o-ring-seal"
 documents = ["doc/schumacher/c2w-manual", "doc/schumacher/cat2000-classic-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/o-ring-9-0x1-0-pk10-u4220" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

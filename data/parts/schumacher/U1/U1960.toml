@@ -8,3 +8,8 @@ gtin = "5051294013233"
 category = "o-ring-seal"
 documents = ["doc/schumacher/c2w-manual", "doc/schumacher/ft9-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/fusion28/speed-pack-o-rings-various-u1960" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

@@ -10,3 +10,7 @@ documents = ["doc/schumacher/eclipse6-maunal", "doc/schumacher/neon-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-5/speed-pack-needle-roller-1-5x11-8-pk8-u4987" } ]
 category = "bearing"
 category_source = "llm"
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

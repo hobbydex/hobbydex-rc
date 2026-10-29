@@ -8,3 +8,7 @@ gtin = "5051294094249"
 category = "steering"
 documents = ["doc/schumacher/neon-ft-manual", "doc/schumacher/neon-manual", "doc/schumacher/vibeft-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/f1/icon-2-worlds/6mm-offset-servo-arms-u4741" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+]
