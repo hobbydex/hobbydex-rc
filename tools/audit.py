@@ -332,10 +332,13 @@ def norm_name(name):
 
 
 def twin_pairs(parts):
-    """Records with the same number and the same normalised name under two different brands."""
+    """Records with the same number and the same normalised name under two different brands.
+
+    A name that is only the number is no name (the part-named-by-number class covers it), so such records never pair.
+    """
     by_number = collections.defaultdict(list)
     for p in parts:
-        if p.get("number") and p.get("name"):
+        if p.get("number") and p.get("name") and norm_name(p["name"]) != norm_name(str(p["number"])):
             by_number[p["number"]].append(p)
     out = []
     for ps in by_number.values():
@@ -371,7 +374,8 @@ def twin_class(a, b, brands, companies, docs):
             return True
         return any(companies.get(o, {}).get("brand") == other for o, other in ((ox, y), (oy, x)) if o)
 
-    if a["brand"] != b["brand"] and (cites(a, b["brand"]) or cites(b, a["brand"])):
+    # a record that cites its own brand's site is not a copy, even when the other brand shares that site
+    if a["brand"] != b["brand"] and ((cites(a, b["brand"]) and not cites(a, a["brand"])) or (cites(b, a["brand"]) and not cites(b, b["brand"]))):
         return "copy"
     if related(a["brand"], b["brand"]) and cites(a, a["brand"]) and cites(b, b["brand"]):
         return "shared"
@@ -473,12 +477,13 @@ def main():
           [r for r in rels if any(k in r for k in ("year_doubt", "released_doubt", "announced_doubt"))])
 
     # 2b. releases of one brand with the same name: the name must say which is which (an edition, colour or re-release word)
+    # releases with their own item numbers are distinct releases; only the same number under the same name is a duplicate
     same_name = collections.defaultdict(list)
     for r in rels:
         if r.get("name") and r.get("brand"):
-            same_name[(r["brand"], " ".join(r["name"].split()).casefold())].append(r)
+            same_name[(r["brand"], " ".join(r["name"].split()).casefold(), norm_name(str(r.get("number", ""))))].append(r)
     groups = [g for g in same_name.values() if len(g) > 1]
-    check("duplicate-release-name", "give each release of the group its own edition, colour or re-release words from the maker's page; a group the maker does not tell apart stays, listed in the brand's backlog entry",
+    check("duplicate-release-name", "give the releases of the group the same item number as one another only when they are one item: a duplicate is a release with the same name and number; releases with distinct item numbers are distinct",
           [r for g in groups for r in g], count=len(groups))
 
     # 3. bearing category holding a rebuild or service kit
@@ -804,10 +809,11 @@ def main():
     # 22. duplicate release names within one kit
     hits = []
     for k in kits.values():
-        names = collections.Counter(r["name"].strip().lower() for r in rels_of_kit[k["id"]])
+        # distinct item numbers are distinct releases (the maker's number tells them apart)
+        names = collections.Counter((r["name"].strip().lower(), norm_name(str(r.get("number", "")))) for r in rels_of_kit[k["id"]])
         if any(n > 1 for n in names.values()):
             hits.append(k)
-    check("duplicate-name-in-kit", "give each release of the kit its own name (edition, colour or item number)", hits)
+    check("duplicate-name-in-kit", "two releases of the kit share a name and an item number: merge them if they are one item (former_ids), or the maker number tells them apart", hits)
 
     # 23. release depicting a real vehicle without its make
     check("depicts-no-model", "set depicts.model: a real vehicle needs its model (make is optional)",
