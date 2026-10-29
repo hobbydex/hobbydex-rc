@@ -2,7 +2,12 @@ id = "part/hpi/2185"
 brand = "brand/hpi"
 number = "2185"
 name = "1/10 Super Star MT WHEELS CHROME"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/2185" } ]
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/2185" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/2185" }]
+fits = [
+  { kit = "kit/hpi/nitro-mt2", type = "replaces", source = "doc/hpi/part-pages", notes = "Hops up #3051, #3052" },
+  { kit = "kit/hpi/nitro-rush", type = "replaces", source = "doc/hpi/part-pages", notes = "Hops up #3051, #3052" },
+  { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages", notes = "Hops up #3051, #3052" },
+]
 name_source = "manufacturer"
 category = "wheel"
 color = "chrome"

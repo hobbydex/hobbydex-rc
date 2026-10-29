@@ -9,6 +9,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/blitz", type = "direct", replaces = "part/hpi/103369", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "turnbuckle"
 material = "titanium"

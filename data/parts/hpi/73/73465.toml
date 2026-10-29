@@ -2,7 +2,10 @@ id = "part/hpi/73465"
 brand = "brand/hpi"
 number = "73465"
 name = "WHEEL SET TYPE 2 (GOLD/MICRO RS4)"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/73465" } ]
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/73465" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/73465" }]
+fits = [
+  { kit = "kit/hpi/micro-rs4", type = "replaces", source = "doc/hpi/part-pages" },
+]
 name_source = "manufacturer"
 category = "wheel"
 color = "gold"
