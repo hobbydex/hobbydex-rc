@@ -1,0 +1,19 @@
+id = "part/1rc-racing/1RC7002"
+brand = "brand/1rc-racing"
+number = "1RC7002"
+name = "NiMh Battery, 4 Cell NiMh, 230mAH, 1/18 Midget"
+gtin = "810178702114"
+fits = [
+  { kit = "kit/1rc-racing/1-18-midget", type = "direct", source = "doc/1rc-racing/store" },
+  { kit = "kit/1rc-racing/1-24-asphalt-late-model", type = "direct", source = "doc/1rc-racing/store" },
+]
+links = [
+  { site = "1RC Racing", url = "https://1rc-racing.com/nimh-battery-4-cell-nimh-230mah-1-18-midget/" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-4s-230mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 4
+capacity_mah = 230
