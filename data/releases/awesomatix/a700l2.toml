@@ -3,6 +3,8 @@ kit = "kit/awesomatix/a700l2"
 brand = "brand/awesomatix"
 name = "A700L2"
 kind = "kit"
+power = "brushless"
+power_source = "part/awesomatix/AM70"
 status = "released"
 notes = "Known from its manual on awesomatix.net; no source gives a release year"
 documents = ["doc/awesomatix/a700l2-manual", "doc/awesomatix/a700l2-setup-sheet"]
@@ -151,4 +153,9 @@ contains = [
   { part = "part/awesomatix/ST09", role = "kit", source = "doc/awesomatix/a700l2-manual", qty = 5, step = "Step 36, pdf page 18" },
   { part = "part/awesomatix/ST23", role = "kit", source = "doc/awesomatix/a700l2-manual", qty = 2, step = "Step 20, pdf page 16" },
   { part = "part/awesomatix/SWB10....SWB13", role = "kit", source = "doc/awesomatix/a700l2-manual", qty = 2, step = "Step 7, pdf page 9" },
+  { part = "part/awesomatix/AM19-2", role = "listed", source = "doc/awesomatix/a700l2-manual" },
+  { part = "part/awesomatix/AM19", role = "option", source = "doc/awesomatix/a700l2-manual" },
+  { part = "part/awesomatix/P15H", role = "option", source = "doc/awesomatix/a700l2-manual" },
+  { part = "part/awesomatix/ST37", role = "listed", source = "doc/awesomatix/a700l2-manual" },
+  { part = "part/awesomatix/P13-4", role = "listed", source = "doc/awesomatix/a700l2-manual" },
 ]
