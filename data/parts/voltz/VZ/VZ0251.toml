@@ -1,0 +1,16 @@
+id = "part/voltz/VZ0251"
+brand = "brand/voltz"
+number = "VZ0251"
+name = "2000mAh 2s 6.6v RX LiFe Hump Battery Pack"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-2000mah-2s-6.6v-rx-life-hump-battery-pack" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "life"
+capacity_mah = 2000
+voltage = 6.6
+equivalent_to = [
+  { spec = "spec/battery/life-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2

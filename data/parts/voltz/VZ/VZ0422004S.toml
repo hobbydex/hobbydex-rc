@@ -1,0 +1,21 @@
+id = "part/voltz/VZ0422004S"
+brand = "brand/voltz"
+number = "VZ0422004S"
+name = "2200mAh 4s 14.8v 30C LiPo Battery"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-2200mah-4s-14.8v-30c-lipo-battery" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 2200
+voltage = 14.8
+cells = 4
+c_rating = 30
+dimensions_mm = [108, 35, 32]
+weight_g = 249
+connector = "Deans"
+notes = "Watt hours: 32.56 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-2200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

@@ -1,0 +1,20 @@
+id = "part/voltz/VZ0311T"
+brand = "brand/voltz"
+number = "VZ0311T"
+name = "4200mah Round/Oval Case 2S 40C 7.4V Lipo Stick Pack - Tamiya"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-oval-case-lipo-stick-packtamiya" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 4200
+voltage = 7.4
+cells = 2
+c_rating = 40
+dimensions_mm = [137, 47, 25]
+connector = "Tamiya"
+notes = "Watt hours: 31.08 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

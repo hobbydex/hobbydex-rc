@@ -1,0 +1,17 @@
+id = "part/voltz/VZ0413002S"
+brand = "brand/voltz"
+number = "VZ0413002S"
+name = "1300mAh 2s 7.4v 30C LiPo Battery"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-1300mah-2s-7.4v-30c-lipo-battery" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 1300
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+c_rating = 30

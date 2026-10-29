@@ -1,0 +1,21 @@
+id = "part/voltz/VZ0550002SEC5"
+brand = "brand/voltz"
+number = "VZ0550002SEC5"
+name = "5000mah 7.4V 50c Lipo Battery EC5"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-5000mah-7-4v-50c-lipo-battery-ec5" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 5000
+voltage = 7.4
+cells = 2
+c_rating = 50
+dimensions_mm = [127, 43, 19]
+weight_g = 237
+connector = "EC5"
+notes = "Watt hours: 37 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
