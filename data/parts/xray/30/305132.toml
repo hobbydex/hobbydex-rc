@@ -1,12 +1,14 @@
 id = "part/xray/305132"
 brand = "brand/xray"
 number = "305132"
-name = "INNER DRIVESHAFT ADAPTER 3.5MM - HUDY SPRING STEEL"
+name = "INNER DRIVESHAFT ADAPTER 3.5MM - HUDY SPRING STEEL (2) o"
 pack_qty = 2
-former_names = ["INNER DRIVESHAFT ADAPTER 3.5MM - HUDY SPRING STEEL (2) o"]
+pack_qty_basis = "name"
+former_names = ["INNER DRIVESHAFT ADAPTER 3.5MM - HUDY SPRING STEEL"]
 category = "drivetrain"
 material = "steel"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2718" }]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300021"], type = "replaces", source = "doc/xray/t4-2015-part-list" },
 ]
+documents = ["doc/xray/t4-2013-part-list", "doc/xray/t4-2015-part-list"]
