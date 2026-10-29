@@ -129,8 +129,8 @@ A model line, independent of year or edition. `category` is the kit type:
 buggy | truggy | stadium-truck | short-course | monster | desert-truck |
 truck | tractor-truck | race-truck | crawler | touring | gt | on-road | formula | pan-car | rally |
 street-basher | drift | drag | lowrider | oval | speed-run | kart | motorcycle |
-tank | construction | trailer | boat, or car for a car that fits none of
-them. gt is a GT-body racing car on a buggy-style chassis (1/8 GT class).
+snowmobile | tank | construction | trailer | boat, or car for a car that fits none of
+them. snowmobile is a snow vehicle on drive tracks. gt is a GT-body racing car on a buggy-style chassis (1/8 GT class).
 on-road is an on-road racer with independent suspension that is not a touring
 car (1/8 nitro or electric on-road). Scale is never in the type name; it is
 its own field. trailer is a standalone trailer or dolly, with no `drive` or `power`
