@@ -1,0 +1,17 @@
+id = "part/hot-racing/SXTY23N08"
+brand = "brand/hot-racing"
+number = "SXTY23N08"
+name = "Silver Aluminum M2 Flanged Wheel Nuts SCX30"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/sxty23n08-silver-aluminum-m2-flanged-wheel-nuts-scx30", kind = "maker" },
+]
+category = "nut"
+color = "silver"
+equivalent_to = [
+  { spec = "spec/nut/m2-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "aluminium"
+range = "hot-racing/scx30-e1a2-colours"
+fits = [
+  { kit = "kit/axial/scx30", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

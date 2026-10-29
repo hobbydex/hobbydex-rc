@@ -1,0 +1,13 @@
+id = "part/hot-racing/ETE2406"
+brand = "brand/hot-racing"
+number = "ETE2406"
+name = "Aluminum Servo Mount ECX 1/18 Temper 1/12 Barrage"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/ete2406-aluminum-servo-mount-ecx-1-18-temper-1-12-barrage", kind = "maker" },
+]
+category = "chassis"
+material = "aluminium"
+fits = [
+  { kit = "kit/ecx/barrage", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/ecx/temper", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

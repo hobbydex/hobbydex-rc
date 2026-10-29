@@ -1,0 +1,16 @@
+id = "part/hot-racing/DRL21BN"
+brand = "brand/hot-racing"
+number = "DRL21BN"
+name = "SS 4.8 x 6mm Ball Stud Losi 22s Drag SCT ST"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/drl21bn-ss-4-8-x-6mm-ball-stud-losi-22s-drag-sct-st", kind = "maker" },
+]
+category = "ball-end"
+equivalent_to = [
+  { spec = "spec/ball-end/4.8mm-stud", match = "functional" },
+]
+ball_mm = 4.8
+ball_type = "stud"
+fits = [
+  { kit = "kit/losi/22s-drag", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -1,0 +1,13 @@
+id = "part/hot-racing/SCP32X01"
+brand = "brand/hot-racing"
+number = "SCP32X01"
+name = "Aluminum Transmission Spur Gear Cover - SCX10 Wraith"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/scp32x01-aluminum-transmission-spur-gear-cover-scx10-wraith", kind = "maker" },
+]
+category = "gear"
+material = "aluminium"
+fits = [
+  { kit = "kit/axial/scx10", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
