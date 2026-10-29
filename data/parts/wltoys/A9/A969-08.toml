@@ -20,3 +20,6 @@ fits = [
   { kit = "kit/wltoys/k929-b", type = "direct", source = "doc/wltoys/k929-b-reseller-parts" },
 ]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x40.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

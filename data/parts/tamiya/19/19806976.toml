@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 category = "pin"
 name_source = "ocr"
 documents = ["doc/tamiya/58553-manual-de", "doc/tamiya/58741-manual"]
+equivalent_to = [
+  { spec = "spec/pin/3x46", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

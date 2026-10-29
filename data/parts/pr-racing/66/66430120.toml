@@ -10,3 +10,6 @@ fits = [
 applies_to = "PRS1V3(FM)SPORT"
 documents = ["doc/pr-racing/pr-rc-com"]
 links = [ { site = "PR Racing", url = "https://www.pr-rc.com/pdt_view.asp?sn=3011" } ]
+equivalent_to = [
+  { spec = "spec/pin/3x47.5", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

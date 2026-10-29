@@ -7,3 +7,6 @@ notes = "Labelled by number only in the HoBao documents; name from the maker's p
 documents = ["doc/hobao/cml-h2-buggy-complete-kit-parts-reference"]
 links = [ { site = "HoBao", url = "https://hobaorc.myshopify.com/products/40023-pin-3-5x45-5mm" } ]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/5x45", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

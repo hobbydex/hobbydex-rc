@@ -6,3 +6,6 @@ documents = ["doc/hobao/cml-hobao-hyper-vs2-manual-instruction-manual", "doc/hob
 links = [ { site = "HoBao", url = "https://hobaorc.myshopify.com/products/85011-pin-4x43-5mm" } ]
 category = "pin"
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/pin/4x43.5", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

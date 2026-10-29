@@ -11,3 +11,6 @@ fits = [
   { kit = "kit/yikong/yk4072", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing" },
 ]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/3x55", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
