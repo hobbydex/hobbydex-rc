@@ -61,7 +61,7 @@ YOUTUBE_CHANNEL = re.compile(r"https://www\.youtube\.com/@[A-Za-z0-9._-]+")
 
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
-    "release.kind": {"kit", "rtr", "arr", "roller"},
+    "release.kind": {"kit", "rtr", "arr", "roller", "print"},
     "release.color_source": {"owner"},   # who states a colour the name does not give (docs/schema.md "release", color)
     # kit types (docs/schema.md "kit"); the site gives each a label and an icon (hobbydex src/lib/kitTypes.ts)
     "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "tractor-truck", "race-truck",
