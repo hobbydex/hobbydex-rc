@@ -5,7 +5,7 @@ name = "Screws, 3x45mm button-head machine (hex drive)"
 gtin = "020334251602"
 pack_qty = 6
 pack_qty_basis = "page"
-notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
+notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it. Colour read from the maker's product photo."
 category = "screw"
 fits = [
   { kit = "kit/traxxas/udr", type = "direct", source = "doc/traxxas/85086-4-parts-list" },
@@ -16,3 +16,4 @@ links = [
 equivalent_to = [
   { spec = "spec/screw/m3x45-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+color = "black"

@@ -2,6 +2,7 @@ id = "part/kyosho/97044-18"
 brand = "brand/kyosho"
 number = "97044-18"
 name = "Pinion Gear (18T/1.0M/φ5.0)"
+gtin = "4548565160129"
 fits = [
   { kit = "kit/kyosho/dbx", type = "replaces", source = "doc/kyosho/30845t1-spop" },
   { kit = "kit/kyosho/drx", type = "replaces", source = "doc/kyosho/30879-mm01-spop" },
@@ -12,3 +13,6 @@ fits = [
   { kit = "kit/kyosho/psycho-kruiser", type = "replaces", source = "doc/kyosho/34256-mm02-psycho-kruiser-ve2-0-spop" },
 ]
 category = "pinion"
+teeth = 18
+module = 1
+documents = ["doc/kyosho/30845t1-spop", "doc/kyosho/30879-mm01-spop", "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop"]
