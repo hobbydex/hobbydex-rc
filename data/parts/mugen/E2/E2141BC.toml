@@ -7,3 +7,7 @@ links = [
 ]
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/mugen/mbx8-eco", releases = ["release/mugen/e2028"], type = "replaces", source = "doc/mugen/mbx8r-eco-part-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mugen/mbx8t-eco", releases = ["release/mugen/e2030"], type = "replaces", source = "doc/mugen/mbx8tr-eco-part-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
