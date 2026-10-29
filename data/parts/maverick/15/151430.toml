@@ -9,6 +9,8 @@ links = [
 fits = [
   { kit = "kit/maverick/qbyte-sc", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/qbyte-xb", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/qbyte-sc", type = "replaces", replaces = "part/maverick/151056", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/qbyte-xb", type = "replaces", replaces = "part/maverick/151056", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "differential"
 material = "aluminium"

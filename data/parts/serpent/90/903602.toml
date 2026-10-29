@@ -6,6 +6,7 @@ seen_by = "2013-04-28"
 seen_by_source = "https://web.archive.org/web/20130428080206/http://www.serpent.com:80/product/903602/"
 fits = [
   { kit = "kit/serpent/viper-977", type = "replaces", source = "doc/serpent/viper-977-options" },
+  { kit = "kit/serpent/viper-977", type = "replaces", replaces = "part/serpent/903514", source = "doc/serpent/viper-977-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser903602" },

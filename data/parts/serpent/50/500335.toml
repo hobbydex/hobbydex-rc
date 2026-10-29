@@ -7,6 +7,7 @@ seen_by_source = "https://web.archive.org/web/20150327131054/http://serpent.com/
 fits = [
   { kit = "kit/serpent/spyder-sct", type = "direct", source = "doc/serpent/spyder-sct-srx-2-rm-rtr-parts" },
   { kit = "kit/serpent/spyder-sct", type = "direct", source = "doc/serpent/spyder-sct-srx-2-rm-rtr-options" },
+  { kit = "kit/serpent/spyder-sct", type = "replaces", replaces = "part/serpent/500311", source = "doc/serpent/spyder-sct-srx-2-rm-rtr-parts", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser500335" },

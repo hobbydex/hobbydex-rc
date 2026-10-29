@@ -10,6 +10,10 @@ fits = [
   { kit = "kit/serpent/natrix-750", type = "replaces", source = "doc/serpent/natrix-750-evo-options" },
   { kit = "kit/serpent/natrix-748", type = "replaces", source = "doc/serpent/natrix-748-options" },
   { kit = "kit/serpent/733", type = "replaces", source = "doc/serpent/733-te-options" },
+  { kit = "kit/serpent/733", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/733-te-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-748", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/natrix-748-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/natrix-750-evo-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750e", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/natrix-750-e-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 notes = "serpent.com marks it discontinued"
 links = [

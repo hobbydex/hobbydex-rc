@@ -7,3 +7,7 @@ notes = "Name from the Part List of a scanned Quanum manual"
 material = "aluminium"
 category = "suspension"
 documents = ["doc/quanum/vandal-manual", "doc/quanum/vandal-xl-manual"]
+fits = [
+  { kit = "kit/quanum/vandal", type = "replaces", replaces = "part/quanum/10120", source = "doc/quanum/vandal-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/quanum/vandal-xl", type = "replaces", replaces = "part/quanum/10120", source = "doc/quanum/vandal-xl-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

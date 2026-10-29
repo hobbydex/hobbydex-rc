@@ -6,6 +6,7 @@ seen_by = "2011-07-14"
 seen_by_source = "https://web.archive.org/web/20110714122704/http://www.serpent.com:80/product/401422/"
 fits = [
   { kit = "kit/serpent/s411", type = "replaces", source = "doc/serpent/s411-team-options" },
+  { kit = "kit/serpent/s411", type = "replaces", replaces = "part/serpent/401363", source = "doc/serpent/s411-team-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 notes = "serpent.com marks it discontinued"
 links = [

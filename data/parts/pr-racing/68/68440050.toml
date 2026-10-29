@@ -10,6 +10,7 @@ material = "aluminium"
 pack_qty = 2
 fits = [
   { kit = "kit/pr-racing/sc201", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sc201", type = "replaces", replaces = "part/pr-racing/90440020", source = "doc/pr-racing/pr-rc-com", notes = "Same part in another material (link_upgrades.py)" },
 ]
 applies_to = "PR SC 2WD PRO KIT"
 documents = ["doc/pr-racing/pr-rc-com"]

@@ -6,6 +6,8 @@ gtin = "4548565253777"
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "replaces", source = "doc/kyosho/30646-mm01-spop" },
   { kit = "kit/kyosho/beetle", type = "replaces", source = "doc/kyosho/30614-07-beetle-spop" },
+  { kit = "kit/kyosho/beetle", type = "replaces", replaces = "part/kyosho/SC210", source = "doc/kyosho/30614-07-beetle-spop", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/tomahawk", type = "replaces", replaces = "part/kyosho/SC210", source = "doc/kyosho/30646-mm01-spop", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/scw005.html" },

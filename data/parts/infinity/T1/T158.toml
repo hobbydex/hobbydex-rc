@@ -10,3 +10,8 @@ ball_mm = 4.9
 documents = ["doc/infinity/10151-001", "doc/infinity/10224-002", "doc/infinity/10255-001"]
 name_de = "TITAN BALL END 4.9mm SHORT"
 material = "titanium"
+fits = [
+  { kit = "kit/infinity/if14-2-fwd", type = "replaces", replaces = "part/infinity/T049B", source = "doc/infinity/10151-001", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/infinity/if14-2-fwd-rs", type = "replaces", replaces = "part/infinity/T049B", source = "doc/infinity/10224-002", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/infinity/if14-2-mid", type = "replaces", replaces = "part/infinity/T049B", source = "doc/infinity/10255-001", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -7,6 +7,8 @@ seen_by_source = "https://web.archive.org/web/20130426211958/http://www.serpent.
 fits = [
   { kit = "kit/serpent/viper-988", type = "replaces", source = "doc/serpent/viper-988-options" },
   { kit = "kit/serpent/viper-977", type = "replaces", source = "doc/serpent/viper-977-options" },
+  { kit = "kit/serpent/viper-977", type = "replaces", replaces = "part/serpent/903543", source = "doc/serpent/viper-977-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/viper-988", type = "replaces", replaces = "part/serpent/903543", source = "doc/serpent/viper-988-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser903603" },

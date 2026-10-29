@@ -6,3 +6,7 @@ notes = "Name from the manual's exploded view (doc/team-corally/c-00145-sbx425-i
 category = "steering"
 material = "aluminium"
 documents = ["doc/team-corally/c-00140-sbx410-manual-en-fr-de-nl", "doc/team-corally/c-00145-sbx425-instruction-manual"]
+fits = [
+  { kit = "kit/team-corally/sbx410", type = "replaces", replaces = "part/team-corally/C-00140-012", source = "doc/team-corally/c-00140-sbx410-manual-en-fr-de-nl", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/team-corally/sbx425", type = "replaces", replaces = "part/team-corally/C-00140-012", source = "doc/team-corally/c-00145-sbx425-instruction-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

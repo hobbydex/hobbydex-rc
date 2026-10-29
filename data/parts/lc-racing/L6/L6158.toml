@@ -10,6 +10,10 @@ fits = [
   { kit = "kit/lc-racing/emb-dt", type = "direct", source = "doc/lc-racing/l6158-product-page" },
   { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/l6158-product-page" },
   { kit = "kit/lc-racing/emb-tgh", type = "direct", source = "doc/lc-racing/l6158-product-page" },
+  { kit = "kit/lc-racing/emb-dt", type = "replaces", replaces = "part/lc-racing/L6036", source = "doc/lc-racing/l6158-product-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/lc-racing/emb-sc", type = "replaces", replaces = "part/lc-racing/L6036", source = "doc/lc-racing/l6158-product-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/lc-racing/emb-tgh", type = "replaces", replaces = "part/lc-racing/L6036", source = "doc/lc-racing/l6158-product-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/lc-racing/emb-wrc", type = "replaces", replaces = "part/lc-racing/L6036", source = "doc/lc-racing/l6158-product-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "carbon"

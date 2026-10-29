@@ -10,6 +10,7 @@ category = "chassis"
 fits = [
   { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/l5088-product-page" },
   { kit = "kit/lc-racing/bhc-1st", type = "direct", source = "doc/lc-racing/l5088-product-page" },
+  { kit = "kit/lc-racing/bhc-1", type = "replaces", replaces = "part/lc-racing/L5035", source = "doc/lc-racing/l5088-product-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "aluminium"
 links = [ { site = "LC Racing", url = "https://shop.lcracing.net/products/l5089-aluminum-rear-ballstud-mount-2mm-br-br-font-size-2-for-all-bhc-font" } ]

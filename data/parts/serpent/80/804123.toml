@@ -13,6 +13,8 @@ fits = [
   { kit = "kit/serpent/taipan-988e", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/taipan-988e-spares", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/serpent/natrix-748", type = "direct", source = "doc/serpent/natrix-748-spares" },
   { kit = "kit/serpent/733", type = "direct", source = "doc/serpent/733-te-spares" },
+  { kit = "kit/serpent/733", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/733-te-spares", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-748", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/natrix-748-spares", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser804123" },
