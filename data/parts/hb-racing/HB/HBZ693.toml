@@ -6,3 +6,6 @@ pack_qty = 10
 material = "steel"
 category = "washer-shim"
 documents = ["doc/hb-racing/61700-kit-page"]
+equivalent_to = [
+  { spec = "spec/washer/4x10x0.8", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
