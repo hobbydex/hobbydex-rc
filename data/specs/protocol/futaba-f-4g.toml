@@ -1,0 +1,11 @@
+id = "spec/protocol/futaba-f-4g"
+category = "protocol"
+name = "F-4G"
+brand = "brand/futaba"
+compatible = [
+  { spec = "spec/protocol/futaba-s-fhss", via = ["part/futaba/10PXR", "part/futaba/6PV"], url = "https://futabausa.com/product/10pxr/" },
+  { spec = "spec/protocol/futaba-t-fhss", via = ["part/futaba/10PXR", "part/futaba/6PV"], url = "https://futabausa.com/product/10pxr/" },
+]
+links = [
+  { site = "Maker", url = "https://futabausa.com/product/10pxr/" },
+]

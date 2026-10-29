@@ -1,0 +1,13 @@
+id = "spec/protocol/sanwa-fh5"
+category = "protocol"
+name = "FH5"
+brand = "brand/sanwa"
+aliases = ["FHSS5", "FHSS-5"]
+compatible = [
+  { spec = "spec/protocol/sanwa-fh3", via = ["part/sanwa/M17", "part/sanwa/MT-5"], url = "https://www.sanwa-denshi.com/rc/car/propo/m17.html" },
+  { spec = "spec/protocol/sanwa-fh4", via = ["part/sanwa/M17"], url = "https://www.sanwa-denshi.com/rc/car/propo/m17.html" },
+  { spec = "spec/protocol/sanwa-fh4t", via = ["part/sanwa/MT-5"], url = "https://www.sanwa-denshi.com/rc/car/propo/mt-5.html" },
+]
+links = [
+  { site = "Maker", url = "https://www.sanwa-denshi.com/rc/car/propo/exzes_z3.html" },
+]

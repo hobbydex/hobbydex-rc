@@ -1,0 +1,12 @@
+id = "spec/protocol/futaba-t-fhss"
+category = "protocol"
+name = "T-FHSS"
+brand = "brand/futaba"
+compatible = [
+  { spec = "spec/protocol/futaba-fasst", via = ["part/futaba/7PX", "part/futaba/7PX-L", "part/futaba/7PXR", "part/futaba/7PXR-US-L"], url = "https://futabausa.com/product/7pxle/" },
+  { spec = "spec/protocol/futaba-fhss", via = ["part/futaba/4GRS", "part/futaba/4PLS"], url = "https://futabausa.com/product/4grs/" },
+  { spec = "spec/protocol/futaba-s-fhss", via = ["part/futaba/3PV", "part/futaba/4GRS", "part/futaba/4PLS", "part/futaba/4PM", "part/futaba/4PM-P", "part/futaba/4PV", "part/futaba/7PX", "part/futaba/7PX-L", "part/futaba/7PXR", "part/futaba/7PXR-US-L"], url = "https://futabausa.com/product/3pv/" },
+]
+links = [
+  { site = "Maker", url = "https://futabausa.com/product/10pxr/" },
+]

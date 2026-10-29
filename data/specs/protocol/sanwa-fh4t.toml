@@ -1,0 +1,10 @@
+id = "spec/protocol/sanwa-fh4t"
+category = "protocol"
+name = "FH4T"
+brand = "brand/sanwa"
+compatible = [
+  { spec = "spec/protocol/sanwa-fh3", via = ["part/sanwa/M12S", "part/sanwa/M12S-RS", "part/sanwa/MT-44"], url = "https://www.sanwa-denshi.com/rc/car/propo/m12s-rs.html" },
+]
+links = [
+  { site = "Maker", url = "https://www.sanwa-denshi.com/rc/car/propo/m12s-rs.html" },
+]
