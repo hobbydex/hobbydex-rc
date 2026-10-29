@@ -7,6 +7,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hb-racing/cyclone-d4", type = "replaces", source = "doc/hb-racing/hotbodiesonline-part-pages" },
+  { kit = "kit/hb-racing/cyclone-d4", type = "replaces", replaces = "part/hb-racing/HB61570", source = "doc/hb-racing/hotbodiesonline-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "drivetrain"
 material = "aluminium"
