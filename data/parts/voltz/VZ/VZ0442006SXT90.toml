@@ -1,0 +1,21 @@
+id = "part/voltz/VZ0442006SXT90"
+brand = "brand/voltz"
+number = "VZ0442006SXT90"
+name = "4200mah 22.2v 30c Lipo Battery W/XT90"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-4200mah-22-2v-30c-lipo-battery-w-xt90" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 4200
+voltage = 22.2
+cells = 6
+c_rating = 30
+dimensions_mm = [137, 41, 44]
+weight_g = 620
+connector = "XT90"
+notes = "Watt hours: 93.24 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

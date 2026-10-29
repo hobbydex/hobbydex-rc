@@ -1,0 +1,19 @@
+id = "part/voltz/VZ0442004S"
+brand = "brand/voltz"
+number = "VZ0442004S"
+name = "4200mah 14.8v 30c Lipo Battery"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-4200mah-14-8v-30c-lipo-battery" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 4200
+voltage = 14.8
+cells = 4
+c_rating = 30
+connector = "Deans"
+notes = "Watt hours: 62.16 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

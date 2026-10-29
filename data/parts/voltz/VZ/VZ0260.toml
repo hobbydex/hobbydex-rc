@@ -1,0 +1,16 @@
+id = "part/voltz/VZ0260"
+brand = "brand/voltz"
+number = "VZ0260"
+name = "2300mAh 2s 6.6v RX LiFe Straight Battery Pack"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-2300mah-2s-6.6v-rx-life-straight-battery-pack" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "life"
+capacity_mah = 2300
+voltage = 6.6
+equivalent_to = [
+  { spec = "spec/battery/life-2s-2300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2

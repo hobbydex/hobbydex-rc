@@ -1,0 +1,18 @@
+id = "part/voltz/VZ03412"
+brand = "brand/voltz"
+number = "VZ03412"
+name = "3600mah Hard Case 11.1v 3S 40c LiPo Stick"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-3600mah-hard-case-lipo-stick" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 3600
+cells = 3
+voltage = 11.1
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 40
+case = "hard"

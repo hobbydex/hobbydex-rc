@@ -1,0 +1,20 @@
+id = "part/voltz/VZ0310"
+brand = "brand/voltz"
+number = "VZ0310"
+name = "4000mAh 7.4v 50C Hardcase LiPo Stick Pack Battery"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-4000mah-7.4v-50c-hard-case-lipo-stick-pack-battery" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 4000
+voltage = 7.4
+cells = 2
+c_rating = 50
+dimensions_mm = [138, 46, 25]
+connector = "Deans"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+case = "hard"

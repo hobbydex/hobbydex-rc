@@ -1,0 +1,22 @@
+id = "part/voltz/VZ0365XT90"
+brand = "brand/voltz"
+number = "VZ0365XT90"
+name = "4800mah Hard Case 22.2v 50c Lipo Stick Pack XT90"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-4800mah-hard-case-22-2v-50c-lipo-stick-pack-xt90" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 4800
+voltage = 22.2
+cells = 6
+c_rating = 50
+dimensions_mm = [137, 46, 47]
+weight_g = 620
+connector = "XT90"
+notes = "Watt hours: 106.56 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-4800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+case = "hard"

@@ -1,0 +1,19 @@
+id = "part/voltz/VZ0308S"
+brand = "brand/voltz"
+number = "VZ0308S"
+name = "3000mah Hard Case 7.4v 30c LiPo Shorty Pack - Deans"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-300mah-hard-case-7-4v-30c-lipo-shorty-pack-deans" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 3000
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+c_rating = 30
+connector = "Deans"
+case = "hard"

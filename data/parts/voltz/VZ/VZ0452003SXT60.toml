@@ -1,0 +1,20 @@
+id = "part/voltz/VZ0452003SXT60"
+brand = "brand/voltz"
+number = "VZ0452003SXT60"
+name = "5200mah 11.1v 30c Lipo Battery W/XT60"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-5200mah-11-1v-30c-lipo-battery-w-xt60" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 5200
+voltage = 11.1
+cells = 3
+c_rating = 30
+dimensions_mm = [138, 45, 30]
+connector = "XT60"
+notes = "Watt hours: 57.72 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-5200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

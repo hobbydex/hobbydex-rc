@@ -1,0 +1,21 @@
+id = "part/voltz/VZ0342EC5"
+brand = "brand/voltz"
+number = "VZ0342EC5"
+name = "4000mah Hard Case 11.1v 50c Lipo Stick Pack W/EC5"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-mah-hard-case-c-lipo-stick-pack-w-ec5" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 4000
+voltage = 11.1
+cells = 3
+c_rating = 50
+dimensions_mm = [138, 46, 38]
+connector = "EC5"
+notes = "Watt hours: 44.4 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+case = "hard"

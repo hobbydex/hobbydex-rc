@@ -1,0 +1,21 @@
+id = "part/voltz/VZ0341"
+brand = "brand/voltz"
+number = "VZ0341"
+name = "3600mAh 3s 11.1v 40C Hardcase LiPo Stick Low Profile Stick Pack Battery (2S Size)"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-3600mah-11.1v-40c-hardcase-lipo-low-profile-3s-size-stick-pack-battery" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 3600
+voltage = 11.1
+cells = 3
+c_rating = 40
+dimensions_mm = [138, 46, 24]
+connector = "Deans"
+notes = "Watt hours: 39.96 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+case = "hard"

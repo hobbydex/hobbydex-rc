@@ -1,0 +1,16 @@
+id = "part/voltz/VZ0250"
+brand = "brand/voltz"
+number = "VZ0250"
+name = "1600mAh 2s 6.6v RX LiFe Straight Battery Pack"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-1600mah-2s-6.6v-rx-life-straight-battery-pack" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "life"
+capacity_mah = 1600
+voltage = 6.6
+equivalent_to = [
+  { spec = "spec/battery/life-2s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2

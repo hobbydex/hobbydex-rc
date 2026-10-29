@@ -1,0 +1,21 @@
+id = "part/voltz/VZ0341XT60"
+brand = "brand/voltz"
+number = "VZ0341XT60"
+name = "3600mah Hardcase 3s 11.1v 40c Lipo Stick Low Pro (2s Size)"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-hardcase-3s-v-c-lipo-stick-low-pro-" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 3600
+voltage = 11.1
+cells = 3
+c_rating = 40
+dimensions_mm = [138, 46, 24]
+connector = "XT60"
+notes = "Watt hours: 39.96 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+case = "hard"

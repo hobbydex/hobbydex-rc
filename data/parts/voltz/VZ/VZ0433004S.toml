@@ -1,0 +1,21 @@
+id = "part/voltz/VZ0433004S"
+brand = "brand/voltz"
+number = "VZ0433004S"
+name = "3300mah 14.8v 30c Lipo Battery"
+links = [
+  { site = "Voltz", url = "https://www.voltz-rc.com/voltz-3300mah-14-8v-30c-lipo-battery" },
+]
+category = "battery"
+category_source = "curated"
+chemistry = "lipo"
+capacity_mah = 3300
+voltage = 14.8
+cells = 4
+c_rating = 30
+dimensions_mm = [135, 25, 44]
+weight_g = 331
+connector = "Deans"
+notes = "Watt hours: 48.84 Wh (on the shop page)"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-3300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
