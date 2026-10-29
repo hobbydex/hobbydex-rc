@@ -4,6 +4,10 @@ number = "4905"
 name = "Front Diff. set"
 category = "differential"
 applies_to = "A8A8T"
+fits = [
+  { kit = "kit/agama/a8", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a8t", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=4905" },

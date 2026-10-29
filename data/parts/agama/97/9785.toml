@@ -6,6 +6,11 @@ gtin = "4714781685870"
 category = "shock-spring"
 pack_qty = 2
 applies_to = "allseries; A215, A215e, A215SV"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a215sv", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=9785" },

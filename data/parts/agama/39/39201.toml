@@ -1,9 +1,14 @@
 id = "part/agama/39201"
 brand = "brand/agama"
 number = "39201"
-name = "1mm carbon arm stiffener (frontsoftarm)(SVA319A319E)"
+name = "1mm carbon arm stiffener (frontsoftarm)"
 category = "suspension"
 material = "carbon"
+applies_to = "SVA319A319E"
+fits = [
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319e", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=39201" },

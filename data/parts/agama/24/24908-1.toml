@@ -5,6 +5,10 @@ name = "Radio box front carbon lid"
 category = "chassis"
 material = "carbon"
 applies_to = "A215A215SV"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a215sv", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=24908-1" },

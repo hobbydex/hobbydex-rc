@@ -6,6 +6,11 @@ gtin = "4714781687164"
 category = "drivetrain"
 pack_qty = 2
 applies_to = "A215A215EA319E; A215, A319E"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319e", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=28317" },

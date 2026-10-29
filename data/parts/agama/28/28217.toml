@@ -4,6 +4,11 @@ number = "28217"
 name = "91mm Drive shaft bone"
 category = "drivetrain"
 applies_to = "A215A215SVA215E"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a215sv", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=28217" },

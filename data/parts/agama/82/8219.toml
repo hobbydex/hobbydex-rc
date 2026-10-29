@@ -4,6 +4,9 @@ number = "8219"
 name = "Drive cup"
 category = "drivetrain"
 applies_to = "A8 series"
+fits = [
+  { kit = "kit/agama/a8", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=8219" },

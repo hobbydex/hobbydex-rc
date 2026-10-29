@@ -1,9 +1,14 @@
 id = "part/agama/26249"
 brand = "brand/agama"
 number = "26249"
-name = "Rear shock body(A215A319buggyseries)"
+name = "Rear shock body"
 category = "shock"
 shock_part = "body"
+applies_to = "A215A319buggyseries"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=26249" },

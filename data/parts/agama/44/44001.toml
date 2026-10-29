@@ -3,6 +3,9 @@ brand = "brand/agama"
 number = "44001"
 name = "Performance pack A&B upgrade A319"
 applies_to = "A215SV"
+fits = [
+  { kit = "kit/agama/a215sv", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=44001" },

@@ -3,6 +3,9 @@ brand = "brand/agama"
 number = "4002"
 name = "Electric conversion set"
 applies_to = "A8T"
+fits = [
+  { kit = "kit/agama/a8t", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=4002" },

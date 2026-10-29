@@ -4,6 +4,10 @@ number = "4002-03"
 name = "E-Buggy battery velcro straps"
 category = "chassis"
 applies_to = "A215EA319E"
+fits = [
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319e", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=4002-03" },

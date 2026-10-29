@@ -5,6 +5,9 @@ name = "Front upper carbon plate"
 category = "chassis"
 material = "carbon"
 applies_to = "A319series"
+fits = [
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=41009-3" },

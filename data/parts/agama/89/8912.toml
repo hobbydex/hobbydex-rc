@@ -1,8 +1,12 @@
 id = "part/agama/8912"
 brand = "brand/agama"
 number = "8912"
-name = "F/R diff pinion gear 12T(for 39T)(SVA319series)"
+name = "F/R diff pinion gear 12T(for 39T)"
 category = "differential"
+applies_to = "SVA319series"
+fits = [
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=8912" },

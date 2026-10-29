@@ -5,6 +5,9 @@ name = "Aerofighter clear body"
 gtin = "4714781681254"
 category = "body"
 applies_to = "A8; A8FR CUP"
+fits = [
+  { kit = "kit/agama/a8", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 color = "clear"
 links = [

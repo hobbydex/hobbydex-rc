@@ -1,9 +1,16 @@
 id = "part/agama/38224"
 brand = "brand/agama"
 number = "38224"
-name = "Steering bushing plastic hub use (SVA319N1M1N2series)"
+name = "Steering bushing plastic hub use"
 category = "suspension"
 material = "plastic"
+applies_to = "SVA319N1M1N2series"
+fits = [
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/m1", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/n1", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/n2", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=38224" },

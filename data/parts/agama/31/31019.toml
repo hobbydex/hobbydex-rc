@@ -5,6 +5,10 @@ name = "Steering plastic set"
 category = "steering"
 material = "plastic"
 applies_to = "A319A319P"
+fits = [
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319p", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=31019" },
