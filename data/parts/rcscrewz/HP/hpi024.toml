@@ -1,11 +1,14 @@
 id = "part/rcscrewz/hpi024"
 brand = "brand/rcscrewz"
 number = "hpi024"
-name = "HPI MT2/EVO .18 Nitro (#10401/10402) Compatible Stainless Screw Kit"
+name = "HPI MT2/EVO.18 Nitro (#10401/10402) Compatible Stainless Screw Kit"
 category = "screw"
 category_source = "curated"
 material = "stainless"
 applies_to = "HPI MT2/EVO .18 Nitro (#10401, 10402)"
+fits = [
+  { kit = "kit/hpi/nitro-mt2", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the HPI MT2/EVO .18 Nitro (#10401, 10402) (link_car_kits.py)", releases = ["release/hpi/10402"] },
+]
 notes = "170+ pieces. Holds all the socket, button, flat head and set screws, nuts and washers of the car plus spares, and hex wrenches (its description; sizes not listed). Self-tapping screws are replaced by machine screws; hinge pins and other special parts are not included."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/hpi024-hpi-mt-2-evo-stainless-steel-screw-kit/" },

@@ -500,7 +500,7 @@ def differs_only_in_provenance(a, b):
 
 
 # a pack count or bag callout at the end of a name: "(10)", "(2pcs.)", "(BBS x10)", " x10", " 10pcs"
-PACK_COUNT = r"(\s*\((?:[A-Za-z ]{0,12}x\s?)?\d+\s*(?:pcs?\.?|pieces)?\)|\s+x\s?\d+|\s+\d+\s*pcs\.?)\s*$"
+PACK_COUNT = r"(\s*/\s*\d+\s*pcs?\.?\)|\s*\((?:[A-Za-z ]{0,12}x\s?)?\d+\s*(?:pcs?\.?|pieces)?\)|\s+x\s?\d+|\s+\d+\s*pcs\.?)\s*$"
 
 
 def name_key(name, brand):
