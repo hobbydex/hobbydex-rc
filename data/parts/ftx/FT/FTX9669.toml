@@ -1,11 +1,16 @@
 id = "part/ftx/FTX9669"
 brand = "brand/ftx"
 number = "FTX9669"
-name = "Shim φ6.1xφ14x1.5"
-notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+name = "Shim Set 6.1 X 14 X 1.5"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 pack_qty = 10
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/6.1x14x1.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 documents = ["doc/ftx/cml-dr8-manual"]
+former_names = ["Shim φ6.1xφ14x1.5"]
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-shim-set" },
+]

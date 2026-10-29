@@ -1,11 +1,16 @@
 id = "part/ftx/FTX6991"
 brand = "brand/ftx"
 number = "FTX6991"
-name = "Washer 6.9x3.5x1.1"
-notes = "Name read from a scanned FTX parts list; the OCR engines agree"
+name = "Zorro Brushless Washer 6.9 X 3.5 X 1.1"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 pack_qty = 6
 category = "washer-shim"
 equivalent_to = [
   { spec = "spec/washer/3.5x6.9x1.1", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 documents = ["doc/ftx/cml-khaos-manual"]
+former_names = ["Washer 6.9x3.5x1.1"]
+name_source = "manufacturer"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-zorro-brushless-washer" },
+]
