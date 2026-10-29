@@ -924,7 +924,7 @@ doc/tamiya/spb-51606-manual). tools/check_body_scale.py leaves such a body out o
 by width class (190, 195, 200 mm), which is the number the name states
 ("Touring Car Body 190mm", "(200mm)"). A number marked as wheelbase (WB,
 "260mm WB") is `wheelbase_mm`, never the width. `width_basis` (name | page
-| manual | owner) says where a width came from when it was read from the
+| manual | flyer | owner) says where a width came from when it was read from the
 name; older widths have none.
 
 Shells (category `body` and `wing`; `body-accessory` when the part is itself
@@ -932,7 +932,8 @@ a cut or lexan sheet) carry `thickness_mm`: the thickness of the polycarbonate
 (lexan) in millimetres, 0.1 to 5, as the maker states it ("0.7mm", "Light
 weight 0.5mm", "Polycarbonate 0.8 mm thick"). `thickness_basis` is `name`
 (the part's name states it), `page` (the maker's product page, also when
-the notes quote it), `manual` or `owner`. Never read from a variant suffix
+the notes quote it), `manual`, `flyer` (the maker's printed flyer for the
+item, as an owner's copy) or `owner`. Never read from a variant suffix
 alone ("-07").
 
 ```toml

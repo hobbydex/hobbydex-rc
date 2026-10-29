@@ -2,7 +2,7 @@ id = "part/blitz/60906"
 brand = "brand/blitz"
 number = "60906"
 name = "Mini JAZZ 225mm (0.8mm)"
-documents = ["doc/blitz/titan-catalog-2015"]
+documents = ["doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
 links = [
@@ -11,6 +11,9 @@ links = [
 ]
 category = "body"
 category_source = "curated"
-notes = "Polycarbonate 0.8 mm thick"
+notes = "Polycarbonate 0.8 mm thick. Includes decal sheet and window mask."
 thickness_mm = 0.8
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60906-ac", qty = 1 },
+]

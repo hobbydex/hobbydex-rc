@@ -6,10 +6,13 @@ category = "body"
 category_source = "curated"
 scale = "1/12"
 material = "plastic"
-notes = "Polycarbonate 0.5 mm thick"
-documents = ["doc/blitz/lmi-product-pages"]
+notes = "Polycarbonate 0.5 mm thick. Includes decal sheet and window mask."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-T128-1-12-On-Road-05-mm", kind = "dealer" },
 ]
 thickness_mm = 0.5
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60908-ac", qty = 1 },
+]

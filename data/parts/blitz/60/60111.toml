@@ -2,7 +2,7 @@ id = "part/blitz/60111"
 brand = "brand/blitz"
 number = "60111"
 name = "ISF 2.0 (200mm) (0.8mm with Plastic Wing Screw) EFRA 2037"
-documents = ["doc/blitz/titan-catalog-2015"]
+documents = ["doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
 links = [
@@ -12,3 +12,8 @@ links = [
 category = "body"
 category_source = "curated"
 material = "plastic"
+includes = [
+  { part = "part/blitz/60302-1", qty = 1 },
+  { part = "part/blitz/60111-ac", qty = 1 },
+]
+notes = "Includes decal sheet and window mask."

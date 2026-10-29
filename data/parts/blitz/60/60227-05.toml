@@ -7,10 +7,13 @@ category_source = "curated"
 width_mm = 190
 material = "plastic"
 applies_to = "Fit all 190mm FF/FWD chassis"
-notes = "Polycarbonate 0.5 mm thick"
-documents = ["doc/blitz/lmi-product-pages"]
+notes = "Polycarbonate 0.5 mm thick. Includes decal sheet."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-MK9-Fronti-190mm-05mm-Hatchback-Body-shell", kind = "dealer" },
 ]
 thickness_mm = 0.5
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60227-ac", qty = 1 },
+]

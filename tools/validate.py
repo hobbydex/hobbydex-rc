@@ -84,8 +84,8 @@ ENUMS = {
     # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
     "part.pack_qty_basis": {"name", "page", "includes", "manual", "photo", "photos", "owner"},
     # where a shell's thickness_mm or a body's width_mm came from (docs/schema.md, bodies)
-    "part.thickness_basis": {"name", "page", "manual", "owner"},
-    "part.width_basis": {"name", "page", "manual", "owner"},
+    "part.thickness_basis": {"name", "page", "manual", "flyer", "owner"},
+    "part.width_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
     "part.category_source": {"curated"},
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},

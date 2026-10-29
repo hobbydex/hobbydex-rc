@@ -2,7 +2,7 @@ id = "part/blitz/60908-06"
 brand = "brand/blitz"
 number = "60908-06"
 name = "T128 1/12th On-Road Racing Body"
-documents = ["doc/blitz/titan-catalog-2015"]
+documents = ["doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
 category = "body"
@@ -10,3 +10,7 @@ category_source = "curated"
 thickness_mm = 0.6
 thickness_basis = "owner"
 scale = "1/12"
+includes = [
+  { part = "part/blitz/60908-ac", qty = 1 },
+]
+notes = "Includes decal sheet and window mask."

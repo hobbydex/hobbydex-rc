@@ -2,7 +2,7 @@ id = "part/blitz/60117"
 brand = "brand/blitz"
 number = "60117"
 name = "RS6 (200mm) (0.8mm with Plastic Wing Screw) EFRA 2049"
-documents = ["doc/blitz/titan-catalog-2015"]
+documents = ["doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
 links = [
@@ -12,3 +12,9 @@ links = [
 category = "body"
 category_source = "curated"
 material = "plastic"
+width_mm = 200
+width_basis = "flyer"
+includes = [
+  { part = "part/blitz/60117-ac", qty = 1 },
+]
+notes = "Includes decal sheet."

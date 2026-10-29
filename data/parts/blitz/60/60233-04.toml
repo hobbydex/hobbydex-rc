@@ -6,8 +6,8 @@ category = "body"
 category_source = "curated"
 width_mm = 190
 material = "plastic"
-notes = "Polycarbonate 0.4 mm thick; Without decals (ohne Dekor)"
-documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news"]
+notes = "Polycarbonate 0.4 mm thick; Without decals (ohne Dekor). Includes window mask and wing screw."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-TCN-S-190mm-04-mm-ohne-Dekor", kind = "dealer" },
 ]
@@ -16,3 +16,6 @@ announced_source = "https://www.team-titan.com.tw/news.html"
 thickness_mm = 0.4
 thickness_basis = "name"
 name_de = "TCN-S - (190mm) (0.4 mm) - ohne Dekor"
+includes = [
+  { part = "part/blitz/60233-ac", qty = 1 },
+]

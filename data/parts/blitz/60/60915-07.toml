@@ -5,8 +5,8 @@ name = "TCN-Mini (210-225mm) (0.7mm)"
 category = "body"
 category_source = "curated"
 material = "plastic"
-notes = "For M-chassis with a 210-225 mm wheelbase; Polycarbonate 0.7 mm thick"
-documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news"]
+notes = "For M-chassis with a 210-225 mm wheelbase; Polycarbonate 0.7 mm thick. Includes decal sheet and window mask."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-TCN-Mini-210-225mm-07mm", kind = "dealer" },
 ]
@@ -14,3 +14,6 @@ announced = "2022-08-19"
 announced_source = "https://www.team-titan.com.tw/news.html"
 thickness_mm = 0.7
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60915-ac", qty = 1 },
+]

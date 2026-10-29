@@ -7,10 +7,13 @@ category_source = "curated"
 width_mm = 190
 material = "plastic"
 notes = "Polycarbonate 0.7 mm thick; Without decals (ohne Dekor)"
-documents = ["doc/blitz/lmi-product-pages"]
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-MK9-Fronti-190mm-07mm-Hatchback-Body-shell-ohne-Dekor", kind = "dealer" },
 ]
 thickness_mm = 0.7
 thickness_basis = "name"
 name_de = "MK9 Fronti (190mm) (0,7mm) Hatchback Body-shell - ohne Dekor"
+includes = [
+  { part = "part/blitz/60227-ac", qty = 1 },
+]

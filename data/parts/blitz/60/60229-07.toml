@@ -6,8 +6,8 @@ category = "body"
 category_source = "curated"
 width_mm = 190
 material = "plastic"
-notes = "Polycarbonate 0.7 mm thick; EFRA homologation 5002"
-documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news"]
+notes = "Polycarbonate 0.7 mm thick; EFRA homologation 5002. Includes decal sheet and window mask."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-YRS-Fronti-EFRA-5002-07-mm", kind = "dealer" },
 ]
@@ -15,3 +15,6 @@ announced = "2022-02-23"
 announced_source = "https://www.team-titan.com.tw/news.html"
 thickness_mm = 0.7
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60229-ac", qty = 1 },
+]

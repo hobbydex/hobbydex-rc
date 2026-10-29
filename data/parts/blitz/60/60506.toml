@@ -2,7 +2,7 @@ id = "part/blitz/60506"
 brand = "brand/blitz"
 number = "60506"
 name = "Buggy8 (1.0mm) Fits Losi 1/8th 8ight"
-documents = ["doc/blitz/titan-catalog-2015"]
+documents = ["doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
 links = [
@@ -11,6 +11,9 @@ links = [
 ]
 category = "body"
 category_source = "curated"
-notes = "Polycarbonate 1.0 mm thick"
+notes = "Polycarbonate 1.0 mm thick. Includes decal sheet."
 thickness_mm = 1
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60506-ac", qty = 1 },
+]

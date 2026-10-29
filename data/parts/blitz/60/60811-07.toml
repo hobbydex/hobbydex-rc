@@ -5,8 +5,8 @@ name = "GT7 (0.7mm) with Wing Type S"
 category = "body"
 category_source = "curated"
 material = "plastic"
-notes = "Polycarbonate 0.7 mm thick"
-documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news"]
+notes = "Polycarbonate 0.7 mm thick. Includes decal sheet and wing screw."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-GT7-07mm-with-Wing-Type-S-1pcs", kind = "dealer" },
 ]
@@ -14,3 +14,6 @@ announced = "2026-01-12"
 announced_source = "https://www.team-titan.com.tw/news.html"
 thickness_mm = 0.7
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60811-ac", qty = 1 },
+]

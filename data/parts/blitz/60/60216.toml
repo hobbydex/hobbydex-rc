@@ -2,7 +2,7 @@ id = "part/blitz/60216"
 brand = "brand/blitz"
 number = "60216"
 name = "TSX (190mm) (0.8mm) EFRA 4035"
-documents = ["doc/blitz/titan-catalog-2015"]
+documents = ["doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
 links = [
@@ -11,8 +11,11 @@ links = [
 ]
 category = "body"
 category_source = "curated"
-notes = "Polycarbonate 0.8 mm thick"
+notes = "Polycarbonate 0.8 mm thick. Includes decal sheet and window mask."
 width_mm = 190
 width_basis = "name"
 thickness_mm = 0.8
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60216-ac", qty = 1 },
+]
