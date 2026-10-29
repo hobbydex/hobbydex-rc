@@ -32,7 +32,7 @@ REQUIRED = {
 KINDS = {k: dict(dir=DIRS[k], required=REQUIRED[k]) for k in REQUIRED}
 REFS = {  # field -> expected id prefix
     "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/",
-    "publisher": "brand/", "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
+    "publisher": ("brand/", "company/"), "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
     "owner": "company/", "parent": "company/",
 }
 LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": "", "kits": "kit/", "parts": "part/"}   # requires: kit or release ids, checked above
