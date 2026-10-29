@@ -12,4 +12,7 @@ category = "motor"
 equivalent_to = [
   { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
-applies_to = ["Pirate Power"]
+applies_to = ["Pirate Power", "Pirate XL-EP"]
+fits = [
+  { kit = "kit/t2m/pirate-xl-ep", type = "replaces", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

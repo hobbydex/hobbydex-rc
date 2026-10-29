@@ -6,3 +6,7 @@ name_fr = "Vis tete fraisee 3 x 8"
 documents = ["doc/t2m/t2m-shop"]
 notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4903/4."
 category = "screw"
+applies_to = ["Black Pirate 8"]
+fits = [
+  { kit = "kit/t2m/black-pirate-8", type = "direct", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
