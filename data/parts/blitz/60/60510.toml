@@ -8,10 +8,14 @@ links = [
 ]
 category = "body"
 category_source = "curated"
-notes = "Polycarbonate 1.0 mm thick"
+notes = "Polycarbonate 1.0 mm thick. Includes decal sheet."
 thickness_mm = 1
 thickness_basis = "name"
 fits = [
   { kit = "kit/mugen/mbx6", type = "replaces", notes = "Owner fact, 2026-10-28: the Mugen MBX6 buggy body" },
 ]
 scale = "1/8"
+includes = [
+  { part = "part/blitz/60510-ac", qty = 1 },
+]
+documents = ["doc/blitz/team-titan-flyers"]

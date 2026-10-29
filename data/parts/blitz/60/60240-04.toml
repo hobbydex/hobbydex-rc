@@ -8,13 +8,14 @@ scale = "1/10"
 width_mm = 190
 material = "plastic"
 notes = "Polycarbonate 0.4 mm thick. Includes light decals and window mask."
-documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news"]
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-news", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-MSX-1/10-GT-190mm-04-mm", kind = "dealer" },
   { site = "Team Titan", url = "https://www.team-titan.com.tw/products_b_60240.php", kind = "maker" },
 ]
 includes = [
   { part = "part/blitz/60317e-05", qty = 1 },
+  { part = "part/blitz/60240-ac", qty = 1 },
 ]
 thickness_mm = 0.4
 thickness_basis = "name"

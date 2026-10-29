@@ -2,9 +2,13 @@ id = "part/blitz/60112-07"
 brand = "brand/blitz"
 number = "60112-07"
 name = "RS4 (200mm) with Plastic Wing Screw) EFRA 2036"
-documents = ["doc/blitz/titan-catalog-2015"]
+documents = ["doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
 category = "body"
 category_source = "curated"
 material = "plastic"
+includes = [
+  { part = "part/blitz/60302-1", qty = 1 },
+]
+notes = "Includes decal sheet and window mask."

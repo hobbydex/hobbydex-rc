@@ -7,11 +7,14 @@ category_source = "curated"
 width_mm = 192
 material = "plastic"
 applies_to = "Fit AE SC10 well; Can fit other 1/10 SC truck with trimming"
-notes = "Body 192 x 158 x 530 mm (width x height x length)"
-documents = ["doc/blitz/lmi-product-pages", "doc/blitz/titan-catalog-2015"]
+notes = "Body 192 x 158 x 530 mm (width x height x length). Includes decal sheet and window mask."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-Short-Course-Truck-body-shell-SC1", kind = "dealer" },
   { site = "Team Titan", url = "https://www.team-titan.com.tw/products_class101.php?cid=38", kind = "maker" },
 ]
 seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
+includes = [
+  { part = "part/blitz/60803-ac", qty = 1 },
+]

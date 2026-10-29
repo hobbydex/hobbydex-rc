@@ -6,10 +6,13 @@ category = "body"
 category_source = "curated"
 scale = "1/8"
 material = "plastic"
-notes = "Polycarbonate 1 mm thick; EFRA homologation 6006"
-documents = ["doc/blitz/lmi-product-pages"]
+notes = "Polycarbonate 1 mm thick; EFRA homologation 6006. Includes decal sheet and window mask."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-GT5-Zonda-1/8-1-mm-with-S-Type-Wing-EFRA-6006", kind = "dealer" },
 ]
 thickness_mm = 1
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60808-ac", qty = 1 },
+]

@@ -5,11 +5,14 @@ name = "Delta (0.8mm) - without decals and Scheibenaufkleber"
 category = "body"
 category_source = "curated"
 material = "plastic"
-notes = "Polycarbonate 0.8 mm thick; Without decals (ohne Dekor)"
-documents = ["doc/blitz/lmi-product-pages"]
+notes = "Polycarbonate 0.8 mm thick; Without decals (ohne Dekor). Includes window mask."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-Delta-08mm-ohne-Dekor-und-Scheibenaufkleber", kind = "dealer" },
 ]
 thickness_mm = 0.8
 thickness_basis = "name"
 name_de = "Delta (0.8mm) - ohne Dekor und Scheibenaufkleber"
+includes = [
+  { part = "part/blitz/60912-ac", qty = 1 },
+]

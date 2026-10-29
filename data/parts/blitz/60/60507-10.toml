@@ -6,8 +6,8 @@ name = "Buggy RC8 AE RC8B (1 mm)"
 category = "body"
 category_source = "curated"
 material = "plastic"
-notes = "Polycarbonate 1 mm thick"
-documents = ["doc/blitz/lmi-product-pages", "doc/blitz/titan-catalog-2015"]
+notes = "Polycarbonate 1 mm thick. Includes decal sheet and window mask."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/titan-catalog-2015", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-Buggy-RC8-AE-RC18B-1-mm", kind = "dealer" },
 ]
@@ -18,3 +18,6 @@ seen_by = "2015"
 seen_by_source = "doc/blitz/titan-catalog-2015"
 thickness_mm = 1
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60507-ac", qty = 1 },
+]

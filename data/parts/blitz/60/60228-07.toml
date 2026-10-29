@@ -6,10 +6,13 @@ category = "body"
 category_source = "curated"
 width_mm = 190
 material = "plastic"
-notes = "Polycarbonate 0.7 mm thick"
-documents = ["doc/blitz/lmi-product-pages"]
+notes = "Polycarbonate 0.7 mm thick. Includes decal sheet and window mask."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-ROADSTER-190mm-07-mm", kind = "dealer" },
 ]
 thickness_mm = 0.7
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60228-ac", qty = 1 },
+]

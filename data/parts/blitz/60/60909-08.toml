@@ -6,10 +6,13 @@ category = "body"
 category_source = "curated"
 scale = "1/12"
 material = "plastic"
-notes = "Polycarbonate 0.8 mm thick"
-documents = ["doc/blitz/lmi-product-pages"]
+notes = "Polycarbonate 0.8 mm thick. Includes decal sheet."
+documents = ["doc/blitz/lmi-product-pages", "doc/blitz/team-titan-flyers"]
 links = [
   { site = "LMI Racing", url = "https://www.lmi-racing.com/BLITZ-P1-1-12th-Bodyshell-08mm", kind = "dealer" },
 ]
 thickness_mm = 0.8
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60909-ac", qty = 1 },
+]

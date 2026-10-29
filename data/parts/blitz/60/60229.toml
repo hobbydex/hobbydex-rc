@@ -7,11 +7,14 @@ links = [
 ]
 announced = "2022-02-23"
 announced_source = "https://www.team-titan.com.tw/news.html"
-documents = ["doc/blitz/team-titan-news"]
+documents = ["doc/blitz/team-titan-news", "doc/blitz/team-titan-flyers"]
 category = "body"
 category_source = "curated"
-notes = "Polycarbonate 0.7 mm thick"
+notes = "Polycarbonate 0.7 mm thick. Includes decal sheet and window mask."
 width_mm = 190
 width_basis = "name"
 thickness_mm = 0.7
 thickness_basis = "name"
+includes = [
+  { part = "part/blitz/60229-ac", qty = 1 },
+]
