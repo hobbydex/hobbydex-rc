@@ -1,0 +1,18 @@
+id = "part/spektrum/SPMX37002S100HT"
+brand = "brand/spektrum"
+number = "SPMX37002S100HT"
+name = "7.4V 3700mAh 2S 100C Race Shorty Hardcase Smart LiPo Battery: Tubes, 5mm"
+gtin = "605482418406"
+links = [
+  { site = "Axial", url = "https://www.axialadventure.com/product/spektrum-7.4v-3700mah-2s-100c-race-shorty-hardcase-smart-lipo-battery-tubes-5mm/SPMX37002S100HT.html", kind = "dealer" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 3700
+c_rating = 100
+case = "hard"
+voltage = 7.4

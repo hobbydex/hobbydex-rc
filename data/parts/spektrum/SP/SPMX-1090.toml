@@ -1,0 +1,17 @@
+id = "part/spektrum/SPMX-1090"
+brand = "brand/spektrum"
+number = "SPMX-1090"
+name = "7.4V 350mAh 2S 30C LiPo Battery: PH2.0"
+gtin = "660132987664"
+links = [
+  { site = "Losi", url = "https://www.losi.com/product/spektrum-7.4v-350mah-2s-30c-lipo-battery-ph2.0/SPMX-1090.html", kind = "dealer" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-350mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 350
+c_rating = 30
+voltage = 7.4

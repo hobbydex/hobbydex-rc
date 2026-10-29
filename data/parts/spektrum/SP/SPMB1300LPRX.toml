@@ -1,0 +1,16 @@
+id = "part/spektrum/SPMB1300LPRX"
+brand = "brand/spektrum"
+number = "SPMB1300LPRX"
+name = "7.4V 1300mAh 2S 5C Li-Po Receiver Battery; JST-RCY"
+links = [
+  { site = "Losi", url = "https://www.losi.com/product/spektrum-7.4v-1300mah-2s-5c-li-po-receiver-battery--jst-rcy/SPMB1300LPRX.html", kind = "dealer" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1300
+connector = "JST"
+voltage = 7.4
