@@ -9,7 +9,7 @@ links = [
 ]
 fits = [
   { kit = "kit/hb-racing/lightning-2", type = "direct", source = "doc/hb-racing/hotbodiesonline-part-pages" },
-  { kit = "kit/hb-racing/lightning-2", type = "direct", replaces = "part/hb-racing/HBC8037-3", source = "doc/hb-racing/hotbodiesonline-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hb-racing/lightning-2", type = "replaces", replaces = "part/hb-racing/HBC8037-3", source = "doc/hb-racing/hotbodiesonline-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "aluminium"
