@@ -9,3 +9,7 @@ documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=0096-0812" },
 ]
+fits = [
+  { kit = "kit/agama/n1", releases = ["release/agama/n1-gen-iv-pro-kit"], type = "replaces", source = "doc/agama/n1-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/agama/n1e", releases = ["release/agama/n1e-gen-iv-pro-kit"], type = "replaces", source = "doc/agama/n1e-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

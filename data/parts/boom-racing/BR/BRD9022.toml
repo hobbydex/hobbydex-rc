@@ -6,3 +6,7 @@ links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/complete-front-assembled-brx90-phat-axle-set-w-ar44-hd-gears-151564" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/boom-racing/brx01", releases = ["release/boom-racing/br8003"], type = "replaces", source = "doc/boom-racing/manual-brx01-limited-edition-br8003-20230118", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02", releases = ["release/boom-racing/br8004", "release/boom-racing/br8005"], type = "replaces", source = "doc/boom-racing/manual-brx02-leaf-spring-110122-br8005", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -8,3 +8,9 @@ links = [
 applies_to = "EB/NB/ET/NT48"
 gtin = "810020552409"
 category = "suspension"
+fits = [
+  { kit = "kit/tekno/eb48", releases = ["release/tekno/eb48-2-2"], type = "replaces", source = "doc/tekno/eb48-2-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/et48", releases = ["release/tekno/tkr9605"], type = "replaces", source = "doc/tekno/et48-2-2-manual-rev06", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48", releases = ["release/tekno/tkr9305"], type = "replaces", source = "doc/tekno/nb48-2-2-manual-rev02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nt48", releases = ["release/tekno/tkr9401"], type = "replaces", source = "doc/tekno/nt48-2-2-manual-rev02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

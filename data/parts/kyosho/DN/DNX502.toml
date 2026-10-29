@@ -7,3 +7,6 @@ seen_by_source = "doc/kyosho/dnx502-lamborghini-lp64"
 name_ja = "ランボルギーニ ムルシエラゴ LP640"
 documents = ["doc/kyosho/dnx502-lamborghini-lp64"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/dnano", releases = ["release/kyosho/32502"], type = "replaces", source = "doc/kyosho/32502-601spcs-dnano-splimited-im", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

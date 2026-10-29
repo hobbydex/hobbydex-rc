@@ -6,3 +6,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-chassis--22-4.0/TLR231064.html" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/tlr/22", releases = ["release/tlr/tlr03013", "release/tlr/tlr03014"], type = "replaces", source = "doc/tlr/tlr03013-manual-multi", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -5,3 +5,6 @@ name = "VFD Hurtz Dig Replacement Parts"
 gtin = "791512780732"
 category = "tire"
 links = [{ site = "Vanquish", url = "https://vanquishproducts.com/products/vfd-hurtz-dig-replacement-parts" }]
+fits = [
+  { kit = "kit/vanquish/vs4-10", releases = ["release/vanquish/vps09012a"], type = "replaces", source = "doc/vanquish/vps09012-fordyce-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

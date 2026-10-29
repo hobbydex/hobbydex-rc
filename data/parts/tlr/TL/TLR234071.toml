@@ -7,3 +7,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-steering-bell-crank-set-all-scte/TLR234071.html" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/tlr/ten-scte", releases = ["release/tlr/tlr03008"], type = "replaces", source = "doc/tlr/tlr03008-manual-multi", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

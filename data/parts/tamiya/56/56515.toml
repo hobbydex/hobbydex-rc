@@ -14,3 +14,9 @@ category = "shock"
 shock_part = "complete"
 material = "aluminium"
 status = "available"
+fits = [
+  { kit = "kit/tamiya/mercedes-benz-actros", releases = ["release/tamiya/56335", "release/tamiya/56348"], type = "replaces", source = "doc/tamiya/56335-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/mercedes-benz-arocs", releases = ["release/tamiya/56352"], type = "replaces", source = "doc/tamiya/56352-bauanleitung-mb-arocs-3363-6x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/rc-tractor-truck-1-14", releases = ["release/tamiya/56340"], type = "replaces", source = "doc/tamiya/56340-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/volvo-fh16", releases = ["release/tamiya/56375"], type = "replaces", source = "doc/tamiya/56375-anleitung-instruction-volvo-fh16-xl750", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -6,3 +6,6 @@ gtin = "4548565481934"
 name_ja = "アックス2.0 (EZシリーズ) ノンデコレーションボディセット"
 category = "body"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ezb003gy.html" } ]
+fits = [
+  { kit = "kit/kyosho/ez-series", releases = ["release/kyosho/34406", "release/kyosho/34406t1", "release/kyosho/34406t2"], type = "replaces", source = "doc/kyosho/34406_axxe2_0_op", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

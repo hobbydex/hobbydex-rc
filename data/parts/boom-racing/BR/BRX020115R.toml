@@ -7,3 +7,8 @@ links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/brx80-complete-rear-phat-axle-for-brx02-88-109-brx01-awb-leaf-217499" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/boom-racing/brx01-awb", releases = ["release/boom-racing/br8010", "release/boom-racing/br8011", "release/boom-racing/br8016"], type = "replaces", source = "doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-with-zil-pickup", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02-109", releases = ["release/boom-racing/br8006", "release/boom-racing/br8012"], type = "replaces", source = "doc/boom-racing/manual-brx02-109-land-rover-series-ii-iii-pickup-4wd-radio-control", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02-88", releases = ["release/boom-racing/br8007"], type = "replaces", source = "doc/boom-racing/manual-brx02-88-land-rover-series-iii-pickup-4wd-radio-control-car", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

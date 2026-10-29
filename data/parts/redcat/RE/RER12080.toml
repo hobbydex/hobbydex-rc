@@ -7,3 +7,6 @@ seen_by_source = "https://web.archive.org/web/20200517194445/https://www.redcatr
 category = "body"
 documents = ["doc/redcat/gen8-axe-manual"]
 color = "clear"
+fits = [
+  { kit = "kit/redcat/gen8", releases = ["release/redcat/GEN8-AXE-BLACK"], type = "replaces", source = "doc/redcat/gen8-axe-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

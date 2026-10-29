@@ -5,3 +5,7 @@ name = "02B1 Diff, Bevel Set(LAZER ZX6)"
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "differential"
 name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/lazer-zx6-6", releases = ["release/kyosho/30047"], type = "replaces", source = "doc/kyosho/30047-lazer-zx6-6-im-v02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/kyosho/lazer-zx7", releases = ["release/kyosho/30048"], type = "replaces", source = "doc/kyosho/30048-lazer-zx7-im", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

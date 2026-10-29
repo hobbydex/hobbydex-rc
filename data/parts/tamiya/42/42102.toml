@@ -8,3 +8,8 @@ links = [
   { site = "Tamiya", url = "https://www.tamiya.de/tamiya_en/spare-parts-accessories/rc-tuning-parts/trf-special-damper-set-rc-chassis-accessory-300042102-en.html" },
 ]
 category = "shock"
+fits = [
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/58463-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/m-07", releases = ["release/tamiya/58647"], type = "direct", source = "doc/tamiya/58647-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tt-02-type-s", releases = ["release/tamiya/58600"], type = "direct", source = "doc/tamiya/58600-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

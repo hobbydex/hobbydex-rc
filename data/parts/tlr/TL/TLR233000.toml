@@ -11,3 +11,7 @@ category = "shock"
 shock_part = "shaft"
 shaft_mm = 3.5
 length_mm = 44
+fits = [
+  { kit = "kit/tlr/22", releases = ["release/tlr/tlr03013", "release/tlr/tlr03014"], type = "replaces", source = "doc/tlr/tlr03013-manual-multi", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tlr/22-4", releases = ["release/tlr/tlr03007"], type = "replaces", source = "doc/tlr/tlr03007-manual-multi-lr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

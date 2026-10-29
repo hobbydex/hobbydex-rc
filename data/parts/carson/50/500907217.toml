@@ -7,3 +7,8 @@ links = [
   { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/spare-parts-accessories/truck-trailer-accessories/basic-accessories/1-14-fliegl-stone-master-spindle-drive-500907217-en.html" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/carson/2-axle-dump-semi-trailer", releases = ["release/carson/500907312"], type = "replaces", source = "doc/carson/500907312-anleitung-instruction-2-achs-muldenkipper-sattelauflieger", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/carson/2-axle-dump-trailer", releases = ["release/carson/500907425"], type = "replaces", source = "doc/carson/500907425-anleitung-instruction-2-achs-kipp-zentralanhaenger", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/carson/fliegl-stone-master", releases = ["release/carson/500907216"], type = "replaces", source = "doc/carson/500907216-manual-fliegl", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -7,3 +7,6 @@ gtin = "4955439745960"
 category = "tire"
 documents = ["doc/kyosho/mzw17-40-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw17-40.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-autoscale", releases = ["release/kyosho/30473"], type = "replaces", source = "doc/kyosho/30473-mzg316-lamborghini-lp500s-p", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

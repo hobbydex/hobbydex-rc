@@ -9,3 +9,6 @@ category = "drivetrain"
 material = "aluminium"
 color = "black"
 links = [{ site = "Vanquish", url = "https://vanquishproducts.com/products/f10-aluminum-front-axle-housing" }]
+fits = [
+  { kit = "kit/vanquish/vs4-10", releases = ["release/vanquish/vps09026a"], type = "replaces", source = "doc/vanquish/vps09026", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

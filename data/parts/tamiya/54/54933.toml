@@ -10,3 +10,7 @@ links = [
   { site = "Tamiya customer service", url = "https://customer-service.tamiya.de/en/service/manuals/", kind = "maker" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/tamiya/tb-evo-7", releases = ["release/tamiya/42315"], type = "direct", source = "doc/tamiya/42315-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/td2", releases = ["release/tamiya/58697"], type = "direct", source = "doc/tamiya/58697-anleitung-instruction-astute-td2", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

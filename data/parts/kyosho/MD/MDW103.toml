@@ -10,3 +10,6 @@ gtin = "4548565180967"
 category = "suspension"
 documents = ["doc/kyosho/mdw103-stabilizer-set-im", "doc/kyosho/mdw103-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mdw103.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", releases = ["release/kyosho/mini-z-awd-ma-015-dws-asf-2-4ghz-chassis-set-orange-limted"], type = "replaces", source = "doc/kyosho/30531-hs01-awd-dws-orange-ltd", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

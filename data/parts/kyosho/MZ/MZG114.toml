@@ -7,3 +7,6 @@ seen_by_source = "doc/kyosho/30391-mzg114-porsche935-p"
 name_ja = "ポルシェ 935 ターボ"
 documents = ["doc/kyosho/30391-mzg114-porsche935-p"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-autoscale", releases = ["release/kyosho/30391"], type = "replaces", source = "doc/kyosho/30391-mzg114-porsche935-p", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

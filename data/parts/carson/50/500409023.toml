@@ -5,3 +5,7 @@ name = "Motor mount"
 category = "chassis"
 documents = ["doc/carson/500409024-parts-list"]
 name_de = "Motorhalter"
+fits = [
+  { kit = "kit/carson/virus-gp", releases = ["release/carson/500204031", "release/carson/500204033", "release/carson/500204040"], type = "replaces", source = "doc/carson/500204031-anleitung-instruction-virus40gp-v21-06-2023", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/carson/virus-race", releases = ["release/carson/500409023", "release/carson/500409024"], type = "replaces", source = "doc/carson/500409023-anleitung-virus-race-4-1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
