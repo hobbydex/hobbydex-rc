@@ -5,6 +5,9 @@ name = "Front plastic brace"
 category = "chassis"
 material = "plastic"
 applies_to = "A319E"
+fits = [
+  { kit = "kit/agama/a319e", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=41009-1" },

@@ -4,6 +4,10 @@ number = "24906"
 name = "Mid Diff. set"
 category = "differential"
 applies_to = "A215A215E"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=24906" },

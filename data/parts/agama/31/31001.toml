@@ -5,6 +5,10 @@ name = "125cc buggy fuel tank"
 gtin = "4714781689205"
 category = "engine-fuel"
 applies_to = "A319A319P; A319"
+fits = [
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319p", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=31001" },

@@ -1,16 +1,20 @@
 id = "part/agama/48218-1"
 brand = "brand/agama"
 number = "48218-1"
-name = "CVD wheel axles cup (SVA319N1M1N2series)"
+name = "CVD wheel axles cup"
 gtin = "4714781688420"
 category = "drivetrain"
 pack_qty = 2
-applies_to = "A215SV, A319, A319E, N1, N1e, N2, N2e"
+applies_to = "SVA319N1M1N2series; A215SV, A319, A319E, N1, N1e, N2, N2e"
 fits = [
-  { kit = "kit/agama/n1", type = "direct", source = "doc/agama/nemoracing-com" },
-  { kit = "kit/agama/n1e", type = "direct", source = "doc/agama/nemoracing-com" },
-  { kit = "kit/agama/n2", type = "direct", source = "doc/agama/nemoracing-com" },
-  { kit = "kit/agama/n2e", type = "direct", source = "doc/agama/nemoracing-com" },
+  { kit = "kit/agama/n1e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/n2e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a215sv", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/m1", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/n1", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/n2", type = "direct", source = "doc/agama/agama-rc-com" },
 ]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [

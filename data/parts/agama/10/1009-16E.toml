@@ -6,6 +6,10 @@ gtin = "4714781687126"
 category = "chassis"
 pack_qty = 4
 applies_to = "A215EA319E; A319e"
+fits = [
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319e", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=1009-16E" },

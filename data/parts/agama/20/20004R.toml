@@ -4,6 +4,10 @@ number = "20004R"
 name = "Shock boots"
 category = "o-ring-seal"
 applies_to = "A215A319"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=20004R" },

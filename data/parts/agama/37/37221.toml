@@ -5,6 +5,9 @@ name = "Rear shock tower"
 gtin = "4714781687928"
 category = "chassis"
 applies_to = "A215SV"
+fits = [
+  { kit = "kit/agama/a215sv", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=37221" },

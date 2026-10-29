@@ -1,8 +1,15 @@
 id = "part/agama/36225-L4"
 brand = "brand/agama"
 number = "36225-L4"
-name = "Steering post (SVA319N1M1N2series)"
+name = "Steering post"
 category = "steering"
+applies_to = "SVA319N1M1N2series"
+fits = [
+  { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/m1", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/n1", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/n2", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=36225-L4" },

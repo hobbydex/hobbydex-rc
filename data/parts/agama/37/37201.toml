@@ -4,6 +4,9 @@ number = "37201"
 name = "Front hinge pin brace"
 category = "pin"
 applies_to = "A215series"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=37201" },

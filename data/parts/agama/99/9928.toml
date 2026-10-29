@@ -5,6 +5,9 @@ name = "Alloy throttle radio tray post"
 category = "chassis"
 material = "aluminium"
 applies_to = "A8series"
+fits = [
+  { kit = "kit/agama/a8", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=9928" },

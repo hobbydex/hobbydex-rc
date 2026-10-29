@@ -5,6 +5,9 @@ name = "Long steering rack"
 gtin = "4714781682350"
 category = "steering"
 applies_to = "A8 series; A8FR CUP"
+fits = [
+  { kit = "kit/agama/a8", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=8062" },

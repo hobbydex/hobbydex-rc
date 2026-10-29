@@ -5,6 +5,11 @@ name = "Suspension Pin Bushings White"
 gtin = "4714781680981"
 category = "suspension"
 applies_to = "A215, A215e, A8FR CUP, A8T"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a8t", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+]
 documents = ["doc/agama/nemoracing-com"]
 color = "white"
 links = [

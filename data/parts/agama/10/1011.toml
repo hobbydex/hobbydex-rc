@@ -4,6 +4,10 @@ number = "1011"
 name = "Front steering hub"
 category = "steering"
 applies_to = "A8A215 series"
+fits = [
+  { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a8", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=1011" },

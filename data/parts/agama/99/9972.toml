@@ -5,6 +5,9 @@ name = "Integrated Switch System Spare Lead"
 gtin = "4714781683609"
 category = "wire"
 applies_to = "A8FR CUP, A8T"
+fits = [
+  { kit = "kit/agama/a8t", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+]
 documents = ["doc/agama/nemoracing-com"]
 links = [
   { site = "Nemo Racing", url = "https://www.nemoracing.com/products/9972-plug-socket-switch-system", kind = "dealer" },

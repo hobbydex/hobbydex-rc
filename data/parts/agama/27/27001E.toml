@@ -5,6 +5,9 @@ number = "27001E"
 name = "Chassis"
 category = "chassis"
 applies_to = "A215E; A215e"
+fits = [
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/agama-rc-com" },
+]
 gtin = "4714781687201"
 documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
