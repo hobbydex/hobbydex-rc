@@ -8,3 +8,9 @@ gtin = "5051294012571"
 category = "pin"
 documents = ["doc/schumacher/c2w-manual", "doc/schumacher/cat2000-classic-manual", "doc/schumacher/eclipse6-maunal"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/speed-pack-small-pins-pk-u1633" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

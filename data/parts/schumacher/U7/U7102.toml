@@ -9,3 +9,7 @@ pack_qty = 10
 category = "screw"
 documents = ["doc/schumacher/eclipse6-maunal", "doc/schumacher/ft9-manual", "doc/schumacher/neon-ft-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-5/speed-pack-m3x4-button-hd-pk10-u7102" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+]

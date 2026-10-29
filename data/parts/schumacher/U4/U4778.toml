@@ -9,3 +9,7 @@ pack_qty = 4
 pack_qty_basis = "name"
 category = "chassis"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/lipo-stops-4pcs-off-road-u4778" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

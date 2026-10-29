@@ -11,3 +11,7 @@ category = "washer-shim"
 material = "steel"
 documents = ["doc/schumacher/c2w-manual", "doc/schumacher/cat2000-classic-manual", "doc/schumacher/eclipse6-maunal"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-4/m3-steel-washers-pk10-u7707" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+]

@@ -9,3 +9,7 @@ pack_qty = 4
 category = "bumper-guard"
 documents = ["doc/schumacher/ft9-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/roll-bar-socket-pk4-mi5-mi7-st-2-u4242" } ]
+fits = [
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

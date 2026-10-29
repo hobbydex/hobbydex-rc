@@ -9,3 +9,8 @@ pack_qty = 10
 notes = "Shown by number in the manual; not on its spares list"
 category = "screw"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-5/speed-pack-m3x10-csk-hd-pk10-u3023" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]
