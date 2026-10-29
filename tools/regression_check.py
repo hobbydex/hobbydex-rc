@@ -317,6 +317,11 @@ class Check:
                 if k == "notes" and isinstance(ov, str) and isinstance(nv, str) and nv.startswith(ov.rstrip(". ")):
                     self.event(kind, rid, k, "changed", ov, nv, False, "note kept, text added")
                     continue
+                if k == "seen_by" and isinstance(ov, str) and isinstance(nv, str) and nv < ov:
+                    # seen_by is the first day the maker had the item on its pages: an earlier capture lowers it (user,
+                    # 2026-10-28: "any time we go to archive.org we should adjust all first seen dates"); never a loss
+                    self.event(kind, rid, k, "changed", ov, nv, False, "seen_by lowered: an earlier first sighting")
+                    continue
                 reg = field_sourced(o, k, ov)
                 self.event(kind, rid, k, "changed", ov, nv, reg, "stated value changed" if reg else "not stated")
         if changed:

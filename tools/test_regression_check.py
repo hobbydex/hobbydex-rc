@@ -23,6 +23,24 @@ class Repointed(unittest.TestCase):
         self.assertIsNone(rc.repointed(self.old, rows, {"part/arrma/ARA330200": "part/arrma/ARAC9074"}))
 
 
+class SeenBy(unittest.TestCase):
+    """seen_by is the first day the maker had an item on its pages: an earlier capture lowers it (no loss), a later date does not."""
+
+    def events(self, old, new):
+        ck = rc.Check("a", "b")
+        ck.compare("release", "release/x/1", {"id": "release/x/1", "seen_by": old, "seen_by_source": "https://x.test/p"},
+                   {"id": "release/x/1", "seen_by": new, "seen_by_source": "https://web.archive.org/web/2020/https://x.test/p"})
+        return [e for e in ck.events if e["field"] == "seen_by"]
+
+    def test_earlier_first_sighting_is_not_a_regression(self):
+        for old, new in (("2023-03", "2023-02"), ("2019-07-07", "2019-05"), ("2026-10", "2022-04-18")):
+            ev = self.events(old, new)
+            self.assertEqual([e["regression"] for e in ev], [False], (old, new))
+
+    def test_later_date_is_a_regression(self):
+        self.assertEqual([e["regression"] for e in self.events("2023-03", "2024-09")], [True])
+
+
 def upgrade_fixture():
     parts = {
         "part/a/S1": {"id": "part/a/S1", "brand": "brand/a", "name": "Wheel Hex Adapter", "category": "suspension", "material": "plastic"},
