@@ -539,6 +539,31 @@ def check_connectors(docs, ids, errors):
         if any(str(e.get("spec", "")).startswith("spec/connector/") for e in d.get("equivalent_to", []) if isinstance(e, dict)):
             errors.append(f"{path}: has connectors and an equivalent_to connector spec; a lead lists its plugs only in connectors")
 
+def check_protocols(docs, ids, errors):
+    """A radio part's `protocols` lists protocol specs (spec/protocol/..., category protocol); a protocol spec's
+    `compatible` rows name other protocol specs and the radio parts (`via`) that list both (docs/schema.md "Protocol specs")."""
+    protocol_ids = {d["id"] for _, kind, d in docs if kind == "spec" and d.get("category") == "protocol"}
+    part_ids = {d["id"] for _, kind, d in docs if kind == "part"}
+    for path, kind, d in docs:
+        if kind == "part" and "protocols" in d:
+            names = d["protocols"]
+            if d.get("category") != "radio":
+                errors.append(f"{path}: protocols only on radio parts, not {d.get('category')}")
+            if not isinstance(names, list) or not names or any(n not in protocol_ids for n in names):
+                errors.append(f"{path}: protocols should be a non-empty list of protocol spec ids, got {names!r}")
+            elif len(set(names)) != len(names):
+                errors.append(f"{path}: protocols lists a protocol twice: {names!r}")
+        if kind == "spec" and d.get("category") == "protocol":
+            if not d["id"].startswith("spec/protocol/"):
+                errors.append(f"{path}: a protocol spec id starts with spec/protocol/")
+            for row in d.get("compatible", []):
+                if not isinstance(row, dict) or row.get("spec") not in protocol_ids or row.get("spec") == d["id"]:
+                    errors.append(f"{path}: compatible row {row!r} should name another protocol spec")
+                    continue
+                for v in row.get("via", []):
+                    if v not in part_ids:
+                        errors.append(f"{path}: compatible via {v} is not a part")
+
 def check_plugs(docs, ids, errors):
     """`motor_connector` (the plug on an ESC's motor wires, or on a motor's leads) names a PLUG_SPEC plug that has its
     connector spec, and is on esc and motor parts only (docs/schema.md "ESCs"). The battery-side `connector` is not
@@ -1243,6 +1268,7 @@ def main():
     check_makes(docs, errors)
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
+    check_protocols(docs, ids, errors)
     check_plugs(docs, ids, errors)
     check_receiver_plugs(docs, ids, errors)
     check_names_no_brand(docs, errors)

@@ -534,7 +534,7 @@ Eddy, RCScrewZ, Avid RC, Acer Racing ...) on kits sold under many bodies
 kit is the car.
 
 `documents`: the part's own documents, such as a radio's user manual (a list of `doc/` ids). A part has no singular `source` field: the site does not read it, so tools/validate.py rejects it; the docs the part came from go in `documents`. Radios
-and receivers also carry `channels` and `protocol` (AFHDS 3, ANT, DSMR) and
+and receivers also carry `channels`, `protocol` (AFHDS 3, ANT, DSMR), `protocols` (its protocol specs, see "Protocol specs") and
 `weight_g`; their model code is the part number (FS-NB4+, so a number may
 contain `+`).
 
@@ -1112,6 +1112,30 @@ post, not a shaft, and get no spec.
 Size specs of the three kinds above are written only when the size occurs on
 at least two parts; a size on one part stays unlinked until a second part
 shows it.
+
+### Protocol specs
+
+`spec/protocol/<maker>-<name>` (category "protocol"): one radio protocol as its
+maker names it (Sanwa FH5, Futaba T-FHSS, FlySky AFHDS 3, Spektrum DSMR,
+Traxxas TQi, Kyosho Syncro, ...). The id starts with the maker, because
+makers reuse names ("FHSS" is Futaba's, Radiolink's, Carson's, KO Propo's and
+Absima's own system, and not one protocol). Fields: `name`, `brand` (the maker,
+when one owns it), `aliases` (other spellings the same maker uses for the same
+protocol, written only where the maker's pages use both: Sanwa's receivers say
+"2.4 GHz FHSS5" for FH5), `links` (a maker page) and `compatible`: rows
+`{ spec, via, url }` saying a device of this protocol can also run the
+`spec` protocol, because the maker lists both modes on the parts in `via`
+(Sanwa "RF modes FH5, FH4, FH3", Futaba "systems: T-FHSS, S-FHSS"); `url` is
+the maker's page of the first `via` part.
+
+A radio part (transmitter, receiver or set) lists `protocols`, the protocol
+spec ids it names, in the order the maker gives them (the first is its own
+`protocol` value; a transmitter that lists several modes runs receivers of
+each). `protocol` stays the maker's wording; a part with no `protocol` gets
+one from a statement in its name or notes ("DSMR Transmitter", "2.4GHz
+Protocol: ANT"). Accessories named after a protocol (telemetry sensors,
+modules, antennas) are not linked. tools/link_protocol_specs.py writes both
+(definitions in hobbydex-tools tools/protocol_specs.toml).
 
 ### Connector specs
 
