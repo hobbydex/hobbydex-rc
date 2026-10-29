@@ -6,6 +6,8 @@ pack_qty = 4
 fits = [
   { kit = "kit/awesomatix/a800fxr", type = "direct", source = "doc/awesomatix/shop-category-635" },
   { kit = "kit/awesomatix/a800r", type = "direct", source = "doc/awesomatix/shop-category-622" },
+  { kit = "kit/awesomatix/a800fxr", type = "replaces", replaces = "part/awesomatix/ST24", source = "doc/awesomatix/shop-category-635", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/awesomatix/a800r", type = "replaces", replaces = "part/awesomatix/ST24", source = "doc/awesomatix/shop-category-622", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Awesomatix", url = "https://shop.awesomatix.com/index.php?productID=1930" },
