@@ -5,9 +5,6 @@ name = "E-Clip 4mm"
 name_source = "manual"
 notes = "Name from FTX's replacement parts list (Futura manual, page 15)"
 category = "clip"
-includes = [
-  { spec = "spec/bearing/8x16x5", notes = "Size from this item's words in the manufacturer's name" },
-]
 documents = ["doc/ftx/cml-futura-manual"]
 equivalent_to = [
   { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },

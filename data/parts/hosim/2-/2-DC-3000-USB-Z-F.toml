@@ -27,7 +27,8 @@ c_rating = 15
 links = [
   { site = "Hosim", url = "https://www.hosim.com/products/rc-car-battery-7-4v-15c-3000mah-lipo-battery-2pcs-with-charger-bag-starp" },
 ]
-category = "tool"
-includes = [
-  { spec = "spec/battery/lipo-2s-3000mah", notes = "Size from the name; the count is not stated" },
+category = "battery"
+category_source = "curated"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3000mah", match = "functional", source = "doc/hosim/store", notes = "Chemistry, cells and capacity from the store title; check size and plug" },
 ]

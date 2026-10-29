@@ -397,6 +397,82 @@ def diff_assemblies(release, part_of):
                if c.get("role") == "kit" and complete_diff(part_of.get(c["part"], {})))
 
 
+# spec-mismatch: a spec link (equivalent_to, or includes) whose spec family the part's category or name does not carry.
+# A family's words are the ones a name uses for that kind of item; a link with a source (a page the maker or a store
+# gave) is checked by its category only. A part's includes row for a family its category takes as an accessory is fine
+# (a pinion with its set screws, a differential with its pins); any other family needs the name to name it.
+SPEC_FAMILY_WORDS = {
+    "bearing": r"bearings?|bush(?:ings?|es)?|busings?", "screw": r"screws?|bolts?|cap ?heads?|button ?heads?",
+    "nut": r"nuts?", "washer": r"washers?|shims?|spacers?|collars?", "pin": r"pins?|shafts?|dowels?",
+    "pinion": r"pinions?|gears?", "eclip": r"e-?clips?|e-?rings?|din ?6799", "circlip": r"c-?clips?|circlips?|seger|snap rings?",
+    "ball-end": r"balls?|studs?|ball ?ends?|ball ?joints?", "o-ring": r"o-?rings?|gaskets?", "motor": r"motors?",
+    "battery": r"batter(?:y|ies)|lipo|li-?po|nimh|packs?", "servo": r"servos?", "oil": r"oils?|grease|silicone",
+    "wire": r"wires?|cables?|leads?", "connector": r"connectors?|plugs?|jst|xt\d*|ec\d|deans|bullets?|t-?plugs?|banana|xh|jr",
+    "wheel-hex": r"hex(?:es)?|wheels?|tyres?|tires?|hubs?|axles?|rims?",
+}
+# the spec families a part of each category may hold as includes (its accessories); every other family needs its name
+SPEC_INCLUDE_ACCESSORIES = {
+    "gear": {"bearing", "pin", "screw", "washer", "nut", "o-ring", "eclip", "circlip"},
+    "spur-gear": {"pin", "screw", "washer", "nut", "bearing"}, "pinion": {"screw", "pin", "washer"},
+    "differential": {"bearing", "pin", "screw", "washer", "nut", "o-ring", "eclip", "circlip", "oil"},
+    "drivetrain": {"bearing", "pin", "screw", "nut", "washer", "o-ring", "eclip", "circlip", "oil"},
+    "steering": {"bearing", "screw", "nut", "washer", "ball-end", "pin", "eclip"},
+    "bumper-guard": {"bearing", "screw", "nut", "washer"}, "body": {"screw", "nut", "washer", "pin", "eclip", "o-ring", "wire", "connector"},
+    "body-accessory": {"screw", "nut", "washer", "pin", "eclip", "o-ring"}, "wing": {"screw", "nut", "washer"},
+    "screw": {"washer", "nut"}, "nut": {"screw", "washer"}, "pin": {"screw"}, "washer-shim": {"screw", "nut", "pin", "washer"},
+    "ball-end": {"nut", "screw", "washer", "ball-end"}, "clip": {"eclip", "circlip", "screw", "washer"},
+    "shock": {"screw", "nut", "washer", "o-ring", "ball-end", "oil"}, "motor": {"screw", "wire", "connector", "pinion", "washer", "nut", "o-ring"},
+    "esc": {"connector", "wire", "screw"}, "servo": {"screw", "connector", "wire", "washer", "nut", "pinion"},
+    "charger": {"connector", "wire", "screw"}, "battery": {"connector", "wire", "screw"}, "radio": {"battery", "connector", "wire", "screw"},
+    "chassis": {"bearing", "screw", "nut", "washer", "pin", "o-ring", "eclip", "circlip", "ball-end"},
+    "suspension": {"bearing", "screw", "nut", "washer", "pin", "o-ring", "eclip", "circlip", "ball-end", "oil"},
+    "wheel": {"bearing", "screw", "nut", "washer", "wheel-hex"}, "tire": {"screw", "nut", "washer", "wheel-hex"},
+    "light": {"screw", "wire", "connector", "washer", "nut"}, "cooling": {"screw", "nut", "washer", "wire", "connector"},
+}
+SPEC_DEFAULT_ACCESSORIES = {"screw", "nut", "washer"}   # any other category: fasteners it comes with
+# the spec families a part of each category may be equivalent_to (validate.py's SPEC_PART_CATS, by family)
+SPEC_EQUIVALENT_CATS = {
+    "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
+    "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
+    "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
+    "ball-end": {"ball-end"}, "o-ring": {"o-ring-seal"},
+    "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},
+}
+
+
+SPEC_KIT_NAME = re.compile(r"\b(?:rebuild|repair|maintenance|conversion)\b")
+
+
+def spec_mismatches(parts):
+    """[(part id, field, spec id, reason)] for the spec links the part's category or name does not carry.
+
+    equivalent_to: the family must be one the category holds (validate.py), and a rebuild or repair kit (its name
+    says kit, set, rebuild) is never equivalent to the spec of the motor, screw or bearing it works on. includes: the
+    family must be the part's own kind or an accessory its category comes with (a pinion with its set screws, a
+    differential with its pins); a name that names another kind (a "MOTOR" on a decal) fails the category. A row with
+    a source is checked by category only: the maker or store said it.
+    """
+    out = []
+    for p in parts:
+        name, cat = (p.get("name") or "").lower(), p.get("category")
+        for field in ("equivalent_to", "includes"):
+            for row in p.get(field) or []:
+                bits = str(row.get("spec", "")).split("/")
+                fam = bits[1] if len(bits) >= 3 else None
+                if fam is None or cat is None or fam not in SPEC_FAMILY_WORDS or (field == "equivalent_to" and fam not in SPEC_EQUIVALENT_CATS):
+                    continue
+                own = cat in SPEC_EQUIVALENT_CATS.get(fam, ())
+                named = re.search(r"(?<![a-z])(?:%s)(?![a-z])" % SPEC_FAMILY_WORDS[fam], name) is not None
+                if field == "equivalent_to":
+                    if not own:
+                        out.append((p["id"], field, row["spec"], f"a {fam} spec on a {cat}"))
+                    elif "source" not in row and SPEC_KIT_NAME.search(name) and not named:
+                        out.append((p["id"], field, row["spec"], f"a {fam} spec on a kit that is not a {fam}"))
+                elif not own and "source" not in row and fam not in SPEC_INCLUDE_ACCESSORIES.get(cat, SPEC_DEFAULT_ACCESSORIES):
+                    out.append((p["id"], field, row["spec"], f"a {fam} include on a {cat}"))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--tools", default=os.path.join(RC, "..", "hobbydex-tools"))
@@ -874,6 +950,10 @@ def main():
 
     # 26. unnamed parts and cheap structural gaps (kept from the old audit)
     check("part-named-by-number", "give the part its name from the maker's parts list", [p for p in parts if p["name"] == p.get("number")])
+    # 26d. spec links the part's category or name does not carry (spec_mismatches): a bearing on a clip, a motor on a rebuild kit
+    mism = spec_mismatches(parts)
+    check("spec-mismatch", "remove the spec link (or fix the part's category or name, then link the spec its name gives): the link's family is not the part's kind; see the linker in the rows' notes",
+          sorted({m[0] for m in mism}), count=len({m[0] for m in mism}), rows=[{"id": i, "field": f, "spec": sp, "why": w} for i, f, sp, w in mism][:200])
     check("release-no-contents", "read the release's parts list into contains (or note there is none)", [r for r in rels if not r.get("contains")])
     used_specs = {e["spec"] for p in parts for e in p.get("equivalent_to", [])}
     check("spec-unlinked", "link a part to the spec, or retire the spec", [s for s in db["specs"] if s["id"] not in used_specs])
