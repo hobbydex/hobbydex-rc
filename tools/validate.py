@@ -87,7 +87,7 @@ ENUMS = {
     "part.thickness_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.width_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
-    "part.category_source": {"curated"},
+    "part.category_source": {"curated", "fallback"},   # fallback: misc, a part no rule places (docs/schema.md "category")
     "part.seal": {"open", "metal", "rubber", "rubber-metal"},
     "part.insulation": {"silicone", "pvc", "teflon"},   # wire parts (docs/schema.md "Wires")
     "part.lubricant": {"oil", "grease"},
@@ -399,6 +399,16 @@ def check_former_names(docs, errors):
         if kind == "part":
             for n in former_names_problems(d, brand_names.get(d.get("brand"), "")):
                 errors.append(f"{path}: former name {n!r} is the part's name again (a pack count, a set number, the brand word or a catalogue number) or listed twice; a former name is a different name the maker published (docs/schema.md \"part\")")
+
+def check_part_category(docs, errors):
+    """Every part has a category (docs/schema.md "category"); a part no rule places is the fallback: misc with category_source "fallback"."""
+    for path, kind, d in docs:
+        if kind != "part":
+            continue
+        if not d.get("category"):
+            errors.append(f"{path}: a part has no category; every part needs one (a part no rule places is misc with category_source = \"fallback\")")
+        elif d.get("category_source") == "fallback" and d["category"] != "misc":
+            errors.append(f"{path}: category_source \"fallback\" goes with category misc, not {d['category']}")
 
 def check_dealer_links(docs, errors):
     """A dealer link (a links entry with kind "dealer", a reseller's product page) is a fallback: a release or part
@@ -1229,6 +1239,7 @@ def main():
     check_receiver_plugs(docs, ids, errors)
     check_names_no_brand(docs, errors)
     check_former_names(docs, errors)
+    check_part_category(docs, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:

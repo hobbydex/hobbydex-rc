@@ -26,8 +26,8 @@ def main():
             sys.exit(f"audit.py exited {run.returncode}")
         with open(out, encoding="utf-8") as f:
             result = json.load(f)
-    if "part-no-category" not in result:
-        sys.exit("audit.py wrote no part-no-category check (the data checks did not run)")
+    if "part-category-fallback" not in result:
+        sys.exit("audit.py wrote no part-category-fallback check (the data checks did not run)")
     print(f"audit.py on the data: peak {peak // 1024} MB (limit {LIMIT_KB // 1024} MB), {len(result)} checks")
     if peak > LIMIT_KB:
         sys.exit(f"peak memory {peak // 1024} MB is over the {LIMIT_KB // 1024} MB limit")

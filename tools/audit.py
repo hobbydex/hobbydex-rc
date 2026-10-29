@@ -639,9 +639,9 @@ def main():
               [p for p in multi_parts if whole_part_fastener(p) or whole_part_material(p)])
     else:
         results["multi-item-whole-part"] = {"fix": "hobbydex-tools tools/multi_item.py not found (--tools)", "count": None, "examples": [], "all": []}
-    # 11b. parts with no category: a name the classifier knows gets one (classify_parts.py --fill); a bare code stays uncategorised
-    check("part-no-category", "run tools/classify_parts.py --fill in hobbydex-tools, or add the name's words to its rules",
-          [p for p in parts if not p.get("category") and p.get("category_source") != "curated" and p["name"] != (p.get("number") or "")])
+    # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
+    check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
+          [p for p in parts if p.get("category_source") == "fallback"])
 
     # 11c. a colour word in the name that the part has no color for (tools/link_part_colours.py)
     if tools["colour"]:
