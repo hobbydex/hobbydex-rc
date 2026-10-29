@@ -11,3 +11,7 @@ kind = "kit"
 power = "nitro"
 power_source = "curated"
 documents = ["doc/kyosho/31010-product-page", "doc/kyosho/31010-hs01-kf01-t90-type-3-bs", "doc/kyosho/31010-kf01-parts-list-v01"]
+contains = [
+  { part = "part/kyosho/KFB003", role = "listed", source = "doc/kyosho/31010-hs01-kf01-t90-type-3-bs" },
+  { part = "part/kyosho/KFD004", role = "listed", source = "doc/kyosho/31010-hs01-kf01-t90-type-3-bs" },
+]
