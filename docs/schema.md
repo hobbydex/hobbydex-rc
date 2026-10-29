@@ -187,12 +187,13 @@ re-release. Keyed by manufacturer item number when there is one, otherwise by a
 slug (`xb4-2013`, `xb8e-2021`). `status` is
 announced | released | discontinued. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
-`kind` (optional: left out when no source states the build) is the build the buyer gets, one of kit | rtr | arr | roller:
+`kind` (optional: left out when no source states the build) is the build the buyer gets, one of kit | rtr | arr | roller | print:
 
 - `kit`: built by the buyer; the electronics are usually bought separately.
 - `rtr` (ready to run): built and complete, radio included, often battery and charger.
 - `arr` (almost ready to run): built, without radio and sometimes without battery. PNP (plug and play) is `arr`.
 - `roller`: a built chassis without electronics (and usually without body), as some makers sell it (Axial, Element, Losi, Team Associated "roller" or "rolling chassis").
+- `print` (3D print): the maker sells files you print yourself (a printable set, 3D Sets); the buyer supplies the printer, and the electronics, screws and tyres are usually bought separately. A hardware set sold for a printed car stays its own part or release.
 
 tools/validate.py rejects any other value.
 
