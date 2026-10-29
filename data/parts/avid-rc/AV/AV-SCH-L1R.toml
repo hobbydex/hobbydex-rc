@@ -17,6 +17,9 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Schumacher CAT L1R"
+fits = [
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Schumacher CAT L1R (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Rubber, Revolution, Revolution | Aura, Metal, Ceramic Metal | Aura, Metal | Clutch, Ceramic Revolution, Ceramic Metal, Revolution (not Clutch), Metal (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch) (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/4000/CAT-L1R" },
