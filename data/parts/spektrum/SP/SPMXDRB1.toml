@@ -1,0 +1,17 @@
+id = "part/spektrum/SPMXDRB1"
+brand = "brand/spektrum"
+number = "SPMXDRB1"
+name = "7.4V 4000mAh 2S 130C Smart No Prep Drag LiPo Battery: IC5"
+gtin = "605482178157"
+links = [
+  { site = "Losi", url = "https://www.losi.com/product/spektrum-7.4v-4000mah-2s-130c-smart-no-prep-drag-lipo-battery-ic5/SPMXDRB1.html", kind = "dealer" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 4000
+c_rating = 130
+voltage = 7.4
