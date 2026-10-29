@@ -1,13 +1,16 @@
 id = "part/xray/364024"
 brand = "brand/xray"
 number = "364024"
-name = "ALU CENTRAL BULKHEAD - LOW"
+name = "ALU CENTRAL BULKHEAD"
 links = [
   { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6531" },
 ]
-former_names = ["ALU CENTRAL BULKHEAD"]
+former_names = ["ALU CENTRAL BULKHEAD - LOW"]
 category = "chassis"
 material = "aluminium"
 fits = [
+  { kit = "kit/xray/xb4", type = "replaces", replaces = "part/xray/364020", source = "doc/xray/xb4-2023-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/xb4", type = "replaces", replaces = "part/xray/364022", source = "doc/xray/xb4-2023-part-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/xray/xb4", type = "replaces", replaces = "part/xray/364023", source = "doc/xray/xb4-2023-part-list", notes = "Same part in another material (link_upgrades.py)" },
 ]
+documents = ["doc/xray/xb4-2018-part-list", "doc/xray/xb4-2019-part-list", "doc/xray/xb4-2020-part-list", "doc/xray/xb4-2021-part-list", "doc/xray/xb4-2022-part-list", "doc/xray/xb4-2023-part-list", "doc/xray/xb4-2024-part-list", "doc/xray/xb4-2025-part-list", "doc/xray/xt4-2023-part-list", "doc/xray/xt4-2025-part-list"]

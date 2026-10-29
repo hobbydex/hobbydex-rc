@@ -1,13 +1,13 @@
 id = "part/xray/950812"
 brand = "brand/xray"
 number = "950812"
-name = "BALL-BEARING 8x12x3.5 FLANGED - STEEL SEALED - OIL"
+name = "BALL-BEARING 8x12x3.5 FLANGED"
 links = [
   { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4988" },
 ]
 pack_qty = 2
 pack_qty_basis = "manual"
-former_names = ["BALL-BEARING 8x12x3.5 FLANGED"]
+former_names = ["BALL-BEARING 8x12x3.5 FLANGED - STEEL SEALED - OIL"]
 equivalent_to = [
   { spec = "spec/bearing/flanged-8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
@@ -15,3 +15,4 @@ material = "steel"
 seal = "metal"
 lubricant = "oil"
 category = "bearing"
+documents = ["doc/xray/rx8-2014-part-list", "doc/xray/rx8-2017-part-list", "doc/xray/rx8-2018-part-list", "doc/xray/rx8-2023-part-list", "doc/xray/rx8-2026-part-list", "doc/xray/rx8e-2023-part-list"]

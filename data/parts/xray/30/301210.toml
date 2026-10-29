@@ -1,10 +1,14 @@
 id = "part/xray/301210"
 brand = "brand/xray"
 number = "301210"
-name = "CARBON BUMPER UPPER HOLDER FOR ADJUSTABLE BODY MOUNTS 2.5MM"
+name = "GRAPHITE UPPER HOLDER FOR ADJUSTABLE BODY MOUNTS 2.5mm"
 links = [
   { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6986" },
 ]
-former_names = ["GRAPHITE UPPER HOLDER FOR ADJUSTABLE BODY MOUNTS 2.5mm", "GRAPHITE BUMPER UPPER HOLDER FOR BODY MOUNTS 2.5MM", "GRAPHITE BUMPER UPPER HOLDER FOR ADJ. BODY MOUNTS 2.5MM", "GRAPHITE BUMPER UPPER HOLDER 2.5MM", "GRAPHITE BUMPER UPPER HOLDER FOR ADJUSTABLE BODY MOUNTS 2.5MM"]
-category = "chassis"
+former_names = ["GRAPHITE BUMPER UPPER HOLDER FOR BODY MOUNTS 2.5MM", "GRAPHITE BUMPER UPPER HOLDER FOR ADJ. BODY MOUNTS 2.5MM", "GRAPHITE BUMPER UPPER HOLDER 2.5MM", "GRAPHITE BUMPER UPPER HOLDER FOR ADJUSTABLE BODY MOUNTS 2.5MM", "CARBON BUMPER UPPER HOLDER FOR ADJUSTABLE BODY MOUNTS 2.5MM"]
+category = "body-accessory"
 material = "carbon"
+documents = ["doc/xray/t4-2019-part-list", "doc/xray/t4-2020-part-list", "doc/xray/t4-2021-part-list", "doc/xray/x4-2022-part-list", "doc/xray/x4-2023-part-list", "doc/xray/x4-2024-part-list", "doc/xray/x4f-2023-part-list", "doc/xray/x4f-2024-part-list", "doc/xray/x4f-2025-part-list", "doc/xray/x4f-2026-part-list"]
+fits = [
+  { kit = "kit/xray/x4", type = "replaces", replaces = "part/xray/301219", source = "doc/xray/x4-2023-part-list", notes = "Same part in another material (link_upgrades.py)" },
+]
