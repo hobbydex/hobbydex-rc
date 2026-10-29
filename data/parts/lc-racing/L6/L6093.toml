@@ -7,6 +7,7 @@ applies_to = "EMB-1, EMB-MT"
 fits = [
   { kit = "kit/lc-racing/emb-1", type = "direct", source = "doc/lc-racing/l6093-product-page" },
   { kit = "kit/lc-racing/emb-mt", type = "direct", source = "doc/lc-racing/l6093-product-page" },
+  { kit = "kit/lc-racing/emb-1", type = "replaces", replaces = "part/lc-racing/L6029", source = "doc/lc-racing/l6093-product-page", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "carbon"

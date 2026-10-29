@@ -10,6 +10,9 @@ material = "aluminium"
 pack_qty = 2
 fits = [
   { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401", type = "replaces", replaces = "part/pr-racing/68000040", source = "doc/pr-racing/pr-rc-com", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/pr-racing/sb401", type = "replaces", replaces = "part/pr-racing/68440010", source = "doc/pr-racing/pr-rc-com", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/pr-racing/sb401", type = "replaces", replaces = "part/pr-racing/90440010", source = "doc/pr-racing/pr-rc-com", notes = "Same part in another material (link_upgrades.py)" },
 ]
 applies_to = "PR SB401-LW 4wd"
 documents = ["doc/pr-racing/pr-rc-com"]

@@ -8,6 +8,7 @@ pack_qty = 2
 pack_qty_basis = "page"
 fits = [
   { kit = "kit/serpent/f190", type = "replaces", source = "doc/serpent/f190-options" },
+  { kit = "kit/serpent/f190", type = "replaces", replaces = "part/serpent/302035", source = "doc/serpent/f190-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser302064" },

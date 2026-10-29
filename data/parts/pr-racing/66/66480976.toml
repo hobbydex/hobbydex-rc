@@ -7,6 +7,7 @@ material = "steel"
 pack_qty = 2
 fits = [
   { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401-t", type = "replaces", replaces = "part/pr-racing/66480356", source = "doc/pr-racing/pr-rc-com", notes = "Same part in another material (link_upgrades.py)" },
 ]
 applies_to = "10TH SB401-R-T-SPORT TRUCK"
 documents = ["doc/pr-racing/pr-rc-com"]

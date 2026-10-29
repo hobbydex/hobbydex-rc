@@ -6,6 +6,7 @@ seen_by = "2017-10-27"
 seen_by_source = "https://web.archive.org/web/20171027115551/http://serpent.com:80/product/600957/"
 fits = [
   { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8-e-pro-options" },
+  { kit = "kit/serpent/srx8e", type = "replaces", replaces = "part/serpent/600947", source = "doc/serpent/srx8-e-pro-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser600957" },

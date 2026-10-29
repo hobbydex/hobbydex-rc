@@ -11,6 +11,8 @@ links = [
 fits = [
   { kit = "kit/maverick/quantum2-mt", type = "direct", source = "doc/maverick/part-pages" },
   { kit = "kit/maverick/quantum2-xt", type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantum2-mt", type = "replaces", replaces = "part/maverick/150433", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/quantum2-xt", type = "replaces", replaces = "part/maverick/150433", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "drivetrain"
 equivalent_to = [

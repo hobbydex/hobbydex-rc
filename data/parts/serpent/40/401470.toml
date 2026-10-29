@@ -8,6 +8,7 @@ pack_qty = 2
 pack_qty_basis = "page"
 fits = [
   { kit = "kit/serpent/s411", type = "replaces", source = "doc/serpent/s411-team-options" },
+  { kit = "kit/serpent/s411", type = "replaces", replaces = "part/serpent/401394", source = "doc/serpent/s411-team-options", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser401470" },

@@ -8,6 +8,8 @@ pack_qty = 1
 fits = [
   { kit = "kit/pr-racing/sb401", type = "direct", source = "doc/pr-racing/pr-rc-com" },
   { kit = "kit/pr-racing/sb401-t", type = "direct", source = "doc/pr-racing/pr-rc-com" },
+  { kit = "kit/pr-racing/sb401", type = "replaces", replaces = "part/pr-racing/68480326", source = "doc/pr-racing/pr-rc-com", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/pr-racing/sb401-t", type = "replaces", replaces = "part/pr-racing/68480326", source = "doc/pr-racing/pr-rc-com", notes = "Same part in another material (link_upgrades.py)" },
 ]
 applies_to = "PR SB401-Type R 4wd; 10TH SB401-R-T-SPORT TRUCK"
 documents = ["doc/pr-racing/pr-rc-com"]
