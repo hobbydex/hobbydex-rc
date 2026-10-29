@@ -85,6 +85,8 @@ ENUMS = {
     # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
     "part.pack_qty_basis": {"name", "page", "includes", "manual", "photo", "photos", "owner"},
     # where a shell's thickness_mm or a body's width_mm came from (docs/schema.md, bodies)
+    # why a part is universal (docs/schema.md "part", universal): the maker says so; the category is inherently universal; sold by size or spec
+    "part.universal_basis": {"maker", "category", "size"},
     "part.thickness_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.width_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
@@ -837,6 +839,13 @@ def main():
                 errors.append(f"{path}: archive link {u!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>")
             if isinstance(l, dict) and "gone" in l and not (isinstance(l["gone"], str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", l["gone"])):
                 errors.append(f"{path}: link gone = {l['gone']!r} should be the day the page answered 404 or 410, \"YYYY-MM-DD\"")
+        if kind == "part" and ("universal" in d or "universal_basis" in d):
+            if d.get("universal") is not True:
+                errors.append(f"{path}: universal is true or left out")
+            elif "universal_basis" not in d:
+                errors.append(f"{path}: universal needs a universal_basis (maker, category or size)")
+            elif d.get("applies_to"):
+                errors.append(f"{path}: a part that names the model it is for (applies_to) is not universal")
         if kind == "part" and "pack_qty_basis" in d and not (isinstance(d.get("pack_qty"), int) and d["pack_qty"] >= 1):
             errors.append(f"{path}: pack_qty_basis needs a pack_qty (a whole number, 1 or more)")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
