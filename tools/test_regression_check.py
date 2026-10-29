@@ -33,7 +33,7 @@ class SeenBy(unittest.TestCase):
         return [e for e in ck.events if e["field"] == "seen_by"]
 
     def test_earlier_first_sighting_is_not_a_regression(self):
-        for old, new in (("2023-03", "2023-02"), ("2019-07-07", "2019-05"), ("2026-10", "2022-04-18")):
+        for old, new in (("2023-03", "2023-02"), ("2019-07-07", "2019-05"), ("2026-10", "2022-04-18"), ("2022", "2022-03")):
             ev = self.events(old, new)
             self.assertEqual([e["regression"] for e in ev], [False], (old, new))
 

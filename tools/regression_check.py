@@ -53,6 +53,12 @@ CONVENTION = {"material": {"unknown"}}   # placeholder values, never a stated fa
 # keys that name a row, in the order they are tried; rows are paired by them when their content changed
 IDENT_KEYS = ("url", "kit", "spec", "part", "release", "doc", "brand", "item", "site", "name", "text", "role", "relation")
 MISSING = object()
+
+
+def bound_end(v):
+    """The last month a seen_by allows: a bare year counts as its December."""
+    return v[:7] if len(v) >= 7 else v[:4] + "-12"
+
 # link_upgrades.py (hobbydex-tools) derives a fits row {kit, type = "replaces", replaces, source, notes = LINK_NOTE}
 # for an upgrade part; the rules below are copied from it and must stay the same
 LINK_NOTE = "Same part in another material (link_upgrades.py)"
@@ -317,7 +323,8 @@ class Check:
                 if k == "notes" and isinstance(ov, str) and isinstance(nv, str) and nv.startswith(ov.rstrip(". ")):
                     self.event(kind, rid, k, "changed", ov, nv, False, "note kept, text added")
                     continue
-                if k == "seen_by" and isinstance(ov, str) and isinstance(nv, str) and nv < ov:
+                if k == "seen_by" and isinstance(ov, str) and isinstance(nv, str) and (nv < ov or bound_end(nv) < bound_end(ov)):
+                    # (a year refined to a month of that year is an earlier bound too)
                     # seen_by is the first day the maker had the item on its pages: an earlier capture lowers it (user,
                     # 2026-10-28: "any time we go to archive.org we should adjust all first seen dates"); never a loss
                     self.event(kind, rid, k, "changed", ov, nv, False, "seen_by lowered: an earlier first sighting")
