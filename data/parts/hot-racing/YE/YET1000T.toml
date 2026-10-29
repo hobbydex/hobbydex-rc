@@ -1,0 +1,13 @@
+id = "part/hot-racing/YET1000T"
+brand = "brand/hot-racing"
+number = "YET1000T"
+name = "2 Speed Steel Gear Set Yeti RR10"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/yet1000t-2-speed-steel-gear-set-yeti-rr10", kind = "maker" },
+]
+category = "gear"
+material = "steel"
+fits = [
+  { kit = "kit/axial/bomber", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/axial/yeti", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

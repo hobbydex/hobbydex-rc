@@ -1,0 +1,13 @@
+id = "part/hot-racing/SCP38ST05"
+brand = "brand/hot-racing"
+number = "SCP38ST05"
+name = "Complete Steel Gear Transmission Gearbox - AX10 SCX10"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/scp38st05-complete-steel-gear-transmission-gearbox-ax10-scx10", kind = "maker" },
+]
+category = "gear"
+material = "steel"
+fits = [
+  { kit = "kit/axial/ax10", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/axial/scx10", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

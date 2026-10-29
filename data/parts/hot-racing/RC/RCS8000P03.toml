@@ -1,0 +1,14 @@
+id = "part/hot-racing/RCS8000P03"
+brand = "brand/hot-racing"
+number = "RCS8000P03"
+name = "Aluminum Orange 4-Link Set - Axial Wraith and Ax10 Ridgecrest"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/rcs8000p03-aluminum-orange-4-link-set-axial-wraith-and-ax10-ridgecrest", kind = "maker" },
+]
+category = "suspension"
+color = "orange"
+material = "aluminium"
+fits = [
+  { kit = "kit/axial/ax10", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

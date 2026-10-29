@@ -1,0 +1,12 @@
+id = "part/hot-racing/SXTF133SX30"
+brand = "brand/hot-racing"
+number = "SXTF133SX30"
+name = "SCX30 transmission adapter mount for the SCX24"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/sxtf133sx30-scx30-tran-mount-scx24", kind = "maker" },
+]
+category = "chassis"
+fits = [
+  { kit = "kit/axial/scx24", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/axial/scx30", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

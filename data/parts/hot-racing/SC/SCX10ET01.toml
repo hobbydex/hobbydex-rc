@@ -1,0 +1,16 @@
+id = "part/hot-racing/SCX10ET01"
+brand = "brand/hot-racing"
+number = "SCX10ET01"
+name = "18mm Wheel Hub Extensions with 12mm Hex (2) - Axial Scx Wraith"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/scx10et01-18mm-wheel-hub-extensions-with-12mm-hex-2-axial-scx-wraith", kind = "maker" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "drivetrain"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+fits = [
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

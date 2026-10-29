@@ -9,3 +9,6 @@ category = "wheel"
 fits = [
   { kit = "kit/tlr/22", type = "replaces", source = "doc/hot-racing/store", notes = "Listed for the Team Losi Racing 22 series (link_car_kits.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

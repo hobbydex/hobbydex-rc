@@ -1,0 +1,16 @@
+id = "part/hot-racing/AXTF221HAW"
+brand = "brand/hot-racing"
+number = "AXTF221HAW"
+name = "Modular Brass Spindle weight for AXTF21HAW AX24 SCX24"
+links = [
+  { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/axtf221haw-modular-brass-knuckle-weight-for-axtf21haw-ax24-scx24", kind = "maker" },
+]
+category = "chassis"
+material = "brass"
+related = [
+  { part = "part/hot-racing/AXTF21HAW", relation = "for", notes = "link_part_refs" },
+]
+fits = [
+  { kit = "kit/axial/ax24", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/axial/scx24", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
