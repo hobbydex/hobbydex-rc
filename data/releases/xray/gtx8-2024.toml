@@ -10,7 +10,7 @@ status = "released"
 seen_by = "2026-10"
 seen_by_source = "https://teamxray.com/gtx8/2024/"
 supersedes = "release/xray/gtx8-2023"
-documents = ["doc/xray/gtx8-2024-manual", "doc/xray/gtx8-2024-part-list", "doc/xray/gtx8-2024-setup-sheet-2", "doc/xray/gtx8-2024-setup-sheet", "doc/xray/gtx8-2024-product-page"]
+documents = ["doc/xray/gtx8-2024-manual", "doc/xray/gtx8-2024-part-list", "doc/xray/gtx8-2024-setup-sheet-2", "doc/xray/gtx8-2024-setup-sheet", "doc/xray/gtx8-2024-product-page", "doc/xray/gtx8-2023-part-list"]
 contains = [
   { part = "part/hudy/104005", role = "listed", source = "doc/xray/gtx8-2024-part-list" },
   { part = "part/hudy/104140", role = "listed", source = "doc/xray/gtx8-2024-part-list" },
@@ -623,5 +623,6 @@ contains = [
   { part = "part/xray/980317", role = "kit", source = "doc/xray/gtx8-2024-manual" },
   { part = "part/xray/981310", role = "kit", source = "doc/xray/gtx8-2024-manual" },
   { part = "part/xray/983404", role = "kit", source = "doc/xray/gtx8-2024-manual" },
+  { part = "part/xray/107871", role = "listed", source = "doc/xray/gtx8-2023-part-list" },
 ]
 notes = "Sold as 350505 (GTX'24), 350505-C (GTX'24 + FX G501 Tuned Combo) (teamxray.com product list)."
