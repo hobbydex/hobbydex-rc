@@ -2,6 +2,8 @@ id = "part/redcat/510111"
 brand = "brand/redcat"
 number = "510111"
 name = "Outdrive Cup(Center)"
+seen_by = "2020-09-25"
+seen_by_source = "https://web.archive.org/web/20200925165013/https://dealer.redcatracing.com/manuals/TRMT10EMANUAL.pdf"
 gtin = "611901529097"
 pack_qty = 2
 pack_qty_basis = "page"
@@ -11,6 +13,6 @@ links = [
 ]
 fits = [
   { kit = "kit/redcat/rc-mt10e", type = "direct", source = "doc/redcat/store" },
-  { kit = "kit/redcat/tr-mt10e", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/tr-mt10e", type = "direct", source = "doc/redcat/store" },
 ]
 category = "drivetrain"

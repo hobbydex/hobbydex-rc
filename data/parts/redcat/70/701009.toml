@@ -2,8 +2,8 @@ id = "part/redcat/701009"
 brand = "brand/redcat"
 number = "701009"
 name = "Aluminum Electronics Tray"
-seen_by = "2022-08-16"
-seen_by_source = "https://www.redcatracing.com/products/701009"
+seen_by = "2021-01-28"
+seen_by_source = "https://web.archive.org/web/20210128140322/https://dealer.redcatracing.com/manuals/DUKONO-DUKONOPRO_MANUAL.pdf"
 gtin = "843335101260"
 pack_qty = 1
 pack_qty_basis = "page"
@@ -13,6 +13,7 @@ links = [
 ]
 fits = [
   { kit = "kit/redcat/dukono", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/dukono", type = "replaces", replaces = "part/redcat/70118", source = "doc/redcat/store", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "aluminium"
 category = "chassis"
