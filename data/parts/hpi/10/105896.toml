@@ -8,8 +8,8 @@ links = [
 fits = [
   { kit = "kit/hpi/savage", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/savage-x", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/savage", type = "direct", replaces = "part/hpi/86069", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/savage-x", type = "direct", replaces = "part/hpi/86069", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/savage", type = "replaces", replaces = "part/hpi/86069", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/savage-x", type = "replaces", replaces = "part/hpi/86069", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 color = "orange"
 category = "chassis"

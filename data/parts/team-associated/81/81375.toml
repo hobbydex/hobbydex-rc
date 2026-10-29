@@ -10,5 +10,5 @@ links = [
 ]
 fits = [
   { kit = "kit/team-associated/rc8t4", type = "direct", source = "doc/team-associated/store" },
-  { kit = "kit/team-associated/rc8t4", type = "direct", replaces = "part/team-associated/81402", source = "doc/team-associated/store", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/team-associated/rc8t4", type = "replaces", replaces = "part/team-associated/81402", source = "doc/team-associated/store", notes = "Same part in another material (link_upgrades.py)" },
 ]

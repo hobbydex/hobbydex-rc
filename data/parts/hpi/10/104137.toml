@@ -8,7 +8,7 @@ links = [
 fits = [
   { kit = "kit/hpi/blitz", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/103375" },
-  { kit = "kit/hpi/blitz", type = "direct", replaces = "part/hpi/103375", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/blitz", type = "replaces", replaces = "part/hpi/103375", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "drivetrain"
 material = "titanium"

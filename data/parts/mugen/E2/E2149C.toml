@@ -6,7 +6,7 @@ fits = [
   { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
   { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
   { kit = "kit/mugen/mbx8", type = "replaces", replaces = "part/mugen/E2149", source = "doc/mugen/rcteam-mbx8", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", replaces = "part/mugen/E2149", source = "doc/mugen/mbx8tr-eco-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/mbx8t-eco", type = "replaces", replaces = "part/mugen/E2149", source = "doc/mugen/mbx8tr-eco-part-list", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "RC Team", url = "https://www.rcteam.com/en/products/mugen-lower-arm-mounting-bracket-alu-x8-e2149a", kind = "dealer" },

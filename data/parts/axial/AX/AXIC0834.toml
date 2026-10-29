@@ -17,6 +17,6 @@ fits = [
   { kit = "kit/axial/smt10", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/axial/wraith", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/axial/yeti", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/axial/scx10-iii", type = "direct", replaces = "part/axial/AXI-3980", source = "doc/axial/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/axial/scx10-iii", type = "replaces", replaces = "part/axial/AXI-3980", source = "doc/axial/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 spline_teeth = 23

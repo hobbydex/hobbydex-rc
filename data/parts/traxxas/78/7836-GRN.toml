@@ -11,7 +11,7 @@ range = "traxxas/7836-colours"
 fits = [
   { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/traxxas/77096-4-parts-list" },
   { kit = "kit/traxxas/x-monster", type = "replaces", replaces = "part/traxxas/7836", source = "doc/traxxas/77036-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/traxxas/xrt", type = "direct", replaces = "part/traxxas/7836", source = "doc/traxxas/78086-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/xrt", type = "replaces", replaces = "part/traxxas/7836", source = "doc/traxxas/78086-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/7836-grn-green-aluminum-steering-blocks-lr" },

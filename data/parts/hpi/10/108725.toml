@@ -7,8 +7,8 @@ links = [
 ]
 fits = [
   { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/baja-5b", type = "direct", replaces = "part/hpi/87418", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/baja-5b", type = "direct", replaces = "part/hpi/87483", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/baja-5b", type = "replaces", replaces = "part/hpi/87418", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/baja-5b", type = "replaces", replaces = "part/hpi/87483", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "aluminium"

@@ -9,9 +9,9 @@ material_grade = "6061-T6"
 color = "green"
 range = "traxxas/7832-colours"
 fits = [
-  { kit = "kit/traxxas/x-maxx", type = "direct", replaces = "part/traxxas/7732", source = "doc/traxxas/77096-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/x-maxx", type = "replaces", replaces = "part/traxxas/7732", source = "doc/traxxas/77096-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/traxxas/x-monster", type = "replaces", replaces = "part/traxxas/7832", source = "doc/traxxas/77036-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/traxxas/xrt", type = "direct", replaces = "part/traxxas/7832", source = "doc/traxxas/78086-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/traxxas/xrt", type = "replaces", replaces = "part/traxxas/7832", source = "doc/traxxas/78086-4-parts-list", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Traxxas", url = "https://traxxas.com/7832-grn-green-aluminum-caster-blocks-lr" },

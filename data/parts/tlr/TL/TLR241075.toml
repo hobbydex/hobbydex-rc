@@ -10,7 +10,7 @@ former_names = ["Chassis Rib Brace,Alum"]
 category = "chassis"
 fits = [
   { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/tlr/horizon-part-pages" },
-  { kit = "kit/tlr/8ight-x", type = "direct", replaces = "part/tlr/TLR241054", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/8ight-x", type = "replaces", replaces = "part/tlr/TLR241054", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 gtin = "605482155097"
 material = "aluminium"

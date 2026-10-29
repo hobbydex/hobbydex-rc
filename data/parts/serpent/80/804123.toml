@@ -6,9 +6,9 @@ fits = [
   { kit = "kit/serpent/natrix-750e", type = "direct", source = "doc/serpent/natrix-750-e-spares" },
   { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-spares" },
   { kit = "kit/serpent/taipan-988e", type = "direct", source = "doc/serpent/taipan-988e-spares" },
-  { kit = "kit/serpent/natrix-750", type = "direct", replaces = "part/serpent/901255", source = "doc/serpent/natrix-750-evo-spares", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/natrix-750e", type = "direct", replaces = "part/serpent/901255", source = "doc/serpent/natrix-750-e-spares", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/taipan-988e", type = "direct", replaces = "part/serpent/901255", source = "doc/serpent/taipan-988e-spares", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/natrix-750-evo-spares", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750e", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/natrix-750-e-spares", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/taipan-988e", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/taipan-988e-spares", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/serpent/natrix-748", type = "direct", source = "doc/serpent/natrix-748-spares" },
   { kit = "kit/serpent/733", type = "direct", source = "doc/serpent/733-te-spares" },
 ]
