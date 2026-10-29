@@ -9,3 +9,8 @@ category = "spur-gear"
 teeth = 78
 pitch_dp = 64
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-5/kimbrough-spur-gear-78t-64dp-202-cr513" } ]
+fits = [
+  { kit = "kit/schumacher/eclipse-2", type = "direct", source = "doc/schumacher/eclipse2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/eclipse-3", type = "direct", source = "doc/schumacher/eclipse3-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+]

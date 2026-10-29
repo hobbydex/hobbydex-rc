@@ -8,3 +8,9 @@ gtin = "5051294094584"
 pack_qty = 4
 category = "tire"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/pivot-ball-5-5mm-4pcs-u4775" } ]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/procat-classic", type = "direct", source = "doc/schumacher/procat-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/top-cat", type = "direct", source = "doc/schumacher/topcat-explode", notes = "Shown on the car's exploded diagram" },
+]

@@ -11,3 +11,7 @@ material = "steel"
 color = "chrome"
 documents = ["doc/schumacher/c2w-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/fusion-28-turbo/chrome-steel-balls-3mm-pk36-f28-t-xls-tc-cc-pc-u729" } ]
+fits = [
+  { kit = "kit/schumacher/procat-classic", type = "direct", source = "doc/schumacher/procat-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/top-cat", type = "direct", source = "doc/schumacher/topcat-explode", notes = "Shown on the car's exploded diagram" },
+]

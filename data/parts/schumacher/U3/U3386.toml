@@ -14,3 +14,7 @@ seal = "metal"
 category = "bearing"
 documents = ["doc/schumacher/neon-ft-manual", "doc/schumacher/neon-manual", "doc/schumacher/vibeft-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/supastox-gt/ceramic-bearing-4x8x3-shield-pr-u3386" } ]
+fits = [
+  { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6evo", type = "direct", source = "doc/schumacher/mi6evo-exploded", notes = "Shown on the car's exploded diagram" },
+]

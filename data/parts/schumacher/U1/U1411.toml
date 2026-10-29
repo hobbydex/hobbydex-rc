@@ -13,3 +13,9 @@ seal = "metal"
 category = "bearing"
 documents = ["doc/schumacher/neon-ft-manual", "doc/schumacher/neon-manual", "doc/schumacher/vibeft-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/big6-nitro-3e/ball-bearing-4x8x3-shield-pr-u1411" } ]
+fits = [
+  { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mission-ft", type = "direct", source = "doc/schumacher/mission-ft-exploded-v2", notes = "Shown on the car's exploded diagram" },
+]

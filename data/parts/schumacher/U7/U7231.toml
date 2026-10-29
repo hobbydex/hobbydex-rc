@@ -9,3 +9,7 @@ pack_qty = 10
 documents = ["doc/schumacher/c2w-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/procat-classic/speed-pack-no-4-x-3-4-pan-hd-pk10-u7231" } ]
 category = "screw"
+fits = [
+  { kit = "kit/schumacher/procat-classic", type = "direct", source = "doc/schumacher/procat-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/top-cat", type = "direct", source = "doc/schumacher/topcat-explode", notes = "Shown on the car's exploded diagram" },
+]

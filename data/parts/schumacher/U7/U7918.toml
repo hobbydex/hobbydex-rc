@@ -9,3 +9,9 @@ category = "chassis"
 notes = "Shown by number in the manual; not on its spares list"
 material = "aluminium"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-5/alloy-pivot-mount-a2-3-e3-e5-icon-2-u7918" } ]
+fits = [
+  { kit = "kit/schumacher/atom-2", type = "direct", source = "doc/schumacher/atom2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/eclipse-3", type = "direct", source = "doc/schumacher/eclipse3-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon-2", type = "direct", source = "doc/schumacher/icon2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+]

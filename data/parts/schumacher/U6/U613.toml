@@ -9,3 +9,7 @@ pack_qty = 2
 category = "washer-shim"
 documents = ["doc/schumacher/c2w-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/spring-stop-and-spacer-mouldings-pr-u613" } ]
+fits = [
+  { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mission-ft", type = "direct", source = "doc/schumacher/mission-ft-exploded-v2", notes = "Shown on the car's exploded diagram" },
+]

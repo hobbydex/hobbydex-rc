@@ -9,3 +9,7 @@ pack_qty = 2
 category = "bearing"
 color = "yellow"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/ball-bearing-3-16-x5-16-yellow-pr-u8320" } ]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+]
