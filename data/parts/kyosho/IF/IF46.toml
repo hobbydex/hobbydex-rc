@@ -7,3 +7,6 @@ pack_qty_basis = "name"
 notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
 category = "shock"
 name_source = "ocr"
+fits = [
+  { kit = "kit/kyosho/inferno-mp9", releases = ["release/kyosho/33001", "release/kyosho/33011"], type = "direct", source = "doc/kyosho/33001-t03-inferno-mp9-tki4-ex", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -10,3 +10,8 @@ links = [
 released = "2014-06"
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/tamiya/mercedes-benz-actros", releases = ["release/tamiya/56348"], type = "replaces", source = "doc/tamiya/56348-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/scania-770-s", releases = ["release/tamiya/56368", "release/tamiya/56371", "release/tamiya/56373"], type = "replaces", source = "doc/tamiya/56368-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/volvo-fh16", releases = ["release/tamiya/56375"], type = "replaces", source = "doc/tamiya/56375-anleitung-instruction-volvo-fh16-xl750", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

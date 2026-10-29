@@ -8,3 +8,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-tungsten-carbide-diff-balls-2mm-6/TLR2947.html" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/tlr/22", releases = ["release/tlr/tlr03013", "release/tlr/tlr03014"], type = "replaces", source = "doc/tlr/tlr03013-manual-multi", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tlr/22sct", releases = ["release/tlr/tlr03009"], type = "replaces", source = "doc/tlr/tlr03009-manual-multi", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tlr/22t", releases = ["release/tlr/tlr03015"], type = "replaces", source = "doc/tlr/tlr03015-manual-multi", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

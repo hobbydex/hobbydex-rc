@@ -4,3 +4,7 @@ number = "HM6060"
 name = "DIFF GEAR 14T"
 category = "differential"
 documents = ["doc/lc-racing/emb-dth-exploded-view", "doc/lc-racing/emb-mth-exploded-view"]
+fits = [
+  { kit = "kit/lc-racing/emb-dt", releases = ["release/lc-racing/emb-dth"], type = "replaces", source = "doc/lc-racing/emb-dth-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/lc-racing/emb-mt", releases = ["release/lc-racing/emb-mth"], type = "replaces", source = "doc/lc-racing/emb-mth-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

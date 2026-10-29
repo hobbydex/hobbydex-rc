@@ -10,3 +10,7 @@ gtin = "815076019791"
 category = "pin"
 material = "aluminium"
 material_grade = "7075"
+fits = [
+  { kit = "kit/tekno/mt410", releases = ["release/tekno/tkr9501"], type = "direct", source = "doc/tekno/mt410-2-0-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410", releases = ["release/tekno/tkr9500"], type = "direct", source = "doc/tekno/sct410-2-0-manual-rev02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

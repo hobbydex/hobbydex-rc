@@ -8,3 +8,6 @@ name_ja = "AUDI R8 LMS 2015 ボディセット (ライトウェイト)"
 category = "body"
 documents = ["doc/kyosho/39215lw-bd01-audi-r8-lms-2015"]
 depicts = { make = "Audi", model = "R8 LMS", year = 2015 }
+fits = [
+  { kit = "kit/kyosho/fazer-mk2", releases = ["release/kyosho/34424"], type = "replaces", source = "doc/kyosho/34424-oc02-op", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

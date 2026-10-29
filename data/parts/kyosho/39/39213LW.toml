@@ -6,3 +6,6 @@ name_ja = "Acura NSX ボディセット (ライトウェイト)"
 category = "body"
 documents = ["doc/kyosho/39213lw-bd01-acura-nsx-gt3-lw-t1"]
 depicts = { make = "Acura", model = "NSX" }
+fits = [
+  { kit = "kit/kyosho/fazer-mk2", releases = ["release/kyosho/34424"], type = "replaces", source = "doc/kyosho/34424-oc02-op", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

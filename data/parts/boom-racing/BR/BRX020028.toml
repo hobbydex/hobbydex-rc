@@ -7,3 +7,8 @@ links = [
 ]
 category = "drivetrain"
 material = "steel"
+fits = [
+  { kit = "kit/boom-racing/brx02", releases = ["release/boom-racing/br8004", "release/boom-racing/br8005"], type = "replaces", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20240905", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02-109", releases = ["release/boom-racing/br8006", "release/boom-racing/br8012"], type = "replaces", source = "doc/boom-racing/manual-brx02-109-land-rover-series-ii-iii-pickup-4wd-radio-control", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02-6x6", releases = ["release/boom-racing/br8008"], type = "replaces", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20221111", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

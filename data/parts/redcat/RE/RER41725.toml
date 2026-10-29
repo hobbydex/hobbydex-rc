@@ -6,3 +6,6 @@ pack_qty = 1
 category = "body"
 documents = ["doc/redcat/ascent-32-v2-manual"]
 color = "clear"
+fits = [
+  { kit = "kit/redcat/ascent-32", releases = ["release/redcat/RER40390", "release/redcat/RER40391", "release/redcat/RER40392", "release/redcat/RER40393", "release/redcat/RER44373", "release/redcat/RER44374", "release/redcat/RER44375", "release/redcat/RER44376"], type = "replaces", source = "doc/redcat/ascent-32-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -6,3 +6,7 @@ links = [
   { site = "Awesomatix", url = "https://shop.awesomatix.com/index.php?productID=1575" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/awesomatix/a800r", releases = ["release/awesomatix/A800-R", "release/awesomatix/A800-RA"], type = "replaces", source = "doc/awesomatix/a800r-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/awesomatix/a800rr", releases = ["release/awesomatix/A800-RRA", "release/awesomatix/A800-RRC"], type = "replaces", source = "doc/awesomatix/a800rr-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

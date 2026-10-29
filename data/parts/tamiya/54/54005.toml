@@ -9,3 +9,6 @@ links = [
   { site = "Tamiya customer service", url = "https://customer-service.tamiya.de/en/service/manuals/", kind = "maker" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/tamiya/ta07msx", releases = ["release/tamiya/42364"], type = "replaces", source = "doc/tamiya/42364-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

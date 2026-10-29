@@ -7,3 +7,6 @@ seen_by_source = "https://web.archive.org/web/20200609031443/https://dealer.redc
 category = "body"
 documents = ["doc/redcat/camo-tt-pro-manual"]
 color = "clear"
+fits = [
+  { kit = "kit/redcat/camo-tt", releases = ["release/redcat/CAMO-TT-PRO"], type = "replaces", source = "doc/redcat/camo-tt-pro-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

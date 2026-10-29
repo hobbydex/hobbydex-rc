@@ -7,3 +7,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-rear-shock-spring-2.0-rate-yellow/TLR5167.html" },
 ]
 category = "shock-spring"
+fits = [
+  { kit = "kit/tlr/22-4", releases = ["release/tlr/tlr03007"], type = "replaces", source = "doc/tlr/tlr03007-manual-multi-lr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tlr/22sct", releases = ["release/tlr/tlr03009"], type = "replaces", source = "doc/tlr/tlr03009-manual-multi", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tlr/22t", releases = ["release/tlr/tlr03015"], type = "replaces", source = "doc/tlr/tlr03015-manual-multi", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

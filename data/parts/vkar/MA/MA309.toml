@@ -5,3 +5,6 @@ name = "DIFF GEAR 24T&11T"
 notes = "Name from the vkarracing.com parts listing, https://vkarracing.com/DIFF-GEAR-24T-11T-PG7285494"
 category = "differential"
 links = [{ site = "VKar Racing", url = "https://vkarracing.com/DIFF-GEAR-24T-11T-PG7285494" }]
+fits = [
+  { kit = "kit/vkar/vkb10", releases = ["release/vkar/vkb10"], type = "replaces", source = "doc/vkar/vkb10-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
