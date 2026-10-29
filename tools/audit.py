@@ -761,7 +761,8 @@ def main():
     any_car = {c["id"].split("/")[-1] for c in db["categories"] if c.get("any_car")}
     in_box = {c["part"] for r in rels for c in r.get("contains", [])}
     # a part that names the model it is for (applies_to) is car-specific whatever its category (a Fast Eddy bearing set for one car)
-    is_any = lambda p: p.get("category") in any_car and not p.get("applies_to")
+    # a part marked universal (docs/schema.md "part") is sold for any car of a kind, not for a named model
+    is_any = lambda p: p.get("universal") is True or (p.get("category") in any_car and not p.get("applies_to"))
     no_car = [p for p in parts if p["id"] not in in_box and not p.get("fits") and p.get("category") and not is_any(p)]
     generic_unlinked = sum(1 for p in parts if p["id"] not in in_box and not p.get("fits") and is_any(p))
     per_brand = collections.Counter(p["brand"].split("/")[-1] for p in no_car)
