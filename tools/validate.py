@@ -54,6 +54,7 @@ DOUBTABLE = {"release": ("released", "year", "announced"), "brand": ("launched",
 
 # scale as a fraction of the real vehicle: "1/10", "1/13.5" (docs/schema.md "kit", "release")
 SCALE_RE = re.compile(r"1/\d+(\.\d+)?")
+PRINTED_KINDS = {"manual", "supplement", "part_list", "exploded_view", "setup_sheet", "catalog"}
 # links: kind (none = the maker's product page); archive = a Wayback capture of a page that is gone (docs/schema.md "links")
 LINK_KINDS = {"fan-site", "press", "dealer", "maker", "archive"}
 ARCHIVE_URL = re.compile(r"https://web\.archive\.org/web/\d{14}/https?://.+")
@@ -686,7 +687,7 @@ def main():
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}
     manual_links = {d.get("id"): {d[k] for k in ("url", "page") if d.get(k)} for _, kind, d in docs if kind == "doc" and d.get("kind") == "manual"}
     # a dated catalogue or manual document whose printed year bounds a part's seen_by (docs/schema.md, seen_by_source)
-    printed_docs = {d.get("id"): str(d["printed"]) for _, kind, d in docs if kind == "doc" and d.get("kind") in ("catalog", "manual") and d.get("printed")}   # a manual's own file or maker page
+    printed_docs = {d.get("id"): str(d["printed"]) for _, kind, d in docs if kind == "doc" and d.get("kind") in PRINTED_KINDS and d.get("printed")}   # any document with a printed date (YYYY or YYYY-MM)
     doc_pages = {d.get("id"): d["page"] for _, kind, d in docs if kind == "doc" and d.get("kind") != "catalog" and d.get("page")}   # a non-catalogue document's maker page
     product_urls = {d.get("id"): d["url"] for _, kind, d in docs if kind == "doc" and d.get("kind") == "product_page" and d.get("url")}   # a product page document's url
     placeholder_kits = {d.get("id") for _, kind, d in docs if kind == "kit" and d.get("placeholder") is True}
@@ -809,6 +810,14 @@ def main():
                 errors.append(f"{path}: date {d['date']!r} should be YYYY-MM-DD")
             if "duration_s" in d and not (isinstance(d["duration_s"], int) and d["duration_s"] > 0):
                 errors.append(f"{path}: duration_s should be a whole number of seconds")
+        if kind == "doc" and ("printed" in d or "printed_source" in d):
+            pr, ps = d.get("printed"), d.get("printed_source")
+            if d.get("kind") not in PRINTED_KINDS:
+                errors.append(f"{path}: printed is only for a manual, supplement, part_list, exploded_view, setup_sheet or catalog document")
+            if not (isinstance(pr, str) and re.fullmatch(r"(19[6-9]\d|20[0-3]\d)(-(0[1-9]|1[0-2]))?", pr) and int(pr[:4]) <= datetime.date.today().year):
+                errors.append(f"{path}: printed {pr!r} should be YYYY or YYYY-MM (the date the document itself prints)")
+            if ("printed_source" in d and "printed" not in d) or ("printed_source" in d and not (isinstance(ps, str) and ps.strip())):
+                errors.append(f"{path}: printed_source (what the document's text says) goes with printed")
         if kind == "doc":
             for f in ("url", "page"):
                 if f in d and not str(d[f]).startswith(("https://", "http://")):
@@ -891,7 +900,7 @@ def main():
                 own_urls |= {product_urls[x] for x in d.get("documents", []) if x in product_urls}
                 own_page = isinstance(ss, str) and ss in own_urls   # the maker's page we fetched first (the day it was on its site)
                 video = isinstance(ss, str) and re.fullmatch(r"https://www\.youtube\.com/watch\?v=[\w-]+", ss)   # a back-catalogue video (the bound is its upload day)
-                printed = isinstance(ss, str) and ss in printed_docs and isinstance(sb, str) and sb[:4] == printed_docs[ss]
+                printed = isinstance(ss, str) and ss in printed_docs and isinstance(sb, str) and sb == printed_docs[ss]   # the document's printed date, as precise as printed
                 # the maker's product sitemap that lists the record's page, its <lastmod> the day (on a host of the brand or of its links)
                 maker_hosts = {urllib.parse.urlsplit(u).hostname for u in own_urls if isinstance(u, str) and u.startswith("https://")} | {brand_site.get(d.get("brand"))}
                 sitemap = isinstance(ss, str) and re.fullmatch(r"https://[^\s/]+/\S+\.xml(\.gz)?", ss) and urllib.parse.urlsplit(ss).hostname in maker_hosts
