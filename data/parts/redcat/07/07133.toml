@@ -15,3 +15,6 @@ category = "pin"
 fits = [
   { kit = "kit/redcat/rampage-r5", type = "direct", source = "doc/redcat/store" },
 ]
+equivalent_to = [
+  { spec = "spec/pin/6x90", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

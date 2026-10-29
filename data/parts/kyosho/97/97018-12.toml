@@ -9,3 +9,6 @@ fits = [
 category = "pin"
 documents = ["doc/kyosho/31315-birel-r31-se-ready-mm-p"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/97018-12.html" } ]
+equivalent_to = [
+  { spec = "spec/pin/2x12", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

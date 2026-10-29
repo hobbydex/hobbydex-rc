@@ -8,3 +8,6 @@ pack_qty = 5
 pack_qty_basis = "manual"
 category = "pin"
 documents = ["doc/redcat/landslide-xte-manual"]
+equivalent_to = [
+  { spec = "spec/pin/3x70", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

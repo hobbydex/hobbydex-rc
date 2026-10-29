@@ -4,3 +4,6 @@ number = "BS903-119"
 name = "O ring 5x9x2"
 category = "o-ring-seal"
 documents = ["doc/redcat/blackout-sc-manual", "doc/redcat/blackout-sc-pro-manual", "doc/redcat/blackout-xbe-manual", "doc/redcat/blackout-xbe-pro-manual", "doc/redcat/blackout-xte-manual", "doc/redcat/blackout-xte-pro-manual"]
+equivalent_to = [
+  { spec = "spec/o-ring/5x2", match = "functional" },
+]
