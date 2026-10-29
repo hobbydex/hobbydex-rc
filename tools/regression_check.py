@@ -153,7 +153,7 @@ def field_sourced(rec, k, val=MISSING):
     if val is not MISSING and isinstance(val, str) and val in CONVENTION.get(k, ()):
         return False
     if k == "category":
-        return rec.get("category_source") == "curated"
+        return rec.get("category_source") in ("curated", "manual-section")
     if k == "pack_qty":
         return rec.get("pack_qty_basis") in STATED_PACK_BASIS
     if k in SOURCED_FIELDS or f"{k}_source" in rec:
