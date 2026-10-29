@@ -11,7 +11,7 @@ power = "brushed"
 power_source = "doc/kyosho/34412t2-product-page"
 status = "discontinued"
 gtin = "4548565427871"
-documents = ["doc/kyosho/34412t2-mad-van-ct2-spop", "doc/kyosho/34412t2-mad-van-ct2-ex", "doc/kyosho/34412t2-mad-van-ct2-im", "doc/kyosho/34412t2-product-page", "doc/kyosho/34412t2-t02-mad-van-ct2-spop", "doc/kyosho/34412t2-t02-mad-van-ct2-ex", "doc/kyosho/34412t2-t02-mad-van-ct2-im", "doc/kyosho/mad-van-partlist-v01"]
+documents = ["doc/kyosho/34412t2-mad-van-ct2-spop", "doc/kyosho/34412t2-mad-van-ct2-ex", "doc/kyosho/34412t2-mad-van-ct2-im", "doc/kyosho/34412t2-product-page", "doc/kyosho/34412t2-t02-mad-van-ct2-spop", "doc/kyosho/34412t2-t02-mad-van-ct2-ex", "doc/kyosho/34412t2-t02-mad-van-ct2-im", "doc/kyosho/mad-van-partlist-v01", "doc/kyosho/34412t2-t01-mad-van-ct2-ex", "doc/kyosho/34412t2-t01-mad-van-ct2-im", "doc/kyosho/34412t2-t01-mad-van-ct2-spop"]
 contains = [
   { part = "part/kyosho/1-E025", role = "kit", source = "doc/kyosho/34412t2-mad-van-ct2-spop" },
   { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/34412t2-mad-van-ct2-spop" },
@@ -188,4 +188,9 @@ contains = [
   { part = "part/kyosho/XGS015", role = "option", source = "doc/kyosho/mad-van-partlist-v01" },
   { part = "part/kyosho/XGS016", role = "option", source = "doc/kyosho/mad-van-partlist-v01" },
   { part = "part/kyosho/1-S13008TPH", role = "kit", source = "doc/kyosho/34412t2-t02-mad-van-ct2-spop" },
+  { part = "part/kyosho/30000B", role = "listed", source = "doc/kyosho/34412t2-t01-mad-van-ct2-im" },
+  { part = "part/kyosho/40000B", role = "listed", source = "doc/kyosho/34412t2-t01-mad-van-ct2-im" },
+  { part = "part/kyosho/5000", role = "listed", source = "doc/kyosho/34412t2-t01-mad-van-ct2-im" },
+  { part = "part/kyosho/6000", role = "listed", source = "doc/kyosho/34412t2-t01-mad-van-ct2-im" },
+  { part = "part/kyosho/7000", role = "listed", source = "doc/kyosho/34412t2-t01-mad-van-ct2-im" },
 ]
