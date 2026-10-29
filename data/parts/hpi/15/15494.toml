@@ -5,3 +5,6 @@ name = "WIDE CAP HEAD TORX SCREW M5x52mm"
 notes = "Name read by OCR from a scanned hpi manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m5x52-socket-cap-torx", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -13,3 +13,6 @@ material = "aluminium"
 documents = ["doc/kyosho/30025-tf6sp-t01-spop", "doc/kyosho/30026-t01-tf7-im"]
 category = "washer-shim"
 category_source = "llm"
+equivalent_to = [
+  { spec = "spec/washer/3x6.5x0.75", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

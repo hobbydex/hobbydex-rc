@@ -11,3 +11,6 @@ category = "washer-shim"
 fits = [
   { kit = "kit/ftx/dr8", type = "direct", notes = "Listed on the maker's spares page for this model" },
 ]
+equivalent_to = [
+  { spec = "spec/washer/8x13x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -14,3 +14,6 @@ fits = [
   { kit = "kit/lrp/s8-nxr", type = "direct", source = "doc/lrp/131420b-manual" },
 ]
 name_de = "3x6mm Innensechskant Rundkopf Schneidschraube (10Stk.)"
+equivalent_to = [
+  { spec = "spec/screw/m3x6-button-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

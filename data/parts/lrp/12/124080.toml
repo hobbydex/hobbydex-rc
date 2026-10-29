@@ -20,3 +20,6 @@ fits = [
   { kit = "kit/lrp/s10-twister-truggy", type = "direct", notes = "Named for the S10 Twister Truggy in LRP's part name (link_lrp_spares.py)" },
 ]
 name_de = "M3x18mm Rundkopfschraube (10Stk.) - S10 Twister"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

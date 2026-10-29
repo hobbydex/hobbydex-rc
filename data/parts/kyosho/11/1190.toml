@@ -17,3 +17,9 @@ fits = [
   { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-ex" },
   { kit = "kit/kyosho/dst", type = "direct", source = "doc/kyosho/31097t2-dst-kt-6-mm-t" },
 ]
+includes = [
+  { spec = "spec/washer/7x11x0.5", qty = 3 },
+  { spec = "spec/washer/7x11x1", qty = 3 },
+]
+pack_qty = 6
+pack_qty_basis = "includes"

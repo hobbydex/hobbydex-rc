@@ -8,3 +8,6 @@ gtin = "5051294116620"
 pack_qty = 10
 category = "screw"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mission-ft/speed-pack-m3x20-cap-hd-pk10-u7116" } ]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

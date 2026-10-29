@@ -12,3 +12,6 @@ links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclip
 fits = [
   { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

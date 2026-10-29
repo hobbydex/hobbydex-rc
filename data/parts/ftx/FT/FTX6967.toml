@@ -10,3 +10,6 @@ links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-Zorro-flat-head-hex-screw-m3x40mm-6pc" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x40-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -8,3 +8,7 @@ links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-b4x-spares/ftx-b4x-aluminum-washer-3x-5-5x-2" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3x5.5x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "aluminium"

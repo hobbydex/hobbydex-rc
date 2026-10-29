@@ -7,3 +7,6 @@ name_source = "manufacturer"
 gtin = "4955439730515"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1196.html" } ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x18-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

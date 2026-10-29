@@ -12,3 +12,6 @@ links = [
 documents = ["doc/lc-racing/lcsk47-product-page"]
 color = "black"
 notes = "Colour as shown on the maker's product photo, confirmed by the user"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x14-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
