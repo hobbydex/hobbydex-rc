@@ -2,6 +2,7 @@ id = "part/tamiya/54548"
 brand = "brand/tamiya"
 number = "54548"
 name = "Rear Damper Stay"
+name_de = "TA-06 Dämpferbrücke hinten"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 links = [
@@ -11,3 +12,7 @@ links = [
 category = "chassis"
 released = "2013-12"
 documents = ["doc/tamiya/newitems-month"]
+status = "available"
+fits = [
+  { kit = "kit/tamiya/ta06", type = "replaces" },
+]
