@@ -4,3 +4,6 @@ number = "72004"
 name = "Ball Bearing 4x8"
 category = "bearing"
 documents = ["doc/abc-hobby/goose-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "close", notes = "Width not stated in the name; 3 mm is the standard width of a 4x8 bearing (MR84)" },
+]

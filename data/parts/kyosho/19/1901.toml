@@ -12,3 +12,6 @@ fits = [
   { kit = "kit/kyosho/fantom-gp", type = "direct", source = "doc/kyosho/31999-fantom2001-t" },
 ]
 documents = ["doc/kyosho/3031-javelin-manual", "doc/kyosho/3165-usa-1-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 5x10 bearing (MR105)" },
+]

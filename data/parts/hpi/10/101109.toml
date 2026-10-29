@@ -12,3 +12,6 @@ fits = [
   { kit = "kit/hpi/trophy-truggy", type = "direct", source = "doc/hpi/part-pages" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 5x10 bearing (MR105)" },
+]

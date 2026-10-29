@@ -12,3 +12,6 @@ fits = [
 ]
 category = "bearing"
 documents = ["doc/kyosho/31081-inferno-mp75-p", "doc/kyosho/31172-landmax2-p", "doc/kyosho/31181-megaforce-p"]
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "close", notes = "Width not stated in the name; 5 mm is the standard width of a 8x16 bearing (688)" },
+]

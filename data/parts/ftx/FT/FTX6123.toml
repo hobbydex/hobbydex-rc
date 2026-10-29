@@ -6,3 +6,6 @@ notes = "Read by OCR from a scanned FTX document"
 category = "bearing"
 name_source = "ocr"
 documents = ["doc/ftx/cml-carnage-nt-manual-parts"]
+equivalent_to = [
+  { spec = "spec/bearing/12x21x5", match = "close", notes = "Width not stated in the name; 5 mm is the standard width of a 12x21 bearing (6801)" },
+]

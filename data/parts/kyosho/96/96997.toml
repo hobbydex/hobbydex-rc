@@ -8,3 +8,6 @@ fits = [
   { kit = "kit/kyosho/gp-tr-15-rally", type = "direct", source = "doc/kyosho/31061-tr15-rally-p" },
 ]
 documents = ["doc/kyosho/31001-superten-p", "doc/kyosho/31061-tr15-rally-p"]
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 5x8 bearing (MR85)" },
+]

@@ -5,3 +5,6 @@ name = "BALL BEARING 10x19x5mm"
 notes = "Name read by OCR from a scanned hpi manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/10x19x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

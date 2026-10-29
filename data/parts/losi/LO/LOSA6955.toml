@@ -36,3 +36,6 @@ fits = [
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]
 gtin = "660132177522"
+equivalent_to = [
+  { spec = "spec/bearing/5x13x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 5x13 bearing (695)" },
+]

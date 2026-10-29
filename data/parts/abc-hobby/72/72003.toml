@@ -4,3 +4,6 @@ number = "72003"
 name = "Ball Bearing 3x6F"
 category = "bearing"
 documents = ["doc/abc-hobby/goose-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/3x6x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 3x6 bearing (MR63)" },
+]
