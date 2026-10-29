@@ -5,9 +5,13 @@ name = "XXX-R Alum. gear box cover set (purple)"
 applies_to = "XXX-D ( S / RTR )"
 fits = [
   { kit = "kit/mst/xxx-d", type = "direct", source = "doc/mst/option-parts-list-2018" },
+  { kit = "kit/mst/xxx-r", type = "direct", source = "doc/mst/website", notes = "The model is named in MST's product name" },
 ]
 notes = "Option parts list: XXX-D Series except XXX-D HT"
 category = "gear"
 color = "purple"
 range = "mst/210295-colours"
 documents = ["doc/mst/option-parts-list-2018"]
+links = [
+  { site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=15&class_sn2=41&sn=2434" },
+]
