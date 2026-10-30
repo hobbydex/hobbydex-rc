@@ -1,0 +1,16 @@
+id = "part/fms/APSC22070"
+brand = "brand/fms"
+number = "APSC22070"
+name = "11023 PIN 2*10MM"
+fits = [
+  { kit = "kit/fms/ford-f100", type = "direct", source = "doc/fms/cml-distribution-spares", notes = "Known from the distributor: CML Distribution's title names the car" },
+  { kit = "kit/fms/ford-f100-monster-truck", type = "direct", source = "doc/fms/cml-distribution-spares", notes = "Known from the distributor: CML Distribution's title names the car" },
+]
+documents = ["doc/fms/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/APSC22070/fms-11023-pin-2-10mm", kind = "dealer" },
+]
+category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

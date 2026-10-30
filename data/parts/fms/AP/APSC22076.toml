@@ -1,0 +1,16 @@
+id = "part/fms/APSC22076"
+brand = "brand/fms"
+number = "APSC22076"
+name = "11023 PIN 4*75MM"
+fits = [
+  { kit = "kit/fms/ford-f100", type = "direct", source = "doc/fms/cml-distribution-spares", notes = "Known from the distributor: CML Distribution's title names the car" },
+  { kit = "kit/fms/ford-f100-monster-truck", type = "direct", source = "doc/fms/cml-distribution-spares", notes = "Known from the distributor: CML Distribution's title names the car" },
+]
+documents = ["doc/fms/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/APSC22076/fms-11023-pin-4-75mm", kind = "dealer" },
+]
+category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/4x75", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

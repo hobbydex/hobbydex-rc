@@ -1,0 +1,12 @@
+id = "part/fms/APSC22092"
+brand = "brand/fms"
+number = "APSC22092"
+name = "CAP HEAD HEX SCREW M3*8"
+documents = ["doc/fms/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/APSC22092/fms-cap-head-hex-screw-m3-8", kind = "dealer" },
+]
+category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

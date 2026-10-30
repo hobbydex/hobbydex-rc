@@ -1,0 +1,12 @@
+id = "part/fms/APSC22112"
+brand = "brand/fms"
+number = "APSC22112"
+name = "FLAT HEAD HEX SCREW M3*8"
+documents = ["doc/fms/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/APSC22112/fms-flat-head-hex-screw-m3-8", kind = "dealer" },
+]
+category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
