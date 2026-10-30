@@ -5,10 +5,12 @@ name = "X12'20"
 model_year = 2020
 kind = "kit"
 status = "discontinued"
-seen_by = "2019-12"
-seen_by_source = "https://web.archive.org/web/20191208052550/https://teamxray.com/x12/2020/"
+announced = "2019-08-26"
+announced_source = "https://www.teamxray.com/teamxray/news/newsdesc.php?news_id=7763"
+year = 2019
+released = "2019-08-28"
 supersedes = "release/xray/x12-2019"
-documents = ["doc/xray/x12-2020-exploded-view", "doc/xray/x12-2020-manual", "doc/xray/x12-2020-part-list", "doc/xray/x12-2020-setup-sheet", "doc/xray/x12-2020-product-page"]
+documents = ["doc/xray/x12-2020-exploded-view", "doc/xray/x12-2020-manual", "doc/xray/x12-2020-part-list", "doc/xray/x12-2020-setup-sheet", "doc/xray/x12-2020-product-page", "doc/xray/news-2019-08-28-x12-20-online-now", "doc/xray/news-2019-08-26-x12-20-coming-soon"]
 contains = [
   { part = "part/hudy/102003", role = "option", source = "doc/xray/x12-2020-part-list" },
   { part = "part/hudy/102375", role = "listed", source = "doc/xray/x12-2020-part-list" },
@@ -385,4 +387,4 @@ contains = [
   { part = "part/xray/971255", role = "listed", source = "doc/xray/x12-2020-part-list" },
   { part = "part/xray/980210", role = "kit", source = "doc/xray/x12-2020-manual" },
 ]
-notes = "Sold as 370011 (X12'20 EU), 370012 (X12'20 US) (teamxray.com product list)."
+notes = "Sold as 370011 (X12'20 EU), 370012 (X12'20 US) (teamxray.com product list).; Release date from the news of 2019-08-28"
