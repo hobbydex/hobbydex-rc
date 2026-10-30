@@ -6,3 +6,7 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/hsc21m08-alum-trailing-steering-block-hsc-fs-blitz", kind = "maker" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/hpi/firestorm", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/hpi/blitz", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

@@ -6,3 +6,8 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/slf288rcr-rear-light-weight-metal-cv-splined-axles-tra-sla-sta-4x4", kind = "maker" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/rustler-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

@@ -6,3 +6,7 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/atf14rn01-aluminum-upper-chassis-brace-rod-ends-composite-chassis-series", kind = "maker" },
 ]
 category = "rod-end"
+fits = [
+  { kit = "kit/arrma/kraton", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/outcast", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

@@ -6,3 +6,8 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/te10m06-t-maxx-wheels-adapter-ep-rustler-stampede", kind = "maker" },
 ]
 category = "wheel"
+fits = [
+  { kit = "kit/traxxas/t-maxx", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/stampede-2wd", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

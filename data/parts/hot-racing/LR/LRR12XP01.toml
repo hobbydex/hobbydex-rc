@@ -6,3 +6,7 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/lrr12xp01-secure-lock-front-hd-bearing-gear-box-rock-baja-rey", kind = "maker" },
 ]
 category = "bearing"
+fits = [
+  { kit = "kit/losi/baja-rey", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/losi/rock-rey", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

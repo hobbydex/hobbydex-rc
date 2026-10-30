@@ -11,3 +11,7 @@ material = "steel"
 related = [
   { part = "part/hot-racing/SECT288X06", relation = "for", notes = "link_part_refs" },
 ]
+fits = [
+  { kit = "kit/ecx/ruckus-2wd", type = "direct", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+  { kit = "kit/ecx/torment-2wd", type = "direct", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+]

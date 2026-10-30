@@ -6,3 +6,7 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/bfr15p06-power-up-gear-adapter-b4-b5-b6-enduro", kind = "maker" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/rc10b6", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/team-associated/rc10b5", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

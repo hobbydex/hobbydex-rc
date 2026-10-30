@@ -9,3 +9,6 @@ category = "pin"
 related = [
   { part = "part/hot-racing/DBL5501", relation = "for", notes = "link_part_refs" },
 ]
+fits = [
+  { kit = "kit/losi/dbxl", type = "direct", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+]
