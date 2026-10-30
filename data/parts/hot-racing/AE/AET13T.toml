@@ -11,3 +11,6 @@ material = "aluminium"
 fits = [
   { kit = "kit/team-associated/rc18t", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/pinion/mod0.5-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

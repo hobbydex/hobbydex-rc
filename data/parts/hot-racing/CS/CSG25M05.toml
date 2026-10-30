@@ -9,3 +9,6 @@ category = "pinion"
 teeth = 25
 module = 0.5
 material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/mod0.5-25t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
