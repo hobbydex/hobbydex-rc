@@ -15,3 +15,10 @@ documents = ["doc/skyrc/sk-100182-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/t1000" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "pb"]
+power_ac_w = 450
+power_dc_w = 1000
+ac_input_v = [100, 240]
+dc_input_v = [10, 30]
+nimh_cells = [4, 15]
+charger_source = "https://www.skyrc.com/t1000"

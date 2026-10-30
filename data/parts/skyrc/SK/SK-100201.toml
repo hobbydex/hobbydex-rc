@@ -15,3 +15,11 @@ documents = ["doc/skyrc/sk-100201-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/d750mix" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "pb"]
+power_ac_w = 500
+power_dc_w = 1100
+channels = 1
+ac_input_v = [100, 240]
+dc_input_v = [9, 49]
+nimh_cells = [1, 20]
+charger_source = "https://www.skyrc.com/d750mix"

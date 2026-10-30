@@ -693,6 +693,28 @@ pitch and tooth count mesh the same pinions but mount differently.
 `weight_g` (a number of grams above 0 and up to 50000, such as `69` or `4.2`) is set on any part whose source states its weight: "Weight 70g", "70 g", "(70g)", "Gewicht: 70 g", "Poids : 70 g". A weight the source gives in ounces is converted and rounded to whole grams. A figure that is a capacity or a load is never a weight: "70kg servo" is torque, "holds 5 kg" is a load. Parts of any category carry it; the radio, battery, servo, motor, ESC and engine sections above say what else their weight means.
 
 Chargers are parts with category charger and, when stated, `power_w`.
+A charger also carries, only where the maker states it (page, manual or the part name for the mains plug):
+
+```toml
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "pb"]   # chemistries it charges; also "nizn"
+lipo_cells = [1, 6]            # LiPo/LiHV/LiFe/Li-ion cells; nimh_cells = [1, 15] for NiMH/NiCd
+power_ac_w = 100               # charge power from the mains; power_dc_w from the DC input; power_w keeps the single figure
+power_dc_w = 200
+charge_current_a = 10          # maximum charge current
+channels = 2                   # outputs that charge at the same time
+ac_input_v = [100, 240]        # mains range; dc_input_v = [11, 18]
+mains_plug = "EU"              # EU | UK | US | AU
+mains_plug_basis = "name"      # "maker" (page or manual) or "name" (the part name says "(EU)")
+dc_input_connector = "XT60"    # plug name as in `connector` of batteries (validate.py PLUG_SPEC)
+output_connector = ["XT60", "Deans"]   # plugs of the charge leads or sockets, same names
+balance_ports = ["JST-XH"]     # JST-XH | JST-EH | XHP | TP | FP | EHR | Hyperion
+charger_source = "doc/skyrc/sk-100008-manual"   # doc id or the maker's page URL the values come from
+```
+
+`charger_source` is required with any of these (except a lone `mains_plug` with basis "name"). A mains plug is
+written only when the page, manual or name states it; a "(EU)" in the name is the plug, never a guess from the
+maker's country. A DC input that is a barrel jack or a socket without a connector spec gets `dc_input_v` only.
+tools/link_charger_specs.py reads the values; tools/validate.py checks them.
 
 Batteries: the electrical group, `chemistry` (lipo | lihv | life | nimh | liion),
 `cells`, `capacity_mah` and `nominal_v`; id `spec/battery/lipo-2s-5000mah`.

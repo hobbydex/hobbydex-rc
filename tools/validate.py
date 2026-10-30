@@ -517,6 +517,65 @@ PLUG_SPEC = {
     "6mm bullet": "bullet-6mm", "6.5mm bullet": "bullet-6.5mm", "8mm bullet": "bullet-8mm", "4mm banana": "banana-4mm",
 }
 
+# charger fields (docs/schema.md "Chargers"): what a charger charges and with which plugs, each stated by the maker
+CHARGER_FIELDS = ("charges", "power_ac_w", "power_dc_w", "charge_current_a", "ac_input_v", "mains_plug", "mains_plug_basis",
+                  "dc_input_v", "dc_input_connector", "output_connector", "balance_ports", "charger_source")
+CHARGES = {"lipo", "lihv", "life", "liion", "nimh", "nicd", "pb", "nizn"}
+MAINS_PLUGS = {"EU", "UK", "US", "AU"}
+BALANCE_PORTS = {"JST-XH", "JST-EH", "XHP", "TP", "FP", "EHR", "Hyperion"}
+
+
+def check_charger(path, d):
+    errors = []
+
+    def num(x, lo, hi):
+        return isinstance(x, (int, float)) and not isinstance(x, bool) and lo <= x <= hi
+
+    def rng(x, lo, hi):
+        return isinstance(x, list) and len(x) == 2 and all(num(v, lo, hi) for v in x) and x[0] <= x[1]
+
+    def plug(x):
+        return isinstance(x, str) and x in PLUG_SPEC
+    ch = d.get("charges")
+    if ch is not None and not (isinstance(ch, list) and ch and len(set(ch)) == len(ch) and all(c in CHARGES for c in ch)):
+        errors.append(f"{path}: charges {ch!r} should be a list of {sorted(CHARGES)}")
+    for k, hi in (("power_ac_w", 3000), ("power_dc_w", 6000), ("charge_current_a", 200)):
+        if k in d and not num(d[k], 0.1, hi):
+            errors.append(f"{path}: {k} {d[k]!r} should be a number up to {hi}")
+    if "ac_input_v" in d and not rng(d["ac_input_v"], 90, 260):
+        errors.append(f"{path}: ac_input_v {d['ac_input_v']!r} should be [min, max] volts (90..260)")
+    if "dc_input_v" in d and not rng(d["dc_input_v"], 3, 60):
+        errors.append(f"{path}: dc_input_v {d['dc_input_v']!r} should be [min, max] volts (3..60)")
+    mp, mb = d.get("mains_plug"), d.get("mains_plug_basis")
+    if mp is not None and mp not in MAINS_PLUGS:
+        errors.append(f"{path}: mains_plug {mp!r} should be one of {sorted(MAINS_PLUGS)}")
+    if (mp is None) != (mb is None) or (mb is not None and mb not in ("maker", "name")):
+        errors.append(f"{path}: mains_plug_basis is \"maker\" (page or manual) or \"name\" (the part name says EU/UK/US/AU), and goes with mains_plug")
+    dc = d.get("dc_input_connector")
+    if dc is not None and not plug(dc):
+        errors.append(f"{path}: dc_input_connector {dc!r} is not a plug name (validate.py PLUG_SPEC)")
+    oc = d.get("output_connector")
+    if oc is not None and not (isinstance(oc, list) and oc and len(set(oc)) == len(oc) and all(plug(x) for x in oc)):
+        errors.append(f"{path}: output_connector {oc!r} should be a list of plug names (validate.py PLUG_SPEC)")
+    bp = d.get("balance_ports")
+    if bp is not None and not (isinstance(bp, list) and bp and len(set(bp)) == len(bp) and all(x in BALANCE_PORTS for x in bp)):
+        errors.append(f"{path}: balance_ports {bp!r} should be a list of {sorted(BALANCE_PORTS)}")
+    nc = d.get("nimh_cells")
+    if nc is not None and not (isinstance(nc, list) and len(nc) == 2 and all(isinstance(x, int) and not isinstance(x, bool) for x in nc) and 0 < nc[0] <= nc[1]):
+        errors.append(f"{path}: nimh_cells {nc!r} should be [min, max] cell counts")
+    cn = d.get("channels")
+    if cn is not None and not (isinstance(cn, int) and not isinstance(cn, bool) and 1 <= cn <= 12):
+        errors.append(f"{path}: channels {cn!r} should be a count of 1 to 12 outputs")
+    src = d.get("charger_source")
+    stated = [k for k in CHARGER_FIELDS + ("channels", "nimh_cells") if k in d and k not in ("charger_source", "mains_plug_basis")]
+    needs = bool(stated) and not (stated == ["mains_plug"] and mb == "name")
+    if needs and not (isinstance(src, str) and (src.startswith("doc/") or src.startswith("http"))):
+        errors.append(f"{path}: charger fields need charger_source (a doc/ id or the maker's page URL)")
+    if src is not None and not stated:
+        errors.append(f"{path}: charger_source without a charger field")
+    return errors
+
+
 def check_connectors(docs, ids, errors):
     """A wire part lists the plugs of a lead, adapter or harness in `connectors`, each a plug name with a connector
     spec; a part that is the plug itself is equivalent_to its connector spec instead, so it never has both
@@ -998,8 +1057,8 @@ def main():
             errors.append(f"{path}: sensored should be true or false, on a motor or an ESC (category esc; motor and electronics systems too)")
         if kind == "part" and d.get("category") == "motor" and d.get("motor_type") == "both":
             errors.append(f"{path}: motor_type both is for ESCs only (a motor is brushed or brushless)")
-        if kind == "part" and any(k in d for k in ESC_PROP_FIELDS if k != "motor_type") and d.get("category") not in ("esc", "motor"):
-            errors.append(f"{path}: {', '.join(k for k in ESC_PROP_FIELDS if k in d and k != 'motor_type')} only on ESCs (category esc) or 2-in-1 motors (category motor, ESC built in)")
+        if kind == "part" and any(k in d for k in ESC_PROP_FIELDS if k not in ("motor_type", "nimh_cells")) and d.get("category") not in ("esc", "motor"):
+            errors.append(f"{path}: {', '.join(k for k in ESC_PROP_FIELDS if k in d and k not in ('motor_type', 'nimh_cells'))} only on ESCs (category esc) or 2-in-1 motors (category motor, ESC built in)")
         if kind == "part" and "motor_type" in d and d.get("category") not in ("esc", "motor"):
             errors.append(f"{path}: motor_type only on ESCs and motors (category esc or motor)")
         if kind == "part" and "waterproof" in d:
@@ -1013,6 +1072,8 @@ def main():
                 errors.append(f"{path}: scales only on {', '.join(SCALES_CATEGORIES)} parts (docs/schema.md \"scales\")")
             elif not (isinstance(sc, list) and sc and len(set(sc)) == len(sc) and all(isinstance(x, str) and SCALE_RE.fullmatch(x) for x in sc)):
                 errors.append(f"{path}: scales {sc!r} should be a list of scales like [\"1/10\", \"1/12\"]")
+        if kind == "part" and "nimh_cells" in d and d.get("category") not in ("esc", "motor", "charger"):
+            errors.append(f"{path}: nimh_cells only on ESCs, 2-in-1 motors (ESC built in) and chargers")
         if kind == "part" and d.get("category") == "esc":
             def _isnum(x, lo, hi):
                 return isinstance(x, (int, float)) and not isinstance(x, bool) and lo <= x <= hi
@@ -1037,6 +1098,12 @@ def main():
             rm = d.get("resistance_mohm")
             if rm is not None and not _isnum(rm, 0.01, 100):
                 errors.append(f"{path}: resistance_mohm {rm!r} should be the internal resistance in milliohms (0.01..100)")
+        if kind == "part":
+            present = [k for k in CHARGER_FIELDS if k in d]
+            if present and d.get("category") != "charger":
+                errors.append(f"{path}: {', '.join(present)} only on chargers (category charger)")
+            if d.get("category") == "charger":
+                errors.extend(check_charger(path, d))
         if kind == "part" and any(k in d for k in SERVO_FIELDS) and d.get("category") != "servo":
             errors.append(f"{path}: {', '.join(k for k in SERVO_FIELDS if k in d)} only on servos (category servo)")
         if kind == "part" and d.get("category") == "servo":

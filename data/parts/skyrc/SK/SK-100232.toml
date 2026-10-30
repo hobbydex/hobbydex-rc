@@ -15,3 +15,11 @@ documents = ["doc/skyrc/sk-100232-manual"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/q500neo" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "pb"]
+power_ac_w = 500
+power_dc_w = 1000
+charge_current_a = 25
+ac_input_v = [100, 240]
+dc_input_v = [9, 36]
+nimh_cells = [1, 15]
+charger_source = "doc/skyrc/sk-100232-manual"

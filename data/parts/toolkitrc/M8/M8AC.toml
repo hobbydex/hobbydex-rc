@@ -13,3 +13,9 @@ documents = ["doc/toolkitrc/m8ac-manual"]
 links = [
   { site = "ToolkitRC", url = "https://www.toolkitrc.com/m8ac/" },
 ]
+charges = ["lipo", "lihv", "life", "nimh", "pb"]
+charge_current_a = 20
+ac_input_v = [100, 240]
+dc_input_v = [7, 35]
+nimh_cells = [1, 20]
+charger_source = "doc/toolkitrc/m8ac-manual"
