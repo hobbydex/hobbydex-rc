@@ -1,0 +1,16 @@
+id = "part/fms/APSC22073"
+brand = "brand/fms"
+number = "APSC22073"
+name = "11023 PIN 3*33MM"
+fits = [
+  { kit = "kit/fms/ford-f100", type = "direct", source = "doc/fms/cml-distribution-spares", notes = "Known from the distributor: CML Distribution's title names the car" },
+  { kit = "kit/fms/ford-f100-monster-truck", type = "direct", source = "doc/fms/cml-distribution-spares", notes = "Known from the distributor: CML Distribution's title names the car" },
+]
+documents = ["doc/fms/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/APSC22073/fms-11023-pin-3-33mm", kind = "dealer" },
+]
+category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/3x33", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
