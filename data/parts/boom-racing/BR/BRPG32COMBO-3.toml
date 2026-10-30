@@ -8,7 +8,17 @@ links = [
 ]
 pack_qty_basis = "name"
 category = "pinion"
-equivalent_to = [
-  { spec = "spec/pinion/32dp-9t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
-]
 material = "steel"
+includes = [
+  { spec = "spec/pinion/32dp-9t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-10t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-11t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-12t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-13t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-14t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-15t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-16t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-17t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-18t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/32dp-19t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]
