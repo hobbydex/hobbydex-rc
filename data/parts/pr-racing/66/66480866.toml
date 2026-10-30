@@ -12,3 +12,6 @@ applies_to = "PR S1"
 documents = ["doc/pr-racing/pr-rc-com"]
 ball_type = "stud"
 links = [ { site = "PR Racing", url = "https://www.pr-rc.com/pdt_view.asp?sn=2064" } ]
+includes = [
+  { spec = "spec/nut/m3-hex", qty = 1, notes = "Size from this item's words in the manufacturer's name" },
+]
