@@ -25,3 +25,10 @@ fits = [
   { kit = "kit/redcat/tr-mt8e", type = "direct", source = "doc/redcat/store" },
 ]
 weight_g = 550
+charges = ["lipo", "life"]
+channels = 2
+ac_input_v = [100, 240]
+dc_input_v = [10, 18]
+lipo_cells = [2, 4]
+balance_ports = ["JST-XH"]
+charger_source = "https://www.redcatracing.com/products/hx-530"

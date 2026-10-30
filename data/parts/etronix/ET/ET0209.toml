@@ -8,3 +8,11 @@ links = [
   { site = "Etronix", url = "https://www.etronix-rc.com/index.php?route=product/product&product_id=408" },
 ]
 documents = ["doc/etronix/et0209", "doc/etronix/french-et0209"]
+mains_plug = "UK"
+mains_plug_basis = "name"
+charges = ["lipo", "nimh"]
+charge_current_a = 1
+ac_input_v = [100, 240]
+nimh_cells = [1, 8]
+lipo_cells = [2, 3]
+charger_source = "https://www.etronix-rc.com/index.php?route=product/product&product_id=408"
