@@ -8,3 +8,7 @@ notes = "Number read from an ARRMA exploded view (ARA110002-Exploded-Views.pdf);
 documents = ["doc/arrma/ara110002-exploded-views", "doc/arrma/ara5810-parts-explosion-multi"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/arrma/kraton-8s", type = "direct", source = "doc/arrma/ara110002-exploded-views", notes = "Listed in the parts list of ARA110002T1" },
+  { kit = "kit/arrma/outcast-8s", type = "direct", source = "doc/arrma/ara5810-parts-explosion-multi", notes = "Listed in the parts list of ARA5810" },
+]

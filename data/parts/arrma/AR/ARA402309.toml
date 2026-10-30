@@ -8,7 +8,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-1-10-painted-body-blue-senton-4x4-mega/ARA402309.html" },
 ]
 fits = [
-  { kit = "kit/arrma/senton", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/senton", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/senton-mega", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/senton-boost", type = "direct", source = "doc/arrma/ara4103v4-exploded-view-multi", notes = "Listed in the parts list of ARA4103SV4T2" },
 ]
 category = "body"
 scale = "1/10"

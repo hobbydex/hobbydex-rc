@@ -8,9 +8,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-1-10-painted-body-red-granite-4x4-mega/ARA402303.html" },
 ]
 fits = [
-  { kit = "kit/arrma/granite", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/granite-boost", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/arrma/vorteks-boost", type = "replaces", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/arrma/granite-mega", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/granite", type = "direct", source = "doc/arrma/ara4302v3-exploded-view", notes = "Listed in the parts list of ARA4302V3T2" },
 ]
 category = "body"
 scale = "1/10"
