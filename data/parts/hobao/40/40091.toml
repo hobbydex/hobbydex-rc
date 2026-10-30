@@ -12,3 +12,6 @@ material = "steel"
 fits = [
   { kit = "kit/hobao/hyper-ex10", type = "direct", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+includes = [
+  { spec = "spec/nut/m2.6-hex", notes = "Size from this item's words in the manufacturer's name" },
+]

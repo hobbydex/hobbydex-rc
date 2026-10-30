@@ -2,8 +2,13 @@ id = "part/xpress/XP-10700"
 brand = "brand/xpress"
 number = "XP-10700"
 name = "Graphite 2.25mm Main Chassis Plate For Arrow AT1"
+seen_by = "2022-07-29"
+seen_by_source = "https://web.archive.org/web/20220729024259/https://www.rc-xpress.com/arrow-at1-parts"
 links = [
   { site = "Xpress", url = "https://www.rc-xpress.com/xpress-2-25mm-graphite-main-chassis-plate-for-arrow-at1-xp-10700-00118209" },
 ]
 numbers = ["00118209"]
 category = "chassis"
+fits = [
+  { kit = "kit/xpress/at1", type = "replaces", source = "doc/xpress/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

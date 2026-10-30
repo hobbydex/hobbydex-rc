@@ -2,8 +2,13 @@ id = "part/xpress/XP-10017"
 brand = "brand/xpress"
 number = "XP-10017"
 name = "2.0mm Graphite Chassis For K1"
+seen_by = "2020-08-09"
+seen_by_source = "https://web.archive.org/web/20200809080837/https://www.rc-xpress.com/20mm-graphite-chassis-for-k1-xp-10017-00070077"
 links = [
   { site = "Xpress", url = "https://www.rc-xpress.com/20mm-graphite-chassis-for-k1-xp-10017-00070077" },
 ]
 numbers = ["00070077"]
 category = "chassis"
+fits = [
+  { kit = "kit/xpress/k1", type = "replaces", source = "doc/xpress/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

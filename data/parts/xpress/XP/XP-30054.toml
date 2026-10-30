@@ -2,8 +2,13 @@ id = "part/xpress/XP-30054"
 brand = "brand/xpress"
 number = "XP-30054"
 name = "Execute XQ11 Logo Sticker Decal A6 148x105mm"
+seen_by = "2023-10-12"
+seen_by_source = "https://web.archive.org/web/20231012011824/https://www.rc-xpress.com/blog/Execute-XQ2S-Mid-Motor-Conversion-Kit"
 links = [
   { site = "Xpress", url = "https://www.rc-xpress.com/xpress-execute-xq11-logo-sticker-decal-a6-148x105mm-xp-30054-00126405" },
 ]
 numbers = ["00126405"]
 category = "decal"
+fits = [
+  { kit = "kit/xpress/xq11", type = "direct", source = "doc/xpress/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

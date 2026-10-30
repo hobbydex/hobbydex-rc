@@ -2,8 +2,13 @@ id = "part/xpress/XP-10954"
 brand = "brand/xpress"
 number = "XP-10954"
 name = "2.5mm Graphite 1/8 Motor Mount Plate For Dragnalo DR1S"
+seen_by = "2023-10-12"
+seen_by_source = "https://web.archive.org/web/20231012011824/https://www.rc-xpress.com/blog/Execute-XQ2S-Mid-Motor-Conversion-Kit"
 links = [
   { site = "Xpress", url = "https://www.rc-xpress.com/xpress-dr1s-2-5mm-graphite-motor-mount-plate-for-1-8-motor-xp-10954-00112213" },
 ]
 numbers = ["00112213"]
 category = "chassis"
+fits = [
+  { kit = "kit/xpress/dr1s", type = "replaces", source = "doc/xpress/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -6,3 +6,7 @@ category = "spur-gear"
 links = [
   { site = "RW Racing", url = "https://rwracing.co.uk/shop/ols/products/schumacher-mi3mi4-spur-gear" },
 ]
+fits = [
+  { kit = "kit/schumacher/mi3", type = "replaces", source = "doc/rw-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/schumacher/mi4", type = "replaces", source = "doc/rw-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

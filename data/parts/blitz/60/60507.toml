@@ -14,3 +14,8 @@ includes = [
   { part = "part/blitz/60507-ac", qty = 1 },
 ]
 documents = ["doc/blitz/team-titan-flyers"]
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "replaces", source = "doc/blitz/team-titan-flyers", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/rc8b4", type = "replaces", source = "doc/blitz/team-titan-flyers", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/rc8b41", type = "replaces", source = "doc/blitz/team-titan-flyers", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

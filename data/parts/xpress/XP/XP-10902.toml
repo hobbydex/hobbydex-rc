@@ -2,8 +2,13 @@ id = "part/xpress/XP-10902"
 brand = "brand/xpress"
 number = "XP-10902"
 name = "Execute FM1S 2.0mm Aluminum Main Chassis 210mm"
+seen_by = "2021-08-02"
+seen_by_source = "https://web.archive.org/web/20210802033405/https://www.rc-xpress.com/blog/Execute-FM1S-Aluminum-Chassis-More-Stability-and-Consistency"
 links = [
   { site = "Xpress", url = "https://www.rc-xpress.com/xpress-2mm-aluminum-main-chassis-210mm-for-execute-fm1s-xp-10902-00108715" },
 ]
 numbers = ["00108715"]
 category = "chassis"
+fits = [
+  { kit = "kit/xpress/fm1s", type = "replaces", source = "doc/xpress/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

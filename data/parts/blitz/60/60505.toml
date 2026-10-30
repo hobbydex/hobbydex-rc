@@ -11,3 +11,6 @@ notes = "Polycarbonate 1.0 mm thick"
 thickness_mm = 1
 thickness_basis = "name"
 documents = ["doc/blitz/team-titan-flyers"]
+fits = [
+  { kit = "kit/xray/xb8", type = "replaces", source = "doc/blitz/team-titan-flyers", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

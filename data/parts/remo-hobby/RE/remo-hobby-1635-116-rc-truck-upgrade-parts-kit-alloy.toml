@@ -5,3 +5,6 @@ material = "aluminium"
 links = [{ site = "remohobbyrc.com", url = "https://www.remohobbyrc.com/remo-hobby-1635-parts/346-remo-hobby-1635-116-rc-truck-upgrade-parts-kit-alloy.html", kind = "dealer" }]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/remo-hobby/1635", type = "replaces", source = "doc/remo-hobby/dealer-store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

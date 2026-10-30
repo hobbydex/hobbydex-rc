@@ -2,8 +2,13 @@ id = "part/xpress/XP-10765"
 brand = "brand/xpress"
 number = "XP-10765"
 name = "Execute FM1S 239mm Wheelbase 2mm Graphite Rear Top Deck"
+seen_by = "2023-10-12"
+seen_by_source = "https://web.archive.org/web/20231012011824/https://www.rc-xpress.com/blog/Execute-XQ2S-Mid-Motor-Conversion-Kit"
 links = [
   { site = "Xpress", url = "https://www.rc-xpress.com/xpress-fm1s-239mm-2mm-graphite-rear-top-deck-xp-10765-00102698" },
 ]
 numbers = ["00102698"]
 category = "chassis"
+fits = [
+  { kit = "kit/xpress/fm1s", type = "replaces", source = "doc/xpress/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

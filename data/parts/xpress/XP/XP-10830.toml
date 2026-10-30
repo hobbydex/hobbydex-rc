@@ -2,8 +2,13 @@ id = "part/xpress/XP-10830"
 brand = "brand/xpress"
 number = "XP-10830"
 name = "Execute XQ2S Mid Mount FWD Conversion Kit 3.0mm FRP Servo Mount Plate"
+seen_by = "2021-06-13"
+seen_by_source = "https://web.archive.org/web/20210613194524/https://www.rc-xpress.com/catalog/product_info.php?cPath=39&products_id=488"
 links = [
   { site = "Xpress", url = "https://www.rc-xpress.com/xpress-execute-xq2s-3mm-frp-servo-mount-plate-xp-10830-00106702" },
 ]
 numbers = ["00106702"]
 category = "chassis"
+fits = [
+  { kit = "kit/xpress/xq2s", type = "replaces", source = "doc/xpress/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

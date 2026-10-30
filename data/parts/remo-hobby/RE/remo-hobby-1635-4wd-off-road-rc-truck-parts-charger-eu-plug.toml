@@ -5,3 +5,6 @@ category = "charger"
 links = [{ site = "remohobbyrc.com", url = "https://www.remohobbyrc.com/remo-hobby-1635-parts/389-remo-hobby-1635-4wd-off-road-rc-truck-parts-charger-eu-plug.html", kind = "dealer" }]
 mains_plug = "EU"
 mains_plug_basis = "name"
+fits = [
+  { kit = "kit/remo-hobby/1635", type = "direct", source = "doc/remo-hobby/dealer-store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

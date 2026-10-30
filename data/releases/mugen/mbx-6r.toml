@@ -7,9 +7,10 @@ kind = "kit"
 power = "nitro"
 power_source = "kit"
 status = "discontinued"
-seen_by = "2016-03"
-seen_by_source = "https://web.archive.org/web/20160308095546/http://mugenseiki.co.jp/mugen/download/manual/manual_e0080.pdf"
-documents = ["doc/mugen/mbx-6r-part-list", "doc/mugen/mbx-6r-part-list-ja"]
+announced = "2011-10-20"
+announced_source = "https://www.redrc.net/2011/10/mugen-seiki-mbx6r-buggy/"
+links = [{ site = "Red RC", url = "https://www.redrc.net/2011/10/mugen-seiki-mbx6r-buggy/", kind = "press" }]
+documents = ["doc/mugen/mbx-6r-part-list", "doc/mugen/mbx-6r-part-list-ja", "doc/mugen/mbx-6r-manual-eu"]
 contains = [
   { part = "part/mugen/B0104", role = "kit", source = "doc/mugen/mbx-6r-part-list" },
   { part = "part/mugen/E0104-B", role = "kit", source = "doc/mugen/mbx-6r-part-list" },
