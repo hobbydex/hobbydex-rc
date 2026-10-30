@@ -7,3 +7,7 @@ links = [
 ]
 numbers = ["00079400"]
 category = "chassis"
+fits = [
+  { kit = "kit/xpress/xm1", releases = ["release/xpress/XP-90004"], type = "replaces", source = "doc/xpress/xpress-execute-xm1-xp-90004-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/xpress/xm1s", releases = ["release/xpress/XP-90005"], type = "replaces", source = "doc/xpress/xpress-execute-xm1s-xp-90021-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
