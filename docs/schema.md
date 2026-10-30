@@ -187,7 +187,7 @@ A manual the maker publishes for the platform itself (Tamiya's chassis manuals, 
 One sold product: a yearly edition, a Carpet or Dirt version, an RTR, a
 re-release. Keyed by manufacturer item number when there is one, otherwise by a
 slug (`xb4-2013`, `xb8e-2021`). `status` is
-announced | released | discontinued. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
+announced | released | discontinued. A release whose `released` (or `year`) is still to come is `announced`, never `released`: validate.py checks it at year, month and day precision. Nothing flips the status by hand when the day passes: the site shows an announced release as released once the last day of its `released` period is over (hobbydex src/lib/data.ts statusOf, computed at build time by the daily deploy); the TOML is corrected on the next import. `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 
 `kind` (optional: left out when no source states the build) is the build the buyer gets, one of kit | rtr | arr | roller | print:
 
