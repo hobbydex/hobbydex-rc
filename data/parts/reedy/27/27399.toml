@@ -1,0 +1,17 @@
+id = "part/reedy/27399"
+brand = "brand/reedy"
+number = "27399"
+name = "1500MAH 7.4V LIPO BATTERY (MT12+)"
+numbers = ["AS27399"]
+documents = ["doc/reedy/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/AS27399/reedy-1500mah-7-4v-lipo-battery-mt12", kind = "dealer" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1500
+voltage = 7.4
