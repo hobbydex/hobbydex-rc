@@ -8,7 +8,12 @@ links = [
 ]
 pack_qty_basis = "name"
 category = "pinion"
-equivalent_to = [
-  { spec = "spec/pinion/48dp-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
-]
 material = "steel"
+includes = [
+  { spec = "spec/pinion/48dp-16t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/48dp-17t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/48dp-18t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/48dp-19t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/48dp-20t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/48dp-21t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]
