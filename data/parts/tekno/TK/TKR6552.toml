@@ -8,3 +8,6 @@ links = [
 applies_to = "EB410"
 gtin = "815076018619"
 category = "suspension"
+fits = [
+  { kit = "kit/tekno/et410", releases = ["release/tekno/et410"], type = "replaces", source = "doc/tekno/et410instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

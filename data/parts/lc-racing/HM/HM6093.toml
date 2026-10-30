@@ -4,3 +4,6 @@ number = "HM6093"
 name = "CVD DOFBONE"
 category = "drivetrain"
 documents = ["doc/lc-racing/l6043-product-page"]
+fits = [
+  { kit = "kit/lc-racing/emb-tgh", releases = ["release/lc-racing/emb-tgh"], type = "replaces", source = "doc/lc-racing/emb-tgh-truggy-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

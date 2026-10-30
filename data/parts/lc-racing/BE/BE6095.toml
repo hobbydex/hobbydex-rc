@@ -4,3 +4,7 @@ number = "BE6095"
 name = "RALLY BUMPER EVA"
 category = "bumper-guard"
 documents = ["doc/lc-racing/l6040-product-page"]
+fits = [
+  { kit = "kit/lc-racing/emb-tgh", releases = ["release/lc-racing/emb-tgh"], type = "replaces", source = "doc/lc-racing/emb-tgh-truggy-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/lc-racing/emb-wrc", releases = ["release/lc-racing/emb-wrch"], type = "replaces", source = "doc/lc-racing/emb-wrch-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
