@@ -2,6 +2,8 @@ id = "part/schumacher/U7729"
 brand = "brand/schumacher"
 number = "U7729"
 name = "Pro-Ball Bearing 5x9x3 Sealed - (pr)"
+seen_by = "2021-05-11"
+seen_by_source = "https://www.racing-cars.com/sitemap_0.xml"
 notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 category = "bearing"
 fits = [
@@ -13,3 +15,8 @@ fits = [
 ]
 documents = ["doc/schumacher/atom3-exploded-diagram", "doc/schumacher/cat-l1-evo-exploded", "doc/schumacher/catl1r-exploded-diagram-v2", "doc/schumacher/cougar-laydown-exploded", "doc/schumacher/storm-st-exploded"]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/bearing/5x9x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/atom-3/pro-ball-bearing-5x9x3-sealed-pr-u7729" } ]
