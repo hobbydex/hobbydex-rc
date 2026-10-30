@@ -13,3 +13,7 @@ color = "yellow"
 range = "tekno/shock-spring-set-x-free-rate-springs"
 documents = ["doc/tekno/spring-bearing-charts"]
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr8772-lf-shock-spring-set-rear-1-6x15-3-2-59lbin-85mm-yellow/" } ]
+fits = [
+  { kit = "kit/tekno/eb48-4", releases = ["release/tekno/eb48-4"], type = "replaces", source = "doc/tekno/eb48-4instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48-4", releases = ["release/tekno/nb48-4"], type = "replaces", source = "doc/tekno/nb48-4instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

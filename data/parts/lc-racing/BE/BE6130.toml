@@ -4,3 +4,6 @@ number = "BE6130"
 name = "DT BODY(PVC)"
 category = "body"
 documents = ["doc/lc-racing/emb-tgh-truggy-exploded-view"]
+fits = [
+  { kit = "kit/lc-racing/emb-tgh", releases = ["release/lc-racing/emb-tgh"], type = "replaces", source = "doc/lc-racing/emb-tgh-truggy-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

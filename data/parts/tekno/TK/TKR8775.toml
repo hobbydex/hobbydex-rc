@@ -9,3 +9,7 @@ free_length_mm = 85
 color = "blue"
 range = "tekno/shock-spring-set-x-free-rate-springs"
 documents = ["doc/tekno/spring-bearing-charts"]
+fits = [
+  { kit = "kit/tekno/eb48-4", releases = ["release/tekno/eb48-4"], type = "replaces", source = "doc/tekno/eb48-4instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48-4", releases = ["release/tekno/nb48-4"], type = "replaces", source = "doc/tekno/nb48-4instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

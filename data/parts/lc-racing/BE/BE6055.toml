@@ -5,3 +5,6 @@ name = "1/14 SC BODY(PVC)"
 category = "body"
 scale = "1/14"
 documents = ["doc/lc-racing/emb-dth-exploded-view", "doc/lc-racing/emb-mth-exploded-view", "doc/lc-racing/emb-sc-th-exploded-view"]
+fits = [
+  { kit = "kit/lc-racing/emb-tgh", releases = ["release/lc-racing/emb-tgh"], type = "replaces", source = "doc/lc-racing/emb-tgh-truggy-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
