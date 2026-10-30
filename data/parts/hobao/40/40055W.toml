@@ -1,0 +1,17 @@
+id = "part/hobao/40055W"
+brand = "brand/hobao"
+number = "40055W"
+name = "H2 REAR WHEEL - WHITE (2)"
+numbers = ["H40055W"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H40055W/hobao-h2-rear-wheel-white-2", kind = "dealer" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "wheel"
+color = "white"
+position = "rear"
+fits = [
+  { kit = "kit/hobao/h2", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

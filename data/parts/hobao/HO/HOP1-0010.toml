@@ -1,0 +1,16 @@
+id = "part/hobao/HOP1-0010"
+brand = "brand/hobao"
+number = "HOP1-0010"
+name = "H2 SHOCK SPRINGS HARD - ORANGE 66mm 0.6kgf/cm"
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/HOP1-0010/hobao-h2-shock-springs-hard-orange-66mm-0-6kgf-cm", kind = "dealer" },
+]
+category = "shock-spring"
+color = "orange"
+rate = "hard"
+free_length_mm = 66
+range = "hobao/h-shock-springs-kgf-cm-free-rate-springs"
+fits = [
+  { kit = "kit/hobao/h2", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

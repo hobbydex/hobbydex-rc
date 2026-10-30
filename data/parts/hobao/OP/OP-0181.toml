@@ -1,0 +1,15 @@
+id = "part/hobao/OP-0181"
+brand = "brand/hobao"
+number = "OP-0181"
+name = "HYPER VS2E CNC 7075 ALUMINIUM LIGHTWEIGHT CHASSIS - ELECTRIC"
+numbers = ["HOP-0181"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/HOP-0181/hobao-hyper-vs2e-cnc-7075-aluminium-lightweight-chassis-electric", kind = "dealer" },
+]
+category = "chassis"
+material = "aluminium"
+material_grade = "7075"
+fits = [
+  { kit = "kit/hobao/hyper-vs2e", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

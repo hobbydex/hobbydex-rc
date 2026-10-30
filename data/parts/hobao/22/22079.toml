@@ -1,0 +1,15 @@
+id = "part/hobao/22079"
+brand = "brand/hobao"
+number = "22079"
+name = "GPX4/EPX WHEEL HUB (4)"
+numbers = ["H22079"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H22079/hobao-gpx4-epx-wheel-hub-4", kind = "dealer" },
+]
+pack_qty = 4
+pack_qty_basis = "name"
+category = "drivetrain"
+fits = [
+  { kit = "kit/hobao/gpx4", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
