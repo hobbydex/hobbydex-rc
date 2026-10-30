@@ -1,0 +1,18 @@
+id = "part/reedy/27620"
+brand = "brand/reedy"
+number = "27620"
+name = "STOCKSTAR 480MAH 65C 7.4 V LIPO STICK BATTERY (FOR 1:28)"
+numbers = ["AS27620"]
+documents = ["doc/reedy/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/AS27620/reedy-stockstar-480mah-65c-7-4-v-lipo-stick-battery-for-1-28", kind = "dealer" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-480mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 480
+c_rating = 65
+voltage = 7.4
