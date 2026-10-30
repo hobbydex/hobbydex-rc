@@ -178,6 +178,7 @@ def load_tools(tools):
             out["doc_links"] = mod
         except Exception as e:
             print(f"note: sync_doc_links not loaded ({e})", file=sys.stderr)
+    out["manual_mod"] = None
     out["manual_kind"] = None   # the kind a manual's file name states (tools/link_manual_numbers.py): None for safety sheets, press releases, gear tables
     lmn = os.path.join(tools, "tools", "link_manual_numbers.py")
     if os.path.exists(lmn):
@@ -187,6 +188,7 @@ def load_tools(tools):
         try:
             spec.loader.exec_module(mod)
             out["manual_kind"] = mod.kind_from_name
+            out["manual_mod"] = mod   # file_url: a cached copy's address by its name (the linker's rule)
         except Exception as e:  # the manual check counts every file without it
             print(f"note: link_manual_numbers not loaded ({e})", file=sys.stderr)
         finally:
@@ -288,7 +290,7 @@ def load_tools(tools):
                 with open(os.path.join(srcdir, fn), "rb") as f:
                     items += tomllib.load(f).get("item", [])
         out["sources"] = items
-    cache = os.path.join(tools, "cache")
+    cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
     # the hardware photo reader (its cache lookups; it reads no photo itself in the audit)
@@ -611,6 +613,10 @@ def main():
             for path, url in con.execute("select path, url from queue where kind='pdf'"):
                 url_of.setdefault(os.path.relpath(path, tools["cache"]) if path.startswith(tools["cache"]) else path, url)
             con.close()
+        # a copy cached under another item's number has no crawl row of its own: its address is the row of its name
+        # (tools/link_manual_numbers.py file_url), so a document linked through one copy links every copy
+        lmn = tools["manual_mod"]
+        urls_by_name = lmn.queue_urls_by_name(tools["cache"]) if lmn and hasattr(lmn, "file_url") else {}
         by_name = collections.defaultdict(list)
         by_url = collections.defaultdict(list)
         for d in docs.values():
@@ -623,7 +629,9 @@ def main():
         kind_unknown = 0     # the name states no manual kind and says nothing else: still a gap, counted apart
         for rel_path in cached:
             name = os.path.basename(rel_path)
-            ds = by_name.get(name, []) + by_url.get(url_of.get(rel_path), [])
+            url = url_of.get(rel_path) or (lmn.file_url(os.path.join(tools["cache"], rel_path), {}, urls_by_name)
+                                           if lmn and hasattr(lmn, "file_url") else None)
+            ds = by_name.get(name, []) + (by_url.get(url, []) if url else [])
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
                 stem = re.sub(r"(?i)\.pdf$", "", name)
