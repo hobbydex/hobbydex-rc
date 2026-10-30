@@ -14,3 +14,6 @@ equivalent_to = [
   { spec = "spec/nut/m4-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "aluminium"
+fits = [
+  { kit = "kit/hobao/dc-1", type = "direct", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

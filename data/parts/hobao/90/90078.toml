@@ -12,3 +12,7 @@ pack_qty_basis = "name"
 category = "shock-spring"
 free_length_mm = 50
 range = "hobao/hyper-gtb-gts-shock-spring-kgf-cm-free-springs"
+fits = [
+  { kit = "kit/hobao/hyper-gtb", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/hobao/hyper-gts", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

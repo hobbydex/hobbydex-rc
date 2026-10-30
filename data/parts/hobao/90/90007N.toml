@@ -8,3 +8,7 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H90007N/hobao-hyper-ss-cage-gtb-gts-rear-lower-arm-set-new", kind = "dealer" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/hobao/hyper-cage", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/hobao/hyper-ss", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -8,3 +8,6 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/HOP-0043/hobao-hyper-gtb-nitro-2-speed-spur-gear-20t-24t", kind = "dealer" },
 ]
 category = "spur-gear"
+fits = [
+  { kit = "kit/hobao/hyper-gtb", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

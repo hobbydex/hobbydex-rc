@@ -12,3 +12,6 @@ related = [
   { part = "part/hobao/85100", relation = "for", notes = "link_part_refs" },
   { part = "part/hobao/85110", relation = "for", notes = "link_part_refs" },
 ]
+fits = [
+  { kit = "kit/hobao/hyper-ss", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -12,3 +12,6 @@ equivalent_to = [
   { spec = "spec/washer/3.1x6x20", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "aluminium"
+fits = [
+  { kit = "kit/hobao/extreme-vte2-v2", type = "direct", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

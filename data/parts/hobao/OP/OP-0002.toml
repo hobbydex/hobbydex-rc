@@ -8,3 +8,7 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/HOP-0002/hobao-hyper-ss-vs-cage-gtb-cnc-steering-knuckle-set", kind = "dealer" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/hobao/hyper-ss", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/hobao/hyper-vs", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

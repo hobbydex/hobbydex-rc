@@ -8,3 +8,6 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H85149/hobao-hyper-gt2-2-speed-pinion-gear-15t-19t", kind = "dealer" },
 ]
 category = "pinion"
+fits = [
+  { kit = "kit/hobao/hyper-gt2", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

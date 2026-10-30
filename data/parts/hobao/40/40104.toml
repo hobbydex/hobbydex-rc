@@ -9,3 +9,6 @@ documents = ["doc/hobao/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H40104/hobao-hyper-ex10-cnc-alum-differential-cap-w-bushing", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/hobao/hyper-ex10", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
