@@ -13,3 +13,9 @@ documents = ["doc/toolkitrc/m7ac-manual"]
 links = [
   { site = "ToolkitRC", url = "https://www.toolkitrc.com/m7ac/" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "pb"]
+charge_current_a = 15
+ac_input_v = [100, 240]
+dc_input_v = [7, 28]
+nimh_cells = [1, 6]
+charger_source = "doc/toolkitrc/m7ac-manual"

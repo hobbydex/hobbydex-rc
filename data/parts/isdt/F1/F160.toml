@@ -12,3 +12,8 @@ notes = "Specifications: Input Voltage Range: 200-240V~ 50Hz 2.5A (EU); / 110-13
 links = [
   { site = "ISDT", url = "https://www.isdt.co/f160.html?lang=en" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nicd", "pb"]
+charge_current_a = 5
+ac_input_v = [200, 240]
+nimh_cells = [4, 12]
+charger_source = "https://www.isdt.co/f160.html?lang=en"

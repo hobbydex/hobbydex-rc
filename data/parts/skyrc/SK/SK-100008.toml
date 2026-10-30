@@ -15,3 +15,9 @@ documents = ["doc/skyrc/sk-100008-manual", "doc/skyrc/sk-100008-manual-2"]
 links = [
   { site = "SkyRC", url = "https://www.skyrc.com/iMAX_B6AC_V2_Charger" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "pb"]
+charge_current_a = 6
+ac_input_v = [100, 240]
+dc_input_v = [11, 18]
+nimh_cells = [1, 15]
+charger_source = "https://www.skyrc.com/iMAX_B6AC_V2_Charger"

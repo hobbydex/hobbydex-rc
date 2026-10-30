@@ -13,3 +13,10 @@ documents = ["doc/toolkitrc/m6dac-manual"]
 links = [
   { site = "ToolkitRC", url = "https://www.toolkitrc.com/m6dac/" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "pb"]
+power_ac_w = 200
+channels = 2
+ac_input_v = [100, 240]
+dc_input_v = [7, 28]
+nimh_cells = [1, 6]
+charger_source = "https://www.toolkitrc.com/m6dac/"
