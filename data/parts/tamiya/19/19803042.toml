@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "bearing"
 links = [ { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-740-ball-bearing-42317/", kind = "maker" } ]
+equivalent_to = [
+  { spec = "spec/bearing/4x7x2.5", match = "close", notes = "Tamiya size code 740: 7 mm outer, 4 mm bore, 2.5 mm wide (usual width for this size, not confirmed for Tamiya)" },
+]

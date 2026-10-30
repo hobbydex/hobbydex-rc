@@ -9,3 +9,6 @@ name_source = "ocr"
 category = "bearing"
 documents = ["doc/tamiya/42389-manual"]
 links = [ { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-ball-bearing-42389/", kind = "maker" } ]
+equivalent_to = [
+  { spec = "spec/bearing/flanged-6x10x3", match = "close", notes = "Tamiya size code 1060: 10 mm outer, 6 mm bore, 3 mm wide (usual width for this size, not confirmed for Tamiya)" },
+]
