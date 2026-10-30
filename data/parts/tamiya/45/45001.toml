@@ -10,3 +10,6 @@ links = [
 category = "misc"
 category_source = "fallback"
 documents = ["doc/tamiya/45001-tamtech-201"]
+fits = [
+  { kit = "kit/tamiya/tamtech", type = "replaces", source = "doc/tamiya/45001-tamtech-201", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
