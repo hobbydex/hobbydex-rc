@@ -769,8 +769,11 @@ def main():
         results["colour-word-no-color"] = {"fix": "hobbydex-tools link_part_colours.py not found (--tools)", "count": None, "examples": [], "all": []}
 
     # 12. releases named only by their number
+    # a release whose name is a model code is fine when the maker's own page for it names the code as its title:
+    # sources.name then holds that page (checked by hand against the title, see docs/schema.md "sources")
     check("release-named-by-number", "give the release its product name from the maker's page",
-          [r for r in rels if re.fullmatch(r"[\w-]*\d[\w-]*", r.get("name", "")) and r.get("name") == r.get("number", r.get("name"))])
+          [r for r in rels if re.fullmatch(r"[\w-]*\d[\w-]*", r.get("name", "")) and r.get("name") == r.get("number", r.get("name"))
+           and not (r.get("sources") or {}).get("name")])
 
     # 13. platforms with no manual or product page linked
     def page_docs(r):
