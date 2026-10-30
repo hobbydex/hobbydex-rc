@@ -18,3 +18,7 @@ fits = [
   { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
 ]
+includes = [
+  { spec = "spec/ring-pinion/ring-29t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-10t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]

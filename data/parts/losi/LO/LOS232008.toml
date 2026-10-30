@@ -12,3 +12,7 @@ fits = [
   { kit = "kit/losi/baja-rey", type = "direct", source = "doc/losi/horizon-product-catalogue" },
 ]
 category = "pinion"
+includes = [
+  { spec = "spec/ring-pinion/ring-40t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-14t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]

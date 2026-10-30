@@ -137,6 +137,7 @@ SPEC_TYPES = {
     "nut": {"hex", "nylon-lock", "metal-lock", "lock", "flanged", "flanged-lock", "flanged-nylon-lock", "serrated-flange",
             "serrated-flange-nylon-lock", "dome", "flanged-dome", "square", "knurled", "wing", "wheel"},
     "ball-end": {"stud", "nut", "through-hole", "set-screw"},   # docs/schema.md "Ball-end specs"
+    "ring-pinion": {"ring", "pinion"},   # docs/schema.md "Ring and pinion specs"
 }
 NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that come in a regular and a thin height
 
@@ -1251,6 +1252,18 @@ def main():
                     errors.append(f"{path}: flange_source should be the catalogue page URL")
         if kind == "spec" and d.get("category") in SIZE_SPEC_CATS:
             errors.extend(size_spec_problems(path, d))
+        if kind == "spec" and d.get("category") == "ring-pinion":
+            t, tt = d.get("type"), d.get("teeth")
+            if not isinstance(tt, int) or isinstance(tt, bool) or not 5 <= tt <= 100:
+                errors.append(f"{path}: ring-pinion spec needs teeth, a whole tooth count from 5 to 100")
+            elif "pitch_dp" in d and "module" in d:
+                errors.append(f"{path}: ring-pinion spec has pitch_dp or module, not both")
+            else:
+                pitch = f"-{d['pitch_dp']}dp" if "pitch_dp" in d else f"-mod{d['module']:g}" if "module" in d else ""
+                if d["id"] != f"spec/ring-pinion/{t}-{tt}t{pitch}":
+                    errors.append(f"{path}: ring-pinion spec id should be spec/ring-pinion/{t}-{tt}t{pitch} (type, teeth, then the pitch when stated)")
+            if "pitch_dp" in d and d["pitch_dp"] not in (32, 48, 64):
+                errors.append(f"{path}: ring-pinion pitch_dp {d['pitch_dp']!r} should be 32, 48 or 64")
         if kind == "spec" and d.get("category") == "eclip":
             s = d.get("shaft_mm")
             if not isinstance(s, (int, float)) or isinstance(s, bool) or not 1 <= s <= 12:

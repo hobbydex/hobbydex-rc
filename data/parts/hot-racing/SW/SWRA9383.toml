@@ -16,3 +16,7 @@ fits = [
   { kit = "kit/axial/smt10", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/axial/bomber", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
 ]
+includes = [
+  { spec = "spec/ring-pinion/ring-38t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-13t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]
