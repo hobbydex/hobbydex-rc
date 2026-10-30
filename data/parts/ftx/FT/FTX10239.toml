@@ -8,3 +8,6 @@ links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-ramraider-spares/ftx-ramraider-15t-pinion-gear" },
 ]
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

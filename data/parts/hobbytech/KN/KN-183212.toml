@@ -22,3 +22,7 @@ category = "pinion"
 teeth = 12
 pitch_dp = 32
 material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

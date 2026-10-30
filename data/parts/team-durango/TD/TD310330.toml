@@ -10,3 +10,6 @@ teeth = 30
 pitch_dp = 48
 material = "steel"
 documents = ["doc/team-durango/td102010-manual", "doc/team-durango/td102013-manual", "doc/team-durango/td102020-manual"]
+equivalent_to = [
+  { spec = "spec/pinion/48dp-30t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
