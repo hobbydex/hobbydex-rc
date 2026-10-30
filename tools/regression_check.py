@@ -20,6 +20,12 @@ when a source stated it:
   link dropped because a maker link now stands beside it is a regression too: the
   change needs its "Regressions: expected" line.
 
+A part (data/parts) added or changed by the change with no documents, links or sources
+is a regression too: its values have no provenance. Parts the change does not touch do not
+count. The fix is the same for each: run
+HOBBYDEX_RC=<worktree> python3 -I <tools>/tools/link_part_sources.py
+on the branch first (the reason printed says so).
+
 Not regressions: values added; values that only differ in form (TOML layout,
 whitespace, letter form of a URL: https, no www, no trailing slash); a convention
 value (pack_qty without a stated basis, material "unknown") replaced by any value;
@@ -276,6 +282,8 @@ class Check:
             n = parse(new[path], path) if status in "AMT" and new.get(path) is not None else None
             if o is None and n is None:
                 continue
+            if kind == "part" and n is not None and (o is None or canon(o) != canon(n)) and not has_provenance(n):
+                self.event(kind, rid, "(record)", "added" if o is None else "changed", MISSING, MISSING, True, UNSOURCED_PART)
             if o is None:
                 self.recs[kind]["added"] += 1
                 for k, v in n.items():
@@ -548,6 +556,15 @@ def canonical_removal(o, n, k, row):
                 not (canon(had) == c or (isinstance(had, list) and any(canon(x) == c for x in had))):
             return f"moved to {k2}"
     return None
+
+
+UNSOURCED_PART = ("part added or changed with no documents, links or sources; run "
+                  "HOBBYDEX_RC=<worktree> python3 -I <tools>/tools/link_part_sources.py first")
+
+
+def has_provenance(rec):
+    """A record names a document, a link or a source: where its values come from."""
+    return any(rec.get(k) for k in ("documents", "links", "sources"))
 
 
 def kind_rows(ck):
