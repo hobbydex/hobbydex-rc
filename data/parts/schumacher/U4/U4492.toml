@@ -5,3 +5,9 @@ name = "Big Bore Shocks Med - Assembled - pr"
 notes = "Name read by OCR from a scanned schumacher manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "shock"
+fits = [
+  { kit = "kit/schumacher/cat-k1-aero", type = "direct", source = "doc/schumacher/cat-k1-aero-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cat-k2", type = "direct", source = "doc/schumacher/cat-k2-exploded-links", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/kf-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-kf2", type = "direct", source = "doc/schumacher/kf2-exploded", notes = "Shown on the car's exploded diagram" },
+]
