@@ -12,3 +12,6 @@ category = "drivetrain"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
+fits = [
+  { kit = "kit/team-associated/sc10", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

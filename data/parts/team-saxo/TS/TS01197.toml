@@ -6,3 +6,6 @@ name_source = "manufacturer"
 category = "body"
 color = "clear"
 links = [{ site = "saxoracing.com", url = "https://www.saxoracing.com/products/t-saxo/car-kit/kits", kind = "maker" }]
+fits = [
+  { kit = "kit/team-saxo/mf-1-200", type = "replaces", source = "doc/team-saxo/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

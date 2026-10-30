@@ -10,3 +10,6 @@ category = "battery"
 capacity_mah = 1200
 chemistry = "liion"
 voltage = 7.4
+fits = [
+  { kit = "kit/carson/tenzu", type = "direct", source = "doc/carson/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

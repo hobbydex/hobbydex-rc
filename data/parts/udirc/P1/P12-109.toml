@@ -10,3 +10,9 @@ links = [
   { site = "UDIRC", url = "https://www.udirc.com/products/udirc-ud1203-ud1203pro-ud1204-ud1204pro-rc-car-steering-knuckle-2pcs-rear-hub-carrier-set-2pcs-black-oem-replacement-parts-p12-109" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/udirc/ud1203", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1203pro", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1204", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1204pro", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

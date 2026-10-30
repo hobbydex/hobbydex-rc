@@ -11,3 +11,9 @@ links = [
   { site = "UDIRC", url = "https://www.udirc.com/products/udirc-ud1203-ud1203pro-ud1204-ud1204pro-rc-car-suspension-arm-set-2pcs-upper-2pcs-lower-a-arms-green-oem-replacement-parts-p12-108a" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/udirc/ud1203", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1203pro", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1204", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1204pro", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

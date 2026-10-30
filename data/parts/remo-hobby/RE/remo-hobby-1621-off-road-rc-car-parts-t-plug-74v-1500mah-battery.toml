@@ -5,3 +5,6 @@ category = "battery"
 connector = "Deans"
 voltage = 7.4
 links = [{ site = "remohobbyrc.com", url = "https://www.remohobbyrc.com/remo-hobby-1621-parts/195-remo-hobby-1621-off-road-rc-car-parts-t-plug-74v-1500mah-battery.html", kind = "dealer" }]
+fits = [
+  { kit = "kit/remo-hobby/1621", type = "direct", source = "doc/remo-hobby/dealer-store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
