@@ -1,0 +1,16 @@
+id = "part/team-associated/89344"
+brand = "brand/team-associated"
+number = "89344"
+name = "RC8/T 16X38mm Shock Body"
+numbers = ["AS89344"]
+documents = ["doc/team-associated/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/AS89344/team-associated-rc8-t-16x38mm-shock-body", kind = "dealer" },
+]
+category = "shock"
+shock_part = "body"
+bore_mm = 16
+length_mm = 38
+fits = [
+  { kit = "kit/team-associated/rc8", type = "replaces", source = "doc/team-associated/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

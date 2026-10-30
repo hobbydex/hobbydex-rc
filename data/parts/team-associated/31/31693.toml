@@ -1,0 +1,14 @@
+id = "part/team-associated/31693"
+brand = "brand/team-associated"
+number = "31693"
+name = "TC7 SHOCK REBUILD KIT"
+numbers = ["AS31693"]
+documents = ["doc/team-associated/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/AS31693/team-associated-tc7-shock-rebuild-kit", kind = "dealer" },
+]
+category = "shock"
+shock_part = "rebuild-kit"
+fits = [
+  { kit = "kit/team-associated/tc7", type = "replaces", source = "doc/team-associated/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
