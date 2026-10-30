@@ -1,0 +1,16 @@
+id = "part/hobao/22130"
+brand = "brand/hobao"
+number = "22130"
+name = "GPX4/EPX ALUMINIUM WHEEL HEX HUBS (4)"
+numbers = ["H22130"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H22130/hobao-gpx4-epx-aluminium-wheel-hex-hubs-4", kind = "dealer" },
+]
+pack_qty = 4
+pack_qty_basis = "name"
+category = "drivetrain"
+material = "aluminium"
+fits = [
+  { kit = "kit/hobao/gpx4", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -1,0 +1,13 @@
+id = "part/hobao/HBT-701"
+brand = "brand/hobao"
+number = "HBT-701"
+name = "H2 / EX10 FRONT TIRE (2)"
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/HBT-701/hobao-h2-ex10-front-tire-2", kind = "dealer" },
+]
+category = "tire"
+position = "front"
+fits = [
+  { kit = "kit/hobao/h2", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

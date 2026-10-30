@@ -1,0 +1,15 @@
+id = "part/hobao/22041"
+brand = "brand/hobao"
+number = "22041"
+name = "GPX4/EPX REAR UPRIGHT (2)"
+numbers = ["H22041"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H22041/hobao-gpx4-epx-rear-upright-2", kind = "dealer" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "suspension"
+fits = [
+  { kit = "kit/hobao/gpx4", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

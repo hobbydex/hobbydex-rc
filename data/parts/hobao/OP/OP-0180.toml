@@ -1,0 +1,15 @@
+id = "part/hobao/OP-0180"
+brand = "brand/hobao"
+number = "OP-0180"
+name = "HYPER VS2 CNC 7075 ALUMINIUM LIGHTWEIGHT CHASSIS - NITRO"
+numbers = ["HOP-0180"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/HOP-0180/hobao-hyper-vs2-cnc-7075-aluminium-lightweight-chassis-nitro", kind = "dealer" },
+]
+category = "chassis"
+material = "aluminium"
+material_grade = "7075"
+fits = [
+  { kit = "kit/hobao/hyper-vs2", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

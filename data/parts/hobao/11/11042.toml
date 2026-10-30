@@ -1,0 +1,15 @@
+id = "part/hobao/11042"
+brand = "brand/hobao"
+number = "11042"
+name = "Hyper 10 Sc 12T Pinion (MOD 1)"
+numbers = ["H11042"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H11042/hobao-hyper-10-sc-12t-pinion-mod-1", kind = "dealer" },
+]
+category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+teeth = 12
+module = 1

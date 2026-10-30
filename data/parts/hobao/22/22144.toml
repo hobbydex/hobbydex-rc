@@ -1,0 +1,16 @@
+id = "part/hobao/22144"
+brand = "brand/hobao"
+number = "22144"
+name = "GPX4/EPX Plastic 58T spur Gear 0.8 Module"
+numbers = ["H22144"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H22144/hobao-gpx4-epx-plastic-58t-spur-gear-0-8-module", kind = "dealer" },
+]
+category = "spur-gear"
+teeth = 58
+module = 0.8
+material = "plastic"
+fits = [
+  { kit = "kit/hobao/gpx4", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -1,0 +1,15 @@
+id = "part/hobao/22043"
+brand = "brand/hobao"
+number = "22043"
+name = "GPX4/EPX REAR LOWER ARM (2)"
+numbers = ["H22043"]
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H22043/hobao-gpx4-epx-rear-lower-arm-2", kind = "dealer" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "suspension"
+fits = [
+  { kit = "kit/hobao/gpx4", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

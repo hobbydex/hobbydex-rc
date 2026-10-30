@@ -1,0 +1,16 @@
+id = "part/hobao/HOP1-0022"
+brand = "brand/hobao"
+number = "HOP1-0022"
+name = "H2 SHOCK SPRINGS MEDIUM WHITE 66mm 0.5kgf/cm"
+documents = ["doc/hobao/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/HOP1-0022/hobao-h2-shock-springs-medium-white-66mm-0-5kgf-cm", kind = "dealer" },
+]
+category = "shock-spring"
+color = "white"
+rate = "medium"
+free_length_mm = 66
+range = "hobao/h-shock-springs-kgf-cm-free-rate-springs"
+fits = [
+  { kit = "kit/hobao/h2", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
