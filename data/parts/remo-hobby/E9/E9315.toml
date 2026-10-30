@@ -7,3 +7,6 @@ category = "battery"
 voltage = 7.4
 capacity_mah = 1500
 links = [{ site = "remohobbyrc.com", url = "https://www.remohobbyrc.com/remo-hobby-1621-parts/143-remo-1621-rocket-rc-truck-parts-original-battery-74v-e9315.html", kind = "dealer" }]
+fits = [
+  { kit = "kit/remo-hobby/1621", type = "direct", source = "doc/remo-hobby/dealer-store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

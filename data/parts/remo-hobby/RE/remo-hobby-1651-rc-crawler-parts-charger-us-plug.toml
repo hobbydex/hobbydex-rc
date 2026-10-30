@@ -5,3 +5,6 @@ category = "charger"
 links = [{ site = "remohobbyrc.com", url = "https://www.remohobbyrc.com/remo-hobby-1651-parts/439-remo-hobby-1651-rc-crawler-parts-charger-us-plug.html", kind = "dealer" }]
 mains_plug = "US"
 mains_plug_basis = "name"
+fits = [
+  { kit = "kit/remo-hobby/1651", type = "direct", source = "doc/remo-hobby/dealer-store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

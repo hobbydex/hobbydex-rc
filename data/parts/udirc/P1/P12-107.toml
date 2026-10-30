@@ -11,3 +11,9 @@ links = [
   { site = "UDIRC", url = "https://www.udirc.com/products/udirc-ud1203-ud1203pro-ud1204-ud1204pro-rc-car-ball-head-suspension-arm-set-2pcs-upper-2pcs-lower-control-arms-black-oem-spare-parts-p12-107" },
 ]
 category = "ball-end"
+fits = [
+  { kit = "kit/udirc/ud1203", type = "direct", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1203pro", type = "direct", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1204", type = "direct", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1204pro", type = "direct", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

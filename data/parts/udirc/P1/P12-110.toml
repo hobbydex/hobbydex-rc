@@ -10,3 +10,7 @@ links = [
   { site = "UDIRC", url = "https://www.udirc.com/products/udirc-ud1203-ud1203pro-rc-car-receiver-box-deep-gray-oem-replacement-part-p12-110" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/udirc/ud1203", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/udirc/ud1203pro", type = "replaces", source = "doc/udirc/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

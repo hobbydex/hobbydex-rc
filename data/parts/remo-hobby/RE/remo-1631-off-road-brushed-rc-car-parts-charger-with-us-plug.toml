@@ -5,3 +5,6 @@ category = "charger"
 links = [{ site = "remohobbyrc.com", url = "https://www.remohobbyrc.com/remo-hobby-1631-parts/328-remo-1631-off-road-brushed-rc-car-parts-charger-with-us-plug.html", kind = "dealer" }]
 mains_plug = "US"
 mains_plug_basis = "name"
+fits = [
+  { kit = "kit/remo-hobby/1631", type = "direct", source = "doc/remo-hobby/dealer-store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
