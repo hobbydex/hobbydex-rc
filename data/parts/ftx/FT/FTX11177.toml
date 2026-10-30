@@ -8,3 +8,7 @@ links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-grand-apache-spares/ftx-grand-apache-diff-crown-pinion-gear-8t-35t" },
 ]
 category = "differential"
+includes = [
+  { spec = "spec/ring-pinion/ring-35t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-8t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]

@@ -4,3 +4,7 @@ number = "HB109840"
 name = "DIFF RING/PINION STRAIGHT (43T/10T)"
 category = "differential"
 documents = ["doc/hb-racing/e819rs-instruction-manual"]
+includes = [
+  { spec = "spec/ring-pinion/ring-43t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-10t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]

@@ -699,6 +699,18 @@ pitch, 48) or `module` (0.5, 1); id `spec/pinion/48dp-20t` or
 material, because one geometry is sold for several shaft sizes and brands
 often leave the bore out.
 
+Ring and pinion specs: the two gears of a differential or axle set, one spec
+per gear. `type` is `ring` or `pinion`, `teeth` the tooth count (5 to 100),
+and `pitch_dp` (32, 48 or 64) or `module` only where the name or page states
+it; id `spec/ring-pinion/ring-39t` or `spec/ring-pinion/pinion-13t`, with
+`-32dp` or `-mod1` appended when a pitch is stated. A set named with both
+tooth counts ("Ring and Pinion Set, 37T/15T", "Ring Gear 39T & Pinion 14T")
+lists both in `includes`, qty 1 each, via tools/link_ring_pinion_specs.py in
+hobbydex-tools. The counts come only from the name, a maker page or a manual: a role-labelled count
+gives that gear, two unlabelled counts give the larger to the ring. A set with
+no stated counts, or one count, gets no rows. These are bevel, helical and hypoid
+differential gears, not motor pinions (those are Pinions above).
+
 Spur gears carry `teeth` and either `pitch_dp` or `module` on the part
 itself, read from the name. They get no generic spec: spurs of one
 pitch and tooth count mesh the same pinions but mount differently.

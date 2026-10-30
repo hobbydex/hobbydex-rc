@@ -9,3 +9,7 @@ name_source = "ocr"
 category = "differential"
 documents = ["doc/tamiya/43525-manual-usa"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/53852/index.html" } ]
+includes = [
+  { spec = "spec/ring-pinion/ring-39t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-14t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]

@@ -6,11 +6,14 @@ seen_by = "2021-01-26"
 seen_by_source = "https://web.archive.org/web/20210126223632/https://www.associatedelectrics.com/teamassociated/parts/details/21526-ASC21526-ring_and_pinion_set_37t_15t/"
 former_names = ["Pinion gear (15T)"]
 category = "differential"
-teeth = 15
 gtin = "784695215269"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ring-and-pinion-set-37t-15t/" },
 ]
 fits = [
   { kit = "kit/team-associated/reflex-14b", type = "direct", source = "doc/team-associated/store" },
+]
+includes = [
+  { spec = "spec/ring-pinion/ring-37t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-15t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
 ]

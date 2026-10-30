@@ -6,5 +6,7 @@ category = "differential"
 includes = [
   { part = "part/lc-racing/HM6000" },
   { part = "part/lc-racing/HM6001" },
+  { spec = "spec/ring-pinion/ring-37t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-15t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
 ]
 documents = ["doc/lc-racing/emb-dth-exploded-view", "doc/lc-racing/emb-mth-exploded-view", "doc/lc-racing/emb-sc-th-exploded-view"]

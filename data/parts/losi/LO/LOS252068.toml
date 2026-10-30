@@ -12,3 +12,7 @@ fits = [
   { kit = "kit/losi/dbxl-e", type = "direct", source = "doc/losi/horizon-product-catalogue" },
 ]
 category = "differential"
+includes = [
+  { spec = "spec/ring-pinion/ring-40t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-12t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]
