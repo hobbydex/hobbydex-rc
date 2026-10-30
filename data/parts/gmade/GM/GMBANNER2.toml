@@ -1,0 +1,13 @@
+id = "part/gmade/GMBANNER2"
+brand = "brand/gmade"
+number = "GMBANNER2"
+name = "BANNER GS02F BOM BANNER 100x60cm"
+category = "merchandise"
+category_source = "curated"
+documents = ["doc/gmade/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/GMBANNER2/gmade-banner-gs02f-bom-banner-100x60cm", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/gmade/gs02f-bom", type = "replaces", source = "doc/gmade/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
