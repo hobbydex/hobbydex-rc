@@ -484,6 +484,21 @@ includes = [
 ]
 ```
 
+`includes_qty` (optional, part): `"unstated"` when the source lists what a set holds
+but gives no count for the items, so the rows have no `qty`. The amount is unknown:
+never derive it from the wording (a "plus one spare of each size" bearing kit does not
+get qty 2). `includes_qty_note` (optional, only with `includes_qty`) quotes what the
+source does say about the amounts ("plus one spare of each size"). The marker needs
+`includes` and at least one row without `qty`; rows that do have a `qty` keep it, and
+the kit's `pack_qty` is not set from rows. The site shows "unknown amount" for such a
+row and the note once; audit "kit-includes-no-qty" does not count marked kits.
+
+```toml
+includes_qty = "unstated"
+includes_qty_note = "plus one spare of each size"
+includes = [{ spec = "spec/bearing/5x10x4" }, { spec = "spec/bearing/5x11x4" }]
+```
+
 `fits`: the kits a part is sold for, from the brand's own fitment data (option
 parts catalogs, matching lists, product pages). Distinct from `contains`,
 which says what comes in a release's box.

@@ -1102,7 +1102,7 @@ def main():
         qtys = [r.get("qty") for r in rows]
         return sum(qtys) if rows and all(type(q) is int and q > 0 for q in qtys) else None
     kits_hw = [p for p in parts if p.get("category") in HW and p.get("includes")]
-    no_qty = [p for p in kits_hw if kit_sum(p) is None]
+    no_qty = [p for p in kits_hw if kit_sum(p) is None and p.get("includes_qty") != "unstated"]   # unstated: the source lists the items without counts (schema includes_qty)
     check("kit-includes-no-qty", "give every includes row of the kit its qty (the pieces in the bag); the kit's pack_qty is the sum once all rows have one",
           no_qty, per_brand=per_brand(no_qty))
     def sets_of(p):

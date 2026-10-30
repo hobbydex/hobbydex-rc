@@ -905,6 +905,16 @@ def main():
                 errors.append(f"{path}: universal needs a universal_basis (maker, category or size)")
             elif d.get("applies_to"):
                 errors.append(f"{path}: a part that names the model it is for (applies_to) is not universal")
+        if kind == "part" and ("includes_qty" in d or "includes_qty_note" in d):
+            rows = d.get("includes") or []
+            if d.get("includes_qty") != "unstated":
+                errors.append(f"{path}: includes_qty must be \"unstated\" (and includes_qty_note needs includes_qty)")
+            elif not rows:
+                errors.append(f"{path}: includes_qty needs includes")
+            elif all(isinstance(r.get("qty"), int) for r in rows):
+                errors.append(f"{path}: includes_qty = \"unstated\" but every includes row has a qty")
+            if "includes_qty_note" in d and not (isinstance(d["includes_qty_note"], str) and d["includes_qty_note"].strip()):
+                errors.append(f"{path}: includes_qty_note must be a non-empty string")
         if kind == "part" and "pack_qty_basis" in d and not (isinstance(d.get("pack_qty"), int) and d["pack_qty"] >= 1):
             errors.append(f"{path}: pack_qty_basis needs a pack_qty (a whole number, 1 or more)")
         if kind == "part" and d.get("category") == "paint" and "finish" in d and d["finish"] not in PAINT_FINISH:
