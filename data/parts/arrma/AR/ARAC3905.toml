@@ -13,3 +13,6 @@ fits = [
   { kit = "kit/arrma/senton-6s", type = "direct", source = "doc/arrma/ARAD83LG-manual" },
 ]
 documents = ["doc/arrma/ARAD83LG-manual"]
+equivalent_to = [
+  { spec = "spec/tube/flanged-4.1x6x4.7", match = "close", notes = "Size parsed from the manufacturer's description; the flange diameter is not stated" },
+]

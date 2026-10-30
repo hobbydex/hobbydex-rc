@@ -96,7 +96,7 @@ ENUMS = {
     "part.lubricant": {"oil", "grease"},
     "part.viscosity": {"thin", "medium", "thick"},
     "spec.profile": {"regular", "thin"},
-    "spec.shape": {"flat", "countersunk", "conical"},   # washer specs (docs/schema.md "Washer specs")
+    "spec.shape": {"flat", "countersunk", "conical", "flanged", "crush"},   # washer specs (docs/schema.md "Washer specs") and tube specs ("Tube specs")
     "spec.variant": {"bowed"},   # e-clip specs (docs/schema.md "E-clip specs")
     "spec.motor_type": {"brushed", "brushless"},
     "part.motor_type": {"brushed", "brushless", "both"},   # ESCs (docs/schema.md "ESCs")
@@ -144,7 +144,7 @@ NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that co
 SPEC_PART_CATS = {
     "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
     "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
-    "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
+    "washer": {"washer-shim"}, "tube": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
     "ball-end": {"ball-end"}, "o-ring": {"o-ring-seal"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
 }
@@ -1221,12 +1221,25 @@ def main():
                     errors.append(f"{path}: {k} {d[k]!r} should be millimetres")
         if kind == "spec" and d.get("category") == "washer":
             b, o, t = (d.get(k) for k in ("bore_mm", "outer_mm", "thickness_mm"))
+            if d.get("shape") in ("flanged", "crush"):
+                errors.append(f"{path}: washer spec shape {d['shape']!r} is a tube shape")
             if not all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in (b, o, t)) or not b < o:
                 errors.append(f"{path}: washer spec needs bore_mm, outer_mm and thickness_mm in millimetres, the bore under the outer")
             else:
                 sid = f"spec/washer/{d['shape'] + '-' if d.get('shape') not in (None, 'flat') else ''}{b}x{o}x{t}"
                 if d["id"] != sid:
                     errors.append(f"{path}: washer spec id should be {sid} (shape prefix, then bore x outer x thickness)")
+        if kind == "spec" and d.get("category") == "tube":
+            b, o, ln = (d.get(k) for k in ("bore_mm", "outer_mm", "length_mm"))
+            num_ok = lambda x: isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0
+            if not (num_ok(b) and num_ok(o) and b < o) or ("length_mm" in d and not num_ok(ln)):
+                errors.append(f"{path}: tube spec needs bore_mm and outer_mm in millimetres, the bore under the outer, and length_mm above 0 when given")
+            else:
+                if d.get("shape") not in (None, "flanged", "crush"):
+                    errors.append(f"{path}: tube spec shape {d['shape']!r} should be flanged or crush (a plain tube has none)")
+                sid = f"spec/tube/{d['shape'] + '-' if d.get('shape') else ''}{b:g}x{o:g}{f'x{ln:g}' if ln is not None else ''}"
+                if d["id"] != sid:
+                    errors.append(f"{path}: tube spec id should be {sid} (shape prefix, then bore x outer, x length when stated)")
         if kind == "spec" and d.get("category") == "pin" and d.get("type") == "screw":
             dm, lm = d.get("diameter_mm"), d.get("length_mm")
             if not all(isinstance(x, (int, float)) and not isinstance(x, bool) and x > 0 for x in (dm, lm)):

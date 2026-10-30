@@ -14,3 +14,6 @@ links = [
 ]
 name_source = "ocr"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/tube/flanged-3x3.9x10.5", match = "close", notes = "Size parsed from the manufacturer's description; the flange diameter is not stated" },
+]

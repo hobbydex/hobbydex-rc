@@ -406,6 +406,7 @@ def diff_assemblies(release, part_of):
 SPEC_FAMILY_WORDS = {
     "bearing": r"bearings?|bush(?:ings?|es)?|busings?", "screw": r"screws?|bolts?|cap ?heads?|button ?heads?",
     "nut": r"nuts?", "washer": r"washers?|shims?|spacers?|collars?", "pin": r"pins?|shafts?|dowels?",
+    "tube": r"tubes?|pipes?|flange[d]? collars?",
     "pinion": r"pinions?|gears?", "eclip": r"e-?clips?|e-?rings?|din ?6799", "circlip": r"c-?clips?|circlips?|seger|snap rings?",
     "ball-end": r"balls?|studs?|ball ?ends?|ball ?joints?", "o-ring": r"o-?rings?|gaskets?", "motor": r"motors?",
     "battery": r"batter(?:y|ies)|lipo|li-?po|nimh|packs?", "servo": r"servos?", "oil": r"oils?|grease|silicone",
@@ -436,7 +437,7 @@ SPEC_DEFAULT_ACCESSORIES = {"screw", "nut", "washer"}   # any other category: fa
 SPEC_EQUIVALENT_CATS = {
     "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
     "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
-    "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
+    "washer": {"washer-shim"}, "tube": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
     "ball-end": {"ball-end"}, "o-ring": {"o-ring-seal"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},
 }

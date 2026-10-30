@@ -1063,8 +1063,8 @@ brass and plastic shims of one size share the spec and differ in the
 part's `material`. Parts in category washer-shim link with match
 "functional" (size from the name). Sets of several sizes ("3x5 shim set
 0.1/0.2/0.3mm") list one `includes` row per spec, with `qty` where the name
-gives it. Lock, spring, serrated, wedge and flanged washers, flanged and
-crush tubes and rubber or foam body-mount spacers get no washer spec.
+gives it. Lock, spring, serrated, wedge and flanged washers, rubber or foam body-mount spacers get no washer spec; flanged and
+crush tubes get a tube spec (below).
 
 A washer spec that a published standard fixes cites it in `standards` (`standards = ["DIN 125"]`, with a `data/standards` entry). A maker that cites no standard for its washer links it to the closest such spec with match "close": the closest by outer diameter, only within 0.3 mm, and the part's notes give the measured outer diameter and the manual it was measured from (doc/tamiya/56376-manual).
 
@@ -1075,6 +1075,38 @@ name = "3x6x0.5mm shim"
 bore_mm = 3
 outer_mm = 6
 thickness_mm = 0.5
+```
+
+### Tube specs
+
+`spec/tube/<bore>x<outer>[x<length>]` (category "tube", `bore_mm`,
+`outer_mm` and `length_mm`, in millimetres as the brands write them: 4x6,
+3x6x5, 4x9x4) is a tube, pipe or flanged collar: a hollow cylinder that
+spaces or guides on a screw or shaft. `length_mm` is optional: a spec
+without a length is a tube whose source states none ("4x6mm Brass Pipe";
+two figures that are a bore and an outer, never a diameter and a length).
+`shape` is plain (the default, left out), `flanged` (a collar at one end)
+or `crush` (a crushable spacer); a flanged or crush tube does not replace
+a plain one, so it has its own spec with the shape in the id
+(`spec/tube/flanged-3x6x5`, `spec/tube/crush-5x7x5`). No material: brass,
+steel and aluminium tubes of one size share the spec and differ in the
+part's `material`. Parts in category washer-shim link from the size in
+their name (tools/link_tube_specs.py): match "functional" for plain and
+crush tubes, "close" for flanged ones (the flange diameter is not stated).
+A tube item of a multi-item name ("4x6mm Brass Pipe & 3x15mm Screw") is an
+`includes` row with the item's count, or the owner-checked `pack_qty`
+(basis owner) when the name states none. A plain ring of a thickness
+(3x6x1) is a washer spec; a name whose figures are not a bore and an outer
+(4.5x3.5mm Flanged Tube) gets no tube spec.
+
+```toml
+id = "spec/tube/flanged-3x6x5"
+category = "tube"
+name = "3x6x5mm flanged tube"
+bore_mm = 3
+outer_mm = 6
+length_mm = 5
+shape = "flanged"
 ```
 
 ### E-clip specs

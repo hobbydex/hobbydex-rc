@@ -16,3 +16,6 @@ fits = [
   { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/tube/flanged-3x4.5x5.5", match = "close", notes = "Size parsed from the manufacturer's description; the flange diameter is not stated" },
+]

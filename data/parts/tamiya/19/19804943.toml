@@ -13,3 +13,6 @@ links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-flanged-tube-42301-2/", kind = "maker" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/tube/flanged-3.05x4.6x4.4", match = "close", notes = "Size parsed from the manufacturer's description; the flange diameter is not stated" },
+]

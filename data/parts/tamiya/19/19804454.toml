@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "washer-shim"
 documents = ["doc/tamiya/42277-manual", "doc/tamiya/42288-manual"]
+equivalent_to = [
+  { spec = "spec/tube/flanged-3.1x4.2x3.3", match = "close", notes = "Size parsed from the manufacturer's description; the flange diameter is not stated" },
+]
