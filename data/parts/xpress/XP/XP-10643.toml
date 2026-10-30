@@ -9,3 +9,9 @@ numbers = ["00101425"]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "chassis"
+fits = [
+  { kit = "kit/xpress/xq10", releases = ["release/xpress/XP-90021"], type = "replaces", source = "doc/xpress/xpress-execute-xq10-xp-90021-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/xpress/xq10f", releases = ["release/xpress/XP-90029"], type = "replaces", source = "doc/xpress/execute-xq10-f-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/xpress/xq10r", releases = ["release/xpress/XP-90038"], type = "replaces", source = "doc/xpress/xpress-xq10r-xp-90038", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/xpress/xq2s", releases = ["release/xpress/XP-90032"], type = "replaces", source = "doc/xpress/execute-xq2s-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

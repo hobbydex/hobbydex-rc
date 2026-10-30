@@ -9,3 +9,7 @@ numbers = ["00127115"]
 pack_qty = 6
 pack_qty_basis = "name"
 category = "wheel"
+fits = [
+  { kit = "kit/xpress/xq11", releases = ["release/xpress/XP-90040"], type = "replaces", source = "doc/xpress/execute-xq11-xp90040-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/xpress/xq3s", releases = ["release/xpress/XP-90042"], type = "replaces", source = "doc/xpress/xpress-execute-xq3s-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
