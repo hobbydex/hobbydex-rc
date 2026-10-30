@@ -9,3 +9,6 @@ category = "pinion"
 teeth = 29
 pitch_dp = 48
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-29t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

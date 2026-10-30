@@ -11,5 +11,9 @@ teeth = 19
 module = 1.5
 documents = ["doc/losi/los05018-parts-explosion-multi", "doc/losi/los05021-super-baja-rey-2-0-exploded-view", "doc/losi/los05013-manual-en"]
 
+equivalent_to = [
+  { spec = "spec/pinion/mod1.5-19t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 8
 [sources]
 name = "https://www.horizonhobby.com/product/losi-1-6-super-baja-rey-4wd-desert-truck-brushless-rtr-with-avc/LOS05013.html"

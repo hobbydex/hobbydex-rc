@@ -8,3 +8,6 @@ links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-spares-parts/ftx-gladius-spares/ftx-gladius-11t-32dp-pinion-gear" },
 ]
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-11t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

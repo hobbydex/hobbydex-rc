@@ -18,3 +18,7 @@ category = "pinion"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 teeth = 10
 module = 1
+equivalent_to = [
+  { spec = "spec/pinion/mod1-10t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5
