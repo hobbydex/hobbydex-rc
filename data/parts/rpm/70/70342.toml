@@ -7,3 +7,7 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/rear-bumper-skid-plate-for-the-losi-mini-t-2-0-mini-b/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/losi/mini-b", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/losi/mini-t-2", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

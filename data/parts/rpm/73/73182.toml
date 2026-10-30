@@ -7,3 +7,8 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/losi-tenacity-skid-plates/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/losi/lasernut", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/losi/tenacity-db", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/losi/tenacity-sct", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

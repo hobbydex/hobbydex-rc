@@ -7,3 +7,7 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/traxxas-4x4-body-mounts/" },
 ]
 category = "body-accessory"
+fits = [
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

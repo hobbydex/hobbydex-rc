@@ -7,3 +7,6 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/ecx-2wd-bellcrank/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/ecx/circuit", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

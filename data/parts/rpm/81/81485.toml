@@ -8,3 +8,7 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM81485/rpm-front-upper-lower-a-arms-for-arrma-kraton-talion-blue", kind = "dealer" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/arrma/kraton", type = "replaces", source = "doc/rpm/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/arrma/talion-6s", type = "replaces", source = "doc/rpm/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

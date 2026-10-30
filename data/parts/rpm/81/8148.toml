@@ -7,3 +7,8 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/kraton-6s-front-arms/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/arrma/kraton", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/arrma/outcast", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/arrma/talion-6s", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

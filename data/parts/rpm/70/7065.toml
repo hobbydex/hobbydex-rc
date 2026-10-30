@@ -7,3 +7,7 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/slash-4x4-lcg-nerf-bars/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/traxxas/rally", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

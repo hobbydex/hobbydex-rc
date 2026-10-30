@@ -8,3 +8,6 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80712/rpm-castor-blocks-for-traxxas-elec-stampede-rustler-slash-bandit", kind = "dealer" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/traxxas/bandit", type = "replaces", source = "doc/rpm/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
