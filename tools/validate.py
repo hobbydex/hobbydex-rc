@@ -1263,8 +1263,10 @@ def main():
             for kf in d.get("key_fields", []):
                 if not kf.get("field") or not kf.get("label") or kf.get("from") not in ("part", "spec"):
                     errors.append(f"{path}: key_fields entry {kf!r} needs field, label and from = part|spec")
-                elif not isinstance(kf.get("compare_only", False), bool):
-                    errors.append(f"{path}: key_fields compare_only must be true or false")
+                elif not all(isinstance(kf.get(k, False), bool) for k in ("compare_only", "multi", "plug", "pick")):
+                    errors.append(f"{path}: key_fields compare_only, multi, plug and pick must be true or false")
+                elif kf.get("filter", "range") != "range":
+                    errors.append(f"{path}: key_fields filter is \"range\" (a from-to box on the column's largest number)")
                 elif kf["from"] == "spec" and not d.get("spec_type"):
                     errors.append(f"{path}: key field {kf['field']} comes from the spec, but the category names no spec")
         # when a brand launched and ended (docs/schema.md "brand"): ISO dates at the precision the source gives, each with its source

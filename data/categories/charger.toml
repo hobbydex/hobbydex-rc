@@ -3,3 +3,13 @@ name = "Chargers"
 summary = "Battery chargers and charging accessories"
 description = "Battery chargers and charging accessories."
 any_car = true
+key_fields = [
+  { field = "power_ac_w", label = "Watts", from = "part", format = "watts", filter = "range" },
+  { field = "charges", label = "Charges", from = "part", format = "chemistries", multi = true },
+  { field = "charge_current_a", label = "Max current", from = "part", unit = "A" },
+  { field = "channels", label = "Channels", from = "part" },
+  { field = "mains_plug", label = "Mains plug", from = "part", pick = true },
+  { field = "ac_input_v", label = "Input", from = "part", format = "input", pick = false },
+  { field = "output_connector", label = "Output plug", from = "part", format = "plugs", multi = true, plug = true, pick = true },
+  { field = "weight_g", label = "Weight", from = "part", unit = "g", compare_only = true },
+]
