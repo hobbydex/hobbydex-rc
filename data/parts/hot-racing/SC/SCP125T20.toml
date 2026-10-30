@@ -6,3 +6,7 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/scp125t20-extend-locked-differential-hub-spool-20mm", kind = "maker" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/axial/scx10", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/axial/ax10", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

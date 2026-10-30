@@ -6,3 +6,7 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/grr25r02-power-up-slipper-eliminator-use-jato-gear-grogon", kind = "maker" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/traxxas/jato", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/gorgon", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

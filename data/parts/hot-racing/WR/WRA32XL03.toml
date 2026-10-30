@@ -11,3 +11,8 @@ related = [
   { part = "part/hot-racing/SCP38HT03", relation = "for", notes = "link_part_refs" },
   { part = "part/hot-racing/WRA38TP03", relation = "for", notes = "link_part_refs" },
 ]
+fits = [
+  { kit = "kit/axial/ax10", type = "replaces", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+  { kit = "kit/axial/scx10", type = "replaces", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+]

@@ -10,3 +10,6 @@ category_source = "fallback"
 related = [
   { part = "part/hot-racing/WK2108", relation = "for", notes = "link_part_refs" },
 ]
+fits = [
+  { kit = "kit/hpi/wheely-king", type = "replaces", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+]

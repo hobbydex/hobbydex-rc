@@ -6,3 +6,7 @@ links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/hte133w06-hd-bearing-wheelies-bar-wheel-trx-ehd-2wd", kind = "maker" },
 ]
 category = "bearing"
+fits = [
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]

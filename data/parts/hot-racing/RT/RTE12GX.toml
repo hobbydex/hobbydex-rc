@@ -9,3 +9,9 @@ category = "gear"
 related = [
   { part = "part/hot-racing/TE12GX01", relation = "for", notes = "link_part_refs" },
 ]
+fits = [
+  { kit = "kit/traxxas/bandit", type = "replaces", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/stampede-2wd", type = "replaces", source = "doc/hot-racing/store", notes = "Car of the Hot Racing part this part is made for (link_hot_racing_fits.py)" },
+]
