@@ -48,7 +48,7 @@ from check_ids import id_of
 RETIRED = "data/retired.toml"
 SOURCED_FIELDS = {"links", "fits", "includes", "material", "color", "former_names", "name_de", "name_fr", "name_ja",
                  "documents", "contains", "notes", "applies_to"}   # list rows and notes: each is some tool's provenance
-STATED_PACK_BASIS = {"maker", "page", "name", "owner", "includes", "photos"}   # pack_qty_basis; "photo" is the weakest, not stated
+STATED_PACK_BASIS = {"maker", "page", "name", "manual", "owner", "includes", "photos"}   # pack_qty_basis; "photo" is the weakest, not stated
 CONVENTION = {"material": {"unknown"}}   # placeholder values, never a stated fact
 # keys that name a row, in the order they are tried; rows are paired by them when their content changed
 IDENT_KEYS = ("url", "kit", "spec", "part", "release", "doc", "brand", "item", "site", "name", "text", "role", "relation")
