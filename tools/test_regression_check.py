@@ -110,8 +110,10 @@ class Repository(unittest.TestCase):
     def files(self, stock_name, derived_row):
         fits = f"fits = [ {derived_row} ]\n" if derived_row else ""
         return {
-            "data/parts/a/S1.toml": 'id = "part/a/S1"\nbrand = "brand/a"\nname = "%s"\ncategory = "suspension"\nmaterial = "plastic"\n' % stock_name,
-            "data/parts/a/X1.toml": 'id = "part/a/X1"\nbrand = "brand/a"\nname = "Wheel Hex Adapter - Alu."\ncategory = "suspension"\nmaterial = "aluminium"\n' + fits,
+            "data/parts/a/S1.toml": 'id = "part/a/S1"\nbrand = "brand/a"\nname = "%s"\ncategory = "suspension"\nmaterial = "plastic"\n'
+                                    'documents = [ "doc/a/m" ]\n' % stock_name,
+            "data/parts/a/X1.toml": 'id = "part/a/X1"\nbrand = "brand/a"\nname = "Wheel Hex Adapter - Alu."\ncategory = "suspension"\nmaterial = "aluminium"\n'
+                                      'documents = [ "doc/a/m" ]\n' + fits,
             "data/releases/a/k.toml": 'kit = "kit/a/k"\nname = "Kit"\ncontains = [\n'
                                       '  { part = "part/a/S1", role = "kit", source = "doc/a/m" },\n'
                                       '  { part = "part/a/X1", role = "option", source = "doc/a/m" },\n]\n',
@@ -154,7 +156,7 @@ class Removals(unittest.TestCase):
 
     def part(self, extra):
         return {"data/parts/a/P1.toml": 'id = "part/a/P1"\nbrand = "brand/a"\nname = "Wing Mount"\n'
-                                        'category = "suspension"\nmaterial = "plastic"\n' + extra,
+                                        'category = "suspension"\nmaterial = "plastic"\ndocuments = [ "doc/a/m" ]\n' + extra,
                 "data/releases/a/k.toml": 'kit = "kit/a/k"\nname = "Kit"\ncontains = [\n'
                                           '  { part = "part/a/P1", role = "kit", source = "doc/a/m" },\n]\n'}
 
@@ -189,7 +191,7 @@ class Removals(unittest.TestCase):
 
     def test_link_whose_page_is_a_document_of_the_record_is_not_a_regression(self):
         base = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
-        head = self.part('links = []\ndocuments = [ "doc/a/m" ]\n')
+        head = self.part('links = []\n')
         head["data/documents/a/m.toml"] = 'id = "doc/a/m"\npage = "%s"\n' % self.MAKER
         self.assertEqual(self.regs(self.check(base, head)), [])
 
@@ -214,6 +216,57 @@ class Removals(unittest.TestCase):
         base = self.part('fits = [ %s ]\n' % row)
         head = self.part('')
         self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["fits"])
+
+
+class PartProvenance(unittest.TestCase):
+    """A part added or changed by the change needs a document, a link or a source; untouched parts do not count."""
+
+    commit, check = Repository.commit, Repository.check
+
+    def other(self):
+        """A part the changes do not touch; it keeps a base commit non-empty."""
+        return {"data/parts/a/Z.toml": 'id = "part/a/Z"\nbrand = "brand/a"\nname = "Other"\n'
+                                       'category = "suspension"\nmaterial = "plastic"\ndocuments = [ "doc/a/m" ]\n'}
+
+    def tree(self, p1, p2=None):
+        files = self.other()
+        files["data/parts/a/P1.toml"] = 'id = "part/a/P1"\nbrand = "brand/a"\nname = "Wing Mount"\n' \
+                                        'category = "suspension"\nmaterial = "plastic"\n' + p1
+        if p2 is not None:
+            files["data/parts/a/P2.toml"] = 'id = "part/a/P2"\nbrand = "brand/a"\nname = "Hinge Pin"\n' \
+                                            'category = "suspension"\nmaterial = "plastic"\n' + p2
+        return files
+
+    def unsourced(self, base, head):
+        ck = self.check(base, head)
+        return [(e["id"], e["change"]) for e in ck.events if e["regression"] and e["reason"] == rc.UNSOURCED_PART]
+
+    def test_added_part_without_provenance_is_a_regression(self):
+        self.assertEqual(self.unsourced(self.other(), self.tree("", "")), [("part/a/P1", "added"), ("part/a/P2", "added")])
+
+    def test_added_part_with_a_document_link_or_source_is_not_a_regression(self):
+        for extra in ('documents = [ "doc/a/m" ]\n', 'links = [ { url = "https://maker.example/p/1" } ]\n',
+                      'sources = { name = "doc/a/m" }\n'):
+            self.assertEqual(self.unsourced(self.other(), self.tree(extra)), [], extra)
+
+    def test_empty_provenance_does_not_count(self):
+        self.assertEqual(self.unsourced(self.other(), self.tree('links = []\ndocuments = []\n')),
+                         [("part/a/P1", "added")])
+
+    def test_changed_part_without_provenance_is_a_regression(self):
+        base = self.tree('notes = "old"\n')
+        head = self.tree('notes = "new"\n')
+        self.assertEqual(self.unsourced(base, head), [("part/a/P1", "changed")])
+
+    def test_changed_part_that_gained_a_link_is_not_a_regression(self):
+        base = self.tree('')
+        head = self.tree('links = [ { url = "https://maker.example/p/1" } ]\n')
+        self.assertEqual(self.unsourced(base, head), [])
+
+    def test_untouched_sourceless_part_does_not_block(self):
+        base = self.tree('', '')
+        head = self.tree('', 'notes = "touched, still no source"\n')
+        self.assertEqual(self.unsourced(base, head), [("part/a/P2", "changed")])
 
 
 if __name__ == "__main__":
