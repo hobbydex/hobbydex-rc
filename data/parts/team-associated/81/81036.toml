@@ -1,0 +1,13 @@
+id = "part/team-associated/81036"
+brand = "brand/team-associated"
+number = "81036"
+name = "ASSOCIATED RC8B3/RC8B3.1 CENTER BULKHEAD"
+numbers = ["AS81036"]
+documents = ["doc/team-associated/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/AS81036/associated-rc8b3-rc8b3-1-center-bulkhead", kind = "dealer" },
+]
+category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "replaces", source = "doc/team-associated/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

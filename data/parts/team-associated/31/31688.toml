@@ -1,0 +1,14 @@
+id = "part/team-associated/31688"
+brand = "brand/team-associated"
+number = "31688"
+name = "TC7 SHOCK SHAFTS (SHAFT/SCREWS/WASHERS)"
+numbers = ["AS31688"]
+documents = ["doc/team-associated/cml-distribution-spares"]
+links = [
+  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/AS31688/team-associated-tc7-shock-shafts-shaft-screws-washers", kind = "dealer" },
+]
+category = "shock"
+shock_part = "shaft"
+fits = [
+  { kit = "kit/team-associated/tc7", type = "replaces", source = "doc/team-associated/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
