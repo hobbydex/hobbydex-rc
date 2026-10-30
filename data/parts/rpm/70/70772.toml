@@ -7,3 +7,7 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/rear-shock-tower-for-the-hoss-4x4-rustler-4x4/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/traxxas/hoss", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/traxxas/rustler-4x4", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

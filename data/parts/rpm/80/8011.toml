@@ -7,3 +7,7 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/t-e-maxx-skid-plate-set/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/traxxas/e-maxx", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/traxxas/t-maxx", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -6,3 +6,8 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/ecx-torment-ruckus-circuit-rear-a-arms/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/ecx/circuit", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/ecx/ruckus-2wd", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/ecx/torment-2wd", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

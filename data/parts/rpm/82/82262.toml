@@ -7,3 +7,7 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/front-a-arms-bulkhead-for-the-hpi-blitz-firestorm-10t-e-firestorm/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/hpi/blitz", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

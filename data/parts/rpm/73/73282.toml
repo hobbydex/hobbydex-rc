@@ -7,3 +7,6 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/traxxas-bandit-rear-arms/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/traxxas/bandit", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

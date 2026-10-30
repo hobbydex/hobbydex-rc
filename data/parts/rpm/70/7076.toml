@@ -7,3 +7,9 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/assoc-gt2-t4-sc10-front-a-arms/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/gt2", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/rc10t4", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/sc10", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/sc10gt", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -7,3 +7,6 @@ links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/esc-cage-for-the-castle-mamba-x-8s-esc-the-traxxas-x-maxx/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/traxxas/x-maxx", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
