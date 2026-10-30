@@ -9,3 +9,6 @@ numbers = ["00103725"]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

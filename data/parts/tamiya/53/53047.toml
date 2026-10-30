@@ -6,3 +6,7 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "bearing"
 documents = ["doc/tamiya/58227-manual-de"]
+equivalent_to = [
+  { spec = "spec/bearing/3x7x3", match = "functional", notes = "Tamiya size code 730: 7 mm outer, 3 mm bore, 3 mm wide" },
+]
+seal = "rubber"

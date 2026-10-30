@@ -6,3 +6,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "bearing"
 documents = ["doc/tamiya/44001-manual-usa"]
+equivalent_to = [
+  { spec = "spec/bearing/flanged-6x10x3", match = "close", notes = "Tamiya size code 1060: 10 mm outer, 6 mm bore, 3 mm wide (usual width for this size, not confirmed for Tamiya)" },
+]
