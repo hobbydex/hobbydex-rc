@@ -180,6 +180,8 @@ platform: its own kit file, linked to the platform it follows with
 in another box (RTR or kit, colour, limited edition, team kit or factory-lite
 trim) is a release of that platform, not a kit of its own.
 
+A manual the maker publishes for the platform itself (Tamiya's chassis manuals, Yokomo's B-MAX2 manual) is a document of kind `manual` that lists the platform in its `kits`; the maker's page for a platform (a category, series or technical page, or a product page of a platform sold only as one release) is a `links` row on the kit with `kind = "maker"`. A platform with either, or with a manual or product page on one of its releases, has a manual or page for the audit (platform-no-manual-or-page).
+
 ## release
 
 One sold product: a yearly edition, a Carpet or Dirt version, an RTR, a
