@@ -12,3 +12,6 @@ motor_type = "brushless"
 includes = [
   { part = "part/hobao/11331WP", qty = 1, notes = "Component named in the combo's name" },
 ]
+fits = [
+  { kit = "kit/hobao/hyper-tt-2", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

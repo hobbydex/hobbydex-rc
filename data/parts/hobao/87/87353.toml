@@ -9,3 +9,6 @@ documents = ["doc/hobao/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H87353/hobao-hyper-7-m3-x-22mm-cap-head-screws", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/hobao/hyper-7", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

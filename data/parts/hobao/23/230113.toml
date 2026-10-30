@@ -8,3 +8,6 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H230113/hobao-dc-1-cnc-link-mount-for-chassis-rail-1", kind = "dealer" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/hobao/dc-1", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

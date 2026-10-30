@@ -11,3 +11,6 @@ category = "bearing"
 equivalent_to = [
   { spec = "spec/bearing/8x14x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 8x14 bearing (MR148)" },
 ]
+fits = [
+  { kit = "kit/hobao/hyper-9", type = "direct", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

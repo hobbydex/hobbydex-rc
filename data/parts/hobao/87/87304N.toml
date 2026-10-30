@@ -8,3 +8,7 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H87304N/hobao-hyper-7-8-alum-cnc-knuckle", kind = "dealer" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/hobao/hyper-7", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/hobao/hyper-8", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

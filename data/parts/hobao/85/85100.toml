@@ -8,3 +8,7 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/H85100/hobao-hyper-gts-gtb-sst-cage-new-differential-case-w-gasket", kind = "dealer" },
 ]
 category = "o-ring-seal"
+fits = [
+  { kit = "kit/hobao/hyper-gtb", type = "direct", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/hobao/hyper-gts", type = "direct", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -13,3 +13,6 @@ material = "plastic"
 related = [
   { part = "part/hobao/90052BUN", relation = "for", notes = "link_part_refs" },
 ]
+fits = [
+  { kit = "kit/hobao/hyper-mtxe", type = "replaces", source = "doc/hobao/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
