@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "SWORKz S14-4C/4D (#SW-910034C)"
+fits = [
+  { kit = "kit/sworkz/s14-4", car = "S14-4C/4D (#SW-910034C)", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the SWORKz S14-4C/4D (#SW-910034C) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/swz030r-sworkz-s14-4c-4d-sw-910034c-d-compatible-rubber-shielded-bearing-kit/" },
