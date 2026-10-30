@@ -775,8 +775,12 @@ def main():
     # 13. platforms with no manual or product page linked
     def page_docs(r):
         return [docs[d] for d in r.get("documents", []) if d in docs and docs[d].get("kind") in ("manual", "product_page")]
-    check("platform-no-manual-or-page", "link the platform's manual or the maker's product page on one of its releases",
-          [k for k in kits.values() if rels_of_kit[k["id"]] and not any(page_docs(r) for r in rels_of_kit[k["id"]])])
+    kit_docs = {kid for d in docs.values() if d.get("kind") in ("manual", "product_page") for kid in d.get("kits", [])}
+    def kit_maker_link(k):
+        return any(l.get("kind") in (None, "maker") and not l.get("gone") for l in k.get("links", []))
+    check("platform-no-manual-or-page", "link the platform's manual or the maker's product page on one of its releases, a manual that lists the platform in `kits`, or the maker's page for the platform in the kit's `links` (kind maker); tools/link_kit_pages.py in hobbydex-tools links the addresses the data already names",
+          [k for k in kits.values() if rels_of_kit[k["id"]] and not any(page_docs(r) for r in rels_of_kit[k["id"]])
+           and k["id"] not in kit_docs and not kit_maker_link(k)])
 
     # 14. video documents without a date
     check("video-no-date", "add the date the maker's video was published, from the channel page",
