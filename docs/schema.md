@@ -1488,6 +1488,9 @@ it is certain: from the maker's product page that embeds it (that page's
 release), or from its title when the title names the kit or release
 strictly (the matching of tools/car_releases.py: a TT-02 Type-S video only
 on that release). A video that names no car is not kept.
+A video of a kit whose title names releases of it (an item number, car or edition words, "chassis kit") also lists
+those `releases`, next to `kits`: it shows on those release pages. Only a video that names no release of its kit
+stays platform-level (tools/narrow_video_releases.py).
 
 ## Owner reports
 
