@@ -31,3 +31,9 @@ fits = [
   { kit = "kit/redcat/clawback", type = "direct", source = "doc/redcat/store" },
 ]
 weight_g = 780
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "pb"]
+channels = 2
+ac_input_v = [100, 240]
+dc_input_v = [19, 26]
+lipo_cells = [1, 4]
+charger_source = "https://www.redcatracing.com/products/rer14615"

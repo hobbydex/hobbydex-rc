@@ -11,3 +11,10 @@ fits = [
   { kit = "kit/maverick/phantom-xb", type = "direct", source = "doc/maverick/150075-kit-page" },
 ]
 category = "charger"
+mains_plug = "US"
+mains_plug_basis = "name"
+charges = ["lipo", "life", "nimh", "nicd"]
+charge_current_a = 2
+nimh_cells = [4, 8]
+lipo_cells = [2, 3]
+charger_source = "https://www.maverick-rc.com/en/part/118049?show_disc=true"

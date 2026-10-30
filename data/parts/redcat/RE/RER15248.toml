@@ -42,3 +42,9 @@ fits = [
   { kit = "kit/redcat/volcano-s30", type = "direct", source = "doc/redcat/store" },
 ]
 weight_g = 2350
+charges = ["lipo", "life", "liion", "nimh", "nicd", "pb"]
+channels = 4
+ac_input_v = [100, 240]
+dc_input_v = [11, 18]
+lipo_cells = [1, 6]
+charger_source = "https://www.redcatracing.com/products/rer15248"

@@ -8,3 +8,10 @@ links = [
   { site = "Etronix", url = "https://www.etronix-rc.com/index.php?route=product/product&product_id=605" },
 ]
 documents = ["doc/etronix/et0200-8", "doc/etronix/french-et0200-8"]
+charges = ["lipo", "life", "liion", "nimh", "nicd", "pb"]
+power_ac_w = 100
+charge_current_a = 6
+ac_input_v = [100, 240]
+nimh_cells = [1, 18]
+balance_ports = ["JST-XH"]
+charger_source = "doc/etronix/et0200-8"
