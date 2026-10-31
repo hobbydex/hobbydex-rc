@@ -63,6 +63,7 @@ YOUTUBE_CHANNEL = re.compile(r"https://www\.youtube\.com/@[A-Za-z0-9._-]+")
 ENUMS = {
     "release.status": {"announced", "released", "discontinued"},
     "release.kind": {"kit", "rtr", "arr", "roller", "print"},
+    "release.kind_source": {"numbering"},   # the basis of a kind no page states: Tamiya's car-kit numbering (docs/schema.md "release", kind)
     "release.color_source": {"owner"},   # who states a colour the name does not give (docs/schema.md "release", color)
     # kit types (docs/schema.md "kit"); the site gives each a label and an icon (hobbydex src/lib/kitTypes.ts)
     "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "tractor-truck", "race-truck",
@@ -796,6 +797,9 @@ def main():
                 brand_slug = str(d.get("brand", "")).split("/")[-1]
                 if not (isinstance(v, str) and re.fullmatch(r"[a-z0-9.-]+/[a-z0-9.-]+-colours", v) and v.split("/")[0] == brand_slug):
                     errors.append(f"{path}: range {v!r} should be <brand slug>/<slug>-colours of the release's own brand")
+            elif kind == "release" and k == "kind_source":
+                if "kind" not in d:
+                    errors.append(f"{path}: kind_source without kind; it says what the kind rests on")
             elif kind == "release" and k == "color_source":
                 if "color" not in d:
                     errors.append(f"{path}: color_source without color; it says who states the colour")
