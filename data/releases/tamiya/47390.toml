@@ -8,9 +8,11 @@ kind = "kit"
 status = "discontinued"
 related = [{ release = "release/tamiya/58072", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/47390" }]
 released = "2012-01"
-notes = "First-release month in Japan from Tamiya's Japanese product page; Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2023-07-08, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
+released_source = "doc/tamiya/47390-product-page-ja"
+notes = "Also sold as item 84270: Tamiya's page for 47390 gives the first release as January 2012 (the 84270 release) and lists the 84270 manual, so the two numbers are one product; 84270 is the number of the 2012 limited release, 47390 the current R/C special-project number; First-release month in Japan from Tamiya's Japanese product page; Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2023-07-08, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
 color = "black"
-documents = ["doc/tamiya/47390-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/84270-manual"]
+documents = ["doc/tamiya/47390-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/84270-manual", "doc/tamiya/84270-manual-de", "doc/tamiya/tamico-dealer-parts"]
+former_names = ["Avante (2011) Black Special (Item 84270)"]
 contains = [
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/84270-manual" },
   { part = "part/tamiya/10309", role = "kit", source = "doc/tamiya/84270-manual", qty = 20, step = "BC4" },
@@ -86,6 +88,7 @@ contains = [
   { part = "part/tamiya/19804549", role = "kit", source = "doc/tamiya/84270-manual" },
   { part = "part/tamiya/19804550", role = "kit", source = "doc/tamiya/84270-manual", qty = 2, step = "BD12" },
   { part = "part/tamiya/19804551", role = "kit", source = "doc/tamiya/84270-manual" },
+  { part = "part/tamiya/19804552", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/19804773", role = "kit", source = "doc/tamiya/84270-manual", qty = 5, step = "PC7" },
   { part = "part/tamiya/19804843", role = "kit", source = "doc/tamiya/84270-manual", qty = 2, step = "BA22" },
   { part = "part/tamiya/19804858", role = "kit", source = "doc/tamiya/84270-manual" },
@@ -127,4 +130,5 @@ contains = [
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/47390", kind = "fan-site" },
+  { site = "TamiyaBase (84270)", url = "https://www.tamiyabase.com/tamiya-models/84270", kind = "fan-site" },
 ]
