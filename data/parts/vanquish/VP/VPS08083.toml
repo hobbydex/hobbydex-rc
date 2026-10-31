@@ -5,3 +5,6 @@ name = "Axial Capra Rear Axle Shafts"
 gtin = "791512780152"
 category = "drivetrain"
 links = [{ site = "Vanquish", url = "https://vanquishproducts.com/products/axial-capra-rear-axle-shafts" }]
+fits = [
+  { kit = "kit/axial/capra", type = "replaces", source = "doc/vanquish/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -5,3 +5,7 @@ name = "SCX10/Wraith Top Shaft"
 gtin = "791512778012"
 category = "drivetrain"
 links = [{ site = "Vanquish", url = "https://vanquishproducts.com/products/scx10-wraith-top-shaft" }]
+fits = [
+  { kit = "kit/axial/scx10", type = "replaces", source = "doc/vanquish/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/axial/wraith", type = "replaces", source = "doc/vanquish/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
