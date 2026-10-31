@@ -6,3 +6,6 @@ gtin = "791512775998"
 links = [{ site = "Vanquish", url = "https://vanquishproducts.com/products/xr10-vvd-v1-hd" }]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/axial/xr10", type = "replaces", source = "doc/vanquish/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

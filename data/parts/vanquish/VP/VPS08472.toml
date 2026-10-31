@@ -6,3 +6,6 @@ gtin = "791512780367"
 category = "drivetrain"
 color = "black"
 links = [{ site = "Vanquish", url = "https://vanquishproducts.com/products/axial-capra-currie-f9-rear-axle-black-anodized" }]
+fits = [
+  { kit = "kit/axial/capra", type = "replaces", source = "doc/vanquish/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
