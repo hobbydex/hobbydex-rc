@@ -4,6 +4,10 @@ number = "PRO1024302"
 name = "1/4 Hot Lap MX M3 Rear Tire"
 gtin = "660132993177"
 applies_to = "Promoto-MX/SM"
+fits = [
+  { kit = "kit/losi/promoto-mx", type = "direct", source = "doc/pro-line/horizon-pages", notes = "Listed for the Promoto-MX (link_car_kits.py)" },
+  { kit = "kit/losi/promoto-sm", type = "direct", source = "doc/pro-line/horizon-pages", notes = "Listed for the Promoto-SM (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/pro-line-racing-1-4-hot-lap-mx-m3-rear-tire-promoto-mx-sm/PRO1024302.html" },
 ]
