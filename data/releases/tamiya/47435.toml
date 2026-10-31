@@ -6,10 +6,13 @@ number = "47435"
 name = "Renault 5 Turbo (M-05RA)"
 kind = "kit"
 status = "discontinued"
-related = [{ release = "release/tamiya/58026", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/47435" }]
+related = [
+  { release = "release/tamiya/84227", relation = "rerelease-of", source = "doc/tamiya/47435-product-page-ja" },
+  { release = "release/tamiya/58026", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/47435" },
+]
 depicts = { make = "Renault", model = "5 Turbo" }
 category = "rally"
-notes = "Release date from TamiyaBase (Tamiya's pages give none); Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2020-03-21, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued; scale 1/12 per Tamiya's product page"
+notes = "Sold under its own item number from 2020-03-21 (Tamiya's Japanese product page); Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued; scale 1/12 per Tamiya's product page"
 documents = ["doc/tamiya/47435-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/m05ra-manual"]
 contains = [
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/m05ra-manual" },
@@ -91,4 +94,4 @@ links = [
 ]
 released = "2020-03-21"
 year = 2020
-released_source = "TamiyaBase"
+released_source = "doc/tamiya/47435-product-page-ja"
