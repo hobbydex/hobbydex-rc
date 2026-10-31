@@ -5,3 +5,6 @@ name = "PIN (φ2×10.8)"
 notes = "Revision letter of A2229: the parts lists print it small after the number"
 category = "pin"
 documents = ["doc/mugen/mtc2-part-list-ja"]
+equivalent_to = [
+  { spec = "spec/pin/2x10.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
