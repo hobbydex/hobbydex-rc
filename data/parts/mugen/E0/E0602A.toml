@@ -6,3 +6,6 @@ gtin = "4944925046612"
 notes = "Revision letter of E0602: the parts lists print it small after the number"
 category = "bearing"
 documents = ["doc/mugen/exploded-view-b2001", "doc/mugen/mbx8-world-edition-part-list-ja", "doc/mugen/mbx8r-part-list-ja", "doc/mugen/mbx8t-part-list-ja", "doc/mugen/mbx8tr-part-list-ja"]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

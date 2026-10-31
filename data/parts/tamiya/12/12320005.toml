@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "clip"
 documents = ["doc/tamiya/58085-manual"]
+equivalent_to = [
+  { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },
+]

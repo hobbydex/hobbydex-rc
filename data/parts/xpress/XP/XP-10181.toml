@@ -11,3 +11,6 @@ numbers = ["00076666"]
 pack_qty = 10
 pack_qty_basis = "name"
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/5x15x0.4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

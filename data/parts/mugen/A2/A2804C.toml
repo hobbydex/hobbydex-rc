@@ -5,3 +5,6 @@ name = "SHIM 3x6x2"
 notes = "Revision letter of A2804: the parts lists print it small after the number"
 category = "washer-shim"
 documents = ["doc/mugen/msb1-part-list-ja", "doc/mugen/mtx7r-part-list-ja"]
+equivalent_to = [
+  { spec = "spec/washer/3x6x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

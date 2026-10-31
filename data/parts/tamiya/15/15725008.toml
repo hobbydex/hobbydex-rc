@@ -8,3 +8,7 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "bearing"
 documents = ["doc/tamiya/58085-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "A plain metal bushing, Tamiya size 850; the 5x8x2.5 ball bearing replaces it" },
+]
+material = "brass"
