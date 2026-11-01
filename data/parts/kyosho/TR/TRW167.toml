@@ -10,3 +10,6 @@ gtin = "4548565207701"
 category = "steering"
 documents = ["doc/kyosho/trw167-sp-steering-wiperset-fordrx", "doc/kyosho/trw167-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/trw167.html" } ]
+fits = [
+  { kit = "kit/kyosho/drx", type = "replaces", source = "doc/kyosho/trw167-product-page", notes = "Named in the maker's product text on rc.kyosho.com" },
+]
