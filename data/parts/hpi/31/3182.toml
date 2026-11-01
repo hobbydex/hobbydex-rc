@@ -1,8 +1,14 @@
 id = "part/hpi/3182"
 brand = "brand/hpi"
 number = "3182"
-name = "3182"
-notes = "Named by its number only: the name on the scanned hpi manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
-documents = ["doc/hpi/105497-savage-flux-2350-glb-m-v2", "doc/hpi/12039-savage-xl-glb-v3"]
+name = "SPIKE MONSTER WHEEL CHROME (83x56mm)"
+name_source = "manual"
+category = "wheel"
+documents = ["doc/hpi/105497-savage-flux-2350-glb-m-v2", "doc/hpi/12039-savage-xl-glb-v3", "doc/hpi/110571-savage-xl-glb-m-v4", "doc/hpi/12013-esavage-glb-m-v2"]
+fits = [
+  { kit = "kit/hpi/e-savage", releases = ["release/hpi/12013", "release/hpi/505", "release/hpi/547", "release/hpi/548"], type = "replaces", source = "doc/hpi/12013-esavage-glb-m-v2", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/savage-flux", releases = ["release/hpi/104242", "release/hpi/104494", "release/hpi/105497", "release/hpi/115871"], type = "replaces", source = "doc/hpi/105497-savage-flux-2350-glb-m-v2", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/savage-x", releases = ["release/hpi/12861", "release/hpi/861"], type = "replaces", source = "doc/hpi/12861-savage-x-ss-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/savage-xl", releases = ["release/hpi/104246", "release/hpi/104248", "release/hpi/10516", "release/hpi/109073", "release/hpi/112601", "release/hpi/115885", "release/hpi/115894", "release/hpi/12039"], type = "replaces", source = "doc/hpi/110571-savage-xl-glb-m-v4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
+color = "chrome"

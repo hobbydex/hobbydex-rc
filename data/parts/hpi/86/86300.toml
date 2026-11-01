@@ -1,8 +1,14 @@
 id = "part/hpi/86300"
 brand = "brand/hpi"
 number = "86300"
-name = "86300"
-notes = "Named by its number only: the name on the scanned hpi manual page was not clear enough to take"
-documents = ["doc/hpi/i12019-wheely-king-4x4-glb-m-v1"]
-category = "misc"
-category_source = "fallback"
+name = "ALUMINUM HEX HUB CLAMP TYPE 12mm (PURPLE)"
+name_source = "manual"
+documents = ["doc/hpi/i12019-wheely-king-4x4-glb-m-v1", "doc/hpi/12029-nitro-mt2-g30-glb-m-v1"]
+category = "drivetrain"
+material = "aluminium"
+fits = [
+  { kit = "kit/hpi/e-firestorm", releases = ["release/hpi/10551", "release/hpi/12033"], type = "replaces", source = "doc/hpi/12033-efirestorm-10t-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/nitro-mt2", releases = ["release/hpi/10411", "release/hpi/12029"], type = "replaces", source = "doc/hpi/12029-nitro-mt2-g30-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/wheely-king", releases = ["release/hpi/10822", "release/hpi/10831"], type = "replaces", source = "doc/hpi/i12015-wheely-king-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
+color = "purple"
