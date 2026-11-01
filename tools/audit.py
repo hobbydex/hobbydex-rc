@@ -514,6 +514,12 @@ GEAR_SET_NAME = re.compile(r"(?i)\b(gears|pinions|sets?)\b")   # "Pinion Gears 1
 PITCH_IN_NAME = re.compile(r"(?i)(?<![\w.])(\d{1,3})\s*(?:p|dp|pitch)\b")   # "(48P)", "48DP", "48 Pitch"
 
 
+def hardware_in_box(rel, part_of):
+    """Hardware rows a release's contains hold for its box: role kit, and role listed too, since a manual that does not
+    mark what is in the box (Schumacher's) lists its spares as listed, from the same manual."""
+    return sum(1 for c in rel.get("contains", []) if c.get("role") in ("kit", "listed") and part_of.get(c["part"], {}).get("category") in HW)
+
+
 def gear_pitch_as_count(p):
     """Why a gear's pack_qty is its pitch, or None: the count equals the part's pitch_dp, or the pitch printed in its
     name ("90T SPUR GEAR (48P)"). A gear set's name ("Gears", "Set") states a count, so its printed number is no pitch.
@@ -1401,10 +1407,9 @@ def main():
     for r in rels:
         if r.get("kind") != "kit" or not any(docs.get(d, {}).get("kind") in ("manual", "exploded_view") for d in r.get("documents", [])):
             continue
-        n = sum(1 for c in r.get("contains", []) if c.get("role") == "kit" and part_of.get(c["part"], {}).get("category") in HW)
-        if n < 10:
+        if hardware_in_box(r, part_of) < 10:
             hw_box.append(r)
-    check("kit-box-few-hardware", "read the box's hardware from the manual or exploded view into contains (role kit): fewer than 10 hardware rows here",
+    check("kit-box-few-hardware", "read the box's hardware from the manual or exploded view into contains (role kit, or listed when the manual does not mark the box): fewer than 10 hardware rows here",
           hw_box, per_brand=per_brand(hw_box))
 
     # bearings: the material most of a brand's bearings carry, that at most 5% of those names say, is a default: no source states it
