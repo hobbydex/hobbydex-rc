@@ -445,6 +445,11 @@ SPEC_EQUIVALENT_CATS = {
 SPEC_KIT_NAME = re.compile(r"\b(?:rebuild|repair|maintenance|conversion)\b")
 
 
+def count_unstated(p, brands):
+    """True when the maker states no exact count for a kit: a minimum (the importer's "180+ pieces." note) or none (its brand has pack_counts = false)."""
+    return re.match(r"\d+\+ pieces?\b", p.get("notes", "")) is not None or brands.get(p.get("brand"), {}).get("pack_counts") is False
+
+
 def spec_mismatches(parts):
     """[(part id, field, spec id, reason)] for the spec links the part's category or name does not carry.
 
@@ -1055,8 +1060,12 @@ def main():
         return any(e.get("spec") for e in p.get("equivalent_to", [])) or any(i.get("spec") for i in p.get("includes", []))
 
     no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes")]
+    fillable = [p for p in no_pack if not count_unstated(p, brands)]
+    unstated = [p for p in no_pack if count_unstated(p, brands)]
     check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes",
-          no_pack, per_brand=per_brand(no_pack))
+          fillable, per_brand=per_brand(fillable))
+    check("hw-pack-count-unstated", "nothing to fill: the maker states only a minimum count or none (informational; pack_counts = false in the brand's data marks it)",
+          unstated, per_brand=per_brand(unstated), info=True)
 
     # a Tamiya "Hex Head" screw is a hexagon head with a JIS cross recess (spec head hex), never a socket cap
     tamiya_hex = [p for p in parts if p.get("brand") == "brand/tamiya" and p.get("category") == "screw" and re.search(r"\bhex head\b", p.get("name", ""), re.I)
@@ -1351,7 +1360,8 @@ def main():
           [], count=int(used > 50), detail=f"/tmp inodes {used:.1f}% used ({st.f_files - st.f_ffree} of {st.f_files})")
     results["tmp-inodes"]["examples"] = [{"id": f"{n} files {sp}", "url": ""} for n, sp in scratch[:args.examples]]
 
-    ranked = sorted((n for n in results if results[n]["count"]), key=lambda n: -results[n]["count"])
+    ranked = sorted((n for n in results if results[n]["count"] and not results[n].get("info")), key=lambda n: -results[n]["count"])
+    info = [n for n in results if results[n]["count"] and results[n].get("info")]
     skipped = [n for n in results if results[n]["count"] is None]
     if args.list:
         res = results.get(args.list, {})
@@ -1384,6 +1394,9 @@ def main():
         if n == "electronics-field-rare":
             for row in r["all"]:
                 print(f"{'':34} {'':>7}    {row}")
+    for n in info:
+        print(f"{n:34} {results[n]['count']:>7}  (informational) per brand: " + ", ".join(f"{b} {c}" for b, c in results[n]["per_brand"][:15]))
+        print(f"{'':34} {'':>7}    fix: {results[n]['fix']}")
     for n in [n for n in results if results[n]["count"] == 0 and results[n].get("detail")]:
         print(f"{n:34} {'ok':>7}  {results[n]['detail']}")
     for n in skipped:

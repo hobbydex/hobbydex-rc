@@ -1341,6 +1341,8 @@ def main():
                 errors.append(f"{path}: website should be a URL")
         if kind == "brand" and not isinstance(d.get("item_numbers", True), bool):
             errors.append(f"{path}: item_numbers must be true or false")
+        if kind == "brand" and "pack_counts" in d and d["pack_counts"] is not False:
+            errors.append(f"{path}: pack_counts, when set, is false (the maker states no exact piece count)")
         if kind == "part" and "number" not in d:
             if not no_numbers.get(d.get("brand")):
                 errors.append(f"{path}: missing required field number (only parts of a brand with item_numbers = false go without)")

@@ -104,6 +104,8 @@ from the source (the store's product handle) instead. The site then shows no
 number and builds the part URL from that slug. Left out, it means true and
 every part of the brand needs a `number`.
 
+`pack_counts = false` marks a maker whose product pages state no exact piece count for a kit (RCScrewZ gives "180+ pieces" or nothing). Its hardware kits without a `pack_qty` or `includes` are counted by audit "hw-pack-count-unstated" instead of "hw-no-pack-count", which then lists only the kits a count can fill. A kit whose notes start with a minimum ("180+ pieces.") is counted the same way without the marker. Left out, the maker's counts are exact.
+
 ## company
 
 A company that owns one or more brands. It is not a brand itself: it has no
