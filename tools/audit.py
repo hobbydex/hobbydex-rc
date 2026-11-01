@@ -153,6 +153,29 @@ def not_manual_name(stem):
     return NOT_MANUAL_NAME.search(stem) is not None
 
 
+def load_art_sources(tools):
+    """The art source items of every brand (None when neither directory exists).
+
+    The run-time copy in cache/art/sources wins per brand: the local loop rewrites it. The tracked seed in
+    tools/art/sources is read only for a brand that has no run-time copy yet.
+    """
+    runsrc = os.path.join(tools, "cache", "art", "sources")
+    seedsrc = os.path.join(tools, "tools", "art", "sources")
+    if not (os.path.isdir(seedsrc) or os.path.isdir(runsrc)):
+        return None
+    files = {}
+    for d in (seedsrc, runsrc):   # the run-time copy is read last, so it replaces the seed
+        if os.path.isdir(d):
+            for fn in os.listdir(d):
+                if fn.endswith(".toml"):
+                    files[fn] = os.path.join(d, fn)
+    items = []
+    for fn in sorted(files):
+        with open(files[fn], "rb") as f:
+            items += tomllib.load(f).get("item", [])
+    return items
+
+
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
     out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
@@ -282,14 +305,7 @@ def load_tools(tools):
     tamico = os.path.join(tools, "cache", "notes", "tamiya", "tamico-names.tsv")
     if os.path.exists(tamico):
         out["tamico"] = tamico
-    srcdir = os.path.join(tools, "tools", "art", "sources")
-    if os.path.isdir(srcdir):
-        items = []
-        for fn in sorted(os.listdir(srcdir)):
-            if fn.endswith(".toml"):
-                with open(os.path.join(srcdir, fn), "rb") as f:
-                    items += tomllib.load(f).get("item", [])
-        out["sources"] = items
+    out["sources"] = load_art_sources(tools)
     cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
