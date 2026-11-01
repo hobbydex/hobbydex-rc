@@ -2,11 +2,15 @@ id = "part/xray/338710"
 brand = "brand/xray"
 number = "338710"
 name = "ALU ENGINE MOUNTS - LOWER"
+released = "2007-04-19"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2126"
 pack_qty = 2
 pack_qty_basis = "manual"
 category = "chassis"
 material = "aluminium"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2126" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2126" },
+]
 fits = [
   { kit = "kit/xray/nt1", releases = ["release/xray/330008", "release/xray/330009"], type = "replaces", source = "doc/xray/nt1-2014-part-list" },
 ]

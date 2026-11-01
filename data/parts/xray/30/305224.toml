@@ -2,11 +2,15 @@ id = "part/xray/305224"
 brand = "brand/xray"
 number = "305224"
 name = "ECS (ES) DRIVE SHAFT 52MM FOR 2MM PIN - HUDY SPRING STEEL"
+released = "2015-02-26"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5365"
 pack_qty = 1
 pack_qty_basis = "manual"
 category = "drivetrain"
 material = "steel"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5365" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5365" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300023", "release/xray/300026", "release/xray/300027", "release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
 ]

@@ -2,12 +2,16 @@ id = "part/xray/369900"
 brand = "brand/xray"
 number = "369900"
 name = "FRONT WHEELS AERODISK - WHITE - V2"
+released = "2013-06-11"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4466"
 pack_qty = 10
 pack_qty_basis = "manual"
 category = "wheel"
 color = "white"
 position = "front"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4466" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4466" },
+]
 fits = [
   { kit = "kit/xray/xb4", releases = ["release/xray/360002"], type = "replaces", source = "doc/xray/xb4-2015-part-list" },
 ]

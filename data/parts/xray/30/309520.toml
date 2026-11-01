@@ -2,8 +2,12 @@ id = "part/xray/309520"
 brand = "brand/xray"
 number = "309520"
 name = "SILICONE OIL 20W"
+released = "2001-11-03"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=344"
 category = "oil-grease"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=344" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=344" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300021", "release/xray/300023", "release/xray/300024"], type = "direct", source = "doc/xray/t4-2018-part-list" },
 ]

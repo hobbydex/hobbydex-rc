@@ -2,10 +2,14 @@ id = "part/xray/305251"
 brand = "brand/xray"
 number = "305251"
 name = "ECS DRIVE SHAFT COUPLING - HUDY SPRING STEEL o"
+released = "2008-10-09"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2828"
 former_names = ["ECS DRIVE SHAFT COUPLING - HUDY SPRING STEEL"]
 category = "drivetrain"
 material = "steel"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2828" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2828" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300021"], type = "replaces", source = "doc/xray/t4-2015-part-list" },
 ]

@@ -2,9 +2,13 @@ id = "part/xray/309855"
 brand = "brand/xray"
 number = "309855"
 name = "BRASS BATTERY BACKSTOP"
+released = "2017-06-01"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6251"
 category = "chassis"
 material = "brass"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6251" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6251" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300024", "release/xray/300025", "release/xray/300026", "release/xray/300027"], type = "replaces", source = "doc/xray/t4-2020-part-list" },
 ]

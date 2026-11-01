@@ -2,9 +2,13 @@ id = "part/xray/301169"
 brand = "brand/xray"
 number = "301169"
 name = "T4'18 UPPER DECK 1.6MM GRAPHITE"
+released = "2017-10-04"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6483"
 category = "chassis"
 material = "carbon"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6483" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6483" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300024", "release/xray/300025"], type = "replaces", source = "doc/xray/t4-2019-part-list" },
 ]

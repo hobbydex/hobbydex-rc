@@ -2,13 +2,17 @@ id = "part/xray/305352"
 brand = "brand/xray"
 number = "305352"
 name = "ALU WHEEL HUB - OFFSET \"+0.75MM\" (2) o"
+released = "2006-02-01"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1595"
 pack_qty = 2
 pack_qty_basis = "name"
 former_names = ["ALU WHEEL HUB - OFFSET \"+0.75MM\" - BLACK"]
 category = "drivetrain"
 color = "black"
 material = "aluminium"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1595" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1595" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300020", "release/xray/300021", "release/xray/300023", "release/xray/300024", "release/xray/300025", "release/xray/300026", "release/xray/300027", "release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
 ]

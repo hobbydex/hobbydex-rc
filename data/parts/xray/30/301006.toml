@@ -2,10 +2,14 @@ id = "part/xray/301006"
 brand = "brand/xray"
 number = "301006"
 name = "T4'21 ALU FLEX CHASSIS 2.0MM - SWISS 7075 T6"
+released = "2020-10-13"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8065"
 category = "chassis"
 material = "aluminium"
 material_grade = "7075-T6"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8065" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8065" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
 ]

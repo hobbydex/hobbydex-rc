@@ -2,10 +2,14 @@ id = "part/xray/302364"
 brand = "brand/xray"
 number = "302364"
 name = "COMPOSITE C-HUB LEFT - 4° DEG. - MEDIUM x"
+released = "2007-11-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2402"
 former_names = ["COMPOSITE C-HUB LEFT - 4° DEG. - MEDIUM", "COMPOSITE C-HUB LEFT - 4° DEG. - MEDIUM (ECS)"]
 category = "suspension"
 material = "plastic"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2402" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2402" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300020", "release/xray/300021", "release/xray/300023", "release/xray/300024", "release/xray/300025", "release/xray/300026", "release/xray/300027"], type = "replaces", source = "doc/xray/t4-2020-part-list" },
 ]
