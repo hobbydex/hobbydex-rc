@@ -6,14 +6,10 @@ status = "discontinued"
 seen_by = "2015-04-06"
 seen_by_source = "https://web.archive.org/web/20150406020100/http://serpent.com/product/804193/"
 fits = [
-  { kit = "kit/serpent/natrix-750e", type = "replaces", source = "doc/serpent/natrix-750-e-options" },
-  { kit = "kit/serpent/natrix-750", type = "replaces", source = "doc/serpent/natrix-750-evo-options" },
-  { kit = "kit/serpent/natrix-748", type = "replaces", source = "doc/serpent/natrix-748-options" },
-  { kit = "kit/serpent/733", type = "replaces", source = "doc/serpent/733-te-options" },
-  { kit = "kit/serpent/733", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/733-te-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/natrix-748", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/natrix-748-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/natrix-750", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/natrix-750-evo-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/natrix-750e", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/natrix-750-e-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750e", type = "replaces", source = "doc/serpent/natrix-750-e-options", replaces = "part/serpent/804162", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750", type = "replaces", source = "doc/serpent/natrix-750-evo-options", replaces = "part/serpent/804162", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-748", type = "replaces", source = "doc/serpent/natrix-748-options", replaces = "part/serpent/804162", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/733", type = "replaces", source = "doc/serpent/733-te-options", replaces = "part/serpent/804162", notes = "Same part in another material (link_upgrades.py)" },
 ]
 notes = "serpent.com marks it discontinued"
 links = [

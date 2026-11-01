@@ -4,11 +4,9 @@ number = "T0267"
 name = "SIDE BELT (URETHAN)"
 gtin = "4944925012174"
 fits = [
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx-4-part-list" },
+  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list", notes = "Also listed by doc/mugen/mtx-4-part-list" },
 ]
 category = "gear"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/SIDE-BELT-URETHAN/T0267" } ]

@@ -5,8 +5,7 @@ name = "STEERING PLATE+PARTS"
 gtin = "4944925035678"
 fits = [
   { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list", notes = "Also listed by doc/mugen/mtc2-part-list" },
   { kit = "kit/mugen/mtc1", type = "direct", source = "doc/mugen/mtc1-part-list" },
 ]
 category = "steering"

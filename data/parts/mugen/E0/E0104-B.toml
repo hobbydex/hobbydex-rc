@@ -4,10 +4,8 @@ number = "E0104-B"
 name = "CENTER DIFF. MOUNT"
 gtin = "4944925015144"
 fits = [
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6t-part-list" },
-  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6r-part-list" },
-  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list", notes = "Also listed by doc/mugen/mbx-6t-part-list" },
+  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6r-part-list", notes = "Also listed by doc/mugen/mbx-6-part-list" },
   { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
 ]
 category = "chassis"

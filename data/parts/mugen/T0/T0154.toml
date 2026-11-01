@@ -5,8 +5,7 @@ name = "ECCENTRIC HUB"
 gtin = "4944925012006"
 fits = [
   { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx-4-part-list" },
+  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list", notes = "Also listed by doc/mugen/mtx-4-part-list" },
 ]
 category = "suspension"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/EXCENTRIC-HUB/T0154" } ]

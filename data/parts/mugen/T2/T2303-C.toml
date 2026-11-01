@@ -4,11 +4,9 @@ number = "T2303-C"
 name = "SERVO SAVER PARTS"
 gtin = "4944925037665"
 fits = [
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
+  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list", notes = "Also listed by doc/mugen/mtx7-part-list" },
   { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list", notes = "Also listed by doc/mugen/mrx6r-part-list" },
 ]
 category = "steering"
 documents = ["doc/mugen/mrx6r-part-list", "doc/mugen/mrx6x-part-list", "doc/mugen/mrx7-part-list"]

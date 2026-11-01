@@ -4,11 +4,9 @@ number = "E2248"
 name = "Front or Rear Differential 42T"
 gtin = "4944925034053"
 fits = [
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7" },
-  { kit = "kit/mugen/mgt7", type = "direct", source = "doc/mugen/rcteam-mgt7" },
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7r-part-list" },
+  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7", notes = "Also listed by doc/mugen/mbx-7r-part-list" },
+  { kit = "kit/mugen/mgt7", type = "direct", source = "doc/mugen/rcteam-mgt7", notes = "Also listed by doc/mugen/mgt7-part-list" },
   { kit = "kit/mugen/mgt7-eco", type = "direct", source = "doc/mugen/mgt7-eco-part-list" },
-  { kit = "kit/mugen/mgt7", type = "direct", source = "doc/mugen/mgt7-part-list" },
 ]
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/F-R-DIFF.-GEAR-SET-42T-HT-DIFF./E2248" },

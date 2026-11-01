@@ -5,8 +5,7 @@ name = "WIRE FOR MUFFLER"
 gtin = "4944925002588"
 fits = [
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
+  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list", notes = "Also listed by doc/mugen/mrx-4-part-list" },
   { kit = "kit/mugen/mrx3", type = "direct", source = "doc/mugen/mrx-3-part-list" },
 ]
 category = "wire"

@@ -4,10 +4,8 @@ number = "C0115"
 name = "UPPER ARM LINK"
 gtin = "4944925301155"
 fits = [
-  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
-  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
-  { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list" },
-  { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4-part-list" },
+  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list", notes = "Also listed by doc/mugen/mbx-5-part-list" },
+  { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list", notes = "Also listed by doc/mugen/mbx-4-part-list" },
   { kit = "kit/mugen/super-athlete", type = "direct", source = "doc/mugen/super-athlete-part-list" },
 ]
 category = "suspension"

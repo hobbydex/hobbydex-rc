@@ -4,10 +4,8 @@ number = "E2264"
 name = "CONICAL GEAR 46T"
 gtin = "4944925037948"
 fits = [
-  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8te-part-list" },
-  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8t-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list", notes = "Also listed by doc/mugen/mbx8t-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list", notes = "Also listed by doc/mugen/mbx8te-part-list" },
 ]
 category = "gear"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/CONICAL-GEAR-46T/E2264" } ]

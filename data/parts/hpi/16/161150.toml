@@ -7,13 +7,10 @@ links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/161150" },
 ]
 fits = [
-  { kit = "kit/hpi/venture18", type = "replaces", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/venture18-cc", type = "replaces", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/venture18-u4", type = "replaces", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/venture18", type = "replaces", replaces = "part/hpi/160819", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/venture18", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/160819", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/venture18-cc", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/160864", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/venture18-u4", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/160864", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/hpi/venture18", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/venture18-cc", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/venture18-u4", type = "replaces", replaces = "part/hpi/160864", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
 pack_qty_basis = "name"
 category = "shock"

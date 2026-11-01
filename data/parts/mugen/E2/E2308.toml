@@ -4,10 +4,8 @@ number = "E2308"
 name = "BRAKE CAM"
 gtin = "4944925026379"
 fits = [
-  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list" },
-  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7t-part-list" },
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7r-part-list" },
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7-part-list" },
+  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list", notes = "Also listed by doc/mugen/mbx-7t-part-list" },
+  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7r-part-list", notes = "Also listed by doc/mugen/mbx-7-part-list" },
 ]
 category = "drivetrain"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/BRAKE-CAM/E2308" } ]

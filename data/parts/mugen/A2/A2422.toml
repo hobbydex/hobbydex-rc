@@ -4,9 +4,7 @@ number = "A2422"
 name = "10g weight"
 gtin = "4944925040870"
 fits = [
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list", notes = "Also listed by doc/mugen/mtc2-fwd-part-list; Also listed by doc/mugen/mtc2-part-list" },
 ]
 category = "chassis"
 links = [

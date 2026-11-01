@@ -4,10 +4,8 @@ number = "E2128"
 name = "REAR LOWER ARM MOUNT R"
 gtin = "4944925029233"
 fits = [
-  { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7tre-part-list" },
-  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list" },
-  { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7t-eco-part-list" },
-  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7t-part-list" },
+  { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7tre-part-list", notes = "Also listed by doc/mugen/mbx-7t-eco-part-list" },
+  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list", notes = "Also listed by doc/mugen/mbx-7t-part-list" },
 ]
 category = "suspension"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/AL.-REAR-LOWER-ARM-MOUNT-X7-TRUGGY/E2128" } ]

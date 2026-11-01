@@ -9,8 +9,7 @@ links = [
 ]
 fits = [
   { kit = "kit/redcat/gen8", type = "replaces", source = "doc/redcat/store" },
-  { kit = "kit/redcat/marksman", type = "replaces", source = "doc/redcat/store" },
-  { kit = "kit/redcat/marksman", type = "replaces", replaces = "part/redcat/RER12660", source = "doc/redcat/store", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/redcat/marksman", type = "replaces", source = "doc/redcat/store", replaces = "part/redcat/RER12660", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "gear"
 material = "aluminium"

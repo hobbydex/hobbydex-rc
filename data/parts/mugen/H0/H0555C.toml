@@ -5,8 +5,7 @@ name = "O-Ring(Si)"
 pack_qty = 2
 pack_qty_basis = "manual"
 fits = [
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list", notes = "Also listed by doc/mugen/mrx6r-part-list" },
   { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
 ]
 category = "o-ring-seal"

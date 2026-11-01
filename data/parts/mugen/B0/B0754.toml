@@ -7,10 +7,8 @@ category = "screw"
 fits = [
   { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7t-part-list" },
   { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list", notes = "Also listed by doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
 ]
 documents = ["doc/mugen/mbx-7t-part-list", "doc/mugen/mbx8-eco-part-list", "doc/mugen/mrx6-part-list"]
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M2X6-F-H-CAP-SCREW-B0640-1/B0754" } ]

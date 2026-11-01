@@ -4,10 +4,8 @@ number = "H0291"
 name = "REAR DRIVE SHAFT"
 gtin = "4944925010569"
 fits = [
-  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
-  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list", notes = "Also listed by doc/mugen/mrx5-part-list" },
+  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list", notes = "Also listed by doc/mugen/mrx-4-part-list" },
 ]
 category = "drivetrain"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/REAR-HALF-SHAFT/H0291" } ]

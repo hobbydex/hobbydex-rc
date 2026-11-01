@@ -6,14 +6,11 @@ category = "clip"
 gtin = "4944925207228"
 fits = [
   { kit = "kit/mugen/mbx5t", type = "direct", source = "doc/mugen/mbx-5t-part-list" },
-  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list" },
-  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx-5-part-list" },
+  { kit = "kit/mugen/mbx5", type = "direct", source = "doc/mugen/mbx5r-part-list", notes = "Also listed by doc/mugen/mbx-5-part-list" },
   { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list", notes = "Also listed by doc/mugen/mrx6-part-list" },
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
+  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list", notes = "Also listed by doc/mugen/mrx-4-part-list" },
 ]
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/2.5-E-RING/B0722" },

@@ -5,8 +5,7 @@ name = "Chassis SRX8 GTE RTR"
 seen_by = "2022-08-17"
 seen_by_source = "https://web.archive.org/web/20220817042738/https://oldmain.serpent.com/product/601217/"
 fits = [
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-spares" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts", notes = "Also listed by doc/serpent/srx8-gte-rtr-spares" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser601217" },

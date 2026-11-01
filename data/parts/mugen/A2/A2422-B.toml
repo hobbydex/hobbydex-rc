@@ -4,10 +4,8 @@ number = "A2422-B"
 name = "10g WEIGHT"
 gtin = "4944925913433"
 fits = [
-  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-option-parts-page" },
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-option-parts-page" },
-  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-option-parts-page", notes = "Also listed by doc/mugen/mtc3-part-list" },
+  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-option-parts-page", notes = "Also listed by doc/mugen/mrx7-part-list" },
 ]
 category = "chassis"
 weight_g = 10

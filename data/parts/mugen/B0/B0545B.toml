@@ -5,8 +5,7 @@ name = "B0545B"
 name_source = "ocr"
 notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
 fits = [
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list", notes = "Also listed by doc/mugen/mrx6-part-list" },
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
 ]
 documents = ["doc/mugen/mrx5-wc-part-list", "doc/mugen/mrx6-part-list", "doc/mugen/mrx6r-part-list"]

@@ -4,12 +4,9 @@ number = "B0546"
 name = "RIDE HEIGHT GAUGE R"
 gtin = "4944925031977"
 fits = [
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-option-parts-page" },
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-option-parts-page", notes = "Also listed by doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list", notes = "Also listed by doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
 ]
 category = "tool"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/HEIGHT-GAUGE-3-15MM-MTX-MRX-MGT-3-15MM/B0546" } ]

@@ -5,17 +5,14 @@ name = "SPARE TIP FOR PIN REPL"
 gtin = "4944925025556"
 category = "pin"
 fits = [
-  { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7tre-part-list" },
-  { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7t-eco-part-list" },
+  { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7tre-part-list", notes = "Also listed by doc/mugen/mbx-7t-eco-part-list" },
   { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7t-part-list" },
   { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
   { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-part-list" },
   { kit = "kit/mugen/mbx7-eco", type = "direct", source = "doc/mugen/mbx-7r-eco-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list", notes = "Also listed by doc/mugen/mrx6-part-list" },
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
 ]
 documents = ["doc/mugen/mbx-6tr-part-list", "doc/mugen/mbx-7r-eco-part-list", "doc/mugen/mbx-7t-eco-part-list"]
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/SPARE-TIP-FOR-B0541/B0541D" } ]

@@ -11,12 +11,11 @@ fits = [
   { kit = "kit/yokomo/b-max2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX2 MR2, B-MAX2 MR3, B-MAX2 RS" },
   { kit = "kit/yokomo/b-max4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for B-MAX4 3G, B-MAX4 3GF" },
   { kit = "kit/yokomo/ro", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0, RO2.0" },
-  { kit = "kit/yokomo/so", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0" },
+  { kit = "kit/yokomo/so", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0; Same part in another material (link_upgrades.py)", replaces = "part/yokomo/BM-S812RA" },
   { kit = "kit/yokomo/yz-2", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2, YZ-2 CA, YZ-2 CAL2, YZ-2 CAL3, YZ-2 DT, YZ-2 DTM, YZ-2 DTM2, YZ-2 DTM3, YZ-2 DTMW" },
   { kit = "kit/yokomo/yz-2t", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2T" },
   { kit = "kit/yokomo/yz-4", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-4, YZ-4SF" },
   { kit = "kit/yokomo/mo", type = "replaces", replaces = "part/yokomo/BM-S812RA", source = "doc/yokomo/mo2.0-instruction-manual", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/yokomo/so", type = "replaces", replaces = "part/yokomo/BM-S812RA", source = "doc/yokomo/store", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/b2-s812aa" },

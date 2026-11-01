@@ -5,10 +5,8 @@ name = "Radioplate support alu"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/natrix-748", type = "replaces", source = "doc/serpent/natrix-748-options" },
-  { kit = "kit/serpent/733", type = "replaces", source = "doc/serpent/733-te-options" },
-  { kit = "kit/serpent/733", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/733-te-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/natrix-748", type = "replaces", replaces = "part/serpent/804162", source = "doc/serpent/natrix-748-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-748", type = "replaces", source = "doc/serpent/natrix-748-options", replaces = "part/serpent/804162", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/733", type = "replaces", source = "doc/serpent/733-te-options", replaces = "part/serpent/804162", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser804212" },

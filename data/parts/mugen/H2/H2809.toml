@@ -4,9 +4,7 @@ number = "H2809"
 name = "FUEL TANK"
 gtin = "4944925033094"
 fits = [
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list", notes = "Also listed by doc/mugen/mrx6r-part-list; Also listed by doc/mugen/mrx6-part-list" },
 ]
 category = "engine-fuel"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/FUEL-TANK-MRX-6/H2809" } ]

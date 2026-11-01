@@ -525,6 +525,10 @@ A row may narrow the kit to the releases the maker lists the part for, with
 every car built on the chassis. Every id must be a release of the row's kit.
 A row without `releases` fits every release of the kit.
 
+One row per claim: rows that name the same kit with the same `releases` and `car` are one row. When
+they list the part from two documents, the first row keeps its `source` and the other documents are
+named in `notes` ("Also listed by doc/..."). Rows that differ in `type` or `replaces` stay apart.
+
 ```toml
 fits = [
   { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/58689"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Tamiya TT-02 2020 Ford GT Mk II (#58689)" },

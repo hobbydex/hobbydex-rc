@@ -4,10 +4,8 @@ number = "H0571"
 name = "DAMPER PARTS"
 gtin = "4944925016844"
 fits = [
-  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
-  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list", notes = "Also listed by doc/mugen/mrx5-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
 ]
 category = "shock"

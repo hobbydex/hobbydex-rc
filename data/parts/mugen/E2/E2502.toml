@@ -4,10 +4,8 @@ number = "E2502"
 name = "FRONT DAMPER STAY"
 gtin = "4944925026423"
 fits = [
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7r-part-list" },
-  { kit = "kit/mugen/mbx7-eco", type = "direct", source = "doc/mugen/mbx-7r-eco-part-list" },
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7-part-list" },
-  { kit = "kit/mugen/mbx7-eco", type = "direct", source = "doc/mugen/mbx-7-eco-part-list" },
+  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7r-part-list", notes = "Also listed by doc/mugen/mbx-7-part-list" },
+  { kit = "kit/mugen/mbx7-eco", type = "direct", source = "doc/mugen/mbx-7r-eco-part-list", notes = "Also listed by doc/mugen/mbx-7-eco-part-list" },
 ]
 category = "chassis"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/FRONT-DAMPER-STAY-X7/E2502" } ]

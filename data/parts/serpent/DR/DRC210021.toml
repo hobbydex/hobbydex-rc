@@ -3,14 +3,10 @@ brand = "brand/serpent"
 number = "DRC210021"
 name = "Servo digital 0.14s/15kg WP (DRC210021)"
 fits = [
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-parts" },
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-rtr-parts" },
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-parts" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts" },
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-spares" },
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-rtr-spares" },
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-spares" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-spares" },
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-parts", notes = "Also listed by doc/serpent/srx8-rtr-spares" },
+  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-rtr-parts", notes = "Also listed by doc/serpent/srx8-e-rtr-spares" },
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-parts", notes = "Also listed by doc/serpent/srx8-gt-rtr-spares" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts", notes = "Also listed by doc/serpent/srx8-gte-rtr-spares" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/drc210021" },

@@ -7,10 +7,8 @@ seen_by_source = "https://web.archive.org/web/20230331132843/https://oldmain.ser
 pack_qty = 4
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/srx8-gt", type = "replaces", source = "doc/serpent/srx8gtr-ec-options" },
-  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8gte-r-options" },
-  { kit = "kit/serpent/srx8-gt", type = "replaces", replaces = "part/serpent/601258", source = "doc/serpent/srx8gtr-ec-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/srx8-gte", type = "replaces", replaces = "part/serpent/601258", source = "doc/serpent/srx8gte-r-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-gt", type = "replaces", source = "doc/serpent/srx8gtr-ec-options", replaces = "part/serpent/601258", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8gte-r-options", replaces = "part/serpent/601258", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser601291" },

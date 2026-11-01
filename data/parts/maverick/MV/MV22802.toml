@@ -11,17 +11,11 @@ links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/MV22802?show_disc=true" },
 ]
 fits = [
-  { kit = "kit/maverick/strada-dc", type = "replaces", source = "doc/maverick/MV12618-kit-page" },
-  { kit = "kit/maverick/strada-dt", type = "replaces", source = "doc/maverick/part-pages" },
-  { kit = "kit/maverick/strada-mt", type = "replaces", source = "doc/maverick/MV12615-kit-page" },
-  { kit = "kit/maverick/strada-tc", type = "replaces", source = "doc/maverick/MV12616-kit-page" },
-  { kit = "kit/maverick/strada-xb", type = "replaces", source = "doc/maverick/MV12613-kit-page" },
-  { kit = "kit/maverick/strada-dt", type = "replaces", source = "doc/maverick/MV12628-kit-page" },
-  { kit = "kit/maverick/strada-dc", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12618-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/maverick/strada-mt", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12615-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/maverick/strada-tc", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12616-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/maverick/strada-xb", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/MV12613-kit-page", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/maverick/strada-dt", type = "replaces", replaces = "part/maverick/MV22060", source = "doc/maverick/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-dc", type = "replaces", source = "doc/maverick/MV12618-kit-page", replaces = "part/maverick/MV22060", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-dt", type = "replaces", source = "doc/maverick/part-pages", replaces = "part/maverick/MV22060", notes = "Also listed by doc/maverick/MV12628-kit-page; Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-mt", type = "replaces", source = "doc/maverick/MV12615-kit-page", replaces = "part/maverick/MV22060", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-tc", type = "replaces", source = "doc/maverick/MV12616-kit-page", replaces = "part/maverick/MV22060", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/maverick/strada-xb", type = "replaces", source = "doc/maverick/MV12613-kit-page", replaces = "part/maverick/MV22060", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/maverick/strada-rx", type = "direct", source = "doc/maverick/MV12619-kit-page" },
   { kit = "kit/maverick/strada-xt", type = "direct", source = "doc/maverick/MV12614-kit-page" },
 ]

@@ -5,8 +5,7 @@ name = "Brake plate SRX8 RTR"
 pack_qty = 4
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-parts" },
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-spares" },
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-parts", notes = "Also listed by doc/serpent/srx8-rtr-spares" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser601210" },

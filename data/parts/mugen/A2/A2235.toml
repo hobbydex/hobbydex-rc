@@ -5,9 +5,7 @@ name = "PULLEYS"
 gtin = "4944925040665"
 fits = [
   { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list", notes = "Also listed by doc/mugen/mtc2-fwd-part-list; Also listed by doc/mugen/mtc2-part-list" },
 ]
 category = "gear"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/PULLEY-PARTS/A2235" } ]
