@@ -22,3 +22,8 @@ fits = [
 documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-k1-exploded", "doc/schumacher/cat-l1-evo-exploded", "doc/schumacher/catl1r-exploded-diagram-v2", "doc/schumacher/cougar-laydown-exploded", "doc/schumacher/cougar-svr-exploded", "doc/schumacher/kf-exploded", "doc/schumacher/mi6evo-exploded", "doc/schumacher/mission-ft-exploded-v2", "doc/schumacher/storm-st-exploded"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/diff-shims-10x12x0-2-pk8-u2761" } ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/washer/10x12x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+pack_qty = 8
+pack_qty_basis = "name"

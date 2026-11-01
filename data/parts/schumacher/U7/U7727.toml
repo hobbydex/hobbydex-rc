@@ -6,3 +6,7 @@ seen_by = "2020"
 seen_by_source = "doc/schumacher/storm-st-manual"
 category = "bearing"
 documents = ["doc/schumacher/storm-st-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "metal"

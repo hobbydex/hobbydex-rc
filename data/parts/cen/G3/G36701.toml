@@ -10,3 +10,6 @@ notes = "Labelled by number only in the CEN manuals; name from the maker's produ
 documents = ["doc/cen/mt-series-b50-hl150-manual", "doc/cen/q-series-fiat-595-suzuki-jimny-manual"]
 links = [ { site = "CEN Racing", url = "https://www.cenracingusa.com/products/g36701" } ]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

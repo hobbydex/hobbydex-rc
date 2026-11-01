@@ -7,3 +7,6 @@ pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/schumacher/ft8-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/speed-pack-m2-5x4-cone-grub-screw-pk5-u8322" } ]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

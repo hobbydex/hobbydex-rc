@@ -8,3 +8,6 @@ name_source = "manual"
 pack_qty = 6
 pack_qty_basis = "manual"
 material = "plastic"
+equivalent_to = [
+  { spec = "spec/nut/m3-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

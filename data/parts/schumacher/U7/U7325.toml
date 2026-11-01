@@ -5,3 +5,7 @@ name = "Pro-Ball Bearing 5x11x4 Sealed - pr"
 category = "bearing"
 documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/pro-ball-bearing-5x11x4-sealed-pr-u7325" } ]
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

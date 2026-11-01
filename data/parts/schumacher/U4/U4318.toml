@@ -6,3 +6,6 @@ category = "bearing"
 color = "red"
 documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/ball-bearing-5x10x3-red-seal-pr-u4318" } ]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

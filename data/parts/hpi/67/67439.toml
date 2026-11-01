@@ -10,3 +10,6 @@ documents = ["doc/hpi/115878-vol02-hpi-d8s-rtr-060115", "doc/hpi/115878-vol02-hp
 name_source = "manufacturer"
 pack_qty = 2
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

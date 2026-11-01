@@ -7,3 +7,6 @@ pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/schumacher/icon-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-5/m3x6-grub-screw-dome-end-patched-pk4-u7884" } ]
+equivalent_to = [
+  { spec = "spec/screw/m3x6-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

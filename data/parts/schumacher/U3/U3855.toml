@@ -6,3 +6,7 @@ notes = "Name read by OCR from a scanned schumacher manual; verify before relyin
 name_source = "ocr"
 documents = ["doc/schumacher/cat-k1-aero-manual"]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "open"
