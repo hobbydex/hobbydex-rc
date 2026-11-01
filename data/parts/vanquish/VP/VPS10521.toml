@@ -8,3 +8,7 @@ gtin = "791512785539"
 category = "body-accessory"
 color = "blue"
 links = [{ site = "Vanquish", url = "https://vanquishproducts.com/products/optic-hwo-grill" }]
+fits = [
+  { kit = "kit/vanquish/h10", releases = ["release/vanquish/vps09010a", "release/vanquish/vps09027"], type = "direct", source = "doc/vanquish/store", notes = "Listed in the Vanquish store description (product page): compatible with VPS09010A RTR and VPS09027 KIT" },
+  { kit = "kit/vanquish/h10", car = "H10 Optic RTR (VPS09010B)", type = "direct", source = "doc/vanquish/store", notes = "Listed in the Vanquish store description (product page): compatible with VPS09010B RTR" },
+]
