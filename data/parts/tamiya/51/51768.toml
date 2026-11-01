@@ -5,8 +5,9 @@ name = "DN-01SR Front Uprights"
 notes = "Name from the Tamiya product page (https://www.tamiya.com/english/products/51768/index.html)"
 category = "suspension"
 released = "2026-10"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51768-product-page"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/english/products/51768/index.html" } ]
 fits = [
   { kit = "kit/tamiya/dn-01sr", type = "replaces", source = "doc/tamiya/newitems-month", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/51768-product-page" },
 ]

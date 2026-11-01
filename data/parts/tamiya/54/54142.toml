@@ -11,3 +11,9 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/8004-54142", kind = "fan-site" },
   { site = "Tamiya", url = "https://www.tamiya.com/japan/products/54142/index.html" },
 ]
+fits = [
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/54142-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/54142-product-page-ja" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/54142-product-page-ja" },
+]
+documents = ["doc/tamiya/54142-product-page-ja"]

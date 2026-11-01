@@ -21,6 +21,12 @@ fits = [
   { kit = "kit/tamiya/tt-02", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2: 1 54305 or 54306 #2 53663 #3 53070 or 53267 #4 53863" },
   { kit = "kit/tamiya/tt-02b", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2: 1 54305 or 54306 #2 53663 #3 53070 or 53267 #4 53863" },
   { kit = "kit/tamiya/xv-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #1: 1 54305 or 54306 #2 53663 #3 53070 or 53267 #4 53863" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/53042-product-page-ja" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/53042-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/53042-product-page-ja" },
+  { kit = "kit/tamiya/tb-03", releases = ["release/tamiya/84205"], type = "direct", source = "doc/tamiya/53042-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/53042-product-page-ja" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/53042-product-page-ja" },
 ]
 category = "oil-grease"
 links = [
@@ -29,5 +35,5 @@ links = [
   { site = "Tamiya", url = "https://www.tamiya.de/tamiya_en/spare-parts-accessories/rc-spare-parts/other-spare-parts-accessories/ball-differential-grease-10g-rc-lubricant-300053042-en.html" },
 ]
 released = "1989-06"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/53042-product-page-ja"]
 status = "available"

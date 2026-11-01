@@ -14,6 +14,9 @@ fits = [
   { kit = "kit/tamiya/tt-01e", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/tt-02", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/tt-02-type-s", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/54080-product-page" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/54080-product-page" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/54080-product-page" },
 ]
 category = "nut"
 links = [
@@ -22,7 +25,7 @@ links = [
 ]
 material = "aluminium"
 released = "2008-07"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54080-product-page"]
 equivalent_to = [
   { spec = "spec/nut/m4-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

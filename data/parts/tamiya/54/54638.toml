@@ -6,6 +6,7 @@ pack_qty = 2
 pack_qty_basis = "page"
 fits = [
   { kit = "kit/tamiya/tt-02-type-s", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/47439"], type = "direct", source = "doc/tamiya/54638-product-page-ja" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/15516-54638", kind = "fan-site" },
@@ -13,6 +14,6 @@ links = [
 ]
 material = "steel"
 released = "2015-06"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54638-product-page-ja"]
 category = "misc"
 category_source = "fallback"

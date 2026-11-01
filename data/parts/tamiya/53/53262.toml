@@ -5,6 +5,8 @@ name = "0.4 Steel Pinion Gears 28T, 29T"
 fits = [
   { kit = "kit/tamiya/f104", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: 54166 and 53104 or 53900" },
   { kit = "kit/tamiya/trf104", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/53262-product-page" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/53262-product-page" },
 ]
 category = "pinion"
 includes = [
@@ -17,4 +19,4 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/5154-53262", kind = "fan-site" },
 ]
 released = "1996-06"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/53262-product-page"]

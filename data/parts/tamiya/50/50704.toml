@@ -7,7 +7,10 @@ seen_by_source = "https://web.archive.org/web/20040911143715/http://www.tamiyaus
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "gear"
-documents = ["doc/tamiya/58227-manual-de"]
+fits = [
+  { kit = "kit/tamiya/m-05", releases = ["release/tamiya/58443", "release/tamiya/58593", "release/tamiya/84131"], type = "direct", source = "doc/tamiya/50704-product-page-ja" },
+]
+documents = ["doc/tamiya/58227-manual-de", "doc/tamiya/50704-product-page-ja"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/japan/products/50704/index.html" },
   { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20241008045501/https://www.tamiya.com/english/products/50704/index.html", kind = "archive" },

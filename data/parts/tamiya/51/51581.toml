@@ -4,6 +4,9 @@ number = "51581"
 name = "Buggy Rear Dish Wheels (Hex Hub)"
 fits = [
   { kit = "kit/tamiya/db01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: 54669" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/51581-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/51581-product-page-ja" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/51581-product-page-ja" },
 ]
 category = "wheel"
 links = [
@@ -13,4 +16,4 @@ links = [
 vehicle = "buggy"
 position = "rear"
 released = "2015-08"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51581-product-page-ja"]

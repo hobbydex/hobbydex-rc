@@ -21,6 +21,11 @@ fits = [
   { kit = "kit/tamiya/xv-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #1: 1 Not for use with XV-01T #2 Only 24T #3 53665 #4 Only ● 25T" },
   { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/xv-02rs", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/50477-product-page-ja" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/50477-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/50477-product-page-ja" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/50477-product-page-ja" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/50477-product-page-ja" },
 ]
 category = "pinion"
 links = [
@@ -28,7 +33,7 @@ links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50477/index.html" },
 ]
 released = "1993-01"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/50477-product-page-ja"]
 includes = [
   { spec = "spec/pinion/mod0.6-24t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
   { spec = "spec/pinion/mod0.6-25t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },

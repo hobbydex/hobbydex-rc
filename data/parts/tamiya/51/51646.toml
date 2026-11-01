@@ -6,7 +6,11 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "parts-tree"
 released = "2019-12"
-documents = ["doc/tamiya/newitems-month"]
+fits = [
+  { kit = "kit/tamiya/trf420x", releases = ["release/tamiya/42345"], type = "direct", source = "doc/tamiya/51646-product-page" },
+  { kit = "kit/tamiya/trf421", releases = ["release/tamiya/42391"], type = "direct", source = "doc/tamiya/51646-product-page" },
+]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51646-product-page"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51646/index.html" },
 ]

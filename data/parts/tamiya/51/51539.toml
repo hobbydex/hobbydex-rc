@@ -14,6 +14,9 @@ fits = [
   { kit = "kit/tamiya/td2", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2: 1 54504, 54505 #2 54505" },
   { kit = "kit/tamiya/td4", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #1: 1 54504, 54505 #2 54505" },
   { kit = "kit/tamiya/tt-02b", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #1: 1 54504, 54505 #2 54505" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/51539-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/51539-product-page-ja" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/51539-product-page-ja" },
 ]
 category = "shock"
 links = [
@@ -21,3 +24,4 @@ links = [
   { site = "Tamiya", url = "https://www.tamiya.com/japan/products/51539/index.html" },
 ]
 shock_part = "piston"
+documents = ["doc/tamiya/51539-product-page-ja"]

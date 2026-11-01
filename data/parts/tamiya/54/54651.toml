@@ -7,7 +7,11 @@ seen_by_source = "https://web.archive.org/web/20160808012440/http://www.tamiyaus
 gtin = "4950344546510"
 notes = "Named on the maker's own product page (archived copy)"
 category = "suspension"
-documents = ["doc/tamiya/58720-anleitung-instruction-tt-02-type-srx-02-2023"]
+fits = [
+  { kit = "kit/tamiya/tt-02-type-s", releases = ["release/tamiya/58720"], type = "direct", source = "doc/tamiya/54651-product-page-ja" },
+  { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/47439"], type = "direct", source = "doc/tamiya/54651-product-page-ja" },
+]
+documents = ["doc/tamiya/58720-anleitung-instruction-tt-02-type-srx-02-2023", "doc/tamiya/54651-product-page-ja"]
 name_source = "manufacturer"
 pack_qty = 2
 pack_qty_basis = "name"

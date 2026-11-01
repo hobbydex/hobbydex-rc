@@ -21,6 +21,11 @@ fits = [
   { kit = "kit/tamiya/xm-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/xv-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #1: ● #1 Not for use with XV-01T #2 For TA07MS, use with 51356,51423,51548 #3 53665" },
   { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/54771-product-page" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/54771-product-page" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/54771-product-page" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/54771-product-page" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/54771-product-page" },
 ]
 category = "pinion"
 equivalent_to = [
@@ -32,6 +37,6 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18912-54771", kind = "fan-site" },
 ]
 released = "2017-07"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54771-product-page"]
 teeth = 24
 module = 0.6

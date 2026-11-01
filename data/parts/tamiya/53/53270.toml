@@ -14,3 +14,8 @@ links = [
 equivalent_to = [
   { spec = "spec/bearing/6x10x3", match = "close", notes = "Tamiya size code 1060: 10 mm outer, 6 mm bore, 3 mm wide (usual width for this size, not confirmed for Tamiya)" },
 ]
+fits = [
+  { kit = "kit/tamiya/f104", releases = ["release/tamiya/58652"], type = "direct", source = "doc/tamiya/53270-product-page-ja" },
+  { kit = "kit/tamiya/tb-03", releases = ["release/tamiya/84205"], type = "direct", source = "doc/tamiya/53270-product-page-ja" },
+]
+documents = ["doc/tamiya/53270-product-page-ja"]

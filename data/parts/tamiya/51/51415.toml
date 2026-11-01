@@ -7,7 +7,12 @@ name_source = "ocr"
 category = "spur-gear"
 teeth = 79
 released = "2010-06"
-documents = ["doc/tamiya/newitems-month"]
+fits = [
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/51415-product-page" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/51415-product-page" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/51415-product-page" },
+]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51415-product-page"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51415/index.html" },
 ]

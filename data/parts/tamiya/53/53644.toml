@@ -9,5 +9,12 @@ color = "blue"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "suspension"
-documents = ["doc/tamiya/42104-manual", "doc/tamiya/42106-manual", "doc/tamiya/42162-manual"]
+fits = [
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/53644-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/53644-product-page-ja" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/53644-product-page-ja" },
+  { kit = "kit/tamiya/tb-03", releases = ["release/tamiya/84205"], type = "direct", source = "doc/tamiya/53644-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/53644-product-page-ja" },
+]
+documents = ["doc/tamiya/42104-manual", "doc/tamiya/42106-manual", "doc/tamiya/42162-manual", "doc/tamiya/53644-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/53644/index.html" } ]

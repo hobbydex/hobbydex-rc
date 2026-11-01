@@ -10,6 +10,8 @@ fits = [
   { kit = "kit/tamiya/dt-03", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: Use extra 2pcs. as spares. WR-02, WR-02G, WT-01 need 16pcs." },
   { kit = "kit/tamiya/td2", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/td4", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/dynahead-6x6", type = "direct", source = "doc/tamiya/54579-product-page-ja" },
+  { kit = "kit/tamiya/gf-01", releases = ["release/tamiya/58672"], type = "direct", source = "doc/tamiya/54579-product-page-ja" },
 ]
 category = "bearing"
 links = [
@@ -20,4 +22,4 @@ equivalent_to = [
   { spec = "spec/bearing/5x11x4", match = "functional", notes = "Tamiya size code 1150: 11 mm outer, 5 mm bore, 4 mm wide" },
 ]
 released = "2014-03"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54579-product-page-ja"]

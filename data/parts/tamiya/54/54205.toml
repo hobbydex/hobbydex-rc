@@ -8,6 +8,9 @@ fits = [
   { kit = "kit/tamiya/db01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/td2", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: 54028" },
   { kit = "kit/tamiya/td4", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: 54028" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/54205-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/54205-product-page-ja" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/54205-product-page-ja" },
 ]
 category = "shock"
 links = [
@@ -16,4 +19,4 @@ links = [
 ]
 material = "aluminium"
 released = "2009-12"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54205-product-page-ja"]

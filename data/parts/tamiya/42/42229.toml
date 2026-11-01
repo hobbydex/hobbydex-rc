@@ -8,5 +8,8 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "pinion"
 teeth = 30
-documents = ["doc/tamiya/42345-manual", "doc/tamiya/42382-manual", "doc/tamiya/42384-manual"]
+fits = [
+  { kit = "kit/tamiya/trf421", releases = ["release/tamiya/42391"], type = "direct", source = "doc/tamiya/42229-product-page-ja" },
+]
+documents = ["doc/tamiya/42345-manual", "doc/tamiya/42382-manual", "doc/tamiya/42384-manual", "doc/tamiya/42229-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/42229/index.html" } ]

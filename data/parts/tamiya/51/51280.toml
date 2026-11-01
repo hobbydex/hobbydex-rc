@@ -7,5 +7,9 @@ seen_by_source = "https://web.archive.org/web/20061112035100/http://www.tamiyaus
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "parts-tree"
-documents = ["doc/tamiya/42139-manual-usa", "doc/tamiya/42183-manual-usa", "doc/tamiya/42240-manual"]
+fits = [
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/51280-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/51280-product-page-ja" },
+]
+documents = ["doc/tamiya/42139-manual-usa", "doc/tamiya/42183-manual-usa", "doc/tamiya/42240-manual", "doc/tamiya/51280-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/51280/index.html" } ]

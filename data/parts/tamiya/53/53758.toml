@@ -10,5 +10,18 @@ category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-5000cst", match = "functional", notes = "Viscosity number #5000 as the brand states it, on the cSt scale; measuring temperature not given" },
 ]
-documents = ["doc/tamiya/42288-manual"]
+fits = [
+  { kit = "kit/tamiya/xm-01", type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/ta07", releases = ["release/tamiya/42326", "release/tamiya/58636"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/trf420x", releases = ["release/tamiya/42345"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/trf419", releases = ["release/tamiya/42301", "release/tamiya/42311", "release/tamiya/42316"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+  { kit = "kit/tamiya/trf421", releases = ["release/tamiya/42391"], type = "direct", source = "doc/tamiya/53758-product-page-ja" },
+]
+documents = ["doc/tamiya/42288-manual", "doc/tamiya/53758-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/53758/index.html" } ]
