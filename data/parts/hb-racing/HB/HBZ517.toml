@@ -6,3 +6,6 @@ pack_qty = 10
 pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/hb-racing/66509-kit-page"]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-truss-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
