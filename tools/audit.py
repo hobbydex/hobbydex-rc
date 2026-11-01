@@ -492,6 +492,23 @@ SPEC_EQUIVALENT_CATS = {
 }
 
 
+GEAR_CATS = {"gear", "pinion", "spur-gear"}
+GEAR_SET_NAME = re.compile(r"(?i)\b(gears|pinions|sets?)\b")   # "Pinion Gears 13T + Screws (2P)": several pieces, a count
+PITCH_IN_NAME = re.compile(r"(?i)(?<![\w.])(\d{1,3})\s*(?:p|dp|pitch)\b")   # "(48P)", "48DP", "48 Pitch"
+
+
+def gear_pitch_as_count(p):
+    """Why a gear's pack_qty is its pitch, or None: the count equals the part's pitch_dp, or the pitch printed in its
+    name ("90T SPUR GEAR (48P)"). A gear set's name ("Gears", "Set") states a count, so its printed number is no pitch.
+    A pitch in a name is normal; only a count that equals it is the bug (tools#590 read "(48P)" as a count)."""
+    pq = p.get("pack_qty")
+    if pq is None or p.get("category") not in GEAR_CATS: return None
+    if p.get("pitch_dp") == pq: return f"pack_qty {pq} is the pitch_dp"
+    name = p.get("name") or ""
+    if not GEAR_SET_NAME.search(name) and any(int(m.group(1)) == pq for m in PITCH_IN_NAME.finditer(name)):
+        return f"pack_qty {pq} is the pitch printed in the name"
+    return None
+
 SPEC_KIT_NAME = re.compile(r"\b(?:rebuild|repair|maintenance|conversion)\b")
 
 
@@ -1191,6 +1208,12 @@ def main():
     no_basis = [p for p in parts if "pack_qty" in p and "pack_qty_basis" not in p]
     check("pack-qty-no-basis", "record pack_qty_basis (python3 -I tools/backfill_pack_basis.py in hobbydex-tools) or leave it: the count's source is not known",
           no_basis, per_brand=per_brand(no_basis))
+    # a gear's pack_qty that is its pitch (tools#590): the pitch belongs in pitch_dp, the count in the maker's listing
+    pitch_count = [(p, gear_pitch_as_count(p)) for p in parts]
+    pitch_count = [(p, why) for p, why in pitch_count if why]
+    check("pack-qty-is-pitch", "the count is the pitch: set pack_qty from the maker's listing or the bag (the pitch stays in pitch_dp), or unset it; a gear set whose name carries a count is not read",
+          [p for p, _ in pitch_count])
+    results["pack-qty-is-pitch"]["examples"] = [{"id": f"{p['id']} ({why})", "url": url_for(p)} for p, why in pitch_count[:args.examples]]
     ev_dir = os.path.join(os.path.abspath(args.tools), "cache", "notes", "pack-evidence")
     dis = os.path.join(ev_dir, "photo-disagreements.tsv")
     ids = set()
