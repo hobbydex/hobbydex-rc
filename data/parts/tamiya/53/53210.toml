@@ -5,4 +5,7 @@ name = "TGX 2-Speed Transmission Pinion Gear"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "pinion"
+fits = [
+  { kit = "kit/tamiya/tgx-mk-1", type = "direct", source = "doc/tamiya/44015-manual-usa", notes = "Name-based: the name says TGX and no Tamiya page lists a chassis for the part; read as the TGX-MK.1 nitro chassis" },
+]
 documents = ["doc/tamiya/44015-manual-usa"]
