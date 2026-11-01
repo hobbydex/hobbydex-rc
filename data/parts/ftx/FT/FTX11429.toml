@@ -11,3 +11,6 @@ category = "pin"
 equivalent_to = [
   { spec = "spec/pin/3x32", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
 ]
+fits = [
+  { kit = "kit/ftx/b4x", type = "direct", notes = "Named by the maker's spares title on ftx-rc.com (import_ftx.py --link-fits)" },
+]
