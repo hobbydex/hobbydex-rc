@@ -5,6 +5,9 @@ name = "Element 7.4V 350mAh Li-Ion Battery Pack (JST-XH)"
 links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151343" },
 ]
+fits = [
+  { kit = "kit/maverick/scout24", releases = ["release/maverick/151300", "release/maverick/151301", "release/maverick/151302", "release/maverick/151303", "release/maverick/151304", "release/maverick/151305"], type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "battery"
 capacity_mah = 350
 chemistry = "liion"

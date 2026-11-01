@@ -7,6 +7,9 @@ pack_qty_basis = "page"
 links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/151365" },
 ]
+fits = [
+  { kit = "kit/maverick/scout24", releases = ["release/maverick/151300", "release/maverick/151301", "release/maverick/151302", "release/maverick/151303", "release/maverick/151304", "release/maverick/151305"], type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "nut"
 equivalent_to = [
   { spec = "spec/nut/m2.5-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
