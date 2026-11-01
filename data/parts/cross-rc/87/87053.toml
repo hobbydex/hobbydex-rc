@@ -1,8 +1,15 @@
 id = "part/cross-rc/87053"
 brand = "brand/cross-rc"
 number = "87053"
-name = "87053"
+name = "Interior Lighting Group"
 notes = "Shown by number only in the manual's parts drawings"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/cross-rc/bc8-manual"]
+documents = ["doc/cross-rc/bc8-manual", "doc/cross-rc/crossrcparts-com"]
+name_source = "dealer"
+links = [
+  { site = "Cross RC Parts", url = "https://www.crossrcparts.com/dc8/908-crossrc-dc8-112-8x8-climbing-car-parts-interior-lighting-group-87122-87053-cs-97401011.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/cross-rc/dc8", type = "direct", source = "doc/cross-rc/crossrcparts-com", notes = "Known from the distributor: listed under the model's category" },
+]

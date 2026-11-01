@@ -1,8 +1,16 @@
 id = "part/cross-rc/215301"
 brand = "brand/cross-rc"
 number = "215301"
-name = "215301"
+name = "Straight Bridge Kit"
 notes = "Shown by number only in the manual's parts drawings"
-documents = ["doc/cross-rc/at4-manual", "doc/cross-rc/at4v-rtr-manual", "doc/cross-rc/jt4-manual"]
+documents = ["doc/cross-rc/at4-manual", "doc/cross-rc/at4v-rtr-manual", "doc/cross-rc/jt4-manual", "doc/cross-rc/crossrcparts-com"]
 category = "misc"
 category_source = "fallback"
+name_source = "dealer"
+links = [
+  { site = "Cross RC Parts", url = "https://www.crossrcparts.com/home/450-crossrc-at6-rc-car-parts-straight-bridge-kit-215301-cs-97400888.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/cross-rc/jt4", type = "direct", source = "doc/cross-rc/crossrcparts-com", notes = "Known from the distributor: listed under the model's category" },
+  { kit = "kit/cross-rc/xt4", type = "direct", source = "doc/cross-rc/crossrcparts-com", notes = "Known from the distributor: listed under the model's category" },
+]
