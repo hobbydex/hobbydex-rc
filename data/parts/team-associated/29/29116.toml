@@ -9,3 +9,7 @@ links = [
 ]
 category = "chassis"
 gtin = "784695291164"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90008"], type = "replaces", source = "doc/team-associated/90008-xp3ss-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc18", releases = ["release/team-associated/20121"], type = "replaces", source = "doc/team-associated/20121-xp3ss-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
