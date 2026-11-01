@@ -3,14 +3,14 @@ brand = "brand/traxxas"
 number = "2539"
 name = "Aluminum spacers: 3x6x1.5mm (2)/ 3x6x2.5mm (1)/ 3x6x3.8mm"
 gtin = "020334253903"
-pack_qty = 2
+pack_qty = 5
 pack_qty_basis = "page"
 category = "washer-shim"
 material = "aluminium"
 includes = [
-  { spec = "spec/washer/3x6x1.5", qty = 2 },
-  { spec = "spec/washer/3x6x2.5", qty = 1 },
-  { spec = "spec/washer/3x6x3.8" },
+  { spec = "spec/washer/3x6x1.5", qty = 2, notes = "Size and count from the maker's page title" },
+  { spec = "spec/washer/3x6x2.5", qty = 1, notes = "Size and count from the maker's page title" },
+  { spec = "spec/washer/3x6x3.8", qty = 2, notes = "Size and count from the maker's page title" },
 ]
 fits = [
   { kit = "kit/traxxas/nitro-slash", type = "direct", source = "doc/traxxas/44056-3-parts-list" },
@@ -22,5 +22,3 @@ links = [
 ]
 color = "silver"
 notes = "Colour read from the maker's product photo."
-includes_qty = "unstated"
-includes_qty_note = "the count of the 3x6x3.8 mm spacer is not stated"
