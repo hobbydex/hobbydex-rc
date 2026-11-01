@@ -86,8 +86,8 @@ ENUMS = {
     # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
     "part.pack_qty_basis": {"name", "page", "includes", "manual", "photo", "photos", "owner"},
     # where a shell's thickness_mm or a body's width_mm came from (docs/schema.md, bodies)
-    # why a part is universal (docs/schema.md "part", universal): the maker says so; the category is inherently universal; sold by size or spec
-    "part.universal_basis": {"maker", "category", "size"},
+    # why a part is universal (docs/schema.md "part", universal): the maker says so; the category is inherently universal; sold by size or spec; a set of one engine
+    "part.universal_basis": {"maker", "category", "size", "engine"},
     "part.thickness_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.width_basis": {"name", "page", "manual", "flyer", "owner"},
     "part.status": {"available", "discontinued"},   # docs/schema.md "part"; set only where the maker or a shop states it
@@ -907,8 +907,8 @@ def main():
             if d.get("universal") is not True:
                 errors.append(f"{path}: universal is true or left out")
             elif "universal_basis" not in d:
-                errors.append(f"{path}: universal needs a universal_basis (maker, category or size)")
-            elif d.get("applies_to"):
+                errors.append(f"{path}: universal needs a universal_basis (maker, category, size or engine)")
+            elif d.get("applies_to") and d.get("universal_basis") != "engine":
                 errors.append(f"{path}: a part that names the model it is for (applies_to) is not universal")
         if kind == "part" and ("includes_qty" in d or "includes_qty_note" in d):
             rows = d.get("includes") or []
