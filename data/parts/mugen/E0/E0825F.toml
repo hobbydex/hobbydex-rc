@@ -5,3 +5,7 @@ name = "FUEL GUARD"
 notes = "Revision letter of E0825: the parts lists print it small after the number"
 category = "bumper-guard"
 documents = ["doc/mugen/mbx-6-eco-part-list-ja", "doc/mugen/mbx-6tr-part-list-ja", "doc/mugen/mbx8t-part-list-ja", "doc/mugen/mbx8tr-part-list-ja"]
+pack_qty = 2
+fits = [
+  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6-part-list" },
+]

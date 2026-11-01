@@ -5,3 +5,8 @@ name = "SERVO HORN PARTS"
 notes = "Revision letter of B0430: the parts lists print it small after the number"
 documents = ["doc/mugen/manual-e2027"]
 category = "steering"
+fits = [
+  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7t-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
+]
