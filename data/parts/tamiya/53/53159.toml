@@ -16,5 +16,11 @@ equivalent_to = [
   { spec = "spec/nut/m4-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
 released = "1994-01"
-documents = ["doc/tamiya/newitems-month"]
+fits = [
+  { kit = "kit/tamiya/xm-01", type = "direct", source = "doc/tamiya/53159-product-page" },
+  { kit = "kit/tamiya/dynahead-6x6", type = "direct", source = "doc/tamiya/53159-product-page" },
+  { kit = "kit/tamiya/gf-01", releases = ["release/tamiya/58672"], type = "direct", source = "doc/tamiya/53159-product-page" },
+  { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/53159-product-page" },
+]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/53159-product-page"]
 finish = "anodized"

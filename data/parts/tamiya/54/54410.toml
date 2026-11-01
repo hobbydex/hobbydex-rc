@@ -7,5 +7,9 @@ seen_by_source = "https://web.archive.org/web/20130514234222/http://www.tamiyaus
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "drivetrain"
-documents = ["doc/tamiya/42383-manual"]
+fits = [
+  { kit = "kit/tamiya/xm-01", type = "direct", source = "doc/tamiya/54410-product-page-ja" },
+  { kit = "kit/tamiya/m-05", releases = ["release/tamiya/58443", "release/tamiya/58593", "release/tamiya/84131"], type = "direct", source = "doc/tamiya/54410-product-page-ja" },
+]
+documents = ["doc/tamiya/42383-manual", "doc/tamiya/54410-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/54410/index.html" } ]

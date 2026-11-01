@@ -16,3 +16,11 @@ equivalent_to = [
   { spec = "spec/bearing/5x14x5", match = "close", notes = "Tamiya size code 1450: 14 mm outer, 5 mm bore, 5 mm wide (usual width for this size, not confirmed for Tamiya)" },
 ]
 seal = "rubber"
+fits = [
+  { kit = "kit/tamiya/tt-02b", releases = ["release/tamiya/58717"], type = "direct", source = "doc/tamiya/53029-product-page-ja" },
+  { kit = "kit/tamiya/tt-02-type-s", releases = ["release/tamiya/58720"], type = "direct", source = "doc/tamiya/53029-product-page-ja" },
+  { kit = "kit/tamiya/dt-03", releases = ["release/tamiya/58610"], type = "direct", source = "doc/tamiya/53029-product-page-ja" },
+  { kit = "kit/tamiya/m-05", releases = ["release/tamiya/58443", "release/tamiya/58593", "release/tamiya/84131"], type = "direct", source = "doc/tamiya/53029-product-page-ja" },
+  { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/47382", "release/tamiya/47439"], type = "direct", source = "doc/tamiya/53029-product-page-ja" },
+]
+documents = ["doc/tamiya/53029-product-page-ja"]

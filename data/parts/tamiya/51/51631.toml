@@ -13,6 +13,10 @@ fits = [
   { kit = "kit/tamiya/td2", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/td4", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/trf104", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/tt-02b", releases = ["release/tamiya/58717"], type = "direct", source = "doc/tamiya/51631-product-page" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/51631-product-page" },
+  { kit = "kit/tamiya/m-05", releases = ["release/tamiya/58593"], type = "direct", source = "doc/tamiya/51631-product-page" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/51631-product-page" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m3x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
@@ -24,6 +28,6 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/18961-51631", kind = "fan-site" },
 ]
 released = "2019-08"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51631-product-page"]
 color = "black"
 notes = "Colour read from Tamiya's product photo (https://www.tamiya.com/english/products/51631/index.html)."

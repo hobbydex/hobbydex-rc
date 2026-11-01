@@ -7,5 +7,16 @@ seen_by_source = "https://web.archive.org/web/20041103141131/http://www.tamiyaus
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "pinion"
-documents = ["doc/tamiya/49400-manual-usa", "doc/tamiya/58371-manual-usa"]
+fits = [
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+  { kit = "kit/tamiya/tb-03", releases = ["release/tamiya/84205"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+  { kit = "kit/tamiya/trf420x", releases = ["release/tamiya/42345"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+  { kit = "kit/tamiya/trf419", releases = ["release/tamiya/42301", "release/tamiya/42311", "release/tamiya/42316"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+  { kit = "kit/tamiya/xv-01", releases = ["release/tamiya/58526", "release/tamiya/58552"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+  { kit = "kit/tamiya/trf421", releases = ["release/tamiya/42391"], type = "direct", source = "doc/tamiya/53405-product-page-ja" },
+]
+documents = ["doc/tamiya/49400-manual-usa", "doc/tamiya/58371-manual-usa", "doc/tamiya/53405-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/53405/index.html" } ]

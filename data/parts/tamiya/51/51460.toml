@@ -9,6 +9,9 @@ fits = [
   { kit = "kit/tamiya/td2", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #1: antenna and rear body mount hole positions to fit chassis. #1 54471 #2 54329" },
   { kit = "kit/tamiya/td4", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #1: antenna and rear body mount hole positions to fit chassis. #1 54471 #2 54329" },
   { kit = "kit/tamiya/xv-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/51460-product-page" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/51460-product-page" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/51460-product-page" },
 ]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 links = [
@@ -18,4 +21,4 @@ links = [
 category = "parts-tree"
 name_source = "ocr"
 released = "2011-06"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51460-product-page"]

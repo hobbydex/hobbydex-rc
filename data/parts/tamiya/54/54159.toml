@@ -7,7 +7,24 @@ name_source = "ocr"
 category = "steering"
 material = "aluminium"
 released = "2009-06"
-documents = ["doc/tamiya/newitems-month"]
+fits = [
+  { kit = "kit/tamiya/tt-02-type-s", releases = ["release/tamiya/58720"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/dt-03", releases = ["release/tamiya/58610"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/f104", releases = ["release/tamiya/58652"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/ta07", releases = ["release/tamiya/42326"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/tb-03", releases = ["release/tamiya/84205"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/trf420x", releases = ["release/tamiya/42345"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/trf419", releases = ["release/tamiya/42301", "release/tamiya/42311", "release/tamiya/42316"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/47439"], type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/54159-product-page" },
+  { kit = "kit/tamiya/xv-01", releases = ["release/tamiya/58526"], type = "direct", source = "doc/tamiya/54159-product-page" },
+]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54159-product-page"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/54159/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/8013-54159", kind = "fan-site" },

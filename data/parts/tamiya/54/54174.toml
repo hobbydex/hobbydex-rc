@@ -5,5 +5,14 @@ name = "Separate Sus. Mount 1C-1XC"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "suspension"
-documents = ["doc/tamiya/84159-manual-de"]
+fits = [
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/54174-product-page-ja" },
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "direct", source = "doc/tamiya/54174-product-page-ja" },
+  { kit = "kit/tamiya/ta07", releases = ["release/tamiya/58636"], type = "direct", source = "doc/tamiya/54174-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/54174-product-page-ja" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/54174-product-page-ja" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/54174-product-page-ja" },
+  { kit = "kit/tamiya/tb-03", releases = ["release/tamiya/84205"], type = "direct", source = "doc/tamiya/54174-product-page-ja" },
+]
+documents = ["doc/tamiya/84159-manual-de", "doc/tamiya/54174-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/54174/index.html" } ]

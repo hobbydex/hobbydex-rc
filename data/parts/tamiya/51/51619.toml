@@ -6,7 +6,14 @@ notes = "Name read by OCR from a scanned tamiya manual; verify before relying on
 name_source = "ocr"
 category = "body"
 depicts = { make = "Mazda", model = "Mazda3" }
-documents = ["doc/tamiya/spb-51619-manual", "doc/tamiya/51619-mazda-3"]
+fits = [
+  { kit = "kit/tamiya/tt-02-type-s", releases = ["release/tamiya/58720"], type = "direct", source = "doc/tamiya/51619-product-page-ja" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/51619-product-page-ja" },
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "direct", source = "doc/tamiya/51619-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/51619-product-page-ja" },
+  { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/47382", "release/tamiya/47439"], type = "direct", source = "doc/tamiya/51619-product-page-ja" },
+]
+documents = ["doc/tamiya/spb-51619-manual", "doc/tamiya/51619-mazda-3", "doc/tamiya/51619-product-page-ja"]
 links = [{ site = "Tamiya", url = "https://www.tamiya.com/japan/products/51619/index.html" }, { site = "Tamiya customer service", url = "https://customer-service.tamiya.de/en/service/manuals/", kind = "maker" }]
 status = "available"
 seen_by = "2019-07"

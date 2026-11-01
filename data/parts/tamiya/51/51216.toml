@@ -11,7 +11,11 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "drivetrain"
 released = "2005-06"
-documents = ["doc/tamiya/newitems-month"]
+fits = [
+  { kit = "kit/tamiya/xm-01", type = "direct", source = "doc/tamiya/51216-product-page" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/51216-product-page" },
+]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51216-product-page"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51216/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7505-51216", kind = "fan-site" },

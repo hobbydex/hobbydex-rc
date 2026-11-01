@@ -10,6 +10,10 @@ fits = [
   { kit = "kit/tamiya/xm-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2: 1 54306 #2 22046" },
   { kit = "kit/tamiya/xv-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #1: 1 54306 #2 22046" },
   { kit = "kit/tamiya/xv-02", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2: 1 54306 #2 22046" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/54390-product-page-ja" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/54390-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/54390-product-page-ja" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/54390-product-page-ja" },
 ]
 category = "differential"
 links = [
@@ -18,4 +22,4 @@ links = [
 ]
 material = "aluminium"
 released = "2012-06"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54390-product-page-ja"]

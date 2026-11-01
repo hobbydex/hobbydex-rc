@@ -7,5 +7,11 @@ seen_by_source = "doc/tamiya/42285-manual"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "suspension"
-documents = ["doc/tamiya/42285-manual"]
+fits = [
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "direct", source = "doc/tamiya/54622-product-page-ja" },
+  { kit = "kit/tamiya/ta07", releases = ["release/tamiya/42326", "release/tamiya/58636"], type = "direct", source = "doc/tamiya/54622-product-page-ja" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/54622-product-page-ja" },
+  { kit = "kit/tamiya/trf419", releases = ["release/tamiya/42301", "release/tamiya/42311", "release/tamiya/42316"], type = "direct", source = "doc/tamiya/54622-product-page-ja" },
+]
+documents = ["doc/tamiya/42285-manual", "doc/tamiya/54622-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/54622/index.html" } ]

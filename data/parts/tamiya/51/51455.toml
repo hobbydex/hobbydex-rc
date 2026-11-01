@@ -5,7 +5,10 @@ name = "J & JJ Parts"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 released = "2011-06"
-documents = ["doc/tamiya/newitems-month"]
+fits = [
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/51455-product-page" },
+]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51455-product-page"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51455/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7733-51455", kind = "fan-site" },

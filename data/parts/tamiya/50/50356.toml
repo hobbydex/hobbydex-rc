@@ -25,6 +25,13 @@ fits = [
   { kit = "kit/tamiya/xv-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/xv-02rs", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/50356-product-page-ja" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/50356-product-page-ja" },
+  { kit = "kit/tamiya/dynahead-6x6", type = "direct", source = "doc/tamiya/50356-product-page-ja" },
+  { kit = "kit/tamiya/gf-01", releases = ["release/tamiya/58672"], type = "direct", source = "doc/tamiya/50356-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/50356-product-page-ja" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/50356-product-page-ja" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/50356-product-page-ja" },
 ]
 category = "pinion"
 links = [
@@ -32,7 +39,7 @@ links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50356/index.html" },
 ]
 released = "1988-04"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/50356-product-page-ja"]
 includes = [
   { spec = "spec/pinion/mod0.6-20t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
   { spec = "spec/pinion/mod0.6-21t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },

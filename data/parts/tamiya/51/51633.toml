@@ -10,6 +10,8 @@ fits = [
   { kit = "kit/tamiya/ta08", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/xm-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/xv-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/51633-product-page" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/51633-product-page" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m3x16-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
@@ -21,6 +23,6 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/19019-51633", kind = "fan-site" },
 ]
 released = "2019-08"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/51633-product-page"]
 color = "silver"
 notes = "Colour read from Tamiya's product photo (https://www.tamiya.com/english/products/51633/index.html)."

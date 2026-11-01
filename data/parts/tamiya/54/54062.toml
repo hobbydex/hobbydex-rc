@@ -7,7 +7,10 @@ seen_by_source = "https://web.archive.org/web/20120905155707/http://www.tamiyaus
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "pinion"
-documents = ["doc/tamiya/42139-manual-usa"]
+fits = [
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/54062-product-page-ja" },
+]
+documents = ["doc/tamiya/42139-manual-usa", "doc/tamiya/54062-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/54062/index.html" } ]
 includes = [
   { spec = "spec/pinion/48dp-13t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },

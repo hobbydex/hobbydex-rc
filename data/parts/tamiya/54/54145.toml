@@ -6,7 +6,14 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "bumper-guard"
 released = "2009-03"
-documents = ["doc/tamiya/newitems-month"]
+fits = [
+  { kit = "kit/tamiya/ta07", releases = ["release/tamiya/42326", "release/tamiya/58636"], type = "direct", source = "doc/tamiya/54145-product-page" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/54145-product-page" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/54145-product-page" },
+  { kit = "kit/tamiya/tb-03", releases = ["release/tamiya/84205"], type = "direct", source = "doc/tamiya/54145-product-page" },
+  { kit = "kit/tamiya/trf419", releases = ["release/tamiya/42301", "release/tamiya/42311", "release/tamiya/42316"], type = "direct", source = "doc/tamiya/54145-product-page" },
+]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54145-product-page"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/54145/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/8007-54145", kind = "fan-site" },

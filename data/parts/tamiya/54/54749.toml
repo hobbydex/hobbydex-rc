@@ -4,6 +4,9 @@ number = "54749"
 name = "Buggy Rear Dish Wheels (Hex Hub, Yellow)"
 fits = [
   { kit = "kit/tamiya/db01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: 54669" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/54749-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/54749-product-page-ja" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/54749-product-page-ja" },
 ]
 category = "wheel"
 links = [
@@ -14,4 +17,4 @@ vehicle = "buggy"
 position = "rear"
 color = "yellow"
 released = "2017-03"
-documents = ["doc/tamiya/newitems-month"]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54749-product-page-ja"]

@@ -15,3 +15,7 @@ equivalent_to = [
   { spec = "spec/bearing/5x9x3", match = "close", notes = "Tamiya size code 950: 9 mm outer, 5 mm bore, 3 mm wide (usual width for this size, not confirmed for Tamiya)" },
 ]
 name_source = "ocr"
+fits = [
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/51090-product-page-ja" },
+]
+documents = ["doc/tamiya/51090-product-page-ja"]

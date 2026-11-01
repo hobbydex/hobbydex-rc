@@ -5,7 +5,12 @@ name = "Front Spring"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 released = "2013-07"
-documents = ["doc/tamiya/newitems-month"]
+fits = [
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/54507-product-page" },
+  { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/54507-product-page" },
+  { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/54507-product-page" },
+]
+documents = ["doc/tamiya/newitems-month", "doc/tamiya/54507-product-page"]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/54507/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/14444-54507", kind = "fan-site" },
