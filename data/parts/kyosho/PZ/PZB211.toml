@@ -10,3 +10,6 @@ category = "body"
 documents = ["doc/kyosho/pzb211-toyota-ts-020-1998-no27", "doc/kyosho/pzb211-product-page"]
 depicts = { make = "Toyota", model = "TS020", year = 1998 }
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/pzb211.html" } ]
+fits = [
+  { kit = "kit/kyosho/plazma-lm", type = "replaces", source = "doc/kyosho/pzb211-product-page", notes = "Named in the maker's product text on rc.kyosho.com" },
+]
