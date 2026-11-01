@@ -3,7 +3,13 @@ brand = "brand/traxxas"
 number = "3963"
 name = "Screws, 3x28mm cap-head machine (hex drive) (6)/ 3x6mm ELW"
 gtin = "020334396303"
+pack_qty = 12
+pack_qty_basis = "page"
 category = "screw"
+includes = [
+  { spec = "spec/screw/m3x28-socket-cap-hex", qty = 6, notes = "Size and count from the maker's page description" },
+  { spec = "spec/washer/3.2x6x0.5", qty = 6, notes = "3x6 washers (6) from the maker's page; thickness from ISO 7089" },
+]
 fits = [
   { kit = "kit/traxxas/revo", type = "direct", source = "doc/traxxas/53097-3-parts-list" },
   { kit = "kit/traxxas/slayer-pro-4x4", type = "direct", source = "doc/traxxas/59076-3-parts-list" },
