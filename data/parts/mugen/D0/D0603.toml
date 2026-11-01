@@ -4,14 +4,12 @@ number = "D0603"
 name = "5mm THRUST"
 fits = [
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list" },
-  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4-part-list" },
+  { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list", notes = "Also listed by doc/mugen/mrx-4-part-list" },
   { kit = "kit/mugen/mrx3", type = "direct", source = "doc/mugen/mrx-3-part-list" },
   { kit = "kit/mugen/sting", type = "direct", source = "doc/mugen/sting-part-list" },
   { kit = "kit/mugen/k2-x-avance", type = "direct", source = "doc/mugen/k2-x-avance-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx-4-part-list" },
+  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list", notes = "Also listed by doc/mugen/mtx-4-part-list" },
   { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
 ]
 documents = ["doc/mugen/k2-x-avance-part-list", "doc/mugen/mrx-3-part-list", "doc/mugen/mrx-4-part-list"]

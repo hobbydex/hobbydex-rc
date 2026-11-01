@@ -5,9 +5,7 @@ name = "A2235D"
 name_source = "ocr"
 notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
 fits = [
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list", notes = "Also listed by doc/mugen/mtc2r-part-list; Also listed by doc/mugen/mtc2-part-list" },
 ]
 pack_qty = 4
 documents = ["doc/mugen/mtc2-fwd-part-list", "doc/mugen/mtc2-part-list", "doc/mugen/mtc2r-part-list"]

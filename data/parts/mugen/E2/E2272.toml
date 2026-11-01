@@ -4,11 +4,8 @@ number = "E2272"
 name = "F/R UNIVERSAL JOINT"
 gtin = "4944925046445"
 fits = [
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr_eco-option-parts-page" },
-  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8te-part-list" },
-  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8t-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr_eco-option-parts-page", notes = "Also listed by doc/mugen/mbx8tr-eco-part-list; Also listed by doc/mugen/mbx8te-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list", notes = "Also listed by doc/mugen/mbx8t-part-list" },
 ]
 category = "drivetrain"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/F-R-UNIVERSAL-JOINT-MBX-8T-TE/E2272" } ]

@@ -5,8 +5,7 @@ name = "AL. WHEEL HUB"
 gtin = "4944925024139"
 fits = [
   { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
 ]
 category = "drivetrain"

@@ -7,20 +7,13 @@ seen_by_source = "https://web.archive.org/web/20120629080525/http://www.serpent.
 pack_qty = 4
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/srx8-gt", type = "replaces", source = "doc/serpent/srx8gtr-ec-options" },
-  { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8e-gen4-options" },
-  { kit = "kit/serpent/srx8", type = "replaces", source = "doc/serpent/srx8-gen4-options" },
-  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8gte-r-options" },
-  { kit = "kit/serpent/srx8-truggy-e", type = "replaces", source = "doc/serpent/srx8-truggy-e-options" },
-  { kit = "kit/serpent/srx8-truggy", type = "replaces", source = "doc/serpent/srx8-truggy-options" },
-  { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-parts" },
-  { kit = "kit/serpent/srx8", type = "replaces", replaces = "part/serpent/600192", source = "doc/serpent/srx8-gen4-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/srx8-gt", type = "replaces", replaces = "part/serpent/600192", source = "doc/serpent/srx8gtr-ec-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/srx8-gte", type = "replaces", replaces = "part/serpent/600192", source = "doc/serpent/srx8gte-r-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/srx8-truggy", type = "replaces", replaces = "part/serpent/600192", source = "doc/serpent/srx8-truggy-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/srx8-truggy-e", type = "replaces", replaces = "part/serpent/600192", source = "doc/serpent/srx8-truggy-e-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/srx8e", type = "replaces", replaces = "part/serpent/600192", source = "doc/serpent/srx8e-gen4-options", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-options" },
+  { kit = "kit/serpent/srx8-gt", type = "replaces", source = "doc/serpent/srx8gtr-ec-options", replaces = "part/serpent/600192", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8e", type = "replaces", source = "doc/serpent/srx8e-gen4-options", replaces = "part/serpent/600192", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8", type = "replaces", source = "doc/serpent/srx8-gen4-options", replaces = "part/serpent/600192", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-gte", type = "replaces", source = "doc/serpent/srx8gte-r-options", replaces = "part/serpent/600192", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-truggy-e", type = "replaces", source = "doc/serpent/srx8-truggy-e-options", replaces = "part/serpent/600192", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-truggy", type = "replaces", source = "doc/serpent/srx8-truggy-options", replaces = "part/serpent/600192", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/426-outlaw", type = "direct", source = "doc/serpent/426-outlaw-rtr-parts", notes = "Also listed by doc/serpent/426-outlaw-rtr-options" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser600622" },

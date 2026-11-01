@@ -5,16 +5,11 @@ name = "Transmitter set DTS-3 2.4GHz (DRC210013)"
 seen_by = "2025-02-17"
 seen_by_source = "https://web.archive.org/web/20250217102330/https://oldmain.serpent.com/product/DRC210013/"
 fits = [
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-parts" },
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-rtr-parts" },
-  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-rtr-parts" },
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-parts" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts" },
-  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-spares" },
-  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-rtr-spares" },
-  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-rtr-spares" },
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-spares" },
-  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-spares" },
+  { kit = "kit/serpent/srx8", type = "direct", source = "doc/serpent/srx8-rtr-parts", notes = "Also listed by doc/serpent/srx8-rtr-spares" },
+  { kit = "kit/serpent/srx8e", type = "direct", source = "doc/serpent/srx8-e-rtr-parts", notes = "Also listed by doc/serpent/srx8-e-rtr-spares" },
+  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-rtr-parts", notes = "Also listed by doc/serpent/medius-x20-rtr-spares" },
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-parts", notes = "Also listed by doc/serpent/srx8-gt-rtr-spares" },
+  { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts", notes = "Also listed by doc/serpent/srx8-gte-rtr-spares" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/drc210013" },

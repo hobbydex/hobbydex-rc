@@ -6,8 +6,7 @@ seen_by = "2021-08-01"
 seen_by_source = "https://web.archive.org/web/20210801201929/https://oldmain.serpent.com/product/601026/"
 fits = [
   { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-23-spares" },
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-parts" },
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-spares" },
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-rtr-parts", notes = "Also listed by doc/serpent/srx8-gt-rtr-spares" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser601026" },

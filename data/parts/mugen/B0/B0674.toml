@@ -8,12 +8,9 @@ pack_qty_basis = "page"
 category = "screw"
 fits = [
   { kit = "kit/mugen/mst1", type = "direct", source = "doc/mugen/mst-1-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
-  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list", notes = "Also listed by doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list", notes = "Also listed by doc/mugen/mrx5-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
   { kit = "kit/mugen/mtx2", type = "direct", source = "doc/mugen/mtx-2-part-list" },
 ]

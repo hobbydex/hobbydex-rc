@@ -4,12 +4,9 @@ number = "E2206"
 name = "Metal Spur Gear 46T MBX7"
 gtin = "4944925026263"
 fits = [
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7" },
-  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list" },
+  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/rcteam-mbx7", notes = "Also listed by doc/mugen/mbx-7r-part-list; Also listed by doc/mugen/mbx-7-part-list" },
+  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list", notes = "Also listed by doc/mugen/mbx-7t-part-list" },
   { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7t-eco-part-list" },
-  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7t-part-list" },
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7r-part-list" },
-  { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7-part-list" },
 ]
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/SPUR-GEAR-46T-X7/E2206" },

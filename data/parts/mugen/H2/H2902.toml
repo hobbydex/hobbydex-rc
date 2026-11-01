@@ -4,11 +4,8 @@ number = "H2902"
 name = "MUFFLER MOUNT"
 gtin = "4944925032455"
 fits = [
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list", notes = "Also listed by doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list", notes = "Also listed by doc/mugen/mrx6r-part-list; Also listed by doc/mugen/mrx6-part-list" },
 ]
 category = "chassis"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/MUFFLER-STAY-MRX-6/H2902" } ]

@@ -3,12 +3,10 @@ brand = "brand/mugen"
 number = "E1081Y"
 name = "REAR WING (YELLOW)"
 fits = [
-  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8" },
-  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
-  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/rcteam-mbx8", notes = "Also listed by doc/mugen/mbx8r-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list", notes = "Also listed by doc/mugen/mbx8-eco-team-edition-part-list" },
   { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
   { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
-  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-team-edition-part-list" },
 ]
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/REAR-WING-YELLOW/E1081Y" },

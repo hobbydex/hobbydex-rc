@@ -10,8 +10,7 @@ category = "chassis"
 fits = [
   { kit = "kit/yokomo/ro", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RO1.0" },
   { kit = "kit/yokomo/so", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for SO1.0, SO2.0, SO3.0" },
-  { kit = "kit/yokomo/yz-2", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3" },
-  { kit = "kit/yokomo/yz-2", type = "replaces", replaces = "part/yokomo/Z2-018", source = "doc/yokomo/store", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/yokomo/yz-2", type = "replaces", source = "doc/yokomo/store", notes = "Yokomo's store lists it for YZ-2 CAL3, YZ-2 DTM3; Same part in another material (link_upgrades.py)", replaces = "part/yokomo/Z2-018" },
 ]
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/z2-018-2" },

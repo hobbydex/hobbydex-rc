@@ -3,12 +3,8 @@ brand = "brand/mugen"
 number = "E2253"
 name = "BEVEL GEAR 13T"
 fits = [
-  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list" },
-  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list" },
-  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8-world-edition-part-list" },
-  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8-part-list" },
-  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-team-edition-part-list" },
-  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-part-list" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8r-part-list", notes = "Also listed by doc/mugen/mbx8-world-edition-part-list; Also listed by doc/mugen/mbx8-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8r-eco-part-list", notes = "Also listed by doc/mugen/mbx8-eco-team-edition-part-list; Also listed by doc/mugen/mbx8-eco-part-list" },
 ]
 category = "differential"
 documents = ["doc/mugen/mbx8-eco-part-list", "doc/mugen/mbx8-eco-team-edition-part-list", "doc/mugen/mbx8-part-list"]

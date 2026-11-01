@@ -5,11 +5,9 @@ name = "REAR LOWER DAMPER STAY"
 gtin = "4944925021763"
 fits = [
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list" },
-  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
+  { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list", notes = "Also listed by doc/mugen/mrx5-part-list" },
   { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
 ]
 category = "chassis"

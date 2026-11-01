@@ -7,11 +7,8 @@ pack_qty = 4
 pack_qty_basis = "page"
 fits = [
   { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-fwd-part-list" },
-  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2-part-list" },
+  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list", notes = "Also listed by doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list", notes = "Also listed by doc/mugen/mtc2-fwd-part-list; Also listed by doc/mugen/mtc2-part-list" },
 ]
 category = "nut"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/FLAT-NUT-M3/T2157B" } ]

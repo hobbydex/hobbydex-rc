@@ -4,10 +4,8 @@ number = "T2227"
 name = "DIFF. GEAR (STEEL)"
 gtin = "4944925025297"
 fits = [
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list" },
-  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list", notes = "Also listed by doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
   { kit = "kit/mugen/mtx6", type = "replaces", replaces = "part/mugen/T2203", source = "doc/mugen/mtx-6r-part-list", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "differential"

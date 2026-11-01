@@ -4,10 +4,8 @@ number = "E2565"
 name = "FRONT DAMPER STAY CFRP"
 gtin = "4944925037177"
 fits = [
-  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8-world-edition-part-list" },
-  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8-part-list" },
-  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-team-edition-part-list" },
-  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-part-list" },
+  { kit = "kit/mugen/mbx8", type = "direct", source = "doc/mugen/mbx8-world-edition-part-list", notes = "Also listed by doc/mugen/mbx8-part-list" },
+  { kit = "kit/mugen/mbx8-eco", type = "direct", source = "doc/mugen/mbx8-eco-team-edition-part-list", notes = "Also listed by doc/mugen/mbx8-eco-part-list" },
 ]
 category = "chassis"
 material = "carbon"

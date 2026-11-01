@@ -310,6 +310,21 @@ def load_tools(tools):
     return out
 
 
+def fits_claim(f):
+    """The claim a fits row makes: its kit, its releases (None for the whole kit) and its car."""
+    return (f.get("kit"), tuple(sorted(f["releases"])) if "releases" in f else None, f.get("car"))
+
+
+def duplicate_fits(parts):
+    """(part, [claims]) for each part with two or more fits rows naming one claim (the same kit, releases and car)."""
+    out = []
+    for p in parts:
+        n = collections.Counter(fits_claim(f) for f in p.get("fits", []))
+        dup = [c for c, k in n.items() if k > 1]
+        if dup: out.append((p, dup))
+    return out
+
+
 def by_brand(parts):
     """The parts grouped by brand, each group in data order (groups in first-seen order)."""
     groups = collections.OrderedDict()
@@ -883,6 +898,13 @@ def main():
     results["fits-kit-no-release"]["kit_of"] = {i: ", ".join(sorted(k)) for i, k in nr_kits.items()}
     per_kit = collections.Counter(k for ks in nr_kits.values() for k in ks)
     results["fits-kit-no-release"]["breakdown"] = ("kit", [f"{k} {c}" for k, c in sorted(per_kit.items(), key=lambda kv: (-kv[1], kv[0]))[:40]])
+
+    # 20b. two fits rows that name one claim (the same kit, releases and car): one row, the sources listed in notes
+    dups = duplicate_fits(parts)
+    per_brand = collections.Counter(p["brand"].split("/")[-1] for p, _ in dups)
+    check("fits-duplicate", "merge the rows that name one claim into one row (the same kit, releases and car); the other sources go into notes (hobbydex-tools tools/collapse_fits.py); a pair that differs in type or replaces stays two rows, so decide which one holds",
+          [p for p, _ in dups], per_brand=per_brand.most_common(),
+          breakdown=("kit", [f"{k} {c}" for k, c in collections.Counter(c[0] for _, cs in dups for c in cs).most_common(40)]))
 
     # 21. orphan art files
     orphans = []

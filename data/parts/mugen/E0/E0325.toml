@@ -5,8 +5,7 @@ name = "BRAKE CAM"
 gtin = "4944925018565"
 fits = [
   { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6t-part-list" },
-  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6r-part-list" },
-  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6-part-list" },
+  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6r-part-list", notes = "Also listed by doc/mugen/mbx-6-part-list" },
 ]
 category = "drivetrain"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/BRAKE-CAM/E0325" } ]

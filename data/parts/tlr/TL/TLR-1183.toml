@@ -11,9 +11,7 @@ links = [
 category = "gear"
 material = "aluminium"
 fits = [
-  { kit = "kit/tlr/22x", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/tlr/22x-t", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part" },
-  { kit = "kit/tlr/22x", type = "replaces", replaces = "part/tlr/TLR-1120", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/tlr/22x-t", type = "replaces", replaces = "part/tlr/TLR-1120", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part; Same part in another material (link_upgrades.py)", replaces = "part/tlr/TLR-1120" },
+  { kit = "kit/tlr/22x-t", type = "replaces", source = "doc/tlr/horizon-part-pages", notes = "Optional part; Same part in another material (link_upgrades.py)", replaces = "part/tlr/TLR-1120" },
 ]
 gtin = "660132650247"

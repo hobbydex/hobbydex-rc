@@ -6,17 +6,13 @@ gtin = "4944925033032"
 pack_qty = 5
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list", notes = "Also listed by doc/mugen/mbx8t-part-list" },
+  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list", notes = "Also listed by doc/mugen/mbx8te-part-list" },
   { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8te-part-list" },
-  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8t-part-list" },
   { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7tre-part-list" },
   { kit = "kit/mugen/mbx7-eco", type = "direct", source = "doc/mugen/mbx-7r-eco-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list" },
-  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6-part-list" },
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6r-part-list", notes = "Also listed by doc/mugen/mrx6-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed by doc/mugen/mtx-6-part-list" },
 ]
 category = "electronics"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/ANTENNA-CAP-5/B0432" } ]
