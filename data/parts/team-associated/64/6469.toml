@@ -5,4 +5,9 @@ name = "O-Ring"
 seen_by = "1994"
 seen_by_source = "doc/team-associated/6002-dirtburners"
 category = "o-ring-seal"
-documents = ["doc/team-associated/30139-rc10-6x6-manual-5-14-25", "doc/team-associated/30146-rc10-custom-race-car-6x6-manual", "doc/team-associated/6002-dirtburners"]
+documents = ["doc/team-associated/30139-rc10-6x6-manual-5-14-25", "doc/team-associated/30146-rc10-custom-race-car-6x6-manual", "doc/team-associated/6002-dirtburners", "doc/team-associated/cat-10l4o"]
+pack_qty = 4
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]

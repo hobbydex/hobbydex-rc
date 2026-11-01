@@ -4,4 +4,9 @@ number = "8433"
 name = ".024 Spring"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/team-associated/manual-rc8t3-1-t3-1e"]
+documents = ["doc/team-associated/manual-rc8t3-1-t3-1e", "doc/team-associated/cat-10l4o"]
+pack_qty = 2
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]

@@ -5,3 +5,7 @@ name = "FACTORY TEAM “DRIVER” DECAL, 10” x"
 name_source = "manual"
 category = "decal"
 documents = ["doc/team-associated/cat-10l4o", "doc/team-associated/cat-t4ft"]
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]

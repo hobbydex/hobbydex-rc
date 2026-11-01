@@ -3,4 +3,9 @@ brand = "brand/team-associated"
 number = "9644"
 name = "5-40x9/16 shcs"
 category = "screw"
-documents = ["doc/team-associated/manual-b4-2rs"]
+documents = ["doc/team-associated/manual-b4-2rs", "doc/team-associated/cat-t4ft"]
+pack_qty = 6
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]

@@ -3,4 +3,7 @@ brand = "brand/team-associated"
 number = "9657"
 name = "Heavy duty servo saver spring"
 category = "steering"
-documents = ["doc/team-associated/manual-b4-2rs"]
+documents = ["doc/team-associated/manual-b4-2rs", "doc/team-associated/cat-t4ft"]
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]
