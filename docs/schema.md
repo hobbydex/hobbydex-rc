@@ -661,6 +661,19 @@ screws: `thread`, `length_mm`, `head` (countersunk | socket-cap | button |
 pan | flanged-socket-cap | flanged-button | flanged-pan | low-head | set | truss | hex (a hexagon head, with no socket: Tamiya's hex head screws, whose drive is jis); the brand names each code in [brand-hardware-names.md](brand-hardware-names.md)), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
 the same geometry exists in many materials.
 
+Inch screws (UNC and UNF threads, as the makers name them: "4-40", "2-56", "5-40", "8-32", "10-32") have `thread` as written ("4-40"), `thread_standard` ("UNC" or "UNF") and `length_in`, the length in inches as a reduced fraction in the form the names use ("1/2", "1 1/4", "2"). A decimal name ("1.25", ".625") is written as the same fraction. An inch spec has no `length_mm` and no metric conversion. `head` and `drive` are as for metric screws. Id: `spec/screw/unc-4-40x1-2in-button-hex` (standard, thread, then the length: "1-2in", "1_1-4in" for 1 1/4, "2in"), with `-tapping` for a self-tapping screw. A screw spec with `length_in` gets no drawing. tools/validate.py checks these (inch_screw_problems); tools/link_screw_specs.py writes them.
+
+```toml
+id = "spec/screw/unc-4-40x1-2in-button-hex"
+category = "screw"
+name = "4-40 UNC x 1/2 in button head screw, hex socket"
+thread = "4-40"
+thread_standard = "UNC"
+length_in = "1/2"
+head = "button"
+drive = "hex"
+```
+
 ```toml
 id = "spec/screw/m3x10-countersunk-hex"
 category = "screw"
