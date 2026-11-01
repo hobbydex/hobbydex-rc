@@ -14,3 +14,7 @@ notes = "Colour read from the maker's product photo."
 equivalent_to = [
   { spec = "spec/screw/m2.5x10-socket-cap-hex", match = "functional", notes = "'Socket Head Screw' is read as a socket head cap screw." },
 ]
+fits = [
+  { kit = "kit/3racing/cero", type = "direct", source = "doc/3racing/shop", notes = "Car named by the shop tag 'cero'" },
+  { kit = "kit/3racing/cero-fwd", type = "direct", source = "doc/3racing/shop", notes = "Car named by the shop tag 'Cero FWD'" },
+]

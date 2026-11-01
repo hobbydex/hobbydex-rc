@@ -11,3 +11,9 @@ category = "o-ring-seal"
 equivalent_to = [
   { spec = "spec/o-ring/4.8x1.9", match = "functional" },
 ]
+fits = [
+  { kit = "kit/3racing/cero", type = "replaces", source = "doc/3racing/shop", notes = "Car named by the shop tag 'cero'" },
+  { kit = "kit/3racing/sakura-d5", type = "replaces", source = "doc/3racing/shop", notes = "Car named by the shop tag 'D5 PRO'" },
+  { kit = "kit/3racing/sakura-ff", type = "replaces", source = "doc/3racing/shop", notes = "Car named by the shop tag 'FF21'" },
+  { kit = "kit/3racing/sakura-d6", type = "replaces", source = "doc/3racing/shop", notes = "Car named by the shop tag 'sakura d6 sport'" },
+]
