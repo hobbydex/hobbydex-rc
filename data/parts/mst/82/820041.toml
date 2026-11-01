@@ -7,3 +7,6 @@ weight_g = 30
 links = [{ site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=15&class_sn2=42&sn=1521" }]
 universal = true
 universal_basis = "maker"
+fits = [
+  { kit = "kit/mst/fxx-d", type = "direct", source = "doc/mst/fxx-d-vip", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
