@@ -990,8 +990,13 @@ def main():
                 # an RC Scrapyard model page that states the introduction year: the year (YYYY) bound, the page a fan-site link of the release
                 scrapyard = (isinstance(ss, str) and isinstance(sb, str) and re.fullmatch(r"\d{4}", sb) and re.fullmatch(r"https://www\.rcscrapyard\.net/[\w./-]+\.htm", ss)
                              and any(isinstance(l, dict) and l.get("url") == ss and l.get("kind") == "fan-site" for l in d.get("links", [])))
-                if not (archive or shop or manual or own_page or video or printed or sitemap or scrapyard):
-                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), the maker's YouTube video of its first 60 days, or the maker's product sitemap (https://<host>/....xml) that lists the page, or an RC Scrapyard model page (a fan-site link of the release) for a year")
+                # a dated post of the brand's own news (news_info.php?sn=N) that names the release by its number: the day the post was up
+                news = (isinstance(ss, str) and kind == "release" and isinstance(sb, str) and re.fullmatch(r"\d{4}-\d{2}(-\d{2})?", sb)
+                        and re.fullmatch(r"https://[^\s/]+/news_info\.php\?sn=\d+", ss)
+                        and urllib.parse.urlsplit(ss).hostname in {brand_site.get(d.get("brand")), (brand_site.get(d.get("brand")) or "").removeprefix("www.")}
+                        and "/news_info.php" == urllib.parse.urlsplit(ss).path)
+                if not (archive or shop or manual or own_page or video or printed or sitemap or scrapyard or news):
+                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), the maker's YouTube video of its first 60 days, or the maker's product sitemap (https://<host>/....xml) that lists the page, or an RC Scrapyard model page (a fan-site link of the release) for a year, or the brand's own news post (news_info.php?sn=N) that names the release by its number, dated by the post's day")
                 elif archive and not manual and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
