@@ -10,3 +10,6 @@ pack_qty_basis = "manual"
 category = "screw"
 documents = ["doc/cen/american-force-reeper-manual"]
 links = [ { site = "CEN Racing", url = "https://www.cenracingusa.com/products/g36112a" } ]
+equivalent_to = [
+  { spec = "spec/screw/m4x12-countersunk-hex", match = "functional", notes = "Drive stated on the maker's product page; the name gives none" },
+]
