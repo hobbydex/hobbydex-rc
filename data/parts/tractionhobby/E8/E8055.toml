@@ -1,10 +1,14 @@
 id = "part/tractionhobby/E8055"
 brand = "brand/tractionhobby"
 number = "E8055"
-name = "E8055"
-notes = "From the Primal RC and Traction Hobby manual; name not in the manual"
+name = "M3 Flanged Nylon Nut"
+notes = "Name from the Primal RC manual's parts table, which prints it beside the code"
 numbers = ["PRE8055"]
 former_ids = ["part/primal-rc/PRE8055"]
 documents = ["doc/primal-rc/porsche-934-red-manual"]
 category = "misc"
 category_source = "fallback"
+name_source = "manual"
+fits = [
+  { kit = "kit/tractionhobby/porsche-934", type = "direct", notes = "Named in the Primal RC Porsche 934 manual, the car's own manual" },
+]
