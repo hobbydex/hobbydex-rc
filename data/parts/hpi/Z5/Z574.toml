@@ -16,3 +16,6 @@ pack_qty_basis = "page"
 category = "screw"
 color = "black"
 notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/screw/m3x30-truss-phillips", match = "functional", notes = "Drive stated on the maker's product page; the name gives none" },
+]
