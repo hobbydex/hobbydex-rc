@@ -5,3 +5,7 @@ name = "Turnbuckle Wrench"
 name_source = "manual"
 category = "tool"
 documents = ["doc/team-associated/cat-10l4o", "doc/team-associated/cat-t4ft"]
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]
