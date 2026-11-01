@@ -1012,7 +1012,7 @@ def main():
     spares = [p for p in spares_all if not maker_linked(p)]
     items = [p for p in tam if re.fullmatch(r"\d{5}", str(p.get("number", ""))) and not maker_linked(p) and not dealer_linked(p)]
     dealer_only = sum(1 for p in spares if dealer_linked(p))
-    check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker link (Tamiya USA's spare page, kind maker): run tools/link_tamiya_usa_spares.py in hobbydex-tools once the listing captures have landed (tools/plan_tamiya_usa_spares.py queues them); a spare with only a dealer link is counted in dealer_only",
+    check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker link (Tamiya USA's spare page, kind maker): the daily derive runs tools/link_tamiya_de_spares.py (tamiya.de sitemap) and tools/link_tamiya_usa_spares.py (Tamiya USA listings, which tools/plan_tamiya_usa_spares.py queues) in hobbydex-tools; a spare with only a dealer link is counted in dealer_only",
           spares, count=len(spares), maker=sum(1 for p in spares_all if maker_linked(p)), dealer_only=dealer_only)
     check("tamiya-item-no-link", "a Tamiya item number with no maker product page: give it a maker link (tamiya.com page) or a manual or fan-site source",
           items, count=len(items))
