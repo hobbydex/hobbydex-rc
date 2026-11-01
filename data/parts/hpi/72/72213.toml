@@ -10,3 +10,7 @@ links = [
 ]
 pack_qty = 2
 pack_qty_basis = "name"
+fits = [
+  { kit = "kit/hpi/nitro-rs4-3", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/A558" },
+  { kit = "kit/hpi/nitro-rush", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/A558" },
+]
