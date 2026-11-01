@@ -11,9 +11,13 @@ fits = [
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser909519" },
 ]
-pack_qty = 2
-pack_qty_basis = "name"
+pack_qty = 3
+pack_qty_basis = "includes"
 category = "washer-shim"
+includes = [
+  { spec = "spec/washer/5x10x0.3", qty = 2 },
+  { spec = "spec/washer/5x10x0.5", qty = 1 },
+]
 equivalent_to = [
   { spec = "spec/washer/5x10x0.3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
