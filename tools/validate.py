@@ -34,6 +34,7 @@ REFS = {  # field -> expected id prefix
     "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/",
     "publisher": ("brand/", "company/"), "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
     "owner": "company/", "parent": "company/",
+    "release": "release/",   # a rebrand_of row on a release names the release it is a rebrand of
 }
 LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": "", "kits": "kit/", "parts": "part/"}   # requires: kit or release ids, checked above
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
@@ -80,6 +81,7 @@ ENUMS = {
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
+    "rebrand_of.certainty": {"likely"},   # absent = confirmed (maker statement, matching part numbers or an owner's statement); likely = specs or looks only (docs/schema.md "rebrand_of")
     "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
