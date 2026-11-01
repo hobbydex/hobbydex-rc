@@ -5,7 +5,14 @@ name = "Bearings: 4x8mm (2), 6x10mm (8), 8x12mm (5) BODY & ACCESSORIES"
 seen_by = "2014-09-17"
 seen_by_source = "https://web.archive.org/web/20140917114009/http://buy.traxxas.com/images/products/7541X.jpg"
 gtin = "020334754196"
+pack_qty = 15
+pack_qty_basis = "page"
 category = "bearing"
+includes = [
+  { spec = "spec/bearing/4x8x3", qty = 2, notes = "Size and count from the maker's page description; thickness from the maker's 4x8x3, 6x10x3 and 8x12x3.5 mm ball bearing pages (7019, 5105, 7020)" },
+  { spec = "spec/bearing/6x10x3", qty = 8, notes = "Size and count from the maker's page description; thickness from the maker's 4x8x3, 6x10x3 and 8x12x3.5 mm ball bearing pages (7019, 5105, 7020)" },
+  { spec = "spec/bearing/8x12x3.5", qty = 5, notes = "Size and count from the maker's page description; thickness from the maker's 4x8x3, 6x10x3 and 8x12x3.5 mm ball bearing pages (7019, 5105, 7020)" },
+]
 fits = [
   { kit = "kit/traxxas/latrax-rally", type = "direct", source = "doc/traxxas/75054-5-parts-list" },
   { kit = "kit/traxxas/latrax-teton", type = "direct", source = "doc/traxxas/76054-5-parts-list" },

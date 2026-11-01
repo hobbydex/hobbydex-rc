@@ -3,8 +3,15 @@ brand = "brand/traxxas"
 number = "5521"
 name = "Suspension pin set, complete (hardened steel, front & rear), 3x27mm (4) 3x35(2), 3x52mm"
 gtin = "020334552105"
+pack_qty = 10
+pack_qty_basis = "page"
 category = "pin"
 material = "steel"
+includes = [
+  { spec = "spec/pin/3x27", qty = 4, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/3x35", qty = 2, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/3x52", qty = 4, notes = "Size and count from the maker's page description" },
+]
 fits = [
   { kit = "kit/traxxas/jato", type = "direct", source = "doc/traxxas/55077-3-parts-list" },
 ]

@@ -3,7 +3,14 @@ brand = "brand/traxxas"
 number = "8545"
 name = "Suspension pin set (front) (3x51mm (2), 3x54mm (2), 3x93mm (2))"
 gtin = "020334854506"
+pack_qty = 6
+pack_qty_basis = "page"
 category = "pin"
+includes = [
+  { spec = "spec/pin/3x51", qty = 2, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/3x54", qty = 2, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/3x93", qty = 2, notes = "Size and count from the maker's page description" },
+]
 fits = [
   { kit = "kit/traxxas/udr", type = "direct", source = "doc/traxxas/85086-4-parts-list" },
 ]

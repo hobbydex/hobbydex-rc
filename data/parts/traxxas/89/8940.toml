@@ -5,9 +5,17 @@ name = "Suspension screw pin set, front or rear (hardened steel), 4x18mm (4), 4x
 seen_by = "2026-06-15"
 seen_by_source = "https://web.archive.org/web/20260615150144/https://traxxas.com/8940-suspension-screw-pin-set"
 gtin = "020334894007"
+pack_qty = 10
+pack_qty_basis = "page"
 category = "pin"
 category_source = "curated"
 material = "steel"
+includes = [
+  { spec = "spec/pin/4x18-screw", qty = 4, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/4x38-screw", qty = 2, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/4x33-screw", qty = 2, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/4x43-screw", qty = 2, notes = "Size and count from the maker's page description" },
+]
 fits = [
   { kit = "kit/traxxas/maxx-slash", type = "direct", source = "doc/traxxas/102076-4-parts-list" },
   { kit = "kit/traxxas/maxx", type = "direct", source = "doc/traxxas/89086-4-parts-list" },
