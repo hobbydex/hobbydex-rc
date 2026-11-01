@@ -2,11 +2,15 @@ id = "part/xray/302537"
 brand = "brand/xray"
 number = "302537"
 name = "T4'20 ALU STEERING POST FOR DUAL SERVO SAVER"
+released = "2019-09-30"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7523"
 pack_qty = 2
 pack_qty_basis = "manual"
 category = "steering"
 material = "aluminium"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7523" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7523" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300026", "release/xray/300027", "release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
 ]

@@ -2,12 +2,16 @@ id = "part/xray/305225"
 brand = "brand/xray"
 number = "305225"
 name = "ECS DRIVE SHAFT 50MM - HUDY SPRING STEEL (1) o"
+released = "2009-10-16"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=3252"
 pack_qty = 1
 pack_qty_basis = "manual"
 former_names = ["ECS DRIVE SHAFT 50MM - HUDY SPRING STEEL"]
 category = "drivetrain"
 material = "steel"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=3252" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=3252" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300021"], type = "replaces", source = "doc/xray/t4-2015-part-list" },
 ]

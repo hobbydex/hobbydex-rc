@@ -2,12 +2,16 @@ id = "part/xray/302652"
 brand = "brand/xray"
 number = "302652"
 name = "BALL END 4.9MM WITH THREAD FOR SERVO ARM (2) x"
+released = "2006-10-18"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1854"
 pack_qty = 2
 pack_qty_basis = "name"
 former_names = ["BALL END 4.9MM WITH THREAD 4MM"]
 category = "ball-end"
 ball_mm = 4.9
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1854" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1854" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300026", "release/xray/300027", "release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
   { kit = "kit/xray/x1", releases = ["release/xray/370710", "release/xray/370711", "release/xray/x1-2020", "release/xray/x1-2021", "release/xray/x1-2023", "release/xray/x1-2024"], type = "direct", source = "doc/xray/x1-2027-part-list" },

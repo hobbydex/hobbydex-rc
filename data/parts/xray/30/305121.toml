@@ -2,10 +2,14 @@ id = "part/xray/305121"
 brand = "brand/xray"
 number = "305121"
 name = "MULTI-DIFF LOCKING AXLE - HUDY SPRING STEEL o"
+released = "2005-03-16"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1252"
 former_names = ["MULTI-DIFF LOCKING AXLE - HUDY SPRING STEEL"]
 category = "differential"
 material = "steel"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1252" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1252" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019", "release/xray/300021", "release/xray/300026", "release/xray/300027"], type = "replaces", source = "doc/xray/t4-2020-part-list" },
 ]

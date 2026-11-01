@@ -2,9 +2,13 @@ id = "part/xray/301063"
 brand = "brand/xray"
 number = "301063"
 name = "T4'21 GRAPHITE UPPER DECK 1.6MM"
+released = "2021-03-17"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8135"
 category = "chassis"
 material = "carbon"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8135" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8135" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-part-list" },
 ]

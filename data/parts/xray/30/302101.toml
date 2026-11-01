@@ -2,10 +2,14 @@ id = "part/xray/302101"
 brand = "brand/xray"
 number = "302101"
 name = "ALU FRONT & REAR SUSPENSION ARM 1-HOLE - SWISS 7075 T6 (2+2)"
+released = "2018-01-24"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6730"
 category = "suspension"
 material = "aluminium"
 material_grade = "7075-T6"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6730" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6730" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300025"], type = "replaces", source = "doc/xray/t4-2019-part-list" },
 ]

@@ -2,6 +2,8 @@ id = "part/xray/303134-K"
 brand = "brand/xray"
 number = "303134-K"
 name = "ALU SHIM FOR LOWER SUSP. HOLDER 3x7.5x1.5 - BLACK (10) x"
+released = "2008-10-31"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2869"
 pack_qty = 10
 pack_qty_basis = "name"
 category = "washer-shim"
@@ -10,7 +12,9 @@ equivalent_to = [
   { spec = "spec/washer/3x7.5x1.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 material = "aluminium"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2869" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2869" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019"], type = "replaces", source = "doc/xray/t4-2013-part-list" },
 ]
