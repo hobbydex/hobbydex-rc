@@ -3,8 +3,16 @@ brand = "brand/traxxas"
 number = "10740"
 name = "Suspension screw pin set, front or rear, 3x40mm (6), 3x32mm (4), 3x28mm (4), 3x46mm"
 gtin = "020334000996"
+pack_qty = 16
+pack_qty_basis = "page"
 category = "pin"
 category_source = "curated"
+includes = [
+  { spec = "spec/pin/3x40-screw", qty = 6, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/3x32-screw", qty = 4, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/3x28-screw", qty = 4, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/3x46-screw", qty = 2, notes = "Size and count from the maker's page description" },
+]
 fits = [
   { kit = "kit/traxxas/mini-maxx", type = "direct", source = "doc/traxxas/107154-1-parts-list" },
   { kit = "kit/traxxas/mini-rally", type = "direct", source = "doc/traxxas/108046-1-parts-list" },

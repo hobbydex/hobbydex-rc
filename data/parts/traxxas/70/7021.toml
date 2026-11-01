@@ -5,6 +5,12 @@ name = "Suspension pin set (front or rear), 2x46mm (2), 2x14mm"
 seen_by = "2026-07-13"
 seen_by_source = "https://web.archive.org/web/20260713162023/https://traxxas.com/7021-suspension-pin-set"
 gtin = "020334702104"
+pack_qty = 6
+pack_qty_basis = "page"
+includes = [
+  { spec = "spec/pin/2x46", qty = 2, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/2x14", qty = 4, notes = "Size and count from the maker's page description" },
+]
 fits = [
   { kit = "kit/traxxas/e-revo-1-16", type = "direct", source = "doc/traxxas/71054-8-parts-list" },
   { kit = "kit/traxxas/summit-1-16", type = "direct", source = "doc/traxxas/72054-5-parts-list" },

@@ -3,8 +3,14 @@ brand = "brand/traxxas"
 number = "7742"
 name = "Suspension pin set, shock mount (front or rear, hardened steel), 4x25mm (2), 4x38mm"
 gtin = "020334774200"
+pack_qty = 4
+pack_qty_basis = "page"
 category = "pin"
 material = "steel"
+includes = [
+  { spec = "spec/pin/4x25", qty = 2, notes = "Size and count from the maker's page description" },
+  { spec = "spec/pin/4x38", qty = 2, notes = "Size and count from the maker's page description" },
+]
 fits = [
   { kit = "kit/traxxas/funco", type = "direct", source = "doc/traxxas/109076-4-parts-list" },
   { kit = "kit/traxxas/x-monster", type = "direct", source = "doc/traxxas/77036-4-parts-list" },
