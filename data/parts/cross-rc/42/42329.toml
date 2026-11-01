@@ -1,8 +1,11 @@
 id = "part/cross-rc/42329"
 brand = "brand/cross-rc"
 number = "42329"
-name = "42329"
-notes = "Shown by number only in the manual's parts drawings"
+notes = "Shown by number only in the manual's parts drawings; name from the distributor."
+name = "Tire"
 documents = ["doc/cross-rc/emo-x2-manual", "doc/cross-rc/emo-x3-manual", "doc/cross-rc/emo-x5-manual"]
-category = "misc"
-category_source = "fallback"
+category = "tire"
+name_source = "dealer"
+links = [
+  { site = "Cross RC Parts", url = "https://www.crossrcparts.com/home/251-crossrc-emox2-big-lion-rc-car-parts-tire-50056-42329-cs-97401143.html", kind = "dealer" },
+]
