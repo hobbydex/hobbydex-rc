@@ -153,6 +153,25 @@ def not_manual_name(stem):
     return NOT_MANUAL_NAME.search(stem) is not None
 
 
+# Tamiya item numbers of static kits and other items that are not RC: plastic kits, figures and military (10000-39999),
+# aircraft and dinosaur kits (60000-61999), airbrushes, tools, paints, putty, ships (74000-89999). The shop's article
+# is 3000 + the item number (cache/manuals/tamiya-de/<article>). Option parts (40000-56999), RC cars and tanks (56-58xxx),
+# the 70xxx crawlers and every number the data has as a Tamiya release or part stay in the check.
+TAMIYA_STATIC = ((10000, 39999), (60000, 61999), (74000, 89999))
+
+
+def tamiya_static_non_rc(rel_path, tamiya_numbers):
+    """True when a cached tamiya-de file (rel_path relative to cache/) is a static kit, paint or tool: its item number
+    is in TAMIYA_STATIC and no Tamiya release or part of the data has that number, so no release can take the manual."""
+    seg = rel_path.replace(os.sep, "/").split("/")
+    if len(seg) < 4 or seg[0] != "manuals" or seg[1] != "tamiya-de":
+        return False
+    m = re.fullmatch(r"3000(\d{5})", seg[2])
+    if m is None or m.group(1) in tamiya_numbers:
+        return False
+    return any(lo <= int(m.group(1)) <= hi for lo, hi in TAMIYA_STATIC)
+
+
 def load_art_sources(tools):
     """The art source items of every brand (None when neither directory exists).
 
@@ -662,7 +681,9 @@ def main():
                 by_url[d["url"]].append(d)
         unlinked = []
         not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
+        not_rc = 0           # a static kit, paint or tool of Tamiya that no release or part of the data has (tamiya_static_non_rc)
         kind_unknown = 0     # the name states no manual kind and says nothing else: still a gap, counted apart
+        tamiya_numbers = {str(x.get("number")) for x in rels + parts if x.get("brand") == "brand/tamiya" and x.get("number")}
         for rel_path in cached:
             name = os.path.basename(rel_path)
             url = url_of.get(rel_path) or (lmn.file_url(os.path.join(tools["cache"], rel_path), {}, urls_by_name)
@@ -671,6 +692,9 @@ def main():
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
                 stem = re.sub(r"(?i)\.pdf$", "", name)
+                if not ds and tamiya_static_non_rc(rel_path, tamiya_numbers):
+                    not_rc += 1
+                    continue
                 if not ds and tools["manual_kind"] and tools["manual_kind"](stem) is None:
                     if not_manual_name(stem):
                         not_manuals += 1
@@ -680,7 +704,8 @@ def main():
         check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked",
               [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5],
               detail=f"{kind_unknown} of them name no manual kind (kind unknown: read the cover or the name); "
-                     f"{not_manuals} cached PDFs named as safety sheets, notices, press releases or product sheets are left out")
+                     f"{not_manuals} cached PDFs named as safety sheets, notices, press releases or product sheets are left out; "
+                     f"{not_rc} cached Tamiya manuals of static kits, paints and tools (not RC: no Tamiya release or part has the number) are left out")
         # keep the list ids as paths; url points at the brand
         res = results["manual-unlinked"]
         res["examples"] = [{"id": u, "url": SITE + "/rc/brands/" + u.split("/")[1] + "/"} for u in unlinked[:args.examples]]
