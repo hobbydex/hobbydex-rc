@@ -5,5 +5,9 @@ name = "HPI Ultra-CA Tyre Glue (20g)"
 links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/101999" },
 ]
+fits = [
+  { kit = "kit/maverick/phantom-mt", releases = ["release/maverick/150603"], type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/phantom-xt", releases = ["release/maverick/150600"], type = "direct", source = "doc/maverick/part-pages" },
+]
 category = "glue"
 weight_g = 20

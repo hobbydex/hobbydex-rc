@@ -5,6 +5,11 @@ name = "Pro-Series Silicone Shock Oil 100Cst (60cc)"
 links = [
   { site = "Maverick", url = "https://www.maverick-rc.com/en/part/160381" },
 ]
+fits = [
+  { kit = "kit/maverick/phantom-mt", releases = ["release/maverick/150603"], type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/phantom-xt", releases = ["release/maverick/150600"], type = "direct", source = "doc/maverick/part-pages" },
+  { kit = "kit/maverick/quantumrx-rally-car", type = "direct", source = "doc/maverick/150360-kit-page" },
+]
 category = "oil-grease"
 volume_ml = 60
 equivalent_to = [
