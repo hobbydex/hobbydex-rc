@@ -13,5 +13,7 @@ range = "mst/820143-colours"
 fits = [
   { kit = "kit/mst/rmx-2-5", releases = ["release/mst/rmx-2-5-classic", "release/mst/rmx-2-5-rtr", "release/mst/rmx-2-5-s"], type = "replaces", source = "doc/mst/rmx-2-5-classic-op-description", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
   { kit = "kit/mst/mrx", type = "replaces", source = "doc/mst/mrx-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/rmx-4", type = "replaces", source = "doc/mst/rmx-4-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/rmx-ex", type = "replaces", source = "doc/mst/rmx-ex-gt-upgrade-guide", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]
 material = "aluminium"

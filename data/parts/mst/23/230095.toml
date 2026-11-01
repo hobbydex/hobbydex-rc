@@ -8,3 +8,7 @@ links = [
   { site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=14&class_sn2=36&sn=3167" },
 ]
 category = "body-accessory"
+fits = [
+  { kit = "kit/mst/cfx", type = "direct", source = "doc/mst/275mm-wheelbase-setting-for-c-10", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/fmx-2-0", releases = ["release/mst/532191a"], type = "direct", source = "doc/mst/fmx-2-0-lcg-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
