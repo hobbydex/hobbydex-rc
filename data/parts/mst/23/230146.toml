@@ -8,3 +8,7 @@ links = [
   { site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=14&class_sn2=36&sn=3811" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/mst/mrx", type = "replaces", source = "doc/mst/mrx-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/xxx-r-classic", type = "replaces", source = "doc/mst/xxx-r-classic-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
