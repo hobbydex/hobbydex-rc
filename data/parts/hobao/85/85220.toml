@@ -9,3 +9,6 @@ links = [
 ]
 category = "shock"
 shock_part = "complete"
+fits = [
+  { kit = "kit/hobao/hyper-vste", releases = ["release/hobao/vste", "release/hobao/vste-c150gn"], type = "replaces", source = "doc/hobao/cml-hb-vste-c150gn-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

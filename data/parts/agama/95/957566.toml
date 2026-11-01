@@ -8,3 +8,7 @@ documents = ["doc/agama/agama-rc-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=957566" },
 ]
+fits = [
+  { kit = "kit/agama/a319", releases = ["release/agama/a319"], type = "replaces", source = "doc/agama/agama-a319-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/agama/a319e", releases = ["release/agama/a319e"], type = "replaces", source = "doc/agama/agama-a319e-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
