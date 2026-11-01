@@ -148,6 +148,23 @@ NOT_MANUAL_NAME = re.compile(r"msds|sicherheit|safety|warning|hinweis|akku|batte
                              r"datenblatt|data ?sheet|spruehfarbe|paint|flyer|leaflet", re.I)
 
 
+# Parts of brands that also sell aircraft, helicopters and drones. The data covers ground vehicles (docs/vision.md:
+# helicopters, boats, planes and FPV are not curated), so these parts have no car to link and part-no-car-link
+# counts them apart. T2M's spare-part numbers start with the item code of the model ("T5190-01" is a part of T5190);
+# each prefix is an aircraft, helicopter or drone item whose cached t2m.fr pages name propellers, wings, landing gear,
+# Spyrit/Exocet/Spark models and the like.
+AIRCRAFT_PREFIXES = {"brand/t2m": frozenset(
+    "T4511 T4515 T4516 T4517 T4518 T4519 T4520 T4521 T4522 T4523 T4524 T4531 T4540 T4549 T4578 T4588 T4591 T4594 T4599 "
+    "T5120 T5130 T5146 T5157 T5158 T5161 T5166 T5167 T5170 T5172 T5175 T5176 T5180 T5181 T5184 T5187 T5188 T5189 T5190 "
+    "T5191 T5192 T5194 T5195 T5196 T5197 T620 T621 T622 T624 T625".split())}
+
+
+def is_aircraft_part(part):
+    """True for a part of an aircraft, helicopter or drone item (AIRCRAFT_PREFIXES): out of scope for car links."""
+    prefixes = AIRCRAFT_PREFIXES.get(part.get("brand"))
+    return bool(prefixes) and str(part.get("number", "")).split("-")[0].upper() in prefixes
+
+
 def not_manual_name(stem):
     """True when a file name identifies a non-manual (safety sheet, battery notice, press release, product sheet)."""
     return NOT_MANUAL_NAME.search(stem) is not None
@@ -938,11 +955,13 @@ def main():
     # a part marked universal (docs/schema.md "part") is sold for any car of a kind, not for a named model
     is_any = lambda p: p.get("universal") is True or (p.get("category") in any_car and not p.get("applies_to"))
     no_car = [p for p in parts if p["id"] not in in_box and not p.get("fits") and p.get("category") and not is_any(p)]
+    aircraft_unlinked = sum(1 for p in no_car if is_aircraft_part(p))
+    no_car = [p for p in no_car if not is_aircraft_part(p)]
     generic_unlinked = sum(1 for p in parts if p["id"] not in in_box and not p.get("fits") and is_any(p))
     per_brand = collections.Counter(p["brand"].split("/")[-1] for p in no_car)
     check("part-no-car-link", "link the part to the kits and releases it fits (a fits row), or to the release that contains it; the list per brand is the linking queue",
           no_car, per_brand=per_brand.most_common(),
-          detail=f"{generic_unlinked} unlinked parts of any-car categories are left out; {sum(1 for p in parts if not p.get('category') and p['id'] not in in_box and not p.get('fits'))} unlinked parts have no category yet")
+          detail=f"{generic_unlinked} unlinked parts of any-car categories and {aircraft_unlinked} unlinked aircraft, helicopter and drone parts are left out; {sum(1 for p in parts if not p.get('category') and p['id'] not in in_box and not p.get('fits'))} unlinked parts have no category yet")
 
     # 20. part fits a kit that has no releases
     check("fits-kit-no-release", "add the kit's release, or remove the fit row",
