@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "Yokomo MD2.0 Drift 4wd"
+fits = [
+  { kit = "kit/yokomo/md", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Yokomo MD2.0 Drift 4wd (link_car_kits.py)", car = "MD2.0 Drift 4wd" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/yok062b-yokomo-md2-0-drift-4wd-compatible-metal-shielded-bearing-kit/" },
