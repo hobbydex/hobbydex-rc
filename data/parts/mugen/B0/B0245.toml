@@ -5,6 +5,7 @@ name = "ALIGNMENT BLOCK FOR B0236"
 gtin = "4944925914423"
 fits = [
   { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-option-parts-page", notes = "Also listed by doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list", notes = "Also listed by doc/mugen/mrx7-option-parts-page" },
 ]
 related = [
   { part = "part/mugen/B0236", relation = "for", notes = "link_part_refs" },

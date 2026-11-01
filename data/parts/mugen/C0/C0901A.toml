@@ -5,3 +5,6 @@ name = "MUFFLER STAY"
 notes = "Revision letter of C0901: the parts lists print it small after the number"
 category = "engine-fuel"
 documents = ["doc/mugen/mbx-6tr-part-list-ja", "doc/mugen/mbx8-world-edition-part-list-ja", "doc/mugen/mtx7-part-list-ja", "doc/mugen/mtx7r-part-list-ja"]
+fits = [
+  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
+]
