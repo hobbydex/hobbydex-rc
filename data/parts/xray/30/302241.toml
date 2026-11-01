@@ -11,7 +11,6 @@ former_names = ["X4 ALU HUB - SWISS 7075 T6"]
 category = "steering"
 material = "aluminium"
 material_grade = "7075-T6"
-pack_qty = 4
 documents = ["doc/xray/x4-2022-part-list", "doc/xray/x4-2023-part-list", "doc/xray/x4-2024-part-list", "doc/xray/x4-2025-part-list", "doc/xray/x4-2026-part-list", "doc/xray/x4f-2023-part-list", "doc/xray/x4f-2024-part-list", "doc/xray/x4f-2025-part-list", "doc/xray/x4f-2026-part-list"]
 fits = [
   { kit = "kit/xray/x4", type = "replaces", replaces = "part/xray/302240-G", source = "doc/xray/x4-2023-part-list", notes = "Same part in another material (link_upgrades.py)" },
