@@ -1,8 +1,16 @@
 id = "part/cross-rc/87114"
 brand = "brand/cross-rc"
 number = "87114"
-name = "87114"
+name = "Light board kit"
 notes = "Shown by number only in the manual's parts drawings"
-documents = ["doc/cross-rc/jt4-manual"]
+documents = ["doc/cross-rc/jt4-manual", "doc/cross-rc/crossrcparts-com"]
 category = "misc"
 category_source = "fallback"
+name_source = "dealer"
+links = [
+  { site = "Cross RC Parts", url = "https://www.crossrcparts.com/home/442-crossrc-at6-rc-car-parts-light-board-kit-87114-cs-97400920.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/cross-rc/at4", type = "direct", source = "doc/cross-rc/crossrcparts-com", notes = "Known from the distributor: listed under the model's category" },
+  { kit = "kit/cross-rc/jt4", type = "direct", source = "doc/cross-rc/crossrcparts-com", notes = "Known from the distributor: listed under the model's category" },
+]

@@ -1,8 +1,15 @@
 id = "part/cross-rc/71149"
 brand = "brand/cross-rc"
 number = "71149"
-name = "71149"
+name = "Boarding ladder step"
 notes = "Shown by number only in the manual's parts drawings"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/cross-rc/bc8-manual"]
+documents = ["doc/cross-rc/bc8-manual", "doc/cross-rc/crossrcparts-com"]
+name_source = "dealer"
+links = [
+  { site = "Cross RC Parts", url = "https://www.crossrcparts.com/bc8/832-crossrc-bc8-8x8-military-truck-parts-boarding-ladder-step-cs-9740049471149.html", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/cross-rc/bc8", type = "direct", source = "doc/cross-rc/crossrcparts-com", notes = "Known from the distributor: listed under the model's category" },
+]
