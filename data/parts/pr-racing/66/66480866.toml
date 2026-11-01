@@ -3,8 +3,8 @@ brand = "brand/pr-racing"
 number = "66480866"
 name = "4.8mm X 5mm Ball Studs x2pcs & M3 Nut"
 category = "ball-end"
-pack_qty = 2
-pack_qty_basis = "name"
+pack_qty = 4
+pack_qty_basis = "includes"
 fits = [
   { kit = "kit/pr-racing/s1", type = "direct", source = "doc/pr-racing/pr-rc-com" },
 ]
@@ -13,5 +13,6 @@ documents = ["doc/pr-racing/pr-rc-com"]
 ball_type = "stud"
 links = [ { site = "PR Racing", url = "https://www.pr-rc.com/pdt_view.asp?sn=2064" } ]
 includes = [
-  { spec = "spec/nut/m3-hex", qty = 1, notes = "Size from this item's words in the manufacturer's name" },
+  { spec = "spec/ball-end/4.8mm-stud", qty = 2 },
+  { spec = "spec/nut/m3-hex", qty = 2, notes = "Size from this item's words in the manufacturer's name" },
 ]
