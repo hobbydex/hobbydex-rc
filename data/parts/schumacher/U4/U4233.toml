@@ -6,3 +6,6 @@ notes = "Name read by OCR from a scanned schumacher manual; verify before relyin
 name_source = "ocr"
 documents = ["doc/schumacher/cat-k1-aero-manual"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

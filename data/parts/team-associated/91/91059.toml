@@ -4,3 +4,6 @@ number = "91059"
 name = "M2.5x5x0.5 washer"
 category = "washer-shim"
 documents = ["doc/team-associated/90008-sc104x4-manual"]
+equivalent_to = [
+  { spec = "spec/washer/2.5x5x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

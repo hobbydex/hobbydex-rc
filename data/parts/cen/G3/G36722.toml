@@ -10,3 +10,6 @@ documents = ["doc/cen/american-force-reeper-manual"]
 links = [ { site = "CEN Racing", url = "https://www.cenracingusa.com/products/g36722" } ]
 category = "pin"
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/pin/3x22", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

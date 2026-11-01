@@ -4,3 +4,6 @@ number = "91002"
 name = "3x8x4 steering bearings"
 category = "bearing"
 documents = ["doc/team-associated/90008-sc104x4-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/3x8x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

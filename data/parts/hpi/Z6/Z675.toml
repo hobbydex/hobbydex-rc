@@ -12,3 +12,6 @@ fits = [
   { kit = "kit/hpi/sprint-2", releases = ["release/hpi/12026", "release/hpi/718", "release/hpi/719"], type = "direct", source = "doc/hpi/12026-sprint-2-sport-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]
 color = "purple"
+equivalent_to = [
+  { spec = "spec/nut/m3-lock-thin", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

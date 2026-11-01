@@ -9,3 +9,6 @@ name_source = "manual"
 name_de = "Zylinderkopfschraube M4x30mm"
 pack_qty = 4
 pack_qty_basis = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m4x30-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

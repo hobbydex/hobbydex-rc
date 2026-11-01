@@ -8,3 +8,10 @@ notes = "Named on the maker's own product page (archived copy)"
 category = "washer-shim"
 documents = ["doc/hpi/115879-vol04-rtr-sprint-2-sport-us-060415", "doc/hpi/115885-vol02-savage-xl-octane-rtr-061015", "doc/hpi/115885-vol02-savage-xl-octane-rtr-061015-e", "doc/hpi/115893-vol03-nitro-rs4-3-drift-rtr-060215", "doc/hpi/12185-pro4-glb-m-v1"]
 name_source = "manufacturer"
+includes = [
+  { spec = "spec/washer/3x5x0.1", qty = 10 },
+  { spec = "spec/washer/3x5x0.2", qty = 10 },
+  { spec = "spec/washer/3x5x0.3", qty = 10 },
+]
+pack_qty = 30
+pack_qty_basis = "includes"

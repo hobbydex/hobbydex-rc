@@ -4,3 +4,6 @@ number = "25216"
 name = "M3 locknut w/flange"
 category = "nut"
 documents = ["doc/team-associated/90008-sc104x4-manual"]
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

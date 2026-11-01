@@ -24,3 +24,6 @@ documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-k1-explo
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/ball-bearing-10x15x4-red-seal-pr-u2699" } ]
 name_source = "manufacturer"
 color = "red"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

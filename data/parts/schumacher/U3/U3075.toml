@@ -31,3 +31,6 @@ documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-k2-explo
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/nitro-off-road/riot/ball-bearing-4x8x3mm-red-seal-pr-u3075" } ]
 name_source = "manufacturer"
 color = "red"
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
