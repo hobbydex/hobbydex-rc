@@ -12,7 +12,7 @@ when a source stated it:
 - a field removed or changed while it is sourced: links, fits, includes, material,
   color, former_names, name_de, name_fr, name_ja, documents, contains, notes, applies_to; category with
   category_source = "curated"; pack_qty with a stated pack_qty_basis (name, page,
-  maker, owner, includes, photos); any field with a <field>_source beside it or a
+  maker, distributor, owner, includes, photos); any field with a <field>_source beside it or a
   key in `sources`; equivalent_to rows that carry a source;
 - a link removed or changed, unless its page is known gone (a document of the head
   with gone set and that page) or a document of the record names its page. Marking a
@@ -54,7 +54,7 @@ from check_ids import id_of
 RETIRED = "data/retired.toml"
 SOURCED_FIELDS = {"links", "fits", "includes", "material", "color", "former_names", "name_de", "name_fr", "name_ja",
                  "documents", "contains", "notes", "applies_to"}   # list rows and notes: each is some tool's provenance
-STATED_PACK_BASIS = {"maker", "page", "name", "manual", "owner", "includes", "photos"}   # pack_qty_basis; "photo" is the weakest, not stated
+STATED_PACK_BASIS = {"maker", "page", "name", "manual", "distributor", "owner", "includes", "photos"}   # pack_qty_basis; "photo" is the weakest, not stated
 CONVENTION = {"material": {"unknown"}}   # placeholder values, never a stated fact
 # keys that name a row, in the order they are tried; rows are paired by them when their content changed
 IDENT_KEYS = ("url", "kit", "spec", "part", "release", "doc", "brand", "item", "site", "name", "text", "role", "relation")

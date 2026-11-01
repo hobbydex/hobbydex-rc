@@ -84,7 +84,7 @@ ENUMS = {
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
-    "part.pack_qty_basis": {"name", "page", "includes", "manual", "photo", "photos", "owner"},
+    "part.pack_qty_basis": {"name", "page", "includes", "manual", "distributor", "photo", "photos", "owner"},   # distributor: a dealer's listing states the count (docs/schema.md "part")
     # where a shell's thickness_mm or a body's width_mm came from (docs/schema.md, bodies)
     # why a part is universal (docs/schema.md "part", universal): the maker says so; the category is inherently universal; sold by size or spec; a set of one engine
     "part.universal_basis": {"maker", "category", "size", "engine"},
