@@ -460,14 +460,26 @@ def link_base(name):
     return re.sub(r"[^a-z0-9]+", " ", b).strip()
 
 
+def maybe_derive(fits, kit, in_box):
+    """Mirror of link_upgrades.maybe_upgrade_row: no replaces row beside X's maker-stated direct or modification row
+    for kit when X is not in the kit's box."""
+    if in_box:
+        return True
+    return not any(f.get("kit") == kit and f.get("notes") != LINK_NOTE and f.get("type") in ("direct", "modification")
+                   for f in fits)
+
+
 def derive_upgrades(parts, releases):
     """part id -> {canon(row)}: the replaces rows link_upgrades.py derives. An upgrade X of a stock part S (same brand
     and base name, X aluminium, carbon, steel or titanium, S plastic or no material, or steel for titanium) gets a row
-    for each kit K that holds S in its box and that X fits or is an option of. parts: id -> record; releases: the
-    release records. Same rules as tools/link_upgrades.py: change both together."""
-    stock_in, option_in = collections.defaultdict(set), collections.defaultdict(dict)
+    for each kit K that holds S in its box and that X fits or is an option of, unless X's maker-stated direct or
+    modification row for K stands and X is not in K's box (maybe_derive). parts: id -> record; releases: the release
+    records. Same rules as tools/link_upgrades.py: change both together."""
+    stock_in, option_in, box_in = collections.defaultdict(set), collections.defaultdict(dict), collections.defaultdict(set)
     for r in releases:
         for c in r.get("contains", []):
+            if c.get("role") in ("kit", "listed"):
+                box_in[c.get("part")].add(r.get("kit"))
             if c.get("role") == "kit":
                 stock_in[c.get("part")].add(r.get("kit"))
             elif c.get("role") == "option":
@@ -495,7 +507,7 @@ def derive_upgrades(parts, releases):
                 if s == x or parts[s].get("material") not in LINK_BETTER[mx]:
                     continue
                 for k in sorted(stock_in[s] & set(kits_x)):
-                    if kits_x[k]:
+                    if kits_x[k] and maybe_derive(parts[x].get("fits", []), k, k in box_in[x]):
                         out[x].add(canon(dict(kit=k, type="replaces", replaces=s, source=kits_x[k], notes=LINK_NOTE)))
     return out
 

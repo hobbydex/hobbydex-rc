@@ -67,6 +67,18 @@ class Derived(unittest.TestCase):
         parts["part/a/S1"]["material"] = "aluminium"
         self.assertEqual(rc.derive_upgrades(parts, releases), {})
 
+    def test_maker_direct_row_outside_the_box_derives_no_replaces_row(self):
+        parts, releases = upgrade_fixture()
+        parts["part/a/X1"]["fits"] = [{"kit": "kit/a/k", "type": "direct", "source": "doc/a/store"}]
+        self.assertEqual(rc.derive_upgrades(parts, releases), {})
+
+    def test_maker_direct_row_inside_the_box_still_derives_its_replaces_row(self):
+        parts, releases = upgrade_fixture()
+        parts["part/a/X1"]["fits"] = [{"kit": "kit/a/k", "type": "direct", "source": "doc/a/store"}]
+        releases[0]["contains"][1]["role"] = "listed"
+        row = dict(kit="kit/a/k", type="replaces", replaces="part/a/S1", source="doc/a/store", notes=rc.LINK_NOTE)
+        self.assertIn(rc.canon(row), rc.derive_upgrades(parts, releases)["part/a/X1"])
+
     def test_gained_only(self):
         self.assertTrue(rc.gained_only({"k": 1, "releases": ["a"]}, {"k": 1, "releases": ["a", "b"]}))
         self.assertFalse(rc.gained_only({"k": 1, "releases": ["a"]}, {"k": 2, "releases": ["a", "b"]}))
