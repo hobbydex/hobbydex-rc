@@ -1,8 +1,13 @@
 id = "part/hpi/Z058"
 brand = "brand/hpi"
 number = "Z058"
-name = "Z058"
-notes = "Named by its number only: the name on the scanned hpi manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
-documents = ["doc/hpi/115879-vol04-rtr-sprint-2-sport-us-060415", "doc/hpi/12004-nitro-rs4-3-18ss-glb-m-v1"]
+name = "Titanium Tp. Binder Head Screw M3x12mm"
+name_source = "manual"
+category = "screw"
+documents = ["doc/hpi/115879-vol04-rtr-sprint-2-sport-us-060415", "doc/hpi/12004-nitro-rs4-3-18ss-glb-m-v1", "doc/hpi/12560-rush-evo-glb-m-v3", "doc/hpi/12026-sprint-2-sport-glb-m-v1"]
+material = "titanium"
+fits = [
+  { kit = "kit/hpi/nitro-rs4-3", releases = ["release/hpi/10256", "release/hpi/10257", "release/hpi/12004"], type = "direct", source = "doc/hpi/12004-nitro-rs4-3-18ss-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/nitro-rush", releases = ["release/hpi/12560", "release/hpi/562"], type = "direct", source = "doc/hpi/12560-rush-evo-glb-m-v3", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/sprint-2", releases = ["release/hpi/12026", "release/hpi/718", "release/hpi/719"], type = "direct", source = "doc/hpi/12026-sprint-2-sport-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
