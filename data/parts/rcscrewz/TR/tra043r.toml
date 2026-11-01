@@ -14,6 +14,9 @@ includes = [
   { spec = "spec/bearing/12x18x4" },
 ]
 applies_to = "Traxxas Stamped 4x4 (#67054, 67086)"
+fits = [
+  { kit = "kit/traxxas/stampede-4x4", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Traxxas Stamped 4x4 (#67054, 67086) (link_car_kits.py)", releases = ["release/traxxas/67054", "release/traxxas/67086"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/tra043r-traxxas-stamped-4x4-rubber-shielded-bearings/" },
