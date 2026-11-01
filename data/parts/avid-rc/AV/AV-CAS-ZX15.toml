@@ -12,6 +12,11 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Caster Racing ZX-1.5R (also ZX-1.5R Factory Pro, K8-T Factory Pro, K8-T RTR)"
+fits = [
+  { kit = "kit/caster-racing/zx1-5r", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Caster Racing ZX-1.5R (link_car_kits.py)" },
+  { kit = "kit/caster-racing/k8t-pro", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the K8-T Factory Pro (link_car_kits.py)" },
+  { kit = "kit/caster-racing/k8t-rtr", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the K8-T RTR (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura, Metal | Clutch (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/390/ZX15R" },
