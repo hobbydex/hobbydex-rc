@@ -7,6 +7,7 @@ that differ only in case. Also the art under art/ (see check_art). Exit code 1 o
 Run from the repo root: python3 -I tools/validate.py
 """
 import datetime, os, re, sys, tomllib, unicodedata, urllib.parse
+from fractions import Fraction
 import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layout import ART_KINDS, DIRS, art_path, path_for
@@ -183,6 +184,52 @@ def size_spec_problems(path, d):
         sid = f"spec/circlip/{g(s_)}mm" + (f"-{g(t)}" if t is not None else "")
         if d["id"] != sid:
             out.append(f"{path}: circlip spec id should be {sid} (shaft, then thickness)")
+    return out
+
+
+INCH_DRIVES = {"hex", "torx", "phillips", "jis", "slot"}
+
+
+def inch_text(value):
+    """An inch length as a reduced fraction in the names' form: "1/2", "1 1/4", "2"."""
+    whole, rest = divmod(value, 1)
+    if not rest:
+        return str(whole)
+    frac = f"{rest.numerator}/{rest.denominator}"
+    return frac if not whole else f"{whole} {frac}"
+
+
+def inch_screw_problems(path, d):
+    """Problems with an inch screw spec: a UNC or UNF thread, length_in as a reduced inch fraction (never mm), and the id they are keyed by.
+
+    The id is spec/screw/<standard>-<thread>x<length>in-<head>-<drive> (the length's whole part and fraction joined by "_"
+    and "-": "1_1-4in"), with -tapping for a self-tapping screw (docs/schema.md "spec").
+    """
+    if d.get("category") != "screw":
+        return [f"{path}: length_in is only for screw specs"]
+    out = []
+    if "length_mm" in d:
+        out.append(f"{path}: an inch screw spec states length_in and no length_mm (the length is never converted to metric)")
+    thread, std, L = d.get("thread"), d.get("thread_standard"), d.get("length_in")
+    if not isinstance(thread, str) or not re.fullmatch(r"\d{1,2}-\d{1,2}", thread) or std not in ("UNC", "UNF"):
+        return out + [f"{path}: inch screw spec needs thread like \"4-40\" and thread_standard UNC or UNF"]
+    value = None
+    if isinstance(L, str) and re.fullmatch(r"(\d+ )?\d+(/\d+)?|\d*\.\d+", L):
+        try:
+            parts = L.split()
+            value = int(parts[0]) + Fraction(parts[1]) if len(parts) == 2 else Fraction(L)
+        except (ValueError, ZeroDivisionError):
+            value = None
+    if value is None or value <= 0 or value.denominator not in (1, 2, 4, 8, 16, 32, 64) or inch_text(value) != L:
+        out.append(f"{path}: length_in {L!r} should be the length in inches as a reduced fraction (\"1/2\", \"1 1/4\", \"2\")")
+        return out
+    whole, _, frac = L.rpartition(" ")
+    token = (f"{whole}_" if whole else "") + (frac.replace("/", "-") if frac else L) + "in"
+    if d.get("drive") not in INCH_DRIVES:
+        out.append(f"{path}: inch screw spec needs drive, one of {sorted(INCH_DRIVES)}")
+    sid = f"spec/screw/{std.lower()}-{thread}x{token}-{d.get('head')}-{d.get('drive')}" + ("-tapping" if d.get("thread_type") == "self-tapping" else "")
+    if d.get("id") != sid:
+        out.append(f"{path}: inch screw spec id should be {sid}")
     return out
 
 
@@ -1217,7 +1264,9 @@ def main():
             allowed = SPEC_TYPES.get(d.get("category"), set())
             if d["type"] not in allowed:
                 errors.append(f"{path}: spec.type = {d['type']!r} not in {sorted(allowed)} for a {d.get('category')} spec")
-        if kind == "spec" and d.get("category") in ("screw", "pin"):
+        if kind == "spec" and "length_in" in d:
+            errors.extend(inch_screw_problems(path, d))
+        elif kind == "spec" and d.get("category") in ("screw", "pin"):
             lm = d.get("length_mm")
             if not isinstance(lm, (int, float)) or isinstance(lm, bool) or lm <= 0:
                 errors.append(f"{path}: {d['category']} spec needs length_mm above 0 (a pitch or an OCR zero is not a length)")

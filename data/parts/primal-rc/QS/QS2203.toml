@@ -10,3 +10,6 @@ fits = [
   { kit = "kit/primal-rc/qs1001-electric-dragster", type = "direct", source = "doc/primal-rc/electric-dragster-manual", notes = "Listed in the 1/5 Scale Electric Dragster manual parts list" },
 ]
 documents = ["doc/primal-rc/electric-dragster-manual", "doc/primal-rc/qs1-gas-dragster-manual"]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x8in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

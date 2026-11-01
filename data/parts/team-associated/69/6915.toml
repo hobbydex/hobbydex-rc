@@ -9,3 +9,6 @@ pack_qty_basis = "manual"
 fits = [
   { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x5-8in-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

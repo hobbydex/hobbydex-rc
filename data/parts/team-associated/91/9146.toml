@@ -10,3 +10,6 @@ documents = ["doc/team-associated/cat-t4ft"]
 fits = [
   { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/unc-2-56x3-16in-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

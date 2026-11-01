@@ -5,3 +5,6 @@ name = "FT 4-40x3/8” shcs aluminum"
 category = "screw"
 documents = ["doc/team-associated/b44-1-manual-preflight"]
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x3-8in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
