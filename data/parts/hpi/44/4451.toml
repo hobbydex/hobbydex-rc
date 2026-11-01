@@ -8,3 +8,11 @@ name_source = "manufacturer"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/4451" },
 ]
+fits = [
+  { kit = "kit/hpi/crawler-king", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/4456" },
+  { kit = "kit/hpi/e-firestorm", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/4456" },
+  { kit = "kit/hpi/firestorm", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/4456" },
+  { kit = "kit/hpi/nitro-mt2", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/4456" },
+  { kit = "kit/hpi/nitro-rush", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/4456" },
+  { kit = "kit/hpi/savage-xs", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/4456" },
+]

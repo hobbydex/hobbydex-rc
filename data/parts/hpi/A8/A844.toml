@@ -8,3 +8,8 @@ name_source = "manufacturer"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/A844" },
 ]
+fits = [
+  { kit = "kit/hpi/nitro-mt2", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/A344" },
+  { kit = "kit/hpi/nitro-rs4-3", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/A344" },
+  { kit = "kit/hpi/nitro-rush", type = "replaces", source = "doc/hpi/part-pages", replaces = "part/hpi/A344" },
+]
