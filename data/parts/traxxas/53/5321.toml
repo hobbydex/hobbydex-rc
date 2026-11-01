@@ -5,10 +5,14 @@ name = "Suspension pin set (front or rear, hardened steel), 3x20mm (4), 3x40mm"
 seen_by = "2026-07-13"
 seen_by_source = "https://web.archive.org/web/20260713072825/https://traxxas.com/5321-hardened-steel-suspension-pin-set"
 gtin = "020334532107"
-pack_qty = 2
+pack_qty = 6
 pack_qty_basis = "page"
 category = "pin"
 material = "steel"
+includes = [
+  { spec = "spec/pin/3x20", qty = 4, notes = "Size and count from the maker's page title" },
+  { spec = "spec/pin/3x40", qty = 2, notes = "Size and count from the maker's page title" },
+]
 fits = [
   { kit = "kit/traxxas/revo", type = "direct", source = "doc/traxxas/53097-3-parts-list" },
   { kit = "kit/traxxas/slayer-pro-4x4", type = "direct", source = "doc/traxxas/59076-3-parts-list" },
