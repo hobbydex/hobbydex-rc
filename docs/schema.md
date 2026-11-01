@@ -170,6 +170,8 @@ rebrand_of = [
 ]
 ```
 
+`certainty` (optional on any `rebrand_of` row, kit, release or part): `"likely"` marks a rebrand backed only by matching specs or looks, not by a maker statement, matching part numbers or an owner's statement. Absent means confirmed. Rebranders never name the original maker, so spec matching is normal evidence; the site shows a likely row as "Likely rebrand of X" (and "Likely rebranded as Y" on the other side). A release may carry `rebrand_of` too, with `release` as the target (`{ release = "release/yikong/yk41015-...", certainty = "likely", source = "doc/..." }`), where one kit is sold in bodies that match different originals.
+
 `supersedes` (optional, on the newer kit): the kit this platform replaces, a kit id of the same brand, one predecessor per kit. Two sources: the maker says so (cited in `notes`), or the kits are numbered generations of one line with the same category, scale and drive: `<line><n>` is replaced by the next number of that line that exists (BD7 -> BD8; BD5 -> BD7 when there is no BD6). Variant suffixes (BD10LC, TA07 PRO) are a line of their own and take no link. Numbers that are model codes rather than generations take none. The releases stay on the kit they were sold for; the site shows "Replaces" and "Replaced by" on the platform page.
 
 ```toml
