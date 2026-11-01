@@ -11,6 +11,12 @@ category = "bearing"
 category_source = "curated"
 lubricant = "grease"
 applies_to = "Caster Racing EX-1.5R (also EX-1.5R Factory Pro Electric, F8T Factory Pro Electric, EX-1R, EX-1.5RTR)"
+fits = [
+  { kit = "kit/caster-racing/ex1-5r", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Caster Racing EX-1.5R (link_car_kits.py)" },
+  { kit = "kit/caster-racing/f8t-pro", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the F8T Factory Pro Electric (link_car_kits.py)" },
+  { kit = "kit/caster-racing/ex1r-pro", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the EX-1R (link_car_kits.py)" },
+  { kit = "kit/caster-racing/ex1-5-rtr", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the EX-1.5RTR (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Revolution, Revolution | Aura, Rubber, Metal, Ceramic Revolution, Ceramic Revolution | Aura, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/389/EX15R" },
