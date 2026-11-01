@@ -5,5 +5,10 @@ name = "1/10 Scale R/C Raybrig HSV-010 Body Parts Set (Wide)"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/japan/products/51450/index.html" },
 ]
+fits = [
+  { kit = "kit/tamiya/tg10-mk-2", releases = ["release/tamiya/44051"], type = "direct", source = "doc/tamiya/51450-product-page-ja" },
+  { kit = "kit/tamiya/ta05", releases = ["release/tamiya/58472"], type = "direct", source = "doc/tamiya/51450-product-page-ja" },
+  { kit = "kit/tamiya/tt-01e", releases = ["release/tamiya/58479", "release/tamiya/57811"], type = "direct", source = "doc/tamiya/51450-product-page-ja" },
+]
 documents = ["doc/tamiya/51450-product-page-ja"]
 category = "body"

@@ -5,6 +5,10 @@ name = "1/10 Scale R/C Toyota FJ Cruiser Metal Plated H Parts"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/japan/products/54627/index.html" },
 ]
+fits = [
+  { kit = "kit/tamiya/cc-01", releases = ["release/tamiya/57877", "release/tamiya/58588", "release/tamiya/58620", "release/tamiya/84401"], type = "direct", source = "doc/tamiya/54627-product-page-ja" },
+  { kit = "kit/tamiya/cr-01", releases = ["release/tamiya/84411"], type = "direct", source = "doc/tamiya/54627-product-page-ja" },
+]
 documents = ["doc/tamiya/54627-product-page-ja"]
 category = "misc"
 category_source = "fallback"
