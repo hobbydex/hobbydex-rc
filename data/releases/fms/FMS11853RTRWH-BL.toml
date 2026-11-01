@@ -18,5 +18,9 @@ links = [
 documents = ["doc/fms/1-18-gmc-sierra-fcx18s-manual"]
 notes = "Item number from the FMS product page."
 
+contains = [
+  { part = "part/fms/FMSC11853", role = "listed", source = "doc/fms/1-18-gmc-sierra-fcx18s-manual" },
+  { part = "part/fms/FMSC3921", role = "listed", source = "doc/fms/1-18-gmc-sierra-fcx18s-manual" },
+]
 [sources]
 name = "https://www.fmshobby.com/products/fms-fcx18s-1-18-sierra-s-brushless"
