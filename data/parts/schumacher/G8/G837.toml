@@ -4,5 +4,10 @@ number = "G837"
 name = "Mini Temp Gun - 420F 230C"
 notes = "Name read by OCR from a scanned schumacher manual; verify before relying on exact wording"
 name_source = "ocr"
-documents = ["doc/schumacher/cat-k1-manual"]
+documents = ["doc/schumacher/cat-k1-manual", "doc/schumacher/mi3-spares-archive"]
 category = "tool"
+fits = [
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+seen_by = "2010-01-30"
+seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"

@@ -1,10 +1,14 @@
 id = "part/schumacher/U2813"
 brand = "brand/schumacher"
 number = "U2813"
-name = "U2813"
-seen_by = "2012-02"
-seen_by_source = "doc/schumacher/cougar-sv2-manual"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
-documents = ["doc/schumacher/cougar-sv2-manual"]
-category = "misc"
-category_source = "fallback"
+name = "M4 Nyloc Wheel Nut - Gold Alloy (pk4)"
+seen_by = "2010-01-30"
+seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
+documents = ["doc/schumacher/cougar-sv2-manual", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive"]
+category = "nut"
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+name_source = "manufacturer"
+material = "aluminium"

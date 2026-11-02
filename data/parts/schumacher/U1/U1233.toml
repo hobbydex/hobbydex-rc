@@ -9,5 +9,8 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "shock"
 shock_part = "shaft"
-documents = ["doc/schumacher/c2w-manual"]
+documents = ["doc/schumacher/c2w-manual", "doc/schumacher/bosscat-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/nitro-off-road/rascal/piston-rod-med-shock-pr-u1233" } ]
+fits = [
+  { kit = "kit/schumacher/bosscat", type = "direct", source = "doc/schumacher/bosscat-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

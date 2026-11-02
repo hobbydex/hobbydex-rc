@@ -7,9 +7,10 @@ seen_by_source = "https://web.archive.org/web/20151125071752/http://www.racing-c
 gtin = "5051294093938"
 category = "chassis"
 material = "aluminium"
-documents = ["doc/schumacher/ft9-manual"]
+documents = ["doc/schumacher/ft9-manual", "doc/schumacher/supastox-gt-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse/alloy-servo-post-pr-ss-gt-a1-e1-icon-u4710" } ]
 fits = [
   { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/atom", type = "direct", source = "doc/schumacher/atom-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]

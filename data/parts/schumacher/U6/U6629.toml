@@ -7,5 +7,8 @@ seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-c
 color = "yellow"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/schumacher/mi7-manual"]
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/mi3-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/micro-buggy/sst-rally-24-25-yellow-pr-u6629" } ]
+fits = [
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

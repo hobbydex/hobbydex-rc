@@ -6,7 +6,7 @@ seen_by = "2010-01-30"
 seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
 gtin = "5051294013219"
 category = "bearing"
-documents = ["doc/schumacher/eclipse6-maunal"]
+documents = ["doc/schumacher/eclipse6-maunal", "doc/schumacher/bosscat-spares-archive", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/pro-thrust-bearing-u1954" } ]
 fits = [
   { kit = "kit/schumacher/atom-2", type = "direct", source = "doc/schumacher/atom2-exploded", notes = "Shown on the car's exploded diagram" },
@@ -16,4 +16,8 @@ fits = [
   { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/riot", type = "direct", source = "doc/schumacher/riot-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/axis2", type = "direct", source = "doc/schumacher/axis2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/bosscat", type = "direct", source = "doc/schumacher/bosscat-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
