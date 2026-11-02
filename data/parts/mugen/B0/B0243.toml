@@ -3,13 +3,11 @@ brand = "brand/mugen"
 number = "B0243"
 name = "POWI"
 fits = [
-  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list", notes = "Also listed as direct by doc/mugen/mbx-6tr-part-list" },
   { kit = "kit/mugen/mbx7", type = "direct", source = "doc/mugen/mbx-7-part-list" },
-  { kit = "kit/mugen/mbx6", type = "replaces", source = "doc/mugen/mbx-6r-part-list", notes = "Also listed by doc/mugen/mbx-6-part-list" },
+  { kit = "kit/mugen/mbx6", type = "replaces", source = "doc/mugen/mbx-6r-part-list", notes = "Also listed as direct by doc/mugen/mbx-6r-part-list; Also listed by doc/mugen/mbx-6-part-list" },
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-part-list" },
   { kit = "kit/mugen/mtx5", type = "direct", source = "doc/mugen/mtx-5-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list" },
-  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6r-part-list", notes = "Also listed by doc/mugen/mbx-6-part-list" },
 ]
 documents = ["doc/mugen/mbx-6-part-list", "doc/mugen/mbx-6r-part-list", "doc/mugen/mbx-6tr-part-list"]
 category = "misc"

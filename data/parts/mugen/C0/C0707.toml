@@ -4,12 +4,9 @@ number = "C0707"
 name = "Carbon Shoe for 3-Pin Clutch"
 gtin = "4944925307072"
 fits = [
-  { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list", notes = "Also listed by doc/mugen/mbx-4-part-list" },
-  { kit = "kit/mugen/mtx2", type = "direct", source = "doc/mugen/mtx-2-part-list" },
-  { kit = "kit/mugen/super-athlete", type = "direct", source = "doc/mugen/super-athlete-part-list" },
-  { kit = "kit/mugen/mtx2", type = "replaces", replaces = "part/mugen/C0711", source = "doc/mugen/mtx-2-part-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/mugen/super-athlete", type = "replaces", replaces = "part/mugen/C0711", source = "doc/mugen/super-athlete-part-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/mugen/mbx4", type = "replaces", replaces = "part/mugen/C0711", source = "doc/mugen/mbx-4rr-part-list", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/mbx4", type = "direct", source = "doc/mugen/mbx-4rr-part-list", notes = "Also listed as replaces by doc/mugen/mbx-4rr-part-list; Also listed by doc/mugen/mbx-4-part-list; Same part in another material (link_upgrades.py)", replaces = "part/mugen/C0711" },
+  { kit = "kit/mugen/mtx2", type = "direct", source = "doc/mugen/mtx-2-part-list", replaces = "part/mugen/C0711", notes = "Also listed as replaces by doc/mugen/mtx-2-part-list; Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/super-athlete", type = "direct", source = "doc/mugen/super-athlete-part-list", replaces = "part/mugen/C0711", notes = "Also listed as replaces by doc/mugen/super-athlete-part-list; Same part in another material (link_upgrades.py)" },
 ]
 category = "pin"
 material = "carbon"

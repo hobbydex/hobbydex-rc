@@ -6,18 +6,15 @@ gtin = "4944925805264"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-part-list", notes = "Also listed as direct by doc/mugen/mrx7-part-list" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list", notes = "Also listed by doc/mugen/mrx6r-part-list; Also listed by doc/mugen/mrx6-part-list" },
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list", notes = "Also listed by doc/mugen/mrx5-part-list" },
   { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list", notes = "Also listed by doc/mugen/mrx-4-part-list" },
   { kit = "kit/mugen/mrx3", type = "direct", source = "doc/mugen/mrx-3-part-list" },
-  { kit = "kit/mugen/mtx4", type = "replaces", source = "doc/mugen/mtx4-r-part-list", notes = "Also listed by doc/mugen/mtx-4-part-list" },
-  { kit = "kit/mugen/mtx3", type = "replaces", source = "doc/mugen/mtx-3-part-list" },
+  { kit = "kit/mugen/mtx4", type = "replaces", source = "doc/mugen/mtx4-r-part-list", notes = "Also listed as direct by doc/mugen/mtx4-r-part-list; Also listed by doc/mugen/mtx-4-part-list" },
+  { kit = "kit/mugen/mtx3", type = "replaces", source = "doc/mugen/mtx-3-part-list", notes = "Also listed as direct by doc/mugen/mtx-3-part-list" },
   { kit = "kit/mugen/mtx2", type = "direct", source = "doc/mugen/mtx-2-part-list" },
   { kit = "kit/mugen/msx3", type = "direct", source = "doc/mugen/msx3-part-list" },
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
-  { kit = "kit/mugen/mtx4", type = "direct", source = "doc/mugen/mtx4-r-part-list", notes = "Also listed by doc/mugen/mtx-4-part-list" },
-  { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list" },
 ]
 category = "shock-spring"
 links = [{ site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/FRONT-SPRING-1.9-WHITE/H0526" }, { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/FRONT-SPRING-OE1.9-6.0T/H0526a" }]
