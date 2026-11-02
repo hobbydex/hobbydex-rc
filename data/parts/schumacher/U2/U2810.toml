@@ -17,3 +17,9 @@ fits = [
 ]
 name_source = "manufacturer"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m4-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+pack_qty = 4
+pack_qty_basis = "name"
+color = "red"

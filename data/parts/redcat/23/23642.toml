@@ -4,3 +4,6 @@ number = "23642"
 name = "Lock Nuts M2.5"
 category = "nut"
 documents = ["doc/redcat/volcano-18-manual"]
+equivalent_to = [
+  { spec = "spec/nut/m2.5-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -11,3 +11,6 @@ fits = [
 documents = ["doc/schumacher/mi1-spares-archive"]
 category = "bearing"
 color = "yellow"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -11,3 +11,6 @@ name_source = "manual"
 fits = [
   { kit = "kit/tractionhobby/porsche-934", type = "direct", notes = "Named in the Primal RC Porsche 934 manual, the car's own manual" },
 ]
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
