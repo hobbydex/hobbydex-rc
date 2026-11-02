@@ -16,6 +16,9 @@ includes = [
 category = "bearing"
 category_source = "curated"
 applies_to = "Capricorn Lab C03"
+fits = [
+  { kit = "kit/capricorn/lab-c03", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Capricorn Lab C03 (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura, Ceramic Open | Aura, Thrust Bearing, Ceramic Thrust Bearing, Metal | Clutch (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1546/Lab-C03" },
