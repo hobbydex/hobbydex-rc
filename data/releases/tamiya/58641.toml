@@ -8,7 +8,7 @@ status = "discontinued"
 depicts = { make = "Mitsubishi", model = "Lancer Evolution X" }
 category = "drift"
 notes = "Release date from Tamiya's Japanese page; Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2017-02-11, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/58641-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02d-manual", "doc/tamiya/58641-bauanleitung-tt-02d", "doc/tamiya/58641-manual-de", "doc/tamiya/58641-beiblatt-mitsubishi-lancer-evo-x"]
+documents = ["doc/tamiya/58641-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02d-manual", "doc/tamiya/58641-bauanleitung-tt-02d", "doc/tamiya/58641-beiblatt-mitsubishi-lancer-evo-x"]
 contains = [
   { part = "part/tamiya/11053769", role = "kit", source = "doc/tamiya/tt02d-manual" },
   { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/tt02d-manual" },
@@ -64,8 +64,8 @@ contains = [
   { part = "part/tamiya/53443", role = "kit", source = "doc/tamiya/tt02d-manual" },
   { part = "part/tamiya/54571", role = "kit", source = "doc/tamiya/tt02d-manual" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/tt02d-manual" },
-  { part = "part/tamiya/19804304", role = "kit", source = "doc/tamiya/58641-manual-de" },
-  { part = "part/tamiya/19804594", role = "kit", source = "doc/tamiya/58641-manual-de", qty = 10, step = "MC7" },
+  { part = "part/tamiya/19804304", role = "kit", source = "doc/tamiya/58641-bauanleitung-tt-02d" },
+  { part = "part/tamiya/19804594", role = "kit", source = "doc/tamiya/58641-bauanleitung-tt-02d", qty = 10, step = "MC7" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58641", kind = "fan-site" },
