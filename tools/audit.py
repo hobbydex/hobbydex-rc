@@ -696,9 +696,10 @@ def main():
                 for fn in fs:
                     if fn.lower().endswith(".pdf"):
                         cached.append(os.path.relpath(os.path.join(dp, fn), tools["cache"]))
-        # a doc is linked when a release or a part lists it
+        # a doc is linked when a release or a part lists it, or when it lists a kit (a maker's manual of the platform:
+        # docs/schema.md "kits")
         on_part = {dd for p in parts for dd in p.get("documents", [])}
-        linked_docs = set(doc_rels) | on_part
+        linked_docs = set(doc_rels) | on_part | {d["id"] for d in docs.values() if d.get("kits")}
         # the crawl queue maps each cached file to the URL it came from
         url_of = {}
         crawl = os.path.join(tools["cache"], "crawl.db")
@@ -712,13 +713,17 @@ def main():
         # (tools/link_manual_numbers.py file_url), so a document linked through one copy links every copy
         lmn = tools["manual_mod"]
         urls_by_name = lmn.queue_urls_by_name(tools["cache"]) if lmn and hasattr(lmn, "file_url") else {}
+        # a record's file name and its URL's file name match a cached copy whatever the case: the maker's own copy of a
+        # manual is named "BD8_Manual_English.pdf" on the CDN and "bd8-manual-english.pdf" in the cache
         by_name = collections.defaultdict(list)
-        by_url = collections.defaultdict(list)
+        by_url = collections.defaultdict(list)       # the full address, as before
+        by_url_name = collections.defaultdict(list)  # the address's file name, the same brand only
         for d in docs.values():
             if d.get("file"):
-                by_name[os.path.basename(d["file"])].append(d)
+                by_name[os.path.basename(d["file"]).lower()].append(d)
             if d.get("url"):
                 by_url[d["url"]].append(d)
+                by_url_name[os.path.basename(urllib.parse.urlsplit(d["url"]).path).lower()].append(d)
         unlinked = []
         not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
         not_rc = 0           # a static kit, paint or tool of Tamiya that no release or part of the data has (tamiya_static_non_rc)
@@ -728,7 +733,11 @@ def main():
             name = os.path.basename(rel_path)
             url = url_of.get(rel_path) or (lmn.file_url(os.path.join(tools["cache"], rel_path), {}, urls_by_name)
                                            if lmn and hasattr(lmn, "file_url") else None)
-            ds = by_name.get(name, []) + (by_url.get(url, []) if url else [])
+            # a URL's file name counts within the cached file's brand only: "manual.pdf" is a name of many makers
+            mine = "brand/" + rel_path.split("/")[1]
+            same_brand_url = [d for d in by_url_name.get(os.path.basename(urllib.parse.urlsplit(url).path).lower(), [])
+                              if d.get("brand") == mine] if url else []
+            ds = by_name.get(name.lower(), []) + (by_url.get(url, []) if url else []) + same_brand_url
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
                 stem = re.sub(r"(?i)\.pdf$", "", name)
