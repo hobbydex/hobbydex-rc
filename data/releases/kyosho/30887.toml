@@ -5,7 +5,7 @@ number = "30887"
 name = "FO-XX VE"
 gtin = "4548565255818"
 kind = "rtr"
-status = "released"
+status = "discontinued"
 announced = "2014-10-24"
 announced_source = "https://www.youtube.com/watch?v=skSsdbE0A3I"
 documents = ["doc/kyosho/30887-mm01-fo-xx-ve-spop", "doc/kyosho/30887-mm01-fo-xx-ve-ex", "doc/kyosho/30887-mm01-fo-xx-ve-mm", "doc/kyosho/30887-t01-fo-xx-ve-im", "doc/kyosho/30887-product-page"]
@@ -125,3 +125,6 @@ contains = [
   { part = "part/kyosho/IFW149-02", role = "listed", source = "doc/kyosho/30887-mm01-fo-xx-ve-ex" },
   { part = "part/kyosho/MA076BKB", role = "listed", source = "doc/kyosho/30887-mm01-fo-xx-ve-ex" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30887.html"

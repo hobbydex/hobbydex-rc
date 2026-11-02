@@ -8,7 +8,7 @@ name_ja = "インファーノMP9e TKI レディセット"
 kind = "rtr"
 power = "brushless"
 power_source = "doc/kyosho/30877t1-product-page"
-status = "released"
+status = "discontinued"
 seen_by = "2013"
 seen_by_source = "doc/kyosho/30877t1-mm01-mp9e-tki3-ex"
 documents = ["doc/kyosho/30877t1-mm01-mp9e-tki3-spop", "doc/kyosho/30877t1-mm01-mp9e-tki3-ex", "doc/kyosho/30877t1-mm01-mp9e-tki3-mm", "doc/kyosho/30877t1-t01-mp9e-tki3-im", "doc/kyosho/30877t1-product-page"]
@@ -250,3 +250,6 @@ contains = [
   { part = "part/kyosho/IFW442-36", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
   { part = "part/kyosho/IFW446", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30877t1.html"

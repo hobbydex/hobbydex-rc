@@ -5,7 +5,7 @@ number = "30027"
 name = "TF7.7"
 gtin = "4548565337804"
 kind = "kit"
-status = "released"
+status = "discontinued"
 announced = "2015-08-18"
 announced_source = "https://www.youtube.com/watch?v=QMJ7AoJt5n0"
 documents = ["doc/kyosho/30027-tf7-7-spop", "doc/kyosho/30027-tf7-7-ex", "doc/kyosho/30027-tf7-7-im", "doc/kyosho/30027-tf7-7-parts-list-v01", "doc/kyosho/30027-product-page"]
@@ -242,3 +242,6 @@ contains = [
   { part = "part/kyosho/TF273B", role = "listed", source = "doc/kyosho/30027-tf7-7-ex" },
   { part = "part/kyosho/W6049", role = "listed", source = "doc/kyosho/30027-tf7-7-ex" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30027.html"

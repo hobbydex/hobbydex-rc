@@ -5,7 +5,7 @@ number = "30065"
 name = "ULTIMA RT5"
 gtin = "4548565137497"
 name_ja = "アルティマ RT5"
-status = "released"
+status = "discontinued"
 seen_by = "2009-07"
 seen_by_source = "doc/kyosho/30065-ultima-rt5-im"
 documents = ["doc/kyosho/30065-ultima-rt5-sp", "doc/kyosho/30065-ultima-rt5-ex", "doc/kyosho/30065-ultima-rt5-im", "doc/kyosho/30065-product-page"]
@@ -217,3 +217,6 @@ contains = [
   { part = "part/kyosho/W0125", role = "option", source = "doc/kyosho/30065-ultima-rt5-sp" },
   { part = "part/kyosho/W5205W", role = "kit", source = "doc/kyosho/30065-ultima-rt5-sp" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30065.html"

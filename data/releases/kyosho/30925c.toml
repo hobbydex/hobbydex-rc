@@ -8,7 +8,7 @@ released = "2014-11"
 gtin = "4548565261888"
 name_ja = "プラズマLm カーボンエディション"
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop", "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-ex", "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-im", "doc/kyosho/30925c-product-page"]
 contains = [
   { part = "part/kyosho/1-S12605H", role = "kit", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
@@ -145,3 +145,6 @@ contains = [
   { part = "part/kyosho/PZW016-20", role = "option", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
   { part = "part/kyosho/PZ101", role = "listed", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-ex" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30925c.html"

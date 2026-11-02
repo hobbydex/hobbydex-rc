@@ -10,7 +10,7 @@ name_ja = "ミニッツバギー VE シャシーセット"
 kind = "rtr"
 power = "brushless"
 power_source = "part/kyosho/MB023B"
-status = "released"
+status = "discontinued"
 documents = ["doc/kyosho/mb-010ve-2-0-sp", "doc/kyosho/mb-010ve-2-0-ex", "doc/kyosho/mb-010ve-2-0-im", "doc/kyosho/32290-product-page"]
 contains = [
   { part = "part/kyosho/BRG007", role = "kit", source = "doc/kyosho/mb-010ve-2-0-sp" },
@@ -42,3 +42,6 @@ contains = [
   { part = "part/kyosho/MZ604", role = "kit", source = "doc/kyosho/mb-010ve-2-0-sp" },
   { part = "part/kyosho/MB001-1", role = "listed", source = "doc/kyosho/mb-010ve-2-0-im" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/32290.html"
