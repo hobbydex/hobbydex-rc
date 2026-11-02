@@ -8,3 +8,6 @@ name_ja = "Φ 5x Φ 10x4 mmフロントアクスル ベアリング 4 (ローフ
 category = "bearing"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
 documents = ["doc/yokomo/yd-2rx-manual", "doc/yokomo/yd-2zs-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
