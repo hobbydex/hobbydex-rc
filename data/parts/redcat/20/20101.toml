@@ -7,3 +7,6 @@ seen_by = "2020-09-25"
 seen_by_source = "https://web.archive.org/web/20200925163523/https://dealer.redcatracing.com/manuals/94201-Sandstormmanual.pdf"
 category = "pin"
 documents = ["doc/redcat/sandstorm-manual", "doc/redcat/sandstorm-tk-manual"]
+equivalent_to = [
+  { spec = "spec/pin/2x6", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

@@ -9,3 +9,6 @@ name_source = "manual"
 fits = [
   { kit = "kit/tractionhobby/porsche-934", type = "direct", notes = "Named in the Primal RC Porsche 934 manual, the car's own manual" },
 ]
+equivalent_to = [
+  { spec = "spec/washer/4x10x0.3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
