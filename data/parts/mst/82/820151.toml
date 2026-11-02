@@ -12,7 +12,10 @@ links = [
 category = "shock"
 shock_part = "piston"
 fits = [
-  { kit = "kit/mst/mrx", type = "replaces", source = "doc/mst/mrx-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/mst/rmx-4", type = "replaces", source = "doc/mst/rmx-4-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/mst/rmx-ex", type = "replaces", source = "doc/mst/rmx-ex-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/mrx", type = "replaces", source = "doc/mst/mrx-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532209"] },
+  { kit = "kit/mst/rmx-4", type = "replaces", source = "doc/mst/rmx-4-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532219bk", "release/mst/532219r"] },
+  { kit = "kit/mst/rmx-ex", type = "replaces", source = "doc/mst/rmx-ex-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532212"] },
+  { kit = "kit/mst/mrx", type = "replaces", source = "doc/mst/mrx-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532209"] },
+  { kit = "kit/mst/rmx-4", type = "replaces", source = "doc/mst/rmx-4-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532219bk", "release/mst/532219r"] },
+  { kit = "kit/mst/rmx-ex", type = "replaces", source = "doc/mst/rmx-ex-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532212"] },
 ]

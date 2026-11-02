@@ -7,7 +7,10 @@ kind = "kit"
 status = "released"
 seen_by = "2022-05"
 seen_by_source = "https://www.rc-mst.com/news_info.php?sn=304"
-documents = ["doc/mst/532202-page", "doc/mst/youtube-9yqR846f-Xg", "doc/mst/youtube-ZzPCxGpNOOc"]
+documents = ["doc/mst/532202-page", "doc/mst/youtube-9yqR846f-Xg", "doc/mst/youtube-ZzPCxGpNOOc", "doc/mst/cmx-instruction", "doc/mst/cmx-revised-instruction-v1001"]
 links = [
   { site = "MST", url = "https://www.rc-mst.com/product_car_info.php?class_sn=25&class_sn2=114&sn=3727" },
+]
+contains = [
+  { part = "part/mst/230039", role = "listed", source = "doc/mst/cmx-instruction" },
 ]
