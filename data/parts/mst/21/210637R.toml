@@ -12,5 +12,6 @@ color = "red"
 material = "carbon"
 range = "mst/210637-colours"
 fits = [
+  { kit = "kit/mst/mrx", type = "replaces", source = "doc/mst/mrx-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532209"] },
   { kit = "kit/mst/mrx", type = "replaces", source = "doc/mst/mrx-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]
