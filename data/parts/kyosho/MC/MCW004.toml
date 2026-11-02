@@ -11,3 +11,6 @@ documents = ["doc/kyosho/mcw004-training-guide-roller", "doc/kyosho/mcw004-produ
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mcw004.html" } ]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-moto-racer", type = "replaces", source = "doc/kyosho/mcw004-training-guide-roller", notes = "Car named in the part's Japanese name (link_car_names_ja.py)" },
+]
