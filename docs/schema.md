@@ -1227,8 +1227,8 @@ modules, antennas) are not linked. tools/link_protocol_specs.py writes both
 
 `spec/connector/<slug>` (category "connector"): one connector family and
 size, as the makers name them: XT30, XT60, XT60H and XT90-S (anti-spark),
-XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC3 and IC5
-(EC-compatible), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
+XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC2, IC3 and IC5
+(EC-compatible), Kyosho S-plug (Kyosho's 2-pin plug, named "S-plug" and "Super Plug"), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
 mini Tamiya, JST-RCY, JST-XH (`jst-xh`, and `jst-xh-3` to `jst-xh-9` for the
 2S to 8S balance lead, pins = cells + 1), the two servo plugs (`servo-jr`
 with two bevelled corners and `servo-futaba`, the Futaba J plug with a lip;
