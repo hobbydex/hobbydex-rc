@@ -7,3 +7,6 @@ gtin = "4548565448968"
 documents = ["doc/kyosho/32348la-product-page"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-rwd", type = "replaces", source = "doc/kyosho/32348la-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
