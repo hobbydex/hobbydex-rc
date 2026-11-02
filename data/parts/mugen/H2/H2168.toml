@@ -5,8 +5,8 @@ name = "SHOCK MOUNT R AL."
 gtin = "4944925046537"
 fits = [
   { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-option-parts-page", notes = "Also listed by doc/mugen/mtx7r-part-list" },
-  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-option-parts-page", notes = "Also listed by doc/mugen/mrx7-part-list; Also listed as direct by doc/mugen/mrx7-part-list; Also listed by doc/mugen/mrx7-option-parts-page" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
+  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list", notes = "Also listed by doc/mugen/mrx7-option-parts-page; Also listed as replaces by doc/mugen/mrx7-option-parts-page; Also listed by doc/mugen/mrx7-part-list" },
 ]
 category = "chassis"
 documents = ["doc/mugen/mrx6x-part-list", "doc/mugen/mrx7-part-list", "doc/mugen/mtx7r-part-list"]

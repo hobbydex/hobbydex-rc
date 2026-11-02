@@ -5,7 +5,7 @@ name = "DIFF. GEAR (STEEL)"
 gtin = "4944925025297"
 fits = [
   { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list", notes = "Also listed by doc/mugen/mtx7-part-list" },
-  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed as replaces by doc/mugen/mtx-6r-part-list; Also listed by doc/mugen/mtx-6-part-list; Same part in another material (link_upgrades.py)", replaces = "part/mugen/T2203" },
+  { kit = "kit/mugen/mtx6", type = "replaces", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed as direct by doc/mugen/mtx-6r-part-list; Same part in another material (link_upgrades.py); Also listed by doc/mugen/mtx-6-part-list", replaces = "part/mugen/T2203" },
 ]
 category = "differential"
 material = "steel"
