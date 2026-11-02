@@ -13,6 +13,9 @@ includes = [
   { spec = "spec/bearing/15x21x4" },
 ]
 applies_to = "Arrma Kraten 6s BLS 4x4 Extreme Bash (#ARA8708)"
+fits = [
+  { kit = "kit/arrma/kraton", releases = ["release/arrma/ara8708t1", "release/arrma/ara8708v6t1"], type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Arrma Kraten 6s BLS 4x4 Extreme Bash (#ARA8708) (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/ara055r-arrma-kraten-6s-bls-4x4-extreme-bash-ara8708-compatible-rubber-shielded-bearing-kit/" },
