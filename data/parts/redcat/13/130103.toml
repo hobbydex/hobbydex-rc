@@ -5,3 +5,6 @@ name = "4.2x10x0.2mm Shim"
 pack_qty = 6
 category = "washer-shim"
 documents = ["doc/redcat/rc-mt10e-manual", "doc/redcat/tr-mt10e-manual"]
+equivalent_to = [
+  { spec = "spec/washer/4.2x10x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

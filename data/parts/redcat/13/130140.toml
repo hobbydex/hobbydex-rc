@@ -5,3 +5,8 @@ name = "Shims:12.1x13.9x0.1mm,12.1x13.9x0.2mm, 12.1x13.9x0.3mm"
 pack_qty = 2
 category = "washer-shim"
 documents = ["doc/redcat/rc-mt10e-manual", "doc/redcat/tr-mt10e-manual"]
+includes = [
+  { spec = "spec/washer/12.1x13.9x0.1" },
+  { spec = "spec/washer/12.1x13.9x0.2" },
+  { spec = "spec/washer/12.1x13.9x0.3" },
+]
