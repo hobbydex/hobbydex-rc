@@ -9,3 +9,6 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "drivetrain"
 documents = ["doc/kyosho/mxw010-071920"]
+fits = [
+  { kit = "kit/kyosho/mini-z-4x4", type = "replaces", source = "doc/kyosho/mxw010-071920", notes = "Car named in the part's Japanese name (link_car_names_ja.py)" },
+]
