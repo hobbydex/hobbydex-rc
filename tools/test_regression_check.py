@@ -144,6 +144,25 @@ class Repository(unittest.TestCase):
             os.chdir(cwd)
             shutil.rmtree(root, ignore_errors=True)
 
+    def test_document_merged_into_a_kept_record_is_moved_not_lost(self):
+        base = self.files("Wheel Hex Adapter", None)
+        head = self.files("Wheel Hex Adapter", None)
+        base["data/releases/a/k.toml"] = 'kit = "kit/a/k"\nname = "Kit"\ndocuments = [ "doc/a/dup", "doc/a/m" ]\n'
+        head["data/releases/a/k.toml"] = 'kit = "kit/a/k"\nname = "Kit"\ndocuments = [ "doc/a/m" ]\n'
+        head["data/retired.toml"] = '[[retired]]\nid = "doc/a/dup"\nreason = "duplicate"\nreplaced_by = "doc/a/m"\n'
+        ck = self.check(base, head)
+        self.assertEqual([e for e in ck.events if e["regression"]], [])
+        self.assertTrue(any("moved to doc/a/m" in e["reason"] for e in ck.events))
+
+    def test_document_removed_without_a_kept_successor_is_a_regression(self):
+        base = self.files("Wheel Hex Adapter", None)
+        head = self.files("Wheel Hex Adapter", None)
+        base["data/releases/a/k.toml"] = 'kit = "kit/a/k"\nname = "Kit"\ndocuments = [ "doc/a/dup" ]\n'
+        head["data/releases/a/k.toml"] = 'kit = "kit/a/k"\nname = "Kit"\ndocuments = [ ]\n'
+        head["data/retired.toml"] = '[[retired]]\nid = "doc/a/dup"\nreason = "duplicate"\nreplaced_by = "doc/a/m"\n'
+        ck = self.check(base, head)
+        self.assertEqual([e["field"] for e in ck.events if e["regression"]], ["documents"])
+
     def test_derived_row_the_head_still_derives_is_a_regression(self):
         row = f'{{ kit = "kit/a/k", type = "replaces", replaces = "part/a/S1", source = "doc/a/m", notes = "{self.NOTE}" }}'
         ck = self.check(self.files("Wheel Hex Adapter", row), self.files("Wheel Hex Adapter", None))
