@@ -1233,7 +1233,8 @@ mini Tamiya, JST-RCY, JST-XH (`jst-xh`, and `jst-xh-3` to `jst-xh-9` for the
 2S to 8S balance lead, pins = cells + 1), the two servo plugs (`servo-jr`
 with two bevelled corners and `servo-futaba`, the Futaba J plug with a lip;
 they plug into each other but are two shapes), bullets by diameter
-(`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`, `pins`
+(`bullet-4mm`, `bullet-3.5mm`), `banana-4mm`, LRP's `us-style` ("US style", no size stated) and `p5`
+("P5", LRP's 5 mm power plug). Fields: `family`, `pins`
 (the contact count, when a family has one), `pitch_mm` (contact spacing),
 `contact_mm` (pin or bullet diameter), `anti_spark` and `polarized`
 (booleans), and `polarization` (how the housing keys, in words). A current is set
