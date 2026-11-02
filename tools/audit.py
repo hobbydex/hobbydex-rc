@@ -93,6 +93,19 @@ def non_english(url, swaps):
     return u.startswith(rule[0]) and not u.startswith(rule[1])
 
 
+def english_twin(url, swaps):
+    """The English address of a maker link under a swap rule, or None."""
+    rule = swaps.get(urllib.parse.urlsplit(url).hostname or "")
+    return rule[1] + url[len(rule[0]):] if rule and url.startswith(rule[0]) else None
+
+
+def has_foreign_link(text, swaps):
+    """Whether a record's text has a non-English maker link with no English twin beside it in the same record."""
+    links = [u for line in text.splitlines() if not line.lstrip().startswith("notes") for u in ENGLISH_LINK.findall(line)]
+    here = set(links)
+    return any(non_english(u, swaps) and english_twin(u, swaps) not in here for u in links)
+
+
 def walk_strings(v):
     if isinstance(v, str):
         yield v
@@ -1064,8 +1077,7 @@ def main():
             text = f.read()
         if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)):
             banned.append(path)
-        if any(non_english(u, swaps) for line in text.splitlines() if not line.lstrip().startswith("notes")
-               for u in ENGLISH_LINK.findall(line)):
+        if has_foreign_link(text, swaps):
             foreign.append(path)
         if SCRAP_IMG.search(text):
             scrap.append(path)
