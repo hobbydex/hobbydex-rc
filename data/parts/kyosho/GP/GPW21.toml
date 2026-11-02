@@ -5,3 +5,6 @@ name = "Steering Servo for Hanging on Racer"
 gtin = "4548565515059"
 documents = ["doc/kyosho/gpw21-product-page"]
 category = "servo"
+fits = [
+  { kit = "kit/kyosho/hanging-on-racer", type = "replaces", source = "doc/kyosho/gpw21-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -12,3 +12,6 @@ seen_by = "2015-08-02"
 seen_by_source = "https://web.archive.org/web/20150802005304/http://www.teamyokomo.com:80/product/onroad/mrtc_bd7rs3s/mrtc_bd7rs3s.html"
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/yokomo/bd7", type = "replaces", source = "doc/yokomo/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
