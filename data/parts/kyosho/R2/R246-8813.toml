@@ -1,10 +1,13 @@
 id = "part/kyosho/R246-8813"
 brand = "brand/kyosho"
 number = "R246-8813"
-name = "R246-8813"
+name = "AC Adapter for 12V 5.0A for C-03/C-04"
 seen_by = "2012"
 seen_by_source = "doc/kyosho/30412-plazma-formula-im"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/30412-plazma-formula-im"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31047-drx-parts-list-v01" },
+]

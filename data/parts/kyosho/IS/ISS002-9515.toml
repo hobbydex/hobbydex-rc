@@ -1,7 +1,7 @@
 id = "part/kyosho/ISS002-9515"
 brand = "brand/kyosho"
 number = "ISS002-9515"
-name = "ISS002-9515"
+name = "Big Shock Spring (Red/9.5-1.5/L=94)"
 seen_by = "2022"
 seen_by_source = "doc/kyosho/34115-t02-inf-mp10te-ex"
 gtin = "4548565373765"
@@ -9,3 +9,8 @@ notes = "Named by its number only: the name on the scanned kyosho manual page wa
 documents = ["doc/kyosho/34115-t02-inf-mp10te-ex", "doc/kyosho/iss002-9515-product-page"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-op" },
+  { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-spop" },
+]
+color = "red"

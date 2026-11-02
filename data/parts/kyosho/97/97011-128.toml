@@ -1,8 +1,11 @@
 id = "part/kyosho/97011-128"
 brand = "brand/kyosho"
 number = "97011-128"
-name = "97011-128"
+name = "Pin (2.5x12.8mm)"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/34901-34901-t03-blizzard-fr-ex"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/blizzard", type = "direct", source = "doc/kyosho/34901-34901-t03-blizzard-fr-spop" },
+]

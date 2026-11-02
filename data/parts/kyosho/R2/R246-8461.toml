@@ -1,10 +1,16 @@
 id = "part/kyosho/R246-8461"
 brand = "brand/kyosho"
 number = "R246-8461"
-name = "R246-8461"
+name = "MUSCLE POWER Li-PO 7.4V-2200mAh Battery"
 seen_by = "2013"
 seen_by_source = "doc/kyosho/30069t01-ultima-rt6-im"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/30069t01-ultima-rt6-im"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30858-im-ultima-rb6-rs-spop" },
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30962-plazma-lm-spop" },
+  { kit = "kit/kyosho/dirt-hog", type = "direct", source = "doc/kyosho/30993-dirthog-soop" },
+]

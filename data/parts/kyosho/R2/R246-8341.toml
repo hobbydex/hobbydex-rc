@@ -1,10 +1,16 @@
 id = "part/kyosho/R246-8341"
 brand = "brand/kyosho"
 number = "R246-8341"
-name = "R246-8341"
+name = "SC-120R E.S.C. w/Censor & Fan"
 seen_by = "2012-02"
 seen_by_source = "doc/kyosho/30025-tf6sp-t01-im"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/30025-tf6sp-t01-im"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
+  { kit = "kit/kyosho/plazma-formula", type = "direct", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30858-im-ultima-rb6-rs-spop" },
+  { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30859-ultima-sc6-spop" },
+]
