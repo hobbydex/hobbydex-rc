@@ -11,3 +11,6 @@ category = "clip"
 equivalent_to = [
   { spec = "spec/eclip/4mm", match = "functional", notes = "Shaft size from the name" },
 ]
+fits = [
+  { kit = "kit/yikong/yk41011", type = "direct", source = "doc/yikong/yikongrccar-dealer-listing", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

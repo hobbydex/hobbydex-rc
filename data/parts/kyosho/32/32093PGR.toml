@@ -7,3 +7,6 @@ gtin = "4548565464159"
 documents = ["doc/kyosho/32093pgr-product-page"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/inferno-mp9", type = "replaces", source = "doc/kyosho/32093pgr-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
