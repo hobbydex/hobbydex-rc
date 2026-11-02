@@ -28,6 +28,12 @@ jobs:
           fi
       - name: Validate every TOML file under data/
         run: python3 -I tools/validate.py
+      - name: Tests of the audit checks and the retired kit list
+        run: |
+          for t in test_audit_manual_kind test_audit_twins_diffs test_yeah_models_not_retired; do
+            echo "== $t"
+            python3 -I "tools/$t.py"
+          done
       - name: The audit runs on the data within 2 GB
         run: python3 -I tools/test_audit_memory.py
       - name: The audit's Tamiya static-kit rule
