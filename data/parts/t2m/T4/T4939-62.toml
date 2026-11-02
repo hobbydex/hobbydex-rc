@@ -15,3 +15,6 @@ applies_to = ["Pirate Rocker"]
 fits = [
   { kit = "kit/t2m/pirate-rocker", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Rocker (link_car_kits.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "close", notes = "A plain bushing, 10x15x4; the ball bearing of that size replaces it" },
+]
