@@ -177,6 +177,21 @@ def not_manual_name(stem):
 TAMIYA_STATIC = ((10000, 39999), (60000, 61999), (74000, 89999))
 
 
+TAMIYA_CAPTURE = re.compile(r"^https?://web\.archive\.org/web/\d{14}\w*/https?://(?:www\.)?tamiya(?:usa)?\.com(?::\d+)?/")
+
+
+def tamiya_maker_linked(links):
+    """True when a Tamiya record links its maker's page: the Tamiya product link (no kind), a kind "maker" link, or a kind
+    "archive" capture of a tamiya.com or tamiyausa.com page (the page is gone; schema.md). Dealer and fan-site links never count."""
+    for l in links:
+        kind = l.get("kind")
+        if (kind is None and l.get("site") == "Tamiya") or kind == "maker":
+            return True
+        if kind == "archive" and TAMIYA_CAPTURE.match(l.get("url", "")):
+            return True
+    return False
+
+
 def tamiya_static_non_rc(rel_path, tamiya_numbers):
     """True when a cached tamiya-de file (rel_path relative to cache/) is a static kit, paint or tool: its item number
     is in TAMIYA_STATIC and no Tamiya release or part of the data has that number, so no release can take the manual."""
@@ -1096,7 +1111,7 @@ def main():
     # tools/link_tamiya_usa_spares.py) or the Tamiya product link with no kind; a dealer link (tools/link_tamico_spares.py)
     # is counted apart: a spare with a dealer link only still needs its maker page
     def maker_linked(p):
-        return any((l.get("kind") is None and l.get("site") == "Tamiya") or l.get("kind") == "maker" for l in p.get("links", []))
+        return tamiya_maker_linked(p.get("links", []))
     def dealer_linked(p):
         return any(l.get("kind") == "dealer" for l in p.get("links", []))
     tam = [p for p in parts if p.get("brand") == "brand/tamiya"]
