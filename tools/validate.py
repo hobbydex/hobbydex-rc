@@ -32,7 +32,7 @@ REQUIRED = {
 }
 KINDS = {k: dict(dir=DIRS[k], required=REQUIRED[k]) for k in REQUIRED}
 REFS = {  # field -> expected id prefix
-    "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/",
+    "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/", "listed_in": "doc/",
     "publisher": ("brand/", "company/"), "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
     "owner": "company/", "parent": "company/",
     "release": "release/",   # a rebrand_of row on a release names the release it is a rebrand of
@@ -875,6 +875,15 @@ def main():
                 errors.append(f"{path}: release kind {v!r} is not kit, rtr, arr or roller (docs/schema.md \"release\")")
             elif key in ENUMS and v not in ENUMS[key]:
                 errors.append(f"{path}: {key} = {v!r} not in {sorted(ENUMS[key])}")
+        # a contains row upgraded from listed to kit by a maker manual keeps the listing that held it (docs/schema.md "release", contains)
+        for i, row in enumerate(d.get("contains", []) if kind == "release" else []):
+            if isinstance(row, dict) and "listed_in" in row:
+                if row.get("role") != "kit":
+                    errors.append(f"{path}: contains[{i}].listed_in only goes with role kit (the listing a manual upgraded)")
+                if row["listed_in"] == row.get("source"):
+                    errors.append(f"{path}: contains[{i}].listed_in is the row's own source; it names the earlier listing")
+                if row["listed_in"] not in d.get("documents", []):
+                    errors.append(f"{path}: contains[{i}].listed_in -> {row['listed_in']} is not among the release's documents")
         # a fit narrowed to the releases the maker lists the part for (releases of that kit, at least one), or to a car
         for i, f in enumerate(d.get("fits", []) if kind == "part" else []):
             if "car" in f:   # the car the maker lists the part for, when none of the kit's releases is that car

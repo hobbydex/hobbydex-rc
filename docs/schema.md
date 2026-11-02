@@ -262,6 +262,15 @@ contains = [
 - `listed`: appears in the release's parts list without a kit or option mark
   (tools, consumables, related products, or lists that have no such marks).
 
+`listed_in` (optional, only with role `kit`): the document that listed the
+part before a maker manual showed it in the box. A row stored as `listed` (from
+the maker's store or spares list) whose part a maker manual shows in the box
+(a bag or step table, a quantity label, a part-list drawing) becomes `kit` with
+the manual as `source`, and the earlier source moves to `listed_in`, so no
+evidence is lost. `listed_in` is a document of the release other than `source`.
+A `kit` or `option` row is never changed by a manual, and a row is never
+downgraded to `listed`.
+
 Rows read from a build manual also carry `qty`, the number of pieces the car
 uses (summed over the steps that use the part), and `step`, the manual's
 reference ("Bag 4 - Step 2"). Rows read from a parts list have neither.
