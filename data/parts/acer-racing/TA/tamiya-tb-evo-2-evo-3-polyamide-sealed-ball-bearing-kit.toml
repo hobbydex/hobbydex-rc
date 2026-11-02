@@ -4,6 +4,10 @@ name = "TAMIYA TB EVO 2 / EVO 3 Polyamide Sealed Ball Bearing Kit"
 category = "bearing"
 category_source = "curated"
 applies_to = "TAMIYA TB EVO 2 / EVO 3"
+fits = [
+  { kit = "kit/tamiya/tb-evolution-ii", type = "direct", source = "doc/acer-racing/store", notes = "Listed for the TAMIYA TB EVO 2 (link_car_kits.py)" },
+  { kit = "kit/tamiya/tb-evolution-iii", type = "direct", source = "doc/acer-racing/store", notes = "Listed for the EVO 3 (link_car_kits.py)", car = "EVO 3" },
+]
 notes = "Contents not recorded: the description lists no sizes."
 links = [
   { site = "Acer Racing", url = "https://www.acerracing.com/products/tamiya-tb-evo-2-evo-3-polyamide-sealed-ball-bearing-kit" },
