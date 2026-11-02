@@ -5,7 +5,7 @@ name = "RMX 2.5 Classic"
 number = "532206"
 kind = "kit"
 status = "released"
-documents = ["doc/mst/rmx-2-5-classic-instruction-a", "doc/mst/rmx-2-5-classic-instruction-b", "doc/mst/rmx-2-5-classic-op-description"]
+documents = ["doc/mst/rmx-2-5-classic-instruction-a", "doc/mst/rmx-2-5-classic-instruction-b", "doc/mst/rmx-2-5-classic-op-description", "doc/mst/532206-page"]
 notes = "Part numbers read by OCR from the manual drawings"
 contains = [
   { part = "part/mst/110001", role = "kit", source = "doc/mst/rmx-2-5-classic-instruction-a" },
@@ -147,3 +147,9 @@ contains = [
   { part = "part/mst/210653", role = "listed", source = "doc/mst/rmx-2-5-classic-op-description" },
   { part = "part/mst/210658R", role = "listed", source = "doc/mst/rmx-2-5-classic-op-description" },
 ]
+former_names = ["RMX 2.5 Classic KIT"]
+links = [
+  { site = "MST", url = "https://www.rc-mst.com/product_car_info.php?class_sn=1&class_sn2=162&sn=3832" },
+]
+announced = "2023-06-02"
+announced_source = "https://www.rc-mst.com/news_info.php?sn=353"
