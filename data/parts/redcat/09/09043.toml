@@ -4,3 +4,6 @@ number = "09043"
 name = "Washer 8x15x1.0mm"
 category = "washer-shim"
 documents = ["doc/redcat/rampage-r5-manual"]
+equivalent_to = [
+  { spec = "spec/washer/8x15x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
