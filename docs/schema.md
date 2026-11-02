@@ -267,7 +267,7 @@ part before a maker manual showed it in the box. A row stored as `listed` (from
 the maker's store or spares list) whose part a maker manual shows in the box
 (a bag or step table, a quantity label, a part-list drawing) becomes `kit` with
 the manual as `source`, and the earlier source moves to `listed_in`, so no
-evidence is lost. `listed_in` is a document of the release other than `source`.
+evidence is lost. `listed_in` is an existing document other than `source` (the store or spares list the row was read from need not be among the release's `documents`).
 A `kit` or `option` row is never changed by a manual, and a row is never
 downgraded to `listed`.
 

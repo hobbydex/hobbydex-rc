@@ -1,6 +1,6 @@
 """python3 -I -m unittest discover -s tools -p test_validate_contains_listed_in.py (from the repository root)
 
-A contains row may carry listed_in (the earlier listing a maker manual upgraded to kit): a document of the release, other than the row's source, role kit only.
+A contains row may carry listed_in (the earlier listing a maker manual upgraded to kit): an existing document other than the row's source, role kit only.
 """
 import contextlib, io, os, shutil, sys, tempfile, unittest
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -53,8 +53,8 @@ class ListedIn(unittest.TestCase):
     def test_not_the_source(self):
         self.assertTrue(self.errors_for('{ part = "part/acme/p1", role = "kit", source = "doc/acme/manual", listed_in = "doc/acme/manual" }'))
 
-    def test_must_be_a_release_document(self):
-        self.assertTrue(self.errors_for('{ part = "part/acme/p1", role = "kit", source = "doc/acme/manual", listed_in = "doc/acme/store" }', '["doc/acme/manual"]'))
+    def test_listing_need_not_be_a_document_of_the_release(self):
+        self.assertEqual(self.errors_for('{ part = "part/acme/p1", role = "kit", source = "doc/acme/manual", listed_in = "doc/acme/store" }', '["doc/acme/manual"]'), [])
 
     def test_must_exist(self):
         self.assertTrue(self.errors_for('{ part = "part/acme/p1", role = "kit", source = "doc/acme/manual", listed_in = "doc/acme/nope" }'))

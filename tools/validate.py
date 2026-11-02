@@ -882,8 +882,6 @@ def main():
                     errors.append(f"{path}: contains[{i}].listed_in only goes with role kit (the listing a manual upgraded)")
                 if row["listed_in"] == row.get("source"):
                     errors.append(f"{path}: contains[{i}].listed_in is the row's own source; it names the earlier listing")
-                if row["listed_in"] not in d.get("documents", []):
-                    errors.append(f"{path}: contains[{i}].listed_in -> {row['listed_in']} is not among the release's documents")
         # a fit narrowed to the releases the maker lists the part for (releases of that kit, at least one), or to a car
         for i, f in enumerate(d.get("fits", []) if kind == "part" else []):
             if "car" in f:   # the car the maker lists the part for, when none of the kit's releases is that car
