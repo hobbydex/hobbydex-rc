@@ -5,3 +5,6 @@ name = "Motor Pinion Gears 12T / Set Screws 3x3mm"
 pack_qty = 2
 category = "screw"
 documents = ["doc/redcat/kt12-manual"]
+includes = [
+  { spec = "spec/screw/m3x3-set-hex", notes = "Size from this item's words in the manufacturer's name" },
+]

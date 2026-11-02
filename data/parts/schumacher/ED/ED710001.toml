@@ -12,3 +12,6 @@ documents = ["doc/schumacher/mi3-spares-archive"]
 category = "nut"
 pack_qty = 4
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/nut/m4-wheel", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

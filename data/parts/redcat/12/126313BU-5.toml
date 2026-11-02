@@ -5,3 +5,7 @@ name = "3.5x13mm Steel Button Head Screw"
 pack_qty = 6
 category = "screw"
 documents = ["doc/redcat/tr-mt-8e-v2-manual", "doc/redcat/tr-mt8e-be6s-manual", "doc/redcat/tr-mt8e-manual"]
+equivalent_to = [
+  { spec = "spec/screw/m3.5x13-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "steel"

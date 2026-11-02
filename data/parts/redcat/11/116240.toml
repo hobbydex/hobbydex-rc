@@ -5,3 +5,6 @@ name = "2x9.8mm Pin"
 pack_qty = 10
 category = "pin"
 documents = ["doc/redcat/rc-mt10e-manual", "doc/redcat/tr-mt10e-manual"]
+equivalent_to = [
+  { spec = "spec/pin/2x9.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

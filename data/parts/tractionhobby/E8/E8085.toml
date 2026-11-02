@@ -11,3 +11,6 @@ name_source = "manual"
 fits = [
   { kit = "kit/tractionhobby/porsche-934", type = "direct", notes = "Named in the Primal RC Porsche 934 manual, the car's own manual" },
 ]
+equivalent_to = [
+  { spec = "spec/pin/2.5x14", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
