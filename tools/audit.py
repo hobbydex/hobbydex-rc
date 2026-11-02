@@ -73,6 +73,11 @@ ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.py")   # the per-hos
 ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
 
 
+def date_without_source(r):
+    """A release that states a year or release date but names no source for it (released_source)."""
+    return (r.get("year") is not None or bool(r.get("released"))) and not r.get("released_source")
+
+
 def english_swaps():
     """{host: (from, to)} of the swap rules: a maker link under `from` has its English address under `to`."""
     if not os.path.exists(ENGLISH_TABLE):
@@ -944,6 +949,10 @@ def main():
     # 15. release with no date at all
     check("release-no-date", "date the release from a source (released, year or announced); a seen_by bound is only a fallback",
           [r for r in rels if not any(r.get(k) for k in ("released", "year", "announced", "seen_by"))])
+
+    # 15a. a year or release date with no source: a hand-entered date, or one taken from a manual's date or a shop's listing day
+    check("date-without-source", "find the date in a maker page, manual, catalogue or dated news post and add released_source (the page URL, or its doc/ id); a source that contradicts it corrects it; with none, remove year and released (keep a printed manual date as seen_by)",
+          [r for r in rels if date_without_source(r)])
 
     # 15b. announced later than the seen_by bound: the announcement source is wrong (the car was on sale by the bound)
     def after_bound(x):
