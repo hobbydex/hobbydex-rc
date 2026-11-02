@@ -3,8 +3,8 @@ brand = "brand/schumacher"
 number = "CR154"
 name = "CODE 2.4G FHSS Sport - Rx Only"
 documents = ["doc/schumacher/atom-manual", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/mi5-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
-category = "misc"
-category_source = "fallback"
+category = "radio"
+category_source = "llm"
 fits = [
   { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
   { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
