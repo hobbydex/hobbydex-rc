@@ -11,5 +11,8 @@ teeth = 25
 equivalent_to = [
   { spec = "spec/pinion/48dp-25t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
-documents = ["doc/schumacher/c2w-manual", "doc/schumacher/cat2000-classic-manual"]
+documents = ["doc/schumacher/c2w-manual", "doc/schumacher/cat2000-classic-manual", "doc/schumacher/cougar-kf-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/25t-steel-pinion-48-d-p-u2314" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

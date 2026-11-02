@@ -8,8 +8,14 @@ seen_by = "2010-01-30"
 seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
 category = "nut"
 color = "purple"
-documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
+documents = ["doc/schumacher/catl1r-instruction-manual-v2", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/speed-pack-m3-nyloc-nut-purple-alloy-pk8-u2187" } ]
 equivalent_to = [
   { spec = "spec/nut/m3-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]

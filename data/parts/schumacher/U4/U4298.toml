@@ -7,7 +7,7 @@ seen_by_source = "https://web.archive.org/web/20151125071752/http://www.racing-c
 gtin = "5051294078676"
 notes = "Shown by number in the manual; not on its spares list"
 category = "turnbuckle"
-documents = ["doc/schumacher/c2w-manual", "doc/schumacher/eclipse6-maunal", "doc/schumacher/ft9-manual"]
+documents = ["doc/schumacher/c2w-manual", "doc/schumacher/eclipse6-maunal", "doc/schumacher/ft9-manual", "doc/schumacher/supastox-gt-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-5/turnbuckle-ht-35mm-pr-u4298" } ]
 fits = [
   { kit = "kit/schumacher/atom-2", type = "direct", source = "doc/schumacher/atom2-exploded", notes = "Shown on the car's exploded diagram" },
@@ -18,4 +18,5 @@ fits = [
   { kit = "kit/schumacher/top-cat", type = "direct", source = "doc/schumacher/topcat-explode", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/atom", type = "direct", source = "doc/schumacher/atom-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]

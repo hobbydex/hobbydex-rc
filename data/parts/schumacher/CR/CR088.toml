@@ -8,5 +8,8 @@ pack_qty = 6
 pack_qty_basis = "name"
 category = "clip"
 color = "blue"
-documents = ["doc/schumacher/mi7-manual"]
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/mi5-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/extra-long-body-clip-1-10-metallic-blue-6-cr088" } ]
+fits = [
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

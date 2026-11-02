@@ -5,5 +5,9 @@ name = "Pinion Gear 48DP 15T (7075 Hard)"
 seen_by = "2013-11-17"
 seen_by_source = "https://web.archive.org/web/20131117122032/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=654&templateid=69&sortname1=partno"
 category = "pinion"
-documents = ["doc/schumacher/icon-manual"]
+documents = ["doc/schumacher/icon-manual", "doc/schumacher/mi5-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/supastox-gt/pinion-gear-48dp-15t-7075-hard-cr4815" } ]
+fits = [
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

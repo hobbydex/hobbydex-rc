@@ -7,5 +7,8 @@ seen_by_source = "https://web.archive.org/web/20190208154731/http://www.racing-c
 pack_qty = 4
 pack_qty_basis = "name"
 category = "bumper-guard"
-documents = ["doc/schumacher/ld2-manual"]
+documents = ["doc/schumacher/ld2-manual", "doc/schumacher/cougar-kf-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/roll-bar-blocks-pk4-u3499" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
