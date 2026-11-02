@@ -5,8 +5,8 @@ name = "FRONT/REAR DAMPER SPRING SET"
 pack_qty = 8
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list", notes = "Also listed as direct by doc/mugen/mbx-6tr-part-list" },
-  { kit = "kit/mugen/mbx6", type = "replaces", source = "doc/mugen/mbx-6r-part-list", notes = "Also listed as direct by doc/mugen/mbx-6r-part-list" },
+  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list", notes = "Also listed as replaces by doc/mugen/mbx-6tr-part-list" },
+  { kit = "kit/mugen/mbx6", type = "direct", source = "doc/mugen/mbx-6r-part-list", notes = "Also listed as replaces by doc/mugen/mbx-6r-part-list" },
 ]
 category = "shock-spring"
 documents = ["doc/mugen/mbx-6r-part-list", "doc/mugen/mbx-6tr-part-list"]

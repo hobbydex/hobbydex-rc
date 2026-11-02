@@ -6,7 +6,7 @@ gtin = "4944925037795"
 fits = [
   { kit = "kit/mugen/mtc3", type = "direct", source = "doc/mugen/mtc3-part-list" },
   { kit = "kit/mugen/mtc2", type = "direct", source = "doc/mugen/mtc2r-part-list", notes = "Also listed by doc/mugen/mtc2-fwd-part-list; Also listed by doc/mugen/mtc2-part-list" },
-  { kit = "kit/mugen/mtc1", type = "replaces", source = "doc/mugen/mtc1-part-list", notes = "Also listed as direct by doc/mugen/mtc1-part-list" },
+  { kit = "kit/mugen/mtc1", type = "direct", source = "doc/mugen/mtc1-part-list", notes = "Also listed as replaces by doc/mugen/mtc1-part-list" },
 ]
 category = "differential"
 links = [
