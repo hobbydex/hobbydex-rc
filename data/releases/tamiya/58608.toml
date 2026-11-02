@@ -6,7 +6,7 @@ name = "Sandshaker (TT-02T)"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from Tamiya's Japanese page; Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2015-02-28, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/58608-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02t-manual", "doc/tamiya/58608-bauanleitung-tt-02t"]
+documents = ["doc/tamiya/58608-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02t-manual", "doc/tamiya/58608-bauanleitung-tt-02t", "doc/tamiya/58608-manual-de"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58608", kind = "fan-site" },
 ]
@@ -73,7 +73,7 @@ contains = [
   { part = "part/tamiya/53443", role = "kit", source = "doc/tamiya/tt02t-manual" },
   { part = "part/tamiya/54358", role = "kit", source = "doc/tamiya/tt02t-manual" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/tt02t-manual" },
-  { part = "part/tamiya/19804158", role = "kit", source = "doc/tamiya/58608-bauanleitung-tt-02t", qty = 10, step = "MD3" },
+  { part = "part/tamiya/19804158", role = "kit", source = "doc/tamiya/58608-manual-de", qty = 10, step = "MD3" },
 ]
 released = "2015-02-28"
 year = 2015
