@@ -186,7 +186,6 @@ class Check:
         self.counts = collections.defaultdict(collections.Counter)   # (kind, field) -> added/removed/changed/regressions
         self.recs = collections.defaultdict(collections.Counter)     # kind -> records added/removed/changed
         self._former = self._gone = self._replaced = self._docs = self._supersedes = self._derived = None
-        self._successors = None
 
     def count(self, kind, field, what, n=1):
         self.counts[(kind, field)][what] += n
@@ -219,15 +218,10 @@ class Check:
 
     def retired_replaced(self):
         if self._replaced is None:
-            self._successors = self.retired_successors_map()
-            self._replaced = set(self._successors)
+            blob = blobs(self.head, [RETIRED])[RETIRED]
+            rows = parse(blob, RETIRED).get("retired", []) if blob else []
+            self._replaced = {r["id"] for r in rows if r.get("replaced_by")}
         return self._replaced
-
-    def retired_successors_map(self):
-        """retired id -> replaced_by, as data/retired.toml of the head says."""
-        blob = blobs(self.head, [RETIRED])[RETIRED]
-        rows = parse(blob, RETIRED).get("retired", []) if blob else []
-        return {r["id"]: r["replaced_by"] for r in rows if r.get("replaced_by")}
 
     def former_map(self):
         if self._former is None:
@@ -372,12 +366,6 @@ class Check:
             new_id = repointed(row, n.get(k, []), self.supersedes_map())
             if new_id:
                 self.event(kind, rid, k, "removed", row, MISSING, False, f"repointed to {new_id}, which supersedes it")
-                return
-        if k == "documents" and isinstance(row, str):
-            self.retired_replaced()
-            successor = self._successors.get(row)
-            if successor and successor in n.get(k, []):   # a duplicate document merged into the kept record
-                self.event(kind, rid, k, "removed", row, MISSING, False, f"moved to {successor}, which the head lists")
                 return
         if derived_row(row) and canon(row) not in self.derived_upgrades().get(rid, ()):
             self.event(kind, rid, k, "removed", row, MISSING, False, "derived by link_upgrades.py, not derived on this head")
