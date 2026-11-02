@@ -9,3 +9,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 category = "washer-shim"
 name_source = "ocr"
 documents = ["doc/tamiya/58669-manual"]
+equivalent_to = [
+  { spec = "spec/washer/5x6.4x1.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

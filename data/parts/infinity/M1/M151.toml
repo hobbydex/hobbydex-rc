@@ -5,3 +5,10 @@ name = "WASHER 3.5x8.5mm ALU (1/2/3mm each 2pcs)"
 category = "washer-shim"
 material = "aluminium"
 documents = ["doc/infinity/10242-002"]
+includes = [
+  { spec = "spec/washer/3.5x8.5x1", qty = 2 },
+  { spec = "spec/washer/3.5x8.5x2", qty = 2 },
+  { spec = "spec/washer/3.5x8.5x3", qty = 2 },
+]
+pack_qty = 6
+pack_qty_basis = "includes"
