@@ -11,6 +11,9 @@ includes = [
   { spec = "spec/bearing/10x15x4" },
 ]
 applies_to = "HPI Racing RS4 3 .18ss"
+fits = [
+  { kit = "kit/hpi/nitro-rs4-3", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the HPI Racing RS4 3 .18ss (link_car_kits.py)", car = "RS4 3 .18ss" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/hpi030r-hpi-racing-rs4-3-18ss-rtr-rubber-shielded-bearing-kit/" },
