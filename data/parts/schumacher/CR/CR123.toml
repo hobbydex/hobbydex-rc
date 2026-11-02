@@ -8,5 +8,9 @@ pack_qty = 20
 pack_qty_basis = "name"
 category = "wire"
 color = "black"
-documents = ["doc/schumacher/mi7-manual"]
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi5-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electrics/connectors-leads-wire/heatshrink-5-0mm-dia-black-20pcs-cr123" } ]
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

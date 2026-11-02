@@ -6,5 +6,9 @@ seen_by = "2017-06-21"
 seen_by_source = "https://web.archive.org/web/20170621183459/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=1019&templateid=69&sortname1=partno"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/schumacher/top-cat-manual"]
+documents = ["doc/schumacher/top-cat-manual", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/cougar-kf-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electrics/batteries/gp-alkaline-aa-pencell-card-8-4-g719" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

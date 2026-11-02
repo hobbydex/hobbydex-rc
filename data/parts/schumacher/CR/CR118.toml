@@ -6,7 +6,7 @@ seen_by = "2013-11-17"
 seen_by_source = "https://web.archive.org/web/20131117122032/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=654&templateid=69&sortname1=partno"
 name_source = "manual"
 notes = "Name from the Schumacher manual's parts list"
-documents = ["doc/schumacher/ft9-manual"]
+documents = ["doc/schumacher/ft9-manual", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi5-spares-archive"]
 
 category = "steering"
 color = "black"
@@ -14,6 +14,8 @@ material = "aluminium"
 fits = [
   { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/mi1v2", type = "direct", source = "doc/schumacher/mi1-v2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
 [sources]
 name = "https://www.racing-cars.com/new-products-1/ft9-c-f-kit-k219"

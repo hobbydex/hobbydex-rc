@@ -8,7 +8,7 @@ gtin = "5051294011864"
 pack_qty = 2
 pack_qty_basis = "name"
 category = "pin"
-documents = ["doc/schumacher/cat2000-classic-manual"]
+documents = ["doc/schumacher/cat2000-classic-manual", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/pro-pin-grooved-1-8x25mm-pr-u1440" } ]
 fits = [
   { kit = "kit/schumacher/mission-ft", type = "direct", source = "doc/schumacher/mission-ft-exploded-v2", notes = "Shown on the car's exploded diagram" },
@@ -17,4 +17,6 @@ fits = [
   { kit = "kit/schumacher/mi4cxl", type = "direct", source = "doc/schumacher/mi4cxl-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/riot", type = "direct", source = "doc/schumacher/riot-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]

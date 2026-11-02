@@ -6,5 +6,10 @@ seen_by = "2015-11-25"
 seen_by_source = "https://web.archive.org/web/20151125071752/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=814&templateid=69&sortname1=partno"
 color = "lime green"
 category = "paint"
-documents = ["doc/schumacher/mi7-manual"]
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/bodyshells/paint/aerosol-paint-lime-green-cr607" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

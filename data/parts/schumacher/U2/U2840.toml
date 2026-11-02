@@ -9,5 +9,8 @@ pack_qty_basis = "name"
 gtin = "5051294018689"
 name_source = "manufacturer"
 category = "washer-shim"
-documents = ["doc/schumacher/eclipse6-maunal"]
+documents = ["doc/schumacher/eclipse6-maunal", "doc/schumacher/mi1-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi3/speed-pack-body-washers-pk-12-u2840" } ]
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
