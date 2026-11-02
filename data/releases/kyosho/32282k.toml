@@ -8,7 +8,7 @@ released = "2012-06"
 gtin = "4548565201365"
 name_ja = "ミニッツバギー MB-010シャシー組立キット"
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/kyosho/32282k-t01-spex", "doc/kyosho/32282k-t01", "doc/kyosho/32282k-product-page"]
 notes = "MB-010 chassis kit: its 2012 manual prints 32282K. Kyosho later sold the LAZER ZX-5 FS unassembled kit under the same number (release/kyosho/lazer-zx-5-fs-unassembled-kit, which carries the product page); no product page here."
 contains = [
@@ -43,3 +43,6 @@ contains = [
   { part = "part/kyosho/MV14", role = "kit", source = "doc/kyosho/32282k-t01-spex" },
   { part = "part/kyosho/MZW207-01", role = "kit", source = "doc/kyosho/32282k-t01-spex" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/32282k.html"

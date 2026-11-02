@@ -7,7 +7,7 @@ gtin = "4548565101061"
 kind = "kit"
 power = "nitro"
 power_source = "kit"
-status = "released"
+status = "discontinued"
 seen_by = "2008-03"
 seen_by_source = "doc/kyosho/31334-vones3evonsx-m"
 documents = ["doc/kyosho/31334-vones3evonsx-m", "doc/kyosho/31344-product-page"]
@@ -97,3 +97,6 @@ contains = [
   { part = "part/kyosho/VZW112", role = "listed", source = "doc/kyosho/31334-vones3evonsx-m" },
   { part = "part/kyosho/W6006", role = "listed", source = "doc/kyosho/31334-vones3evonsx-m" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/31344.html"

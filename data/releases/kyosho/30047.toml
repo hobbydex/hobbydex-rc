@@ -6,7 +6,7 @@ name = "LAZER ZX6.6"
 gtin = "4548565314911"
 name_ja = "レーザーZX6.6"
 kind = "kit"
-status = "released"
+status = "discontinued"
 announced = "2016-12-20"
 announced_source = "https://www.youtube.com/watch?v=5WESuEUb5pw"
 notes = "Kyosho's revision of the ZX6"
@@ -300,3 +300,6 @@ contains = [
   { part = "part/kyosho/VDS2", role = "option", source = "doc/kyosho/30047-lazer-zx6-6-spop" },
   { part = "part/kyosho/UM319C", role = "option", source = "doc/kyosho/30047-lazer-zx6-6-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30047.html"

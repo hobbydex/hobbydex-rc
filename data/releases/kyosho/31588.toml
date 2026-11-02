@@ -8,7 +8,7 @@ name_ja = "V-ONE SR GXR15エンジン付シリーズ"
 kind = "kit"
 power = "nitro"
 power_source = "part/kyosho/FMW35"
-status = "released"
+status = "discontinued"
 seen_by = "2013-03"
 seen_by_source = "doc/kyosho/31588-t01-v-one-sr-gxr15-im"
 documents = ["doc/kyosho/31588-t01-v-one-sr-gxr15-spop", "doc/kyosho/31588-t01-v-one-sr-gxr15-ex", "doc/kyosho/31588-t01-v-one-sr-gxr15-im", "doc/kyosho/31588-product-page"]
@@ -195,3 +195,6 @@ contains = [
   { part = "part/kyosho/UM128", role = "option", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
   { part = "part/kyosho/M3X6", role = "kit", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/31588.html"

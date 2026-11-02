@@ -8,7 +8,7 @@ released = "2013-06"
 gtin = "4548565223688"
 power = "nitro"
 power_source = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/kyosho/31267-t01-v-one-r4s-spop", "doc/kyosho/31267-t01-v-one-r4s-ex", "doc/kyosho/31267-t01-v-one-r4s-im", "doc/kyosho/31267-product-page"]
 contains = [
   { part = "part/kyosho/1-E070", role = "kit", source = "doc/kyosho/31267-t01-v-one-r4s-ex" },
@@ -199,3 +199,6 @@ contains = [
   { part = "part/kyosho/VZW66-22", role = "option", source = "doc/kyosho/31267-t01-v-one-r4s-spop" },
   { part = "part/kyosho/VZW066-23", role = "option", source = "doc/kyosho/31267-t01-v-one-r4s-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/31267.html"

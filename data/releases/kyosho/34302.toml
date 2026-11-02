@@ -6,7 +6,7 @@ name = "ULTIMA RB6.6"
 gtin = "4548565307845"
 name_ja = "アルティマRB6.6"
 kind = "kit"
-status = "released"
+status = "discontinued"
 announced = "2016-08-03"
 announced_source = "https://www.youtube.com/watch?v=vW_sR667utY"
 documents = ["doc/kyosho/34302-ultima-rb6-6-spop", "doc/kyosho/34302-ultima-rb6-6-ex", "doc/kyosho/34302-ultima-rb6-6-im", "doc/kyosho/34302-ultima-rb6-6-parts-list-01", "doc/kyosho/34302-ultima-rb6-6-setup", "doc/kyosho/34302_ultima_rb6-6_parts_list-02", "doc/kyosho/34302-product-page", "doc/kyosho/youtube-vW_sR667utY"]
@@ -294,3 +294,6 @@ contains = [
   { part = "part/kyosho/UM730-69", role = "option", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
   { part = "part/kyosho/UM517GM", role = "kit", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/34302.html"
