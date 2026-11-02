@@ -12,3 +12,7 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "drivetrain"
 material = "steel"
+fits = [
+  { kit = "kit/xpress/at1", type = "replaces", source = "doc/xpress/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+  { kit = "kit/xpress/at1s", type = "replaces", source = "doc/xpress/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+]
