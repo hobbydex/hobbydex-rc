@@ -6,9 +6,8 @@ gtin = "4944925046544"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-part-list" },
+  { kit = "kit/mugen/mrx7", type = "replaces", source = "doc/mugen/mrx7-part-list", notes = "Also listed as direct by doc/mugen/mrx7-part-list" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
-  { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
 ]
 category = "shock-spring"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/Front-Shock-Springs-OE1.9-6.5T/H2517" } ]
