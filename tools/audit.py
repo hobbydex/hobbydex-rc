@@ -73,6 +73,17 @@ ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.py")   # the per-hos
 ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
 
 
+# a document title that is only item numbers, or repeats one token: the placeholder an importer wrote when no name was known
+# ("Tamiya 43501 43501: instruction manual"); the name then comes from the maker's page (title_source)
+PLACEHOLDER_TITLE = re.compile(r"(?<![\w.'/-])(\S*?\d[\w.'/-]*) \1(?![\w.'/-])")
+NUMBERS_ONLY_TITLE = re.compile(r"\d[\d.'/-]*(?: \d[\d.'/-]*)*")
+
+
+def placeholder_title(title):
+    t = (title or "").strip()
+    return bool(PLACEHOLDER_TITLE.search(t)) or bool(NUMBERS_ONLY_TITLE.fullmatch(t))
+
+
 def date_without_source(r):
     """A release that states a year or release date but names no source for it (released_source)."""
     return (r.get("year") is not None or bool(r.get("released"))) and not r.get("released_source")
@@ -689,6 +700,10 @@ def main():
     # 2. release date marker "?" (a *_doubt reason shows as "?" in the date column)
     check("date-marker-question", "the ? sits in the date column of a narrow table: shorten the reason or move it to the release notes, and confirm the date",
           [r for r in rels if any(k in r for k in ("year_doubt", "released_doubt", "announced_doubt"))])
+
+    # 2a. document titles that are only item numbers, or repeat one (the importer's placeholder when no name was known)
+    check("doc-placeholder-title", "replace the repeated number with the item's name from a maker page (title_source names it), or keep the number once; never the number twice",
+          [d for d in docs.values() if placeholder_title(d.get("title"))])
 
     # 2b. releases of one brand with the same name: the name must say which is which (an edition, colour or re-release word)
     # releases with their own item numbers are distinct releases; only the same number under the same name is a duplicate
