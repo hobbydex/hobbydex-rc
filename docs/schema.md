@@ -1129,6 +1129,8 @@ outer_mm = 6
 thickness_mm = 0.5
 ```
 
+Tube specs (`spec/tube/<bore>x<outer>[x<length>]`, category "tube") use the same `shape` field with `flanged` or `crush` where the maker's name says a flanged or crush tube; such a tube does not replace a plain one, so the shape is in the id (`spec/tube/flanged-3x6x5`).
+
 ### E-clip specs
 
 `spec/eclip/<shaft>mm` (category "eclip", `shaft_mm`): an E-clip (E-ring, DIN
