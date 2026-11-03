@@ -1,0 +1,16 @@
+id = "part/nosram/999601"
+brand = "brand/nosram"
+number = "999601"
+name = "XTEC RX-Pack Hump 2/3A NiMH - JR - 6.0V - 1600mAh"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999601/" },
+]
+chemistry = "nimh"
+cells = 5
+equivalent_to = [
+  { spec = "spec/battery/nimh-5s-1600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 1600
+voltage = 6.0

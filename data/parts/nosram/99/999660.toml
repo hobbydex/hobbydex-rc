@@ -1,0 +1,21 @@
+id = "part/nosram/999660"
+brand = "brand/nosram"
+number = "999660"
+name = "HV LCG Modified Shorty GRAPHENE-4 4600mAh Hardcase Battery - 7.6V LiPo - 120C / 60C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999660/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4600
+c_rating = 120
+case = "shorty"
+dimensions_mm = [97, 47, 22.5]
+weight_g = 186
+connector = "5mm bullet"
+voltage = 7.6

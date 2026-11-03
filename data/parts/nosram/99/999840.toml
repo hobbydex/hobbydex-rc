@@ -1,0 +1,21 @@
+id = "part/nosram/999840"
+brand = "brand/nosram"
+number = "999840"
+name = "1/12 Hyper LCG Modified GRAPHENE-4.2 8600mAh Hardcase Battery - 3.7V - 120C / 60C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999840/" },
+]
+chemistry = "lipo"
+cells = 1
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-8600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 8600
+c_rating = 120
+case = "hard"
+dimensions_mm = [93, 47, 18.5]
+weight_g = 163
+connector = "5mm bullet"
+voltage = 3.7

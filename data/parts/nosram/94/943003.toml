@@ -1,0 +1,16 @@
+id = "part/nosram/943003"
+brand = "brand/nosram"
+number = "943003"
+name = "LiPo 2500 RX-Pack Straight 7.4V / TX Futaba T7 / T10PX"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/943003/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2500mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 2500
+voltage = 7.4
