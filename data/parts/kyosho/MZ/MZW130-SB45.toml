@@ -6,4 +6,7 @@ released = "2026-02"
 gtin = "4548565514847"
 category = "tool"
 documents = ["doc/kyosho/mzw130-sb45-product-page"]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/mzw130-sb45-product-page", notes = "Named for the mini-z-mr-04 platform in the maker's part name (link_car_kits.py)" },
+]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw130-sb45.html" } ]

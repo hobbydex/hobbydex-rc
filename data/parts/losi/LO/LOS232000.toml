@@ -6,6 +6,10 @@ seen_by = "2015-03-26"
 seen_by_source = "https://web.archive.org/web/20150326023043/http://losi.com/ProdInfo/LOS/100/LOS232000-100.jpg"
 gtin = "605482579893"
 applies_to = "XXX-SCT/SCB"
+fits = [
+  { kit = "kit/losi/xxx-sct", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the Losi XXX-SCT (link_car_kits.py)" },
+  { kit = "kit/losi/xxx-scb", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the Losi XXX-SCB (link_car_kits.py)" },
+]
 links = [
   { site = "Losi", url = "https://www.losi.com/product/losi-metal-idler-gear-shaft-bearings-xxx-sct-scb/LOS232000.html" },
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-metal-idler-gear-shaft-bearings-xxx-sct-scb/LOS232000.html" },
