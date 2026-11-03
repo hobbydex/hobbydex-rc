@@ -10,3 +10,8 @@ pack_qty = 10
 pack_qty_basis = "page"
 gtin = "769173945814"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"
+seal = "rubber"

@@ -10,3 +10,6 @@ documents = ["doc/iris/store"]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Iris-4x8x3mm-Ball-Bearing-4pcs_1" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

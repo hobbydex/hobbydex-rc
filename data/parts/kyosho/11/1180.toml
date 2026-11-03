@@ -12,3 +12,6 @@ material = "plastic"
 fits = [
   { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (standard part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
