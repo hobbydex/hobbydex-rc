@@ -14,3 +14,6 @@ includes = [
   { spec = "spec/ring-pinion/ring-42t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
   { spec = "spec/ring-pinion/pinion-13t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
 ]
+related = [
+  { part = "part/traxxas/7791", relation = "replaces", notes = "link_part_refs" },
+]

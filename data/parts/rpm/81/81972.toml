@@ -10,3 +10,6 @@ category = "bumper-guard"
 fits = [
   { kit = "kit/hpi/baja-5b", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+related = [
+  { part = "part/hpi/85420", relation = "replaces", notes = "link_part_refs" },
+]

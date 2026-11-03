@@ -11,3 +11,6 @@ fits = [
   { kit = "kit/traxxas/nitro-slash", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
   { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+related = [
+  { part = "part/traxxas/3736", relation = "replaces", notes = "link_part_refs" },
+]
