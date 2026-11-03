@@ -4,10 +4,11 @@ number = "B2502A"
 name = "B2502A"
 name_source = "ocr"
 pack_qty = 4
+pack_qty_basis = "manual"
 notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
 fits = [
   { kit = "kit/mugen/msb1", type = "direct", source = "doc/mugen/msb1-part-list" },
 ]
-documents = ["doc/mugen/msb1-part-list"]
+documents = ["doc/mugen/msb1-part-list", "doc/mugen/b2001-part-list-eu"]
 category = "misc"
 category_source = "fallback"
