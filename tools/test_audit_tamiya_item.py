@@ -40,6 +40,13 @@ def test_no_links():
     assert not audit.tamiya_maker_linked([])
 
 
+def test_label_only_spares():
+    assert audit.tamiya_label_only({"name": "A Parts", "name_source": "ocr", "category": "parts-tree"})
+    assert audit.tamiya_label_only({"name": "Differential Gear Bag", "name_source": "ocr", "category": "hardware-set"})
+    assert not audit.tamiya_label_only({"name": "Idler Gear", "name_source": "ocr", "category": "gear"})
+    assert not audit.tamiya_label_only({"name": "Differential Gear Bag", "name_source": "manual", "category": "hardware-set"})
+
+
 if __name__ == "__main__":
     for name, fn in sorted(globals().items()):
         if name.startswith("test_") and callable(fn):
