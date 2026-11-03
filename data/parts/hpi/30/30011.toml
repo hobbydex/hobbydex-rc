@@ -6,5 +6,5 @@ name_source = "manual"
 category = "engine-fuel"
 documents = ["doc/hpi/115893-vol03-nitro-rs4-3-drift-rtr-060215", "doc/hpi/115893-vol03-nitro-rs4-3-drift-rtr-060215-e", "doc/hpi/12034-nitro-3-drift-glb-m-v1"]
 fits = [
-  { kit = "kit/hpi/nitro-rs4-3", releases = ["release/hpi/10073", "release/hpi/112587", "release/hpi/115893", "release/hpi/12034"], type = "replaces", source = "doc/hpi/115893-vol03-nitro-rs4-3-drift-rtr-060215", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/nitro-rs4-3", releases = ["release/hpi/10073", "release/hpi/112587", "release/hpi/115893", "release/hpi/12034"], type = "direct", source = "doc/hpi/115893-vol03-nitro-rs4-3-drift-rtr-060215", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

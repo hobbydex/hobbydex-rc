@@ -8,7 +8,7 @@ pitch_dp = 48
 material = "steel"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=537" }]
 fits = [
-  { kit = "kit/xray/t4", releases = ["release/xray/300021", "release/xray/300023", "release/xray/300024"], type = "replaces", source = "doc/xray/t4-2018-part-list" },
+  { kit = "kit/xray/t4", releases = ["release/xray/300021", "release/xray/300023", "release/xray/300024"], type = "direct", source = "doc/xray/t4-2018-part-list" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-34t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
