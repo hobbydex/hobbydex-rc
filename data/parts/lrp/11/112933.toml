@@ -13,5 +13,5 @@ fits = [
 ]
 documents = ["doc/lrp/110100-de-manual", "doc/lrp/110200-de-manual"]
 equivalent_to = [
-  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 5x8 bearing (MR85)" },
+  { spec = "spec/bearing/5x8x2.5", match = "close", source = "doc/lrp/110100-de-manual", notes = "Width stated by the S18 TC manual (bag E): 5x8x2.5mm Ball bearing" },
 ]

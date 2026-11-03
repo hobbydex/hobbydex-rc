@@ -13,5 +13,5 @@ fits = [
 category = "bearing"
 documents = ["doc/mugen/mst-1-part-list", "doc/mugen/msx3-part-list", "doc/mugen/prime-12-part-list"]
 equivalent_to = [
-  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 5x8 bearing (MR85)" },
+  { spec = "spec/bearing/5x8x2.5", match = "close", source = "doc/mugen/mst-1-part-list", notes = "Width stated by the MST-1 parts list: C0602 BEARING 5X8X2.5" },
 ]

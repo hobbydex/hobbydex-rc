@@ -32,6 +32,7 @@ fits = [
   { kit = "kit/losi/tenacity-tt-pro", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/losi/v100", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]
+documents = ["doc/losi/losa6940-product-page"]
 equivalent_to = [
-  { spec = "spec/bearing/6x12x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 6x12 bearing (MR126)" },
+  { spec = "spec/bearing/6x12x4", match = "close", source = "doc/losi/losa6940-product-page", notes = "Width stated by the maker page: 6 x 12 x 4mm bearings in the box" },
 ]
