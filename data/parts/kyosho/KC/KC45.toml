@@ -8,3 +8,8 @@ gtin = "4955439628348"
 documents = ["doc/kyosho/fw-05-060322", "doc/kyosho/landmax2-060322", "doc/kyosho/monstertruck-060322", "doc/kyosho/mp75-777-060322"]
 category = "engine-fuel"
 notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/giga-crusher", type = "replaces", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the GIGA CRUSHER (option part) in Kyosho's Monster Truck parts acceptable list" },
+  { kit = "kit/kyosho/mad-force", type = "replaces", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (option part) in Kyosho's Monster Truck parts acceptable list" },
+  { kit = "kit/kyosho/inferno-mp777", type = "replaces", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the MP-777 (option part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
+]
