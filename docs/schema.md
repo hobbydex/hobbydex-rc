@@ -1281,6 +1281,8 @@ A battery or ESC is not equivalent to its plug either: it names its plug in
 `connector` (the site links that field to the spec) and has no `equivalent_to`
 row to a connector spec.
 
+A wire part whose name gives no plug (a bare "Connector") takes the plug of a title on its brand's own page, in the field right before its item number ("Spektrum Connector: IC3 Battery (2) Spektrum - SPMXCA302"). Horizon Hobby's pages count for Spektrum, ARRMA, ECX, Axial, Losi and Dynamite. Stored rows are never removed or changed by the linker (tools/link_connector_specs.py).
+
 ```toml
 id = "spec/connector/ec5"
 category = "connector"
