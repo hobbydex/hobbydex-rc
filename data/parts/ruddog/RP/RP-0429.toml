@@ -1,0 +1,18 @@
+id = "part/ruddog/RP-0429"
+brand = "brand/ruddog"
+number = "RP-0429"
+name = "4600mAh 1.2V NiMH Sub-C Single Cell"
+category = "battery"
+gtin = "4052133014719"
+weight_g = 63.5
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-4600mAh-12V-NiMH-Sub-C-Single-Cell_1" },
+]
+chemistry = "nimh"
+voltage = 1.2
+equivalent_to = [
+  { spec = "spec/battery/nimh-1s-4600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 1
+capacity_mah = 4600

@@ -1,0 +1,18 @@
+id = "part/ruddog/RP-0796"
+brand = "brand/ruddog"
+number = "RP-0796"
+name = "Racing ProStock 5700mAh 150C/75C 7.4V Ultra-LCG Stick Pack LiPo Battery"
+category = "battery"
+gtin = "4052133034489"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Racing-ProStock-5700mAh-150C-75C-74V-Ultra-LCG-Stick-Pack-LiPo-Battery_1" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5700
+c_rating = 150

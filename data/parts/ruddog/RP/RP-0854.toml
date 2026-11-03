@@ -1,0 +1,18 @@
+id = "part/ruddog/RP-0854"
+brand = "brand/ruddog"
+number = "RP-0854"
+name = "Racing RR2 5000mAh 150C/75C 7.6V 20mm-LCG Short Stick Pack LiPo-HV Battery"
+category = "battery"
+gtin = "4052133035882"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Racing-RR2-5000mAh-150C-75C-76V-20mm-LCG-Short-Stick-Pack-LiPo-HV-Battery_1" },
+]
+chemistry = "lihv"
+cells = 2
+voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5000
+c_rating = 150

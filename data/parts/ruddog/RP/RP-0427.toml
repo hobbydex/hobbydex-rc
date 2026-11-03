@@ -1,0 +1,17 @@
+id = "part/ruddog/RP-0427"
+brand = "brand/ruddog"
+number = "RP-0427"
+name = "1600mAh 6.0V NiMH 2/3A Hump Receiver Pack"
+category = "battery"
+gtin = "4052133014696"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-1600mAh-60V-NiMH-2-3A-Hump-Receiver-Pack_1" },
+]
+chemistry = "nimh"
+voltage = 6.0
+equivalent_to = [
+  { spec = "spec/battery/nimh-5s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 5
+capacity_mah = 1600
