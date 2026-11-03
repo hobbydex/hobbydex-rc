@@ -1500,6 +1500,8 @@ file = "xb2-2026-part-list.pdf"
 releases = ["release/xray/320020", "release/xray/320021"]
 ```
 
+`title_source` (optional, with `title`): where a title that repeats the item number ("Tamiya 43501 43501: ...") was corrected from. The https URL of the maker page that names the item, when the title takes the name from it (the release's `sources.name`); "none: ..." when no maker page names it and the item number stands alone as the name; or the document's own title with a repeated token removed. The audit check `doc-placeholder-title` lists titles that still repeat a token or are only numbers.
+
 ## Videos
 
 A maker's own video about a kit, release or part, from the maker's
