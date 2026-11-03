@@ -68,7 +68,7 @@ ENUMS = {
     "release.kind_source": {"numbering"},   # the basis of a kind no page states: Tamiya's car-kit numbering (docs/schema.md "release", kind)
     "release.color_source": {"owner"},   # who states a colour the name does not give (docs/schema.md "release", color)
     # kit types (docs/schema.md "kit"); the site gives each a label and an icon (hobbydex src/lib/kitTypes.ts)
-    "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "tractor-truck", "race-truck",
+    "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "tractor-truck", "tractor", "race-truck",
                      "crawler", "touring", "formula", "pan-car", "rally", "street-basher", "drift", "drag", "lowrider", "trailer",
                      "speed-run", "kart", "motorcycle", "snowmobile", "tank", "construction", "car", "boat", "oval", "gt", "on-road"},
     # kit drive (docs/schema.md "kit"); tracks: tanks and other tracked vehicles, half-tracks included
