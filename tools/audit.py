@@ -221,12 +221,28 @@ def tamiya_maker_linked(links):
     return False
 
 
+def hw_photo_unread(hw, parts):
+    """The parts whose cached product photo link_hw_photo_finish (hw) has not read yet, or None when the module's
+    tools/data/vlm.toml is missing (gitignored, so absent from a fresh checkout)."""
+    unread_ids = set()
+    try:
+        for brand_parts in by_brand(parts):   # the photo index of a brand is dropped after its parts (it held every brand at once)
+            for p in brand_parts:
+                if hw.unread_photo(p):
+                    unread_ids.add(id(p))
+            hw._INDEX.pop((brand_parts[0].get("brand") or "")[6:], None)
+    except FileNotFoundError:
+        return None
+    hw._NUM = None   # number_pages: every cached product page, built once for this check
+    hw.L._CRAWLED = None   # the crawl's page map (link_pack_qty.crawled_pages), read by the photo lookups only
+    return [p for p in parts if id(p) in unread_ids]
+
+
 def tamiya_label_only(part):
-    """True when a Tamiya spare's only source is an OCR label from a manual: a parts-tree letter ("A Parts") or a bag
-    ("Differential Gear Bag"). The maker sells no spare page for such a label, so a missing maker link is no defect."""
-    if part.get("name_source") != "ocr":
-        return False
-    return part.get("category") == "parts-tree" or bool(re.search(r"\bbag\b", part.get("name", ""), re.I))
+    """True when a Tamiya spare's name comes from OCR of a manual and it has no maker page (the caller checks the link):
+    a bag or parts-tree label ("A Parts", "Differential Gear Bag") or a part name read off a manual page. The maker
+    sells no spare page for such a number, so a missing maker link is no defect."""
+    return part.get("name_source") == "ocr"
 
 
 def tamiya_static_non_rc(rel_path, tamiya_numbers):
@@ -1167,7 +1183,7 @@ def main():
     dealer_only = sum(1 for p in spares if dealer_linked(p))
     check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker link (Tamiya USA's spare page, kind maker): the daily derive runs tools/link_tamiya_de_spares.py (tamiya.de sitemap) and tools/link_tamiya_usa_spares.py (Tamiya USA listings, which tools/plan_tamiya_usa_spares.py queues) in hobbydex-tools; a spare with only a dealer link is counted in dealer_only",
           spares, count=len(spares), maker=sum(1 for p in spares_all if maker_linked(p)), dealer_only=dealer_only)
-    check("tamiya-spare-label-only", "no maker spare page exists: the part's only source is an OCR parts-tree or bag label from a manual (informational)",
+    check("tamiya-spare-label-only", "no maker spare page exists: the part's name comes from OCR of a manual (a bag or parts-tree label, or a part name) and the maker has no page for the number (informational)",
           label_only, count=len(label_only), per_brand=[("tamiya", len(label_only))], info=True)
     check("tamiya-item-no-link", "a Tamiya item number with no maker product page: give it a maker link (tamiya.com page) or a manual or fan-site source",
           items, count=len(items))
@@ -1267,17 +1283,10 @@ def main():
               stated, per_brand=per_brand(stated))
 
     # 29b. hardware (any brand) whose cached product photo is not read yet for its colour or its piece count
-    if tools["hwphoto"]:
-        hw = tools["hwphoto"]
-        unread_ids = set()
-        for brand_parts in by_brand(parts):   # the photo index of a brand is dropped after its parts (it held every brand at once)
-            for p in brand_parts:
-                if hw.unread_photo(p):
-                    unread_ids.add(id(p))
-            hw._INDEX.pop((brand_parts[0].get("brand") or "")[6:], None)
-        hw._NUM = None   # number_pages: every cached product page, built once for this check
-        hw.L._CRAWLED = None   # the crawl's page map (link_pack_qty.crawled_pages), read by the photo lookups only
-        unread = [p for p in parts if id(p) in unread_ids]
+    unread = hw_photo_unread(tools["hwphoto"], parts) if tools["hwphoto"] else []
+    if unread is None:   # hobbydex-tools' tools/data/vlm.toml is gitignored and missing on a fresh checkout
+        results["hw-photo-unread"] = {"fix": "hobbydex-tools tools/data/vlm.toml not found (--tools)", "count": None, "examples": [], "all": []}
+    elif tools["hwphoto"]:
         check("hw-photo-unread", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour or pack_qty by hand from the photo",
               unread, per_brand=per_brand(unread))
 
