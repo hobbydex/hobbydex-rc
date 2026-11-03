@@ -1,0 +1,12 @@
+id = "part/himoto/E18MST-S2"
+brand = "brand/himoto"
+number = "E18MST-S2"
+name = "E18MST-S2"
+category = "misc"
+category_source = "fallback"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/drift-x", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/monster-crusher", releases = ["release/himoto/E18MCL"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/tricer-1-18-electric", type = "direct", source = "doc/himoto/option-parts" },
+]

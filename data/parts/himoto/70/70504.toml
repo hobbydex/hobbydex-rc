@@ -1,0 +1,10 @@
+id = "part/himoto/70504"
+brand = "brand/himoto"
+number = "70504"
+name = "Front Bumper"
+category = "bumper-guard"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/drekkar", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/drekkar-1-10-electric", releases = ["release/himoto/HI2202", "release/himoto/HI2202BL"], type = "direct", source = "doc/himoto/option-parts" },
+]

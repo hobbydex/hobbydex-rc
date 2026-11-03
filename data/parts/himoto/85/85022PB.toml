@@ -1,0 +1,13 @@
+id = "part/himoto/85022PB"
+brand = "brand/himoto"
+number = "85022PB"
+name = "85022PB"
+category = "misc"
+category_source = "fallback"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/edt-16", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/ety-16", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/exb-16", releases = ["release/himoto/HI4185BL"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/sct-16", type = "direct", source = "doc/himoto/option-parts" },
+]

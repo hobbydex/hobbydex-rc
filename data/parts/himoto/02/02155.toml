@@ -1,0 +1,25 @@
+id = "part/himoto/02155"
+brand = "brand/himoto"
+number = "02155"
+name = "02155"
+category = "misc"
+category_source = "fallback"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/cluster", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/demolition", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/eldorada", releases = ["release/himoto/HI6101M"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/firestone", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/python-xv3", releases = ["release/himoto/HI8103M"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rancho", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rancho-pro", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rancho-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rapida-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/shellshock", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/syclone-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/taipan-xrs", releases = ["release/himoto/HI9103E", "release/himoto/HI9103M"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda-pro", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/viper-xst", releases = ["release/himoto/HI6103E", "release/himoto/HI6103M", "release/himoto/HI6103T2"], type = "direct", source = "doc/himoto/option-parts" },
+]

@@ -1,0 +1,12 @@
+id = "part/himoto/02018PB"
+brand = "brand/himoto"
+number = "02018PB"
+name = "02018PB"
+category = "misc"
+category_source = "fallback"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/drift-tc", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/nascada", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/taipan-xrs", releases = ["release/himoto/HI9103E"], type = "direct", source = "doc/himoto/option-parts" },
+]
