@@ -8,5 +8,8 @@ seen_by_source = "doc/kyosho/vzw224-body-stiffener"
 name_ja = "ボディステフナー"
 gtin = "4955439072806"
 category = "body"
-documents = ["doc/kyosho/vzw224-body-stiffener", "doc/kyosho/vzw224-product-page"]
+documents = ["doc/kyosho/vzw224-body-stiffener", "doc/kyosho/vzw224-product-page", "doc/kyosho/tf5-070215"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/vzw224.html" } ]
+fits = [
+  { kit = "kit/kyosho/tf-5", type = "replaces", source = "doc/kyosho/tf5-070215", notes = "Marked for the TF-5 (option part) in Kyosho's TF-5 / TF-5 Stallion parts acceptable list" },
+]

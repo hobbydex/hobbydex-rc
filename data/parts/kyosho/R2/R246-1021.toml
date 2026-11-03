@@ -10,7 +10,9 @@ links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/r246-1021.html" },
 ]
 category = "oil-grease"
-documents = ["doc/kyosho/r246-1021-product-page"]
+documents = ["doc/kyosho/r246-1021-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 fits = [
   { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30423"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30423 (option part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]

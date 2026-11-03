@@ -8,7 +8,8 @@ seen_by_source = "doc/kyosho/30021-tf-5-m"
 name_source = "ocr"
 ocr_names = ["Maintenance Stand S"]
 category = "tool"
-documents = ["doc/kyosho/30021-tf-5-m"]
+documents = ["doc/kyosho/30021-tf-5-m", "doc/kyosho/tf5-070215"]
 fits = [
   { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31257-vonerrr-ruber-p" },
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/tf5-070215", notes = "Marked for the TF-5 (option part) in Kyosho's TF-5 / TF-5 Stallion parts acceptable list" },
 ]

@@ -36,12 +36,13 @@ fits = [
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34110-t04-inferno-mp10e-ex" },
   { kit = "kit/kyosho/inferno-mp10te", type = "direct", source = "doc/kyosho/34115-t01-inf-mp10te-ex" },
   { kit = "kit/kyosho/fantom-pzf", type = "direct", source = "doc/kyosho/30640-mm01-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (standard part) in Kyosho's Plazma series parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m3x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
-documents = ["doc/kyosho/1-s33012h-product-page"]
+documents = ["doc/kyosho/1-s33012h-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s33012h.html" },
 ]

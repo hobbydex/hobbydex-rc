@@ -13,9 +13,12 @@ fits = [
   { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
   { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31284-evolva2005-p" },
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30919-fazer-ve-x-lancer-spop" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 category = "suspension"
-documents = ["doc/kyosho/vz084s-product-page"]
+documents = ["doc/kyosho/vz084s-product-page", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-rrr-060322"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vz084s.html" },
 ]

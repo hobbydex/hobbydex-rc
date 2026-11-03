@@ -7,8 +7,11 @@ fits = [
   { kit = "kit/kyosho/pure-ten-kx-one", type = "replaces", source = "doc/kyosho/30101-kx-one-p" },
   { kit = "kit/kyosho/gp-tr-15-rally", type = "replaces", source = "doc/kyosho/31061-tr15-rally-p" },
   { kit = "kit/kyosho/superten", type = "replaces", source = "doc/kyosho/31001-superten-p" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 category = "shock-spring"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/92001.html" },
 ]
+documents = ["doc/kyosho/ep-alpha3-060322", "doc/kyosho/v-one-s-060322"]

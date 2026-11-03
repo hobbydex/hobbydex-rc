@@ -6,6 +6,10 @@ seen_by = "2007-06"
 seen_by_source = "doc/kyosho/mzw222-frp-rear-sus-rm"
 gtin = "4548565081639"
 name_ja = "FRP リヤサスプレート"
-documents = ["doc/kyosho/mzw222-frp-rear-sus-rm", "doc/kyosho/mzw222-product-page"]
+documents = ["doc/kyosho/mzw222-frp-rear-sus-rm", "doc/kyosho/mzw222-product-page", "doc/kyosho/mini-z-parts-tekigou"]
 category = "chassis"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw222.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (option part) in Kyosho's MINI-Z parts acceptable list" },
+]

@@ -8,5 +8,8 @@ seen_by_source = "doc/kyosho/31260-v-one-rrr-evo-wc-t-e-m"
 category = "engine-fuel"
 fits = [
   { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31259-vonerrr-evo-p" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05RR (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
-documents = ["doc/kyosho/31259-vonerrr-evo-p", "doc/kyosho/31260-v-one-rrr-evo-wc-t-e-m"]
+documents = ["doc/kyosho/31259-vonerrr-evo-p", "doc/kyosho/31260-v-one-rrr-evo-wc-t-e-m", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-s-060322"]

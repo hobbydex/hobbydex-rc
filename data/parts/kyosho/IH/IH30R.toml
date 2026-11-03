@@ -4,9 +4,10 @@ number = "IH30R"
 name = "Rear Dog Bone Set"
 gtin = "4955439798850"
 category = "drivetrain"
-documents = ["doc/kyosho/ih30r-product-page"]
+documents = ["doc/kyosho/ih30r-product-page", "doc/kyosho/mini-inferno-061013"]
 fits = [
   { kit = "kit/kyosho/gp-mini-inferno-09", type = "direct", source = "doc/kyosho/31311-miniinferno-arr-inst-p" },
+  { kit = "kit/kyosho/mini-inferno", type = "direct", source = "doc/kyosho/mini-inferno-061013", notes = "Marked for the Buggy (standard part) in Kyosho's Mini Inferno parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ih30r.html" },

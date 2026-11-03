@@ -15,8 +15,11 @@ fits = [
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31362-fw05t-p" },
   { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31333-vones3-p" },
   { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 category = "wheel"
 color = "black"
 range = "kyosho/92012-8-aero-24-wheel-15-spoke-df13-colours"
-documents = ["doc/kyosho/31362-fw05t-p", "doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/33204-v-one-r4-evo-spop"]
+documents = ["doc/kyosho/31362-fw05t-p", "doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/33204-v-one-r4-evo-spop", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322"]

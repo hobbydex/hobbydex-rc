@@ -4,9 +4,10 @@ number = "MA031-01"
 name = "Decal Set (MAD ARMOUR)"
 gtin = "4955439762264"
 category = "decal"
-documents = ["doc/kyosho/ma031-01-product-page"]
+documents = ["doc/kyosho/ma031-01-product-page", "doc/kyosho/monstertruck-060322"]
 fits = [
   { kit = "kit/kyosho/twin-force", type = "direct", source = "doc/kyosho/30521-b-twinforce-p" },
+  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (standard part) in Kyosho's Monster Truck parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ma031-01.html" },

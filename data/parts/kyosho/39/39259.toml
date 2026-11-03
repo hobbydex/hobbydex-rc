@@ -10,7 +10,14 @@ fits = [
   { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp2-fw05jpe-p" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05RR (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rrr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RRR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 category = "body"
 scale = "1/10"
-documents = ["doc/kyosho/31360-p-05tplus-chas-p", "doc/kyosho/31362-fw05t-p", "doc/kyosho/31380-mm01-fw05t-maint-p"]
+documents = ["doc/kyosho/31360-p-05tplus-chas-p", "doc/kyosho/31362-fw05t-p", "doc/kyosho/31380-mm01-fw05t-maint-p", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322"]

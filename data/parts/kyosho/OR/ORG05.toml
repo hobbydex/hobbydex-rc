@@ -6,7 +6,7 @@ pack_qty = 10
 pack_qty_basis = "manual"
 gtin = "4955439758762"
 category = "o-ring-seal"
-documents = ["doc/kyosho/org05-product-page"]
+documents = ["doc/kyosho/org05-product-page", "doc/kyosho/v-one-s-060322"]
 color = "orange"
 fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "direct", source = "doc/kyosho/34412t2-mad-van-ct2-spop" },
@@ -27,6 +27,7 @@ fits = [
   { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (standard part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/org05.html" },

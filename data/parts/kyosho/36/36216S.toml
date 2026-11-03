@@ -5,9 +5,11 @@ name = "SPARK BOOSTER with ORION 2200"
 gtin = "4548565107209"
 fits = [
   { kit = "kit/kyosho/fw-06", type = "replaces", source = "doc/kyosho/33216-fw-06-chassis-spop" },
+  { kit = "kit/kyosho/v-one-r4", type = "replaces", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/36216s.html" },
 ]
 category = "misc"
 category_source = "fallback"
+documents = ["doc/kyosho/v-one-r4-151117"]

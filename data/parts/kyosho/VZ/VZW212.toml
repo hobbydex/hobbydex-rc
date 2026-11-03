@@ -6,6 +6,12 @@ gtin = "4955439796313"
 fits = [
   { kit = "kit/kyosho/v-one-sr", type = "replaces", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
   { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31258-vonerrr-wcte-p" },
+  { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05S (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05RR (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 category = "chassis"
-documents = ["doc/kyosho/31258-vonerrr-wcte-p", "doc/kyosho/31259-vonerrr-evo-p", "doc/kyosho/31262-v-one-rrr-evo2-p"]
+documents = ["doc/kyosho/31258-vonerrr-wcte-p", "doc/kyosho/31259-vonerrr-evo-p", "doc/kyosho/31262-v-one-rrr-evo2-p", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-rrr-060322"]

@@ -11,12 +11,13 @@ fits = [
   { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-exploded-view" },
   { kit = "kit/kyosho/inferno-mp10t", type = "direct", source = "doc/kyosho/33017-02-inf-mp10t-ex" },
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34110-t04-inferno-mp10e-ex" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (standard part) in Kyosho's Plazma series parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m4x25-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 category = "screw"
-documents = ["doc/kyosho/1-s34025h-product-page"]
+documents = ["doc/kyosho/1-s34025h-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s34025h.html" },
 ]

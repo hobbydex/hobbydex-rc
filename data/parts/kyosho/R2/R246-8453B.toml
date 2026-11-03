@@ -8,10 +8,11 @@ links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/r246-8453b.html" },
 ]
 category = "battery"
-documents = ["doc/kyosho/r246-8453b-product-page"]
+documents = ["doc/kyosho/r246-8453b-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 chemistry = "nimh"
 fits = [
   { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/kyosho/30047-lazer-zx6-6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
   { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]

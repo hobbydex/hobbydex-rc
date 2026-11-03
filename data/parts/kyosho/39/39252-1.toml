@@ -4,12 +4,19 @@ number = "39252-1"
 name = "Sponsor Decal (NISMO FAIRLADY 350Z)"
 gtin = "4955439766996"
 category = "decal"
-documents = ["doc/kyosho/39252-1-product-page"]
+documents = ["doc/kyosho/39252-1-product-page", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322"]
 fits = [
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31333-vones3-p" },
   { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
   { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp2-fw05jpe-p" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "direct", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05RR (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RRR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 scale = "1/10"
 links = [

@@ -7,7 +7,10 @@ seen_by = "2005-02"
 seen_by_source = "doc/kyosho/31584-fw05rr-kce-m"
 fits = [
   { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/31584-fw05rr-kce-m" },
+  { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05S (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
 ]
 category = "suspension"
 material = "aluminium"
-documents = ["doc/kyosho/31584-fw05rr-kce-m"]
+documents = ["doc/kyosho/31584-fw05rr-kce-m", "doc/kyosho/fw-05-060322"]

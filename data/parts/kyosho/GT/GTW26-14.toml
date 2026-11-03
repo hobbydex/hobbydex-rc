@@ -5,8 +5,9 @@ name = "PC Pinion Gear (1st / 14T)"
 gtin = "4955439766583"
 fits = [
   { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/31811-infgt-p" },
+  { kit = "kit/kyosho/landmax-2", type = "replaces", source = "doc/kyosho/landmax2-060322", notes = "Marked for the Land Max 2 (option part) in Kyosho's Land Max 2 parts acceptable list" },
 ]
 category = "pinion"
 teeth = 14
-documents = ["doc/kyosho/31811-infgt-p", "doc/kyosho/gtw26-14-product-page"]
+documents = ["doc/kyosho/31811-infgt-p", "doc/kyosho/gtw26-14-product-page", "doc/kyosho/landmax2-060322"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/gtw26-14.html" } ]

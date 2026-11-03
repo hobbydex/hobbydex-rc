@@ -6,6 +6,14 @@ gtin = "4955439653845"
 seen_by = "2006-05"
 seen_by_source = "doc/kyosho/30021-tf-5-m"
 name_source = "manual"
-documents = ["doc/kyosho/30021-tf-5-m"]
+documents = ["doc/kyosho/30021-tf-5-m", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/monstertruck-060322", "doc/kyosho/tf5-070215", "doc/kyosho/tr15-060322"]
 category = "body-accessory"
 material = "aluminium"
+fits = [
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "direct", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (option part) in Kyosho's Monster Truck parts acceptable list" },
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/tf5-070215", notes = "Marked for the TF-5 (option part) in Kyosho's TF-5 / TF-5 Stallion parts acceptable list" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 RALLY (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/tr-15-monster-touring", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the MONSTER TOURING (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+]

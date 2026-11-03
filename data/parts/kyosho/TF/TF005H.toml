@@ -4,9 +4,10 @@ number = "TF005H"
 name = "Carbon Composit Suspension Arm Set(F & R/TF-5/Stallion)"
 gtin = "4955439021538"
 category = "suspension"
-documents = ["doc/kyosho/tf005h-product-page"]
+documents = ["doc/kyosho/tf005h-product-page", "doc/kyosho/tf5-070215"]
 fits = [
   { kit = "kit/kyosho/tf-6", type = "direct", source = "doc/kyosho/30025-tf6sp-t01-spop" },
+  { kit = "kit/kyosho/tf-5", type = "replaces", source = "doc/kyosho/tf5-070215", notes = "Marked for the TF-5 (option part) in Kyosho's TF-5 / TF-5 Stallion parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/tf005h.html" },

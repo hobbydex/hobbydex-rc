@@ -6,7 +6,7 @@ pack_qty = 2
 pack_qty_basis = "manual"
 gtin = "4548565150380"
 category = "differential"
-documents = ["doc/kyosho/um612-product-page"]
+documents = ["doc/kyosho/um612-product-page", "doc/kyosho/vintage-160304-2-jp"]
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/34301-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
@@ -16,6 +16,7 @@ fits = [
   { kit = "kit/kyosho/scorpion", type = "direct", source = "doc/kyosho/30613-mm07-2-scorpion-spop" },
   { kit = "kit/kyosho/beetle", type = "direct", source = "doc/kyosho/30614-07-beetle-spop" },
   { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30859-ultima-sc6-spop" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (standard part) in Kyosho's Vintage series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/um612.html" },
