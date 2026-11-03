@@ -115,11 +115,31 @@ def english_twin(url, swaps):
     return rule[1] + url[len(rule[0]):] if rule and url.startswith(rule[0]) else None
 
 
-def has_foreign_link(text, swaps):
-    """Whether a record's text has a non-English maker link with no English twin beside it in the same record."""
+def has_foreign_link(text, swaps, gone=frozenset()):
+    """Whether a record's text has a non-English maker link with no English twin beside it in the same record.
+    A twin the crawl found gone (gone: the URLs the queue marks gone) is no switch: the maker has no such page."""
     links = [u for line in text.splitlines() if not line.lstrip().startswith("notes") for u in ENGLISH_LINK.findall(line)]
     here = set(links)
-    return any(non_english(u, swaps) and english_twin(u, swaps) not in here for u in links)
+    for u in links:
+        twin = english_twin(u, swaps)
+        if non_english(u, swaps) and twin not in here and twin not in gone:
+            return True
+    return False
+
+
+def gone_urls(cache, swaps):
+    """The URLs the crawl queue marks gone on the English hosts of the swap rules (read-only; empty without a queue)."""
+    hosts = sorted({urllib.parse.urlsplit(to).hostname or "" for _, to in swaps.values()})
+    crawl = os.path.join(cache, "crawl.db") if cache else ""
+    if not hosts or not crawl or not os.path.exists(crawl):
+        return frozenset()
+    import sqlite3
+    con = sqlite3.connect("file:%s?mode=ro" % crawl, uri=True)
+    try:
+        rows = con.execute("select url from queue where status='gone' and host in (%s)" % ",".join("?" * len(hosts)), hosts).fetchall()
+    finally:
+        con.close()
+    return frozenset(u for (u,) in rows)
 
 
 def walk_strings(v):
@@ -1145,12 +1165,13 @@ def main():
     # 24. never-link hosts and dealer doc references
     banned, scrap, local, dealer, foreign = [], [], [], [], []
     swaps = english_swaps()
+    gone = gone_urls(tools["cache"], swaps)
     for path in sorted({d["_path"] for k in db for d in db[k]}):
         with open(os.path.join(RC, path), encoding="utf-8") as f:
             text = f.read()
         if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)):
             banned.append(path)
-        if has_foreign_link(text, swaps):
+        if has_foreign_link(text, swaps, gone):
             foreign.append(path)
         if SCRAP_IMG.search(text):
             scrap.append(path)
@@ -1167,7 +1188,7 @@ def main():
     check("tamico-doc-reference", "cite the maker's own listing instead of the Tamico dealer catalogue", [{"id": p} for p in dealer], count=len(dealer))
     results["tamico-doc-reference"]["examples"] = [{"id": p, "url": SITE + "/rc/"} for p in dealer[:args.examples]]
     check("local-path", "replace the local path with the source's URL", local)
-    check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed",
+    check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone is not listed)",
           [{"id": p} for p in foreign], count=len(foreign))
 
     # 25. releases with no maker product page (no product_page document, no maker link), per brand
