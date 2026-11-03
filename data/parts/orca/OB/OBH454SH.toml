@@ -1,0 +1,18 @@
+id = "part/orca/OBH454SH"
+brand = "brand/orca"
+number = "OBH454SH"
+name = "HV GENERATION4 5400mAh 7.6V SHORTY PACK"
+category = "battery"
+weight_g = 203
+dimensions_mm = [96, 47, 25]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/hv-generation4-5400mah-7-6v-shorty-pack/" },
+]
+voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 5400
+case = "shorty"
