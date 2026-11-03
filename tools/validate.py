@@ -1287,6 +1287,14 @@ def main():
             t = d["teeth"]
             if isinstance(t, bool) or not isinstance(t, int) or not 5 <= t <= 300:
                 errors.append(f"{path}: teeth {t!r} should be a whole tooth count from 5 to 300")
+        if kind == "part" and ("hardness" in d or "hardness_source" in d):
+            h, hs = d.get("hardness"), d.get("hardness_source")
+            if d.get("category") != "tire":
+                errors.append(f"{path}: hardness only on tyres (category tire)")
+            elif isinstance(h, bool) or not isinstance(h, int) or not 5 <= h <= 100:
+                errors.append(f"{path}: hardness {h!r} should be a whole Shore A figure from 5 to 100")
+            if not isinstance(hs, str) or not hs.startswith("https://"):
+                errors.append(f"{path}: hardness needs hardness_source, the https URL of the maker or dealer page that states it")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
         if eng - {"bore_mm"} and d.get("category") != "engine-fuel":
             errors.append(f"{path}: {', '.join(sorted(eng - {'bore_mm'}))} only on engine parts (category engine-fuel)")

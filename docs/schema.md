@@ -1043,8 +1043,14 @@ short-course | stadium-truck), `position` (front | rear | front-rear |
 front-2wd | front-4wd), `wheel_size` (the rim diameter as written,
 `2.2"`, `2.2"/3.0"`), `insert` (closed-cell) and `mounting` (unmounted:
 tyres and inserts only | wheels-included: wheels in the box, to be mounted |
-pre-mounted | pre-mounted-not-glued). A tyre on a wheel links to the wheel
-hex spec like a wheel.
+pre-mounted | pre-mounted-not-glued) and `hardness` (the rubber or foam
+hardness in Shore A, a whole number from 5 to 100) with `hardness_source`
+(the https URL of the page that states it, required with it). `hardness` is
+filled only from a stated shore figure ("32Sh", "35 shore"; "28deg" where the
+brand's own texts say shore, Sweep), never from compound words (soft, hard) and
+never from a list of figures or a figure that belongs to another item; a
+degree sign alone (Kyosho, Atomic RC) is not stored. A tyre on a wheel links to
+the wheel hex spec like a wheel.
 
 Shock springs carry, when the name states them: `rate` (the brand's word:
 soft | medium | hard | super soft | super hard), `rate_n_mm` (XRAY's C=0.86),
