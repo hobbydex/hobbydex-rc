@@ -15,3 +15,8 @@ fits = [
   { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
   { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/16awg", match = "functional" },
+]
+wire_awg = 16
+insulation = "silicone"

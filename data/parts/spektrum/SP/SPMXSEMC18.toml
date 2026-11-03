@@ -19,3 +19,7 @@ current_a = 8
 peak_current_a = 40
 motor_connector = "2mm bullet"
 waterproof = false
+includes = [
+  { part = "part/spektrum/SPMXSE1008", qty = 1, notes = "Component named in the combo's name" },
+  { part = "part/spektrum/SPMXSM3100", qty = 1, notes = "Component named in the combo's name" },
+]

@@ -13,3 +13,8 @@ fits = [
   { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
   { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/13awg", match = "functional" },
+]
+wire_awg = 13
+insulation = "silicone"

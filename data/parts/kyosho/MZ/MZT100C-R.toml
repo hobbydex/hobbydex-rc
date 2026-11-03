@@ -10,3 +10,6 @@ gtin = "4955439788790"
 documents = ["doc/kyosho/mini-z-parts-tekigou"]
 category = "tire"
 mounting = "unmounted"
+fits = [
+  { kit = "kit/kyosho/mini-z-autoscale", releases = ["release/kyosho/30393"], type = "replaces", source = "doc/kyosho/30393-mzg116-porsche934-rsr-p", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

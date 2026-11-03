@@ -12,3 +12,8 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Front-Springs-black-43-lb_1", kind = "dealer" },
 ]
 color = "black"
+rate_lb_in = 4.3
+range = "team-associated/springs-rate-springs"
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/drawing-rc8tftrtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

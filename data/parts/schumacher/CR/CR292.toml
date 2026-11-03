@@ -9,3 +9,11 @@ documents = ["doc/schumacher/atom2-manual", "doc/schumacher/supastox-gt-spares-a
 fits = [
   { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-3200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 3200
+c_rating = 60
+voltage = 3.7

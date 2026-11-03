@@ -8,3 +8,6 @@ notes = "Named on the maker's own product page (archived copy)"
 category = "oil-grease"
 documents = ["doc/hpi/107431-apache-sc-glb-m-v1", "doc/hpi/107510-apache-c1-glb-m-v1", "doc/hpi/115870-vol04-vorza-flux-hp-rtr-061015", "doc/hpi/115878-vol02-hpi-d8s-rtr-060115", "doc/hpi/115887-vol02-blitz-flux-rtr-060315"]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/oil/silicone-20000cst", match = "functional", notes = "Viscosity number #20000 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

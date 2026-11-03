@@ -6,6 +6,7 @@ name = "RD1.0 (Drift Package 2WD) Nissan Fairlady Z RZ34 Blue (Precut)"
 name_ja = "ドリフトパッケージ 2WD PANDEM NISSAN フェアレディZ (RZ34) 組立キット ブルー (プレカット済み)"
 kind = "kit"
 status = "released"
+depicts = { make = "Nissan", model = "Fairlady Z RZ34" }
 seen_by = "2026-01"
 seen_by_source = "https://web.archive.org/web/20260118170106/https://teamyokomo.com/product/dp-rz34bl/"
 links = [
@@ -13,6 +14,8 @@ links = [
 ]
 notes = "Status from the store's lifecycle tag; the Japanese product title is in name_ja"
 color = "blue"
+livery = "Blue (Precut"
+range = "yokomo/rd1.0-drift-package-2wd-nissan-fairlady-z-rz34-colours"
 documents = ["doc/yokomo/rd2.0-instruction-manual"]
 contains = [
   { part = "part/yokomo/B8-206LHA", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },

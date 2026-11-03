@@ -8,3 +8,8 @@ links = [
 ]
 gtin = "605482278727"
 category = "wire"
+equivalent_to = [
+  { spec = "spec/wire/10awg", match = "functional" },
+  { spec = "spec/connector/ic5", match = "functional" },
+]
+wire_awg = 10

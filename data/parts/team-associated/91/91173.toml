@@ -11,3 +11,7 @@ notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-4x4-Swaybar-Plastic_1", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/team-associated/rc18b", releases = ["release/team-associated/20106", "release/team-associated/20108"], type = "replaces", source = "doc/team-associated/20106-cat-rc18t2-b2rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18t", releases = ["release/team-associated/20101", "release/team-associated/20103", "release/team-associated/20104"], type = "replaces", source = "doc/team-associated/20104-cat-rc18t2-b2rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

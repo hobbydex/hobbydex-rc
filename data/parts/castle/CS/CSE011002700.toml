@@ -9,3 +9,6 @@ gtin = "855773002627"
 category = "wire"
 color = "black"
 wire_awg = 8
+equivalent_to = [
+  { spec = "spec/wire/8awg", match = "functional" },
+]

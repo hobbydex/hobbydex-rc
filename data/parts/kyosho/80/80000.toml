@@ -10,3 +10,7 @@ category = "oil-grease"
 fits = [
   { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31349-v-one-s3-evo-gt-r-p" },
 ]
+volume_ml = 40
+equivalent_to = [
+  { spec = "spec/oil/silicone-80000cst", match = "functional", notes = "Viscosity number #80000 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

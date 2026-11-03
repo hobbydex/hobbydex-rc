@@ -15,3 +15,8 @@ weight_g = 225
 capacity_mah = 6100
 cells = 2
 c_rating = 130
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6100mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+case = "shorty"

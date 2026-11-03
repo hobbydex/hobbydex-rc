@@ -6,3 +6,7 @@ seen_by = "2021-06-13"
 seen_by_source = "https://web.archive.org/web/20210613140730/https://www.redcatracing.com/products/k6602-14"
 category = "pinion"
 documents = ["doc/redcat/tr-mt8e-manual"]
+equivalent_to = [
+  { spec = "spec/pinion/mod1-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

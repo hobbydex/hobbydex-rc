@@ -374,6 +374,24 @@ def load_gtin_holes(tools):
         return None
 
 
+def load_linker_drift(tools):
+    """[(step, files)] of the last daily derive's verify pass (hobbydex-tools tools/derive_fields.py writes
+    cache/notes/linker-drift.tsv: step, files changed on a second run over the data it had just derived, date);
+    None when the file is absent."""
+    p = os.path.join(tools, "cache", "notes", "linker-drift.tsv")
+    try:
+        with open(p, encoding="utf-8") as f:
+            rows = [ln.rstrip("\n").split("\t") for ln in f if ln.strip() and not ln.startswith("step\t")]
+    except OSError:
+        return None
+    return [(r[0], int(r[1])) for r in rows if len(r) >= 2 and r[1].isdigit()]
+
+
+def linkers_that_would_change(drift):
+    """Lines "<step>: <n> files" for each wired linker that changed data when run again over derived data (it should change none)."""
+    return [f"{step}: {n} files" for step, n in drift if n]
+
+
 def gtin_in_cache_not_stored(holes, by_id):
     """Ids of the records the sweep found a barcode for in the cache that still have no gtin."""
     return sorted(i for i in holes if i in by_id and not by_id[i].get("gtin"))
@@ -510,6 +528,7 @@ def load_tools(tools):
         out["tamico"] = tamico
     out["sources"] = load_art_sources(tools)
     out["gtin_holes"] = load_gtin_holes(tools)
+    out["linker_drift"] = load_linker_drift(tools)
     cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
@@ -1018,6 +1037,15 @@ def main():
         results["gtin-in-cache-not-stored"]["examples"] = [{"id": i, "url": url_for(by_id[i]), "gtin": tools["gtin_holes"][i][0], "file": tools["gtin_holes"][i][2]} for i in miss[:args.examples]]
     else:
         results["gtin-in-cache-not-stored"] = {"fix": "hobbydex-tools cache/gtin_sweep_holes.json not found (python3 -I tools/gtin_sweep.py scan, then report)", "count": None, "examples": [], "all": []}
+
+    # 9c. a wired linker that would change data (the daily derive runs each one twice; the second run must change nothing)
+    if tools["linker_drift"] is not None:
+        drift = linkers_that_would_change(tools["linker_drift"])
+        check("linker-would-change", "a linker in hobbydex-tools tools/derive_fields.py changed data on its second run over the same data (cache/notes/linker-drift.tsv): it is not idempotent; fix it to write only empty fields, or take it out of the derive",
+              drift)
+        results["linker-would-change"]["examples"] = [{"id": d, "url": ""} for d in drift[:args.examples]]
+    else:
+        results["linker-would-change"] = {"fix": "hobbydex-tools cache/notes/linker-drift.tsv not found (written by the daily derive)", "count": None, "examples": [], "all": []}
 
     # 10. copyright-year release years
     check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",

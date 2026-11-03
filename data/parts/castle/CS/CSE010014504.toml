@@ -3,9 +3,13 @@ brand = "brand/castle"
 number = "CSE010014504"
 name = "1/8 Mamba Monster X Brushless ESC / 1512-2650Kv Sensored Motor Combo"
 status = "discontinued"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-1-8-mamba-monster-x-brushless-esc-1512-2650kv-sensored-motor-combo/CSE010014504.html", kind = "dealer" },
 ]
 gtin = "819326011375"
 category = "esc"
 motor_type = "brushless"
+includes = [
+  { part = "part/castle/060-0114-00", qty = 1, notes = "Component named in the combo's name" },
+]

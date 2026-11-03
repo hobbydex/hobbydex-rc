@@ -11,3 +11,9 @@ notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-16x32-mm-Molded-Shock-Kit_1", kind = "dealer" },
 ]
+shock_part = "complete"
+bore_mm = 16
+length_mm = 32
+fits = [
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80931-25"], type = "replaces", source = "doc/team-associated/sc8e-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -9,3 +9,8 @@ category = "wire"
 links = [
   { site = "Koswork", url = "https://koswork.com/portfolio-item/kos05081-xt-2s-charge-balance-cable-lead-12awg-500mm-xh-xt60-to-4-5mm-bullet-connector/" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/12awg", match = "functional" },
+]
+wire_awg = 12
+connectors = ["JST-XH", "XT60", "5mm bullet"]

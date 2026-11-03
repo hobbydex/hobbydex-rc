@@ -12,3 +12,7 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-FT-Shock-Springs-gold-soft_1", kind = "dealer" },
 ]
 color = "gold"
+rate = "soft"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/mmgt-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -17,3 +17,6 @@ weight_g = 285
 dimensions_mm = [137, 46, 22]
 capacity_mah = 6800
 c_rating = 130
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

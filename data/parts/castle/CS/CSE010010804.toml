@@ -3,6 +3,7 @@ brand = "brand/castle"
 number = "CSE010010804"
 name = "1/8 Mamba Monster 2 Waterproof ESC/2650Kv Sensored Brushless Motor Combo: 6.5mm Bullet"
 status = "discontinued"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-1-8-mamba-monster-2-waterproof-esc-2650kv-sensored-brushless-motor-combo-6.5mm-bullet/CSE010010804.html", kind = "dealer" },
 ]
@@ -13,3 +14,6 @@ dimensions_mm = [56, 47, 34]
 motor_type = "brushless"
 lipo_cells = [2, 4]
 waterproof = true
+includes = [
+  { part = "part/castle/CSE010010800", qty = 1, notes = "Component named in the combo's name" },
+]

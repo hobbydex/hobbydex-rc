@@ -11,3 +11,6 @@ notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-RC8-Arm-Mount-D-25-deg_1", kind = "dealer" },
 ]
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

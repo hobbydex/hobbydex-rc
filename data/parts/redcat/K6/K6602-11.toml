@@ -6,3 +6,7 @@ seen_by = "2018-08-24"
 seen_by_source = "https://web.archive.org/web/20180824195927/http://www.redcatracing.com:80/K6602-11"
 category = "pinion"
 documents = ["doc/redcat/tr-mt-8e-v2-manual", "doc/redcat/tr-mt8e-be6s-manual"]
+equivalent_to = [
+  { spec = "spec/pinion/mod1-11t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

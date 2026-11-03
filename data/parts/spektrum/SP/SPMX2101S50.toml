@@ -13,3 +13,7 @@ cells = 1
 voltage = 3.7
 weight_g = 5.6
 capacity_mah = 210
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-210mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 50

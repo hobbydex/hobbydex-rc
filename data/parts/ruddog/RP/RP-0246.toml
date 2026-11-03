@@ -12,3 +12,9 @@ links = [
 ]
 color = "black"
 range = "ruddog/13awg-colours"
+equivalent_to = [
+  { spec = "spec/wire/13awg", match = "functional" },
+]
+wire_awg = 13
+insulation = "silicone"
+length_mm = 1000

@@ -7,3 +7,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-parallel-y-harness-ic3-battery-with-6-wires-13-awg/SPMXCA307.html" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/wire/13awg", match = "functional" },
+]
+wire_awg = 13
+connectors = ["IC3"]

@@ -11,3 +11,7 @@ fits = [
 documents = ["doc/schumacher/cougar-kf-spares-archive"]
 category = "wire"
 color = "black"
+equivalent_to = [
+  { spec = "spec/wire/14awg", match = "functional" },
+]
+wire_awg = 14

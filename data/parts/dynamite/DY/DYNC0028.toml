@@ -8,3 +8,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-series-harness-ec5-battery-10-awg/DYNC0028.html" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/wire/10awg", match = "functional" },
+]
+wire_awg = 10
+connectors = ["EC5"]

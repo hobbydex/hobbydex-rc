@@ -8,3 +8,8 @@ category = "battery"
 documents = ["doc/redcat/caldera-10-e-truck-manual", "doc/redcat/caldera-sc-10e-manual"]
 chemistry = "nimh"
 voltage = 7.2
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-3800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 6
+capacity_mah = 3800

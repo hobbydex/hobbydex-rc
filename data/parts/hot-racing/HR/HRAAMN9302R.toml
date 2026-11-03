@@ -9,3 +9,7 @@ gtin = "840353331419"
 category = "differential"
 scale = "1/16"
 material = "steel"
+includes = [
+  { spec = "spec/ring-pinion/ring-30t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-12t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]

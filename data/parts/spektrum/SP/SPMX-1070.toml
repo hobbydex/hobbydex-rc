@@ -16,3 +16,6 @@ dimensions_mm = [160, 42, 55]
 capacity_mah = 6000
 c_rating = 120
 connector = "IC5"
+equivalent_to = [
+  { spec = "spec/battery/lipo-6s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

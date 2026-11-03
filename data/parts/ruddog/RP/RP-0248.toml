@@ -11,3 +11,9 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-10awg-Silicone-Wire-Black-1m_1" },
 ]
 color = "black"
+equivalent_to = [
+  { spec = "spec/wire/10awg", match = "functional" },
+]
+wire_awg = 10
+insulation = "silicone"
+length_mm = 1000

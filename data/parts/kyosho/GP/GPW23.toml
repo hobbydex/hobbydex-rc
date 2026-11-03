@@ -5,6 +5,10 @@ name = "SPEED HOUSE Hanging On Racer Brushless Combo Set"
 gtin = "4548565524891"
 documents = ["doc/kyosho/gpw23-product-page"]
 category = "esc"
+motor_type = "brushless"
 fits = [
   { kit = "kit/kyosho/hanging-on-racer", type = "replaces", source = "doc/kyosho/gpw23-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+includes = [
+  { part = "part/kyosho/GPW17", qty = 1, notes = "Component named in the combo's name" },
 ]

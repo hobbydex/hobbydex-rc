@@ -6,3 +6,6 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "wheel"
 documents = ["doc/thunder-tiger/6216-part-list-jd0613v2"]
+equivalent_to = [
+  { spec = "spec/wheel-hex/17mm", match = "close", notes = "The wheel hexes listed for EK-4 S2 Sport 6216 are 17 mm" },
+]

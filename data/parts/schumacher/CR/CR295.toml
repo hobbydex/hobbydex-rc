@@ -10,3 +10,11 @@ fits = [
 name_source = "manufacturer"
 seen_by = "2017-06-21"
 seen_by_source = "https://web.archive.org/web/20170621183459/http://www.racing-cars.com/scp/New_Cars_and_Parts/search.asp?subcatid=1019&templateid=69&sortname1=partno"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5000
+c_rating = 60
+voltage = 7.4

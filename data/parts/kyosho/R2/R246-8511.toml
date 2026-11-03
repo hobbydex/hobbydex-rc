@@ -2,6 +2,7 @@ id = "part/kyosho/R246-8511"
 brand = "brand/kyosho"
 number = "R246-8511"
 name = "12G Silicon Wire 600 Black / Red"
+status = "discontinued"
 name_source = "manufacturer"
 gtin = "4548565145553"
 links = [
@@ -9,3 +10,9 @@ links = [
 ]
 category = "wire"
 documents = ["doc/kyosho/r246-8511-product-page"]
+equivalent_to = [
+  { spec = "spec/wire/12awg", match = "functional" },
+]
+wire_awg = 12
+insulation = "silicone"
+color = "black/red"
