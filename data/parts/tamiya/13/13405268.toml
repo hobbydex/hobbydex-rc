@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 category = "drivetrain"
 name_source = "ocr"
 documents = ["doc/tamiya/58697-manual"]
+fits = [
+  { kit = "kit/tamiya/td2", releases = ["release/tamiya/58697"], type = "replaces", source = "doc/tamiya/58697-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

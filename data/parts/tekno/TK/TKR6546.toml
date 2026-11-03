@@ -8,3 +8,9 @@ links = [
 applies_to = "EB410"
 gtin = "815076018657"
 category = "chassis"
+fits = [
+  { kit = "kit/tekno/eb410", type = "replaces", source = "doc/tekno/eb410instructions-rev2", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/eb410-2", releases = ["release/tekno/tkr6502"], type = "replaces", source = "doc/tekno/eb410-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/et410", releases = ["release/tekno/et410"], type = "replaces", source = "doc/tekno/et410instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/et410-2", releases = ["release/tekno/tkr7202"], type = "replaces", source = "doc/tekno/et410-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

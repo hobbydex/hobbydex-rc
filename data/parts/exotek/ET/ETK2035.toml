@@ -6,6 +6,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/exotek-racing-llc-7075-rc-steering-cranks-2-color-anodized-1-pair-associated-b6.3-t6-sc6/ETK2035.html", kind = "dealer" },
 ]
 applies_to = "Associated B6.3, T6, SC6"
+fits = [
+  { kit = "kit/team-associated/rc10t6", type = "replaces", source = "doc/exotek/shop", notes = "Listed for the T6 (link_car_kits.py)" },
+  { kit = "kit/team-associated/rc10sc6", type = "replaces", source = "doc/exotek/shop", notes = "Listed for the SC6 (link_car_kits.py)" },
+]
 gtin = "708498504139"
 category = "steering"
 pack_qty = 2

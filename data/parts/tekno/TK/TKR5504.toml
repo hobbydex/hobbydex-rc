@@ -8,3 +8,6 @@ links = [
 applies_to = "SCT410"
 gtin = "815076014000"
 category = "bumper-guard"
+fits = [
+  { kit = "kit/tekno/sct410-3", releases = ["release/tekno/sct410-3"], type = "replaces", source = "doc/tekno/sct410-3-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

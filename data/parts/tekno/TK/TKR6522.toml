@@ -9,3 +9,6 @@ applies_to = "EB410"
 gtin = "815076018688"
 category = "spur-gear"
 color = "black"
+fits = [
+  { kit = "kit/tekno/eb410", type = "replaces", source = "doc/tekno/eb410instructions-rev2", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

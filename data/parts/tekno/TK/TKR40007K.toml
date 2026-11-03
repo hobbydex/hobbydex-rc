@@ -7,3 +7,8 @@ links = [
 ]
 gtin = "855875001139"
 category = "chassis"
+fits = [
+  { kit = "kit/tekno/eb48-3", releases = ["release/tekno/eb48-3"], type = "replaces", source = "doc/tekno/eb48-3instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/eb48-4", releases = ["release/tekno/eb48-4"], type = "replaces", source = "doc/tekno/eb48-4instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/et48-3", releases = ["release/tekno/et48-3"], type = "replaces", source = "doc/tekno/et48-3instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
