@@ -6,6 +6,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/integy-super-bl-motor-heatsink-with-fan-red-traxxas-1-16-e-revo-slash-4x4/INTC23141R.html", kind = "dealer" },
 ]
 applies_to = "Traxxas 1/16 E-Revo, Slash 4X4"
+fits = [
+  { kit = "kit/traxxas/e-revo-1-16", type = "direct", source = "doc/integy/horizon-pages", notes = "Listed for the Traxxas 1/16 E-Revo (link_car_kits.py)" },
+  { kit = "kit/traxxas/slash-4x4", type = "direct", source = "doc/integy/horizon-pages", notes = "Listed for the Slash 4X4 (link_car_kits.py)" },
+]
 gtin = "917890076889"
 category = "cooling"
 color = "red"

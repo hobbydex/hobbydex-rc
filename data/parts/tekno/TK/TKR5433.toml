@@ -8,3 +8,7 @@ links = [
 applies_to = "ET48/NT48"
 gtin = "815076014994"
 category = "suspension"
+fits = [
+  { kit = "kit/tekno/et48-3", releases = ["release/tekno/et48-3"], type = "replaces", source = "doc/tekno/et48-3instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nt48-3", type = "replaces", source = "doc/tekno/nt48-3instructions-rev3", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

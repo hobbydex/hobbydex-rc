@@ -6,6 +6,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/vanquish-products-exo-steering-knuckles-grey-anodized-axial-yeti/VPS06552.html", kind = "dealer" },
 ]
 applies_to = "Axial Yeti"
+fits = [
+  { kit = "kit/axial/yeti", type = "replaces", source = "doc/vanquish/store", notes = "Listed for the Axial Yeti (link_car_kits.py)" },
+]
 category = "steering"
 color = "gray"
 scale = "1/10"

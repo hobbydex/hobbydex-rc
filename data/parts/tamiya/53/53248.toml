@@ -10,3 +10,8 @@ links = [
 ]
 documents = ["doc/tamiya/53248-product-page"]
 category = "differential"
+fits = [
+  { kit = "kit/tamiya/f103lm", releases = ["release/tamiya/58247"], type = "replaces", source = "doc/tamiya/58247-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/f103rs", releases = ["release/tamiya/58156"], type = "replaces", source = "doc/tamiya/58156-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/ff-02", releases = ["release/tamiya/58248"], type = "replaces", source = "doc/tamiya/58248-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

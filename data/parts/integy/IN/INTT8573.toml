@@ -6,6 +6,11 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/integy-steel-0.8-spur-gear-50t-traxxas-stampede-slash-rustler-4x4/INTT8573.html", kind = "dealer" },
 ]
 applies_to = "Traxxas Stampede, Slash, Rustler 4X4"
+fits = [
+  { kit = "kit/traxxas/stampede-2wd", type = "replaces", source = "doc/integy/horizon-pages", notes = "Listed for the Traxxas Stampede (link_car_kits.py)" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/integy/horizon-pages", notes = "Listed for the Slash (link_car_kits.py)" },
+  { kit = "kit/traxxas/rustler-4x4", type = "replaces", source = "doc/integy/horizon-pages", notes = "Listed for the Rustler 4X4 (link_car_kits.py)" },
+]
 gtin = "917890142010"
 category = "spur-gear"
 material = "steel"

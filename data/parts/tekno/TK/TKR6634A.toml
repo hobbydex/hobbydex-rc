@@ -7,3 +7,7 @@ links = [
 ]
 gtin = "810020551426"
 category = "differential"
+fits = [
+  { kit = "kit/tekno/et410-2", releases = ["release/tekno/tkr7202"], type = "replaces", source = "doc/tekno/et410-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410sl", releases = ["release/tekno/tkr7000"], type = "replaces", source = "doc/tekno/sct410sl-manual-rev3", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

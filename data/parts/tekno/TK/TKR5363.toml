@@ -10,3 +10,8 @@ pack_qty_basis = "page"
 applies_to = "NB48/NT48"
 gtin = "815076014642"
 category = "engine-fuel"
+fits = [
+  { kit = "kit/tekno/nb48-3", type = "replaces", source = "doc/tekno/nb48-3-instructions-rev3", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48-4", releases = ["release/tekno/nb48-4"], type = "replaces", source = "doc/tekno/nb48-4instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nt48-3", type = "replaces", source = "doc/tekno/nt48-3instructions-rev3", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
