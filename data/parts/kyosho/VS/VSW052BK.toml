@@ -7,3 +7,7 @@ gtin = "4955439868270"
 documents = ["doc/kyosho/fw-05-060322"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05S (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
+]
