@@ -1,8 +1,15 @@
 id = "part/hobao/87562"
 brand = "brand/hobao"
 number = "87562"
-name = "87562"
+name = "Hyper 7.5 wing (White)"
 notes = "A set; the drawings label its pieces Washer 2pcs 3x14mm; White Wing"
 documents = ["doc/hobao/cml-hyper-sse-parts-list", "doc/hobao/cml-hobao-hyper-vs2-manual-instruction-manual", "doc/hobao/cml-hobao-hyper-vs2e-manual-instruction-manual"]
-category = "misc"
-category_source = "fallback"
+category = "wing"
+name_source = "manufacturer"
+links = [
+  { site = "HoBao", url = "https://hobaorc.myshopify.com/products/87562-hyper-7-5-wing-white" },
+]
+fits = [
+  { kit = "kit/hobao/hyper-7", type = "direct", source = "doc/hobao/store" },
+]
+color = "white"
