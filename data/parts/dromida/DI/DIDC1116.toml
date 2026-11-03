@@ -11,3 +11,8 @@ applies_to = "BX4.18"
 gtin = "707768211166"
 category = "shock-spring"
 color = "black"
+fits = [
+  { kit = "kit/dromida/bx4-18", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/dromida/rally-car", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/dromida/touring-car", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+]
