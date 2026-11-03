@@ -9,3 +9,7 @@ gtin = "4548565093755"
 category = "tire"
 documents = ["doc/kyosho/mzt301-40-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzt301-40.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", releases = ["release/kyosho/32347re", "release/kyosho/32354l1", "release/kyosho/32354l3", "release/kyosho/32751"], type = "direct", source = "doc/kyosho/mzt301-40-product-page", notes = "Listed on the maker's Compatible Kits page" },
+  { kit = "kit/kyosho/mini-z-mr-04", releases = ["release/kyosho/32353ag", "release/kyosho/32353s"], type = "direct", source = "doc/kyosho/mzt301-40-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]
