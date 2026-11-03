@@ -19,3 +19,6 @@ fits = [
   { kit = "kit/dromida/sc4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
   { kit = "kit/dromida/touring-car", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

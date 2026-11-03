@@ -11,3 +11,7 @@ links = [
 ]
 pack_qty = 10
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/washer/3x5x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "stainless"
