@@ -8,3 +8,6 @@ seen_by_source = "doc/kyosho/30021-tf-5-m"
 documents = ["doc/kyosho/30021-tf-5-m", "doc/kyosho/31352-infst-r-m", "doc/kyosho/30101-kx-one-m", "doc/kyosho/30101-kx-one-p", "doc/kyosho/30521-b-twinforce-m", "doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30522-b-twinforcecsp-m"]
 category = "nut"
 material = "plastic"
+equivalent_to = [
+  { spec = "spec/nut/m4-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

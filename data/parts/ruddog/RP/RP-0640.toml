@@ -9,3 +9,7 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-7x17x5mm-Ceramic-Engine-Bearing-for-OS-T12-Series_1" },
 ]
 dimensions_mm = [7, 17, 5]
+equivalent_to = [
+  { spec = "spec/bearing/7x17x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"
