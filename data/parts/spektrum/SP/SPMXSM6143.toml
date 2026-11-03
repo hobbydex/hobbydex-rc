@@ -12,3 +12,7 @@ motor_type = "brushed"
 turns = 14
 shaft_mm = 3.175
 waterproof = false
+range = "spektrum/firma-rebuildable-550-3-pole-brushed-motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

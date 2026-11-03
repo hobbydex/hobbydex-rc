@@ -6,6 +6,7 @@ seen_by = "2026-03-12"
 seen_by_source = "https://www.hobbytech-rc.com/wp-sitemap-posts-page-1.xml"
 name_fr = "Moteur éléctrique brushed Konect 550 16T"
 documents = ["doc/hobbytech/parts-pages"]
+turns = 16
 links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-db8-rtr-rd-piece-detachees/" },
 ]
@@ -17,3 +18,6 @@ fits = [
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "motor"
 motor_type = "brushed"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

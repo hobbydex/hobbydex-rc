@@ -4,6 +4,11 @@ number = "ORI28382"
 name = "Vortex Ultimate Modified 540 7.5T"
 name_source = "manufacturer"
 gtin = "7612888283821"
+turns = 7.5
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ori28382.html" } ]
 category = "motor"
 documents = ["doc/kyosho/ori28382-product-page"]
+range = "kyosho/vortex-ultimate-modified-540"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

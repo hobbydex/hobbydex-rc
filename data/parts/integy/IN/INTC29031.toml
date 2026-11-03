@@ -3,8 +3,13 @@ brand = "brand/integy"
 number = "INTC29031"
 name = "Crawler 5-Slot Stator 16 Turn 540 Size Brush Motor"
 status = "discontinued"
+turns = 16
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/integy-crawler-5-slot-stator-16-turn-540-size-brush-motor/INTC29031.html", kind = "dealer" },
 ]
 gtin = "917890364276"
 category = "motor"
+range = "integy/crawler-5-slot-stator-540-size-brush-motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
