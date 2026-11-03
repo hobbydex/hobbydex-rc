@@ -245,6 +245,31 @@ def tamiya_label_only(part):
     return part.get("name_source") == "ocr"
 
 
+HORIZON_LIST_KINDS = ("exploded_view", "part_list", "manual", "supplement")   # documents that list parts, not pages that sell them
+IMAGE_URL = re.compile(r"\.(?:jpe?g|png|gif)$", re.I)
+
+
+def horizon_no_page(part, docs, gone):
+    """True when a Horizon part has no maker page to link: every document that names it is an exploded view, a parts
+    list, a manual or a supplement, its seen_by_source is such a document (or a captured product image), and its item
+    page answers 404 in the cache (gone: the item numbers with a cached horizon-items/<number>-item.html.http404.txt)."""
+    if part.get("number") not in gone or not part.get("documents"):
+        return False
+    if any(docs.get(d, {}).get("kind") not in HORIZON_LIST_KINDS for d in part["documents"]):
+        return False
+    src = part.get("seen_by_source")
+    if not src or src in docs:
+        return not src or docs[src].get("kind") in HORIZON_LIST_KINDS
+    return bool(IMAGE_URL.search(src))
+
+
+def horizon_gone_items(tools):
+    """Item numbers whose Horizon item page answered 404 (cache/notes/horizon-items/<number>-item.html.http404.txt)."""
+    d = os.path.join(tools, "cache", "notes", "horizon-items")
+    suffix = "-item.html.http404.txt"
+    return {n[:-len(suffix)] for n in os.listdir(d) if n.endswith(suffix)} if os.path.isdir(d) else set()
+
+
 def tamiya_static_non_rc(rel_path, tamiya_numbers):
     """True when a cached tamiya-de file (rel_path relative to cache/) is a static kit, paint or tool: its item number
     is in TAMIYA_STATIC and no Tamiya release or part of the data has that number, so no release can take the manual."""
@@ -1481,8 +1506,15 @@ def main():
     # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
     hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
     hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
+    gone_items = horizon_gone_items(os.path.abspath(args.tools))
+    hz_nopage = [p for p in hz if horizon_no_page(p, docs, gone_items)]
+    hz_nopage_ids = {p["id"] for p in hz_nopage}
+    hz = [p for p in hz if p["id"] not in hz_nopage_ids]
+    hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
     check("horizon-part-no-maker-link", "run tools/link_horizon_pages.py (queues the item's Horizon page first; a part Horizon lists nowhere stays unlinked)",
           hz, per_brand=hz_brands.most_common())
+    check("horizon-part-no-maker-page", "no maker page exists: the part is named only by exploded views, parts lists or manuals, and its Horizon item page answers 404 (informational)",
+          hz_nopage, count=len(hz_nopage), per_brand=collections.Counter(p["brand"].split("/")[-1] for p in hz_nopage).most_common(), info=True)
 
     hw_box = []
     for r in rels:
