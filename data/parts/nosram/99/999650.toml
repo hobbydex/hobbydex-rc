@@ -1,0 +1,23 @@
+id = "part/nosram/999650"
+brand = "brand/nosram"
+number = "999650"
+name = "HV LCG Stock Spec Shorty GRAPHENE-4 4100mAh Hardcase battery - 7.6V LiPo - 135C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999650/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4100mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4100
+c_rating = 135
+case = "shorty"
+dimensions_mm = [97, 47, 22.5]
+weight_g = 188
+connector = "5mm bullet"
+name_de = "HV LCG Stock Spec Shorty GRAPHENE-4 4100mAh Hardcase Akku - 7.6V LiPo - 135C / 65C"
+name_source = "dealer"
+voltage = 7.6

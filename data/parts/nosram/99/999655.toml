@@ -1,0 +1,21 @@
+id = "part/nosram/999655"
+brand = "brand/nosram"
+number = "999655"
+name = "HV LCG Stock Spec GRAPHENE-4 6100mAh Hardcase Battery - 7.6V LiPo - 135C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999655/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6100mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 6100
+c_rating = 135
+case = "hard"
+dimensions_mm = [139, 47, 22.5]
+weight_g = 273
+connector = "5mm bullet"
+voltage = 7.6

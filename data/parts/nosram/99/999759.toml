@@ -1,0 +1,22 @@
+id = "part/nosram/999759"
+brand = "brand/nosram"
+number = "999759"
+name = "HV Stock Spec Shorty GRAPHENE-4.1 6200mAh Hardcase Battery - 7.6V LiPo - 130C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999759/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6200mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 6200
+c_rating = 135
+case = "shorty"
+dimensions_mm = [97, 47, 25.1]
+weight_g = 224
+connector = "5mm bullet"
+supersedes = "part/nosram/999659"
+voltage = 7.6

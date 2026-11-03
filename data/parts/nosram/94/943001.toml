@@ -1,0 +1,17 @@
+id = "part/nosram/943001"
+brand = "brand/nosram"
+number = "943001"
+name = "VTEC LiFePo 2000 RX-Pack 2/3A Hump - RX-Only - 6.6V"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/943001/" },
+]
+chemistry = "life"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/life-2s-2000mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 2000
+notes = "Discontinued: in LRP's archive of NOSRAM products"
+voltage = 6.6

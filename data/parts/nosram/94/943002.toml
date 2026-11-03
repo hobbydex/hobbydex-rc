@@ -1,0 +1,16 @@
+id = "part/nosram/943002"
+brand = "brand/nosram"
+number = "943002"
+name = "VTEC LiPo 2200 RX-Pack small Hump - RX-only - 7.4V"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/943002/" },
+]
+chemistry = "lipo"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2200mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 2200
+voltage = 7.4
