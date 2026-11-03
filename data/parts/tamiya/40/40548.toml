@@ -13,3 +13,6 @@ links = [
 category = "chassis"
 documents = ["doc/tamiya/40548-ttg-alu-abdeckung-voob-blau-gt-01-gb-01"]
 material = "aluminium"
+fits = [
+  { kit = "kit/tamiya/gt-01", releases = ["release/tamiya/57103", "release/tamiya/57104"], type = "replaces", source = "doc/tamiya/57103-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -11,3 +11,6 @@ documents = ["doc/tamiya/53222-product-page-ja"]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "chassis"
+fits = [
+  { kit = "kit/tamiya/m-03", releases = ["release/tamiya/58211"], type = "replaces", source = "doc/tamiya/58211-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -8,3 +8,6 @@ links = [
 applies_to = "EB48"
 gtin = "815076011603"
 category = "bumper-guard"
+fits = [
+  { kit = "kit/tekno/eb48-2", releases = ["release/tekno/eb48-2"], type = "replaces", source = "doc/tekno/eb48-2instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

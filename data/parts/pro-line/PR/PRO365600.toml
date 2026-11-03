@@ -6,6 +6,11 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/pro-line-racing-1-8-sector-clear-body-tlr-8ight-x-e-2.0/PRO365600.html" },
 ]
 applies_to = "TLR 8ight-X/E 2.0"
+fits = [
+  { kit = "kit/tlr/8ight-x", type = "replaces", source = "doc/pro-line/horizon-pages", notes = "Listed for the TLR 8ight-X 2.0 (link_car_kits.py)" },
+  { kit = "kit/tlr/8ight-e", type = "replaces", source = "doc/pro-line/horizon-pages", notes = "Listed for the TLR 8ight-E 2.0 (link_car_kits.py)" },
+  { kit = "kit/losi/8ight-e", type = "replaces", source = "doc/pro-line/horizon-pages", notes = "Listed for the TLR 8ight-E 2.0 (link_car_kits.py)" },
+]
 gtin = "660132990169"
 category = "body"
 color = "clear"

@@ -6,6 +6,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/pro-line-racing-1-8-axis-t-clear-body-tlr-8ight-xt-and-8ight-xte/PRO357100.html" },
 ]
 applies_to = "TLR 8ight-XT & 8ight-XTE"
+fits = [
+  { kit = "kit/tlr/8ight-xt", type = "replaces", source = "doc/pro-line/horizon-pages", notes = "Listed for the TLR 8ight-XT & 8ight-XTE (link_car_kits.py)" },
+  { kit = "kit/losi/8ight-xte", type = "replaces", source = "doc/pro-line/horizon-pages", notes = "Listed for the TLR 8ight-XT & 8ight-XTE (link_car_kits.py)" },
+]
 gtin = "675118178530"
 category = "body"
 color = "clear"

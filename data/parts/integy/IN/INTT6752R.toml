@@ -8,6 +8,10 @@ links = [
 pack_qty = 4
 pack_qty_basis = "page"
 applies_to = "Traxxas Nitro Rustler, Nitro Stampede"
+fits = [
+  { kit = "kit/traxxas/nitro-rustler", type = "replaces", source = "doc/integy/horizon-pages", notes = "Listed for the Traxxas Nitro Rustler (link_car_kits.py)" },
+  { kit = "kit/traxxas/nitro-stampede", type = "replaces", source = "doc/integy/horizon-pages", notes = "Listed for the Nitro Stampede (link_car_kits.py)" },
+]
 gtin = "917890068570"
 category = "shock"
 color = "red"

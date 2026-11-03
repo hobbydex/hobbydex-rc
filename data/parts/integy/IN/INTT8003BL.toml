@@ -6,6 +6,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/integy-wheelie-bar-blue-traxxas-stampede-rustler-2wd/INTT8003BL.html", kind = "dealer" },
 ]
 applies_to = "Traxxas Stampede, Rustler 2WD"
+fits = [
+  { kit = "kit/traxxas/stampede-2wd", type = "direct", source = "doc/integy/horizon-pages", notes = "Listed for the Traxxas Stampede (link_car_kits.py)" },
+  { kit = "kit/traxxas/rustler-2wd", type = "direct", source = "doc/integy/horizon-pages", notes = "Listed for the Rustler 2WD (link_car_kits.py)" },
+]
 gtin = "917890085447"
 category = "bumper-guard"
 color = "blue"

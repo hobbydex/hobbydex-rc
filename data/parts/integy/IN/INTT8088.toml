@@ -8,5 +8,10 @@ links = [
 pack_qty = 3
 pack_qty_basis = "page"
 applies_to = "Traxxas Slash, Stampede, Rustler 2WD"
+fits = [
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/integy/horizon-pages", notes = "Listed for the Traxxas Slash (link_car_kits.py)" },
+  { kit = "kit/traxxas/stampede-2wd", type = "replaces", source = "doc/integy/horizon-pages", notes = "Listed for the Stampede (link_car_kits.py)" },
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/integy/horizon-pages", notes = "Listed for the Rustler 2WD (link_car_kits.py)" },
+]
 gtin = "917890064183"
 category = "shock-spring"

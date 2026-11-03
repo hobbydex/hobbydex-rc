@@ -7,3 +7,6 @@ seen_by_source = "https://web.archive.org/web/20100716190958/http://www.redcatra
 category = "body"
 documents = ["doc/redcat/backdraft-3-5-manual"]
 color = "clear"
+fits = [
+  { kit = "kit/redcat/backdraft", releases = ["release/redcat/BACKDRAFT-3.5-BLUE"], type = "replaces", source = "doc/redcat/backdraft-3-5-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
