@@ -7,3 +7,6 @@ seen_by_source = "https://web.archive.org/web/20101122081645/http://www.teamasso
 category = "bearing"
 documents = ["doc/team-associated/cat-tc6"]
 links = [ { site = "Associated Electrics", url = "https://www.teamassociated.com/parts/details/31403/" } ]
+equivalent_to = [
+  { spec = "spec/bearing/4x7x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 4x7 bearing (MR74)" },
+]

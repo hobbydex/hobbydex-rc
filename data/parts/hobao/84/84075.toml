@@ -8,3 +8,6 @@ name_source = "manufacturer"
 links = [
   { site = "HoBao", url = "https://hobaorc.myshopify.com/products/84075-bearing-6-x-13-mm" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/6x13x5", match = "close", notes = "Width not stated in the name; 5 mm is the standard width of a 6x13 bearing (686)" },
+]

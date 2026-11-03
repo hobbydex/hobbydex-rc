@@ -7,3 +7,6 @@ fits = [
   { kit = "kit/kyosho/usa-1", type = "direct", source = "doc/kyosho/3165-usa-1-manual" },
 ]
 documents = ["doc/kyosho/3165-usa-1-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "close", notes = "Width not stated in the name; 3.5 mm is the standard width of a 8x12 bearing (MR128)" },
+]

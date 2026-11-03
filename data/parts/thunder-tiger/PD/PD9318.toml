@@ -6,3 +6,6 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "bearing"
 documents = ["doc/thunder-tiger/6403-f-manual-jd7839", "doc/thunder-tiger/6407-f-manual-jd7583v2", "doc/thunder-tiger/6411-f-manual-jd8034"]
+equivalent_to = [
+  { spec = "spec/bearing/5x13x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 5x13 bearing (695)" },
+]
