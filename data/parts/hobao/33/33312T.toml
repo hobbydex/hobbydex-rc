@@ -9,3 +9,6 @@ name_source = "manufacturer"
 links = [
   { site = "HoBao", url = "https://hobaorc.myshopify.com/products/33312t-m3-x-12-hex-socket-button-head-tapping-screws" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -9,3 +9,6 @@ name_source = "manufacturer"
 links = [
   { site = "HoBao", url = "https://hobaorc.myshopify.com/products/84078-bearing-6-x-10-x-3-mm" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

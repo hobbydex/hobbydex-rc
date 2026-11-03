@@ -11,3 +11,6 @@ category_source = "llm"
 links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20200915182940/https://www.horizonhobby.com/product/m2-x-8mm-cap-head-screw-10/VTR235004.html", kind = "archive" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
