@@ -12,3 +12,8 @@ links = [
 ]
 category = "wire"
 connectors = ["Futaba"]
+equivalent_to = [
+  { spec = "spec/wire/22awg", match = "functional" },
+]
+wire_awg = 22
+length_mm = 600

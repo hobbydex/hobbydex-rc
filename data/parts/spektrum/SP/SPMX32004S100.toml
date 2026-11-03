@@ -19,3 +19,6 @@ c_rating = 100
 connector = "IC3"
 balance_connector = "JST-XH"
 balance_connector_basis = "maker"
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-3200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

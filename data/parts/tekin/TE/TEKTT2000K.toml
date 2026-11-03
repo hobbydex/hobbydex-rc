@@ -7,4 +7,8 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekin-rx4-brushless-esc-2300kv-motor-combo/TEKTT2000K.html", kind = "dealer" },
 ]
 category = "esc"
+motor_type = "brushless"
 lipo_cells = [2, 6]
+includes = [
+  { part = "part/tekin/TT2000", qty = 1, notes = "Component named in the combo's name" },
+]

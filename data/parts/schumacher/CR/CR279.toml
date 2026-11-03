@@ -2,5 +2,15 @@ id = "part/schumacher/CR279"
 brand = "brand/schumacher"
 number = "CR279"
 name = "1S Lipo 8000mAh 100C Pro Series - 3.7V"
+seen_by = "2016-02-02"
+seen_by_source = "https://web.archive.org/web/20160202024516/http://www.racing-cars.com:80/pp/Manufacturer/Core_RC/CR279.html"
 category = "battery"
 documents = ["doc/schumacher/atom2-manual"]
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-8000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 8000
+c_rating = 100
+voltage = 3.7

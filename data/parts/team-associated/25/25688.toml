@@ -2,10 +2,15 @@ id = "part/team-associated/25688"
 brand = "brand/team-associated"
 number = "25688"
 name = "Drive/Brake Hub"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125170412/http://teamassociated.com/parts/details/25688/"
 name_source = "dealer"
 category = "suspension"
 gtin = "784695256880"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Drive-Brake-Hub_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt8-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

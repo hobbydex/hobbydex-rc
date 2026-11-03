@@ -2,8 +2,15 @@ id = "part/koswork/KOS05081-XT"
 brand = "brand/koswork"
 number = "KOS05081-XT"
 name = "2S Charge/Balance Cable Lead 12AWG 500mm XH XT60 to 4/5mm Bullet Connector"
+seen_by = "2025-05-10"
+seen_by_source = "https://web.archive.org/web/20250510064336/https://koswork.com/wp-content/uploads/2025/03/KOS05081-XT-1-80x80.jpg"
 name_source = "manufacturer"
 category = "wire"
 links = [
   { site = "Koswork", url = "https://koswork.com/portfolio-item/kos05081-xt-2s-charge-balance-cable-lead-12awg-500mm-xh-xt60-to-4-5mm-bullet-connector/" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/12awg", match = "functional" },
+]
+wire_awg = 12
+connectors = ["JST-XH", "XT60", "5mm bullet"]

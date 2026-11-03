@@ -2,6 +2,8 @@ id = "part/revolution-design/RDRPB686"
 brand = "brand/revolution-design"
 number = "RDRPB686"
 name = "Ultra Bearing 6x13x5mm"
+seen_by = "2021-01-15"
+seen_by_source = "https://web.archive.org/web/20210115233454/https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-6x13x5mm-4pcs_1"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "bearing"
@@ -12,3 +14,6 @@ links = [
 ]
 universal = true
 universal_basis = "size"
+equivalent_to = [
+  { spec = "spec/bearing/6x13x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

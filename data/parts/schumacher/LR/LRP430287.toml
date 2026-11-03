@@ -13,3 +13,8 @@ category = "battery"
 chemistry = "lipo"
 cells = 2
 voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-3500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 3500
+case = "shorty"

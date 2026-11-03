@@ -3,6 +3,8 @@ brand = "brand/team-associated"
 number = "ASC27370"
 name = "15.2V 5200mAh 4S 115C Zappers SG4 LP Stick LiHV Battery"
 status = "discontinued"
+seen_by = "2021-09-27"
+seen_by_source = "https://web.archive.org/web/20210927095401/https://www.associatedelectrics.com/reedy/parts/details/27370-ASC27370-zappers_sg4_5200mah_115c_15_2v_lp_stick/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-associated-15.2v-5200mah-4s-115c-zappers-sg4-lp-stick-lihv-battery/ASC27370.html", kind = "dealer" },
 ]
@@ -11,3 +13,8 @@ category = "battery"
 chemistry = "lihv"
 cells = 4
 voltage = 15.2
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-5200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5200
+c_rating = 115

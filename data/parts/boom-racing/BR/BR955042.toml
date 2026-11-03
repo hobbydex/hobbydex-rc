@@ -2,11 +2,13 @@ id = "part/boom-racing/BR955042"
 brand = "brand/boom-racing"
 number = "BR955042"
 name = "Heavy Duty Keyed Bevel Helical Underdrive Gear 33/8T + Differential Locker Set for"
+seen_by = "2025-11-12"
+seen_by_source = "https://web.archive.org/web/20251112231829/https://www.boomracing.com/heavy-duty-keyed-bevel-helical-underdrive-gear-33-8t-differential-locker-set-for-brx70-brx80-brx90-phat-ar44-45-capra-axles-185383"
 notes = "The shop's listing cuts the name; the end is taken from the product URL"
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/heavy-duty-keyed-bevel-helical-underdrive-gear-33-8t-differential-locker-set-for-brx70-brx80-brx90-phat-ar44-45-capra-axles-185383" },
 ]
 category = "differential"
 fits = [
-  { kit = "kit/boom-racing/brx02-d130", releases = ["release/boom-racing/br8017"], type = "replaces", source = "doc/boom-racing/manual-brx02-d130-land-rover-denfender130-high-capacity-pickup-4wd", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02-d130", releases = ["release/boom-racing/br8017"], type = "direct", source = "doc/boom-racing/manual-brx02-d130-land-rover-denfender130-high-capacity-pickup-4wd", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

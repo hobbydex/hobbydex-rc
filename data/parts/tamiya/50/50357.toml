@@ -40,3 +40,7 @@ links = [
 name_source = "ocr"
 released = "1988-04"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/50357-product-page"]
+includes = [
+  { spec = "spec/pinion/mod0.6-22t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.6-23t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]

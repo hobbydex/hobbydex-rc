@@ -2,9 +2,15 @@ id = "part/tekno/TKR4288"
 brand = "brand/tekno"
 number = "TKR4288"
 name = "Hardened Steel 28T 5mm Bore Mod 0.8 (32 Pitch) Pinion Gear"
+seen_by = "2025-04-21"
+seen_by_source = "https://web.archive.org/web/20250421074523/https://www.teknorc.com/shop/tkr4288-5mm-bore-mod-0-8-pinion-gear-28t-hrdnd-steel-etched/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-hardened-steel-28t-5mm-bore-mod-0.8-32-pitch-pinion-gear/TKR4288.html", kind = "dealer" },
 ]
 gtin = "810020555042"
 category = "pinion"
 material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/mod0.8-28t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

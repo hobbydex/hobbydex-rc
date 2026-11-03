@@ -2,6 +2,8 @@ id = "part/revolution-design/RDRPBF85"
 brand = "brand/revolution-design"
 number = "RDRPBF85"
 name = "Ultra Bearing 5x8x2.5mm Flanged"
+seen_by = "2021-01-15"
+seen_by_source = "https://web.archive.org/web/20210115233453/https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-5x8x25mm-Flanged-4pcs_1"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "bearing"
@@ -12,3 +14,6 @@ links = [
 ]
 universal = true
 universal_basis = "size"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

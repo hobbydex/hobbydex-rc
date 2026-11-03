@@ -2,6 +2,8 @@ id = "part/boom-racing/BRSH0090-SP"
 brand = "brand/boom-racing"
 number = "BRSH0090-SP"
 name = "KUDU 90mm Coilover Scale Shock Absorbers"
+seen_by = "2025-12-16"
+seen_by_source = "https://web.archive.org/web/20251216183645/https://www.boomracing.com/kudu-90mm-coilover-scale-shock-absorbers-2-204128"
 pack_qty = 2
 pack_qty_basis = "page"
 links = [
@@ -11,7 +13,7 @@ category = "shock"
 shock_part = "complete"
 length_mm = 90
 fits = [
-  { kit = "kit/boom-racing/brx02", releases = ["release/boom-racing/br8004", "release/boom-racing/br8005"], type = "replaces", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20240905", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02", releases = ["release/boom-racing/br8004", "release/boom-racing/br8005"], type = "direct", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20240905", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
   { kit = "kit/boom-racing/brx02-6x6", releases = ["release/boom-racing/br8008"], type = "replaces", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20221111", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/boom-racing/brx02-d130", releases = ["release/boom-racing/br8017"], type = "replaces", source = "doc/boom-racing/manual-brx02-d130-land-rover-denfender130-high-capacity-pickup-4wd", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02-d130", releases = ["release/boom-racing/br8017"], type = "direct", source = "doc/boom-racing/manual-brx02-d130-land-rover-denfender130-high-capacity-pickup-4wd", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

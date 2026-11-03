@@ -2,10 +2,16 @@ id = "part/team-associated/89262"
 brand = "brand/team-associated"
 number = "89262"
 name = "Molded Shock Caps"
+seen_by = "2010-12-18"
+seen_by_source = "https://web.archive.org/web/20101218230105/http://teamassociated.com/pictures/products/89262/89262_sm.jpg"
 name_source = "dealer"
 category = "shock"
 gtin = "784695892620"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Molded-Shock-Caps_1", kind = "dealer" },
+]
+shock_part = "cap"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80901-25", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

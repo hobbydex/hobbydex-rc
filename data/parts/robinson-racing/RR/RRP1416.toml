@@ -11,3 +11,6 @@ material = "steel"
 teeth = 16
 pitch_dp = 48
 bore_mm = 3.175
+equivalent_to = [
+  { spec = "spec/pinion/48dp-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

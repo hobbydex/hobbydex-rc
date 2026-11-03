@@ -3,6 +3,8 @@ brand = "brand/team-associated"
 number = "ASC643"
 name = "Low-Profile Bullet Connectors, 4mm"
 status = "discontinued"
+seen_by = "2019-08-20"
+seen_by_source = "https://web.archive.org/web/20190820050010/https://www.associatedelectrics.com/reedy/parts/details/643-ASC643-low-profile_bullet_connectors_4x14_mm/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-associated-low-profile-bullet-connectors-4mm-2/ASC643.html", kind = "dealer" },
   { site = "RUDDOG", url = "https://www.ruddog.eu/Reedy-LOW-PROFILE-BULLET-4x14MM-2_1", kind = "dealer" },
@@ -11,3 +13,6 @@ pack_qty = 2
 pack_qty_basis = "page"
 gtin = "784695006430"
 category = "wire"
+equivalent_to = [
+  { spec = "spec/connector/bullet-4mm", match = "functional" },
+]

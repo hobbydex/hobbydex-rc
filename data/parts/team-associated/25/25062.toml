@@ -2,6 +2,8 @@ id = "part/team-associated/25062"
 brand = "brand/team-associated"
 number = "25062"
 name = "Blue/Soft Shock Springs, 4.40 lb"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125174622/http://teamassociated.com/parts/details/25062/"
 name_source = "dealer"
 category = "shock-spring"
 gtin = "784695250628"
@@ -10,3 +12,8 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Blue-Soft-Shock-Springs-440-lb_1", kind = "dealer" },
 ]
 color = "blue"
+rate = "soft"
+rate_lb_in = 4.4
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/drawing-mgt4-6", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

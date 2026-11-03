@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0244"
 brand = "brand/ruddog"
 number = "RP-0244"
 name = "16awg Silicone Wire (Black/1m)"
+seen_by = "2021-01-15"
+seen_by_source = "https://web.archive.org/web/20210115231610/https://www.ruddog.eu/RUDDOG-16awg-Silicone-Wire-Black-1m_1"
 category = "wire"
 gtin = "4052133011527"
 documents = ["doc/ruddog/store"]
@@ -9,3 +11,9 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-16awg-Silicone-Wire-Black-1m_1" },
 ]
 color = "black"
+equivalent_to = [
+  { spec = "spec/wire/16awg", match = "functional" },
+]
+wire_awg = 16
+insulation = "silicone"
+length_mm = 1000

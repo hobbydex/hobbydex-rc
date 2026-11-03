@@ -374,6 +374,24 @@ def load_gtin_holes(tools):
         return None
 
 
+def load_linker_drift(tools):
+    """[(step, files)] of the last daily derive's verify pass (hobbydex-tools tools/derive_fields.py writes
+    cache/notes/linker-drift.tsv: step, files changed on a second run over the data it had just derived, date);
+    None when the file is absent."""
+    p = os.path.join(tools, "cache", "notes", "linker-drift.tsv")
+    try:
+        with open(p, encoding="utf-8") as f:
+            rows = [ln.rstrip("\n").split("\t") for ln in f if ln.strip() and not ln.startswith("step\t")]
+    except OSError:
+        return None
+    return [(r[0], int(r[1])) for r in rows if len(r) >= 2 and r[1].isdigit()]
+
+
+def linkers_that_would_change(drift):
+    """Lines "<step>: <n> files" for each wired linker that changed data when run again over derived data (it should change none)."""
+    return [f"{step}: {n} files" for step, n in drift if n]
+
+
 def gtin_in_cache_not_stored(holes, by_id):
     """Ids of the records the sweep found a barcode for in the cache that still have no gtin."""
     return sorted(i for i in holes if i in by_id and not by_id[i].get("gtin"))
@@ -510,6 +528,7 @@ def load_tools(tools):
         out["tamico"] = tamico
     out["sources"] = load_art_sources(tools)
     out["gtin_holes"] = load_gtin_holes(tools)
+    out["linker_drift"] = load_linker_drift(tools)
     cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
@@ -533,6 +552,11 @@ def load_tools(tools):
 def fits_claim(f):
     """The claim a fits row makes: its kit, its releases (None for the whole kit) and its car."""
     return (f.get("kit"), tuple(sorted(f["releases"])) if "releases" in f else None, f.get("car"))
+
+
+def kit_without_release(kits, rels_of_kit, kit_id):
+    """A fits row's kit that has no release to name. A family kit (family = true) is a label parts fit, not a car: no release is owed."""
+    return kit_id in kits and not kits[kit_id].get("family") and not rels_of_kit.get(kit_id)
 
 
 def duplicate_fits(parts):
@@ -1019,6 +1043,15 @@ def main():
     else:
         results["gtin-in-cache-not-stored"] = {"fix": "hobbydex-tools cache/gtin_sweep_holes.json not found (python3 -I tools/gtin_sweep.py scan, then report)", "count": None, "examples": [], "all": []}
 
+    # 9c. a wired linker that would change data (the daily derive runs each one twice; the second run must change nothing)
+    if tools["linker_drift"] is not None:
+        drift = linkers_that_would_change(tools["linker_drift"])
+        check("linker-would-change", "a linker in hobbydex-tools tools/derive_fields.py changed data on its second run over the same data (cache/notes/linker-drift.tsv): it is not idempotent; fix it to write only empty fields, or take it out of the derive",
+              drift)
+        results["linker-would-change"]["examples"] = [{"id": d, "url": ""} for d in drift[:args.examples]]
+    else:
+        results["linker-would-change"] = {"fix": "hobbydex-tools cache/notes/linker-drift.tsv not found (written by the daily derive)", "count": None, "examples": [], "all": []}
+
     # 10. copyright-year release years
     check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",
           [r for r in rels if r.get("year") and not r.get("released") and re.search(r"copyright|\(c\)|©", r.get("notes", ""), re.I)])
@@ -1178,14 +1211,14 @@ def main():
           no_car, per_brand=per_brand.most_common(),
           detail=f"{generic_unlinked} unlinked parts of any-car categories and {aircraft_unlinked} unlinked aircraft, helicopter and drone parts are left out; {sum(1 for p in parts if not p.get('category') and p['id'] not in in_box and not p.get('fits'))} unlinked parts have no category yet")
 
-    # 20. part fits a kit that has no releases
+    # 20. part fits a kit that has no releases (a family kit takes none: docs/schema.md "kit")
     check("fits-kit-no-release", "add the kit's release, or remove the fit row",
-          [p for p in parts for f in p.get("fits", []) if f.get("kit") in kits and not rels_of_kit.get(f["kit"])])
+          [p for p in parts for f in p.get("fits", []) if kit_without_release(kits, rels_of_kit, f.get("kit"))])
     # the kits each flagged part fits, for --list (id TAB kits) and a per-kit count in the summary
     nr_kits = collections.defaultdict(set)
     for p in parts:
         for f in p.get("fits", []):
-            if f.get("kit") in kits and not rels_of_kit.get(f["kit"]):
+            if kit_without_release(kits, rels_of_kit, f.get("kit")):
                 nr_kits[p["id"]].add(f["kit"])
     results["fits-kit-no-release"]["kit_of"] = {i: ", ".join(sorted(k)) for i, k in nr_kits.items()}
     per_kit = collections.Counter(k for ks in nr_kits.values() for k in ks)

@@ -3,6 +3,8 @@ brand = "brand/team-associated"
 number = "ASC27388"
 name = "15.2V 6550mAh 4S 130C Zappers SG5 Stick LiHV"
 status = "discontinued"
+seen_by = "2024-05-30"
+seen_by_source = "https://web.archive.org/web/20240530060245/https://www.associatedelectrics.com/reedy/parts/details/27388-ASC27388-zappers_sg5_6550mah_130c_15_2v_stick/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-associated-15.2v-6550mah-4s-130c-zappers-sg5-stick-lihv/ASC27388.html", kind = "dealer" },
 ]
@@ -15,3 +17,6 @@ weight_g = 540
 dimensions_mm = [139, 47, 48]
 capacity_mah = 6550
 c_rating = 130
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-6550mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

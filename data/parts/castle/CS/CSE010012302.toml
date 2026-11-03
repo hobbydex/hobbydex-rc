@@ -2,9 +2,14 @@ id = "part/castle/CSE010012302"
 brand = "brand/castle"
 number = "CSE010012302"
 name = "1/10 Sidewinder SCT Waterproof ESC/1410-3800Kv Brushless Motor Sensored Combo: 4mm Bullet"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-1-10-sidewinder-sct-waterproof-esc-1410-3800kv-brushless-motor-sensored-combo-4mm-bullet/CSE010012302.html", kind = "dealer" },
 ]
 gtin = "819326011542"
 category = "esc"
+waterproof = true
 motor_type = "brushless"
+includes = [
+  { part = "part/castle/CSE010011500", qty = 1, notes = "Component named in the combo's name" },
+]

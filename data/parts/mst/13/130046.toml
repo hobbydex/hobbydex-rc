@@ -11,7 +11,7 @@ links = [
 ]
 category = "chassis"
 fits = [
-  { kit = "kit/mst/cfx", type = "replaces", source = "doc/mst/cfx-instruction-manual-a", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/mst/cfx-w", type = "replaces", source = "doc/mst/cfx-w-instruction-manual-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/mst/cfx-ws", type = "replaces", source = "doc/mst/cfx-ws-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/cfx", type = "direct", source = "doc/mst/cfx-instruction-manual-a", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/cfx-w", type = "direct", source = "doc/mst/cfx-w-instruction-manual-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/cfx-ws", type = "direct", source = "doc/mst/cfx-ws-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

@@ -4,6 +4,7 @@ number = "LCE011"
 name = "DPM 2845 Sensorless Brushless Motor, 4800KV, 3.175mm Shaft"
 documents = ["doc/lc-racing/lce011-product-page"]
 applies_to = "LC12B1, All EMB and BHC Series"
+sensored = false
 fits = [
   { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/lce011-product-page" },
   { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/lce011-product-page" },
@@ -17,5 +18,6 @@ fits = [
   { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/lce011-product-page" },
 ]
 category = "motor"
+motor_type = "brushless"
 kv = 4800
 gtin = "4570110896528"

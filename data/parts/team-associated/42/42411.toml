@@ -2,6 +2,8 @@ id = "part/team-associated/42411"
 brand = "brand/team-associated"
 number = "42411"
 name = "ENDURO RC10TT ROCK SLIDERS, NATURAL"
+seen_by = "2025-08-04"
+seen_by_source = "https://web.archive.org/web/20250804102420/https://60years.associatedelectrics.com/enduro-rock-sliders-natural/"
 gtin = "784695424111"
 numbers = ["AS42411"]
 documents = ["doc/team-associated/cml-distribution-spares"]
@@ -10,5 +12,5 @@ links = [
 ]
 category = "bumper-guard"
 fits = [
-  { kit = "kit/team-associated/rc10-trail-truck", releases = ["release/team-associated/40137"], type = "replaces", source = "doc/team-associated/40137-rc10tt-manual-07-15-2025", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10-trail-truck", releases = ["release/team-associated/40137"], type = "direct", source = "doc/team-associated/40137-rc10tt-manual-07-15-2025", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

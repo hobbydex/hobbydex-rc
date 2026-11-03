@@ -2,10 +2,15 @@ id = "part/team-associated/25106"
 brand = "brand/team-associated"
 number = "25106"
 name = "Front & Rear Transmission Chassis Mounts"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125205558/http://teamassociated.com/parts/details/25106/"
 name_source = "dealer"
 category = "chassis"
 gtin = "784695251069"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Front-Rear-Transmission-Chassis-Mounts_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt4-60se-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

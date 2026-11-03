@@ -2,6 +2,8 @@ id = "part/revolution-design/RDRPBR2013"
 brand = "brand/revolution-design"
 number = "RDRPBR2013"
 name = "Ultra Bearing 13x20x4mm"
+seen_by = "2021-01-15"
+seen_by_source = "https://web.archive.org/web/20210115232915/https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-13x20x4mm-4pcs_1"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "bearing"
@@ -12,3 +14,6 @@ links = [
 ]
 universal = true
 universal_basis = "size"
+equivalent_to = [
+  { spec = "spec/bearing/13x20x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

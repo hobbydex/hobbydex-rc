@@ -2,10 +2,18 @@ id = "part/team-associated/21384"
 brand = "brand/team-associated"
 number = "21384"
 name = "FT Ball Diff Pulley, front"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126235553/http://teamassociated.com/pictures/products/21384/21384_md.jpg"
 name_source = "dealer"
 category = "differential"
 gtin = "784695213845"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-FT-Ball-Diff-Pulley-front_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/rc18b", releases = ["release/team-associated/20106", "release/team-associated/20108"], type = "replaces", source = "doc/team-associated/manual-1-18-conversion", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18lm", releases = ["release/team-associated/20130"], type = "replaces", source = "doc/team-associated/manual-1-18-conversion", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18t", releases = ["release/team-associated/20101", "release/team-associated/20103", "release/team-associated/20104"], type = "replaces", source = "doc/team-associated/cat-rc18t2-b2team", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc18", releases = ["release/team-associated/20121"], type = "replaces", source = "doc/team-associated/manual-1-18-conversion", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

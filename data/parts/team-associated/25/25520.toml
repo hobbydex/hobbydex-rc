@@ -2,10 +2,15 @@ id = "part/team-associated/25520"
 brand = "brand/team-associated"
 number = "25520"
 name = "Forward/Reverse Gears"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127200424/http://teamassociated.com/parts/details/25520/"
 name_source = "dealer"
 category = "gear"
 gtin = "784695255203"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Forward-Reverse-Gears_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

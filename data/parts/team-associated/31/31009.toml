@@ -2,10 +2,15 @@ id = "part/team-associated/31009"
 brand = "brand/team-associated"
 number = "31009"
 name = "FT Molded Carbon Suspension Arms, rear"
+seen_by = "2011-11-28"
+seen_by_source = "https://web.archive.org/web/20111128041248/http://teamassociated.com/factoryteam/parts/details/31009/"
 name_source = "dealer"
 category = "suspension"
 gtin = "784695310094"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-FT-Molded-Carbon-Suspension-Arms-rear_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/tc4", releases = ["release/team-associated/30111"], type = "replaces", source = "doc/team-associated/cat-tc4rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

@@ -12,3 +12,6 @@ category = "pinion"
 fits = [
   { kit = "kit/dromida/backbone-rock-racer", type = "direct", source = "doc/dromida/horizon-part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/pinion/mod0.6-17t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

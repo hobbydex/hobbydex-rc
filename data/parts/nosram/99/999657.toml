@@ -6,11 +6,12 @@ category = "battery"
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/999657/" },
+  { site = "LRP", url = "https://www.lrp.cc/en/product/999657/" },
 ]
 chemistry = "lihv"
 cells = 2
 equivalent_to = [
-  { spec = "spec/battery/lihv-2s-6700mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+  { spec = "spec/battery/lihv-2s-6700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
 ]
 capacity_mah = 6700
 c_rating = 120

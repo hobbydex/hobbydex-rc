@@ -2,10 +2,15 @@ id = "part/team-associated/25530"
 brand = "brand/team-associated"
 number = "25530"
 name = "Slipper Friction Rings"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127225833/http://teamassociated.com/parts/details/25530/"
 name_source = "dealer"
 category = "gear"
 gtin = "784695255302"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Slipper-Friction-Rings_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

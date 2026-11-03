@@ -2,12 +2,15 @@ id = "part/tamiya/51497"
 brand = "brand/tamiya"
 number = "51497"
 name = "Body Set Volkswagen Golf 24 Nürburgring"
+seen_by = "2015-02-22"
+seen_by_source = "https://web.archive.org/web/20150222184400/http://www.tamiyausa.com:80/items/radio-control-parts-70/body-set-touring-car-190mm-71110/rc-body-set-volkswagen-golf24-51497"
 name_de = "Body Set Volkswagen Golf 24 Nürburg."
 notes = "Name from Tamiya's manual listing (customer-service.tamiya.de); English name translated from the German listing title"
 links = [
   { site = "Tamiya customer service", url = "https://customer-service.tamiya.de/en/service/manuals/", kind = "maker" },
 ]
 category = "body"
+depicts = { make = "Volkswagen", model = "Golf 24 Nürburgring" }
 documents = ["doc/tamiya/51497-kar-satz-vw-golf-vi-24h"]
 fits = [
   { kit = "kit/tamiya/wr-02", releases = ["release/tamiya/58531"], type = "replaces", source = "doc/tamiya/58531-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },

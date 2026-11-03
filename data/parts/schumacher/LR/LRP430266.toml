@@ -2,9 +2,9 @@ id = "part/schumacher/LRP430266"
 brand = "brand/schumacher"
 number = "LRP430266"
 name = "Lipo 4200mAh - P5-HV Real Shorty LCG - 7.6V"
+seen_by = "2018-07-28"
+seen_by_source = "https://web.archive.org/web/20180728051240/http://www.racing-cars.com:80/pp/New_Cars_and_Parts/Cougar_KD/LRP430266.html"
 name_source = "manufacturer"
-seen_by = "2019-02-08"
-seen_by_source = "https://web.archive.org/web/20190208154731/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=882&templateid=69&sortname1=partno"
 fits = [
   { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
@@ -13,3 +13,8 @@ category = "battery"
 chemistry = "lipo"
 cells = 2
 voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4200
+case = "shorty"

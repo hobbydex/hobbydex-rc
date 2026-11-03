@@ -9,3 +9,7 @@ links = [
 ]
 gtin = "4711643280198"
 notes = "known from the distributor RUDDOG"
+volume_ml = 70
+equivalent_to = [
+  { spec = "spec/oil/silicone-300000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]

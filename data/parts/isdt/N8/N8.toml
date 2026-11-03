@@ -2,6 +2,8 @@ id = "part/isdt/N8"
 brand = "brand/isdt"
 number = "N8"
 name = "N8 cylindrical-cell charger"
+seen_by = "2026-10-30"
+seen_by_source = "https://www.isdt.co/n8-n16-n24.html?lang=en"
 category = "charger"
 category_source = "curated"
 dimensions_mm = [188.5, 79, 28]
@@ -11,3 +13,6 @@ documents = ["doc/isdt/n8-manual"]
 links = [
   { site = "ISDT", url = "https://www.isdt.co/n8-n16-n24.html?lang=en" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "nizn"]
+charge_current_a = 1.5
+charger_source = "https://www.isdt.co/n8-n16-n24.html?lang=en"

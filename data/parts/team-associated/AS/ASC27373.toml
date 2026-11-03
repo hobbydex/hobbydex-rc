@@ -3,6 +3,8 @@ brand = "brand/team-associated"
 number = "ASC27373"
 name = "7.6V 6000mAh 2S 130C Zappers DR Stick HV-LiPo Battery"
 status = "discontinued"
+seen_by = "2024-06-15"
+seen_by_source = "https://web.archive.org/web/20240615012103/https://www.associatedelectrics.com/reedy/parts/details/27373-ASC27373-zappers_dr_6000mah_130c_7_6v_lp_stick/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-associated-7.6v-6000mah-2s-130c-zappers-dr-stick-hv-lipo-battery-lp/ASC27373.html", kind = "dealer" },
 ]
@@ -15,3 +17,6 @@ voltage = 7.6
 weight_g = 270
 capacity_mah = 6000
 c_rating = 130
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

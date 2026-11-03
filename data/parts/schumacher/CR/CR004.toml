@@ -2,9 +2,9 @@ id = "part/schumacher/CR004"
 brand = "brand/schumacher"
 number = "CR004"
 name = "CORE RC - 5000mAHr 7.4v LiPo"
+seen_by = "2008-11-17"
+seen_by_source = "https://web.archive.org/web/20081117182536/http://www.racing-cars.com/images/cr004_wt.jpg"
 name_source = "manufacturer"
-seen_by = "2010-01-30"
-seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
 fits = [
   { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
@@ -12,3 +12,8 @@ documents = ["doc/schumacher/mi3-spares-archive"]
 category = "battery"
 chemistry = "lipo"
 voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+capacity_mah = 5000

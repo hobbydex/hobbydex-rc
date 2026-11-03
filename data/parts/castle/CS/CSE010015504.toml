@@ -2,6 +2,7 @@ id = "part/castle/CSE010015504"
 brand = "brand/castle"
 number = "CSE010015504"
 name = "1/10 Mamba X Waterproof ESC/1406-7700Kv Sensored Brushless Motor Combo: 4mm Bullet"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-1-10-mamba-x-waterproof-esc-1406-7700kv-sensored-brushless-motor-combo-4mm-bullet/CSE010015504.html", kind = "dealer" },
 ]
@@ -15,3 +16,7 @@ bec_a = 8
 connector = "4mm bullet"
 motor_connector = "4mm bullet"
 waterproof = true
+includes = [
+  { part = "part/castle/CSE010015500", qty = 1, notes = "Component named in the combo's name" },
+  { part = "part/castle/060-0059-00", qty = 1, notes = "Component named in the combo's name" },
+]

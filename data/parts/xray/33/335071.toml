@@ -2,12 +2,14 @@ id = "part/xray/335071"
 brand = "brand/xray"
 number = "335071"
 name = "DIFF OUTDRIVE ADAPTER - LONG - HUDY SPRING STEEL"
+seen_by = "2024-09-21"
+seen_by_source = "https://web.archive.org/web/20240921102111/https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2040"
 pack_qty = 2
 pack_qty_basis = "manual"
 category = "differential"
 material = "steel"
 links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2040" }]
 fits = [
-  { kit = "kit/xray/nt1", releases = ["release/xray/330008", "release/xray/330009"], type = "replaces", source = "doc/xray/nt1-2014-part-list" },
+  { kit = "kit/xray/nt1", releases = ["release/xray/330008", "release/xray/330009"], type = "direct", source = "doc/xray/nt1-2014-part-list" },
 ]
 documents = ["doc/xray/nt1-2013-part-list", "doc/xray/nt1-2014-part-list"]

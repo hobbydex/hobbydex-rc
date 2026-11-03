@@ -2,6 +2,8 @@ id = "part/tekno/TKR6004T"
 brand = "brand/tekno"
 number = "TKR6004T"
 name = "Shock Shafts w TiNi Coating Fr Steel EB48"
+seen_by = "2013-02-09"
+seen_by_source = "https://web.archive.org/web/20130209104313/http://www.teknorc.com:80/shop/tkr6004t-shock-shafts-wtini-coating-front-steel-2pcs/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-shock-shafts-w-tini-coating-fr-steel-eb482/TKR6004T.html", kind = "dealer" },
 ]
@@ -14,3 +16,5 @@ fits = [
   { kit = "kit/tekno/eb48sl", releases = ["release/tekno/eb48sl"], type = "replaces", source = "doc/tekno/eb48sl-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
   { kit = "kit/tekno/sct410-3", releases = ["release/tekno/sct410-3"], type = "replaces", source = "doc/tekno/sct410-3-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]
+shock_part = "shaft"
+material = "steel"

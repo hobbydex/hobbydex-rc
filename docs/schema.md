@@ -155,6 +155,8 @@ drive = "2wd"        # 2wd | 4wd | 6wd | 8wd | fwd | tracks
 power = "electric"   # electric | nitro | petrol
 ```
 
+`family = true` (optional, on a kit): a platform or family label that parts fit; no single car was sold under it. Parts may fit it, but it takes no release, and audit `fits-kit-no-release` skips it.
+
 `power` is left out on a kit sold both ways: when its releases include both electric and nitro or gas ones (HPI WR8, Savage X, Baja 5B), each release shows its own power and the kit shows none.
 
 Optional on a kit: `rebrand_of`, the kits this one is the same car as under
@@ -595,7 +597,7 @@ Releases can carry a `gtin` too, the barcode on the kit's box.
 
 `links`: pages about this part, release or kit elsewhere, as `{ site, url }`
 (https only); the site shows them as buttons next to the web search.
-A maker address in a language the maker also publishes in is the English page of the same item when that page is cached and is a real page (not a server error): the English address replaces the other-language one in `links`, `url` and `page`. A `_source` field (`seen_by_source`, `announced_source`) keeps the page its date was read from, as captured (tools/link_language_variants.py in hobbydex-tools).
+A maker address in a language the maker also publishes in is the English page of the same item when that page is cached and is a real page (not a server error): the English address replaces the other-language one in `url` and `page`, and is added beside it in `links` (the other-language entry stays: links only grow). A `_source` field (`seen_by_source`, `announced_source`) keeps the page its date was read from, as captured (tools/link_language_variants.py in hobbydex-tools).
 `kind = "press"` marks a news or press site's post about the release or part (Big Squid RC, Red RC, CompetitionX, Circus RC, LiveRC); see `announced`.
 `kind = "dealer"` marks a retailer's or distributor's product page for this release or part, when the maker has none for it. It is a shop's page, never the maker's: the site shows it as "Dealer page: <host>", never as the product page. A release or part keeps a dealer link only when it has no maker product page (a maker link or a `product_page` document of the maker); a release has one, a part one per shop, each its own product page on the shop; tools/validate.py fails a release or part with a dealer link beside a maker link or product page. A shop's listing page that names several releases is a document of kind `catalog`, never a release's link.
 `kind = "maker"` marks a page of the brand's own shop or site that is not its product page (the Tamiya USA spare page of an 8-digit Tamiya spare, `{ site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/...", kind = "maker" }`); the site shows it as a maker page. A part with a maker-kind link keeps its dealer links (user, 2026-10-24), and tools/validate.py counts only a link with no kind as the maker product link for the dealer rule.
@@ -1127,6 +1129,8 @@ outer_mm = 6
 thickness_mm = 0.5
 ```
 
+Tube specs (`spec/tube/<bore>x<outer>[x<length>]`, category "tube") use the same `shape` field with `flanged` or `crush` where the maker's name says a flanged or crush tube; such a tube does not replace a plain one, so the shape is in the id (`spec/tube/flanged-3x6x5`).
+
 ### E-clip specs
 
 `spec/eclip/<shaft>mm` (category "eclip", `shaft_mm`): an E-clip (E-ring, DIN
@@ -1278,6 +1282,8 @@ that `connectors` is only on wire parts, and that a part has not both
 A battery or ESC is not equivalent to its plug either: it names its plug in
 `connector` (the site links that field to the spec) and has no `equivalent_to`
 row to a connector spec.
+
+A wire part whose name gives no plug (a bare "Connector") takes the plug of a title on its brand's own page, in the field right before its item number ("Spektrum Connector: IC3 Battery (2) Spektrum - SPMXCA302"). Horizon Hobby's pages count for Spektrum, ARRMA, ECX, Axial, Losi and Dynamite. Stored rows are never removed or changed by the linker (tools/link_connector_specs.py).
 
 ```toml
 id = "spec/connector/ec5"

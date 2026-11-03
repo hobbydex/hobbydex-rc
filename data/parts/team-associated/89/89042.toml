@@ -2,10 +2,15 @@ id = "part/team-associated/89042"
 brand = "brand/team-associated"
 number = "89042"
 name = "RC8 Arm Mount D, 2.5 deg"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127155720/http://teamassociated.com/parts/details/89042/"
 name_source = "dealer"
 category = "suspension"
 gtin = "784695890428"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-RC8-Arm-Mount-D-25-deg_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

@@ -2,10 +2,15 @@ id = "part/team-associated/89271"
 brand = "brand/team-associated"
 number = "89271"
 name = "RTR Shock Tower, rear"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127133022/http://teamassociated.com/parts/details/89271/"
 name_source = "dealer"
 category = "chassis"
 gtin = "784695892712"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-RTR-Shock-Tower-rear_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

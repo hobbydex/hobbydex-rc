@@ -2,6 +2,8 @@ id = "part/isdt/N16"
 brand = "brand/isdt"
 number = "N16"
 name = "N16 cylindrical-cell charger"
+seen_by = "2026-10-30"
+seen_by_source = "https://www.isdt.co/n8-n16-n24.html?lang=en"
 category = "charger"
 category_source = "curated"
 dimensions_mm = [308.4, 79, 28]
@@ -10,3 +12,6 @@ notes = "Specifications: Power input: Ø6.5 DC jack, Input voltage: 5-12V, Input
 links = [
   { site = "ISDT", url = "https://www.isdt.co/n8-n16-n24.html?lang=en" },
 ]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "nizn"]
+charge_current_a = 1.5
+charger_source = "https://www.isdt.co/n8-n16-n24.html?lang=en"

@@ -4,6 +4,14 @@ number = "OCHGB0R1"
 name = "BALANCE CHARGER/DISCHARGER"
 category = "charger"
 status = "discontinued"
+seen_by = "2017-02-21"
+seen_by_source = "https://web.archive.org/web/20170221143031/http://www.orcarc.com:80/product/orca-balance-chargerdischarger/"
 links = [
   { site = "ORCA", url = "https://www.orcarc.com/product/orca-balance-chargerdischarger/" },
 ]
+charges = ["lipo", "lihv", "life", "nimh", "nicd", "pb"]
+charge_current_a = 25
+dc_input_v = [11, 32]
+lipo_cells = [1, 6]
+balance_ports = ["JST-XH"]
+charger_source = "https://www.orcarc.com/product/orca-balance-chargerdischarger/"

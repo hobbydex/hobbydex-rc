@@ -16,3 +16,6 @@ dimensions_mm = [101, 29, 45]
 capacity_mah = 3200
 c_rating = 10
 connector = "IC3"
+equivalent_to = [
+  { spec = "spec/battery/life-3s-3200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

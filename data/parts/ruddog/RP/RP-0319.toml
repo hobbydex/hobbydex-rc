@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0319"
 brand = "brand/ruddog"
 number = "RP-0319"
 name = "XT90 Connector male"
+seen_by = "2021-01-16"
+seen_by_source = "https://web.archive.org/web/20210116003554/https://www.ruddog.eu/RUDDOG-XT90-Connector-male-2pcs_1"
 category = "wire"
 gtin = "4052133012906"
 documents = ["doc/ruddog/store"]
@@ -10,3 +12,6 @@ links = [
 ]
 pack_qty = 2
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/connector/xt90", match = "functional" },
+]

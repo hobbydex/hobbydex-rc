@@ -2,10 +2,16 @@ id = "part/nosram/900004"
 brand = "brand/nosram"
 number = "900004"
 name = "HD TC spec"
+seen_by = "2024"
+seen_by_source = "doc/nosram/2024-hd-setupsheet-offroad-v3-1-v3-2"
 category = "esc"
+motor_type = "brushless"
+sensored = true
+motor_limit_t = 2.5
 category_source = "curated"
 links = [
   { site = "LRP", url = "https://www.lrp.cc/de/produkt/900004/" },
+  { site = "LRP", url = "https://www.lrp.cc/en/product/900004/" },
 ]
 lipo_cells = [2, 2]
 dimensions_mm = [33.7, 32.6, 19.8]

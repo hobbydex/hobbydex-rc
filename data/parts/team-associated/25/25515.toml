@@ -2,10 +2,15 @@ id = "part/team-associated/25515"
 brand = "brand/team-associated"
 number = "25515"
 name = "2-Speed Shaft"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127220223/http://teamassociated.com/parts/details/25515/"
 name_source = "dealer"
 category = "drivetrain"
 gtin = "784695255159"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-2-Speed-Shaft_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

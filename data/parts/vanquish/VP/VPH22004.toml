@@ -2,8 +2,13 @@ id = "part/vanquish/VPH22004"
 brand = "brand/vanquish"
 number = "VPH22004"
 name = "Titanium Hardware VFD Transmission Kit"
+seen_by = "2025-05-27"
+seen_by_source = "https://vanquishproducts.com/products/titanium-hardware-vrd-chassis-kit-copy"
 links = [
   { site = "Vanquish", url = "https://vanquishproducts.com/products/titanium-hardware-vrd-chassis-kit-copy" },
 ]
 category = "gear"
 gtin = "791512786475"
+fits = [
+  { kit = "kit/vanquish/vs4-10", releases = ["release/vanquish/vps09019", "release/vanquish/vps09025"], type = "replaces", source = "doc/vanquish/vps09019-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

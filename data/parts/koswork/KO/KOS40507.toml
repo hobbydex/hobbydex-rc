@@ -2,6 +2,8 @@ id = "part/koswork/KOS40507"
 brand = "brand/koswork"
 number = "KOS40507"
 name = "5x7x0.1mm & 5x7x0.3mm 5mm Shaft Shims (4pcs/each)"
+seen_by = "2024-06-21"
+seen_by_source = "https://web.archive.org/web/20240621074908/https://koswork.com/wp-content/uploads/2020/04/KOS40507-2-705x469.jpg"
 name_source = "dealer"
 category = "washer-shim"
 gtin = "4710588220627"
@@ -11,3 +13,7 @@ links = [
 ]
 pack_qty = 4
 pack_qty_basis = "name"
+includes = [
+  { spec = "spec/washer/5x7x0.1" },
+  { spec = "spec/washer/5x7x0.3" },
+]

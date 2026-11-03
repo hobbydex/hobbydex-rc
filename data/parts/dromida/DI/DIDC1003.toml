@@ -18,3 +18,7 @@ fits = [
   { kit = "kit/dromida/sc4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
   { kit = "kit/dromida/touring-car", type = "direct", source = "doc/dromida/horizon-part-pages" },
 ]
+includes = [
+  { spec = "spec/ring-pinion/ring-38t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-15t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]

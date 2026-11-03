@@ -2,10 +2,15 @@ id = "part/team-associated/31001"
 brand = "brand/team-associated"
 number = "31001"
 name = "Chassis Braces"
+seen_by = "2011-11-28"
+seen_by_source = "https://web.archive.org/web/20111128115254/http://teamassociated.com/pdf/cars_and_trucks/TC4/31001_tc4_teamsetup.pdf"
 name_source = "dealer"
 category = "chassis"
 gtin = "784695310018"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Chassis-Braces_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/tc4", releases = ["release/team-associated/30111"], type = "replaces", source = "doc/team-associated/31001-tc4-teamsetup", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

@@ -2,10 +2,15 @@ id = "part/team-associated/25598"
 brand = "brand/team-associated"
 number = "25598"
 name = "Throttle Servo Horn Brace"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182342/http://www.teamassociated.com:80/parts/details/25598/"
 name_source = "dealer"
 category = "steering"
 gtin = "784695255982"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Throttle-Servo-Horn-Brace_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

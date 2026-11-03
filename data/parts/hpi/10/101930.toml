@@ -30,3 +30,8 @@ fits = [
   { kit = "kit/hpi/venture", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-1800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 6
+capacity_mah = 1800

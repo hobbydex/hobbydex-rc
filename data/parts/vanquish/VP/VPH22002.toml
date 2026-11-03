@@ -2,8 +2,13 @@ id = "part/vanquish/VPH22002"
 brand = "brand/vanquish"
 number = "VPH22002"
 name = "Titanium Hardware F10 Portal Rear Axle Kit"
+seen_by = "2025-05-27"
+seen_by_source = "https://vanquishproducts.com/products/titanium-hardware-f10-portal-front-axle-kit-copy"
 links = [
   { site = "Vanquish", url = "https://vanquishproducts.com/products/titanium-hardware-f10-portal-front-axle-kit-copy" },
 ]
 category = "drivetrain"
 gtin = "791512786451"
+fits = [
+  { kit = "kit/vanquish/vs4-10", releases = ["release/vanquish/vps09019", "release/vanquish/vps09025"], type = "replaces", source = "doc/vanquish/vps09019-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -8,3 +8,7 @@ name_source = "ocr"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 category = "oil-grease"
 documents = ["doc/kyosho/30859-ultima-sc6-im", "doc/kyosho/31352-infst-r-m"]
+volume_ml = 40
+equivalent_to = [
+  { spec = "spec/oil/silicone-60000cst", match = "functional", notes = "Viscosity number #60000 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

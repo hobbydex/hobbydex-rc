@@ -6,6 +6,7 @@ name = "Alfa Romeo MiTo, silver"
 kind = "kit"
 kind_source = "numbering"
 status = "discontinued"
+depicts = { make = "Alfa Romeo", model = "MiTo" }
 notes = "Release date from Tamiya's Japanese page for 57802, which lists this item on sale 2010-07-17; Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/84136", kind = "fan-site" },
@@ -13,6 +14,8 @@ links = [
 released = "2010-07-17"
 released_source = "doc/tamiya/57802-product-page-ja"
 year = 2010
+color = "silver"
+range = "tamiya/alfa-romeo-mito-colours"
 documents = ["doc/tamiya/84136-manual-usa", "doc/tamiya/57802-product-page-ja"]
 contains = [
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/84136-manual-usa" },

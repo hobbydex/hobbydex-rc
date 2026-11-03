@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0312"
 brand = "brand/ruddog"
 number = "RP-0312"
 name = "RX Plug Locking Type Set for Futaba and JR"
+seen_by = "2021-01-15"
+seen_by_source = "https://web.archive.org/web/20210115233054/https://www.ruddog.eu/RUDDOG-RX-Plug-Locking-Type-Set-for-Futaba-and-JR-30pcs_1"
 category = "wire"
 gtin = "4052133012838"
 documents = ["doc/ruddog/store"]
@@ -10,3 +12,7 @@ links = [
 ]
 pack_qty = 30
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/connector/servo-jr", match = "functional" },
+  { spec = "spec/connector/servo-futaba", match = "functional" },
+]

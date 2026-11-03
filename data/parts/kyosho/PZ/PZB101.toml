@@ -2,6 +2,7 @@ id = "part/kyosho/PZB101"
 brand = "brand/kyosho"
 number = "PZB101"
 name = "T90-FW Body Set"
+status = "discontinued"
 seen_by = "2012-11"
 seen_by_source = "doc/kyosho/pzb101-t90-fw-body-set"
 gtin = "4548565213733"
@@ -10,5 +11,5 @@ category = "body"
 documents = ["doc/kyosho/pzb101-t90-fw-body-set", "doc/kyosho/pzb101-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/pzb101.html" } ]
 fits = [
-  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]

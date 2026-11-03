@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0417"
 brand = "brand/ruddog"
 number = "RP-0417"
 name = "RC215AC Dual Channel LiPo Battery AC/DC Charger"
+seen_by = "2022-01-23"
+seen_by_source = "https://web.archive.org/web/20220123161543/https://www.ruddog.eu/RUDDOG-RC215AC-Dual-Channel-LiPo-Battery-AC-DC-Charger_1"
 category = "charger"
 category_source = "curated"
 gtin = "4052133014528"
@@ -12,3 +14,9 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-RC215AC-Dual-Channel-LiPo-Battery-AC-DC-Charger_1" },
 ]
 chemistry = "lipo"
+charges = ["lipo"]
+channels = 2
+ac_input_v = [100, 240]
+nimh_cells = [1, 16]
+lipo_cells = [1, 6]
+charger_source = "https://www.ruddog.eu/RUDDOG-RC215AC-Dual-Channel-LiPo-Battery-AC-DC-Charger_1"

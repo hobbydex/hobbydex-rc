@@ -2,10 +2,18 @@ id = "part/team-associated/89399"
 brand = "brand/team-associated"
 number = "89399"
 name = "16x32 mm Molded Shock Kit"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182748/http://www.teamassociated.com:80/parts/details/89399/"
 name_source = "dealer"
 category = "shock"
 gtin = "784695893993"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-16x32-mm-Molded-Shock-Kit_1", kind = "dealer" },
+]
+shock_part = "complete"
+bore_mm = 16
+length_mm = 32
+fits = [
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80931-25"], type = "replaces", source = "doc/team-associated/sc8e-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

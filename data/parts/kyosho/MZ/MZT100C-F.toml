@@ -2,9 +2,14 @@ id = "part/kyosho/MZT100C-F"
 brand = "brand/kyosho"
 number = "MZT100C-F"
 name = "Classic Tire Set (Normal Size)"
+seen_by = "2010-10-05"
+seen_by_source = "https://web.archive.org/web/20101005214808/http://kyosho.com/jpn/products/rc/parts_images/mzt100c-f.gif"
 name_ja = "クラッシック フロントタイヤ (ランボルギーニ イオタ)"
 name_source = "manual"
 gtin = "4955439788783"
 documents = ["doc/kyosho/mini-z-parts-tekigou"]
 category = "tire"
 mounting = "unmounted"
+fits = [
+  { kit = "kit/kyosho/mini-z-autoscale", releases = ["release/kyosho/30393"], type = "replaces", source = "doc/kyosho/30393-mzg116-porsche934-rsr-p", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

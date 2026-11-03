@@ -2,8 +2,13 @@ id = "part/vanquish/VPH22001"
 brand = "brand/vanquish"
 number = "VPH22001"
 name = "Titanium Hardware F10 Portal Front Axle Kit"
+seen_by = "2025-05-27"
+seen_by_source = "https://vanquishproducts.com/products/m3-x-25-coarse-thread-button-head-10-pack-copy"
 links = [
   { site = "Vanquish", url = "https://vanquishproducts.com/products/m3-x-25-coarse-thread-button-head-10-pack-copy" },
 ]
 category = "drivetrain"
 gtin = "791512786444"
+fits = [
+  { kit = "kit/vanquish/vs4-10", releases = ["release/vanquish/vps09019", "release/vanquish/vps09025"], type = "replaces", source = "doc/vanquish/vps09019-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

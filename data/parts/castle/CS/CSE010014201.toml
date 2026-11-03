@@ -3,9 +3,13 @@ brand = "brand/castle"
 number = "CSE010014201"
 name = "1/5 Mamba XLX ESC/2028-800Kv Sensored Brushless Motor Combo: 8mm Bullet"
 status = "discontinued"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-1-5-mamba-xlx-esc-2028-800kv-sensored-brushless-motor-combo-8mm-bullet/CSE010014201.html", kind = "dealer" },
 ]
 gtin = "819326012150"
 category = "esc"
 motor_type = "brushless"
+includes = [
+  { part = "part/castle/CSE010016700", qty = 1, notes = "Component named in the combo's name" },
+]

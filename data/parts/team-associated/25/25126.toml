@@ -2,10 +2,15 @@ id = "part/team-associated/25126"
 brand = "brand/team-associated"
 number = "25126"
 name = "Bellcrank Posts & Bushings"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125200757/http://teamassociated.com/parts/details/25126/"
 name_source = "dealer"
 category = "steering"
 gtin = "784695251267"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Bellcrank-Posts-Bushings_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/drawing-mgt4-6", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

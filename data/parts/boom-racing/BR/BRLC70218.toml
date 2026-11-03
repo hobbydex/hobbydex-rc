@@ -2,10 +2,12 @@ id = "part/boom-racing/BRLC70218"
 brand = "brand/boom-racing"
 number = "BRLC70218"
 name = "AWB Front Offset Shock Tower L/R"
+seen_by = "2025-11-12"
+seen_by_source = "https://web.archive.org/web/20251112225701/https://www.boomracing.com/awb-front-offset-shock-tower-l-r-242679"
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/awb-front-offset-shock-tower-l-r-242679", gone = "2026-10-28" },
 ]
 category = "chassis"
 fits = [
-  { kit = "kit/boom-racing/brx01-awb", releases = ["release/boom-racing/br8010", "release/boom-racing/br8011", "release/boom-racing/br8013", "release/boom-racing/br8014", "release/boom-racing/br8015", "release/boom-racing/br8016"], type = "replaces", source = "doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-link-version", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx01-awb", releases = ["release/boom-racing/br8010", "release/boom-racing/br8011", "release/boom-racing/br8013", "release/boom-racing/br8014", "release/boom-racing/br8015", "release/boom-racing/br8016"], type = "direct", source = "doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-link-version", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

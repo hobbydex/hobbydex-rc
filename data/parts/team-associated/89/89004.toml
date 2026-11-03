@@ -2,10 +2,16 @@ id = "part/team-associated/89004"
 brand = "brand/team-associated"
 number = "89004"
 name = "Receiver Box Pad"
+seen_by = "2010-12-18"
+seen_by_source = "https://web.archive.org/web/20101218223028/http://teamassociated.com/pictures/products/89004/89004_sm.jpg"
 name_source = "dealer"
 category = "chassis"
 gtin = "784695890046"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Receiver-Box-Pad_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80901-25", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8te", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

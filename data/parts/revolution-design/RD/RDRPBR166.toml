@@ -2,6 +2,8 @@ id = "part/revolution-design/RDRPBR166"
 brand = "brand/revolution-design"
 number = "RDRPBR166"
 name = "Ultra Bearing 3/16x3/8x1/8\""
+seen_by = "2021-01-15"
+seen_by_source = "https://web.archive.org/web/20210115232123/https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-3-16x3-8x1-8-4pcs_1"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "bearing"
@@ -9,4 +11,7 @@ gtin = "4052133003812"
 documents = ["doc/revolution-design/store"]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-3-16x3-8x1-8-4pcs_1" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/4.762x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

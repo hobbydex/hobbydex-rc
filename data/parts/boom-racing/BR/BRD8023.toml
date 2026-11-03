@@ -2,10 +2,12 @@ id = "part/boom-racing/BRD8023"
 brand = "brand/boom-racing"
 number = "BRD8023"
 name = "BRX80 Rear Straight PHAT Axle (Center Pumpkin) w/ AR44 HD Gears Assembled"
+seen_by = "2024-04-14"
+seen_by_source = "https://web.archive.org/web/20240414085302/https://www.boomracing.com/complete-rear-assembled-brx80-phat-axle-set-w-ar44-hd-gears-205122"
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/complete-rear-assembled-brx80-phat-axle-set-w-ar44-hd-gears-205122" },
 ]
 category = "drivetrain"
 fits = [
-  { kit = "kit/boom-racing/brx01-awb", releases = ["release/boom-racing/br8010", "release/boom-racing/br8011", "release/boom-racing/br8013", "release/boom-racing/br8014", "release/boom-racing/br8015", "release/boom-racing/br8016"], type = "replaces", source = "doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-link-version", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx01-awb", releases = ["release/boom-racing/br8010", "release/boom-racing/br8011", "release/boom-racing/br8013", "release/boom-racing/br8014", "release/boom-racing/br8015", "release/boom-racing/br8016"], type = "direct", source = "doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-link-version", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

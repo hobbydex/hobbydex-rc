@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0325"
 brand = "brand/ruddog"
 number = "RP-0325"
 name = "EC5 Connector male"
+seen_by = "2021-01-15"
+seen_by_source = "https://web.archive.org/web/20210115233055/https://www.ruddog.eu/RUDDOG-EC5-Connector-male-2pcs_1"
 category = "wire"
 gtin = "4052133012968"
 documents = ["doc/ruddog/store"]
@@ -10,3 +12,6 @@ links = [
 ]
 pack_qty = 2
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/connector/ec5", match = "functional" },
+]

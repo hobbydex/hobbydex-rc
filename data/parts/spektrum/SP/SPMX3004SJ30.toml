@@ -2,6 +2,8 @@ id = "part/spektrum/SPMX3004SJ30"
 brand = "brand/spektrum"
 number = "SPMX3004SJ30"
 name = "14.8V 300mAh 4S 30C LiPo Battery"
+seen_by = "2026-11-01"
+seen_by_source = "https://www.spektrumrc.com/product/spektrum-14.8v-300mah-4s-30c-lipo-battery/SPMX3004SJ30.html"
 gtin = "660132893743"
 links = [
   { site = "Spektrum", url = "https://www.spektrumrc.com/product/spektrum-14.8v-300mah-4s-30c-lipo-battery/SPMX3004SJ30.html" },
@@ -13,3 +15,8 @@ dimensions_mm = [43, 21, 20]
 chemistry = "lipo"
 voltage = 14.8
 cells = 4
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 300
+c_rating = 30

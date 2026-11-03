@@ -16,3 +16,6 @@ dimensions_mm = [116, 40, 34]
 capacity_mah = 2700
 c_rating = 15
 connector = "IC3"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

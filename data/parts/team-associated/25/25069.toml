@@ -2,10 +2,16 @@ id = "part/team-associated/25069"
 brand = "brand/team-associated"
 number = "25069"
 name = "Shock Eyelets & Accessories"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125202911/http://teamassociated.com/parts/details/25069/"
 name_source = "dealer"
 category = "shock"
 gtin = "784695250697"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Shock-Eyelets-Accessories_1", kind = "dealer" },
+]
+shock_part = "rod-end"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "direct", source = "doc/team-associated/drawing-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

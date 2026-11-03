@@ -3,6 +3,8 @@ brand = "brand/team-associated"
 number = "ASC27360"
 name = "7.6V 6000mAh 2S 115C Zappers SG4 LP Stick LiHV Battery"
 status = "discontinued"
+seen_by = "2024-06-15"
+seen_by_source = "https://web.archive.org/web/20240615013134/https://www.associatedelectrics.com/reedy/parts/details/27360-ASC27360-zappers_sg4_6000mah_115c_7_6v_lp_stick/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-associated-7.6v-6000mah-2s-115c-zappers-sg4-lp-stick-lihv-battery/ASC27360.html", kind = "dealer" },
 ]
@@ -11,3 +13,8 @@ category = "battery"
 chemistry = "lihv"
 cells = 2
 voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 6000
+c_rating = 115

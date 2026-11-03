@@ -2,7 +2,13 @@ id = "part/orca/OSW1329A"
 brand = "brand/orca"
 number = "OSW1329A"
 name = "13AWG PURE COPPER WIRE"
+seen_by = "2016-05-11"
+seen_by_source = "https://web.archive.org/web/20160511111150/http://www.orcarc.com:80/product/13awg-pure-copper-wire/"
 links = [
   { site = "ORCA", url = "https://www.orcarc.com/product/13awg-pure-copper-wire/" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/wire/13awg", match = "functional" },
+]
+wire_awg = 13

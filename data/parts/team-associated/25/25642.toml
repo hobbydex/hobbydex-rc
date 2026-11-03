@@ -2,6 +2,8 @@ id = "part/team-associated/25642"
 brand = "brand/team-associated"
 number = "25642"
 name = "FT Shock Springs, gold (soft)"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127212001/http://teamassociated.com/factoryteam/parts/details/25642/"
 name_source = "dealer"
 category = "shock-spring"
 gtin = "784695256422"
@@ -10,3 +12,7 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-FT-Shock-Springs-gold-soft_1", kind = "dealer" },
 ]
 color = "gold"
+rate = "soft"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/mmgt-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

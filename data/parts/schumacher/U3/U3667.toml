@@ -2,12 +2,15 @@ id = "part/schumacher/U3667"
 brand = "brand/schumacher"
 number = "U3667"
 name = "Big Bore Shock; Rebuild Kit - Off Rd pk4"
+seen_by = "2015-04-02"
+seen_by_source = "https://web.archive.org/web/20150402041636/http://www.racing-cars.com:80/pp/New_Cars_and_Parts/Cougar_SV2/U3667.html"
 gtin = "5051294041717"
-seen_by = "2019-02-08"
-seen_by_source = "https://web.archive.org/web/20190208154731/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=882&templateid=69&sortname1=partno"
 category = "shock"
 documents = ["doc/schumacher/ld2-manual", "doc/schumacher/cougar-kf-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/big-bore-shock-rebuild-kit-off-rd-pk4-u3667" } ]
 fits = [
   { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
+shock_part = "rebuild-kit"
+pack_qty = 4
+pack_qty_basis = "name"

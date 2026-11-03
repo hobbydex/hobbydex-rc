@@ -2,6 +2,8 @@ id = "part/revolution-design/RDRPB682"
 brand = "brand/revolution-design"
 number = "RDRPB682"
 name = "Ultra Bearing 2x5x2.3mm"
+seen_by = "2023-11-11"
+seen_by_source = "https://web.archive.org/web/20231111170211/https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-2x5x23mm-4pcs_1"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "bearing"
@@ -12,3 +14,6 @@ links = [
 ]
 universal = true
 universal_basis = "size"
+equivalent_to = [
+  { spec = "spec/bearing/2x5x2.3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

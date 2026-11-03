@@ -8,3 +8,7 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "pinion"
 documents = ["doc/tamiya/58425-manual-de"]
+includes = [
+  { spec = "spec/pinion/mod0.4-50t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.4-51t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]

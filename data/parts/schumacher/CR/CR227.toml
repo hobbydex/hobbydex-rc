@@ -2,9 +2,9 @@ id = "part/schumacher/CR227"
 brand = "brand/schumacher"
 number = "CR227"
 name = "CORE RC Silicone Oil - 100000cSt - 60ml"
+seen_by = "2012-08-30"
+seen_by_source = "https://web.archive.org/web/20120830190319/http://www.racing-cars.com:80/pp/Old_Cars_and_Parts/Mi4LP_Race_S1/CR227.html"
 gtin = "5051294068271"
-seen_by = "2013-11-17"
-seen_by_source = "https://web.archive.org/web/20131117122032/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=654&templateid=69&sortname1=partno"
 category = "oil-grease"
 documents = ["doc/schumacher/mi7-manual", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/mi5-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/accessories/shock-diff-oil/core-rc-silicone-oil-100000cst-60ml-cr227" } ]
@@ -12,4 +12,8 @@ fits = [
   { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
   { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
   { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+volume_ml = 60
+equivalent_to = [
+  { spec = "spec/oil/silicone-100000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
 ]

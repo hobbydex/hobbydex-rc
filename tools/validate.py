@@ -102,7 +102,7 @@ ENUMS = {
     "part.lubricant": {"oil", "grease"},
     "part.viscosity": {"thin", "medium", "thick"},
     "spec.profile": {"regular", "thin"},
-    "spec.shape": {"flat", "countersunk", "conical"},   # washer specs (docs/schema.md "Washer specs")
+    "spec.shape": {"flat", "countersunk", "conical", "flanged", "crush"},   # washer specs (docs/schema.md "Washer specs"); flanged and crush: tube specs (a flanged tube or a crush tube is not a plain one)
     "spec.variant": {"bowed"},   # e-clip specs (docs/schema.md "E-clip specs")
     "spec.motor_type": {"brushed", "brushless"},
     "part.motor_type": {"brushed", "brushless", "both"},   # ESCs (docs/schema.md "ESCs")
@@ -845,6 +845,8 @@ def main():
             errors.append(f"{path}: scale {d['scale']!r} repeats its kit's; leave it out (docs/schema.md \"release\")")
         if kind == "kit" and "placeholder" in d and not isinstance(d["placeholder"], bool):
             errors.append(f"{path}: placeholder should be true (a group for releases whose chassis no source names yet)")
+        if kind == "kit" and "family" in d and not isinstance(d["family"], bool):
+            errors.append(f"{path}: family should be true (docs/schema.md \"kit\"): a platform or family label that parts fit; no single car was sold under it")
         if kind == "category" and "terms" in d:   # glossary on the category page (docs/schema.md "category")
             ts = d["terms"]
             if not isinstance(ts, list) or not ts or not all(isinstance(t, dict) and set(t) == {"term", "text"} and all(

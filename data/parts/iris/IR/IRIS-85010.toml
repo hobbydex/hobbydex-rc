@@ -2,6 +2,8 @@ id = "part/iris/IRIS-85010"
 brand = "brand/iris"
 number = "IRIS-85010"
 name = "6x3x0.5mm Open Washers"
+seen_by = "2023-01-27"
+seen_by_source = "https://web.archive.org/web/20230127011330/https://www.ruddog.eu/Iris-6x3x05mm-Open-Washers-4pcs_1"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "washer-shim"
@@ -12,3 +14,6 @@ links = [
 ]
 universal = true
 universal_basis = "size"
+equivalent_to = [
+  { spec = "spec/washer/3x6x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

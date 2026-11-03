@@ -2,9 +2,9 @@ id = "part/schumacher/CR158"
 brand = "brand/schumacher"
 number = "CR158"
 name = "CORE RC - 4000mAHr 7.4v 20C/40C LiPo"
+seen_by = "2011-07-19"
+seen_by_source = "https://web.archive.org/web/20110719223939/http://www.racing-cars.com:80/pp/Product_Category/Full_List/CR158.html"
 name_source = "manufacturer"
-seen_by = "2013-11-17"
-seen_by_source = "https://web.archive.org/web/20131117122032/http://www.racing-cars.com/scp/New_Cars_and_Parts/search.asp?subcatid=654&templateid=69&sortname1=partno"
 fits = [
   { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
   { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
@@ -13,3 +13,9 @@ documents = ["doc/schumacher/mi1-spares-archive", "doc/schumacher/mi5-spares-arc
 category = "battery"
 chemistry = "lipo"
 voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+capacity_mah = 4000
+c_rating = 20

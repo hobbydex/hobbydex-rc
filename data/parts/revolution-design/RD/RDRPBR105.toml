@@ -2,6 +2,8 @@ id = "part/revolution-design/RDRPBR105"
 brand = "brand/revolution-design"
 number = "RDRPBR105"
 name = "Ultra Bearing 5x10x4mm"
+seen_by = "2019-07-21"
+seen_by_source = "https://web.archive.org/web/20190721144635/https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-5x10x4mm-4pcs_1"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "bearing"
@@ -12,3 +14,6 @@ links = [
 ]
 universal = true
 universal_basis = "size"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

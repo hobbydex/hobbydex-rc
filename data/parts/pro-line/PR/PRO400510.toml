@@ -2,6 +2,8 @@ id = "part/pro-line/PRO400510"
 brand = "brand/pro-line"
 number = "PRO400510"
 name = "16T MOD 1 Pinion Gear"
+seen_by = "2024-12-11"
+seen_by_source = "https://web.archive.org/web/20241211215203/https://www.prolineracing.com/product/16t-mod-1-pinion-gear-pro-mt-4x4/PRO400510.html"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/pro-line-racing-16t-mod-1-pinion-gear-pro-mt-4x4/PRO400510.html" },
 ]
@@ -13,3 +15,6 @@ gtin = "675118170473"
 category = "pinion"
 scale = "1/10"
 material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

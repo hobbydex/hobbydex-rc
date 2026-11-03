@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0431"
 brand = "brand/ruddog"
 number = "RP-0431"
 name = "3.5mm Gold Plug Male"
+seen_by = "2021-07-24"
+seen_by_source = "https://web.archive.org/web/20210724201006/https://www.ruddog.eu/RUDDOG-35mm-Gold-Plug-Male-6pcs_1"
 category = "wire"
 gtin = "4052133017215"
 documents = ["doc/ruddog/store"]
@@ -11,3 +13,6 @@ links = [
 pack_qty = 6
 pack_qty_basis = "name"
 color = "gold"
+equivalent_to = [
+  { spec = "spec/connector/bullet-3.5mm", match = "functional" },
+]

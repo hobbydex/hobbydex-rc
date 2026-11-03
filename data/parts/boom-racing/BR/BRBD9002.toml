@@ -2,6 +2,8 @@ id = "part/boom-racing/BRBD9002"
 brand = "brand/boom-racing"
 number = "BRBD9002"
 name = "BADASS Ultra Hard Steel Axle Rear Shaft for BRX90 PHAT Axle BRD9023"
+seen_by = "2026-05-14"
+seen_by_source = "https://web.archive.org/web/20260514232802/https://www.boomracing.com/badass-ultra-hard-steel-axle-rear-shaft-2pcs-for-brx90-phat-axle-brd9023-179968"
 pack_qty = 2
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/badass-ultra-hard-steel-axle-rear-shaft-2pcs-for-brx90-phat-axle-brd9023-179968" },
@@ -10,7 +12,7 @@ pack_qty_basis = "name"
 category = "drivetrain"
 material = "steel"
 fits = [
-  { kit = "kit/boom-racing/brx02", releases = ["release/boom-racing/br8004", "release/boom-racing/br8005"], type = "replaces", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20240905", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02", releases = ["release/boom-racing/br8004", "release/boom-racing/br8005"], type = "direct", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20240905", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
   { kit = "kit/boom-racing/brx02-6x6", releases = ["release/boom-racing/br8008"], type = "replaces", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20221111", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/boom-racing/brx02-d130", releases = ["release/boom-racing/br8017"], type = "replaces", source = "doc/boom-racing/manual-brx02-d130-land-rover-denfender130-high-capacity-pickup-4wd", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02-d130", releases = ["release/boom-racing/br8017"], type = "direct", source = "doc/boom-racing/manual-brx02-d130-land-rover-denfender130-high-capacity-pickup-4wd", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

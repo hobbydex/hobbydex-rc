@@ -2,10 +2,15 @@ id = "part/team-associated/31256"
 brand = "brand/team-associated"
 number = "31256"
 name = "FT Battery Strap"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127223019/http://teamassociated.com/factoryteam/parts/details/31256/"
 name_source = "dealer"
 category = "chassis"
 gtin = "784695312562"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-FT-Battery-Strap_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/rc12r5", releases = ["release/team-associated/4019"], type = "replaces", source = "doc/team-associated/cat-12r5-1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

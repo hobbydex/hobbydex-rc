@@ -2,6 +2,8 @@ id = "part/boom-racing/BRW780921GD"
 brand = "brand/boom-racing"
 number = "BRW780921GD"
 name = "Scale 4WD Center Locking Hub Cap (2) Gold (XT5 Series)"
+seen_by = "2025-08-12"
+seen_by_source = "https://web.archive.org/web/20250812155719/https://www.boomracing.com/scale-4wd-center-locking-hub-cap-2-gold-xt5-series-160800"
 pack_qty = 2
 vehicle = "crawler"
 links = [
@@ -11,6 +13,6 @@ pack_qty_basis = "name"
 category = "suspension"
 color = "gold"
 fits = [
-  { kit = "kit/boom-racing/brx01", releases = ["release/boom-racing/br8003"], type = "replaces", source = "doc/boom-racing/manual-brx01-limited-edition-br8003-20230118", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/boom-racing/brx01-awb", releases = ["release/boom-racing/br8010", "release/boom-racing/br8011", "release/boom-racing/br8013", "release/boom-racing/br8014", "release/boom-racing/br8015", "release/boom-racing/br8016"], type = "replaces", source = "doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-link-version", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx01", releases = ["release/boom-racing/br8003"], type = "direct", source = "doc/boom-racing/manual-brx01-limited-edition-br8003-20230118", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx01-awb", releases = ["release/boom-racing/br8010", "release/boom-racing/br8011", "release/boom-racing/br8013", "release/boom-racing/br8014", "release/boom-racing/br8015", "release/boom-racing/br8016"], type = "direct", source = "doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-link-version", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

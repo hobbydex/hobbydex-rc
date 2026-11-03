@@ -3,6 +3,8 @@ brand = "brand/team-associated"
 number = "ASC27378"
 name = "7.6V 6600mAh 2S 130C Zappers DR SQ LiHV Battery"
 status = "discontinued"
+seen_by = "2024-06-15"
+seen_by_source = "https://web.archive.org/web/20240615014555/https://www.associatedelectrics.com/reedy/parts/details/27378-ASC27378-zappers_dr_6600mah_130c_7_6v_sq_battery/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-associated-7.6v-6600mah-2s-130c-zappers-dr-sq-lihv-battery/ASC27378.html", kind = "dealer" },
 ]
@@ -16,3 +18,6 @@ weight_g = 305
 dimensions_mm = [93, 69, 25]
 capacity_mah = 6600
 c_rating = 130
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

@@ -10,5 +10,5 @@ links = [
 category = "drivetrain"
 fits = [
   { kit = "kit/mst/cfx", type = "replaces", source = "doc/mst/cfx-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/mst/cmx", type = "replaces", source = "doc/mst/cmx-exploded", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/cmx", type = "direct", source = "doc/mst/cmx-exploded", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

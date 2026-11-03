@@ -3,6 +3,8 @@ brand = "brand/team-associated"
 number = "ASC27364"
 name = "7.6V 4800mAh 2S 115C Zappers SG4 Shorty LiHV Battery"
 status = "discontinued"
+seen_by = "2021-04-10"
+seen_by_source = "https://web.archive.org/web/20210410192016/https://www.associatedelectrics.com/reedy/parts/details/27364-ASC27364-zappers_sg4_4800mah_115c_7_6v_shorty/"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-associated-7.6v-4800mah-2s-115c-zappers-sg4-shorty-lihv-battery/ASC27364.html", kind = "dealer" },
 ]
@@ -16,3 +18,6 @@ weight_g = 205
 dimensions_mm = [96, 47, 25]
 capacity_mah = 4800
 c_rating = 115
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

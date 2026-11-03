@@ -2,6 +2,8 @@ id = "part/revolution-design/RDRPBF106"
 brand = "brand/revolution-design"
 number = "RDRPBF106"
 name = "Ultra Bearing 6x10x3mm Flanged"
+seen_by = "2021-01-16"
+seen_by_source = "https://web.archive.org/web/20210116003219/https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-6x10x3mm-Flanged-4pcs_1"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "bearing"
@@ -12,3 +14,6 @@ links = [
 ]
 universal = true
 universal_basis = "size"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

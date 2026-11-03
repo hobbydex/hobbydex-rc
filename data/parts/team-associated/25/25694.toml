@@ -2,10 +2,15 @@ id = "part/team-associated/25694"
 brand = "brand/team-associated"
 number = "25694"
 name = "Front Bumper and Brace"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125170438/http://teamassociated.com/parts/details/25694/"
 name_source = "dealer"
 category = "chassis"
 gtin = "784695256941"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Front-Bumper-and-Brace_1", kind = "dealer" },
+]
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt8-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

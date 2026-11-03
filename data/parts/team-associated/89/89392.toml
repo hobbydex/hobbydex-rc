@@ -2,10 +2,18 @@ id = "part/team-associated/89392"
 brand = "brand/team-associated"
 number = "89392"
 name = "16x32 mm Molded Shock Bodies"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115172109/http://www.teamassociated.com:80/parts/details/89392/"
 name_source = "dealer"
 category = "shock"
 gtin = "784695893924"
 notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-16x32-mm-Molded-Shock-Bodies_1", kind = "dealer" },
+]
+shock_part = "body"
+bore_mm = 16
+length_mm = 32
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/drawing-rc8tftrtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

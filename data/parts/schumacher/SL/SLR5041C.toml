@@ -2,9 +2,9 @@ id = "part/schumacher/SLR5041C"
 brand = "brand/schumacher"
 number = "SLR5041C"
 name = "SP 5500mah 45C Racing Lipo 3.7v 1-12th"
+seen_by = "2010-01-24"
+seen_by_source = "https://web.archive.org/web/20100124122954/http://www.racing-cars.com:80/pp/Manufacturer/Speed_Passion/SLR5041C.html"
 name_source = "manufacturer"
-seen_by = "2010-01-30"
-seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
 fits = [
   { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
@@ -12,3 +12,9 @@ documents = ["doc/schumacher/mi3-spares-archive"]
 category = "battery"
 chemistry = "lipo"
 voltage = 3.7
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-5500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 1
+capacity_mah = 5500
+c_rating = 45

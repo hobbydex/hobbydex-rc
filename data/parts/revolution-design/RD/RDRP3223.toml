@@ -2,6 +2,8 @@ id = "part/revolution-design/RDRP3223"
 brand = "brand/revolution-design"
 number = "RDRP3223"
 name = "Ultra Ceramic Thrust Bearing 2.6x6x3mm (for YOK,TRF,KYO)"
+seen_by = "2021-01-15"
+seen_by_source = "https://web.archive.org/web/20210115232919/https://www.ruddog.eu/Revolution-Design-Ultra-Ceramic-Thrust-Bearing-26x6x3mm-2pcs-for-YOKTRFKYO"
 pack_qty = 2
 pack_qty_basis = "name"
 category = "bearing"
@@ -10,3 +12,7 @@ documents = ["doc/revolution-design/store"]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Revolution-Design-Ultra-Ceramic-Thrust-Bearing-26x6x3mm-2pcs-for-YOKTRFKYO" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/thrust-2.6x6x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

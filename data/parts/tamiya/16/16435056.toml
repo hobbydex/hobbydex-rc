@@ -6,3 +6,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "oil-grease"
 documents = ["doc/tamiya/58188-manual-de"]
+equivalent_to = [
+  { spec = "spec/oil/silicone-900cst", match = "functional", notes = "Viscosity number #900 as the brand states it, on the cSt scale; measuring temperature not given" },
+]
