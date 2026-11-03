@@ -7,3 +7,6 @@ documents = ["doc/mugen/mrx6-manual-eu"]
 category = "body-accessory"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/REAR-BODY-MOUNT-also-replacement-for-H0466/H2416a" } ]
 name_source = "manufacturer"
+related = [
+  { part = "part/mugen/H0466", relation = "replaces", notes = "link_part_refs" },
+]

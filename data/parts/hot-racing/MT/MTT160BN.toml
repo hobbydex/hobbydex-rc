@@ -11,3 +11,6 @@ material = "stainless"
 fits = [
   { kit = "kit/losi/jrx2", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+related = [
+  { part = "part/losi/LOS214030", relation = "replaces", notes = "link_part_refs" },
+]

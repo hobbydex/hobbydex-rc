@@ -654,6 +654,7 @@ matching list gives as the same colour in another range, though the shade
 may differ slightly: Tamiya LP-1 Black, X-1 Black and TS-14 Black; recorded
 on each of the paints). Others are recorded on the citing part; the site
 shows it from both sides. tools/link_part_refs.py reads them from names.
+An aftermarket part (GPM, Hot Racing, RPM, Treal ...) that its maker page says replaces an original ("Replaces Traxxas stock TRA6832", "replaces stock ARRMA #AR330543", GPM "Manual number: 8550" under a name that says Traxxas) carries `replaces` to that part of the original's brand, so `related` may point across brands for this relation. The original's brand must be named next to the number and the number must be a part of that brand.
 A wheel nut that states its hex (17, 23 or 24 mm) is `use-with` each wheel hex or axle of the same brand that shares a release with it and, where both state a size, the same size; the row sits on the nut only, and the site shows "Used with" on the other part.
 
 `supersedes`: the part this one replaces, when the brand has replaced it with
