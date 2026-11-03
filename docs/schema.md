@@ -129,14 +129,14 @@ notes = "..."
 
 A model line, independent of year or edition. `category` is the kit type:
 buggy | truggy | stadium-truck | short-course | monster | desert-truck |
-truck | tractor-truck | race-truck | crawler | touring | gt | on-road | formula | pan-car | rally |
+truck | tractor-truck | tractor | race-truck | crawler | touring | gt | on-road | formula | pan-car | rally |
 street-basher | drift | drag | lowrider | oval | speed-run | kart | motorcycle |
 snowmobile | tank | construction | trailer | boat, or car for a car that fits none of
 them. snowmobile is a snow vehicle on drive tracks. gt is a GT-body racing car on a buggy-style chassis (1/8 GT class).
 on-road is an on-road racer with independent suspension that is not a touring
 car (1/8 nitro or electric on-road). Scale is never in the type name; it is
 its own field. trailer is a standalone trailer or dolly, with no `drive` or `power`
-(a rigid truck sold with its trailer stays truck). tractor-truck is a semi tractor unit (Sattelzugmaschine, tractor unit or tractor truck by the maker's name, or a hauler with a fifth wheel and no body, such as Tamiya's hauler series), with or without a trailer it is sold with (Arocs Sattelzug mit Kippauflieger); rigid bodies (tippers, dump trucks, hook lifts, cranes, Unimog) are truck. Race trucks stay race-truck. drag is a straight-line drag
+(a rigid truck sold with its trailer stays truck). tractor-truck is a semi tractor unit (Sattelzugmaschine, tractor unit or tractor truck by the maker's name, or a hauler with a fifth wheel and no body, such as Tamiya's hauler series), with or without a trailer it is sold with (Arocs Sattelzug mit Kippauflieger); rigid bodies (tippers, dump trucks, hook lifts, cranes, Unimog) are truck. Race trucks stay race-truck. tractor is a farm tractor (Tamiya's R/C Tractor Kumamon Version and Farm King Wheelie, the Zetors of 3DTLAC), never a road tractor unit, which is tractor-truck or truck. drag is a straight-line drag
 racer (no prep drag cars, drag trucks); lowrider a
 hopping lowrider on hydraulics or servo-lifted suspension. `scale` as "1/10". `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 `drive`: 2wd | 4wd | 6wd | 8wd (driven wheels), fwd (front-wheel drive) or
