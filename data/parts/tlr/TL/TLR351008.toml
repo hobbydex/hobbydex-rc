@@ -6,6 +6,10 @@ seen_by = "2025-05-15"
 seen_by_source = "https://web.archive.org/web/20250515054852/https://www.tlracing.com/product/dual-steering-rod-ends-and-pivot-balls-5ive-t-5ive-b/TLR351008.html"
 gtin = "605482188996"
 applies_to = "5ive T, 5ive B"
+fits = [
+  { kit = "kit/losi/5ive-t", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5ive T (link_car_kits.py)" },
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the 5ive B (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-dual-steering-rod-ends-and-pivot-balls-5ive-t-5ive-b/TLR351008.html" },
 ]
