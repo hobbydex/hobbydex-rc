@@ -41,6 +41,15 @@ def test_archived_product_image_source_counts_but_archived_page_does_not():
     assert not audit.horizon_no_page(part(source="https://web.archive.org/web/2015/http://www.losi.com/product.html"), DOCS, GONE)
 
 
+def test_doc_no_page_skips_videos_pages_and_reports():
+    h = {"horizon"}
+    assert audit.horizon_doc_no_page({"brand": "horizon", "kind": "manual"}, h)
+    assert not audit.horizon_doc_no_page({"brand": "horizon", "kind": "video"}, h)
+    assert not audit.horizon_doc_no_page({"brand": "horizon", "kind": "product_page"}, h)
+    assert not audit.horizon_doc_no_page({"brand": "horizon", "kind": "manual", "page": "https://x"}, h)
+    assert not audit.horizon_doc_no_page({"brand": "other", "kind": "manual"}, h)
+
+
 def test_gone_items_reads_the_404_markers():
     with tempfile.TemporaryDirectory() as t:
         d = os.path.join(t, "cache", "notes", "horizon-items")
