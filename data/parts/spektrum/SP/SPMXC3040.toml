@@ -7,3 +7,14 @@ category = "charger"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-s450-g2-ac-dc-smart-charger-4x50w/SPMXC3040.html" },
 ]
+weight_g = 1016
+dimensions_mm = [168, 140, 89]
+charges = ["lipo", "life", "nimh", "pb"]
+lipo_cells = [1, 6]
+nimh_cells = [1, 16]
+dc_input_v = [10, 30]
+charge_current_a = 10
+power_ac_w = 200
+power_dc_w = 400
+output_connector = ["IC5", "IC3", "IC2"]
+charger_source = "https://www.horizonhobby.com/product/spektrum-s450-g2-ac-dc-smart-charger-4x50w/SPMXC3040.html"
