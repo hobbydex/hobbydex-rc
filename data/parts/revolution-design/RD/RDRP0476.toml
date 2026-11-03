@@ -8,3 +8,7 @@ documents = ["doc/revolution-design/store"]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Revolution-Design-MO20-YZ-4-SF2-SF-Brass-Rear-Chassis-Brace-Weight-15g_1" },
 ]
+fits = [
+  { kit = "kit/yokomo/mo", releases = ["release/yokomo/mor-020"], type = "direct", source = "doc/revolution-design/store", notes = "Car name in the maker's part title (link_car_kits.py)" },
+  { kit = "kit/yokomo/yz-4", releases = ["release/yokomo/b-yz4sf2-1"], type = "direct", source = "doc/revolution-design/store", notes = "Car name in the maker's part title (link_car_kits.py)" },
+]
