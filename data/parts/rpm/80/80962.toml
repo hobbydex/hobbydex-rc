@@ -10,3 +10,7 @@ category = "bumper-guard"
 fits = [
   { kit = "kit/traxxas/rustler-4x4", type = "direct", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+related = [
+  { part = "part/traxxas/6737", relation = "replaces", notes = "link_part_refs" },
+  { part = "part/traxxas/3678", relation = "replaces", notes = "link_part_refs" },
+]
