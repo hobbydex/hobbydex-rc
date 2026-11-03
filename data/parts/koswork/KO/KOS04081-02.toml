@@ -7,3 +7,7 @@ category = "chassis"
 links = [
   { site = "Koswork", url = "https://koswork.com/portfolio-item/kos04081-02-tekno-rear-carbon-shock-tower-mt410-sct410-2-0/" },
 ]
+fits = [
+  { kit = "kit/tekno/sct410", releases = ["release/tekno/tkr9500"], type = "replaces", source = "doc/koswork/store", notes = "Named in the maker's part title (link_car_kits.py)" },
+  { kit = "kit/tekno/mt410", releases = ["release/tekno/tkr9501"], type = "replaces", source = "doc/koswork/store", notes = "Listed for the Tekno RC MT410 2.0 in the maker's compatible-model list (link_car_kits.py)" },
+]
