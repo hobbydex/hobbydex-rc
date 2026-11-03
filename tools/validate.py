@@ -16,6 +16,8 @@ ROOT = "data"
 ART_ROOT = "art"
 ART_MAX = 4096   # bytes per art file
 SVG_NS = "http://www.w3.org/2000/svg"
+GTIN_PLACEHOLDERS = {"1234567890128", "0000000000000", "1111111111116", "9876543210987"}   # passes the check digit, never printed
+GTIN_ASCENDING, GTIN_DESCENDING = "0123456789" * 3, "9876543210" * 3
 PATH_DATA = re.compile(r"[MmLlHhVvCcSsQqTtAaZz0-9.,+\-eE ]+")
 REQUIRED = {
     "brand": ["id", "name", "status"],
@@ -231,6 +233,24 @@ def inch_screw_problems(path, d):
     if d.get("id") != sid:
         out.append(f"{path}: inch screw spec id should be {sid}")
     return out
+
+
+def gtin_problem(text):
+    """None for a barcode of 8, 12, 13 or 14 digits with a valid GS1 check digit that is not a placeholder, else the reason.
+    Placeholders pass the check digit: 1234567890128 is the example code dealer pages print for items with no barcode.
+    Same rule as hobbydex-tools tools/gtin_codes.py."""
+    code = str(text)
+    if not (code.isascii() and code.isdigit()) or len(code) not in (8, 12, 13, 14):
+        return "is not 8, 12, 13 or 14 digits"
+    digits = [int(c) for c in code]
+    if (10 - sum(x * (3 if i % 2 == 0 else 1) for i, x in enumerate(reversed(digits[:-1]))) % 10) % 10 != digits[-1]:
+        return "has no valid GS1 check digit"
+    if code in GTIN_PLACEHOLDERS or len(set(code)) <= 2 or len(code.lstrip("0")) < 7:
+        return "is a placeholder code"
+    body = code[:-1]
+    if len(body) >= 7 and (body in GTIN_ASCENDING or body in GTIN_DESCENDING):
+        return "is a placeholder code (counted digits)"
+    return None
 
 
 def g(v):
@@ -913,11 +933,9 @@ def main():
         if kind in ("part", "release") and d.get("brand") in gone_brands and d.get("status") != "discontinued":
             errors.append(f"{path}: {d['brand']} is gone, so status must be discontinued")
         if kind in ("part", "release") and "gtin" in d:
-            g = str(d["gtin"])
-            digits = [int(c) for c in g] if g.isdigit() else []
-            ok = len(digits) in (8, 12, 13, 14) and (10 - sum(x * (3 if i % 2 == 0 else 1) for i, x in enumerate(reversed(digits[:-1]))) % 10) % 10 == digits[-1]
-            if not ok:
-                errors.append(f"{path}: gtin {g!r} is not a valid GTIN-8/12/13/14 (length or check digit)")
+            why = gtin_problem(d["gtin"])
+            if why:
+                errors.append(f"{path}: gtin {d['gtin']!r} {why}: a gtin is 8, 12, 13 or 14 digits with a valid check digit, not a placeholder")
         if kind == "doc" and d.get("kind") == "video":
             # a maker's own YouTube video (docs/schema.md "Videos")
             vid = str(d.get("id", "")).rsplit("/", 1)[-1].removeprefix("youtube-")
