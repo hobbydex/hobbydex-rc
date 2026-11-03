@@ -325,6 +325,22 @@ def load_art_sources(tools):
     return items
 
 
+def load_gtin_holes(tools):
+    """{record id: [code, label, cached file]} of the barcodes the cache states for a record (hobbydex-tools
+    tools/gtin_sweep.py report writes cache/gtin_sweep_holes.json); None when the file is absent."""
+    p = os.path.join(tools, "cache", "gtin_sweep_holes.json")
+    try:
+        with open(p, encoding="utf-8") as f:
+            return json.load(f).get("holes", {})
+    except (OSError, ValueError):
+        return None
+
+
+def gtin_in_cache_not_stored(holes, by_id):
+    """Ids of the records the sweep found a barcode for in the cache that still have no gtin."""
+    return sorted(i for i in holes if i in by_id and not by_id[i].get("gtin"))
+
+
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
     out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
@@ -455,6 +471,7 @@ def load_tools(tools):
     if os.path.exists(tamico):
         out["tamico"] = tamico
     out["sources"] = load_art_sources(tools)
+    out["gtin_holes"] = load_gtin_holes(tools)
     cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
@@ -939,6 +956,15 @@ def main():
         results["art-missing-photo"]["skip_reasons"] = collections.Counter(s or "(none)" for s in seen.values()).most_common(8)
     else:
         results["art-missing-photo"] = {"fix": "hobbydex-tools art sources not found (--tools)", "count": None, "examples": [], "all": []}
+
+    # 9b. barcodes the cache states for a record that has no gtin (tools/gtin_sweep.py in hobbydex-tools finds them)
+    if tools["gtin_holes"] is not None:
+        miss = gtin_in_cache_not_stored(tools["gtin_holes"], by_id)
+        check("gtin-in-cache-not-stored", "rerun tools/link_gtin.py in hobbydex-tools (a barcode a cached page states for exactly this number); if it does not take it, the importer misses that page format: fix the class (tools/gtin_sweep.py report lists the file)",
+              miss)
+        results["gtin-in-cache-not-stored"]["examples"] = [{"id": i, "url": url_for(by_id[i]), "gtin": tools["gtin_holes"][i][0], "file": tools["gtin_holes"][i][2]} for i in miss[:args.examples]]
+    else:
+        results["gtin-in-cache-not-stored"] = {"fix": "hobbydex-tools cache/gtin_sweep_holes.json not found (python3 -I tools/gtin_sweep.py scan, then report)", "count": None, "examples": [], "all": []}
 
     # 10. copyright-year release years
     check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",
