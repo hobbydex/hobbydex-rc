@@ -6,3 +6,6 @@ links = [
   { site = "CEN Racing", url = "https://www.cenracingusa.com/products/cd0419-body-post-ford-ms-rt-ranger" },
 ]
 category = "body-accessory"
+fits = [
+  { kit = "kit/cen/dl-series", releases = ["release/cen/8972", "release/cen/8973"], type = "replaces", source = "doc/cen/store", notes = "Car named in the part's title on CEN Racing's store (link_car_names.py)" },
+]
