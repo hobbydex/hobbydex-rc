@@ -2,10 +2,16 @@ id = "part/losi/LOSB2815"
 brand = "brand/losi"
 number = "LOSB2815"
 name = "Shock Adjuster Nut & Cap"
+status = "discontinued"
+seen_by = "2015-05-02"
+seen_by_source = "https://web.archive.org/web/20150502052853/http://losi.com/ProdInfo/LOS/100/LOSB2815-100.jpg"
 gtin = "605482012055"
 pack_qty = 4
 pack_qty_basis = "page"
 applies_to = "LST2, AFT, XXL2"
+fits = [
+  { kit = "kit/losi/lst2", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the Losi LST2 (link_car_kits.py)" },
+]
 links = [
   { site = "Losi", url = "https://www.losi.com/product/losi-shock-adjuster-nut-and-cap-4-lst2-aft-xxl2/LOSB2815.html" },
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-shock-adjuster-nut-and-cap-4-lst2-aft-xxl2/LOSB2815.html" },

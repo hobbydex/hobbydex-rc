@@ -4,15 +4,11 @@ number = "E0835"
 name = "TITANIUM STEERING ROD 90"
 gtin = "4944925020124"
 fits = [
-  { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr_eco-option-parts-page", notes = "Also listed by doc/mugen/mbx8tr-eco-part-list; Also listed by doc/mugen/mbx8te-part-list" },
-  { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list", notes = "Also listed by doc/mugen/mbx8t-part-list" },
-  { kit = "kit/mugen/mbx7t-eco", type = "direct", source = "doc/mugen/mbx-7tre-part-list", notes = "Also listed by doc/mugen/mbx-7t-eco-part-list" },
-  { kit = "kit/mugen/mbx7t", type = "direct", source = "doc/mugen/mbx-7tr-part-list", notes = "Also listed by doc/mugen/mbx-7t-part-list" },
-  { kit = "kit/mugen/mbx6t", type = "replaces", source = "doc/mugen/mbx-6tr-part-list", notes = "Also listed by doc/mugen/mbx-6t-part-list" },
-  { kit = "kit/mugen/mbx7t", type = "replaces", replaces = "part/mugen/E0834", source = "doc/mugen/mbx-7tr-part-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/mugen/mbx7t-eco", type = "replaces", replaces = "part/mugen/E0834", source = "doc/mugen/mbx-7tre-part-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/mugen/mbx8t", type = "replaces", replaces = "part/mugen/E0834", source = "doc/mugen/mbx8tr-part-list", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/mugen/mbx8t-eco", type = "replaces", replaces = "part/mugen/E0834", source = "doc/mugen/mbx8tr_eco-option-parts-page", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/mugen/mbx8t-eco", type = "replaces", source = "doc/mugen/mbx8tr_eco-option-parts-page", notes = "Also listed as direct by doc/mugen/mbx8tr_eco-option-parts-page; Same part in another material (link_upgrades.py); Also listed by doc/mugen/mbx8tr-eco-part-list; Also listed by doc/mugen/mbx8te-part-list", replaces = "part/mugen/E0834" },
+  { kit = "kit/mugen/mbx8t", type = "replaces", source = "doc/mugen/mbx8tr-part-list", notes = "Also listed as direct by doc/mugen/mbx8tr-part-list; Same part in another material (link_upgrades.py); Also listed by doc/mugen/mbx8t-part-list", replaces = "part/mugen/E0834" },
+  { kit = "kit/mugen/mbx7t-eco", type = "replaces", source = "doc/mugen/mbx-7tre-part-list", notes = "Also listed as direct by doc/mugen/mbx-7tre-part-list; Same part in another material (link_upgrades.py); Also listed by doc/mugen/mbx-7t-eco-part-list", replaces = "part/mugen/E0834" },
+  { kit = "kit/mugen/mbx7t", type = "replaces", source = "doc/mugen/mbx-7tr-part-list", notes = "Also listed as direct by doc/mugen/mbx-7tr-part-list; Same part in another material (link_upgrades.py); Also listed by doc/mugen/mbx-7t-part-list", replaces = "part/mugen/E0834" },
+  { kit = "kit/mugen/mbx6t", type = "direct", source = "doc/mugen/mbx-6tr-part-list", notes = "Also listed as replaces by doc/mugen/mbx-6tr-part-list; Also listed by doc/mugen/mbx-6t-part-list" },
 ]
 category = "steering"
 material = "titanium"

@@ -5,7 +5,7 @@ name = "Steering Pin"
 status = "discontinued"
 gtin = "4955439603390"
 category = "pin"
-documents = ["doc/kyosho/la22-product-page"]
+documents = ["doc/kyosho/la22-product-page", "doc/kyosho/fw-05-060322"]
 fits = [
   { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30045-t01-lazer-zx-5-fs2-spop" },
   { kit = "kit/kyosho/ultima-rb5", type = "direct", source = "doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-spop" },
@@ -18,6 +18,8 @@ fits = [
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822-tf5-readyset-mm-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/tf-6", type = "direct", source = "doc/kyosho/30024-tf6-p" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (standard part) in Kyosho's FW-05 parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/la22.html" },

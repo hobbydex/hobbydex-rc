@@ -2,13 +2,17 @@ id = "part/kyosho/SIL0500-8"
 brand = "brand/kyosho"
 number = "SIL0500-8"
 name = "Silicone OIL #500 (80cc) #500"
+gtin = "4548565273188"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401085032/http://kyosho.com/jpn/products/rc/parts_images/SIL0500-8.jpg"
 fits = [
   { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
   { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34403-monster-tracker-spop" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
 ]
 volume_ml = 80
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-500cst", match = "functional", notes = "Viscosity number #500 as the brand states it, on the cSt scale; measuring temperature not given" },
 ]
-documents = ["doc/kyosho/30027-tf7-7-parts-list-v01", "doc/kyosho/34403-monster-tracker-spop", "doc/kyosho/34404partslist-v01"]
+documents = ["doc/kyosho/30027-tf7-7-parts-list-v01", "doc/kyosho/34403-monster-tracker-spop", "doc/kyosho/34404partslist-v01", "doc/kyosho/v-one-r4-151117"]

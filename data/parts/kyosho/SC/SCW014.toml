@@ -2,10 +2,13 @@ id = "part/kyosho/SCW014"
 brand = "brand/kyosho"
 number = "SCW014"
 name = "Front Bumper (Small Type/Scorpion 2014)"
-seen_by = "2023-06"
-seen_by_source = "doc/kyosho/30613-mm06-scorpion-im"
+gtin = "4548565253852"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401204857/http://kyosho.com/jpn/products/rc/parts_images/SCW014.jpg"
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "direct", source = "doc/kyosho/30615-mm07-tomahawk-spop" },
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "bumper-guard"
-documents = ["doc/kyosho/30615-mm07-tomahawk-spop", "doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/30614-mm06_beetle_op_2"]
+documents = ["doc/kyosho/30615-mm07-tomahawk-spop", "doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/30614-mm06_beetle_op_2", "doc/kyosho/vintage-160304-2-jp"]

@@ -1,0 +1,14 @@
+id = "part/kyosho/GT20"
+brand = "brand/kyosho"
+number = "GT20"
+name = "2スピード 用 パイロットシャフト"
+name_source = "manual"
+gtin = "4955439663868"
+documents = ["doc/kyosho/inferno-gt-060322", "doc/kyosho/landmax2-060322", "doc/kyosho/monstertruck-060322"]
+category = "drivetrain"
+fits = [
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
+  { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the GIGA CRUSHER (standard part) in Kyosho's Monster Truck parts acceptable list" },
+  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (standard part) in Kyosho's Monster Truck parts acceptable list" },
+  { kit = "kit/kyosho/landmax-2", type = "replaces", source = "doc/kyosho/landmax2-060322", notes = "Marked for the Land Max 2 (option part) in Kyosho's Land Max 2 parts acceptable list" },
+]

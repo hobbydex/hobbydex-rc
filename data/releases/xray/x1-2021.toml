@@ -5,8 +5,12 @@ name = "X1'21"
 model_year = 2021
 kind = "kit"
 status = "released"
+year = 2020
+released = "2020-12-04"
+released_source = "doc/xray/news-2020-12-04-x1-21-online-now"
+notes = "Release date from the news of 2020-12-04"
 supersedes = "release/xray/x1-2020"
-documents = ["doc/xray/x1-2021-exploded-view", "doc/xray/x1-2021-manual", "doc/xray/x1-2021-part-list", "doc/xray/x1-2021-setup-sheet-2", "doc/xray/x1-2021-setup-sheet", "doc/xray/x1-2021-product-page", "doc/xray/news-2021-03-26-new-x1-21-graphite-chassis-2-5mm-hard"]
+documents = ["doc/xray/x1-2021-exploded-view", "doc/xray/x1-2021-manual", "doc/xray/x1-2021-part-list", "doc/xray/x1-2021-setup-sheet-2", "doc/xray/x1-2021-setup-sheet", "doc/xray/x1-2021-product-page", "doc/xray/news-2021-03-26-new-x1-21-graphite-chassis-2-5mm-hard", "doc/xray/news-2020-12-04-x1-21-online-now"]
 number = "370706"
 contains = [
   { part = "part/hudy/102003", role = "option", source = "doc/xray/x1-2021-part-list" },
@@ -467,4 +471,12 @@ contains = [
   { part = "part/xray/980210", role = "listed", source = "doc/xray/x1-2021-part-list" },
   { part = "part/xray/981210", role = "kit", source = "doc/xray/x1-2021-manual" },
   { part = "part/xray/981214", role = "kit", source = "doc/xray/x1-2021-manual" },
+  { part = "part/xray/306000", role = "kit", source = "doc/xray/x1-2021-manual" },
+  { part = "part/xray/308327", role = "kit", source = "doc/xray/x1-2021-manual" },
+  { part = "part/xray/373073", role = "kit", source = "doc/xray/x1-2021-manual" },
+  { part = "part/xray/375050", role = "kit", source = "doc/xray/x1-2021-manual" },
+  { part = "part/hudy/803070", role = "option", source = "doc/xray/x1-2021-manual" },
+  { part = "part/hudy/803080", role = "option", source = "doc/xray/x1-2021-manual" },
+  { part = "part/xray/902312", role = "kit", source = "doc/xray/x1-2021-manual" },
+  { part = "part/xray/906206", role = "kit", source = "doc/xray/x1-2021-manual" },
 ]

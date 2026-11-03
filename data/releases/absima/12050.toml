@@ -11,6 +11,9 @@ seen_by_source = "https://web.archive.org/web/20250916142139/https://www.absima.
 documents = ["doc/absima/spares-cr4-4", "doc/absima/12050-manual", "doc/absima/youtube-0e7x6xB7_DQ"]
 gtin = "4250650966546"
 notes = "Release year unknown; on sale in the Absima shop when read (2026-10-10)"
+rebrand_of = [
+  { release = "release/yikong/yk41011-lc79-cruiser", certainty = "likely", source = "doc/community/2026-11-01-absima-cr4-4eco-is-yikong-yk41015" },
+]
 contains = [
   { part = "part/absima/1231231", role = "listed", source = "doc/absima/spares-cr4-4" },
   { part = "part/absima/1231164", role = "listed", source = "doc/absima/spares-cr4-4" },

@@ -6,6 +6,7 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/FTBB10/fastrax-10mm-x-15mm-4mm-bearing-1" },
 ]
 category = "bearing"
+documents = ["doc/ftx/cml-apache-manual"]
 equivalent_to = [
-  { spec = "spec/bearing/10x15x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 10x15 bearing (6700)" },
+  { spec = "spec/bearing/10x15x4", match = "close", source = "doc/ftx/cml-apache-manual", notes = "Width stated by the Apache manual parts list: FTBB10 bearing 10*15*4" },
 ]

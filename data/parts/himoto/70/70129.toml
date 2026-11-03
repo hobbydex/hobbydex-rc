@@ -1,0 +1,15 @@
+id = "part/himoto/70129"
+brand = "brand/himoto"
+number = "70129"
+name = "Flange Lock Nut M4"
+category = "nut"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/dirt-diver", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/dirt-diver-1-16-electric", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/drekkar", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/drekkar-1-10-electric", type = "direct", source = "doc/himoto/option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

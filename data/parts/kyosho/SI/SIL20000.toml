@@ -2,14 +2,16 @@ id = "part/kyosho/SIL20000"
 brand = "brand/kyosho"
 number = "SIL20000"
 name = "Silicone Oil (20000)"
+gtin = "4955439766668"
 fits = [
   { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31777-infernomp777-p" },
   { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/31255-vonerr-evo-p" },
   { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31256-vonerrr-p" },
   { kit = "kit/kyosho/twin-force", type = "direct", source = "doc/kyosho/30521-b-twinforce-p" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
 ]
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-20000cst", match = "close", notes = "Viscosity stated as a bare 20000, read as cSt; measuring temperature not given" },
 ]
-documents = ["doc/kyosho/31255-vonerr-evo-p", "doc/kyosho/31256-vonerrr-p", "doc/kyosho/31258-vonerrr-wcte-p"]
+documents = ["doc/kyosho/31255-vonerr-evo-p", "doc/kyosho/31256-vonerrr-p", "doc/kyosho/31258-vonerrr-wcte-p", "doc/kyosho/v-one-r4-151117"]

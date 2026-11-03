@@ -2,6 +2,8 @@ id = "part/losi/LOSA6294"
 brand = "brand/losi"
 number = "LOSA6294"
 name = "Cap Screw, 2-56 x 5/16\""
+seen_by = "2015-05-02"
+seen_by_source = "https://web.archive.org/web/20150502032403/http://losi.com/ProdInfo/LOS/100/LOSA6294-100.jpg"
 pack_qty = 6
 pack_qty_basis = "page"
 links = [
@@ -15,4 +17,7 @@ fits = [
   { kit = "kit/losi/night-crawler", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/screw/unc-2-56x5-16in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

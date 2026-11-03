@@ -2,8 +2,12 @@ id = "part/kyosho/SIL60000"
 brand = "brand/kyosho"
 number = "SIL60000"
 name = "Silicone Oil (60000)"
+gtin = "4955439860618"
 seen_by = "2006"
 seen_by_source = "doc/kyosho/31352-infst-r-m"
 name_source = "manual"
-documents = ["doc/kyosho/30903-ep-fazer-aston-bd01", "doc/kyosho/31352-infst-r-m"]
+documents = ["doc/kyosho/30903-ep-fazer-aston-bd01", "doc/kyosho/31352-infst-r-m", "doc/kyosho/v-one-r4-151117"]
 category = "oil-grease"
+fits = [
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
+]

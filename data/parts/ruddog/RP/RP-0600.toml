@@ -1,0 +1,15 @@
+id = "part/ruddog/RP-0600"
+brand = "brand/ruddog"
+number = "RP-0600"
+name = "M3x10mm Set Screws"
+category = "screw"
+gtin = "4052133016768"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-M3x10mm-Set-Screws-10pcs_1" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -5,6 +5,9 @@ name = "Decal (ULTIMA '87 WC)"
 gtin = "4548565482085"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 category = "decal"
-documents = ["doc/kyosho/30645_spop"]
+documents = ["doc/kyosho/30645_spop", "doc/kyosho/utd002-product-page"]
 name_source = "manufacturer"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/utd002.html" } ]
+fits = [
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30645-mm01-rev1-spop" },
+]

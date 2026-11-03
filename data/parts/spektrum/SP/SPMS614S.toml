@@ -6,9 +6,16 @@ gtin = "605482726808"
 category = "servo"
 category_source = "curated"
 equivalent_to = [
-  { spec = "spec/servo/standard-23t", match = "close", source = "doc/losi/los04021-manual", notes = "Spline from the name; standard case size assumed for the 1/8 LMT, check the mounting holes" },
+  { spec = "spec/servo/standard-23t", match = "close", source = "doc/spektrum/horizon-spms614s-page", notes = "Size category Standard stated by Horizon" },
 ]
 material = "steel"
 links = [
-  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-s614s-15kg-steel-gear-wp-servo-23t/SPMS614S.html" },
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-s614s-15kg-steel-gear-wp-servo-23t/SPMS614S.html", kind = "maker" },
 ]
+dimensions_mm = [46, 20, 41]
+weight_g = 62
+gear_material = "steel"
+torque_kgcm = 14.5
+voltage = 6
+bearings = 2
+waterproof = true

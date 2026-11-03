@@ -2,9 +2,12 @@ id = "part/kyosho/TR302"
 brand = "brand/kyosho"
 number = "TR302"
 name = "Radio Box Set (DBX-VE)"
+seen_by = "2010-01-02"
+seen_by_source = "https://web.archive.org/web/20100102024502/http://kyosho.com/jpn/products/rc/parts_images/TR302.jpg"
 fits = [
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
   { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/30843-dmt-ve-spop" },
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31047-dbx-dst-drt-drx-dbx-ve-parts-compati091020" },
 ]
 category = "chassis"
 documents = ["doc/kyosho/30842-dbxve-rs-p", "doc/kyosho/30843-dmt-ve-spop"]

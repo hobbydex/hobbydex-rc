@@ -2,14 +2,20 @@ id = "part/kyosho/FAT306BK"
 brand = "brand/kyosho"
 number = "FAT306BK"
 name = "Drift Rear Front(14-Spoke/Black/24mm)"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401120011/http://kyosho.com/jpn/products/rc/parts_images/FAT306BK.jpg"
 gtin = "4548565262977"
 pack_qty = 2
 color = "black"
 fits = [
   { kit = "kit/kyosho/fazer", type = "replaces", source = "doc/kyosho/30917-fazer-ve-porsche-918-spop" },
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30919-fazer-ve-x-lancer-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/fat306bk.html" },
 ]
 category = "wheel"
 category_source = "llm"
+documents = ["doc/kyosho/fat306bk-product-page"]
+vehicle = "drift"
+position = "front"

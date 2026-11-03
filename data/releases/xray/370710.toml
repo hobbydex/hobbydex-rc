@@ -6,8 +6,12 @@ name = "X1'27 Alu"
 model_year = 2027
 kind = "kit"
 status = "released"
+year = 2026
+released = "2026-09-18"
+released_source = "doc/xray/news-2026-09-18-new-x1-27-online-now"
+notes = "Release date from the news of 2026-09-18"
 edition = "alu"
-documents = ["doc/xray/x1-2027-exploded-view", "doc/xray/x1-2027-manual", "doc/xray/x1-2027-part-list", "doc/xray/x1-2027-product-page"]
+documents = ["doc/xray/x1-2027-exploded-view", "doc/xray/x1-2027-manual", "doc/xray/x1-2027-part-list", "doc/xray/x1-2027-product-page", "doc/xray/news-2026-09-18-new-x1-27-online-now"]
 contains = [
   { part = "part/hudy/101600", role = "option", source = "doc/xray/x1-2027-part-list" },
   { part = "part/hudy/102003", role = "option", source = "doc/xray/x1-2027-part-list" },
@@ -598,4 +602,12 @@ contains = [
   { part = "part/hudy/990008", role = "option", source = "doc/xray/x1-2027-part-list" },
   { part = "part/hudy/990010", role = "option", source = "doc/xray/x1-2027-part-list" },
   { part = "part/hudy/990101", role = "option", source = "doc/xray/x1-2027-part-list" },
+  { part = "part/hudy/294120", role = "option", source = "doc/xray/x1-2027-manual" },
+  { part = "part/hudy/294123", role = "option", source = "doc/xray/x1-2027-manual" },
+  { part = "part/hudy/294124", role = "option", source = "doc/xray/x1-2027-manual" },
+  { part = "part/hudy/294125", role = "option", source = "doc/xray/x1-2027-manual" },
+  { part = "part/hudy/294134", role = "option", source = "doc/xray/x1-2027-manual" },
+  { part = "part/hudy/294135", role = "option", source = "doc/xray/x1-2027-manual" },
+  { part = "part/xray/980210", role = "kit", source = "doc/xray/x1-2027-manual" },
+  { part = "part/xray/981214", role = "kit", source = "doc/xray/x1-2027-manual" },
 ]

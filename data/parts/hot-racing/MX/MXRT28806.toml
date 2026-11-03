@@ -2,6 +2,7 @@ id = "part/hot-racing/MXRT28806"
 brand = "brand/hot-racing"
 number = "MXRT28806"
 name = "Metal Cv Splined Drive Shaf - Mini-XRT"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/mxrt28806-metal-cv-splined-drive-shaf-mini-xrt", kind = "maker" },
 ]
@@ -9,4 +10,7 @@ category = "drivetrain"
 fits = [
   { kit = "kit/traxxas/mini-maxx", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/traxxas/xrt", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/traxxas/10798", relation = "replaces", notes = "link_part_refs" },
 ]

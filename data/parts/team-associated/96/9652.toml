@@ -2,6 +2,7 @@ id = "part/team-associated/9652"
 brand = "brand/team-associated"
 number = "9652"
 name = "Spur Gear, 78T 48P"
+status = "discontinued"
 seen_by = "2025-01-21"
 seen_by_source = "https://web.archive.org/web/20250121004515/https://60years.associatedelectrics.com/spur-gear-78t-48p/"
 gtin = "784695096523"
@@ -13,4 +14,6 @@ teeth = 78
 pitch_dp = 48
 fits = [
   { kit = "kit/team-associated/sr10", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
 ]
+documents = ["doc/team-associated/cat-t4ft"]

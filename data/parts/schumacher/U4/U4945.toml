@@ -2,6 +2,10 @@ id = "part/schumacher/U4945"
 brand = "brand/schumacher"
 number = "U4945"
 name = "Pro Ball Bearing 1/8 x 1/4 x 7/64 - pr"
+gtin = "5051294098872"
 category = "bearing"
 documents = ["doc/schumacher/mi7-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi7/pro-ball-bearing-1-8-x-1-4-x-7-64-pr-u4945" } ]
+equivalent_to = [
+  { spec = "spec/bearing/3.175x6.35x2.778", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

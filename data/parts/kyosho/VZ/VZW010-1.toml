@@ -5,12 +5,17 @@ name = "O-ring - Shaft Set"
 status = "discontinued"
 gtin = "4955439748411"
 category = "o-ring-seal"
-documents = ["doc/kyosho/vzw010-1-product-page"]
+documents = ["doc/kyosho/vzw010-1-product-page", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322"]
 fits = [
   { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
   { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31584-fw05rr-kce-m" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30813-tf-5s-chassis-kit-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RRR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vzw010-1.html" },

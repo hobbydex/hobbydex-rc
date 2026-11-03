@@ -8,7 +8,7 @@ pack_qty = 2
 pack_qty_basis = "manual"
 gtin = "4955439758960"
 category = "bearing"
-documents = ["doc/kyosho/brg014-product-page"]
+documents = ["doc/kyosho/brg014-product-page", "doc/kyosho/fw-05-060322", "doc/kyosho/vintage-160304-2-jp"]
 equivalent_to = [
   { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
@@ -57,6 +57,9 @@ fits = [
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-p" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/tf-6", type = "direct", source = "doc/kyosho/30024-tf6-p" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (standard part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (standard part) in Kyosho's Vintage series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/brg014.html" },

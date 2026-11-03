@@ -1,0 +1,20 @@
+id = "part/nosram/999853"
+brand = "brand/nosram"
+number = "999853"
+name = "HV Hyper LCG Modified Shorty Graphene-4.2 4600mAh Hardcase Battery - 7.6V LiPo - 130C / 65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999853/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4600mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 4600
+c_rating = 130
+case = "shorty"
+weight_g = 161
+connector = "5mm bullet"
+voltage = 7.6

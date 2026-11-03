@@ -73,6 +73,22 @@ ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.py")   # the per-hos
 ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
 
 
+# a document title that is only item numbers, or repeats one token: the placeholder an importer wrote when no name was known
+# ("Tamiya 43501 43501: instruction manual"); the name then comes from the maker's page (title_source)
+PLACEHOLDER_TITLE = re.compile(r"(?<![\w.'/-])(\S*?\d[\w.'/-]*) \1(?![\w.'/-])")
+NUMBERS_ONLY_TITLE = re.compile(r"\d[\d.'/-]*(?: \d[\d.'/-]*)*")
+
+
+def placeholder_title(title):
+    t = (title or "").strip()
+    return bool(PLACEHOLDER_TITLE.search(t)) or bool(NUMBERS_ONLY_TITLE.fullmatch(t))
+
+
+def date_without_source(r):
+    """A release that states a year or release date but names no source for it (released_source)."""
+    return (r.get("year") is not None or bool(r.get("released"))) and not r.get("released_source")
+
+
 def english_swaps():
     """{host: (from, to)} of the swap rules: a maker link under `from` has its English address under `to`."""
     if not os.path.exists(ENGLISH_TABLE):
@@ -91,6 +107,39 @@ def non_english(url, swaps):
         return False
     u = url if url.count("/") > 2 else url + "/"
     return u.startswith(rule[0]) and not u.startswith(rule[1])
+
+
+def english_twin(url, swaps):
+    """The English address of a maker link under a swap rule, or None."""
+    rule = swaps.get(urllib.parse.urlsplit(url).hostname or "")
+    return rule[1] + url[len(rule[0]):] if rule and url.startswith(rule[0]) else None
+
+
+def has_foreign_link(text, swaps, gone=frozenset()):
+    """Whether a record's text has a non-English maker link with no English twin beside it in the same record.
+    A twin the crawl found gone (gone: the URLs the queue marks gone) is no switch: the maker has no such page."""
+    links = [u for line in text.splitlines() if not line.lstrip().startswith("notes") for u in ENGLISH_LINK.findall(line)]
+    here = set(links)
+    for u in links:
+        twin = english_twin(u, swaps)
+        if non_english(u, swaps) and twin not in here and twin not in gone:
+            return True
+    return False
+
+
+def gone_urls(cache, swaps):
+    """The URLs the crawl queue marks gone on the English hosts of the swap rules (read-only; empty without a queue)."""
+    hosts = sorted({urllib.parse.urlsplit(to).hostname or "" for _, to in swaps.values()})
+    crawl = os.path.join(cache, "crawl.db") if cache else ""
+    if not hosts or not crawl or not os.path.exists(crawl):
+        return frozenset()
+    import sqlite3
+    con = sqlite3.connect("file:%s?mode=ro" % crawl, uri=True)
+    try:
+        rows = con.execute("select url from queue where status='gone' and host in (%s)" % ",".join("?" * len(hosts)), hosts).fetchall()
+    finally:
+        con.close()
+    return frozenset(u for (u,) in rows)
 
 
 def walk_strings(v):
@@ -177,6 +226,70 @@ def not_manual_name(stem):
 TAMIYA_STATIC = ((10000, 39999), (60000, 61999), (74000, 89999))
 
 
+TAMIYA_CAPTURE = re.compile(r"^https?://web\.archive\.org/web/\d{14}\w*/https?://(?:www\.)?tamiya(?:usa)?\.com(?::\d+)?/")
+
+
+def tamiya_maker_linked(links):
+    """True when a Tamiya record links its maker's page: the Tamiya product link (no kind), a kind "maker" link, or a kind
+    "archive" capture of a tamiya.com or tamiyausa.com page (the page is gone; schema.md). Dealer and fan-site links never count."""
+    for l in links:
+        kind = l.get("kind")
+        if (kind is None and l.get("site") == "Tamiya") or kind == "maker":
+            return True
+        if kind == "archive" and TAMIYA_CAPTURE.match(l.get("url", "")):
+            return True
+    return False
+
+
+def hw_photo_unread(hw, parts):
+    """The parts whose cached product photo link_hw_photo_finish (hw) has not read yet, or None when the module's
+    tools/data/vlm.toml is missing (gitignored, so absent from a fresh checkout)."""
+    unread_ids = set()
+    try:
+        for brand_parts in by_brand(parts):   # the photo index of a brand is dropped after its parts (it held every brand at once)
+            for p in brand_parts:
+                if hw.unread_photo(p):
+                    unread_ids.add(id(p))
+            hw._INDEX.pop((brand_parts[0].get("brand") or "")[6:], None)
+    except FileNotFoundError:
+        return None
+    hw._NUM = None   # number_pages: every cached product page, built once for this check
+    hw.L._CRAWLED = None   # the crawl's page map (link_pack_qty.crawled_pages), read by the photo lookups only
+    return [p for p in parts if id(p) in unread_ids]
+
+
+def tamiya_label_only(part):
+    """True when a Tamiya spare's name comes from OCR of a manual and it has no maker page (the caller checks the link):
+    a bag or parts-tree label ("A Parts", "Differential Gear Bag") or a part name read off a manual page. The maker
+    sells no spare page for such a number, so a missing maker link is no defect."""
+    return part.get("name_source") == "ocr"
+
+
+HORIZON_LIST_KINDS = ("exploded_view", "part_list", "manual", "supplement")   # documents that list parts, not pages that sell them
+IMAGE_URL = re.compile(r"\.(?:jpe?g|png|gif)$", re.I)
+
+
+def horizon_no_page(part, docs, gone):
+    """True when a Horizon part has no maker page to link: every document that names it is an exploded view, a parts
+    list, a manual or a supplement, its seen_by_source is such a document (or a captured product image), and its item
+    page answers 404 in the cache (gone: the item numbers with a cached horizon-items/<number>-item.html.http404.txt)."""
+    if part.get("number") not in gone or not part.get("documents"):
+        return False
+    if any(docs.get(d, {}).get("kind") not in HORIZON_LIST_KINDS for d in part["documents"]):
+        return False
+    src = part.get("seen_by_source")
+    if not src or src in docs:
+        return not src or docs[src].get("kind") in HORIZON_LIST_KINDS
+    return bool(IMAGE_URL.search(src))
+
+
+def horizon_gone_items(tools):
+    """Item numbers whose Horizon item page answered 404 (cache/notes/horizon-items/<number>-item.html.http404.txt)."""
+    d = os.path.join(tools, "cache", "notes", "horizon-items")
+    suffix = "-item.html.http404.txt"
+    return {n[:-len(suffix)] for n in os.listdir(d) if n.endswith(suffix)} if os.path.isdir(d) else set()
+
+
 def tamiya_static_non_rc(rel_path, tamiya_numbers):
     """True when a cached tamiya-de file (rel_path relative to cache/) is a static kit, paint or tool: its item number
     is in TAMIYA_STATIC and no Tamiya release or part of the data has that number, so no release can take the manual."""
@@ -210,6 +323,22 @@ def load_art_sources(tools):
         with open(files[fn], "rb") as f:
             items += tomllib.load(f).get("item", [])
     return items
+
+
+def load_gtin_holes(tools):
+    """{record id: [code, label, cached file]} of the barcodes the cache states for a record (hobbydex-tools
+    tools/gtin_sweep.py report writes cache/gtin_sweep_holes.json); None when the file is absent."""
+    p = os.path.join(tools, "cache", "gtin_sweep_holes.json")
+    try:
+        with open(p, encoding="utf-8") as f:
+            return json.load(f).get("holes", {})
+    except (OSError, ValueError):
+        return None
+
+
+def gtin_in_cache_not_stored(holes, by_id):
+    """Ids of the records the sweep found a barcode for in the cache that still have no gtin."""
+    return sorted(i for i in holes if i in by_id and not by_id[i].get("gtin"))
 
 
 def load_tools(tools):
@@ -342,6 +471,7 @@ def load_tools(tools):
     if os.path.exists(tamico):
         out["tamico"] = tamico
     out["sources"] = load_art_sources(tools)
+    out["gtin_holes"] = load_gtin_holes(tools)
     cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
@@ -649,6 +779,10 @@ def main():
     check("date-marker-question", "the ? sits in the date column of a narrow table: shorten the reason or move it to the release notes, and confirm the date",
           [r for r in rels if any(k in r for k in ("year_doubt", "released_doubt", "announced_doubt"))])
 
+    # 2a. document titles that are only item numbers, or repeat one (the importer's placeholder when no name was known)
+    check("doc-placeholder-title", "replace the repeated number with the item's name from a maker page (title_source names it), or keep the number once; never the number twice",
+          [d for d in docs.values() if placeholder_title(d.get("title"))])
+
     # 2b. releases of one brand with the same name: the name must say which is which (an edition, colour or re-release word)
     # releases with their own item numbers are distinct releases; only the same number under the same name is a duplicate
     same_name = collections.defaultdict(list)
@@ -696,9 +830,10 @@ def main():
                 for fn in fs:
                     if fn.lower().endswith(".pdf"):
                         cached.append(os.path.relpath(os.path.join(dp, fn), tools["cache"]))
-        # a doc is linked when a release or a part lists it
+        # a doc is linked when a release or a part lists it, or when it lists a kit (a maker's manual of the platform:
+        # docs/schema.md "kits")
         on_part = {dd for p in parts for dd in p.get("documents", [])}
-        linked_docs = set(doc_rels) | on_part
+        linked_docs = set(doc_rels) | on_part | {d["id"] for d in docs.values() if d.get("kits")}
         # the crawl queue maps each cached file to the URL it came from
         url_of = {}
         crawl = os.path.join(tools["cache"], "crawl.db")
@@ -712,13 +847,17 @@ def main():
         # (tools/link_manual_numbers.py file_url), so a document linked through one copy links every copy
         lmn = tools["manual_mod"]
         urls_by_name = lmn.queue_urls_by_name(tools["cache"]) if lmn and hasattr(lmn, "file_url") else {}
+        # a record's file name and its URL's file name match a cached copy whatever the case: the maker's own copy of a
+        # manual is named "BD8_Manual_English.pdf" on the CDN and "bd8-manual-english.pdf" in the cache
         by_name = collections.defaultdict(list)
-        by_url = collections.defaultdict(list)
+        by_url = collections.defaultdict(list)       # the full address, as before
+        by_url_name = collections.defaultdict(list)  # the address's file name, the same brand only
         for d in docs.values():
             if d.get("file"):
-                by_name[os.path.basename(d["file"])].append(d)
+                by_name[os.path.basename(d["file"]).lower()].append(d)
             if d.get("url"):
                 by_url[d["url"]].append(d)
+                by_url_name[os.path.basename(urllib.parse.urlsplit(d["url"]).path).lower()].append(d)
         unlinked = []
         not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
         not_rc = 0           # a static kit, paint or tool of Tamiya that no release or part of the data has (tamiya_static_non_rc)
@@ -728,7 +867,11 @@ def main():
             name = os.path.basename(rel_path)
             url = url_of.get(rel_path) or (lmn.file_url(os.path.join(tools["cache"], rel_path), {}, urls_by_name)
                                            if lmn and hasattr(lmn, "file_url") else None)
-            ds = by_name.get(name, []) + (by_url.get(url, []) if url else [])
+            # a URL's file name counts within the cached file's brand only: "manual.pdf" is a name of many makers
+            mine = "brand/" + rel_path.split("/")[1]
+            same_brand_url = [d for d in by_url_name.get(os.path.basename(urllib.parse.urlsplit(url).path).lower(), [])
+                              if d.get("brand") == mine] if url else []
+            ds = by_name.get(name.lower(), []) + (by_url.get(url, []) if url else []) + same_brand_url
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
                 stem = re.sub(r"(?i)\.pdf$", "", name)
@@ -813,6 +956,15 @@ def main():
         results["art-missing-photo"]["skip_reasons"] = collections.Counter(s or "(none)" for s in seen.values()).most_common(8)
     else:
         results["art-missing-photo"] = {"fix": "hobbydex-tools art sources not found (--tools)", "count": None, "examples": [], "all": []}
+
+    # 9b. barcodes the cache states for a record that has no gtin (tools/gtin_sweep.py in hobbydex-tools finds them)
+    if tools["gtin_holes"] is not None:
+        miss = gtin_in_cache_not_stored(tools["gtin_holes"], by_id)
+        check("gtin-in-cache-not-stored", "rerun tools/link_gtin.py in hobbydex-tools (a barcode a cached page states for exactly this number); if it does not take it, the importer misses that page format: fix the class (tools/gtin_sweep.py report lists the file)",
+              miss)
+        results["gtin-in-cache-not-stored"]["examples"] = [{"id": i, "url": url_for(by_id[i]), "gtin": tools["gtin_holes"][i][0], "file": tools["gtin_holes"][i][2]} for i in miss[:args.examples]]
+    else:
+        results["gtin-in-cache-not-stored"] = {"fix": "hobbydex-tools cache/gtin_sweep_holes.json not found (python3 -I tools/gtin_sweep.py scan, then report)", "count": None, "examples": [], "all": []}
 
     # 10. copyright-year release years
     check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",
@@ -907,6 +1059,10 @@ def main():
     # 15. release with no date at all
     check("release-no-date", "date the release from a source (released, year or announced); a seen_by bound is only a fallback",
           [r for r in rels if not any(r.get(k) for k in ("released", "year", "announced", "seen_by"))])
+
+    # 15a. a year or release date with no source: a hand-entered date, or one taken from a manual's date or a shop's listing day
+    check("date-without-source", "find the date in a maker page, manual, catalogue or dated news post and add released_source (the page URL, or its doc/ id); a source that contradicts it corrects it; with none, remove year and released (keep a printed manual date as seen_by)",
+          [r for r in rels if date_without_source(r)])
 
     # 15b. announced later than the seen_by bound: the announcement source is wrong (the car was on sale by the bound)
     def after_bound(x):
@@ -1035,13 +1191,13 @@ def main():
     # 24. never-link hosts and dealer doc references
     banned, scrap, local, dealer, foreign = [], [], [], [], []
     swaps = english_swaps()
+    gone = gone_urls(tools["cache"], swaps)
     for path in sorted({d["_path"] for k in db for d in db[k]}):
         with open(os.path.join(RC, path), encoding="utf-8") as f:
             text = f.read()
         if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)):
             banned.append(path)
-        if any(non_english(u, swaps) for line in text.splitlines() if not line.lstrip().startswith("notes")
-               for u in ENGLISH_LINK.findall(line)):
+        if has_foreign_link(text, swaps, gone):
             foreign.append(path)
         if SCRAP_IMG.search(text):
             scrap.append(path)
@@ -1058,7 +1214,7 @@ def main():
     check("tamico-doc-reference", "cite the maker's own listing instead of the Tamico dealer catalogue", [{"id": p} for p in dealer], count=len(dealer))
     results["tamico-doc-reference"]["examples"] = [{"id": p, "url": SITE + "/rc/"} for p in dealer[:args.examples]]
     check("local-path", "replace the local path with the source's URL", local)
-    check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed",
+    check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone is not listed)",
           [{"id": p} for p in foreign], count=len(foreign))
 
     # 25. releases with no maker product page (no product_page document, no maker link), per brand
@@ -1087,16 +1243,20 @@ def main():
     # tools/link_tamiya_usa_spares.py) or the Tamiya product link with no kind; a dealer link (tools/link_tamico_spares.py)
     # is counted apart: a spare with a dealer link only still needs its maker page
     def maker_linked(p):
-        return any((l.get("kind") is None and l.get("site") == "Tamiya") or l.get("kind") == "maker" for l in p.get("links", []))
+        return tamiya_maker_linked(p.get("links", []))
     def dealer_linked(p):
         return any(l.get("kind") == "dealer" for l in p.get("links", []))
     tam = [p for p in parts if p.get("brand") == "brand/tamiya"]
     spares_all = [p for p in tam if re.fullmatch(r"\d{8}", str(p.get("number", "")))]
-    spares = [p for p in spares_all if not maker_linked(p)]
+    unlinked = [p for p in spares_all if not maker_linked(p)]
+    spares = [p for p in unlinked if not tamiya_label_only(p)]
+    label_only = [p for p in unlinked if tamiya_label_only(p)]
     items = [p for p in tam if re.fullmatch(r"\d{5}", str(p.get("number", ""))) and not maker_linked(p) and not dealer_linked(p)]
     dealer_only = sum(1 for p in spares if dealer_linked(p))
     check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker link (Tamiya USA's spare page, kind maker): the daily derive runs tools/link_tamiya_de_spares.py (tamiya.de sitemap) and tools/link_tamiya_usa_spares.py (Tamiya USA listings, which tools/plan_tamiya_usa_spares.py queues) in hobbydex-tools; a spare with only a dealer link is counted in dealer_only",
           spares, count=len(spares), maker=sum(1 for p in spares_all if maker_linked(p)), dealer_only=dealer_only)
+    check("tamiya-spare-label-only", "no maker spare page exists: the part's name comes from OCR of a manual (a bag or parts-tree label, or a part name) and the maker has no page for the number (informational)",
+          label_only, count=len(label_only), per_brand=[("tamiya", len(label_only))], info=True)
     check("tamiya-item-no-link", "a Tamiya item number with no maker product page: give it a maker link (tamiya.com page) or a manual or fan-site source",
           items, count=len(items))
     usa_tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamiya-usa-spares.tsv")
@@ -1195,17 +1355,10 @@ def main():
               stated, per_brand=per_brand(stated))
 
     # 29b. hardware (any brand) whose cached product photo is not read yet for its colour or its piece count
-    if tools["hwphoto"]:
-        hw = tools["hwphoto"]
-        unread_ids = set()
-        for brand_parts in by_brand(parts):   # the photo index of a brand is dropped after its parts (it held every brand at once)
-            for p in brand_parts:
-                if hw.unread_photo(p):
-                    unread_ids.add(id(p))
-            hw._INDEX.pop((brand_parts[0].get("brand") or "")[6:], None)
-        hw._NUM = None   # number_pages: every cached product page, built once for this check
-        hw.L._CRAWLED = None   # the crawl's page map (link_pack_qty.crawled_pages), read by the photo lookups only
-        unread = [p for p in parts if id(p) in unread_ids]
+    unread = hw_photo_unread(tools["hwphoto"], parts) if tools["hwphoto"] else []
+    if unread is None:   # hobbydex-tools' tools/data/vlm.toml is gitignored and missing on a fresh checkout
+        results["hw-photo-unread"] = {"fix": "hobbydex-tools tools/data/vlm.toml not found (--tools)", "count": None, "examples": [], "all": []}
+    elif tools["hwphoto"]:
         check("hw-photo-unread", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour or pack_qty by hand from the photo",
               unread, per_brand=per_brand(unread))
 
@@ -1400,8 +1553,15 @@ def main():
     # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
     hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
     hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
+    gone_items = horizon_gone_items(os.path.abspath(args.tools))
+    hz_nopage = [p for p in hz if horizon_no_page(p, docs, gone_items)]
+    hz_nopage_ids = {p["id"] for p in hz_nopage}
+    hz = [p for p in hz if p["id"] not in hz_nopage_ids]
+    hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
     check("horizon-part-no-maker-link", "run tools/link_horizon_pages.py (queues the item's Horizon page first; a part Horizon lists nowhere stays unlinked)",
           hz, per_brand=hz_brands.most_common())
+    check("horizon-part-no-maker-page", "no maker page exists: the part is named only by exploded views, parts lists or manuals, and its Horizon item page answers 404 (informational)",
+          hz_nopage, count=len(hz_nopage), per_brand=collections.Counter(p["brand"].split("/")[-1] for p in hz_nopage).most_common(), info=True)
 
     hw_box = []
     for r in rels:

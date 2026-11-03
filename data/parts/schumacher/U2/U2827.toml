@@ -2,8 +2,14 @@ id = "part/schumacher/U2827"
 brand = "brand/schumacher"
 number = "U2827"
 name = "Pro-Touring Springs - Yellow 23 lbs"
+gtin = "5051294018641"
 seen_by = "2010-01-30"
 seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
 category = "shock-spring"
 color = "yellow"
-documents = ["doc/schumacher/mission-ft-manual-v2"]
+documents = ["doc/schumacher/mission-ft-manual-v2", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/pro-touring-springs-yellow-23-lbs-u2827" } ]
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

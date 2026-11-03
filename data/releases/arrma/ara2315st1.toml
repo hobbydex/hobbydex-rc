@@ -4,12 +4,18 @@ brand = "brand/arrma"
 number = "ARA2315ST1"
 name = "Infraction Grom 3S 4X4 Ready-To-Run Brushless All-Road Street Bash (Battery & Charger Included), red/black"
 year = 2026
+released = "2026-10-21"
+released_source = "doc/arrma/ara2315s-product-page"
 kind = "rtr"
 power = "brushless"
 power_source = "name"
 status = "announced"
 gtin = "660132655556"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-1-12-infraction-grom-3s-4x4-ready-to-run-brushless-all-road-street-bash-battery-and-charger-included/ARA2315S.html", kind = "maker" },
+]
 color = "red/black"
+notes = "Planned release October 21: Horizon's product page (read 2026-10-10) shows \"Pre-Order | Releasing October 21\""
 documents = ["doc/arrma/ara2315s-manual", "doc/arrma/ara2315s-part-list", "doc/arrma/ara2315s-product-page"]
 contains = [
   { part = "part/arrma/ARA-2151", role = "kit", source = "doc/arrma/horizon-part-pages" },

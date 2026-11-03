@@ -5,12 +5,14 @@ number = "30874T1"
 name = "INFERNO MP9e TKI Ready Set"
 gtin = "4548565268412"
 name_ja = "インファーノMP9e TKI レディセット"
+year = 2015
+released = "2015-02"
+released_source = "https://rc.kyosho.com/en/30874t1.html"
 kind = "rtr"
 power = "brushless"
 power_source = "doc/kyosho/30874t1-product-page"
-status = "released"
-seen_by = "2015-01"
-seen_by_source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-im"
+notes = "Listed on the maker's page before its sale month (2015-01, source doc/kyosho/30874t1-inferno-mp9e-tki-rs-im)."
+status = "discontinued"
 documents = ["doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop", "doc/kyosho/30874t1-inferno-mp9e-tki-rs-ex", "doc/kyosho/30874t1-inferno-mp9e-tki-rs-mm", "doc/kyosho/30874t1-inferno-mp9e-tki-rs-im", "doc/kyosho/30874t1-product-page"]
 contains = [
   { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-ex" },
@@ -261,4 +263,24 @@ contains = [
   { part = "part/kyosho/IFW336GM", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
   { part = "part/kyosho/IFW405-138", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
   { part = "part/kyosho/IFW413", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IFW107GM", role = "kit", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/97008-36H", role = "kit", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IF348-1016", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IF348-1114", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IF348-1116", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IF348-1216", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IF348-1316", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IFW457-7514", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IFW457-8514", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IS106-816", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IS106-1016", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IS106-1116", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IS106-8514", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IS106-9514", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IFH003KG", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IFH003KO", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { part = "part/kyosho/IFH004KG", role = "option", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30874t1.html"

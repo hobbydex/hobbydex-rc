@@ -3,11 +3,12 @@ kit = "kit/kyosho/v-one-rrr"
 brand = "brand/kyosho"
 number = "31264"
 name = "V-ONE RRR SHIMO Edition"
+name_ja = "V-ONE RRR SHIMO エディション"
 gtin = "4548565147731"
 kind = "kit"
 power = "nitro"
 power_source = "part/kyosho/FMW35"
-status = "released"
+status = "discontinued"
 seen_by = "2009"
 seen_by_source = "doc/kyosho/31264-v-one-rrr-shimo-edition-ex"
 documents = ["doc/kyosho/31264-v-one-rrr-shimo-edition-ex", "doc/kyosho/31264-v-one-rrr-shimo-edition-m", "doc/kyosho/31264-v-one-rrr-shimo-edition-p", "doc/kyosho/31264-product-page", "doc/kyosho/youtube-jKl8cImyibw"]
@@ -210,4 +211,19 @@ contains = [
   { part = "part/kyosho/VZW230-17", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
   { part = "part/kyosho/VZW231-22", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
   { part = "part/kyosho/VZW231-23", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ113-59B", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ113-60B", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ113-61B", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ114-55C", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ114-56C", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ242-4516", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ242-4517", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ243-4516", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ243-5017", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/VZ243-5518", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/ORG03BK", role = "kit", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { part = "part/kyosho/36235-42", role = "option", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/31264.html"

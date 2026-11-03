@@ -2,12 +2,14 @@ id = "part/tamiya/42109"
 brand = "brand/tamiya"
 number = "42109"
 name = "840 Ball Bearing"
+pack_qty = 2
+pack_qty_basis = "manual"
 seen_by = "2010-12-26"
 seen_by_source = "https://web.archive.org/web/20101226130812/http://www.tamiyausa.com/pdf/manuals/42184ml.pdf"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 equivalent_to = [
-  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Tamiya size code 840: 8 mm outer, 4 mm bore, 3 mm wide" },
+  { spec = "spec/bearing/4x8x3", match = "close", notes = "Tamiya size code 840: 4x8 mm bore x outer; width 3 mm per the usual size, not stated by Tamiya" },
 ]
 category = "bearing"
 links = [

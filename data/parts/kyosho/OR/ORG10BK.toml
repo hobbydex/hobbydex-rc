@@ -8,10 +8,15 @@ pack_qty_basis = "page"
 fits = [
   { kit = "kit/kyosho/nitro-tracker", type = "direct", source = "doc/kyosho/33101-nitro-tracker-spop" },
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822t02f-tf5-readyset-p" },
+  { kit = "kit/kyosho/birel-r31-se", type = "direct", source = "doc/kyosho/31315-birel-r31-se-ready-mm-p" },
 ]
 category = "o-ring-seal"
+documents = ["doc/kyosho/org10bk-product-page"]
 color = "black"
 range = "kyosho/org10-colours"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/org10bk.html" },
+]
+equivalent_to = [
+  { spec = "spec/o-ring/9.8x1.9", match = "functional" },
 ]

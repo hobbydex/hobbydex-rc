@@ -1,12 +1,15 @@
 id = "part/cen/G36728"
 brand = "brand/cen"
 number = "G36728"
-name = "G36728"
+name = "Pin 3x13.8mm"
 seen_by = "2020-10-01"
 seen_by_source = "https://web.archive.org/web/20201001133756/https://www.cenracingusa.com/products/g36728"
 gtin = "4717873367289"
-notes = "Labelled by number only in the CEN manuals"
+notes = "Labelled by number only in the CEN manuals; Named on the maker's own product page (archived copy)"
 documents = ["doc/cen/american-force-reeper-manual"]
 links = [ { site = "CEN Racing", url = "https://www.cenracingusa.com/products/g36728" } ]
-category = "misc"
-category_source = "fallback"
+category = "pin"
+name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/pin/3x13.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

@@ -7,6 +7,7 @@ that differ only in case. Also the art under art/ (see check_art). Exit code 1 o
 Run from the repo root: python3 -I tools/validate.py
 """
 import datetime, os, re, sys, tomllib, unicodedata, urllib.parse
+from fractions import Fraction
 import xml.etree.ElementTree as ET
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layout import ART_KINDS, DIRS, art_path, path_for
@@ -15,6 +16,8 @@ ROOT = "data"
 ART_ROOT = "art"
 ART_MAX = 4096   # bytes per art file
 SVG_NS = "http://www.w3.org/2000/svg"
+GTIN_PLACEHOLDERS = {"1234567890128", "0000000000000", "1111111111116", "9876543210987"}   # passes the check digit, never printed
+GTIN_ASCENDING, GTIN_DESCENDING = "0123456789" * 3, "9876543210" * 3
 PATH_DATA = re.compile(r"[MmLlHhVvCcSsQqTtAaZz0-9.,+\-eE ]+")
 REQUIRED = {
     "brand": ["id", "name", "status"],
@@ -31,9 +34,10 @@ REQUIRED = {
 }
 KINDS = {k: dict(dir=DIRS[k], required=REQUIRED[k]) for k in REQUIRED}
 REFS = {  # field -> expected id prefix
-    "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/",
+    "brand": "brand/", "kit": "kit/", "part": "part/", "spec": "spec/", "source": "doc/", "listed_in": "doc/",
     "publisher": ("brand/", "company/"), "replaces": "part/", "supersedes": "part/", "replaced_by": "standard/",
     "owner": "company/", "parent": "company/",
+    "release": "release/",   # a rebrand_of row on a release names the release it is a rebrand of
 }
 LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": "", "kits": "kit/", "parts": "part/"}   # requires: kit or release ids, checked above
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
@@ -66,7 +70,7 @@ ENUMS = {
     "release.kind_source": {"numbering"},   # the basis of a kind no page states: Tamiya's car-kit numbering (docs/schema.md "release", kind)
     "release.color_source": {"owner"},   # who states a colour the name does not give (docs/schema.md "release", color)
     # kit types (docs/schema.md "kit"); the site gives each a label and an icon (hobbydex src/lib/kitTypes.ts)
-    "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "tractor-truck", "race-truck",
+    "kit.category": {"buggy", "truggy", "stadium-truck", "short-course", "monster", "desert-truck", "truck", "tractor-truck", "tractor", "race-truck",
                      "crawler", "touring", "formula", "pan-car", "rally", "street-basher", "drift", "drag", "lowrider", "trailer",
                      "speed-run", "kart", "motorcycle", "snowmobile", "tank", "construction", "car", "boat", "oval", "gt", "on-road"},
     # kit drive (docs/schema.md "kit"); tracks: tanks and other tracked vehicles, half-tracks included
@@ -80,7 +84,8 @@ ENUMS = {
     "equivalent_to.match": {"exact", "functional", "close"},
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
-    "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
+    "rebrand_of.certainty": {"likely"},   # absent = confirmed (maker statement, matching part numbers or an owner's statement); likely = specs or looks only (docs/schema.md "rebrand_of")
+    "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour", "same-part"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases
@@ -154,6 +159,19 @@ SPEC_PART_CATS = {
 SIZE_SPEC_CATS = {"ball-end", "o-ring", "circlip"}   # specs keyed by one size, written by tools/link_*_specs.py
 
 
+# words of a vehicle class (never a named car): a universal part of basis size may keep an applies_to made of these
+# and a scale only (docs/schema.md "part", universal)
+VEHICLE_CLASS_WORDS = {"buggy", "buggies", "truggy", "truggies", "short", "course", "sc", "sct", "monster", "truck", "trucks",
+                       "crawler", "crawlers", "rock", "touring", "car", "cars", "on-road", "onroad", "off-road", "offroad",
+                       "road", "on", "off", "stadium", "rally", "drift", "racing", "scale", "scaler", "scalers"}
+CLASS_FILLER = {"rc", "fit", "fits", "for", "and", "the", "all", "a", "an", "of"}
+
+def class_only_applies_to(value):
+    """True when applies_to names only a vehicle class and maybe a scale ("Buggy", "Fit for 1/10 RC Touring Car")."""
+    text = re.sub(r"\b1\s?[/:]\s?\d+(?:th)?\b", " ", str(value).lower())
+    words = [w for w in re.split(r"[\s,/&+]+", text) if w]
+    return bool(words) and all(w in VEHICLE_CLASS_WORDS or w in CLASS_FILLER for w in words) and any(w in VEHICLE_CLASS_WORDS for w in words)
+
 def size_spec_problems(path, d):
     """Problems with a ball-end, O-ring or circlip spec: its size fields, and the id they are keyed by."""
     cat, out = d["category"], []
@@ -182,6 +200,70 @@ def size_spec_problems(path, d):
         if d["id"] != sid:
             out.append(f"{path}: circlip spec id should be {sid} (shaft, then thickness)")
     return out
+
+
+INCH_DRIVES = {"hex", "torx", "phillips", "jis", "slot"}
+
+
+def inch_text(value):
+    """An inch length as a reduced fraction in the names' form: "1/2", "1 1/4", "2"."""
+    whole, rest = divmod(value, 1)
+    if not rest:
+        return str(whole)
+    frac = f"{rest.numerator}/{rest.denominator}"
+    return frac if not whole else f"{whole} {frac}"
+
+
+def inch_screw_problems(path, d):
+    """Problems with an inch screw spec: a UNC or UNF thread, length_in as a reduced inch fraction (never mm), and the id they are keyed by.
+
+    The id is spec/screw/<standard>-<thread>x<length>in-<head>-<drive> (the length's whole part and fraction joined by "_"
+    and "-": "1_1-4in"), with -tapping for a self-tapping screw (docs/schema.md "spec").
+    """
+    if d.get("category") != "screw":
+        return [f"{path}: length_in is only for screw specs"]
+    out = []
+    if "length_mm" in d:
+        out.append(f"{path}: an inch screw spec states length_in and no length_mm (the length is never converted to metric)")
+    thread, std, L = d.get("thread"), d.get("thread_standard"), d.get("length_in")
+    if not isinstance(thread, str) or not re.fullmatch(r"\d{1,2}-\d{1,2}", thread) or std not in ("UNC", "UNF"):
+        return out + [f"{path}: inch screw spec needs thread like \"4-40\" and thread_standard UNC or UNF"]
+    value = None
+    if isinstance(L, str) and re.fullmatch(r"(\d+ )?\d+(/\d+)?|\d*\.\d+", L):
+        try:
+            parts = L.split()
+            value = int(parts[0]) + Fraction(parts[1]) if len(parts) == 2 else Fraction(L)
+        except (ValueError, ZeroDivisionError):
+            value = None
+    if value is None or value <= 0 or value.denominator not in (1, 2, 4, 8, 16, 32, 64) or inch_text(value) != L:
+        out.append(f"{path}: length_in {L!r} should be the length in inches as a reduced fraction (\"1/2\", \"1 1/4\", \"2\")")
+        return out
+    whole, _, frac = L.rpartition(" ")
+    token = (f"{whole}_" if whole else "") + (frac.replace("/", "-") if frac else L) + "in"
+    if d.get("drive") not in INCH_DRIVES:
+        out.append(f"{path}: inch screw spec needs drive, one of {sorted(INCH_DRIVES)}")
+    sid = f"spec/screw/{std.lower()}-{thread}x{token}-{d.get('head')}-{d.get('drive')}" + ("-tapping" if d.get("thread_type") == "self-tapping" else "")
+    if d.get("id") != sid:
+        out.append(f"{path}: inch screw spec id should be {sid}")
+    return out
+
+
+def gtin_problem(text):
+    """None for a barcode of 8, 12, 13 or 14 digits with a valid GS1 check digit that is not a placeholder, else the reason.
+    Placeholders pass the check digit: 1234567890128 is the example code dealer pages print for items with no barcode.
+    Same rule as hobbydex-tools tools/gtin_codes.py."""
+    code = str(text)
+    if not (code.isascii() and code.isdigit()) or len(code) not in (8, 12, 13, 14):
+        return "is not 8, 12, 13 or 14 digits"
+    digits = [int(c) for c in code]
+    if (10 - sum(x * (3 if i % 2 == 0 else 1) for i, x in enumerate(reversed(digits[:-1]))) % 10) % 10 != digits[-1]:
+        return "has no valid GS1 check digit"
+    if code in GTIN_PLACEHOLDERS or len(set(code)) <= 2 or len(code.lstrip("0")) < 7:
+        return "is a placeholder code"
+    body = code[:-1]
+    if len(body) >= 7 and (body in GTIN_ASCENDING or body in GTIN_DESCENDING):
+        return "is a placeholder code (counted digits)"
+    return None
 
 
 def g(v):
@@ -512,8 +594,9 @@ def check_art(ids, errors, body_parts=frozenset()):
 # "JR/Futaba" is one plug sold as fitting both servo plugs, so it names both specs
 PLUG_SPEC = {
     "XT30": "xt30", "XT60": "xt60", "XT60H": "xt60h", "XT90": "xt90", "XT90-S": "xt90s", "XT150": "xt150",
-    "AS150": "as150", "QS8": "qs8", "EC2": "ec2", "EC3": "ec3", "EC5": "ec5", "EC8": "ec8", "IC3": "ic3", "IC5": "ic5",
+    "AS150": "as150", "QS8": "qs8", "EC2": "ec2", "EC3": "ec3", "EC5": "ec5", "EC8": "ec8", "IC2": "ic2", "IC3": "ic3", "IC5": "ic5",
     "Deans": "deans", "Tamiya": "tamiya", "Mini Tamiya": "tamiya-mini", "JST-RCY": "jst-rcy", "JST-XH": "jst-xh",
+    "US style": "us-style", "P5": "p5", "Kyosho S-plug": "kyosho-s-plug",
     "JR": "servo-jr", "Futaba": "servo-futaba", "JR/Futaba": ("servo-jr", "servo-futaba"), "Traxxas iD": "traxxas-trx-id", "Traxxas high-current": "traxxas-high-current",
     "2mm bullet": "bullet-2mm", "3.5mm bullet": "bullet-3.5mm", "4mm bullet": "bullet-4mm", "5mm bullet": "bullet-5mm",
     "6mm bullet": "bullet-6mm", "6.5mm bullet": "bullet-6.5mm", "8mm bullet": "bullet-8mm", "4mm banana": "banana-4mm",
@@ -826,6 +909,13 @@ def main():
                 errors.append(f"{path}: release kind {v!r} is not kit, rtr, arr or roller (docs/schema.md \"release\")")
             elif key in ENUMS and v not in ENUMS[key]:
                 errors.append(f"{path}: {key} = {v!r} not in {sorted(ENUMS[key])}")
+        # a contains row upgraded from listed to kit by a maker manual keeps the listing that held it (docs/schema.md "release", contains)
+        for i, row in enumerate(d.get("contains", []) if kind == "release" else []):
+            if isinstance(row, dict) and "listed_in" in row:
+                if row.get("role") != "kit":
+                    errors.append(f"{path}: contains[{i}].listed_in only goes with role kit (the listing a manual upgraded)")
+                if row["listed_in"] == row.get("source"):
+                    errors.append(f"{path}: contains[{i}].listed_in is the row's own source; it names the earlier listing")
         # a fit narrowed to the releases the maker lists the part for (releases of that kit, at least one), or to a car
         for i, f in enumerate(d.get("fits", []) if kind == "part" else []):
             if "car" in f:   # the car the maker lists the part for, when none of the kit's releases is that car
@@ -856,11 +946,9 @@ def main():
         if kind in ("part", "release") and d.get("brand") in gone_brands and d.get("status") != "discontinued":
             errors.append(f"{path}: {d['brand']} is gone, so status must be discontinued")
         if kind in ("part", "release") and "gtin" in d:
-            g = str(d["gtin"])
-            digits = [int(c) for c in g] if g.isdigit() else []
-            ok = len(digits) in (8, 12, 13, 14) and (10 - sum(x * (3 if i % 2 == 0 else 1) for i, x in enumerate(reversed(digits[:-1]))) % 10) % 10 == digits[-1]
-            if not ok:
-                errors.append(f"{path}: gtin {g!r} is not a valid GTIN-8/12/13/14 (length or check digit)")
+            why = gtin_problem(d["gtin"])
+            if why:
+                errors.append(f"{path}: gtin {d['gtin']!r} {why}: a gtin is 8, 12, 13 or 14 digits with a valid check digit, not a placeholder")
         if kind == "doc" and d.get("kind") == "video":
             # a maker's own YouTube video (docs/schema.md "Videos")
             vid = str(d.get("id", "")).rsplit("/", 1)[-1].removeprefix("youtube-")
@@ -908,7 +996,9 @@ def main():
                 errors.append(f"{path}: universal is true or left out")
             elif "universal_basis" not in d:
                 errors.append(f"{path}: universal needs a universal_basis (maker, category, size or engine)")
-            elif d.get("applies_to") and d.get("universal_basis") != "engine":
+            elif d.get("applies_to") and d.get("universal_basis") not in ("engine", "size"):
+                errors.append(f"{path}: a part that names the model it is for (applies_to) is not universal")
+            elif d.get("applies_to") and d.get("universal_basis") == "size" and not class_only_applies_to(d["applies_to"]):
                 errors.append(f"{path}: a part that names the model it is for (applies_to) is not universal")
         if kind == "part" and ("includes_qty" in d or "includes_qty_note" in d):
             rows = d.get("includes") or []
@@ -990,8 +1080,13 @@ def main():
                 # an RC Scrapyard model page that states the introduction year: the year (YYYY) bound, the page a fan-site link of the release
                 scrapyard = (isinstance(ss, str) and isinstance(sb, str) and re.fullmatch(r"\d{4}", sb) and re.fullmatch(r"https://www\.rcscrapyard\.net/[\w./-]+\.htm", ss)
                              and any(isinstance(l, dict) and l.get("url") == ss and l.get("kind") == "fan-site" for l in d.get("links", [])))
-                if not (archive or shop or manual or own_page or video or printed or sitemap or scrapyard):
-                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), the maker's YouTube video of its first 60 days, or the maker's product sitemap (https://<host>/....xml) that lists the page, or an RC Scrapyard model page (a fan-site link of the release) for a year")
+                # a dated post of the brand's own news (news_info.php?sn=N) that names the release by its number: the day the post was up
+                news = (isinstance(ss, str) and kind == "release" and isinstance(sb, str) and re.fullmatch(r"\d{4}-\d{2}(-\d{2})?", sb)
+                        and re.fullmatch(r"https://[^\s/]+/news_info\.php\?sn=\d+", ss)
+                        and urllib.parse.urlsplit(ss).hostname in {brand_site.get(d.get("brand")), (brand_site.get(d.get("brand")) or "").removeprefix("www.")}
+                        and "/news_info.php" == urllib.parse.urlsplit(ss).path)
+                if not (archive or shop or manual or own_page or video or printed or sitemap or scrapyard or news):
+                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), the maker's YouTube video of its first 60 days, or the maker's product sitemap (https://<host>/....xml) that lists the page, or an RC Scrapyard model page (a fan-site link of the release) for a year, or the brand's own news post (news_info.php?sn=N) that names the release by its number, dated by the post's day")
                 elif archive and not manual and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
@@ -1192,6 +1287,14 @@ def main():
             t = d["teeth"]
             if isinstance(t, bool) or not isinstance(t, int) or not 5 <= t <= 300:
                 errors.append(f"{path}: teeth {t!r} should be a whole tooth count from 5 to 300")
+        if kind == "part" and ("hardness" in d or "hardness_source" in d):
+            h, hs = d.get("hardness"), d.get("hardness_source")
+            if d.get("category") != "tire":
+                errors.append(f"{path}: hardness only on tyres (category tire)")
+            elif isinstance(h, bool) or not isinstance(h, int) or not 5 <= h <= 100:
+                errors.append(f"{path}: hardness {h!r} should be a whole Shore A figure from 5 to 100")
+            if not isinstance(hs, str) or not hs.startswith("https://"):
+                errors.append(f"{path}: hardness needs hardness_source, the https URL of the maker or dealer page that states it")
         eng = ENGINE_FIELDS & d.keys() if kind == "part" else set()
         if eng - {"bore_mm"} and d.get("category") != "engine-fuel":
             errors.append(f"{path}: {', '.join(sorted(eng - {'bore_mm'}))} only on engine parts (category engine-fuel)")
@@ -1210,7 +1313,9 @@ def main():
             allowed = SPEC_TYPES.get(d.get("category"), set())
             if d["type"] not in allowed:
                 errors.append(f"{path}: spec.type = {d['type']!r} not in {sorted(allowed)} for a {d.get('category')} spec")
-        if kind == "spec" and d.get("category") in ("screw", "pin"):
+        if kind == "spec" and "length_in" in d:
+            errors.extend(inch_screw_problems(path, d))
+        elif kind == "spec" and d.get("category") in ("screw", "pin"):
             lm = d.get("length_mm")
             if not isinstance(lm, (int, float)) or isinstance(lm, bool) or lm <= 0:
                 errors.append(f"{path}: {d['category']} spec needs length_mm above 0 (a pitch or an OCR zero is not a length)")

@@ -1,8 +1,16 @@
 id = "part/hobao/38312"
 brand = "brand/hobao"
 number = "38312"
-name = "38312"
+name = "Set Screws M3x12mm"
 notes = "A set; the drawings label its pieces omms; Set Screw 3x12mm"
 documents = ["doc/hobao/cml-hyper-7-tq2-buggy-complete-kit-parts-reference", "doc/hobao/cml-dc-1-rock-crawler-instruction-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
+name_source = "manufacturer"
+pack_qty = 10
+pack_qty_basis = "name"
+links = [
+  { site = "HoBao", url = "https://hobaorc.myshopify.com/products/38312-set-screws-m3x12mm-10-pcs" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

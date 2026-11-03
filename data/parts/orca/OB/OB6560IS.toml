@@ -1,0 +1,19 @@
+id = "part/orca/OB6560IS"
+brand = "brand/orca"
+number = "OB6560IS"
+name = "INFINITE LiPo 6500mAh 3.7V 70C 1S RACE PACK"
+category = "battery"
+weight_g = 155
+status = "discontinued"
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/infinite-lipo-6500mah-3-7v-70c-1s-race-pack/" },
+]
+chemistry = "lipo"
+cells = 1
+voltage = 3.7
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-6500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 6500
+c_rating = 70
+connector = "4mm bullet"

@@ -2,11 +2,17 @@ id = "part/kyosho/R246-8404"
 brand = "brand/kyosho"
 number = "R246-8404"
 name = "C-04 Li-PO DC Charger 1-4 Cell 0.1-4.5A"
+seen_by = "2013-03-09"
+seen_by_source = "https://web.archive.org/web/20130309070234/http://www.kyosho.com:80/jpn/support/instructionmanual/r246/pdf/R246-8404_C-04_Li-Po_Chager.pdf"
 name_source = "manufacturer"
 gtin = "4548565186914"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/r246-8404.html" },
 ]
 category = "charger"
+documents = ["doc/kyosho/r246-8404-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 charges = ["lipo"]
 charger_source = "https://rc.kyosho.com/en/r246-8404.html"
+fits = [
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
+]

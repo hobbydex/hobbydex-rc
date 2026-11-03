@@ -1,7 +1,7 @@
 id = "part/yokomo/MRTC-BD11US"
 brand = "brand/yokomo"
 number = "MRTC-BD11US"
-name = "MRTC-BD11US"
+name = "1/10 競技用ツーリングカー BD11 USスタイル アルミシャーシ仕様"
 name_ja = "1/10 競技用ツーリングカー BD11 USスタイル アルミシャーシ仕様"
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/mrtc-bd11us" },
@@ -12,3 +12,6 @@ seen_by = "2022-12-08"
 seen_by_source = "https://web.archive.org/web/20221208183440/https://teamyokomo.com/product/mrtc-bd11us/"
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/yokomo/bd11", type = "replaces", source = "doc/yokomo/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

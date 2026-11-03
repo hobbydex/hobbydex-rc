@@ -5,10 +5,11 @@ number = "30412"
 name = "PLAZMA Formula"
 year = 2012
 released = "2012-11"
+released_source = "https://rc.kyosho.com/en/30412.html"
 gtin = "4548565196326"
 name_ja = "プラズマ フォーミュラ"
 kind = "kit"
-status = "released"
+status = "discontinued"
 documents = ["doc/kyosho/30412-plazma-formula-spop", "doc/kyosho/30412-plazma-formula-ex", "doc/kyosho/30412-plazma-formula-im", "doc/kyosho/30412-product-page"]
 contains = [
   { part = "part/kyosho/1-E015", role = "kit", source = "doc/kyosho/30412-plazma-formula-spop" },
@@ -129,4 +130,18 @@ contains = [
   { part = "part/kyosho/65150B", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
   { part = "part/kyosho/PZ004B", role = "listed", source = "doc/kyosho/30412-plazma-formula-ex" },
   { part = "part/kyosho/Z016", role = "listed", source = "doc/kyosho/30412-plazma-formula-ex" },
+  { part = "part/kyosho/R246-3712", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-3713", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-8211", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-3751", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-3752", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-3753", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-3758", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-3761", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-3762", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-8341", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
+  { part = "part/kyosho/R246-8342", role = "option", source = "doc/kyosho/30412-plazma-formula-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30412.html"

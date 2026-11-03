@@ -5,12 +5,14 @@ number = "30877T1"
 name = "INFERNO MP9e TKI readyset"
 gtin = "4548565232949"
 name_ja = "インファーノMP9e TKI レディセット"
+year = 2014
+released = "2014-04"
+released_source = "https://rc.kyosho.com/en/30877t1.html"
 kind = "rtr"
 power = "brushless"
 power_source = "doc/kyosho/30877t1-product-page"
-status = "released"
-seen_by = "2013"
-seen_by_source = "doc/kyosho/30877t1-mm01-mp9e-tki3-ex"
+notes = "Listed on the maker's page before its sale month (2013, source doc/kyosho/30877t1-mm01-mp9e-tki3-ex)."
+status = "discontinued"
 documents = ["doc/kyosho/30877t1-mm01-mp9e-tki3-spop", "doc/kyosho/30877t1-mm01-mp9e-tki3-ex", "doc/kyosho/30877t1-mm01-mp9e-tki3-mm", "doc/kyosho/30877t1-t01-mp9e-tki3-im", "doc/kyosho/30877t1-product-page"]
 contains = [
   { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-ex" },
@@ -249,4 +251,28 @@ contains = [
   { part = "part/kyosho/IFW441-46", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
   { part = "part/kyosho/IFW442-36", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
   { part = "part/kyosho/IFW446", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF350-714", role = "kit", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/97008-36H", role = "kit", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF347-138", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF347-145", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF348-1014", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF348-1016", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF348-1114", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF348-1116", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF348-1216", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF348-1316", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF350-816", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IF401KO", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IFW326GM", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IFW336BL", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IS106-1016", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IS106-1116", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IS106-8514", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IS106-9514", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IFH003KG", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IFH003KO", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
+  { part = "part/kyosho/IFH004KG", role = "option", source = "doc/kyosho/30877t1-mm01-mp9e-tki3-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30877t1.html"

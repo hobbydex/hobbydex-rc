@@ -7,7 +7,10 @@ seen_by_source = "doc/kyosho/30640-mm01-ex"
 gtin = "4548565482214"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 category = "differential"
-documents = ["doc/kyosho/30640-mm01-ex"]
+documents = ["doc/kyosho/30640-mm01-ex", "doc/kyosho/efw007s-product-page"]
 name_source = "manufacturer"
 color = "silver"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/efw007s.html" } ]
+fits = [
+  { kit = "kit/kyosho/fantom-pzf", type = "direct", source = "doc/kyosho/30640-mm01-spop" },
+]

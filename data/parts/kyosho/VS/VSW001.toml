@@ -4,9 +4,13 @@ number = "VSW001"
 name = "Special Main Chassis"
 gtin = "4955439767474"
 category = "chassis"
+documents = ["doc/kyosho/vsw001-product-page", "doc/kyosho/fw-05-060322"]
 fits = [
   { kit = "kit/kyosho/fw-05r", type = "replaces", source = "doc/kyosho/31581-fw05r-p" },
   { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/31583-fw05rr-form-p" },
+  { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05S (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vsw001.html" },

@@ -1,0 +1,17 @@
+id = "part/tekno/TKR5541B"
+brand = "brand/tekno"
+number = "TKR5541B"
+name = "Spindles (6x13x5mm Outer Bearing, Left/Right)"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-spindles-6x13x5mm-outer-bearing-left-right-sct410-eb48sl/TKR5541B.html", kind = "dealer" },
+]
+applies_to = "SCT410/EB48SL"
+gtin = "815076016172"
+category = "bearing"
+fits = [
+  { kit = "kit/tekno/eb48sl", releases = ["release/tekno/eb48sl"], type = "direct", source = "doc/tekno/eb48sl-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410-3", releases = ["release/tekno/sct410-3"], type = "direct", source = "doc/tekno/sct410-3-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x13x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

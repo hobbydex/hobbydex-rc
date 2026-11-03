@@ -2,11 +2,15 @@ id = "part/kyosho/TR301"
 brand = "brand/kyosho"
 number = "TR301"
 name = "Battery Holder Set (DBX-VE)"
+seen_by = "2010-01-02"
+seen_by_source = "https://web.archive.org/web/20100102024038/http://kyosho.com/jpn/products/rc/parts_images/TR301.jpg"
 gtin = "4548565147571"
 fits = [
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31047-dbx-dst-drt-drx-dbx-ve-parts-compati091020" },
 ]
 category = "chassis"
+documents = ["doc/kyosho/tr301-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/tr301.html" },
 ]

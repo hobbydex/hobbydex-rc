@@ -2,14 +2,20 @@ id = "part/kyosho/R246-4826"
 brand = "brand/kyosho"
 number = "R246-4826"
 name = "Pinion Gear 26T/48P KYOSHO CUP MiniClass"
+seen_by = "2015-04-24"
+seen_by_source = "https://web.archive.org/web/20150424071949/http://www.kyosho.com/jpn/products/rc/parts_images/R246-4826.jpg"
 name_source = "manufacturer"
 gtin = "4548565278916"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/r246-4826.html" },
 ]
 category = "pinion"
+documents = ["doc/kyosho/r246-4826-product-page"]
 teeth = 26
 pitch_dp = 48
 equivalent_to = [
   { spec = "spec/pinion/48dp-26t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+fits = [
+  { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/30644-mm01-spop" },
 ]

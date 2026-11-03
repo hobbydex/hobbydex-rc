@@ -3,11 +3,12 @@ brand = "brand/kyosho"
 number = "1-S02612TP"
 name = "TP Bind Screw(M2.6x12)"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
 ]
 category = "screw"
-documents = ["doc/kyosho/31003-spada-09l-p"]
+documents = ["doc/kyosho/31003-spada-09l-p", "doc/kyosho/31003-spada-09l-m"]
 equivalent_to = [
   { spec = "spec/screw/m2.6x12-truss-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

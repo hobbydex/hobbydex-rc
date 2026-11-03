@@ -1,0 +1,15 @@
+id = "part/tekno/TKR8041"
+brand = "brand/tekno"
+number = "TKR8041"
+name = "Spindles (Left and Right)"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-spindles-left-and-right-eb48.4-nb48.4/TKR8041.html", kind = "dealer" },
+]
+applies_to = "EB48.4 NB48.4"
+gtin = "815076017469"
+category = "suspension"
+fits = [
+  { kit = "kit/tekno/eb48-4", releases = ["release/tekno/eb48-4"], type = "replaces", source = "doc/tekno/eb48-4instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48-4", releases = ["release/tekno/nb48-4"], type = "replaces", source = "doc/tekno/nb48-4instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

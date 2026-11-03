@@ -2,9 +2,14 @@ id = "part/schumacher/U2857"
 brand = "brand/schumacher"
 number = "U2857"
 name = "SPEED PACK - Small Cable Ties (pk25)"
+gtin = "5051294018818"
 seen_by = "2019-02-08"
 seen_by_source = "https://web.archive.org/web/20190208154731/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=882&templateid=69&sortname1=partno"
 pack_qty = 25
 pack_qty_basis = "name"
 category = "wire"
-documents = ["doc/schumacher/cat-l1-evo-manual", "doc/schumacher/cougar-laydown-manual"]
+documents = ["doc/schumacher/cat-l1-evo-manual", "doc/schumacher/cougar-laydown-manual", "doc/schumacher/cougar-kf-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-l1-evo/speed-pack-small-cable-ties-pk25-u2857" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

@@ -3,12 +3,14 @@ kit = "kit/tamiya/mercedes-benz-actros"
 brand = "brand/tamiya"
 number = "56335"
 name = "Mercedes-Benz Actros 1851 GigaSpace"
+gtin = "4950344563357"
 year = 2013
 kind = "kit"
 status = "released"
 depicts = { make = "Mercedes-Benz", model = "Actros 1851 GigaSpace" }
 documents = ["doc/tamiya/56335-product-page", "doc/tamiya/newitems-month", "doc/tamiya/56335-manual", "doc/tamiya/tamico-dealer-parts", "doc/tamiya/56335-manual-usa", "doc/tamiya/56335-anleitung-instruction-mb-actros-1851-4x2"]
 released = "2013-02"
+released_source = "doc/tamiya/newitems-month"
 contains = [
   { part = "part/tamiya/10005468", role = "kit", source = "doc/tamiya/56335-manual" },
   { part = "part/tamiya/10005471", role = "kit", source = "doc/tamiya/56335-manual" },
@@ -48,7 +50,6 @@ contains = [
   { part = "part/tamiya/19225144", role = "kit", source = "doc/tamiya/56335-manual" },
   { part = "part/tamiya/19225145", role = "kit", source = "doc/tamiya/56335-manual" },
   { part = "part/tamiya/19335128", role = "kit", source = "doc/tamiya/56335-manual" },
-  { part = "part/tamiya/19335665", role = "kit", source = "doc/tamiya/56335-manual" },
   { part = "part/tamiya/19335674", role = "kit", source = "doc/tamiya/56335-manual" },
   { part = "part/tamiya/19400572", role = "kit", source = "doc/tamiya/56335-manual" },
   { part = "part/tamiya/19402552", role = "kit", source = "doc/tamiya/56335-manual" },
@@ -131,6 +132,7 @@ contains = [
   { part = "part/tamiya/53065", role = "listed", source = "doc/tamiya/56335-manual-usa" },
   { part = "part/tamiya/56505", role = "listed", source = "doc/tamiya/56335-manual-usa" },
   { part = "part/tamiya/56511", role = "listed", source = "doc/tamiya/56335-manual-usa" },
+  { part = "part/tamiya/19335685", role = "kit", source = "doc/tamiya/56335-manual" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56335", kind = "fan-site" },

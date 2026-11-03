@@ -1,8 +1,16 @@
 id = "part/hobao/32316"
 brand = "brand/hobao"
 number = "32316"
-name = "32316"
+name = "M3 x 16mm HEX SOCKET HEAD CAP SCREWS"
 notes = "A set; the drawings label its pieces Cap Head; Cap Screw"
 documents = ["doc/hobao/cml-dc-1-rock-crawler-instruction-manual", "doc/hobao/cml-hb-vste-c150gn-instruction-manual", "doc/hobao/cml-hb-vste-instruction-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
+name_source = "manufacturer"
+pack_qty = 10
+pack_qty_basis = "name"
+links = [
+  { site = "HoBao", url = "https://hobaorc.myshopify.com/products/32316-m3-x-16mm-hex-socket-head-cap-screws-10pcs" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x16-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

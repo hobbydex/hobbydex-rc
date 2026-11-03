@@ -2,11 +2,13 @@ id = "part/kyosho/OT240"
 brand = "brand/kyosho"
 number = "OT240"
 name = "Rear Shock Shaft (OPTIMA)"
+gtin = "4548565301997"
 pack_qty = 2
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
   { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
+  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (standard part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "shock"
 shock_part = "shaft"
-documents = ["doc/kyosho/30622-01-optima-mid-sp", "doc/kyosho/javelin-parts-list-en-v01"]
+documents = ["doc/kyosho/30622-01-optima-mid-sp", "doc/kyosho/javelin-parts-list-en-v01", "doc/kyosho/vintage-160304-2-jp"]

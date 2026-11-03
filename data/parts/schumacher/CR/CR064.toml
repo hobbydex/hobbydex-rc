@@ -2,10 +2,18 @@ id = "part/schumacher/CR064"
 brand = "brand/schumacher"
 number = "CR064"
 name = "Small Body Clip 1/10 - Fluorescent Green (8)"
+gtin = "5051294032128"
 seen_by = "2013-11-17"
 seen_by_source = "https://web.archive.org/web/20131117122032/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=654&templateid=69&sortname1=partno"
 pack_qty = 8
 pack_qty_basis = "name"
 category = "clip"
 color = "fluorescent green"
-documents = ["doc/schumacher/mi7-manual"]
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/mi5-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/small-body-clip-1-10-fluorescent-green-8-cr064" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

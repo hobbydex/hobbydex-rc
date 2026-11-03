@@ -2,9 +2,14 @@ id = "part/team-associated/7664"
 brand = "brand/team-associated"
 number = "7664"
 name = "Diff Gear, 52T, 2.60:1"
+status = "discontinued"
 former_names = ["Diff gear 52T"]
 category = "differential"
 gtin = "784695076648"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/diff-gear-52t-2-60-1/" },
 ]
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]
+documents = ["doc/team-associated/cat-t4ft"]

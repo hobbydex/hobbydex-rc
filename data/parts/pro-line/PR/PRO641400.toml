@@ -6,8 +6,13 @@ seen_by = "2025-05-01"
 seen_by_source = "https://web.archive.org/web/20250501124025/https://www.prolineracing.com/on/demandware.static/-/Sites-horizon-us-Library/default/dw49231a9d/homepage/pro-line/april-2025/hero-banner-mobile-PRO641400.jpg"
 gtin = "660132969561"
 applies_to = "Rock Crawler"
+fits = [
+  { kit = "kit/lrp/rock-crawler", type = "replaces", source = "doc/pro-line/horizon-pages", notes = "Listed for the Rock Crawler (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/pro-line-racing-1-10-pro-line-pre-runner-front-bumper-rock-crawler/PRO641400.html" },
 ]
 category = "bumper-guard"
 material = "plastic"
+scale = "1/10"
+color = "black"

@@ -2,6 +2,7 @@ id = "part/tamiya/54579"
 brand = "brand/tamiya"
 number = "54579"
 name = "1150 Ball Bearing"
+gtin = "4950344545797"
 pack_qty = 16
 pack_qty_basis = "page"
 fits = [
@@ -19,7 +20,7 @@ links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/54579/index.html" },
 ]
 equivalent_to = [
-  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Tamiya size code 1150: 11 mm outer, 5 mm bore, 4 mm wide" },
+  { spec = "spec/bearing/5x11x4", match = "exact", notes = "Tamiya size code 1150: 5x11x4 mm bore x outer x width as the Tamiya page states it", source = "doc/tamiya/54579-product-page-de" },
 ]
 released = "2014-03"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/54579-product-page-ja"]

@@ -5,12 +5,13 @@ number = "33003T3"
 name = "INFERNO NEO 2.0 KT231P T3 (Red)"
 year = 2015
 released = "2015-09"
+released_source = "https://rc.kyosho.com/en/33003t3.html"
 gtin = "4548565288687"
 name_ja = "インファーノ NEO 2.0 KT231P送信機付"
 kind = "rtr"
 power = "nitro"
 power_source = "part/kyosho/74018"
-status = "released"
+status = "discontinued"
 supersedes = "release/kyosho/31280"
 color = "red"
 documents = ["doc/kyosho/33003t3t4-inferno-neo-2-0-kt-231p-spop", "doc/kyosho/33003t3t4-inferno-neo-2-0-kt-231p-ex", "doc/kyosho/33003t3t4-inferno-neo-2-0-kt-231p-mm", "doc/kyosho/33003t3t4-inferno-neo-2-0-kt-231p-im", "doc/kyosho/33003t3-product-page"]
@@ -144,4 +145,8 @@ contains = [
   { part = "part/kyosho/IF226", role = "kit", source = "doc/kyosho/33003t3t4-inferno-neo-2-0-kt-231p-spop" },
   { part = "part/kyosho/IF285", role = "kit", source = "doc/kyosho/33003t3t4-inferno-neo-2-0-kt-231p-spop" },
   { part = "part/kyosho/97037-14", role = "kit", source = "doc/kyosho/33003t3t4-inferno-neo-2-0-kt-231p-spop" },
+  { part = "part/kyosho/IF205BK", role = "kit", source = "doc/kyosho/33003t3t4-inferno-neo-2-0-kt-231p-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/33003t3.html"

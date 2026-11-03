@@ -2,13 +2,18 @@ id = "part/kyosho/MZW202"
 brand = "brand/kyosho"
 number = "MZW202"
 name = "Rear Spring Set (MR-015MM/02MM/08MM)"
+seen_by = "2007-10-30"
+seen_by_source = "https://web.archive.org/web/20071030035224/http://www.kyosho.com/jpn/race/presently/miniz_cup/images/mzw202.jpg"
 gtin = "4955439768679"
 category = "shock-spring"
-documents = ["doc/kyosho/mzw202-product-page"]
+documents = ["doc/kyosho/mzw202-product-page", "doc/kyosho/mini-z-parts-tekigou"]
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
   { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
   { kit = "kit/kyosho/mini-z-mr-03-w-mm", type = "replaces", source = "doc/kyosho/32792-mini-z-mr-03evo-sp-chassis-set-2020-spare-and-option-parts" },
+  { kit = "kit/kyosho/mini-z-mr-04evo2", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (option part) in Kyosho's MINI-Z parts acceptable list" },
 ]
 free_length_mm = 15
 links = [

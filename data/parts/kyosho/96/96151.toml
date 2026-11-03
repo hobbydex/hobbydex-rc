@@ -2,10 +2,15 @@ id = "part/kyosho/96151"
 brand = "brand/kyosho"
 number = "96151"
 name = "King Pin Oil"
+gtin = "4955439750551"
 seen_by = "2007"
 seen_by_source = "doc/kyosho/miniz-fomula-op-vol5-m"
 fits = [
   { kit = "kit/kyosho/mini-z-f1", type = "direct", source = "doc/kyosho/miniz-fomula-op-vol5-m" },
+  { kit = "kit/kyosho/mini-z-mr-01", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (option part) in Kyosho's MINI-Z parts acceptable list" },
 ]
 category = "oil-grease"
-documents = ["doc/kyosho/miniz-fomula-op-vol5-m"]
+documents = ["doc/kyosho/miniz-fomula-op-vol5-m", "doc/kyosho/mini-z-parts-tekigou"]

@@ -2,10 +2,18 @@ id = "part/kyosho/PZW003H"
 brand = "brand/kyosho"
 number = "PZW003H"
 name = "King Pin Spring(0.45mm/Hard/Yellow)"
+seen_by = "2013-10-20"
+seen_by_source = "https://web.archive.org/web/20131020145503/http://kyosho.com/jpn/products/rc/parts_images/PZW003H.jpg"
 name_source = "manufacturer"
 gtin = "4548565205431"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw003h.html" },
 ]
 category = "pin"
+documents = ["doc/kyosho/pzw003h-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 color = "yellow"
+fits = [
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (option part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
+]

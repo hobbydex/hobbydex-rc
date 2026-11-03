@@ -8,6 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "bearing"
 equivalent_to = [
-  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Tamiya size code 1150: 11 mm outer, 5 mm bore, 4 mm wide" },
+  { spec = "spec/bearing/5x11x4", match = "exact", notes = "Tamiya size code 1150: 5x11x4 mm bore x outer x width as the Tamiya page states it", source = "doc/tamiya/54579-product-page-de" },
 ]
 documents = ["doc/tamiya/46004-manual-de", "doc/tamiya/58600-manual"]

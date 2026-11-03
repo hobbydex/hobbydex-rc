@@ -4,6 +4,7 @@ number = "BRG104"
 name = "Thrust Bearing(5x10x4)"
 gtin = "4548565415090"
 pack_qty = 1
+pack_qty_basis = "page"
 fits = [
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/33217-v-one-r4-evo3-spop" },
 ]
@@ -11,6 +12,7 @@ equivalent_to = [
   { spec = "spec/bearing/thrust-5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 category = "bearing"
+documents = ["doc/kyosho/brg104-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/brg104.html" },
 ]

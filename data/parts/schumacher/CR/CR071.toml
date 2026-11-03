@@ -2,10 +2,15 @@ id = "part/schumacher/CR071"
 brand = "brand/schumacher"
 number = "CR071"
 name = "Big Body Clip 1/10 - Silver (8)"
+gtin = "5051294032180"
 seen_by = "2013-11-17"
 seen_by_source = "https://web.archive.org/web/20131117122032/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=654&templateid=69&sortname1=partno"
 pack_qty = 8
 pack_qty_basis = "name"
 category = "clip"
 color = "silver"
-documents = ["doc/schumacher/mi7-manual"]
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/mi5-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/big-body-clip-1-10-silver-8-cr071" } ]
+fits = [
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

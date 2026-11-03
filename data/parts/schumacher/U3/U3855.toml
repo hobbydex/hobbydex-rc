@@ -1,0 +1,17 @@
+id = "part/schumacher/U3855"
+brand = "brand/schumacher"
+number = "U3855"
+name = "Ball Bearing 5x10x3 Open (pr)"
+notes = "Name read by OCR from a scanned schumacher manual; verify before relying on exact wording"
+name_source = "ocr"
+documents = ["doc/schumacher/cat-k1-aero-manual", "doc/schumacher/supastox-gt-spares-archive"]
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "open"
+fits = [
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+seen_by = "2015-11-25"
+seen_by_source = "https://web.archive.org/web/20151125071752/http://www.racing-cars.com/scp/New_Cars_and_Parts/search.asp?subcatid=814&templateid=69&sortname1=partno"

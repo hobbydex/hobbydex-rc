@@ -2,6 +2,7 @@ id = "part/hot-racing/SMTT288"
 brand = "brand/hot-racing"
 number = "SMTT288"
 name = "Losi Mini-T 2.0 Steel Universal Axles Drive Shafts"
+status = "discontinued"
 fits = [
   { kit = "kit/losi/mini-t-2", type = "replaces", source = "doc/hot-racing/rcvisions-catalogue", replaces = "part/losi/LOS212013" },
 ]
@@ -11,3 +12,7 @@ links = [
 notes = "RC Visions SKU HRASMTT288"
 category = "drivetrain"
 material = "steel"
+related = [
+  { part = "part/losi/LOS212013", relation = "replaces", notes = "link_part_refs" },
+  { part = "part/losi/LOS212012", relation = "replaces", notes = "link_part_refs" },
+]

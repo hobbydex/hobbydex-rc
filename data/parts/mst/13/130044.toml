@@ -10,3 +10,8 @@ links = [
   { site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=14&class_sn2=40&sn=2203" },
 ]
 category = "tire"
+fits = [
+  { kit = "kit/mst/cfx", type = "replaces", source = "doc/mst/cfx-instruction-manual-a", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532148", "release/mst/532150", "release/mst/532152", "release/mst/532154", "release/mst/532156", "release/mst/532165", "release/mst/532169", "release/mst/532192", "release/mst/532201"] },
+  { kit = "kit/mst/cmx", type = "replaces", source = "doc/mst/cmx-exploded", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/cfx", type = "replaces", source = "doc/mst/cfx-instruction-manual-a", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)", releases = ["release/mst/532148", "release/mst/532150", "release/mst/532152", "release/mst/532154", "release/mst/532156", "release/mst/532165", "release/mst/532169", "release/mst/532192", "release/mst/532201"] },
+]

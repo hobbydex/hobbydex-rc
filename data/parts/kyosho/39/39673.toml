@@ -2,6 +2,7 @@ id = "part/kyosho/39673"
 brand = "brand/kyosho"
 number = "39673"
 name = "Vespel ̈ Clutch Shoe"
+gtin = "4955439698082"
 seen_by = "2001-12"
 seen_by_source = "doc/kyosho/31181-megaforce-p"
 fits = [
@@ -9,6 +10,9 @@ fits = [
   { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31480jp-fw05ske-p" },
   { kit = "kit/kyosho/tr-15-monster-touring", type = "replaces", source = "doc/kyosho/31213-xanavinismo-gtr-p" },
   { kit = "kit/kyosho/megaforce", type = "replaces", source = "doc/kyosho/31181-megaforce-p" },
+  { kit = "kit/kyosho/inferno-mp7-5", type = "replaces", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the MP-7.5 (option part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "replaces", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 RALLY (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 category = "engine-fuel"
-documents = ["doc/kyosho/31095-tr15-stadiumforce-mt-p", "doc/kyosho/31181-megaforce-p", "doc/kyosho/31213-xanavinismo-gtr-p"]
+documents = ["doc/kyosho/31095-tr15-stadiumforce-mt-p", "doc/kyosho/31181-megaforce-p", "doc/kyosho/31213-xanavinismo-gtr-p", "doc/kyosho/mp75-777-060322", "doc/kyosho/tr15-060322", "doc/kyosho/v-one-s-060322"]

@@ -1,0 +1,17 @@
+id = "part/orca/PRODUCTION"
+brand = "brand/orca"
+number = "PRODUCTION"
+name = "HV GENEARATION4 8500mAh 7.6V RACE PACK"
+category = "battery"
+weight_g = 325
+dimensions_mm = [138, 47, 25]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/hv-generation4-8500mah-7-6v-race-pack/" },
+]
+voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-8500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 8500

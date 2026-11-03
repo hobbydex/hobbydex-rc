@@ -2,6 +2,7 @@ id = "part/hot-racing/AON556P"
 brand = "brand/hot-racing"
 number = "AON556P"
 name = "GCR Hinge Pin Lower 4x67.5mm (4) Arrma 1/8"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/aon556p-gcr-hinge-pin-lower-4x67-5mm-4-arrma-1-8", kind = "maker" },
 ]
@@ -10,4 +11,13 @@ pack_qty_basis = "name"
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/4x67.5", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]
+fits = [
+  { kit = "kit/arrma/infraction", type = "direct", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/kraton", type = "direct", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/limitless", type = "direct", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/mojave-6s", type = "direct", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/outcast", type = "direct", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/talion-6s-1-8", type = "direct", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/typhon", type = "direct", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
 ]

@@ -2,6 +2,8 @@ id = "part/schumacher/U3019"
 brand = "brand/schumacher"
 number = "U3019"
 name = "Diff Balls; Silicon Nitride 2.5mm (pk14)"
+pack_qty = 14
+pack_qty_basis = "name"
 gtin = "5051294020125"
 seen_by = "2010-01-30"
 seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
@@ -15,7 +17,10 @@ fits = [
   { kit = "kit/schumacher/mi3-5", type = "direct", source = "doc/schumacher/mi35-explode-l", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/mi4cxl", type = "direct", source = "doc/schumacher/mi4cxl-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-sv2", type = "direct", source = "doc/schumacher/cougar-sv2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
-documents = ["doc/schumacher/cat-sx-exploded-l", "doc/schumacher/cat-sx3-exploded-l", "doc/schumacher/catsx2-exploded-iss2-l", "doc/schumacher/cougar-sv2-exploded", "doc/schumacher/mi1-v2-exploded", "doc/schumacher/mi35-explode-l", "doc/schumacher/mi4cxl-exploded"]
+documents = ["doc/schumacher/cat-sx-exploded-l", "doc/schumacher/cat-sx3-exploded-l", "doc/schumacher/catsx2-exploded-iss2-l", "doc/schumacher/cougar-sv2-exploded", "doc/schumacher/mi1-v2-exploded", "doc/schumacher/mi35-explode-l", "doc/schumacher/mi4cxl-exploded", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/fusion28/diff-balls-silicon-nitride-2-5mm-pk14-u3019" } ]
 name_source = "manufacturer"

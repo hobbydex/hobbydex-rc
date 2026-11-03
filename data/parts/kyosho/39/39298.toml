@@ -7,10 +7,11 @@ seen_by_source = "doc/kyosho/39298-lexus-sc430-bodyset"
 gtin = "4548565231270"
 name_ja = "レクサスSC430 ボディセット"
 category = "body"
-documents = ["doc/kyosho/39298-lexus-sc430-bodyset"]
+documents = ["doc/kyosho/39298-lexus-sc430-bodyset", "doc/kyosho/39298-product-page", "doc/kyosho/v-one-r4-151117"]
 depicts = { make = "Lexus", model = "SC430" }
 fits = [
   { kit = "kit/kyosho/fw-06", type = "replaces", source = "doc/kyosho/fw-06-kt-231p-spop" },
+  { kit = "kit/kyosho/v-one-r4", type = "replaces", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
 ]
 scale = "1/10"
 links = [

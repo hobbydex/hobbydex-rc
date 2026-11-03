@@ -1,0 +1,13 @@
+id = "part/tekno/TKR9412"
+brand = "brand/tekno"
+number = "TKR9412"
+name = "Front Gearbox"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-front-gearbox-et-nt48-2.0/TKR9412.html", kind = "dealer" },
+]
+applies_to = "ET/NT48 2.0"
+gtin = "810020552188"
+category = "gear"
+fits = [
+  { kit = "kit/tekno/nt48", releases = ["release/tekno/tkr9401"], type = "replaces", source = "doc/tekno/nt48-2-2-manual-rev02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

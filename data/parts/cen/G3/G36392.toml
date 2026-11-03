@@ -2,11 +2,14 @@ id = "part/cen/G36392"
 brand = "brand/cen"
 number = "G36392"
 links = [{ site = "CEN Racing", url = "https://www.cenracingusa.com/products/g36392" }]
-name = "G36392"
+name = "M2.5x8mm Cap Screw"
 seen_by = "2020-09-20"
 seen_by_source = "https://web.archive.org/web/20200920040926/https://www.cenracingusa.com/products/g36392"
 gtin = "4717873363922"
-notes = "A set; the manuals label its pieces M2.5x8mm Cap Screw; Serrated Flange Locknut"
+notes = "A set; the manuals label its pieces M2.5x8mm Cap Screw; Serrated Flange Locknut; Named on the maker's own product page (archived copy)"
 documents = ["doc/cen/dl-series-f450sd-manual-v2-small"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
+name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

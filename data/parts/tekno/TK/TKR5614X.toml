@@ -1,0 +1,16 @@
+id = "part/tekno/TKR5614X"
+brand = "brand/tekno"
+number = "TKR5614X"
+name = "Differential Outdrives, Front/Center/Rear, Lightened"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-differential-outdrives-front-center-rear-lightened-2-sct410/TKR5614X.html", kind = "dealer" },
+]
+pack_qty = 2
+pack_qty_basis = "page"
+applies_to = "SCT410"
+gtin = "815076013720"
+category = "differential"
+fits = [
+  { kit = "kit/tekno/eb48sl", releases = ["release/tekno/eb48sl"], type = "replaces", source = "doc/tekno/eb48sl-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410-3", releases = ["release/tekno/sct410-3"], type = "replaces", source = "doc/tekno/sct410-3-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

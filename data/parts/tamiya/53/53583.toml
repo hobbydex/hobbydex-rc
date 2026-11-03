@@ -2,10 +2,16 @@ id = "part/tamiya/53583"
 brand = "brand/tamiya"
 number = "53583"
 name = "3x6mm Titanium Round Head Socket Screw"
+pack_qty = 5
+pack_qty_basis = "photo"
 seen_by = "2004-09-26"
 seen_by_source = "https://web.archive.org/web/20040926194652/http://www.tamiyausa.com:80/product/rcpss.php?command=kits&part_id=53583"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "screw"
-documents = ["doc/tamiya/58404-manual-de"]
+documents = ["doc/tamiya/58404-anleitung-db-01"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/english/products/53583/index.html" } ]
+equivalent_to = [
+  { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"

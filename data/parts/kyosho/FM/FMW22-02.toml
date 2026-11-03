@@ -1,0 +1,17 @@
+id = "part/kyosho/FMW22-02"
+brand = "brand/kyosho"
+number = "FMW22-02"
+name = "Teflon Washer (3x8x2)"
+name_ja = "テフロンワッシャー(3x8x2)"
+name_source = "manual"
+gtin = "4955439757604"
+documents = ["doc/kyosho/evolva-060322"]
+category = "washer-shim"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/evolva-060322", notes = "Marked for the 2003 (option part) in Kyosho's Evolva 2003/2005 parts acceptable list" },
+]
+equivalent_to = [
+  { spec = "spec/washer/3x8x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "plastic"

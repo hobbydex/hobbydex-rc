@@ -1,10 +1,21 @@
 id = "part/element-rc/21062"
 brand = "brand/element-rc"
 number = "21062"
-name = "21062"
+name = "18T TIRES/WHEELS, CHROME"
+gtin = "784695210622"
 seen_by = "2022-06-24"
 seen_by_source = "https://web.archive.org/web/20220624231124/https://www.associatedelectrics.com/teamassociated/parts/details/21062/"
-notes = "Named by its number only: the name on the scanned element-rc manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
+notes = "Named on the maker's own product page (archived copy)"
+category = "tire"
 documents = ["doc/element-rc/20182-erc24radio-manual-online"]
+name_source = "manufacturer"
+links = [
+  { site = "Element RC (Internet Archive)", url = "https://web.archive.org/web/20220624231124/https://www.associatedelectrics.com/teamassociated/parts/details/21062/", kind = "archive" },
+]
+color = "chrome"
+fits = [
+  { kit = "kit/element-rc/enduro", releases = ["release/element-rc/40104", "release/element-rc/40106", "release/element-rc/40107", "release/element-rc/40107C", "release/element-rc/40108", "release/element-rc/40108C", "release/element-rc/40113", "release/element-rc/40113C", "release/element-rc/40114", "release/element-rc/40115", "release/element-rc/40115C", "release/element-rc/40117", "release/element-rc/40117C", "release/element-rc/40118", "release/element-rc/40118C", "release/element-rc/40119", "release/element-rc/40119C", "release/element-rc/40120", "release/element-rc/40121", "release/element-rc/40122", "release/element-rc/40122C", "release/element-rc/40123", "release/element-rc/40124", "release/element-rc/40124C", "release/element-rc/40125", "release/element-rc/40125C", "release/element-rc/40126", "release/element-rc/40126C", "release/element-rc/40127", "release/element-rc/40127C", "release/element-rc/40129", "release/element-rc/40130", "release/element-rc/40131", "release/element-rc/40135"], type = "replaces", source = "doc/element-rc/40113-enduro-knightrunner", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/element-rc/enduro12", releases = ["release/element-rc/40009C", "release/element-rc/40011C"], type = "replaces", source = "doc/element-rc/enduro12-bushido-manual-2024", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/element-rc/enduro24", releases = ["release/element-rc/20181", "release/element-rc/20182", "release/element-rc/20183"], type = "replaces", source = "doc/element-rc/20182-erc24radio-manual-online", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/element-rc/gaterunner", releases = ["release/element-rc/40144"], type = "replaces", source = "doc/element-rc/gaterunner-kit-manual-9-8-2026", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

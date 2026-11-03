@@ -2,11 +2,13 @@ id = "part/kyosho/GTW20-2"
 brand = "brand/kyosho"
 number = "GTW20-2"
 name = "Gear Set (For 2 Speed Assembly)"
+gtin = "4955439746233"
 category = "gear"
 fits = [
   { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/31221-madforce-p" },
   { kit = "kit/kyosho/mad-armour", type = "direct", source = "doc/kyosho/31224-madarmour-p" },
   { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-p" },
   { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/31811-infgt-p" },
+  { kit = "kit/kyosho/landmax-2", type = "replaces", source = "doc/kyosho/landmax2-060322", notes = "Marked for the Land Max 2 (option part) in Kyosho's Land Max 2 parts acceptable list" },
 ]
-documents = ["doc/kyosho/31221-madforce-p", "doc/kyosho/31224-madarmour-p", "doc/kyosho/31441-gigacrusher-p"]
+documents = ["doc/kyosho/31221-madforce-p", "doc/kyosho/31224-madarmour-p", "doc/kyosho/31441-gigacrusher-p", "doc/kyosho/landmax2-060322"]

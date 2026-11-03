@@ -1,0 +1,15 @@
+id = "part/kyosho/6592"
+brand = "brand/kyosho"
+number = "6592"
+name = "Muffler Gasket GP20"
+name_ja = "マフラーガスケットGP20"
+name_source = "manual"
+gtin = "4955439739037"
+documents = ["doc/kyosho/inferno-gt-060322", "doc/kyosho/landmax2-060322", "doc/kyosho/mp75-777-060322"]
+category = "o-ring-seal"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
+  { kit = "kit/kyosho/landmax-2", type = "direct", source = "doc/kyosho/landmax2-060322", notes = "Marked for the Land Max 2 (standard part) in Kyosho's Land Max 2 parts acceptable list" },
+  { kit = "kit/kyosho/inferno-mp7-5", releases = ["release/kyosho/31192"], type = "direct", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the 7.5 SPORTS (standard part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
+]

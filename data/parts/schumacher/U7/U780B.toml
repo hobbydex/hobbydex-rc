@@ -1,0 +1,13 @@
+id = "part/schumacher/U780B"
+brand = "brand/schumacher"
+number = "U780B"
+name = "Ball Bearing 8x16x5 (pk 8) 71267 35mm"
+notes = "Name read by OCR from a scanned schumacher manual; verify before relying on exact wording"
+name_source = "ocr"
+documents = ["doc/schumacher/bosscat-manual"]
+pack_qty = 8
+pack_qty_basis = "name"
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -7,7 +7,7 @@ gtin = "4955439030899"
 name_ja = "V-ONE Rシリーズ"
 power = "nitro"
 power_source = "kit"
-status = "released"
+status = "discontinued"
 seen_by = "2000-11"
 seen_by_source = "doc/kyosho/31011-v-one-m"
 documents = ["doc/kyosho/31011-v-one-p", "doc/kyosho/31011-v-one-t", "doc/kyosho/31011-v-one-m", "doc/kyosho/31011-product-page"]
@@ -182,4 +182,13 @@ contains = [
   { part = "part/kyosho/1808", role = "listed", source = "doc/kyosho/31011-v-one-m" },
   { part = "part/kyosho/3017", role = "listed", source = "doc/kyosho/31011-v-one-m" },
   { part = "part/kyosho/3516", role = "listed", source = "doc/kyosho/31011-v-one-m" },
+  { part = "part/kyosho/VZ072-2517", role = "option", source = "doc/kyosho/31011-v-one-p" },
+  { part = "part/kyosho/VZ072-3017", role = "option", source = "doc/kyosho/31011-v-one-p" },
+  { part = "part/kyosho/VZ072-3517", role = "option", source = "doc/kyosho/31011-v-one-p" },
+  { part = "part/kyosho/VZ073-3516", role = "option", source = "doc/kyosho/31011-v-one-p" },
+  { part = "part/kyosho/VZ073-4016", role = "option", source = "doc/kyosho/31011-v-one-p" },
+  { part = "part/kyosho/VZ073-4516", role = "option", source = "doc/kyosho/31011-v-one-p" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/31011.html"

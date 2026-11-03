@@ -5,3 +5,6 @@ name = "S6 O-RINGS Si (H.T. DIFF.)"
 notes = "Revision letter of E2242: the parts lists print it small after the number"
 category = "o-ring-seal"
 documents = ["doc/mugen/mbx8r-eco-part-list-ja", "doc/mugen/mbx8r-part-list-ja", "doc/mugen/mbx8tr-eco-part-list-ja", "doc/mugen/mbx8tr-part-list-ja"]
+equivalent_to = [
+  { spec = "spec/o-ring/5.5x1.5", match = "functional" },
+]

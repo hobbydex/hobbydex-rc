@@ -1,0 +1,20 @@
+id = "part/himoto/SERVO9KG"
+brand = "brand/himoto"
+number = "SERVO9KG"
+name = "9KG Servo Unit"
+category = "servo"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/cluster", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/demolition", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/drekkar", releases = ["release/himoto/HI2203BL"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/drekkar-1-10-electric", releases = ["release/himoto/HI2201BL", "release/himoto/HI2202BL"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/firestone", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rancho", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rancho-pro", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rancho-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/shellshock", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda-pro", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
+]

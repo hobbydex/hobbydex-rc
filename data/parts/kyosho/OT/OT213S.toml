@@ -2,10 +2,12 @@ id = "part/kyosho/OT213S"
 brand = "brand/kyosho"
 number = "OT213S"
 name = "Front and Guard (OPTIMA)"
+gtin = "4548565301720"
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
+  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (standard part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "bumper-guard"
 range = "kyosho/ot213-colours"
-documents = ["doc/kyosho/javelin-parts-list-en-v01"]
+documents = ["doc/kyosho/javelin-parts-list-en-v01", "doc/kyosho/vintage-160304-2-jp"]
 name_de = "Front Under Guard (OPTIMA)"

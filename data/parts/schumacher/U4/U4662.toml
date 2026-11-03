@@ -2,10 +2,17 @@ id = "part/schumacher/U4662"
 brand = "brand/schumacher"
 number = "U4662"
 name = "SPEED PACK - M3x4 Grub Screw - Cone Point"
+gtin = "5051294093457"
 seen_by = "2015-11-25"
 seen_by_source = "https://web.archive.org/web/20151125071752/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=814&templateid=69&sortname1=partno"
 pack_qty = 10
 pack_qty_basis = "name"
 category = "screw"
-documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
+documents = ["doc/schumacher/catl1r-instruction-manual-v2", "doc/schumacher/supastox-gt-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/supastox-gt/speed-pack-m3x4-grub-screw-cone-point-10pcs-u4662" } ]
+equivalent_to = [
+  { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+fits = [
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

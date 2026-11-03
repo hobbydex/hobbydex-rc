@@ -1,0 +1,17 @@
+id = "part/orca/OBH4851S"
+brand = "brand/orca"
+number = "OBH4851S"
+name = "HV GENERATION4 8500mAh 3.8V 1CELL"
+category = "battery"
+weight_g = 150
+dimensions_mm = [93, 47, 18.5]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/hv-generation4-8500mah-3-8v-1cell/" },
+]
+voltage = 3.8
+equivalent_to = [
+  { spec = "spec/battery/lihv-1s-8500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 1
+capacity_mah = 8500

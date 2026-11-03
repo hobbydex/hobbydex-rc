@@ -6,6 +6,7 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/FTBB14/fastrax-5mm-x-8mm-2-5mm-bearing-1" },
 ]
 category = "bearing"
+documents = ["doc/ftx/cml-banzai-manual"]
 equivalent_to = [
-  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 5x8 bearing (MR85)" },
+  { spec = "spec/bearing/5x8x2.5", match = "close", source = "doc/ftx/cml-banzai-manual", notes = "Width stated by the Banzai manual parts list: FTBB14 Bearing 8x5x2.5mm" },
 ]

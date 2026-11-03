@@ -2,8 +2,14 @@ id = "part/losi/LOSA9372"
 brand = "brand/losi"
 number = "LOSA9372"
 name = "Flywheel w/Pins"
+status = "discontinued"
+seen_by = "2015-09-19"
+seen_by_source = "https://web.archive.org/web/20150919015846/http://losi.com/ProdInfo/LOS/100/LOSA9372-100.jpg"
 gtin = "660132008598"
 applies_to = "XXX-NT"
+fits = [
+  { kit = "kit/losi/xxx-nt", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the Losi XXX-NT (link_car_kits.py)" },
+]
 links = [
   { site = "Losi", url = "https://www.losi.com/product/losi-flywheel-w-pins-xxx-nt/LOSA9372.html" },
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flywheel-w-pins-xxx-nt/LOSA9372.html" },

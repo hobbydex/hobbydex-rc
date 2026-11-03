@@ -2,8 +2,12 @@ id = "part/rpm/73822"
 brand = "brand/rpm"
 number = "73822"
 name = "Rear A-arms for the Associated B64 & B64D"
+status = "discontinued"
 applies_to = "Associated B64 & B64D"
 links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/associated-b64-rear-arms/" },
 ]
 category = "suspension"
+related = [
+  { part = "part/team-associated/92048", relation = "replaces", notes = "link_part_refs" },
+]

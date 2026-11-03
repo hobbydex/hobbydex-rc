@@ -2,10 +2,12 @@ id = "part/kyosho/1889"
 brand = "brand/kyosho"
 number = "1889"
 name = "Body Pin"
+pack_qty = 5
+pack_qty_basis = "manual"
 status = "discontinued"
 gtin = "4955439655382"
 category = "pin"
-documents = ["doc/kyosho/1889-product-page"]
+documents = ["doc/kyosho/1889-product-page", "doc/kyosho/tf5-070215"]
 fits = [
   { kit = "kit/kyosho/usa-1", type = "direct", source = "doc/kyosho/3165-usa-1-manual" },
   { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/30072-ep-ultimarb-sports-p" },
@@ -13,6 +15,7 @@ fits = [
   { kit = "kit/kyosho/gp-ultima-st", type = "direct", source = "doc/kyosho/31972-gp-ultimast-sports-t" },
   { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34403-monster-tracker-ex" },
   { kit = "kit/kyosho/pure-ten-alpha", type = "direct", source = "doc/kyosho/30117-pureten-ep-aipha2-t" },
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/tf5-070215", notes = "Marked for the TF-5 (option part) in Kyosho's TF-5 / TF-5 Stallion parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/1889.html" },

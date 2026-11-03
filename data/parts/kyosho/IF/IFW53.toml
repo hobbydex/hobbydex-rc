@@ -2,6 +2,9 @@ id = "part/kyosho/IFW53"
 brand = "brand/kyosho"
 number = "IFW53"
 name = "Clutch Spring (1.00)"
+gtin = "4955439719121"
+seen_by = "2022-08-02"
+seen_by_source = "https://web.archive.org/web/20220802220851/https://www.kyosho.com/rc/ja/race/2020/kyosho_cup/images/add-regulation/202006/IFW53.jpg"
 category = "engine-fuel"
 pack_qty = 3
 pack_qty_basis = "manual"
@@ -27,5 +30,11 @@ fits = [
   { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/31071-dmt-spop" },
   { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-spop" },
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31047-drx-parts-list-v01" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/fw-06-kt-231p-spop-2" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "replaces", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "replaces", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 RALLY (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/tr-15-monster-touring", type = "replaces", source = "doc/kyosho/tr15-060322", notes = "Marked for the MONSTER TOURING (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
-documents = ["doc/kyosho/31071-dmt-spop", "doc/kyosho/31081-inferno-mp75-p", "doc/kyosho/31082-mm01-drt-spop"]
+documents = ["doc/kyosho/31071-dmt-spop", "doc/kyosho/31081-inferno-mp75-p", "doc/kyosho/31082-mm01-drt-spop", "doc/kyosho/tr15-060322", "doc/kyosho/v-one-s-060322"]

@@ -5,7 +5,19 @@ name = "Big Shock Spring(M&L/Blue/10-1.6/L=95)"
 gtin = "4548565091393"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 category = "shock-spring"
-documents = ["doc/kyosho/33004-strr-evo2-im"]
+documents = ["doc/kyosho/33004-strr-evo2-im", "doc/kyosho/if348-1016-product-page"]
 name_source = "manufacturer"
 color = "blue"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/if348-1016.html" } ]
+fits = [
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
+  { kit = "kit/kyosho/mad-force-kruiser-ve", type = "direct", source = "doc/kyosho/30885-madforce-kruiser-ve-sp" },
+  { kit = "kit/kyosho/fo-xx-ve", type = "direct", source = "doc/kyosho/30887-mm01-fo-xx-ve-spop" },
+  { kit = "kit/kyosho/mad-force-kruiser", type = "direct", source = "doc/kyosho/31226-mad-force-kruiser-p" },
+  { kit = "kit/kyosho/fo-xx", type = "direct", source = "doc/kyosho/31228-mm01-fo-xx-spop" },
+  { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31375-strr-evo-sp" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31785-inferno-mp9-tki2-op" },
+  { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33015-inferno-mp10-spop-20191228" },
+  { kit = "kit/kyosho/mad-crusher", type = "direct", source = "doc/kyosho/33152-mad-crusher-pl-v01" },
+  { kit = "kit/kyosho/mad-crusher-ve", type = "direct", source = "doc/kyosho/34253-mad-crusher-ve-pl-v01" },
+]

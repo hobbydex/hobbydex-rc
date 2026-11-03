@@ -2,8 +2,12 @@ id = "part/schumacher/CR666"
 brand = "brand/schumacher"
 number = "CR666"
 name = "Aerosol Paint - Flat Matt Finish"
+gtin = "5051294140458"
 seen_by = "2019-02-08"
 seen_by_source = "https://web.archive.org/web/20190208154731/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=882&templateid=69&sortname1=partno"
-category = "misc"
-category_source = "fallback"
-documents = ["doc/schumacher/mi7-manual"]
+category = "paint"
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/cougar-kf-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/bodyshells/paint/aerosol-paint-flat-matt-finish-cr666" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

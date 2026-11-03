@@ -2,9 +2,13 @@ id = "part/hot-racing/LSLN21MH"
 brand = "brand/hot-racing"
 number = "LSLN21MH"
 name = "7075 Steering Blocks Hd Bearings SLN"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/lsln21mh-7075-steering-blocks-hd-bearings-sln", kind = "maker" },
 ]
 category = "bearing"
 material = "aluminium"
 material_grade = "7075"
+related = [
+  { part = "part/losi/LOS254076", relation = "replaces", notes = "link_part_refs" },
+]

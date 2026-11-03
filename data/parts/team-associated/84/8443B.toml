@@ -2,6 +2,7 @@ id = "part/team-associated/8443B"
 brand = "brand/team-associated"
 number = "8443B"
 name = "INLINE FRONT AXLE, blue aluminum"
+gtin = "784695998391"
 seen_by = "2011-11-27"
 seen_by_source = "https://web.archive.org/web/20111127182734/http://teamassociated.com/factoryteam/parts/details/8443B/"
 name_source = "manual"
@@ -10,3 +11,9 @@ pack_qty_basis = "manual"
 category = "drivetrain"
 color = "blue"
 documents = ["doc/team-associated/cat-10l4o"]
+fits = [
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]
+links = [
+  { site = "Team Associated", url = "https://teamassociated.com/factoryteam/parts/details/8443B/" },
+]

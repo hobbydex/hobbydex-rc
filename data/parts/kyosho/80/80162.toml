@@ -2,6 +2,10 @@ id = "part/kyosho/80162"
 brand = "brand/kyosho"
 number = "80162"
 name = "Flywheel Puller"
+gtin = "4955439859810"
 name_source = "ocr"
 category = "tool"
-documents = ["doc/kyosho/31003-spada-09l-m"]
+documents = ["doc/kyosho/31003-spada-09l-m", "doc/kyosho/evolva-060322"]
+fits = [
+  { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/evolva-060322", notes = "Marked for the 2005 (option part) in Kyosho's Evolva 2003/2005 parts acceptable list" },
+]

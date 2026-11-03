@@ -2,8 +2,12 @@ id = "part/schumacher/CR6427"
 brand = "brand/schumacher"
 number = "CR6427"
 name = "Pinion Gear 64DP 27T (7075 Hard)"
+gtin = "5051294082222"
 seen_by = "2013-11-17"
 seen_by_source = "https://web.archive.org/web/20131117122032/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=654&templateid=69&sortname1=partno"
 category = "pinion"
-documents = ["doc/schumacher/icon-manual"]
+documents = ["doc/schumacher/icon-manual", "doc/schumacher/mi5-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-4/pinion-gear-64dp-27t-7075-hard-cr6427" } ]
+fits = [
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

@@ -2,10 +2,18 @@ id = "part/kyosho/PZW013H"
 brand = "brand/kyosho"
 number = "PZW013H"
 name = "Oil Shock Spring(1.2mm/Hard/Purple)"
+seen_by = "2014-07-19"
+seen_by_source = "https://web.archive.org/web/20140719034634/http://kyosho.com/jpn/products/rc/parts_images/PZW013H.jpg"
 name_source = "manufacturer"
 gtin = "4548565216550"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw013h.html" },
 ]
 category = "shock-spring"
+documents = ["doc/kyosho/pzw013h-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 color = "purple"
+fits = [
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (option part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
+]

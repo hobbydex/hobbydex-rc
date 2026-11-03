@@ -2,9 +2,11 @@ id = "part/kyosho/39185"
 brand = "brand/kyosho"
 number = "39185"
 name = "V-One RR Lola II"
+gtin = "4955439762974"
 fits = [
   { kit = "kit/kyosho/v-one-rr-evo", type = "replaces", source = "doc/kyosho/31255-vonerr-evo-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
-documents = ["doc/kyosho/31255-vonerr-evo-p"]
+documents = ["doc/kyosho/31255-vonerr-evo-p", "doc/kyosho/v-one-rrr-060322"]
 category = "misc"
 category_source = "fallback"

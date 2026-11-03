@@ -2,6 +2,7 @@ id = "part/arrma/ARAC3814"
 brand = "brand/arrma"
 number = "ARAC3814"
 name = "Cross Shaft Insert Nero"
+status = "discontinued"
 pack_qty = 4
 pack_qty_basis = "page"
 links = [
@@ -9,3 +10,6 @@ links = [
 ]
 category = "drivetrain"
 numbers = ["AR310554"]
+fits = [
+  { kit = "kit/arrma/nero-6s-blx", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Listed for the ARRMA Nero (link_car_kits.py)" },
+]

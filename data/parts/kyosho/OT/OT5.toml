@@ -1,0 +1,16 @@
+id = "part/kyosho/OT5"
+brand = "brand/kyosho"
+number = "OT5"
+name = "Joint"
+name_ja = "ジョイント"
+name_source = "manual"
+gtin = "4955439608746"
+documents = ["doc/kyosho/ep-alpha3-060322", "doc/kyosho/gp-alpha3-060322", "doc/kyosho/tr15-060322"]
+category = "drivetrain"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 Ready Set (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 RALLY (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/tr-15-monster-touring", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the MONSTER TOURING (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "direct", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (standard part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+]

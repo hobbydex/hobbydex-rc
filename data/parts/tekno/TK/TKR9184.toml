@@ -1,0 +1,14 @@
+id = "part/tekno/TKR9184"
+brand = "brand/tekno"
+number = "TKR9184"
+name = "Suspension Arms, Rear"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-suspension-arms-rear-eb-nb48-2.0/TKR9184.html", kind = "dealer" },
+]
+applies_to = "EB/NB48 2.0"
+gtin = "810020550276"
+category = "suspension"
+fits = [
+  { kit = "kit/tekno/eb48", releases = ["release/tekno/eb48-2-2"], type = "replaces", source = "doc/tekno/eb48-2-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48", releases = ["release/tekno/tkr9305"], type = "replaces", source = "doc/tekno/nb48-2-2-manual-rev02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

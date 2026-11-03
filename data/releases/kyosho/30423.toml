@@ -5,9 +5,10 @@ number = "30423"
 name = "PLAZMA Ra2.0"
 gtin = "4548565288274"
 name_ja = "プラズマ Ra 2.0"
-status = "released"
-seen_by = "2011"
-seen_by_source = "doc/kyosho/plazma-ra20-im"
+year = 2015
+released = "2015-11"
+released_source = "https://rc.kyosho.com/en/30423.html"
+status = "discontinued"
 documents = ["doc/kyosho/plazma-ra20-im", "doc/kyosho/30423-product-page"]
 contains = [
   { part = "part/kyosho/36106", role = "option", source = "doc/kyosho/plazma-ra20-im" },
@@ -123,3 +124,7 @@ contains = [
   { part = "part/kyosho/R246-6480", role = "listed", source = "doc/kyosho/plazma-ra20-im" },
 ]
 supersedes = "release/kyosho/30422"
+
+notes = "Listed on the maker's page before its sale month (2011, source doc/kyosho/plazma-ra20-im)."
+[sources]
+status = "https://rc.kyosho.com/en/30423.html"

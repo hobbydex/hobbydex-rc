@@ -2,14 +2,21 @@ id = "part/tlr/TLR45000"
 brand = "brand/tlr"
 number = "TLR45000"
 name = "Dish Wheel, Yellow"
+status = "discontinued"
 seen_by = "2023-06-10"
 seen_by_source = "https://web.archive.org/web/20230610065152/https://www.tlracing.com/product/dish-wheel-yellow-2-5ive-b/TLR45000.html"
 gtin = "605482627761"
 pack_qty = 2
 pack_qty_basis = "page"
 applies_to = "5IVE B"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5IVE B (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-dish-wheel-yellow-2-5ive-b/TLR45000.html" },
 ]
 category = "wheel"
 color = "yellow"
+scale = "1/5"
+position = "front-rear"
+vehicle = "buggy"

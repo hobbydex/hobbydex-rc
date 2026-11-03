@@ -6,3 +6,9 @@ links = [
   { site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=15&class_sn2=41&sn=3911" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/mst/frx", type = "replaces", source = "doc/mst/frx-rs-instruction-manual-a", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/rmx-4", type = "replaces", source = "doc/mst/rmx-4-gt-instruction-manual-a", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/rmx-ex", type = "replaces", source = "doc/mst/rmx-ex-gt-instruction-manual-b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/rmx-m", type = "replaces", source = "doc/mst/rmx-mspro-instruction-manual-a", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

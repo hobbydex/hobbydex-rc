@@ -7,9 +7,18 @@ kind = "kit"
 status = "discontinued"
 seen_by = "2016-11-14"
 seen_by_source = "https://web.archive.org/web/20161114182103/http://www.teamyokomo.com:80/product/drift/dp_yd4mr/dp_yd4mr.html"
-documents = ["doc/yokomo/dp-yd4mr-product-page", "doc/yokomo/blank-set-up-sheet", "doc/yokomo/yd-4-mr-exploded-view", "doc/yokomo/ifmar-worldcup-yatabe-by-takahiro-kawakami", "doc/yokomo/yd-4-mr-manual-english"]
+documents = ["doc/yokomo/dp-yd4mr-product-page", "doc/yokomo/blank-set-up-sheet", "doc/yokomo/yd-4-mr-exploded-view", "doc/yokomo/ifmar-worldcup-yatabe-by-takahiro-kawakami", "doc/yokomo/yd-4-mr-manual-english", "doc/yokomo/yd-4-mr-exploded-view-2"]
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/dp-yd4mr" },
 ]
 notes = "The store lists only the item number for this kit (no title, tags or status)"
-contains = []
+contains = [
+  { part = "part/yokomo/BB-105-2", role = "listed", source = "doc/yokomo/yd-4-mr-exploded-view-2" },
+  { part = "part/yokomo/BB-1510", role = "listed", source = "doc/yokomo/yd-4-mr-exploded-view-2" },
+  { part = "part/yokomo/BD-009A", role = "listed", source = "doc/yokomo/yd-4-mr-exploded-view-2" },
+  { part = "part/yokomo/BD-009BR", role = "listed", source = "doc/yokomo/yd-4-mr-exploded-view-2" },
+  { part = "part/yokomo/BD-414C", role = "listed", source = "doc/yokomo/yd-4-mr-exploded-view-2" },
+  { part = "part/yokomo/D-170Y", role = "listed", source = "doc/yokomo/yd-4-mr-exploded-view-2" },
+  { part = "part/yokomo/RC-313S", role = "listed", source = "doc/yokomo/yd-4-mr-exploded-view-2" },
+  { part = "part/yokomo/ZC-206SH", role = "listed", source = "doc/yokomo/yd-4-mr-exploded-view-2" },
+]

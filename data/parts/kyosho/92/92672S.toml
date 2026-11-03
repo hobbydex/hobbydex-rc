@@ -1,0 +1,16 @@
+id = "part/kyosho/92672S"
+brand = "brand/kyosho"
+number = "92672S"
+name = "Rally Type Wheel Set (Silver)"
+name_ja = "ラリータイプホイールセット(シルバー)"
+name_source = "manual"
+gtin = "4955439742938"
+documents = ["doc/kyosho/ep-alpha3-060322", "doc/kyosho/gp-alpha3-060322", "doc/kyosho/v-one-rrr-060322"]
+category = "wheel"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+color = "silver"
+fits = [
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+]
+vehicle = "rally"

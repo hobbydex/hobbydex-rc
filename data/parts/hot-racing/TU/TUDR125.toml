@@ -2,6 +2,7 @@ id = "part/hot-racing/TUDR125"
 brand = "brand/hot-racing"
 number = "TUDR125"
 name = "Traxxas Unlimited Desert Racer Super Heavy Duty Differential Locker"
+status = "discontinued"
 fits = [
   { kit = "kit/traxxas/udr", type = "replaces", source = "doc/hot-racing/rcvisions-catalogue" },
 ]
@@ -10,3 +11,6 @@ links = [
 ]
 notes = "RC Visions SKU HRATUDR125"
 category = "differential"
+related = [
+  { part = "part/traxxas/8590", relation = "replaces", notes = "link_part_refs" },
+]

@@ -2,6 +2,9 @@ id = "part/tamiya/19804790"
 brand = "brand/tamiya"
 number = "19804790"
 name = "3mm Flange Lock Nut"
+pack_qty = 5
+pack_qty_basis = "manual"
+status = "discontinued"
 seen_by = "2014-12"
 seen_by_source = "doc/tamiya/42275-manual"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
@@ -11,3 +14,4 @@ equivalent_to = [
   { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]
 documents = ["doc/tamiya/42275-manual", "doc/tamiya/42288-manual"]
+links = [ { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3mm-flange-lock-nut-42275/", kind = "maker" } ]

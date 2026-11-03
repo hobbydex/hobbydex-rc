@@ -2,6 +2,7 @@ id = "part/kyosho/92013"
 brand = "brand/kyosho"
 number = "92013"
 name = "Inner Sponge"
+gtin = "4955439742242"
 seen_by = "2002-03"
 seen_by_source = "doc/kyosho/31241-vones-vauxhall-astra-p"
 fits = [
@@ -17,6 +18,10 @@ fits = [
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/31374-fw-06-kt-6-mm-p" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (standard part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (standard part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (standard part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 category = "tire"
-documents = ["doc/kyosho/31011-v-one-p", "doc/kyosho/31122-vones2-p", "doc/kyosho/31241-vones-vauxhall-astra-p"]
+documents = ["doc/kyosho/31011-v-one-p", "doc/kyosho/31122-vones2-p", "doc/kyosho/31241-vones-vauxhall-astra-p", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-rrr-060322"]

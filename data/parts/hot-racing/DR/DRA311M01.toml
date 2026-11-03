@@ -2,6 +2,7 @@ id = "part/hot-racing/DRA311M01"
 brand = "brand/hot-racing"
 number = "DRA311M01"
 name = "CNC aluminum Wheelie Bar Mount DR10"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/dra311m01-cnc-aluminum-wheelie-bar-mount-dr10", kind = "maker" },
 ]
@@ -9,4 +10,7 @@ category = "bumper-guard"
 material = "aluminium"
 fits = [
   { kit = "kit/team-associated/dr10", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+related = [
+  { part = "part/team-associated/71070", relation = "replaces", notes = "link_part_refs" },
 ]

@@ -2,8 +2,13 @@ id = "part/schumacher/U4084"
 brand = "brand/schumacher"
 number = "U4084"
 name = "Ball Bearing - 6x12x4 Red Seal - (pr)"
+gtin = "5051294073305"
 seen_by = "2021-05"
 seen_by_source = "doc/schumacher/ld2-manual"
 category = "bearing"
 color = "red"
 documents = ["doc/schumacher/ld2-manual"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/ball-bearing-6x12x4-red-seal-pr-u4084" } ]
+equivalent_to = [
+  { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -1,0 +1,14 @@
+id = "part/tekno/TKR6634A"
+brand = "brand/tekno"
+number = "TKR6634A"
+name = "CNC Aluminum Center Differential Support, 7075: EB/ET410"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-cnc-aluminum-center-differential-support-7075-eb-et410/TKR6634A.html", kind = "dealer" },
+]
+gtin = "810020551426"
+category = "differential"
+fits = [
+  { kit = "kit/tekno/et410-2", releases = ["release/tekno/tkr7202"], type = "replaces", source = "doc/tekno/et410-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410sl", releases = ["release/tekno/tkr7000"], type = "replaces", source = "doc/tekno/sct410sl-manual-rev3", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

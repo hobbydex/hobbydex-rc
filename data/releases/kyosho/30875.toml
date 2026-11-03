@@ -8,7 +8,7 @@ name_ja = "インファーノVE Ready Set"
 kind = "rtr"
 power = "brushless"
 power_source = "doc/kyosho/30875-product-page"
-status = "released"
+status = "discontinued"
 announced = "2009-09-02"
 announced_source = "https://www.youtube.com/watch?v=BddTNVtf87A"
 documents = ["doc/kyosho/30875-inferno-ve-im-p", "doc/kyosho/30875-inferno-ve-im-t", "doc/kyosho/30875-inferno-ve-mm-m", "doc/kyosho/30875-inferno-ve-im-m", "doc/kyosho/youtube-A8YNSYBBZFo", "doc/kyosho/youtube-xW6HkIECEBE", "doc/kyosho/30875-product-page"]
@@ -112,3 +112,6 @@ contains = [
   { part = "part/kyosho/IF505", role = "kit", source = "doc/kyosho/30875-inferno-ve-im-p" },
   { part = "part/kyosho/82106", role = "kit", source = "doc/kyosho/30875-inferno-ve-im-p" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30875.html"

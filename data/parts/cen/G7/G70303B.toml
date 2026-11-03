@@ -10,3 +10,6 @@ name_source = "manufacturer"
 category = "o-ring-seal"
 documents = ["doc/cen/dl-series-f450sd-manual-v2-small", "doc/cen/f250-sd-kg1-edition-manual", "doc/cen/mt-series-b50-hl150-manual"]
 links = [ { site = "CEN Racing", url = "https://www.cenracingusa.com/products/g70303b" } ]
+equivalent_to = [
+  { spec = "spec/o-ring/2.8x1.9", match = "functional" },
+]

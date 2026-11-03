@@ -2,6 +2,7 @@ id = "part/team-associated/9563"
 brand = "brand/team-associated"
 number = "9563"
 name = "Front Bulkhead"
+status = "discontinued"
 gtin = "784695095632"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/front-bulkhead/" },
@@ -9,4 +10,6 @@ links = [
 category = "chassis"
 fits = [
   { kit = "kit/team-associated/gt2", type = "direct", source = "doc/team-associated/7092-page" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
 ]
+documents = ["doc/team-associated/cat-t4ft"]

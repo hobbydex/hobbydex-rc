@@ -4,3 +4,6 @@ number = "9745"
 name = "4-40x.625” setscrew"
 category = "screw"
 documents = ["doc/team-associated/b44-1-manual-preflight"]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x5-8in-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

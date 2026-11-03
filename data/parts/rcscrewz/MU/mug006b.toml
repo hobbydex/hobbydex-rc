@@ -2,6 +2,7 @@ id = "part/rcscrewz/mug006b"
 brand = "brand/rcscrewz"
 number = "mug006b"
 name = "Metal Shielded Bearing Kit Compatible With Mugen Seiki MTX-2 / Pro (#T0010)"
+status = "discontinued"
 category = "bearing"
 category_source = "curated"
 seal = "metal"
@@ -11,6 +12,9 @@ includes = [
   { spec = "spec/bearing/12x18x4" },
 ]
 applies_to = ""
+fits = [
+  { kit = "kit/mugen/mtx2", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the Mugen Seiki MTX-2 (link_car_kits.py)" },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/mug006b-metal-shielded-bearing-kit-compatible-with-mugen-seiki-mtx-2-pro-t0010/" },

@@ -2,6 +2,7 @@ id = "part/hot-racing/AOR30C01"
 brand = "brand/hot-racing"
 number = "AOR30C01"
 name = "Aluminum Rear Chassis Brace Arrma 1/7 Infrection Limitless"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/aor30c01-aluminum-rear-chassis-brace-arrma-1-7-infrection-limitless", kind = "maker" },
 ]
@@ -9,4 +10,7 @@ category = "chassis"
 material = "aluminium"
 fits = [
   { kit = "kit/arrma/limitless", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+related = [
+  { part = "part/arrma/ARA320511", relation = "replaces", notes = "link_part_refs" },
 ]

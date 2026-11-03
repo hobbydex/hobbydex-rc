@@ -5,6 +5,7 @@ name = "Body, GTS shock (aluminum, blue-anodized)"
 seen_by = "2021-05-08"
 seen_by_source = "https://web.archive.org/web/20210508132820/https://traxxas.com/products/parts/8266A"
 pack_qty = 1
+pack_qty_basis = "page"
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
 category = "shock"
 shock_part = "body"
@@ -16,3 +17,6 @@ fits = [
   { kit = "kit/traxxas/trx-6", type = "replaces", source = "doc/traxxas/88086-4-parts-list" },
 ]
 documents = ["doc/traxxas/82056-4-parts-list", "doc/traxxas/82234-4-parts-list", "doc/traxxas/88086-4-parts-list"]
+links = [
+  { site = "Traxxas (Internet Archive)", url = "https://web.archive.org/web/20210508132820/https://traxxas.com/products/parts/8266A", kind = "archive" },
+]

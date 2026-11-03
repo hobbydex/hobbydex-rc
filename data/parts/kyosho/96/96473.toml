@@ -6,7 +6,7 @@ fits = [
   { kit = "kit/kyosho/lazer-zx-s", type = "direct", source = "doc/kyosho/30075-lazerzx-evo-p" },
 ]
 category = "bearing"
-documents = ["doc/kyosho/30075-lazerzx-evo-p"]
+documents = ["doc/kyosho/30075-lazerzx-evo-p", "doc/kyosho/34935-suzuki-rgv-gamma-1992-spop"]
 equivalent_to = [
-  { spec = "spec/bearing/3x6x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 3x6 bearing (MR63)" },
+  { spec = "spec/bearing/3x6x2.5", match = "close", source = "doc/kyosho/34935-suzuki-rgv-gamma-1992-spop", notes = "Width stated by the SUZUKI RGV-gamma parts list: 96473 Shock Shield Bearing (3x6x2.5)" },
 ]

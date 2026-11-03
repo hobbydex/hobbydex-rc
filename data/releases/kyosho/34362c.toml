@@ -5,6 +5,7 @@ number = "34362C"
 name = "1/10 Scale Radio Controlled Electric Powered 2WD Truck 2RSA SERIES Outlaw Rampage PRO"
 year = 2023
 released = "2023-09"
+released_source = "https://rc.kyosho.com/en/34362c.html"
 status = "released"
 gtin = "4548565452767"
 documents = ["doc/kyosho/34362c-product-page", "doc/kyosho/youtube-Iwzt5jQlszE", "doc/kyosho/34362-04-rsa-out-ram-pro-spop", "doc/kyosho/34362-04-rsa-out-ram-pro-im", "doc/kyosho/34362-04_2rsa_out_ram_pro_ex", "doc/kyosho/34362-04_2rsa_out_ram_pro_im", "doc/kyosho/34362-04_2rsa_out_ram_pro_spop"]
@@ -179,4 +180,7 @@ contains = [
   { part = "part/kyosho/SIL0300-8", role = "option", source = "doc/kyosho/34362-04_2rsa_out_ram_pro_im" },
   { part = "part/kyosho/SIL0400-8", role = "option", source = "doc/kyosho/34362-04_2rsa_out_ram_pro_im" },
   { part = "part/kyosho/SIL0500-8", role = "option", source = "doc/kyosho/34362-04_2rsa_out_ram_pro_im" },
+  { part = "part/kyosho/OLW003-4", role = "listed", source = "doc/kyosho/34362-04_2rsa_out_ram_pro_ex" },
+  { part = "part/kyosho/82145", role = "option", source = "doc/kyosho/34362-04_2rsa_out_ram_pro_spop" },
+  { part = "part/kyosho/SIL0450-8", role = "option", source = "doc/kyosho/34362-04_2rsa_out_ram_pro_spop" },
 ]

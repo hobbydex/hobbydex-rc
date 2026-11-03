@@ -2,6 +2,7 @@ id = "part/team-associated/7435"
 brand = "brand/team-associated"
 number = "7435"
 name = "Rear Shock Springs, gold, 2.75 lb/in"
+status = "discontinued"
 seen_by = "2025-06-18"
 seen_by_source = "https://web.archive.org/web/20250618111835/https://60years.associatedelectrics.com/rear-shock-springs-gold-2-75-lb-in/"
 color = "gold"
@@ -10,7 +11,9 @@ links = [
 ]
 fits = [
   { kit = "kit/team-associated/rc10t", type = "direct", source = "doc/team-associated/7003-page" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
 ]
 category = "shock-spring"
 rate_lb_in = 2.75
 range = "team-associated/shock-springs-rate-springs"
+documents = ["doc/team-associated/cat-t4ft"]

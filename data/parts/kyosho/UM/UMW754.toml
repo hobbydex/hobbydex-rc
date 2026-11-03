@@ -7,5 +7,8 @@ seen_by_source = "doc/kyosho/umw754-batterypostset"
 gtin = "4548565383009"
 name_ja = "バッテリーポストセット"
 category = "chassis"
-documents = ["doc/kyosho/umw754-batterypostset"]
+documents = ["doc/kyosho/umw754-batterypostset", "doc/kyosho/umw754-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/umw754.html" } ]
+fits = [
+  { kit = "kit/kyosho/ultima-rb7", releases = ["release/kyosho/34303"], type = "direct", source = "doc/kyosho/umw754-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

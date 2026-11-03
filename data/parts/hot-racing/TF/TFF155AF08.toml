@@ -2,9 +2,14 @@ id = "part/hot-racing/TFF155AF08"
 brand = "brand/hot-racing"
 number = "TFF155AF08"
 name = "Aluminum Threaded Front Bleeder Shock Bodies Arrma 1:10 4x4 4s"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/tff155af08-aluminum-threaded-front-bleeder-shock-bodies-arrma-1-10-4x4-4s", kind = "maker" },
 ]
 category = "shock"
 material = "aluminium"
 shock_part = "body"
+fits = [
+  { kit = "kit/arrma/kraton-4s", type = "replaces", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/arrma/outcast-4s", type = "replaces", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+]

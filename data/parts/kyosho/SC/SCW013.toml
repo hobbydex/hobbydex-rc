@@ -2,14 +2,19 @@ id = "part/kyosho/SCW013"
 brand = "brand/kyosho"
 number = "SCW013"
 name = "HG Shock Set (Scorpion 2014)"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401132327/http://kyosho.com/jpn/products/rc/parts_images/SCW013.jpg"
 gtin = "4548565253920"
 pack_qty = 4
 pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/beetle", type = "replaces", source = "doc/kyosho/30614-07-beetle-spop" },
   { kit = "kit/kyosho/turbo-scorpion", type = "replaces", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "shock"
+documents = ["doc/kyosho/scw013-product-page", "doc/kyosho/vintage-160304-2-jp"]
 shock_part = "complete"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/scw013.html" },

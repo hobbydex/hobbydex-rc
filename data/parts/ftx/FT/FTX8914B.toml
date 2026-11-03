@@ -11,3 +11,6 @@ category = "bearing"
 fits = [
   { kit = "kit/ftx/outback-mini-3", type = "direct", notes = "Named by the maker's spares listing page on ftx-rc.com (import_ftx.py --link-fits)" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/2x6x2.5", match = "close", notes = "A plain bushing, 2x6x2.5; the ball bearing of that size replaces it" },
+]

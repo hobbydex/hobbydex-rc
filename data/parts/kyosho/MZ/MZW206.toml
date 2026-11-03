@@ -3,16 +3,17 @@ brand = "brand/kyosho"
 number = "MZW206"
 name = "Ball Differential Set"
 status = "discontinued"
-seen_by = "2010-05"
-seen_by_source = "doc/kyosho/mzw206-302-ball-differential-set"
+seen_by = "2007-10-30"
+seen_by_source = "https://web.archive.org/web/20071030035418/http://www.kyosho.com/jpn/race/presently/miniz_cup/images/mzw206.jpg"
 name_ja = "ボールデフセット"
 former_names = ["2x4mm ~"]
 gtin = "4955439768716"
 category = "differential"
-documents = ["doc/kyosho/mzw206-302-ball-differential-set", "doc/kyosho/mzw206-product-page"]
+documents = ["doc/kyosho/mzw206-302-ball-differential-set", "doc/kyosho/mzw206-product-page", "doc/kyosho/mini-z-parts-tekigou"]
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-spare-and-option-parts" },
   { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/30450sp-mr02-arr-mce-p" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (option part) in Kyosho's MINI-Z parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw206.html" },

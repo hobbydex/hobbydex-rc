@@ -2,6 +2,8 @@ id = "part/boom-racing/BRSP0080"
 brand = "brand/boom-racing"
 number = "BRSP0080"
 name = "KUDU Big Bore Coilover Aluminum Scale Performance Shocks 80mm"
+seen_by = "2024-07-18"
+seen_by_source = "https://web.archive.org/web/20240718041037/https://www.boomracing.com/kudu-shock-springs-medium-green-for-big-bore-brsp0080-234261"
 pack_qty = 2
 pack_qty_basis = "page"
 links = [
@@ -11,3 +13,8 @@ category = "shock"
 shock_part = "complete"
 length_mm = 80
 material = "aluminium"
+fits = [
+  { kit = "kit/boom-racing/brx01", type = "direct", source = "doc/boom-racing/shop", notes = "Listed for the Boom Racing BRX01 (link_car_kits.py)" },
+  { kit = "kit/boom-racing/brx02", type = "direct", source = "doc/boom-racing/shop", notes = "Listed for the Boom Racing BRX02 (link_car_kits.py)" },
+  { kit = "kit/boom-racing/brx02-6x6", type = "direct", source = "doc/boom-racing/shop", notes = "Listed for the Boom Racing BRX02 6x6 (link_car_kits.py)" },
+]

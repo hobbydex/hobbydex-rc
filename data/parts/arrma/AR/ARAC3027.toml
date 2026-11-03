@@ -2,6 +2,7 @@ id = "part/arrma/ARAC3027"
 brand = "brand/arrma"
 number = "ARAC3027"
 name = "Servo Saver Spring Nero"
+status = "discontinued"
 seen_by = "2026-07-12"
 seen_by_source = "https://web.archive.org/web/20260712031042/https://www.horizonhobby.com/product/arrma-servo-saver-spring-nero/ARAC3027.html"
 links = [
@@ -9,3 +10,6 @@ links = [
 ]
 category = "steering"
 numbers = ["AR340098"]
+fits = [
+  { kit = "kit/arrma/nero-6s-blx", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Listed for the ARRMA Nero (link_car_kits.py)" },
+]

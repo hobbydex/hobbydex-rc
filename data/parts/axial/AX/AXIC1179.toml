@@ -3,6 +3,7 @@ brand = "brand/axial"
 number = "AXIC1179"
 numbers = ["AXA1179"]
 name = "O-Ring 2.5x1.5mm"
+status = "discontinued"
 pack_qty = 10
 pack_qty_basis = "page"
 links = [
@@ -16,4 +17,7 @@ fits = [
   { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
   { kit = "kit/axial/yeti", type = "direct", source = "doc/axial/horizon-part-pages" },
   { kit = "kit/axial/yeti-jr", type = "direct", source = "doc/axial/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/o-ring/2.5x1.5", match = "functional" },
 ]

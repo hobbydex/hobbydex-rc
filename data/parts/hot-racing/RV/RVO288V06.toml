@@ -2,6 +2,7 @@ id = "part/hot-racing/RVO288V06"
 brand = "brand/hot-racing"
 number = "RVO288V06"
 name = "Revo 4WD Ssd Cv Drive Steel"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/rvo288v06-revo-4wd-ssd-cv-drive-steel", kind = "maker" },
 ]
@@ -13,4 +14,7 @@ fits = [
   { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/traxxas/revo", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/traxxas/summit", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/traxxas/5451X", relation = "replaces", notes = "link_part_refs" },
 ]

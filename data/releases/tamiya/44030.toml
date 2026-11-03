@@ -8,6 +8,7 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued; Chassis TGR from TamiyaBase (fallback; chassis not stated on a Tamiya page we hold)"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/44030", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20160809125536/http://www.tamiyausa.com/product/item.php?product-id=44030", kind = "archive", gone = "2026-10-20" },
 ]
 released = "2000-07-19"
 released_source = "TamiyaBase"
@@ -86,7 +87,6 @@ contains = [
   { part = "part/tamiya/41018", role = "kit", source = "doc/tamiya/44030-manual-usa" },
   { part = "part/tamiya/41024", role = "kit", source = "doc/tamiya/44030-manual-usa" },
   { part = "part/tamiya/41039", role = "kit", source = "doc/tamiya/44030-manual-usa" },
-  { part = "part/tamiya/41043", role = "kit", source = "doc/tamiya/44030-manual-usa", step = "MC18" },
   { part = "part/tamiya/41046", role = "kit", source = "doc/tamiya/44030-manual-usa" },
   { part = "part/tamiya/41047", role = "kit", source = "doc/tamiya/44030-manual-usa" },
   { part = "part/tamiya/41048", role = "kit", source = "doc/tamiya/44030-manual-usa" },
@@ -134,5 +134,6 @@ contains = [
   { part = "part/tamiya/53361", role = "kit", source = "doc/tamiya/44030-manual-usa", step = "MC22, MC23" },
   { part = "part/tamiya/53419", role = "kit", source = "doc/tamiya/44030-manual-usa" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/44030-manual-usa" },
+  { part = "part/tamiya/41044", role = "kit", source = "doc/tamiya/44030-manual-usa", step = "MC18" },
 ]
 documents = ["doc/tamiya/tamico-dealer-parts", "doc/tamiya/44030-exploded-view-usa", "doc/tamiya/44030-manual-usa"]

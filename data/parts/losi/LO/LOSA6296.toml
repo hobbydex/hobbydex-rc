@@ -2,6 +2,8 @@ id = "part/losi/LOSA6296"
 brand = "brand/losi"
 number = "LOSA6296"
 name = "Flat Point Setscrews, 8-32 x 1/8\""
+seen_by = "2015-05-02"
+seen_by_source = "https://web.archive.org/web/20150502050600/http://losi.com/ProdInfo/LOS/100/LOSA6296-100.jpg"
 gtin = "660132616441"
 pack_qty = 8
 pack_qty_basis = "page"
@@ -10,3 +12,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-flat-point-setscrews-8-32-x-1-8-8/LOSA6296.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/unc-8-32x1-8in-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

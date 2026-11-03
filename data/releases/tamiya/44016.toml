@@ -10,6 +10,7 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/44016", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20150608151003/http://www.tamiyausa.com/items/radio-control-kits-30/1-10-scale-r-c-glow-engine-26000/1-10-gp-tg10-lexus-gs400-44016", kind = "archive", gone = "2026-10-20" },
 ]
 released = "1999-03-16"
 released_source = "TamiyaBase"
@@ -20,7 +21,6 @@ contains = [
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/44016-manual-usa" },
   { part = "part/tamiya/10445706", role = "kit", source = "doc/tamiya/44016-manual-usa" },
   { part = "part/tamiya/11054158", role = "kit", source = "doc/tamiya/44016-manual-usa" },
-  { part = "part/tamiya/11824068", role = "kit", source = "doc/tamiya/44016-manual-usa" },
   { part = "part/tamiya/12220001", role = "kit", source = "doc/tamiya/44016-manual-usa", qty = 1, step = "MC6" },
   { part = "part/tamiya/13455323", role = "kit", source = "doc/tamiya/44016-manual-usa", qty = 1, step = "MC10", notes = "Kit needs 4 of this pack" },
   { part = "part/tamiya/15494001", role = "kit", source = "doc/tamiya/44016-manual-usa" },
@@ -120,5 +120,6 @@ contains = [
   { part = "part/tamiya/53345", role = "kit", source = "doc/tamiya/44016-manual-usa" },
   { part = "part/tamiya/53371", role = "kit", source = "doc/tamiya/44016-manual-usa" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/44016-manual-usa" },
+  { part = "part/tamiya/11824008", role = "kit", source = "doc/tamiya/44016-manual-usa" },
 ]
 documents = ["doc/tamiya/44016-manual-usa", "doc/tamiya/44016-exploded-view-usa"]

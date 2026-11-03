@@ -8,6 +8,7 @@ kind = "rtr"
 status = "released"
 depicts = { make = "Volkswagen", model = "Beetle" }
 released = "2022-08-27"
+released_source = "doc/tamiya/57929-product-page-ja"
 notes = "Release day in Japan from Tamiya's Japanese product page; Tamiya classes it as a regular product, made continuously; XB (Expert Built): built and painted, with radio"
 documents = ["doc/tamiya/57929-product-page-ja", "doc/tamiya/58502-manual", "doc/tamiya/product-classes"]
 contains = [
@@ -31,7 +32,6 @@ contains = [
   { part = "part/tamiya/19115051", role = "kit", source = "doc/tamiya/58502-manual" },
   { part = "part/tamiya/19115052", role = "kit", source = "doc/tamiya/58502-manual" },
   { part = "part/tamiya/19115330", role = "kit", source = "doc/tamiya/58502-manual" },
-  { part = "part/tamiya/19116049", role = "kit", source = "doc/tamiya/58502-manual" },
   { part = "part/tamiya/19335111", role = "kit", source = "doc/tamiya/58502-manual" },
   { part = "part/tamiya/19335134", role = "kit", source = "doc/tamiya/58502-manual" },
   { part = "part/tamiya/19335596", role = "kit", source = "doc/tamiya/58502-manual" },
@@ -92,6 +92,7 @@ contains = [
   { part = "part/tamiya/53689", role = "kit", source = "doc/tamiya/58502-manual" },
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/58502-manual", qty = 10, step = "BA12" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/58502-manual" },
+  { part = "part/tamiya/19115049", role = "kit", source = "doc/tamiya/58502-manual" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/57929", kind = "fan-site" },

@@ -2,6 +2,7 @@ id = "part/hot-racing/AUTB1201"
 brand = "brand/hot-racing"
 number = "AUTB1201"
 name = "Black Front Axle Aluminum Case UTB"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/autb1201-black-front-axle-aluminum-case-utb", kind = "maker" },
 ]
@@ -10,4 +11,7 @@ color = "black"
 material = "aluminium"
 fits = [
   { kit = "kit/axial/utb18", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/axial/AXI232004", relation = "replaces", notes = "link_part_refs" },
 ]

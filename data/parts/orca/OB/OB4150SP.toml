@@ -1,0 +1,21 @@
+id = "part/orca/OB4150SP"
+brand = "brand/orca"
+number = "OB4150SP"
+name = "INFINITE LiPo 4500mAh 7.4V 60C SHORTY PACK"
+category = "battery"
+weight_g = 220
+dimensions_mm = [96, 47, 25]
+status = "discontinued"
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/infinite-lipo-4500mah-7-4v-60c-shorty-pack/" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4500
+c_rating = 60
+case = "shorty"
+connector = "4mm bullet"

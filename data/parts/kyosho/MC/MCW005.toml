@@ -8,3 +8,6 @@ name_ja = "MINI-Z モトレーサー アルミフロントサスペンション"
 category = "suspension"
 documents = ["doc/kyosho/mcw005-al-f-sus-pdf"]
 material = "aluminium"
+fits = [
+  { kit = "kit/kyosho/mini-z-moto-racer", type = "replaces", source = "doc/kyosho/mcw005-al-f-sus-pdf", notes = "Car named in the part's Japanese name (link_car_names_ja.py)" },
+]

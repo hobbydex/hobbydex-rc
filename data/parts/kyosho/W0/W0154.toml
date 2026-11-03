@@ -2,6 +2,8 @@ id = "part/kyosho/W0154"
 brand = "brand/kyosho"
 number = "W0154"
 name = "6.8mm Flange H.Ball (3mm H)"
+pack_qty = 10
+pack_qty_basis = "page"
 gtin = "4955439714973"
 fits = [
   { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/31102-vone-rr-p" },
@@ -14,7 +16,11 @@ fits = [
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
 ]
 category = "ball-end"
+documents = ["doc/kyosho/w0154-product-page"]
 ball_mm = 6.8
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/w0154.html" },
+]
+equivalent_to = [
+  { spec = "spec/ball-end/6.8mm-through-hole", match = "functional" },
 ]

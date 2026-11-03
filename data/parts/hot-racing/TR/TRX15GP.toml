@@ -2,8 +2,17 @@ id = "part/hot-racing/TRX15GP"
 brand = "brand/hot-racing"
 number = "TRX15GP"
 name = "Heavy Duty Power Double Up Slipper System (Large)"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/trx15gp-heavy-duty-slipper-pressure-plate-and-hub-large-tra", kind = "maker" },
 ]
 notes = "RC Visions SKU HRATRX15GP"
 category = "gear"
+fits = [
+  { kit = "kit/traxxas/e-maxx", type = "replaces", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/hot-racing/store", notes = "Car listed on the Hot Racing store page of the part (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/traxxas/5351", relation = "replaces", notes = "link_part_refs" },
+]

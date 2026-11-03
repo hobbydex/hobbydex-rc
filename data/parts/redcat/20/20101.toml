@@ -1,10 +1,12 @@
 id = "part/redcat/20101"
 brand = "brand/redcat"
 number = "20101"
-name = "20101"
-seen_by = "2020-09-25"
-seen_by_source = "https://web.archive.org/web/20200925163523/https://dealer.redcatracing.com/manuals/94201-Sandstormmanual.pdf"
-notes = "Named by its number only: the name on the scanned redcat manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
+name = "Pin 2*6mm"
+seen_by = "2019-04-28"
+seen_by_source = "https://web.archive.org/web/20190428015214/http://www.redcatracing.com:80/20101"
+name_source = "ocr"
+category = "pin"
 documents = ["doc/redcat/sandstorm-manual", "doc/redcat/sandstorm-tk-manual"]
+equivalent_to = [
+  { spec = "spec/pin/2x6", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

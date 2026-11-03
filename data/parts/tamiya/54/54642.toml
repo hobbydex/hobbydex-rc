@@ -2,13 +2,18 @@ id = "part/tamiya/54642"
 brand = "brand/tamiya"
 number = "54642"
 name = "4mm Flange Lock Nut (Black)"
+gtin = "4950344546428"
 status = "available"
 seen_by = "2015-06-30"
 seen_by_source = "https://web.archive.org/web/20150630043905/http://www.tamiyausa.com:80/coming-soon/radio-control-parts-70/alum-ti-screws-hardware-72010/rc-4mm-flange-lock-nut-54642"
 pack_qty = 8
+pack_qty_basis = "page"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/54642/index.html" },
 ]
 documents = ["doc/tamiya/54642-product-page"]
 category = "nut"
 color = "black"
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

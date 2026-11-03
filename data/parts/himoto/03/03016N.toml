@@ -1,0 +1,10 @@
+id = "part/himoto/03016N"
+brand = "brand/himoto"
+number = "03016N"
+name = "Motor (RC550 8517)"
+category = "motor"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/drekkar", releases = ["release/himoto/HI2203"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/drekkar-1-10-electric", releases = ["release/himoto/HI2201", "release/himoto/HI2202"], type = "direct", source = "doc/himoto/option-parts" },
+]

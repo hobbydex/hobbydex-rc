@@ -11,3 +11,7 @@ documents = ["doc/tamiya/51303-product-page-ja"]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "tire"
+fits = [
+  { kit = "kit/tamiya/trf415-ms", releases = ["release/tamiya/49349"], type = "replaces", source = "doc/tamiya/49349-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
+mounting = "unmounted"

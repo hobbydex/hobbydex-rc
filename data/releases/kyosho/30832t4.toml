@@ -5,11 +5,13 @@ number = "30832T4"
 name = "SandMaster Kit (Black)"
 gtin = "4548565257386"
 name_ja = "サンドマスター キット"
+year = 2014
+released = "2014-10"
+released_source = "https://rc.kyosho.com/en/30832t4.html"
 kind = "kit"
-status = "released"
-seen_by = "2014-08"
-seen_by_source = "doc/kyosho/30832t4-t01-sandmaster-im"
+status = "discontinued"
 color = "black"
+notes = "Listed on the maker's page before its sale month (2014-08, source doc/kyosho/30832t4-t01-sandmaster-im)."
 documents = ["doc/kyosho/30832t4-t01-sandmaster-spop", "doc/kyosho/30832t4-t01-sandmaster-ex", "doc/kyosho/30832t4-t01-sandmaster-im", "doc/kyosho/30832t4-product-page"]
 contains = [
   { part = "part/kyosho/1-E040", role = "kit", source = "doc/kyosho/30832t4-t01-sandmaster-spop" },
@@ -110,3 +112,6 @@ contains = [
   { part = "part/kyosho/EZ0020R", role = "listed", source = "doc/kyosho/30832t4-t01-sandmaster-ex" },
   { part = "part/kyosho/EZ0040R", role = "listed", source = "doc/kyosho/30832t4-t01-sandmaster-ex" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30832t4.html"

@@ -2,6 +2,9 @@ id = "part/losi/LOSA6205"
 brand = "brand/losi"
 number = "LOSA6205"
 name = "Socket Head Screws, 4-40 x 3/4\""
+status = "discontinued"
+seen_by = "2008-11-18"
+seen_by_source = "https://web.archive.org/web/20081118112125/http://www.losi.com/ProdInfo/LOS/100/LOSA6205-100.jpg"
 gtin = "660132005481"
 pack_qty = 10
 pack_qty_basis = "page"
@@ -10,3 +13,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-socket-head-screws-4-40-x-3-4-10/LOSA6205.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x3-4in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

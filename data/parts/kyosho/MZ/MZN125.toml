@@ -6,8 +6,11 @@ seen_by = "2011"
 seen_by_source = "doc/kyosho/mzn125-toyota-celica-gt-four"
 gtin = "4548565168910"
 name_ja = "トヨタ セリカ GT-FOUR"
-documents = ["doc/kyosho/mzn125-toyota-celica-gt-four"]
+documents = ["doc/kyosho/mzn125-toyota-celica-gt-four", "doc/kyosho/mzn125-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn125.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-ma-020", releases = ["release/kyosho/32649jk"], type = "direct", source = "doc/kyosho/mzn125-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

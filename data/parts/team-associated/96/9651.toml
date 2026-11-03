@@ -2,6 +2,7 @@ id = "part/team-associated/9651"
 brand = "brand/team-associated"
 number = "9651"
 name = "Spur Gear, 81T 48P (Part 9651)"
+status = "discontinued"
 seen_by = "2025-01-15"
 seen_by_source = "https://web.archive.org/web/20250115163439/https://60years.associatedelectrics.com/spur-gear-81t-48p-part-9651/"
 former_names = ["Spur Gear 81T, 48P"]
@@ -14,4 +15,6 @@ links = [
 gtin = "784695096516"
 fits = [
   { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
 ]
+documents = ["doc/team-associated/cat-t4ft"]

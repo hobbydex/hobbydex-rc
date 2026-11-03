@@ -2,7 +2,11 @@ id = "part/schumacher/U7328"
 brand = "brand/schumacher"
 number = "U7328"
 name = "Ball Bearing - 5 x 11 x 4 Red Seal - (pr)"
+gtin = "5051294125189"
 category = "bearing"
 color = "red"
 documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/ball-bearing-5-x-11-x-4-red-seal-pr-u7328" } ]
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

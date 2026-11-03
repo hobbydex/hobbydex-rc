@@ -1,0 +1,14 @@
+id = "part/kyosho/GT24"
+brand = "brand/kyosho"
+number = "GT24"
+name = "Clutch Set for 2 Speed"
+name_ja = "2スピード 用 クラッチセット"
+name_source = "manual"
+gtin = "4955439663905"
+documents = ["doc/kyosho/inferno-gt-060322", "doc/kyosho/landmax2-060322"]
+category = "engine-fuel"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
+  { kit = "kit/kyosho/landmax-2", type = "replaces", source = "doc/kyosho/landmax2-060322", notes = "Marked for the Land Max 2 (option part) in Kyosho's Land Max 2 parts acceptable list" },
+]

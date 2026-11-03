@@ -2,10 +2,13 @@ id = "part/kyosho/92606"
 brand = "brand/kyosho"
 number = "92606"
 name = "Muffler Cap"
+gtin = "4955439691984"
 seen_by = "2001-12"
 seen_by_source = "doc/kyosho/31181-megaforce-p"
 category = "engine-fuel"
 fits = [
   { kit = "kit/kyosho/megaforce", type = "replaces", source = "doc/kyosho/31181-megaforce-p" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-gp-alpha3"], type = "replaces", source = "doc/kyosho/gp-alpha3-060322", notes = "Marked for the Pure Ten GP alpha 3 (option part) in Kyosho's Pure Ten GP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
-documents = ["doc/kyosho/31181-megaforce-p"]
+documents = ["doc/kyosho/31181-megaforce-p", "doc/kyosho/gp-alpha3-060322", "doc/kyosho/v-one-s-060322"]

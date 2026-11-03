@@ -2,12 +2,16 @@ id = "part/kyosho/FAB156"
 brand = "brand/kyosho"
 number = "FAB156"
 name = "Body Set PORSCHE 918 (Clear)"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401150436/http://kyosho.com/jpn/products/rc/parts_images/FAB156.jpg"
 gtin = "4548565262823"
 color = "clear"
 fits = [
   { kit = "kit/kyosho/fazer", type = "replaces", source = "doc/kyosho/30917-fazer-ve-porsche-918-spop" },
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30919-fazer-ve-x-lancer-spop" },
 ]
 category = "body"
+documents = ["doc/kyosho/fab156-product-page"]
 depicts = { make = "Porsche", model = "918" }
 scale = "1/10"
 links = [

@@ -5,8 +5,12 @@ name = "Body (STADIUM FORCE)"
 gtin = "4955439766859"
 fits = [
   { kit = "kit/kyosho/tr-15-stadium-force", type = "direct", source = "doc/kyosho/31095-tr15-stadiumforce-mt-p" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "replaces", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "replaces", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 RALLY (option part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/tr-15-monster-touring", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the MONSTER TOURING (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
 ]
 category = "body"
+documents = ["doc/kyosho/tr20-product-page", "doc/kyosho/tr15-060322"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/tr20.html" },
 ]

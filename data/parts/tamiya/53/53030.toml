@@ -2,6 +2,8 @@ id = "part/tamiya/53030"
 brand = "brand/tamiya"
 number = "53030"
 name = "850 Sealed Ball Bearing"
+pack_qty = 4
+pack_qty_basis = "manual"
 seen_by = "2003-06-08"
 seen_by_source = "https://web.archive.org/web/20030608160758/http://www.tamiya.com:80/english/rc/rcitem/parts/img/53030.jpeg"
 ocr_names = ["850 Sealed Ball Bearing Set"]
@@ -13,7 +15,7 @@ links = [
   { site = "Tamiya", url = "https://www.tamiya.com/japan/products/53030/index.html" },
 ]
 equivalent_to = [
-  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Tamiya size code 850: 8 mm outer, 5 mm bore, 2.5 mm wide" },
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Tamiya size code 850: 5x8 mm bore x outer; width 2.5 mm per the usual size, not stated by Tamiya" },
 ]
 seal = "rubber"
 fits = [

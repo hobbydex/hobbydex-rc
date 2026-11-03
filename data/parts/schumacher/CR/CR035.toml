@@ -28,11 +28,16 @@ fits = [
   { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-svr", type = "direct", source = "doc/schumacher/cougar-svr-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-ld2", type = "direct", source = "doc/schumacher/ld2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
-documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-l1-evo-exploded", "doc/schumacher/cat-l1-exploded", "doc/schumacher/catl1r-exploded-diagram-v2", "doc/schumacher/cougar-kc-exploded", "doc/schumacher/cougar-kd-exploded", "doc/schumacher/cougar-laydown-exploded", "doc/schumacher/cougar-svr-exploded", "doc/schumacher/ft8-exploded", "doc/schumacher/icon-exploded", "doc/schumacher/kf-exploded", "doc/schumacher/kf2-exploded", "doc/schumacher/kr-exploded-l", "doc/schumacher/mi6evo-exploded", "doc/schumacher/mi7-exploded", "doc/schumacher/mi8-exploded", "doc/schumacher/mission-ft-exploded-v2", "doc/schumacher/storm-st-exploded"]
+documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-l1-evo-exploded", "doc/schumacher/cat-l1-exploded", "doc/schumacher/catl1r-exploded-diagram-v2", "doc/schumacher/cougar-kc-exploded", "doc/schumacher/cougar-kd-exploded", "doc/schumacher/cougar-laydown-exploded", "doc/schumacher/cougar-svr-exploded", "doc/schumacher/ft8-exploded", "doc/schumacher/icon-exploded", "doc/schumacher/kf-exploded", "doc/schumacher/kf2-exploded", "doc/schumacher/kr-exploded-l", "doc/schumacher/mi6evo-exploded", "doc/schumacher/mi7-exploded", "doc/schumacher/mi8-exploded", "doc/schumacher/mission-ft-exploded-v2", "doc/schumacher/storm-st-exploded", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/mi3-spares-archive", "doc/schumacher/mi5-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/fusion28/core-rc-serrated-alloy-m4-nuts-blue-pk-4-cr035" } ]
 name_source = "manufacturer"
 pack_qty = 4
 pack_qty_basis = "name"
 color = "blue"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

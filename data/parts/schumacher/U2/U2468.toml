@@ -2,7 +2,12 @@ id = "part/schumacher/U2468"
 brand = "brand/schumacher"
 number = "U2468"
 name = "Rear Upper Wishbones - Mi1"
+gtin = "5051294015701"
 seen_by = "2014-06-03"
 seen_by_source = "https://web.archive.org/web/20140603065706/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=686&templateid=69&sortname1=partno"
 category = "suspension"
-documents = ["doc/schumacher/mission-ft-manual-v2"]
+documents = ["doc/schumacher/mission-ft-manual-v2", "doc/schumacher/mi1-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/rear-upper-wishbones-mi1-fusion-ft-u2468" } ]
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

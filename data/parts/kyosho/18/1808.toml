@@ -2,10 +2,17 @@ id = "part/kyosho/1808"
 brand = "brand/kyosho"
 number = "1808"
 name = "Rod Stopper, 0 8"
+gtin = "4955439673508"
 seen_by = "2005"
 seen_by_source = "doc/kyosho/31380-mm01-fw05t-maint-m"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
-documents = ["doc/kyosho/31263-v-one-rrr-evo2-wc-m", "doc/kyosho/31380-mm01-fw05t-maint-m"]
+documents = ["doc/kyosho/31263-v-one-rrr-evo2-wc-m", "doc/kyosho/31380-mm01-fw05t-maint-m", "doc/kyosho/mp75-777-060322", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/inferno-mp7-5", type = "direct", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the MP-7.5 (standard part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (standard part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (standard part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (standard part) in Kyosho's V-ONE S series parts acceptable list" },
+]

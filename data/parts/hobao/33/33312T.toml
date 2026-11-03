@@ -1,8 +1,14 @@
 id = "part/hobao/33312T"
 brand = "brand/hobao"
 number = "33312T"
-name = "33312T"
+name = "M3 X 12 Hex Socket Button Head Tapping Screws"
 notes = "A set; the drawings label its pieces B/H Tap Screw; M3 X 12 HEX SOCKET BUTTON HEAD TAPPING SCREWS"
 documents = ["doc/hobao/cml-hobao-hyper-vs2-manual-instruction-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
+name_source = "manufacturer"
+links = [
+  { site = "HoBao", url = "https://hobaorc.myshopify.com/products/33312t-m3-x-12-hex-socket-button-head-tapping-screws" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

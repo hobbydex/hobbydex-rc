@@ -5,7 +5,10 @@ name = "Radio Post (Gunmetal/ST-RR Evo)"
 gtin = "4548565186051"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 category = "chassis"
-documents = ["doc/kyosho/33004-strr-evo2-im"]
+documents = ["doc/kyosho/33004-strr-evo2-im", "doc/kyosho/ifw309gm-product-page"]
 name_source = "manufacturer"
 color = "gun metal"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ifw309gm.html" } ]
+fits = [
+  { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31375-strr-evo-sp" },
+]

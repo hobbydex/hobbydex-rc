@@ -2,6 +2,7 @@ id = "part/tekno/TKR6670"
 brand = "brand/tekno"
 number = "TKR6670"
 name = "Spur Gear, 70T, 48P, Composite, Black"
+status = "discontinued"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-spur-gear-70t-48p-composite-black-eb410/TKR6670.html" },
 ]
@@ -14,4 +15,5 @@ pitch_dp = 48
 material = "plastic"
 fits = [
   { kit = "kit/tekno/eb410-2", releases = ["release/tekno/tkr6502"], type = "replaces", source = "doc/tekno/eb410-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/eb410", type = "replaces", source = "doc/tekno/eb410instructions-rev2", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

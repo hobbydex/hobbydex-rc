@@ -6,7 +6,7 @@ gtin = "4944925803598"
 fits = [
   { kit = "kit/mugen/mrx4", type = "direct", source = "doc/mugen/mrx-4r-part-list", notes = "Also listed by doc/mugen/mrx-4-part-list" },
   { kit = "kit/mugen/mrx3", type = "direct", source = "doc/mugen/mrx-3-part-list" },
-  { kit = "kit/mugen/mtx3", type = "replaces", source = "doc/mugen/mtx-3-part-list" },
+  { kit = "kit/mugen/mtx3", type = "direct", source = "doc/mugen/mtx-3-part-list", notes = "Also listed as replaces by doc/mugen/mtx-3-part-list" },
   { kit = "kit/mugen/mtx2", type = "direct", source = "doc/mugen/mtx-2-part-list" },
 ]
 category = "drivetrain"

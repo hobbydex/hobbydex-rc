@@ -1,10 +1,13 @@
 id = "part/ecx/ECX235002"
 brand = "brand/ecx"
 number = "ECX235002"
-name = "ECX235002"
+name = "Screw, M3, Flat Head, Binder Head, Tapping"
 seen_by = "2017-02"
 seen_by_source = "doc/ecx/ecx03331-ecx03333-ecx03354-manual-en"
 notes = "Number read from a ECX document (ECX03242_ECX03243-Manual-EN.pdf); no listing names it"
 documents = ["doc/ecx/ecx03242-ecx03243-manual-en", "doc/ecx/ecx03331-ecx03333-ecx03354-manual-en"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
+category_source = "llm"
+links = [
+  { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20210307152917/https://www.horizonhobby.com/product/screw-m3-flat-head-binder-head-tapping-25/ECX235002.html", kind = "archive" },
+]

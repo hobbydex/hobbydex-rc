@@ -2,6 +2,7 @@ id = "part/hot-racing/LSBR2201"
 brand = "brand/hot-racing"
 number = "LSBR2201"
 name = "Aluminum Axle Housing Ends Big Bearing Losi Super Baja/Rock Rey"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/lsbr2201-aluminum-axle-housing-ends-big-bearing-losi-super-baja-rock-rey", kind = "maker" },
 ]
@@ -9,4 +10,7 @@ category = "bearing"
 material = "aluminium"
 fits = [
   { kit = "kit/losi/rock-rey", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+related = [
+  { part = "part/losi/LOS252071", relation = "replaces", notes = "link_part_refs" },
 ]

@@ -2,10 +2,14 @@ id = "part/tekno/TKR5150B"
 brand = "brand/tekno"
 number = "TKR5150B"
 name = "Differential Gear Set (18/9T, for TKR5113/B, internal gears only)"
+status = "discontinued"
+seen_by = "2024-02-26"
+seen_by_source = "https://web.archive.org/web/20240226080154/https://www.teknorc.com/shop/tkr5150b-differential-gear-set-18-9t-for-tkr5113-b/"
 gtin = "810020554182"
 category = "differential"
 related = [
   { part = "part/tekno/TKR5113B", relation = "for", notes = "link_part_refs" },
+  { part = "part/tekno/TKR5113", relation = "for", notes = "link_part_refs" },
 ]
 documents = ["doc/tekno/mt410-2-0-manual", "doc/tekno/sct410-2-0-manual-rev02"]
 links = [ { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-differential-gear-set-internal-gears-only-18-9t-tkr5113-b/TKR5150B.html" } ]

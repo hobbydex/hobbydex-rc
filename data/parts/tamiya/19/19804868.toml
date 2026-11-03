@@ -2,6 +2,8 @@ id = "part/tamiya/19804868"
 brand = "brand/tamiya"
 number = "19804868"
 name = "3x(5.5)x4.0mm Spacer (Blue)"
+pack_qty = 5
+pack_qty_basis = "manual"
 seen_by = "2015-05"
 seen_by_source = "doc/tamiya/42289-manual"
 color = "blue"
@@ -9,3 +11,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "washer-shim"
 documents = ["doc/tamiya/42289-manual", "doc/tamiya/42384-manual", "doc/tamiya/42391-manual"]
+equivalent_to = [
+  { spec = "spec/washer/3x5.5x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

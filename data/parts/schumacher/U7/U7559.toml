@@ -2,7 +2,12 @@ id = "part/schumacher/U7559"
 brand = "brand/schumacher"
 number = "U7559"
 name = "SPEED PACK - M3x10 SS Cap Hd (pk10)"
+gtin = "5051294131197"
 pack_qty = 10
 pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/schumacher/top-cat-manual"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-2wd-buggy/top-cat/speed-pack-m3x10-ss-cap-hd-pk10-u7559" } ]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -5,12 +5,14 @@ number = "34361T1"
 name = "Outlaw Rampage T1"
 gtin = "4548565330515"
 name_ja = "アウトローランページ"
+year = 2017
+released = "2017-11"
+released_source = "https://rc.kyosho.com/en/34361t1.html"
 kind = "rtr"
 power = "brushed"
 power_source = "part/kyosho/82243S"
-status = "released"
-seen_by = "2017-09"
-seen_by_source = "https://web.archive.org/web/20170930145026/http://rc.kyosho.com:80/en/34361t1.html"
+notes = "Listed on the maker's page before its sale month (2017-09, source https://web.archive.org/web/20170930145026/http://rc.kyosho.com:80/en/34361t1.html)."
+status = "discontinued"
 documents = ["doc/kyosho/34361t1-t2-outlaw-rampage-spop", "doc/kyosho/34361t1-t2-outlaw-rampage-ex", "doc/kyosho/34361t1-t2-outlaw-rampage-im", "doc/kyosho/34361t1-product-page", "doc/kyosho/youtube-KMJs9AQKE2w", "doc/kyosho/youtube-XNoLCPX6UoY", "doc/kyosho/youtube-hCZ_rbLNyRA"]
 contains = [
   { part = "part/kyosho/1-E025", role = "kit", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
@@ -158,4 +160,13 @@ contains = [
   { part = "part/kyosho/R246-8454", role = "option", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
   { part = "part/kyosho/R246-8584", role = "option", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
   { part = "part/kyosho/SIL0350-8", role = "kit", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { part = "part/kyosho/OLB051-01SM", role = "kit", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { part = "part/kyosho/R246-8402B", role = "option", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { part = "part/kyosho/R246-8451B", role = "option", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { part = "part/kyosho/R246-8452B", role = "option", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { part = "part/kyosho/R246-8452S", role = "option", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { part = "part/kyosho/R246-8453B", role = "option", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/34361t1.html"

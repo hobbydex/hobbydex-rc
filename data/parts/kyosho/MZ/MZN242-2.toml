@@ -4,6 +4,9 @@ number = "MZN242-2"
 name = "Front body mount (Porsche 962 C)"
 gtin = "4548565527069"
 category = "body-accessory"
-documents = ["doc/kyosho/rc-newitem-2026-10-parts"]
+documents = ["doc/kyosho/rc-newitem-2026-10-parts", "doc/kyosho/mzn242-2-product-page"]
 notes = "Kyosho lists it among the new items of October 2026"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn242-2.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-04", releases = ["release/kyosho/32379ra"], type = "direct", source = "doc/kyosho/mzn242-2-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

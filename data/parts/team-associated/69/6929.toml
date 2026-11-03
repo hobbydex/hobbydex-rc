@@ -3,4 +3,16 @@ brand = "brand/team-associated"
 number = "6929"
 name = "4-40x3/8 shcs (w/hole)"
 category = "screw"
-documents = ["doc/team-associated/manual-b4-2rs"]
+documents = ["doc/team-associated/manual-b4-2rs", "doc/team-associated/cat-t4ft"]
+pack_qty = 4
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x3-8in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+gtin = "784695069299"
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Screws-4-40-x-3-8-in-SHCS-with-hole_1", kind = "dealer" },
+]

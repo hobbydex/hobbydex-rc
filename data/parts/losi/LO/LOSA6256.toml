@@ -2,6 +2,8 @@ id = "part/losi/LOSA6256"
 brand = "brand/losi"
 number = "LOSA6256"
 name = "Button Head Screws, 4-40 x 1/2\""
+seen_by = "2008-11-18"
+seen_by_source = "https://web.archive.org/web/20081118112111/http://www.losi.com/ProdInfo/LOS/100/LOSA6256-100.jpg"
 gtin = "660132006150"
 pack_qty = 6
 pack_qty_basis = "page"
@@ -10,3 +12,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-button-head-screws-4-40-x-1-2-6/LOSA6256.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x1-2in-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

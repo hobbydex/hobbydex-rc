@@ -2,7 +2,9 @@ id = "part/kyosho/W0201"
 brand = "brand/kyosho"
 number = "W0201"
 name = "H 5.8mm Hard Ball"
+gtin = "4955439754368"
 pack_qty = 5
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
   { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/33011-mp9-tki4-10th-aniversary-spop" },
@@ -23,6 +25,8 @@ fits = [
   { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
   { kit = "kit/kyosho/twin-force", type = "direct", source = "doc/kyosho/30521-b-twinforce-p" },
   { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-p" },
+  { kit = "kit/kyosho/blizzard", type = "direct", source = "doc/kyosho/34901-34901-t03-blizzard-fr-spop" },
+  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (option part) in Kyosho's Monster Truck parts acceptable list" },
 ]
 category = "ball-end"
 ball_mm = 5.8
@@ -30,4 +34,4 @@ ball_type = "through-hole"
 equivalent_to = [
   { spec = "spec/ball-end/5.8mm-through-hole", match = "functional" },
 ]
-documents = ["doc/kyosho/30046-lazer-zx6-spop", "doc/kyosho/30077-lazer-zx5-sp-p", "doc/kyosho/30521-b-twinforce-p"]
+documents = ["doc/kyosho/30046-lazer-zx6-spop", "doc/kyosho/30077-lazer-zx5-sp-p", "doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30850-ultima-sc-r-m", "doc/kyosho/30850-ultima-sc-r-p", "doc/kyosho/monstertruck-060322"]

@@ -2,15 +2,20 @@ id = "part/kyosho/FAT305BK"
 brand = "brand/kyosho"
 number = "FAT305BK"
 name = "Drift Tire Front(14-Spoke)"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401091149/http://kyosho.com/jpn/products/rc/parts_images/FAT305BK.jpg"
 gtin = "4548565262984"
 pack_qty = 2
 pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/fazer", type = "replaces", source = "doc/kyosho/30917-fazer-ve-porsche-918-spop" },
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30919-fazer-ve-x-lancer-spop" },
 ]
 category = "tire"
+documents = ["doc/kyosho/fat305bk-product-page"]
 vehicle = "drift"
 position = "front"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/fat305bk.html" },
 ]
+mounting = "unmounted"

@@ -1,0 +1,15 @@
+id = "part/ruddog/RP-0487"
+brand = "brand/ruddog"
+number = "RP-0487"
+name = "Pre-Oiled Air Filter Foam for Mugen MBX8R"
+category = "engine-fuel"
+gtin = "4052133015655"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Pre-Oiled-Air-Filter-Foam-for-Mugen-MBX8R-12pcs_1" },
+]
+fits = [
+  { kit = "kit/mugen/mbx8", releases = ["release/mugen/e2027"], type = "replaces", source = "doc/ruddog/store", notes = "Named in the maker's part title (link_car_kits.py)" },
+]
+pack_qty = 12
+pack_qty_basis = "name"

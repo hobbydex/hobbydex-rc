@@ -3,10 +3,13 @@ brand = "brand/kyosho"
 number = "TRB301"
 name = "Print Body Set (DBX-VE)"
 status = "discontinued"
+seen_by = "2010-01-02"
+seen_by_source = "https://web.archive.org/web/20100102024102/http://kyosho.com/jpn/products/rc/parts_images/TRB301.jpg"
 category = "body"
 documents = ["doc/kyosho/trb301-product-page"]
 fits = [
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31047-dbx-dst-drt-drx-dbx-ve-parts-compati091020" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/trb301.html" },

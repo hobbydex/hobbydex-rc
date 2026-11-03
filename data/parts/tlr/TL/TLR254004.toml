@@ -2,12 +2,17 @@ id = "part/tlr/TLR254004"
 brand = "brand/tlr"
 number = "TLR254004"
 name = "Rear Shock Tower"
+status = "discontinued"
 seen_by = "2025-05-15"
 seen_by_source = "https://web.archive.org/web/20250515071544/https://www.tlracing.com/product/rear-shock-tower-5ive-b/TLR254004.html"
 gtin = "605482619636"
 applies_to = "5IVE B"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5IVE B (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-rear-shock-tower-5ive-b/TLR254004.html" },
 ]
 category = "chassis"
 material = "aluminium"
+scale = "1/5"

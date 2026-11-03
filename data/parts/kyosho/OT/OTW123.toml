@@ -5,10 +5,12 @@ name = "Front Shock Spring Set (S/M/H/Optima)"
 gtin = "4548565302871"
 former_names = ["SILVER PINK BLACK YELLOW GOLD"]
 category = "shock-spring"
+documents = ["doc/kyosho/otw123-product-page", "doc/kyosho/vintage-160304-2-jp"]
 pack_qty = 2
 pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30622-01-optima-mid-op" },
+  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/otw123.html" },

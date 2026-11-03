@@ -2,13 +2,19 @@ id = "part/kyosho/SCW018"
 brand = "brand/kyosho"
 number = "SCW018"
 name = "LED Light Bulb Set(Scorpion 2014)"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401215810/http://kyosho.com/jpn/products/rc/parts_images/SCW018.jpg"
 gtin = "4548565253883"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
   { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/34053-fazer-vei-chevelle-spop" },
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "body-accessory"
+documents = ["doc/kyosho/scw018-product-page", "doc/kyosho/vintage-160304-2-jp"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/scw018.html" },
 ]

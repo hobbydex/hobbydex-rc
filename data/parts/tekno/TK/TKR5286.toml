@@ -1,0 +1,17 @@
+id = "part/tekno/TKR5286"
+brand = "brand/tekno"
+number = "TKR5286"
+name = "Suspension Arms, Front"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-suspension-arms-front-2-eb48.3-nb48.3/TKR5286.html", kind = "dealer" },
+]
+pack_qty = 2
+pack_qty_basis = "page"
+applies_to = "EB48.3 NB48.3"
+gtin = "815076016332"
+category = "suspension"
+fits = [
+  { kit = "kit/tekno/eb48-3", releases = ["release/tekno/eb48-3"], type = "replaces", source = "doc/tekno/eb48-3instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48-3", type = "replaces", source = "doc/tekno/nb48-3-instructions-rev3", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

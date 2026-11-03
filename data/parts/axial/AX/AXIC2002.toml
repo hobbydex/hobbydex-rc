@@ -3,6 +3,7 @@ brand = "brand/axial"
 number = "AXIC2002"
 numbers = ["AX12022"]
 name = "1/10 Maxxis Trepador R35 2.2 Tire with Inserts"
+status = "discontinued"
 gtin = "816874012052"
 pack_qty = 2
 pack_qty_basis = "page"
@@ -19,3 +20,7 @@ fits = [
   { kit = "kit/axial/wraith", type = "direct", source = "doc/axial/horizon-part-pages" },
   { kit = "kit/axial/yeti", type = "replaces", source = "doc/axial/horizon-part-pages", notes = "Optional part" },
 ]
+position = "front-rear"
+vehicle = "crawler"
+wheel_size = "2.2\""
+mounting = "unmounted"

@@ -3,9 +3,11 @@ brand = "brand/kyosho"
 number = "UM327"
 name = "Steel Pinion Gear(27T)1/48 Pitch"
 status = "discontinued"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401150328/http://kyosho.com/jpn/products/rc/parts_images/UM327.jpg"
 gtin = "4548565266258"
 category = "pinion"
-documents = ["doc/kyosho/um327-product-page"]
+documents = ["doc/kyosho/um327-product-page", "doc/kyosho/vintage-160304-2-jp"]
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "replaces", source = "doc/kyosho/34301-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "replaces", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
@@ -15,6 +17,7 @@ fits = [
   { kit = "kit/kyosho/ultima-sc6", type = "replaces", source = "doc/kyosho/30859-ultima-sc6-spop" },
   { kit = "kit/kyosho/2rsa", type = "replaces", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
   { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
+  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-27t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

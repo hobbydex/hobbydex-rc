@@ -4,6 +4,7 @@ number = "MA013B"
 name = "Steering Crank Set"
 gtin = "4955439773789"
 category = "steering"
+documents = ["doc/kyosho/ma013b-product-page", "doc/kyosho/monstertruck-060322"]
 fits = [
   { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
   { kit = "kit/kyosho/usa-1-ve", type = "direct", source = "doc/kyosho/34257-usa-1-ve-readyset-spare-and-option-parts" },
@@ -14,6 +15,7 @@ fits = [
   { kit = "kit/kyosho/fo-xx-ve", type = "direct", source = "doc/kyosho/34255-fo-xx-ve-2-0-spop" },
   { kit = "kit/kyosho/mad-force-kruiser-ve", type = "direct", source = "doc/kyosho/30888-mad-force-kr-2-spop" },
   { kit = "kit/kyosho/twin-force", type = "direct", source = "doc/kyosho/30521-b-twinforce-p" },
+  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (standard part) in Kyosho's Monster Truck parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ma013b.html" },

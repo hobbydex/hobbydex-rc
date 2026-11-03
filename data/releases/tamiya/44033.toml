@@ -10,6 +10,7 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued; Chassis TGR from TamiyaBase (fallback; chassis not stated on a Tamiya page we hold)"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/44033", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20160809170150/http://www.tamiyausa.com/product/item.php?product-id=44033", kind = "archive", gone = "2026-10-20" },
 ]
 released = "2001-05-30"
 released_source = "TamiyaBase"
@@ -88,7 +89,6 @@ contains = [
   { part = "part/tamiya/41018", role = "kit", source = "doc/tamiya/44033-manual-usa" },
   { part = "part/tamiya/41024", role = "kit", source = "doc/tamiya/44033-manual-usa" },
   { part = "part/tamiya/41039", role = "kit", source = "doc/tamiya/44033-manual-usa" },
-  { part = "part/tamiya/41043", role = "kit", source = "doc/tamiya/44033-manual-usa", step = "MC18" },
   { part = "part/tamiya/41046", role = "kit", source = "doc/tamiya/44033-manual-usa" },
   { part = "part/tamiya/41048", role = "kit", source = "doc/tamiya/44033-manual-usa" },
   { part = "part/tamiya/41057", role = "kit", source = "doc/tamiya/44033-manual-usa" },
@@ -138,5 +138,6 @@ contains = [
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/44033-manual-usa" },
   { part = "part/tamiya/41047", role = "kit", source = "doc/tamiya/44033-manual-usa" },
   { part = "part/tamiya/19805704", role = "kit", source = "doc/tamiya/44033-manual-usa", qty = 2, step = "MD13", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/41044", role = "kit", source = "doc/tamiya/44033-manual-usa", step = "MC18" },
 ]
 documents = ["doc/tamiya/44033-manual-usa"]

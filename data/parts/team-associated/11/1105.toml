@@ -2,6 +2,7 @@ id = "part/team-associated/1105"
 brand = "brand/team-associated"
 number = "1105"
 name = "FT Green Slime Shock Lube"
+status = "discontinued"
 seen_by = "2024-11-02"
 seen_by_source = "https://web.archive.org/web/20241102204117/https://60years.associatedelectrics.com/ft-green-slime-shock-lube/"
 gtin = "784695011052"
@@ -13,4 +14,7 @@ category = "shock"
 shock_part = "complete"
 fits = [
   { kit = "kit/team-associated/rc28f", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4rs" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+documents = ["doc/team-associated/cat-t4rs", "doc/team-associated/cat-10l4o"]

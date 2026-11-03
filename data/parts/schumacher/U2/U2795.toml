@@ -10,3 +10,10 @@ links = [
 ]
 name_source = "manufacturer"
 category = "tool"
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+documents = ["doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]

@@ -1,0 +1,18 @@
+id = "part/dromida/DIDC1262"
+brand = "brand/dromida"
+number = "DIDC1262"
+name = "Wheel Tire Set"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dromida-wheel-tire-set-2-touring/DIDC1262.html" },
+]
+pack_qty = 2
+pack_qty_basis = "page"
+applies_to = "Touring"
+gtin = "707768212620"
+category = "tire"
+fits = [
+  { kit = "kit/dromida/rally-car", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/dromida/touring-car", type = "direct", source = "doc/dromida/horizon-part-pages" },
+]
+vehicle = "touring"

@@ -10,3 +10,6 @@ motor_type = "brushed"
 equivalent_to = [
   { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
+fits = [
+  { kit = "kit/yikong/yk41011", type = "replaces", source = "doc/yikong/yikongrccar-dealer-listing", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

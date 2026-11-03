@@ -1,0 +1,17 @@
+id = "part/schumacher/U2574"
+brand = "brand/schumacher"
+number = "U2574"
+name = "Ball Bearing - 5x9x2.5 Open (pr)"
+documents = ["doc/schumacher/cougar-kc-manual", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive"]
+category = "bearing"
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+name_source = "manufacturer"
+seen_by = "2010-01-30"
+seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
+equivalent_to = [
+  { spec = "spec/bearing/5x9x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "open"

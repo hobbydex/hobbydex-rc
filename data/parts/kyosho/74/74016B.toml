@@ -2,9 +2,18 @@ id = "part/kyosho/74016B"
 brand = "brand/kyosho"
 number = "74016B"
 name = "GXR15 Engine"
+seen_by = "2008-11-19"
+seen_by_source = "https://web.archive.org/web/20081119161636/http://www.kyosho.com/jpn/support/instructionmanual/engine/pdf/74016b_gxr-15_m.pdf"
 name_source = "manufacturer"
 gtin = "4955439863831"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/74016b.html" },
 ]
 category = "engine-fuel"
+documents = ["doc/kyosho/v-one-r4-151117", "doc/kyosho/fw-05-060322", "doc/kyosho/tr15-060322", "doc/kyosho/v-one-s-060322"]
+fits = [
+  { kit = "kit/kyosho/v-one-r4", releases = ["release/kyosho/31267"], type = "replaces", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4s (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
+  { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (standard part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 Ready Set (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (standard part) in Kyosho's V-ONE S series parts acceptable list" },
+]

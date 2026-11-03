@@ -2,6 +2,11 @@ id = "part/team-associated/1597"
 brand = "brand/team-associated"
 number = "1597"
 name = "TIRE ADHESIVE."
+status = "discontinued"
 name_source = "manual"
 category = "glue"
 documents = ["doc/team-associated/cat-10l4o", "doc/team-associated/cat-t4ft"]
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]

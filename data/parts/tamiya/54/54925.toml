@@ -2,6 +2,7 @@ id = "part/tamiya/54925"
 brand = "brand/tamiya"
 number = "54925"
 name = "630 Ball Bearings"
+gtin = "4950344549252"
 status = "available"
 seen_by = "2024-07-21"
 seen_by_source = "https://web.archive.org/web/20240721123409/https://www.tamiya.com/english/products/54925/index.html"
@@ -18,3 +19,6 @@ links = [
 ]
 documents = ["doc/tamiya/54925-product-page"]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/3x6x2.5", match = "close", notes = "Tamiya size code 630: 3x6 mm bore x outer; width 2.5 mm per the usual size, not stated by Tamiya" },
+]

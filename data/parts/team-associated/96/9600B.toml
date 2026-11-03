@@ -8,3 +8,9 @@ name_source = "manual"
 category = "chassis"
 color = "blue"
 documents = ["doc/team-associated/cat-t4ft"]
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]
+links = [
+  { site = "Team Associated (Internet Archive)", url = "https://web.archive.org/web/20100913051450/http://www.teamassociated.com:80/factoryteam/parts/details/9600B/", kind = "archive" },
+]

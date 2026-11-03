@@ -5,11 +5,13 @@ number = "30844"
 name = "DMT VE-R readyset"
 gtin = "4548565199921"
 name_ja = "DMT VE-R レディセット"
+year = 2012
+released = "2012-05"
+released_source = "https://rc.kyosho.com/en/30844.html"
 kind = "rtr"
-status = "released"
-seen_by = "2012-02"
-seen_by_source = "doc/kyosho/dmt-ve-r-30844t1-t01"
+status = "discontinued"
 documents = ["doc/kyosho/dmt-ve-r-30844-sp", "doc/kyosho/dmt-ve-r-30844-ex", "doc/kyosho/dmt-ve-r-30844-mm01", "doc/kyosho/dmt-ve-r-30844t1-t01", "doc/kyosho/dmt-ve-r-30844-op", "doc/kyosho/30844-product-page"]
+notes = "Listed on the maker's page before its sale month (2012-02, source doc/kyosho/dmt-ve-r-30844t1-t01)."
 contains = [
   { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/dmt-ve-r-30844-ex" },
   { part = "part/kyosho/1-W260705", role = "kit", source = "doc/kyosho/dmt-ve-r-30844-ex" },
@@ -99,4 +101,11 @@ contains = [
   { part = "part/kyosho/BRG006TS", role = "option", source = "doc/kyosho/dmt-ve-r-30844-op" },
   { part = "part/kyosho/BRG008TS", role = "option", source = "doc/kyosho/dmt-ve-r-30844-op" },
   { part = "part/kyosho/ISH050W", role = "option", source = "doc/kyosho/dmt-ve-r-30844-op" },
+  { part = "part/kyosho/IF346-04L", role = "option", source = "doc/kyosho/dmt-ve-r-30844-op" },
+  { part = "part/kyosho/IS106-816", role = "option", source = "doc/kyosho/dmt-ve-r-30844-op" },
+  { part = "part/kyosho/IS106-916", role = "option", source = "doc/kyosho/dmt-ve-r-30844-op" },
+  { part = "part/kyosho/IS106-1016", role = "option", source = "doc/kyosho/dmt-ve-r-30844-op" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30844.html"

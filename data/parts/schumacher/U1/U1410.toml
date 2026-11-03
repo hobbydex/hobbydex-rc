@@ -1,0 +1,16 @@
+id = "part/schumacher/U1410"
+brand = "brand/schumacher"
+number = "U1410"
+name = "Ball Bearing - 10x15x4 Yellow (pr)"
+name_source = "manufacturer"
+seen_by = "2014-06-03"
+seen_by_source = "https://web.archive.org/web/20140603065706/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=686&templateid=69&sortname1=partno"
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+documents = ["doc/schumacher/mi1-spares-archive"]
+category = "bearing"
+color = "yellow"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

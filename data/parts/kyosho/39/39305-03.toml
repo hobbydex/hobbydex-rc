@@ -1,0 +1,14 @@
+id = "part/kyosho/39305-03"
+brand = "brand/kyosho"
+number = "39305-03"
+name = "Spur Gear L (43T)"
+name_ja = "スパーギヤL(43T)"
+name_source = "manual"
+gtin = "4955439660584"
+documents = ["doc/kyosho/gp-alpha3-060322", "doc/kyosho/v-one-s-060322"]
+category = "gear"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/v-one-s", type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE S (option part) in Kyosho's V-ONE S series parts acceptable list" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-gp-alpha3"], type = "replaces", source = "doc/kyosho/gp-alpha3-060322", notes = "Marked for the Pure Ten GP alpha 3 (option part) in Kyosho's Pure Ten GP alpha 3 parts acceptable list" },
+]

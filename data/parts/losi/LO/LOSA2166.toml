@@ -2,8 +2,15 @@ id = "part/losi/LOSA2166"
 brand = "brand/losi"
 number = "LOSA2166"
 name = "Inner Rear Hinge Pin"
+status = "discontinued"
+seen_by = "2015-05-02"
+seen_by_source = "https://web.archive.org/web/20150502005259/http://losi.com/ProdInfo/LOS/100/LOSA2166-100.jpg"
 gtin = "660132009885"
 applies_to = "XXX-SCT/SCB"
+fits = [
+  { kit = "kit/losi/xxx-sct", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the Losi XXX-SCT (link_car_kits.py)" },
+  { kit = "kit/losi/xxx-scb", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the Losi XXX-SCB (link_car_kits.py)" },
+]
 links = [
   { site = "Losi", url = "https://www.losi.com/product/losi-inner-rear-hinge-pin-xxx-sct-scb/LOSA2166.html" },
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-inner-rear-hinge-pin-xxx-sct-scb/LOSA2166.html" },

@@ -5,6 +5,11 @@ name = "Front Spring(4.5-1.6/Light Blue/φ1.3/2P)"
 gtin = "4955439070338"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 category = "shock-spring"
-documents = ["doc/kyosho/31262-v-one-rrr-evo2-m"]
+documents = ["doc/kyosho/31262-v-one-rrr-evo2-m", "doc/kyosho/vz242-4516-product-page"]
 name_source = "manufacturer"
 color = "light blue"
+fits = [
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/31265-t01-v-one-r4-op" },
+  { kit = "kit/kyosho/v-one-sr", type = "direct", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
+]

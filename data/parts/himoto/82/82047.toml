@@ -1,0 +1,13 @@
+id = "part/himoto/82047"
+brand = "brand/himoto"
+number = "82047"
+name = "Button Head Metric Hex Screw 3*20"
+category = "screw"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/drekkar", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/drekkar-1-10-electric", type = "direct", source = "doc/himoto/option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x20-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -1,0 +1,23 @@
+id = "part/ruddog/RP-0008"
+brand = "brand/ruddog"
+number = "RP-0008"
+name = "RP540 7.5T 540 Sensored Brushless Motor"
+category = "motor"
+motor_type = "brushless"
+gtin = "4052133005120"
+documents = ["doc/ruddog/store"]
+sensored = true
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-RP540-75T-540-Sensored-Brushless-Motor_1" },
+]
+turns = 7.5
+shaft_mm = 3.175
+kv = 4700
+diameter_mm = 36
+length_mm = 51.75
+lipo_cells = [2, 2]
+power_w = 360
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Can class from the maker's case size and shaft" },
+]
+range = "ruddog/rp540-540-sensored-brushless-motor"

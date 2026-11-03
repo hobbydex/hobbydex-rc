@@ -2,11 +2,14 @@ id = "part/kyosho/VSW012"
 brand = "brand/kyosho"
 number = "VSW012"
 name = "Aluminum Center Strut"
+gtin = "4955439767931"
 fits = [
   { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31480jp-fw05ske-p" },
   { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/31584-fw05rr-kce-m" },
   { kit = "kit/kyosho/fw-05r", type = "replaces", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
 ]
 material = "aluminium"
 category = "suspension"
-documents = ["doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/31483-fw05s-p", "doc/kyosho/31581-fw05r-p"]
+documents = ["doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/31483-fw05s-p", "doc/kyosho/31581-fw05r-p", "doc/kyosho/fw-05-060322"]

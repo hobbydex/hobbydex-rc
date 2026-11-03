@@ -7,8 +7,10 @@ seen_by_source = "doc/kyosho/31584-fw05rr-kce-m"
 gtin = "4955439796597"
 fits = [
   { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/31584-fw05rr-kce-m" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rrr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RRR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 category = "steering"
 material = "carbon"
-documents = ["doc/kyosho/31584-fw05rr-kce-m"]
+documents = ["doc/kyosho/31584-fw05rr-kce-m", "doc/kyosho/vsw042-product-page", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-rrr-060322"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/vsw042.html" } ]

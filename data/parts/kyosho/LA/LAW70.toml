@@ -7,6 +7,11 @@ seen_by_source = "doc/kyosho/law70-ld-carbon-front-shock-stay"
 gtin = "4548565360635"
 name_ja = "LDカーボンフロントダンパーステー"
 category = "chassis"
-documents = ["doc/kyosho/law70-ld-carbon-front-shock-stay"]
+documents = ["doc/kyosho/law70-ld-carbon-front-shock-stay", "doc/kyosho/law70-product-page"]
 material = "carbon"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/law70.html" } ]
+fits = [
+  { kit = "kit/kyosho/lazer-zx6", type = "direct", source = "doc/kyosho/law70-product-page", notes = "Listed on the maker's Compatible Kits page" },
+  { kit = "kit/kyosho/lazer-zx6-6", type = "direct", source = "doc/kyosho/law70-product-page", notes = "Listed on the maker's Compatible Kits page" },
+  { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/law70-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

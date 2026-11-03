@@ -2,7 +2,6 @@ id = "part/mugen/K0603-1"
 brand = "brand/mugen"
 number = "K0603-1"
 name = "BEARING (10x15)"
-pack_qty = 10
 notes = "Mugen prints the number as K0603/1"
 fits = [
   { kit = "kit/mugen/mrx5", type = "direct", source = "doc/mugen/mrx5-wc-part-list", notes = "Also listed by doc/mugen/mrx5-part-list" },
@@ -14,7 +13,7 @@ fits = [
   { kit = "kit/mugen/msx3", type = "direct", source = "doc/mugen/msx3-part-list" },
 ]
 category = "bearing"
-documents = ["doc/mugen/mrx5-part-list", "doc/mugen/mrx5-wc-part-list", "doc/mugen/msx3-part-list"]
+documents = ["doc/mugen/mrx5-part-list", "doc/mugen/mrx5-wc-part-list", "doc/mugen/msx3-part-list", "doc/mugen/mtx-2-part-list"]
 equivalent_to = [
-  { spec = "spec/bearing/10x15x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 10x15 bearing (6700)" },
+  { spec = "spec/bearing/10x15x4", match = "close", source = "doc/mugen/mtx-2-part-list", notes = "Width stated by the MTX-2 parts list: K0603/1 BEARINGS (10x15x4)" },
 ]

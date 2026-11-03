@@ -1,0 +1,25 @@
+id = "part/dromida/DIDC1035"
+brand = "brand/dromida"
+number = "DIDC1035"
+name = "Hinge Pin 2x36.5mm"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dromida-hinge-pin-2x36.5mm-4-bx-mt-sc-4.18/DIDC1035.html" },
+]
+pack_qty = 4
+pack_qty_basis = "page"
+applies_to = "BX MT SC 4.18"
+gtin = "707768210350"
+category = "pin"
+fits = [
+  { kit = "kit/dromida/bx4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
+  { kit = "kit/dromida/db4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
+  { kit = "kit/dromida/dt4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
+  { kit = "kit/dromida/mt4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
+  { kit = "kit/dromida/rally-car", type = "direct", source = "doc/dromida/horizon-part-pages" },
+  { kit = "kit/dromida/sc4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
+  { kit = "kit/dromida/touring-car", type = "direct", source = "doc/dromida/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/pin/2x36.5", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

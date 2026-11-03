@@ -2,11 +2,15 @@ id = "part/kyosho/MZ405"
 brand = "brand/kyosho"
 number = "MZ405"
 name = "Servo Saver Assembly (MR-03)"
+seen_by = "2014-07-19"
+seen_by_source = "https://web.archive.org/web/20140719032953/http://kyosho.com/jpn/products/rc/parts_images/MZ405.jpg"
 gtin = "4548565144297"
 category = "steering"
+documents = ["doc/kyosho/mz405-product-page"]
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-spare-and-option-parts" },
   { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
+  { kit = "kit/kyosho/mini-z-mr-04evo2", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mz405.html" },

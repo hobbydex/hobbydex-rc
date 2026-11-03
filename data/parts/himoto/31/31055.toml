@@ -1,0 +1,20 @@
+id = "part/himoto/31055"
+brand = "brand/himoto"
+number = "31055"
+name = "Button Head Screws 3X16"
+category = "screw"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/bowie", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/bowie-pro", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/dirt-wrip", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/hammer", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/katana", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/road-warrior", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/spatha", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/tanto", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/tricer", type = "direct", source = "doc/himoto/option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,13 +2,17 @@ id = "part/kyosho/39214"
 brand = "brand/kyosho"
 number = "39214"
 name = "SUBARU IMPREZA Body Set"
+seen_by = "2022-01-29"
+seen_by_source = "https://web.archive.org/web/20220129104252/http://www.kyosho.com/jpn/support/instructionmanual/pureten_fazer/pdf/39214_subaru_impreza_wrc2006_BodyShell"
 gtin = "4548565365562"
 name_ja = "SUBARU インプレッサ ボディセット"
 category = "body"
+documents = ["doc/kyosho/39214-product-page"]
 depicts = { make = "Subaru", model = "Impreza" }
 fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "replaces", source = "doc/kyosho/34421-acura-nsx-gt3-spop" },
   { kit = "kit/kyosho/v-one-r4", type = "replaces", source = "doc/kyosho/33215-v-one-r4sii-kce-spop" },
+  { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/fw-06-kt-231p-spop-2" },
 ]
 scale = "1/10"
 links = [

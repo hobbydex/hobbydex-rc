@@ -1,10 +1,16 @@
 id = "part/jconcepts/9122"
 brand = "brand/jconcepts"
 number = "9122"
-name = "9122"
+name = "REACTOR PIN (1.6 x 10)"
 seen_by = "2026-03-10"
 seen_by_source = "https://web.archive.org/web/20260310090912/https://jconcepts.net/pin-16-x-10-4pc"
-notes = "Shown by number only in the manual"
+notes = "Shown by number only in the manual; Named on the maker's own product page (archived copy)"
 links = [ { site = "JConcepts", url = "https://jconcepts.net/pin-16-x-10-4pc" } ]
-category = "misc"
-category_source = "fallback"
+category = "pin"
+name_source = "manufacturer"
+pack_qty = 4
+pack_qty_basis = "name"
+documents = ["doc/jconcepts/REACTOR_Instruction_Manual-V4_2"]
+equivalent_to = [
+  { spec = "spec/pin/1.6x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

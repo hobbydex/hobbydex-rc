@@ -2,6 +2,11 @@ id = "part/schumacher/U7088"
 brand = "brand/schumacher"
 number = "U7088"
 name = "Ball Bearing 5x10x4 Red Seal FL - (pr)"
+gtin = "5051294116347"
 category = "bearing"
 color = "red"
 documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/ball-bearing-5x10x4-red-seal-fl-pr-u7088" } ]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

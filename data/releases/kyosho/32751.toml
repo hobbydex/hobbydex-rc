@@ -6,7 +6,7 @@ name = "MINI-Z MR-03 Red Limitd"
 gtin = "4548565172351"
 name_ja = "MINI-Z MR-03 Red Limited"
 kind = "rtr"
-status = "released"
+status = "discontinued"
 seen_by = "2010-12"
 seen_by_source = "doc/kyosho/32751-mr03-red-limited-im"
 documents = ["doc/kyosho/32751-mr03-red-limited-im", "doc/kyosho/32751-mr03-tikitiki-extra", "doc/kyosho/32751-product-page"]
@@ -29,3 +29,6 @@ contains = [
   { part = "part/kyosho/MZW412-1", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
   { part = "part/kyosho/MZW420", role = "kit", source = "doc/kyosho/32751-mr03-red-limited-im" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/32751.html"

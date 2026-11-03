@@ -5,8 +5,11 @@ name = "Starter Wiring Unit"
 gtin = "4955439739600"
 fits = [
   { kit = "kit/kyosho/megaforce", type = "replaces", source = "doc/kyosho/31181-megaforce-p" },
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (standard part) in Kyosho's V-ONE S series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (standard part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 category = "wire"
+documents = ["doc/kyosho/74002-product-page", "doc/kyosho/v-one-s-060322"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/74002.html" },
 ]

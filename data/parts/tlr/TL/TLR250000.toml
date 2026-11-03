@@ -2,10 +2,14 @@ id = "part/tlr/TLR250000"
 brand = "brand/tlr"
 number = "TLR250000"
 name = "Spark Plug Protector"
+status = "discontinued"
 seen_by = "2025-09-11"
 seen_by_source = "https://web.archive.org/web/20250911205006/https://www.tlracing.com/product/spark-plug-protector-5ive-b/TLR250000.html"
 gtin = "605482627723"
 applies_to = "5IVE B"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5IVE B (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-spark-plug-protector-5ive-b/TLR250000.html" },
 ]

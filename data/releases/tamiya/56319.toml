@@ -3,11 +3,13 @@ kit = "kit/tamiya/reefer-semi-trailer"
 brand = "brand/tamiya"
 number = "56319"
 name = "3-Axle Reefer Semi-Trailer"
+gtin = "4950344563197"
 year = 2008
 kind = "kit"
 status = "released"
 documents = ["doc/tamiya/56319-product-page", "doc/tamiya/newitems-month", "doc/tamiya/56319-manual", "doc/tamiya/tamico-dealer-parts", "doc/tamiya/56319-manual-usa"]
 released = "2008-03"
+released_source = "doc/tamiya/newitems-month"
 contains = [
   { part = "part/tamiya/10004707", role = "kit", source = "doc/tamiya/56319-manual", notes = "Kit needs 4 of this pack" },
   { part = "part/tamiya/10005500", role = "kit", source = "doc/tamiya/56319-manual" },
@@ -48,7 +50,6 @@ contains = [
   { part = "part/tamiya/19400707", role = "kit", source = "doc/tamiya/56319-manual", step = "BT1, BT2" },
   { part = "part/tamiya/19400708", role = "kit", source = "doc/tamiya/56319-manual" },
   { part = "part/tamiya/19443023", role = "kit", source = "doc/tamiya/56319-manual" },
-  { part = "part/tamiya/19465738", role = "kit", source = "doc/tamiya/56319-manual", step = "BA1, BA6" },
   { part = "part/tamiya/19465740", role = "kit", source = "doc/tamiya/56319-manual", step = "BB1, BB6" },
   { part = "part/tamiya/19465741", role = "kit", source = "doc/tamiya/56319-manual", step = "BC1, BC7" },
   { part = "part/tamiya/19465742", role = "kit", source = "doc/tamiya/56319-manual", step = "BD1, BD7" },
@@ -97,6 +98,7 @@ contains = [
   { part = "part/tamiya/19335504", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/56502", role = "listed", source = "doc/tamiya/56319-manual-usa" },
   { part = "part/tamiya/56505", role = "listed", source = "doc/tamiya/56319-manual-usa" },
+  { part = "part/tamiya/19465739", role = "kit", source = "doc/tamiya/56319-manual", step = "BA1, BA6" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56319", kind = "fan-site" },

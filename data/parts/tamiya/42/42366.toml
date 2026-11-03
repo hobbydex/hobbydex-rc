@@ -2,12 +2,13 @@ id = "part/tamiya/42366"
 brand = "brand/tamiya"
 number = "42366"
 name = "1050 Ball Bearing"
+gtin = "4950344423668"
 seen_by = "2023-02-09"
 seen_by_source = "https://web.archive.org/web/20230209194534/https://www.tamiya.com/english/products/42366/top.jpg"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 equivalent_to = [
-  { spec = "spec/bearing/5x10x4", match = "close", notes = "Tamiya size code 1050: 10 mm outer, 5 mm bore, 4 mm wide (usual width for this size, not confirmed for Tamiya)" },
+  { spec = "spec/bearing/5x10x4", match = "exact", notes = "Tamiya size code 1050: 5x10x4 mm bore x outer x width as the Tamiya page states it", source = "doc/tamiya/42220-product-page-de" },
 ]
 category = "bearing"
 fits = [

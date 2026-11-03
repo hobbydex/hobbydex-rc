@@ -1,0 +1,16 @@
+id = "part/tekno/TKR6143"
+brand = "brand/tekno"
+number = "TKR6143"
+name = "Shock Boots, Medium, Front, 107mm"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-shock-boots-medium-front-107mm-2-eb-nb-sct/TKR6143.html", kind = "dealer" },
+]
+pack_qty = 2
+pack_qty_basis = "page"
+applies_to = "EB/NB/SCT"
+gtin = "815076015694"
+category = "o-ring-seal"
+fits = [
+  { kit = "kit/tekno/eb48sl", releases = ["release/tekno/eb48sl"], type = "direct", source = "doc/tekno/eb48sl-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410-3", releases = ["release/tekno/sct410-3"], type = "direct", source = "doc/tekno/sct410-3-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

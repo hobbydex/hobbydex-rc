@@ -2,8 +2,14 @@ id = "part/losi/LOSB3410"
 brand = "brand/losi"
 number = "LOSB3410"
 name = "2-Speed Low Gear Hub with 1-Way"
+status = "discontinued"
+seen_by = "2008-11-18"
+seen_by_source = "https://web.archive.org/web/20081118064905/http://www.losi.com/ProdInfo/LOS/100/LOSB3410-100.jpg"
 gtin = "605482137420"
 applies_to = "LST, LST2"
+fits = [
+  { kit = "kit/losi/lst2", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the LST2 (link_car_kits.py)" },
+]
 links = [
   { site = "Losi", url = "https://www.losi.com/product/losi-2-speed-low-gear-hub-with-1-way-lst-lst2/LOSB3410.html" },
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-2-speed-low-gear-hub-with-1-way-lst-lst2/LOSB3410.html" },

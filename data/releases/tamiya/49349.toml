@@ -10,6 +10,7 @@ notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from Tami
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/49349", kind = "fan-site" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/downloads/download-categories/download/25-49xxx-kit-manuals-pdf/88876-manual-49349", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20171121140722/http://www.tamiya.com:80/english/products/49349trf415ms/index.htm", kind = "archive", gone = "2026-10-20" },
 ]
 released = "2004-11-25"
 released_source = "TamiyaBase"
@@ -150,6 +151,7 @@ contains = [
   { part = "part/tamiya/53706", role = "kit", source = "doc/tamiya/49349-manual-usa" },
   { part = "part/tamiya/53707", role = "kit", source = "doc/tamiya/49349-manual-usa" },
   { part = "part/tamiya/53724", role = "kit", source = "doc/tamiya/49349-manual-usa", qty = 2, step = "BU5" },
+  { part = "part/tamiya/53417", role = "listed", source = "doc/tamiya/trf415ms-manual" },
 ]
 documents = ["doc/tamiya/49349-manual-usa", "doc/tamiya/trf415ms-manual"]
 

@@ -1,0 +1,17 @@
+id = "part/tekno/TKR9161"
+brand = "brand/tekno"
+number = "TKR9161"
+name = "Hinge Pin Brace, 7075 A Block"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-hinge-pin-brace-7075-a-block-eb-nb48-2.0/TKR9161.html", kind = "dealer" },
+]
+applies_to = "EB/NB48 2.0"
+gtin = "815076019777"
+category = "pin"
+fits = [
+  { kit = "kit/tekno/eb48", releases = ["release/tekno/eb48-2-2"], type = "direct", source = "doc/tekno/eb48-2-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/mt410", releases = ["release/tekno/tkr9501"], type = "direct", source = "doc/tekno/mt410-2-0-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48", releases = ["release/tekno/tkr9305"], type = "direct", source = "doc/tekno/nb48-2-2-manual-rev02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410", releases = ["release/tekno/tkr9500"], type = "direct", source = "doc/tekno/sct410-2-0-manual-rev02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

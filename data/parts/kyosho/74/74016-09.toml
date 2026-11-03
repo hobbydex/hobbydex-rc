@@ -8,3 +8,10 @@ links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/74016-09.html" },
 ]
 category = "engine-fuel"
+fits = [
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31047-drx-parts-list-v01" },
+  { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (standard part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 Ready Set (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (standard part) in Kyosho's V-ONE S series parts acceptable list" },
+]
+documents = ["doc/kyosho/fw-05-060322", "doc/kyosho/tr15-060322", "doc/kyosho/v-one-s-060322"]

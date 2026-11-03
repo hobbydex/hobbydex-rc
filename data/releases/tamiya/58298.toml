@@ -10,6 +10,7 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58298", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20130412234824/http://www.tamiya.com:80/english/products/58298enzo/index.htm", kind = "archive", gone = "2026-10-20" },
 ]
 released = "2002-11-12"
 released_source = "TamiyaBase"
@@ -17,17 +18,14 @@ year = 2002
 contains = [
   { part = "part/tamiya/10005758", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/58298-manual-de" },
-  { part = "part/tamiya/10335100", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/10445984", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/11050184", role = "kit", source = "doc/tamiya/58298-manual-de" },
-  { part = "part/tamiya/11825258", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/12220001", role = "kit", source = "doc/tamiya/58298-manual-de", qty = 1, step = "MC8" },
   { part = "part/tamiya/12500024", role = "kit", source = "doc/tamiya/58298-manual-de", qty = 1, step = "MA8", notes = "Kit needs 4 of this pack" },
   { part = "part/tamiya/13455323", role = "kit", source = "doc/tamiya/58298-manual-de", qty = 1, step = "MC15" },
   { part = "part/tamiya/13455482", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/58298-manual-de", step = "MC21" },
   { part = "part/tamiya/16095003", role = "kit", source = "doc/tamiya/58298-manual-de" },
-  { part = "part/tamiya/16275067", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/17435044", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/19005710", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/19415631", role = "kit", source = "doc/tamiya/58298-manual-de" },
@@ -99,5 +97,8 @@ contains = [
   { part = "part/tamiya/53113", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/53345", role = "kit", source = "doc/tamiya/58298-manual-de" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/58298-manual-de" },
+  { part = "part/tamiya/11825256", role = "kit", source = "doc/tamiya/58298-manual-de" },
+  { part = "part/tamiya/10335180", role = "kit", source = "doc/tamiya/58298-manual-de" },
+  { part = "part/tamiya/16275057", role = "kit", source = "doc/tamiya/58298-manual-de" },
 ]
 documents = ["doc/tamiya/58298-manual-de"]

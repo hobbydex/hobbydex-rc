@@ -5,6 +5,7 @@ name = "Tires & wheels, assembled, glued (S1 compound) (SCT Split-Spoke satin ch
 seen_by = "2024-02-27"
 seen_by_source = "https://web.archive.org/web/20240227223319/https://traxxas.com/products/parts/5975X"
 pack_qty = 2
+pack_qty_basis = "page"
 category = "tire"
 vehicle = "short-course"
 position = "front-rear"
@@ -14,3 +15,7 @@ fits = [
   { kit = "kit/traxxas/slayer-pro-4x4", type = "replaces", source = "doc/traxxas/59076-3-parts-list" },
 ]
 documents = ["doc/traxxas/59076-3-parts-list"]
+links = [
+  { site = "Traxxas (Internet Archive)", url = "https://web.archive.org/web/20240227223319/https://traxxas.com/products/parts/5975X", kind = "archive" },
+]
+compound = "S1"

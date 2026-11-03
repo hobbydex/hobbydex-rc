@@ -1,8 +1,13 @@
 id = "part/hobao/39019"
 brand = "brand/hobao"
 number = "39019"
-name = "39019"
-notes = "Labelled by number only in the HoBao documents"
+name = "E-clips 2.3*0.8th"
 documents = ["doc/hobao/cml-hyper-12-mini-st-parts-list"]
-category = "misc"
-category_source = "fallback"
+category = "clip"
+name_source = "manufacturer"
+links = [
+  { site = "HoBao", url = "https://hobaorc.myshopify.com/products/39019-e-clips-2-3-0-8th" },
+]
+equivalent_to = [
+  { spec = "spec/eclip/2.3mm-0.8", match = "functional", notes = "Shaft size from the name; the clip's thickness is the spec's" },
+]

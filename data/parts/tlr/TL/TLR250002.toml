@@ -2,13 +2,18 @@ id = "part/tlr/TLR250002"
 brand = "brand/tlr"
 number = "TLR250002"
 name = "1/5 Clear Body with Window Mask"
+status = "discontinued"
 seen_by = "2021-09-01"
 seen_by_source = "https://web.archive.org/web/20210901223508/http://www.tlracing.com/ProdInfo/TLR/100/TLR250002-100.jpg"
 gtin = "605482627808"
 applies_to = "5IVE-B"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5IVE-B (link_car_kits.py)" },
+]
 color = "clear"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-1-5-clear-body-with-window-mask-5ive-b/TLR250002.html" },
 ]
 category = "body"
 scale = "1/5"
+material = "plastic"

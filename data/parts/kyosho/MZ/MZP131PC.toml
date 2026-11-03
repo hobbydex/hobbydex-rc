@@ -2,11 +2,14 @@ id = "part/kyosho/MZP131PC"
 brand = "brand/kyosho"
 number = "MZP131PC"
 name = "AutoScale Honda NSX TOCHIGI POLICE HIGHWAY PATROL"
+seen_by = "2014-07-19"
+seen_by_source = "https://web.archive.org/web/20140719040049/http://kyosho.com/jpn/products/rc/parts_images/MZP131PC.jpg"
 gtin = "4548565200016"
-seen_by = "2018-11-07"
-seen_by_source = "https://web.archive.org/web/20181107192453/https://rc.kyosho.com/en/rccar/miniz/asc.html?p=4"
 documents = ["doc/kyosho/mzp131pc-product-page"]
 category = "body"
 category_source = "curated"
 scale = "1/27"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp131pc.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03-n-rm", type = "direct", source = "doc/kyosho/mzp131pc-product-page" },
+]

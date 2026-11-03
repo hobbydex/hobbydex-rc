@@ -5,10 +5,11 @@ number = "30832T1"
 name = "SANDMASTER Kit (Red)"
 year = 2012
 released = "2012-06"
+released_source = "https://rc.kyosho.com/en/30832t1.html"
 gtin = "4548565202874"
 name_ja = "サンドマスター キット"
 kind = "kit"
-status = "released"
+status = "discontinued"
 color = "red"
 documents = ["doc/kyosho/30832t02-sandmaster-spop", "doc/kyosho/30832t02-sandmaster-ex", "doc/kyosho/30832t02-sandmaster-im", "doc/kyosho/30832t1-product-page"]
 contains = [
@@ -77,4 +78,9 @@ contains = [
   { part = "part/kyosho/W5201", role = "option", source = "doc/kyosho/30832t02-sandmaster-spop" },
   { part = "part/kyosho/W5181-09", role = "option", source = "doc/kyosho/30832t02-sandmaster-spop" },
   { part = "part/kyosho/EZ005", role = "listed", source = "doc/kyosho/30832t02-sandmaster-ex" },
+  { part = "part/kyosho/FAH201BK", role = "option", source = "doc/kyosho/30832t02-sandmaster-spop" },
+  { part = "part/kyosho/W5196V", role = "option", source = "doc/kyosho/30832t02-sandmaster-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30832t1.html"

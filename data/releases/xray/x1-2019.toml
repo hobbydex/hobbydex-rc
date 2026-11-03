@@ -5,8 +5,12 @@ name = "X1'19"
 model_year = 2019
 kind = "kit"
 status = "discontinued"
+year = 2018
+released = "2018-11-09"
+released_source = "doc/xray/news-2018-11-09-x1-19-online-now"
+notes = "Release date from the news of 2018-11-09"
 supersedes = "release/xray/x1-2018"
-documents = ["doc/xray/x1-2019-exploded-view", "doc/xray/x1-2019-manual", "doc/xray/x1-2019-part-list", "doc/xray/x1-2019-setup-sheet-2", "doc/xray/x1-2019-setup-sheet", "doc/xray/x1-2019-product-page"]
+documents = ["doc/xray/x1-2019-exploded-view", "doc/xray/x1-2019-manual", "doc/xray/x1-2019-part-list", "doc/xray/x1-2019-setup-sheet-2", "doc/xray/x1-2019-setup-sheet", "doc/xray/x1-2019-product-page", "doc/xray/news-2018-11-09-x1-19-online-now"]
 number = "370704"
 contains = [
   { part = "part/hudy/102003", role = "option", source = "doc/xray/x1-2019-part-list" },
@@ -384,4 +388,19 @@ contains = [
   { part = "part/xray/972030", role = "kit", source = "doc/xray/x1-2019-manual" },
   { part = "part/xray/980210", role = "listed", source = "doc/xray/x1-2019-part-list" },
   { part = "part/xray/981214", role = "kit", source = "doc/xray/x1-2019-manual" },
+  { part = "part/hudy/106515", role = "option", source = "doc/xray/x1-2019-manual" },
+  { part = "part/hudy/106520", role = "option", source = "doc/xray/x1-2019-manual" },
+  { part = "part/hudy/106530", role = "option", source = "doc/xray/x1-2019-manual" },
+  { part = "part/hudy/106540", role = "option", source = "doc/xray/x1-2019-manual" },
+  { part = "part/hudy/106550", role = "option", source = "doc/xray/x1-2019-manual" },
+  { part = "part/xray/302612", role = "kit", source = "doc/xray/x1-2019-manual" },
+  { part = "part/xray/302652", role = "kit", source = "doc/xray/x1-2019-manual" },
+  { part = "part/xray/303127", role = "kit", source = "doc/xray/x1-2019-manual" },
+  { part = "part/xray/308327", role = "kit", source = "doc/xray/x1-2019-manual" },
+  { part = "part/xray/373073", role = "kit", source = "doc/xray/x1-2019-manual" },
+  { part = "part/xray/375050", role = "kit", source = "doc/xray/x1-2019-manual" },
+  { part = "part/xray/375090", role = "kit", source = "doc/xray/x1-2019-manual" },
+  { part = "part/hudy/803070", role = "option", source = "doc/xray/x1-2019-manual" },
+  { part = "part/hudy/803080", role = "option", source = "doc/xray/x1-2019-manual" },
+  { part = "part/xray/981210", role = "kit", source = "doc/xray/x1-2019-manual" },
 ]

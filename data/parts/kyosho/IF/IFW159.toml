@@ -2,8 +2,10 @@ id = "part/kyosho/IFW159"
 brand = "brand/kyosho"
 number = "IFW159"
 name = "Radio Plate (ST-R)"
+gtin = "4955439065723"
 fits = [
   { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31352-infst-r-p" },
+  { kit = "kit/kyosho/inferno-mp777", type = "replaces", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the MP-777 (option part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
 ]
 category = "chassis"
-documents = ["doc/kyosho/31352-infst-r-p"]
+documents = ["doc/kyosho/31352-infst-r-p", "doc/kyosho/mp75-777-060322"]

@@ -2,6 +2,9 @@ id = "part/kyosho/W0141V"
 brand = "brand/kyosho"
 number = "W0141V"
 name = "Tapered Washer"
+gtin = "4955439755754"
+pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/inferno-neo-2-0", type = "direct", source = "doc/kyosho/31684-mm01-inferno-neo-2-spop" },
   { kit = "kit/kyosho/inferno-ve", type = "direct", source = "doc/kyosho/30875-inferno-ve-im-p" },
@@ -29,6 +32,8 @@ fits = [
   { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-op" },
   { kit = "kit/kyosho/mfr", type = "direct", source = "doc/kyosho/31183-mfr-mm-p" },
   { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-p" },
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 category = "washer-shim"
-documents = ["doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30522-b-twinforcecsp-p", "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop"]
+documents = ["doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30522-b-twinforcecsp-p", "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop", "doc/kyosho/inferno-gt-060322", "doc/kyosho/v-one-s-060322"]

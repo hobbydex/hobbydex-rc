@@ -1,0 +1,21 @@
+id = "part/nosram/999740"
+brand = "brand/nosram"
+number = "999740"
+name = "1/12 Ultra LCG GRAPHENE-4.1 8100mAh Hardcase Battery - 3.7V LiPo - 120C / 60C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999740/" },
+]
+chemistry = "lipo"
+cells = 1
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-8100mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 8100
+c_rating = 120
+case = "hard"
+dimensions_mm = [93, 47, 18.5]
+weight_g = 155
+connector = "4mm bullet"
+voltage = 3.7

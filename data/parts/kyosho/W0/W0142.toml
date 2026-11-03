@@ -13,8 +13,12 @@ fits = [
   { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31287-evolvam3-evo-t" },
   { kit = "kit/kyosho/twin-force", type = "direct", source = "doc/kyosho/30521-b-twinforce-p" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (standard part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/lazer-zx-5-060322", notes = "Marked for the Lazer ZX-5 (option part) in Kyosho's Lazer ZX-5 parts acceptable list" },
+  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (option part) in Kyosho's Monster Truck parts acceptable list" },
 ]
 category = "washer-shim"
+documents = ["doc/kyosho/w0142-product-page", "doc/kyosho/fw-05-060322", "doc/kyosho/lazer-zx-5-060322", "doc/kyosho/monstertruck-060322"]
 equivalent_to = [
   { spec = "spec/washer/3x6x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

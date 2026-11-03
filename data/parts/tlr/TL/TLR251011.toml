@@ -2,10 +2,14 @@ id = "part/tlr/TLR251011"
 brand = "brand/tlr"
 number = "TLR251011"
 name = "Side Guard Set (Left and Right)"
+status = "discontinued"
 seen_by = "2025-05-15"
 seen_by_source = "https://web.archive.org/web/20250515065948/https://www.tlracing.com/product/side-guard-set-left-and-right-5ive-b/TLR251011.html"
 gtin = "605482627822"
 applies_to = "5IVE B"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5IVE B (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-side-guard-set-left-and-right-5ive-b/TLR251011.html" },
 ]

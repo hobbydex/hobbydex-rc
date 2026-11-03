@@ -8,3 +8,7 @@ pack_qty = 10
 pack_qty_basis = "name"
 category = "bearing"
 documents = ["doc/tamiya/57601-manual-de"]
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "close", notes = "A plain plastic bushing, Tamiya size 1150; the 5x11x4 ball bearing replaces it" },
+]
+material = "plastic"

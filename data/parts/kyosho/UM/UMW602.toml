@@ -2,11 +2,12 @@ id = "part/kyosho/UMW602"
 brand = "brand/kyosho"
 number = "UMW602"
 name = "Ball Differential Set"
+gtin = "4548565155033"
 seen_by = "2010-02"
 seen_by_source = "doc/kyosho/umw602-ball-differential-set"
 name_ja = "ボールデフセット"
 category = "differential"
-documents = ["doc/kyosho/umw602-ball-differential-set"]
+documents = ["doc/kyosho/umw602-ball-differential-set", "doc/kyosho/vintage-160304-2-jp"]
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "replaces", source = "doc/kyosho/30068-t03-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "replaces", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
@@ -15,4 +16,7 @@ fits = [
   { kit = "kit/kyosho/ultima-db", type = "replaces", source = "doc/kyosho/30856-ultima-db-rs-p" },
   { kit = "kit/kyosho/ultima-rt6", type = "replaces", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
   { kit = "kit/kyosho/ultima-sc6", type = "direct", source = "doc/kyosho/30070-ultima-sc6-spop" },
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]

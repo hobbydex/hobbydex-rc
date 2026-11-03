@@ -2,10 +2,14 @@ id = "part/tlr/TLR256000"
 brand = "brand/tlr"
 number = "TLR256000"
 name = "Steering Linkage Set"
+status = "discontinued"
 seen_by = "2025-09-11"
 seen_by_source = "https://web.archive.org/web/20250911214341/https://www.tlracing.com/product/steering-linkage-set-5ive-b/TLR256000.html"
 gtin = "605482619650"
 applies_to = "5IVE B"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5IVE B (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-steering-linkage-set-5ive-b/TLR256000.html" },
 ]

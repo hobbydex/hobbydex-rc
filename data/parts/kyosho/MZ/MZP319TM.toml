@@ -2,11 +2,16 @@ id = "part/kyosho/MZP319TM"
 brand = "brand/kyosho"
 number = "MZP319TM"
 name = "AutoScale OPEN INTERFACE TOM'S SC430"
-seen_by = "2017-02-16"
-seen_by_source = "https://web.archive.org/web/20170216090048/https://rc.kyosho.com/en/rccar/miniz/asc.html?p=2"
+seen_by = "2009-07-07"
+seen_by_source = "https://web.archive.org/web/20090707042207/http://www.kyosho.com/jpn/products/rc/parts_images/MZP319TM.jpg"
 gtin = "4548565128433"
 documents = ["doc/kyosho/mzp319tm-product-page"]
 category = "body"
 category_source = "curated"
 scale = "1/27"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp319tm.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-ma-010", type = "direct", source = "doc/kyosho/mzp319tm-product-page" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "direct", source = "doc/kyosho/mzp319tm-product-page", notes = "Chassis variant the product page names (MR-02RM); fitted to its family kit (link_miniz_bodies.py)" },
+  { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/mzp319tm-product-page", notes = "Chassis variant the product page names (MR-03W); fitted to its family kit (link_miniz_bodies.py)" },
+]

@@ -1,0 +1,15 @@
+id = "part/tekno/TKR6544"
+brand = "brand/tekno"
+number = "TKR6544"
+name = "Hinge Pin Inserts and Wheelbase Shims"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-hinge-pin-inserts-and-wheelbase-shims-eb410/TKR6544.html", kind = "dealer" },
+]
+applies_to = "EB410"
+gtin = "815076018640"
+category = "washer-shim"
+fits = [
+  { kit = "kit/tekno/eb410", type = "direct", source = "doc/tekno/eb410instructions-rev2", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/et410", releases = ["release/tekno/et410"], type = "direct", source = "doc/tekno/et410instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

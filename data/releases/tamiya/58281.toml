@@ -11,6 +11,7 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58281", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20160809210715/http://www.tamiyausa.com/product/item.php?product-id=58281", kind = "archive", gone = "2026-10-20" },
 ]
 released = "2001-09-13"
 released_source = "TamiyaBase"
@@ -20,9 +21,7 @@ contains = [
   { part = "part/tamiya/10005758", role = "kit", source = "doc/tamiya/58281-manual-usa" },
   { part = "part/tamiya/10005842", role = "kit", source = "doc/tamiya/58281-manual-usa" },
   { part = "part/tamiya/10115065", role = "kit", source = "doc/tamiya/58281-manual-usa" },
-  { part = "part/tamiya/10335100", role = "kit", source = "doc/tamiya/58281-manual-usa" },
-  { part = "part/tamiya/11050855", role = "kit", source = "doc/tamiya/58281-manual-usa" },
-  { part = "part/tamiya/11825796", role = "kit", source = "doc/tamiya/58281-manual-usa" },
+  { part = "part/tamiya/11050055", role = "kit", source = "doc/tamiya/58281-manual-usa" },
   { part = "part/tamiya/11835088", role = "kit", source = "doc/tamiya/58281-manual-usa" },
   { part = "part/tamiya/11835089", role = "kit", source = "doc/tamiya/58281-manual-usa" },
   { part = "part/tamiya/12500024", role = "kit", source = "doc/tamiya/58281-manual-usa", qty = 1, step = "MA8", notes = "Kit needs 4 of this pack" },
@@ -101,5 +100,7 @@ contains = [
   { part = "part/tamiya/53066", role = "kit", source = "doc/tamiya/58281-manual-usa", qty = 3, step = "MA6" },
   { part = "part/tamiya/53345", role = "kit", source = "doc/tamiya/58281-manual-usa" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/58281-manual-usa" },
+  { part = "part/tamiya/11825196", role = "kit", source = "doc/tamiya/58281-manual-usa" },
+  { part = "part/tamiya/10335180", role = "kit", source = "doc/tamiya/58281-manual-usa" },
 ]
 documents = ["doc/tamiya/58281-manual-usa"]

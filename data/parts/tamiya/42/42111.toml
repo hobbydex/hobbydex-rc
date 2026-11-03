@@ -8,7 +8,7 @@ ocr_names = ["850 Sealed Ball Bearing"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 equivalent_to = [
-  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Tamiya size code 850: 8 mm outer, 5 mm bore, 2.5 mm wide" },
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Tamiya size code 850: 5x8 mm bore x outer; width 2.5 mm per the usual size, not stated by Tamiya" },
 ]
 category = "bearing"
 fits = [

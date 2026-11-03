@@ -5,3 +5,8 @@ name = "SERVO MOUNT PARTS"
 notes = "Revision letter of H0362: the parts lists print it small after the number"
 category = "chassis"
 documents = ["doc/mugen/mrx6x-part-list-ja"]
+pack_qty = 2
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list" },
+]

@@ -2,11 +2,13 @@ id = "part/kyosho/92351"
 brand = "brand/kyosho"
 number = "92351"
 name = "Screw Pin 3x40mm"
+gtin = "4955439657966"
 seen_by = "2008-11"
 seen_by_source = "doc/kyosho/31830-inferno-gt2-chassis-m"
 ocr_names = ["Screw Pin 3x40mm"]
-documents = ["doc/kyosho/31830-inferno-gt2-chassis-m"]
+documents = ["doc/kyosho/31830-inferno-gt2-chassis-m", "doc/kyosho/inferno-gt-060322"]
 fits = [
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31830-inferno-gt2-chassis-p" },
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
 ]
 category = "screw"

@@ -5,11 +5,13 @@ number = "32760"
 name = "Mini-Z MR-03 VE"
 gtin = "4548565215041"
 name_ja = "ミニッツMR-03 VE"
-year = 2016
+year = 2012
+released = "2012-12"
+released_source = "https://rc.kyosho.com/en/32760.html"
 kind = "rtr"
 power = "brushless"
 power_source = "part/kyosho/MZ504"
-status = "released"
+status = "discontinued"
 documents = ["doc/kyosho/32760-mini-z-mr-03-ve-2016-exploded-view", "doc/kyosho/32760-mini-z-mr-03-ve-2016-manual", "doc/kyosho/32760-mini-z-mr-03-ve-2016-spare-and-option-parts", "doc/kyosho/32760-product-page", "doc/kyosho/youtube-oLp1Lyg0-Kc"]
 contains = [
   { part = "part/kyosho/1-S53003", role = "kit", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-exploded-view" },
@@ -38,3 +40,6 @@ contains = [
   { part = "part/kyosho/MZW417", role = "listed", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-manual" },
   { part = "part/kyosho/R246-1802", role = "listed", source = "doc/kyosho/32760-mini-z-mr-03-ve-2016-manual" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/32760.html"

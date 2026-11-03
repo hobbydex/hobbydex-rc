@@ -2,6 +2,7 @@ id = "part/dynamite/DYNB52213"
 brand = "brand/dynamite"
 number = "DYNB52213"
 name = "7.4V 5200mAh 2S 15C Reaction 2.0 LiPo Battery: Universal Receiver"
+status = "discontinued"
 gtin = "605482417362"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-7.4v-5200mah-2s-15c-reaction-2.0-lipo-battery-universal-receiver/DYNB52213.html" },
@@ -10,7 +11,7 @@ category = "battery"
 chemistry = "lipo"
 cells = 2
 balance_connector = "JST-XH"
-balance_connector_basis = "convention"
+balance_connector_basis = "maker"
 voltage = 7.4
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-5200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
@@ -19,3 +20,4 @@ capacity_mah = 5200
 c_rating = 15
 universal = true
 universal_basis = "maker"
+dimensions_mm = [90, 44.5, 22]

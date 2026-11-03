@@ -2,8 +2,19 @@ id = "part/spektrum/SPMXC2040"
 brand = "brand/spektrum"
 number = "SPMXC2040"
 name = "S1400 G2 AC 1x400W Smart Charger"
+status = "discontinued"
 gtin = "605482729205"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-s1400-g2-ac-1x400w-smart-charger/SPMXC2040.html" },
 ]
 category = "charger"
+weight_g = 1015
+dimensions_mm = [145, 144, 105]
+charges = ["lipo", "lihv", "life", "liion", "nimh", "nicd", "pb"]
+lipo_cells = [1, 6]
+nimh_cells = [1, 16]
+ac_input_v = [100, 240]
+charge_current_a = 20
+output_connector = ["IC5", "IC3"]
+balance_ports = ["JST-XH"]
+charger_source = "https://www.horizonhobby.com/product/spektrum-s1400-g2-ac-1x400w-smart-charger/SPMXC2040.html"

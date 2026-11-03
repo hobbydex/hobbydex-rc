@@ -1,12 +1,16 @@
 id = "part/kyosho/FAW213"
 brand = "brand/kyosho"
 number = "FAW213"
-name = "Hp Spur Gear 75T FZ02L-B"
+name = "HD Spur Gear 75T (FZ02L-B)"
+ocr_names = ["Hp Spur Gear 75T FZ02L-B"]
 gtin = "4548565367948"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+name_source = "manufacturer"
 category = "spur-gear"
+documents = ["doc/kyosho/faw213-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/faw213.html" },
 ]
 teeth = 75
+
+[sources]
+name = "https://rc.kyosho.com/en/faw213.html"

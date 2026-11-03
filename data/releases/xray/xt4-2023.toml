@@ -5,11 +5,12 @@ name = "XT4'23"
 model_year = 2023
 kind = "kit"
 status = "released"
-seen_by = "2022"
-seen_by_source = "doc/xray/xt4-2023-exploded-view"
-notes = "teamxray.com prod_id=7765: Replaced by XRAY XT4'23 - 4WD 1/10 Electric Off-Road Truggy"
+year = 2022
+released = "2022-04-29"
+released_source = "doc/xray/news-2022-04-29-xt4-23-online-now"
+notes = "teamxray.com prod_id=7765: Replaced by XRAY XT4'23 - 4WD 1/10 Electric Off-Road Truggy; Release date from the news of 2022-04-29"
 supersedes = "release/xray/360201"
-documents = ["doc/xray/xt4-2023-exploded-view", "doc/xray/xt4-2023-manual", "doc/xray/xt4-2023-part-list", "doc/xray/xt4-2023-setup-sheet-2", "doc/xray/xt4-2023-setup-sheet", "doc/xray/xt4-2023-product-page"]
+documents = ["doc/xray/xt4-2023-exploded-view", "doc/xray/xt4-2023-manual", "doc/xray/xt4-2023-part-list", "doc/xray/xt4-2023-setup-sheet-2", "doc/xray/xt4-2023-setup-sheet", "doc/xray/xt4-2023-product-page", "doc/xray/news-2022-04-29-xt4-23-online-now"]
 number = "360202"
 contains = [
   { part = "part/hudy/104004", role = "kit", source = "doc/xray/xt4-2023-manual" },
@@ -562,4 +563,17 @@ contains = [
   { part = "part/xray/981208", role = "kit", source = "doc/xray/xt4-2023-manual" },
   { part = "part/xray/981210", role = "kit", source = "doc/xray/xt4-2023-manual" },
   { part = "part/xray/981212", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/105520", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/107090", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/107601", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/108201", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/108203", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/108204", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/108205", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/132045", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/153055", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/hudy/293110", role = "kit", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/xray/323510", role = "option", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/xray/323511", role = "option", source = "doc/xray/xt4-2023-manual" },
+  { part = "part/xray/362250", role = "option", source = "doc/xray/xt4-2023-manual" },
 ]

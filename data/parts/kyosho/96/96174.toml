@@ -2,11 +2,13 @@ id = "part/kyosho/96174"
 brand = "brand/kyosho"
 number = "96174"
 name = "Noise Cancel Sheet"
+gtin = "4955439859193"
 fits = [
   { kit = "kit/kyosho/kf01", type = "replaces", source = "doc/kyosho/31007-kf01-op" },
   { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/31262-v-one-rrr-evo2-p" },
   { kit = "kit/kyosho/mfr", type = "replaces", source = "doc/kyosho/31183-mfr-mm-p" },
+  { kit = "kit/kyosho/tf-5", type = "replaces", source = "doc/kyosho/tf5-070215", notes = "Marked for the TF-5 (option part) in Kyosho's TF-5 / TF-5 Stallion parts acceptable list" },
 ]
-documents = ["doc/kyosho/31007-kf01-op", "doc/kyosho/31183-mfr-mm-p", "doc/kyosho/31262-v-one-rrr-evo2-p"]
+documents = ["doc/kyosho/31007-kf01-op", "doc/kyosho/31183-mfr-mm-p", "doc/kyosho/31262-v-one-rrr-evo2-p", "doc/kyosho/tf5-070215"]
 category = "misc"
 category_source = "fallback"

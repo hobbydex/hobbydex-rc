@@ -2,8 +2,12 @@ id = "part/schumacher/U7275"
 brand = "brand/schumacher"
 number = "U7275"
 name = "SPEED PACK M3 x 8 SS Cap Hd (pk10)"
+gtin = "5051294122843"
 pack_qty = 10
 pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/schumacher/top-cat-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-xls-masami/speed-pack-m3-x-8-ss-cap-hd-pk10-u7275" } ]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

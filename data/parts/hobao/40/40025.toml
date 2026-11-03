@@ -1,8 +1,13 @@
 id = "part/hobao/40025"
 brand = "brand/hobao"
 number = "40025"
-name = "40025"
-notes = "Labelled by number only in the HoBao documents"
+name = "PIN 3x35MM"
 documents = ["doc/hobao/cml-h2-buggy-complete-kit-parts-reference"]
-category = "misc"
-category_source = "fallback"
+category = "pin"
+name_source = "manufacturer"
+links = [
+  { site = "HoBao", url = "https://hobaorc.myshopify.com/products/40025-pin-3x35mm" },
+]
+equivalent_to = [
+  { spec = "spec/pin/3x35", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

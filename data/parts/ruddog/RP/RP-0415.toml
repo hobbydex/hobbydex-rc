@@ -1,0 +1,19 @@
+id = "part/ruddog/RP-0415"
+brand = "brand/ruddog"
+number = "RP-0415"
+name = "5200mAh 3.7V M17 | M17S LiPo Transmitter Battery Pack"
+category = "battery"
+gtin = "4052133014504"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-5200mAh-37V-M17-M17S-LiPo-Transmitter-Battery-Pack_1" },
+]
+chemistry = "lipo"
+cells = 1
+voltage = 3.7
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-5200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5200
+weight_g = 99
+dimensions_mm = [87, 43.5, 12.5]

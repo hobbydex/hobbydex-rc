@@ -2,9 +2,16 @@ id = "part/kyosho/1916"
 brand = "brand/kyosho"
 number = "1916"
 name = "1916"
+gtin = "4955439655450"
 seen_by = "2005"
 seen_by_source = "doc/kyosho/31333-vones3-m"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-documents = ["doc/kyosho/31333-vones3-m"]
+documents = ["doc/kyosho/31333-vones3-m", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/tr15-060322"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "direct", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (standard part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/inferno-tr-15", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the TR15 RALLY (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+  { kit = "kit/kyosho/tr-15-monster-touring", type = "direct", source = "doc/kyosho/tr15-060322", notes = "Marked for the MONSTER TOURING (standard part) in Kyosho's Inferno TR-15 series parts acceptable list" },
+]

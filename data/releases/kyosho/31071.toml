@@ -5,12 +5,14 @@ number = "31071"
 name = "DMT Readyset(with KT-200)"
 gtin = "4548565157020"
 name_ja = "DMT レディセット(with KT-200)"
+year = 2012
+released = "2012-08"
+released_source = "https://rc.kyosho.com/en/31071.html"
 kind = "rtr"
 power = "nitro"
 power_source = "part/kyosho/74017-07"
-status = "released"
-seen_by = "2010"
-seen_by_source = "doc/kyosho/31071-dmt-im"
+notes = "Listed on the maker's page before its sale month (2010, source doc/kyosho/31071-dmt-im)."
+status = "discontinued"
 documents = ["doc/kyosho/31071-dmt-spop", "doc/kyosho/31071-dmt-mm-ex", "doc/kyosho/31071-dmt-mm", "doc/kyosho/31071-dmt-im", "doc/kyosho/31071-product-page"]
 contains = [
   { part = "part/kyosho/1-S53003", role = "kit", source = "doc/kyosho/31071-dmt-mm-ex" },
@@ -150,4 +152,17 @@ contains = [
   { part = "part/kyosho/TRW108-46", role = "option", source = "doc/kyosho/31071-dmt-spop" },
   { part = "part/kyosho/97034-12", role = "option", source = "doc/kyosho/31071-dmt-spop" },
   { part = "part/kyosho/96183SG", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IF346-04L", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IFW405-128", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IFW405-138", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IFW405-148", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IS106-814", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IS106-816", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IS106-914", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IS106-916", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IS106-1016", role = "option", source = "doc/kyosho/31071-dmt-spop" },
+  { part = "part/kyosho/IS106-1116", role = "option", source = "doc/kyosho/31071-dmt-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/31071.html"

@@ -2,6 +2,7 @@ id = "part/hot-racing/TUDR51M08"
 brand = "brand/hot-racing"
 number = "TUDR51M08"
 name = "51t 32 Pitch Mod 0.8 Steel Spur Gear UDR"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/tudr51m08-51t-32pitch-mod0-8-steel-spur-gear-udr", kind = "maker" },
 ]
@@ -11,4 +12,7 @@ pitch_dp = 32
 material = "steel"
 fits = [
   { kit = "kit/traxxas/udr", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/traxxas/8574", relation = "replaces", notes = "link_part_refs" },
 ]

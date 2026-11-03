@@ -3,11 +3,13 @@ kit = "kit/tamiya/grand-hauler"
 brand = "brand/tamiya"
 number = "56344"
 name = "Grand Hauler"
+gtin = "4950344563449"
 year = 2015
 kind = "kit"
 status = "released"
 documents = ["doc/tamiya/56344-product-page", "doc/tamiya/newitems-month", "doc/tamiya/56344-manual-usa", "doc/tamiya/56344-bauanleitung-grand-hauler"]
 released = "2015-02"
+released_source = "doc/tamiya/newitems-month"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56344", kind = "fan-site" },
 ]
@@ -126,4 +128,6 @@ contains = [
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/56344-manual-usa", qty = 10, step = "BA27" },
   { part = "part/tamiya/94802", role = "kit", source = "doc/tamiya/56344-manual-usa", qty = 10, step = "BF3" },
   { part = "part/tamiya/19115047", role = "kit", source = "doc/tamiya/56344-manual-usa" },
+  { part = "part/tamiya/56502", role = "listed", source = "doc/tamiya/56344-bauanleitung-grand-hauler" },
+  { part = "part/tamiya/56505", role = "listed", source = "doc/tamiya/56344-bauanleitung-grand-hauler" },
 ]

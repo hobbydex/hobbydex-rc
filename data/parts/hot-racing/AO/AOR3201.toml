@@ -2,6 +2,7 @@ id = "part/hot-racing/AOR3201"
 brand = "brand/hot-racing"
 number = "AOR3201"
 name = "Aluminum Rear Body Mount Support 1/7 Lim Inf"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/aor3201-aluminum-rear-body-mount-support-1-7-lim-inf", kind = "maker" },
 ]
@@ -10,4 +11,7 @@ material = "aluminium"
 fits = [
   { kit = "kit/arrma/infraction", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/arrma/limitless", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/arrma/ARA320516", relation = "replaces", notes = "link_part_refs" },
 ]

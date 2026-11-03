@@ -6,8 +6,10 @@ gtin = "4955439752548"
 fits = [
   { kit = "kit/kyosho/fw-05r", type = "replaces", source = "doc/kyosho/31581-fw05r-p" },
   { kit = "kit/kyosho/fw-05rr", type = "replaces", source = "doc/kyosho/31584-fw05rr-kce-m" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (standard part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vz097.html" },
 ]
 category = "drivetrain"
+documents = ["doc/kyosho/vz097-product-page", "doc/kyosho/v-one-rrr-060322"]

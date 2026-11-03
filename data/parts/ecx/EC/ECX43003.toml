@@ -2,9 +2,13 @@ id = "part/ecx/ECX43003"
 brand = "brand/ecx"
 number = "ECX43003"
 name = "Rear Tire, Premount, Black Wheel"
+status = "discontinued"
 pack_qty = 2
 pack_qty_basis = "page"
 applies_to = "1/10 2WD Boost"
+fits = [
+  { kit = "kit/ecx/boost-2wd", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Listed for the ECX 1/10 2WD Boost (link_car_kits.py)" },
+]
 color = "black"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-rear-tire-premount-black-wheel-2-1-10-2wd-boost/ECX43003.html" },
@@ -12,3 +16,6 @@ links = [
 category = "tire"
 position = "rear"
 gtin = "605482095492"
+mounting = "pre-mounted"
+wheel_color = "black"
+scale = "1/10"

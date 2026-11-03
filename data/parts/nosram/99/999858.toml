@@ -1,0 +1,21 @@
+id = "part/nosram/999858"
+brand = "brand/nosram"
+number = "999858"
+name = "HV Ultra LCG Modified Graphene-4.2 7200mAh Hardcase Battery - 7.6V LiPo - 130C/65C"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/999858/" },
+]
+chemistry = "lihv"
+cells = 2
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-7200mah", match = "functional", notes = "Chemistry, cells and capacity from LRP's name and specifications; check size and plug" },
+]
+capacity_mah = 7200
+c_rating = 130
+case = "hard"
+dimensions_mm = [139, 47, 20]
+weight_g = 246
+connector = "5mm bullet"
+voltage = 7.6

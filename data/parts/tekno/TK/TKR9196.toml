@@ -1,0 +1,13 @@
+id = "part/tekno/TKR9196"
+brand = "brand/tekno"
+number = "TKR9196"
+name = "Rear Sway Bar, 2.7mm"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-rear-sway-bar-2.7mm/TKR9196.html", kind = "dealer" },
+]
+gtin = "810020550481"
+category = "suspension"
+fits = [
+  { kit = "kit/tekno/eb48", releases = ["release/tekno/eb48-2-2"], type = "replaces", source = "doc/tekno/eb48-2-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/nb48", releases = ["release/tekno/tkr9305"], type = "replaces", source = "doc/tekno/nb48-2-2-manual-rev02", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

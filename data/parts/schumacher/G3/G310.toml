@@ -1,0 +1,15 @@
+id = "part/schumacher/G310"
+brand = "brand/schumacher"
+number = "G310"
+name = "Rubber Pit Mat - 750mm x 500mm"
+notes = "Name read by OCR from a scanned schumacher manual; verify before relying on exact wording"
+name_source = "ocr"
+documents = ["doc/schumacher/atom-manual", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi5-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
+category = "tool"
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+seen_by = "2013-11-17"
+seen_by_source = "https://web.archive.org/web/20131117122032/http://www.racing-cars.com/scp/New_Cars_and_Parts/search.asp?subcatid=654&templateid=69&sortname1=partno"

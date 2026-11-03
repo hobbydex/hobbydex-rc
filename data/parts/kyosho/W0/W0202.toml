@@ -2,7 +2,9 @@ id = "part/kyosho/W0202"
 brand = "brand/kyosho"
 number = "W0202"
 name = "H 6.8mm Hard Ball"
+gtin = "4955439754375"
 pack_qty = 10
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
   { kit = "kit/kyosho/inferno-neo-2-0", type = "direct", source = "doc/kyosho/31684-mm01-inferno-neo-2-spop" },
@@ -37,6 +39,7 @@ fits = [
   { kit = "kit/kyosho/v-one-sr", type = "direct", source = "doc/kyosho/31588-t01-v-one-sr-gxr15-spop" },
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-p" },
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
 ]
 category = "ball-end"
 ball_mm = 6.8
@@ -44,4 +47,4 @@ ball_type = "through-hole"
 equivalent_to = [
   { spec = "spec/ball-end/6.8mm-through-hole", match = "functional" },
 ]
-documents = ["doc/kyosho/30842-dbxve-rs-p", "doc/kyosho/30843-dmt-ve-spop", "doc/kyosho/30845t1-spop"]
+documents = ["doc/kyosho/30842-dbxve-rs-p", "doc/kyosho/30843-dmt-ve-spop", "doc/kyosho/30845t1-spop", "doc/kyosho/inferno-gt-060322"]

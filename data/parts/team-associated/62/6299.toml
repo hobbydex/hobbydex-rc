@@ -2,6 +2,7 @@ id = "part/team-associated/6299"
 brand = "brand/team-associated"
 number = "6299"
 name = "E-Clips, 1/8 in"
+status = "discontinued"
 seen_by = "2024-10-04"
 seen_by_source = "https://web.archive.org/web/20241004195540/https://60years.associatedelectrics.com/e-clips-1-8-in/"
 pack_qty = 10
@@ -17,7 +18,9 @@ fits = [
   { kit = "kit/team-associated/rc12l", type = "direct", source = "doc/team-associated/4022-page" },
   { kit = "kit/team-associated/gt2", type = "direct", source = "doc/team-associated/7080-page" },
   { kit = "kit/team-associated/rc12r5", type = "direct", source = "doc/team-associated/4019-page" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
 equivalent_to = [
   { spec = "spec/eclip/3.175mm", match = "functional", notes = "Shaft size from the name" },
 ]
+documents = ["doc/team-associated/cat-10l4o"]

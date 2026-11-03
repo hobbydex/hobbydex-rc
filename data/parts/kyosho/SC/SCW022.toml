@@ -2,9 +2,15 @@ id = "part/kyosho/SCW022"
 brand = "brand/kyosho"
 number = "SCW022"
 name = "SCW022"
-seen_by = "2023-06"
-seen_by_source = "doc/kyosho/30613-mm06-scorpion-im"
+gtin = "4548565273591"
+seen_by = "2015-09-14"
+seen_by_source = "https://web.archive.org/web/20150914181042/http://www.kyosho.com/jpn/products/rc/parts_images/SCW022.jpg"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-documents = ["doc/kyosho/30613-mm06-scorpion-im"]
+documents = ["doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/vintage-160304-2-jp"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
+]

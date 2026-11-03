@@ -7,9 +7,9 @@ gtin = "4955439040546"
 name_ja = "V-ONE RRシリーズ"
 power = "nitro"
 power_source = "part/kyosho/92050-01"
-status = "released"
-seen_by = "2008-11"
-seen_by_source = "https://web.archive.org/web/20081120024439/http://www.kyosho.com/jpn/support/instructionmanual/pureten_vone/pdf/31102_vone_rr_p.pdf"
+status = "discontinued"
+seen_by = "2004-12"
+seen_by_source = "https://web.archive.org/web/20041204134335/http://www.kyosho.com:80/manuals/31102-manual.pdf"
 documents = ["doc/kyosho/31102-vone-rr-p", "doc/kyosho/31102-vone-rr-t", "doc/kyosho/31102-vone-rr-m", "doc/kyosho/31102-product-page"]
 contains = [
   { part = "part/kyosho/39183", role = "kit", source = "doc/kyosho/31102-vone-rr-p" },
@@ -209,4 +209,13 @@ contains = [
   { part = "part/kyosho/1808", role = "listed", source = "doc/kyosho/31102-vone-rr-m" },
   { part = "part/kyosho/3017", role = "listed", source = "doc/kyosho/31102-vone-rr-m" },
   { part = "part/kyosho/3516", role = "listed", source = "doc/kyosho/31102-vone-rr-m" },
+  { part = "part/kyosho/VZ072-2517", role = "option", source = "doc/kyosho/31102-vone-rr-p" },
+  { part = "part/kyosho/VZ072-3017", role = "option", source = "doc/kyosho/31102-vone-rr-p" },
+  { part = "part/kyosho/VZ072-3517", role = "option", source = "doc/kyosho/31102-vone-rr-p" },
+  { part = "part/kyosho/VZ073-3516", role = "option", source = "doc/kyosho/31102-vone-rr-p" },
+  { part = "part/kyosho/VZ073-4016", role = "option", source = "doc/kyosho/31102-vone-rr-p" },
+  { part = "part/kyosho/VZ073-4516", role = "option", source = "doc/kyosho/31102-vone-rr-p" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/31102.html"

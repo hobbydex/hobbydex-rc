@@ -2,6 +2,8 @@ id = "part/kyosho/XGS016"
 brand = "brand/kyosho"
 number = "XGS016"
 name = "Big Bore Shock Spring(L/Orange/S-Hard)"
+seen_by = "2013-10-20"
+seen_by_source = "https://web.archive.org/web/20131020132705/http://kyosho.com/jpn/products/rc/parts_images/XGS016.gif"
 gtin = "4548565182794"
 pack_qty = 2
 pack_qty_basis = "manual"
@@ -14,8 +16,10 @@ fits = [
   { kit = "kit/kyosho/fazer-mk2", type = "replaces", source = "doc/kyosho/34413t1-mad-van-mooneyes-spop" },
   { kit = "kit/kyosho/lazer-zx6-6", type = "replaces", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
   { kit = "kit/kyosho/lazer-zx7", type = "replaces", source = "doc/kyosho/30048-lazer-zx7-spop" },
+  { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34403-monster-tracker-spop" },
 ]
 category = "shock-spring"
+documents = ["doc/kyosho/xgs016-product-page"]
 rate = "hard"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/xgs016.html" },

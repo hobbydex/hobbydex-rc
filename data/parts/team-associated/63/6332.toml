@@ -2,6 +2,7 @@ id = "part/team-associated/6332"
 brand = "brand/team-associated"
 number = "6332"
 name = "Body Clips"
+status = "discontinued"
 gtin = "784695063327"
 category = "clip"
 links = [
@@ -9,4 +10,8 @@ links = [
 ]
 fits = [
   { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/6050-page" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+pack_qty = 6
+pack_qty_basis = "manual"
+documents = ["doc/team-associated/cat-10l4o"]

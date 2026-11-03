@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "parts-tree"
 documents = ["doc/tamiya/58502-manual"]
+fits = [
+  { kit = "kit/tamiya/blitzer-beetle", releases = ["release/tamiya/57929", "release/tamiya/58502"], type = "replaces", source = "doc/tamiya/58502-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

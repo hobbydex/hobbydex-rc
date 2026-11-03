@@ -9,8 +9,16 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued; Chassis TNS from TamiyaBase (fallback; chassis not stated on a Tamiya page we hold)"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/43527", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20140125015848/http://www.tamiya.com:80/english/products/43527esso_supra/index.htm", kind = "archive", gone = "2026-10-20" },
 ]
 released = "2005-12-20"
 released_source = "TamiyaBase"
 year = 2005
 documents = ["doc/tamiya/43527-manual-de"]
+contains = [
+  { part = "part/tamiya/53354", role = "listed", source = "doc/tamiya/43527-manual-de" },
+  { part = "part/tamiya/53359", role = "listed", source = "doc/tamiya/43527-manual-de" },
+  { part = "part/tamiya/53366", role = "listed", source = "doc/tamiya/43527-manual-de" },
+  { part = "part/tamiya/53381", role = "listed", source = "doc/tamiya/43527-manual-de" },
+  { part = "part/tamiya/53792", role = "listed", source = "doc/tamiya/43527-manual-de" },
+]

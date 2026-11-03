@@ -2,7 +2,12 @@ id = "part/hot-racing/TRXM160BN"
 brand = "brand/hot-racing"
 number = "TRXM160BN"
 name = "Tight Tolerance Pivot Ball 2.5x4.5x5mm TRX 1/16 1/18"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/trxm160bn-tight-tolerance-pivot-ball-2-5x4-5x5mm-trx-1-16-1-18", kind = "maker" },
 ]
 category = "ball-end"
+related = [
+  { part = "part/traxxas/7028X", relation = "replaces", notes = "link_part_refs" },
+  { part = "part/traxxas/7028", relation = "replaces", notes = "link_part_refs" },
+]

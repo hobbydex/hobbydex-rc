@@ -10,6 +10,7 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58316", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20160808041838/http://www.tamiyausa.com/product/item.php?product-id=58316", kind = "archive", gone = "2026-10-20" },
 ]
 released = "2003-12-17"
 released_source = "TamiyaBase"
@@ -23,7 +24,6 @@ contains = [
   { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/58316-manual-de", step = "MB27" },
   { part = "part/tamiya/16095003", role = "kit", source = "doc/tamiya/58316-manual-de" },
   { part = "part/tamiya/17435044", role = "kit", source = "doc/tamiya/58316-manual-de" },
-  { part = "part/tamiya/19005726", role = "kit", source = "doc/tamiya/58316-manual-de" },
   { part = "part/tamiya/19225056", role = "kit", source = "doc/tamiya/58316-manual-de" },
   { part = "part/tamiya/19335398", role = "kit", source = "doc/tamiya/58316-manual-de" },
   { part = "part/tamiya/19335403", role = "kit", source = "doc/tamiya/58316-manual-de" },
@@ -130,6 +130,7 @@ contains = [
   { part = "part/tamiya/53679", role = "kit", source = "doc/tamiya/58316-manual-de" },
   { part = "part/tamiya/53680", role = "kit", source = "doc/tamiya/58316-manual-de" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/58316-manual-de" },
+  { part = "part/tamiya/19005720", role = "kit", source = "doc/tamiya/58316-manual-de" },
 ]
 documents = ["doc/tamiya/tamico-dealer-parts", "doc/tamiya/58316-manual-de"]
 

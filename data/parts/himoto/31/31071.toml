@@ -1,0 +1,20 @@
+id = "part/himoto/31071"
+brand = "brand/himoto"
+number = "31071"
+name = "Shims 9 X 5.1 X 0.8"
+category = "washer-shim"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/bowie", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/bowie-pro", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/dirt-wrip", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/hammer", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/katana", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/road-warrior", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/spatha", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/tanto", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/tricer", type = "direct", source = "doc/himoto/option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/washer/5.1x9x0.8", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -7,6 +7,9 @@ seen_by_source = "doc/kyosho/30614-07-beetle-ex"
 gtin = "4548565426201"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 category = "bumper-guard"
-documents = ["doc/kyosho/30614-07-beetle-ex"]
+documents = ["doc/kyosho/30614-07-beetle-ex", "doc/kyosho/sc245b-product-page"]
 name_source = "manufacturer"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/sc245b.html" } ]
+fits = [
+  { kit = "kit/kyosho/beetle", type = "direct", source = "doc/kyosho/30614-07-beetle-spop" },
+]

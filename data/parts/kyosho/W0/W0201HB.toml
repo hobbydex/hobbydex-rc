@@ -6,6 +6,7 @@ gtin = "4548565466801"
 pack_qty = 5
 pack_qty_basis = "page"
 category = "ball-end"
+documents = ["doc/kyosho/w0201hb-product-page"]
 ball_mm = 5.8
 ball_type = "through-hole"
 fits = [
@@ -14,6 +15,7 @@ fits = [
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34113t1s-inferno-mp10e-readyset-spare-and-option-parts" },
   { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
   { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
+  { kit = "kit/kyosho/blizzard", type = "direct", source = "doc/kyosho/34902d-34902-t05-blizzard-2-0-spop" },
 ]
 equivalent_to = [
   { spec = "spec/ball-end/5.8mm-through-hole", match = "functional" },

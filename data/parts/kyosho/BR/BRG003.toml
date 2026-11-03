@@ -2,6 +2,9 @@ id = "part/kyosho/BRG003"
 brand = "brand/kyosho"
 number = "BRG003"
 name = "Shield Bearing (4x8x3)"
+gtin = "4955439759226"
+pack_qty = 4
+pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
   { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/30073-ep-ultimarb-r-evo-p" },
@@ -22,10 +25,13 @@ fits = [
   { kit = "kit/kyosho/gp-mini-inferno-09", type = "direct", source = "doc/kyosho/31311-gpinf09-p" },
   { kit = "kit/kyosho/half-8-st-09", type = "direct", source = "doc/kyosho/31312-half-8-st-09-mini-inferno-inst-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
+  { kit = "kit/kyosho/tf-6", type = "direct", source = "doc/kyosho/30024-tf6-p" },
+  { kit = "kit/kyosho/mini-inferno-st", type = "direct", source = "doc/kyosho/mini-inferno-061013", notes = "Marked for the ST (standard part) in Kyosho's Mini Inferno parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (standard part) in Kyosho's Vintage series parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 seal = "metal"
 category = "bearing"
-documents = ["doc/kyosho/30024-tf6-p", "doc/kyosho/30025-tf6sp-t01-spop", "doc/kyosho/30073-ep-ultimarb-r-evo-p"]
+documents = ["doc/kyosho/30024-tf6-p", "doc/kyosho/30025-tf6sp-t01-spop", "doc/kyosho/30073-ep-ultimarb-r-evo-p", "doc/kyosho/mini-inferno-061013", "doc/kyosho/vintage-160304-2-jp"]

@@ -2,6 +2,9 @@ id = "part/losi/LOSA6263"
 brand = "brand/losi"
 number = "LOSA6263"
 name = "Button Head Screws, 8-32 x 3/4\""
+status = "discontinued"
+seen_by = "2008-11-18"
+seen_by_source = "https://web.archive.org/web/20081118111500/http://www.losi.com/ProdInfo/LOS/100/LOSA6263-100.jpg"
 gtin = "660132616335"
 pack_qty = 8
 pack_qty_basis = "page"
@@ -10,3 +13,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-button-head-screws-8-32-x-3-4-8/LOSA6263.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/unc-8-32x3-4in-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,7 +2,12 @@ id = "part/schumacher/U8273"
 brand = "brand/schumacher"
 number = "U8273"
 name = "M4 Steel Nyloc Flanged Nut"
+gtin = "5051294153946"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "nut"
 documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/m4-steel-nyloc-flanged-nut-4-pcs-u8273" } ]
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

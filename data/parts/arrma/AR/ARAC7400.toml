@@ -2,6 +2,7 @@ id = "part/arrma/ARAC7400"
 brand = "brand/arrma"
 number = "ARAC7400"
 name = "O-Ring P-5"
+status = "discontinued"
 pack_qty = 4
 pack_qty_basis = "page"
 links = [
@@ -14,3 +15,6 @@ fits = [
   { kit = "kit/arrma/vorteks-mega", type = "direct", source = "doc/arrma/horizon-part-pages" },
 ]
 numbers = ["AR716001"]
+equivalent_to = [
+  { spec = "spec/o-ring/4.8x1.9", match = "functional" },
+]

@@ -2,6 +2,7 @@ id = "part/team-associated/6271"
 brand = "brand/team-associated"
 number = "6271"
 name = "RC10 Ballstud Set .20, silver"
+status = "discontinued"
 seen_by = "2025-04-22"
 seen_by_source = "https://web.archive.org/web/20250422030155/https://60years.associatedelectrics.com/rc10-ballstud-set-20-silver/"
 color = "silver"
@@ -14,7 +15,11 @@ fits = [
   { kit = "kit/team-associated/rc10ds", type = "direct", source = "doc/team-associated/8082-page" },
   { kit = "kit/team-associated/rc10gb", type = "direct", source = "doc/team-associated/6047-page" },
   { kit = "kit/team-associated/rc10t", type = "direct", source = "doc/team-associated/7003-page" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
 ]
 category = "ball-end"
 ball_type = "stud"
 gtin = "784695062719"
+pack_qty = 12
+pack_qty_basis = "manual"
+documents = ["doc/team-associated/cat-t4ft"]

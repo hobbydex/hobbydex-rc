@@ -1,0 +1,19 @@
+id = "part/orca/OPL6075P"
+brand = "brand/orca"
+number = "OPL6075P"
+name = "POWER PLUS LiPo 6000mAh 7.4V 75C Hard Case"
+category = "battery"
+weight_g = 265
+dimensions_mm = [138, 47, 23]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/power-plus-lipo-6000mah-7-4v-75c-hard-case/" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 6000
+c_rating = 75
+case = "hard"

@@ -6,10 +6,11 @@ status = "discontinued"
 pack_qty = 1
 gtin = "4955439866344"
 category = "drivetrain"
-documents = ["doc/kyosho/la232-product-page"]
+documents = ["doc/kyosho/la232-product-page", "doc/kyosho/lazer-zx-5-060322"]
 fits = [
   { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
   { kit = "kit/kyosho/ultima-rb5", type = "direct", source = "doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-spop" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/kyosho/lazer-zx-5-060322", notes = "Marked for the Lazer ZX-5 (option part) in Kyosho's Lazer ZX-5 parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/la232.html" },

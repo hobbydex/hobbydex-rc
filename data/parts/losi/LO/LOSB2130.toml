@@ -2,8 +2,13 @@ id = "part/losi/LOSB2130"
 brand = "brand/losi"
 number = "LOSB2130"
 name = "Rear Hubs, Aluminum"
+seen_by = "2013-01-27"
+seen_by_source = "https://web.archive.org/web/20130127170927/http://losi.com/ProdInfo/LOS/100/LOSB2130-100.jpg"
 gtin = "605482023433"
 applies_to = "TEN"
+fits = [
+  { kit = "kit/tlr/ten-scte", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Vehicle listed on the part's Horizon page (optional part) (link_car_kits.py)" },
+]
 links = [
   { site = "Losi", url = "https://www.losi.com/product/losi-rear-hubs-aluminum-ten/LOSB2130.html" },
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-rear-hubs-aluminum-ten/LOSB2130.html" },

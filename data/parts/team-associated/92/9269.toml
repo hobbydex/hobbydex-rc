@@ -3,4 +3,12 @@ brand = "brand/team-associated"
 number = "9269"
 name = "5-40x1/2 fhcs"
 category = "screw"
-documents = ["doc/team-associated/manual-b4-2rs"]
+documents = ["doc/team-associated/manual-b4-2rs", "doc/team-associated/cat-t4ft"]
+pack_qty = 6
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]
+equivalent_to = [
+  { spec = "spec/screw/unc-5-40x1-2in-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

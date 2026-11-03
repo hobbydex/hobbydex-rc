@@ -3,4 +3,12 @@ brand = "brand/team-associated"
 number = "6924"
 name = "4-40 x 3/8” SHCS"
 category = "screw"
-documents = ["doc/team-associated/6049-rc10-ft-race-kit-manual-10-12-2026", "doc/team-associated/6058-rc10-ft-race-kit-manual-10-12-2026", "doc/team-associated/rc10t-ft-race-kit-manual-7-20-2026"]
+documents = ["doc/team-associated/6049-rc10-ft-race-kit-manual-10-12-2026", "doc/team-associated/6058-rc10-ft-race-kit-manual-10-12-2026", "doc/team-associated/rc10t-ft-race-kit-manual-7-20-2026", "doc/team-associated/cat-10l4o"]
+pack_qty = 6
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x3-8in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

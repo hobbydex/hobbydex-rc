@@ -1,0 +1,19 @@
+id = "part/ruddog/RP-0749"
+brand = "brand/ruddog"
+number = "RP-0749"
+name = "Racing 5700mAh 150C/75C 15.2V Short 4S LiPo-HV Battery"
+category = "battery"
+gtin = "4052133023353"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Racing-5700mAh-150C-75C-152V-Short-4S-LiPo-HV-Battery_1" },
+]
+chemistry = "lihv"
+cells = 4
+voltage = 15.2
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-5700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5700
+c_rating = 150
+weight_g = 411

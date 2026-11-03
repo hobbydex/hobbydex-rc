@@ -7,10 +7,14 @@ seen_by_source = "doc/kyosho/mdw108-aluminum-shock-ball"
 gtin = "4548565188536"
 name_ja = "アルミダンパーボール"
 category = "ball-end"
-documents = ["doc/kyosho/mdw108-aluminum-shock-ball"]
+documents = ["doc/kyosho/mdw108-aluminum-shock-ball", "doc/kyosho/mdw108-product-page"]
 material = "aluminium"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mdw108.html" },
 ]
 color = "silver"
 notes = "Colour read from the maker's product photo."
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", releases = ["release/kyosho/mini-z-awd-ma-015-dws-asf-2-4ghz-chassis-set-orange-limted"], type = "direct", source = "doc/kyosho/mdw108-product-page", notes = "Listed on the maker's Compatible Kits page" },
+  { kit = "kit/kyosho/mini-z-ma-020s", type = "direct", source = "doc/kyosho/mdw108-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

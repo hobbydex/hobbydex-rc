@@ -2,8 +2,13 @@ id = "part/schumacher/CR700"
 brand = "brand/schumacher"
 number = "CR700"
 name = "Big Bore Spring; Long Yellow - 3.0 pr"
+gtin = "5051294142063"
 seen_by = "2019-02-08"
 seen_by_source = "https://web.archive.org/web/20190208154731/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=882&templateid=69&sortname1=partno"
 category = "shock-spring"
 color = "yellow"
-documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
+documents = ["doc/schumacher/catl1r-instruction-manual-v2", "doc/schumacher/cougar-kf-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/big-bore-spring-long-yellow-3-0-pr-cr700" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

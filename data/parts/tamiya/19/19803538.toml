@@ -2,6 +2,8 @@ id = "part/tamiya/19803538"
 brand = "brand/tamiya"
 number = "19803538"
 name = "1060 Flanged Ball Bearing"
+pack_qty = 2
+pack_qty_basis = "photo"
 seen_by = "2025-08-22"
 seen_by_source = "https://web.archive.org/web/20250822065814/https://www.tamiyausa.com/media/files/42389ml-1489-4fb4.pdf"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
@@ -10,5 +12,5 @@ category = "bearing"
 documents = ["doc/tamiya/42389-manual"]
 links = [ { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-ball-bearing-42389/", kind = "maker" } ]
 equivalent_to = [
-  { spec = "spec/bearing/flanged-6x10x3", match = "close", notes = "Tamiya size code 1060: 10 mm outer, 6 mm bore, 3 mm wide (usual width for this size, not confirmed for Tamiya)" },
+  { spec = "spec/bearing/flanged-6x10x3", match = "close", notes = "Tamiya size code 1060: 6x10 mm bore x outer; width 3 mm per the usual size, not stated by Tamiya" },
 ]

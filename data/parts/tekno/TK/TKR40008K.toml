@@ -1,0 +1,14 @@
+id = "part/tekno/TKR40008K"
+brand = "brand/tekno"
+number = "TKR40008K"
+name = "Battery Straps for 2S Packs"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-battery-straps-for-2s-packs-sct410/TKR40008K.html", kind = "dealer" },
+]
+applies_to = "SCT410"
+gtin = "815076014017"
+category = "chassis"
+fits = [
+  { kit = "kit/tekno/eb48sl", releases = ["release/tekno/eb48sl"], type = "replaces", source = "doc/tekno/eb48sl-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410-3", releases = ["release/tekno/sct410-3"], type = "replaces", source = "doc/tekno/sct410-3-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

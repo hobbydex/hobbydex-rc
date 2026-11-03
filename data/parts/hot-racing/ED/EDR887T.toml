@@ -2,6 +2,7 @@ id = "part/hot-racing/EDR887T"
 brand = "brand/hot-racing"
 number = "EDR887T"
 name = "87T 48p Hardened Steel Spur Gear Asc T4B4 Enduro"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/edr887t-87t-48p-hardened-steel-spur-gear-asc-t4b4-enduro", kind = "maker" },
 ]
@@ -12,4 +13,7 @@ material = "steel"
 fits = [
   { kit = "kit/team-associated/rc10b5", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/team-associated/rc10t5", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/team-associated/9654", relation = "replaces", notes = "link_part_refs" },
 ]

@@ -5,3 +5,8 @@ name = "15 Turn RTR Motor"
 name_source = "manual"
 category = "motor"
 documents = ["doc/team-associated/cat-t4ft"]
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]
+turns = 15
+range = "team-associated/rtr-motor"

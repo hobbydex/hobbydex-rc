@@ -3,6 +3,7 @@ kit = "kit/tamiya/mercedes-benz-arocs"
 brand = "brand/tamiya"
 number = "56366"
 name = "Mercedes-Benz Arocs 4151 8x4 Tipper Truck"
+gtin = "4950344563661"
 year = 2021
 kind = "kit"
 status = "released"
@@ -82,7 +83,6 @@ contains = [
   { part = "part/tamiya/19225053", role = "kit", source = "doc/tamiya/56366-manual", qty = 1, notes = "Kit needs 2 of this pack" },
   { part = "part/tamiya/19225185", role = "kit", source = "doc/tamiya/56366-manual" },
   { part = "part/tamiya/19225186", role = "kit", source = "doc/tamiya/56366-manual", qty = 2 },
-  { part = "part/tamiya/19225188", role = "kit", source = "doc/tamiya/56366-manual" },
   { part = "part/tamiya/19225217", role = "kit", source = "doc/tamiya/56366-manual" },
   { part = "part/tamiya/19335128", role = "kit", source = "doc/tamiya/56366-manual" },
   { part = "part/tamiya/19335774", role = "kit", source = "doc/tamiya/56366-manual" },
@@ -217,8 +217,10 @@ contains = [
   { part = "part/tamiya/56523", role = "listed", source = "doc/tamiya/56366-product-page" },
   { part = "part/tamiya/56545", role = "listed", source = "doc/tamiya/56366-product-page" },
   { part = "part/tamiya/19115047", role = "kit", source = "doc/tamiya/56366-manual" },
+  { part = "part/tamiya/19225180", role = "kit", source = "doc/tamiya/56366-manual" },
 ]
 released = "2021-04"
+released_source = "doc/tamiya/newitems-month"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56366", kind = "fan-site" },
 ]

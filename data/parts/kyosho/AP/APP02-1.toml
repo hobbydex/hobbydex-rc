@@ -1,0 +1,17 @@
+id = "part/kyosho/APP02-1"
+brand = "brand/kyosho"
+number = "APP02-1"
+name = "APP Disc Brake Rotor (V-ONE)"
+name_ja = "APPディスクブレーキ ローター(V-ONE)"
+name_source = "manual"
+gtin = "4955439765920"
+documents = ["doc/kyosho/fw-05-060322", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322"]
+category = "drivetrain"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE S (option part) in Kyosho's V-ONE S series parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
+]

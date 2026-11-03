@@ -2,6 +2,7 @@ id = "part/tlr/TLR6017"
 brand = "brand/tlr"
 number = "TLR6017"
 name = "Rod End, HD Turnbuckle"
+status = "discontinued"
 seen_by = "2023-10-04"
 seen_by_source = "https://web.archive.org/web/20231004073917/https://www.tlracing.com/product/rod-end-hd-turnbuckle-12/TLR6017.html"
 gtin = "605482073063"
@@ -11,3 +12,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-rod-end-hd-turnbuckle-12/TLR6017.html" },
 ]
 category = "rod-end"
+fits = [
+  { kit = "kit/tlr/22-4", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Vehicle listed on the part's Horizon page (link_car_kits.py)" },
+]

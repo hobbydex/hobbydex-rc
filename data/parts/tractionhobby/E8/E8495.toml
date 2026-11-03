@@ -1,8 +1,14 @@
 id = "part/tractionhobby/E8495"
 brand = "brand/tractionhobby"
 number = "E8495"
-name = "E8495"
-notes = "From the Primal RC and Traction Hobby manual; name not in the manual"
+name = "Washer 4×10×0.3mm"
+notes = "Name from the Primal RC manual's parts table, which prints it beside the code"
 documents = ["doc/primal-rc/porsche-934-red-manual"]
-category = "misc"
-category_source = "fallback"
+category = "washer-shim"
+name_source = "manual"
+fits = [
+  { kit = "kit/tractionhobby/porsche-934", type = "direct", notes = "Named in the Primal RC Porsche 934 manual, the car's own manual" },
+]
+equivalent_to = [
+  { spec = "spec/washer/4x10x0.3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

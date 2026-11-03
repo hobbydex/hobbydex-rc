@@ -2,7 +2,10 @@ id = "part/losi/LOSA6299"
 brand = "brand/losi"
 number = "LOSA6299"
 name = "5-40 x 1/8\" Cup Setscrews"
-seen_by = "2015-08"
-seen_by_source = "doc/tlr/tlr04003-manual-ml"
+seen_by = "2008-12-03"
+seen_by_source = "https://web.archive.org/web/20081203110843/http://www.losi.com/ProdInfo/LOS/100/LOSA6299-100.jpg"
 category = "screw"
 documents = ["doc/tlr/tlr04003-manual-ml", "doc/tlr/tlr04004-manual-multi"]
+equivalent_to = [
+  { spec = "spec/screw/unc-5-40x1-8in-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

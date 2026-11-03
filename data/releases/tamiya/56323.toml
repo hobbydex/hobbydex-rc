@@ -10,6 +10,7 @@ depicts = { make = "Scania", model = "R620" }
 notes = "Axle configuration 6x4 (in Tamiya's name)"
 documents = ["doc/tamiya/56323-product-page", "doc/tamiya/newitems-month", "doc/tamiya/tamico-dealer-parts", "doc/tamiya/56323-manual-usa", "doc/tamiya/56323-bauanleitung-scania-r620"]
 released = "2009-04"
+released_source = "doc/tamiya/newitems-month"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56323", kind = "fan-site" },
 ]
@@ -29,4 +30,6 @@ contains = [
   { part = "part/tamiya/19400898", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/19400899", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
   { part = "part/tamiya/19465765", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/56505", role = "listed", source = "doc/tamiya/56323-bauanleitung-scania-r620" },
+  { part = "part/tamiya/56511", role = "listed", source = "doc/tamiya/56323-bauanleitung-scania-r620" },
 ]

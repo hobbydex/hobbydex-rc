@@ -2,7 +2,12 @@ id = "part/schumacher/CR548"
 brand = "brand/schumacher"
 number = "CR548"
 name = "CORE RC - Tool Bag"
+gtin = "5051294108731"
 seen_by = "2017-06-21"
 seen_by_source = "https://web.archive.org/web/20170621183459/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=1019&templateid=69&sortname1=partno"
 category = "tool"
-documents = ["doc/schumacher/mi7-manual"]
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/cougar-kd-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/accessories/team-merchandise/core-rc-tool-bag-cr548" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

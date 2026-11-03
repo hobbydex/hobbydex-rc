@@ -2,10 +2,25 @@ id = "part/kyosho/W0159"
 brand = "brand/kyosho"
 number = "W0159"
 name = "Flouorine Coating 4.8mm Ball Stad S"
+pack_qty = 10
+pack_qty_basis = "page"
 name_source = "manufacturer"
 gtin = "4955439859025"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/w0159.html" },
 ]
 category = "ball-end"
+documents = ["doc/kyosho/w0159-product-page", "doc/kyosho/fw-05-060322", "doc/kyosho/mini-inferno-061013", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322"]
 ball_mm = 4.8
+fits = [
+  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05S (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05RR (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/mini-inferno", type = "direct", source = "doc/kyosho/mini-inferno-061013", notes = "Marked for the Buggy (option part) in Kyosho's Mini Inferno parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RRR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
+]

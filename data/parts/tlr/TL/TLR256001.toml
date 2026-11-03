@@ -2,12 +2,16 @@ id = "part/tlr/TLR256001"
 brand = "brand/tlr"
 number = "TLR256001"
 name = "Turnbuckle Set, Titanium"
+status = "discontinued"
 seen_by = "2023-06-09"
 seen_by_source = "https://web.archive.org/web/20230609172047/https://www.tlracing.com/product/turnbuckle-set-titanium-6-5ive-b-mini-wrc/TLR256001.html"
 gtin = "605482627617"
 pack_qty = 6
 pack_qty_basis = "page"
 applies_to = "5IVE B, MINI WRC"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5IVE B (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-turnbuckle-set-titanium-6-5ive-b-mini-wrc/TLR256001.html" },
 ]

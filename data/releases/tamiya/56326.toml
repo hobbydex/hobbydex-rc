@@ -8,6 +8,7 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from Tamiya's manual download page; Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56326", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20160630113554/http://www.tamiyausa.com:80/product/item.php?product-id=56326", kind = "archive", gone = "2026-10-18" },
 ]
 released = "2011-04-20"
 released_source = "TamiyaBase"
@@ -52,7 +53,6 @@ contains = [
   { part = "part/tamiya/12990027", role = "kit", source = "doc/tamiya/56326-manual-usa" },
   { part = "part/tamiya/14305026", role = "kit", source = "doc/tamiya/56326-manual-usa" },
   { part = "part/tamiya/19005893", role = "kit", source = "doc/tamiya/56326-manual-usa" },
-  { part = "part/tamiya/19115340", role = "kit", source = "doc/tamiya/56326-manual-usa" },
   { part = "part/tamiya/19335504", role = "kit", source = "doc/tamiya/56326-manual-usa" },
   { part = "part/tamiya/19401781", role = "kit", source = "doc/tamiya/56326-manual-usa" },
   { part = "part/tamiya/19443023", role = "kit", source = "doc/tamiya/56326-manual-usa", qty = 2, step = "BB3" },
@@ -108,5 +108,6 @@ contains = [
   { part = "part/tamiya/54032", role = "kit", source = "doc/tamiya/56326-manual-usa" },
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/56326-manual-usa", qty = 10, step = "BA32" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/56326-manual-usa" },
+  { part = "part/tamiya/19115310", role = "kit", source = "doc/tamiya/56326-manual-usa" },
 ]
 documents = ["doc/tamiya/tamico-dealer-parts", "doc/tamiya/56326-manual-usa"]

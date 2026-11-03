@@ -2,6 +2,7 @@ id = "part/tamiya/54973"
 brand = "brand/tamiya"
 number = "54973"
 name = "Pin Stripe Stickers for Panel Lines"
+gtin = "4950344549733"
 released = "2020-10-10"
 released_source = "doc/tamiya/54973-product-page-ja"
 links = [
@@ -9,3 +10,7 @@ links = [
 ]
 documents = ["doc/tamiya/54973-product-page-ja"]
 category = "decal"
+fits = [
+  { kit = "kit/tamiya/trf420x", releases = ["release/tamiya/42382"], type = "direct", source = "doc/tamiya/42382-anleitung-instruction-trf-420x", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/58739"], type = "direct", source = "doc/tamiya/spb-58739-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

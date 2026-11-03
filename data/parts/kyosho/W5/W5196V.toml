@@ -2,6 +2,8 @@ id = "part/kyosho/W5196V"
 brand = "brand/kyosho"
 number = "W5196V"
 name = "Velvet Coating Triple Cap Thread Shock Set"
+seen_by = "2009-07-07"
+seen_by_source = "https://web.archive.org/web/20090707042614/http://www.kyosho.com/jpn/products/rc/parts_images/W5196V.jpg"
 gtin = "4548565130436"
 pack_qty = 38
 fits = [
@@ -10,8 +12,11 @@ fits = [
   { kit = "kit/kyosho/ultima-db", type = "replaces", source = "doc/kyosho/30856-ultima-db-rs-p" },
   { kit = "kit/kyosho/ez-series", type = "replaces", source = "doc/kyosho/34401-t01-axxe-kt-231p-spop" },
   { kit = "kit/kyosho/nexxt", type = "replaces", source = "doc/kyosho/30834-t01-nexxt-rs-spop" },
+  { kit = "kit/kyosho/ultima-rt5", type = "direct", source = "doc/kyosho/30065-ultima-rt5-sp" },
+  { kit = "kit/kyosho/axxe", type = "direct", source = "doc/kyosho/30837-t01-axxe-readyset-spop" },
 ]
 category = "shock"
+documents = ["doc/kyosho/w5196v-product-page"]
 shock_part = "cap"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/w5196v.html" },

@@ -1,13 +1,16 @@
 id = "part/hpi/3750"
 brand = "brand/hpi"
 number = "3750"
-name = "WHITE Omm OFFSET"
+name = "WHITE 0mm OFFSET"
+ocr_names = ["WHITE Omm OFFSET"]
 seen_by = "2013-07-28"
 seen_by_source = "https://web.archive.org/web/20130728035058/http://www.hpiracing.com:80/en/part/3750"
-notes = "Name read by OCR from a scanned hpi manual; verify before relying on exact wording"
-name_source = "ocr"
+name_source = "manual"
 color = "white"
-category = "misc"
-category_source = "fallback"
+category = "wheel"
 documents = ["doc/hpi/115879-vol04-rtr-sprint-2-sport-us-060415", "doc/hpi/115888-vol02-rtr-e10-touring-060215", "doc/hpi/115895-vol02-rtr-nitro-rs4-3-evo-060315", "doc/hpi/117240-vol01-rtr-e10-drift-06122017", "doc/hpi/117426-vol01-rtr-e10-touring-191018", "doc/hpi/12026-sprint-2-sport-glb-m-v1"]
 links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/3750" } ]
+
+offset_mm = 0
+[sources]
+name = "https://www.hpiracing.com/instructions/120091"

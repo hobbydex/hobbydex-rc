@@ -2,6 +2,9 @@ id = "part/tamiya/53008"
 brand = "brand/tamiya"
 number = "53008"
 name = "1150 Ball Bearing"
+gtin = "4950344530083"
+pack_qty = 4
+pack_qty_basis = "photo"
 ocr_names = ["1150 Sealed Ball Bearing", "1150 Sealed Ball Bearing Set"]
 fits = [
   { kit = "kit/tamiya/bb-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -33,7 +36,7 @@ links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1473-53008", kind = "fan-site" },
 ]
 equivalent_to = [
-  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Tamiya size code 1150: 11 mm outer, 5 mm bore, 4 mm wide" },
+  { spec = "spec/bearing/5x11x4", match = "exact", notes = "Tamiya size code 1150: 5x11x4 mm bore x outer x width as the Tamiya page states it", source = "doc/tamiya/54579-product-page-de" },
 ]
 name_source = "ocr"
 released = "1988-08"

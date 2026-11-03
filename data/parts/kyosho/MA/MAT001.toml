@@ -2,11 +2,14 @@ id = "part/kyosho/MAT001"
 brand = "brand/kyosho"
 number = "MAT001"
 name = "Twin Rib Tire Set"
+gtin = "4955439774021"
 fits = [
   { kit = "kit/kyosho/fo-xx-ve", type = "replaces", source = "doc/kyosho/30887-mm01-fo-xx-ve-spop" },
   { kit = "kit/kyosho/twin-force", type = "replaces", source = "doc/kyosho/30521-b-twinforce-p" },
   { kit = "kit/kyosho/mad-force-kruiser-ve", type = "replaces", source = "doc/kyosho/30885-madforce-kruiser-ve-sp" },
   { kit = "kit/kyosho/mad-force-kruiser", type = "replaces", source = "doc/kyosho/31226-mad-force-kruiser-p" },
+  { kit = "kit/kyosho/mad-force", type = "replaces", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (option part) in Kyosho's Monster Truck parts acceptable list" },
 ]
 category = "tire"
-documents = ["doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30522-b-twinforcecsp-p", "doc/kyosho/30887-mm01-fo-xx-ve-spop"]
+documents = ["doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30522-b-twinforcecsp-p", "doc/kyosho/30887-mm01-fo-xx-ve-spop", "doc/kyosho/monstertruck-060322"]
+mounting = "unmounted"

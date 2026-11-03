@@ -6,8 +6,11 @@ seen_by = "2017-10-13"
 seen_by_source = "https://web.archive.org/web/20171013072959/https://rc.kyosho.com/en/rccar/miniz/asc.html"
 name_source = "manufacturer"
 gtin = "4548565311170"
-documents = ["doc/kyosho/miniz-asc-listing"]
+documents = ["doc/kyosho/miniz-asc-listing", "doc/kyosho/mzp431gt-product-page"]
 category = "body"
 category_source = "curated"
 scale = "1/27"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp431gt.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-ma-020", releases = ["release/kyosho/32649jk"], type = "direct", source = "doc/kyosho/mzp431gt-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

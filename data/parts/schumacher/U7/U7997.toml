@@ -2,7 +2,13 @@ id = "part/schumacher/U7997"
 brand = "brand/schumacher"
 number = "U7997"
 name = "Ceramic Ball Bearing 6 x 12 x 4 (pr)"
+gtin = "5051294135560"
 seen_by = "2021-05"
 seen_by_source = "doc/schumacher/ld2-manual"
 category = "bearing"
 documents = ["doc/schumacher/ld2-manual"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/ceramic-ball-bearing-6-x-12-x-4-pr-u7997" } ]
+equivalent_to = [
+  { spec = "spec/bearing/6x12x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

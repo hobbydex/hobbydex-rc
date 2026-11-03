@@ -4,10 +4,13 @@ number = "KF026"
 name = "Driver Helmet"
 gtin = "4548565167111"
 pack_qty = 2
+pack_qty_basis = "page"
 fits = [
   { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/31007-kf01-sp" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]
 category = "tool"
+documents = ["doc/kyosho/kf026-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/kf026.html" },
 ]

@@ -1,0 +1,18 @@
+id = "part/cen/CKQ0506"
+brand = "brand/cen"
+number = "CKQ0506"
+name = "Precision Rubber Sealed Ball Bearing 5x8x2.5mm Q/MT Series, DL-Series"
+seen_by = "2020-08-08"
+seen_by_source = "https://web.archive.org/web/20200808023851/https://www.cenracingusa.com/products/ckq0506"
+links = [
+  { site = "CEN Racing", url = "https://www.cenracingusa.com/products/ckq0506" },
+]
+category = "bearing"
+fits = [
+  { kit = "kit/cen/dl-series", type = "direct", source = "doc/cen/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/cen/mt-series", type = "direct", source = "doc/cen/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

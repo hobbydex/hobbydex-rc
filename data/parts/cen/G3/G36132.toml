@@ -10,3 +10,6 @@ gtin = "4717873361324"
 category = "screw"
 documents = ["doc/cen/dl-series-f450sd-manual-v2-small", "doc/cen/f250-sd-kg1-edition-manual"]
 links = [ { site = "CEN Racing", url = "https://www.cenracingusa.com/products/g36132" } ]
+equivalent_to = [
+  { spec = "spec/screw/m3x5-countersunk-hex", match = "functional", notes = "Drive stated on the maker's product page; the name gives none" },
+]

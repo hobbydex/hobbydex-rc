@@ -2,8 +2,14 @@ id = "part/losi/LOSB2425"
 brand = "brand/losi"
 number = "LOSB2425"
 name = "Battery Strap/Top Plate"
+status = "discontinued"
+seen_by = "2015-09-20"
+seen_by_source = "https://web.archive.org/web/20150920192052/http://www.losi.com/ProdInfo/LOS/100/LOSB2425-100.jpg"
 gtin = "605482013458"
 applies_to = "XXX-SCT"
+fits = [
+  { kit = "kit/losi/xxx-sct", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the Losi XXX-SCT (link_car_kits.py)" },
+]
 links = [
   { site = "Losi", url = "https://www.losi.com/product/losi-battery-strap-top-plate-xxx-sct/LOSB2425.html" },
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-battery-strap-top-plate-xxx-sct/LOSB2425.html" },

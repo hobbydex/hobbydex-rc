@@ -1,0 +1,14 @@
+id = "part/iris/IRIS-75028"
+brand = "brand/iris"
+number = "IRIS-75028"
+name = "ONE Pullrod Upgrade Kit (Fits ONE.1 | ONE.05)"
+category = "suspension"
+gtin = "4052133021359"
+documents = ["doc/iris/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/Iris-ONE-Pullrod-Upgrade-Kit-Fits-ONE1-ONE05_1" },
+]
+fits = [
+  { kit = "kit/iris/one-1", type = "replaces", source = "doc/iris/store", notes = "The maker's own car named in the part title (link_car_kits.py)" },
+  { kit = "kit/iris/one-05", type = "replaces", source = "doc/iris/store", notes = "The maker's own car named in the part title (link_car_kits.py)" },
+]

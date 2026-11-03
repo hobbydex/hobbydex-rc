@@ -2,6 +2,7 @@ id = "part/hot-racing/XMX22M01"
 brand = "brand/hot-racing"
 number = "XMX22M01"
 name = "Aluminum Rear Oversize bearing Hubs Axle Carriers"
+status = "discontinued"
 fits = [
   { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/hot-racing/rcvisions-catalogue" },
 ]
@@ -11,3 +12,6 @@ links = [
 notes = "RC Visions SKU HRAXMX22M01"
 category = "bearing"
 material = "aluminium"
+related = [
+  { part = "part/traxxas/7752X", relation = "replaces", notes = "link_part_refs" },
+]

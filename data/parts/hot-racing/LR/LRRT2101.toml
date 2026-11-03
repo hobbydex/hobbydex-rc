@@ -2,6 +2,7 @@ id = "part/hot-racing/LRRT2101"
 brand = "brand/hot-racing"
 number = "LRRT2101"
 name = "7075 T6 Front Spindle Set - Rock Rey II"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/lrrt2101-7075-t6-front-spindle-set-rock-rey-ii", kind = "maker" },
 ]
@@ -10,4 +11,7 @@ material = "aluminium"
 material_grade = "7075-T6"
 fits = [
   { kit = "kit/losi/rock-rey", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/losi/LOS234005", relation = "replaces", notes = "link_part_refs" },
 ]

@@ -2,7 +2,9 @@ id = "part/dynamite/DYNS1210"
 brand = "brand/dynamite"
 number = "DYNS1210"
 name = "Tazer 25-Turn 380 Brushed Motor"
+status = "discontinued"
 gtin = "605482552285"
+turns = 25
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-tazer-25-turn-380-brushed-motor/DYNS1210.html" },
 ]
@@ -11,3 +13,4 @@ motor_type = "brushed"
 equivalent_to = [
   { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
+shaft_mm = 2.5

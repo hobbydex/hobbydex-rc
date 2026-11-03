@@ -2,6 +2,7 @@ id = "part/tlr/TLR235000"
 brand = "brand/tlr"
 number = "TLR235000"
 name = "5-40 x 5/16\" Bulkhead Screws"
+status = "discontinued"
 seen_by = "2023-06-01"
 seen_by_source = "https://web.archive.org/web/20230601122953/https://www.tlracing.com/product/5-40-x-5-16-bulkhead-screws-4/TLR235000.html"
 gtin = "605482068458"
@@ -11,3 +12,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-5-40-x-5-16-bulkhead-screws-4/TLR235000.html" },
 ]
 category = "screw"
+fits = [
+  { kit = "kit/tlr/ten-scte", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Vehicle listed on the part's Horizon page (link_car_kits.py)" },
+]

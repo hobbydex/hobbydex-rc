@@ -5,8 +5,10 @@ name = "Bumper (OPTIMA)"
 gtin = "4548565301669"
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
+  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (standard part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "bumper-guard"
+documents = ["doc/kyosho/ot207-product-page", "doc/kyosho/vintage-160304-2-jp"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ot207.html" },
 ]

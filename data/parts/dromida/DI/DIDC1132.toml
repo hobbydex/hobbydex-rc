@@ -1,0 +1,24 @@
+id = "part/dromida/DIDC1132"
+brand = "brand/dromida"
+number = "DIDC1132"
+name = "Button Head Hex Screw 2.5x6mm"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dromida-button-head-hex-screw-2.5x6mm-6/DIDC1132.html" },
+]
+pack_qty = 6
+pack_qty_basis = "page"
+gtin = "707768211326"
+category = "screw"
+fits = [
+  { kit = "kit/dromida/bx4-18", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/dromida/db4-18", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/dromida/dt4-18", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/dromida/mt4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
+  { kit = "kit/dromida/rally-car", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+  { kit = "kit/dromida/sc4-18", type = "direct", source = "doc/dromida/horizon-part-pages" },
+  { kit = "kit/dromida/touring-car", type = "direct", source = "doc/dromida/horizon-part-pages", notes = "Optional part" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

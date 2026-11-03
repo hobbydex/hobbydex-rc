@@ -2,10 +2,13 @@ id = "part/kyosho/92672"
 brand = "brand/kyosho"
 number = "92672"
 name = "Wheel Set (5 spoke-type)"
+gtin = "4955439697726"
 fits = [
   { kit = "kit/kyosho/pure-ten-alpha", type = "replaces", source = "doc/kyosho/30117-pureten-ep-aipha2-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 category = "wheel"
+documents = ["doc/kyosho/92672-product-page", "doc/kyosho/v-one-rrr-060322"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/92672.html" },
 ]

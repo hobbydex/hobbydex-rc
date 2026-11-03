@@ -1,0 +1,16 @@
+id = "part/lc-racing/LCSK60"
+brand = "brand/lc-racing"
+number = "LCSK60"
+name = "Countersunk Screw M2.5×6mm (1.5mm Hex Socket)"
+name_source = "dealer"
+category = "screw"
+gtin = "4570110897655"
+notes = "known from the distributor RUDDOG"
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/LC-Racing-Countersunk-Screw-M256mm-15mm-Hex-Socket-20pcs_1", kind = "dealer" },
+]
+pack_qty = 20
+pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

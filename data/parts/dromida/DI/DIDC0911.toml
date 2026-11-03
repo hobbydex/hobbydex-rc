@@ -1,0 +1,19 @@
+id = "part/dromida/DIDC0911"
+brand = "brand/dromida"
+number = "DIDC0911"
+name = "Pin 2x13mm"
+status = "discontinued"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dromida-pin-2x13mm-6-backbone/DIDC0911.html" },
+]
+pack_qty = 6
+pack_qty_basis = "page"
+applies_to = "Backbone"
+gtin = "605482149355"
+category = "pin"
+fits = [
+  { kit = "kit/dromida/backbone-rock-racer", type = "direct", source = "doc/dromida/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/pin/2x13", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

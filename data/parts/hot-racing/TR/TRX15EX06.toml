@@ -2,6 +2,7 @@ id = "part/hot-racing/TRX15EX06"
 brand = "brand/hot-racing"
 number = "TRX15EX06"
 name = "Super Duty Slipper System (Large) - TRA 4x4"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/trx15ex06-super-duty-slipper-system-large-tra-4x4", kind = "maker" },
 ]
@@ -15,4 +16,7 @@ fits = [
   { kit = "kit/traxxas/slayer-pro-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/traxxas/5351", relation = "replaces", notes = "link_part_refs" },
 ]

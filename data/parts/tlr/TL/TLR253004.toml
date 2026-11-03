@@ -2,10 +2,14 @@ id = "part/tlr/TLR253004"
 brand = "brand/tlr"
 number = "TLR253004"
 name = "Rear Shock Spring, 5.1 lb Rate, Green"
+status = "discontinued"
 seen_by = "2025-07-16"
 seen_by_source = "https://web.archive.org/web/20250716041915/https://www.tlracing.com/product/rear-shock-spring-5.1-lb-rate-green-5ive-b/TLR253004.html"
 gtin = "605482627907"
 applies_to = "5IVE B"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Listed for the TLR 5IVE B (link_car_kits.py)" },
+]
 color = "green"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-rear-shock-spring-5.1-lb-rate-green-5ive-b/TLR253004.html" },

@@ -2,9 +2,15 @@ id = "part/kyosho/PZ332"
 brand = "brand/kyosho"
 number = "PZ332"
 name = "Battery O-ring"
+pack_qty = 2
+pack_qty_basis = "page"
 name_source = "manufacturer"
 gtin = "4548565293629"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pz332.html" },
 ]
 category = "o-ring-seal"
+documents = ["doc/kyosho/pz332-product-page", "doc/kyosho/plazma-series-ver03-1512"]
+fits = [
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30423"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30423 (standard part) in Kyosho's Plazma series parts acceptable list" },
+]

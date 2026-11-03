@@ -8,5 +8,8 @@ seen_by_source = "doc/kyosho/39299-1-gazoo-racing-toyota-86"
 name_ja = "GAZOO Racing TOYOTA 86スポンサーデカール"
 gtin = "4548565235193"
 category = "decal"
-documents = ["doc/kyosho/39299-1-gazoo-racing-toyota-86"]
+documents = ["doc/kyosho/39299-1-gazoo-racing-toyota-86", "doc/kyosho/39299-1-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/39299-1.html" } ]
+fits = [
+  { kit = "kit/kyosho/v-one-sr", releases = ["release/kyosho/31600"], type = "direct", source = "doc/kyosho/39299-1-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

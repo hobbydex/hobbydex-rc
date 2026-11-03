@@ -2,13 +2,17 @@ id = "part/kyosho/SCW005"
 brand = "brand/kyosho"
 number = "SCW005"
 name = "Carbon Rear Sus Plate(Scorpion 2014)"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401214004/http://kyosho.com/jpn/products/rc/parts_images/SCW005.jpg"
 gtin = "4548565253777"
 fits = [
   { kit = "kit/kyosho/tomahawk", type = "replaces", source = "doc/kyosho/30646-mm01-spop", replaces = "part/kyosho/SC210", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/kyosho/beetle", type = "replaces", source = "doc/kyosho/30614-07-beetle-spop", replaces = "part/kyosho/SC210", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/scw005.html" },
 ]
 category = "chassis"
+documents = ["doc/kyosho/scw005-product-page", "doc/kyosho/vintage-160304-2-jp"]
 material = "carbon"

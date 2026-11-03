@@ -2,6 +2,9 @@ id = "part/losi/LOSA6295"
 brand = "brand/losi"
 number = "LOSA6295"
 name = "Oval Point Setscrews, 10-32 x 3/8\""
+status = "discontinued"
+seen_by = "2014-02-14"
+seen_by_source = "https://web.archive.org/web/20140214224236/http://losi.com/ProdInfo/LOS/100/LOSA6295-100.jpg"
 gtin = "660132013400"
 pack_qty = 4
 pack_qty_basis = "page"
@@ -10,3 +13,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-oval-point-setscrews-10-32-x-3-8-4/LOSA6295.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/unf-10-32x3-8in-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

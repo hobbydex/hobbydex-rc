@@ -2,8 +2,14 @@ id = "part/schumacher/CR179"
 brand = "brand/schumacher"
 number = "CR179"
 name = "Big Bore Spring; Med White - 2.8 pr"
+gtin = "5051294048419"
 seen_by = "2017-06-21"
 seen_by_source = "https://web.archive.org/web/20170621183459/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=1019&templateid=69&sortname1=partno"
 category = "shock-spring"
 color = "white"
-documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
+documents = ["doc/schumacher/catl1r-instruction-manual-v2", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/cougar-kf-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-l1r/big-bore-spring-med-white-2-8-pr-cr179" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

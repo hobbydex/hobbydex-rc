@@ -1,0 +1,19 @@
+id = "part/ruddog/RP-0173"
+brand = "brand/ruddog"
+number = "RP-0173"
+name = "2600mAh 7.6V LiHV RX Hump Pack (Fits Kyosho/Tekno)"
+category = "battery"
+gtin = "4052133010995"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-2600mAh-76V-LiHV-RX-Hump-Pack-Fits-Kyosho-Tekno_1" },
+]
+chemistry = "lihv"
+cells = 2
+voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-2600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 2600
+weight_g = 100
+dimensions_mm = [31, 31.7, 56.3]

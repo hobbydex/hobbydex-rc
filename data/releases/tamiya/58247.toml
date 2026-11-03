@@ -10,6 +10,7 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58247", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20160807221855/http://www.tamiyausa.com/product/item.php?product-id=58247", kind = "archive", gone = "2026-10-20" },
 ]
 released = "1999-11-17"
 released_source = "TamiyaBase"
@@ -29,7 +30,6 @@ contains = [
   { part = "part/tamiya/13485036", role = "kit", source = "doc/tamiya/58247-manual-de", step = "MA1" },
   { part = "part/tamiya/13585086", role = "kit", source = "doc/tamiya/58247-manual-de" },
   { part = "part/tamiya/14005042", role = "kit", source = "doc/tamiya/58247-manual-de" },
-  { part = "part/tamiya/14005087", role = "kit", source = "doc/tamiya/58247-manual-de" },
   { part = "part/tamiya/14305259", role = "kit", source = "doc/tamiya/58247-manual-de", step = "MA6" },
   { part = "part/tamiya/14305371", role = "kit", source = "doc/tamiya/58247-manual-de", step = "MA3" },
   { part = "part/tamiya/15005073", role = "kit", source = "doc/tamiya/58247-manual-de" },
@@ -77,5 +77,6 @@ contains = [
   { part = "part/tamiya/53349", role = "kit", source = "doc/tamiya/58247-manual-de" },
   { part = "part/tamiya/53350", role = "kit", source = "doc/tamiya/58247-manual-de" },
   { part = "part/tamiya/50388", role = "kit", source = "doc/tamiya/58247-manual-de" },
+  { part = "part/tamiya/14005081", role = "kit", source = "doc/tamiya/58247-manual-de" },
 ]
 documents = ["doc/tamiya/58247-manual-de"]

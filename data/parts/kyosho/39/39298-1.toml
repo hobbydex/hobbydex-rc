@@ -8,5 +8,8 @@ seen_by_source = "doc/kyosho/39298-1-petronas-toms-sc430"
 name_ja = "ペトロナス トムス SC430 スポンサーデカール"
 gtin = "4548565231287"
 category = "decal"
-documents = ["doc/kyosho/39298-1-petronas-toms-sc430"]
+documents = ["doc/kyosho/39298-1-petronas-toms-sc430", "doc/kyosho/39298-1-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/39298-1.html" } ]
+fits = [
+  { kit = "kit/kyosho/v-one-sr", releases = ["release/kyosho/31588", "release/kyosho/31600"], type = "direct", source = "doc/kyosho/39298-1-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

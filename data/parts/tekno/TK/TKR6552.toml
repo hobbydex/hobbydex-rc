@@ -2,6 +2,7 @@ id = "part/tekno/TKR6552"
 brand = "brand/tekno"
 number = "TKR6552"
 name = "Spindle Carriers, 15 Degrees, Left and Right"
+status = "discontinued"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-spindle-carriers-15-degrees-left-and-right-eb410/TKR6552.html" },
 ]
@@ -10,4 +11,5 @@ gtin = "815076018619"
 category = "suspension"
 fits = [
   { kit = "kit/tekno/et410", releases = ["release/tekno/et410"], type = "replaces", source = "doc/tekno/et410instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/eb410", type = "replaces", source = "doc/tekno/eb410instructions-rev2", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

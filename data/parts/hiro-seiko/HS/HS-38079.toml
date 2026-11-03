@@ -1,0 +1,17 @@
+id = "part/hiro-seiko/HS-38079"
+brand = "brand/hiro-seiko"
+number = "HS-38079"
+name = "X4 2026 Titan/Alloy Hex Socket Screw Set"
+pack_qty = 121
+pack_qty_basis = "name"
+name_source = "manufacturer"
+category = "screw"
+gtin = "4711548380795"
+notes = "known from the distributor RUDDOG"
+links = [
+  { site = "Hiro Seiko", url = "https://hiro-seiko.com/products/detail/2453" },
+]
+fits = [
+  { kit = "kit/xray/x4", releases = ["release/xray/x4-2026"], type = "direct", source = "doc/hiro-seiko/store", notes = "Listed for the X4 2026 in the maker's compatible-model list (link_car_kits.py)" },
+]
+color = "black"

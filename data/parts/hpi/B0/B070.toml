@@ -1,8 +1,14 @@
 id = "part/hpi/B070"
 brand = "brand/hpi"
 number = "B070"
-name = "B070"
-notes = "Named by its number only: the name on the scanned hpi manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
-documents = ["doc/hpi/115879-vol04-rtr-sprint-2-sport-us-060415", "doc/hpi/115879-vol04-rtr-sprint-2-sport-us-060415-e"]
+name = "METAL BUSHING 5x8x2.5mm"
+name_source = "manual"
+category = "bearing"
+documents = ["doc/hpi/115879-vol04-rtr-sprint-2-sport-us-060415", "doc/hpi/115879-vol04-rtr-sprint-2-sport-us-060415-e", "doc/hpi/100754-cyber-10b-glb-m-v1"]
+fits = [
+  { kit = "kit/hpi/cyber-10b", releases = ["release/hpi/100703"], type = "direct", source = "doc/hpi/100754-cyber-10b-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hpi/sprint-2", releases = ["release/hpi/12026", "release/hpi/718", "release/hpi/719"], type = "direct", source = "doc/hpi/12026-sprint-2-sport-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "A plain bushing, 5x8x2.5; the ball bearing of that size replaces it" },
+]

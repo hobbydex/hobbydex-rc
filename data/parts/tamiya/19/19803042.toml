@@ -2,6 +2,8 @@ id = "part/tamiya/19803042"
 brand = "brand/tamiya"
 number = "19803042"
 name = "740 Ball Bearing"
+pack_qty = 2
+pack_qty_basis = "manual"
 seen_by = "2019-10-20"
 seen_by_source = "https://web.archive.org/web/20191020121812/https://www.tamiyausa.com/media/files/42315ml-949-ae70.pdf"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
@@ -9,5 +11,5 @@ name_source = "ocr"
 category = "bearing"
 links = [ { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-740-ball-bearing-42317/", kind = "maker" } ]
 equivalent_to = [
-  { spec = "spec/bearing/4x7x2.5", match = "close", notes = "Tamiya size code 740: 7 mm outer, 4 mm bore, 2.5 mm wide (usual width for this size, not confirmed for Tamiya)" },
+  { spec = "spec/bearing/4x7x2.5", match = "close", notes = "Tamiya size code 740: 4x7 mm bore x outer; width 2.5 mm per the usual size, not stated by Tamiya" },
 ]

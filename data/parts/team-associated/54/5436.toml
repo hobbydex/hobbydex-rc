@@ -2,6 +2,7 @@ id = "part/team-associated/5436"
 brand = "brand/team-associated"
 number = "5436"
 name = "FT Silicone Shock Fluid, 60wt (800 cSt)"
+status = "discontinued"
 seen_by = "2024-10-12"
 seen_by_source = "https://web.archive.org/web/20241012085345/https://60years.associatedelectrics.com/ft-silicone-shock-fluid-60wt-800-cst/"
 links = [
@@ -15,4 +16,7 @@ category = "oil-grease"
 gtin = "784695054363"
 fits = [
   { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+documents = ["doc/team-associated/cat-t4ft", "doc/team-associated/cat-10l4o"]

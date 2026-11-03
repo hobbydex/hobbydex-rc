@@ -1,0 +1,15 @@
+id = "part/tekno/TKR5515"
+brand = "brand/tekno"
+number = "TKR5515"
+name = "Suspension Arm Rear SCT.3 SL"
+links = [
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-suspension-arm-rear-sct.3-sl-2/TKR5515.html", kind = "dealer" },
+]
+pack_qty = 2
+pack_qty_basis = "page"
+gtin = "815076016394"
+category = "suspension"
+fits = [
+  { kit = "kit/tekno/eb48sl", releases = ["release/tekno/eb48sl"], type = "replaces", source = "doc/tekno/eb48sl-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tekno/sct410-3", releases = ["release/tekno/sct410-3"], type = "replaces", source = "doc/tekno/sct410-3-instructions", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,9 +2,11 @@ id = "part/kyosho/RS165"
 brand = "brand/kyosho"
 number = "RS165"
 name = "Air Filter Sponge"
+gtin = "4955439733837"
 fits = [
   { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/31092-gp-ultimarb-sports-p" },
   { kit = "kit/kyosho/pure-ten-alpha", type = "direct", source = "doc/kyosho/gp-alpha2-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "replaces", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 category = "engine-fuel"
-documents = ["doc/kyosho/31092-gp-ultimarb-sports-p", "doc/kyosho/gp-alpha2-p"]
+documents = ["doc/kyosho/31092-gp-ultimarb-sports-p", "doc/kyosho/gp-alpha2-p", "doc/kyosho/v-one-rrr-060322"]

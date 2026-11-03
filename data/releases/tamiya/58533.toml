@@ -9,11 +9,12 @@ status = "discontinued"
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Not on Tamiya's current pages (read 2026-10); taken as discontinued"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58533", kind = "fan-site" },
+  { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20121031031909/http://www.tamiya.com:80/english/products/58533golf24/index.htm", kind = "archive", gone = "2026-10-20" },
 ]
 released = "2012-10-24"
 released_source = "TamiyaBase"
 year = 2012
-documents = ["doc/tamiya/58533-bauanleitung-tt-01e", "doc/tamiya/58533-manual-de"]
+documents = ["doc/tamiya/58533-bauanleitung-tt-01e"]
 contains = [
   { part = "part/tamiya/11050688", role = "listed", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
   { part = "part/tamiya/50038", role = "listed", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
@@ -39,10 +40,10 @@ contains = [
   { part = "part/tamiya/74049", role = "listed", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
   { part = "part/tamiya/74050", role = "listed", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
   { part = "part/tamiya/87025", role = "listed", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
-  { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/58533-manual-de" },
-  { part = "part/tamiya/19805755", role = "kit", source = "doc/tamiya/58533-manual-de" },
-  { part = "part/tamiya/19805756", role = "kit", source = "doc/tamiya/58533-manual-de" },
-  { part = "part/tamiya/50573", role = "kit", source = "doc/tamiya/58533-manual-de" },
-  { part = "part/tamiya/50581", role = "kit", source = "doc/tamiya/58533-manual-de" },
-  { part = "part/tamiya/50583", role = "kit", source = "doc/tamiya/58533-manual-de" },
+  { part = "part/tamiya/14305125", role = "kit", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
+  { part = "part/tamiya/19805755", role = "kit", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
+  { part = "part/tamiya/19805756", role = "kit", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
+  { part = "part/tamiya/50573", role = "kit", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
+  { part = "part/tamiya/50581", role = "kit", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
+  { part = "part/tamiya/50583", role = "kit", source = "doc/tamiya/58533-bauanleitung-tt-01e" },
 ]

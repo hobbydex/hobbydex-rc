@@ -2,9 +2,14 @@ id = "part/kyosho/SC219R"
 brand = "brand/kyosho"
 number = "SC219R"
 name = "Radio Box Set"
+gtin = "4548565253302"
 seen_by = "2023-06"
 seen_by_source = "doc/kyosho/30613-mm06-scorpion-im"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "chassis"
-documents = ["doc/kyosho/30613-mm06-scorpion-im"]
+documents = ["doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/vintage-160304-2-jp"]
+fits = [
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
+]

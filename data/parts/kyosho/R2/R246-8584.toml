@@ -2,13 +2,25 @@ id = "part/kyosho/R246-8584"
 brand = "brand/kyosho"
 number = "R246-8584"
 name = "Silicone sensor Cable 210mm"
+seen_by = "2014-07-18"
+seen_by_source = "https://web.archive.org/web/20140718224547/http://kyosho.com/jpn/products/rc/parts_images/R246-8584.jpg"
 name_source = "manufacturer"
 gtin = "4548565237043"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/r246-8584.html" },
 ]
 category = "wire"
+documents = ["doc/kyosho/r246-8584-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 fits = [
   { kit = "kit/kyosho/2rsa", type = "direct", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
+  { kit = "kit/kyosho/beetle", type = "direct", source = "doc/kyosho/30614-07-beetle-spop" },
+  { kit = "kit/kyosho/turbo-scorpion", type = "direct", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
+  { kit = "kit/kyosho/optima", type = "direct", source = "doc/kyosho/30617-05-optima-spop" },
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30618-javelin-spare-and-option-parts" },
+  { kit = "kit/kyosho/optima-pro", type = "direct", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30643-mid-87wc-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (option part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]
 name_de = "Silicone Sensor Cable 210mm"

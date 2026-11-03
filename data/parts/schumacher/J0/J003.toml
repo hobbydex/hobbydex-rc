@@ -1,0 +1,15 @@
+id = "part/schumacher/J003"
+brand = "brand/schumacher"
+number = "J003"
+name = "Contact RC - Glass Setup Board"
+notes = "Name read by OCR from a scanned schumacher manual; verify before relying on exact wording"
+name_source = "ocr"
+documents = ["doc/schumacher/atom-manual", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
+category = "tool"
+fits = [
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+seen_by = "2015-11-25"
+seen_by_source = "https://web.archive.org/web/20151125071752/http://www.racing-cars.com/scp/New_Cars_and_Parts/search.asp?subcatid=814&templateid=69&sortname1=partno"

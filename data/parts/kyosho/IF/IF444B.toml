@@ -1,10 +1,12 @@
 id = "part/kyosho/IF444B"
 brand = "brand/kyosho"
 number = "IF444B"
-name = "IF444B"
+name = "Fuel Tank Set (MP9)"
 seen_by = "2011-06"
 seen_by_source = "doc/kyosho/31785-inferno-mp9-tki2-im"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
 documents = ["doc/kyosho/31785-inferno-mp9-tki2-im"]
-category = "misc"
-category_source = "fallback"
+category = "engine-fuel"
+fits = [
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31785-inferno-mp9-tki2-sp" },
+]

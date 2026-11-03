@@ -2,6 +2,8 @@ id = "part/losi/LOS235016"
 brand = "brand/losi"
 number = "LOS235016"
 name = "4-40 x 1 1/2\" Cap Head Screw"
+seen_by = "2022-07-04"
+seen_by_source = "https://web.archive.org/web/20220704204846/https://www.losi.com/default/product/4-40-x-1-1-2-cap-head-screw-6/LOS235016.html"
 gtin = "605482619742"
 pack_qty = 6
 pack_qty_basis = "page"
@@ -10,3 +12,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-4-40-x-1-1-2-cap-head-screw-6/LOS235016.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x1_1-2in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,6 +2,8 @@ id = "part/carson/500904054"
 brand = "brand/carson"
 number = "500904054"
 name = "TT-02B/TT-01E Ball Bearing Set"
+seen_by = "2021-12-04"
+seen_by_source = "https://web.archive.org/web/20211204195615/https://www.carson-modelsport.com/carson_en/categories/carson-accessories/chassis-accessories/tt02btt01ett01-ball-bearing-set-16-500904054-en.html"
 gtin = "4005299940545"
 fits = [
   { kit = "kit/tamiya/tt-01e", type = "direct", source = "doc/carson/shop" },
@@ -11,11 +13,7 @@ links = [
   { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/spare-parts-accessories/rc-spares/ball-bearings/tt-02btt-01e-ball-bearing-set-rc-spare-part-500904054-en.html" },
 ]
 category = "bearing"
-includes = [
-  { spec = "spec/bearing/5x11x4", qty = 12, source = "doc/carson/shop", notes = "Width not stated; 4 mm is the usual width of Tamiya size 1150" },
-  { spec = "spec/bearing/8x12x3.5", qty = 4, source = "doc/carson/shop", notes = "Width not stated; 3.5 mm is the usual width of Tamiya size 1280" },
-]
-pack_qty_basis = "includes"
+pack_qty_basis = "page"
 pack_qty = 16
 color = "silver"
 notes = "Colour read from the maker's product photo."

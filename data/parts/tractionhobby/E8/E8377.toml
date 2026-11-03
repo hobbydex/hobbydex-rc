@@ -1,8 +1,12 @@
 id = "part/tractionhobby/E8377"
 brand = "brand/tractionhobby"
 number = "E8377"
-name = "E8377"
-notes = "From the Primal RC and Traction Hobby manual; name not in the manual"
+name = "O- ring D5×0.5mm"
+notes = "Name from the Primal RC manual's parts table, which prints it beside the code"
 documents = ["doc/primal-rc/porsche-934-red-manual"]
-category = "misc"
-category_source = "fallback"
+category = "o-ring-seal"
+category_source = "llm"
+name_source = "manual"
+fits = [
+  { kit = "kit/tractionhobby/porsche-934", type = "direct", notes = "Named in the Primal RC Porsche 934 manual, the car's own manual" },
+]

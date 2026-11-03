@@ -6,7 +6,7 @@ name = "MINI-Z MR-03 SP Limitd"
 gtin = "4548565198825"
 name_ja = "MINI-Z MR-03 SP Limited"
 kind = "rtr"
-status = "released"
+status = "discontinued"
 seen_by = "2010-12"
 seen_by_source = "doc/kyosho/32751-mr03-tikitiki-extra"
 documents = ["doc/kyosho/32752-hs01-mr03-sp-lmited-im", "doc/kyosho/32751-mr03-tikitiki-extra", "doc/kyosho/32752-product-page", "doc/kyosho/youtube-oLp1Lyg0-Kc"]
@@ -25,3 +25,6 @@ contains = [
   { part = "part/kyosho/MZW302", role = "listed", source = "doc/kyosho/32752-hs01-mr03-sp-lmited-im" },
   { part = "part/kyosho/MZW305", role = "listed", source = "doc/kyosho/32752-hs01-mr03-sp-lmited-im" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/32752.html"

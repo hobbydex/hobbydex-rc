@@ -1,11 +1,16 @@
 id = "part/jconcepts/9132"
 brand = "brand/jconcepts"
 number = "9132"
-name = "9132"
+name = "REACTOR Washer 3 x 6 x 1.0"
 seen_by = "2026-03-06"
 seen_by_source = "https://web.archive.org/web/20260306182059/https://jconcepts.net/reactor-washer-3x6x1-4pc"
-notes = "Name from the label on a manual drawing"
+notes = "Name from the label on a manual drawing; Named on the maker's own product page (archived copy)"
 documents = ["doc/jconcepts/REACTOR_Instruction_Manual-V4_2"]
 links = [ { site = "JConcepts", url = "https://jconcepts.net/reactor-washer-3x6x1-4pc" } ]
-category = "misc"
-category_source = "fallback"
+category = "washer-shim"
+name_source = "manufacturer"
+pack_qty = 4
+pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/washer/3x6x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

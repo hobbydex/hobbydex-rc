@@ -4,6 +4,7 @@ number = "ORG06B"
 name = "Silicone O-ring (P6/Orange)"
 former_names = ["Silicone O-Ring (Pe/Orange) 15pcs"]
 pack_qty = 15
+pack_qty_basis = "name"
 gtin = "4548565425464"
 category = "o-ring-seal"
 documents = ["doc/kyosho/org06b-product-page"]
@@ -25,4 +26,7 @@ fits = [
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/org06b.html" },
+]
+equivalent_to = [
+  { spec = "spec/o-ring/5.8x1.9", match = "functional" },
 ]

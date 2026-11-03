@@ -2,10 +2,18 @@ id = "part/kyosho/PZW004M"
 brand = "brand/kyosho"
 number = "PZW004M"
 name = "Side Spring(0.50mm/Medium/Green)"
+seen_by = "2015-04-02"
+seen_by_source = "https://web.archive.org/web/20150402065637/http://kyosho.com/jpn/products/rc/parts_images/PZW004M.jpg"
 name_source = "manufacturer"
 gtin = "4548565205479"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw004m.html" },
 ]
 category = "shock-spring"
+documents = ["doc/kyosho/pzw004m-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 color = "green"
+fits = [
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (option part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
+]

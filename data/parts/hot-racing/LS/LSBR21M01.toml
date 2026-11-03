@@ -2,6 +2,7 @@ id = "part/hot-racing/LSBR21M01"
 brand = "brand/hot-racing"
 number = "LSBR21M01"
 name = "Aluminum Hd Front Spindles Big Bearings Losi Super Baja Rey"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/lsbr21m01-aluminum-hd-front-spindles-big-bearings-losi-super-baja-rey", kind = "maker" },
 ]
@@ -9,4 +10,7 @@ category = "bearing"
 material = "aluminium"
 fits = [
   { kit = "kit/losi/super-baja-rey", type = "direct", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+related = [
+  { part = "part/losi/LOS254038", relation = "replaces", notes = "link_part_refs" },
 ]

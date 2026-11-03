@@ -5,11 +5,13 @@ number = "30886"
 name = "PSYCHO KRUISER VE readyset"
 gtin = "4548565232932"
 name_ja = "サイコクルーザー VE レディセット"
+year = 2014
+released = "2014-05"
+released_source = "https://rc.kyosho.com/en/30886.html"
 kind = "rtr"
-status = "released"
-seen_by = "2014-03"
-seen_by_source = "doc/kyosho/30886-t01-psycho-kruiser-ve-im"
+status = "discontinued"
 documents = ["doc/kyosho/30886-mm01-psycho-kruiser-ve-spop", "doc/kyosho/30886-mm01-psycho-kruiser-ve-ex", "doc/kyosho/30886-mm01-psycho-kruiser-ve-mm", "doc/kyosho/30886-t01-psycho-kruiser-ve-im", "doc/kyosho/30886-product-page", "doc/kyosho/youtube-vMN3PXtkdQE"]
+notes = "Listed on the maker's page before its sale month (2014-03, source doc/kyosho/30886-t01-psycho-kruiser-ve-im)."
 contains = [
   { part = "part/kyosho/1-E025", role = "kit", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-ex" },
   { part = "part/kyosho/1-E030", role = "kit", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-ex" },
@@ -156,4 +158,20 @@ contains = [
   { part = "part/kyosho/97044-20", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
   { part = "part/kyosho/ISB003", role = "kit", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
   { part = "part/kyosho/ISB052", role = "kit", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/KT201", role = "listed", source = "doc/kyosho/30886-t01-psycho-kruiser-ve-im" },
+  { part = "part/kyosho/IF126BK", role = "kit", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IF205BK", role = "kit", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IS106-0916", role = "kit", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IF347-135", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IFW302GM", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IFW337GM", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IS106-0814", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IS106-0816", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IS106-0914", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IS106-8514", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IS106-9514", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
+  { part = "part/kyosho/IFW156GM", role = "option", source = "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/30886.html"

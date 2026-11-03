@@ -2,9 +2,13 @@ id = "part/ecx/ECX3009"
 brand = "brand/ecx"
 number = "ECX3009"
 name = "Rear Suspension Arm"
+status = "discontinued"
 pack_qty = 2
 pack_qty_basis = "page"
 applies_to = "1/10 2WD Boost"
+fits = [
+  { kit = "kit/ecx/boost-2wd", type = "direct", source = "doc/ecx/horizon-part-pages", notes = "Listed for the ECX 1/10 2WD Boost (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/ecx-rear-suspension-arm-2-1-10-2wd-boost/ECX3009.html" },
 ]

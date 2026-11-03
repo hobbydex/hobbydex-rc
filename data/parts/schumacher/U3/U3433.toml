@@ -13,5 +13,9 @@ category = "pinion"
 material = "aluminium"
 teeth = 33
 pitch_dp = 48
-documents = ["doc/schumacher/c2w-manual", "doc/schumacher/ft9-manual", "doc/schumacher/neon-ft-manual"]
+documents = ["doc/schumacher/c2w-manual", "doc/schumacher/ft9-manual", "doc/schumacher/neon-ft-manual", "doc/schumacher/mi3-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/supastox-gt/pinion-hard-alloy-48dp-33t-u3433" } ]
+fits = [
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

@@ -6,7 +6,7 @@ pack_qty = 2
 pack_qty_basis = "name"
 gtin = "4955439758953"
 category = "bearing"
-documents = ["doc/kyosho/brg012o-product-page"]
+documents = ["doc/kyosho/brg012o-product-page", "doc/kyosho/inferno-gt-060322", "doc/kyosho/mp75-777-060322"]
 equivalent_to = [
   { spec = "spec/bearing/8x16x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
@@ -16,4 +16,7 @@ links = [
 ]
 fits = [
   { kit = "kit/kyosho/inferno-neo-4-0", releases = ["release/kyosho/33029t1s"], type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
+  { kit = "kit/kyosho/inferno-mp7-5", releases = ["release/kyosho/31192"], type = "direct", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the 7.5 SPORTS (standard part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
+  { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the MP-777 (standard part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
 ]

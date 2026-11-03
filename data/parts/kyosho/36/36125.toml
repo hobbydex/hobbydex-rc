@@ -2,14 +2,18 @@ id = "part/kyosho/36125"
 brand = "brand/kyosho"
 number = "36125"
 name = "Ceramic Ball 1/8 Inch"
+seen_by = "2013-10-20"
+seen_by_source = "https://web.archive.org/web/20131020163048/http://kyosho.com/jpn/products/rc/parts_images/36125.jpg"
 gtin = "4548565205875"
 pack_qty = 8
 pack_qty_basis = "page"
 fits = [
   { kit = "kit/kyosho/plazma-formula", type = "direct", source = "doc/kyosho/30412-plazma-formula-spop" },
   { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]
 category = "bearing"
+documents = ["doc/kyosho/36125-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/36125.html" },
 ]

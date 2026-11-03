@@ -2,7 +2,10 @@ id = "part/losi/LOSA6254"
 brand = "brand/losi"
 number = "LOSA6254"
 name = "2-56 x 1/4\" Caphead"
-seen_by = "2015-08"
-seen_by_source = "doc/tlr/tlr04003-manual-ml"
+seen_by = "2008-11-18"
+seen_by_source = "https://web.archive.org/web/20081118111318/http://www.losi.com/ProdInfo/LOS/100/LOSA6254-100.jpg"
 category = "screw"
 documents = ["doc/tlr/tlr04003-manual-ml", "doc/tlr/tlr04004-manual-multi"]
+equivalent_to = [
+  { spec = "spec/screw/unc-2-56x1-4in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

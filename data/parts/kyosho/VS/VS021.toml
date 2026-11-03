@@ -2,11 +2,13 @@ id = "part/kyosho/VS021"
 brand = "brand/kyosho"
 number = "VS021"
 name = "Front Lower Suspention Shaft"
+gtin = "4955439767740"
 fits = [
   { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31480jp-fw05ske-p" },
   { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31584-fw05rr-kce-m" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (standard part) in Kyosho's FW-05 parts acceptable list" },
 ]
 category = "drivetrain"
-documents = ["doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/31483-fw05s-p", "doc/kyosho/31581-fw05r-p"]
+documents = ["doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/31483-fw05s-p", "doc/kyosho/31581-fw05r-p", "doc/kyosho/fw-05-060322"]

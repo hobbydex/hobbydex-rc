@@ -3,8 +3,8 @@ brand = "brand/lc-racing"
 number = "BE6082"
 name = "SPONGE 75X45X25"
 documents = ["doc/lc-racing/emb-tgh-truggy-exploded-view"]
-category = "differential"
-category_source = "manual-section"
+category = "misc"
+category_source = "fallback"
 fits = [
   { kit = "kit/lc-racing/emb-tgh", releases = ["release/lc-racing/emb-tgh"], type = "replaces", source = "doc/lc-racing/emb-tgh-truggy-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

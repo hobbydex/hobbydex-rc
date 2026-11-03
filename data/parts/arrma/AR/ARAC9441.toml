@@ -2,9 +2,13 @@ id = "part/arrma/ARAC9441"
 brand = "brand/arrma"
 number = "ARAC9441"
 name = "Wheel Hex Aluminum Red"
+status = "discontinued"
 pack_qty = 2
 pack_qty_basis = "page"
 applies_to = "Nero"
+fits = [
+  { kit = "kit/arrma/nero-6s-blx", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Listed for the ARRMA Nero (link_car_kits.py)" },
+]
 color = "red"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-wheel-hex-aluminum-red-nero-2/ARAC9441.html" },

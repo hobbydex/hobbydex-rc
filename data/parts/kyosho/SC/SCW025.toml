@@ -2,10 +2,16 @@ id = "part/kyosho/SCW025"
 brand = "brand/kyosho"
 number = "SCW025"
 name = "Carbon ST Servo Plate (Tomahawk)"
+seen_by = "2015-09-12"
+seen_by_source = "https://web.archive.org/web/20150912191102/http://www.kyosho.com/jpn/products/rc/parts_images/SCW025.jpg"
 name_source = "manufacturer"
 gtin = "4548565282548"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/scw025.html" },
 ]
 category = "chassis"
+documents = ["doc/kyosho/scw025-product-page", "doc/kyosho/vintage-160304-2-jp"]
 material = "carbon"
+fits = [
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
+]

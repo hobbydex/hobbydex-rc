@@ -2,7 +2,12 @@ id = "part/schumacher/U3248"
 brand = "brand/schumacher"
 number = "U3248"
 name = "96T 64dp CNC Spur Gear - Mi4/Mi5"
+gtin = "5051294022327"
 seen_by = "2010-01-30"
 seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
 category = "spur-gear"
-documents = ["doc/schumacher/mission-ft-manual-v2"]
+documents = ["doc/schumacher/mission-ft-manual-v2", "doc/schumacher/mi3-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mission-ft/96t-64dp-cnc-spur-gear-mi4-mi5-u3248" } ]
+fits = [
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

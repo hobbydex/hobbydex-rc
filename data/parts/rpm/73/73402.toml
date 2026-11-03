@@ -2,6 +2,7 @@ id = "part/rpm/73402"
 brand = "brand/rpm"
 number = "73402"
 name = "Front Spindle Set for the Losi Super Rock Rey"
+status = "discontinued"
 applies_to = "Losi Super Rock Rey"
 links = [
   { site = "RPM R/C Products", url = "https://rpmrcproducts.com/product/super-rock-rey-front-spindles/" },
@@ -9,4 +10,8 @@ links = [
 category = "suspension"
 fits = [
   { kit = "kit/losi/super-rock-rey", type = "replaces", source = "doc/rpm/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+related = [
+  { part = "part/losi/LOS254055", relation = "replaces", notes = "link_part_refs" },
+  { part = "part/losi/LOS252109", relation = "replaces", notes = "link_part_refs" },
 ]

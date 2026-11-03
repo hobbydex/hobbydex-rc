@@ -2,6 +2,7 @@ id = "part/team-associated/5435"
 brand = "brand/team-associated"
 number = "5435"
 name = "FT Silicone Shock Fluid, 50wt (640 cSt), 2oz."
+status = "discontinued"
 seen_by = "2025-04-20"
 seen_by_source = "https://web.archive.org/web/20250420072632/https://60years.associatedelectrics.com/ft-silicone-shock-fluid-50wt-640-cst-2oz/"
 gtin = "784695054356"
@@ -15,4 +16,7 @@ viscosity_wt = 50
 category = "oil-grease"
 fits = [
   { kit = "kit/team-associated/rb10", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4rs" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+documents = ["doc/team-associated/cat-t4rs", "doc/team-associated/cat-10l4o"]

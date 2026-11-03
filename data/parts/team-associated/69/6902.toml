@@ -2,6 +2,7 @@ id = "part/team-associated/6902"
 brand = "brand/team-associated"
 number = "6902"
 name = "Bearings, 3/16 x 5/16 in, flanged"
+status = "discontinued"
 seen_by = "2025-03-18"
 seen_by_source = "https://web.archive.org/web/20250318173809/https://60years.associatedelectrics.com/bearings-3-16-x-5-16-in-flanged/"
 pack_qty = 2
@@ -15,4 +16,6 @@ links = [
 fits = [
   { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/store" },
   { kit = "kit/team-associated/rc10r5", type = "direct", source = "doc/team-associated/8021-page" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+documents = ["doc/team-associated/cat-10l4o"]

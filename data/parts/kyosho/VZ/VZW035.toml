@@ -2,10 +2,15 @@ id = "part/kyosho/VZW035"
 brand = "brand/kyosho"
 number = "VZW035"
 name = "SP Muffler Stay (FW-05/Evo./S II/EVOLVA)"
+gtin = "4955439776773"
 fits = [
   { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31480jp-fw05ske-p" },
   { kit = "kit/kyosho/fw-06", type = "replaces", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { kit = "kit/kyosho/v-one-rrr", type = "replaces", source = "doc/kyosho/31264-v-one-rrr-shimo-edition-p" },
+  { kit = "kit/kyosho/evolva", type = "replaces", source = "doc/kyosho/evolva-060322", notes = "Marked for the 2003 (option part) in Kyosho's Evolva 2003/2005 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 category = "engine-fuel"
-documents = ["doc/kyosho/31264-v-one-rrr-shimo-edition-p", "doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/fw-06-kt-231p-spop"]
+documents = ["doc/kyosho/31264-v-one-rrr-shimo-edition-p", "doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/fw-06-kt-231p-spop", "doc/kyosho/evolva-060322", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-s-060322"]

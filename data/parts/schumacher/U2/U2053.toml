@@ -1,12 +1,10 @@
 id = "part/schumacher/U2053"
 brand = "brand/schumacher"
 number = "U2053"
-name = "U2053"
+name = "Titanium Turnbuckle; purple - 25mm (pr)"
 seen_by = "2010-01-30"
 seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
+category = "turnbuckle"
 fits = [
   { kit = "kit/schumacher/cat-k1-aero", type = "direct", source = "doc/schumacher/cat-k1-aero-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
@@ -16,4 +14,6 @@ fits = [
   { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/mi6evo", type = "direct", source = "doc/schumacher/mi6evo-exploded", notes = "Shown on the car's exploded diagram" },
 ]
-documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-k1-exploded", "doc/schumacher/cat-sx3-exploded-l", "doc/schumacher/catsx2-exploded-iss2-l", "doc/schumacher/mi1-exploded", "doc/schumacher/mi1-v2-exploded", "doc/schumacher/mi3-exploded", "doc/schumacher/mi6evo-exploded"]
+documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-k1-exploded", "doc/schumacher/cat-sx3-exploded-l", "doc/schumacher/catsx2-exploded-iss2-l", "doc/schumacher/mi1-exploded", "doc/schumacher/mi1-v2-exploded", "doc/schumacher/mi3-exploded", "doc/schumacher/mi6evo-exploded", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi3-spares-archive"]
+name_source = "manufacturer"
+material = "titanium"

@@ -2,11 +2,15 @@ id = "part/kyosho/MZP411SC"
 brand = "brand/kyosho"
 number = "MZP411SC"
 name = "AutoScale NISSAN GT-R SUPER GT Safety Car"
-seen_by = "2017-02-16"
-seen_by_source = "https://web.archive.org/web/20170216090048/https://rc.kyosho.com/en/rccar/miniz/asc.html?p=2"
+seen_by = "2014-07-19"
+seen_by_source = "https://web.archive.org/web/20140719002920/http://kyosho.com/jpn/products/rc/parts_images/MZP411SC.jpg"
 gtin = "4548565180653"
 documents = ["doc/kyosho/mzp411sc-product-page"]
 category = "body"
 category_source = "curated"
 scale = "1/27"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp411sc.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-ma-010", type = "direct", source = "doc/kyosho/mzp411sc-product-page" },
+  { kit = "kit/kyosho/mini-z-ma-015", type = "direct", source = "doc/kyosho/mzp411sc-product-page" },
+]

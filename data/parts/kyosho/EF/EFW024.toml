@@ -6,9 +6,13 @@ pack_qty = 4
 released = "2026-01"
 gtin = "4548565515073"
 category = "suspension"
-documents = ["doc/kyosho/rc-newitem-2026-01-parts"]
+documents = ["doc/kyosho/rc-newitem-2026-01-parts", "doc/kyosho/efw024-product-page"]
 pack_qty_basis = "name"
 material = "plastic"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/efw024.html" },
+]
+fits = [
+  { kit = "kit/kyosho/fantom-ep-4wd", type = "direct", source = "doc/kyosho/efw024-product-page", notes = "Listed on the maker's Compatible Kits page" },
+  { kit = "kit/kyosho/plazma-mk3", releases = ["release/kyosho/30639"], type = "direct", source = "doc/kyosho/efw024-product-page", notes = "Listed on the maker's Compatible Kits page" },
 ]

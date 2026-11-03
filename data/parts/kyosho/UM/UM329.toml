@@ -2,6 +2,8 @@ id = "part/kyosho/UM329"
 brand = "brand/kyosho"
 number = "UM329"
 name = "Steel Pinion Gear(29T)1/48 Pitch"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401152554/http://kyosho.com/jpn/products/rc/parts_images/UM329.jpg"
 gtin = "4548565266272"
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "replaces", source = "doc/kyosho/34301-ultima-rb6-spop" },
@@ -11,12 +13,14 @@ fits = [
   { kit = "kit/kyosho/ultima-sc6", type = "replaces", source = "doc/kyosho/30859-ultima-sc6-spop" },
   { kit = "kit/kyosho/2rsa", type = "replaces", source = "doc/kyosho/34361t1-t2-outlaw-rampage-spop" },
   { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
+  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-29t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 material = "steel"
 category = "pinion"
+documents = ["doc/kyosho/um329-product-page", "doc/kyosho/vintage-160304-2-jp"]
 teeth = 29
 pitch_dp = 48
 links = [

@@ -2,8 +2,14 @@ id = "part/schumacher/CR652"
 brand = "brand/schumacher"
 number = "CR652"
 name = "125mm Super Flex 26GA Silicone sensor Wire"
+gtin = "5051294122492"
 seen_by = "2017-06-21"
 seen_by_source = "https://web.archive.org/web/20170621183459/http://www.racing-cars.com:80/scp/New_Cars_and_Parts/search.asp?subcatid=1019&templateid=69&sortname1=partno"
 name_de = "125mm Super Flex 26GA Silicone Sensor Wire"
 category = "wire"
-documents = ["doc/schumacher/mi7-manual"]
+documents = ["doc/schumacher/mi7-manual", "doc/schumacher/cougar-kd-spares-archive", "doc/schumacher/cougar-kf-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electrics/connectors-leads-wire/125mm-super-flex-26ga-silicone-sensor-wire-cr652" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

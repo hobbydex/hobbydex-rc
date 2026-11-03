@@ -6,8 +6,11 @@ seen_by = "2016"
 seen_by_source = "doc/kyosho/mzn179-nissan-180sx-im"
 gtin = "4548565311224"
 name_ja = "日産 180SX"
-documents = ["doc/kyosho/mzn179-nissan-180sx-im"]
+documents = ["doc/kyosho/mzn179-nissan-180sx-im", "doc/kyosho/mzn179-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn179.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-ma-020", releases = ["release/kyosho/32649jk"], type = "direct", source = "doc/kyosho/mzn179-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

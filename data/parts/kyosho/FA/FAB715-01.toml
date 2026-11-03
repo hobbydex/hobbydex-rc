@@ -5,8 +5,11 @@ name = "Rear Window Louver Set (for 1969 Ford Mustang)"
 released = "2026-06"
 gtin = "4548565513994"
 category = "body"
-documents = ["doc/kyosho/rc-newitem-2026-06-parts"]
+documents = ["doc/kyosho/rc-newitem-2026-06-parts", "doc/kyosho/fab715-01-product-page"]
 related = [
   { part = "part/kyosho/1969", relation = "for", notes = "link_part_refs" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/fab715-01.html" } ]
+fits = [
+  { kit = "kit/kyosho/fazer-mk2", releases = ["release/kyosho/34437t1", "release/kyosho/34475t1"], type = "direct", source = "doc/kyosho/fab715-01-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

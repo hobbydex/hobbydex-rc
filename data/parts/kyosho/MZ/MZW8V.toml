@@ -2,11 +2,15 @@ id = "part/kyosho/MZW8V"
 brand = "brand/kyosho"
 number = "MZW8V"
 name = "XSPEED MINI-Z Motor V"
+gtin = "4955439739648"
 seen_by = "2003-01"
 seen_by_source = "doc/kyosho/miniz-option"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/miniz-mr02-op-vol5-m" },
   { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/miniz-option" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-f1", type = "replaces", source = "doc/kyosho/mini-z-f1-060322", notes = "Marked for the Mini-Z F1 (option part) in Kyosho's Mini-Z F1 parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-overland", type = "replaces", source = "doc/kyosho/mini-z-overland060322", notes = "Marked for the Mini-Z Over Land (option part) in Kyosho's Mini-Z Over Land parts acceptable list" },
 ]
 category = "motor"
-documents = ["doc/kyosho/miniz-mr02-op-vol5-m", "doc/kyosho/miniz-option"]
+documents = ["doc/kyosho/miniz-mr02-op-vol5-m", "doc/kyosho/miniz-option", "doc/kyosho/mini-z-parts-tekigou", "doc/kyosho/mini-z-f1-060322", "doc/kyosho/mini-z-overland060322"]

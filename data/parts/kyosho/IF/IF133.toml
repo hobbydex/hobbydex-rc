@@ -2,6 +2,7 @@ id = "part/kyosho/IF133"
 brand = "brand/kyosho"
 number = "IF133"
 name = "Brake Disk"
+gtin = "4955439738733"
 category = "drivetrain"
 fits = [
   { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
@@ -29,5 +30,6 @@ fits = [
   { kit = "kit/kyosho/fw-06", type = "direct", source = "doc/kyosho/fw-06-kt-231p-spop" },
   { kit = "kit/kyosho/mfr", type = "direct", source = "doc/kyosho/31183-mfr-mm-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
+  { kit = "kit/kyosho/mad-force", type = "replaces", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (option part) in Kyosho's Monster Truck parts acceptable list" },
 ]
-documents = ["doc/kyosho/31042k-drx-chassis-kit-p", "doc/kyosho/31071-dmt-spop", "doc/kyosho/31081-inferno-mp75-p"]
+documents = ["doc/kyosho/31042k-drx-chassis-kit-p", "doc/kyosho/31071-dmt-spop", "doc/kyosho/31081-inferno-mp75-p", "doc/kyosho/monstertruck-060322"]

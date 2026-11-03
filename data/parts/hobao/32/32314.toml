@@ -1,8 +1,16 @@
 id = "part/hobao/32314"
 brand = "brand/hobao"
 number = "32314"
-name = "32314"
+name = "M3 x 14mm HEX SOCKET HEAD CAP SCREWS"
 notes = "A set; the drawings label its pieces Cap Head; Cap Screw 3x14mm; CNC Alum 7075; Screw 3x14mm"
 documents = ["doc/hobao/cml-hyper-7-tq2-buggy-complete-kit-parts-reference", "doc/hobao/cml-dc-1-rock-crawler-instruction-manual", "doc/hobao/cml-hb-vste-c150gn-instruction-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
+name_source = "manufacturer"
+pack_qty = 10
+pack_qty_basis = "name"
+links = [
+  { site = "HoBao", url = "https://hobaorc.myshopify.com/products/32314-m3-x-14mm-hex-socket-head-cap-screws-10pcs" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x14-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -1,10 +1,12 @@
 id = "part/kyosho/1380"
 brand = "brand/kyosho"
 number = "1380"
-name = "1380"
+name = "E-Clips E1.5"
+name_source = "manual"
 seen_by = "2006-05"
 seen_by_source = "doc/kyosho/30021-tf-5-m"
-notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-documents = ["doc/kyosho/30021-tf-5-m", "doc/kyosho/31352-infst-r-m"]
-category = "misc"
-category_source = "fallback"
+documents = ["doc/kyosho/30021-tf-5-m", "doc/kyosho/31352-infst-r-m", "doc/kyosho/30101-kx-one-m", "doc/kyosho/30101-kx-one-p", "doc/kyosho/30521-b-twinforce-m", "doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30522-b-twinforcecsp-m"]
+category = "clip"
+equivalent_to = [
+  { spec = "spec/eclip/1.5mm", match = "functional", notes = "Shaft size from the name" },
+]

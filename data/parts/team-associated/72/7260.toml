@@ -1,10 +1,16 @@
 id = "part/team-associated/7260"
 brand = "brand/team-associated"
 number = "7260"
-name = "7260"
+name = "4-40 Small Pattern Plain Nut"
 seen_by = "1994"
 seen_by_source = "doc/team-associated/6002-dirtburners"
 notes = "Named by its number only: the name on the scanned team-associated manual page was not clear enough to take"
-documents = ["doc/team-associated/6002-dirtburners"]
-category = "misc"
-category_source = "fallback"
+documents = ["doc/team-associated/6002-dirtburners", "doc/team-associated/cat-t4ft", "doc/team-associated/cat-10l4o"]
+category = "nut"
+name_source = "manual"
+pack_qty = 12
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]

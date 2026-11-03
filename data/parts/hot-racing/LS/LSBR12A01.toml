@@ -2,6 +2,7 @@ id = "part/hot-racing/LSBR12A01"
 brand = "brand/hot-racing"
 number = "LSBR12A01"
 name = "Aluminum Axle Upper Link Mount Losi Super Baja/Rock Rey"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/lsbr12a01-aluminum-axle-upper-link-mount-losi-super-baja-rock-rey", kind = "maker" },
 ]
@@ -9,4 +10,7 @@ category = "chassis"
 material = "aluminium"
 fits = [
   { kit = "kit/losi/rock-rey", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+related = [
+  { part = "part/losi/LOS252071", relation = "replaces", notes = "link_part_refs" },
 ]

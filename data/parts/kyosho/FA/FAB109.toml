@@ -3,12 +3,15 @@ brand = "brand/kyosho"
 number = "FAB109"
 name = "Complete Body (Lancer Evolution X KX4) FAZER"
 status = "discontinued"
+seen_by = "2015-04-01"
+seen_by_source = "https://web.archive.org/web/20150401215828/http://kyosho.com/jpn/products/rc/parts_images/FAB109.jpg"
 gtin = "4548565267323"
 category = "body"
 documents = ["doc/kyosho/fab109-product-page"]
 depicts = { make = "Mitsubishi", model = "Lancer Evolution X KX4" }
 fits = [
   { kit = "kit/kyosho/fazer", type = "direct", source = "doc/kyosho/30919-fazer-ve-x-lancer-spop" },
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30919-fazer-ve-x-lancer-spop" },
 ]
 scale = "1/10"
 links = [

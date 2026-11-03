@@ -10,6 +10,7 @@ status = "released"
 depicts = { make = "General Dynamics", model = "M1A2 Abrams" }
 documents = ["doc/tamiya/56041-product-page", "doc/tamiya/newitems-month", "doc/tamiya/56041-manual-de", "doc/tamiya/56041-m1a2-abrams-bedienung"]
 released = "2017-12"
+released_source = "doc/tamiya/newitems-month"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56041", kind = "fan-site" },
 ]
@@ -46,12 +47,9 @@ contains = [
   { part = "part/tamiya/19005742", role = "kit", source = "doc/tamiya/56041-manual-de" },
   { part = "part/tamiya/19008205", role = "kit", source = "doc/tamiya/56041-manual-de" },
   { part = "part/tamiya/19115414", role = "kit", source = "doc/tamiya/56041-manual-de" },
-  { part = "part/tamiya/19115456", role = "kit", source = "doc/tamiya/56041-manual-de" },
-  { part = "part/tamiya/19115460", role = "kit", source = "doc/tamiya/56041-manual-de" },
   { part = "part/tamiya/19115465", role = "kit", source = "doc/tamiya/56041-manual-de" },
   { part = "part/tamiya/19115467", role = "kit", source = "doc/tamiya/56041-manual-de" },
   { part = "part/tamiya/19225077", role = "kit", source = "doc/tamiya/56041-manual-de" },
-  { part = "part/tamiya/19225133", role = "kit", source = "doc/tamiya/56041-manual-de", qty = 32 },
   { part = "part/tamiya/19335411", role = "kit", source = "doc/tamiya/56041-manual-de", qty = 2 },
   { part = "part/tamiya/19335412", role = "kit", source = "doc/tamiya/56041-manual-de" },
   { part = "part/tamiya/19335782", role = "kit", source = "doc/tamiya/56041-manual-de" },
@@ -124,4 +122,7 @@ contains = [
   { part = "part/tamiya/53689", role = "kit", source = "doc/tamiya/56041-manual-de", qty = 1 },
   { part = "part/tamiya/94392", role = "kit", source = "doc/tamiya/56041-manual-de" },
   { part = "part/tamiya/94802", role = "kit", source = "doc/tamiya/56041-manual-de", qty = 10, step = "BC8" },
+  { part = "part/tamiya/19115466", role = "kit", source = "doc/tamiya/56041-manual-de" },
+  { part = "part/tamiya/19115468", role = "kit", source = "doc/tamiya/56041-manual-de" },
+  { part = "part/tamiya/19225183", role = "kit", source = "doc/tamiya/56041-manual-de", qty = 32 },
 ]

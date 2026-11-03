@@ -1,0 +1,17 @@
+id = "part/schumacher/CR119"
+brand = "brand/schumacher"
+number = "CR119"
+name = "Heatshrink 1.5mm dia Black"
+seen_by = "2012-02"
+seen_by_source = "doc/schumacher/cougar-sv2-manual"
+notes = "Name read by OCR from a scanned schumacher manual; verify before relying on exact wording"
+name_source = "ocr"
+documents = ["doc/schumacher/cougar-sv2-manual", "doc/schumacher/mi1-spares-archive", "doc/schumacher/mi5-spares-archive"]
+pack_qty = 20
+pack_qty_basis = "name"
+category = "wire"
+color = "black"
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

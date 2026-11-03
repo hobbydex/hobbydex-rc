@@ -7,6 +7,7 @@ pack_qty = 12
 pack_qty_basis = "manual"
 former_names = ["/ RB SCW021B"]
 category = "ball-end"
+documents = ["doc/kyosho/la43h-product-page", "doc/kyosho/vintage-160304-2-jp"]
 ball_mm = 5.8
 fits = [
   { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
@@ -25,6 +26,10 @@ fits = [
   { kit = "kit/kyosho/turbo-optima", type = "direct", source = "doc/kyosho/30623-mm02-spop" },
   { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30625-mm03-spop" },
   { kit = "kit/kyosho/ez-series", type = "direct", source = "doc/kyosho/34405-sandmaster2-0-spop" },
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/la43h.html" },

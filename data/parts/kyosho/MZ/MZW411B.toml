@@ -2,9 +2,14 @@ id = "part/kyosho/MZW411B"
 brand = "brand/kyosho"
 number = "MZW411B"
 name = "Friction Shock Set(MR-02.03-MM/LL)"
+seen_by = "2011-07-03"
+seen_by_source = "https://web.archive.org/web/20110703064810/http://kyosho.com/jpn/products/rc/parts_images/MZW411B-3.gif"
 name_ja = "フリクションダンパーセット(MR-02,03-MM/LL)"
 gtin = "4548565183746"
 category = "shock"
 documents = ["doc/kyosho/mzw411b-friction-shock-set", "doc/kyosho/mzw411b-product-page"]
 shock_part = "complete"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw411b.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", releases = ["release/kyosho/32334gm", "release/kyosho/32334or"], type = "direct", source = "doc/kyosho/mzw411b-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

@@ -2,9 +2,13 @@ id = "part/arrma/ARAC3265"
 brand = "brand/arrma"
 number = "ARAC3265"
 name = "Clear Body Nero 6S BLX"
+status = "discontinued"
 color = "clear"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-clear-body-nero-6s-blx/ARAC3265.html" },
 ]
 category = "body"
 numbers = ["AR406007"]
+fits = [
+  { kit = "kit/arrma/nero-6s-blx", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Listed for the ARRMA Nero 6S BLX (link_car_kits.py)" },
+]

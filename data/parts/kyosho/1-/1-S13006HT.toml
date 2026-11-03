@@ -7,12 +7,14 @@ pack_qty = 8
 pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/screw/m3x6-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "titanium"
 category = "screw"
+documents = ["doc/kyosho/1-s13006ht-product-page", "doc/kyosho/v-one-r4-151117"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s13006ht.html" },
 ]

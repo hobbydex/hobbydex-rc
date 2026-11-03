@@ -2,6 +2,7 @@ id = "part/team-associated/5420"
 brand = "brand/team-associated"
 number = "5420"
 name = "FT Silicone Shock Fluid, 10wt (100 cSt)"
+status = "discontinued"
 seen_by = "2025-04-20"
 seen_by_source = "https://web.archive.org/web/20250420040117/https://60years.associatedelectrics.com/ft-silicone-shock-fluid-10wt-100-cst/"
 gtin = "784695054202"
@@ -15,4 +16,7 @@ viscosity_wt = 10
 category = "oil-grease"
 fits = [
   { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4rs" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+documents = ["doc/team-associated/cat-t4rs", "doc/team-associated/cat-10l4o"]

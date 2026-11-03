@@ -3,11 +3,13 @@ kit = "kit/tamiya/high-lift"
 brand = "brand/tamiya"
 number = "58372"
 name = "Ford F-350 High-Lift"
+gtin = "4950344583720"
 year = 2006
 kind = "kit"
 status = "released"
 depicts = { make = "Ford", model = "F-350" }
 released = "2006-09-30"
+released_source = "https://www.tamiya.com/japan/products/58372/index.html"
 notes = "Release day in Japan from Tamiya's Japanese product page; Tamiya classes it as a regular product, made continuously"
 documents = ["doc/tamiya/58372-product-page", "doc/tamiya/newitems-month", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts", "doc/tamiya/58372-manual-usa", "doc/tamiya/58372-parts-list-usa", "doc/tamiya/58372-anleitung-instruction-ford-f-350", "doc/tamiya/58372-manual-de"]
 links = [
@@ -77,7 +79,6 @@ contains = [
   { part = "part/tamiya/19115170", role = "kit", source = "doc/tamiya/58372-manual-de" },
   { part = "part/tamiya/19115171", role = "kit", source = "doc/tamiya/58372-manual-de" },
   { part = "part/tamiya/19335128", role = "kit", source = "doc/tamiya/58372-manual-de" },
-  { part = "part/tamiya/19335159", role = "kit", source = "doc/tamiya/58372-manual-de" },
   { part = "part/tamiya/19335455", role = "kit", source = "doc/tamiya/58372-manual-de" },
   { part = "part/tamiya/19400458", role = "kit", source = "doc/tamiya/58372-manual-de" },
   { part = "part/tamiya/19405620", role = "kit", source = "doc/tamiya/58372-manual-de" },
@@ -87,7 +88,6 @@ contains = [
   { part = "part/tamiya/19804163", role = "kit", source = "doc/tamiya/58372-manual-de", qty = 10, step = "BE1" },
   { part = "part/tamiya/19804200", role = "kit", source = "doc/tamiya/58372-manual-de", qty = 10, step = "BG1" },
   { part = "part/tamiya/19804230", role = "kit", source = "doc/tamiya/58372-manual-de", qty = 10, step = "BC8" },
-  { part = "part/tamiya/19804793", role = "kit", source = "doc/tamiya/58372-manual-de", qty = 2, step = "BD7", notes = "Kit needs 2 of this pack" },
   { part = "part/tamiya/19805185", role = "kit", source = "doc/tamiya/58372-manual-de", qty = 2, step = "BF8" },
   { part = "part/tamiya/19805389", role = "kit", source = "doc/tamiya/58372-manual-de" },
   { part = "part/tamiya/19805556", role = "kit", source = "doc/tamiya/58372-manual-de", qty = 10, step = "BA4" },
@@ -133,4 +133,6 @@ contains = [
   { part = "part/tamiya/53174", role = "kit", source = "doc/tamiya/58372-manual-de" },
   { part = "part/tamiya/87004", role = "kit", source = "doc/tamiya/58372-manual-de" },
   { part = "part/tamiya/87025", role = "kit", source = "doc/tamiya/58372-manual-de" },
+  { part = "part/tamiya/19335459", role = "kit", source = "doc/tamiya/58372-manual-de" },
+  { part = "part/tamiya/19804193", role = "kit", source = "doc/tamiya/58372-manual-de", qty = 2, step = "BD7", notes = "Kit needs 2 of this pack" },
 ]

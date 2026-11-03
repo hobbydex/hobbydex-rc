@@ -6,11 +6,11 @@ gtin = "4944925034404"
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/mugen/mtx7", type = "replaces", source = "doc/mugen/mtx7r-part-list", notes = "Also listed by doc/mugen/mtx7-part-list" },
+  { kit = "kit/mugen/mtx7", type = "direct", source = "doc/mugen/mtx7r-part-list", notes = "Also listed as replaces by doc/mugen/mtx7r-part-list; Also listed by doc/mugen/mtx7-part-list" },
   { kit = "kit/mugen/mrx7", type = "direct", source = "doc/mugen/mrx7-part-list" },
   { kit = "kit/mugen/mrx6", type = "direct", source = "doc/mugen/mrx6x-part-list", notes = "Also listed by doc/mugen/mrx6r-part-list; Also listed by doc/mugen/mrx6-part-list" },
-  { kit = "kit/mugen/mtx6", type = "replaces", source = "doc/mugen/mtx-6r-part-list" },
+  { kit = "kit/mugen/mtx6", type = "direct", source = "doc/mugen/mtx-6r-part-list", notes = "Also listed as replaces by doc/mugen/mtx-6r-part-list" },
 ]
 category = "shock"
 shock_part = "body"
-links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/DAMPER-CASE-HC-MRX-MTX/H2511" } ]
+links = [{ site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/DAMPER-CASE-HC-MRX-MTX/H2511" }, { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/DAMPER-CASE-HC-MRX-MTX/H2511a" }]

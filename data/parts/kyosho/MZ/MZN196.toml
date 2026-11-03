@@ -6,8 +6,12 @@ seen_by = "2019-06"
 seen_by_source = "doc/kyosho/mzn196-chevrolet-corvette-zr1-im"
 gtin = "4548565365487"
 name_ja = "シボレー コルベット ZR1"
-documents = ["doc/kyosho/mzn196-chevrolet-corvette-zr1-im"]
+documents = ["doc/kyosho/mzn196-chevrolet-corvette-zr1-im", "doc/kyosho/mzn196-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn196.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-03", releases = ["release/kyosho/32340bl", "release/kyosho/32340or", "release/kyosho/32340wr", "release/kyosho/32342gm", "release/kyosho/32342y", "release/kyosho/32343or", "release/kyosho/32343w", "release/kyosho/32344as", "release/kyosho/32344bkr", "release/kyosho/32345bly", "release/kyosho/32345gy", "release/kyosho/32348la", "release/kyosho/32349go"], type = "direct", source = "doc/kyosho/mzn196-product-page", notes = "Listed on the maker's Compatible Kits page" },
+  { kit = "kit/kyosho/mini-z-rwd", type = "direct", source = "doc/kyosho/mzn196-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

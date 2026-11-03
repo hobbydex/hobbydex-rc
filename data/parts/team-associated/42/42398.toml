@@ -2,11 +2,15 @@ id = "part/team-associated/42398"
 brand = "brand/team-associated"
 number = "42398"
 name = "ENDURO RC10TT SHOCK CAP SET, GOLD"
+gtin = "784695423985"
 category = "merchandise"
 category_source = "curated"
 numbers = ["AS42398"]
 documents = ["doc/team-associated/cml-distribution-spares"]
 links = [
-  { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/AS42398/team-associated-enduro-rc10tt-shock-cap-set-gold", kind = "dealer" },
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/enduro-shock-cap-set-gold/" },
 ]
 color = "gold"
+fits = [
+  { kit = "kit/team-associated/rc10-trail-truck", type = "direct", source = "doc/team-associated/store" },
+]

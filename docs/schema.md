@@ -129,14 +129,14 @@ notes = "..."
 
 A model line, independent of year or edition. `category` is the kit type:
 buggy | truggy | stadium-truck | short-course | monster | desert-truck |
-truck | tractor-truck | race-truck | crawler | touring | gt | on-road | formula | pan-car | rally |
+truck | tractor-truck | tractor | race-truck | crawler | touring | gt | on-road | formula | pan-car | rally |
 street-basher | drift | drag | lowrider | oval | speed-run | kart | motorcycle |
 snowmobile | tank | construction | trailer | boat, or car for a car that fits none of
 them. snowmobile is a snow vehicle on drive tracks. gt is a GT-body racing car on a buggy-style chassis (1/8 GT class).
 on-road is an on-road racer with independent suspension that is not a touring
 car (1/8 nitro or electric on-road). Scale is never in the type name; it is
 its own field. trailer is a standalone trailer or dolly, with no `drive` or `power`
-(a rigid truck sold with its trailer stays truck). tractor-truck is a semi tractor unit (Sattelzugmaschine, tractor unit or tractor truck by the maker's name, or a hauler with a fifth wheel and no body, such as Tamiya's hauler series), with or without a trailer it is sold with (Arocs Sattelzug mit Kippauflieger); rigid bodies (tippers, dump trucks, hook lifts, cranes, Unimog) are truck. Race trucks stay race-truck. drag is a straight-line drag
+(a rigid truck sold with its trailer stays truck). tractor-truck is a semi tractor unit (Sattelzugmaschine, tractor unit or tractor truck by the maker's name, or a hauler with a fifth wheel and no body, such as Tamiya's hauler series), with or without a trailer it is sold with (Arocs Sattelzug mit Kippauflieger); rigid bodies (tippers, dump trucks, hook lifts, cranes, Unimog) are truck. Race trucks stay race-truck. tractor is a farm tractor (Tamiya's R/C Tractor Kumamon Version and Farm King Wheelie, the Zetors of 3DTLAC), never a road tractor unit, which is tractor-truck or truck. drag is a straight-line drag
 racer (no prep drag cars, drag trucks); lowrider a
 hopping lowrider on hydraulics or servo-lifted suspension. `scale` as "1/10". `name` does not repeat the brand: the site prints the brand in front, so "Hosim 16207 RTR" is stored as "16207 RTR" (validate.py checks it).
 `drive`: 2wd | 4wd | 6wd | 8wd (driven wheels), fwd (front-wheel drive) or
@@ -169,6 +169,8 @@ rebrand_of = [
   { kit = "kit/ftx/vantage", parts = "interchangeable", notes = "Same car sold by HobbyKing under its Quanum brand" },
 ]
 ```
+
+`certainty` (optional on any `rebrand_of` row, kit, release or part): `"likely"` marks a rebrand backed only by matching specs or looks, not by a maker statement, matching part numbers or an owner's statement. Absent means confirmed. Rebranders never name the original maker, so spec matching is normal evidence; the site shows a likely row as "Likely rebrand of X" (and "Likely rebranded as Y" on the other side). A release may carry `rebrand_of` too, with `release` as the target (`{ release = "release/yikong/yk41015-...", certainty = "likely", source = "doc/..." }`), where one kit is sold in bodies that match different originals.
 
 `supersedes` (optional, on the newer kit): the kit this platform replaces, a kit id of the same brand, one predecessor per kit. Two sources: the maker says so (cited in `notes`), or the kits are numbered generations of one line with the same category, scale and drive: `<line><n>` is replaced by the next number of that line that exists (BD7 -> BD8; BD5 -> BD7 when there is no BD6). Variant suffixes (BD10LC, TA07 PRO) are a line of their own and take no link. Numbers that are model codes rather than generations take none. The releases stay on the kit they were sold for; the site shows "Replaces" and "Replaced by" on the platform page.
 
@@ -260,6 +262,15 @@ contains = [
 - `listed`: appears in the release's parts list without a kit or option mark
   (tools, consumables, related products, or lists that have no such marks).
 
+`listed_in` (optional, only with role `kit`): the document that listed the
+part before a maker manual showed it in the box. A row stored as `listed` (from
+the maker's store or spares list) whose part a maker manual shows in the box
+(a bag or step table, a quantity label, a part-list drawing) becomes `kit` with
+the manual as `source`, and the earlier source moves to `listed_in`, so no
+evidence is lost. `listed_in` is an existing document other than `source` (the store or spares list the row was read from need not be among the release's `documents`).
+A `kit` or `option` row is never changed by a manual, and a row is never
+downgraded to `listed`.
+
 Rows read from a build manual also carry `qty`, the number of pieces the car
 uses (summed over the steps that use the part), and `step`, the manual's
 reference ("Bag 4 - Step 2"). Rows read from a parts list have neither.
@@ -299,11 +310,7 @@ an announced release it is the planned date.
 
 A manual's printed date is never `released`: a print month from a manual (Traxxas R00 code, Horizon "Created MM/YY") or a copyright year becomes `seen_by` (below). Traxxas owner's manuals print a code `YYMMDD <doc>-R00` (R00 is the first print; a later revision is a reprint and is never used); Horizon brands' manuals print `Created MM/YY`. The bound's `notes` line names the code or stamp. A print can precede the announcement, so an `announced` date keeps its place and the print month goes in `notes` only.
 
-`released_source`: set only when the date comes from a fan site rather than
-the maker; `"TamiyaBase"` for a Tamiya release dated from TamiyaBase (its
-owner allowed it) when Tamiya's own pages give no first-release day, with the
-model's TamiyaBase link in `links` (kind `fan-site`). The maker's own date
-wins when both exist.
+`released_source` (required with `released` or `year`; audit `date-without-source` lists the releases without it): what states the date. The maker's page that shows it (the https URL; Kyosho's "Sale date", Tamiya's Japanese product page, a store's release tag), a dated news post or the monthly new-items list as a `doc/` id, or `"TamiyaBase"` for a Tamiya release dated from TamiyaBase (its owner allowed it) when Tamiya's own pages give no first-release day, with the model's TamiyaBase link in `links` (kind `fan-site`). The maker's own date wins when both exist. A year that comes from a manual's date or a shop's listing day is not a release year: remove it and keep the date as `seen_by`.
 
 `announced` (optional, `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, at the precision the source gives): the day the maker announced the release: its news, press or new-product page, or the earliest video the brand posts that shows the product (any video type; a video showing a model without colour applies to that model's releases). `announced_source` is required with `announced` and never without it: the https URL that day comes from, the maker's news or press post, product page or video, or a post of a news site we read (Big Squid RC, Red RC, CompetitionX, Circus RC, LiveRC) when no maker page gives the day (`links` then carries it as kind `press`, a courtesy link and the source of that day only, never of `released`). The maker's page is also among the release's documents. Precedence everywhere: `released` or `year` (a date a source states as the release), then `announced`, then `seen_by`. An announced date is not after `released` when both exist. An announced day is never after the release's `seen_by` bound (the car was on sale by then): a source dated later than the bound is not the announcement (audit `announced-after-seen-by`). The site shows an announced-only release as "announced Mar 2019" with no asterisk, and names the source next to it.
 
@@ -313,7 +320,7 @@ wins when both exist.
 
 A capture of any page that shows the item (its number is on the page, a listing or a related-products block included) gives `seen_by` at the capture day: the earliest such capture wins, and a later date is never written over an earlier one (decisions, 2026-10-28).
 
-`seen_by_source` (with `seen_by`, and only with it): the capture the month comes from, `https://web.archive.org/web/<14-digit timestamp>/<original URL>`; or, when the bound is the day a maker's own video from its channel's first 60 days was uploaded (back catalogue, not a launch), the video's `https://www.youtube.com/watch?v=<id>`; or, when the month is the day the maker's own Shopify shop published the product (its products.json `published_at`), the maker's product page `https://<host>/products/<handle>`; or, when the month is the earliest customer review on the maker's own product page (the review's JSON-LD datePublished: a review proves the product was on sale that day), the product page `https://<host>/products/<handle>`; or, when the month is the day we first saw the maker's own page that names the release (one of its links without kind, sources, the url of a product-page document or non-catalogue document pages), that page's https URL; or, when the bound is a manual's printed date (a copyright line, a print code, a Created stamp), the maker's page or file for that release's own manual, the `page` or `url` of the manual document in the release's `documents`. Or, when the bound is the printed date of a document the release or part lists (manual, supplement, parts list, exploded view, setup sheet, catalogue), the document's id `doc/...`; its `printed` equals `seen_by`, year or year-month as printed. This is the lowest rung: it only sets a `seen_by` that is missing or later. or, when the bound is the `<lastmod>` day of the maker's product sitemap that lists the record's own page exactly (its link, source, product page or document page), that sitemap's https URL (`https://<host>/....xml`, a host of the brand or of the record's links; `seen_by` then carries the day, `YYYY-MM-DD`). Or, for a year bound (`seen_by` = `YYYY`), the RC Scrapyard model page (https://www.rcscrapyard.net/....htm) that states "introduced ... in YYYY"; the release lists that page as a `fan-site` link. It never replaces a maker-stated date or an earlier capture, and never sets `released` (decisions, 2026-10-30). Set both or neither, never together with `released` or `year`.
+`seen_by_source` (with `seen_by`, and only with it): the capture the month comes from, `https://web.archive.org/web/<14-digit timestamp>/<original URL>`; or, when the bound is the day a maker's own video from its channel's first 60 days was uploaded (back catalogue, not a launch), the video's `https://www.youtube.com/watch?v=<id>`; or, when the month is the day the maker's own Shopify shop published the product (its products.json `published_at`), the maker's product page `https://<host>/products/<handle>`; or, when the month is the earliest customer review on the maker's own product page (the review's JSON-LD datePublished: a review proves the product was on sale that day), the product page `https://<host>/products/<handle>`; or, when the month is the day we first saw the maker's own page that names the release (one of its links without kind, sources, the url of a product-page document or non-catalogue document pages), that page's https URL; or, when the bound is a manual's printed date (a copyright line, a print code, a Created stamp), the maker's page or file for that release's own manual, the `page` or `url` of the manual document in the release's `documents`. Or, when the bound is the printed date of a document the release or part lists (manual, supplement, parts list, exploded view, setup sheet, catalogue), the document's id `doc/...`; its `printed` equals `seen_by`, year or year-month as printed. This is the lowest rung: it only sets a `seen_by` that is missing or later. or, when the bound is the `<lastmod>` day of the maker's product sitemap that lists the record's own page exactly (its link, source, product page or document page), that sitemap's https URL (`https://<host>/....xml`, a host of the brand or of the record's links; `seen_by` then carries the day, `YYYY-MM-DD`). Or, when the bound is the day a maker's own news post (`https://<brand host>/news_info.php?sn=N`, on the brand's own site, for a release) was up and the post names the release by its item number, `seen_by` at month or day precision (the post's day); the importer sets it only when the number is in the post's text, and it is never raised, and never sets `released`, `year` or `announced`. Or, for a year bound (`seen_by` = `YYYY`), the RC Scrapyard model page (https://www.rcscrapyard.net/....htm) that states "introduced ... in YYYY"; the release lists that page as a `fan-site` link. It never replaces a maker-stated date or an earlier capture, and never sets `released` (decisions, 2026-10-30). Set both or neither, never together with `released` or `year`.
 
 A manual's date is an on-sale bound, not a release year (decisions.md, 2026-10-20). A copyright year gives `seen_by` at year precision, a print month (Traxxas R00 code, Horizon "Created MM/YY") at month precision, and the release's `notes` say where it came from ("on sale by: the manual's copyright line (c) 2023"). The earliest bound wins: an earlier Wayback capture or shop date replaces a later `seen_by`, never the reverse. A release with `announced` keeps the announced date and gets no `seen_by`.
 
@@ -337,7 +344,9 @@ former_names = ["COMPOSITE STEERING BLOCK"]
 
 `ocr_names` (optional, a list of strings): the names OCR read from a manual or a scan for this part, kept only for the matching tools. The site never shows them and the search index does not hold them (`export.py` writes them with the rest of the record). A reading that has no letters, runs over 60 characters (several names in one) or is a single word is dropped (`former_names.ocr_clean()`). A reading that is the maker's own product page title for the part stays a former name.
 
-`universal` (optional, `true` or left out) with `universal_basis`: the part is sold for any car of a kind, not for a named model, so it does not count as unlinked (audit part-no-car-link, the Linked column of the statistics page). Basis `maker`: the maker or listing says universal or for all models (or sells its whole range by function for one scale of truck, as WEDICO does); `category`: the category is inherently universal (paint, decals, tools); `size`: sold by size or spec (a tyre or wheel by scale, diameter or hex, a scale accessory by scale); `engine`: a bearing, screw, gasket or part set of one engine (Picco .21, OS .21 RG, Thunder Tiger Pro .46, Traxxas TRX 2.5, FTX Force FC.18), named by the maker's page with no car; it keeps `applies_to` (the engine) and is the one basis that may. Never set because no car was found; a part with `applies_to` is never universal, except basis `engine`. tools/link_universal.py in hobbydex-tools sets it. A part may still carry `fits` rows.
+`universal` (optional, `true` or left out) with `universal_basis`: the part is sold for any car of a kind, not for a named model, so it does not count as unlinked (audit part-no-car-link, the Linked column of the statistics page). Basis `maker`: the maker or listing says universal or for all models (or sells its whole range by function for one scale of truck, as WEDICO does); `category`: the category is inherently universal (paint, decals, tools); `size`: sold by size or spec (a tyre or wheel by scale, diameter or hex, a scale accessory by scale); `engine`: a bearing, screw, gasket or part set of one engine (Picco .21, OS .21 RG, Thunder Tiger Pro .46, Traxxas TRX 2.5, FTX Force FC.18), named by the maker's page with no car; it keeps `applies_to` (the engine) and is the one basis that may. Basis `size` may also keep an `applies_to` that names only a vehicle class (buggy, truggy, short course, monster truck, crawler, touring, on-road, stadium truck, rally ...) with the scale stated by the part or its maker (owner decision 2026-11-03); never a named car, brand + model or chassis (the class words are `VEHICLE_CLASS_WORDS` in tools/validate.py). Never set because no car was found; a part with `applies_to` is never universal, except basis `engine` and that class-only `size` case. tools/link_universal.py in hobbydex-tools sets it. A part may still carry `fits` rows.
+
+`pack_qty` counts the units of the part as sold. A unit is one copy of the part together with the small pieces that belong to it and are useless on their own: the O-ring in a shock collar, the grub screw in a pinion, the clip on a ball stud, the nut on a wheel hub. 4 shock collars, each with its rubber ring, is 4. A set is different parts that are each a part in their own right, sold together: hinge pins plus E-clips, a pinion plus a hex key, shims of three sizes. A set has no single count: it is recorded as `includes` rows, one per kind with its own count, and on a review card it is "mixed". The same part in different sizes (screws of several lengths) is a set too.
 
 `pack_qty_basis` (optional, only with `pack_qty`): where the count came from, written right after it. `name`: the maker's part name states it (`(10)`, `10pcs`). `page`: the maker's (or a dealer's) product page states it. `includes`: the sum of the part's `includes` quantities (a bearing kit). `manual`: the count is printed in the maker's manual or parts list, the document is among the part's documents/sources (a line with the part's number and the count, `(10)` or `10pcs`). `photo`: counted on one product photo, which does not always show the whole pack, so this is the weakest basis; the site says so. `photos`: two or more independent photos of the item number gave the same count. `distributor`: a dealer's listing or product page states the count (RC Race Shop, RC Visions): a fallback basis, not the maker's. `owner`: checked by the project owner on the pack. A text basis (`name`, `page`, `includes`, `manual`, `distributor`) always wins over a photo count; a photo count that disagrees with a text count is never written (audit "pack-photo-disagrees"). A `pack_qty` with no basis was written before the basis existed and its source is not known (audit "pack-qty-no-basis").
 
@@ -586,6 +595,7 @@ Releases can carry a `gtin` too, the barcode on the kit's box.
 
 `links`: pages about this part, release or kit elsewhere, as `{ site, url }`
 (https only); the site shows them as buttons next to the web search.
+A maker address in a language the maker also publishes in is the English page of the same item when that page is cached and is a real page (not a server error): the English address replaces the other-language one in `links`, `url` and `page`. A `_source` field (`seen_by_source`, `announced_source`) keeps the page its date was read from, as captured (tools/link_language_variants.py in hobbydex-tools).
 `kind = "press"` marks a news or press site's post about the release or part (Big Squid RC, Red RC, CompetitionX, Circus RC, LiveRC); see `announced`.
 `kind = "dealer"` marks a retailer's or distributor's product page for this release or part, when the maker has none for it. It is a shop's page, never the maker's: the site shows it as "Dealer page: <host>", never as the product page. A release or part keeps a dealer link only when it has no maker product page (a maker link or a `product_page` document of the maker); a release has one, a part one per shop, each its own product page on the shop; tools/validate.py fails a release or part with a dealer link beside a maker link or product page. A shop's listing page that names several releases is a document of kind `catalog`, never a release's link.
 `kind = "maker"` marks a page of the brand's own shop or site that is not its product page (the Tamiya USA spare page of an 8-digit Tamiya spare, `{ site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/...", kind = "maker" }`); the site shows it as a maker page. A part with a maker-kind link keeps its dealer links (user, 2026-10-24), and tools/validate.py counts only a link with no kind as the maker product link for the dealer rule.
@@ -639,18 +649,19 @@ gives them the English name from tools/data/translate_fr_names.tsv, with a note)
 name or page says: `[{ part, relation }]` with relation requires (needs the
 other part: Tekno "requires TKR9057B"), fits (made to fit that part: Corally
 "fits part C-00180-022"), use-with, for (an accessory made for it: HUDY
-"Ejector for 106000"), replaces or same-colour (a paint the brand's own colour
+"Ejector for 106000"), replaces, same-part (the same part under two item numbers or names, as Traxxas lists some colours twice: 6855-RED and 6855R; recorded once, the site shows it from both sides) or same-colour (a paint the brand's own colour
 matching list gives as the same colour in another range, though the shade
 may differ slightly: Tamiya LP-1 Black, X-1 Black and TS-14 Black; recorded
 on each of the paints). Others are recorded on the citing part; the site
 shows it from both sides. tools/link_part_refs.py reads them from names.
+An aftermarket part (GPM, Hot Racing, RPM, Treal ...) that its maker page says replaces an original ("Replaces Traxxas stock TRA6832", "replaces stock ARRMA #AR330543", GPM "Manual number: 8550" under a name that says Traxxas) carries `replaces` to that part of the original's brand, so `related` may point across brands for this relation. The original's brand must be named next to the number and the number must be a part of that brand.
 A wheel nut that states its hex (17, 23 or 24 mm) is `use-with` each wheel hex or axle of the same brand that shares a release with it and, where both state a size, the same size; the row sits on the nut only, and the site shows "Used with" on the other part.
 
 `supersedes`: the part this one replaces, when the brand has replaced it with
 an upgraded version (`supersedes = "part/team-corally/C-00180-194"` on
 C-00180-714). The site shows it on both parts.
 
-`status` (optional): `discontinued` or `available`, the same words a release uses for being out of production. Set only where the maker or a shop states it: a note such as "Discontinued: ..." or "Listed in KO Propo's Discontinued Products Table", the store's DISC.. marker, a Kyosho product page filed under discontinued or with a discontinued buy box, or a name carrying "(Discontinued)". Left out when not stated; age never decides it. tools/link_part_status.py sets it from those statements and reruns after the importers. A successor the maker names in the discontinued part's notes carries `supersedes` back to the old part, unless two old parts name it.
+`status` (optional): `discontinued` or `available`, the same words a release uses for being out of production. Set only where the maker or a shop states it: a note such as "Discontinued: ..." or "Listed in KO Propo's Discontinued Products Table", the store's DISC.. marker, a Kyosho product page filed under discontinued or with a discontinued buy box, or a name carrying "(Discontinued)", or a Horizon Hobby product page whose newest cached copy states availability Discontinued (tools/link_horizon_status.py; a page never clears a stored discontinued). Left out when not stated; age never decides it. tools/link_part_status.py sets it from those statements and reruns after the importers. A successor the maker names in the discontinued part's notes carries `supersedes` back to the old part, unless two old parts name it.
 
 ## spec
 
@@ -658,6 +669,19 @@ A generic, brand-independent specification. Category-specific fields; for
 screws: `thread`, `length_mm`, `head` (countersunk | socket-cap | button |
 pan | flanged-socket-cap | flanged-button | flanged-pan | low-head | set | truss | hex (a hexagon head, with no socket: Tamiya's hex head screws, whose drive is jis); the brand names each code in [brand-hardware-names.md](brand-hardware-names.md)), `drive` (hex | torx | phillips | jis | slot; jis is the JIS B 1012 cross recess Tamiya uses, which takes a JIS driver, not a Phillips one), `standards`. No material:
 the same geometry exists in many materials.
+
+Inch screws (UNC and UNF threads, as the makers name them: "4-40", "2-56", "5-40", "8-32", "10-32") have `thread` as written ("4-40"), `thread_standard` ("UNC" or "UNF") and `length_in`, the length in inches as a reduced fraction in the form the names use ("1/2", "1 1/4", "2"). A decimal name ("1.25", ".625") is written as the same fraction. An inch spec has no `length_mm` and no metric conversion. `head` and `drive` are as for metric screws. Id: `spec/screw/unc-4-40x1-2in-button-hex` (standard, thread, then the length: "1-2in", "1_1-4in" for 1 1/4, "2in"), with `-tapping` for a self-tapping screw. A screw spec with `length_in` gets no drawing. tools/validate.py checks these (inch_screw_problems); tools/link_screw_specs.py writes them.
+
+```toml
+id = "spec/screw/unc-4-40x1-2in-button-hex"
+category = "screw"
+name = "4-40 UNC x 1/2 in button head screw, hex socket"
+thread = "4-40"
+thread_standard = "UNC"
+length_in = "1/2"
+head = "button"
+drive = "hex"
+```
 
 ```toml
 id = "spec/screw/m3x10-countersunk-hex"
@@ -1019,8 +1043,14 @@ short-course | stadium-truck), `position` (front | rear | front-rear |
 front-2wd | front-4wd), `wheel_size` (the rim diameter as written,
 `2.2"`, `2.2"/3.0"`), `insert` (closed-cell) and `mounting` (unmounted:
 tyres and inserts only | wheels-included: wheels in the box, to be mounted |
-pre-mounted | pre-mounted-not-glued). A tyre on a wheel links to the wheel
-hex spec like a wheel.
+pre-mounted | pre-mounted-not-glued) and `hardness` (the rubber or foam
+hardness in Shore A, a whole number from 5 to 100) with `hardness_source`
+(the https URL of the page that states it, required with it). `hardness` is
+filled only from a stated shore figure ("32Sh", "35 shore"; "28deg" where the
+brand's own texts say shore, Sweep), never from compound words (soft, hard) and
+never from a list of figures or a figure that belongs to another item; a
+degree sign alone (Kyosho, Atomic RC) is not stored. A tyre on a wheel links to
+the wheel hex spec like a wheel.
 
 Shock springs carry, when the name states them: `rate` (the brand's word:
 soft | medium | hard | super soft | super hard), `rate_n_mm` (XRAY's C=0.86),
@@ -1202,13 +1232,14 @@ modules, antennas) are not linked. tools/link_protocol_specs.py writes both
 
 `spec/connector/<slug>` (category "connector"): one connector family and
 size, as the makers name them: XT30, XT60, XT60H and XT90-S (anti-spark),
-XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC3 and IC5
-(EC-compatible), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
+XT90, XT150, AS150 and QS8 (anti-spark), EC2, EC3, EC5, EC8, IC2, IC3 and IC5
+(EC-compatible), Kyosho S-plug (Kyosho's 2-pin plug, named "S-plug" and "Super Plug"), Deans (T-plug), Traxxas iD, Traxxas high-current, Tamiya,
 mini Tamiya, JST-RCY, JST-XH (`jst-xh`, and `jst-xh-3` to `jst-xh-9` for the
 2S to 8S balance lead, pins = cells + 1), the two servo plugs (`servo-jr`
 with two bevelled corners and `servo-futaba`, the Futaba J plug with a lip;
 they plug into each other but are two shapes), bullets by diameter
-(`bullet-4mm`, `bullet-3.5mm`) and `banana-4mm`. Fields: `family`, `pins`
+(`bullet-4mm`, `bullet-3.5mm`), `banana-4mm`, LRP's `us-style` ("US style", no size stated) and `p5`
+("P5", LRP's 5 mm power plug). Fields: `family`, `pins`
 (the contact count, when a family has one), `pitch_mm` (contact spacing),
 `contact_mm` (pin or bullet diameter), `anti_spark` and `polarized`
 (booleans), and `polarization` (how the housing keys, in words). A current is set
@@ -1475,6 +1506,8 @@ url = "https://www.teamxray.com/downloads/xb2-26-part-list.pdf"
 file = "xb2-2026-part-list.pdf"
 releases = ["release/xray/320020", "release/xray/320021"]
 ```
+
+`title_source` (optional, with `title`): where a title that repeats the item number ("Tamiya 43501 43501: ...") was corrected from. The https URL of the maker page that names the item, when the title takes the name from it (the release's `sources.name`); "none: ..." when no maker page names it and the item number stands alone as the name; or the document's own title with a repeated token removed. The audit check `doc-placeholder-title` lists titles that still repeat a token or are only numbers.
 
 ## Videos
 

@@ -4,9 +4,13 @@ number = "92446BK"
 name = "Wheel (16-spoke / black)"
 gtin = "4955439793053"
 category = "wheel"
+documents = ["doc/kyosho/92446bk-product-page", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/v-one-s-060322"]
 color = "black"
 fits = [
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31362-fw05t-p" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/92446bk.html" },

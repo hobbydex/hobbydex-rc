@@ -27,7 +27,10 @@ fits = [
   { kit = "kit/schumacher/cougar-svr", type = "direct", source = "doc/schumacher/cougar-svr-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-ld2", type = "direct", source = "doc/schumacher/ld2-exploded", notes = "Shown on the car's exploded diagram" },
 ]
-documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-k2-exploded-links", "doc/schumacher/cat-l1-evo-exploded", "doc/schumacher/cat-sx3-exploded-l", "doc/schumacher/catl1r-exploded-diagram-v2", "doc/schumacher/cougar-kc-exploded", "doc/schumacher/cougar-laydown-exploded", "doc/schumacher/cougar-sv2-exploded", "doc/schumacher/cougar-svr-exploded", "doc/schumacher/icon-exploded", "doc/schumacher/icon2-exploded", "doc/schumacher/kf-exploded", "doc/schumacher/kr-exploded-l", "doc/schumacher/mi6evo-exploded", "doc/schumacher/mi7-exploded", "doc/schumacher/storm-st-exploded", "doc/schumacher/supastox-exploded", "doc/schumacher/supastox-gt-exploded"]
+documents = ["doc/schumacher/cat-k1-aero-exploded", "doc/schumacher/cat-k2-exploded-links", "doc/schumacher/cat-l1-evo-exploded", "doc/schumacher/cat-sx3-exploded-l", "doc/schumacher/catl1r-exploded-diagram-v2", "doc/schumacher/cougar-kc-exploded", "doc/schumacher/cougar-laydown-exploded", "doc/schumacher/cougar-sv2-exploded", "doc/schumacher/cougar-svr-exploded", "doc/schumacher/icon-exploded", "doc/schumacher/icon2-exploded", "doc/schumacher/kf-exploded", "doc/schumacher/kr-exploded-l", "doc/schumacher/mi6evo-exploded", "doc/schumacher/mi7-exploded", "doc/schumacher/storm-st-exploded", "doc/schumacher/supastox-exploded", "doc/schumacher/supastox-gt-exploded", "doc/schumacher/cougar-kf-spares-archive", "doc/schumacher/supastox-gt-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/nitro-off-road/riot/ball-bearing-4x8x3mm-red-seal-pr-u3075" } ]
 name_source = "manufacturer"
 color = "red"
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -2,8 +2,10 @@ id = "part/kyosho/VSW031"
 brand = "brand/kyosho"
 number = "VSW031"
 name = "2-Speed Transmission Set (For P Shaft)"
+gtin = "4955439773734"
 category = "gear"
 fits = [
   { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31483-fw05s-p" },
+  { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
 ]
-documents = ["doc/kyosho/31483-fw05s-p"]
+documents = ["doc/kyosho/31483-fw05s-p", "doc/kyosho/fw-05-060322"]

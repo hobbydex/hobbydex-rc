@@ -1,0 +1,18 @@
+id = "part/orca/OBHG77G3"
+brand = "brand/orca"
+number = "OBHG77G3"
+name = "HV GENERATION2 7700mAh 7.4V 100C RACE PACK"
+category = "battery"
+weight_g = 325
+dimensions_mm = [138, 47, 25]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/hv-generation2-7700mah-7-4v-100c-race-pack/" },
+]
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-7700mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 2
+capacity_mah = 7700
+c_rating = 100

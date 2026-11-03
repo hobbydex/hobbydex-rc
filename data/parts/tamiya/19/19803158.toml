@@ -2,12 +2,14 @@ id = "part/tamiya/19803158"
 brand = "brand/tamiya"
 number = "19803158"
 name = "950 Flanged Ball Bearing"
+pack_qty = 2
+pack_qty_basis = "manual"
 seen_by = "2018-10"
 seen_by_source = "doc/tamiya/42326-manual"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 equivalent_to = [
-  { spec = "spec/bearing/flanged-5x9x3", match = "close", notes = "Tamiya size code 950: 9 mm outer, 5 mm bore, 3 mm wide (usual width for this size, not confirmed for Tamiya)" },
+  { spec = "spec/bearing/flanged-5x9x3", match = "close", notes = "Tamiya size code 950: 5x9 mm bore x outer; width 3 mm per the usual size, not stated by Tamiya" },
 ]
 category = "bearing"
 documents = ["doc/tamiya/42326-manual", "doc/tamiya/42345-manual", "doc/tamiya/42364-manual"]

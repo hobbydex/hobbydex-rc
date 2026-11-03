@@ -2,6 +2,7 @@ id = "part/team-associated/1596"
 brand = "brand/team-associated"
 number = "1596"
 name = "FT Thread Locking Adhesive, blue"
+status = "discontinued"
 seen_by = "2025-01-15"
 seen_by_source = "https://web.archive.org/web/20250115152506/https://60years.associatedelectrics.com/ft-thread-locking-adhesive-blue/"
 color = "blue"
@@ -12,4 +13,7 @@ category = "glue"
 gtin = "784695015968"
 fits = [
   { kit = "kit/team-associated/rc28f", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+documents = ["doc/team-associated/cat-t4ft", "doc/team-associated/cat-10l4o"]

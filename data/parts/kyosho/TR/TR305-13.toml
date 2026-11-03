@@ -2,12 +2,16 @@ id = "part/kyosho/TR305-13"
 brand = "brand/kyosho"
 number = "TR305-13"
 name = "Pinion Gear (13T/DBX-VE)"
+seen_by = "2010-01-02"
+seen_by_source = "https://web.archive.org/web/20100102024318/http://kyosho.com/jpn/products/rc/parts_images/TR305-13.jpg"
 gtin = "4548565147649"
 fits = [
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
   { kit = "kit/kyosho/dmt", type = "replaces", source = "doc/kyosho/30843-dmt-ve-spop" },
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31047-dbx-dst-drt-drx-dbx-ve-parts-compati091020" },
 ]
 category = "pinion"
+documents = ["doc/kyosho/tr305-13-product-page"]
 teeth = 13
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/tr305-13.html" },

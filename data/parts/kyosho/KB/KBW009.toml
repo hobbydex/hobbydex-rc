@@ -6,4 +6,9 @@ gtin = "4548565448395"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "chassis"
+documents = ["doc/kyosho/kbw009-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kbw009.html" } ]
+fits = [
+  { kit = "kit/kyosho/mad-wagon", type = "direct", source = "doc/kyosho/34702-mad-wagon-spop" },
+  { kit = "kit/kyosho/kb10l", type = "direct", source = "doc/kyosho/34703-kb10l-tacoma-spop" },
+]

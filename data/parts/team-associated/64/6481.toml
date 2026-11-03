@@ -2,6 +2,14 @@ id = "part/team-associated/6481"
 brand = "brand/team-associated"
 number = "6481"
 name = "Rear spring (black)"
+status = "discontinued"
 category = "shock-spring"
 color = "black"
-documents = ["doc/team-associated/manual-b4-2rs"]
+documents = ["doc/team-associated/manual-b4-2rs", "doc/team-associated/cat-t4ft"]
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]
+gtin = "784695064812"
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Rear-Shock-Springs-Black-174-lb_1", kind = "dealer" },
+]

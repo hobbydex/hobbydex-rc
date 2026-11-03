@@ -5,8 +5,12 @@ name = "Shock Rod End (18mm/7075)"
 gtin = "4548565293759"
 name_source = "manufacturer"
 category = "rod-end"
+documents = ["doc/kyosho/pzw308-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw308.html" },
 ]
 material = "aluminium"
 material_grade = "7075"
+fits = [
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30423"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30423 (option part) in Kyosho's Plazma series parts acceptable list" },
+]

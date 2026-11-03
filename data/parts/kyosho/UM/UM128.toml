@@ -2,6 +2,7 @@ id = "part/kyosho/UM128"
 brand = "brand/kyosho"
 number = "UM128"
 name = "4.8mm Ball Stad (L)"
+gtin = "4955439728505"
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30068-t03-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
@@ -33,10 +34,12 @@ fits = [
   { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31283-evolva-p" },
   { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31584-fw05rr-kce-m" },
   { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/30048-lazer-zx7-spop" },
-  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30025-tf6sp-t01-spop" },
+  { kit = "kit/kyosho/tf-6", type = "direct", source = "doc/kyosho/30025-tf6sp-t01-spop" },
   { kit = "kit/kyosho/rage-ve", type = "direct", source = "doc/kyosho/30992-rage-ve-spop" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (standard part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 category = "ball-end"
 ball_mm = 4.8
-documents = ["doc/kyosho/30025-tf6sp-t01-spop", "doc/kyosho/30026-t01-tf7-spop", "doc/kyosho/30026-tf7-parts-list-v02"]
+documents = ["doc/kyosho/30025-tf6sp-t01-spop", "doc/kyosho/30026-t01-tf7-spop", "doc/kyosho/30026-tf7-parts-list-v02", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-s-060322"]

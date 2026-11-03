@@ -1,0 +1,20 @@
+id = "part/ruddog/RP-0467"
+brand = "brand/ruddog"
+number = "RP-0467"
+name = "Crawler 550 14T 5-Slot Brushed Motor"
+category = "motor"
+motor_type = "brushed"
+gtin = "4052133015891"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Crawler-550-14T-5-Slot-Brushed-Motor_1" },
+]
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
+turns = 14.0
+weight_g = 215
+diameter_mm = 35.75
+length_mm = 62.5
+lipo_cells = [3, 3]
+range = "ruddog/crawler-550-5-slot-brushed-motor"

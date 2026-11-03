@@ -3,4 +3,14 @@ brand = "brand/team-associated"
 number = "7230"
 name = "Ball cups, large"
 category = "rod-end"
-documents = ["doc/team-associated/b44-1-manual-preflight", "doc/team-associated/manual-b4-2rs"]
+documents = ["doc/team-associated/b44-1-manual-preflight", "doc/team-associated/manual-b4-2rs", "doc/team-associated/cat-t4ft", "doc/team-associated/cat-10l4o"]
+pack_qty = 12
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
+]
+gtin = "784695072305"
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Plastic-Ballstud-Cups-molded-large_1", kind = "dealer" },
+]

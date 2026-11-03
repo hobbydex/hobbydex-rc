@@ -1,0 +1,17 @@
+id = "part/schumacher/SFE1891F"
+brand = "brand/schumacher"
+number = "SFE1891F"
+name = "Tx Battery; Futaba 3PK+JR-4800mah 9.9v 1C LiFe"
+name_source = "manufacturer"
+seen_by = "2010-01-30"
+seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
+fits = [
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+documents = ["doc/schumacher/mi3-spares-archive", "doc/schumacher/mi5-spares-archive"]
+category = "battery"
+pack_qty = 3
+pack_qty_basis = "name"
+chemistry = "life"
+voltage = 9.9

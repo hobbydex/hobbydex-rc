@@ -2,7 +2,12 @@ id = "part/schumacher/U3170"
 brand = "brand/schumacher"
 number = "U3170"
 name = "Pins and Shims; Axle - Mi4/Mi5 4pr"
+gtin = "5051294021597"
 seen_by = "2010-01-30"
 seen_by_source = "https://web.archive.org/web/20100130022810/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=193&templateid=69&sortname1=partno"
 category = "washer-shim"
-documents = ["doc/schumacher/ft8-manual"]
+documents = ["doc/schumacher/ft8-manual", "doc/schumacher/mi3-spares-archive"]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/pins-and-shims-axle-4pr-mi3-mi7-ft8-u3170" } ]
+fits = [
+  { kit = "kit/schumacher/mi3", type = "direct", source = "doc/schumacher/mi3-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

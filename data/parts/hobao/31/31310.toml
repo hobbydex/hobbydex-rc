@@ -1,8 +1,16 @@
 id = "part/hobao/31310"
 brand = "brand/hobao"
 number = "31310"
-name = "31310"
+name = "M3 x 10mm HEX SOCKET HEAD SCREWS"
 notes = "A set; the drawings label its pieces CNC Alum 7075; crew; F/H Screw 3x10mm; Screw 3x10mm"
 documents = ["doc/hobao/cml-h2-buggy-complete-kit-parts-reference", "doc/hobao/cml-hyper-7-tq2-buggy-complete-kit-parts-reference", "doc/hobao/cml-hyper-cage-buggy-complete-kit-parts-reference"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
+name_source = "manufacturer"
+pack_qty = 10
+pack_qty_basis = "name"
+links = [
+  { site = "HoBao", url = "https://hobaorc.myshopify.com/products/31310-m3-x-10mm-hex-socket-head-screws-10pcs" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

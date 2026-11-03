@@ -9,3 +9,6 @@ category = "drivetrain"
 fits = [
   { kit = "kit/losi/lmt", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+related = [
+  { part = "part/losi/LOS-1805", relation = "replaces", notes = "link_part_refs" },
+]

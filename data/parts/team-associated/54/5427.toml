@@ -2,6 +2,7 @@ id = "part/team-associated/5427"
 brand = "brand/team-associated"
 number = "5427"
 name = "FT Silicone Shock Fluid, 15wt (150 cSt)"
+status = "discontinued"
 seen_by = "2025-04-24"
 seen_by_source = "https://web.archive.org/web/20250424190559/https://60years.associatedelectrics.com/ft-silicone-shock-fluid-15wt-150-cst/"
 gtin = "784695054271"
@@ -15,4 +16,7 @@ viscosity_wt = 15
 category = "oil-grease"
 fits = [
   { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/store" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4rs" },
+  { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/cat-10l4o" },
 ]
+documents = ["doc/team-associated/cat-t4rs", "doc/team-associated/cat-10l4o"]

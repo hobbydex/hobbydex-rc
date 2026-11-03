@@ -1,0 +1,11 @@
+id = "part/himoto/06056"
+brand = "brand/himoto"
+number = "06056"
+name = "06056"
+category = "misc"
+category_source = "fallback"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/python-xv3", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/viper-xst", releases = ["release/himoto/HI6103", "release/himoto/HI6103E", "release/himoto/HI6103M"], type = "direct", source = "doc/himoto/option-parts" },
+]

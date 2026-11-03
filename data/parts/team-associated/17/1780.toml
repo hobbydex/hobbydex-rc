@@ -3,4 +3,9 @@ brand = "brand/team-associated"
 number = "1780"
 name = "Shock bushing"
 category = "shock"
-documents = ["doc/team-associated/b44-1-manual-preflight"]
+documents = ["doc/team-associated/b44-1-manual-preflight", "doc/team-associated/cat-t4ft"]
+pack_qty = 4
+pack_qty_basis = "manual"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
+]

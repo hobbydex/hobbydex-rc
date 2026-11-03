@@ -1,0 +1,15 @@
+id = "part/schumacher/U2590"
+brand = "brand/schumacher"
+number = "U2590"
+name = "SPEED PACK - Torx M3x10 Csk"
+documents = ["doc/schumacher/explodedmenace", "doc/schumacher/mi1-spares-archive"]
+category = "screw"
+fits = [
+  { kit = "kit/schumacher/mi1", type = "direct", source = "doc/schumacher/mi1-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]
+name_source = "manufacturer"
+seen_by = "2014-06-03"
+seen_by_source = "https://web.archive.org/web/20140603065706/http://www.racing-cars.com/scp/Old_Cars_and_Parts/search.asp?subcatid=686&templateid=69&sortname1=partno"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-torx", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

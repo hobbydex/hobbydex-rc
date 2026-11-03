@@ -5,7 +5,7 @@ name = "Color Strap (S/Black)"
 pack_qty = 18
 pack_qty_basis = "manual"
 gtin = "4955439793114"
-documents = ["doc/kyosho/1700bk-product-page"]
+documents = ["doc/kyosho/1700bk-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 color = "black"
 fits = [
   { kit = "kit/kyosho/dbx", type = "replaces", source = "doc/kyosho/30842-dbxve-rs-p" },
@@ -30,6 +30,7 @@ fits = [
   { kit = "kit/kyosho/gp-mini-inferno-09", type = "replaces", source = "doc/kyosho/31311-gpinf09-p" },
   { kit = "kit/kyosho/half-8-st-09", type = "replaces", source = "doc/kyosho/31312-half8-st-optionalparts-p" },
   { kit = "kit/kyosho/inferno-mp10e", type = "direct", source = "doc/kyosho/34110-t04-inferno-mp10e-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]
 category = "chassis"
 links = [

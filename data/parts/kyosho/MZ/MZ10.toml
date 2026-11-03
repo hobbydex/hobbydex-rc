@@ -2,6 +2,7 @@ id = "part/kyosho/MZ10"
 brand = "brand/kyosho"
 number = "MZ10"
 name = "Antenna"
+gtin = "4955439731918"
 seen_by = "2007"
 seen_by_source = "doc/kyosho/miniz-fomula-op-vol5-m"
 fits = [
@@ -9,6 +10,8 @@ fits = [
   { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/miniz-awd-vol2-p" },
   { kit = "kit/kyosho/mini-z-monster", type = "direct", source = "doc/kyosho/miniz-mon-kt5-p" },
   { kit = "kit/kyosho/mini-z-mr-01", type = "direct", source = "doc/kyosho/miniz-p" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "direct", source = "doc/kyosho/miniz-mr02-rm-rml-p" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (standard part) in Kyosho's MINI-Z parts acceptable list" },
 ]
 category = "electronics"
-documents = ["doc/kyosho/miniz-awd-vol2-p", "doc/kyosho/miniz-fomula-op-vol5-m", "doc/kyosho/miniz-mon-kt5-p"]
+documents = ["doc/kyosho/miniz-awd-vol2-p", "doc/kyosho/miniz-fomula-op-vol5-m", "doc/kyosho/miniz-mon-kt5-p", "doc/kyosho/mini-z-parts-tekigou"]

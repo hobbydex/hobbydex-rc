@@ -7,5 +7,9 @@ seen_by_source = "doc/kyosho/mbw021-adjustable-linkage-set"
 gtin = "4548565211470"
 name_ja = "アジャスタブルリンケージセット"
 category = "suspension"
-documents = ["doc/kyosho/mbw021-adjustable-linkage-set"]
+documents = ["doc/kyosho/mbw021-adjustable-linkage-set", "doc/kyosho/mbw021-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mbw021.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-buggy", releases = ["release/kyosho/32093bly", "release/kyosho/32093egbk", "release/kyosho/32093pgr", "release/kyosho/32093wbk", "release/kyosho/32094bw", "release/kyosho/32097wgr", "release/kyosho/32097wy", "release/kyosho/32282k", "release/kyosho/32290", "release/kyosho/32291", "release/kyosho/32293", "release/kyosho/32294"], type = "direct", source = "doc/kyosho/mbw021-product-page", notes = "Listed on the maker's Compatible Kits page" },
+  { kit = "kit/kyosho/turbo-optima", releases = ["release/kyosho/32095y", "release/kyosho/32096w"], type = "direct", source = "doc/kyosho/mbw021-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

@@ -2,8 +2,13 @@ id = "part/schumacher/U122"
 brand = "brand/schumacher"
 number = "U122"
 name = "Velcro 1/2metre x 16mm."
+gtin = "5051294011246"
 seen_by = "2016-05-20"
 seen_by_source = "https://web.archive.org/web/20160520013517/http://www.racing-cars.com:80/scp/Old_Cars_and_Parts/search.asp?subcatid=156&templateid=69&sortname1=partno"
 category = "misc"
-documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
+documents = ["doc/schumacher/catl1r-instruction-manual-v2", "doc/schumacher/bosscat-spares-archive", "doc/schumacher/cougar-kf-spares-archive"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-l1r/velcro-1-2metre-x-16mm-u122" } ]
+fits = [
+  { kit = "kit/schumacher/bosscat", type = "direct", source = "doc/schumacher/bosscat-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
+]

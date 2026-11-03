@@ -2,6 +2,7 @@ id = "part/tlr/TLR45002"
 brand = "brand/tlr"
 number = "TLR45002"
 name = "5ive-B Tire Set, Firm"
+status = "discontinued"
 seen_by = "2023-06-09"
 seen_by_source = "https://web.archive.org/web/20230609173444/https://www.tlracing.com/product/5ive-b-tire-set-firm-2-5ive-b/TLR45002.html"
 gtin = "605482627785"
@@ -12,3 +13,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-5ive-b-tire-set-firm-2-5ive-b/TLR45002.html" },
 ]
 category = "tire"
+fits = [
+  { kit = "kit/losi/5ive-b", type = "replaces", source = "doc/tlr/horizon-product-catalogue", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/5"
+position = "front-rear"
+mounting = "unmounted"
+compound = "Firm"

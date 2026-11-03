@@ -3,12 +3,16 @@ brand = "brand/kyosho"
 number = "MZW39-20B"
 name = "MINI-Z Low Hight Slick Tire (20°)"
 pack_qty = 4
+pack_qty_basis = "manual"
 gtin = "4548565453320"
 category = "tire"
-documents = ["doc/kyosho/mzw39-20b-product-page"]
+documents = ["doc/kyosho/mzw39-20b-product-page", "doc/kyosho/32890-mini-z-mr-04evo2-manual"]
 fits = [
   { kit = "kit/kyosho/mini-z-mr-04", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
+  { kit = "kit/kyosho/mini-z-mr-04evo2", type = "direct", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw39-20b.html" },
 ]
+mounting = "unmounted"
+position = "front"

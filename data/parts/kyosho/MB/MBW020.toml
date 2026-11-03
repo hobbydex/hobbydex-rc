@@ -7,6 +7,10 @@ seen_by_source = "doc/kyosho/mbw020-tit-coated-sus-shaft-im"
 gtin = "4548565193516"
 name_ja = "チタンコーティングサスシャフト"
 category = "suspension"
-documents = ["doc/kyosho/mbw020-tit-coated-sus-shaft-im"]
+documents = ["doc/kyosho/mbw020-tit-coated-sus-shaft-im", "doc/kyosho/mbw020-product-page"]
 material = "titanium"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mbw020.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-buggy", releases = ["release/kyosho/32093bly", "release/kyosho/32093egbk", "release/kyosho/32093pgr", "release/kyosho/32093wbk", "release/kyosho/32094bw", "release/kyosho/32097wgr", "release/kyosho/32097wy", "release/kyosho/32290", "release/kyosho/32291", "release/kyosho/32293", "release/kyosho/32294"], type = "direct", source = "doc/kyosho/mbw020-product-page", notes = "Listed on the maker's Compatible Kits page" },
+  { kit = "kit/kyosho/turbo-optima", releases = ["release/kyosho/32095y", "release/kyosho/32096w"], type = "direct", source = "doc/kyosho/mbw020-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

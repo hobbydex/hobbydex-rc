@@ -2,6 +2,7 @@ id = "part/team-associated/5407"
 brand = "brand/team-associated"
 number = "5407"
 name = "O-rings, red, silicone"
+status = "discontinued"
 seen_by = "2024-10-04"
 seen_by_source = "https://web.archive.org/web/20241004202027/https://60years.associatedelectrics.com/o-rings-red-silicone/"
 gtin = "784695054073"
@@ -16,4 +17,8 @@ fits = [
   { kit = "kit/team-associated/gt2", type = "direct", source = "doc/team-associated/7080-page" },
   { kit = "kit/team-associated/ntc3", type = "direct", source = "doc/team-associated/2042-page" },
   { kit = "kit/team-associated/rc10l4", type = "direct", source = "doc/team-associated/8019-page" },
+  { kit = "kit/team-associated/rc10t4", type = "direct", source = "doc/team-associated/cat-t4ft" },
 ]
+pack_qty = 8
+pack_qty_basis = "manual"
+documents = ["doc/team-associated/cat-t4ft"]

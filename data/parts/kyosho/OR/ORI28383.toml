@@ -3,7 +3,13 @@ brand = "brand/kyosho"
 number = "ORI28383"
 name = "Vortex Ultimate Modified 540 8.5T"
 gtin = "7612888283838"
+turns = 8.5
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ori28383.html" } ]
 category = "motor"
+documents = ["doc/kyosho/ori28383-product-page"]
+range = "kyosho/vortex-ultimate-modified-540"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

@@ -2,8 +2,14 @@ id = "part/losi/LOSA2103"
 brand = "brand/losi"
 number = "LOSA2103"
 name = "Rear Shock Tower"
+status = "discontinued"
+seen_by = "2013-01-27"
+seen_by_source = "https://web.archive.org/web/20130127170930/http://losi.com/ProdInfo/LOS/100/LOSA2103-100.jpg"
 gtin = "660132010508"
 applies_to = "XXX-T"
+fits = [
+  { kit = "kit/losi/xxx-t", type = "direct", source = "doc/losi/horizon-part-pages", notes = "Listed for the Losi XXX-T (link_car_kits.py)" },
+]
 links = [
   { site = "Losi", url = "https://www.losi.com/product/losi-rear-shock-tower-xxx-t/LOSA2103.html" },
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-rear-shock-tower-xxx-t/LOSA2103.html" },

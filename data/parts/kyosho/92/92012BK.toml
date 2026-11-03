@@ -17,8 +17,12 @@ fits = [
   { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/31350-v-one-s3-evo-lig-mr-s-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31362-fw05t-p" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/30919-fazer-ve-x-lancer-spop" },
+  { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (standard part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 category = "wheel"
+documents = ["doc/kyosho/92012bk-product-page", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/v-one-rrr-060322"]
 range = "kyosho/92012-colours"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/92012bk.html" },

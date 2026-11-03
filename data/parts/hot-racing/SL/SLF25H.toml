@@ -2,6 +2,7 @@ id = "part/hot-racing/SLF25H"
 brand = "brand/hot-racing"
 number = "SLF25H"
 name = "Aluminum Center Differential Case - Slash/Stampede/Rally/Telluri"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/slf25h-aluminum-center-differential-case-slash-stampede-rally-telluri", kind = "maker" },
 ]
@@ -10,4 +11,7 @@ material = "aluminium"
 fits = [
   { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
   { kit = "kit/traxxas/stampede-4x4", type = "replaces", source = "doc/hot-racing/store", notes = "Car named in the part's name or on its Hot Racing store page (link_hot_racing_fits.py)" },
+]
+related = [
+  { part = "part/traxxas/6884", relation = "replaces", notes = "link_part_refs" },
 ]

@@ -2,6 +2,7 @@ id = "part/hot-racing/SCXP1801"
 brand = "brand/hot-racing"
 number = "SCXP1801"
 name = "Aluminum Heat Sink Motor Plate SCX Pro"
+status = "discontinued"
 links = [
   { site = "Hot Racing", url = "https://store.hot-racing.com/product-page/scxp1801-aluminum-heat-sink-motor-plate-scx-pro", kind = "maker" },
 ]
@@ -9,4 +10,7 @@ category = "chassis"
 material = "aluminium"
 fits = [
   { kit = "kit/axial/scx10-pro", type = "direct", source = "doc/hot-racing/store", notes = "Listed for the Axial SCX10 Pro (link_car_kits.py)" },
+]
+related = [
+  { part = "part/axial/AXI232078", relation = "replaces", notes = "link_part_refs" },
 ]

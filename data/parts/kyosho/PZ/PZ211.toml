@@ -5,11 +5,14 @@ name = "7075 Pinion Gear 24T/64Pitch"
 gtin = "4548565226122"
 fits = [
   { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (option part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/64dp-24t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
 category = "pinion"
+documents = ["doc/kyosho/pz211-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 teeth = 24
 pitch_dp = 64
 material = "aluminium"
