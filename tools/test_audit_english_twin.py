@@ -70,6 +70,10 @@ def test_gone_urls_reads_only_gone_rows_of_the_english_hosts():
     assert gone == {"https://scaleart-shop.de/en-de/products/a"}
 
 
+def test_gone_urls_without_a_cache_is_empty():
+    assert audit.gone_urls(None, SWAPS) == frozenset()
+
+
 if __name__ == "__main__":
     for name, fn in sorted(globals().items()):
         if name.startswith("test_") and callable(fn):

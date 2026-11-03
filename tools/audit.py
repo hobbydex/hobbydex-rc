@@ -129,9 +129,9 @@ def has_foreign_link(text, swaps, gone=frozenset()):
 
 def gone_urls(cache, swaps):
     """The URLs the crawl queue marks gone on the English hosts of the swap rules (read-only; empty without a queue)."""
-    crawl = os.path.join(cache, "crawl.db")
     hosts = sorted({urllib.parse.urlsplit(to).hostname or "" for _, to in swaps.values()})
-    if not hosts or not os.path.exists(crawl):
+    crawl = os.path.join(cache, "crawl.db") if cache else ""
+    if not hosts or not crawl or not os.path.exists(crawl):
         return frozenset()
     import sqlite3
     con = sqlite3.connect("file:%s?mode=ro" % crawl, uri=True)
