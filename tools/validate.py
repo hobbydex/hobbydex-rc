@@ -85,7 +85,7 @@ ENUMS = {
     "fits.type": {"direct", "replaces", "modification"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "rebrand_of.certainty": {"likely"},   # absent = confirmed (maker statement, matching part numbers or an owner's statement); likely = specs or looks only (docs/schema.md "rebrand_of")
-    "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour"},
+    "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour", "same-part"},
     "same_platform_as.parts": {"interchangeable", "partly", "unknown"},
     "part.material": {"steel", "stainless", "titanium", "aluminium", "brass", "bronze", "plastic", "carbon", "ceramic", "carbide", "unknown"},
     # where a pack_qty came from (docs/schema.md "part"); photo and photos are lower confidence than the text bases

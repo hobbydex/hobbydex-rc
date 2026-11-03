@@ -649,7 +649,7 @@ gives them the English name from tools/data/translate_fr_names.tsv, with a note)
 name or page says: `[{ part, relation }]` with relation requires (needs the
 other part: Tekno "requires TKR9057B"), fits (made to fit that part: Corally
 "fits part C-00180-022"), use-with, for (an accessory made for it: HUDY
-"Ejector for 106000"), replaces or same-colour (a paint the brand's own colour
+"Ejector for 106000"), replaces, same-part (the same part under two item numbers or names, as Traxxas lists some colours twice: 6855-RED and 6855R; recorded once, the site shows it from both sides) or same-colour (a paint the brand's own colour
 matching list gives as the same colour in another range, though the shade
 may differ slightly: Tamiya LP-1 Black, X-1 Black and TS-14 Black; recorded
 on each of the paints). Others are recorded on the citing part; the site
