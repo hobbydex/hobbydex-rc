@@ -1,0 +1,15 @@
+id = "part/revolution-design/RDRP0616"
+brand = "brand/revolution-design"
+number = "RDRP0616"
+name = "Pivot Ball Shim Kit (Fits RC8B4 | MBX8R | XB8 | S35-4)"
+category = "washer-shim"
+gtin = "4052133023384"
+documents = ["doc/revolution-design/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/Revolution-Design-Pivot-Ball-Shim-Kit-Fits-RC8B4-MBX8R-XB8-S35-4_1" },
+]
+fits = [
+  { kit = "kit/team-associated/rc8b4", type = "direct", source = "doc/revolution-design/store", notes = "Car code RC8B4 in the maker's part title (link_car_kits.py)" },
+  { kit = "kit/xray/xb8", type = "direct", source = "doc/revolution-design/store", notes = "Car code XB8 in the maker's part title (link_car_kits.py)" },
+  { kit = "kit/sworkz/s35-4", type = "direct", source = "doc/revolution-design/store", notes = "Car code S35-4 in the maker's part title (link_car_kits.py)" },
+]
