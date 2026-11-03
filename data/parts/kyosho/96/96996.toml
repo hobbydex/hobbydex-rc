@@ -17,3 +17,6 @@ fits = [
 ]
 category = "bearing"
 documents = ["doc/kyosho/30072-ep-ultimarb-sports-p", "doc/kyosho/30101-kx-one-p", "doc/kyosho/30117-pureten-ep-aipha2-p"]
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 5x10 bearing (MR105)" },
+]

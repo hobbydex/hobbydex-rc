@@ -12,3 +12,6 @@ fits = [
 ]
 category = "bearing"
 documents = ["doc/kyosho/30072-ep-ultimarb-sports-p", "doc/kyosho/30117-pureten-ep-aipha2-p", "doc/kyosho/31011-v-one-p"]
+equivalent_to = [
+  { spec = "spec/bearing/8x14x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 8x14 bearing (MR148)" },
+]

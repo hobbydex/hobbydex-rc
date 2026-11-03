@@ -7,3 +7,6 @@ seen_by_source = "https://web.archive.org/web/20101119200136/http://www.teamasso
 category = "bearing"
 documents = ["doc/team-associated/cat-tc6"]
 links = [ { site = "Associated Electrics", url = "https://www.teamassociated.com/parts/details/31401/" } ]
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 10x15 bearing (6700)" },
+]

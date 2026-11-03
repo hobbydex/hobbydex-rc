@@ -9,3 +9,6 @@ fits = [
 ]
 category = "bearing"
 documents = ["doc/kyosho/30412-plazma-formula-spop"]
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 5x8 bearing (MR85)" },
+]

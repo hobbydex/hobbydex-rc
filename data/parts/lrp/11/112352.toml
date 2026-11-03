@@ -12,3 +12,6 @@ fits = [
   { kit = "kit/lrp/shark-18-buggy", type = "direct", source = "doc/lrp/110300-de-manual" },
 ]
 documents = ["doc/lrp/110100-de-manual", "doc/lrp/110200-de-manual", "doc/lrp/110300-de-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "close", notes = "Width not stated in the name; 3.5 mm is the standard width of a 8x12 bearing (MR128)" },
+]

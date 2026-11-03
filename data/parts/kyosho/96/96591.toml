@@ -7,3 +7,6 @@ fits = [
 ]
 category = "bearing"
 documents = ["doc/kyosho/30075-lazerzx-evo-p"]
+equivalent_to = [
+  { spec = "spec/bearing/4x7x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 4x7 bearing (MR74)" },
+]
