@@ -6,9 +6,11 @@ gtin = "660132990046"
 category = "servo"
 category_source = "curated"
 equivalent_to = [
-  { spec = "spec/servo/standard-25t", match = "close", source = "doc/losi/los04028-lmt-grave-digger-manual", notes = "Spline from the name; standard case size assumed for the 1/8 LMT, check the mounting holes" },
+  { spec = "spec/servo/standard-25t", match = "close", source = "doc/spektrum/horizon-spms680-page", notes = "Size category Standard stated by Horizon" },
 ]
 material = "steel"
 links = [
-  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-s680-high-torque-metal-top-steel-gear-25t/SPMS680.html" },
+  { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-s680-high-torque-metal-top-steel-gear-25t/SPMS680.html", kind = "maker" },
 ]
+gear_material = "metal"
+voltage_range = "6.0V - 8.4V"
