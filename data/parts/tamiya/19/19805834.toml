@@ -5,7 +5,7 @@ name = "1050 Ball Bearing"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 equivalent_to = [
-  { spec = "spec/bearing/5x10x4", match = "close", notes = "Tamiya size code 1050: 10 mm outer, 5 mm bore, 4 mm wide (usual width for this size, not confirmed for Tamiya)" },
+  { spec = "spec/bearing/5x10x4", match = "exact", notes = "Tamiya size code 1050: 5x10x4 mm bore x outer x width as the Tamiya page states it", source = "https://www.tamiya.de/tamiya_en/spare-parts-accessories/rc-spare-parts/powertrain/gears-motor-pinions/trf-1050-bearing-thick-3mm-ball-bearings-300042220-en.html" },
 ]
 category = "bearing"
 links = [
