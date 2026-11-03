@@ -8,3 +8,7 @@ documents = ["doc/revolution-design/store"]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Revolution-Design-XB4-XB2-Aluminium-Rear-Hub-Set-Lower-Position" },
 ]
+fits = [
+  { kit = "kit/xray/xb4", type = "replaces", source = "doc/revolution-design/store", notes = "Car code XB4 in the maker's part title (link_car_kits.py)" },
+  { kit = "kit/xray/xb2", type = "replaces", source = "doc/revolution-design/store", notes = "Car code XB2 in the maker's part title (link_car_kits.py)" },
+]
