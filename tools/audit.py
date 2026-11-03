@@ -214,6 +214,44 @@ def is_aircraft_part(part):
     return bool(prefixes) and str(part.get("number", "")).split("-")[0].upper() in prefixes
 
 
+def name_slug(path):
+    """The file name of a path or address without its extension, lower case, letters and digits only."""
+    base = os.path.basename(urllib.parse.unquote(urllib.parse.urlsplit(path).path))
+    return re.sub(r"[^a-z0-9]", "", re.sub(r"(?i)\.pdf$", "", base).lower())
+
+
+def drop_copies_of_linked(cache, unlinked, linked_files):
+    """The unlinked cached files (paths relative to the cache) that are not a byte-identical copy of a linked file of the
+    same brand (second path part): same size first, then the SHA-256."""
+    import hashlib
+    def brand(rel):
+        return rel.split("/")[1]
+    def sha(rel):
+        h = hashlib.sha256()
+        with open(os.path.join(cache, rel), "rb") as fh:
+            for block in iter(lambda: fh.read(1 << 20), b""):
+                h.update(block)
+        return h.hexdigest()
+    sizes = collections.defaultdict(list)
+    for rel in linked_files:
+        try:
+            sizes[brand(rel), os.path.getsize(os.path.join(cache, rel))].append(rel)
+        except OSError:
+            pass
+    out, known = [], {}
+    for rel in unlinked:
+        try:
+            cands = sizes.get((brand(rel), os.path.getsize(os.path.join(cache, rel))))
+            if cands:
+                digest = sha(rel)
+                if any(known.setdefault(c, sha(c)) == digest for c in cands):
+                    continue
+        except OSError:
+            pass
+        out.append(rel)
+    return out
+
+
 def not_manual_name(stem):
     """True when a file name identifies a non-manual (safety sheet, battery notice, press release, product sheet)."""
     return NOT_MANUAL_NAME.search(stem) is not None
@@ -852,13 +890,18 @@ def main():
         by_name = collections.defaultdict(list)
         by_url = collections.defaultdict(list)       # the full address, as before
         by_url_name = collections.defaultdict(list)  # the address's file name, the same brand only
+        by_slug = collections.defaultdict(list)      # (brand, file name in letters and digits only): the cache writes
+        # "dp-yd4-160612.pdf" for the maker's "dp_yd4_160612.pdf"
         for d in docs.values():
             if d.get("file"):
                 by_name[os.path.basename(d["file"]).lower()].append(d)
+                by_slug[d.get("brand"), name_slug(d["file"])].append(d)
             if d.get("url"):
                 by_url[d["url"]].append(d)
                 by_url_name[os.path.basename(urllib.parse.urlsplit(d["url"]).path).lower()].append(d)
+                by_slug[d.get("brand"), name_slug(urllib.parse.urlsplit(d["url"]).path)].append(d)
         unlinked = []
+        linked_files = []    # cached files a linked document matches (by name or address): their copies count as linked
         not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
         not_rc = 0           # a static kit, paint or tool of Tamiya that no release or part of the data has (tamiya_static_non_rc)
         kind_unknown = 0     # the name states no manual kind and says nothing else: still a gap, counted apart
@@ -872,6 +915,8 @@ def main():
             same_brand_url = [d for d in by_url_name.get(os.path.basename(urllib.parse.urlsplit(url).path).lower(), [])
                               if d.get("brand") == mine] if url else []
             ds = by_name.get(name.lower(), []) + (by_url.get(url, []) if url else []) + same_brand_url
+            if len(name_slug(name)) >= 8:
+                ds = ds + [d for d in by_slug.get((mine, name_slug(name)), []) if d not in ds]
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
                 stem = re.sub(r"(?i)\.pdf$", "", name)
@@ -884,11 +929,19 @@ def main():
                         continue
                     kind_unknown += 1
                 unlinked.append(rel_path)
+            else:
+                linked_files.append(rel_path)
+        # a byte-identical copy (same brand, size and checksum) of a linked document's file is linked too: the cache keeps
+        # copies under other names ("b6d-2016-thielke-jc-spring.pdf" next to "90012-B6D_2016_Thielke_JC_Spring.pdf")
+        n_before = len(unlinked)
+        unlinked = drop_copies_of_linked(tools["cache"], unlinked, linked_files)
+        copies = n_before - len(unlinked)
         check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked",
               [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5],
               detail=f"{kind_unknown} of them name no manual kind (kind unknown: read the cover or the name); "
                      f"{not_manuals} cached PDFs named as safety sheets, notices, press releases or product sheets are left out; "
-                     f"{not_rc} cached Tamiya manuals of static kits, paints and tools (not RC: no Tamiya release or part has the number) are left out")
+                     f"{not_rc} cached Tamiya manuals of static kits, paints and tools (not RC: no Tamiya release or part has the number) are left out; "
+                     f"{copies} byte-identical copies of a linked document's file (same brand, size and checksum) count as linked")
         # keep the list ids as paths; url points at the brand
         res = results["manual-unlinked"]
         res["examples"] = [{"id": u, "url": SITE + "/rc/brands/" + u.split("/")[1] + "/"} for u in unlinked[:args.examples]]
