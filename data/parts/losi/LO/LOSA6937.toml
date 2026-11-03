@@ -34,6 +34,7 @@ fits = [
   { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]
+documents = ["doc/losi/losa6937-product-page"]
 equivalent_to = [
-  { spec = "spec/bearing/5x10x4", match = "close", notes = "Width not stated in the name; 4 mm is the standard width of a 5x10 bearing (MR105)" },
+  { spec = "spec/bearing/5x10x4", match = "close", source = "doc/losi/losa6937-product-page", notes = "Width stated by the maker page: 5 x 10 x 4mm bearings in the box" },
 ]

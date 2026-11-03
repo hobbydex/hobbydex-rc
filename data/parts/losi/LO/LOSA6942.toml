@@ -28,6 +28,7 @@ fits = [
   { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-part-pages" },
   { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/losi/horizon-part-pages" },
 ]
+documents = ["doc/losi/los04018-manual-multi"]
 equivalent_to = [
-  { spec = "spec/bearing/8x16x5", match = "close", notes = "Width not stated in the name; 5 mm is the standard width of a 8x16 bearing (688)" },
+  { spec = "spec/bearing/8x16x5", match = "close", source = "doc/losi/los04018-manual-multi", notes = "Width stated by the maker manual parts list: LOSA6942 8x16x5mm Sealed Ball Bearing (4)" },
 ]
