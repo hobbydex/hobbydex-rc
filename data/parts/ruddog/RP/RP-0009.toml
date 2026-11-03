@@ -12,3 +12,12 @@ links = [
 ]
 turns = 8.0
 shaft_mm = 3.175
+kv = 4400
+diameter_mm = 36
+length_mm = 51.75
+lipo_cells = [2, 2]
+power_w = 350
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Can class from the maker's case size and shaft" },
+]
+range = "ruddog/rp540-540-sensored-brushless-motor"

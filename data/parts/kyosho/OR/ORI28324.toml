@@ -4,6 +4,11 @@ number = "ORI28324"
 name = "Vortex VST2 Pro XLW 540 8.5T"
 name_source = "manufacturer"
 gtin = "7612888283241"
+turns = 8.5
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ori28324.html" } ]
 category = "motor"
 documents = ["doc/kyosho/ori28324-product-page"]
+range = "kyosho/vortex-vst2-pro-xlw-540"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

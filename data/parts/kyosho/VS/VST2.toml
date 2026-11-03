@@ -10,3 +10,7 @@ fits = [
 documents = ["doc/kyosho/30069t01-ultima-rt6-spop", "doc/kyosho/30858-im-ultima-rb6-rs-spop"]
 category = "motor"
 category_source = "llm"
+turns = 5.5
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

@@ -7,3 +7,6 @@ seen_by_source = "https://web.archive.org/web/20200925161137/https://dealer.redc
 documents = ["doc/redcat/ground-pounder-manual"]
 category = "motor"
 category_source = "llm"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

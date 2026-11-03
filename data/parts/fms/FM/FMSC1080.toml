@@ -4,3 +4,7 @@ number = "FMSC1080"
 name = "35T BRUSHED 550 MOTOR"
 documents = ["doc/fms/1-6-suzuki-jimny-manual"]
 category = "motor"
+turns = 35
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
