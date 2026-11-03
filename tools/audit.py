@@ -321,6 +321,15 @@ def horizon_no_page(part, docs, gone):
     return bool(IMAGE_URL.search(src))
 
 
+def horizon_doc_no_page(doc, horizon):
+    """True when a Horizon-brand document lacks the maker page that lists it. A product_page or owner_report is itself
+    the page, and a video has no listing page by nature."""
+    return doc.get("brand") in horizon and not doc.get("page") and doc.get("kind") not in HORIZON_PAGE_KINDS
+
+
+HORIZON_PAGE_KINDS = ("product_page", "owner_report", "video")
+
+
 def horizon_gone_items(tools):
     """Item numbers whose Horizon item page answered 404 (cache/notes/horizon-items/<number>-item.html.http404.txt)."""
     d = os.path.join(tools, "cache", "notes", "horizon-items")
@@ -972,10 +981,9 @@ def main():
     else:
         results["manual-unlinked"] = {"fix": "hobbydex-tools cache not found (--tools)", "count": None, "examples": [], "all": []}
 
-    # 7. Horizon documents without a page (a product_page or owner_report is itself the page: docs/schema.md)
+    # 7. Horizon documents without a page (a product_page or owner_report is itself the page; a video has no listing page: docs/schema.md)
     check("horizon-doc-no-page", "give the document its page (the Horizon product or support page that lists the file)",
-          [d for d in docs.values() if d.get("brand") in horizon and not d.get("page")
-           and d.get("kind") not in ("product_page", "owner_report")])
+          [d for d in docs.values() if horizon_doc_no_page(d, horizon)])
 
     # 10. parts with a cached maker product page but no maker link, and maker links to pages the crawl has as 404
     # (hobbydex-tools tools/link_maker_pages.py --dry-run reports both per brand; the daily derive step links or prunes them)
