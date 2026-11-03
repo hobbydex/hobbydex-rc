@@ -11,3 +11,6 @@ links = [
   { site = "Novak (archived)", url = "https://web.archive.org/web/20160610093831/http://teamnovak.com/shop/index.php?main_page=product_info&cPath=98_145&products_id=195", kind = "archive" },
 ]
 documents = ["doc/novak/55-3400-1-r8-motor-10-08"]
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

@@ -6,6 +6,7 @@ seen_by = "2021-01-21"
 seen_by_source = "https://web.archive.org/web/20210121035917/https://www.hobbytech-rc.com/spare-parts-3/8-crx-v1-spare-parts/"
 name_fr = "Moteur éléctrique brushed Konect 540 55T crawler"
 documents = ["doc/hobbytech/parts-pages"]
+turns = 55
 links = [
   { site = "hobbytech-rc.com", url = "https://www.hobbytech-rc.com/1-crx-rtr-piece-detachees/" },
 ]
@@ -16,3 +17,6 @@ fits = [
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
 category = "motor"
 motor_type = "brushed"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

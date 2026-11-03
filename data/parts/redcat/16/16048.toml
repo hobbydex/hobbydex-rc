@@ -4,3 +4,6 @@ number = "16048"
 name = "Motor RC 380"
 category = "motor"
 documents = ["doc/redcat/tremor-sg-manual"]
+equivalent_to = [
+  { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

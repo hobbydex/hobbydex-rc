@@ -13,3 +13,11 @@ documents = ["doc/ruddog/store"]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-RP540-40T-540-Sensored-Brushless-Motor_1" },
 ]
+diameter_mm = 36
+length_mm = 51.75
+lipo_cells = [2, 2]
+power_w = 530
+equivalent_to = [
+  { spec = "spec/motor/brushless-3652-3.175mm", match = "functional", notes = "Can class from the maker's case size and shaft" },
+]
+range = "ruddog/rp540-540-sensored-brushless-motor"

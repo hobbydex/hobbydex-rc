@@ -4,6 +4,11 @@ number = "ORI28273"
 name = "Vortex VST2 PRO 540 2P Stock 10.5T(JPN)"
 name_source = "manufacturer"
 gtin = "7612888282732"
+turns = 10.5
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ori28273.html" } ]
 category = "motor"
 documents = ["doc/kyosho/ori28273-product-page"]
+range = "kyosho/vortex-vst2-pro-540-2p-stock-jpn"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

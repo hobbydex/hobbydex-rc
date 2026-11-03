@@ -4,6 +4,10 @@ number = "5049"
 name = "Silent Speed, 540 35T, Brushed Adjustable Timing Competition Motor"
 name_source = "manufacturer"
 category = "motor"
+turns = 35
 links = [
   { site = "JConcepts", url = "https://jconcepts.net/silent-speed-540-35t-brushed-adjustable-timing-competition-motor" },
+]
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
