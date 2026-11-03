@@ -1,0 +1,18 @@
+id = "part/orca/OB6090SP"
+brand = "brand/orca"
+number = "OB6090SP"
+name = "INFINITE LiPo 6000mAh 7.4V 90C SADDLE PACK"
+category = "battery"
+weight_g = 220
+dimensions_mm = [96, 47, 25]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/infinite-lipo-6000mah-7-4v-90c-saddle-pack/" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 6000
+c_rating = 90
