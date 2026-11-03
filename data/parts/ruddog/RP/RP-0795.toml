@@ -1,0 +1,19 @@
+id = "part/ruddog/RP-0795"
+brand = "brand/ruddog"
+number = "RP-0795"
+name = "Racing ProStock 4400mAh 150C/75C 7.4V Short Stick Pack LiPo Battery"
+category = "battery"
+gtin = "4052133034472"
+weight_g = 215
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Racing-ProStock-4400mAh-150C-75C-74V-Short-Stick-Pack-LiPo-Battery_1" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4400
+c_rating = 150

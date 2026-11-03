@@ -1,0 +1,18 @@
+id = "part/ruddog/RP-0850"
+brand = "brand/ruddog"
+number = "RP-0850"
+name = "Racing RR2 ProStock 8100mAh 150C/75C 3.7V 1S 1/12 LiPo Battery"
+category = "battery"
+gtin = "4052133035844"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Racing-RR2-ProStock-8100mAh-150C-75C-37V-1S-1-12-LiPo-Battery_1" },
+]
+chemistry = "lipo"
+cells = 1
+voltage = 3.7
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-8100mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 8100
+c_rating = 150

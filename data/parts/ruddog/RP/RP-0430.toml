@@ -1,0 +1,17 @@
+id = "part/ruddog/RP-0430"
+brand = "brand/ruddog"
+number = "RP-0430"
+name = "1600mAh 1.2V NiMH 2/3A Single Cell"
+category = "battery"
+gtin = "4052133014726"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-1600mAh-12V-NiMH-2-3A-Single-Cell_1" },
+]
+chemistry = "nimh"
+voltage = 1.2
+equivalent_to = [
+  { spec = "spec/battery/nimh-1s-1600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 1
+capacity_mah = 1600
