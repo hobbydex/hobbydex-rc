@@ -102,7 +102,7 @@ ENUMS = {
     "part.lubricant": {"oil", "grease"},
     "part.viscosity": {"thin", "medium", "thick"},
     "spec.profile": {"regular", "thin"},
-    "spec.shape": {"flat", "countersunk", "conical"},   # washer specs (docs/schema.md "Washer specs")
+    "spec.shape": {"flat", "countersunk", "conical", "flanged", "crush"},   # washer specs (docs/schema.md "Washer specs"); flanged and crush: tube specs (a flanged tube or a crush tube is not a plain one)
     "spec.variant": {"bowed"},   # e-clip specs (docs/schema.md "E-clip specs")
     "spec.motor_type": {"brushed", "brushless"},
     "part.motor_type": {"brushed", "brushless", "both"},   # ESCs (docs/schema.md "ESCs")
