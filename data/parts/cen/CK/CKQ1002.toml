@@ -8,3 +8,6 @@ links = [
   { site = "CEN Racing", url = "https://www.cenracingusa.com/products/ckq1002" },
 ]
 category = "wheel"
+fits = [
+  { kit = "kit/cen/q-series", releases = ["release/cen/8931", "release/cen/8936", "release/cen/8937"], type = "replaces", source = "doc/cen/store", notes = "Car named in the part's title on CEN Racing's store (link_car_names.py)" },
+]
