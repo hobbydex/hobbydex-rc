@@ -1,0 +1,14 @@
+id = "part/kyosho/PZ039B"
+brand = "brand/kyosho"
+number = "PZ039B"
+name = "Spur Gear 64-94T"
+name_ja = "スパーギア 64-94T"
+name_source = "manual"
+gtin = "4548565235261"
+documents = ["doc/kyosho/plazma-series-ver03-1512"]
+category = "gear"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (standard part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
+]

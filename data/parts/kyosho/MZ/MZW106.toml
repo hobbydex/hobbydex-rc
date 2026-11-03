@@ -1,0 +1,13 @@
+id = "part/kyosho/MZW106"
+brand = "brand/kyosho"
+number = "MZW106"
+name = "ミニッツインナーアンテナ"
+name_source = "manual"
+gtin = "4955439757253"
+documents = ["doc/kyosho/mini-z-f1-060322", "doc/kyosho/mini-z-overland060322"]
+category = "misc"
+category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-f1", type = "replaces", source = "doc/kyosho/mini-z-f1-060322", notes = "Marked for the Mini-Z F1 (option part) in Kyosho's Mini-Z F1 parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-overland", type = "replaces", source = "doc/kyosho/mini-z-overland060322", notes = "Marked for the Mini-Z Over Land (option part) in Kyosho's Mini-Z Over Land parts acceptable list" },
+]

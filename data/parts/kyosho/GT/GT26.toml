@@ -1,0 +1,15 @@
+id = "part/kyosho/GT26"
+brand = "brand/kyosho"
+number = "GT26"
+name = "One-way for 2 Speed"
+name_ja = "2スピード 用 ワンウェイ"
+name_source = "manual"
+gtin = "4955439663929"
+documents = ["doc/kyosho/inferno-gt-060322", "doc/kyosho/landmax2-060322", "doc/kyosho/monstertruck-060322"]
+category = "drivetrain"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
+  { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the GIGA CRUSHER (standard part) in Kyosho's Monster Truck parts acceptable list" },
+  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (standard part) in Kyosho's Monster Truck parts acceptable list" },
+]
