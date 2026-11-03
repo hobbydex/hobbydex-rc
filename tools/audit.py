@@ -210,6 +210,14 @@ def tamiya_maker_linked(links):
     return False
 
 
+def tamiya_label_only(part):
+    """True when a Tamiya spare's only source is an OCR label from a manual: a parts-tree letter ("A Parts") or a bag
+    ("Differential Gear Bag"). The maker sells no spare page for such a label, so a missing maker link is no defect."""
+    if part.get("name_source") != "ocr":
+        return False
+    return part.get("category") == "parts-tree" or bool(re.search(r"\bbag\b", part.get("name", ""), re.I))
+
+
 def tamiya_static_non_rc(rel_path, tamiya_numbers):
     """True when a cached tamiya-de file (rel_path relative to cache/) is a static kit, paint or tool: its item number
     is in TAMIYA_STATIC and no Tamiya release or part of the data has that number, so no release can take the manual."""
@@ -1137,11 +1145,15 @@ def main():
         return any(l.get("kind") == "dealer" for l in p.get("links", []))
     tam = [p for p in parts if p.get("brand") == "brand/tamiya"]
     spares_all = [p for p in tam if re.fullmatch(r"\d{8}", str(p.get("number", "")))]
-    spares = [p for p in spares_all if not maker_linked(p)]
+    unlinked = [p for p in spares_all if not maker_linked(p)]
+    spares = [p for p in unlinked if not tamiya_label_only(p)]
+    label_only = [p for p in unlinked if tamiya_label_only(p)]
     items = [p for p in tam if re.fullmatch(r"\d{5}", str(p.get("number", ""))) and not maker_linked(p) and not dealer_linked(p)]
     dealer_only = sum(1 for p in spares if dealer_linked(p))
     check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker link (Tamiya USA's spare page, kind maker): the daily derive runs tools/link_tamiya_de_spares.py (tamiya.de sitemap) and tools/link_tamiya_usa_spares.py (Tamiya USA listings, which tools/plan_tamiya_usa_spares.py queues) in hobbydex-tools; a spare with only a dealer link is counted in dealer_only",
           spares, count=len(spares), maker=sum(1 for p in spares_all if maker_linked(p)), dealer_only=dealer_only)
+    check("tamiya-spare-label-only", "no maker spare page exists: the part's only source is an OCR parts-tree or bag label from a manual (informational)",
+          label_only, count=len(label_only), per_brand=[("tamiya", len(label_only))], info=True)
     check("tamiya-item-no-link", "a Tamiya item number with no maker product page: give it a maker link (tamiya.com page) or a manual or fan-site source",
           items, count=len(items))
     usa_tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamiya-usa-spares.tsv")
