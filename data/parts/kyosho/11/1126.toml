@@ -7,3 +7,6 @@ seen_by = "2006-05"
 seen_by_source = "doc/kyosho/30021-tf-5-m"
 documents = ["doc/kyosho/30021-tf-5-m", "doc/kyosho/30521-b-twinforce-m", "doc/kyosho/30521-b-twinforce-p", "doc/kyosho/30522-b-twinforcecsp-m", "doc/kyosho/30522-b-twinforcecsp-p", "doc/kyosho/31001-superten-m"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

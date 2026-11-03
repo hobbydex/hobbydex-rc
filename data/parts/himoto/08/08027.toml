@@ -21,3 +21,6 @@ fits = [
   { kit = "kit/himoto/viper-xst", releases = ["release/himoto/HI6103", "release/himoto/HI6103E", "release/himoto/HI6103M"], type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/zmotoz3", type = "direct", source = "doc/himoto/option-parts" },
 ]
+equivalent_to = [
+  { spec = "spec/pin/2x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

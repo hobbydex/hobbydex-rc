@@ -10,3 +10,7 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-FT-Screws-Blue-Aluminum-3x8-mm-SHCS_1", kind = "dealer" },
 ]
 color = "blue"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "aluminium"

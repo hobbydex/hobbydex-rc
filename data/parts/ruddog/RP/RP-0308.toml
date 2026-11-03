@@ -9,3 +9,7 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-14x254x6mm-Ceramic-Engine-Bearing-for-OS-and-Picco_1" },
 ]
 dimensions_mm = [14, 25.4, 6]
+equivalent_to = [
+  { spec = "spec/bearing/14x25.4x6", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

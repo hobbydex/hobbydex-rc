@@ -9,3 +9,6 @@ links = [
 ]
 pack_qty = 2
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/bearing/8x22x7", match = "close", notes = "Width not stated in the name; 7 mm is the standard width of a 8x22 bearing (608)" },
+]

@@ -10,3 +10,6 @@ pack_qty = 10
 pack_qty_basis = "page"
 gtin = "800734013860"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-6.35x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
