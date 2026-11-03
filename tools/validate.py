@@ -845,6 +845,8 @@ def main():
             errors.append(f"{path}: scale {d['scale']!r} repeats its kit's; leave it out (docs/schema.md \"release\")")
         if kind == "kit" and "placeholder" in d and not isinstance(d["placeholder"], bool):
             errors.append(f"{path}: placeholder should be true (a group for releases whose chassis no source names yet)")
+        if kind == "kit" and "family" in d and not isinstance(d["family"], bool):
+            errors.append(f"{path}: family should be true (docs/schema.md \"kit\"): a platform or family label that parts fit; no single car was sold under it")
         if kind == "category" and "terms" in d:   # glossary on the category page (docs/schema.md "category")
             ts = d["terms"]
             if not isinstance(ts, list) or not ts or not all(isinstance(t, dict) and set(t) == {"term", "text"} and all(

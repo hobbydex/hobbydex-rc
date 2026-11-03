@@ -554,6 +554,11 @@ def fits_claim(f):
     return (f.get("kit"), tuple(sorted(f["releases"])) if "releases" in f else None, f.get("car"))
 
 
+def kit_without_release(kits, rels_of_kit, kit_id):
+    """A fits row's kit that has no release to name. A family kit (family = true) is a label parts fit, not a car: no release is owed."""
+    return kit_id in kits and not kits[kit_id].get("family") and not rels_of_kit.get(kit_id)
+
+
 def duplicate_fits(parts):
     """(part, [claims]) for each part with two or more fits rows naming one claim (the same kit, releases and car)."""
     out = []
@@ -1206,14 +1211,14 @@ def main():
           no_car, per_brand=per_brand.most_common(),
           detail=f"{generic_unlinked} unlinked parts of any-car categories and {aircraft_unlinked} unlinked aircraft, helicopter and drone parts are left out; {sum(1 for p in parts if not p.get('category') and p['id'] not in in_box and not p.get('fits'))} unlinked parts have no category yet")
 
-    # 20. part fits a kit that has no releases
+    # 20. part fits a kit that has no releases (a family kit takes none: docs/schema.md "kit")
     check("fits-kit-no-release", "add the kit's release, or remove the fit row",
-          [p for p in parts for f in p.get("fits", []) if f.get("kit") in kits and not rels_of_kit.get(f["kit"])])
+          [p for p in parts for f in p.get("fits", []) if kit_without_release(kits, rels_of_kit, f.get("kit"))])
     # the kits each flagged part fits, for --list (id TAB kits) and a per-kit count in the summary
     nr_kits = collections.defaultdict(set)
     for p in parts:
         for f in p.get("fits", []):
-            if f.get("kit") in kits and not rels_of_kit.get(f["kit"]):
+            if kit_without_release(kits, rels_of_kit, f.get("kit")):
                 nr_kits[p["id"]].add(f["kit"])
     results["fits-kit-no-release"]["kit_of"] = {i: ", ".join(sorted(k)) for i, k in nr_kits.items()}
     per_kit = collections.Counter(k for ks in nr_kits.values() for k in ks)
