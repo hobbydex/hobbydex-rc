@@ -73,6 +73,17 @@ ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.py")   # the per-hos
 ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
 
 
+# a document title that is only item numbers, or repeats one token: the placeholder an importer wrote when no name was known
+# ("Tamiya 43501 43501: instruction manual"); the name then comes from the maker's page (title_source)
+PLACEHOLDER_TITLE = re.compile(r"(?<![\w.'/-])(\S*?\d[\w.'/-]*) \1(?![\w.'/-])")
+NUMBERS_ONLY_TITLE = re.compile(r"\d[\d.'/-]*(?: \d[\d.'/-]*)*")
+
+
+def placeholder_title(title):
+    t = (title or "").strip()
+    return bool(PLACEHOLDER_TITLE.search(t)) or bool(NUMBERS_ONLY_TITLE.fullmatch(t))
+
+
 def date_without_source(r):
     """A release that states a year or release date but names no source for it (released_source)."""
     return (r.get("year") is not None or bool(r.get("released"))) and not r.get("released_source")
@@ -208,6 +219,55 @@ def tamiya_maker_linked(links):
         if kind == "archive" and TAMIYA_CAPTURE.match(l.get("url", "")):
             return True
     return False
+
+
+def hw_photo_unread(hw, parts):
+    """The parts whose cached product photo link_hw_photo_finish (hw) has not read yet, or None when the module's
+    tools/data/vlm.toml is missing (gitignored, so absent from a fresh checkout)."""
+    unread_ids = set()
+    try:
+        for brand_parts in by_brand(parts):   # the photo index of a brand is dropped after its parts (it held every brand at once)
+            for p in brand_parts:
+                if hw.unread_photo(p):
+                    unread_ids.add(id(p))
+            hw._INDEX.pop((brand_parts[0].get("brand") or "")[6:], None)
+    except FileNotFoundError:
+        return None
+    hw._NUM = None   # number_pages: every cached product page, built once for this check
+    hw.L._CRAWLED = None   # the crawl's page map (link_pack_qty.crawled_pages), read by the photo lookups only
+    return [p for p in parts if id(p) in unread_ids]
+
+
+def tamiya_label_only(part):
+    """True when a Tamiya spare's name comes from OCR of a manual and it has no maker page (the caller checks the link):
+    a bag or parts-tree label ("A Parts", "Differential Gear Bag") or a part name read off a manual page. The maker
+    sells no spare page for such a number, so a missing maker link is no defect."""
+    return part.get("name_source") == "ocr"
+
+
+HORIZON_LIST_KINDS = ("exploded_view", "part_list", "manual", "supplement")   # documents that list parts, not pages that sell them
+IMAGE_URL = re.compile(r"\.(?:jpe?g|png|gif)$", re.I)
+
+
+def horizon_no_page(part, docs, gone):
+    """True when a Horizon part has no maker page to link: every document that names it is an exploded view, a parts
+    list, a manual or a supplement, its seen_by_source is such a document (or a captured product image), and its item
+    page answers 404 in the cache (gone: the item numbers with a cached horizon-items/<number>-item.html.http404.txt)."""
+    if part.get("number") not in gone or not part.get("documents"):
+        return False
+    if any(docs.get(d, {}).get("kind") not in HORIZON_LIST_KINDS for d in part["documents"]):
+        return False
+    src = part.get("seen_by_source")
+    if not src or src in docs:
+        return not src or docs[src].get("kind") in HORIZON_LIST_KINDS
+    return bool(IMAGE_URL.search(src))
+
+
+def horizon_gone_items(tools):
+    """Item numbers whose Horizon item page answered 404 (cache/notes/horizon-items/<number>-item.html.http404.txt)."""
+    d = os.path.join(tools, "cache", "notes", "horizon-items")
+    suffix = "-item.html.http404.txt"
+    return {n[:-len(suffix)] for n in os.listdir(d) if n.endswith(suffix)} if os.path.isdir(d) else set()
 
 
 def tamiya_static_non_rc(rel_path, tamiya_numbers):
@@ -682,6 +742,10 @@ def main():
     check("date-marker-question", "the ? sits in the date column of a narrow table: shorten the reason or move it to the release notes, and confirm the date",
           [r for r in rels if any(k in r for k in ("year_doubt", "released_doubt", "announced_doubt"))])
 
+    # 2a. document titles that are only item numbers, or repeat one (the importer's placeholder when no name was known)
+    check("doc-placeholder-title", "replace the repeated number with the item's name from a maker page (title_source names it), or keep the number once; never the number twice",
+          [d for d in docs.values() if placeholder_title(d.get("title"))])
+
     # 2b. releases of one brand with the same name: the name must say which is which (an edition, colour or re-release word)
     # releases with their own item numbers are distinct releases; only the same number under the same name is a duplicate
     same_name = collections.defaultdict(list)
@@ -1137,11 +1201,15 @@ def main():
         return any(l.get("kind") == "dealer" for l in p.get("links", []))
     tam = [p for p in parts if p.get("brand") == "brand/tamiya"]
     spares_all = [p for p in tam if re.fullmatch(r"\d{8}", str(p.get("number", "")))]
-    spares = [p for p in spares_all if not maker_linked(p)]
+    unlinked = [p for p in spares_all if not maker_linked(p)]
+    spares = [p for p in unlinked if not tamiya_label_only(p)]
+    label_only = [p for p in unlinked if tamiya_label_only(p)]
     items = [p for p in tam if re.fullmatch(r"\d{5}", str(p.get("number", ""))) and not maker_linked(p) and not dealer_linked(p)]
     dealer_only = sum(1 for p in spares if dealer_linked(p))
     check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker link (Tamiya USA's spare page, kind maker): the daily derive runs tools/link_tamiya_de_spares.py (tamiya.de sitemap) and tools/link_tamiya_usa_spares.py (Tamiya USA listings, which tools/plan_tamiya_usa_spares.py queues) in hobbydex-tools; a spare with only a dealer link is counted in dealer_only",
           spares, count=len(spares), maker=sum(1 for p in spares_all if maker_linked(p)), dealer_only=dealer_only)
+    check("tamiya-spare-label-only", "no maker spare page exists: the part's name comes from OCR of a manual (a bag or parts-tree label, or a part name) and the maker has no page for the number (informational)",
+          label_only, count=len(label_only), per_brand=[("tamiya", len(label_only))], info=True)
     check("tamiya-item-no-link", "a Tamiya item number with no maker product page: give it a maker link (tamiya.com page) or a manual or fan-site source",
           items, count=len(items))
     usa_tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamiya-usa-spares.tsv")
@@ -1240,17 +1308,10 @@ def main():
               stated, per_brand=per_brand(stated))
 
     # 29b. hardware (any brand) whose cached product photo is not read yet for its colour or its piece count
-    if tools["hwphoto"]:
-        hw = tools["hwphoto"]
-        unread_ids = set()
-        for brand_parts in by_brand(parts):   # the photo index of a brand is dropped after its parts (it held every brand at once)
-            for p in brand_parts:
-                if hw.unread_photo(p):
-                    unread_ids.add(id(p))
-            hw._INDEX.pop((brand_parts[0].get("brand") or "")[6:], None)
-        hw._NUM = None   # number_pages: every cached product page, built once for this check
-        hw.L._CRAWLED = None   # the crawl's page map (link_pack_qty.crawled_pages), read by the photo lookups only
-        unread = [p for p in parts if id(p) in unread_ids]
+    unread = hw_photo_unread(tools["hwphoto"], parts) if tools["hwphoto"] else []
+    if unread is None:   # hobbydex-tools' tools/data/vlm.toml is gitignored and missing on a fresh checkout
+        results["hw-photo-unread"] = {"fix": "hobbydex-tools tools/data/vlm.toml not found (--tools)", "count": None, "examples": [], "all": []}
+    elif tools["hwphoto"]:
         check("hw-photo-unread", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour or pack_qty by hand from the photo",
               unread, per_brand=per_brand(unread))
 
@@ -1445,8 +1506,15 @@ def main():
     # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
     hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
     hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
+    gone_items = horizon_gone_items(os.path.abspath(args.tools))
+    hz_nopage = [p for p in hz if horizon_no_page(p, docs, gone_items)]
+    hz_nopage_ids = {p["id"] for p in hz_nopage}
+    hz = [p for p in hz if p["id"] not in hz_nopage_ids]
+    hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
     check("horizon-part-no-maker-link", "run tools/link_horizon_pages.py (queues the item's Horizon page first; a part Horizon lists nowhere stays unlinked)",
           hz, per_brand=hz_brands.most_common())
+    check("horizon-part-no-maker-page", "no maker page exists: the part is named only by exploded views, parts lists or manuals, and its Horizon item page answers 404 (informational)",
+          hz_nopage, count=len(hz_nopage), per_brand=collections.Counter(p["brand"].split("/")[-1] for p in hz_nopage).most_common(), info=True)
 
     hw_box = []
     for r in rels:

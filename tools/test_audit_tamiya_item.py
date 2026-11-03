@@ -40,6 +40,34 @@ def test_no_links():
     assert not audit.tamiya_maker_linked([])
 
 
+def test_label_only_spares():
+    assert audit.tamiya_label_only({"name": "A Parts", "name_source": "ocr", "category": "parts-tree"})
+    assert audit.tamiya_label_only({"name": "Idler Gear", "name_source": "ocr", "category": "gear"})
+    assert not audit.tamiya_label_only({"name": "Propeller Shaft (Long)", "name_source": "manual", "category": "misc"})
+    assert not audit.tamiya_label_only({"name": "10003163"})
+
+
+def test_hw_photo_unread_skips_without_vlm_toml():
+    class Hw:
+        _INDEX = {}
+        def unread_photo(self, p):
+            raise FileNotFoundError("tools/data/vlm.toml")
+    assert audit.hw_photo_unread(Hw(), [{"id": "part/x/1", "brand": "brand/x"}]) is None
+
+
+def test_hw_photo_unread_lists_unread_parts():
+    class Crawl:
+        _CRAWLED = 1
+    class Hw:
+        _INDEX = {}
+        _NUM = 1
+        L = Crawl
+        def unread_photo(self, p):
+            return p["id"].endswith("1")
+    parts = [{"id": "part/x/1", "brand": "brand/x"}, {"id": "part/x/2", "brand": "brand/x"}]
+    assert [p["id"] for p in audit.hw_photo_unread(Hw(), parts)] == ["part/x/1"]
+
+
 if __name__ == "__main__":
     for name, fn in sorted(globals().items()):
         if name.startswith("test_") and callable(fn):
