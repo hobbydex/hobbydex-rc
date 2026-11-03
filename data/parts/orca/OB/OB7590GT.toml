@@ -1,0 +1,18 @@
+id = "part/orca/OB7590GT"
+brand = "brand/orca"
+number = "OB7590GT"
+name = "INFINITE ULTRA LiPo 7500mAh 7.4V 90C RACE PACK"
+category = "battery"
+weight_g = 335
+dimensions_mm = [138, 47, 25]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/infinite-ultra-lipo-7500mah-7-4v-90c-race-pack/" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-7500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 7500
+c_rating = 90

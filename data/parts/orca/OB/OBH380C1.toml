@@ -1,0 +1,17 @@
+id = "part/orca/OBH380C1"
+brand = "brand/orca"
+number = "OBH380C1"
+name = "HV GENERATION3 8000mAh 3.8V RACE PACK"
+category = "battery"
+weight_g = 149
+dimensions_mm = [93, 47, 18.5]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/hv-generation3-8000mah-3-8v-race-pack/" },
+]
+voltage = 3.8
+equivalent_to = [
+  { spec = "spec/battery/lihv-1s-8000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lihv"
+cells = 1
+capacity_mah = 8000

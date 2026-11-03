@@ -1,0 +1,19 @@
+id = "part/orca/OB6880IH"
+brand = "brand/orca"
+number = "OB6880IH"
+name = "INFINITE LiPo 6500mAh 7.4V 70C RACE PACK"
+category = "battery"
+weight_g = 320
+dimensions_mm = [137, 47, 25]
+status = "discontinued"
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/infinite-lipo-6500mah-7-4v-70c-race-pack/" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 6500
+c_rating = 70
