@@ -10,7 +10,7 @@ links = [
 category = "tire"
 fits = [
   { kit = "kit/mst/xxx-r", releases = ["release/mst/xxx-r-rtr"], type = "replaces", source = "doc/mst/xxx-r-rtr-exploded-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/mst/fxx-d", type = "replaces", source = "doc/mst/fxx-d-vip", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
-  { kit = "kit/mst/rmx-d", type = "replaces", source = "doc/mst/rmx-d-vip-4wd-exploded-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/fxx-d", type = "direct", source = "doc/mst/fxx-d-vip", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mst/rmx-d", type = "direct", source = "doc/mst/rmx-d-vip-4wd-exploded-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
   { kit = "kit/mst/xxx-r-classic", type = "replaces", source = "doc/mst/xxx-r-classic-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]
