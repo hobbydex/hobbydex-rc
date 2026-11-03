@@ -7,11 +7,14 @@ pack_qty_basis = "manual"
 status = "discontinued"
 gtin = "4955439740880"
 category = "electronics"
-documents = ["doc/kyosho/1708-product-page"]
+documents = ["doc/kyosho/1708-product-page", "doc/kyosho/v-one-r4-151117", "doc/kyosho/tf5-070215", "doc/kyosho/v-one-s-060322"]
 color = "black"
 fits = [
   { kit = "kit/kyosho/ultima-rb", type = "direct", source = "doc/kyosho/30072-ep-ultimarb-sports-p" },
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30842-dbxve-rs-p" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (standard part) in Kyosho's V-ONE R4 series parts acceptable list" },
+  { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/tf5-070215", notes = "Marked for the TF-5 (standard part) in Kyosho's TF-5 / TF-5 Stallion parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "direct", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/1708.html" },

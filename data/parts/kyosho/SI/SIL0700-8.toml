@@ -5,10 +5,11 @@ name = "Silicone OIL #700 (80cc) #700"
 gtin = "4548565294688"
 fits = [
   { kit = "kit/kyosho/tf-7-7", type = "direct", source = "doc/kyosho/30027-tf7-7-parts-list-v01" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
 ]
 volume_ml = 80
 category = "oil-grease"
 equivalent_to = [
   { spec = "spec/oil/silicone-700cst", match = "functional", notes = "Viscosity number #700 as the brand states it, on the cSt scale; measuring temperature not given" },
 ]
-documents = ["doc/kyosho/30027-tf7-7-parts-list-v01"]
+documents = ["doc/kyosho/30027-tf7-7-parts-list-v01", "doc/kyosho/v-one-r4-151117"]

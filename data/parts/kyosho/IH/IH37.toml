@@ -5,9 +5,11 @@ name = "Motor Set (Mini Inferno / 380 class)"
 gtin = "4955439798768"
 fits = [
   { kit = "kit/kyosho/plazma-lm", type = "replaces", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/mini-inferno", type = "direct", source = "doc/kyosho/mini-inferno-061013", notes = "Marked for the Buggy (standard part) in Kyosho's Mini Inferno parts acceptable list" },
+  { kit = "kit/kyosho/mini-inferno-st", type = "direct", source = "doc/kyosho/mini-inferno-061013", notes = "Marked for the ST (standard part) in Kyosho's Mini Inferno parts acceptable list" },
 ]
 category = "motor"
-documents = ["doc/kyosho/ih37-product-page"]
+documents = ["doc/kyosho/ih37-product-page", "doc/kyosho/mini-inferno-061013"]
 equivalent_to = [
   { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]

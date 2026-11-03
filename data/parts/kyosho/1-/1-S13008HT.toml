@@ -8,9 +8,10 @@ pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
+  { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-151117", notes = "Marked for the R4 (option part) in Kyosho's V-ONE R4 series parts acceptable list" },
 ]
 category = "screw"
-documents = ["doc/kyosho/1-s13008ht-product-page"]
+documents = ["doc/kyosho/1-s13008ht-product-page", "doc/kyosho/v-one-r4-151117"]
 material = "titanium"
 equivalent_to = [
   { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },

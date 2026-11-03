@@ -6,6 +6,9 @@ gtin = "4955439867747"
 seen_by = "2012-03"
 seen_by_source = "doc/kyosho/ma015dws-t11-im"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-documents = ["doc/kyosho/ma015dws-t11-im"]
+documents = ["doc/kyosho/ma015dws-t11-im", "doc/kyosho/mini-z-parts-tekigou"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (option part) in Kyosho's MINI-Z parts acceptable list" },
+]

@@ -5,7 +5,8 @@ name = "Flywheel Set (for V-One R)"
 gtin = "4955439741832"
 fits = [
   { kit = "kit/kyosho/v-one-r", type = "replaces", source = "doc/kyosho/31011-v-one-p" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (standard part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 category = "engine-fuel"
-documents = ["doc/kyosho/31011-v-one-p", "doc/kyosho/vz065-product-page"]
+documents = ["doc/kyosho/31011-v-one-p", "doc/kyosho/vz065-product-page", "doc/kyosho/v-one-rrr-060322"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/vz065.html" } ]

@@ -7,9 +7,16 @@ pack_qty = 1
 pack_qty_basis = "page"
 gtin = "4955439786574"
 category = "o-ring-seal"
-documents = ["doc/kyosho/vsw024-03-product-page"]
+documents = ["doc/kyosho/vsw024-03-product-page", "doc/kyosho/evolva-060322", "doc/kyosho/fw-05-060322", "doc/kyosho/v-one-rrr-060322"]
 fits = [
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
+  { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/evolva-060322", notes = "Marked for the 2003 (option part) in Kyosho's Evolva 2003/2005 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05S (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rr-evo", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RR EVO (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
+  { kit = "kit/kyosho/v-one-rrr", type = "direct", source = "doc/kyosho/v-one-rrr-060322", notes = "Marked for the RRR (option part) in Kyosho's V-ONE RR / RR Evo / RRR parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vsw024-03.html" },

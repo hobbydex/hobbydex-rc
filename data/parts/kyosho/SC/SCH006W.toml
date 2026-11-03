@@ -6,9 +6,12 @@ gtin = "4548565273683"
 pack_qty = 2
 fits = [
   { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30622-01-optima-mid-op" },
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "wheel"
 position = "rear"
 color = "white"
 range = "kyosho/sch006-colours"
-documents = ["doc/kyosho/30622-01-optima-mid-op"]
+documents = ["doc/kyosho/30622-01-optima-mid-op", "doc/kyosho/vintage-160304-2-jp"]

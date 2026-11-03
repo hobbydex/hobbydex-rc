@@ -8,8 +8,11 @@ pack_qty_basis = "page"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "washer-shim"
-documents = ["doc/kyosho/pzw304-product-page"]
+documents = ["doc/kyosho/pzw304-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw304.html" },
 ]
 material = "carbon"
+fits = [
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30423"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30423 (option part) in Kyosho's Plazma series parts acceptable list" },
+]

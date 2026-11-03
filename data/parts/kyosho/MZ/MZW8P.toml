@@ -7,10 +7,13 @@ seen_by = "2007-10-30"
 seen_by_source = "https://web.archive.org/web/20071030035308/http://www.kyosho.com/jpn/race/presently/miniz_cup/images/mzw8p.jpg"
 gtin = "4955439005798"
 category = "motor"
-documents = ["doc/kyosho/mzw8p-product-page"]
+documents = ["doc/kyosho/mzw8p-product-page", "doc/kyosho/mini-z-parts-tekigou"]
 fits = [
   { kit = "kit/kyosho/mini-z-f1", type = "direct", source = "doc/kyosho/miniz-fomula-op-vol5-m" },
   { kit = "kit/kyosho/mini-z-monster", type = "replaces", source = "doc/kyosho/miniz-monster-op-vol8-m" },
+  { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (option part) in Kyosho's MINI-Z parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzw8p.html" },

@@ -6,6 +6,9 @@ gtin = "4955439757086"
 seen_by = "2006-05"
 seen_by_source = "doc/kyosho/30021-tf-5-m"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-documents = ["doc/kyosho/30021-tf-5-m"]
+documents = ["doc/kyosho/30021-tf-5-m", "doc/kyosho/mp75-777-060322"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/inferno-mp7-5", type = "replaces", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the MP-7.5 (option part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
+]

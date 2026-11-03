@@ -6,9 +6,10 @@ gtin = "4548565216031"
 fits = [
   { kit = "kit/kyosho/plazma-formula", type = "direct", source = "doc/kyosho/30412-plazma-formula-spop" },
   { kit = "kit/kyosho/plazma-lm", type = "replaces", source = "doc/kyosho/30925c-t01-plazma-lm-carbon-edition-spop" },
+  { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30422"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30422 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]
 category = "pinion"
-documents = ["doc/kyosho/pz131-product-page"]
+documents = ["doc/kyosho/pz131-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 teeth = 30
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pz131.html" },

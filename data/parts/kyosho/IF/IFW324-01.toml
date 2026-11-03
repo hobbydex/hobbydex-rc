@@ -6,7 +6,7 @@ pack_qty = 4
 pack_qty_basis = "name"
 gtin = "4955439871966"
 category = "screw"
-documents = ["doc/kyosho/ifw324-01-product-page", "doc/kyosho/31888-inferno-mp9-spop", "doc/kyosho/31889t1-inferno-mp9-tki3-rs-spop", "doc/kyosho/33011-mp9-tki4-10th-aniversary-spop"]
+documents = ["doc/kyosho/ifw324-01-product-page", "doc/kyosho/31888-inferno-mp9-spop", "doc/kyosho/31889t1-inferno-mp9-tki3-rs-spop", "doc/kyosho/33011-mp9-tki4-10th-aniversary-spop", "doc/kyosho/mp75-777-060322"]
 fits = [
   { kit = "kit/kyosho/inferno-mp10", type = "direct", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
   { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
@@ -17,6 +17,8 @@ fits = [
   { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31785-inferno-mp9-tki2-sp" },
   { kit = "kit/kyosho/inferno-gt3", type = "direct", source = "doc/kyosho/inferno-gt3-parts-list-v01-02" },
   { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31352-infst-r-p" },
+  { kit = "kit/kyosho/inferno-mp7-5", releases = ["release/kyosho/31192"], type = "direct", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the 7.5 SPORTS (option part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
+  { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the MP-777 (option part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ifw324-01.html" },

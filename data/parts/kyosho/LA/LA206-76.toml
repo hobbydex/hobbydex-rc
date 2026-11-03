@@ -5,7 +5,7 @@ name = "Spur Gear (48P-76T)(ZX-5)"
 gtin = "4955439866061"
 seen_by = "2019"
 seen_by_source = "doc/kyosho/34304-ultima-rb7-ss-im"
-documents = ["doc/kyosho/34304-ultima-rb7-ss-im"]
+documents = ["doc/kyosho/34304-ultima-rb7-ss-im", "doc/kyosho/lazer-zx-5-060322"]
 fits = [
   { kit = "kit/kyosho/lazer-zx6", type = "replaces", source = "doc/kyosho/30046-lazer-zx6-spop" },
   { kit = "kit/kyosho/lazer-zx7", type = "replaces", source = "doc/kyosho/30048-lazer-zx7-spop" },
@@ -14,6 +14,7 @@ fits = [
   { kit = "kit/kyosho/ultima-rb6-6", type = "direct", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
   { kit = "kit/kyosho/ultima-rb7", type = "direct", source = "doc/kyosho/34303-ultima-rb7-spop" },
   { kit = "kit/kyosho/ultima-sc", type = "replaces", source = "doc/kyosho/30854-t01-ultima-sc-r-sp-spop" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/kyosho/lazer-zx-5-060322", notes = "Marked for the Lazer ZX-5 (option part) in Kyosho's Lazer ZX-5 parts acceptable list" },
 ]
 category = "spur-gear"
 teeth = 76

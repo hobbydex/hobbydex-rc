@@ -6,7 +6,7 @@ pack_qty = 3
 pack_qty_basis = "manual"
 gtin = "4955439750384"
 category = "engine-fuel"
-documents = ["doc/kyosho/vz087-product-page"]
+documents = ["doc/kyosho/vz087-product-page", "doc/kyosho/fw-05-060322"]
 fits = [
   { kit = "kit/kyosho/pureten-fazer-gp", type = "replaces", source = "doc/kyosho/31382-fazer-impreza-p" },
   { kit = "kit/kyosho/v-one-r4", type = "direct", source = "doc/kyosho/v-one-r4-evo-parts-list-v02" },
@@ -20,6 +20,7 @@ fits = [
   { kit = "kit/kyosho/fw-05rr", type = "direct", source = "doc/kyosho/31584-fw05rr-kce-m" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/fw-05r", type = "direct", source = "doc/kyosho/31581-fw05r-p" },
+  { kit = "kit/kyosho/fw-05", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (standard part) in Kyosho's FW-05 parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vz087.html" },

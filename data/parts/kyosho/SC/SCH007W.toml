@@ -7,10 +7,12 @@ pack_qty = 2
 pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/beetle", type = "replaces", source = "doc/kyosho/30614-07-beetle-spop" },
+  { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/sch007w.html" },
 ]
 category = "misc"
 category_source = "fallback"
-documents = ["doc/kyosho/sch007w-product-page"]
+documents = ["doc/kyosho/sch007w-product-page", "doc/kyosho/vintage-160304-2-jp"]

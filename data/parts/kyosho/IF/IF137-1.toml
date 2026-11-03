@@ -3,7 +3,7 @@ brand = "brand/kyosho"
 number = "IF137-1"
 name = "Vibration Protection Rubber"
 gtin = "4955439738801"
-documents = ["doc/kyosho/if137-1-product-page", "doc/kyosho/31081-inferno-mp75-p", "doc/kyosho/31172-landmax2-p", "doc/kyosho/31191-inferno-kanai-p", "doc/kyosho/31278-inferno-mp75-sports3-mm-p", "doc/kyosho/31683-inferno-neo-st-rs-sp"]
+documents = ["doc/kyosho/if137-1-product-page", "doc/kyosho/31081-inferno-mp75-p", "doc/kyosho/31172-landmax2-p", "doc/kyosho/31191-inferno-kanai-p", "doc/kyosho/31278-inferno-mp75-sports3-mm-p", "doc/kyosho/31683-inferno-neo-st-rs-sp", "doc/kyosho/inferno-gt-060322"]
 fits = [
   { kit = "kit/kyosho/inferno-neo-4-0", type = "direct", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
   { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-spare-and-option-parts" },
@@ -24,6 +24,7 @@ fits = [
   { kit = "kit/kyosho/inferno-gt2", type = "direct", source = "doc/kyosho/31833-t01-inferno-gt2-rs-spop" },
   { kit = "kit/kyosho/twin-force", type = "replaces", source = "doc/kyosho/30521-b-twinforce-p" },
   { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/31221-madforce-p" },
+  { kit = "kit/kyosho/inferno-gt", type = "direct", source = "doc/kyosho/inferno-gt-060322", notes = "Marked for the Inferno GT (standard part) in Kyosho's Inferno GT parts acceptable list" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/if137-1.html" },

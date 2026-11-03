@@ -5,9 +5,10 @@ name = "Spur Gear Shaft (for OS)"
 gtin = "4955439771884"
 fits = [
   { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/31480jp-fw05ske-p" },
+  { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (standard part) in Kyosho's FW-05 parts acceptable list" },
 ]
 category = "spur-gear"
-documents = ["doc/kyosho/vs056-product-page"]
+documents = ["doc/kyosho/vs056-product-page", "doc/kyosho/fw-05-060322"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vs056.html" },
 ]

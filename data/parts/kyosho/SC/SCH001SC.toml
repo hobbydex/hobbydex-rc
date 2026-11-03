@@ -7,8 +7,10 @@ pack_qty = 2
 pack_qty_basis = "manual"
 fits = [
   { kit = "kit/kyosho/scorpion", type = "direct", source = "doc/kyosho/30613-mm07-2-scorpion-spop" },
+  { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "wheel"
 position = "front"
 color = "satin chrome"
-documents = ["doc/kyosho/30613-mm07-2-scorpion-spop", "doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/30613-mm06_4_scorpion_spop"]
+documents = ["doc/kyosho/30613-mm07-2-scorpion-spop", "doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/30613-mm06_4_scorpion_spop", "doc/kyosho/vintage-160304-2-jp"]

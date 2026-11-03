@@ -5,7 +5,7 @@ name = "Hard Pinion Gear(21T-48P)"
 status = "discontinued"
 gtin = "4955439867280"
 category = "pinion"
-documents = ["doc/kyosho/w0121z-product-page"]
+documents = ["doc/kyosho/w0121z-product-page", "doc/kyosho/lazer-zx-5-060322"]
 fits = [
   { kit = "kit/kyosho/ultima-rb6", type = "replaces", source = "doc/kyosho/30068-t03-ultima-rb6-spop" },
   { kit = "kit/kyosho/ultima-rb6-6", type = "replaces", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
@@ -18,6 +18,7 @@ fits = [
   { kit = "kit/kyosho/ultima-rt6", type = "replaces", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
   { kit = "kit/kyosho/ultima-sc6", type = "replaces", source = "doc/kyosho/30070-ultima-sc6-spop" },
   { kit = "kit/kyosho/lazer-zx7", type = "replaces", source = "doc/kyosho/30048-lazer-zx7-spop" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/kyosho/lazer-zx-5-060322", notes = "Marked for the Lazer ZX-5 (option part) in Kyosho's Lazer ZX-5 parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
