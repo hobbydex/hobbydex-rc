@@ -1,0 +1,19 @@
+id = "part/orca/OPL551HV"
+brand = "brand/orca"
+number = "OPL551HV"
+name = "POWER PLUS HV LiPo 5500mAh 7.6V 100C HARD CASE"
+category = "battery"
+weight_g = 246
+dimensions_mm = [138, 47, 22.5]
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/power-plus-hv-lipo-5500mah-7-6v-100c-hard-case/" },
+]
+chemistry = "lihv"
+cells = 2
+voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5500
+c_rating = 100
+case = "hard"

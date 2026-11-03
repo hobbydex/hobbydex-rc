@@ -1,0 +1,19 @@
+id = "part/orca/OB7080G5"
+brand = "brand/orca"
+number = "OB7080G5"
+name = "INFINITE LiPo 7000mAh 7.4V 80C RACE PACK"
+category = "battery"
+weight_g = 325
+dimensions_mm = [138, 47, 25]
+status = "discontinued"
+links = [
+  { site = "ORCA", url = "https://www.orcarc.com/product/infinite-lipo-7000mah-7-4v-80c-race-pack/" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-7000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 7000
+c_rating = 80
