@@ -1,0 +1,15 @@
+id = "part/himoto/81220-18"
+brand = "brand/himoto"
+number = "81220-18"
+name = "81220-18"
+category = "misc"
+category_source = "fallback"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/rancho", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rancho-pro", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/rancho-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda-pro", releases = ["release/himoto/HI8201E", "release/himoto/HI8202"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/torpeda-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
+]

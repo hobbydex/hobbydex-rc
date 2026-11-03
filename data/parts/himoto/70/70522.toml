@@ -1,0 +1,11 @@
+id = "part/himoto/70522"
+brand = "brand/himoto"
+number = "70522"
+name = "Bumper Mount"
+category = "misc"
+category_source = "fallback"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/drekkar", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/drekkar-1-10-electric", releases = ["release/himoto/HI2202", "release/himoto/HI2202BL"], type = "direct", source = "doc/himoto/option-parts" },
+]

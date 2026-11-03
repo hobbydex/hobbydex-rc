@@ -1,0 +1,12 @@
+id = "part/himoto/11170"
+brand = "brand/himoto"
+number = "11170"
+name = "0.8 Module Copper Motor Gear (15T)"
+category = "misc"
+category_source = "fallback"
+documents = ["doc/himoto/option-parts"]
+fits = [
+  { kit = "kit/himoto/bowie", releases = ["release/himoto/E10MTL"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/katana", releases = ["release/himoto/E10XTL"], type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/road-warrior", releases = ["release/himoto/E10BPL"], type = "direct", source = "doc/himoto/option-parts" },
+]
