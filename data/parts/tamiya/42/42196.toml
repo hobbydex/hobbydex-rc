@@ -7,7 +7,7 @@ seen_by_source = "doc/tamiya/42252-manual"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 equivalent_to = [
-  { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Tamiya size code 1280: 12 mm outer, 8 mm bore, 3.5 mm wide" },
+  { spec = "spec/bearing/8x12x3.5", match = "close", notes = "Tamiya size code 1280: 8x12 mm bore x outer; width 3.5 mm per the usual size, not stated by Tamiya" },
 ]
 category = "bearing"
 fits = [
