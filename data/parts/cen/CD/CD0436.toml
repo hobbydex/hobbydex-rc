@@ -8,3 +8,6 @@ links = [
   { site = "CEN Racing", url = "https://www.cenracingusa.com/products/cd0436-chassis-rail-a-b-235-50mm" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/cen/dl-series", releases = ["release/cen/8995", "release/cen/8996"], type = "replaces", source = "doc/cen/store", notes = "Car named by the product line of the part on CEN Racing's store (link_car_names.py)" },
+]
