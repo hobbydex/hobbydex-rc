@@ -6,6 +6,9 @@ name_ja = "ホイールセット (ランチャデルタ HF/シルバー/ミニ�
 name_source = "manual"
 gtin = "4955439066713"
 documents = ["doc/kyosho/mini-z-parts-tekigou"]
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Named for the mini-z-awd platform in the maker's part name (link_car_kits.py)" },
+]
 pack_qty = 4
 pack_qty_basis = "name"
 category = "wheel"

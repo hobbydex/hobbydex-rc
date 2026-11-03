@@ -6,5 +6,8 @@ name_ja = "アルミホイール (AWD/10本スポーク/ガンメタリック)"
 name_source = "manual"
 gtin = "4955439868393"
 documents = ["doc/kyosho/mini-z-parts-tekigou"]
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Named for the mini-z-awd platform in the maker's part name (link_car_kits.py)" },
+]
 category = "wheel"
 color = "gun metal"
