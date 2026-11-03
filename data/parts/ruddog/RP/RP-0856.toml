@@ -1,0 +1,20 @@
+id = "part/ruddog/RP-0856"
+brand = "brand/ruddog"
+number = "RP-0856"
+name = "Racing RR2 6400mAh 150C/75C 7.6V 25mm Short Stick Pack LiPo-HV Battery"
+category = "battery"
+gtin = "4052133035905"
+weight_g = 226
+dimensions_mm = [95.5, 46.95, 25]
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Racing-RR2-6400mAh-150C-75C-76V-25mm-Short-Stick-Pack-LiPo-HV-Battery_1" },
+]
+chemistry = "lihv"
+cells = 2
+voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 6400
+c_rating = 150

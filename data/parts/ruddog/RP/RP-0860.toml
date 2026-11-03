@@ -1,0 +1,18 @@
+id = "part/ruddog/RP-0860"
+brand = "brand/ruddog"
+number = "RP-0860"
+name = "Racing RR2 10.000mAh 150C/75C 7.6V 25mm Stick Pack LiPo-HV Battery"
+category = "battery"
+gtin = "4052133035943"
+documents = ["doc/ruddog/store"]
+links = [
+  { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Racing-RR2-10000mAh-150C-75C-76V-25mm-Stick-Pack-LiPo-HV-Battery_1" },
+]
+chemistry = "lihv"
+cells = 2
+voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-10000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 10000
+c_rating = 150
