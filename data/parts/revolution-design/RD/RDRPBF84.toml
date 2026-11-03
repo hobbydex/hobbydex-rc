@@ -14,3 +14,6 @@ links = [
 ]
 universal = true
 universal_basis = "size"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -16,3 +16,6 @@ dimensions_mm = [58, 20, 32]
 capacity_mah = 1000
 c_rating = 50
 connector = "IC2"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

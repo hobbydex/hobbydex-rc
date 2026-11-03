@@ -16,3 +16,6 @@ material = "plastic"
 position = "front"
 documents = ["doc/primal-rc/electric-dragster-manual", "doc/primal-rc/qs1-gas-dragster-manual"]
 links = [ { site = "Primal RC", url = "https://primalrc.com/product/PRQS2070B/" } ]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

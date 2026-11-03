@@ -17,3 +17,7 @@ weight_g = 155
 dimensions_mm = [93, 47, 18]
 capacity_mah = 3600
 c_rating = 130
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-3600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+case = "shorty"

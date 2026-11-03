@@ -16,3 +16,6 @@ scale = "1/10"
 position = "front"
 vehicle = "short-course"
 wheel_size = "2.2\"/3.0\""
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]

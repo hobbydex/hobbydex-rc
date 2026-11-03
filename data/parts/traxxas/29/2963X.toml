@@ -9,3 +9,9 @@ links = [
   { site = "Traxxas", url = "https://traxxas.com/2963x-5000-mah-96-volt-8-cell-nimh-hump-battery" },
 ]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/nimh-8s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "nimh"
+cells = 8
+capacity_mah = 5000

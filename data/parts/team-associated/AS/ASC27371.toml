@@ -15,3 +15,8 @@ cells = 4
 voltage = 15.2
 capacity_mah = 6100
 connector = "5mm bullet"
+equivalent_to = [
+  { spec = "spec/battery/lihv-4s-6100mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 85
+case = "shorty"

@@ -7,3 +7,6 @@ fits = [
   { kit = "kit/primal-rc/ram-1500", type = "direct", source = "doc/primal-rc/ram-1500-manual", notes = "Listed in the 1/8 RAM 1500 manual parts list" },
 ]
 documents = ["doc/primal-rc/ram-1500-manual"]
+rebrand_of = [
+  { part = "part/spektrum/SPMA9603", notes = "The name gives Spektrum's model code \"7.4V\" (7.4V 2000mAh 2S Li-Ion Transmitter Battery and AC Adapter); firmware, plug or packaging may differ (link_rebrands.py)" },
+]

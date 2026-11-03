@@ -9,3 +9,7 @@ gtin = "605482717080"
 category = "wire"
 weight_g = 70
 wire_awg = 18
+equivalent_to = [
+  { spec = "spec/wire/18awg", match = "functional" },
+]
+connectors = ["JST-RCY"]

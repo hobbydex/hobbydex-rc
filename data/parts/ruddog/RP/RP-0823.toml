@@ -8,3 +8,7 @@ documents = ["doc/ruddog/store"]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-Motor-Wire-Organiser-12-14AWG_1" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/14awg", match = "functional" },
+]
+wire_awg = 14

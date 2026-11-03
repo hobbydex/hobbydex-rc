@@ -11,3 +11,7 @@ links = [ { site = "Schumacher", url = "https://www.racing-cars.com/accessories/
 fits = [
   { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
+volume_ml = 60
+equivalent_to = [
+  { spec = "spec/oil/silicone-650cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]

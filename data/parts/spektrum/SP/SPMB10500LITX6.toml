@@ -12,3 +12,6 @@ voltage = 3.7
 chemistry = "liion"
 capacity_mah = 10500
 cells = 1
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-10500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

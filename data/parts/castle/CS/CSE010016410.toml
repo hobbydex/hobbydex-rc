@@ -3,12 +3,17 @@ brand = "brand/castle"
 number = "CSE010016410"
 name = "Sidewinder 4 Sensorless Waterproof ESC & 1412-3200kv Sensored Motor Combo"
 status = "discontinued"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-sidewinder-4-sensorless-waterproof-esc-and-1412-3200kv-sensored-motor-combo/CSE010016410.html", kind = "dealer" },
 ]
 gtin = "819326013324"
 category = "esc"
+motor_type = "brushless"
 weight_g = 64
 dimensions_mm = [53, 38, 33]
 lipo_cells = [2, 3]
 waterproof = true
+includes = [
+  { part = "part/castle/010-0164-00", qty = 1, notes = "Component named in the combo's name" },
+]

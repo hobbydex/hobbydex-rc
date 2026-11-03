@@ -6,6 +6,7 @@ seen_by = "2025-05-26"
 seen_by_source = "https://shop.lcracing.net/products/lce008-2845-sensorless-brushless-motor-4500kv-3-175mm-shaft-br-br-font-size-2-for-lc12b1-all-emb-and-bhc-series-font"
 documents = ["doc/lc-racing/lce008-product-page"]
 applies_to = "LC12B1, All EMB and BHC Series"
+sensored = false
 fits = [
   { kit = "kit/lc-racing/lc12b1", type = "direct", source = "doc/lc-racing/lce008-product-page" },
   { kit = "kit/lc-racing/bhc-1", type = "direct", source = "doc/lc-racing/lce008-product-page" },
@@ -19,5 +20,6 @@ fits = [
   { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/lce008-product-page" },
 ]
 category = "motor"
+motor_type = "brushless"
 kv = 4500
 gtin = "4570110896498"

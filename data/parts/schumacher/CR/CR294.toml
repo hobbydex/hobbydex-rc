@@ -14,3 +14,9 @@ fits = [
   { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/cougar-kf-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
   { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 4000
+c_rating = 60
+case = "shorty"

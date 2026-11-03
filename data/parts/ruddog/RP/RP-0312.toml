@@ -12,3 +12,7 @@ links = [
 ]
 pack_qty = 30
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/connector/servo-jr", match = "functional" },
+  { spec = "spec/connector/servo-futaba", match = "functional" },
+]

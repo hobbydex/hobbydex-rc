@@ -13,3 +13,8 @@ voltage = 7.4
 fits = [
   { kit = "kit/ftx/utah", type = "direct", notes = "Named by the maker's spares listing page on ftx-rc.com (import_ftx.py --link-fits)" },
 ]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-360mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+capacity_mah = 360

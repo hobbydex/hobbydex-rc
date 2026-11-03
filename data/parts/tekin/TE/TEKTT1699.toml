@@ -15,3 +15,7 @@ voltage = 7.4
 weight_g = 641
 dimensions_mm = [100, 69, 46]
 c_rating = 250
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-12555mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 12555

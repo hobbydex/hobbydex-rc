@@ -12,3 +12,7 @@ links = [
 chemistry = "lipo"
 cells = 2
 voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 2400

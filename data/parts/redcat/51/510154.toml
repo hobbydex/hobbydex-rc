@@ -16,3 +16,6 @@ fits = [
   { kit = "kit/redcat/tr-mt10e", type = "direct", source = "doc/redcat/store" },
 ]
 category = "wheel"
+equivalent_to = [
+  { spec = "spec/wheel-hex/14mm", match = "close", notes = "The wheel hexes listed for RC-MT10E RTR are 14 mm" },
+]

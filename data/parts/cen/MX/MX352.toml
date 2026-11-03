@@ -8,3 +8,7 @@ links = [
   { site = "CEN Racing", url = "https://www.cenracingusa.com/products/mx352" },
 ]
 category = "pinion"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-12t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

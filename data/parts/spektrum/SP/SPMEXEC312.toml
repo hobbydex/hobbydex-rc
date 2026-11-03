@@ -9,3 +9,9 @@ links = [
   { site = "Spektrum", url = "https://www.spektrumrc.com/product/spektrum-extension-lead-ec3-with-12-wire-16-awg/SPMEXEC312.html" },
 ]
 category = "wire"
+equivalent_to = [
+  { spec = "spec/wire/16awg", match = "functional" },
+]
+wire_awg = 16
+length_mm = 305
+connectors = ["EC3"]

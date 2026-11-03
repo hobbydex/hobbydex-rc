@@ -12,3 +12,9 @@ documents = ["doc/schumacher/mi3-spares-archive"]
 category = "battery"
 chemistry = "lipo"
 voltage = 14.8
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-6000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 4
+capacity_mah = 6000
+c_rating = 40

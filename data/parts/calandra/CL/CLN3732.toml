@@ -13,3 +13,9 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.4
 connector = "2mm bullet"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 5000
+c_rating = 45
+case = "hard"

@@ -10,3 +10,6 @@ gtin = "800734640592"
 category = "pinion"
 teeth = 59
 pitch_dp = 64
+equivalent_to = [
+  { spec = "spec/pinion/64dp-59t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

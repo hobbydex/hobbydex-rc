@@ -15,3 +15,7 @@ fits = [
 ]
 documents = ["doc/tamiya/58425-manual-de", "doc/tamiya/53422-product-page-ja"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/53422/index.html" } ]
+includes = [
+  { spec = "spec/pinion/mod0.4-44t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.4-45t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]

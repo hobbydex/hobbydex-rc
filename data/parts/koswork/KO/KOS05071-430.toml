@@ -9,3 +9,8 @@ category = "wire"
 links = [
   { site = "Koswork", url = "https://koswork.com/portfolio-item/kos05071-430-4s-30cm-charge-balance-extension-wire-lead-adapter-22awg-xh-female/" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/22awg", match = "functional" },
+]
+wire_awg = 22
+connectors = ["JST-XH"]

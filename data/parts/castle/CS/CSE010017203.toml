@@ -2,11 +2,16 @@ id = "part/castle/CSE010017203"
 brand = "brand/castle"
 number = "CSE010017203"
 name = "COBRA 8 25.2V ESC with 1515-2200KV V2 Sensored Motor Combo"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-cobra-8-25.2v-esc-with-1515-2200kv-v2-sensored-motor-combo/CSE010017203.html", kind = "dealer" },
 ]
 gtin = "819326012952"
 category = "esc"
+motor_type = "brushless"
 weight_g = 165.6
 dimensions_mm = [60, 52, 43]
 lipo_cells = [2, 6]
+includes = [
+  { part = "part/castle/010-0172-00", qty = 1, notes = "Component named in the combo's name" },
+]

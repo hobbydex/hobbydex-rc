@@ -10,3 +10,13 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-RC120AC-LiPo-Battery-AC-DC-Charger_1" },
 ]
 chemistry = "lipo"
+charges = ["lipo"]
+power_dc_w = 600
+charge_current_a = 20
+channels = 1
+ac_input_v = [100, 240]
+dc_input_v = [7, 28]
+nimh_cells = [1, 16]
+lipo_cells = [1, 6]
+balance_ports = ["JST-XH"]
+charger_source = "https://www.ruddog.eu/RUDDOG-RC120AC-LiPo-Battery-AC-DC-Charger_1"

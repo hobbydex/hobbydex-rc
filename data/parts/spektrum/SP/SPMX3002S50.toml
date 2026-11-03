@@ -14,3 +14,6 @@ voltage = 7.4
 capacity_mah = 300
 c_rating = 50
 connector = "JST-RCY"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

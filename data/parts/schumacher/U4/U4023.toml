@@ -11,3 +11,6 @@ fits = [
 documents = ["doc/schumacher/supastox-gt-spares-archive"]
 category = "pinion"
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-23t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

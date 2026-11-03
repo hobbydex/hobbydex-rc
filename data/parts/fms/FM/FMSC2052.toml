@@ -4,3 +4,9 @@ number = "FMSC2052"
 name = "LIPO Battery 2S LIPO 380mAh"
 documents = ["doc/fms/1-18-toyota-fj-cruiser-manual"]
 category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-380mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 380

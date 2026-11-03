@@ -59,3 +59,9 @@ fits = [
   { kit = "kit/hpi/wheely-king", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/wr8", type = "direct", source = "doc/hpi/part-pages" },
 ]
+mains_plug = "US"
+mains_plug_basis = "name"
+charges = ["lipo", "life", "liion", "nimh", "nicd", "pb"]
+dc_input_v = [11, 18]
+nimh_cells = [1, 15]
+charger_source = "https://www.hpiracing.com/en/part/101974"

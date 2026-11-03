@@ -17,3 +17,9 @@ fits = [
   { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
 range = "schumacher/12awg-f1de-colours"
+equivalent_to = [
+  { spec = "spec/wire/12awg", match = "functional" },
+]
+wire_awg = 12
+insulation = "silicone"
+length_mm = 1000

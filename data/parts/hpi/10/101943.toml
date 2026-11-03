@@ -22,3 +22,8 @@ fits = [
   { kit = "kit/hpi/savage-xs", type = "direct", source = "doc/hpi/part-pages" },
   { kit = "kit/hpi/sprint-2", type = "direct", source = "doc/hpi/part-pages" },
 ]
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-3800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 3800
+c_rating = 30

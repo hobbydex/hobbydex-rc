@@ -11,3 +11,6 @@ notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Hiro-Seiko-Star-T10-Socket-Flat-Head-Screw-M3x8-8-pcs_1", kind = "dealer" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-countersunk-torx", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

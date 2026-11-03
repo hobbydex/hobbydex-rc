@@ -13,3 +13,8 @@ chemistry = "lihv"
 cells = 3
 voltage = 11.4
 connector = "XT60"
+equivalent_to = [
+  { spec = "spec/battery/lihv-3s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 1500
+c_rating = 50
