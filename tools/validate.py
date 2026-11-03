@@ -159,6 +159,19 @@ SPEC_PART_CATS = {
 SIZE_SPEC_CATS = {"ball-end", "o-ring", "circlip"}   # specs keyed by one size, written by tools/link_*_specs.py
 
 
+# words of a vehicle class (never a named car): a universal part of basis size may keep an applies_to made of these
+# and a scale only (docs/schema.md "part", universal)
+VEHICLE_CLASS_WORDS = {"buggy", "buggies", "truggy", "truggies", "short", "course", "sc", "sct", "monster", "truck", "trucks",
+                       "crawler", "crawlers", "rock", "touring", "car", "cars", "on-road", "onroad", "off-road", "offroad",
+                       "road", "on", "off", "stadium", "rally", "drift", "racing", "scale", "scaler", "scalers"}
+CLASS_FILLER = {"rc", "fit", "fits", "for", "and", "the", "all", "a", "an", "of"}
+
+def class_only_applies_to(value):
+    """True when applies_to names only a vehicle class and maybe a scale ("Buggy", "Fit for 1/10 RC Touring Car")."""
+    text = re.sub(r"\b1\s?[/:]\s?\d+(?:th)?\b", " ", str(value).lower())
+    words = [w for w in re.split(r"[\s,/&+]+", text) if w]
+    return bool(words) and all(w in VEHICLE_CLASS_WORDS or w in CLASS_FILLER for w in words) and any(w in VEHICLE_CLASS_WORDS for w in words)
+
 def size_spec_problems(path, d):
     """Problems with a ball-end, O-ring or circlip spec: its size fields, and the id they are keyed by."""
     cat, out = d["category"], []
@@ -983,7 +996,9 @@ def main():
                 errors.append(f"{path}: universal is true or left out")
             elif "universal_basis" not in d:
                 errors.append(f"{path}: universal needs a universal_basis (maker, category, size or engine)")
-            elif d.get("applies_to") and d.get("universal_basis") != "engine":
+            elif d.get("applies_to") and d.get("universal_basis") not in ("engine", "size"):
+                errors.append(f"{path}: a part that names the model it is for (applies_to) is not universal")
+            elif d.get("applies_to") and d.get("universal_basis") == "size" and not class_only_applies_to(d["applies_to"]):
                 errors.append(f"{path}: a part that names the model it is for (applies_to) is not universal")
         if kind == "part" and ("includes_qty" in d or "includes_qty_note" in d):
             rows = d.get("includes") or []
