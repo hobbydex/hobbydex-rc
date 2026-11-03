@@ -18,6 +18,9 @@ includes = [
 category = "bearing"
 category_source = "curated"
 applies_to = "Capricorn C802"
+fits = [
+  { kit = "kit/capricorn/lab-c802", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Capricorn C802 (link_car_kits.py)" },
+]
 notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Rear, Ceramic Revolution, Ceramic Metal, Ceramic Rear, Metal (not Clutch), Revolution (not Clutch), Open (not Clutch), Ceramic Revolution (not Clutch), Ceramic Metal | Aura (not Clutch), Ceramic Metal (not Clutch), Ceramic Metal | Aura, Ceramic Rubber, Metal | Clutch, Ceramic Open | Aura, Metal (oiled), Ceramic Revolution | Aura, Thrust Bearing, Ceramic Thrust Bearing (Avid's Flex Kit builder)."
 links = [
   { site = "Avid RC", url = "https://www.avidrc.com/flexkit/1532/C802" },
