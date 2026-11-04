@@ -10,9 +10,9 @@ gtin = "4710588220689"
 links = [
   { site = "Koswork", url = "https://koswork.com/portfolio-item/kos41012-10x12x0-1mm-10x12x0-25mm-shims-4pcs-each/" },
 ]
-pack_qty = 4
+pack_qty = 8
 pack_qty_basis = "name"
 includes = [
-  { spec = "spec/washer/10x12x0.1" },
-  { spec = "spec/washer/10x12x0.25" },
+  { spec = "spec/washer/10x12x0.1", qty = 4 },
+  { spec = "spec/washer/10x12x0.25", qty = 4 },
 ]

@@ -11,9 +11,9 @@ notes = "known from the distributor RUDDOG"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Koswork-5x7x01mm-5x7x03mm-5mm-Shaft-Shims-4pcs-each_1", kind = "dealer" },
 ]
-pack_qty = 4
+pack_qty = 8
 pack_qty_basis = "name"
 includes = [
-  { spec = "spec/washer/5x7x0.1" },
-  { spec = "spec/washer/5x7x0.3" },
+  { spec = "spec/washer/5x7x0.1", qty = 4 },
+  { spec = "spec/washer/5x7x0.3", qty = 4 },
 ]
