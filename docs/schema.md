@@ -63,6 +63,7 @@ legal_name = "XRAY Model Racing Cars"   # optional
 country = "SK"                           # ISO 3166-1 alpha-2
 website = "https://www.teamxray.com"
 website_fallback = "https://www.rochobbies.com"   # optional: a second site of the maker, used when the first has no page for a part
+aliases = ["..."]                       # optional: other names the brand is stated under (see below)
 youtube = ["https://www.youtube.com/@XRAYracing"]   # optional: the maker's official channels, its own first
 kind = "manufacturer"                    # manufacturer | aftermarket | designer | retailer
 status = "active"                        # active | dormant | gone
@@ -74,6 +75,8 @@ notes = "..."
 ```
 
 `website_fallback` (optional): a second web address of the maker, used for product links only when `website` has no page for the part (ROC Hobby: fmshobby.com first, rochobbies.com as fallback). Its pages link only where a structured product SKU names the part (tools/link_maker_pages.py, mode structured).
+
+`aliases` (optional): other names the brand is stated under on a page or in a store that its name and legal name do not cover: a store's vendor name (Team Losi Racing for TLR, Zapglue for Pacer, Genspow for Gens ace), or the line name a page uses (Carisma Racing). Tools that read a stated brand resolve it through these names as well; a name two brands share resolves to neither.
 
 `youtube`: a list of the maker's YouTube channels as `https://www.youtube.com/@<handle>`, the brand's own channel first. Only official channels, the ones the maker's own site links (home page, footer, about page); never a fan's, a shop's or a racer's channel. A channel shared by a parent company (Horizon Hobby's, for ARRMA, Axial, Losi...) follows the brand's own. Filled by tools/link_brand_youtube.py.
 
