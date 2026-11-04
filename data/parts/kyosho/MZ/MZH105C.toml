@@ -4,6 +4,11 @@ number = "MZH105C"
 name = "MZH105C"
 gtin = "4955439872352"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-documents = ["doc/kyosho/30393-mzg116-porsche934-rsr-p"]
+documents = ["doc/kyosho/30393-mzg116-porsche934-rsr-p", "doc/kyosho/mini-z-parts-tekigou"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (wheel that does not fit certain bodies, MR-01 type) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (wheel set limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (wheel set limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
+]

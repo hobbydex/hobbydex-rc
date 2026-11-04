@@ -5,7 +5,11 @@ name = "MINI-Z Racing Radial Tyre 20°"
 gtin = "4548565090952"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (tire set limited to certain wheels) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (tire set limited to certain wheels) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (tire set limited to certain wheels) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (tire set limited to certain wheels, AWD type) in Kyosho's MINI-Z parts acceptable list" },
 ]
 category = "tire"
-documents = ["doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts", "doc/kyosho/32795-mini-z-mr-03evo-chassis-set-2021-manual"]
+documents = ["doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts", "doc/kyosho/32795-mini-z-mr-03evo-chassis-set-2021-manual", "doc/kyosho/mini-z-parts-tekigou"]
 mounting = "unmounted"

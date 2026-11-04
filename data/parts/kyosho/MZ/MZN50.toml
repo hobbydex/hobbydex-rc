@@ -6,5 +6,8 @@ gtin = "4955439067123"
 seen_by = "2008-01"
 seen_by_source = "doc/kyosho/mzn50-enzo-ferrari"
 name_ja = "エンツォ フェラーリ"
-documents = ["doc/kyosho/mzn50-enzo-ferrari"]
+documents = ["doc/kyosho/mzn50-enzo-ferrari", "doc/kyosho/mini-z-parts-tekigou"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

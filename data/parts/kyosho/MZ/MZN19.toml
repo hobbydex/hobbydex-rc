@@ -6,5 +6,10 @@ gtin = "4955439064771"
 seen_by = "2009-04"
 seen_by_source = "doc/kyosho/mzn19-ferrari-f40-m"
 name_ja = "フェラーリF40"
-documents = ["doc/kyosho/mzn19-ferrari-f40-m"]
+documents = ["doc/kyosho/mzn19-ferrari-f40-m", "doc/kyosho/mini-z-parts-tekigou"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

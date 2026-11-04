@@ -12,6 +12,9 @@ includes = [
   { spec = "spec/bearing/12x21x5" },
 ]
 applies_to = "HotBodies D819RS (#204579)"
+fits = [
+  { kit = "kit/hb-racing/d819", type = "direct", source = "doc/rcscrewz/store", notes = "Listed for the HotBodies D819RS (#204579) (link_car_kits.py)", releases = ["release/hb-racing/d819rs"] },
+]
 notes = "Holds every bearing of the car plus one spare of each size; the description gives the sizes, not the counts."
 links = [
   { site = "RCScrewZ", url = "https://www.rcscrewz.com/product/hot040b-hotbodies-d19rs-204579-metal-shielded-bearing-kit/" },

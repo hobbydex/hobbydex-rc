@@ -7,3 +7,7 @@ name_source = "manual"
 gtin = "4955439767467"
 documents = ["doc/kyosho/mini-z-parts-tekigou", "doc/kyosho/mzd04-product-page"]
 category = "decal"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-01", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (option part used with another option part) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-awd", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (option part used with another option part) in Kyosho's MINI-Z parts acceptable list" },
+]

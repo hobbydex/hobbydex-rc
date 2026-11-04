@@ -6,5 +6,8 @@ gtin = "4548565081332"
 seen_by = "2007-06"
 seen_by_source = "doc/kyosho/mzn82-volkswagen-golf-r32"
 name_ja = "フォルクスワーゲン ゴルフ R32"
-documents = ["doc/kyosho/mzn82-volkswagen-golf-r32"]
+documents = ["doc/kyosho/mzn82-volkswagen-golf-r32", "doc/kyosho/mini-z-parts-tekigou"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

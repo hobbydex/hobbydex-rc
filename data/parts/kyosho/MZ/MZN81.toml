@@ -6,5 +6,8 @@ gtin = "4548565076932"
 seen_by = "2007-05"
 seen_by_source = "doc/kyosho/mzn81-ferrari-250-gto"
 name_ja = "フェラーリ 250 GTO"
-documents = ["doc/kyosho/mzn81-ferrari-250-gto"]
+documents = ["doc/kyosho/mzn81-ferrari-250-gto", "doc/kyosho/mini-z-parts-tekigou"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

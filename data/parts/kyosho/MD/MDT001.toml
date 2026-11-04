@@ -10,6 +10,9 @@ links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mdt001.html" },
 ]
 category = "tire"
-documents = ["doc/kyosho/mdt001-product-page"]
+documents = ["doc/kyosho/mdt001-product-page", "doc/kyosho/mini-z-parts-tekigou"]
 vehicle = "drift"
 mounting = "unmounted"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (tire set limited to certain wheels) in Kyosho's MINI-Z parts acceptable list" },
+]

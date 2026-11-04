@@ -8,3 +8,8 @@ gtin = "4955439770641"
 documents = ["doc/kyosho/mini-z-parts-tekigou"]
 category = "wheel"
 color = "gun metal"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (wheel that does not fit certain bodies, MR-01 type) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (wheel set limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (wheel set limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
+]

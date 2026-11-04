@@ -6,5 +6,10 @@ gtin = "4955439066096"
 seen_by = "2009"
 seen_by_source = "doc/kyosho/mzn39-rx-7-fd3s-m"
 name_ja = "マツダ RX-7 FD3S"
-documents = ["doc/kyosho/mzn39-rx-7-fd3s-m"]
+documents = ["doc/kyosho/mzn39-rx-7-fd3s-m", "doc/kyosho/mini-z-parts-tekigou"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

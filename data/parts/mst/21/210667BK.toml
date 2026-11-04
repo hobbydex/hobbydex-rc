@@ -6,6 +6,7 @@ seen_by = "2025-07-15"
 seen_by_source = "https://web.archive.org/web/20250715003426/https://www.rc-mst.com/product_info.php?class_sn=15&class_sn2=41&sn=3820"
 fits = [
   { kit = "kit/mst/mrx", type = "direct", source = "doc/mst/website", notes = "The model is named in MST's product name" },
+  { kit = "kit/mst/frx", type = "replaces", source = "doc/mst/website", notes = "Named for this kit on MST's product page (link_mst_spec_fits.py)" },
 ]
 links = [
   { site = "MST", url = "https://www.rc-mst.com/product_info.php?class_sn=15&class_sn2=41&sn=3820" },

@@ -5,6 +5,9 @@ name = "SUBARU impreza WRX STI spec C"
 seen_by = "2008"
 seen_by_source = "doc/kyosho/mzn84-subaru-impreza-wrx"
 name_ja = "スバルインプレッサ WRX STI spec C"
-documents = ["doc/kyosho/mzn84-subaru-impreza-wrx"]
+documents = ["doc/kyosho/mzn84-subaru-impreza-wrx", "doc/kyosho/mini-z-parts-tekigou"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]
