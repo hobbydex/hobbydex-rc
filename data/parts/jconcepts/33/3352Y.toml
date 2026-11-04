@@ -11,3 +11,7 @@ color = "yellow"
 gtin = "845937007643"
 vehicle = "short-course"
 range = "jconcepts/3352-hazard-tekno-sct410sl-losi-ten-sct-e-ten-sct-nit-6482-colours"
+fits = [
+  { kit = "kit/losi/ten-sct-nitro", type = "replaces", source = "doc/jconcepts/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+  { kit = "kit/tekno/sct410sl", type = "replaces", source = "doc/jconcepts/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+]
