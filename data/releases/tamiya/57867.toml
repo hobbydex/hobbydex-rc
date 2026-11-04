@@ -9,7 +9,7 @@ status = "released"
 released = "2013-08-31"
 released_source = "doc/tamiya/57867-product-page-ja"
 notes = "Release day in Japan from Tamiya's Japanese product page; Tamiya classes it as a regular product, made continuously; XB (Expert Built): built and painted, with radio"
-documents = ["doc/tamiya/57867-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02b-manual", "doc/tamiya/youtube-dJUI0GsKmO4", "doc/tamiya/youtube-92QKfb1Ccds"]
+documents = ["doc/tamiya/57867-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tt02b-manual", "doc/tamiya/youtube-dJUI0GsKmO4", "doc/tamiya/youtube-92QKfb1Ccds", "doc/tamiya/57867-manual-de"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/57867", kind = "fan-site" },
 ]
@@ -69,4 +69,10 @@ contains = [
   { part = "part/tamiya/84175", role = "listed", source = "doc/tamiya/tt02b-manual" },
   { part = "part/tamiya/84195", role = "listed", source = "doc/tamiya/tt02b-manual" },
   { part = "part/tamiya/87099", role = "listed", source = "doc/tamiya/tt02b-manual" },
+  { part = "part/tamiya/13455323", role = "kit", source = "doc/tamiya/57867-manual-de", qty = 1, step = "MB13", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/50038", role = "kit", source = "doc/tamiya/57867-manual-de", qty = 4, step = "MA9" },
+  { part = "part/tamiya/51005", role = "kit", source = "doc/tamiya/57867-manual-de" },
+  { part = "part/tamiya/51076", role = "kit", source = "doc/tamiya/57867-manual-de" },
+  { part = "part/tamiya/51530", role = "kit", source = "doc/tamiya/57867-manual-de" },
+  { part = "part/tamiya/51531", role = "kit", source = "doc/tamiya/57867-manual-de", step = "GB1, GB5" },
 ]

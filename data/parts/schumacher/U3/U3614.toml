@@ -10,3 +10,6 @@ name_source = "ocr"
 documents = ["doc/schumacher/cat-sx3-manual"]
 category = "chassis"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/rear-shock-bracket-s1-cat-sx2-u3614" } ]
+fits = [
+  { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
+]

@@ -10,3 +10,11 @@ pack_qty_basis = "name"
 category = "suspension"
 documents = ["doc/schumacher/ft8-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/eccentrics-4-pcs-mi5evo-mi6-evo-mi7-ft8-u4567" } ]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi5-evo", type = "direct", source = "doc/schumacher/mi5evo-exploded-iss1", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6", type = "direct", source = "doc/schumacher/mi6-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6evo", type = "direct", source = "doc/schumacher/mi6evo-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+]

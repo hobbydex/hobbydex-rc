@@ -10,3 +10,7 @@ color = "white"
 documents = ["doc/schumacher/procatclassic-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/procat-classic/front-wheels-white-pr-tc-cc-pc-u7597" } ]
 position = "front"
+fits = [
+  { kit = "kit/schumacher/procat-classic", type = "direct", source = "doc/schumacher/procat-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/top-cat", type = "direct", source = "doc/schumacher/topcat-explode", notes = "Shown on the car's exploded diagram" },
+]

@@ -8,3 +8,9 @@ gtin = "5051294074685"
 category = "turnbuckle"
 documents = ["doc/schumacher/icon-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse/turnbuckle-adjuster-htt-39mm-pr-u4222" } ]
+fits = [
+  { kit = "kit/schumacher/cat-xls-masami", type = "direct", source = "doc/schumacher/cat-xls-masami-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/eclipse", type = "direct", source = "doc/schumacher/eclipse-exploded-linked", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mission-ft", type = "direct", source = "doc/schumacher/mission-ft-exploded-v2", notes = "Shown on the car's exploded diagram" },
+]

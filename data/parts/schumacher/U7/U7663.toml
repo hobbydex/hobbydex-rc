@@ -6,3 +6,7 @@ seen_by = "2020-08-05"
 seen_by_source = "https://web.archive.org/web/20200805195416/https://www.racing-cars.com/brass-rr-strap-3-0-17g-cougar-laydown-u7663"
 category = "chassis"
 documents = ["doc/schumacher/ld2-manual"]
+fits = [
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-ld2", type = "direct", source = "doc/schumacher/ld2-exploded", notes = "Shown on the car's exploded diagram" },
+]

@@ -7,3 +7,6 @@ name_source = "ocr"
 documents = ["doc/schumacher/cougar-sv-exploded"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/schumacher/cougar-sv", type = "direct", source = "doc/schumacher/cougar-sv-exploded", notes = "Shown on the car's exploded diagram" },
+]

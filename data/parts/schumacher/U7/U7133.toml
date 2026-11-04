@@ -10,3 +10,9 @@ pack_qty_basis = "name"
 category = "clip"
 documents = ["doc/schumacher/ld2-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/kwik-clips-2-4x1-5mm-pk4-2wd-4wd-u7133" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1-evo", type = "direct", source = "doc/schumacher/cat-l1-evo-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-ld2", type = "direct", source = "doc/schumacher/ld2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

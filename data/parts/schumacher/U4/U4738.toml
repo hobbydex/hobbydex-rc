@@ -10,3 +10,8 @@ pack_qty_basis = "name"
 category = "ball-end"
 documents = ["doc/schumacher/storm-st-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/captive-ball-joint-long-4pcs-off-road-u4738" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1-evo", type = "direct", source = "doc/schumacher/cat-l1-evo-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

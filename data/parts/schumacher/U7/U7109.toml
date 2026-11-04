@@ -10,3 +10,9 @@ pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/f1/icon-2-worlds/speed-pack-m3x25-button-hd-pk10-u7109" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1-evo", type = "direct", source = "doc/schumacher/cat-l1-evo-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon-2", type = "direct", source = "doc/schumacher/icon2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+]

@@ -8,3 +8,8 @@ gtin = "5051294132262"
 category = "gear"
 documents = ["doc/schumacher/ld2-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/alloy-layshaft-stock-ld-2-st-u7666" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-ld2", type = "direct", source = "doc/schumacher/ld2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

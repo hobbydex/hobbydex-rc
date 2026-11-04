@@ -7,10 +7,13 @@ sources = { name = "https://www.tamiyabase.com/tamiya-models/56044" }
 status = "released"
 depicts = { model = "Centurion" }
 notes = "Release date from TamiyaBase (Tamiya's pages give none); Name from TamiyaBase's model page (fallback: no Tamiya page names it); Tamiya lists it as a regular product (std.csv)"
-documents = ["doc/tamiya/product-classes", "doc/tamiya/56044-product-page-ja"]
+documents = ["doc/tamiya/product-classes", "doc/tamiya/56044-product-page-ja", "doc/tamiya/tamico-dealer-parts"]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/56044", kind = "fan-site" },
 ]
 released = "2021-12-25"
 released_source = "TamiyaBase"
 year = 2021
+contains = [
+  { part = "part/tamiya/19115546", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]

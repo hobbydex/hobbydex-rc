@@ -9,3 +9,10 @@ name_source = "ocr"
 documents = ["doc/schumacher/cat-k1-aero-manual"]
 category = "o-ring-seal"
 color = "purple"
+fits = [
+  { kit = "kit/schumacher/cat-k1-aero", type = "direct", source = "doc/schumacher/cat-k1-aero-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/kf-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-kr", type = "direct", source = "doc/schumacher/kr-exploded-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-svr", type = "direct", source = "doc/schumacher/cougar-svr-exploded", notes = "Shown on the car's exploded diagram" },
+]

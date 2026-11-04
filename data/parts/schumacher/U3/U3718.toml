@@ -8,3 +8,10 @@ gtin = "5051294042226"
 category = "pin"
 documents = ["doc/schumacher/storm-st-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/pivot-pin-38mm-off-road-u3718" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/kf-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-sv2", type = "direct", source = "doc/schumacher/cougar-sv2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-svr", type = "direct", source = "doc/schumacher/cougar-svr-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]
