@@ -12,3 +12,7 @@ related = [
   { part = "part/traxxas/1914X", relation = "replaces", notes = "link_part_refs" },
   { part = "part/traxxas/1914R", relation = "replaces", notes = "link_part_refs" },
 ]
+fits = [
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/rpm/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/rpm/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+]
