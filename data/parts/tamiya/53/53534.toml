@@ -2,8 +2,6 @@ id = "part/tamiya/53534"
 brand = "brand/tamiya"
 number = "53534"
 name = "3x8mm Titanium Countersunk Hex Head Screw"
-seen_by = "2005-03-22"
-seen_by_source = "https://web.archive.org/web/20050322182442/http://www.tamiyausa.com:80/product/rcpss.php?command=kits&part_id=53534"
 pack_qty = 5
 pack_qty_basis = "page"
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
@@ -13,5 +11,7 @@ equivalent_to = [
   { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 material = "titanium"
-documents = ["doc/tamiya/49255-manual-usa"]
+documents = ["doc/tamiya/49255-manual-usa", "doc/tamiya/newitems-month"]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/english/products/53534/index.html" } ]
+released = "2002-08"
+released_source = "doc/tamiya/newitems-month"
