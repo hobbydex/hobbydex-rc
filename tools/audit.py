@@ -475,6 +475,11 @@ def load_art_sources(tools):
     return items
 
 
+# what the audit says when cache/gtin_sweep_holes.json is absent: the file is written by `report`, which reads the index `scan` builds
+GTIN_HOLES_MISSING = ("hobbydex-tools cache/gtin_sweep_holes.json not found: it is written by tools/gtin_sweep.py report, which needs "
+                      "the index: run python3 -I tools/gtin_sweep.py scan, then python3 -I tools/gtin_sweep.py report")
+
+
 def load_gtin_holes(tools):
     """{record id: [code, label, cached file]} of the barcodes the cache states for a record (hobbydex-tools
     tools/gtin_sweep.py report writes cache/gtin_sweep_holes.json); None when the file is absent."""
@@ -1203,11 +1208,11 @@ def main():
     # 9b. barcodes the cache states for a record that has no gtin (tools/gtin_sweep.py in hobbydex-tools finds them)
     if tools["gtin_holes"] is not None:
         miss = gtin_in_cache_not_stored(tools["gtin_holes"], by_id)
-        check("gtin-in-cache-not-stored", "rerun tools/link_gtin.py in hobbydex-tools (a barcode a cached page states for exactly this number); if it does not take it, the importer misses that page format: fix the class (tools/gtin_sweep.py report lists the file)",
+        check("gtin-in-cache-not-stored", "rerun tools/link_gtin.py in hobbydex-tools (a barcode a cached page states for exactly this number); if it does not take it, the importer misses that page format: fix the class (tools/gtin_sweep.py report writes the file it lists)",
               miss)
         results["gtin-in-cache-not-stored"]["examples"] = [{"id": i, "url": url_for(by_id[i]), "gtin": tools["gtin_holes"][i][0], "file": tools["gtin_holes"][i][2]} for i in miss[:args.examples]]
     else:
-        results["gtin-in-cache-not-stored"] = {"fix": "hobbydex-tools cache/gtin_sweep_holes.json not found (python3 -I tools/gtin_sweep.py scan, then report)", "count": None, "examples": [], "all": []}
+        results["gtin-in-cache-not-stored"] = {"fix": GTIN_HOLES_MISSING, "count": None, "examples": [], "all": []}
 
     # 9c. a wired linker that would change data (the daily derive runs each one twice; the second run must change nothing)
     if tools["linker_drift"] is not None:

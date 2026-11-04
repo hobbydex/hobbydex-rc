@@ -1,6 +1,6 @@
 """Cases for audit.gtin_in_cache_not_stored and load_gtin_holes: a barcode the cache states for a record without a gtin.
 
-    python3 -I -m pytest tools/test_audit_gtin_in_cache.py -q
+    python3 -I tools/test_audit_gtin_in_cache.py
 """
 import json
 import os
@@ -30,3 +30,23 @@ def test_holes_file_is_read_and_absent_file_is_none():
         with open(os.path.join(d, "cache", "gtin_sweep_holes.json"), "w") as f:
             json.dump({"stamp": "2026-11-03", "holes": HOLES}, f)
         assert audit.load_gtin_holes(d) == HOLES
+
+
+def test_missing_holes_file_says_which_command_writes_it():
+    fix = audit.GTIN_HOLES_MISSING
+    assert "run python3 -I tools/gtin_sweep.py scan, then python3 -I tools/gtin_sweep.py report" in fix
+    assert audit.load_gtin_holes(tempfile.mkdtemp()) is None
+
+
+if __name__ == "__main__":
+    import inspect
+    failed = 0
+    for name, fn in sorted(globals().items()):
+        if name.startswith("test_") and inspect.isfunction(fn):
+            try:
+                fn()
+                print("ok", name)
+            except AssertionError as e:
+                failed += 1
+                print("FAIL", name, e)
+    sys.exit(1 if failed else 0)
