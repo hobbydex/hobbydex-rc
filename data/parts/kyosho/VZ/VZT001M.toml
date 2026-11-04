@@ -4,7 +4,7 @@ number = "VZT001M"
 name = "24mmハイグリップラジアルタイヤ(M/セミスリック/A/布入)"
 name_source = "manual"
 gtin = "4955439861424"
-documents = ["doc/kyosho/ep-alpha3-060322", "doc/kyosho/fw-05-060322", "doc/kyosho/gp-alpha3-060322", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322"]
+documents = ["doc/kyosho/ep-alpha3-060322", "doc/kyosho/fw-05-060322", "doc/kyosho/gp-alpha3-060322", "doc/kyosho/v-one-rrr-060322", "doc/kyosho/v-one-s-060322", "doc/kyosho/31384-fazer-vauxhall-as-body-p", "doc/kyosho/fazer-ve-x-spop"]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "tire"
@@ -19,4 +19,6 @@ fits = [
   { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
   { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
   { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
+  { kit = "kit/kyosho/fazer", type = "replaces", source = "doc/kyosho/fazer-ve-x-spop" },
+  { kit = "kit/kyosho/pureten-fazer-gp", type = "replaces", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
 ]
