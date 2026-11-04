@@ -8,3 +8,6 @@ documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/megap-mtc-5", type = "direct", source = "doc/himoto/option-parts" },
 ]
+equivalent_to = [
+  { spec = "spec/pin/6x55.2", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

@@ -13,3 +13,6 @@ fits = [
   { kit = "kit/himoto/panthera", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/raptor-5xb", type = "direct", source = "doc/himoto/option-parts" },
 ]
+equivalent_to = [
+  { spec = "spec/nut/m5-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

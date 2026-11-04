@@ -4,3 +4,6 @@ number = "150-0218"
 name = "M3 x 10mm Set Screw"
 category = "screw"
 documents = ["doc/rc4wd/z-k0069manual-v8", "doc/rc4wd/z-k0070manual-v18", "doc/rc4wd/z-k0071manual-v8", "doc/rc4wd/z-k0072manual-v6", "doc/rc4wd/z-k0075manual-v4-cut"]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
