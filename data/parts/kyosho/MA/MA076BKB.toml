@@ -5,6 +5,10 @@ name = "MA076BKB"
 seen_by = "2014"
 seen_by_source = "doc/kyosho/30887-mm01-fo-xx-ve-ex"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-documents = ["doc/kyosho/30887-mm01-fo-xx-ve-ex"]
+documents = ["doc/kyosho/30887-mm01-fo-xx-ve-ex", "doc/kyosho/31226-mad-force-kruiser-p", "doc/kyosho/31228-mm01-fo-xx-spop"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/fo-xx", type = "direct", source = "doc/kyosho/31228-mm01-fo-xx-spop" },
+  { kit = "kit/kyosho/mad-force-kruiser", type = "direct", source = "doc/kyosho/31229-mad-force-kruiser-2-spop" },
+]
