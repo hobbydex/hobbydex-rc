@@ -11,6 +11,11 @@ seen_by = "2020-08"
 seen_by_source = "https://web.archive.org/web/20200805085948/http://www.himotoracing.site/?searchscale=1:8&searchtype=NITRO&searchproduct=TRUGGY&submit=Search"
 documents = ["doc/himoto/catalogue", "doc/himoto/n8", "doc/himoto/option-parts"]
 notes = "Maker's site features: 2.4g Radio; 9kg Steering Digital Servo; 6kg Throttle Digital Servo; 3.5 CC 21 Cxp Engine(N8XT); 4.6 CC 28 Cxp Engine(N8XT-28); Alum Exhaust Pipe; 125 CC Fuel Tank; 3 Diff Drivetrain; Pre-painted Body"
+contains = [
+  { part = "part/himoto/02057S", role = "listed", source = "doc/himoto/n8" },
+  { part = "part/himoto/02155", role = "listed", source = "doc/himoto/n8" },
+  { part = "part/himoto/03026", role = "listed", source = "doc/himoto/n8" },
+]
 links = [
   { site = "Himoto Racing", url = "http://www.himotoracing.site/?searchscale=1:8&searchtype=NITRO&searchproduct=TRUGGY&submit=Search" },
   { site = "Himoto Racing model page", url = "http://www.himotoracing.site/?details=overview&searchscale=1%3A8&searchtype=NITRO&searchproduct=TRUGGY&searchterm=&product=TRUGGY&type=NITRO&ref_no=truggy_g010&item_no=N8XT&submit=Go+To+Details" },
