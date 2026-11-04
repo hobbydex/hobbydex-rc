@@ -6,5 +6,8 @@ gtin = "4955439072479"
 seen_by = "2009-06"
 seen_by_source = "doc/kyosho/mzn69-porsche-935-turbo-bs"
 name_ja = "ポルシェ935 ターボ"
-documents = ["doc/kyosho/mzn69-porsche-935-turbo-bs"]
+documents = ["doc/kyosho/mzn69-porsche-935-turbo-bs", "doc/kyosho/mini-z-parts-tekigou"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

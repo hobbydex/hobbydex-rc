@@ -6,6 +6,10 @@ gtin = "4955439072455"
 seen_by = "2007"
 seen_by_source = "doc/kyosho/mzn68-fairlady-z-gt500-2005-bs"
 name_ja = "フェアレディZ GT500 2005"
-documents = ["doc/kyosho/mzn68-fairlady-z-gt500-2005-bs"]
+documents = ["doc/kyosho/mzn68-fairlady-z-gt500-2005-bs", "doc/kyosho/mini-z-parts-tekigou"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

@@ -7,8 +7,11 @@ seen_by = "2011"
 seen_by_source = "doc/kyosho/mzn127-lancia-hf-im"
 gtin = "4548565168934"
 name_ja = "ランチア デルタ HF インテグラーレ"
-documents = ["doc/kyosho/mzn127-lancia-hf-im"]
+documents = ["doc/kyosho/mzn127-lancia-hf-im", "doc/kyosho/mzn127-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn127.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-ma-010", type = "direct", source = "doc/kyosho/mzn127-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

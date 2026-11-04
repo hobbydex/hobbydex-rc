@@ -6,9 +6,12 @@ status = "discontinued"
 gtin = "4955439774311"
 fits = [
   { kit = "kit/kyosho/mini-z-f1", type = "direct", source = "doc/kyosho/miniz-fomula-op-vol5-m" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (option part limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (option part limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-01", type = "direct", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (option part limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
 ]
 category = "electronics"
-documents = ["doc/kyosho/mfw12-product-page"]
+documents = ["doc/kyosho/mfw12-product-page", "doc/kyosho/mini-z-parts-tekigou"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mfw12.html" },
 ]
