@@ -8,3 +8,7 @@ seen_by_source = "https://web.archive.org/web/20200805193520/https://www.racing-
 name_source = "manual"
 documents = ["doc/schumacher/eclipse-exploded-linked"]
 category = "differential"
+fits = [
+  { kit = "kit/schumacher/eclipse-2", type = "direct", source = "doc/schumacher/eclipse2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/eclipse-3", type = "direct", source = "doc/schumacher/eclipse3-exploded", notes = "Shown on the car's exploded diagram" },
+]

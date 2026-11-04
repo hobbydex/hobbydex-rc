@@ -7,3 +7,7 @@ category = "misc"
 category_source = "fallback"
 documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st2/yokes-med-flex-10-deg-cat-l1-evo-r-u7988" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1-evo", type = "direct", source = "doc/schumacher/cat-l1-evo-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cat-l1r", type = "direct", source = "doc/schumacher/catl1r-exploded-diagram-v2", notes = "Shown on the car's exploded diagram" },
+]

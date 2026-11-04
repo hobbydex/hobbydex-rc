@@ -8,3 +8,7 @@ gtin = "5051294115951"
 category = "body-accessory"
 documents = ["doc/schumacher/cougar-laydown-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-2wd-buggy/cougar-laydown/body-mount-mouldings-cougar-kd-kc-ld-u7049" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+]

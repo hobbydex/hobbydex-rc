@@ -4,3 +4,7 @@ number = "U7134"
 name = "Alloy Front Link Mount"
 category = "chassis"
 documents = ["doc/schumacher/cougar-laydown-manual"]
+fits = [
+  { kit = "kit/schumacher/cougar-kc", type = "direct", source = "doc/schumacher/cougar-kc-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+]

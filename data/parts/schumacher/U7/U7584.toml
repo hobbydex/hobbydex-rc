@@ -8,3 +8,7 @@ gtin = "5051294131449"
 category = "pin"
 documents = ["doc/schumacher/procatclassic-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/procat-classic/grooved-pins-2-0-x-34-0-pr-tc-cc-pc-u7584" } ]
+fits = [
+  { kit = "kit/schumacher/procat-classic", type = "direct", source = "doc/schumacher/procat-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/top-cat", type = "direct", source = "doc/schumacher/topcat-explode", notes = "Shown on the car's exploded diagram" },
+]

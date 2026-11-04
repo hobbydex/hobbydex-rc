@@ -5,8 +5,8 @@ name = "GPM Stainless Steel E-Revo VXL 2.0 Front Or Rear Turnbuckles"
 pack_qty = 2
 pack_qty_basis = "name"
 fits = [
-  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/gpm/store" },
-  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/gpm/store", replaces = "part/traxxas/8638" },
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/gpm/store", replaces = "part/traxxas/8638" },
 ]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-er2162s-4-oc-bebk-gpm-stainless-steel-e-revo-vxl-2-0-front-or-rear-turnbuckles-2pcs/" },

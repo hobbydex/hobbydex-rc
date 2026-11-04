@@ -9,3 +9,7 @@ notes = "Name read by OCR from a scanned schumacher manual; verify before relyin
 name_source = "ocr"
 documents = ["doc/schumacher/cat-sx3-manual"]
 category = "chassis"
+fits = [
+  { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cat-sx3", type = "direct", source = "doc/schumacher/cat-sx3-exploded-l", notes = "Shown on the car's exploded diagram" },
+]

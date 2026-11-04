@@ -6,3 +6,7 @@ gtin = "5051294133368"
 category = "drivetrain"
 documents = ["doc/schumacher/mi7-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mission-ft/rear-driveshaft-pr-mi7-ft-u7776" } ]
+fits = [
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mission-ft", type = "direct", source = "doc/schumacher/mission-ft-exploded-v2", notes = "Shown on the car's exploded diagram" },
+]

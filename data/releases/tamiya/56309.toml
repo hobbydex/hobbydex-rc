@@ -8,7 +8,7 @@ year = 1997
 kind = "kit"
 status = "released"
 depicts = { make = "Ford", model = "Aeromax" }
-documents = ["doc/tamiya/56309-product-page", "doc/tamiya/56560-product-page", "doc/tamiya/56309-manual", "doc/tamiya/newitems-month", "doc/tamiya/56309-exploded-view-usa", "doc/tamiya/56309-parts-list-usa", "doc/tamiya/56309-manual-usa", "doc/tamiya/56309-explosionszeichnung", "doc/tamiya/56309-bauanleitung", "doc/tamiya/56309-ersatzteilliste"]
+documents = ["doc/tamiya/56309-product-page", "doc/tamiya/56560-product-page", "doc/tamiya/56309-manual", "doc/tamiya/newitems-month", "doc/tamiya/56309-exploded-view-usa", "doc/tamiya/56309-parts-list-usa", "doc/tamiya/56309-manual-usa", "doc/tamiya/56309-explosionszeichnung", "doc/tamiya/56309-bauanleitung", "doc/tamiya/56309-ersatzteilliste", "doc/tamiya/tamico-dealer-parts"]
 contains = [
   { part = "part/tamiya/10005467", role = "kit", source = "doc/tamiya/56309-manual" },
   { part = "part/tamiya/10005468", role = "kit", source = "doc/tamiya/56309-manual" },
@@ -88,6 +88,7 @@ contains = [
   { part = "part/tamiya/56505", role = "listed", source = "doc/tamiya/56309-manual-usa" },
   { part = "part/tamiya/56507", role = "listed", source = "doc/tamiya/56309-manual-usa" },
   { part = "part/tamiya/12320005", role = "kit", source = "doc/tamiya/56309-manual" },
+  { part = "part/tamiya/15395054", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 released = "1997-12"
 released_source = "doc/tamiya/newitems-month"

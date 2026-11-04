@@ -11,3 +11,7 @@ links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/supasto
 equivalent_to = [
   { spec = "spec/bearing/4x8x3", match = "close", notes = "A plain bushing, 4x8x3; the ball bearing of that size replaces it" },
 ]
+fits = [
+  { kit = "kit/schumacher/mission-ft", type = "direct", source = "doc/schumacher/mission-ft-exploded-v2", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/supastox", type = "direct", source = "doc/schumacher/supastox-exploded", notes = "Shown on the car's exploded diagram" },
+]

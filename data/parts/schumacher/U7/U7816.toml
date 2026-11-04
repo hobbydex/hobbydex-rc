@@ -8,3 +8,7 @@ gtin = "5051294133764"
 category = "suspension"
 documents = ["doc/schumacher/mi7-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi8/alloy-radius-arms-mi7-mi8-pr-u7816" } ]
+fits = [
+  { kit = "kit/schumacher/mi7", type = "direct", source = "doc/schumacher/mi7-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+]

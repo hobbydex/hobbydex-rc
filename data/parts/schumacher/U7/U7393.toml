@@ -11,3 +11,7 @@ category = "misc"
 category_source = "fallback"
 documents = ["doc/schumacher/cat-l1-evo-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-l1-evo/front-yokes-10-deg-pr-l1-evo-u7393" } ]
+fits = [
+  { kit = "kit/schumacher/cat-l1-evo", type = "direct", source = "doc/schumacher/cat-l1-evo-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cat-l1", type = "direct", source = "doc/schumacher/cat-l1-exploded", notes = "Shown on the car's exploded diagram" },
+]

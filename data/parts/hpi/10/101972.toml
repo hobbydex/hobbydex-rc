@@ -8,6 +8,12 @@ name_source = "manufacturer"
 category = "charger"
 links = [
   { site = "HPI Racing", url = "https://hpiracing.com/en/part/101972" },
+  { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/101972" },
+]
+fits = [
+  { kit = "kit/hpi/bullet-mt", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/bullet-st", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
 ]
 weight_g = 578
 mains_plug = "EU"

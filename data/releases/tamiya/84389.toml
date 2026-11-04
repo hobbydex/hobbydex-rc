@@ -7,7 +7,7 @@ kind = "kit"
 status = "discontinued"
 related = [{ release = "release/tamiya/58034", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/84389" }]
 notes = "Release date from Tamiya's Japanese page for 47304, which names this item's first sale (2014-09); the item page gives 2014-10-01, the day of its latest run; Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/84389-manual", "doc/tamiya/84389-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/youtube-3ZWGCg6EBdA", "doc/tamiya/84389-manual-usa", "doc/tamiya/47304-product-page-ja"]
+documents = ["doc/tamiya/84389-manual", "doc/tamiya/84389-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/youtube-3ZWGCg6EBdA", "doc/tamiya/84389-manual-usa", "doc/tamiya/47304-product-page-ja", "doc/tamiya/tamico-dealer-parts"]
 contains = [
   { part = "part/tamiya/10005038", role = "kit", source = "doc/tamiya/84389-manual" },
   { part = "part/tamiya/10115027", role = "kit", source = "doc/tamiya/84389-manual" },
@@ -122,6 +122,8 @@ contains = [
   { part = "part/tamiya/53968", role = "kit", source = "doc/tamiya/84389-manual", qty = 5, step = "BC2" },
   { part = "part/tamiya/84292", role = "kit", source = "doc/tamiya/84389-manual", qty = 4, step = "BB7" },
   { part = "part/tamiya/14028003", role = "kit", source = "doc/tamiya/84389-manual" },
+  { part = "part/tamiya/13458159", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+  { part = "part/tamiya/19338150", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/84389", kind = "fan-site" },

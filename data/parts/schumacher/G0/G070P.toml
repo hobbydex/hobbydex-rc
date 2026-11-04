@@ -7,3 +7,8 @@ name_source = "ocr"
 documents = ["doc/schumacher/sst-sport-manual"]
 category = "oil-grease"
 viscosity_wt = 70
+fits = [
+  { kit = "kit/schumacher/nitro21xtr3e", type = "direct", source = "doc/schumacher/xtr3eexplodedweb", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/big6-electric", type = "direct", source = "doc/schumacher/lotus-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/big6-nitro", type = "direct", source = "doc/schumacher/big6-nitro-exploded", notes = "Shown on the car's exploded diagram" },
+]

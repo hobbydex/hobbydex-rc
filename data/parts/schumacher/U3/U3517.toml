@@ -8,3 +8,8 @@ name_source = "manual"
 documents = ["doc/schumacher/cat-sx3-manual"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi4", type = "direct", source = "doc/schumacher/mi-4-exploded-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi4cxl", type = "direct", source = "doc/schumacher/mi4cxl-exploded", notes = "Shown on the car's exploded diagram" },
+]

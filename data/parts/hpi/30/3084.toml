@@ -7,6 +7,9 @@ seen_by_source = "https://web.archive.org/web/20131109092737/http://www.hpiracin
 category = "wheel"
 color = "black chrome"
 name_source = "manufacturer"
-links = [ { site = "HPI Racing", url = "https://hpiracing.com/en/part/3084" } ]
+links = [{ site = "HPI Racing", url = "https://hpiracing.com/en/part/3084" }, { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/3084" }]
+fits = [
+  { kit = "kit/hpi/savage-xs", type = "replaces", source = "doc/hpi/part-pages", notes = "Hops up #3051, #3052" },
+]
 pack_qty = 2
 pack_qty_basis = "name"

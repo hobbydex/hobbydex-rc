@@ -6,3 +6,8 @@ seen_by = "2019-08-20"
 seen_by_source = "https://web.archive.org/web/20190820211750/http://www.racing-cars.com/pp/New_Cars_and_Parts/Cougar_Laydown/U7676.html"
 category = "gear"
 documents = ["doc/schumacher/ld2-manual"]
+fits = [
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-ld2", type = "direct", source = "doc/schumacher/ld2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

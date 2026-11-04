@@ -10,4 +10,8 @@ category = "wheel"
 color = "gold"
 documents = ["doc/hpi/115372-vol2-rtr-e10-drift-050315"]
 links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/3319" } ]
+fits = [
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+]
 offset_mm = 3
