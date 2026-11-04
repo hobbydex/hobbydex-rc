@@ -6,3 +6,8 @@ pack_qty = 2
 pack_qty_basis = "manual"
 category = "shock"
 documents = ["doc/tekno/eb482-1-instructions"]
+related = [
+  { part = "part/tekno/TKR8730", relation = "requires", notes = "link_part_refs" },
+  { part = "part/tekno/TKR8702", relation = "fits", notes = "link_part_refs" },
+  { part = "part/tekno/TKR6003", relation = "fits", notes = "link_part_refs" },
+]

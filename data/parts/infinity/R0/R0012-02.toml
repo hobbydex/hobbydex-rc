@@ -4,5 +4,8 @@ number = "R0012-02"
 name = "PULLY SET B (for MAIN SHAFT)"
 category = "gear"
 
+fits = [
+  { kit = "kit/infinity/if18-2", releases = ["release/infinity/if18-2"], type = "replaces", source = "doc/infinity/10133-003", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
 [sources]
 name = "https://www.creationmodel.net/infinity/index.php/new-products"

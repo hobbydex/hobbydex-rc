@@ -2,6 +2,7 @@ id = "part/kyosho/GGW02"
 brand = "brand/kyosho"
 number = "GGW02"
 name = "Aluminum Sub Chassis (3mm/BLUE)"
+status = "discontinued"
 name_ja = "17Sアルミサブシャシー(ブルー/3mm/ギガクラッシャー)"
 name_source = "manufacturer"
 gtin = "4955439799970"
@@ -9,6 +10,7 @@ documents = ["doc/kyosho/monstertruck-060322", "doc/kyosho/ggw02-product-page"]
 category = "chassis"
 fits = [
   { kit = "kit/kyosho/giga-crusher", type = "replaces", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the GIGA CRUSHER (option part) in Kyosho's Monster Truck parts acceptable list" },
+  { kit = "kit/kyosho/giga-crusher", type = "replaces", replaces = "part/kyosho/GG014", source = "doc/kyosho/monstertruck-060322", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "aluminium"
 color = "blue"

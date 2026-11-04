@@ -4,5 +4,9 @@ number = "CM-A001-900"
 name = "SILICONE SHOCK OIL #900 (60cc)"
 category = "oil-grease"
 
+volume_ml = 60
+equivalent_to = [
+  { spec = "spec/oil/silicone-900cst", match = "functional", notes = "Viscosity number #900 as the brand states it, on the cSt scale; measuring temperature not given" },
+]
 [sources]
 name = "https://www.creationmodel.net/infinity/index.php/new-products"

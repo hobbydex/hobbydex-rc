@@ -13,4 +13,5 @@ material = "carbon"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/umw503.html" } ]
 fits = [
   { kit = "kit/kyosho/ultima-rb5", type = "replaces", source = "doc/kyosho/umw503-product-page", notes = "Named in the maker's product text on rc.kyosho.com" },
+  { kit = "kit/kyosho/ultima-rb5", type = "replaces", replaces = "part/kyosho/UM513", source = "doc/kyosho/umw503-product-page", notes = "Same part in another material (link_upgrades.py)" },
 ]

@@ -7,3 +7,6 @@ color = "blue"
 documents = ["doc/carson/500202015-manual-specter-2-pro", "doc/carson/500204021-bedienanleitung", "doc/carson/500409001-e-crasher-xl"]
 shock_part = "complete"
 material = "aluminium"
+fits = [
+  { kit = "kit/carson/e-crasher-xl", type = "replaces", replaces = "part/carson/500205742", source = "doc/carson/500409001-e-crasher-xl", notes = "Same part in another material (link_upgrades.py)" },
+]
