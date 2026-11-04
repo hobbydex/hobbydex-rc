@@ -7,6 +7,9 @@ category = "esc"
 motor_type = "brushless"
 current_a = 30
 documents = ["doc/ftx/cml-comet-manual"]
+fits = [
+  { kit = "kit/ftx/comet", type = "family", source = "doc/ftx/cml-comet-manual", notes = "The part names only the comet family (link_car_kits.py)" },
+]
 name_source = "manufacturer"
 links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-comet-brushless-esc-30a" },

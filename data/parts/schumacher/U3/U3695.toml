@@ -6,6 +6,9 @@ gtin = "5051294041991"
 seen_by = "2012-02"
 seen_by_source = "doc/schumacher/cougar-sv2-manual"
 documents = ["doc/schumacher/cougar-sv2-manual"]
+fits = [
+  { kit = "kit/schumacher/top-cat", type = "family", source = "doc/schumacher/cougar-sv2-manual", notes = "The part names only the top family (link_car_kits.py)" },
+]
 category = "chassis"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-2wd-buggy/cougar-svr/pivot-top-deck-pr-sv-2-svr-u3695" } ]
 name_source = "manufacturer"

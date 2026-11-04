@@ -8,6 +8,9 @@ notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 category = "body"
 name_source = "manufacturer"
 documents = ["doc/ftx/cml-carnage-nt-manual-parts"]
+fits = [
+  { kit = "kit/ftx/carnage", type = "family", source = "doc/ftx/cml-carnage-nt-manual-parts", notes = "The part names only the carnage family (link_car_kits.py)" },
+]
 links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-carnage-st-printed-body-black" },
 ]

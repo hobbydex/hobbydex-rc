@@ -5,4 +5,7 @@ name = "Gear Diff Case Set MSB1 V2"
 notes = "Revision letter of B2302: the parts lists print it small after the number"
 category = "differential"
 documents = ["doc/mugen/msb1-part-list-ja"]
+fits = [
+  { kit = "kit/mugen/msb1", type = "family", source = "doc/mugen/msb1-part-list-ja", notes = "The part names only the msb1 family (link_car_kits.py)" },
+]
 name_source = "manufacturer"

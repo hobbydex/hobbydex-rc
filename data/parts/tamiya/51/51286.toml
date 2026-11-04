@@ -8,6 +8,9 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "differential"
 documents = ["doc/tamiya/42139-manual-usa", "doc/tamiya/49401-manual-usa"]
+fits = [
+  { kit = "kit/tamiya/trf501x", type = "family", source = "doc/tamiya/42139-manual-usa", notes = "The part names only the trf501x family (link_car_kits.py)" },
+]
 links = [
   { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20140825213834/http://www.tamiyausa.com/product/item.php?product-id=51286", kind = "archive", gone = "2026-10-28" },
 ]

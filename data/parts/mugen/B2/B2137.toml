@@ -7,5 +7,8 @@ notes = "Name read by OCR from a scanned mugen manual; verify before relying on 
 name_source = "ocr"
 category = "turnbuckle"
 documents = ["doc/mugen/exploded-view-b2001"]
+fits = [
+  { kit = "kit/mugen/msb1", type = "family", source = "doc/mugen/exploded-view-b2001", notes = "The part names only the msb1 family (link_car_kits.py)" },
+]
 material = "titanium"
 links = [ { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/Titanium-Turnbuckles-3.5x43mm-MSB1/B2137" } ]

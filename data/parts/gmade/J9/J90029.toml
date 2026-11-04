@@ -3,6 +3,9 @@ brand = "brand/gmade"
 number = "J90029"
 name = "HARDENED UNIVERSAL SHAFT FOR AXIAL WRAITH"
 documents = ["doc/gmade/cml-distribution-spares"]
+fits = [
+  { kit = "kit/axial/wraith", type = "family", source = "doc/gmade/cml-distribution-spares", notes = "The part names only the wraith family (link_car_kits.py)" },
+]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/J90029/gmade-hardened-universal-shaft-for-axial-wraith", kind = "dealer" },
 ]

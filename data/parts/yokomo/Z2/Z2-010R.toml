@@ -10,6 +10,9 @@ pack_qty_basis = "name"
 category = "drivetrain"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
 documents = ["doc/yokomo/yz-2-dt-instruction-manual", "doc/yokomo/yz-2-instruction-manual", "doc/yokomo/yz-4-instruction-manual"]
+fits = [
+  { kit = "kit/yokomo/yz-2", type = "family", source = "doc/yokomo/yz-2-dt-instruction-manual", notes = "The part names only the yz-2 family (link_car_kits.py)" },
+]
 links = [
   { site = "Yokomo (Internet Archive)", url = "https://web.archive.org/web/20211206083627/https://shop.teamyokomo.com/z2-010r", kind = "archive" },
 ]

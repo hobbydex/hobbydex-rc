@@ -11,3 +11,6 @@ category = "tool"
 material = "aluminium"
 material_grade = "7075-T6"
 documents = ["doc/xray/rx8-2017-part-list", "doc/xray/rx8-2018-part-list", "doc/xray/rx8-2023-part-list", "doc/xray/rx8-2026-part-list", "doc/xray/rx8e-2023-part-list", "doc/xray/rx8e-2026-part-list"]
+fits = [
+  { kit = "kit/xray/rx8", type = "family", source = "doc/xray/rx8-2017-part-list", notes = "The part names only the rx8 family (link_car_kits.py)" },
+]

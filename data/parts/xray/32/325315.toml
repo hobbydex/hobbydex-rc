@@ -5,3 +5,6 @@ name = "XT4 REAR DRIVE SHAFT 94MM WITH 2.5MM PIN"
 former_names = ["XT4 REAR DRIVE SHAFT 94MM WITH 2.5MM PIN - HUDY SPRING STEEL"]
 category = "drivetrain"
 documents = ["doc/xray/xt2-2023-part-list", "doc/xray/xt2-2021-manual", "doc/xray/xt4-2023-manual", "doc/xray/xt2-2021-part-list", "doc/xray/xt4-2023-part-list", "doc/xray/xt4-2025-part-list"]
+fits = [
+  { kit = "kit/xray/xt4", type = "family", source = "doc/xray/xt2-2023-part-list", notes = "The part names only the xt4 family (link_car_kits.py)" },
+]

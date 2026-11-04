@@ -5,6 +5,9 @@ name = "Stinger Aluminium Steering Arms (pr)"
 notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 category = "steering"
 documents = ["doc/ftx/cml-stinger-manual"]
+fits = [
+  { kit = "kit/ftx/stinger", type = "family", source = "doc/ftx/cml-stinger-manual", notes = "The part names only the stinger family (link_car_kits.py)" },
+]
 former_names = ["Steering Blocks (AL)"]
 name_source = "manufacturer"
 links = [

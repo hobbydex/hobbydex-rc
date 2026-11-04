@@ -8,6 +8,9 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "chassis"
 documents = ["doc/tamiya/49348-manual-usa", "doc/tamiya/49458-manual", "doc/tamiya/58338-manual-usa"]
+fits = [
+  { kit = "kit/tamiya/tb-02", type = "family", source = "doc/tamiya/49348-manual-usa", notes = "The part names only the tb-02 family (link_car_kits.py)" },
+]
 links = [
   { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20051120133240/http://www.tamiyausa.com:80/product/rcpss.php?command=kits&part_id=51044", kind = "archive", gone = "2026-10-27" },
 ]

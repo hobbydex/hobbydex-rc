@@ -7,6 +7,9 @@ name = "EMOX - blue housing assembly"
 category = "misc"
 category_source = "fallback"
 documents = ["doc/cross-rc/emo-x1-manual"]
+fits = [
+  { kit = "kit/cross-rc/emox-nt", type = "family", source = "doc/cross-rc/emo-x1-manual", notes = "The part names only the emox family (link_car_kits.py)" },
+]
 name_source = "dealer"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/16181-cro97401095-CRO97401095-97401095", kind = "dealer" },

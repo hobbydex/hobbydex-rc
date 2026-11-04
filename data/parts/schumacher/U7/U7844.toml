@@ -5,4 +5,7 @@ name = "S2 Droop Gauge Spacer - Mi7"
 gtin = "5051294134044"
 category = "tool"
 documents = ["doc/schumacher/mi7-manual"]
+fits = [
+  { kit = "kit/schumacher/mi7", type = "family", source = "doc/schumacher/mi7-manual", notes = "The part names only the mi7 family (link_car_kits.py)" },
+]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi7/s2-droop-gauge-spacer-mi7-u7844" } ]

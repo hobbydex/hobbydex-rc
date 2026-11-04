@@ -7,4 +7,9 @@ seen_by_source = "https://web.archive.org/web/20200811140738/https://www.racing-
 gtin = "5051294126438"
 category = "chassis"
 documents = ["doc/schumacher/atom2-manual"]
+fits = [
+  { kit = "kit/schumacher/atom-2", type = "family", source = "doc/schumacher/atom2-manual", notes = "The part names only the atom family (link_car_kits.py)" },
+  { kit = "kit/schumacher/atom-3", type = "family", source = "doc/schumacher/atom2-manual", notes = "The part names only the atom family (link_car_kits.py)" },
+  { kit = "kit/schumacher/atom", type = "family", source = "doc/schumacher/atom2-manual", notes = "The part names only the atom family (link_car_kits.py)" },
+]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-4/30-40mm-fan-mount-kit-a1-a2-e2-e4-u7453" } ]

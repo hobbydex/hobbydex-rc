@@ -82,7 +82,7 @@ ENUMS = {
     "needs.item": {"radio", "receiver", "servo", "esc", "motor", "engine", "battery", "charger", "pinion", "tyres", "wheels", "body", "paint", "glue", "fuel", "glow-starter", "tools"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "news", "owner_report", "video"},
     "equivalent_to.match": {"exact", "functional", "close"},
-    "fits.type": {"direct", "replaces", "modification"},
+    "fits.type": {"direct", "replaces", "modification", "family"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "rebrand_of.certainty": {"likely"},   # absent = confirmed (maker statement, matching part numbers or an owner's statement); likely = specs or looks only (docs/schema.md "rebrand_of")
     "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour", "same-part"},

@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "suspension"
 documents = ["doc/tamiya/58427-manual"]
+fits = [
+  { kit = "kit/tamiya/m-03m", type = "family", source = "doc/tamiya/58427-manual", notes = "The part names only the m-03m family (link_car_kits.py)" },
+]

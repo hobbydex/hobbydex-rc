@@ -9,3 +9,6 @@ category = "steering"
 material = "aluminium"
 material_grade = "7075-T6"
 documents = ["doc/xray/x4f-2025-part-list", "doc/xray/x4f-2026-part-list"]
+fits = [
+  { kit = "kit/xray/x4f", type = "family", source = "doc/xray/x4f-2025-part-list", notes = "The part names only the x4f family (link_car_kits.py)" },
+]

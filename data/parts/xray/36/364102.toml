@@ -10,3 +10,6 @@ links = [
 former_names = ["XB4 SOLID AXLE - SET"]
 category = "gear"
 documents = ["doc/xray/xb4-2025-part-list", "doc/xray/xb4-2026-part-list", "doc/xray/xt4-2025-part-list"]
+fits = [
+  { kit = "kit/xray/xb4", type = "family", source = "doc/xray/xb4-2025-part-list", notes = "The part names only the xb4 family (link_car_kits.py)" },
+]

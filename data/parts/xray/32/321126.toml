@@ -5,6 +5,9 @@ name = "XB2 ALU CHASSIS - 2.0MM - EXTRA-SHORT - REAR WIDE - SWISS 7075 T6"
 released = "2025-09-24"
 released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=9793"
 documents = ["doc/xray/xb2-2027-part-list"]
+fits = [
+  { kit = "kit/xray/xb2", type = "family", source = "doc/xray/xb2-2027-part-list", notes = "The part names only the xb2 family (link_car_kits.py)" },
+]
 links = [
   { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=9793" },
 ]

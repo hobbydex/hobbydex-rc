@@ -8,4 +8,7 @@ gtin = "815076019050"
 category = "chassis"
 material = "carbon"
 documents = ["doc/tekno/eb410-2-manual", "doc/tekno/et410-2-manual"]
+fits = [
+  { kit = "kit/tekno/eb410", type = "family", source = "doc/tekno/eb410-2-manual", notes = "The part names only the eb410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-battery-strap-carbon-fiber-eb410/TKR6503C.html" } ]

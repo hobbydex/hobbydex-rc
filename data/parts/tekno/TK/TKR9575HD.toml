@@ -9,5 +9,8 @@ gtin = "810020553741"
 category = "differential"
 material = "steel"
 documents = ["doc/tekno/mt410-2-0-manual"]
+fits = [
+  { kit = "kit/tekno/mt410", type = "family", source = "doc/tekno/mt410-2-0-manual", notes = "The part names only the mt410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-rear-differential-coupler-mt410-2.0/TKR9575HD.html" } ]
 scale = "1/10"

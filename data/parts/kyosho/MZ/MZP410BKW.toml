@@ -8,6 +8,9 @@ seen_by_source = "doc/kyosho/mzp410bkw-toyota-st-ae86-a-m"
 gtin = "4548565143092"
 name_ja = "トヨタ スプリンタートレノ AE86 エアロバージョン（ホワイト / ブラック）"
 documents = ["doc/kyosho/mzp410bkw-toyota-st-ae86-a-m", "doc/kyosho/mzp410bkw-product-page"]
+fits = [
+  { kit = "kit/kyosho/aero-streak", type = "family", source = "doc/kyosho/mzp410bkw-toyota-st-ae86-a-m", notes = "The part names only the aero family (link_car_kits.py)" },
+]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mzp410bkw.html" } ]
 category = "misc"
 category_source = "fallback"

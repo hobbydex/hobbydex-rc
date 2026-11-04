@@ -529,7 +529,11 @@ fits = [
 ```
 
 `type` is direct (bolt-on), replaces (replaces a stock part) or modification
-(needs changes or extra parts; see notes). A `replaces` row may name the stock
+(needs changes or extra parts; see notes). `family` is the less certain fit: the
+part's name (or its applies_to) names the brand and one car family ("Arrma Kraton",
+"Traxxas Slash") and no model of it, so the part fits every kit of that family that
+shares its size (tools/link_car_kits.py --family). Only a part with no other fit gets
+it, and the notes say which family was named; the site can show these as likely fits. A `replaces` row may name the stock
 part it replaces, `replaces = "part/lc-racing/L6045"`; the site then shows the
 upgrade on both parts.
 

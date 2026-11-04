@@ -4,6 +4,9 @@ number = "L6281"
 name = "TC 1/10 TOURING CAR CLEAR BODY(PC)(PTG-2TC)"
 notes = "Listed by number in a build manual; no exploded view or shop listing in the sources names it"
 documents = ["doc/lc-racing/ptg-2tc-manual"]
+fits = [
+  { kit = "kit/lc-racing/ptg-2tc", type = "family", source = "doc/lc-racing/ptg-2tc-manual", notes = "The part names only the ptg-2tc family (link_car_kits.py)" },
+]
 category = "body"
 name_source = "dealer"
 gtin = "4570110896351"

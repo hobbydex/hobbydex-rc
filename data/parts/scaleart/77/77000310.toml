@@ -9,6 +9,9 @@ links = [
   { site = "ScaleART", url = "https://scaleart-shop.de/en-de/products/hydraulikset-palfinger-t26a-abrollkipper" },
 ]
 documents = ["doc/scaleart/scaleart-shop"]
+fits = [
+  { kit = "kit/scaleart/roll-off-tipper-trailer", type = "family", source = "doc/scaleart/scaleart-shop", notes = "The part names only the roll-off family (link_car_kits.py)" },
+]
 related = [
   { part = "part/scaleart/77000002", relation = "use-with" },
   { part = "part/scaleart/77000011", relation = "use-with" },

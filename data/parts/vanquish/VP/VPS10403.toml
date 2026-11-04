@@ -8,6 +8,9 @@ gtin = "791512784846"
 material = "aluminium"
 category = "bumper-guard"
 documents = ["doc/vanquish/vps09015-vrd-carbon-manual", "doc/vanquish/vps09016-manual"]
+fits = [
+  { kit = "kit/vanquish/vrd", type = "family", source = "doc/vanquish/vps09015-vrd-carbon-manual", notes = "The part names only the vrd family (link_car_kits.py)" },
+]
 links = [ { site = "Vanquish", url = "https://vanquishproducts.com/products/vrd-s23-aluminum-sliders-stance" } ]
 scale = "1/10"
 color = "black"

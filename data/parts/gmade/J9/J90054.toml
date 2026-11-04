@@ -3,6 +3,9 @@ brand = "brand/gmade"
 number = "J90054"
 name = "JUNFAC SCALE AXIAL CAPRA 1.9 UNIV SHAFT HARDENED STEEL"
 documents = ["doc/gmade/cml-distribution-spares"]
+fits = [
+  { kit = "kit/axial/capra", type = "family", source = "doc/gmade/cml-distribution-spares", notes = "The part names only the capra family (link_car_kits.py)" },
+]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/J90054/gmade-junfac-scale-axial-capra-1-9-univ-shaft-hardened-steel", kind = "dealer" },
 ]

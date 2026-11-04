@@ -7,6 +7,9 @@ seen_by_source = "https://web.archive.org/web/20191001165239/http://www.rcatomic
 pack_qty = 8
 pack_qty_basis = "name"
 documents = ["doc/atomic-rc/site"]
+fits = [
+  { kit = "kit/atomic-rc/amz", type = "family", source = "doc/atomic-rc/site", notes = "The part names only the amz family (link_car_kits.py)" },
+]
 links = [
   { site = "Atomic R/C", url = "https://www.rcatomic.com/atomic/index.php?main_page=product_info&products_id=5701" },
 ]

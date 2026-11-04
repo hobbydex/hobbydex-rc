@@ -6,3 +6,6 @@ pack_qty = 8
 pack_qty_basis = "name"
 category = "o-ring-seal"
 documents = ["doc/schumacher/ft9-manual"]
+fits = [
+  { kit = "kit/schumacher/mi9", type = "family", source = "doc/schumacher/ft9-manual", notes = "The part names only the mi9 family (link_car_kits.py)" },
+]

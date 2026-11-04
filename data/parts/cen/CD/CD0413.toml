@@ -9,4 +9,7 @@ notes = "Labelled by number only in the CEN manuals; name from the maker's produ
 name_source = "manufacturer"
 category = "chassis"
 documents = ["doc/cen/dl-series-f450sd-manual-v2-small"]
+fits = [
+  { kit = "kit/cen/dl-series", type = "family", source = "doc/cen/dl-series-f450sd-manual-v2-small", notes = "The part names only the dl-series family (link_car_kits.py)" },
+]
 links = [ { site = "CEN Racing", url = "https://www.cenracingusa.com/products/cd0413" } ]

@@ -7,6 +7,9 @@ seen_by_source = "https://web.archive.org/web/20190922232938/https://www.teknorc
 gtin = "815076018695"
 category = "body"
 documents = ["doc/tekno/eb410-2-manual"]
+fits = [
+  { kit = "kit/tekno/eb410", type = "family", source = "doc/tekno/eb410-2-manual", notes = "The part names only the eb410 family (link_car_kits.py)" },
+]
 thickness_mm = 0.8
 thickness_basis = "name"
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr6608-body-0-8mm-eb410/" } ]

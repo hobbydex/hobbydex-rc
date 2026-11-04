@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "suspension"
 documents = ["doc/tamiya/58257-manual-de"]
+fits = [
+  { kit = "kit/tamiya/tg10", type = "family", source = "doc/tamiya/58257-manual-de", notes = "The part names only the tg10 family (link_car_kits.py)" },
+]
