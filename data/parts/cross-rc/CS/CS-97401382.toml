@@ -1,0 +1,19 @@
+id = "part/cross-rc/CS-97401382"
+brand = "brand/cross-rc"
+number = "CS-97401382"
+name = "Front wheel hub cover 239701"
+name_source = "dealer"
+notes = "Set number and name from the distributor's package list"
+category = "misc"
+category_source = "fallback"
+fits = [
+  { kit = "kit/cross-rc/tl4", type = "direct", source = "doc/cross-rc/yikongrc-net", notes = "Listed in the distributor's collection for the model" },
+]
+links = [
+  { site = "yikongrc.net (dealer)", url = "https://www.yikongrc.net/collections/crossrc-tl4-parts/products/crossrc-tl4-parts-front-wheel-hub-cover-cs-97401382", kind = "dealer" },
+]
+documents = ["doc/cross-rc/yikongrc-net"]
+includes = [
+  { part = "part/cross-rc/239701", qty = 2, source = "doc/cross-rc/yikongrc-net" },
+  { part = "part/cross-rc/85299", qty = 2, source = "doc/cross-rc/yikongrc-net" },
+]

@@ -1,0 +1,21 @@
+id = "part/cross-rc/CS-97401362"
+brand = "brand/cross-rc"
+number = "CS-97401362"
+name = "Axle large and small gears"
+name_source = "dealer"
+notes = "Set number and name from the distributor's package list"
+category = "misc"
+category_source = "fallback"
+fits = [
+  { kit = "kit/cross-rc/tl4", type = "direct", source = "doc/cross-rc/yikongrc-net", notes = "Listed in the distributor's collection for the model" },
+]
+links = [
+  { site = "yikongrc.net (dealer)", url = "https://www.yikongrc.net/collections/crossrc-tl4-parts/products/crossrc-tl4-parts-axle-large-and-small-gears-cs-97401362", kind = "dealer" },
+]
+documents = ["doc/cross-rc/yikongrc-net"]
+includes = [
+  { part = "part/cross-rc/45143", qty = 1, source = "doc/cross-rc/yikongrc-net" },
+  { part = "part/cross-rc/45144", qty = 1, source = "doc/cross-rc/yikongrc-net" },
+  { part = "part/cross-rc/13006", qty = 1, source = "doc/cross-rc/yikongrc-net" },
+  { part = "part/cross-rc/11227", qty = 6, source = "doc/cross-rc/yikongrc-net" },
+]

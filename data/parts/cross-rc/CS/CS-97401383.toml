@@ -1,0 +1,19 @@
+id = "part/cross-rc/CS-97401383"
+brand = "brand/cross-rc"
+number = "CS-97401383"
+name = "Rear Wheel Hub Cover 239702"
+name_source = "dealer"
+notes = "Set number and name from the distributor's package list"
+category = "misc"
+category_source = "fallback"
+fits = [
+  { kit = "kit/cross-rc/tl4", type = "direct", source = "doc/cross-rc/yikongrc-net", notes = "Listed in the distributor's collection for the model" },
+]
+links = [
+  { site = "yikongrc.net (dealer)", url = "https://www.yikongrc.net/collections/crossrc-tl4-parts/products/crossrc-tl4-parts-rear-wheel-hub-cover-cs-97401383", kind = "dealer" },
+]
+documents = ["doc/cross-rc/yikongrc-net"]
+includes = [
+  { part = "part/cross-rc/239702", qty = 2, source = "doc/cross-rc/yikongrc-net" },
+  { part = "part/cross-rc/85300", qty = 2, source = "doc/cross-rc/yikongrc-net" },
+]

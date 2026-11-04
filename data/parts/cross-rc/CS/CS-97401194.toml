@@ -1,0 +1,18 @@
+id = "part/cross-rc/CS-97401194"
+brand = "brand/cross-rc"
+number = "CS-97401194"
+name = "Lighting"
+name_source = "dealer"
+notes = "Set number and name from the distributor's package list"
+category = "misc"
+category_source = "fallback"
+links = [
+  { site = "yikongrc.net (dealer)", url = "https://www.yikongrc.net/collections/crossrc-emo-x3-parts-1/products/crossrc-emo-x3-rc-crawler-parts-lighting-cs-97401194", kind = "dealer" },
+]
+documents = ["doc/cross-rc/yikongrc-net"]
+includes = [
+  { part = "part/cross-rc/21200", qty = 2, source = "doc/cross-rc/yikongrc-net" },
+  { part = "part/cross-rc/11228", qty = 2, source = "doc/cross-rc/yikongrc-net" },
+  { part = "part/cross-rc/71010", qty = 2, source = "doc/cross-rc/yikongrc-net" },
+  { part = "part/cross-rc/14105", qty = 2, source = "doc/cross-rc/yikongrc-net" },
+]
