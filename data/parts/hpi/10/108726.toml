@@ -8,9 +8,7 @@ links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/108726" },
 ]
 fits = [
-  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages" },
-  { kit = "kit/hpi/baja-5b", type = "replaces", replaces = "part/hpi/87429", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hpi/baja-5b", type = "replaces", replaces = "part/hpi/87488", source = "doc/hpi/part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/baja-5b", type = "direct", source = "doc/hpi/part-pages", notes = "Same part in another material as part/hpi/87429 (link_upgrades.py); Same part in another material as part/hpi/87488 (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "aluminium"

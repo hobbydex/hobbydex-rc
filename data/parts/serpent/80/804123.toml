@@ -5,16 +5,11 @@ name = "Belt tensioner alu"
 seen_by = "2010-01-04"
 seen_by_source = "https://web.archive.org/web/20100104073902/http://serpent.com/product/804123/"
 fits = [
-  { kit = "kit/serpent/natrix-750e", type = "direct", source = "doc/serpent/natrix-750-e-spares" },
-  { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-spares" },
-  { kit = "kit/serpent/taipan-988e", type = "direct", source = "doc/serpent/taipan-988e-spares" },
-  { kit = "kit/serpent/natrix-750", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/natrix-750-evo-spares", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/natrix-750e", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/natrix-750-e-spares", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/taipan-988e", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/taipan-988e-spares", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/natrix-748", type = "direct", source = "doc/serpent/natrix-748-spares" },
-  { kit = "kit/serpent/733", type = "direct", source = "doc/serpent/733-te-spares" },
-  { kit = "kit/serpent/733", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/733-te-spares", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/natrix-748", type = "replaces", replaces = "part/serpent/901255", source = "doc/serpent/natrix-748-spares", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750e", type = "direct", source = "doc/serpent/natrix-750-e-spares", notes = "Same part in another material as part/serpent/901255 (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-750", type = "direct", source = "doc/serpent/natrix-750-evo-spares", notes = "Same part in another material as part/serpent/901255 (link_upgrades.py)" },
+  { kit = "kit/serpent/taipan-988e", type = "direct", source = "doc/serpent/taipan-988e-spares", notes = "Same part in another material as part/serpent/901255 (link_upgrades.py)" },
+  { kit = "kit/serpent/natrix-748", type = "direct", source = "doc/serpent/natrix-748-spares", notes = "Same part in another material as part/serpent/901255 (link_upgrades.py)" },
+  { kit = "kit/serpent/733", type = "direct", source = "doc/serpent/733-te-spares", notes = "Same part in another material as part/serpent/901255 (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser804123" },

@@ -8,8 +8,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-fuel-tank-lid-pull-8-2.0-rtr-8x/LOS-5200.html" },
 ]
 fits = [
-  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-product-catalogue" },
-  { kit = "kit/tlr/8ight-x", type = "replaces", replaces = "part/losi/LOSB5004", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/8ight-x", type = "direct", source = "doc/losi/horizon-product-catalogue", notes = "Same part in another material as part/losi/LOSB5004 (link_upgrades.py)" },
 ]
 category = "engine-fuel"
 material = "steel"

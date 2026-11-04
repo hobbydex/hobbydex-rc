@@ -11,8 +11,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-front-axle-aluminum-2-22x/TLR-1156.html" },
 ]
 fits = [
-  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages" },
-  { kit = "kit/tlr/22x", type = "replaces", replaces = "part/tlr/TLR232070", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/22x", type = "direct", source = "doc/tlr/horizon-part-pages", notes = "Same part in another material as part/tlr/TLR232070 (link_upgrades.py)" },
 ]
 material = "aluminium"
 gtin = "660132649975"

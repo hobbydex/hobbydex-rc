@@ -8,8 +8,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/axial-cog-set-and-plate-for-dig-2-speed-scx10-iii/AXI-3871.html" },
 ]
 fits = [
-  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages" },
-  { kit = "kit/axial/scx10-iii", type = "replaces", replaces = "part/axial/AXI232037", source = "doc/axial/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/axial/scx10-iii", type = "direct", source = "doc/axial/horizon-part-pages", notes = "Same part in another material as part/axial/AXI232037 (link_upgrades.py)" },
 ]
 category = "chassis"
 material = "steel"

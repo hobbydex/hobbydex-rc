@@ -580,10 +580,19 @@ def duplicate_fits(parts):
     """(part, [claims]) for each part with two or more fits rows naming one claim (the same kit, releases and car)."""
     out = []
     for p in parts:
-        n = collections.Counter(fits_claim(f) for f in p.get("fits", []))
-        dup = [c for c, k in n.items() if k > 1]
+        by = collections.defaultdict(list)
+        for f in p.get("fits", []):
+            by[fits_claim(f)].append(f)
+        dup = [c for c, rows in by.items() if len(rows) > 1 and not distinct_pointers(rows)]
         if dup: out.append((p, dup))
     return out
+
+
+def distinct_pointers(rows):
+    """True when every row is a replaces row naming a different stock part: one pointer per row is the schema's
+    form of a part that replaces several stock parts in one kit (GPM, Treal, XRAY ...), not a duplicate."""
+    ptrs = [f.get("replaces") for f in rows]
+    return all(f.get("type") == "replaces" for f in rows) and all(ptrs) and len(set(ptrs)) == len(ptrs)
 
 
 def by_brand(parts):
@@ -1243,7 +1252,7 @@ def main():
     # 20b. two fits rows that name one claim (the same kit, releases and car): one row, the sources listed in notes
     dups = duplicate_fits(parts)
     per_brand = collections.Counter(p["brand"].split("/")[-1] for p, _ in dups)
-    check("fits-duplicate", "merge the rows that name one claim into one row (the same kit, releases and car); the other sources go into notes (hobbydex-tools tools/collapse_fits.py); a pair that differs in type or replaces stays two rows, so decide which one holds",
+    check("fits-duplicate", "merge the rows that name one claim into one row (the same kit, releases and car); the other sources go into notes (hobbydex-tools tools/collapse_fits.py); a pair that differs in type stays two rows, so decide which one holds (replaces rows that name different stock parts are not duplicates)",
           [p for p, _ in dups], per_brand=per_brand.most_common(),
           breakdown=("kit", [f"{k} {c}" for k, c in collections.Counter(c[0] for _, cs in dups for c in cs).most_common(40)]))
 
