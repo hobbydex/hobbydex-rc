@@ -1,15 +1,16 @@
 id = "part/schumacher/U4090"
 brand = "brand/schumacher"
 number = "U4090"
-name = "U4090"
+name = "Ball Socket; Offset pk4 - SVR,KR,KF/2"
 gtin = "5051294073367"
 seen_by = "2012-07"
 seen_by_source = "doc/schumacher/cougar-svr-exploded"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 documents = ["doc/schumacher/cougar-svr-exploded"]
-category = "misc"
-category_source = "fallback"
+category = "rod-end"
 fits = [
   { kit = "kit/schumacher/cougar-kf2", type = "direct", source = "doc/schumacher/kf2-exploded", notes = "Shown on the car's exploded diagram" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-2wd-buggy/cougar-svr/ball-socket-offset-pk4-svr-kr-kf-2-u4090" } ]
+name_source = "manufacturer"
+pack_qty = 4
+pack_qty_basis = "name"

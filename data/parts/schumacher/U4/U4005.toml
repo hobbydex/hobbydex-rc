@@ -1,16 +1,15 @@
 id = "part/schumacher/U4005"
 brand = "brand/schumacher"
 number = "U4005"
-name = "U4005"
+name = "Diff Output; Female - SV2,SVR,KR,KD"
 gtin = "5051294070366"
 seen_by = "2012-02"
 seen_by_source = "doc/schumacher/cougar-sv2-manual"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 documents = ["doc/schumacher/cougar-sv2-manual"]
-category = "misc"
-category_source = "fallback"
+category = "differential"
 fits = [
   { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-svr", type = "direct", source = "doc/schumacher/cougar-svr-exploded", notes = "Shown on the car's exploded diagram" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-2wd-buggy/cougar-svr/diff-output-female-sv2-svr-kr-kd-u4005" } ]
+name_source = "manufacturer"

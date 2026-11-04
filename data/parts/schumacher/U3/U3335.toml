@@ -1,16 +1,15 @@
 id = "part/schumacher/U3335"
 brand = "brand/schumacher"
 number = "U3335"
-name = "U3335"
+name = "Covers; Idler Gears - SX/2,SV/2"
 gtin = "5051294028886"
 seen_by = "2008-11-22"
 seen_by_source = "https://web.archive.org/web/20081122040208/http://www.racing-cars.com/images/u3335_wt.jpg"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 documents = ["doc/schumacher/cougar-sv-exploded"]
-category = "misc"
-category_source = "fallback"
+category = "gear"
 fits = [
   { kit = "kit/schumacher/cat-sx2", type = "direct", source = "doc/schumacher/catsx2-exploded-iss2-l", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-sv", type = "direct", source = "doc/schumacher/cougar-sv-exploded", notes = "Shown on the car's exploded diagram" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-sx2/covers-idler-gears-sx-2-sv-2-u3335" } ]
+name_source = "manufacturer"

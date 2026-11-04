@@ -1,16 +1,15 @@
 id = "part/schumacher/U2543"
 brand = "brand/schumacher"
 number = "U2543"
-name = "U2543"
+name = "Diff Rebuild Kit - Fusion"
 gtin = "5051294016104"
 seen_by = "2008-11-23"
 seen_by_source = "https://web.archive.org/web/20081123152955/http://www.racing-cars.com/images/u2543_wt.jpg"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 documents = ["doc/schumacher/explodedmenace"]
-category = "misc"
-category_source = "fallback"
+category = "differential"
 fits = [
   { kit = "kit/schumacher/fusion21", type = "direct", source = "doc/schumacher/fusionexplodedweb", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/menace21", type = "direct", source = "doc/schumacher/explodedmenace", notes = "Shown on the car's exploded diagram" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/fusion28/diff-rebuild-kit-fusion-u2543" } ]
+name_source = "manufacturer"

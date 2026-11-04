@@ -1,16 +1,15 @@
 id = "part/schumacher/U4069"
 brand = "brand/schumacher"
 number = "U4069"
-name = "U4069"
+name = "Driveshaft Assembled pr - SVR/KR"
 gtin = "5051294073152"
 seen_by = "2012-07"
 seen_by_source = "doc/schumacher/cougar-svr-exploded"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 documents = ["doc/schumacher/cougar-svr-exploded"]
-category = "misc"
-category_source = "fallback"
+category = "drivetrain"
 fits = [
   { kit = "kit/schumacher/cougar-kr", type = "direct", source = "doc/schumacher/kr-exploded-l", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-svr", type = "direct", source = "doc/schumacher/cougar-svr-exploded", notes = "Shown on the car's exploded diagram" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-2wd-buggy/cougar-svr/driveshaft-assembled-pr-svr-kr-u4069" } ]
+name_source = "manufacturer"
