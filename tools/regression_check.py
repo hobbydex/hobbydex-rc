@@ -20,6 +20,9 @@ when a source stated it:
   link dropped because a maker link now stands beside it is a regression too: the
   change needs its "Regressions: expected" line.
 
+A part that was named by its number and now has another name needs a name_source (class "name-without-source",
+NAME_WITHOUT_SOURCE below): the change must say where the name comes from.
+
 A part (data/parts) added or changed by the change with no documents, links or sources
 is a regression too: its values have no provenance. Parts the change does not touch do not
 count. The fix is the same for each: run
@@ -289,6 +292,8 @@ class Check:
                 continue
             if kind == "part" and n is not None and (o is None or canon(o) != canon(n)) and not has_provenance(n):
                 self.event(kind, rid, "(record)", "added" if o is None else "changed", MISSING, MISSING, True, UNSOURCED_PART)
+            if kind == "part" and o is not None and n is not None and gained_name_without_source(o, n):
+                self.event(kind, rid, "name", "changed", MISSING, MISSING, True, NAME_WITHOUT_SOURCE)
             if o is None:
                 self.recs[kind]["added"] += 1
                 for k, v in n.items():
@@ -575,6 +580,18 @@ def canonical_removal(o, n, k, row):
 
 UNSOURCED_PART = ("part added or changed with no documents, links or sources; run "
                   "HOBBYDEX_RC=<worktree> python3 -I <tools>/tools/link_part_sources.py first")
+
+
+NAME_WITHOUT_SOURCE = ("part named by its number now has a real name but no name_source (manufacturer, manual, dealer, ocr "
+                       "or owner): say where the name comes from")
+
+
+def gained_name_without_source(o, n):
+    """A part stored with its number as the name (or none) that now has another name and no name_source."""
+    num = n.get("number")
+    if not num or n.get("name") in (None, num) or n.get("name_source"):
+        return False
+    return o.get("name") in (None, o.get("number"), num)
 
 
 def has_provenance(rec):

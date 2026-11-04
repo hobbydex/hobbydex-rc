@@ -190,6 +190,14 @@ class Removals(unittest.TestCase):
         head = self.part('')
         self.assertEqual(self.regs(self.check(base, head)), [])
 
+    def test_number_name_to_real_name_needs_a_name_source(self):
+        base = self.part('number = "P1"\n').copy()
+        base = {k: v.replace('name = "Wing Mount"', 'name = "P1"') for k, v in base.items()}
+        head = self.part('number = "P1"\n')
+        self.assertEqual(self.regs(self.check(base, head)), [("name", rc.NAME_WITHOUT_SOURCE)])
+        head = self.part('number = "P1"\nname_source = "manufacturer"\n')
+        self.assertEqual(self.regs(self.check(base, head)), [])
+
     def test_removed_maker_link_is_a_regression(self):
         base = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
         head = self.part('links = []\n')
