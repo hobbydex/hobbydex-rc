@@ -9,8 +9,7 @@ gtin = "4955439799963"
 documents = ["doc/kyosho/monstertruck-060322", "doc/kyosho/ggw01-product-page"]
 category = "chassis"
 fits = [
-  { kit = "kit/kyosho/giga-crusher", type = "replaces", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the GIGA CRUSHER (option part) in Kyosho's Monster Truck parts acceptable list" },
-  { kit = "kit/kyosho/giga-crusher", type = "replaces", replaces = "part/kyosho/GG013", source = "doc/kyosho/monstertruck-060322", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/giga-crusher", type = "replaces", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the GIGA CRUSHER (option part) in Kyosho's Monster Truck parts acceptable list; Same part in another material (link_upgrades.py)", replaces = "part/kyosho/GG013" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/ggw01.html" } ]
 material = "aluminium"
