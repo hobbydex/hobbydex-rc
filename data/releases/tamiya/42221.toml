@@ -7,4 +7,7 @@ status = "released"
 seen_by = "2019-10-20"
 seen_by_source = "https://web.archive.org/web/20191020121812/https://www.tamiyausa.com/media/files/42315ml-949-ae70.pdf"
 notes = "Tamiya classes it as a regular product, made continuously"
-documents = ["doc/tamiya/42221-product-page-ja", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/42221-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/tamico-dealer-parts"]
+contains = [
+  { part = "part/tamiya/19803336", role = "kit", source = "doc/tamiya/tamico-dealer-parts" },
+]
