@@ -404,6 +404,40 @@ def load_linker_drift(tools):
     return [(r[0], int(r[1])) for r in rows if len(r) >= 2 and r[1].isdigit()]
 
 
+DERIVE_STALE_DAYS = 2   # the daily derive must have landed a PR within this many days
+
+
+def last_derive_landed(rc, tools):
+    """The newest day a derive landed, "YYYY-MM-DD", or None when neither source knows one: the committer date of the
+    newest commit on HEAD whose subject starts "Derived fields" (a merged derive PR; the squash commit keeps the title), and
+    the local loop's status field derive.last_derive_landed (hobbydex-tools cache/local_loop_status.json, set when the
+    loop sees its derive PR MERGED). The later of the two."""
+    days = []
+    try:
+        p = subprocess.run(["git", "-C", rc, "log", "-1", "--format=%cs", "--grep=^Derived fields"], capture_output=True, text=True, timeout=60)
+        if p.returncode == 0 and p.stdout.strip():
+            days.append(p.stdout.strip())
+    except (OSError, subprocess.TimeoutExpired):
+        pass
+    try:
+        with open(os.path.join(tools, "cache", "local_loop_status.json"), encoding="utf-8") as f:
+            d = (json.load(f).get("derive") or {}).get("last_derive_landed")
+        if isinstance(d, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", d[:10]):
+            days.append(d[:10])
+    except (OSError, ValueError, AttributeError):
+        pass
+    return max(days) if days else None
+
+
+def derive_not_landed(last, today, stale=DERIVE_STALE_DAYS):
+    """["derive: last landed <day> (<n> days ago)"] when no derive PR landed in the last `stale` days (today is a datetime.date), else []."""
+    import datetime
+    if last is None:
+        return [f"derive: no landed derive PR found (none in the git log, no last_derive_landed in the loop status)"]
+    age = (today - datetime.date.fromisoformat(last)).days
+    return [f"derive: last landed {last} ({age} days ago)"] if age > stale else []
+
+
 def linkers_that_would_change(drift):
     """Lines "<step>: <n> files" for each wired linker that changed data when run again over derived data (it should change none)."""
     return [f"{step}: {n} files" for step, n in drift if n]
@@ -1076,6 +1110,13 @@ def main():
         results["linker-would-change"]["examples"] = [{"id": d, "url": ""} for d in drift[:args.examples]]
     else:
         results["linker-would-change"] = {"fix": "hobbydex-tools cache/notes/linker-drift.tsv not found (written by the daily derive)", "count": None, "examples": [], "all": []}
+
+    # 9d. the daily derive must land: a merged "Derived fields" PR within 2 days (tools/local_loop.py derive step; status field last_derive_landed)
+    import datetime
+    stale = derive_not_landed(last_derive_landed(RC, os.path.abspath(args.tools)), datetime.date.today())
+    check("derive-not-landed", "no derive PR merged in 2 days: read the loop status (cache/local_loop_status.json derive: merge, error, branch) and the loop log in hobbydex-tools; fix the cause (validate or regression_check failure, rebase conflict, linker crash) so the daily derive lands",
+          stale)
+    results["derive-not-landed"]["examples"] = [{"id": d, "url": ""} for d in stale[:args.examples]]
 
     # 10. copyright-year release years
     check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",
