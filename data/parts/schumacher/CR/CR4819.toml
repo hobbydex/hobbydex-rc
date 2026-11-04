@@ -13,3 +13,6 @@ fits = [
   { kit = "kit/schumacher/supastox-gt", type = "direct", source = "doc/schumacher/supastox-gt-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-19t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

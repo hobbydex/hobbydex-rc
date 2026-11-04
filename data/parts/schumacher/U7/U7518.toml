@@ -9,3 +9,6 @@ category = "pinion"
 documents = ["doc/schumacher/catl1r-instruction-manual-v2"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-l1r/pinion-long-boss-steel-48dp-18t-u7518" } ]
 material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-18t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

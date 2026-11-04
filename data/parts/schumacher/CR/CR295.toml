@@ -10,3 +10,11 @@ fits = [
   { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-spares-archive", notes = "Listed on the maker's spares list for the car (racing-cars.com archive)" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 5000
+c_rating = 60
+voltage = 7.4

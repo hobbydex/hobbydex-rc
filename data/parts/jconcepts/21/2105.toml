@@ -9,3 +9,6 @@ links = [
   { site = "JConcepts", url = "https://jconcepts.net/machined-aluminum-pinion-gear--48-pitch" },
 ]
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-19t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
