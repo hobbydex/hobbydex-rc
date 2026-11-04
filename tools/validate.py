@@ -1429,6 +1429,13 @@ def main():
             if not (isinstance(d["youtube"], list) and d["youtube"]
                     and all(isinstance(u, str) and YOUTUBE_CHANNEL.fullmatch(u) for u in d["youtube"])):
                 errors.append(f"{path}: youtube should be a list of https://www.youtube.com/@<handle> URLs")
+        # other names a brand is stated under (docs/schema.md "brand"): a list of non-empty names, none of them its own
+        if kind == "brand" and "aliases" in d:
+            al = d["aliases"]
+            if not (isinstance(al, list) and al and all(isinstance(a, str) and a.strip() for a in al)):
+                errors.append(f"{path}: aliases should be a list of names")
+            elif any(re.sub(r"[^a-z0-9]", "", a.lower()) == re.sub(r"[^a-z0-9]", "", str(d.get("name", "")).lower()) for a in al):
+                errors.append(f"{path}: an alias repeats the brand's own name")
         # the company that owns a brand (docs/schema.md "company"): stated on a page of the brand or the company
         if kind == "brand" and ("owner_source" in d or "owner_since" in d) and "owner" not in d:
             errors.append(f"{path}: owner_source and owner_since need an owner")
