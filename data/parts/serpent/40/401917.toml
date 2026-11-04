@@ -9,8 +9,7 @@ pack_qty_basis = "page"
 fits = [
   { kit = "kit/serpent/medius-x26", type = "replaces", source = "doc/serpent/medius-x26-steel-options", replaces = "part/serpent/401825", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/serpent/medius-x25", type = "replaces", source = "doc/serpent/medius-x25-steel-options", replaces = "part/serpent/401825", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-24-carbon-options" },
-  { kit = "kit/serpent/medius-x20", type = "replaces", replaces = "part/serpent/401825", source = "doc/serpent/medius-x20-24-carbon-options", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/medius-x20", type = "direct", source = "doc/serpent/medius-x20-24-carbon-options", notes = "Same part in another material as part/serpent/401825 (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser401917" },

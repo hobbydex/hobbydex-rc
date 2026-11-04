@@ -41,6 +41,26 @@ def test_different_car_is_a_different_claim():
     assert audit.duplicate_fits([p]) == []
 
 
+def test_replaces_rows_naming_different_stock_parts_are_not_duplicates():
+    p = part("part/maverick/5",
+             {"kit": KIT, "type": "replaces", "replaces": "part/maverick/10", "source": "a"},
+             {"kit": KIT, "type": "replaces", "replaces": "part/maverick/11", "source": "a"})
+    assert audit.duplicate_fits([p]) == []
+
+
+def test_replaces_rows_naming_one_stock_part_are_duplicates():
+    p = part("part/maverick/6",
+             {"kit": KIT, "type": "replaces", "replaces": "part/maverick/10", "source": "a"},
+             {"kit": KIT, "type": "replaces", "replaces": "part/maverick/10", "source": "b"})
+    assert len(audit.duplicate_fits([p])) == 1
+
+
+def test_direct_beside_replaces_is_flagged():
+    p = part("part/maverick/7", {"kit": KIT, "type": "direct", "source": "a"},
+             {"kit": KIT, "type": "replaces", "replaces": "part/maverick/10", "source": "a"})
+    assert len(audit.duplicate_fits([p])) == 1
+
+
 def test_a_part_without_fits_is_not_flagged():
     assert audit.duplicate_fits([{"id": "part/maverick/4", "brand": "brand/maverick"}]) == []
 

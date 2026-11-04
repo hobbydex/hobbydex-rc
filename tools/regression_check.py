@@ -462,9 +462,7 @@ def link_base(name):
 
 def maybe_derive(fits, kit, in_box):
     """Mirror of link_upgrades.maybe_upgrade_row: no replaces row beside X's maker-stated direct or modification row
-    for kit when X is not in the kit's box."""
-    if in_box:
-        return True
+    for kit, whether or not X is in the kit's box (in_box is kept for the signature)."""
     return not any(f.get("kit") == kit and f.get("notes") != LINK_NOTE and f.get("type") in ("direct", "modification")
                    for f in fits)
 
@@ -473,7 +471,7 @@ def derive_upgrades(parts, releases):
     """part id -> {canon(row)}: the replaces rows link_upgrades.py derives. An upgrade X of a stock part S (same brand
     and base name, X aluminium, carbon, steel or titanium, S plastic or no material, or steel for titanium) gets a row
     for each kit K that holds S in its box and that X fits or is an option of, unless X's maker-stated direct or
-    modification row for K stands and X is not in K's box (maybe_derive). parts: id -> record; releases: the release
+    modification row for K stands (maybe_derive). parts: id -> record; releases: the release
     records. Same rules as tools/link_upgrades.py: change both together."""
     stock_in, option_in, box_in = collections.defaultdict(set), collections.defaultdict(dict), collections.defaultdict(set)
     for r in releases:

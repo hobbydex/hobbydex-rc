@@ -1,15 +1,16 @@
 id = "part/kyosho/PZW103"
 brand = "brand/kyosho"
 number = "PZW103"
-name = "カーボンメインシャシー(プラズマフォーミュラ用)"
+name = "Carbon Main Chassis(for PLAZMA Formula)"
+name_ja = "カーボンメインシャシー(プラズマフォーミュラ用)"
 seen_by = "2014-07-18"
 seen_by_source = "https://web.archive.org/web/20140718235545/http://www.kyosho.com/jpn/products/rc/parts_images/PZW103.JPG"
-name_source = "manual"
+name_source = "manufacturer"
 gtin = "4548565224814"
 documents = ["doc/kyosho/plazma-series-ver03-1512"]
-category = "misc"
-category_source = "fallback"
+category = "chassis"
 fits = [
   { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw103.html" } ]
+material = "carbon"

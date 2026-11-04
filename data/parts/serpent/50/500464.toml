@@ -7,8 +7,7 @@ seen_by_source = "https://web.archive.org/web/20150822101108/http://serpent.com:
 pack_qty = 2
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/spyder-srx4", type = "direct", source = "doc/serpent/spyder-srx4-gen3-spares" },
-  { kit = "kit/serpent/spyder-srx4", type = "replaces", replaces = "part/serpent/500427", source = "doc/serpent/spyder-srx4-gen3-spares", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/spyder-srx4", type = "direct", source = "doc/serpent/spyder-srx4-gen3-spares", notes = "Same part in another material as part/serpent/500427 (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser500464" },
