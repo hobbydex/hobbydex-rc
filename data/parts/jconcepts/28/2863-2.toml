@@ -9,3 +9,8 @@ category = "chassis"
 links = [
   { site = "JConcepts", url = "https://jconcepts.net/axial-ax10-smt10-transmission-motor-plate" },
 ]
+fits = [
+  { kit = "kit/axial/ax10", type = "replaces", source = "doc/jconcepts/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+  { kit = "kit/axial/scx10", type = "replaces", source = "doc/jconcepts/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+  { kit = "kit/axial/smt10", type = "replaces", source = "doc/jconcepts/store", notes = "Car named on the maker's product text (link_brand_fitment.py)" },
+]
