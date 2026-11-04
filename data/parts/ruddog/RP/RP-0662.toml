@@ -13,3 +13,10 @@ name_source = "dealer"
 pack_qty = 5
 pack_qty_basis = "name"
 material = "aluminium"
+includes = [
+  { spec = "spec/pinion/mod0.6-20t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.6-22t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.6-24t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.6-26t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.6-28t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]

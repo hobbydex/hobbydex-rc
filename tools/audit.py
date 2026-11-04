@@ -52,6 +52,14 @@ def load(root):
     return db
 
 
+def used_spec_ids(parts):
+    """The spec ids a part uses: equivalent_to (a part's own spec), includes (a set's piece) and protocols (a radio's protocol list)."""
+    used = {e["spec"] for p in parts for e in p.get("equivalent_to", []) if isinstance(e, dict) and "spec" in e}
+    used |= {i["spec"] for p in parts for i in p.get("includes", []) if isinstance(i, dict) and "spec" in i}
+    used |= {s for p in parts for s in p.get("protocols", []) if isinstance(s, str)}
+    return used
+
+
 def url_for(item):
     i = item["id"]
     kind, _, rest = i.partition("/")
@@ -1330,7 +1338,7 @@ def main():
     check("spec-mismatch", "remove the spec link (or fix the part's category or name, then link the spec its name gives): the link's family is not the part's kind; see the linker in the rows' notes",
           sorted({m[0] for m in mism}), count=len({m[0] for m in mism}), rows=[{"id": i, "field": f, "spec": sp, "why": w} for i, f, sp, w in mism][:200])
     check("release-no-contents", "read the release's parts list into contains (or note there is none)", [r for r in rels if not r.get("contains")])
-    used_specs = {e["spec"] for p in parts for e in p.get("equivalent_to", [])}
+    used_specs = used_spec_ids(parts)
     check("spec-unlinked", "link a part to the spec, or retire the spec", [s for s in db["specs"] if s["id"] not in used_specs])
 
     # 26c. Tamiya parts with no maker link, by number form. A maker link is kind "maker" (Tamiya USA's spare page,

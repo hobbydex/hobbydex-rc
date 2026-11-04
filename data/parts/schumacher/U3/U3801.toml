@@ -9,3 +9,6 @@ category = "pinion"
 documents = ["doc/schumacher/top-cat-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-xls-masami/35t-steel-pinion-48dp-u3801" } ]
 material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-35t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

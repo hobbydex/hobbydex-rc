@@ -13,3 +13,10 @@ links = [
 pack_qty = 5
 pack_qty_basis = "name"
 material = "aluminium"
+includes = [
+  { spec = "spec/pinion/64dp-21t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/64dp-23t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/64dp-25t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/64dp-27t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/64dp-29t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]
