@@ -27,6 +27,9 @@ PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh
 CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
 BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re.I)
 # a tamico.de dealer link (kind = "dealer") is allowed for Tamiya spares without a maker page (tools/link_tamico_spares.py)
+# Xtra Speed has no maker page: the owner chose tamico.de's listings as its dealer fallback (hobbydex-tools docs/decisions.md,
+# 2026-10-23), so the two documents that stand for those listings keep their tamico.de address
+TAMICO_OWNER_DOCS = ("data/documents/xtra-speed/tamico-",)
 TAMICO_DEALER_LINK = re.compile(r'\{ site = "tamico\.de", url = "[^"]*", kind = "dealer" \}')
 SCRAP_IMG = re.compile(r"https?://[^\s\"')]*rcscrapyard[^\s\"')]*\.(jpe?g|png|gif|webp)", re.I)
 LOCAL_PATH = re.compile(r"(^|[\s\"'(=])(/home/|/Users/|/tmp/|file://|[A-Za-z]:\\|work/manuals/|cache/)")
@@ -726,8 +729,13 @@ def _host(url):
     return host[4:] if host.startswith("www.") else host
 
 
+TWIN_MEASURES = ("power_w", "weight_g", "dimensions_mm", "teeth", "kv", "diameter_mm", "length_mm", "width_mm", "shaft_mm")
+
+
 def twin_class(a, b, brands, companies, docs):
     """shared: the brands are related (same owner, or one owns the other) and each record cites its own brand's source.
+    shared also covers a pair where one record names the other in rebrand_of (one product under two brands) and a pair that
+    states different values for a measure (TWIN_MEASURES: two products).
     copy: a record's source or link is the other brand's site or one of its documents.
     unclear: anything else."""
     def sources(p):
@@ -746,6 +754,12 @@ def twin_class(a, b, brands, companies, docs):
             return True
         return any(companies.get(o, {}).get("brand") == other for o, other in ((ox, y), (oy, x)) if o)
 
+    # a pair one of whose records names the other in rebrand_of is one product sold under two brands (each brand's catalogue
+    # keeps its own record); a pair that states different values for one measure is two products
+    if any(r.get("part") in (a["id"], b["id"]) for x in (a, b) for r in x.get("rebrand_of", [])):
+        return "shared"
+    if any(k in a and k in b and a[k] != b[k] for k in TWIN_MEASURES):
+        return "shared"
     # a record that cites its own brand's site is not a copy, even when the other brand shares that site
     if a["brand"] != b["brand"] and ((cites(a, b["brand"]) and not cites(a, a["brand"])) or (cites(b, a["brand"]) and not cites(b, b["brand"]))):
         return "copy"
@@ -801,6 +815,8 @@ SPEC_INCLUDE_ACCESSORIES = {
     "wheel": {"bearing", "screw", "nut", "washer", "wheel-hex"}, "tire": {"screw", "nut", "washer", "wheel-hex"},
     "light": {"screw", "wire", "connector", "washer", "nut"}, "cooling": {"screw", "nut", "washer", "wire", "connector"},
 }
+# a fastener or small part the name itself lists ("Pins & M4 Nuts") may be an include on any category; a motor, battery or servo may not
+SPEC_NAMED_HARDWARE = {"screw", "nut", "washer", "pin", "o-ring", "eclip", "circlip", "ball-end", "bearing"}
 SPEC_DEFAULT_ACCESSORIES = {"screw", "nut", "washer"}   # any other category: fasteners it comes with
 # the spec families a part of each category may be equivalent_to (validate.py's SPEC_PART_CATS, by family)
 SPEC_EQUIVALENT_CATS = {
@@ -868,7 +884,7 @@ def spec_mismatches(parts):
                         out.append((p["id"], field, row["spec"], f"a {fam} spec on a {cat}"))
                     elif "source" not in row and SPEC_KIT_NAME.search(name) and not named:
                         out.append((p["id"], field, row["spec"], f"a {fam} spec on a kit that is not a {fam}"))
-                elif not own and "source" not in row and fam not in SPEC_INCLUDE_ACCESSORIES.get(cat, SPEC_DEFAULT_ACCESSORIES):
+                elif not own and not (named and fam in SPEC_NAMED_HARDWARE) and "source" not in row and fam not in SPEC_INCLUDE_ACCESSORIES.get(cat, SPEC_DEFAULT_ACCESSORIES):
                     out.append((p["id"], field, row["spec"], f"a {fam} include on a {cat}"))
     return out
 
@@ -1279,14 +1295,18 @@ def main():
           [r for r in rels if r.get("category") and r.get("category") == kits.get(r.get("kit"), {}).get("category")])
 
     # 17. kit whose releases disagree on scale: no kit scale, or a release scale override with no note saying why
+    # a kit whose notes open "Group for ..." is a catch-all for an item range or a product line (Tamtech: cars, trucks and
+    # tanks), not one chassis: its releases keep their own scales (sourced on the release) and the kit states none
     hits = []
     for k in kits.values():
+        if str(k.get("notes", "")).startswith("Group for "):
+            continue
         rs = rels_of_kit[k["id"]]
         eff = {r.get("scale") or k.get("scale") for r in rs} - {None}
         unsourced = [r for r in rs if r.get("scale") and r.get("scale") != k.get("scale") and not r.get("notes")]
         if len(eff) > 1 and (not k.get("scale") or unsourced):
             hits.append(k)
-    check("kit-mixed-scale", "set the kit's scale to the one the releases share, and give a release scale that differs from the kit a note that states its source", hits)
+    check("kit-mixed-scale", "set the kit's scale to the one the releases share, and give a release scale that differs from the kit a note that states its source (a catch-all group kit, notes \"Group for ...\", is skipped)", hits)
 
     # 18. document without page or url
     check("doc-no-page-or-url", "give the document a page (the maker's page that lists it) or a url",
@@ -1399,7 +1419,7 @@ def main():
     for path in sorted({d["_path"] for k in db for d in db[k]}):
         with open(os.path.join(RC, path), encoding="utf-8") as f:
             text = f.read()
-        if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)):
+        if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)) and not path.startswith(TAMICO_OWNER_DOCS):
             banned.append(path)
         if has_foreign_link(text, swaps, gone, unavailable):
             foreign.append(path)
@@ -1512,7 +1532,7 @@ def main():
         twin_classes[(" / ".join(sorted(x["brand"].split("/")[-1] for x in (a, b))), cls)] += 1
         if cls != "shared":
             twin_flagged += [a, b]
-    check("twin-parts", "twins: a copy has a source or link on the other brand's site (the importer wrote it under the wrong brand: move it to the brand that makes it); an unclear pair needs both brands' sources checked, or a note that the two records are different parts",
+    check("twin-parts", "twins: a copy has a source or link on the other brand's site (the importer wrote it under the wrong brand: move it to the brand that makes it); an unclear pair needs both brands' sources checked: the same product under two brands gets rebrand_of on the rebranded record; two products state different values for a measure (power_w, weight_g ...)",
           twin_flagged, count=sum(n for (_, c), n in twin_classes.items() if c != "shared"),
           breakdown=("brand pair and class", [f"{pair} {cls} {n}" for (pair, cls), n in sorted(twin_classes.items())]))
 
