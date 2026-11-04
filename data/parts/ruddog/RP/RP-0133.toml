@@ -11,3 +11,6 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/RUDDOG-16T-48dp-Aluminium-Pinion_1" },
 ]
 material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
