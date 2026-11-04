@@ -9,3 +9,6 @@ documents = ["doc/schumacher/explodedmenace"]
 category = "washer-shim"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/m3x10mm-button-screws-washers-pk4-u1496" } ]
 name_source = "manufacturer"
+includes = [
+  { spec = "spec/screw/m3x10-button-hex", notes = "Size from this item's words in the manufacturer's name" },
+]

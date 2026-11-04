@@ -13,3 +13,7 @@ fits = [
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/r12/ball-bearing-5x9x3-red-sealed-flanged-pr-u2495" } ]
 name_source = "manufacturer"
 color = "red"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x9x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

@@ -9,3 +9,6 @@ seen_by_source = "doc/kyosho/kc10-im"
 documents = ["doc/kyosho/kc10-im"]
 category = "motor"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/70708.html" } ]
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

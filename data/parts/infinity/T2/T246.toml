@@ -5,5 +5,8 @@ name = "IF14-2 LOW FRICTION DRIVE BELT FRONT 3x399mm"
 category = "gear"
 
 links = [ { site = "Infinity", url = "https://www.creationmodel.net/infinity/index.php/new-products/199-if14-2-low-friction-drive-belt-front-3x399mm" } ]
+fits = [
+  { kit = "kit/infinity/if14-2", releases = ["release/infinity/if14-2"], type = "replaces", source = "doc/infinity/10101-002", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
 [sources]
 name = "https://www.creationmodel.net/infinity/index.php/new-products"

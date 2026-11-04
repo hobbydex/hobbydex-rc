@@ -2,8 +2,7 @@ id = "part/himoto/23641"
 brand = "brand/himoto"
 number = "23641"
 name = "Lock Nuts M3"
-category = "misc"
-category_source = "fallback"
+category = "nut"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/barren", type = "direct", source = "doc/himoto/option-parts" },
@@ -17,4 +16,7 @@ fits = [
   { kit = "kit/himoto/tracker", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/tricer-1-18-electric", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/tyronno", type = "direct", source = "doc/himoto/option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m3-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

@@ -2,10 +2,12 @@ id = "part/himoto/82637"
 brand = "brand/himoto"
 number = "82637"
 name = "Washer 2.6*6*0.5mm"
-category = "misc"
-category_source = "fallback"
+category = "washer-shim"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/dirt-diver", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/dirt-diver-1-16-electric", type = "direct", source = "doc/himoto/option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/washer/2.6x6x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

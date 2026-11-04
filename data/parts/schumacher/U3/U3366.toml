@@ -14,3 +14,6 @@ links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-b
 name_source = "manufacturer"
 pack_qty = 4
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/washer/4x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
