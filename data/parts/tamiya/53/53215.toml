@@ -4,12 +4,10 @@ number = "53215"
 name = "M-Chassis Slicks (1 Pair)"
 gtin = "4950344532155"
 status = "available"
-seen_by = "2004-01-30"
-seen_by_source = "https://web.archive.org/web/20040130162630/http://www.tamiya.com:80/english/rc/rcitem/parts/img/53215.jpeg"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/53215/index.html" },
 ]
-documents = ["doc/tamiya/53215-product-page"]
+documents = ["doc/tamiya/53215-product-page", "doc/tamiya/newitems-month"]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "chassis"
@@ -17,3 +15,5 @@ fits = [
   { kit = "kit/tamiya/m-03", releases = ["release/tamiya/58211"], type = "replaces", source = "doc/tamiya/58211-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
   { kit = "kit/tamiya/su-01", releases = ["release/tamiya/57402"], type = "replaces", source = "doc/tamiya/spb-51587-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]
+released = "1995-03"
+released_source = "doc/tamiya/newitems-month"
