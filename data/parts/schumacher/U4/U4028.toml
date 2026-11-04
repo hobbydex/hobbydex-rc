@@ -1,16 +1,15 @@
 id = "part/schumacher/U4028"
 brand = "brand/schumacher"
 number = "U4028"
-name = "U4028"
+name = "Front Hub Carriers - SV2,SVR"
 gtin = "5051294070427"
 seen_by = "2012-02"
 seen_by_source = "doc/schumacher/cougar-sv2-exploded"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 documents = ["doc/schumacher/cougar-sv2-exploded"]
-category = "misc"
-category_source = "fallback"
+category = "suspension"
 fits = [
   { kit = "kit/schumacher/cougar-sv2", type = "direct", source = "doc/schumacher/cougar-sv2-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-svr", type = "direct", source = "doc/schumacher/cougar-svr-exploded", notes = "Shown on the car's exploded diagram" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-2wd-buggy/cougar-svr/front-hub-carriers-sv2-svr-u4028" } ]
+name_source = "manufacturer"

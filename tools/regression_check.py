@@ -56,6 +56,9 @@ SOURCED_FIELDS = {"links", "fits", "includes", "material", "color", "former_name
                  "documents", "contains", "notes", "applies_to"}   # list rows and notes: each is some tool's provenance
 STATED_PACK_BASIS = {"maker", "page", "name", "manual", "distributor", "owner", "includes", "photos"}   # pack_qty_basis; "photo" is the weakest, not stated
 CONVENTION = {"material": {"unknown"}}   # placeholder values, never a stated fact
+# notes an importer wrote for want of a name; they describe the placeholder, so they go when a maker names the part
+PLACEHOLDER_NOTES = ("Named by its number only", "Shown by number in the manual", "Shown by number only in the manual",
+                     "Name not yet from a Primal source")
 # keys that name a row, in the order they are tried; rows are paired by them when their content changed
 IDENT_KEYS = ("url", "kit", "spec", "part", "release", "doc", "brand", "item", "site", "name", "text", "role", "relation")
 MISSING = object()
@@ -163,6 +166,8 @@ def values(v):
 
 def field_sourced(rec, k, val=MISSING):
     if val is not MISSING and isinstance(val, str) and val in CONVENTION.get(k, ()):
+        return False
+    if k == "notes" and isinstance(val, str) and val.startswith(PLACEHOLDER_NOTES):
         return False
     if k == "category":
         return rec.get("category_source") in ("curated", "manual-section")

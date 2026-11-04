@@ -1,14 +1,12 @@
 id = "part/schumacher/U4054"
 brand = "brand/schumacher"
 number = "U4054"
-name = "U4054"
+name = "Wishbones Rear Medium - SV2,SVR,KR,KF2,KD,KC"
 gtin = "5051294070687"
 seen_by = "2013-02-10"
 seen_by_source = "https://web.archive.org/web/20130210084032/http://www.racing-cars.com:80/pp/New_Cars_and_Parts/Cougar_SV2/U4054.html"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 documents = ["doc/schumacher/cougar-kc-manual"]
-category = "misc"
-category_source = "fallback"
+category = "suspension"
 fits = [
   { kit = "kit/schumacher/cougar-kc", type = "direct", source = "doc/schumacher/cougar-kc-exploded", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-exploded", notes = "Shown on the car's exploded diagram" },
@@ -18,3 +16,4 @@ fits = [
   { kit = "kit/schumacher/cougar-svr", type = "direct", source = "doc/schumacher/cougar-svr-exploded", notes = "Shown on the car's exploded diagram" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/cat-k2/wishbones-rear-medium-sv2-svr-kr-kf2-kd-kc-u4054" } ]
+name_source = "manufacturer"

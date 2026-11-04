@@ -1,16 +1,15 @@
 id = "part/schumacher/U2541"
 brand = "brand/schumacher"
 number = "U2541"
-name = "U2541"
+name = "Pro-Diff; assembled - Fusion/Menace"
 gtin = "5051294016081"
 seen_by = "2008-11-23"
 seen_by_source = "https://web.archive.org/web/20081123154124/http://www.racing-cars.com/images/u2541_wt.jpg"
-notes = "Named by its number only: the name on the scanned schumacher manual page was not clear enough to take"
 documents = ["doc/schumacher/explodedmenace"]
-category = "misc"
-category_source = "fallback"
+category = "differential"
 fits = [
   { kit = "kit/schumacher/fusion21", type = "direct", source = "doc/schumacher/fusionexplodedweb", notes = "Shown on the car's exploded diagram" },
   { kit = "kit/schumacher/menace21", type = "direct", source = "doc/schumacher/explodedmenace", notes = "Shown on the car's exploded diagram" },
 ]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/spares/nitro-on-road/menace-gtr/pro-diff-assembled-fusion-menace-u2541" } ]
+name_source = "manufacturer"

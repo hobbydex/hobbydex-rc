@@ -185,6 +185,11 @@ class Removals(unittest.TestCase):
         head = self.part('notes = "Colour read from the maker\'s product photo."\n')
         self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["notes"])
 
+    def test_placeholder_note_removed_is_not_a_regression(self):
+        base = self.part('notes = "Named by its number only: the name on the scanned x manual page was not clear enough to take"\n')
+        head = self.part('')
+        self.assertEqual(self.regs(self.check(base, head)), [])
+
     def test_removed_maker_link_is_a_regression(self):
         base = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
         head = self.part('links = []\n')
