@@ -22,6 +22,9 @@ class NotManualName(unittest.TestCase):
         self.assertTrue(audit.not_manual_name("22540-Akku-Sicherheitshinweise"))
         self.assertTrue(audit.not_manual_name("20182-PressRelease_011821_20182-Enduro24-Trailrunner"))
         self.assertTrue(audit.not_manual_name("300047500_Product_Sheet"))
+        # declarations of conformity are not manuals (FTX and other makers name them "...-Declaration-of-Conformity")
+        self.assertTrue(audit.not_manual_name("ftx5473r-Declaration-of-Conformity"))
+        self.assertTrue(audit.not_manual_name("ftx5529g-Declaration-of-Conformity"))
 
     def test_car_named_files_without_a_kind_word_stay_gaps(self):
         # kind unknown: the cover must be read; a car name or a set name is not a non-manual
