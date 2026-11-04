@@ -294,10 +294,10 @@ def near_local(a, b):
 
 
 # A cached PDF whose name states no manual kind is a non-manual only when its name says what it is (paint
-# safety sheets, battery and safety notices, press releases, product sheets). Any other name with no kind
+# safety sheets, battery and safety notices, press releases, product sheets, declarations of conformity). Any other name with no kind
 # word (a car-named file such as "300012657_Ducati_Gabel-Set.pdf") is "kind unknown" and stays a gap.
 NOT_MANUAL_NAME = re.compile(r"msds|sicherheit|safety|warning|hinweis|akku|battery|lipo|press|news|video|product|"
-                             r"datenblatt|data ?sheet|spruehfarbe|paint|flyer|leaflet", re.I)
+                             r"datenblatt|data ?sheet|spruehfarbe|paint|flyer|leaflet|declaration|conformity|konformit", re.I)
 
 
 # Parts of brands that also sell aircraft, helicopters and drones. The data covers ground vehicles (docs/vision.md:
