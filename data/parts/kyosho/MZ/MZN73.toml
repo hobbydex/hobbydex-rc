@@ -6,6 +6,9 @@ gtin = "4955439072509"
 seen_by = "2014-08-23"
 seen_by_source = "https://web.archive.org/web/20140823230025/http://www.kyosho.com/jpn/support/instructionmanual/mini-z/pdf/MZN73_SKYLINE_GT-R_Vspec2R34_BS.pdf"
 name_ja = "日産スカイラインGT-R Vスペック2 Nur R34"
-documents = ["doc/kyosho/mzn73-skyline-gt-r-vspec2r34-bs"]
+documents = ["doc/kyosho/mzn73-skyline-gt-r-vspec2r34-bs", "doc/kyosho/mini-z-parts-tekigou"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

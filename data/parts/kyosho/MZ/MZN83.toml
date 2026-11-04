@@ -6,5 +6,10 @@ gtin = "4548565085668"
 seen_by = "2007-09"
 seen_by_source = "doc/kyosho/mzn83-mazda-rx-7-fc3"
 name_ja = "マツダ RX-7 FC3"
-documents = ["doc/kyosho/mzn83-mazda-rx-7-fc3"]
+documents = ["doc/kyosho/mzn83-mazda-rx-7-fc3", "doc/kyosho/mini-z-parts-tekigou"]
 category = "body"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

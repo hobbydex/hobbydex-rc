@@ -6,6 +6,9 @@ gtin = "4955439075074"
 seen_by = "2014-08-23"
 seen_by_source = "https://web.archive.org/web/20140823232715/http://www.kyosho.com/jpn/support/instructionmanual/mini-z/pdf/MZN77_AUDI_TT_COUPE_BS.pdf"
 name_ja = "アウディTTクーペ 3.2クワトロ"
-documents = ["doc/kyosho/mzn77-audi-tt-coupe-bs"]
+documents = ["doc/kyosho/mzn77-audi-tt-coupe-bs", "doc/kyosho/mini-z-parts-tekigou"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-awd", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the AWD (white body set, may not fit certain wheel types) in Kyosho's MINI-Z parts acceptable list" },
+]

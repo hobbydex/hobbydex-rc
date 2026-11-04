@@ -8,5 +8,8 @@ seen_by_source = "doc/kyosho/law81-reversibleservomountset"
 gtin = "4548565387564"
 name_ja = "リバーシブルサーボマウントセット"
 category = "chassis"
-documents = ["doc/kyosho/law81-reversibleservomountset"]
+documents = ["doc/kyosho/law81-reversibleservomountset", "doc/kyosho/law81-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/law81.html" } ]
+fits = [
+  { kit = "kit/kyosho/lazer-zx7", type = "direct", source = "doc/kyosho/law81-product-page", notes = "Listed on the maker's Compatible Kits page" },
+]

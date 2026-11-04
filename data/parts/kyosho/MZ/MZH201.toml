@@ -6,6 +6,11 @@ gtin = "4955439766514"
 seen_by = "2012-02"
 seen_by_source = "doc/kyosho/32752-hs01-mr03-sp-lmited-im"
 notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
-documents = ["doc/kyosho/32752-hs01-mr03-sp-lmited-im"]
+documents = ["doc/kyosho/32752-hs01-mr03-sp-lmited-im", "doc/kyosho/mini-z-parts-tekigou"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/kyosho/mini-z-mr-01", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-01 (wheel that does not fit certain bodies, MR-01 type) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-015", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-015 (wheel set limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
+  { kit = "kit/kyosho/mini-z-mr-02", type = "replaces", source = "doc/kyosho/mini-z-parts-tekigou", notes = "Marked for the MR-02 (wheel set limited to certain bodies) in Kyosho's MINI-Z parts acceptable list" },
+]
