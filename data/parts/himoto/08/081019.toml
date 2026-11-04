@@ -1,12 +1,13 @@
 id = "part/himoto/081019"
 brand = "brand/himoto"
 number = "081019"
-name = "081019"
-category = "misc"
-category_source = "fallback"
+name = "Alum.Front lower suspension arm"
+name_source = "ocr"
+category = "suspension"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/torpeda", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/torpeda-pro", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/torpeda-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
 ]
+material = "aluminium"

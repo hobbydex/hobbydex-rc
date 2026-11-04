@@ -1,12 +1,13 @@
 id = "part/himoto/50127"
 brand = "brand/himoto"
 number = "50127"
-name = "50127"
-category = "misc"
-category_source = "fallback"
+name = "Shock Plastic Parts"
+name_source = "ocr"
+category = "shock"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/megap-mxb-5", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/megap-mxr-5", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/megap-mxt-5", type = "direct", source = "doc/himoto/option-parts" },
 ]
+material = "plastic"
