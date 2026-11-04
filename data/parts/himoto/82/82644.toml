@@ -2,10 +2,12 @@ id = "part/himoto/82644"
 brand = "brand/himoto"
 number = "82644"
 name = "Cap Head Hex Machine Screw 2.5*20mm"
-category = "misc"
-category_source = "fallback"
+category = "screw"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/dirt-diver", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/dirt-diver-1-16-electric", type = "direct", source = "doc/himoto/option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x20-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

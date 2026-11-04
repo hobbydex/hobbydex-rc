@@ -2,10 +2,13 @@ id = "part/himoto/58098"
 brand = "brand/himoto"
 number = "58098"
 name = "Oil Bearing 8*12*3.5mm"
-category = "misc"
-category_source = "fallback"
+category = "bearing"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/dirt-diver", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/dirt-diver-1-16-electric", type = "direct", source = "doc/himoto/option-parts" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/8x12x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+lubricant = "oil"

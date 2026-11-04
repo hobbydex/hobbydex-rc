@@ -2,10 +2,12 @@ id = "part/himoto/58043"
 brand = "brand/himoto"
 number = "58043"
 name = "Ball Bearing 6*10*3mm"
-category = "misc"
-category_source = "fallback"
+category = "bearing"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/dirt-diver", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/dirt-diver-1-16-electric", type = "direct", source = "doc/himoto/option-parts" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

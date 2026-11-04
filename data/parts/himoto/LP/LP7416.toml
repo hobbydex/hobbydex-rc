@@ -2,8 +2,7 @@ id = "part/himoto/LP7416"
 brand = "brand/himoto"
 number = "LP7416"
 name = "7.4V 1500mAH Li-Po Battery"
-category = "misc"
-category_source = "fallback"
+category = "battery"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/prowler-mtl", type = "direct", source = "doc/himoto/option-parts" },
@@ -11,3 +10,10 @@ fits = [
   { kit = "kit/himoto/prowler-xbl", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/prowler-xtl", type = "direct", source = "doc/himoto/option-parts" },
 ]
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-1500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 1500
+voltage = 7.4
