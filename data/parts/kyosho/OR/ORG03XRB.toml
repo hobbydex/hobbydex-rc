@@ -1,12 +1,13 @@
 id = "part/kyosho/ORG03XRB"
 brand = "brand/kyosho"
 number = "ORG03XRB"
+former_ids = ["part/kyosho/ORGO3XRB"]
 name = "Grooved O-Ring (P3/for Oil Shock/Orange)"
 gtin = "4548565425457"
 pack_qty = 8
 pack_qty_basis = "manual"
 category = "o-ring-seal"
-documents = ["doc/kyosho/org03xrb-product-page"]
+documents = ["doc/kyosho/org03xrb-product-page", "doc/kyosho/34312-ultima-sb-dune-master-spare-and-option-parts", "doc/kyosho/34321-lazer-sb-dirt-cross-spare-and-option-parts"]
 range = "kyosho/org03-grooved-o-ring-p3-for-oil-shock-8pcs-43f9-colours"
 fits = [
   { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
@@ -18,3 +19,6 @@ fits = [
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/org03xrb.html" },
 ]
+ocr_names = ["Grooved O-Ring (P3/for Oil Shock/Orange) 8pcs"]
+notes = "Name read by OCR from a scanned Kyosho parts list; verify before relying on exact wording"
+name_source = "ocr"

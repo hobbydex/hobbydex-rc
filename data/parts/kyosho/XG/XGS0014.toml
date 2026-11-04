@@ -1,11 +1,12 @@
 id = "part/kyosho/XGS0014"
 brand = "brand/kyosho"
 number = "XGS0014"
+former_ids = ["part/kyosho/KGS0014"]
 name = "Big Bore Shock Spring(L/Red/Medium Hard)"
 name_source = "manual"
 seen_by = "2011-09"
 seen_by_source = "doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-im"
-documents = ["doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-im"]
+documents = ["doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-im", "doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-spop"]
 fits = [
   { kit = "kit/kyosho/ultima-rb5", type = "direct", source = "doc/kyosho/30067-t01-ultimarb5-sp2-wc-ltd-spop" },
 ]
@@ -13,3 +14,5 @@ category = "shock-spring"
 color = "red"
 rate = "medium"
 range = "kyosho/big-bore-shock-spring-l-rate-springs"
+pack_qty = 2
+pack_qty_basis = "page"

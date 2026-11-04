@@ -1,6 +1,7 @@
 id = "part/kyosho/97037-14"
 brand = "brand/kyosho"
 number = "97037-14"
+former_ids = ["part/kyosho/97037"]
 name = "Pin (2.6x14mm/IF39)"
 gtin = "4548565146482"
 pack_qty = 10
@@ -19,9 +20,10 @@ fits = [
   { kit = "kit/kyosho/fo-xx", type = "direct", source = "doc/kyosho/33151-fo-xx-spop" },
   { kit = "kit/kyosho/mad-crusher", type = "direct", source = "doc/kyosho/33152-mad-crusher-pl-v01" },
   { kit = "kit/kyosho/mad-crusher-ve", type = "direct", source = "doc/kyosho/34253-mad-crusher-ve-pl-v01" },
+  { kit = "kit/kyosho/usa-1-nitro", type = "direct", source = "doc/kyosho/33155-usa-1-nitro-readyset-exploded-view" },
 ]
 category = "pin"
-documents = ["doc/kyosho/30885-madforce-kruiser-ve-sp", "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop", "doc/kyosho/30887-mm01-fo-xx-ve-spop"]
+documents = ["doc/kyosho/30885-madforce-kruiser-ve-sp", "doc/kyosho/30886-mm01-psycho-kruiser-ve-spop", "doc/kyosho/30887-mm01-fo-xx-ve-spop", "doc/kyosho/30888-mad-force-kr-2-spop"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/97037-14.html" } ]
 equivalent_to = [
   { spec = "spec/pin/2.6x14", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
