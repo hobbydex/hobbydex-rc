@@ -323,6 +323,21 @@ def name_slug(path):
     return re.sub(r"[^a-z0-9]", "", re.sub(r"(?i)\.pdf$", "", base).lower())
 
 
+def archive_files(docs, resolve):
+    """{real path of a cached PDF: [documents]} for the archive documents that carry no file or url of their own (RC
+    Documents, Valkyrie): their file is the PDF their listing page links, which resolve(id, doc) returns as (path, why)
+    (tools/archive_pdf.py). A document whose PDF is not cached maps nothing; resolve None maps nothing."""
+    out = collections.defaultdict(list)
+    if resolve is None:
+        return out
+    for did, d in docs.items():
+        if d.get("page") and not d.get("url") and not d.get("file"):
+            path = resolve(did, d)[0]
+            if path:
+                out[os.path.realpath(path)].append(d)
+    return out
+
+
 def drop_copies_of_linked(cache, unlinked, linked_files):
     """The unlinked cached files (paths relative to the cache) that are not a byte-identical copy of a linked file of the
     same brand (second path part): same size first, then the SHA-256."""
@@ -685,6 +700,21 @@ def load_tools(tools):
         out["cache"] = cache
     # the hardware photo reader (its cache lookups; it reads no photo itself in the audit)
     hw = os.path.join(tools, "tools", "link_hw_photo_finish.py")
+    # the PDF an archive document's listing page links (RC Documents, Valkyrie: tools/archive_pdf.py resolve)
+    out["archive_resolve"] = None
+    ap = os.path.join(tools, "tools", "archive_pdf.py")
+    if os.path.exists(ap):
+        spec = importlib.util.spec_from_file_location("archive_pdf", ap)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.join(tools, "tools"))
+        os.environ.setdefault("HOBBYDEX_RC", RC)   # the tools' paths.py reads the data checkout from it
+        try:
+            spec.loader.exec_module(mod)
+            out["archive_resolve"] = mod.resolve
+        except Exception as e:  # the archive documents then count no file
+            print(f"note: archive_pdf not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.join(tools, "tools"))
     out["hwphoto"] = None
     if os.path.exists(hw):
         spec = importlib.util.spec_from_file_location("link_hw_photo_finish", hw)
@@ -1096,8 +1126,11 @@ def main():
                 by_url[d["url"]].append(d)
                 by_url_name[os.path.basename(urllib.parse.urlsplit(d["url"]).path).lower()].append(d)
                 by_slug[d.get("brand"), name_slug(urllib.parse.urlsplit(d["url"]).path)].append(d)
+        # a linked archive document (no file of its own) is linked to the PDF its listing page gives it
+        arch_by_path = archive_files({i: d for i, d in docs.items() if i in linked_docs}, tools["archive_resolve"])
         unlinked = []
         linked_files = []    # cached files a linked document matches (by name or address): their copies count as linked
+        via_archive = 0      # cached files a linked archive document's listing page gives as its file
         not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
         not_rc = 0           # a static kit, paint or tool of Tamiya that no release or part of the data has (tamiya_static_non_rc)
         kind_unknown = 0     # the name states no manual kind and says nothing else: still a gap, counted apart
@@ -1113,6 +1146,10 @@ def main():
             ds = by_name.get(name.lower(), []) + (by_url.get(url, []) if url else []) + same_brand_url
             if len(name_slug(name)) >= 8:
                 ds = ds + [d for d in by_slug.get((mine, name_slug(name)), []) if d not in ds]
+            arch = arch_by_path.get(os.path.realpath(os.path.join(tools["cache"], rel_path)), [])
+            if arch:
+                via_archive += 1
+                ds = ds + [d for d in arch if d not in ds]
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
                 stem = re.sub(r"(?i)\.pdf$", "", name)
@@ -1132,12 +1169,13 @@ def main():
         n_before = len(unlinked)
         unlinked = drop_copies_of_linked(tools["cache"], unlinked, linked_files)
         copies = n_before - len(unlinked)
-        check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked",
+        check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked, and so does the PDF a linked archive document's listing page gives",
               [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5],
               detail=f"{kind_unknown} of them name no manual kind (kind unknown: read the cover or the name); "
                      f"{not_manuals} cached PDFs named as safety sheets, notices, press releases or product sheets are left out; "
                      f"{not_rc} cached Tamiya manuals of static kits, paints and tools (not RC: no Tamiya release or part has the number) are left out; "
-                     f"{copies} byte-identical copies of a linked document's file (same brand, size and checksum) count as linked")
+                     f"{copies} byte-identical copies of a linked document's file (same brand, size and checksum) count as linked; "
+                     f"{via_archive} cached PDFs are the file a linked archive document's listing page gives (counted as linked)")
         # keep the list ids as paths; url points at the brand
         res = results["manual-unlinked"]
         res["examples"] = [{"id": u, "url": SITE + "/rc/brands/" + u.split("/")[1] + "/"} for u in unlinked[:args.examples]]
