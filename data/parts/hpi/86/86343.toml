@@ -8,3 +8,8 @@ category = "gear"
 documents = ["doc/hpi/12039-savage-xl-glb-v3", "doc/hpi/12858-1-savage-x", "doc/hpi/12861-savage-x-ss-glb-m-v1", "doc/hpi/12867-savage-x-46-glb-m-v1", "doc/hpi/12881-savage-35-glb-m-v1"]
 material = "titanium"
 links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/86343" } ]
+fits = [
+  { kit = "kit/hpi/savage", type = "replaces", replaces = "part/hpi/86081", source = "doc/hpi/12881-savage-35-glb-m-v1", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/savage-x", type = "replaces", replaces = "part/hpi/86081", source = "doc/hpi/12858-1-savage-x", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hpi/savage-xl", type = "replaces", replaces = "part/hpi/86081", source = "doc/hpi/12039-savage-xl-glb-v3", notes = "Same part in another material (link_upgrades.py)" },
+]

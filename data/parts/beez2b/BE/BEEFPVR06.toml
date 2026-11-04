@@ -2,6 +2,7 @@ id = "part/beez2b/BEEFPVR06"
 brand = "brand/beez2b"
 number = "BEEFPVR06"
 name = "4S 14.8v 1800mAh 50C Lipo Battery for FPV racer"
+status = "discontinued"
 links = [
   { site = "beez2b", url = "https://www.beez2b.com/en/cat/1396-beefpvr06-BEEFPVR06", kind = "dealer" },
 ]
@@ -10,3 +11,8 @@ category = "battery"
 chemistry = "lipo"
 cells = 4
 voltage = 14.8
+equivalent_to = [
+  { spec = "spec/battery/lipo-4s-1800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 1800
+c_rating = 50

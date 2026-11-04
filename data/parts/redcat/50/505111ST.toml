@@ -13,6 +13,7 @@ links = [
 ]
 fits = [
   { kit = "kit/redcat/tr-mt8e", type = "replaces", source = "doc/redcat/store" },
+  { kit = "kit/redcat/tr-mt8e", type = "replaces", replaces = "part/redcat/505111", source = "doc/redcat/store", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "differential"
 material = "steel"
