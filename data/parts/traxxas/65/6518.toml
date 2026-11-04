@@ -1,8 +1,12 @@
 id = "part/traxxas/6518"
 brand = "brand/traxxas"
 number = "6518"
-name = "6518"
+name = "Receiver, micro, TQi 2.4GHz with telemetry (5-channel)"
+name_source = "manual"
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
-documents = ["doc/traxxas/56076-1-exploded-chassis-assembly"]
+documents = ["doc/traxxas/56076-1-exploded-chassis-assembly", "doc/traxxas/7105-7105-parts"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/traxxas/e-revo-1-16", type = "direct", source = "doc/traxxas/7105-7105-parts" },
+]

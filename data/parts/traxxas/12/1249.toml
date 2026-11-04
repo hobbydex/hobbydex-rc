@@ -1,9 +1,14 @@
 id = "part/traxxas/1249"
 brand = "brand/traxxas"
 number = "1249"
-name = "1249"
+name = "Screw set, self-tapping screws (black) (Tom Cat/ Spirit)"
+name_source = "manual"
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
-documents = ["doc/traxxas/36034-1-exploded-rear-assembly", "doc/traxxas/36064-1-exploded-rear-assembly", "doc/traxxas/36084-1-exploded-rear-assembly"]
+documents = ["doc/traxxas/36034-1-exploded-rear-assembly", "doc/traxxas/36064-1-exploded-rear-assembly", "doc/traxxas/36084-1-exploded-rear-assembly", "doc/traxxas/1209-1209-parts-spirit-and-tom-cat-parts-2004-0"]
 links = [ { site = "Traxxas", url = "https://traxxas.com/catalogsearch/result/?q=1249" } ]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/traxxas/spirit", type = "direct", source = "doc/traxxas/1209-1209-parts-spirit-and-tom-cat-parts-2004-0" },
+]
+color = "black"
