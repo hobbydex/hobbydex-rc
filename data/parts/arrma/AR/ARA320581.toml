@@ -10,7 +10,6 @@ links = [
 category = "chassis"
 material = "aluminium"
 fits = [
-  { kit = "kit/arrma/kraton", type = "direct", source = "doc/arrma/horizon-part-pages" },
+  { kit = "kit/arrma/kraton", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material as part/arrma/ARA320759 (link_upgrades.py)" },
   { kit = "kit/arrma/notorious", type = "direct", source = "doc/arrma/horizon-part-pages" },
-  { kit = "kit/arrma/kraton", type = "replaces", replaces = "part/arrma/ARA320759", source = "doc/arrma/horizon-part-pages", notes = "Same part in another material (link_upgrades.py)" },
 ]
