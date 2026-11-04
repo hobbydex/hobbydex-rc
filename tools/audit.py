@@ -79,6 +79,7 @@ def url_for(item):
 
 ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.py")   # the per-host English addresses (link_language_variants.py)
 ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
+ERROR_RX = re.compile(r"Fatal error|Call to (?:a )?member function|Parse error:|Uncaught (?:Exception|Error)")   # a PHP error page (the English shop answers so)
 
 
 # a document title that is only item numbers, or repeats one token: the placeholder an importer wrote when no name was known
@@ -123,16 +124,66 @@ def english_twin(url, swaps):
     return rule[1] + url[len(rule[0]):] if rule and url.startswith(rule[0]) else None
 
 
-def has_foreign_link(text, swaps, gone=frozenset()):
+def has_foreign_link(text, swaps, gone=frozenset(), unavailable=None):
     """Whether a record's text has a non-English maker link with no English twin beside it in the same record.
-    A twin the crawl found gone (gone: the URLs the queue marks gone) is no switch: the maker has no such page."""
+    A twin the crawl found gone (gone: the URLs the queue marks gone) is no switch: the maker has no such page.
+    unavailable(twin, url, text) -> True for a twin that is no English page of the item (the English page failed in the
+    crawl, answers with an error, or names none of the record's item numbers): the link stays and is not listed."""
     links = [u for line in text.splitlines() if not line.lstrip().startswith("notes") for u in ENGLISH_LINK.findall(line)]
     here = set(links)
     for u in links:
         twin = english_twin(u, swaps)
         if non_english(u, swaps) and twin not in here and twin not in gone:
+            if unavailable and unavailable(twin, u, text):
+                continue
             return True
     return False
+
+
+def english_state(cache, swaps):
+    """{url: (status, path)} of the queue rows that are done or failed on the English hosts of the swap rules (read-only)."""
+    hosts = sorted({urllib.parse.urlsplit(to).hostname or "" for _, to in swaps.values()})
+    crawl = os.path.join(cache, "crawl.db") if cache else ""
+    if not hosts or not crawl or not os.path.exists(crawl):
+        return {}
+    import sqlite3
+    con = sqlite3.connect("file:%s?mode=ro" % crawl, uri=True)
+    try:
+        rows = con.execute("select url, status, path from queue where status in ('done', 'failed') and host in (%s)" % ",".join("?" * len(hosts)), hosts).fetchall()
+    finally:
+        con.close()
+    return {u: (s, p) for u, s, p in rows}
+
+
+def record_numbers(text, url):
+    """The item numbers a record's link names: its `number`, the 5-plus digit runs of its id, and of the maker link."""
+    nums = set(re.findall(r"(?<!\d)(\d{5,})(?!\d)", url))
+    m = re.search(r'^number = "([^"]+)"', text, re.M)
+    if m:
+        nums.add(m.group(1))
+    i = re.search(r'^id = "(.*)"', text, re.M)
+    if i:
+        nums.update(re.findall(r"(?<!\d)(\d{5,})(?!\d)", i.group(1).rsplit("/", 1)[-1]))
+    return nums
+
+
+def english_unavailable(english):
+    """The unavailable() of has_foreign_link for the English addresses in english (url -> (status, path))."""
+    def check(twin, url, text):
+        st = english.get(twin)
+        if st is None:
+            return False
+        status, path = st
+        if status == "failed":
+            return True   # the crawl gave up: the maker's English page answers with a server error
+        if not path or not os.path.exists(path):
+            return False
+        page = open(path, "rb").read().decode("utf-8", "replace")
+        if ERROR_RX.search(page):
+            return True   # a PHP error page in place of the product
+        nums = record_numbers(text, url)
+        return bool(nums) and not any(re.search(r"(?<!\d)" + re.escape(n) + r"(?!\d)", page) for n in nums)
+    return check
 
 
 def gone_urls(cache, swaps):
@@ -1344,12 +1395,13 @@ def main():
     banned, scrap, local, dealer, foreign = [], [], [], [], []
     swaps = english_swaps()
     gone = gone_urls(tools["cache"], swaps)
+    unavailable = english_unavailable(english_state(tools["cache"], swaps))
     for path in sorted({d["_path"] for k in db for d in db[k]}):
         with open(os.path.join(RC, path), encoding="utf-8") as f:
             text = f.read()
         if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)):
             banned.append(path)
-        if has_foreign_link(text, swaps, gone):
+        if has_foreign_link(text, swaps, gone, unavailable):
             foreign.append(path)
         if SCRAP_IMG.search(text):
             scrap.append(path)
@@ -1366,7 +1418,7 @@ def main():
     check("tamico-doc-reference", "cite the maker's own listing instead of the Tamico dealer catalogue", [{"id": p} for p in dealer], count=len(dealer))
     results["tamico-doc-reference"]["examples"] = [{"id": p, "url": SITE + "/rc/"} for p in dealer[:args.examples]]
     check("local-path", "replace the local path with the source's URL", local)
-    check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone is not listed)",
+    check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone, failed, answers with an error page, or names none of the record's item numbers is not listed)",
           [{"id": p} for p in foreign], count=len(foreign))
 
     # 25. releases with no maker product page (no product_page document, no maker link), per brand

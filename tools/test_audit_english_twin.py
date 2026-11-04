@@ -74,6 +74,66 @@ def test_gone_urls_without_a_cache_is_empty():
     assert audit.gone_urls(None, SWAPS) == frozenset()
 
 
+LRP_RECORD = """id = "part/lrp/920500"
+brand = "brand/lrp"
+number = "920500"
+name = "End plate"
+links = [
+  { site = "LRP", url = "https://www.lrp.cc/de/produkt/920500/" },
+]
+"""
+LRP_DE = "https://www.lrp.cc/de/produkt/920500/"
+LRP_EN = "https://www.lrp.cc/en/product/920500/"
+LRP_SWAPS = {"www.lrp.cc": ("https://www.lrp.cc/de/produkt/", "https://www.lrp.cc/en/product/")}
+
+
+def _english(status, page_text=None, tmp=None):
+    path = None
+    if page_text is not None:
+        path = os.path.join(tmp, "en.html")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(page_text)
+    return {LRP_EN: (status, path)}
+
+
+def test_failed_english_page_is_not_listed():
+    unavailable = audit.english_unavailable(_english("failed"))
+    assert not audit.has_foreign_link(LRP_RECORD, LRP_SWAPS, frozenset(), unavailable)
+
+
+def test_english_page_with_php_error_is_not_listed():
+    with tempfile.TemporaryDirectory() as tmp:
+        eng = _english("done", "<b>Fatal error</b>: Call to a member function on null", tmp)
+        assert not audit.has_foreign_link(LRP_RECORD, LRP_SWAPS, frozenset(), audit.english_unavailable(eng))
+
+
+def test_english_page_naming_another_item_is_not_listed():
+    with tempfile.TemporaryDirectory() as tmp:
+        eng = _english("done", "<h1>Other end plate</h1> article 920821", tmp)
+        assert not audit.has_foreign_link(LRP_RECORD, LRP_SWAPS, frozenset(), audit.english_unavailable(eng))
+
+
+def test_english_page_naming_the_item_is_still_listed():
+    with tempfile.TemporaryDirectory() as tmp:
+        eng = _english("done", "<h1>End plate</h1> article 920500", tmp)
+        assert audit.has_foreign_link(LRP_RECORD, LRP_SWAPS, frozenset(), audit.english_unavailable(eng))
+
+
+def test_pending_english_page_is_still_listed():
+    assert audit.has_foreign_link(LRP_RECORD, LRP_SWAPS, frozenset(), audit.english_unavailable({}))
+
+
+def test_maker_link_number_counts_for_a_record_without_one():
+    doc = 'id = "doc/lrp/n45-quickstart"\nurl = "https://www.lrp.cc/fileadmin/x.pdf"\nlinks = ["https://www.lrp.cc/de/produkt/920821/"]\n'
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, "en.html")
+        open(path, "w", encoding="utf-8").write("<h1>N45</h1> article 920821")
+        eng = {"https://www.lrp.cc/en/product/920821/": ("done", path)}
+        assert audit.has_foreign_link(doc, LRP_SWAPS, frozenset(), audit.english_unavailable(eng))
+        open(path, "w", encoding="utf-8").write("<h1>N45</h1> article 920500")
+        assert not audit.has_foreign_link(doc, LRP_SWAPS, frozenset(), audit.english_unavailable(eng))
+
+
 if __name__ == "__main__":
     for name, fn in sorted(globals().items()):
         if name.startswith("test_") and callable(fn):
