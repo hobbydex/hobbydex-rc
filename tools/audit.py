@@ -96,6 +96,47 @@ def placeholder_title(title):
     return bool(PLACEHOLDER_TITLE.search(t)) or bool(NUMBERS_ONLY_TITLE.fullmatch(t))
 
 
+BODY_SET_DOC = re.compile(r"\bbody parts set\b|\bbody set\b|\bbody only\b|/spb-", re.I)
+
+
+def is_body_set_doc(doc, doc_id=""):
+    """A document that is the manual of a body set sold apart from a chassis (Tamiya "51578 body parts set"). A car's
+    manual that names its body ("... incl. Porsche Body", "(Painted Body)", "wo/Body") is a whole-car manual."""
+    return bool(BODY_SET_DOC.search((doc or {}).get("title", "") + " " + doc_id))
+
+
+def name_count_strippable(p, q, callouts):
+    """Whether a part's name carries a count (q) or bag callouts that can leave it. A name with a name_source is a stated
+    value (the maker's, a manual's or a dealer's, as printed): it keeps its count (hobbydex-tools name_count.apply
+    keep_name). A count that differs from the part's pack_qty is a conflict to settle by hand, not a strip."""
+    if p.get("name_source"):
+        return False
+    if q is not None and p.get("pack_qty") is not None and p["pack_qty"] != q and not callouts:
+        return False
+    return q is not None or bool(callouts)
+
+
+# the kinds that are a file the maker published in its own language: the title is that file's printed name (Hobbytech's
+# "Guide de r\u00e9f\u00e9rence BX8SL", Corally's "..._Handleiding_NL"), not a localised title of an English item; an
+# English title of such a file would be a translation. Videos and pages are localised by the platform, so they are checked.
+OWN_LANGUAGE_FILES = {"manual", "supplement", "setup_sheet", "part_list", "exploded_view", "catalog_pdf", "datasheet"}
+
+
+def localised_title(d):
+    """A document whose title holds words of another language and that is not a maker's file in that language."""
+    return d.get("kind") not in OWN_LANGUAGE_FILES and bool(NON_ENGLISH.search(d.get("title", "")))
+
+
+SERVICE_PACK = re.compile(r"\b(service|rebuild|upgrade)\b.*\b(pack|kit|set)\b", re.I)
+COMPAT_CLAUSE = re.compile(r"\(?\bfor use with\b[^()]*\)?|\bfits?\b.*$", re.I)
+
+
+def is_service_pack(name):
+    """A part that is a service, rebuild or upgrade pack itself. A "(for use with #9080 upgrade kit)" clause names the kit
+    the part works with, so the part (an extreme heavy duty shock tower) is no pack."""
+    return bool(SERVICE_PACK.search(COMPAT_CLAUSE.sub(" ", name or "")))
+
+
 def date_without_source(r):
     """A release that states a year or release date but names no source for it (released_source)."""
     return (r.get("year") is not None or bool(r.get("released"))) and not r.get("released_source")
@@ -989,12 +1030,11 @@ def main():
     # 4. Traxxas service or rebuild packs marked as in the box
     check("service-pack-in-box", "change the row's role to option (or listed): a service or upgrade pack is not in the box",
           [r for r in rels if r.get("brand") == "brand/traxxas" for c in r.get("contains", []) if c.get("role") == "kit"
-           and re.search(r"\b(service|rebuild|upgrade)\b.*\b(pack|kit|set)\b", (by_id.get(c["part"], {}).get("name", "")), re.I)])
+           and is_service_pack(by_id.get(c["part"], {}).get("name", ""))])
 
     # 5. release whose contents come only from a body-set manual while a kit manual exists
     def is_body(doc_id):
-        d = docs.get(doc_id, {})
-        return bool(re.search(r"body", d.get("title", "") + " " + doc_id, re.I))
+        return is_body_set_doc(docs.get(doc_id, {}), doc_id)
     hits = []
     for r in rels:
         srcs = {c.get("source") for c in r.get("contains", []) if c.get("source")}
@@ -1273,7 +1313,7 @@ def main():
     # some sites localise them): a title with common Dutch, French, Spanish or German words is listed for an
     # English source copy to fix from (a refetch through the crawl queue), never renamed on a guess
     check("title-language", "rename the document from an English source copy (the maker's English page or manual, cited): the English title, not a translation",
-          [d for d in docs.values() if NON_ENGLISH.search(d.get("title", ""))])
+          [d for d in docs.values() if localised_title(d)])
 
     # 15. release with no date at all
     check("release-no-date", "date the release from a source (released, year or announced); a seen_by bound is only a fallback",
@@ -1694,7 +1734,7 @@ def main():
         if nc is None:
             return False
         _, q, co = nc.split(p.get("name", "") or "")
-        return q is not None or bool(co)
+        return name_count_strippable(p, q, co)
     callouts = [p for p in parts if callout_or_count(p)]
     kinds = collections.Counter()
     for p in callouts:
