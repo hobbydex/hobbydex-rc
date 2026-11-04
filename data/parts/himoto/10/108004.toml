@@ -1,12 +1,13 @@
 id = "part/himoto/108004"
 brand = "brand/himoto"
 number = "108004"
-name = "108004"
-category = "misc"
-category_source = "fallback"
+name = "Aluminum Shock Absorber"
+name_source = "ocr"
+category = "shock"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/1-10-scale-rtr-4wd-nitro-power-off-road-truck-vtx18-engine-w-2-4g-remote", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/eldorada", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/viper-xst", releases = ["release/himoto/HI6103E"], type = "direct", source = "doc/himoto/option-parts" },
 ]
+material = "aluminium"

@@ -1,12 +1,13 @@
 id = "part/himoto/081067"
 brand = "brand/himoto"
 number = "081067"
-name = "081067"
-category = "misc"
-category_source = "fallback"
+name = "Alum. Tail Wing Pad"
+name_source = "ocr"
+category = "wing"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/torpeda", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/torpeda-pro", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/torpeda-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
 ]
+material = "aluminium"
