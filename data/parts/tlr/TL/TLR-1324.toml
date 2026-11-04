@@ -10,8 +10,7 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/team-losi-racing-wheel-hex-front-8xt/TLR-1324.html" },
 ]
 fits = [
-  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-product-catalogue" },
-  { kit = "kit/tlr/8ight-xt", type = "replaces", replaces = "part/tlr/TLR242041", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tlr/8ight-xt", type = "direct", source = "doc/tlr/horizon-product-catalogue", notes = "Same part in another material as part/tlr/TLR242041 (link_upgrades.py)" },
 ]
 category = "drivetrain"
 material = "aluminium"

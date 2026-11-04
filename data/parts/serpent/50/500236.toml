@@ -7,10 +7,8 @@ seen_by_source = "https://web.archive.org/web/20140429131633/http://serpent.com/
 pack_qty = 3
 pack_qty_basis = "page"
 fits = [
-  { kit = "kit/serpent/spyder-srx2", type = "direct", source = "doc/serpent/spyder-srx-2-mm-rtr-parts", notes = "Also listed by doc/serpent/spyder-srx-2-mm-rtr-options" },
-  { kit = "kit/serpent/spyder-sct", type = "direct", source = "doc/serpent/spyder-sct-srx-2-rm-rtr-parts", notes = "Also listed by doc/serpent/spyder-sct-srx-2-rm-rtr-options" },
-  { kit = "kit/serpent/spyder-sct", type = "replaces", replaces = "part/serpent/500121", source = "doc/serpent/spyder-sct-srx-2-rm-rtr-parts", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/serpent/spyder-srx2", type = "replaces", replaces = "part/serpent/500121", source = "doc/serpent/spyder-srx-2-mm-rtr-parts", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/spyder-srx2", type = "direct", source = "doc/serpent/spyder-srx-2-mm-rtr-parts", notes = "Also listed by doc/serpent/spyder-srx-2-mm-rtr-options; Same part in another material as part/serpent/500121 (link_upgrades.py)" },
+  { kit = "kit/serpent/spyder-sct", type = "direct", source = "doc/serpent/spyder-sct-srx-2-rm-rtr-parts", notes = "Also listed by doc/serpent/spyder-sct-srx-2-rm-rtr-options; Same part in another material as part/serpent/500121 (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser500236" },

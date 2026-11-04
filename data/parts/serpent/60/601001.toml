@@ -5,8 +5,7 @@ name = "Chassis alu SRX8 GT"
 seen_by = "2022-09-26"
 seen_by_source = "https://web.archive.org/web/20220926054000/https://oldmain.serpent.com/product/601001/"
 fits = [
-  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-tq-spares" },
-  { kit = "kit/serpent/srx8-gt", type = "replaces", replaces = "part/serpent/601241", source = "doc/serpent/srx8-gt-tq-spares", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/serpent/srx8-gt", type = "direct", source = "doc/serpent/srx8-gt-tq-spares", notes = "Same part in another material as part/serpent/601241 (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser601001" },
