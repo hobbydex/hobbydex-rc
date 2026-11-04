@@ -9,3 +9,9 @@ category = "misc"
 category_source = "fallback"
 documents = ["doc/schumacher/ft8-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/atom-2/alloy-lock-stop-pr-a2-icon-2-mi8-ft8-u7891" } ]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "direct", source = "doc/schumacher/ft8-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon-2", type = "direct", source = "doc/schumacher/icon2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi8", type = "direct", source = "doc/schumacher/mi8-exploded", notes = "Shown on the car's exploded diagram" },
+]

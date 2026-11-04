@@ -6,3 +6,7 @@ notes = "Named by its number only: the name on the scanned schumacher manual pag
 documents = ["doc/schumacher/bosscat-manual"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/schumacher/bosscat", type = "direct", source = "doc/schumacher/bosscat-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/wildcat", type = "direct", source = "doc/schumacher/wildcatexploded", notes = "Shown on the car's exploded diagram" },
+]

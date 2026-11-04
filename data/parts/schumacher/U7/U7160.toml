@@ -6,3 +6,7 @@ gtin = "5051294117061"
 category = "pin"
 documents = ["doc/schumacher/procatclassic-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/procat-classic/upper-pivot-pin-pr-cat-xls-pc-u7160" } ]
+fits = [
+  { kit = "kit/schumacher/cat-xls-masami", type = "direct", source = "doc/schumacher/cat-xls-masami-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/procat-classic", type = "direct", source = "doc/schumacher/procat-exploded", notes = "Shown on the car's exploded diagram" },
+]

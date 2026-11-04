@@ -2,6 +2,8 @@ id = "part/hpi/106191"
 brand = "brand/hpi"
 number = "106191"
 name = "BLACK CHROME"
+pack_qty = 2
+pack_qty_basis = "page"
 seen_by = "2013-10-31"
 seen_by_source = "https://web.archive.org/web/20131031184655/http://www.hpiracing.com/en/part/106191"
 notes = "Name read by OCR from a scanned hpi manual; verify before relying on exact wording"
@@ -11,3 +13,6 @@ category = "misc"
 category_source = "fallback"
 documents = ["doc/hpi/115873-vol03-rtr-blitz-short-course-060115", "doc/hpi/115887-vol02-blitz-flux-rtr-060315"]
 links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/106191" } ]
+fits = [
+  { kit = "kit/hpi/jumpshot-sc", type = "direct", source = "doc/hpi/part-pages" },
+]

@@ -6,3 +6,7 @@ seen_by = "2014-12-31"
 seen_by_source = "https://web.archive.org/web/20141231112249/http://www.racing-cars.com:80/pp/New_Cars_and_Parts/Mi5evo/U4331.html"
 category = "drivetrain"
 documents = ["doc/schumacher/ft8-manual"]
+fits = [
+  { kit = "kit/schumacher/mi6", type = "direct", source = "doc/schumacher/mi6-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6evo", type = "direct", source = "doc/schumacher/mi6evo-exploded", notes = "Shown on the car's exploded diagram" },
+]

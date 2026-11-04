@@ -6,3 +6,8 @@ seen_by = "2020-08-06"
 seen_by_source = "https://web.archive.org/web/20200806191620/https://www.racing-cars.com/alloy-wheel-hex-3-00-cougar-laydown-pr-u7648"
 category = "drivetrain"
 documents = ["doc/schumacher/ld2-manual"]
+fits = [
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-ld2", type = "direct", source = "doc/schumacher/ld2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

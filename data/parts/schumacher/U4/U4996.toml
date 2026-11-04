@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned schumacher manual; verify before relyin
 name_source = "ocr"
 documents = ["doc/schumacher/cougar-kc-manual"]
 category = "differential"
+fits = [
+  { kit = "kit/schumacher/cougar-kc", type = "direct", source = "doc/schumacher/cougar-kc-exploded", notes = "Shown on the car's exploded diagram" },
+]

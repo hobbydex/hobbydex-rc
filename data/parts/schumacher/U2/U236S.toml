@@ -9,3 +9,6 @@ category = "pinion"
 equivalent_to = [
   { spec = "spec/pinion/48dp-28t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
+fits = [
+  { kit = "kit/schumacher/bosscat", type = "direct", source = "doc/schumacher/bosscat-exploded", notes = "Shown on the car's exploded diagram" },
+]

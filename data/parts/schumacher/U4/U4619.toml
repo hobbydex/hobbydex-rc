@@ -8,3 +8,10 @@ gtin = "5051294091286"
 category = "steering"
 documents = ["doc/schumacher/storm-st-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/electric-truck/storm-st/alloy-centre-track-rod-v2-2wd-u4619" } ]
+fits = [
+  { kit = "kit/schumacher/cougar-kc", type = "direct", source = "doc/schumacher/cougar-kc-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-kd", type = "direct", source = "doc/schumacher/cougar-kd-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-kf2", type = "direct", source = "doc/schumacher/kf2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cougar-laydown", type = "direct", source = "doc/schumacher/cougar-laydown-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/storm-st", type = "direct", source = "doc/schumacher/storm-st-exploded", notes = "Shown on the car's exploded diagram" },
+]

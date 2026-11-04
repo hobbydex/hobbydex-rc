@@ -8,3 +8,7 @@ pack_qty = 10
 pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/schumacher/mi7-manual"]
+fits = [
+  { kit = "kit/schumacher/mi6", type = "direct", source = "doc/schumacher/mi6-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6evo", type = "direct", source = "doc/schumacher/mi6evo-exploded", notes = "Shown on the car's exploded diagram" },
+]

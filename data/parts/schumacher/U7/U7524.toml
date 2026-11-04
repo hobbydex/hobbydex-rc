@@ -12,3 +12,7 @@ material = "steel"
 equivalent_to = [
   { spec = "spec/pinion/48dp-24t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]
+fits = [
+  { kit = "kit/schumacher/cat-l1-evo", type = "direct", source = "doc/schumacher/cat-l1-evo-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/cat-l1", type = "direct", source = "doc/schumacher/cat-l1-exploded", notes = "Shown on the car's exploded diagram" },
+]

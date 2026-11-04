@@ -10,3 +10,7 @@ pack_qty_basis = "name"
 category = "ball-end"
 documents = ["doc/schumacher/atom2-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-4/ball-grippa-sockets-pro-pk8-u4254" } ]
+fits = [
+  { kit = "kit/schumacher/atom-2", type = "direct", source = "doc/schumacher/atom2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/eclipse-3", type = "direct", source = "doc/schumacher/eclipse3-exploded", notes = "Shown on the car's exploded diagram" },
+]

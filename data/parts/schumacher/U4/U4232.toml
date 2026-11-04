@@ -13,3 +13,7 @@ category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+fits = [
+  { kit = "kit/schumacher/mi6", type = "direct", source = "doc/schumacher/mi6-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6evo", type = "direct", source = "doc/schumacher/mi6evo-exploded", notes = "Shown on the car's exploded diagram" },
+]

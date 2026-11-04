@@ -8,3 +8,7 @@ gtin = "5051294151980"
 category = "washer-shim"
 documents = ["doc/schumacher/icon-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/f1/icon-2-worlds/c-f-ride-height-spacers-icon-2-x4-pcs-u8077" } ]
+fits = [
+  { kit = "kit/schumacher/icon-2", type = "direct", source = "doc/schumacher/icon2-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/icon", type = "direct", source = "doc/schumacher/icon-exploded", notes = "Shown on the car's exploded diagram" },
+]

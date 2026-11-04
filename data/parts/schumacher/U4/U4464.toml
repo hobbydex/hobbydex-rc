@@ -9,3 +9,6 @@ name_source = "ocr"
 documents = ["doc/schumacher/cat-k1-aero-manual"]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/kf-exploded", notes = "Shown on the car's exploded diagram" },
+]

@@ -11,3 +11,7 @@ category = "ball-end"
 documents = ["doc/schumacher/procatclassic-manual"]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-4wd-buggy/procat-classic/anti-roll-bar-ball-4pcs-cat-xls-u7262" } ]
 ball_type = "set-screw"
+fits = [
+  { kit = "kit/schumacher/cat-xls-masami", type = "direct", source = "doc/schumacher/cat-xls-masami-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/procat-classic", type = "direct", source = "doc/schumacher/procat-exploded", notes = "Shown on the car's exploded diagram" },
+]

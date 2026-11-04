@@ -2,6 +2,8 @@ id = "part/hpi/4630"
 brand = "brand/hpi"
 number = "4630"
 name = "RED/MEDIUM SOFT"
+pack_qty = 2
+pack_qty_basis = "page"
 seen_by = "2014-07-26"
 seen_by_source = "https://web.archive.org/web/20140726075936/http://www.hpiracing.com/en/part/4630"
 notes = "Name read by OCR from a scanned hpi manual; verify before relying on exact wording"
@@ -11,3 +13,7 @@ category = "misc"
 category_source = "fallback"
 documents = ["doc/hpi/115893-vol03-nitro-rs4-3-drift-rtr-060215", "doc/hpi/117102-vol01-rs4-sport-3-rtr-011820147", "doc/hpi/117103-vol01-rs4-sport-3-flux-rtr-011820147", "doc/hpi/117240-vol01-rtr-e10-drift-06122017", "doc/hpi/117426-vol01-rtr-e10-touring-191018", "doc/hpi/120235-rs4-sport-3-creator-edition-130918", "doc/hpi/12026-sprint-2-sport-glb-m-v1"]
 links = [ { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/4630" } ]
+fits = [
+  { kit = "kit/hpi/e10", type = "direct", source = "doc/hpi/part-pages" },
+  { kit = "kit/hpi/rs4-sport-3", type = "direct", source = "doc/hpi/part-pages" },
+]

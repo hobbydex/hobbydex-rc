@@ -6,8 +6,8 @@ pack_qty = 2
 pack_qty_basis = "name"
 color = "blue"
 fits = [
-  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/gpm/store" },
-  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/gpm/store" },
+  { kit = "kit/traxxas/e-revo", type = "replaces", source = "doc/gpm/store", replaces = "part/traxxas/8631" },
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/gpm/store", replaces = "part/traxxas/8631" },
 ]
 links = [
   { site = "GPM Racing", url = "https://www.gpm-racing.com/gpm-racing-er2054-b-gpm-blue-aluminium-e-revo-vxl-2-0-front-upper-suspension-arms-2pcs-w-hardware/" },

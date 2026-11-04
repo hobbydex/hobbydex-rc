@@ -10,3 +10,7 @@ color = "black"
 category = "misc"
 category_source = "fallback"
 documents = ["doc/schumacher/top-cat-manual"]
+fits = [
+  { kit = "kit/schumacher/cat-xls-masami", type = "direct", source = "doc/schumacher/cat-xls-masami-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/top-cat", type = "direct", source = "doc/schumacher/topcat-explode", notes = "Shown on the car's exploded diagram" },
+]
