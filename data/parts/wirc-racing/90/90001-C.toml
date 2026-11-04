@@ -1,0 +1,16 @@
+id = "part/wirc-racing/90001-C"
+brand = "brand/wirc-racing"
+number = "90001-C"
+name = "CERAMIC BEARINGS 6X10X3 (F26, GT, LM, RTX, SBX, ST8)"
+links = [
+  { site = "WIRC Racing", url = "https://wircracing.com/products/ceramic-bearings-6x10x3" },
+]
+fits = [
+  { kit = "kit/wirc-racing/f26", type = "direct", notes = "Named for the F26 in the store title" },
+  { kit = "kit/wirc-racing/st8", type = "direct", notes = "Named for the ST8 in the store title" },
+]
+category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

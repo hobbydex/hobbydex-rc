@@ -1,0 +1,18 @@
+id = "part/wirc-racing/240-024"
+brand = "brand/wirc-racing"
+number = "240-024"
+name = "7.4V 350MAH LIPO BATTERY SET (FOR SB24)"
+links = [
+  { site = "WIRC Racing", url = "https://wircracing.com/products/240-024" },
+]
+fits = [
+  { kit = "kit/wirc-racing/sb24", type = "replaces", notes = "Named for the SB24 in the store title" },
+]
+category = "battery"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-350mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+capacity_mah = 350
+voltage = 7.4
