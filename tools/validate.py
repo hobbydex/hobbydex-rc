@@ -43,7 +43,7 @@ LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": "", "kits"
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
 VEHICLE_MAKES = {
     "Abarth", "Acura", "Alfa Romeo", "Alpine", "Aston Martin", "Audi", "BMW", "Bentley", "Bugatti", "Buggyra", "Buick", "Cadillac",
-    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Ferrari", "Fiat", "Ford",
+    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Fendt", "Ferrari", "Fiat", "Ford",
     "Freightliner", "GMC", "Hino", "Honda", "Hummer", "Hyundai", "International", "Isuzu", "Iveco", "Jaguar", "Jeep", "KTM",
     "Kawasaki", "Kenworth", "Komatsu", "Lamborghini", "Lancia", "Land Rover", "Lexus", "Liebherr", "Lotus", "MAN", "Mack",
     "Maserati", "Mazda", "McLaren", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Opel", "Pagani", "Peterbilt", "Peugeot",
