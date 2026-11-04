@@ -60,3 +60,20 @@ if __name__ == "__main__":
         if name.startswith("test_"):
             fn()
     print("ok")
+
+
+def test_rebrand_of_makes_a_pair_shared():
+    a = part("part/cross-rc/3", "brand/cross-rc")
+    b = part("part/hobao/3", "brand/hobao")
+    a["rebrand_of"] = [{"part": "part/hobao/3", "certainty": "likely", "notes": "same number and name"}]
+    assert audit.twin_class(a, b, BRANDS, COMPANIES, {}) == "shared"
+    assert audit.twin_class(b, a, BRANDS, COMPANIES, {}) == "shared"
+
+
+def test_different_measures_make_two_products():
+    a = part("part/cross-rc/4", "brand/cross-rc")
+    b = part("part/hobao/4", "brand/hobao")
+    a["power_w"], b["power_w"] = 650, 1000
+    assert audit.twin_class(a, b, BRANDS, COMPANIES, {}) == "shared"
+    b["power_w"] = 650
+    assert audit.twin_class(a, b, BRANDS, COMPANIES, {}) == "unclear"

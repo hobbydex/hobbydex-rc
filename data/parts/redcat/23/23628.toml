@@ -9,3 +9,6 @@ documents = ["doc/redcat/volcano-18-manual"]
 equivalent_to = [
   { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
+rebrand_of = [
+  { part = "part/himoto/23628", certainty = "likely", notes = "Same number and name in Redcat's store and Himoto's parts list; Redcat's HSP-platform cars share Himoto's parts" },
+]

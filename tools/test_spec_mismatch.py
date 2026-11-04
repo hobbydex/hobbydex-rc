@@ -71,3 +71,10 @@ if __name__ == "__main__":
         if name.startswith("test_") and callable(fn):
             fn()
             print("ok", name)
+
+
+def test_include_the_name_names_is_not_flagged():
+    p = part("Tracer Metal Front Cva Shafts, Pins & M4 Nuts", "pin", includes=[dict(spec="spec/nut/m4-hex", notes="Size from the name")])
+    assert audit.spec_mismatches([p]) == []
+    p = part("Tracer Metal Front Cva Shafts & Pins", "pin", includes=[dict(spec="spec/nut/m4-hex", notes="Size from the name")])
+    assert len(audit.spec_mismatches([p])) == 1
