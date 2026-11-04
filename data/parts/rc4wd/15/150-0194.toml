@@ -4,3 +4,6 @@ number = "150-0194"
 name = "M3 x 12mm Set Screw"
 category = "screw"
 documents = ["doc/rc4wd/z-k0069manual-v8", "doc/rc4wd/z-k0070manual-v18"]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

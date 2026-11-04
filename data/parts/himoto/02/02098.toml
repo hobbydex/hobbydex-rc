@@ -20,3 +20,6 @@ fits = [
   { kit = "kit/himoto/taipan-xrs", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/viper-xst", type = "direct", source = "doc/himoto/option-parts" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x4-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

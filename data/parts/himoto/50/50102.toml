@@ -8,3 +8,6 @@ documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/megap-mtc-5", type = "direct", source = "doc/himoto/option-parts" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m4x12-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
