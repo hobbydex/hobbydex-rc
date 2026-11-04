@@ -10,4 +10,7 @@ related = [
   { part = "part/tekno/TKR7222", relation = "use-with", notes = "link_part_refs" },
 ]
 documents = ["doc/tekno/et410-2-manual", "doc/tekno/sct410sl-manual-rev3"]
+fits = [
+  { kit = "kit/tekno/et410", type = "family", source = "doc/tekno/et410-2-manual", notes = "The part names only the et410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-differential-ring-gear-40t-use-with-7222-et410/TKR7221.html" } ]

@@ -9,4 +9,7 @@ category = "chassis"
 material = "aluminium"
 material_grade = "7075"
 documents = ["doc/tekno/mt410-2-0-manual"]
+fits = [
+  { kit = "kit/tekno/mt410", type = "family", source = "doc/tekno/mt410-2-0-manual", notes = "The part names only the mt410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr9511-motor-mount-cnc-7075-mt410-2-0/" } ]

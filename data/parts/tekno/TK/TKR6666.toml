@@ -8,4 +8,7 @@ gtin = "810020550979"
 category = "suspension"
 material = "aluminium"
 documents = ["doc/tekno/eb410-2-manual", "doc/tekno/et410-2-manual", "doc/tekno/sct410sl-manual-rev3"]
+fits = [
+  { kit = "kit/tekno/eb410-2", type = "family", source = "doc/tekno/eb410-2-manual", notes = "The part names only the eb410.2 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr6666-rear-camber-link-plate-aluminum-eb410-2/" } ]

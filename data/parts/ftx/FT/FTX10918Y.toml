@@ -6,6 +6,9 @@ notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 range = "ftx/ftx10918-colours"
 color = "gray"
 documents = ["doc/ftx/cml-trooper-manual"]
+fits = [
+  { kit = "kit/ftx/trooper", type = "family", source = "doc/ftx/cml-trooper-manual", notes = "The part names only the trooper family (link_car_kits.py)" },
+]
 category = "body"
 former_names = ["GREY"]
 name_source = "manufacturer"

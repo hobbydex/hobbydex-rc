@@ -7,4 +7,7 @@ seen_by_source = "https://web.archive.org/web/20231001181822/https://www.racing-
 gtin = "5051294156503"
 category = "chassis"
 documents = ["doc/schumacher/ft8-manual"]
+fits = [
+  { kit = "kit/schumacher/ft8", type = "family", source = "doc/schumacher/ft8-manual", notes = "The part names only the ft8 family (link_car_kits.py)" },
+]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/ft8/longitudinal-stiffening-post-ft8-u8529" } ]

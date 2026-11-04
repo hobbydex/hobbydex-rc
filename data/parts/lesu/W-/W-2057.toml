@@ -5,6 +5,9 @@ name = "1/14 semi-trailer W-2057 metal aluminum alloy CNC production"
 category = "chassis"
 category_source = "curated"
 documents = ["doc/lesu/rclesu-products"]
+fits = [
+  { kit = "kit/lesu/semi-trailer-20-40-feet", type = "family", source = "doc/lesu/rclesu-products", notes = "The part names only the semi-trailer family (link_car_kits.py)" },
+]
 links = [
   { site = "LESU", url = "https://www.rclesu.com/index.php?c=content&a=show&id=1152" },
 ]

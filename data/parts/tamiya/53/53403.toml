@@ -8,6 +8,9 @@ notes = "Name read from the text of Tamiya's German-shop parts list (vector PDF)
 name_source = "manual"
 category = "chassis"
 documents = ["doc/tamiya/57789-ersatzteilliste"]
+fits = [
+  { kit = "kit/tamiya/tb-01", type = "family", source = "doc/tamiya/57789-ersatzteilliste", notes = "The part names only the tb-01 family (link_car_kits.py)" },
+]
 links = [
   { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20160809164554/http://www.tamiyausa.com/product/item.php?product-id=53403", kind = "archive", gone = "2026-11-03" },
 ]

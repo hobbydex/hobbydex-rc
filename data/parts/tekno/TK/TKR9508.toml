@@ -9,6 +9,9 @@ gtin = "810020553482"
 category = "chassis"
 color = "black"
 documents = ["doc/tekno/sct410-2-0-manual-rev02"]
+fits = [
+  { kit = "kit/tekno/sct410", type = "family", source = "doc/tekno/sct410-2-0-manual-rev02", notes = "The part names only the sct410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr9508-chassis-4mm-black-ano-sct410-2-0/" } ]
 scale = "1/10"
 material = "aluminium"

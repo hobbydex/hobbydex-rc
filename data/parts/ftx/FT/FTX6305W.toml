@@ -8,6 +8,9 @@ notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 category = "wheel"
 position = "front"
 documents = ["doc/ftx/cml-vantage-2-manual"]
+fits = [
+  { kit = "kit/ftx/vantage", type = "family", source = "doc/ftx/cml-vantage-2-manual", notes = "The part names only the vantage family (link_car_kits.py)" },
+]
 former_names = ["Front Rim (pr)"]
 name_source = "manufacturer"
 links = [

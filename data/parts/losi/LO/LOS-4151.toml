@@ -5,3 +5,6 @@ name = "Center Diff Mount Set: 5IVE-T 3.0"
 notes = "Named from a Losi document's parts table (LOS05025_MANUAL_EN.pdf); no listing names it"
 category = "chassis"
 documents = ["doc/losi/los05025-exploded-view"]
+fits = [
+  { kit = "kit/losi/5ive-t", type = "family", source = "doc/losi/los05025-exploded-view", notes = "The part names only the 5ive-t family (link_car_kits.py)" },
+]

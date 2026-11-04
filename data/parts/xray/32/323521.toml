@@ -9,3 +9,6 @@ links = [
 ]
 category = "wing"
 documents = ["doc/xray/xt2-2021-part-list", "doc/xray/xt2-2023-part-list", "doc/xray/xt2-2024-part-list", "doc/xray/xt2-2028-part-list"]
+fits = [
+  { kit = "kit/xray/xt2", type = "family", source = "doc/xray/xt2-2021-part-list", notes = "The part names only the xt2 family (link_car_kits.py)" },
+]

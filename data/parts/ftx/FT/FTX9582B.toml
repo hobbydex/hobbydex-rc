@@ -9,6 +9,9 @@ range = "ftx/ftx9582-colours"
 pack_qty = 2
 pack_qty_basis = "manual"
 documents = ["doc/ftx/cml-dr8-manual"]
+fits = [
+  { kit = "kit/ftx/dr8", type = "family", source = "doc/ftx/cml-dr8-manual", notes = "The part names only the dr8 family (link_car_kits.py)" },
+]
 former_names = ["Tyre (set blue)"]
 name_source = "manufacturer"
 links = [

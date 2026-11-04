@@ -14,3 +14,6 @@ includes = [
   { spec = "spec/bearing/5x12x4", notes = "Size from the name; the count is not stated" },
 ]
 documents = ["doc/xray/xb8-2014-part-list", "doc/xray/xb8-2015-part-list"]
+fits = [
+  { kit = "kit/xray/xb808", type = "family", source = "doc/xray/xb8-2014-part-list", notes = "The part names only the xb808 family (link_car_kits.py)" },
+]

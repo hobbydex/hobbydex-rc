@@ -6,3 +6,6 @@ former_names = ["BODY FOR 1/8 OFF ROAD BUGGY"]
 category = "body"
 scale = "1/8"
 documents = ["doc/xray/xb8-2015-part-list", "doc/xray/xb8-2016-part-list", "doc/xray/xb8-2017-part-list"]
+fits = [
+  { kit = "kit/xray/xb9", type = "family", source = "doc/xray/xb8-2015-part-list", notes = "The part names only the xb9 family (link_car_kits.py)" },
+]

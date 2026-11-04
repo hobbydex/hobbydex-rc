@@ -3,6 +3,9 @@ brand = "brand/pr-racing"
 number = "02540012"
 name = "PR SCT10 Front / Rear Shock Spring-Yellow 0.075kg/mm"
 documents = ["doc/pr-racing/pr-rc-com"]
+fits = [
+  { kit = "kit/pr-racing/sct10", type = "family", source = "doc/pr-racing/pr-rc-com", notes = "The part names only the sct10 family (link_car_kits.py)" },
+]
 category = "shock-spring"
 color = "yellow"
 links = [ { site = "PR Racing", url = "https://www.pr-rc.com/pdt_view.asp?sn=3484" } ]

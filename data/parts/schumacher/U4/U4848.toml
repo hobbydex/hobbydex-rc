@@ -7,5 +7,10 @@ seen_by = "2019-10-08"
 seen_by_source = "https://www.racing-cars.com/sitemap_0.xml"
 category = "suspension"
 documents = ["doc/schumacher/atom-exploded"]
+fits = [
+  { kit = "kit/schumacher/atom-2", type = "family", source = "doc/schumacher/atom-exploded", notes = "The part names only the atom family (link_car_kits.py)" },
+  { kit = "kit/schumacher/atom-3", type = "family", source = "doc/schumacher/atom-exploded", notes = "The part names only the atom family (link_car_kits.py)" },
+  { kit = "kit/schumacher/atom", type = "family", source = "doc/schumacher/atom-exploded", notes = "The part names only the atom family (link_car_kits.py)" },
+]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/gt12/atom/pod-pivot-atom-u4848" } ]
 name_source = "manufacturer"

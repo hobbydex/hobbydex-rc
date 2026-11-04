@@ -8,4 +8,7 @@ gtin = "791512784754"
 category = "chassis"
 material = "carbon"
 documents = ["doc/vanquish/vps09015-vrd-carbon-manual", "doc/vanquish/vps09016-manual"]
+fits = [
+  { kit = "kit/vanquish/vrd", type = "family", source = "doc/vanquish/vps09015-vrd-carbon-manual", notes = "The part names only the vrd family (link_car_kits.py)" },
+]
 links = [ { site = "Vanquish", url = "https://vanquishproducts.com/products/vrd-s23-carbon-fiber-chassis-rails" } ]

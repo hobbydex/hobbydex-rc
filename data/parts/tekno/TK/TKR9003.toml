@@ -7,6 +7,9 @@ seen_by = "2022-09-29"
 seen_by_source = "https://web.archive.org/web/20220929182258/https://www.teknorc.com/shop/tkr9003-eb48-2-1-1-8th-4wd-competition-electric-buggy-kit/"
 gtin = "810020552799"
 documents = ["doc/tekno/eb48-2-2-manual"]
+fits = [
+  { kit = "kit/tekno/eb48", type = "family", source = "doc/tekno/eb48-2-2-manual", notes = "The part names only the eb48 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr9003-eb48-2-1-1-8th-4wd-competition-electric-buggy-kit/" } ]
 category = "misc"
 category_source = "fallback"

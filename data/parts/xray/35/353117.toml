@@ -7,4 +7,7 @@ seen_by_source = "doc/xray/xb8-2014-part-list"
 category = "suspension"
 material = "plastic"
 documents = ["doc/xray/xb8-2014-manual", "doc/xray/xb8-2015-manual", "doc/xray/xb8e-2015-manual", "doc/xray/xb8-2014-part-list", "doc/xray/xb8-2015-part-list", "doc/xray/xb8e-2015-part-list"]
+fits = [
+  { kit = "kit/xray/xb8", type = "family", source = "doc/xray/xb8-2014-manual", notes = "The part names only the xb8 family (link_car_kits.py)" },
+]
 former_names = ["XB8 COMPOSITE REAR LOWER SUSPENSION ARM"]

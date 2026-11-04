@@ -8,5 +8,8 @@ links = [
 category = "suspension"
 material = "plastic"
 documents = ["doc/xray/xt2-2028-part-list"]
+fits = [
+  { kit = "kit/xray/xt2", type = "family", source = "doc/xray/xt2-2028-part-list", notes = "The part names only the xt2 family (link_car_kits.py)" },
+]
 released = "2026-08-05"
 released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=10093"

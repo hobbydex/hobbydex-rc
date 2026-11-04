@@ -12,4 +12,7 @@ category = "shock"
 shock_part = "body"
 material = "aluminium"
 documents = ["doc/tekno/eb410-2-manual"]
+fits = [
+  { kit = "kit/tekno/eb410", type = "family", source = "doc/tekno/eb410-2-manual", notes = "The part names only the eb410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr6710-shock-body-front-aluminum-hard-ano-eb410-2pcs/" } ]

@@ -5,6 +5,9 @@ name = "AMZ Lexan body LTC type [Light Weight] (98mm WB)"
 seen_by = "2015-07-23"
 seen_by_source = "https://web.archive.org/web/20150723185853/http://www.rcatomic.com/atomic/images/atomic/AMZ-OP011-LTC_l.jpg"
 documents = ["doc/atomic-rc/site"]
+fits = [
+  { kit = "kit/atomic-rc/amz", type = "family", source = "doc/atomic-rc/site", notes = "The part names only the amz family (link_car_kits.py)" },
+]
 links = [
   { site = "Atomic R/C", url = "https://www.rcatomic.com/atomic/index.php?main_page=product_info&products_id=5786" },
 ]

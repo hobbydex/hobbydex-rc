@@ -5,6 +5,9 @@ name = "Fury 2.0 Transmission Gear Hardware Set"
 notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 category = "gear"
 documents = ["doc/ftx/cml-outback-fury-2-manual"]
+fits = [
+  { kit = "kit/ftx/fury-3", type = "family", source = "doc/ftx/cml-outback-fury-2-manual", notes = "The part names only the fury family (link_car_kits.py)" },
+]
 former_names = ["Gear Shaft Set"]
 name_source = "manufacturer"
 links = [

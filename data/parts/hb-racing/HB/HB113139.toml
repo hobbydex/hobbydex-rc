@@ -10,3 +10,6 @@ shock_part = "shaft"
 shaft_mm = 3
 length_mm = 88
 documents = ["doc/hb-racing/d216-instruction-manual", "doc/hb-racing/d413-instruction-manual"]
+fits = [
+  { kit = "kit/hb-racing/d413", type = "family", source = "doc/hb-racing/d216-instruction-manual", notes = "The part names only the d413 family (link_car_kits.py)" },
+]

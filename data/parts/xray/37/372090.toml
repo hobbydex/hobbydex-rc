@@ -11,3 +11,6 @@ former_names = ["X12'21/22 FRONT BRACE - GRAPHITE 2.0MM", "X12'21/22/23 FRONT BR
 category = "chassis"
 material = "carbon"
 documents = ["doc/xray/x12-2021-part-list", "doc/xray/x12-2022-part-list", "doc/xray/x12-2023-part-list"]
+fits = [
+  { kit = "kit/xray/x12", type = "family", source = "doc/xray/x12-2021-part-list", notes = "The part names only the x12 family (link_car_kits.py)" },
+]

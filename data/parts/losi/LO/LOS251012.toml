@@ -6,3 +6,6 @@ seen_by = "2013-11"
 seen_by_source = "doc/losi/los05001-manual"
 category = "chassis"
 documents = ["doc/losi/los05001-manual", "doc/losi/los05009-manual-multi", "doc/losi/los05012-manual-en"]
+fits = [
+  { kit = "kit/losi/dbxl", type = "family", source = "doc/losi/los05001-manual", notes = "The part names only the dbxl family (link_car_kits.py)" },
+]

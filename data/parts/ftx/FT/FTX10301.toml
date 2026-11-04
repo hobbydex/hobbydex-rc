@@ -5,6 +5,9 @@ name = "Tracker CVD Drive Shaft"
 notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 category = "drivetrain"
 documents = ["doc/ftx/cml-tracker-manual"]
+fits = [
+  { kit = "kit/ftx/tracker", type = "family", source = "doc/ftx/cml-tracker-manual", notes = "The part names only the tracker family (link_car_kits.py)" },
+]
 name_source = "manufacturer"
 links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-tracker-cvd-drive-shaft" },

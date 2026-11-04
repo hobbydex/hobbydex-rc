@@ -5,3 +5,6 @@ name = "XB9E COMPOSITE BATTERY PLATE"
 category = "chassis"
 material = "plastic"
 documents = ["doc/xray/xb8e-2015-manual", "doc/xray/xb8e-2015-part-list"]
+fits = [
+  { kit = "kit/xray/xb9e", type = "family", source = "doc/xray/xb8e-2015-manual", notes = "The part names only the xb9e family (link_car_kits.py)" },
+]

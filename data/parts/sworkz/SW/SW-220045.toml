@@ -4,3 +4,6 @@ number = "SW-220045"
 name = "S12-2 Gear Box Inserts"
 category = "gear"
 documents = ["doc/sworkz/s12-2c-manual", "doc/sworkz/s12-2d-spare-parts"]
+fits = [
+  { kit = "kit/sworkz/s12-2", type = "family", source = "doc/sworkz/s12-2c-manual", notes = "The part names only the s12-2 family (link_car_kits.py)" },
+]

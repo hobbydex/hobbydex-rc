@@ -7,6 +7,9 @@ category = "steering"
 material = "aluminium"
 spline_teeth = 25
 documents = ["doc/ftx/cml-dr8-manual"]
+fits = [
+  { kit = "kit/ftx/dr8", type = "family", source = "doc/ftx/cml-dr8-manual", notes = "The part names only the dr8 family (link_car_kits.py)" },
+]
 former_names = ["Aluminum servo horn 25T"]
 name_source = "manufacturer"
 links = [

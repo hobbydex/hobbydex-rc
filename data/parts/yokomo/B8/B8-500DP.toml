@@ -12,3 +12,6 @@ category = "drivetrain"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
 color = "white"
 documents = ["doc/yokomo/yd-2rx-manual", "doc/yokomo/yd-2zs-manual"]
+fits = [
+  { kit = "kit/yokomo/bd8", type = "family", source = "doc/yokomo/yd-2rx-manual", notes = "The part names only the bd8 family (link_car_kits.py)" },
+]

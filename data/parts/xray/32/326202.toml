@@ -11,3 +11,6 @@ former_names = ["ALU SERVO HOLDERS & CARBON BRIDGE"]
 category = "chassis"
 material = "aluminium"
 documents = ["doc/xray/xb2-2026-part-list", "doc/xray/xt2-2024-part-list", "doc/xray/xt2-2028-part-list"]
+fits = [
+  { kit = "kit/xray/xb2", type = "family", source = "doc/xray/xb2-2026-part-list", notes = "The part names only the xb2 family (link_car_kits.py)" },
+]
