@@ -3,4 +3,7 @@ brand = "brand/xray"
 number = "371106"
 name = "X12'16 CHASSIS - 2.5MM GRAPHITE"
 documents = ["doc/xray/x12-2016-part-list"]
+fits = [
+  { kit = "kit/xray/x12", type = "family", source = "doc/xray/x12-2016-part-list", notes = "The part names only the x12 family (link_car_kits.py)" },
+]
 category = "chassis"

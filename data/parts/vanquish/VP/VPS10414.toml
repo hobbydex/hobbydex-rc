@@ -7,4 +7,7 @@ seen_by_source = "https://vanquishproducts.com/products/vrd-shock-spacers"
 gtin = "791512786901"
 category = "washer-shim"
 documents = ["doc/vanquish/vps09015-vrd-carbon-manual", "doc/vanquish/vps09016-manual", "doc/vanquish/vps09022-manual"]
+fits = [
+  { kit = "kit/vanquish/vrd", type = "family", source = "doc/vanquish/vps09015-vrd-carbon-manual", notes = "The part names only the vrd family (link_car_kits.py)" },
+]
 links = [ { site = "Vanquish", url = "https://vanquishproducts.com/products/vrd-shock-spacers" } ]

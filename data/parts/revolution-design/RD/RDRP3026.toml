@@ -9,6 +9,9 @@ pack_qty_basis = "name"
 category = "bearing"
 gtin = "4052133015310"
 documents = ["doc/revolution-design/store"]
+fits = [
+  { kit = "kit/element-rc/enduro", type = "family", source = "doc/revolution-design/store", notes = "The part names only the enduro family (link_car_kits.py)" },
+]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Revolution-Design-Ultra-Bearing-Set-Element-RC-Enduro-24pcs_1" },
 ]

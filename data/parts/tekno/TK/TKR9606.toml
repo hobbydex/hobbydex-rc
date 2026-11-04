@@ -9,4 +9,7 @@ category = "chassis"
 material = "aluminium"
 material_grade = "7075"
 documents = ["doc/tekno/et48-2-2-manual-rev06"]
+fits = [
+  { kit = "kit/tekno/et48", type = "family", source = "doc/tekno/et48-2-2-manual-rev06", notes = "The part names only the et48 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr9606-chassis-7075-hard-anodized-et48-2-2/" } ]

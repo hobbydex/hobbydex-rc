@@ -2,7 +2,12 @@ id = "part/team-associated/31345"
 brand = "brand/team-associated"
 number = "31345"
 name = "TC6 gear diff sun gear"
+gtin = "784695313453"
 seen_by = "2012-06-22"
 seen_by_source = "https://web.archive.org/web/20120622021534/http://www.teamassociated.com/parts/details/31345/"
 category = "differential"
 documents = ["doc/team-associated/manual-30120-tc7"]
+fits = [
+  { kit = "kit/team-associated/tc6", type = "family", source = "doc/team-associated/manual-30120-tc7", notes = "The part names only the tc6 family (link_car_kits.py)" },
+]
+links = [ { site = "Associated Electrics", url = "https://www.teamassociated.com/parts/details/31345/" } ]

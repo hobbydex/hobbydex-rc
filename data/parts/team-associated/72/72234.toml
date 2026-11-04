@@ -5,6 +5,9 @@ name = "DC10 RTR Drift Tire"
 category = "tire"
 vehicle = "drift"
 documents = ["doc/team-associated/dc10-drift-rtr-manual-11-14-2024"]
+fits = [
+  { kit = "kit/team-associated/dc10", type = "family", source = "doc/team-associated/dc10-drift-rtr-manual-11-14-2024", notes = "The part names only the dc10 family (link_car_kits.py)" },
+]
 gtin = "784695722347"
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-DC10-RTR-WHEELS-AND-TIRES-SILVER_1", kind = "dealer" },

@@ -8,3 +8,6 @@ links = [
 category = "chassis"
 material = "aluminium"
 documents = ["doc/xray/scx-2021-part-list", "doc/xray/scx-2023-part-list"]
+fits = [
+  { kit = "kit/xray/scx", type = "family", source = "doc/xray/scx-2021-part-list", notes = "The part names only the scx family (link_car_kits.py)" },
+]

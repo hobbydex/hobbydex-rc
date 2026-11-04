@@ -8,6 +8,9 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "differential"
 documents = ["doc/tamiya/58404-anleitung-db-01"]
+fits = [
+  { kit = "kit/tamiya/db01", type = "family", source = "doc/tamiya/58404-anleitung-db-01", notes = "The part names only the db01 family (link_car_kits.py)" },
+]
 links = [
   { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20120906070107/http://www.tamiyausa.com/product/item.php?product-id=54033", kind = "archive", gone = "2026-11-01" },
 ]

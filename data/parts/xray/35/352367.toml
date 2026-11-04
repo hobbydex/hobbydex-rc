@@ -11,3 +11,6 @@ former_names = ["XB8 CARBON STEERING PLATE - 2 DOTS (L+R)"]
 category = "steering"
 material = "carbon"
 documents = ["doc/xray/xb8-2025-part-list", "doc/xray/xb8-2026-part-list", "doc/xray/xb8e-2025-part-list", "doc/xray/xb8e-2026-part-list"]
+fits = [
+  { kit = "kit/xray/xb8", type = "family", source = "doc/xray/xb8-2025-part-list", notes = "The part names only the xb8 family (link_car_kits.py)" },
+]

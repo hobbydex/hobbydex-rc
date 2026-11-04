@@ -7,3 +7,6 @@ pack_qty_basis = "manual"
 category = "washer-shim"
 material = "carbon"
 documents = ["doc/xray/x10-2018-manual", "doc/xray/x10-2022-manual", "doc/xray/x10-2015-part-list", "doc/xray/x10-2018-part-list", "doc/xray/x10-2022-part-list", "doc/xray/x10-2016-part-list"]
+fits = [
+  { kit = "kit/xray/x10", type = "family", source = "doc/xray/x10-2018-manual", notes = "The part names only the x10 family (link_car_kits.py)" },
+]

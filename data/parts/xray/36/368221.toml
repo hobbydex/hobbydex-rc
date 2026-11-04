@@ -9,3 +9,6 @@ category = "shock"
 shock_part = "body"
 material = "aluminium"
 documents = ["doc/xray/xt2-2021-part-list", "doc/xray/xt2-2023-part-list", "doc/xray/scx-2021-manual", "doc/xray/scx-2021-part-list", "doc/xray/scx-2023-part-list", "doc/xray/xt2-2017-part-list", "doc/xray/xt2-2018-part-list", "doc/xray/xt4-2023-part-list"]
+fits = [
+  { kit = "kit/xray/xt2", type = "family", source = "doc/xray/xt2-2021-part-list", notes = "The part names only the xt2 family (link_car_kits.py)" },
+]

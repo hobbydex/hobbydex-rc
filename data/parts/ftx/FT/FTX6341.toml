@@ -7,6 +7,9 @@ pack_qty_basis = "manual"
 notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 category = "body"
 documents = ["doc/ftx/cml-carnage-nt-manual-parts"]
+fits = [
+  { kit = "kit/ftx/carnage", type = "family", source = "doc/ftx/cml-carnage-nt-manual-parts", notes = "The part names only the carnage family (link_car_kits.py)" },
+]
 name_source = "manufacturer"
 links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-carnage-st-printed-body-blue" },

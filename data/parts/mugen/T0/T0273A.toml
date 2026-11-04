@@ -4,6 +4,9 @@ number = "T0273A"
 name = "DRIVE SHAFT FROM T0274 MTX-4"
 category = "drivetrain"
 documents = ["doc/mugen/mtx7-part-list-ja", "doc/mugen/mtx7r-part-list-ja"]
+fits = [
+  { kit = "kit/mugen/mtx4", type = "family", source = "doc/mugen/mtx7-part-list-ja", notes = "The part names only the mtx-4 family (link_car_kits.py)" },
+]
 name_source = "manufacturer"
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/ANTRIEBSWELLEN-AUS-T0274-MTX-4/T0273a" },

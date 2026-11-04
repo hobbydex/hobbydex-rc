@@ -9,6 +9,9 @@ notes = "Name from the Vaterra manual's parts list"
 category = "bumper-guard"
 documents = ["doc/vaterra/vtr03090-exploded-view", "doc/vaterra/vtr03093-manual-en", "doc/vaterra/vtr03094-manual-en"]
 
+fits = [
+  { kit = "kit/vaterra/ascender", type = "family", source = "doc/vaterra/vtr03090-exploded-view", notes = "The part names only the ascender family (link_car_kits.py)" },
+]
 links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20210923182141/https://www.horizonhobby.com/product/roll-cage-set-with-aluminum-panels-290mm-ascender/VTR230055.html", kind = "archive" },
 ]

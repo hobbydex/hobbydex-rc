@@ -4,3 +4,6 @@ number = "U9064"
 name = "C/F Longitudinal Stiffness Brace - FT9"
 category = "chassis"
 documents = ["doc/schumacher/ft9-manual"]
+fits = [
+  { kit = "kit/schumacher/ft9", type = "family", source = "doc/schumacher/ft9-manual", notes = "The part names only the ft9 family (link_car_kits.py)" },
+]

@@ -4,6 +4,9 @@ number = "7119"
 name = "ASSOCIATED PROLITE 4x4 FRONT BUMPER"
 numbers = ["AS7119"]
 documents = ["doc/team-associated/cml-distribution-spares"]
+fits = [
+  { kit = "kit/team-associated/prolite-4x4", type = "family", source = "doc/team-associated/cml-distribution-spares", notes = "The part names only the prolite family (link_car_kits.py)" },
+]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/AS7119/associated-prolite-4x4-front-bumper", kind = "dealer" },
 ]

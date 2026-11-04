@@ -2,6 +2,7 @@ id = "part/schumacher/U9030"
 brand = "brand/schumacher"
 number = "U9030"
 name = "Steering Spacer 4.05x5.65x1mm - Eclipse 6"
+gtin = "5051294198312"
 seen_by = "2025-08-14"
 seen_by_source = "https://web.archive.org/web/20250814121930/https://www.racing-cars.com/lmp-12/eclipse-6/steering-spacer-4-05-x-5-65-x-1mm-pr-eclipse-6-u9030?returnurl=%2Flmp-12%2Feclipse-6%2F"
 category = "washer-shim"
@@ -9,3 +10,12 @@ equivalent_to = [
   { spec = "spec/washer/4.05x5.65x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
 documents = ["doc/schumacher/eclipse6-maunal"]
+fits = [
+  { kit = "kit/schumacher/eclipse-2", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-3", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-4", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-5", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-6", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-6/steering-spacer-4-05-x-5-65-x-1mm-pr-eclipse-6-u9030?returnurl=%2Flmp-12%2Feclipse-6%2F" } ]

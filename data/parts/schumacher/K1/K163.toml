@@ -5,4 +5,9 @@ name = "Atom GT12 Kit - Non Diff"
 notes = "Name read by OCR from a scanned schumacher manual; verify before relying on exact wording"
 name_source = "ocr"
 documents = ["doc/schumacher/atom-manual"]
+fits = [
+  { kit = "kit/schumacher/atom-2", type = "family", source = "doc/schumacher/atom-manual", notes = "The part names only the atom family (link_car_kits.py)" },
+  { kit = "kit/schumacher/atom-3", type = "family", source = "doc/schumacher/atom-manual", notes = "The part names only the atom family (link_car_kits.py)" },
+  { kit = "kit/schumacher/atom", type = "family", source = "doc/schumacher/atom-manual", notes = "The part names only the atom family (link_car_kits.py)" },
+]
 category = "differential"

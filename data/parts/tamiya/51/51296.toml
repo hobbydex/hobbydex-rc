@@ -7,5 +7,8 @@ seen_by_source = "https://web.archive.org/web/20071114183516/http://www.tamiyaus
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 documents = ["doc/tamiya/49489-manual-usa", "doc/tamiya/58389-manual-de", "doc/tamiya/58398-manual-usa"]
+fits = [
+  { kit = "kit/tamiya/ta05-ifs", type = "family", source = "doc/tamiya/49489-manual-usa", notes = "The part names only the ta05-ifs family (link_car_kits.py)" },
+]
 links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/51296/index.html" } ]
 category = "parts-tree"

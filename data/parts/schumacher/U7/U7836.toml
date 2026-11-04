@@ -5,4 +5,7 @@ name = "S2 Chassis Jig - Mi7"
 gtin = "5051294133962"
 category = "chassis"
 documents = ["doc/schumacher/mi7-manual"]
+fits = [
+  { kit = "kit/schumacher/mi7", type = "family", source = "doc/schumacher/mi7-manual", notes = "The part names only the mi7 family (link_car_kits.py)" },
+]
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi7/s2-chassis-jig-mi7-u7836" } ]

@@ -9,5 +9,8 @@ category = "chassis"
 material = "aluminium"
 material_grade = "7075"
 documents = ["doc/tekno/sct410-2-0-manual-rev02"]
+fits = [
+  { kit = "kit/tekno/sct410", type = "family", source = "doc/tekno/sct410-2-0-manual-rev02", notes = "The part names only the sct410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-cnc-aluminum-motor-mount-sct410-2.0/TKR9510.html" } ]
 scale = "1/10"

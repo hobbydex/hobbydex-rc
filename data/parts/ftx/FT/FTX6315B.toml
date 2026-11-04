@@ -7,6 +7,9 @@ pack_qty_basis = "manual"
 notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 category = "wheel"
 documents = ["doc/ftx/cml-bugsta-parts-list", "doc/ftx/cml-carnage-nt-manual-parts", "doc/ftx/cml-carnage-parts-list"]
+fits = [
+  { kit = "kit/ftx/carnage", type = "family", source = "doc/ftx/cml-bugsta-parts-list", notes = "The part names only the carnage family (link_car_kits.py)" },
+]
 former_names = ["Rim"]
 name_source = "manufacturer"
 links = [

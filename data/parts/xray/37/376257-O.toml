@@ -8,3 +8,6 @@ category = "chassis"
 material = "aluminium"
 color = "orange"
 documents = ["doc/xray/x12-2017-manual", "doc/xray/x12-2017-part-list", "doc/xray/x12-2016-part-list"]
+fits = [
+  { kit = "kit/xray/x12", type = "family", source = "doc/xray/x12-2017-manual", notes = "The part names only the x12 family (link_car_kits.py)" },
+]

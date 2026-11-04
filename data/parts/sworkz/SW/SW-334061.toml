@@ -6,3 +6,6 @@ pack_qty = 2
 pack_qty_basis = "manual"
 category = "steering"
 documents = ["doc/sworkz/s14-4c-manual", "doc/sworkz/s14-4d-manual"]
+fits = [
+  { kit = "kit/sworkz/s14-4", type = "family", source = "doc/sworkz/s14-4c-manual", notes = "The part names only the s14-4 family (link_car_kits.py)" },
+]

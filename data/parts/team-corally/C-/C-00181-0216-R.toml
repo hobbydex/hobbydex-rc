@@ -9,3 +9,7 @@ category = "decal"
 color = "red"
 range = "team-corally/c-00181-0216-colours"
 documents = ["doc/team-corally/c-00295-syncro-4-instruction-manual-en-fr-de-nl"]
+fits = [
+  { kit = "kit/team-corally/syncro-4", type = "family", source = "doc/team-corally/c-00295-syncro-4-instruction-manual-en-fr-de-nl", notes = "The part names only the syncro family (link_car_kits.py)" },
+  { kit = "kit/team-corally/syncro", type = "family", source = "doc/team-corally/c-00295-syncro-4-instruction-manual-en-fr-de-nl", notes = "The part names only the syncro family (link_car_kits.py)" },
+]

@@ -9,3 +9,6 @@ former_names = ["XB8 COMP. REAR WING HOLDER FOR FRONTWARD WING POSITION"]
 category = "wing"
 material = "plastic"
 documents = ["doc/xray/xb8-2021-part-list", "doc/xray/xb8-2022-part-list", "doc/xray/xb8e-2021-part-list", "doc/xray/xb8e-2022-part-list"]
+fits = [
+  { kit = "kit/xray/xb8", type = "family", source = "doc/xray/xb8-2021-part-list", notes = "The part names only the xb8 family (link_car_kits.py)" },
+]

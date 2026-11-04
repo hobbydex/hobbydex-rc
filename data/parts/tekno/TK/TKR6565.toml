@@ -9,4 +9,7 @@ pack_qty = 2
 pack_qty_basis = "manual"
 category = "pin"
 documents = ["doc/tekno/eb410-2-manual", "doc/tekno/et410-2-manual", "doc/tekno/sct410sl-manual-rev3"]
+fits = [
+  { kit = "kit/tekno/eb410", type = "family", source = "doc/tekno/eb410-2-manual", notes = "The part names only the eb410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/tekno-rc-llc-hinge-pins-outer-front-2-eb410/TKR6565.html" } ]

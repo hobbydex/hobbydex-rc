@@ -2,10 +2,20 @@ id = "part/schumacher/U9009"
 brand = "brand/schumacher"
 number = "U9009"
 name = "Front Spring Yellow 1.66N/mm - Eclipse 6"
+gtin = "5051294197681"
 seen_by = "2025-08-15"
 seen_by_source = "https://web.archive.org/web/20250815161709/https://www.racing-cars.com/lmp-12/eclipse-6/front-spring-yellow-1-66n-mm-pr-eclipse-6-u9009?returnurl=%2Flmp-12%2Feclipse-6%2F"
 category = "shock-spring"
 color = "yellow"
 documents = ["doc/schumacher/eclipse6-maunal"]
+fits = [
+  { kit = "kit/schumacher/eclipse-2", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-3", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-4", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-5", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-6", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+]
 rate_n_mm = 1.66
 range = "schumacher/spring-eclipse-rate-springs"
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-6/front-spring-yellow-1-66n-mm-pr-eclipse-6-u9009?returnurl=%2Flmp-12%2Feclipse-6%2F" } ]

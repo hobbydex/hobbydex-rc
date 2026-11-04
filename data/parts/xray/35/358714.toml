@@ -12,3 +12,6 @@ category = "chassis"
 material = "aluminium"
 material_grade = "7075-T6"
 documents = ["doc/xray/xb8-2014-part-list", "doc/xray/xb8-2015-part-list"]
+fits = [
+  { kit = "kit/xray/xb808", type = "family", source = "doc/xray/xb8-2014-part-list", notes = "The part names only the xb808 family (link_car_kits.py)" },
+]

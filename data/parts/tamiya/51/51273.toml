@@ -8,3 +8,6 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "suspension"
 documents = ["doc/tamiya/49401-manual-usa"]
+fits = [
+  { kit = "kit/tamiya/trf501x", type = "family", source = "doc/tamiya/49401-manual-usa", notes = "The part names only the trf501x family (link_car_kits.py)" },
+]

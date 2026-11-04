@@ -6,3 +6,6 @@ name_source = "manufacturer"
 notes = "Revision letter of A2159: the parts lists print it small after the number"
 category = "chassis"
 documents = ["doc/mugen/mtc2-part-list-ja"]
+fits = [
+  { kit = "kit/mugen/mtc2", type = "family", source = "doc/mugen/mtc2-part-list-ja", notes = "The part names only the mtc2 family (link_car_kits.py)" },
+]

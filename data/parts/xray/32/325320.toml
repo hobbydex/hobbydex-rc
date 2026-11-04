@@ -7,3 +7,6 @@ seen_by_source = "doc/xray/xt2-2017-manual"
 category = "drivetrain"
 material = "steel"
 documents = ["doc/xray/xt2-2017-manual", "doc/xray/xt2-2018-manual", "doc/xray/xt2-2017-part-list", "doc/xray/xt2-2018-part-list"]
+fits = [
+  { kit = "kit/xray/xt2", type = "family", source = "doc/xray/xt2-2017-manual", notes = "The part names only the xt2 family (link_car_kits.py)" },
+]

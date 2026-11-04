@@ -8,4 +8,7 @@ pack_qty = 24
 pack_qty_basis = "manual"
 category = "bearing"
 documents = ["doc/xray/xb8-2014-part-list", "doc/xray/xb8-2015-part-list", "doc/xray/xb8-2016-part-list", "doc/xray/xb8e-2015-part-list"]
+fits = [
+  { kit = "kit/xray/xb9", type = "family", source = "doc/xray/xb8-2014-part-list", notes = "The part names only the xb9 family (link_car_kits.py)" },
+]
 former_names = ["BALL-BEARING SET - RUBBER COVERED FOR XB9"]

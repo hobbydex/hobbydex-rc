@@ -6,6 +6,14 @@ gtin = "5051294197636"
 seen_by = "2025-08-08"
 seen_by_source = "https://web.archive.org/web/20250808204237/https://www.racing-cars.com/lmp-12/eclipse-6/c-f-front-beam-kit-eclipse-6-u9003?returnurl=%2Flmp-12%2Feclipse-6%2F"
 documents = ["doc/schumacher/eclipse6-maunal"]
+fits = [
+  { kit = "kit/schumacher/eclipse-2", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-3", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-4", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-5", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse-6", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+  { kit = "kit/schumacher/eclipse", type = "family", source = "doc/schumacher/eclipse6-maunal", notes = "The part names only the eclipse family (link_car_kits.py)" },
+]
 category = "misc"
 category_source = "fallback"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/lmp-12/eclipse-6/c-f-front-beam-kit-eclipse-6-u9003?returnurl=%2Flmp-12%2Feclipse-6%2F" } ]

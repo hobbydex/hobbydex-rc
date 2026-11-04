@@ -8,4 +8,7 @@ category = "chassis"
 material = "aluminium"
 material_grade = "7075"
 documents = ["doc/tekno/eb410-2-manual", "doc/tekno/et410-2-manual"]
+fits = [
+  { kit = "kit/tekno/eb410", type = "family", source = "doc/tekno/eb410-2-manual", notes = "The part names only the eb410 family (link_car_kits.py)" },
+]
 links = [ { site = "Horizon Hobby", url = "https://www.teknorc.com/shop/tkr6539-motor-mount-insert-cnc-7075-eb410/" } ]

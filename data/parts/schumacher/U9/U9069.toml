@@ -2,7 +2,12 @@ id = "part/schumacher/U9069"
 brand = "brand/schumacher"
 number = "U9069"
 name = "Pro Transmission Ball Bearing Set - FT9"
+gtin = "5051294200183"
 seen_by = "2025-08-12"
 seen_by_source = "https://web.archive.org/web/20250812211705/https://www.racing-cars.com/1-10th-touring/ft9/pro-transmission-ball-bearing-set-ft9-12pcs-u9069?returnurl=%2F1-10th-touring%2Fft9%2F"
 category = "bearing"
 documents = ["doc/schumacher/ft9-manual"]
+fits = [
+  { kit = "kit/schumacher/ft9", type = "family", source = "doc/schumacher/ft9-manual", notes = "The part names only the ft9 family (link_car_kits.py)" },
+]
+links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/ft9/pro-transmission-ball-bearing-set-ft9-12pcs-u9069?returnurl=%2F1-10th-touring%2Fft9%2F" } ]

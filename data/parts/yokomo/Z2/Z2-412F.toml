@@ -6,3 +6,6 @@ name_ja = "YZ-2 用 フロント スタビ セット (φ 1.0/1.1/1.2 スタビ�
 category = "suspension"
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Only in the manual's parts list, not in the store"
 documents = ["doc/yokomo/yz-2-dt-instruction-manual"]
+fits = [
+  { kit = "kit/yokomo/yz-2", type = "family", source = "doc/yokomo/yz-2-dt-instruction-manual", notes = "The part names only the yz-2 family (link_car_kits.py)" },
+]

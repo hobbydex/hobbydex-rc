@@ -7,3 +7,6 @@ pack_qty_basis = "manual"
 category = "shock"
 shock_part = "shaft"
 documents = ["doc/xray/xt8-2017-manual", "doc/xray/xt8e-2018-manual", "doc/xray/xt8-2017-part-list", "doc/xray/xt8e-2018-part-list"]
+fits = [
+  { kit = "kit/xray/xt8", type = "family", source = "doc/xray/xt8-2017-manual", notes = "The part names only the xt8 family (link_car_kits.py)" },
+]

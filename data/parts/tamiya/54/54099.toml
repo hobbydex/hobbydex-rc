@@ -8,6 +8,9 @@ notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on
 name_source = "ocr"
 category = "chassis"
 documents = ["doc/tamiya/58425-manual-de", "doc/tamiya/84109-manual-de"]
+fits = [
+  { kit = "kit/tamiya/tb-03", type = "family", source = "doc/tamiya/58425-manual-de", notes = "The part names only the tb-03 family (link_car_kits.py)" },
+]
 links = [
   { site = "Tamiya (Internet Archive)", url = "https://web.archive.org/web/20130522040357/http://www.tamiyausa.com/product/item.php?product-id=54099", kind = "archive", gone = "2026-11-01" },
 ]

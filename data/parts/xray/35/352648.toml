@@ -13,3 +13,6 @@ former_names = ["ADJ. TURNBUCKLE M3 L/R 62 MM - HUDY SPRING STEEL", "ADJ. TURNBU
 category = "turnbuckle"
 material = "steel"
 documents = ["doc/xray/rx8-2013-part-list", "doc/xray/rx8-2014-part-list", "doc/xray/rx8-2017-part-list", "doc/xray/rx8-2018-part-list", "doc/xray/rx8-2023-part-list", "doc/xray/rx8-2026-part-list", "doc/xray/rx8e-2023-part-list", "doc/xray/rx8e-2026-part-list", "doc/xray/rx8-2016-part-list"]
+fits = [
+  { kit = "kit/xray/xt8", type = "family", source = "doc/xray/rx8-2013-part-list", notes = "The part names only the xt8 family (link_car_kits.py)" },
+]

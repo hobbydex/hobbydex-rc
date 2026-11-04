@@ -43,7 +43,7 @@ LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": "", "kits"
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
 VEHICLE_MAKES = {
     "Abarth", "Acura", "Alfa Romeo", "Alpine", "Aston Martin", "Audi", "BMW", "Bentley", "Bugatti", "Buggyra", "Buick", "Cadillac",
-    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Ferrari", "Fiat", "Ford",
+    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Fendt", "Ferrari", "Fiat", "Ford",
     "Freightliner", "GMC", "Hino", "Honda", "Hummer", "Hyundai", "International", "Isuzu", "Iveco", "Jaguar", "Jeep", "KTM",
     "Kawasaki", "Kenworth", "Komatsu", "Lamborghini", "Lancia", "Land Rover", "Lexus", "Liebherr", "Lotus", "MAN", "Mack",
     "Maserati", "Mazda", "McLaren", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Opel", "Pagani", "Peterbilt", "Peugeot",
@@ -82,7 +82,7 @@ ENUMS = {
     "needs.item": {"radio", "receiver", "servo", "esc", "motor", "engine", "battery", "charger", "pinion", "tyres", "wheels", "body", "paint", "glue", "fuel", "glow-starter", "tools"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "news", "owner_report", "video"},
     "equivalent_to.match": {"exact", "functional", "close"},
-    "fits.type": {"direct", "replaces", "modification"},
+    "fits.type": {"direct", "replaces", "modification", "family"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "rebrand_of.certainty": {"likely"},   # absent = confirmed (maker statement, matching part numbers or an owner's statement); likely = specs or looks only (docs/schema.md "rebrand_of")
     "related.relation": {"requires", "fits", "use-with", "for", "replaces", "same-colour", "same-part"},

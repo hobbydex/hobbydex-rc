@@ -5,3 +5,6 @@ name = "XB4'20 GRAPHITE REAR UPPER BRACE 2MM"
 category = "chassis"
 material = "carbon"
 documents = ["doc/xray/xb4-2020-manual", "doc/xray/xb4-2020-part-list"]
+fits = [
+  { kit = "kit/xray/xb4", type = "family", source = "doc/xray/xb4-2020-manual", notes = "The part names only the xb4 family (link_car_kits.py)" },
+]
