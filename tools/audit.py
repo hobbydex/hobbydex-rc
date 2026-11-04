@@ -1405,7 +1405,7 @@ def main():
             foreign.append(path)
         if SCRAP_IMG.search(text):
             scrap.append(path)
-        if "doc/tamiya/tamico-dealer-parts" in text:
+        if "doc/tamiya/tamico-dealer-parts" in text and not path.endswith("documents/tamiya/tamico-dealer-parts.toml"):   # the document itself is not a reference
             dealer.append(path)
     for k in db:
         for d in db[k]:
