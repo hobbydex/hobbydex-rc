@@ -816,7 +816,8 @@ def main():
         with open(distinct_path, "rb") as f:
             doc_ids = {d.get("id") for _, kind, d in docs if kind == "doc"}
             seen_pairs = set()
-            for p in tomllib.load(f).get("pair", []):
+            distinct_doc = tomllib.load(f)
+            for p in distinct_doc.get("pair", []):
                 pair = frozenset(p.get("parts", []))
                 if len(pair) != 2 or any(x not in ids for x in pair):
                     errors.append(f"{distinct_path}: pair {sorted(pair)} needs two live parts")
@@ -828,6 +829,17 @@ def main():
                 for e in p.get("evidence", []):
                     if e not in doc_ids:
                         errors.append(f"{distinct_path}: evidence {e} is not a document")
+            # releases whose item numbers differ by a suffix and that the maker sells apart (the audit's release-suffix-twin skips them)
+            seen_rel_pairs = set()
+            for p in distinct_doc.get("release_pair", []):
+                pair = frozenset(p.get("releases", []))
+                if len(pair) != 2 or any(x not in ids or not x.startswith("release/") for x in pair):
+                    errors.append(f"{distinct_path}: release pair {sorted(pair)} needs two live releases")
+                elif pair in seen_rel_pairs:
+                    errors.append(f"{distinct_path}: release pair {sorted(pair)} listed twice")
+                seen_rel_pairs.add(pair)
+                if not p.get("reason"):
+                    errors.append(f"{distinct_path}: release pair {sorted(pair)} needs a reason (why the maker sells them apart)")
     codes = {d.get("code") for _, kind, d in docs if kind == "standard"}
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}

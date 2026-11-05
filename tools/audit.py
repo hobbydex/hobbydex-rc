@@ -756,6 +756,42 @@ def kit_without_release(kits, rels_of_kit, kit_id):
     return kit_id in kits and not kits[kit_id].get("family") and not rels_of_kit.get(kit_id)
 
 
+SUFFIX_TAIL = re.compile(r"-\d{1,2}|-?[A-Za-z][A-Za-z0-9]{0,3}")
+
+
+def number_relation(a, b):
+    """True when one item number is the other plus a suffix (34902 / 34902D, 10428 / 10428-2)."""
+    a, b = str(a or "").strip().upper(), str(b or "").strip().upper()
+    if len(a) == len(b) or not a or not b:
+        return False
+    short, long_ = (a, b) if len(a) < len(b) else (b, a)
+    return len(short) >= 5 and short[:5].isdigit() and long_.startswith(short) and SUFFIX_TAIL.fullmatch(long_[len(short):]) is not None
+
+
+def same_product_record(a, b):
+    """Whether two release records name one product: the same barcode, or the same maker page with no different barcode."""
+    if a.get("gtin") and b.get("gtin"):
+        return str(a["gtin"]) == str(b["gtin"])
+    sa, sb = a.get("released_source"), b.get("released_source")
+    return bool(sa and sb and sa.lower().rstrip("/") == sb.lower().rstrip("/"))
+
+
+def suffix_twin_pairs(rels, reviewed=frozenset()):
+    """Pairs of releases of one brand whose numbers differ only by a suffix and that name one product (same_product_record).
+    reviewed: frozensets of the two ids of pairs confirmed as distinct SKUs (data/confirmed-distinct.toml [[release_pair]])."""
+    groups = collections.defaultdict(list)
+    for r in rels:
+        if r.get("brand") and r.get("number"):
+            groups[(r["brand"], str(r["number"])[:5])].append(r)
+    out = []
+    for g in groups.values():
+        for i, a in enumerate(g):
+            for b in g[i + 1:]:
+                if number_relation(a["number"], b["number"]) and same_product_record(a, b) and frozenset((a["id"], b["id"])) not in reviewed:
+                    out.append((a, b))
+    return out
+
+
 def duplicate_fits(parts):
     """(part, [claims]) for each part with two or more fits rows naming one claim (the same kit, releases and car)."""
     out = []
@@ -1106,6 +1142,19 @@ def main():
     groups = [g for g in same_name.values() if len(g) > 1]
     check("duplicate-release-name", "give the releases of the group the same item number as one another only when they are one item: a duplicate is a release with the same name and number; releases with distinct item numbers are distinct",
           [r for g in groups for r in g], count=len(groups))
+
+    # 2c. releases of one brand whose item numbers differ only by a suffix (34902 and 34902D) and that name one product
+    # (the same barcode, or the same maker page with no different barcode): a twin the importers would have minted.
+    # Pairs reviewed as distinct SKUs (colour, pack or edition letters the maker sells apart) are in confirmed-distinct.toml.
+    reviewed_rel = set()
+    cdr = os.path.join(RC, "data", "confirmed-distinct.toml")
+    if os.path.exists(cdr):
+        with open(cdr, "rb") as fh:
+            reviewed_rel = {frozenset(p["releases"]) for p in tomllib.load(fh).get("release_pair", [])}
+    twins_rel = suffix_twin_pairs(rels, reviewed_rel)
+    check("release-suffix-twin", "one product under two item numbers: fold the suffixed record into the other (former_ids, the parts and documents move, retired.toml when none stays), or list the pair as distinct in data/confirmed-distinct.toml [[release_pair]] when the maker sells them apart",
+          [x["id"] for pair in twins_rel for x in pair], count=len(twins_rel), per_brand=collections.Counter(a["brand"].split("/")[-1] for a, _ in twins_rel).most_common())
+    results["release-suffix-twin"]["examples"] = [{"id": f"{a['id']} ~ {b['id']}", "url": url_for(a)} for a, b in twins_rel[:args.examples]]
 
     # 3. bearing category holding a rebuild or service kit
     check("bearing-rebuild-kit", "recategorise the part (not bearing) or remove it from the bearing list; a rebuild kit is a set of parts",
