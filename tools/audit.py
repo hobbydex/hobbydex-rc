@@ -807,17 +807,12 @@ def text_layer_numbers(path):
 
 
 def reviewed_distinct(path):
-    """The Tamiya numbers reviewed as two different parts (data/reviewed-distinct.tsv: number, name, manual, page).
-    A missing file gives none."""
+    """The Tamiya numbers reviewed as two different parts (data/reviewed-distinct.toml: a [[reviewed]] table per
+    number, with its name, manual and page). A missing file gives none."""
     if not os.path.exists(path):
         return set()
-    out = set()
-    with open(path, encoding="utf-8") as fh:
-        for line in fh:
-            if line.startswith("#") or line.startswith("number\t") or not line.strip():
-                continue
-            out.add(line.split("\t")[0])
-    return out
+    with open(path, "rb") as fh:
+        return {r["number"] for r in tomllib.load(fh).get("reviewed", [])}
 
 
 def both_reviewed(a, b, reviewed):
@@ -1860,14 +1855,14 @@ def main():
             by_name[(brand_of(p), p["name"].strip().lower())].append(p)
     # pairs confirmed as two parts (data/confirmed-distinct.toml: each number printed in a manual) are not twins,
     # nor are pairs whose both numbers a maker text layer prints (the text-layer index, tools/ocr_numbers.py), nor
-    # pairs whose both numbers are reviewed as two parts (data/reviewed-distinct.tsv)
+    # pairs whose both numbers are reviewed as two parts (data/reviewed-distinct.toml)
     confirmed = set()
     cd = os.path.join(RC, "data", "confirmed-distinct.toml")
     if os.path.exists(cd):
         with open(cd, "rb") as fh:
             confirmed = {frozenset(p["parts"]) for p in tomllib.load(fh).get("pair", [])}
     printed = text_layer_numbers(tools["text_layer"])
-    reviewed = reviewed_distinct(os.path.join(RC, "data", "reviewed-distinct.tsv"))   # both numbers reviewed: two parts
+    reviewed = reviewed_distinct(os.path.join(RC, "data", "reviewed-distinct.toml"))   # both numbers reviewed: two parts
     twins = []
     for group in by_name.values():
         for i, a in enumerate(group):
