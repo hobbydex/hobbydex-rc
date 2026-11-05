@@ -13,3 +13,13 @@ documents = ["doc/carson/500907312-page", "doc/carson/500907312-anleitung-instru
 links = [
   { site = "Carson", url = "https://www.carson-modelsport.com/carson_en/categories/truck-model-making/models-trailers/1-14-2-axle-dump-semi-trailer-trailer-500907312-en.html" },
 ]
+contains = [
+  { part = "part/carson/500907070", role = "option", source = "doc/carson/500907312-anleitung-instruction-2-achs-muldenkipper-sattelauflieger" },
+  { part = "part/carson/500907071", role = "option", source = "doc/carson/500907312-anleitung-instruction-2-achs-muldenkipper-sattelauflieger" },
+  { part = "part/carson/500907199", role = "option", source = "doc/carson/500907312-anleitung-instruction-2-achs-muldenkipper-sattelauflieger" },
+  { part = "part/carson/500907218", role = "option", source = "doc/carson/500907312-anleitung-instruction-2-achs-muldenkipper-sattelauflieger" },
+]
+needs = [
+  { part = "part/carson/500907166", source = "doc/carson/500907312-anleitung-instruction-2-achs-muldenkipper-sattelauflieger" },
+  { part = "part/carson/500907217", source = "doc/carson/500907312-anleitung-instruction-2-achs-muldenkipper-sattelauflieger" },
+]
