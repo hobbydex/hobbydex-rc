@@ -7,6 +7,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/integy-esc-to-drive-motor-plug-converter-harness-scx24/INTC32440.html", kind = "dealer" },
 ]
 applies_to = "SCX24"
+fits = [
+  { kit = "kit/axial/scx24", type = "direct", source = "doc/integy/horizon-pages", notes = "Listed for the SCX24 (link_car_kits.py)" },
+]
 gtin = "917890441649"
 category = "esc"
 scales = ["1/24"]

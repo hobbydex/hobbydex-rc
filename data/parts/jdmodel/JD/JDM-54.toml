@@ -11,9 +11,6 @@ links = [
   { site = "Toucan Hobby", url = "https://www.toucanhobby.com/products/jdm-54-540motor-55t-jdm-new-dzn1", kind = "dealer" },
 ]
 documents = ["doc/jdmodel/toucan-hobby-listings"]
-fits = [
-  { kit = "kit/lesu/ba-b0004", type = "family", source = "doc/jdmodel/toucan-hobby-listings", notes = "The part names only the crawler family (link_car_kits.py)" },
-]
 equivalent_to = [
   { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
