@@ -1,0 +1,93 @@
+# Tamiya part numbers whose Tamiya USA shop spare page names another item (tamiya-usa-spare-mismatch), checked by
+# eye against Tamiya's own manuals, 2026-11-05. A pair (part, usa) listed here leaves the audit class; the USA page
+# is not linked. verdict:
+#   usa-wrong      our record is right; the USA page under this number describes another item
+#   same-item      the same size and kind of screw or rod; Tamiya prints it with another word (name kept)
+#   kit-position   Tamiya prints the number Front in some kits and Rear in others (one coil spring, name kept)
+#   reused-number  two Tamiya kits print two different rods under one number (our record kept)
+# evidence: the manual records whose printed parts list shows the number (the page is in the note).
+# audit.py usa_spare_reviewed reads this file.
+
+[[reviewed]]
+part = "part/tamiya/13455376"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-6x18mm-axle-spacer-58367/"
+verdict = "usa-wrong"
+evidence = ["doc/tamiya/58367-manual", "doc/tamiya/47374-manual-de", "doc/tamiya/84122-manual-de"]
+note = "58367 parts list p20 prints 8x16mm Spacer (ME2 x1) for this number; the kit has no 6x18 axle spacer."
+
+[[reviewed]]
+part = "part/tamiya/19803476"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-2x18mm-cs-hex-screw-42384/"
+verdict = "usa-wrong"
+evidence = ["doc/tamiya/42384-manual", "doc/tamiya/42391-manual"]
+note = "42384 parts list p32 prints 3x18mm Countersunk Head Hex Screw (MA5 x5); the USA page says 2x18."
+
+[[reviewed]]
+part = "part/tamiya/19804194"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x10mm-csunk-screw-44042/"
+verdict = "usa-wrong"
+evidence = ["doc/tamiya/44042-manual-usa", "doc/tamiya/42384-manual"]
+note = "44042 parts list p32 prints 3x10mm Screw (MA7 x2) under this number, no countersunk head; 42384 p32 prints 3x10mm Grub Screw."
+
+[[reviewed]]
+part = "part/tamiya/19804292"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-365mm-piston-rod-49401/"
+verdict = "reused-number"
+evidence = ["doc/tamiya/58719-manual", "doc/tamiya/49401-manual-usa"]
+note = "BBX parts list p36 prints 19804292 40.7mm Piston Rod (MD15 x2); the TRF501X parts price list p28 prints 9804292 36.5mm Piston Rod (short code). Record kept at 40.7."
+
+[[reviewed]]
+part = "part/tamiya/19804293"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-454mm-piston-rod-49401/"
+verdict = "reused-number"
+evidence = ["doc/tamiya/58719-manual", "doc/tamiya/49401-manual-usa"]
+note = "BBX parts list p36 prints 19804293 49.6mm Piston Rod (MD14 x2); the TRF501X price list p28 prints 9804293 45.4mm Piston Rod. Record kept at 49.6."
+
+[[reviewed]]
+part = "part/tamiya/19804780"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-4x8mm-socket-screw-42270/"
+verdict = "same-item"
+evidence = ["doc/tamiya/42384-manual", "doc/tamiya/42270-manual"]
+note = "4x8mm hex socket set screw: 42384 p32 prints 4x8mm Grub Screw (MB1 x10), 42270 p30 prints 4x8mm Screw."
+
+[[reviewed]]
+part = "part/tamiya/19805169"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-rr-coil-spring-58181085/"
+verdict = "kit-position"
+evidence = ["doc/tamiya/47381-manual", "doc/tamiya/58710-manual", "doc/tamiya/47330-manual"]
+note = "47381 parts price list p28 prints Front Coil Spring for this number; 58710 p29 and other 14x62mm kits print Rear Coil Spring."
+
+[[reviewed]]
+part = "part/tamiya/19805386"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-alum-rod-7089mm-58093/"
+verdict = "usa-wrong"
+evidence = ["doc/tamiya/46703-anleitung-instruction-x-sa-hornet", "doc/tamiya/58093-manual-de"]
+note = "Hornet parts code list p6 prints 19805386 80mm, 70mm Adjuster Rod (MR2 x1); the Bear Hawk (58093) rod is 89mm, 70mm."
+
+[[reviewed]]
+part = "part/tamiya/19805485"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-rear-coil-spring-58224/"
+verdict = "kit-position"
+evidence = ["doc/tamiya/58224-manual", "doc/tamiya/58602-manual", "doc/tamiya/47331-manual"]
+note = "Peugeot 306 (58224) parts code list p20 prints 9805485 Rear Coil Spring (MB3 x2); other kits print Front Coil Spring."
+
+[[reviewed]]
+part = "part/tamiya/19805684"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x12mm-screw-58261/"
+verdict = "same-item"
+evidence = ["doc/tamiya/58261-manual-usa", "doc/tamiya/47381-manual"]
+note = "3x12mm hex screw: 58261 p24 prints 9805684 3x12mm Screw (MA5 x2); other kits print Socket Screw or Grub Screw."
+
+[[reviewed]]
+part = "part/tamiya/19805724"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x15mm-screw-58267/"
+verdict = "same-item"
+evidence = ["doc/tamiya/58719-manual", "doc/tamiya/58731-manual-usa"]
+note = "3x15mm hex screw: 58719 p36 prints 3x15mm Grub Screw; other kits print Screw."
+
+[[reviewed]]
+part = "part/tamiya/19805786"
+usa = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-rear-coil-spring-58275/"
+verdict = "kit-position"
+evidence = ["doc/tamiya/58275-manual-de", "doc/tamiya/47419-manual", "doc/tamiya/58633-manual"]
+note = "Mad Fighter (58275) parts code list p20 prints 9805786 Rear Coil Spring (MC11 x2); other kits print Front Coil Spring."
