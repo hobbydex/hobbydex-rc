@@ -2,7 +2,17 @@ id = "part/tamiya/19805520"
 brand = "brand/tamiya"
 number = "19805520"
 name = "Antenna Pipe (30cm)"
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-name_source = "ocr"
+former_ids = ["part/tamiya/16095003"]
+numbers = ["9805520", "6095003", "16095003"]
+seen_by = "2016-07-06"
+seen_by_source = "https://web.archive.org/web/20160706053511/http://www.tamiyausa.com:80/pdf/manuals/56348ml.pdf"
+ocr_names = ["Antenna Pipe", "Antenna Pipe (30cm) (White)"]
+notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. Merged from part/tamiya/16095003 (Tamiya's 6095003, 'Was' number of the same item): the dealer page for 9805520 names it 'Tamiya Antenna Pipe (30cm) Was 6095003'."
 category = "electronics"
+links = [
+  { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/4401-16095003", kind = "fan-site" },
+  { site = "wetronic.nl", url = "https://wetronic.nl/tamiya-16095003-antenne-buis-transparant-300mm_nl", kind = "dealer" },
+  { site = "Modelsport", url = "https://www.modelsport.co.uk/product/tamiya-antenna-pipe-30cm-was-6095003-390819", kind = "dealer" },
+]
+name_source = "ocr"
 documents = ["doc/tamiya/58157-manual-de"]
