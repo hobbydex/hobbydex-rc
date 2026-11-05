@@ -266,13 +266,18 @@ def _category_of(p):
     return "keep" if c is _KEEP else (c or "")
 
 
+def workers():
+    """Pool size: 4 by default (the owner's PC must stay usable); HOBBYDEX_WORKERS overrides it."""
+    return max(1, int(os.environ.get("HOBBYDEX_WORKERS") or min(4, os.cpu_count() or 1)))
+
+
 def start_classify_pool():
     """Forked workers for _category_of. Forked before the records are loaded: a worker forked after the
     ~1 GB of records copies the pages its refcounts touch, and eight of them took the audit past 6 GB."""
     global _POOL
     try:
         import multiprocessing as mp
-        _POOL = mp.get_context("fork").Pool(min(8, os.cpu_count() or 1))
+        _POOL = mp.get_context("fork").Pool(workers())
         atexit.register(_POOL.close)
     except (ValueError, OSError):   # no fork here: the classifier runs in this process
         _POOL = None
@@ -1985,4 +1990,5 @@ def main():
 
 
 if __name__ == "__main__":
+    os.nice(19)   # a run from a terminal yields the CPU to the owner's other work
     main()
