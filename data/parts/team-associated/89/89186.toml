@@ -9,9 +9,10 @@ category = "shock-spring"
 gtin = "784695891869"
 notes = "known from the distributor RUDDOG"
 links = [
-  { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-Front-Springs-59_1", kind = "dealer" },
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/front-springs-59-3-31-lb-in/" },
 ]
 fits = [
   { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
   { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80915"], type = "replaces", source = "doc/team-associated/rc8tftrtr-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
 ]

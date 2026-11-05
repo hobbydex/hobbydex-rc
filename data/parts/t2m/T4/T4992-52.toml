@@ -9,7 +9,7 @@ documents = ["doc/t2m/t2m-shop"]
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-rlt-7-9x12-7x3-97mm-T4992_52" },
 ]
-notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4992/52."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4992/52. Colour read from the maker's product photo."
 equivalent_to = [
   { spec = "spec/bearing/7.938x12.7x3.969", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
@@ -19,3 +19,4 @@ fits = [
   { kit = "kit/t2m/pirate-monster-t", type = "direct", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
   { kit = "kit/t2m/pirate-monster-t-brushless", type = "direct", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+color = "silver"

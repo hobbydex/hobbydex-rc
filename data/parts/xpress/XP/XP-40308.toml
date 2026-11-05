@@ -5,3 +5,6 @@ name = "Lock Nut 4.0mm"
 name_source = "manual"
 category = "nut"
 documents = ["doc/xpress/pixel-z1-xp-90031-manual"]
+equivalent_to = [
+  { spec = "spec/nut/m4-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,5 +2,12 @@ id = "part/team-associated/31402"
 brand = "brand/team-associated"
 number = "31402"
 name = "4x8mm Bearings"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115064239/http://www.teamassociated.com:80/parts/details/31402/"
+gtin = "784695314023"
 documents = ["doc/team-associated/cat-sc104x4"]
 category = "bearing"
+links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/bearings-4x8-mm/" } ]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "close", notes = "Width not stated in the name; 3 mm is the standard width of a 4x8 bearing (MR84)" },
+]

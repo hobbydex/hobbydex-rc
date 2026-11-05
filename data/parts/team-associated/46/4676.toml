@@ -5,3 +5,6 @@ name = "M2.5 x 0.45mm Locknut"
 documents = ["doc/team-associated/rc12r5-2-manual-and-catalog-7-16-2012"]
 category = "nut"
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/nut/m2.5-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -4,3 +4,7 @@ number = "8552"
 name = "M3x8mm bhcs, aluminum (FT ONLY)"
 documents = ["doc/team-associated/sc10-4x4-manual-and-catalog-1-4-2012"]
 category = "screw"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

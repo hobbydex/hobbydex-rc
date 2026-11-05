@@ -8,3 +8,8 @@ gtin = "4548565302772"
 documents = ["doc/kyosho/vintage-160304-2-jp"]
 category = "chassis"
 notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+fits = [
+  { kit = "kit/kyosho/optima", type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/optima", type = "replaces", replaces = "part/kyosho/OT220", source = "doc/kyosho/vintage-160304-2-jp", notes = "Same part in another material (link_upgrades.py)" },
+]
+material = "carbon"

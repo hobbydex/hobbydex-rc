@@ -2,6 +2,7 @@ id = "part/kyosho/32346S"
 brand = "brand/kyosho"
 number = "32346S"
 name = "MINI-Z RWD Series Ready Set Nissan Fairlady Z S-tune Silver"
+status = "discontinued"
 released = "2022-12"
 gtin = "4548565432158"
 documents = ["doc/kyosho/32346s-product-page"]
@@ -10,5 +11,6 @@ category = "misc"
 category_source = "fallback"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "replaces", source = "doc/kyosho/32346s-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/mini-z-rwd", type = "replaces", source = "doc/kyosho/32346s-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/32346s.html" } ]

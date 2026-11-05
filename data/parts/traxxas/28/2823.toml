@@ -8,3 +8,13 @@ fits = [
   { kit = "kit/traxxas/e-revo-1-16", type = "direct", source = "doc/traxxas/7105-7105-parts" },
 ]
 category = "battery"
+chemistry = "lipo"
+cells = 3
+voltage = 11.1
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 1400
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-1400mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 25

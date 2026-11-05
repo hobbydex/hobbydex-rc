@@ -10,3 +10,6 @@ name_source = "manufacturer"
 links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-outlaw-aluminium-rear-axle-housing" },
 ]
+fits = [
+  { kit = "kit/ftx/outlaw", type = "replaces", replaces = "part/ftx/FTX8308", source = "doc/ftx/ftx5570-outlaw-optional-extras", notes = "Same part in another material (link_upgrades.py)" },
+]

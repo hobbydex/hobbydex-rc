@@ -7,12 +7,15 @@ kind = "rtr"
 power = "nitro"
 power_source = "part/hpi/15105"
 status = "discontinued"
-seen_by = "2013-07"
-seen_by_source = "https://web.archive.org/web/20130717005239/http://www.hpiracing.com:80/en/kit/10073"
+seen_by = "2008"
+seen_by_source = "https://www.rcscrapyard.net/hpi-nitro-rs4-3-drift.htm"
 documents = ["doc/hpi/10073-kit-page", "doc/hpi/12034-nitro-3-drift-glb-m-v1", "doc/hpi/youtube-EATNDeBp7fE", "doc/hpi/youtube-SMF2dXP-L48", "doc/hpi/youtube-nUDjbcX1uAc"]
 category = "drift"
 depicts = { make = "Nissan", model = "Silvia" }
 notes = "Release year unknown; HPI's pages state none"
+links = [
+  { site = "RC Scrapyard", url = "https://www.rcscrapyard.net/hpi-nitro-rs4-3-drift.htm", kind = "fan-site" },
+]
 contains = [
   { part = "part/hpi/1430", role = "kit", source = "doc/hpi/10073-kit-page" },
   { part = "part/hpi/15105", role = "kit", source = "doc/hpi/10073-kit-page" },

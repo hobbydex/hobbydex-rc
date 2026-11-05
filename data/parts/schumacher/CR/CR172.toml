@@ -5,6 +5,13 @@ name = "CORE RC - 3200mAHr 3.7V 25C 1S Lipo"
 seen_by = "2014-09-07"
 seen_by_source = "https://web.archive.org/web/20140907101110/http://www.racing-cars.com:80/pp/Manufacturer/Core_RC/CR172.html"
 documents = ["doc/schumacher/atom-manual"]
-category = "misc"
-category_source = "fallback"
+category = "battery"
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-3200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 1
+capacity_mah = 3200
+c_rating = 25
+voltage = 3.7

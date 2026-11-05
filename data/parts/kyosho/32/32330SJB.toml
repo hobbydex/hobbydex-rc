@@ -2,8 +2,12 @@ id = "part/kyosho/32330SJB"
 brand = "brand/kyosho"
 number = "32330SJB"
 name = "MINI-Z RWD Chassis/Transmitter Set with Ball Bearing"
+status = "discontinued"
 released = "2022-09"
 gtin = "4548565427864"
 documents = ["doc/kyosho/32330sjb-product-page"]
 category = "radio"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/32330sjb.html" } ]
+fits = [
+  { kit = "kit/kyosho/mini-z-rwd", type = "direct", source = "doc/kyosho/32330sjb-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

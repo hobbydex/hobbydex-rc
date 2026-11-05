@@ -2,9 +2,14 @@ id = "part/tamiya/19803527"
 brand = "brand/tamiya"
 number = "19803527"
 name = "1.6x7mm Screw"
+pack_qty = 10
+pack_qty_basis = "manual"
 seen_by = "2014-12"
 seen_by_source = "doc/tamiya/56036-56036_ttu11"
 documents = ["doc/tamiya/56036-56036_ttu11"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m1.6x7-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

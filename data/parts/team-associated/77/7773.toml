@@ -4,9 +4,11 @@ number = "7773"
 name = "Screws, 6-32 x 3/8 in BHCS"
 gtin = "784695077737"
 documents = ["doc/team-associated/valkyrie-ntc3-factory-team-2033-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 name_source = "manufacturer"
 links = [
   { site = "Team Associated", url = "https://60years.associatedelectrics.com/screws-6-32-x-3-8-in-bhcs/" },
+]
+equivalent_to = [
+  { spec = "spec/screw/unc-6-32x3-8in-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

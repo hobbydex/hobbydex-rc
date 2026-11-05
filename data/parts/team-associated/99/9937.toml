@@ -2,5 +2,12 @@ id = "part/team-associated/9937"
 brand = "brand/team-associated"
 number = "9937"
 name = "Pin, 2x9mm"
+seen_by = "2025-09-10"
+seen_by_source = "https://web.archive.org/web/20250910115025/https://60years.associatedelectrics.com/gear-diff-outdrives/"
+gtin = "784695099371"
 documents = ["doc/team-associated/b44-3-manual-update"]
 category = "pin"
+links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/gear-diff-outdrives/" } ]
+equivalent_to = [
+  { spec = "spec/pin/2x9", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
