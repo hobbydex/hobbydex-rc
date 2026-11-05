@@ -25,6 +25,11 @@ class NotManualName(unittest.TestCase):
         # declarations of conformity are not manuals (FTX and other makers name them "...-Declaration-of-Conformity")
         self.assertTrue(audit.not_manual_name("ftx5473r-Declaration-of-Conformity"))
         self.assertTrue(audit.not_manual_name("ftx5529g-Declaration-of-Conformity"))
+        # a kit's list of items needed apart, a radio setting sheet, a price list and a catalogue are not manuals
+        self.assertTrue(audit.not_manual_name("25603-Required-separately"))
+        self.assertTrue(audit.not_manual_name("ModelsSetting Sheet_RSx4S_one10X_EN"))
+        self.assertTrue(audit.not_manual_name("Price-List-2024_Gambado"))
+        self.assertTrue(audit.not_manual_name("YOKOMO_CATALOG_Autumn"))
 
     def test_car_named_files_without_a_kind_word_stay_gaps(self):
         # kind unknown: the cover must be read; a car name or a set name is not a non-manual
@@ -35,6 +40,8 @@ class NotManualName(unittest.TestCase):
     def test_manuals_are_never_left_out(self):
         self.assertFalse(audit.not_manual_name("30618-javelin-manual"))
         self.assertFalse(audit.not_manual_name("300056045_Centurion_Mk.III_Bedienung_en"))
+        self.assertFalse(audit.not_manual_name("300058084_Ferrari_F189_F101"))
+        self.assertFalse(audit.not_manual_name("MZW403_Carbon_Rear_Sus_m"))
 
 
 class NameSlug(unittest.TestCase):

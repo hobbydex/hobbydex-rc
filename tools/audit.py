@@ -302,7 +302,10 @@ def near_local(a, b):
 # safety sheets, battery and safety notices, press releases, product sheets, declarations of conformity). Any other name with no kind
 # word (a car-named file such as "300012657_Ducati_Gabel-Set.pdf") is "kind unknown" and stays a gap.
 NOT_MANUAL_NAME = re.compile(r"msds|sicherheit|safety|warning|hinweis|akku|battery|lipo|press|news|video|product|"
-                             r"datenblatt|data ?sheet|spruehfarbe|paint|flyer|leaflet|declaration|conformity|konformit", re.I)
+                             r"datenblatt|data ?sheet|spruehfarbe|paint|flyer|leaflet|declaration|conformity|konformit|"
+                             r"catalog|katalog|preis|price|compatib|required.?separately|setting.?sheet|"
+                             r"spezifikation|specification|leistungsmerkmale|\u898f\u683c\u66f8|\u89c4\u683c\u4e66|\u304a\u77e5\u3089\u305b", re.I)
+# The last three are Japanese and Chinese words for a spec sheet and a notice (規格書, 规格书, お知らせ), written as escapes.
 
 
 # Parts of brands that also sell aircraft, helicopters and drones. The data covers ground vehicles (docs/vision.md:
