@@ -278,7 +278,7 @@ downgraded to `listed`.
 
 Rows read from a build manual also carry `qty`, the number of pieces the car
 uses (summed over the steps that use the part), and `step`, the manual's
-reference ("Bag 4 - Step 2"). Rows read from a parts list have neither.
+reference ("Bag 4 - Step 2"). Rows read from a parts list carry `qty` only when the list prints the per-kit count of the part (a quantity column, "x2", "each N"), and never a `step`.
 
 `needs` (optional) lists what a buyer must get separately to complete the release: paints for a Tamiya kit, the radio, servo, ESC, motor, battery, charger, pinion, tyres or body for another maker's kit. It is not `contains` (what is in the box) and not `requires` (another kit or release this one needs). Each entry has exactly one of `part` (an existing part id, when the item is a part the data holds) or `item` (a generic word from the fixed list: radio, receiver, servo, esc, motor, engine, battery, charger, pinion, tyres, wheels, body, paint, glue, fuel, glow-starter, tools), plus `source` (the doc that names the need, from the maker's wording) and optionally `qty` (an int of 1 or more, when more than one is needed) and `note` (a short string).
 
