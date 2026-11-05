@@ -13,9 +13,12 @@ fits = [
   { kit = "kit/lc-racing/emb-ra", type = "direct", source = "doc/lc-racing/l6201-product-page" },
 ]
 category = "esc"
+bec_v = 6.0
+lipo_cells = [2, 3]
 waterproof = true
 current_a = 60
 rebrand_of = [
   { part = "part/hobbywing/30102602", notes = "The name gives Hobbywing's model code \"MAX10\" (EzRun MAX10); firmware, plug or packaging may differ (link_rebrands.py)" },
 ]
 links = [ { site = "LC Racing", url = "https://shop.lcracing.net/products/l6201" } ]
+connector = "Deans"

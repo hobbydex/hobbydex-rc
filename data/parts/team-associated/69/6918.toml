@@ -7,3 +7,6 @@ seen_by_source = "doc/team-associated/valkyrie-b3-team-9032-9033-manual"
 documents = ["doc/team-associated/valkyrie-b3-team-9032-9033-manual"]
 category = "screw"
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x1-2in-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

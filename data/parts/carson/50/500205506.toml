@@ -4,3 +4,7 @@ number = "500205506"
 name = "Carbon steering rack"
 category = "steering"
 documents = ["doc/carson/500202015-manual-specter-2-pro", "doc/carson/500204020-monster-cage", "doc/carson/500204021-bedienanleitung"]
+material = "carbon"
+fits = [
+  { kit = "kit/carson/e-crasher-xl", type = "replaces", replaces = "part/carson/500205697", source = "doc/carson/500409001-e-crasher-xl", notes = "Same part in another material (link_upgrades.py)" },
+]

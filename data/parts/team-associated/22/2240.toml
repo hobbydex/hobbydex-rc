@@ -4,7 +4,9 @@ number = "2240"
 name = "Screws, 5-40x7/16 in FHCS"
 gtin = "784695022409"
 documents = ["doc/team-associated/valkyrie-ntc3-factory-team-2033-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-5-40x7-16-in-fhcs/" } ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/unc-5-40x7-16in-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

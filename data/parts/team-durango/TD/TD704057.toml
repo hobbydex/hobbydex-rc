@@ -4,8 +4,11 @@ number = "TD704057"
 name = "FLAT HEAD HEX SCREW M2x6mm"
 status = "discontinued"
 documents = ["doc/team-durango/td102023-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 name_source = "manufacturer"
 pack_qty = 10
 pack_qty_basis = "name"
+links = [ { site = "Team Durango", url = "https://web.archive.org/web/20170311235243/http://www.team-durango.com/part-info.php?partNo=TD704057", kind = "archive" } ]
+equivalent_to = [
+  { spec = "spec/screw/m2x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

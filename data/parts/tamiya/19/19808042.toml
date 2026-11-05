@@ -2,6 +2,8 @@ id = "part/tamiya/19808042"
 brand = "brand/tamiya"
 number = "19808042"
 name = "2x16mm Cap Screw"
+pack_qty = 2
+pack_qty_basis = "page"
 seen_by = "2006-06"
 seen_by_source = "doc/tamiya/56702-parts-list-usa"
 gtin = "4950344980420"
@@ -9,3 +11,7 @@ documents = ["doc/tamiya/56702-parts-list-usa", "doc/tamiya/56703-parts-list-usa
 notes = "Name read from the text of Tamiya's parts list (vector PDF); verify against the maker's own naming"
 name_source = "manual"
 category = "screw"
+links = [ { site = "tamico.de", url = "https://tamico.de/Tamiya-19808042-2x16mm-Cap-Screw-2-pcs", kind = "dealer" } ]
+equivalent_to = [
+  { spec = "spec/screw/m2x16-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

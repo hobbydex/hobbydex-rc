@@ -4,6 +4,8 @@ number = "7943"
 name = "Screws, 2.6x8mm button-head, self-tapping (hex drive) (6)"
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
 documents = ["doc/traxxas/58094-1-exploded-body-assembly", "doc/traxxas/82096-4-exploded-body-assembly"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x8-button-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

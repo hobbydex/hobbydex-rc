@@ -2,6 +2,7 @@ id = "part/kyosho/32342GM"
 brand = "brand/kyosho"
 number = "32342GM"
 name = "MINI-Z RWD Series Ready Set CHEVROLET® CORVETTE® C8.R Gunmetal"
+status = "discontinued"
 released = "2023-06"
 gtin = "4548565446445"
 documents = ["doc/kyosho/32342gm-product-page"]
@@ -10,6 +11,7 @@ category = "misc"
 category_source = "fallback"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "replaces", source = "doc/kyosho/32342gm-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/mini-z-rwd", type = "replaces", source = "doc/kyosho/32342gm-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
 range = "kyosho/32342-colours"
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/32342gm.html" } ]

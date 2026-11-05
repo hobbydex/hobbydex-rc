@@ -10,3 +10,6 @@ numbers = ["SH509203"]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "drivetrain"
+fits = [
+  { kit = "kit/shepherd/velox-v10", releases = ["release/shepherd/velox-v10-aws"], type = "replaces", source = "doc/shepherd/v10-aws-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

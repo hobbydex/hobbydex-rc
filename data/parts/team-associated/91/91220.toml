@@ -2,5 +2,10 @@ id = "part/team-associated/91220"
 brand = "brand/team-associated"
 number = "91220"
 name = "4-40 x 1 5/8 SHCS"
+seen_by = "2012-10-14"
+seen_by_source = "https://web.archive.org/web/20121014143852/http://www.teamassociated.com:80/parts/details/91220/"
 documents = ["doc/team-associated/sc10b-rs-rtr-manual"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x1_5-8in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

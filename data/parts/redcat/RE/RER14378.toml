@@ -3,7 +3,9 @@ brand = "brand/redcat"
 number = "RER14378"
 name = "Crawlmaster Sport 550 13t (Brushed Motor)"
 pack_qty = 1
+pack_qty_basis = "page"
 applies_to = "MARKSMAN"
+turns = 13
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer14378" },
 ]
@@ -11,3 +13,7 @@ fits = [
   { kit = "kit/redcat/marksman", type = "direct", source = "doc/redcat/store" },
 ]
 category = "motor"
+motor_type = "brushed"
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

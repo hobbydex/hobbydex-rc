@@ -2,5 +2,13 @@ id = "part/team-associated/8564"
 brand = "brand/team-associated"
 number = "8564"
 name = "M3x14mm shcs, aluminum (FT ONLY)"
+seen_by = "2025-12-12"
+seen_by_source = "https://web.archive.org/web/20251212225208/https://60years.associatedelectrics.com/ft-screws-blue-aluminum-m3x14-mm-shcs/"
+gtin = "784695085640"
 documents = ["doc/team-associated/sc10-4x4-manual-and-catalog-1-4-2012"]
 category = "screw"
+links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-screws-blue-aluminum-m3x14-mm-shcs/" } ]
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/screw/m3x14-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -5,3 +5,6 @@ name = "CV-10 2-Speed Gear Set"
 category = "drivetrain"
 category_source = "curated"
 documents = ["doc/carson/500105210-manual-cv-10-2speedgear"]
+fits = [
+  { kit = "kit/carson/cv10-on-road", releases = ["release/carson/500103038"], type = "replaces", source = "doc/carson/500103038-parts-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

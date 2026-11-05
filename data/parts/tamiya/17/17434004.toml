@@ -8,3 +8,6 @@ documents = ["doc/tamiya/43508-parts-list-usa"]
 notes = "Name read from the text of Tamiya's parts list (vector PDF); verify against the maker's own naming"
 name_source = "manual"
 category = "motor"
+equivalent_to = [
+  { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

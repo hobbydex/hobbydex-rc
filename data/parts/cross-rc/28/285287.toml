@@ -6,3 +6,6 @@ name_source = "dealer"
 notes = "Name known from the distributor"
 category = "decal"
 documents = ["doc/cross-rc/yikongrc-net"]
+fits = [
+  { kit = "kit/cross-rc/tl4", type = "direct", source = "doc/cross-rc/yikongrc-net", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -9,8 +9,11 @@ category = "shock"
 gtin = "784695894679"
 notes = "known from the distributor RUDDOG"
 links = [
-  { site = "RUDDOG", url = "https://www.ruddog.eu/Team-Associated-FT-Heavy-Duty-Shock-Shaft-4x29-mm_1", kind = "dealer" },
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-heavy-duty-shock-shaft-4x29-mm/" },
 ]
 shock_part = "shaft"
 shaft_mm = 4
 length_mm = 29
+fits = [
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80932"], type = "replaces", source = "doc/team-associated/sc8e-rtr-manual-and-catalog-7-16-2010", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

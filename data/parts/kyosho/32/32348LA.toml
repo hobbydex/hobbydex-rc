@@ -2,6 +2,7 @@ id = "part/kyosho/32348LA"
 brand = "brand/kyosho"
 number = "32348LA"
 name = "MINI-Z RWD Series Ready Set LARK McLaren F1 GTR LM 1997"
+status = "discontinued"
 released = "2023-08"
 gtin = "4548565448968"
 documents = ["doc/kyosho/32348la-product-page"]
@@ -9,5 +10,6 @@ category = "misc"
 category_source = "fallback"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "replaces", source = "doc/kyosho/32348la-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/mini-z-rwd", type = "replaces", source = "doc/kyosho/32348la-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/32348la.html" } ]

@@ -2,5 +2,11 @@ id = "part/team-associated/4568"
 brand = "brand/team-associated"
 number = "4568"
 name = "2-56x5/16 shcs"
+gtin = "784695045682"
 documents = ["doc/team-associated/rc12r5-2-manual-and-catalog-7-16-2012"]
 category = "screw"
+links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-2-56-x-5-16-in-shcs-stainless/" } ]
+equivalent_to = [
+  { spec = "spec/screw/unc-2-56x5-16in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "stainless"

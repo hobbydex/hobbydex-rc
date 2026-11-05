@@ -6,7 +6,10 @@ gtin = "784695915879"
 seen_by = "2020-09-30"
 seen_by_source = "https://web.archive.org/web/20200930024704/https://www.associatedelectrics.com/factoryteam/parts/details/91587-ASC91587-ft_ti_screws_m3x20_mm_bhcs/"
 documents = ["doc/team-associated/manual-cr12-40005-2"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 links = [{ site = "Associated Electrics", url = "https://www.associatedelectrics.com/factoryteam/parts/details/91587-ASC91587-ft_ti_screws_m3x20_mm_bhcs/" }, { site = "Team Associated", url = "https://60years.associatedelectrics.com/ft-ti-screws-m3x20-mm-bhcs/" }]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"

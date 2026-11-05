@@ -2,12 +2,15 @@ id = "part/team-associated/6927"
 brand = "brand/team-associated"
 number = "6927"
 name = "Screws, 4-40 x 3/4 in SHCS"
+gtin = "784695069275"
 seen_by = "1994"
 seen_by_source = "doc/team-associated/6002-dirtburners"
 documents = ["doc/team-associated/6002-dirtburners"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 name_source = "manufacturer"
 links = [
   { site = "Team Associated", url = "https://60years.associatedelectrics.com/screws-4-40-x-3-4-in-shcs/" },
+]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x3-4in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

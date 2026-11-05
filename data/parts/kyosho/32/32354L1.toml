@@ -2,6 +2,7 @@ id = "part/kyosho/32354L1"
 brand = "brand/kyosho"
 number = "32354L1"
 name = "MINI-Z RWD Series Ready Set Toyota GT-One TS020 No.1"
+status = "discontinued"
 released = "2024-07"
 gtin = "4548565468461"
 documents = ["doc/kyosho/32354l1-product-page"]
@@ -9,5 +10,6 @@ category = "misc"
 category_source = "fallback"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "replaces", source = "doc/kyosho/32354l1-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/mini-z-rwd", type = "replaces", source = "doc/kyosho/32354l1-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/32354l1.html" } ]

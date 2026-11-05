@@ -4,7 +4,9 @@ number = "6920"
 name = "Screws, 4-40 x 3/16 in BHCS"
 gtin = "784695069206"
 documents = ["doc/team-associated/valkyrie-ntc3-factory-team-2033-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-4-40-x-3-16-in-bhcs-part-6920/" } ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x3-16in-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

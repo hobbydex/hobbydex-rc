@@ -4,11 +4,15 @@ number = "12003"
 name = "Nitro RS4 MT 2 18SS"
 kit = "kit/hpi/nitro-mt2"
 status = "released"
-seen_by = "2019-09"
-seen_by_source = "https://web.archive.org/web/20190919103318/https://www.hpiracing.com/assets/documents/instruction_manuals/12003_nitro_mt2_18ss_glb_m_v1.pdf"
+seen_by = "2018"
+seen_by_source = "https://www.rcscrapyard.net/hpi-ken-block-wr8-flux-120036.htm"
 power = "nitro"
 power_source = "name"
 documents = ["doc/hpi/12003-nitro-mt2-18ss-glb-m-v1"]
+links = [
+  { site = "RC Scrapyard", url = "https://www.rcscrapyard.net/hpi-wr8-3-0-ken-block-120037.htm", kind = "fan-site" },
+  { site = "RC Scrapyard", url = "https://www.rcscrapyard.net/hpi-ken-block-wr8-flux-120036.htm", kind = "fan-site" },
+]
 contains = [
   { part = "part/hpi/1600", role = "listed", source = "doc/hpi/12003-nitro-mt2-18ss-glb-m-v1" },
   { part = "part/hpi/1617", role = "listed", source = "doc/hpi/12003-nitro-mt2-18ss-glb-m-v1" },

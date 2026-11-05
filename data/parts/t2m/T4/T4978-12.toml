@@ -7,7 +7,7 @@ documents = ["doc/t2m/t2m-shop"]
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-axes-2x8mm-1-10-T4978_12" },
 ]
-notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4978/12."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4978/12. Colour read from the maker's product photo."
 category = "pin"
 equivalent_to = [
   { spec = "spec/pin/2x8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
@@ -16,3 +16,4 @@ applies_to = ["Pirate X-SC"]
 fits = [
   { kit = "kit/t2m/pirate-x-sc", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate X-SC (link_car_kits.py)" },
 ]
+color = "silver"

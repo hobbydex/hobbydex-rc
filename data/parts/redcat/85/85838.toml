@@ -1,11 +1,16 @@
 id = "part/redcat/85838"
 brand = "brand/redcat"
 number = "85838"
-name = "85838"
+name = "3x18mm Countersunk Hex Self Tapping Screws"
 gtin = "609132450921"
 seen_by = "2020-08-06"
 seen_by_source = "https://web.archive.org/web/20200806184629/https://www.redcatracing.com/products/85838"
-notes = "Named by its number only: the name on the scanned redcat manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
+category = "screw"
 documents = ["doc/redcat/avalanche-xte-manual", "doc/redcat/hurricane-xte-manual", "doc/redcat/monsoon-xte-manual"]
+links = [ { site = "Redcat Racing", url = "https://www.redcatracing.com/products/85838" } ]
+name_source = "manufacturer"
+pack_qty = 10
+pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-countersunk-hex-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

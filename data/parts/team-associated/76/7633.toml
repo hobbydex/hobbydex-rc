@@ -2,5 +2,12 @@ id = "part/team-associated/7633"
 brand = "brand/team-associated"
 number = "7633"
 name = "4-40 x 5/8 bhcs"
+seen_by = "2025-03-22"
+seen_by_source = "https://web.archive.org/web/20250322155814/https://60years.associatedelectrics.com/screws-4-40-x-5-8-in-bhcs/"
+gtin = "784695076334"
 documents = ["doc/team-associated/sc10-gt-rtr-manual-and-catalog-3-13-2012"]
 category = "screw"
+links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-4-40-x-5-8-in-bhcs/" } ]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x5-8in-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

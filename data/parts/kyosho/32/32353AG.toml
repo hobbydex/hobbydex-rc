@@ -2,6 +2,7 @@ id = "part/kyosho/32353AG"
 brand = "brand/kyosho"
 number = "32353AG"
 name = "MINI-Z RWD Series Ready Set Sauber-Mercedes Gruppe-C-Rennsportwagen C9, Nr.62, LM 1988"
+status = "discontinued"
 released = "2024-06"
 gtin = "4548565468454"
 documents = ["doc/kyosho/32353ag-product-page"]
@@ -9,5 +10,6 @@ category = "misc"
 category_source = "fallback"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-04", type = "replaces", source = "doc/kyosho/32353ag-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/mini-z-rwd", type = "replaces", source = "doc/kyosho/32353ag-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/32353ag.html" } ]

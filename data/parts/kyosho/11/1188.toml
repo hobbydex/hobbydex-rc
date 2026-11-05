@@ -11,3 +11,6 @@ fits = [
   { kit = "kit/kyosho/inferno-mp7-5", type = "replaces", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the MP-7.5 (option part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
 ]
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/washer/3x10x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

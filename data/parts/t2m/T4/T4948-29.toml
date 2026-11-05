@@ -7,7 +7,7 @@ documents = ["doc/t2m/t2m-shop"]
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-roulements-7-95x13x3-5mm-T4948_29" },
 ]
-notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4948/29."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4948/29. Colour read from the maker's product photo."
 equivalent_to = [
   { spec = "spec/bearing/7.938x13x3.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
@@ -17,3 +17,4 @@ applies_to = ["Pirate Puncher S"]
 fits = [
   { kit = "kit/t2m/pirate-puncher-s", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Puncher S (link_car_kits.py)" },
 ]
+color = "silver"

@@ -13,3 +13,6 @@ fits = [
   { kit = "kit/lrp/s18-monster-truck", type = "direct", source = "doc/lrp/110800-de-manual" },
 ]
 documents = ["doc/lrp/110700-de-manual", "doc/lrp/110800-de-manual"]
+equivalent_to = [
+  { spec = "spec/nut/m2.6-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

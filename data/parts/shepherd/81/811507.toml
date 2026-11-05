@@ -13,3 +13,7 @@ category = "shock-spring"
 color = "red"
 rate = "hard"
 range = "shepherd/shock-spring-v-rate-springs"
+fits = [
+  { kit = "kit/shepherd/velox-e8", releases = ["release/shepherd/velox-e8-4s"], type = "replaces", source = "doc/shepherd/manual-velox-e8-4s", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/shepherd/velox-v8", releases = ["release/shepherd/velox-v8-ec", "release/shepherd/velox-v8-wc"], type = "replaces", source = "doc/shepherd/v8-ec-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
