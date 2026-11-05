@@ -759,7 +759,7 @@ def main():
                 errors.append(f"{path}: parse error: {e}")
                 continue
             rel = os.path.relpath(path, ROOT)
-            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml"):
+            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml"):
                 continue   # retired ids and confirmed pairs, checked below; reviewed numbers are audit-only (audit.py)
             top = rel.split(os.sep)[0]
             kind = next((k for k, v in KINDS.items() if v["dir"] == top), None)

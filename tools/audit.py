@@ -865,6 +865,15 @@ def reviewed_distinct(path):
         return {r["number"] for r in tomllib.load(fh).get("reviewed", [])}
 
 
+def usa_spare_reviewed(path):
+    """The (part, Tamiya USA page) pairs checked by eye (data/usa-spare-reviewed.toml: a [[reviewed]] table per pair
+    with its verdict and evidence). A missing file gives none."""
+    if not os.path.exists(path):
+        return set()
+    with open(path, "rb") as fh:
+        return {(r["part"], r["usa"]) for r in tomllib.load(fh).get("reviewed", [])}
+
+
 def both_reviewed(a, b, reviewed):
     """Both numbers of a pair are reviewed as two different parts (reviewed_distinct): not a misread of each other."""
     return str(a["number"]) in reviewed and str(b["number"]) in reviewed
@@ -1695,8 +1704,11 @@ def main():
     usa_rows = []
     if os.path.exists(usa_tsv):
         with open(usa_tsv, encoding="utf-8") as fh:
-            usa_rows = [{"id": row["part"], "reason": row["reason"], "usa": row["usa_names"]} for row in csv.DictReader(fh, delimiter="\t")]
-    check("tamiya-usa-spare-mismatch", "a Tamiya USA spare page that names another part (name or size differs) or several pages: check the two names in cache/notes/tamiya/tamiya-usa-spares.tsv and link by hand or leave unlinked",
+            usa_rows = [{"id": row["part"], "reason": row["reason"], "usa": row["usa_names"], "url": row["usa_urls"]}
+                        for row in csv.DictReader(fh, delimiter="\t")]
+    reviewed_usa = usa_spare_reviewed(os.path.join(RC, "data", "usa-spare-reviewed.toml"))   # checked by eye: leaves the class
+    usa_rows = [r for r in usa_rows if (r["id"], r["url"]) not in reviewed_usa]
+    check("tamiya-usa-spare-mismatch", "a Tamiya USA spare page that names another part (name or size differs) or several pages: check the two names in cache/notes/tamiya/tamiya-usa-spares.tsv and link by hand or leave unlinked; pairs checked by eye are in data/usa-spare-reviewed.toml",
           usa_rows, count=len(usa_rows))
     tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamico-spares.tsv")
     conflicts = []
