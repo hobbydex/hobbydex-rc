@@ -806,6 +806,20 @@ def text_layer_numbers(path):
     return out
 
 
+def reviewed_distinct(path):
+    """The Tamiya numbers reviewed as two different parts (data/reviewed-distinct.toml: a [[reviewed]] table per
+    number, with its name, manual and page). A missing file gives none."""
+    if not os.path.exists(path):
+        return set()
+    with open(path, "rb") as fh:
+        return {r["number"] for r in tomllib.load(fh).get("reviewed", [])}
+
+
+def both_reviewed(a, b, reviewed):
+    """Both numbers of a pair are reviewed as two different parts (reviewed_distinct): not a misread of each other."""
+    return str(a["number"]) in reviewed and str(b["number"]) in reviewed
+
+
 def printed_pair(a, b, printed):
     """Both numbers of a twin pair are printed in a maker text layer: two parts, not one misread number."""
     return str(a["number"]) in printed and str(b["number"]) in printed
@@ -1840,19 +1854,22 @@ def main():
         if p.get("name_source") == "ocr" and p.get("number"):
             by_name[(brand_of(p), p["name"].strip().lower())].append(p)
     # pairs confirmed as two parts (data/confirmed-distinct.toml: each number printed in a manual) are not twins,
-    # nor are pairs whose both numbers a maker text layer prints (the text-layer index, tools/ocr_numbers.py)
+    # nor are pairs whose both numbers a maker text layer prints (the text-layer index, tools/ocr_numbers.py), nor
+    # pairs whose both numbers are reviewed as two parts (data/reviewed-distinct.toml)
     confirmed = set()
     cd = os.path.join(RC, "data", "confirmed-distinct.toml")
     if os.path.exists(cd):
         with open(cd, "rb") as fh:
             confirmed = {frozenset(p["parts"]) for p in tomllib.load(fh).get("pair", [])}
     printed = text_layer_numbers(tools["text_layer"])
+    reviewed = reviewed_distinct(os.path.join(RC, "data", "reviewed-distinct.toml"))   # both numbers reviewed: two parts
     twins = []
     for group in by_name.values():
         for i, a in enumerate(group):
             for b in group[i + 1:]:
                 if near(str(a["number"]), str(b["number"])) and frozenset((a["id"], b["id"])) not in confirmed \
-                        and not printed_pair(a, b, printed):
+                        and not printed_pair(a, b, printed) \
+                        and not both_reviewed(a, b, reviewed):
                     twins.append((a, b))
     check("ocr-number-twins", "settle the number: the scan's digit may be misread (5/6, 3/8, 0/8, 1/7); check the maker's page and fold the wrong one into the right one",
           [x["id"] for pair in twins for x in pair], count=len(twins), per_brand=per_brand([a for a, _ in twins]))
