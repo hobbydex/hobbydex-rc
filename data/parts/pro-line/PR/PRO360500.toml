@@ -8,6 +8,9 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/pro-line-racing-1-16-2021-ford-mustang-cobra-jet-clear-body-losi-mini-drag-car/PRO360500.html" },
 ]
 applies_to = "Losi Mini Drag Car"
+fits = [
+  { kit = "kit/losi/mini-drag", type = "replaces", source = "doc/pro-line/horizon-pages", notes = "Listed for the Losi Mini Drag Car (link_car_kits.py)" },
+]
 gtin = "675118180731"
 category = "body"
 depicts = { make = "Ford", model = "Mustang Cobra Jet", year = 2021 }
