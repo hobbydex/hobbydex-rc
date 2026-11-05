@@ -1250,7 +1250,7 @@ mini Tamiya, JST-RCY, JST-XH (`jst-xh`, and `jst-xh-3` to `jst-xh-9` for the
 with two bevelled corners and `servo-futaba`, the Futaba J plug with a lip;
 they plug into each other but are two shapes), bullets by diameter
 (`bullet-4mm`, `bullet-3.5mm`), `banana-4mm`, LRP's `us-style` ("US style", no size stated) and `p5`
-("P5", LRP's 5 mm power plug). Fields: `family`, `pins`
+("P5", LRP's 5 mm power plug), and Amass's own families from its product pages: MT30, MT60, AS120 (2+4, anti-spark), AS250, XT90H, XT120 (2+2 and 2+4), MR30, MR60 and ICM 3+7 (no current for MR30 and MR60, whose two Amass pages disagree), plus `bullet-5.5mm` (Horizon's Dynamite page). Fields: `family`, `pins`
 (the contact count, when a family has one), `pitch_mm` (contact spacing),
 `contact_mm` (pin or bullet diameter), `anti_spark` and `polarized`
 (booleans), and `polarization` (how the housing keys, in words). A current is set
@@ -1289,6 +1289,8 @@ that `connectors` is only on wire parts, and that a part has not both
 A battery or ESC is not equivalent to its plug either: it names its plug in
 `connector` (the site links that field to the spec) and has no `equivalent_to`
 row to a connector spec.
+
+A wire part of Amass (brand/amass) whose name gives no plug takes the family of its own model number ("MR30PB-F-M" is MR30, "XT120-2+4-F-M" is XT120); the number is the maker's own model, not a title.
 
 A wire part whose name gives no plug (a bare "Connector") takes the plug of a title on its brand's own page, in the field right before its item number ("Spektrum Connector: IC3 Battery (2) Spektrum - SPMXCA302"). Horizon Hobby's pages count for Spektrum, ARRMA, ECX, Axial, Losi and Dynamite. Stored rows are never removed or changed by the linker (tools/link_connector_specs.py).
 

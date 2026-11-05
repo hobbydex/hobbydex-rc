@@ -600,6 +600,8 @@ PLUG_SPEC = {
     "JR": "servo-jr", "Futaba": "servo-futaba", "JR/Futaba": ("servo-jr", "servo-futaba"), "Traxxas iD": "traxxas-trx-id", "Traxxas high-current": "traxxas-high-current",
     "2mm bullet": "bullet-2mm", "3.5mm bullet": "bullet-3.5mm", "4mm bullet": "bullet-4mm", "5mm bullet": "bullet-5mm",
     "6mm bullet": "bullet-6mm", "6.5mm bullet": "bullet-6.5mm", "8mm bullet": "bullet-8mm", "4mm banana": "banana-4mm",
+    "5.5mm bullet": "bullet-5.5mm", "MT30": "mt30", "MT60": "mt60", "AS120": "as120", "AS250": "as250", "XT120": "xt120",
+    "XT90H": "xt90h", "MR30": "mr30", "MR60": "mr60", "ICM 3+7": "icm-3-7",
 }
 
 # charger fields (docs/schema.md "Chargers"): what a charger charges and with which plugs, each stated by the maker
