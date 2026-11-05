@@ -7,3 +7,6 @@ seen_by_source = "doc/kyosho/30023-stalionshin-m"
 documents = ["doc/kyosho/30023-stalionshin-m"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m3x22-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

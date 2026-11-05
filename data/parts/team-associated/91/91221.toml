@@ -2,6 +2,8 @@ id = "part/team-associated/91221"
 brand = "brand/team-associated"
 number = "91221"
 name = "SC10B Front Wheels, chrome"
+seen_by = "2013-09-10"
+seen_by_source = "https://web.archive.org/web/20130910225200/http://teamassociated.com/pictures/products/91221/91221_sm.jpg"
 name_source = "dealer"
 category = "wheel"
 gtin = "784695912212"
@@ -12,3 +14,6 @@ links = [
 color = "chrome"
 vehicle = "short-course"
 position = "front"
+fits = [
+  { kit = "kit/team-associated/sc10b", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

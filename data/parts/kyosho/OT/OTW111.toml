@@ -9,5 +9,8 @@ documents = ["doc/kyosho/vintage-160304-2-jp"]
 category = "chassis"
 fits = [
   { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/optima", type = "replaces", replaces = "part/kyosho/OT219S", source = "doc/kyosho/vintage-160304-2-jp", notes = "Same part in another material (link_upgrades.py)" },
 ]
 notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+material = "aluminium"
+material_grade = "7075"

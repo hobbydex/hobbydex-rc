@@ -7,7 +7,7 @@ documents = ["doc/t2m/t2m-shop"]
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-roulements-6-35x9-53x3-17mm-1-10-T4965_27" },
 ]
-notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4965/27."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4965/27. Colour read from the maker's product photo."
 equivalent_to = [
   { spec = "spec/bearing/6.35x9.525x3.175", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
@@ -17,3 +17,4 @@ applies_to = ["Pirate Buster"]
 fits = [
   { kit = "kit/t2m/pirate-buster", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate Buster (link_car_kits.py)" },
 ]
+color = "silver"

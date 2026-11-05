@@ -8,3 +8,7 @@ documents = ["doc/kyosho/30021-tf-5-m"]
 category = "nut"
 name_source = "manual"
 color = "blue"
+material = "steel"
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

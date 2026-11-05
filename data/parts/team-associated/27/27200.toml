@@ -2,12 +2,15 @@ id = "part/team-associated/27200"
 brand = "brand/team-associated"
 number = "27200"
 name = "Reedy 1216-C2 Dual AC/DC Competition Balance Charger"
+gtin = "784695272002"
 seen_by = "2016-06-05"
 seen_by_source = "https://web.archive.org/web/20160605074215/https://www.teamassociated.com/pictures/products/27200/27200_sm.jpg"
 documents = ["doc/team-associated/manual-cr12-40005-2"]
-category = "misc"
-category_source = "fallback"
+category = "charger"
 name_source = "manufacturer"
 links = [
   { site = "Team Associated", url = "https://60years.associatedelectrics.com/reedy-1216-c2-dual-ac-dc-competition-balance-charger/" },
 ]
+charges = ["lipo", "life", "nimh", "nicd", "pb"]
+lipo_cells = [1, 6]
+charger_source = "https://60years.associatedelectrics.com/reedy-1216-c2-dual-ac-dc-competition-balance-charger/"

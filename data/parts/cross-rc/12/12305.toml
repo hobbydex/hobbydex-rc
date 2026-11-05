@@ -5,3 +5,6 @@ name = "Hex Flange Lock Nut (M5)"
 documents = ["doc/cross-rc/emo-x1-manual", "doc/cross-rc/emo-x2-manual", "doc/cross-rc/emo-x3-manual", "doc/cross-rc/emo-x6-manual", "doc/cross-rc/emo-xl-manual", "doc/cross-rc/emo-xl2-manual", "doc/cross-rc/emo-xl3-manual", "doc/cross-rc/emo-xx-manual", "doc/cross-rc/emo-xx2-manual", "doc/cross-rc/emo-xxl-manual", "doc/cross-rc/emo-xxl2-manual", "doc/cross-rc/ut4-manual", "doc/cross-rc/ut4-pro-manual", "doc/cross-rc/yikongrc-net"]
 category = "nut"
 name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/nut/m5-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -4,6 +4,8 @@ number = "2570"
 name = "4x20mm Roundhead Machine Screws"
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
 documents = ["doc/traxxas/41096-3-exploded-chassis-assembly"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m4x20-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

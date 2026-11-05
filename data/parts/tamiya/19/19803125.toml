@@ -2,7 +2,13 @@ id = "part/tamiya/19803125"
 brand = "brand/tamiya"
 number = "19803125"
 name = "2mm Nut (Small)"
+pack_qty = 10
+pack_qty_basis = "page"
 documents = ["doc/tamiya/47374-manual-de"]
 notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 category = "nut"
+links = [ { site = "tamico.de", url = "https://tamico.de/Tamiya-19803125-AP2mm-SPECIAL-NUT2x3x210pcs47374", kind = "dealer" } ]
+equivalent_to = [
+  { spec = "spec/nut/m2-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

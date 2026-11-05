@@ -2,5 +2,11 @@ id = "part/team-associated/7240"
 brand = "brand/team-associated"
 number = "7240"
 name = "6x3x2mm Steel Washer"
+gtin = "784695072404"
 documents = ["doc/team-associated/manual-prosc4x4-7063-2017"]
 category = "washer-shim"
+links = [ { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/washers-6x3x2-mm-steel/" } ]
+material = "steel"
+equivalent_to = [
+  { spec = "spec/washer/3x6x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

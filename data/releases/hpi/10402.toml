@@ -6,10 +6,13 @@ name = "NITRO RS4 MT 2"
 power = "nitro"
 power_source = "part/hpi/15101"
 status = "discontinued"
-seen_by = "2013-10"
-seen_by_source = "https://web.archive.org/web/20131014141852/http://www.hpiracing.com:80/en/kit/10402"
+seen_by = "2003"
+seen_by_source = "https://www.rcscrapyard.net/hpi-mt-2.htm"
 documents = ["doc/hpi/10402-kit-page", "doc/hpi/12002-nitro-mt2-glb-m-v2"]
 notes = "Release year unknown; HPI's pages state none"
+links = [
+  { site = "RC Scrapyard", url = "https://www.rcscrapyard.net/hpi-mt-2.htm", kind = "fan-site" },
+]
 contains = [
   { part = "part/hpi/15101", role = "kit", source = "doc/hpi/10402-kit-page" },
   { part = "part/hpi/15126", role = "kit", source = "doc/hpi/10402-kit-page" },

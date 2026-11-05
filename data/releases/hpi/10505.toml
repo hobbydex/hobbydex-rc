@@ -7,10 +7,13 @@ kind = "kit"
 power = "nitro"
 power_source = "part/hpi/87504"
 status = "discontinued"
-seen_by = "2013-12"
-seen_by_source = "https://web.archive.org/web/20131216004319/http://www.hpiracing.com/en/kit/10505"
+seen_by = "2006"
+seen_by_source = "https://www.rcscrapyard.net/hpi-hellfire-ss.htm"
 documents = ["doc/hpi/10505-kit-page", "doc/hpi/12009-hellfire-ss-glb-m-v1"]
 notes = "Release year unknown; HPI's pages state none"
+links = [
+  { site = "RC Scrapyard", url = "https://www.rcscrapyard.net/hpi-hellfire-ss.htm", kind = "fan-site" },
+]
 contains = [
   { part = "part/hpi/50474", role = "kit", source = "doc/hpi/10505-kit-page" },
   { part = "part/hpi/6163", role = "kit", source = "doc/hpi/10505-kit-page" },

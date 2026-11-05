@@ -6,6 +6,7 @@ seen_by = "2013-01-16"
 seen_by_source = "https://web.archive.org/web/20130116232942/http://www.serpent.com:80/product/600661"
 fits = [
   { kit = "kit/serpent/srx8-gte", type = "direct", source = "doc/serpent/srx8-gte-rtr-parts", notes = "Also listed by doc/serpent/srx8-gte-rtr-options; Same part in another material as part/serpent/600634 (link_upgrades.py)" },
+  { kit = "kit/serpent/cobra-gt", type = "replaces", replaces = "part/serpent/600634", source = "doc/serpent/600049-s811-gt-rtr-manual-lr", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "Serpent", url = "https://serpent.com/products/ser600661" },

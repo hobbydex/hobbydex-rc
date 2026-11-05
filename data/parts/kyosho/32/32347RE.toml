@@ -2,6 +2,7 @@ id = "part/kyosho/32347RE"
 brand = "brand/kyosho"
 number = "32347RE"
 name = "MINI-Z RWD Series Ready Set MAZDA 787B No.55 LM 1991 Winner"
+status = "discontinued"
 released = "2023-10"
 gtin = "4548565453412"
 documents = ["doc/kyosho/32347re-product-page"]
@@ -9,5 +10,6 @@ category = "misc"
 category_source = "fallback"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "replaces", source = "doc/kyosho/32347re-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/mini-z-rwd", type = "replaces", source = "doc/kyosho/32347re-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/32347re.html" } ]

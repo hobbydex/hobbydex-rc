@@ -7,3 +7,6 @@ seen_by_source = "doc/kyosho/30065-ultima-rt5-im"
 documents = ["doc/kyosho/30065-ultima-rt5-im"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m4x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,11 +2,13 @@ id = "part/kyosho/32894G"
 brand = "brand/kyosho"
 number = "32894G"
 name = "MINI-Z Racer MR-04EVO2 Chassis Set (W-MM/5600KV) w.V2 Gyro"
+status = "discontinued"
 released = "2025-07"
 gtin = "4548565497409"
 documents = ["doc/kyosho/32894g-product-page"]
 category = "radio"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-04", type = "replaces", source = "doc/kyosho/32894g-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/kyosho/mini-z-mr-04evo2", type = "replaces", source = "doc/kyosho/32894g-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/32894g.html" } ]

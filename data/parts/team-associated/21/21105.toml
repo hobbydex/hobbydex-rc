@@ -6,9 +6,12 @@ gtin = "784695999886"
 seen_by = "2010-12-18"
 seen_by_source = "https://web.archive.org/web/20101218193046/http://teamassociated.com/pictures/products/21105/21105_sm.jpg"
 documents = ["doc/team-associated/20110-drawing-18b-mt-t"]
-category = "misc"
-category_source = "fallback"
+category = "bearing"
 name_source = "manufacturer"
 links = [
   { site = "Team Associated", url = "https://60years.associatedelectrics.com/bearings-4x8x3-mm-rubber-sealed/" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

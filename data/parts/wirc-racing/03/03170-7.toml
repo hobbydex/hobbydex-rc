@@ -11,3 +11,6 @@ category = "shock-spring"
 color = "red"
 rate_lb_in = 2.3
 range = "wirc-racing/shocks-spring-rate-springs"
+fits = [
+  { kit = "kit/wirc-racing/lm16-4", releases = ["release/wirc-racing/lm16-4"], type = "replaces", source = "doc/wirc-racing/lm16-4-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

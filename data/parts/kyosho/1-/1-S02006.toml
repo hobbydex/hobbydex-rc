@@ -2,6 +2,7 @@ id = "part/kyosho/1-S02006"
 brand = "brand/kyosho"
 number = "1-S02006"
 name = "Bind Screw (M2.0x6)"
+gtin = "4548565382163"
 name_source = "manual"
 pack_qty = 10
 pack_qty_basis = "manual"
@@ -10,3 +11,7 @@ fits = [
 ]
 documents = ["doc/kyosho/32522gm-minizcr-t02-sp"]
 category = "screw"
+links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s02006.html" } ]
+equivalent_to = [
+  { spec = "spec/screw/m2x6-truss-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

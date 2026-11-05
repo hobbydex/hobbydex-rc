@@ -4,6 +4,8 @@ number = "2559"
 name = "Roundhead Machine Screws (3x8mm)"
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
 documents = ["doc/traxxas/24054-61-exploded-front-assembly", "doc/traxxas/36054-61-exploded-front-assembly", "doc/traxxas/37054-61-exploded-front-assembly"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
