@@ -449,11 +449,12 @@ def horizon_no_page(part, docs, gone):
 
 def horizon_doc_no_page(doc, horizon):
     """True when a Horizon-brand document lacks the maker page that lists it. A product_page or owner_report is itself
-    the page, and a video has no listing page by nature."""
+    the page, and a video has no listing page by nature. A catalog is a site-level record (the brand's part pages, its
+    product sitemap), whose url is a home page or sitemap, so it has no listing page to give."""
     return doc.get("brand") in horizon and not doc.get("page") and doc.get("kind") not in HORIZON_PAGE_KINDS
 
 
-HORIZON_PAGE_KINDS = ("product_page", "owner_report", "video")
+HORIZON_PAGE_KINDS = ("product_page", "owner_report", "video", "catalog")
 
 
 def horizon_gone_items(tools):

@@ -30,7 +30,7 @@ jobs:
         run: python3 -I tools/validate.py
       - name: Tests of the audit checks and the retired kit list
         run: |
-          for t in test_audit_manual_kind test_audit_archive_files test_audit_twins_diffs test_yeah_models_not_retired test_audit_placeholder_title test_audit_english_twin; do
+          for t in test_audit_manual_kind test_audit_archive_files test_audit_twins_diffs test_yeah_models_not_retired test_audit_placeholder_title test_audit_english_twin test_audit_horizon_doc; do
             echo "== $t"
             python3 -I "tools/$t.py"
           done
