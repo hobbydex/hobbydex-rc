@@ -701,6 +701,7 @@ def load_tools(tools):
     tamico = os.path.join(tools, "cache", "notes", "tamiya", "tamico-names.tsv")
     if os.path.exists(tamico):
         out["tamico"] = tamico
+    out["text_layer"] = os.path.join(tools, "cache", "notes", "tamiya", "text-layer-numbers.tsv")
     out["sources"] = load_art_sources(tools)
     out["gtin_holes"] = load_gtin_holes(tools)
     out["linker_drift"] = load_linker_drift(tools)
@@ -789,6 +790,25 @@ def near_dup_key(model):
 
 def norm_name(name):
     return " ".join(re.sub(r"[^a-z0-9]+", " ", name.lower()).split())
+
+
+def text_layer_numbers(path):
+    """The numbers a maker text layer prints: the first column of cache/notes/<brand>/text-layer-numbers.tsv
+    (written by tools/ocr_numbers.py --build-text). A missing file gives none."""
+    if not path or not os.path.exists(path):
+        return set()
+    out = set()
+    with open(path, encoding="utf-8") as fh:
+        for line in fh:
+            if line.startswith("#") or line.startswith("number\t") or not line.strip():
+                continue
+            out.add(line.split("\t")[0])
+    return out
+
+
+def printed_pair(a, b, printed):
+    """Both numbers of a twin pair are printed in a maker text layer: two parts, not one misread number."""
+    return str(a["number"]) in printed and str(b["number"]) in printed
 
 
 def twin_pairs(parts):
@@ -1819,17 +1839,20 @@ def main():
     for p in parts:
         if p.get("name_source") == "ocr" and p.get("number"):
             by_name[(brand_of(p), p["name"].strip().lower())].append(p)
-    # pairs confirmed as two parts (data/confirmed-distinct.toml: each number printed in a manual) are not twins
+    # pairs confirmed as two parts (data/confirmed-distinct.toml: each number printed in a manual) are not twins,
+    # nor are pairs whose both numbers a maker text layer prints (the text-layer index, tools/ocr_numbers.py)
     confirmed = set()
     cd = os.path.join(RC, "data", "confirmed-distinct.toml")
     if os.path.exists(cd):
         with open(cd, "rb") as fh:
             confirmed = {frozenset(p["parts"]) for p in tomllib.load(fh).get("pair", [])}
+    printed = text_layer_numbers(tools["text_layer"])
     twins = []
     for group in by_name.values():
         for i, a in enumerate(group):
             for b in group[i + 1:]:
-                if near(str(a["number"]), str(b["number"])) and frozenset((a["id"], b["id"])) not in confirmed:
+                if near(str(a["number"]), str(b["number"])) and frozenset((a["id"], b["id"])) not in confirmed \
+                        and not printed_pair(a, b, printed):
                     twins.append((a, b))
     check("ocr-number-twins", "settle the number: the scan's digit may be misread (5/6, 3/8, 0/8, 1/7); check the maker's page and fold the wrong one into the right one",
           [x["id"] for pair in twins for x in pair], count=len(twins), per_brand=per_brand([a for a, _ in twins]))
