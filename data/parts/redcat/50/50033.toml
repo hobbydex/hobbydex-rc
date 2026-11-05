@@ -2,10 +2,13 @@ id = "part/redcat/50033"
 brand = "brand/redcat"
 number = "50033"
 links = [{ site = "Redcat Racing", url = "https://www.redcatracing.com/products/50033" }]
-name = "50033"
+name = "Center Differential Shaft and Washers"
 gtin = "609132477300"
 seen_by = "2020-09-25"
 seen_by_source = "https://web.archive.org/web/20200925160511/https://dealer.redcatracing.com/manuals/94054-RampageDunerunnerManual.pdf"
-notes = "Named by its number only: the name on the scanned redcat manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
+category = "differential"
+applies_to = "RAMPAGE MT, RAMPAGE DUNERUNNER"
+fits = [
+  { kit = "kit/redcat/rampage-dunerunner", type = "direct", source = "doc/redcat/store" },
+]
+name_source = "manufacturer"
