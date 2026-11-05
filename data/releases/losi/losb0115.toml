@@ -13,5 +13,9 @@ notes = "Number and name from the RC Scrapyard archive listing of the maker's pa
 links = [{ site = "RC Scrapyard", url = "https://www.rcscrapyard.net/losi.htm", kind = "fan-site" }, { site = "Losi", url = "https://www.horizonhobby.com/product/-/LOSB0115.html", gone = "2026-11-04" }]
 
 documents = ["doc/losi/valkyrie-xxx-sct-rtr-tuff-country-0115-exploded-view", "doc/losi/valkyrie-xxx-sct-rtr-tuff-country-0115-manual"]
+contains = [
+  { part = "part/dynamite/DYN4940", role = "kit", source = "doc/losi/valkyrie-xxx-sct-rtr-tuff-country-0115-manual" },
+  { part = "part/dynamite/DYN4942", role = "kit", source = "doc/losi/valkyrie-xxx-sct-rtr-tuff-country-0115-manual" },
+]
 [sources]
 kind = "https://www.rcscrapyard.net/losi.htm"
