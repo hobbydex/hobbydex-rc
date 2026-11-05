@@ -447,6 +447,12 @@ def horizon_no_page(part, docs, gone):
     return bool(IMAGE_URL.search(src))
 
 
+def doc_no_page_or_url(doc):
+    """True when a document has neither the maker page that lists it nor a url. A video is never counted: its url is the
+    video itself (YouTube), the page people open, so it needs no separate page (coordinator decision, 2026-11-05)."""
+    return not doc.get("page") and not doc.get("url") and doc.get("kind") != "video"
+
+
 def horizon_doc_no_page(doc, horizon):
     """True when a Horizon-brand document lacks the maker page that lists it. A product_page or owner_report is itself
     the page, and a video has no listing page by nature. A catalog is a site-level record (the brand's part pages, its
@@ -1434,9 +1440,9 @@ def main():
             hits.append(k)
     check("kit-mixed-scale", "set the kit's scale to the one the releases share, and give a release scale that differs from the kit a note that states its source (a catch-all group kit, notes \"Group for ...\", is skipped)", hits)
 
-    # 18. document without page or url
+    # 18. document without page or url (a video is its own page: its url is the video, so it is never counted)
     check("doc-no-page-or-url", "give the document a page (the maker's page that lists it) or a url",
-          [d for d in docs.values() if not d.get("page") and not d.get("url")])
+          [d for d in docs.values() if doc_no_page_or_url(d)])
 
     # 19. release lists a document that does not list the release back
     # both sides: a release lists a document that does not list it, or a document lists a release that does not list it
