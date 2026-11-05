@@ -346,6 +346,14 @@ def archive_files(docs, resolve):
     return out
 
 
+def record_gap(matches, excluded):
+    """'record' when a document record matches a cached PDF (by its file, its address or its name), 'gap' when none
+    does, 'left out' when none does and the file is excluded (a safety sheet or notice, a static Tamiya kit)."""
+    if matches:
+        return "record"
+    return "left out" if excluded else "gap"
+
+
 def drop_copies_of_linked(cache, unlinked, linked_files):
     """The unlinked cached files (paths relative to the cache) that are not a byte-identical copy of a linked file of the
     same brand (second path part): same size first, then the SHA-256."""
@@ -1227,6 +1235,9 @@ def main():
         # a linked archive document (no file of its own) is linked to the PDF its listing page gives it
         arch_by_path = archive_files({i: d for i, d in docs.items() if i in linked_docs}, tools["archive_resolve"])
         unlinked = []
+        no_record = []       # cached files no document record matches (gap "cached-manual-no-record")
+        no_record_no_kind = []   # of those, the names that state no manual kind
+        any_record = []      # cached files some document record matches, linked or not
         linked_files = []    # cached files a linked document matches (by name or address): their copies count as linked
         via_archive = 0      # cached files a linked archive document's listing page gives as its file
         not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
@@ -1248,9 +1259,17 @@ def main():
             if arch:
                 via_archive += 1
                 ds = ds + [d for d in arch if d not in ds]
+            stem = re.sub(r"(?i)\.pdf$", "", name)
+            # a cached PDF no document record matches at all (linked or not): a gap of its own, see below
+            state = record_gap(ds, excluded=not_manual_name(stem) or tamiya_static_non_rc(rel_path, tamiya_numbers))
+            if state == "record":
+                any_record.append(rel_path)
+            elif state == "gap":
+                no_record.append(rel_path)
+                if tools["manual_kind"] and tools["manual_kind"](stem) is None:
+                    no_record_no_kind.append(rel_path)
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
-                stem = re.sub(r"(?i)\.pdf$", "", name)
                 if not ds and tamiya_static_non_rc(rel_path, tamiya_numbers):
                     not_rc += 1
                     continue
@@ -1267,6 +1286,14 @@ def main():
         n_before = len(unlinked)
         unlinked = drop_copies_of_linked(tools["cache"], unlinked, linked_files)
         copies = n_before - len(unlinked)
+        # the same files, counted by the record they lack: a PDF no document record names by its file, its address or its
+        # name slug; a byte-identical copy of a file that has a record is that record's file, not a gap
+        n_no_record = len(no_record)
+        no_record = drop_copies_of_linked(tools["cache"], no_record, any_record)
+        check("cached-manual-no-record", "write a document record for the cached PDF (file, page, url, kind) and list it in its release's documents (tools/link_manual_numbers.py); a file the names of no release state needs a link by hand",
+              [{"id": u} for u in no_record], count=len(no_record),
+              detail=f"{n_no_record - len(no_record)} byte-identical copies of a file that has a record are not counted; "
+                     f"{len(no_record_no_kind)} of the cached PDFs (before copies) name no manual kind")
         check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked, and so does the PDF a linked archive document's listing page gives",
               [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5],
               detail=f"{kind_unknown} of them name no manual kind (kind unknown: read the cover or the name); "
