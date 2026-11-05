@@ -1,6 +1,10 @@
 id = "part/tamiya/54185"
 brand = "brand/tamiya"
 number = "54185"
+former_ids = ["part/tamiya/51240"]
+numbers = ["51240"]
+notes = "Merged from part/tamiya/51240 (Tamiya's 51240, 'Was' number of the same item): the dealer page for 54185 names it 'Tamiya Tyre K Fr 62/25 was 51240'."
+ocr_names = ["Front Tires"]
 name = "Dual Block Tires K (4WD/Front, 62/25)"
 gtin = "4950344541850"
 fits = [
@@ -16,10 +20,7 @@ fits = [
   { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/54185-product-page-ja" },
 ]
 category = "tire"
-links = [
-  { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/8025-54185", kind = "fan-site" },
-  { site = "Tamiya", url = "https://www.tamiya.com/english/products/54185/index.html" },
-]
+links = [ { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/8025-54185", kind = "fan-site" }, { site = "Tamiya", url = "https://www.tamiya.com/english/products/54185/index.html" }, { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7528-51240", kind = "fan-site" } ]
 position = "front-4wd"
 released = "2009-11"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/54185-product-page-ja"]
