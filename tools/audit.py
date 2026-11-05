@@ -447,13 +447,20 @@ def horizon_no_page(part, docs, gone):
     return bool(IMAGE_URL.search(src))
 
 
+def doc_no_page_or_url(doc):
+    """True when a document has neither the maker page that lists it nor a url. A video is never counted: its url is the
+    video itself (YouTube), the page people open, so it needs no separate page (coordinator decision, 2026-11-05)."""
+    return not doc.get("page") and not doc.get("url") and doc.get("kind") != "video"
+
+
 def horizon_doc_no_page(doc, horizon):
     """True when a Horizon-brand document lacks the maker page that lists it. A product_page or owner_report is itself
-    the page, and a video has no listing page by nature."""
+    the page, and a video has no listing page by nature. A catalog is a site-level record (the brand's part pages, its
+    product sitemap), whose url is a home page or sitemap, so it has no listing page to give."""
     return doc.get("brand") in horizon and not doc.get("page") and doc.get("kind") not in HORIZON_PAGE_KINDS
 
 
-HORIZON_PAGE_KINDS = ("product_page", "owner_report", "video")
+HORIZON_PAGE_KINDS = ("product_page", "owner_report", "video", "catalog")
 
 
 def horizon_gone_items(tools):
@@ -700,6 +707,7 @@ def load_tools(tools):
     tamico = os.path.join(tools, "cache", "notes", "tamiya", "tamico-names.tsv")
     if os.path.exists(tamico):
         out["tamico"] = tamico
+    out["text_layer"] = os.path.join(tools, "cache", "notes", "tamiya", "text-layer-numbers.tsv")
     out["sources"] = load_art_sources(tools)
     out["gtin_holes"] = load_gtin_holes(tools)
     out["linker_drift"] = load_linker_drift(tools)
@@ -748,6 +756,42 @@ def kit_without_release(kits, rels_of_kit, kit_id):
     return kit_id in kits and not kits[kit_id].get("family") and not rels_of_kit.get(kit_id)
 
 
+SUFFIX_TAIL = re.compile(r"-\d{1,2}|-?[A-Za-z][A-Za-z0-9]{0,3}")
+
+
+def number_relation(a, b):
+    """True when one item number is the other plus a suffix (34902 / 34902D, 10428 / 10428-2)."""
+    a, b = str(a or "").strip().upper(), str(b or "").strip().upper()
+    if len(a) == len(b) or not a or not b:
+        return False
+    short, long_ = (a, b) if len(a) < len(b) else (b, a)
+    return len(short) >= 5 and short[:5].isdigit() and long_.startswith(short) and SUFFIX_TAIL.fullmatch(long_[len(short):]) is not None
+
+
+def same_product_record(a, b):
+    """Whether two release records name one product: the same barcode, or the same maker page with no different barcode."""
+    if a.get("gtin") and b.get("gtin"):
+        return str(a["gtin"]) == str(b["gtin"])
+    sa, sb = a.get("released_source"), b.get("released_source")
+    return bool(sa and sb and sa.lower().rstrip("/") == sb.lower().rstrip("/"))
+
+
+def suffix_twin_pairs(rels, reviewed=frozenset()):
+    """Pairs of releases of one brand whose numbers differ only by a suffix and that name one product (same_product_record).
+    reviewed: frozensets of the two ids of pairs confirmed as distinct SKUs (data/confirmed-distinct.toml [[release_pair]])."""
+    groups = collections.defaultdict(list)
+    for r in rels:
+        if r.get("brand") and r.get("number"):
+            groups[(r["brand"], str(r["number"])[:5])].append(r)
+    out = []
+    for g in groups.values():
+        for i, a in enumerate(g):
+            for b in g[i + 1:]:
+                if number_relation(a["number"], b["number"]) and same_product_record(a, b) and frozenset((a["id"], b["id"])) not in reviewed:
+                    out.append((a, b))
+    return out
+
+
 def duplicate_fits(parts):
     """(part, [claims]) for each part with two or more fits rows naming one claim (the same kit, releases and car)."""
     out = []
@@ -788,6 +832,39 @@ def near_dup_key(model):
 
 def norm_name(name):
     return " ".join(re.sub(r"[^a-z0-9]+", " ", name.lower()).split())
+
+
+def text_layer_numbers(path):
+    """The numbers a maker text layer prints: the first column of cache/notes/<brand>/text-layer-numbers.tsv
+    (written by tools/ocr_numbers.py --build-text). A missing file gives none."""
+    if not path or not os.path.exists(path):
+        return set()
+    out = set()
+    with open(path, encoding="utf-8") as fh:
+        for line in fh:
+            if line.startswith("#") or line.startswith("number\t") or not line.strip():
+                continue
+            out.add(line.split("\t")[0])
+    return out
+
+
+def reviewed_distinct(path):
+    """The Tamiya numbers reviewed as two different parts (data/reviewed-distinct.toml: a [[reviewed]] table per
+    number, with its name, manual and page). A missing file gives none."""
+    if not os.path.exists(path):
+        return set()
+    with open(path, "rb") as fh:
+        return {r["number"] for r in tomllib.load(fh).get("reviewed", [])}
+
+
+def both_reviewed(a, b, reviewed):
+    """Both numbers of a pair are reviewed as two different parts (reviewed_distinct): not a misread of each other."""
+    return str(a["number"]) in reviewed and str(b["number"]) in reviewed
+
+
+def printed_pair(a, b, printed):
+    """Both numbers of a twin pair are printed in a maker text layer: two parts, not one misread number."""
+    return str(a["number"]) in printed and str(b["number"]) in printed
 
 
 def twin_pairs(parts):
@@ -1065,6 +1142,19 @@ def main():
     groups = [g for g in same_name.values() if len(g) > 1]
     check("duplicate-release-name", "give the releases of the group the same item number as one another only when they are one item: a duplicate is a release with the same name and number; releases with distinct item numbers are distinct",
           [r for g in groups for r in g], count=len(groups))
+
+    # 2c. releases of one brand whose item numbers differ only by a suffix (34902 and 34902D) and that name one product
+    # (the same barcode, or the same maker page with no different barcode): a twin the importers would have minted.
+    # Pairs reviewed as distinct SKUs (colour, pack or edition letters the maker sells apart) are in confirmed-distinct.toml.
+    reviewed_rel = set()
+    cdr = os.path.join(RC, "data", "confirmed-distinct.toml")
+    if os.path.exists(cdr):
+        with open(cdr, "rb") as fh:
+            reviewed_rel = {frozenset(p["releases"]) for p in tomllib.load(fh).get("release_pair", [])}
+    twins_rel = suffix_twin_pairs(rels, reviewed_rel)
+    check("release-suffix-twin", "one product under two item numbers: fold the suffixed record into the other (former_ids, the parts and documents move, retired.toml when none stays), or list the pair as distinct in data/confirmed-distinct.toml [[release_pair]] when the maker sells them apart",
+          [x["id"] for pair in twins_rel for x in pair], count=len(twins_rel), per_brand=collections.Counter(a["brand"].split("/")[-1] for a, _ in twins_rel).most_common())
+    results["release-suffix-twin"]["examples"] = [{"id": f"{a['id']} ~ {b['id']}", "url": url_for(a)} for a, b in twins_rel[:args.examples]]
 
     # 3. bearing category holding a rebuild or service kit
     check("bearing-rebuild-kit", "recategorise the part (not bearing) or remove it from the bearing list; a rebuild kit is a set of parts",
@@ -1399,9 +1489,9 @@ def main():
             hits.append(k)
     check("kit-mixed-scale", "set the kit's scale to the one the releases share, and give a release scale that differs from the kit a note that states its source (a catch-all group kit, notes \"Group for ...\", is skipped)", hits)
 
-    # 18. document without page or url
+    # 18. document without page or url (a video is its own page: its url is the video, so it is never counted)
     check("doc-no-page-or-url", "give the document a page (the maker's page that lists it) or a url",
-          [d for d in docs.values() if not d.get("page") and not d.get("url")])
+          [d for d in docs.values() if doc_no_page_or_url(d)])
 
     # 19. release lists a document that does not list the release back
     # both sides: a release lists a document that does not list it, or a document lists a release that does not list it
@@ -1818,17 +1908,23 @@ def main():
     for p in parts:
         if p.get("name_source") == "ocr" and p.get("number"):
             by_name[(brand_of(p), p["name"].strip().lower())].append(p)
-    # pairs confirmed as two parts (data/confirmed-distinct.toml: each number printed in a manual) are not twins
+    # pairs confirmed as two parts (data/confirmed-distinct.toml: each number printed in a manual) are not twins,
+    # nor are pairs whose both numbers a maker text layer prints (the text-layer index, tools/ocr_numbers.py), nor
+    # pairs whose both numbers are reviewed as two parts (data/reviewed-distinct.toml)
     confirmed = set()
     cd = os.path.join(RC, "data", "confirmed-distinct.toml")
     if os.path.exists(cd):
         with open(cd, "rb") as fh:
             confirmed = {frozenset(p["parts"]) for p in tomllib.load(fh).get("pair", [])}
+    printed = text_layer_numbers(tools["text_layer"])
+    reviewed = reviewed_distinct(os.path.join(RC, "data", "reviewed-distinct.toml"))   # both numbers reviewed: two parts
     twins = []
     for group in by_name.values():
         for i, a in enumerate(group):
             for b in group[i + 1:]:
-                if near(str(a["number"]), str(b["number"])) and frozenset((a["id"], b["id"])) not in confirmed:
+                if near(str(a["number"]), str(b["number"])) and frozenset((a["id"], b["id"])) not in confirmed \
+                        and not printed_pair(a, b, printed) \
+                        and not both_reviewed(a, b, reviewed):
                     twins.append((a, b))
     check("ocr-number-twins", "settle the number: the scan's digit may be misread (5/6, 3/8, 0/8, 1/7); check the maker's page and fold the wrong one into the right one",
           [x["id"] for pair in twins for x in pair], count=len(twins), per_brand=per_brand([a for a, _ in twins]))

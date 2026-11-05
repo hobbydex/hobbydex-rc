@@ -1,6 +1,10 @@
 # Tamiya part-number pairs confirmed as two different parts: each number is
 # printed in a manual of its own (the manual named in evidence). The audit's
 # ocr-number-twins check skips these pairs.
+#
+# [[release_pair]]: two releases whose item numbers differ by a suffix that
+# name one barcode or one maker page, and that the maker sells apart (its own
+# listing, its own number). The audit's release-suffix-twin check skips them.
 
 [[pair]]
 parts = ["part/tamiya/10005300", "part/tamiya/10005800"]
@@ -569,3 +573,11 @@ evidence = ["doc/tamiya/56022-manual-usa", "doc/tamiya/56024-manual-usa"]
 [[pair]]
 parts = ["part/tamiya/51406", "part/tamiya/51486"]
 evidence = ["doc/tamiya/58532-nissan-silvia-s13-beiblatt", "doc/tamiya/58509-toyota-toms-84c-beiblatt"]
+
+[[release_pair]]
+releases = ["release/team-associated/80939", "release/team-associated/80939R"]
+reason = "80939R is the maker's own listing of the kit refurbished (its own product page, sold out); the two share the barcode of the new kit"
+
+[[release_pair]]
+releases = ["release/xray/350021-C", "release/xray/xb8-2026"]
+reason = "350021-C is the XB8'26 kit with an FX K303 engine (a combo); 350021 is the kit alone, and the maker lists both"
