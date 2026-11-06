@@ -7,7 +7,7 @@ kind = "kit"
 status = "released"
 depicts = { make = "Toyota", model = "Land Cruiser 40" }
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58405-manual", "doc/tamiya/58405-product-page", "doc/tamiya/newitems-month", "doc/tamiya/product-classes", "doc/tamiya/spb-51331-manual", "doc/tamiya/58405-manual-usa", "doc/tamiya/58405-ersatzteilliste", "doc/tamiya/300058405-bauanleitung"]
+documents = ["doc/tamiya/58405-manual", "doc/tamiya/58405-product-page", "doc/tamiya/newitems-month", "doc/tamiya/product-classes", "doc/tamiya/spb-51331-manual", "doc/tamiya/58405-ersatzteilliste", "doc/tamiya/300058405-bauanleitung"]
 contains = [
   { part = "part/tamiya/10224011", role = "kit", source = "doc/tamiya/58405-manual" },
   { part = "part/tamiya/11050702", role = "kit", source = "doc/tamiya/58405-manual" },
@@ -118,8 +118,8 @@ contains = [
   { part = "part/tamiya/86001", role = "listed", source = "doc/tamiya/58405-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 19)" },
   { part = "part/tamiya/86031", role = "listed", source = "doc/tamiya/58405-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 19)" },
   { part = "part/tamiya/86034", role = "listed", source = "doc/tamiya/58405-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 19)" },
-  { part = "part/tamiya/19805811", role = "kit", source = "doc/tamiya/58405-manual-usa", qty = 2, step = "BC9" },
-  { part = "part/tamiya/19808178", role = "kit", source = "doc/tamiya/58405-manual-usa", step = "BA24, BA25" },
+  { part = "part/tamiya/19805811", role = "kit", source = "doc/tamiya/58405-manual", qty = 2, step = "BC9" },
+  { part = "part/tamiya/19808178", role = "kit", source = "doc/tamiya/58405-manual", step = "BA24, BA25" },
   { part = "part/tamiya/1000455", role = "kit", source = "doc/tamiya/58405-ersatzteilliste" },
 ]
 released = "2008-04-26"

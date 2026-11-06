@@ -7,13 +7,13 @@ kind = "kit"
 status = "released"
 related = [{ release = "release/tamiya/58067", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/58361" }]
 notes = "Release date from Tamiya's Japanese page; Name and chassis from the manual's cover; Not on Tamiya's current R/C car listings (read 2026-11); taken as discontinued"
-documents = ["doc/tamiya/58361-manual", "doc/tamiya/58361-parts-list-usa", "doc/tamiya/58361-product-page-ja", "doc/tamiya/58361-manual-usa", "doc/tamiya/product-classes"]
+documents = ["doc/tamiya/58361-manual", "doc/tamiya/58361-parts-list-usa", "doc/tamiya/58361-product-page-ja", "doc/tamiya/product-classes"]
 contains = [
   { part = "part/tamiya/86004", role = "listed", source = "doc/tamiya/58361-manual", notes = "Named in the manual as a paint to use, not in the box (page 19)" },
-  { part = "part/tamiya/11507", role = "listed", source = "doc/tamiya/58361-manual-usa" },
-  { part = "part/tamiya/18250", role = "listed", source = "doc/tamiya/58361-manual-usa" },
-  { part = "part/tamiya/74006", role = "listed", source = "doc/tamiya/58361-manual-usa" },
-  { part = "part/tamiya/87025", role = "listed", source = "doc/tamiya/58361-manual-usa" },
+  { part = "part/tamiya/11507", role = "listed", source = "doc/tamiya/58361-manual" },
+  { part = "part/tamiya/18250", role = "listed", source = "doc/tamiya/58361-manual" },
+  { part = "part/tamiya/74006", role = "listed", source = "doc/tamiya/58361-manual" },
+  { part = "part/tamiya/87025", role = "listed", source = "doc/tamiya/58361-manual" },
   { part = "part/tamiya/09805368", role = "kit", source = "doc/tamiya/58361-parts-list-usa", notes = "Kit needs 2 of this pack" },
   { part = "part/tamiya/09805551", role = "kit", source = "doc/tamiya/58361-parts-list-usa", qty = 2, step = "SA7", notes = "Kit needs 2 of this pack" },
   { part = "part/tamiya/09805755", role = "kit", source = "doc/tamiya/58361-parts-list-usa", qty = 4, step = "BS4", notes = "Kit needs 2 of this pack" },
