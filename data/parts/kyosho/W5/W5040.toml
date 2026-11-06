@@ -7,11 +7,11 @@ gtin = "4955439601594"
 category = "tire"
 documents = ["doc/kyosho/w5040-product-page", "doc/kyosho/mp75-777-060322"]
 fits = [
-  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
-  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31888-inferno-mp9-spop" },
-  { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31779-infmp777-sp2-p" },
   { kit = "kit/kyosho/dst", type = "replaces", source = "doc/kyosho/31097t2-dst-kt-6-mm-p" },
   { kit = "kit/kyosho/inferno-mp7-5", releases = ["release/kyosho/31192"], type = "replaces", source = "doc/kyosho/mp75-777-060322", notes = "Marked for the 7.5 SPORTS (option part) in Kyosho's Inferno MP-7.5 / MP-777 parts acceptable list" },
+  { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31779-infmp777-sp2-p" },
+  { kit = "kit/kyosho/inferno-mp9", type = "direct", source = "doc/kyosho/31888-inferno-mp9-spop" },
+  { kit = "kit/kyosho/inferno-mp9e", type = "direct", source = "doc/kyosho/30874t1-inferno-mp9e-tki-rs-spop" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/w5040.html" },
