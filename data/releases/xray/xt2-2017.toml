@@ -6,11 +6,14 @@ former_ids = ["release/xray/391127"]
 model_year = 2017
 kind = "kit"
 status = "discontinued"
-seen_by = "2021-06"
-seen_by_source = "https://web.archive.org/web/20210615104906/https://teamxray.com/xt2/2017/"
+released = "2016-09-14"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5981"
 documents = ["doc/xray/xt2-2017-exploded-view", "doc/xray/xt2-2017-manual", "doc/xray/xt2-2017-part-list", "doc/xray/xt2-2017-setup-sheet-2", "doc/xray/xt2-2017-setup-sheet", "doc/xray/xt2-2017-product-page", "doc/xray/xt2-2018-manual"]
 number = "320200"
 notes = "The number 391127 is the document code in the file names of the XRAY exploded view and part list, not an item number"
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5981" },
+]
 contains = [
   { part = "part/hudy/106000", role = "listed", source = "doc/xray/xt2-2017-part-list" },
   { part = "part/hudy/106051", role = "listed", source = "doc/xray/xt2-2017-part-list" },

@@ -7,12 +7,15 @@ kind = "kit"
 power = "nitro"
 power_source = "part/xray/338581"
 status = "discontinued"
-seen_by = "2021-12"
-seen_by_source = "https://web.archive.org/web/20211205021116/https://www.teamxray.com/rx8/2013/download/files/rx8_instruction_manual.pdf"
+released = "2013-04-26"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4462"
 notes = "teamxray.com prod_id=4170: Replaced by XRAY RX8 2013 Specs"
 supersedes = "release/xray/340001"
 documents = ["doc/xray/rx8-2013-exploded-view", "doc/xray/rx8-2013-manual", "doc/xray/rx8-2013-part-list", "doc/xray/rx8-2013-setup-sheet"]
 number = "340002"
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4462" },
+]
 contains = [
   { part = "part/xray/301159", role = "kit", source = "doc/xray/rx8-2013-manual" },
   { part = "part/xray/301159-O", role = "listed", source = "doc/xray/rx8-2013-part-list" },

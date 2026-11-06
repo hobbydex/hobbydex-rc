@@ -7,11 +7,14 @@ kind = "kit"
 power = "nitro"
 power_source = "part/xray/338590"
 status = "released"
-seen_by = "2025-05"
-seen_by_source = "https://web.archive.org/web/20250512122215/https://teamxray.com/rx8/2026/"
+released = "2025-04-26"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=9634"
 notes = "teamxray.com prod_id=8659: Replaced by XRAY RX8'26 - 1/8 Nitro On-Road Car"
 supersedes = "release/xray/340009"
 documents = ["doc/xray/rx8-2026-exploded-view", "doc/xray/rx8-2026-manual", "doc/xray/rx8-2026-part-list", "doc/xray/rx8-2026-setup-sheet-2", "doc/xray/rx8-2026-setup-sheet", "doc/xray/rx8-2026-product-page"]
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=9634" },
+]
 contains = [
   { part = "part/hudy/101600", role = "listed", source = "doc/xray/rx8-2026-part-list" },
   { part = "part/hudy/102003", role = "option", source = "doc/xray/rx8-2026-part-list" },

@@ -5,10 +5,13 @@ name = "XB8E'16"
 model_year = 2016
 kind = "kit"
 status = "discontinued"
-seen_by = "2019-08"
-seen_by_source = "https://web.archive.org/web/20190821065906/https://teamxray.com/xb8e/2016/"
+released = "2016-06-02"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5911"
 supersedes = "release/xray/xb8e-2015"
 documents = ["doc/xray/xb8e-2016-exploded-view", "doc/xray/xb8e-2016-manual", "doc/xray/xb8e-2016-part-list", "doc/xray/xb8e-2016-setup-sheet", "doc/xray/xb8e-2016-product-page"]
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5911" },
+]
 contains = [
   { part = "part/hudy/105500", role = "listed", source = "doc/xray/xb8e-2016-part-list" },
   { part = "part/hudy/105510", role = "listed", source = "doc/xray/xb8e-2016-part-list" },
