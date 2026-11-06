@@ -31,6 +31,24 @@ def test_pieces_without_a_plus_is_fillable():
     assert not audit.count_unstated(p, {})
 
 
+def test_small_items_in_bags_are_sold_in_packs():
+    for cat, name in (("screw", "M3x6 Screw"), ("nut", "Lock Nut M4"), ("nut", "Locknut"), ("pin", "Hinge Pin 2x10mm"),
+                      ("ball-end", "Ball Head Set (10)"), ("bearing", "Ceramic Bearing set 14pcs"), ("rod-end", "Rod End Set"),
+                      ("turnbuckle", "Ti Turnbuckle Set 7pcs"), ("clip", "E-Clip"), ("o-ring-seal", "O Ring For Shock")):
+        assert audit.sold_in_packs({"category": cat, "name": name}), name
+
+
+def test_a_single_item_needs_no_pack_count():
+    assert not audit.sold_in_packs({"category": "turnbuckle", "name": "Adjustable Front Tie Rod, 1/18 LM"})
+    assert not audit.sold_in_packs({"category": "rod-end", "name": "Steering Rod End"})
+    assert not audit.sold_in_packs({"category": "rod-end", "name": "Steering servo rod end"})
+    assert not audit.sold_in_packs({"category": "rod-end", "name": "Sway Bar Rod Ends"})   # no set or pack word: a single end
+
+
+def test_other_categories_are_not_hardware_packs():
+    assert not audit.sold_in_packs({"category": "wheel", "name": "Wheel Set (4)"})
+
+
 if __name__ == "__main__":
     for name, fn in sorted(globals().items()):
         if name.startswith("test_") and callable(fn):

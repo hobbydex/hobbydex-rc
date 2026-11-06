@@ -1032,6 +1032,19 @@ def gear_pitch_as_count(p):
 SPEC_KIT_NAME = re.compile(r"\b(?:rebuild|repair|maintenance|conversion)\b")
 
 
+# hardware bought in packs: the pack tools' categories (tools/link_pack_qty.py PAGE_HARDWARE) and the name words of
+# a bag of small items or a set (packqty SMALL, set, kit, pack, pair). A single turnbuckle or rod end needs no count.
+PACK_SOLD_CATS = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal", "turnbuckle", "rod-end"}
+PACK_SOLD_NAME = re.compile(r"(?i)screw|bolt|clip|\bpins?\b|shim|washer|\bnuts?\b|locknut|\bballs?\b|bearing|bushing|sleeve"
+                            r"|\bo[- ]?rings?\b|\be-?rings?\b|\bc-?rings?\b|rivet|spacer|collar|\bstuds?\b|\b(?:button|truss|countersunk|tapping|philips|grub)\b"
+                            r"|\bsets?\b|\bkits?\b|\bpacks?\b|\bpairs?\b|\bbags?\b|\bassort\w*|\bcombo\b")
+
+
+def sold_in_packs(p):
+    """True when a hardware part is one of the small items sold in packs: its category and a name word of a bag or set."""
+    return p.get("category") in PACK_SOLD_CATS and PACK_SOLD_NAME.search(p.get("name") or "") is not None
+
+
 def count_unstated(p, brands):
     """True when the maker states no exact count for a kit: a minimum (the importer's "180+ pieces." note) or none (its brand has pack_counts = false)."""
     return re.match(r"\d+\+ pieces?\b", p.get("notes", "")) is not None or brands.get(p.get("brand"), {}).get("pack_counts") is False
@@ -1768,10 +1781,10 @@ def main():
     def has_spec(p):
         return any(e.get("spec") for e in p.get("equivalent_to", [])) or any(i.get("spec") for i in p.get("includes", []))
 
-    no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes")]
+    no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes") and sold_in_packs(p)]
     fillable = [p for p in no_pack if not count_unstated(p, brands)]
     unstated = [p for p in no_pack if count_unstated(p, brands)]
-    check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes",
+    check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes; only hardware sold in packs (sold_in_packs): a single item needs no count",
           fillable, per_brand=per_brand(fillable))
     check("hw-pack-count-unstated", "nothing to fill: the maker states only a minimum count or none (informational; pack_counts = false in the brand's data marks it)",
           unstated, per_brand=per_brand(unstated), info=True)
