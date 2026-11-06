@@ -144,7 +144,11 @@ SPEC_TYPES = {
             "serrated-flange-nylon-lock", "dome", "flanged-dome", "square", "knurled", "wing", "wheel"},
     "ball-end": {"stud", "nut", "through-hole", "set-screw"},   # docs/schema.md "Ball-end specs"
     "ring-pinion": {"ring", "pinion"},   # docs/schema.md "Ring and pinion specs"
+    "spring-pin": {"slotted", "coiled"},   # docs/schema.md "Spring pin specs"; no type when the name does not say
 }
+# spring pin specs: the nominal diameters of ISO 8752 (slotted) and ISO 8750 (coiled) that RC names state
+SPRING_PIN_DIAMETERS = {1, 1.5, 2, 2.5, 3, 4, 5, 6}
+SPRING_PIN_STANDARDS = {"slotted": ["ISO 8752"], "coiled": ["ISO 8750"]}
 NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that come in a regular and a thin height
 
 # which part categories may be `equivalent_to` a spec of each kind
@@ -154,6 +158,7 @@ SPEC_PART_CATS = {
     "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
     "ball-end": {"ball-end"}, "o-ring": {"o-ring-seal"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
+    "spring-pin": {"pin"},
 }
 
 SIZE_SPEC_CATS = {"ball-end", "o-ring", "circlip"}   # specs keyed by one size, written by tools/link_*_specs.py
@@ -220,6 +225,19 @@ def inch_text(value):
         return str(whole)
     frac = f"{rest.numerator}/{rest.denominator}"
     return frac if not whole else f"{whole} {frac}"
+
+
+def spring_pin_problems(path, d):
+    """A spring pin spec: a nominal diameter of ISO 8752 / ISO 8750, a length from 2 to 100 mm, the id and the standard its type gives."""
+    dm, lm, t = d.get("diameter_mm"), d.get("length_mm"), d.get("type")
+    if dm not in SPRING_PIN_DIAMETERS or isinstance(dm, bool) or not isinstance(lm, (int, float)) or isinstance(lm, bool) or not 2 <= lm <= 100:
+        return [f"{path}: spring pin spec needs diameter_mm from {sorted(SPRING_PIN_DIAMETERS)} and length_mm from 2 to 100"]
+    errors = []
+    if d.get("id") != f"spec/spring-pin/{t + '-' if t else ''}{dm:g}x{lm:g}":
+        errors.append(f"{path}: spring pin spec id should be spec/spring-pin/{'<type>-' if t else ''}{dm:g}x{lm:g}")
+    if d.get("standards", []) != SPRING_PIN_STANDARDS.get(t, []):
+        errors.append(f"{path}: spring pin spec standards should be {SPRING_PIN_STANDARDS.get(t, [])} (its type)")
+    return errors
 
 
 def inch_screw_problems(path, d):
@@ -1377,6 +1395,8 @@ def main():
                 errors.append(f"{path}: screw pin thread {d['thread']!r} should be M{dm:g} (the diameter) unless the name states another, which is not yet in the data")
         elif kind == "spec" and d.get("category") == "pin" and "thread" in d:
             errors.append(f"{path}: thread only on screw pin specs (type screw)")
+        if kind == "spec" and d.get("category") == "spring-pin":
+            errors.extend(spring_pin_problems(path, d))
         if kind == "spec" and d.get("category") == "bearing":
             fields = [k for k in ("flange_mm", "flange_width_mm", "flange_source") if k in d]
             if fields and d.get("type") != "flanged":

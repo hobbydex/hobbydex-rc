@@ -7,3 +7,6 @@ pack_qty_basis = "manual"
 name_source = "manual"
 documents = ["doc/serpent/600049-s811-gt-rtr-manual-lr"]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x18", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
