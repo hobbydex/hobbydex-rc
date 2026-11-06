@@ -2,10 +2,12 @@ id = "part/kyosho/MB021"
 brand = "brand/kyosho"
 number = "MB021"
 name = "Screw Set"
+former_ids = ["part/kyosho/MBO21"]
+numbers = ["MBO21"]
 gtin = "4548565193400"
 category = "screw"
-documents = ["doc/kyosho/mb021-product-page"]
-notes = "Name transcribed by hand from the Spare Parts table of a Kyosho Mini-Z Buggy exploded view"
+documents = ["doc/kyosho/mb021-product-page", "doc/kyosho/32292-mini-z-buggy-mb-010ve-2-0-sp-spare-and-option-parts"]
+notes = "Name transcribed by hand from the Spare Parts table of a Kyosho Mini-Z Buggy exploded view. Merged from part/kyosho/MBO21: the letter O in the parts list code is the zero (coordinator decision 2026-11-06, class of the owner decision for MBO11)."
 fits = [
   { kit = "kit/kyosho/mini-z-buggy", type = "direct", source = "doc/kyosho/32292-mini-z-buggy-mb-010ve-2-0-sp-spare-and-option-parts" },
 ]

@@ -2,12 +2,15 @@ id = "part/kyosho/LAB07LWB"
 brand = "brand/kyosho"
 number = "LAB07LWB"
 name = "Body Set (LAZER ZX7/Lightweight)"
+notes = "Merged from part/kyosho/LABO7LWB: the letter O in the parts list code is the zero (coordinator decision 2026-11-06, class of the owner decision for MBO11)."
+former_ids = ["part/kyosho/LABO7LWB"]
+numbers = ["LABO7LWB"]
 gtin = "4548565524471"
 fits = [
-  { kit = "kit/kyosho/lazer-zx7-5", type = "replaces", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-zx7-5", releases = ["release/kyosho/34331"], type = "replaces", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
 ]
 category = "body"
-documents = ["doc/kyosho/lab07lwb-product-page"]
+documents = ["doc/kyosho/lab07lwb-product-page", "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts"]
 scale = "1/10"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/lab07lwb.html" },

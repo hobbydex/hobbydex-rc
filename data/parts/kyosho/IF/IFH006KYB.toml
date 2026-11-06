@@ -2,16 +2,19 @@ id = "part/kyosho/IFH006KYB"
 brand = "brand/kyosho"
 number = "IFH006KYB"
 name = "Dish Wheel (F-Yellow/MP9 TKI4)"
+notes = "Merged from part/kyosho/IFHO06KYB: the letter O in the parts list code is the zero (coordinator decision 2026-11-06, class of the owner decision for MBO11)."
+former_ids = ["part/kyosho/IFHO06KYB"]
+numbers = ["IFHO06KYB"]
 status = "discontinued"
 pack_qty = 4
 pack_qty_basis = "page"
 gtin = "4548565470273"
 category = "wheel"
-documents = ["doc/kyosho/ifh006kyb-product-page"]
+documents = ["doc/kyosho/ifh006kyb-product-page", "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts"]
 fits = [
   { kit = "kit/kyosho/inferno-mp10", type = "replaces", source = "doc/kyosho/33025t1s-inferno-mp10-readyset-spare-and-option-parts" },
   { kit = "kit/kyosho/inferno-mp10e", type = "replaces", source = "doc/kyosho/34113t1s-inferno-mp10e-readyset-spare-and-option-parts" },
-  { kit = "kit/kyosho/inferno-neo-4-0", type = "replaces", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
+  { kit = "kit/kyosho/inferno-neo-4-0", releases = ["release/kyosho/33029t1s"], type = "replaces", source = "doc/kyosho/33029t1s-inferno-neo-4-0-readyset-spare-and-option-parts" },
   { kit = "kit/kyosho/inferno-neo-4-0-ve", type = "replaces", source = "doc/kyosho/34118t1s-inferno-neo-4-0-ve-readyset-parts-list-with-photo" },
 ]
 color = "yellow"

@@ -2,13 +2,16 @@ id = "part/kyosho/UB013"
 brand = "brand/kyosho"
 number = "UB013"
 name = "Aluminum Rear Hub Carrier (RB7.5)"
+notes = "Merged from part/kyosho/UBO13: the letter O in the parts list code is the zero (coordinator decision 2026-11-06, class of the owner decision for MBO11)."
+former_ids = ["part/kyosho/UBO13"]
+numbers = ["UBO13"]
 gtin = "4548565494422"
 fits = [
-  { kit = "kit/kyosho/lazer-zx7-5", type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
+  { kit = "kit/kyosho/lazer-zx7-5", releases = ["release/kyosho/34331"], type = "direct", source = "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts" },
   { kit = "kit/kyosho/ultima-rb7-5", type = "direct", source = "doc/kyosho/34305-t02-ultima-rb7-5-spop" },
 ]
 category = "suspension"
-documents = ["doc/kyosho/ub013-product-page"]
+documents = ["doc/kyosho/ub013-product-page", "doc/kyosho/34331-lazer-zx7-5-spare-and-option-parts"]
 material = "aluminium"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/ub013.html" },
