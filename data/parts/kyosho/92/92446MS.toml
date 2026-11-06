@@ -8,11 +8,11 @@ seen_by_source = "doc/kyosho/31362-fw05t-p"
 category = "wheel"
 color = "silver"
 fits = [
-  { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp2-fw05jpe-p" },
-  { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
+  { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/31360-p-05tplus-chas-p" },
   { kit = "kit/kyosho/pure-ten-alpha", releases = ["release/kyosho/pure-ten-ep-alpha3"], type = "replaces", source = "doc/kyosho/ep-alpha3-060322", notes = "Marked for the Pure Ten EP alpha 3 (option part) in Kyosho's Pure Ten EP alpha 3 parts acceptable list" },
   { kit = "kit/kyosho/v-one-s", releases = ["release/kyosho/31122"], type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SII (option part) in Kyosho's V-ONE S series parts acceptable list" },
+  { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
 ]
 range = "kyosho/92446-colours"
 documents = ["doc/kyosho/31360-p-05tplus-chas-p", "doc/kyosho/31362-fw05t-p", "doc/kyosho/31380-mm01-fw05t-maint-p", "doc/kyosho/ep-alpha3-060322", "doc/kyosho/v-one-s-060322"]

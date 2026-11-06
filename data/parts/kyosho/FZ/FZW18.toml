@@ -6,9 +6,9 @@ gtin = "4955439705889"
 seen_by = "2002-12"
 seen_by_source = "doc/kyosho/31091-inferno-tr15-p"
 fits = [
+  { kit = "kit/kyosho/gp-tr-15-rally", type = "replaces", source = "doc/kyosho/31061-tr15-rally-p", replaces = "part/kyosho/OT28", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/kyosho/inferno-tr-15", type = "replaces", source = "doc/kyosho/31091-inferno-tr15-p", replaces = "part/kyosho/OT28", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/kyosho/inferno-tr-15", type = "replaces", replaces = "part/kyosho/TR35", source = "doc/kyosho/31091-inferno-tr15-p", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/kyosho/gp-tr-15-rally", type = "replaces", source = "doc/kyosho/31061-tr15-rally-p", replaces = "part/kyosho/OT28", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/kyosho/tr-15-monster-touring", type = "replaces", source = "doc/kyosho/31213-xanavinismo-gtr-p", replaces = "part/kyosho/OT28", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "differential"

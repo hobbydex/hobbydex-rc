@@ -6,15 +6,15 @@ gtin = "4955439759189"
 pack_qty = 2
 pack_qty_basis = "manual"
 fits = [
+  { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/31007-kf01-sp" },
   { kit = "kit/kyosho/lazer-zx-5", type = "direct", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
   { kit = "kit/kyosho/mini-inferno", type = "direct", source = "doc/kyosho/30125-mini-inferno-sp" },
-  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
-  { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/31007-kf01-sp" },
-  { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
+  { kit = "kit/kyosho/mini-inferno-st", type = "direct", source = "doc/kyosho/mini-inferno-061013", notes = "Marked for the ST (standard part) in Kyosho's Mini Inferno parts acceptable list" },
   { kit = "kit/kyosho/mini-z-4x4", type = "direct", source = "doc/kyosho/mini-z-4x4-series-2023-exploded-view" },
+  { kit = "kit/kyosho/optima-mid", type = "direct", source = "doc/kyosho/30622-01-optima-mid-sp" },
+  { kit = "kit/kyosho/pureten-fazer-gp", type = "direct", source = "doc/kyosho/31384-fazer-vauxhall-as-body-p" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-t" },
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822-tf5-readyset-mm-p" },
-  { kit = "kit/kyosho/mini-inferno-st", type = "direct", source = "doc/kyosho/mini-inferno-061013", notes = "Marked for the ST (standard part) in Kyosho's Mini Inferno parts acceptable list" },
 ]
 equivalent_to = [
   { spec = "spec/bearing/4x7x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },

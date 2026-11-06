@@ -9,10 +9,10 @@ documents = ["doc/kyosho/30069t01-ultima-rt6-im"]
 category = "battery"
 category_source = "llm"
 fits = [
-  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
-  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30858-im-ultima-rb6-rs-spop" },
-  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30962-plazma-lm-spop" },
   { kit = "kit/kyosho/dirt-hog", type = "direct", source = "doc/kyosho/30993-dirthog-soop" },
+  { kit = "kit/kyosho/plazma-lm", type = "direct", source = "doc/kyosho/30962-plazma-lm-spop" },
+  { kit = "kit/kyosho/ultima-rb6", type = "direct", source = "doc/kyosho/30858-im-ultima-rb6-rs-spop" },
+  { kit = "kit/kyosho/ultima-rt6", type = "direct", source = "doc/kyosho/30069t01-ultima-rt6-spop" },
 ]
 equivalent_to = [
   { spec = "spec/battery/lipo-2s-2200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },

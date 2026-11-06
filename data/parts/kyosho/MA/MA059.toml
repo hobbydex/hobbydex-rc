@@ -7,17 +7,17 @@ gtin = "4955439773857"
 category = "nut"
 documents = ["doc/kyosho/ma059-product-page", "doc/kyosho/monstertruck-060322"]
 fits = [
-  { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31354-inferno-st-us-sports-mm-p" },
-  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
-  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/30843-dmt-ve-spop" },
   { kit = "kit/kyosho/dbx", type = "direct", source = "doc/kyosho/30845t1-spop" },
+  { kit = "kit/kyosho/dmt", type = "direct", source = "doc/kyosho/30843-dmt-ve-spop" },
   { kit = "kit/kyosho/drt", type = "direct", source = "doc/kyosho/31082-mm01-drt-spop" },
+  { kit = "kit/kyosho/drx", type = "direct", source = "doc/kyosho/31042k-drx-chassis-kit-p" },
+  { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-p" },
+  { kit = "kit/kyosho/inferno-st", type = "direct", source = "doc/kyosho/31354-inferno-st-us-sports-mm-p" },
+  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (standard part) in Kyosho's Monster Truck parts acceptable list" },
+  { kit = "kit/kyosho/mad-force-kruiser", type = "direct", source = "doc/kyosho/31226-mad-force-kruiser-p" },
   { kit = "kit/kyosho/mad-force-kruiser-ve", type = "direct", source = "doc/kyosho/30885-madforce-kruiser-ve-ex" },
   { kit = "kit/kyosho/mfr", type = "direct", source = "doc/kyosho/31183-mfr-mm-t" },
   { kit = "kit/kyosho/twin-force", type = "direct", source = "doc/kyosho/30521-b-twinforce-p" },
-  { kit = "kit/kyosho/mad-force-kruiser", type = "direct", source = "doc/kyosho/31226-mad-force-kruiser-p" },
-  { kit = "kit/kyosho/giga-crusher", type = "direct", source = "doc/kyosho/31441-gigacrusher-p" },
-  { kit = "kit/kyosho/mad-force", type = "direct", source = "doc/kyosho/monstertruck-060322", notes = "Marked for the MAD FORCE (standard part) in Kyosho's Monster Truck parts acceptable list" },
 ]
 related = [
   { part = "part/kyosho/IFW107B", relation = "use-with" },
