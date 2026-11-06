@@ -5,10 +5,13 @@ name = "X4F'24"
 model_year = 2024
 kind = "kit"
 status = "released"
-seen_by = "2023-11"
-seen_by_source = "https://web.archive.org/web/20231106051325/https://teamxray.com/downloads/57/x4f_2024_part_list.pdf"
+released = "2023-05-26"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8942"
 documents = ["doc/xray/x4f-2024-exploded-view", "doc/xray/x4f-2024-manual", "doc/xray/x4f-2024-part-list", "doc/xray/x4f-2024-setup-sheet-2", "doc/xray/x4f-2024-setup-sheet-3", "doc/xray/x4f-2024-setup-sheet-4", "doc/xray/x4f-2024-setup-sheet-5", "doc/xray/x4f-2024-setup-sheet-6", "doc/xray/x4f-2024-setup-sheet-7", "doc/xray/x4f-2024-setup-sheet", "doc/xray/x4f-2024-product-page"]
 number = "300203"
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8942" },
+]
 contains = [
   { part = "part/hudy/104002", role = "listed", source = "doc/xray/x4f-2024-part-list" },
   { part = "part/hudy/104003", role = "listed", source = "doc/xray/x4f-2024-part-list" },

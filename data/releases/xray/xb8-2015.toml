@@ -7,10 +7,13 @@ kind = "kit"
 power = "nitro"
 power_source = "part/xray/358532"
 status = "discontinued"
-seen_by = "2026-05"
-seen_by_source = "https://web.archive.org/web/20260511112944/https://www.teamxray.com/xb8/2015/download/files/391147_1_xb8_part_list.pdf"
+released = "2014-11-13"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5253"
 supersedes = "release/xray/xb8-2014"
 documents = ["doc/xray/xb8-2015-exploded-view", "doc/xray/xb8-2015-manual", "doc/xray/xb8-2015-part-list", "doc/xray/xb8-2015-setup-sheet"]
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5253" },
+]
 contains = [
   { part = "part/hudy/104140", role = "listed", source = "doc/xray/xb8-2015-part-list" },
   { part = "part/hudy/104200", role = "listed", source = "doc/xray/xb8-2015-part-list" },

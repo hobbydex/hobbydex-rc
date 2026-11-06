@@ -8,10 +8,13 @@ kind = "kit"
 power = "nitro"
 power_source = "part/xray/358459"
 status = "released"
-seen_by = "2024-04"
-seen_by_source = "https://web.archive.org/web/20240412120718/https://teamxray.com/downloads/55/xb8_2024_manual_v01_low.pdf"
+released = "2024-02-26"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=9249"
 supersedes = "release/xray/xb8-2023"
 documents = ["doc/xray/xb8-2024-exploded-view", "doc/xray/xb8-2024-manual", "doc/xray/xb8-2024-part-list", "doc/xray/xb8-2024-product-page"]
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=9249" },
+]
 contains = [
   { part = "part/hudy/104005", role = "listed", source = "doc/xray/xb8-2024-part-list" },
   { part = "part/hudy/104140", role = "listed", source = "doc/xray/xb8-2024-part-list" },

@@ -6,11 +6,14 @@ name = "XB2C'22"
 model_year = 2022
 kind = "kit"
 status = "released"
-seen_by = "2021"
-seen_by_source = "doc/xray/xb2-2022-exploded-view"
+released = "2021-11-23"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8470"
 supersedes = "release/xray/320010"
 edition = "carpet"
 documents = ["doc/xray/xb2-2022-exploded-view", "doc/xray/xb2-2022-manual", "doc/xray/xb2-2022-part-list", "doc/xray/xb2-2022-product-page", "doc/xray/youtube-Uq9ux6kg74c", "doc/xray/xb2-2022-setup-sheet", "doc/xray/xb2-2022-setup-sheet-2"]
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8470" },
+]
 contains = [
   { part = "part/xray/329713", role = "option", source = "doc/xray/xb2-2022-part-list" },
   { part = "part/xray/329900-M", role = "option", source = "doc/xray/xb2-2022-part-list" },

@@ -6,12 +6,15 @@ name = "XB2D'27"
 model_year = 2027
 kind = "kit"
 status = "released"
-seen_by = "2026-10"
-seen_by_source = "https://teamxray.com/xb2/2027/en/download/"
+released = "2026-10-12"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=10141"
 supersedes = "release/xray/320021"
 edition = "dirt"
 surface = ["dirt"]
 documents = ["doc/xray/xb2-2027-manual", "doc/xray/xb2-2027-part-list", "doc/xray/xb2-2027-exploded-view", "doc/xray/xb2-2027-product-page"]
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=10141" },
+]
 contains = [
   { part = "part/hudy/101600", role = "option", source = "doc/xray/xb2-2027-part-list" },
   { part = "part/hudy/102580", role = "option", source = "doc/xray/xb2-2027-part-list" },

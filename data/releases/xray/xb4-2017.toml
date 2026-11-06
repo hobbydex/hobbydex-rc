@@ -6,11 +6,14 @@ former_ids = ["release/xray/391125"]
 model_year = 2017
 kind = "kit"
 status = "discontinued"
-seen_by = "2016"
-seen_by_source = "doc/xray/xb4-2017-exploded-view"
+released = "2016-11-11"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6083"
 documents = ["doc/xray/xb4-2017-exploded-view", "doc/xray/xb4-2017-manual", "doc/xray/xb4-2017-part-list", "doc/xray/xb4-2017-setup-sheet-2", "doc/xray/xb4-2017-setup-sheet-3", "doc/xray/xb4-2017-setup-sheet", "doc/xray/xb4-2017-product-page"]
 number = "360004"
 notes = "The number 391125 is the document code in the file name of the XRAY part list, not an item number"
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6083" },
+]
 contains = [
   { part = "part/hudy/105500", role = "listed", source = "doc/xray/xb4-2017-part-list" },
   { part = "part/hudy/105525", role = "listed", source = "doc/xray/xb4-2017-part-list" },
