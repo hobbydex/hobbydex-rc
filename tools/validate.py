@@ -144,7 +144,11 @@ SPEC_TYPES = {
             "serrated-flange-nylon-lock", "dome", "flanged-dome", "square", "knurled", "wing", "wheel"},
     "ball-end": {"stud", "nut", "through-hole", "set-screw"},   # docs/schema.md "Ball-end specs"
     "ring-pinion": {"ring", "pinion"},   # docs/schema.md "Ring and pinion specs"
+    "spring-pin": {"slotted", "coiled"},   # docs/schema.md "Spring pin specs"; no type when the name does not say
 }
+# spring pin specs: the nominal diameters of ISO 8752 (slotted) and ISO 8750 (coiled) that RC names state
+SPRING_PIN_DIAMETERS = {1, 1.5, 2, 2.5, 3, 4, 5, 6}
+SPRING_PIN_STANDARDS = {"slotted": ["ISO 8752"], "coiled": ["ISO 8750"]}
 NUT_PROFILED = {"hex", "nylon-lock", "metal-lock", "lock"}   # the types that come in a regular and a thin height
 
 # which part categories may be `equivalent_to` a spec of each kind
@@ -154,6 +158,7 @@ SPEC_PART_CATS = {
     "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
     "ball-end": {"ball-end"}, "o-ring": {"o-ring-seal"},
     "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},   # hexes, wheels and tyres with a hex, hubs and axles
+    "spring-pin": {"pin"},
 }
 
 SIZE_SPEC_CATS = {"ball-end", "o-ring", "circlip"}   # specs keyed by one size, written by tools/link_*_specs.py
@@ -165,6 +170,14 @@ VEHICLE_CLASS_WORDS = {"buggy", "buggies", "truggy", "truggies", "short", "cours
                        "crawler", "crawlers", "rock", "touring", "car", "cars", "on-road", "onroad", "off-road", "offroad",
                        "road", "on", "off", "stadium", "rally", "drift", "racing", "scale", "scaler", "scalers"}
 CLASS_FILLER = {"rc", "fit", "fits", "for", "and", "the", "all", "a", "an", "of"}
+
+def shopify_file_day(url):
+    """The UTC day of the smallest ?v= timestamp of a Shopify file URL (a repeated ?v= counts its smallest), or None."""
+    vs = [int(v) for v in re.findall(r"[?&]v=(\d{9,11})(?!\d)", url or "")]
+    if not vs:
+        return None
+    return datetime.datetime.fromtimestamp(min(vs), datetime.timezone.utc).date().isoformat()
+
 
 def class_only_applies_to(value):
     """True when applies_to names only a vehicle class and maybe a scale ("Buggy", "Fit for 1/10 RC Touring Car")."""
@@ -212,6 +225,19 @@ def inch_text(value):
         return str(whole)
     frac = f"{rest.numerator}/{rest.denominator}"
     return frac if not whole else f"{whole} {frac}"
+
+
+def spring_pin_problems(path, d):
+    """A spring pin spec: a nominal diameter of ISO 8752 / ISO 8750, a length from 2 to 100 mm, the id and the standard its type gives."""
+    dm, lm, t = d.get("diameter_mm"), d.get("length_mm"), d.get("type")
+    if dm not in SPRING_PIN_DIAMETERS or isinstance(dm, bool) or not isinstance(lm, (int, float)) or isinstance(lm, bool) or not 2 <= lm <= 100:
+        return [f"{path}: spring pin spec needs diameter_mm from {sorted(SPRING_PIN_DIAMETERS)} and length_mm from 2 to 100"]
+    errors = []
+    if d.get("id") != f"spec/spring-pin/{t + '-' if t else ''}{dm:g}x{lm:g}":
+        errors.append(f"{path}: spring pin spec id should be spec/spring-pin/{'<type>-' if t else ''}{dm:g}x{lm:g}")
+    if d.get("standards", []) != SPRING_PIN_STANDARDS.get(t, []):
+        errors.append(f"{path}: spring pin spec standards should be {SPRING_PIN_STANDARDS.get(t, [])} (its type)")
+    return errors
 
 
 def inch_screw_problems(path, d):
@@ -847,6 +873,8 @@ def main():
     no_numbers = {d.get("id"): d.get("item_numbers") is False for _, kind, d in docs if kind == "brand"}   # makers that print no item numbers
     release_kit = {d.get("id"): d.get("kit") for _, kind, d in docs if kind == "release"}
     manual_links = {d.get("id"): {d[k] for k in ("url", "page") if d.get(k)} for _, kind, d in docs if kind == "doc" and d.get("kind") == "manual"}
+    # a document's file url (a maker's Shopify file carries its version timestamp, ?v=, the day it existed; decisions, 2026-11-06)
+    doc_urls = {d.get("id"): d["url"] for _, kind, d in docs if kind == "doc" and isinstance(d.get("url"), str)}
     # a dated catalogue or manual document whose printed year bounds a part's seen_by (docs/schema.md, seen_by_source)
     printed_docs = {d.get("id"): str(d["printed"]) for _, kind, d in docs if kind == "doc" and d.get("kind") in PRINTED_KINDS and d.get("printed")}   # any document with a printed date (YYYY or YYYY-MM)
     doc_pages = {d.get("id"): d["page"] for _, kind, d in docs if kind == "doc" and d.get("kind") != "catalog" and d.get("page")}   # a non-catalogue document's maker page
@@ -1102,8 +1130,11 @@ def main():
                         and re.fullmatch(r"https://[^\s/]+/news_info\.php\?sn=\d+", ss)
                         and urllib.parse.urlsplit(ss).hostname in {brand_site.get(d.get("brand")), (brand_site.get(d.get("brand")) or "").removeprefix("www.")}
                         and "/news_info.php" == urllib.parse.urlsplit(ss).path)
-                if not (archive or shop or manual or own_page or video or printed or sitemap or scrapyard or news):
-                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), the maker's YouTube video of its first 60 days, or the maker's product sitemap (https://<host>/....xml) that lists the page, or an RC Scrapyard model page (a fan-site link of the release) for a year, or the brand's own news post (news_info.php?sn=N) that names the release by its number, dated by the post's day")
+                # a maker's Shopify file the release lists: seen_by is the UTC day of its smallest ?v= timestamp
+                shopfile = (isinstance(ss, str) and re.fullmatch(r"https://cdn\.shopify\.com/s/files/\S+", ss) and ss in {doc_urls[x] for x in d.get("documents", []) if x in doc_urls}
+                            and isinstance(sb, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", sb) and sb == shopify_file_day(ss))
+                if not (archive or shop or manual or own_page or video or printed or sitemap or scrapyard or news or shopfile):
+                    errors.append(f"{path}: seen_by_source {ss!r} should be https://web.archive.org/web/<14-digit timestamp>/<original URL>, the maker's shop product page https://<host>/products/<handle>, the url or page of the release's own manual, the maker's page the release declares (its link, source, product page or document page), the maker's YouTube video of its first 60 days, or the maker's product sitemap (https://<host>/....xml) that lists the page, or an RC Scrapyard model page (a fan-site link of the release) for a year, or the brand's own news post (news_info.php?sn=N) that names the release by its number, dated by the post's day, or the file URL of a document the release lists when it is a maker's Shopify file (https://cdn.shopify.com/s/files/...?v=) and seen_by is the UTC day of its ?v= timestamp")
                 elif archive and not manual and isinstance(sb, str) and ss[len("https://web.archive.org/web/"):][:len(sb.replace("-", ""))] != sb.replace("-", ""):
                     errors.append(f"{path}: seen_by_source {ss} is not a capture of {sb}")
                 if "released" in d or "year" in d or "announced" in d:
@@ -1364,6 +1395,8 @@ def main():
                 errors.append(f"{path}: screw pin thread {d['thread']!r} should be M{dm:g} (the diameter) unless the name states another, which is not yet in the data")
         elif kind == "spec" and d.get("category") == "pin" and "thread" in d:
             errors.append(f"{path}: thread only on screw pin specs (type screw)")
+        if kind == "spec" and d.get("category") == "spring-pin":
+            errors.extend(spring_pin_problems(path, d))
         if kind == "spec" and d.get("category") == "bearing":
             fields = [k for k in ("flange_mm", "flange_width_mm", "flange_source") if k in d]
             if fields and d.get("type") != "flanged":

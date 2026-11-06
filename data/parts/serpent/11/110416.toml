@@ -7,3 +7,6 @@ pack_qty_basis = "manual"
 name_source = "manual"
 documents = ["doc/serpent/600049-s811-gt-rtr-manual-lr"]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3x6x0.8", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

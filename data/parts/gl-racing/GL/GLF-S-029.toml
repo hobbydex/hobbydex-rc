@@ -15,3 +15,6 @@ category = "washer-shim"
 weight_g = 10
 color = "silver"
 notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/washer/2.3x4.5x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
