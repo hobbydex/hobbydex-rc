@@ -6,7 +6,7 @@ name = "TRF102 Chassis Kit"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from Tamiya's Japanese page; Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2015-07-18, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/42289-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42289-manual", "doc/tamiya/42289-manual-usa"]
+documents = ["doc/tamiya/42289-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42289-manual"]
 contains = [
   { part = "part/tamiya/10115211", role = "kit", source = "doc/tamiya/42289-manual" },
   { part = "part/tamiya/11054709", role = "kit", source = "doc/tamiya/42289-manual" },
@@ -126,8 +126,8 @@ contains = [
   { part = "part/tamiya/84171", role = "kit", source = "doc/tamiya/42289-manual" },
   { part = "part/tamiya/84174", role = "kit", source = "doc/tamiya/42289-manual", qty = 5, step = "BB11" },
   { part = "part/tamiya/84189", role = "kit", source = "doc/tamiya/42289-manual" },
-  { part = "part/tamiya/50197", role = "listed", source = "doc/tamiya/42289-manual-usa" },
-  { part = "part/tamiya/42131", role = "kit", source = "doc/tamiya/42289-manual-usa", qty = 2, step = "BE11" },
+  { part = "part/tamiya/50197", role = "listed", source = "doc/tamiya/42289-manual" },
+  { part = "part/tamiya/42131", role = "kit", source = "doc/tamiya/42289-manual", qty = 2, step = "BE11" },
   { part = "part/tamiya/13450700", role = "kit", source = "doc/tamiya/42289-manual", step = "BA23" },
   { part = "part/tamiya/13450702", role = "kit", source = "doc/tamiya/42289-manual", step = "BC17" },
 ]

@@ -6,7 +6,7 @@ name = "TA07R Chassis Kit"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from Tamiya's Japanese page; Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2018-03-31, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/84433-manual", "doc/tamiya/84433-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/84433-manual-usa"]
+documents = ["doc/tamiya/84433-manual", "doc/tamiya/84433-product-page-ja", "doc/tamiya/product-classes"]
 contains = [
   { part = "part/tamiya/10008746", role = "kit", source = "doc/tamiya/84433-manual", qty = 1 },
   { part = "part/tamiya/13450778", role = "kit", source = "doc/tamiya/84433-manual", qty = 1, step = "BB22" },
@@ -108,7 +108,7 @@ contains = [
   { part = "part/tamiya/54747", role = "kit", source = "doc/tamiya/84433-manual", qty = 8, step = "BA6" },
   { part = "part/tamiya/54776", role = "kit", source = "doc/tamiya/84433-manual", qty = 4, step = "BD11" },
   { part = "part/tamiya/84293", role = "kit", source = "doc/tamiya/84433-manual", step = "BE13" },
-  { part = "part/tamiya/53417", role = "listed", source = "doc/tamiya/84433-manual-usa" },
+  { part = "part/tamiya/53417", role = "listed", source = "doc/tamiya/84433-manual" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/84433", kind = "fan-site" },

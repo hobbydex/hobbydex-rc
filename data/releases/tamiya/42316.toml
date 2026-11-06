@@ -6,7 +6,7 @@ name = "TRF419XR Chassis Kit"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from Tamiya's Japanese page; Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Tamiya's Japanese page gives 2017-12-16, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/42316-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42316-manual", "doc/tamiya/42316-manual-usa", "doc/tamiya/42316-anleitung-instructions-trf-419xr"]
+documents = ["doc/tamiya/42316-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42316-manual", "doc/tamiya/42316-anleitung-instructions-trf-419xr"]
 contains = [
   { part = "part/tamiya/11056475", role = "kit", source = "doc/tamiya/42316-manual" },
   { part = "part/tamiya/11424500", role = "kit", source = "doc/tamiya/42316-manual" },
@@ -161,9 +161,9 @@ contains = [
   { part = "part/tamiya/54728", role = "kit", source = "doc/tamiya/42316-manual", qty = 4, step = "MD1" },
   { part = "part/tamiya/54747", role = "kit", source = "doc/tamiya/42316-manual", qty = 8, step = "MB3" },
   { part = "part/tamiya/84189", role = "kit", source = "doc/tamiya/42316-manual", qty = 2, step = "ME21" },
-  { part = "part/tamiya/42115", role = "listed", source = "doc/tamiya/42316-manual-usa" },
-  { part = "part/tamiya/51440", role = "listed", source = "doc/tamiya/42316-manual-usa" },
-  { part = "part/tamiya/51441", role = "listed", source = "doc/tamiya/42316-manual-usa" },
+  { part = "part/tamiya/42115", role = "listed", source = "doc/tamiya/42316-manual" },
+  { part = "part/tamiya/51440", role = "listed", source = "doc/tamiya/42316-manual" },
+  { part = "part/tamiya/51441", role = "listed", source = "doc/tamiya/42316-manual" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/42316", kind = "fan-site" },

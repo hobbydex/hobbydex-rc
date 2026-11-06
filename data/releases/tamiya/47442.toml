@@ -7,7 +7,7 @@ kind = "kit"
 status = "discontinued"
 related = [{ release = "release/tamiya/58075", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/47442" }]
 notes = "Release date from Tamiya's Japanese page; Tamiya classes it as an R/C special-project product, made in planned runs with gaps; Tamiya's Japanese page gives 2020-05-30, the day of its latest run; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/47442-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/47442-manual", "doc/tamiya/47442-manual-usa"]
+documents = ["doc/tamiya/47442-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/47442-manual"]
 contains = [
   { part = "part/tamiya/10005300", role = "kit", source = "doc/tamiya/47442-manual" },
   { part = "part/tamiya/10005301", role = "kit", source = "doc/tamiya/47442-manual" },
@@ -104,7 +104,7 @@ contains = [
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/47442-manual", qty = 10, step = "BB27" },
   { part = "part/tamiya/87099", role = "kit", source = "doc/tamiya/47442-manual" },
   { part = "part/tamiya/94392", role = "kit", source = "doc/tamiya/47442-manual", qty = 2, step = "BA12" },
-  { part = "part/tamiya/54710", role = "listed", source = "doc/tamiya/47442-manual-usa" },
+  { part = "part/tamiya/54710", role = "listed", source = "doc/tamiya/47442-manual" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/47442", kind = "fan-site" },

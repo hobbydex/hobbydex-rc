@@ -6,7 +6,7 @@ name = "TRF101W Chassis Kit"
 kind = "kit"
 status = "discontinued"
 notes = "Release date from Tamiya's Japanese page; Tamiya classes it as a special-sale product: a production-paused item made again for a run, not continuously; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued"
-documents = ["doc/tamiya/42279-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42279-manual", "doc/tamiya/42279-manual-usa"]
+documents = ["doc/tamiya/42279-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/42279-manual"]
 contains = [
   { part = "part/tamiya/10004766", role = "kit", source = "doc/tamiya/42279-manual", step = "BA29" },
   { part = "part/tamiya/10115211", role = "kit", source = "doc/tamiya/42279-manual" },
@@ -120,7 +120,7 @@ contains = [
   { part = "part/tamiya/54489", role = "kit", source = "doc/tamiya/42279-manual" },
   { part = "part/tamiya/84174", role = "kit", source = "doc/tamiya/42279-manual", qty = 5, step = "BA15" },
   { part = "part/tamiya/84195", role = "kit", source = "doc/tamiya/42279-manual", qty = 10, step = "BD10" },
-  { part = "part/tamiya/53124", role = "kit", source = "doc/tamiya/42279-manual-usa", qty = 10, step = "BA25", notes = "Kit needs 2 of this pack" },
+  { part = "part/tamiya/53124", role = "kit", source = "doc/tamiya/42279-manual", qty = 10, step = "BA25", notes = "Kit needs 2 of this pack" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/42279", kind = "fan-site" },

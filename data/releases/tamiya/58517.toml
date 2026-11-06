@@ -8,7 +8,7 @@ kind = "kit"
 status = "released"
 related = [{ release = "release/tamiya/58054", relation = "rerelease-of", source = "https://www.tamiyabase.com/tamiya-models/58517" }]
 notes = "Name and chassis from the manual's cover"
-documents = ["doc/tamiya/58517-manual", "doc/tamiya/58517-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/58517-manual-usa"]
+documents = ["doc/tamiya/58517-manual", "doc/tamiya/58517-product-page-ja", "doc/tamiya/product-classes"]
 contains = [
   { part = "part/tamiya/10005116", role = "kit", source = "doc/tamiya/58517-manual" },
   { part = "part/tamiya/10225019", role = "kit", source = "doc/tamiya/58517-manual" },
@@ -136,10 +136,10 @@ contains = [
   { part = "part/tamiya/81704", role = "listed", source = "doc/tamiya/58517-manual", notes = "Named in the manual as a paint to use, not in the box (page 9)" },
   { part = "part/tamiya/81715", role = "listed", source = "doc/tamiya/58517-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 9)" },
   { part = "part/tamiya/86012", role = "listed", source = "doc/tamiya/58517-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 20)" },
-  { part = "part/tamiya/19115192", role = "listed", source = "doc/tamiya/58517-manual-usa" },
-  { part = "part/tamiya/19804161", role = "listed", source = "doc/tamiya/58517-manual-usa" },
-  { part = "part/tamiya/19805557", role = "kit", source = "doc/tamiya/58517-manual-usa", qty = 4, step = "BD3" },
-  { part = "part/tamiya/50597", role = "kit", source = "doc/tamiya/58517-manual-usa", qty = 10, step = "BC13" },
+  { part = "part/tamiya/19115192", role = "listed", source = "doc/tamiya/58517-manual" },
+  { part = "part/tamiya/19804161", role = "listed", source = "doc/tamiya/58517-manual" },
+  { part = "part/tamiya/19805557", role = "kit", source = "doc/tamiya/58517-manual", qty = 4, step = "BD3" },
+  { part = "part/tamiya/50597", role = "kit", source = "doc/tamiya/58517-manual", qty = 10, step = "BC13" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58517", kind = "fan-site" },

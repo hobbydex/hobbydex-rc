@@ -8,7 +8,7 @@ kind = "kit"
 status = "discontinued"
 depicts = { make = "Mitsubishi", model = "Montero" }
 notes = "Release date from Tamiya's Japanese page; Name and chassis from the manual's cover; Not on Tamiya's current R/C car listings (read 2026-10); taken as discontinued; scale 1/10 per Tamiya's product page"
-documents = ["doc/tamiya/58499-manual", "doc/tamiya/58499-product-page-ja", "doc/tamiya/product-classes", "doc/tamiya/58499-manual-usa"]
+documents = ["doc/tamiya/58499-manual", "doc/tamiya/58499-product-page-ja", "doc/tamiya/product-classes"]
 contains = [
   { part = "part/tamiya/10005072", role = "kit", source = "doc/tamiya/58499-manual", step = "BA21" },
   { part = "part/tamiya/10005075", role = "kit", source = "doc/tamiya/58499-manual" },
@@ -96,8 +96,8 @@ contains = [
   { part = "part/tamiya/81759", role = "listed", source = "doc/tamiya/58499-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 13)" },
   { part = "part/tamiya/81766", role = "listed", source = "doc/tamiya/58499-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 13)" },
   { part = "part/tamiya/85026", role = "listed", source = "doc/tamiya/58499-manual", notes = "Named in the manual as a paint to use, not in the box (pages 2, 12, 13)" },
-  { part = "part/tamiya/50520", role = "listed", source = "doc/tamiya/58499-manual-usa" },
-  { part = "part/tamiya/19000000", role = "kit", source = "doc/tamiya/58499-manual-usa" },
+  { part = "part/tamiya/50520", role = "listed", source = "doc/tamiya/58499-manual" },
+  { part = "part/tamiya/19000000", role = "kit", source = "doc/tamiya/58499-manual" },
 ]
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/tamiya-models/58499", kind = "fan-site" },
