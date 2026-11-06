@@ -2,12 +2,14 @@ id = "part/kyosho/MB011"
 brand = "brand/kyosho"
 number = "MB011"
 name = "Pinion & Spur Gear Set"
+former_ids = ["part/kyosho/MBO11"]
+numbers = ["MBO11"]
 seen_by = "2014-08-23"
 seen_by_source = "https://web.archive.org/web/20140823231058/http://www.kyosho.com/jpn/support/instructionmanual/mini-z/pdf/MB011-T01_ComicRacer_IM.pdf"
 gtin = "4548565193301"
 category = "pinion"
-documents = ["doc/kyosho/mb011-product-page"]
-notes = "Name transcribed by hand from the Spare Parts table of a Kyosho Mini-Z Buggy exploded view. Colour read from the maker's product photo."
+documents = ["doc/kyosho/mb011-product-page", "doc/kyosho/32292-mini-z-buggy-mb-010ve-2-0-sp-spare-and-option-parts"]
+notes = "Name transcribed by hand from the Spare Parts table of a Kyosho Mini-Z Buggy exploded view. Colour read from the maker's product photo. Merged from part/kyosho/MBO11: the letter O in the parts list code is the zero of MB011 (owner decision 2026-11-06)."
 fits = [
   { kit = "kit/kyosho/mini-z-buggy", type = "direct", source = "doc/kyosho/32292-mini-z-buggy-mb-010ve-2-0-sp-spare-and-option-parts" },
 ]
