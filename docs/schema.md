@@ -1106,6 +1106,10 @@ Parts link with match "functional" from the size in their name, and only
 when the name gives one size: sets and bags of mixed sizes, and screw pins
 inside an assembly, get none. Screw pins are category pin.
 
+### Spring pin specs
+
+`spec/spring-pin/<d>x<L>` (category "spring-pin", `diameter_mm`, `length_mm`) is a spring pin: a slotted or coiled straight pin. `type` is `slotted` (ISO 8752, id `spec/spring-pin/slotted-2x10`, `standards = ["ISO 8752"]`) or `coiled` (ISO 8750, id `spec/spring-pin/coiled-2x10`, `standards = ["ISO 8750"]`) when the name says which; a name that says only spring pin, roll pin or Spannstift gets no type, id `spec/spring-pin/2x10`, and no standard. The diameter is one of the nominal sizes of the two standards that RC names use (1, 1.5, 2, 2.5, 3, 4, 5 and 6 mm, `SPRING_PIN_DIAMETERS` in tools/validate.py); a size outside that list gets no spec. Parts link with match "functional" from the size in their name, and only when the name gives one size. Body, king, threaded and grooved pins get no spring pin spec. tools/validate.py checks these; tools/link_pin_specs.py writes them.
+
 ### Washer specs
 
 `spec/washer/<bore>x<outer>x<thickness>` (category "washer", `bore_mm`,
