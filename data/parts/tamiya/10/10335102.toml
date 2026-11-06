@@ -1,10 +1,14 @@
 id = "part/tamiya/10335102"
 brand = "brand/tamiya"
 number = "10335102"
-name = "Wheel"
+name = "Rear Wheels"
+ocr_names = ["Wheel"]
 seen_by = "2018-01"
 seen_by_source = "doc/tamiya/47367-manual"
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from Tamiya USA's spare page (was read by OCR from a scanned Tamiya manual)"
+name_source = "manufacturer"
 category = "wheel"
 documents = ["doc/tamiya/47367-manual"]
+links = [
+  { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-rear-wheels-5809387/", kind = "maker" },
+]
