@@ -12,3 +12,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/losi-socket-head-screw-3mm-x-6mm-10/LOSA6201.html" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x6-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

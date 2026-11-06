@@ -9,3 +9,6 @@ fits = [
 ]
 category = "screw"
 documents = ["doc/mugen/mbx-4rr-part-list", "doc/mugen/msx3-part-list", "doc/mugen/prime-12-part-list"]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

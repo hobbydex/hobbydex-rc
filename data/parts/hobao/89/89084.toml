@@ -5,3 +5,6 @@ name = "B/H Screw M3x10"
 notes = "Name read from a HoBao drawing label"
 category = "screw"
 documents = ["doc/hobao/cml-hyper-sse-parts-list", "doc/hobao/cml-hyper-ss-truggy-exploded-parts-diagram", "doc/hobao/cml-hobao-hyper-vs2e-manual-instruction-manual"]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
