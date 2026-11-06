@@ -10,3 +10,8 @@ links = [
   { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1502" },
 ]
 documents = ["doc/xray/380691-product-page"]
+contains = [
+  { part = "part/xray/389162", role = "kit", source = "doc/xray/380691-product-page" },
+  { part = "part/xray/389170", role = "kit", source = "doc/xray/380691-product-page" },
+  { part = "part/xray/389182", role = "kit", source = "doc/xray/380691-product-page" },
+]
