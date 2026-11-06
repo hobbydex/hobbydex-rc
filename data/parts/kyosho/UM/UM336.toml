@@ -7,14 +7,14 @@ seen_by = "2014-07-19"
 seen_by_source = "https://web.archive.org/web/20140719023754/http://www.kyosho.com/jpn/products/rc/parts_images/UM336.jpg"
 gtin = "4548565245819"
 fits = [
-  { kit = "kit/kyosho/ultima-rb6", type = "replaces", source = "doc/kyosho/34301-ultima-rb6-spop" },
-  { kit = "kit/kyosho/ultima-rb6-6", type = "replaces", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
-  { kit = "kit/kyosho/ultima-rb7", type = "replaces", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
-  { kit = "kit/kyosho/lazer-zx6", type = "replaces", source = "doc/kyosho/30046-lazer-zx6-spop" },
   { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/javelin-parts-list-en-v01" },
+  { kit = "kit/kyosho/lazer-zx6", type = "replaces", source = "doc/kyosho/30046-lazer-zx6-spop" },
   { kit = "kit/kyosho/lazer-zx6-6", type = "replaces", source = "doc/kyosho/lazer-zx6-6-parts-list-v1" },
   { kit = "kit/kyosho/lazer-zx7", type = "replaces", source = "doc/kyosho/30048-lazer-zx7-spop" },
   { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (option part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/ultima-rb6", type = "replaces", source = "doc/kyosho/34301-ultima-rb6-spop" },
+  { kit = "kit/kyosho/ultima-rb6-6", type = "replaces", source = "doc/kyosho/34302-ultima-rb6-6-spop" },
+  { kit = "kit/kyosho/ultima-rb7", type = "replaces", source = "doc/kyosho/34304-ultima-rb7-ss-spop" },
 ]
 equivalent_to = [
   { spec = "spec/pinion/48dp-36t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },

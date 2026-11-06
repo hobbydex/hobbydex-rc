@@ -8,12 +8,12 @@ gtin = "4548565253258"
 pack_qty = 2
 pack_qty_basis = "manual"
 fits = [
-  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
-  { kit = "kit/kyosho/scorpion", type = "direct", source = "doc/kyosho/30613-mm07-2-scorpion-spop" },
-  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop" },
   { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (standard part) in Kyosho's Vintage series parts acceptable list" },
-  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (standard part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
   { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (standard part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/scorpion", type = "direct", source = "doc/kyosho/30613-mm07-2-scorpion-spop" },
+  { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (standard part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/ultima", type = "direct", source = "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop" },
 ]
 category = "chassis"
 documents = ["doc/kyosho/30613-mm07-2-scorpion-spop", "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop", "doc/kyosho/javelin-parts-list-en-v01", "doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/vintage-160304-2-jp"]

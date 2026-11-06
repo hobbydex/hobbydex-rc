@@ -5,12 +5,12 @@ name = "Titanium Adjust Rod 50mm"
 gtin = "4955439679906"
 fits = [
   { kit = "kit/kyosho/javelin", type = "replaces", source = "doc/kyosho/javelin-parts-list-en-v01" },
-  { kit = "kit/kyosho/plazma-formula", type = "replaces", source = "doc/kyosho/30412-plazma-formula-spop", replaces = "part/kyosho/PZ125", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/kyosho/optima-pro", type = "replaces", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (option part) in Kyosho's Vintage series parts acceptable list" },
   { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30622-01-optima-mid-op" },
+  { kit = "kit/kyosho/optima-pro", type = "replaces", source = "doc/kyosho/30620-mm02-spop" },
+  { kit = "kit/kyosho/plazma-formula", type = "replaces", source = "doc/kyosho/30412-plazma-formula-spop", replaces = "part/kyosho/PZ125", notes = "Same part in another material (link_upgrades.py)" },
   { kit = "kit/kyosho/turbo-optima", type = "replaces", source = "doc/kyosho/30623-mm02-spop" },
   { kit = "kit/kyosho/ultima", type = "replaces", source = "doc/kyosho/30625-mm03-spop" },
-  { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
 category = "turnbuckle"
 material = "titanium"

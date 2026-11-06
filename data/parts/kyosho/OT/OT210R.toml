@@ -5,9 +5,9 @@ name = "Shock Plastic Parts (Red/OPTIMA)"
 gtin = "4548565301683"
 fits = [
   { kit = "kit/kyosho/javelin", type = "direct", source = "doc/kyosho/javelin-parts-list-en-v01" },
-  { kit = "kit/kyosho/ultima", type = "replaces", source = "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop" },
-  { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30643-mid-87wc-spop" },
   { kit = "kit/kyosho/optima", releases = ["release/kyosho/30617"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30617 (standard part) in Kyosho's Vintage series parts acceptable list" },
+  { kit = "kit/kyosho/optima-mid", type = "replaces", source = "doc/kyosho/30643-mid-87wc-spop" },
+  { kit = "kit/kyosho/ultima", type = "replaces", source = "doc/kyosho/30642-mm01-jj-ultima-ol-cs5-spop" },
 ]
 category = "shock"
 shock_part = "complete"

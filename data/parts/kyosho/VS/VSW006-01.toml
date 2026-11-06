@@ -8,9 +8,9 @@ gtin = "4955439775714"
 documents = ["doc/kyosho/fw-05-060322", "doc/kyosho/v-one-s-060322", "doc/kyosho/vsw006-01-product-page"]
 category = "drivetrain"
 fits = [
+  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
   { kit = "kit/kyosho/fw-05s", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05S (option part) in Kyosho's FW-05 parts acceptable list" },
   { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
-  { kit = "kit/kyosho/fw-05", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05 (option part) in Kyosho's FW-05 parts acceptable list" },
   { kit = "kit/kyosho/v-one-s3", type = "replaces", source = "doc/kyosho/v-one-s-060322", notes = "Marked for the V-ONE SIII (option part) in Kyosho's V-ONE S series parts acceptable list" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/vsw006-01.html" } ]
