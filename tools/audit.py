@@ -24,6 +24,9 @@ MAT_CATS = {"pinion", "spur-gear", "screw", "nut", "washer-shim", "pin", "bearin
 SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
 SIZE = re.compile(r"\bM\d+(?:\.\d+)?\b|\b\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?(?:\s*x\s*\d+(?:\.\d+)?)?\s*(?:mm)?\b|\b\d+(?:\.\d+)?\s*mm\b", re.I)
 PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
+# the screw linker's reasons (link_screw_specs.plan) that no spec kind can hold, and the sub-class each goes to
+NOT_SPECABLE_SCREW = {"drive not stated": "hw-size-screw-no-drive", "tapping": "hw-size-screw-no-drive", "unparsed": "hw-size-screw-unparsed",
+                      "several sizes": "hw-size-screw-not-one-spec", "special": "hw-size-screw-not-one-spec", "silent": "hw-size-screw-not-one-spec"}
 CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
 BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re.I)
 # a tamico.de dealer link (kind = "dealer") is allowed for Tamiya spares without a maker page (tools/link_tamico_spares.py)
@@ -586,6 +589,29 @@ def gtin_in_cache_not_stored(holes, by_id):
     return sorted(i for i in holes if i in by_id and not by_id[i].get("gtin"))
 
 
+def thickness_only(p):
+    """A washer-shim whose name states only a thickness ("3mm Spacer 0.5mm"): each size in it is a bare "N mm".
+    A washer spec takes a thread or a bore with a thickness, never a thickness alone."""
+    if p.get("category") != "washer-shim":
+        return False
+    sizes = [m.group(0).lower() for m in SIZE.finditer(p.get("name", ""))]
+    return bool(sizes) and all(s.endswith("mm") and "x" not in s and not s.startswith("m") for s in sizes)
+
+
+def not_specable(p, screw_reason, ball_reason):
+    """The sub-class of a size-no-spec part that no spec kind can hold, or None when one could (the linker's gap).
+    screw_reason(p) is the screw linker's reason for a screw (None when it links it); ball_reason(name) is the ball-end
+    linker's reason for a ball end (None when it gives a spec)."""
+    if thickness_only(p):
+        return "hw-size-thickness-only"
+    cat = p.get("category")
+    if cat == "ball-end":
+        return "hw-size-loose-ball" if ball_reason(p.get("name", "")) else None
+    if cat == "screw":
+        return NOT_SPECABLE_SCREW.get(screw_reason(p))
+    return None
+
+
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
     out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
@@ -682,6 +708,23 @@ def load_tools(tools):
             print(f"note: colour linker not loaded ({e})", file=sys.stderr)
         finally:
             sys.path.remove(os.path.join(tools, "tools"))
+    # the screw and ball-end linkers' own reasons (tools/link_screw_specs.py plan, tools/link_ball_end_specs.py parse): a
+    # part with a reason is one no spec kind holds, so it is not a gap for hw-size-no-spec
+    out["screw_plan"] = None
+    out["ball_parse"] = None
+    for mname, key, attr in (("link_screw_specs", "screw_plan", "plan"), ("link_ball_end_specs", "ball_parse", "parse")):
+        mp = os.path.join(tdir, mname + ".py")
+        if os.path.exists(mp):
+            spec = importlib.util.spec_from_file_location(mname, mp)
+            mod = importlib.util.module_from_spec(spec)
+            sys.path.insert(0, tdir)
+            try:
+                spec.loader.exec_module(mod)
+                out[key] = getattr(mod, attr)
+            except Exception as e:  # the check is skipped without them
+                print(f"note: {mname} not loaded ({e})", file=sys.stderr)
+            finally:
+                sys.path.remove(tdir)
     cls = os.path.join(tools, "tools", "classify_parts.py")
     if os.path.exists(cls):
         spec = importlib.util.spec_from_file_location("classify_parts", cls)
@@ -1917,8 +1960,32 @@ def main():
         return p.get("category") != "ball-end" or be is None or be(p.get("name", "")) == "ball-end"
     unspec = [p for p in parts if p.get("category") in HW and p.get("category") not in NO_SIZE_SPEC and not has_spec(p)
               and SIZE.search(p.get("name", "")) and real_ball_end(p)]
-    check("hw-size-no-spec", "link the part to the spec of its size (equivalent_to, match functional), or add that spec",
-          unspec, per_brand=per_brand(unspec))
+    # the parts no spec kind can hold are sub-classes (info): the rest is the linker's gap
+    plan_fn, parse_fn = tools["screw_plan"], tools["ball_parse"]
+    if plan_fn is None or parse_fn is None:
+        results["hw-size-no-spec"] = {"fix": "not checked: hobbydex-tools (--tools) lacks tools/link_screw_specs.py or tools/link_ball_end_specs.py",
+                                      "count": None, "examples": [], "all": [], "skipped": True}
+    else:
+        def screw_reason(p):
+            return plan_fn(p, frozenset())[2]
+        def ball_reason(name):
+            r = parse_fn(name)
+            return r if isinstance(r, str) else None
+        gap, sub = [], collections.defaultdict(list)
+        for p in unspec:
+            cls = not_specable(p, screw_reason, ball_reason)
+            (sub[cls] if cls else gap).append(p)
+        check("hw-size-no-spec", "link the part to the spec of its size (equivalent_to, match functional), or add that spec",
+              gap, per_brand=per_brand(gap))
+        sub_fix = {
+            "hw-size-thickness-only": "a washer-shim that states only a thickness: no washer spec takes a thickness alone (info; the name gives no thread or bore)",
+            "hw-size-loose-ball": "a ball end the ball linker gives no spec: the name states no stud, nut, hole or set-screw type, or no single size (info)",
+            "hw-size-screw-no-drive": "a screw whose name states no drive: the linker takes none from the name, and a guessed drive is not allowed (info; a maker page may state it, see link_screw_specs --pages)",
+            "hw-size-screw-unparsed": "a screw name the screw linker cannot read a size or a head from (info; the name's wording is the gap)",
+            "hw-size-screw-not-one-spec": "a screw name that lists several sizes, a special screw (shoulder, king pin, wheel ...) or a set or kit: no single size spec holds it (info)",
+        }
+        for cls, fix in sub_fix.items():
+            check(cls, fix, sub[cls], per_brand=per_brand(sub[cls]), info=True)
 
     # the schema rule (tools/name_count.py): one clear pack count, or a bag callout such as (MOUNTED x4), in the name.
     # Several counts, "Npcs each" and multi-item names are not a pack count and are not flagged

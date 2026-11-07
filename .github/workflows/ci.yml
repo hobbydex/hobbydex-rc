@@ -46,6 +46,8 @@ jobs:
         run: python3 -I tools/test_audit_family_kit.py
       - name: The audit's spec-unlinked check counts includes and protocols as use
         run: python3 -I tools/test_audit_spec_unlinked.py
+      - name: The audit's size-no-spec sub-classes (a part no spec kind holds is no linker gap)
+        run: python3 -I tools/test_audit_hw_size_subclasses.py
       - name: The audit's service-pack, body-set, name-count and title-language rules
         run: |
           for t in test_audit_service_pack test_audit_body_set test_audit_name_count test_audit_pack_count test_audit_title_language test_audit_gtin_in_cache; do
