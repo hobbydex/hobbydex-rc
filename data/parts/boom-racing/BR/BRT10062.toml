@@ -4,9 +4,18 @@ number = "BRT10062"
 name = "KUDU Tool Set + Carrying Bag with 2 Yr Warranty"
 seen_by = "2025-07-09"
 seen_by_source = "https://web.archive.org/web/20250709172939/https://www.boomracing.com/kudu-tool-set-17pcs-carrying-bag-with-2-yr-warranty-242738"
-pack_qty_basis = "name"
-pack_qty = 17
 links = [
   { site = "Boom Racing", url = "https://www.boomracing.com/kudu-tool-set-17pcs-carrying-bag-with-2-yr-warranty-242738" },
 ]
 category = "tool"
+includes = [
+  { qty = 4, source = "doc/boom-racing/shop", notes = "Hex driver: 1.5 / 2.0 / 2.5 / 3.0mm" },
+  { qty = 4, source = "doc/boom-racing/shop", notes = "Ball end hex driver: 1.5 / 2.0 / 2.5 / 3.0mm" },
+  { qty = 4, source = "doc/boom-racing/shop", notes = "Socket wrench: 4.5 / 5.5 / 7mm / 8mm" },
+  { qty = 2, source = "doc/boom-racing/shop", notes = "Phillips head: 3.0 / 5.0mm" },
+  { qty = 2, source = "doc/boom-racing/shop", notes = "Flat head: 3.0 / 5.0mm" },
+  { part = "part/boom-racing/BRT10065", qty = 1, source = "doc/boom-racing/shop", notes = "Multipurpose shock pliers (#BRT10065)" },
+  { qty = 3, source = "doc/boom-racing/shop", notes = "Silicone rubber band" },
+  { qty = 8, source = "doc/boom-racing/shop", notes = "Hex driver cover" },
+  { qty = 1, source = "doc/boom-racing/shop", notes = "Carrying bag" },
+]
