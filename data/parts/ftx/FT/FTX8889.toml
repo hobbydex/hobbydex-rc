@@ -1,0 +1,14 @@
+id = "part/ftx/FTX8889"
+brand = "brand/ftx"
+number = "FTX8889"
+name = "Outback Mini 3.0 TX Only"
+name_source = "manufacturer"
+notes = "Name from FTX's spare-parts listing on ftx-rc.com"
+links = [
+  { site = "FTX", url = "https://ftx-rc.com/ftx-outback-mini-tx-only" },
+]
+category = "misc"
+category_source = "fallback"
+fits = [
+  { kit = "kit/ftx/outback-mini-3", type = "direct", notes = "Named by the maker's spares title on ftx-rc.com (import_ftx.py --link-fits)" },
+]
