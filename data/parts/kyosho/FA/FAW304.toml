@@ -1,12 +1,12 @@
 id = "part/kyosho/FAW304"
 brand = "brand/kyosho"
 number = "FAW304"
-name = "Aluminum Spur Gear Holder"
+name = "Aluminum Spur Gear Holder(FZD2)"
 seen_by = "2024-12"
 seen_by_source = "doc/kyosho/faw304-t01"
 gtin = "4548565487479"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "spur-gear"
 documents = ["doc/kyosho/faw304-product-page", "doc/kyosho/faw304-t01"]
 links = [
@@ -16,3 +16,4 @@ material = "aluminium"
 fits = [
   { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
 ]
+ocr_names = ["Aluminum Spur Gear Holder"]

@@ -1,11 +1,11 @@
 id = "part/kyosho/IF342"
 brand = "brand/kyosho"
 number = "IF342"
-name = "340mm Steering Rod"
+name = "3x40mm Steering Rod (MP777 SP2)"
 status = "discontinued"
 gtin = "4955439861882"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "steering"
 documents = ["doc/kyosho/if342-product-page"]
 links = [
@@ -14,3 +14,4 @@ links = [
 fits = [
   { kit = "kit/kyosho/inferno-mp777", type = "direct", source = "doc/kyosho/31779-infmp777-sp2-p" },
 ]
+ocr_names = ["340mm Steering Rod"]

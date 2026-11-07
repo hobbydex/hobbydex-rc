@@ -1,13 +1,15 @@
 id = "part/kyosho/RF008"
 brand = "brand/kyosho"
 number = "RF008"
-name = "Drive Shaft (1.5x16mm/x 2/SSW75)"
+name = "Drive Shaft Set (L,S/ROCK FORCE 2.2)"
 status = "discontinued"
 gtin = "4548565120925"
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/rock-force", type = "direct", source = "doc/kyosho/30984-rockforce-p" },
 ]
 category = "drivetrain"
 documents = ["doc/kyosho/30984-rockforce-p", "doc/kyosho/rf008-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/rf008.html" } ]
+ocr_names = ["Drive Shaft (1.5x16mm/x 2/SSW75)"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

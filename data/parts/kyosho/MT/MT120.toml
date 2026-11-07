@@ -1,15 +1,16 @@
 id = "part/kyosho/MT120"
 brand = "brand/kyosho"
 number = "MT120"
-name = "Center Gear Box (MFR)"
+name = "Center Gear Box(MFR)"
 status = "discontinued"
 gtin = "4548565109821"
 category = "gear"
 documents = ["doc/kyosho/mt120-product-page"]
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/mfr", type = "direct", source = "doc/kyosho/31183-mfr-mm-p" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mt120.html" },
 ]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

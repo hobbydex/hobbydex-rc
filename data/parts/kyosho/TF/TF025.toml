@@ -1,9 +1,9 @@
 id = "part/kyosho/TF025"
 brand = "brand/kyosho"
 number = "TF025"
-name = "Universal Swingshaft"
+name = "Universal Swing Shaft(42/Plastic Joint/1)"
 status = "discontinued"
-name_source = "ocr"
+name_source = "manufacturer"
 gtin = "4548565095292"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/tf025.html" },
@@ -13,3 +13,6 @@ documents = ["doc/kyosho/tf025-product-page"]
 fits = [
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822-tf5-readyset-mm-p" },
 ]
+ocr_names = ["Universal Swingshaft"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."
+material = "plastic"

@@ -1,11 +1,11 @@
 id = "part/kyosho/VSW004B"
 brand = "brand/kyosho"
 number = "VSW004B"
-name = "Carbon Shock Stay (Front). 3x6x2mm"
+name = "Carbon Front Shock Stay (for FW-05)"
 status = "discontinued"
 gtin = "4955439786116"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "chassis"
 documents = ["doc/kyosho/vsw004b-product-page", "doc/kyosho/fw-05-060322"]
 links = [
@@ -17,3 +17,4 @@ fits = [
   { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp2-fw05jpe-p" },
   { kit = "kit/kyosho/fw-05t", type = "replaces", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (option part) in Kyosho's FW-05 parts acceptable list" },
 ]
+ocr_names = ["Carbon Shock Stay (Front). 3x6x2mm"]

@@ -1,13 +1,14 @@
 id = "part/kyosho/FA627"
 brand = "brand/kyosho"
 number = "FA627"
-name = "Main Gear Shaft"
+name = "Main Gear Shaft (FZD2)"
 gtin = "4548565488773"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "gear"
 documents = ["doc/kyosho/fa627-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/fa627.html" } ]
 fits = [
   { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
 ]
+ocr_names = ["Main Gear Shaft"]

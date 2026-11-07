@@ -1,10 +1,10 @@
 id = "part/kyosho/SX048B"
 brand = "brand/kyosho"
 number = "SX048B"
-name = "Roll Cage A 69707172×1 2000"
+name = "Roll Cage A (Scorpion XXL)"
 status = "discontinued"
 gtin = "4548565245833"
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/scorpion-b-xxl", type = "direct", source = "doc/kyosho/scorpion-b-xxl-spop" },
 ]
@@ -13,3 +13,5 @@ documents = ["doc/kyosho/sx048b-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/sx048b.html" },
 ]
+ocr_names = ["Roll Cage A 69707172×1 2000"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

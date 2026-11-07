@@ -1,12 +1,12 @@
 id = "part/kyosho/SCH002BK"
 brand = "brand/kyosho"
 number = "SCH002BK"
-name = "Rear Wheel"
+name = "Rear Wheel(Black/Scorpion'14)"
 gtin = "4548565255016"
 pack_qty = 2
 pack_qty_basis = "manual"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "wheel"
 documents = ["doc/kyosho/sch002bk-product-page", "doc/kyosho/vintage-160304-2-jp"]
 links = [
@@ -19,3 +19,4 @@ fits = [
   { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
   { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
+ocr_names = ["Rear Wheel"]

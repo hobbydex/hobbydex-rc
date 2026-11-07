@@ -1,10 +1,10 @@
 id = "part/kyosho/SX053B"
 brand = "brand/kyosho"
 number = "SX053B"
-name = "Side Guard Set"
+name = "Side Guard Set (Scorpion XXL)"
 status = "discontinued"
 gtin = "4548565245840"
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/scorpion-b-xxl", type = "direct", source = "doc/kyosho/scorpion-b-xxl-spop" },
 ]
@@ -13,3 +13,5 @@ documents = ["doc/kyosho/sx053b-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/sx053b.html" },
 ]
+ocr_names = ["Side Guard Set"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

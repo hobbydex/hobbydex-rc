@@ -1,17 +1,19 @@
 id = "part/kyosho/MT132"
 brand = "brand/kyosho"
 number = "MT132"
-name = "Linkage Parts Set (MFR)| (3) x 2 315"
+name = "Linkage Parts Set(MFR)"
 status = "discontinued"
 gtin = "4548565109944"
 pack_qty = 3
 pack_qty_basis = "name"
 category = "suspension"
 documents = ["doc/kyosho/mt132-product-page"]
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/mfr", type = "direct", source = "doc/kyosho/31183-mfr-mm-p" },
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mt132.html" },
 ]
+ocr_names = ["Linkage Parts Set (MFR)| (3) x 2 315"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

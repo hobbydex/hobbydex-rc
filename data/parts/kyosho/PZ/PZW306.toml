@@ -1,11 +1,11 @@
 id = "part/kyosho/PZW306"
 brand = "brand/kyosho"
 number = "PZW306"
-name = "Shock Rod End"
+name = "Shock Rod End (6mm/7075)"
 status = "discontinued"
 gtin = "4548565293735"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "rod-end"
 documents = ["doc/kyosho/pzw306-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw306.html" } ]
@@ -13,3 +13,6 @@ fits = [
   { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
   { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30423"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30423 (option part) in Kyosho's Plazma series parts acceptable list" },
 ]
+ocr_names = ["Shock Rod End"]
+material = "aluminium"
+material_grade = "7075"

@@ -1,13 +1,14 @@
 id = "part/kyosho/FA603"
 brand = "brand/kyosho"
 number = "FA603"
-name = "Gear Set"
+name = "Gear Set (FZD2)"
 gtin = "4548565489015"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "gear"
 documents = ["doc/kyosho/fa603-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/fa603.html" } ]
 fits = [
   { kit = "kit/kyosho/fazer-d2", type = "direct", source = "doc/kyosho/34551-t01-fazer-d2-chassiskit-spop" },
 ]
+ocr_names = ["Gear Set"]

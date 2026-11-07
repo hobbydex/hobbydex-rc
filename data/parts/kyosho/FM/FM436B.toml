@@ -1,9 +1,9 @@
 id = "part/kyosho/FM436B"
 brand = "brand/kyosho"
 number = "FM436B"
-name = "Shock Piston φ1.2 1 Hole"
+name = "Shock Piston(1.2mmx1 Hole)"
 status = "discontinued"
-name_source = "ocr"
+name_source = "manufacturer"
 gtin = "4955439772843"
 pack_qty = 2
 pack_qty_basis = "page"
@@ -13,7 +13,8 @@ links = [
 fits = [
   { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31283-evolva-p" },
 ]
-ocr_names = ["Shock Piston φ 1.2 1 Hole"]
+ocr_names = ["Shock Piston φ 1.2 1 Hole", "Shock Piston φ1.2 1 Hole"]
 category = "shock"
 documents = ["doc/kyosho/fm436b-product-page"]
 shock_part = "piston"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

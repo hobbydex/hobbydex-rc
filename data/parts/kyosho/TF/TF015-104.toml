@@ -1,10 +1,10 @@
 id = "part/kyosho/TF015-104"
 brand = "brand/kyosho"
 number = "TF015-104"
-name = "Spur Gear (64P-104T)"
+name = "Spur Gear(64P-104T/TF-5 STALLION)"
 status = "discontinued"
 gtin = "4955439008027"
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30022-tf-5-stallion-p" },
 ]
@@ -13,3 +13,5 @@ documents = ["doc/kyosho/30022-tf-5-stallion-p", "doc/kyosho/tf015-104-product-p
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/tf015-104.html" } ]
 teeth = 104
 pitch_dp = 64
+ocr_names = ["Spur Gear (64P-104T)"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."
