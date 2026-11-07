@@ -1,10 +1,10 @@
 id = "part/kyosho/KT019"
 brand = "brand/kyosho"
 number = "KT019"
-name = "Brake Pad"
+name = "Brake Pad(Racing Kart)"
 status = "discontinued"
 gtin = "4548565125074"
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/birel-r31-se", type = "direct", source = "doc/kyosho/31315-birel-r31-se-ready-mm-p" },
 ]
@@ -13,3 +13,5 @@ documents = ["doc/kyosho/kt019-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/kt019.html" },
 ]
+ocr_names = ["Brake Pad"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

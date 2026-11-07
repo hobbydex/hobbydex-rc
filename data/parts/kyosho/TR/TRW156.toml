@@ -1,12 +1,12 @@
 id = "part/kyosho/TRW156"
 brand = "brand/kyosho"
 number = "TRW156"
-name = "(DBX/DST/DBX 2.0/DRX/Titaninum)"
+name = "Aluminum Cramp Wheel Hub(DBX/DST/DBX2.0)"
 status = "discontinued"
 seen_by = "2014-07-19"
 seen_by_source = "https://web.archive.org/web/20140719020455/http://kyosho.com/jpn/products/rc/parts_images/TRW156.gif"
 gtin = "4548565181438"
-name_source = "ocr"
+name_source = "manufacturer"
 pack_qty = 2
 pack_qty_basis = "manual"
 fits = [
@@ -16,6 +16,8 @@ fits = [
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/trw156.html" },
 ]
-category = "misc"
-category_source = "fallback"
+ocr_names = ["(DBX/DST/DBX 2.0/DRX/Titaninum)"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."
+material = "aluminium"
+category = "drivetrain"
 documents = ["doc/kyosho/trw156-product-page"]

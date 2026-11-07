@@ -1,10 +1,10 @@
 id = "part/kyosho/VS054"
 brand = "brand/kyosho"
 number = "VS054"
-name = "Flywheel Set (FW-05S) ②18 x 1 600"
+name = "Fly Wheel(for GS15)"
 status = "discontinued"
 gtin = "4955439771860"
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/fw-05s", type = "direct", source = "doc/kyosho/31480jp-fw05ske-p" },
   { kit = "kit/kyosho/fw-05t", type = "direct", source = "doc/kyosho/fw-05-060322", notes = "Marked for the FW-05T (standard part) in Kyosho's FW-05 parts acceptable list" },
@@ -12,3 +12,5 @@ fits = [
 category = "engine-fuel"
 documents = ["doc/kyosho/31480jp-fw05ske-p", "doc/kyosho/vs054-product-page", "doc/kyosho/fw-05-060322"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/vs054.html" } ]
+ocr_names = ["Flywheel Set (FW-05S) ②18 x 1 600"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

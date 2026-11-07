@@ -1,10 +1,10 @@
 id = "part/kyosho/PZW002"
 brand = "brand/kyosho"
 number = "PZW002"
-name = "Front Bulkhead 7075S (-1.5mm)"
+name = "Front Bulkhead (7075/-1.5mm) PLAZMA Ra"
 status = "discontinued"
 gtin = "4548565197460"
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/plazma-ra", type = "replaces", source = "doc/kyosho/30422-t02-plazma-ra-spop" },
 ]
@@ -13,3 +13,7 @@ documents = ["doc/kyosho/pzw002-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw002.html" },
 ]
+ocr_names = ["Front Bulkhead 7075S (-1.5mm)"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."
+material = "aluminium"
+material_grade = "7075"

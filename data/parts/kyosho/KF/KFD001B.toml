@@ -1,13 +1,15 @@
 id = "part/kyosho/KFD001B"
 brand = "brand/kyosho"
 number = "KFD001B"
-name = "Decal (not the Japanese)"
+name = "Decal (KF01)"
 status = "discontinued"
 gtin = "4548565193721"
-name_source = "ocr"
+name_source = "manufacturer"
 fits = [
   { kit = "kit/kyosho/kf01", type = "direct", source = "doc/kyosho/kf01_parts_list_v01" },
 ]
 category = "decal"
 documents = ["doc/kyosho/kf01_parts_list_v01", "doc/kyosho/kfd001b-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kfd001b.html" } ]
+ocr_names = ["Decal (not the Japanese)"]
+notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."

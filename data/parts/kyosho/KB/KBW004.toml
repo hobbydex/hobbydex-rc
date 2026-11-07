@@ -1,10 +1,10 @@
 id = "part/kyosho/KBW004"
 brand = "brand/kyosho"
 number = "KBW004"
-name = "HD Motor Mount"
+name = "HD Motor Mount (KB10)"
 gtin = "4548565441211"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "chassis"
 documents = ["doc/kyosho/kbw004-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/kbw004.html" } ]
@@ -12,3 +12,4 @@ fits = [
   { kit = "kit/kyosho/kb10l", type = "direct", source = "doc/kyosho/34703-kb10l-tacoma-spop" },
   { kit = "kit/kyosho/mad-wagon", type = "direct", source = "doc/kyosho/34702-mad-wagon-spop" },
 ]
+ocr_names = ["HD Motor Mount"]

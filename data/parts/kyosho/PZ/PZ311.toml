@@ -1,14 +1,17 @@
 id = "part/kyosho/PZ311"
 brand = "brand/kyosho"
 number = "PZ311"
-name = "Motor Mount"
+name = "Motor Mount (L/7075)"
 status = "discontinued"
 gtin = "4548565293414"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "chassis"
 documents = ["doc/kyosho/pz311-product-page", "doc/kyosho/plazma-series-ver03-1512"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/pz311.html" } ]
 fits = [
   { kit = "kit/kyosho/plazma-ra", releases = ["release/kyosho/30423"], type = "direct", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30423 (standard part) in Kyosho's Plazma series parts acceptable list" },
 ]
+ocr_names = ["Motor Mount"]
+material = "aluminium"
+material_grade = "7075"

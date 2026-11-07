@@ -1,16 +1,17 @@
 id = "part/kyosho/FM629"
 brand = "brand/kyosho"
 number = "FM629"
-name = "Rear Upper Sus. Shaft (3x44) x2 840"
+name = "Rear Upper Sus. Shaft(3x44)"
 status = "discontinued"
 gtin = "4548565096398"
 pack_qty = 2
 pack_qty_basis = "name"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "suspension"
 documents = ["doc/kyosho/fm629-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/fm629.html" } ]
 fits = [
   { kit = "kit/kyosho/evolva", type = "direct", source = "doc/kyosho/31287-evolvam3-evo-p" },
 ]
+ocr_names = ["Rear Upper Sus. Shaft (3x44) x2 840"]

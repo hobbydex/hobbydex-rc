@@ -1,12 +1,12 @@
 id = "part/kyosho/SCW008"
 brand = "brand/kyosho"
 number = "SCW008"
-name = "Carbon Gear Box Mount"
+name = "Carbon Gear Box Mount(Scorpion 2014)"
 seen_by = "2015-04-01"
 seen_by_source = "https://web.archive.org/web/20150401211044/http://kyosho.com/jpn/products/rc/parts_images/SCW008.jpg"
 gtin = "4548565253807"
-notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+notes = "Name from the Kyosho product page (was read by OCR from a scanned kyosho manual)."
+name_source = "manufacturer"
 category = "chassis"
 documents = ["doc/kyosho/scw008-product-page", "doc/kyosho/vintage-160304-2-jp"]
 material = "carbon"
@@ -18,3 +18,4 @@ fits = [
   { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
   { kit = "kit/kyosho/tomahawk", releases = ["release/kyosho/30615"], type = "direct", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30615 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
+ocr_names = ["Carbon Gear Box Mount"]
