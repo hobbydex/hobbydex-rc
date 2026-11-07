@@ -9,8 +9,6 @@ links = [
 ]
 gtin = "660132659110"
 category = "tire"
-pack_qty = 4
-pack_qty_basis = "name"
 scale = "1/14"
 material = "plastic"
 weight_g = 245
@@ -19,3 +17,7 @@ fits = [
 ]
 mounting = "pre-mounted"
 wheel_color = "red/chrome"
+includes = [
+  { qty = 1, source = "doc/pro-line/horizon-pages", notes = "Class 1 VW Bug Red Race Body Conversion Kit including Red Body" },
+  { qty = 4, source = "doc/pro-line/horizon-pages", notes = "Flat Iron M/T tires mounted on 12mm Chrome Diablo wheels" },
+]

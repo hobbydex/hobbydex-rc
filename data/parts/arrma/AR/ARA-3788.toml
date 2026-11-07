@@ -3,7 +3,6 @@ brand = "brand/arrma"
 number = "ARA-3788"
 name = "Metal Axle & Wheel Hex Set Type F"
 applies_to = "GROM"
-pack_qty_basis = "name"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-metal-axle-and-wheel-hex-set-type-f-4-grom/ARA-3788.html" },
 ]
@@ -11,4 +10,11 @@ category = "drivetrain"
 fits = [
   { kit = "kit/arrma/infraction-grom", type = "direct", source = "doc/arrma/horizon-part-pages" },
 ]
-pack_qty = 4
+includes = [
+  { qty = 2, source = "doc/arrma/horizon-part-pages", notes = "Front universal joint driveshafts" },
+  { qty = 2, source = "doc/arrma/horizon-part-pages", notes = "Rear stub axles" },
+  { qty = 4, source = "doc/arrma/horizon-part-pages", notes = "Locking wheel hexes" },
+  { qty = 4, source = "doc/arrma/horizon-part-pages", notes = "Locking grub screws" },
+  { qty = 4, source = "doc/arrma/horizon-part-pages", notes = "Drive pins" },
+  { qty = 4, source = "doc/arrma/horizon-part-pages", notes = "M4 wheel nuts" },
+]
