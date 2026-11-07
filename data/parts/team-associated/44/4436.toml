@@ -10,3 +10,6 @@ name_source = "manufacturer"
 links = [
   { site = "Team Associated", url = "https://60years.associatedelectrics.com/set-screws-4-40-x-5-16-in/" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x5-16in-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

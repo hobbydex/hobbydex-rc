@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20150906070323/http://www.horizonhobby.com/product/cars-and-trucks/car-and-truck-accessory/all-surface-parts/m2-x-6mm-cap-head-screw-%2810%29-vtr235003", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m2x6-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

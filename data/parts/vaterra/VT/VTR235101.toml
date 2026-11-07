@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20150103095009/http://www.horizonhobby.com:80/product/cars-and-trucks/electric-cars-and-trucks/electric-cars-and-trucks/m25-x-16mm-button-head-screw-%2810%29-vtr235101", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

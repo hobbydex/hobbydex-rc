@@ -7,3 +7,6 @@ pack_qty_basis = "manual"
 name_source = "manual"
 documents = ["doc/serpent/600049-s811-gt-rtr-manual-lr"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x10-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

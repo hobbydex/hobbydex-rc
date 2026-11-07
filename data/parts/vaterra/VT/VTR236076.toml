@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20150906125053/http://www.horizonhobby.com/product/cars-and-trucks/car-and-truck-accessory/all-surface-parts/32mm-x-7mm-x-5mm-washer-%2810%29-vtr236076", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/washer/3.2x7x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

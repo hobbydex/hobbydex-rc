@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20150923180748/http://www.horizonhobby.com/product/cars-and-trucks/car-and-truck-accessory/all-surface-parts/m3-x-18mm--button-head-screw-(10)-vtr235111", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

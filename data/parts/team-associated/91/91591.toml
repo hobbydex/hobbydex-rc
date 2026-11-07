@@ -10,3 +10,7 @@ name_source = "manufacturer"
 links = [
   { site = "Team Associated", url = "https://60years.associatedelectrics.com/ft-ti-screws-m3x6-mm-fhcs/" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"
