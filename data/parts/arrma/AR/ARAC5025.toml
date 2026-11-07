@@ -3,8 +3,6 @@ brand = "brand/arrma"
 number = "ARAC5025"
 name = "HD Hinge Pin Set 3x50mm (1 Pair)"
 status = "discontinued"
-pack_qty = 2
-pack_qty_basis = "name"
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/arrma-hd-hinge-pin-set-3x50mm-1-pair/ARAC5025.html" },
 ]
@@ -16,6 +14,10 @@ fits = [
   { kit = "kit/arrma/fury", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/raider-xl", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
   { kit = "kit/arrma/vorteks-mega", type = "direct", source = "doc/arrma/horizon-part-pages", notes = "Optional part" },
+]
+includes = [
+  { qty = 2, source = "doc/arrma/horizon-part-pages", notes = "Hinge pins" },
+  { qty = 2, source = "doc/arrma/horizon-part-pages", notes = "Lock Nuts (or Capture Screws)" },
 ]
 former_ids = ["part/arrma/AR330146"]
 numbers = ["AR330146"]
