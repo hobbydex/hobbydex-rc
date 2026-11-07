@@ -1,7 +1,7 @@
 id = "part/himoto/08006"
 brand = "brand/himoto"
 number = "08006"
-name = "08006"
+name = "Rear Lower"
 category = "misc"
 category_source = "fallback"
 documents = ["doc/himoto/option-parts"]
@@ -11,3 +11,5 @@ fits = [
   { kit = "kit/himoto/eldorada", releases = ["release/himoto/HI6101"], type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/emxt-1", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "ocr"
+notes = "Name read by OCR from a scanned himoto manual; verify before relying on exact wording"

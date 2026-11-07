@@ -1,10 +1,12 @@
 id = "part/himoto/85002"
 brand = "brand/himoto"
 number = "85002"
-name = "85002"
+name = "Body Post"
 category = "misc"
 category_source = "fallback"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/exb-16", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "ocr"
+notes = "Name read by OCR from a scanned himoto manual; verify before relying on exact wording"
