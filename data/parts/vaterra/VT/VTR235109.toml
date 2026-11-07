@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20191207191333/https://www.horizonhobby.com/product/cars-and-trucks/car-and-truck-accessory/all-surface-parts/m3-x-14mm-button-head-screw-(10)-vtr235109", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m3x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

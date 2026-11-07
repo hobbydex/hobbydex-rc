@@ -10,3 +10,6 @@ name_source = "manufacturer"
 links = [
   { site = "Team Associated", url = "https://60years.associatedelectrics.com/screws-4-40-x-3-16-in-bhcs/" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x3-16in-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

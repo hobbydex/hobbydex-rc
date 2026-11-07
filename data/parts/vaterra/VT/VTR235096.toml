@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20150103100318/http://www.horizonhobby.com:80/product/great-gifts-for-great-people--1/specials/specials/m25-x-5mm-button-head-screw-%2810%29-vtr235096", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x5-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
