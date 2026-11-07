@@ -548,7 +548,8 @@ def load_linker_drift(tools):
 DERIVE_STALE_DAYS = 2   # the daily derive must have landed a PR within this many days
 
 
-CHILD_TIMEOUT = 1800   # seconds a tool the audit runs may take; past it the check says "child timed out" and the audit goes on
+CHILD_TIMEOUT = 3600   # seconds a tool the audit runs may take; past it the check says "child timed out" and the audit goes on.
+# A cold run of link_maker_pages.py takes about 21 minutes; a kill also loses what it parsed, so the limit leaves room.
 
 
 def run_child(args, timeout=CHILD_TIMEOUT, **kw):
