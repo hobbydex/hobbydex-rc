@@ -1,10 +1,10 @@
 id = "part/tamiya/51239"
 brand = "brand/tamiya"
 number = "51239"
-name = "1050 Ball Bearing"
+name = "1050 Ball Bearings"
 pack_qty = 4
 pack_qty_basis = "page"
-ocr_names = ["1050 Ball Bearing Set", "1060 Ball Bearing", "51239*1 1050 Ball Bearing B Parts"]
+ocr_names = ["1050 Ball Bearing Set", "1060 Ball Bearing", "51239*1 1050 Ball Bearing B Parts", "1050 Ball Bearing"]
 fits = [
   { kit = "kit/tamiya/bb-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/cr-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -41,7 +41,7 @@ fits = [
   { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/51239-product-page" },
 ]
 former_ids = ["part/tamiya/61239"]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. Colour read from the maker's product photo."
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual). Colour read from the maker's product photo."
 category = "bearing"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51239/index.html" },
@@ -50,7 +50,7 @@ links = [
 equivalent_to = [
   { spec = "spec/bearing/5x10x4", match = "exact", notes = "Tamiya size code 1050: 5x10x4 mm bore x outer x width as the Tamiya page states it", source = "doc/tamiya/42220-product-page-de" },
 ]
-name_source = "ocr"
+name_source = "manufacturer"
 released = "2006-03"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51239-product-page"]
 color = "silver"

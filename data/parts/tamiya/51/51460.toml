@@ -1,7 +1,7 @@
 id = "part/tamiya/51460"
 brand = "brand/tamiya"
 number = "51460"
-name = "GV Parts"
+name = "TA06 Gear Differential Unit Bevel Gear SET"
 gtin = "4950344514601"
 fits = [
   { kit = "kit/tamiya/db01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Matching list comment #2: antenna and rear body mount hole positions to fit chassis. #1 54471 #2 54329" },
@@ -14,12 +14,13 @@ fits = [
   { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/51460-product-page" },
   { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/51460-product-page" },
 ]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51460/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7738-51460", kind = "fan-site" },
 ]
-category = "parts-tree"
-name_source = "ocr"
+category = "differential"
+name_source = "manufacturer"
 released = "2011-06"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51460-product-page"]
+ocr_names = ["GV Parts"]

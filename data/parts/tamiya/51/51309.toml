@@ -1,7 +1,7 @@
 id = "part/tamiya/51309"
 brand = "brand/tamiya"
 number = "51309"
-name = "D Parts"
+name = "DB01 D Parts (caster Block)"
 fits = [
   { kit = "kit/tamiya/db01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/xv-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -9,12 +9,13 @@ fits = [
   { kit = "kit/tamiya/xv-02rs", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/51309-product-page" },
 ]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51309/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7597-51309", kind = "fan-site" },
 ]
-category = "parts-tree"
-name_source = "ocr"
+category = "suspension"
+name_source = "manufacturer"
 released = "2007-11"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51309-product-page"]
+ocr_names = ["D Parts"]

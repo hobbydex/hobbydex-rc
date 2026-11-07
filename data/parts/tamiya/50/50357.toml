@@ -1,11 +1,11 @@
 id = "part/tamiya/50357"
 brand = "brand/tamiya"
 number = "50357"
-name = "22T, 23T Pinion Gear"
+name = "22T,23T AV Pinion Gear Set"
 gtin = "4950344083251"
 pack_qty = 2
 pack_qty_basis = "photo"
-ocr_names = ["22T Pinion Gear", "22T, 23T AV Pinion Gear"]
+ocr_names = ["22T Pinion Gear", "22T, 23T AV Pinion Gear", "22T, 23T Pinion Gear"]
 fits = [
   { kit = "kit/tamiya/bt-01", type = "modification", source = "doc/tamiya/option-parts-matching-list-2025-10", notes = "Requires: ● # Only 22T" },
   { kit = "kit/tamiya/cr-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -32,13 +32,13 @@ fits = [
   { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/50357-product-page" },
   { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/50357-product-page" },
 ]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
 category = "pinion"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50357/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1019-50357", kind = "fan-site" },
 ]
-name_source = "ocr"
+name_source = "manufacturer"
 released = "1988-04"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/50357-product-page"]
 includes = [

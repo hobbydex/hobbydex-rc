@@ -1,11 +1,11 @@
 id = "part/tamiya/50597"
 brand = "brand/tamiya"
 number = "50597"
-name = "3mm O-Ring (Red)"
+name = "Damper O-RING (red)"
 gtin = "4950344505975"
 pack_qty = 10
 pack_qty_basis = "name"
-ocr_names = ["3mm O-Ring (Brown)", "Damper O-Ring (Red)", "Damper O-ring", "O-Ring (Brown)", "O-Ring (Red)"]
+ocr_names = ["3mm O-Ring (Brown)", "Damper O-ring", "O-Ring (Brown)", "O-Ring (Red)", "3mm O-Ring (Red)"]
 color = "red"
 fits = [
   { kit = "kit/tamiya/bb-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -39,12 +39,12 @@ fits = [
   { kit = "kit/tamiya/trf201", releases = ["release/tamiya/42277"], type = "direct", source = "doc/tamiya/50597-product-page" },
   { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/50597-product-page" },
 ]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
 category = "o-ring-seal"
 links = [
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1259-50597", kind = "fan-site" },
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50597/index.html" },
 ]
-name_source = "ocr"
+name_source = "manufacturer"
 released = "1994-11"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/50597-product-page"]

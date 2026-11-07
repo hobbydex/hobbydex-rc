@@ -1,16 +1,17 @@
 id = "part/tamiya/51551"
 brand = "brand/tamiya"
 number = "51551"
-name = "T Parts"
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-name_source = "ocr"
+name = "TB-04 T Parts (gear Case)"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
+name_source = "manufacturer"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51551/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/14036-51551", kind = "fan-site" },
 ]
-category = "parts-tree"
+category = "gear"
 released = "2013-09"
 fits = [
   { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/51551-product-page" },
 ]
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51551-product-page"]
+ocr_names = ["T Parts"]

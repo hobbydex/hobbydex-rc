@@ -1,18 +1,21 @@
 id = "part/tamiya/51510"
 brand = "brand/tamiya"
 number = "51510"
-name = "NN Parts"
+name = "XV-01 NN Parts (spacers)"
 gtin = "4950344515103"
 fits = [
   { kit = "kit/tamiya/xv-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/51510-product-page" },
 ]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51510/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7780-51510", kind = "fan-site" },
 ]
-category = "parts-tree"
-name_source = "ocr"
+category = "washer-shim"
+name_source = "manufacturer"
 released = "2012-07"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51510-product-page"]
+ocr_names = ["NN Parts"]
+pack_qty = 2
+pack_qty_basis = "name"

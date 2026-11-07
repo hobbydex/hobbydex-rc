@@ -1,17 +1,18 @@
 id = "part/tamiya/51079"
 brand = "brand/tamiya"
 number = "51079"
-name = "Q Parts (Servo Saver Parts)"
+name = "DF-02 Q Parts (servo Horn)"
 fits = [
   { kit = "kit/tamiya/df-02", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/51079-product-page" },
 ]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-category = "parts-tree"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
+category = "steering"
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51079/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7374-51079", kind = "fan-site" },
 ]
-name_source = "ocr"
+name_source = "manufacturer"
 released = "2004-06"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51079-product-page"]
+ocr_names = ["Q Parts (Servo Saver Parts)"]

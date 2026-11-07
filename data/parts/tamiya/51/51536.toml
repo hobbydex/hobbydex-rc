@@ -1,18 +1,19 @@
 id = "part/tamiya/51536"
 brand = "brand/tamiya"
 number = "51536"
-name = "Y Parts"
+name = "TRF417 V5 Swing Shaft CAP"
 gtin = "4950344515363"
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51536/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/14406-51536", kind = "fan-site" },
 ]
-category = "parts-tree"
-name_source = "ocr"
+category = "drivetrain"
+name_source = "manufacturer"
 released = "2013-05"
 fits = [
   { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/51536-product-page" },
   { kit = "kit/tamiya/trf419", releases = ["release/tamiya/42301", "release/tamiya/42311", "release/tamiya/42316"], type = "direct", source = "doc/tamiya/51536-product-page" },
 ]
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51536-product-page"]
+ocr_names = ["Y Parts"]

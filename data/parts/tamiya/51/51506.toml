@@ -1,9 +1,9 @@
 id = "part/tamiya/51506"
 brand = "brand/tamiya"
 number = "51506"
-name = "Gear Bag"
+name = "XV-01 G Parts (gears)"
 gtin = "4950344515066"
-ocr_names = ["33T Idler Gear, 20T Counter Gear, 5x11mm Spacer", "33T Idler Gear, 20T Counter Gear, 5x1mm Spacer", "G Parts (G1, G2, etc.)"]
+ocr_names = ["33T Idler Gear, 20T Counter Gear, 5x11mm Spacer", "33T Idler Gear, 20T Counter Gear, 5x1mm Spacer", "G Parts (G1, G2, etc.)", "Gear Bag"]
 fits = [
   { kit = "kit/tamiya/bb-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/td2", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
@@ -11,12 +11,12 @@ fits = [
   { kit = "kit/tamiya/xv-01", type = "direct", source = "doc/tamiya/option-parts-matching-list-2025-10" },
   { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/51506-product-page" },
 ]
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/51506/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7776-51506", kind = "fan-site" },
 ]
-name_source = "ocr"
+name_source = "manufacturer"
 released = "2012-07"
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51506-product-page"]
-category = "hardware-set"
+category = "gear"
