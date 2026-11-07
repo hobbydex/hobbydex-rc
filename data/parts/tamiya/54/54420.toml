@@ -1,11 +1,11 @@
 id = "part/tamiya/54420"
 brand = "brand/tamiya"
 number = "54420"
-name = "2.6x5mm Truss Screw"
+name = "2.6x5mm Titanium Screw"
 pack_qty = 5
 pack_qty_basis = "page"
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. Finish read from the bag photo on Tamiya's product page (https://www.tamiya.com/english/products/54420/index.html)."
-name_source = "ocr"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual). Finish read from the bag photo on Tamiya's product page (https://www.tamiya.com/english/products/54420/index.html)."
+name_source = "manufacturer"
 category = "screw"
 released = "2012-09"
 documents = ["doc/tamiya/newitems-month"]
@@ -15,5 +15,6 @@ links = [
 equivalent_to = [
   { spec = "spec/screw/m2.6x5-truss-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
-material = "steel"
+material = "titanium"
 finish = "bright zinc"
+ocr_names = ["2.6x5mm Truss Screw"]

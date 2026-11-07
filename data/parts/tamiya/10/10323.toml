@@ -1,19 +1,20 @@
 id = "part/tamiya/10323"
 brand = "brand/tamiya"
 number = "10323"
-name = "2x8mm Truss Screw"
+name = "2x8mm Truss Screws"
 seen_by = "2020-06-15"
 seen_by_source = "https://web.archive.org/web/20200615044457/https://www.tamiya.com/japan/products/10323/index.html"
 pack_qty = 10
 pack_qty_basis = "page"
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording. Finish read from the bag photo on Tamiya's product page (https://www.tamiya.com/english/products/10323/index.html)."
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual). Finish read from the bag photo on Tamiya's product page (https://www.tamiya.com/english/products/10323/index.html)."
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/10323/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/19010-10323", kind = "fan-site" },
 ]
 category = "screw"
-name_source = "ocr"
+name_source = "manufacturer"
 equivalent_to = [
   { spec = "spec/screw/m2x8-truss-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
 finish = "bright zinc"
+ocr_names = ["2x8mm Truss Screw"]

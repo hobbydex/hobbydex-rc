@@ -1,9 +1,9 @@
 id = "part/tamiya/53705"
 brand = "brand/tamiya"
 number = "53705"
-name = "Reinforced Tires Type B3 (24mm Width, .)"
-notes = "Name read by OCR from a scanned Tamiya manual; verify before relying on exact wording"
-name_source = "ocr"
+name = "MEDIUM-NARROW Reinforced Tires TYPE-B3 (24mm WIDTH�1 Pair)"
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
+name_source = "manufacturer"
 category = "tire"
 fits = [
   { kit = "kit/tamiya/tt-02-type-s", releases = ["release/tamiya/58720"], type = "direct", source = "doc/tamiya/53705-product-page-ja" },
@@ -23,3 +23,6 @@ links = [ { site = "Tamiya", url = "https://www.tamiya.com/english/products/5370
 mounting = "unmounted"
 released = "2004-06"
 released_source = "doc/tamiya/newitems-month"
+ocr_names = ["Reinforced Tires Type B3 (24mm Width, .)"]
+pack_qty = 2
+pack_qty_basis = "name"
