@@ -27,8 +27,8 @@ def test_child_past_its_timeout_gives_none():
     assert "child timed out after 1 s: link_maker_pages.py" in err.getvalue()
 
 
-def test_default_timeout_is_half_an_hour():
-    assert audit.CHILD_TIMEOUT == 1800
+def test_default_timeout_is_an_hour():
+    assert audit.CHILD_TIMEOUT == 3600
 
 
 if __name__ == "__main__":
