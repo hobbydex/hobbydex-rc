@@ -548,6 +548,20 @@ def load_linker_drift(tools):
 DERIVE_STALE_DAYS = 2   # the daily derive must have landed a PR within this many days
 
 
+CHILD_TIMEOUT = 1800   # seconds a tool the audit runs may take; past it the check says "child timed out" and the audit goes on
+
+
+def run_child(args, timeout=CHILD_TIMEOUT, **kw):
+    """subprocess.run for a tool the audit runs: the captured result, or None when the tool runs past timeout
+    (subprocess kills it). A hung child must not hang the audit: the check reports the timeout instead."""
+    try:
+        return subprocess.run(args, capture_output=True, text=True, timeout=timeout, **kw)
+    except subprocess.TimeoutExpired:
+        names = [os.path.basename(a) for a in args if a.endswith(".py")]
+        print(f"child timed out after {timeout} s: {' '.join(names)}", file=sys.stderr)
+        return None
+
+
 def last_derive_landed(rc, tools):
     """The newest day a derive landed, "YYYY-MM-DD", or None when neither source knows one: the committer date of the
     newest commit on HEAD whose subject starts "Derived fields" (a merged derive PR; the squash commit keeps the title), and
@@ -1382,25 +1396,29 @@ def main():
     if os.path.exists(lmp):
         with tempfile.NamedTemporaryFile("r", suffix=".tsv") as sample:
             env = dict(os.environ, HOBBYDEX_RC=RC, SAMPLE_OUT=sample.name)
-            run = subprocess.run([sys.executable, "-I", lmp, "--dry-run"], cwd=os.path.abspath(args.tools), env=env,
-                                 capture_output=True, text=True)
-            unlinked, pruned, rows = {}, {}, []
-            for line in run.stdout.splitlines():
-                m = re.match(r"(\S+): parts \d+, linked (\d+)", line)
-                if m and int(m[2]):
-                    unlinked[m[1]] = int(m[2])
-                m = re.match(r"(\S+): links (?:removed \(page gone\)|marked gone) (\d+)", line)
-                if m:
-                    pruned[m[1]] = int(m[2])
-            rows = [r.rstrip("\n").split("\t") for r in sample]
-        flagged = [{"id": r[1], "url": r[4]} for r in rows]
-        results["maker-page-unlinked"] = {
-            "fix": "run tools/link_maker_pages.py in hobbydex-tools (the daily derive step does it); a cached 200 page that names the part gives it the link",
-            "count": sum(unlinked.values()), "examples": flagged[:args.examples],
-            "all": sorted({r["id"] for r in flagged}), "per_brand": sorted(unlinked.items(), key=lambda x: -x[1])}
-        results["maker-link-page-gone"] = {
-            "fix": "the crawl has the page as 404 on a recheck; the daily derive step marks the link gone (tools/link_maker_pages.py) and an archive link follows once a capture is cached",
-            "count": sum(pruned.values()), "examples": [], "all": [], "per_brand": sorted(pruned.items(), key=lambda x: -x[1])}
+            run = run_child([sys.executable, "-I", lmp, "--dry-run"], cwd=os.path.abspath(args.tools), env=env)
+            if run is None:   # the child timed out: no counts, and the check says so
+                timed_out = "child timed out (tools/link_maker_pages.py --dry-run)"
+                results["maker-page-unlinked"] = {"fix": timed_out, "count": None, "examples": [], "all": []}
+                results["maker-link-page-gone"] = {"fix": timed_out, "count": None, "examples": [], "all": []}
+            else:
+                unlinked, pruned, rows = {}, {}, []
+                for line in run.stdout.splitlines():
+                    m = re.match(r"(\S+): parts \d+, linked (\d+)", line)
+                    if m and int(m[2]):
+                        unlinked[m[1]] = int(m[2])
+                    m = re.match(r"(\S+): links (?:removed \(page gone\)|marked gone) (\d+)", line)
+                    if m:
+                        pruned[m[1]] = int(m[2])
+                rows = [r.rstrip("\n").split("\t") for r in sample]
+                flagged = [{"id": r[1], "url": r[4]} for r in rows]
+                results["maker-page-unlinked"] = {
+                    "fix": "run tools/link_maker_pages.py in hobbydex-tools (the daily derive step does it); a cached 200 page that names the part gives it the link",
+                    "count": sum(unlinked.values()), "examples": flagged[:args.examples],
+                    "all": sorted({r["id"] for r in flagged}), "per_brand": sorted(unlinked.items(), key=lambda x: -x[1])}
+                results["maker-link-page-gone"] = {
+                    "fix": "the crawl has the page as 404 on a recheck; the daily derive step marks the link gone (tools/link_maker_pages.py) and an archive link follows once a capture is cached",
+                    "count": sum(pruned.values()), "examples": [], "all": [], "per_brand": sorted(pruned.items(), key=lambda x: -x[1])}
     else:
         results["maker-page-unlinked"] = {"fix": "hobbydex-tools link_maker_pages.py not found (--tools)", "count": None, "examples": [], "all": []}
 
