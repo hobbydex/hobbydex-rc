@@ -1,7 +1,7 @@
 # hobbydex-rc
 
 Open RC parts database: kits, releases, parts, generic hardware specs and the
-relations between them, as plain TOML files. The data is open (CC0) and
+relations between them, as plain TOML files. The data is open (CC BY 4.0) and
 maintained by the Hobbydex project itself, not crowdsourced: pull requests
 against `data/` are not taken. Report an error, a missing brand or a source
 we do not use yet by [opening an issue](https://github.com/hobbydex/hobbydex-rc/issues/new);
@@ -85,11 +85,18 @@ The website is thanked separately in [hobbydex](https://github.com/hobbydex/hobb
 
 ## License
 
-- Data under `data/` is released under [CC0 1.0](data/LICENSE): public
-  domain, no conditions. If you use it, a link back to hobbydex.com helps the
-  project and the people who maintain it, and lets corrections find their way
-  home.
+- Data under `data/` is licensed under [CC BY 4.0](data/LICENSE). You may use,
+  share and adapt it, including commercially, if you credit the project.
+  Data released before 2026-11-08 was published under CC0 1.0 and remains so.
 - Code (`tools/`, workflows) is under the [MIT License](LICENSE).
+
+### How to credit
+
+Use this wording, with a link to the data where you can:
+
+```
+Data: Hobbydex (https://hobbydex.com), CC BY 4.0
+```
 
 The data stays open source. The project writes every record itself (no
 direct modifications from outside), so each record keeps a clear
