@@ -89,3 +89,22 @@ jobs:
           name: hobbydex-rc-export
           path: dist/hobbydex-rc.json
           retention-days: 14
+
+  # pull requests only: checks the authors and Co-authored-by emails of base..head
+  commit-authors:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # the range base..head needs the PR's commits and the base
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Test of the commit author check
+        run: python3 -I tools/test_check_commit_authors.py
+      - name: Commits name only allowed emails
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: python3 -I tools/check_commit_authors.py "$BASE" "$HEAD_SHA"
