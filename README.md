@@ -94,9 +94,6 @@ The website is thanked separately in [hobbydex](https://github.com/hobbydex/hobb
 Copyright: Hobbydex data (c) Somatik BV, licensed CC BY 4.0,
 https://creativecommons.org/licenses/by/4.0/
 
-Data released before 2026-11-08 was published under CC0 1.0
-(https://creativecommons.org/publicdomain/zero/1.0/) and remains so.
-
 ### How to credit
 
 Use this wording, with a link to the data where you can:
