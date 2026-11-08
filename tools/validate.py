@@ -421,34 +421,25 @@ def check_makes(docs, errors):
     for name in sorted(VEHICLE_MAKES - seen):
         errors.append(f"data/makes: no make file for {name!r}")
 
-VEHICLEDB_MAKE = re.compile(r"https://vehiclesdb\.com/makes/([a-z0-9-]+)")
-VEHICLEDB_CAR = re.compile(r"https://vehiclesdb\.com/(cars|trucks|motorcycles|mopeds|vans|buses)/([a-z0-9-]+)/([a-z0-9.-]+)")
+WIKIDATA_ID = re.compile(r"Q[1-9][0-9]*")
 
-def check_vehiclesdb(docs, errors):
-    """VehiclesDB links (docs/schema.md "Makes", depicts): a make's `vehiclesdb` is its make page; a depicts
-    `vehiclesdb` is a car page of the depicted make, and the make is one that has a VehiclesDB link."""
-    makes = {d.get("name"): (path, d) for path, kind, d in docs if kind == "make"}
+def check_wikidata(docs, errors):
+    """Wikidata links (docs/schema.md "Makes", depicts): `wikidata` is the item's Q id, `wikipedia` the English
+    Wikipedia article's title as Wikidata's enwiki sitelink gives it, and is only set with `wikidata`."""
     for path, kind, d in docs:
-        if kind == "make" and "vehiclesdb" in d:
-            m = VEHICLEDB_MAKE.fullmatch(str(d["vehiclesdb"]))
-            if not m:
-                errors.append(f"{path}: vehiclesdb should be https://vehiclesdb.com/makes/<slug>, got {d['vehiclesdb']!r}")
+        targets = [("", d)] if kind == "make" else []
         dp = d.get("depicts") if kind in ("release", "part") else None
-        if not (isinstance(dp, dict) and "vehiclesdb" in dp):
-            continue
-        m = VEHICLEDB_CAR.fullmatch(str(dp["vehiclesdb"]))
-        if not m:
-            errors.append(f"{path}: depicts.vehiclesdb should be https://vehiclesdb.com/<cars|trucks|motorcycles|mopeds|vans|buses>/<make>/<model>, got {dp['vehiclesdb']!r}")
-            continue
-        make = dp.get("make")
-        if make not in makes:
-            errors.append(f"{path}: depicts.vehiclesdb needs depicts.make, a make with a VehiclesDB link")
-            continue
-        link = VEHICLEDB_MAKE.fullmatch(str(makes[make][1].get("vehiclesdb", "")))
-        if not link:
-            errors.append(f"{path}: depicts.vehiclesdb of {make!r}, whose make has no vehiclesdb link")
-        elif link.group(1) != m.group(2):
-            errors.append(f"{path}: depicts.vehiclesdb names make {m.group(2)!r}, the make's VehiclesDB make is {link.group(1)!r}")
+        if isinstance(dp, dict):
+            targets.append(("depicts ", dp))
+        for label, t in targets:
+            if "wikidata" not in t and "wikipedia" not in t:
+                continue
+            if not (isinstance(t.get("wikidata"), str) and WIKIDATA_ID.fullmatch(t["wikidata"])):
+                errors.append(f"{path}: {label}wikidata should be a Wikidata item id such as Q36, got {t.get('wikidata')!r}")
+            title = t.get("wikipedia")
+            if "wikipedia" in t and not (isinstance(title, str) and title.strip() == title and title and "\n" not in title
+                                         and "#" not in title and "|" not in title and "://" not in title):
+                errors.append(f"{path}: {label}wikipedia should be the English article title (spaces, no #), got {title!r}")
 
 NAME_BRAND_EXCEPTIONS = {   # a name that starts with its brand's name on purpose (docs/schema.md "release", "kit", "part")
     "release/kyosho/30645",   # KYOSHO AMERICA: the maker's US company, not a repeat of the brand
@@ -1187,7 +1178,7 @@ def main():
         if ve is not None:
             if kind == "part" and d.get("category") != "body":
                 errors.append(f"{path}: depicts only on a release or a body shell (category body)")
-            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed", "vehiclesdb"}
+            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed", "wikidata", "wikipedia"}
                       and ("make" not in ve or ve["make"] in VEHICLE_MAKES)
                       and isinstance(ve.get("model"), str) and ve["model"].strip() == ve["model"] and ve["model"]
                       and (("year" not in ve) or (isinstance(ve["year"], int) and not isinstance(ve["year"], bool) and 1885 <= ve["year"] <= datetime.date.today().year + 1))
@@ -1576,7 +1567,7 @@ def main():
     check_release_power(docs, ids, errors)
     check_kit_supersedes(docs, errors)
     check_makes(docs, errors)
-    check_vehiclesdb(docs, errors)
+    check_wikidata(docs, errors)
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
     check_protocols(docs, ids, errors)
