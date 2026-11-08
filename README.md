@@ -1,5 +1,7 @@
 # hobbydex-rc
 
+[![DOI](https://zenodo.org/badge/1410416360.svg)](https://doi.org/10.5281/zenodo.24051506)
+
 Open RC parts database: kits, releases, parts, generic hardware specs and the
 relations between them, as plain TOML files. The data is open (CC BY 4.0) and
 maintained by the Hobbydex project itself, not crowdsourced: pull requests
@@ -95,6 +97,8 @@ Copyright: Hobbydex data (c) Somatik BV, licensed CC BY 4.0,
 https://creativecommons.org/licenses/by/4.0/
 
 ### How to credit
+
+Each release is archived on Zenodo: https://doi.org/10.5281/zenodo.24051506 (cite this DOI for the dataset).
 
 Use this wording, with a link to the data where you can:
 
