@@ -11,5 +11,9 @@ links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/dp-ty180a" },
 ]
 notes = "The store lists only the item number for this kit (no title, tags or status)"
-contains = []
+contains = [
+  { part = "part/yokomo/SD-008HG", role = "listed", source = "doc/yokomo/drift-package-type-b-manual" },
+  { part = "part/yokomo/SD-501SAS", role = "listed", source = "doc/yokomo/drift-package-type-b-manual" },
+  { part = "part/yokomo/YS-8Y", role = "listed", source = "doc/yokomo/drift-package-type-b-manual" },
+]
 documents = ["doc/yokomo/dp-ty180a-product-page", "doc/yokomo/drift-package-type-b-manual"]
