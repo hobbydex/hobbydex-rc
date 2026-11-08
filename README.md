@@ -99,6 +99,7 @@ https://creativecommons.org/licenses/by/4.0/
 ### How to credit
 
 Each release is archived on Zenodo: https://doi.org/10.5281/zenodo.24051506 (cite this DOI for the dataset).
+It is also on Kaggle: https://www.kaggle.com/datasets/francisdebrabandere/hobbydex-rc-parts-database
 
 Use this wording, with a link to the data where you can:
 
