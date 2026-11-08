@@ -47,9 +47,11 @@ jobs:
           VERSION: ${{ steps.version.outputs.version }}
         run: python3 -I tools/export_release.py "$RUNNER_TEMP/release" --version "$VERSION"
 
-      - name: Compress the large files
-        # JSON, CSV and SQLite are hundreds of MB; gzip -9 them (manifest.json keeps the sha256 of the uncompressed files)
-        run: find "$RUNNER_TEMP/release" -type f -size +5M ! -name '*.md' ! -name manifest.json -exec gzip -9 {} \;
+      - name: Compress the data files
+        # Every CSV, the JSON files and the SQLite file are gzipped, whatever their size, so the release
+        # file names stay stable (hobbydex.json.gz, brands.csv.gz, ...). manifest.json, ATTRIBUTION.md and
+        # CHANGES.md stay plain; manifest.json keeps the sha256 of the uncompressed files.
+        run: find "$RUNNER_TEMP/release" -type f \( -name '*.csv' -o -name '*.sqlite' -o \( -name '*.json' ! -name manifest.json \) \) -exec gzip -9 {} +
 
       - name: Tag, then create the GitHub Release with the files
         env:
