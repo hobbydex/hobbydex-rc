@@ -1,6 +1,6 @@
 # Contributing
 
-Hobbydex is not crowdsourced. The data is open source (CC0), but the
+Hobbydex is not crowdsourced. The data is open (CC BY 4.0), but the
 project maintains it and the tools that build it itself, so that every
 record keeps a clear attribution path: written by the project from a named
 manufacturer source. Pull requests against `data/` are closed without
@@ -16,6 +16,11 @@ What helps: an issue that tells us about
 Open one at https://github.com/hobbydex/hobbydex-rc/issues/new, or use the
 "report an error" link at the bottom of any page on hobbydex.com. Every
 report is read and the data is fixed from the maker's source.
+
+Reports and anything else you send the project are accepted on the terms
+that the data is published under: by sending a report you agree that it may
+be used under the data licence, CC BY 4.0 (see the README's License section), with credit
+to Hobbydex.
 
 Should the project open up contributions one day, they will be kept in
 their own files beside the dataset, not written into its history.

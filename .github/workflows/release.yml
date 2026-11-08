@@ -1,0 +1,79 @@
+name: Release
+
+# Monthly release of the data: a tag vYYYY.MM.N and a GitHub Release named
+# "Hobbydex YYYY.MM.N" with the files of tools/export_release.py attached.
+# Cron minute is deliberately off-round (GitHub delays on-the-hour crons).
+
+on:
+  schedule:
+    - cron: "37 4 1 * *"
+  workflow_dispatch:
+
+concurrency:
+  # keyed by ref, so two releases never run at once; a release already
+  # running is never cancelled
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # push the tag and create the release
+  issues: write     # open or update the release-failure issue
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # full history and tags: the export diffs data/ against the previous tag
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Validate the data (a failure stops the release)
+        run: python3 -I tools/validate.py
+
+      - name: Version of this release (YYYY.MM.N, N = tags already made this month)
+        id: version
+        run: |
+          month=$(date -u +%Y.%m)
+          n=$(git tag --list "v${month}.*" | wc -l)
+          echo "version=${month}.${n}" >> "$GITHUB_OUTPUT"
+
+      - name: Export the release files
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: python3 -I tools/export_release.py "$RUNNER_TEMP/release" --version "$VERSION"
+
+      - name: Tag, then create the GitHub Release with the files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          tag="v${VERSION}"
+          git tag "$tag" "$GITHUB_SHA"
+          git push origin "$tag"
+          gh release create "$tag" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "Hobbydex ${VERSION}" \
+            --notes-file "$RUNNER_TEMP/release/CHANGES.md" \
+            "$RUNNER_TEMP"/release/*
+
+      - name: Open or update the release-failure issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          body="The monthly release run failed (version ${VERSION:-not yet computed}): $run_url"
+          gh label create release-failure --repo "$GITHUB_REPOSITORY" --color B60205 --description "The monthly data release failed" --force
+          open=$(gh issue list --repo "$GITHUB_REPOSITORY" --label release-failure --state open --json number --jq '.[0].number // empty')
+          if [ -n "$open" ]; then
+            gh issue comment "$open" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --label release-failure --title "Monthly data release failed" --body "$body"
+          fi
