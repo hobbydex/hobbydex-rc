@@ -63,8 +63,9 @@ def last_commit_dates():
             dates.setdefault(canon(line.split("\t", 1)[1]), when)
     return {p: datetime.datetime.fromtimestamp(t, datetime.timezone.utc).date().isoformat() for p, t in dates.items()}
 
-def main():
-    out = sys.argv[1] if len(sys.argv) > 1 else "dist/hobbydex-rc.json"
+def build_document():
+    """The export as a dict (run from the repository root): every record under data/ by type,
+    plus `retired`. tools/export_release.py writes the same dict for the release files."""
     doc = {"schema_version": 0, "dataset": "rc", "generated": datetime.date.today().isoformat()}
     dates = last_commit_dates()
     if dates is None:
@@ -90,6 +91,11 @@ def main():
         doc[folder] = items
     with open(os.path.join("data", "retired.toml"), "rb") as f:
         doc["retired"] = tomllib.load(f).get("retired", [])
+    return doc
+
+def main():
+    out = sys.argv[1] if len(sys.argv) > 1 else "dist/hobbydex-rc.json"
+    doc = build_document()
     os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
     with open(out, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
