@@ -85,10 +85,17 @@ The website is thanked separately in [hobbydex](https://github.com/hobbydex/hobb
 
 ## License
 
-- Data under `data/` is licensed under [CC BY 4.0](data/LICENSE). You may use,
-  share and adapt it, including commercially, if you credit the project.
-  Data released before 2026-11-08 was published under CC0 1.0 and remains so.
-- Code (`tools/`, workflows) is under the [MIT License](LICENSE).
+- The data (everything under `data/`) is licensed under the
+  [Creative Commons Attribution 4.0 International License](LICENSE) (CC BY 4.0).
+  You may use, share and adapt it, including commercially, if you credit the
+  project.
+- Code in `tools/` and `.github/` is under the [MIT License](tools/LICENSE).
+
+Copyright: Hobbydex data (c) Somatik BV, licensed CC BY 4.0,
+https://creativecommons.org/licenses/by/4.0/
+
+Data released before 2026-11-08 was published under CC0 1.0
+(https://creativecommons.org/publicdomain/zero/1.0/) and remains so.
 
 ### How to credit
 
