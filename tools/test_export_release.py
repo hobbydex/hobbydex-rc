@@ -108,6 +108,10 @@ class ExportRelease(unittest.TestCase):
             con.close()
 
         self.assertIn("Creative Commons Attribution 4.0", self.read(out, "ATTRIBUTION.md"))
+        att = self.read(out, "ATTRIBUTION.md")
+        self.assertIn("Somatik BV", att)
+        self.assertIn("modified", att)
+        self.assertNotIn("CC0", att)
 
     def test_first_release_without_a_tag(self):
         old = os.getcwd()

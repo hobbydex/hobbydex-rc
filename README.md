@@ -1,7 +1,9 @@
 # hobbydex-rc
 
+[![DOI](https://zenodo.org/badge/1410416360.svg)](https://doi.org/10.5281/zenodo.24051506)
+
 Open RC parts database: kits, releases, parts, generic hardware specs and the
-relations between them, as plain TOML files. The data is open (CC0) and
+relations between them, as plain TOML files. The data is open (CC BY 4.0) and
 maintained by the Hobbydex project itself, not crowdsourced: pull requests
 against `data/` are not taken. Report an error, a missing brand or a source
 we do not use yet by [opening an issue](https://github.com/hobbydex/hobbydex-rc/issues/new);
@@ -85,11 +87,25 @@ The website is thanked separately in [hobbydex](https://github.com/hobbydex/hobb
 
 ## License
 
-- Data under `data/` is released under [CC0 1.0](data/LICENSE): public
-  domain, no conditions. If you use it, a link back to hobbydex.com helps the
-  project and the people who maintain it, and lets corrections find their way
-  home.
-- Code (`tools/`, workflows) is under the [MIT License](LICENSE).
+- The data (everything under `data/`) is licensed under the
+  [Creative Commons Attribution 4.0 International License](LICENSE) (CC BY 4.0).
+  You may use, share and adapt it, including commercially, if you credit the
+  project.
+- Code in `tools/` and `.github/` is under the [MIT License](tools/LICENSE).
+
+Copyright: Hobbydex data (c) Somatik BV, licensed CC BY 4.0,
+https://creativecommons.org/licenses/by/4.0/
+
+### How to credit
+
+Each release is archived on Zenodo: https://doi.org/10.5281/zenodo.24051506 (cite this DOI for the dataset).
+It is also on Kaggle: https://www.kaggle.com/datasets/francisdebrabandere/hobbydex-rc-parts-database
+
+Use this wording, with a link to the data where you can:
+
+```
+Data: Hobbydex (https://hobbydex.com), CC BY 4.0
+```
 
 The data stays open source. The project writes every record itself (no
 direct modifications from outside), so each record keeps a clear

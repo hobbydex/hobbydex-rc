@@ -207,17 +207,23 @@ def changes_md(tag, counts):
 
 
 def attribution_md(version):
+    year = version.split(".")[0]
     return f"""# Attribution
 
-Hobbydex {version} data is licensed under the Creative Commons Attribution 4.0
-International licence ({LICENCE_URL}).
+Hobbydex {version} data (c) {year} Somatik BV, licensed under the
+Creative Commons Attribution 4.0 International licence ({LICENCE_URL}).
 
 To credit it, use:
 
     {ATTRIBUTION_LINE}
 
-Releases made before the switch to CC BY 4.0 were released under CC0 1.0
-Universal (public domain dedication, https://creativecommons.org/publicdomain/zero/1.0/).
+or, naming the release you used:
+
+    Data: Hobbydex {version} (https://hobbydex.com), CC BY 4.0
+
+If you changed the data, say so, for example:
+
+    Data: Hobbydex (https://hobbydex.com), CC BY 4.0, modified
 
 Source: {SOURCE_URL}
 """

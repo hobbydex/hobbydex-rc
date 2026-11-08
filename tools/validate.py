@@ -581,6 +581,7 @@ def check_art(ids, errors, body_parts=frozenset()):
                 errors.append(f"{path}: art goes in {ART_ROOT}/kits/<brand>/<slug>.svg, {ART_ROOT}/releases/<brand>/<key>.svg or {ART_ROOT}/parts/<brand>/<number>.svg")
                 continue
             n += 1
+            errors.extend(unsafe_name_problems(path))
             eid = f"{dirs[parts[0]]}/{parts[1]}/{fn[:-4]}"
             if os.path.normpath(art_path(eid, ART_ROOT)) != os.path.normpath(path):
                 errors.append(f"{path}: art for {eid} belongs at {art_path(eid, ART_ROOT)}")
@@ -793,6 +794,24 @@ def check_receiver_plugs(docs, ids, errors):
             if f"spec/connector/{slug}" not in ids:
                 errors.append(f"{path}: receiver_connector {n!r} has no connector spec spec/connector/{slug}")
 
+SAFE_NAME_CHARS = "A-Za-z0-9._+-"   # file names and id segments: no '*', spaces or other characters a host or archive may refuse
+
+def unsafe_name_problems(path, ident=None):
+    """A data or art file name and the segments of a record's id use only SAFE_NAME_CHARS (docs/schema.md "Ids are
+    permanent"). Kaggle refused the repository over a file named with '*', and a space breaks links and archives on other
+    hosts. Numbers keep the case they are printed with. A former_ids or retired.toml entry is a string, never a file, so it
+    may keep the old spelling; it is not checked here."""
+    problems = []
+    stem = os.path.splitext(os.path.basename(path))[0]
+    bad = sorted({c for c in stem if not re.fullmatch(f"[{SAFE_NAME_CHARS}]", c)})
+    if bad:
+        problems.append(f"{path}: file name has characters outside {SAFE_NAME_CHARS} ({''.join(bad)}); rename it to a safe id")
+    if ident is not None:
+        bad = sorted({c for c in str(ident) if c != "/" and not re.fullmatch(f"[{SAFE_NAME_CHARS}]", c)})
+        if bad:
+            problems.append(f"{path}: id {ident!r} has characters outside {SAFE_NAME_CHARS} ({''.join(bad)}); give it a safe id and keep the old one in former_ids")
+    return problems
+
 def main():
     ENUMS["part.category"] = categories()
     errors, ids, docs = [], {}, []
@@ -824,6 +843,7 @@ def main():
                 errors.append(f"{path}: id {d.get('id')!r} belongs at {expected_path}")
             if not str(d.get("id", "")).startswith(f"{kind}/"):
                 errors.append(f"{path}: id {d.get('id')!r} is not a {kind} id")
+            errors.extend(unsafe_name_problems(path, d.get("id", "")))
             if d.get("id") in ids:
                 errors.append(f"{path}: duplicate id {d['id']} (also {ids[d['id']]})")
             ids[d.get("id")] = path

@@ -24,7 +24,7 @@ def id_of(path):
 
 def main(base):
     out = subprocess.run(["git", "ls-tree", "-r", "--name-only", base, "--", "data/"], capture_output=True, text=True, check=True).stdout
-    before = {i for i in map(id_of, out.split()) if i}
+    before = {i for i in map(id_of, out.splitlines()) if i}
     now, traced = set(), set()
     for dirpath, _, files in os.walk("data"):
         for fn in files:

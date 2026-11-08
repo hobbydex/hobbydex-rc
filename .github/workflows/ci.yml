@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
       - name: Only known file types may be tracked
         run: |
-          bad=$(git ls-files | grep -vE '^(data/.+\.toml|art/(kits|releases|parts)/[^/]+/[^/]+\.svg|data/LICENSE|docs/[^/]+\.md|tools/[^/]+\.py|\.github/workflows/[^/]+\.yml|\.github/dependabot\.yml|README\.md|CONTRIBUTING\.md|LICENSE|\.gitignore)$' || true)
+          bad=$(git ls-files | grep -vE '^(data/.+\.toml|art/(kits|releases|parts)/[^/]+/[^/]+\.svg|tools/LICENSE|docs/[^/]+\.md|tools/[^/]+\.py|\.github/workflows/[^/]+\.yml|\.github/dependabot\.yml|README\.md|CONTRIBUTING\.md|LICENSE|\.gitignore)$' || true)
           if [ -n "$bad" ]; then
             echo "files of a type this repository does not accept:" >&2
             echo "$bad" >&2
@@ -34,6 +34,8 @@ jobs:
             echo "== $t"
             python3 -I "tools/$t.py"
           done
+      - name: File names and ids use only letters, digits and . _ + -
+        run: python3 -I tools/test_validate_safe_names.py
       - name: The audit runs on the data within 2 GB
         run: python3 -I tools/test_audit_memory.py
       - name: The audit's Tamiya static-kit rule
@@ -91,3 +93,22 @@ jobs:
           name: hobbydex-rc-export
           path: dist/hobbydex-rc.json
           retention-days: 14
+
+  # pull requests only: checks the authors and Co-authored-by emails of base..head
+  commit-authors:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # the range base..head needs the PR's commits and the base
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Test of the commit author check
+        run: python3 -I tools/test_check_commit_authors.py
+      - name: Commits name only allowed emails
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: python3 -I tools/check_commit_authors.py "$BASE" "$HEAD_SHA"
