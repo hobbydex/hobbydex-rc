@@ -6,12 +6,14 @@ name = "RD1.0 (Drift Package 2WD) JZX100 Mark II BN Sports"
 name_ja = "ドリフトパッケージ2WD BNスポーツ TOYOTA JZX100 MarkII"
 kind = "kit"
 status = "released"
+seen_by = "2026-11"
+seen_by_source = "https://www.teamyokomo.com/products/dp-jzxbn"
 depicts = { make = "Toyota", model = "Mark II", wikidata = "Q2031285", wikipedia = "Toyota Mark II" }
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/dp-jzxbn" },
 ]
 notes = "Status from the store's lifecycle tag; the Japanese product title is in name_ja"
-documents = ["doc/yokomo/rd2.0-instruction-manual"]
+documents = ["doc/yokomo/dp-jzxbn-product-page", "doc/yokomo/rd2.0-instruction-manual"]
 contains = [
   { part = "part/yokomo/B8-206LHA", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },
   { part = "part/yokomo/B8-206MHA", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },

@@ -6,11 +6,13 @@ name = "RD2.0 (assembled)"
 name_ja = "【ヨコモ公式オンラインショップ限定】ルーキードリフト RD2.0 組立済み/RC装置搭載済みシャーシセット"
 kind = "rtr"
 status = "discontinued"
+seen_by = "2026-11"
+seen_by_source = "https://www.teamyokomo.com/products/ol-rd20ga"
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/ol-rd20ga" },
 ]
 notes = "Status from the store's lifecycle tag; the Japanese product title is in name_ja"
-documents = ["doc/yokomo/rd2.0-instruction-manual"]
+documents = ["doc/yokomo/ol-rd20ga-product-page", "doc/yokomo/rd2.0-instruction-manual"]
 contains = [
   { part = "part/yokomo/B8-206LHA", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },
   { part = "part/yokomo/B8-206MHA", role = "kit", source = "doc/yokomo/rd2.0-instruction-manual" },
