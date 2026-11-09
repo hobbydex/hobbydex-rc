@@ -1,10 +1,14 @@
 id = "part/himoto/15506"
 brand = "brand/himoto"
 number = "15506"
-name = "15506"
+name = "Wheel Axle"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/1-10-ep-model"]
 fits = [
   { kit = "kit/himoto/corr-truck", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e003&item_no=HI3101BL&submit=Go+To+Details"

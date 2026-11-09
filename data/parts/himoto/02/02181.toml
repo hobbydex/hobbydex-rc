@@ -1,10 +1,10 @@
 id = "part/himoto/02181"
 brand = "brand/himoto"
 number = "02181"
-name = "02181"
+name = "Cap Head Self-Tapping Screw 3*15"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/manual-1-10-pivot-ball-suspension"]
 fits = [
   { kit = "kit/himoto/desert-xb10", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/desert-xt10", type = "direct", source = "doc/himoto/option-parts" },
@@ -13,3 +13,7 @@ fits = [
   { kit = "kit/himoto/taipan-xrs", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/viper-xst", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=NITRO&searchproduct=BUGGY&searchterm=&product=BUGGY&type=NITRO&ref_no=buggy_g020&item_no=HI8103E&submit=Go+To+Details"

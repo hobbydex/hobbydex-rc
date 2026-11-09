@@ -1,10 +1,10 @@
 id = "part/himoto/02056"
 brand = "brand/himoto"
 number = "02056"
-name = "02056"
+name = "Throttle Linkage Assembly"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/manual-1-10-truck"]
 fits = [
   { kit = "kit/himoto/1-10-scale-rtr-4wd-nitro-power-off-road-buggy-sh18-engine-w-2-4g-remote", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/1-10-scale-rtr-4wd-nitro-power-off-road-truck-vtx18-engine-w-2-4g-remote", type = "direct", source = "doc/himoto/option-parts" },
@@ -17,3 +17,7 @@ fits = [
   { kit = "kit/himoto/syclone-pro", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/syclone-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=NITRO&searchproduct=TRUCK&searchterm=&product=TRUCK&type=NITRO&ref_no=truck_g012&item_no=HI6101M&submit=Go+To+Details"

@@ -1,10 +1,10 @@
 id = "part/himoto/86083"
 brand = "brand/himoto"
 number = "86083"
-name = "86083"
+name = "Copper Bearing φ12*φ8 *3.5"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/hi4192-63-83-85-86"]
 fits = [
   { kit = "kit/himoto/edc-16", releases = ["release/himoto/HI4163"], type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/edt-16", releases = ["release/himoto/HI4193"], type = "direct", source = "doc/himoto/option-parts" },
@@ -16,3 +16,9 @@ fits = [
   { kit = "kit/himoto/ext-16", releases = ["release/himoto/HI4183"], type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/sct-16", releases = ["release/himoto/HI4192"], type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+pack_qty = 4
+pack_qty_basis = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A16&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e007&item_no=HI4185BL&submit=Go+To+Details"

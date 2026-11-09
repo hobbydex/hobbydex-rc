@@ -1,10 +1,10 @@
 id = "part/himoto/86074"
 brand = "brand/himoto"
 number = "86074"
-name = "86074"
+name = "Cap Head Self Tapping Screws 3*10"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/hi4192-63-83-85-86"]
 fits = [
   { kit = "kit/himoto/edt-16", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/ety-16", type = "direct", source = "doc/himoto/option-parts" },
@@ -12,3 +12,9 @@ fits = [
   { kit = "kit/himoto/exr-16", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/sct-16", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+pack_qty = 4
+pack_qty_basis = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A16&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e007&item_no=HI4185BL&submit=Go+To+Details"
