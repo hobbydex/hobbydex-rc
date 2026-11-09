@@ -102,6 +102,15 @@ class PartRenumbers(unittest.TestCase):
             "parts/himoto/820001.toml": part("820001"),
             "parts/himoto/820001V2.toml": part("820001V2", 'supersedes = "part/himoto/820001"\n')}))
 
+    def test_http_source_of_an_http_only_brand_is_accepted(self):
+        http_brand = BRAND.replace('website = "https://himoto.example/"', 'website = "http://himoto.example/"')
+        self.assertEqual(self.errors_for({"brands/himoto.toml": http_brand,
+            "parts/himoto/282018.toml": part("282018", 'former_numbers = ["82909"]\nsources = { former_numbers = "http://himoto.example/manual/hi4192.pdf" }\n')}), [])
+
+    def test_http_source_of_another_host_is_refused(self):
+        self.assertTrue(self.errors_for({"parts/himoto/282018.toml": part("282018",
+            'former_numbers = ["82909"]\nsources = { former_numbers = "http://elsewhere.example/manual.pdf" }\n')}))
+
     def test_legacy_supersedes_is_grandfathered(self):
         self.assertEqual(self.errors_for({
             "parts/himoto/820001.toml": part("820001"),
