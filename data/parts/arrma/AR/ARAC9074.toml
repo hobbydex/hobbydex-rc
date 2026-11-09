@@ -23,7 +23,10 @@ fits = [
   { kit = "kit/arrma/talion-6s-1-8", type = "direct", source = "doc/arrma/horizon-part-pages" },
   { kit = "kit/arrma/senton-6s", type = "direct", source = "doc/arrma/ARAD83LG-manual" },
 ]
-former_ids = ["part/arrma/AR330200"]
+former_ids = ["part/arrma/AR330200", "part/arrma/ARA330200"]
 numbers = ["AR330200"]
-supersedes = "part/arrma/ARA330200"
-documents = ["doc/arrma/ARAD83LG-manual"]
+documents = ["doc/arrma/ARAD83LG-manual", "doc/arrma/ara8306-manual-multi"]
+former_numbers = ["ARA330200"]
+
+[sources]
+former_numbers = "https://www.horizonhobby.com/product/arrma-1-8-typhon-6s-tlr-tuned-4x4-roller-brushless-buggy-pink-purple/ARA8306.html"
