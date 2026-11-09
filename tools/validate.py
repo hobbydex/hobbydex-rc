@@ -509,6 +509,97 @@ def check_kit_supersedes(docs, errors):
             cur = succ[cur]
 
 
+PART_NUMBER_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$")
+
+
+def check_part_renumbers(docs, errors, retired_ids=(), legacy=()):
+    """A part's former_numbers (a renumber: the same part under a number the maker no longer uses) and supersedes (a
+    revision: a separate record that replaces this one, one predecessor of the same brand, no cycles). docs/schema.md
+    "Renumber or revision". legacy: part ids whose supersedes predates the source rule (data/legacy-part-supersedes.toml)."""
+    parts = {d["id"]: d for _, k, d in docs if k == "part"}
+    sold_as = {}   # (brand, NUMBER) -> the part id it is sold under (its number or one of its numbers)
+    former_ids = {}   # a former id -> the part that holds it
+    for pid, d in parts.items():
+        for n in [d.get("number"), *(x for x in d.get("numbers") or [] if isinstance(x, str))]:
+            if isinstance(n, str):
+                sold_as.setdefault((d.get("brand"), n.upper()), pid)
+        for f in d.get("former_ids") or []:
+            former_ids.setdefault(f, pid)
+    claimed = {}   # (brand, NUMBER) -> the part whose former_numbers holds it
+    for path, kind, d in docs:
+        if kind != "part" or "former_numbers" not in d:
+            continue
+        fn = d["former_numbers"]
+        if not isinstance(fn, list) or not fn or not all(isinstance(n, str) and PART_NUMBER_RE.match(n) for n in fn):
+            errors.append(f"{path}: former_numbers should be a non-empty list of part numbers")
+            continue
+        src = (d.get("sources") or {}).get("former_numbers")
+        if not (isinstance(src, str) and src.startswith("https://")):
+            errors.append(f"{path}: former_numbers needs sources.former_numbers, the https page of the maker that prints the number as this part's old one (docs/schema.md \"Renumber or revision\")")
+        if len({n.upper() for n in fn}) != len(fn):
+            errors.append(f"{path}: former_numbers repeats a number")
+        slug = str(d.get("brand", "")).split("/", 1)[-1]
+        own = {x.upper() for x in [d.get("number"), *(d.get("numbers") or [])] if isinstance(x, str)}
+        for n in fn:
+            key = (d.get("brand"), n.upper())
+            if n.upper() in own:
+                errors.append(f"{path}: former number {n} is the part's own number or one of its numbers")
+                continue
+            live = sold_as.get(key)
+            if live and live != d.get("id"):
+                errors.append(f"{path}: former number {n} is a live number of {live}: a revision or a duplicate, not a renumber (docs/schema.md \"Renumber or revision\")")
+                continue
+            fid = f"part/{slug}/{n}"
+            if fid in retired_ids:
+                errors.append(f"{path}: former number {n} is a retired id (data/retired.toml): a misread or retired number is neither a renumber nor a revision")
+                continue
+            if former_ids.get(fid) not in (None, d.get("id")):
+                errors.append(f"{path}: former number {n} is a former id of {former_ids[fid]}")
+                continue
+            other = claimed.setdefault(key, d.get("id"))
+            if other != d.get("id"):
+                errors.append(f"{path}: former number {n} is also a former number of {other}")
+    succ = {}
+    for path, kind, d in docs:
+        if kind != "part" or "supersedes" not in d:
+            continue
+        v = d["supersedes"]
+        if not (isinstance(v, str) and v.startswith("part/")):
+            errors.append(f"{path}: supersedes = {v!r} should be a part id")
+            continue
+        if v == d.get("id"):
+            errors.append(f"{path}: supersedes itself")
+            continue
+        if v not in parts:
+            errors.append(f"{path}: supersedes -> {v} does not exist")
+            continue
+        if parts[v].get("brand") != d.get("brand"):
+            errors.append(f"{path}: supersedes -> {v} is of another brand")
+        src = (d.get("sources") or {}).get("supersedes")
+        if not (isinstance(src, str) and src.startswith("https://")) and d.get("id") not in legacy:
+            errors.append(f"{path}: supersedes -> {v} needs sources.supersedes, the https page of the maker that says it replaces this part (docs/schema.md \"Renumber or revision\")")
+        succ[d["id"]] = v
+    looped = set()
+    for start in succ:
+        seen, cur = [], start
+        while cur in succ:
+            if cur in seen:
+                if cur not in looped:
+                    errors.append(f"part supersedes cycle: {' -> '.join(seen[seen.index(cur):] + [cur])}")
+                    looped.update(seen)
+                break
+            seen.append(cur)
+            cur = succ[cur]
+
+
+def legacy_ids(path):
+    """The ids of data/legacy-part-supersedes.toml (ids = [...]), or none when the file is absent."""
+    if not os.path.exists(path):
+        return set()
+    with open(path, "rb") as f:
+        return set(tomllib.load(f).get("ids", []))
+
+
 def check_names_no_brand(docs, errors):
     """A release, kit or part name does not repeat its brand: the site prints the brand in front."""
     brand_names = {d.get("id"): d.get("name", "") for _, k, d in docs if k == "brand"}
@@ -856,7 +947,7 @@ def main():
                 errors.append(f"{path}: parse error: {e}")
                 continue
             rel = os.path.relpath(path, ROOT)
-            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml"):
+            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml", "legacy-part-supersedes.toml"):
                 continue   # retired ids and confirmed pairs, checked below; reviewed numbers are audit-only (audit.py)
             top = rel.split(os.sep)[0]
             kind = next((k for k, v in KINDS.items() if v["dir"] == top), None)
@@ -982,6 +1073,8 @@ def main():
             if kind == "release" and k == "related":   # checked with the other releases in check_release_related
                 continue
             if kind == "kit" and k == "supersedes":   # checked in check_kit_supersedes
+                continue
+            if kind == "part" and k == "supersedes":   # checked in check_part_renumbers
                 continue
             if kind == "release" and k == "supersedes":   # the release this one replaces (docs/schema.md "release")
                 if not (isinstance(v, str) and v.startswith("release/")):
@@ -1615,6 +1708,12 @@ def main():
     check_release_ranges(docs, errors)
     check_release_power(docs, ids, errors)
     check_kit_supersedes(docs, errors)
+    retired_path = os.path.join(ROOT, "retired.toml")
+    retired_ids = set()
+    if os.path.exists(retired_path):
+        with open(retired_path, "rb") as f:
+            retired_ids = {r.get("id") for r in tomllib.load(f).get("retired", [])}
+    check_part_renumbers(docs, errors, retired_ids, legacy_ids(os.path.join(ROOT, "legacy-part-supersedes.toml")))
     check_makes(docs, errors)
     check_vehiclesdb(docs, errors)
     check_wikidata(docs, errors)
