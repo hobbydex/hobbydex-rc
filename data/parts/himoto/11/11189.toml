@@ -1,11 +1,15 @@
 id = "part/himoto/11189"
 brand = "brand/himoto"
 number = "11189"
-name = "11189"
+name = "Motor gear steel (29T)"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/1-10-ep-model"]
 fits = [
   { kit = "kit/himoto/drift-tc", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/nascada", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e003&item_no=HI3101BL&submit=Go+To+Details"

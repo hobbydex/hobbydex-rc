@@ -1,11 +1,17 @@
 id = "part/himoto/82809"
 brand = "brand/himoto"
 number = "82809"
-name = "82809"
+name = "Wheel Shafts"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/hi4192-63-83-85-86"]
 fits = [
   { kit = "kit/himoto/edc-16", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/exo-16", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+pack_qty = 2
+pack_qty_basis = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A16&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e007&item_no=HI4185BL&submit=Go+To+Details"

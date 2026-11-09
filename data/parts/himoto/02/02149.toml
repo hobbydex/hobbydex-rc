@@ -1,10 +1,14 @@
 id = "part/himoto/02149"
 brand = "brand/himoto"
 number = "02149"
-name = "02149"
+name = "Rear Lower Suspension Arm"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/manual-1-10-pivot-ball-suspension"]
 fits = [
   { kit = "kit/himoto/taipan-xrs", releases = ["release/himoto/HI9103", "release/himoto/HI9103E"], type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=NITRO&searchproduct=BUGGY&searchterm=&product=BUGGY&type=NITRO&ref_no=buggy_g020&item_no=HI8103E&submit=Go+To+Details"

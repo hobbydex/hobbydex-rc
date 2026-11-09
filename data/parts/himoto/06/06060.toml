@@ -1,10 +1,14 @@
 id = "part/himoto/06060"
 brand = "brand/himoto"
 number = "06060"
-name = "06060"
+name = "Front Suspension Arm Round Pin B"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/manual-1-10-pivot-ball-suspension"]
 fits = [
   { kit = "kit/himoto/python-xv3", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=NITRO&searchproduct=BUGGY&searchterm=&product=BUGGY&type=NITRO&ref_no=buggy_g020&item_no=HI8103E&submit=Go+To+Details"

@@ -1,10 +1,10 @@
 id = "part/himoto/06009"
 brand = "brand/himoto"
 number = "06009"
-name = "06009"
+name = "Front Tyre Buggy"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/manual-1-10-car-buggy"]
 fits = [
   { kit = "kit/himoto/1-10-scale-rtr-4wd-nitro-power-off-road-buggy-sh18-engine-w-2-4g-remote", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/python-xv3", type = "direct", source = "doc/himoto/option-parts" },
@@ -13,3 +13,7 @@ fits = [
   { kit = "kit/himoto/syclone-pro-upgrade", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/zmotoz3", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=NITRO&searchproduct=BUGGY&searchterm=&product=BUGGY&type=NITRO&ref_no=buggy_g019&item_no=HI8102M&submit=Go+To+Details"

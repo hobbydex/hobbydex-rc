@@ -1,11 +1,15 @@
 id = "part/himoto/02123"
 brand = "brand/himoto"
 number = "02123"
-name = "02123"
+name = "Single Speed Shaft"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/manual-1-10-car-buggy"]
 fits = [
   { kit = "kit/himoto/rapida", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/syclone", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=NITRO&searchproduct=BUGGY&searchterm=&product=BUGGY&type=NITRO&ref_no=buggy_g019&item_no=HI8102M&submit=Go+To+Details"

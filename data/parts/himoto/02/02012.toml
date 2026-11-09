@@ -1,10 +1,10 @@
 id = "part/himoto/02012"
 brand = "brand/himoto"
 number = "02012"
-name = "02012"
+name = "Servo Links"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/hi4192-63-83-85-86"]
 fits = [
   { kit = "kit/himoto/1-10-scale-rtr-4wd-nitro-power-on-road-car-sh18-engine-w-2-4g-remote", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/drift-tc", type = "direct", source = "doc/himoto/option-parts" },
@@ -13,3 +13,7 @@ fits = [
   { kit = "kit/himoto/rapida-pro", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/taipan-xrs", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "manual"
+
+[sources]
+name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A16&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e007&item_no=HI4185BL&submit=Go+To+Details"
