@@ -30,8 +30,8 @@ class PartRenumbers(unittest.TestCase):
             with open(path, "w", encoding="utf-8") as fh:
                 fh.write(text)
         if legacy:
-            with open(os.path.join(tmp, "data", "legacy-part-supersedes.txt"), "w", encoding="utf-8") as fh:
-                fh.write("\n".join(legacy) + "\n")
+            with open(os.path.join(tmp, "data", "legacy-part-supersedes.toml"), "w", encoding="utf-8") as fh:
+                fh.write("ids = [" + ", ".join(f'"{x}"' for x in legacy) + "]\n")
         cwd, old_root = os.getcwd(), validate.ROOT
         os.chdir(tmp)
         validate.ROOT = "data"

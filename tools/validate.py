@@ -515,7 +515,7 @@ PART_NUMBER_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$")
 def check_part_renumbers(docs, errors, retired_ids=(), legacy=()):
     """A part's former_numbers (a renumber: the same part under a number the maker no longer uses) and supersedes (a
     revision: a separate record that replaces this one, one predecessor of the same brand, no cycles). docs/schema.md
-    "Renumber or revision". legacy: part ids whose supersedes predates the source rule (data/legacy-part-supersedes.txt)."""
+    "Renumber or revision". legacy: part ids whose supersedes predates the source rule (data/legacy-part-supersedes.toml)."""
     parts = {d["id"]: d for _, k, d in docs if k == "part"}
     sold_as = {}   # (brand, NUMBER) -> the part id it is sold under (its number or one of its numbers)
     former_ids = {}   # a former id -> the part that holds it
@@ -592,12 +592,12 @@ def check_part_renumbers(docs, errors, retired_ids=(), legacy=()):
             cur = succ[cur]
 
 
-def id_list_file(path):
-    """The ids in a plain list file (one per line; # starts a comment), or none when the file is absent."""
+def legacy_ids(path):
+    """The ids of data/legacy-part-supersedes.toml (ids = [...]), or none when the file is absent."""
     if not os.path.exists(path):
         return set()
-    with open(path, encoding="utf-8") as f:
-        return {ln.strip() for ln in f if ln.strip() and not ln.lstrip().startswith("#")}
+    with open(path, "rb") as f:
+        return set(tomllib.load(f).get("ids", []))
 
 
 def check_names_no_brand(docs, errors):
@@ -947,7 +947,7 @@ def main():
                 errors.append(f"{path}: parse error: {e}")
                 continue
             rel = os.path.relpath(path, ROOT)
-            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml"):
+            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml", "legacy-part-supersedes.toml"):
                 continue   # retired ids and confirmed pairs, checked below; reviewed numbers are audit-only (audit.py)
             top = rel.split(os.sep)[0]
             kind = next((k for k, v in KINDS.items() if v["dir"] == top), None)
@@ -1713,7 +1713,7 @@ def main():
     if os.path.exists(retired_path):
         with open(retired_path, "rb") as f:
             retired_ids = {r.get("id") for r in tomllib.load(f).get("retired", [])}
-    check_part_renumbers(docs, errors, retired_ids, id_list_file(os.path.join(ROOT, "legacy-part-supersedes.txt")))
+    check_part_renumbers(docs, errors, retired_ids, legacy_ids(os.path.join(ROOT, "legacy-part-supersedes.toml")))
     check_makes(docs, errors)
     check_vehiclesdb(docs, errors)
     check_wikidata(docs, errors)

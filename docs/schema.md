@@ -648,7 +648,7 @@ former_numbers = ["82909"]
 sources = { former_numbers = "https://himoto.example/manual/hi4192.pdf" }
 ```
 
-`supersedes` on a part (the revision): the one part this one replaces, of the same brand, with the maker's statement cited in `sources.supersedes` (https). One predecessor per part, no cycles (validate.py). The old part keeps its own facts and fits. Parts that predate this rule and have no source are listed in data/legacy-part-supersedes.txt until their source is found or they are reviewed as renumbers.
+`supersedes` on a part (the revision): the one part this one replaces, of the same brand, with the maker's statement cited in `sources.supersedes` (https). One predecessor per part, no cycles (validate.py). The old part keeps its own facts and fits. Parts that predate this rule and have no source are listed in data/legacy-part-supersedes.toml until their source is found or they are reviewed as renumbers.
 
 `rebrand_of`: the part this one is the same product as under another brand
 (a radio HobbyKing sold as Turnigy), with a `source` or `notes`. Recorded once,
