@@ -512,10 +512,13 @@ def check_kit_supersedes(docs, errors):
 PART_NUMBER_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9.+\-]*$")
 
 
-def check_part_renumbers(docs, errors, retired_ids=(), legacy=()):
+def check_part_renumbers(docs, errors, retired_ids=(), legacy=(), http_hosts=frozenset()):
     """A part's former_numbers (a renumber: the same part under a number the maker no longer uses) and supersedes (a
     revision: a separate record that replaces this one, one predecessor of the same brand, no cycles). docs/schema.md
-    "Renumber or revision". legacy: part ids whose supersedes predates the source rule (data/legacy-part-supersedes.toml)."""
+    "Renumber or revision". legacy: part ids whose supersedes predates the source rule (data/legacy-part-supersedes.toml).
+    http_hosts: the hosts of brands whose own site is http only; their pages may be cited over http, as sources are."""
+    def citable(v):
+        return isinstance(v, str) and (v.startswith("https://") or (v.startswith("http://") and urllib.parse.urlsplit(v).hostname in http_hosts))
     parts = {d["id"]: d for _, k, d in docs if k == "part"}
     sold_as = {}   # (brand, NUMBER) -> the part id it is sold under (its number or one of its numbers)
     former_ids = {}   # a former id -> the part that holds it
@@ -534,7 +537,7 @@ def check_part_renumbers(docs, errors, retired_ids=(), legacy=()):
             errors.append(f"{path}: former_numbers should be a non-empty list of part numbers")
             continue
         src = (d.get("sources") or {}).get("former_numbers")
-        if not (isinstance(src, str) and src.startswith("https://")):
+        if not citable(src):
             errors.append(f"{path}: former_numbers needs sources.former_numbers, the https page of the maker that prints the number as this part's old one (docs/schema.md \"Renumber or revision\")")
         if len({n.upper() for n in fn}) != len(fn):
             errors.append(f"{path}: former_numbers repeats a number")
@@ -576,7 +579,7 @@ def check_part_renumbers(docs, errors, retired_ids=(), legacy=()):
         if parts[v].get("brand") != d.get("brand"):
             errors.append(f"{path}: supersedes -> {v} is of another brand")
         src = (d.get("sources") or {}).get("supersedes")
-        if not (isinstance(src, str) and src.startswith("https://")) and d.get("id") not in legacy:
+        if not citable(src) and d.get("id") not in legacy:
             errors.append(f"{path}: supersedes -> {v} needs sources.supersedes, the https page of the maker that says it replaces this part (docs/schema.md \"Renumber or revision\")")
         succ[d["id"]] = v
     looped = set()
@@ -1713,7 +1716,7 @@ def main():
     if os.path.exists(retired_path):
         with open(retired_path, "rb") as f:
             retired_ids = {r.get("id") for r in tomllib.load(f).get("retired", [])}
-    check_part_renumbers(docs, errors, retired_ids, legacy_ids(os.path.join(ROOT, "legacy-part-supersedes.toml")))
+    check_part_renumbers(docs, errors, retired_ids, legacy_ids(os.path.join(ROOT, "legacy-part-supersedes.toml")), http_hosts)
     check_makes(docs, errors)
     check_vehiclesdb(docs, errors)
     check_wikidata(docs, errors)
