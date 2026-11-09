@@ -637,6 +637,19 @@ former_ids = ["part/arrma/AR330538"]
 numbers = ["AR330538"]
 ```
 
+Renumber or revision (decided by the owner, 2026-11-09: "there is a difference between a part revision and a renumber"). A renumber is the same physical part under a new number: one record. Its current alternative numbers stay in `numbers` (the site: "also sold as"). A number the maker no longer uses goes in `former_numbers`. A revision is a changed part (material, design, "V2", "improved") whose old version may still exist or fit other cars: two records, each with its own facts and fits, and the newer one carries `supersedes`. Never merge a revision into one record, and never treat a printed old number as a revision without the maker's statement.
+
+`former_numbers` (optional): the numbers the maker no longer uses for this same part, a list of part numbers. Evidence is required: the maker prints the number as this part's old number (Himoto's "Old NO.: 82909" beside the current number) or says it was renumbered. Cite the maker page that states it in `sources.former_numbers` (https). The site shows "formerly 82909" after the part number, search finds the old number, and `/rc/parts/<brand>/<old>/` redirects to the part, as for `numbers`. validate.py refuses a former number that is the part's own number or one of its `numbers`, a number another part of the brand is sold under (a revision or a duplicate: report it), a retired id (data/retired.toml: a misread number is neither), a former id of another part, and a number listed twice.
+
+```toml
+id = "part/himoto/282018"
+number = "282018"
+former_numbers = ["82909"]
+sources = { former_numbers = "https://himoto.example/manual/hi4192.pdf" }
+```
+
+`supersedes` on a part (the revision): the one part this one replaces, of the same brand, with the maker's statement cited in `sources.supersedes` (https). One predecessor per part, no cycles (validate.py). The old part keeps its own facts and fits. Parts that predate this rule and have no source are listed in data/legacy-part-supersedes.txt until their source is found or they are reviewed as renumbers.
+
 `rebrand_of`: the part this one is the same product as under another brand
 (a radio HobbyKing sold as Turnigy), with a `source` or `notes`. Recorded once,
 on the rebranded part; the site shows it from both sides.
