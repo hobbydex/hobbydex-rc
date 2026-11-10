@@ -1698,6 +1698,11 @@ def main():
     for path, kind, d in docs:
         if kind == "part" and d.get("number"):
             claimed[(d.get("brand"), str(d["number"]).upper())] = d.get("id")
+    for path, kind, d in docs:   # listed_as: the forms a maker or shop prints (docs/schema.md "listed_as"), loosely checked
+        if kind == "part" and "listed_as" in d:
+            la = d["listed_as"]
+            if not isinstance(la, list) or not la or not all(isinstance(x, str) and x.strip() and x.isprintable() for x in la):
+                errors.append(f"{path}: listed_as should be a non-empty list of printable text strings")
     for path, kind, d in docs:
         if kind != "part" or "numbers" not in d:
             continue
