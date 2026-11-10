@@ -621,6 +621,14 @@ Hobbydex, and the site shows it apart from the brand's own pages.
 links = [{ site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/13934-10004255", kind = "fan-site" }]
 ```
 
+`listed_as` (optional, a list of text strings): the exact forms a maker or a shop prints for this part when they are not part numbers: a store SKU with a space, slash or # ("STK-Bearing Set", "On/Off Switch", "#364-BK"), or a shop's own code ("RAR-RER01638"). `number` stays a valid part number (the cleaned form when the SKU has a space, slash or #). Each string is printable text with no line break; validate.py checks only that. The site search finds a part by these strings as it does by `number`. Set by tools/sources/sites/redcatracing-com.toml (store SKUs) and by an owner's statement in tools/sources/rules/redcat-owner-*.tsv (dated in notes).
+
+```toml
+id = "part/redcat/STK-Bearing-Set"
+number = "STK-Bearing-Set"
+listed_as = ["STK-Bearing Set"]
+```
+
 `numbers`: the part's other numbers, when one part is printed or sold under
 more than one (Tamiya's 7-digit spare number, 8-digit SKU and X-number). One
 part is one record: it is keyed by the number the part is sold under, and a
