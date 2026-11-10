@@ -453,22 +453,29 @@ def check_vehiclesdb(docs, errors):
 WIKIDATA_ID = re.compile(r"Q[1-9][0-9]*")
 
 def check_wikidata(docs, errors):
-    """Wikidata links (docs/schema.md "Makes", depicts): `wikidata` is the item's Q id, `wikipedia` the English
-    Wikipedia article's title as Wikidata's enwiki sitelink gives it, and is only set with `wikidata`."""
+    """Wikidata links (docs/schema.md "Makes", "brand", depicts): `wikidata` is the item's Q id, `wikipedia` the English
+    Wikipedia article's title as Wikidata's enwiki sitelink gives it, and is only set with `wikidata`. A brand's pair is
+    set together, and its article title is its name or one of its aliases (case and spaces aside)."""
     for path, kind, d in docs:
-        targets = [("", d)] if kind == "make" else []
+        targets = [("", d)] if kind in ("make", "brand") else []
         dp = d.get("depicts") if kind in ("release", "part") else None
         if isinstance(dp, dict):
             targets.append(("depicts ", dp))
         for label, t in targets:
             if "wikidata" not in t and "wikipedia" not in t:
                 continue
+            if kind == "brand" and not {"wikidata", "wikipedia"} <= set(t):
+                errors.append(f"{path}: wikidata and wikipedia are set together on a brand")
             if not (isinstance(t.get("wikidata"), str) and WIKIDATA_ID.fullmatch(t["wikidata"])):
                 errors.append(f"{path}: {label}wikidata should be a Wikidata item id such as Q36, got {t.get('wikidata')!r}")
             title = t.get("wikipedia")
             if "wikipedia" in t and not (isinstance(title, str) and title.strip() == title and title and "\n" not in title
                                          and "#" not in title and "|" not in title and "://" not in title):
                 errors.append(f"{path}: {label}wikipedia should be the English article title (spaces, no #), got {title!r}")
+            elif kind == "brand" and isinstance(title, str):
+                names = [d.get("name", "")] + list(d.get("aliases", []) or [])
+                if " ".join(title.replace("_", " ").split()).casefold() not in {" ".join(str(n).split()).casefold() for n in names}:
+                    errors.append(f"{path}: wikipedia {title!r} is not the brand's name or one of its aliases {names}")
 
 NAME_BRAND_EXCEPTIONS = {   # a name that starts with its brand's name on purpose (docs/schema.md "release", "kit", "part")
     "release/kyosho/30645",   # KYOSHO AMERICA: the maker's US company, not a repeat of the brand
