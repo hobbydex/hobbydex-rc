@@ -1,0 +1,24 @@
+id = "part/fast-eddy/TFE10583"
+brand = "brand/fast-eddy"
+number = "TFE10583"
+name = "HPI Venture18 LC250 Sealed Bearing Kit"
+seen_by = "2026-11-09"
+seen_by_source = "https://www.fasteddybearings.com/products/hpi-venture18-lc250-sealed-bearing-kit"
+includes = [
+  { spec = "spec/bearing/2x5x2.5", qty = 1, notes = "Metal Shielded" },
+  { spec = "spec/bearing/3x6x2.5", qty = 7 },
+  { spec = "spec/bearing/4x7x2.5", qty = 4 },
+  { spec = "spec/bearing/5x8x2.5", qty = 4 },
+  { spec = "spec/bearing/8x12x3.5", qty = 2 },
+]
+category = "bearing"
+category_source = "curated"
+seal = "rubber"
+fits = [
+  { kit = "kit/hpi/venture18", car = "Venture18 LC250", type = "direct", source = "doc/fast-eddy/store", notes = "Listed for the Venture18 LC250" },
+]
+links = [
+  { site = "Fast Eddy Bearings", url = "https://www.fasteddybearings.com/products/hpi-venture18-lc250-sealed-bearing-kit" },
+]
+pack_qty = 18
+pack_qty_basis = "includes"
