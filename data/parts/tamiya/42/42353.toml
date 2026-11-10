@@ -13,3 +13,9 @@ links = [
 ]
 category = "shock"
 documents = ["doc/tamiya/42353-trf-ssbb-daempfer-4"]
+shock_part = "complete"
+fits = [
+  { kit = "kit/tamiya/ta07", releases = ["release/tamiya/58636"], type = "replaces", source = "doc/tamiya/58636-ta07-parts-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "replaces", source = "doc/tamiya/58693-30058693-ta08-parts-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tb-05", releases = ["release/tamiya/47456"], type = "replaces", source = "doc/tamiya/47456-tb05-parts-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

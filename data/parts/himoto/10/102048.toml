@@ -20,5 +20,9 @@ name_source = "manual"
 pack_qty = 8
 pack_qty_basis = "manual"
 
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
 [sources]
 name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e003&item_no=HI3101BL&submit=Go+To+Details"

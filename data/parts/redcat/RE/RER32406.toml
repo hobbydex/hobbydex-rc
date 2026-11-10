@@ -2,7 +2,9 @@ id = "part/redcat/RER32406"
 brand = "brand/redcat"
 number = "RER32406"
 name = "3.5mm Ball Stud"
+gtin = "843335128090"
 pack_qty = 12
+pack_qty_basis = "page"
 applies_to = "SIXTYFOUR 18"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer32406" },
@@ -11,3 +13,7 @@ fits = [
   { kit = "kit/redcat/sixtyfour-18", type = "direct", source = "doc/redcat/store" },
 ]
 category = "ball-end"
+equivalent_to = [
+  { spec = "spec/ball-end/3.5mm-stud", match = "functional" },
+]
+ball_type = "stud"

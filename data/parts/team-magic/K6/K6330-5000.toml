@@ -4,3 +4,7 @@ number = "K6330-5000"
 name = "K Factory Diff Oil 40ml #5000"
 documents = ["doc/team-magic/beetle-baja-manual-en"]
 category = "oil-grease"
+volume_ml = 40
+equivalent_to = [
+  { spec = "spec/oil/silicone-5000cst", match = "functional", notes = "Viscosity number #5000 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

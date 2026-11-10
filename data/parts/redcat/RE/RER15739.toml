@@ -2,9 +2,14 @@ id = "part/redcat/RER15739"
 brand = "brand/redcat"
 number = "RER15739"
 name = "1x22mm Pin"
+gtin = "843335124931"
 pack_qty = 12
+pack_qty_basis = "page"
 applies_to = "BED DANCER"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer15739" },
 ]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/1x22", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

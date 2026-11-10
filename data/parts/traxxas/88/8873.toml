@@ -15,3 +15,6 @@ category = "wheel"
 fits = [
   { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/traxxas/part-pages", notes = "Named in the part page's own text (import_traxxas_parts.py)" },
 ]
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "close", notes = "The wheel hexes listed for TRX-4 Mercedes-Benz G 500 RTR (82096-4) are 12 mm" },
+]

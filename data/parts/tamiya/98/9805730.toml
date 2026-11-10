@@ -2,6 +2,11 @@ id = "part/tamiya/9805730"
 brand = "brand/tamiya"
 number = "9805730"
 name = "2x13mm Tapping Screw"
+seen_by = "2002-05"
+seen_by_source = "doc/tamiya/58290-manual-de"
 documents = ["doc/tamiya/58290-manual-de"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m2x13-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

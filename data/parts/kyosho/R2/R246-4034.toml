@@ -15,3 +15,7 @@ documents = ["doc/kyosho/31010-kf01-parts-list-v01", "doc/kyosho/kf01_parts_list
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/r246-4034.html" } ]
 ocr_names = ["Double Rubber Bearing"]
 notes = "Name from the Kyosho product page (was read by OCR from a scanned manual)."
+equivalent_to = [
+  { spec = "spec/bearing/9x17x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

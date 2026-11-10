@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20150906093027/http://www.horizonhobby.com/product/cars-and-trucks/car-and-truck-accessory/all-surface-parts/m25-nylock-nut-%2810%29-vtr236013", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/nut/m2.5-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

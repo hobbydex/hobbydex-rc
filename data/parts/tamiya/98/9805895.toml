@@ -2,6 +2,11 @@ id = "part/tamiya/9805895"
 brand = "brand/tamiya"
 number = "9805895"
 name = "3x20mm Screw"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701113605/http://www.tamiyausa.com/images/product/730/9805895/thumbs/header_9805895.jpg"
 documents = ["doc/tamiya/49297-manual"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m3x20-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

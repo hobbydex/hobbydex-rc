@@ -6,3 +6,7 @@ name_source = "manual"
 documents = ["doc/carson/500409033-parts-list"]
 name_de = "Karosserie Audi R8 CY5"
 category = "body"
+depicts = { make = "Audi", model = "R8 CY5" }
+fits = [
+  { kit = "kit/carson/audi-r8", type = "replaces", source = "doc/carson/500409033-parts-list", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

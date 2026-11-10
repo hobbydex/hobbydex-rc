@@ -2,6 +2,11 @@ id = "part/tamiya/9805669"
 brand = "brand/tamiya"
 number = "9805669"
 name = "2x25mm Cap Screw"
+seen_by = "2017"
+seen_by_source = "doc/tamiya/49297-manual"
 documents = ["doc/tamiya/49297-manual"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m2x25-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

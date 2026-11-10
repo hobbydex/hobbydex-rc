@@ -2,8 +2,14 @@ id = "part/tamiya/19804928"
 brand = "brand/tamiya"
 number = "19804928"
 name = "2x20mm Screw"
+pack_qty = 10
+pack_qty_basis = "manual"
 seen_by = "2017-03"
 seen_by_source = "doc/tamiya/56352-bauanleitung-mb-arocs-3363-6x4"
 category = "screw"
 documents = ["doc/tamiya/56352-bauanleitung-mb-arocs-3363-6x4"]
 name_source = "manual"
+links = [ { site = "tamico.de", url = "https://tamico.de/Tamiya-19804928-AP2x20mm-SCREW10pcs-56347", kind = "dealer" }, { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-2x20mm-screw-56360/", kind = "maker" } ]
+equivalent_to = [
+  { spec = "spec/screw/m2x20-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

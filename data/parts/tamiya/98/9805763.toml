@@ -2,9 +2,14 @@ id = "part/tamiya/9805763"
 brand = "brand/tamiya"
 number = "9805763"
 name = "3X10Mm Screw"
+seen_by = "2008-11"
+seen_by_source = "doc/tamiya/84056-f103-15th"
 documents = ["doc/tamiya/84056-f103-15th"]
 category = "screw"
 name_source = "manufacturer"
 links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x10mm-screw-49175/", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

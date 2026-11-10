@@ -10,3 +10,6 @@ category = "bearing"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/ball-bearing-5x11x5-red-seal-pr-u7089" } ]
 name_source = "manufacturer"
 color = "red"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

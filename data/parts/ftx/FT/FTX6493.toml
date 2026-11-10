@@ -12,3 +12,6 @@ pack_qty_basis = "name"
 links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-banzai-rear-lower-susp-arms-aluminium" },
 ]
+fits = [
+  { kit = "kit/ftx/banzai", type = "replaces", replaces = "part/ftx/FTX6582", source = "doc/ftx/cml-banzai-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

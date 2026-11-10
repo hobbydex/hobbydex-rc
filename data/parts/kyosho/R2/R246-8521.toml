@@ -2,6 +2,7 @@ id = "part/kyosho/R246-8521"
 brand = "brand/kyosho"
 number = "R246-8521"
 name = "2P Super Plug 1 Pair 24K Gold Plated"
+status = "discontinued"
 gtin = "4548565145713"
 seen_by = "2012"
 seen_by_source = "doc/kyosho/30412-plazma-formula-im"
@@ -11,3 +12,6 @@ name_source = "manufacturer"
 pack_qty = 2
 pack_qty_basis = "name"
 color = "gold"
+equivalent_to = [
+  { spec = "spec/connector/kyosho-s-plug", match = "functional" },
+]

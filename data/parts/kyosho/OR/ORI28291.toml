@@ -7,3 +7,8 @@ seen_by_source = "doc/kyosho/30026-t01-tf7-im"
 documents = ["doc/kyosho/30026-t01-tf7-im"]
 category = "motor"
 name_source = "manufacturer"
+turns = 4
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
+range = "kyosho/vortex-vst2-pro-lw-540"

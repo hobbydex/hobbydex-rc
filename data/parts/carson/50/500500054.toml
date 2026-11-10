@@ -2,6 +2,11 @@ id = "part/carson/500500054"
 brand = "brand/carson"
 number = "500500054"
 name = "R/C Anlage REFLEX Wheel PRO 3 LCD 2.4G"
+seen_by = "2021-12-01"
+seen_by_source = "https://web.archive.org/web/20211201085846/https://www.carson-modelsport.com/carson_en/categories/carson-accessories/remote-controlled-systems/fs-3k-reflex-wheel-pro-3-lcd-24g-500500054-en.html"
 name_source = "manual"
 documents = ["doc/carson/500409006-parts-list"]
 category = "wheel"
+fits = [
+  { kit = "kit/carson/specter-bl", releases = ["release/carson/500409006"], type = "replaces", source = "doc/carson/500409006-parts-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

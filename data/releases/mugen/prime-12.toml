@@ -6,7 +6,12 @@ kind = "kit"
 power = "nitro"
 power_source = "part/mugen/K0702"
 status = "discontinued"
+seen_by = "1999"
+seen_by_source = "https://www.rcscrapyard.net/mugen-prime-12.htm"
 documents = ["doc/mugen/prime-12-part-list", "doc/mugen/prime-12-part-list-ja", "doc/mugen/prime-12-manual-eu"]
+links = [
+  { site = "RC Scrapyard", url = "https://www.rcscrapyard.net/mugen-prime-12.htm", kind = "fan-site" },
+]
 contains = [
   { part = "part/mugen/K0001", role = "kit", source = "doc/mugen/prime-12-part-list" },
   { part = "part/mugen/K0002", role = "kit", source = "doc/mugen/prime-12-part-list" },

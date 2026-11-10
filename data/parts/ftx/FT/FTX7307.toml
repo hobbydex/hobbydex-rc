@@ -7,3 +7,6 @@ pack_qty_basis = "manual"
 notes = "Name read from a scanned FTX parts list; the OCR engines agree"
 category = "bearing"
 documents = ["doc/ftx/ftx5574-ftx-ravine-manual"]
+equivalent_to = [
+  { spec = "spec/bearing/5x9x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

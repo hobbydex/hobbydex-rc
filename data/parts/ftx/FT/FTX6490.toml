@@ -11,3 +11,6 @@ documents = ["doc/ftx/cml-banzai-manual"]
 category = "chassis"
 name_source = "manufacturer"
 material = "carbon"
+fits = [
+  { kit = "kit/ftx/banzai", type = "replaces", replaces = "part/ftx/FTX6561", source = "doc/ftx/cml-banzai-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

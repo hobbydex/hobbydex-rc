@@ -2,6 +2,13 @@ id = "part/tamiya/9804243"
 brand = "brand/tamiya"
 number = "9804243"
 name = "630 Ball Bearing"
+seen_by = "2007-01"
+seen_by_source = "doc/tamiya/57102-tamtech-gear-gb-01"
+pack_qty = 2
+pack_qty_basis = "manual"
 documents = ["doc/tamiya/57102-tamtech-gear-gb-01"]
 category = "bearing"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/bearing/3x6x2.5", match = "close", notes = "Tamiya size code 630: 3x6 mm bore x outer; width 2.5 mm per the usual size, not stated by Tamiya" },
+]

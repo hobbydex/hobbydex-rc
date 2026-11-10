@@ -2,9 +2,14 @@ id = "part/tamiya/9805575"
 brand = "brand/tamiya"
 number = "9805575"
 name = "Gp 3X18Mm Tap Screw"
+seen_by = "2016-06-03"
+seen_by_source = "https://web.archive.org/web/20160603003009/http://www.tamiyausa.com/images/product/735/9805575/thumbs/header_9805575.jpg"
 documents = ["doc/tamiya/49297-manual"]
 category = "screw"
 name_source = "manufacturer"
 links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-gp-3x18mm-tap-screw-44013/", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x18-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

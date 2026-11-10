@@ -2,6 +2,7 @@ id = "part/team-associated/5450"
 brand = "brand/team-associated"
 number = "5450"
 name = "FT Silicone Diff Fluid, 1,000 cSt"
+gtin = "784695054509"
 seen_by = "2025-04-20"
 seen_by_source = "https://web.archive.org/web/20250420032844/https://60years.associatedelectrics.com/ft-silicone-diff-fluid-1-000-cst/"
 documents = ["doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual"]
@@ -9,4 +10,7 @@ category = "oil-grease"
 name_source = "manufacturer"
 links = [
   { site = "Team Associated", url = "https://60years.associatedelectrics.com/ft-silicone-diff-fluid-1-000-cst/" },
+]
+equivalent_to = [
+  { spec = "spec/oil/silicone-1000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
 ]

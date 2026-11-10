@@ -12,3 +12,8 @@ links = [
   { site = "Associated Electrics", url = "https://teamassociated.com/factoryteam/parts/details/89534/" },
 ]
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/nomad-db8", releases = ["release/team-associated/80941", "release/team-associated/80941C"], type = "replaces", source = "doc/team-associated/manual-nomaddb8-80941", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80906", "release/team-associated/80907", "release/team-associated/80908", "release/team-associated/80908C", "release/team-associated/80909"], type = "replaces", source = "doc/team-associated/manual-rc8-2rsrtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80933"], type = "replaces", source = "doc/team-associated/sc8-2e-rtr-manual-and-catalog-6-8-2012", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

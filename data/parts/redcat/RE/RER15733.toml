@@ -2,9 +2,14 @@ id = "part/redcat/RER15733"
 brand = "brand/redcat"
 number = "RER15733"
 name = "2x20mm Button Head Hex Machine Thread Screws"
+gtin = "843335124900"
 pack_qty = 12
+pack_qty_basis = "page"
 applies_to = "BED DANCER"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer15733" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2x20-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

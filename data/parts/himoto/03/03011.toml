@@ -3,6 +3,7 @@ brand = "brand/himoto"
 number = "03011"
 name = "Motor RC(540)"
 category = "motor"
+motor_type = "brushless"
 documents = ["doc/himoto/option-parts", "doc/himoto/1-10-ep-model"]
 fits = [
   { kit = "kit/himoto/corr-truck", releases = ["release/himoto/HI4170"], type = "direct", source = "doc/himoto/option-parts" },
@@ -16,5 +17,8 @@ fits = [
 ]
 name_source = "manual"
 
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
 [sources]
 name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e003&item_no=HI3101BL&submit=Go+To+Details"

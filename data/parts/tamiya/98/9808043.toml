@@ -2,6 +2,11 @@ id = "part/tamiya/9808043"
 brand = "brand/tamiya"
 number = "9808043"
 name = "2x12mm Screw"
+seen_by = "2007-01"
+seen_by_source = "doc/tamiya/57102-tamtech-gear-gb-01"
 documents = ["doc/tamiya/57102-tamtech-gear-gb-01"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m2x12-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

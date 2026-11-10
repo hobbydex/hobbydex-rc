@@ -9,3 +9,6 @@ links = [
 ]
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/ftx/tracker", type = "replaces", replaces = "part/ftx/FTX10272", source = "doc/ftx/cml-tracker-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -28,3 +28,6 @@ fits = [
   { kit = "kit/tamiya/xv-01", releases = ["release/tamiya/58526", "release/tamiya/58552"], type = "direct", source = "doc/tamiya/51673-product-page" },
 ]
 documents = ["doc/tamiya/newitems-month", "doc/tamiya/51673-product-page"]
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

@@ -2,6 +2,12 @@ id = "part/schumacher/U7423"
 brand = "brand/schumacher"
 number = "U7423"
 name = "Alloy Gear Diff Cover - L1/KC (Requires U7422)"
+seen_by = "2019-10-28"
+seen_by_source = "https://www.racing-cars.com/sitemap_0.xml"
 name_source = "manual"
 documents = ["doc/schumacher/cat-l1-manual"]
 category = "chassis"
+material = "aluminium"
+related = [
+  { part = "part/schumacher/U7422", relation = "requires", notes = "link_part_refs" },
+]

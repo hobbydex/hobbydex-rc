@@ -2,7 +2,9 @@ id = "part/redcat/RER32402"
 brand = "brand/redcat"
 number = "RER32402"
 name = "1.4x14mm Socket Head Machine Thread Screw"
+gtin = "843335128052"
 pack_qty = 12
+pack_qty_basis = "page"
 applies_to = "SIXTYFOUR 18"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer32402" },
@@ -11,3 +13,6 @@ fits = [
   { kit = "kit/redcat/sixtyfour-18", type = "direct", source = "doc/redcat/store" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m1.4x14-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

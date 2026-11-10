@@ -10,3 +10,7 @@ links = [
 ]
 category = "steering"
 material = "aluminium"
+fits = [
+  { kit = "kit/team-associated/rc8b3", releases = ["release/team-associated/80914", "release/team-associated/80916", "release/team-associated/80939", "release/team-associated/80940"], type = "replaces", source = "doc/team-associated/pr-docs-091416-rc8b3-parts", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t3", releases = ["release/team-associated/80917", "release/team-associated/80918", "release/team-associated/80937", "release/team-associated/80938", "release/team-associated/80943", "release/team-associated/80944"], type = "replaces", source = "doc/team-associated/80944-rc8t3-2e-nitro-combo-manual-11-15-2021", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

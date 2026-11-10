@@ -6,3 +6,6 @@ name_source = "manual"
 documents = ["doc/carson/500404057-parts-list"]
 name_de = "STUNT WARRIOR Karosserie-Set"
 category = "body"
+fits = [
+  { kit = "kit/carson/stunt-warrior", releases = ["release/carson/500404057"], type = "replaces", source = "doc/carson/500404057-parts-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -8,3 +8,7 @@ gtin = "4548565381593"
 documents = ["doc/kyosho/34305-t02-ultima-rb7-5-im"]
 category = "oil-grease"
 name_source = "manufacturer"
+volume_ml = 40
+equivalent_to = [
+  { spec = "spec/oil/silicone-2000cst", match = "functional", notes = "Viscosity number #2000 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

@@ -12,3 +12,6 @@ links = [
   { site = "Tamiya", url = "https://customer-service.tamiya.de/en/service/manuals/?lp=13&ln=90&ls=name-asc&ps=", kind = "maker" },
 ]
 documents = ["doc/tamiya/40529-ttg-daempfer-4-gb-01gt-01"]
+fits = [
+  { kit = "kit/tamiya/tamtech", type = "replaces", source = "doc/tamiya/40529-ttg-daempfer-4-gb-01gt-01", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -2,9 +2,14 @@ id = "part/tamiya/9804200"
 brand = "brand/tamiya"
 number = "9804200"
 name = "3X10Mm C.Sunk H.Screw"
+seen_by = "2007-01"
+seen_by_source = "doc/tamiya/57102-tamtech-gear-gb-01"
 documents = ["doc/tamiya/57102-tamtech-gear-gb-01"]
 category = "screw"
 name_source = "manufacturer"
 links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x10mm-csunk-hscrew43514/", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

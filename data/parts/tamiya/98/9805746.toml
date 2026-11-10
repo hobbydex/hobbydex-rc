@@ -2,6 +2,11 @@ id = "part/tamiya/9805746"
 brand = "brand/tamiya"
 number = "9805746"
 name = "3x8mm Cap Screw"
+seen_by = "2016-05-29"
+seen_by_source = "https://web.archive.org/web/20160529040744/http://www.tamiyausa.com/images/product/730/9805746/thumbs/header_9805746.jpg"
 documents = ["doc/tamiya/49297-manual"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

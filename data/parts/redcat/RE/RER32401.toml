@@ -2,7 +2,9 @@ id = "part/redcat/RER32401"
 brand = "brand/redcat"
 number = "RER32401"
 name = "1.4x11mm Phillips Button Head Machine Thread Screws"
+gtin = "843335128045"
 pack_qty = 12
+pack_qty_basis = "page"
 applies_to = "SIXTYFOUR 18"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer32401" },
@@ -11,3 +13,6 @@ fits = [
   { kit = "kit/redcat/sixtyfour-18", type = "direct", source = "doc/redcat/store" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m1.4x11-button-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

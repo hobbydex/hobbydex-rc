@@ -8,3 +8,8 @@ links = [
   { site = "WIRC Racing", url = "https://wircracing.com/products/2-speed-gear-box-shoe-set-1" },
 ]
 category = "gear"
+color = "black"
+notes = "Colour read from the maker's product photo."
+fits = [
+  { kit = "kit/wirc-racing/ntx-3", releases = ["release/wirc-racing/ntx-3"], type = "replaces", source = "doc/wirc-racing/ntx-3-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

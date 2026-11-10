@@ -6,3 +6,6 @@ pack_qty = 10
 pack_qty_basis = "manual"
 documents = ["doc/team-magic/beetle-baja-manual-en"]
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m2.6-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

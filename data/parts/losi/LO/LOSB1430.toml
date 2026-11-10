@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20150914221837/http://www.horizonhobby.com/product/cars-and-trucks/car-and-truck-accessory/all-surface-parts/4x8x3-ball-bearing--axle-(4):-mrc-losb1430", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

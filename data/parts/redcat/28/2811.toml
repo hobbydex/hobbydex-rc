@@ -2,8 +2,15 @@ id = "part/redcat/2811"
 brand = "brand/redcat"
 number = "2811"
 name = "2x7mm Drive Pin"
+seen_by = "2020-08-10"
+seen_by_source = "https://web.archive.org/web/20200810055210/https://www.redcatracing.com/products/2811"
+gtin = "609132466250"
 pack_qty = 8
+pack_qty_basis = "page"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/2811" },
 ]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2x7", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

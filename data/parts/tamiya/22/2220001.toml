@@ -2,9 +2,14 @@ id = "part/tamiya/2220001"
 brand = "brand/tamiya"
 number = "2220001"
 name = "Nut 3Mm"
+seen_by = "2017"
+seen_by_source = "doc/tamiya/49297-manual"
 documents = ["doc/tamiya/49297-manual"]
 category = "nut"
 name_source = "manufacturer"
 links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-nut-3mm/", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m3-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

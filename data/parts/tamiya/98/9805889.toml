@@ -2,6 +2,11 @@ id = "part/tamiya/9805889"
 brand = "brand/tamiya"
 number = "9805889"
 name = "2mm Lock Nut"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701181318/http://www.tamiyausa.com/images/product/730/9805889/thumbs/header_9805889.jpg"
 documents = ["doc/tamiya/49297-manual"]
 category = "nut"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/nut/m2-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

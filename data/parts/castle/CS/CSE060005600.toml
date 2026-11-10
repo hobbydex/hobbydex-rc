@@ -2,11 +2,16 @@ id = "part/castle/CSE060005600"
 brand = "brand/castle"
 number = "CSE060005600"
 name = "1/10 4-Pole Sensored Brushless Motor, 1406-4600Kv: 4mm Bullet"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-1-10-4-pole-sensored-brushless-motor-1406-4600kv-4mm-bullet/CSE060005600.html", kind = "dealer" },
 ]
 gtin = "819326011399"
 category = "motor"
+motor_type = "brushless"
 equivalent_to = [
   { spec = "spec/connector/bullet-4mm", match = "functional" },
 ]
+shaft_mm = 3.17
+kv = 4600
+range = "castle/1-10-4-pole-sensored-brushless-motor-1406-4mm-bullet"

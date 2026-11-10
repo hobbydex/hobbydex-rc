@@ -2,9 +2,14 @@ id = "part/redcat/RER15740"
 brand = "brand/redcat"
 number = "RER15740"
 name = "2x30mm Cap Head Hex Machine Thread Screws"
+gtin = "843335124948"
 pack_qty = 12
+pack_qty_basis = "page"
 applies_to = "BED DANCER"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer15740" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2x30-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

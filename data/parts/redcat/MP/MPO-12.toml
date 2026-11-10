@@ -2,7 +2,16 @@ id = "part/redcat/MPO-12"
 brand = "brand/redcat"
 number = "MPO-12"
 name = "Aluminum One Piece Engine Mount ~"
+seen_by = "2020-08-10"
+seen_by_source = "https://web.archive.org/web/20200810055030/https://www.redcatracing.com/products/mpo-12"
+gtin = "609132447884"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/mpo-12" },
 ]
 category = "chassis"
+material = "aluminium"
+fits = [
+  { kit = "kit/redcat/aftershock", releases = ["release/redcat/AFTERSHOCK-3.5-RB"], type = "replaces", source = "doc/redcat/aftershock-3-5-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/redcat/caldera", releases = ["release/redcat/caldera-3-0"], type = "replaces", source = "doc/redcat/caldera-3-0-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/redcat/earthquake", releases = ["release/redcat/EARTHQUAKE3.5-NEW-BLUE", "release/redcat/EARTHQUAKE3.5-NEW-RED"], type = "replaces", source = "doc/redcat/earthquake-3-5-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

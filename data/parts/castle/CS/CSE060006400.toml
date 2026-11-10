@@ -2,6 +2,7 @@ id = "part/castle/CSE060006400"
 brand = "brand/castle"
 number = "CSE060006400"
 name = "1/5 Scale Extreme Sensored Brushless Motor, 2028-800Kv: 8mm Bullet"
+sensored = true
 links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/castle-creations-1-5-scale-extreme-sensored-brushless-motor-2028-800kv-8mm-bullet/CSE060006400.html", kind = "dealer" },
 ]
@@ -10,3 +11,5 @@ category = "motor"
 equivalent_to = [
   { spec = "spec/connector/bullet-8mm", match = "functional" },
 ]
+motor_type = "brushless"
+kv = 800

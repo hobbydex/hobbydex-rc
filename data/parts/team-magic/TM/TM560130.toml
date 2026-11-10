@@ -6,3 +6,7 @@ pack_qty = 2
 pack_qty_basis = "manual"
 documents = ["doc/team-magic/beetle-baja-manual-en"]
 category = "pin"
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pin/4x68.8", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

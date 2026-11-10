@@ -8,3 +8,8 @@ seen_by_source = "https://web.archive.org/web/20071031084345/http://www.tamiyaus
 category = "chassis"
 documents = ["doc/tamiya/40510-ttg-head-sink-motor-plate"]
 material = "aluminium"
+color = "pink"
+fits = [
+  { kit = "kit/tamiya/gb-01", releases = ["release/tamiya/56702", "release/tamiya/56703", "release/tamiya/56705", "release/tamiya/57102"], type = "replaces", source = "doc/tamiya/56702-parts-list-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/gb-01t", releases = ["release/tamiya/56704"], type = "replaces", source = "doc/tamiya/56704-parts-list-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

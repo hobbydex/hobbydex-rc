@@ -14,3 +14,9 @@ voltage = 7.4
 fits = [
   { kit = "kit/ftx/outback-mini-x-2", type = "direct", notes = "Named by the maker's spares title on ftx-rc.com (import_ftx.py --link-fits)" },
 ]
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 600
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
