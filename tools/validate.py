@@ -474,8 +474,19 @@ def check_wikidata(docs, errors):
                 errors.append(f"{path}: {label}wikipedia should be the English article title (spaces, no #), got {title!r}")
             elif kind == "brand" and isinstance(title, str):
                 names = [d.get("name", "")] + list(d.get("aliases", []) or [])
-                if " ".join(title.replace("_", " ").split()).casefold() not in {" ".join(str(n).split()).casefold() for n in names}:
-                    errors.append(f"{path}: wikipedia {title!r} is not the brand's name or one of its aliases {names}")
+                if " ".join(title.replace("_", " ").split()).casefold() not in {" ".join(str(n).split()).casefold() for n in names} \
+                        and NON_NAME_ARTICLES.get(d.get("id")) != title:
+                    errors.append(f"{path}: wikipedia {title!r} is not the brand's name or one of its aliases {names}, "
+                                  f"nor a listed NON_NAME_ARTICLES title")
+
+NON_NAME_ARTICLES = {   # a brand whose article title is not its name: the article's lead names the brand (tools/link_brand_wikipedia.py)
+    "brand/futaba": "Futaba Corporation",
+    "brand/schumacher": "Schumacher Racing Products",
+    "brand/serpent": "Serpent Model Racing Cars",
+    "brand/spektrum": "Spektrum RC",
+    "brand/tamiya": "Tamiya Corporation",
+    "brand/team-associated": "Associated Electrics",
+}
 
 NAME_BRAND_EXCEPTIONS = {   # a name that starts with its brand's name on purpose (docs/schema.md "release", "kit", "part")
     "release/kyosho/30645",   # KYOSHO AMERICA: the maker's US company, not a repeat of the brand
