@@ -11,3 +11,6 @@ links = [
   { site = "Horizon Hobby (Internet Archive)", url = "https://web.archive.org/web/20150906085129/http://www.horizonhobby.com/product/cars-and-trucks/car-and-truck-accessory/all-surface-parts/5mm-x-11mm-x-4mm-ball-bearing-%282%29-vtr237007", kind = "archive" },
 ]
 name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

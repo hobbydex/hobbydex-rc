@@ -19,5 +19,8 @@ name_source = "manual"
 pack_qty = 4
 pack_qty_basis = "manual"
 
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
 [sources]
 name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A16&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e007&item_no=HI4185BL&submit=Go+To+Details"

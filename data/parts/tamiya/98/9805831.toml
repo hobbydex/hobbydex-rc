@@ -2,6 +2,11 @@ id = "part/tamiya/9805831"
 brand = "brand/tamiya"
 number = "9805831"
 name = "2x8mm Cap Screw"
+seen_by = "2008-11"
+seen_by_source = "doc/tamiya/84056-f103-15th"
 documents = ["doc/tamiya/84056-f103-15th"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m2x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -7,3 +7,11 @@ seen_by_source = "https://web.archive.org/web/20110709015557/http://www.racing-c
 name_source = "manual"
 documents = ["doc/schumacher/mi4cxl-manual"]
 category = "battery"
+chemistry = "lipo"
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+capacity_mah = 3000
+c_rating = 20

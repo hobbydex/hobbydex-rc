@@ -2,7 +2,12 @@ id = "part/tamiya/53484"
 brand = "brand/tamiya"
 number = "53484"
 name = "850 Ball Bearing Set can"
+seen_by = "2010-10"
+seen_by_source = "doc/tamiya/300056032-bauanleitung"
 notes = "Name read by OCR from a scanned tamiya manual; verify before relying on exact wording"
 name_source = "ocr"
 documents = ["doc/tamiya/300056032-bauanleitung"]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Tamiya size code 850: 5x8 mm bore x outer; width 2.5 mm per the usual size, not stated by Tamiya" },
+]

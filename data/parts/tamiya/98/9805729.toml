@@ -2,6 +2,11 @@ id = "part/tamiya/9805729"
 brand = "brand/tamiya"
 number = "9805729"
 name = "3x21mm Tapping Screw"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701121738/http://www.tamiyausa.com/images/product/730/9805729/thumbs/header_9805729.jpg"
 documents = ["doc/tamiya/49297-manual"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m3x21-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

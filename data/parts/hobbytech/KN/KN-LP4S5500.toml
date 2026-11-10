@@ -21,3 +21,7 @@ balance_connector = "JST-XH"
 balance_connector_basis = "convention"
 voltage = 14.8
 connector = "Deans"
+fits = [
+  { kit = "kit/hobbytech/nxt-ep-xtrem", releases = ["release/hobbytech/spirit-nxt-ep-2-0-xtrem-edition"], type = "direct", source = "doc/hobbytech/notice-nxt-ep-6s-xtrem-edition-web", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hobbytech/spirit-nxte-rr20", releases = ["release/hobbytech/nxt-rr-2020"], type = "direct", source = "doc/hobbytech/notice-spiritx-nxt-ep-rr20-web", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

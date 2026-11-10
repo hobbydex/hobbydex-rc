@@ -5,3 +5,6 @@ name = "5*11*4 Ball bearing"
 documents = ["doc/cross-rc/ac6-manual", "doc/cross-rc/fr4-manual", "doc/cross-rc/fr4-rtr-manual"]
 category = "bearing"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

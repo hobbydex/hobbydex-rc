@@ -12,3 +12,7 @@ category = "shock-spring"
 color = "gray"
 rate_lb_in = 4.1
 range = "team-associated/springs-rate-springs"
+fits = [
+  { kit = "kit/team-associated/rc8b3", releases = ["release/team-associated/80914", "release/team-associated/80916"], type = "replaces", source = "doc/team-associated/manual-80914-rc8b3-team", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t3", releases = ["release/team-associated/80917", "release/team-associated/80918"], type = "replaces", source = "doc/team-associated/80917-rc8t3-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -21,3 +21,8 @@ balance_connector = "JST-XH"
 balance_connector_basis = "convention"
 voltage = 7.4
 connector = "Deans"
+fits = [
+  { kit = "kit/hobbytech/bx8sl-runner", releases = ["release/hobbytech/bx8sl-runner-orange"], type = "direct", source = "doc/hobbytech/bx8sl-runner-orange-notice-bx8sl-runner-multilingue-web", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hobbytech/bxr-s1", releases = ["release/hobbytech/bxr-s1-kit"], type = "direct", source = "doc/hobbytech/kit-bxrs1-notice-web", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hobbytech/bxr-s2", releases = ["release/hobbytech/bxr-s2-kit"], type = "direct", source = "doc/hobbytech/kit-bxrs2-notice-web", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

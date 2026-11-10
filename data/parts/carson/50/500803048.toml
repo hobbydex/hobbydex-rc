@@ -6,3 +6,7 @@ name_source = "manual"
 documents = ["doc/carson/500409033-parts-list"]
 name_de = "Karosserie Porsche 962 CY5"
 category = "body"
+depicts = { make = "Porsche", model = "962 CY5" }
+fits = [
+  { kit = "kit/carson/cy-5", releases = ["release/carson/500409033", "release/carson/500409034", "release/carson/500409035"], type = "replaces", source = "doc/carson/500409033-parts-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,7 +2,9 @@ id = "part/redcat/RER32393"
 brand = "brand/redcat"
 number = "RER32393"
 name = "1.5x5mm Pins"
+gtin = "843335127963"
 pack_qty = 12
+pack_qty_basis = "page"
 applies_to = "SIXTYFOUR 18"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer32393" },
@@ -11,3 +13,6 @@ fits = [
   { kit = "kit/redcat/sixtyfour-18", type = "direct", source = "doc/redcat/store" },
 ]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/1.5x5", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

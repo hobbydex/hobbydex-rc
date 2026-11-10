@@ -6,3 +6,6 @@ pack_qty = 10
 pack_qty_basis = "manual"
 documents = ["doc/team-magic/beetle-baja-manual-en"]
 category = "clip"
+equivalent_to = [
+  { spec = "spec/eclip/2.5mm", match = "functional", notes = "Shaft size from the name" },
+]

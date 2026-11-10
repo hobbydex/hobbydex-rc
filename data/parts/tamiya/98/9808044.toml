@@ -2,9 +2,14 @@ id = "part/tamiya/9808044"
 brand = "brand/tamiya"
 number = "9808044"
 name = "2.6Mm Lock Nut"
+seen_by = "2007-01"
+seen_by_source = "doc/tamiya/57102-tamtech-gear-gb-01"
 documents = ["doc/tamiya/57102-tamtech-gear-gb-01"]
 category = "nut"
 name_source = "manufacturer"
 links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-26mm-lock-nut-56701/", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m2.6-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

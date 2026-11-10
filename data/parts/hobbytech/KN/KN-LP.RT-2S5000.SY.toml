@@ -21,3 +21,7 @@ category = "battery"
 balance_connector = "JST-XH"
 balance_connector_basis = "convention"
 voltage = 7.4
+fits = [
+  { kit = "kit/hobbytech/bxr-mt", releases = ["release/hobbytech/bxr-mt"], type = "direct", source = "doc/hobbytech/bxrmt-notice-web", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/hobbytech/bxr-mt-limited", releases = ["release/hobbytech/bxr-mt-limited"], type = "direct", source = "doc/hobbytech/bxrmt-notice-web", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,9 +2,14 @@ id = "part/tamiya/9805557"
 brand = "brand/tamiya"
 number = "9805557"
 name = "4Mm Flange Lock Nut"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701071548/http://www.tamiyausa.com/images/product/730/9805557/thumbs/header_9805557.jpg"
 documents = ["doc/tamiya/57605-manual-de"]
 category = "nut"
 name_source = "manufacturer"
 links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-4mm-flange-lock-nut-57602/", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

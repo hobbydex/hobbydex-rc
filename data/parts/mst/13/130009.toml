@@ -5,3 +5,6 @@ name = "Damper oil #300"
 name_source = "manual"
 documents = ["doc/mst/fsx-d-s-exploded-manual"]
 category = "oil-grease"
+equivalent_to = [
+  { spec = "spec/oil/silicone-300cst", match = "functional", notes = "Viscosity number #300 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

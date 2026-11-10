@@ -2,8 +2,15 @@ id = "part/redcat/S154"
 brand = "brand/redcat"
 number = "S154"
 name = "3x18mm Button Head Hex Machine Thread Screws"
+seen_by = "2021-04-12"
+seen_by_source = "https://web.archive.org/web/20210412141300/https://www.redcatracing.com/products/s154"
+gtin = "609132479632"
 pack_qty = 12
+pack_qty_basis = "page"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/s154" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,9 +2,14 @@ id = "part/tamiya/9805629"
 brand = "brand/tamiya"
 number = "9805629"
 name = "Gp 3X12Mm Tap Screw"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701072442/http://www.tamiyausa.com/images/product/735/9805629/thumbs/header_9805629.jpg"
 documents = ["doc/tamiya/49297-manual"]
 category = "screw"
 name_source = "manufacturer"
 links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-gp-3x12mm-tap-screw-44025/", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

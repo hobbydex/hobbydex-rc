@@ -8,3 +8,8 @@ links = [
   { site = "WIRC Racing", url = "https://wircracing.com/products/servo-holder" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/wirc-racing/gt2-4", releases = ["release/wirc-racing/gt2-4"], type = "replaces", source = "doc/wirc-racing/gt2-5-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/wirc-racing/gtxep", releases = ["release/wirc-racing/gtxep"], type = "replaces", source = "doc/wirc-racing/gtxep-4-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/wirc-racing/ntx-3", releases = ["release/wirc-racing/ntx-3"], type = "replaces", source = "doc/wirc-racing/ntx-3-instruction-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

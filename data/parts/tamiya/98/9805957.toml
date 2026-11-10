@@ -2,6 +2,11 @@ id = "part/tamiya/9805957"
 brand = "brand/tamiya"
 number = "9805957"
 name = "3x10mm Countersunk Hex Head Screw"
+seen_by = "2008-11"
+seen_by_source = "doc/tamiya/84056-f103-15th"
 documents = ["doc/tamiya/84056-f103-15th"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

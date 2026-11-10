@@ -2,6 +2,11 @@ id = "part/tamiya/9804159"
 brand = "brand/tamiya"
 number = "9804159"
 name = "3x10mm Screw"
+seen_by = "2016-06-03"
+seen_by_source = "https://web.archive.org/web/20160603190108/http://www.tamiyausa.com/images/product/730/9804159/thumbs/header_9804159.jpg"
 documents = ["doc/tamiya/300057843-bauanleitung-cc-01"]
 category = "screw"
 name_source = "manual"
+equivalent_to = [
+  { spec = "spec/screw/m3x10-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

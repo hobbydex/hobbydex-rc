@@ -2,9 +2,14 @@ id = "part/redcat/RER15728"
 brand = "brand/redcat"
 number = "RER15728"
 name = "3x7.5x0.5 Washer"
+gtin = "843335124856"
 pack_qty = 6
+pack_qty_basis = "page"
 applies_to = "BED DANCER"
 links = [
   { site = "Redcat Racing", url = "https://www.redcatracing.com/products/rer15728" },
 ]
 category = "washer-shim"
+equivalent_to = [
+  { spec = "spec/washer/3x7.5x0.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

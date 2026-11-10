@@ -13,3 +13,6 @@ links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-vantage-aluminium-front-lower-susp-arm" },
 ]
 material = "aluminium"
+fits = [
+  { kit = "kit/ftx/vantage", type = "replaces", replaces = "part/ftx/FTX6218", source = "doc/ftx/cml-vantage-parts-list", notes = "Same part in another material (link_upgrades.py)" },
+]

@@ -11,3 +11,7 @@ links = [
 ]
 material = "aluminium"
 category = "chassis"
+fits = [
+  { kit = "kit/ftx/kanyon", type = "replaces", replaces = "part/ftx/FTX8407", source = "doc/ftx/cml-kanyon-manual", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/ftx/mighty-thunder", type = "replaces", replaces = "part/ftx/FTX8407", source = "doc/ftx/cml-mighty-thunder-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

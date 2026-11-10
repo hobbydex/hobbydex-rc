@@ -7,3 +7,7 @@ seen_by_source = "https://web.archive.org/web/20130307112659/http://www.serpent.
 name_source = "manual"
 documents = ["doc/serpent/600049-s811-gt-rtr-manual-lr"]
 category = "suspension"
+material = "aluminium"
+fits = [
+  { kit = "kit/serpent/cobra-gt", type = "replaces", replaces = "part/serpent/600136", source = "doc/serpent/600049-s811-gt-rtr-manual-lr", notes = "Same part in another material (link_upgrades.py)" },
+]

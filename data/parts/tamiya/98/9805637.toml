@@ -2,9 +2,14 @@ id = "part/tamiya/9805637"
 brand = "brand/tamiya"
 number = "9805637"
 name = "3X8Mm C Sunk Screw"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701080759/http://www.tamiyausa.com/images/product/730/9805637/thumbs/header_9805637.jpg"
 documents = ["doc/tamiya/56015-56015"]
 category = "screw"
 name_source = "manufacturer"
 links = [
   { site = "Tamiya USA", url = "https://www.tamiyausa.com/shop/7-digit-spare-parts/rc-3x8mm-c-sunk-screw-58257/", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-pan-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

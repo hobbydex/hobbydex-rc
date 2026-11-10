@@ -2,9 +2,14 @@ id = "part/kyosho/SIL3000B"
 brand = "brand/kyosho"
 number = "SIL3000B"
 name = "Silicone OIL #3000 (40cc)"
+status = "discontinued"
 seen_by = "2020-05-23"
 seen_by_source = "https://web.archive.org/web/20200523074326/https://rc.kyosho.com/media/catalog/product/cache/4/small_image/500x375/9df78eab33525d08d6e5fb8d27136e95/s/i/sil3000b_900.jpg"
 gtin = "4548565381609"
 documents = ["doc/kyosho/34305-t02-ultima-rb7-5-im"]
 category = "oil-grease"
 name_source = "manufacturer"
+volume_ml = 40
+equivalent_to = [
+  { spec = "spec/oil/silicone-3000cst", match = "functional", notes = "Viscosity number #3000 as the brand states it, on the cSt scale; measuring temperature not given" },
+]

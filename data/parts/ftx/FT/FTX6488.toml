@@ -12,3 +12,6 @@ documents = ["doc/ftx/cml-banzai-manual"]
 links = [
   { site = "FTX", url = "https://ftx-rc.com/ftx-banzai-carbon-chassis-plate" },
 ]
+fits = [
+  { kit = "kit/ftx/banzai", type = "replaces", replaces = "part/ftx/FTX6590", source = "doc/ftx/cml-banzai-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

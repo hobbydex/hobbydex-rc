@@ -2,7 +2,15 @@ id = "part/tamiya/19803628"
 brand = "brand/tamiya"
 number = "19803628"
 name = "2.1x4x12mm Aluminum Collar"
+seen_by = "2025-03"
+seen_by_source = "doc/tamiya/56046-56046"
+pack_qty = 6
+pack_qty_basis = "manual"
 notes = "Name read by OCR from a scanned tamiya manual; verify before relying on exact wording. Bag callout on the maker's manual: (MD10 x6)."
 name_source = "ocr"
 documents = ["doc/tamiya/56046-56046"]
 category = "washer-shim"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/washer/2.1x4x12", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -33,5 +33,8 @@ name_source = "manual"
 pack_qty = 10
 pack_qty_basis = "manual"
 
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
 [sources]
 name = "http://www.himotoracing.site/?details=overview&searchscale=1%3A10&searchtype=ELECTRIC&searchproduct=BUGGY&searchterm=&product=BUGGY&type=ELECTRIC&ref_no=buggy_e003&item_no=HI3101BL&submit=Go+To+Details"
