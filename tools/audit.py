@@ -1582,6 +1582,19 @@ def main():
     check("announced-after-seen-by", "the announced day is later than the seen_by bound, so its source is wrong: remove announced and announced_source (the bound stays); find the right day or leave the release undated",
           [r for r in rels if after_bound(r)] + [x for x in parts if after_bound(x)])
 
+    # 15c. a release dated by a YouTube video: that video's document must list the release, or the site cannot embed it
+    def watch_id(url):
+        m = re.search(r"[?&]v=([\w-]+)", str(url or ""))
+        return m.group(1) if m and "youtube.com" in str(url) else None
+    linked_videos = {}   # release id -> ids of the YouTube videos whose video documents list it
+    for d in docs.values():
+        vid = watch_id(d.get("url")) if d.get("kind") == "video" else None
+        for rid in (d.get("releases") or []) if vid else []:
+            linked_videos.setdefault(rid, set()).add(vid)
+    check("announced-video-not-linked", "the release's announced_source is a YouTube video that no video document lists: write data/documents/<brand>/youtube-<id>.toml (kind video, url, releases with this release); a Short or a video that names the model only in hashtags dates nothing, so remove announced and announced_source",
+          [r for r in rels if r.get("announced") and watch_id(r.get("announced_source"))
+           and watch_id(r.get("announced_source")) not in linked_videos.get(r["id"], set())])
+
     # 16. release whose category is the same as its kit's (redundant override)
     check("release-category-redundant", "remove the release's category: it equals the kit's",
           [r for r in rels if r.get("category") and r.get("category") == kits.get(r.get("kit"), {}).get("category")])
