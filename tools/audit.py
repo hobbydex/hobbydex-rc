@@ -83,7 +83,8 @@ def url_for(item):
     return SITE + "/rc/"
 
 
-ENGLISH_TABLE = os.path.join(RC, "tools", "english_variants.py")   # the per-host English addresses (link_language_variants.py)
+# the per-host English addresses of the maker links: hobbydex-tools tools/data/english_variants.toml (read by link_language_variants.py too)
+ENGLISH_MISSING = "hobbydex-tools tools/data/english_variants.toml not found (--tools): the English addresses of the maker links are read from it"
 ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
 ERROR_RX = re.compile(r"Fatal error|Call to (?:a )?member function|Parse error:|Uncaught (?:Exception|Error)")   # a PHP error page (the English shop answers so)
 
@@ -145,14 +146,12 @@ def date_without_source(r):
     return (r.get("year") is not None or bool(r.get("released"))) and not r.get("released_source")
 
 
-def english_swaps():
-    """{host: (from, to)} of the swap rules: a maker link under `from` has its English address under `to`."""
-    if not os.path.exists(ENGLISH_TABLE):
-        return {}
-    spec = importlib.util.spec_from_file_location("english_variants", ENGLISH_TABLE)
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-    return {r["host"]: (r["from"], r["to"]) for r in mod.HOSTS if r.get("how") == "swap"}
+def english_swaps(path):
+    """{host: (from, to)} of the swap rules in the English table at path: a maker link under `from` has its English
+    address under `to`."""
+    with open(path, "rb") as fh:
+        hosts = tomllib.load(fh)["hosts"]
+    return {r["host"]: (r["from"], r["to"]) for r in hosts if r.get("how") == "swap"}
 
 
 def non_english(url, swaps):
@@ -629,7 +628,10 @@ def not_specable(p, screw_reason, ball_reason):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None}
+    out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None, "english_table": None}
+    english = os.path.join(tools, "tools", "data", "english_variants.toml")
+    if os.path.isfile(english):
+        out["english_table"] = english
     lpm = os.path.join(tools, "tools", "link_part_material.py")
     if os.path.exists(lpm):   # its decide() is the rule the material linker writes by: a flag is a value it would set
         spec = importlib.util.spec_from_file_location("link_part_material", lpm)
@@ -1718,7 +1720,9 @@ def main():
 
     # 24. never-link hosts and dealer doc references
     banned, scrap, local, dealer, foreign = [], [], [], [], []
-    swaps = english_swaps()
+    swaps = english_swaps(tools["english_table"]) if tools["english_table"] else None   # None: the table is not there
+    if swaps is None:
+        swaps = {}
     gone = gone_urls(tools["cache"], swaps)
     unavailable = english_unavailable(english_state(tools["cache"], swaps))
     for path in sorted({d["_path"] for k in db for d in db[k]}):
@@ -1726,7 +1730,7 @@ def main():
             text = f.read()
         if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)) and not path.startswith(TAMICO_OWNER_DOCS):
             banned.append(path)
-        if has_foreign_link(text, swaps, gone, unavailable):
+        if tools["english_table"] and has_foreign_link(text, swaps, gone, unavailable):
             foreign.append(path)
         if SCRAP_IMG.search(text):
             scrap.append(path)
@@ -1743,8 +1747,11 @@ def main():
     check("tamico-doc-reference", "cite the maker's own listing instead of the Tamico dealer catalogue", [{"id": p} for p in dealer], count=len(dealer))
     results["tamico-doc-reference"]["examples"] = [{"id": p, "url": SITE + "/rc/"} for p in dealer[:args.examples]]
     check("local-path", "replace the local path with the source's URL", local)
-    check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone, failed, answers with an error page, or names none of the record's item numbers is not listed)",
-          [{"id": p} for p in foreign], count=len(foreign))
+    if tools["english_table"]:
+        check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone, failed, answers with an error page, or names none of the record's item numbers is not listed)",
+              [{"id": p} for p in foreign], count=len(foreign))
+    else:
+        results["non-english-link"] = {"fix": ENGLISH_MISSING, "count": None, "examples": [], "all": []}
 
     # 25. releases with no maker product page (no product_page document, no maker link), per brand
     no_page = [r for r in rels if not any(docs.get(d, {}).get("kind") == "product_page" for d in r.get("documents", []))
