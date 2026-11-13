@@ -10,6 +10,7 @@ links = [
 ]
 fits = [
   { kit = "kit/fms/ford-f100", releases = ["release/fms/FMS11023RSBG-BL", "release/fms/FMS11023RSBK-BL"], type = "direct", notes = "Named for F100 Brushless in the beez2b title" },
+  { kit = "kit/fms/ford-f100-monster-truck", type = "replaces", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
 ]
 category = "motor"
 motor_type = "brushless"
