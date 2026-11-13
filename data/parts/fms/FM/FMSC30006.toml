@@ -7,8 +7,15 @@ seen_by_source = "https://web.archive.org/web/20261011134009/https://www.fmshobb
 gtin = "5404039213724"
 links = [
   { site = "FMS", url = "https://www.fmshobby.com/products/1-10-canyon-25kg-servo-metal-gear-waterproof" },
+  { site = "FMS", url = "https://www.fmshobby.com/products/1-10-f100-battery-fixing-plate" },
 ]
 fits = [
   { kit = "kit/fms/fcx10", releases = ["release/fms/FMS11041RS-BK"], type = "replaces", notes = "Named for Canyon in the beez2b title" },
+  { kit = "kit/fms/ford-f100", type = "replaces", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
+  { kit = "kit/fms/ford-f100-monster-truck", type = "replaces", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
 ]
 category = "gear"
+numbers = ["APSC30006"]
+name_source = "manufacturer"
+notes = "Also named \"1:10 F100 Battery Fixing Plate\" (APSC30006); Also category \"misc\" (APSC30006)"
+former_ids = ["part/fms/APSC30006"]
