@@ -202,6 +202,31 @@ def pack_count_of(name):
     return int(d.group(0)) if d else None
 
 
+# a single word that a part name is written as when the maker's name is not known: a fragment of a part name
+GENERIC_NAMES = {"right", "left", "front", "rear", "upper", "lower", "chassis", "eyelet", "spacer", "collet", "wing",
+                 "washer", "diff", "decal", "screw", "bolt", "nut", "pin", "kingpin", "steering", "manifold", "upright",
+                 "bushing", "bearing", "shaft", "wheel", "hub", "arm", "mount", "pcs", "stk", "rod", "clip", "spring",
+                 "gear", "link", "axle", "tire", "tyre", "body", "plate", "cap"}
+
+
+def name_is_fragment(name):
+    """A name cut short: brackets left open, or a dangling "&", "/", "," or "-" at its end."""
+    return name.count("(") != name.count(")") or name.count("[") != name.count("]") or name.rstrip()[-1:] in "(&,/-"
+
+
+def name_placeholder(old, rec, new):
+    """Class (a) of a name change: the record's own code (its number, or the last part of a release's id), one
+    generic word, or a cut fragment, replaced by a name of two or more words. Nothing else is a placeholder."""
+    if not isinstance(old, str) or not isinstance(new, str) or len(new.split()) < 2:
+        return False
+    code = str(rec.get("id", "")).split("/")[-1]
+    if old == rec.get("number") or (code and old.casefold() == code.casefold()):
+        return True
+    if " " not in old.strip() and old.strip().lower() in GENERIC_NAMES:
+        return True
+    return name_is_fragment(old)
+
+
 def text_change_ok(field, old, new, rec, new_rec):
     """Why a changed free-text value is not a loss, None when it is one. Allowed: the old value was a placeholder;
     a note whose new text keeps the whole old text and adds to it; a note that loses only its read-failed clauses
@@ -211,6 +236,8 @@ def text_change_ok(field, old, new, rec, new_rec):
         return None
     if is_placeholder(field, old, rec):
         return "placeholder replaced"
+    if field == "name" and name_placeholder(old, rec, new):
+        return "placeholder name replaced (code, generic word or fragment)"
     if field != "name" and old.rstrip(". ") in new:
         return "note kept, text added"   # prose only: a name with a qualifier added is another name
     if field in ("notes", "note") and any(is_read_failed(c) for c in clauses(old)):

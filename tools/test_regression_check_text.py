@@ -60,10 +60,10 @@ def part(notes=NOTE_BASE, name="Hex Driver Wrench Set w/ Storage Base - 7pc", ex
     return text + extra
 
 
-def run_check(repo, base_text, head_text):
-    """The regressions the check reports for a change of PART from base_text to head_text."""
-    root = commit(repo, {PART: base_text})
-    head = commit(repo, {PART: head_text}, parent=root)
+def run_check(repo, base_text, head_text, path=PART):
+    """The regressions the check reports for a change of path from base_text to head_text."""
+    root = commit(repo, {path: base_text})
+    head = commit(repo, {path: head_text}, parent=root)
     git(repo, "update-ref", "refs/heads/base", root)
     git(repo, "update-ref", "refs/heads/head", head)
     with tempfile.TemporaryDirectory() as d:
@@ -154,6 +154,42 @@ class FreeTextRegressions(unittest.TestCase):
     def test_name_moved_to_former_names_with_pack_qty_is_allowed(self):
         self.assertNoRegression(part(name="Servo Mount 2P"),
                                 part(name="Servo Mount", extra='pack_qty = 2\nformer_names = ["Servo Mount 2P"]\n'))
+
+    # class (a): the code, one generic word or a cut fragment replaced by a name of two or more words
+    def test_generic_word_name_replaced_by_a_real_name_is_allowed(self):
+        self.assertNoRegression(part(name="Right"), part(name="FT RC12R5 Hub"))
+        self.assertNoRegression(part(name="Decal"), part(name="Decal (for T90 High Nose Type/KF01)"))
+        self.assertNoRegression(part(name="PCS"), part(name="Lightning STK Kit"))
+
+    def test_cut_fragment_name_replaced_is_allowed(self):
+        self.assertNoRegression(part(name="1.5 degree rear hubs (1 left &"), part(name="1.5 Degree Rear Hubs L&R"))
+        self.assertNoRegression(part(name="FLYHOOD &"), part(name="SIRIO 09 ROUTE246 SP Version"))
+
+    def test_release_named_by_its_code_is_allowed(self):
+        release = ('id = "release/tamiya/GT16MB"\nbrand = "brand/tamiya"\nname = "GT16MB"\n'
+                   'name_source = "manufacturer"\n')
+        regs = run_check(self.repo, release, release.replace('"GT16MB"', '"GT16MB Desert Beetle"', 1),
+                         path="data/releases/tamiya/GT16MB.toml")
+        self.assertEqual(regs, [])
+
+    def test_release_code_in_lower_case_id_is_allowed(self):
+        # Carisma: id release/carisma/gt16mb, name GT16MB
+        release = ('id = "release/carisma/gt16mb"\nbrand = "brand/carisma"\nname = "GT16MB"\n'
+                   'name_source = "manufacturer"\n')
+        regs = run_check(self.repo, release, release.replace('"GT16MB"', '"GT16MB Desert Beetle"', 1),
+                         path="data/releases/carisma/gt16mb.toml")
+        self.assertEqual(regs, [])
+
+    def test_generic_word_replaced_by_one_word_is_a_regression(self):
+        self.assertRegression(part(name="Decal"), part(name="Hood"))
+
+    def test_two_word_generic_phrase_is_a_regression(self):
+        # "Rear Tire" is not one generic word: the name is a real stated name
+        self.assertRegression(part(name="Rear Tire"), part(name="Monster Pin Spike Tires (1 Pair)"))
+
+    def test_real_name_replaced_is_a_regression(self):
+        self.assertRegression(part(name="Lightning PCS RTR"), part(name="Lightning STK RTR"))
+        self.assertRegression(part(name="Hex Driver Set (7)"), part(name="Hex Driver Kit (9pcs)"))
 
     def test_name_same_in_canonical_form_is_allowed(self):
         self.assertNoRegression(part(name="JConcepts Hex Driver Set"), part(name="Hex Driver Set"))
