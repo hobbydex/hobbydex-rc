@@ -4,3 +4,9 @@ number = "FMSC1305"
 name = "1:6 FRONT OUTDRIVE SHAFT ASSEMBLY"
 documents = ["doc/fms/1-6-suzuki-jimny-manual"]
 category = "drivetrain"
+links = [
+  { site = "FMS", url = "https://www.fmshobby.com/products/fcx10-pro-lc80-heat-shrink-tubing-d2-5-l-220mm" },
+]
+fits = [
+  { kit = "kit/fms/fcx10pro", type = "replaces", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
+]

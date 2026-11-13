@@ -7,3 +7,7 @@ links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/APSC22105/fms-botton-head-pointer-screw-st3-18", kind = "dealer" },
 ]
 category = "screw"
+fits = [
+  { kit = "kit/fms/ford-f100", type = "direct", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
+  { kit = "kit/fms/ford-f100-monster-truck", type = "direct", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
+]
