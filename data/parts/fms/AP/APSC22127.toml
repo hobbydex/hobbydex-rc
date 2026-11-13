@@ -1,0 +1,14 @@
+id = "part/fms/APSC22127"
+brand = "brand/fms"
+number = "APSC22127"
+name = "1:10 F100 Car Body (Blue)"
+name_source = "manufacturer"
+links = [
+  { site = "FMS", url = "https://www.fmshobby.com/products/1-10-f100-car-body-blue" },
+]
+fits = [
+  { kit = "kit/fms/ford-f100", type = "replaces", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
+  { kit = "kit/fms/ford-f100-monster-truck", type = "replaces", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
+]
+category = "misc"
+category_source = "fallback"
