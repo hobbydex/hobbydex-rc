@@ -3,8 +3,10 @@ brand = "brand/primal-rc"
 number = "PRE8505-F"
 name = "1:6 Primal RC Porsche Complete Assembled Front Differential with 10000 cst oil"
 name_source = "manufacturer"
-category = "misc"
-category_source = "fallback"
+category = "oil-grease"
 links = [
   { site = "Primal RC", url = "https://primalrc.com/product/pre8505-f/" },
+]
+equivalent_to = [
+  { spec = "spec/oil/silicone-10000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
 ]

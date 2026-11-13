@@ -3,11 +3,13 @@ brand = "brand/primal-rc"
 number = "PRMNNSS60"
 name = "M6 6mm stainless steel nuts (10)"
 name_source = "manufacturer"
-category = "misc"
-category_source = "fallback"
+category = "nut"
 links = [
   { site = "Primal RC", url = "https://primalrc.com/product/prmnnss60/" },
 ]
 material = "stainless"
 pack_qty = 10
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/nut/m6-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

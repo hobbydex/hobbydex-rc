@@ -2,9 +2,14 @@ id = "part/team-magic/TM507234-7"
 brand = "brand/team-magic"
 number = "TM507234-7"
 name = "E4 FWD 5x10x3mm Bearing for Nunchaku (2)"
+seen_by = "2023-05-29"
+seen_by_source = "https://teammagic.com.tw/product-sitemap.xml"
 links = [
   { site = "Team Magic (own shop)", url = "https://teammagic.com.tw/product/e4-fwd-5x10x3mm-bearing-for-nunchaku-2/" },
 ]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

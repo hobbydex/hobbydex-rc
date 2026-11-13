@@ -3,8 +3,10 @@ brand = "brand/primal-rc"
 number = "PROIL600"
 name = "100, 250, 500, 1000 CST Shock Oil"
 name_source = "manufacturer"
-category = "misc"
-category_source = "fallback"
+category = "oil-grease"
 links = [
   { site = "Primal RC", url = "https://primalrc.com/product/proil600/" },
+]
+equivalent_to = [
+  { spec = "spec/oil/silicone-1000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
 ]

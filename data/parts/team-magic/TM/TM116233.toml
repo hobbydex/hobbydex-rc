@@ -8,3 +8,6 @@ name_source = "ocr"
 notes = "Name read by OCR from the parts list of the E6 Trooper II instruction manual (505004); verify before relying on exact wording"
 documents = ["doc/team-magic/e6-trooper-ii-manual"]
 category = "pin"
+equivalent_to = [
+  { spec = "spec/pin/2.5x14.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

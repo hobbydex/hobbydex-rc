@@ -7,3 +7,10 @@ links = [
 ]
 name_source = "manufacturer"
 category = "esc"
+motor_type = "brushless"
+waterproof = true
+current_a = 250
+lipo_cells = [6, 12]
+rebrand_of = [
+  { part = "part/hobbywing/30104000", notes = "The name gives Hobbywing's model code \"MAX5\" (EzRun MAX5); firmware, plug or packaging may differ (link_rebrands.py)" },
+]

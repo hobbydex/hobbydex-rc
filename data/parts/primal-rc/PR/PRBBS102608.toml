@@ -7,7 +7,10 @@ links = [
   { site = "Primal RC", url = "https://primalrc.com/product/prbbs102608/" },
 ]
 name_source = "manufacturer"
-category = "misc"
-category_source = "fallback"
+category = "bearing"
 pack_qty = 6
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/bearing/10x26x8", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

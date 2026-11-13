@@ -2,7 +2,12 @@ id = "part/fms/APSC22085"
 brand = "brand/fms"
 number = "APSC22085"
 name = "Ball Bearing 8*5*3mm"
+seen_by = "2026-10"
+seen_by_source = "https://web.archive.org/web/20261011134009/https://www.fmshobby.com/sitemap_products_1.xml"
 name_source = "manual"
 documents = ["doc/fms/f100-manual"]
-category = "misc"
-category_source = "fallback"
+category = "bearing"
+links = [ { site = "FMS", url = "https://www.fmshobby.com/products/1-10-f100-ball-bearing-8-5-3mm" } ]
+equivalent_to = [
+  { spec = "spec/bearing/5x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
