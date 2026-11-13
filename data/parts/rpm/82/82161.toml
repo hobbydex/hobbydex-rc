@@ -8,8 +8,13 @@ numbers = ["RPM82161"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM82161/rpm-baja-5b-replacement-shock-skid-plates-2-dyeable-white", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?HPI-Baja-5B-RTR/5B-SS/5T-Parts-Hop-Ups-Upgrades&brand=HPI&model=Baja%205B%20RTR/5B%20SS/5T&id=74318&pid=1", kind = "dealer" },
 ]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "bumper-guard"
 color = "white"
+fits = [
+  { kit = "kit/hpi/baja-5b", type = "replaces", source = "doc/rpm/asiatees" },
+  { kit = "kit/hpi/baja-5t", type = "replaces", source = "doc/rpm/asiatees" },
+]

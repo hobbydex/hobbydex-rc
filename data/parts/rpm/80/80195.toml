@@ -8,6 +8,10 @@ numbers = ["RPM80195"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80195/rpm-revo-rear-a-arms-blue-1-upper-1-lower", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-Revo-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=Revo&id=52252&pid=1", kind = "dealer" },
 ]
 category = "suspension"
 color = "blue"
+fits = [
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/rpm/asiatees" },
+]

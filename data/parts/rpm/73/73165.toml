@@ -8,5 +8,9 @@ numbers = ["RPM73165"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM73165/rpm-axle-carriers-for-traxxas-1-16-mini-e-revo-slash-blue", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-1/16-Mini-Slash-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=1/16%20Mini%20Slash&id=52229&pid=1", kind = "dealer" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/traxxas/mini-slash", type = "replaces", source = "doc/rpm/asiatees" },
+]

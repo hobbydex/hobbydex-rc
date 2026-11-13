@@ -6,6 +6,10 @@ numbers = ["RPM80465"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80465/rpm-t-maxx-2-5r-amp-3-3-a-arms-blue", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-T-Maxx-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=T-Maxx&id=73969&pid=1", kind = "dealer" },
 ]
 category = "suspension"
 color = "blue"
+fits = [
+  { kit = "kit/traxxas/t-maxx", type = "replaces", source = "doc/rpm/asiatees" },
+]

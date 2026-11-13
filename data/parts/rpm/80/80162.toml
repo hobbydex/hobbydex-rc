@@ -8,6 +8,10 @@ numbers = ["RPM80162"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80162/rpm-t-e-maxx-shock-tower-amp-mounts-black", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-T-Maxx-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=T-Maxx&id=73882&pid=1", kind = "dealer" },
 ]
 category = "chassis"
 color = "black"
+fits = [
+  { kit = "kit/traxxas/t-maxx", type = "replaces", source = "doc/rpm/asiatees" },
+]

@@ -6,6 +6,10 @@ numbers = ["RPM80502"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80502/rpm-traxxas-2-5-engine-head-protector-black", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-T-Maxx-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=T-Maxx&id=73999&pid=1", kind = "dealer" },
 ]
 category = "engine-fuel"
 color = "black"
+fits = [
+  { kit = "kit/traxxas/t-maxx", type = "replaces", source = "doc/rpm/asiatees" },
+]

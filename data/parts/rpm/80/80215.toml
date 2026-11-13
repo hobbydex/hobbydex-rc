@@ -8,6 +8,10 @@ numbers = ["RPM80215"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80215/rpm-summit-revo-front-right-upper-lower-a-arms-blue", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-Revo-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=Revo&id=52254&pid=1", kind = "dealer" },
 ]
 category = "suspension"
 color = "blue"
+fits = [
+  { kit = "kit/traxxas/revo", type = "replaces", source = "doc/rpm/asiatees" },
+]
