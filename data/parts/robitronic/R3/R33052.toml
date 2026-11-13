@@ -6,5 +6,9 @@ pack_qty = 4
 pack_qty_basis = "manual"
 name_source = "manual"
 documents = ["doc/robitronic/hurricane-r39090-manual"]
-category = "misc"
-category_source = "fallback"
+category = "bearing"
+material = "steel"
+name_de = "5x10x4mm Steel Bearing (4) / 5x10x4mm Kugellager"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
