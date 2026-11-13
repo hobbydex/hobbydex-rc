@@ -14,6 +14,12 @@ when a source stated it:
   category_source = "curated"; pack_qty with a stated pack_qty_basis (name, page,
   maker, distributor, owner, includes, photos); any field with a <field>_source beside it or a
   key in `sources`; equivalent_to rows that carry a source;
+- a free-text value changed (name, notes, description, also the notes of a fit or link row) is a regression
+  whatever its source, unless the old value was an importer placeholder (the number as name, or a note that is only
+  "Named by its number only: ..." read-failure clauses), a note whose new text keeps the whole old text and adds to
+  it, a note that loses only its read-failure clauses and keeps every other clause, or a name that stays in the
+  record (former_names, the same name in canonical form with its pack count kept). "Shown by number only in the
+  manual" is a stated clause: a note that drops it is a regression;
 - a link removed or changed, unless its page is known gone (a document of the head
   with gone set and that page) or a document of the record names its page. Marking a
   link gone (`gone = "<date>"` added, the link kept) is not a regression. A dealer
@@ -59,9 +65,11 @@ SOURCED_FIELDS = {"links", "fits", "includes", "material", "color", "former_name
                  "documents", "contains", "notes", "applies_to"}   # list rows and notes: each is some tool's provenance
 STATED_PACK_BASIS = {"maker", "page", "name", "manual", "distributor", "owner", "includes", "photos"}   # pack_qty_basis; "photo" is the weakest, not stated
 CONVENTION = {"material": {"unknown"}}   # placeholder values, never a stated fact
-# notes an importer wrote for want of a name; they describe the placeholder, so they go when a maker names the part
-PLACEHOLDER_NOTES = ("Named by its number only", "Shown by number in the manual", "Shown by number only in the manual",
-                     "Name not yet from a Primal source")
+# an importer's own note that a read for the name failed: it describes the placeholder, so it goes when a maker names
+# the part. Only these clauses are placeholders: "Shown by number only in the manual" is what the manual states
+READ_FAILED_NOTES = ("Named by its number only", "Name not yet from a Primal source", "Name not yet read from a source")
+# free-text values: a change is a loss unless the new text keeps the whole old text (or the old value was a placeholder)
+FREE_TEXT = {"name", "notes", "note", "description", "name_de", "name_fr", "name_ja"}
 # keys that name a row, in the order they are tried; rows are paired by them when their content changed
 IDENT_KEYS = ("url", "kit", "spec", "part", "release", "doc", "brand", "item", "site", "name", "text", "role", "relation")
 MISSING = object()
@@ -167,10 +175,61 @@ def values(v):
     return len(v) if isinstance(v, list) else 1
 
 
+def clauses(note):
+    return [c.strip() for c in note.split("; ") if c.strip()]
+
+
+def is_read_failed(clause):
+    return clause.startswith(READ_FAILED_NOTES)
+
+
+def is_placeholder(field, val, rec):
+    """An importer's stand-in for a missing name or note: the part's number as its name, or a note that is only read
+    failure clauses (READ_FAILED_NOTES). A placeholder may be replaced by any stated value."""
+    if not isinstance(val, str):
+        return False
+    if field == "name":
+        return val == rec.get("number")
+    if field in ("notes", "note"):
+        return all(is_read_failed(c) for c in clauses(val))
+    return False
+
+
+def pack_count_of(name):
+    """The pack count a name ends with ("(10)", " x10", " 10pcs"), None when it has none."""
+    m = re.search(PACK_COUNT, name.strip())
+    d = re.search(r"\d+", m.group(0)) if m else None
+    return int(d.group(0)) if d else None
+
+
+def text_change_ok(field, old, new, rec, new_rec):
+    """Why a changed free-text value is not a loss, None when it is one. Allowed: the old value was a placeholder;
+    a note whose new text keeps the whole old text and adds to it; a note that loses only its read-failed clauses
+    and keeps every other clause; a name kept as a former_names entry of the record; a name that is the same in
+    canonical form and keeps its pack count (in the name or as pack_qty)."""
+    if not (isinstance(old, str) and isinstance(new, str)):
+        return None
+    if is_placeholder(field, old, rec):
+        return "placeholder replaced"
+    if field != "name" and old.rstrip(". ") in new:
+        return "note kept, text added"   # prose only: a name with a qualifier added is another name
+    if field in ("notes", "note") and any(is_read_failed(c) for c in clauses(old)):
+        stated = [c for c in clauses(old) if not is_read_failed(c)]
+        if all(c in new for c in stated):
+            return "read-failed clause removed, stated text kept"
+    if field == "name" and old in (new_rec.get("former_names") or []):
+        return "former name kept in former_names"
+    if field == "name" and name_key(old, rec.get("brand")) == name_key(new, new_rec.get("brand")):
+        pc = pack_count_of(old)
+        if pc is None or pc == pack_count_of(new) or pc == new_rec.get("pack_qty"):
+            return "same name in canonical form (brand, pack count)"
+    return None
+
+
 def field_sourced(rec, k, val=MISSING):
     if val is not MISSING and isinstance(val, str) and val in CONVENTION.get(k, ()):
         return False
-    if k == "notes" and isinstance(val, str) and val.startswith(PLACEHOLDER_NOTES):
+    if k in ("notes", "note") and is_placeholder(k, val, rec):
         return False
     if k == "category":
         return rec.get("category_source") in ("curated", "manual-section")
@@ -335,11 +394,12 @@ class Check:
             elif canon(ov) != canon(nv):
                 changed = True
                 self.count(kind, k, "changed")
-                if k == "name" and name_key(ov, o.get("brand")) == name_key(nv, n.get("brand")):
-                    self.event(kind, rid, k, "changed", ov, nv, False, "same name in canonical form (brand, pack count)")
+                why = text_change_ok(k, ov, nv, o, n)
+                if why:
+                    self.event(kind, rid, k, "changed", ov, nv, False, why)
                     continue
-                if k == "notes" and isinstance(ov, str) and isinstance(nv, str) and nv.startswith(ov.rstrip(". ")):
-                    self.event(kind, rid, k, "changed", ov, nv, False, "note kept, text added")
+                if k in FREE_TEXT and isinstance(ov, str) and isinstance(nv, str):
+                    self.event(kind, rid, k, "changed", ov, nv, True, "stated text changed")
                     continue
                 if k == "seen_by" and isinstance(ov, str) and isinstance(nv, str) and (nv < ov or bound_end(nv) < bound_end(ov)):
                     # (a year refined to a month of that year is an earlier bound too)
@@ -416,7 +476,7 @@ class Check:
             used[hit] = True
             self.count(kind, k, "changed")
             a = added[hit]
-            if isinstance(r, dict) and isinstance(a, dict) and differs_only_in_provenance(r, a):
+            if isinstance(r, dict) and isinstance(a, dict) and differs_only_in_provenance(r, a, o, n):
                 self.event(kind, rid, k, "changed", r, a, False, "source or note only")
                 continue
             if derived_row(r) and derived_row(a) and canon(a) in self.derived_upgrades().get(rid, ()):
@@ -530,13 +590,23 @@ def repointed(row, rows, supersedes):
     return None
 
 
-PROVENANCE = {"source", "sources", "notes", "note"}
+PROVENANCE = {"source", "sources"}
 
 
-def differs_only_in_provenance(a, b):
+def differs_only_in_provenance(a, b, rec, new_rec):
+    """True when a row and its new form differ only in source keys, or in a free-text key (notes) whose change
+    text_change_ok allows. A changed note that loses text is not provenance."""
     keys = set(a) | set(b)
     diff = {x for x in keys if canon(a.get(x, MISSING)) != canon(b.get(x, MISSING))}
-    return bool(diff) and all(x in PROVENANCE or x.endswith("_source") for x in diff)
+    if not diff:
+        return False
+    for x in diff:
+        if x in FREE_TEXT:
+            if text_change_ok(x, a.get(x), b.get(x), rec, new_rec) is None:
+                return False
+        elif not (x in PROVENANCE or x.endswith("_source")):
+            return False
+    return True
 
 
 # a pack count or bag callout at the end of a name: "(10)", "(2pcs.)", "(BBS x10)", " x10", " 10pcs"
