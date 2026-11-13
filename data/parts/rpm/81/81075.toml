@@ -8,6 +8,10 @@ numbers = ["RPM81075"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM81075/rpm-t-e-maxx-rear-bulkheads-blue", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-T-Maxx-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=T-Maxx&id=74193&pid=1", kind = "dealer" },
 ]
 category = "chassis"
 color = "blue"
+fits = [
+  { kit = "kit/traxxas/t-maxx", type = "replaces", source = "doc/rpm/asiatees" },
+]

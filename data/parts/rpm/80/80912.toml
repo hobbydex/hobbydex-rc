@@ -8,6 +8,10 @@ numbers = ["RPM80912"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80912/rpm-traxxas-motor-protector-black-bandit-rustler-stam-slash", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-Bandit-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=Bandit&id=74148&pid=1", kind = "dealer" },
 ]
 category = "motor"
 color = "black"
+fits = [
+  { kit = "kit/traxxas/bandit", type = "direct", source = "doc/rpm/asiatees" },
+]

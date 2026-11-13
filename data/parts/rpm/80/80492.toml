@@ -8,6 +8,10 @@ numbers = ["RPM80492"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80492/rpm-nitro-stampede-rustler-sport-front-arms-black", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-Nitro-Rustler-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=Nitro%20Rustler&id=108655&pid=1", kind = "dealer" },
 ]
 category = "suspension"
 color = "black"
+fits = [
+  { kit = "kit/traxxas/nitro-rustler", type = "replaces", source = "doc/rpm/asiatees" },
+]

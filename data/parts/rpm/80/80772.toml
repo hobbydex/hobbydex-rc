@@ -6,6 +6,7 @@ numbers = ["RPM80772"]
 documents = ["doc/rpm/cml-distribution-spares"]
 links = [
   { site = "CML Distribution", url = "https://www.cmldistribution.co.uk/product/RPM80772/rpm-traxxas-t-e-maxx-3-pcs-skid-plate-black", kind = "dealer" },
+  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-T-Maxx-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=T-Maxx&id=74106&pid=1", kind = "dealer" },
 ]
 pack_qty = 3
 pack_qty_basis = "name"
@@ -13,4 +14,5 @@ category = "bumper-guard"
 color = "black"
 fits = [
   { kit = "kit/traxxas/e-maxx", type = "replaces", source = "doc/rpm/cml-distribution-spares", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/traxxas/t-maxx", type = "replaces", source = "doc/rpm/asiatees" },
 ]
