@@ -5,10 +5,14 @@ name = "1/10 F100 Brushless - Body yellow (APSC22127)"
 gtin = "5404039257452"
 color = "yellow"
 links = [
-  { site = "beez2b", url = "https://www.beez2b.com/en/cat/24157-fmsc22127-110-f100-brushless-body-yellow-apsc22127-5404039257452", kind = "dealer" },
+  { site = "FMS", url = "https://www.fmshobby.com/products/1-10-f100-car-body-blue" },
 ]
 fits = [
   { kit = "kit/fms/ford-f100", releases = ["release/fms/FMS11023RSBG-BL", "release/fms/FMS11023RSBK-BL"], type = "replaces", notes = "Named for F100 Brushless in the beez2b title" },
+  { kit = "kit/fms/ford-f100-monster-truck", type = "replaces", source = "doc/fms/store", notes = "Car named by the store's collection page (link_fms_collections.py)" },
 ]
 category = "body"
 scale = "1/10"
+numbers = ["APSC22127"]
+name_source = "manufacturer"
+notes = "Also named \"1:10 F100 Car Body (Blue)\" (APSC22127); Also category \"misc\" (APSC22127); Also color \"blue\" (APSC22127)"
