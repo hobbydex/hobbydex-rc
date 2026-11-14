@@ -1767,6 +1767,19 @@ def main():
 
     # 26. unnamed parts and cheap structural gaps (kept from the old audit)
     check("part-named-by-number", "give the part its name from the maker's parts list", [p for p in parts if p["name"] == p.get("number")])
+    # a release is not a part: a part that shares its brand and number with a release (or the release's id) and is not
+    # listed in data/release-twins.toml with its reason (validate.py refuses the same; this is the status-page count)
+    with open(os.path.join(RC, "data", "release-twins.toml"), "rb") as fh:
+        twin_ids = {t.get("id") for t in tomllib.load(fh).get("twin", [])}
+    part_ids = {p["id"] for p in parts}
+    twin_hits = []
+    for r in rels:
+        for pid in {f"part/{r['brand'][6:]}/{r['number']}" if r.get("number") and str(r.get("brand", "")).startswith("brand/") else None,
+                    "part/" + r["id"][len("release/"):]} - {None}:
+            if pid in part_ids and pid not in twin_ids:
+                twin_hits.append(pid)
+    check("part-release-twin", "a release is not a part: retire the part in data/retired.toml with replaced_by the release (the release keeps the product), or list it in data/release-twins.toml with the reason it is a separate product",
+          twin_hits)
     # 26d. spec links the part's category or name does not carry (spec_mismatches): a bearing on a clip, a motor on a rebuild kit
     mism = spec_mismatches(parts)
     check("spec-mismatch", "remove the spec link (or fix the part's category or name, then link the spec its name gives): the link's family is not the part's kind; see the linker in the rows' notes",

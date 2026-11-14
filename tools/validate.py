@@ -332,6 +332,54 @@ def _release_date(d):
     return None
 
 
+def release_own_part(d):
+    """The part id a release's own number names (part/<brand>/<number>), or None without a number."""
+    brand, num = d.get("brand"), d.get("number")
+    if not isinstance(brand, str) or not isinstance(num, str) or not brand.startswith("brand/"):
+        return None
+    return f"part/{brand[len('brand/'):]}/{num}"
+
+
+def twin_list(root=None):
+    """data/release-twins.toml: the parts that stay parts with a release of their number (reason each)."""
+    path = os.path.join(ROOT, "release-twins.toml")
+    if not os.path.exists(path):
+        return []
+    with open(path, "rb") as f:
+        return tomllib.load(f).get("twin", [])
+
+
+def check_release_twins(docs, ids, errors):
+    """A release is not a part: no part shares its brand and number with a release unless data/release-twins.toml
+    lists it with the reason it is a separate product; the release's own number never appears in its contains."""
+    parts = {d["id"]: (path, d) for path, kind, d in docs if kind == "part"}
+    own = {}
+    for path, kind, d in docs:
+        if kind == "release":
+            # the part a release is: its brand and number, or the part of its id (a number a brand prints with a prefix)
+            pids = {release_own_part(d), "part/" + d["id"][len("release/"):]} - {None}
+            for pid in pids:
+                own.setdefault(pid, path)
+            for row in d.get("contains", []) or []:
+                if isinstance(row, dict) and row.get("part") in pids:
+                    errors.append(f"{path}: contains lists its own number {row.get('part')}: a release is not a part (remove the row)")
+    twins = {}
+    for row in twin_list():
+        tid = row.get("id")
+        if not isinstance(row.get("reason"), str) or not row["reason"].strip():
+            errors.append(f"{os.path.join(ROOT, 'release-twins.toml')}: {tid} needs a reason")
+        if tid in twins:
+            errors.append(f"{os.path.join(ROOT, 'release-twins.toml')}: {tid} is listed twice")
+        twins[tid] = row
+        if tid not in parts:
+            errors.append(f"{os.path.join(ROOT, 'release-twins.toml')}: {tid} is not a part (remove the entry)")
+        elif tid not in own:
+            errors.append(f"{os.path.join(ROOT, 'release-twins.toml')}: {tid} has no release of its number (remove the entry)")
+    for pid, (path, d) in parts.items():
+        if pid in own and pid not in twins:
+            errors.append(f"{path}: part {pid} has a release of its number ({own[pid]}): a release is not a part; retire the part (data/retired.toml, replaced_by the release) or list it in data/release-twins.toml with its reason")
+
+
 def check_release_related(docs, errors):
     rels = {d["id"]: d for _, kind, d in docs if kind == "release"}
     for path, kind, d in docs:
@@ -968,7 +1016,7 @@ def main():
                 errors.append(f"{path}: parse error: {e}")
                 continue
             rel = os.path.relpath(path, ROOT)
-            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml", "legacy-part-supersedes.toml"):
+            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml", "legacy-part-supersedes.toml", "release-twins.toml"):
                 continue   # retired ids and confirmed pairs, checked below; reviewed numbers are audit-only (audit.py)
             top = rel.split(os.sep)[0]
             kind = next((k for k, v in KINDS.items() if v["dir"] == top), None)
@@ -1751,6 +1799,7 @@ def main():
     check_names_no_brand(docs, errors)
     check_former_names(docs, errors)
     check_part_category(docs, errors)
+    check_release_twins(docs, ids, errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:
