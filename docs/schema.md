@@ -31,6 +31,10 @@ checks both. Changing the layout later means editing `layout.py` and moving
 files; ids do not change.
 
 
+## A release is not a part
+
+A car, kit or RTR sold under a number is a release, never a part of the same brand and number. A part record that shares its brand and number with a release (or whose id is the release's id) is retired in data/retired.toml with `replaced_by` the release. The parts that stay beside such a release are listed in data/release-twins.toml with the reason they are a separate product: a conversion part (a frame, cage or chassis that replaces the car's), a body set, a spare that fits other kits or that another kit's contents name, or a number that names another product. validate.py refuses a part that shares a number with a release and is not listed, and a release whose `contains` names its own number.
+
 ## Ids are permanent
 
 Every record's `id` is also its address: the site builds the page URL from
