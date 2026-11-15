@@ -2,8 +2,17 @@ id = "part/tamiya/53540"
 brand = "brand/tamiya"
 number = "53540"
 name = "TGM-02 DV-Lug Tire & Wheel Gold*2"
+seen_by = "2007-11-28"
+seen_by_source = "https://web.archive.org/web/20071128002522/https://www.tamiyausa.com/images/product/725/53540/thumbs/header_53540.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=89205&pid=1", kind = "dealer" },
 ]
 category = "tire"
+mounting = "pre-mounted"
+wheel_color = "gold"
+fits = [
+  { kit = "kit/tamiya/tgm-02", releases = ["release/tamiya/43501"], type = "replaces", source = "doc/tamiya/300043501-terra-crusher-tuning", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tgm-03", releases = ["release/tamiya/43508"], type = "replaces", source = "doc/tamiya/43508-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/trf102", releases = ["release/tamiya/42289"], type = "replaces", source = "doc/tamiya/42289-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

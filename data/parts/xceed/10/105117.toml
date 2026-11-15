@@ -2,8 +2,20 @@ id = "part/xceed/105117"
 brand = "brand/xceed"
 number = "105117"
 name = "Xceed (#105117) Lipo Pack 7.4V 20C 4000Mah"
+seen_by = "2012-03-14"
+seen_by_source = "https://web.archive.org/web/20120314174641/http://www.xceedrc.com:80/product/105117"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=86402&pid=1", kind = "dealer" },
 ]
 category = "battery"
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 4000
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 20

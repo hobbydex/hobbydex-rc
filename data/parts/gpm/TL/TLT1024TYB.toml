@@ -11,3 +11,8 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "wheel"
 color = "blue"
+material = "aluminium"
+position = "front"
+equivalent_to = [
+  { spec = "spec/wheel-hex/10mm", match = "exact", notes = "Hex size from the name" },
+]

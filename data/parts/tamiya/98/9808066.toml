@@ -7,3 +7,9 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=74761&pid=1", kind = "dealer" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/tamiya/ta05", releases = ["release/tamiya/42103", "release/tamiya/49400"], type = "replaces", source = "doc/tamiya/42103-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tb-evolution-5", releases = ["release/tamiya/58371"], type = "replaces", source = "doc/tamiya/58371-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/trf415", releases = ["release/tamiya/42104", "release/tamiya/49419"], type = "replaces", source = "doc/tamiya/42104-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/trf415msx", releases = ["release/tamiya/49394"], type = "replaces", source = "doc/tamiya/49394-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

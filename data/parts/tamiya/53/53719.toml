@@ -2,9 +2,14 @@ id = "part/tamiya/53719"
 brand = "brand/tamiya"
 number = "53719"
 name = "Tb-evo4 Lw Front Prop.joint Shaft"
+seen_by = "2012-09-08"
+seen_by_source = "https://web.archive.org/web/20120908123134/http://www.tamiyausa.com/images/product/720/53719/thumbs/header_53719.jpg"
 name_source = "dealer"
 applies_to = "TB EVO4"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Tamiya-TB-EVO4-Parts-Hop-Ups-Upgrades&brand=Tamiya&model=TB%20EVO4&id=74633&pid=1", kind = "dealer" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/tamiya/tb-evolution-iv", releases = ["release/tamiya/58331"], type = "replaces", source = "doc/tamiya/58331-parts-list-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

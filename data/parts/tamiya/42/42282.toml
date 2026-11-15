@@ -2,10 +2,16 @@ id = "part/tamiya/42282"
 brand = "brand/tamiya"
 number = "42282"
 name = "4mm Serrated Whl Nut Bla"
+seen_by = "2021-03-29"
+seen_by_source = "https://web.archive.org/web/20210329062912/https://www.tamiya.com/japan/products/42282/index.html"
+gtin = "4950344422821"
 name_source = "dealer"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=191715&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/42282/index.html" },
 ]
 pack_qty = 8
 pack_qty_basis = "name"
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m4-serrated-flange", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

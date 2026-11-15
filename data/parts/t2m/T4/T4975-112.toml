@@ -7,7 +7,7 @@ documents = ["doc/t2m/t2m-shop"]
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/t2m-roulements-8x18x4mm-2pcs-1-6-T4975_112" },
 ]
-notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4975/112."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4975/112. Colour read from the maker's product photo."
 equivalent_to = [
   { spec = "spec/bearing/8x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
@@ -19,3 +19,4 @@ applies_to = ["Pirate XT6 V6"]
 fits = [
   { kit = "kit/t2m/pirate-xt-6-v6", type = "direct", source = "doc/t2m/t2m-shop", notes = "Listed for the T2M Pirate XT6 V6 (link_car_kits.py)" },
 ]
+color = "silver"

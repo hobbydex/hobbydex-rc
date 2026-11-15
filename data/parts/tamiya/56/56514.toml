@@ -2,9 +2,16 @@ id = "part/tamiya/56514"
 brand = "brand/tamiya"
 number = "56514"
 name = "1/14 R/C Tractor Truck Scania R620 6x4 Highline Body Set"
+seen_by = "2015-04-21"
+seen_by_source = "https://web.archive.org/web/20150421221808/http://www.tamiyausa.com:80/items/radio-control-parts-70/body-set-truck-71140/rc-body-set-scania-highline-56514"
 name_source = "dealer"
 applies_to = "1/14 Truck Scania R620"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Tamiya-1/14-Truck-Scania-R620--Parts-Hop-Ups-Upgrades&brand=Tamiya&model=1/14%20Truck%20Scania%20R620%20&id=110712&pid=1", kind = "dealer" },
 ]
 category = "body"
+depicts = { make = "Scania", model = "R620" }
+fits = [
+  { kit = "kit/tamiya/knight-hauler", releases = ["release/tamiya/56314"], type = "replaces", source = "doc/tamiya/56315-56313", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/rc-tractor-truck-1-14", releases = ["release/tamiya/56313", "release/tamiya/56317"], type = "replaces", source = "doc/tamiya/56315-56313", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

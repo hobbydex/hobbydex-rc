@@ -2,12 +2,19 @@ id = "part/tamiya/54163"
 brand = "brand/tamiya"
 number = "54163"
 name = "Carbon Lower Deck"
+seen_by = "2012-09-06"
+seen_by_source = "https://web.archive.org/web/20120906151412/http://www.tamiyausa.com/images/product/720/54163/thumbs/header_54163.jpg"
 name_source = "dealer"
 applies_to = "F104"
 fits = [
   { kit = "kit/tamiya/f104", type = "replaces", source = "doc/tamiya/asiatees" },
+  { kit = "kit/tamiya/f104", type = "replaces", replaces = "part/tamiya/13405060", source = "doc/tamiya/asiatees", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tamiya/f104", type = "replaces", replaces = "part/tamiya/14005133", source = "doc/tamiya/asiatees", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tamiya/f104", type = "replaces", replaces = "part/tamiya/14005140", source = "doc/tamiya/asiatees", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/tamiya/f104", type = "replaces", replaces = "part/tamiya/14005148", source = "doc/tamiya/asiatees", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Tamiya-F104-Parts-Hop-Ups-Upgrades&brand=Tamiya&model=F104&id=68252&pid=1", kind = "dealer" },
 ]
 category = "chassis"
+material = "carbon"

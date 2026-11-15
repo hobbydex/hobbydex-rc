@@ -10,3 +10,8 @@ links = [
 category = "battery"
 chemistry = "nimh"
 voltage = 7.2
+capacity_mah = 1100
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-1100mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 6

@@ -7,3 +7,13 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?X-Rider-CX3-EVO-Parts-Hop-Ups-Upgrades&brand=X-Rider&model=CX3%20EVO&id=207743&pid=1", kind = "dealer" },
 ]
 category = "battery"
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 600
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 20

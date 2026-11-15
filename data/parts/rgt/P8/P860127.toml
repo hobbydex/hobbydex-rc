@@ -7,3 +7,9 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?RGT-EX86130-PRO-RUNNER-Parts-Hop-Ups-Upgrades&brand=RGT&model=EX86130%20PRO%20RUNNER&id=231225&pid=1", kind = "dealer" },
 ]
 category = "gear"
+material = "brass"
+weight_g = 41
+fits = [
+  { kit = "kit/rgt/EX86020", releases = ["release/rgt/EX86020"], type = "direct", source = "doc/rgt/202511170512907732", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/rgt/EX86130", releases = ["release/rgt/EX86130"], type = "direct", source = "doc/rgt/202607040445275863", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

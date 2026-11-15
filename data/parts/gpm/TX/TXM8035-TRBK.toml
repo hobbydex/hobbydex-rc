@@ -6,10 +6,11 @@ name_source = "dealer"
 notes = "AsiaTees lists this number as TXM8035/TRBK; the '/' is written '-'."
 applies_to = "XMAXX"
 fits = [
-  { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/gpm/asiatees" },
+  { kit = "kit/traxxas/x-maxx", type = "direct", source = "doc/gpm/asiatees", releases = ["release/traxxas/77086-4", "release/traxxas/77096-4", "release/traxxas/77097-4"] },
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-XMAXX-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=XMAXX&id=208803&pid=1", kind = "dealer" },
 ]
 category = "bearing"
 color = "black"
+material = "steel"

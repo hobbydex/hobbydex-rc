@@ -7,3 +7,8 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=89202&pid=1", kind = "dealer" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/tamiya/ta05", releases = ["release/tamiya/49400"], type = "replaces", source = "doc/tamiya/49400-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tb-02", releases = ["release/tamiya/58311", "release/tamiya/58316"], type = "replaces", source = "doc/tamiya/58311-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tb-02r", releases = ["release/tamiya/49348"], type = "replaces", source = "doc/tamiya/49348-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

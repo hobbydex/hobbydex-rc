@@ -7,3 +7,7 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=74526&pid=1", kind = "dealer" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/tamiya/tb-evolution-iv", releases = ["release/tamiya/58331"], type = "replaces", source = "doc/tamiya/58331-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tb-evolution-iv-ms", releases = ["release/tamiya/49353"], type = "replaces", source = "doc/tamiya/300049353-tb-evo-iv-ms", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

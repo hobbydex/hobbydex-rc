@@ -2,6 +2,8 @@ id = "part/gpm/KF4048B"
 brand = "brand/gpm"
 number = "KF4048B"
 name = "Aluminum Steering Assembly (excl. 5x8mm Bearing) - 1pr Blue"
+pack_qty = 2
+pack_qty_basis = "name"
 name_source = "dealer"
 applies_to = "TF4"
 links = [
@@ -9,3 +11,7 @@ links = [
 ]
 category = "bearing"
 color = "blue"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 5x8 bearing (MR85)" },
+]

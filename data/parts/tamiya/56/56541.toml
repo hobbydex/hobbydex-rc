@@ -2,10 +2,17 @@ id = "part/tamiya/56541"
 brand = "brand/tamiya"
 number = "56541"
 name = "RC 22mm Front Wheels (2)"
+seen_by = "2019-07-20"
+seen_by_source = "https://web.archive.org/web/20190720092743/https://tamiya.com/japan/products/56541/index.html"
 name_source = "dealer"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=229367&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/56541/index.html" },
 ]
 pack_qty = 2
 pack_qty_basis = "name"
 category = "wheel"
+position = "front"
+fits = [
+  { kit = "kit/tamiya/knight-hauler", releases = ["release/tamiya/56314"], type = "replaces", source = "doc/tamiya/56315-56313", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/rc-tractor-truck-1-14", releases = ["release/tamiya/56313"], type = "replaces", source = "doc/tamiya/56315-56313", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

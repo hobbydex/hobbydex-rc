@@ -7,3 +7,7 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Hobby-Plus-1/18-Terranaut-8x8-Parts-Hop-Ups-Upgrades&brand=Hobby%20Plus&model=1/18%20Terranaut%208x8&id=247159&pid=1", kind = "dealer" },
 ]
 category = "differential"
+includes = [
+  { spec = "spec/ring-pinion/ring-24t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+  { spec = "spec/ring-pinion/pinion-12t", qty = 1, notes = "Teeth parsed from the manufacturer's description" },
+]

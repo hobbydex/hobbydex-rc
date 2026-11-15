@@ -9,3 +9,7 @@ links = [
 pack_qty = 8
 pack_qty_basis = "name"
 category = "nut"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m3-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

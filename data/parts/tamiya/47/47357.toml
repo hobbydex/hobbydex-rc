@@ -2,8 +2,17 @@ id = "part/tamiya/47357"
 brand = "brand/tamiya"
 number = "47357"
 name = "1/10 VW Scirocco GT24-CNG Lightweight Body 190mm"
+seen_by = "2019-12-13"
+seen_by_source = "https://web.archive.org/web/20191213223900/https://www.tamiya.com/japan/products/47357/index.html"
 name_source = "dealer"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=166535&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/47357/index.html" },
 ]
 category = "body"
+depicts = { make = "Volkswagen", model = "Scirocco GT24-CNG Lightweight" }
+scale = "1/10"
+width_mm = 190
+width_basis = "name"
+fits = [
+  { kit = "kit/tamiya/fire-dragon", releases = ["release/tamiya/47457"], type = "replaces", source = "doc/tamiya/300047457-anleitung-instruction-fire-dragon", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

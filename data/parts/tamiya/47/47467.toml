@@ -2,8 +2,13 @@ id = "part/tamiya/47467"
 brand = "brand/tamiya"
 number = "47467"
 name = "Super Storm Dragon Body"
+seen_by = "2021-10-04"
+seen_by_source = "https://web.archive.org/web/20211004053146/https://www.tamiya.com/japan/products/47467/index.html"
 name_source = "dealer"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=196605&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/47467/index.html" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/tamiya/fire-dragon", releases = ["release/tamiya/47457"], type = "replaces", source = "doc/tamiya/300047457-anleitung-instruction-fire-dragon", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

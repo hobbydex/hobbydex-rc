@@ -8,3 +8,6 @@ pack_qty = 4
 pack_qty_basis = "manual"
 category = "clip"
 documents = ["doc/redcat/tr-mt8e-manual"]
+equivalent_to = [
+  { spec = "spec/circlip/15mm-1.3", match = "functional" },
+]

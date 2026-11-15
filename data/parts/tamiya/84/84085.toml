@@ -2,6 +2,8 @@ id = "part/tamiya/84085"
 brand = "brand/tamiya"
 number = "84085"
 name = "Rc 4MM Aluminum Flange Nut - Purple"
+seen_by = "2012-08-18"
+seen_by_source = "https://web.archive.org/web/20120818150838/http://www.tamiyausa.com/images/product/720/84085/thumbs/header_1.jpg"
 name_source = "dealer"
 applies_to = "TA05"
 fits = [
@@ -14,3 +16,7 @@ pack_qty = 5
 pack_qty_basis = "name"
 category = "nut"
 color = "purple"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

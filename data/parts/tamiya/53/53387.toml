@@ -2,9 +2,15 @@ id = "part/tamiya/53387"
 brand = "brand/tamiya"
 number = "53387"
 name = "TA03RS/FS Chassis Conversion"
+seen_by = "2007-03-28"
+seen_by_source = "https://web.archive.org/web/20070328125427/http://www.tamiya.com/english/rc/rcitem/parts/img/53387.jpeg"
 name_source = "dealer"
 applies_to = "TA03"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Tamiya-TA03-Parts-Hop-Ups-Upgrades&brand=Tamiya&model=TA03&id=43446&pid=1", kind = "dealer" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/tamiya/df-03", releases = ["release/tamiya/58387"], type = "replaces", source = "doc/tamiya/58387-avante-mk-ii-df-03", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/m-07", releases = ["release/tamiya/84436"], type = "replaces", source = "doc/tamiya/m07r-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

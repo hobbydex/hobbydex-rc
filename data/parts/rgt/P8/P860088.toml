@@ -7,3 +7,7 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?RGT-EX86190-RESCUER-Parts-Hop-Ups-Upgrades&brand=RGT&model=EX86190%20RESCUER&id=204672&pid=1", kind = "dealer" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/rgt/EX86150", releases = ["release/rgt/EX86150"], type = "replaces", source = "doc/rgt/202603311028804024", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/rgt/EX86190", releases = ["release/rgt/EX86190"], type = "replaces", source = "doc/rgt/202605090440089195", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

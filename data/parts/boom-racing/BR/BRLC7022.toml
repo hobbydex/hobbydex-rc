@@ -2,8 +2,13 @@ id = "part/boom-racing/BRLC7022"
 brand = "brand/boom-racing"
 number = "BRLC7022"
 name = "BRX70 Front Straight PHAT™ Axle (Center Pumpkin) w/ AR44 HD Gears Assembled"
+seen_by = "2024-05-24"
+seen_by_source = "https://web.archive.org/web/20240524191527/https://www.boomracing.com/aluminum-knuckle-arm-lever-for-brx70-brx80-brx90-phat-ar44-phat-axle-brlc7022-2-black-152353"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=151552&pid=1", kind = "dealer" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/boom-racing/brx02", releases = ["release/boom-racing/br8004", "release/boom-racing/br8005"], type = "replaces", source = "doc/boom-racing/manual-brx02-leaf-spring-110122-br8005", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

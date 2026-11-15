@@ -2,9 +2,15 @@ id = "part/tamiya/42351"
 brand = "brand/tamiya"
 number = "42351"
 name = "TRF420 Center Pulley"
+seen_by = "2021-09-26"
+seen_by_source = "https://web.archive.org/web/20210926152901/https://www.tamiya.com/japan/products/42351/index.html"
 name_source = "dealer"
 applies_to = "TRF420"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Tamiya-TRF420-Parts-Hop-Ups-Upgrades&brand=Tamiya&model=TRF420&id=185578&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/42351/index.html" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "replaces", source = "doc/tamiya/300058693-ta08-pro", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/trf420x", releases = ["release/tamiya/42382"], type = "replaces", source = "doc/tamiya/42382-anleitung-instruction-trf-420x", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

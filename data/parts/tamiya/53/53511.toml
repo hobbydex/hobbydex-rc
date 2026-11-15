@@ -8,3 +8,9 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Tamiya-TB-EVO3-Parts-Hop-Ups-Upgrades&brand=Tamiya&model=TB%20EVO3&id=74616&pid=1", kind = "dealer" },
 ]
 category = "steering"
+material = "aluminium"
+fits = [
+  { kit = "kit/tamiya/dt-02", releases = ["release/tamiya/58511"], type = "replaces", source = "doc/tamiya/300058511-bauanleitung", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/knight-hauler", releases = ["release/tamiya/56314"], type = "replaces", source = "doc/tamiya/56314-ersatzteilliste", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tt-01", releases = ["release/tamiya/58302"], type = "replaces", source = "doc/tamiya/58302-enzo-ferrari-tt-01", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

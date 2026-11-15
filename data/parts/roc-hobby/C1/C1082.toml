@@ -2,8 +2,14 @@ id = "part/roc-hobby/C1082"
 brand = "brand/roc-hobby"
 number = "C1082"
 name = "Front Outdrive Shaft Assembly"
+seen_by = "2024-05-17"
+seen_by_source = "https://web.archive.org/web/20240517042855/https://www.fmshobby.com/cdn/shop/products/C1082_600x.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?ROC-Hobby-SCALER-Parts-Hop-Ups-Upgrades&brand=ROC%20Hobby&model=SCALER&id=190876&pid=1", kind = "dealer" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/roc-hobby/atlas-mud-master", releases = ["release/roc-hobby/ROC11036RS-BU", "release/roc-hobby/ROC11036RS-OR", "release/roc-hobby/ROC11036RS-YL"], type = "replaces", source = "doc/roc-hobby/1-10-atlas-mud-master-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/roc-hobby/mashigan-v2", releases = ["release/roc-hobby/ROC11033RSRDV2"], type = "replaces", source = "doc/roc-hobby/1-10-mashigan-v2-scaler-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,6 +2,8 @@ id = "part/gpm/MAFTZSP1AOC"
 brand = "brand/gpm"
 number = "MAFTZSP1AOC"
 name = "Stainless Steel Chassis Protection Plate (Full Set Of Cutting + Laser Flare) (ARA7618) - 51Pcs Set"
+pack_qty = 51
+pack_qty_basis = "name"
 name_source = "dealer"
 applies_to = "Fireteam 6S BLX"
 links = [
@@ -9,5 +11,6 @@ links = [
 ]
 category = "chassis"
 fits = [
-  { kit = "kit/arrma/fireteam", type = "replaces", source = "doc/gpm/asiatees" },
+  { kit = "kit/arrma/fireteam", type = "replaces", source = "doc/gpm/asiatees", releases = ["release/arrma/ara7618t2"] },
 ]
+material = "stainless"

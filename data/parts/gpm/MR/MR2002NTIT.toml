@@ -2,6 +2,8 @@ id = "part/gpm/MR2002NTIT"
 brand = "brand/gpm"
 number = "MR2002NTIT"
 name = "Aluminium 6061 2Mm Non - Flanged Lock Nuts - 4Pcs Set Titanium"
+pack_qty = 4
+pack_qty_basis = "name"
 name_source = "dealer"
 applies_to = "Mini-Z MR-02"
 fits = [
@@ -12,3 +14,6 @@ links = [
 ]
 category = "nut"
 color = "titanium"
+equivalent_to = [
+  { spec = "spec/nut/m2-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

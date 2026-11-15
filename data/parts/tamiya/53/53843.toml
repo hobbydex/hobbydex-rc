@@ -7,3 +7,7 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=89159&pid=1", kind = "dealer" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/tamiya/ta05", releases = ["release/tamiya/58345", "release/tamiya/58358", "release/tamiya/58369"], type = "replaces", source = "doc/tamiya/58345-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/ta05-ifs", releases = ["release/tamiya/49489", "release/tamiya/49491", "release/tamiya/58389", "release/tamiya/58394", "release/tamiya/58398"], type = "replaces", source = "doc/tamiya/300049491-ta-05-ifs-r", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,8 +2,19 @@ id = "part/xceed/105116"
 brand = "brand/xceed"
 number = "105116"
 name = "Xceed (#105116) Lipo Hump Pack 2220 Mah 7.4V"
+seen_by = "2011-03-05"
+seen_by_source = "https://web.archive.org/web/20110305230213/http://www.xceedrc.com:80/product/105116"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=86401&pid=1", kind = "dealer" },
 ]
 category = "battery"
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 2220
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2220mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

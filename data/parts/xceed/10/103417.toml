@@ -7,3 +7,8 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=86321&pid=1", kind = "dealer" },
 ]
 category = "pinion"
+teeth = 32
+pitch_dp = 48
+equivalent_to = [
+  { spec = "spec/pinion/48dp-32t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

@@ -8,3 +8,8 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Tamiya-TB-Evo-3-Parts-Hop-Ups-Upgrades&brand=Tamiya&model=TB%20Evo%203&id=216504&pid=1", kind = "dealer" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/tamiya/tb-02", releases = ["release/tamiya/58310", "release/tamiya/58315", "release/tamiya/58316", "release/tamiya/58322", "release/tamiya/58329", "release/tamiya/58337", "release/tamiya/58338"], type = "replaces", source = "doc/tamiya/58310-parts-list-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tb-02r", releases = ["release/tamiya/49348"], type = "replaces", source = "doc/tamiya/49348-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tb-evolution-iii", releases = ["release/tamiya/58299"], type = "replaces", source = "doc/tamiya/58299-manual-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

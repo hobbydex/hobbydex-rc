@@ -2,8 +2,14 @@ id = "part/tamiya/53319"
 brand = "brand/tamiya"
 number = "53319"
 name = "4WD Inner Sponge (Rear)"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701175413/http://www.tamiyausa.com/images/product/720/53319/thumbs/header_53319.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=89226&pid=1", kind = "dealer" },
 ]
 category = "tire"
+position = "rear"
+fits = [
+  { kit = "kit/tamiya/tt-01", releases = ["release/tamiya/58319", "release/tamiya/58339"], type = "replaces", source = "doc/tamiya/58319-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

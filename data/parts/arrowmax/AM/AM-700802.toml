@@ -2,8 +2,20 @@ id = "part/arrowmax/AM-700802"
 brand = "brand/arrowmax"
 number = "AM-700802"
 name = "AM Lipo 6200mAh 2S TC Low Profile - 7.6V 55C Continuos 110C Burst"
+seen_by = "2021-02-24"
+seen_by_source = "https://web.archive.org/web/20210224181342/https://www.arrowmax-rc.com/xcart/am-700802-am-lipo-6200mah-2s-tc-low-profile-7-6v-55c-continuous-110c-burst-.html"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=146781&pid=1", kind = "dealer" },
 ]
 category = "battery"
+chemistry = "lipo"
+cells = 2
+voltage = 7.6
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 6200
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 55

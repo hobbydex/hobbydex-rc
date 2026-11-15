@@ -2,8 +2,14 @@ id = "part/boom-racing/BBZ69012RS"
 brand = "brand/boom-racing"
 number = "BBZ69012RS"
 name = "High Performance Ball Bearing Rubber Sealed 12x24x6mm"
+seen_by = "2023-07-11"
+seen_by_source = "https://web.archive.org/web/20230711154356/https://www.boomracing.com/image/cache/data/product/main/boom-racing-bbz69012rs-776x618.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=43037&pid=1", kind = "dealer" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/12x24x6", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

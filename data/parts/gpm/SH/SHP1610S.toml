@@ -10,3 +10,7 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "pin"
 color = "silver"
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pin/1.6x10", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
