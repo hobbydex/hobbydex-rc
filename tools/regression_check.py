@@ -50,9 +50,14 @@ does not derive it and the basis is lost, which the stock and option rows show.
 --body: a PR description. A line "Regressions: expected" with the reason on the
 same line or on the next non-empty line lets the change through; the reason is
 printed. --report writes every removed and changed value, flagged or not.
---json writes the result for tools that act on it (tools/local_loop.py).
+--json writes the result for tools that act on it (tools/local_loop.py): its "result" is
+"clean" (no regressions), "expected" (regressions, all let through by the body) or
+"regressions" (regressions to judge).
 
-Exit: 0 no regressions (or expected), 1 regressions, 2 the check could not run.
+Exit: 0 no regressions, or all expected; 3 (EXIT_REGRESSIONS) regressions to judge;
+2 the check could not run; any other code (1: an uncaught error) is a failure of the
+check itself. A caller that judges regressions (the local loop's derive) treats 3 as an
+answer, not a failure; CI and ship_pr fail on any non-zero code.
 Run from the repository root.
 """
 import argparse, collections, datetime, json, os, re, subprocess, sys, tomllib, unicodedata, urllib.parse
@@ -725,6 +730,16 @@ def field_rows(ck):
     return sorted(rows, key=lambda kv: (-kv[1]["regressions"], -(kv[1]["removed"] + kv[1]["changed"]), kv[0]))
 
 
+EXIT_REGRESSIONS = 3   # regressions to judge: an answer, kept apart from 1 (a crash) and 2 (could not run)
+
+
+def result_word(regs, expected):
+    """The JSON "result": clean, expected or regressions."""
+    if not regs:
+        return "clean"
+    return "expected" if expected is not None else "regressions"
+
+
 def verdict(ck, expected):
     regs = [e for e in ck.events if e["regression"]]
     if not regs:
@@ -821,12 +836,12 @@ def main():
                                    e["change"], e["old"], e["new"], e["reason"]]) + "\n")
     if args.json:
         with open(args.json, "w", encoding="utf-8") as f:
-            json.dump(dict(base=base, head=head, regressions=regs, expected=expected,
+            json.dump(dict(base=base, head=head, result=result_word(regs, expected), regressions=regs, expected=expected,
                            counts={f"{k}/{f}": dict(c) for (k, f), c in ck.counts.items()}),
                       f, indent=1, ensure_ascii=True)
     if args.markdown:
         write_markdown(ck, args.markdown, base, head, text)
-    sys.exit(1 if regs and expected is None else 0)
+    sys.exit(EXIT_REGRESSIONS if regs and expected is None else 0)
 
 
 if __name__ == "__main__":

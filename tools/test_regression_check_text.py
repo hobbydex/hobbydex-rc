@@ -68,10 +68,15 @@ def run_check(repo, base_text, head_text, path=PART):
     git(repo, "update-ref", "refs/heads/head", head)
     with tempfile.TemporaryDirectory() as d:
         out = os.path.join(d, "result.json")
-        subprocess.run([sys.executable, "-I", str(SCRIPT), "--base", "base", "--head", "head", "--json", out],
-                       cwd=repo, capture_output=True, text=True)
+        p = subprocess.run([sys.executable, "-I", str(SCRIPT), "--base", "base", "--head", "head", "--json", out],
+                           cwd=repo, capture_output=True, text=True)
         with open(out, encoding="utf-8") as f:
-            return json.load(f)["regressions"]
+            res = json.load(f)
+        # the exit code and the JSON result agree: 3 and "regressions" when there are any, 0 and "clean" when none
+        want = (3, "regressions") if res["regressions"] else (0, "clean")
+        if (p.returncode, res["result"]) != want:
+            raise AssertionError(f"exit {p.returncode}, result {res['result']}; expected {want}: {p.stderr}")
+        return res["regressions"]
 
 
 class FreeTextRegressions(unittest.TestCase):
@@ -218,6 +223,24 @@ class FreeTextRegressions(unittest.TestCase):
         head = part().replace('url = "https://jconcepts.net/hex-driver-wrench-set" }',
                               'url = "https://jconcepts.net/hex-driver-wrench-set", notes = "Shown" }')
         self.assertRegression(base, head)
+
+    # exit codes: regressions let through by a "Regressions: expected" line are a clean exit with result "expected"
+    def test_expected_regressions_exit_zero(self):
+        root = commit(self.repo, {PART: part(NOTE_BASE)})
+        head = commit(self.repo, {PART: part("Named on the maker's own product page (archived copy)")}, parent=root)
+        git(self.repo, "update-ref", "refs/heads/base", root)
+        git(self.repo, "update-ref", "refs/heads/head", head)
+        with tempfile.TemporaryDirectory() as d:
+            out, body = os.path.join(d, "result.json"), os.path.join(d, "body.md")
+            with open(body, "w", encoding="utf-8") as f:
+                f.write("Derive.\n\nRegressions: expected: dealer link replaced by the maker's product page\n")
+            p = subprocess.run([sys.executable, "-I", str(SCRIPT), "--base", "base", "--head", "head", "--json", out,
+                                "--body", body], cwd=self.repo, capture_output=True, text=True)
+            with open(out, encoding="utf-8") as f:
+                res = json.load(f)
+        self.assertEqual(p.returncode, 0, p.stderr)
+        self.assertEqual(res["result"], "expected")
+        self.assertTrue(res["regressions"])
 
 
 if __name__ == "__main__":
