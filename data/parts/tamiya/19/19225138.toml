@@ -5,5 +5,9 @@ name = "W Parts Front Grill Toyota Hilux High-Lift"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=120582&pid=1", kind = "dealer" },
+  { site = "tamico.de", url = "https://tamico.de/Tamiya-19225138-W-PARTS-BAGW-58519", kind = "dealer" },
 ]
 category = "parts-tree"
+fits = [
+  { kit = "kit/tamiya/toyota-4x4-pick-up-bruiser", releases = ["release/tamiya/58519"], type = "replaces", source = "doc/tamiya/58519-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

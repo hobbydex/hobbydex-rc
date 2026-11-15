@@ -10,3 +10,9 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "shock-spring"
 color = "yellow"
+rate = "hard"
+free_length_mm = 52
+range = "boom-racing/kudu-long-coil-spring-free-rate-springs"
+fits = [
+  { kit = "kit/boom-racing/brx02-d130", releases = ["release/boom-racing/br8017"], type = "replaces", source = "doc/boom-racing/manual-brx02-d130-land-rover-denfender130-high-capacity-pickup-4wd", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

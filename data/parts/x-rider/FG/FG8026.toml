@@ -7,3 +7,10 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?X-Rider-Flamigo-Parts-Hop-Ups-Upgrades&brand=X-Rider&model=Flamigo&id=157107&pid=1", kind = "dealer" },
 ]
 category = "battery"
+chemistry = "nimh"
+voltage = 7.2
+capacity_mah = 800
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 6

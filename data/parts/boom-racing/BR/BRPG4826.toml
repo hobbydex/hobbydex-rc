@@ -2,8 +2,16 @@ id = "part/boom-racing/BRPG4826"
 brand = "brand/boom-racing"
 number = "BRPG4826"
 name = "Steel Pinion Gear 48P 26T"
+seen_by = "2023-12-13"
+seen_by_source = "https://web.archive.org/web/20231213050151/https://www.boomracing.com/image/cache/data/product/main/boom-racing-brpg4826-776x618.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=87292&pid=1", kind = "dealer" },
 ]
 category = "pinion"
+teeth = 26
+pitch_dp = 48
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-26t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

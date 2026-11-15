@@ -2,8 +2,15 @@ id = "part/tamiya/53747"
 brand = "brand/tamiya"
 number = "53747"
 name = "Rear Sponge Tires 40 - 30mm width"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701155602/http://www.tamiyausa.com/images/product/720/53747/thumbs/header_53747.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=89182&pid=1", kind = "dealer" },
 ]
 category = "tire"
+position = "rear"
+mounting = "unmounted"
+fits = [
+  { kit = "kit/tamiya/tg10-mk-2", releases = ["release/tamiya/44048"], type = "replaces", source = "doc/tamiya/44048-parts-list-usa", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,8 +2,15 @@ id = "part/tamiya/42324"
 brand = "brand/tamiya"
 number = "42324"
 name = "TB04 to TB07 TC01 40T Aluminium Diff Housing"
+seen_by = "2018-09-19"
+seen_by_source = "https://web.archive.org/web/20180919093835/http://www.tamiya.com:80/japan/products/42324/index.html"
+gtin = "4950344423248"
 name_source = "dealer"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=180407&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/42324/index.html" },
 ]
 category = "differential"
+material = "aluminium"
+fits = [
+  { kit = "kit/tamiya/tc-01", releases = ["release/tamiya/58681"], type = "replaces", source = "doc/tamiya/58681-tc01-parts-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

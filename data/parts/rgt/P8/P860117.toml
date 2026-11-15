@@ -7,3 +7,8 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?RGT-Challenger-EX86170-Parts-Hop-Ups-Upgrades&brand=RGT&model=Challenger%20EX86170&id=231226&pid=1", kind = "dealer" },
 ]
 category = "steering"
+material = "brass"
+fits = [
+  { kit = "kit/rgt/EX86110PRO", releases = ["release/rgt/EX86110PRO"], type = "direct", source = "doc/rgt/202608130305621034", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/rgt/EX86110V2", releases = ["release/rgt/EX86110V2"], type = "direct", source = "doc/rgt/202608130305621034", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

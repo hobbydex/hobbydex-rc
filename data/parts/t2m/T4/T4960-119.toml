@@ -9,7 +9,7 @@ documents = ["doc/t2m/t2m-shop"]
 links = [
   { site = "t2m.fr", url = "http://www.t2m.fr/product/modelisme-voiture-t2m-vis-tete-ronde-m3x16mm-8p-T4960_119" },
 ]
-notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4960/119."
+notes = "English translated by Hobbydex from the maker's French name (name_fr); The store prints the item code as T4960/119. Colour read from the maker's product photo."
 category = "screw"
 equivalent_to = [
   { spec = "spec/screw/m3x16-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
@@ -18,3 +18,4 @@ applies_to = ["Pirate RS3 1/8"]
 fits = [
   { kit = "kit/t2m/pirate-rs3", type = "direct", source = "doc/t2m/t2m-shop", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]
+color = "black"

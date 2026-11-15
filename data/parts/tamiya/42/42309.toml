@@ -2,12 +2,17 @@ id = "part/tamiya/42309"
 brand = "brand/tamiya"
 number = "42309"
 name = "37T Aluminum One Way Pulley"
+seen_by = "2021-09-21"
+seen_by_source = "https://web.archive.org/web/20210921194551/https://www.tamiya.com/japan/products/42309/index.html"
 name_source = "dealer"
 applies_to = "TRF419"
 fits = [
   { kit = "kit/tamiya/trf419", type = "replaces", source = "doc/tamiya/asiatees" },
+  { kit = "kit/tamiya/trf419", type = "replaces", replaces = "part/tamiya/13454641", source = "doc/tamiya/asiatees", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Tamiya-TRF419-Parts-Hop-Ups-Upgrades&brand=Tamiya&model=TRF419&id=216486&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/42309/index.html" },
 ]
 category = "gear"
+teeth = 37
+material = "aluminium"

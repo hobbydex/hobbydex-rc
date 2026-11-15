@@ -7,3 +7,12 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Hobby-Plus-CR-18-Parts-Hop-Ups-Upgrades&brand=Hobby%20Plus&model=CR-18&id=169551&pid=1", kind = "dealer" },
 ]
 category = "battery"
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 600
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

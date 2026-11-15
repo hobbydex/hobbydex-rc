@@ -11,3 +11,7 @@ pack_qty = 4
 pack_qty_basis = "name"
 category = "nut"
 color = "purple"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m5-flanged-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

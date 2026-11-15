@@ -6,7 +6,7 @@ gtin = "4950344505838"
 pack_qty = 10
 pack_qty_basis = "manual"
 ocr_names = ["2mm E-Ring", "3x15mm Tapping Screw (Black)", "3x15mm Tapping Screw"]
-notes = "Name from the Tamiya product page (was read by OCR from a scanned manual)."
+notes = "Name from the Tamiya product page (was read by OCR from a scanned manual). Colour read from the maker's product photo."
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/english/products/50583/index.html" },
   { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/1245-50583", kind = "fan-site" },
@@ -19,3 +19,4 @@ documents = ["doc/tamiya/newitems-month"]
 equivalent_to = [
   { spec = "spec/screw/m3x15-pan-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+color = "silver"

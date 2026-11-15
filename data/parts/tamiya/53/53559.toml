@@ -2,9 +2,15 @@ id = "part/tamiya/53559"
 brand = "brand/tamiya"
 number = "53559"
 name = "TGM-02 L Part (Red Under Guard)"
+seen_by = "2012-09-06"
+seen_by_source = "https://web.archive.org/web/20120906220157/http://www.tamiyausa.com/images/product/725/53559/thumbs/header_53559.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=89203&pid=1", kind = "dealer" },
 ]
 category = "bumper-guard"
 color = "red"
+fits = [
+  { kit = "kit/tamiya/tgm-02", releases = ["release/tamiya/43501"], type = "replaces", source = "doc/tamiya/300043501-terra-crusher-tuning", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/trf419", releases = ["release/tamiya/42316"], type = "replaces", source = "doc/tamiya/42316-anleitung-instructions-trf-419xr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

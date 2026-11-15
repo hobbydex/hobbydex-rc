@@ -2,9 +2,15 @@ id = "part/tamiya/84155"
 brand = "brand/tamiya"
 number = "84155"
 name = "Med Narrow Rally Wheels Dish 0mm Offset Gold"
+seen_by = "2013-07-01"
+seen_by_source = "https://web.archive.org/web/20130701111906/http://www.tamiyausa.com/images/product/720/84155/thumbs/header_84155.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=43454&pid=1", kind = "dealer" },
 ]
 category = "wheel"
 color = "gold"
+vehicle = "rally"
+fits = [
+  { kit = "kit/tamiya/db01", releases = ["release/tamiya/84421"], type = "replaces", source = "doc/tamiya/84421-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

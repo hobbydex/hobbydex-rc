@@ -7,3 +7,6 @@ pack_qty_basis = "manual"
 name_source = "manual"
 documents = ["doc/robitronic/hurricane-r39090-manual"]
 category = "clip"
+equivalent_to = [
+  { spec = "spec/circlip/15mm-1.3", match = "functional" },
+]

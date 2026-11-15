@@ -2,8 +2,15 @@ id = "part/tamiya/53080"
 brand = "brand/tamiya"
 number = "53080"
 name = "0.5 Steel Pinion Gear (18/19t)"
+seen_by = "2015-01-01"
+seen_by_source = "https://web.archive.org/web/20150101050523/http://www.tamiyausa.com:80/items/radio-control-parts-70/hop-up-parts-72000/rc-pinion-set-18-19t-0-5-53080"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=74584&pid=1", kind = "dealer" },
 ]
 category = "pinion"
+material = "steel"
+includes = [
+  { spec = "spec/pinion/mod0.5-18t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+  { spec = "spec/pinion/mod0.5-19t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
+]

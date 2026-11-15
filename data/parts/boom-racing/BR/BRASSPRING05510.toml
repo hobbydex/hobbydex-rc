@@ -9,3 +9,7 @@ links = [
 pack_qty = 4
 pack_qty_basis = "name"
 category = "shock-spring"
+fits = [
+  { kit = "kit/boom-racing/brx02", releases = ["release/boom-racing/br8004", "release/boom-racing/br8005"], type = "replaces", source = "doc/boom-racing/manual-brx02-4-link-110122-br8004-20240905", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/boom-racing/brx02-88", releases = ["release/boom-racing/br8007", "release/boom-racing/br8009"], type = "replaces", source = "doc/boom-racing/manual-brx02-88-land-rover-series-ii-station-wagon-4wd-radio", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

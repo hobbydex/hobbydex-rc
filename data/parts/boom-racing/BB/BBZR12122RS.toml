@@ -2,8 +2,14 @@ id = "part/boom-racing/BBZR12122RS"
 brand = "brand/boom-racing"
 number = "BBZR12122RS"
 name = "High Performance Ball Bearing Rubber Sealed 1/2 x 3/4 x 5/32"
+seen_by = "2024-09-29"
+seen_by_source = "https://web.archive.org/web/20240929210211/https://www.boomracing.com/image/cache/data/product/main/boom-racing-bbzr12122rs-776x618.jpg"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=43054&pid=1", kind = "dealer" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/12.7x19.05x3.969", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

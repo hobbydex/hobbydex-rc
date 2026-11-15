@@ -2,8 +2,14 @@ id = "part/arrowmax/AM-210005"
 brand = "brand/arrowmax"
 number = "AM-210005"
 name = "Silicone Shock Fluid 59Ml 300cst"
+seen_by = "2015-04-03"
+seen_by_source = "https://web.archive.org/web/20150403113339/http://www.arrowmax-rc.com:80/am-210005%20silicone%20shock%20fluid%2059ml%20300cst.html"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=81716&pid=1", kind = "dealer" },
 ]
 category = "oil-grease"
+volume_ml = 59
+equivalent_to = [
+  { spec = "spec/oil/silicone-300cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]

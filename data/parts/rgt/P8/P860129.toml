@@ -7,3 +7,6 @@ links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?RGT-EX86020-INTRUDER-Parts-Hop-Ups-Upgrades&brand=RGT&model=EX86020%20INTRUDER&id=234173&pid=1", kind = "dealer" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/rgt/EX86020", releases = ["release/rgt/EX86020"], type = "replaces", source = "doc/rgt/202511170512907732", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

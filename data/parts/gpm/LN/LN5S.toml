@@ -2,8 +2,14 @@ id = "part/gpm/LN5S"
 brand = "brand/gpm"
 number = "LN5S"
 name = "Aluminum Lock Nut Set-5mm-5pcs"
+pack_qty = 5
+pack_qty_basis = "name"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=40867&pid=1", kind = "dealer" },
 ]
 category = "nut"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m5-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

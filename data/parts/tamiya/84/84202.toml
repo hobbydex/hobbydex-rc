@@ -2,8 +2,14 @@ id = "part/tamiya/84202"
 brand = "brand/tamiya"
 number = "84202"
 name = "Medium-Narrow Inner Sponge *4"
+seen_by = "2012-01-28"
+seen_by_source = "https://web.archive.org/web/20120128171047/http://www.tamiyausa.com/images/product/720/84202/thumbs/header_84202.jpg"
 name_source = "dealer"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=86987&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/84202/index.html" },
 ]
 category = "tire"
+fits = [
+  { kit = "kit/tamiya/fighting-buggy", releases = ["release/tamiya/47304", "release/tamiya/84389"], type = "replaces", source = "doc/tamiya/84389-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tt-02b", releases = ["release/tamiya/58717"], type = "replaces", source = "doc/tamiya/58717-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

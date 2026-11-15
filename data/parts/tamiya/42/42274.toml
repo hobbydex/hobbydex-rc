@@ -2,8 +2,15 @@ id = "part/tamiya/42274"
 brand = "brand/tamiya"
 number = "42274"
 name = "TRF Damper Tapered Piston"
+seen_by = "2021-09-21"
+seen_by_source = "https://web.archive.org/web/20210921231622/https://www.tamiya.com/japan/products/42274/index.html"
 name_source = "dealer"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=90516&pid=1", kind = "dealer" },
+  { site = "Tamiya", url = "https://www.tamiya.com/japan/products/42274/index.html" },
 ]
 category = "shock"
+shock_part = "piston"
+fits = [
+  { kit = "kit/tamiya/ta07", releases = ["release/tamiya/58636"], type = "replaces", source = "doc/tamiya/58636-ta07-parts-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tb-05", releases = ["release/tamiya/47456"], type = "replaces", source = "doc/tamiya/47456-tb05-parts-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
