@@ -40,6 +40,12 @@ REFS = {  # field -> expected id prefix
     "release": "release/",   # a rebrand_of row on a release names the release it is a rebrand of
 }
 LIST_REFS = {"documents": "doc/", "releases": "release/", "requires": "", "kits": "kit/", "parts": "part/"}   # requires: kit or release ids, checked above
+# colour and finish words: a depicts model made only of these is a colour read as the car ("La Ferrari Red" -> "Red")
+DEPICTS_COLOUR_WORDS = {
+    "red", "blue", "green", "yellow", "white", "black", "silver", "grey", "gray", "orange", "purple", "pink", "gold", "brown",
+    "beige", "bronze", "copper", "metallic", "pearl", "matt", "matte", "gloss", "satin", "chrome", "gunmetal", "turquoise",
+    "violet", "navy", "maroon", "light", "dark",
+}
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
 VEHICLE_MAKES = {
     "Abarth", "Acura", "Alfa Romeo", "Alpine", "Aston Martin", "Audi", "BMW", "Bentley", "Bugatti", "Buggyra", "Buick", "Cadillac",
@@ -1449,6 +1455,8 @@ def main():
                       and (("year" not in ve) or (isinstance(ve["year"], int) and not isinstance(ve["year"], bool) and 1885 <= ve["year"] <= datetime.date.today().year + 1))
                       and ve.get("licensed", True) is True):
                 errors.append(f"{path}: depicts should be {{ make = <one of VEHICLE_MAKES> (optional when model is set), model = \"...\", year = 1885.. (optional), licensed = true (optional) }}, got {ve!r}")
+            elif (mw := [w for w in re.split(r"[\s/-]+", ve["model"].lower()) if w]) and all(w in DEPICTS_COLOUR_WORDS for w in mw):
+                errors.append(f"{path}: depicts.model {ve['model']!r} is only a colour or finish word: the model names the car, the colour goes in color")
         rq = d.get("requires") if kind == "release" else None
         if rq is not None and not (isinstance(rq, list) and rq and all(isinstance(x, str) and x.startswith(("kit/", "release/")) for x in rq)):
             errors.append(f"{path}: requires should be a list of kit or release ids (the car the release needs, one of them)")
