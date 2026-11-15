@@ -10,6 +10,11 @@ status = "released"
 seen_by = "2026-08"
 seen_by_source = "https://www.wpl-rc.com/products/c104-rtr-uaz-452"
 depicts = { make = "UAZ", model = "452" }
+contains = [
+  { part = "part/wpl/C104-RTR-RM", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/C104S-RTR-AG", role = "listed", source = "doc/wpl/store" },
+  { part = "part/wpl/C104S-RTR-LGY", role = "listed", source = "doc/wpl/store" },
+]
 color = "light gray"
 notes = "Release year unknown; C104 in WPL's store (read 2026-10-14)"
 links = [
