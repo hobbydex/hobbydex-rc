@@ -679,6 +679,60 @@ def check_names_no_brand(docs, errors):
         if bn and isinstance(name, str) and re.match(re.escape(bn) + " ", name, re.I):
             errors.append(f"{path}: name {name!r} repeats the brand {bn!r}; the site prints it in front (docs/schema.md \"{kind}\")")
 
+# A part name of qualifiers only ("Soft", "Front Lower", "Orange+Grey", "HARD (BLUE)", "2 pcs"): the side, colour,
+# hardness, size or "Set" of a longer name that a parser cut. Mirrors tools/name_qualifiers.py in hobbydex-tools and
+# rust/hobbydex-validate (the same words and token rules in all three).
+QUALIFIER_WORDS = frozenset("""
+black white red blue green yellow orange pink purple violet grey gray silver gold golden clear smoke smoked
+transparent translucent chrome brown beige navy cyan magenta gunmetal bronze copper matte matt metallic
+fluorescent fluo dark lime olive khaki tan cream ivory shiny gloss glossy satin anodized anodised
+titanium carbon aluminium aluminum alloy steel brass plastic
+soft super medium hard extra ultra firm xsoft xhard
+front rear left right upper lower under top bottom center centre middle side both
+small large big long short wide narrow thin thick mini standard regular normal
+set type pair pairs pcs pc pieces piece and or with w the of for no version ver
+""".split())
+QUALIFIER_SIZE = re.compile(r"(?i)m?\d+(?:\.\d+)?(?:x\d+(?:\.\d+)?)+(?:mm|cm)?|m\d(?:\.\d+)?|\d+(?:\.\d+)?(?:mm|cm|in|inch|deg|g|pcs|pc|p)"
+                            r"|\d+\.\d+|\d{1,2}")
+QUALIFIER_SPLIT = re.compile(r"[^0-9A-Za-z.\-]+")
+QUALIFIER_NAME_EXCEPTIONS = {   # the maker's own name is made of such words
+    "part/losi/LOS-3986",   # "Lower Side Set, Black" (horizonhobby.com)
+    "part/schumacher/G331L", "part/schumacher/G331M",   # "T Blue - Large": a T-shirt (Schumacher's spares list)
+}
+
+def qualifier_only_name(name, number=None, category=None):
+    """True when name is qualifier words (QUALIFIER_WORDS, single letters) and sizes only, with one word at least,
+    and is not the number; a paint (named by its colour) or a body (by its model) never."""
+    if not isinstance(name, str) or category in ("paint", "body"):
+        return False
+    if isinstance(number, (str, int)) and not isinstance(number, bool) and name.strip().lower() == str(number).strip().lower():
+        return False
+    if any(c.isalpha() and ord(c) > 127 and c not in "\u00d8\u00f8" for c in name):
+        return False
+    words = 0
+    for tok in QUALIFIER_SPLIT.split(name):
+        tok = tok.strip(".-")
+        if not tok:
+            continue
+        if tok.replace("-", "").isalpha():
+            if len(tok) == 1 or tok.lower() in QUALIFIER_WORDS:
+                words += 1
+                continue
+            return False
+        if not QUALIFIER_SIZE.fullmatch(tok):
+            return False
+    return words > 0
+
+def check_qualifier_names(docs, errors):
+    """A part's name is not qualifiers only: it names the part, or the part keeps its number (docs/schema.md "part")."""
+    for path, kind, d in docs:
+        if kind != "part" or d.get("id") in QUALIFIER_NAME_EXCEPTIONS:
+            continue
+        name, cat = d.get("name"), d.get("category")
+        if qualifier_only_name(name, d.get("number"), cat if isinstance(cat, str) else None):
+            errors.append(f"{path}: name {name!r} is only qualifiers (a side, colour, hardness, size or set) with no noun; "
+                          f"write the full name a source prints, or the number (docs/schema.md \"part\")")
+
 # A pack count, a set or part number and punctuation are not part of a name (former_names_problems)
 NAME_COUNT = re.compile(r"\(\s*\d+\s*(?:pcs?\.?|pieces?|ea)?\s*\)|\b\d+\s*(?:pcs?\.?|pieces?|ea)\b|(?<![a-z0-9])x\d+\b", re.I)
 NAME_NUMBER = re.compile(r"\b\d{5,}\b")
@@ -1797,6 +1851,7 @@ def main():
     check_plugs(docs, ids, errors)
     check_receiver_plugs(docs, ids, errors)
     check_names_no_brand(docs, errors)
+    check_qualifier_names(docs, errors)
     check_former_names(docs, errors)
     check_part_category(docs, errors)
     check_release_twins(docs, ids, errors)
