@@ -35,6 +35,33 @@ class LastCommitDates(unittest.TestCase):
         self.assertEqual(got["data/parts/b/AB/AA1.toml"], "2026-01-01")   # a pure move is no change
         self.assertEqual(got["data/parts/b/BB/BB1.toml"], "2026-02-01")
 
+    def test_content_dates_skip_bookkeeping(self):
+        old = os.getcwd()
+        with tempfile.TemporaryDirectory() as tmp:
+            os.chdir(tmp)
+            try:
+                self.git("init", "-q")
+                self.write("data/parts/b/AA/AA1.toml", "id = 'x'\nname = 'Arm'\nfits = [{ kit = 'kit/b/k', type = 'direct' }]\n")
+                self.write("data/parts/b/AA/AA2.toml", "id = 'y'\nname = 'Hub'\n")
+                self.git("add", "-A"); self.git("commit", "-qm", "a", when="2026-01-01T12:00:00+00:00")
+                # bookkeeping only: a seen_by bound, a name_source, a source on a fits row
+                self.write("data/parts/b/AA/AA1.toml", "id = 'x'\nname = 'Arm'\nname_source = 'manual'\nseen_by = '2019-03'\n"
+                           "seen_by_source = 'https://web.archive.org/web/2019/x'\nfits = [{ kit = 'kit/b/k', type = 'direct', source = 'doc/b/list' }]\n")
+                # content: a new name
+                self.write("data/parts/b/AA/AA2.toml", "id = 'y'\nname = 'Front hub'\nsources = { name = 'https://maker.example/y' }\n")
+                self.git("add", "-A"); self.git("commit", "-qm", "b", when="2026-02-01T12:00:00+00:00")
+                dates, changed = export.history()
+            finally:
+                os.chdir(old)
+        self.assertEqual(dates["data/parts/b/AA/AA1.toml"], "2026-02-01")
+        self.assertEqual(changed["data/parts/b/AA/AA1.toml"], "2026-01-01")   # nothing shown changed
+        self.assertEqual(changed["data/parts/b/AA/AA2.toml"], "2026-02-01")
+
+    def test_content_of_drops_bookkeeping_at_any_depth(self):
+        got = export.content_of({"name": "Arm", "pack_qty": 2, "pack_qty_basis": "name", "former_ids": ["part/b/old"],
+                                 "contains": [{"part": "part/b/1", "role": "kit", "source": "doc/b/m", "listed_in": ["doc/b/s"]}]})
+        self.assertEqual(got, {"name": "Arm", "pack_qty": 2, "contains": [{"part": "part/b/1", "role": "kit"}]})
+
 
 if __name__ == "__main__":
     unittest.main()

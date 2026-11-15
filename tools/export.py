@@ -16,6 +16,12 @@ sitemap's <lastmod>. Renames are followed: a pure move keeps the date of the
 content, a move with edits counts as a change. Left out when the repo has no
 usable history (not a git checkout, or a shallow one: CI must fetch it all).
 
+`content_modified` is the same for the record's content only: the last commit
+that changed a field other than bookkeeping (BOOKKEEPING below: where a value
+came from, former ids, the seen_by bound; at any depth, so a fits row that
+only gains a `source` is no change), or its art file. It is written only
+where it differs from `modified`; the site's sitemap <lastmod> reads it.
+
 Run from the repo root: python3 -I tools/export.py [out.json]
 """
 import datetime, json, os, subprocess, sys, tomllib
@@ -33,41 +39,91 @@ def art_of(entity_id):
     root = ET.parse(path).getroot()
     return " ".join(" ".join(p.get("d", "").split()) for p in root.iter("{http://www.w3.org/2000/svg}path")) or None
 
+# Fields that record how a value was found, not what the record says: changes to them alone leave
+# `content_modified` as it was. Also every key ending in _source or _basis (name_source, pack_qty_basis).
+BOOKKEEPING = {"sources", "source", "listed_in", "basis", "former_ids", "seen_by", "seen_by_source", "reported_by", "ocr_names"}
+
+def is_bookkeeping(key):
+    return key in BOOKKEEPING or key.endswith("_source") or key.endswith("_basis")
+
+def content_of(value):
+    """The value with every bookkeeping key removed, at any depth (tables in lists included)."""
+    if isinstance(value, dict):
+        return {k: content_of(v) for k, v in value.items() if not is_bookkeeping(k)}
+    if isinstance(value, list):
+        return [content_of(v) for v in value]
+    return value
+
 def last_commit_dates():
-    """{path: UTC date of the last commit touching it} for data/ and art/, from one pass over
-    the history, newest first. A pure rename (R100) hands the old path's earlier commits to the
-    new path; a rename with edits is a change dated at that commit. None without usable history."""
+    """{path: UTC date of the last commit touching it}; see history()."""
+    got = history()
+    return got and got[0]
+
+def history():
+    """({path: UTC date of the last commit touching it}, {toml path: UTC date of the last commit that
+    changed its content}) for data/ and art/, from one pass over the history, newest first, or None
+    without usable history. A pure rename (R100) hands the old path's earlier commits to the new
+    path; a rename with edits is a change dated at that commit. Content dates compare each commit's
+    old and new blob of a file (git cat-file) until the first one whose content_of differs."""
     git = ["git", "-c", "core.quotepath=off"]
     try:
         if subprocess.run(git + ["rev-parse", "--is-shallow-repository"], capture_output=True, text=True, check=True).stdout.strip() != "false":
             return None
-        log = subprocess.run(git + ["log", "-M", "--name-status", "--format=C %ct", "--", "data", "art"],
-                             capture_output=True, text=True, check=True).stdout
     except (OSError, subprocess.CalledProcessError):
         return None
-    dates, alias, when = {}, {}, 0
+    log = subprocess.Popen(git + ["log", "-M", "--raw", "--no-abbrev", "--format=C %ct", "--", "data", "art"], stdout=subprocess.PIPE, text=True)
+    cat = subprocess.Popen(git + ["cat-file", "--batch"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    none = "0" * 40
+    def content(sha):
+        if sha == none:
+            return None
+        cat.stdin.write(sha.encode() + b"\n"); cat.stdin.flush()
+        size = int(cat.stdout.readline().split()[2])
+        data = cat.stdout.read(size); cat.stdout.read(1)
+        try:
+            return content_of(tomllib.loads(data.decode("utf-8")))
+        except (UnicodeDecodeError, tomllib.TOMLDecodeError):
+            return data   # an unreadable version: compared as bytes
+    dates, changed, alias, when = {}, {}, {}, 0
     def canon(path):
         while path in alias:
             path = alias[path]
         return path
-    for line in log.splitlines():
-        if line.startswith("C "):
-            when = int(line[2:])
-        elif line.startswith("R"):
-            _, old, new = line.split("\t")
-            new = canon(new)
-            if not line.startswith("R100"):
-                dates.setdefault(new, when)
-            alias[old] = new
-        elif line and line[0] in "AMT":
-            dates.setdefault(canon(line.split("\t", 1)[1]), when)
-    return {p: datetime.datetime.fromtimestamp(t, datetime.timezone.utc).date().isoformat() for p, t in dates.items()}
+    try:
+        for line in log.stdout:
+            if line.startswith("C "):
+                when = int(line[2:])
+                continue
+            if not line.startswith(":"):
+                continue
+            meta, *paths = line.rstrip("\n").split("\t")
+            _, _, old, new, status = meta.split()
+            if status[0] == "R":
+                path = canon(paths[1])
+                alias[paths[0]] = path
+                if status == "R100":
+                    continue
+            elif status[0] in "AMT":
+                path = canon(paths[0])
+            else:
+                continue
+            dates.setdefault(path, when)
+            if path.endswith(".toml") and path not in changed and (old == none or content(old) != content(new)):
+                changed[path] = when
+    finally:
+        cat.stdin.close(); cat.wait()
+        log.stdout.close()
+    if log.wait() != 0:
+        raise RuntimeError("git log failed")
+    day = lambda t: datetime.datetime.fromtimestamp(t, datetime.timezone.utc).date().isoformat()
+    return {p: day(t) for p, t in dates.items()}, {p: day(t) for p, t in changed.items()}
 
 def build_document():
     """The export as a dict (run from the repository root): every record under data/ by type,
     plus `retired`. tools/export_release.py writes the same dict for the release files."""
     doc = {"schema_version": 0, "dataset": "rc", "generated": datetime.date.today().isoformat()}
-    dates = last_commit_dates()
+    got = history()
+    dates, changed = got or (None, None)
     if dates is None:
         print("no usable git history: records get no `modified`", file=sys.stderr)
     for folder in KINDS:
@@ -86,6 +142,10 @@ def build_document():
                         stamps = [dates[x] for x in (d["toml_path"], art_path(d["id"]) if KINDS[folder] in ART_KINDS else None) if x in dates]
                         if stamps:
                             d["modified"] = max(stamps)
+                        art = [dates[x] for x in (art_path(d["id"]) if KINDS[folder] in ART_KINDS else None,) if x in dates]
+                        shown = max([changed[d["toml_path"]]] + art) if d["toml_path"] in changed else None
+                        if shown and shown != d.get("modified"):
+                            d["content_modified"] = shown
                     items.append(d)
         items.sort(key=lambda d: d["id"])
         doc[folder] = items
@@ -101,7 +161,8 @@ def main():
         json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
     arts = sum("art" in d for k in KINDS for d in doc[k])
     mods = sum("modified" in d for k in KINDS for d in doc[k])
-    print(out, ", ".join(f"{k}={len(doc[k])}" for k in KINDS), f"art={arts}", f"modified={mods}", f"{os.path.getsize(out)/1e6:.1f} MB")
+    older = sum("content_modified" in d for k in KINDS for d in doc[k])
+    print(out, ", ".join(f"{k}={len(doc[k])}" for k in KINDS), f"art={arts}", f"modified={mods}", f"content_modified={older}", f"{os.path.getsize(out)/1e6:.1f} MB")
 
 if __name__ == "__main__":
     main()
