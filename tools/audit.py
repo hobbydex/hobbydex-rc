@@ -44,10 +44,31 @@ NON_ENGLISH = re.compile(r"(?<![A-Za-z])(het|een|voor|met|handleiding|nieuwe|nie
 FIX_PAGE = "add the maker's product page as a document (kind product_page, page = the maker's URL) and list it in the release's documents"
 
 
+# the folders every real data checkout has records in: an empty one is a wrong or half-present checkout, never "no holes"
+REQUIRED_FOLDERS = ("brands", "kits", "releases", "parts", "documents")
+
+
+def _raise(err):
+    raise err
+
+
+def walk(top):
+    """os.walk that fails on a folder it cannot list (os.walk skips it silently). A top folder that does not exist is
+    empty, as before; any other error, at the top or below it, raises."""
+    if not os.path.isdir(top):
+        if os.path.lexists(top):
+            raise NotADirectoryError(f"{top}: not a folder")
+        return iter(())
+    return os.walk(top, onerror=_raise)
+
+
 def load(root):
+    data = os.path.join(root, "data")
+    if not os.path.isdir(data):
+        raise SystemExit(f"audit: {data} is not a folder: --rc (or HOBBYDEX_RC) must name a data checkout")
     db = collections.defaultdict(list)
     for folder in ("brands", "kits", "releases", "parts", "documents", "specs", "categories", "companies", "makes", "standards"):
-        for dp, _, fs in os.walk(os.path.join(root, "data", folder)):
+        for dp, _, fs in walk(os.path.join(data, folder)):
             for fn in sorted(fs):
                 if fn.endswith(".toml"):
                     path = os.path.join(dp, fn)
@@ -55,6 +76,10 @@ def load(root):
                         d = tomllib.load(f)
                     d["_path"] = os.path.relpath(path, root)
                     db[folder].append(d)
+    empty = [f for f in REQUIRED_FOLDERS if not db[f]]
+    if empty:
+        raise SystemExit(f"audit: no records in data/{', data/'.join(empty)} of {root}: a wrong or half-present data "
+                         f"checkout, not one without holes")
     return db
 
 
@@ -1278,7 +1303,7 @@ def main():
             pdf_dirs += [os.path.join(notes, b, "pdf") for b in sorted(os.listdir(notes)) if os.path.isdir(os.path.join(notes, b, "pdf"))]
         cached = []
         for top in pdf_dirs:
-            for dp, _, fs in os.walk(top):
+            for dp, _, fs in walk(top):
                 for fn in fs:
                     if fn.lower().endswith(".pdf"):
                         cached.append(os.path.relpath(os.path.join(dp, fn), tools["cache"]))
@@ -1679,7 +1704,7 @@ def main():
     orphans = []
     for sub, kind in (("kits", "kit"), ("releases", "release"), ("parts", "part")):
         base = os.path.join(art_dir, sub)
-        for dp, _, fs in os.walk(base):
+        for dp, _, fs in walk(base):
             for fn in fs:
                 if fn.endswith(".svg"):
                     rel = os.path.relpath(os.path.join(dp, fn), base)[:-4]
