@@ -12,7 +12,7 @@ fix. The full list of one check: --list NAME. JSON for scripts: --json FILE.
 
 Exit code 0 always: this is a to-do list. Runs in well under five minutes.
 """
-import argparse, atexit, collections, csv, glob, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
+import argparse, atexit, collections, csv, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
 
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -557,7 +557,6 @@ def load_linker_drift(tools):
     return [(r[0], int(r[1])) for r in rows if len(r) >= 2 and r[1].isdigit()]
 
 
-DERIVE_STALE_DAYS = 2   # the daily derive must have landed a PR within this many days
 
 
 CHILD_TIMEOUT = 3600   # seconds a tool the audit runs may take; past it the check says "child timed out" and the audit goes on.
@@ -573,37 +572,6 @@ def run_child(args, timeout=CHILD_TIMEOUT, **kw):
         names = [os.path.basename(a) for a in args if a.endswith(".py")]
         print(f"child timed out after {timeout} s: {' '.join(names)}", file=sys.stderr)
         return None
-
-
-def last_derive_landed(rc, tools):
-    """The newest day a derive landed, "YYYY-MM-DD", or None when neither source knows one: the committer date of the
-    newest commit on HEAD whose subject starts "Derived fields" (a merged derive PR; the squash commit keeps the title), and
-    the local loop's status field derive.last_derive_landed (hobbydex-tools cache/local_loop_status.json, set when the
-    loop sees its derive PR MERGED). The later of the two."""
-    days = []
-    try:
-        p = subprocess.run(["git", "-C", rc, "log", "-1", "--format=%cs", "--grep=^Derived fields"], capture_output=True, text=True, timeout=60)
-        if p.returncode == 0 and p.stdout.strip():
-            days.append(p.stdout.strip())
-    except (OSError, subprocess.TimeoutExpired):
-        pass
-    try:
-        with open(os.path.join(tools, "cache", "local_loop_status.json"), encoding="utf-8") as f:
-            d = (json.load(f).get("derive") or {}).get("last_derive_landed")
-        if isinstance(d, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", d[:10]):
-            days.append(d[:10])
-    except (OSError, ValueError, AttributeError):
-        pass
-    return max(days) if days else None
-
-
-def derive_not_landed(last, today, stale=DERIVE_STALE_DAYS):
-    """["derive: last landed <day> (<n> days ago)"] when no derive PR landed in the last `stale` days (today is a datetime.date), else []."""
-    import datetime
-    if last is None:
-        return [f"derive: no landed derive PR found (none in the git log, no last_derive_landed in the loop status)"]
-    age = (today - datetime.date.fromisoformat(last)).days
-    return [f"derive: last landed {last} ({age} days ago)"] if age > stale else []
 
 
 def linkers_that_would_change(drift):
@@ -1460,13 +1428,6 @@ def main():
     else:
         results["linker-would-change"] = {"fix": "hobbydex-tools cache/notes/linker-drift.tsv not found (written by the daily derive)", "count": None, "examples": [], "all": []}
 
-    # 9d. the daily derive must land: a merged "Derived fields" PR within 2 days (tools/local_loop.py derive step; status field last_derive_landed)
-    import datetime
-    stale = derive_not_landed(last_derive_landed(RC, os.path.abspath(args.tools)), datetime.date.today())
-    check("derive-not-landed", "no derive PR merged in 2 days: read the loop status (cache/local_loop_status.json derive: merge, error, branch) and the loop log in hobbydex-tools; fix the cause (validate or regression_check failure, rebase conflict, linker crash) so the daily derive lands",
-          stale)
-    results["derive-not-landed"]["examples"] = [{"id": d, "url": ""} for d in stale[:args.examples]]
-
     # 10. copyright-year release years
     check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",
           [r for r in rels if r.get("year") and not r.get("released") and re.search(r"copyright|\(c\)|©", r.get("notes", ""), re.I)])
@@ -1501,8 +1462,8 @@ def main():
     else:
         results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
 
-    # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color and hw-no-material are
-    # counted by the Rust audit only
+    # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
+    # derive-not-landed and tmp-inodes are counted by the Rust audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
@@ -2121,9 +2082,6 @@ def main():
     results["electronics-field-rare"]["all"] = [f"{cat} {f}: {n} of {of} parts ({100 * n / of:.1f}%)" for cat, f, n, of in rare]
     results["electronics-field-rare"]["examples"] = []   # the rows are printed in full under the summary line
 
-    st = os.statvfs("/tmp")
-    used = 100 * (st.f_files - st.f_ffree) / st.f_files if st.f_files else 0.0
-    scratch = sorted(((sum(len(fs) for _, _, fs in os.walk(sp)), sp) for sp in glob.glob(f"/tmp/claude-{os.getuid()}/*/*/scratchpad")), reverse=True)
     # kits no release names, with a page of the maker's site that names the car (tools/parts_only_leads.py in hobbydex-tools writes the leads)
     leads_tsv = os.path.join(os.path.abspath(args.tools), "cache", "notes", "parts-only-leads.tsv")
     open_leads = set()
@@ -2135,10 +2093,6 @@ def main():
                     open_leads.add(kid)
     check("parts-only-lead", "a page of the maker's site names this car (cache/notes/parts-only-leads.tsv: kit, brand, url, why): have the brand's importer read the page and add the release, with its manual and parts list",
           sorted(open_leads))
-    check("tmp-inodes", "/tmp is above 50% of its inodes: delete the scratchpad folders listed (tmpfs; builds and big exports go on disk)",
-          [], count=int(used > 50), detail=f"/tmp inodes {used:.1f}% used ({st.f_files - st.f_ffree} of {st.f_files})")
-    results["tmp-inodes"]["examples"] = [{"id": f"{n} files {sp}", "url": ""} for n, sp in scratch[:args.examples]]
-
     ranked = sorted((n for n in results if results[n]["count"] and not results[n].get("info")), key=lambda n: -results[n]["count"])
     info = [n for n in results if results[n]["count"] and results[n].get("info")]
     skipped = [n for n in results if results[n]["count"] is None]
