@@ -12,7 +12,7 @@ fix. The full list of one check: --list NAME. JSON for scripts: --json FILE.
 
 Exit code 0 always: this is a to-do list. Runs in well under five minutes.
 """
-import argparse, atexit, collections, csv, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
+import argparse, collections, csv, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
 
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -264,40 +264,6 @@ def walk_strings(v):
     elif isinstance(v, list):
         for x in v:
             yield from walk_strings(x)
-
-
-_TARGET = _KEEP = None   # classify_parts.target and its KEEP marker, set by load_tools
-_POOL = None   # forked workers for the classifier, started by load_tools (before the records are loaded)
-
-
-def _category_of(p):
-    """What tools/classify_parts.py writes for part p: a category, "" for none, or "keep" (its category stays)."""
-    c = _TARGET(p)
-    return "keep" if c is _KEEP else (c or "")
-
-
-def workers():
-    """Pool size: 4 by default (the owner's PC must stay usable); HOBBYDEX_WORKERS overrides it."""
-    return max(1, int(os.environ.get("HOBBYDEX_WORKERS") or min(4, os.cpu_count() or 1)))
-
-
-def start_classify_pool():
-    """Forked workers for _category_of. Forked before the records are loaded: a worker forked after the
-    ~1 GB of records copies the pages its refcounts touch, and eight of them took the audit past 6 GB."""
-    global _POOL
-    try:
-        import multiprocessing as mp
-        _POOL = mp.get_context("fork").Pool(workers())
-        atexit.register(_POOL.close)
-    except (ValueError, OSError):   # no fork here: the classifier runs in this process
-        _POOL = None
-
-
-def classify_all(parts):
-    """_category_of over the parts in the workers (one process takes about a minute on the full data)."""
-    if _POOL is None:
-        return [_category_of(p) for p in parts]
-    return _POOL.map(_category_of, parts, chunksize=4000)
 
 
 def near_local(a, b):
@@ -575,8 +541,8 @@ def check_spans(tools, environ=None):
 
 
 def load_tools(tools):
-    """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "cache": None, "near": None, "tamico": None, "with_fasteners": None, "fastener_cats": None, "english_table": None}
+    """The modules and cache files of hobbydex-tools the Python checks read (None when absent)."""
+    out = {"cache": None, "near": None, "english_table": None}
     english = os.path.join(tools, "tools", "data", "english_variants.toml")
     if os.path.isfile(english):
         out["english_table"] = english
@@ -619,23 +585,6 @@ def load_tools(tools):
                 print(f"note: {mname} not loaded ({e})", file=sys.stderr)
             finally:
                 sys.path.remove(tdir)
-    cls = os.path.join(tools, "tools", "classify_parts.py")
-    if os.path.exists(cls):
-        spec = importlib.util.spec_from_file_location("classify_parts", cls)
-        mod = importlib.util.module_from_spec(spec)
-        sys.path.insert(0, HERE)   # classify_parts imports layout.py from the data repo
-        try:
-            spec.loader.exec_module(mod)
-            out["classify"] = mod.classify
-            out["with_fasteners"] = mod.with_fasteners
-            out["fastener_cats"] = mod.FASTENER_CATS
-            global _TARGET, _KEEP
-            _TARGET, _KEEP = mod.target, mod.KEEP
-            start_classify_pool()
-        except Exception as e:  # the audit still runs without it
-            print(f"note: classifier not loaded ({e})", file=sys.stderr)
-        finally:
-            sys.path.remove(HERE)
     ocr = os.path.join(tools, "tools", "ocr_numbers.py")
     if os.path.exists(ocr):
         spec = importlib.util.spec_from_file_location("ocr_numbers", ocr)
@@ -648,9 +597,6 @@ def load_tools(tools):
             print(f"note: ocr_numbers not loaded ({e})", file=sys.stderr)
         finally:
             sys.path.remove(os.path.dirname(ocr))
-    tamico = os.path.join(tools, "cache", "notes", "tamiya", "tamico-names.tsv")
-    if os.path.exists(tamico):
-        out["tamico"] = tamico
     out["text_layer"] = os.path.join(tools, "cache", "notes", "tamiya", "text-layer-numbers.tsv")
     out["gtin_holes"] = load_gtin_holes(tools)
     out["linker_drift"] = load_linker_drift(tools)
@@ -1312,40 +1258,10 @@ def main():
     check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",
           [r for r in rels if r.get("year") and not r.get("released") and re.search(r"copyright|\(c\)|©", r.get("notes", ""), re.I)])
 
-    # 11. classifier drift: stored category vs classify(name)
-    if tools["classify"]:
-        moves = collections.Counter()
-        drift = collections.defaultdict(list)
-        cands = [p for p in parts if not (p.get("category_source") == "curated" or p["name"] == (p.get("number") or ""))]
-        for p, new in zip(cands, classify_all(cands)):   # the classifier's own target(), as the run writes it
-            if new == "keep":
-                continue
-            new = new or None
-            old = p.get("category")
-            if new != old:
-                key = f"{old or '(none)'} -> {new or '(none)'}"
-                moves[key] += 1
-                drift[key].append(p)
-        flat = [p for v in drift.values() for p in v]
-        check("classifier-drift", "rerun tools/classify_parts.py in hobbydex-tools (the rules changed or the stored category is stale)", flat,
-              transitions=moves.most_common(10))
-    else:
-        results["classifier-drift"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
-
-    # 11b. a part that comes with screws, nuts or washers is the part: its category comes from the name before the fasteners
-    if tools["with_fasteners"]:
-        def part_before_fasteners(p):
-            thing = tools["with_fasteners"](p["name"])
-            return bool(thing) and p.get("category") in tools["fastener_cats"] and tools["classify"](thing) not in (None, "", *tools["fastener_cats"])
-        check("with-fasteners-category", "a part that comes with screws, nuts or washers takes the category of the part (rerun tools/classify_parts.py in hobbydex-tools; a curated category is set by hand: the part, not screw)",
-              [p for p in parts if part_before_fasteners(p)])
-    else:
-        results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
-
     # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
     # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record,
-    # art-missing-photo, pack-photo-disagrees, pack-wrong-photo and pack-photo-brand-below-bar are counted by the Rust
-    # audit only
+    # art-missing-photo, pack-photo-disagrees, pack-wrong-photo, pack-photo-brand-below-bar, classifier-drift,
+    # with-fasteners-category and ocr-kind-vs-dealer are counted by the Rust audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
@@ -1762,19 +1678,6 @@ def main():
     shop = [p for p in parts if ns is not None and ns.has_shop_text(p.get("name", "") or "")]
     check("name-shop-text", "strip the shop's price, stock or button text from the name (tools/name_shop.py clean; the maker's name is what is left)",
           shop, per_brand=per_brand(shop))
-
-    if tools["tamico"] and tools["classify"]:
-        cls = tools["classify"]
-        dealer = collections.defaultdict(set)   # part id -> kinds the dealer's German or English name gives
-        with open(tools["tamico"], encoding="utf-8") as f:
-            for row in csv.DictReader(f, delimiter="\t"):
-                kind = cls(row["tamico_name"])
-                if kind:
-                    dealer[row["part"]].add(kind)
-        clash = [p for p in parts if p["id"] in dealer and p.get("name_source") == "ocr" and p.get("category")
-                 and any(k != p["category"] for k in dealer[p["id"]])]
-        check("ocr-kind-vs-dealer", "compare the part's category with the dealer's name: fix the category, or the OCR name if the scan misread it",
-              clash, per_brand=per_brand(clash))
 
     near = tools["near"] or near_local
     by_name = collections.defaultdict(list)   # (brand, name) of OCR-named parts -> parts
