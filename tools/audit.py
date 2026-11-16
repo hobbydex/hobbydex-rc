@@ -20,7 +20,6 @@ RC = os.path.dirname(HERE)
 YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
 HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal", "turnbuckle", "rod-end"}   # hardware part categories
 NO_SIZE_SPEC = {"turnbuckle", "rod-end"}   # hardware with no spec kind of their own: no size spec to link
-MAT_CATS = {"pinion", "spur-gear", "screw", "nut", "washer-shim", "pin", "bearing"}          # metal hardware: material from the name or the maker's page
 SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
 SIZE = re.compile(r"\bM\d+(?:\.\d+)?\b|\b\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?(?:\s*x\s*\d+(?:\.\d+)?)?\s*(?:mm)?\b|\b\d+(?:\.\d+)?\s*mm\b", re.I)
 PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
@@ -668,22 +667,10 @@ def check_spans(tools, environ=None):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "with_fasteners": None, "fastener_cats": None, "material": None, "english_table": None}
+    out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "with_fasteners": None, "fastener_cats": None, "english_table": None}
     english = os.path.join(tools, "tools", "data", "english_variants.toml")
     if os.path.isfile(english):
         out["english_table"] = english
-    lpm = os.path.join(tools, "tools", "link_part_material.py")
-    if os.path.exists(lpm):   # its decide() is the rule the material linker writes by: a flag is a value it would set
-        spec = importlib.util.spec_from_file_location("link_part_material", lpm)
-        mod = importlib.util.module_from_spec(spec)
-        sys.path.insert(0, os.path.dirname(lpm))
-        try:
-            spec.loader.exec_module(mod)
-            out["material"] = mod
-        except Exception as e:  # the check is skipped without it
-            print(f"note: link_part_material not loaded ({e})", file=sys.stderr)
-        finally:
-            sys.path.remove(os.path.dirname(lpm))
     out["doc_links"] = None   # the holds and pairs of tools/sync_doc_links.py: one definition for both
     dlp = os.path.join(tools, "tools", "sync_doc_links.py")
     if os.path.exists(dlp):
@@ -723,18 +710,6 @@ def load_tools(tools):
                 print(f"note: {mname} not loaded ({e})", file=sys.stderr)
             finally:
                 sys.path.remove(tdir)
-    lpc = os.path.join(tools, "tools", "link_part_colours.py")
-    if os.path.exists(lpc):   # the colour a part's name states (tools/link_part_colours.py colour())
-        spec = importlib.util.spec_from_file_location("link_part_colours", lpc)
-        mod = importlib.util.module_from_spec(spec)
-        sys.path.insert(0, os.path.join(tools, "tools"))
-        try:
-            spec.loader.exec_module(mod)
-            out["colour"] = mod.colour
-        except Exception as e:
-            print(f"note: colour linker not loaded ({e})", file=sys.stderr)
-        finally:
-            sys.path.remove(os.path.join(tools, "tools"))
     # the screw and ball-end linkers' own reasons (tools/link_screw_specs.py plan, tools/link_ball_end_specs.py parse): a
     # part with a reason is one no spec kind holds, so it is not a gap for hw-size-no-spec
     out["screw_plan"] = None
@@ -1526,19 +1501,12 @@ def main():
     else:
         results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
 
-    # multi-item-whole-part, name-count-no-pack-qty and name-callout-or-count are counted by the Rust audit only
+    # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color and hw-no-material are
+    # counted by the Rust audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
           [p for p in parts if p.get("category_source") == "fallback"])
-
-    # 11c. a colour word in the name that the part has no color for (tools/link_part_colours.py)
-    if tools["colour"]:
-        colour = tools["colour"]
-        check("colour-word-no-color", "run tools/link_part_colours.py in hobbydex-tools (or the word is a product name: add it to its PRODUCT list)",
-              [p for p in parts if not p.get("color") and p.get("category") != "paint" and not str(p.get("range", "")).endswith("-colours") and colour(p["name"])])
-    else:
-        results["colour-word-no-color"] = {"fix": "hobbydex-tools link_part_colours.py not found (--tools)", "count": None, "examples": [], "all": []}
 
     # 12. releases named only by their number
     # a release whose name is a model code is fine when the maker's own page for it names the code as its title:
@@ -1881,22 +1849,6 @@ def main():
                   and any("socket-cap" in e.get("spec", "") for e in p.get("equivalent_to", []))]
     check("tamiya-hex-head-socket", "link the Tamiya hex head screw to its spec/screw/*-hex-jis* (head hex, JIS cross recess), not to a socket cap",
           tamiya_hex)
-
-    # metal hardware whose name or cached maker page states a material the data lacks (tools/link_part_material.py's rule)
-    lpm = tools.get("material")
-    if lpm:
-        # the brand's page index is built for its own parts and dropped with them (one brand at a time)
-        stated_ids = set()
-        for brand_parts in by_brand(parts):
-            idxs = {}
-            for p in brand_parts:
-                if p.get("category") in MAT_CATS and p.get("material") in (None, "unknown"):
-                    upd, _, _ = lpm.decide(p, brands.get(p.get("brand"), {}), idxs)
-                    if upd.get("material"):
-                        stated_ids.add(id(p))
-        stated = [p for p in parts if id(p) in stated_ids]
-        check("hw-no-material", "run tools/link_part_material.py in hobbydex-tools (it sets the material the name or the maker's page states, and reports the conflicts)",
-              stated, per_brand=per_brand(stated))
 
     # 29b. hardware (any brand) whose cached product photo is not read yet for its colour or its piece count
     unread = hw_photo_unread(tools["hwphoto"], parts) if tools["hwphoto"] else []
