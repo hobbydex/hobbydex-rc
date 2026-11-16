@@ -6,10 +6,11 @@ category = "screw"
 category_source = "curated"
 links = [
   { site = "ScaleART", url = "https://scaleart-shop.de/en-de/products/senkkopfschraube-m3x6-din965-25-stueck" },
+  { site = "ScaleART", url = "https://www.scaleart-shop.de/products/senkkopfschraube-m3x6-din965-25-stueck" },
 ]
 documents = ["doc/scaleart/scaleart-shop"]
 equivalent_to = [
-  { spec = "spec/screw/m3x6-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+  { spec = "spec/screw/m3x6-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand", source = "doc/scaleart/scaleart-shop" },
 ]
 color = "silver"
 notes = "Colour read from the maker's product photo."
