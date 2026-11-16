@@ -651,6 +651,32 @@ def not_specable(p, screw_reason, ball_reason):
     return None
 
 
+def check_spans(tools, environ=None):
+    """A recorder of the checks as spans (hobbydex-tools docs/observability.md, Traces): each check() call ends the
+    span "check <name>" that began where the previous one ended (the work between two checks is the next check's),
+    under the span TRACEPARENT names (the audit job's "python audit" part). None without TRACEPARENT or tools/otel.py:
+    then nothing is recorded."""
+    e = os.environ if environ is None else environ
+    m = re.fullmatch(r"[0-9a-f]{2}-([0-9a-f]{32})-([0-9a-f]{16})-[0-9a-f]{2}", (e.get("TRACEPARENT") or "").strip())
+    path = os.path.join(tools, "tools", "otel.py")
+    if not m or not os.path.isfile(path):
+        return None
+    spec = importlib.util.spec_from_file_location("otel", path)
+    otel = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(otel)
+    import secrets, time
+    trace, parent = m.group(1), m.group(2)
+    last = [time.time()]
+
+    def record(name, count):
+        now = time.time()
+        otel.span(trace, secrets.token_hex(8), parent, f"check {name}", last[0], now, {"check": name, "count": count},
+                  service="hobbydex-audit")
+        last[0] = now
+    record.otel = otel   # the module that sends them (tests read what it was given)
+    return record
+
+
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
     out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None, "english_table": None}
@@ -1196,12 +1222,15 @@ def main():
             doc_rels[dd].add(r["id"])
     horizon = {b["id"] for b in brands.values() if b.get("owner") == "company/horizon-hobby"}
     results = {}
+    spans = check_spans(os.path.abspath(args.tools))
 
     def check(name, fix, items, count=None, **extra):
         """items: a list of records (or ids) flagged; count defaults to len(items)."""
         ids = [x if isinstance(x, str) else x["id"] for x in items]
         recs = [{"id": i, "url": url_for(by_id.get(i, {"id": i}))} for i in sorted(set(ids))]
         results[name] = {"fix": fix, "count": len(set(ids)) if count is None else count, "examples": recs[:args.examples], "all": sorted(set(ids)), **extra}
+        if spans:
+            spans(name, results[name]["count"])
 
     # 1. platforms named after a year that is later than one of their releases
     def oldest(k):
