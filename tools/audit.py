@@ -19,7 +19,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(HERE)
 YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
 HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal", "turnbuckle", "rod-end"}   # hardware part categories
-SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
 PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
 CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
 BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re.I)
@@ -964,7 +963,7 @@ def spec_mismatches(parts):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--tools", default=os.path.join(RC, "..", "hobbydex-tools"))
-    ap.add_argument("--site", default=os.path.join(RC, "..", "hobbydex"), help="the site checkout (its hardware drawings)")
+    ap.add_argument("--site", default=os.path.join(RC, "..", "hobbydex"), help="the site checkout (unused here: spec-no-bag-drawing, which reads its hardware drawings, is the Rust audit's; the daily job passes it to both)")
     ap.add_argument("--list", metavar="CHECK", help="every id one check flags")
     ap.add_argument("--json", metavar="FILE", help="write the full result as JSON")
     ap.add_argument("--examples", type=int, default=5)
@@ -1261,7 +1260,7 @@ def main():
     # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
     # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record,
     # art-missing-photo, pack-photo-disagrees, pack-wrong-photo, pack-photo-brand-below-bar, classifier-drift,
-    # with-fasteners-category and ocr-kind-vs-dealer are counted by the Rust audit only
+    # with-fasteners-category, ocr-kind-vs-dealer and spec-no-bag-drawing are counted by the Rust audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
@@ -1644,36 +1643,6 @@ def main():
     check("pack-qty-is-pitch", "the count is the pitch: set pack_qty from the maker's listing or the bag (the pitch stays in pitch_dp), or unset it; a gear set whose name carries a count is not read",
           [p for p, _ in pitch_count])
     results["pack-qty-is-pitch"]["examples"] = [{"id": f"{p['id']} ({why})", "url": url_for(p)} for p, why in pitch_count[:args.examples]]
-    idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
-    if os.path.exists(idx_path):
-        with open(idx_path, encoding="utf-8") as f:
-            drawn = set(json.load(f))
-        spec_links = collections.defaultdict(set)   # spec id -> parts that link to it
-        for p in parts:
-            for e in p.get("equivalent_to", []):
-                if e.get("spec"):
-                    spec_links[e["spec"]].add(p["id"])
-            for i in p.get("includes", []):
-                if i.get("spec"):
-                    spec_links[i["spec"]].add(p["id"])
-        undrawn = []
-        for s in db["specs"]:
-            if s.get("category") not in SPEC_CATS:
-                continue
-            key = s["id"].removeprefix("spec/").replace("#", "-")   # hardwareBag.ts: the index key
-            if key not in drawn and key + "-flat" not in drawn:
-                undrawn.append(s)
-        undrawn.sort(key=lambda s: -len(spec_links[s["id"]]))
-        cats = collections.defaultdict(lambda: [0, 0])
-        for s in undrawn:
-            cats[s["category"]][0] += 1
-            cats[s["category"]][1] += len(spec_links[s["id"]])
-        check("spec-no-bag-drawing", "draw the spec's bag drawing (tools/hardware/make_more_drawings.py in hobbydex-tools) so the parts linked to it can show a bag",
-              undrawn, breakdown=("category", [f"{c} {n} specs, {k} parts" for c, (n, k) in sorted(cats.items(), key=lambda kv: -kv[1][1])]))
-        results["spec-no-bag-drawing"]["examples"] = [{"id": f"{s['id']} ({len(spec_links[s['id']])} parts)", "url": SITE + "/rc/"} for s in undrawn[:args.examples]]
-    else:
-        results["spec-no-bag-drawing"] = {"fix": "hobbydex site not found (--site)", "count": None, "examples": [], "all": []}
-
     ns = tools.get("name_shop")
     shop = [p for p in parts if ns is not None and ns.has_shop_text(p.get("name", "") or "")]
     check("name-shop-text", "strip the shop's price, stock or button text from the name (tools/name_shop.py clean; the maker's name is what is left)",
