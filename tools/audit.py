@@ -12,20 +12,15 @@ fix. The full list of one check: --list NAME. JSON for scripts: --json FILE.
 
 Exit code 0 always: this is a to-do list. Runs in well under five minutes.
 """
-import argparse, atexit, collections, csv, glob, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
+import argparse, atexit, collections, csv, importlib.util, json, os, re, subprocess, sys, tempfile, tomllib, urllib.parse
 
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(HERE)
 YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
 HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal", "turnbuckle", "rod-end"}   # hardware part categories
-NO_SIZE_SPEC = {"turnbuckle", "rod-end"}   # hardware with no spec kind of their own: no size spec to link
 SPEC_CATS = {"screw", "nut", "washer", "pin", "eclip", "bearing"}                          # spec categories with a bag drawing
-SIZE = re.compile(r"\bM\d+(?:\.\d+)?\b|\b\d+(?:\.\d+)?\s*x\s*\d+(?:\.\d+)?(?:\s*x\s*\d+(?:\.\d+)?)?\s*(?:mm)?\b|\b\d+(?:\.\d+)?\s*mm\b", re.I)
 PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
-# the screw linker's reasons (link_screw_specs.plan) that no spec kind can hold, and the sub-class each goes to
-NOT_SPECABLE_SCREW = {"drive not stated": "hw-size-screw-no-drive", "tapping": "hw-size-screw-no-drive", "unparsed": "hw-size-screw-unparsed",
-                      "several sizes": "hw-size-screw-not-one-spec", "special": "hw-size-screw-not-one-spec", "silent": "hw-size-screw-not-one-spec"}
 CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
 BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re.I)
 # a tamico.de dealer link (kind = "dealer") is allowed for Tamiya spares without a maker page (tools/link_tamico_spares.py)
@@ -361,14 +356,6 @@ def archive_files(docs, resolve):
     return out
 
 
-def record_gap(matches, excluded):
-    """'record' when a document record matches a cached PDF (by its file, its address or its name), 'gap' when none
-    does, 'left out' when none does and the file is excluded (a safety sheet or notice, a static Tamiya kit)."""
-    if matches:
-        return "record"
-    return "left out" if excluded else "gap"
-
-
 def drop_copies_of_linked(cache, unlinked, linked_files):
     """The unlinked cached files (paths relative to the cache) that are not a byte-identical copy of a linked file of the
     same brand (second path part): same size first, then the SHA-256."""
@@ -505,29 +492,6 @@ def tamiya_static_non_rc(rel_path, tamiya_numbers):
     return any(lo <= int(m.group(1)) <= hi for lo, hi in TAMIYA_STATIC)
 
 
-def load_art_sources(tools):
-    """The art source items of every brand (None when neither directory exists).
-
-    The run-time copy in cache/art/sources wins per brand: the local loop rewrites it. The tracked seed in
-    tools/art/sources is read only for a brand that has no run-time copy yet.
-    """
-    runsrc = os.path.join(tools, "cache", "art", "sources")
-    seedsrc = os.path.join(tools, "tools", "art", "sources")
-    if not (os.path.isdir(seedsrc) or os.path.isdir(runsrc)):
-        return None
-    files = {}
-    for d in (seedsrc, runsrc):   # the run-time copy is read last, so it replaces the seed
-        if os.path.isdir(d):
-            for fn in os.listdir(d):
-                if fn.endswith(".toml"):
-                    files[fn] = os.path.join(d, fn)
-    items = []
-    for fn in sorted(files):
-        with open(files[fn], "rb") as f:
-            items += tomllib.load(f).get("item", [])
-    return items
-
-
 # what the audit says when cache/gtin_sweep_holes.json is absent: the file is written by `report`, which reads the index `scan` builds
 GTIN_HOLES_MISSING = ("hobbydex-tools cache/gtin_sweep_holes.json not found: it is written by tools/gtin_sweep.py report, which needs "
                       "the index: run python3 -I tools/gtin_sweep.py scan, then python3 -I tools/gtin_sweep.py report")
@@ -557,7 +521,6 @@ def load_linker_drift(tools):
     return [(r[0], int(r[1])) for r in rows if len(r) >= 2 and r[1].isdigit()]
 
 
-DERIVE_STALE_DAYS = 2   # the daily derive must have landed a PR within this many days
 
 
 CHILD_TIMEOUT = 3600   # seconds a tool the audit runs may take; past it the check says "child timed out" and the audit goes on.
@@ -575,37 +538,6 @@ def run_child(args, timeout=CHILD_TIMEOUT, **kw):
         return None
 
 
-def last_derive_landed(rc, tools):
-    """The newest day a derive landed, "YYYY-MM-DD", or None when neither source knows one: the committer date of the
-    newest commit on HEAD whose subject starts "Derived fields" (a merged derive PR; the squash commit keeps the title), and
-    the local loop's status field derive.last_derive_landed (hobbydex-tools cache/local_loop_status.json, set when the
-    loop sees its derive PR MERGED). The later of the two."""
-    days = []
-    try:
-        p = subprocess.run(["git", "-C", rc, "log", "-1", "--format=%cs", "--grep=^Derived fields"], capture_output=True, text=True, timeout=60)
-        if p.returncode == 0 and p.stdout.strip():
-            days.append(p.stdout.strip())
-    except (OSError, subprocess.TimeoutExpired):
-        pass
-    try:
-        with open(os.path.join(tools, "cache", "local_loop_status.json"), encoding="utf-8") as f:
-            d = (json.load(f).get("derive") or {}).get("last_derive_landed")
-        if isinstance(d, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", d[:10]):
-            days.append(d[:10])
-    except (OSError, ValueError, AttributeError):
-        pass
-    return max(days) if days else None
-
-
-def derive_not_landed(last, today, stale=DERIVE_STALE_DAYS):
-    """["derive: last landed <day> (<n> days ago)"] when no derive PR landed in the last `stale` days (today is a datetime.date), else []."""
-    import datetime
-    if last is None:
-        return [f"derive: no landed derive PR found (none in the git log, no last_derive_landed in the loop status)"]
-    age = (today - datetime.date.fromisoformat(last)).days
-    return [f"derive: last landed {last} ({age} days ago)"] if age > stale else []
-
-
 def linkers_that_would_change(drift):
     """Lines "<step>: <n> files" for each wired linker that changed data when run again over derived data (it should change none)."""
     return [f"{step}: {n} files" for step, n in drift if n]
@@ -614,29 +546,6 @@ def linkers_that_would_change(drift):
 def gtin_in_cache_not_stored(holes, by_id):
     """Ids of the records the sweep found a barcode for in the cache that still have no gtin."""
     return sorted(i for i in holes if i in by_id and not by_id[i].get("gtin"))
-
-
-def thickness_only(p):
-    """A washer-shim whose name states only a thickness ("3mm Spacer 0.5mm"): each size in it is a bare "N mm".
-    A washer spec takes a thread or a bore with a thickness, never a thickness alone."""
-    if p.get("category") != "washer-shim":
-        return False
-    sizes = [m.group(0).lower() for m in SIZE.finditer(p.get("name", ""))]
-    return bool(sizes) and all(s.endswith("mm") and "x" not in s and not s.startswith("m") for s in sizes)
-
-
-def not_specable(p, screw_reason, ball_reason):
-    """The sub-class of a size-no-spec part that no spec kind can hold, or None when one could (the linker's gap).
-    screw_reason(p) is the screw linker's reason for a screw (None when it links it); ball_reason(name) is the ball-end
-    linker's reason for a ball end (None when it gives a spec)."""
-    if thickness_only(p):
-        return "hw-size-thickness-only"
-    cat = p.get("category")
-    if cat == "ball-end":
-        return "hw-size-loose-ball" if ball_reason(p.get("name", "")) else None
-    if cat == "screw":
-        return NOT_SPECABLE_SCREW.get(screw_reason(p))
-    return None
 
 
 def check_spans(tools, environ=None):
@@ -667,7 +576,7 @@ def check_spans(tools, environ=None):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "with_fasteners": None, "fastener_cats": None, "english_table": None}
+    out = {"classify": None, "cache": None, "near": None, "tamico": None, "with_fasteners": None, "fastener_cats": None, "english_table": None}
     english = os.path.join(tools, "tools", "data", "english_variants.toml")
     if os.path.isfile(english):
         out["english_table"] = english
@@ -710,23 +619,6 @@ def load_tools(tools):
                 print(f"note: {mname} not loaded ({e})", file=sys.stderr)
             finally:
                 sys.path.remove(tdir)
-    # the screw and ball-end linkers' own reasons (tools/link_screw_specs.py plan, tools/link_ball_end_specs.py parse): a
-    # part with a reason is one no spec kind holds, so it is not a gap for hw-size-no-spec
-    out["screw_plan"] = None
-    out["ball_parse"] = None
-    for mname, key, attr in (("link_screw_specs", "screw_plan", "plan"), ("link_ball_end_specs", "ball_parse", "parse")):
-        mp = os.path.join(tdir, mname + ".py")
-        if os.path.exists(mp):
-            spec = importlib.util.spec_from_file_location(mname, mp)
-            mod = importlib.util.module_from_spec(spec)
-            sys.path.insert(0, tdir)
-            try:
-                spec.loader.exec_module(mod)
-                out[key] = getattr(mod, attr)
-            except Exception as e:  # the check is skipped without them
-                print(f"note: {mname} not loaded ({e})", file=sys.stderr)
-            finally:
-                sys.path.remove(tdir)
     cls = os.path.join(tools, "tools", "classify_parts.py")
     if os.path.exists(cls):
         spec = importlib.util.spec_from_file_location("classify_parts", cls)
@@ -735,7 +627,6 @@ def load_tools(tools):
         try:
             spec.loader.exec_module(mod)
             out["classify"] = mod.classify
-            out["ball_end"] = mod.ball_end_kind
             out["with_fasteners"] = mod.with_fasteners
             out["fastener_cats"] = mod.FASTENER_CATS
             global _TARGET, _KEEP
@@ -761,7 +652,6 @@ def load_tools(tools):
     if os.path.exists(tamico):
         out["tamico"] = tamico
     out["text_layer"] = os.path.join(tools, "cache", "notes", "tamiya", "text-layer-numbers.tsv")
-    out["sources"] = load_art_sources(tools)
     out["gtin_holes"] = load_gtin_holes(tools)
     out["linker_drift"] = load_linker_drift(tools)
     cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
@@ -1305,9 +1195,6 @@ def main():
         # a linked archive document (no file of its own) is linked to the PDF its listing page gives it
         arch_by_path = archive_files({i: d for i, d in docs.items() if i in linked_docs}, tools["archive_resolve"])
         unlinked = []
-        no_record = []       # cached files no document record matches (gap "cached-manual-no-record")
-        no_record_no_kind = []   # of those, the names that state no manual kind
-        any_record = []      # cached files some document record matches, linked or not
         linked_files = []    # cached files a linked document matches (by name or address): their copies count as linked
         via_archive = 0      # cached files a linked archive document's listing page gives as its file
         not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
@@ -1330,14 +1217,6 @@ def main():
                 via_archive += 1
                 ds = ds + [d for d in arch if d not in ds]
             stem = re.sub(r"(?i)\.pdf$", "", name)
-            # a cached PDF no document record matches at all (linked or not): a gap of its own, see below
-            state = record_gap(ds, excluded=not_manual_name(stem) or tamiya_static_non_rc(rel_path, tamiya_numbers))
-            if state == "record":
-                any_record.append(rel_path)
-            elif state == "gap":
-                no_record.append(rel_path)
-                if tools["manual_kind"] and tools["manual_kind"](stem) is None:
-                    no_record_no_kind.append(rel_path)
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
                 if not ds and tamiya_static_non_rc(rel_path, tamiya_numbers):
@@ -1356,14 +1235,6 @@ def main():
         n_before = len(unlinked)
         unlinked = drop_copies_of_linked(tools["cache"], unlinked, linked_files)
         copies = n_before - len(unlinked)
-        # the same files, counted by the record they lack: a PDF no document record names by its file, its address or its
-        # name slug; a byte-identical copy of a file that has a record is that record's file, not a gap
-        n_no_record = len(no_record)
-        no_record = drop_copies_of_linked(tools["cache"], no_record, any_record)
-        check("cached-manual-no-record", "write a document record for the cached PDF (file, page, url, kind) and list it in its release's documents (tools/link_manual_numbers.py); a file the names of no release state needs a link by hand",
-              [{"id": u} for u in no_record], count=len(no_record),
-              detail=f"{n_no_record - len(no_record)} byte-identical copies of a file that has a record are not counted; "
-                     f"{len(no_record_no_kind)} of the cached PDFs (before copies) name no manual kind")
         check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked, and so does the PDF a linked archive document's listing page gives",
               [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5],
               detail=f"{kind_unknown} of them name no manual kind (kind unknown: read the cover or the name); "
@@ -1417,30 +1288,7 @@ def main():
     check("platform-no-release", "add the platform's releases, or retire the platform if it is not a product",
           [k for k in kits.values() if not rels_of_kit[k["id"]]])
 
-    # 9. releases and kits with no outline art although a photo is in the art sources
-    art_dir = os.path.join(RC, "art")
-    def has_art(i):
-        kind, _, rest = i.partition("/")
-        sub = {"kit": "kits", "release": "releases"}.get(kind)
-        return bool(sub) and os.path.exists(os.path.join(art_dir, sub, rest + ".svg"))
-    missing_art = []
-    if tools["sources"] is not None:
-        for it in tools["sources"]:
-            if not it.get("photo"):
-                continue
-            for t in it.get("targets", []) + [it.get("id", "")]:
-                if t.partition("/")[0] in ("kit", "release") and t in by_id and not has_art(t):
-                    missing_art.append((t, it.get("skip", "")))
-        seen = {}
-        for t, skip in missing_art:
-            seen.setdefault(t, skip)
-        fixable = [t for t, s in seen.items() if re.search(r"needed to complete|another gallery|gallery shot", s, re.I)]
-        check("art-missing-photo", "trace another gallery shot of the item (a Needed to complete graphic is not the car); the skip reason says which shot was rejected",
-              [{"id": t} for t in seen], count=len(seen), _gallery_fixable=len(fixable))
-        results["art-missing-photo"]["examples"] = [{"id": t, "url": url_for({"id": t})} for t in list(seen)[:args.examples]]
-        results["art-missing-photo"]["skip_reasons"] = collections.Counter(s or "(none)" for s in seen.values()).most_common(8)
-    else:
-        results["art-missing-photo"] = {"fix": "hobbydex-tools art sources not found (--tools)", "count": None, "examples": [], "all": []}
+    art_dir = os.path.join(RC, "art")   # the outline art (orphan-art reads it)
 
     # 9b. barcodes the cache states for a record that has no gtin (tools/gtin_sweep.py in hobbydex-tools finds them)
     if tools["gtin_holes"] is not None:
@@ -1459,13 +1307,6 @@ def main():
         results["linker-would-change"]["examples"] = [{"id": d, "url": ""} for d in drift[:args.examples]]
     else:
         results["linker-would-change"] = {"fix": "hobbydex-tools cache/notes/linker-drift.tsv not found (written by the daily derive)", "count": None, "examples": [], "all": []}
-
-    # 9d. the daily derive must land: a merged "Derived fields" PR within 2 days (tools/local_loop.py derive step; status field last_derive_landed)
-    import datetime
-    stale = derive_not_landed(last_derive_landed(RC, os.path.abspath(args.tools)), datetime.date.today())
-    check("derive-not-landed", "no derive PR merged in 2 days: read the loop status (cache/local_loop_status.json derive: merge, error, branch) and the loop log in hobbydex-tools; fix the cause (validate or regression_check failure, rebase conflict, linker crash) so the daily derive lands",
-          stale)
-    results["derive-not-landed"]["examples"] = [{"id": d, "url": ""} for d in stale[:args.examples]]
 
     # 10. copyright-year release years
     check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",
@@ -1501,8 +1342,10 @@ def main():
     else:
         results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
 
-    # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color and hw-no-material are
-    # counted by the Rust audit only
+    # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
+    # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record,
+    # art-missing-photo, pack-photo-disagrees, pack-wrong-photo and pack-photo-brand-below-bar are counted by the Rust
+    # audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
@@ -1833,9 +1676,6 @@ def main():
     brand_of = lambda x: x.get("brand", "").split("/")[-1]
     per_brand = lambda items: collections.Counter(brand_of(x) for x in items).most_common()
 
-    def has_spec(p):
-        return any(e.get("spec") for e in p.get("equivalent_to", [])) or any(i.get("spec") for i in p.get("includes", []))
-
     no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes") and sold_in_packs(p)]
     fillable = [p for p in no_pack if not count_unstated(p, brands)]
     unstated = [p for p in no_pack if count_unstated(p, brands)]
@@ -1888,37 +1728,6 @@ def main():
     check("pack-qty-is-pitch", "the count is the pitch: set pack_qty from the maker's listing or the bag (the pitch stays in pitch_dp), or unset it; a gear set whose name carries a count is not read",
           [p for p, _ in pitch_count])
     results["pack-qty-is-pitch"]["examples"] = [{"id": f"{p['id']} ({why})", "url": url_for(p)} for p, why in pitch_count[:args.examples]]
-    ev_dir = os.path.join(os.path.abspath(args.tools), "cache", "notes", "pack-evidence")
-    dis = os.path.join(ev_dir, "photo-disagreements.tsv")
-    ids = set()
-    if os.path.exists(dis):
-        with open(dis, encoding="utf-8") as f:
-            next(f, None)
-            ids = {ln.split("\t")[0] for ln in f if ln.strip()}
-    by_id_all = {p["id"]: p for p in parts}
-    check("pack-photo-disagrees", "look at the photo and the maker's text; the text count stands (tools/photo_chain.py lists them in cache/notes/pack-evidence/photo-disagreements.tsv)",
-          [by_id_all[i] for i in sorted(ids) if i in by_id_all])
-    wrong = os.path.join(os.path.abspath(args.tools), "cache", "notes", "review", "wrong-photos.tsv")
-    wp = set()
-    if os.path.exists(wrong):
-        with open(wrong, encoding="utf-8") as f:
-            wp = {ln.split("\t")[0] for ln in f if ln.strip()}
-    check("pack-wrong-photo", "the owner marked the mapped photo as not the part's: fix the photo mapping (tools/link_hw_photo_finish.py gallery_for/photo_for) for the part",
-          [by_id_all[i] for i in sorted(wp) if i in by_id_all])
-    rel = os.path.join(os.path.abspath(args.tools), "tools", "data", "photo_pack_reliability.tsv")
-    ok_brands, known = set(), False
-    if os.path.exists(rel):
-        known = True
-        with open(rel, encoding="utf-8") as f:
-            hdr = next(f).rstrip("\n").split("\t")
-            for ln in f:
-                r = dict(zip(hdr, ln.rstrip("\n").split("\t")))
-                if r.get("passes") == "yes":
-                    ok_brands.add(r["brand"])
-    photo_parts = [p for p in parts if p.get("pack_qty_basis") in ("photo", "photos") and (not known or brand_of(p) not in ok_brands)]
-    check("pack-photo-brand-below-bar", "remove the photo counts of the brand or raise its photo agreement to 97% on 30 cases (tools/photo_pack_reliability.py)",
-          photo_parts, per_brand=per_brand(photo_parts))
-
     idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
     if os.path.exists(idx_path):
         with open(idx_path, encoding="utf-8") as f:
@@ -1948,40 +1757,6 @@ def main():
         results["spec-no-bag-drawing"]["examples"] = [{"id": f"{s['id']} ({len(spec_links[s['id']])} parts)", "url": SITE + "/rc/"} for s in undrawn[:args.examples]]
     else:
         results["spec-no-bag-drawing"] = {"fix": "hobbydex site not found (--site)", "count": None, "examples": [], "all": []}
-
-    # only real ball ends (ball studs, pivot balls, balls) take a ball spec: a ball-end name that is a link, rod end or turnbuckle
-    # is no ball end, and turnbuckles and rod ends have no spec kind
-    be = tools["ball_end"]
-    def real_ball_end(p):
-        return p.get("category") != "ball-end" or be is None or be(p.get("name", "")) == "ball-end"
-    unspec = [p for p in parts if p.get("category") in HW and p.get("category") not in NO_SIZE_SPEC and not has_spec(p)
-              and SIZE.search(p.get("name", "")) and real_ball_end(p)]
-    # the parts no spec kind can hold are sub-classes (info): the rest is the linker's gap
-    plan_fn, parse_fn = tools["screw_plan"], tools["ball_parse"]
-    if plan_fn is None or parse_fn is None:
-        results["hw-size-no-spec"] = {"fix": "not checked: hobbydex-tools (--tools) lacks tools/link_screw_specs.py or tools/link_ball_end_specs.py",
-                                      "count": None, "examples": [], "all": [], "skipped": True}
-    else:
-        def screw_reason(p):
-            return plan_fn(p, frozenset())[2]
-        def ball_reason(name):
-            r = parse_fn(name)
-            return r if isinstance(r, str) else None
-        gap, sub = [], collections.defaultdict(list)
-        for p in unspec:
-            cls = not_specable(p, screw_reason, ball_reason)
-            (sub[cls] if cls else gap).append(p)
-        check("hw-size-no-spec", "link the part to the spec of its size (equivalent_to, match functional), or add that spec",
-              gap, per_brand=per_brand(gap))
-        sub_fix = {
-            "hw-size-thickness-only": "a washer-shim that states only a thickness: no washer spec takes a thickness alone (info; the name gives no thread or bore)",
-            "hw-size-loose-ball": "a ball end the ball linker gives no spec: the name states no stud, nut, hole or set-screw type, or no single size (info)",
-            "hw-size-screw-no-drive": "a screw whose name states no drive: the linker takes none from the name, and a guessed drive is not allowed (info; a maker page may state it, see link_screw_specs --pages)",
-            "hw-size-screw-unparsed": "a screw name the screw linker cannot read a size or a head from (info; the name's wording is the gap)",
-            "hw-size-screw-not-one-spec": "a screw name that lists several sizes, a special screw (shoulder, king pin, wheel ...) or a set or kit: no single size spec holds it (info)",
-        }
-        for cls, fix in sub_fix.items():
-            check(cls, fix, sub[cls], per_brand=per_brand(sub[cls]), info=True)
 
     ns = tools.get("name_shop")
     shop = [p for p in parts if ns is not None and ns.has_shop_text(p.get("name", "") or "")]
@@ -2121,9 +1896,6 @@ def main():
     results["electronics-field-rare"]["all"] = [f"{cat} {f}: {n} of {of} parts ({100 * n / of:.1f}%)" for cat, f, n, of in rare]
     results["electronics-field-rare"]["examples"] = []   # the rows are printed in full under the summary line
 
-    st = os.statvfs("/tmp")
-    used = 100 * (st.f_files - st.f_ffree) / st.f_files if st.f_files else 0.0
-    scratch = sorted(((sum(len(fs) for _, _, fs in os.walk(sp)), sp) for sp in glob.glob(f"/tmp/claude-{os.getuid()}/*/*/scratchpad")), reverse=True)
     # kits no release names, with a page of the maker's site that names the car (tools/parts_only_leads.py in hobbydex-tools writes the leads)
     leads_tsv = os.path.join(os.path.abspath(args.tools), "cache", "notes", "parts-only-leads.tsv")
     open_leads = set()
@@ -2135,10 +1907,6 @@ def main():
                     open_leads.add(kid)
     check("parts-only-lead", "a page of the maker's site names this car (cache/notes/parts-only-leads.tsv: kit, brand, url, why): have the brand's importer read the page and add the release, with its manual and parts list",
           sorted(open_leads))
-    check("tmp-inodes", "/tmp is above 50% of its inodes: delete the scratchpad folders listed (tmpfs; builds and big exports go on disk)",
-          [], count=int(used > 50), detail=f"/tmp inodes {used:.1f}% used ({st.f_files - st.f_ffree} of {st.f_files})")
-    results["tmp-inodes"]["examples"] = [{"id": f"{n} files {sp}", "url": ""} for n, sp in scratch[:args.examples]]
-
     ranked = sorted((n for n in results if results[n]["count"] and not results[n].get("info")), key=lambda n: -results[n]["count"])
     info = [n for n in results if results[n]["count"] and results[n].get("info")]
     skipped = [n for n in results if results[n]["count"] is None]
@@ -2168,8 +1936,6 @@ def main():
         if n == "classifier-drift":
             for k, v in results[n]["transitions"]:
                 print(f"{'':34} {'':>7}    {k}: {v}")
-        if n == "art-missing-photo":
-            print(f"{'':34} {'':>7}    skip reasons: {results[n]['skip_reasons']}")
         if n == "electronics-field-rare":
             for row in r["all"]:
                 print(f"{'':34} {'':>7}    {row}")
