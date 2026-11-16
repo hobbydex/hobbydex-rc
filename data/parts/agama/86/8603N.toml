@@ -4,6 +4,8 @@ number = "8603N"
 name = "Steering bushing 8mm"
 gtin = "4711256690971"
 category = "steering"
+pack_qty = 1
+pack_qty_basis = "distributor"
 applies_to = "A215A319N1M1N2series"
 fits = [
   { kit = "kit/agama/n1", type = "direct", source = "doc/agama/agama-rc-com" },
@@ -11,8 +13,15 @@ fits = [
   { kit = "kit/agama/a215", type = "direct", source = "doc/agama/agama-rc-com" },
   { kit = "kit/agama/a319", type = "direct", source = "doc/agama/agama-rc-com" },
   { kit = "kit/agama/m1", type = "direct", source = "doc/agama/agama-rc-com" },
+  { kit = "kit/agama/a215e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a215sv", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a215t", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a319e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/a8t", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/n1e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
+  { kit = "kit/agama/n2e", type = "direct", source = "doc/agama/nemoracing-com", notes = "Known from the distributor: Nemo Racing's model tag; the maker's own name does not list this car" },
 ]
-documents = ["doc/agama/agama-rc-com"]
+documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=8603N" },
 ]

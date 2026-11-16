@@ -6,6 +6,8 @@ gtin = "4714781689595"
 category = "chassis"
 material = "aluminium"
 material_grade = "7075"
+pack_qty = 9
+pack_qty_basis = "distributor"
 applies_to = "A319A319PN1M1N2"
 fits = [
   { kit = "kit/agama/n1", type = "direct", source = "doc/agama/agama-rc-com" },
@@ -14,7 +16,7 @@ fits = [
   { kit = "kit/agama/a319p", type = "direct", source = "doc/agama/agama-rc-com" },
   { kit = "kit/agama/m1", type = "direct", source = "doc/agama/agama-rc-com" },
 ]
-documents = ["doc/agama/agama-rc-com"]
+documents = ["doc/agama/agama-rc-com", "doc/agama/nemoracing-com"]
 links = [
   { site = "Agama Racing", url = "https://agama-rc.com/products/search?search_txt=37014-1" },
 ]
