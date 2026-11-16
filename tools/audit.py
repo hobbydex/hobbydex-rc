@@ -1343,8 +1343,9 @@ def main():
         results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
 
     # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
-    # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record and
-    # art-missing-photo are counted by the Rust audit only
+    # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record,
+    # art-missing-photo, pack-photo-disagrees, pack-wrong-photo and pack-photo-brand-below-bar are counted by the Rust
+    # audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
@@ -1727,37 +1728,6 @@ def main():
     check("pack-qty-is-pitch", "the count is the pitch: set pack_qty from the maker's listing or the bag (the pitch stays in pitch_dp), or unset it; a gear set whose name carries a count is not read",
           [p for p, _ in pitch_count])
     results["pack-qty-is-pitch"]["examples"] = [{"id": f"{p['id']} ({why})", "url": url_for(p)} for p, why in pitch_count[:args.examples]]
-    ev_dir = os.path.join(os.path.abspath(args.tools), "cache", "notes", "pack-evidence")
-    dis = os.path.join(ev_dir, "photo-disagreements.tsv")
-    ids = set()
-    if os.path.exists(dis):
-        with open(dis, encoding="utf-8") as f:
-            next(f, None)
-            ids = {ln.split("\t")[0] for ln in f if ln.strip()}
-    by_id_all = {p["id"]: p for p in parts}
-    check("pack-photo-disagrees", "look at the photo and the maker's text; the text count stands (tools/photo_chain.py lists them in cache/notes/pack-evidence/photo-disagreements.tsv)",
-          [by_id_all[i] for i in sorted(ids) if i in by_id_all])
-    wrong = os.path.join(os.path.abspath(args.tools), "cache", "notes", "review", "wrong-photos.tsv")
-    wp = set()
-    if os.path.exists(wrong):
-        with open(wrong, encoding="utf-8") as f:
-            wp = {ln.split("\t")[0] for ln in f if ln.strip()}
-    check("pack-wrong-photo", "the owner marked the mapped photo as not the part's: fix the photo mapping (tools/link_hw_photo_finish.py gallery_for/photo_for) for the part",
-          [by_id_all[i] for i in sorted(wp) if i in by_id_all])
-    rel = os.path.join(os.path.abspath(args.tools), "tools", "data", "photo_pack_reliability.tsv")
-    ok_brands, known = set(), False
-    if os.path.exists(rel):
-        known = True
-        with open(rel, encoding="utf-8") as f:
-            hdr = next(f).rstrip("\n").split("\t")
-            for ln in f:
-                r = dict(zip(hdr, ln.rstrip("\n").split("\t")))
-                if r.get("passes") == "yes":
-                    ok_brands.add(r["brand"])
-    photo_parts = [p for p in parts if p.get("pack_qty_basis") in ("photo", "photos") and (not known or brand_of(p) not in ok_brands)]
-    check("pack-photo-brand-below-bar", "remove the photo counts of the brand or raise its photo agreement to 97% on 30 cases (tools/photo_pack_reliability.py)",
-          photo_parts, per_brand=per_brand(photo_parts))
-
     idx_path = os.path.join(args.site, "src", "assets", "hardware", "index.json")
     if os.path.exists(idx_path):
         with open(idx_path, encoding="utf-8") as f:
