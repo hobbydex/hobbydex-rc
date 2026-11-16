@@ -356,14 +356,6 @@ def archive_files(docs, resolve):
     return out
 
 
-def record_gap(matches, excluded):
-    """'record' when a document record matches a cached PDF (by its file, its address or its name), 'gap' when none
-    does, 'left out' when none does and the file is excluded (a safety sheet or notice, a static Tamiya kit)."""
-    if matches:
-        return "record"
-    return "left out" if excluded else "gap"
-
-
 def drop_copies_of_linked(cache, unlinked, linked_files):
     """The unlinked cached files (paths relative to the cache) that are not a byte-identical copy of a linked file of the
     same brand (second path part): same size first, then the SHA-256."""
@@ -500,29 +492,6 @@ def tamiya_static_non_rc(rel_path, tamiya_numbers):
     return any(lo <= int(m.group(1)) <= hi for lo, hi in TAMIYA_STATIC)
 
 
-def load_art_sources(tools):
-    """The art source items of every brand (None when neither directory exists).
-
-    The run-time copy in cache/art/sources wins per brand: the local loop rewrites it. The tracked seed in
-    tools/art/sources is read only for a brand that has no run-time copy yet.
-    """
-    runsrc = os.path.join(tools, "cache", "art", "sources")
-    seedsrc = os.path.join(tools, "tools", "art", "sources")
-    if not (os.path.isdir(seedsrc) or os.path.isdir(runsrc)):
-        return None
-    files = {}
-    for d in (seedsrc, runsrc):   # the run-time copy is read last, so it replaces the seed
-        if os.path.isdir(d):
-            for fn in os.listdir(d):
-                if fn.endswith(".toml"):
-                    files[fn] = os.path.join(d, fn)
-    items = []
-    for fn in sorted(files):
-        with open(files[fn], "rb") as f:
-            items += tomllib.load(f).get("item", [])
-    return items
-
-
 # what the audit says when cache/gtin_sweep_holes.json is absent: the file is written by `report`, which reads the index `scan` builds
 GTIN_HOLES_MISSING = ("hobbydex-tools cache/gtin_sweep_holes.json not found: it is written by tools/gtin_sweep.py report, which needs "
                       "the index: run python3 -I tools/gtin_sweep.py scan, then python3 -I tools/gtin_sweep.py report")
@@ -607,7 +576,7 @@ def check_spans(tools, environ=None):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "sources": None, "cache": None, "near": None, "tamico": None, "with_fasteners": None, "fastener_cats": None, "english_table": None}
+    out = {"classify": None, "cache": None, "near": None, "tamico": None, "with_fasteners": None, "fastener_cats": None, "english_table": None}
     english = os.path.join(tools, "tools", "data", "english_variants.toml")
     if os.path.isfile(english):
         out["english_table"] = english
@@ -683,7 +652,6 @@ def load_tools(tools):
     if os.path.exists(tamico):
         out["tamico"] = tamico
     out["text_layer"] = os.path.join(tools, "cache", "notes", "tamiya", "text-layer-numbers.tsv")
-    out["sources"] = load_art_sources(tools)
     out["gtin_holes"] = load_gtin_holes(tools)
     out["linker_drift"] = load_linker_drift(tools)
     cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
@@ -1227,9 +1195,6 @@ def main():
         # a linked archive document (no file of its own) is linked to the PDF its listing page gives it
         arch_by_path = archive_files({i: d for i, d in docs.items() if i in linked_docs}, tools["archive_resolve"])
         unlinked = []
-        no_record = []       # cached files no document record matches (gap "cached-manual-no-record")
-        no_record_no_kind = []   # of those, the names that state no manual kind
-        any_record = []      # cached files some document record matches, linked or not
         linked_files = []    # cached files a linked document matches (by name or address): their copies count as linked
         via_archive = 0      # cached files a linked archive document's listing page gives as its file
         not_manuals = 0      # the name says it is a safety sheet, battery notice, press release or product sheet
@@ -1252,14 +1217,6 @@ def main():
                 via_archive += 1
                 ds = ds + [d for d in arch if d not in ds]
             stem = re.sub(r"(?i)\.pdf$", "", name)
-            # a cached PDF no document record matches at all (linked or not): a gap of its own, see below
-            state = record_gap(ds, excluded=not_manual_name(stem) or tamiya_static_non_rc(rel_path, tamiya_numbers))
-            if state == "record":
-                any_record.append(rel_path)
-            elif state == "gap":
-                no_record.append(rel_path)
-                if tools["manual_kind"] and tools["manual_kind"](stem) is None:
-                    no_record_no_kind.append(rel_path)
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
                 if not ds and tamiya_static_non_rc(rel_path, tamiya_numbers):
@@ -1278,14 +1235,6 @@ def main():
         n_before = len(unlinked)
         unlinked = drop_copies_of_linked(tools["cache"], unlinked, linked_files)
         copies = n_before - len(unlinked)
-        # the same files, counted by the record they lack: a PDF no document record names by its file, its address or its
-        # name slug; a byte-identical copy of a file that has a record is that record's file, not a gap
-        n_no_record = len(no_record)
-        no_record = drop_copies_of_linked(tools["cache"], no_record, any_record)
-        check("cached-manual-no-record", "write a document record for the cached PDF (file, page, url, kind) and list it in its release's documents (tools/link_manual_numbers.py); a file the names of no release state needs a link by hand",
-              [{"id": u} for u in no_record], count=len(no_record),
-              detail=f"{n_no_record - len(no_record)} byte-identical copies of a file that has a record are not counted; "
-                     f"{len(no_record_no_kind)} of the cached PDFs (before copies) name no manual kind")
         check("manual-unlinked", "add the cached manual as a document (file, page, url) and list it in its release's documents; a document listed by a part or matched by its URL counts as linked, and so does the PDF a linked archive document's listing page gives",
               [{"id": u} for u in unlinked], count=len(unlinked), _unlinked_ids=unlinked[:5],
               detail=f"{kind_unknown} of them name no manual kind (kind unknown: read the cover or the name); "
@@ -1339,30 +1288,7 @@ def main():
     check("platform-no-release", "add the platform's releases, or retire the platform if it is not a product",
           [k for k in kits.values() if not rels_of_kit[k["id"]]])
 
-    # 9. releases and kits with no outline art although a photo is in the art sources
-    art_dir = os.path.join(RC, "art")
-    def has_art(i):
-        kind, _, rest = i.partition("/")
-        sub = {"kit": "kits", "release": "releases"}.get(kind)
-        return bool(sub) and os.path.exists(os.path.join(art_dir, sub, rest + ".svg"))
-    missing_art = []
-    if tools["sources"] is not None:
-        for it in tools["sources"]:
-            if not it.get("photo"):
-                continue
-            for t in it.get("targets", []) + [it.get("id", "")]:
-                if t.partition("/")[0] in ("kit", "release") and t in by_id and not has_art(t):
-                    missing_art.append((t, it.get("skip", "")))
-        seen = {}
-        for t, skip in missing_art:
-            seen.setdefault(t, skip)
-        fixable = [t for t, s in seen.items() if re.search(r"needed to complete|another gallery|gallery shot", s, re.I)]
-        check("art-missing-photo", "trace another gallery shot of the item (a Needed to complete graphic is not the car); the skip reason says which shot was rejected",
-              [{"id": t} for t in seen], count=len(seen), _gallery_fixable=len(fixable))
-        results["art-missing-photo"]["examples"] = [{"id": t, "url": url_for({"id": t})} for t in list(seen)[:args.examples]]
-        results["art-missing-photo"]["skip_reasons"] = collections.Counter(s or "(none)" for s in seen.values()).most_common(8)
-    else:
-        results["art-missing-photo"] = {"fix": "hobbydex-tools art sources not found (--tools)", "count": None, "examples": [], "all": []}
+    art_dir = os.path.join(RC, "art")   # the outline art (orphan-art reads it)
 
     # 9b. barcodes the cache states for a record that has no gtin (tools/gtin_sweep.py in hobbydex-tools finds them)
     if tools["gtin_holes"] is not None:
@@ -1417,7 +1343,8 @@ def main():
         results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
 
     # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
-    # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes are counted by the Rust audit only
+    # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record and
+    # art-missing-photo are counted by the Rust audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
@@ -2039,8 +1966,6 @@ def main():
         if n == "classifier-drift":
             for k, v in results[n]["transitions"]:
                 print(f"{'':34} {'':>7}    {k}: {v}")
-        if n == "art-missing-photo":
-            print(f"{'':34} {'':>7}    skip reasons: {results[n]['skip_reasons']}")
         if n == "electronics-field-rare":
             for row in r["all"]:
                 print(f"{'':34} {'':>7}    {row}")
