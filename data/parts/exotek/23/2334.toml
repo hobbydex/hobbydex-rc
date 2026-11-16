@@ -5,6 +5,11 @@ name = "E8 D8 HD CLAMPING SPRING PERCH SET, 4"
 seen_by = "2025-09-06"
 seen_by_source = "https://web.archive.org/web/20250906104915/https://www.exotekracing.com/e8-d8-hd-clamping-spring-perch-set-4.html"
 applies_to = "E8, D8"
+fits = [
+  { kit = "kit/hb-racing/d8", type = "replaces", source = "doc/exotek/shop", notes = "Exotek's page: for all HB series E8, D8, D817 and D819 buggies and trucks; the E8 is not linked (our HB E8 kit is the E8 World Spec only)" },
+  { kit = "kit/hb-racing/d817", type = "replaces", source = "doc/exotek/shop" },
+  { kit = "kit/hb-racing/d819", type = "replaces", source = "doc/exotek/shop" },
+]
 links = [
   { site = "Exotek Racing", url = "https://www.exotekracing.com/e8-d8-hd-clamping-spring-perch-set-4.html" },
 ]

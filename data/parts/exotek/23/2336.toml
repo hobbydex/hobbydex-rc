@@ -7,6 +7,11 @@ seen_by_source = "https://web.archive.org/web/20250906101251/https://www.exotekr
 material = "aluminium"
 material_grade = "7075"
 applies_to = "E8, D8"
+fits = [
+  { kit = "kit/hb-racing/d8", type = "replaces", source = "doc/exotek/shop", notes = "Exotek's page: for the Hot Bodies E8, D8, D819, E819 series; the E8 is not linked (our HB E8 kit is the E8 World Spec only)" },
+  { kit = "kit/hb-racing/d819", type = "replaces", source = "doc/exotek/shop" },
+  { kit = "kit/hb-racing/e819", type = "replaces", source = "doc/exotek/shop" },
+]
 links = [
   { site = "Exotek Racing", url = "https://www.exotekracing.com/e8-d8-hd-bearinged-steering-crank-set-7075-2-color-ano.html" },
 ]
