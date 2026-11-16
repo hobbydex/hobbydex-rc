@@ -134,17 +134,6 @@ def is_body_set_doc(doc, doc_id=""):
     return bool(BODY_SET_DOC.search((doc or {}).get("title", "") + " " + doc_id))
 
 
-def name_count_strippable(p, q, callouts):
-    """Whether a part's name carries a count (q) or bag callouts that can leave it. A name with a name_source is a stated
-    value (the maker's, a manual's or a dealer's, as printed): it keeps its count (hobbydex-tools name_count.apply
-    keep_name). A count that differs from the part's pack_qty is a conflict to settle by hand, not a strip."""
-    if p.get("name_source"):
-        return False
-    if q is not None and p.get("pack_qty") is not None and p["pack_qty"] != q and not callouts:
-        return False
-    return q is not None or bool(callouts)
-
-
 # the kinds that are a file the maker published in its own language: the title is that file's printed name (Hobbytech's
 # "Guide de r\u00e9f\u00e9rence BX8SL", Corally's "..._Handleiding_NL"), not a localised title of an English item; an
 # English title of such a file would be a translation. Videos and pages are localised by the platform, so they are checked.
@@ -679,7 +668,7 @@ def check_spans(tools, environ=None):
 
 def load_tools(tools):
     """The classifier and the art sources, from hobbydex-tools (None when absent)."""
-    out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "packqty": None, "with_fasteners": None, "fastener_cats": None, "material": None, "english_table": None}
+    out = {"classify": None, "ball_end": None, "sources": None, "cache": None, "near": None, "tamico": None, "colour": None, "with_fasteners": None, "fastener_cats": None, "material": None, "english_table": None}
     english = os.path.join(tools, "tools", "data", "english_variants.toml")
     if os.path.isfile(english):
         out["english_table"] = english
@@ -720,26 +709,8 @@ def load_tools(tools):
             print(f"note: link_manual_numbers not loaded ({e})", file=sys.stderr)
         finally:
             sys.path.remove(os.path.join(tools, "tools"))
-    out["multi"] = None
-    out["material_single"] = None
     tdir = os.path.join(tools, "tools")
-    mi = os.path.join(tdir, "multi_item.py")
-    if os.path.exists(mi):   # the name's items (multi_item.py): is_multi, whole_material, and the reader it gives the material
-        spec = importlib.util.spec_from_file_location("multi_item", mi)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        out["multi"] = mod
-    pq = os.path.join(tools, "tools", "packqty.py")
-    if os.path.exists(pq):   # the count reader the importers use (a name's "(2)", "2pcs", "1 pair")
-        spec = importlib.util.spec_from_file_location("packqty", pq)
-        mod = importlib.util.module_from_spec(spec)
-        sys.path.insert(0, tdir)   # packqty imports multi_item from the tools
-        try:
-            spec.loader.exec_module(mod)
-        finally:
-            sys.path.remove(tdir)
-        out["packqty"] = mod
-    for mname in ("name_shop", "name_count"):   # the shop-text cleaner and the pack-count reader the importers use
+    for mname in ("name_shop",):   # the shop-text cleaner the importers use
         mp = os.path.join(tdir, mname + ".py")
         if os.path.exists(mp):
             spec = importlib.util.spec_from_file_location(mname, mp)
@@ -752,18 +723,6 @@ def load_tools(tools):
                 print(f"note: {mname} not loaded ({e})", file=sys.stderr)
             finally:
                 sys.path.remove(tdir)
-    lmp = os.path.join(tdir, "link_material.py")
-    if os.path.exists(lmp):   # the material a name states, for one item (link_material.single): the audit's reading
-        spec = importlib.util.spec_from_file_location("link_material", lmp)
-        mod = importlib.util.module_from_spec(spec)
-        sys.path.insert(0, tdir)
-        try:
-            spec.loader.exec_module(mod)
-            out["material_single"] = mod.single
-        except Exception as e:
-            print(f"note: link_material not loaded ({e})", file=sys.stderr)
-        finally:
-            sys.path.remove(tdir)
     lpc = os.path.join(tools, "tools", "link_part_colours.py")
     if os.path.exists(lpc):   # the colour a part's name states (tools/link_part_colours.py colour())
         spec = importlib.util.spec_from_file_location("link_part_colours", lpc)
@@ -1567,23 +1526,8 @@ def main():
     else:
         results["with-fasteners-category"] = {"fix": "classify_parts.py not found (--tools)", "count": None, "examples": [], "all": []}
 
-    # 11b2. a name that lists two or more items (a pipe and a screw, a pin and a nut) is read item by item: a fastener
-    # spec on the whole part, or a material that one item states, is the name's error (tools/multi_item.py)
-    if tools["multi"]:
-        mi = tools["multi"]
-        FASTENER_PRE = ("spec/screw/", "spec/nut/", "spec/bearing/", "spec/pin/", "spec/washer/")
-        lm_single = tools["material_single"]
-        def whole_part_fastener(p):
-            return any(e.get("spec", "").startswith(FASTENER_PRE) and "source" not in e for e in p.get("equivalent_to", []))
-        def whole_part_material(p):
-            if not p.get("material"):
-                return False
-            return mi.whole_material(p["name"].lower(), lm_single) != p["material"] and lm_single(p["name"].lower()) == p["material"]
-        multi_parts = [p for p in parts if mi.is_multi(p.get("name", ""))]
-        check("multi-item-whole-part", "a name that lists several items: the item's spec goes into includes (rerun link_screw_specs.py and the other fastener linkers in hobbydex-tools), and a material only when it applies to every item (tools/multi_item.py)",
-              [p for p in multi_parts if whole_part_fastener(p) or whole_part_material(p)])
-    else:
-        results["multi-item-whole-part"] = {"fix": "hobbydex-tools tools/multi_item.py not found (--tools)", "count": None, "examples": [], "all": []}
+    # multi-item-whole-part, name-count-no-pack-qty and name-callout-or-count are counted by the Rust audit only
+    # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
           [p for p in parts if p.get("category_source") == "fallback"])
@@ -1882,12 +1826,6 @@ def main():
     check("tamico-pack-conflict", "no pack_qty from the dealers: the dealers' counts differ or the part's name states another count; set the count from the part's own source or leave it unset (tools/link_tamico_spares.py lists the rows)",
           conflicts, count=len(conflicts))
 
-    # 26b. a count the name states that the part has no pack_qty for (a name that keeps the maker's count is fine)
-    if tools["packqty"]:
-        gap = [p for p in parts if "pack_qty" not in p and tools["packqty"].from_name(p.get("name", ""))]
-        check("name-count-no-pack-qty", "set pack_qty from the count the name states: rerun the importer that wrote the part (it sets pack_qty from its name) or tools/link_pack_qty.py in hobbydex-tools",
-              gap, per_brand=collections.Counter(p["brand"].split("/")[-1] for p in gap).most_common(12))
-
     # 27. video docs whose release has a product page with gallery videos not attached: skipped (needs fetched pages)
     results["video-gallery-unattached"] = {"fix": "not checked: needs the cached product pages parsed for gallery video IDs", "count": None, "examples": [], "all": [], "skipped": True}
 
@@ -2092,23 +2030,6 @@ def main():
         }
         for cls, fix in sub_fix.items():
             check(cls, fix, sub[cls], per_brand=per_brand(sub[cls]), info=True)
-
-    # the schema rule (tools/name_count.py): one clear pack count, or a bag callout such as (MOUNTED x4), in the name.
-    # Several counts, "Npcs each" and multi-item names are not a pack count and are not flagged
-    nc = tools.get("name_count")
-    def callout_or_count(p):
-        if nc is None:
-            return False
-        _, q, co = nc.split(p.get("name", "") or "")
-        return name_count_strippable(p, q, co)
-    callouts = [p for p in parts if callout_or_count(p)]
-    kinds = collections.Counter()
-    for p in callouts:
-        _, q, co = nc.split(p.get("name", "") or "")
-        kinds["one pack count"] += q is not None
-        kinds["bag callout"] += bool(co)
-    check("name-callout-or-count", "strip the manual callout or count from the name (a count belongs in pack_qty, a callout in the release's notes)",
-          callouts, per_brand=per_brand(callouts), breakdown=("pattern", [f"{k} {v}" for k, v in kinds.items()]))
 
     ns = tools.get("name_shop")
     shop = [p for p in parts if ns is not None and ns.has_shop_text(p.get("name", "") or "")]
