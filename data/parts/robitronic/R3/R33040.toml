@@ -1,7 +1,7 @@
 id = "part/robitronic/R33040"
 brand = "brand/robitronic"
 number = "R33040"
-name = "3x80mm Steel RH Screw (cross) (6) / M3x80mm Rundkopfschraube"
+name = "3x80mm Steel RH Screw (cross) (6)"
 name_source = "manual"
 documents = ["doc/robitronic/hurricane-r39090-manual"]
 category = "screw"
@@ -10,3 +10,5 @@ name_de = "3x80mm Steel RH Screw (cross) (6) / M3x80mm Rundkopfschraube"
 equivalent_to = [
   { spec = "spec/screw/m3x80-button-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+pack_qty = 6
+pack_qty_basis = "name"
