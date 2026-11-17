@@ -31,6 +31,13 @@ class NotManualName(unittest.TestCase):
         self.assertTrue(audit.not_manual_name("Price-List-2024_Gambado"))
         self.assertTrue(audit.not_manual_name("YOKOMO_CATALOG_Autumn"))
 
+    def test_overdose_shop_notices_are_left_out(self):
+        # "OD<item>-<date>-<items named>": a one-page notice of delivery dates (お知らせ), never a manual
+        self.assertTrue(audit.not_manual_name("OD2500-20250922-OD2491-OD3889-o"))
+        self.assertTrue(audit.not_manual_name("OD2801b-20251222-OD2862-4-"))
+        self.assertFalse(audit.not_manual_name("OD2079"))
+        self.assertFalse(audit.not_manual_name("I-OD3900-3_021525_c2o"))
+
     def test_car_named_files_without_a_kind_word_stay_gaps(self):
         # kind unknown: the cover must be read; a car name or a set name is not a non-manual
         self.assertFalse(audit.not_manual_name("300012657_Ducati_1199_Pinigale_Gabel-Set"))
@@ -42,6 +49,21 @@ class NotManualName(unittest.TestCase):
         self.assertFalse(audit.not_manual_name("300056045_Centurion_Mk.III_Bedienung_en"))
         self.assertFalse(audit.not_manual_name("300058084_Ferrari_F189_F101"))
         self.assertFalse(audit.not_manual_name("MZW403_Carbon_Rear_Sus_m"))
+
+
+class LeftOutCopies(unittest.TestCase):
+    def test_a_truncated_download_names_its_complete_file(self):
+        self.assertEqual(audit.truncated_full("manuals/redcat/shredder-manual.truncated-2026-10-14.pdf"),
+                         "manuals/redcat/shredder-manual.pdf")
+        self.assertIsNone(audit.truncated_full("manuals/redcat/shredder-manual.pdf"))
+
+    def test_an_archive_scan_of_a_release_with_the_makers_manual_is_a_copy(self):
+        held = {("tamiya", "58222")}
+        self.assertTrue(audit.archive_copy_of_maker_manual(
+            "manuals/rcscrapyard/tamiya/tamiya-58222-ford-svt-f150-lightning-manual.pdf", held))
+        self.assertFalse(audit.archive_copy_of_maker_manual("manuals/rcscrapyard/tamiya/tamiya-42001-bmt-931-k4-manual.pdf", held))
+        # the maker's own file is never left out this way
+        self.assertFalse(audit.archive_copy_of_maker_manual("manuals/tamiya/58222-manual.pdf", held))
 
 
 class NameSlug(unittest.TestCase):
