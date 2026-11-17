@@ -1,0 +1,17 @@
+id = "part/xray/385202"
+brand = "brand/xray"
+number = "385202"
+name = "Composite Drive Shaft with Hex Adapter - Set (2)"
+released = "2006-12-06"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1917"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1917" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "drivetrain"
+documents = ["doc/xray/385202-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002", "release/xray/380003"], type = "replaces", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "replaces", source = "doc/xray/portal-1658" },
+]

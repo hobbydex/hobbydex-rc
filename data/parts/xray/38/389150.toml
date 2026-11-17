@@ -1,0 +1,16 @@
+id = "part/xray/389150"
+brand = "brand/xray"
+number = "389150"
+name = "Receiver Battery Pack AAA 700mAh - 4.8V"
+released = "2006-03-13"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1637"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1637" },
+]
+category = "battery"
+documents = ["doc/xray/389150-product-page"]
+fits = [
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "direct", source = "doc/xray/portal-1664" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1956" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1694" },
+]

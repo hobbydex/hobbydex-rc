@@ -1,0 +1,15 @@
+id = "part/xray/389122"
+brand = "brand/xray"
+number = "389122"
+name = "Battery 5-Cell -1100mAh NiMH- 6.0V"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1405"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1405" },
+]
+category = "battery"
+documents = ["doc/xray/389122-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000"], type = "direct", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/xb8", releases = ["release/xray/350001", "release/xray/350002"], type = "direct", source = "doc/xray/portal-2246" },
+]

@@ -1,0 +1,15 @@
+id = "part/xray/305521"
+brand = "brand/xray"
+number = "305521"
+name = "Alu Solid Layshaft"
+released = "2007-11-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2446"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2446" },
+]
+category = "gear"
+documents = ["doc/xray/305521-product-page"]
+fits = [
+  { kit = "kit/xray/t3", releases = ["release/xray/300015", "release/xray/300016"], type = "replaces", source = "doc/xray/portal-3315" },
+  { kit = "kit/xray/t4", releases = ["release/xray/300019"], type = "replaces", source = "doc/xray/portal-4299" },
+]

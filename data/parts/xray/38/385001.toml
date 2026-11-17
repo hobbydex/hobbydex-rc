@@ -1,0 +1,19 @@
+id = "part/xray/385001"
+brand = "brand/xray"
+number = "385001"
+name = "Alu Adj. Ball Differential - Hard Coated - Set"
+released = "2004-03-20"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=809"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=809" },
+]
+category = "differential"
+documents = ["doc/xray/385001-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002", "release/xray/380003"], type = "replaces", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1503" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "replaces", source = "doc/xray/portal-1462" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "replaces", source = "doc/xray/portal-1657" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "replaces", source = "doc/xray/portal-1952" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "replaces", source = "doc/xray/portal-1690" },
+]

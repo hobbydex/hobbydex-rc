@@ -1,0 +1,19 @@
+id = "part/xray/308090"
+brand = "brand/xray"
+number = "308090"
+name = "Shock Foam Inserts (4)"
+released = "2004-02-02"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=771"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=771" },
+]
+pack_qty = 4
+pack_qty_basis = "name"
+category = "tire"
+documents = ["doc/xray/308090-product-page"]
+fits = [
+  { kit = "kit/xray/nt1", releases = ["release/xray/330000", "release/xray/330007", "release/xray/330100"], type = "replaces", source = "doc/xray/portal-2260" },
+  { kit = "kit/xray/rx8", releases = ["release/xray/340000"], type = "replaces", source = "doc/xray/portal-3902" },
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300002", "release/xray/300004", "release/xray/300100"], type = "replaces", source = "doc/xray/portal-123" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-792" },
+]

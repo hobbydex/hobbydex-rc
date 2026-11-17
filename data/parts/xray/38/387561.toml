@@ -1,0 +1,17 @@
+id = "part/xray/387561"
+brand = "brand/xray"
+number = "387561"
+name = "Nickel Coated Pivot Ball 5.8mm Type A (16)"
+released = "2006-04-20"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1706"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1706" },
+]
+pack_qty = 16
+pack_qty_basis = "name"
+category = "ball-end"
+documents = ["doc/xray/387561-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002", "release/xray/380003"], type = "direct", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "direct", source = "doc/xray/portal-1658" },
+]

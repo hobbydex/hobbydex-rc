@@ -1,0 +1,16 @@
+id = "part/xray/355138"
+brand = "brand/xray"
+number = "355138"
+name = "Active Diff Large Bevel Gear 38T"
+released = "2007-10-25"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2370"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2370" },
+]
+category = "differential"
+documents = ["doc/xray/355138-product-page"]
+fits = [
+  { kit = "kit/xray/xb8", releases = ["release/xray/350000", "release/xray/350001", "release/xray/350002", "release/xray/350100"], type = "replaces", source = "doc/xray/portal-1181" },
+  { kit = "kit/xray/xb9", releases = ["release/xray/350007"], type = "replaces", source = "doc/xray/portal-4154" },
+  { kit = "kit/xray/xb9e", releases = ["release/xray/350151"], type = "replaces", source = "doc/xray/portal-4680" },
+]

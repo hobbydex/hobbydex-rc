@@ -1,0 +1,15 @@
+id = "part/xray/301223"
+brand = "brand/xray"
+number = "301223"
+name = "Foam Bumper - Hard"
+released = "2007-04-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1971"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1971" },
+]
+category = "bumper-guard"
+documents = ["doc/xray/301223-product-page"]
+fits = [
+  { kit = "kit/xray/t2", releases = ["release/xray/300102"], type = "replaces", source = "doc/xray/portal-2913" },
+  { kit = "kit/xray/t3", releases = ["release/xray/300015", "release/xray/300016", "release/xray/300103"], type = "replaces", source = "doc/xray/portal-3315" },
+]

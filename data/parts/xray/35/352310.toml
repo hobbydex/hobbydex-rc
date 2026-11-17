@@ -1,0 +1,15 @@
+id = "part/xray/352310"
+brand = "brand/xray"
+number = "352310"
+name = "Alu Front Lower Susp. Holder - Front - 7075 T6 (5mm)"
+released = "2004-08-01"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1026"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1026" },
+]
+category = "suspension"
+documents = ["doc/xray/352310-product-page"]
+fits = [
+  { kit = "kit/xray/xb8", releases = ["release/xray/350002", "release/xray/350100"], type = "replaces", source = "doc/xray/portal-2246" },
+  { kit = "kit/xray/xt8", releases = ["release/xray/350200"], type = "replaces", source = "doc/xray/portal-2297" },
+]

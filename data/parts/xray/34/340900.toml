@@ -1,0 +1,15 @@
+id = "part/xray/340900"
+brand = "brand/xray"
+number = "340900"
+name = "RX8 - 2012 Specs Conversion Set"
+released = "2012-02-27"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4111"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4111" },
+]
+category = "misc"
+category_source = "fallback"
+documents = ["doc/xray/340900-product-page"]
+fits = [
+  { kit = "kit/xray/rx8", releases = ["release/xray/340000"], type = "replaces", source = "doc/xray/portal-3905" },
+]

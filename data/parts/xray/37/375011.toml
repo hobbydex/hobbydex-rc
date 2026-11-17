@@ -1,0 +1,16 @@
+id = "part/xray/375011"
+brand = "brand/xray"
+number = "375011"
+name = "Alu Rear Axle Shaft"
+released = "2010-09-21"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=3567"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=3567" },
+]
+category = "drivetrain"
+documents = ["doc/xray/375011-product-page"]
+fits = [
+  { kit = "kit/xray/x1", releases = ["release/xray/370700"], type = "replaces", source = "doc/xray/portal-5329" },
+  { kit = "kit/xray/x10", releases = ["release/xray/370500", "release/xray/370501"], type = "replaces", source = "doc/xray/portal-3219" },
+  { kit = "kit/xray/xii", releases = ["release/xray/370000", "release/xray/370001"], type = "replaces", source = "doc/xray/portal-3104" },
+]

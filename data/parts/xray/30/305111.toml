@@ -1,0 +1,15 @@
+id = "part/xray/305111"
+brand = "brand/xray"
+number = "305111"
+name = "Front Axle PRO With One-Way Bearings"
+released = "2002-10-09"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=498"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=498" },
+]
+category = "bearing"
+documents = ["doc/xray/305111-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "direct", source = "doc/xray/portal-122" },
+  { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-789" },
+]

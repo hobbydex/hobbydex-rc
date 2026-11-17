@@ -1,0 +1,17 @@
+id = "part/xray/302001"
+brand = "brand/xray"
+number = "302001"
+name = "Alu Susp. Adjust. Bulkheads - Factory Kit (4)"
+released = "2004-06-15"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=843"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=843" },
+]
+pack_qty = 4
+pack_qty_basis = "name"
+category = "chassis"
+documents = ["doc/xray/302001-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300002", "release/xray/300100"], type = "replaces", source = "doc/xray/portal-251" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-784" },
+]

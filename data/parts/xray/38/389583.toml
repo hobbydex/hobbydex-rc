@@ -1,0 +1,19 @@
+id = "part/xray/389583"
+brand = "brand/xray"
+number = "389583"
+name = "M18MT R/F Foam Tire Mounted (42Deg) - Purple (2)"
+released = "2007-10-08"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2352"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2352" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+color = "purple"
+category = "tire"
+documents = ["doc/xray/389583-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1511" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "replaces", source = "doc/xray/portal-1490" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "replaces", source = "doc/xray/portal-2272" },
+]

@@ -1,0 +1,17 @@
+id = "part/xray/385305"
+brand = "brand/xray"
+number = "385305"
+name = "Drive Shaft M18T - Hudy Spring Steel™ (2)"
+released = "2007-12-06"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2515"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2515" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "drivetrain"
+documents = ["doc/xray/385305-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1511" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "replaces", source = "doc/xray/portal-1490" },
+]

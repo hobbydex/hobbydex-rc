@@ -1,0 +1,16 @@
+id = "part/xray/389102"
+brand = "brand/xray"
+number = "389102"
+name = "M18T Power Pack Pro"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1273"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1273" },
+]
+category = "misc"
+category_source = "fallback"
+documents = ["doc/xray/389102-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1509" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "replaces", source = "doc/xray/portal-1468" },
+]

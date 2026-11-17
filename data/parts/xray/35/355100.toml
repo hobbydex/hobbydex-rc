@@ -1,0 +1,14 @@
+id = "part/xray/355100"
+brand = "brand/xray"
+number = "355100"
+name = "XB8 Active Differential™ 40T"
+released = "2007-10-25"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2363"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2363" },
+]
+category = "differential"
+documents = ["doc/xray/355100-product-page"]
+fits = [
+  { kit = "kit/xray/xb8", releases = ["release/xray/350000", "release/xray/350001", "release/xray/350002", "release/xray/350100"], type = "replaces", source = "doc/xray/portal-1181" },
+]

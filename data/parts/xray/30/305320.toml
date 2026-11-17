@@ -1,0 +1,17 @@
+id = "part/xray/305320"
+brand = "brand/xray"
+number = "305320"
+name = "Drive Shaft - 51 mm - Spring Steel (2)"
+released = "2001-05-18"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=168"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=168" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "drivetrain"
+documents = ["doc/xray/305320-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "replaces", source = "doc/xray/portal-119" },
+  { kit = "kit/xray/t2", releases = ["release/xray/300102"], type = "replaces", source = "doc/xray/portal-2913" },
+]

@@ -1,0 +1,15 @@
+id = "part/xray/325010"
+brand = "brand/xray"
+number = "325010"
+name = "Differential Short Output Shaft - HUDY Spring Steel™"
+released = "2015-11-13"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5652"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=5652" },
+]
+category = "differential"
+documents = ["doc/xray/325010-product-page"]
+fits = [
+  { kit = "kit/xray/xb2", car = "XB2 Carpet Edition", type = "replaces", source = "doc/xray/portal-5715" },
+  { kit = "kit/xray/xt2", releases = ["release/xray/xt2-2017"], type = "replaces", source = "doc/xray/portal-6184" },
+]

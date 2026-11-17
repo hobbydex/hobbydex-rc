@@ -1,0 +1,15 @@
+id = "part/xray/303070"
+brand = "brand/xray"
+number = "303070"
+name = "Belt Tensioner Set"
+released = "2001-05-18"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=134"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=134" },
+]
+category = "gear"
+documents = ["doc/xray/303070-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300002", "release/xray/300004", "release/xray/300100"], type = "replaces", source = "doc/xray/portal-119" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-788" },
+]

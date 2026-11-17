@@ -1,0 +1,22 @@
+id = "part/xray/358583"
+brand = "brand/xray"
+number = "358583"
+name = "Clutch Springs - Soft (3)"
+released = "2007-03-22"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2218"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2218" },
+]
+pack_qty = 3
+pack_qty_basis = "name"
+category = "engine-fuel"
+documents = ["doc/xray/358583-product-page"]
+fits = [
+  { kit = "kit/xray/gtx8", releases = ["release/xray/gtx8-2018"], type = "replaces", source = "doc/xray/portal-6380" },
+  { kit = "kit/xray/xb8", releases = ["release/xray/350002"], type = "replaces", source = "doc/xray/portal-2246" },
+  { kit = "kit/xray/xb808", releases = ["release/xray/350003"], type = "replaces", source = "doc/xray/portal-2779" },
+  { kit = "kit/xray/xb9", releases = ["release/xray/350007"], type = "replaces", source = "doc/xray/portal-4154" },
+  { kit = "kit/xray/xt8", releases = ["release/xray/350200"], type = "replaces", source = "doc/xray/portal-2297" },
+  { kit = "kit/xray/xt8", car = "XT8.2", type = "replaces", source = "doc/xray/portal-7426" },
+  { kit = "kit/xray/xt9", releases = ["release/xray/350202"], type = "replaces", source = "doc/xray/portal-4752" },
+]

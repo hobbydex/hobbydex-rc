@@ -1,0 +1,15 @@
+id = "part/xray/358710"
+brand = "brand/xray"
+number = "358710"
+name = "Alu Engine Mount - CNC Machined"
+released = "2004-08-01"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1142"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1142" },
+]
+category = "chassis"
+documents = ["doc/xray/358710-product-page"]
+fits = [
+  { kit = "kit/xray/xb8", releases = ["release/xray/350100"], type = "replaces", source = "doc/xray/portal-1384" },
+  { kit = "kit/xray/xt8", releases = ["release/xray/350200"], type = "replaces", source = "doc/xray/portal-2297" },
+]

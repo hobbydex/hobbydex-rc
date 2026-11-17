@@ -1,0 +1,16 @@
+id = "part/xray/305720"
+brand = "brand/xray"
+number = "305720"
+name = "Pinion Gear Alu Hard Coated 20T / 48"
+released = "2001-08-09"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=328"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=328" },
+]
+category = "pinion"
+documents = ["doc/xray/305720-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "replaces", source = "doc/xray/portal-127" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-796" },
+  { kit = "kit/xray/t3", releases = ["release/xray/300103"], type = "replaces", source = "doc/xray/portal-3512" },
+]

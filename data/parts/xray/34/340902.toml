@@ -1,0 +1,15 @@
+id = "part/xray/340902"
+brand = "brand/xray"
+number = "340902"
+name = "RX8E Conversion Set"
+released = "2018-05-23"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6887"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6887" },
+]
+category = "misc"
+category_source = "fallback"
+documents = ["doc/xray/340902-product-page"]
+fits = [
+  { kit = "kit/xray/rx8", releases = ["release/xray/340007"], type = "replaces", source = "doc/xray/portal-7408" },
+]

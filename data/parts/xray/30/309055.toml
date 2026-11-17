@@ -1,0 +1,17 @@
+id = "part/xray/309055"
+brand = "brand/xray"
+number = "309055"
+name = "Ball-Bearing 10x15x4 Rubber Sealed - Oil (12)"
+released = "2002-07-24"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=439"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=439" },
+]
+pack_qty = 12
+pack_qty_basis = "name"
+category = "bearing"
+documents = ["doc/xray/309055-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "direct", source = "doc/xray/portal-118" },
+  { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-787" },
+]

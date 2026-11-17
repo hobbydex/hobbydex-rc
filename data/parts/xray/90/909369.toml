@@ -1,0 +1,17 @@
+id = "part/xray/909369"
+brand = "brand/xray"
+number = "909369"
+name = "Screw Phillips SS 3.5x19 (10)"
+released = "2004-07-30"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=904"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=904" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+category = "screw"
+documents = ["doc/xray/909369-product-page"]
+fits = [
+  { kit = "kit/xray/xt8", releases = ["release/xray/350200"], type = "direct", source = "doc/xray/portal-2297" },
+  { kit = "kit/xray/xt9", releases = ["release/xray/350202"], type = "direct", source = "doc/xray/portal-4752" },
+]

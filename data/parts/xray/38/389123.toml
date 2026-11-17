@@ -1,0 +1,16 @@
+id = "part/xray/389123"
+brand = "brand/xray"
+number = "389123"
+name = "Battery 6-Cell -1100mAh NiMH- 7.2V"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1406"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1406" },
+]
+category = "battery"
+documents = ["doc/xray/389123-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002"], type = "direct", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1509" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500"], type = "direct", source = "doc/xray/portal-1468" },
+]

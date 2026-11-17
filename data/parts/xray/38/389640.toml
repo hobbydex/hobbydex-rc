@@ -1,0 +1,15 @@
+id = "part/xray/389640"
+brand = "brand/xray"
+number = "389640"
+name = "Rubber Tires + Inserts, F+R (40Deg)"
+released = "2003-12-05"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=728"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=728" },
+]
+category = "tire"
+documents = ["doc/xray/389640-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000"], type = "replaces", source = "doc/xray/portal-743" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "replaces", source = "doc/xray/portal-1664" },
+]

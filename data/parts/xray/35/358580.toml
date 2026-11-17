@@ -1,0 +1,18 @@
+id = "part/xray/358580"
+brand = "brand/xray"
+number = "358580"
+name = "Clutch Springs 0.9mm (3)"
+released = "2004-08-01"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1135"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1135" },
+]
+pack_qty = 3
+pack_qty_basis = "name"
+category = "engine-fuel"
+documents = ["doc/xray/358580-product-page"]
+fits = [
+  { kit = "kit/xray/xb8", releases = ["release/xray/350001", "release/xray/350100"], type = "replaces", source = "doc/xray/portal-1741" },
+  { kit = "kit/xray/xt8", car = "XT8.2", type = "replaces", source = "doc/xray/portal-7426" },
+  { kit = "kit/xray/xt9", releases = ["release/xray/350202"], type = "replaces", source = "doc/xray/portal-4752" },
+]

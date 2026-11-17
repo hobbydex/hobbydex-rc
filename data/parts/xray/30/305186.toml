@@ -1,0 +1,16 @@
+id = "part/xray/305186"
+brand = "brand/xray"
+number = "305186"
+name = "DelrinÂ® Solid Axle Body - Lightweight"
+released = "2006-08-25"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1822"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1822" },
+]
+category = "drivetrain"
+documents = ["doc/xray/305186-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300002", "release/xray/300004", "release/xray/300100"], type = "replaces", source = "doc/xray/portal-122" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-789" },
+  { kit = "kit/xray/t2", releases = ["release/xray/300006", "release/xray/300101"], type = "replaces", source = "doc/xray/portal-1608" },
+]

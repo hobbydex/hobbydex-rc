@@ -1,0 +1,16 @@
+id = "part/xray/305623"
+brand = "brand/xray"
+number = "305623"
+name = "Pinion Gear Steel 23T/48"
+released = "2002-10-11"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=229"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=229" },
+]
+category = "pinion"
+documents = ["doc/xray/305623-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "replaces", source = "doc/xray/portal-127" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-796" },
+  { kit = "kit/xray/t3", releases = ["release/xray/300103"], type = "replaces", source = "doc/xray/portal-3512" },
+]
