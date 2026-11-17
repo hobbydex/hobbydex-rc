@@ -9,3 +9,7 @@ category = "body"
 links = [
   { site = "JConcepts", url = "https://jconcepts.net/1990-chevy-s10-extended-cab-mt-body-13-wb" },
 ]
+fits = [
+  { kit = "kit/jconcepts/reactor", releases = ["release/jconcepts/9009"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/losi/lmt", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]

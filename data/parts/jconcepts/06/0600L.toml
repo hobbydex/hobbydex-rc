@@ -8,3 +8,7 @@ links = [
   { site = "JConcepts", url = "https://jconcepts.net/s15--b64-body" },
 ]
 gtin = "845937029614"
+fits = [
+  { kit = "kit/team-associated/rc10b6", releases = ["release/team-associated/90043"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/team-associated/rc10b64", releases = ["release/team-associated/90034", "release/team-associated/90035"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]

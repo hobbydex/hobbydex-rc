@@ -10,3 +10,7 @@ depicts = { make = "Chevrolet", model = "C10", year = 1970 }
 links = [
   { site = "JConcepts", url = "https://jconcepts.net/1970-chevy-c10-123-wheelbase" },
 ]
+fits = [
+  { kit = "kit/element-rc/enduro", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/traxxas/trx-4", releases = ["release/traxxas/82010-4", "release/traxxas/82024-4", "release/traxxas/82044-4", "release/traxxas/82224-4", "release/traxxas/82234-4"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]

@@ -11,3 +11,8 @@ links = [
 category = "misc"
 category_source = "fallback"
 gtin = "845937017789"
+fits = [
+  { kit = "kit/mugen/mbx7", releases = ["release/mugen/mbx-7r"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/mugen/mbx7-eco", releases = ["release/mugen/e2010"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/team-associated/rc8b3", releases = ["release/team-associated/80914", "release/team-associated/80916"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]

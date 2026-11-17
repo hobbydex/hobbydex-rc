@@ -12,3 +12,9 @@ links = [
 color = "white"
 gtin = "845937008336"
 range = "jconcepts/3354-colours"
+fits = [
+  { kit = "kit/schumacher/storm-st", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/team-associated/rc10t6", releases = ["release/team-associated/70004"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/team-associated/rc10t7", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/xray/xt2", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]
