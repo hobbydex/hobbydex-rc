@@ -1,0 +1,15 @@
+id = "part/xray/308330"
+brand = "brand/xray"
+number = "308330"
+name = "Composite Frame Shock Parts 4-Step - V2"
+released = "2006-01-31"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1567"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1567" },
+]
+category = "shock"
+documents = ["doc/xray/308330-product-page"]
+fits = [
+  { kit = "kit/xray/nt1", releases = ["release/xray/330000", "release/xray/330007", "release/xray/330100"], type = "replaces", source = "doc/xray/portal-2260" },
+  { kit = "kit/xray/rx8", releases = ["release/xray/340000"], type = "replaces", source = "doc/xray/portal-3902" },
+]

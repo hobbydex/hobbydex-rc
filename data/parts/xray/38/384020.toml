@@ -1,0 +1,15 @@
+id = "part/xray/384020"
+brand = "brand/xray"
+number = "384020"
+name = "Shim for Brake Holder"
+released = "2006-03-27"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1671"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1671" },
+]
+category = "washer-shim"
+documents = ["doc/xray/384020-product-page"]
+fits = [
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1956" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1694" },
+]

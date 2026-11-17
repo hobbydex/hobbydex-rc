@@ -1,0 +1,17 @@
+id = "part/xray/389995"
+brand = "brand/xray"
+number = "389995"
+name = "Inner Wheel Adaptors, F+R (4)"
+released = "2003-12-05"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=730"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=730" },
+]
+pack_qty = 4
+pack_qty_basis = "name"
+category = "drivetrain"
+documents = ["doc/xray/389995-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000"], type = "replaces", source = "doc/xray/portal-743" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "replaces", source = "doc/xray/portal-1658" },
+]

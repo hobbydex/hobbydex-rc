@@ -1,0 +1,15 @@
+id = "part/xray/302000"
+brand = "brand/xray"
+number = "302000"
+name = "Suspension Adjustable Bulkheads + Tool"
+released = "2002-03-29"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=422"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=422" },
+]
+category = "tool"
+documents = ["doc/xray/302000-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300100"], type = "direct", source = "doc/xray/portal-251" },
+  { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-784" },
+]

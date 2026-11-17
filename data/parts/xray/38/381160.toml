@@ -1,0 +1,15 @@
+id = "part/xray/381160"
+brand = "brand/xray"
+number = "381160"
+name = "Composite Micro Chassis M18T"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1411"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1411" },
+]
+category = "chassis"
+documents = ["doc/xray/381160-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1504" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500"], type = "replaces", source = "doc/xray/portal-1463" },
+]

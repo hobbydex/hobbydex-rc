@@ -1,0 +1,15 @@
+id = "part/xray/305180"
+brand = "brand/xray"
+number = "305180"
+name = "Alu Solid Axle Hard Coated - Set"
+released = "2002-11-27"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=545"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=545" },
+]
+category = "drivetrain"
+documents = ["doc/xray/305180-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "replaces", source = "doc/xray/portal-122" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-789" },
+]

@@ -1,0 +1,15 @@
+id = "part/xray/382411"
+brand = "brand/xray"
+number = "382411"
+name = "Anti-Roll Bar Front & Rear 1.0mm"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1419"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1419" },
+]
+category = "suspension"
+documents = ["doc/xray/382411-product-page"]
+fits = [
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "replaces", source = "doc/xray/portal-1467" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "replaces", source = "doc/xray/portal-1697" },
+]

@@ -1,0 +1,17 @@
+id = "part/xray/308071"
+brand = "brand/xray"
+number = "308071"
+name = "O-Ring 5x1 (4)"
+released = "2002-07-04"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=471"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=471" },
+]
+pack_qty = 4
+pack_qty_basis = "name"
+category = "o-ring-seal"
+documents = ["doc/xray/308071-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "direct", source = "doc/xray/portal-122" },
+  { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-792" },
+]

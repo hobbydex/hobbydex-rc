@@ -1,0 +1,19 @@
+id = "part/xray/971031"
+brand = "brand/xray"
+number = "971031"
+name = "Silicone O-Ring 3.1x1.6 (10)"
+released = "2004-07-30"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=998"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=998" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+category = "o-ring-seal"
+documents = ["doc/xray/971031-product-page"]
+fits = [
+  { kit = "kit/xray/nt1", releases = ["release/xray/330000", "release/xray/330007", "release/xray/330100"], type = "direct", source = "doc/xray/portal-2260" },
+  { kit = "kit/xray/rx8", releases = ["release/xray/340000"], type = "direct", source = "doc/xray/portal-3902" },
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "direct", source = "doc/xray/portal-123" },
+  { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-792" },
+]

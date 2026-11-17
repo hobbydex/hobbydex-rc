@@ -1,0 +1,16 @@
+id = "part/xray/303240"
+brand = "brand/xray"
+number = "303240"
+name = "Ball Universal 5.8mm Hex (4+4)"
+released = "2001-05-18"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=202"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=202" },
+]
+category = "ball-end"
+documents = ["doc/xray/303240-product-page"]
+fits = [
+  { kit = "kit/xray/rx8", releases = ["release/xray/340000"], type = "direct", source = "doc/xray/portal-3899" },
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "direct", source = "doc/xray/portal-119" },
+  { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-790" },
+]

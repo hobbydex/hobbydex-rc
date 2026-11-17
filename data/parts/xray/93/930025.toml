@@ -1,0 +1,19 @@
+id = "part/xray/930025"
+brand = "brand/xray"
+number = "930025"
+name = "Ball-Bearing Axial 2.5x5.4x0.8"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1459"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1459" },
+]
+category = "bearing"
+documents = ["doc/xray/930025-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380002", "release/xray/380003"], type = "direct", source = "doc/xray/portal-1962" },
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1503" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "direct", source = "doc/xray/portal-1462" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "direct", source = "doc/xray/portal-1657" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1952" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1690" },
+]

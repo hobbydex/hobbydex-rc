@@ -1,0 +1,15 @@
+id = "part/xray/301214"
+brand = "brand/xray"
+number = "301214"
+name = "Graphite Upper Holder For Precut Bumper"
+released = "2001-05-19"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=255"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=255" },
+]
+category = "chassis"
+documents = ["doc/xray/301214-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "replaces", source = "doc/xray/portal-125" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-794" },
+]

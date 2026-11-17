@@ -1,0 +1,16 @@
+id = "part/xray/384110"
+brand = "brand/xray"
+number = "384110"
+name = "Brake Disk - Laser Cut - Precision-Ground"
+released = "2006-03-13"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1616"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1616" },
+]
+category = "drivetrain"
+documents = ["doc/xray/384110-product-page"]
+fits = [
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "replaces", source = "doc/xray/portal-1659" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "replaces", source = "doc/xray/portal-1954" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "replaces", source = "doc/xray/portal-1692" },
+]
