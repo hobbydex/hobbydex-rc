@@ -1,14 +1,18 @@
 id = "part/yokomo/MRTC-BD5WX"
 brand = "brand/yokomo"
 number = "MRTC-BD5WX"
-name = "MRTC-BD5WX"
+name = "電動4WDツーリングカー MR-4TC BD5WX フロントソリッド＆リアギヤデフ仕様"
 name_ja = "MRTC-BD5WX"
 links = [
   { site = "Yokomo", url = "https://www.teamyokomo.com/products/mrtc-bd5wx" },
 ]
 notes = "English translated by Hobbydex from Yokomo's Japanese name (name_ja); Discontinued (the store's lifecycle tag)"
 status = "discontinued"
-seen_by = "2012-02-04"
-seen_by_source = "https://web.archive.org/web/20120204051457/http://www.teamyokomo.com:80/jpn/product/onroad/bd5wx/mr4tc_bd5wx.html"
+seen_by = "2011-04-09"
+seen_by_source = "https://web.archive.org/web/20110409080840/http://www.teamyokomo.com:80/jpn/news/order_sheet/11/110301_bd5wx.pdf"
 category = "misc"
 category_source = "fallback"
+name_source = "manufacturer"
+fits = [
+  { kit = "kit/yokomo/mr-4tc", type = "replaces", source = "doc/yokomo/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

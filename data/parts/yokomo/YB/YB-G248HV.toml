@@ -1,0 +1,22 @@
+id = "part/yokomo/YB-G248HV"
+brand = "brand/yokomo"
+number = "YB-G248HV"
+name = "MAX POWER Short Size HV Li-po 4800mAh / 7.6v 140C Battery"
+seen_by = "2026-10-27"
+seen_by_source = "https://www.teamyokomo.com/products/yb-g248hv"
+name_ja = "ヨコモ MAX POWER ショートサイズ HV Li-po 4800mAh/7.6v 140C バッテリー"
+category = "battery"
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/yb-g248hv" },
+]
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+chemistry = "lihv"
+voltage = 7.6
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+capacity_mah = 4800
+c_rating = 140
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
