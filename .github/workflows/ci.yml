@@ -58,9 +58,9 @@ jobs:
         run: python3 -I tools/test_audit_family_kit.py
       - name: The audit's spec-unlinked check counts includes and protocols as use
         run: python3 -I tools/test_audit_spec_unlinked.py
-      - name: The audit's service-pack, body-set, name-count and title-language rules
+      - name: The audit's service-pack, body-set, name-count, title-language and Tamiya German-name rules
         run: |
-          for t in test_audit_service_pack test_audit_body_set test_audit_pack_count test_audit_title_language test_audit_gtin_in_cache; do
+          for t in test_audit_service_pack test_audit_body_set test_audit_pack_count test_audit_title_language test_audit_gtin_in_cache test_audit_tamiya_german; do
             echo "== $t"
             python3 -I "tools/$t.py"
           done
