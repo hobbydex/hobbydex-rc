@@ -37,16 +37,17 @@ def test_release_has_kit(hard):
     """Every release names its kit, and the kit exists and is of the same brand."""
     hard("""SELECT r.id AS record, CASE WHEN k.id IS NULL THEN 'kit ' || coalesce(json_extract(r.data, '$.kit'), '(none)') || ' does not exist'
           ELSE 'kit ' || k.id || ' is of ' || json_extract(k.data, '$.brand') END AS problem
-        FROM records r LEFT JOIN records k ON k.id = json_extract(r.data, '$.kit') AND k.kind = 'kit'
+        FROM records r LEFT JOIN records k ON k.id = json_extract(r.data, '$.kit') AND +k.kind = 'kit'
         WHERE r.kind = 'release' AND (k.id IS NULL OR json_extract(k.data, '$.brand') != json_extract(r.data, '$.brand'))""")
 
 
 def test_release_has_number(ratchet):
-    """Releases of a brand that prints item numbers but with no number yet. The count may only shrink."""
+    """Releases of a brand that prints item numbers but with no number yet. Reported, not blocking: importers still add
+    releases a source names without a number (partial records are kept)."""
     ratchet("release-no-number", """SELECT r.id AS record, 'no number' AS problem FROM records r
         LEFT JOIN records b ON b.id = json_extract(r.data, '$.brand')
         WHERE r.kind = 'release' AND json_extract(r.data, '$.number') IS NULL
-          AND coalesce(json_extract(b.data, '$.item_numbers'), 1) != 0""")
+          AND coalesce(json_extract(b.data, '$.item_numbers'), 1) != 0""", blocking=False)
 
 
 def test_kit_has_category(hard):
@@ -56,9 +57,10 @@ def test_kit_has_category(hard):
 
 
 def test_kit_has_scale(ratchet):
-    """Kits with no scale yet (a family kit takes none). The count may only shrink."""
+    """Kits with no scale yet (a family kit takes none). Reported, not blocking: a scale is set only when a source
+    states it, and new kits often come without one."""
     ratchet("kit-no-scale", """SELECT k.id AS record, 'no scale' AS problem FROM records k
-        WHERE k.kind = 'kit' AND json_extract(k.data, '$.scale') IS NULL AND coalesce(json_extract(k.data, '$.family'), 0) = 0""")
+        WHERE k.kind = 'kit' AND json_extract(k.data, '$.scale') IS NULL AND coalesce(json_extract(k.data, '$.family'), 0) = 0""", blocking=False)
 
 
 def test_doc_has_kind(hard):

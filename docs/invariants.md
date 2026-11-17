@@ -10,7 +10,7 @@ python3 -m pytest tests/invariants -n auto      # on any checkout of this reposi
 ```
 
 The data tree is parsed once per run into an SQLite snapshot (`tests/invariants/snapshot.py`, about 30 s with four
-processes); every test worker opens that file read-only, so each check is one query. `records(id, kind, path, data)`
+processes, about 700 MB under `~/.cache`, or `INVARIANTS_TMP`; removed after the run); every test worker opens that file read-only, so each check is one query. `records(id, kind, path, data)`
 holds every record file, `data` the record as JSON (`json_extract`, `json_each`); the tables `docs`, `links`,
 `list_values` (the plain string lists) and `list_rows` (fits, contains and includes rows) are built from it with
 their indexes. `norm_url(u)` compares pages without scheme, `www.`, fragment or trailing slash; `video_id(u)` gives

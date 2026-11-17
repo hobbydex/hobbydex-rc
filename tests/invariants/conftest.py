@@ -36,10 +36,17 @@ def pytest_configure(config):
         config.invariants_db = config.getoption("--snapshot")
         return
     t0 = time.monotonic()
-    d = tempfile.mkdtemp(prefix="hobbydex-invariants-")
+    d = tempfile.mkdtemp(prefix="hobbydex-invariants-", dir=snapshot_dir())
     config.invariants_db = os.path.join(d, "snapshot.sqlite")
     n = snapshot.build_tree(config.invariants_db)
     config.invariants_load = (n, time.monotonic() - t0)
+
+
+def snapshot_dir():
+    """Where the snapshot (about 700 MB) is written: INVARIANTS_TMP, else ~/.cache (on disk; /tmp may be RAM)."""
+    d = os.environ.get("INVARIANTS_TMP") or os.path.join(os.path.expanduser("~"), ".cache")
+    os.makedirs(d, exist_ok=True)
+    return d
 
 
 def pytest_configure_node(node):   # xdist hook: hand the snapshot path to each worker
