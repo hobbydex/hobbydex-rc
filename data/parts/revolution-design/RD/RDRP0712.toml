@@ -7,5 +7,9 @@ gtin = "4052133036124"
 documents = ["doc/revolution-design/store"]
 links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Revolution-Design-XB4-26-25-Aluminium-Bellcranks_1" },
+  { site = "RUDDOG", url = "https://www.ruddog.eu/Revolution-Design-XB4-25-Aluminium-Bellcranks_1" },
+]
+fits = [
+  { kit = "kit/xray/xb4", releases = ["release/xray/360017", "release/xray/360018"], type = "replaces", source = "doc/revolution-design/store", notes = "Maker page: compatible with the Team Xray XB4 2025 and previous XB4 platforms; replaces the standard plastic bellcrank steering (servo saver removed)" },
 ]
 material = "aluminium"
