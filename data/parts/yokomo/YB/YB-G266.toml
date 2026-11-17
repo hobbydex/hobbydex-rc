@@ -1,0 +1,27 @@
+id = "part/yokomo/YB-G266"
+brand = "brand/yokomo"
+number = "YB-G266"
+name = "MAX POWER Standard LCG Li-po 6600mAh / 7.4v 140C Battery"
+seen_by = "2026-10-27"
+seen_by_source = "https://www.teamyokomo.com/products/yb-g266"
+name_ja = "ヨコモ MAX POWER スタンダード LCG Li-po 6600mAh/7.4v 140C バッテリー"
+category = "battery"
+fits = [
+  { kit = "kit/yokomo/ms", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS1.0, MS2.0, MS2.1" },
+  { kit = "kit/yokomo/msfwd", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for MS FWD" },
+  { kit = "kit/yokomo/rs", type = "direct", source = "doc/yokomo/store", notes = "Yokomo's store lists it for RS1.0, RS2.0" },
+]
+links = [
+  { site = "Yokomo", url = "https://www.teamyokomo.com/products/yb-g266" },
+]
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+chemistry = "lipo"
+voltage = 7.4
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+capacity_mah = 6600
+c_rating = 140
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
