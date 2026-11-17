@@ -3,4 +3,10 @@ brand = "brand/zenoah"
 number = "T2070-81460"
 name = "SHAFT choke"
 category = "drivetrain"
-documents = ["doc/zenoah/g320rc-manual"]
+documents = ["doc/zenoah/g320rc-manual", "doc/zenoah/zenoah-it-g230rc-parts-list", "doc/zenoah/zenoah-it-g260rc-parts-list", "doc/zenoah/zenoah-it-g320rc-parts-list"]
+applies_to = "G230RC, G260RC, G320RC"
+related = [
+  { part = "part/zenoah/966244201", relation = "fits" },
+  { part = "part/zenoah/966245901", relation = "fits" },
+  { part = "part/zenoah/967289001", relation = "fits" },
+]

@@ -11,3 +11,8 @@ links = [
 ]
 gtin = "845937025890"
 mounting = "pre-mounted"
+fits = [
+  { kit = "kit/arrma/kraton-8s", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/traxxas/x-maxx", releases = ["release/traxxas/77076-4", "release/traxxas/77086-4", "release/traxxas/77096-4", "release/traxxas/77136-4"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/traxxas/xrt", releases = ["release/traxxas/78086-4"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]

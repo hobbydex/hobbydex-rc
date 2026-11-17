@@ -10,3 +10,7 @@ applies_to = "Rustler, Stampede 2WD"
 gtin = "672415706640"
 category = "suspension"
 color = "green"
+fits = [
+  { kit = "kit/traxxas/rustler-2wd", type = "replaces", source = "doc/rpm/horizon-pages", notes = "Car named in the part's title on the distributor's page (horizonhobby.com)" },
+  { kit = "kit/traxxas/stampede-2wd", type = "replaces", source = "doc/rpm/horizon-pages", notes = "Car named in the part's title on the distributor's page (horizonhobby.com)" },
+]

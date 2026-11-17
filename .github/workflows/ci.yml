@@ -36,6 +36,8 @@ jobs:
           done
       - name: File names and ids use only letters, digits and . _ + -
         run: python3 -I tools/test_validate_safe_names.py
+      - name: A brand's archived website is a dated capture of its own host
+        run: python3 -I tools/test_validate_website_archive.py
       - name: A part name of qualifiers only (a side, colour, hardness, size or set) is refused
         run: python3 -I tools/test_validate_qualifier_names.py
       - name: The regression check counts a changed or dropped note, name or row note as a regression
@@ -56,11 +58,9 @@ jobs:
         run: python3 -I tools/test_audit_family_kit.py
       - name: The audit's spec-unlinked check counts includes and protocols as use
         run: python3 -I tools/test_audit_spec_unlinked.py
-      - name: The audit's size-no-spec sub-classes (a part no spec kind holds is no linker gap)
-        run: python3 -I tools/test_audit_hw_size_subclasses.py
-      - name: The audit's service-pack, body-set, name-count and title-language rules
+      - name: The audit's service-pack, body-set, name-count, title-language and Tamiya German-name rules
         run: |
-          for t in test_audit_service_pack test_audit_body_set test_audit_name_count test_audit_pack_count test_audit_title_language test_audit_gtin_in_cache; do
+          for t in test_audit_service_pack test_audit_body_set test_audit_pack_count test_audit_title_language test_audit_gtin_in_cache test_audit_name_german; do
             echo "== $t"
             python3 -I "tools/$t.py"
           done

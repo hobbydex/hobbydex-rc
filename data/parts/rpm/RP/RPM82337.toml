@@ -18,3 +18,6 @@ wheel_size = "2.2\"/3.0\""
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
+fits = [
+  { kit = "kit/traxxas/slash-4x4", type = "replaces", source = "doc/rpm/horizon-pages", notes = "Car named in the part's title on the distributor's page (horizonhobby.com)" },
+]

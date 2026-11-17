@@ -10,3 +10,7 @@ depicts = { make = "Ford", model = "Raptor", year = 2020 }
 links = [
   { site = "JConcepts", url = "https://jconcepts.net/2020-ford-raptor-body--bf-power-logo-mt-body.html" },
 ]
+fits = [
+  { kit = "kit/jconcepts/reactor", releases = ["release/jconcepts/9009"], type = "direct", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/losi/lmt", type = "direct", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]

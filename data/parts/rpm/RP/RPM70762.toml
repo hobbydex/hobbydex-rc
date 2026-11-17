@@ -13,3 +13,8 @@ pack_qty = 2
 pack_qty_basis = "name"
 color = "black"
 material = "plastic"
+fits = [
+  { kit = "kit/team-associated/gt2", type = "replaces", source = "doc/rpm/horizon-pages", notes = "Car named in the part's title on the distributor's page (horizonhobby.com)" },
+  { kit = "kit/team-associated/rc10t4", releases = ["release/team-associated/7022", "release/team-associated/7024"], type = "replaces", source = "doc/rpm/horizon-pages", notes = "Car named in the part's title on the distributor's page (horizonhobby.com)" },
+  { kit = "kit/team-associated/sc10", type = "replaces", source = "doc/rpm/horizon-pages", notes = "Car named in the part's title on the distributor's page (horizonhobby.com)" },
+]

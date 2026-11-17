@@ -2,11 +2,14 @@ id = "part/gl-racing/GLF-OP-011"
 brand = "brand/gl-racing"
 number = "GLF-OP-011"
 name = "GLF Aluminium steering Crank"
-seen_by = "2021-01-06"
-seen_by_source = "https://web.archive.org/web/20210106230630/http://gl-racing.com/store/bmz_cache/g/glr-glf-op-011.image.140x84.jpg"
+seen_by = "2019-10-01"
+seen_by_source = "https://web.archive.org/web/20191001015636/http://gl-racing.com:80/store/glf1-options-c-63/glf-alumsteering-crank-p-449.html"
 name_source = "dealer"
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?GL-Racing-GLF-1-Parts-Hop-Ups-Upgrades&brand=GL%20Racing&model=GLF-1&id=189148&pid=1", kind = "dealer" },
 ]
 category = "steering"
 material = "aluminium"
+fits = [
+  { kit = "kit/gl-racing/glf-1", type = "replaces", source = "doc/gl-racing/asiatees" },
+]

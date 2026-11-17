@@ -10,3 +10,8 @@ links = [
   { site = "JConcepts", url = "https://jconcepts.net/aero-b62-b74-rear-wing" },
 ]
 gtin = "845937015846"
+fits = [
+  { kit = "kit/team-associated/rc10b7", releases = ["release/team-associated/90041"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/team-associated/rc10b74", releases = ["release/team-associated/90027"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/team-associated/rc10b84", releases = ["release/team-associated/90050", "release/team-associated/90051", "release/team-associated/90055", "release/team-associated/90056"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]
