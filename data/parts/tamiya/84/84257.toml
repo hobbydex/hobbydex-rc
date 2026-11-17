@@ -4,11 +4,13 @@ number = "84257"
 name = "Avante Torque Splitter Set"
 seen_by = "2025-08-23"
 seen_by_source = "https://web.archive.org/web/20250823180556/https://www.tamiyausa.com/parts/15428page/4/"
-category = "misc"
-category_source = "fallback"
+category = "body"
 documents = ["doc/tamiya/84257-avante-torque-splitter-set"]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=74735&pid=1", kind = "dealer" },
   { site = "Tamiya Germany", url = "https://customer-service.tamiya.de/en/service/manuals/?lp=38&ln=90&ls=name-asc&ps=", kind = "maker" },
 ]
 name_source = "manufacturer"
+fits = [
+  { kit = "kit/tamiya/avante", type = "replaces", source = "doc/tamiya/84257-avante-torque-splitter-set", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
