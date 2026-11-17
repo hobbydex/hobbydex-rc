@@ -1,0 +1,16 @@
+id = "part/xray/389163"
+brand = "brand/xray"
+number = "389163"
+name = "Micro Motor 370 SuperSize"
+released = "2006-12-15"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1819"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1819" },
+]
+category = "motor"
+documents = ["doc/xray/389163-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002", "release/xray/380003"], type = "replaces", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1511" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "replaces", source = "doc/xray/portal-1490" },
+]

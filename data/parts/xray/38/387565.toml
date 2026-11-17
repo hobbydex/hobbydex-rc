@@ -1,0 +1,19 @@
+id = "part/xray/387565"
+brand = "brand/xray"
+number = "387565"
+name = "M18T Nickel Coated Pivot Ball 6.3mm Type D (2)"
+released = "2006-03-27"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1679"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1679" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "ball-end"
+documents = ["doc/xray/387565-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1511" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "direct", source = "doc/xray/portal-1490" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1954" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1692" },
+]

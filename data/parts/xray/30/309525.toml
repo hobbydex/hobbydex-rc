@@ -1,0 +1,16 @@
+id = "part/xray/309525"
+brand = "brand/xray"
+number = "309525"
+name = "Silicone Oil 25W"
+released = "2005-03-16"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1265"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1265" },
+]
+category = "oil-grease"
+documents = ["doc/xray/309525-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "direct", source = "doc/xray/portal-123" },
+  { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-792" },
+  { kit = "kit/xray/t4", releases = ["release/xray/300019"], type = "direct", source = "doc/xray/portal-4299" },
+]

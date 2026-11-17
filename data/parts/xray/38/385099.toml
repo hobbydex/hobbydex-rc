@@ -1,0 +1,21 @@
+id = "part/xray/385099"
+brand = "brand/xray"
+number = "385099"
+name = "Ball Diff Washer 9 x 14 x 0.5 (2)"
+released = "2004-07-16"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=876"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=876" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "washer-shim"
+documents = ["doc/xray/385099-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380003"], type = "direct", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1503" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500"], type = "direct", source = "doc/xray/portal-1462" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "direct", source = "doc/xray/portal-1657" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1952" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1690" },
+]

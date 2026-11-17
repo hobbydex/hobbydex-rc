@@ -1,0 +1,15 @@
+id = "part/xray/385665"
+brand = "brand/xray"
+number = "385665"
+name = "Steel Spur Gear 65T / 48 + Composite Spur Gear Adapter"
+released = "2006-12-01"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1897"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1897" },
+]
+category = "spur-gear"
+documents = ["doc/xray/385665-product-page"]
+fits = [
+  { kit = "kit/xray/m18t", releases = ["release/xray/380501"], type = "replaces", source = "doc/xray/portal-2563" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "replaces", source = "doc/xray/portal-1952" },
+]

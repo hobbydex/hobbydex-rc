@@ -1,0 +1,15 @@
+id = "part/xray/303484"
+brand = "brand/xray"
+number = "303484"
+name = "Anti-Roll Bar Rear 1.4mm"
+released = "2006-02-01"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1753"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1753" },
+]
+category = "suspension"
+documents = ["doc/xray/303484-product-page"]
+fits = [
+  { kit = "kit/xray/t2", releases = ["release/xray/300102"], type = "replaces", source = "doc/xray/portal-2913" },
+  { kit = "kit/xray/t3", releases = ["release/xray/300015", "release/xray/300016", "release/xray/300103"], type = "replaces", source = "doc/xray/portal-3315" },
+]

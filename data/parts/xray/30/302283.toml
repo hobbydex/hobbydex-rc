@@ -1,0 +1,15 @@
+id = "part/xray/302283"
+brand = "brand/xray"
+number = "302283"
+name = "Composite C-Hub Front Block, Left - Soft - 3°"
+released = "2003-03-24"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=599"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=599" },
+]
+category = "suspension"
+documents = ["doc/xray/302283-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300002", "release/xray/300004", "release/xray/300100"], type = "replaces", source = "doc/xray/portal-120" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-790" },
+]

@@ -1,0 +1,16 @@
+id = "part/xray/385101"
+brand = "brand/xray"
+number = "385101"
+name = "Front One-way Differential - Set - Blue"
+released = "2004-03-20"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=810"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=810" },
+]
+color = "blue"
+category = "differential"
+documents = ["doc/xray/385101-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002", "release/xray/380003"], type = "replaces", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "replaces", source = "doc/xray/portal-1657" },
+]

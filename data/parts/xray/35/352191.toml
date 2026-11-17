@@ -1,0 +1,19 @@
+id = "part/xray/352191"
+brand = "brand/xray"
+number = "352191"
+name = "XB9 Graphite Front Lower Arm Plate 1.6mm (2)"
+released = "2013-05-14"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4472"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4472" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "suspension"
+documents = ["doc/xray/352191-product-page"]
+fits = [
+  { kit = "kit/xray/xb808", releases = ["release/xray/350003"], type = "replaces", source = "doc/xray/portal-2779" },
+  { kit = "kit/xray/xb808e", releases = ["release/xray/350150"], type = "replaces", source = "doc/xray/portal-3620" },
+  { kit = "kit/xray/xb9", releases = ["release/xray/350007"], type = "replaces", source = "doc/xray/portal-4154" },
+  { kit = "kit/xray/xb9e", releases = ["release/xray/350151"], type = "replaces", source = "doc/xray/portal-4680" },
+]

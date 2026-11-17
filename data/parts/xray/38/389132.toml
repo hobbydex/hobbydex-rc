@@ -1,0 +1,15 @@
+id = "part/xray/389132"
+brand = "brand/xray"
+number = "389132"
+name = "Charging Cable for Receiver/Batt. Pack"
+released = "2006-03-27"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1704"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1704" },
+]
+category = "wire"
+documents = ["doc/xray/389132-product-page"]
+fits = [
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1956" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1694" },
+]

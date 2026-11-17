@@ -1,0 +1,16 @@
+id = "part/xray/326170"
+brand = "brand/xray"
+number = "326170"
+name = "XB2 Alu + Graphite Fully Adjustable Battery Holder"
+released = "2019-03-27"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7240"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7240" },
+]
+category = "chassis"
+documents = ["doc/xray/326170-product-page"]
+fits = [
+  { kit = "kit/xray/xb2", car = "XB2 Carpet Edition", type = "replaces", source = "doc/xray/portal-5715" },
+  { kit = "kit/xray/xb2", car = "XB2 Dirt Edition", type = "replaces", source = "doc/xray/portal-5744" },
+  { kit = "kit/xray/xt2", releases = ["release/xray/xt2-2017"], type = "replaces", source = "doc/xray/portal-6184" },
+]

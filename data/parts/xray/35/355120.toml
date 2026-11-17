@@ -1,0 +1,19 @@
+id = "part/xray/355120"
+brand = "brand/xray"
+number = "355120"
+name = "Active Diff Case"
+released = "2007-10-25"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2364"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2364" },
+]
+category = "differential"
+documents = ["doc/xray/355120-product-page"]
+fits = [
+  { kit = "kit/xray/xb9", releases = ["release/xray/350007"], type = "replaces", source = "doc/xray/portal-4154" },
+  { kit = "kit/xray/xb9e", releases = ["release/xray/350151"], type = "replaces", source = "doc/xray/portal-4680" },
+  { kit = "kit/xray/xt8", releases = ["release/xray/350200"], type = "replaces", source = "doc/xray/portal-2297" },
+  { kit = "kit/xray/xt8", car = "XT8.2", type = "replaces", source = "doc/xray/portal-7426" },
+  { kit = "kit/xray/xt8e", car = "XT8E.2", type = "replaces", source = "doc/xray/portal-7477" },
+  { kit = "kit/xray/xt9", releases = ["release/xray/350202"], type = "replaces", source = "doc/xray/portal-4752" },
+]

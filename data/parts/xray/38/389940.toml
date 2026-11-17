@@ -1,0 +1,19 @@
+id = "part/xray/389940"
+brand = "brand/xray"
+number = "389940"
+name = "M18MT Starburst Wheels (4)"
+released = "2006-01-04"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1494"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1494" },
+]
+pack_qty = 4
+pack_qty_basis = "name"
+category = "wheel"
+documents = ["doc/xray/389940-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1508" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "replaces", source = "doc/xray/portal-1467" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "replaces", source = "doc/xray/portal-1959" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "replaces", source = "doc/xray/portal-1697" },
+]

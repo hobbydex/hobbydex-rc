@@ -1,0 +1,18 @@
+id = "part/xray/970030"
+brand = "brand/xray"
+number = "970030"
+name = "O-Ring 3.0x1.5 (10)"
+released = "2019-03-18"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7305"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7305" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+category = "o-ring-seal"
+documents = ["doc/xray/970030-product-page"]
+fits = [
+  { kit = "kit/xray/xb2", car = "XB2 Carpet Edition", type = "direct", source = "doc/xray/portal-5715" },
+  { kit = "kit/xray/xb2", car = "XB2 Dirt Edition", type = "direct", source = "doc/xray/portal-5744" },
+  { kit = "kit/xray/xt2", releases = ["release/xray/xt2-2017"], type = "direct", source = "doc/xray/portal-6184" },
+]

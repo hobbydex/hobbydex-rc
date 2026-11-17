@@ -1,0 +1,15 @@
+id = "part/xray/389114"
+brand = "brand/xray"
+number = "389114"
+name = "Intellect Battery Pack 6-Cell 1400mAh NiMH - 7.2V"
+released = "2007-10-02"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2342"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2342" },
+]
+category = "battery"
+documents = ["doc/xray/389114-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1509" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380501"], type = "direct", source = "doc/xray/portal-2563" },
+]

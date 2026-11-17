@@ -1,0 +1,15 @@
+id = "part/xray/301230"
+brand = "brand/xray"
+number = "301230"
+name = "Composite Bumper Rear"
+released = "2003-04-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=645"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=645" },
+]
+category = "bumper-guard"
+documents = ["doc/xray/301230-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300002"], type = "replaces", source = "doc/xray/portal-528" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-793" },
+]

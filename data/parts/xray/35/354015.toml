@@ -1,0 +1,20 @@
+id = "part/xray/354015"
+brand = "brand/xray"
+number = "354015"
+name = "Alu Center Diff Mounting Plate Set (2)"
+released = "2006-06-14"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1791"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1791" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "chassis"
+documents = ["doc/xray/354015-product-page"]
+fits = [
+  { kit = "kit/xray/xb8", releases = ["release/xray/350000", "release/xray/350001", "release/xray/350002", "release/xray/350100"], type = "replaces", source = "doc/xray/portal-1181" },
+  { kit = "kit/xray/xt8", releases = ["release/xray/350200"], type = "replaces", source = "doc/xray/portal-2297" },
+  { kit = "kit/xray/xt8", car = "XT8.2", type = "replaces", source = "doc/xray/portal-7426" },
+  { kit = "kit/xray/xt8e", car = "XT8E.2", type = "replaces", source = "doc/xray/portal-7477" },
+  { kit = "kit/xray/xt9", releases = ["release/xray/350202"], type = "replaces", source = "doc/xray/portal-4752" },
+]

@@ -1,0 +1,15 @@
+id = "part/xray/305550"
+brand = "brand/xray"
+number = "305550"
+name = "Low Ratio Pulley Set (ratio 1.77)"
+released = "2003-06-16"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=668"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=668" },
+]
+category = "gear"
+documents = ["doc/xray/305550-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300002", "release/xray/300100"], type = "replaces", source = "doc/xray/portal-118" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-787" },
+]

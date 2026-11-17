@@ -1,0 +1,17 @@
+id = "part/xray/385262"
+brand = "brand/xray"
+number = "385262"
+name = "Alu Wheel Nut (2)"
+released = "2006-12-06"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1919"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1919" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "nut"
+documents = ["doc/xray/385262-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002", "release/xray/380003"], type = "direct", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "direct", source = "doc/xray/portal-1664" },
+]

@@ -1,0 +1,15 @@
+id = "part/xray/302501"
+brand = "brand/xray"
+number = "302501"
+name = "Dual-Ackerman Central Servo Saver"
+released = "2002-03-29"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=423"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=423" },
+]
+category = "steering"
+documents = ["doc/xray/302501-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "replaces", source = "doc/xray/portal-121" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-791" },
+]

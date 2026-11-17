@@ -1,0 +1,14 @@
+id = "part/xray/301111"
+brand = "brand/xray"
+number = "301111"
+name = "eXtra Rigid Chassis (XRC) - Graphite 3.5mm"
+released = "2004-07-23"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=869"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=869" },
+]
+category = "chassis"
+documents = ["doc/xray/301111-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300002", "release/xray/300004", "release/xray/300100"], type = "replaces", source = "doc/xray/portal-251" },
+]

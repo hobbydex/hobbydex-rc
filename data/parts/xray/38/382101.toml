@@ -1,0 +1,15 @@
+id = "part/xray/382101"
+brand = "brand/xray"
+number = "382101"
+name = "Set of Suspension Arms, Lower + Upper (2+1+1) - Hard"
+released = "2006-03-13"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1613"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1613" },
+]
+category = "suspension"
+documents = ["doc/xray/382101-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002", "release/xray/380003"], type = "replaces", source = "doc/xray/portal-744" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "replaces", source = "doc/xray/portal-1658" },
+]
