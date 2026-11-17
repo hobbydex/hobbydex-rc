@@ -2,11 +2,15 @@ id = "part/xray/308322"
 brand = "brand/xray"
 number = "308322"
 name = "ALU XRAY SHOCK BODY FOR #308306"
+released = "2008-06-23"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2768"
 pack_qty = 2
 pack_qty_basis = "manual"
 category = "shock"
 material = "aluminium"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2768" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2768" },
+]
 fits = [
   { kit = "kit/xray/nt1", releases = ["release/xray/330008", "release/xray/330009", "release/xray/nt1-2017", "release/xray/nt1-2018", "release/xray/nt1-2023", "release/xray/nt1-2027"], type = "direct", source = "doc/xray/nt1-2027-part-list" },
   { kit = "kit/xray/rx8", releases = ["release/xray/rx8-2013", "release/xray/rx8-2014", "release/xray/rx8-2017", "release/xray/rx8-2018", "release/xray/rx8-2023", "release/xray/rx8-2026"], type = "direct", source = "doc/xray/rx8-2026-part-list" },

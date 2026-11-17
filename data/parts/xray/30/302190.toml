@@ -2,12 +2,16 @@ id = "part/xray/302190"
 brand = "brand/xray"
 number = "302190"
 name = "GRAPHITE FRONT LOWER ARM PLATE 1.6MM"
+released = "2014-01-17"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4712"
 pack_qty = 2
 pack_qty_basis = "manual"
 former_names = ["GRAPHITE FRONT LOWER ARM PLATE 1.6MM (L+R)"]
 category = "suspension"
 material = "carbon"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4712" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4712" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300020", "release/xray/300021", "release/xray/300023", "release/xray/300024", "release/xray/300025", "release/xray/300026", "release/xray/300027"], type = "direct", source = "doc/xray/t4-2020-part-list" },
 ]

@@ -2,11 +2,15 @@ id = "part/xray/305730"
 brand = "brand/xray"
 number = "305730"
 name = "ALU PINION GEAR - HARD COATED 30T / 48 - SHORT"
+released = "2001-08-09"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=338"
 category = "pinion"
 teeth = 30
 pitch_dp = 48
 material = "aluminium"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=338" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=338" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300021", "release/xray/300023", "release/xray/300024"], type = "direct", source = "doc/xray/t4-2018-part-list" },
 ]

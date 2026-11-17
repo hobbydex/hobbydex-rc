@@ -6,12 +6,15 @@ former_ids = ["release/xray/391076", "release/xray/391176"]
 model_year = 2018
 kind = "kit"
 status = "discontinued"
-seen_by = "2018-12"
-seen_by_source = "https://web.archive.org/web/20181205081054/https://teamxray.com/x1/2018/"
+released = "2017-09-18"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6518"
 supersedes = "release/xray/x1-2017"
 documents = ["doc/xray/x1-2018-exploded-view", "doc/xray/x1-2018-manual", "doc/xray/x1-2018-part-list", "doc/xray/x1-2018-setup-sheet-2", "doc/xray/x1-2018-setup-sheet", "doc/xray/x1-2018-product-page"]
 number = "370703"
 notes = "The numbers 391076 (manual) and 391176 (exploded view and part list) are document codes in the XRAY file names, not item numbers"
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=6518" },
+]
 contains = [
   { part = "part/hudy/102003", role = "option", source = "doc/xray/x1-2018-part-list" },
   { part = "part/hudy/102376", role = "listed", source = "doc/xray/x1-2018-part-list" },

@@ -5,10 +5,13 @@ name = "XB4"
 former_ids = ["release/xray/391146"]
 kind = "kit"
 status = "discontinued"
-seen_by = "2015-11"
-seen_by_source = "https://web.archive.org/web/20151112002019/http://www.teamxray.com:80/xb4/2013/download/files/392125_1_xb4_set_up-sheet_BLANC.pdf"
+released = "2012-12-07"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4431"
 documents = ["doc/xray/xb4-2013-manual", "doc/xray/xb4-2013-part-list", "doc/xray/xb4-2013-exploded-view", "doc/xray/xb4-2013-setup-sheet", "doc/xray/youtube-MI2OSq3nkLg"]
 notes = "The number 391146 is the document code in the file names of the XRAY exploded view and part list, not an item number"
+links = [
+  { site = "teamxray.com", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=4431" },
+]
 contains = [
   { part = "part/hudy/106051", role = "kit", source = "doc/xray/xb4-2013-part-list" },
   { part = "part/hudy/106210", role = "kit", source = "doc/xray/xb4-2013-part-list" },
