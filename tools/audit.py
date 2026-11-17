@@ -133,12 +133,20 @@ def is_body_set_doc(doc, doc_id=""):
 OWN_LANGUAGE_FILES = {"manual", "supplement", "setup_sheet", "part_list", "exploded_view", "catalog_pdf", "datasheet"}
 
 
-def tamiya_german_names(records, german_words):
-    """[(record, German words)] of the Tamiya parts and releases whose name still has German words (german_words:
-    hobbydex-tools translate_de.german_words)."""
+# a name read from an English page ("https://rc.kyosho.com/en/32629w.html"): its German-looking words are the maker's
+ENGLISH_PAGE = re.compile(r"/en(?:[-_][a-z]{2})?(?:/|\.html?|$)|[?&](?:lang|language)=en\b", re.I)
+
+
+def german_names(records, german_words):
+    """[(record, German words)] of the parts and releases whose name still has German words (german_words:
+    hobbydex-tools translate_de.german_words). A name whose source (sources.name) is an English page is the maker's
+    English and is not listed (Kyosho's "V.specII Nür")."""
     out = []
     for r in records:
-        if r.get("brand") != "brand/tamiya" or not isinstance(r.get("name"), str):
+        if not isinstance(r.get("name"), str):
+            continue
+        src = (r.get("sources") or {}).get("name") if isinstance(r.get("sources"), dict) else None
+        if isinstance(src, str) and ENGLISH_PAGE.search(src):
             continue
         words = german_words(r["name"])
         if words:
@@ -1621,16 +1629,16 @@ def main():
     check("name-shop-text", "strip the shop's price, stock or button text from the name (tools/name_shop.py clean; the maker's name is what is left)",
           shop, per_brand=per_brand(shop))
 
-    # Tamiya names with German words left (the tamiya.de listings print German names; tools/translate_de.py and its
+    # names with German words left (German makers' manuals and listings, German dealers; tools/translate_de.py and its
     # glossary give them English on write): a word missing from the glossary, or a name no importer rewrote since
     gw = getattr(tools.get("translate_de"), "german_words", None)   # None: a tools checkout older than the check
-    tamiya_de = tamiya_german_names(parts + rels, gw) if gw is not None else []
-    check("tamiya-name-german", "give the name English: the maker's English name for the number (Tamiya USA, tamiya.com; "
+    german_de = german_names(parts + rels, gw) if gw is not None else []
+    check("name-german", "give the name English: the maker's English name for the number (its English page; Tamiya: "
           "tools/name_numbered_parts.py tamiya --apply), else the missing words in hobbydex-tools tools/glossary_de.toml "
-          "and tools/translate_de.py --brand tamiya; a German proper name goes in its keep_phrases",
-          [x for x, _ in tamiya_de], per_brand=per_brand([x for x, _ in tamiya_de]))
-    results["tamiya-name-german"]["examples"] = [{"id": f"{x['id']} ({x.get('name')!r}: {', '.join(w)})", "url": url_for(x)}
-                                                 for x, w in tamiya_de[:args.examples]]
+          "and tools/translate_de.py --brand <brand> (the German stays as name_de); a German proper name goes in its keep_phrases",
+          [x for x, _ in german_de], per_brand=per_brand([x for x, _ in german_de]))
+    results["name-german"]["examples"] = [{"id": f"{x['id']} ({x.get('name')!r}: {', '.join(w)})", "url": url_for(x)}
+                                          for x, w in german_de[:args.examples]]
 
     near = tools["near"] or near_local
     by_name = collections.defaultdict(list)   # (brand, name) of OCR-named parts -> parts
