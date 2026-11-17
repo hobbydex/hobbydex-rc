@@ -11,3 +11,6 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "chassis"
 documents = ["doc/xray/356153-L-product-page"]
+fits = [
+  { kit = "kit/xray/gtxe", releases = ["release/xray/gtxe-2023", "release/xray/gtxe-2024"], type = "replaces", source = "doc/xray/gtxe-2023-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,10 +2,12 @@ id = "part/tamiya/84256"
 brand = "brand/tamiya"
 number = "84256"
 name = "Avante Racing Steering Set"
-category = "misc"
-category_source = "fallback"
+category = "steering"
 documents = ["doc/tamiya/84256-avante-racing-steering-set"]
 name_source = "manufacturer"
 links = [
   { site = "Tamiya Germany", url = "https://customer-service.tamiya.de/en/service/manuals/?lp=38&ln=90&ls=name-asc&ps=", kind = "maker" },
+]
+fits = [
+  { kit = "kit/tamiya/avante", type = "replaces", source = "doc/tamiya/84256-avante-racing-steering-set", notes = "Car named in the part's name or product page (link_car_names.py)" },
 ]

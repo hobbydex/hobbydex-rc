@@ -15,3 +15,7 @@ documents = ["doc/xray/303135-O-product-page"]
 fits = [
   { kit = "kit/xray/rx8", releases = ["release/xray/340007"], type = "direct", source = "doc/xray/portal-7396" },
 ]
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/washer/3x6x13", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

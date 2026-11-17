@@ -2,8 +2,7 @@ id = "part/tamiya/84300"
 brand = "brand/tamiya"
 number = "84300"
 name = "AVANTE Alu-damper front"
-category = "misc"
-category_source = "fallback"
+category = "shock"
 documents = ["doc/tamiya/84300-avante-alu-daemper-vorne"]
 name_source = "manufacturer"
 material = "aluminium"
@@ -11,3 +10,7 @@ links = [
   { site = "Tamiya Germany", url = "https://customer-service.tamiya.de/en/service/manuals/?lp=38&ln=90&ls=name-asc&ps=", kind = "maker" },
 ]
 name_de = "AVANTE Alu-Dämper vorne"
+fits = [
+  { kit = "kit/tamiya/avante", type = "replaces", source = "doc/tamiya/84300-avante-alu-daemper-vorne", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+shock_part = "complete"

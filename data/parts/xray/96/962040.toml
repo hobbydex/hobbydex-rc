@@ -14,3 +14,6 @@ documents = ["doc/xray/962040-product-page"]
 fits = [
   { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "direct", source = "doc/xray/portal-120" },
 ]
+equivalent_to = [
+  { spec = "spec/washer/4x8x0.1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

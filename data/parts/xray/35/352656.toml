@@ -17,3 +17,8 @@ fits = [
   { kit = "kit/xray/xb9", releases = ["release/xray/350007"], type = "direct", source = "doc/xray/portal-4154" },
   { kit = "kit/xray/xb9e", releases = ["release/xray/350151"], type = "direct", source = "doc/xray/portal-4680" },
 ]
+equivalent_to = [
+  { spec = "spec/ball-end/6.8mm-stud", match = "functional" },
+]
+ball_mm = 6.8
+ball_type = "stud"

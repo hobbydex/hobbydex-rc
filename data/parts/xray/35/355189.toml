@@ -19,3 +19,6 @@ fits = [
   { kit = "kit/xray/xt8e", car = "XT8E.2", type = "direct", source = "doc/xray/portal-7477" },
   { kit = "kit/xray/xt9", releases = ["release/xray/350202"], type = "direct", source = "doc/xray/portal-4752" },
 ]
+equivalent_to = [
+  { spec = "spec/pin/2x12", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

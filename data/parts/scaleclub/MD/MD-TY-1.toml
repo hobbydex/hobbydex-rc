@@ -2,7 +2,13 @@ id = "part/scaleclub/MD-TY-1"
 brand = "brand/scaleclub"
 number = "MD-TY-1"
 name = "540 brushed motor 27T 35T"
+seen_by = "2019-11-17"
+seen_by_source = "https://web.archive.org/web/20191117092834/http://www.scaleclub.club:80/goods/content/201808/120.html"
 links = [
   { site = "Scaleclub (own shop)", url = "https://www.scaleclub.club/goods/content/201808/120.html" },
 ]
 category = "motor"
+motor_type = "brushed"
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]

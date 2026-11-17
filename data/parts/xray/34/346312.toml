@@ -11,3 +11,9 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "chassis"
 documents = ["doc/xray/346312-product-page"]
+color = "black"
+fits = [
+  { kit = "kit/xray/x8", type = "replaces", source = "doc/xray/346312-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"
+material_grade = "7075-T6"

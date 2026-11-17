@@ -4,8 +4,7 @@ number = "53994"
 name = "TA-05IFS Carbon damper stay rear"
 seen_by = "2007-11-12"
 seen_by_source = "https://web.archive.org/web/20071112140444/http://www.tamiyausa.com/images/product/720/53994/thumbs/header_01.jpg"
-category = "misc"
-category_source = "fallback"
+category = "chassis"
 documents = ["doc/tamiya/53994-ta-05ifs-carbon-bruecke-hinten"]
 name_source = "manufacturer"
 material = "carbon"
@@ -13,3 +12,8 @@ links = [
   { site = "Tamiya Germany", url = "https://customer-service.tamiya.de/en/service/manuals/?lp=19&ln=90&ls=name-asc&ps=", kind = "maker" },
 ]
 name_de = "TA-05IFS Carbon Brücke hinten"
+fits = [
+  { kit = "kit/tamiya/ta05", releases = ["release/tamiya/58345", "release/tamiya/58358", "release/tamiya/58369"], type = "replaces", source = "doc/tamiya/58345-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/ta05-ifs", releases = ["release/tamiya/49489", "release/tamiya/49491", "release/tamiya/58389", "release/tamiya/58394", "release/tamiya/58398"], type = "replaces", source = "doc/tamiya/300049491-ta-05-ifs-r", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/tamiya/tyrrell-p34-six-wheeler", releases = ["release/tamiya/47359"], type = "replaces", source = "doc/tamiya/47359-tyrrell-p34", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

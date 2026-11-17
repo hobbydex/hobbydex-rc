@@ -15,3 +15,6 @@ fits = [
   { kit = "kit/xray/m18", releases = ["release/xray/380002", "release/xray/380003"], type = "direct", source = "doc/xray/portal-1963" },
   { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "direct", source = "doc/xray/portal-1658" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x12-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

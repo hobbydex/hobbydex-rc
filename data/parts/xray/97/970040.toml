@@ -19,3 +19,6 @@ fits = [
   { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1952" },
   { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1690" },
 ]
+equivalent_to = [
+  { spec = "spec/o-ring/4x1", match = "functional" },
+]

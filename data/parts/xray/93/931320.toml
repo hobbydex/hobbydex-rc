@@ -14,3 +14,9 @@ documents = ["doc/xray/931320-product-page"]
 fits = [
   { kit = "kit/xray/xb808", releases = ["release/xray/350003"], type = "direct", source = "doc/xray/portal-2779" },
 ]
+material = "steel"
+equivalent_to = [
+  { spec = "spec/bearing/13x20x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "metal"
+lubricant = "grease"

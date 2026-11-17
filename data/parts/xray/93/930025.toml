@@ -17,3 +17,6 @@ fits = [
   { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1952" },
   { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1690" },
 ]
+equivalent_to = [
+  { spec = "spec/bearing/thrust-2.5x5.4x0.8", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
