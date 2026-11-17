@@ -6,3 +6,7 @@ links = [
   { site = "RC4WD (dealer)", url = "https://store.rc4wd.com/Boomerang-Snorkel-for-Traxxas-Mercedes-Benz-G-Trucks_p_7790.html", kind = "dealer" },
 ]
 category = "body-accessory"
+fits = [
+  { kit = "kit/traxxas/trx-4", releases = ["release/traxxas/82096-4"], type = "direct", source = "doc/cchand/rc4wd-store", notes = "Car named in the part's title on the distributor's page (store.rc4wd.com)" },
+  { kit = "kit/traxxas/trx-6", releases = ["release/traxxas/88096-4", "release/traxxas/88296-4"], type = "direct", source = "doc/cchand/rc4wd-store", notes = "Car named in the part's title on the distributor's page (store.rc4wd.com)" },
+]

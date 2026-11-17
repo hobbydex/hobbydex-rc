@@ -9,3 +9,7 @@ category = "chassis"
 links = [
   { site = "Wild Turbo Fan", url = "https://www.wildturbofan.net/product-page/gold-rc-transponder-floating-mount-for-xray-t4-2015-2019" },
 ]
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300021", "release/xray/300022", "release/xray/300023", "release/xray/300024", "release/xray/300025"], type = "replaces", source = "doc/wild-turbo-fan/store", notes = "Car named in the maker's product title (wildturbofan.net)" },
+  { kit = "kit/xray/x4", releases = ["release/xray/300035", "release/xray/300036", "release/xray/300037"], type = "replaces", source = "doc/wild-turbo-fan/store", notes = "Car named in the maker's product title (wildturbofan.net)" },
+]

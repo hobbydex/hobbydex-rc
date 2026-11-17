@@ -8,3 +8,6 @@ applies_to = "Shepherd V8 & V8.2"
 links = [
   { site = "Arrowmax", url = "https://www.arrowmax-rc.com/products/drag-assisted-oneway-for-shepherd-v8-v8-2-differenziaie-anteriore-am-930004" },
 ]
+fits = [
+  { kit = "kit/shepherd/velox-v8", releases = ["release/shepherd/velox-v8", "release/shepherd/velox-v82"], type = "replaces", source = "doc/arrowmax/shop", notes = "Car named in the maker's product title (arrowmax-rc.com)" },
+]
