@@ -9,10 +9,12 @@ numbers = ["AS91367"]
 documents = ["doc/team-associated/cml-distribution-spares"]
 links = [
   { site = "Team Associated", url = "https://www.teamassociated.com/parts/details/91367/" },
+  { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-aluminum-bulkhead-25-deg-blue/" },
 ]
 category = "chassis"
 material = "aluminium"
 weight_g = 15
 fits = [
   { kit = "kit/team-associated/rc10sc5", releases = ["release/team-associated/70006"], type = "replaces", source = "doc/team-associated/manual-70006-rc10sc5m-tk", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/trophy-rat", type = "direct", source = "doc/team-associated/store" },
 ]
