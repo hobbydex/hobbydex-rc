@@ -380,23 +380,6 @@ def tamiya_maker_linked(links):
     return False
 
 
-def hw_photo_unread(hw, parts):
-    """The parts whose cached product photo link_hw_photo_finish (hw) has not read yet, or None when the module's
-    tools/data/vlm.toml is missing (gitignored, so absent from a fresh checkout)."""
-    unread_ids = set()
-    try:
-        for brand_parts in by_brand(parts):   # the photo index of a brand is dropped after its parts (it held every brand at once)
-            for p in brand_parts:
-                if hw.unread_photo(p):
-                    unread_ids.add(id(p))
-            hw._INDEX.pop((brand_parts[0].get("brand") or "")[6:], None)
-    except FileNotFoundError:
-        return None
-    hw._NUM = None   # number_pages: every cached product page, built once for this check
-    hw.L._CRAWLED = None   # the crawl's page map (link_pack_qty.crawled_pages), read by the photo lookups only
-    return [p for p in parts if id(p) in unread_ids]
-
-
 def tamiya_label_only(part):
     """True when a Tamiya spare's name comes from OCR of a manual and it has no maker page (the caller checks the link):
     a bag or parts-tree label ("A Parts", "Differential Gear Bag") or a part name read off a manual page. The maker
@@ -602,8 +585,6 @@ def load_tools(tools):
     cache = os.path.realpath(os.path.join(tools, "cache"))   # the queue's paths are real paths
     if os.path.isdir(os.path.join(cache, "manuals")):
         out["cache"] = cache
-    # the hardware photo reader (its cache lookups; it reads no photo itself in the audit)
-    hw = os.path.join(tools, "tools", "link_hw_photo_finish.py")
     # the PDF an archive document's listing page links (RC Documents, Valkyrie: tools/archive_pdf.py resolve)
     out["archive_resolve"] = None
     ap = os.path.join(tools, "tools", "archive_pdf.py")
@@ -619,18 +600,6 @@ def load_tools(tools):
             print(f"note: archive_pdf not loaded ({e})", file=sys.stderr)
         finally:
             sys.path.remove(os.path.join(tools, "tools"))
-    out["hwphoto"] = None
-    if os.path.exists(hw):
-        spec = importlib.util.spec_from_file_location("link_hw_photo_finish", hw)
-        mod = importlib.util.module_from_spec(spec)
-        sys.path.insert(0, os.path.dirname(hw))
-        try:
-            spec.loader.exec_module(mod)
-            out["hwphoto"] = mod
-        except Exception as e:  # the audit still runs without it
-            print(f"note: link_hw_photo_finish not loaded ({e})", file=sys.stderr)
-        finally:
-            sys.path.remove(os.path.dirname(hw))
     return out
 
 
@@ -1260,7 +1229,8 @@ def main():
     # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
     # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record,
     # art-missing-photo, pack-photo-disagrees, pack-wrong-photo, pack-photo-brand-below-bar, classifier-drift,
-    # with-fasteners-category, ocr-kind-vs-dealer and spec-no-bag-drawing are counted by the Rust audit only
+    # with-fasteners-category, ocr-kind-vs-dealer, spec-no-bag-drawing, hw-photo-unread and video-gallery-unattached are
+    # counted by the Rust audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
     # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
     check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
@@ -1552,9 +1522,6 @@ def main():
     check("tamico-pack-conflict", "no pack_qty from the dealers: the dealers' counts differ or the part's name states another count; set the count from the part's own source or leave it unset (tools/link_tamico_spares.py lists the rows)",
           conflicts, count=len(conflicts))
 
-    # 27. video docs whose release has a product page with gallery videos not attached: skipped (needs fetched pages)
-    results["video-gallery-unattached"] = {"fix": "not checked: needs the cached product pages parsed for gallery video IDs", "count": None, "examples": [], "all": [], "skipped": True}
-
     # 28. a release whose box (kit rows) holds two gears of one kind at different pitches: two pinions or two spurs
     part_of = {p["id"]: p for p in parts}
     clash = []
@@ -1604,14 +1571,6 @@ def main():
                   and any("socket-cap" in e.get("spec", "") for e in p.get("equivalent_to", []))]
     check("tamiya-hex-head-socket", "link the Tamiya hex head screw to its spec/screw/*-hex-jis* (head hex, JIS cross recess), not to a socket cap",
           tamiya_hex)
-
-    # 29b. hardware (any brand) whose cached product photo is not read yet for its colour or its piece count
-    unread = hw_photo_unread(tools["hwphoto"], parts) if tools["hwphoto"] else []
-    if unread is None:   # hobbydex-tools' tools/data/vlm.toml is gitignored and missing on a fresh checkout
-        results["hw-photo-unread"] = {"fix": "hobbydex-tools tools/data/vlm.toml not found (--tools)", "count": None, "examples": [], "all": []}
-    elif tools["hwphoto"]:
-        check("hw-photo-unread", "run link_hw_photo_finish.py read in hobbydex-tools (after calibrate passed), or set the colour or pack_qty by hand from the photo",
-              unread, per_brand=per_brand(unread))
 
     # a hardware kit's pack_qty is the sum of its includes qty (hobbydex-tools packqty.from_includes)
     def kit_sum(p):
