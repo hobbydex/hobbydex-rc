@@ -504,6 +504,34 @@ def check_vehiclesdb(docs, errors):
         elif link.group(1) != m.group(2):
             errors.append(f"{path}: depicts.vehiclesdb names make {m.group(2)!r}, the make's VehiclesDB make is {link.group(1)!r}")
 
+WEBSITE_ARCHIVE = re.compile(r"https://web\.archive\.org/web/(\d{14})/(https?://\S+)")
+WEBSITE_NOTE = re.compile(r"domain now (parked|for sale|reused|gone), archived copy")
+
+def _site_host(url):
+    """A site's host for comparison: lower case, no port, no www."""
+    return (urllib.parse.urlsplit(url).hostname or "").lower().removeprefix("www.")
+
+def check_website_archive(docs, errors):
+    """A brand whose website's domain is no longer the maker's (parked, for sale, reused by someone else, or gone)
+    keeps `website` and adds `website_archive`, the Wayback capture of its last official page
+    (https://web.archive.org/web/<14-digit timestamp>/<URL on the website's host>), with `website_note`
+    "domain now <parked|for sale|reused|gone>, archived copy" (docs/schema.md "brand"). The site links the capture,
+    never the domain."""
+    for path, kind, d in docs:
+        if kind != "brand" or not ({"website_archive", "website_note"} & set(d)):
+            continue
+        arch, note = d.get("website_archive"), d.get("website_note")
+        if not d.get("website"):
+            errors.append(f"{path}: website_archive and website_note need the website they replace")
+        m = WEBSITE_ARCHIVE.fullmatch(arch) if isinstance(arch, str) else None
+        if not m:
+            errors.append(f"{path}: website_archive should be https://web.archive.org/web/<14-digit timestamp>/<URL>, got {arch!r}")
+        elif d.get("website") and _site_host(m.group(2)) != _site_host(str(d["website"])):
+            errors.append(f"{path}: website_archive {arch} is not a capture of the website's host {_site_host(str(d['website']))}")
+        if not (isinstance(note, str) and WEBSITE_NOTE.fullmatch(note)):
+            errors.append(f"{path}: website_note should be \"domain now <parked|for sale|reused|gone>, archived copy\" "
+                          f"with website_archive, got {note!r}")
+
 WIKIDATA_ID = re.compile(r"Q[1-9][0-9]*")
 
 def check_wikidata(docs, errors):
@@ -1853,6 +1881,7 @@ def main():
     check_makes(docs, errors)
     check_vehiclesdb(docs, errors)
     check_wikidata(docs, errors)
+    check_website_archive(docs, errors)
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
     check_protocols(docs, ids, errors)

@@ -67,6 +67,8 @@ legal_name = "XRAY Model Racing Cars"   # optional
 country = "SK"                           # ISO 3166-1 alpha-2
 website = "https://www.teamxray.com"
 website_fallback = "https://www.rochobbies.com"   # optional: a second site of the maker, used when the first has no page for a part
+website_archive = "https://web.archive.org/web/20190216185048/http://www.ofna.com:80/index.php"   # only when the website's domain is no longer the maker's
+website_note = "domain now parked, archived copy"   # required with website_archive
 aliases = ["..."]                       # optional: other names the brand is stated under (see below)
 youtube = ["https://www.youtube.com/@XRAYracing"]   # optional: the maker's official channels, its own first
 kind = "manufacturer"                    # manufacturer | aftermarket | designer | retailer
@@ -79,6 +81,8 @@ notes = "..."
 ```
 
 `website_fallback` (optional): a second web address of the maker, used for product links only when `website` has no page for the part (ROC Hobby: fmshobby.com first, rochobbies.com as fallback). Its pages link only where a structured product SKU names the part (tools/link_maker_pages.py, mode structured).
+
+`website_archive` and `website_note` (set together): when the website's domain is no longer the maker's (parked, for sale, reused by someone else, or gone from DNS), `website` keeps the maker's domain, which tools use to recognise its pages and archive captures, and `website_archive` is the Wayback capture of its last official page: `https://web.archive.org/web/<14-digit timestamp>/<URL on the website's host>`, the timestamp of the last capture in the cached CDX that is still the maker's. `website_note` is "domain now parked, archived copy" (or for sale, reused, gone). The site links the capture as "archived site" and never the domain itself; `notes` says what the domain shows now and when that was read.
 
 `aliases` (optional): other names the brand is stated under on a page or in a store that its name and legal name do not cover: a store's vendor name (Team Losi Racing for TLR, Zapglue for Pacer, Genspow for Gens ace), or the line name a page uses (Carisma Racing). Tools that read a stated brand resolve it through these names as well; a name two brands share resolves to neither.
 
