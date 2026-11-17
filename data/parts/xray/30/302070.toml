@@ -1,0 +1,15 @@
+id = "part/xray/302070"
+brand = "brand/xray"
+number = "302070"
+name = "Eccentric Nylon Hub For Bulkhead + Covers (4+2)"
+released = "2002-07-04"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=466"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=466" },
+]
+category = "suspension"
+documents = ["doc/xray/302070-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000", "release/xray/300100"], type = "replaces", source = "doc/xray/portal-122" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-787" },
+]

@@ -1,0 +1,17 @@
+id = "part/xray/901262"
+brand = "brand/xray"
+number = "901262"
+name = "Hex Screw SB M2.5x12 (10)"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1450"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1450" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+category = "screw"
+documents = ["doc/xray/901262-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1506" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "direct", source = "doc/xray/portal-1465" },
+]

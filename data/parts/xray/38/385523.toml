@@ -1,0 +1,15 @@
+id = "part/xray/385523"
+brand = "brand/xray"
+number = "385523"
+name = "Alu Main Driveshaft NT18T, NT18MT"
+released = "2006-03-27"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1672"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1672" },
+]
+category = "drivetrain"
+documents = ["doc/xray/385523-product-page"]
+fits = [
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "replaces", source = "doc/xray/portal-1954" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "replaces", source = "doc/xray/portal-1692" },
+]

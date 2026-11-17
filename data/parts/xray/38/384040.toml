@@ -1,0 +1,15 @@
+id = "part/xray/384040"
+brand = "brand/xray"
+number = "384040"
+name = "Brake Cam Post & Rod"
+released = "2006-03-13"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1615"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1615" },
+]
+category = "drivetrain"
+documents = ["doc/xray/384040-product-page"]
+fits = [
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "replaces", source = "doc/xray/portal-1956" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "replaces", source = "doc/xray/portal-1694" },
+]

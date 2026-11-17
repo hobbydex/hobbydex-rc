@@ -1,0 +1,17 @@
+id = "part/xray/308361"
+brand = "brand/xray"
+number = "308361"
+name = "Hardened Shock Shaft (2)"
+released = "2006-01-31"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1569"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1569" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "shock"
+documents = ["doc/xray/308361-product-page"]
+fits = [
+  { kit = "kit/xray/nt1", releases = ["release/xray/330000", "release/xray/330007", "release/xray/330100"], type = "replaces", source = "doc/xray/portal-2260" },
+  { kit = "kit/xray/rx8", releases = ["release/xray/340000"], type = "replaces", source = "doc/xray/portal-3902" },
+]

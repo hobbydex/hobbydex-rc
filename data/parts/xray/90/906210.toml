@@ -1,0 +1,17 @@
+id = "part/xray/906210"
+brand = "brand/xray"
+number = "906210"
+name = "Screw Phillips FH 2.2x10 (10)"
+released = "2004-07-30"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=954"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=954" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+category = "screw"
+documents = ["doc/xray/906210-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1506" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "direct", source = "doc/xray/portal-1465" },
+]

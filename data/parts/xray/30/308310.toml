@@ -1,0 +1,15 @@
+id = "part/xray/308310"
+brand = "brand/xray"
+number = "308310"
+name = "Nylon Frame Shock Parts 4-Step"
+released = "2002-07-04"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=473"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=473" },
+]
+category = "shock"
+documents = ["doc/xray/308310-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "replaces", source = "doc/xray/portal-123" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-792" },
+]

@@ -1,0 +1,15 @@
+id = "part/xray/381180"
+brand = "brand/xray"
+number = "381180"
+name = "Composite Top Deck M18T"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1412"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1412" },
+]
+category = "chassis"
+documents = ["doc/xray/381180-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1506" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500"], type = "replaces", source = "doc/xray/portal-1465" },
+]

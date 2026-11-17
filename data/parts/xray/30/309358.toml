@@ -1,0 +1,17 @@
+id = "part/xray/309358"
+brand = "brand/xray"
+number = "309358"
+name = "Hex Screw SB M4x8 (10)"
+released = "2001-04-11"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=389"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=389" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+category = "screw"
+documents = ["doc/xray/309358-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "direct", source = "doc/xray/portal-119" },
+  { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-787" },
+]

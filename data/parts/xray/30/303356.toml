@@ -1,0 +1,15 @@
+id = "part/xray/303356"
+brand = "brand/xray"
+number = "303356"
+name = "Alu Upright Rear 1° Outboard Toe-In (L+R)"
+released = "2005-05-09"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1320"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1320" },
+]
+category = "suspension"
+documents = ["doc/xray/303356-product-page"]
+fits = [
+  { kit = "kit/xray/t1", releases = ["release/xray/300000"], type = "replaces", source = "doc/xray/portal-119" },
+  { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-788" },
+]

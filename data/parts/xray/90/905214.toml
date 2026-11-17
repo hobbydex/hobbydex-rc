@@ -1,0 +1,20 @@
+id = "part/xray/905214"
+brand = "brand/xray"
+number = "905214"
+name = "Screw Phillips 2.2x14 (10)"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1453"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1453" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+category = "screw"
+documents = ["doc/xray/905214-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380002", "release/xray/380003"], type = "direct", source = "doc/xray/portal-1963" },
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1506" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "direct", source = "doc/xray/portal-1465" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1957" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1695" },
+]

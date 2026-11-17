@@ -1,0 +1,21 @@
+id = "part/xray/382200"
+brand = "brand/xray"
+number = "382200"
+name = "Composite Suspension Block (2)"
+released = "2003-12-05"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=696"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=696" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
+category = "suspension"
+documents = ["doc/xray/382200-product-page"]
+fits = [
+  { kit = "kit/xray/m18", releases = ["release/xray/380000", "release/xray/380002", "release/xray/380003"], type = "replaces", source = "doc/xray/portal-743" },
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1504" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "replaces", source = "doc/xray/portal-1463" },
+  { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "replaces", source = "doc/xray/portal-1658" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "replaces", source = "doc/xray/portal-1953" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "replaces", source = "doc/xray/portal-1691" },
+]

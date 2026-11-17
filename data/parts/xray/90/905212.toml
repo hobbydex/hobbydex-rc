@@ -1,0 +1,19 @@
+id = "part/xray/905212"
+brand = "brand/xray"
+number = "905212"
+name = "Screw Phillips 2.2x12 (10)"
+released = "2005-08-28"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1452"
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=1452" },
+]
+pack_qty = 10
+pack_qty_basis = "name"
+category = "screw"
+documents = ["doc/xray/905212-product-page"]
+fits = [
+  { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1504" },
+  { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "direct", source = "doc/xray/portal-1463" },
+  { kit = "kit/xray/nt18mt", car = "NT18MT", type = "direct", source = "doc/xray/portal-1953" },
+  { kit = "kit/xray/nt18t", releases = ["release/xray/380700"], type = "direct", source = "doc/xray/portal-1691" },
+]
