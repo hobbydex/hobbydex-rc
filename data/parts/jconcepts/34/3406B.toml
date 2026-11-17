@@ -14,3 +14,8 @@ position = "front"
 equivalent_to = [
   { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
 ]
+fits = [
+  { kit = "kit/team-associated/dr10", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/traxxas/bandit", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/traxxas/slash-2wd", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]

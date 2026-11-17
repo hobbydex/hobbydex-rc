@@ -10,3 +10,7 @@ links = [
 ]
 category = "body"
 gtin = "845937027306"
+fits = [
+  { kit = "kit/jconcepts/reactor", releases = ["release/jconcepts/9009"], type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+  { kit = "kit/losi/lmt", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]

@@ -11,3 +11,6 @@ pack_qty = 2
 pack_qty_basis = "name"
 color = "black"
 range = "jconcepts/9110-colours"
+fits = [
+  { kit = "kit/jconcepts/reactor", type = "replaces", source = "doc/jconcepts/store", notes = "Car named in the maker's product title or its Fits line (jconcepts.net)" },
+]
