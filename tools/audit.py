@@ -300,8 +300,11 @@ def near_local(a, b):
 NOT_MANUAL_NAME = re.compile(r"msds|sicherheit|safety|warning|hinweis|akku|battery|lipo|press|news|video|product|"
                              r"datenblatt|data ?sheet|spruehfarbe|paint|flyer|leaflet|declaration|conformity|konformit|"
                              r"catalog|katalog|preis|price|compatib|required.?separately|setting.?sheet|"
-                             r"spezifikation|specification|leistungsmerkmale|\u898f\u683c\u66f8|\u89c4\u683c\u4e66|\u304a\u77e5\u3089\u305b", re.I)
-# The last three are Japanese and Chinese words for a spec sheet and a notice (規格書, 规格书, お知らせ), written as escapes.
+                             r"spezifikation|specification|leistungsmerkmale|\u898f\u683c\u66f8|\u89c4\u683c\u4e66|\u304a\u77e5\u3089\u305b|"
+                             r"^od\d{4}[a-z]?-20\d{6}-", re.I)
+# The \u escapes are Japanese and Chinese words for a spec sheet and a notice (規格書, 规格书, お知らせ). The last pattern is
+# Overdose's shop notice ("OD2500-20250922-OD2491-OD3889-o": an item, the date, the items it names): a one-page image
+# of "商品に関するお知らせ" (delivery dates of the named parts), never a manual.
 
 
 # Parts of brands that also sell aircraft, helicopters and drones. The data covers ground vehicles (docs/vision.md:
@@ -340,6 +343,27 @@ def archive_files(docs, resolve):
             if path:
                 out[os.path.realpath(path)].append(d)
     return out
+
+
+TRUNCATED = re.compile(r"(?i)^(.*)\.truncated-\d{4}-\d\d-\d\d\.pdf$")
+
+
+def truncated_full(rel):
+    """The path of the complete file of a PDF the crawl set aside as cut short (hobbydex-tools tools/crawl.py
+    truncated_aside: <name>.truncated-<YYYY-MM-DD>.pdf), or None for any other file."""
+    m = TRUNCATED.match(rel)
+    return m.group(1) + ".pdf" if m else None
+
+
+def archive_copy_of_maker_manual(rel, held):
+    """True for an archive scan (manuals/rcscrapyard/<brand>/<name>.pdf) whose name holds the item number of a release of
+    that brand that lists the maker's manual (hobbydex-tools tools/import_manual_archives.py: the maker wins, the archive
+    copy gets no document); held is the set of (brand slug, number in upper case) of those releases."""
+    seg = rel.split("/")
+    if len(seg) != 4 or seg[:2] != ["manuals", "rcscrapyard"]:
+        return False
+    stem = re.sub(r"(?i)\.pdf$", "", seg[3])
+    return any((seg[2], t.upper()) in held for t in re.split(r"[^A-Za-z0-9]+", stem) if len(t) >= 4 and re.search(r"\d", t))
 
 
 def drop_copies_of_linked(cache, unlinked, linked_files):
@@ -1137,7 +1161,19 @@ def main():
         not_rc = 0           # a static kit, paint or tool of Tamiya that no release or part of the data has (tamiya_static_non_rc)
         kind_unknown = 0     # the name states no manual kind and says nothing else: still a gap, counted apart
         tamiya_numbers = {str(x.get("number")) for x in rels + parts if x.get("brand") == "brand/tamiya" and x.get("number")}
+        truncated = truncated_no_full = 0   # PDFs the crawl set aside as cut short (tools/crawl.py truncated_aside)
+        archive_maker_held = 0   # RC Scrapyard scans of a release that lists the maker's manual (the maker wins)
+        maker_held = {(r["brand"].split("/", 1)[1], str(r["number"]).upper()) for r in rels
+                      if r.get("number") and str(r.get("brand", "")).startswith("brand/")
+                      and any(docs.get(d, {}).get("kind") == "manual" and str(docs.get(d, {}).get("publisher", "")).startswith("brand/")
+                              for d in r.get("documents", []))}
         for rel_path in cached:
+            full = truncated_full(rel_path)
+            if full:
+                truncated += 1
+                if not os.path.isfile(os.path.join(tools["cache"], full)):
+                    truncated_no_full += 1
+                continue
             name = os.path.basename(rel_path)
             url = url_of.get(rel_path) or (lmn.file_url(os.path.join(tools["cache"], rel_path), {}, urls_by_name)
                                            if lmn and hasattr(lmn, "file_url") else None)
@@ -1152,6 +1188,9 @@ def main():
             if arch:
                 via_archive += 1
                 ds = ds + [d for d in arch if d not in ds]
+            if not ds and archive_copy_of_maker_manual(rel_path, maker_held):
+                archive_maker_held += 1
+                continue
             stem = re.sub(r"(?i)\.pdf$", "", name)
             if not any(d["id"] in linked_docs for d in ds):
                 # the linker leaves a file with no kind word alone; only a file named as a non-manual is not a gap
@@ -1177,7 +1216,10 @@ def main():
                      f"{not_manuals} cached PDFs named as safety sheets, notices, press releases or product sheets are left out; "
                      f"{not_rc} cached Tamiya manuals of static kits, paints and tools (not RC: no Tamiya release or part has the number) are left out; "
                      f"{copies} byte-identical copies of a linked document's file (same brand, size and checksum) count as linked; "
-                     f"{via_archive} cached PDFs are the file a linked archive document's listing page gives (counted as linked)")
+                     f"{via_archive} cached PDFs are the file a linked archive document's listing page gives (counted as linked); "
+                     f"{truncated} PDFs the crawl set aside as cut short (.truncated-<date>.pdf) are left out, {truncated_no_full} of "
+                     f"them with no complete copy cached (fetch again); {archive_maker_held} RC Scrapyard scans of a release that "
+                     f"lists the maker's manual are left out (the maker wins)")
         # keep the list ids as paths; url points at the brand
         res = results["manual-unlinked"]
         res["examples"] = [{"id": u, "url": SITE + "/rc/brands/" + u.split("/")[1] + "/"} for u in unlinked[:args.examples]]
