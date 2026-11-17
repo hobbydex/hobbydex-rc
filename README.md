@@ -26,6 +26,7 @@ art/
   releases/<brand>/<number-or-slug>.svg    # outline of one release, when it differs from its kit
 docs/        schema and conventions
 tools/       layout (id -> path), validator and JSON export (Python 3.11+, no dependencies)
+tests/invariants/  the data invariants (pytest; docs/invariants.md)
 work/        local only, not committed: downloaded manuals, scratch notes
 ```
 
@@ -33,7 +34,12 @@ work/        local only, not committed: downloaded manuals, scratch notes
 
 ```
 python3 -I tools/validate.py
+python3 -m pytest tests/invariants -n auto   # needs pytest and pytest-xdist
 ```
+
+`tests/invariants` checks what a database would enforce: one record per key, no
+entry twice in a list, references that resolve, required fields; known gaps may
+only shrink (docs/invariants.md).
 
 `tools/export.py` writes the JSON export the website is built from.
 `tools/audit.py` lists what is still missing (parts named only by number,

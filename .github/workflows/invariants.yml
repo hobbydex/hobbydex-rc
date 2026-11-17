@@ -1,0 +1,37 @@
+name: Data invariants
+
+# tests/invariants: the constraints a database would enforce (unique keys, references, fields that may not be empty)
+# and the ratchets of known gaps (docs/invariants.md). On every push and pull request, and once a day on main, where
+# it also lists the ratchets whose baseline can be lowered.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  invariants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install pytest and pytest-xdist
+        run: python3 -m pip install --quiet pytest==9.0.3 pytest-xdist==3.8.0
+      - name: Run the invariants (fails on a hard hit, a grown ratchet or a run over the time budget)
+        run: python3 -m pytest tests/invariants -n auto -p no:cacheprovider --durations=3 ${{ github.event_name == 'schedule' && '--update-baselines' || '' }}
+      - name: Baselines this run could lower
+        if: github.event_name == 'schedule' && always()
+        run: |
+          if git diff --quiet -- tests/invariants/baseline.toml; then
+            echo "No ratchet went down: the baselines stay." >> "$GITHUB_STEP_SUMMARY"
+          else
+            { echo "Ratchets that went down (commit this to tests/invariants/baseline.toml):"; echo '```diff'; git diff -- tests/invariants/baseline.toml; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi

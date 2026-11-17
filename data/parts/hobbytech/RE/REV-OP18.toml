@@ -11,14 +11,10 @@ links = [
 ]
 applies_to = ["BXR S2 RTR", "BXR S2 KIT", "BXR MT", "BXR MT LIMITED", "BXR S1 KIT", "BXR S1 RTR"]
 fits = [
-  { kit = "kit/hobbytech/bxr-s2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech BXR S2 RTR (link_car_kits.py)" },
-  { kit = "kit/hobbytech/bxr-mt", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR MT (link_car_kits.py)" },
-  { kit = "kit/hobbytech/bxr-mt-limited", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR MT LIMITED (link_car_kits.py)" },
-  { kit = "kit/hobbytech/bxr-s1", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR S1 KIT (link_car_kits.py)" },
-  { kit = "kit/hobbytech/bxr-mt", type = "replaces", replaces = "part/hobbytech/REV-078", source = "doc/hobbytech/parts-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hobbytech/bxr-mt-limited", type = "replaces", replaces = "part/hobbytech/REV-078", source = "doc/hobbytech/parts-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hobbytech/bxr-s1", type = "replaces", replaces = "part/hobbytech/REV-078", source = "doc/hobbytech/parts-pages", notes = "Same part in another material (link_upgrades.py)" },
-  { kit = "kit/hobbytech/bxr-s2", type = "replaces", replaces = "part/hobbytech/REV-078", source = "doc/hobbytech/parts-pages", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/hobbytech/bxr-s2", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the Hobbytech BXR S2 RTR (link_car_kits.py); Same part in another material (link_upgrades.py)", replaces = "part/hobbytech/REV-078" },
+  { kit = "kit/hobbytech/bxr-mt", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR MT (link_car_kits.py); Same part in another material (link_upgrades.py)", replaces = "part/hobbytech/REV-078" },
+  { kit = "kit/hobbytech/bxr-mt-limited", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR MT LIMITED (link_car_kits.py); Same part in another material (link_upgrades.py)", replaces = "part/hobbytech/REV-078" },
+  { kit = "kit/hobbytech/bxr-s1", type = "replaces", source = "doc/hobbytech/parts-pages", notes = "Listed for the BXR S1 KIT (link_car_kits.py); Same part in another material (link_upgrades.py)", replaces = "part/hobbytech/REV-078" },
 ]
 material = "aluminium"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
