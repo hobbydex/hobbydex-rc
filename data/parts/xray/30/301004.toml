@@ -2,9 +2,13 @@ id = "part/xray/301004"
 brand = "brand/xray"
 number = "301004"
 name = "T4'21 GRAPHITE CHASSIS 2.2MM"
+released = "2020-10-13"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8063"
 category = "chassis"
 material = "carbon"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8063" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=8063" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "direct", source = "doc/xray/t4-2021-part-list" },
 ]

@@ -2,11 +2,15 @@ id = "part/xray/302661"
 brand = "brand/xray"
 number = "302661"
 name = "COMPOSITE BALL JOINT 4.9MM - CLOSED (4) o"
+released = "2008-10-27"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2839"
 pack_qty = 4
 pack_qty_basis = "name"
 category = "ball-end"
 ball_mm = 4.9
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2839" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=2839" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300019"], type = "replaces", source = "doc/xray/t4-2013-part-list" },
 ]

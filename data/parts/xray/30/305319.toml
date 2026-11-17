@@ -2,11 +2,15 @@ id = "part/xray/305319"
 brand = "brand/xray"
 number = "305319"
 name = "ECS BB DRIVE SHAFT 53MM - HUDY SPRING STEEL"
+released = "2021-05-21"
+released_source = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7846"
 pack_qty = 2
 pack_qty_basis = "manual"
 category = "drivetrain"
 material = "steel"
-links = [{ site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7846" }]
+links = [
+  { site = "XRAY", url = "https://www.teamxray.com/teamxray/products/proddesc.php?prod_id=7846" },
+]
 fits = [
   { kit = "kit/xray/t4", releases = ["release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "direct", source = "doc/xray/t4-2021-part-list" },
 ]
