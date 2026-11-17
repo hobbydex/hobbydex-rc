@@ -208,6 +208,14 @@ class Removals(unittest.TestCase):
         head = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
         self.assertEqual([f for f, _ in self.regs(self.check(base, head))], ["links"])
 
+    def test_tamiya_japanese_page_replaced_by_its_english_page_is_not_a_regression(self):
+        ja, en = "https://www.tamiya.com/japan/products/10327/index.html", "https://www.tamiya.com/english/products/10327/index.html"
+        base = self.part('links = [ { site = "Tamiya", url = "%s" } ]\n' % ja)
+        head = self.part('links = [ { site = "Tamiya", url = "%s" } ]\n' % en)
+        self.assertEqual(self.regs(self.check(base, head)), [])
+        other = self.part('links = [ { site = "Tamiya", url = "%s" } ]\n' % en.replace("10327", "10328"))
+        self.assertEqual(self.regs(self.check(base, other)), [("links", "stated link removed")])
+
     def test_link_whose_page_is_gone_is_not_a_regression(self):
         base = self.part('links = [ { url = "%s" }, { url = "%s" } ]\n' % (self.MAKER, self.DEALER))
         head = self.part('links = [ { url = "%s" } ]\n' % self.MAKER)
