@@ -480,6 +480,10 @@ class Check:
             if set(n.get("documents", [])) & self.doc_pages().get(url, set()):
                 self.event(kind, rid, k, "removed", row, MISSING, False, "page kept as a document of the record")
                 return
+            twin = english_twin(row.get("url", ""))
+            if twin and any(isinstance(x, dict) and normalize_url(x.get("url", "")) == normalize_url(twin) for x in n.get(k, [])):
+                self.event(kind, rid, k, "removed", row, MISSING, False, "same maker page in English (link_tamiya_english)")
+                return
         self.event(kind, rid, k, "removed", row, MISSING, True, "stated link removed" if k == "links" else f"stated {k} row removed")
 
     def list_diff(self, kind, rid, o, n, k, ov, nv):
@@ -658,6 +662,16 @@ def name_key(name, brand):
 
 
 LISTING = re.compile(r"\(\s*\d+\s*\)|\bx\s?\d+\b|\b\d+\s?pcs\b|\b\d{5,}\b", re.I)
+
+
+TAMIYA_JA = re.compile(r"^(https?://(?:www\.)?tamiya\.com)/japan/products/([^/?#]+/index\.html?)$")
+
+
+def english_twin(url):
+    """The English address of a Tamiya Japanese item page (/japan/products/<n>/index.html -> /english/products/...), else None.
+    The tools' link_tamiya_english points a link at the English page of the same item where one is cached: no loss."""
+    m = TAMIYA_JA.match(url or "")
+    return f"{m.group(1)}/english/products/{m.group(2)}" if m else None
 
 
 def canonical_removal(o, n, k, row):
