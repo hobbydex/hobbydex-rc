@@ -531,6 +531,9 @@ REISSUE_WORD = re.compile(r"(?i)\bre-?releases?d?\b|\bre-?issues?d?\b|\blegendar
                           r"|\bvintage\b|\brevival\b|\(\s*(?:19|20)\d\d\s*\)")
 # variants come to market together (one announcement, one listing): dates of month or day precision this close
 MARKET_DAYS = 90
+# race-numbered liveries of one car come out over a year (Kyosho XJR-14 1991: February and December 2026): one range
+# (owner, 2026-11-18; hobbydex-tools link_release_ranges RACE_MARKET_DAYS)
+LIVERY_MARKET_DAYS = 365
 
 
 def range_day(r):
@@ -553,8 +556,8 @@ def rerelease_targets(r):
     return {x.get("release") for x in rel if isinstance(x, dict) and x.get("relation") == "rerelease-of"}
 
 
-def market_bucket(a, b):
-    """How two name-matched releases came to market: "together" (dates of month precision at most MARKET_DAYS
+def market_bucket(a, b, days=MARKET_DAYS):
+    """How two name-matched releases came to market: "together" (dates of month precision at most `days`
     apart: one launch, so one range), "apart" (a re-release: a reissue word or bracketed year only one name has,
     a supersedes or rerelease-of link between them, or re-releases of different originals) or "review" (dates far apart or unknown, no reissue marker: a
     person decides)."""
@@ -565,7 +568,7 @@ def market_bucket(a, b):
             or a.get("id") in rb or bool(ra) != bool(rb) or ra != rb):
         return "apart"
     da, db = range_day(a), range_day(b)
-    if da and db and da[1] and db[1] and abs(da[0] - db[0]) <= MARKET_DAYS:
+    if da and db and da[1] and db[1] and abs(da[0] - db[0]) <= days:
         return "together"
     return "review"
 

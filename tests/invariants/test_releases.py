@@ -1,7 +1,7 @@
 """Releases: names, dates and categories (the data-only checks of the daily audit, under their audit names)."""
 import collections, json, os, re, tomllib
 
-from rules import HW, complete_diff, edition_pair, market_bucket, is_body_set_doc, is_service_pack, norm_name, number_relation, same_product_record
+from rules import HW, LIVERY_MARKET_DAYS, MARKET_DAYS, complete_diff, edition_pair, market_bucket, is_body_set_doc, is_service_pack, norm_name, number_relation, same_product_record
 from snapshot import RC
 
 
@@ -260,13 +260,14 @@ def edition_pairs(db):
             for b in g[i + 1:]:
                 why = edition_pair(a, b)
                 if why:
-                    yield a, b, why, "apart" if frozenset((a["id"], b["id"])) in apart else market_bucket(a, b)
+                    yield a, b, why, ("apart" if frozenset((a["id"], b["id"])) in apart else market_bucket(
+                        a, b, LIVERY_MARKET_DAYS if why[0] == "livery" else MARKET_DAYS))
 
 
 def test_release_editions_not_grouped(ratchet, db):
     """Colour, livery and named editions of one kit that came to market together share a `range`: releases of one
     brand, kit, kind and scale whose names differ only in a colour clause, an "<X> Edition" or a race-number livery,
-    with close item numbers and dates (month precision) at most 90 days apart. Run hobbydex-tools
+    with close item numbers and dates (month precision) at most 90 days apart (365 for race-number liveries). Run hobbydex-tools
     link_release_ranges.py for the brand, or give the pair one range. Re-releases (a reissue word, a rerelease-of or
     supersedes link) never count; pairs far apart in time are a person's call, not this check's."""
     found = collections.defaultdict(list)
@@ -281,7 +282,7 @@ def test_release_editions_not_grouped(ratchet, db):
 
 def test_release_editions_review(ratchet, db):
     """Releases that read as colours or editions of one kit by name and item number but did not come to market
-    together (dates more than 90 days apart, or a year only) and share no range: decide "same range" (give both
+    together (dates more than 90 days apart, 365 for race-number liveries, or a year only) and share no range: decide "same range" (give both
     the range) or "separate releases" (list the pair in data/confirmed-distinct.toml [[release_pair]] with the
     reason). Reported, not blocking: the linker never decides these."""
     found = collections.defaultdict(list)

@@ -248,6 +248,14 @@ class EditionsNotGrouped(unittest.TestCase):
         self.assertEqual(rules.edition_pair(a, b)[0], "edition")
         self.assertEqual(rules.market_bucket(a, b), "together")
 
+    def test_race_liveries_launch_over_a_year(self):
+        base = "MINI-Z RWD MR-04 readyset JAGUAR XJR-14 "
+        a = rel("kyosho/32369le", "32369LE", base + "No.4 LM 1991", released="2026-02")
+        b = rel("kyosho/32369s17", "32369S17", base + "No.17 SUGO 1991", released="2026-12")
+        self.assertEqual(rules.edition_pair(a, b)[0], "livery")
+        self.assertEqual(rules.market_bucket(a, b), "review")
+        self.assertEqual(rules.market_bucket(a, b, rules.LIVERY_MARKET_DAYS), "together")
+
     def test_other_products_are_no_edition(self):
         for word in ("Limited", "Founder's", "Graphite", "Carpet", "Dirt", "Alu"):
             a = rel("x/1", "X-100", f"Titan U4 {word} Edition ARTR")
