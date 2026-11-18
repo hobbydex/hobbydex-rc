@@ -2,8 +2,14 @@ id = "part/team-associated/89295"
 brand = "brand/team-associated"
 number = "89295"
 name = "RC8 16 mm Front Spring Set"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129082325/http://teamassociated.com/pictures/products/89295/89295_sm.jpg"
 gtin = "784695892958"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8-16-mm-front-spring-set/" },
 ]
 category = "shock-spring"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+free_length_mm = 16

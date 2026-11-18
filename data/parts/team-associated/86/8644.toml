@@ -2,9 +2,15 @@ id = "part/team-associated/8644"
 brand = "brand/team-associated"
 number = "8644"
 name = "RC10F6 Motor Mount, black aluminum"
+seen_by = "2025-10-12"
+seen_by_source = "https://web.archive.org/web/20251012042548/https://60years.associatedelectrics.com/rc10f6-motor-mount-black-aluminum/"
 gtin = "784695086449"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10f6-motor-mount-black-aluminum/" },
 ]
 category = "chassis"
 color = "black"
+fits = [
+  { kit = "kit/team-associated/rc10f6", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"

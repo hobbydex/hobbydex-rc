@@ -2,8 +2,10 @@ id = "part/carson/500205737"
 brand = "brand/carson"
 number = "500205737"
 name = "Front brace Carbon"
-category = "misc"
-category_source = "fallback"
+category = "chassis"
 documents = ["doc/carson/500204020-monster-cage", "doc/carson/500409002-streetbreaker-6s"]
 material = "carbon"
 name_de = "Frontversteifung Carbon"
+fits = [
+  { kit = "kit/carson/monster-cage", type = "replaces", replaces = "part/carson/500205732", source = "doc/carson/500204020-monster-cage", notes = "Same part in another material (link_upgrades.py)" },
+]

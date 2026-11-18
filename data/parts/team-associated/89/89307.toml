@@ -2,9 +2,15 @@ id = "part/team-associated/89307"
 brand = "brand/team-associated"
 number = "89307"
 name = "RC8TCE FT Blue Aluminum Front Tower"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126145502/http://teamassociated.com/factoryteam/parts/details/89307/"
 gtin = "784695893078"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8tce-ft-blue-aluminum-front-tower/" },
 ]
 category = "chassis"
 color = "blue"
+material = "aluminium"
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80912"], type = "replaces", source = "doc/team-associated/rc8tce-manual-preflight", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

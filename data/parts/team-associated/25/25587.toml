@@ -2,8 +2,13 @@ id = "part/team-associated/25587"
 brand = "brand/team-associated"
 number = "25587"
 name = "Throttle/Brake Linkage"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127223457/http://teamassociated.com/parts/details/25587/"
 gtin = "784695255876"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/throttle-brake-linkage-part-25587/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,8 +2,13 @@ id = "part/team-associated/81464"
 brand = "brand/team-associated"
 number = "81464"
 name = "RC8B3.2 Decal Sheet"
+seen_by = "2022-12-09"
+seen_by_source = "https://web.archive.org/web/20221209200648/https://www.associatedelectrics.com/teamassociated/parts/details/81464-ASC81464-rc8b3_2_decal_sheet/"
 gtin = "784695814646"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b3-2-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -2,8 +2,14 @@ id = "part/team-associated/31355"
 brand = "brand/team-associated"
 number = "31355"
 name = "FT Ceramic Bearings, 4x8x3 mm, flanged"
+seen_by = "2011-10-29"
+seen_by_source = "https://web.archive.org/web/20111029144037/http://www.teamassociated.com:80/factoryteam/parts/details/31355/"
 gtin = "784695313552"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ceramic-bearings-4x8x3-mm-flanged/" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

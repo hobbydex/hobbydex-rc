@@ -2,6 +2,8 @@ id = "part/team-associated/91594"
 brand = "brand/team-associated"
 number = "91594"
 name = "FT Ti Screws, M3x12 mm FHCS"
+seen_by = "2015-03-16"
+seen_by_source = "https://web.archive.org/web/20150316223443/http://teamassociated.com/pictures/products/91594/91594_sm.jpg"
 gtin = "784695915947"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ti-screws-m3x12-mm-fhcs/" },
@@ -10,3 +12,7 @@ fits = [
   { kit = "kit/team-associated/pro2-rt10", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"

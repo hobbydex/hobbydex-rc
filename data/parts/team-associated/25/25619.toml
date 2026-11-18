@@ -2,8 +2,13 @@ id = "part/team-associated/25619"
 brand = "brand/team-associated"
 number = "25619"
 name = "Bearings, 5x10x4 mm"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182352/http://www.teamassociated.com:80/parts/details/25619/"
 gtin = "784695256194"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/bearings-5x10x4-mm-part-25619/" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

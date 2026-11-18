@@ -11,3 +11,7 @@ pack_qty = 10
 pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/xray/910255-product-page"]
+material = "stainless"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x5-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,8 +2,14 @@ id = "part/team-associated/89366"
 brand = "brand/team-associated"
 number = "89366"
 name = "Front and Rear CVA Bones"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115171815/http://www.teamassociated.com:80/parts/details/89366/"
 gtin = "784695893665"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/front-and-rear-cva-bones-part-89366/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911", "release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80932"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

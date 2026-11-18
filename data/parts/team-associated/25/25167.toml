@@ -2,8 +2,15 @@ id = "part/team-associated/25167"
 brand = "brand/team-associated"
 number = "25167"
 name = "Servo Saver, JR/Airtronics"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115172414/http://www.teamassociated.com:80/parts/details/25167/"
 gtin = "784695251670"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/servo-saver-jr-airtronics/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt4-60se-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10r5", releases = ["release/team-associated/8021", "release/team-associated/8022"], type = "replaces", source = "doc/team-associated/cat-rc10r5o", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc12r5", releases = ["release/team-associated/4019", "release/team-associated/4020"], type = "replaces", source = "doc/team-associated/cat-12r5-1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

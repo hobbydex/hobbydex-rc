@@ -2,8 +2,15 @@ id = "part/team-associated/91405"
 brand = "brand/team-associated"
 number = "91405"
 name = "Steering Blocks (hard)"
+seen_by = "2014-05-29"
+seen_by_source = "https://web.archive.org/web/20140529063753/http://www.teamassociated.com:80/parts/details/91405/"
 gtin = "784695914056"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/steering-blocks-hard/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/team-associated/rc10b5", releases = ["release/team-associated/90000", "release/team-associated/90001", "release/team-associated/90001B", "release/team-associated/90002", "release/team-associated/90003"], type = "replaces", source = "doc/team-associated/90000-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10sc5", releases = ["release/team-associated/70006"], type = "replaces", source = "doc/team-associated/manual-70006-rc10sc5m-tk", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10t5", releases = ["release/team-associated/70001"], type = "replaces", source = "doc/team-associated/manual-70001-rc10t5m", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

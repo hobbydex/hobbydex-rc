@@ -2,8 +2,14 @@ id = "part/team-associated/31354"
 brand = "brand/team-associated"
 number = "31354"
 name = "FT Ceramic Bearings, 10x15x4 mm"
+seen_by = "2011-10-29"
+seen_by_source = "https://web.archive.org/web/20111029144027/http://www.teamassociated.com:80/factoryteam/parts/details/31354/"
 gtin = "784695313545"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ceramic-bearings-10x15x4-mm/" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

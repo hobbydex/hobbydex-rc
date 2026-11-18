@@ -2,8 +2,13 @@ id = "part/team-associated/31125"
 brand = "brand/team-associated"
 number = "31125"
 name = "Screws, 2-56 x 3/8 in FHCS"
+seen_by = "2011-11-28"
+seen_by_source = "https://web.archive.org/web/20111128011903/http://teamassociated.com/parts/details/31125/"
 gtin = "784695311251"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-2-56-x-3-8-in-fhcs/" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/unc-2-56x3-8in-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

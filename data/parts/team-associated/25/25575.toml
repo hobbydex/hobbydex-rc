@@ -2,8 +2,13 @@ id = "part/team-associated/25575"
 brand = "brand/team-associated"
 number = "25575"
 name = "Skid Plates"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127200448/http://teamassociated.com/parts/details/25575/"
 gtin = "784695255753"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/skid-plates/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/drawing-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,9 +2,15 @@ id = "part/team-associated/89464"
 brand = "brand/team-associated"
 number = "89464"
 name = "FT Blue Aluminum Front Tower"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126225555/http://teamassociated.com/pictures/products/89464/89464_lg.jpg"
 gtin = "784695894648"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-blue-aluminum-front-tower/" },
 ]
 category = "chassis"
 color = "blue"
+material = "aluminium"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80906", "release/team-associated/80907", "release/team-associated/80909"], type = "replaces", source = "doc/team-associated/manual-rc8-2rsrtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

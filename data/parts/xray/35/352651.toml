@@ -14,3 +14,8 @@ documents = ["doc/xray/352651-product-page"]
 fits = [
   { kit = "kit/xray/xb8", releases = ["release/xray/350000"], type = "direct", source = "doc/xray/portal-1181" },
 ]
+equivalent_to = [
+  { spec = "spec/ball-end/5.8mm-stud", match = "functional" },
+]
+ball_mm = 5.8
+ball_type = "stud"

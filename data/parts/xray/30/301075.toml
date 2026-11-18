@@ -9,3 +9,7 @@ links = [
 ]
 category = "chassis"
 documents = ["doc/xray/301075-product-page"]
+fits = [
+  { kit = "kit/xray/x4f", type = "replaces", source = "doc/xray/301075-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "carbon"

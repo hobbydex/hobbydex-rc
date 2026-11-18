@@ -2,8 +2,13 @@ id = "part/team-associated/25744"
 brand = "brand/team-associated"
 number = "25744"
 name = "O-rings, RIVAL-MT Center Differential"
+seen_by = "2013-04-30"
+seen_by_source = "https://web.archive.org/web/20130430023515/http://teamassociated.com/parts/details/25744/"
 gtin = "784695257443"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/o-rings-rival-mt-center-differential/" },
 ]
 category = "o-ring-seal"
+fits = [
+  { kit = "kit/team-associated/rival", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

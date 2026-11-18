@@ -2,9 +2,14 @@ id = "part/team-associated/21379"
 brand = "brand/team-associated"
 number = "21379"
 name = "18LM RTR Body, black"
+seen_by = "2011-03-10"
+seen_by_source = "https://web.archive.org/web/20110310034707/http://teamassociated.com:80/parts/details/21379/"
 gtin = "784695213791"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/18lm-rtr-body-black/" },
 ]
 category = "body"
 color = "black"
+fits = [
+  { kit = "kit/team-associated/rc18lm", releases = ["release/team-associated/20130"], type = "replaces", source = "doc/team-associated/rc18lm-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

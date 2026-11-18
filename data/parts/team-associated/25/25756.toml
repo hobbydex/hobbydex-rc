@@ -2,8 +2,13 @@ id = "part/team-associated/25756"
 brand = "brand/team-associated"
 number = "25756"
 name = "RIVAL-MT Turnbuckle Eyelets"
+seen_by = "2013-06-20"
+seen_by_source = "https://web.archive.org/web/20130620141556/http://teamassociated.com/parts/details/25756/"
 gtin = "784695257566"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-turnbuckle-eyelets/" },
 ]
 category = "turnbuckle"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

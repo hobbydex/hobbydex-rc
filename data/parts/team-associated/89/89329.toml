@@ -2,6 +2,8 @@ id = "part/team-associated/89329"
 brand = "brand/team-associated"
 number = "89329"
 name = "FT RC8T Aluminum Wheel Hexes, narrow (pair)"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182443/http://www.teamassociated.com:80/parts/details/89329/"
 gtin = "784695893290"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-rc8t-aluminum-wheel-hexes-narrow-pair/" },
@@ -9,3 +11,7 @@ links = [
 pack_qty = 2
 pack_qty_basis = "name"
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc8t", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"

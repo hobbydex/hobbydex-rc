@@ -2,8 +2,13 @@ id = "part/team-associated/7055R"
 brand = "brand/team-associated"
 number = "7055R"
 name = "SC10 RS RTR Monster Energy Toyota, refurbished"
+seen_by = "2014-06-26"
+seen_by_source = "https://web.archive.org/web/20140626122024/http://teamassociated.com/pictures/products/7055R/7055R_ssm.jpg"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc10-rs-rtr-monster-energy-toyota-refurbished/" },
 ]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/team-associated/sc10", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -2,8 +2,13 @@ id = "part/team-associated/89125"
 brand = "brand/team-associated"
 number = "89125"
 name = "Brake Cam Bushings"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127154836/http://teamassociated.com/parts/details/89125/"
 gtin = "784695891258"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/brake-cam-bushings/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80901-25", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

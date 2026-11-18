@@ -2,8 +2,14 @@ id = "part/team-associated/89061"
 brand = "brand/team-associated"
 number = "89061"
 name = "FT Shock Caps and Retainers"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127143100/http://teamassociated.com/factoryteam/parts/details/89061/"
 gtin = "784695890619"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-shock-caps-and-retainers/" },
 ]
 category = "shock"
+shock_part = "cap"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80901-25", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

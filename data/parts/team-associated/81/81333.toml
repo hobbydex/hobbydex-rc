@@ -2,8 +2,13 @@ id = "part/team-associated/81333"
 brand = "brand/team-associated"
 number = "81333"
 name = "RC8B3 FT CVA Set, 92.5 mm, rear"
+seen_by = "2019-07-18"
+seen_by_source = "https://web.archive.org/web/20190718132328/https://www.associatedelectrics.com/teamassociated/parts/details/81333-ASC81333-rc8b3_ft_cva_set_92_5_mm_rear/"
 gtin = "784695813335"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b3-ft-cva-set-92-5-mm-rear/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

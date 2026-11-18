@@ -2,9 +2,17 @@ id = "part/team-associated/21298"
 brand = "brand/team-associated"
 number = "21298"
 name = "18R Kamino Body, clear"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115061048/http://www.teamassociated.com:80/parts/details/21298/"
 gtin = "784695212985"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/18r-kamino-body-clear/" },
 ]
 category = "body"
 color = "clear"
+fits = [
+  { kit = "kit/team-associated/apex-18", releases = ["release/team-associated/20113", "release/team-associated/20119"], type = "replaces", source = "doc/team-associated/manual-apexmini", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18r", releases = ["release/team-associated/20115"], type = "replaces", source = "doc/team-associated/18r-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/reflex-18", releases = ["release/team-associated/20109"], type = "replaces", source = "doc/team-associated/manual-reflex-20109-rival-20112-apex-20113", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rival-18", releases = ["release/team-associated/20111", "release/team-associated/20112"], type = "replaces", source = "doc/team-associated/apex-mini-rival-mini-manual-3-5-2013", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

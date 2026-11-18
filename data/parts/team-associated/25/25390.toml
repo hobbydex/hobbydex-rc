@@ -2,8 +2,13 @@ id = "part/team-associated/25390"
 brand = "brand/team-associated"
 number = "25390"
 name = "FT Locknuts, 5 mm"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125162431/http://teamassociated.com/factoryteam/parts/details/25390/"
 gtin = "784695253902"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-locknuts-5-mm/" },
 ]
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m5-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

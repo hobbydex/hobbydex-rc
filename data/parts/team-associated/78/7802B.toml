@@ -2,9 +2,15 @@ id = "part/team-associated/7802B"
 brand = "brand/team-associated"
 number = "7802B"
 name = "Truck Rear Wheels, one piece, black, lightweight"
+seen_by = "2001-07-01"
+seen_by_source = "https://web.archive.org/web/20010701071355/http://www.rc10.com:80/shusting/CatalogHub/wheels/7802b.jpg"
 gtin = "784695999442"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/truck-rear-wheels-one-piece-black-lightweight/" },
 ]
 category = "wheel"
 color = "black"
+position = "rear"
+fits = [
+  { kit = "kit/team-associated/rc10t", releases = ["release/team-associated/7003"], type = "replaces", source = "doc/team-associated/valkyrie-t3-basic-7003-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

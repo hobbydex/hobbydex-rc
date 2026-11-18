@@ -2,9 +2,15 @@ id = "part/team-associated/21412"
 brand = "brand/team-associated"
 number = "21412"
 name = "18B2 Body, clear"
+seen_by = "2011-03-10"
+seen_by_source = "https://web.archive.org/web/20110310040447/http://teamassociated.com:80/parts/details/21412/"
 gtin = "784695214125"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/18b2-body-clear/" },
 ]
 category = "body"
 color = "clear"
+fits = [
+  { kit = "kit/team-associated/rc18b", releases = ["release/team-associated/20106", "release/team-associated/20108"], type = "replaces", source = "doc/team-associated/20106-cat-rc18t2-b2rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18t", releases = ["release/team-associated/20101", "release/team-associated/20103", "release/team-associated/20104"], type = "replaces", source = "doc/team-associated/20104-cat-rc18t2-b2rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

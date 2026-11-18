@@ -2,8 +2,13 @@ id = "part/team-associated/25164"
 brand = "brand/team-associated"
 number = "25164"
 name = "Forward/Reverse Shifting Linkage"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125182626/http://teamassociated.com/parts/details/25164/"
 gtin = "784695251649"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/forward-reverse-shifting-linkage/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/drawing-mgt4-6", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

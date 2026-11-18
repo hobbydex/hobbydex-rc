@@ -2,8 +2,13 @@ id = "part/team-associated/92110"
 brand = "brand/team-associated"
 number = "92110"
 name = "RC10B74 Chassis"
+seen_by = "2024-10-12"
+seen_by_source = "https://web.archive.org/web/20241012102109/https://www.associatedelectrics.com/teamassociated/parts/details/92110-ASC92110-rc10b74_chassis/"
 gtin = "784695921108"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b74-chassis/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rc10b74", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

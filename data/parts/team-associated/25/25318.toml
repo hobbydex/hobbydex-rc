@@ -2,8 +2,13 @@ id = "part/team-associated/25318"
 brand = "brand/team-associated"
 number = "25318"
 name = "AE .21/4.60 Needle Valve, for #25316, #25364 carbs"
+seen_by = "2014-07-08"
+seen_by_source = "https://web.archive.org/web/20140708040351/http://teamassociated.com/pictures/products/25318/25318_sm.jpg"
 gtin = "784695253186"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ae-21-4-60-needle-valve-for-25316-25364-carbs/" },
 ]
 category = "engine-fuel"
+related = [
+  { part = "part/team-associated/25316", relation = "for", notes = "link_part_refs" },
+]

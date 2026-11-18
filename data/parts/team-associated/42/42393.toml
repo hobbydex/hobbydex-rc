@@ -2,6 +2,8 @@ id = "part/team-associated/42393"
 brand = "brand/team-associated"
 number = "42393"
 name = "DOWEL PINS, 2.5 x 12mm"
+seen_by = "2025-07-19"
+seen_by_source = "https://web.archive.org/web/20250719143320/https://60years.associatedelectrics.com/dowel-pins-2-5-x-12mm/"
 gtin = "784695423930"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/dowel-pins-2-5-x-12mm/" },
@@ -10,3 +12,8 @@ fits = [
   { kit = "kit/element-rc/enduro", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "pin"
+color = "silver"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/pin/2.5x12", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

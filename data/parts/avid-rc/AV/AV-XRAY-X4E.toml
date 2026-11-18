@@ -2,6 +2,8 @@ id = "part/avid-rc/AV-XRAY-X4E"
 brand = "brand/avid-rc"
 number = "AV-XRAY-X4E"
 name = "Xray X4 Essentials Bearing Kit"
+seen_by = "2026-04-18"
+seen_by_source = "https://web.archive.org/web/20260418040225/https://www.avidrc.com/flexkit/3554/X4-Essentials"
 includes = [
   { spec = "spec/bearing/6x10x3", qty = 8, notes = "Default: Metal (greased)" },
   { spec = "spec/bearing/10x15x4", qty = 4, notes = "Default: Metal (greased)" },
@@ -13,7 +15,7 @@ seal = "metal"
 lubricant = "grease"
 applies_to = "Xray X4 | Essentials"
 fits = [
-  { kit = "kit/xray/x4", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Xray X4 (link_car_kits.py)" },
+  { kit = "kit/xray/x4", type = "direct", source = "doc/avid-rc/flexkit", notes = "Listed for the Xray X4 (link_car_kits.py)", car = "X4 |" },
 ]
 notes = "Each size can be ordered as one of: Metal, Revolution, Revolution | Aura, Rubber, Ceramic Revolution, Ceramic Metal, Ceramic Metal | Aura (Avid's Flex Kit builder)."
 links = [

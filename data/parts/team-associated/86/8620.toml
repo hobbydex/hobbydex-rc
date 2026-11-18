@@ -7,3 +7,8 @@ links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10f6-chassis-carbon-fiber/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rc10f6", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/rc10f6", type = "replaces", replaces = "part/team-associated/8694", source = "doc/team-associated/store", notes = "Same part in another material (link_upgrades.py)" },
+]
+material = "carbon"

@@ -2,8 +2,14 @@ id = "part/team-associated/25378"
 brand = "brand/team-associated"
 number = "25378"
 name = "Spur Gear, 49 Tooth"
+seen_by = "2010-11-19"
+seen_by_source = "https://web.archive.org/web/20101119204411/http://www.teamassociated.com:80/parts/details/25378/"
 gtin = "784695253780"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/spur-gear-49-tooth/" },
 ]
 category = "spur-gear"
+teeth = 49
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503"], type = "replaces", source = "doc/team-associated/drawing-mgt4-6", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

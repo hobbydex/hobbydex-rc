@@ -2,8 +2,13 @@ id = "part/team-associated/25451"
 brand = "brand/team-associated"
 number = "25451"
 name = "AE 8.0 Carburetor Body"
+seen_by = "2010-11-19"
+seen_by_source = "https://web.archive.org/web/20101119211915/http://www.teamassociated.com:80/parts/details/25451/"
 gtin = "784695254510"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ae-8-0-carburetor-body/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt8-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,8 +2,13 @@ id = "part/team-associated/25754"
 brand = "brand/team-associated"
 number = "25754"
 name = "RIVAL-MT Turnbuckle Set"
+seen_by = "2013-04-29"
+seen_by_source = "https://web.archive.org/web/20130429211032/http://teamassociated.com/parts/details/25754/"
 gtin = "784695257542"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-turnbuckle-set/" },
 ]
 category = "turnbuckle"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

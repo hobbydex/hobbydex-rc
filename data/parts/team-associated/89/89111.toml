@@ -2,8 +2,13 @@ id = "part/team-associated/89111"
 brand = "brand/team-associated"
 number = "89111"
 name = "RC8 CENTER DIFF COMPLETE"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129074731/http://teamassociated.com/pictures/products/89111/89111_sm.jpg"
 gtin = "784695891111"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8-center-diff-complete/" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

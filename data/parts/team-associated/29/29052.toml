@@ -2,8 +2,13 @@ id = "part/team-associated/29052"
 brand = "brand/team-associated"
 number = "29052"
 name = "Starting Axle (new)"
+seen_by = "2012-06-22"
+seen_by_source = "https://web.archive.org/web/20120622233558/http://www.teamassociated.com/pictures/products/29052/29052_lg.jpg"
 gtin = "784695290525"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/starting-axle-new/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/sc10gt", releases = ["release/team-associated/7093"], type = "replaces", source = "doc/team-associated/sc10-gt-rtr-manual-and-catalog-3-13-2012", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

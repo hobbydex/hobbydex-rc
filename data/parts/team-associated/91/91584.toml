@@ -2,6 +2,8 @@ id = "part/team-associated/91584"
 brand = "brand/team-associated"
 number = "91584"
 name = "FT Ti Screws, M3x14 mm BHCS"
+seen_by = "2015-01-13"
+seen_by_source = "https://web.archive.org/web/20150113013643/http://www.teamassociated.com:80/parts/details/91584/"
 gtin = "784695915848"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ti-screws-m3x14-mm-bhcs/" },
@@ -10,3 +12,7 @@ fits = [
   { kit = "kit/team-associated/pro2-rt10", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"

@@ -2,8 +2,14 @@ id = "part/team-associated/89195"
 brand = "brand/team-associated"
 number = "89195"
 name = "FT Front Spring Set"
+seen_by = "2010-12-18"
+seen_by_source = "https://web.archive.org/web/20101218220627/http://teamassociated.com/pictures/products/89195/89195_sm.jpg"
 gtin = "784695891951"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-front-spring-set/" },
 ]
 category = "shock-spring"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

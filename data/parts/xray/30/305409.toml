@@ -9,3 +9,7 @@ links = [
 ]
 category = "drivetrain"
 documents = ["doc/xray/305409-product-page"]
+material = "steel"
+fits = [
+  { kit = "kit/xray/t4", releases = ["release/xray/300028", "release/xray/300029", "release/xray/300030"], type = "replaces", source = "doc/xray/t4-2021-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,9 +2,16 @@ id = "part/team-associated/7842Y"
 brand = "brand/team-associated"
 number = "7842Y"
 name = "Truck Front Wheels, 1 piece, fluor. Yellow"
+seen_by = "2011-06-08"
+seen_by_source = "https://web.archive.org/web/20110608042054/http://www.teamassociated.com:80/parts/details/7842Y/"
 gtin = "784695999428"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/truck-front-wheels-1-piece-fluor-yellow/" },
 ]
 category = "wheel"
 color = "yellow"
+position = "front"
+range = "team-associated/7842-colours"
+fits = [
+  { kit = "kit/team-associated/rc10t", releases = ["release/team-associated/7003"], type = "replaces", source = "doc/team-associated/valkyrie-t3-basic-7003-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

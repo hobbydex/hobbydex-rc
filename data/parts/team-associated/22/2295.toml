@@ -2,8 +2,13 @@ id = "part/team-associated/2295"
 brand = "brand/team-associated"
 number = "2295"
 name = "NTC3 Two-Speed Clutch Bell"
+seen_by = "2025-09-10"
+seen_by_source = "https://web.archive.org/web/20250910101920/https://60years.associatedelectrics.com/ntc3-two-speed-clutch-bell/"
 gtin = "784695022959"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ntc3-two-speed-clutch-bell/" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/ntc3", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

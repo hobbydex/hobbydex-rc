@@ -2,9 +2,14 @@ id = "part/team-associated/89419"
 brand = "brand/team-associated"
 number = "89419"
 name = "KMC Wheels, silver, with silver beadguards"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129081459/http://teamassociated.com/pictures/products/89419/89419_sm.jpg"
 gtin = "784695894198"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/kmc-wheels-silver-with-silver-beadguards/" },
 ]
 category = "wheel"
 color = "silver"
+fits = [
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80932", "release/team-associated/80933"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

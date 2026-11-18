@@ -2,8 +2,13 @@ id = "part/team-associated/31019"
 brand = "brand/team-associated"
 number = "31019"
 name = "Driveshaft Accessories"
+seen_by = "2014-07-08"
+seen_by_source = "https://web.archive.org/web/20140708125103/http://teamassociated.com/pictures/products/31019/31019_sm.jpg"
 gtin = "784695310193"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/driveshaft-accessories/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/tc4", releases = ["release/team-associated/30111"], type = "direct", source = "doc/team-associated/cat-tc4rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

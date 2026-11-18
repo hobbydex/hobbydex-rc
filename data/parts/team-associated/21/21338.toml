@@ -2,8 +2,15 @@ id = "part/team-associated/21338"
 brand = "brand/team-associated"
 number = "21338"
 name = "Tie Rod Link Set"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182310/http://www.teamassociated.com:80/parts/details/21338/"
 gtin = "784695213388"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tie-rod-link-set/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/team-associated/rc18b", releases = ["release/team-associated/20106", "release/team-associated/20108"], type = "replaces", source = "doc/team-associated/20106-cat-rc18t2-b2rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18lm", releases = ["release/team-associated/20130"], type = "replaces", source = "doc/team-associated/rc18lm-manual-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18t", releases = ["release/team-associated/20101", "release/team-associated/20103", "release/team-associated/20104"], type = "replaces", source = "doc/team-associated/20104-cat-rc18t2-b2rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,8 +2,14 @@ id = "part/team-associated/25545"
 brand = "brand/team-associated"
 number = "25545"
 name = "Shock Accessories"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127223440/http://teamassociated.com/pictures/products/25545/25545_lg.jpg"
 gtin = "784695255456"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/shock-accessories-part-25545/" },
 ]
 category = "shock"
+shock_part = "complete"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "direct", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

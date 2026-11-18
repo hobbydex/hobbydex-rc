@@ -9,3 +9,7 @@ documents = ["doc/robitronic/hurricane-r39090-manual"]
 category = "ball-end"
 ball_mm = 6.8
 name_de = "c Ball (10) / Kugelkopf mit Flansch 6.8mm"
+equivalent_to = [
+  { spec = "spec/ball-end/6.8mm-through-hole", match = "functional" },
+]
+ball_type = "through-hole"

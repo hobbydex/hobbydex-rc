@@ -2,8 +2,13 @@ id = "part/team-associated/25218"
 brand = "brand/team-associated"
 number = "25218"
 name = "Locknuts, M5"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125214829/http://teamassociated.com/parts/details/25218/"
 gtin = "784695252189"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/locknuts-m5/" },
 ]
 category = "nut"
+equivalent_to = [
+  { spec = "spec/nut/m5-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

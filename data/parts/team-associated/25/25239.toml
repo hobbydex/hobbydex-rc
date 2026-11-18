@@ -2,8 +2,13 @@ id = "part/team-associated/25239"
 brand = "brand/team-associated"
 number = "25239"
 name = "Bearings, 5x11x4 mm"
+seen_by = "2010-12-18"
+seen_by_source = "https://web.archive.org/web/20101218194950/http://teamassociated.com/pictures/products/25239/25239_sm.jpg"
 gtin = "784695252394"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/bearings-5x11x4-mm-part-25239/" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

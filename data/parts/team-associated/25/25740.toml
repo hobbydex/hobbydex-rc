@@ -2,8 +2,13 @@ id = "part/team-associated/25740"
 brand = "brand/team-associated"
 number = "25740"
 name = "RIVAL-MT Motor Plate"
+seen_by = "2013-04-30"
+seen_by_source = "https://web.archive.org/web/20130430021516/http://teamassociated.com/parts/details/25740/"
 gtin = "784695257405"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-motor-plate/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

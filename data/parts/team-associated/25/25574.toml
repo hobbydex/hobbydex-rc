@@ -2,8 +2,13 @@ id = "part/team-associated/25574"
 brand = "brand/team-associated"
 number = "25574"
 name = "Rear Bumper and Brace"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127220127/http://teamassociated.com/parts/details/25574/"
 gtin = "784695255746"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rear-bumper-and-brace-part-25574/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

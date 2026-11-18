@@ -2,8 +2,13 @@ id = "part/team-associated/31741"
 brand = "brand/team-associated"
 number = "31741"
 name = "TC7.1 Front Shock Tower, SS"
+seen_by = "2019-02-17"
+seen_by_source = "https://web.archive.org/web/20190217204248/https://www.teamassociated.com/pictures/products/31741/31741_sm.jpg"
 gtin = "784695317413"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc7-1-front-shock-tower-ss/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/tc7", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

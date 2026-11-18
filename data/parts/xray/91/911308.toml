@@ -11,3 +11,9 @@ pack_qty = 10
 pack_qty_basis = "name"
 category = "screw"
 documents = ["doc/xray/911308-product-page"]
+fits = [
+  { kit = "kit/xray/x8", releases = ["release/xray/x8-2026"], type = "direct", source = "doc/xray/x8-2026-part-list" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x8-flanged-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

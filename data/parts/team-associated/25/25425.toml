@@ -2,8 +2,13 @@ id = "part/team-associated/25425"
 brand = "brand/team-associated"
 number = "25425"
 name = "Monster GT Decal Sheet, color"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127112044/http://teamassociated.com/parts/details/25425/"
 gtin = "784695254251"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/monster-gt-decal-sheet-color/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503"], type = "direct", source = "doc/team-associated/mgt4-60se-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

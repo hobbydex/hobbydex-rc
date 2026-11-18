@@ -7,3 +7,9 @@ links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-front-shock-shafts-32-mm/" },
 ]
 category = "shock"
+shock_part = "shaft"
+length_mm = 32
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80901-25"], type = "replaces", source = "doc/team-associated/cat-rc8e", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

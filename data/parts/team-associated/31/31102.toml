@@ -2,8 +2,14 @@ id = "part/team-associated/31102"
 brand = "brand/team-associated"
 number = "31102"
 name = "FT Carbon Shock Tower Mount"
+seen_by = "2011-11-28"
+seen_by_source = "https://web.archive.org/web/20111128011908/http://teamassociated.com/factoryteam/parts/details/31102/"
 gtin = "784695311022"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-carbon-shock-tower-mount/" },
 ]
 category = "chassis"
+material = "carbon"
+fits = [
+  { kit = "kit/team-associated/tc4", releases = ["release/team-associated/30111"], type = "replaces", source = "doc/team-associated/drawing-fttc4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

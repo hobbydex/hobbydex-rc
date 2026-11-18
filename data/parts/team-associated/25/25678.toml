@@ -2,8 +2,13 @@ id = "part/team-associated/25678"
 brand = "brand/team-associated"
 number = "25678"
 name = "Spur Gear Hub"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125182737/http://teamassociated.com/parts/details/25678/"
 gtin = "784695256781"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/spur-gear-hub-part-25678/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

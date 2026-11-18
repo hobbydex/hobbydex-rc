@@ -2,8 +2,13 @@ id = "part/team-associated/25751"
 brand = "brand/team-associated"
 number = "25751"
 name = "RIVAL-MT Reciever Tray"
+seen_by = "2013-04-30"
+seen_by_source = "https://web.archive.org/web/20130430052046/http://teamassociated.com/parts/details/25751/"
 gtin = "784695257511"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-reciever-tray/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

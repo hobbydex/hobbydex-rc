@@ -12,3 +12,11 @@ pack_qty_basis = "name"
 color = "silver"
 category = "shock-spring"
 documents = ["doc/xray/372174-product-page"]
+rate = "soft"
+rate_n_mm = 0.7
+free_length_mm = 35
+wire_mm = 0.35
+range = "xray/spring-coils-x-x-free-rate-rate-wire-springs"
+fits = [
+  { kit = "kit/xray/x1", releases = ["release/xray/x1-2025"], type = "replaces", source = "doc/xray/x1-2025-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

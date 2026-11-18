@@ -2,8 +2,13 @@ id = "part/team-associated/25677"
 brand = "brand/team-associated"
 number = "25677"
 name = "Slipper Hardware"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125170326/http://teamassociated.com/parts/details/25677/"
 gtin = "784695256774"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/slipper-hardware-part-25677/" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

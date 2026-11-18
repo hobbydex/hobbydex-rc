@@ -2,9 +2,14 @@ id = "part/team-associated/92088"
 brand = "brand/team-associated"
 number = "92088"
 name = "B64 Lightweight Body, clear"
+seen_by = "2019-08-23"
+seen_by_source = "https://web.archive.org/web/20190823051402/https://www.associatedelectrics.com/teamassociated/parts/details/92088-ASC92088-b64_lightweight_body_clear/"
 gtin = "784695920880"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/b64-lightweight-body-clear/" },
 ]
 category = "body"
 color = "clear"
+fits = [
+  { kit = "kit/team-associated/rc10b64", releases = ["release/team-associated/90014", "release/team-associated/90015", "release/team-associated/90016"], type = "replaces", source = "doc/team-associated/manual-b64-90014", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

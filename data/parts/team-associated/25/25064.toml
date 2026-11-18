@@ -2,9 +2,15 @@ id = "part/team-associated/25064"
 brand = "brand/team-associated"
 number = "25064"
 name = "Shock Springs, red, 5.95 lb/in, firm"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125163003/http://teamassociated.com/parts/details/25064/"
 gtin = "784695250642"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/shock-springs-red-5-95-lb-in-firm/" },
 ]
 category = "shock-spring"
 color = "red"
+rate_lb_in = 5.95
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

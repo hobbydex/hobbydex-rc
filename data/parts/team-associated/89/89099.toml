@@ -2,8 +2,13 @@ id = "part/team-associated/89099"
 brand = "brand/team-associated"
 number = "89099"
 name = "Center CVA Set"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127153754/http://teamassociated.com/parts/details/89099/"
 gtin = "784695890992"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/center-cva-set/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

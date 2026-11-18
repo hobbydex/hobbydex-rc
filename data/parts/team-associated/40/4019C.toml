@@ -2,8 +2,14 @@ id = "part/team-associated/4019C"
 brand = "brand/team-associated"
 number = "4019C"
 name = "RC12R5.1 W/LIPO CONVERSION KIT"
+seen_by = "2012-06-04"
+seen_by_source = "https://web.archive.org/web/20120604121511/http://teamassociated.com/news/latest_products/791-%234019C_Limited_Edition_RC12R5.1_with_FREE_LiPo_Conversion_Kit/"
 gtin = "784695991521"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc12r5-1-w-lipo-conversion-kit/" },
 ]
 category = "battery"
+chemistry = "lipo"
+fits = [
+  { kit = "kit/team-associated/rc12r5", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
