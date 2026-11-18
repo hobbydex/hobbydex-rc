@@ -7,10 +7,11 @@ pack_qty_basis = "name"
 name_source = "dealer"
 applies_to = "RR10 Bomber"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Axial-RR10-Bomber-Parts-Hop-Ups-Upgrades&brand=Axial&model=RR10%20Bomber&id=153998&pid=1", kind = "dealer" },
+  { site = "Boom Racing", url = "https://www.boomracing.com/badass-hd-steel-center-drive-shaft-set-for-axial-bomber-front-rear-2-recon-g6-certified-153998" },
 ]
 category = "drivetrain"
 material = "steel"
 fits = [
   { kit = "kit/axial/bomber", type = "replaces", source = "doc/boom-racing/asiatees" },
+  { kit = "kit/axial/bomber", type = "direct", source = "doc/boom-racing/shop" },
 ]

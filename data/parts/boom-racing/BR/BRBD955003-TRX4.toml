@@ -2,13 +2,17 @@ id = "part/boom-racing/BRBD955003-TRX4"
 brand = "brand/boom-racing"
 number = "BRBD955003-TRX4"
 name = "BADASS™ HD Steel Center Drive Shaft Set for Traxxas TRX4 D110 / Sport / Ford Front & Rear (2) [Recon G6 Certified]"
+pack_qty = 2
+pack_qty_basis = "page"
 name_source = "dealer"
 applies_to = "TRX-4"
 fits = [
   { kit = "kit/traxxas/trx-4", type = "replaces", source = "doc/boom-racing/asiatees" },
+  { kit = "kit/traxxas/trx-4", type = "direct", source = "doc/boom-racing/shop" },
 ]
+notes = "The shop's listing cuts the name; the end is taken from the product URL"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-TRX-4-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=TRX-4&id=154006&pid=1", kind = "dealer" },
+  { site = "Boom Racing", url = "https://www.boomracing.com/badass-hd-steel-center-drive-shaft-set-for-traxxas-trx4-d110-sport-ford-front-rear-2-recon-g6-certified-154006" },
 ]
 category = "drivetrain"
 material = "steel"

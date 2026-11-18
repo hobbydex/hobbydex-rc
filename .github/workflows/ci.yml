@@ -42,6 +42,8 @@ jobs:
         run: python3 -I tools/test_validate_qualifier_names.py
       - name: The regression check counts a changed or dropped note, name or row note as a regression
         run: python3 -I tools/test_regression_check_text.py
+      - name: The regression check's rules (derived rows, placeholder names, canonical removals, stated rows)
+        run: python3 -I tools/test_regression_check.py
       - name: The audit runs on the data within 2 GB
         run: python3 -I tools/test_audit_memory.py
       - name: The audit's Tamiya static-kit rule
