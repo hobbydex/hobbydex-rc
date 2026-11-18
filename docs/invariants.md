@@ -33,8 +33,14 @@ CI runs the suite on every push and pull request and once a day on main (`.githu
 - **ratchet** (`ratchet(name, sql)`): a known gap (product pages still split per release, kits with no scale). Its
   count is kept in `tests/invariants/baseline.toml`; the run fails when the count is higher than the baseline. A
   change that fixes some lowers the baseline in the same change (`--update-baselines` writes the lower counts); the
-  daily run lists the baselines that can go down. With `blocking=False` a higher count is a warning only (part-misc:
-  importers still add parts no source categorises).
+  daily run lists the baselines that can go down. With `blocking=False` a higher count is a warning only. A failing
+  ratchet lists first, in full, the offending records of the data files the change touches (against
+  `INVARIANTS_BASE`, a pull request's base, or the merge base with origin/main).
+
+Misc is a category; a part with no category is the fallback (misc with `category_source = "fallback"`, owner
+2026-11-18). `part-has-category` (hard) keeps every part with a category; `part-category-fallback` (blocking ratchet)
+fails a change that adds fallback parts and lists them by id and name, so the classifier rules can be extended.
+Genuine misc parts never count.
 
 ## Adding an invariant
 
