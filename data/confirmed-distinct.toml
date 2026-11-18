@@ -5,6 +5,11 @@
 # [[release_pair]]: two releases whose item numbers differ by a suffix that
 # name one barcode or one maker page, and that the maker sells apart (its own
 # listing, its own number). The audit's release-suffix-twin check skips them.
+# The same table holds the verdict "separate releases" of the range review
+# (invariant release-editions-review): two releases whose names read as
+# colours or editions of one kit, but that the maker sells as separate
+# releases (a re-release, a later run); hobbydex-tools link_release_ranges.py
+# never puts them in one range.
 
 [[pair]]
 parts = ["part/tamiya/10005300", "part/tamiya/10005800"]
