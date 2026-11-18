@@ -10,6 +10,7 @@ power = "brushless"
 power_source = "part/kyosho/MZ704"
 status = "released"
 gtin = "4548565497416"
+dimensions = { length_mm = 120.6, width_mm = { min = 67, max = 76 }, height_mm = 35, wheelbase_mm = 94, weight_g = 138, source = "https://rc.kyosho.com/en/32895g.html" }
 documents = ["doc/kyosho/32895g-product-page", "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts", "doc/kyosho/32890-mini-z-mr-04evo2-manual"]
 contains = [
   { part = "part/kyosho/71998", role = "kit", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
