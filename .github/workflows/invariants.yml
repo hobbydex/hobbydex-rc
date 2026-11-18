@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2   # a pull request's merge commit and its base: a grown ratchet lists the records of the changed files first
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
