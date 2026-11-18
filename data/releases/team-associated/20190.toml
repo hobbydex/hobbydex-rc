@@ -68,3 +68,7 @@ contains = [
   { part = "part/team-associated/89215", role = "kit", qty = 2, step = "Step 10", source = "doc/team-associated/reflex-14mt-manual" },
   { part = "part/team-associated/91738", role = "kit", qty = 2, step = "Step 34", source = "doc/team-associated/reflex-14mt-manual" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20190-page", note = "#20190: 2S LiPo battery" },
+  { item = "charger", source = "doc/team-associated/20190-page", note = "Charger for above battery" },
+]

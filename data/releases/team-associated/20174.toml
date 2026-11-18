@@ -71,3 +71,7 @@ contains = [
   { part = "part/team-associated/21622", role = "listed", source = "doc/team-associated/pressrelease-053123-20174-reflex-14mt-parts-list" },
   { part = "part/team-associated/21623", role = "listed", source = "doc/team-associated/pressrelease-053123-20174-reflex-14mt-parts-list" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20174-page", note = "#20174: 2S LiPo radio-controlled car battery pack" },
+  { item = "charger", source = "doc/team-associated/20174-page", note = "Radio control battery charger" },
+]

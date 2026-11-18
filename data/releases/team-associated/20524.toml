@@ -100,3 +100,12 @@ contains = [
   { part = "part/team-associated/91738", role = "kit", qty = 2, step = "Bag 1, 2, 12 - Step 51", source = "doc/team-associated/mt10-classic-and-ft-kit-manual" },
   { part = "part/team-associated/92143", role = "kit", qty = 2, step = "Bag 5, 11, 12 - Step 9; Bag 6, 11, 12 - Step 18", source = "doc/team-associated/mt10-classic-and-ft-kit-manual" },
 ]
+needs = [
+  { item = "esc", source = "doc/team-associated/20524-page" },
+  { item = "motor", source = "doc/team-associated/20524-page" },
+  { item = "receiver", source = "doc/team-associated/20524-page" },
+  { item = "radio", source = "doc/team-associated/20524-page", note = "Transmitter" },
+  { item = "servo", source = "doc/team-associated/20524-page" },
+  { item = "battery", source = "doc/team-associated/20524-page", note = "NiMh or 2S/3S LiPo battery" },
+  { item = "charger", source = "doc/team-associated/20524-page" },
+]

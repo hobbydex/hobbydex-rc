@@ -56,3 +56,14 @@ contains = [
   { part = "part/team-associated/7811", role = "kit", qty = 6, step = "Nose Plate / Steering Build - Bag A - Step 1; Rear Bulkhead Build - Bag D - Step 4; Chassis Build - Bag H - Step 1; Electronics Build - Bag I - Step 1; Electronics Build - Bag I - Step 2", source = "doc/team-associated/rc10-jay-halsey-manual-10-7-2024" },
   { part = "part/team-associated/89007", role = "kit", qty = 1, step = "Electronics Build - Bag I - Step 2", source = "doc/team-associated/rc10-jay-halsey-manual-10-7-2024" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/6008-page", note = "6-cell NiMH or 2S LiPo for radio-controlled car" },
+  { item = "charger", source = "doc/team-associated/6008-page", note = "Radio control battery charger" },
+  { item = "esc", source = "doc/team-associated/6008-page", note = "1:10 scale radio control electronic speed control" },
+  { item = "motor", source = "doc/team-associated/6008-page", note = "1:10 scale 540-size electric RC car motor" },
+  { item = "radio", source = "doc/team-associated/6008-page", note = "2-channel RC surface transmitter and its batteries" },
+  { item = "receiver", source = "doc/team-associated/6008-page", note = "2-channel receiver" },
+  { item = "pinion", source = "doc/team-associated/6008-page", note = "Pinion gear" },
+  { item = "paint", source = "doc/team-associated/6008-page", note = "Paint for the body" },
+  { item = "servo", source = "doc/team-associated/6008-page", note = "Steering servo" },
+]

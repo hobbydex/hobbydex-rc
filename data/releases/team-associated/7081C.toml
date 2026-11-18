@@ -147,3 +147,6 @@ contains = [
   { part = "part/team-associated/9888", role = "kit", qty = 2, step = "Transmission Build - Bag C 2 - Step 1; Transmission Build - Bag C 2 - Step 3", source = "doc/team-associated/manual-sc10-3-7081-7082b" },
   { part = "part/team-associated/9922", role = "kit", qty = 2, step = "Wheels and Tires Build - Bag H 1 - Step 1", source = "doc/team-associated/manual-sc10-3-7081-7082b" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/7081-page", note = "#7081: 6-cell sub-C rechargeable battery or 2-cell LiPo battery" },
+]

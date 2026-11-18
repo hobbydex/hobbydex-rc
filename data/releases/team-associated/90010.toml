@@ -188,3 +188,13 @@ contains = [
   { part = "part/team-associated/9630", role = "kit", qty = 10, step = "Front Gearbox Assembly (cont.) - Bag C; Rear Gearbox Assembly (cont.) - Bag D", source = "doc/team-associated/sc10-4x4-manual-and-catalog-1-4-2012" },
   { part = "part/team-associated/9809", role = "kit", qty = 2, step = "Wheel and Tire Assembly - Bag O", source = "doc/team-associated/sc10-4x4-manual-and-catalog-1-4-2012" },
 ]
+needs = [
+  { item = "radio", source = "doc/team-associated/90010-page", note = "R/C 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/90010-page", note = "Battery pack (6 cell NiMh or 2 cell LiPo)" },
+  { item = "esc", source = "doc/team-associated/90010-page", note = "Electronic speed control" },
+  { item = "servo", source = "doc/team-associated/90010-page", note = "Steering servo" },
+  { item = "pinion", source = "doc/team-associated/90010-page", note = "Pinion gear" },
+  { item = "tyres", source = "doc/team-associated/90010-page", note = "Tires" },
+  { item = "glue", source = "doc/team-associated/90010-page", note = "Tire glue" },
+  { item = "paint", source = "doc/team-associated/90010-page", note = "Paint for body" },
+]

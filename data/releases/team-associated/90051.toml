@@ -161,3 +161,13 @@ contains = [
   { part = "part/team-associated/92555", role = "kit", qty = 2, step = "Bag 2 12 - Step - Step 1 7", source = "doc/team-associated/rc10b84-dirt-manual-3-9-2026" },
   { part = "part/team-associated/92560", role = "kit", qty = 2, step = "Bag 3 - Step 2; Bag 9 - Step 2", source = "doc/team-associated/rc10b84-dirt-manual-3-9-2026" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/90051-page" },
+  { item = "pinion", source = "doc/team-associated/90051-page", note = "Pinion Gear" },
+  { item = "esc", source = "doc/team-associated/90051-page" },
+  { item = "servo", source = "doc/team-associated/90051-page" },
+  { item = "radio", source = "doc/team-associated/90051-page", note = "Transmitter and Receiver" },
+  { item = "tyres", source = "doc/team-associated/90051-page", note = "Tires" },
+  { item = "wheels", source = "doc/team-associated/90051-page" },
+  { item = "paint", source = "doc/team-associated/90051-page", note = "Polycarbonate specific paint" },
+]

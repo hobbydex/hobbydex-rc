@@ -97,3 +97,12 @@ contains = [
   { part = "part/team-associated/92288", role = "kit", qty = 2, step = "Rear Transmission Build - Bag B - Step 4", source = "doc/team-associated/rc10-4wd-team-car-kit-manual-10-29-25" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Rear Transmission Build - Bag B - Step 4", source = "doc/team-associated/rc10-4wd-team-car-kit-manual-10-29-25" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/6046-page", note = "1:10 scale 540-size electric RC car motor" },
+  { item = "esc", source = "doc/team-associated/6046-page", note = "1:10 scale radio control electronic speed control" },
+  { item = "battery", source = "doc/team-associated/6046-page" },
+  { item = "charger", source = "doc/team-associated/6046-page", note = "Battery charger (for one of the batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/6046-page", note = "2-channel RC surface transmitter and its batteries" },
+  { item = "paint", source = "doc/team-associated/6046-page", note = "Lexan specific spray paint for body" },
+  { item = "servo", source = "doc/team-associated/6046-page", note = "Steering Servo" },
+]

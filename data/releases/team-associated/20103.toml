@@ -16,3 +16,12 @@ contains = [
   { part = "part/team-associated/1736", role = "listed", source = "doc/team-associated/manual-1-18-conversion" },
   { part = "part/team-associated/2009", role = "listed", source = "doc/team-associated/manual-1-18-conversion" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/20103-page" },
+  { item = "esc", source = "doc/team-associated/20103-page" },
+  { item = "battery", source = "doc/team-associated/20103-page" },
+  { item = "servo", source = "doc/team-associated/20103-page" },
+  { item = "receiver", source = "doc/team-associated/20103-page" },
+  { item = "paint", source = "doc/team-associated/20103-page", note = "paint for body" },
+  { item = "glue", source = "doc/team-associated/20103-page", note = "glue for tires" },
+]

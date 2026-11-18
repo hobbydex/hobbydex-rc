@@ -154,3 +154,15 @@ contains = [
   { part = "part/team-associated/9907", role = "kit", qty = 2, step = "Receiver Box / Linkage Build - Bag S - Step 1", source = "doc/team-associated/80918-rc8t3e-manual" },
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag F, G - Step 2; Rear Gearbox Build - Bag J, K - Step 2", qty = 6, source = "doc/team-associated/80918-rc8t3e-manual" },
 ]
+needs = [
+  { item = "esc", source = "doc/team-associated/80918-page" },
+  { item = "motor", source = "doc/team-associated/80918-page" },
+  { item = "pinion", source = "doc/team-associated/80918-page" },
+  { item = "servo", source = "doc/team-associated/80918-page", note = "High-torque steering servo" },
+  { item = "tyres", source = "doc/team-associated/80918-page", note = "1:8 scale truggy wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/80918-page", note = "1:8 scale truggy wheels and tires" },
+  { item = "glue", source = "doc/team-associated/80918-page", note = "CA (Cyanoacrylate) glue" },
+  { item = "tools", source = "doc/team-associated/80918-page", note = "Tools: Needle nose pliers, Hobby knife, Reamer/hole punch, Ride Height Gauge" },
+  { item = "battery", source = "doc/team-associated/80918-page", note = "4S LiPo battery and charger" },
+  { item = "charger", source = "doc/team-associated/80918-page", note = "4S LiPo battery and charger" },
+]

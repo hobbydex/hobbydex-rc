@@ -94,3 +94,11 @@ contains = [
   { part = "part/team-associated/7864", role = "kit", qty = 1, step = "Wheel and Tire Build - Bag G - Step 1", source = "doc/team-associated/rc10gt-saxton-edition-3-9-2026" },
   { part = "part/team-associated/7870", role = "kit", qty = 2, step = "Wheel and Tire Build - Bag G - Step 1", source = "doc/team-associated/rc10gt-saxton-edition-3-9-2026" },
 ]
+needs = [
+  { item = "engine", source = "doc/team-associated/7067-page", note = ".12 or .15 non-pull start engine (O.S. type crank)" },
+  { item = "charger", source = "doc/team-associated/7067-page", note = "Radio control battery charger" },
+  { item = "fuel", source = "doc/team-associated/7067-page", note = "Nitro fuel" },
+  { item = "radio", source = "doc/team-associated/7067-page", note = "2-channel RC surface transmitter and its batteries" },
+  { item = "receiver", source = "doc/team-associated/7067-page", note = "2-channel receiver" },
+  { item = "battery", source = "doc/team-associated/7067-page", note = "Receiver battery pack" },
+]

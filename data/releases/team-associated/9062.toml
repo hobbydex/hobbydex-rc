@@ -156,3 +156,12 @@ contains = [
   { part = "part/team-associated/9911", role = "kit", qty = 1, step = "Rear Gearbox Build - Bag C - Step 1", source = "doc/team-associated/b44-2-manual-and-catalog-2-6-2013" },
   { part = "part/team-associated/9913", role = "kit", qty = 1, step = "Front Top Deck Build - Bag I - Step 1; Rear Top Deck Build - Bag J - Step 3", source = "doc/team-associated/b44-2-manual-and-catalog-2-6-2013" },
 ]
+needs = [
+  { item = "radio", source = "doc/team-associated/9062-page", note = "RC 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/9062-page", note = "Batteries (6 cells, laid out 3x3, not as stick pack)" },
+  { item = "esc", source = "doc/team-associated/9062-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/9062-page", note = "RC electric motor" },
+  { item = "pinion", source = "doc/team-associated/9062-page", note = "Pinion gear" },
+  { item = "servo", source = "doc/team-associated/9062-page", note = "Steering servo" },
+  { item = "tyres", source = "doc/team-associated/9062-page", note = "Tires" },
+]

@@ -13,3 +13,14 @@ links = [
 ]
 color = "green"
 documents = ["doc/team-associated/6010-page"]
+needs = [
+  { item = "battery", source = "doc/team-associated/6010-page", note = "6-cell NiMH or 2S LiPo for radio-controlled car" },
+  { item = "charger", source = "doc/team-associated/6010-page", note = "Radio control battery charger" },
+  { item = "esc", source = "doc/team-associated/6010-page", note = "1:10 scale radio control electronic speed control" },
+  { item = "motor", source = "doc/team-associated/6010-page", note = "1:10 scale 540-size electric RC car motor" },
+  { item = "radio", source = "doc/team-associated/6010-page", note = "2-channel RC surface transmitter and its batteries" },
+  { item = "servo", source = "doc/team-associated/6010-page", note = "Steering servo" },
+  { item = "receiver", source = "doc/team-associated/6010-page", note = "2-channel receiver" },
+  { item = "pinion", source = "doc/team-associated/6010-page", note = "Pinion gear" },
+  { item = "paint", source = "doc/team-associated/6010-page", note = "Paint for the body" },
+]

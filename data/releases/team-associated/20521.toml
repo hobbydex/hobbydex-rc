@@ -109,3 +109,7 @@ contains = [
   { part = "part/team-associated/25922", role = "listed", source = "doc/team-associated/pressrelease-101221-20520-rival-mt8-parts-list" },
   { part = "part/team-associated/25947", role = "listed", source = "doc/team-associated/pressrelease-101221-20520-rival-mt8-parts-list" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20521-page", note = "#20521: 14.8V 4S Radio-controlled car battery pack(Reedy #756)" },
+  { item = "charger", source = "doc/team-associated/20521-page" },
+]

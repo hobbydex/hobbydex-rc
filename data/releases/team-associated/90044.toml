@@ -169,3 +169,15 @@ contains = [
   { part = "part/team-associated/92325", role = "listed", source = "doc/team-associated/pressrelease-081522-rc10b74-2-parts-list" },
   { part = "part/team-associated/92356", role = "listed", source = "doc/team-associated/pressrelease-081522-rc10b74-2-parts-list" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/90044-page", note = "1:10 scale electric motor (Reedy S-Plus 13.5T #27403)" },
+  { item = "esc", source = "doc/team-associated/90044-page", note = "Electronic speed control (Reedy Blackbox 610R #27016)" },
+  { item = "battery", source = "doc/team-associated/90044-page" },
+  { item = "charger", source = "doc/team-associated/90044-page" },
+  { item = "radio", source = "doc/team-associated/90044-page", note = "2-channel surface transmitter" },
+  { item = "receiver", source = "doc/team-associated/90044-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/90044-page", note = "Steering servo (Reedy RS1610A #27154)" },
+  { item = "paint", source = "doc/team-associated/90044-page", note = "Lexan-specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/90044-page", note = "1:10 scale off-road buggy wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/90044-page", note = "1:10 scale off-road buggy wheels and tires" },
+]

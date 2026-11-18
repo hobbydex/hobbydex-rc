@@ -90,3 +90,7 @@ contains = [
   { part = "part/team-associated/25838", role = "listed", source = "doc/team-associated/pressrelease-012020-20516-mt10-parts-listb" },
   { part = "part/team-associated/25839", role = "listed", source = "doc/team-associated/pressrelease-012020-20516-mt10-parts-listb" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20518-page", note = "#20518: 6-cell NiMh or 2-3S LiPo radio-controlled car battery pack" },
+  { item = "charger", source = "doc/team-associated/20518-page", note = "Suitable radio control battery charger" },
+]

@@ -80,3 +80,14 @@ contains = [
   { part = "part/team-associated/92296", role = "kit", qty = 1, step = "Transmission Build - Bag C - Step 6", source = "doc/team-associated/rc10wc-bk-edition-manual-3-18-2025" },
   { part = "part/team-associated/9601", role = "kit", qty = 1, step = "Transmission Build - Bag C - Step 4", source = "doc/team-associated/rc10wc-bk-edition-manual-3-18-2025" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/6041-page", note = "6-cell NiMH or 2S LiPo for radio-controlled car" },
+  { item = "charger", source = "doc/team-associated/6041-page", note = "Radio control battery charger" },
+  { item = "esc", source = "doc/team-associated/6041-page", note = "1:10 scale radio control electronic speed control" },
+  { item = "motor", source = "doc/team-associated/6041-page", note = "1:10 scale 540-size electric RC car motor" },
+  { item = "radio", source = "doc/team-associated/6041-page", note = "2-channel RC surface transmitter and its batteries" },
+  { item = "servo", source = "doc/team-associated/6041-page", note = "Steering servo" },
+  { item = "receiver", source = "doc/team-associated/6041-page", note = "2-channel receiver" },
+  { item = "pinion", source = "doc/team-associated/6041-page", note = "Pinion gear" },
+  { item = "paint", source = "doc/team-associated/6041-page", note = "Paint for the body" },
+]

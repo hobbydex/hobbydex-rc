@@ -119,3 +119,7 @@ contains = [
   { part = "part/team-associated/9831", role = "kit", qty = 2, step = "Rear Gear Shock Diff Build Tower - Step and 1 Bumper Build - Bag D - DD - Step 2; Gear Diff Build - Step 3", source = "doc/team-associated/pro2-dk10sw-manual" },
   { part = "part/team-associated/29204", role = "listed", source = "doc/team-associated/90038c-xp120-dvc-manual-waden-online" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/90038-page", note = "Suitable NiMH or 2S or 3S LiPo radio-controlled car battery pack" },
+  { item = "charger", source = "doc/team-associated/90038-page", note = "Radio control battery charger for chosen battery" },
+]

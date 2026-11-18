@@ -487,6 +487,21 @@ def load_tools(tools):
             print(f"note: ocr_numbers not loaded ({e})", file=sys.stderr)
         finally:
             sys.path.remove(os.path.dirname(ocr))
+    out["maker_page_docs"] = None   # the PDFs a maker's product page lists, held against the data (tools/maker_page_docs.py)
+    mpd = os.path.join(tools, "tools", "maker_page_docs.py")
+    if os.path.exists(mpd):
+        spec = importlib.util.spec_from_file_location("maker_page_docs", mpd)
+        mod = importlib.util.module_from_spec(spec)
+        sys.path.insert(0, os.path.join(tools, "tools"))
+        os.environ.setdefault("HOBBYDEX_RC", RC)
+        try:
+            spec.loader.exec_module(mod)
+            out["maker_page_docs"] = mod
+        except Exception as e:  # the check then reports itself as not run, with this error
+            out["maker_page_docs_error"] = f"{type(e).__name__}: {e}"
+            print(f"note: maker_page_docs not loaded ({e})", file=sys.stderr)
+        finally:
+            sys.path.remove(os.path.join(tools, "tools"))
     out["text_layer"] = os.path.join(tools, "cache", "notes", "tamiya", "text-layer-numbers.tsv")
     out["gtin_holes"] = load_gtin_holes(tools)
     out["linker_drift"] = load_linker_drift(tools)
@@ -762,6 +777,27 @@ def main():
         results["linker-would-change"]["examples"] = [{"id": d, "url": ""} for d in drift[:args.examples]]
     else:
         results["linker-would-change"] = {"fix": "hobbydex-tools cache/notes/linker-drift.tsv not found (written by the daily derive)", "count": None, "examples": [], "all": []}
+
+    # 9d. a document a maker's product page lists (manual, parts list, exploded view; a part page's manual) that the page's
+    # record does not link, or a car page whose item number is no release (hobbydex-tools tools/maker_page_docs.py; Associated
+    # Electrics so far). Needs the cache: it runs here, in the PC audit.
+    MPD_FIX = ("run the brand's importer (sources.py run associated-electrics-com in hobbydex-tools, into an rc worktree): it makes the "
+               "document from the page and links it; a PDF not queued or not landed waits for tools/fetch_associated.py (the crawl job "
+               "associated); what the importer still leaves out is a class to fix in it (tools/maker_page_docs.py lists every PDF by class)")
+    if tools.get("maker_page_docs") and tools["cache"]:
+        try:
+            holes = tools["maker_page_docs"].holes(RC, tools["cache"])
+        except Exception as e:  # reported as not run, never as zero
+            print(f"maker-page-doc-unlinked: not run ({type(e).__name__}: {e})", file=sys.stderr)
+            results["maker-page-doc-unlinked"] = {"fix": f"tools/maker_page_docs.py failed: {type(e).__name__}: {e}", "count": None, "examples": [], "all": []}
+        else:
+            check("maker-page-doc-unlinked", MPD_FIX, [h[0] for h in holes], count=len(holes),
+                  per_class=sorted(collections.Counter(h[3] for h in holes).items()))
+            results["maker-page-doc-unlinked"]["examples"] = [{"id": h[0], "url": h[1], "pdf": h[2], "class": h[3]} for h in holes[:args.examples]]
+    else:
+        results["maker-page-doc-unlinked"] = {"fix": "hobbydex-tools tools/maker_page_docs.py or its cache not found (--tools)"
+                                              + (f": {tools['maker_page_docs_error']}" if tools.get("maker_page_docs_error") else ""),
+                                              "count": None, "examples": [], "all": []}
 
     # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
     # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record,

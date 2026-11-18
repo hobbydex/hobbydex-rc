@@ -115,3 +115,7 @@ contains = [
   { part = "part/element-rc/42198", role = "listed", source = "doc/element-rc/pressrelease-013124-bushido-plus-parts-list2" },
   { part = "part/element-rc/42199", role = "listed", source = "doc/element-rc/pressrelease-013124-bushido-plus-parts-list2" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40125-page", note = "Battery pack (#758 Reedy 7.4V 2S LiPo Battery)" },
+  { item = "charger", source = "doc/element-rc/40125-page", note = "Battery charger (#27201 Reedy Compact Balance Charger)" },
+]

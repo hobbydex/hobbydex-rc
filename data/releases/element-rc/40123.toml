@@ -115,3 +115,7 @@ contains = [
   { part = "part/team-associated/4673", role = "kit", step = "Bag 11 - Gate 02 Body", qty = 4, source = "doc/element-rc/sendero-hd-black-5-2023-manual" },
   { part = "part/team-associated/7187", role = "kit", step = "Bag 11 - Gate 03 Body", qty = 2, source = "doc/element-rc/sendero-hd-black-5-2023-manual" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40123-page" },
+  { item = "charger", source = "doc/element-rc/40123-page", note = "RC car battery charger suitable for chosen battery" },
+]

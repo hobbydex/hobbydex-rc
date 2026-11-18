@@ -107,3 +107,14 @@ contains = [
   { part = "part/team-associated/8522", role = "listed", source = "doc/team-associated/cat-rc10r5o" },
   { part = "part/team-associated/8535", role = "listed", source = "doc/team-associated/cat-rc10r5o" },
 ]
+needs = [
+  { item = "radio", source = "doc/team-associated/8021-page", note = "RC two channel surface frequency radio system with steering servo" },
+  { item = "servo", source = "doc/team-associated/8021-page", note = "RC two channel surface frequency radio system with steering servo" },
+  { item = "battery", source = "doc/team-associated/8021-page", note = "4-6 cell NiMh battery pack or 1-3 cell LiPo battery pack" },
+  { item = "charger", source = "doc/team-associated/8021-page", note = "Battery charger (we recommend a peak detection charger)" },
+  { item = "esc", source = "doc/team-associated/8021-page", note = "Electronic Speed Control (ESC)" },
+  { item = "motor", source = "doc/team-associated/8021-page", note = "RC electric motor" },
+  { item = "pinion", source = "doc/team-associated/8021-page", note = "64 pitch pinion gear (size to be determined by type and wind of motor selected)" },
+  { item = "body", source = "doc/team-associated/8021-page", note = "1:10 scale Polycarbonate oval body" },
+  { item = "tyres", source = "doc/team-associated/8021-page", note = "1:10 scale oval foam tires" },
+]

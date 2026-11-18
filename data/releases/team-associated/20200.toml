@@ -50,3 +50,13 @@ contains = [
   { part = "part/team-associated/6588", role = "kit", qty = 1, step = "Bag C - Step 1", source = "doc/team-associated/rc24-classic-kit-manual-6-2-2026" },
   { part = "part/team-associated/6727", role = "kit", qty = 2, step = "Bag J - Step 4", source = "doc/team-associated/rc24-classic-kit-manual-6-2-2026" },
 ]
+needs = [
+  { item = "radio", source = "doc/team-associated/20200-page", note = "R/C two channel surface frequency radio system" },
+  { item = "esc", source = "doc/team-associated/20200-page", note = "Micro Electronic Speed Control (\"ESC\") (Reedy #27045)" },
+  { item = "servo", source = "doc/team-associated/20200-page", note = "Micro Steering servo (#27175)" },
+  { item = "motor", source = "doc/team-associated/20200-page", note = "Micro R/C electric motor (Reedy #27503, #27504, #27505, #27506." },
+  { item = "charger", source = "doc/team-associated/20200-page", note = "Battery charger (a peak detection charger, or LiPo compatible charger" },
+  { item = "battery", source = "doc/team-associated/20200-page", note = "2 cell LiPo battery pack (Reedy # 27610)" },
+  { item = "paint", source = "doc/team-associated/20200-page", note = "Polycarbonate specific spray paint for lexan body" },
+  { item = "glue", source = "doc/team-associated/20200-page", note = "Cyanoacrylate glue (\"CA\") (#1697)" },
+]

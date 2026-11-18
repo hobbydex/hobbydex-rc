@@ -83,3 +83,11 @@ contains = [
   { part = "part/team-associated/91451", role = "kit", qty = 7, step = "Nose Plate / Steering Build - Bag A - Step 1; Front Suspension Build - Bag B - Step 3", source = "doc/team-associated/rc10-ultra-rider-manual-8-3-2026" },
 ]
 gtin = "784695060609"
+needs = [
+  { item = "battery", source = "doc/team-associated/6060-page" },
+  { item = "motor", source = "doc/team-associated/6060-page" },
+  { item = "esc", source = "doc/team-associated/6060-page" },
+  { item = "servo", source = "doc/team-associated/6060-page" },
+  { item = "charger", source = "doc/team-associated/6060-page" },
+  { item = "radio", source = "doc/team-associated/6060-page", note = "Radio & Receiver" },
+]
