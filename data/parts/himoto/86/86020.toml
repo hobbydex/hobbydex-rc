@@ -1,10 +1,10 @@
 id = "part/himoto/86020"
 brand = "brand/himoto"
 number = "86020"
-name = "86020"
+name = "Universal Joint Cup (for Drive System)"
 category = "misc"
 category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+documents = ["doc/himoto/option-parts", "doc/himoto/monstercars"]
 fits = [
   { kit = "kit/himoto/edc-16", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/edt-16", type = "direct", source = "doc/himoto/option-parts" },
@@ -15,4 +15,12 @@ fits = [
   { kit = "kit/himoto/exr-16", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/ext-16", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/sct-16", type = "direct", source = "doc/himoto/option-parts" },
+]
+name_source = "dealer"
+notes = "Name known from a dealer (Monster Cars)"
+links = [
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_410", kind = "dealer" },
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_689", kind = "dealer" },
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_690", kind = "dealer" },
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_691", kind = "dealer" },
 ]
