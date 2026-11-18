@@ -1,7 +1,7 @@
 id = "part/himoto/822401"
 brand = "brand/himoto"
 number = "822401"
-name = "822401"
+name = "Front Body Mount"
 category = "misc"
 category_source = "fallback"
 documents = ["doc/himoto/option-parts"]
@@ -10,7 +10,11 @@ fits = [
   { kit = "kit/himoto/combat", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/demolition", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/mayhem", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/shootout", type = "direct", source = "doc/himoto/monstercars" },
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E8MTL-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E8MTL&id=100303&pid=1", kind = "dealer" },
 ]
+pack_qty = 2
+pack_qty_basis = "distributor"
+name_source = "dealer"
