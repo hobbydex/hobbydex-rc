@@ -2,6 +2,8 @@ id = "part/team-associated/91118"
 brand = "brand/team-associated"
 number = "91118"
 name = "FT TiN Heavy-duty Ballstuds, 6 mm"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127154553/http://teamassociated.com/factoryteam/parts/details/91118/"
 gtin = "784695911185"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-tin-heavy-duty-ballstuds-6-mm/" },
@@ -10,3 +12,7 @@ fits = [
   { kit = "kit/team-associated/rc10b6", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "ball-end"
+equivalent_to = [
+  { spec = "spec/ball-end/6mm-stud", match = "functional" },
+]
+ball_type = "stud"

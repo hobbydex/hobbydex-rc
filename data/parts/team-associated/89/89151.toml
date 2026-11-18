@@ -2,8 +2,13 @@ id = "part/team-associated/89151"
 brand = "brand/team-associated"
 number = "89151"
 name = "RC8 Decal Sheet"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127191418/http://teamassociated.com/parts/details/89151/"
 gtin = "784695891517"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

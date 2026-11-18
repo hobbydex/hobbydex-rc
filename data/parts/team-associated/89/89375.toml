@@ -2,8 +2,16 @@ id = "part/team-associated/89375"
 brand = "brand/team-associated"
 number = "89375"
 name = "Clutch Bell, 14T"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126230406/http://teamassociated.com/pictures/products/89375/89375_md.jpg"
 gtin = "784695893757"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/clutch-bell-14t/" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80906", "release/team-associated/80909"], type = "replaces", source = "doc/team-associated/manual-rc8-2rsrtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8b3", releases = ["release/team-associated/80914"], type = "replaces", source = "doc/team-associated/manual-80914-rc8b3-team", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t3", releases = ["release/team-associated/80917"], type = "replaces", source = "doc/team-associated/80917-rc8t3-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

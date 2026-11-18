@@ -2,9 +2,14 @@ id = "part/team-associated/80910"
 brand = "brand/team-associated"
 number = "80910"
 name = "RC8T Nitro Factory Team Championship Edition Kit"
+seen_by = "2008-11-14"
+seen_by_source = "https://web.archive.org/web/20081114000931/http://www.teamassociated.com/ae/rc8t/80910.200.jpg"
 gtin = "784695993921"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8t-nitro-factory-team-championship-edition-kit-part-80910/" },
 ]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/team-associated/rc8t", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -2,6 +2,9 @@ id = "part/team-associated/42332"
 brand = "brand/team-associated"
 number = "42332"
 name = "Screws, M2.6x10mm SHCS, silver"
+status = "discontinued"
+seen_by = "2022-12-08"
+seen_by_source = "https://web.archive.org/web/20221208120205/https://img2.associatedelectrics.com/pictures/news/articles/2665/supporting_photos/42332.ps_lg.jpg"
 gtin = "784695423329"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2-6x10mm-shcs-silver/" },
@@ -11,3 +14,6 @@ fits = [
 ]
 category = "screw"
 color = "silver"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,9 +2,18 @@ id = "part/team-associated/21303"
 brand = "brand/team-associated"
 number = "21303"
 name = "Apex 1:18 Wheels/Tires, gold, with foam, mounted"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115064148/http://www.teamassociated.com:80/parts/details/21303/"
 gtin = "784695213036"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/apex-1-18-wheels-tires-gold-with-foam-mounted/" },
 ]
 category = "tire"
 color = "gold"
+scale = "1/18"
+mounting = "pre-mounted"
+wheel_color = "gold"
+fits = [
+  { kit = "kit/team-associated/apex-18", releases = ["release/team-associated/20119"], type = "replaces", source = "doc/team-associated/manual-apexmini", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rival-18", releases = ["release/team-associated/20111"], type = "replaces", source = "doc/team-associated/apex-mini-rival-mini-manual-3-5-2013", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

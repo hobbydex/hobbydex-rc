@@ -2,8 +2,13 @@ id = "part/team-associated/31272"
 brand = "brand/team-associated"
 number = "31272"
 name = "TC5 FOAM BUMPER"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115064632/http://www.teamassociated.com:80/parts/details/31272/"
 gtin = "784695312722"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc5-foam-bumper/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/team-associated/tc5", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

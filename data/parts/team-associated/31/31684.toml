@@ -2,8 +2,16 @@ id = "part/team-associated/31684"
 brand = "brand/team-associated"
 number = "31684"
 name = "TC7 FT 10x9 mm FOX Shock Kit with Genuine Kashima Coat, threaded"
+seen_by = "2019-07-18"
+seen_by_source = "https://web.archive.org/web/20190718135247/https://www.associatedelectrics.com/teamassociated/parts/details/31684-ASC31684-ft_fox_r_shock_kit_with_genuine_kashima_coat_threaded/"
 gtin = "784695316843"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc7-ft-10x9-mm-fox-r-shock-kit-with-genuine-kashima-coat-threaded/" },
 ]
 category = "shock"
+fits = [
+  { kit = "kit/team-associated/tc7", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+shock_part = "complete"
+bore_mm = 10
+length_mm = 9

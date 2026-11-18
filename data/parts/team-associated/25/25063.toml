@@ -2,9 +2,15 @@ id = "part/team-associated/25063"
 brand = "brand/team-associated"
 number = "25063"
 name = "Shock Springs, gold, 5.10 lb/in, med"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125155337/http://teamassociated.com/parts/details/25063/"
 gtin = "784695250635"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/shock-springs-gold-5-10-lb-in-med/" },
 ]
 category = "shock-spring"
 color = "gold"
+rate_lb_in = 5.1
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

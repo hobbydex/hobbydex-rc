@@ -2,8 +2,13 @@ id = "part/team-associated/92006"
 brand = "brand/team-associated"
 number = "92006"
 name = "B64 FT Graphite Adjustable Bellcrank Input Arm"
+seen_by = "2017-10-04"
+seen_by_source = "https://web.archive.org/web/20171004104840/https://www.teamassociated.com/pictures/news/articles/1988/supporting_photos/92006.ps_sm.jpg"
 gtin = "784695920064"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/b64-ft-graphite-adjustable-bellcrank-input-arm/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/team-associated/rc10b64", releases = ["release/team-associated/90015"], type = "replaces", source = "doc/team-associated/manual-b64d-90015b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,9 +2,15 @@ id = "part/team-associated/89360"
 brand = "brand/team-associated"
 number = "89360"
 name = "LPR Truggy Wheels, white"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182453/http://www.teamassociated.com:80/parts/details/89360/"
 gtin = "784695893603"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/lpr-truggy-wheels-white/" },
 ]
 category = "wheel"
 color = "white"
+vehicle = "truggy"
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911", "release/team-associated/80911-25", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/rc8te-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

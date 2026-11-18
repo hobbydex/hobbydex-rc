@@ -2,6 +2,8 @@ id = "part/team-associated/91589"
 brand = "brand/team-associated"
 number = "91589"
 name = "FT Ti Screws, M3x24 mm BHCS"
+seen_by = "2015-01-13"
+seen_by_source = "https://web.archive.org/web/20150113013658/http://www.teamassociated.com:80/parts/details/91589/"
 gtin = "784695915893"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ti-screws-m3x24-mm-bhcs/" },
@@ -10,3 +12,7 @@ fits = [
   { kit = "kit/team-associated/sr10", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m3x24-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"

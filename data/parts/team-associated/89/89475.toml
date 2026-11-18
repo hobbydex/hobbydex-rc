@@ -2,8 +2,13 @@ id = "part/team-associated/89475"
 brand = "brand/team-associated"
 number = "89475"
 name = "RC8B Decal Sheet"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115172136/http://www.teamassociated.com:80/parts/details/89475/"
 gtin = "784695894754"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80906", "release/team-associated/80907", "release/team-associated/80908", "release/team-associated/80908C"], type = "direct", source = "doc/team-associated/rc8-2e-manual-and-catalog-9-15-2011", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

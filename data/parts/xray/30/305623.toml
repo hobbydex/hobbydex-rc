@@ -14,3 +14,9 @@ fits = [
   { kit = "kit/xray/t1", car = "T1M", type = "replaces", source = "doc/xray/portal-796" },
   { kit = "kit/xray/t3", releases = ["release/xray/300103"], type = "replaces", source = "doc/xray/portal-3512" },
 ]
+teeth = 23
+pitch_dp = 48
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-23t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

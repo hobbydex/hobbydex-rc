@@ -2,8 +2,13 @@ id = "part/team-associated/31174"
 brand = "brand/team-associated"
 number = "31174"
 name = "TC5 FT Slipper Spool Kit"
+seen_by = "2015-11-02"
+seen_by_source = "https://web.archive.org/web/20151102202157/https://www.teamassociated.com/pictures/products/31174/31174_sm.jpg"
 gtin = "784695311749"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc5-ft-slipper-spool-kit/" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/tc5", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -2,8 +2,13 @@ id = "part/team-associated/89457"
 brand = "brand/team-associated"
 number = "89457"
 name = "SC8E Body, Rockstar-Makita"
+seen_by = "2010-09-20"
+seen_by_source = "https://web.archive.org/web/20100920081604/http://www.teamassociated.com:80/parts/details/89457/"
 gtin = "784695894570"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc8e-body-rockstar-makita/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80932", "release/team-associated/80933"], type = "replaces", source = "doc/team-associated/sc8-2e-rtr-manual-and-catalog-6-8-2012", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,9 +2,15 @@ id = "part/team-associated/89562"
 brand = "brand/team-associated"
 number = "89562"
 name = "RC8.2 FT Blue Aluminum Screw Set"
+seen_by = "2012-05-25"
+seen_by_source = "https://web.archive.org/web/20120525092830/http://www.teamassociated.com:80/parts/details/89562"
 gtin = "784695895621"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8-2-ft-blue-aluminum-screw-set/" },
 ]
 category = "screw"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"

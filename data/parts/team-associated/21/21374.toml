@@ -2,9 +2,14 @@ id = "part/team-associated/21374"
 brand = "brand/team-associated"
 number = "21374"
 name = "18LM Wheels, chrome"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115183536/http://www.teamassociated.com:80/parts/details/21374/"
 gtin = "784695213746"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/18lm-wheels-chrome/" },
 ]
 category = "wheel"
 color = "chrome"
+fits = [
+  { kit = "kit/team-associated/rc18lm", releases = ["release/team-associated/20130"], type = "replaces", source = "doc/team-associated/rc18lm-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

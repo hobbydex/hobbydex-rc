@@ -2,8 +2,15 @@ id = "part/team-associated/25770"
 brand = "brand/team-associated"
 number = "25770"
 name = "RIVAL-MT Wheels/Tires, mounted"
+seen_by = "2013-04-29"
+seen_by_source = "https://web.archive.org/web/20130429194728/http://teamassociated.com/parts/details/25770/"
 gtin = "784695257702"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-wheels-tires-mounted/" },
 ]
 category = "tire"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+vehicle = "monster"
+mounting = "pre-mounted"

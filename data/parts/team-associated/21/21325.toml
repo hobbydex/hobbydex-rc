@@ -2,8 +2,13 @@ id = "part/team-associated/21325"
 brand = "brand/team-associated"
 number = "21325"
 name = "Spur Gear Hub"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127122615/http://teamassociated.com/parts/details/21325/"
 gtin = "784695213258"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/spur-gear-hub/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/team-associated/rc18lm", releases = ["release/team-associated/20130"], type = "replaces", source = "doc/team-associated/rc18lm-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

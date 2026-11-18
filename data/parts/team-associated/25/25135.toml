@@ -2,8 +2,13 @@ id = "part/team-associated/25135"
 brand = "brand/team-associated"
 number = "25135"
 name = "Front Shock Tower"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125205552/http://teamassociated.com/parts/details/25135/"
 gtin = "784695251359"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/front-shock-tower-part-25135/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt8-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -13,3 +13,10 @@ fits = [
   { kit = "kit/xray/m18", releases = ["release/xray/380000"], type = "direct", source = "doc/xray/portal-744" },
   { kit = "kit/xray/xb8", releases = ["release/xray/350001", "release/xray/350002"], type = "direct", source = "doc/xray/portal-2246" },
 ]
+chemistry = "nimh"
+cells = 5
+voltage = 6.0
+capacity_mah = 1100
+equivalent_to = [
+  { spec = "spec/battery/nimh-5s-1100mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

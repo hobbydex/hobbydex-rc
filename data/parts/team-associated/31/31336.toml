@@ -2,8 +2,13 @@ id = "part/team-associated/31336"
 brand = "brand/team-associated"
 number = "31336"
 name = "Diff Kit"
+seen_by = "2011-03-10"
+seen_by_source = "https://web.archive.org/web/20110310034721/http://www.teamassociated.com:80/parts/details/31336/"
 gtin = "784695313361"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/diff-kit/" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/team-associated/tc6", releases = ["release/team-associated/30106"], type = "replaces", source = "doc/team-associated/cat-tc6", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

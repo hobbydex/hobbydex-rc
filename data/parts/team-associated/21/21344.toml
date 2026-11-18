@@ -2,8 +2,13 @@ id = "part/team-associated/21344"
 brand = "brand/team-associated"
 number = "21344"
 name = "SC18 Number Decals"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115170939/http://www.teamassociated.com:80/parts/details/21344/"
 gtin = "784695213449"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc18-number-decals/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/sc18", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -10,3 +10,6 @@ links = [
 category = "misc"
 category_source = "fallback"
 documents = ["doc/xray/330901-product-page"]
+fits = [
+  { kit = "kit/xray/nt1", type = "replaces", source = "doc/xray/330901-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

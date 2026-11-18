@@ -2,8 +2,18 @@ id = "part/team-associated/89290"
 brand = "brand/team-associated"
 number = "89290"
 name = "FT Shock Kit, 16x29 mm"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129090502/http://teamassociated.com/pictures/products/89290/89290_sm.jpg"
 gtin = "784695892903"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-shock-kit-16x29-mm/" },
 ]
 category = "shock"
+shock_part = "complete"
+bore_mm = 16
+length_mm = 29
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80901-25", "release/team-associated/80906", "release/team-associated/80907", "release/team-associated/80908", "release/team-associated/80908C", "release/team-associated/80909"], type = "replaces", source = "doc/team-associated/cat-rc8e", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25"], type = "replaces", source = "doc/team-associated/cat-rc8te", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80932", "release/team-associated/80933"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

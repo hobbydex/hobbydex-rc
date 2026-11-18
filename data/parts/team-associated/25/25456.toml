@@ -2,8 +2,13 @@ id = "part/team-associated/25456"
 brand = "brand/team-associated"
 number = "25456"
 name = "AE 8.0 Recover Spring Set"
+seen_by = "2012-09-03"
+seen_by_source = "https://web.archive.org/web/20120903042501/http://www.teamassociated.com:80/parts/details/25456/"
 gtin = "784695254565"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ae-8-0-recover-spring-set/" },
 ]
 category = "shock-spring"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt8-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

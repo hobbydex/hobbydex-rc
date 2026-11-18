@@ -2,8 +2,13 @@ id = "part/team-associated/91131"
 brand = "brand/team-associated"
 number = "91131"
 name = "4x4 FT Lightweight Top Shaft, rear"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127132811/http://teamassociated.com/factoryteam/parts/details/91131/"
 gtin = "784695911314"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/4x4-ft-lightweight-top-shaft-rear/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90004", "release/team-associated/90008", "release/team-associated/90010"], type = "replaces", source = "doc/team-associated/cat-sc104x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

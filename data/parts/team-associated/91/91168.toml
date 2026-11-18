@@ -2,8 +2,13 @@ id = "part/team-associated/91168"
 brand = "brand/team-associated"
 number = "91168"
 name = "4x4 Underbody"
+seen_by = "2011-10-15"
+seen_by_source = "https://web.archive.org/web/20111015031424/http://teamassociated.com/parts/details/91168/"
 gtin = "784695911680"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/4x4-underbody/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90004", "release/team-associated/90008", "release/team-associated/90010"], type = "replaces", source = "doc/team-associated/cat-sc104x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

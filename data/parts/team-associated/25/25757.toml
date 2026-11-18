@@ -2,8 +2,13 @@ id = "part/team-associated/25757"
 brand = "brand/team-associated"
 number = "25757"
 name = "RIVAL-MT Roll Hoop"
+seen_by = "2013-06-20"
+seen_by_source = "https://web.archive.org/web/20130620132613/http://teamassociated.com/parts/details/25757/"
 gtin = "784695257573"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-roll-hoop/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

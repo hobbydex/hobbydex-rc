@@ -2,8 +2,16 @@ id = "part/team-associated/89461"
 brand = "brand/team-associated"
 number = "89461"
 name = "FT Aluminum B-Plate, with pins"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129091320/http://teamassociated.com/pictures/products/89461/89461_sm.jpg"
 gtin = "784695894617"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-aluminum-b-plate-with-pins/" },
 ]
 category = "chassis"
+material = "aluminium"
+fits = [
+  { kit = "kit/team-associated/nomad-db8", releases = ["release/team-associated/80941", "release/team-associated/80941C"], type = "replaces", source = "doc/team-associated/manual-nomaddb8-80941", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80906", "release/team-associated/80907", "release/team-associated/80908", "release/team-associated/80908C", "release/team-associated/80909"], type = "replaces", source = "doc/team-associated/manual-rc8-2rsrtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80932", "release/team-associated/80933"], type = "replaces", source = "doc/team-associated/sc8-2e-rtr-manual-and-catalog-6-8-2012", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

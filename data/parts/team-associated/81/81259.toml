@@ -2,6 +2,8 @@ id = "part/team-associated/81259"
 brand = "brand/team-associated"
 number = "81259"
 name = "Screws, M2.5x18 mm BHCS"
+seen_by = "2015-09-27"
+seen_by_source = "https://web.archive.org/web/20150927205812/https://www.teamassociated.com/pictures/products/81259/81259_sm.jpg"
 gtin = "784695812598"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2-5x18-mm-bhcs/" },
@@ -10,3 +12,8 @@ fits = [
   { kit = "kit/team-associated/rc8b41", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "screw"
+color = "black"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/screw/m2.5x18-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

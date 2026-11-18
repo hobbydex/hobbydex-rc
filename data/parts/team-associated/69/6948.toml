@@ -2,8 +2,14 @@ id = "part/team-associated/6948"
 brand = "brand/team-associated"
 number = "6948"
 name = "FT Screws, Aluminum 4-40 x 1/2 in SHCS"
+seen_by = "2025-12-12"
+seen_by_source = "https://web.archive.org/web/20251212213529/https://60years.associatedelectrics.com/ft-screws-aluminum-4-40-x-1-2-in-shcs/"
 gtin = "784695069480"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-screws-aluminum-4-40-x-1-2-in-shcs/" },
 ]
 category = "screw"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x1-2in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

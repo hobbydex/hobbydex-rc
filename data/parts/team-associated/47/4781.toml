@@ -2,8 +2,13 @@ id = "part/team-associated/4781"
 brand = "brand/team-associated"
 number = "4781"
 name = "RC12R6 Shock Spring Kit"
+seen_by = "2026-07-15"
+seen_by_source = "https://web.archive.org/web/20260715005748/https://60years.associatedelectrics.com/rc12r6-shock-spring-kit/"
 gtin = "784695047815"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc12r6-shock-spring-kit/" },
 ]
 category = "shock-spring"
+fits = [
+  { kit = "kit/team-associated/rc12r6", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

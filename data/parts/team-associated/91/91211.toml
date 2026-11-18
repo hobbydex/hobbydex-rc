@@ -2,9 +2,18 @@ id = "part/team-associated/91211"
 brand = "brand/team-associated"
 number = "91211"
 name = "SC10B Front Wheels and Tires, mounted, black"
+seen_by = "2012-10-14"
+seen_by_source = "https://web.archive.org/web/20121014143759/http://www.teamassociated.com:80/parts/details/91211/"
 gtin = "784695912113"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc10b-front-wheels-and-tires-mounted-black/" },
 ]
 category = "tire"
 color = "black"
+fits = [
+  { kit = "kit/team-associated/sc10b", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+vehicle = "short-course"
+position = "front"
+mounting = "pre-mounted"
+wheel_color = "black"

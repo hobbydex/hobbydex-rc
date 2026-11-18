@@ -2,8 +2,16 @@ id = "part/team-associated/91608"
 brand = "brand/team-associated"
 number = "91608"
 name = "FT Aluminum Arm Mount, +4 mm, C, B"
+seen_by = "2015-02-23"
+seen_by_source = "https://web.archive.org/web/20150223065245/http://teamassociated.com:80/parts/details/91608"
 gtin = "784695916081"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-aluminum-arm-mount-4-mm-c-b/" },
 ]
 category = "suspension"
+material = "aluminium"
+fits = [
+  { kit = "kit/team-associated/rc10b5", releases = ["release/team-associated/90000", "release/team-associated/90002", "release/team-associated/90003"], type = "replaces", source = "doc/team-associated/90000-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10sc5", releases = ["release/team-associated/70006"], type = "replaces", source = "doc/team-associated/manual-70006-rc10sc5m-tk", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10t5", releases = ["release/team-associated/70001"], type = "replaces", source = "doc/team-associated/manual-70001-rc10t5m", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

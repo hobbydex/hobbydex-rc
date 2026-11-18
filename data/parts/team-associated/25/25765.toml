@@ -2,8 +2,13 @@ id = "part/team-associated/25765"
 brand = "brand/team-associated"
 number = "25765"
 name = "RIVAL-MT DECAL SHEET"
+seen_by = "2013-04-29"
+seen_by_source = "https://web.archive.org/web/20130429180511/http://teamassociated.com/parts/details/25765/"
 gtin = "784695257658"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rival", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

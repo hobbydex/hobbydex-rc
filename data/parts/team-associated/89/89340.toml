@@ -2,9 +2,17 @@ id = "part/team-associated/89340"
 brand = "brand/team-associated"
 number = "89340"
 name = "16x32 mm Springs, silver, 5.10 lb/in"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126153109/http://teamassociated.com/parts/details/89340/"
 gtin = "784695893405"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/16x32-mm-springs-silver-5-10-lb-in/" },
 ]
 category = "shock-spring"
 color = "silver"
+rate_lb_in = 5.1
+range = "team-associated/x-springs-rate-springs"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80901-25"], type = "replaces", source = "doc/team-associated/cat-rc8e", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,8 +2,13 @@ id = "part/team-associated/81360"
 brand = "brand/team-associated"
 number = "81360"
 name = "Complete Truggy Differential, front and rear, 46T"
+seen_by = "2026-07-15"
+seen_by_source = "https://web.archive.org/web/20260715012948/https://60years.associatedelectrics.com/complete-truggy-differential-front-and-rear-46t/"
 gtin = "784695813601"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/complete-truggy-differential-front-and-rear-46t/" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/team-associated/rc8t3", releases = ["release/team-associated/80917", "release/team-associated/80918"], type = "replaces", source = "doc/team-associated/80917-rc8t3-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

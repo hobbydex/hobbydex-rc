@@ -2,8 +2,14 @@ id = "part/team-associated/31323"
 brand = "brand/team-associated"
 number = "31323"
 name = "VC3 Shock Kit"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127182805/http://teamassociated.com/factoryteam/parts/details/31323/"
 gtin = "784695313231"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/vc3-shock-kit/" },
 ]
 category = "shock"
+shock_part = "complete"
+fits = [
+  { kit = "kit/team-associated/tc6", releases = ["release/team-associated/30106", "release/team-associated/30107", "release/team-associated/30109"], type = "replaces", source = "doc/team-associated/cat-tc6", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,6 +2,7 @@ id = "part/team-associated/4673"
 brand = "brand/team-associated"
 number = "4673"
 name = "Screws, M2.5x4 in BHCS"
+status = "discontinued"
 gtin = "784695046733"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m2-5x4-in-bhcs/" },
@@ -11,3 +12,8 @@ fits = [
   { kit = "kit/team-associated/tc7", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "screw"
+color = "black"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/screw/m2.5x4-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

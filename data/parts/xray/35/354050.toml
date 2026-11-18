@@ -12,4 +12,7 @@ documents = ["doc/xray/354050-product-page"]
 fits = [
   { kit = "kit/xray/xb8", releases = ["release/xray/350001", "release/xray/350002", "release/xray/350100"], type = "replaces", source = "doc/xray/portal-2246" },
   { kit = "kit/xray/xt8", releases = ["release/xray/350200"], type = "replaces", source = "doc/xray/portal-2297" },
+  { kit = "kit/xray/xb8", type = "replaces", replaces = "part/xray/354049", source = "doc/xray/portal-2246", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/xray/xb8", type = "replaces", replaces = "part/xray/354058", source = "doc/xray/portal-2246", notes = "Same part in another material (link_upgrades.py)" },
 ]
+material = "carbon"

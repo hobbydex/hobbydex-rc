@@ -2,9 +2,15 @@ id = "part/team-associated/7873"
 brand = "brand/team-associated"
 number = "7873"
 name = "FT Screws, 4-40 x 7/16 in SHCS, blue aluminum"
+seen_by = "2026-05-15"
+seen_by_source = "https://web.archive.org/web/20260515225910/https://60years.associatedelectrics.com/ft-screws-4-40-x-7-16-in-shcs-blue-aluminum/"
 gtin = "784695078734"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-screws-4-40-x-7-16-in-shcs-blue-aluminum/" },
 ]
 category = "screw"
 color = "blue"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/screw/unc-4-40x7-16in-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

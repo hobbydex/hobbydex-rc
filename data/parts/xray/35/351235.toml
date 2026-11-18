@@ -9,3 +9,8 @@ links = [
 ]
 category = "chassis"
 documents = ["doc/xray/351235-product-page"]
+material = "carbon"
+fits = [
+  { kit = "kit/xray/gtx8", releases = ["release/xray/gtx8-2023", "release/xray/gtx8-2024"], type = "replaces", source = "doc/xray/gtx8-2023-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/xray/gtxe", releases = ["release/xray/gtxe-2023", "release/xray/gtxe-2024"], type = "replaces", source = "doc/xray/gtxe-2023-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

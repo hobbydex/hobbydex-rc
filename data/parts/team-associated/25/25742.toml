@@ -2,8 +2,13 @@ id = "part/team-associated/25742"
 brand = "brand/team-associated"
 number = "25742"
 name = "RIVAL-MT Center Differential Assembly"
+seen_by = "2013-04-30"
+seen_by_source = "https://web.archive.org/web/20130430023306/http://teamassociated.com/parts/details/25742/"
 gtin = "784695257429"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-center-differential-assembly/" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

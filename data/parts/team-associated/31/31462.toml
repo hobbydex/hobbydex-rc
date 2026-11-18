@@ -2,8 +2,13 @@ id = "part/team-associated/31462"
 brand = "brand/team-associated"
 number = "31462"
 name = "Scion FR-S Body, painted"
+seen_by = "2014-08-21"
+seen_by_source = "https://web.archive.org/web/20140821135148/http://teamassociated.com/pictures/products/31462/31462_sm.jpg"
 gtin = "784695314627"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/scion-fr-s-body-painted/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/apex", releases = ["release/team-associated/30113", "release/team-associated/30113D", "release/team-associated/30114", "release/team-associated/30114C", "release/team-associated/30114D", "release/team-associated/30114DC", "release/team-associated/30116", "release/team-associated/30117", "release/team-associated/30118C"], type = "replaces", source = "doc/team-associated/30114d-apex-lexus-and-scion-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

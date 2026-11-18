@@ -2,6 +2,8 @@ id = "part/team-associated/91541"
 brand = "brand/team-associated"
 number = "91541"
 name = "FT Screws, M3x14 mm BHCS, blue aluminum"
+seen_by = "2014-05-29"
+seen_by_source = "https://web.archive.org/web/20140529064505/http://www.teamassociated.com:80/parts/details/91541/"
 gtin = "784695915411"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-screws-m3x14-mm-bhcs-blue-aluminum/" },
@@ -11,3 +13,7 @@ fits = [
 ]
 category = "screw"
 color = "blue"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/screw/m3x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

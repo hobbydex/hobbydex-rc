@@ -2,8 +2,14 @@ id = "part/team-associated/31353"
 brand = "brand/team-associated"
 number = "31353"
 name = "FT Ceramic Bearings, 6x10x3 mm"
+seen_by = "2011-10-29"
+seen_by_source = "https://web.archive.org/web/20111029144231/http://www.teamassociated.com:80/factoryteam/parts/details/31353/"
 gtin = "784695313538"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ceramic-bearings-6x10x3-mm/" },
 ]
 category = "bearing"
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

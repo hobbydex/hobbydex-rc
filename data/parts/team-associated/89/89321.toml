@@ -2,8 +2,15 @@ id = "part/team-associated/89321"
 brand = "brand/team-associated"
 number = "89321"
 name = "Rear Chassis Brace Set"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115171021/http://www.teamassociated.com:80/parts/details/89321/"
 gtin = "784695893214"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rear-chassis-brace-set/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/nomad-db8", releases = ["release/team-associated/80941", "release/team-associated/80941C"], type = "replaces", source = "doc/team-associated/manual-nomaddb8-80941", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80932", "release/team-associated/80933"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

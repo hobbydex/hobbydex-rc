@@ -2,9 +2,14 @@ id = "part/team-associated/30100"
 brand = "brand/team-associated"
 number = "30100"
 name = "TC4 TEAM KIT"
+seen_by = "2015-03-29"
+seen_by_source = "https://web.archive.org/web/20150329112905/http://teamassociated.com/parts/details/30100/"
 gtin = "784695301009"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc4-team-kit/" },
 ]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/team-associated/tc4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

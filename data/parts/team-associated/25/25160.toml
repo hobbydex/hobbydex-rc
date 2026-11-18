@@ -2,8 +2,14 @@ id = "part/team-associated/25160"
 brand = "brand/team-associated"
 number = "25160"
 name = "Radio Tray"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125205613/http://teamassociated.com/parts/details/25160/"
 gtin = "784695251601"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/radio-tray-part-25160/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt4-60se-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80932"], type = "replaces", source = "doc/team-associated/sc8e-rtr-manual-and-catalog-7-16-2010", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

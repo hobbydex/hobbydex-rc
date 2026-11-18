@@ -2,8 +2,15 @@ id = "part/team-associated/25162"
 brand = "brand/team-associated"
 number = "25162"
 name = "Servo Saver, XT/Futaba"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125154948/http://teamassociated.com/parts/details/25162/"
 gtin = "784695251625"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/servo-saver-xt-futaba/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10r5", releases = ["release/team-associated/8021", "release/team-associated/8022"], type = "replaces", source = "doc/team-associated/cat-rc10r5o", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc12r5", releases = ["release/team-associated/4019", "release/team-associated/4020"], type = "replaces", source = "doc/team-associated/cat-12r5-1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

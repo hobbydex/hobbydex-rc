@@ -2,8 +2,13 @@ id = "part/team-associated/21363"
 brand = "brand/team-associated"
 number = "21363"
 name = "SC18 Decals, Rockstar-Makita"
+seen_by = "2010-09-20"
+seen_by_source = "https://web.archive.org/web/20100920092619/http://www.teamassociated.com:80/parts/details/21363/"
 gtin = "784695213630"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc18-decals-rockstar-makita/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/sc18", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

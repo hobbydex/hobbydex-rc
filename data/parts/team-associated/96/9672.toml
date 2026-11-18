@@ -2,8 +2,13 @@ id = "part/team-associated/9672"
 brand = "brand/team-associated"
 number = "9672"
 name = "FT B4 CVA Bones"
+seen_by = "2026-03-16"
+seen_by_source = "https://web.archive.org/web/20260316185233/https://60years.associatedelectrics.com/ft-b4-cva-bones/"
 gtin = "784695096721"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-b4-cva-bones/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc10b4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

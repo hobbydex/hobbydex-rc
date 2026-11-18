@@ -2,8 +2,15 @@ id = "part/team-associated/89596"
 brand = "brand/team-associated"
 number = "89596"
 name = "Pinion, 21T (Mod 1 P)"
+seen_by = "2013-01-19"
+seen_by_source = "https://web.archive.org/web/20130119133448/http://teamassociated.com/parts/details/89596/"
 gtin = "784695895966"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/pinion-21t-mod-1-p/" },
 ]
 category = "pinion"
+teeth = 21
+module = 1
+equivalent_to = [
+  { spec = "spec/pinion/mod1-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

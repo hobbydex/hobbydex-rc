@@ -2,9 +2,17 @@ id = "part/team-associated/91079"
 brand = "brand/team-associated"
 number = "91079"
 name = "13mm Spring, rear, blue, 2.8 lb/in"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127124422/http://teamassociated.com/parts/details/91079/"
 gtin = "784695910799"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/13mm-spring-rear-blue-2-8-lb-in/" },
 ]
 category = "shock-spring"
 color = "blue"
+rate_lb_in = 2.8
+free_length_mm = 13
+range = "team-associated/spring-free-rate-springs"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90004", "release/team-associated/90008", "release/team-associated/90010"], type = "replaces", source = "doc/team-associated/cat-sc104x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

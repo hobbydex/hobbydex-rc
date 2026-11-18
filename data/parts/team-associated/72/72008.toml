@@ -2,8 +2,15 @@ id = "part/team-associated/72008"
 brand = "brand/team-associated"
 number = "72008"
 name = "DR10 FT Arm Mount C, aluminum"
+status = "discontinued"
+seen_by = "2022-01-24"
+seen_by_source = "https://web.archive.org/web/20220124184321/https://img2.associatedelectrics.com/pictures/news/articles/2558/supporting_photos/72008.ps_lg.jpg"
 gtin = "784695720084"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/dr10-ft-arm-mount-c-aluminum/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/team-associated/dr10", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"

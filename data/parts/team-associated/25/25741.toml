@@ -2,8 +2,13 @@ id = "part/team-associated/25741"
 brand = "brand/team-associated"
 number = "25741"
 name = "RIVAL-MT Gear Set"
+seen_by = "2013-04-30"
+seen_by_source = "https://web.archive.org/web/20130430023149/http://teamassociated.com/parts/details/25741/"
 gtin = "784695257412"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-gear-set/" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

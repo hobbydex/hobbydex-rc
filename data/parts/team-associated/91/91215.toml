@@ -2,8 +2,14 @@ id = "part/team-associated/91215"
 brand = "brand/team-associated"
 number = "91215"
 name = "SC10B Team AE Body, painted"
+seen_by = "2012-10-14"
+seen_by_source = "https://web.archive.org/web/20121014141031/http://www.teamassociated.com:80/parts/details/91215/"
 gtin = "784695912151"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc10b-team-ae-body-painted/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/sc10b", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/10"

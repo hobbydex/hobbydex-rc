@@ -2,9 +2,16 @@ id = "part/team-associated/6424B"
 brand = "brand/team-associated"
 number = "6424B"
 name = "Blue Shock Body, rear, 1.32 in stroke"
+seen_by = "2010-12-18"
+seen_by_source = "https://web.archive.org/web/20101218202322/http://teamassociated.com/pictures/products/6424B/6424B_sm.jpg"
 gtin = "784695764248"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/blue-shock-body-rear-1-32-in-stroke/" },
 ]
 category = "shock"
 color = "blue"
+shock_part = "body"
+fits = [
+  { kit = "kit/team-associated/gt2", releases = ["release/team-associated/7080", "release/team-associated/7092"], type = "replaces", source = "doc/team-associated/7092-cat-gt2ft", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10t", releases = ["release/team-associated/7003"], type = "replaces", source = "doc/team-associated/valkyrie-t3-basic-7003-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

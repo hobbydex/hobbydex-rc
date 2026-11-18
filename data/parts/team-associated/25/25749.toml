@@ -2,8 +2,13 @@ id = "part/team-associated/25749"
 brand = "brand/team-associated"
 number = "25749"
 name = "RIVAL-MT Battery Tray"
+seen_by = "2013-04-29"
+seen_by_source = "https://web.archive.org/web/20130429200932/http://teamassociated.com/parts/details/25749/"
 gtin = "784695257498"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-battery-tray/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

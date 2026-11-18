@@ -2,8 +2,14 @@ id = "part/team-associated/21364"
 brand = "brand/team-associated"
 number = "21364"
 name = "SC18 Body, KMC"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182322/http://www.teamassociated.com:80/parts/details/21364/"
 gtin = "784695213647"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc18-body-kmc/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/sc18", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/18"

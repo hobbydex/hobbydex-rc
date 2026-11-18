@@ -2,8 +2,13 @@ id = "part/team-associated/89359"
 brand = "brand/team-associated"
 number = "89359"
 name = "FT Shock Standoffs"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126143814/http://teamassociated.com/factoryteam/parts/details/89359/"
 gtin = "784695893597"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-shock-standoffs/" },
 ]
 category = "shock"
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911", "release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

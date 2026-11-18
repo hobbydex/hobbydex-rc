@@ -2,8 +2,13 @@ id = "part/team-associated/21371"
 brand = "brand/team-associated"
 number = "21371"
 name = "Foam Bumper"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127144924/http://teamassociated.com/parts/details/21371/"
 gtin = "784695213715"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/foam-bumper-part-21371/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/team-associated/rc18lm", releases = ["release/team-associated/20130"], type = "replaces", source = "doc/team-associated/rc18lm-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

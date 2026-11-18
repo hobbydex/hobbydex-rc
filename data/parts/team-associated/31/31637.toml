@@ -2,8 +2,15 @@ id = "part/team-associated/31637"
 brand = "brand/team-associated"
 number = "31637"
 name = "Gear Diff Outdrives, steel"
+seen_by = "2014-04-11"
+seen_by_source = "https://web.archive.org/web/20140411134146/http://teamassociated.com/pictures/products/31637/31637_lg.jpg"
 gtin = "784695316379"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/gear-diff-outdrives-steel/" },
 ]
 category = "differential"
+material = "steel"
+fits = [
+  { kit = "kit/team-associated/tc6", releases = ["release/team-associated/30109"], type = "replaces", source = "doc/team-associated/tc6-2-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/tc7", releases = ["release/team-associated/30120"], type = "replaces", source = "doc/team-associated/manual-30120-tc7", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

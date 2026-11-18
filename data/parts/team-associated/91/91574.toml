@@ -2,9 +2,18 @@ id = "part/team-associated/91574"
 brand = "brand/team-associated"
 number = "91574"
 name = "61 mm Front 4WD Buggy Wheels, white"
+seen_by = "2015-03-16"
+seen_by_source = "https://web.archive.org/web/20150316235504/http://teamassociated.com/pictures/products/91574/91574_sm.jpg"
 gtin = "784695915749"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/61-mm-front-4wd-buggy-wheels-white/" },
 ]
 category = "wheel"
 color = "white"
+vehicle = "buggy"
+position = "front-4wd"
+fits = [
+  { kit = "kit/team-associated/rc10b44", releases = ["release/team-associated/9063"], type = "replaces", source = "doc/team-associated/b44-3-manual-update", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10b64", releases = ["release/team-associated/90014", "release/team-associated/90015", "release/team-associated/90016"], type = "replaces", source = "doc/team-associated/manual-b64-90014", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10b74", releases = ["release/team-associated/90026"], type = "replaces", source = "doc/team-associated/b74-kit-manual-11-21-2019", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,9 +2,14 @@ id = "part/team-associated/25643"
 brand = "brand/team-associated"
 number = "25643"
 name = "Shock Springs, red, firm"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127220446/http://teamassociated.com/factoryteam/parts/details/25643/"
 gtin = "784695256439"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/shock-springs-red-firm/" },
 ]
 category = "shock-spring"
 color = "red"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/mmgt-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

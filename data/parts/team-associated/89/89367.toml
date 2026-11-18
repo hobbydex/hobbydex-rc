@@ -2,8 +2,14 @@ id = "part/team-associated/89367"
 brand = "brand/team-associated"
 number = "89367"
 name = "Front CVA Bone, Center"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129071746/http://teamassociated.com/pictures/products/89367/89367_sm.jpg"
 gtin = "784695893672"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/front-cva-bone-center/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911", "release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80931", "release/team-associated/80931-25", "release/team-associated/80932"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

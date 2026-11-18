@@ -2,8 +2,13 @@ id = "part/team-associated/31006"
 brand = "brand/team-associated"
 number = "31006"
 name = "Suspension Arms, front"
+seen_by = "2025-06-23"
+seen_by_source = "https://web.archive.org/web/20250623160423/https://60years.associatedelectrics.com/suspension-arms-front/"
 gtin = "784695310063"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/suspension-arms-front/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/team-associated/tc4", releases = ["release/team-associated/30111"], type = "replaces", source = "doc/team-associated/cat-tc4rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]
