@@ -17,7 +17,6 @@ import argparse, collections, csv, importlib.util, json, os, re, subprocess, sys
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(HERE)
-YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
 HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal", "turnbuckle", "rod-end"}   # hardware part categories
 PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
 CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
@@ -29,11 +28,6 @@ TAMICO_OWNER_DOCS = ("data/documents/xtra-speed/tamico-",)
 TAMICO_DEALER_LINK = re.compile(r'\{ site = "tamico\.de", url = "[^"]*", kind = "dealer" \}')
 SCRAP_IMG = re.compile(r"https?://[^\s\"')]*rcscrapyard[^\s\"')]*\.(jpe?g|png|gif|webp)", re.I)
 LOCAL_PATH = re.compile(r"(^|[\s\"'(=])(/home/|/Users/|/tmp/|file://|[A-Za-z]:\\|work/manuals/|cache/)")
-# words of another language in a title: Dutch (YouTube's localised titles), and French, Spanish and German
-# cues ("Guide de", "Fiche de", "instrucciones"); English words, even "van" (Monster Van), are not listed
-NON_ENGLISH = re.compile(r"(?<![A-Za-z])(het|een|voor|met|handleiding|nieuwe|nieuw|frisse|kies|gloednieuwe|garantie|gebruikvoorzorgen|"
-                         r"instructies|lijnen|onze|jouw|bekijk|guide de|fiche de|de r\u00e9f\u00e9rence|r\u00e9glage|"
-                         r"instrucciones|d\u00e9monstration|manual de|bedienungsanleitung|anleitung)(?![A-Za-z])", re.I)
 FIX_PAGE = "add the maker's product page as a document (kind product_page, page = the maker's URL) and list it in the release's documents"
 
 
@@ -107,32 +101,6 @@ ENGLISH_LINK = re.compile(r"https?://[^\s\"'<>)\]]+")
 ERROR_RX = re.compile(r"Fatal error|Call to (?:a )?member function|Parse error:|Uncaught (?:Exception|Error)")   # a PHP error page (the English shop answers so)
 
 
-# a document title that is only item numbers, or repeats one token: the placeholder an importer wrote when no name was known
-# ("Tamiya 43501 43501: instruction manual"); the name then comes from the maker's page (title_source)
-PLACEHOLDER_TITLE = re.compile(r"(?<![\w.'/-])(\S*?\d[\w.'/-]*) \1(?![\w.'/-])")
-NUMBERS_ONLY_TITLE = re.compile(r"\d[\d.'/-]*(?: \d[\d.'/-]*)*")
-
-
-def placeholder_title(title):
-    t = (title or "").strip()
-    return bool(PLACEHOLDER_TITLE.search(t)) or bool(NUMBERS_ONLY_TITLE.fullmatch(t))
-
-
-BODY_SET_DOC = re.compile(r"\bbody parts set\b|\bbody set\b|\bbody only\b|/spb-", re.I)
-
-
-def is_body_set_doc(doc, doc_id=""):
-    """A document that is the manual of a body set sold apart from a chassis (Tamiya "51578 body parts set"). A car's
-    manual that names its body ("... incl. Porsche Body", "(Painted Body)", "wo/Body") is a whole-car manual."""
-    return bool(BODY_SET_DOC.search((doc or {}).get("title", "") + " " + doc_id))
-
-
-# the kinds that are a file the maker published in its own language: the title is that file's printed name (Hobbytech's
-# "Guide de r\u00e9f\u00e9rence BX8SL", Corally's "..._Handleiding_NL"), not a localised title of an English item; an
-# English title of such a file would be a translation. Videos and pages are localised by the platform, so they are checked.
-OWN_LANGUAGE_FILES = {"manual", "supplement", "setup_sheet", "part_list", "exploded_view", "catalog_pdf", "datasheet"}
-
-
 # a name read from an English page ("https://rc.kyosho.com/en/32629w.html"): its German-looking words are the maker's
 ENGLISH_PAGE = re.compile(r"/en(?:[-_][a-z]{2})?(?:/|\.html?|$)|[?&](?:lang|language)=en\b", re.I)
 
@@ -152,26 +120,6 @@ def german_names(records, german_words):
         if words:
             out.append((r, words))
     return out
-
-
-def localised_title(d):
-    """A document whose title holds words of another language and that is not a maker's file in that language."""
-    return d.get("kind") not in OWN_LANGUAGE_FILES and bool(NON_ENGLISH.search(d.get("title", "")))
-
-
-SERVICE_PACK = re.compile(r"\b(service|rebuild|upgrade)\b.*\b(pack|kit|set)\b", re.I)
-COMPAT_CLAUSE = re.compile(r"\(?\bfor use with\b[^()]*\)?|\bfits?\b.*$", re.I)
-
-
-def is_service_pack(name):
-    """A part that is a service, rebuild or upgrade pack itself. A "(for use with #9080 upgrade kit)" clause names the kit
-    the part works with, so the part (an extreme heavy duty shock tower) is no pack."""
-    return bool(SERVICE_PACK.search(COMPAT_CLAUSE.sub(" ", name or "")))
-
-
-def date_without_source(r):
-    """A release that states a year or release date but names no source for it (released_source)."""
-    return (r.get("year") is not None or bool(r.get("released"))) and not r.get("released_source")
 
 
 def english_swaps(path):
@@ -450,22 +398,6 @@ def horizon_no_page(part, docs, gone):
     return bool(IMAGE_URL.search(src))
 
 
-def doc_no_page_or_url(doc):
-    """True when a document has neither the maker page that lists it nor a url. A video is never counted: its url is the
-    video itself (YouTube), the page people open, so it needs no separate page (coordinator decision, 2026-11-05)."""
-    return not doc.get("page") and not doc.get("url") and doc.get("kind") != "video"
-
-
-def horizon_doc_no_page(doc, horizon):
-    """True when a Horizon-brand document lacks the maker page that lists it. A product_page or owner_report is itself
-    the page, and a video has no listing page by nature. A catalog is a site-level record (the brand's part pages, its
-    product sitemap), whose url is a home page or sitemap, so it has no listing page to give."""
-    return doc.get("brand") in horizon and not doc.get("page") and doc.get("kind") not in HORIZON_PAGE_KINDS
-
-
-HORIZON_PAGE_KINDS = ("product_page", "owner_report", "video", "catalog")
-
-
 def horizon_gone_items(tools):
     """Item numbers whose Horizon item page answered 404 (cache/notes/horizon-items/<number>-item.html.http404.txt)."""
     d = os.path.join(tools, "cache", "notes", "horizon-items")
@@ -512,8 +444,6 @@ def load_linker_drift(tools):
     except OSError:
         return None
     return [(r[0], int(r[1])) for r in rows if len(r) >= 2 and r[1].isdigit()]
-
-
 
 
 CHILD_TIMEOUT = 3600   # seconds a tool the audit runs may take; past it the check says "child timed out" and the audit goes on.
@@ -649,11 +579,6 @@ def load_tools(tools):
     return out
 
 
-def fits_claim(f):
-    """The claim a fits row makes: its kit, its releases (None for the whole kit) and its car."""
-    return (f.get("kit"), tuple(sorted(f["releases"])) if "releases" in f else None, f.get("car"))
-
-
 def kit_without_release(kits, rels_of_kit, kit_id):
     """A fits row's kit that has no release to name. A family kit (family = true) is a label parts fit, not a car: no release is owed."""
     return kit_id in kits and not kits[kit_id].get("family") and not rels_of_kit.get(kit_id)
@@ -693,25 +618,6 @@ def suffix_twin_pairs(rels, reviewed=frozenset()):
                 if number_relation(a["number"], b["number"]) and same_product_record(a, b) and frozenset((a["id"], b["id"])) not in reviewed:
                     out.append((a, b))
     return out
-
-
-def duplicate_fits(parts):
-    """(part, [claims]) for each part with two or more fits rows naming one claim (the same kit, releases and car)."""
-    out = []
-    for p in parts:
-        by = collections.defaultdict(list)
-        for f in p.get("fits", []):
-            by[fits_claim(f)].append(f)
-        dup = [c for c, rows in by.items() if len(rows) > 1 and not distinct_pointers(rows)]
-        if dup: out.append((p, dup))
-    return out
-
-
-def distinct_pointers(rows):
-    """True when every row is a replaces row naming a different stock part: one pointer per row is the schema's
-    form of a part that replaces several stock parts in one kit (GPM, Treal, XRAY ...), not a duplicate."""
-    ptrs = [f.get("replaces") for f in rows]
-    return all(f.get("type") == "replaces" for f in rows) and all(ptrs) and len(set(ptrs)) == len(ptrs)
 
 
 def by_brand(parts):
@@ -1016,17 +922,6 @@ def main():
         if spans:
             spans(name, results[name]["count"])
 
-    # 1. platforms named after a year that is later than one of their releases
-    def oldest(k):
-        ys = [r.get("year") or int((r.get("released") or "0")[:4] or 0) for r in rels_of_kit[k["id"]]]
-        return min((y for y in ys if y), default=None)
-    hits = []
-    for k in kits.values():
-        old = oldest(k)
-        if old and any(int(y) > old for n in [k["name"], k["id"]] + k.get("former_ids", []) for y in YEAR.findall(n)):
-            hits.append(k)
-    check("platform-year-name", "rename the platform after its oldest release (the year lives on the release); keep the old id in former_ids", hits)
-
     # 1b. former names the rule rejects (validate.former_names_problems): must stay 0
     sys.path.insert(0, HERE)
     import validate
@@ -1035,41 +930,6 @@ def main():
     check("former-name-restates", "drop the entry: it is the part's name again with a pack count, set number, brand word or catalogue number, or listed twice (former_names.store() in hobbydex-tools)",
           [p for p in parts if fn_bad(p)],
           count=sum(len(fn_bad(p)) for p in parts))
-
-    # 1c. a part name whose brackets do not pair up: the name was cut inside a bracket (an open "(" at the end)
-    def unbalanced(s):
-        depth = 0
-        for ch in s.replace("\uff08", "(").replace("\uff09", ")"):
-            if ch == "(":
-                depth += 1
-            elif ch == ")":
-                depth -= 1
-                if depth < 0:
-                    return True
-        return depth != 0
-    # a name the maker itself prints unbalanced is kept as printed: name_source manufacturer/manual and a note saying so
-    def printed_by_maker(p):
-        return p.get("name_source") in ("manufacturer", "manual") and "kept as printed by the maker" in (p.get("notes") or "")
-    check("name-unbalanced-bracket", "restore the full name from the maker's source (its count goes to pack_qty); a name never ends inside a bracket",
-          [p for p in parts if unbalanced(p.get("name") or "") and not printed_by_maker(p)])
-
-    # 2. release date marker "?" (a *_doubt reason shows as "?" in the date column)
-    check("date-marker-question", "the ? sits in the date column of a narrow table: shorten the reason or move it to the release notes, and confirm the date",
-          [r for r in rels if any(k in r for k in ("year_doubt", "released_doubt", "announced_doubt"))])
-
-    # 2a. document titles that are only item numbers, or repeat one (the importer's placeholder when no name was known)
-    check("doc-placeholder-title", "replace the repeated number with the item's name from a maker page (title_source names it), or keep the number once; never the number twice",
-          [d for d in docs.values() if placeholder_title(d.get("title"))])
-
-    # 2b. releases of one brand with the same name: the name must say which is which (an edition, colour or re-release word)
-    # releases with their own item numbers are distinct releases; only the same number under the same name is a duplicate
-    same_name = collections.defaultdict(list)
-    for r in rels:
-        if r.get("name") and r.get("brand"):
-            same_name[(r["brand"], " ".join(r["name"].split()).casefold(), norm_name(str(r.get("number", ""))))].append(r)
-    groups = [g for g in same_name.values() if len(g) > 1]
-    check("duplicate-release-name", "give the releases of the group the same item number as one another only when they are one item: a duplicate is a release with the same name and number; releases with distinct item numbers are distinct",
-          [r for g in groups for r in g], count=len(groups))
 
     # 2c. releases of one brand whose item numbers differ only by a suffix (34902 and 34902D) and that name one product
     # (the same barcode, or the same maker page with no different barcode): a twin the importers would have minted.
@@ -1083,29 +943,6 @@ def main():
     check("release-suffix-twin", "one product under two item numbers: fold the suffixed record into the other (former_ids, the parts and documents move, retired.toml when none stays), or list the pair as distinct in data/confirmed-distinct.toml [[release_pair]] when the maker sells them apart",
           [x["id"] for pair in twins_rel for x in pair], count=len(twins_rel), per_brand=collections.Counter(a["brand"].split("/")[-1] for a, _ in twins_rel).most_common())
     results["release-suffix-twin"]["examples"] = [{"id": f"{a['id']} ~ {b['id']}", "url": url_for(a)} for a, b in twins_rel[:args.examples]]
-
-    # 3. bearing category holding a rebuild or service kit
-    check("bearing-rebuild-kit", "recategorise the part (not bearing) or remove it from the bearing list; a rebuild kit is a set of parts",
-          [p for p in parts if p.get("category") == "bearing" and re.search(r"\b(rebuild|service|overhaul|repair)\b", p["name"], re.I)])
-
-    # 4. Traxxas service or rebuild packs marked as in the box
-    check("service-pack-in-box", "change the row's role to option (or listed): a service or upgrade pack is not in the box",
-          [r for r in rels if r.get("brand") == "brand/traxxas" for c in r.get("contains", []) if c.get("role") == "kit"
-           and is_service_pack(by_id.get(c["part"], {}).get("name", ""))])
-
-    # 5. release whose contents come only from a body-set manual while a kit manual exists
-    def is_body(doc_id):
-        return is_body_set_doc(docs.get(doc_id, {}), doc_id)
-    hits = []
-    for r in rels:
-        srcs = {c.get("source") for c in r.get("contains", []) if c.get("source")}
-        if not srcs or not all(is_body(s) for s in srcs):
-            continue
-        kit_manuals = [d for rr in rels_of_kit[r.get("kit")] for d in rr.get("documents", [])
-                       if docs.get(d, {}).get("kind") == "manual" and not is_body(d)]
-        if kit_manuals:
-            hits.append(r)
-    check("body-manual-only", "source the release's contents from the kit manual (or list the body manual's parts as listed only)", hits)
 
     # 6. downloaded manuals (hobbydex-tools cache/manuals) not linked to a release
     if tools["cache"]:
@@ -1226,10 +1063,6 @@ def main():
     else:
         results["manual-unlinked"] = {"fix": "hobbydex-tools cache not found (--tools)", "count": None, "examples": [], "all": []}
 
-    # 7. Horizon documents without a page (a product_page or owner_report is itself the page; a video has no listing page: docs/schema.md)
-    check("horizon-doc-no-page", "give the document its page (the Horizon product or support page that lists the file)",
-          [d for d in docs.values() if horizon_doc_no_page(d, horizon)])
-
     # 10. parts with a cached maker product page but no maker link, and maker links to pages the crawl has as 404
     # (hobbydex-tools tools/link_maker_pages.py --dry-run reports both per brand; the daily derive step links or prunes them)
     lmp = os.path.join(os.path.abspath(args.tools), "tools", "link_maker_pages.py")
@@ -1262,10 +1095,6 @@ def main():
     else:
         results["maker-page-unlinked"] = {"fix": "hobbydex-tools link_maker_pages.py not found (--tools)", "count": None, "examples": [], "all": []}
 
-    # 8. platforms with no releases
-    check("platform-no-release", "add the platform's releases, or retire the platform if it is not a product",
-          [k for k in kits.values() if not rels_of_kit[k["id"]]])
-
     art_dir = os.path.join(RC, "art")   # the outline art (orphan-art reads it)
 
     # 9b. barcodes the cache states for a record that has no gtin (tools/gtin_sweep.py in hobbydex-tools finds them)
@@ -1286,27 +1115,12 @@ def main():
     else:
         results["linker-would-change"] = {"fix": "hobbydex-tools cache/notes/linker-drift.tsv not found (written by the daily derive)", "count": None, "examples": [], "all": []}
 
-    # 10. copyright-year release years
-    check("copyright-year", "a copyright line is an on-sale bound, not a release year: move the year to seen_by (year precision) and drop year",
-          [r for r in rels if r.get("year") and not r.get("released") and re.search(r"copyright|\(c\)|©", r.get("notes", ""), re.I)])
-
     # multi-item-whole-part, name-count-no-pack-qty, name-callout-or-count, colour-word-no-color, hw-no-material,
     # derive-not-landed, tmp-inodes, hw-size-no-spec and its five hw-size-* sub-classes, cached-manual-no-record,
     # art-missing-photo, pack-photo-disagrees, pack-wrong-photo, pack-photo-brand-below-bar, classifier-drift,
     # with-fasteners-category, ocr-kind-vs-dealer, spec-no-bag-drawing, hw-photo-unread and video-gallery-unattached are
     # counted by the Rust audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
-    # 11b. parts no rule or maker source places: misc with category_source "fallback" (classify_parts.py; docs/decisions.md 2026-10-29)
-    check("part-category-fallback", "a part with the fallback category (misc): add the name's words to the classifier rules in hobbydex-tools (classify_parts.py --fill), or link the maker's section that names its category",
-          [p for p in parts if p.get("category_source") == "fallback"])
-
-    # 12. releases named only by their number
-    # a release whose name is a model code is fine when the maker's own page for it names the code as its title:
-    # sources.name then holds that page (checked by hand against the title, see docs/schema.md "sources")
-    check("release-named-by-number", "give the release its product name from the maker's page",
-          [r for r in rels if re.fullmatch(r"[\w-]*\d[\w-]*", r.get("name", "")) and r.get("name") == r.get("number", r.get("name"))
-           and not (r.get("sources") or {}).get("name")])
-
     # 13. platforms with no manual or product page linked
     def page_docs(r):
         return [docs[d] for d in r.get("documents", []) if d in docs and docs[d].get("kind") in ("manual", "product_page")]
@@ -1316,31 +1130,6 @@ def main():
     check("platform-no-manual-or-page", "link the platform's manual or the maker's product page on one of its releases, a manual that lists the platform in `kits`, or the maker's page for the platform in the kit's `links` (kind maker); tools/link_kit_pages.py in hobbydex-tools links the addresses the data already names",
           [k for k in kits.values() if rels_of_kit[k["id"]] and not any(page_docs(r) for r in rels_of_kit[k["id"]])
            and k["id"] not in kit_docs and not kit_maker_link(k)])
-
-    # 14. video documents without a date
-    check("video-no-date", "add the date the maker's video was published, from the channel page",
-          [d for d in docs.values() if d.get("kind") == "video" and not d.get("date")])
-
-    # 14b. document titles in another language (decision 2026-10-28: titles are stored in English; YouTube and
-    # some sites localise them): a title with common Dutch, French, Spanish or German words is listed for an
-    # English source copy to fix from (a refetch through the crawl queue), never renamed on a guess
-    check("title-language", "rename the document from an English source copy (the maker's English page or manual, cited): the English title, not a translation",
-          [d for d in docs.values() if localised_title(d)])
-
-    # 15. release with no date at all
-    check("release-no-date", "date the release from a source (released, year or announced); a seen_by bound is only a fallback",
-          [r for r in rels if not any(r.get(k) for k in ("released", "year", "announced", "seen_by"))])
-
-    # 15a. a year or release date with no source: a hand-entered date, or one taken from a manual's date or a shop's listing day
-    check("date-without-source", "find the date in a maker page, manual, catalogue or dated news post and add released_source (the page URL, or its doc/ id); a source that contradicts it corrects it; with none, remove year and released (keep a printed manual date as seen_by)",
-          [r for r in rels if date_without_source(r)])
-
-    # 15b. announced later than the seen_by bound: the announcement source is wrong (the car was on sale by the bound)
-    def after_bound(x):
-        a, b = str(x.get("announced", "")), str(x.get("seen_by", ""))
-        return bool(a and b) and a[:len(b)] > b
-    check("announced-after-seen-by", "the announced day is later than the seen_by bound, so its source is wrong: remove announced and announced_source (the bound stays); find the right day or leave the release undated",
-          [r for r in rels if after_bound(r)] + [x for x in parts if after_bound(x)])
 
     # 15c. a release dated by a YouTube video: that video's document must list the release, or the site cannot embed it
     def watch_id(url):
@@ -1354,10 +1143,6 @@ def main():
     check("announced-video-not-linked", "the release's announced_source is a YouTube video that no video document lists: write data/documents/<brand>/youtube-<id>.toml (kind video, url, releases with this release); a Short or a video that names the model only in hashtags dates nothing, so remove announced and announced_source",
           [r for r in rels if r.get("announced") and watch_id(r.get("announced_source"))
            and watch_id(r.get("announced_source")) not in linked_videos.get(r["id"], set())])
-
-    # 16. release whose category is the same as its kit's (redundant override)
-    check("release-category-redundant", "remove the release's category: it equals the kit's",
-          [r for r in rels if r.get("category") and r.get("category") == kits.get(r.get("kit"), {}).get("category")])
 
     # 17. kit whose releases disagree on scale: no kit scale, or a release scale override with no note saying why
     # a kit whose notes open "Group for ..." is a catch-all for an item range or a product line (Tamtech: cars, trucks and
@@ -1373,10 +1158,6 @@ def main():
             hits.append(k)
     check("kit-mixed-scale", "set the kit's scale to the one the releases share, and give a release scale that differs from the kit a note that states its source (a catch-all group kit, notes \"Group for ...\", is skipped)", hits)
 
-    # 18. document without page or url (a video is its own page: its url is the video, so it is never counted)
-    check("doc-no-page-or-url", "give the document a page (the maker's page that lists it) or a url",
-          [d for d in docs.values() if doc_no_page_or_url(d)])
-
     # 19. release lists a document that does not list the release back
     # both sides: a release lists a document that does not list it, or a document lists a release that does not list it
     rel_by_id = {r["id"]: r for r in rels}
@@ -1388,14 +1169,6 @@ def main():
         one_sided = sorted({p[1] for p in dl.pairs(rel_by_id, docs) if p[2] not in held})
     check("doc-not-back-linked", "run tools/sync_doc_links.py --write in hobbydex-tools (adds the missing side; catalogues, shared shop pages and dealer listings it holds are not gaps)",
           one_sided)
-
-    # 19b. a release lists one document more than once (a repeated append by an importer)
-    check("duplicate-doc-ref", "remove the repeated entry from the release's documents; the importer that appends it should test membership first",
-          [r for r in rels if len(set(r.get("documents", []))) != len(r.get("documents", []))])
-
-    # 19b. a release lists one document more than once (a repeated append by an importer)
-    check("duplicate-doc-ref", "remove the repeated entry from the release's documents; the importer that appends it should test membership first",
-          [r for r in rels if len(set(r.get("documents", []))) != len(r.get("documents", []))])
 
     # 19b. parts of a car-specific category with no fits row and no release naming them (categories flagged
     # any_car = true in data/categories are not made for one car, so they are left out: docs/schema.md "category")
@@ -1426,13 +1199,6 @@ def main():
     per_kit = collections.Counter(k for ks in nr_kits.values() for k in ks)
     results["fits-kit-no-release"]["breakdown"] = ("kit", [f"{k} {c}" for k, c in sorted(per_kit.items(), key=lambda kv: (-kv[1], kv[0]))[:40]])
 
-    # 20b. two fits rows that name one claim (the same kit, releases and car): one row, the sources listed in notes
-    dups = duplicate_fits(parts)
-    per_brand = collections.Counter(p["brand"].split("/")[-1] for p, _ in dups)
-    check("fits-duplicate", "merge the rows that name one claim into one row (the same kit, releases and car); the other sources go into notes (hobbydex-tools tools/collapse_fits.py); a pair that differs in type stays two rows, so decide which one holds (replaces rows that name different stock parts are not duplicates)",
-          [p for p, _ in dups], per_brand=per_brand.most_common(),
-          breakdown=("kit", [f"{k} {c}" for k, c in collections.Counter(c[0] for _, cs in dups for c in cs).most_common(40)]))
-
     # 21. orphan art files
     orphans = []
     for sub, kind in (("kits", "kit"), ("releases", "release"), ("parts", "part")):
@@ -1459,10 +1225,6 @@ def main():
         if any(n > 1 for n in names.values()):
             hits.append(k)
     check("duplicate-name-in-kit", "two releases of the kit share a name and an item number: merge them if they are one item (former_ids), or the maker number tells them apart", hits)
-
-    # 23. release depicting a real vehicle without its make
-    check("depicts-no-model", "set depicts.model: a real vehicle needs its model (make is optional)",
-          [r for r in rels if r.get("depicts") and not r["depicts"].get("model")])
 
     # 23b. one real vehicle under two model names in a make (depicts.model spelled apart)
     near = collections.defaultdict(lambda: collections.defaultdict(set))
@@ -1524,7 +1286,6 @@ def main():
           typed_car, per_brand=per_brand.most_common())
 
     # 26. unnamed parts and cheap structural gaps (kept from the old audit)
-    check("part-named-by-number", "give the part its name from the maker's parts list", [p for p in parts if p["name"] == p.get("number")])
     # a release is not a part: a part that shares its brand and number with a release (or the release's id) and is not
     # listed in data/release-twins.toml with its reason (validate.py refuses the same; this is the status-page count)
     with open(os.path.join(RC, "data", "release-twins.toml"), "rb") as fh:

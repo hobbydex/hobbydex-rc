@@ -2,11 +2,12 @@
 
 `records(id, kind, path, data)` holds every record file under data/ (kind: part, release, kit, doc, brand, ...; data:
 the record as JSON, read with json_extract and json_each). TABLES below derive the lists the checks join on, each
-with its indexes. SQL functions on every connection: norm_url(u) and video_id(u).
+with its indexes. SQL functions on every connection: norm_url(u), video_id(u), truthy(v) and REGEXP (`text REGEXP 'pattern'`:
+Python's re.search, so (?i), \b and lookarounds work; a value that is not text never matches).
 
 The files are parsed by a process pool (tomllib is CPU-bound): about 20 s for the full tree with 4 processes.
 """
-import concurrent.futures, json, multiprocessing, os, re, sqlite3, subprocess, sys, tomllib, urllib.parse
+import concurrent.futures, functools, json, multiprocessing, os, re, sqlite3, subprocess, sys, tomllib, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(os.path.dirname(HERE))
@@ -76,10 +77,27 @@ def kind_of(rel):
     return KIND.get(parts[1]) if len(parts) >= 3 and parts[0] == "data" else None
 
 
+@functools.lru_cache(maxsize=None)
+def _pattern(p):
+    return re.compile(p)
+
+
+def regexp(pattern, value):
+    """SQLite's REGEXP operator (`value REGEXP pattern`): Python's re.search; a value that is not text is no match."""
+    return isinstance(value, str) and _pattern(pattern).search(value) is not None
+
+
+def truthy(v):
+    """Python's truth of a json_extract value: no field, false, 0, "" and an empty list or table are false."""
+    return v not in (None, "", "[]", "{}") and v != 0
+
+
 def connect(path=":memory:", readonly=False):
     db = sqlite3.connect(f"file:{path}?mode=ro" if readonly else path, uri=readonly, check_same_thread=False)
     db.create_function("norm_url", 1, norm_url, deterministic=True)
     db.create_function("video_id", 1, video_id, deterministic=True)
+    db.create_function("regexp", 2, regexp, deterministic=True)
+    db.create_function("truthy", 1, truthy, deterministic=True)
     return db
 
 
