@@ -111,7 +111,7 @@ def test_local_path(ratchet, db):
 
 def test_dimension_plausible(hard, db):
     """A car's dimensions fit its scale (a 1/10 car has no 2,000 mm wheelbase): every figure times the scale divisor
-    is a plausible full-size figure, the wheelbase is not longer than the car and the track not wider. A body's stated
+    is a plausible full-size figure, the wheelbase is not longer than the car and the track not more than 5 % wider. A body's stated
     wheelbase and track are checked the same way. Fix the figure or the unit from the maker page in dimensions.source."""
     from rules import dimension_problems
     kit_scale = dict(db.execute("SELECT id, json_extract(data, '$.scale') FROM records WHERE kind = 'kit'"))

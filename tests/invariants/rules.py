@@ -666,7 +666,7 @@ def scale_divisor(scale):
 
 def dimension_problems(dims, scale):
     """What is implausible in a dimensions table (or a body's wheelbase and track) for a car of this scale: a figure
-    whose full-size equivalent is out of DIM_FULL_SIZE, a wheelbase longer than the car, a track wider than the car."""
+    whose full-size equivalent is out of DIM_FULL_SIZE, a wheelbase longer than the car, a track more than 5 % wider than the car."""
     out = []
     n = scale_divisor(scale)
     for k, (lo, hi) in DIM_FULL_SIZE.items():
@@ -678,6 +678,6 @@ def dimension_problems(dims, scale):
     if wb and ln and min(wb) > max(ln):
         out.append(f"wheelbase {min(wb):g} mm longer than the length {max(ln):g} mm")
     tracks = [x for k in ("track_mm", "track_front_mm", "track_rear_mm") for x in dim_values(dims.get(k))]
-    if tracks and wd and min(tracks) > max(wd):
+    if tracks and wd and min(tracks) > 1.05 * max(wd):   # a track measured over the tyres may equal the width
         out.append(f"track {min(tracks):g} mm wider than the width {max(wd):g} mm")
     return out

@@ -350,6 +350,7 @@ class DimensionPlausible(unittest.TestCase):
         self.assertTrue(rules.dimension_problems({"weight_g": 3}, "1/10"))           # kilograms written as grams
         self.assertTrue(rules.dimension_problems({"wheelbase_mm": 400, "length_mm": 300}, None))
         self.assertTrue(rules.dimension_problems({"track_front_mm": 250, "width_mm": 190}, None))
+        self.assertEqual(rules.dimension_problems({"track_front_mm": 99.5, "width_mm": 99}, None), [])   # over the tyres
 
     def test_no_scale_checks_only_the_ratios(self):
         self.assertEqual(rules.dimension_problems({"wheelbase_mm": 2000}, None), [])
