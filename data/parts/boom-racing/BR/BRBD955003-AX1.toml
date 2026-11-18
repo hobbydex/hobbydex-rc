@@ -6,9 +6,13 @@ name_source = "dealer"
 applies_to = "SCX10"
 fits = [
   { kit = "kit/axial/scx10", type = "replaces", source = "doc/boom-racing/asiatees" },
+  { kit = "kit/axial/scx10", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/axial/scx10-ii", type = "direct", source = "doc/boom-racing/shop" },
+  { kit = "kit/axial/wraith", type = "direct", source = "doc/boom-racing/shop" },
 ]
+notes = "The shop's listing cuts the name; the end is taken from the product URL"
 links = [
-  { site = "AsiaTees", url = "https://www.asiatees.com/display?Axial-SCX10-Parts-Hop-Ups-Upgrades&brand=Axial&model=SCX10&id=153993&pid=1", kind = "dealer" },
+  { site = "Boom Racing", url = "https://www.boomracing.com/badass-hd-steel-center-drive-shaft-set-for-axial-scx10-ii-rtr-scx10-wraith-wraith-19-smt10-front-rear-2-recon-g6-certified-153993" },
 ]
 category = "drivetrain"
 material = "steel"
