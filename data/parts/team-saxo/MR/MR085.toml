@@ -1,7 +1,7 @@
 id = "part/team-saxo/MR085"
 brand = "brand/team-saxo"
 number = "MR085"
-name = "MR085"
+name = "Ball bearing 5x8x2.5"
 includes = [
   { part = "part/team-saxo/MR085-OR", qty = 10, source = "doc/team-saxo/f1-180-v4-part-list" },
   { part = "part/team-saxo/MR085-1", qty = 10, source = "doc/team-saxo/f1-200-v2-parts-list" },
@@ -12,5 +12,8 @@ fits = [
 ]
 notes = "Spare pack on the F1-180-V4 parts list"
 documents = ["doc/team-saxo/f1-180-v4-part-list", "doc/team-saxo/f1-200-v2-parts-list", "doc/team-saxo/mgt-210-mgt-225-manual"]
-category = "misc"
-category_source = "fallback"
+category = "bearing"
+name_source = "spec"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size of the bearing code MR085 (tools/data/hardware_size_codes.toml)" },
+]

@@ -41,6 +41,23 @@ def test_part_named_by_number(ratchet):
           AND json_type(data, '$.name') = json_type(data, '$.number')""", blocking=False)
 
 
+def test_part_named_by_hardware_code(ratchet):
+    """Parts whose only name is a bearing code with a seal suffix (MR106RS, R168-2RS) or a metric screw size (M3X8) in
+    their number: the size the code stands for names them (name_source "spec", tools/name_hardware_codes.py in
+    hobbydex-tools). The ones left are codes that read two ways or contradict their pack; the count may only fall."""
+    ratchet("part-named-by-hardware-code", r"""SELECT id AS record, 'named by a hardware code only' AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.name') = json_extract(data, '$.number')
+          AND json_type(data, '$.name') = 'text'
+          AND json_extract(data, '$.number') REGEXP '(?i)^(?:[A-Z]{1,3}-?)?(?:F|MF|MR|R)?\d{2,4}-?(?:ZZ|2RS|RS|RZ)(?:-\w+)?$|M\d(?:[.-]\d)?X\d{1,2}$'""")
+
+
+def test_spec_name_links_spec(hard):
+    """A part named from a standard size (name_source "spec") links the generic spec of that size in equivalent_to."""
+    hard("""SELECT id AS record, 'named from a spec but links no spec' AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.name_source') = 'spec'
+          AND NOT EXISTS (SELECT 1 FROM json_each(data, '$.equivalent_to') e WHERE json_extract(e.value, '$.spec') IS NOT NULL)""")
+
+
 def test_part_no_car_link(ratchet, db):
     """Parts of a car-specific category with no fits row and no release that contains them: the linking queue (a fits
     row, or the release that contains it). Parts of any-car categories (any_car in data/categories), universal parts
