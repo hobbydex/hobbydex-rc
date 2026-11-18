@@ -80,3 +80,7 @@ contains = [
   { part = "part/team-associated/92133", role = "kit", qty = 3, step = "Gear Diff Build - Step 1; Gear Diff Build - Step 2", source = "doc/team-associated/apex2-sport-datsun620-manual" },
   { part = "part/team-associated/92143", role = "kit", qty = 4, step = "Gear Diff Build - Step 1", source = "doc/team-associated/apex2-sport-datsun620-manual" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/30129-page" },
+  { item = "charger", source = "doc/team-associated/30129-page", note = "Radio control battery charger suitable for chosen battery" },
+]

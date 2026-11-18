@@ -110,3 +110,7 @@ contains = [
   { part = "part/team-associated/42332", role = "kit", step = "Gate 02 Stealth Xf; Gate 05 / 01 Stealth Xf; Gate 01 Wheel/Tire Build", qty = 34, source = "doc/element-rc/enduro-se-sendero-manual-8-22-22" },
   { part = "part/team-associated/4673", role = "kit", step = "Gate 01 Front Axle; Gate 01 Rear Axle", qty = 4, source = "doc/element-rc/enduro-se-sendero-manual-8-22-22" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40107-page", note = "Radio-controlled car battery pack (#758 Reedy 7.4V 2S LiPo Battery)" },
+  { item = "charger", source = "doc/element-rc/40107-page", note = "RC car battery charger (#27201 Reedy Compact Balance Charger)" },
+]

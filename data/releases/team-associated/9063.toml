@@ -153,3 +153,12 @@ contains = [
   { part = "part/team-associated/9957", role = "kit", qty = 1, step = "Front and Rear Gear Differential Build - Bag A-AA - Step 1; Center Gear Differential Build - Bag A-AA - Step 1", source = "doc/team-associated/b44-3-manual-update" },
   { part = "part/team-associated/91447", role = "kit", step = "Shocks Build - Bag M-MM - Step 5", qty = 4, source = "doc/team-associated/b44-3-manual-update" },
 ]
+needs = [
+  { item = "radio", source = "doc/team-associated/9063-page", note = "RC 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/9063-page", note = "Batteries: 2S, 7.4V LiPo saddle or Shorty battery pack" },
+  { item = "esc", source = "doc/team-associated/9063-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/9063-page", note = "RC electric motor" },
+  { item = "pinion", source = "doc/team-associated/9063-page", note = "Pinion gear" },
+  { item = "servo", source = "doc/team-associated/9063-page", note = "Steering servo" },
+  { item = "tyres", source = "doc/team-associated/9063-page", note = "Tires" },
+]

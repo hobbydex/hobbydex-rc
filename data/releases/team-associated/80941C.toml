@@ -176,3 +176,6 @@ contains = [
   { part = "part/team-associated/89609", role = "listed", source = "doc/team-associated/manual-nomaddb8-80941" },
   { part = "part/team-associated/91069", role = "listed", source = "doc/team-associated/manual-nomaddb8-80941" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/80941-page", note = "#80941: 4S 14.8v LiPo battery pack with T-plug connector (AE #756, #757 or #318)" },
+]

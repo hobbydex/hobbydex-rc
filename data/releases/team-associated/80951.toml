@@ -186,3 +186,14 @@ contains = [
   { part = "part/team-associated/91564", role = "kit", qty = 4, step = "Differential Build (Front and Rear) - Bag 1.1, 1.2 - Step 1; Differential Build (Front and Rear) - Bag 1.1, 1.2 - Step 2; Differential Build (Center) - Bag 1.1, 1.2 - Step 5; Differential Build (Center) - Bag 1.1, 1.2 - Step 6", source = "doc/team-associated/rc8t4-t4e-manual-9-2023" },
   { part = "part/team-associated/91565", role = "kit", qty = 4, step = "Steering Blocks Build - Bag 6.1 - Step 1; Rear Hubs Build - Bag 8.1 - Step 1", source = "doc/team-associated/rc8t4-t4e-manual-9-2023" },
 ]
+needs = [
+  { item = "engine", source = "doc/team-associated/80951-page", note = "1:8 scale Radio-controlled car nitro motor (.21 class rear exhaust engine)" },
+  { item = "battery", source = "doc/team-associated/80951-page", note = "4.8V-7.6V receiver battery" },
+  { item = "charger", source = "doc/team-associated/80951-page", note = "Radio control battery charger (suited for batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/80951-page" },
+  { item = "servo", source = "doc/team-associated/80951-page" },
+  { item = "paint", source = "doc/team-associated/80951-page", note = "Lexan specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/80951-page", note = "1:8 scale off-road wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/80951-page", note = "1:8 scale off-road wheels and tires" },
+  { item = "body", source = "doc/team-associated/80951-page", note = "1:8 body" },
+]

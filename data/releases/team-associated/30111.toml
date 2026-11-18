@@ -107,3 +107,6 @@ contains = [
   { part = "part/team-associated/3931", role = "listed", source = "doc/team-associated/drawing-tc4" },
   { part = "part/team-associated/6265", role = "listed", source = "doc/team-associated/drawing-tc4rtr" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/30111-page", note = "6-cell battery pack. (LiPo batteries will not work in this configuration.)" },
+]

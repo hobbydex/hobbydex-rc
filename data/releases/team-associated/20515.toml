@@ -79,3 +79,7 @@ contains = [
   { part = "part/team-associated/25586", role = "listed", source = "doc/team-associated/mmgt-manual" },
   { part = "part/team-associated/25615", role = "listed", source = "doc/team-associated/mmgt-manual" },
 ]
+needs = [
+  { item = "fuel", source = "doc/team-associated/20515-page", note = "Model car fuel" },
+  { item = "tools", source = "doc/team-associated/20515-page" },
+]

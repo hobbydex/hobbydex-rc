@@ -95,3 +95,7 @@ contains = [
   { part = "part/team-associated/91564", role = "kit", qty = 4, step = "Step 3; Step 9; Step 21", source = "doc/team-associated/20530-pro4-manual-1-28-2021" },
   { part = "part/team-associated/91738", role = "kit", qty = 10, step = "Step 40", source = "doc/team-associated/20530-pro4-manual-1-28-2021" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20530c-page" },
+  { item = "charger", source = "doc/team-associated/20530c-page", note = "Radio control battery charger for battery used (#27201 Reedy balance Charger)" },
+]

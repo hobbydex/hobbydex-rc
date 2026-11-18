@@ -28,3 +28,13 @@ contains = [
   { part = "part/team-associated/6338", role = "kit", qty = 1, step = "Electronics Install - Misc. - Step 1", source = "doc/team-associated/rc12l-kit-manual-11-3-2025" },
   { part = "part/team-associated/6727", role = "kit", qty = 3, step = "Steering Servo Build - Bag G - Step 1; Electronics Install - Misc. - Step 1", source = "doc/team-associated/rc12l-kit-manual-11-3-2025" },
 ]
+needs = [
+  { item = "radio", source = "doc/team-associated/4022-page", note = "R/C two channel surface frequency radio system" },
+  { item = "esc", source = "doc/team-associated/4022-page", note = "Electronic Speed Control (ESC)" },
+  { item = "motor", source = "doc/team-associated/4022-page", note = "R/C Electric Motor" },
+  { item = "servo", source = "doc/team-associated/4022-page", note = "Steering Servo" },
+  { item = "charger", source = "doc/team-associated/4022-page", note = "Peak detection battery charger" },
+  { item = "battery", source = "doc/team-associated/4022-page", note = "6 Cell NiCad Battery (3x3 saddle pack style)" },
+  { item = "tools", source = "doc/team-associated/4022-page", note = "2mm Hex Driver (AE #1501)" },
+  { item = "paint", source = "doc/team-associated/4022-page", note = "Polycarbonate specific paint" },
+]

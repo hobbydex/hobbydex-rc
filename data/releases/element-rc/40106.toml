@@ -124,3 +124,7 @@ contains = [
   { part = "part/element-rc/42199", role = "listed", source = "doc/element-rc/pressrelease-013124-bushido-plus-parts-list2" },
   { part = "part/team-associated/4677", role = "kit", step = "Gate 01 Front Suspension Build; Gate 02 Front Suspension Build", qty = 10, source = "doc/element-rc/enduro-trailrunner-manual" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40106-page", note = "Radio-controlled car battery pack (Reedy #758)" },
+  { item = "charger", source = "doc/element-rc/40106-page", note = "Radio control battery charger (Reedy #27201)" },
+]

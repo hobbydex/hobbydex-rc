@@ -188,3 +188,14 @@ contains = [
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag 5.1, 5.2, 5.3 - Step 2; Rear End Build - Bag 7.1, 7.2, 7.3 - Step 2", qty = 6, source = "doc/team-associated/rc8t3-2e-nitro-combo-manual-11-15-2021" },
   { part = "part/team-associated/81485", role = "listed", source = "doc/team-associated/pressrelease-090120-rc8t3-2-parts-list" },
 ]
+needs = [
+  { item = "engine", source = "doc/team-associated/80943-page", note = ".21 class rear exhaust engine" },
+  { item = "battery", source = "doc/team-associated/80943-page" },
+  { item = "servo", source = "doc/team-associated/80943-page", note = "Steering servo (Reedy #27107)" },
+  { item = "glow-starter", source = "doc/team-associated/80943-page", note = "Glow igniter" },
+  { item = "tyres", source = "doc/team-associated/80943-page", note = "1:8 scale truck tires" },
+  { item = "wheels", source = "doc/team-associated/80943-page", note = "1:8 scale truck wheels" },
+  { item = "glue", source = "doc/team-associated/80943-page", note = "CA (cyanoacrylate) glue (#1597 FT Tire Adhesive)" },
+  { item = "paint", source = "doc/team-associated/80943-page", note = "Paint for polycarbonate body" },
+  { item = "tools", source = "doc/team-associated/80943-page" },
+]

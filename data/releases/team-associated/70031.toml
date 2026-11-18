@@ -117,3 +117,7 @@ contains = [
   { part = "part/team-associated/72118", role = "listed", source = "doc/team-associated/70031c-pro2-lt10sw-dk10sw-manual" },
   { part = "part/team-associated/72119", role = "listed", source = "doc/team-associated/70031c-pro2-lt10sw-dk10sw-manual" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/70031-page", note = "Suitable NiMH or 2S or 3S LiPo battery for electric RC car" },
+  { item = "charger", source = "doc/team-associated/70031-page", note = "Charger suitable for chosen battery" },
+]

@@ -184,3 +184,17 @@ contains = [
   { part = "part/team-associated/91838", role = "kit", qty = 2, step = "Bag 9 - Step 4", source = "doc/team-associated/manual-rc10b6-1dl-90021l" },
   { part = "part/team-associated/9611", role = "kit", qty = 2, step = "Bag 6 - Step 4", source = "doc/team-associated/manual-rc10b6-1dl-90021l" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/90021l-page", note = "1:10 scale 540-size electric motor" },
+  { item = "esc", source = "doc/team-associated/90021l-page", note = "1:10 scale electronic speed control" },
+  { item = "battery", source = "doc/team-associated/90021l-page", note = "7.4V-7.6V LiPo with \"shorty\" battery dimensions" },
+  { item = "charger", source = "doc/team-associated/90021l-page", note = "Battery charger (able to charge one of the batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/90021l-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/90021l-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/90021l-page", note = "Steering servo" },
+  { item = "pinion", source = "doc/team-associated/90021l-page", note = "Pinion gear (48 pitch)" },
+  { item = "paint", source = "doc/team-associated/90021l-page", note = "Spray paint for polycarbonate body" },
+  { item = "wheels", source = "doc/team-associated/90021l-page", note = "1:10 scale buggy wheels" },
+  { item = "tyres", source = "doc/team-associated/90021l-page", note = "1:10 scale buggy tires" },
+  { item = "glue", source = "doc/team-associated/90021l-page", note = "Glue for tires and wheels" },
+]

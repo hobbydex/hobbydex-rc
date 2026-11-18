@@ -132,3 +132,7 @@ contains = [
   { part = "part/element-rc/42358", role = "listed", source = "doc/element-rc/pressrelease-enduro-042324-new-parts-42358-zuul-blue" },
   { part = "part/team-associated/4677", role = "kit", step = "Gate 04 Chassis Build; Gate 06 Chassis Build", qty = 2, source = "doc/element-rc/enduro-ifs2-zuul-rtr-manual-9-3-2024" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40127-page", note = "Suitable 6-cell NiMH or 2S or 3S LiPo battery with T-type connector for vehicle" },
+  { item = "charger", source = "doc/element-rc/40127-page", note = "Charger suitable for chosen battery" },
+]

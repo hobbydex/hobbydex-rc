@@ -164,3 +164,14 @@ contains = [
   { part = "part/team-associated/89455", role = "kit", source = "doc/team-associated/rc8tce-manual-preflight" },
   { part = "part/team-associated/89474", role = "kit", source = "doc/team-associated/rc8tce-manual-preflight" },
 ]
+needs = [
+  { item = "engine", source = "doc/team-associated/80912-page", note = ".21 or .28 Class rear exhaust engine" },
+  { item = "receiver", source = "doc/team-associated/80912-page" },
+  { item = "servo", source = "doc/team-associated/80912-page", note = "2 Servos" },
+  { item = "battery", source = "doc/team-associated/80912-page" },
+  { item = "fuel", source = "doc/team-associated/80912-page" },
+  { item = "glow-starter", source = "doc/team-associated/80912-page", note = "Glow starter (#1737)" },
+  { item = "paint", source = "doc/team-associated/80912-page", note = "Lexan-specific spray paint" },
+  { item = "tyres", source = "doc/team-associated/80912-page", note = "Tires" },
+  { item = "tools", source = "doc/team-associated/80912-page" },
+]

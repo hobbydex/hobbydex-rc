@@ -249,3 +249,9 @@ contains = [
   { part = "part/team-associated/89274", role = "listed", source = "doc/team-associated/cat-rc8" },
   { part = "part/team-associated/89279", role = "kit", source = "doc/team-associated/rc8rtr-ft-manual-preflight" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/80905-page", note = "7.2v stick pack for ProStart" },
+  { item = "charger", source = "doc/team-associated/80905-page", note = "Charger for stick pack (#LRP41552 Pulsar 3)" },
+  { item = "tools", source = "doc/team-associated/80905-page", note = "Slotted Screwdriver (#1552)" },
+  { item = "fuel", source = "doc/team-associated/80905-page", note = "Fuel (15%-30% only)" },
+]

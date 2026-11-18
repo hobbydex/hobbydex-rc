@@ -73,3 +73,7 @@ contains = [
   { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-online-fcc" },
   { part = "part/team-associated/92630", role = "listed", source = "doc/team-associated/xp120-dvc-manual-online-fcc" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20176-page" },
+  { item = "charger", source = "doc/team-associated/20176-page", note = "Radio control battery charger (#616 Reedy 423-S Compact Balance Charger)" },
+]

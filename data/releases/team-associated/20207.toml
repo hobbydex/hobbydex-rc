@@ -57,3 +57,11 @@ contains = [
   { part = "part/team-associated/21972", role = "kit", step = "Bag H - Step 1", qty = 1, source = "doc/team-associated/20207-model24-rc10t-truck-kit-manual-10-14-2026" },
   { part = "part/team-associated/6727", role = "kit", step = "Bag H - Step 4", qty = 2, source = "doc/team-associated/20207-model24-rc10t-truck-kit-manual-10-14-2026" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20207-page" },
+  { item = "motor", source = "doc/team-associated/20207-page" },
+  { item = "esc", source = "doc/team-associated/20207-page" },
+  { item = "servo", source = "doc/team-associated/20207-page" },
+  { item = "radio", source = "doc/team-associated/20207-page", note = "Radio and Receiver" },
+  { item = "charger", source = "doc/team-associated/20207-page" },
+]

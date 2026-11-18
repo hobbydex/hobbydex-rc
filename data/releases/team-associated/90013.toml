@@ -128,3 +128,13 @@ contains = [
   { part = "part/team-associated/9649", role = "kit", qty = 1, step = "Transmission Build - Bag 5.1, 5.2, 5.3 - Step 6", source = "doc/team-associated/manual-b6clubracer-90013" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Transmission Build - Bag 5.1, 5.2, 5.3 - Step 7", source = "doc/team-associated/manual-b6clubracer-90013" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/90013-page" },
+  { item = "charger", source = "doc/team-associated/90013-page", note = "Battery charger (able to charge one of the batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/90013-page", note = "RC 2-channel surface frequency radio system" },
+  { item = "paint", source = "doc/team-associated/90013-page", note = "Polycarbonate-specific spray paint for body" },
+  { item = "wheels", source = "doc/team-associated/90013-page", note = "1:10 scale buggy wheels" },
+  { item = "tyres", source = "doc/team-associated/90013-page", note = "1:10 scale buggy tires" },
+  { item = "glue", source = "doc/team-associated/90013-page", note = "Glue for tires and wheels" },
+  { item = "tools", source = "doc/team-associated/90013-page" },
+]

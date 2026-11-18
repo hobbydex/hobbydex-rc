@@ -121,3 +121,7 @@ contains = [
   { part = "part/team-associated/72119", role = "listed", source = "doc/team-associated/90039c-pro2-dk10sw-manual" },
   { part = "part/team-associated/29204", role = "listed", source = "doc/team-associated/90039c-xp120-dvc-manual-waden-online" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/90039-page", note = "Suitable NiMH or 2S or 3S LiPo radio-controlled car battery pack" },
+  { item = "charger", source = "doc/team-associated/90039-page", note = "Radio control battery charger for chosen battery" },
+]

@@ -116,3 +116,7 @@ contains = [
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/rb10-rtr-manual-2024" },
   { part = "part/team-associated/29204", role = "listed", source = "doc/team-associated/90032c-xp120-dvc-manual-waden-online" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/90031-page" },
+  { item = "charger", source = "doc/team-associated/90031-page", note = "Radio control battery charger for battery used (#27201 Reedy balance Charger)" },
+]

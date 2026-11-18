@@ -129,3 +129,17 @@ contains = [
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Bag 11-14 - Step 7", source = "doc/team-associated/cml-b6d-buggy-instruction-manual" },
   { part = "part/team-associated/91447", role = "kit", step = "Bag 20-22 - Step 5", qty = 4, source = "doc/team-associated/90012-rc10b6d-manual" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/90012-page", note = "1:10 scale 540-size electric motor" },
+  { item = "esc", source = "doc/team-associated/90012-page", note = "1:10 scale electronic speed control" },
+  { item = "battery", source = "doc/team-associated/90012-page" },
+  { item = "charger", source = "doc/team-associated/90012-page", note = "Battery charger (able to charge one of the batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/90012-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/90012-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/90012-page", note = "Steering servo" },
+  { item = "pinion", source = "doc/team-associated/90012-page", note = "Pinion gear (48 pitch)" },
+  { item = "paint", source = "doc/team-associated/90012-page", note = "Polycarbonate-specific spray paint for body" },
+  { item = "wheels", source = "doc/team-associated/90012-page", note = "1:10 scale buggy wheels" },
+  { item = "tyres", source = "doc/team-associated/90012-page", note = "1:10 scale buggy tires" },
+  { item = "glue", source = "doc/team-associated/90012-page", note = "Glue for tires and wheels" },
+]

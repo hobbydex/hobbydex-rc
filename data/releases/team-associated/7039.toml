@@ -134,3 +134,6 @@ contains = [
   { part = "part/team-associated/9885", role = "kit", qty = 1, step = "Shocks Build - Step 1", source = "doc/team-associated/manual-t4-2rs" },
   { part = "part/team-associated/9888", role = "kit", qty = 2, step = "Transmission Build - Step 1; Transmission Build - Step 2", source = "doc/team-associated/manual-t4-2rs" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/7039-page", note = "6-cell NiMH or 2S LiPo battery pack with T-plug Connector" },
+]

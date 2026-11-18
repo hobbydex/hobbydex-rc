@@ -60,3 +60,11 @@ contains = [
   { part = "part/team-associated/31382", role = "kit", qty = 4, step = "Bag 6 - Step 3; Bag 7 - Step 1", source = "doc/team-associated/20194-rc28r-1-kit-manual-8-19-2026" },
   { part = "part/team-associated/6727", role = "kit", qty = 2, step = "Bag 7 - Step 2", source = "doc/team-associated/20194-rc28r-1-kit-manual-8-19-2026" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/20194-page" },
+  { item = "battery", source = "doc/team-associated/20194-page" },
+  { item = "servo", source = "doc/team-associated/20194-page" },
+  { item = "esc", source = "doc/team-associated/20194-page" },
+  { item = "charger", source = "doc/team-associated/20194-page" },
+  { item = "radio", source = "doc/team-associated/20194-page", note = "Radio and Receiver" },
+]

@@ -206,3 +206,10 @@ contains = [
   { part = "part/team-associated/91564", role = "kit", qty = 8, step = "Differential Build (Front and Rear) - Bag 1.1, 1.2 - Step 1; Differential Build (Front and Rear) - Bag 1.1, 1.2 - Step 2; Differential Build (Center) - Bag 1.1, 1.2 - Step 5; Differential Build (Center) - Bag 1.1, 1.2 - Step 6; Rear Hubs Build - Bag 8.1, 8.2 - Step 1", source = "doc/team-associated/rc8b4-2-nitro-manual-7-16-2026" },
   { part = "part/team-associated/91565", role = "kit", qty = 4, step = "Steering Blocks Build - Bag 6.1 - Step 1", source = "doc/team-associated/rc8b4-2-nitro-manual-7-16-2026" },
 ]
+needs = [
+  { item = "engine", source = "doc/team-associated/80956-page" },
+  { item = "servo", source = "doc/team-associated/80956-page" },
+  { item = "tyres", source = "doc/team-associated/80956-page", note = "Tires" },
+  { item = "wheels", source = "doc/team-associated/80956-page" },
+  { item = "radio", source = "doc/team-associated/80956-page" },
+]

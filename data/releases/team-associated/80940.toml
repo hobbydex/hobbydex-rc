@@ -153,3 +153,15 @@ contains = [
   { part = "part/team-associated/91566", role = "kit", qty = 4, step = "Steering Blocks Build - Bag 6.1, 6.2 - Step 1; Rear Hubs Build - Bag 8.1, 8.2 - Step 1", source = "doc/team-associated/rc8b3-2e-manual-3-9-2021" },
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag 5.1, 5.2, 5.3 - Step 2; Rear End Build - Bag 7.1, 7.2, 7.3 - Step 2", qty = 10, source = "doc/team-associated/rc8b3-2e-manual-3-9-2021" },
 ]
+needs = [
+  { item = "esc", source = "doc/team-associated/80940-page", note = "1:8 scale speed control" },
+  { item = "motor", source = "doc/team-associated/80940-page" },
+  { item = "pinion", source = "doc/team-associated/80940-page" },
+  { item = "servo", source = "doc/team-associated/80940-page", note = "High-torque steering servo" },
+  { item = "battery", source = "doc/team-associated/80940-page", note = "4S LiPo battery and charger" },
+  { item = "charger", source = "doc/team-associated/80940-page", note = "4S LiPo battery and charger" },
+  { item = "tyres", source = "doc/team-associated/80940-page", note = "1:8 scale buggy tires" },
+  { item = "wheels", source = "doc/team-associated/80940-page", note = "1:8 scale buggy wheels" },
+  { item = "glue", source = "doc/team-associated/80940-page", note = "CA (Cyanoacrylate) glue" },
+  { item = "tools", source = "doc/team-associated/80940-page" },
+]

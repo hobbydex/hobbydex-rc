@@ -122,3 +122,7 @@ contains = [
   { part = "part/team-associated/71195", role = "listed", source = "doc/team-associated/pressrelease-042021-new-sr10-parts" },
   { part = "part/team-associated/29204", role = "listed", source = "doc/team-associated/70030c-xp120-dvc-manual-waden-online" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/70030-page", note = "RC car 6-cell sub-C rechargeable NiMH battery or 2-cell LiPo battery" },
+  { item = "charger", source = "doc/team-associated/70030-page", note = "Radio control battery charger for above" },
+]

@@ -168,3 +168,13 @@ contains = [
   { part = "part/team-associated/81653", role = "option", source = "doc/team-associated/pressrelease-120723-rc8b4-1-b4-1e-parts-list" },
   { part = "part/team-associated/81654", role = "listed", source = "doc/team-associated/pressrelease-120723-rc8b4-1-b4-1e-parts-list" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/80950-page" },
+  { item = "esc", source = "doc/team-associated/80950-page" },
+  { item = "radio", source = "doc/team-associated/80950-page", note = "2- or 3-channel radio/transmitter" },
+  { item = "battery", source = "doc/team-associated/80950-page" },
+  { item = "tyres", source = "doc/team-associated/80950-page", note = "1:8 scale buggy tires" },
+  { item = "wheels", source = "doc/team-associated/80950-page", note = "1:8 scale buggy wheels" },
+  { item = "tools", source = "doc/team-associated/80950-page", note = "Needle-nose pliers" },
+  { item = "servo", source = "doc/team-associated/80950-page", note = "Steering servo (#27153 RT5012A HV Digital Competition 1:8 Servo)" },
+]

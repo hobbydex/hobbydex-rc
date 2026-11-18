@@ -149,3 +149,7 @@ contains = [
   { part = "part/team-associated/91039", role = "listed", source = "doc/team-associated/cat-sc104x4" },
   { part = "part/team-associated/91155", role = "listed", source = "doc/team-associated/cat-sc104x4" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/90008-page" },
+  { item = "charger", source = "doc/team-associated/90008-page", note = "Appropriate battery charger" },
+]

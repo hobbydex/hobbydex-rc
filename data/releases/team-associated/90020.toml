@@ -225,3 +225,17 @@ contains = [
   { part = "part/team-associated/91827", role = "option", source = "doc/team-associated/pressrelease-020618-90020-90021-parts-list" },
   { part = "part/team-associated/91829", role = "listed", source = "doc/team-associated/pressrelease-020618-90020-90021-parts-list" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/90020-page", note = "1:10 scale 540-size electric motor" },
+  { item = "esc", source = "doc/team-associated/90020-page", note = "1:10 scale electronic speed control" },
+  { item = "battery", source = "doc/team-associated/90020-page" },
+  { item = "charger", source = "doc/team-associated/90020-page", note = "Battery charger (able to charge one of the batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/90020-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/90020-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/90020-page", note = "Steering servo" },
+  { item = "pinion", source = "doc/team-associated/90020-page", note = "Pinion gear (48 pitch)" },
+  { item = "paint", source = "doc/team-associated/90020-page", note = "Spray paint for polycarbonate body" },
+  { item = "wheels", source = "doc/team-associated/90020-page", note = "1:10 scale buggy wheels" },
+  { item = "tyres", source = "doc/team-associated/90020-page", note = "1:10 scale buggy tires" },
+  { item = "glue", source = "doc/team-associated/90020-page", note = "Glue for tires and wheels" },
+]

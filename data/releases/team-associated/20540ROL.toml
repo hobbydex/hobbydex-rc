@@ -55,3 +55,10 @@ contains = [
   { part = "part/team-associated/26079", role = "listed", source = "doc/team-associated/pressrelease-013124-20540-sr7-hoonigan-parts-list" },
   { part = "part/team-associated/81268", role = "listed", source = "doc/team-associated/pressrelease-013124-20540-sr7-hoonigan-parts-list" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20540rol-page" },
+  { item = "motor", source = "doc/team-associated/20540rol-page" },
+  { item = "esc", source = "doc/team-associated/20540rol-page", note = "Electronic Speed Control" },
+  { item = "radio", source = "doc/team-associated/20540rol-page", note = "2 channel surface transmitter, 2 channel receiver, and steering servo." },
+  { item = "servo", source = "doc/team-associated/20540rol-page", note = "2 channel surface transmitter, 2 channel receiver, and steering servo." },
+]
