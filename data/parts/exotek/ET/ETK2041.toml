@@ -10,3 +10,8 @@ applies_to = "B6.3 T6 Sc6"
 gtin = "708498504191"
 category = "gear"
 material = "titanium"
+fits = [
+  { kit = "kit/team-associated/rc10b6", releases = ["release/team-associated/90029", "release/team-associated/90030"], type = "replaces", source = "doc/exotek/horizon-pages", notes = "The fit list names B6.3 T6 Sc6" },
+  { kit = "kit/team-associated/rc10t6", type = "replaces", source = "doc/exotek/horizon-pages", notes = "The fit list names B6.3 T6 Sc6" },
+  { kit = "kit/team-associated/rc10sc6", type = "replaces", source = "doc/exotek/horizon-pages", notes = "The fit list names B6.3 T6 Sc6" },
+]
