@@ -370,3 +370,229 @@ def walk_strings(v):
     elif isinstance(v, list):
         for x in v:
             yield from walk_strings(x)
+
+
+# release-editions-not-grouped: colour, livery and named editions of one kit that share no `range`. The word lists
+# and the edition, number and race-number rules are copied from hobbydex-tools tools/link_release_ranges.py (and the
+# colour words from its tools/data/name_words.toml), the linker that writes the ranges; keep them in step.
+EDITION_WORD = re.compile(r"[^\W_]+(?:[.][^\W_]+)*")
+EDITION_RANGE_STOP = {
+    "flux", "drift", "sport", "rtr", "arr", "kit", "brushless", "brushed", "combo", "lipo", "nimh", "evo", "pro", "v2",
+    "v3", "v4", "ver", "version", "2wd", "4wd", "waterproof", "w", "with", "and", "bundle", "set", "pack", "edition",
+    "limited", "special", "spec", "late", "early", "model", "type", "tuned", "mk", "gen", "body", "chassis", "wheels",
+    "tires", "tyres", "tire", "radio", "battery", "charger", "readyset", "ready", "to", "run", "upgrade", "upgraded",
+    "hop", "up"}
+# editions that are another product (a chassis material, surface, class or a limited run), not a colour or livery
+EDITION_STOP = {
+    "limited", "special", "anniversary", "launch", "collector", "collectors", "deluxe", "standard", "premium", "first",
+    "signature", "classic", "ultimate", "pro", "race", "racing", "competition", "comp", "trail", "elite", "champion",
+    "championship", "tour", "team", "factory", "founder", "founders", "owner", "owners", "debut", "carbon",
+    "graphite", "alu", "aluminium", "aluminum", "flex", "solid", "carpet", "dirt", "clay", "turf", "astro", "asphalt",
+    "offroad", "onroad", "street", "track", "short", "long", "lwb", "swb", "lite", "light", "heavy", "max", "plus",
+    "mini", "micro", "big", "small", "wide", "narrow", "lowered", "lifted", "scale", "basic", "starter", "beginner",
+    "kids"}
+EDITION_NUMBER_GAP = 50
+EDITION_DAYS = 400
+# colour words (name_words.toml [colour] base and material, link_release_ranges EXTRA_COLOURS) and the paint-name
+# words around them (modifier, link_release_colours EXTRA_MOD and TRAIL)
+RANGE_COLOURS = {
+    "black", "white", "red", "blue", "green", "orange", "yellow", "pink", "purple", "violet", "grey", "gray", "silver",
+    "gold", "golden", "gunmetal", "chrome", "clear", "silvery", "transparent", "smoke", "brown", "olive", "khaki",
+    "tan", "turquoise", "magenta", "teal", "navy", "lime", "cyan", "cerulean", "bronze", "copper", "titanium"}
+RANGE_COLOUR_MODS = {
+    "light", "dark", "matte", "matt", "fluorescent", "fluo", "neon", "charcoal", "army", "sky", "metallic", "pearl",
+    "gloss", "satin", "flat", "bright", "deep", "racing", "candy", "bahama", "lightning", "classic", "electric",
+    "magic", "emerald", "daytona", "boost", "sunlight", "emotional", "platinum", "mint", "burnt", "slate", "iconic",
+    "grayish", "greyish", "mica", "galaxy", "dust", "ii", "seafoam", "aqua", "gun", "metal"}
+RACE_NUMBER = re.compile(r"^(?P<head>.*?)[\s,\-]*(?P<livery>(?:No\.?\s*\d+|#\s*\d+)(?!\w).*)$", re.I)
+RACE_YEAR = re.compile(r"(?:19|20)\d\d")
+
+
+def range_words(name):
+    return [m.group().lower() for m in EDITION_WORD.finditer(name or "")]
+
+
+def colour_clause(ws):
+    """True when the words are a colour clause and nothing else: up to five colour and paint-name words (with "and"
+    between colours), at least one a colour ("Imperial Blue", "black and red", "Matte Gun Metal")."""
+    return (0 < len(ws) <= 5 and any(w in RANGE_COLOURS for w in ws)
+            and all(w in RANGE_COLOURS or w in RANGE_COLOUR_MODS or w == "and" for w in ws))
+
+
+def range_number(n):
+    m = re.fullmatch(r"(.*?)(\d+)([A-Za-z]{0,2})", str(n or "").strip())
+    return (m.group(1), int(m.group(2)), m.group(3), len(m.group(2))) if m else None
+
+
+def colour_numbers_near(a, b):
+    """Item numbers of one colour range (link_release_ranges near): one pattern and up to 10 apart (161300 /
+    161301), the same number with another colour code (30615C / 30615R), or one stem with letter tails of up to
+    four (118N02BDBK / 118N02BDGY)."""
+    a, b = str(a or "").strip(), str(b or "").strip()
+    pa, pb = range_number(a), range_number(b)
+    if pa and pb:
+        return pa[0] == pb[0] and pa[3] == pb[3] and (pa[1] == pb[1] or (pa[2] == pb[2] and abs(pa[1] - pb[1]) <= 10))
+    n = 0
+    while n < min(len(a), len(b)) and a[n] == b[n]:
+        n += 1
+    ta, tb = a[n:], b[n:]
+    return (n >= 6 and any(c.isdigit() for c in a[:n]) and ta.isalpha() and tb.isalpha() and len(ta) <= 4
+            and len(tb) <= 4 and ta != tb)
+
+
+def site_colour_code(n):
+    """(pattern, stem) of an item number whose colour code the site's colour-sibling rule reads
+    (hobbydex src/lib/colourSiblings.ts numberParts): BRS-YW, 34118T1S, 30615C; else None."""
+    n = str(n or "").replace(" ", "").upper()
+    for pattern, rx in (("dash", r"(.*[A-Z0-9])-[A-Z]{2,3}"), ("type", r"(.*\d)T\dS?"), ("letter", r"(.*\d)[A-Z]{1,2}")):
+        m = re.fullmatch(rx, n)
+        if m:
+            return pattern, m.group(1)
+    return None
+
+
+def colour_diff(a, b):
+    """The colour clauses of two names that are equal but for one colour clause each (or one name without it:
+    the base release), or None. The names must share at least two words."""
+    wa, wb = range_words(a), range_words(b)
+    n = 0
+    while n < min(len(wa), len(wb)) and wa[n] == wb[n]:
+        n += 1
+    m = 0
+    while m < min(len(wa), len(wb)) - n and wa[-1 - m] == wb[-1 - m]:
+        m += 1
+    da, db = wa[n:len(wa) - m], wb[n:len(wb) - m]
+    if n + m < 2 or da == db or not (da or db):
+        return None
+    if not all(colour_clause(d) for d in (da, db) if d):
+        return None
+    return " ".join(da), " ".join(db)
+
+
+def edition_diff(a, b):
+    """The edition texts of two names that differ only in the one or two words before their one "Edition"
+    (link_release_ranges edition_diff: Nebula / Supernova Edition), or None; Limited, Founder's, Graphite and the
+    other EDITION_STOP editions are other products."""
+    wa, wb = range_words(a), range_words(b)
+    ia = [i for i, w in enumerate(wa) if w == "edition"]
+    ib = [i for i, w in enumerate(wb) if w == "edition"]
+    if len(ia) != 1 or len(ib) != 1 or not ia[0] or not ib[0]:
+        return None
+    ia, ib = ia[0], ib[0]
+    if wa[ia:] != wb[ib:]:
+        return None
+    n = 0
+    while n < min(ia, ib) and wa[n] == wb[n]:
+        n += 1
+    da, db = wa[n:ia], wb[n:ib]
+    if not (1 <= len(da) <= 2 and 1 <= len(db) <= 2) or da == db or n < 2:
+        return None
+    if any(w in EDITION_RANGE_STOP or w in EDITION_STOP or re.search(r"\d", w) for w in da + db):
+        return None
+    return " ".join(da) + " edition", " ".join(db) + " edition"
+
+
+def race_split(name):
+    """(head words, livery) of a race-numbered name ("... Jaguar XJR-14 No.17 SUGO 1991"), or None
+    (link_release_ranges race_split: the race number plus up to four event, year or result words)."""
+    m = RACE_NUMBER.match((name or "").strip())
+    if not m or re.search(r"[()\"]", m.group("head")):
+        return None
+    head, livery = range_words(m.group("head")), m.group("livery").strip(" -,")
+    tail = range_words(re.sub(r"^(?:No\.?\s*\d+|#\s*\d+)", "", livery, flags=re.I))
+    if (len(head) < 2 or len(tail) > 4 or re.search(r"[()\"]", livery)
+            or any(w in EDITION_RANGE_STOP or (re.search(r"\d", w) and not RACE_YEAR.fullmatch(w)) for w in tail)):
+        return None
+    return head, livery
+
+
+def race_diff(a, b):
+    """The liveries of two race-numbered names with the same words before the race number, or None."""
+    ra, rb = race_split(a), race_split(b)
+    if not ra or not rb or ra[0] != rb[0] or ra[1].lower() == rb[1].lower():
+        return None
+    ya, yb = ({int(w) for w in range_words(r[1]) if RACE_YEAR.fullmatch(w)} for r in (ra, rb))
+    return None if ya and yb and ya != yb else (ra[1], rb[1])
+
+
+def stem_close(a, b):
+    """Item numbers sharing a stem of five or more characters (three digits) that add up to three each:
+    32369S17 / 32369LE."""
+    a, b = str(a or "").strip().upper(), str(b or "").strip().upper()
+    n = 0
+    while n < min(len(a), len(b)) and a[n] == b[n]:
+        n += 1
+    return a != b and n >= 5 and sum(c.isdigit() for c in a[:n]) >= 3 and len(a) - n <= 3 and len(b) - n <= 3
+
+
+# reissue markers: a name with one of these words (or a year in brackets, "(2026)") that the other name lacks is a
+# re-release, never a launch variant (Kyosho Javelin 30618 vs Legendary Series Javelin 30618C)
+REISSUE_WORD = re.compile(r"(?i)\bre-?releases?d?\b|\bre-?issues?d?\b|\blegendary\b|\bclassic\b|\banniversary\b"
+                          r"|\bvintage\b|\brevival\b|\(\s*(?:19|20)\d\d\s*\)")
+# variants come to market together (one announcement, one listing): dates of month or day precision this close
+MARKET_DAYS = 90
+
+
+def range_day(r):
+    """(day number, precise) of a release's first date (released, announced, seen_by, then year): precise when it
+    names the month."""
+    for f in ("released", "announced", "seen_by", "year"):
+        m = re.match(r"(\d{4})(?:-(\d\d))?(?:-(\d\d))?", str(r.get(f) or ""))
+        if m:
+            day = (int(m.group(1)) * 12 + int(m.group(2) or 7) - 1) * 30.44 + int(m.group(3) or 1)
+            return day, m.group(2) is not None
+    return None
+
+
+def reissue_marks(name):
+    return {m.group().lower().replace("-", "") for m in REISSUE_WORD.finditer(name or "")}
+
+
+def rerelease_targets(r):
+    rel = r.get("related") or []
+    return {x.get("release") for x in rel if isinstance(x, dict) and x.get("relation") == "rerelease-of"}
+
+
+def market_bucket(a, b):
+    """How two name-matched releases came to market: "together" (dates of month precision at most MARKET_DAYS
+    apart: one launch, so one range), "apart" (a re-release: a reissue word or bracketed year only one name has,
+    a supersedes or rerelease-of link between them, or re-releases of different originals) or "review" (dates far apart or unknown, no reissue marker: a
+    person decides)."""
+    if reissue_marks(a.get("name")) != reissue_marks(b.get("name")):
+        return "apart"
+    ra, rb = rerelease_targets(a), rerelease_targets(b)
+    if (a.get("supersedes") in (b.get("id"),) or b.get("supersedes") in (a.get("id"),) or b.get("id") in ra
+            or a.get("id") in rb or bool(ra) != bool(rb) or ra != rb):
+        return "apart"
+    da, db = range_day(a), range_day(b)
+    if da and db and da[1] and db[1] and abs(da[0] - db[0]) <= MARKET_DAYS:
+        return "together"
+    return "review"
+
+
+def edition_pair(a, b):
+    """Why two releases of one brand, kit, kind and scale read as editions of one range by name and item number
+    ("colour", "edition" or "livery" with the two texts), or None. a and b are dicts with name, number and
+    depicts. Whether they came to market together is market_bucket's."""
+    if not a.get("number") or not b.get("number") or str(a["number"]).strip() == str(b["number"]).strip():
+        return None
+    da, db = a.get("depicts") or {}, b.get("depicts") or {}
+    if any(da.get(f) and db.get(f) and str(da[f]).lower() != str(db[f]).lower() for f in ("make", "model")):
+        return None
+    e = edition_diff(a["name"], b["name"])
+    if e:
+        pa, pb = range_number(a["number"]), range_number(b["number"])
+        if (pa and pb and pa[0] == pb[0] and pa[3] == pb[3] and pa[2] == pb[2]
+                and abs(pa[1] - pb[1]) <= EDITION_NUMBER_GAP):
+            return ("edition",) + e
+        return None
+    r = race_diff(a["name"], b["name"])
+    if r:
+        return ("livery",) + r if stem_close(a["number"], b["number"]) else None
+    c = colour_diff(a["name"], b["name"])
+    if not c or not colour_numbers_near(a["number"], b["number"]):
+        return None
+    sa, sb = site_colour_code(a["number"]), site_colour_code(b["number"])
+    if sa and sa == sb and all(c):
+        return None   # the site pairs these by item number and name already (colourSiblings.ts)
+    return ("colour",) + c
