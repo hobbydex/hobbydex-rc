@@ -1084,7 +1084,8 @@ Tyres carry, when the brand states them: `compound` (the brand's name for
 it, "Super Soft Long Wear"), `scale` ("1/8"), `vehicle` (buggy | truggy |
 short-course | stadium-truck), `position` (front | rear | front-rear |
 front-2wd | front-4wd), `wheel_size` (the rim diameter as written,
-`2.2"`, `2.2"/3.0"`), `insert` (closed-cell) and `mounting` (unmounted:
+`2.2"`, `2.2"/3.0"`), `insert` (closed-cell; included: the tyre comes with
+its insert, "w/Inserts", Kyosho's "with Inner", type not stated) and `mounting` (unmounted:
 tyres and inserts only | wheels-included: wheels in the box, to be mounted |
 pre-mounted | pre-mounted-not-glued) and `hardness` (the rubber or foam
 hardness in Shore A, a whole number from 5 to 100) with `hardness_source`
