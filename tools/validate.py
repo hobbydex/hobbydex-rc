@@ -1391,8 +1391,9 @@ def main():
                 errors.append(f"{path}: url should be https://www.youtube.com/watch?v={vid}")
             if not d.get("publisher") or not d.get("channel"):
                 errors.append(f"{path}: a video needs its publisher (the maker) and channel")
-            if not any(d.get(k) for k in ("releases", "kits", "parts")):
-                errors.append(f"{path}: a video should show a release, kit or part (releases, kits or parts)")
+            if not any(d.get(k) for k in ("releases", "kits", "parts")) and (not d.get("publisher") or d.get("brand") != d.get("publisher")):
+                # a brand video (no release, kit or part) is the publisher's own: it shows on that brand's page
+                errors.append(f"{path}: a video that shows no release, kit or part is a brand video: its brand is its publisher")
             if "date" in d and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(d["date"])):
                 errors.append(f"{path}: date {d['date']!r} should be YYYY-MM-DD")
             if "duration_s" in d and not (isinstance(d["duration_s"], int) and d["duration_s"] > 0):
