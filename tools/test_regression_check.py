@@ -153,7 +153,8 @@ class Repository(unittest.TestCase):
     def test_derived_row_the_head_does_not_derive_is_explained(self):
         row = f'{{ kit = "kit/a/k", type = "replaces", replaces = "part/a/S1", source = "doc/a/m", notes = "{self.NOTE}" }}'
         ck = self.check(self.files("Wheel Hex Adapter", row), self.files("Wheel Hex Adapter Set", None))
-        self.assertEqual([e for e in ck.events if e["regression"]], [])
+        # the stock part's renamed: that change is a regression of its own (a stated name changed); the fits row is not
+        self.assertEqual([(e["id"], e["field"]) for e in ck.events if e["regression"]], [("part/a/S1", "name")])
         self.assertTrue(any(e["field"] == "fits" and "not derived" in e["reason"] for e in ck.events))
 
 
