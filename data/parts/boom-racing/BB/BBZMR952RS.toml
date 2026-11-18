@@ -1,11 +1,16 @@
 id = "part/boom-racing/BBZMR952RS"
 brand = "brand/boom-racing"
 number = "BBZMR952RS"
-name = "BBZMR952RS"
-notes = "Named by its number only: the name on the scanned boom-racing manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
+name = "Ball bearing 5x9x3 (rubber sealed)"
+category = "bearing"
 documents = ["doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-link-version", "doc/boom-racing/manual-brx01-limited-edition-br8003-20230118", "doc/boom-racing/manual-brx02-109-land-rover-series-ii-iii-pickup-4wd-radio-control", "doc/boom-racing/manual-brx02-4-link-110122-br8004-20240905", "doc/boom-racing/manual-brx02-88-land-rover-series-iii-pickup-4wd-radio-control-car"]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Miscellaneous-All-Parts-Hop-Ups-Upgrades&brand=Miscellaneous&model=All&id=43297&pid=1", kind = "dealer" },
 ]
+seal = "rubber"
+name_source = "spec"
+equivalent_to = [
+  { spec = "spec/bearing/5x9x3", match = "functional", notes = "Size of the bearing code MR95-2RS (tools/data/hardware_size_codes.toml)" },
+]
+universal = true
+universal_basis = "size"

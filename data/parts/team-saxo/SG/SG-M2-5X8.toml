@@ -1,8 +1,13 @@
 id = "part/team-saxo/SG-M2-5X8"
 brand = "brand/team-saxo"
 number = "SG-M2-5X8"
-name = "SG-M2-5X8"
+name = "Socket head hex cap screw M2.5x8"
 notes = "Listed in the GT-500-V2 manual's assembly steps; the manual gives no name"
 documents = ["doc/team-saxo/gt-500-v2-manual", "doc/team-saxo/mgt-210-mgt-225-manual"]
-category = "misc"
-category_source = "fallback"
+category = "screw"
+name_source = "spec"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-socket-cap-hex", match = "functional", notes = "Size of the screw code SG-M2-5X8 (tools/data/hardware_size_codes.toml)" },
+]
+universal = true
+universal_basis = "size"
