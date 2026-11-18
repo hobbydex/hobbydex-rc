@@ -253,12 +253,14 @@ def edition_pairs(db):
             if isinstance(d.get(f), str):
                 d[f] = json.loads(d[f])
         groups[tuple(d.pop("key"))].append(d)
+    with open(os.path.join(RC, "data", "confirmed-distinct.toml"), "rb") as f:
+        apart = {frozenset(p["releases"]) for p in tomllib.load(f).get("release_pair", [])}
     for g in groups.values():
         for i, a in enumerate(g):
             for b in g[i + 1:]:
                 why = edition_pair(a, b)
                 if why:
-                    yield a, b, why, market_bucket(a, b)
+                    yield a, b, why, "apart" if frozenset((a["id"], b["id"])) in apart else market_bucket(a, b)
 
 
 def test_release_editions_not_grouped(ratchet, db):
@@ -275,3 +277,18 @@ def test_release_editions_not_grouped(ratchet, db):
     ratchet("release-editions-not-grouped", [(rid, "launched together, no shared range: " + "; ".join(ps[:3])
                                               + (f"; {len(ps) - 3} more" if len(ps) > 3 else ""))
                                              for rid, ps in sorted(found.items())])
+
+
+def test_release_editions_review(ratchet, db):
+    """Releases that read as colours or editions of one kit by name and item number but did not come to market
+    together (dates more than 90 days apart, or a year only) and share no range: decide "same range" (give both
+    the range) or "separate releases" (list the pair in data/confirmed-distinct.toml [[release_pair]] with the
+    reason). Reported, not blocking: the linker never decides these."""
+    found = collections.defaultdict(list)
+    for a, b, why, bucket in edition_pairs(db):
+        if bucket == "review" and not (a.get("range") and a.get("range") == b.get("range")):
+            found[a["id"]].append(b["id"])
+            found[b["id"]].append(a["id"])
+    ratchet("release-editions-review", [(rid, "same range or separate releases? " + ", ".join(ps[:3])
+                                         + (f" and {len(ps) - 3} more" if len(ps) > 3 else ""))
+                                        for rid, ps in sorted(found.items())], blocking=False)
