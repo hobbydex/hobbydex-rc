@@ -304,5 +304,29 @@ class EditionsNotGrouped(unittest.TestCase):
                          "review")
 
 
+
+class FitsScale(unittest.TestCase):
+    """fits-scale-contradicts-kit: the scale a listing states for the car of a fits row."""
+
+    def test_listed_scales(self):
+        self.assertEqual(rules.listed_scales("RPM Front A-arm Set For 1:16 Slash"), {"1/16"})
+        self.assertEqual(rules.listed_scales("Rockslide 1/8th"), {"1/8"})
+        self.assertEqual(rules.listed_scales('1/8" bearing, 1/8 in shaft, 5/16 nut'), set())
+
+    def test_every_item_must_state_another_scale(self):
+        self.assertTrue(rules.item_scales_contradict("1/18 Ruckus 4WD", "1/10"))
+        self.assertFalse(rules.item_scales_contradict("1/10 Ruckus 4WD", "1/10"))
+        self.assertFalse(rules.item_scales_contradict("1/18 4WD Temper, 1.9 Barrage Kit/RTR", "1/12"))   # Barrage: no scale
+        self.assertFalse(rules.item_scales_contradict("Ruckus 4WD", "1/10"))
+        self.assertFalse(rules.item_scales_contradict("1/18 Ruckus 4WD", ""))
+
+    def test_a_scale_before_the_name_of_a_kit_with_none(self):
+        self.assertEqual(rules.scaled_name_scales("1/16 Mini Slash", "Mini Slash", "Traxxas"), {"1/16"})
+        self.assertEqual(rules.scaled_name_scales("For 1:16 scale Traxxas Mini Slash", "Mini Slash", "Traxxas"), {"1/16"})
+        self.assertEqual(rules.scaled_name_scales("Mini Slash 4X4", "Mini Slash", "Traxxas"), set())
+        self.assertEqual(rules.scaled_name_scales("1/16 Mini Slash", "Slash", "Traxxas"), set())   # "Mini" is not the brand
+        self.assertEqual(rules.kit_words("1/16 Slash 4X4"), {"slash"})
+        self.assertLessEqual(rules.kit_words("1/16 Slash 4X4"), rules.kit_words("Mini Slash"))
+
 if __name__ == "__main__":
     unittest.main()
