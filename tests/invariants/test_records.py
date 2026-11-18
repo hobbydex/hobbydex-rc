@@ -1,4 +1,8 @@
 """Fields a record may not leave empty (NOT NULL), and the known gaps that may only shrink."""
+import json
+
+from rules import BANNED_HOSTS, LOCAL_PATH, SCRAP_IMG, TAMICO_OWNER_DOCS, walk_strings
+
 
 
 def test_part_has_category(hard):
@@ -73,3 +77,39 @@ def test_reference_lists_resolve(hard):
     hard("""SELECT v.owner AS record, v.field || ' -> ' || v.value || ' does not exist' AS problem
         FROM list_values v LEFT JOIN records t ON t.id = v.value
         WHERE v.field IN ('documents', 'releases', 'kits', 'parts') AND t.id IS NULL""")
+
+
+def test_banned_host(hard, db):
+    """No record links House of RC or Tamico, or an rcscrapyard image address. A tamico.de dealer link is allowed for
+    a Tamiya spare with no maker page, and Xtra Speed's Tamico listing documents keep their address (no maker page)."""
+    rows = []
+    for rid, path, data in db.execute("""SELECT id, path, data FROM records
+            WHERE data LIKE '%houseofrc%' OR data LIKE '%tamico%' OR data LIKE '%rcscrapyard%'"""):
+        d = json.loads(data)
+        links = [l for l in d.get("links", []) if not (isinstance(l, dict) and set(l) == {"site", "url", "kind"}
+                                                        and l["site"] == "tamico.de" and l["kind"] == "dealer")]
+        text = "\n".join(walk_strings({**d, "links": links} if isinstance(d.get("links"), list) else d))
+        if BANNED_HOSTS.search(text) and not path.startswith(TAMICO_OWNER_DOCS):
+            rows.append((rid or path, "links " + BANNED_HOSTS.search(text).group(0)))
+        if SCRAP_IMG.search(text):
+            rows.append((rid or path, "links the image " + SCRAP_IMG.search(text).group(0)))
+    hard(rows, name="banned-host")
+
+
+def test_tamico_doc_reference(ratchet):
+    """A record cites the maker's own listing, not the Tamico dealer catalogue (doc/tamiya/tamico-dealer-parts)."""
+    ratchet("tamico-doc-reference", """SELECT coalesce(id, path) AS record, 'cites the Tamico dealer catalogue' AS problem
+        FROM records WHERE instr(data, 'doc/tamiya/tamico-dealer-parts') > 0
+          AND path != 'data/documents/tamiya/tamico-dealer-parts.toml'""")
+
+
+def test_local_path(ratchet, db):
+    """No local path (/home/, /tmp/, file://, C:\\, work/manuals/, cache/) in a record: the source's URL instead."""
+    rows = []
+    for rid, path, data in db.execute(r"""SELECT id, path, data FROM records WHERE data LIKE '%/home/%' OR data LIKE '%/Users/%'
+            OR data LIKE '%/tmp/%' OR data LIKE '%file://%' OR data LIKE '%:\%' OR data LIKE '%work/manuals/%'
+            OR data LIKE '%cache/%'"""):
+        hit = next((s for s in walk_strings(json.loads(data)) if LOCAL_PATH.search(s)), None)
+        if hit:
+            rows.append((rid or path, "local path in " + repr(hit[:80])))
+    ratchet("local-path", rows)

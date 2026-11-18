@@ -1,13 +1,13 @@
-"""Cases for audit.spec_mismatches: a spec link whose family the part's category or name does not carry.
+"""Cases for rules.spec_mismatches: a spec link whose family the part's category or name does not carry.
 
-    python3 -I -m pytest tools/test_spec_mismatch.py
-    python3 -I tools/test_spec_mismatch.py
+    python3 -I -m pytest tools/test_invariant_spec_mismatch.py
+    python3 -I tools/test_invariant_spec_mismatch.py
 """
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import audit  # noqa: E402
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tests", "invariants"))
+import rules  # noqa: E402
 
 
 def part(name, category, **fields):
@@ -16,17 +16,17 @@ def part(name, category, **fields):
 
 def test_bearing_include_on_a_clip_is_flagged():
     p = part("E-Clip 4mm", "clip", includes=[dict(spec="spec/bearing/8x16x5", notes="Size from the name")])
-    assert [m[2] for m in audit.spec_mismatches([p])] == ["spec/bearing/8x16x5"]
+    assert [m[2] for m in rules.spec_mismatches([p])] == ["spec/bearing/8x16x5"]
 
 
 def test_bearing_include_on_a_ball_end_is_flagged():
     p = part("Ball Stud. φ5.8", "ball-end", includes=[dict(spec="spec/bearing/6x10x3")])
-    assert len(audit.spec_mismatches([p])) == 1
+    assert len(rules.spec_mismatches([p])) == 1
 
 
 def test_motor_include_on_a_decal_is_flagged():
     p = part("MOTOR W/DECAL SET", "decal", includes=[dict(spec="spec/motor/brushed-540-3.175mm")])
-    assert len(audit.spec_mismatches([p])) == 1
+    assert len(rules.spec_mismatches([p])) == 1
 
 
 def test_accessories_are_fine():
@@ -38,22 +38,22 @@ def test_accessories_are_fine():
         part("Screw", "screw", includes=[dict(spec="spec/washer/3x6x0.5")]),
         part("Brass pipe & screw", "washer-shim", includes=[dict(spec="spec/screw/m3x15-pan-jis")]),
     ]
-    assert audit.spec_mismatches(parts) == []
+    assert rules.spec_mismatches(parts) == []
 
 
 def test_sourced_include_is_checked_by_category_only():
     p = part("Reinforced set", "shock", includes=[dict(spec="spec/bearing/4x10x4", source="doc/x/list")])
-    assert audit.spec_mismatches([p]) == []
+    assert rules.spec_mismatches([p]) == []
 
 
 def test_equivalent_bearing_on_a_clip_is_flagged():
     p = part("E-Clip 4mm", "clip", equivalent_to=[dict(spec="spec/bearing/8x16x5", match="functional")])
-    assert len(audit.spec_mismatches([p])) == 1
+    assert len(rules.spec_mismatches([p])) == 1
 
 
 def test_equivalent_motor_on_a_rebuild_kit_is_flagged():
     p = part("Rebuild kit, Velineon 380 (4x9x4mm ball bearings)", "motor", equivalent_to=[dict(spec="spec/motor/brushed-380-2.3mm", match="functional")])
-    assert len(audit.spec_mismatches([p])) == 1
+    assert len(rules.spec_mismatches([p])) == 1
 
 
 def test_equivalent_on_the_right_kind_stays():
@@ -63,7 +63,7 @@ def test_equivalent_on_the_right_kind_stays():
         part("Motor 540 kit", "motor", equivalent_to=[dict(spec="spec/motor/brushed-540-3.175mm", match="functional")]),
         part("XT60 plug", "wire", equivalent_to=[dict(spec="spec/connector/xt60", match="functional")]),
     ]
-    assert audit.spec_mismatches(parts) == []
+    assert rules.spec_mismatches(parts) == []
 
 
 if __name__ == "__main__":
@@ -75,6 +75,6 @@ if __name__ == "__main__":
 
 def test_include_the_name_names_is_not_flagged():
     p = part("Tracer Metal Front Cva Shafts, Pins & M4 Nuts", "pin", includes=[dict(spec="spec/nut/m4-hex", notes="Size from the name")])
-    assert audit.spec_mismatches([p]) == []
+    assert rules.spec_mismatches([p]) == []
     p = part("Tracer Metal Front Cva Shafts & Pins", "pin", includes=[dict(spec="spec/nut/m4-hex", notes="Size from the name")])
-    assert len(audit.spec_mismatches([p])) == 1
+    assert len(rules.spec_mismatches([p])) == 1
