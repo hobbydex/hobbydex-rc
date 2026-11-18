@@ -2,8 +2,13 @@ id = "part/team-associated/25539"
 brand = "brand/team-associated"
 number = "25539"
 name = "Differential Drive Output Cups"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127222233/http://teamassociated.com/parts/details/25539/"
 gtin = "784695255395"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/differential-drive-output-cups/" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

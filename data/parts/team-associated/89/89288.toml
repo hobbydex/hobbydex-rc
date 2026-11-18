@@ -2,8 +2,18 @@ id = "part/team-associated/89288"
 brand = "brand/team-associated"
 number = "89288"
 name = "16x29 mm Molded Shock Kit"
+seen_by = "2010-12-18"
+seen_by_source = "https://web.archive.org/web/20101218042931/http://teamassociated.com/parts/details/89288/"
 gtin = "784695892880"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/16x29-mm-molded-shock-kit/" },
 ]
 category = "shock"
+shock_part = "complete"
+bore_mm = 16
+length_mm = 29
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80901-25"], type = "replaces", source = "doc/team-associated/cat-rc8e", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25"], type = "replaces", source = "doc/team-associated/cat-rc8te", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80932", "release/team-associated/80933"], type = "replaces", source = "doc/team-associated/sc8-2e-rtr-manual-and-catalog-6-8-2012", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

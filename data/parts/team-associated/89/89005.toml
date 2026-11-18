@@ -2,8 +2,16 @@ id = "part/team-associated/89005"
 brand = "brand/team-associated"
 number = "89005"
 name = "Antenna Mount Set, aluminum"
+seen_by = "2010-12-18"
+seen_by_source = "https://web.archive.org/web/20101218221300/http://teamassociated.com/pictures/products/89005/89005_sm.jpg"
 gtin = "784695890053"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/antenna-mount-set-aluminum/" },
 ]
 category = "body-accessory"
+material = "aluminium"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80901-25", "release/team-associated/80905", "release/team-associated/80906", "release/team-associated/80907", "release/team-associated/80908", "release/team-associated/80908C", "release/team-associated/80909"], type = "direct", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "direct", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80933"], type = "direct", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

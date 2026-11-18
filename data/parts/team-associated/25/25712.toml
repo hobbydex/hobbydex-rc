@@ -2,8 +2,13 @@ id = "part/team-associated/25712"
 brand = "brand/team-associated"
 number = "25712"
 name = "MGT 8.0 Decal Sheet"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125214701/http://teamassociated.com/parts/details/25712/"
 gtin = "784695257122"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/mgt-8-0-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "direct", source = "doc/team-associated/mgt8-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

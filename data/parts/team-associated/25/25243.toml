@@ -2,8 +2,13 @@ id = "part/team-associated/25243"
 brand = "brand/team-associated"
 number = "25243"
 name = "E-Clips, 5 mm"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125193510/http://teamassociated.com/parts/details/25243/"
 gtin = "784695252431"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/e-clips-5-mm/" },
 ]
 category = "clip"
+equivalent_to = [
+  { spec = "spec/eclip/5mm", match = "functional", notes = "Shaft size from the name" },
+]

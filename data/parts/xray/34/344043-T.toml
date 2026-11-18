@@ -9,3 +9,8 @@ links = [
 ]
 category = "drivetrain"
 documents = ["doc/xray/344043-T-product-page"]
+material = "titanium"
+fits = [
+  { kit = "kit/xray/rx8", releases = ["release/xray/rx8-2026"], type = "replaces", source = "doc/xray/rx8-2026-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/xray/rx8", type = "replaces", replaces = "part/xray/344043", source = "doc/xray/rx8-2026-manual", notes = "Same part in another material (link_upgrades.py)" },
+]

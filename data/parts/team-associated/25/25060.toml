@@ -7,3 +7,7 @@ links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/mgt-shock-body-and-cap/" },
 ]
 category = "shock"
+shock_part = "body"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,8 +2,14 @@ id = "part/team-associated/91135"
 brand = "brand/team-associated"
 number = "91135"
 name = "FT Front CVA Bones, shiny"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127170129/http://teamassociated.com/factoryteam/parts/details/91135/"
 gtin = "784695911352"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-front-cva-bones-shiny/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc18t", releases = ["release/team-associated/20103"], type = "replaces", source = "doc/team-associated/cat-rc18t2-b2team", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90004", "release/team-associated/90008", "release/team-associated/90010"], type = "replaces", source = "doc/team-associated/cat-sc104x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

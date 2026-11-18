@@ -2,8 +2,14 @@ id = "part/team-associated/25170"
 brand = "brand/team-associated"
 number = "25170"
 name = "Monster GT Tires & Foam Inserts"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127045048/http://teamassociated.com/parts/details/25170/"
 gtin = "784695251700"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/monster-gt-tires-foam-inserts/" },
 ]
 category = "tire"
+mounting = "unmounted"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt4-60se-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

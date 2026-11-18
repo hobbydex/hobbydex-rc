@@ -2,8 +2,13 @@ id = "part/team-associated/91601"
 brand = "brand/team-associated"
 number = "91601"
 name = "RC10B5 FT Ti Screw Set"
+seen_by = "2015-03-17"
+seen_by_source = "https://web.archive.org/web/20150317044322/http://teamassociated.com/pictures/products/91601/91601_sm.jpg"
 gtin = "784695916012"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b5-ft-ti-screw-set/" },
 ]
 category = "screw"
+fits = [
+  { kit = "kit/team-associated/rc10b5", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

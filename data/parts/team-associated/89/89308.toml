@@ -2,9 +2,15 @@ id = "part/team-associated/89308"
 brand = "brand/team-associated"
 number = "89308"
 name = "RC8TCE FT Blue Aluminum Rear Tower"
+seen_by = "2019-08-23"
+seen_by_source = "https://web.archive.org/web/20190823044336/https://www.associatedelectrics.com/teamassociated/parts/details/89308-ASC89308-rc8tce_ft_blue_aluminum_rear_tower/"
 gtin = "784695893085"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8tce-ft-blue-aluminum-rear-tower/" },
 ]
 category = "chassis"
 color = "blue"
+material = "aluminium"
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80912"], type = "replaces", source = "doc/team-associated/rc8tce-manual-preflight", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

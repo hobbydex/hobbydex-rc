@@ -10,3 +10,6 @@ links = [
 category = "engine-fuel"
 category_source = "curated"
 documents = ["doc/xray/610001-product-page"]
+fits = [
+  { kit = "kit/xray/nt18", type = "replaces", source = "doc/xray/610001-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

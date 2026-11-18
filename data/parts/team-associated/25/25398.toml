@@ -2,8 +2,13 @@ id = "part/team-associated/25398"
 brand = "brand/team-associated"
 number = "25398"
 name = "FT Monster GT Optional Steering Hardware"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125163224/http://teamassociated.com/factoryteam/parts/details/25398/"
 gtin = "784695253988"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-monster-gt-optional-steering-hardware/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

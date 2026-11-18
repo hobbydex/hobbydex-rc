@@ -2,8 +2,13 @@ id = "part/team-associated/81305"
 brand = "brand/team-associated"
 number = "81305"
 name = "RC8B3e Decal Sheet"
+seen_by = "2015-09-05"
+seen_by_source = "https://web.archive.org/web/20150905140820/http://www.teamassociated.com/pictures/news/articles/1639/supporting_photos/81305.ps_sm.jpg"
 gtin = "784695813052"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b3e-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rc8b3", releases = ["release/team-associated/80916", "release/team-associated/80936"], type = "direct", source = "doc/team-associated/manual-80916-rc8b3e", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

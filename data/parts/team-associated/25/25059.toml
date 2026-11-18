@@ -2,6 +2,8 @@ id = "part/team-associated/25059"
 brand = "brand/team-associated"
 number = "25059"
 name = "Assembled Shocks, qty 2"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125172652/http://teamassociated.com/parts/details/25059/"
 pack_qty = 2
 pack_qty_basis = "name"
 gtin = "784695250598"
@@ -9,3 +11,7 @@ links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/assembled-shocks-qty-2/" },
 ]
 category = "shock"
+shock_part = "complete"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

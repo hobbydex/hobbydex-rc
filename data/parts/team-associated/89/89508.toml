@@ -2,8 +2,13 @@ id = "part/team-associated/89508"
 brand = "brand/team-associated"
 number = "89508"
 name = "RC8.2e FT Decal Sheet"
+seen_by = "2012-11-06"
+seen_by_source = "https://web.archive.org/web/20121106053654/http://teamassociated.com/parts/details/89508/"
 gtin = "784695895089"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8-2e-ft-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

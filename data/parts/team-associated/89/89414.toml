@@ -2,8 +2,14 @@ id = "part/team-associated/89414"
 brand = "brand/team-associated"
 number = "89414"
 name = "SC8 Slick Mist Body"
+seen_by = "2012-11-06"
+seen_by_source = "https://web.archive.org/web/20121106213454/http://teamassociated.com/pictures/products/89414/89414_sm.jpg"
 gtin = "784695894143"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc8-slick-mist-body/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/sc8", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/8"

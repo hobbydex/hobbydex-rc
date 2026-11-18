@@ -2,8 +2,13 @@ id = "part/team-associated/25576"
 brand = "brand/team-associated"
 number = "25576"
 name = "Shock Tower"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127210402/http://teamassociated.com/pictures/products/25576/25576_lg.jpg"
 gtin = "784695255760"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/shock-tower/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/drawing-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

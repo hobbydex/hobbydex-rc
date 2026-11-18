@@ -2,9 +2,15 @@ id = "part/team-associated/89379"
 brand = "brand/team-associated"
 number = "89379"
 name = "FT RC8T Blue Aluminum Chassis Brace, rear"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129083221/http://teamassociated.com/pictures/products/89379/89379_sm.jpg"
 gtin = "784695893795"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-rc8t-blue-aluminum-chassis-brace-rear/" },
 ]
 category = "chassis"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/rc8t", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"

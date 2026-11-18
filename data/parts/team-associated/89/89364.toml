@@ -2,8 +2,13 @@ id = "part/team-associated/89364"
 brand = "brand/team-associated"
 number = "89364"
 name = "Front CVA Set"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115171810/http://www.teamassociated.com:80/parts/details/89364/"
 gtin = "784695893641"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/front-cva-set/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

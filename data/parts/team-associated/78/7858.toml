@@ -2,9 +2,16 @@ id = "part/team-associated/7858"
 brand = "brand/team-associated"
 number = "7858"
 name = "RC10T4.3 RTR Body, blue"
+seen_by = "2025-08-29"
+seen_by_source = "https://web.archive.org/web/20250829110820/https://60years.associatedelectrics.com/rc10t4-3-rtr-body-blue/"
 gtin = "784695078581"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10t4-3-rtr-body-blue/" },
 ]
 category = "body"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/10"
+range = "team-associated/rc10t4-77d7-colours"

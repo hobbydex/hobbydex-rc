@@ -2,9 +2,15 @@ id = "part/team-associated/89397"
 brand = "brand/team-associated"
 number = "89397"
 name = "RC8T RTR Body Wrap, blue"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126142611/http://teamassociated.com/pictures/products/89397/89397_sm.jpg"
 gtin = "784695893979"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8t-rtr-body-wrap-blue/" },
 ]
 category = "body"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/rc8t", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/8"

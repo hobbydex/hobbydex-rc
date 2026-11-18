@@ -2,8 +2,14 @@ id = "part/team-associated/25339"
 brand = "brand/team-associated"
 number = "25339"
 name = "AE .21/4.60 Motor Starting Wheel Wire (cord)"
+seen_by = "2014-04-13"
+seen_by_source = "https://web.archive.org/web/20140413182335/http://teamassociated.com/pictures/products/25339/25339_md.jpg"
 gtin = "784695253391"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ae-21-4-60-motor-starting-wheel-wire-cord/" },
 ]
 category = "wheel"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503"], type = "replaces", source = "doc/team-associated/mgt4-60se-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t3", releases = ["release/team-associated/80917"], type = "replaces", source = "doc/team-associated/80917-rc8t3-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

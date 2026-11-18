@@ -2,8 +2,14 @@ id = "part/team-associated/71007"
 brand = "brand/team-associated"
 number = "71007"
 name = "Rear Tower (hard)"
+seen_by = "2015-03-16"
+seen_by_source = "https://web.archive.org/web/20150316222706/http://teamassociated.com/pictures/products/71007/71007_sm.jpg"
 gtin = "784695710078"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rear-tower-hard/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rc10sc5", releases = ["release/team-associated/70006"], type = "replaces", source = "doc/team-associated/manual-70006-rc10sc5m-tk", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10t5", releases = ["release/team-associated/70001"], type = "replaces", source = "doc/team-associated/manual-70001-rc10t5m", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

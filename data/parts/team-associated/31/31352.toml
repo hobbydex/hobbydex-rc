@@ -2,8 +2,13 @@ id = "part/team-associated/31352"
 brand = "brand/team-associated"
 number = "31352"
 name = "TC6 FT Ceramic Bearing Set"
+seen_by = "2011-10-29"
+seen_by_source = "https://web.archive.org/web/20111029144225/http://www.teamassociated.com:80/factoryteam/parts/details/31352/"
 gtin = "784695313521"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc6-ft-ceramic-bearing-set/" },
 ]
 category = "bearing"
+fits = [
+  { kit = "kit/team-associated/tc6", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

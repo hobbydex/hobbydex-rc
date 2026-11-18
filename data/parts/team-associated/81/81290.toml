@@ -2,8 +2,14 @@ id = "part/team-associated/81290"
 brand = "brand/team-associated"
 number = "81290"
 name = "FT Ti Screws, M4x20 mm FHCS"
+seen_by = "2015-09-12"
+seen_by_source = "https://web.archive.org/web/20150912063252/http://www.teamassociated.com/pictures/products/81290/81290_sm.jpg"
 gtin = "784695812901"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ti-screws-m4x20-mm-fhcs/" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m4x20-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"

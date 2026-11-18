@@ -2,8 +2,13 @@ id = "part/team-associated/89437"
 brand = "brand/team-associated"
 number = "89437"
 name = "SC8 Exhaust Deflector"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182503/http://www.teamassociated.com:80/parts/details/89437/"
 gtin = "784695894372"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc8-exhaust-deflector/" },
 ]
 category = "engine-fuel"
+fits = [
+  { kit = "kit/team-associated/sc8", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

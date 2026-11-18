@@ -15,3 +15,6 @@ fits = [
   { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "direct", source = "doc/xray/portal-1506" },
   { kit = "kit/xray/m18t", releases = ["release/xray/380500", "release/xray/380501"], type = "direct", source = "doc/xray/portal-1465" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x12-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

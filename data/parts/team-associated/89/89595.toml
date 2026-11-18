@@ -2,8 +2,17 @@ id = "part/team-associated/89595"
 brand = "brand/team-associated"
 number = "89595"
 name = "Steel Pinion Gear, 20T, Mod 1, 5 mm shaft"
+seen_by = "2013-01-19"
+seen_by_source = "https://web.archive.org/web/20130119133337/http://teamassociated.com/parts/details/89595/"
 gtin = "784695895959"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/steel-pinion-gear-20t-mod-1-5-mm-shaft/" },
 ]
 category = "pinion"
+teeth = 20
+module = 1
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-20t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

@@ -2,9 +2,16 @@ id = "part/team-associated/89542"
 brand = "brand/team-associated"
 number = "89542"
 name = "RC8.2 FT Front Springs, green, 4.0 lb/in"
+seen_by = "2011-11-28"
+seen_by_source = "https://web.archive.org/web/20111128101256/http://teamassociated.com/factoryteam/parts/details/89542/"
 gtin = "784695895423"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8-2-ft-front-springs-green-4-0-lb-in/" },
 ]
 category = "shock-spring"
 color = "green"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+rate_lb_in = 4
+range = "team-associated/rc-ft-springs-rate-springs"

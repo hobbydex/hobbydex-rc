@@ -2,9 +2,15 @@ id = "part/team-associated/25403"
 brand = "brand/team-associated"
 number = "25403"
 name = "FT Blue Monster GT Shock Bodies"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125194247/http://teamassociated.com/factoryteam/parts/details/25403/"
 gtin = "784695254039"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-blue-monster-gt-shock-bodies/" },
 ]
 category = "shock"
 color = "blue"
+shock_part = "body"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

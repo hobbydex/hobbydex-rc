@@ -2,9 +2,14 @@ id = "part/team-associated/89402"
 brand = "brand/team-associated"
 number = "89402"
 name = "KMC Wheels, black"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115171830/http://www.teamassociated.com:80/parts/details/89402/"
 gtin = "784695894020"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/kmc-wheels-black/" },
 ]
 category = "wheel"
 color = "black"
+fits = [
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80931", "release/team-associated/80931-25", "release/team-associated/80932", "release/team-associated/80933"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

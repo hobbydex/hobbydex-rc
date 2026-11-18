@@ -2,8 +2,13 @@ id = "part/team-associated/81358"
 brand = "brand/team-associated"
 number = "81358"
 name = "Complete Center Diff, V2, nitro"
+seen_by = "2019-08-20"
+seen_by_source = "https://web.archive.org/web/20190820011858/https://www.associatedelectrics.com/teamassociated/parts/details/81358-ASC81358-complete_center_diff_v2_nitro/"
 gtin = "784695813588"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/complete-center-diff-v2-nitro/" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/team-associated/rc8t3", releases = ["release/team-associated/80917"], type = "replaces", source = "doc/team-associated/80917-rc8t3-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

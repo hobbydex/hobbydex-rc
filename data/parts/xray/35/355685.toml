@@ -9,3 +9,7 @@ links = [
 ]
 category = "drivetrain"
 documents = ["doc/xray/355685-product-page"]
+material = "steel"
+fits = [
+  { kit = "kit/xray/xb8e", releases = ["release/xray/xb8e-2023"], type = "replaces", source = "doc/xray/xb8e-2023-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

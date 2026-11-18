@@ -2,8 +2,13 @@ id = "part/team-associated/89530"
 brand = "brand/team-associated"
 number = "89530"
 name = "RC8.2 FT Front Antiroll Bar Kit"
+seen_by = "2012-05-25"
+seen_by_source = "https://web.archive.org/web/20120525092800/http://www.teamassociated.com:80/parts/details/89530"
 gtin = "784695895300"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8-2-ft-front-antiroll-bar-kit/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/team-associated/rc8", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

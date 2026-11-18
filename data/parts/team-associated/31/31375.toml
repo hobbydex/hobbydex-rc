@@ -2,8 +2,18 @@ id = "part/team-associated/31375"
 brand = "brand/team-associated"
 number = "31375"
 name = "FT TiN 3.25 mm Ballstuds, long neck"
+seen_by = "2012-04-14"
+seen_by_source = "https://web.archive.org/web/20120414080109/http://teamassociated.com:80/parts/details/31375/"
 gtin = "784695313750"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-tin-3-25-mm-ballstuds-long-neck/" },
 ]
 category = "ball-end"
+equivalent_to = [
+  { spec = "spec/ball-end/3.25mm-stud", match = "functional" },
+]
+ball_type = "stud"
+fits = [
+  { kit = "kit/team-associated/rc10f6", releases = ["release/team-associated/8023", "release/team-associated/8024"], type = "direct", source = "doc/team-associated/rc10-f6-manual-9-29-26", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc12r6", releases = ["release/team-associated/4021"], type = "direct", source = "doc/team-associated/12r6-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

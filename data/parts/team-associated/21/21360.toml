@@ -2,8 +2,14 @@ id = "part/team-associated/21360"
 brand = "brand/team-associated"
 number = "21360"
 name = "SC18 BODY, PRO COMP"
+seen_by = "2011-03-07"
+seen_by_source = "https://web.archive.org/web/20110307034421/http://teamassociated.com:80/parts/details/21360/"
 gtin = "784695213609"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc18-body-pro-comp/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/sc18", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/18"

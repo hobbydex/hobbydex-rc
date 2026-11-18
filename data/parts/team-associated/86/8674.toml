@@ -2,9 +2,15 @@ id = "part/team-associated/8674"
 brand = "brand/team-associated"
 number = "8674"
 name = "RC10F6 Servo Mounts, blue aluminum"
+seen_by = "2025-09-10"
+seen_by_source = "https://web.archive.org/web/20250910113103/https://60years.associatedelectrics.com/rc10f6-servo-mounts-blue-aluminum/"
 gtin = "784695086746"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10f6-servo-mounts-blue-aluminum/" },
 ]
 category = "chassis"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/rc10f6", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"

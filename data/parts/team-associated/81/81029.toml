@@ -2,8 +2,14 @@ id = "part/team-associated/81029"
 brand = "brand/team-associated"
 number = "81029"
 name = "RC8B3 FT Carbon Rear Shock Tower"
+seen_by = "2023-05-28"
+seen_by_source = "https://web.archive.org/web/20230528164858/https://img2.associatedelectrics.com/pictures/news/articles/1777/supporting_photos/81029.ps_lg.jpg"
 gtin = "784695810297"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b3-ft-carbon-rear-shock-tower/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "carbon"

@@ -2,8 +2,15 @@ id = "part/team-associated/81355"
 brand = "brand/team-associated"
 number = "81355"
 name = "Spur Gear V2, 48T Mod 1P, composite"
+seen_by = "2022-02-04"
+seen_by_source = "https://web.archive.org/web/20220204150639/https://img2.associatedelectrics.com/pictures/products/81355/81355_md.jpg"
 gtin = "784695813557"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/spur-gear-v2-48t-mod-1p-composite/" },
 ]
 category = "spur-gear"
+teeth = 48
+material = "plastic"
+fits = [
+  { kit = "kit/team-associated/rc8t3", releases = ["release/team-associated/80918"], type = "replaces", source = "doc/team-associated/80918-rc8t3e-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

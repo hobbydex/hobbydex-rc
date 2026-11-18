@@ -2,8 +2,13 @@ id = "part/team-associated/31770"
 brand = "brand/team-associated"
 number = "31770"
 name = "TC7.1 Decal Sheet"
+seen_by = "2019-02-17"
+seen_by_source = "https://web.archive.org/web/20190217203035/https://www.teamassociated.com/pictures/products/31770/31770_sm.jpg"
 gtin = "784695317703"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc7-1-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/tc7", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

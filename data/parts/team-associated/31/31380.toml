@@ -2,8 +2,16 @@ id = "part/team-associated/31380"
 brand = "brand/team-associated"
 number = "31380"
 name = "FT Ceramic Ball Bearings, 5x10x3 mm"
+seen_by = "2014-07-08"
+seen_by_source = "https://web.archive.org/web/20140708195202/http://teamassociated.com/parts/details/31380/"
 gtin = "784695313804"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ceramic-ball-bearings-5x10x3-mm/" },
 ]
 category = "bearing"
+color = "silver"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"

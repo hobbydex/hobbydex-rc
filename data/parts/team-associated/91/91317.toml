@@ -2,8 +2,15 @@ id = "part/team-associated/91317"
 brand = "brand/team-associated"
 number = "91317"
 name = "FT 12 mm Shock Kit (SC10, T4, rear, - all versions)"
+seen_by = "2012-09-18"
+seen_by_source = "https://web.archive.org/web/20120918062751/http://www.teamassociated.com:80/parts/details/91317/"
 gtin = "784695913172"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-12-mm-shock-kit-sc10-t4-rear-all-versions/" },
 ]
 category = "shock"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/team-associated/sc10", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+shock_part = "complete"

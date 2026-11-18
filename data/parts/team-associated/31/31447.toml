@@ -2,8 +2,13 @@ id = "part/team-associated/31447"
 brand = "brand/team-associated"
 number = "31447"
 name = "APEX Decal Sheet"
+seen_by = "2012-12-28"
+seen_by_source = "https://web.archive.org/web/20121228135836/http://www.teamassociated.com:80/parts/details/31447/"
 gtin = "784695314474"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/apex-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/apex", releases = ["release/team-associated/30112", "release/team-associated/30113", "release/team-associated/30113C", "release/team-associated/30113D", "release/team-associated/30113DC", "release/team-associated/30114", "release/team-associated/30114C", "release/team-associated/30114D", "release/team-associated/30114DC", "release/team-associated/30116", "release/team-associated/30117", "release/team-associated/30118C"], type = "direct", source = "doc/team-associated/30113dc-apex-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

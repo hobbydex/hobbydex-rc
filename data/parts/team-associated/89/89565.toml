@@ -2,8 +2,13 @@ id = "part/team-associated/89565"
 brand = "brand/team-associated"
 number = "89565"
 name = "FT Vertical Caster Blocks, 16 deg"
+seen_by = "2012-07-15"
+seen_by_source = "https://web.archive.org/web/20120715021541/http://www.teamassociated.com:80/parts/details/89565"
 gtin = "784695895652"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-vertical-caster-blocks-16-deg/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80908", "release/team-associated/80908C", "release/team-associated/80909"], type = "replaces", source = "doc/team-associated/manual-rc8-2rsrtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

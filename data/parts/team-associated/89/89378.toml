@@ -2,8 +2,14 @@ id = "part/team-associated/89378"
 brand = "brand/team-associated"
 number = "89378"
 name = "FT RC8T Aluminum Chassis Brace, front"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129073643/http://teamassociated.com/pictures/products/89378/89378_sm.jpg"
 gtin = "784695893788"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-rc8t-aluminum-chassis-brace-front/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rc8t", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"

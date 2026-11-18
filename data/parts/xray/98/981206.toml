@@ -11,3 +11,6 @@ pack_qty = 10
 pack_qty_basis = "name"
 category = "pin"
 documents = ["doc/xray/981206-product-page"]
+equivalent_to = [
+  { spec = "spec/pin/2x6", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

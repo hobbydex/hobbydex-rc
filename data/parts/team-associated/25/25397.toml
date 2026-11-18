@@ -2,8 +2,13 @@ id = "part/team-associated/25397"
 brand = "brand/team-associated"
 number = "25397"
 name = "FT Monster GT Optional Steering Servo Saver"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125155757/http://teamassociated.com/factoryteam/parts/details/25397/"
 gtin = "784695253971"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-monster-gt-optional-steering-servo-saver/" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

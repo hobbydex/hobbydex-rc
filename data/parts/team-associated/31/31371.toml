@@ -2,8 +2,13 @@ id = "part/team-associated/31371"
 brand = "brand/team-associated"
 number = "31371"
 name = "TC6.1 Decal Sheet"
+seen_by = "2012-04-16"
+seen_by_source = "https://web.archive.org/web/20120416111848/http://www.teamassociated.com/pictures/products/31371/31371_md.jpg"
 gtin = "784695313712"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc6-1-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/tc6", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

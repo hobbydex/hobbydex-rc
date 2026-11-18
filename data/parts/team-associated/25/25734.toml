@@ -2,8 +2,13 @@ id = "part/team-associated/25734"
 brand = "brand/team-associated"
 number = "25734"
 name = "FT Clutch Bell, 23T"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125203715/http://teamassociated.com/parts/details/25734/"
 gtin = "784695257344"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-clutch-bell-23t/" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

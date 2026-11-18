@@ -2,9 +2,18 @@ id = "part/team-associated/89347"
 brand = "brand/team-associated"
 number = "89347"
 name = "16x38 mm Springs, black, 2.70 lb/in"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115171027/http://www.teamassociated.com:80/parts/details/89347/"
 gtin = "784695893474"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/16x38-mm-springs-black-2-70-lb-in/" },
 ]
 category = "shock-spring"
 color = "black"
+rate_lb_in = 2.7
+range = "team-associated/x-springs-rate-springs"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80901-25", "release/team-associated/80908", "release/team-associated/80908C", "release/team-associated/80909"], type = "replaces", source = "doc/team-associated/cat-rc8e", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80932", "release/team-associated/80933"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

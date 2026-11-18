@@ -2,9 +2,14 @@ id = "part/team-associated/80941R"
 brand = "brand/team-associated"
 number = "80941R"
 name = "Limited Edition Nomad DB8 RTR, refurbished"
+seen_by = "2020-08-08"
+seen_by_source = "https://web.archive.org/web/20200808181820/https://www.associatedelectrics.com/teamassociated/parts/details/80941R-ASC80941R-limited_edition_nomad_db8_rtr_refurbished/"
 gtin = "784695809413"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/limited-edition-nomad-db8-rtr-refurbished/" },
 ]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/team-associated/nomad-db8", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

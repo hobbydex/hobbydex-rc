@@ -2,8 +2,15 @@ id = "part/team-associated/89104"
 brand = "brand/team-associated"
 number = "89104"
 name = "Center CVA Input Cups"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129091747/http://teamassociated.com/pictures/products/89104/89104_sm.jpg"
 gtin = "784695891043"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/center-cva-input-cups/" },
 ]
 category = "drivetrain"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80901-25", "release/team-associated/80905"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911", "release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc8", releases = ["release/team-associated/80925", "release/team-associated/80931", "release/team-associated/80931-25", "release/team-associated/80932"], type = "replaces", source = "doc/team-associated/cat-sc8rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

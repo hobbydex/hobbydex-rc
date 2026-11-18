@@ -2,8 +2,17 @@ id = "part/team-associated/89516"
 brand = "brand/team-associated"
 number = "89516"
 name = "Steel Pinion Gear, 16T, Mod 1, 5 mm shaft"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129091722/http://teamassociated.com/pictures/products/89516/89516_sm.jpg"
 gtin = "784695895164"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/steel-pinion-gear-16t-mod-1-5-mm-shaft/" },
 ]
 category = "pinion"
+teeth = 16
+module = 1
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/mod1-16t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

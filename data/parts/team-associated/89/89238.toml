@@ -2,9 +2,15 @@ id = "part/team-associated/89238"
 brand = "brand/team-associated"
 number = "89238"
 name = "FT Blue Aluminum Chassis Brace, front"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126235148/http://teamassociated.com/pictures/products/89238/89238_md.jpg"
 gtin = "784695892385"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-blue-aluminum-chassis-brace-front/" },
 ]
 category = "chassis"
 color = "blue"
+material = "aluminium"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80900", "release/team-associated/80905", "release/team-associated/80906", "release/team-associated/80907", "release/team-associated/80908", "release/team-associated/80908C", "release/team-associated/80909"], type = "replaces", source = "doc/team-associated/cat-rc8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

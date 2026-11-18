@@ -2,8 +2,17 @@ id = "part/team-associated/89338"
 brand = "brand/team-associated"
 number = "89338"
 name = "FT 16x32 mm Front Shock Kit"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126144301/http://teamassociated.com/factoryteam/parts/details/89338/"
 gtin = "784695893382"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-16x32-mm-front-shock-kit/" },
 ]
 category = "shock"
+shock_part = "complete"
+bore_mm = 16
+length_mm = 32
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80901-25"], type = "replaces", source = "doc/team-associated/cat-rc8e", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

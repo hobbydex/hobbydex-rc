@@ -14,3 +14,6 @@ documents = ["doc/xray/981316-product-page"]
 fits = [
   { kit = "kit/xray/nt18", releases = ["release/xray/380200"], type = "direct", source = "doc/xray/portal-1657" },
 ]
+equivalent_to = [
+  { spec = "spec/pin/3x16", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]

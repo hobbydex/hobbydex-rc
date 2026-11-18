@@ -2,9 +2,15 @@ id = "part/team-associated/91172"
 brand = "brand/team-associated"
 number = "91172"
 name = "FT SC10 4x4 Lightweight Blue Aluminum Screw Set"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127165350/http://teamassociated.com/factoryteam/parts/details/91172/"
 gtin = "784695911727"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-sc10-4x4-lightweight-blue-aluminum-screw-set/" },
 ]
 category = "screw"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "aluminium"

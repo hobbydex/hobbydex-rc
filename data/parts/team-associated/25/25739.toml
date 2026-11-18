@@ -2,9 +2,14 @@ id = "part/team-associated/25739"
 brand = "brand/team-associated"
 number = "25739"
 name = "RIVAL-MT Tranny Case"
+seen_by = "2013-03-25"
+seen_by_source = "https://web.archive.org/web/20130325081203/http://www.teamassociated.com:80/parts/details/25739"
 gtin = "784695257399"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-tranny-case/" },
 ]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

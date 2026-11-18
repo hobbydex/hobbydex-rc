@@ -2,8 +2,13 @@ id = "part/team-associated/25699"
 brand = "brand/team-associated"
 number = "25699"
 name = "Spur Gear Mount"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125213336/http://teamassociated.com/parts/details/25699/"
 gtin = "784695256996"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/spur-gear-mount/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20504"], type = "replaces", source = "doc/team-associated/mgt8-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

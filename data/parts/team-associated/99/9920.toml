@@ -2,8 +2,13 @@ id = "part/team-associated/9920"
 brand = "brand/team-associated"
 number = "9920"
 name = "SC10.2 FT Decal Sheet"
+seen_by = "2025-06-24"
+seen_by_source = "https://web.archive.org/web/20250624044210/https://60years.associatedelectrics.com/sc10-2-ft-decal-sheet/"
 gtin = "784695099203"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc10-2-ft-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/sc10", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

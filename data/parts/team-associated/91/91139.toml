@@ -2,8 +2,13 @@ id = "part/team-associated/91139"
 brand = "brand/team-associated"
 number = "91139"
 name = "FT Ti Shock Mounts"
+seen_by = "2011-11-01"
+seen_by_source = "https://web.archive.org/web/20111101165510/http://www.teamassociated.com:80/factoryteam/parts/details/91139/"
 gtin = "784695911390"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ti-shock-mounts/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90004", "release/team-associated/90008", "release/team-associated/90010"], type = "replaces", source = "doc/team-associated/cat-sc104x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

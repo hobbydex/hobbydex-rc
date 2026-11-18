@@ -2,8 +2,14 @@ id = "part/team-associated/31091"
 brand = "brand/team-associated"
 number = "31091"
 name = "FT TC4 Carbon Fiber Top Deck, 2.5 mm"
+seen_by = "2008-05-17"
+seen_by_source = "https://web.archive.org/web/20080517111727/http://www.teamassociated.com:80/enlarge/31091.htm"
 gtin = "784695310919"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-tc4-carbon-fiber-top-deck-2-5-mm/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/tc4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "carbon"
