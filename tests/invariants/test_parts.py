@@ -24,10 +24,13 @@ def test_bearing_rebuild_kit(ratchet):
 
 
 def test_part_category_fallback(ratchet):
-    """Parts with the fallback category (misc, category_source fallback): no classifier rule or maker source places
-    them yet. Reported, not blocking: importers still add parts no rule places (partial records are kept)."""
-    ratchet("part-category-fallback", """SELECT id AS record, 'category_source fallback' AS problem FROM records
-        WHERE kind = 'part' AND json_extract(data, '$.category_source') = 'fallback'""", blocking=False)
+    """Parts with no category: the fallback (misc with category_source fallback) that no classifier rule or maker
+    source places. Misc itself is a category and never counts (owner 2026-11-18). Blocking: a change that adds
+    fallback parts fails; extend the classifier rules (hobbydex-tools tools/data/classify_parts.toml) for the names
+    listed, never write a guessed category."""
+    ratchet("part-category-fallback", """SELECT id AS record,
+          'no category (fallback): ' || coalesce(json_extract(data, '$.name'), '(no name)') AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.category_source') = 'fallback'""")
 
 
 def test_part_named_by_number(ratchet):

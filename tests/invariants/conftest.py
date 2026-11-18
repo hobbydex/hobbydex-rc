@@ -10,7 +10,7 @@ lower counts of this run into baseline.toml; never raises one), --audit-json FIL
 in the daily audit's format, by name: the PC audit publishes them beside its cache checks). Budget: the whole run is meant to take about a minute;
 over WARN_S it says so, over FAIL_S the run fails (a slow new invariant must not creep in).
 """
-import fcntl, glob, json, os, shutil, sys, tempfile, time, tomllib, warnings
+import fcntl, functools, glob, json, os, shutil, subprocess, sys, tempfile, time, tomllib, warnings
 
 import pytest
 
@@ -173,6 +173,33 @@ def _listing(rows, limit):
     return "\n".join(lines)
 
 
+@functools.cache
+def changed_paths():
+    """The data files this change touches, from git: the working tree against the base of the change (INVARIANTS_BASE;
+    else the first parent of a pull request's merge commit; else the merge base with origin/main). None when git cannot
+    tell (no history, no origin/main)."""
+    def git(*a):
+        r = subprocess.run(["git", "-C", snapshot.RC, *a], capture_output=True, text=True)
+        return r.stdout.strip() if r.returncode == 0 else None
+    base = os.environ.get("INVARIANTS_BASE")
+    if not base and git("rev-parse", "-q", "--verify", "HEAD^2"):
+        base = "HEAD^1"
+    base = base or git("merge-base", "HEAD", "origin/main")
+    out = git("diff", "--name-only", "--no-renames", base, "--", "data/") if base else None
+    return None if out is None else frozenset(out.splitlines())
+
+
+def _changed_first(db, rows):
+    """(rows of records in the files this change touches, the other rows); ([], rows) when git cannot tell."""
+    paths = changed_paths()
+    if not paths:
+        return [], rows
+    ids = {str(r) for r, _ in rows}
+    touched = {i for (i, p) in db.execute("SELECT id, path FROM records WHERE path IN (SELECT value FROM json_each(?))",
+                                            (json.dumps(sorted(paths)),)) if i in ids}
+    return [r for r in rows if str(r[0]) in touched], [r for r in rows if str(r[0]) not in touched]
+
+
 @pytest.fixture
 def hard(db, limit, request):
     """hard(sql, name=None): fail with the offending records when the query returns any row. The name is the
@@ -200,8 +227,11 @@ def ratchet(db, limit, request):
         if len(rows) > base and not blocking:
             warnings.warn(f"{name}: {len(rows)} offending, over the baseline {base} (reported, not blocking)")
         elif len(rows) > base:
+            mine, rest = _changed_first(db, rows)
+            head = (f"{len(mine)} in the files this change touches (all listed):\n{_listing(mine, 0)}\nthe others:\n"
+                    if mine else "")
             pytest.fail(f"{name}: {len(rows)} offending, the baseline allows {base} (a change may only lower it): "
-                        f"{doc}\n{_listing(rows, limit)}", pytrace=False)
+                        f"{doc}\n{head}{_listing(rest, limit)}", pytrace=False)
         if len(rows) < base:
             print(f"{name}: {len(rows)} now, baseline {base}: lower the baseline (--update-baselines)")
             if request.config.getoption("--update-baselines"):

@@ -6,16 +6,10 @@ from rules import BANNED_HOSTS, LOCAL_PATH, SCRAP_IMG, TAMICO_OWNER_DOCS, walk_s
 
 
 def test_part_has_category(hard):
-    """Every part has a category."""
+    """Every part has a category (misc is one; a part no rule places has the fallback, counted by
+    part-category-fallback)."""
     hard("""SELECT id AS record, 'no category' AS problem FROM records
-        WHERE kind = 'part' AND json_extract(data, '$.category') IS NULL""")
-
-
-def test_part_misc(ratchet):
-    """Parts in category misc: no source has stated what they are yet. The count is reported, not blocking: importers
-    still add parts no source categorises (partial records are kept, docs/schema.md "part")."""
-    ratchet("part-misc", """SELECT id AS record, 'category misc' AS problem FROM records
-        WHERE kind = 'part' AND json_extract(data, '$.category') = 'misc'""", blocking=False)
+        WHERE kind = 'part' AND coalesce(trim(json_extract(data, '$.category')), '') = ''""")
 
 
 def test_part_has_number(hard):
