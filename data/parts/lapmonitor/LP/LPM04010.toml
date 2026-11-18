@@ -10,3 +10,7 @@ notes = "Holder to install your transponder on your Tekno EB48 2.0 Buggy and Tru
 links = [
   { site = "LapMonitor (own shop)", url = "https://lapmonitor.com/store/en/transponder-mount/75-transponder-mount-for-tekno-eb48-20-buggy-and-truggy.html" },
 ]
+fits = [
+  { kit = "kit/tekno/eb48", releases = ["release/tekno/eb48-2-0"], type = "replaces", source = "doc/lapmonitor/store", notes = "The product title names the EB48 2.0 ET48 2.0 Tekno Buggy" },
+  { kit = "kit/tekno/et48", type = "replaces", source = "doc/lapmonitor/store", notes = "The product title names the EB48 2.0 ET48 2.0 Tekno Buggy" },
+]
