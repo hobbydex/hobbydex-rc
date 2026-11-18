@@ -9,3 +9,7 @@ applies_to = "EB410 ET410"
 gtin = "815076019715"
 category = "chassis"
 material = "carbon"
+fits = [
+  { kit = "kit/tekno/eb410", type = "replaces", source = "doc/tekno/store", notes = "The title or fit list names the EB410 and ET410" },
+  { kit = "kit/tekno/et410", type = "replaces", source = "doc/tekno/store", notes = "The title or fit list names the EB410 and ET410" },
+]
