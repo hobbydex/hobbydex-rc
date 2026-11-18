@@ -1,7 +1,7 @@
 """Releases: names, dates and categories (the data-only checks of the daily audit, under their audit names)."""
 import collections, json, os, re, tomllib
 
-from rules import HW, complete_diff, is_body_set_doc, is_service_pack, norm_name, number_relation, same_product_record
+from rules import HW, complete_diff, edition_pair, market_bucket, is_body_set_doc, is_service_pack, norm_name, number_relation, same_product_record
 from snapshot import RC
 
 
@@ -232,3 +232,46 @@ def test_release_suffix_twin(hard, db):
                         and frozenset((a["id"], b["id"])) not in reviewed):
                     rows += [(a["id"], f"one product with {b['id']}"), (b["id"], f"one product with {a['id']}")]
     hard(rows, name="release-suffix-twin")
+
+
+def edition_pairs(db):
+    """(a, b, why, bucket) of every pair of releases of one brand, kit, kind and scale that read as editions of one
+    range by name and item number (rules.edition_pair), with how they came to market (rules.market_bucket)."""
+    groups = collections.defaultdict(list)
+    for rid, d in db.execute("""SELECT id, json_object('name', json_extract(data, '$.name'),
+            'number', json_extract(data, '$.number'), 'range', json_extract(data, '$.range'),
+            'depicts', json_extract(data, '$.depicts'), 'year', json_extract(data, '$.year'),
+            'released', json_extract(data, '$.released'), 'announced', json_extract(data, '$.announced'),
+            'seen_by', json_extract(data, '$.seen_by'), 'supersedes', json_extract(data, '$.supersedes'),
+            'related', json_extract(data, '$.related'), 'key', json_array(json_extract(data, '$.brand'),
+              json_extract(data, '$.kit'), json_extract(data, '$.kind'), coalesce(json_extract(data, '$.scale'), '')))
+            FROM records WHERE kind = 'release' AND truthy(json_extract(data, '$.kit'))
+              AND truthy(json_extract(data, '$.number')) AND json_type(data, '$.name') = 'text'"""):
+        d = json.loads(d)
+        d["id"] = rid
+        for f in ("depicts", "related"):
+            if isinstance(d.get(f), str):
+                d[f] = json.loads(d[f])
+        groups[tuple(d.pop("key"))].append(d)
+    for g in groups.values():
+        for i, a in enumerate(g):
+            for b in g[i + 1:]:
+                why = edition_pair(a, b)
+                if why:
+                    yield a, b, why, market_bucket(a, b)
+
+
+def test_release_editions_not_grouped(ratchet, db):
+    """Colour, livery and named editions of one kit that came to market together share a `range`: releases of one
+    brand, kit, kind and scale whose names differ only in a colour clause, an "<X> Edition" or a race-number livery,
+    with close item numbers and dates (month precision) at most 90 days apart. Run hobbydex-tools
+    link_release_ranges.py for the brand, or give the pair one range. Re-releases (a reissue word, a rerelease-of or
+    supersedes link) never count; pairs far apart in time are a person's call, not this check's."""
+    found = collections.defaultdict(list)
+    for a, b, why, bucket in edition_pairs(db):
+        if bucket == "together" and not (a.get("range") and a.get("range") == b.get("range")):
+            found[a["id"]].append(f"{why[0]} {why[1]!r} of {b['id']} ({why[2]!r})")
+            found[b["id"]].append(f"{why[0]} {why[2]!r} of {a['id']} ({why[1]!r})")
+    ratchet("release-editions-not-grouped", [(rid, "launched together, no shared range: " + "; ".join(ps[:3])
+                                              + (f"; {len(ps) - 3} more" if len(ps) > 3 else ""))
+                                             for rid, ps in sorted(found.items())])

@@ -226,5 +226,83 @@ class TwinParts(unittest.TestCase):
         self.assertEqual(len(rules.twin_pairs(same + other_name + other_number)), 1)
 
 
+def rel(rid, number, name, **dates):
+    return dict(id=f"release/{rid}", number=number, name=name, **dates)
+
+
+class EditionsNotGrouped(unittest.TestCase):
+    """release-editions-not-grouped: editions of one kit launched together share a range; re-releases never pair."""
+
+    def test_furitek_named_editions(self):
+        a = rel("furitek/fur-2878", "FUR-2878", "TITAN U4 ULTIMATE 24 Nebula Edition ARTR w/ MicroFlex PRO 4WS TX/RX, "
+                "TRI-UNITY PRO Sensored & Micro Tesla DigiBoard", seen_by="2026-11-12")
+        b = rel("furitek/fur-2879", "FUR-2879", "TITAN U4 ULTIMATE 24 Supernova Edition ARTR w/ MicroFlex PRO 4WS TX/RX, "
+                "TRI-UNITY PRO Sensored & Micro Tesla DigiBoard", seen_by="2026-11-12")
+        self.assertEqual(rules.edition_pair(a, b), ("edition", "nebula edition", "supernova edition"))
+        self.assertEqual(rules.market_bucket(a, b), "together")
+
+    def test_furitek_colour_editions(self):
+        tail = "ARTR with TRI-UNITY30 Next-Gen FOC Drivetrain - {} Edition"
+        a = rel("furitek/fur-2863", "FUR-2863", "KRAWL 30 FULLRANGE TRAIL PRO PICKUP " + tail.format("White"), seen_by="2026-10-26")
+        b = rel("furitek/fur-2864", "FUR-2864", "KRAWL 30 FULLRANGE TRAIL PRO PICKUP " + tail.format("Yellow"), seen_by="2026-10-26")
+        self.assertEqual(rules.edition_pair(a, b)[0], "edition")
+        self.assertEqual(rules.market_bucket(a, b), "together")
+
+    def test_other_products_are_no_edition(self):
+        for word in ("Limited", "Founder's", "Graphite", "Carpet", "Dirt", "Alu"):
+            a = rel("x/1", "X-100", f"Titan U4 {word} Edition ARTR")
+            b = rel("x/2", "X-101", "Titan U4 Nebula Edition ARTR")
+            self.assertIsNone(rules.edition_pair(a, b), word)
+
+    def test_colour_clause(self):
+        a = rel("maverick/150870", "150870", "Microbe Flux 1/24th Buggy - Blue", seen_by="2026-10")
+        b = rel("maverick/150871", "150871", "Microbe Flux 1/24th Buggy - Yellow", seen_by="2026-10")
+        self.assertEqual(rules.edition_pair(a, b), ("colour", "blue", "yellow"))
+        self.assertEqual(rules.market_bucket(a, b), "together")
+        # a colour code the site reads from the item number (30615C / 30615R) pairs there without a range
+        self.assertIsNone(rules.edition_pair(rel("k/1", "30615C", "Inferno Red"), rel("k/2", "30615R", "Inferno Blue")))
+        # not a colour: another product
+        self.assertIsNone(rules.edition_pair(rel("x/1", "100", "Buggy RTR Brushless"), rel("x/2", "101", "Buggy RTR")))
+
+    def test_race_number_livery(self):
+        a = rel("kyosho/32369s17", "32369S17", "MINI-Z RWD MR-04 readyset Jaguar XJR-14 No.17 SUGO 1991")
+        b = rel("kyosho/32369s18", "32369S18", "MINI-Z RWD MR-04 readyset Jaguar XJR-14 No.18 SUGO 1991")
+        self.assertEqual(rules.edition_pair(a, b)[0], "livery")
+
+    def test_tamiya_reissue_editions_stay_apart(self):
+        black = rel("tamiya/47432", "47432", "Super Clod Buster Black Edition", released="2020-05")
+        chrome = rel("tamiya/58423", "58423", "Super Clod Buster Chrome Edition", released="2008-12-20")
+        gray = rel("tamiya/92437", "92437", "Super Clod Buster Gray Edition", seen_by="2022-03")
+        for a, b in ((black, chrome), (black, gray), (chrome, gray)):
+            self.assertIsNone(rules.edition_pair(a, b))   # item numbers far apart
+            self.assertNotEqual(rules.market_bucket(a, b), "together")   # years apart
+        red = rel("tamiya/47402", "47402", 'Customized Monster Van for Racing & Show Lunch Box "Red Edition" (CW-01)',
+                  released="2019-06-15")
+        gold = rel("tamiya/49459", "49459", 'Customized Monster Van for Racing & Show Lunch Box "Gold Edition" (CW-01)',
+                   released="2011-09-17")
+        self.assertIsNone(rules.edition_pair(red, gold))
+        self.assertNotEqual(rules.market_bucket(red, gold), "together")
+
+    def test_reissue_markers_keep_apart(self):
+        javelin = rel("kyosho/30618", "30618", "Javelin re-release kit", announced="2017-08-28")
+        legendary = rel("kyosho/30618c", "30618C", "Legendary Series Javelin", released="2024-05")
+        self.assertEqual(rules.market_bucket(javelin, legendary), "apart")
+        clod = rel("tamiya/58065", "58065", "Clod Buster", released="1987-09-21")
+        self.assertEqual(rules.market_bucket(clod, rel("tamiya/58762", "58762", "Clod Buster (2026)", released="2026-09-19")),
+                         "apart")
+        original = rel("tamiya/58410", "58410", "Golf GTI", released="2009-03")
+        again = rel("tamiya/84060", "84060", "Golf GTI, red", released="2009-03",
+                    related=[{"release": "release/tamiya/58410", "relation": "rerelease-of"}])
+        self.assertEqual(rules.market_bucket(original, again), "apart")
+
+    def test_far_apart_or_undated_is_a_review(self):
+        a = rel("blackzon/1", "540230", "Slyder ST - Red", seen_by="2023-12")
+        self.assertEqual(rules.market_bucket(a, rel("blackzon/2", "540231", "Slyder ST - Blue", seen_by="2024-05")), "review")
+        self.assertEqual(rules.market_bucket(rel("x/1", "1", "A B red"), rel("x/2", "2", "A B blue")), "review")
+        # a year alone does not show a launch together
+        self.assertEqual(rules.market_bucket(rel("x/1", "1", "A B red", year=2024), rel("x/2", "2", "A B blue", year=2024)),
+                         "review")
+
+
 if __name__ == "__main__":
     unittest.main()
