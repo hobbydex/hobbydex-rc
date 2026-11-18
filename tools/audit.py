@@ -1,7 +1,8 @@
 """Gap audit: what the data and the site get wrong or leave out, ranked.
 
 Reads data/ directly (TOML) plus the caches the checks need in hobbydex-tools
-(the downloaded manuals, the art photo sources, the part classifier). Each
+(the downloaded manuals, the art photo sources, the part classifier). The checks
+that read only the data are the data invariants (tests/invariants, docs/invariants.md). Each
 check prints a count, five example ids with their hobbydex.com page, and the
 fix. The full list of one check: --list NAME. JSON for scripts: --json FILE.
 
@@ -17,18 +18,7 @@ import argparse, collections, csv, importlib.util, json, os, re, subprocess, sys
 SITE = "https://hobbydex.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
 RC = os.path.dirname(HERE)
-HW = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal", "turnbuckle", "rod-end"}   # hardware part categories
-PLUG = re.compile(r"\b(plug|connector|bullet|xt\d*|deans|jr|t-plug|banana|jst|xh|ec\d)\b", re.I)
 CONFUSABLE = [frozenset(p) for p in (("5", "6"), ("3", "8"), ("0", "8"), ("1", "7"))]
-BANNED_HOSTS = re.compile(r"https?://[^\s\"')]*(houseofrc|tamico)[^\s\"')]*", re.I)
-# a tamico.de dealer link (kind = "dealer") is allowed for Tamiya spares without a maker page (tools/link_tamico_spares.py)
-# Xtra Speed has no maker page: the owner chose tamico.de's listings as its dealer fallback (hobbydex-tools docs/decisions.md,
-# 2026-10-23), so the two documents that stand for those listings keep their tamico.de address
-TAMICO_OWNER_DOCS = ("data/documents/xtra-speed/tamico-",)
-TAMICO_DEALER_LINK = re.compile(r'\{ site = "tamico\.de", url = "[^"]*", kind = "dealer" \}')
-SCRAP_IMG = re.compile(r"https?://[^\s\"')]*rcscrapyard[^\s\"')]*\.(jpe?g|png|gif|webp)", re.I)
-LOCAL_PATH = re.compile(r"(^|[\s\"'(=])(/home/|/Users/|/tmp/|file://|[A-Za-z]:\\|work/manuals/|cache/)")
-FIX_PAGE = "add the maker's product page as a document (kind product_page, page = the maker's URL) and list it in the release's documents"
 
 
 # the folders every real data checkout has records in: an empty one is a wrong or half-present checkout, never "no holes"
@@ -213,17 +203,6 @@ def gone_urls(cache, swaps):
     finally:
         con.close()
     return frozenset(u for (u,) in rows)
-
-
-def walk_strings(v):
-    if isinstance(v, str):
-        yield v
-    elif isinstance(v, dict):
-        for x in v.values():
-            yield from walk_strings(x)
-    elif isinstance(v, list):
-        for x in v:
-            yield from walk_strings(x)
 
 
 def near_local(a, b):
@@ -574,119 +553,6 @@ def printed_pair(a, b, printed):
     return str(a["number"]) in printed and str(b["number"]) in printed
 
 
-# spec-mismatch: a spec link (equivalent_to, or includes) whose spec family the part's category or name does not carry.
-# A family's words are the ones a name uses for that kind of item; a link with a source (a page the maker or a store
-# gave) is checked by its category only. A part's includes row for a family its category takes as an accessory is fine
-# (a pinion with its set screws, a differential with its pins); any other family needs the name to name it.
-SPEC_FAMILY_WORDS = {
-    "bearing": r"bearings?|bush(?:ings?|es)?|busings?", "screw": r"screws?|bolts?|cap ?heads?|button ?heads?",
-    "nut": r"nuts?", "washer": r"washers?|shims?|spacers?|collars?", "pin": r"pins?|shafts?|dowels?",
-    "pinion": r"pinions?|gears?", "eclip": r"e-?clips?|e-?rings?|din ?6799", "circlip": r"c-?clips?|circlips?|seger|snap rings?",
-    "ball-end": r"balls?|studs?|ball ?ends?|ball ?joints?", "o-ring": r"o-?rings?|gaskets?", "motor": r"motors?",
-    "battery": r"batter(?:y|ies)|lipo|li-?po|nimh|packs?", "servo": r"servos?", "oil": r"oils?|grease|silicone",
-    "wire": r"wires?|cables?|leads?", "connector": r"connectors?|plugs?|jst|xt\d*|ec\d|deans|bullets?|t-?plugs?|banana|xh|jr",
-    "wheel-hex": r"hex(?:es)?|wheels?|tyres?|tires?|hubs?|axles?|rims?",
-}
-# the spec families a part of each category may hold as includes (its accessories); every other family needs its name
-SPEC_INCLUDE_ACCESSORIES = {
-    "gear": {"bearing", "pin", "screw", "washer", "nut", "o-ring", "eclip", "circlip"},
-    "spur-gear": {"pin", "screw", "washer", "nut", "bearing"}, "pinion": {"screw", "pin", "washer"},
-    "differential": {"bearing", "pin", "screw", "washer", "nut", "o-ring", "eclip", "circlip", "oil"},
-    "drivetrain": {"bearing", "pin", "screw", "nut", "washer", "o-ring", "eclip", "circlip", "oil"},
-    "steering": {"bearing", "screw", "nut", "washer", "ball-end", "pin", "eclip"},
-    "bumper-guard": {"bearing", "screw", "nut", "washer"}, "body": {"screw", "nut", "washer", "pin", "eclip", "o-ring", "wire", "connector"},
-    "body-accessory": {"screw", "nut", "washer", "pin", "eclip", "o-ring"}, "wing": {"screw", "nut", "washer"},
-    "screw": {"washer", "nut"}, "nut": {"screw", "washer"}, "pin": {"screw"}, "washer-shim": {"screw", "nut", "pin", "washer"},
-    "ball-end": {"nut", "screw", "washer", "ball-end"}, "clip": {"eclip", "circlip", "screw", "washer"},
-    "shock": {"screw", "nut", "washer", "o-ring", "ball-end", "oil"}, "motor": {"screw", "wire", "connector", "pinion", "washer", "nut", "o-ring"},
-    "esc": {"connector", "wire", "screw"}, "servo": {"screw", "connector", "wire", "washer", "nut", "pinion"},
-    "charger": {"connector", "wire", "screw"}, "battery": {"connector", "wire", "screw"}, "radio": {"battery", "connector", "wire", "screw"},
-    "chassis": {"bearing", "screw", "nut", "washer", "pin", "o-ring", "eclip", "circlip", "ball-end"},
-    "suspension": {"bearing", "screw", "nut", "washer", "pin", "o-ring", "eclip", "circlip", "ball-end", "oil"},
-    "wheel": {"bearing", "screw", "nut", "washer", "wheel-hex"}, "tire": {"screw", "nut", "washer", "wheel-hex"},
-    "light": {"screw", "wire", "connector", "washer", "nut"}, "cooling": {"screw", "nut", "washer", "wire", "connector"},
-}
-# a fastener or small part the name itself lists ("Pins & M4 Nuts") may be an include on any category; a motor, battery or servo may not
-SPEC_NAMED_HARDWARE = {"screw", "nut", "washer", "pin", "o-ring", "eclip", "circlip", "ball-end", "bearing"}
-SPEC_DEFAULT_ACCESSORIES = {"screw", "nut", "washer"}   # any other category: fasteners it comes with
-# the spec families a part of each category may be equivalent_to (validate.py's SPEC_PART_CATS, by family)
-SPEC_EQUIVALENT_CATS = {
-    "bearing": {"bearing"}, "screw": {"screw"}, "pin": {"pin"}, "pinion": {"pinion"}, "oil": {"oil-grease"},
-    "battery": {"battery"}, "motor": {"motor"}, "servo": {"servo"}, "nut": {"nut"},
-    "washer": {"washer-shim"}, "eclip": {"clip"}, "wire": {"wire"}, "circlip": {"clip"},
-    "ball-end": {"ball-end"}, "o-ring": {"o-ring-seal"},
-    "wheel-hex": {"drivetrain", "wheel", "tire", "suspension"},
-}
-
-
-GEAR_CATS = {"gear", "pinion", "spur-gear"}
-GEAR_SET_NAME = re.compile(r"(?i)\b(gears|pinions|sets?)\b")   # "Pinion Gears 13T + Screws (2P)": several pieces, a count
-PITCH_IN_NAME = re.compile(r"(?i)(?<![\w.])(\d{1,3})\s*(?:p|dp|pitch)\b")   # "(48P)", "48DP", "48 Pitch"
-
-
-def gear_pitch_as_count(p):
-    """Why a gear's pack_qty is its pitch, or None: the count equals the part's pitch_dp, or the pitch printed in its
-    name ("90T SPUR GEAR (48P)"). A gear set's name ("Gears", "Set") states a count, so its printed number is no pitch.
-    A pitch in a name is normal; only a count that equals it is the bug (tools#590 read "(48P)" as a count)."""
-    pq = p.get("pack_qty")
-    if pq is None or p.get("category") not in GEAR_CATS: return None
-    if p.get("pitch_dp") == pq: return f"pack_qty {pq} is the pitch_dp"
-    name = p.get("name") or ""
-    if not GEAR_SET_NAME.search(name) and any(int(m.group(1)) == pq for m in PITCH_IN_NAME.finditer(name)):
-        return f"pack_qty {pq} is the pitch printed in the name"
-    return None
-
-SPEC_KIT_NAME = re.compile(r"\b(?:rebuild|repair|maintenance|conversion)\b")
-
-
-# hardware bought in packs: the pack tools' categories (tools/link_pack_qty.py PAGE_HARDWARE) and the name words of
-# a bag of small items or a set (packqty SMALL, set, kit, pack, pair). A single turnbuckle or rod end needs no count.
-PACK_SOLD_CATS = {"bearing", "screw", "nut", "washer-shim", "clip", "pin", "ball-end", "o-ring-seal", "turnbuckle", "rod-end"}
-PACK_SOLD_NAME = re.compile(r"(?i)screw|bolt|clip|\bpins?\b|shim|washer|\bnuts?\b|locknut|\bballs?\b|bearing|bushing|sleeve"
-                            r"|\bo[- ]?rings?\b|\be-?rings?\b|\bc-?rings?\b|rivet|spacer|collar|\bstuds?\b|\b(?:button|truss|countersunk|tapping|philips|grub)\b"
-                            r"|\bsets?\b|\bkits?\b|\bpacks?\b|\bpairs?\b|\bbags?\b|\bassort\w*|\bcombo\b")
-
-
-def sold_in_packs(p):
-    """True when a hardware part is one of the small items sold in packs: its category and a name word of a bag or set."""
-    return p.get("category") in PACK_SOLD_CATS and PACK_SOLD_NAME.search(p.get("name") or "") is not None
-
-
-def count_unstated(p, brands):
-    """True when the maker states no exact count for a kit: a minimum (the importer's "180+ pieces." note) or none (its brand has pack_counts = false)."""
-    return re.match(r"\d+\+ pieces?\b", p.get("notes", "")) is not None or brands.get(p.get("brand"), {}).get("pack_counts") is False
-
-
-def spec_mismatches(parts):
-    """[(part id, field, spec id, reason)] for the spec links the part's category or name does not carry.
-
-    equivalent_to: the family must be one the category holds (validate.py), and a rebuild or repair kit (its name
-    says kit, set, rebuild) is never equivalent to the spec of the motor, screw or bearing it works on. includes: the
-    family must be the part's own kind or an accessory its category comes with (a pinion with its set screws, a
-    differential with its pins); a name that names another kind (a "MOTOR" on a decal) fails the category. A row with
-    a source is checked by category only: the maker or store said it.
-    """
-    out = []
-    for p in parts:
-        name, cat = (p.get("name") or "").lower(), p.get("category")
-        for field in ("equivalent_to", "includes"):
-            for row in p.get(field) or []:
-                bits = str(row.get("spec", "")).split("/")
-                fam = bits[1] if len(bits) >= 3 else None
-                if fam is None or cat is None or fam not in SPEC_FAMILY_WORDS or (field == "equivalent_to" and fam not in SPEC_EQUIVALENT_CATS):
-                    continue
-                own = cat in SPEC_EQUIVALENT_CATS.get(fam, ())
-                named = re.search(r"(?<![a-z])(?:%s)(?![a-z])" % SPEC_FAMILY_WORDS[fam], name) is not None
-                if field == "equivalent_to":
-                    if not own:
-                        out.append((p["id"], field, row["spec"], f"a {fam} spec on a {cat}"))
-                    elif "source" not in row and SPEC_KIT_NAME.search(name) and not named:
-                        out.append((p["id"], field, row["spec"], f"a {fam} spec on a kit that is not a {fam}"))
-                elif not own and not (named and fam in SPEC_NAMED_HARDWARE) and "source" not in row and fam not in SPEC_INCLUDE_ACCESSORIES.get(cat, SPEC_DEFAULT_ACCESSORIES):
-                    out.append((p["id"], field, row["spec"], f"a {fam} include on a {cat}"))
-    return out
-
-
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--tools", default=os.path.join(RC, "..", "hobbydex-tools"))
@@ -915,45 +781,23 @@ def main():
     check("doc-not-back-linked", "run tools/sync_doc_links.py --write in hobbydex-tools (adds the missing side; catalogues, shared shop pages and dealer listings it holds are not gaps)",
           one_sided)
 
-    # 24. never-link hosts and dealer doc references
-    banned, scrap, local, dealer, foreign = [], [], [], [], []
+    # 24. maker links that have an English address the record does not use
+    foreign = []
     swaps = english_swaps(tools["english_table"]) if tools["english_table"] else None   # None: the table is not there
     if swaps is None:
         swaps = {}
     gone = gone_urls(tools["cache"], swaps)
     unavailable = english_unavailable(english_state(tools["cache"], swaps))
-    for path in sorted({d["_path"] for k in db for d in db[k]}):
+    for path in sorted({d["_path"] for k in db for d in db[k]}) if tools["english_table"] else []:
         with open(os.path.join(RC, path), encoding="utf-8") as f:
             text = f.read()
-        if BANNED_HOSTS.search(TAMICO_DEALER_LINK.sub("", text)) and not path.startswith(TAMICO_OWNER_DOCS):
-            banned.append(path)
-        if tools["english_table"] and has_foreign_link(text, swaps, gone, unavailable):
+        if has_foreign_link(text, swaps, gone, unavailable):
             foreign.append(path)
-        if SCRAP_IMG.search(text):
-            scrap.append(path)
-        if "doc/tamiya/tamico-dealer-parts" in text and not path.endswith("documents/tamiya/tamico-dealer-parts.toml"):   # the document itself is not a reference
-            dealer.append(path)
-    for k in db:
-        for d in db[k]:
-            for s in walk_strings(d):
-                if LOCAL_PATH.search(s):
-                    local.append(d["id"]); break
-    to_id = lambda p: os.path.splitext(os.path.basename(p))[0]
-    check("banned-host", "remove the link to the host (House of RC, Tamico, rcscrapyard image URLs are never linked)", [{"id": p} for p in banned + scrap], count=len(banned) + len(scrap))
-    results["banned-host"]["examples"] = [{"id": p, "url": SITE + "/rc/"} for p in (banned + scrap)[:args.examples]]
-    check("tamico-doc-reference", "cite the maker's own listing instead of the Tamico dealer catalogue", [{"id": p} for p in dealer], count=len(dealer))
-    results["tamico-doc-reference"]["examples"] = [{"id": p, "url": SITE + "/rc/"} for p in dealer[:args.examples]]
-    check("local-path", "replace the local path with the source's URL", local)
     if tools["english_table"]:
         check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone, failed, answers with an error page, or names none of the record's item numbers is not listed)",
               [{"id": p} for p in foreign], count=len(foreign))
     else:
         results["non-english-link"] = {"fix": ENGLISH_MISSING, "count": None, "examples": [], "all": []}
-
-    # 26d. spec links the part's category or name does not carry (spec_mismatches): a bearing on a clip, a motor on a rebuild kit
-    mism = spec_mismatches(parts)
-    check("spec-mismatch", "remove the spec link (or fix the part's category or name, then link the spec its name gives): the link's family is not the part's kind; see the linker in the rows' notes",
-          sorted({m[0] for m in mism}), count=len({m[0] for m in mism}), rows=[{"id": i, "field": f, "spec": sp, "why": w} for i, f, sp, w in mism][:200])
 
     usa_tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamiya-usa-spares.tsv")
     usa_rows = []
@@ -975,54 +819,10 @@ def main():
     check("tamico-pack-conflict", "no pack_qty from the dealers: the dealers' counts differ or the part's name states another count; set the count from the part's own source or leave it unset (tools/link_tamico_spares.py lists the rows)",
           conflicts, count=len(conflicts))
 
-    # 29-38. hardware bags, names, release boxes and the /tmp inodes
+    # 29-38. names
     brand_of = lambda x: x.get("brand", "").split("/")[-1]
     per_brand = lambda items: collections.Counter(brand_of(x) for x in items).most_common()
 
-    no_pack = [p for p in parts if p.get("category") in HW and "pack_qty" not in p and not p.get("includes") and sold_in_packs(p)]
-    fillable = [p for p in no_pack if not count_unstated(p, brands)]
-    unstated = [p for p in no_pack if count_unstated(p, brands)]
-    check("hw-no-pack-count", "set pack_qty from the maker's listing (the count in the bag), or list the bag's specs in includes; only hardware sold in packs (sold_in_packs): a single item needs no count",
-          fillable, per_brand=per_brand(fillable))
-    check("hw-pack-count-unstated", "nothing to fill: the maker states only a minimum count or none (informational; pack_counts = false in the brand's data marks it)",
-          unstated, per_brand=per_brand(unstated), info=True)
-
-    # a Tamiya "Hex Head" screw is a hexagon head with a JIS cross recess (spec head hex), never a socket cap
-    tamiya_hex = [p for p in parts if p.get("brand") == "brand/tamiya" and p.get("category") == "screw" and re.search(r"\bhex head\b", p.get("name", ""), re.I)
-                  and any("socket-cap" in e.get("spec", "") for e in p.get("equivalent_to", []))]
-    check("tamiya-hex-head-socket", "link the Tamiya hex head screw to its spec/screw/*-hex-jis* (head hex, JIS cross recess), not to a socket cap",
-          tamiya_hex)
-
-    # a hardware kit's pack_qty is the sum of its includes qty (hobbydex-tools packqty.from_includes)
-    def kit_sum(p):
-        """The sum of the includes qty of a hardware kit, or None when a row has no integer qty."""
-        rows = p.get("includes") or []
-        qtys = [r.get("qty") for r in rows]
-        return sum(qtys) if rows and all(type(q) is int and q > 0 for q in qtys) else None
-    kits_hw = [p for p in parts if p.get("category") in HW and p.get("includes")]
-    no_qty = [p for p in kits_hw if kit_sum(p) is None and p.get("includes_qty") != "unstated"]   # unstated: the source lists the items without counts (schema includes_qty)
-    check("kit-includes-no-qty", "give every includes row of the kit its qty (the pieces in the bag); the kit's pack_qty is the sum once all rows have one",
-          no_qty, per_brand=per_brand(no_qty))
-    def sets_of(p):
-        """True when the kit is pack_qty sets of the same contents: every includes qty divides by pack_qty
-        (ARA-2804: 12 + 4 + 4 washers, screws and spacers in 4 sets of 5)."""
-        return all(r["qty"] % p["pack_qty"] == 0 for r in p["includes"])
-    off = [p for p in kits_hw if "pack_qty" in p and kit_sum(p) is not None and p["pack_qty"] != kit_sum(p) and not sets_of(p)]
-    check("kit-pack-not-sum", "the kit's pack_qty differs from the sum of its includes qty and the rows are not whole sets of it: correct the rows to the bag's count, or the pack_qty to the maker's listing",
-          off, per_brand=per_brand(off))
-    results["kit-pack-not-sum"]["examples"] = [{"id": f"{p['id']} (pack_qty {p['pack_qty']}, includes sum {kit_sum(p)})", "url": url_for(p)} for p in off[:args.examples]]
-
-    # pack count evidence (docs/schema.md "part", pack_qty_basis): a count with no recorded basis, a photo count that
-    # disagrees with the text, a brand whose photo counts are written although its photos do not match known packs well
-    no_basis = [p for p in parts if "pack_qty" in p and "pack_qty_basis" not in p]
-    check("pack-qty-no-basis", "record pack_qty_basis (python3 -I tools/backfill_pack_basis.py in hobbydex-tools) or leave it: the count's source is not known",
-          no_basis, per_brand=per_brand(no_basis))
-    # a gear's pack_qty that is its pitch (tools#590): the pitch belongs in pitch_dp, the count in the maker's listing
-    pitch_count = [(p, gear_pitch_as_count(p)) for p in parts]
-    pitch_count = [(p, why) for p, why in pitch_count if why]
-    check("pack-qty-is-pitch", "the count is the pitch: set pack_qty from the maker's listing or the bag (the pitch stays in pitch_dp), or unset it; a gear set whose name carries a count is not read",
-          [p for p, _ in pitch_count])
-    results["pack-qty-is-pitch"]["examples"] = [{"id": f"{p['id']} ({why})", "url": url_for(p)} for p, why in pitch_count[:args.examples]]
     ns = tools.get("name_shop")
     shop = [p for p in parts if ns is not None and ns.has_shop_text(p.get("name", "") or "")]
     check("name-shop-text", "strip the shop's price, stock or button text from the name (tools/name_shop.py clean; the maker's name is what is left)",
@@ -1066,37 +866,6 @@ def main():
           [x["id"] for pair in twins for x in pair], count=len(twins), per_brand=per_brand([a for a, _ in twins]))
     results["ocr-number-twins"]["examples"] = [{"id": f"{a['id']} ~ {b['id']}", "url": url_for(a)} for a, b in twins[:args.examples]]
 
-    # a plug names its connector in equivalent_to (a connector-spec row); a lead lists its plugs in connectors
-    wire = [p for p in parts if p.get("category") == "wire" and PLUG.search(p.get("name", "")) and not p.get("connectors")
-            and not any(str(e.get("spec", "")).startswith("spec/connector/") for e in p.get("equivalent_to", []) if isinstance(e, dict))]
-    check("wire-plug-no-connectors", "set connectors to the plugs the lead carries (from the name or the maker's page)", wire, per_brand=per_brand(wire))
-
-    # servo plugs: a part whose name gives only Futaba (or a Futaba servo) linked to the JR plug, or only JR to Futaba
-    def servo_plugs(p):
-        eq = {str(e.get("spec", "")) for e in p.get("equivalent_to", []) if isinstance(e, dict)}
-        names = set(p.get("connectors", [])) | ({p["connector"]} if isinstance(p.get("connector"), str) else set())
-        return ({"JR"} if "spec/connector/servo-jr" in eq or "JR" in names else set()) | ({"Futaba"} if "spec/connector/servo-futaba" in eq or "Futaba" in names else set())
-    def servo_named(p):
-        n = p.get("name", "")
-        fut = bool(re.search(r"futaba|\bJ[- ]?plug", n, re.I)) or (p.get("brand") == "brand/futaba" and p.get("category") == "servo")
-        jr = bool(re.search(r"\bJR\b|hitec|universal", n, re.I))
-        return "Futaba" if fut and not jr else "JR" if jr and not fut else None
-    crossed = [p for p in parts if (want := servo_named(p)) and (got := servo_plugs(p)) and want not in got]
-    check("servo-plug-crossed", "link the servo plug the name gives: Futaba (J, with the lip) or JR (bevelled corners); they mate but are two specs", crossed, per_brand=per_brand(crossed))
-
-    bat = [p for p in parts if p.get("category") in ("battery", "esc") and not p.get("connector")]
-    check("battery-esc-no-connector", "set connector to the plug the pack or ESC uses (from the maker's page or manual)", bat, per_brand=per_brand(bat))
-
-    # a battery whose name states the JST-XH balance lead, and no balance_connector (tools/link_part_connectors.py --balance)
-    bal_name = re.compile(r"\bbalanc\w*[^,;|()]{0,30}\bjst[- ]?xhr?\b|\bjst[- ]?xhr?\b[^,;|()]{0,30}\bbalanc\w*", re.I)
-    bal = [p for p in parts if p.get("category") == "battery" and not p.get("balance_connector") and bal_name.search(p.get("name", ""))]
-    check("battery-balance-name-no-connector", "set balance_connector = \"JST-XH\" when the maker states it (tools/link_part_connectors.py --balance)", bal, per_brand=per_brand(bal))
-    # a battery accessory (tape, lid, clasp, cup, strap ...) or a device named with its battery is filed as battery by mistake (tools/classify_parts.py)
-    acc = re.compile(r"\b(tapes?|lids?|clasp|cups?|straps?|holders?|trays?|covers?|clamps?|plates?|mounts?|boosters?)\b", re.I)
-    bat_acc = [p for p in parts if p.get("category") == "battery" and acc.search(p.get("name", ""))
-               and not re.search(r"lipo|li-?po|nimh|li-?ion|\bpack\b|\d{3,5} ?mah", p.get("name", ""), re.I)]
-    check("battery-accessory-name", "set the category an accessory belongs to (tape, lid, clasp, cup, strap: chassis or body; a device with its battery: that device) (tools/classify_parts.py)", bat_acc, per_brand=per_brand(bat_acc))
-
     # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
     hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
     hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
@@ -1109,46 +878,6 @@ def main():
           hz, per_brand=hz_brands.most_common())
     check("horizon-part-no-maker-page", "no maker page exists: the part is named only by exploded views, parts lists or manuals, and its Horizon item page answers 404 (informational)",
           hz_nopage, count=len(hz_nopage), per_brand=collections.Counter(p["brand"].split("/")[-1] for p in hz_nopage).most_common(), info=True)
-
-    # bearings: the material most of a brand's bearings carry, that at most 5% of those names say, is a default: no source states it
-    MAT_WORDS = {"steel": r"steel|chrom|hardened", "ceramic": r"ceramic", "stainless": r"stainless", "titanium": r"titan",
-                 "aluminium": r"alumin", "carbide": r"carbide", "brass": r"brass", "bronze": r"bronze", "plastic": r"plastic|nylon|delrin"}
-    per = collections.defaultdict(list)
-    for p in parts:
-        if p.get("category") == "bearing": per[p.get("brand")].append(p)
-    flat = []
-    for b, ps in per.items():
-        for m, word in MAT_WORDS.items():
-            with_m = [p for p in ps if p.get("material") == m]
-            if len(with_m) >= 10 and 2 * len(with_m) >= len(ps) and b in brands \
-                    and 20 * sum(1 for p in with_m if re.search(word, p.get("name", ""), re.I)) <= len(with_m):
-                flat.append(brands[b]); break
-    check("bearing-default-material", "set the bearings' material from the maker's page or name, or remove it: most of the brand's bearings carry one material that none of their names says (a default, not a source)",
-          flat, detail="brands whose most bearings carry a material no name states")
-
-    # electronics fields the schema defines for a category: a field fewer than 5% of that category's parts carry (motor_type on motors: 0 of 2,533)
-    ELEC_FIELDS = {
-        "motor": "motor_type kv turns lipo_cells diameter_mm length_mm shaft_mm weight_g sensored mount_holes motor_connector waterproof scales",
-        "esc": "motor_type bec_v bec_a motor_limit_t motor_limit_kv nimh_cells programming resistance_mohm lipo_cells current_a peak_current_a "
-               "dimensions_mm weight_g sensored motor_connector receiver_connector waterproof scales",
-        "servo": "connector size_class spline_teeth torque_kgcm speed_s voltage_range gear_material motor rotation_deg bearings bearing_kind "
-                 "dead_band_us frequency_hz dimensions_mm weight_g waterproof scales",
-        "battery": "chemistry cells capacity_mah nominal_v c_rating connector balance_connector case dimensions_mm weight_g scales",
-    }
-    by_cat = collections.defaultdict(list)
-    for p in parts:
-        by_cat[p.get("category")].append(p)
-    rare = []   # (category, field, with, of)
-    for cat, fields in ELEC_FIELDS.items():
-        ps = by_cat.get(cat, [])
-        for f in fields.split():
-            n_with = sum(1 for p in ps if p.get(f) not in (None, "", []))
-            if ps and 20 * n_with < len(ps):
-                rare.append((cat, f, n_with, len(ps)))
-    check("electronics-field-rare", "fill the field from the maker's own wording (product page, spec table or manual), per the schema's electronics rules; a field the maker does not state stays empty (one line per category and field below)",
-          [], count=len(rare))
-    results["electronics-field-rare"]["all"] = [f"{cat} {f}: {n} of {of} parts ({100 * n / of:.1f}%)" for cat, f, n, of in rare]
-    results["electronics-field-rare"]["examples"] = []   # the rows are printed in full under the summary line
 
     # kits no release names, with a page of the maker's site that names the car (tools/parts_only_leads.py in hobbydex-tools writes the leads)
     leads_tsv = os.path.join(os.path.abspath(args.tools), "cache", "notes", "parts-only-leads.tsv")

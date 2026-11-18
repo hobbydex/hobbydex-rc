@@ -29,7 +29,11 @@ jobs:
       - name: Validate every TOML file under data/
         run: python3 -I tools/validate.py
       - name: The word rules of the data invariants (tests/invariants/rules.py)
-        run: python3 -I tools/test_invariant_rules.py
+        run: |
+          for t in test_invariant_rules test_invariant_pack_count test_invariant_pack_qty_pitch test_invariant_spec_mismatch; do
+            echo "== $t"
+            python3 -I "tools/$t.py"
+          done
       - name: Tests of the audit checks and the retired kit list
         run: |
           for t in test_audit_manual_kind test_audit_archive_files test_audit_twins_text_layer test_yeah_models_not_retired test_audit_english_twin test_audit_walk_errors; do
@@ -54,9 +58,9 @@ jobs:
         run: python3 -I tools/test_audit_child_timeout.py
       - name: The audit's checks are spans under the audit job's part
         run: python3 -I tools/test_audit_check_spans.py
-      - name: The audit's name-count, barcode and Tamiya German-name rules
+      - name: The audit's barcode and Tamiya German-name rules
         run: |
-          for t in test_audit_pack_count test_audit_gtin_in_cache test_audit_name_german; do
+          for t in test_audit_gtin_in_cache test_audit_name_german; do
             echo "== $t"
             python3 -I "tools/$t.py"
           done
