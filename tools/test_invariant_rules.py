@@ -328,5 +328,24 @@ class FitsScale(unittest.TestCase):
         self.assertEqual(rules.kit_words("1/16 Slash 4X4"), {"slash"})
         self.assertLessEqual(rules.kit_words("1/16 Slash 4X4"), rules.kit_words("Mini Slash"))
 
+class DimensionPlausible(unittest.TestCase):
+    """dimension-plausible: figures times the scale divisor are full-size figures in bounds."""
+
+    def test_plausible_cars_pass(self):
+        self.assertEqual(rules.dimension_problems({"wheelbase_mm": 257, "track_mm": 170, "length_mm": 420, "width_mm": 190,
+                                                   "weight_g": 1400}, "1/10"), [])
+        self.assertEqual(rules.dimension_problems({"wheelbase_mm": [{"mm": 239}, {"mm": 210}], "weight_g": 170}, "1/28"), [])
+        self.assertEqual(rules.dimension_problems({"wheelbase_mm": {"min": 560, "max": 580}, "weight_g": 11000}, "1/5"), [])
+
+    def test_wrong_unit_or_digit_is_flagged(self):
+        self.assertTrue(rules.dimension_problems({"wheelbase_mm": 2000}, "1/10"))
+        self.assertTrue(rules.dimension_problems({"weight_g": 3}, "1/10"))           # kilograms written as grams
+        self.assertTrue(rules.dimension_problems({"wheelbase_mm": 400, "length_mm": 300}, None))
+        self.assertTrue(rules.dimension_problems({"track_front_mm": 250, "width_mm": 190}, None))
+
+    def test_no_scale_checks_only_the_ratios(self):
+        self.assertEqual(rules.dimension_problems({"wheelbase_mm": 2000}, None), [])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1089,6 +1089,75 @@ def unsafe_name_problems(path, ident=None):
             problems.append(f"{path}: id {ident!r} has characters outside {SAFE_NAME_CHARS} ({''.join(bad)}); give it a safe id and keep the old one in former_ids")
     return problems
 
+# dimensions on a kit or release (docs/schema.md "Dimensions"): millimetres and grams as the maker states them, with the page
+DIM_LENGTHS = ("length_mm", "width_mm", "height_mm", "wheelbase_mm", "track_mm", "track_front_mm", "track_rear_mm", "ground_clearance_mm")
+DIM_OPTIONS = ("wheelbase_mm", "track_mm", "track_front_mm", "track_rear_mm")   # may be a list of configurable { mm, label } values
+DIM_MEASURES = DIM_LENGTHS + ("weight_g",)
+BODY_DIMS = ("wheelbase_mm", "track_mm", "track_front_mm", "track_rear_mm")
+
+
+def _dim_num(x, hi):
+    return isinstance(x, (int, float)) and not isinstance(x, bool) and 0 < x <= hi
+
+
+def dim_value_ok(v, options, hi=10000):
+    """A length: a number of mm above 0, a range { min, max } (min below max), or, where options is true, a list of
+    two or more configurable values { mm, label (optional) } with distinct mm."""
+    if _dim_num(v, hi):
+        return True
+    if isinstance(v, dict):
+        return set(v) == {"min", "max"} and _dim_num(v["min"], hi) and _dim_num(v["max"], hi) and v["min"] < v["max"]
+    if options and isinstance(v, list) and len(v) >= 2:
+        ok = all(isinstance(o, dict) and set(o) <= {"mm", "label"} and _dim_num(o.get("mm"), hi)
+                 and (("label" not in o) or (isinstance(o["label"], str) and o["label"].strip() == o["label"] and o["label"]))
+                 for o in v)
+        return ok and len({o["mm"] for o in v}) == len(v)
+    return False
+
+
+def dimension_problems(path, kind, d, ids, http_hosts=frozenset()):
+    """The dimensions table of a kit or release, and the wheelbase and track a body states."""
+    out = []
+    if kind == "part" and any(k in d for k in BODY_DIMS[1:]) and d.get("category") not in ("body", "body-accessory"):
+        out.append(f"{path}: track_mm, track_front_mm and track_rear_mm only on a body or body-accessory part (the track the body is made for)")
+    if kind == "part" and d.get("category") in ("body", "body-accessory"):
+        for k in BODY_DIMS:
+            if k in d and not dim_value_ok(d[k], True):
+                out.append(f"{path}: {k} should be a number of millimetres above 0, a range {{ min, max }} or a list of {{ mm, label }} options")
+        if "track_mm" in d and ("track_front_mm" in d or "track_rear_mm" in d):
+            out.append(f"{path}: track_mm is the one track the maker gives; it does not go with track_front_mm or track_rear_mm")
+    if "dimensions" not in d:
+        return out
+    dm = d["dimensions"]
+    if kind not in ("kit", "release"):
+        out.append(f"{path}: dimensions only on a kit or release")
+        return out
+    if not isinstance(dm, dict):
+        out.append(f"{path}: dimensions should be a table of measures with their source")
+        return out
+    for k in dm:
+        if k not in DIM_MEASURES and k not in ("source", "stated"):
+            out.append(f"{path}: dimensions.{k} is not a dimension field ({', '.join(DIM_MEASURES)}, source, stated)")
+    if not any(k in dm for k in DIM_MEASURES):
+        out.append(f"{path}: dimensions needs at least one measure")
+    src = dm.get("source")
+    if not (isinstance(src, str) and (src.startswith("https://") or (src.startswith("http://") and urllib.parse.urlsplit(src).hostname in http_hosts)
+                                      or (src.startswith("doc/") and src in ids))):
+        out.append(f"{path}: dimensions.source should be the https URL or the doc id of the maker page that states the figures")
+    for k in DIM_LENGTHS:
+        if k in dm and not dim_value_ok(dm[k], k in DIM_OPTIONS):
+            extra = " or a list of { mm, label } options" if k in DIM_OPTIONS else ""
+            out.append(f"{path}: dimensions.{k} should be a number of millimetres above 0 or a range {{ min, max }}{extra}")
+    if "weight_g" in dm and not _dim_num(dm["weight_g"], 100000):
+        out.append(f"{path}: dimensions.weight_g should be a number of grams above 0 and up to 100000")
+    if "track_mm" in dm and ("track_front_mm" in dm or "track_rear_mm" in dm):
+        out.append(f"{path}: dimensions.track_mm is the one track the maker gives; it does not go with track_front_mm or track_rear_mm")
+    st = dm.get("stated")
+    if st is not None and not (isinstance(st, dict) and st and all(k in DIM_MEASURES and k in dm and isinstance(v, str) and v.strip() for k, v in st.items())):
+        out.append(f"{path}: dimensions.stated should be a table of measure field = the value as printed, for measures the table has")
+    return out
+
+
 def main():
     ENUMS["part.category"] = categories()
     errors, ids, docs = [], {}, []
@@ -1473,6 +1542,7 @@ def main():
                     elif not (isinstance(v, str) and (v.startswith("https://") or
                               (v.startswith("http://") and urllib.parse.urlsplit(v).hostname in http_hosts))):
                         errors.append(f"{path}: sources.{k} should be an https URL (http only for a maker site that has no https), got {v!r}")
+        errors.extend(dimension_problems(path, kind, d, ids, http_hosts))
         ve = d.get("depicts") if kind in ("release", "part") else None
         if ve is not None:
             if kind == "part" and d.get("category") != "body":
