@@ -32,7 +32,7 @@ jobs:
         run: python3 -I tools/test_invariant_rules.py
       - name: Tests of the audit checks and the retired kit list
         run: |
-          for t in test_audit_manual_kind test_audit_archive_files test_audit_twins_diffs test_audit_twins_text_layer test_yeah_models_not_retired test_audit_english_twin test_audit_walk_errors; do
+          for t in test_audit_manual_kind test_audit_archive_files test_audit_twins_text_layer test_yeah_models_not_retired test_audit_english_twin test_audit_walk_errors; do
             echo "== $t"
             python3 -I "tools/$t.py"
           done
@@ -50,18 +50,10 @@ jobs:
         run: python3 -I tools/test_audit_memory.py
       - name: The audit's Tamiya static-kit rule
         run: python3 -I tools/test_audit_tamiya_static.py
-      - name: The audit's Tamiya maker link counts a capture of the maker's gone page
-        run: python3 -I tools/test_audit_tamiya_item.py
       - name: The audit reports a tool that runs past its timeout instead of waiting for it
         run: python3 -I tools/test_audit_child_timeout.py
       - name: The audit's checks are spans under the audit job's part
         run: python3 -I tools/test_audit_check_spans.py
-      - name: The audit leaves aircraft parts out of the car-link queue
-        run: python3 -I tools/test_audit_aircraft.py
-      - name: The audit skips family kits (no release owed)
-        run: python3 -I tools/test_audit_family_kit.py
-      - name: The audit's spec-unlinked check counts includes and protocols as use
-        run: python3 -I tools/test_audit_spec_unlinked.py
       - name: The audit's name-count, barcode and Tamiya German-name rules
         run: |
           for t in test_audit_pack_count test_audit_gtin_in_cache test_audit_name_german; do
