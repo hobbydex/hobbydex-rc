@@ -41,6 +41,24 @@ def test_part_named_by_number(ratchet):
           AND json_type(data, '$.name') = json_type(data, '$.number')""", blocking=False)
 
 
+def test_part_ocr_number_only(ratchet):
+    """Parts whose only evidence is an OCR read of their number: named by the number (name_source ocr, or the note
+    "Named by its number only"), one document, and no link, barcode, web sighting or fits row of another source. Such a
+    number may be lettering inside a drawing or a misread (Kyosho's "OT227 2900098" on a pictured belt became C0227);
+    an importer takes a new number only from a printed list row (a name or a count beside it). Each one left was checked
+    against a lossless crop of its page by the vision model (2026-11-18); a new one is a fault of the importer."""
+    ratchet("part-ocr-number-only", """SELECT id AS record, 'number read by OCR only, from ' ||
+            json_extract(data, '$.documents[0]') AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.name') = json_extract(data, '$.number')
+          AND (json_extract(data, '$.name_source') = 'ocr'
+               OR coalesce(json_extract(data, '$.notes'), '') LIKE 'Named by its number only%')
+          AND json_array_length(json_extract(data, '$.documents')) = 1
+          AND json_extract(data, '$.links') IS NULL AND json_extract(data, '$.gtin') IS NULL
+          AND coalesce(json_extract(data, '$.seen_by_source'), '') NOT LIKE 'http%'
+          AND NOT EXISTS (SELECT 1 FROM json_each(json_extract(data, '$.fits')) f
+                          WHERE json_extract(f.value, '$.source') IS NOT json_extract(data, '$.documents[0]'))""")
+
+
 def test_part_named_by_hardware_code(ratchet):
     """Parts whose only name is a bearing code with a seal suffix (MR106RS, R168-2RS) or a metric screw size (M3X8) in
     their number: the size the code stands for names them (name_source "spec", tools/name_hardware_codes.py in
