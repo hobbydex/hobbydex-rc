@@ -634,3 +634,47 @@ def scaled_name_scales(text, kit_name, brand=""):
     make = r"(?:" + r"[\s-]+".join(map(re.escape, brand.split())) + r"\s+)?" if brand.strip() else ""
     rx = r"(?<![\d./])1\s*[/:]\s*(\d+)(?:th)?\s+(?:scale\s+)?" + make + name + r"(?![a-z0-9])"
     return {"1/" + m.group(1) for m in re.finditer(rx, text or "", re.I)}
+
+
+# dimension-plausible: a car's figures times its scale divisor give the full-size figure, which lies in these bounds
+# (millimetres; weight in grams times the divisor cubed). They catch a wrong unit or a misread digit, not a fine error.
+DIM_FULL_SIZE = {"wheelbase_mm": (800, 9000), "track_mm": (400, 5000), "track_front_mm": (400, 5000),
+                 "track_rear_mm": (400, 5000), "length_mm": (1000, 25000), "width_mm": (500, 6000),
+                 "height_mm": (300, 6000), "ground_clearance_mm": (20, 1500), "weight_g": (1e5, 1e8)}
+
+
+def dim_values(v):
+    """The numbers of a dimension value: a number, a range { min, max } or a list of { mm, label } options."""
+    if isinstance(v, bool):
+        return []
+    if isinstance(v, (int, float)):
+        return [v]
+    if isinstance(v, dict):
+        return [x for x in (v.get("min"), v.get("max")) if isinstance(x, (int, float))]
+    if isinstance(v, list):
+        return [o["mm"] for o in v if isinstance(o, dict) and isinstance(o.get("mm"), (int, float))]
+    return []
+
+
+def scale_divisor(scale):
+    m = re.fullmatch(r"1/(\d+(?:\.\d+)?)", str(scale or "").strip())
+    return float(m.group(1)) if m else None
+
+
+def dimension_problems(dims, scale):
+    """What is implausible in a dimensions table (or a body's wheelbase and track) for a car of this scale: a figure
+    whose full-size equivalent is out of DIM_FULL_SIZE, a wheelbase longer than the car, a track wider than the car."""
+    out = []
+    n = scale_divisor(scale)
+    for k, (lo, hi) in DIM_FULL_SIZE.items():
+        for x in dim_values(dims.get(k)):
+            full = x * (n ** 3 if k == "weight_g" else n) if n else None
+            if full is not None and not lo <= full <= hi:
+                out.append(f"{k} {x:g} at {scale} is {full:g} full size, outside {lo:g}..{hi:g}")
+    wb, ln, wd = dim_values(dims.get("wheelbase_mm")), dim_values(dims.get("length_mm")), dim_values(dims.get("width_mm"))
+    if wb and ln and min(wb) > max(ln):
+        out.append(f"wheelbase {min(wb):g} mm longer than the length {max(ln):g} mm")
+    tracks = [x for k in ("track_mm", "track_front_mm", "track_rear_mm") for x in dim_values(dims.get(k))]
+    if tracks and wd and min(tracks) > max(wd):
+        out.append(f"track {min(tracks):g} mm wider than the width {max(wd):g} mm")
+    return out

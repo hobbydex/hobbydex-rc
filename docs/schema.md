@@ -201,6 +201,32 @@ trim) is a release of that platform, not a kit of its own.
 
 A manual the maker publishes for the platform itself (Tamiya's chassis manuals, Yokomo's B-MAX2 manual) is a document of kind `manual` that lists the platform in its `kits`; the maker's page for a platform (a category, series or technical page, or a product page of a platform sold only as one release) is a `links` row on the kit with `kind = "maker"`. A platform with either, or with a manual or product page on one of its releases, has a manual or page for the audit (platform-no-manual-or-page).
 
+### Dimensions
+
+`dimensions` (optional, on a kit and on a release) is the car's size and weight as the maker states them, in millimetres
+and grams. It sits on the kit (the chassis) when the figures hold for the platform; a release carries its own table
+where the maker states other figures for it (another body, an RTR weight). The site shows a release's own figure and
+falls back to the kit's for each measure.
+
+- `wheelbase_mm` and the track width (`track_mm` when the maker gives one figure for both axles, else `track_front_mm`
+  and `track_rear_mm`) are the main measures: they decide which bodies fit.
+- `length_mm`, `width_mm`, `height_mm`, `ground_clearance_mm` and `weight_g` as stated.
+- Each length is a number, a range `{ min = 256, max = 262 }` for a continuously adjustable or "256-262 mm" figure, or,
+  for the wheelbase and the tracks, a list of the configurable values `[{ mm = 239, label = "L" }, { mm = 225, label = "M" }]`
+  with the maker's label for each (Tamiya's M-chassis S/M/L wheelbases, a TT-02's options).
+- `source` (required): the https URL of the maker page that states the figures, or the id of that page's document.
+- `stated` (optional): the value as printed, for each figure that was converted (`weight_g = "6.8 lb"`,
+  `wheelbase_mm = "12.8 in"`). Inches and pounds or ounces are converted and rounded to whole millimetres and grams; a
+  metric figure keeps its own precision (171.5).
+
+Only figures the maker prints are written, under a label that names them ("Wheelbase", "Radstand", "Empattement",
+"Length", "Gewicht"); a figure is never derived from another or from a body. tools/validate.py checks the forms and the
+source; the invariants (docs/invariants.md, `dimension-plausible`) check that the figures fit the scale.
+
+```toml
+dimensions = { length_mm = 388, width_mm = 171, wheelbase_mm = [{ mm = 239, label = "L" }, { mm = 225, label = "M" }, { mm = 210, label = "S" }], track_front_mm = 148, track_rear_mm = 148, weight_g = 1200, source = "https://www.tamiya.com/english/products/58700/index.html" }
+```
+
 ## release
 
 One sold product: a yearly edition, a Carpet or Dirt version, an RTR, a
@@ -1040,8 +1066,13 @@ rpm_range = [4000, 45000]
 equivalent_to -> spec. Specs are never linked from a release directly.
 
 Bodies carry, when the brand states them, `wheelbase_mm` (the wheelbase
-the body is made for, Killerbody's "Long Wheelbase: 313 mm") and
-`width_mm` (the body's width), with `scale`. The chassis a body is made for
+the body is made for, Killerbody's "Long Wheelbase: 313 mm"), the track it
+is made for (`track_mm`, or `track_front_mm` and `track_rear_mm`) and
+`width_mm` (the body's width), with `scale`. The wheelbase and tracks take the
+forms of a kit's dimensions (a number, a range `{ min, max }` or a list of
+`{ mm, label }` options). The site lists, on a kit, the bodies whose wheelbase
+matches the kit's (equal, or inside the stated range) and whose width or track
+agrees where both state one. The chassis a body is made for
 go into `fits` like any other part.
 
 `chassis_source` (optional, a document id) on a body whose `scale` differs from the scale of the kit it fits: the maker's own
