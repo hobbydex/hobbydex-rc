@@ -1,7 +1,8 @@
 """Parts: names and categories (the data-only checks of the daily audit, under their audit names)."""
-import json, re
+import collections, json, re
 
-from rules import is_aircraft_part, tamiya_maker_linked, twin_class, twin_pairs, unbalanced
+from rules import (is_aircraft_part, item_scales_contradict, kit_words, scaled_name_scales,
+                   tamiya_maker_linked, twin_class, twin_pairs, unbalanced)
 
 
 def test_name_unbalanced_bracket(ratchet, db):
@@ -63,6 +64,43 @@ def test_fits_kit_no_release(ratchet):
         WHERE l.field = 'fits' AND NOT truthy(json_extract(k.data, '$.family'))
           AND k.id NOT IN (SELECT json_extract(data, '$.kit') FROM records WHERE kind = 'release'
             AND json_extract(data, '$.kit') IS NOT NULL)""", blocking=False)
+
+
+def test_fits_scale_contradicts_kit(ratchet, db):
+    """A fits row whose listing names the car at another scale than the kit's: the part's applies_to or the row's
+    notes state a scale for every car they list and none is the kit's ("1/18 Ruckus 4WD" fitted to the 1/10 Ruckus
+    4WD); or the part's name, applies_to or notes put a scale right before the name of a kit that states none, while
+    the brand holds a kit of that scale and that name ("1/16 Mini Slash" fitted to the Mini Slash 4X4, not the 1/16
+    Slash). Move the row to the kit of the listed scale (the importer's car alias), or remove it."""
+    kits = {kid: (json.loads(d) if d else {}) for kid, d in db.execute("SELECT id, data FROM records WHERE kind = 'kit'")}
+    brand_names = {bid: (json.loads(d) or {}).get("name", "") for bid, d in db.execute(
+        "SELECT id, data FROM records WHERE kind = 'brand'")}
+    scaled = collections.defaultdict(list)   # brand -> [(kit id, scale, name words)]
+    for kid, k in kits.items():
+        if k.get("scale") and kit_words(k.get("name")):
+            scaled[k.get("brand")].append((kid, k["scale"], kit_words(k.get("name"))))
+    rows = []
+    for pid, name, applies, row in db.execute("""SELECT r.id, json_extract(r.data, '$.name'),
+            json_extract(r.data, '$.applies_to'), l.row FROM list_rows l JOIN records r ON r.id = l.owner
+            WHERE l.field = 'fits' AND r.kind = 'part'"""):
+        row = json.loads(row)
+        k = kits.get(row.get("kit"))
+        if not k:
+            continue
+        notes = row.get("notes") or ""
+        listed = " ; ".join(x for x in (applies if isinstance(applies, str) else "", notes) if x)
+        if k.get("scale"):
+            if item_scales_contradict(applies if isinstance(applies, str) else "", k["scale"]) or (
+                    item_scales_contradict(notes, k["scale"])):
+                rows.append((pid, f"fits {row['kit']} ({k['scale']}), listed as {listed!r}"))
+            continue
+        text = (name or "") + " ; " + listed
+        at = scaled_name_scales(text, k.get("name"), brand_names.get(k.get("brand"), ""))
+        other = [kid for kid, sc, words in scaled.get(k.get("brand"), [])
+                 if sc in at and words <= kit_words(k.get("name")) and kid != row["kit"]]
+        if other:
+            rows.append((pid, f"fits {row['kit']} (no scale), listed at {'/'.join(sorted(at))}: {other[0]}"))
+    ratchet("fits-scale-contradicts-kit", rows)
 
 
 def test_spec_unlinked(ratchet):

@@ -596,3 +596,41 @@ def edition_pair(a, b):
     if sa and sa == sb and all(c):
         return None   # the site pairs these by item number and name already (colourSiblings.ts)
     return ("colour",) + c
+
+
+# fits-scale-contradicts-kit: a vehicle scale a listing states ("1/16", "1:16", "1/12th"); an inch size ("1/8 in",
+# '1/8"') is no scale
+LISTED_SCALE = re.compile(r'(?<![\d./])1\s*[/:]\s*(5|6|7|8|10|12|14|16|18|24|28|32|35|36|43)(?:th)?(?![\d"]|\s*(?:in|inch)\b)', re.I)
+# the items of a listed car list ("1/18 4WD Temper, 1.9 Barrage"): each item may name a car of its own scale
+LISTED_ITEM = re.compile(r"\s*(?:,|;|&|\band\b|/(?!\d))\s*", re.I)
+# drive, power and package words a kit name carries beside the car's own name ("1/16 Slash 4X4" is the Slash)
+KIT_TRIM = re.compile(r"\b(?:4x4|4wd|2wd|vxl|brushless|brushed|rtr|edition)\b", re.I)
+
+
+def listed_scales(text):
+    """The scales a listing states, as "1/N"."""
+    return {"1/" + m for m in LISTED_SCALE.findall(text or "")}
+
+
+def item_scales_contradict(text, kit_scale):
+    """True when every item of a listed car text states a scale and none of them is the kit's ("1/18 Ruckus 4WD" for
+    a 1/10 kit). An item with no scale may be the kit's car, so it contradicts nothing."""
+    per = [listed_scales(x) for x in LISTED_ITEM.split(text or "") if x.strip()]
+    return bool(kit_scale) and bool(per) and all(per) and kit_scale not in set().union(*per)
+
+
+def kit_words(name):
+    """The words of a kit's name without its scale and its drive, power and package words."""
+    return set(re.findall(r"[a-z0-9]+", KIT_TRIM.sub(" ", re.sub(r"^\d+/\d+\s+", "", name or "")).lower()))
+
+
+def scaled_name_scales(text, kit_name, brand=""):
+    """The scales the text states right before a kit's whole name ("1/16 Mini Slash", "1:16 scale Traxxas Mini
+    Slash", the brand word optional): the text names that car at that scale."""
+    words = (kit_name or "").split()
+    if not words:
+        return set()
+    name = r"[\s-]+".join(map(re.escape, words))
+    make = r"(?:" + r"[\s-]+".join(map(re.escape, brand.split())) + r"\s+)?" if brand.strip() else ""
+    rx = r"(?<![\d./])1\s*[/:]\s*(\d+)(?:th)?\s+(?:scale\s+)?" + make + name + r"(?![a-z0-9])"
+    return {"1/" + m.group(1) for m in re.finditer(rx, text or "", re.I)}
