@@ -2,8 +2,13 @@ id = "part/team-associated/90005R"
 brand = "brand/team-associated"
 number = "90005R"
 name = "SC10 4X4 RTR LUCAS OIL, REFURBISHED"
+seen_by = "2012-04-16"
+seen_by_source = "https://web.archive.org/web/20120416112711/http://www.teamassociated.com/pictures/products/90005R/90005R_md.jpg"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc10-4x4-rtr-lucas-oil-refurb/" },
 ]
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

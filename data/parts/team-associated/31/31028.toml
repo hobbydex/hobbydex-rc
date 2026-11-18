@@ -2,8 +2,13 @@ id = "part/team-associated/31028"
 brand = "brand/team-associated"
 number = "31028"
 name = "TC4 Roll Bar Pivot Cap"
+seen_by = "2011-11-28"
+seen_by_source = "https://web.archive.org/web/20111128061925/http://teamassociated.com/parts/details/31028/"
 gtin = "784695310285"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc4-roll-bar-pivot-cap/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/team-associated/tc4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

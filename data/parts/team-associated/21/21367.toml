@@ -2,8 +2,13 @@ id = "part/team-associated/21367"
 brand = "brand/team-associated"
 number = "21367"
 name = "SC18 Decals, Speed Tech"
+seen_by = "2010-12-18"
+seen_by_source = "https://web.archive.org/web/20101218215631/http://teamassociated.com/pictures/products/21367/21367_sm.jpg"
 gtin = "784695213678"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc18-decals-speed-tech/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/sc18", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

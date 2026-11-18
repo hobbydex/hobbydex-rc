@@ -2,8 +2,14 @@ id = "part/team-associated/21376"
 brand = "brand/team-associated"
 number = "21376"
 name = "RC18LM Mounted Wheels/Tires"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115171613/http://www.teamassociated.com:80/parts/details/21376/"
 gtin = "784695213760"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc18lm-mounted-wheels-tires/" },
 ]
 category = "tire"
+fits = [
+  { kit = "kit/team-associated/rc18lm", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+mounting = "pre-mounted"

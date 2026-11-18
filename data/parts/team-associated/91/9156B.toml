@@ -2,9 +2,14 @@ id = "part/team-associated/9156B"
 brand = "brand/team-associated"
 number = "9156B"
 name = "FT Blue Servo Saver Hub & Collar"
+seen_by = "2001-07-06"
+seen_by_source = "https://web.archive.org/web/20010706032806/http://www.rc10.com:80/shusting/CatalogHub/CatFrames/facteam/9156B_hub_adjnut.jpg"
 gtin = "784695998896"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-blue-servo-saver-hub-collar/" },
 ]
 category = "steering"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/rc10t", releases = ["release/team-associated/7003"], type = "replaces", source = "doc/team-associated/valkyrie-t3-basic-7003-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

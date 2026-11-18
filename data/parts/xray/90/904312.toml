@@ -15,3 +15,6 @@ documents = ["doc/xray/904312-product-page"]
 fits = [
   { kit = "kit/xray/t1", car = "T1M", type = "direct", source = "doc/xray/portal-795" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m3x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

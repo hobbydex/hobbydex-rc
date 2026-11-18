@@ -2,8 +2,20 @@ id = "part/team-associated/91121"
 brand = "brand/team-associated"
 number = "91121"
 name = "FT TiN Heavy-duty Ballstuds, 12 mm, long neck"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127180600/http://teamassociated.com/factoryteam/parts/details/91121/"
 gtin = "784695911215"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-tin-heavy-duty-ballstuds-12-mm-long-neck/" },
 ]
 category = "ball-end"
+equivalent_to = [
+  { spec = "spec/ball-end/12mm-stud", match = "functional" },
+]
+ball_type = "stud"
+fits = [
+  { kit = "kit/team-associated/rc10b5", releases = ["release/team-associated/90000", "release/team-associated/90001", "release/team-associated/90001B", "release/team-associated/90002", "release/team-associated/90003"], type = "direct", source = "doc/team-associated/90000-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10sc5", releases = ["release/team-associated/70006"], type = "direct", source = "doc/team-associated/manual-70006-rc10sc5m-tk", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc10t5", releases = ["release/team-associated/70001"], type = "direct", source = "doc/team-associated/manual-70001-rc10t5m", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90004", "release/team-associated/90008", "release/team-associated/90010"], type = "direct", source = "doc/team-associated/cat-sc104x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

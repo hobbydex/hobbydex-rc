@@ -2,8 +2,13 @@ id = "part/team-associated/92086"
 brand = "brand/team-associated"
 number = "92086"
 name = "B64 Decal Sheet"
+seen_by = "2019-09-15"
+seen_by_source = "https://web.archive.org/web/20190915200904/https://www.associatedelectrics.com/teamassociated/parts/details/92086-ASC92086-b64_decal_sheet/"
 gtin = "784695920866"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/b64-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rc10b64", releases = ["release/team-associated/90014", "release/team-associated/90015", "release/team-associated/90016"], type = "direct", source = "doc/team-associated/manual-b64-90014", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

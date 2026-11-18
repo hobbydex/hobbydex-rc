@@ -11,3 +11,7 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "washer-shim"
 documents = ["doc/xray/372296-product-page"]
+fits = [
+  { kit = "kit/xray/x10", type = "direct", source = "doc/xray/372296-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "carbon"

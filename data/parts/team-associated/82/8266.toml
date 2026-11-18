@@ -2,6 +2,8 @@ id = "part/team-associated/8266"
 brand = "brand/team-associated"
 number = "8266"
 name = "Pinion Gear, 29T 48P, 1/8 shaft"
+seen_by = "2025-03-20"
+seen_by_source = "https://web.archive.org/web/20250320012624/https://60years.associatedelectrics.com/pinion-gear-29t-48p-1-8-shaft/"
 gtin = "784695082663"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/pinion-gear-29t-48p-1-8-shaft/" },
@@ -10,3 +12,8 @@ fits = [
   { kit = "kit/team-associated/rc10", type = "direct", source = "doc/team-associated/store" },
 ]
 category = "pinion"
+teeth = 29
+pitch_dp = 48
+equivalent_to = [
+  { spec = "spec/pinion/48dp-29t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

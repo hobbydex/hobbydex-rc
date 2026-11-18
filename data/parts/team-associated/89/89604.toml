@@ -2,8 +2,14 @@ id = "part/team-associated/89604"
 brand = "brand/team-associated"
 number = "89604"
 name = "Nomad Wheels/Tires, mounted"
+seen_by = "2020-08-08"
+seen_by_source = "https://web.archive.org/web/20200808182201/https://www.associatedelectrics.com/teamassociated/parts/details/89604-ASC89604-nomad_wheels_tires_mounted/"
 gtin = "784695896048"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/nomad-wheels-tires-mounted/" },
 ]
 category = "tire"
+mounting = "pre-mounted"
+fits = [
+  { kit = "kit/team-associated/nomad-db8", releases = ["release/team-associated/80941", "release/team-associated/80941C"], type = "replaces", source = "doc/team-associated/manual-nomaddb8-80941", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,8 +2,14 @@ id = "part/team-associated/25065"
 brand = "brand/team-associated"
 number = "25065"
 name = "Shock Springs, copper, 6.90 lb/in, X-Firm"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125184710/http://teamassociated.com/parts/details/25065/"
 gtin = "784695250659"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/shock-springs-copper-6-90-lb-in-x-firm/" },
 ]
 category = "shock-spring"
+rate_lb_in = 6.9
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

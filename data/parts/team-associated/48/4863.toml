@@ -4,3 +4,6 @@ number = "4863"
 name = "2.5x8mm SHCS"
 documents = ["doc/team-associated/4023-rc12r8-manaul-9-22-2026"]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

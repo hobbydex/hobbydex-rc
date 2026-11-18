@@ -2,9 +2,17 @@ id = "part/team-associated/21352"
 brand = "brand/team-associated"
 number = "21352"
 name = "SC18 Wheels and Tires, mounted, black"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115171949/http://www.teamassociated.com:80/parts/details/21352/"
 gtin = "784695213524"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc18-wheels-and-tires-mounted-black/" },
 ]
 category = "tire"
 color = "black"
+fits = [
+  { kit = "kit/team-associated/sc18", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+vehicle = "short-course"
+mounting = "pre-mounted"
+wheel_color = "black"

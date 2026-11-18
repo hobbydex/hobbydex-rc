@@ -2,8 +2,14 @@ id = "part/team-associated/81281"
 brand = "brand/team-associated"
 number = "81281"
 name = "FT Ti Screws, M4x14 mm BHCS"
+seen_by = "2015-09-28"
+seen_by_source = "https://web.archive.org/web/20150928094147/https://www.teamassociated.com/pictures/products/81281/81281_sm.jpg"
 gtin = "784695812819"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-ti-screws-m4x14-mm-bhcs/" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m4x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+material = "titanium"

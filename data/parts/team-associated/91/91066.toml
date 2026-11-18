@@ -2,8 +2,15 @@ id = "part/team-associated/91066"
 brand = "brand/team-associated"
 number = "91066"
 name = "13 mm Pistons, 4x1.3 mm"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127183926/http://teamassociated.com/parts/details/91066/"
 gtin = "784695910669"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/13-mm-pistons-4x1-3-mm/" },
 ]
 category = "shock"
+shock_part = "piston"
+bore_mm = 13
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90004", "release/team-associated/90008", "release/team-associated/90010"], type = "replaces", source = "doc/team-associated/cat-sc104x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

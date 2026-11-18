@@ -14,3 +14,6 @@ documents = ["doc/xray/910258-product-page"]
 fits = [
   { kit = "kit/xray/m18", releases = ["release/xray/380002", "release/xray/380003"], type = "direct", source = "doc/xray/portal-1966" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2.5x8-countersunk-phillips", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

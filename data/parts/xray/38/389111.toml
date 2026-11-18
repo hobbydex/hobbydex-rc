@@ -12,3 +12,10 @@ documents = ["doc/xray/389111-product-page"]
 fits = [
   { kit = "kit/xray/xb8", releases = ["release/xray/350100"], type = "direct", source = "doc/xray/portal-1384" },
 ]
+chemistry = "nimh"
+cells = 5
+voltage = 6.0
+capacity_mah = 1200
+equivalent_to = [
+  { spec = "spec/battery/nimh-5s-1200mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

@@ -2,8 +2,13 @@ id = "part/team-associated/81400"
 brand = "brand/team-associated"
 number = "81400"
 name = "RC8B3 Rod Ends, 5 mm"
+seen_by = "2022-12-04"
+seen_by_source = "https://web.archive.org/web/20221204021114/https://www.associatedelectrics.com/teamassociated/parts/details/81400-ASC81400-rc8b3_rod_ends_5mm/"
 gtin = "784695814004"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8b3-rod-ends-5-mm/" },
 ]
 category = "rod-end"
+fits = [
+  { kit = "kit/team-associated/rc8b3", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

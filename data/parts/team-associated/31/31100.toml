@@ -2,8 +2,14 @@ id = "part/team-associated/31100"
 brand = "brand/team-associated"
 number = "31100"
 name = "FT TC4 Carbon Front Shock Tower, 2.5 mm"
+seen_by = "2008-05-17"
+seen_by_source = "https://web.archive.org/web/20080517101917/http://www.teamassociated.com:80/enlarge/31100.htm"
 gtin = "784695311008"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-tc4-carbon-front-shock-tower-2-5-mm/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/tc4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "carbon"

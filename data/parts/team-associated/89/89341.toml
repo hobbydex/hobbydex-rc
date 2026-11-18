@@ -2,8 +2,16 @@ id = "part/team-associated/89341"
 brand = "brand/team-associated"
 number = "89341"
 name = "16x32 mm Springs, bronze, 5.90 lb/in"
+seen_by = "2011-11-26"
+seen_by_source = "https://web.archive.org/web/20111126144931/http://teamassociated.com/parts/details/89341/"
 gtin = "784695893412"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/16x32-mm-springs-bronze-5-90-lb-in/" },
 ]
 category = "shock-spring"
+rate_lb_in = 5.9
+range = "team-associated/x-springs-rate-springs"
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80901-25"], type = "replaces", source = "doc/team-associated/cat-rc8e", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc8t", releases = ["release/team-associated/80911-25", "release/team-associated/80912", "release/team-associated/80915"], type = "replaces", source = "doc/team-associated/cat-rc8t", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

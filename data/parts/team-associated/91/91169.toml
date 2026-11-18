@@ -2,8 +2,13 @@ id = "part/team-associated/91169"
 brand = "brand/team-associated"
 number = "91169"
 name = "SC10 4x4 Decal Sheet"
+seen_by = "2012-01-06"
+seen_by_source = "https://web.archive.org/web/20120106222249/http://www.teamassociated.com:80/parts/details/91169/"
 gtin = "784695911697"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc10-4x4-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

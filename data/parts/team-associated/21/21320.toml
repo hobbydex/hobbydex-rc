@@ -2,8 +2,16 @@ id = "part/team-associated/21320"
 brand = "brand/team-associated"
 number = "21320"
 name = "Spur Gear Pulley Set"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127045725/http://teamassociated.com/parts/details/21320/"
 gtin = "784695213203"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/spur-gear-pulley-set/" },
 ]
 category = "spur-gear"
+fits = [
+  { kit = "kit/team-associated/rc18b", releases = ["release/team-associated/20106", "release/team-associated/20108"], type = "replaces", source = "doc/team-associated/20106-cat-rc18t2-b2rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18lm", releases = ["release/team-associated/20130"], type = "replaces", source = "doc/team-associated/rc18lm-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18t", releases = ["release/team-associated/20101", "release/team-associated/20103", "release/team-associated/20104"], type = "replaces", source = "doc/team-associated/20104-cat-rc18t2-b2rtr", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc18", releases = ["release/team-associated/20121"], type = "replaces", source = "doc/team-associated/cat-sc18", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

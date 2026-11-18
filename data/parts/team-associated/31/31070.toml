@@ -2,8 +2,13 @@ id = "part/team-associated/31070"
 brand = "brand/team-associated"
 number = "31070"
 name = "TC4 Decal Sheet, black and white"
+seen_by = "2006-03-20"
+seen_by_source = "https://web.archive.org/web/20060320165734/http://www.rc10.com/enlarge/31070.htm"
 gtin = "784695310704"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc4-decal-sheet-black-and-white/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/tc4", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

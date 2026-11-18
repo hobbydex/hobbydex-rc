@@ -11,3 +11,6 @@ links = [
   { site = "Tamiya Germany", url = "https://customer-service.tamiya.de/en/service/manuals/?lp=18&ln=90&ls=name-asc&ps=", kind = "maker" },
 ]
 name_source = "manufacturer"
+fits = [
+  { kit = "kit/tamiya/tamtech-modern", releases = ["release/tamiya/57605"], type = "replaces", source = "doc/tamiya/57605-manual-de", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -9,3 +9,7 @@ links = [
 ]
 category = "chassis"
 documents = ["doc/xray/306519-product-page"]
+material = "aluminium"
+fits = [
+  { kit = "kit/xray/x4f", releases = ["release/xray/x4f-2027"], type = "replaces", source = "doc/xray/x4f-2027-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

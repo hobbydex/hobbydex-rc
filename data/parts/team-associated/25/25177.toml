@@ -2,9 +2,14 @@ id = "part/team-associated/25177"
 brand = "brand/team-associated"
 number = "25177"
 name = "Monster GT Prepainted Body, Red"
+seen_by = "2011-03-07"
+seen_by_source = "https://web.archive.org/web/20110307034915/http://teamassociated.com:80/parts/details/25177/"
 gtin = "784695251779"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/monster-gt-prepainted-body-red/" },
 ]
 category = "body"
 color = "red"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503"], type = "replaces", source = "doc/team-associated/mgt4-60se-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

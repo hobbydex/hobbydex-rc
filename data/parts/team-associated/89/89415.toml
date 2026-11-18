@@ -2,8 +2,13 @@ id = "part/team-associated/89415"
 brand = "brand/team-associated"
 number = "89415"
 name = "SC8 Slick Mist Decal Sheet"
+seen_by = "2012-11-06"
+seen_by_source = "https://web.archive.org/web/20121106053721/http://teamassociated.com/parts/details/89415/"
 gtin = "784695894150"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc8-slick-mist-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/sc8", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

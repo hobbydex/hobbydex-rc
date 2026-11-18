@@ -11,3 +11,6 @@ pack_qty = 10
 pack_qty_basis = "name"
 category = "washer-shim"
 documents = ["doc/xray/962050-product-page"]
+equivalent_to = [
+  { spec = "spec/washer/5x10x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

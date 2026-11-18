@@ -7,3 +7,8 @@ links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/spur-gear-70t-5-mod/" },
 ]
 category = "spur-gear"
+teeth = 70
+fits = [
+  { kit = "kit/team-associated/reflex-14b", releases = ["release/team-associated/20175", "release/team-associated/20175C"], type = "replaces", source = "doc/team-associated/20175c-reflex14-manual-11-18-2019", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/reflex-14t", releases = ["release/team-associated/20176"], type = "replaces", source = "doc/team-associated/reflex14-manual-11-18-2019", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

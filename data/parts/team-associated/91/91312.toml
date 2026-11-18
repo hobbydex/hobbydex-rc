@@ -2,8 +2,13 @@ id = "part/team-associated/91312"
 brand = "brand/team-associated"
 number = "91312"
 name = "12mm Mounting Hardware"
+seen_by = "2013-05-02"
+seen_by_source = "https://web.archive.org/web/20130502042757/http://teamassociated.com/parts/details/91312/"
 gtin = "784695913127"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/12mm-mounting-hardware/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/sc10", releases = ["release/team-associated/7081", "release/team-associated/7081C", "release/team-associated/7082C"], type = "replaces", source = "doc/team-associated/manual-sc10-3-7081-7082b", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

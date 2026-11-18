@@ -2,8 +2,13 @@ id = "part/team-associated/92304"
 brand = "brand/team-associated"
 number = "92304"
 name = "RC10B74.1 Decal Sheet"
+seen_by = "2021-04-10"
+seen_by_source = "https://web.archive.org/web/20210410192512/https://www.associatedelectrics.com/teamassociated/parts/details/92304/"
 gtin = "784695923041"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b74-1-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rc10b74", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

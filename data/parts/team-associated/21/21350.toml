@@ -2,8 +2,15 @@ id = "part/team-associated/21350"
 brand = "brand/team-associated"
 number = "21350"
 name = "SC18 Tires and Inserts"
+seen_by = "2011-11-28"
+seen_by_source = "https://web.archive.org/web/20111128011418/http://teamassociated.com/parts/details/21350/"
 gtin = "784695213500"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc18-tires-and-inserts/" },
 ]
 category = "tire"
+fits = [
+  { kit = "kit/team-associated/sc18", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+vehicle = "short-course"
+mounting = "unmounted"

@@ -2,9 +2,15 @@ id = "part/team-associated/7469"
 brand = "brand/team-associated"
 number = "7469"
 name = "T4 Painted Body, flames, blue"
+seen_by = "2025-04-17"
+seen_by_source = "https://web.archive.org/web/20250417190635/https://60years.associatedelectrics.com/t4-painted-body-flames-blue/"
 gtin = "784695074699"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/t4-painted-body-flames-blue/" },
 ]
 category = "body"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/rc10t4", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/10"

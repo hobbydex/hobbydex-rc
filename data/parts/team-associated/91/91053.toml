@@ -2,9 +2,17 @@ id = "part/team-associated/91053"
 brand = "brand/team-associated"
 number = "91053"
 name = "13x30 mm Shock Kit, blue"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127155926/http://teamassociated.com/parts/details/91053/"
 gtin = "784695910539"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/13x30-mm-shock-kit-blue/" },
 ]
 category = "shock"
 color = "blue"
+shock_part = "complete"
+bore_mm = 13
+length_mm = 30
+fits = [
+  { kit = "kit/team-associated/sc10-4x4", releases = ["release/team-associated/90004", "release/team-associated/90008", "release/team-associated/90010"], type = "replaces", source = "doc/team-associated/cat-sc104x4", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

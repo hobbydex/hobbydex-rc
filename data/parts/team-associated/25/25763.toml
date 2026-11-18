@@ -2,8 +2,13 @@ id = "part/team-associated/25763"
 brand = "brand/team-associated"
 number = "25763"
 name = "RIVAL-MT Front Bumper"
+seen_by = "2013-06-20"
+seen_by_source = "https://web.archive.org/web/20130620123820/http://teamassociated.com/parts/details/25763/"
 gtin = "784695257634"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rival-mt-front-bumper/" },
 ]
 category = "bumper-guard"
+fits = [
+  { kit = "kit/team-associated/rival", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

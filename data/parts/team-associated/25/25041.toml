@@ -2,8 +2,13 @@ id = "part/team-associated/25041"
 brand = "brand/team-associated"
 number = "25041"
 name = "MGT SE Assembled .28 Transmission, Complete"
+seen_by = "2006-03-20"
+seen_by_source = "https://web.archive.org/web/20060320165808/http://www.rc10.com/enlarge/25041.htm"
 gtin = "784695250413"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/mgt-se-assembled-28-transmission-complete/" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503"], type = "replaces", source = "doc/team-associated/mgt4-60se-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

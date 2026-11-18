@@ -2,9 +2,15 @@ id = "part/team-associated/91216"
 brand = "brand/team-associated"
 number = "91216"
 name = "SC10B Blue AE Body, painted"
+seen_by = "2012-10-14"
+seen_by_source = "https://web.archive.org/web/20121014143805/http://www.teamassociated.com:80/parts/details/91216/"
 gtin = "784695912168"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc10b-blue-ae-body-painted/" },
 ]
 category = "body"
 color = "blue"
+fits = [
+  { kit = "kit/team-associated/sc10b", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/10"

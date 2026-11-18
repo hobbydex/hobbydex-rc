@@ -2,8 +2,14 @@ id = "part/team-associated/81415"
 brand = "brand/team-associated"
 number = "81415"
 name = "RC8T3.1 FT Arm Stiffeners, rear, carbon fiber"
+seen_by = "2023-06-18"
+seen_by_source = "https://web.archive.org/web/20230618205231/https://img2.associatedelectrics.com/pdf/cars_and_trucks/shared/81415-inst.pdf"
 gtin = "784695814158"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8t3-1-ft-arm-stiffeners-rear-carbon-fiber/" },
 ]
 category = "suspension"
+fits = [
+  { kit = "kit/team-associated/rc8t3", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+material = "carbon"

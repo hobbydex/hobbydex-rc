@@ -2,8 +2,13 @@ id = "part/team-associated/91614"
 brand = "brand/team-associated"
 number = "91614"
 name = "RC10B5 Series Decal Sheet"
+seen_by = "2015-04-22"
+seen_by_source = "https://web.archive.org/web/20150422021227/http://www.teamassociated.com:80/parts/details/91614/"
 gtin = "784695916142"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10b5-series-decal-sheet/" },
 ]
 category = "decal"
+fits = [
+  { kit = "kit/team-associated/rc10b5", type = "direct", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

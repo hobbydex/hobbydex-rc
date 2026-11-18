@@ -2,8 +2,13 @@ id = "part/team-associated/92089"
 brand = "brand/team-associated"
 number = "92089"
 name = "B64 Slipper Kit"
+seen_by = "2021-09-25"
+seen_by_source = "https://web.archive.org/web/20210925143245/https://img2.associatedelectrics.com/pdf/cars_and_trucks/shared/92089-B64-Slipper-Kit-Supplement.pdf"
 gtin = "784695920897"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/b64-slipper-kit/" },
 ]
 category = "gear"
+fits = [
+  { kit = "kit/team-associated/rc10b64", releases = ["release/team-associated/90014", "release/team-associated/90015", "release/team-associated/90016"], type = "replaces", source = "doc/team-associated/manual-b64-90014", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

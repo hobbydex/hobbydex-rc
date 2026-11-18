@@ -2,8 +2,15 @@ id = "part/team-associated/89459"
 brand = "brand/team-associated"
 number = "89459"
 name = "FT 16 mm Pistons, 8x1.3 mm"
+seen_by = "2010-11-29"
+seen_by_source = "https://web.archive.org/web/20101129082910/http://teamassociated.com/pictures/products/89459/89459_sm.jpg"
 gtin = "784695894594"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-16-mm-pistons-8x1-3-mm/" },
 ]
 category = "shock"
+shock_part = "piston"
+bore_mm = 16
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80908", "release/team-associated/80908C"], type = "replaces", source = "doc/team-associated/rc8-2e-rtr-manual-and-catalog-6-17-2015", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

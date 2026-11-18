@@ -2,8 +2,16 @@ id = "part/team-associated/21192"
 brand = "brand/team-associated"
 number = "21192"
 name = "18R Shock Rebuild Kit"
+seen_by = "2010-11-15"
+seen_by_source = "https://web.archive.org/web/20101115182250/http://www.teamassociated.com:80/parts/details/21192/"
 gtin = "784695211926"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/18r-shock-rebuild-kit/" },
 ]
 category = "shock"
+shock_part = "rebuild-kit"
+fits = [
+  { kit = "kit/team-associated/rc18lm", releases = ["release/team-associated/20130"], type = "replaces", source = "doc/team-associated/rc18lm-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18t", releases = ["release/team-associated/20103"], type = "replaces", source = "doc/team-associated/rc18t2-b2team-manual-catalog", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/sc18", releases = ["release/team-associated/20121"], type = "replaces", source = "doc/team-associated/cat-sc18", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

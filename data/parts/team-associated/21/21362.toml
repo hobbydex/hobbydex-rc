@@ -2,8 +2,14 @@ id = "part/team-associated/21362"
 brand = "brand/team-associated"
 number = "21362"
 name = "SC18 BODY, ROCKSTAR"
+seen_by = "2010-09-20"
+seen_by_source = "https://web.archive.org/web/20100920102806/http://www.teamassociated.com:80/parts/details/21362/"
 gtin = "784695213623"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/sc18-body-rockstar/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/sc18", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
+scale = "1/18"

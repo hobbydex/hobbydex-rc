@@ -2,8 +2,13 @@ id = "part/team-associated/25566"
 brand = "brand/team-associated"
 number = "25566"
 name = "Pivot Balls"
+seen_by = "2011-11-27"
+seen_by_source = "https://web.archive.org/web/20111127203106/http://teamassociated.com/parts/details/25566/"
 gtin = "784695255661"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/pivot-balls-part-25566/" },
 ]
 category = "ball-end"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "direct", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

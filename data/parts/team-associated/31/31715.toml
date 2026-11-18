@@ -2,9 +2,16 @@ id = "part/team-associated/31715"
 brand = "brand/team-associated"
 number = "31715"
 name = "FT Springs, white, 13.8 lb"
+seen_by = "2019-07-18"
+seen_by_source = "https://web.archive.org/web/20190718174913/https://www.associatedelectrics.com/teamassociated/parts/details/31715-ASC31715-ft_white_springs_13_8_lb/"
 gtin = "784695317154"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-springs-white-13-8-lb/" },
 ]
 category = "shock-spring"
 color = "white"
+rate_lb_in = 13.8
+range = "team-associated/ft-springs-rate-springs"
+fits = [
+  { kit = "kit/team-associated/tc7", releases = ["release/team-associated/30120"], type = "replaces", source = "doc/team-associated/manual-30120-tc7", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

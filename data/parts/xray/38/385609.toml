@@ -13,3 +13,8 @@ fits = [
   { kit = "kit/xray/m18mt", releases = ["release/xray/380600"], type = "replaces", source = "doc/xray/portal-1511" },
   { kit = "kit/xray/m18t", releases = ["release/xray/380500"], type = "replaces", source = "doc/xray/portal-1490" },
 ]
+teeth = 9
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-9t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

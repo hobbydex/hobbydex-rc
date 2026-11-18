@@ -2,8 +2,13 @@ id = "part/team-associated/25501"
 brand = "brand/team-associated"
 number = "25501"
 name = "MGT 3.0 Body, printed, yellow, blue, white"
+seen_by = "2011-03-10"
+seen_by_source = "https://web.archive.org/web/20110310035829/http://teamassociated.com:80/parts/details/25501/"
 gtin = "784695255012"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/mgt-3-0-body-printed-yellow-blue-white/" },
 ]
 category = "body"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20515"], type = "replaces", source = "doc/team-associated/cat-mmgt", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

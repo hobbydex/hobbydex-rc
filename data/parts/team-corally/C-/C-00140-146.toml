@@ -7,3 +7,7 @@ documents = ["doc/team-corally/c-00140-sbx410-manual-en-fr-de-nl"]
 name_source = "manual"
 category = "turnbuckle"
 name_fr = "Turnbuckle 54mm - Titane"
+material = "titanium"
+fits = [
+  { kit = "kit/team-corally/sbx410", type = "replaces", replaces = "part/team-corally/C-00140-057", source = "doc/team-corally/c-00140-sbx410-manual-en-fr-de-nl", notes = "Same part in another material (link_upgrades.py)" },
+]

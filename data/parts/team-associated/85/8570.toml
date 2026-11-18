@@ -2,9 +2,15 @@ id = "part/team-associated/8570"
 brand = "brand/team-associated"
 number = "8570"
 name = "FT Screws, Blue Aluminum M4x12 mm FHCS"
+seen_by = "2025-12-12"
+seen_by_source = "https://web.archive.org/web/20251212211502/https://60years.associatedelectrics.com/ft-screws-blue-aluminum-m4x12-mm-fhcs/"
 gtin = "784695085701"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-screws-blue-aluminum-m4x12-mm-fhcs/" },
 ]
 category = "screw"
 color = "blue"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/screw/m4x12-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

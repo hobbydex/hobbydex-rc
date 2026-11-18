@@ -9,3 +9,7 @@ links = [
 ]
 category = "drivetrain"
 documents = ["doc/xray/375039-product-page"]
+material = "aluminium"
+fits = [
+  { kit = "kit/xray/x10", releases = ["release/xray/x10-2026"], type = "replaces", source = "doc/xray/x10-2026-manual", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

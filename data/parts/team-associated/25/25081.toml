@@ -2,8 +2,13 @@ id = "part/team-associated/25081"
 brand = "brand/team-associated"
 number = "25081"
 name = "Assembled Differential"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125172851/http://teamassociated.com/parts/details/25081/"
 gtin = "784695250819"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/assembled-differential/" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/team-associated/mgt", releases = ["release/team-associated/20503", "release/team-associated/20504"], type = "replaces", source = "doc/team-associated/cat-mgt8", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

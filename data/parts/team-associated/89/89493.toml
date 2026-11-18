@@ -2,8 +2,15 @@ id = "part/team-associated/89493"
 brand = "brand/team-associated"
 number = "89493"
 name = "FT 16 mm Pistons, 5x1.1 + 5x1.3"
+seen_by = "2012-06-22"
+seen_by_source = "https://web.archive.org/web/20120622021253/http://www.teamassociated.com/pictures/products/89493/89493_lg.jpg"
 gtin = "784695894938"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/ft-16-mm-pistons-5x1-1-5x1-3/" },
 ]
 category = "shock"
+shock_part = "piston"
+bore_mm = 16
+fits = [
+  { kit = "kit/team-associated/rc8", releases = ["release/team-associated/80908", "release/team-associated/80908C"], type = "replaces", source = "doc/team-associated/rc8-2e-rtr-manual-and-catalog-6-17-2015", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,9 +2,17 @@ id = "part/team-associated/21302"
 brand = "brand/team-associated"
 number = "21302"
 name = "Apex 1:18 Spoked Wheels, gold"
+seen_by = "2010-11-18"
+seen_by_source = "https://web.archive.org/web/20101118041909/http://teamassociated.com:80/parts/details/21302/"
 gtin = "784695213029"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/apex-1-18-spoked-wheels-gold/" },
 ]
 category = "wheel"
 color = "gold"
+scale = "1/18"
+fits = [
+  { kit = "kit/team-associated/apex-18", releases = ["release/team-associated/20119"], type = "replaces", source = "doc/team-associated/manual-apexmini", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rc18r", releases = ["release/team-associated/20115"], type = "replaces", source = "doc/team-associated/cat-18r", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/team-associated/rival-18", releases = ["release/team-associated/20111"], type = "replaces", source = "doc/team-associated/apex-mini-rival-mini-manual-3-5-2013", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

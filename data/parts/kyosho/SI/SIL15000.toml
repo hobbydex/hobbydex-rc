@@ -6,9 +6,12 @@ seen_by = "2017-11-01"
 seen_by_source = "https://web.archive.org/web/20171101225327/http://rc.kyosho.com/media/catalog/product/cache/1/small_image/500x375/9df78eab33525d08d6e5fb8d27136e95/_/s/_sil15000.jpg"
 gtin = "4548565305513"
 documents = ["doc/kyosho/30048-lazer-zx7-im"]
-category = "misc"
-category_source = "fallback"
+category = "oil-grease"
 name_source = "manufacturer"
 links = [
   { site = "Kyosho (Internet Archive)", url = "https://web.archive.org/web/20201001052945/https://rc.kyosho.com/en/sil15000.html", kind = "archive" },
+]
+volume_ml = 40
+equivalent_to = [
+  { spec = "spec/oil/silicone-15000cst", match = "functional", notes = "Viscosity number #15000 as the brand states it, on the cSt scale; measuring temperature not given" },
 ]

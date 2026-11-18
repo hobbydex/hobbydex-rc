@@ -11,3 +11,6 @@ pack_qty = 2
 pack_qty_basis = "name"
 category = "steering"
 documents = ["doc/xray/342292-product-page"]
+fits = [
+  { kit = "kit/xray/x8", type = "replaces", source = "doc/xray/342292-product-page", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

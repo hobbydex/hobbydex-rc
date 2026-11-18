@@ -2,8 +2,13 @@ id = "part/team-associated/25705"
 brand = "brand/team-associated"
 number = "25705"
 name = "Screws, M5x13 mm SHCS"
+seen_by = "2011-11-25"
+seen_by_source = "https://web.archive.org/web/20111125155341/http://teamassociated.com/parts/details/25705/"
 gtin = "784695257054"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/screws-m5x13-mm-shcs/" },
 ]
 category = "screw"
+equivalent_to = [
+  { spec = "spec/screw/m5x13-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
