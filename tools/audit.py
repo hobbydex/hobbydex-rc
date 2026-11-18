@@ -70,14 +70,6 @@ def load(root):
     return db
 
 
-def used_spec_ids(parts):
-    """The spec ids a part uses: equivalent_to (a part's own spec), includes (a set's piece) and protocols (a radio's protocol list)."""
-    used = {e["spec"] for p in parts for e in p.get("equivalent_to", []) if isinstance(e, dict) and "spec" in e}
-    used |= {i["spec"] for p in parts for i in p.get("includes", []) if isinstance(i, dict) and "spec" in i}
-    used |= {s for p in parts for s in p.get("protocols", []) if isinstance(s, str)}
-    return used
-
-
 def url_for(item):
     i = item["id"]
     kind, _, rest = i.partition("/")
@@ -255,23 +247,6 @@ NOT_MANUAL_NAME = re.compile(r"msds|sicherheit|safety|warning|hinweis|akku|batte
 # of "商品に関するお知らせ" (delivery dates of the named parts), never a manual.
 
 
-# Parts of brands that also sell aircraft, helicopters and drones. The data covers ground vehicles (docs/vision.md:
-# helicopters, boats, planes and FPV are not curated), so these parts have no car to link and part-no-car-link
-# counts them apart. T2M's spare-part numbers start with the item code of the model ("T5190-01" is a part of T5190);
-# each prefix is an aircraft, helicopter or drone item whose cached t2m.fr pages name propellers, wings, landing gear,
-# Spyrit/Exocet/Spark models and the like.
-AIRCRAFT_PREFIXES = {"brand/t2m": frozenset(
-    "T4511 T4515 T4516 T4517 T4518 T4519 T4520 T4521 T4522 T4523 T4524 T4531 T4540 T4549 T4578 T4588 T4591 T4594 T4599 "
-    "T5120 T5130 T5146 T5157 T5158 T5161 T5166 T5167 T5170 T5172 T5175 T5176 T5180 T5181 T5184 T5187 T5188 T5189 T5190 "
-    "T5191 T5192 T5194 T5195 T5196 T5197 T620 T621 T622 T624 T625".split())}
-
-
-def is_aircraft_part(part):
-    """True for a part of an aircraft, helicopter or drone item (AIRCRAFT_PREFIXES): out of scope for car links."""
-    prefixes = AIRCRAFT_PREFIXES.get(part.get("brand"))
-    return bool(prefixes) and str(part.get("number", "")).split("-")[0].upper() in prefixes
-
-
 def name_slug(path):
     """The file name of a path or address without its extension, lower case, letters and digits only."""
     base = os.path.basename(urllib.parse.unquote(urllib.parse.urlsplit(path).path))
@@ -356,28 +331,6 @@ def not_manual_name(stem):
 # is 3000 + the item number (cache/manuals/tamiya-de/<article>). Option parts (40000-56999), RC cars and tanks (56-58xxx),
 # the 70xxx crawlers and every number the data has as a Tamiya release or part stay in the check.
 TAMIYA_STATIC = ((10000, 39999), (60000, 61999), (74000, 89999))
-
-
-TAMIYA_CAPTURE = re.compile(r"^https?://web\.archive\.org/web/\d{14}\w*/https?://(?:www\.)?tamiya(?:usa)?\.com(?::\d+)?/")
-
-
-def tamiya_maker_linked(links):
-    """True when a Tamiya record links its maker's page: the Tamiya product link (no kind), a kind "maker" link, or a kind
-    "archive" capture of a tamiya.com or tamiyausa.com page (the page is gone; schema.md). Dealer and fan-site links never count."""
-    for l in links:
-        kind = l.get("kind")
-        if (kind is None and l.get("site") == "Tamiya") or kind == "maker":
-            return True
-        if kind == "archive" and TAMIYA_CAPTURE.match(l.get("url", "")):
-            return True
-    return False
-
-
-def tamiya_label_only(part):
-    """True when a Tamiya spare's name comes from OCR of a manual and it has no maker page (the caller checks the link):
-    a bag or parts-tree label ("A Parts", "Differential Gear Bag") or a part name read off a manual page. The maker
-    sells no spare page for such a number, so a missing maker link is no defect."""
-    return part.get("name_source") == "ocr"
 
 
 HORIZON_LIST_KINDS = ("exploded_view", "part_list", "manual", "supplement")   # documents that list parts, not pages that sell them
@@ -579,70 +532,6 @@ def load_tools(tools):
     return out
 
 
-def kit_without_release(kits, rels_of_kit, kit_id):
-    """A fits row's kit that has no release to name. A family kit (family = true) is a label parts fit, not a car: no release is owed."""
-    return kit_id in kits and not kits[kit_id].get("family") and not rels_of_kit.get(kit_id)
-
-
-SUFFIX_TAIL = re.compile(r"-\d{1,2}|-?[A-Za-z][A-Za-z0-9]{0,3}")
-
-
-def number_relation(a, b):
-    """True when one item number is the other plus a suffix (34902 / 34902D, 10428 / 10428-2)."""
-    a, b = str(a or "").strip().upper(), str(b or "").strip().upper()
-    if len(a) == len(b) or not a or not b:
-        return False
-    short, long_ = (a, b) if len(a) < len(b) else (b, a)
-    return len(short) >= 5 and short[:5].isdigit() and long_.startswith(short) and SUFFIX_TAIL.fullmatch(long_[len(short):]) is not None
-
-
-def same_product_record(a, b):
-    """Whether two release records name one product: the same barcode, or the same maker page with no different barcode."""
-    if a.get("gtin") and b.get("gtin"):
-        return str(a["gtin"]) == str(b["gtin"])
-    sa, sb = a.get("released_source"), b.get("released_source")
-    return bool(sa and sb and sa.lower().rstrip("/") == sb.lower().rstrip("/"))
-
-
-def suffix_twin_pairs(rels, reviewed=frozenset()):
-    """Pairs of releases of one brand whose numbers differ only by a suffix and that name one product (same_product_record).
-    reviewed: frozensets of the two ids of pairs confirmed as distinct SKUs (data/confirmed-distinct.toml [[release_pair]])."""
-    groups = collections.defaultdict(list)
-    for r in rels:
-        if r.get("brand") and r.get("number"):
-            groups[(r["brand"], str(r["number"])[:5])].append(r)
-    out = []
-    for g in groups.values():
-        for i, a in enumerate(g):
-            for b in g[i + 1:]:
-                if number_relation(a["number"], b["number"]) and same_product_record(a, b) and frozenset((a["id"], b["id"])) not in reviewed:
-                    out.append((a, b))
-    return out
-
-
-def by_brand(parts):
-    """The parts grouped by brand, each group in data order (groups in first-seen order)."""
-    groups = collections.OrderedDict()
-    for p in parts:
-        groups.setdefault(p.get("brand"), []).append(p)
-    return list(groups.values())
-
-
-# A real vehicle's model under two names in one make: the name without these words is the same (Actros 3363 and
-# Actros 3363 GigaSpace). Colour, decoration and body words, chassis and kit codes are not part of the vehicle.
-NEAR_DUP_WORDS = re.compile(r"\b(gigaspace|streamspace|classicspace|rtr|body|decoration|non[\s-]?deco|nondecoration|pick[\s-]?up|truck|190mm|tough[\s-]color|fcx\d*\w*|fsc\d*\w*|crc)\b")
-# Pairs that stay apart on purpose: the pick-up body of a model that also has its own name
-NEAR_DUP_KEPT = {("Nissan", "sunny"), ("Toyota", "fj45"), ("Toyota", "landcruiser40")}
-
-
-def near_dup_key(model):
-    return re.sub(r"[^a-z0-9]+", "", NEAR_DUP_WORDS.sub(" ", model.lower()))
-
-
-def norm_name(name):
-    return " ".join(re.sub(r"[^a-z0-9]+", " ", name.lower()).split())
-
-
 def text_layer_numbers(path):
     """The numbers a maker text layer prints: the first column of cache/notes/<brand>/text-layer-numbers.tsv
     (written by tools/ocr_numbers.py --build-text). A missing file gives none."""
@@ -683,83 +572,6 @@ def both_reviewed(a, b, reviewed):
 def printed_pair(a, b, printed):
     """Both numbers of a twin pair are printed in a maker text layer: two parts, not one misread number."""
     return str(a["number"]) in printed and str(b["number"]) in printed
-
-
-def twin_pairs(parts):
-    """Records with the same number and the same normalised name under two different brands.
-
-    A name that is only the number is no name (the part-named-by-number class covers it), so such records never pair.
-    """
-    by_number = collections.defaultdict(list)
-    for p in parts:
-        if p.get("number") and p.get("name") and norm_name(p["name"]) != norm_name(str(p["number"])):
-            by_number[p["number"]].append(p)
-    out = []
-    for ps in by_number.values():
-        for i, a in enumerate(ps):
-            for b in ps[i + 1:]:
-                if a["brand"] != b["brand"] and norm_name(a["name"]) == norm_name(b["name"]):
-                    out.append((a, b))
-    return out
-
-
-def _host(url):
-    host = urllib.parse.urlsplit(url or "").hostname or ""
-    return host[4:] if host.startswith("www.") else host
-
-
-TWIN_MEASURES = ("power_w", "weight_g", "dimensions_mm", "teeth", "kv", "diameter_mm", "length_mm", "width_mm", "shaft_mm")
-
-
-def twin_class(a, b, brands, companies, docs):
-    """shared: the brands are related (same owner, or one owns the other) and each record cites its own brand's source.
-    shared also covers a pair where one record names the other in rebrand_of (one product under two brands) and a pair that
-    states different values for a measure (TWIN_MEASURES: two products).
-    copy: a record's source or link is the other brand's site or one of its documents.
-    unclear: anything else."""
-    def sources(p):
-        return [d for d in p.get("documents", [])] + [e.get("source") for e in p.get("fits", []) + p.get("equivalent_to", [])]
-
-    def cites(p, brand):
-        site = _host(brands.get(brand, {}).get("website", ""))
-        if any(docs.get(d, {}).get("brand") == brand for d in sources(p) if d):
-            return True
-        return bool(site) and any(_host(l.get("url")) == site for l in p.get("links", []))
-
-    def related(x, y):
-        ox = brands.get(x, {}).get("owner")
-        oy = brands.get(y, {}).get("owner")
-        if ox and ox == oy:
-            return True
-        return any(companies.get(o, {}).get("brand") == other for o, other in ((ox, y), (oy, x)) if o)
-
-    # a pair one of whose records names the other in rebrand_of is one product sold under two brands (each brand's catalogue
-    # keeps its own record); a pair that states different values for one measure is two products
-    if any(r.get("part") in (a["id"], b["id"]) for x in (a, b) for r in x.get("rebrand_of", [])):
-        return "shared"
-    if any(k in a and k in b and a[k] != b[k] for k in TWIN_MEASURES):
-        return "shared"
-    # a record that cites its own brand's site is not a copy, even when the other brand shares that site
-    if a["brand"] != b["brand"] and ((cites(a, b["brand"]) and not cites(a, a["brand"])) or (cites(b, a["brand"]) and not cites(b, b["brand"]))):
-        return "copy"
-    if related(a["brand"], b["brand"]) and cites(a, a["brand"]) and cites(b, b["brand"]):
-        return "shared"
-    return "unclear"
-
-
-COMPLETE_DIFF = re.compile(r"\b(complete|assembled|assy|assembly|unit set)\b", re.I)
-DIFF_PARTS = re.compile(r"\b(cases?|gears?|gearbox|cups?|joints?|gaskets?|shims?|o-?rings?)\b", re.I)
-
-
-def complete_diff(part):
-    """A differential part that is a whole assembly by its name, not one of its cases, gears, cups, joints, gaskets, shims or o-rings."""
-    return part.get("category") == "differential" and bool(COMPLETE_DIFF.search(part.get("name", ""))) and not DIFF_PARTS.search(part["name"])
-
-
-def diff_assemblies(release, part_of):
-    """Complete differential assemblies in a release's kit rows, each row counted with its qty (1 when none)."""
-    return sum(int(c.get("qty", 1)) for c in release.get("contains", [])
-               if c.get("role") == "kit" and complete_diff(part_of.get(c["part"], {})))
 
 
 # spec-mismatch: a spec link (equivalent_to, or includes) whose spec family the part's category or name does not carry.
@@ -810,12 +622,6 @@ SPEC_EQUIVALENT_CATS = {
 GEAR_CATS = {"gear", "pinion", "spur-gear"}
 GEAR_SET_NAME = re.compile(r"(?i)\b(gears|pinions|sets?)\b")   # "Pinion Gears 13T + Screws (2P)": several pieces, a count
 PITCH_IN_NAME = re.compile(r"(?i)(?<![\w.])(\d{1,3})\s*(?:p|dp|pitch)\b")   # "(48P)", "48DP", "48 Pitch"
-
-
-def hardware_in_box(rel, part_of):
-    """Hardware rows a release's contains hold for its box: role kit, and role listed too, since a manual that does not
-    mark what is in the box (Schumacher's) lists its spares as listed, from the same manual."""
-    return sum(1 for c in rel.get("contains", []) if c.get("role") in ("kit", "listed") and part_of.get(c["part"], {}).get("category") in HW)
 
 
 def gear_pitch_as_count(p):
@@ -921,28 +727,6 @@ def main():
         results[name] = {"fix": fix, "count": len(set(ids)) if count is None else count, "examples": recs[:args.examples], "all": sorted(set(ids)), **extra}
         if spans:
             spans(name, results[name]["count"])
-
-    # 1b. former names the rule rejects (validate.former_names_problems): must stay 0
-    sys.path.insert(0, HERE)
-    import validate
-    def fn_bad(p):
-        return validate.former_names_problems(p, brands.get(p.get("brand"), {}).get("name", ""))
-    check("former-name-restates", "drop the entry: it is the part's name again with a pack count, set number, brand word or catalogue number, or listed twice (former_names.store() in hobbydex-tools)",
-          [p for p in parts if fn_bad(p)],
-          count=sum(len(fn_bad(p)) for p in parts))
-
-    # 2c. releases of one brand whose item numbers differ only by a suffix (34902 and 34902D) and that name one product
-    # (the same barcode, or the same maker page with no different barcode): a twin the importers would have minted.
-    # Pairs reviewed as distinct SKUs (colour, pack or edition letters the maker sells apart) are in confirmed-distinct.toml.
-    reviewed_rel = set()
-    cdr = os.path.join(RC, "data", "confirmed-distinct.toml")
-    if os.path.exists(cdr):
-        with open(cdr, "rb") as fh:
-            reviewed_rel = {frozenset(p["releases"]) for p in tomllib.load(fh).get("release_pair", [])}
-    twins_rel = suffix_twin_pairs(rels, reviewed_rel)
-    check("release-suffix-twin", "one product under two item numbers: fold the suffixed record into the other (former_ids, the parts and documents move, retired.toml when none stays), or list the pair as distinct in data/confirmed-distinct.toml [[release_pair]] when the maker sells them apart",
-          [x["id"] for pair in twins_rel for x in pair], count=len(twins_rel), per_brand=collections.Counter(a["brand"].split("/")[-1] for a, _ in twins_rel).most_common())
-    results["release-suffix-twin"]["examples"] = [{"id": f"{a['id']} ~ {b['id']}", "url": url_for(a)} for a, b in twins_rel[:args.examples]]
 
     # 6. downloaded manuals (hobbydex-tools cache/manuals) not linked to a release
     if tools["cache"]:
@@ -1095,8 +879,6 @@ def main():
     else:
         results["maker-page-unlinked"] = {"fix": "hobbydex-tools link_maker_pages.py not found (--tools)", "count": None, "examples": [], "all": []}
 
-    art_dir = os.path.join(RC, "art")   # the outline art (orphan-art reads it)
-
     # 9b. barcodes the cache states for a record that has no gtin (tools/gtin_sweep.py in hobbydex-tools finds them)
     if tools["gtin_holes"] is not None:
         miss = gtin_in_cache_not_stored(tools["gtin_holes"], by_id)
@@ -1121,43 +903,6 @@ def main():
     # with-fasteners-category, ocr-kind-vs-dealer, spec-no-bag-drawing, hw-photo-unread and video-gallery-unattached are
     # counted by the Rust audit only
     # (hobbydex-tools rust/hobbydex-audit, checks::PYTHON_RETIRED): the daily job publishes its records for them
-    # 13. platforms with no manual or product page linked
-    def page_docs(r):
-        return [docs[d] for d in r.get("documents", []) if d in docs and docs[d].get("kind") in ("manual", "product_page")]
-    kit_docs = {kid for d in docs.values() if d.get("kind") in ("manual", "product_page") for kid in d.get("kits", [])}
-    def kit_maker_link(k):
-        return any(l.get("kind") in (None, "maker") and not l.get("gone") for l in k.get("links", []))
-    check("platform-no-manual-or-page", "link the platform's manual or the maker's product page on one of its releases, a manual that lists the platform in `kits`, or the maker's page for the platform in the kit's `links` (kind maker); tools/link_kit_pages.py in hobbydex-tools links the addresses the data already names",
-          [k for k in kits.values() if rels_of_kit[k["id"]] and not any(page_docs(r) for r in rels_of_kit[k["id"]])
-           and k["id"] not in kit_docs and not kit_maker_link(k)])
-
-    # 15c. a release dated by a YouTube video: that video's document must list the release, or the site cannot embed it
-    def watch_id(url):
-        m = re.search(r"[?&]v=([\w-]+)", str(url or ""))
-        return m.group(1) if m and "youtube.com" in str(url) else None
-    linked_videos = {}   # release id -> ids of the YouTube videos whose video documents list it
-    for d in docs.values():
-        vid = watch_id(d.get("url")) if d.get("kind") == "video" else None
-        for rid in (d.get("releases") or []) if vid else []:
-            linked_videos.setdefault(rid, set()).add(vid)
-    check("announced-video-not-linked", "the release's announced_source is a YouTube video that no video document lists: write data/documents/<brand>/youtube-<id>.toml (kind video, url, releases with this release); a Short or a video that names the model only in hashtags dates nothing, so remove announced and announced_source",
-          [r for r in rels if r.get("announced") and watch_id(r.get("announced_source"))
-           and watch_id(r.get("announced_source")) not in linked_videos.get(r["id"], set())])
-
-    # 17. kit whose releases disagree on scale: no kit scale, or a release scale override with no note saying why
-    # a kit whose notes open "Group for ..." is a catch-all for an item range or a product line (Tamtech: cars, trucks and
-    # tanks), not one chassis: its releases keep their own scales (sourced on the release) and the kit states none
-    hits = []
-    for k in kits.values():
-        if str(k.get("notes", "")).startswith("Group for "):
-            continue
-        rs = rels_of_kit[k["id"]]
-        eff = {r.get("scale") or k.get("scale") for r in rs} - {None}
-        unsourced = [r for r in rs if r.get("scale") and r.get("scale") != k.get("scale") and not r.get("notes")]
-        if len(eff) > 1 and (not k.get("scale") or unsourced):
-            hits.append(k)
-    check("kit-mixed-scale", "set the kit's scale to the one the releases share, and give a release scale that differs from the kit a note that states its source (a catch-all group kit, notes \"Group for ...\", is skipped)", hits)
-
     # 19. release lists a document that does not list the release back
     # both sides: a release lists a document that does not list it, or a document lists a release that does not list it
     rel_by_id = {r["id"]: r for r in rels}
@@ -1169,74 +914,6 @@ def main():
         one_sided = sorted({p[1] for p in dl.pairs(rel_by_id, docs) if p[2] not in held})
     check("doc-not-back-linked", "run tools/sync_doc_links.py --write in hobbydex-tools (adds the missing side; catalogues, shared shop pages and dealer listings it holds are not gaps)",
           one_sided)
-
-    # 19b. parts of a car-specific category with no fits row and no release naming them (categories flagged
-    # any_car = true in data/categories are not made for one car, so they are left out: docs/schema.md "category")
-    any_car = {c["id"].split("/")[-1] for c in db["categories"] if c.get("any_car")}
-    in_box = {c["part"] for r in rels for c in r.get("contains", [])}
-    # a part that names the model it is for (applies_to) is car-specific whatever its category (a Fast Eddy bearing set for one car)
-    # a part marked universal (docs/schema.md "part") is sold for any car of a kind, not for a named model
-    is_any = lambda p: p.get("universal") is True or (p.get("category") in any_car and not p.get("applies_to"))
-    no_car = [p for p in parts if p["id"] not in in_box and not p.get("fits") and p.get("category") and not is_any(p)]
-    aircraft_unlinked = sum(1 for p in no_car if is_aircraft_part(p))
-    no_car = [p for p in no_car if not is_aircraft_part(p)]
-    generic_unlinked = sum(1 for p in parts if p["id"] not in in_box and not p.get("fits") and is_any(p))
-    per_brand = collections.Counter(p["brand"].split("/")[-1] for p in no_car)
-    check("part-no-car-link", "link the part to the kits and releases it fits (a fits row), or to the release that contains it; the list per brand is the linking queue",
-          no_car, per_brand=per_brand.most_common(),
-          detail=f"{generic_unlinked} unlinked parts of any-car categories and {aircraft_unlinked} unlinked aircraft, helicopter and drone parts are left out; {sum(1 for p in parts if not p.get('category') and p['id'] not in in_box and not p.get('fits'))} unlinked parts have no category yet")
-
-    # 20. part fits a kit that has no releases (a family kit takes none: docs/schema.md "kit")
-    check("fits-kit-no-release", "add the kit's release, or remove the fit row",
-          [p for p in parts for f in p.get("fits", []) if kit_without_release(kits, rels_of_kit, f.get("kit"))])
-    # the kits each flagged part fits, for --list (id TAB kits) and a per-kit count in the summary
-    nr_kits = collections.defaultdict(set)
-    for p in parts:
-        for f in p.get("fits", []):
-            if kit_without_release(kits, rels_of_kit, f.get("kit")):
-                nr_kits[p["id"]].add(f["kit"])
-    results["fits-kit-no-release"]["kit_of"] = {i: ", ".join(sorted(k)) for i, k in nr_kits.items()}
-    per_kit = collections.Counter(k for ks in nr_kits.values() for k in ks)
-    results["fits-kit-no-release"]["breakdown"] = ("kit", [f"{k} {c}" for k, c in sorted(per_kit.items(), key=lambda kv: (-kv[1], kv[0]))[:40]])
-
-    # 21. orphan art files
-    orphans = []
-    for sub, kind in (("kits", "kit"), ("releases", "release"), ("parts", "part")):
-        base = os.path.join(art_dir, sub)
-        for dp, _, fs in walk(base):
-            for fn in fs:
-                if fn.endswith(".svg"):
-                    rel = os.path.relpath(os.path.join(dp, fn), base)[:-4]
-                    eid = f"{kind}/{rel}" if kind != "part" else None
-                    if kind == "part":
-                        brand, _, rest = rel.partition("/")
-                        eid = f"part/{brand}/{rest.split('/')[-1]}"
-                    if eid not in by_id:
-                        orphans.append(os.path.relpath(os.path.join(dp, fn), RC))
-    check("orphan-art", "rename the art file to its record's id or delete it (validate.py reports them)",
-          [{"id": o} for o in orphans], count=len(orphans))
-    results["orphan-art"]["examples"] = [{"id": o, "url": SITE + "/rc/"} for o in orphans[:args.examples]]
-
-    # 22. duplicate release names within one kit
-    hits = []
-    for k in kits.values():
-        # distinct item numbers are distinct releases (the maker's number tells them apart)
-        names = collections.Counter((r["name"].strip().lower(), norm_name(str(r.get("number", "")))) for r in rels_of_kit[k["id"]])
-        if any(n > 1 for n in names.values()):
-            hits.append(k)
-    check("duplicate-name-in-kit", "two releases of the kit share a name and an item number: merge them if they are one item (former_ids), or the maker number tells them apart", hits)
-
-    # 23b. one real vehicle under two model names in a make (depicts.model spelled apart)
-    near = collections.defaultdict(lambda: collections.defaultdict(set))
-    for x in rels + [p for p in parts if p.get("category") == "body"]:
-        d = x.get("depicts") or {}
-        if d.get("make") and d.get("model"):
-            near[(d["make"], near_dup_key(d["model"]))][re.sub(r"[^a-z0-9]", "", d["model"].lower())].add(d["model"])
-    dup_groups = {k: v for k, v in near.items() if k[1] and len(v) > 1 and (k[0], k[1]) not in NEAR_DUP_KEPT}
-    dup_items = [x for x in rels + [p for p in parts if p.get("category") == "body"] if (x.get("depicts") or {}).get("make")
-                 and (x["depicts"]["make"], near_dup_key(x["depicts"].get("model", ""))) in dup_groups]
-    check("near-duplicate-model", "fold the spellings into one depicts.model (data), then add a line to the site's vehicle-moves table",
-          dup_items, count=len(dup_groups), detail="; ".join(f"{mk}: " + " | ".join(sorted(sp)) for (mk, _), sp in sorted(dup_groups.items())[:15]))
 
     # 24. never-link hosts and dealer doc references
     banned, scrap, local, dealer, foreign = [], [], [], [], []
@@ -1273,60 +950,11 @@ def main():
     else:
         results["non-english-link"] = {"fix": ENGLISH_MISSING, "count": None, "examples": [], "all": []}
 
-    # 25. releases with no maker product page (no product_page document, no maker link), per brand
-    no_page = [r for r in rels if not any(docs.get(d, {}).get("kind") == "product_page" for d in r.get("documents", []))
-               and not any(l.get("kind") != "fan-site" for l in r.get("links", []))]
-    per_brand = collections.Counter(r["brand"].split("/")[-1] for r in no_page)
-    check("release-no-product-page", FIX_PAGE, no_page, per_brand=per_brand.most_common())
-
-    # 25b. releases typed "car": the catch-all, no category on the release or its kit (resolved release, else kit, else car)
-    typed_car = [r for r in rels if (r.get("category") or kits.get(r.get("kit"), {}).get("category") or "car") == "car"]
-    per_brand = collections.Counter(r["brand"].split("/")[-1] for r in typed_car)
-    check("release-typed-other-cars", "give the kit its type from the maker's product page or manual (kit level first; a release-level category only where the release differs from its kit), with a sources entry for the page; a kit with no source stays car and is counted",
-          typed_car, per_brand=per_brand.most_common())
-
-    # 26. unnamed parts and cheap structural gaps (kept from the old audit)
-    # a release is not a part: a part that shares its brand and number with a release (or the release's id) and is not
-    # listed in data/release-twins.toml with its reason (validate.py refuses the same; this is the status-page count)
-    with open(os.path.join(RC, "data", "release-twins.toml"), "rb") as fh:
-        twin_ids = {t.get("id") for t in tomllib.load(fh).get("twin", [])}
-    part_ids = {p["id"] for p in parts}
-    twin_hits = []
-    for r in rels:
-        for pid in {f"part/{r['brand'][6:]}/{r['number']}" if r.get("number") and str(r.get("brand", "")).startswith("brand/") else None,
-                    "part/" + r["id"][len("release/"):]} - {None}:
-            if pid in part_ids and pid not in twin_ids:
-                twin_hits.append(pid)
-    check("part-release-twin", "a release is not a part: retire the part in data/retired.toml with replaced_by the release (the release keeps the product), or list it in data/release-twins.toml with the reason it is a separate product",
-          twin_hits)
     # 26d. spec links the part's category or name does not carry (spec_mismatches): a bearing on a clip, a motor on a rebuild kit
     mism = spec_mismatches(parts)
     check("spec-mismatch", "remove the spec link (or fix the part's category or name, then link the spec its name gives): the link's family is not the part's kind; see the linker in the rows' notes",
           sorted({m[0] for m in mism}), count=len({m[0] for m in mism}), rows=[{"id": i, "field": f, "spec": sp, "why": w} for i, f, sp, w in mism][:200])
-    check("release-no-contents", "read the release's parts list into contains (or note there is none)", [r for r in rels if not r.get("contains")])
-    used_specs = used_spec_ids(parts)
-    check("spec-unlinked", "link a part to the spec, or retire the spec", [s for s in db["specs"] if s["id"] not in used_specs])
 
-    # 26c. Tamiya parts with no maker link, by number form. A maker link is kind "maker" (Tamiya USA's spare page,
-    # tools/link_tamiya_usa_spares.py) or the Tamiya product link with no kind; a dealer link (tools/link_tamico_spares.py)
-    # is counted apart: a spare with a dealer link only still needs its maker page
-    def maker_linked(p):
-        return tamiya_maker_linked(p.get("links", []))
-    def dealer_linked(p):
-        return any(l.get("kind") == "dealer" for l in p.get("links", []))
-    tam = [p for p in parts if p.get("brand") == "brand/tamiya"]
-    spares_all = [p for p in tam if re.fullmatch(r"\d{8}", str(p.get("number", "")))]
-    unlinked = [p for p in spares_all if not maker_linked(p)]
-    spares = [p for p in unlinked if not tamiya_label_only(p)]
-    label_only = [p for p in unlinked if tamiya_label_only(p)]
-    items = [p for p in tam if re.fullmatch(r"\d{5}", str(p.get("number", ""))) and not maker_linked(p) and not dealer_linked(p)]
-    dealer_only = sum(1 for p in spares if dealer_linked(p))
-    check("tamiya-spare-no-link", "a Tamiya 8-digit spare with no maker link (Tamiya USA's spare page, kind maker): the daily derive runs tools/link_tamiya_de_spares.py (tamiya.de sitemap) and tools/link_tamiya_usa_spares.py (Tamiya USA listings, which tools/plan_tamiya_usa_spares.py queues) in hobbydex-tools; a spare with only a dealer link is counted in dealer_only",
-          spares, count=len(spares), maker=sum(1 for p in spares_all if maker_linked(p)), dealer_only=dealer_only)
-    check("tamiya-spare-label-only", "no maker spare page exists: the part's name comes from OCR of a manual (a bag or parts-tree label, or a part name) and the maker has no page for the number (informational)",
-          label_only, count=len(label_only), per_brand=[("tamiya", len(label_only))], info=True)
-    check("tamiya-item-no-link", "a Tamiya item number with no maker product page: give it a maker link (tamiya.com page) or a manual or fan-site source",
-          items, count=len(items))
     usa_tsv = os.path.join(args.tools, "cache", "notes", "tamiya", "tamiya-usa-spares.tsv")
     usa_rows = []
     if os.path.exists(usa_tsv):
@@ -1346,38 +974,6 @@ def main():
                     conflicts.append({"id": row["part"]})
     check("tamico-pack-conflict", "no pack_qty from the dealers: the dealers' counts differ or the part's name states another count; set the count from the part's own source or leave it unset (tools/link_tamico_spares.py lists the rows)",
           conflicts, count=len(conflicts))
-
-    # 28. a release whose box (kit rows) holds two gears of one kind at different pitches: two pinions or two spurs
-    part_of = {p["id"]: p for p in parts}
-    clash = []
-    for r in rels:
-        pitches = collections.defaultdict(set)
-        for c in r.get("contains", []):
-            p = part_of.get(c["part"], {})
-            if c.get("role") == "kit" and p.get("category") in ("pinion", "spur") and p.get("pitch_dp"):
-                pitches[p["category"]].add(p["pitch_dp"])
-        if any(len(v) > 1 for v in pitches.values()):
-            clash.append(r)
-    check("release-two-gear-pitches", "mark the other pitch as option or listed: the release's own parts list or exploded view says which one is in the box", clash)
-
-    # 28b. the same part number and name under two brands: shared when the brands are related and each cites its own
-    # source; a copy when a record cites the other brand's site; the rest need a look (the pair's brands are in breakdown)
-    companies = {c["id"]: c for c in db["companies"]}
-    twin_classes = collections.Counter()
-    twin_flagged = []
-    for a, b in twin_pairs(parts):
-        cls = twin_class(a, b, brands, companies, docs)
-        twin_classes[(" / ".join(sorted(x["brand"].split("/")[-1] for x in (a, b))), cls)] += 1
-        if cls != "shared":
-            twin_flagged += [a, b]
-    check("twin-parts", "twins: a copy has a source or link on the other brand's site (the importer wrote it under the wrong brand: move it to the brand that makes it); an unclear pair needs both brands' sources checked: the same product under two brands gets rebrand_of on the rebranded record; two products state different values for a measure (power_w, weight_g ...)",
-          twin_flagged, count=sum(n for (_, c), n in twin_classes.items() if c != "shared"),
-          breakdown=("brand pair and class", [f"{pair} {cls} {n}" for (pair, cls), n in sorted(twin_classes.items())]))
-
-    # 28c. a release whose box holds more than three complete differential assemblies (qty counts; see complete_diff)
-    too_many = [r for r in rels if diff_assemblies(r, part_of) > 3]
-    check("too-many-diffs", "a release lists more than three complete differential assemblies in its box: the extra ones are spares or options (mark them listed or option), or the name of a part is a case, gear or cup set",
-          too_many)
 
     # 29-38. hardware bags, names, release boxes and the /tmp inodes
     brand_of = lambda x: x.get("brand", "").split("/")[-1]
@@ -1513,15 +1109,6 @@ def main():
           hz, per_brand=hz_brands.most_common())
     check("horizon-part-no-maker-page", "no maker page exists: the part is named only by exploded views, parts lists or manuals, and its Horizon item page answers 404 (informational)",
           hz_nopage, count=len(hz_nopage), per_brand=collections.Counter(p["brand"].split("/")[-1] for p in hz_nopage).most_common(), info=True)
-
-    hw_box = []
-    for r in rels:
-        if r.get("kind") != "kit" or not any(docs.get(d, {}).get("kind") in ("manual", "exploded_view") for d in r.get("documents", [])):
-            continue
-        if hardware_in_box(r, part_of) < 10:
-            hw_box.append(r)
-    check("kit-box-few-hardware", "read the box's hardware from the manual or exploded view into contains (role kit, or listed when the manual does not mark the box): fewer than 10 hardware rows here",
-          hw_box, per_brand=per_brand(hw_box))
 
     # bearings: the material most of a brand's bearings carry, that at most 5% of those names say, is a default: no source states it
     MAT_WORDS = {"steel": r"steel|chrom|hardened", "ceramic": r"ceramic", "stainless": r"stainless", "titanium": r"titan",

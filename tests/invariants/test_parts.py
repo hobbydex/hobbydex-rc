@@ -1,5 +1,7 @@
 """Parts: names and categories (the data-only checks of the daily audit, under their audit names)."""
-from rules import unbalanced
+import json, re
+
+from rules import is_aircraft_part, tamiya_maker_linked, twin_class, twin_pairs, unbalanced
 
 
 def test_name_unbalanced_bracket(ratchet, db):
@@ -33,3 +35,100 @@ def test_part_named_by_number(ratchet):
     ratchet("part-named-by-number", """SELECT id AS record, 'named by its number' AS problem FROM records
         WHERE kind = 'part' AND json_extract(data, '$.name') = json_extract(data, '$.number')
           AND json_type(data, '$.name') = json_type(data, '$.number')""", blocking=False)
+
+
+def test_part_no_car_link(ratchet, db):
+    """Parts of a car-specific category with no fits row and no release that contains them: the linking queue (a fits
+    row, or the release that contains it). Parts of any-car categories (any_car in data/categories), universal parts
+    and aircraft parts are left out. Reported, not blocking: importers add parts before their cars are linked."""
+    any_car = {i.split("/")[-1] for (i,) in db.execute("""SELECT id FROM records WHERE kind = 'category'
+        AND truthy(json_extract(data, '$.any_car'))""")}
+    in_box = {p for (p,) in db.execute("SELECT DISTINCT json_extract(row, '$.part') FROM list_rows WHERE field = 'contains'")}
+    rows = []
+    for pid, brand, number, cat, universal, applies in db.execute("""SELECT id, json_extract(data, '$.brand'),
+            json_extract(data, '$.number'), json_extract(data, '$.category'), json_type(data, '$.universal'),
+            truthy(json_extract(data, '$.applies_to')) FROM records WHERE kind = 'part'
+            AND NOT truthy(json_extract(data, '$.fits')) AND truthy(json_extract(data, '$.category'))"""):
+        if pid in in_box or universal == "true" or (cat in any_car and not applies) or is_aircraft_part(brand, number):
+            continue
+        rows.append((pid, f"{cat}: no fits row, in no release"))
+    ratchet("part-no-car-link", rows, blocking=False)
+
+
+def test_fits_kit_no_release(ratchet):
+    """A fits row names a kit that has releases (a family kit, family = true, owes none): add the kit's release, or
+    remove the row. Reported, not blocking: parts importers name parts-only kits before their releases are added."""
+    ratchet("fits-kit-no-release", """SELECT l.owner AS record, 'fits ' || k.id || ', which has no release' AS problem
+        FROM list_rows l JOIN records k ON k.id = json_extract(l.row, '$.kit') AND k.kind = 'kit'
+        WHERE l.field = 'fits' AND NOT truthy(json_extract(k.data, '$.family'))
+          AND k.id NOT IN (SELECT json_extract(data, '$.kit') FROM records WHERE kind = 'release'
+            AND json_extract(data, '$.kit') IS NOT NULL)""", blocking=False)
+
+
+def test_spec_unlinked(ratchet):
+    """Every spec is used by a part (equivalent_to, includes or protocols): link a part to it, or retire it."""
+    ratchet("spec-unlinked", """WITH used AS (
+          SELECT json_extract(j.value, '$.spec') AS spec FROM records r, json_each(r.data, '$.equivalent_to') j
+            WHERE r.kind = 'part' AND json_type(r.data, '$.equivalent_to') = 'array' AND j.type = 'object'
+          UNION SELECT json_extract(row, '$.spec') FROM list_rows WHERE field = 'includes' AND json_type(row) = 'object'
+          UNION SELECT j.value FROM records r, json_each(r.data, '$.protocols') j
+            WHERE r.kind = 'part' AND json_type(r.data, '$.protocols') = 'array' AND j.type = 'text')
+        SELECT id AS record, 'no part uses it' AS problem FROM records
+        WHERE kind = 'spec' AND id NOT IN (SELECT spec FROM used WHERE spec IS NOT NULL)""")
+
+
+def _tamiya_parts(db):
+    for pid, number, name_source, links in db.execute("""SELECT id, json_extract(data, '$.number'),
+            json_extract(data, '$.name_source'), json_extract(data, '$.links') FROM records
+            WHERE kind = 'part' AND json_extract(data, '$.brand') = 'brand/tamiya'"""):
+        yield pid, "" if number is None else str(number), name_source, json.loads(links) if links else []
+
+
+def test_tamiya_spare_no_link(ratchet, db):
+    """Tamiya 8-digit spares with no maker link (Tamiya USA's spare page, tamiya.de, or a capture of a gone tamiya.com
+    page); a spare named by OCR of a manual is counted in tamiya-spare-label-only. Reported, not blocking."""
+    ratchet("tamiya-spare-no-link", [(pid, "no maker link" + (" (dealer link only)" if any(l.get("kind") == "dealer" for l in links) else ""))
+                                     for pid, num, src, links in _tamiya_parts(db)
+                                     if re.fullmatch(r"\d{8}", num) and not tamiya_maker_linked(links) and src != "ocr"],
+            blocking=False)
+
+
+def test_tamiya_spare_label_only(ratchet, db):
+    """Tamiya 8-digit spares named by OCR of a manual (a bag or parts-tree label) with no maker page: the maker sells
+    no spare page for such a number (informational, not blocking)."""
+    ratchet("tamiya-spare-label-only", [(pid, "named by OCR, no maker page") for pid, num, src, links in _tamiya_parts(db)
+                                        if re.fullmatch(r"\d{8}", num) and not tamiya_maker_linked(links) and src == "ocr"],
+            blocking=False)
+
+
+def test_tamiya_item_no_link(ratchet, db):
+    """Tamiya 5-digit item numbers with no maker product page and no dealer link: a maker link (tamiya.com page), a
+    manual or a fan-site source. Reported, not blocking."""
+    ratchet("tamiya-item-no-link", [(pid, "no maker link") for pid, num, src, links in _tamiya_parts(db)
+                                    if re.fullmatch(r"\d{5}", num) and not tamiya_maker_linked(links)
+                                    and not any(l.get("kind") == "dealer" for l in links)], blocking=False)
+
+
+def test_twin_parts(ratchet, db):
+    """The same part number and name under two brands is shared only when the brands are related and each record
+    cites its own brand's source (or one names the other in rebrand_of, or they state different measures). A copy
+    (a record cites the other brand's site or document) moves to the brand that makes it; an unclear pair needs both
+    brands' sources checked."""
+    pairs = twin_pairs([{"id": i, "brand": b, "name": n, "number": num} for i, b, n, num in db.execute("""SELECT id,
+        json_extract(data, '$.brand'), json_extract(data, '$.name'), json_extract(data, '$.number') FROM records
+        WHERE kind = 'part' AND truthy(json_extract(data, '$.number')) AND json_type(data, '$.name') = 'text'""")])
+    ids = sorted({x["id"] for pair in pairs for x in pair})
+    full = {}
+    for i in range(0, len(ids), 500):
+        chunk = ids[i:i + 500]
+        for rid, data in db.execute(f"SELECT id, data FROM records WHERE kind = 'part' AND id IN ({','.join('?' * len(chunk))})", chunk):
+            full[rid] = json.loads(data)
+    brands = {i: json.loads(d) for i, d in db.execute("SELECT id, data FROM records WHERE kind = 'brand'")}
+    companies = {i: json.loads(d) for i, d in db.execute("SELECT id, data FROM records WHERE kind = 'company'")}
+    docs = {i: {"brand": b} for i, b in db.execute("SELECT id, json_extract(data, '$.brand') FROM records WHERE kind = 'doc'")}
+    rows = []
+    for a, b in pairs:
+        cls = twin_class(full[a["id"]], full[b["id"]], brands, companies, docs)
+        if cls != "shared":
+            rows += [(a["id"], f"{cls} twin of {b['id']}"), (b["id"], f"{cls} twin of {a['id']}")]
+    ratchet("twin-parts", rows)
