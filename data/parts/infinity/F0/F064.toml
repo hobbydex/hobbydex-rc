@@ -6,5 +6,8 @@ category = "suspension"
 
 links = [ { site = "Infinity", url = "https://www.creationmodel.net/infinity/index.php/new-products/42-if11-graphite-front-lower-arm-2mm-wide" } ]
 material = "carbon"
+fits = [
+  { kit = "kit/infinity/if11", type = "replaces", source = "doc/infinity/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
 [sources]
 name = "https://www.creationmodel.net/infinity/index.php/new-products"

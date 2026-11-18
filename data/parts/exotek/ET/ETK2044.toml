@@ -11,3 +11,8 @@ gtin = "708498504221"
 category = "chassis"
 material = "aluminium"
 material_grade = "7075"
+fits = [
+  { kit = "kit/team-associated/rc10b6", releases = ["release/team-associated/90029", "release/team-associated/90030"], type = "replaces", source = "doc/exotek/horizon-pages", notes = "The fit list names Team Associated B6.3 T6 SC6" },
+  { kit = "kit/team-associated/rc10t6", type = "replaces", source = "doc/exotek/horizon-pages", notes = "The fit list names Team Associated B6.3 T6 SC6" },
+  { kit = "kit/team-associated/rc10sc6", type = "replaces", source = "doc/exotek/horizon-pages", notes = "The fit list names Team Associated B6.3 T6 SC6" },
+]

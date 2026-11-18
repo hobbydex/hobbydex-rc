@@ -8,5 +8,8 @@ links = [ { site = "Infinity", url = "https://www.creationmodel.net/infinity/ind
 material = "titanium"
 color = "silver"
 notes = "Colour read from the maker's product photo."
+fits = [
+  { kit = "kit/infinity/if14", type = "direct", source = "doc/infinity/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
 [sources]
 name = "https://www.creationmodel.net/infinity/index.php/new-products"
