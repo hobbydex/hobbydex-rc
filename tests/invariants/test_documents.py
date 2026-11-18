@@ -44,6 +44,15 @@ def test_horizon_doc_no_page(ratchet):
           AND coalesce(json_extract(d.data, '$.kind'), '') NOT IN ('product_page', 'owner_report', 'video', 'catalog')""")
 
 
+def test_no_shorts_address(hard):
+    """No YouTube Short enters the data (owner, 2026-11-18: "No short should enter our database"): no record names a
+    youtube.com/shorts/ address (a video document's url, an announced_source or seen_by_source, any field). Whether a
+    watch?v= video is a Short is decided by the tools (import_brand_videos.short_signal: the watch page, the channel's
+    Shorts and long-form playlists), which never write one; length alone never makes a Short (decision 2026-10-28)."""
+    hard("""SELECT id AS record, 'names a YouTube Shorts address' AS problem FROM records
+        WHERE data LIKE '%youtube.com/shorts/%'""", name="video-shorts-url")
+
+
 def test_video_has_date(hard):
     """Every video document has the date the video was published (from the channel page)."""
     hard("""SELECT id AS record, 'video with no date' AS problem FROM records WHERE kind = 'doc'
