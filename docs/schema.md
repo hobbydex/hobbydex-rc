@@ -732,6 +732,23 @@ C-00180-714). The site shows it on both parts.
 
 `status` (optional): `discontinued` or `available`, the same words a release uses for being out of production. Set only where the maker or a shop states it: a note such as "Discontinued: ..." or "Listed in KO Propo's Discontinued Products Table", the store's DISC.. marker, a Kyosho product page filed under discontinued or with a discontinued buy box, or a name carrying "(Discontinued)", or a Horizon Hobby product page whose newest cached copy states availability Discontinued (tools/link_horizon_status.py; a page never clears a stored discontinued). Left out when not stated; age never decides it. tools/link_part_status.py sets it from those statements and reruns after the importers. A successor the maker names in the discontinued part's notes carries `supersedes` back to the old part, unless two old parts name it.
 
+### Required facts
+
+data/required-facts.toml lists, per part category, the facts every part of it should carry: a servo its torque,
+speed, rated voltage, voltage range and size spec; a motor brushed or brushless, kV or turns, can size and (brushless)
+sensored; a battery chemistry, cells, capacity, C rating and connector; an ESC current, cell range and battery
+connector; a tyre rim size and compound; a wheel rim size, hex and offset; a pinion teeth, pitch and bore; a spur gear
+teeth and pitch; a bearing its size spec; a complete shock its length. Each fact is one or more fields of the part (or
+of a spec it is `equivalent_to`), or a link to a spec of a kind. Parts that are accessories of the category (a servo
+case, a motor rotor: the file's `exclude_name`) carry none.
+
+`unstated` (optional, part) records a required fact the part's source does not state: a table of fact id to the https
+page or the doc id that was read, `unstated = { torque = "https://maker.example/servo-1", speed = "https://maker.example/servo-1" }`.
+Importers set it when the page they read gives no value (tools/required_facts.py `mark_unstated(part, page, ...)`, or
+the descriptor's `[required_facts]` in hobbydex-tools). It names only facts of the part's category (required-fact-unstated-valid);
+whoever fills a fact drops its marker (`drop_stale`; a stale one is reported as required-fact-unstated-stale). The invariants count, per category and fact, the parts that
+lack the fact and have no marker (docs/invariants.md); a change may only lower those counts.
+
 ## spec
 
 A generic, brand-independent specification. Category-specific fields; for
