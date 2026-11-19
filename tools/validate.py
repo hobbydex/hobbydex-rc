@@ -308,6 +308,18 @@ def categories():
     d = os.path.join(ROOT, "categories")
     return {f[:-5] for f in os.listdir(d) if f.endswith(".toml")} if os.path.isdir(d) else set()
 
+def check_required_facts(errors):
+    """data/required-facts.toml (docs/schema.md "Required facts"): it parses, and names part categories that exist."""
+    import required_facts
+    try:
+        reg = required_facts.load(os.path.dirname(ROOT))
+    except ValueError as e:
+        errors.append(f"{os.path.join(ROOT, 'required-facts.toml')}: {e}")
+        return
+    for cat in sorted(set(reg) - categories()):
+        errors.append(f"{os.path.join(ROOT, 'required-facts.toml')}: [{cat}] is not a part category (data/categories)")
+
+
 def check_case_clashes(errors):
     """Two paths under data/ or art/ that differ only in case (GE/ and Ge/, SG-M3x8 and
     SG-M3X8) cannot both exist in a checkout on a case-insensitive filesystem (macOS, Windows)."""
@@ -1173,7 +1185,7 @@ def main():
                 errors.append(f"{path}: parse error: {e}")
                 continue
             rel = os.path.relpath(path, ROOT)
-            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml", "legacy-part-supersedes.toml", "release-twins.toml"):
+            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml", "legacy-part-supersedes.toml", "release-twins.toml", "required-facts.toml"):
                 continue   # retired ids and confirmed pairs, checked below; reviewed numbers are audit-only (audit.py)
             top = rel.split(os.sep)[0]
             kind = next((k for k, v in KINDS.items() if v["dir"] == top), None)
@@ -1963,6 +1975,7 @@ def main():
     check_former_names(docs, errors)
     check_part_category(docs, errors)
     check_release_twins(docs, ids, errors)
+    check_required_facts(errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:
