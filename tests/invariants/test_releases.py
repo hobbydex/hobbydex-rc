@@ -156,7 +156,12 @@ def test_release_no_contents(ratchet):
 
 def test_announced_video_is_linked(hard, db):
     """A release dated by a YouTube video (announced_source) is listed by that video's document (kind video), so the
-    site can embed it; a Short or a video that names the model only in hashtags dates nothing."""
+    site can embed it; a Short or a video that names the model only in hashtags dates nothing. A video whose document
+    was retired as no longer public on YouTube keeps the day it dated (the maker published it then); it has no
+    document to list it."""
+    with open(os.path.join(RC, "data", "retired.toml"), "rb") as fh:
+        pulled = {r["id"].rsplit("/youtube-", 1)[1] for r in tomllib.load(fh).get("retired", [])
+                  if "/youtube-" in r["id"] and str(r.get("reason", "")).startswith("the video is no longer public")}
     def watch_id(url):
         m = re.search(r"[?&]v=([\w-]+)", str(url or ""))
         return m.group(1) if m and "youtube.com" in str(url) else None
@@ -170,7 +175,7 @@ def test_announced_video_is_linked(hard, db):
     for rid, src in db.execute("""SELECT id, json_extract(data, '$.announced_source') FROM records WHERE kind = 'release'
             AND truthy(json_extract(data, '$.announced'))"""):
         vid = watch_id(src)
-        if vid and vid not in linked.get(rid, set()):
+        if vid and vid not in linked.get(rid, set()) and vid not in pulled:
             rows.append((rid, f"announced by video {vid}, which no video document lists"))
     hard(rows, name="announced-video-not-linked")
 

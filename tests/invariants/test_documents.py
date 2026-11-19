@@ -53,6 +53,14 @@ def test_no_shorts_address(hard):
         WHERE data LIKE '%youtube.com/shorts/%'""", name="video-shorts-url")
 
 
+def test_no_shorts_title(hard):
+    """No video document is a YouTube Short by its own title: a #shorts / #short tag makes it one, whatever playlist
+    its channel files it in (hobbydex-tools import_brand_videos.short_signal reads the tag first)."""
+    hard("""SELECT id AS record, 'title ' || json_extract(data, '$.title') AS problem FROM records
+        WHERE kind = 'doc' AND json_extract(data, '$.kind') = 'video'
+          AND json_extract(data, '$.title') REGEXP '(?i)#shorts?(?![a-z0-9_])'""", name="video-shorts-title")
+
+
 def test_video_has_date(hard):
     """Every video document has the date the video was published (from the channel page)."""
     hard("""SELECT id AS record, 'video with no date' AS problem FROM records WHERE kind = 'doc'
