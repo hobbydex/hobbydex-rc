@@ -22,3 +22,7 @@ equivalent_to = [
 ]
 material = "steel"
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-7954sh-high-torque-steel-gear-24t-digital-coreless-servo/" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 18, torque_ozin = 250, speed_s = 0.19, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 7.4, torque_kgcm = 29, torque_ozin = 402, speed_s = 0.12, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

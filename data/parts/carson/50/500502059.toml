@@ -22,3 +22,7 @@ size_class = "standard"
 equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional" },
 ]
+performance = [
+  { voltage = 6, torque_kgcm = 15.32, speed_s = 0.16, source = "doc/carson/store" },
+]
+speed_s = 0.16

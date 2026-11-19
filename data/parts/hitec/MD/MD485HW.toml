@@ -18,3 +18,7 @@ equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/md485hw-magnetic-encoder-hd-resin-gear-25t-digital-drag-servo/" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 4.82, torque_ozin = 67, speed_s = 0.2, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 7.4, torque_kgcm = 7.42, torque_ozin = 103, speed_s = 0.15, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

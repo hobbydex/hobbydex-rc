@@ -16,3 +16,9 @@ torque_kgcm = 14.5
 voltage = 6
 bearings = 2
 waterproof = true
+performance = [
+  { voltage = 6, torque_kgcm = 14.5, torque_ozin = 201.4, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard-23t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 23T spline stated by the maker's page" },
+]

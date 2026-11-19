@@ -17,3 +17,9 @@ voltage_range = "6.0V - 8.4V"
 torque_kgcm = 22.5
 voltage = 8.4
 motor = "brushless"
+performance = [
+  { voltage = 8.4, torque_kgcm = 22.5, torque_ozin = 312, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard stated by the maker's page" },
+]

@@ -19,3 +19,8 @@ equivalent_to = [
 ]
 material = "steel"
 links = [ { site = "Savox", url = "https://savox-servo.com/en/product/SV-1272SGplus/savox-servo-sv-1272sg-digital-high-voltage-coreless-motor-steel-gear" } ]
+performance = [
+  { voltage = 6, torque_kgcm = 23, speed_s = 0.13, source = "doc/savox/product-pages-savox-servo-com" },
+  { voltage = 7.4, torque_kgcm = 35, speed_s = 0.1, source = "doc/savox/product-pages-savox-servo-com" },
+  { voltage = 8.4, torque_kgcm = 40, speed_s = 0.09, source = "doc/savox/product-pages-savox-servo-com" },
+]

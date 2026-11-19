@@ -21,3 +21,7 @@ equivalent_to = [
   { spec = "spec/servo/jumbo-15t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-805mg-mega-giant-scale-metal-gear-servo/" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 19.8, torque_ozin = 275, speed_s = 0.22, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 24.7, torque_ozin = 343, speed_s = 0.18, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

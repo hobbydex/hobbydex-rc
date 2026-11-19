@@ -24,3 +24,8 @@ documents = ["doc/power-hd/d15-spec-sheet"]
 links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=198" },
 ]
+performance = [
+  { voltage = 6, torque_kgcm = 13.5, torque_ozin = 187.5, speed_s = 0.1, source = "doc/power-hd/website" },
+  { voltage = 7.4, torque_kgcm = 16.5, torque_ozin = 229.1, speed_s = 0.095, source = "doc/power-hd/website" },
+  { voltage = 8.4, torque_kgcm = 18, torque_ozin = 250, speed_s = 0.085, source = "doc/power-hd/website" },
+]

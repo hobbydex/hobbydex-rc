@@ -19,3 +19,10 @@ links = [
 fits = [
   { kit = "kit/kyosho/mini-z-4x4", type = "replaces", source = "doc/furitek/shop", notes = "Car named in the shop title (link_furitek_cars.py)" },
 ]
+performance = [
+  { voltage = 4.2, torque_kgcm = 0.6, torque_ozin = 8.3, speed_s = 0.09, source = "doc/furitek/product-pages-furitek-com" },
+  { voltage = 5, torque_kgcm = 0.75, torque_ozin = 10.4, speed_s = 0.07, source = "doc/furitek/product-pages-furitek-com" },
+]
+voltage = 5
+torque_kgcm = 0.75
+speed_s = 0.07
