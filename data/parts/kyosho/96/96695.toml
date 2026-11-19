@@ -18,3 +18,6 @@ color = "silver"
 notes = "Colour read from the maker's product photo."
 name_source = "manufacturer"
 former_names = ["20x32mm Ball Bearing"]
+equivalent_to = [
+  { spec = "spec/bearing/20x32x7", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

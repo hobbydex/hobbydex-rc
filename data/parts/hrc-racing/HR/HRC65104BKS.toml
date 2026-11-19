@@ -9,3 +9,13 @@ links = [
 ]
 pack_qty = 4
 pack_qty_basis = "name"
+material = "aluminium"
+wheel_size = "1.9\""
+scale = "1/10"
+vehicle = "crawler"
+color = "black/silver"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+universal = true
+universal_basis = "size"

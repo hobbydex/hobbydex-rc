@@ -2,7 +2,11 @@ id = "part/team-associated/8585"
 brand = "brand/team-associated"
 number = "8585"
 name = "RC10L Battery Mount Set"
+gtin = "784695085855"
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10l-battery-mount-set/" },
 ]
 category = "chassis"
+fits = [
+  { kit = "kit/team-associated/rc10l", type = "replaces", source = "doc/team-associated/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

@@ -4,6 +4,10 @@ number = "HRC5631-19"
 name = "Electric Motor - Type 540 - Torque Master 19T"
 name_source = "manufacturer"
 category = "motor"
+turns = 19
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000025554", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]

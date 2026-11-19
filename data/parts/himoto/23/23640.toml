@@ -2,8 +2,7 @@ id = "part/himoto/23640"
 brand = "brand/himoto"
 number = "23640"
 name = "Grub Screws M3x3"
-category = "misc"
-category_source = "fallback"
+category = "screw"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/barren", type = "direct", source = "doc/himoto/option-parts" },
@@ -24,3 +23,6 @@ links = [
 pack_qty = 6
 pack_qty_basis = "distributor"
 name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
