@@ -49,8 +49,8 @@ DEPICTS_COLOUR_WORDS = {
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
 VEHICLE_MAKES = {
     "Abarth", "Acura", "Alfa Romeo", "Alpine", "Aston Martin", "Audi", "BMW", "Bentley", "Bugatti", "Buggyra", "Buick", "Cadillac",
-    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Fendt", "Ferrari", "Fiat", "Ford",
-    "Freightliner", "GMC", "Hino", "Honda", "Hummer", "Hyundai", "International", "Isuzu", "Iveco", "Jaguar", "Jeep", "KTM",
+    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Faun", "Fendt", "Ferrari", "Fiat", "Ford",
+    "Freightliner", "GMC", "Hino", "Hitachi", "Honda", "Hummer", "Hyundai", "International", "Isuzu", "Iveco", "Jaguar", "Jeep", "KTM",
     "Kawasaki", "Kenworth", "Komatsu", "Lamborghini", "Lancia", "Land Rover", "Lexus", "Liebherr", "Lotus", "MAN", "Mack",
     "Maserati", "Mazda", "McLaren", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Opel", "Pagani", "Peterbilt", "Peugeot",
     "Plymouth", "Polaris", "Pontiac", "Porsche", "Ram", "Renault", "Scania", "Seat", "Shelby", "Skoda", "Subaru", "Suzuki",
@@ -558,6 +558,29 @@ def check_vehiclesdb(docs, errors):
             errors.append(f"{path}: depicts.vehiclesdb of {make!r}, whose make has no vehiclesdb link")
         elif link.group(1) != m.group(2):
             errors.append(f"{path}: depicts.vehiclesdb names make {m.group(2)!r}, the make's VehiclesDB make is {link.group(1)!r}")
+
+DEPICTS_BASES = {"page", "shared-code", "model-code"}
+
+def check_depicts_basis(docs, errors):
+    """How a depicts was found (docs/schema.md "release", depicts): basis "page" (a page about the release names the make
+    with its model code; source = that page) is stated; match "likely" goes with basis "shared-code" (via = a release that
+    states the same make and model) or "model-code" (source = the make's own model page). Owner 2026-11-19."""
+    depicts = {d.get("id"): d.get("depicts") for _, kind, d in docs if kind == "release"}
+    for path, kind, d in docs:
+        dp = d.get("depicts") if kind in ("release", "part") else None
+        if not isinstance(dp, dict) or not ({"match", "basis", "via", "source"} & set(dp)):
+            continue
+        match, basis = dp.get("match"), dp.get("basis")
+        if match not in (None, "likely") or basis not in DEPICTS_BASES or (match == "likely") != (basis != "page"):
+            errors.append(f"{path}: depicts.basis should be \"page\" (stated, no match) or, with match = \"likely\", \"shared-code\" or \"model-code\"; got match {match!r}, basis {basis!r}")
+            continue
+        src, via = dp.get("source"), dp.get("via")
+        if basis in ("page", "model-code") and not (isinstance(src, str) and src.startswith("https://") and via is None):
+            errors.append(f"{path}: depicts basis {basis!r} needs source, the https page that names the {'make with the code' if basis == 'page' else 'model'}, and no via")
+        elif basis == "shared-code":
+            other = depicts.get(via) if isinstance(via, str) else None
+            if src is not None or not isinstance(other, dict) or other.get("match") or (other.get("make"), other.get("model")) != (dp.get("make"), dp.get("model")):
+                errors.append(f"{path}: depicts basis \"shared-code\" needs via, a release whose stated depicts names the same make and model, and no source; got via {via!r}")
 
 WEBSITE_ARCHIVE = re.compile(r"https://web\.archive\.org/web/(\d{14})/(https?://\S+)")
 WEBSITE_NOTE = re.compile(r"domain now (parked|for sale|reused|gone), archived copy")
@@ -1603,7 +1626,7 @@ def main():
         if ve is not None:
             if kind == "part" and d.get("category") != "body":
                 errors.append(f"{path}: depicts only on a release or a body shell (category body)")
-            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed", "vehiclesdb", "wikidata", "wikipedia"}
+            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed", "vehiclesdb", "wikidata", "wikipedia", "match", "basis", "via", "source"}
                       and ("make" not in ve or ve["make"] in VEHICLE_MAKES)
                       and isinstance(ve.get("model"), str) and ve["model"].strip() == ve["model"] and ve["model"]
                       and (("year" not in ve) or (isinstance(ve["year"], int) and not isinstance(ve["year"], bool) and 1885 <= ve["year"] <= datetime.date.today().year + 1))
@@ -2009,6 +2032,7 @@ def main():
     check_makes(docs, errors)
     check_vehiclesdb(docs, errors)
     check_wikidata(docs, errors)
+    check_depicts_basis(docs, errors)
     check_website_archive(docs, errors)
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
