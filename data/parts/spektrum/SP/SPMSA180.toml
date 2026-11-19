@@ -10,7 +10,7 @@ links = [
 gtin = "660132655990"
 category = "servo"
 weight_g = 42
-dimensions_mm = [102, 89, 19]
+notes = "Horizon's page states 102 x 89 x 19 mm as the product size: too large for a 42 g servo, so it is the package, not the case; the case size is not stated."
 waterproof = false
 gear_material = "metal"
 voltage_range = "6.0V - 8.4V"
@@ -21,3 +21,4 @@ performance = [
   { voltage = 7.4, torque_kgcm = 10.8, torque_ozin = 150, source = "doc/spektrum/product-pages-horizonhobby-com" },
   { voltage = 8.4, torque_kgcm = 12.2, torque_ozin = 170, source = "doc/spektrum/product-pages-horizonhobby-com" },
 ]
+speed_s = 0.11

@@ -249,3 +249,25 @@ def test_servo_no_size_spec(ratchet, db):
     or no spline is stated (hobbydex-tools tools/link_servo_pages.py counts each reason)."""
     ratchet("servo-no-size-spec", [(pid, f"no size spec: {name}") for pid, name, _, _, spec in _servos(db) if not spec],
             blocking=False)
+
+
+def test_servo_figure_out_of_range(hard):
+    """A servo whose headline speed_s is not seconds per 60 degrees (0.005 to 2) or whose torque_kgcm is not kg-cm (0.1 to
+    500): a misread figure (".10 sec" read as 0, ".062 sec" as 2, ".07sec" as 7). Fix the reader (hobbydex-tools
+    tools/horizon_specs.py, tools/servo_performance.py) and the value from the maker's page, as performance rows are
+    checked by tools/validate.py."""
+    hard("""SELECT id AS record, 'speed_s ' || coalesce(json_extract(data, '$.speed_s'), '-')
+            || ', torque_kgcm ' || coalesce(json_extract(data, '$.torque_kgcm'), '-') AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.category') = 'servo'
+          AND (json_extract(data, '$.speed_s') NOT BETWEEN 0.005 AND 2
+               OR json_extract(data, '$.torque_kgcm') NOT BETWEEN 0.1 AND 500)""", "servo-figure-out-of-range")
+
+
+def test_servo_case_oversize(hard):
+    """A servo whose dimensions_mm has a side of 90 mm or more: no car servo case is that large (a 1/5-scale one is about
+    66 x 30 x 58 mm), so it is the package size a shop lists as the product size (Horizon's 102 x 51 x 14 mm for a mini
+    servo). The importer refuses such a size for a servo (hobbydex-tools tools/sources/rules/horizon-specs.tsv)."""
+    hard("""SELECT id AS record, 'dimensions_mm ' || json_extract(data, '$.dimensions_mm') AS problem
+        FROM records WHERE kind = 'part' AND json_extract(data, '$.category') = 'servo'
+          AND EXISTS (SELECT 1 FROM json_each(json_extract(records.data, '$.dimensions_mm')) d WHERE d.value >= 90)""",
+         "servo-case-oversize")

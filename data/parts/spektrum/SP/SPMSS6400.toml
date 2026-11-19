@@ -20,3 +20,6 @@ performance = [
   { voltage = 7.4, torque_kgcm = 19.15, torque_ozin = 266, source = "doc/spektrum/product-pages-horizonhobby-com" },
 ]
 voltage = 6
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]

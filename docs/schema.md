@@ -913,7 +913,11 @@ maker's page states the size class (Horizon's "Servo Size Category", with its
 size range and the name or the maker's page states the spline. Both are match
 "close" with the maker page's document as `source` where the page stated it.
 A servo whose case fits no range, or that states no spline, is not linked
-(the data invariant servo-no-size-spec counts them).
+(the data invariant servo-no-size-spec counts them); nor is one whose maker
+class contradicts its case (Horizon's "Standard" for a 59.5 x 39 mm case),
+except a "Standard" case 30 mm tall or less, a low-profile one on the same
+footprint, which takes the maker's class. A side of 90 mm or more is a
+package size, not a case (servo-case-oversize).
 
 `performance` lists the torque and speed the maker states at each voltage, one
 row per voltage in ascending order:
