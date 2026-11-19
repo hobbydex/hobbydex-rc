@@ -7,6 +7,8 @@
 #   exclude_name  a regex (Python re, also valid Rust regex: no lookarounds) on the part name: parts of the category that
 #                 are not the item itself (a servo case, a motor rotor) and so carry none of its facts
 #   when          optional: the part counts only when these fields have one of the listed values (a shock: complete)
+#   marks         optional: fields that only parts of this category carry; a hobbydex-tools site descriptor whose map sets
+#                 one of them imports parts of the category, so it must map or declare each fact (the importer contract)
 #   facts         the facts, each { fact, label, any, when }:
 #     fact        the id, as used in a part's `unstated` table and in the ratchet name fact-<category>-<fact>
 #     any         the fact is there when any entry holds: "field" is a field of the part, or of a spec the part is
@@ -24,6 +26,7 @@
 
 [servo]
 exclude_name = '(?i)\b(cases|case set|(top|middle|bottom|upper|lower) case|brace|mount|mounts|horns?|saver|savers|bolts?|screws?|connector|plug|gear ?set|gear ?kit|parts|bracket|holder|cable|lead|extension|tester|arms?|stay|tray|plate|spacer|grommets?|cover|board|pot|potentiometer|installing|boot)\b'
+marks = ["torque_kgcm", "speed_s"]
 facts = [
   { fact = "torque", label = "Torque", any = ["torque_kgcm"] },
   { fact = "speed", label = "Speed", any = ["speed_s"] },
@@ -34,6 +37,7 @@ facts = [
 
 [motor]
 exclude_name = '(?i)\b(rotor|rotors|end ?bell|endbell|armature|brush|brushes|springs?|mount|mounts|plate|heat ?sink|fan|bearings?|sensor ?(wire|cable|board|harness)|caps?|cover|screws?|holder|stator|magnet|bushing|spacer|blades?|oil|pump|weights?|clamp|boot|tool)\b'
+marks = ["kv", "turns"]
 facts = [
   { fact = "type", label = "Brushed or brushless", any = ["motor_type"] },
   { fact = "winding", label = "kV or turns", any = ["kv", "turns"] },
@@ -43,6 +47,7 @@ facts = [
 
 [battery]
 exclude_name = '(?i)\b(form|strap|straps|holder|mount|mounts|tray|box|door|cover|lid|clip|clips|clamp|post|posts|plate|bracket|hold ?down|tape|foam|velcro|stopper|spacer|bag|adapter|checker|tester|alarm)\b'
+marks = ["capacity_mah", "c_rating"]
 facts = [
   { fact = "chemistry", label = "Chemistry", any = ["chemistry"] },
   { fact = "cells", label = "Cells", any = ["cells"] },
@@ -53,6 +58,7 @@ facts = [
 
 [esc]
 exclude_name = '(?i)\b(fan|heat ?sink|case|cover|mount|mounts|plate|holder|tray|switch|capacitor|program ?(card|box)|screws?|stand)\b'
+marks = ["current_a"]
 facts = [
   { fact = "current", label = "Current rating", any = ["current_a"] },
   { fact = "cells", label = "Cells range", any = ["lipo_cells", "nimh_cells"] },
@@ -61,6 +67,7 @@ facts = [
 
 [tire]
 exclude_name = '(?i)\b(glue|bands?|tool|weights?|cleaner|additive|sauce|warmers?|truer|bag|rack|stand|holder|lever|valve)\b'
+marks = ["compound"]
 facts = [
   { fact = "size", label = "Rim size", any = ["wheel_size"] },
   { fact = "compound", label = "Compound", any = ["compound"] },
@@ -68,6 +75,7 @@ facts = [
 
 [wheel]
 exclude_name = '(?i)\b(nuts?|wheel locks?|bead ?lock rings?|hubs?|adapters?|weights?|spacer|caps?|covers?|bolts?|screws?|stand|tool)\b'
+marks = ["offset_mm"]
 facts = [
   { fact = "size", label = "Rim size", any = ["wheel_size"] },
   { fact = "hex", label = "Hex", any = ["spec/wheel-hex/"] },

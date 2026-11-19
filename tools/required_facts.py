@@ -34,6 +34,7 @@ class Category:
     facts: list
     exclude_name: object = None   # a compiled regex, or None
     when: dict = field(default_factory=dict)
+    marks: list = field(default_factory=list)   # fields only this category's parts carry (the importer contract)
 
     def fact(self, fid):
         return next((f for f in self.facts if f.fact == fid), None)
@@ -65,7 +66,10 @@ def parse(doc):
                 raise ValueError(f"[{cat}] {fid} is listed twice")
             label = f.get("label") if isinstance(f.get("label"), str) and f.get("label") else fid
             facts.append(Fact(fid, label, list(f["any"]), _when(cat, fid, f.get("when"))))
-        reg[cat] = Category(cat, facts, ex, when)
+        marks = t.get("marks", [])
+        if not isinstance(marks, list) or not all(isinstance(m, str) and m for m in marks):
+            raise ValueError(f"[{cat}] marks must be a list of field names")
+        reg[cat] = Category(cat, facts, ex, when, list(marks))
     return reg
 
 
