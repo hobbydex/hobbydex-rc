@@ -21,3 +21,8 @@ notes = "JX files it under Mini servo; Stall torque 1.8 kg.cm at 4.8 V, 2.2 kg.c
 links = [
   { site = "JX Servo", url = "http://www.jx-servo.com/en/Product/micro/MD/2026-02-02/653.html" },
 ]
+performance = [
+  { voltage = 4.8, torque_kgcm = 1.8, speed_s = 0.075, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 6, torque_kgcm = 2.2, speed_s = 0.066, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 8.4, torque_kgcm = 3, speed_s = 0.052, source = "doc/jx/product-pages-jx-servo-com" },
+]

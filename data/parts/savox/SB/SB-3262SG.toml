@@ -23,3 +23,8 @@ equivalent_to = [
 ]
 material = "steel"
 links = [{ site = "Savox", url = "https://savox-servo.com/en/product/SB-3262SG/savox-servo-sb-3262sg-digital-high-voltage-brushless-motor-steel-gears" }]
+performance = [
+  { voltage = 6, torque_kgcm = 22, speed_s = 0.1, source = "doc/savox/product-pages-savox-servo-com" },
+  { voltage = 7.4, torque_kgcm = 28, speed_s = 0.08, source = "doc/savox/product-pages-savox-servo-com" },
+  { voltage = 8.4, torque_kgcm = 35, speed_s = 0.065, source = "doc/savox/product-pages-savox-servo-com" },
+]

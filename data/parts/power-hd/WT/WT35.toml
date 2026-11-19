@@ -22,3 +22,8 @@ documents = ["doc/power-hd/wt35-spec-sheet"]
 links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=262" },
 ]
+performance = [
+  { voltage = 4.8, torque_kgcm = 3, torque_ozin = 41.7, speed_s = 0.1, source = "doc/power-hd/website" },
+  { voltage = 6, torque_kgcm = 3.5, torque_ozin = 48.6, speed_s = 0.085, source = "doc/power-hd/website" },
+  { voltage = 7.4, torque_kgcm = 3.8, torque_ozin = 52.8, speed_s = 0.075, source = "doc/power-hd/website" },
+]

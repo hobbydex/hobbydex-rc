@@ -42,6 +42,11 @@ Misc is a category; a part with no category is the fallback (misc with `category
 fails a change that adds fallback parts and lists them by id and name, so the classifier rules can be extended.
 Genuine misc parts never count.
 
+Required facts (`test_required_facts.py`): per part category and fact of data/required-facts.toml, a blocking
+ratchet `fact-<category>-<fact>` counts the parts that lack the fact and do not mark it `unstated` (docs/schema.md
+"Required facts"); `required-fact-unstated-valid` (hard) checks the markers. A new category or fact in the file needs
+its count in baseline.toml (the run names it).
+
 ## Adding an invariant
 
 A class of data bug we fix gets an invariant, so it cannot come back.
