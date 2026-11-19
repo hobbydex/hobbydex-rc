@@ -23,3 +23,7 @@ dead_band_us = 2
 frequency_hz = 330
 notes = "JX files it under Waterproof servo; Stall torque 3.5 kg.cm at 6 V, 4.5 kg.cm at 8.4 V; speed 0.12 s/60deg at 6 V, 0.1 s/60deg at 8.4 V; lead 265 mm; waterproof."
 links = [{ site = "JX Servo", url = "http://www.jx-servo.com/en/Product/WATERPROOF/2020-06-05/606.html" }]
+performance = [
+  { voltage = 6, torque_kgcm = 3.5, speed_s = 0.12, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 8.4, torque_kgcm = 4.5, speed_s = 0.1, source = "doc/jx/product-pages-jx-servo-com" },
+]

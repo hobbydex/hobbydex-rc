@@ -17,3 +17,9 @@ voltage_range = "6.0V - 8.4V"
 torque_kgcm = 30.0
 speed_s = 2
 bearings = 2
+performance = [
+  { voltage = 8.4, torque_kgcm = 29.98, torque_ozin = 416.4, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]

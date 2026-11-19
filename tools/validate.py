@@ -88,6 +88,7 @@ ENUMS = {
     "needs.item": {"radio", "receiver", "servo", "esc", "motor", "engine", "battery", "charger", "pinion", "tyres", "wheels", "body", "paint", "glue", "fuel", "glow-starter", "tools"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "news", "owner_report", "video"},
     "equivalent_to.match": {"exact", "functional", "close"},
+    "equivalent_to.basis": {"maker", "dimensions"},   # why a servo links its size spec (docs/schema.md "Servos")
     "fits.type": {"direct", "replaces", "modification", "family"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "rebrand_of.certainty": {"likely"},   # absent = confirmed (maker statement, matching part numbers or an owner's statement); likely = specs or looks only (docs/schema.md "rebrand_of")
@@ -130,6 +131,48 @@ ENUMS["release.category"] = ENUMS["kit.category"]   # a release's kit type overr
 # servo spec fields (docs/schema.md "Servos"): bearings, bearing_kind, dead_band_us, frequency_hz
 SERVO_FIELDS = ("bearings", "bearing_kind", "dead_band_us", "frequency_hz")
 SERVO_BEARING_KIND = {"ball", "bushing"}
+PERFORMANCE_KEYS = {"voltage", "torque_kgcm", "torque_ozin", "speed_s", "source"}   # a servo's figures at one voltage (docs/schema.md "Servos")
+
+
+def check_performance(path, d):
+    """A servo's performance rows: one per voltage (3..30 V, ascending), a torque (kg-cm) or a speed (s per 60 degrees)
+    each, the document that states them; the top-level torque_kgcm and speed_s agree with the row at `voltage` (a torque to 0.05:
+    a headline torque converted from oz-in may be rounded to one decimal)."""
+    out = []
+    pf = d.get("performance")
+    if pf is None:
+        return out
+    if d.get("category") != "servo":
+        return [f"{path}: performance only on servos (category servo)"]
+    num = lambda x, lo, hi: isinstance(x, (int, float)) and not isinstance(x, bool) and lo <= x <= hi
+    if not (isinstance(pf, list) and pf and all(isinstance(r, dict) for r in pf)):
+        return [f"{path}: performance should be a non-empty list of {{ voltage, torque_kgcm, torque_ozin, speed_s, source }}"]
+    volts = []
+    for i, r in enumerate(pf):
+        extra = sorted(set(r) - PERFORMANCE_KEYS)
+        if extra:
+            out.append(f"{path}: performance[{i}] has {', '.join(extra)}; a row holds only {', '.join(sorted(PERFORMANCE_KEYS))}")
+        if not num(r.get("voltage"), 3, 30):
+            out.append(f"{path}: performance[{i}].voltage {r.get('voltage')!r} should be the volts the figures are stated at (3..30)")
+        else:
+            volts.append(r["voltage"])
+        if "torque_kgcm" not in r and "speed_s" not in r:
+            out.append(f"{path}: performance[{i}] needs torque_kgcm or speed_s")
+        if "torque_kgcm" in r and not num(r["torque_kgcm"], 0.1, 500):
+            out.append(f"{path}: performance[{i}].torque_kgcm {r['torque_kgcm']!r} should be kg-cm (0.1..500)")
+        if "torque_ozin" in r and not (num(r["torque_ozin"], 1, 7000) and "torque_kgcm" in r):
+            out.append(f"{path}: performance[{i}].torque_ozin {r['torque_ozin']!r} should be the stated oz-in (1..7000), beside torque_kgcm")
+        if "speed_s" in r and not num(r["speed_s"], 0.005, 2):
+            out.append(f"{path}: performance[{i}].speed_s {r['speed_s']!r} should be seconds per 60 degrees (0.005..2)")
+        if not isinstance(r.get("source"), str):
+            out.append(f"{path}: performance[{i}] needs source, the document that states the figures")
+    if volts != sorted(set(volts)):
+        out.append(f"{path}: performance rows should have one voltage each, in ascending order")
+    at = next((r for r in pf if r.get("voltage") == d["voltage"]), None) if d.get("voltage") is not None else None
+    for f in ("torque_kgcm", "speed_s"):
+        if at and f in at and f in d and not (num(d[f], 0, 1e9) and num(at[f], 0, 1e9) and abs(d[f] - at[f]) <= (0.0501 if f == "torque_kgcm" else 1e-9)):   # a torque rounded to 0.1
+            out.append(f"{path}: {f} {d[f]!r} differs from the performance row at {d['voltage']} V ({at[f]!r})")
+    return out
 ESC_PROP_FIELDS = ("motor_type", "bec_v", "bec_a", "motor_limit_t", "motor_limit_kv", "nimh_cells", "programming", "resistance_mohm")   # docs/schema.md "ESCs"
 # waterproof: the maker's wording on these categories; scales: the vehicle scales a maker names for an electronic part (docs/schema.md "scales")
 WATERPROOF_CATEGORIES = ("esc", "motor", "servo", "radio")
@@ -1671,6 +1714,8 @@ def main():
                 errors.extend(check_charger(path, d))
         if kind == "part" and any(k in d for k in SERVO_FIELDS) and d.get("category") != "servo":
             errors.append(f"{path}: {', '.join(k for k in SERVO_FIELDS if k in d)} only on servos (category servo)")
+        if kind == "part":
+            errors.extend(check_performance(path, d))
         if kind == "part" and d.get("category") == "servo":
             bn, bk, db, fq = (d.get(k) for k in SERVO_FIELDS)
             if bn is not None and not (isinstance(bn, int) and not isinstance(bn, bool) and 1 <= bn <= 10):

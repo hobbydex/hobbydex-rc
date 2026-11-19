@@ -13,3 +13,10 @@ equivalent_to = [
   { spec = "spec/servo/micro-21t", match = "functional", notes = "Size class and spline from Furitek's description; check the case size and mounting holes" },
 ]
 links = [{ site = "Furitek", url = "https://furitek.com/products/furitek-springbok-metal-gear-9g-digital-servo" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 1.8, torque_ozin = 25, speed_s = 0.13, source = "doc/furitek/product-pages-furitek-com" },
+  { voltage = 6, torque_kgcm = 2.2, torque_ozin = 30, speed_s = 0.11, source = "doc/furitek/product-pages-furitek-com" },
+]
+voltage = 6
+torque_kgcm = 2.2
+speed_s = 0.11

@@ -27,3 +27,6 @@ voltage = 6
 speed_s = 0.14
 bearings = 2
 bearing_kind = "ball"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/arrma/horizon-part-pages", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]

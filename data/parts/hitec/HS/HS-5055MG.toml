@@ -19,3 +19,7 @@ equivalent_to = [
   { spec = "spec/servo/micro-15t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-5055mg-economy-metal-gear-feather-servo/" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 1.3, torque_ozin = 18, speed_s = 0.2, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 1.6, torque_ozin = 22, speed_s = 0.17, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

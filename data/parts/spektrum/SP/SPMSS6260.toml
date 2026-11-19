@@ -19,3 +19,11 @@ voltage = 6
 bearings = 2
 material = "plastic"
 rotation_deg = 120
+performance = [
+  { voltage = 6, torque_kgcm = 12, torque_ozin = 167, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 7.4, torque_kgcm = 15.1, torque_ozin = 210, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 8.4, torque_kgcm = 17.4, torque_ozin = 241, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard-23t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 23T spline stated by the maker's page" },
+]

@@ -24,3 +24,8 @@ documents = ["doc/power-hd/r30s-spec-sheet"]
 links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=226" },
 ]
+performance = [
+  { voltage = 6, torque_kgcm = 24, torque_ozin = 333.3, speed_s = 0.17, source = "doc/power-hd/website" },
+  { voltage = 7.4, torque_kgcm = 30, torque_ozin = 416.6, speed_s = 0.15, source = "doc/power-hd/website" },
+  { voltage = 8.4, torque_kgcm = 35, torque_ozin = 486.1, speed_s = 0.13, source = "doc/power-hd/website" },
+]

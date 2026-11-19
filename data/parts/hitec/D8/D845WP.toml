@@ -22,3 +22,8 @@ equivalent_to = [
 ]
 material = "steel"
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/d845wp-digital-mega-scale-monster-torque-waterproof-servo/" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 32.5, torque_ozin = 451.34, speed_s = 0.26, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 40.5, torque_ozin = 562.44, speed_s = 0.21, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 7.4, torque_kgcm = 50.0, torque_ozin = 694.37, speed_s = 0.17, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

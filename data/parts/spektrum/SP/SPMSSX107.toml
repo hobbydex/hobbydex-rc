@@ -15,3 +15,11 @@ weight_g = 10
 gear_material = "metal"
 voltage_range = "4.8V - 6.0V"
 torque_kgcm = 2.5
+performance = [
+  { voltage = 4.8, torque_kgcm = 2.5, torque_ozin = 34.9, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 6, torque_kgcm = 3, torque_ozin = 41.8, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+voltage = 4.8
+equivalent_to = [
+  { spec = "spec/servo/micro-20t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Micro and 20T spline stated by the maker's page" },
+]
