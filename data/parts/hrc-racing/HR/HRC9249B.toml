@@ -9,3 +9,9 @@ links = [
 ]
 pack_qty = 10
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/wire/22awg", match = "functional" },
+]
+wire_awg = 22
+length_mm = 140
+connectors = ["JR"]

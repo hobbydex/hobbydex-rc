@@ -12,3 +12,6 @@ links = [
 applies_to = ["OVER D10 RTR 01"]
 category = "servo"
 notes = "English translated by Hobbydex from the maker's French name (name_fr)"
+fits = [
+  { kit = "kit/hobbytech/over-d10", type = "replaces", source = "doc/hobbytech/over-d10-rtr-guide-de-refs", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

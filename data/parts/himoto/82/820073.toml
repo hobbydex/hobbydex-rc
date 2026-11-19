@@ -2,8 +2,7 @@ id = "part/himoto/820073"
 brand = "brand/himoto"
 number = "820073"
 name = "3*15Mm Pins"
-category = "misc"
-category_source = "fallback"
+category = "pin"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/cluster", type = "direct", source = "doc/himoto/option-parts" },
@@ -21,3 +20,6 @@ links = [
 pack_qty = 12
 pack_qty_basis = "distributor"
 name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/pin/3x15", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
+]
