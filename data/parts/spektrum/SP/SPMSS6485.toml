@@ -16,3 +16,6 @@ torque_kgcm = 35.8
 speed_s = 0
 bearings = 2
 weight_g = 79
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]

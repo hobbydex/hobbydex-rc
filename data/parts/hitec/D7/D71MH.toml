@@ -20,3 +20,7 @@ equivalent_to = [
   { spec = "spec/servo/micro-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/d71mh-digital-micro-servo/" }]
+performance = [
+  { voltage = 6, torque_kgcm = 3.7, torque_ozin = 51.38, speed_s = 0.16, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 7.4, torque_kgcm = 4.1, torque_ozin = 56.94, speed_s = 0.13, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

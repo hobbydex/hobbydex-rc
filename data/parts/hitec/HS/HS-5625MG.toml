@@ -20,3 +20,7 @@ equivalent_to = [
   { spec = "spec/servo/standard-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-5625mg-high-speed-metal-gear-digital-sport-servo/" }, { site = "Big Squid RC", url = "https://www.bigsquidrc.com/2-new-d-series-premium-servos-from-hitec/", kind = "press" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 7.9, torque_ozin = 109.7, speed_s = 0.17, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 9.4, torque_ozin = 130.5, speed_s = 0.14, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

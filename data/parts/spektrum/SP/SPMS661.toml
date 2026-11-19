@@ -12,3 +12,10 @@ voltage_range = "6.0V - 7.4V"
 weight_g = 59
 torque_kgcm = 6.37
 voltage = 6
+performance = [
+  { voltage = 6, torque_kgcm = 6.37, torque_ozin = 88, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 7.2, torque_kgcm = 7.42, torque_ozin = 103, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "dimensions", notes = "Size class from the case dimensions (40x20x39 mm); 25T spline stated in the name; check the mounting holes" },
+]

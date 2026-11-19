@@ -23,3 +23,7 @@ dead_band_us = 2
 frequency_hz = 330
 notes = "JX files it under Low Profile servo; Stall torque 7.8 kg.cm at 4.8 V, 9.2 kg.cm at 6 V; speed 0.13 s/60deg at 4.8 V, 0.11 s/60deg at 6 V; lead 265 mm."
 links = [{ site = "JX Servo", url = "http://www.jx-servo.com/en/Product/LOW/437.html" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 7.8, speed_s = 0.13, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 6, torque_kgcm = 9.2, speed_s = 0.11, source = "doc/jx/product-pages-jx-servo-com" },
+]
