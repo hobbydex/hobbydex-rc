@@ -3,8 +3,14 @@ brand = "brand/hrc-racing"
 number = "HRC03616E"
 name = "Battery - 6 cells - RC Car Micro - NiMH - 7.2V 1600mAh - EC3 plug side by side 100x30x17mm"
 name_source = "manufacturer"
-category = "wire"
+category = "battery"
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000018483", kind = "maker" },
 ]
-connectors = ["EC3"]
+connector = "EC3"
+chemistry = "nimh"
+cells = 6
+voltage = 7.2
+
+[unchecked]
+capacity = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000018483"
