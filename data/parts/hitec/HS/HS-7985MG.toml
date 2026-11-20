@@ -21,3 +21,7 @@ equivalent_to = [
   { spec = "spec/servo/standard-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-7985mg-high-torque-metal-gear-coreless-premium-digital-servo/" }, { site = "Red RC", url = "https://www.redrc.net/2008/04/hitec-hs-7985mg-high-torque-servo/", kind = "press" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 10.4, torque_ozin = 144, speed_s = 0.16, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 12.4, torque_ozin = 172, speed_s = 0.13, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

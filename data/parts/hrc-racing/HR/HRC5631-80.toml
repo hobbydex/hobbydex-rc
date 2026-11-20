@@ -4,6 +4,10 @@ number = "HRC5631-80"
 name = "Electric Motor - Type 540 - Perfect Scaler 80T"
 name_source = "manufacturer"
 category = "motor"
+turns = 80
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000027722", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]

@@ -21,3 +21,6 @@ links = [
 ]
 name_source = "manufacturer"
 former_names = ["4x15mm(TP)"]
+equivalent_to = [
+  { spec = "spec/screw/m4x15-truss-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

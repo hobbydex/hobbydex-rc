@@ -1,7 +1,8 @@
 id = "part/kyosho/SIL0150"
 brand = "brand/kyosho"
 number = "SIL0150"
-name = "Silicon Oil (#150/40cc)"
+name = "Silicone OIL #150 (40cc)"
+gtin = "4955439758212"
 notes = "Merged from part/kyosho/SILO150: the letter O in the parts list code is the zero (coordinator decision 2026-11-06, class of the owner decision for MBO11)."
 former_ids = ["part/kyosho/SILO150"]
 numbers = ["SILO150"]
@@ -26,3 +27,8 @@ equivalent_to = [
   { spec = "spec/oil/silicone-150cst", match = "functional", notes = "Viscosity number #150 as the brand states it, on the cSt scale; measuring temperature not given" },
 ]
 documents = ["doc/kyosho/30027-tf7-7-parts-list-v01", "doc/kyosho/31122-vones2-p", "doc/kyosho/31255-vonerr-evo-p", "doc/kyosho/31349-v-one-s3-evo-gt-r-m", "doc/kyosho/31352-inferno-str-m", "doc/kyosho/31380-mm01-fw05t-maint-m"]
+name_source = "manufacturer"
+former_names = ["Silicon Oil (#150/40cc)"]
+links = [
+  { site = "Kyosho (Internet Archive)", url = "https://web.archive.org/web/20220123190618/https://rc.kyosho.com/en/sil0150.html", kind = "archive" },
+]

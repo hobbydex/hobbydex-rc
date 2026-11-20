@@ -13,6 +13,7 @@ category = "chassis"
 notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
 fits = [
   { kit = "kit/kyosho/plazma-formula", releases = ["release/kyosho/30412"], type = "replaces", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Marked for the No.30412 (option part) in Kyosho's Plazma series parts acceptable list" },
+  { kit = "kit/kyosho/plazma-formula", type = "replaces", replaces = "part/kyosho/PZ116", source = "doc/kyosho/plazma-series-ver03-1512", notes = "Same part in another material (link_upgrades.py)" },
 ]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/pzw104.html" } ]
 material = "carbon"

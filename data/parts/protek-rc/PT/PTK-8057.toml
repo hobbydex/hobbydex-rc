@@ -7,3 +7,10 @@ category_source = "curated"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-steel-32p-pinion-gear-w-3.17mm-reducer-sleeve-mod-.8-5mm-bore-ptk-8057/p735082?v=704106" },
 ]
+teeth = 14
+pitch_dp = 32
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/32dp-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

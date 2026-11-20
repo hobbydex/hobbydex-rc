@@ -10,3 +10,8 @@ links = [
 pack_qty = 4
 pack_qty_basis = "name"
 color = "green"
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/nut/m4-flanged-nylon-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]
+range = "hrc-racing/hrc1051-colours"

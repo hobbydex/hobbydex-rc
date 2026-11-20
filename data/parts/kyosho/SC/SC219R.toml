@@ -1,15 +1,20 @@
 id = "part/kyosho/SC219R"
 brand = "brand/kyosho"
 number = "SC219R"
-name = "Radio Box Set"
+name = "Radio Box Set(Red/Scorpion 2014)"
 seen_by = "2021-12-05"
 seen_by_source = "https://web.archive.org/web/20211205080957/https://rc.kyosho.com/en/sc219r.html"
 gtin = "4548565253302"
 notes = "Name read by OCR from a scanned kyosho manual; verify before relying on exact wording"
-name_source = "ocr"
+name_source = "manufacturer"
 category = "chassis"
 documents = ["doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/vintage-160304-2-jp"]
 fits = [
   { kit = "kit/kyosho/beetle", releases = ["release/kyosho/30614"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30614 (option part) in Kyosho's Vintage series parts acceptable list" },
   { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
 ]
+ocr_names = ["Radio Box Set"]
+links = [
+  { site = "Kyosho (Internet Archive)", url = "https://web.archive.org/web/20211205080957/https://rc.kyosho.com/en/sc219r.html", kind = "archive" },
+]
+range = "kyosho/sc219-colours"

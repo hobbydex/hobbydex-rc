@@ -24,3 +24,8 @@ documents = ["doc/power-hd/lw-15mg-spec-sheet"]
 links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=200" },
 ]
+performance = [
+  { voltage = 4.8, torque_kgcm = 9, torque_ozin = 125, speed_s = 0.15, source = "doc/power-hd/website" },
+  { voltage = 6, torque_kgcm = 12.5, torque_ozin = 173.6, speed_s = 0.13, source = "doc/power-hd/website" },
+  { voltage = 7.2, torque_kgcm = 15, torque_ozin = 208.3, speed_s = 0.11, source = "doc/power-hd/website" },
+]

@@ -10,3 +10,11 @@ links = [
 chemistry = "lipo"
 cells = 3
 voltage = 11.1
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 4800
+equivalent_to = [
+  { spec = "spec/battery/lipo-3s-4800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 70
+case = "hard"

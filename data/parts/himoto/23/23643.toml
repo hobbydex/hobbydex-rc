@@ -2,8 +2,7 @@ id = "part/himoto/23643"
 brand = "brand/himoto"
 number = "23643"
 name = "E Clips 2.5"
-category = "misc"
-category_source = "fallback"
+category = "clip"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/barren", type = "direct", source = "doc/himoto/option-parts" },
@@ -24,3 +23,6 @@ links = [
 pack_qty = 6
 pack_qty_basis = "distributor"
 name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/eclip/2.5mm", match = "functional", notes = "Shaft size from the name" },
+]

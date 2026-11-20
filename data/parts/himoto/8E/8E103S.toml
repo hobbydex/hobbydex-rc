@@ -2,9 +2,10 @@ id = "part/himoto/8E103S"
 brand = "brand/himoto"
 number = "8E103S"
 name = "Sensorless Brushless Motor"
-category = "misc"
-category_source = "fallback"
+category = "motor"
+motor_type = "brushless"
 documents = ["doc/himoto/option-parts"]
+sensored = false
 fits = [
   { kit = "kit/himoto/mayhem", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/shootout", type = "direct", source = "doc/himoto/option-parts" },

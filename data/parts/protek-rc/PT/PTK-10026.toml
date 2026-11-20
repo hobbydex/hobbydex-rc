@@ -2,6 +2,8 @@ id = "part/protek-rc/PTK-10026"
 brand = "brand/protek-rc"
 number = "PTK-10026"
 name = "8x16x5mm Ceramic Rubber Sealed \"Speed\" Bearing (2)"
+seen_by = "2019-08-26"
+seen_by_source = "https://web.archive.org/web/20190826010028/https://www.amainhobbies.com/protek-rc-8x16x5mm-ceramic-rubber-sealed-speed-bearing-2-ptk-10026/p9016"
 category = "bearing"
 category_source = "curated"
 links = [
@@ -9,3 +11,8 @@ links = [
 ]
 pack_qty = 2
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"
+seal = "rubber"

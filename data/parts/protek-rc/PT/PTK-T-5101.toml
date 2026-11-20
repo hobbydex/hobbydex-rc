@@ -2,9 +2,15 @@ id = "part/protek-rc/PTK-T-5101"
 brand = "brand/protek-rc"
 number = "PTK-T-5101"
 name = "3x8mm \"Grade 5\" Titanium Cap Head Hex Screw (4)"
+seen_by = "2022-05-24"
+seen_by_source = "https://web.archive.org/web/20220524014751/https://www.amainhobbies.com/protek-rc-3x8mm-grade-5-titanium-cap-head-hex-screw-4-ptk-t-5101/p1276437"
 category = "screw"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-3x8mm-grade-5-titanium-cap-head-hex-screw-4-ptk-t-5101/p1276437" },
 ]
 pack_qty = 4
 pack_qty_basis = "name"
+material = "titanium"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

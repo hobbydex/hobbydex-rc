@@ -2,6 +2,8 @@ id = "part/protek-rc/PTK-5126-25"
 brand = "brand/protek-rc"
 number = "PTK-5126-25"
 name = "2S 150C Low IR Si-Graphene \"Stock Spec\" Shorty LiPo Battery (7.4V/5600mAh) (ROAR Approved)"
+seen_by = "2025-11-18"
+seen_by_source = "https://web.archive.org/web/20251118070021/https://www.amainhobbies.com/protek-rc-2s-150c-low-ir-sigraphene-stock-spec-shorty-lipo-battery-ptk-5126-25/p1624912"
 category = "battery"
 category_source = "curated"
 links = [
@@ -10,3 +12,12 @@ links = [
 chemistry = "lipo"
 cells = 2
 voltage = 7.4
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 5600
+weight_g = 224
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 150
+case = "shorty"

@@ -25,3 +25,9 @@ links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=214" },
   { site = "Red RC", url = "https://www.redrc.net/2022/04/power-hd-w50-360-t70-12v-servos/", kind = "press" },
 ]
+performance = [
+  { voltage = 6, torque_kgcm = 35, torque_ozin = 486.1, speed_s = 1.3, source = "doc/power-hd/website" },
+  { voltage = 7.4, torque_kgcm = 45, torque_ozin = 625, speed_s = 1, source = "doc/power-hd/website" },
+  { voltage = 8.4, torque_kgcm = 50, torque_ozin = 694.4, speed_s = 0.9, source = "doc/power-hd/website" },
+]
+speed_s = 0.9

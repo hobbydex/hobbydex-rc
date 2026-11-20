@@ -1,5 +1,5 @@
 """Kits (platforms): names and releases (the data-only checks of the daily audit, under their audit names)."""
-import collections, json, re
+import collections, glob, hashlib, json, os, re
 
 from rules import NEAR_DUP_KEPT, YEAR, near_dup_key, norm_name
 
@@ -98,3 +98,39 @@ def test_near_duplicate_model(ratchet, db):
     groups = {k: v for k, v in near.items() if k[1] and len(v) > 1 and k not in NEAR_DUP_KEPT}
     ratchet("near-duplicate-model", [(rid, f"{make}: " + " | ".join(sorted(s for sp in groups[(make, near_dup_key(model or ''))].values() for s in sp)))
                                      for rid, make, model in items if (make, near_dup_key(model or "")) in groups])
+
+
+# the kind of vehicle of a category (hobbydex-tools tools/art/photos.py kind_group): "car" for every car, buggy,
+# truggy, crawler or monster truck
+KIND_GROUPS = {"construction": "construction machine", "truck": "lorry", "tractor-truck": "lorry", "race-truck": "lorry",
+               "trailer": "trailer", "tank": "tank", "motorcycle": "motorcycle", "tractor": "farm tractor",
+               "boat": "boat", "snowmobile": "snowmobile"}
+# kinds one outline may honestly show for the other: a dump truck is a lorry and a construction machine, a trailer is
+# drawn hitched to its tractor, a pickup or race truck is filed as a truck or as a car (as the art ship gate)
+NEAR_KINDS = {frozenset(p) for p in (("lorry", "construction machine"), ("trailer", "lorry"), ("lorry", "car"))}
+ART = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "art")
+
+
+def test_outline_shared_across_kinds(hard, db):
+    """One outline is not drawn for vehicles of different kinds (a tank outline on a Ferrari F1 release, a pickup on
+    a Tiger I tank): the art of every kit and release that shares one outline file content is one kind of vehicle,
+    by the release's category, else its kit's. Remove the outline of the ones it does not show."""
+    cats = dict(db.execute("SELECT id, json_extract(data, '$.category') FROM records WHERE kind IN ('kit', 'release')"))
+    kits = dict(db.execute("SELECT id, json_extract(data, '$.kit') FROM records WHERE kind = 'release'"))
+    groups = collections.defaultdict(list)
+    for sub, kind in (("kits", "kit"), ("releases", "release")):
+        for path in glob.glob(os.path.join(ART, sub, "*", "*.svg")):
+            brand, name = path.split(os.sep)[-2:]
+            eid = f"{kind}/{brand}/{name[:-4]}"
+            if eid not in cats:
+                continue   # an orphan: validate reports it
+            cat = cats[eid] or cats.get(kits.get(eid)) or "car"
+            with open(path, "rb") as f:
+                groups[hashlib.sha1(f.read()).hexdigest()].append((eid, KIND_GROUPS.get(cat, "car")))
+    rows = []
+    for members in groups.values():
+        kinds = collections.Counter(k for _, k in members)
+        if len(kinds) > 1 and not (len(kinds) == 2 and frozenset(kinds) in NEAR_KINDS):
+            for eid, k in members:
+                rows.append((eid, f"outline shared with {len(members) - 1} others, kinds {', '.join(sorted(kinds))}; this is a {k}"))
+    hard(rows, name="outline-shared-across-kinds")

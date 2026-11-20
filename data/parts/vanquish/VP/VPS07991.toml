@@ -10,3 +10,7 @@ links = [
   { site = "RUDDOG", url = "https://www.ruddog.eu/Vanquish-Yeti-RR10-Motor-Plate-Black-Anodized_1", kind = "dealer" },
 ]
 color = "black"
+fits = [
+  { kit = "kit/axial/bomber", type = "replaces", source = "doc/ruddog/product-pages-ruddog-eu", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/axial/yeti", type = "replaces", source = "doc/ruddog/product-pages-ruddog-eu", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]

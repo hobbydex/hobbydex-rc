@@ -18,3 +18,10 @@ category = "servo"
 color = "black"
 range = "atomic-rc/bz-up017-colours"
 weight_g = 8
+performance = [
+  { voltage = 4.8, torque_kgcm = 1.4, speed_s = 0.08, source = "doc/atomic-rc/store" },
+  { voltage = 6, torque_kgcm = 1.6, speed_s = 0.07, source = "doc/atomic-rc/store" },
+]
+voltage = 6
+torque_kgcm = 1.6
+speed_s = 0.07

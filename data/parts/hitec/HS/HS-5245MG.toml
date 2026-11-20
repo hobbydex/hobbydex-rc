@@ -21,3 +21,7 @@ equivalent_to = [
   { spec = "spec/servo/mini-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-5245mg/" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 4.4, torque_ozin = 61, speed_s = 0.15, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 5.5, torque_ozin = 76, speed_s = 0.12, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

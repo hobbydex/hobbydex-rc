@@ -13,3 +13,11 @@ links = [
 ]
 category = "servo"
 weight_g = 6
+performance = [
+  { voltage = 6, torque_kgcm = 1, speed_s = 0.055, source = "doc/atomic-rc/store" },
+  { voltage = 7.4, torque_kgcm = 1.3, speed_s = 0.045, source = "doc/atomic-rc/store" },
+  { voltage = 8.4, torque_kgcm = 1.5, speed_s = 0.04, source = "doc/atomic-rc/store" },
+]
+voltage = 8.4
+torque_kgcm = 1.5
+speed_s = 0.04

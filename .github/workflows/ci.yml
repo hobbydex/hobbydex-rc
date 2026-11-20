@@ -30,7 +30,7 @@ jobs:
         run: python3 -I tools/validate.py
       - name: The word rules of the data invariants (tests/invariants/rules.py)
         run: |
-          for t in test_invariant_rules test_invariant_pack_count test_invariant_pack_qty_pitch test_invariant_spec_mismatch; do
+          for t in test_invariant_rules test_invariant_pack_count test_invariant_pack_qty_pitch test_invariant_spec_mismatch test_required_facts; do
             echo "== $t"
             python3 -I "tools/$t.py"
           done

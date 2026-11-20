@@ -20,3 +20,7 @@ equivalent_to = [
   { spec = "spec/servo/standard-25t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-648mg-high-torque-metal-gear-25t-analog-sport-servo/" }, { site = "Big Squid RC", url = "https://www.bigsquidrc.com/hitec-announces-analog-25t-spline-servos/", kind = "press" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 7.7, torque_ozin = 106.93, speed_s = 0.24, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 9.6, torque_ozin = 133.32, speed_s = 0.2, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

@@ -2,8 +2,15 @@ id = "part/protek-rc/PTK-5342"
 brand = "brand/protek-rc"
 number = "PTK-5342"
 name = "2S High Current Charge/Balance Adapter (4mm to 5mm Solid Bullets) (10awg Wire) (24\")"
+seen_by = "2017-07-19"
+seen_by_source = "https://web.archive.org/web/20170719165036/https://www.amainhobbies.com/protek-rc-2s-high-current-charge-balance-adapter-4mm-to-5mm-solid-bullets-ptk-5342/p501214"
 category = "wire"
 category_source = "curated"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-2s-high-current-charge-balance-adapter-4mm-to-5mm-solid-bullets-ptk-5342/p501214" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/10awg", match = "functional" },
+]
+wire_awg = 10
+connectors = ["4mm bullet", "5mm bullet"]

@@ -19,9 +19,6 @@ fits = [
   { kit = "kit/kyosho/rage-ve", type = "direct", source = "doc/kyosho/30992-rage-ve-spop" },
   { kit = "kit/kyosho/spada-09l", type = "direct", source = "doc/kyosho/31003-spada-09l-p" },
 ]
-equivalent_to = [
-  { spec = "spec/screw/m3x6-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
-]
 category = "screw"
 documents = ["doc/kyosho/1-s33006-product-page"]
 links = [
@@ -31,3 +28,6 @@ color = "black"
 notes = "Colour read from the maker's product photo."
 name_source = "manufacturer"
 former_names = ["Flat Head Screw(Hex/M3x6)"]
+equivalent_to = [
+  { spec = "spec/screw/m3x6-countersunk-jis", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

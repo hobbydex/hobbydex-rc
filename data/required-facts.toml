@@ -1,0 +1,110 @@
+# The facts every part of a category should carry (owner 2026-11-19: "Anything we can do to make sure this data is always
+# looked for/added?"). One table per part category (data/categories), read by tools/required_facts.py here (the
+# invariants in tests/invariants/test_required_facts.py), by hobbydex-tools (the daily metrics, the status page and the
+# importer contract of the site descriptors) and documented in docs/schema.md "Required facts".
+#
+# Per category:
+#   exclude_name  a regex (Python re, also valid Rust regex: no lookarounds) on the part name: parts of the category that
+#                 are not the item itself (a servo case, a motor rotor) and so carry none of its facts
+#   when          optional: the part counts only when these fields have one of the listed values (a shock: complete)
+#   marks         optional: fields that only parts of this category carry; a hobbydex-tools site descriptor whose map sets
+#                 one of them imports parts of the category, so it must map or declare each fact (the importer contract)
+#   facts         the facts, each { fact, label, any, when }:
+#     fact        the id, as used in a part's `unstated` table and in the ratchet name fact-<category>-<fact>
+#     any         the fact is there when any entry holds: "field" is a field of the part, or of a spec the part is
+#                 `equivalent_to` (a value that is not empty: false and 0 count); "spec/<kind>/" is an `equivalent_to`
+#                 or `includes` row naming a spec of that kind
+#     when        optional: the fact applies only when these fields (read as in `any`) have one of the listed values;
+#                 a part without the field is not counted for it
+#
+# A part whose source does not state a fact records that in `unstated = { <fact> = "<https page or doc id>" }`: the page
+# (or document) that was read and does not state it. It is then not counted as missing. A fact that is set needs no
+# marker: a writer that fills a fact drops its marker (required_facts.drop_stale; reported as required-fact-unstated-stale).
+#
+# Add a category or a fact here, then run `pytest tests/invariants -k required_facts` and add the counts it prints to
+# tests/invariants/baseline.toml. A count may only go down.
+
+[servo]
+exclude_name = '(?i)\b(cases|case set|(top|middle|bottom|upper|lower) case|brace|mount|mounts|horns?|saver|savers|bolts?|screws?|connector|plug|gear ?set|gear ?kit|parts|bracket|holder|cable|lead|extension|tester|arms?|stay|tray|plate|spacer|grommets?|cover|board|pot|potentiometer|installing|boot)\b'
+marks = ["torque_kgcm", "speed_s"]
+facts = [
+  { fact = "torque", label = "Torque", any = ["torque_kgcm"] },
+  { fact = "speed", label = "Speed", any = ["speed_s"] },
+  { fact = "voltage", label = "Rated voltage", any = ["voltage"] },
+  { fact = "voltage-range", label = "Voltage range", any = ["voltage_range"] },
+  { fact = "size", label = "Size spec", any = ["spec/servo/"] },
+]
+
+[motor]
+exclude_name = '(?i)\b(rotor|rotors|end ?bell|endbell|armature|brush|brushes|springs?|mount|mounts|plate|heat ?sink|fan|bearings?|sensor ?(wire|cable|board|harness)|caps?|cover|screws?|holder|stator|magnet|bushing|spacer|blades?|oil|pump|weights?|clamp|boot|tool)\b'
+marks = ["kv", "turns"]
+facts = [
+  { fact = "type", label = "Brushed or brushless", any = ["motor_type"] },
+  { fact = "winding", label = "kV or turns", any = ["kv", "turns"] },
+  { fact = "can", label = "Can size", any = ["can", "diameter_mm", "spec/motor/"] },
+  { fact = "sensored", label = "Sensored", any = ["sensored"], when = { motor_type = ["brushless"] } },
+]
+
+[battery]
+exclude_name = '(?i)\b(form|strap|straps|holder|mount|mounts|tray|box|door|cover|lid|clip|clips|clamp|post|posts|plate|bracket|hold ?down|tape|foam|velcro|stopper|spacer|bag|adapter|checker|tester|alarm)\b'
+marks = ["capacity_mah", "c_rating"]
+facts = [
+  { fact = "chemistry", label = "Chemistry", any = ["chemistry"] },
+  { fact = "cells", label = "Cells", any = ["cells"] },
+  { fact = "capacity", label = "Capacity", any = ["capacity_mah"] },
+  { fact = "c-rating", label = "C rating", any = ["c_rating"], when = { chemistry = ["lipo", "lihv", "life", "liion"] } },
+  { fact = "connector", label = "Connector", any = ["connector"] },
+]
+
+[esc]
+exclude_name = '(?i)\b(fan|heat ?sink|case|cover|mount|mounts|plate|holder|tray|switch|capacitor|program ?(card|box)|screws?|stand)\b'
+marks = ["current_a"]
+facts = [
+  { fact = "current", label = "Current rating", any = ["current_a"] },
+  { fact = "cells", label = "Cells range", any = ["lipo_cells", "nimh_cells"] },
+  { fact = "connector", label = "Battery connector", any = ["connector"] },
+]
+
+[tire]
+exclude_name = '(?i)\b(glue|bands?|tool|weights?|cleaner|additive|sauce|warmers?|truer|bag|rack|stand|holder|lever|valve)\b'
+marks = ["compound"]
+facts = [
+  { fact = "size", label = "Rim size", any = ["wheel_size"] },
+  { fact = "compound", label = "Compound", any = ["compound"] },
+]
+
+[wheel]
+exclude_name = '(?i)\b(nuts?|wheel locks?|bead ?lock rings?|hubs?|adapters?|weights?|spacer|caps?|covers?|bolts?|screws?|stand|tool)\b'
+marks = ["offset_mm"]
+facts = [
+  { fact = "size", label = "Rim size", any = ["wheel_size"] },
+  { fact = "hex", label = "Hex", any = ["spec/wheel-hex/"] },
+  { fact = "offset", label = "Offset", any = ["offset_mm"] },
+]
+
+[pinion]
+exclude_name = '(?i)\b(set|sets|assortment|box|tool|puller|holder|screws?|grub|shim)\b'
+facts = [
+  { fact = "teeth", label = "Teeth", any = ["teeth"] },
+  { fact = "pitch", label = "Pitch or module", any = ["pitch_dp", "module"] },
+  { fact = "bore", label = "Bore", any = ["bore_mm", "shaft_mm"] },
+]
+
+[spur-gear]
+exclude_name = '(?i)\b(holder|adapter|hub|mount|plate|cover|shaft|screws?|nut|pads?|bearing|set|sets|tool)\b'
+facts = [
+  { fact = "teeth", label = "Teeth", any = ["teeth"] },
+  { fact = "pitch", label = "Pitch or module", any = ["pitch_dp", "module"] },
+]
+
+[bearing]
+exclude_name = '(?i)\b(adapter|adaptor|mount|holder|carrier|block|housing|hub|press|tool|oil|grease|cleaner|spacer|cup|retainer|collar|plate)\b'
+facts = [
+  { fact = "size", label = "Size", any = ["spec/bearing/"] },
+]
+
+[shock]
+when = { shock_part = ["complete"] }
+facts = [
+  { fact = "length", label = "Length", any = ["length_mm"] },
+]

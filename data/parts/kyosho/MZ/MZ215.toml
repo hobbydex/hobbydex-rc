@@ -1,10 +1,11 @@
 id = "part/kyosho/MZ215"
 brand = "brand/kyosho"
 number = "MZ215"
-name = "Motor Case Set (MM/MR-03)"
+name = "Motor case set/Type MM (for MR-03)"
+gtin = "4548565291960"
 seen_by = "2020-09-25"
 seen_by_source = "https://web.archive.org/web/20200925094207/https://rc.kyosho.com/en/mz215.html"
-former_names = ["Motor Case Set (MM)"]
+former_names = ["Motor Case Set (MM)", "Motor Case Set (MM/MR-03)"]
 category = "motor"
 fits = [
   { kit = "kit/kyosho/mini-z-mr-03", type = "direct", source = "doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts" },
@@ -12,3 +13,7 @@ fits = [
   { kit = "kit/kyosho/mini-z-rwd", type = "direct", source = "doc/kyosho/32342gm-minizrwd-t03-sp" },
 ]
 documents = ["doc/kyosho/32790-mini-z-mr-03evo-2018-spare-and-option-parts", "doc/kyosho/mini-z-mr-03-sports-vol2-2015-spare-and-option-parts"]
+name_source = "manufacturer"
+links = [
+  { site = "Kyosho (Internet Archive)", url = "https://web.archive.org/web/20200925094207/https://rc.kyosho.com/en/mz215.html", kind = "archive" },
+]
