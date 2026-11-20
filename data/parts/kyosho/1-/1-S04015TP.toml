@@ -1,7 +1,7 @@
 id = "part/kyosho/1-S04015TP"
 brand = "brand/kyosho"
 number = "1-S04015TP"
-name = "4x15mm(TP)"
+name = "TP Bind Screw(M4x15)"
 seen_by = "2017-11-01"
 seen_by_source = "https://web.archive.org/web/20171101195552/http://rc.kyosho.com/media/catalog/product/cache/4/small_image/500x375/9df78eab33525d08d6e5fb8d27136e95/1/-/1-s04015tp_1-s04015tp_pc1_m.jpg"
 pack_qty = 10
@@ -18,4 +18,9 @@ fits = [
 ]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/1-s04015tp.html" },
+]
+name_source = "manufacturer"
+former_names = ["4x15mm(TP)"]
+equivalent_to = [
+  { spec = "spec/screw/m4x15-truss-jis-tapping", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

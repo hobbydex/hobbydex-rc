@@ -20,3 +20,9 @@ voltage_range = "4.8V - 5.5V"
 torque_kgcm = 5.0
 voltage = 5
 speed_s = 0.16
+performance = [
+  { voltage = 5, torque_kgcm = 5.04, torque_ozin = 70, speed_s = 0.16, source = "doc/arrma/horizon-part-pages" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/arrma/horizon-part-pages", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]

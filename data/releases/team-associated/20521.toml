@@ -10,6 +10,7 @@ status = "released"
 announced = "2022-10-19"
 announced_source = "https://www.bigsquidrc.com/team-associated-rival-mt8-rtr-gets-new-teal-color/"
 gtin = "784695205215"
+dimensions = { length_mm = 575, width_mm = 411, weight_g = 4710, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Rival_MT8/Teal_RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Rival_MT8/Teal_RTR/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-rival-mt8-rtr-gets-new-teal-color/", kind = "press" },
@@ -108,4 +109,8 @@ contains = [
   { part = "part/team-associated/25921", role = "listed", source = "doc/team-associated/pressrelease-101221-20520-rival-mt8-parts-list" },
   { part = "part/team-associated/25922", role = "listed", source = "doc/team-associated/pressrelease-101221-20520-rival-mt8-parts-list" },
   { part = "part/team-associated/25947", role = "listed", source = "doc/team-associated/pressrelease-101221-20520-rival-mt8-parts-list" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/20521-page", note = "#20521: 14.8V 4S Radio-controlled car battery pack(Reedy #756)" },
+  { item = "charger", source = "doc/team-associated/20521-page" },
 ]

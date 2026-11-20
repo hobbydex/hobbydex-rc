@@ -111,3 +111,7 @@ contains = [
   { part = "part/team-associated/41093", role = "kit", step = "Bag 9 - Gate 04 Shock", qty = 1, source = "doc/element-rc/enduro-trailwalker" },
   { part = "part/team-associated/7187", role = "kit", step = "Bag 11 - Gate 01 Body", qty = 2, source = "doc/element-rc/enduro-trailwalker" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40119-page", note = "Battery pack (Reedy #758)" },
+  { item = "charger", source = "doc/element-rc/40119-page", note = "Battery charger (Reedy #27201, #27203)" },
+]

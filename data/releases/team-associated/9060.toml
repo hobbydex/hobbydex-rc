@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "9060"
 name = "B44 Factory Team"
 gtin = "784695090606"
+dimensions = { length_mm = 370, width_mm = 250, wheelbase_mm = 280, weight_g = 1788, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/B44/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/B44/Factory_Team/" },
 ]
@@ -53,4 +54,15 @@ contains = [
   { part = "part/team-associated/7368", role = "listed", source = "doc/team-associated/drawing-b442009" },
   { part = "part/team-associated/9765", role = "listed", source = "doc/team-associated/drawing-b442009" },
   { part = "part/team-associated/9312", role = "listed", source = "doc/team-associated/drawing-b442009" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/9060-page", note = "R/C 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/9060-page", note = "Batteries (6 cells, laid out 3x3, not as stick pack)" },
+  { item = "esc", source = "doc/team-associated/9060-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/9060-page", note = "R/C electric motor" },
+  { item = "pinion", source = "doc/team-associated/9060-page", note = "Pinion gear" },
+  { item = "paint", source = "doc/team-associated/9060-page", note = "Paint for body" },
+  { item = "glue", source = "doc/team-associated/9060-page", note = "Glue for tires" },
+  { item = "servo", source = "doc/team-associated/9060-page", note = "Steering servo" },
+  { item = "tools", source = "doc/team-associated/9060-page" },
 ]

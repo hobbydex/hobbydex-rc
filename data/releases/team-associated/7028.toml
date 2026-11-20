@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "7028"
 name = "SC10 Ready-To-Run Pro Comp"
 gtin = "784695070288"
+dimensions = { length_mm = 550, width_mm = 293, weight_g = 2080, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10/RTR/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/re-release-team-associated-sc10-pro-comp-rtr/", kind = "press" },
@@ -170,4 +171,7 @@ contains = [
   { part = "part/team-associated/9847", role = "listed", source = "doc/team-associated/cat-sc10" },
   { part = "part/team-associated/SP416", role = "listed", source = "doc/team-associated/cat-sc10" },
   { part = "part/team-associated/SP417", role = "listed", source = "doc/team-associated/cat-sc10" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/7028-page", note = "Battery pack (6 cell)" },
 ]

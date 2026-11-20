@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "9038"
 name = "RC10B4.1 Ready-To-Run"
 gtin = "784695090385"
+dimensions = { length_mm = 377, width_mm = 250, wheelbase_mm = 288, weight_g = 1530, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B4.1/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B4.1/RTR/" },
 ]
@@ -90,4 +91,7 @@ contains = [
   { part = "part/team-associated/9688", role = "listed", source = "doc/team-associated/9038-cat-t4-1-b4-1" },
   { part = "part/team-associated/9818", role = "listed", source = "doc/team-associated/9038-cat-t4-1-b4-1" },
   { part = "part/team-associated/9819", role = "listed", source = "doc/team-associated/9038-cat-t4-1-b4-1" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/9038-page", note = "6-cell battery pack, NiMH or LiPo" },
 ]

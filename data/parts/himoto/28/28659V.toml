@@ -1,14 +1,19 @@
 id = "part/himoto/28659V"
 brand = "brand/himoto"
 number = "28659V"
-name = "28659V"
-category = "misc"
-category_source = "fallback"
+name = "Tire and Chrome Rim for Buggy and Short Course Truck (23626V+28658)"
+category = "tire"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/spino", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/tyronno", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/barren", type = "direct", source = "doc/himoto/monstercars" },
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-Tyronno-Parts-Hop-Ups-Upgrades&brand=Himoto&model=Tyronno&id=69283&pid=1", kind = "dealer" },
 ]
+pack_qty = 2
+pack_qty_basis = "distributor"
+name_source = "dealer"
+color = "chrome"
+vehicle = "short-course"

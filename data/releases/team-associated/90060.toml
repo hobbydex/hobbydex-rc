@@ -8,6 +8,7 @@ status = "released"
 announced = "2026-09-15"
 announced_source = "https://www.youtube.com/watch?v=6D2FeIddTM4"
 gtin = "784695900608"
+dimensions = { wheelbase_mm = 266.7, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RB10_Factory_Team/Retro_Kit/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RB10_Factory_Team/Retro_Kit/" },
 ]
@@ -115,4 +116,13 @@ contains = [
   { part = "part/team-associated/9695", role = "kit", qty = 2, step = "Wheels and Tires Build - Bag 9 - Step 1", source = "doc/team-associated/rb10-ft-retro-kit-manual-7-2-2026" },
   { part = "part/team-associated/9696", role = "kit", qty = 1, step = "Wheels and Tires Build - Bag 9 - Step 1", source = "doc/team-associated/rb10-ft-retro-kit-manual-7-2-2026" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Gearbox Build - Bag 3 - Step 7", source = "doc/team-associated/rb10-ft-retro-kit-manual-7-2-2026" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/90060-page" },
+  { item = "motor", source = "doc/team-associated/90060-page" },
+  { item = "esc", source = "doc/team-associated/90060-page" },
+  { item = "servo", source = "doc/team-associated/90060-page" },
+  { item = "radio", source = "doc/team-associated/90060-page" },
+  { item = "receiver", source = "doc/team-associated/90060-page" },
+  { item = "charger", source = "doc/team-associated/90060-page" },
 ]

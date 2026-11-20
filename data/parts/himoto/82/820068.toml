@@ -1,9 +1,8 @@
 id = "part/himoto/820068"
 brand = "brand/himoto"
 number = "820068"
-name = "820068"
-category = "misc"
-category_source = "fallback"
+name = "Ball Bearing 8*16*5MM"
+category = "bearing"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/cluster", type = "direct", source = "doc/himoto/option-parts" },
@@ -17,4 +16,10 @@ fits = [
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E8MTL-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E8MTL&id=100189&pid=1", kind = "dealer" },
+]
+pack_qty = 6
+pack_qty_basis = "distributor"
+name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]

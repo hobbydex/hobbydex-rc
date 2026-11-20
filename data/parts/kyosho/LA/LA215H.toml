@@ -1,7 +1,7 @@
 id = "part/kyosho/LA215H"
 brand = "brand/kyosho"
 number = "LA215H"
-name = "Carbon Composit Upper Plate"
+name = "Carbon Composite Upper Deck (ZX-5)"
 status = "discontinued"
 seen_by = "2023-03-29"
 seen_by_source = "https://web.archive.org/web/20230329140230/https://rc.kyosho.com/ja/la215h.html"
@@ -10,8 +10,11 @@ category = "chassis"
 documents = ["doc/kyosho/la215h-product-page"]
 fits = [
   { kit = "kit/kyosho/lazer-zx-5", type = "replaces", source = "doc/kyosho/30077-lazer-zx5-sp-p" },
+  { kit = "kit/kyosho/lazer-zx-5", type = "replaces", replaces = "part/kyosho/LA215", source = "doc/kyosho/30077-lazer-zx5-sp-p", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "carbon"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/la215h.html" },
 ]
+name_source = "manufacturer"
+former_names = ["Carbon Composit Upper Plate"]

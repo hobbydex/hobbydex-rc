@@ -1,11 +1,16 @@
 id = "part/kyosho/SCW003"
 brand = "brand/kyosho"
 number = "SCW003"
-name = "SCW003"
+name = "Carbon Front Shock Stay for HG Shock Scorpion"
 gtin = "4548565253753"
 seen_by = "2015-04-01"
 seen_by_source = "https://web.archive.org/web/20150401140105/http://kyosho.com/jpn/products/rc/parts_images/SCW003.jpg"
-notes = "Named by its number only: the name on the scanned kyosho manual page was not clear enough to take"
+notes = "Name known from a dealer (RCJaz)"
+links = [
+  { site = "RCJaz", url = "https://www.rcjaz.com/kyosho-scw003-carbon-front-shock-stay-for-hg-2pcs-scorpion-p-22185.html", kind = "dealer" },
+]
+pack_qty = 2
+pack_qty_basis = "name"
 fits = [
   { kit = "kit/kyosho/beetle", type = "replaces", source = "doc/kyosho/30614-07-beetle-spop" },
   { kit = "kit/kyosho/scorpion", releases = ["release/kyosho/30613"], type = "replaces", source = "doc/kyosho/vintage-160304-2-jp", notes = "Marked for the No.30613 (option part) in Kyosho's Vintage series parts acceptable list" },
@@ -13,5 +18,6 @@ fits = [
   { kit = "kit/kyosho/turbo-scorpion", type = "replaces", source = "doc/kyosho/30616-06-turbo-scopion-spop" },
 ]
 documents = ["doc/kyosho/30614-07-beetle-spop", "doc/kyosho/30616-06-turbo-scopion-spop", "doc/kyosho/30613-mm06-scorpion-im", "doc/kyosho/vintage-160304-2-jp"]
-category = "misc"
-category_source = "fallback"
+category = "chassis"
+name_source = "dealer"
+material = "carbon"

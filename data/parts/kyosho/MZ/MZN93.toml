@@ -1,7 +1,7 @@
 id = "part/kyosho/MZN93"
 brand = "brand/kyosho"
 number = "MZN93"
-name = "NISSAN GT-R"
+name = "White Body NISSAN GT-R"
 status = "discontinued"
 seen_by = "2008-10"
 seen_by_source = "doc/kyosho/mzn93-nissan-gt-r"
@@ -11,6 +11,7 @@ links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/mzn93.html" },
 ]
 category = "body"
+depicts = { make = "Nissan", model = "GT-R" }
 fits = [
   { kit = "kit/kyosho/mini-z-awd", releases = ["release/kyosho/32627w", "release/kyosho/32632m", "release/kyosho/32634w", "release/kyosho/32635wbk"], type = "direct", source = "doc/kyosho/mzn93-product-page", notes = "Listed on the maker's Compatible Kits page" },
   { kit = "kit/kyosho/mini-z-ma-020", releases = ["release/kyosho/32625gm", "release/kyosho/32630bl", "release/kyosho/32636s", "release/kyosho/32636w"], type = "direct", source = "doc/kyosho/mzn93-product-page", notes = "Listed on the maker's Compatible Kits page" },
@@ -18,3 +19,6 @@ fits = [
   { kit = "kit/kyosho/mini-z-mr-03", releases = ["release/kyosho/32341mr", "release/kyosho/32341pw", "release/kyosho/32346s", "release/kyosho/32352r", "release/kyosho/32352w"], type = "direct", source = "doc/kyosho/mzn93-product-page", notes = "Listed on the maker's Compatible Kits page" },
 ]
 scale = "1/27"
+name_source = "manufacturer"
+former_names = ["NISSAN GT-R"]
+color = "white"

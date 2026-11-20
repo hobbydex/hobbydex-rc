@@ -10,4 +10,10 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/spektrum-s905-standard-40kg-15t-waterproof-metal-gear-surface-servo/SPMS905.html" },
 ]
 dimensions_mm = [59.5, 39, 55.2]
-torque_kgcm = 38.8
+notes = "Horizon's page files it under Servo Size Category Standard, but the 59.5 x 39 x 55.2 mm case and the name (Large Scale) make it a large-scale servo; no size spec is linked."
+torque_kgcm = 38.72
+performance = [
+  { voltage = 6, torque_kgcm = 38.72, torque_ozin = 537.72, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 7.2, torque_kgcm = 40.0, torque_ozin = 555.5, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+voltage = 6

@@ -8,6 +8,7 @@ kind = "kit"
 status = "discontinued"
 seen_by = "2008-12"
 seen_by_source = "doc/kyosho/30813-tf-5s-chassis-kit-m"
+dimensions = { length_mm = 360, width_mm = 200, height_mm = 115, wheelbase_mm = 259, track_front_mm = 182, track_rear_mm = 181, weight_g = 1550, source = "https://rc.kyosho.com/en/30813.html" }
 documents = ["doc/kyosho/30813-product-page", "doc/kyosho/30813-tf-5s-chassis-kit-p", "doc/kyosho/30813-tf-5s-chassis-kit-t", "doc/kyosho/30813-tf-5s-chassis-kit-m", "doc/kyosho/30813-open-interface-sc430-bodym"]
 contains = [
   { part = "part/kyosho/1382", role = "kit", source = "doc/kyosho/30813-tf-5s-chassis-kit-t" },
@@ -44,7 +45,6 @@ contains = [
   { part = "part/kyosho/96643", role = "listed", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/96647", role = "listed", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/96773", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
-  { part = "part/kyosho/A221B", role = "listed", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/BRG002", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/BRG006", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/BRG008", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
@@ -66,7 +66,6 @@ contains = [
   { part = "part/kyosho/LA43", role = "listed", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/LAW33", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/ORI10336", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
-  { part = "part/kyosho/RG100", role = "listed", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/SIL0550", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/TF002", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },
   { part = "part/kyosho/TF003", role = "option", source = "doc/kyosho/30813-tf-5s-chassis-kit-m" },

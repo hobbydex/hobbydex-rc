@@ -6,6 +6,7 @@ name = "RC10B84 Classic Kit"
 kind = "kit"
 status = "released"
 gtin = "784695900554"
+dimensions = { length_mm = 395, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B84_Classic/Kit/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B84_Classic/Kit/" },
   { site = "Red RC", url = "https://www.redrc.net/2025/12/team-associated-rc10b84-classic-kit/", kind = "press" },
@@ -168,4 +169,14 @@ contains = [
   { part = "part/team-associated/92551", role = "kit", qty = 1, step = "Bag 4 - Step 7", source = "doc/team-associated/rc10b84-carpet-classic-manual-9-26-2025" },
   { part = "part/team-associated/92552", role = "kit", qty = 2, step = "Bag 10 - Step 1; Bag 10 - Step 2", source = "doc/team-associated/rc10b84-carpet-classic-manual-9-26-2025" },
   { part = "part/team-associated/92555", role = "kit", qty = 2, step = "Bag 2 12 - Step - Step 1 7", source = "doc/team-associated/rc10b84-carpet-classic-manual-9-26-2025" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/90055-page" },
+  { item = "pinion", source = "doc/team-associated/90055-page", note = "Pinion Gear" },
+  { item = "esc", source = "doc/team-associated/90055-page" },
+  { item = "servo", source = "doc/team-associated/90055-page" },
+  { item = "radio", source = "doc/team-associated/90055-page", note = "Transmitter and Receiver" },
+  { item = "tyres", source = "doc/team-associated/90055-page", note = "Tires" },
+  { item = "wheels", source = "doc/team-associated/90055-page" },
+  { item = "paint", source = "doc/team-associated/90055-page", note = "Polycarbonate specific paint" },
 ]

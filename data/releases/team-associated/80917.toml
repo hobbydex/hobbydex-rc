@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80917"
 name = "RC8T3 Nitro Team Kit"
 gtin = "784695809178"
+dimensions = { length_mm = 560, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8T3/Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8T3/Team/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-rc8t3-team-kit/", kind = "press" },
@@ -181,4 +182,13 @@ contains = [
   { part = "part/team-associated/91565", role = "kit", qty = 4, step = "Front Uprights Build - Bag H, I - Step 1; Rear Uprights / Turnbuckles Build - Bag K, L - Step 1", source = "doc/team-associated/80917-rc8t3-manual" },
   { part = "part/team-associated/9907", role = "kit", qty = 2, step = "Radio Tray Build - Bag R, S - Step 1", source = "doc/team-associated/80917-rc8t3-manual" },
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag F, G - Step 2; Rear Gearbox Build - Bag J, K - Step 2", qty = 6, source = "doc/team-associated/80917-rc8t3-manual" },
+]
+needs = [
+  { item = "engine", source = "doc/team-associated/80917-page", note = ".21-.28 class rear exhaust engine" },
+  { item = "glow-starter", source = "doc/team-associated/80917-page", note = "Glow igniter" },
+  { item = "tyres", source = "doc/team-associated/80917-page", note = "1:8 scale truggy tires" },
+  { item = "wheels", source = "doc/team-associated/80917-page", note = "1:8 scale truggy wheels" },
+  { item = "glue", source = "doc/team-associated/80917-page", note = "CA (cyanoacrylate) glue" },
+  { item = "tools", source = "doc/team-associated/80917-page", note = "Needle-nose pliers" },
+  { item = "servo", source = "doc/team-associated/80917-page", note = "Steering servo" },
 ]

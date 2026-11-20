@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "90004"
 name = "SC10 4x4 Kit"
 gtin = "784695900042"
+dimensions = { weight_g = 2775, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10_4x4/Kit/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10_4x4/Kit/" },
 ]
@@ -146,4 +147,13 @@ contains = [
   { part = "part/team-associated/91032", role = "listed", source = "doc/team-associated/cat-sc104x4" },
   { part = "part/team-associated/91039", role = "listed", source = "doc/team-associated/cat-sc104x4" },
   { part = "part/team-associated/91155", role = "listed", source = "doc/team-associated/cat-sc104x4" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/90004-page", note = "R/C 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/90004-page", note = "Battery pack (6 cell NiMh or 2 cell LiPo)" },
+  { item = "esc", source = "doc/team-associated/90004-page", note = "Electronic speed control" },
+  { item = "pinion", source = "doc/team-associated/90004-page", note = "Pinion gear" },
+  { item = "glue", source = "doc/team-associated/90004-page", note = "Tire glue" },
+  { item = "paint", source = "doc/team-associated/90004-page", note = "Paint for body" },
+  { item = "servo", source = "doc/team-associated/90004-page", note = "Steering servo" },
 ]

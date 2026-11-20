@@ -8,6 +8,7 @@ status = "released"
 announced = "2026-06-29"
 announced_source = "https://www.bigsquidrc.com/team-associated-1-10-2026-rc10-91-stealth-las-vegas-edition-kit/"
 gtin = "784695060593"
+dimensions = { length_mm = 381, width_mm = 226.8, wheelbase_mm = 267.7, source = "https://60years.associatedelectrics.com/rc10-1991-stealth-las-vegas-edition/" }
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10-1991-stealth-las-vegas-edition/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-1-10-2026-rc10-91-stealth-las-vegas-edition-kit/", kind = "press" },
@@ -89,4 +90,12 @@ contains = [
   { part = "part/team-associated/92343", role = "kit", qty = 2, step = "Turnbuckles Build - Bag E - Step 3", source = "doc/team-associated/6059-rc10-91-vegas-edition-manua-2026" },
   { part = "part/team-associated/92344", role = "kit", qty = 2, step = "Turnbuckles Build - Bag E - Step 4", source = "doc/team-associated/6059-rc10-91-vegas-edition-manua-2026" },
   { part = "part/team-associated/91718", role = "option", source = "doc/team-associated/6059-rc10-91-vegas-edition-manua-2026" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/6059-page" },
+  { item = "servo", source = "doc/team-associated/6059-page" },
+  { item = "receiver", source = "doc/team-associated/6059-page" },
+  { item = "radio", source = "doc/team-associated/6059-page" },
+  { item = "battery", source = "doc/team-associated/6059-page" },
+  { item = "paint", source = "doc/team-associated/6059-page" },
 ]

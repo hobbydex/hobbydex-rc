@@ -9,7 +9,8 @@ power_source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-704
 status = "discontinued"
 seen_by = "2026-10"
 seen_by_source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10/RTR/"
-documents = ["doc/team-associated/7049-page", "doc/team-associated/gear-ratios", "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual", "doc/team-associated/7030c-page"]
+dimensions = { length_mm = 550, width_mm = 293, weight_g = 2080, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10/RTR/" }
+documents = ["doc/team-associated/7049-page", "doc/team-associated/gear-ratios", "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual", "doc/team-associated/7030c-page", "doc/team-associated/7028-page"]
 contains = [
   { part = "part/team-associated/1585", role = "option", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1598", role = "option", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
@@ -85,12 +86,10 @@ contains = [
   { part = "part/team-associated/9867", role = "option", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/9872", role = "option", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/9873", role = "option", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
-  { part = "part/team-associated/07260", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1105", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1111", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1450", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1541", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
-  { part = "part/team-associated/15423", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1580", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1582", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1597", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
@@ -99,10 +98,7 @@ contains = [
   { part = "part/team-associated/1666", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1719", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/1737", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
-  { part = "part/team-associated/1903", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
-  { part = "part/team-associated/19643", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/2009", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
-  { part = "part/team-associated/2010", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/2221", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/26021", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/29107", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
@@ -304,7 +300,6 @@ contains = [
   { part = "part/team-associated/9829", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/9830", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/9831", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
-  { part = "part/team-associated/98310", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/9832", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/9833", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },
   { part = "part/team-associated/9836", role = "listed", source = "doc/team-associated/valkyrie-sc10-rs-race-spec-rtr-7046-7047-7048-7049-manual" },

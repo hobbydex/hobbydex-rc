@@ -1,9 +1,8 @@
 id = "part/himoto/820072"
 brand = "brand/himoto"
 number = "820072"
-name = "820072"
-category = "misc"
-category_source = "fallback"
+name = "3*17Mm Pins"
+category = "pin"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/cluster", type = "direct", source = "doc/himoto/option-parts" },
@@ -17,4 +16,10 @@ fits = [
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E8MTL-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E8MTL&id=100205&pid=1", kind = "dealer" },
+]
+pack_qty = 12
+pack_qty_basis = "distributor"
+name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/pin/3x17", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]

@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "90002"
 name = "RC10B5M Champions Edition"
 gtin = "784695900028"
+dimensions = { length_mm = 385, wheelbase_mm = 280, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B5M/Champions_Edition/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B5M/Champions_Edition/" },
 ]
@@ -129,4 +130,18 @@ contains = [
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Slipper Build - Bag F - FF - Step 2", source = "doc/team-associated/rc10b5m-team-manual" },
   { part = "part/team-associated/31520", role = "listed", source = "doc/team-associated/rc10b5m-team-manual" },
   { part = "part/team-associated/4670", role = "listed", source = "doc/team-associated/rc10b5m-team-manual" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/90002-page", note = "1:10 scale 540 size electric motor" },
+  { item = "esc", source = "doc/team-associated/90002-page", note = "1:10 scale electronic speed control" },
+  { item = "battery", source = "doc/team-associated/90002-page", note = "7.4V LiPo or 6.6V LiFe battery (saddle pack, shorty pack, or square pack)" },
+  { item = "charger", source = "doc/team-associated/90002-page", note = "Battery charger (able to charge one of the batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/90002-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/90002-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/90002-page", note = "Steering servo" },
+  { item = "pinion", source = "doc/team-associated/90002-page", note = "Pinion gear (48 pitch)" },
+  { item = "paint", source = "doc/team-associated/90002-page", note = "Polycarbonate-specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/90002-page", note = "1:10 scale buggy tires and inner foams" },
+  { item = "wheels", source = "doc/team-associated/90002-page", note = "2.2\" or 2.4\" wheels" },
+  { item = "glue", source = "doc/team-associated/90002-page", note = "Glue for tires and wheels" },
 ]

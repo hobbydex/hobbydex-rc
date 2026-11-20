@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "7034"
 name = "SC10 Factory Team Kit"
 gtin = "784695070349"
+dimensions = { length_mm = 550, width_mm = 293, weight_g = 2080, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10/Factory_Team/" },
 ]
@@ -133,4 +134,11 @@ contains = [
   { part = "part/team-associated/9809", role = "listed", source = "doc/team-associated/cat-sc10ft" },
   { part = "part/team-associated/9817", role = "listed", source = "doc/team-associated/cat-sc10ft" },
   { part = "part/team-associated/9820", role = "listed", source = "doc/team-associated/cat-sc10ft" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/7034-page", note = "RC 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/7034-page", note = "Battery pack (6 cell)" },
+  { item = "esc", source = "doc/team-associated/7034-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/7034-page", note = "RC electric motor" },
+  { item = "pinion", source = "doc/team-associated/7034-page", note = "Pinion gear" },
 ]

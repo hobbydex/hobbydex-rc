@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80944"
 name = "RC8T3.2e Team Kit"
 gtin = "784695809444"
+dimensions = { length_mm = 560, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8T3.2e/Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8T3.2e/Team/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-announces-rc8t3-2e-team-kit-rc8t3-2-nitro-team-kit/", kind = "press" },
@@ -158,4 +159,14 @@ contains = [
   { part = "part/team-associated/81484", role = "kit", step = "Rear End Build - Bag 7.1, 7.2, 7.3 - Step 8", qty = 1, source = "doc/team-associated/80944-rc8t3-2e-nitro-combo-manual-11-15-2021" },
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag 5.1, 5.2, 5.3 - Step 2; Rear End Build - Bag 7.1, 7.2, 7.3 - Step 2", qty = 6, source = "doc/team-associated/rc8t3-2e-nitro-combo-manual-11-15-2021" },
   { part = "part/team-associated/81485", role = "listed", source = "doc/team-associated/pressrelease-090120-rc8t3-2-parts-list" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/80944-page", note = "1:8 scale motor (#27407 Reedy Sonic 877)" },
+  { item = "esc", source = "doc/team-associated/80944-page", note = "1:8 scale ESC (#27007, 27008 Reedy Blackbox 850R)" },
+  { item = "battery", source = "doc/team-associated/80944-page", note = "4S LiPo Battery Pack (#27345)" },
+  { item = "servo", source = "doc/team-associated/80944-page", note = "Steering servo (#27107 Reedy RT2207A Servo)" },
+  { item = "wheels", source = "doc/team-associated/80944-page", note = "1:8 scale truck wheels" },
+  { item = "glue", source = "doc/team-associated/80944-page", note = "CA (cyanoacrylate) glue (#1597 FT Tire Adhesive)" },
+  { item = "paint", source = "doc/team-associated/80944-page", note = "Paint for polycarbonate body" },
+  { item = "tools", source = "doc/team-associated/80944-page" },
 ]

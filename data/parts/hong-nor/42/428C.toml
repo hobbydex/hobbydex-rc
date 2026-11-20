@@ -6,4 +6,8 @@ name_source = "manufacturer"
 category = "pin"
 links = [
   { site = "Hong Nor", url = "https://www.hongnor-racing.com/pdt_list_parts.asp?area=5&cat=65", kind = "maker" },
+  { site = "Hong Nor", url = "https://www.hongnor-racing.com/pdt_list_parts.asp?area=4&cat=58&dhpage=2", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/pin/2.5x11.8", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]

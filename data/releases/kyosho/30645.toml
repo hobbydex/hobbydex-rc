@@ -9,6 +9,7 @@ released = "2024-11"
 released_source = "https://rc.kyosho.com/en/30645.html"
 status = "released"
 gtin = "4548565481590"
+dimensions = { length_mm = 370, width_mm = 250, height_mm = 130, wheelbase_mm = { min = 270, max = 273 }, track_front_mm = 208, weight_g = 1500, source = "https://rc.kyosho.com/en/30645.html" }
 documents = ["doc/kyosho/30645-mm01-rev1-spop", "doc/kyosho/30645-mm01-rev1-ex", "doc/kyosho/30645-mm01-rev1-im", "doc/kyosho/30645-product-page", "doc/kyosho/30645_ex", "doc/kyosho/30645_spop", "doc/kyosho/youtube-JU0CS3ukk0U", "doc/kyosho/youtube-KYvWSjdEqcE", "doc/kyosho/youtube-N2Wlo72WPTw", "doc/kyosho/youtube-ajSBJQ2u8Qw"]
 contains = [
   { part = "part/kyosho/1-E025", role = "kit", source = "doc/kyosho/30645-mm01-rev1-spop" },
@@ -107,7 +108,6 @@ contains = [
   { part = "part/kyosho/UTH002GR", role = "kit", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/UTW006", role = "kit", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/W0201B", role = "kit", source = "doc/kyosho/30645-mm01-rev1-spop" },
-  { part = "part/kyosho/13024", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/36231P", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/36261B", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/36262B", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
@@ -124,7 +124,6 @@ contains = [
   { part = "part/kyosho/FAT202", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/GAB4202", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/GAC0100D", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
-  { part = "part/kyosho/OT225BO", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/OTH245SCB", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/OTH248WB", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/OTT244MB", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
@@ -134,8 +133,6 @@ contains = [
   { part = "part/kyosho/SCT003", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
   { part = "part/kyosho/T0200", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/UT0012", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
-  { part = "part/kyosho/UT002BI", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
-  { part = "part/kyosho/UT0043", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/UT0046", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/UT0047", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/UTH001WT", role = "option", source = "doc/kyosho/30645-mm01-rev1-spop" },
@@ -169,19 +166,14 @@ contains = [
   { part = "part/kyosho/PNGS4832", role = "option", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/PNGS4833", role = "option", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/2014", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
-  { part = "part/kyosho/3050", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/96508", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/97030", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/JTW004", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/KR331G", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/OT153", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/OT154", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
-  { part = "part/kyosho/OT224SBO", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
-  { part = "part/kyosho/OTB2500", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
-  { part = "part/kyosho/OTB2510", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/OTW123", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/SCT001", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
-  { part = "part/kyosho/UT0033", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/UTW0046", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/UTW008", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },
   { part = "part/kyosho/UTW009", role = "listed", source = "doc/kyosho/30645-mm01-rev1-im" },

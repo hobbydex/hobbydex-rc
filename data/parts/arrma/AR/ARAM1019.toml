@@ -29,6 +29,13 @@ gear_material = "metal"
 voltage_range = "6.0V - 7.2V"
 torque_kgcm = 7.0
 voltage = 7.2
-speed_s = 0.14
+speed_s = 0.12
 bearings = 2
 bearing_kind = "ball"
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/arrma/horizon-part-pages", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]
+performance = [
+  { voltage = 6, speed_s = 0.14, source = "doc/arrma/horizon-part-pages" },
+  { voltage = 7.2, torque_kgcm = 6.98, torque_ozin = 97, speed_s = 0.12, source = "doc/arrma/horizon-part-pages" },
+]

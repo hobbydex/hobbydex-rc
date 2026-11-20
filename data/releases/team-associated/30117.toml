@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "30117"
 name = "APEX Scion Racing tC 2015 Brushless Ready-To-Run"
 gtin = "784695301177"
+dimensions = { length_mm = 438, weight_g = 1760, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/APEX_tC_2015/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/APEX_tC_2015/RTR/" },
 ]
@@ -93,4 +94,8 @@ contains = [
   { part = "part/team-associated/31419", role = "listed", source = "doc/team-associated/manual-apex-lexus-and-scion" },
   { part = "part/team-associated/31438", role = "listed", source = "doc/team-associated/manual-apex-lexus-and-scion" },
   { part = "part/team-associated/3900", role = "listed", source = "doc/team-associated/manual-apex-lexus-and-scion" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/30117-page", note = "2S LiPo or 6 cell NiMH battery" },
+  { item = "charger", source = "doc/team-associated/30117-page", note = "Appropriate battery charger with high current High Power T Plug" },
 ]

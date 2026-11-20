@@ -8,6 +8,7 @@ power = "brushless"
 power_source = "doc/team-associated/20531-page"
 status = "released"
 gtin = "784695205314"
+dimensions = { length_mm = 565, width_mm = 292, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro4SC10/General_Tire_RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro4SC10/General_Tire_RTR/" },
   { site = "Red RC", url = "https://www.redrc.net/2021/11/associated-pro4-sc10-general-tire-rtr/", kind = "press" },
@@ -90,4 +91,8 @@ contains = [
   { part = "part/team-associated/91563", role = "kit", qty = 4, step = "Step 2; Step 9; Step 13; Step 24", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
   { part = "part/team-associated/91564", role = "kit", qty = 4, step = "Step 3; Step 21", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
   { part = "part/team-associated/91738", role = "kit", qty = 10, step = "Step 40", source = "doc/team-associated/20531-pro4-manual-gt-1-2023" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/20531-page" },
+  { item = "charger", source = "doc/team-associated/20531-page" },
 ]

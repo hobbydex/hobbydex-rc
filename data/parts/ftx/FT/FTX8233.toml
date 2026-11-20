@@ -2,6 +2,8 @@ id = "part/ftx/FTX8233"
 brand = "brand/ftx"
 number = "FTX8233"
 name = "Outback Aluminium Front/ Rear Axle Housing"
+seen_by = "2026-02-27"
+seen_by_source = "https://web.archive.org/web/20260227192728/https://ftx-rc.com/image/cache/data/FTX8233/FTX8233-280x280.jpg"
 name_source = "manufacturer"
 notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 links = [
@@ -9,3 +11,6 @@ links = [
 ]
 category = "drivetrain"
 material = "aluminium"
+fits = [
+  { kit = "kit/ftx/outback", type = "replaces", source = "doc/ftx/store", notes = "The product title names the Outback" },
+]

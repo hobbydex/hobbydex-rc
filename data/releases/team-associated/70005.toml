@@ -159,3 +159,14 @@ contains = [
   { part = "part/team-associated/92518", role = "kit", qty = 2, step = "Bag 7 - Step 1", source = "doc/team-associated/rc10t7-manual" },
   { part = "part/team-associated/92519", role = "kit", qty = 1, step = "Bag 7 - Step 1", source = "doc/team-associated/rc10t7-manual" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/70005-page" },
+  { item = "battery", source = "doc/team-associated/70005-page" },
+  { item = "esc", source = "doc/team-associated/70005-page" },
+  { item = "servo", source = "doc/team-associated/70005-page" },
+  { item = "receiver", source = "doc/team-associated/70005-page", note = "Receiver," },
+  { item = "paint", source = "doc/team-associated/70005-page" },
+  { item = "body", source = "doc/team-associated/70005-page", note = "Lexan body" },
+  { item = "tyres", source = "doc/team-associated/70005-page", note = "Tires" },
+  { item = "radio", source = "doc/team-associated/70005-page" },
+]

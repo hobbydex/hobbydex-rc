@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "9062"
 name = "RC10B44.2 Factory Team"
 gtin = "784695090620"
+dimensions = { length_mm = 378, width_mm = 250, wheelbase_mm = 284, weight_g = 1715, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/B44.2/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/B44.2/Factory_Team/" },
 ]
@@ -155,4 +156,13 @@ contains = [
   { part = "part/team-associated/9910", role = "kit", qty = 1, step = "Slipper Build - Bag G-GG - Step 1", source = "doc/team-associated/b44-2-manual-and-catalog-2-6-2013" },
   { part = "part/team-associated/9911", role = "kit", qty = 1, step = "Rear Gearbox Build - Bag C - Step 1", source = "doc/team-associated/b44-2-manual-and-catalog-2-6-2013" },
   { part = "part/team-associated/9913", role = "kit", qty = 1, step = "Front Top Deck Build - Bag I - Step 1; Rear Top Deck Build - Bag J - Step 3", source = "doc/team-associated/b44-2-manual-and-catalog-2-6-2013" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/9062-page", note = "RC 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/9062-page", note = "Batteries (6 cells, laid out 3x3, not as stick pack)" },
+  { item = "esc", source = "doc/team-associated/9062-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/9062-page", note = "RC electric motor" },
+  { item = "pinion", source = "doc/team-associated/9062-page", note = "Pinion gear" },
+  { item = "servo", source = "doc/team-associated/9062-page", note = "Steering servo" },
+  { item = "tyres", source = "doc/team-associated/9062-page", note = "Tires" },
 ]

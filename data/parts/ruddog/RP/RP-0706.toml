@@ -15,3 +15,14 @@ links = [
 motor = "coreless"
 gear_material = "metal"
 voltage_range = [4.8, 8.4]
+performance = [
+  { voltage = 6, torque_kgcm = 26, speed_s = 0.16, source = "doc/ruddog/product-pages-ruddog-eu" },
+  { voltage = 7.4, torque_kgcm = 29, speed_s = 0.145, source = "doc/ruddog/product-pages-ruddog-eu" },
+  { voltage = 8.4, torque_kgcm = 32, speed_s = 0.135, source = "doc/ruddog/product-pages-ruddog-eu" },
+]
+voltage = 8.4
+torque_kgcm = 32
+speed_s = 0.135
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "dimensions", source = "doc/ruddog/product-pages-ruddog-eu", notes = "Size class from the case dimensions (40x20x37.8 mm); 25T spline stated on the maker's page; check the mounting holes" },
+]

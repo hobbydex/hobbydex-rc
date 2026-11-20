@@ -5,5 +5,8 @@ name = "IF14 - HIGH FLEX TOP DECK 2.0mm"
 category = "chassis"
 
 links = [ { site = "Infinity", url = "https://www.creationmodel.net/infinity/index.php/new-products/111-if14-high-flex-top-deck-2-0mm" } ]
+fits = [
+  { kit = "kit/infinity/if14", type = "replaces", source = "doc/infinity/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
 [sources]
 name = "https://www.creationmodel.net/infinity/index.php/new-products"

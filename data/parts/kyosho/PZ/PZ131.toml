@@ -1,7 +1,7 @@
 id = "part/kyosho/PZ131"
 brand = "brand/kyosho"
 number = "PZ131"
-name = "Pinion Gear (30T)"
+name = "Pinion Gear (30T-64P)"
 status = "discontinued"
 seen_by = "2022-07-01"
 seen_by_source = "https://web.archive.org/web/20220701080417/https://rc.kyosho.com/en/pz131.html"
@@ -16,4 +16,10 @@ documents = ["doc/kyosho/pz131-product-page", "doc/kyosho/plazma-series-ver03-15
 teeth = 30
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/pz131.html" },
+]
+name_source = "manufacturer"
+former_names = ["Pinion Gear (30T)"]
+pitch_dp = 64
+equivalent_to = [
+  { spec = "spec/pinion/64dp-30t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]

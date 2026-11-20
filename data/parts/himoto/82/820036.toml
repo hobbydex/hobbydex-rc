@@ -1,9 +1,8 @@
 id = "part/himoto/820036"
 brand = "brand/himoto"
 number = "820036"
-name = "820036"
-category = "misc"
-category_source = "fallback"
+name = "3*24 Diff Pin"
+category = "pin"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/cluster", type = "direct", source = "doc/himoto/option-parts" },
@@ -17,4 +16,10 @@ fits = [
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E8MTL-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E8MTL&id=100065&pid=1", kind = "dealer" },
+]
+pack_qty = 4
+pack_qty_basis = "distributor"
+name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/pin/3x24", match = "functional", notes = "Size read from the name; hardness and tolerance not stated" },
 ]

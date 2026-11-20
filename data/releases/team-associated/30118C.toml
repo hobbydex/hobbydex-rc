@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "30118C"
 name = "APEX Lexus RC F Brushless Ready-To-Run LiPo Combo"
 gtin = "784695987593"
+dimensions = { length_mm = 445, weight_g = 1760, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Apex_Lexus/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Apex_Lexus/RTR/" },
 ]
@@ -94,4 +95,7 @@ contains = [
   { part = "part/team-associated/31419", role = "listed", source = "doc/team-associated/apex-lexus-and-scion-manual" },
   { part = "part/team-associated/31438", role = "listed", source = "doc/team-associated/apex-lexus-and-scion-manual" },
   { part = "part/team-associated/3900", role = "listed", source = "doc/team-associated/apex-lexus-and-scion-manual" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/30118-page", note = "#30118: 6-cell NiMH or 2S LiPo battery pack with High Power T Plug Connector" },
 ]

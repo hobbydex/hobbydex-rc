@@ -2,9 +2,18 @@ id = "part/hrc-racing/HRC65301A"
 brand = "brand/hrc-racing"
 number = "HRC65301A"
 name = "Wheels - 1/18 Crawler - TRX-4M - Aluminum Beadlock Black - 4pcs/set"
+pack_qty = 4
+pack_qty_basis = "name"
 name_source = "manufacturer"
 category = "wheel"
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000030886", kind = "maker" },
 ]
 color = "black"
+fits = [
+  { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/hrc-racing/store", notes = "The product title names the TRX-4M" },
+]
+material = "aluminium"
+scale = "1/18"
+vehicle = "crawler"
+beadlock = true

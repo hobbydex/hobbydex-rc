@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80914"
 name = "RC8B3 Nitro Team Kit"
 gtin = "784695809147"
+dimensions = { length_mm = 488, wheelbase_mm = 327.5, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8B3/Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8B3/Team/" },
 ]
@@ -175,4 +176,13 @@ contains = [
   { part = "part/team-associated/91565", role = "kit", qty = 4, step = "Front Uprights Build - Bag H, I - Step 1; Rear Uprights / Turnbuckles Build - Bag K, L - Step 1", source = "doc/team-associated/manual-80914-rc8b3-team" },
   { part = "part/team-associated/9907", role = "kit", qty = 2, step = "Radio Tray Build - Bag R, S - Step 1", source = "doc/team-associated/manual-80914-rc8b3-team" },
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag F, G - Step 2; Rear Gearbox Build - Bag J, K - Step 2", qty = 6, source = "doc/team-associated/manual-80914-rc8b3-team" },
+]
+needs = [
+  { item = "engine", source = "doc/team-associated/80914-page", note = ".21 class rear exhaust engine" },
+  { item = "glow-starter", source = "doc/team-associated/80914-page", note = "Glow igniter" },
+  { item = "tyres", source = "doc/team-associated/80914-page", note = "1:8 scale buggy tires" },
+  { item = "wheels", source = "doc/team-associated/80914-page", note = "1:8 scale buggy wheels" },
+  { item = "glue", source = "doc/team-associated/80914-page", note = "CA (cyanoacrylic) glue" },
+  { item = "tools", source = "doc/team-associated/80914-page", note = "Needle-nose pliers" },
+  { item = "servo", source = "doc/team-associated/80914-page", note = "Steering servo" },
 ]

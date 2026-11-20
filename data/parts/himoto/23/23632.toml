@@ -1,9 +1,8 @@
 id = "part/himoto/23632"
 brand = "brand/himoto"
 number = "23632"
-name = "23632"
-category = "misc"
-category_source = "fallback"
+name = "Button Head Screws 2.5x14"
+category = "screw"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/barren", type = "direct", source = "doc/himoto/option-parts" },
@@ -20,4 +19,10 @@ fits = [
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-Barren-Parts-Hop-Ups-Upgrades&brand=Himoto&model=Barren&id=62699&pid=1", kind = "dealer" },
+]
+pack_qty = 6
+pack_qty_basis = "distributor"
+name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

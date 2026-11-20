@@ -7,5 +7,8 @@ seen_by_source = "https://web.archive.org/web/20200113134455/http://www.creation
 category = "chassis"
 
 links = [ { site = "Infinity", url = "https://www.creationmodel.net/infinity/index.php/new-products/86-if15-front-shock-tower-ver-b" } ]
+fits = [
+  { kit = "kit/infinity/if15", type = "replaces", source = "doc/infinity/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
 [sources]
 name = "https://www.creationmodel.net/infinity/index.php/new-products"

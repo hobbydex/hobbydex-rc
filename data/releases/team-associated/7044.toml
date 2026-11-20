@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "7044"
 name = "SC10 Brushless Ready-To-Run Rockstar"
 gtin = "784695070448"
+dimensions = { length_mm = 550, width_mm = 293, weight_g = 2080, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10/Brushless_RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10/Brushless_RTR/" },
 ]
@@ -223,4 +224,7 @@ contains = [
   { part = "part/team-associated/9863", role = "kit", source = "doc/team-associated/sc10-2-4-bl-rtr-manual-catalog" },
   { part = "part/team-associated/SP416", role = "kit", source = "doc/team-associated/sc10-2-4-bl-rtr-manual-catalog" },
   { part = "part/team-associated/SP417", role = "kit", source = "doc/team-associated/sc10-2-4-bl-rtr-manual-catalog" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/7044-page", note = "6-cell battery pack, NiMH or LiPo" },
 ]

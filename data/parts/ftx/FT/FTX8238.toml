@@ -4,6 +4,8 @@ number = "FTX8238"
 pack_qty = 2
 pack_qty_basis = "name"
 name = "Outback Aluminium Bumper Mount"
+seen_by = "2019-09-04"
+seen_by_source = "https://web.archive.org/web/20190904103421/https://ftx-rc.com/image/cache/data/product%20images/FTX8238-280x280.jpg"
 name_source = "manufacturer"
 notes = "Name from FTX's spare-parts listing on ftx-rc.com"
 links = [
@@ -11,3 +13,6 @@ links = [
 ]
 category = "chassis"
 material = "aluminium"
+fits = [
+  { kit = "kit/ftx/outback", type = "replaces", source = "doc/ftx/store", notes = "The product title names the Outback" },
+]

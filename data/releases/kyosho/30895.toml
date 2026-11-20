@@ -10,9 +10,10 @@ power_source = "doc/kyosho/30895-inferno-mp9e-m"
 status = "discontinued"
 announced = "2009-12-19"
 announced_source = "https://www.redrc.net/2009/12/kyosho-inferno-mp9e-brushless-buggy/"
+dimensions = { length_mm = 490, width_mm = 307, height_mm = 180, weight_g = 3370, source = "https://rc.kyosho.com/en/30895.html" }
 links = [{ site = "Red RC", url = "https://www.redrc.net/2009/12/kyosho-inferno-mp9e-brushless-buggy/", kind = "press" }]
 gtin = "4548565150694"
-documents = ["doc/kyosho/30895-inferno-mp9e-p", "doc/kyosho/30895-inferno-mp9e-ex", "doc/kyosho/30895-inferno-mp9e-m", "doc/kyosho/30895-inferno-mp9e-settinggide", "doc/kyosho/30895-product-page"]
+documents = ["doc/kyosho/30895-inferno-mp9e-p", "doc/kyosho/30895-inferno-mp9e-ex", "doc/kyosho/30895-inferno-mp9e-m", "doc/kyosho/30895-inferno-mp9e-settinggide", "doc/kyosho/30895-product-page", "doc/kyosho/youtube-Fi9GaGy36B4"]
 contains = [
   { part = "part/kyosho/92638", role = "kit", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/92653", role = "kit", source = "doc/kyosho/30895-inferno-mp9e-p" },
@@ -122,7 +123,6 @@ contains = [
   { part = "part/kyosho/W5015", role = "kit", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/1-S33006", role = "listed", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/1-S34015TP", role = "listed", source = "doc/kyosho/30895-inferno-mp9e-m" },
-  { part = "part/kyosho/14020", role = "option", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/14021", role = "option", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/14022", role = "option", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/14113", role = "option", source = "doc/kyosho/30895-inferno-mp9e-m" },
@@ -135,7 +135,6 @@ contains = [
   { part = "part/kyosho/39081", role = "option", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/40030", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/41702", role = "listed", source = "doc/kyosho/30895-inferno-mp9e-m" },
-  { part = "part/kyosho/5400", role = "option", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/65012", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/65026", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/65027", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
@@ -155,13 +154,11 @@ contains = [
   { part = "part/kyosho/AKA14002", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/AKA14003", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/AKA34001", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
-  { part = "part/kyosho/F348", role = "listed", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/IFH003", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IFW402", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IF346", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IF346-01V", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IF346-04L", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
-  { part = "part/kyosho/IF347-1", role = "listed", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/IF347-126", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IF347-135", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IF347-136", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
@@ -202,7 +199,6 @@ contains = [
   { part = "part/kyosho/IFW410", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IS105-01V", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/W0204", role = "option", source = "doc/kyosho/30895-inferno-mp9e-p" },
-  { part = "part/kyosho/W408", role = "listed", source = "doc/kyosho/30895-inferno-mp9e-m" },
   { part = "part/kyosho/IF347", role = "kit", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IF462", role = "kit", source = "doc/kyosho/30895-inferno-mp9e-p" },
   { part = "part/kyosho/IFW140", role = "kit", source = "doc/kyosho/30895-inferno-mp9e-p" },

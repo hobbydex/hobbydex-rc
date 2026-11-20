@@ -3,7 +3,11 @@ brand = "brand/hrc-racing"
 number = "HRC27505"
 name = "Dust Cover - TT-01, TT-02"
 name_source = "manufacturer"
-category = "misc"
+category = "chassis"
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000031001", kind = "maker" },
+]
+fits = [
+  { kit = "kit/tamiya/tt-01", type = "direct", source = "doc/hrc-racing/store", notes = "The product title names the TT-01 and TT-02" },
+  { kit = "kit/tamiya/tt-02", type = "direct", source = "doc/hrc-racing/store", notes = "The product title names the TT-01 and TT-02" },
 ]

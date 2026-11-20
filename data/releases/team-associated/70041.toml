@@ -8,12 +8,14 @@ power = "brushless"
 power_source = "doc/team-associated/70041-page"
 status = "released"
 gtin = "784695700413"
+dimensions = { length_mm = 492.4, width_mm = 252, wheelbase_mm = 227.8, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2SC10swrtr/Black/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2SC10swrtr/Black/" },
 ]
 announced = "2026-03-12"
 announced_source = "https://www.youtube.com/watch?v=CRMtqcruhU8"
 color = "black"
+range = "team-associated/pro2-sc10sw-rtr-colours"
 documents = ["doc/team-associated/70041-page", "doc/team-associated/pro2-sc10sw-manual-2-24-2026", "doc/team-associated/youtube-CRMtqcruhU8"]
 contains = [
   { part = "part/team-associated/1336", role = "kit", qty = 1, step = "Electronics Build - Step 3", source = "doc/team-associated/pro2-sc10sw-manual-2-24-2026" },
@@ -116,4 +118,8 @@ contains = [
   { part = "part/team-associated/9654", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/pro2-sc10sw-manual-2-24-2026" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/pro2-sc10sw-manual-2-24-2026" },
   { part = "part/team-associated/9831", role = "kit", qty = 2, step = "Rear Gear Shock Diff Build Tower - Step and 1 Bumper Build - Bag D - DD - Step 2; Gear Diff Build - Step 3", source = "doc/team-associated/pro2-sc10sw-manual-2-24-2026" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/70041-page", note = "Suitable NiMh or 2S/3S LiPo battery (Reedy Part #751) for vehicle" },
+  { item = "charger", source = "doc/team-associated/70041-page", note = "Charger (Reedy Part #27201)" },
 ]

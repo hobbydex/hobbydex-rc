@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80933"
 name = "SC8.2e Ready-To-Run Rockstar-Makita"
 gtin = "784695809338"
+dimensions = { length_mm = 616, width_mm = 311, weight_g = 4040, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC8.2e/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC8.2e/RTR/" },
 ]
@@ -178,4 +179,7 @@ contains = [
   { part = "part/team-associated/91107", role = "listed", source = "doc/team-associated/sc8-2e-rtr-manual-and-catalog-6-8-2012" },
   { part = "part/team-associated/9809", role = "listed", source = "doc/team-associated/sc8-2e-rtr-manual-and-catalog-6-8-2012" },
   { part = "part/team-associated/89358", role = "listed", source = "doc/team-associated/sc8-2e-rtr-manual-and-catalog-6-8-2012" },
+]
+needs = [
+  { item = "charger", source = "doc/team-associated/80933-page", note = "Appropriate LiPo charger" },
 ]

@@ -25,3 +25,11 @@ fits = [
   { kit = "kit/redcat/lightning-str", type = "direct", source = "doc/redcat/store" },
 ]
 weight_g = 67
+performance = [
+  { voltage = 5, torque_kgcm = 25, speed_s = 0.16, source = "doc/redcat/product-pages-redcatracing-com" },
+  { voltage = 7.4, torque_kgcm = 35, speed_s = 0.14, source = "doc/redcat/product-pages-redcatracing-com" },
+  { voltage = 8.4, torque_kgcm = 42, speed_s = 0.12, source = "doc/redcat/product-pages-redcatracing-com" },
+]
+voltage = 8.4
+torque_kgcm = 42
+speed_s = 0.12

@@ -1,8 +1,13 @@
 id = "part/awesomatix/MR106RS"
 brand = "brand/awesomatix"
 number = "MR106RS"
-name = "MR106RS"
-notes = "Named by its number only: the name on the scanned awesomatix manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
+name = "Ball bearing 6x10x3 (rubber sealed)"
+category = "bearing"
 documents = ["doc/awesomatix/a700exl-manual"]
+seal = "rubber"
+name_source = "spec"
+equivalent_to = [
+  { spec = "spec/bearing/6x10x3", match = "functional", notes = "Size of the bearing code MR106RS (tools/data/hardware_size_codes.toml)" },
+]
+universal = true
+universal_basis = "size"

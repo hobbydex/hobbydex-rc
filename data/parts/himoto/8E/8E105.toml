@@ -1,9 +1,10 @@
 id = "part/himoto/8E105"
 brand = "brand/himoto"
 number = "8E105"
-name = "8E105"
-category = "misc"
-category_source = "fallback"
+name = "100A Brushless Electric Speed Controller for 1/8XB/SC/XT/MT"
+category = "esc"
+motor_type = "brushless"
+current_a = 100
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/combat", type = "direct", source = "doc/himoto/option-parts" },
@@ -14,3 +15,4 @@ fits = [
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E8MTL-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E8MTL&id=100400&pid=1", kind = "dealer" },
 ]
+name_source = "dealer"

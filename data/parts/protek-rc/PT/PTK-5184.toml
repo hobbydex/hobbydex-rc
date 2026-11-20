@@ -1,0 +1,21 @@
+id = "part/protek-rc/PTK-5184"
+brand = "brand/protek-rc"
+number = "PTK-5184"
+name = "1S High Power Micro Heli/Airplane 25C LiPo Battery (3.7V/160mAh)"
+seen_by = "2017-07-01"
+seen_by_source = "https://web.archive.org/web/20170701141453/https://www.amainhobbies.com/protek-rc-1s-high-power-micro-heli-airplane-25c-lipo-battery-3.7v-160mah-ptk-5184/p169476"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-1s-high-power-micro-heli-airplane-25c-lipo-battery-3.7v-160mah-ptk-5184/p169476" },
+]
+chemistry = "lipo"
+cells = 1
+voltage = 3.7
+capacity_mah = 160
+weight_g = 4
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-160mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 25
+connector = "Molex"

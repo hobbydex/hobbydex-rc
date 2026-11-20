@@ -12,3 +12,10 @@ links = [
 ]
 category = "servo"
 weight_g = 6
+performance = [
+  { voltage = 4.8, torque_kgcm = 0.9, speed_s = 0.1, source = "doc/rc4wd/store" },
+  { voltage = 6, torque_kgcm = 1.1, speed_s = 0.08, source = "doc/rc4wd/store" },
+]
+voltage = 6
+torque_kgcm = 1.1
+speed_s = 0.08

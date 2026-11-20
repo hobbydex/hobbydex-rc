@@ -1,10 +1,11 @@
 id = "part/himoto/8E103S"
 brand = "brand/himoto"
 number = "8E103S"
-name = "8E103S"
-category = "misc"
-category_source = "fallback"
+name = "Sensorless Brushless Motor"
+category = "motor"
+motor_type = "brushless"
 documents = ["doc/himoto/option-parts"]
+sensored = false
 fits = [
   { kit = "kit/himoto/mayhem", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/shootout", type = "direct", source = "doc/himoto/option-parts" },
@@ -12,3 +13,4 @@ fits = [
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E8SCL-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E8SCL&id=100398&pid=1", kind = "dealer" },
 ]
+name_source = "dealer"

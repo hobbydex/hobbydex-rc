@@ -9,6 +9,8 @@ fits = [
   { kit = "kit/kyosho/fantom-ep-4wd", type = "replaces", source = "doc/kyosho/30635-fantom-ep-4wd-spop" },
   { kit = "kit/kyosho/fantom-pzf", type = "replaces", source = "doc/kyosho/30640-mm01-spop" },
   { kit = "kit/kyosho/fantom-gp", type = "replaces", source = "doc/kyosho/asiatees" },
+  { kit = "kit/kyosho/fantom-ep-4wd", type = "replaces", replaces = "part/kyosho/EF205", source = "doc/kyosho/30635-fantom-ep-4wd-spop", notes = "Same part in another material (link_upgrades.py)" },
+  { kit = "kit/kyosho/fantom-pzf", type = "replaces", replaces = "part/kyosho/EF205", source = "doc/kyosho/30640-mm01-spop", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "suspension"
 documents = ["doc/kyosho/efw005-product-page"]

@@ -141,3 +141,13 @@ contains = [
   { part = "part/team-associated/92463", role = "kit", qty = 2, step = "Bag 8 - Step 2", source = "doc/team-associated/tc8-steel-spec-car-manual-7-30-2025" },
   { part = "part/team-associated/92560", role = "kit", qty = 12, step = "Bag 2 - Step 4; Bag 2 - Step 5", source = "doc/team-associated/tc8-steel-spec-car-manual-7-30-2025" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/30142-page" },
+  { item = "esc", source = "doc/team-associated/30142-page" },
+  { item = "servo", source = "doc/team-associated/30142-page" },
+  { item = "radio", source = "doc/team-associated/30142-page", note = "Transmitter/Receiver" },
+  { item = "battery", source = "doc/team-associated/30142-page", note = "7.4V-7.6V 2S LiPo" },
+  { item = "tyres", source = "doc/team-associated/30142-page", note = "Tires/wheels" },
+  { item = "wheels", source = "doc/team-associated/30142-page", note = "Tires/wheels" },
+  { item = "body", source = "doc/team-associated/30142-page", note = "1:10 Touring Car Body" },
+]

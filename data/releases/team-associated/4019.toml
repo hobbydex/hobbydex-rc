@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "4019"
 name = "RC12R5.1 Factory Team"
 gtin = "784695040199"
+dimensions = { length_mm = 265, wheelbase_mm = 196, weight_g = 830, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC12R5.1/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC12R5.1/Factory_Team/" },
 ]
@@ -66,4 +67,17 @@ contains = [
   { part = "part/team-associated/8453", role = "listed", source = "doc/team-associated/cat-12r5-1" },
   { part = "part/team-associated/8454", role = "listed", source = "doc/team-associated/cat-12r5-1" },
   { part = "part/team-associated/8504", role = "listed", source = "doc/team-associated/cat-12r5-1" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/4019-page", note = "R/C 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/4019-page", note = "Batteries (4 cells, laid out 2x2, not as stick pack)" },
+  { item = "esc", source = "doc/team-associated/4019-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/4019-page", note = "R/C electric motor" },
+  { item = "pinion", source = "doc/team-associated/4019-page", note = "Pinion gear" },
+  { item = "body", source = "doc/team-associated/4019-page", note = "1:12 scale body" },
+  { item = "paint", source = "doc/team-associated/4019-page", note = "Paint for body" },
+  { item = "tyres", source = "doc/team-associated/4019-page", note = "Tires" },
+  { item = "glue", source = "doc/team-associated/4019-page", note = "Glue for tires" },
+  { item = "servo", source = "doc/team-associated/4019-page", note = "Steering servo for 1:12 scale" },
+  { item = "tools", source = "doc/team-associated/4019-page" },
 ]

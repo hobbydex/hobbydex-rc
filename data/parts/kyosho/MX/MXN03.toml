@@ -1,15 +1,18 @@
 id = "part/kyosho/MXN03"
 brand = "brand/kyosho"
 number = "MXN03"
-name = "Suzuki Jimny Sierra"
+name = "Suzuki Jimny Sierra White Body Set"
 seen_by = "2020"
 seen_by_source = "doc/kyosho/mxn03-suzuki-jimny-sierra"
 name_ja = "スズキ ジムニー シエラ"
 gtin = "4548565380138"
 documents = ["doc/kyosho/mxn03-suzuki-jimny-sierra", "doc/kyosho/mxn03-product-page"]
 links = [ { site = "Kyosho", url = "https://rc.kyosho.com/en/mxn03.html" } ]
-category = "misc"
-category_source = "fallback"
+category = "body"
+depicts = { make = "Suzuki", model = "Jimny Sierra" }
 fits = [
   { kit = "kit/kyosho/mini-z-4x4", type = "direct", source = "doc/kyosho/32522gm-minizcr-t02-sp" },
 ]
+name_source = "manufacturer"
+former_names = ["Suzuki Jimny Sierra"]
+color = "white"

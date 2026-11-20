@@ -1,9 +1,8 @@
 id = "part/himoto/28600"
 brand = "brand/himoto"
 number = "28600"
-name = "28600"
-category = "misc"
-category_source = "fallback"
+name = "Powder steel diff. gear (part of 23615)"
+category = "differential"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/barren", type = "direct", source = "doc/himoto/option-parts" },
@@ -21,3 +20,7 @@ fits = [
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-Barren-Parts-Hop-Ups-Upgrades&brand=Himoto&model=Barren&id=106800&pid=1", kind = "dealer" },
 ]
+name_source = "dealer"
+pack_qty = 2
+pack_qty_basis = "name"
+material = "steel"

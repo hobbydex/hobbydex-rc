@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80912"
 name = "RC8T Nitro Factory Team Championship Edition Kit"
 gtin = "784695809123"
+dimensions = { length_mm = 555, width_mm = 410, weight_g = 4230, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8T/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8T/Factory_Team/" },
 ]
@@ -163,4 +164,15 @@ contains = [
   { part = "part/team-associated/89454", role = "kit", source = "doc/team-associated/rc8tce-manual-preflight" },
   { part = "part/team-associated/89455", role = "kit", source = "doc/team-associated/rc8tce-manual-preflight" },
   { part = "part/team-associated/89474", role = "kit", source = "doc/team-associated/rc8tce-manual-preflight" },
+]
+needs = [
+  { item = "engine", source = "doc/team-associated/80912-page", note = ".21 or .28 Class rear exhaust engine" },
+  { item = "receiver", source = "doc/team-associated/80912-page" },
+  { item = "servo", source = "doc/team-associated/80912-page", note = "2 Servos" },
+  { item = "battery", source = "doc/team-associated/80912-page" },
+  { item = "fuel", source = "doc/team-associated/80912-page" },
+  { item = "glow-starter", source = "doc/team-associated/80912-page", note = "Glow starter (#1737)" },
+  { item = "paint", source = "doc/team-associated/80912-page", note = "Lexan-specific spray paint" },
+  { item = "tyres", source = "doc/team-associated/80912-page", note = "Tires" },
+  { item = "tools", source = "doc/team-associated/80912-page" },
 ]

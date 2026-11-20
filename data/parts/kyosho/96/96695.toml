@@ -1,7 +1,7 @@
 id = "part/kyosho/96695"
 brand = "brand/kyosho"
 number = "96695"
-name = "20x32mm Ball Bearing"
+name = "Bearing(20x32x7.0)"
 status = "discontinued"
 seen_by = "2019-08-22"
 seen_by_source = "https://web.archive.org/web/20190822022649/https://rc.kyosho.com/en/96695.html"
@@ -16,3 +16,8 @@ links = [
 ]
 color = "silver"
 notes = "Colour read from the maker's product photo."
+name_source = "manufacturer"
+former_names = ["20x32mm Ball Bearing"]
+equivalent_to = [
+  { spec = "spec/bearing/20x32x7", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

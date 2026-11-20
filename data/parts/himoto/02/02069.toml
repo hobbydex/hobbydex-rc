@@ -1,10 +1,9 @@
 id = "part/himoto/02069"
 brand = "brand/himoto"
 number = "02069"
-name = "02069"
-category = "misc"
-category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+name = "upper plate Buggy"
+category = "chassis"
+documents = ["doc/himoto/option-parts", "doc/himoto/monstercars"]
 fits = [
   { kit = "kit/himoto/1-10-scale-rtr-4wd-nitro-power-off-road-buggy-sh18-engine-w-2-4g-remote", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/1-10-scale-rtr-4wd-nitro-power-off-road-truck-vtx18-engine-w-2-4g-remote", type = "direct", source = "doc/himoto/option-parts" },
@@ -12,4 +11,11 @@ fits = [
   { kit = "kit/himoto/eldorada", releases = ["release/himoto/HI6101"], type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/rapida-pro", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/syclone-pro", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/nascada", type = "direct", source = "doc/himoto/monstercars" },
+  { kit = "kit/himoto/zmotoz3", type = "direct", source = "doc/himoto/monstercars" },
+]
+name_source = "dealer"
+notes = "Name known from a dealer (Monster Cars)"
+links = [
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_416", kind = "dealer" },
 ]

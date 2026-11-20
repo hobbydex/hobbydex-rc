@@ -11,6 +11,7 @@ status = "discontinued"
 power = "brushless"
 power_source = "doc/kyosho/32796-product-page"
 gtin = "4548565395613"
+dimensions = { length_mm = 119.5, width_mm = { min = 65, max = 76 }, height_mm = 38, wheelbase_mm = 94, weight_g = 140, source = "https://rc.kyosho.com/en/32796.html" }
 documents = ["doc/kyosho/32795-mini-z-mr-03evo-chassis-set-2021-manual", "doc/kyosho/32796-product-page"]
 contains = [
   { part = "part/kyosho/71998", role = "listed", source = "doc/kyosho/32795-mini-z-mr-03evo-chassis-set-2021-manual" },

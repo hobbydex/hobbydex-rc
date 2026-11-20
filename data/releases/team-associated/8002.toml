@@ -8,9 +8,50 @@ kind = "kit"
 status = "announced"
 announced = "2026-11-17"
 announced_source = "https://www.associatedelectrics.com/news/latest_products/3102-new-rc10l-kit/"
+dimensions = { length_mm = 381, width_mm = 226.8, weight_g = 1550, source = "https://60years.associatedelectrics.com/rc10l-kit/" }
 notes = "The reborn RC10L, 1/10 2WD electric on-road competition kit with a centre-mounted shorty LiPo chassis and modern servo mount (Associated Electrics news, 2026-11-17). Maker page (60years.associatedelectrics.com, read 2026-11-17): pre-order, shipping November 2026."
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10l-kit/" },
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/news/latest_products/3102-new-rc10l-kit/", kind = "press" },
 ]
-documents = ["doc/team-associated/8002-page", "doc/team-associated/youtube-n-SrUoG8E6E"]
+documents = ["doc/team-associated/8002-page", "doc/team-associated/youtube-n-SrUoG8E6E", "doc/team-associated/rc10l-kit-manual-web-8-7-2026"]
+needs = [
+  { item = "esc", source = "doc/team-associated/8002-page" },
+  { item = "motor", source = "doc/team-associated/8002-page" },
+  { item = "receiver", source = "doc/team-associated/8002-page" },
+  { item = "radio", source = "doc/team-associated/8002-page", note = "Transmitter" },
+  { item = "servo", source = "doc/team-associated/8002-page" },
+  { item = "battery", source = "doc/team-associated/8002-page", note = "Suitable NiMh or 1S/2S LiPo battery" },
+  { item = "charger", source = "doc/team-associated/8002-page" },
+]
+contains = [
+  { part = "part/team-associated/1596", role = "kit", step = "Rear Axle Build - Bag E - Step 3", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/25211", role = "kit", step = "Rear Pod Build - Bag C - Step 1", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/41096", role = "kit", step = "Steering Build - Bag F - Step 1", qty = 8, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/4116", role = "kit", step = "Front End Build - Bag A - Step 2", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/4187", role = "kit", step = "Front End Build - Bag A - Step 1; Wheels and Tires Build - Bag H - Step 1", qty = 5, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/4481", role = "kit", step = "T-Plate Build - Bag B - Step 1; Rear Damper Build - Bag D - Step 1; Rear Damper Build - Bag D - Step 2", source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/4482", role = "kit", step = "Rear Pod Build - Bag C - Step 1; Rear Pod Build - Bag C - Step 2; Rear Axle Build - Bag E - Step 1", qty = 4, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/4487", role = "kit", step = "Front End Build - Bag A - Step 1; Front End Build - Bag A - Step 2", qty = 4, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/5407", role = "kit", step = "Shock Build - Bag F - Step 1", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6171", role = "kit", step = "Electronics / Body Install - Misc. - Step 1", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6271", role = "kit", step = "Rear Damper Build - Bag D - Step 1", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6279", role = "kit", step = "Shock Build - Bag F - Step 2", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6282", role = "kit", step = "Bumper and Body Mounts Build - Bag G - Step 1", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6299", role = "kit", step = "Front End Build - Bag A - Step 1; Front End Build - Bag A - Step 2; Shock Build - Bag F - Step 1", qty = 5, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6332", role = "kit", step = "Electronics / Body Install - Misc. - Step 1", qty = 4, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6462", role = "kit", step = "Shock Build - Bag F - Step 1; Shock Build - Bag F - Step 2", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6639", role = "kit", step = "Shock Build - Bag F - Step 4", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/6727", role = "kit", step = "Electronics / Body Install - Misc. - Step 1", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8580", role = "kit", step = "Front End Build - Bag A - Step 1; Front End Build - Bag A - Step 2; Front End Build - Bag A - Step 3", qty = 8, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8581", role = "kit", step = "Rear Damper Build - Bag D - Step 1; Rear Damper Build - Bag D - Step 2; Bumper and Body Mounts Build - Bag G - Step 1; Bumper and Body Mounts Build - Bag G - Step 2", source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8582", role = "kit", step = "Shock Build - Bag F - Step 5", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8583", role = "kit", step = "Wheels and Tires Build - Bag H - Step 1", source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8584", role = "kit", step = "Front End Build - Bag A - Step 3", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8586", role = "kit", step = "T-Plate Build - Bag B - Step 1; Rear Pod Build - Bag C - Step 2", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8587", role = "kit", step = "Front End Build - Bag A - Step 3; Rear Pod Build - Bag C - Step 1", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8588", role = "kit", step = "Rear Damper Build - Bag D - Step 1", qty = 1, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8589", role = "kit", step = "Rear Axle Build - Bag E - Step 1; Rear Axle Build - Bag E - Step 2; Rear Axle Build - Bag E - Step 3", qty = 3, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/8590", role = "kit", step = "Wheels and Tires Build - Bag H - Step 1", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+  { part = "part/team-associated/92418", role = "kit", step = "Steering Build - Bag F - Step 1", qty = 2, source = "doc/team-associated/rc10l-kit-manual-web-8-7-2026" },
+]

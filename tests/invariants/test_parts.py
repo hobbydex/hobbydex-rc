@@ -1,7 +1,8 @@
 """Parts: names and categories (the data-only checks of the daily audit, under their audit names)."""
-import json, re
+import collections, json, re
 
-from rules import is_aircraft_part, tamiya_maker_linked, twin_class, twin_pairs, unbalanced
+from rules import (is_aircraft_part, item_scales_contradict, kit_words, scaled_name_scales,
+                   tamiya_maker_linked, twin_class, twin_pairs, unbalanced)
 
 
 def test_name_unbalanced_bracket(ratchet, db):
@@ -23,10 +24,13 @@ def test_bearing_rebuild_kit(ratchet):
 
 
 def test_part_category_fallback(ratchet):
-    """Parts with the fallback category (misc, category_source fallback): no classifier rule or maker source places
-    them yet. Reported, not blocking: importers still add parts no rule places (partial records are kept)."""
-    ratchet("part-category-fallback", """SELECT id AS record, 'category_source fallback' AS problem FROM records
-        WHERE kind = 'part' AND json_extract(data, '$.category_source') = 'fallback'""", blocking=False)
+    """Parts with no category: the fallback (misc with category_source fallback) that no classifier rule or maker
+    source places. Misc itself is a category and never counts (owner 2026-11-18). Blocking: a change that adds
+    fallback parts fails; extend the classifier rules (hobbydex-tools tools/data/classify_parts.toml) for the names
+    listed, never write a guessed category."""
+    ratchet("part-category-fallback", """SELECT id AS record,
+          'no category (fallback): ' || coalesce(json_extract(data, '$.name'), '(no name)') AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.category_source') = 'fallback'""")
 
 
 def test_part_named_by_number(ratchet):
@@ -35,6 +39,41 @@ def test_part_named_by_number(ratchet):
     ratchet("part-named-by-number", """SELECT id AS record, 'named by its number' AS problem FROM records
         WHERE kind = 'part' AND json_extract(data, '$.name') = json_extract(data, '$.number')
           AND json_type(data, '$.name') = json_type(data, '$.number')""", blocking=False)
+
+
+def test_part_ocr_number_only(ratchet):
+    """Parts whose only evidence is an OCR read of their number: named by the number (name_source ocr, or the note
+    "Named by its number only"), one document, and no link, barcode, web sighting or fits row of another source. Such a
+    number may be lettering inside a drawing or a misread (Kyosho's "OT227 2900098" on a pictured belt became C0227);
+    an importer takes a new number only from a printed list row (a name or a count beside it). Each one left was checked
+    against a lossless crop of its page by the vision model (2026-11-18); a new one is a fault of the importer."""
+    ratchet("part-ocr-number-only", """SELECT id AS record, 'number read by OCR only, from ' ||
+            json_extract(data, '$.documents[0]') AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.name') = json_extract(data, '$.number')
+          AND (json_extract(data, '$.name_source') = 'ocr'
+               OR coalesce(json_extract(data, '$.notes'), '') LIKE 'Named by its number only%')
+          AND json_array_length(json_extract(data, '$.documents')) = 1
+          AND json_extract(data, '$.links') IS NULL AND json_extract(data, '$.gtin') IS NULL
+          AND coalesce(json_extract(data, '$.seen_by_source'), '') NOT LIKE 'http%'
+          AND NOT EXISTS (SELECT 1 FROM json_each(json_extract(data, '$.fits')) f
+                          WHERE json_extract(f.value, '$.source') IS NOT json_extract(data, '$.documents[0]'))""")
+
+
+def test_part_named_by_hardware_code(ratchet):
+    """Parts whose only name is a bearing code with a seal suffix (MR106RS, R168-2RS) or a metric screw size (M3X8) in
+    their number: the size the code stands for names them (name_source "spec", tools/name_hardware_codes.py in
+    hobbydex-tools). The ones left are codes that read two ways or contradict their pack; the count may only fall."""
+    ratchet("part-named-by-hardware-code", r"""SELECT id AS record, 'named by a hardware code only' AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.name') = json_extract(data, '$.number')
+          AND json_type(data, '$.name') = 'text'
+          AND json_extract(data, '$.number') REGEXP '(?i)^(?:[A-Z]{1,3}-?)?(?:F|MF|MR|R)?\d{2,4}-?(?:ZZ|2RS|RS|RZ)(?:-\w+)?$|M\d(?:[.-]\d)?X\d{1,2}$'""")
+
+
+def test_spec_name_links_spec(hard):
+    """A part named from a standard size (name_source "spec") links the generic spec of that size in equivalent_to."""
+    hard("""SELECT id AS record, 'named from a spec but links no spec' AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.name_source') = 'spec'
+          AND NOT EXISTS (SELECT 1 FROM json_each(data, '$.equivalent_to') e WHERE json_extract(e.value, '$.spec') IS NOT NULL)""")
 
 
 def test_part_no_car_link(ratchet, db):
@@ -63,6 +102,43 @@ def test_fits_kit_no_release(ratchet):
         WHERE l.field = 'fits' AND NOT truthy(json_extract(k.data, '$.family'))
           AND k.id NOT IN (SELECT json_extract(data, '$.kit') FROM records WHERE kind = 'release'
             AND json_extract(data, '$.kit') IS NOT NULL)""", blocking=False)
+
+
+def test_fits_scale_contradicts_kit(ratchet, db):
+    """A fits row whose listing names the car at another scale than the kit's: the part's applies_to or the row's
+    notes state a scale for every car they list and none is the kit's ("1/18 Ruckus 4WD" fitted to the 1/10 Ruckus
+    4WD); or the part's name, applies_to or notes put a scale right before the name of a kit that states none, while
+    the brand holds a kit of that scale and that name ("1/16 Mini Slash" fitted to the Mini Slash 4X4, not the 1/16
+    Slash). Move the row to the kit of the listed scale (the importer's car alias), or remove it."""
+    kits = {kid: (json.loads(d) if d else {}) for kid, d in db.execute("SELECT id, data FROM records WHERE kind = 'kit'")}
+    brand_names = {bid: (json.loads(d) or {}).get("name", "") for bid, d in db.execute(
+        "SELECT id, data FROM records WHERE kind = 'brand'")}
+    scaled = collections.defaultdict(list)   # brand -> [(kit id, scale, name words)]
+    for kid, k in kits.items():
+        if k.get("scale") and kit_words(k.get("name")):
+            scaled[k.get("brand")].append((kid, k["scale"], kit_words(k.get("name"))))
+    rows = []
+    for pid, name, applies, row in db.execute("""SELECT r.id, json_extract(r.data, '$.name'),
+            json_extract(r.data, '$.applies_to'), l.row FROM list_rows l JOIN records r ON r.id = l.owner
+            WHERE l.field = 'fits' AND r.kind = 'part'"""):
+        row = json.loads(row)
+        k = kits.get(row.get("kit"))
+        if not k:
+            continue
+        notes = row.get("notes") or ""
+        listed = " ; ".join(x for x in (applies if isinstance(applies, str) else "", notes) if x)
+        if k.get("scale"):
+            if item_scales_contradict(applies if isinstance(applies, str) else "", k["scale"]) or (
+                    item_scales_contradict(notes, k["scale"])):
+                rows.append((pid, f"fits {row['kit']} ({k['scale']}), listed as {listed!r}"))
+            continue
+        text = (name or "") + " ; " + listed
+        at = scaled_name_scales(text, k.get("name"), brand_names.get(k.get("brand"), ""))
+        other = [kid for kid, sc, words in scaled.get(k.get("brand"), [])
+                 if sc in at and words <= kit_words(k.get("name")) and kid != row["kit"]]
+        if other:
+            rows.append((pid, f"fits {row['kit']} (no scale), listed at {'/'.join(sorted(at))}: {other[0]}"))
+    ratchet("fits-scale-contradicts-kit", rows)
 
 
 def test_spec_unlinked(ratchet):
@@ -132,3 +208,66 @@ def test_twin_parts(ratchet, db):
         if cls != "shared":
             rows += [(a["id"], f"{cls} twin of {b['id']}"), (b["id"], f"{cls} twin of {a['id']}")]
     ratchet("twin-parts", rows)
+
+
+# a part of category servo that is a servo itself (not a horn, saver, case, gear set or mount): the name says servo and
+# no accessory word, or it states a figure (torque, speed or performance)
+SERVO_ACCESSORY = re.compile(r"(?i)horn|saver|\barm\b|case|gear|mount|tape|holder|plate|bracket|cover|screw|extension|lead|"
+                             r"cable|wire|protector|guard|stay|link|spacer|grommet|post|tester|programm|card|box|set\b|parts?\b|"
+                             r"heat ?sink|cap\b|seal")
+
+
+def _servos(db):
+    rows = db.execute("""SELECT id, json_extract(data, '$.name'), json_extract(data, '$.torque_kgcm'),
+          json_extract(data, '$.speed_s'), json_extract(data, '$.performance'), json_extract(data, '$.equivalent_to')
+        FROM records WHERE kind = 'part' AND json_extract(data, '$.category') = 'servo'""")
+    out = []
+    for pid, name, tq, sp, pf, eq in rows:
+        pf = json.loads(pf) if pf else []
+        figures = tq is not None or sp is not None or pf
+        if figures or (re.search(r"(?i)\bservo\b", name or "") and not SERVO_ACCESSORY.search(name or "")):
+            out.append((pid, name, tq is not None or any("torque_kgcm" in r for r in pf),
+                        sp is not None or any("speed_s" in r for r in pf),
+                        any(str(e.get("spec", "")).startswith("spec/servo/") for e in json.loads(eq or "[]"))))
+    return out
+
+
+def test_servo_no_speed(ratchet, db):
+    """A servo with no speed (s/60 degrees) stated, top-level or in performance: read it from the maker's page
+    (hobbydex-tools tools/link_servo_pages.py, tools/servo_performance.py for a new page layout). Reported, not
+    blocking: importers add servos from sources that state no figures."""
+    ratchet("servo-no-speed", [(pid, f"no speed: {name}") for pid, name, _, sp, _ in _servos(db) if not sp], blocking=False)
+
+
+def test_servo_no_torque(ratchet, db):
+    """A servo with no torque (kg-cm) stated, top-level or in performance: as servo-no-speed."""
+    ratchet("servo-no-torque", [(pid, f"no torque: {name}") for pid, name, tq, _, _ in _servos(db) if not tq], blocking=False)
+
+
+def test_servo_no_size_spec(ratchet, db):
+    """A servo linked to no spec/servo size spec: the maker states no size class, and its dimensions fit no size range
+    or no spline is stated (hobbydex-tools tools/link_servo_pages.py counts each reason)."""
+    ratchet("servo-no-size-spec", [(pid, f"no size spec: {name}") for pid, name, _, _, spec in _servos(db) if not spec],
+            blocking=False)
+
+
+def test_servo_figure_out_of_range(hard):
+    """A servo whose headline speed_s is not seconds per 60 degrees (0.005 to 2) or whose torque_kgcm is not kg-cm (0.1 to
+    500): a misread figure (".10 sec" read as 0, ".062 sec" as 2, ".07sec" as 7). Fix the reader (hobbydex-tools
+    tools/horizon_specs.py, tools/servo_performance.py) and the value from the maker's page, as performance rows are
+    checked by tools/validate.py."""
+    hard("""SELECT id AS record, 'speed_s ' || coalesce(json_extract(data, '$.speed_s'), '-')
+            || ', torque_kgcm ' || coalesce(json_extract(data, '$.torque_kgcm'), '-') AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.category') = 'servo'
+          AND (json_extract(data, '$.speed_s') NOT BETWEEN 0.005 AND 2
+               OR json_extract(data, '$.torque_kgcm') NOT BETWEEN 0.1 AND 500)""", "servo-figure-out-of-range")
+
+
+def test_servo_case_oversize(hard):
+    """A servo whose dimensions_mm has a side of 90 mm or more: no car servo case is that large (a 1/5-scale one is about
+    66 x 30 x 58 mm), so it is the package size a shop lists as the product size (Horizon's 102 x 51 x 14 mm for a mini
+    servo). The importer refuses such a size for a servo (hobbydex-tools tools/sources/rules/horizon-specs.tsv)."""
+    hard("""SELECT id AS record, 'dimensions_mm ' || json_extract(data, '$.dimensions_mm') AS problem
+        FROM records WHERE kind = 'part' AND json_extract(data, '$.category') = 'servo'
+          AND EXISTS (SELECT 1 FROM json_each(json_extract(records.data, '$.dimensions_mm')) d WHERE d.value >= 90)""",
+         "servo-case-oversize")

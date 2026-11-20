@@ -168,3 +168,10 @@ contains = [
   { part = "part/team-associated/92585", role = "listed", source = "doc/team-associated/90046-90047-rc10b7-1-parts-list" },
   { part = "part/team-associated/92588", role = "listed", source = "doc/team-associated/90046-90047-rc10b7-1-parts-list" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/90047-page" },
+  { item = "esc", source = "doc/team-associated/90047-page" },
+  { item = "servo", source = "doc/team-associated/90047-page" },
+  { item = "tyres", source = "doc/team-associated/90047-page", note = "Tires" },
+  { item = "wheels", source = "doc/team-associated/90047-page" },
+]

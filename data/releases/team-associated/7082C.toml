@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "7082C"
 name = "SC10.3 JRT Brushless Ready-to-Run LiPo Combo"
 gtin = "784695985995"
+dimensions = { length_mm = 550, width_mm = 293, weight_g = 2080, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10.3_JRT/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10.3_JRT/RTR/" },
 ]
@@ -146,4 +147,7 @@ contains = [
   { part = "part/team-associated/9885", role = "kit", qty = 1, step = "Shock Build - Bag F 2/3 - Step 1", source = "doc/team-associated/manual-sc10-3-7081-7082b" },
   { part = "part/team-associated/9888", role = "kit", qty = 2, step = "Transmission Build - Bag C 2 - Step 1; Transmission Build - Bag C 2 - Step 3", source = "doc/team-associated/manual-sc10-3-7081-7082b" },
   { part = "part/team-associated/9922", role = "kit", qty = 2, step = "Wheels and Tires Build - Bag H 1 - Step 1", source = "doc/team-associated/manual-sc10-3-7081-7082b" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/7082-page", note = "#7082: 6-cell sub-C rechargeable battery or 2-cell LiPo battery" },
 ]

@@ -1,9 +1,8 @@
 id = "part/himoto/11133"
 brand = "brand/himoto"
 number = "11133"
-name = "11133"
-category = "misc"
-category_source = "fallback"
+name = "1.0 Module Hard Lonised Steel Pinion Gear (13T)"
+category = "pinion"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/combat", type = "direct", source = "doc/himoto/option-parts" },
@@ -13,4 +12,11 @@ fits = [
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E8MTL-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E8MTL&id=100482&pid=1", kind = "dealer" },
+]
+name_source = "dealer"
+material = "steel"
+teeth = 13
+module = 1
+equivalent_to = [
+  { spec = "spec/pinion/mod1-13t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
 ]

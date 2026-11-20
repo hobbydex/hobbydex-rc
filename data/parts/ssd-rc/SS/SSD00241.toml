@@ -2,8 +2,13 @@ id = "part/ssd-rc/SSD00241"
 brand = "brand/ssd-rc"
 number = "SSD00241"
 name = "M2.6 x 11mm Cap Head Screws"
+seen_by = "2018-02-05"
+seen_by_source = "https://web.archive.org/web/20180205181942/http://www.ssd-rc.com:80/m2.6-x-11mm-cap-head-screws.html"
 name_source = "manufacturer"
 category = "screw"
 links = [
   { site = "SSD RC", url = "https://ssd-rc.com/m2.6-x-11mm-cap-head-screws.html" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m2.6x11-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

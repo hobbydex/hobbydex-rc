@@ -145,3 +145,11 @@ contains = [
   { part = "part/team-associated/91971", role = "kit", qty = 2, step = "Gate 02 Steering Rack; Gate 04 Front End / Servo", source = "doc/team-associated/gaterunner-2wd-kit-manual" },
 ]
 gtin = "784695401440"
+needs = [
+  { item = "servo", source = "doc/element-rc/40144-page" },
+  { item = "motor", source = "doc/element-rc/40144-page" },
+  { item = "battery", source = "doc/element-rc/40144-page" },
+  { item = "esc", source = "doc/element-rc/40144-page" },
+  { item = "radio", source = "doc/element-rc/40144-page", note = "Radio and Receiver" },
+  { item = "charger", source = "doc/element-rc/40144-page" },
+]

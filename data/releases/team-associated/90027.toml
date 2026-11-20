@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "90027"
 name = "RC10B74.1 Team Kit"
 gtin = "784695900271"
+dimensions = { length_mm = 395, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B74.1/Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B74.1/Team/" },
 ]
@@ -149,4 +150,17 @@ contains = [
   { part = "part/team-associated/92292", role = "kit", qty = 1, step = "Bag 3 - Step 1; Bag 3 - Step 2", source = "doc/team-associated/b74-1c-kit-manual-10-2-2020" },
   { part = "part/team-associated/92295", role = "kit", qty = 1, step = "Bag 10 - Step 1", source = "doc/team-associated/b74-1c-kit-manual-10-2-2020" },
   { part = "part/team-associated/92299", role = "kit", qty = 2, step = "Bag 8 - Step 2", source = "doc/team-associated/b74-1c-kit-manual-10-2-2020" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/90027-page", note = "1:10 scale electric motor" },
+  { item = "esc", source = "doc/team-associated/90027-page", note = "Electronic speed control" },
+  { item = "battery", source = "doc/team-associated/90027-page", note = "3.7V-7.4V LiPo, 6.0V LiFe (standard or low-profile case height)" },
+  { item = "charger", source = "doc/team-associated/90027-page", note = "Battery charger (suitable for batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/90027-page", note = "2-channel surface transmitter" },
+  { item = "receiver", source = "doc/team-associated/90027-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/90027-page", note = "Steering servo" },
+  { item = "paint", source = "doc/team-associated/90027-page", note = "Spray paint for polycarbonate body" },
+  { item = "tyres", source = "doc/team-associated/90027-page", note = "1:10 scale off-road wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/90027-page", note = "1:10 scale off-road wheels and tires" },
+  { item = "tools", source = "doc/team-associated/90027-page" },
 ]

@@ -9,6 +9,7 @@ power_source = "part/hpi/106767"
 status = "discontinued"
 seen_by = "2015-10"
 seen_by_source = "https://web.archive.org/web/20151022080903/http://www.hpiracing.com:80/en/kit/115383"
+dimensions = { length_mm = 485, width_mm = 227, height_mm = 172, source = "https://www.hpiracing.com/en/kit/115383" }
 documents = ["doc/hpi/115383-kit-page", "doc/hpi/115737-vol04-rtr-wr8-flux-060415", "doc/hpi/115737-vol04-rtr-wr8-flux-060415-e"]
 supersedes = "release/hpi/114183"
 depicts = { make = "Ford", model = "Fiesta ST RX43", year = 2015 }
@@ -158,7 +159,6 @@ contains = [
   { part = "part/hpi/109926", role = "option", source = "doc/hpi/115383-kit-page" },
   { part = "part/hpi/160564", role = "option", source = "doc/hpi/115383-kit-page" },
   { part = "part/hpi/105383", role = "listed", source = "doc/hpi/115737-vol04-rtr-wr8-flux-060415" },
-  { part = "part/hpi/10367", role = "listed", source = "doc/hpi/115737-vol04-rtr-wr8-flux-060415-e" },
   { part = "part/hpi/105366", role = "listed", source = "doc/hpi/115737-vol04-rtr-wr8-flux-060415-e" },
   { part = "part/hpi/1078", role = "listed", source = "doc/hpi/115737-vol04-rtr-wr8-flux-060415-e" },
   { part = "part/hpi/10787", role = "listed", source = "doc/hpi/115737-vol04-rtr-wr8-flux-060415-e" },

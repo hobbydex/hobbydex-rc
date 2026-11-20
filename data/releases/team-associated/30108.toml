@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "30108"
 name = "TC6.1 Worlds Car"
 gtin = "784695301085"
+dimensions = { length_mm = 381, width_mm = 190, weight_g = 1375, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/TC6.1/Worlds_Car/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/TC6.1/Worlds_Car/" },
   { site = "Red RC", url = "https://www.redrc.net/2012/10/associated-tc6-1-worlds-car-kit/", kind = "press" },
@@ -134,4 +135,17 @@ contains = [
   { part = "part/team-associated/9180", role = "kit", step = "Servo Build / Install - Bag J - Step 1; Servo Build / Install - Bag J - Step 2", qty = 1, source = "doc/team-associated/tc6-1ft-manual" },
   { part = "part/team-associated/94755", role = "kit", step = "Servo Build / Install - Bag J - Step 2", qty = 1, source = "doc/team-associated/tc6-1ft-manual" },
   { part = "part/team-associated/9882", role = "kit", step = "Steering Bellcrank Build / Install - Bag E - Step 2", qty = 1, source = "doc/team-associated/tc6-1ft-manual" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/30108-page", note = "1:10 scale electric motor" },
+  { item = "esc", source = "doc/team-associated/30108-page", note = "1:10 scale electronic speed control" },
+  { item = "battery", source = "doc/team-associated/30108-page", note = "7.4V LiPo, 6.0V LiFe" },
+  { item = "charger", source = "doc/team-associated/30108-page" },
+  { item = "radio", source = "doc/team-associated/30108-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/30108-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/30108-page", note = "steering servo" },
+  { item = "body", source = "doc/team-associated/30108-page", note = "1:10 scale (190mm) polycarbonate touring car body" },
+  { item = "paint", source = "doc/team-associated/30108-page", note = "Polycarbonate-specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/30108-page", note = "1:10 scale rubber or foam touring car tires, wheels" },
+  { item = "wheels", source = "doc/team-associated/30108-page", note = "1:10 scale rubber or foam touring car tires, wheels" },
 ]

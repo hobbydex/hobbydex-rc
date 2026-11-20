@@ -12,7 +12,14 @@ category = "servo"
 dimensions_mm = [41, 21, 35]
 gear_material = "metal"
 voltage_range = "6.0V - 8.4V"
-torque_kgcm = 35.8
-speed_s = 0
+torque_kgcm = 35.72
+speed_s = 0.1
 bearings = 2
 weight_g = 79
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]
+performance = [
+  { voltage = 8.4, torque_kgcm = 35.72, torque_ozin = 496, speed_s = 0.1, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+voltage = 8.4

@@ -2,6 +2,7 @@ id = "part/hitec/HS-645MG"
 brand = "brand/hitec"
 number = "HS-645MG"
 name = "HS-645MG High Torque Metal Gear 24T Analog Sport Servo"
+gtin = "4260589860471"
 seen_by = "2001-06-20"
 seen_by_source = "https://web.archive.org/web/20010620170809/http://www.hitecrcd.com:80/Catalog/Servos/Hs-645mg.jpg"
 category = "servo"
@@ -20,3 +21,7 @@ equivalent_to = [
   { spec = "spec/servo/standard-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-645mg-high-torque-metal-gear-premium-sport-servo/" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 7.7, torque_ozin = 106.93, speed_s = 0.24, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 9.6, torque_ozin = 133.32, speed_s = 0.2, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

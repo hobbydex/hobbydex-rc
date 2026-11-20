@@ -1,8 +1,14 @@
 id = "part/team-saxo/R168-ZZ"
 brand = "brand/team-saxo"
 number = "R168-ZZ"
-name = "R168-ZZ"
+name = "Ball bearing 6.35x9.525x3.175 (metal shielded)"
 notes = "Piece of pack TS05816 on the GT-300W-V4 parts list; the list gives no name"
 documents = ["doc/team-saxo/gt-300w-v4-parts-list"]
-category = "misc"
-category_source = "fallback"
+category = "bearing"
+seal = "metal"
+name_source = "spec"
+equivalent_to = [
+  { spec = "spec/bearing/6.35x9.525x3.175", match = "functional", notes = "Size of the bearing code R168ZZ (tools/data/hardware_size_codes.toml)" },
+]
+universal = true
+universal_basis = "size"

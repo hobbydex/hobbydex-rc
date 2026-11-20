@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "7038"
 name = "SC10.2 Factory Team Kit"
 gtin = "784695070387"
+dimensions = { length_mm = 550, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10.2/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10.2/Factory_Team/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-sc10-2-factory-team-kit/", kind = "press" },
@@ -152,4 +153,14 @@ contains = [
   { part = "part/team-associated/9898", role = "kit", qty = 6, step = "Front End, Outer Build - Bag B-BB - Step 2; CVA and Turnbuckles Build - Bag F-FF - Step 3", source = "doc/team-associated/manual-sc10-2ft" },
   { part = "part/team-associated/9899", role = "kit", qty = 1, step = "Front End, Inner Build - Bag C - Step 2; Rear End Build - Bag E-EE - Step 7", source = "doc/team-associated/manual-sc10-2ft" },
   { part = "part/team-associated/9917", role = "kit", qty = 2, step = "CVA and Turnbuckles Build - Bag F-FF - Step 1", source = "doc/team-associated/manual-sc10-2ft" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/7038-page", note = "RC 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/7038-page", note = "Battery pack (6 cell NiMH, or 2S LiPo)" },
+  { item = "esc", source = "doc/team-associated/7038-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/7038-page", note = "RC electric motor" },
+  { item = "pinion", source = "doc/team-associated/7038-page", note = "Pinion gear" },
+  { item = "tyres", source = "doc/team-associated/7038-page", note = "Tires" },
+  { item = "glue", source = "doc/team-associated/7038-page", note = "Tire glue" },
+  { item = "paint", source = "doc/team-associated/7038-page", note = "Paint for body" },
 ]

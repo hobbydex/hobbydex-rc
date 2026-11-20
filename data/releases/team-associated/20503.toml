@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "20503"
 name = "MGT 4.60 Nitro Special Edition Ready-to-Run w/Flag Body"
 gtin = "784695205031"
+dimensions = { length_mm = 565, width_mm = 438, wheelbase_mm = 368, weight_g = 5622, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/MGT4.60/SERTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/MGT4.60/SERTR/" },
 ]
@@ -18,4 +19,9 @@ contains = [
   { part = "part/team-associated/25238", role = "listed", source = "doc/team-associated/drawing-mgt4-6" },
   { part = "part/team-associated/25032", role = "listed", source = "doc/team-associated/drawing-mgt4-6" },
   { part = "part/team-associated/25116", role = "listed", source = "doc/team-associated/drawing-mgt4-6" },
+]
+needs = [
+  { item = "glow-starter", source = "doc/team-associated/20503-page", note = "Glow Igniter (#1738)" },
+  { item = "tools", source = "doc/team-associated/20503-page", note = "Slotted Screwdriver" },
+  { item = "fuel", source = "doc/team-associated/20503-page", note = "Fuel, 15%-30% only" },
 ]

@@ -1,13 +1,15 @@
 id = "part/himoto/28661"
 brand = "brand/himoto"
 number = "28661"
-name = "28661"
-category = "misc"
-category_source = "fallback"
+name = "1:18 Truck Body"
+category = "body"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/mastadon", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/tyronno", type = "direct", source = "doc/himoto/monstercars" },
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-Mastadon-Parts-Hop-Ups-Upgrades&brand=Himoto&model=Mastadon&id=62817&pid=1", kind = "dealer" },
 ]
+name_source = "dealer"
+scale = "1/18"

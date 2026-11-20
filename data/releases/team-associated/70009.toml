@@ -6,6 +6,7 @@ name = "RC10SC6.4 Team Kit"
 kind = "kit"
 status = "released"
 gtin = "784695700093"
+dimensions = { wheelbase_mm = 325, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10SC6.4/Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10SC6.4/Team/" },
 ]
@@ -150,4 +151,18 @@ contains = [
   { part = "part/team-associated/71177", role = "option", source = "doc/team-associated/pressrelease-050916-t64-sc64-parts-list" },
   { part = "part/team-associated/71183", role = "option", source = "doc/team-associated/pressrelease-050916-t64-sc64-parts-list" },
   { part = "part/team-associated/91723", role = "listed", source = "doc/team-associated/sc6-4-manual-2023c" },
+]
+needs = [
+  { item = "esc", source = "doc/team-associated/70009-page", note = "1:10 scale electronic speed control (27016, 27017)" },
+  { item = "battery", source = "doc/team-associated/70009-page", note = "2-cell LiPo radio-controlled car battery pack pack (#27382, 27383, 27318)" },
+  { item = "charger", source = "doc/team-associated/70009-page", note = "Radio control battery charger (Reedy charger #27203)" },
+  { item = "radio", source = "doc/team-associated/70009-page", note = "2-channel RC car surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/70009-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/70009-page", note = "Steering servo" },
+  { item = "pinion", source = "doc/team-associated/70009-page", note = "Pinion gear (48 pitch)" },
+  { item = "body", source = "doc/team-associated/70009-page", note = "Polycarbonate RC short course body (#9876)" },
+  { item = "paint", source = "doc/team-associated/70009-page", note = "Spray paint for polycarbonate body" },
+  { item = "wheels", source = "doc/team-associated/70009-page", note = "1:10 scale 12mm hex short course wheels (#71040)" },
+  { item = "tyres", source = "doc/team-associated/70009-page", note = "1:10 scale short course tires and foam inserts" },
+  { item = "glue", source = "doc/team-associated/70009-page", note = "Cyanoacrylate (CA) glue for tires and wheels (#1597)" },
 ]
