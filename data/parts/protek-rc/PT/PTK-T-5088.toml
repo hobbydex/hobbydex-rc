@@ -2,9 +2,15 @@ id = "part/protek-rc/PTK-T-5088"
 brand = "brand/protek-rc"
 number = "PTK-T-5088"
 name = "3x14mm \"Grade 5\" Titanium Flat Head Hex Screw (4)"
+seen_by = "2021-05-11"
+seen_by_source = "https://web.archive.org/web/20210511165648/https://www.amainhobbies.com/protek-rc-3x14mm-grade-5-titanium-flat-head-hex-screw-4-ptk-t-5088/p1276424"
 category = "screw"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-3x14mm-grade-5-titanium-flat-head-hex-screw-4-ptk-t-5088/p1276424" },
 ]
 pack_qty = 4
 pack_qty_basis = "name"
+material = "titanium"
+equivalent_to = [
+  { spec = "spec/screw/m3x14-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

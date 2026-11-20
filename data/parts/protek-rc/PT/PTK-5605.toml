@@ -2,9 +2,17 @@ id = "part/protek-rc/PTK-5605"
 brand = "brand/protek-rc"
 number = "PTK-5605"
 name = "Silicone Hookup Wire (Black) (1 Meter) (16AWG)"
+seen_by = "2016-04-15"
+seen_by_source = "https://web.archive.org/web/20160415145428/http://www.amainhobbies.com:80/rc-cars-trucks/protek-rc-16awg-black-silicone-hookup-wire-1-meter-ptk-5605/p14628"
 category = "wire"
 category_source = "curated"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-silicone-hookup-wire-black-1-meter-16awg-ptk-5605/p1451098?v=14628" },
 ]
 color = "black"
+equivalent_to = [
+  { spec = "spec/wire/16awg", match = "functional" },
+]
+wire_awg = 16
+insulation = "silicone"
+length_mm = 1000

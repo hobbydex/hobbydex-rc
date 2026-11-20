@@ -2,6 +2,8 @@ id = "part/protek-rc/PTK-5197"
 brand = "brand/protek-rc"
 number = "PTK-5197"
 name = "1S LiPo Transmitter Battery (Sanwa M17/MT-44/MT-5) (3.7V/3000mAh)"
+seen_by = "2017-07-01"
+seen_by_source = "https://web.archive.org/web/20170701191030/https://www.amainhobbies.com/protek-rc-1s-lipo-transmitter-battery-pack-3.7v-3000mah-sanwa-mt44-ptk-5197/p618221"
 category = "battery"
 category_source = "curated"
 links = [
@@ -10,3 +12,8 @@ links = [
 chemistry = "lipo"
 cells = 1
 voltage = 3.7
+capacity_mah = 3000
+weight_g = 52
+equivalent_to = [
+  { spec = "spec/battery/lipo-1s-3000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]

@@ -7,3 +7,8 @@ category_source = "curated"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-heavy-duty-xt60-charge-lead-male-xt60-to-female-xt90-12awg-ptk-5360/p1483901" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/12awg", match = "functional" },
+]
+wire_awg = 12
+connectors = ["XT60", "XT90"]
