@@ -210,6 +210,35 @@ def test_twin_parts(ratchet, db):
     ratchet("twin-parts", rows)
 
 
+
+PAGE_STEM = re.compile(r"/([^/?#]+?)(?:\.(?:html?|php|aspx))?/?(?:[?#].*)?$")
+
+
+def test_part_page_of_namesake(ratchet, db):
+    """A part that links the page named after another item number of its brand (/products/G0447.html) and carries
+    that item's name or barcode took the page's own item for its own (#3583: G0448 named and barcoded as G0447):
+    take the name, category and barcode from the part's own row on the page."""
+    parts = db.execute("""SELECT id, json_extract(data, '$.brand'), upper(json_extract(data, '$.number')),
+          json_extract(data, '$.name'), json_extract(data, '$.gtin') FROM records
+        WHERE kind = 'part' AND truthy(json_extract(data, '$.number'))""").fetchall()
+    by_number = {(brand, num): (pid, name, gtin) for pid, brand, num, name, gtin in parts}
+    own = {pid: (brand, name, gtin) for pid, brand, _, name, gtin in parts}
+    rows = set()
+    for pid, url in db.execute("SELECT owner, url FROM links WHERE owner_kind = 'part' AND url IS NOT NULL"):
+        m = PAGE_STEM.search(url)
+        if not m or pid not in own:
+            continue
+        brand, name, gtin = own[pid]
+        other = by_number.get((brand, m.group(1).upper()))
+        if not other or other[0] == pid:
+            continue
+        if name is not None and name == other[1]:
+            rows.add((pid, f"named as {other[0]}, whose page it links ({url})"))
+        elif gtin and gtin == other[2]:
+            rows.add((pid, f"barcode of {other[0]}, whose page it links ({url})"))
+    ratchet("part-page-of-namesake", sorted(rows))
+
+
 # a part of category servo that is a servo itself (not a horn, saver, case, gear set or mount): the name says servo and
 # no accessory word, or it states a figure (torque, speed or performance)
 SERVO_ACCESSORY = re.compile(r"(?i)horn|saver|\barm\b|case|gear|mount|tape|holder|plate|bracket|cover|screw|extension|lead|"
