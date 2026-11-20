@@ -76,9 +76,31 @@ class Facts(unittest.TestCase):
         p = {"category": "servo", "name": "Servo 1", "torque_kgcm": 10,
              "unstated": {"torque": PAGE, "speed": PAGE, "size": "a page"}}
         self.assertEqual(rf.marker_problems(p, REG, {}), [
-            "unstated size: source 'a page' is not an https URL or a doc id",
+            "unstated size: source 'a page' is not an https URL, a doc id or a page of the brand's http-only website",
             "unstated speed: not a required fact of category servo"])
         self.assertEqual(rf.marker_problems({"category": "servo", "unstated": []}, REG, {}), ["unstated is not a table of fact = source"])
+
+    def test_http_only_maker_site(self):
+        """An http page is a marker's source only on the host of the part's brand's own website, and only when the
+        brand records that site as http only."""
+        brand = {"id": "brand/axon", "website": "http://www.team-axon.com/", "website_http_only": True}
+        page = "http://www.team-axon.com/products/pinion/pinion.html"
+        self.assertTrue(rf.valid_source(page, brand))
+        self.assertTrue(rf.valid_source("http://team-axon.com/x.html", brand))
+        self.assertFalse(rf.valid_source(page))
+        self.assertFalse(rf.valid_source("http://www.other.example/x.html", brand))
+        self.assertFalse(rf.valid_source(page, {**brand, "website_http_only": False}))
+        self.assertFalse(rf.valid_source(page, {k: v for k, v in brand.items() if k != "website_http_only"}))
+        self.assertFalse(rf.valid_source(page, {**brand, "website": "https://www.team-axon.com/"}))
+        p = {"category": "servo", "name": "Servo 1", "brand": "brand/axon", "torque_kgcm": 10}
+        with self.assertRaises(ValueError):
+            rf.mark_unstated(dict(p), page, REG, {})
+        self.assertEqual(rf.mark_unstated(p, page, REG, {}, brand=brand), ["size"])
+        self.assertEqual(rf.marker_problems(p, REG, {}, {"brand/axon": brand}), [])
+        self.assertEqual(rf.marker_problems(p, REG, {}), [
+            f"unstated size: source {page!r} is not an https URL, a doc id or a page of the brand's http-only website"])
+        q = {"category": "servo", "name": "Servo 2", "brand": "brand/axon"}
+        self.assertEqual(rf.mark_unchecked(q, page, REG, {}, facts=["torque"], brand=brand), ["torque"])
 
     def test_stale_marker_dropped(self):
         p = {"category": "servo", "name": "Servo 1", "torque_kgcm": 10, "unstated": {"torque": PAGE, "size": PAGE}}

@@ -610,6 +610,17 @@ def check_website_archive(docs, errors):
             errors.append(f"{path}: website_note should be \"domain now <parked|for sale|reused|gone>, archived copy\" "
                           f"with website_archive, got {note!r}")
 
+def check_website_http_only(docs, errors):
+    """`website_http_only` (docs/schema.md "brand") is true only, beside an http:// website: the maker's own site
+    serves no https, so its pages may be the source of a required-fact marker."""
+    for path, kind, d in docs:
+        if kind != "brand" or "website_http_only" not in d:
+            continue
+        if d["website_http_only"] is not True:
+            errors.append(f"{path}: website_http_only is true or left out, got {d['website_http_only']!r}")
+        elif not str(d.get("website") or "").startswith("http://"):
+            errors.append(f"{path}: website_http_only needs an http:// website, got {d.get('website')!r}")
+
 WIKIDATA_ID = re.compile(r"Q[1-9][0-9]*")
 
 def check_wikidata(docs, errors):
@@ -2034,6 +2045,7 @@ def main():
     check_wikidata(docs, errors)
     check_depicts_basis(docs, errors)
     check_website_archive(docs, errors)
+    check_website_http_only(docs, errors)
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
     check_protocols(docs, ids, errors)

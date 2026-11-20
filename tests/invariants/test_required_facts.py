@@ -18,6 +18,7 @@ def _status(db):
     """({(category, fact): [(part id, problem)]} of the parts that lack a fact, the parts with an `unstated` table that
     is wrong, the parts with a stale marker), from one pass over the parts of the registry's categories."""
     specs = {i: json.loads(d) for i, d in db.execute("SELECT id, data FROM records WHERE kind = 'spec'")}
+    brands = {i: json.loads(d) for i, d in db.execute("SELECT id, data FROM records WHERE kind = 'brand'")}
     cats = sorted(REGISTRY)
     out = {pair: [] for pair in PAIRS}
     bad, stale = [], []
@@ -25,7 +26,7 @@ def _status(db):
             OR json_type(data, '$.unstated') IS NOT NULL OR json_type(data, '$.unchecked') IS NOT NULL)"""
     for pid, d in db.execute(q, cats):
         p = json.loads(d)
-        bad += [(pid, m) for m in rf.marker_problems(p, REGISTRY, specs)]
+        bad += [(pid, m) for m in rf.marker_problems(p, REGISTRY, specs, brands)]
         stale += [(pid, f"marked {fid}, but the fact is set") for fid in rf.stale_markers(p, REGISTRY, specs)]
         cat = REGISTRY.get(p.get("category"))
         for fid in rf.missing(p, REGISTRY, specs):
@@ -44,7 +45,8 @@ def test_required_fact(ratchet, db, category, fact):
 
 def test_required_fact_unstated_valid(hard, db):
     """A part's `unstated` and `unchecked` tables name required facts of its category (data/required-facts.toml), each
-    with the https page or doc id it cites, and no fact is in both."""
+    with the https page or doc id it cites (an http page only on the brand's own website when the brand records it
+    as http only: `website_http_only = true`), and no fact is in both."""
     hard(_status(db)[1], name="required-fact-unstated-valid")
 
 
