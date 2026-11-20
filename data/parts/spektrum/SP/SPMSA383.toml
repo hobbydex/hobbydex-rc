@@ -10,8 +10,14 @@ links = [
 gtin = "660132986247"
 category = "servo"
 weight_g = 18
-dimensions_mm = [676, 325, 765]
+notes = "Horizon's page states 676 x 325 x 765 mm as the product size: too large for an 18 g sub-micro servo, so it is the package, not the case; the case size is not stated."
 waterproof = false
 gear_material = "metal"
 speed_s = 0.13
 voltage = 5
+performance = [
+  { voltage = 5, speed_s = 0.13, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/mini", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Mini stated by the maker's page" },
+]

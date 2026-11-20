@@ -35,3 +35,6 @@ color = "black"
 notes = "Colour read from the maker's product photo."
 name_source = "manufacturer"
 former_names = ["3x10mm(Cap)"]
+equivalent_to = [
+  { spec = "spec/screw/m3x10-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

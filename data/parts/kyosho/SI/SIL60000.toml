@@ -1,11 +1,11 @@
 id = "part/kyosho/SIL60000"
 brand = "brand/kyosho"
 number = "SIL60000"
-name = "Silicone Oil (60000)"
+name = "Silicone OIL #60000 (40cc)"
 gtin = "4955439860618"
 seen_by = "2006"
 seen_by_source = "doc/kyosho/31352-infst-r-m"
-name_source = "manual"
+name_source = "manufacturer"
 documents = ["doc/kyosho/30903-ep-fazer-aston-bd01", "doc/kyosho/31352-infst-r-m", "doc/kyosho/v-one-r4-151117"]
 category = "oil-grease"
 fits = [
@@ -14,3 +14,8 @@ fits = [
 equivalent_to = [
   { spec = "spec/oil/silicone-60000cst", match = "close", notes = "Viscosity stated as a bare 60000, read as cSt; measuring temperature not given" },
 ]
+former_names = ["Silicone Oil (60000)"]
+links = [
+  { site = "Kyosho (Internet Archive)", url = "https://web.archive.org/web/20200922014912/https://rc.kyosho.com/en/sil60000.html", kind = "archive" },
+]
+volume_ml = 40

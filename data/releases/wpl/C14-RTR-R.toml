@@ -5,13 +5,14 @@ number = "C14-RTR-R"
 name = "C14 RTR, red"
 kind = "rtr"
 status = "released"
-announced = "2018-06-16"
-announced_source = "https://www.youtube.com/watch?v=QtvWoK1PGLk"
+seen_by = "2018-06-16"
+seen_by_source = "https://www.youtube.com/watch?v=QtvWoK1PGLk"
 color = "red"
 notes = "Release year unknown; C14 in WPL's store (read 2026-10-14)"
 links = [
   { site = "WPL RC", url = "https://www.wpl-rc.com/products/c14-rtr" },
 ]
+range = "wpl/c14-rtr-colours"
 contains = [
   { part = "part/wpl/A035", role = "option", source = "doc/wpl/store" },
   { part = "part/wpl/A035-B", role = "option", source = "doc/wpl/store" },
@@ -67,4 +68,4 @@ contains = [
   { part = "part/wpl/SPG.AI", role = "listed", source = "doc/wpl/store" },
   { part = "part/wpl/SPM.MAC", role = "option", source = "doc/wpl/store" },
 ]
-documents = ["doc/wpl/C14-RTR-R-page", "doc/wpl/c14-rtr-eng", "doc/wpl/youtube-QtvWoK1PGLk"]
+documents = ["doc/wpl/C14-RTR-R-page", "doc/wpl/c14-rtr-eng"]

@@ -22,3 +22,8 @@ equivalent_to = [
 ]
 material = "steel"
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/db950sw-wide-voltage-steel-gear-25t-digital-brushless-servo/" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 35, torque_ozin = 486, speed_s = 0.23, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 6, torque_kgcm = 40, torque_ozin = 555, speed_s = 0.17, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 7.4, torque_kgcm = 40, torque_ozin = 555, speed_s = 0.14, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

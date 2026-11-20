@@ -2,9 +2,15 @@ id = "part/protek-rc/PTK-T-5089"
 brand = "brand/protek-rc"
 number = "PTK-T-5089"
 name = "3x15mm \"Grade 5\" Titanium Button Head Hex Screw (4)"
+seen_by = "2021-06-22"
+seen_by_source = "https://web.archive.org/web/20210622015447/https://www.amainhobbies.com/protek-rc-3x15mm-grade-5-titanium-button-head-hex-screw-4-ptk-t-5089/p-qqqetzkqbbzrqctz"
 category = "screw"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-3x15mm-grade-5-titanium-button-head-hex-screw-4-ptk-t-5089/p1276425" },
 ]
 pack_qty = 4
 pack_qty_basis = "name"
+material = "titanium"
+equivalent_to = [
+  { spec = "spec/screw/m3x15-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

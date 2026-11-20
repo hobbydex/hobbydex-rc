@@ -1,0 +1,17 @@
+id = "part/mofo/871"
+brand = "brand/mofo"
+number = "871"
+name = "High Speed Bearings and Kits for scx24 / ax24 (3 x 6 x 2.5mm (1 Pair))"
+category = "bearing"
+category_source = "curated"
+applies_to = "scx24, ax24"
+fits = [
+  { kit = "kit/axial/scx24", type = "direct", source = "doc/mofo/shop" },
+  { kit = "kit/axial/ax24", type = "direct", source = "doc/mofo/shop" },
+]
+links = [
+  { site = "Mofo RC", url = "https://moforc.com/products/bearings-high-speed-crv-steel-for-scx24-shielded-self-lubed?variant=50954379821113" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/3x6x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

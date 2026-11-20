@@ -22,3 +22,8 @@ documents = ["doc/power-hd/wb-150kg-spec-sheet"]
 links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=260" },
 ]
+performance = [
+  { voltage = 16.8, torque_kgcm = 100, torque_ozin = 1388.7, speed_s = 0.13, source = "doc/power-hd/website" },
+  { voltage = 21, torque_kgcm = 122, torque_ozin = 1694.3, speed_s = 0.11, source = "doc/power-hd/website" },
+  { voltage = 25.2, torque_kgcm = 150, torque_ozin = 2083.1, speed_s = 0.09, source = "doc/power-hd/website" },
+]

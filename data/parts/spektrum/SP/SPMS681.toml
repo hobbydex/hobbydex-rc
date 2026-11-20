@@ -13,3 +13,12 @@ material = "brass"
 dimensions_mm = [40, 20, 40]
 torque_kgcm = 7.2
 voltage = 6
+performance = [
+  { voltage = 6, torque_kgcm = 7.2, torque_ozin = 100, speed_s = 0.11, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 7.4, torque_kgcm = 8.6, torque_ozin = 120, speed_s = 0.1, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 8.4, torque_kgcm = 9.3, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+speed_s = 0.11
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]

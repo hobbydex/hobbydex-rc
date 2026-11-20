@@ -49,8 +49,8 @@ DEPICTS_COLOUR_WORDS = {
 # real vehicle makes a release or body shell may depict (docs/schema.md "release", depicts); curated, add a make here first
 VEHICLE_MAKES = {
     "Abarth", "Acura", "Alfa Romeo", "Alpine", "Aston Martin", "Audi", "BMW", "Bentley", "Bugatti", "Buggyra", "Buick", "Cadillac",
-    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Fendt", "Ferrari", "Fiat", "Ford",
-    "Freightliner", "GMC", "Hino", "Honda", "Hummer", "Hyundai", "International", "Isuzu", "Iveco", "Jaguar", "Jeep", "KTM",
+    "Can-Am", "Caterpillar", "Chevrolet", "Citroen", "DAF", "Datsun", "DeLorean", "Dodge", "Ducati", "Faun", "Fendt", "Ferrari", "Fiat", "Ford",
+    "Freightliner", "GMC", "Hino", "Hitachi", "Honda", "Hummer", "Hyundai", "International", "Isuzu", "Iveco", "Jaguar", "Jeep", "KTM",
     "Kawasaki", "Kenworth", "Komatsu", "Lamborghini", "Lancia", "Land Rover", "Lexus", "Liebherr", "Lotus", "MAN", "Mack",
     "Maserati", "Mazda", "McLaren", "Mercedes-Benz", "Mini", "Mitsubishi", "Nissan", "Opel", "Pagani", "Peterbilt", "Peugeot",
     "Plymouth", "Polaris", "Pontiac", "Porsche", "Ram", "Renault", "Scania", "Seat", "Shelby", "Skoda", "Subaru", "Suzuki",
@@ -88,6 +88,7 @@ ENUMS = {
     "needs.item": {"radio", "receiver", "servo", "esc", "motor", "engine", "battery", "charger", "pinion", "tyres", "wheels", "body", "paint", "glue", "fuel", "glow-starter", "tools"},
     "doc.kind": {"manual", "part_list", "exploded_view", "supplement", "catalog", "setup_sheet", "product_page", "news", "owner_report", "video"},
     "equivalent_to.match": {"exact", "functional", "close"},
+    "equivalent_to.basis": {"maker", "dimensions"},   # why a servo links its size spec (docs/schema.md "Servos")
     "fits.type": {"direct", "replaces", "modification", "family"},
     "rebrand_of.parts": {"interchangeable", "partly", "unknown"},
     "rebrand_of.certainty": {"likely"},   # absent = confirmed (maker statement, matching part numbers or an owner's statement); likely = specs or looks only (docs/schema.md "rebrand_of")
@@ -130,6 +131,48 @@ ENUMS["release.category"] = ENUMS["kit.category"]   # a release's kit type overr
 # servo spec fields (docs/schema.md "Servos"): bearings, bearing_kind, dead_band_us, frequency_hz
 SERVO_FIELDS = ("bearings", "bearing_kind", "dead_band_us", "frequency_hz")
 SERVO_BEARING_KIND = {"ball", "bushing"}
+PERFORMANCE_KEYS = {"voltage", "torque_kgcm", "torque_ozin", "speed_s", "source"}   # a servo's figures at one voltage (docs/schema.md "Servos")
+
+
+def check_performance(path, d):
+    """A servo's performance rows: one per voltage (3..30 V, ascending), a torque (kg-cm) or a speed (s per 60 degrees)
+    each, the document that states them; the top-level torque_kgcm and speed_s agree with the row at `voltage` (a torque to 0.05:
+    a headline torque converted from oz-in may be rounded to one decimal)."""
+    out = []
+    pf = d.get("performance")
+    if pf is None:
+        return out
+    if d.get("category") != "servo":
+        return [f"{path}: performance only on servos (category servo)"]
+    num = lambda x, lo, hi: isinstance(x, (int, float)) and not isinstance(x, bool) and lo <= x <= hi
+    if not (isinstance(pf, list) and pf and all(isinstance(r, dict) for r in pf)):
+        return [f"{path}: performance should be a non-empty list of {{ voltage, torque_kgcm, torque_ozin, speed_s, source }}"]
+    volts = []
+    for i, r in enumerate(pf):
+        extra = sorted(set(r) - PERFORMANCE_KEYS)
+        if extra:
+            out.append(f"{path}: performance[{i}] has {', '.join(extra)}; a row holds only {', '.join(sorted(PERFORMANCE_KEYS))}")
+        if not num(r.get("voltage"), 3, 30):
+            out.append(f"{path}: performance[{i}].voltage {r.get('voltage')!r} should be the volts the figures are stated at (3..30)")
+        else:
+            volts.append(r["voltage"])
+        if "torque_kgcm" not in r and "speed_s" not in r:
+            out.append(f"{path}: performance[{i}] needs torque_kgcm or speed_s")
+        if "torque_kgcm" in r and not num(r["torque_kgcm"], 0.1, 500):
+            out.append(f"{path}: performance[{i}].torque_kgcm {r['torque_kgcm']!r} should be kg-cm (0.1..500)")
+        if "torque_ozin" in r and not (num(r["torque_ozin"], 1, 7000) and "torque_kgcm" in r):
+            out.append(f"{path}: performance[{i}].torque_ozin {r['torque_ozin']!r} should be the stated oz-in (1..7000), beside torque_kgcm")
+        if "speed_s" in r and not num(r["speed_s"], 0.005, 2):
+            out.append(f"{path}: performance[{i}].speed_s {r['speed_s']!r} should be seconds per 60 degrees (0.005..2)")
+        if not isinstance(r.get("source"), str):
+            out.append(f"{path}: performance[{i}] needs source, the document that states the figures")
+    if volts != sorted(set(volts)):
+        out.append(f"{path}: performance rows should have one voltage each, in ascending order")
+    at = next((r for r in pf if r.get("voltage") == d["voltage"]), None) if d.get("voltage") is not None else None
+    for f in ("torque_kgcm", "speed_s"):
+        if at and f in at and f in d and not (num(d[f], 0, 1e9) and num(at[f], 0, 1e9) and abs(d[f] - at[f]) <= (0.0501 if f == "torque_kgcm" else 1e-9)):   # a torque rounded to 0.1
+            out.append(f"{path}: {f} {d[f]!r} differs from the performance row at {d['voltage']} V ({at[f]!r})")
+    return out
 ESC_PROP_FIELDS = ("motor_type", "bec_v", "bec_a", "motor_limit_t", "motor_limit_kv", "nimh_cells", "programming", "resistance_mohm")   # docs/schema.md "ESCs"
 # waterproof: the maker's wording on these categories; scales: the vehicle scales a maker names for an electronic part (docs/schema.md "scales")
 WATERPROOF_CATEGORIES = ("esc", "motor", "servo", "radio")
@@ -307,6 +350,18 @@ def categories():
     """Part categories are the files in data/categories (category/<slug>)."""
     d = os.path.join(ROOT, "categories")
     return {f[:-5] for f in os.listdir(d) if f.endswith(".toml")} if os.path.isdir(d) else set()
+
+def check_required_facts(errors):
+    """data/required-facts.toml (docs/schema.md "Required facts"): it parses, and names part categories that exist."""
+    import required_facts
+    try:
+        reg = required_facts.load(os.path.dirname(ROOT))
+    except ValueError as e:
+        errors.append(f"{os.path.join(ROOT, 'required-facts.toml')}: {e}")
+        return
+    for cat in sorted(set(reg) - categories()):
+        errors.append(f"{os.path.join(ROOT, 'required-facts.toml')}: [{cat}] is not a part category (data/categories)")
+
 
 def check_case_clashes(errors):
     """Two paths under data/ or art/ that differ only in case (GE/ and Ge/, SG-M3x8 and
@@ -503,6 +558,29 @@ def check_vehiclesdb(docs, errors):
             errors.append(f"{path}: depicts.vehiclesdb of {make!r}, whose make has no vehiclesdb link")
         elif link.group(1) != m.group(2):
             errors.append(f"{path}: depicts.vehiclesdb names make {m.group(2)!r}, the make's VehiclesDB make is {link.group(1)!r}")
+
+DEPICTS_BASES = {"page", "shared-code", "model-code"}
+
+def check_depicts_basis(docs, errors):
+    """How a depicts was found (docs/schema.md "release", depicts): basis "page" (a page about the release names the make
+    with its model code; source = that page) is stated; match "likely" goes with basis "shared-code" (via = a release that
+    states the same make and model) or "model-code" (source = the make's own model page). Owner 2026-11-19."""
+    depicts = {d.get("id"): d.get("depicts") for _, kind, d in docs if kind == "release"}
+    for path, kind, d in docs:
+        dp = d.get("depicts") if kind in ("release", "part") else None
+        if not isinstance(dp, dict) or not ({"match", "basis", "via", "source"} & set(dp)):
+            continue
+        match, basis = dp.get("match"), dp.get("basis")
+        if match not in (None, "likely") or basis not in DEPICTS_BASES or (match == "likely") != (basis != "page"):
+            errors.append(f"{path}: depicts.basis should be \"page\" (stated, no match) or, with match = \"likely\", \"shared-code\" or \"model-code\"; got match {match!r}, basis {basis!r}")
+            continue
+        src, via = dp.get("source"), dp.get("via")
+        if basis in ("page", "model-code") and not (isinstance(src, str) and src.startswith("https://") and via is None):
+            errors.append(f"{path}: depicts basis {basis!r} needs source, the https page that names the {'make with the code' if basis == 'page' else 'model'}, and no via")
+        elif basis == "shared-code":
+            other = depicts.get(via) if isinstance(via, str) else None
+            if src is not None or not isinstance(other, dict) or other.get("match") or (other.get("make"), other.get("model")) != (dp.get("make"), dp.get("model")):
+                errors.append(f"{path}: depicts basis \"shared-code\" needs via, a release whose stated depicts names the same make and model, and no source; got via {via!r}")
 
 WEBSITE_ARCHIVE = re.compile(r"https://web\.archive\.org/web/(\d{14})/(https?://\S+)")
 WEBSITE_NOTE = re.compile(r"domain now (parked|for sale|reused|gone), archived copy")
@@ -1173,7 +1251,7 @@ def main():
                 errors.append(f"{path}: parse error: {e}")
                 continue
             rel = os.path.relpath(path, ROOT)
-            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml", "legacy-part-supersedes.toml", "release-twins.toml"):
+            if rel in ("retired.toml", "confirmed-distinct.toml", "reviewed-distinct.toml", "usa-spare-reviewed.toml", "legacy-part-supersedes.toml", "release-twins.toml", "required-facts.toml"):
                 continue   # retired ids and confirmed pairs, checked below; reviewed numbers are audit-only (audit.py)
             top = rel.split(os.sep)[0]
             kind = next((k for k, v in KINDS.items() if v["dir"] == top), None)
@@ -1548,7 +1626,7 @@ def main():
         if ve is not None:
             if kind == "part" and d.get("category") != "body":
                 errors.append(f"{path}: depicts only on a release or a body shell (category body)")
-            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed", "vehiclesdb", "wikidata", "wikipedia"}
+            elif not (isinstance(ve, dict) and set(ve) <= {"make", "model", "year", "licensed", "vehiclesdb", "wikidata", "wikipedia", "match", "basis", "via", "source"}
                       and ("make" not in ve or ve["make"] in VEHICLE_MAKES)
                       and isinstance(ve.get("model"), str) and ve["model"].strip() == ve["model"] and ve["model"]
                       and (("year" not in ve) or (isinstance(ve["year"], int) and not isinstance(ve["year"], bool) and 1885 <= ve["year"] <= datetime.date.today().year + 1))
@@ -1659,6 +1737,8 @@ def main():
                 errors.extend(check_charger(path, d))
         if kind == "part" and any(k in d for k in SERVO_FIELDS) and d.get("category") != "servo":
             errors.append(f"{path}: {', '.join(k for k in SERVO_FIELDS if k in d)} only on servos (category servo)")
+        if kind == "part":
+            errors.extend(check_performance(path, d))
         if kind == "part" and d.get("category") == "servo":
             bn, bk, db, fq = (d.get(k) for k in SERVO_FIELDS)
             if bn is not None and not (isinstance(bn, int) and not isinstance(bn, bool) and 1 <= bn <= 10):
@@ -1952,6 +2032,7 @@ def main():
     check_makes(docs, errors)
     check_vehiclesdb(docs, errors)
     check_wikidata(docs, errors)
+    check_depicts_basis(docs, errors)
     check_website_archive(docs, errors)
     check_dealer_links(docs, errors)
     check_connectors(docs, ids, errors)
@@ -1963,6 +2044,7 @@ def main():
     check_former_names(docs, errors)
     check_part_category(docs, errors)
     check_release_twins(docs, ids, errors)
+    check_required_facts(errors)
     check_case_clashes(errors)
     print("entities:", ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     if errors:

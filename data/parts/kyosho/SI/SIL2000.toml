@@ -1,7 +1,8 @@
 id = "part/kyosho/SIL2000"
 brand = "brand/kyosho"
 number = "SIL2000"
-name = "Silicone Oil (2000)"
+name = "Silicone OIL #2000 (40cc)"
+gtin = "4955439758366"
 seen_by = "2017-10-31"
 seen_by_source = "https://web.archive.org/web/20171031203136/http://rc.kyosho.com/media/catalog/product/cache/4/small_image/500x375/9df78eab33525d08d6e5fb8d27136e95/_/s/_sil2000.jpg"
 fits = [
@@ -16,3 +17,9 @@ equivalent_to = [
   { spec = "spec/oil/silicone-2000cst", match = "close", notes = "Viscosity stated as a bare 2000, read as cSt; measuring temperature not given" },
 ]
 documents = ["doc/kyosho/30027-tf7-7-parts-list-v01", "doc/kyosho/31581-fw05r-p", "doc/kyosho/31582-fw05r-foam-p"]
+name_source = "manufacturer"
+former_names = ["Silicone Oil (2000)"]
+links = [
+  { site = "Kyosho (Internet Archive)", url = "https://web.archive.org/web/20200922022533/https://rc.kyosho.com/en/sil2000.html", kind = "archive" },
+]
+volume_ml = 40

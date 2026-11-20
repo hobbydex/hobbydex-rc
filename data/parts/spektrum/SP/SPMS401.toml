@@ -9,4 +9,7 @@ links = [
 ]
 gtin = "605482553312"
 category = "servo"
-dimensions_mm = [102, 51, 14]
+notes = "Horizon's page states 102 x 51 x 14 mm as the product size: too large for a mini servo, so it is the package, not the case; the case size is not stated."
+equivalent_to = [
+  { spec = "spec/servo/mini", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Mini stated by the maker's page" },
+]

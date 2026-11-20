@@ -10,6 +10,7 @@ pack_qty = 4
 pack_qty_basis = "page"
 fits = [
   { kit = "kit/kyosho/scorpion-xxl", type = "replaces", source = "doc/kyosho/30972-scorpion-xxl-convertible-spop" },
+  { kit = "kit/kyosho/scorpion-xxl", type = "replaces", replaces = "part/kyosho/SX021", source = "doc/kyosho/30972-scorpion-xxl-convertible-spop", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "shock"
 documents = ["doc/kyosho/sxw010-product-page"]

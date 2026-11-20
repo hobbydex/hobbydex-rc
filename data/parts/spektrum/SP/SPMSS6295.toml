@@ -15,3 +15,9 @@ voltage_range = "6.0V - 8.4V"
 torque_kgcm = 30
 voltage = 8.4
 waterproof = true
+performance = [
+  { voltage = 8.4, torque_kgcm = 30, torque_ozin = 416, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard-23t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 23T spline stated by the maker's page" },
+]
