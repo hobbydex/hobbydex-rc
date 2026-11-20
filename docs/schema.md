@@ -752,8 +752,19 @@ case, a motor rotor: the file's `exclude_name`) carry none.
 page or the doc id that was read, `unstated = { torque = "https://maker.example/servo-1", speed = "https://maker.example/servo-1" }`.
 Importers set it when the page they read gives no value (tools/required_facts.py `mark_unstated(part, page, ...)`, or
 the descriptor's `[required_facts]` in hobbydex-tools). It names only facts of the part's category (required-fact-unstated-valid);
-whoever fills a fact drops its marker (`drop_stale`; a stale one is reported as required-fact-unstated-stale). The invariants count, per category and fact, the parts that
-lack the fact and have no marker (docs/invariants.md); a change may only lower those counts.
+whoever fills a fact drops its marker (`drop_stale`; a stale one is reported as required-fact-unstated-stale).
+
+`unchecked` (optional, part) records a required fact a part lacks whose page nobody has looked at for it yet: the same
+table of fact id to the part's own page, `unchecked = { offset = "https://maker.example/wheel-1" }`. The refresh's
+required-facts net in hobbydex-tools writes it (`mark_unchecked`) for a fact a run left without value or marker, so the
+refresh stays green without claiming the page states nothing. The facts-on-pages sweep still looks the fact up on the
+page: a value there is an importer gap to fix (a fact-unmapped item); a page read for the category that gives no value
+turns the marker into `unstated` with the same page (`confirm_unstated`, applied by the next refresh of the brand), and
+so does an importer that reads the page and marks the fact (`mark_unstated`). A fact is never in both tables
+(required-fact-unstated-valid); a filled fact drops it like an `unstated` one.
+
+The invariants count, per category and fact, the parts that lack the fact and have neither marker (docs/invariants.md);
+a change may only lower those counts.
 
 ## spec
 

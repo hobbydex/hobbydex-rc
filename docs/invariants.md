@@ -43,7 +43,7 @@ fails a change that adds fallback parts and lists them by id and name, so the cl
 Genuine misc parts never count.
 
 Required facts (`test_required_facts.py`): per part category and fact of data/required-facts.toml, a blocking
-ratchet `fact-<category>-<fact>` counts the parts that lack the fact and do not mark it `unstated` (docs/schema.md
+ratchet `fact-<category>-<fact>` counts the parts that lack the fact and mark it neither `unstated` nor `unchecked` (docs/schema.md
 "Required facts"); `required-fact-unstated-valid` (hard) checks the markers. A new category or fact in the file needs
 its count in baseline.toml (the run names it).
 

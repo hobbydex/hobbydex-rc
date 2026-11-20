@@ -90,6 +90,45 @@ class Facts(unittest.TestCase):
         rf.drop_stale(p, REG, {})
         self.assertNotIn("unstated", p)
 
+    def test_unchecked_is_marked_but_not_unstated(self):
+        p = {"category": "servo", "name": "Servo 1"}
+        self.assertEqual(rf.mark_unchecked(p, PAGE, REG, {}, facts=["size"]), ["size"])
+        self.assertEqual(p["unchecked"], {"size": PAGE})
+        self.assertEqual(rf.status(p, REG, {}), {"torque": "missing", "size": "unchecked"})
+        self.assertEqual(rf.missing(p, REG, {}), ["torque"])   # the ratchets count it as marked
+        self.assertEqual(rf.mark_unchecked(p, PAGE, REG, {}), ["torque"])
+        self.assertEqual(rf.marker_problems(p, REG, {}), [])
+        with self.assertRaises(ValueError):
+            rf.mark_unchecked({"category": "servo", "name": "s"}, "http://x", REG, {})
+
+    def test_confirm_unstated(self):
+        p = {"category": "servo", "name": "Servo 1", "unchecked": {"torque": PAGE, "size": PAGE}}
+        self.assertEqual(rf.confirm_unstated(p, ["size"], source="https://other.example/"), [])
+        self.assertEqual(rf.confirm_unstated(p, ["size", "speed"]), ["size"])
+        self.assertEqual(p, {"category": "servo", "name": "Servo 1", "unchecked": {"torque": PAGE}, "unstated": {"size": PAGE}})
+        self.assertEqual(rf.confirm_unstated(p, ["torque"], source=PAGE), ["torque"])
+        self.assertNotIn("unchecked", p)
+        self.assertEqual(rf.status(p, REG, {}), {"torque": "unstated", "size": "unstated"})
+
+    def test_mark_unstated_takes_over_unchecked(self):
+        p = {"category": "servo", "name": "Servo 1", "unchecked": {"torque": PAGE}}
+        self.assertEqual(rf.mark_unstated(p, "doc/maker/catalogue", REG, {}), ["torque", "size"])
+        self.assertEqual(p["unstated"], {"torque": "doc/maker/catalogue", "size": "doc/maker/catalogue"})
+        self.assertNotIn("unchecked", p)
+
+    def test_unchecked_problems_and_stale(self):
+        p = {"category": "servo", "name": "Servo 1", "torque_kgcm": 10,
+             "unstated": {"size": PAGE}, "unchecked": {"size": PAGE, "torque": PAGE, "speed": "x"}}
+        self.assertEqual(rf.marker_problems(p, REG, {}), [
+            "unchecked speed: not a required fact of category servo",
+            "unchecked size: also marked unstated"])
+        self.assertEqual(rf.marker_problems({"category": "servo", "unchecked": "x"}, REG, {}), ["unchecked is not a table of fact = source"])
+        self.assertEqual(rf.stale_markers(p, REG, {}), ["torque"])
+        p["equivalent_to"] = [{"spec": "spec/servo/mini-25t"}]
+        self.assertEqual(rf.drop_stale(p, REG, {}), ["size", "torque"])
+        self.assertNotIn("unstated", p)
+        self.assertEqual(p["unchecked"], {"speed": "x"})
+
     def test_bad_registry(self):
         for bad in ('[servo]\nfacts = []', '[servo]\nfacts = [{ fact = "Torque", any = ["x"] }]',
                     '[servo]\nfacts = [{ fact = "t", any = [] }]', '[servo]\nfacts = [{ fact = "t", any = ["x"], when = { a = "b" } }]',

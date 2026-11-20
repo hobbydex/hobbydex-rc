@@ -4,10 +4,12 @@ daily metrics, the importers and the descriptor engine), so the rules live in on
 
     import required_facts as rf
     reg = rf.load()                          # {category: Category}
-    rf.missing(part, reg, specs)             # fact ids the part lacks and does not mark as unstated
+    rf.missing(part, reg, specs)             # fact ids the part lacks and marks neither unstated nor unchecked
     rf.mark_unstated(part, source, reg, specs)   # set `unstated` for every fact the part lacks: the page that was read
                                              # (an https URL or a doc id) states none of them
-    rf.drop_stale(part, reg, specs)          # a writer that fills a fact drops its marker
+    rf.mark_unchecked(part, source, reg, specs)  # set `unchecked`: the part's page, not yet looked at for the facts
+    rf.confirm_unstated(part, facts)         # a check of the cited page found no value: unchecked becomes unstated
+    rf.drop_stale(part, reg, specs)          # a writer that fills a fact drops its marker (either kind)
 
 `specs` maps a spec id to its record (the specs a part is `equivalent_to` are read for its facts); pass {} when there
 are none at hand, and a fact that only a spec gives is then counted as missing.
@@ -150,17 +152,28 @@ def applicable(part, reg, specs):
     return [f for f in cat.facts if not f.when or _holds(part, f.when, specs)]
 
 
+MARKERS = ("unstated", "unchecked")
+
+
 def unstated(part):
     u = part.get("unstated")
     return u if isinstance(u, dict) else {}
 
 
+def unchecked(part):
+    """The `unchecked` table: facts a part lacks whose page nobody has looked at for them yet (the refresh net writes
+    it); the facts-on-pages sweep reads the page and the marker becomes `unstated` when the page states no value."""
+    u = part.get("unchecked")
+    return u if isinstance(u, dict) else {}
+
+
 def status(part, reg, specs):
-    """{fact id: "have" | "unstated" | "missing"} for every fact that applies to the part."""
-    marks = unstated(part)
+    """{fact id: "have" | "unstated" | "unchecked" | "missing"} for every fact that applies to the part."""
+    marks, open_ = unstated(part), unchecked(part)
     out = {}
     for f in applicable(part, reg, specs):
-        out[f.fact] = "have" if has(part, f, specs) else "unstated" if f.fact in marks else "missing"
+        out[f.fact] = ("have" if has(part, f, specs) else "unstated" if f.fact in marks
+                       else "unchecked" if f.fact in open_ else "missing")
     return out
 
 
@@ -173,51 +186,93 @@ def valid_source(s):
 
 
 def marker_problems(part, reg, specs):
-    """What is wrong with a part's `unstated` table: not a table, a fact its category does not list, or a source that
-    is no https URL or doc id. (A marker beside a fact that is set is stale, not wrong: stale_markers.)"""
-    u = part.get("unstated")
-    if u is None:
-        return []
-    if not isinstance(u, dict) or not u:
-        return ["unstated is not a table of fact = source"]
+    """What is wrong with a part's `unstated` or `unchecked` table: not a table, a fact its category does not list, a
+    source that is no https URL or doc id, or a fact in both tables. (A marker beside a fact that is set is stale, not
+    wrong: stale_markers.)"""
     cat = reg.get(part.get("category"))
     out = []
-    for fid, src in sorted(u.items()):
-        if not (cat and cat.fact(fid)):
-            out.append(f"unstated {fid}: not a required fact of category {part.get('category')}")
-        elif not valid_source(src):
-            out.append(f"unstated {fid}: source {src!r} is not an https URL or a doc id")
+    for key in MARKERS:
+        u = part.get(key)
+        if u is None:
+            continue
+        if not isinstance(u, dict) or not u:
+            out.append(f"{key} is not a table of fact = source")
+            continue
+        for fid, src in sorted(u.items()):
+            if not (cat and cat.fact(fid)):
+                out.append(f"{key} {fid}: not a required fact of category {part.get('category')}")
+            elif not valid_source(src):
+                out.append(f"{key} {fid}: source {src!r} is not an https URL or a doc id")
+    out += [f"unchecked {fid}: also marked unstated" for fid in sorted(set(unstated(part)) & set(unchecked(part)))]
     return out
 
 
 def stale_markers(part, reg, specs):
-    """The facts the part marks as unstated and has after all (a later source filled them): drop_stale removes them."""
+    """The facts the part marks (unstated or unchecked) and has after all (a later source filled them): drop_stale
+    removes them."""
     cat = reg.get(part.get("category"))
     if not cat:
         return []
-    return sorted(fid for fid in unstated(part) if cat.fact(fid) and has(part, cat.fact(fid), specs))
+    marked = set(unstated(part)) | set(unchecked(part))
+    return sorted(fid for fid in marked if cat.fact(fid) and has(part, cat.fact(fid), specs))
+
+
+def _drop(part, key, facts):
+    table = part.get(key) if isinstance(part.get(key), dict) else {}
+    left = {k: v for k, v in table.items() if k not in facts}
+    if left:
+        part[key] = left
+    else:
+        part.pop(key, None)
 
 
 def drop_stale(part, reg, specs):
-    """Remove the markers of facts the part has, in place (the table goes when it is empty); returns the facts."""
+    """Remove the markers (both kinds) of facts the part has, in place (a table goes when it is empty); returns the
+    facts."""
     gone = stale_markers(part, reg, specs)
     if gone:
-        left = {k: v for k, v in unstated(part).items() if k not in gone}
-        if left:
-            part["unstated"] = left
-        else:
-            part.pop("unstated", None)
+        for key in MARKERS:
+            if key in part:
+                _drop(part, key, gone)
     return gone
 
 
 def mark_unstated(part, source, reg, specs, facts=None):
     """Mark the facts the part lacks as not stated by `source` (an https URL or a doc id), in place; only the given
-    facts when `facts` is a list. A marker already there is kept. Returns the facts marked now."""
+    facts when `facts` is a list. A marker already there is kept; an `unchecked` marker of the fact becomes this one
+    (the page was read now). Returns the facts marked now."""
     if not valid_source(source):
         raise ValueError(f"unstated source {source!r} is not an https URL or a doc id")
-    want = missing(part, reg, specs)
+    want = [k for k, v in status(part, reg, specs).items() if v in ("missing", "unchecked")]
     if facts is not None:
         want = [f for f in want if f in facts]
     if want:
         part["unstated"] = {**unstated(part), **{f: source for f in want}}
+        if "unchecked" in part:
+            _drop(part, "unchecked", want)
     return want
+
+
+def mark_unchecked(part, source, reg, specs, facts=None):
+    """Mark the facts the part lacks as not yet looked for on `source` (the part's own page: an https URL or a doc id),
+    in place; only the given facts when `facts` is a list. A marker of either kind already there is kept. The ratchets
+    count the fact as marked, the facts-on-pages sweep still looks for it. Returns the facts marked now."""
+    if not valid_source(source):
+        raise ValueError(f"unchecked source {source!r} is not an https URL or a doc id")
+    want = missing(part, reg, specs)
+    if facts is not None:
+        want = [f for f in want if f in facts]
+    if want:
+        part["unchecked"] = {**unchecked(part), **{f: source for f in want}}
+    return want
+
+
+def confirm_unstated(part, facts, source=None):
+    """A check of the cited page found no value for `facts`: their `unchecked` markers become `unstated` with the same
+    page, in place (only those citing `source` when it is given). Returns the facts moved."""
+    open_ = unchecked(part)
+    moved = [f for f in facts if f in open_ and (source is None or open_[f] == source)]
+    if moved:
+        part["unstated"] = {**unstated(part), **{f: open_[f] for f in moved}}
+        _drop(part, "unchecked", moved)
+    return moved
