@@ -6,3 +6,9 @@ category = "wire"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-7s-female-xh-balance-connector-w-30cm-24awg-wire-ptk-5262/p152966" },
 ]
+equivalent_to = [
+  { spec = "spec/wire/24awg", match = "functional" },
+]
+wire_awg = 24
+length_mm = 300
+connectors = ["JST-XH"]

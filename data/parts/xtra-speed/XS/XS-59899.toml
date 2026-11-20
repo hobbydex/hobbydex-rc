@@ -2,12 +2,20 @@ id = "part/xtra-speed/XS-59899"
 brand = "brand/xtra-speed"
 number = "XS-59899"
 name = "13t pro5 5 slot 540 brushed motor"
+seen_by = "2020-08-07"
+seen_by_source = "https://web.archive.org/web/20200807091815/https://www.rcmart.com/xtra-speed-13t-pro5-5-slot-540-brushed-motor-xs-59899-00101078"
 category = "motor"
+motor_type = "brushed"
+turns = 13
 notes = "Not in rcMart's catalogue of 2026-11-19 (its sitemap); number and name read from the address of its rcMart page, archived on 2021-04-23."
 links = [
   { site = "rcMart (Wayback Machine)", url = "https://web.archive.org/web/20210423163028/https://www.rcmart.com/xtra-speed-13t-pro5-5-slot-540-brushed-motor-xs-59899-00101078", kind = "archive" },
 ]
 
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
+range = "xtra-speed/pro5-5-slot-540-brushed-motor"
 [unstated]
 type = "https://web.archive.org/web/20210423163028/https://www.rcmart.com/xtra-speed-13t-pro5-5-slot-540-brushed-motor-xs-59899-00101078"
 winding = "https://web.archive.org/web/20210423163028/https://www.rcmart.com/xtra-speed-13t-pro5-5-slot-540-brushed-motor-xs-59899-00101078"

@@ -2,6 +2,8 @@ id = "part/protek-rc/PTK-10066"
 brand = "brand/protek-rc"
 number = "PTK-10066"
 name = "15x21x4mm Ceramic Dual Sealed \"Speed\" Bearing (2)"
+seen_by = "2019-08-22"
+seen_by_source = "https://web.archive.org/web/20190822131731/https://www.amainhobbies.com/protek-rc-15x21x4mm-ceramic-dual-sealed-speed-bearing-2-ptk-10066/p32025"
 category = "bearing"
 category_source = "curated"
 links = [
@@ -9,3 +11,8 @@ links = [
 ]
 pack_qty = 2
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/bearing/15x21x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+material = "ceramic"
+seal = "rubber"

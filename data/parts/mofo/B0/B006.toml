@@ -2,6 +2,8 @@ id = "part/mofo/B006"
 brand = "brand/mofo"
 number = "B006"
 name = "Stainless Steel M1.4 Nuts (Pack of 10)"
+seen_by = "2023-01-30"
+seen_by_source = "https://web.archive.org/web/20230130033542/https://www.moforc.com/products/teeny-tiny-nuts-precision-stainless-steel-1-4mm-stock-scx24-screw-size-pitch-nuts-sold-in-10-pack"
 pack_qty = 10
 pack_qty_basis = "name"
 links = [
@@ -9,3 +11,8 @@ links = [
 ]
 category = "nut"
 material = "stainless"
+color = "silver"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/nut/m1.4-hex", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

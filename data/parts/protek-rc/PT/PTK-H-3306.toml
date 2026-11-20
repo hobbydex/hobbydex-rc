@@ -2,9 +2,14 @@ id = "part/protek-rc/PTK-H-3306"
 brand = "brand/protek-rc"
 number = "PTK-H-3306"
 name = "4x20mm \"High Strength\" Button Head Screws (10)"
+seen_by = "2019-12-08"
+seen_by_source = "https://web.archive.org/web/20191208090713/https://www.amainhobbies.com/protek-rc-4x20mm-high-strength-button-head-screws-10-ptk-h-3306/p141781"
 category = "screw"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-4x20mm-high-strength-button-head-screws-10-ptk-h-3306/p141781" },
 ]
 pack_qty = 10
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/screw/m4x20-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

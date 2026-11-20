@@ -16,7 +16,7 @@ fits = [
   { kit = "kit/himoto/sct-16", type = "direct", source = "doc/himoto/option-parts" },
 ]
 name_source = "dealer"
-notes = "Name known from a dealer (Monster Cars)"
+notes = "Name known from a dealer (Monster Cars). Colour read from the maker's product photo."
 links = [
   { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_410", kind = "dealer" },
   { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_689", kind = "dealer" },
@@ -26,3 +26,4 @@ links = [
 equivalent_to = [
   { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]
+color = "black"

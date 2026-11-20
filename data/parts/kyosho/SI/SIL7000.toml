@@ -1,7 +1,8 @@
 id = "part/kyosho/SIL7000"
 brand = "brand/kyosho"
 number = "SIL7000"
-name = "Silicone Oil (7000)"
+name = "Silicone OIL #7000 (40cc)"
+gtin = "4955439758410"
 seen_by = "2017-10-31"
 seen_by_source = "https://web.archive.org/web/20171031204123/http://rc.kyosho.com/media/catalog/product/cache/4/small_image/500x375/9df78eab33525d08d6e5fb8d27136e95/_/s/_sil7000.jpg"
 fits = [
@@ -20,3 +21,9 @@ equivalent_to = [
   { spec = "spec/oil/silicone-7000cst", match = "close", notes = "Viscosity stated as a bare 7000, read as cSt; measuring temperature not given" },
 ]
 documents = ["doc/kyosho/30027-tf7-7-parts-list-v01", "doc/kyosho/31122-vones2-p", "doc/kyosho/31255-vonerr-evo-p"]
+name_source = "manufacturer"
+former_names = ["Silicone Oil (7000)"]
+links = [
+  { site = "Kyosho (Internet Archive)", url = "https://web.archive.org/web/20200925104445/https://rc.kyosho.com/en/sil7000.html", kind = "archive" },
+]
+volume_ml = 40
