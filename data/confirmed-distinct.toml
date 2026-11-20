@@ -584,6 +584,16 @@ evidence = ["doc/tamiya/56022-manual-usa", "doc/tamiya/56024-manual-usa"]
 parts = ["part/tamiya/51406", "part/tamiya/51486"]
 evidence = ["doc/tamiya/58532-nissan-silvia-s13-beiblatt", "doc/tamiya/58509-toyota-toms-84c-beiblatt"]
 
+[[pair]]
+parts = ["part/mugen/E1071-A", "part/mugen/E1071A"]
+evidence = ["doc/mugen/mbx8r-part-list"]
+reason = "E1071-A is the window mask: the MBX8R parts list prints \"E1071 (0.8mm) 1pc.\" for the body and \"E1071-A (Window Mask) 1pc.\" on the next row; E1071A is the body's revision, which the store sells as E1071a \"MBX-8 BODY 0,8mm\" (https://www.mugenshop.eu/en/MBX-8-BODY-0-8mm/E1071a)"
+
+[[pair]]
+parts = ["part/mugen/E1072-A", "part/mugen/E1072A"]
+evidence = ["doc/mugen/mbx8-eco-part-list"]
+reason = "E1072-A is the window mask: the MBX8 ECO parts lists print \"E1072-A (Window Mask) 1pc.\" beside the body E1072; E1072A is the body's revision, which the store sells as E1072a \"MBX-8 ECO BODY (0,8mm)\" (https://www.mugenshop.eu/en/MBX-8-ECO-BODY-0-8mm/E1072a)"
+
 [[release_pair]]
 releases = ["release/team-associated/80939", "release/team-associated/80939R"]
 reason = "80939R is the maker's own listing of the kit refurbished (its own product page, sold out); the two share the barcode of the new kit"
@@ -606,8 +616,3 @@ reason = "one page for both pack sizes: \"DT-AS-012/014 HG Drift Tire AS-01 (2Pc
 part = "part/udirc/LAM16-03"
 url = "https://www.udirc.com/products/lam16-02"
 reason = "the store's product at handle lam16-02 is \"UDIRC Split LED Light Kit for UD1610PRO (Part No. LAM16-03)\" with SKU LAM16-03"
-
-[[shared_page]]
-part = "part/mugen/H0466C"
-url = "https://mugenshop.eu/en/REAR-BODY-MOUNT/H0466-C"
-reason = "the MRX-4X manual prints H0466C, the store H0466-C: the store prints a hyphen before the letter (hobbydex/hobbydex-rc#2879)"
