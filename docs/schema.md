@@ -69,6 +69,7 @@ website = "https://www.teamxray.com"
 website_fallback = "https://www.rochobbies.com"   # optional: a second site of the maker, used when the first has no page for a part
 website_archive = "https://web.archive.org/web/20190216185048/http://www.ofna.com:80/index.php"   # only when the website's domain is no longer the maker's
 website_note = "domain now parked, archived copy"   # required with website_archive
+website_http_only = true                 # optional: the maker's own site is served over http only (website is http://)
 aliases = ["..."]                       # optional: other names the brand is stated under (see below)
 youtube = ["https://www.youtube.com/@XRAYracing"]   # optional: the maker's official channels, its own first
 kind = "manufacturer"                    # manufacturer | aftermarket | designer | retailer
@@ -83,6 +84,8 @@ notes = "..."
 `website_fallback` (optional): a second web address of the maker, used for product links only when `website` has no page for the part (ROC Hobby: fmshobby.com first, rochobbies.com as fallback). Its pages link only where a structured product SKU names the part (tools/link_maker_pages.py, mode structured).
 
 `website_archive` and `website_note` (set together): when the website's domain is no longer the maker's (parked, for sale, reused by someone else, or gone from DNS), `website` keeps the maker's domain, which tools use to recognise its pages and archive captures, and `website_archive` is the Wayback capture of its last official page: `https://web.archive.org/web/<14-digit timestamp>/<URL on the website's host>`, the timestamp of the last capture in the cached CDX that is still the maker's. `website_note` is "domain now parked, archived copy" (or for sale, reused, gone). The site links the capture as "archived site" and never the domain itself; `notes` says what the domain shows now and when that was read.
+
+`website_http_only` (optional, true only): the maker's own site serves no https at all (no https answer, or a certificate that is not the site's), so `website` is its `http://` address. A part of the brand may then cite a page on that host (with or without `www.`) as the source of an `unstated` or `unchecked` marker (Required facts); an http page of any other host never is. Say in `notes` how the site was found to be http only.
 
 `aliases` (optional): other names the brand is stated under on a page or in a store that its name and legal name do not cover: a store's vendor name (Team Losi Racing for TLR, Zapglue for Pacer, Genspow for Gens ace), or the line name a page uses (Carisma Racing). Tools that read a stated brand resolve it through these names as well; a name two brands share resolves to neither.
 
@@ -749,7 +752,8 @@ of a spec it is `equivalent_to`), or a link to a spec of a kind. Parts that are 
 case, a motor rotor: the file's `exclude_name`) carry none.
 
 `unstated` (optional, part) records a required fact the part's source does not state: a table of fact id to the https
-page or the doc id that was read, `unstated = { torque = "https://maker.example/servo-1", speed = "https://maker.example/servo-1" }`.
+page or the doc id that was read (an http page only on the part's brand's own website when the brand is
+`website_http_only`), `unstated = { torque = "https://maker.example/servo-1", speed = "https://maker.example/servo-1" }`.
 Importers set it when the page they read gives no value (tools/required_facts.py `mark_unstated(part, page, ...)`, or
 the descriptor's `[required_facts]` in hobbydex-tools). It names only facts of the part's category (required-fact-unstated-valid);
 whoever fills a fact drops its marker (`drop_stale`; a stale one is reported as required-fact-unstated-stale).

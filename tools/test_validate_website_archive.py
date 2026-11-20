@@ -52,5 +52,21 @@ class WebsiteArchive(unittest.TestCase):
         self.assertEqual(len(errors_for(website=None)), 1)
 
 
+
+class WebsiteHttpOnly(unittest.TestCase):
+    def errors(self, **d):
+        errors = []
+        validate.check_website_http_only([("data/brands/x.toml", "brand", {"id": "brand/x", **d})], errors)
+        return errors
+
+    def test_true_beside_an_http_website(self):
+        self.assertEqual(self.errors(website="http://www.team-axon.com/", website_http_only=True), [])
+        self.assertEqual(self.errors(website="https://www.teamxray.com"), [])
+
+    def test_wrong_value_or_https_website(self):
+        self.assertEqual(len(self.errors(website="http://www.team-axon.com/", website_http_only="yes")), 1)
+        self.assertEqual(len(self.errors(website="https://www.team-axon.com/", website_http_only=True)), 1)
+        self.assertEqual(len(self.errors(website_http_only=True)), 1)
+
 if __name__ == "__main__":
     unittest.main()

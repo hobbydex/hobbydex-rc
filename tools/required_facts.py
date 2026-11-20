@@ -6,7 +6,7 @@ daily metrics, the importers and the descriptor engine), so the rules live in on
     reg = rf.load()                          # {category: Category}
     rf.missing(part, reg, specs)             # fact ids the part lacks and marks neither unstated nor unchecked
     rf.mark_unstated(part, source, reg, specs)   # set `unstated` for every fact the part lacks: the page that was read
-                                             # (an https URL or a doc id) states none of them
+                                             # (an https URL or a doc id; brand=: an http-only maker site) states none
     rf.mark_unchecked(part, source, reg, specs)  # set `unchecked`: the part's page, not yet looked at for the facts
     rf.confirm_unstated(part, facts)         # a check of the cited page found no value: unchecked becomes unstated
     rf.drop_stale(part, reg, specs)          # a writer that fills a fact drops its marker (either kind)
@@ -14,7 +14,7 @@ daily metrics, the importers and the descriptor engine), so the rules live in on
 `specs` maps a spec id to its record (the specs a part is `equivalent_to` are read for its facts); pass {} when there
 are none at hand, and a fact that only a spec gives is then counted as missing.
 """
-import os, re, tomllib
+import os, re, tomllib, urllib.parse
 from dataclasses import dataclass, field
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -181,15 +181,39 @@ def missing(part, reg, specs):
     return [k for k, v in status(part, reg, specs).items() if v == "missing"]
 
 
-def valid_source(s):
-    return isinstance(s, str) and (s.startswith("https://") or s.startswith("doc/"))
+def _host(url):
+    return (urllib.parse.urlsplit(url).hostname or "").lower().removeprefix("www.")
 
 
-def marker_problems(part, reg, specs):
+def http_only_host(brand):
+    """The host of the brand's own website when the brand records it as served over http only (`website_http_only =
+    true` beside an http:// `website`, docs/schema.md "brand"), else None."""
+    if not isinstance(brand, dict) or brand.get("website_http_only") is not True:
+        return None
+    w = brand.get("website")
+    return _host(w) or None if isinstance(w, str) and w.startswith("http://") else None
+
+
+def valid_source(s, brand=None):
+    """A marker's source: an https URL or a doc id; an http URL only on the host of the part's brand's own website when
+    that site is http only (`brand` is the brand record), never on another host."""
+    if not isinstance(s, str):
+        return False
+    if s.startswith("https://") or s.startswith("doc/"):
+        return True
+    h = http_only_host(brand)
+    return bool(h) and s.startswith("http://") and _host(s) == h
+
+
+SOURCE_RULE = "an https URL, a doc id or a page of the brand's http-only website"
+
+
+def marker_problems(part, reg, specs, brands=None):
     """What is wrong with a part's `unstated` or `unchecked` table: not a table, a fact its category does not list, a
-    source that is no https URL or doc id, or a fact in both tables. (A marker beside a fact that is set is stale, not
-    wrong: stale_markers.)"""
+    source that is no valid_source (brands: {brand id: brand record}, for an http-only maker site), or a fact in both
+    tables. (A marker beside a fact that is set is stale, not wrong: stale_markers.)"""
     cat = reg.get(part.get("category"))
+    brand = (brands or {}).get(part.get("brand"))
     out = []
     for key in MARKERS:
         u = part.get(key)
@@ -201,8 +225,8 @@ def marker_problems(part, reg, specs):
         for fid, src in sorted(u.items()):
             if not (cat and cat.fact(fid)):
                 out.append(f"{key} {fid}: not a required fact of category {part.get('category')}")
-            elif not valid_source(src):
-                out.append(f"{key} {fid}: source {src!r} is not an https URL or a doc id")
+            elif not valid_source(src, brand):
+                out.append(f"{key} {fid}: source {src!r} is not {SOURCE_RULE}")
     out += [f"unchecked {fid}: also marked unstated" for fid in sorted(set(unstated(part)) & set(unchecked(part)))]
     return out
 
@@ -237,12 +261,13 @@ def drop_stale(part, reg, specs):
     return gone
 
 
-def mark_unstated(part, source, reg, specs, facts=None):
-    """Mark the facts the part lacks as not stated by `source` (an https URL or a doc id), in place; only the given
-    facts when `facts` is a list. A marker already there is kept; an `unchecked` marker of the fact becomes this one
-    (the page was read now). Returns the facts marked now."""
-    if not valid_source(source):
-        raise ValueError(f"unstated source {source!r} is not an https URL or a doc id")
+def mark_unstated(part, source, reg, specs, facts=None, brand=None):
+    """Mark the facts the part lacks as not stated by `source` (an https URL or a doc id; an http page of the brand's
+    own site when `brand`, the part's brand record, says it is http only), in place; only the given facts when `facts`
+    is a list. A marker already there is kept; an `unchecked` marker of the fact becomes this one (the page was read
+    now). Returns the facts marked now."""
+    if not valid_source(source, brand):
+        raise ValueError(f"unstated source {source!r} is not {SOURCE_RULE}")
     want = [k for k, v in status(part, reg, specs).items() if v in ("missing", "unchecked")]
     if facts is not None:
         want = [f for f in want if f in facts]
@@ -253,12 +278,12 @@ def mark_unstated(part, source, reg, specs, facts=None):
     return want
 
 
-def mark_unchecked(part, source, reg, specs, facts=None):
-    """Mark the facts the part lacks as not yet looked for on `source` (the part's own page: an https URL or a doc id),
-    in place; only the given facts when `facts` is a list. A marker of either kind already there is kept. The ratchets
+def mark_unchecked(part, source, reg, specs, facts=None, brand=None):
+    """Mark the facts the part lacks as not yet looked for on `source` (the part's own page: as for mark_unstated), in
+    place; only the given facts when `facts` is a list. A marker of either kind already there is kept. The ratchets
     count the fact as marked, the facts-on-pages sweep still looks for it. Returns the facts marked now."""
-    if not valid_source(source):
-        raise ValueError(f"unchecked source {source!r} is not an https URL or a doc id")
+    if not valid_source(source, brand):
+        raise ValueError(f"unchecked source {source!r} is not {SOURCE_RULE}")
     want = missing(part, reg, specs)
     if facts is not None:
         want = [f for f in want if f in facts]
