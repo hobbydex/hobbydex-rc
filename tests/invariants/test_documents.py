@@ -46,19 +46,14 @@ def test_horizon_doc_no_page(ratchet):
 
 def test_no_shorts_address(hard):
     """No YouTube Short enters the data (owner, 2026-11-18: "No short should enter our database"): no record names a
-    youtube.com/shorts/ address (a video document's url, an announced_source or seen_by_source, any field). Whether a
-    watch?v= video is a Short is decided by the tools (import_brand_videos.short_signal: the watch page, the channel's
-    Shorts and long-form playlists), which never write one; length alone never makes a Short (decision 2026-10-28)."""
+    youtube.com/shorts/ address (a video document's url, an announced_source or seen_by_source, any field). A Short is a
+    video the channel published as a Short (owner, 2026-11-20: "the short portrait videos that are specific in the
+    youtube app. Not a short normal video"); whether a watch?v= video is one is decided by the tools
+    (import_brand_videos.short_signal: the channel's Shorts and long-form playlists first, then the watch page, then a
+    #shorts tag), which never write one. Neither a length nor a #shorts tag in a title of a long-form upload makes a
+    Short, so neither is checked here."""
     hard("""SELECT id AS record, 'names a YouTube Shorts address' AS problem FROM records
         WHERE data LIKE '%youtube.com/shorts/%'""", name="video-shorts-url")
-
-
-def test_no_shorts_title(hard):
-    """No video document is a YouTube Short by its own title: a #shorts / #short tag makes it one, whatever playlist
-    its channel files it in (hobbydex-tools import_brand_videos.short_signal reads the tag first)."""
-    hard("""SELECT id AS record, 'title ' || json_extract(data, '$.title') AS problem FROM records
-        WHERE kind = 'doc' AND json_extract(data, '$.kind') = 'video'
-          AND json_extract(data, '$.title') REGEXP '(?i)#shorts?(?![a-z0-9_])'""", name="video-shorts-title")
 
 
 def test_video_has_date(hard):
