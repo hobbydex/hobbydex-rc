@@ -21,3 +21,7 @@ equivalent_to = [
   { spec = "spec/servo/standard-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-5585mh-economical-high-voltage-high-torque-coreless-metal-gear-digital-sport-servo/" }]
+performance = [
+  { voltage = 6, torque_kgcm = 14, torque_ozin = 194, speed_s = 0.17, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 7.4, torque_kgcm = 17, torque_ozin = 236, speed_s = 0.14, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

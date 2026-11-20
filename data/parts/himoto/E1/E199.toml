@@ -2,9 +2,10 @@ id = "part/himoto/E199"
 brand = "brand/himoto"
 number = "E199"
 name = "Sensorless Brushless ESC For 1/10 Scale"
-category = "misc"
-category_source = "fallback"
+category = "esc"
+motor_type = "brushless"
 documents = ["doc/himoto/option-parts"]
+sensored = false
 fits = [
   { kit = "kit/himoto/bowie", releases = ["release/himoto/E10MTL"], type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/bowie-pro", releases = ["release/himoto/E10MTL2"], type = "direct", source = "doc/himoto/option-parts" },

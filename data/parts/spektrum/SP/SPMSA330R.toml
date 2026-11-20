@@ -13,3 +13,6 @@ category = "servo"
 dimensions_mm = [12, 20, 23]
 gear_material = "plastic"
 bearing_kind = "bushing"
+equivalent_to = [
+  { spec = "spec/servo/micro-21t", match = "close", basis = "dimensions", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size class from the case dimensions (12x20x23 mm); 21T spline stated on the maker's page; check the mounting holes" },
+]

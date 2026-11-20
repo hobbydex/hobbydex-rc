@@ -25,3 +25,7 @@ frequency_hz = 330
 notes = "JX files it under Low Profile servo; Stall torque 11.82 kg.cm at 6 V, 13.56 kg.cm at 8.4 V; speed 0.13 s/60deg at 6 V, 0.11 s/60deg at 8.4 V; lead 265 mm; waterproof (stated in the features)."
 material = "aluminium"
 links = [{ site = "JX Servo", url = "http://www.jx-servo.com/en/Product/LOW/431.html" }]
+performance = [
+  { voltage = 6, torque_kgcm = 11.82, torque_ozin = 164.14, speed_s = 0.13, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 8.4, torque_kgcm = 13.56, torque_ozin = 188.31, speed_s = 0.11, source = "doc/jx/product-pages-jx-servo-com" },
+]

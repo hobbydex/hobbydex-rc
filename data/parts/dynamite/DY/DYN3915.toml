@@ -9,3 +9,6 @@ links = [
   { site = "Horizon Hobby", url = "https://www.horizonhobby.com/product/dynamite-mini-servo-water-proof/DYN3915.html" },
 ]
 category = "servo"
+equivalent_to = [
+  { spec = "spec/servo/mini", match = "close", basis = "maker", source = "doc/dynamite/horizon-pages", notes = "Size category Mini stated by the maker's page" },
+]

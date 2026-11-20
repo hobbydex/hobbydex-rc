@@ -208,3 +208,66 @@ def test_twin_parts(ratchet, db):
         if cls != "shared":
             rows += [(a["id"], f"{cls} twin of {b['id']}"), (b["id"], f"{cls} twin of {a['id']}")]
     ratchet("twin-parts", rows)
+
+
+# a part of category servo that is a servo itself (not a horn, saver, case, gear set or mount): the name says servo and
+# no accessory word, or it states a figure (torque, speed or performance)
+SERVO_ACCESSORY = re.compile(r"(?i)horn|saver|\barm\b|case|gear|mount|tape|holder|plate|bracket|cover|screw|extension|lead|"
+                             r"cable|wire|protector|guard|stay|link|spacer|grommet|post|tester|programm|card|box|set\b|parts?\b|"
+                             r"heat ?sink|cap\b|seal")
+
+
+def _servos(db):
+    rows = db.execute("""SELECT id, json_extract(data, '$.name'), json_extract(data, '$.torque_kgcm'),
+          json_extract(data, '$.speed_s'), json_extract(data, '$.performance'), json_extract(data, '$.equivalent_to')
+        FROM records WHERE kind = 'part' AND json_extract(data, '$.category') = 'servo'""")
+    out = []
+    for pid, name, tq, sp, pf, eq in rows:
+        pf = json.loads(pf) if pf else []
+        figures = tq is not None or sp is not None or pf
+        if figures or (re.search(r"(?i)\bservo\b", name or "") and not SERVO_ACCESSORY.search(name or "")):
+            out.append((pid, name, tq is not None or any("torque_kgcm" in r for r in pf),
+                        sp is not None or any("speed_s" in r for r in pf),
+                        any(str(e.get("spec", "")).startswith("spec/servo/") for e in json.loads(eq or "[]"))))
+    return out
+
+
+def test_servo_no_speed(ratchet, db):
+    """A servo with no speed (s/60 degrees) stated, top-level or in performance: read it from the maker's page
+    (hobbydex-tools tools/link_servo_pages.py, tools/servo_performance.py for a new page layout). Reported, not
+    blocking: importers add servos from sources that state no figures."""
+    ratchet("servo-no-speed", [(pid, f"no speed: {name}") for pid, name, _, sp, _ in _servos(db) if not sp], blocking=False)
+
+
+def test_servo_no_torque(ratchet, db):
+    """A servo with no torque (kg-cm) stated, top-level or in performance: as servo-no-speed."""
+    ratchet("servo-no-torque", [(pid, f"no torque: {name}") for pid, name, tq, _, _ in _servos(db) if not tq], blocking=False)
+
+
+def test_servo_no_size_spec(ratchet, db):
+    """A servo linked to no spec/servo size spec: the maker states no size class, and its dimensions fit no size range
+    or no spline is stated (hobbydex-tools tools/link_servo_pages.py counts each reason)."""
+    ratchet("servo-no-size-spec", [(pid, f"no size spec: {name}") for pid, name, _, _, spec in _servos(db) if not spec],
+            blocking=False)
+
+
+def test_servo_figure_out_of_range(hard):
+    """A servo whose headline speed_s is not seconds per 60 degrees (0.005 to 2) or whose torque_kgcm is not kg-cm (0.1 to
+    500): a misread figure (".10 sec" read as 0, ".062 sec" as 2, ".07sec" as 7). Fix the reader (hobbydex-tools
+    tools/horizon_specs.py, tools/servo_performance.py) and the value from the maker's page, as performance rows are
+    checked by tools/validate.py."""
+    hard("""SELECT id AS record, 'speed_s ' || coalesce(json_extract(data, '$.speed_s'), '-')
+            || ', torque_kgcm ' || coalesce(json_extract(data, '$.torque_kgcm'), '-') AS problem FROM records
+        WHERE kind = 'part' AND json_extract(data, '$.category') = 'servo'
+          AND (json_extract(data, '$.speed_s') NOT BETWEEN 0.005 AND 2
+               OR json_extract(data, '$.torque_kgcm') NOT BETWEEN 0.1 AND 500)""", "servo-figure-out-of-range")
+
+
+def test_servo_case_oversize(hard):
+    """A servo whose dimensions_mm has a side of 90 mm or more: no car servo case is that large (a 1/5-scale one is about
+    66 x 30 x 58 mm), so it is the package size a shop lists as the product size (Horizon's 102 x 51 x 14 mm for a mini
+    servo). The importer refuses such a size for a servo (hobbydex-tools tools/sources/rules/horizon-specs.tsv)."""
+    hard("""SELECT id AS record, 'dimensions_mm ' || json_extract(data, '$.dimensions_mm') AS problem
+        FROM records WHERE kind = 'part' AND json_extract(data, '$.category') = 'servo'
+          AND EXISTS (SELECT 1 FROM json_each(json_extract(records.data, '$.dimensions_mm')) d WHERE d.value >= 90)""",
+         "servo-case-oversize")

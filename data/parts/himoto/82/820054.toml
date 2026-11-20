@@ -2,8 +2,7 @@ id = "part/himoto/820054"
 brand = "brand/himoto"
 number = "820054"
 name = "3*12 Cap Screws"
-category = "misc"
-category_source = "fallback"
+category = "screw"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/cluster", type = "direct", source = "doc/himoto/option-parts" },
@@ -21,3 +20,6 @@ links = [
 pack_qty = 6
 pack_qty_basis = "distributor"
 name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/screw/m3x12-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

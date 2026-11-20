@@ -23,3 +23,8 @@ links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=183" },
   { site = "Red RC", url = "https://www.redrc.net/2019/08/power-hd-tr-4-trx-4-crawler-servo/", kind = "press" },
 ]
+performance = [
+  { voltage = 4.8, torque_kgcm = 1.8, torque_ozin = 25, speed_s = 0.15, source = "doc/power-hd/website" },
+  { voltage = 6, torque_kgcm = 2.2, torque_ozin = 30.6, speed_s = 0.12, source = "doc/power-hd/website" },
+  { voltage = 7.4, torque_kgcm = 2.6, torque_ozin = 36.1, speed_s = 0.1, source = "doc/power-hd/website" },
+]

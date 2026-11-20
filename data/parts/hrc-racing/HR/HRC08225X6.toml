@@ -8,3 +8,13 @@ links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000031326", kind = "maker" },
 ]
 voltage = 7.4
+capacity_mah = 2500
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-2500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+chemistry = "lipo"
+cells = 2
+c_rating = 12
+connector = "XT60"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"

@@ -7,3 +7,10 @@ category_source = "curated"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-48p-lightweight-hard-anodized-aluminum-pinion-gear-3.17mm-bore-35t-ptk-8622/p1125823?v=1125819" },
 ]
+teeth = 35
+pitch_dp = 48
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-35t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 3.17

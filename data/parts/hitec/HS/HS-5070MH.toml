@@ -18,3 +18,7 @@ equivalent_to = [
   { spec = "spec/servo/micro-24t", match = "functional", notes = "Size class from the case size, spline from Hitec's specifications; check the mounting holes" },
 ]
 links = [{ site = "HiTEC", url = "https://hitecrcd.com/hs-5070mh-ultra-torque-metal-gear-feather-servo/" }]
+performance = [
+  { voltage = 6, torque_kgcm = 3.1, torque_ozin = 43.1, speed_s = 0.15, source = "doc/hitec/product-pages-hitecrcd-com" },
+  { voltage = 7.4, torque_kgcm = 3.8, torque_ozin = 52.8, speed_s = 0.12, source = "doc/hitec/product-pages-hitecrcd-com" },
+]

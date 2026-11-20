@@ -19,3 +19,11 @@ torque_kgcm = 9.4
 voltage = 6
 universal = true
 universal_basis = "size"
+performance = [
+  { voltage = 6, torque_kgcm = 9.36, torque_ozin = 130, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 7.4, torque_kgcm = 11.52, torque_ozin = 160, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 8.4, torque_kgcm = 12.96, torque_ozin = 180, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Low Profile and 25T spline stated by the maker's page" },
+]
