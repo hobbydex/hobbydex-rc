@@ -8,6 +8,7 @@ status = "released"
 announced = "2018-08-02"
 announced_source = "https://www.bigsquidrc.com/team-associated-tc7-2-factory-team-touring-car/"
 gtin = "784695301221"
+dimensions = { length_mm = 360, source = "https://60years.associatedelectrics.com/tc7-2-factory-team/" }
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/tc7-2-factory-team/" },
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/TC7.2/TC7.2/" },
@@ -134,4 +135,18 @@ contains = [
   { part = "part/team-associated/91611", role = "kit", qty = 4, step = "Caster Blocks and Hubs Build - Bag 7 - Step 2; Caster Blocks and Hubs Build - Bag 7 - Step 8", source = "doc/team-associated/manual-tc7-2-30122" },
   { part = "part/team-associated/91723", role = "kit", qty = 2, step = "Turnbuckle Build - Bag 4 - Step 1", source = "doc/team-associated/manual-tc7-2-30122" },
   { part = "part/team-associated/4673", role = "kit", step = "Bumper, Anti-Roll Bar, and Electronics Build - Bag 8 - Step 2", qty = 10, source = "doc/team-associated/manual-tc7-2-30122" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/30122-page", note = "1:10 scale electric motor" },
+  { item = "esc", source = "doc/team-associated/30122-page", note = "Electronic speed control" },
+  { item = "battery", source = "doc/team-associated/30122-page", note = "Battery: 7.4V LiPo, 6.0V LiFe" },
+  { item = "charger", source = "doc/team-associated/30122-page", note = "Battery charger (for batteries mentioned above that are used in the vehicle)" },
+  { item = "radio", source = "doc/team-associated/30122-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/30122-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/30122-page", note = "Steering servo" },
+  { item = "body", source = "doc/team-associated/30122-page", note = "1:10 scale Lexan 190mm car body" },
+  { item = "paint", source = "doc/team-associated/30122-page", note = "Lexan specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/30122-page", note = "1:10 scale rubber (or foam) touring car wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/30122-page", note = "1:10 scale rubber (or foam) touring car wheels and tires" },
+  { item = "pinion", source = "doc/team-associated/30122-page", note = "Pinion gear (48 pitch)" },
 ]

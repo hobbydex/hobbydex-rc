@@ -1,8 +1,13 @@
 id = "part/boom-racing/BBZMR115RS"
 brand = "brand/boom-racing"
 number = "BBZMR115RS"
-name = "BBZMR115RS"
-notes = "Named by its number only: the name on the scanned boom-racing manual page was not clear enough to take"
-category = "misc"
-category_source = "fallback"
+name = "Ball bearing 5x11x4 (rubber sealed)"
+category = "bearing"
 documents = ["doc/boom-racing/manual-brx01-awb-adjustable-wheelbase-chassis-kit-link-version", "doc/boom-racing/manual-brx01-limited-edition-br8003-20230118", "doc/boom-racing/manual-brx02-d130-land-rover-denfender130-high-capacity-pickup-4wd"]
+seal = "rubber"
+name_source = "spec"
+equivalent_to = [
+  { spec = "spec/bearing/5x11x4", match = "functional", notes = "Size of the bearing code MR115RS (tools/data/hardware_size_codes.toml)" },
+]
+universal = true
+universal_basis = "size"

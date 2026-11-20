@@ -6,6 +6,7 @@ name = "RC10 4WD KIT"
 kind = "kit"
 status = "released"
 gtin = "784695060401"
+dimensions = { length_mm = 381, width_mm = 241, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10_4WD/Kit/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10_4WD/Kit/" },
 ]
@@ -92,4 +93,15 @@ contains = [
   { part = "part/team-associated/92288", role = "kit", qty = 2, step = "Rear Transmission Build - Bag B - Step 4", source = "doc/team-associated/rc10-4wd-kit-manual-2025-4-4-2025" },
   { part = "part/team-associated/9601", role = "listed", source = "doc/team-associated/pressrelease-6040-rc10-4wd-parts" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Rear Transmission Build - Bag B - Step 4", source = "doc/team-associated/rc10-4wd-kit-manual-2025-4-4-2025" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/6040-page", note = "1:10 scale 540-size electric RC car motor" },
+  { item = "esc", source = "doc/team-associated/6040-page", note = "1:10 scale radio control electronic speed control" },
+  { item = "battery", source = "doc/team-associated/6040-page" },
+  { item = "charger", source = "doc/team-associated/6040-page", note = "Battery charger (for one of the batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/6040-page", note = "2 channel surface transmitter, 2 channel receiver, and steering servo" },
+  { item = "servo", source = "doc/team-associated/6040-page", note = "2 channel surface transmitter, 2 channel receiver, and steering servo" },
+  { item = "paint", source = "doc/team-associated/6040-page", note = "Lexan specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/6040-page", note = "1:10 scale off-road wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/6040-page", note = "1:10 scale off-road wheels and tires" },
 ]

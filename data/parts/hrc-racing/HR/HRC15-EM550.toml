@@ -4,6 +4,10 @@ number = "HRC15-EM550"
 name = "Motor NEOXX - 550 13T Electric Motor"
 name_source = "manufacturer"
 category = "motor"
+turns = 13
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000030802", kind = "maker" },
+]
+equivalent_to = [
+  { spec = "spec/motor/brushed-550-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]

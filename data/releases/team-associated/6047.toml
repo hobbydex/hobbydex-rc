@@ -94,3 +94,14 @@ contains = [
   { part = "part/team-associated/7810", role = "kit", qty = 3, step = "Front Suspension Build - Bag B - Step 1; Rear End Build - Bag D - Step 4", source = "doc/team-associated/rc10gb-vintage-manual-12-9-2025" },
   { part = "part/team-associated/7811", role = "kit", qty = 1, step = "Nose Plate / Bell Cranks Build - Bag A - Step 1", source = "doc/team-associated/rc10gb-vintage-manual-12-9-2025" },
 ]
+needs = [
+  { item = "engine", source = "doc/team-associated/6047-page", note = ".12 or .15 non-pull start engine (O.S. type crank)" },
+  { item = "charger", source = "doc/team-associated/6047-page", note = "Radio control battery charger" },
+  { item = "fuel", source = "doc/team-associated/6047-page", note = "Nitro fuel" },
+  { item = "radio", source = "doc/team-associated/6047-page", note = "2-channel RC surface transmitter and its batteries" },
+  { item = "receiver", source = "doc/team-associated/6047-page", note = "2-channel receiver" },
+  { item = "battery", source = "doc/team-associated/6047-page", note = "Receiver battery pack" },
+  { item = "servo", source = "doc/team-associated/6047-page", note = "Throttle and Steering servos" },
+  { item = "paint", source = "doc/team-associated/6047-page", note = "Paint for body" },
+  { item = "glue", source = "doc/team-associated/6047-page", note = "Glue for tires" },
+]

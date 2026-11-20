@@ -60,3 +60,13 @@ contains = [
   { part = "part/team-associated/8829", role = "kit", qty = 8, step = "Tires Build - Bag H - Step 1; Tires Build - Bag H - Step 2", source = "doc/team-associated/rc10ds-vintage-manual-2024-v1" },
   { part = "part/team-associated/8831", role = "kit", qty = 5, step = "Rear End Build - Bag D - Step 1; Transmission Build - Bag G - Step 5", source = "doc/team-associated/rc10ds-vintage-manual-2024-v1" },
 ]
+needs = [
+  { item = "esc", source = "doc/team-associated/8082-page", note = "1:10 scale electric motor and electronic speed control" },
+  { item = "motor", source = "doc/team-associated/8082-page", note = "1:10 scale electric motor and electronic speed control" },
+  { item = "battery", source = "doc/team-associated/8082-page" },
+  { item = "charger", source = "doc/team-associated/8082-page", note = "Battery charger suited for one of the batteries mentioned above" },
+  { item = "radio", source = "doc/team-associated/8082-page", note = "2-channel surface transmitter" },
+  { item = "servo", source = "doc/team-associated/8082-page", note = "Steering servo" },
+  { item = "receiver", source = "doc/team-associated/8082-page", note = "2-channel receiver" },
+  { item = "paint", source = "doc/team-associated/8082-page", note = "Spray paint for Lexan body" },
+]

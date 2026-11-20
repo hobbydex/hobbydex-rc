@@ -1,16 +1,21 @@
 id = "part/kyosho/SXW012"
 brand = "brand/kyosho"
 number = "SXW012"
-name = "Hard Main Chassis (Scorpion XXL)"
+name = "Hard Main Chassis (7075/Scorpion XXL)"
 status = "discontinued"
 seen_by = "2013-10-20"
 seen_by_source = "https://web.archive.org/web/20131020135703/http://kyosho.com/jpn/products/rc/parts_images/SXW012.jpg"
 gtin = "4548565224180"
 fits = [
   { kit = "kit/kyosho/scorpion-xxl", type = "replaces", source = "doc/kyosho/30972-scorpion-xxl-convertible-spop" },
+  { kit = "kit/kyosho/scorpion-xxl", type = "replaces", replaces = "part/kyosho/SX033", source = "doc/kyosho/30972-scorpion-xxl-convertible-spop", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 documents = ["doc/kyosho/sxw012-product-page"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/sxw012.html" },
 ]
+name_source = "manufacturer"
+former_names = ["Hard Main Chassis (Scorpion XXL)"]
+material = "aluminium"
+material_grade = "7075"

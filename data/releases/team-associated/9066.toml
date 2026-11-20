@@ -6,6 +6,7 @@ name = "YZ-10 Classic Kit"
 kind = "kit"
 status = "released"
 gtin = "784695090668"
+dimensions = { height_mm = 190, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/YZ10_Classic/Kit/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/YZ10_Classic/Kit/" },
 ]
@@ -15,4 +16,14 @@ documents = ["doc/team-associated/9066-page", "doc/team-associated/yz10-classic-
 contains = [
   { part = "part/team-associated/5000", role = "listed", source = "doc/team-associated/yz10-classic-ae-edition" },
   { part = "part/team-associated/92630", role = "listed", source = "doc/team-associated/yz10-classic-ae-edition" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/9066-page", note = "2S Shorty LiPo battery for radio-controlled car" },
+  { item = "charger", source = "doc/team-associated/9066-page", note = "Radio control battery charger" },
+  { item = "esc", source = "doc/team-associated/9066-page", note = "1:10 scale radio control electronic speed control" },
+  { item = "motor", source = "doc/team-associated/9066-page", note = "1:10 scale 540-size electric RC car motor" },
+  { item = "radio", source = "doc/team-associated/9066-page", note = "2-channel RC surface transmitter and its batteries" },
+  { item = "servo", source = "doc/team-associated/9066-page", note = "Steering servo" },
+  { item = "receiver", source = "doc/team-associated/9066-page", note = "2-channel receiver" },
+  { item = "paint", source = "doc/team-associated/9066-page", note = "Paint for the body" },
 ]

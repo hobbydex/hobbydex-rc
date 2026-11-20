@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "2042"
 name = "NTC3 Ready-to-Run Plus"
 gtin = "784695020429"
+dimensions = { length_mm = 384, width_mm = 199, weight_g = 1679, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/NTC3/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/NTC3/RTR/" },
 ]
@@ -31,4 +32,8 @@ contains = [
   { part = "part/team-associated/94755", role = "listed", source = "doc/team-associated/ntc3-man-part1" },
   { part = "part/team-associated/1717", role = "listed", source = "doc/team-associated/ntc3-man-part2" },
   { part = "part/team-associated/3960", role = "listed", source = "doc/team-associated/ntc3-man-part2" },
+]
+needs = [
+  { item = "fuel", source = "doc/team-associated/2042-page", note = "Model car fuel" },
+  { item = "tools", source = "doc/team-associated/2042-page" },
 ]

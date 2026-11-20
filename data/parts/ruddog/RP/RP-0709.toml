@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0709"
 brand = "brand/ruddog"
 number = "RP-0709"
 name = "Racing RR4210 HV Brushless Standard Size Servo (0.10s|42kg)"
+seen_by = "2026-11-04"
+seen_by_source = "https://www.ruddog.eu/export/sitemap_0.xml.gz"
 category = "servo"
 gtin = "4052133033543"
 documents = ["doc/ruddog/store"]
@@ -13,3 +15,14 @@ dimensions_mm = [40.1, 20, 37.4]
 motor = "brushless"
 gear_material = "metal"
 voltage_range = [4.8, 8.4]
+performance = [
+  { voltage = 6, torque_kgcm = 39, speed_s = 0.112, source = "doc/ruddog/product-pages-ruddog-eu" },
+  { voltage = 7.4, torque_kgcm = 42, speed_s = 0.105, source = "doc/ruddog/product-pages-ruddog-eu" },
+  { voltage = 8.4, torque_kgcm = 46, speed_s = 0.083, source = "doc/ruddog/product-pages-ruddog-eu" },
+]
+voltage = 8.4
+torque_kgcm = 46
+speed_s = 0.083
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "dimensions", source = "doc/ruddog/product-pages-ruddog-eu", notes = "Size class from the case dimensions (40.1x20x37.4 mm); 25T spline stated on the maker's page; check the mounting holes" },
+]

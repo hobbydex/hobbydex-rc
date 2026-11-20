@@ -1,9 +1,8 @@
 id = "part/himoto/820044"
 brand = "brand/himoto"
 number = "820044"
-name = "820044"
-category = "misc"
-category_source = "fallback"
+name = "4*14 Button Head Screws"
+category = "screw"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/cluster", type = "direct", source = "doc/himoto/option-parts" },
@@ -17,4 +16,10 @@ fits = [
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E8MTL-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E8MTL&id=100093&pid=1", kind = "dealer" },
+]
+pack_qty = 6
+pack_qty_basis = "distributor"
+name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/screw/m4x14-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

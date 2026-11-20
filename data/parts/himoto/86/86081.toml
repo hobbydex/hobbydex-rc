@@ -1,10 +1,9 @@
 id = "part/himoto/86081"
 brand = "brand/himoto"
 number = "86081"
-name = "86081"
-category = "misc"
-category_source = "fallback"
-documents = ["doc/himoto/option-parts"]
+name = "M3 x 3 Grub Hex Screws"
+category = "screw"
+documents = ["doc/himoto/option-parts", "doc/himoto/monstercars"]
 fits = [
   { kit = "kit/himoto/edc-16", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/edt-16", type = "direct", source = "doc/himoto/option-parts" },
@@ -16,3 +15,15 @@ fits = [
   { kit = "kit/himoto/ext-16", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/sct-16", type = "direct", source = "doc/himoto/option-parts" },
 ]
+name_source = "dealer"
+notes = "Name known from a dealer (Monster Cars). Colour read from the maker's product photo."
+links = [
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_410", kind = "dealer" },
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_689", kind = "dealer" },
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_690", kind = "dealer" },
+  { site = "Monster Cars", url = "https://www.monstercars.nl/index.php?cPath=25_361_405_691", kind = "dealer" },
+]
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]
+color = "black"

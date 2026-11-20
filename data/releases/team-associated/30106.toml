@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "30106"
 name = "TC6 Factory Team"
 gtin = "784695301061"
+dimensions = { length_mm = 381, width_mm = 190, weight_g = 1330, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/TC6/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/TC6/Factory_Team/" },
 ]
@@ -221,4 +222,16 @@ contains = [
   { part = "part/team-associated/89216", role = "kit", step = "Wheel & Tire Build / Install - Bag L - Step 4", qty = 10, source = "doc/team-associated/tc6-manual-and-catalog-8-9-2011" },
   { part = "part/team-associated/9180", role = "kit", step = "Servo Build / Install - Bag K - Step 1; Servo Build / Install - Bag K - Step 2", qty = 1, source = "doc/team-associated/tc6-manual-and-catalog-8-9-2011" },
   { part = "part/team-associated/4673", role = "kit", step = "Bumper Build / Install - Bag I - Step 1", qty = 6, source = "doc/team-associated/tc6-manual-and-catalog-8-9-2011" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/30106-page", note = "1:10 scale electric motor" },
+  { item = "esc", source = "doc/team-associated/30106-page", note = "1:10 scale electronic speed control" },
+  { item = "battery", source = "doc/team-associated/30106-page", note = "7.4V LiPo, 6.0V LiFe" },
+  { item = "charger", source = "doc/team-associated/30106-page" },
+  { item = "radio", source = "doc/team-associated/30106-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/30106-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/30106-page", note = "steering servo" },
+  { item = "body", source = "doc/team-associated/30106-page", note = "1:10 scale (190mm) Lexan touring car body" },
+  { item = "paint", source = "doc/team-associated/30106-page", note = "Lexan-specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/30106-page", note = "1:10 scale rubber or foam touring car tires" },
 ]

@@ -10,6 +10,7 @@ status = "released"
 seen_by = "2023-05"
 seen_by_source = "https://web.archive.org/web/20230528115619/https://img2.associatedelectrics.com/pdf/cars_and_trucks/RC8T4e/PressRelease_092822_80948-RC8T4e.pdf"
 gtin = "784695809529"
+dimensions = { length_mm = 560, source = "https://60years.associatedelectrics.com/rc8t4e-w-gearbox-upgrade-kit-lctp/" }
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc8t4e-w-gearbox-upgrade-kit-lctp/" },
 ]
@@ -192,4 +193,18 @@ contains = [
   { part = "part/team-associated/91560", role = "kit", qty = 2, step = "Clutch / Filter Build - Bag 12.1, 12.2 - Step 3 (RC8T4 Nitro)", source = "doc/team-associated/rc8t4-t4e-manual-9-2023" },
   { part = "part/team-associated/91564", role = "kit", qty = 4, step = "Differential Build (Front and Rear) - Bag 1.1, 1.2 - Step 1; Differential Build (Front and Rear) - Bag 1.1, 1.2 - Step 2; Differential Build (Center) - Bag 1.1, 1.2 - Step 5; Differential Build (Center) - Bag 1.1, 1.2 - Step 6", source = "doc/team-associated/rc8t4-t4e-manual-9-2023" },
   { part = "part/team-associated/91565", role = "kit", qty = 4, step = "Steering Blocks Build - Bag 6.1 - Step 1; Rear Hubs Build - Bag 8.1 - Step 1", source = "doc/team-associated/rc8t4-t4e-manual-9-2023" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/80952-page", note = "1:8 scale Radio-controlled car electric motor" },
+  { item = "esc", source = "doc/team-associated/80952-page", note = "Speed control" },
+  { item = "battery", source = "doc/team-associated/80952-page", note = "LiPo battery" },
+  { item = "charger", source = "doc/team-associated/80952-page", note = "Radio control battery charger (suited for the battery mentioned above)" },
+  { item = "radio", source = "doc/team-associated/80952-page", note = "2-channel RC car surface transmitter and its batteries" },
+  { item = "receiver", source = "doc/team-associated/80952-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/80952-page", note = "Steering servo" },
+  { item = "pinion", source = "doc/team-associated/80952-page", note = "Pinion gear" },
+  { item = "body", source = "doc/team-associated/80952-page", note = "1:8 Body" },
+  { item = "tyres", source = "doc/team-associated/80952-page", note = "Wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/80952-page", note = "Wheels and tires" },
+  { item = "paint", source = "doc/team-associated/80952-page", note = "Lexan specific spray paint for body" },
 ]

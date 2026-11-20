@@ -7,6 +7,7 @@ kind = "kit"
 status = "released"
 announced = "2026-06-25"
 announced_source = "https://www.bigsquidrc.com/team-associated-1-10-rc10-ultra-rider-2wd-buggy-kit/"
+dimensions = { length_mm = 381, width_mm = 226.8, wheelbase_mm = 267.7, source = "https://60years.associatedelectrics.com/rc10-ultra-rider-2wd-kit/" }
 links = [
   { site = "Associated Electrics", url = "https://60years.associatedelectrics.com/rc10-ultra-rider-2wd-kit/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-1-10-rc10-ultra-rider-2wd-buggy-kit/", kind = "press" },
@@ -83,3 +84,11 @@ contains = [
   { part = "part/team-associated/91451", role = "kit", qty = 7, step = "Nose Plate / Steering Build - Bag A - Step 1; Front Suspension Build - Bag B - Step 3", source = "doc/team-associated/rc10-ultra-rider-manual-8-3-2026" },
 ]
 gtin = "784695060609"
+needs = [
+  { item = "battery", source = "doc/team-associated/6060-page" },
+  { item = "motor", source = "doc/team-associated/6060-page" },
+  { item = "esc", source = "doc/team-associated/6060-page" },
+  { item = "servo", source = "doc/team-associated/6060-page" },
+  { item = "charger", source = "doc/team-associated/6060-page" },
+  { item = "radio", source = "doc/team-associated/6060-page", note = "Radio & Receiver" },
+]

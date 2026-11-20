@@ -132,3 +132,7 @@ contains = [
   { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/20175c-xp120-dvc-manual-online-fcc" },
   { part = "part/team-associated/92630", role = "listed", source = "doc/team-associated/20175c-xp120-dvc-manual-online-fcc" },
 ]
+needs = [
+  { item = "battery", source = "doc/team-associated/20175-page", note = "#20175: 2S LiPo battery with T-Plug connector fitting 100x30x20mm space" },
+  { item = "charger", source = "doc/team-associated/20175-page", note = "Suitable battery charger" },
+]

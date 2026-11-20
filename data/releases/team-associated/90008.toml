@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "90008"
 name = "SC10 4x4 Ready-To-Run Monster Energy"
 gtin = "784695900080"
+dimensions = { weight_g = 2775, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10_4x4/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC10_4x4/RTR/" },
 ]
@@ -148,4 +149,8 @@ contains = [
   { part = "part/team-associated/91032", role = "listed", source = "doc/team-associated/cat-sc104x4" },
   { part = "part/team-associated/91039", role = "listed", source = "doc/team-associated/cat-sc104x4" },
   { part = "part/team-associated/91155", role = "listed", source = "doc/team-associated/cat-sc104x4" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/90008-page" },
+  { item = "charger", source = "doc/team-associated/90008-page", note = "Appropriate battery charger" },
 ]

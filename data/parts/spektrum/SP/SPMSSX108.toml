@@ -11,5 +11,9 @@ links = [
 ]
 dimensions_mm = [23, 12, 22]
 weight_g = 10
-torque_kgcm = 3.0
+torque_kgcm = 2.51
 voltage = 4.8
+performance = [
+  { voltage = 4.8, torque_kgcm = 2.51, torque_ozin = 34.9, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 6, torque_kgcm = 3.01, torque_ozin = 41.8, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]

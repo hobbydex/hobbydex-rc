@@ -119,3 +119,7 @@ contains = [
   { part = "part/element-rc/42198", role = "listed", source = "doc/element-rc/pressrelease-013124-bushido-plus-parts-list2" },
   { part = "part/element-rc/42199", role = "listed", source = "doc/element-rc/pressrelease-013124-bushido-plus-parts-list2" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40122-page", note = "Radio-controlled car battery pack" },
+  { item = "charger", source = "doc/element-rc/40122-page", note = "Radio control battery charger" },
+]

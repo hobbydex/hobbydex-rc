@@ -1,0 +1,21 @@
+id = "part/protek-rc/PTK-5149-26"
+brand = "brand/protek-rc"
+number = "PTK-5149-26"
+name = "2S 60C Low IR 1/28 Hard Case LiPo (7.6v/440mah) w/2mm Bullets"
+category = "battery"
+category_source = "curated"
+links = [
+  { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-2s-60c-low-ir-1-28-hard-case-lipo-7.6v-440mah-w-2mm-bullets-ptk-5149-26/p1788048" },
+]
+chemistry = "lipo"
+cells = 2
+voltage = 7.6
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 440
+weight_g = 22
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-440mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 60
+case = "hard"

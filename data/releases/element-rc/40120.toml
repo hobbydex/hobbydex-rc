@@ -114,3 +114,7 @@ contains = [
   { part = "part/team-associated/4673", role = "kit", step = "Bag 11 - Gate 02 Body", qty = 4, source = "doc/element-rc/sendero-hd-black-5-2023-manual" },
   { part = "part/team-associated/7187", role = "kit", step = "Bag 11 - Gate 03 Body", qty = 2, source = "doc/element-rc/sendero-hd-black-5-2023-manual" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40120-page", note = "Radio-controlled car battery pack (Reedy #758)" },
+  { item = "charger", source = "doc/element-rc/40120-page", note = "Radio control battery charger (Reedy #27201)" },
+]

@@ -1,15 +1,18 @@
 id = "part/mugen/E0545B"
 brand = "brand/mugen"
 number = "E0545B"
-name = "E0545B"
-name_source = "ocr"
+name = "MBX8 Damper Rod Ends & Spring Retainers Set"
+name_source = "dealer"
 pack_qty = 2
 pack_qty_basis = "manual"
-notes = "Name read by OCR from Mugen's scanned parts list; the engines did not agree on every character"
+notes = "AMain Hobbies lists this number as MUGE0545B (MUG is the dealer's prefix for Mugen Seiki)."
 fits = [
   { kit = "kit/mugen/mbx8t", type = "direct", source = "doc/mugen/mbx8tr-part-list" },
   { kit = "kit/mugen/mbx8t-eco", type = "direct", source = "doc/mugen/mbx8tr-eco-part-list" },
 ]
+links = [
+  { site = "AMain Hobbies", url = "https://www.amainhobbies.com/mugen-seiki-mbx8-damper-rod-ends-spring-retainers-set-muge0545b/p1632237", kind = "dealer" },
+]
 documents = ["doc/mugen/mbx8tr-eco-part-list", "doc/mugen/mbx8tr-part-list"]
-category = "misc"
-category_source = "fallback"
+category = "shock"
+shock_part = "shaft"

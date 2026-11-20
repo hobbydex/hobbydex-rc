@@ -24,3 +24,8 @@ dead_band_us = 4
 frequency_hz = 330
 notes = "JX files it under Large Size servo; Stall torque 128 kg.cm at 12 V, 160 kg.cm at 15 V, 215 kg.cm at 18 V; speed 0.19 s/60deg at 12 V, 0.17 s/60deg at 15 V, 0.15 s/60deg at 18 V; lead 265 mm."
 links = [{ site = "JX Servo", url = "http://www.jx-servo.com/en/Product/L/2025-07-31/625.html" }]
+performance = [
+  { voltage = 12, torque_kgcm = 128, speed_s = 0.19, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 15, torque_kgcm = 160, speed_s = 0.17, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 18, torque_kgcm = 215, speed_s = 0.15, source = "doc/jx/product-pages-jx-servo-com" },
+]

@@ -1,9 +1,8 @@
 id = "part/himoto/23643"
 brand = "brand/himoto"
 number = "23643"
-name = "23643"
-category = "misc"
-category_source = "fallback"
+name = "E Clips 2.5"
+category = "clip"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/barren", type = "direct", source = "doc/himoto/option-parts" },
@@ -20,4 +19,10 @@ fits = [
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-Barren-Parts-Hop-Ups-Upgrades&brand=Himoto&model=Barren&id=62710&pid=1", kind = "dealer" },
+]
+pack_qty = 6
+pack_qty_basis = "distributor"
+name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/eclip/2.5mm", match = "functional", notes = "Shaft size from the name" },
 ]

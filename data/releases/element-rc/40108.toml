@@ -120,3 +120,7 @@ contains = [
   { part = "part/team-associated/42333", role = "kit", step = "Gate 03 Stealth Xf", qty = 1, source = "doc/element-rc/enduro-se-utron-rtr" },
   { part = "part/team-associated/4673", role = "kit", step = "Gate 01 Rear Axle", qty = 2, source = "doc/element-rc/enduro-se-utron-rtr" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40108-page" },
+  { item = "charger", source = "doc/element-rc/40108-page", note = "RC car battery charger suitable for chosen battery" },
+]

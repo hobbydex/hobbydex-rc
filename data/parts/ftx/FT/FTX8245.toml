@@ -2,6 +2,8 @@ id = "part/ftx/FTX8245"
 brand = "brand/ftx"
 number = "FTX8245"
 name = "Outback Aluminium Wheel Axle (4) Extra Long +5mm (For FTX8246)"
+seen_by = "2018-03-16"
+seen_by_source = "https://web.archive.org/web/20180316140038/http://ftx-rc.com:80/ftx-outback-aluminium-wheel-axle-4-extra-long-5mm"
 name_source = "manufacturer"
 pack_qty = 4
 pack_qty_basis = "name"
@@ -13,4 +15,7 @@ category = "drivetrain"
 material = "aluminium"
 related = [
   { part = "part/ftx/FTX8246", relation = "for", notes = "link_part_refs" },
+]
+fits = [
+  { kit = "kit/ftx/outback", type = "replaces", source = "doc/ftx/store", notes = "The product title names the Outback" },
 ]

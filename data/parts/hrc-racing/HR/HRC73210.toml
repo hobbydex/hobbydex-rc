@@ -7,3 +7,10 @@ category = "pinion"
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000023490", kind = "maker" },
 ]
+teeth = 10
+pitch_dp = 32
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/mod0.8-10t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

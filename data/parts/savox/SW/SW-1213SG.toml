@@ -24,3 +24,8 @@ equivalent_to = [
 ]
 material = "steel"
 links = [{ site = "Savox", url = "https://savox-servo.com/en/product/SW-1213SG/savox-servo-sw-1213sg-digital-high-voltage-coreless-motor-waterproof-steel-gear" }]
+performance = [
+  { voltage = 6, torque_kgcm = 32, speed_s = 0.19, source = "doc/savox/product-pages-savox-servo-com" },
+  { voltage = 7.4, torque_kgcm = 38, speed_s = 0.16, source = "doc/savox/product-pages-savox-servo-com" },
+  { voltage = 8.4, torque_kgcm = 42, speed_s = 0.14, source = "doc/savox/product-pages-savox-servo-com" },
+]

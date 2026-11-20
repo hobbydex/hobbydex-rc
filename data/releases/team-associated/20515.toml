@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "20515"
 name = "MGT 3.0 Ready-to-Run"
 gtin = "784695205154"
+dimensions = { length_mm = 482, width_mm = 374, wheelbase_mm = 307, weight_g = 3620, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/MGT3.0/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/MGT3.0/RTR/" },
 ]
@@ -78,4 +79,8 @@ contains = [
   { part = "part/team-associated/25543", role = "listed", source = "doc/team-associated/mmgt-manual" },
   { part = "part/team-associated/25586", role = "listed", source = "doc/team-associated/mmgt-manual" },
   { part = "part/team-associated/25615", role = "listed", source = "doc/team-associated/mmgt-manual" },
+]
+needs = [
+  { item = "fuel", source = "doc/team-associated/20515-page", note = "Model car fuel" },
+  { item = "tools", source = "doc/team-associated/20515-page" },
 ]

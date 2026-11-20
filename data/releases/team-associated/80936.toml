@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80936"
 name = "RC8B3.1e Team Kit"
 gtin = "784695809369"
+dimensions = { length_mm = 488, wheelbase_mm = 327.5, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8B3.1e/Team_Kit/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8B3.1e/Team_Kit/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-rc8b3-1e-electric-team-kit/", kind = "press" },
@@ -156,4 +157,16 @@ contains = [
   { part = "part/team-associated/91566", role = "kit", qty = 2, step = "Front Uprights Build - Bag 4.1, 4.2 - Step 1; Rear Uprights / Turnbuckles Build - Bag 5.2, 6.1 - Step 1", source = "doc/team-associated/rc8b3-1e-manual-7-19-2019" },
   { part = "part/team-associated/9907", role = "kit", qty = 2, step = "Servo Horns / Linkage Build - Bag 11.1, 11.2 - Step 1", source = "doc/team-associated/rc8b3-1e-manual-7-19-2019" },
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag 3.1, 3.2 - Step 2; Rear Gearbox Build - Bag 5.1, 5.2 - Step 2", qty = 6, source = "doc/team-associated/rc8b3-1e-manual-7-19-2019" },
+]
+needs = [
+  { item = "esc", source = "doc/team-associated/80936-page" },
+  { item = "motor", source = "doc/team-associated/80936-page" },
+  { item = "pinion", source = "doc/team-associated/80936-page" },
+  { item = "servo", source = "doc/team-associated/80936-page", note = "High-torque steering servo" },
+  { item = "battery", source = "doc/team-associated/80936-page", note = "4S LiPo battery and charger" },
+  { item = "charger", source = "doc/team-associated/80936-page", note = "4S LiPo battery and charger" },
+  { item = "tyres", source = "doc/team-associated/80936-page", note = "1:8 scale buggy wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/80936-page", note = "1:8 scale buggy wheels and tires" },
+  { item = "glue", source = "doc/team-associated/80936-page", note = "CA (Cyanoacrylate) glue" },
+  { item = "tools", source = "doc/team-associated/80936-page", note = "Tools: Needle nose pliers, Hobby knife, Reamer/hole punch, Ride Height Gauge" },
 ]

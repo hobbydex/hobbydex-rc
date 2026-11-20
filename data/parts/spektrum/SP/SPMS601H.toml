@@ -13,3 +13,9 @@ category = "servo"
 gear_material = "metal"
 torque_kgcm = 11.7
 voltage = 7.4
+performance = [
+  { voltage = 7.4, torque_kgcm = 11.67, torque_ozin = 162, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard stated by the maker's page" },
+]

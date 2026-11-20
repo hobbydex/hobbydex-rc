@@ -5,5 +5,9 @@ name = "HYBRID SERVO SAVER SET (IF15-2/IF15-2W)"
 category = "steering"
 
 links = [ { site = "Infinity", url = "https://www.creationmodel.net/infinity/index.php/new-products/606-hybrid-servo-saver-set-if15-2-if15-2w" } ]
+fits = [
+  { kit = "kit/infinity/if15-2", type = "replaces", source = "doc/infinity/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+  { kit = "kit/infinity/if15-2w", type = "replaces", source = "doc/infinity/store", notes = "Car named in the part's name or product page (link_car_names.py)" },
+]
 [sources]
 name = "https://www.creationmodel.net/infinity/index.php/new-products"

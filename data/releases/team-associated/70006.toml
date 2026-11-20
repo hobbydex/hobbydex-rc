@@ -133,3 +133,17 @@ contains = [
   { part = "part/team-associated/31520", role = "listed", source = "doc/team-associated/manual-70006-rc10sc5m-tk" },
   { part = "part/team-associated/4670", role = "listed", source = "doc/team-associated/manual-70006-rc10sc5m-tk" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/70006-page", note = "1:10 scale 540 size electric motor" },
+  { item = "esc", source = "doc/team-associated/70006-page", note = "1:10 scale electronic speed control" },
+  { item = "battery", source = "doc/team-associated/70006-page", note = "7.4V LiPo or 6.6V LiFe battery (saddle pack, shorty pack, or square pack)" },
+  { item = "charger", source = "doc/team-associated/70006-page", note = "Battery charger (able to charge one of the batteries mentioned above)" },
+  { item = "radio", source = "doc/team-associated/70006-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/70006-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/70006-page", note = "Steering servo" },
+  { item = "pinion", source = "doc/team-associated/70006-page", note = "Pinion gear (48 pitch)" },
+  { item = "paint", source = "doc/team-associated/70006-page", note = "Polycarbonate-specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/70006-page", note = "1:10 scale truck tires for 2.2\" truck wheels" },
+  { item = "wheels", source = "doc/team-associated/70006-page", note = "1:10 scale truck tires for 2.2\" truck wheels" },
+  { item = "glue", source = "doc/team-associated/70006-page", note = "Glue for tires and wheels" },
+]

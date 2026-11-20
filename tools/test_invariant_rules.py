@@ -226,5 +226,135 @@ class TwinParts(unittest.TestCase):
         self.assertEqual(len(rules.twin_pairs(same + other_name + other_number)), 1)
 
 
+def rel(rid, number, name, **dates):
+    return dict(id=f"release/{rid}", number=number, name=name, **dates)
+
+
+class EditionsNotGrouped(unittest.TestCase):
+    """release-editions-not-grouped: editions of one kit launched together share a range; re-releases never pair."""
+
+    def test_furitek_named_editions(self):
+        a = rel("furitek/fur-2878", "FUR-2878", "TITAN U4 ULTIMATE 24 Nebula Edition ARTR w/ MicroFlex PRO 4WS TX/RX, "
+                "TRI-UNITY PRO Sensored & Micro Tesla DigiBoard", seen_by="2026-11-12")
+        b = rel("furitek/fur-2879", "FUR-2879", "TITAN U4 ULTIMATE 24 Supernova Edition ARTR w/ MicroFlex PRO 4WS TX/RX, "
+                "TRI-UNITY PRO Sensored & Micro Tesla DigiBoard", seen_by="2026-11-12")
+        self.assertEqual(rules.edition_pair(a, b), ("edition", "nebula edition", "supernova edition"))
+        self.assertEqual(rules.market_bucket(a, b), "together")
+
+    def test_furitek_colour_editions(self):
+        tail = "ARTR with TRI-UNITY30 Next-Gen FOC Drivetrain - {} Edition"
+        a = rel("furitek/fur-2863", "FUR-2863", "KRAWL 30 FULLRANGE TRAIL PRO PICKUP " + tail.format("White"), seen_by="2026-10-26")
+        b = rel("furitek/fur-2864", "FUR-2864", "KRAWL 30 FULLRANGE TRAIL PRO PICKUP " + tail.format("Yellow"), seen_by="2026-10-26")
+        self.assertEqual(rules.edition_pair(a, b)[0], "edition")
+        self.assertEqual(rules.market_bucket(a, b), "together")
+
+    def test_race_liveries_launch_over_a_year(self):
+        base = "MINI-Z RWD MR-04 readyset JAGUAR XJR-14 "
+        a = rel("kyosho/32369le", "32369LE", base + "No.4 LM 1991", released="2026-02")
+        b = rel("kyosho/32369s17", "32369S17", base + "No.17 SUGO 1991", released="2026-12")
+        self.assertEqual(rules.edition_pair(a, b)[0], "livery")
+        self.assertEqual(rules.market_bucket(a, b), "review")
+        self.assertEqual(rules.market_bucket(a, b, rules.LIVERY_MARKET_DAYS), "together")
+
+    def test_other_products_are_no_edition(self):
+        for word in ("Limited", "Founder's", "Graphite", "Carpet", "Dirt", "Alu"):
+            a = rel("x/1", "X-100", f"Titan U4 {word} Edition ARTR")
+            b = rel("x/2", "X-101", "Titan U4 Nebula Edition ARTR")
+            self.assertIsNone(rules.edition_pair(a, b), word)
+
+    def test_colour_clause(self):
+        a = rel("maverick/150870", "150870", "Microbe Flux 1/24th Buggy - Blue", seen_by="2026-10")
+        b = rel("maverick/150871", "150871", "Microbe Flux 1/24th Buggy - Yellow", seen_by="2026-10")
+        self.assertEqual(rules.edition_pair(a, b), ("colour", "blue", "yellow"))
+        self.assertEqual(rules.market_bucket(a, b), "together")
+        # a colour code the site reads from the item number (30615C / 30615R) pairs there without a range
+        self.assertIsNone(rules.edition_pair(rel("k/1", "30615C", "Inferno Red"), rel("k/2", "30615R", "Inferno Blue")))
+        # not a colour: another product
+        self.assertIsNone(rules.edition_pair(rel("x/1", "100", "Buggy RTR Brushless"), rel("x/2", "101", "Buggy RTR")))
+
+    def test_race_number_livery(self):
+        a = rel("kyosho/32369s17", "32369S17", "MINI-Z RWD MR-04 readyset Jaguar XJR-14 No.17 SUGO 1991")
+        b = rel("kyosho/32369s18", "32369S18", "MINI-Z RWD MR-04 readyset Jaguar XJR-14 No.18 SUGO 1991")
+        self.assertEqual(rules.edition_pair(a, b)[0], "livery")
+
+    def test_tamiya_reissue_editions_stay_apart(self):
+        black = rel("tamiya/47432", "47432", "Super Clod Buster Black Edition", released="2020-05")
+        chrome = rel("tamiya/58423", "58423", "Super Clod Buster Chrome Edition", released="2008-12-20")
+        gray = rel("tamiya/92437", "92437", "Super Clod Buster Gray Edition", seen_by="2022-03")
+        for a, b in ((black, chrome), (black, gray), (chrome, gray)):
+            self.assertIsNone(rules.edition_pair(a, b))   # item numbers far apart
+            self.assertNotEqual(rules.market_bucket(a, b), "together")   # years apart
+        red = rel("tamiya/47402", "47402", 'Customized Monster Van for Racing & Show Lunch Box "Red Edition" (CW-01)',
+                  released="2019-06-15")
+        gold = rel("tamiya/49459", "49459", 'Customized Monster Van for Racing & Show Lunch Box "Gold Edition" (CW-01)',
+                   released="2011-09-17")
+        self.assertIsNone(rules.edition_pair(red, gold))
+        self.assertNotEqual(rules.market_bucket(red, gold), "together")
+
+    def test_reissue_markers_keep_apart(self):
+        javelin = rel("kyosho/30618", "30618", "Javelin re-release kit", announced="2017-08-28")
+        legendary = rel("kyosho/30618c", "30618C", "Legendary Series Javelin", released="2024-05")
+        self.assertEqual(rules.market_bucket(javelin, legendary), "apart")
+        clod = rel("tamiya/58065", "58065", "Clod Buster", released="1987-09-21")
+        self.assertEqual(rules.market_bucket(clod, rel("tamiya/58762", "58762", "Clod Buster (2026)", released="2026-09-19")),
+                         "apart")
+        original = rel("tamiya/58410", "58410", "Golf GTI", released="2009-03")
+        again = rel("tamiya/84060", "84060", "Golf GTI, red", released="2009-03",
+                    related=[{"release": "release/tamiya/58410", "relation": "rerelease-of"}])
+        self.assertEqual(rules.market_bucket(original, again), "apart")
+
+    def test_far_apart_or_undated_is_a_review(self):
+        a = rel("blackzon/1", "540230", "Slyder ST - Red", seen_by="2023-12")
+        self.assertEqual(rules.market_bucket(a, rel("blackzon/2", "540231", "Slyder ST - Blue", seen_by="2024-05")), "review")
+        self.assertEqual(rules.market_bucket(rel("x/1", "1", "A B red"), rel("x/2", "2", "A B blue")), "review")
+        # a year alone does not show a launch together
+        self.assertEqual(rules.market_bucket(rel("x/1", "1", "A B red", year=2024), rel("x/2", "2", "A B blue", year=2024)),
+                         "review")
+
+
+
+class FitsScale(unittest.TestCase):
+    """fits-scale-contradicts-kit: the scale a listing states for the car of a fits row."""
+
+    def test_listed_scales(self):
+        self.assertEqual(rules.listed_scales("RPM Front A-arm Set For 1:16 Slash"), {"1/16"})
+        self.assertEqual(rules.listed_scales("Rockslide 1/8th"), {"1/8"})
+        self.assertEqual(rules.listed_scales('1/8" bearing, 1/8 in shaft, 5/16 nut'), set())
+
+    def test_every_item_must_state_another_scale(self):
+        self.assertTrue(rules.item_scales_contradict("1/18 Ruckus 4WD", "1/10"))
+        self.assertFalse(rules.item_scales_contradict("1/10 Ruckus 4WD", "1/10"))
+        self.assertFalse(rules.item_scales_contradict("1/18 4WD Temper, 1.9 Barrage Kit/RTR", "1/12"))   # Barrage: no scale
+        self.assertFalse(rules.item_scales_contradict("Ruckus 4WD", "1/10"))
+        self.assertFalse(rules.item_scales_contradict("1/18 Ruckus 4WD", ""))
+
+    def test_a_scale_before_the_name_of_a_kit_with_none(self):
+        self.assertEqual(rules.scaled_name_scales("1/16 Mini Slash", "Mini Slash", "Traxxas"), {"1/16"})
+        self.assertEqual(rules.scaled_name_scales("For 1:16 scale Traxxas Mini Slash", "Mini Slash", "Traxxas"), {"1/16"})
+        self.assertEqual(rules.scaled_name_scales("Mini Slash 4X4", "Mini Slash", "Traxxas"), set())
+        self.assertEqual(rules.scaled_name_scales("1/16 Mini Slash", "Slash", "Traxxas"), set())   # "Mini" is not the brand
+        self.assertEqual(rules.kit_words("1/16 Slash 4X4"), {"slash"})
+        self.assertLessEqual(rules.kit_words("1/16 Slash 4X4"), rules.kit_words("Mini Slash"))
+
+class DimensionPlausible(unittest.TestCase):
+    """dimension-plausible: figures times the scale divisor are full-size figures in bounds."""
+
+    def test_plausible_cars_pass(self):
+        self.assertEqual(rules.dimension_problems({"wheelbase_mm": 257, "track_mm": 170, "length_mm": 420, "width_mm": 190,
+                                                   "weight_g": 1400}, "1/10"), [])
+        self.assertEqual(rules.dimension_problems({"wheelbase_mm": [{"mm": 239}, {"mm": 210}], "weight_g": 170}, "1/28"), [])
+        self.assertEqual(rules.dimension_problems({"wheelbase_mm": {"min": 560, "max": 580}, "weight_g": 11000}, "1/5"), [])
+
+    def test_wrong_unit_or_digit_is_flagged(self):
+        self.assertTrue(rules.dimension_problems({"wheelbase_mm": 2000}, "1/10"))
+        self.assertTrue(rules.dimension_problems({"weight_g": 3}, "1/10"))           # kilograms written as grams
+        self.assertTrue(rules.dimension_problems({"wheelbase_mm": 400, "length_mm": 300}, None))
+        self.assertTrue(rules.dimension_problems({"track_front_mm": 250, "width_mm": 190}, None))
+        self.assertEqual(rules.dimension_problems({"track_front_mm": 99.5, "width_mm": 99}, None), [])   # over the tyres
+
+    def test_no_scale_checks_only_the_ratios(self):
+        self.assertEqual(rules.dimension_problems({"wheelbase_mm": 2000}, None), [])
+
+
 if __name__ == "__main__":
     unittest.main()

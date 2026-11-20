@@ -99,3 +99,11 @@ contains = [
   { part = "part/team-associated/92164", role = "kit", qty = 6, step = "BAG 4 - Step 4", source = "doc/team-associated/30146-rc10-custom-race-car-6x6-manual" },
   { part = "part/team-associated/92292", role = "kit", qty = 4, step = "BAG 2 - Step 2", source = "doc/team-associated/30146-rc10-custom-race-car-6x6-manual" },
 ]
+needs = [
+  { item = "esc", source = "doc/team-associated/30146-page" },
+  { item = "motor", source = "doc/team-associated/30146-page" },
+  { item = "receiver", source = "doc/team-associated/30146-page" },
+  { item = "servo", source = "doc/team-associated/30146-page" },
+  { item = "battery", source = "doc/team-associated/30146-page", note = "NiMh or 2S/3S LiPo battery" },
+  { item = "charger", source = "doc/team-associated/30146-page" },
+]

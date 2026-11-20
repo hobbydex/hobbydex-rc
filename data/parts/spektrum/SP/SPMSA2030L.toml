@@ -14,6 +14,10 @@ dimensions_mm = [22, 17, 8]
 waterproof = false
 gear_material = "nylon"
 voltage_range = "3.2V - 4.2V"
-torque_kgcm = 0.3
+torque_kgcm = 0.25
 voltage = 4.2
 bearings = 1
+performance = [
+  { voltage = 4.2, torque_kgcm = 0.25, torque_ozin = 3.5, speed_s = 0.1, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+speed_s = 0.1

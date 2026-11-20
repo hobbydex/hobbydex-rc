@@ -1,15 +1,19 @@
 id = "part/himoto/28663"
 brand = "brand/himoto"
 number = "28663"
-name = "28663"
-category = "misc"
-category_source = "fallback"
+name = "Tire and Rim for Monster Truck 1 Pair"
+category = "tire"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/mastadon", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/school-bus", type = "direct", source = "doc/himoto/option-parts" },
   { kit = "kit/himoto/tracker", type = "direct", source = "doc/himoto/option-parts" },
+  { kit = "kit/himoto/tyronno", type = "direct", source = "doc/himoto/monstercars" },
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-Mastadon-Parts-Hop-Ups-Upgrades&brand=Himoto&model=Mastadon&id=62811&pid=1", kind = "dealer" },
 ]
+name_source = "dealer"
+pack_qty = 2
+pack_qty_basis = "name"
+vehicle = "monster"

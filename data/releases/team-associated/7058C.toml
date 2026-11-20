@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "7058C"
 name = "RC10T4.3 Ready-To-Run LiPo Combo"
 gtin = "784695986381"
+dimensions = { width_mm = 316, weight_g = 1756, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10T4.3/RTR-BL/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10T4.3/RTR-BL/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-rc10t4-3-rtr-trucks/", kind = "press" },
@@ -134,4 +135,7 @@ contains = [
   { part = "part/team-associated/9884", role = "kit", qty = 1, step = "Shocks Build - Step 1", source = "doc/team-associated/manual-rc10t4-3-7058" },
   { part = "part/team-associated/9885", role = "kit", qty = 1, step = "Shocks Build - Step 1", source = "doc/team-associated/manual-rc10t4-3-7058" },
   { part = "part/team-associated/9888", role = "kit", qty = 2, step = "Transmission Build - Step 1; Transmission Build - Step 2", source = "doc/team-associated/manual-rc10t4-3-7058" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/7058-page", note = "#7058: 6-cell NiMH or 2S LiPo battery pack with T-plug Connector" },
 ]

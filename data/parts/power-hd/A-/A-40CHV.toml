@@ -24,3 +24,8 @@ documents = ["doc/power-hd/a-40chv-spec-sheet"]
 links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=202" },
 ]
+performance = [
+  { voltage = 6, torque_kgcm = 25, torque_ozin = 347.2, speed_s = 0.14, source = "doc/power-hd/website" },
+  { voltage = 7.4, torque_kgcm = 35, torque_ozin = 486.1, speed_s = 0.12, source = "doc/power-hd/website" },
+  { voltage = 8.4, torque_kgcm = 40, torque_ozin = 555.5, speed_s = 0.1, source = "doc/power-hd/website" },
+]

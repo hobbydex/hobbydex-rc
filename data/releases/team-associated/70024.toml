@@ -10,6 +10,7 @@ status = "released"
 seen_by = "2023-10"
 seen_by_source = "https://web.archive.org/web/20231020005231/https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2_RT10SW/RTR/"
 gtin = "784695700246"
+dimensions = { length_mm = 492.4, width_mm = 252, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2_RT10SW/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2_RT10SW/RTR/" },
 ]
@@ -120,4 +121,8 @@ contains = [
   { part = "part/team-associated/9654", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/pro2-rt10sw-manual-2023" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/pro2-rt10sw-manual-2023" },
   { part = "part/team-associated/9831", role = "kit", qty = 2, step = "Rear Gear Shock Diff Build Tower - Step and 1 Bumper Build - Bag D - DD - Step 2; Gear Diff Build - Step 3", source = "doc/team-associated/pro2-rt10sw-manual-2023" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/70024-page", note = "Suitable NiMh or 2S or 3S LiPo RC car battery" },
+  { item = "charger", source = "doc/team-associated/70024-page", note = "Radio control battery charger" },
 ]

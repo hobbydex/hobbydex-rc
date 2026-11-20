@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "4020"
 name = "RC12R5.2 Factory Team Kit"
 gtin = "784695040205"
+dimensions = { length_mm = 273, wheelbase_mm = 199, weight_g = 225, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC12R5.2/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC12R5.2/Factory_Team/" },
 ]
@@ -102,4 +103,18 @@ contains = [
   { part = "part/team-associated/8828", role = "kit", qty = 4, step = "Turnbuckles / Side Dampers Build - Bag A-AA - Step - 3", source = "doc/team-associated/rc12r5-2-manual-and-catalog-7-16-2012" },
   { part = "part/team-associated/89229", role = "kit", qty = 10, step = "Rear Wheel / Motor Install - Bag E-EE - Step 8", source = "doc/team-associated/rc12r5-2-manual-and-catalog-7-16-2012" },
   { part = "part/team-associated/4673", role = "kit", step = "Steering Build - Bag C-CC - Step 1", qty = 6, source = "doc/team-associated/rc12r5-2-manual-and-catalog-7-16-2012" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/4020-page", note = "RC 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/4020-page", note = "R.O.A.R.-approved 3.7V LiPo battery" },
+  { item = "esc", source = "doc/team-associated/4020-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/4020-page", note = "RC electric motor" },
+  { item = "pinion", source = "doc/team-associated/4020-page", note = "Pinion gear, 64 pitch" },
+  { item = "body", source = "doc/team-associated/4020-page", note = "1:12 scale body" },
+  { item = "paint", source = "doc/team-associated/4020-page", note = "Paint for body" },
+  { item = "wheels", source = "doc/team-associated/4020-page" },
+  { item = "tyres", source = "doc/team-associated/4020-page", note = "Tires" },
+  { item = "glue", source = "doc/team-associated/4020-page", note = "Glue for wheels and tires" },
+  { item = "servo", source = "doc/team-associated/4020-page", note = "Steering servo for 1:12 scale" },
+  { item = "tools", source = "doc/team-associated/4020-page" },
 ]

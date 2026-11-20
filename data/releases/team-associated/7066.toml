@@ -10,10 +10,11 @@ status = "released"
 seen_by = "2025-04"
 seen_by_source = "https://web.archive.org/web/20250422033803/https://60years.associatedelectrics.com/related-products/7066/?sort=pricedesc&in_stock=1"
 gtin = "784695070660"
+dimensions = { length_mm = 400, width_mm = 315, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/theRC10GT/Classic/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/theRC10GT/Classic/" },
 ]
-documents = ["doc/team-associated/7066-page", "doc/team-associated/rc10gt-vintage-manua-2024-12-16-2024", "doc/team-associated/clutch-adjustment-supplement"]
+documents = ["doc/team-associated/7066-page", "doc/team-associated/rc10gt-vintage-manua-2024-12-16-2024", "doc/team-associated/clutch-adjustment-supplement", "doc/team-associated/youtube-qgU0TSIecUM"]
 contains = [
   { part = "part/team-associated/3976", role = "kit", qty = 2, step = "Transmission Build - Bag C - Step 2", source = "doc/team-associated/rc10gt-vintage-manua-2024-12-16-2024" },
   { part = "part/team-associated/3977", role = "kit", qty = 8, step = "Transmission Build - Bag C - Step 2; Wheel and Tire Build - Bag G - Step 3", source = "doc/team-associated/rc10gt-vintage-manua-2024-12-16-2024" },
@@ -84,4 +85,12 @@ contains = [
   { part = "part/team-associated/7840", role = "kit", qty = 5, step = "Wheel and Tire Build - Bag G - Step 1", source = "doc/team-associated/rc10gt-vintage-manua-2024-12-16-2024" },
   { part = "part/team-associated/7870", role = "kit", qty = 2, step = "Wheel and Tire Build - Bag G - Step 1", source = "doc/team-associated/rc10gt-vintage-manua-2024-12-16-2024" },
   { part = "part/team-associated/7871", role = "kit", qty = 2, step = "Wheel and Tire Build - Bag G - Step 2", source = "doc/team-associated/rc10gt-vintage-manua-2024-12-16-2024" },
+]
+needs = [
+  { item = "engine", source = "doc/team-associated/7066-page", note = ".12 or .15 non-pull start engine (O.S. type crank)" },
+  { item = "charger", source = "doc/team-associated/7066-page", note = "Radio control battery charger" },
+  { item = "fuel", source = "doc/team-associated/7066-page", note = "Nitro fuel" },
+  { item = "radio", source = "doc/team-associated/7066-page", note = "2-channel RC surface transmitter and its batteries" },
+  { item = "receiver", source = "doc/team-associated/7066-page", note = "2-channel receiver" },
+  { item = "battery", source = "doc/team-associated/7066-page", note = "Receiver battery pack" },
 ]

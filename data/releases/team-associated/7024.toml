@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "7024"
 name = "RC10T4 RSRTR"
 gtin = "784695070240"
+dimensions = { width_mm = 316, weight_g = 1441, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10T4/RSRTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10T4/RSRTR/" },
 ]
@@ -146,4 +147,7 @@ contains = [
   { part = "part/team-associated/9654", role = "listed", source = "doc/team-associated/cat-t4rs" },
   { part = "part/team-associated/9659", role = "listed", source = "doc/team-associated/cat-t4rs" },
   { part = "part/team-associated/9670", role = "listed", source = "doc/team-associated/cat-t4rs" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/7024-page", note = "6-cell battery pack. (LiPo batteries will not work in this configuration.)" },
 ]

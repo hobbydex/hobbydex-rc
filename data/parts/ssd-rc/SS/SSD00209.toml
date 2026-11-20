@@ -2,8 +2,14 @@ id = "part/ssd-rc/SSD00209"
 brand = "brand/ssd-rc"
 number = "SSD00209"
 name = "Pro44 Rear Axle Case for SCX10 II"
+seen_by = "2017-10-15"
+seen_by_source = "https://web.archive.org/web/20171015225230/http://www.ssd-rc.com:80/pro44-rear-axle-case-for-scx10-ii.html"
 name_source = "manufacturer"
 category = "drivetrain"
 links = [
   { site = "SSD RC", url = "https://ssd-rc.com/pro44-rear-axle-case-for-scx10-ii.html" },
 ]
+fits = [
+  { kit = "kit/axial/scx10-ii", type = "replaces", source = "doc/ssd-rc/store", notes = "The product title names the SCX10 II" },
+]
+weight_g = 100

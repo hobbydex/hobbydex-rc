@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0704"
 brand = "brand/ruddog"
 number = "RP-0704"
 name = "Racing RR1406 HV Low Profile Brushless Servo (0.06s|14.2kg)"
+seen_by = "2026-11-02"
+seen_by_source = "https://www.ruddog.eu/export/sitemap_0.xml.gz"
 category = "servo"
 gtin = "4052133023230"
 documents = ["doc/ruddog/store"]
@@ -13,3 +15,14 @@ dimensions_mm = [40.8, 20.1, 26.6]
 motor = "brushless"
 gear_material = "metal"
 voltage_range = [4.8, 8.4]
+performance = [
+  { voltage = 6, torque_kgcm = 13.1, speed_s = 0.07, source = "doc/ruddog/product-pages-ruddog-eu" },
+  { voltage = 7.4, torque_kgcm = 14.2, speed_s = 0.064, source = "doc/ruddog/product-pages-ruddog-eu" },
+  { voltage = 8.4, torque_kgcm = 14.9, speed_s = 0.061, source = "doc/ruddog/product-pages-ruddog-eu" },
+]
+voltage = 8.4
+torque_kgcm = 14.9
+speed_s = 0.061
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "close", basis = "dimensions", source = "doc/ruddog/product-pages-ruddog-eu", notes = "Size class from the case dimensions (40.8x20.1x26.6 mm); 25T spline stated on the maker's page; check the mounting holes" },
+]

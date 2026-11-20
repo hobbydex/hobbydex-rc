@@ -1,7 +1,7 @@
 id = "part/kyosho/BRG029"
 brand = "brand/kyosho"
 number = "BRG029"
-name = "Shield Bearing (7x11x3)"
+name = "Bearing Set"
 status = "discontinued"
 seen_by = "2017-10-31"
 seen_by_source = "https://web.archive.org/web/20171031230338/http://rc.kyosho.com/media/catalog/product/cache/4/small_image/500x375/9df78eab33525d08d6e5fb8d27136e95/_/b/_brg029.jpg"
@@ -16,12 +16,11 @@ fits = [
   { kit = "kit/kyosho/tf-5", type = "direct", source = "doc/kyosho/30822-tf5-readyset-mm-p" },
   { kit = "kit/kyosho/v-one-s3", type = "direct", source = "doc/kyosho/31341-vone-s3evo-xanaviz-p" },
 ]
-equivalent_to = [
-  { spec = "spec/bearing/7x11x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
-]
 seal = "metal"
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/brg029.html" },
 ]
 color = "silver"
 notes = "Colour read from the maker's product photo."
+name_source = "manufacturer"
+former_names = ["Shield Bearing (7x11x3)"]

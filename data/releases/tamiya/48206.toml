@@ -3,6 +3,7 @@ kit = "kit/tamiya/tamtech"
 brand = "brand/tamiya"
 number = "48206"
 name = "German No. 4 Tank J Type"
+dimensions = { length_mm = 200, width_mm = 81, weight_g = 275, source = "https://www.tamiya.com/japan/products/48206/index.html" }
 sources = { name = "https://www.tamiyabase.com/tamiya-models/48206", category = "https://www.tamiyabase.com/tamiya-models/48206" }
 category = "tank"
 status = "discontinued"
@@ -17,5 +18,4 @@ documents = ["doc/tamiya/48206-product-page-ja", "doc/tamiya/48206-panzerkampwag
 contains = [
   { part = "part/tamiya/0443013", role = "listed", source = "doc/tamiya/48206-panzerkampwagen-iv-ausf-j" },
   { part = "part/tamiya/11054526", role = "listed", source = "doc/tamiya/48206-panzerkampwagen-iv-ausf-j" },
-  { part = "part/tamiya/46206", role = "listed", source = "doc/tamiya/48206-panzerkampwagen-iv-ausf-j" },
 ]

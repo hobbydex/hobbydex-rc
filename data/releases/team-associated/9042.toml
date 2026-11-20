@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "9042"
 name = "RC10B4.2 Brushless Ready-To-Run"
 gtin = "784695090422"
+dimensions = { length_mm = 377, width_mm = 250, wheelbase_mm = 273, weight_g = 1530, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B4.2/Qualifer/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10B4.2/Qualifer/" },
 ]
@@ -134,4 +135,7 @@ contains = [
   { part = "part/team-associated/9880", role = "kit", qty = 2, step = "Front Suspension Build - Step 1", source = "doc/team-associated/manual-b4-2rs" },
   { part = "part/team-associated/9882", role = "kit", qty = 6, step = "Front Suspension Build - Step 1", source = "doc/team-associated/manual-b4-2rs" },
   { part = "part/team-associated/9888", role = "kit", qty = 2, step = "Transmission Build - Step 1; Transmission Build - Step 2", source = "doc/team-associated/manual-b4-2rs" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/9042-page", note = "#9042: 6-cell NiMH or 2S LiPo battery pack with High Power T Plug Connector" },
 ]

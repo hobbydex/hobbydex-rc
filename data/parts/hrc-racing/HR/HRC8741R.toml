@@ -2,9 +2,19 @@ id = "part/hrc-racing/HRC8741R"
 brand = "brand/hrc-racing"
 number = "HRC8741R"
 name = "Light Kit - 1/10 TC/Drift - LED - Wheel LED - 12mm Hex - Red (4 pcs)"
+pack_qty = 4
+pack_qty_basis = "name"
 name_source = "manufacturer"
 category = "wheel"
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000017324", kind = "maker" },
 ]
 color = "red"
+scale = "1/10"
+vehicle = "drift"
+equivalent_to = [
+  { spec = "spec/wheel-hex/12mm", match = "exact", notes = "Hex size from the name" },
+]
+universal = true
+universal_basis = "size"
+range = "hrc-racing/hrc8741-colours"

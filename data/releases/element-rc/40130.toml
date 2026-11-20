@@ -119,3 +119,7 @@ contains = [
   { part = "part/team-associated/42181", role = "kit", step = "Gate 05 Rear Portal Axle Build", qty = 2, source = "doc/element-rc/enduro-portal-axle-ecto-rtr-manual" },
   { part = "part/team-associated/42393", role = "kit", step = "Gate 02 Front And Rear Portal Axle Build", qty = 2, source = "doc/element-rc/enduro-portal-axle-ecto-rtr-manual" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40130-page", note = "Battery pack (#758 Reedy 7.4V 2S LiPo Battery)" },
+  { item = "charger", source = "doc/element-rc/40130-page", note = "Battery charger (#27201 Reedy Compact Balance Charger)" },
+]

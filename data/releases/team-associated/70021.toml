@@ -8,6 +8,7 @@ power = "brushless"
 power_source = "doc/team-associated/5-series-rtr-manual-10-11-2021"
 status = "released"
 gtin = "784695700215"
+dimensions = { length_mm = 538, width_mm = 282, wheelbase_mm = 322, weight_g = 1929, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2SC10/Method_Race_Wheels_RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Pro2SC10/Method_Race_Wheels_RTR/" },
   { site = "Red RC", url = "https://www.redrc.net/2021/10/associated-pro2-sc10-method-race-wheels-rtr/", kind = "press" },
@@ -117,4 +118,8 @@ contains = [
   { part = "part/team-associated/9654", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/5-series-rtr-manual-10-11-2021" },
   { part = "part/team-associated/9739", role = "kit", qty = 1, step = "Slipper Build - Step 1", source = "doc/team-associated/5-series-rtr-manual-10-11-2021" },
   { part = "part/team-associated/29204", role = "listed", source = "doc/team-associated/70021c-xp120-dvc-manual-waden-online" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/70021-page" },
+  { item = "charger", source = "doc/team-associated/70021-page" },
 ]

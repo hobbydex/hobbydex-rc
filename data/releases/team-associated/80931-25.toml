@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80931-25"
 name = "SC8e Kit W/ SPX8 2500K"
 gtin = "784695993761"
+dimensions = { length_mm = 616, width_mm = 305, weight_g = 4082, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC8e/Kit/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/SC8e/Kit/" },
 ]
@@ -66,4 +67,13 @@ contains = [
   { part = "part/team-associated/89454", role = "kit", source = "doc/team-associated/sc8e-manual" },
   { part = "part/team-associated/89455", role = "kit", source = "doc/team-associated/sc8e-manual" },
   { part = "part/team-associated/9630", role = "kit", source = "doc/team-associated/sc8e-manual" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/80931-25-page", note = "R/C 2-channel surface frequency radio system" },
+  { item = "esc", source = "doc/team-associated/80931-25-page" },
+  { item = "battery", source = "doc/team-associated/80931-25-page" },
+  { item = "charger", source = "doc/team-associated/80931-25-page" },
+  { item = "motor", source = "doc/team-associated/80931-25-page", note = "R/C electric motor" },
+  { item = "glue", source = "doc/team-associated/80931-25-page", note = "Tire adhesive" },
+  { item = "paint", source = "doc/team-associated/80931-25-page", note = "Paint for Lexan body" },
 ]

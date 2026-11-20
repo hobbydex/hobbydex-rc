@@ -5,6 +5,7 @@ number = "20194"
 name = "RC28R.1 Team Kit"
 kind = "kit"
 status = "released"
+dimensions = { length_mm = 160, width_mm = 83, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC28R.1/Team_Kit/" }
 notes = "Maker page (associatedelectrics.com, seen 2026-11-10): In stock, InStock; the page of 2026-10-14 said 'Shipping October' (that plan has passed; no shipped date stated); the announced date is kept"
 gtin = "784695201941"
 links = [
@@ -59,4 +60,12 @@ contains = [
   { part = "part/team-associated/27175", role = "kit", qty = 1, step = "Bag 1 - Step 2", source = "doc/team-associated/20194-rc28r-1-kit-manual-8-19-2026" },
   { part = "part/team-associated/31382", role = "kit", qty = 4, step = "Bag 6 - Step 3; Bag 7 - Step 1", source = "doc/team-associated/20194-rc28r-1-kit-manual-8-19-2026" },
   { part = "part/team-associated/6727", role = "kit", qty = 2, step = "Bag 7 - Step 2", source = "doc/team-associated/20194-rc28r-1-kit-manual-8-19-2026" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/20194-page" },
+  { item = "battery", source = "doc/team-associated/20194-page" },
+  { item = "servo", source = "doc/team-associated/20194-page" },
+  { item = "esc", source = "doc/team-associated/20194-page" },
+  { item = "charger", source = "doc/team-associated/20194-page" },
+  { item = "radio", source = "doc/team-associated/20194-page", note = "Radio and Receiver" },
 ]

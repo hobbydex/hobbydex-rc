@@ -1,9 +1,8 @@
 id = "part/himoto/21048"
 brand = "brand/himoto"
 number = "21048"
-name = "21048"
-category = "misc"
-category_source = "fallback"
+name = "Button Head Screws M2.6*22"
+category = "screw"
 documents = ["doc/himoto/option-parts"]
 fits = [
   { kit = "kit/himoto/prowler-mt", type = "direct", source = "doc/himoto/option-parts" },
@@ -17,4 +16,10 @@ fits = [
 ]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Himoto-E12-Parts-Hop-Ups-Upgrades&brand=Himoto&model=E12&id=140727&pid=1", kind = "dealer" },
+]
+pack_qty = 6
+pack_qty_basis = "distributor"
+name_source = "dealer"
+equivalent_to = [
+  { spec = "spec/screw/m2.6x22-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
 ]

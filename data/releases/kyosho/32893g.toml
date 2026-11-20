@@ -10,6 +10,7 @@ power = "brushless"
 power_source = "part/kyosho/MZ704"
 status = "released"
 gtin = "4548565497393"
+dimensions = { length_mm = 124.5, width_mm = { min = 72, max = 76 }, height_mm = 31, wheelbase_mm = 98, weight_g = 135.5, source = "https://rc.kyosho.com/en/32893g.html" }
 documents = ["doc/kyosho/32893g-product-page", "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts", "doc/kyosho/32890-mini-z-mr-04evo2-manual"]
 contains = [
   { part = "part/kyosho/71998", role = "kit", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
@@ -81,7 +82,6 @@ contains = [
   { part = "part/kyosho/MZW710-15", role = "kit", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
   { part = "part/kyosho/MZW710-25", role = "kit", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
   { part = "part/kyosho/MZW712", role = "kit", source = "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts" },
-  { part = "part/kyosho/76092", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/80464", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/80465", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/80466", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
@@ -90,7 +90,6 @@ contains = [
   { part = "part/kyosho/87033", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/87033-01", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/87033-02", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
-  { part = "part/kyosho/8854", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/MZW120B", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/MZW124", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/MZW126", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },

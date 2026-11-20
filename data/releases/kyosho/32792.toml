@@ -12,6 +12,7 @@ power = "brushless"
 power_source = "doc/kyosho/32792-product-page"
 status = "released"
 gtin = "4548565375240"
+dimensions = { length_mm = 117.7, width_mm = { min = 70, max = 76 }, height_mm = 35, wheelbase_mm = 94, weight_g = 135, source = "https://rc.kyosho.com/en/32792.html" }
 documents = ["doc/kyosho/32792-mini-z-mr-03evo-sp-chassis-set-2020-spare-and-option-parts", "doc/kyosho/mr-03evo-sp", "doc/kyosho/32792-product-page"]
 contains = [
   { part = "part/kyosho/MZW202", role = "option", source = "doc/kyosho/32792-mini-z-mr-03evo-sp-chassis-set-2020-spare-and-option-parts" },

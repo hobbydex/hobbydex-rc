@@ -6,9 +6,13 @@ seen_by = "2025-04-08"
 seen_by_source = "https://web.archive.org/web/20250408204122/https://www.yeahracing.com/image/cache/product/00137215/00137215-yeah-racing-trmx-s01db-001-250x250.jpg"
 gtin = "4894711074124"
 links = [
-  { site = "RC Team", url = "https://www.rcteam.com/en/products/yeah-racing-essential-conversion-kit-mini-maxx-mini-xrt-trmx-s01?variant=50119368802589", kind = "dealer" },
+  { site = "Yeah Racing", url = "https://www.yeahracing.com/yeah-racing-aluminum-essential-conversion-kit-fit-traxxas-mini-maxx-trmx-s01db-00137215" },
 ]
 color = "blue"
 range = "yeah-racing/trmx-s01-colours"
 category = "misc"
 category_source = "fallback"
+fits = [
+  { kit = "kit/traxxas/mini-maxx", type = "modification", source = "doc/yeah-racing/rcteam-catalogue", notes = "The dealer title names the Mini Maxx and Mini XRT" },
+  { kit = "kit/traxxas/mini-xrt", type = "modification", source = "doc/yeah-racing/rcteam-catalogue", notes = "The dealer title names the Mini Maxx and Mini XRT" },
+]

@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "20103"
 name = "RC18T2-RC18B2 Team Kit"
 gtin = "784695201033"
+dimensions = { length_mm = 252, width_mm = 182, wheelbase_mm = 165, weight_g = 500, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC18T2-RC18B2/Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC18T2-RC18B2/Team/" },
 ]
@@ -15,4 +16,13 @@ documents = ["doc/team-associated/20103-page", "doc/team-associated/18t2-blank-2
 contains = [
   { part = "part/team-associated/1736", role = "listed", source = "doc/team-associated/manual-1-18-conversion" },
   { part = "part/team-associated/2009", role = "listed", source = "doc/team-associated/manual-1-18-conversion" },
+]
+needs = [
+  { item = "motor", source = "doc/team-associated/20103-page" },
+  { item = "esc", source = "doc/team-associated/20103-page" },
+  { item = "battery", source = "doc/team-associated/20103-page" },
+  { item = "servo", source = "doc/team-associated/20103-page" },
+  { item = "receiver", source = "doc/team-associated/20103-page" },
+  { item = "paint", source = "doc/team-associated/20103-page", note = "paint for body" },
+  { item = "glue", source = "doc/team-associated/20103-page", note = "glue for tires" },
 ]

@@ -1,7 +1,8 @@
 id = "part/kyosho/SIL3000"
 brand = "brand/kyosho"
 number = "SIL3000"
-name = "Silicone Oil (3000)"
+name = "Silicone OIL #3000 (40cc)"
+gtin = "4955439758373"
 seen_by = "2017-10-15"
 seen_by_source = "https://web.archive.org/web/20171015072650/http://rc.kyosho.com/ja/accessory/siliconeoil/sil3000.html"
 fits = [
@@ -17,3 +18,9 @@ equivalent_to = [
   { spec = "spec/oil/silicone-3000cst", match = "close", notes = "Viscosity stated as a bare 3000, read as cSt; measuring temperature not given" },
 ]
 documents = ["doc/kyosho/30027-tf7-7-parts-list-v01", "doc/kyosho/31581-fw05r-p", "doc/kyosho/31582-fw05r-foam-p"]
+name_source = "manufacturer"
+former_names = ["Silicone Oil (3000)"]
+links = [
+  { site = "Kyosho (Internet Archive)", url = "https://web.archive.org/web/20171102113427/http://rc.kyosho.com/en/sil3000.html", kind = "archive" },
+]
+volume_ml = 40

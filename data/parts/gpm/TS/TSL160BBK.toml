@@ -6,12 +6,12 @@ pack_qty = 9
 pack_qty_basis = "name"
 name_source = "dealer"
 applies_to = "1/16 Mini Slash"
-fits = [
-  { kit = "kit/traxxas/mini-slash", type = "replaces", source = "doc/gpm/asiatees" },
-]
 links = [
   { site = "AsiaTees", url = "https://www.asiatees.com/display?Traxxas-1/16-Mini-Slash-Parts-Hop-Ups-Upgrades&brand=Traxxas&model=1/16%20Mini%20Slash&id=71747&pid=1", kind = "dealer" },
 ]
 category = "steering"
 color = "blue"
 material = "aluminium"
+fits = [
+  { kit = "kit/traxxas/slash-1-16", type = "replaces", source = "doc/gpm/asiatees" },
+]

@@ -11,6 +11,7 @@ status = "released"
 power = "brushless"
 power_source = "doc/kyosho/30644-mm01-im"
 gtin = "4548565447466"
+dimensions = { length_mm = 340, weight_g = 900, source = "https://rc.kyosho.com/en/30644.html" }
 documents = ["doc/kyosho/30644-mm01-spop", "doc/kyosho/30644-mm01-ex", "doc/kyosho/30644-mm01-im", "doc/kyosho/30644-product-page"]
 contains = [
   { part = "part/kyosho/1-E015", role = "kit", source = "doc/kyosho/30644-mm01-spop" },
@@ -95,7 +96,6 @@ contains = [
   { part = "part/kyosho/EFW012", role = "option", source = "doc/kyosho/30644-mm01-spop" },
   { part = "part/kyosho/EFW013", role = "option", source = "doc/kyosho/30644-mm01-spop" },
   { part = "part/kyosho/EFW014", role = "option", source = "doc/kyosho/30644-mm01-spop" },
-  { part = "part/kyosho/F222", role = "listed", source = "doc/kyosho/30644-mm01-im" },
   { part = "part/kyosho/GAB4202", role = "option", source = "doc/kyosho/30644-mm01-spop" },
   { part = "part/kyosho/GAC0100D", role = "option", source = "doc/kyosho/30644-mm01-spop" },
   { part = "part/kyosho/GAC100D", role = "option", source = "doc/kyosho/30644-mm01-spop" },

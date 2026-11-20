@@ -10,6 +10,7 @@ status = "discontinued"
 announced = "2020-03-20"
 announced_source = "https://www.redrc.net/2020/03/team-associated-rc8b3-2-team-kit-1-8th-buggy/"
 gtin = "784695809390"
+dimensions = { length_mm = 486, width_mm = 304.5, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8B3.2/Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8B3.2/Team/" },
   { site = "Red RC", url = "https://www.redrc.net/2020/03/team-associated-rc8b3-2-team-kit-1-8th-buggy/", kind = "press" },
@@ -182,4 +183,14 @@ contains = [
   { part = "part/team-associated/91565", role = "kit", qty = 4, step = "Steering Blocks Build - Bag 6.1, 6.2 - Step 1", source = "doc/team-associated/rc8b3-2-manual-3-19-2020" },
   { part = "part/team-associated/91566", role = "kit", qty = 2, step = "Steering Blocks Build - Bag 6.1, 6.2 - Step 1; Rear Hubs Build - Bag 8.1, 8.2 - Step 1", source = "doc/team-associated/rc8b3-2-manual-3-19-2020" },
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag 5.1, 5.2, 5.3 - Step 2; Rear End Build - Bag 7.1, 7.2, 7.3 - Step 2", qty = 10, source = "doc/team-associated/rc8b3-2-manual-3-19-2020" },
+]
+needs = [
+  { item = "engine", source = "doc/team-associated/80939-page", note = ".21 class rear exhaust engine" },
+  { item = "battery", source = "doc/team-associated/80939-page", note = "4.8-7.4v receiver battery" },
+  { item = "glow-starter", source = "doc/team-associated/80939-page", note = "Glow igniter (#1738)" },
+  { item = "tyres", source = "doc/team-associated/80939-page", note = "1:8 scale buggy tires" },
+  { item = "wheels", source = "doc/team-associated/80939-page", note = "1:8 scale buggy wheels" },
+  { item = "glue", source = "doc/team-associated/80939-page", note = "CA (cyanoacrylate) glue" },
+  { item = "servo", source = "doc/team-associated/80939-page", note = "Steering servo" },
+  { item = "tools", source = "doc/team-associated/80939-page" },
 ]

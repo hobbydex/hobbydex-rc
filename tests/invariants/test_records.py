@@ -6,16 +6,10 @@ from rules import BANNED_HOSTS, LOCAL_PATH, SCRAP_IMG, TAMICO_OWNER_DOCS, walk_s
 
 
 def test_part_has_category(hard):
-    """Every part has a category."""
+    """Every part has a category (misc is one; a part no rule places has the fallback, counted by
+    part-category-fallback)."""
     hard("""SELECT id AS record, 'no category' AS problem FROM records
-        WHERE kind = 'part' AND json_extract(data, '$.category') IS NULL""")
-
-
-def test_part_misc(ratchet):
-    """Parts in category misc: no source has stated what they are yet. The count is reported, not blocking: importers
-    still add parts no source categorises (partial records are kept, docs/schema.md "part")."""
-    ratchet("part-misc", """SELECT id AS record, 'category misc' AS problem FROM records
-        WHERE kind = 'part' AND json_extract(data, '$.category') = 'misc'""", blocking=False)
+        WHERE kind = 'part' AND coalesce(trim(json_extract(data, '$.category')), '') = ''""")
 
 
 def test_part_has_number(hard):
@@ -113,3 +107,26 @@ def test_local_path(ratchet, db):
         if hit:
             rows.append((rid or path, "local path in " + repr(hit[:80])))
     ratchet("local-path", rows)
+
+
+def test_dimension_plausible(hard, db):
+    """A car's dimensions fit its scale (a 1/10 car has no 2,000 mm wheelbase): every figure times the scale divisor
+    is a plausible full-size figure, the wheelbase is not longer than the car and the track not more than 5 % wider. A body's stated
+    wheelbase and track are checked the same way. Fix the figure or the unit from the maker page in dimensions.source."""
+    from rules import dimension_problems
+    kit_scale = dict(db.execute("SELECT id, json_extract(data, '$.scale') FROM records WHERE kind = 'kit'"))
+    rows = []
+    for rid, kind, data in db.execute("""SELECT id, kind, data FROM records WHERE
+            (kind IN ('kit', 'release') AND json_extract(data, '$.dimensions') IS NOT NULL)
+            OR (kind = 'part' AND json_extract(data, '$.category') IN ('body', 'body-accessory')
+                AND (json_extract(data, '$.wheelbase_mm') IS NOT NULL OR json_extract(data, '$.track_mm') IS NOT NULL
+                     OR json_extract(data, '$.track_front_mm') IS NOT NULL OR json_extract(data, '$.track_rear_mm') IS NOT NULL))"""):
+        d = json.loads(data)
+        if kind == "part":
+            dims = {k: d[k] for k in ("wheelbase_mm", "track_mm", "track_front_mm", "track_rear_mm") if k in d}
+            scale = d.get("scale")
+        else:
+            dims = d.get("dimensions") if isinstance(d.get("dimensions"), dict) else {}
+            scale = d.get("scale") or kit_scale.get(d.get("kit") if kind == "release" else rid)
+        rows += [(rid, p) for p in dimension_problems(dims, scale)]
+    hard(rows, name="dimension-plausible")

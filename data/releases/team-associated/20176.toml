@@ -8,6 +8,7 @@ power = "brushless"
 power_source = "doc/team-associated/20176-page"
 status = "released"
 gtin = "784695201767"
+dimensions = { length_mm = 304, width_mm = 202, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Reflex_14T/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Reflex_14T/RTR/" },
 ]
@@ -72,4 +73,8 @@ contains = [
   { part = "part/team-associated/29204", role = "listed", source = "doc/team-associated/xp120-dvc-manual-online-fcc" },
   { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-online-fcc" },
   { part = "part/team-associated/92630", role = "listed", source = "doc/team-associated/xp120-dvc-manual-online-fcc" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/20176-page" },
+  { item = "charger", source = "doc/team-associated/20176-page", note = "Radio control battery charger (#616 Reedy 423-S Compact Balance Charger)" },
 ]

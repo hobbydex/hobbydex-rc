@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "8022"
 name = "RC10R5.1 Factory Team"
 gtin = "784695080225"
+dimensions = { wheelbase_mm = 259, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10R5.1/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10R5.1/Factory_Team/" },
   { site = "Big Squid RC", url = "https://www.bigsquidrc.com/team-associated-rc10r5-1-factory-team/", kind = "press" },
@@ -108,4 +109,16 @@ contains = [
   { part = "part/team-associated/89223", role = "kit", qty = 10, step = "Rear Axle Build - Bag D-DD - Step 2", source = "doc/team-associated/rc10r5-1-manual-and-catalog-3-8-2013" },
   { part = "part/team-associated/89229", role = "kit", qty = 10, step = "Rear Wheel / Motor Install - Bag E-EE - Step 8", source = "doc/team-associated/rc10r5-1-manual-and-catalog-3-8-2013" },
   { part = "part/team-associated/4673", role = "kit", step = "Steering Build - Bag C-CC - Step 1", qty = 6, source = "doc/team-associated/rc10r5-1-manual-and-catalog-3-8-2013" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/8022-page", note = "R/C two channel surface frequency radio and receiver" },
+  { item = "servo", source = "doc/team-associated/8022-page", note = "1:12 scale sized servo" },
+  { item = "motor", source = "doc/team-associated/8022-page", note = "540 sized 1:10 scale electric motor" },
+  { item = "battery", source = "doc/team-associated/8022-page", note = "1S or 2S LiPo battery pack" },
+  { item = "charger", source = "doc/team-associated/8022-page", note = "Battery charger (specific for charging LiPo batteries)" },
+  { item = "esc", source = "doc/team-associated/8022-page", note = "Electronic Speed Control (ESC)" },
+  { item = "pinion", source = "doc/team-associated/8022-page", note = "64-pitch pinion gear (size determined by battery and motor combination)" },
+  { item = "body", source = "doc/team-associated/8022-page", note = "1:10 scale polycarbonate race body" },
+  { item = "paint", source = "doc/team-associated/8022-page", note = "Polycarbonate specific spray paint" },
+  { item = "tyres", source = "doc/team-associated/8022-page", note = "1:10 scale foam tires" },
 ]

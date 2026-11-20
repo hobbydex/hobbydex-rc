@@ -24,3 +24,6 @@ size_class = "low-profile"
 equivalent_to = [
   { spec = "spec/servo/low-profile-25t", match = "functional" },
 ]
+performance = [
+  { voltage = 8.4, torque_kgcm = 15.6, speed_s = 0.09, source = "doc/carson/store" },
+]

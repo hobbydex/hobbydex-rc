@@ -129,3 +129,16 @@ contains = [
   { part = "part/team-associated/94755", role = "kit", qty = 1, step = "Bumper, Anti-Roll Bar and Electronics Build - Bag G-GG - Step 9", source = "doc/team-associated/tc6-2-manual" },
   { part = "part/team-associated/4673", role = "kit", step = "Bumper, Anti-Roll Bar and Electronics Build - Bag G-GG - Step 1", qty = 6, source = "doc/team-associated/tc6-2-manual" },
 ]
+needs = [
+  { item = "motor", source = "doc/team-associated/30109-page", note = "1:10 scale electric motor" },
+  { item = "esc", source = "doc/team-associated/30109-page", note = "1:10 scale electronic speed control" },
+  { item = "battery", source = "doc/team-associated/30109-page", note = "7.4V LiPo, 6.0V LiFe battery" },
+  { item = "charger", source = "doc/team-associated/30109-page" },
+  { item = "radio", source = "doc/team-associated/30109-page", note = "2-channel surface transmitter, and its batteries" },
+  { item = "receiver", source = "doc/team-associated/30109-page", note = "2-channel receiver" },
+  { item = "servo", source = "doc/team-associated/30109-page", note = "Steering servo" },
+  { item = "body", source = "doc/team-associated/30109-page", note = "1:10 scale (190mm) polycarbonate touring car body" },
+  { item = "paint", source = "doc/team-associated/30109-page", note = "Polycarbonate-specific spray paint for body" },
+  { item = "tyres", source = "doc/team-associated/30109-page", note = "1:10 scale rubber or foam touring car tires, wheels" },
+  { item = "wheels", source = "doc/team-associated/30109-page", note = "1:10 scale rubber or foam touring car tires, wheels" },
+]

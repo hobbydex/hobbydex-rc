@@ -11,6 +11,7 @@ power = "brushless"
 power_source = "part/kyosho/65111"
 status = "discontinued"
 gtin = "4548565311040"
+dimensions = { length_mm = 475, width_mm = 300, height_mm = 154, wheelbase_mm = 320, weight_g = 2370, source = "https://rc.kyosho.com/en/34201t2.html" }
 documents = ["doc/kyosho/34201t2-dbx-ve-2-0-spop", "doc/kyosho/34201t2-dbx-ve-2-0-ex", "doc/kyosho/34201t2-dbx-ve-2-0-mm", "doc/kyosho/34201t2-dbx-ve-2-0-im", "doc/kyosho/34201t2-product-page", "doc/kyosho/youtube-nxvVDs8ifzQ", "doc/kyosho/youtube-IiVf1b5Ta4Q"]
 contains = [
   { part = "part/kyosho/1-N2630N", role = "kit", source = "doc/kyosho/34201t2-dbx-ve-2-0-ex" },
@@ -111,7 +112,6 @@ contains = [
   { part = "part/kyosho/IFH006W", role = "option", source = "doc/kyosho/34201t2-dbx-ve-2-0-spop" },
   { part = "part/kyosho/TRW108-46", role = "option", source = "doc/kyosho/34201t2-dbx-ve-2-0-spop" },
   { part = "part/kyosho/3600HV", role = "listed", source = "doc/kyosho/34201t2-dbx-ve-2-0-im" },
-  { part = "part/kyosho/CE0878", role = "listed", source = "doc/kyosho/34201t2-dbx-ve-2-0-im" },
   { part = "part/kyosho/IG001-1B", role = "kit", source = "doc/kyosho/34201t2-dbx-ve-2-0-spop" },
   { part = "part/kyosho/IG001-3GM", role = "kit", source = "doc/kyosho/34201t2-dbx-ve-2-0-spop" },
   { part = "part/kyosho/IG001-5BL", role = "kit", source = "doc/kyosho/34201t2-dbx-ve-2-0-spop" },

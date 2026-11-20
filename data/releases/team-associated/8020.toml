@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "8020"
 name = "RC10R5 Factory Team"
 gtin = "784695080201"
+dimensions = { length_mm = 368, width_mm = 197, wheelbase_mm = 255, weight_g = 898, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10R5/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC10R5/Factory_Team/" },
 ]
@@ -17,4 +18,15 @@ contains = [
   { part = "part/team-associated/31510", role = "listed", source = "doc/team-associated/drawing-rc10r5" },
   { part = "part/team-associated/31532", role = "listed", source = "doc/team-associated/drawing-rc10r5" },
   { part = "part/team-associated/3897", role = "listed", source = "doc/team-associated/drawing-rc10r5" },
+]
+needs = [
+  { item = "radio", source = "doc/team-associated/8020-page", note = "R/C 2-channel surface frequency radio system" },
+  { item = "battery", source = "doc/team-associated/8020-page", note = "Batteries" },
+  { item = "esc", source = "doc/team-associated/8020-page", note = "Electronic speed control" },
+  { item = "motor", source = "doc/team-associated/8020-page", note = "R/C electric motor" },
+  { item = "pinion", source = "doc/team-associated/8020-page", note = "Pinion gear" },
+  { item = "body", source = "doc/team-associated/8020-page", note = "1:10 scale car body" },
+  { item = "paint", source = "doc/team-associated/8020-page", note = "Paint for body" },
+  { item = "tools", source = "doc/team-associated/8020-page" },
+  { item = "servo", source = "doc/team-associated/8020-page", note = "Steering servo for 1:10 scale" },
 ]

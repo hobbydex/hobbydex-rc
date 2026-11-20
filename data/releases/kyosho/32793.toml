@@ -11,6 +11,7 @@ status = "released"
 power = "brushless"
 power_source = "doc/kyosho/32793-product-page"
 gtin = "4548565375257"
+dimensions = { length_mm = 115.5, width_mm = { min = 70, max = 76 }, height_mm = 35, wheelbase_mm = 94, weight_g = 135, source = "https://rc.kyosho.com/en/32793.html" }
 documents = ["doc/kyosho/mr-03evo-sp", "doc/kyosho/32793-product-page"]
 contains = [
   { part = "part/kyosho/SIL0150", role = "listed", source = "doc/kyosho/mr-03evo-sp" },

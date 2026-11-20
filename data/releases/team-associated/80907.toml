@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80907"
 name = "RC8.2e Factory Team"
 gtin = "784695809079"
+dimensions = { length_mm = 470, width_mm = 305, wheelbase_mm = 323, weight_g = 3570, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8.2e/Factory_Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8.2e/Factory_Team/" },
 ]
@@ -174,4 +175,14 @@ contains = [
   { part = "part/team-associated/89560", role = "kit", qty = 1, step = "Rear Bulkhead Assembly - Bag F & FF", source = "doc/team-associated/rc8-2e-manual-and-catalog-9-15-2011" },
   { part = "part/team-associated/89561", role = "kit", qty = 2, step = "Rear Suspension Assembly (cont.) - Bag G & GG", source = "doc/team-associated/rc8-2e-manual-and-catalog-9-15-2011" },
   { part = "part/team-associated/91069", role = "kit", qty = 4, step = "Shocks Assembly (cont.) - Bag J & JJ", source = "doc/team-associated/rc8-2e-manual-and-catalog-9-15-2011" },
+]
+needs = [
+  { item = "esc", source = "doc/team-associated/80907-page" },
+  { item = "motor", source = "doc/team-associated/80907-page" },
+  { item = "pinion", source = "doc/team-associated/80907-page" },
+  { item = "servo", source = "doc/team-associated/80907-page", note = "High-torque steering servo" },
+  { item = "tyres", source = "doc/team-associated/80907-page", note = "1:8 scale buggy tires" },
+  { item = "glue", source = "doc/team-associated/80907-page", note = "CA (Cyanoacrylate) glue" },
+  { item = "tools", source = "doc/team-associated/80907-page", note = "Tools: Needle nose pliers, Hobby knife, Reamer/hole punch, Ride Height Gauge" },
+  { item = "battery", source = "doc/team-associated/80907-page", note = "4S LiPo battery" },
 ]

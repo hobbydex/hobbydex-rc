@@ -4,6 +4,7 @@ brand = "brand/team-associated"
 number = "80916"
 name = "RC8B3e Team Kit"
 gtin = "784695809161"
+dimensions = { length_mm = 488, wheelbase_mm = 327.3, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8B3e/Team/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/RC8B3e/Team/" },
 ]
@@ -147,4 +148,16 @@ contains = [
   { part = "part/team-associated/91565", role = "kit", qty = 4, step = "Front Uprights Build - Bag H, I - Step 1; Rear Uprights / Turnbuckles Build - Bag L - Step 1", source = "doc/team-associated/manual-80916-rc8b3e" },
   { part = "part/team-associated/9907", role = "kit", qty = 2, step = "Receiver Box Build - Bag S - Step 1", source = "doc/team-associated/manual-80916-rc8b3e" },
   { part = "part/team-associated/81259", role = "kit", step = "Front Gearbox Build - Bag F, G - Step 2; Rear Gearbox Build - Bag J, K - Step 2", qty = 6, source = "doc/team-associated/manual-80916-rc8b3e" },
+]
+needs = [
+  { item = "esc", source = "doc/team-associated/80916-page" },
+  { item = "motor", source = "doc/team-associated/80916-page" },
+  { item = "pinion", source = "doc/team-associated/80916-page" },
+  { item = "servo", source = "doc/team-associated/80916-page", note = "High-torque steering servo" },
+  { item = "tyres", source = "doc/team-associated/80916-page", note = "1:8 scale buggy wheels and tires" },
+  { item = "wheels", source = "doc/team-associated/80916-page", note = "1:8 scale buggy wheels and tires" },
+  { item = "glue", source = "doc/team-associated/80916-page", note = "CA (Cyanoacrylate) glue" },
+  { item = "tools", source = "doc/team-associated/80916-page", note = "Tools: Needle nose pliers, Hobby knife, Reamer/hole punch, Ride Height Gauge" },
+  { item = "battery", source = "doc/team-associated/80916-page", note = "4S LiPo battery and charger" },
+  { item = "charger", source = "doc/team-associated/80916-page", note = "4S LiPo battery and charger" },
 ]

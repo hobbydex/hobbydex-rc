@@ -1,7 +1,7 @@
 id = "part/kyosho/VSW030-01"
 brand = "brand/kyosho"
 number = "VSW030-01"
-name = "2 Speed Clutch Spring (Soft / For GS15)"
+name = "2-Speed Clutch Spring(Soft/for GS15R)"
 seen_by = "2022-07-04"
 seen_by_source = "https://web.archive.org/web/20220704093316/https://rc.kyosho.com/en/vsw030-01.html"
 gtin = "4955439775790"
@@ -17,4 +17,9 @@ category = "engine-fuel"
 documents = ["doc/kyosho/vsw030-01-product-page", "doc/kyosho/v-one-s-060322"]
 links = [
   { site = "Kyosho", url = "https://rc.kyosho.com/en/vsw030-01.html" },
+]
+name_source = "manufacturer"
+former_names = ["2 Speed Clutch Spring (Soft / For GS15)"]
+related = [
+  { part = "part/kyosho/GS15R", relation = "for", notes = "link_part_refs" },
 ]

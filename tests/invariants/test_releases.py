@@ -1,7 +1,7 @@
 """Releases: names, dates and categories (the data-only checks of the daily audit, under their audit names)."""
 import collections, json, os, re, tomllib
 
-from rules import HW, complete_diff, is_body_set_doc, is_service_pack, norm_name, number_relation, same_product_record
+from rules import HW, LIVERY_MARKET_DAYS, MARKET_DAYS, complete_diff, edition_pair, market_bucket, is_body_set_doc, is_service_pack, norm_name, number_relation, same_product_record
 from snapshot import RC
 
 
@@ -156,7 +156,12 @@ def test_release_no_contents(ratchet):
 
 def test_announced_video_is_linked(hard, db):
     """A release dated by a YouTube video (announced_source) is listed by that video's document (kind video), so the
-    site can embed it; a Short or a video that names the model only in hashtags dates nothing."""
+    site can embed it; a Short or a video that names the model only in hashtags dates nothing. A video whose document
+    was retired as no longer public on YouTube keeps the day it dated (the maker published it then); it has no
+    document to list it."""
+    with open(os.path.join(RC, "data", "retired.toml"), "rb") as fh:
+        pulled = {r["id"].rsplit("/youtube-", 1)[1] for r in tomllib.load(fh).get("retired", [])
+                  if "/youtube-" in r["id"] and str(r.get("reason", "")).startswith("the video is no longer public")}
     def watch_id(url):
         m = re.search(r"[?&]v=([\w-]+)", str(url or ""))
         return m.group(1) if m and "youtube.com" in str(url) else None
@@ -170,7 +175,7 @@ def test_announced_video_is_linked(hard, db):
     for rid, src in db.execute("""SELECT id, json_extract(data, '$.announced_source') FROM records WHERE kind = 'release'
             AND truthy(json_extract(data, '$.announced'))"""):
         vid = watch_id(src)
-        if vid and vid not in linked.get(rid, set()):
+        if vid and vid not in linked.get(rid, set()) and vid not in pulled:
             rows.append((rid, f"announced by video {vid}, which no video document lists"))
     hard(rows, name="announced-video-not-linked")
 
@@ -232,3 +237,64 @@ def test_release_suffix_twin(hard, db):
                         and frozenset((a["id"], b["id"])) not in reviewed):
                     rows += [(a["id"], f"one product with {b['id']}"), (b["id"], f"one product with {a['id']}")]
     hard(rows, name="release-suffix-twin")
+
+
+def edition_pairs(db):
+    """(a, b, why, bucket) of every pair of releases of one brand, kit, kind and scale that read as editions of one
+    range by name and item number (rules.edition_pair), with how they came to market (rules.market_bucket)."""
+    groups = collections.defaultdict(list)
+    for rid, d in db.execute("""SELECT id, json_object('name', json_extract(data, '$.name'),
+            'number', json_extract(data, '$.number'), 'range', json_extract(data, '$.range'),
+            'depicts', json_extract(data, '$.depicts'), 'year', json_extract(data, '$.year'),
+            'released', json_extract(data, '$.released'), 'announced', json_extract(data, '$.announced'),
+            'seen_by', json_extract(data, '$.seen_by'), 'supersedes', json_extract(data, '$.supersedes'),
+            'related', json_extract(data, '$.related'), 'key', json_array(json_extract(data, '$.brand'),
+              json_extract(data, '$.kit'), json_extract(data, '$.kind'), coalesce(json_extract(data, '$.scale'), '')))
+            FROM records WHERE kind = 'release' AND truthy(json_extract(data, '$.kit'))
+              AND truthy(json_extract(data, '$.number')) AND json_type(data, '$.name') = 'text'"""):
+        d = json.loads(d)
+        d["id"] = rid
+        for f in ("depicts", "related"):
+            if isinstance(d.get(f), str):
+                d[f] = json.loads(d[f])
+        groups[tuple(d.pop("key"))].append(d)
+    with open(os.path.join(RC, "data", "confirmed-distinct.toml"), "rb") as f:
+        apart = {frozenset(p["releases"]) for p in tomllib.load(f).get("release_pair", [])}
+    for g in groups.values():
+        for i, a in enumerate(g):
+            for b in g[i + 1:]:
+                why = edition_pair(a, b)
+                if why:
+                    yield a, b, why, ("apart" if frozenset((a["id"], b["id"])) in apart else market_bucket(
+                        a, b, LIVERY_MARKET_DAYS if why[0] == "livery" else MARKET_DAYS))
+
+
+def test_release_editions_not_grouped(ratchet, db):
+    """Colour, livery and named editions of one kit that came to market together share a `range`: releases of one
+    brand, kit, kind and scale whose names differ only in a colour clause, an "<X> Edition" or a race-number livery,
+    with close item numbers and dates (month precision) at most 90 days apart (365 for race-number liveries). Run hobbydex-tools
+    link_release_ranges.py for the brand, or give the pair one range. Re-releases (a reissue word, a rerelease-of or
+    supersedes link) never count; pairs far apart in time are a person's call, not this check's."""
+    found = collections.defaultdict(list)
+    for a, b, why, bucket in edition_pairs(db):
+        if bucket == "together" and not (a.get("range") and a.get("range") == b.get("range")):
+            found[a["id"]].append(f"{why[0]} {why[1]!r} of {b['id']} ({why[2]!r})")
+            found[b["id"]].append(f"{why[0]} {why[2]!r} of {a['id']} ({why[1]!r})")
+    ratchet("release-editions-not-grouped", [(rid, "launched together, no shared range: " + "; ".join(ps[:3])
+                                              + (f"; {len(ps) - 3} more" if len(ps) > 3 else ""))
+                                             for rid, ps in sorted(found.items())])
+
+
+def test_release_editions_review(ratchet, db):
+    """Releases that read as colours or editions of one kit by name and item number but did not come to market
+    together (dates more than 90 days apart, 365 for race-number liveries, or a year only) and share no range: decide "same range" (give both
+    the range) or "separate releases" (list the pair in data/confirmed-distinct.toml [[release_pair]] with the
+    reason). Reported, not blocking: the linker never decides these."""
+    found = collections.defaultdict(list)
+    for a, b, why, bucket in edition_pairs(db):
+        if bucket == "review" and not (a.get("range") and a.get("range") == b.get("range")):
+            found[a["id"]].append(b["id"])
+            found[b["id"]].append(a["id"])
+    ratchet("release-editions-review", [(rid, "same range or separate releases? " + ", ".join(ps[:3])
+                                         + (f" and {len(ps) - 3} more" if len(ps) > 3 else ""))
+                                        for rid, ps in sorted(found.items())], blocking=False)

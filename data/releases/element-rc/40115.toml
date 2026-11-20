@@ -133,3 +133,7 @@ contains = [
   { part = "part/team-associated/41092", role = "kit", step = "Gate 02 Steering Build; Gate 03 Steering Build; Gate 04 Shock Build", qty = 10, source = "doc/element-rc/manual-enduro-knightrunner-rtr-blue" },
   { part = "part/team-associated/4677", role = "kit", step = "Gate 01 Front Suspension Build; Gate 02 Front Suspension Build", qty = 10, source = "doc/element-rc/manual-enduro-knightrunner-rtr-blue" },
 ]
+needs = [
+  { item = "battery", source = "doc/element-rc/40115-page", note = "Radio-controlled car battery pack (#758 Reedy 7.4V 2S LiPo Battery)" },
+  { item = "charger", source = "doc/element-rc/40115-page", note = "Radio control battery charger (#27201 Reedy Compact Balance Charger)" },
+]

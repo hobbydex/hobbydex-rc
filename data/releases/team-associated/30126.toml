@@ -8,12 +8,13 @@ power = "brushed"
 power_source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022"
 status = "released"
 gtin = "784695301269"
+dimensions = { length_mm = 458, width_mm = 190, source = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Apex2_Sport/RTR/" }
 links = [
   { site = "Associated Electrics", url = "https://www.associatedelectrics.com/teamassociated/cars_and_trucks/Apex2_Sport/RTR/" },
 ]
 announced = "2022-11-22"
 announced_source = "https://img2.associatedelectrics.com/pdf/cars_and_trucks/Apex2_Sport/RTR/PressRelease_101122_30126-Apex2-A550-Rally.pdf"
-documents = ["doc/team-associated/30126-page", "doc/team-associated/apex2-sport-a550-rally-manual-10-2022", "doc/team-associated/pressrelease-101122-30126-apex2-a550-rally", "doc/team-associated/reedy-sc500x-esc-manual-online", "doc/team-associated/xp120-dvc-manual-waden-online", "doc/team-associated/youtube-BH0hS6PhFYM", "doc/team-associated/30126c-reedy-sc500x-esc-manual-online", "doc/team-associated/30126c-xp120-dvc-manual-waden-online", "doc/team-associated/30126c-page"]
+documents = ["doc/team-associated/30126-page", "doc/team-associated/apex2-sport-a550-rally-manual-10-2022", "doc/team-associated/pressrelease-101122-30126-apex2-a550-rally", "doc/team-associated/reedy-sc500x-esc-manual-online", "doc/team-associated/xp120-dvc-manual-waden-online", "doc/team-associated/youtube-BH0hS6PhFYM", "doc/team-associated/30126c-reedy-sc500x-esc-manual-online", "doc/team-associated/30126c-xp120-dvc-manual-waden-online", "doc/team-associated/30126c-page", "doc/team-associated/youtube-JENVYiunH2U"]
 contains = [
   { part = "part/team-associated/29203", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
   { part = "part/team-associated/29256", role = "listed", source = "doc/team-associated/xp120-dvc-manual-waden-online" },
@@ -87,4 +88,8 @@ contains = [
   { part = "part/team-associated/92133", role = "kit", qty = 3, step = "Gear Diff Build - Step 1; Gear Diff Build - Step 2", source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022" },
   { part = "part/team-associated/92143", role = "kit", qty = 4, step = "Gear Diff Build - Step 1", source = "doc/team-associated/apex2-sport-a550-rally-manual-10-2022" },
   { part = "part/team-associated/29204", role = "listed", source = "doc/team-associated/30126c-xp120-dvc-manual-waden-online" },
+]
+needs = [
+  { item = "battery", source = "doc/team-associated/30126-page" },
+  { item = "charger", source = "doc/team-associated/30126-page" },
 ]

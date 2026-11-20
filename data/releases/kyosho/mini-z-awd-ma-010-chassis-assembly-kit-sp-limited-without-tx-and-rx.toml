@@ -9,6 +9,7 @@ kind = "kit"
 status = "released"
 seen_by = "2009-02"
 seen_by_source = "doc/kyosho/30570sp-awd-sp-ltd-m"
+dimensions = { width_mm = { min = 65, max = 72 }, height_mm = 43, wheelbase_mm = [{ mm = 90 }, { mm = 94 }], weight_g = 130, source = "https://rc.kyosho.com/en/30570sp.html" }
 documents = ["doc/kyosho/30570sp-product-page", "doc/kyosho/30570sp-awd-sp-ltd-p", "doc/kyosho/30570sp-awd-sp-ltd-t", "doc/kyosho/30570sp-awd-sp-ltd-m", "doc/kyosho/30570sp-awd-kit-sp-limited-m", "doc/kyosho/30570sp-awd-kit-sp-limited-p"]
 contains = [
   { part = "part/kyosho/BRG022", role = "kit", source = "doc/kyosho/30570sp-awd-sp-ltd-t" },
@@ -33,9 +34,7 @@ contains = [
   { part = "part/kyosho/MDW002", role = "listed", source = "doc/kyosho/30570sp-awd-sp-ltd-m" },
   { part = "part/kyosho/MDW023", role = "listed", source = "doc/kyosho/30570sp-awd-sp-ltd-m" },
   { part = "part/kyosho/MZ103", role = "listed", source = "doc/kyosho/30570sp-awd-sp-ltd-m" },
-  { part = "part/kyosho/D008", role = "option", source = "doc/kyosho/30570sp-awd-kit-sp-limited-m" },
   { part = "part/kyosho/MDW007-01", role = "option", source = "doc/kyosho/30570sp-awd-kit-sp-limited-m" },
-  { part = "part/kyosho/30570", role = "listed", source = "doc/kyosho/30570sp-awd-kit-sp-limited-m" },
   { part = "part/kyosho/MDW008", role = "listed", source = "doc/kyosho/30570sp-awd-kit-sp-limited-m" },
   { part = "part/kyosho/MDW018", role = "listed", source = "doc/kyosho/30570sp-awd-kit-sp-limited-m" },
 ]

@@ -2,6 +2,8 @@ id = "part/ruddog/RP-0703"
 brand = "brand/ruddog"
 number = "RP-0703"
 name = "RBL1407 HV Low-Profile Brushless Servo (0.07s|14.0kg)"
+seen_by = "2026-10-28"
+seen_by_source = "https://www.ruddog.eu/export/sitemap_0.xml.gz"
 category = "servo"
 gtin = "4052133023223"
 documents = ["doc/ruddog/store"]
@@ -13,3 +15,14 @@ dimensions_mm = [40.8, 20.3, 26.9]
 motor = "brushless"
 gear_material = "metal"
 voltage_range = [4.8, 8.4]
+performance = [
+  { voltage = 6, torque_kgcm = 12.8, speed_s = 0.08, source = "doc/ruddog/product-pages-ruddog-eu" },
+  { voltage = 7.4, torque_kgcm = 14, speed_s = 0.072, source = "doc/ruddog/product-pages-ruddog-eu" },
+  { voltage = 8.4, torque_kgcm = 14.8, speed_s = 0.066, source = "doc/ruddog/product-pages-ruddog-eu" },
+]
+voltage = 8.4
+torque_kgcm = 14.8
+speed_s = 0.066
+equivalent_to = [
+  { spec = "spec/servo/low-profile-25t", match = "close", basis = "dimensions", source = "doc/ruddog/product-pages-ruddog-eu", notes = "Size class from the case dimensions (40.8x20.3x26.9 mm); 25T spline stated on the maker's page; check the mounting holes" },
+]
