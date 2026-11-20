@@ -25,3 +25,8 @@ links = [
 fits = [
   { kit = "kit/traxxas/trx-4m", type = "replaces", source = "doc/power-hd/asiatees" },
 ]
+performance = [
+  { voltage = 4.8, torque_kgcm = 2.5, torque_ozin = 34.7, speed_s = 0.11, source = "doc/power-hd/website" },
+  { voltage = 6, torque_kgcm = 3, torque_ozin = 41.7, speed_s = 0.095, source = "doc/power-hd/website" },
+  { voltage = 7.4, torque_kgcm = 3.2, torque_ozin = 44.4, speed_s = 0.085, source = "doc/power-hd/website" },
+]

@@ -7,6 +7,7 @@ seen_by_source = "https://web.archive.org/web/20221207155846/https://rc.kyosho.c
 gtin = "4548565435005"
 fits = [
   { kit = "kit/kyosho/fantom-ep-4wd", type = "replaces", source = "doc/kyosho/30637-mm02-spop" },
+  { kit = "kit/kyosho/fantom-ep-4wd", type = "replaces", replaces = "part/kyosho/EF232", source = "doc/kyosho/30637-mm02-spop", notes = "Same part in another material (link_upgrades.py)" },
 ]
 category = "chassis"
 documents = ["doc/kyosho/efw010-product-page"]

@@ -24,3 +24,7 @@ dead_band_us = 2
 frequency_hz = 330
 notes = "JX files it under Wing servo; Stall torque 5.85 kg.cm at 4.8 V, 7.21 kg.cm at 6 V; speed 0.16 s/60deg at 4.8 V, 0.13 s/60deg at 6 V; lead 220 mm; programmable."
 links = [{ site = "JX Servo", url = "http://www.jx-servo.com/en/Product/wing/571.html" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 5.85, torque_ozin = 81.81, speed_s = 0.16, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 6, torque_kgcm = 7.21, torque_ozin = 100.15, speed_s = 0.13, source = "doc/jx/product-pages-jx-servo-com" },
+]

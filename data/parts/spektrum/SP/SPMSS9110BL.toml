@@ -16,3 +16,8 @@ voltage_range = "6.0V - 8.4V"
 torque_kgcm = 62.43
 voltage = 6
 motor = "brushless"
+performance = [
+  { voltage = 6, torque_kgcm = 62.43, torque_ozin = 867, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 7.4, torque_kgcm = 70.69, torque_ozin = 981.75, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 8.4, torque_kgcm = 88.16, torque_ozin = 1224.3, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]

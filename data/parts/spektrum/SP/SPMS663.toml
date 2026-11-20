@@ -14,3 +14,9 @@ voltage_range = "6.0V - 7.4V"
 torque_kgcm = 5.5
 voltage = 6
 material = "plastic"
+performance = [
+  { voltage = 6, torque_kgcm = 5.47, torque_ozin = 76, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]

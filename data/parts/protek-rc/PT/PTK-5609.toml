@@ -2,9 +2,18 @@ id = "part/protek-rc/PTK-5609"
 brand = "brand/protek-rc"
 number = "PTK-5609"
 name = "Silicone Hookup Wire (Black) (1 Meter) (20AWG)"
+seen_by = "2015-12-04"
+seen_by_source = "https://web.archive.org/web/20151204114014/http://www.amainhobbies.com:80/rc-cars-trucks/protek-rc-20awg-black-silicone-hookup-wire-1-meter-ptk-5609/p14632"
 category = "wire"
 category_source = "curated"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-silicone-hookup-wire-black-1-meter-20awg-ptk-5609/p1451098?v=14632" },
 ]
 color = "black"
+equivalent_to = [
+  { spec = "spec/wire/20awg", match = "functional" },
+]
+wire_awg = 20
+insulation = "silicone"
+length_mm = 1000
+range = "protek-rc/20awg-colours"

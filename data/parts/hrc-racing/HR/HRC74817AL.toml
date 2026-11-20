@@ -7,3 +7,9 @@ category = "pinion"
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000011746", kind = "maker" },
 ]
+teeth = 17
+pitch_dp = 48
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-17t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]

@@ -2,8 +2,18 @@ id = "part/protek-rc/PTK-185MINI"
 brand = "brand/protek-rc"
 number = "PTK-185MINI"
 name = "185Mini 1/12 High Torque Brushless Mini Servo (HV/Metal Case)"
+announced = "2026-08-18"
+announced_source = "https://www.competitionx.com/four-new-digital-servos-from-protek-rc/"
 category = "servo"
 category_source = "curated"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-185mini-1-12-high-torque-brushless-mini-servo-hv-metal-case-ptk-185mini/p1799126" },
+  { site = "CompetitionX", url = "https://www.competitionx.com/four-new-digital-servos-from-protek-rc/", kind = "press" },
 ]
+performance = [
+  { voltage = 6, speed_s = 0.08, source = "doc/protek-rc/product-pages-amainhobbies-com" },
+  { voltage = 7.4, speed_s = 0.06, source = "doc/protek-rc/product-pages-amainhobbies-com" },
+]
+voltage = 7.4
+speed_s = 0.06
+weight_g = 42

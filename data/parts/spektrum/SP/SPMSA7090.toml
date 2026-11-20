@@ -20,3 +20,11 @@ speed_s = 0.17
 motor = "brushless"
 bearings = 2
 bearing_kind = "ball"
+performance = [
+  { voltage = 6, torque_kgcm = 14.76, torque_ozin = 205, speed_s = 0.17, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 7.4, torque_kgcm = 15.5, torque_ozin = 215, speed_s = 0.091, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 8.4, torque_kgcm = 18, torque_ozin = 250, speed_s = 0.068, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/low-profile-23t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Low Profile and 23T spline stated by the maker's page" },
+]

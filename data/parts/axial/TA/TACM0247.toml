@@ -14,3 +14,6 @@ gear_material = "metal"
 voltage_range = "4.8V - 6.0V"
 bearings = 2
 waterproof = false
+equivalent_to = [
+  { spec = "spec/servo/standard", match = "close", basis = "maker", source = "doc/axial/horizon-part-pages", notes = "Size category Standard stated by the maker's page" },
+]

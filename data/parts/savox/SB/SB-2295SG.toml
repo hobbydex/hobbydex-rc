@@ -23,3 +23,8 @@ equivalent_to = [
 ]
 material = "steel"
 links = [{ site = "Savox", url = "https://savox-servo.com/en/product/SB-2295SG/savox-servo-sb-2295sg-digital-high-voltage-brushless-motor-steel-gear" }]
+performance = [
+  { voltage = 6, torque_kgcm = 24, speed_s = 0.07, source = "doc/savox/product-pages-savox-servo-com" },
+  { voltage = 7.4, torque_kgcm = 32, speed_s = 0.06, source = "doc/savox/product-pages-savox-servo-com" },
+  { voltage = 8.4, torque_kgcm = 40, speed_s = 0.05, source = "doc/savox/product-pages-savox-servo-com" },
+]

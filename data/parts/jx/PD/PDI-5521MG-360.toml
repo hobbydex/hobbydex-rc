@@ -22,3 +22,7 @@ bearing_kind = "ball"
 dead_band_us = 2
 notes = "JX files it under Industrial/robot servo; Stall torque 17.25 kg.cm at 4.8 V, 20.32 kg.cm at 6 V; lead 265 mm."
 links = [{ site = "JX Servo", url = "http://www.jx-servo.com/en/Product/ROBOT/441.html" }]
+performance = [
+  { voltage = 4.8, torque_kgcm = 17.25, source = "doc/jx/product-pages-jx-servo-com" },
+  { voltage = 6, torque_kgcm = 20.32, source = "doc/jx/product-pages-jx-servo-com" },
+]

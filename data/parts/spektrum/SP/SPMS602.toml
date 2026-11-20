@@ -13,3 +13,10 @@ dimensions_mm = [40, 20.3, 38]
 gear_material = "nylon"
 torque_kgcm = 3.9
 voltage = 6
+performance = [
+  { voltage = 4.8, torque_kgcm = 3.17, torque_ozin = 44, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 6, torque_kgcm = 3.89, torque_ozin = 54, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+equivalent_to = [
+  { spec = "spec/servo/standard-25t", match = "close", basis = "maker", source = "doc/spektrum/product-pages-horizonhobby-com", notes = "Size category Standard and 25T spline stated by the maker's page" },
+]

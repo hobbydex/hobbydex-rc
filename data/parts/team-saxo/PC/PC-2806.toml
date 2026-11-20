@@ -21,3 +21,11 @@ links = [
 weight_g = 9
 category = "servo"
 name_source = "manufacturer"
+performance = [
+  { voltage = 4.8, torque_kgcm = 1.95, speed_s = 0.1, source = "doc/team-saxo/store" },
+  { voltage = 6, torque_kgcm = 2.8, speed_s = 0.08, source = "doc/team-saxo/store" },
+  { voltage = 7.4, torque_kgcm = 3.5, speed_s = 0.06, source = "doc/team-saxo/store" },
+]
+voltage = 7.4
+torque_kgcm = 3.5
+speed_s = 0.06

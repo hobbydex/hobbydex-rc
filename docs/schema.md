@@ -277,11 +277,17 @@ series = "Lunch Box"
 
 `surface` (race kits only): the track surface the maker built this version for, as a list of carpet | astro | clay | dirt | asphalt | high-grip, when the maker sells surface-specific versions or says what the car is for ("Carpet Edition", "for clay tracks"). Set only from the maker's own wording, never guessed from the car type; on a kit when the whole line is for one surface.
 
-`depicts` (optional): the real vehicle the release depicts, for scale replicas of real makes (Tamiya's Porsche 911, Traxxas's TRX-4 Ford Bronco, ScaleArt's Mercedes-Benz Arocs). `model` is required. `make` is one of the curated makes in tools/validate.py `VEHICLE_MAKES` (add a make there first), spelled as the make spells itself, and may be left out when several makers built the vehicle (Tamiya's M4 Sherman, KV-1 and Centurion tanks: `depicts = { model = "M4 Sherman" }`); aliases are folded into it ("VW" is Volkswagen, "Chevy" Chevrolet, "Mercedes-AMG GT3" is Mercedes-Benz "AMG GT3"). `model` is the model as the RC maker names it, lightly normalised (no chassis code, colour, race number, kit or RTR wording, and no trailing RC, except where RC is the model's own name as in Toyota's Celica GT-Four RC). The model names the car, so sponsor, driver, team and event names are dropped ("Impreza WRX STI Team Arai" is "Impreza WRX STI", "Impreza WRC Monte Carlo" is "Impreza WRC"). Racing classes and tuners stay ("WRX STI GRC", "Ballade Sports Mugen CR-X PRO", "Zakspeed Capri Turbo"), as do the car's version words (GT3, Evo, R32, Type R, AMG, NISMO, Abarth, Rally), Mini's edition "Cooper Monte-Carlo", and a word that is unclear. A model that only dropped words would leave empty is kept for a decision by hand. A model is never only a colour or finish word (validate refuses "Red" or "Satin White"; the colour goes in `color`), and a car the name gives before the make is read there: Kyosho's "Enzo Ferrari Red" is Ferrari "Enzo", "La Ferrari Yellow" Ferrari "LaFerrari". Make is not changed ("Abarth" stays under Fiat). `year` only when the name states it ("1979 Ford Bronco"), never a re-release year. `licensed = true` only where the RC maker says so itself: a trademark sign on the make or model in its own product name, or "licensed model" on its page; left out otherwise, which does not mean unlicensed. Names only: no logos. Read from release names by link_vehicles; fictional cars (Tamiya's Clod Buster, Lunch Box, Hornet) have none. `vehiclesdb` (optional, with `make`): the car's page on VehiclesDB, `https://vehiclesdb.com/<kind>/<make slug>/<model slug>` (kind cars, trucks, motorcycles, mopeds, vans or buses), set by tools/link_vehiclesdb.py when exactly one VehiclesDB model fits `model` and the make has a `vehiclesdb` link; the kind is the one the kit category selects when the model has several kinds, else unlinked.
+`depicts` (optional): the real vehicle the release depicts, for scale replicas of real makes (Tamiya's Porsche 911, Traxxas's TRX-4 Ford Bronco, ScaleArt's Mercedes-Benz Arocs). `model` is required. `make` is one of the curated makes in tools/validate.py `VEHICLE_MAKES` (add a make there first), spelled as the make spells itself, and may be left out when several makers built the vehicle (Tamiya's M4 Sherman, KV-1 and Centurion tanks: `depicts = { model = "M4 Sherman" }`); aliases are folded into it ("VW" is Volkswagen, "Chevy" Chevrolet, "Mercedes-AMG GT3" is Mercedes-Benz "AMG GT3"). `model` is the model as the RC maker names it, lightly normalised (no chassis code, colour, race number, kit or RTR wording, and no trailing RC, except where RC is the model's own name as in Toyota's Celica GT-Four RC). The model names the car, so sponsor, driver, team and event names are dropped ("Impreza WRX STI Team Arai" is "Impreza WRX STI", "Impreza WRC Monte Carlo" is "Impreza WRC"). Racing classes and tuners stay ("WRX STI GRC", "Ballade Sports Mugen CR-X PRO", "Zakspeed Capri Turbo"), as do the car's version words (GT3, Evo, R32, Type R, AMG, NISMO, Abarth, Rally), Mini's edition "Cooper Monte-Carlo", and a word that is unclear. A model that only dropped words would leave empty is kept for a decision by hand. A model is never only a colour or finish word (validate refuses "Red" or "Satin White"; the colour goes in `color`), and a car the name gives before the make is read there: Kyosho's "Enzo Ferrari Red" is Ferrari "Enzo", "La Ferrari Yellow" Ferrari "LaFerrari". Make is not changed ("Abarth" stays under Fiat). `year` only when the name states it ("1979 Ford Bronco"), never a re-release year. `licensed = true` only where the RC maker says so itself: a trademark sign on the make or model in its own product name, or "licensed model" on its page; left out otherwise, which does not mean unlicensed. Names only: no logos. How the depicts was found, when not from the release's own name: `basis = "page"` with `source` (an https page about the release that names the make with its model code, "Elefant FAUN SLT-56"), a stated value; or `match = "likely"` (owner 2026-11-19) for a release whose name gives only a model code, with `basis = "shared-code"` and `via` (the release that states the same code; its stated depicts names this make and model: LXY's "3348" truck is likely the Mercedes-Benz "Arocs 3348" of Tamiya's kit) or `basis = "model-code"` and `source` (the make's own model page for that designation: MODO's "D7" bulldozer is likely the Caterpillar "D7"; only a code that is the make's designation itself, spaces, hyphens and case aside, so "LR926" is not Liebherr's R 926). A likely depicts is shown as likely, apart from a stated one; a code several machines share ("3363": Actros 3363 and Arocs 3363) gets none. link_vehicles sets the likely ones for the brands its `likely_brands` lists, from the stated depicts and its `[[machine]]` rows (hobbydex-tools tools/vehicle_makes.toml). Read from release names by link_vehicles; fictional cars (Tamiya's Clod Buster, Lunch Box, Hornet) have none. `vehiclesdb` (optional, with `make`): the car's page on VehiclesDB, `https://vehiclesdb.com/<kind>/<make slug>/<model slug>` (kind cars, trucks, motorcycles, mopeds, vans or buses), set by tools/link_vehiclesdb.py when exactly one VehiclesDB model fits `model` and the make has a `vehiclesdb` link; the kind is the one the kit category selects when the model has several kinds, else unlinked.
  `wikidata` and `wikipedia` (optional, set together): the Wikidata item of the depicted car (`Q` and digits, Wikidata is CC0) and the title of its English Wikipedia article, after redirects. Set by tools/link_wikidata.py only when the article titled "<make> <model>" is a car, truck or motorcycle article that belongs to the make and is not a disambiguation page; the site links the article from the release page.
 
 ```toml
 depicts = { make = "Porsche", model = "911 Carrera RSR 2.8", year = 1973 }
+```
+
+A likely one (MODO's D7 bulldozer):
+
+```toml
+depicts = { make = "Caterpillar", model = "D7", match = "likely", basis = "model-code", source = "https://www.cat.com/en_US/products/new/equipment/dozers/medium-dozers/102647.html" }
 ```
 
 The same field is allowed on a body shell (a part of category `body`) whose name names a real car ("Toyota Alphard MK1 Body"), never on body posts, mounts, decals or other body parts. It is not a part's `vehicle`, which is the vehicle type a tyre or wheel is for.
@@ -732,6 +738,23 @@ C-00180-714). The site shows it on both parts.
 
 `status` (optional): `discontinued` or `available`, the same words a release uses for being out of production. Set only where the maker or a shop states it: a note such as "Discontinued: ..." or "Listed in KO Propo's Discontinued Products Table", the store's DISC.. marker, a Kyosho product page filed under discontinued or with a discontinued buy box, or a name carrying "(Discontinued)", or a Horizon Hobby product page whose newest cached copy states availability Discontinued (tools/link_horizon_status.py; a page never clears a stored discontinued). Left out when not stated; age never decides it. tools/link_part_status.py sets it from those statements and reruns after the importers. A successor the maker names in the discontinued part's notes carries `supersedes` back to the old part, unless two old parts name it.
 
+### Required facts
+
+data/required-facts.toml lists, per part category, the facts every part of it should carry: a servo its torque,
+speed, rated voltage, voltage range and size spec; a motor brushed or brushless, kV or turns, can size and (brushless)
+sensored; a battery chemistry, cells, capacity, C rating and connector; an ESC current, cell range and battery
+connector; a tyre rim size and compound; a wheel rim size, hex and offset; a pinion teeth, pitch and bore; a spur gear
+teeth and pitch; a bearing its size spec; a complete shock its length. Each fact is one or more fields of the part (or
+of a spec it is `equivalent_to`), or a link to a spec of a kind. Parts that are accessories of the category (a servo
+case, a motor rotor: the file's `exclude_name`) carry none.
+
+`unstated` (optional, part) records a required fact the part's source does not state: a table of fact id to the https
+page or the doc id that was read, `unstated = { torque = "https://maker.example/servo-1", speed = "https://maker.example/servo-1" }`.
+Importers set it when the page they read gives no value (tools/required_facts.py `mark_unstated(part, page, ...)`, or
+the descriptor's `[required_facts]` in hobbydex-tools). It names only facts of the part's category (required-fact-unstated-valid);
+whoever fills a fact drops its marker (`drop_stale`; a stale one is reported as required-fact-unstated-stale). The invariants count, per category and fact, the parts that
+lack the fact and have no marker (docs/invariants.md); a change may only lower those counts.
+
 ## spec
 
 A generic, brand-independent specification. Category-specific fields; for
@@ -889,6 +912,48 @@ spec can still differ in case size and mounting holes, so the part keeps
 `dimensions_mm`, `weight_g`, `torque_kgcm` and `speed_s` (seconds per 60
 degrees) at `voltage`, `voltage_range`, `gear_material`, `motor` (brushless |
 coreless | cored), `connector` and `rotation_deg` (the throw, when the brand states it).
+
+A servo's size spec row says why it was linked: `basis = "maker"` when the
+maker's page states the size class (Horizon's "Servo Size Category", with its
+"Spline Count"), `basis = "dimensions"` when the case `dimensions_mm` fall in one
+size range and the name or the maker's page states the spline. Both are match
+"close" with the maker page's document as `source` where the page stated it.
+A servo whose case fits no range, or that states no spline, is not linked
+(the data invariant servo-no-size-spec counts them); nor is one whose maker
+class contradicts its case (Horizon's "Standard" for a 59.5 x 39 mm case),
+except a "Standard" case 30 mm tall or less, a low-profile one on the same
+footprint, which takes the maker's class. A side of 90 mm or more is a
+package size, not a case (servo-case-oversize).
+
+`performance` lists the torque and speed the maker states at each voltage, one
+row per voltage in ascending order:
+
+```toml
+torque_kgcm = 7.2
+voltage = 6
+speed_s = 0.11
+performance = [
+  { voltage = 6, torque_kgcm = 7.2, torque_ozin = 100, speed_s = 0.11, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 7.4, torque_kgcm = 8.6, torque_ozin = 120, speed_s = 0.1, source = "doc/spektrum/product-pages-horizonhobby-com" },
+  { voltage = 8.4, torque_kgcm = 9.3, source = "doc/spektrum/product-pages-horizonhobby-com" },
+]
+```
+
+A row has `voltage` (3 to 30), at least one of `torque_kgcm` (kg-cm) and
+`speed_s` (seconds per 60 degrees), and `source` (the document that states
+them). `torque_ozin` is the figure as stated when the maker gives oz-in; when
+the maker gives only oz-in, `torque_kgcm` is converted exactly (1 oz-in =
+0.0720077887 kg-cm, rounded to 2 decimals). Dynamic, peak and holding torque
+are not stall torque and are not rows.
+
+The top-level `torque_kgcm`, `speed_s` and `voltage` are the servo's headline
+figures, shown in lists and comparisons: one row of `performance`. Which row is
+the first source's: an importer that fixed `voltage` keeps it (Horizon's first
+stated voltage, Savox's and Hitec's highest), and a servo that had none takes
+the highest voltage the maker gives both figures for. A headline at `voltage`
+agrees with the row at that voltage (a torque converted from oz-in may be
+rounded to one decimal); tools/validate.py checks it. Set by
+tools/link_servo_pages.py in hobbydex-tools, which never changes a stated value.
 Bearings and PWM: `bearings` (an int count of 1 to 10, when the maker states one: "2 ball bearings" and "dual bearings" both give 2),
 `bearing_kind` ("ball" | "bushing", when the maker names it; it can be set without a count), `dead_band_us` (whole microseconds)
 and `frequency_hz` (the PWM rate in hz: one figure, or `[low, high]` when the maker gives a range; a figure the maker gives only as

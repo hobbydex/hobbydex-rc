@@ -1,0 +1,16 @@
+id = "part/mofo/150G001-132PH2"
+brand = "brand/mofo"
+number = "150G001-132PH2"
+name = "NanoBeast 3200Kv Brushless Motor & Reaper ESC Combo (for Axial SCX30)"
+applies_to = "SCX30"
+fits = [
+  { kit = "kit/axial/scx30", type = "direct", source = "doc/mofo/shop" },
+]
+links = [
+  { site = "Mofo RC", url = "https://moforc.com/products/scx30-nanobeast-3200kv-brushless-motor-reaper-esc-combo" },
+]
+category = "esc"
+motor_type = "brushless"
+includes = [
+  { part = "part/mofo/132PH2", qty = 1, notes = "Component named in the combo's name" },
+]

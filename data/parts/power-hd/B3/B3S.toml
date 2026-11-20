@@ -24,3 +24,8 @@ documents = ["doc/power-hd/b3s-spec-sheet"]
 links = [
   { site = "Power HD", url = "https://www.chd.hk/Product_Detail.aspx?id=221" },
 ]
+performance = [
+  { voltage = 6, torque_kgcm = 30, torque_ozin = 416.6, speed_s = 0.11, source = "doc/power-hd/website" },
+  { voltage = 7.4, torque_kgcm = 35, torque_ozin = 486.1, speed_s = 0.095, source = "doc/power-hd/website" },
+  { voltage = 8.4, torque_kgcm = 40, torque_ozin = 555.5, speed_s = 0.08, source = "doc/power-hd/website" },
+]

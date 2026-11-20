@@ -2,8 +2,13 @@ id = "part/protek-rc/PTK-10100"
 brand = "brand/protek-rc"
 number = "PTK-10100"
 name = "14x25.4x6mm MX-Speed Rear Engine Bearing"
+seen_by = "2018-01-14"
+seen_by_source = "https://web.archive.org/web/20180114094024/https://www.amainhobbies.com/protek-rc-14x25.4x6mm-mxspeed-rear-engine-bearing-ptk-10100/p180106"
 category = "bearing"
 category_source = "curated"
 links = [
   { site = "AMain Hobbies", url = "https://www.amainhobbies.com/protek-rc-14x25.4x6mm-mxspeed-rear-engine-bearing-ptk-10100/p180106" },
+]
+equivalent_to = [
+  { spec = "spec/bearing/14x25.4x6", match = "functional", notes = "Size parsed from the manufacturer's description" },
 ]
