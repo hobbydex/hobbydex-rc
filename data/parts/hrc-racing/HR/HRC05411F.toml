@@ -3,10 +3,17 @@ brand = "brand/hrc-racing"
 number = "HRC05411F"
 name = "Battery - 4 cells AAA - HRC 1100 - Receiver pack - 4.8V 1100mAh - flat - JR Plug"
 name_source = "manufacturer"
-category = "wire"
+category = "battery"
 links = [
   { site = "HRC Distribution", url = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000030401", kind = "maker" },
 ]
 equivalent_to = [
   { spec = "spec/connector/servo-jr", match = "functional" },
 ]
+voltage = 4.8
+
+[unchecked]
+chemistry = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000030401"
+cells = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000030401"
+capacity = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000030401"
+connector = "https://www.hrcdistribution.com/rc/articles.php?id_article=1000030401"

@@ -1,10 +1,17 @@
 id = "part/g-force/GB382"
 brand = "brand/g-force"
 number = "GB382"
-name = "製品仕様"
+name = "LiPoバッテリー 3.8V 800mAh(UH60)"
 gtin = "4580416463829"
 links = [
   { site = "G-Force", url = "https://www.gforce-hobby.jp/products/GB400-a.html" },
 ]
-category = "misc"
-category_source = "fallback"
+category = "battery"
+chemistry = "lipo"
+cells = 1
+capacity_mah = 800
+voltage = 3.8
+
+[unstated]
+c-rating = "https://www.gforce-hobby.jp/products/GB400-a.html"
+connector = "https://www.gforce-hobby.jp/products/GB400-a.html"

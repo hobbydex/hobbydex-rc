@@ -8,8 +8,15 @@ links = [
   { site = "Gens ace", url = "https://gensace.de/fr/products/gens-ace-25c-3000mah-2s2p-7-4v-saddle-airsoft-gun-lipo-battery-with-mini-deans-t-plug" },
 ]
 gtin = "6928493309872"
-category = "wire"
-connectors = ["Deans"]
+category = "battery"
+connector = "Deans"
 rebrand_of = [
   { part = "part/spektrum/SPMA9603", notes = "The name gives Spektrum's model code \"7.4V\" (7.4V 2000mAh 2S Li-Ion Transmitter Battery and AC Adapter); firmware, plug or packaging may differ (link_rebrands.py)" },
 ]
+chemistry = "lipo"
+cells = 2
+voltage = 7.4
+
+[unchecked]
+capacity = "https://gensace.de/fr/products/gens-ace-25c-3000mah-2s2p-7-4v-saddle-airsoft-gun-lipo-battery-with-mini-deans-t-plug"
+c-rating = "https://gensace.de/fr/products/gens-ace-25c-3000mah-2s2p-7-4v-saddle-airsoft-gun-lipo-battery-with-mini-deans-t-plug"

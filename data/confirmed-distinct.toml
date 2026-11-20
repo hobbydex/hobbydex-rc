@@ -10,6 +10,11 @@
 # colours or editions of one kit, but that the maker sells as separate
 # releases (a re-release, a later run); hobbydex-tools link_release_ranges.py
 # never puts them in one range.
+#
+# [[shared_page]]: a part that links a maker page whose address carries
+# another item number of the brand, and that page sells this part (its
+# title, SKU or line-up names this part's number). The invariant
+# part-page-of-namesake skips these links.
 
 [[pair]]
 parts = ["part/tamiya/10005300", "part/tamiya/10005800"]
@@ -586,3 +591,23 @@ reason = "80939R is the maker's own listing of the kit refurbished (its own prod
 [[release_pair]]
 releases = ["release/xray/350021-C", "release/xray/xb8-2026"]
 reason = "350021-C is the XB8'26 kit with an FX K303 engine (a combo); 350021 is the kit alone, and the maker lists both"
+
+[[shared_page]]
+part = "part/kyosho/IFW332-01B"
+url = "https://rc.kyosho.com/en/ifw332-01.html"
+reason = "Kyosho's page at the IFW332-01 address is titled \"Bush(for Auluminum knockle Arm/4Pcs) IFW332-01B\": the address keeps the earlier number"
+
+[[shared_page]]
+part = "part/reve-d/DT-AS-012"
+url = "https://teamreved.com/product/dt-as-014"
+reason = "one page for both pack sizes: \"DT-AS-012/014 HG Drift Tire AS-01 (2Pcs./4Pcs)\", DT-AS-012 the pair, DT-AS-014 the four"
+
+[[shared_page]]
+part = "part/udirc/LAM16-03"
+url = "https://www.udirc.com/products/lam16-02"
+reason = "the store's product at handle lam16-02 is \"UDIRC Split LED Light Kit for UD1610PRO (Part No. LAM16-03)\" with SKU LAM16-03"
+
+[[shared_page]]
+part = "part/mugen/H0466C"
+url = "https://mugenshop.eu/en/REAR-BODY-MOUNT/H0466-C"
+reason = "the MRX-4X manual prints H0466C, the store H0466-C: the store prints a hyphen before the letter (hobbydex/hobbydex-rc#2879)"
