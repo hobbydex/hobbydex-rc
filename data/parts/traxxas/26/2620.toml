@@ -1,8 +1,11 @@
 id = "part/traxxas/2620"
 brand = "brand/traxxas"
 number = "2620"
-name = "2620"
+name = "2.5x23mm Cap-Head Machine Screws"
 notes = "Read by OCR from a Traxxas exploded-view image; no parts list names it"
-category = "misc"
-category_source = "fallback"
+category = "screw"
 documents = ["doc/traxxas/82034-4-exploded-traxx-assembly"]
+name_source = "manufacturer"
+equivalent_to = [
+  { spec = "spec/screw/m2.5x23-socket-cap-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

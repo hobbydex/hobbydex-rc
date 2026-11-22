@@ -2,6 +2,8 @@ id = "part/onisiki/ONI7343"
 brand = "brand/onisiki"
 number = "ONI7343"
 name = "NUE 5000mAh 2S 7.4V 100C 5mm LCG Lipo Battery"
+seen_by = "2025-02-06"
+seen_by_source = "https://web.archive.org/web/20250206185033/https://www.onisiki.com/onisiki-nue-5000mah-2s-7-4v-100c-5mm-lcg-lipo-battery-oni7343-00120337?tag=LiPo"
 category = "battery"
 links = [
   { site = "Onisiki", url = "https://www.onisiki.com/onisiki-nue-5000mah-2s-7-4v-100c-5mm-lcg-lipo-battery-oni7343-00120337" },
@@ -10,7 +12,11 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.4
 
-[unstated]
-capacity = "https://www.onisiki.com/onisiki-nue-5000mah-2s-7-4v-100c-5mm-lcg-lipo-battery-oni7343-00120337"
-c-rating = "https://www.onisiki.com/onisiki-nue-5000mah-2s-7-4v-100c-5mm-lcg-lipo-battery-oni7343-00120337"
-connector = "https://www.onisiki.com/onisiki-nue-5000mah-2s-7-4v-100c-5mm-lcg-lipo-battery-oni7343-00120337"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 5000
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-5000mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 100
+connector = "XT60"

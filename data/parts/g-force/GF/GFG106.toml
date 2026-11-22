@@ -13,7 +13,12 @@ chemistry = "lihv"
 cells = 2
 voltage = 7.6
 
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 2500
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-2500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
 [unstated]
-capacity = "https://www.gforce-hobby.jp/products/GFG103.html"
 c-rating = "https://www.gforce-hobby.jp/products/GFG103.html"
 connector = "https://www.gforce-hobby.jp/products/GFG103.html"

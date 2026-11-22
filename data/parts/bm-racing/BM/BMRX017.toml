@@ -2,7 +2,14 @@ id = "part/bm-racing/BMRX017"
 brand = "brand/bm-racing"
 number = "BMRX017"
 name = "Wheel Nut M2"
+seen_by = "2021-06-18"
+seen_by_source = "https://bmracing.cc/wp-sitemap-posts-product-1.xml"
 category = "nut"
 links = [
   { site = "BM Racing", url = "https://bmracing.cc/product/bm-racing-wheel-nut-m2-bmrx017-2" },
+]
+color = "silver"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/nut/m2-wheel", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
 ]

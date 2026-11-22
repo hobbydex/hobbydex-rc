@@ -10,5 +10,7 @@ links = [
 pack_qty = 10
 pack_qty_basis = "name"
 
-[unstated]
-size = "https://www.rcmart.com/sitemap3.xml"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "metal"

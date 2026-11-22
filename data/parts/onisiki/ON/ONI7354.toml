@@ -2,6 +2,8 @@ id = "part/onisiki/ONI7354"
 brand = "brand/onisiki"
 number = "ONI7354"
 name = "350mAh 2S 7.4V 50C Lipo Battery For 1/27 1/28 1/24 Mini RC"
+seen_by = "2024-07-05"
+seen_by_source = "https://web.archive.org/web/20240705230557/https://www.onisiki.com/image/cache/product/00131049/00131049-onisiki-oni7354-001-800x800.jpg"
 category = "battery"
 links = [
   { site = "Onisiki", url = "https://www.onisiki.com/onisiki-350mah-2s-7-4v-50c-lipo-battery-for-1-27-1-28-1-24-mini-rc-oni7354-00131049" },
@@ -10,7 +12,10 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.4
 
-[unstated]
-capacity = "https://www.onisiki.com/onisiki-350mah-2s-7-4v-50c-lipo-battery-for-1-27-1-28-1-24-mini-rc-oni7354-00131049"
-c-rating = "https://www.onisiki.com/onisiki-350mah-2s-7-4v-50c-lipo-battery-for-1-27-1-28-1-24-mini-rc-oni7354-00131049"
-connector = "https://www.onisiki.com/onisiki-350mah-2s-7-4v-50c-lipo-battery-for-1-27-1-28-1-24-mini-rc-oni7354-00131049"
+capacity_mah = 350
+weight_g = 10
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-350mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 50
+connector = "XT60"

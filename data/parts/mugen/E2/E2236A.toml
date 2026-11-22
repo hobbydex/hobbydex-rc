@@ -8,3 +8,7 @@ links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/SPUR-GEAR-48T-HT-DIFF./E2236a" },
 ]
 category = "differential"
+fits = [
+  { kit = "kit/mugen/mbx8", releases = ["release/mugen/e2027"], type = "replaces", source = "doc/mugen/e2027-part-list-eu", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mugen/mbx8t", releases = ["release/mugen/e2029"], type = "replaces", source = "doc/mugen/e2029-mbx-8tr-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

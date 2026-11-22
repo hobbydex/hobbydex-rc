@@ -2,12 +2,21 @@ id = "part/nexx-racing/NX-289"
 brand = "brand/nexx-racing"
 number = "NX-289"
 name = "Jaguar 1 12 motorcycle rc with brushless motor and servo"
+seen_by = "2022-09-23"
+seen_by_source = "https://web.archive.org/web/20220923210756/https://nexxracing.com/product/nx-289-nexxbike-juguar-1-12-motorcycle-rc/"
 category = "servo"
 notes = "Name read from the words of rcMart's product address (its sitemap gives no title for it)."
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-289-nexxbike-juguar-1-12-motorcycle-rc/" },
 ]
 
+performance = [
+  { voltage = 4.8, speed_s = 0.12, source = "doc/nexx-racing/product-pages-nexxracing-com" },
+  { voltage = 6, torque_kgcm = 2, torque_ozin = 28, speed_s = 0.1, source = "doc/nexx-racing/product-pages-nexxracing-com" },
+]
+voltage = 6
+torque_kgcm = 2
+speed_s = 0.1
 [unstated]
 torque = "https://www.rcmart.com/sitemap3.xml"
 speed = "https://www.rcmart.com/sitemap3.xml"

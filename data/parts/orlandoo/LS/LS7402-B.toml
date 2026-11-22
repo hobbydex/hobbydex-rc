@@ -10,7 +10,10 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.4
 
+capacity_mah = 120
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-120mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 30
 [unchecked]
-capacity = "https://speedshop24.de/orlandoo-hunter-at-olls7402-b-lipo-7-4v-120mah-30c-2s-battery-ph2-0-2-pin-ol-ls7402-b-en"
-c-rating = "https://speedshop24.de/orlandoo-hunter-at-olls7402-b-lipo-7-4v-120mah-30c-2s-battery-ph2-0-2-pin-ol-ls7402-b-en"
 connector = "https://speedshop24.de/orlandoo-hunter-at-olls7402-b-lipo-7-4v-120mah-30c-2s-battery-ph2-0-2-pin-ol-ls7402-b-en"

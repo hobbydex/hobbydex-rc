@@ -2,9 +2,14 @@ id = "part/d-like/DL130121"
 brand = "brand/d-like"
 number = "DL130121"
 name = "6.2×12×0.15mm Washer"
+seen_by = "2019-07-18"
+seen_by_source = "https://web.archive.org/web/20190718223645/http://www.d-like.net/?pid=140152386"
 category = "washer-shim"
 links = [
   { site = "D-Like", url = "https://www.d-like.net/?pid=140152386" },
 ]
 name_ja = "6.2×12×0.15mm ワッシャー"
 notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+equivalent_to = [
+  { spec = "spec/washer/6.2x12x0.15", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

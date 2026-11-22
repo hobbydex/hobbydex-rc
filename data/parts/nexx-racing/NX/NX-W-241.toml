@@ -2,9 +2,16 @@ id = "part/nexx-racing/NX-W-241"
 brand = "brand/nexx-racing"
 number = "NX-W-241"
 name = "Washer 2x4x1mm"
+seen_by = "2026-03-06"
+seen_by_source = "https://nexxracing.com/wp-sitemap-posts-product-1.xml"
 category = "washer-shim"
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-w-241-nexx-racing-washer-2x4x1mm-6pcs/" },
 ]
 pack_qty = 6
 pack_qty_basis = "name"
+color = "silver"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/washer/2x4x1", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

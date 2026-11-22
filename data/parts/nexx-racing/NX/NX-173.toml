@@ -2,12 +2,19 @@ id = "part/nexx-racing/NX-173"
 brand = "brand/nexx-racing"
 number = "NX-173"
 name = "7075-T6 Alu Hard-Anodized 10T-64P Pinion"
+seen_by = "2021-04-19"
+seen_by_source = "https://web.archive.org/web/20210419084442/https://nexxracing.com/product/nx-173-7075-t6-alu-hard-anodized-10t-64p-pinion/"
 category = "pinion"
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-173-7075-t6-alu-hard-anodized-10t-64p-pinion/" },
 ]
 
+teeth = 10
+pitch_dp = 64
+material = "aluminium"
+material_grade = "7075-T6"
+equivalent_to = [
+  { spec = "spec/pinion/64dp-10t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
 [unstated]
-teeth = "https://nexxracing.com/product/nx-173-7075-t6-alu-hard-anodized-10t-64p-pinion/"
-pitch = "https://nexxracing.com/product/nx-173-7075-t6-alu-hard-anodized-10t-64p-pinion/"
 bore = "https://nexxracing.com/product/nx-173-7075-t6-alu-hard-anodized-10t-64p-pinion/"

@@ -8,3 +8,7 @@ links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/SERVO-SAVER-PARTS/T2303-Ca" },
 ]
 category = "steering"
+fits = [
+  { kit = "kit/mugen/mrx6", releases = ["release/mugen/mrx6x"], type = "replaces", source = "doc/mugen/h2008-mrx-6x-partlist", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/mugen/mtx7", releases = ["release/mugen/mtx7"], type = "replaces", source = "doc/mugen/mtx7-part-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -10,7 +10,12 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.6
 
-[unstated]
-capacity = "https://www.onisiki.com/onisiki-nue-4500mah-2s-7-6v-140c-hv-5mm-lcg-shorty-lipo-battery-oni7345-00123843"
-c-rating = "https://www.onisiki.com/onisiki-nue-4500mah-2s-7-6v-140c-hv-5mm-lcg-shorty-lipo-battery-oni7345-00123843"
-connector = "https://www.onisiki.com/onisiki-nue-4500mah-2s-7-6v-140c-hv-5mm-lcg-shorty-lipo-battery-oni7345-00123843"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 4500
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 140
+case = "shorty"
+connector = "XT60"

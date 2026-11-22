@@ -2,6 +2,8 @@ id = "part/bm-racing/BMRXPRO023-5"
 brand = "brand/bm-racing"
 number = "BMRXPRO023-5"
 name = "BMR-X PRO Bearing 5x8x2.5（）"
+seen_by = "2024-03-20"
+seen_by_source = "https://bmracing.cc/wp-sitemap-posts-product-1.xml"
 category = "bearing"
 links = [
   { site = "BM Racing", url = "https://bmracing.cc/product/bmr-x-pro-bearing-5x8x2-5%ef%bc%884pcs%ef%bc%89bmrxpro023-5" },
@@ -9,5 +11,6 @@ links = [
 pack_qty = 4
 pack_qty_basis = "name"
 
-[unstated]
-size = "https://bmracing.cc/product/bmr-x-pro-bearing-5x8x2-5%ef%bc%884pcs%ef%bc%89bmrxpro023-5"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

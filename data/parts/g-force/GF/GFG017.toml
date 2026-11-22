@@ -2,6 +2,8 @@ id = "part/g-force/GFG017"
 brand = "brand/g-force"
 number = "GFG017"
 name = "Arrow Head LiPo 7.4V 4800mAh 120C/240C"
+seen_by = "2024-06-04"
+seen_by_source = "https://web.archive.org/web/20240604033206/https://www.gforce-hobby.jp/images/products/GFG017-2.jpg"
 category = "battery"
 gtin = "4580416500173"
 links = [
@@ -11,7 +13,12 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.4
 
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 4800
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-4800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 120
 [unstated]
-capacity = "https://www.gforce-hobby.jp/products/GFG016.html"
-c-rating = "https://www.gforce-hobby.jp/products/GFG016.html"
 connector = "https://www.gforce-hobby.jp/products/GFG016.html"

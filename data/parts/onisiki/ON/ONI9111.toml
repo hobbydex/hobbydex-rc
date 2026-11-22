@@ -2,9 +2,18 @@ id = "part/onisiki/ONI9111"
 brand = "brand/onisiki"
 number = "ONI9111"
 name = "Aluminum 7075 M3X8 Hex Socket Flat Head Screws"
+seen_by = "2022-01-24"
+seen_by_source = "https://web.archive.org/web/20220124063600/https://www.onisiki.com/onisiki-aluminum-7075-m3x8-hex-socket-flat-head-screws-10pcs-oni9111-00107798"
 category = "screw"
 links = [
   { site = "Onisiki", url = "https://www.onisiki.com/onisiki-aluminum-7075-m3x8-hex-socket-flat-head-screws-10pcs-oni9111-00107798" },
 ]
 pack_qty = 10
 pack_qty_basis = "name"
+color = "black"
+notes = "Colour read from the maker's product photo."
+material = "aluminium"
+material_grade = "7075"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-countersunk-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

@@ -2,9 +2,16 @@ id = "part/nexx-racing/NX-W-04"
 brand = "brand/nexx-racing"
 number = "NX-W-04"
 name = "Washer 2×3.5×0.4mm"
+seen_by = "2026-03-06"
+seen_by_source = "https://nexxracing.com/wp-sitemap-posts-product-1.xml"
 category = "washer-shim"
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-w-04-nexx-racing-washer-2x3-5x0-4mm-6pcs/" },
 ]
 pack_qty = 6
 pack_qty_basis = "name"
+color = "silver"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/washer/2x3.5x0.4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

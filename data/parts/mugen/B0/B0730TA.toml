@@ -3,10 +3,15 @@ brand = "brand/mugen"
 number = "B0730TA"
 name = "M3X8 B/H TITANIUM SCREW (8)"
 gtin = "4944925042096"
-notes = "Revision letter of B0730T: the store prints the number as B0730Ta"
+notes = "Revision letter of B0730T: the store prints the number as B0730Ta. Colour read from the maker's product photo."
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/M3X8-B-H-TITANIUM-SCREW-8/B0730Ta" },
 ]
 pack_qty = 8
 pack_qty_basis = "name"
 category = "screw"
+color = "silver"
+material = "titanium"
+equivalent_to = [
+  { spec = "spec/screw/m3x8-button-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

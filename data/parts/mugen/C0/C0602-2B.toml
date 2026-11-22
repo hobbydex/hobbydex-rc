@@ -2,7 +2,7 @@ id = "part/mugen/C0602-2B"
 brand = "brand/mugen"
 number = "C0602-2B"
 name = "BEARING 5x8x2.5"
-notes = "Revision letter of C0602-2: the store prints the number as C0602-2b"
+notes = "Revision letter of C0602-2: the store prints the number as C0602-2b. Colour read from the maker's product photo."
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/KUGELLAGER-5X8-10/C0602-2b" },
 ]
@@ -10,5 +10,7 @@ category = "bearing"
 gtin = "4944925046582"
 
 
-[unstated]
-size = "https://www.mugenshop.eu/en/KUGELLAGER-5X8-10/C0602-2b"
+color = "silver"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

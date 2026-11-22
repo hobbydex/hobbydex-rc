@@ -2,11 +2,20 @@ id = "part/bm-racing/BM-S002"
 brand = "brand/bm-racing"
 number = "BM-S002"
 name = "Full Metal Servo 1/24 1/27 Mini-Z"
+seen_by = "2022-09-20"
+seen_by_source = "https://bmracing.cc/wp-sitemap-posts-product-1.xml"
 category = "servo"
 links = [
   { site = "BM Racing", url = "https://bmracing.cc/product/bm-racing-programmable-digital-servo%ef%bc%88bm-s002%ef%bc%89" },
 ]
 
+performance = [
+  { voltage = 4.8, torque_kgcm = 1.2, source = "doc/bm-racing/product-pages-bmracing-cc" },
+  { voltage = 6, torque_kgcm = 1.4, source = "doc/bm-racing/product-pages-bmracing-cc" },
+]
+voltage = 6
+torque_kgcm = 1.4
+weight_g = 9.35
 [unstated]
 torque = "https://www.rcmart.com/sitemap2.xml"
 speed = "https://www.rcmart.com/sitemap2.xml"

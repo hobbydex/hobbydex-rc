@@ -8,7 +8,11 @@ links = [
   { site = "rcMart", url = "https://www.rcmart.com/kawada-super-duralumin-pinion-64p-41t-pnb41-00003150", kind = "dealer" },
 ]
 
+teeth = 41
+pitch_dp = 64
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/64dp-41t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
 [unstated]
-teeth = "https://www.rcmart.com/sitemap1.xml"
-pitch = "https://www.rcmart.com/sitemap1.xml"
 bore = "https://www.rcmart.com/sitemap1.xml"

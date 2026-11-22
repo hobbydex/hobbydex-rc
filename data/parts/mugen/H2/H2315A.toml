@@ -8,3 +8,7 @@ links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/Battery-Plate-CFRP-MRX7/H2315a" },
 ]
 category = "chassis"
+material = "carbon"
+fits = [
+  { kit = "kit/mugen/mrx7", releases = ["release/mugen/h2009"], type = "replaces", source = "doc/mugen/h2009-part-list-eu", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

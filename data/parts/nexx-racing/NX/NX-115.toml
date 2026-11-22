@@ -2,6 +2,8 @@ id = "part/nexx-racing/NX-115"
 brand = "brand/nexx-racing"
 number = "NX-115"
 name = "M2 Lock Nut (RED)"
+seen_by = "2020-07-28"
+seen_by_source = "https://nexxracing.com/wp-sitemap-posts-product-1.xml"
 category = "nut"
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-115-nexx-racing-m2-lock-nut-4pcs-red/" },
@@ -9,3 +11,6 @@ links = [
 pack_qty = 4
 pack_qty_basis = "name"
 color = "red"
+equivalent_to = [
+  { spec = "spec/nut/m2-lock", match = "functional", notes = "Thread and type read from the manufacturer's description; the standard is not cited by the brand" },
+]

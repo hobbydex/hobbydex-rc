@@ -2,9 +2,16 @@ id = "part/nexx-racing/NX-154"
 brand = "brand/nexx-racing"
 number = "NX-154"
 name = "Hexagon Socket Set Screw M3x3"
+seen_by = "2021-04-17"
+seen_by_source = "https://web.archive.org/web/20210417231854/https://nexxracing.com/product/nx-154-nexx-racing-cnc-7075-alu-upper-frame-for-kyosho-mr03/"
 category = "screw"
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-154-nexx-racing-hexagon-socket-set-screw-m3x3-6pcs/" },
 ]
 pack_qty = 6
 pack_qty_basis = "name"
+color = "black"
+notes = "Colour read from the maker's product photo."
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

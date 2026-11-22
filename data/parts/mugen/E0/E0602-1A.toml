@@ -3,11 +3,13 @@ brand = "brand/mugen"
 number = "E0602-1A"
 name = "Bearings (5x10x4)"
 gtin = "4944925046629"
-notes = "Revision letter of E0602-1: the store prints the number as E0602-1a"
+notes = "Revision letter of E0602-1: the store prints the number as E0602-1a. Colour read from the maker's product photo."
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/KUGELLAGER-5X10X4-MBX-6-6T-10/E0602-1a" },
 ]
 category = "bearing"
 
-[unchecked]
-size = "https://www.mugenshop.eu/en/KUGELLAGER-5X10X4-MBX-6-6T-10/E0602-1a"
+color = "silver"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -2,13 +2,19 @@ id = "part/kawada/PNB14"
 brand = "brand/kawada"
 number = "PNB14"
 name = "Super duralumin 64p 14t pinion gear"
+seen_by = "2020-08-20"
+seen_by_source = "https://web.archive.org/web/20200820150658/http://www.kawadamodel.co.jp/cargo/image/PNB14.jpg"
 category = "pinion"
 notes = "Name read from the words of rcMart's product address (its sitemap gives no title for it)."
 links = [
   { site = "rcMart", url = "https://www.rcmart.com/kawada-super-duralumin-64p-14t-pinion-gear-pnb14-00078716", kind = "dealer" },
 ]
 
+teeth = 14
+pitch_dp = 64
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/64dp-14t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
 [unstated]
-teeth = "https://www.rcmart.com/sitemap1.xml"
-pitch = "https://www.rcmart.com/sitemap1.xml"
 bore = "https://www.rcmart.com/sitemap1.xml"
