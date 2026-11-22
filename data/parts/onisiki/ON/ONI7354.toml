@@ -10,7 +10,10 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.4
 
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-350mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+capacity_mah = 350
+c_rating = 50
 [unstated]
-capacity = "https://www.onisiki.com/onisiki-350mah-2s-7-4v-50c-lipo-battery-for-1-27-1-28-1-24-mini-rc-oni7354-00131049"
-c-rating = "https://www.onisiki.com/onisiki-350mah-2s-7-4v-50c-lipo-battery-for-1-27-1-28-1-24-mini-rc-oni7354-00131049"
 connector = "https://www.onisiki.com/onisiki-350mah-2s-7-4v-50c-lipo-battery-for-1-27-1-28-1-24-mini-rc-oni7354-00131049"
