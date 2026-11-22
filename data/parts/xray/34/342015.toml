@@ -11,6 +11,7 @@ category = "chassis"
 documents = ["doc/xray/342015-product-page"]
 fits = [
   { kit = "kit/xray/rx8", releases = ["release/xray/340007"], type = "replaces", source = "doc/xray/portal-7400" },
+  { kit = "kit/xray/rx8", type = "replaces", replaces = "part/xray/342010", source = "doc/xray/portal-7400", notes = "Same part in another material (link_upgrades.py)" },
 ]
 material = "aluminium"
 material_grade = "7075-T6"
