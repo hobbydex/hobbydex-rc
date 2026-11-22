@@ -2,11 +2,18 @@ id = "part/schumacher/U3824"
 brand = "brand/schumacher"
 number = "U3824"
 name = "Driveshaft; Steel Rear - Mi4CX (pr)"
+seen_by = "2013-11-17"
+seen_by_source = "https://web.archive.org/web/20131117122643/http://www.racing-cars.com:80/sp/category/New_Cars_and_Parts/subcategory/Mi5/templateid/12/searchbox7/Transmission.html"
 gtin = "5051294043261"
-seen_by = "2014-12-31"
-seen_by_source = "https://web.archive.org/web/20141231111955/http://www.racing-cars.com:80/pp/New_Cars_and_Parts/Mi5evo/U3824.html"
 name_source = "manual"
 documents = ["doc/schumacher/mi4cxl-manual"]
 category = "drivetrain"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi6evo/driveshaft-steel-rear-pr-mi4cx-mi6evo-u3824" } ]
 material = "steel"
+fits = [
+  { kit = "kit/schumacher/mi4cx", type = "direct", source = "doc/schumacher/mi4cx-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi4cxl", type = "direct", source = "doc/schumacher/mi4cxl-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi5", type = "direct", source = "doc/schumacher/mi5-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6", type = "direct", source = "doc/schumacher/mi6-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6evo", type = "direct", source = "doc/schumacher/mi6evo-exploded", notes = "Shown on the car's exploded diagram" },
+]

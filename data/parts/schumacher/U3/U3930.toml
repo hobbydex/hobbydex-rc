@@ -10,3 +10,7 @@ documents = ["doc/schumacher/mi4cxl-manual"]
 category = "gear"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi5/pulley-fences-20t-u3930" } ]
 teeth = 20
+fits = [
+  { kit = "kit/schumacher/cougar-kf", type = "direct", source = "doc/schumacher/kf-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi6evo", type = "direct", source = "doc/schumacher/mi6evo-exploded", notes = "Shown on the car's exploded diagram" },
+]

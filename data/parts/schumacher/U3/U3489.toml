@@ -2,10 +2,14 @@ id = "part/schumacher/U3489"
 brand = "brand/schumacher"
 number = "U3489"
 name = "Servo Mounts - Mi4LP (pr)"
+seen_by = "2010-01-14"
+seen_by_source = "https://web.archive.org/web/20100114045136/http://www.racing-cars.com:80/sp/category/New_Cars_and_Parts/subcategory/Mi4LP_Pro_CF/templateid/12/searchbox7/Chassis_Parts.html"
 gtin = "5051294032982"
-seen_by = "2011-04-07"
-seen_by_source = "https://web.archive.org/web/20110407080816/http://www.racing-cars.com:80/pp/New_Cars_and_Parts/Mi4LP_Race_S1/U3489.html"
 name_source = "manual"
 documents = ["doc/schumacher/mi4cxl-manual"]
 category = "chassis"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi4lp-race-s1/servo-mounts-mi4lp-pr-u3489" } ]
+fits = [
+  { kit = "kit/schumacher/mi4cx", type = "direct", source = "doc/schumacher/mi4cx-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi4cxl", type = "direct", source = "doc/schumacher/mi4cxl-exploded", notes = "Shown on the car's exploded diagram" },
+]
