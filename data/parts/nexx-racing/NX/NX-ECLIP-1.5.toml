@@ -2,9 +2,14 @@ id = "part/nexx-racing/NX-ECLIP-1.5"
 brand = "brand/nexx-racing"
 number = "NX-ECLIP-1.5"
 name = "E-clip D1.5"
+seen_by = "2026-03-18"
+seen_by_source = "https://nexxracing.com/wp-sitemap-posts-product-1.xml"
 category = "clip"
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-eclip-1-5-nexx-racing-e-clip-d1-5-5pcs/" },
 ]
 pack_qty = 5
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/eclip/1.5mm", match = "functional", notes = "Shaft size from the name" },
+]

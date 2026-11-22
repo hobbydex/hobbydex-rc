@@ -2,9 +2,14 @@ id = "part/nexx-racing/NX-154"
 brand = "brand/nexx-racing"
 number = "NX-154"
 name = "Hexagon Socket Set Screw M3x3"
+seen_by = "2022-05-31"
+seen_by_source = "https://nexxracing.com/wp-sitemap-posts-product-1.xml"
 category = "screw"
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-154-nexx-racing-hexagon-socket-set-screw-m3x3-6pcs/" },
 ]
 pack_qty = 6
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/screw/m3x3-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

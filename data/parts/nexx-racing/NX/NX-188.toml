@@ -2,9 +2,14 @@ id = "part/nexx-racing/NX-188"
 brand = "brand/nexx-racing"
 number = "NX-188"
 name = "3x5x0.2mm Shim"
+seen_by = "2021-03-29"
+seen_by_source = "https://nexxracing.com/wp-sitemap-posts-product-1.xml"
 category = "washer-shim"
 links = [
   { site = "Nexx Racing", url = "https://nexxracing.com/product/nx-188-nexx-racing-3x5x0-2mm-shim-20pcs/" },
 ]
 pack_qty = 20
 pack_qty_basis = "name"
+equivalent_to = [
+  { spec = "spec/washer/3x5x0.2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
