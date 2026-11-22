@@ -2,10 +2,15 @@ id = "part/schumacher/U3528"
 brand = "brand/schumacher"
 number = "U3528"
 name = "C/F Upper Link Mount; 39mm 3gr - Mi4"
+seen_by = "2012-07-11"
+seen_by_source = "https://web.archive.org/web/20120711175955/http://www.racing-cars.com/images/Technical_info/Schumacher/Old%20Cars/Mi4LP/Exploded%20Diagram/mi4-LP_exploded_L.pdf"
 gtin = "5051294033392"
-seen_by = "2016-02-16"
-seen_by_source = "https://web.archive.org/web/20160216174436/http://www.racing-cars.com:80/pp/Old_Cars_and_Parts/Mi-4/U3528.html"
 name_source = "manual"
 documents = ["doc/schumacher/mi4cxl-manual"]
 category = "chassis"
 links = [ { site = "Schumacher", url = "https://www.racing-cars.com/1-10th-touring/mi4lp-race-s1/c-f-upper-link-mount-39mm-3gr-mi4-u3528" } ]
+fits = [
+  { kit = "kit/schumacher/mi4", type = "direct", source = "doc/schumacher/mi-4-exploded-l", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi4cx", type = "direct", source = "doc/schumacher/mi4cx-exploded", notes = "Shown on the car's exploded diagram" },
+  { kit = "kit/schumacher/mi4cxl", type = "direct", source = "doc/schumacher/mi4cxl-exploded", notes = "Shown on the car's exploded diagram" },
+]
