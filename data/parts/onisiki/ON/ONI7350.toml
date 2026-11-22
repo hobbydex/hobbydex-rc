@@ -12,8 +12,14 @@ pack_qty_basis = "name"
 chemistry = "lipo"
 voltage = 6.0
 
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+capacity_mah = 4500
+c_rating = 140
+case = "shorty"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
 [unstated]
-cells = "https://www.rcmart.com/sitemap3.xml"
-capacity = "https://www.rcmart.com/sitemap3.xml"
 connector = "https://www.rcmart.com/sitemap3.xml"
-c-rating = "https://www.rcmart.com/sitemap3.xml"
