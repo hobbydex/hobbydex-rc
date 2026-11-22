@@ -2,10 +2,14 @@ id = "part/axon/BM-SZ-085F"
 brand = "brand/axon"
 number = "BM-SZ-085F"
 name = "SPORTS BALL BEARING 8x5x2.5 ZZ Flanged 10pic"
+seen_by = "2022-03-18"
+seen_by_source = "https://web.archive.org/web/20220318092110/http://www.team-axon.com/products/bearing/sportsballbearing.html"
 category = "bearing"
 links = [
   { site = "AXON", url = "http://www.team-axon.com/products/bearing/sportsballbearing.html" },
 ]
 
-[unstated]
-size = "http://www.team-axon.com/products/bearing/sportsballbearing.html"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "metal"

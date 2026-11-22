@@ -2,13 +2,18 @@ id = "part/axon/GP-A6-031"
 brand = "brand/axon"
 number = "GP-A6-031"
 name = "64p 31t pinion gear"
+seen_by = "2017-05-21"
+seen_by_source = "https://web.archive.org/web/20170521133515/http://www.team-axon.com:80/products/pinion/pinion.html"
 category = "pinion"
 notes = "Name read from the words of rcMart's product address (its sitemap gives no title for it)."
 links = [
   { site = "AXON", url = "http://www.team-axon.com/products/pinion/pinion.html" },
 ]
 
+equivalent_to = [
+  { spec = "spec/pinion/64dp-31t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+teeth = 31
+pitch_dp = 64
 [unstated]
-teeth = "https://www.rcmart.com/sitemap2.xml"
-pitch = "https://www.rcmart.com/sitemap2.xml"
 bore = "https://www.rcmart.com/sitemap2.xml"
