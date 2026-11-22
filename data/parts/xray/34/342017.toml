@@ -12,3 +12,6 @@ category = "chassis"
 material = "aluminium"
 material_grade = "7075-T6"
 documents = ["doc/xray/rx8-2023-part-list", "doc/xray/rx8-2026-part-list", "doc/xray/rx8e-2023-part-list", "doc/xray/rx8e-2026-part-list"]
+fits = [
+  { kit = "kit/xray/rx8", type = "replaces", replaces = "part/xray/342010", source = "doc/xray/rx8-2023-manual", notes = "Same part in another material (link_upgrades.py)" },
+]
