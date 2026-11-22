@@ -2,10 +2,14 @@ id = "part/axon/BM-SZ-1812"
 brand = "brand/axon"
 number = "BM-SZ-1812"
 name = "SPORTS BALL BEARING 18x12x4 ZZ 10pic"
+seen_by = "2022-03-18"
+seen_by_source = "https://web.archive.org/web/20220318092110/http://www.team-axon.com/products/bearing/sportsballbearing.html"
 category = "bearing"
 links = [
   { site = "AXON", url = "http://www.team-axon.com/products/bearing/sportsballbearing.html" },
 ]
 
-[unstated]
-size = "http://www.team-axon.com/products/bearing/sportsballbearing.html"
+equivalent_to = [
+  { spec = "spec/bearing/12x18x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "metal"

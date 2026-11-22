@@ -2,10 +2,14 @@ id = "part/axon/BM-PGR-085-2"
 brand = "brand/axon"
 number = "BM-PGR-085-2"
 name = "X10 RUBBER SHIELD BALL BEARING 850 (8x5x2.5) 2pic"
+seen_by = "2025-08-10"
+seen_by_source = "https://web.archive.org/web/20250810001036/http://team-axon.com/products/bearing/rubber.html"
 category = "bearing"
 links = [
   { site = "AXON", url = "http://www.team-axon.com/products/bearing/rubber.html" },
 ]
 
-[unstated]
-size = "http://www.team-axon.com/products/bearing/rubber.html"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"

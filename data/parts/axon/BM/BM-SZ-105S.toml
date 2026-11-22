@@ -2,6 +2,8 @@ id = "part/axon/BM-SZ-105S"
 brand = "brand/axon"
 number = "BM-SZ-105S"
 name = "10x5x3mm zz sports ball bearing"
+seen_by = "2022-03-18"
+seen_by_source = "https://web.archive.org/web/20220318092110/http://www.team-axon.com/products/bearing/sportsballbearing.html"
 category = "bearing"
 notes = "Name read from the words of rcMart's product address (its sitemap gives no title for it)."
 links = [
@@ -10,5 +12,7 @@ links = [
 pack_qty = 10
 pack_qty_basis = "name"
 
-[unstated]
-size = "https://www.rcmart.com/sitemap3.xml"
+equivalent_to = [
+  { spec = "spec/bearing/5x10x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "metal"

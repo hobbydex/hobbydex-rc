@@ -2,10 +2,14 @@ id = "part/axon/BM-PGR-084-6"
 brand = "brand/axon"
 number = "BM-PGR-084-6"
 name = "X10 RUBBER SHIELD BALL BEARING 840 (8x4x3) 6pic"
+seen_by = "2025-08-10"
+seen_by_source = "https://web.archive.org/web/20250810001036/http://team-axon.com/products/bearing/rubber.html"
 category = "bearing"
 links = [
   { site = "AXON", url = "http://www.team-axon.com/products/bearing/rubber.html" },
 ]
 
-[unstated]
-size = "http://www.team-axon.com/products/bearing/rubber.html"
+equivalent_to = [
+  { spec = "spec/bearing/4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
+seal = "rubber"
