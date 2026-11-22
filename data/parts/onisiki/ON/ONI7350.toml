@@ -2,6 +2,8 @@ id = "part/onisiki/ONI7350"
 brand = "brand/onisiki"
 number = "ONI7350"
 name = "4500mah 2s 7 6v 140c hv 5mm lcg shorty lipo battery oni7345 x"
+seen_by = "2024-05-18"
+seen_by_source = "https://web.archive.org/web/20240518010354/https://www.onisiki.com/onisiki-4500mah-2s-7-6v-140c-hv-5mm-lcg-shorty-lipo-battery-oni7345-x-2pcs-oni7350-00125560"
 category = "battery"
 notes = "Name read from the words of rcMart's product address (its sitemap gives no title for it)."
 links = [
@@ -12,8 +14,11 @@ pack_qty_basis = "name"
 chemistry = "lipo"
 voltage = 6.0
 
-[unstated]
-cells = "https://www.rcmart.com/sitemap3.xml"
-capacity = "https://www.rcmart.com/sitemap3.xml"
-connector = "https://www.rcmart.com/sitemap3.xml"
-c-rating = "https://www.rcmart.com/sitemap3.xml"
+capacity_mah = 4500
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-4500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+c_rating = 140
+case = "shorty"
+connector = "XT60"

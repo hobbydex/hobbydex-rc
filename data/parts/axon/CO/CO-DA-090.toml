@@ -7,3 +7,7 @@ notes = "Name read from the words of rcMart's product address (its sitemap gives
 links = [
   { site = "rcMart", url = "https://www.rcmart.com/axon-core-differential-gear-liquid-silicone-oil-9000cst-30ml-co-da-090-00132301", kind = "dealer" },
 ]
+volume_ml = 30
+equivalent_to = [
+  { spec = "spec/oil/silicone-9000cst", match = "functional", notes = "Viscosity in cSt as stated by the brand; measuring temperature not given" },
+]

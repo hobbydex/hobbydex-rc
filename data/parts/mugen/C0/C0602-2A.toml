@@ -3,7 +3,7 @@ brand = "brand/mugen"
 number = "C0602-2A"
 name = "BEARING (5X8)"
 gtin = "4944925038198"
-notes = "Revision letter of C0602-2: the store prints the number as C0602-2a"
+notes = "Revision letter of C0602-2: the store prints the number as C0602-2a. Colour read from the maker's product photo."
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/BEARING-5X8-10PCS/C0602-2a" },
 ]
@@ -12,5 +12,7 @@ pack_qty_basis = "name"
 category = "bearing"
 
 
-[unstated]
-size = "https://www.mugenshop.eu/en/BEARING-5X8-10PCS/C0602-2a"
+color = "silver"
+equivalent_to = [
+  { spec = "spec/bearing/5x8x2.5", match = "close", notes = "Width not stated in the name; 2.5 mm is the standard width of a 5x8 bearing (MR85)" },
+]

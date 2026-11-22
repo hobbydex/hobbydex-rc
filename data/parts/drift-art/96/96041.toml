@@ -7,3 +7,6 @@ notes = "Name read from the words of rcMart's product address (its sitemap gives
 links = [
   { site = "rcMart", url = "https://www.rcmart.com/drift-art-screw-pack-1-2-m2x2-set-screws-for-da3-da2-96041-00128054", kind = "dealer" },
 ]
+equivalent_to = [
+  { spec = "spec/screw/m2x2-set-hex", match = "functional", notes = "Geometry parsed from the manufacturer's description; the standard is not cited by the brand" },
+]

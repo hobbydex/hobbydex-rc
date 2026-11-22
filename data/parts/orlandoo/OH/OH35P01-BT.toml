@@ -9,7 +9,10 @@ links = [
 chemistry = "nimh"
 voltage = 7.2
 
+capacity_mah = 300
+equivalent_to = [
+  { spec = "spec/battery/nimh-6s-300mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 6
 [unstated]
-cells = "https://www.rcmart.com/sitemap1.xml"
-capacity = "https://www.rcmart.com/sitemap1.xml"
 connector = "https://www.rcmart.com/sitemap1.xml"

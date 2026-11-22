@@ -5,3 +5,7 @@ name = "COMPOSITE REAR ROLL-CENTER HOLDER - DIRT EDITION"
 documents = ["doc/xray/xb2-2016-part-list"]
 category = "chassis"
 material = "plastic"
+fits = [
+  { kit = "kit/xray/xb2", type = "replaces", source = "doc/xray/xb2-2016-part-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+  { kit = "kit/xray/xt2", releases = ["release/xray/xt2-2018"], type = "replaces", source = "doc/xray/xt2-2018-exploded-view", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

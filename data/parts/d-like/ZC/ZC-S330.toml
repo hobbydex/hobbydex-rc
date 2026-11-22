@@ -2,6 +2,8 @@ id = "part/d-like/ZC-S330"
 brand = "brand/d-like"
 number = "ZC-S330"
 name = "3.1mm×5.0mm×0.3 Shim (Stainless)"
+seen_by = "2024-10-11"
+seen_by_source = "https://web.archive.org/web/20241011233353/https://www.d-like.net/?pid=137598677"
 category = "washer-shim"
 links = [
   { site = "D-Like", url = "https://www.d-like.net/?pid=137598677" },
@@ -10,3 +12,7 @@ name_ja = "φ3.1×φ5.0×0.3 シム (ステンレス製 10枚入)"
 notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
 pack_qty = 10
 pack_qty_basis = "name"
+material = "stainless"
+equivalent_to = [
+  { spec = "spec/washer/3.1x5x0.3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

@@ -9,5 +9,6 @@ links = [
 ]
 category = "bearing"
 
-[unchecked]
-size = "https://www.mugenshop.eu/en/KUGELLAGER-10X15X4-10-LOW-FRICTION/T2601-1a"
+equivalent_to = [
+  { spec = "spec/bearing/10x15x4", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

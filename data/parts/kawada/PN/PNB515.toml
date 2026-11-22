@@ -8,7 +8,11 @@ links = [
   { site = "rcMart", url = "https://www.rcmart.com/kawada-super-duralumin-pinion-48p-15t-pnb515-00027086", kind = "dealer" },
 ]
 
+teeth = 15
+pitch_dp = 48
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-15t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
 [unstated]
-teeth = "https://www.rcmart.com/sitemap1.xml"
-pitch = "https://www.rcmart.com/sitemap1.xml"
 bore = "https://www.rcmart.com/sitemap1.xml"

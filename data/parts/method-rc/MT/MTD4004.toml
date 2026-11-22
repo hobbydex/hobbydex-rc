@@ -2,9 +2,15 @@ id = "part/method-rc/MTD4004"
 brand = "brand/method-rc"
 number = "MTD4004"
 name = "Titanium Stub Axle Replacement for MTD4000"
+seen_by = "2024-04-25"
+seen_by_source = "https://web.archive.org/web/20240425073736/https://methodrc.net/products/titanium-stub-axle-replacement-for-mtd4000-2pcs"
 category = "drivetrain"
 links = [
   { site = "Method RC", url = "https://methodrc.net/products/titanium-stub-axle-replacement-for-mtd4000-2pcs" },
 ]
 pack_qty = 2
 pack_qty_basis = "name"
+material = "titanium"
+related = [
+  { part = "part/method-rc/MTD4000", relation = "replaces", notes = "link_part_refs" },
+]

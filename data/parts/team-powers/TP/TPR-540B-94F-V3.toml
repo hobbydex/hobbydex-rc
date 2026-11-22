@@ -11,6 +11,8 @@ color = "black"
 diameter_mm = 35.8
 length_mm = 51
 
+equivalent_to = [
+  { spec = "spec/motor/brushed-540-3.175mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
+]
 [unstated]
-type = "https://www.team-powers.com/index.php?thispage=viewproduct&c=-1&s=-1&p=49"
 winding = "https://www.team-powers.com/index.php?thispage=viewproduct&c=-1&s=-1&p=49"

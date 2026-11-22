@@ -2,9 +2,14 @@ id = "part/hpi/50400"
 brand = "brand/hpi"
 number = "50400"
 name = "RADIO PLATE (GRAPHITE / PROCEED)"
+seen_by = "2002-11-23"
+seen_by_source = "https://web.archive.org/web/20021123150413/http://hpiracing.com:80/Merchant2/graphics/00000001/proceed/50400.jpg"
 links = [
   { site = "HPI Racing", url = "https://www.hpiracing.com/en/part/50400" },
 ]
 name_source = "manufacturer"
 category = "chassis"
 material = "carbon"
+fits = [
+  { kit = "kit/hpi/savage-x", releases = ["release/hpi/12867", "release/hpi/868", "release/hpi/873"], type = "replaces", source = "doc/hpi/12867-savage-x-46-glb-m-v1", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

@@ -2,13 +2,19 @@ id = "part/kawada/PNC521"
 brand = "brand/kawada"
 number = "PNC521"
 name = "48p 21t steel pinion gear"
+seen_by = "2020-07-25"
+seen_by_source = "https://web.archive.org/web/20200725140344/http://www.kawadamodel.co.jp/cargo/image/PNC521.jpg"
 category = "pinion"
 notes = "Name read from the words of rcMart's product address (its sitemap gives no title for it)."
 links = [
   { site = "rcMart", url = "https://www.rcmart.com/kawada-48p-21t-steel-pinion-gear-pnc521-00039347", kind = "dealer" },
 ]
 
+teeth = 21
+pitch_dp = 48
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pinion/48dp-21t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
 [unstated]
-teeth = "https://www.rcmart.com/sitemap1.xml"
-pitch = "https://www.rcmart.com/sitemap1.xml"
 bore = "https://www.rcmart.com/sitemap1.xml"

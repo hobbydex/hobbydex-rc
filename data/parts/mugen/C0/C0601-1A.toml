@@ -3,11 +3,13 @@ brand = "brand/mugen"
 number = "C0601-1A"
 name = "BEARING 8X16X5 SET"
 gtin = "4944925046575"
-notes = "Revision letter of C0601-1: the store prints the number as C0601-1a"
+notes = "Revision letter of C0601-1: the store prints the number as C0601-1a. Colour read from the maker's product photo."
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/KUGELLAGER-8X16X5-DICHTLIPPE-10/C0601-1a" },
 ]
 category = "bearing"
 
-[unchecked]
-size = "https://www.mugenshop.eu/en/KUGELLAGER-8X16X5-DICHTLIPPE-10/C0601-1a"
+color = "silver"
+equivalent_to = [
+  { spec = "spec/bearing/8x16x5", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

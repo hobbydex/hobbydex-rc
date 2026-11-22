@@ -10,7 +10,12 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.6
 
-[unstated]
-capacity = "https://www.onisiki.com/onisiki-raiju-6500mah-hv-2s-7-6v-180c-5mm-ultra-lcg-lipo-battery-oni7374-00146562"
-c-rating = "https://www.onisiki.com/onisiki-raiju-6500mah-hv-2s-7-6v-180c-5mm-ultra-lcg-lipo-battery-oni7374-00146562"
-connector = "https://www.onisiki.com/onisiki-raiju-6500mah-hv-2s-7-6v-180c-5mm-ultra-lcg-lipo-battery-oni7374-00146562"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 6500
+weight_g = 10
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6500mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 180
+connector = "XT60"

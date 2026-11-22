@@ -2,13 +2,20 @@ id = "part/bm-racing/BM-MINI28-EVO-ESC-P"
 brand = "brand/bm-racing"
 number = "BM-MINI28-EVO-ESC-P"
 name = "MINI28 EVO ESC Purple"
+seen_by = "2026-07-21"
+seen_by_source = "https://bmracing.cc/wp-sitemap-posts-product-1.xml"
 listed_as = ["BM-MINI28 EVO-ESC-P"]
 category = "esc"
+motor_type = "brushless"
 links = [
   { site = "BM Racing", url = "https://bmracing.cc/product/bm-racing-mini28-evo-esc-purple-bm-mini28-evo-esc-p" },
 ]
 color = "purple"
 
+range = "bm-racing/mini28-colours"
+rebrand_of = [
+  { part = "part/hobbywing/30101300", notes = "The name gives Hobbywing's model code \"MINI28\" (EzRun MiNi28 (Black)); firmware, plug or packaging may differ (link_rebrands.py)" },
+]
 [unstated]
 current = "https://bmracing.cc/product/bm-racing-mini28-evo-esc-purple-bm-mini28-evo-esc-p"
 cells = "https://bmracing.cc/product/bm-racing-mini28-evo-esc-purple-bm-mini28-evo-esc-p"
