@@ -2,7 +2,13 @@ id = "part/team-powers/TPR-MS-Radon-V2BT-1S"
 brand = "brand/team-powers"
 number = "TPR-MS-Radon-V2BT-1S"
 name = "Mini Spec Radon V2BT 1S (105A) Speed Control (External Bluetooth)"
-category = "electronics"
+category = "esc"
+programming = ["bluetooth"]
+current_a = 105
+lipo_cells = [1, 1]
 links = [
   { site = "Team Powers", url = "https://www.team-powers.com/index.php?thispage=viewproduct&c=-1&s=-1&p=620" },
 ]
+
+[unstated]
+connector = "https://www.team-powers.com/index.php?thispage=viewproduct&c=-1&s=-1&p=620"
