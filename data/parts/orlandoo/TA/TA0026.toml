@@ -5,9 +5,12 @@ name = "2x5x2mm Ball Bearings for Orlandoo Hunter (4)"
 category = "bearing"
 links = [
   { site = "Tiny4x4", url = "https://www.tiny4x4.com/orlandoo-hunter/drivetrain-parts-orlandoo-hunter/ta0026-2x5x2mm-ball-bearings-for-orlandoo-hunter-4/", kind = "dealer" },
+  { site = "AMain Hobbies", url = "https://www.amainhobbies.com/orlandoo-hunter-35a01-2x5x2mm-ball-bearing-4-olhta0026/p568580", kind = "dealer" },
 ]
 pack_qty = 4
 pack_qty_basis = "name"
 
-[unchecked]
-size = "https://www.tiny4x4.com/orlandoo-hunter/drivetrain-parts-orlandoo-hunter/ta0026-2x5x2mm-ball-bearings-for-orlandoo-hunter-4/"
+numbers = ["OLHTA0026"]
+equivalent_to = [
+  { spec = "spec/bearing/2x5x2", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]
