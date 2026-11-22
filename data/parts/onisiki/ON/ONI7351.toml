@@ -2,6 +2,8 @@ id = "part/onisiki/ONI7351"
 brand = "brand/onisiki"
 number = "ONI7351"
 name = "5800mah 2s 7 6v 150c hv 5mm lcg shorty lipo battery oni7346 x"
+seen_by = "2024-07-05"
+seen_by_source = "https://web.archive.org/web/20240705230639/https://www.onisiki.com/image/cache/product/00125561/00125561-onisiki-oni7351-001-800x800.jpg"
 category = "battery"
 notes = "Name read from the words of rcMart's product address (its sitemap gives no title for it)."
 links = [
@@ -12,8 +14,11 @@ pack_qty_basis = "name"
 chemistry = "lipo"
 voltage = 6.0
 
-[unstated]
-cells = "https://www.rcmart.com/sitemap3.xml"
-capacity = "https://www.rcmart.com/sitemap3.xml"
-connector = "https://www.rcmart.com/sitemap3.xml"
-c-rating = "https://www.rcmart.com/sitemap3.xml"
+capacity_mah = 5800
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-5800mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+cells = 2
+c_rating = 150
+case = "shorty"
+connector = "XT60"

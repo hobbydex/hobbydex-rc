@@ -8,3 +8,9 @@ links = [
 ]
 pack_qty = 2
 pack_qty_basis = "name"
+color = "silver"
+notes = "Colour read from the maker's product photo."
+material = "steel"
+equivalent_to = [
+  { spec = "spec/pin/3x42", match = "close", notes = "Hinge or pivot pin: may have E-clip grooves or a threaded end; check the part" },
+]

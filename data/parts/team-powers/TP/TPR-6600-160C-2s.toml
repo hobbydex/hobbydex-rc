@@ -13,5 +13,10 @@ voltage = 7.6
 capacity_mah = 6600
 c_rating = 160
 
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+equivalent_to = [
+  { spec = "spec/battery/lipo-2s-6600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
 [unstated]
 connector = "https://www.team-powers.com/index.php?thispage=viewproduct&c=-1&s=-1&p=379"

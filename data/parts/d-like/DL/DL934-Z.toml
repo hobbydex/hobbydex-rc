@@ -2,12 +2,16 @@ id = "part/d-like/DL934-Z"
 brand = "brand/d-like"
 number = "DL934-Z"
 name = "4x8x3mm Flange Bearing"
+seen_by = "2022-01-18"
+seen_by_source = "https://web.archive.org/web/20220118195032/http://www.d-like.net/?pid=165756233"
 category = "bearing"
 links = [
   { site = "D-Like", url = "https://www.d-like.net/?pid=165756233" },
 ]
 name_ja = "4x8x3mm フランジベアリング"
-notes = "English translated by Hobbydex from the maker's Japanese name (name_ja)"
+notes = "English translated by Hobbydex from the maker's Japanese name (name_ja). Colour read from the maker's product photo."
 
-[unstated]
-size = "https://www.d-like.net/?pid=165756233"
+color = "silver"
+equivalent_to = [
+  { spec = "spec/bearing/flanged-4x8x3", match = "functional", notes = "Size parsed from the manufacturer's description" },
+]

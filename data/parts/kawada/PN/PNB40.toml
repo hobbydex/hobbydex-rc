@@ -2,13 +2,19 @@ id = "part/kawada/PNB40"
 brand = "brand/kawada"
 number = "PNB40"
 name = "Super duralumin pinion 64p 40t"
+seen_by = "2026-02-12"
+seen_by_source = "https://web.archive.org/web/20260212003532/https://www.kawadamodel.co.jp/cargo/image/PNB40.jpg"
 category = "pinion"
 notes = "Name read from the words of rcMart's product address (its sitemap gives no title for it)."
 links = [
   { site = "rcMart", url = "https://www.rcmart.com/kawada-super-duralumin-pinion-64p-40t-pnb40-00003141", kind = "dealer" },
 ]
 
+teeth = 40
+pitch_dp = 64
+material = "aluminium"
+equivalent_to = [
+  { spec = "spec/pinion/64dp-40t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
 [unstated]
-teeth = "https://www.rcmart.com/sitemap1.xml"
-pitch = "https://www.rcmart.com/sitemap1.xml"
 bore = "https://www.rcmart.com/sitemap1.xml"

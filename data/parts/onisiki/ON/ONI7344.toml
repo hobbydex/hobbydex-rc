@@ -2,6 +2,8 @@ id = "part/onisiki/ONI7344"
 brand = "brand/onisiki"
 number = "ONI7344"
 name = "NUE 6600mAh 2S 7.6V 150C HV 5mm Ultra LCG Lipo Battery"
+seen_by = "2024-06-16"
+seen_by_source = "https://web.archive.org/web/20240616161554/https://www.onisiki.com/onisiki-6600mah-2s-7-6v-150c-hv-5mm-ultra-lcg-lipo-battery-oni7344-x-2pcs-oni7349-00125559"
 category = "battery"
 links = [
   { site = "Onisiki", url = "https://www.onisiki.com/onisiki-nue-6600mah-2s-7-6v-150c-hv-5mm-ultra-lcg-lipo-battery-oni7344-00120338" },
@@ -10,7 +12,12 @@ chemistry = "lipo"
 cells = 2
 voltage = 7.6
 
-[unstated]
-capacity = "https://www.onisiki.com/onisiki-nue-6600mah-2s-7-6v-150c-hv-5mm-ultra-lcg-lipo-battery-oni7344-00120338"
-c-rating = "https://www.onisiki.com/onisiki-nue-6600mah-2s-7-6v-150c-hv-5mm-ultra-lcg-lipo-battery-oni7344-00120338"
-connector = "https://www.onisiki.com/onisiki-nue-6600mah-2s-7-6v-150c-hv-5mm-ultra-lcg-lipo-battery-oni7344-00120338"
+balance_connector = "JST-XH"
+balance_connector_basis = "convention"
+capacity_mah = 6600
+weight_g = 10
+equivalent_to = [
+  { spec = "spec/battery/lihv-2s-6600mah", match = "functional", notes = "Chemistry, cells and capacity parsed from the name; check size and plug" },
+]
+c_rating = 150
+connector = "XT60"

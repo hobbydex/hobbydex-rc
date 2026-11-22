@@ -3,8 +3,12 @@ brand = "brand/mugen"
 number = "E2255A"
 name = "CONICAL GEAR 44T"
 gtin = "4944925044175"
-notes = "Revision letter of E2255: the store prints the number as E2255a"
+notes = "Revision letter of E2255: the store prints the number as E2255a. Colour read from the maker's product photo."
 links = [
   { site = "Mugen Seiki Europe", url = "https://www.mugenshop.eu/en/CONICAL-GEAR-44T/E2255a" },
 ]
 category = "gear"
+color = "silver"
+fits = [
+  { kit = "kit/mugen/mbx8", releases = ["release/mugen/e2027"], type = "replaces", source = "doc/mugen/e2027-part-list-eu", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

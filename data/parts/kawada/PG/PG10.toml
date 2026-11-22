@@ -8,7 +8,9 @@ links = [
   { site = "rcMart", url = "https://www.rcmart.com/kawada-64p-10t-pinion-for-1-5mm-shaft-pg10-00083269", kind = "dealer" },
 ]
 
-[unstated]
-teeth = "https://www.rcmart.com/sitemap2.xml"
-pitch = "https://www.rcmart.com/sitemap2.xml"
-bore = "https://www.rcmart.com/sitemap2.xml"
+teeth = 10
+pitch_dp = 64
+equivalent_to = [
+  { spec = "spec/pinion/64dp-10t", match = "functional", notes = "Pitch and teeth parsed from the manufacturer's description; check the bore" },
+]
+bore_mm = 5

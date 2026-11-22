@@ -5,3 +5,6 @@ name = "COMPOSITE BATTERY STRAP - DIRT EDITION"
 documents = ["doc/xray/xb2-2016-part-list"]
 category = "chassis"
 material = "plastic"
+fits = [
+  { kit = "kit/xray/xb2", type = "replaces", source = "doc/xray/xb2-2016-part-list", notes = "Number printed in the car's manual, parts list or exploded view (link_manual_fits.py)" },
+]

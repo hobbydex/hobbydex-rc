@@ -12,5 +12,11 @@ speed_s = 0.05
 voltage = 8.4
 voltage_range = "4.8V - 8.4V"
 
+performance = [
+  { voltage = 6, torque_kgcm = 10, speed_s = 0.065, source = "doc/team-powers/product-pages-team-powers-com" },
+  { voltage = 7.4, torque_kgcm = 13, speed_s = 0.055, source = "doc/team-powers/product-pages-team-powers-com" },
+  { voltage = 8.4, torque_kgcm = 15, speed_s = 0.05, source = "doc/team-powers/product-pages-team-powers-com" },
+]
+material = "aluminium"
 [unstated]
 size = "https://www.team-powers.com/index.php?thispage=viewproduct&c=-1&s=-1&p=611"
