@@ -1,6 +1,6 @@
 """The word rules and small helpers the invariants share: data-shape rules (what a name, title or date may look like),
 nothing about fetching. Each pattern says which invariant reads it."""
-import collections, re, urllib.parse
+import collections, os, re, tomllib, urllib.parse
 
 # platform-year-name: a year in a name (1950 to 2049)
 YEAR = re.compile(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)")
@@ -640,10 +640,10 @@ def scaled_name_scales(text, kit_name, brand=""):
 
 
 # dimension-plausible: a car's figures times its scale divisor give the full-size figure, which lies in these bounds
-# (millimetres; weight in grams times the divisor cubed). They catch a wrong unit or a misread digit, not a fine error.
-DIM_FULL_SIZE = {"wheelbase_mm": (800, 9000), "track_mm": (400, 5000), "track_front_mm": (400, 5000),
-                 "track_rear_mm": (400, 5000), "length_mm": (1000, 25000), "width_mm": (500, 6000),
-                 "height_mm": (300, 6000), "ground_clearance_mm": (20, 1500), "weight_g": (1e5, 1e8)}
+# (millimetres; weight in grams times the divisor cubed), kept in tests/invariants/dimension-bounds.toml, which the
+# tools' dimension linker reads too.
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "dimension-bounds.toml"), "rb") as _f:
+    DIM_FULL_SIZE = {k: (lo, hi) for k, lo, hi in tomllib.load(_f)["full_size"]}
 
 
 def dim_values(v):
