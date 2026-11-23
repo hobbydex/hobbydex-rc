@@ -1986,6 +1986,13 @@ def main():
                 errors.append(f"{path}: website should be a URL")
         if kind == "brand" and not isinstance(d.get("item_numbers", True), bool):
             errors.append(f"{path}: item_numbers must be true or false")
+        if kind == "brand" and "colour_suffix" in d:
+            try:
+                re.compile(str(d["colour_suffix"]))
+                if not isinstance(d["colour_suffix"], str) or not d["colour_suffix"]:
+                    raise re.error("empty")
+            except re.error as e:
+                errors.append(f"{path}: colour_suffix should be a regular expression for the colour code at the end of an item number ({e})")
         if kind == "brand" and "pack_counts" in d and d["pack_counts"] is not False:
             errors.append(f"{path}: pack_counts, when set, is false (the maker states no exact piece count)")
         if kind == "part" and "number" not in d:
