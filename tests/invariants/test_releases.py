@@ -298,3 +298,33 @@ def test_release_editions_review(ratchet, db):
     ratchet("release-editions-review", [(rid, "same range or separate releases? " + ", ".join(ps[:3])
                                          + (f" and {len(ps) - 3} more" if len(ps) > 3 else ""))
                                         for rid, ps in sorted(found.items())], blocking=False)
+
+
+LISTING_PHRASE = re.compile(r"(?i)(?<![\w.])(?:HorizonHobby\.com Exclusive|HH\.com Exclusive|Online Exclusive|Limited Edition|Exclusive)!?(?![\w.])")
+
+
+def test_variant_listing_phrase(hard, db):
+    """No release name with a shop or marketing phrase ("Limited Edition", "HH.com Exclusive") that none of its
+    sibling variants (one master number with T codes) on the same maker product page carry: the store's variant title, not the product's name. The
+    importers take it off (hobbydex-tools names.drop_listing_phrases); a sold-only-there fact goes in the notes."""
+    pages = {i for (i,) in db.execute("SELECT id FROM records WHERE kind = 'doc' AND json_extract(data, '$.kind') = 'product_page'")}
+    names, stem = {}, {}
+    for rid, n, num in db.execute("""SELECT id, json_extract(data, '$.name'), json_extract(data, '$.number') FROM records
+            WHERE kind = 'release'"""):
+        m = re.fullmatch(r"(.+\d)T\d", str(num or ""), re.I)   # a variant number: the master's number and a T code (ARA4437T3)
+        if isinstance(n, str) and m:
+            names[rid], stem[rid] = n, m.group(1).upper()
+    on_page = collections.defaultdict(list)
+    for owner, d in db.execute("SELECT owner, value FROM list_values WHERE field = 'documents'"):
+        if d in pages and owner in names:
+            on_page[(d, stem[owner])].append(owner)
+    rows = []
+    for (d, _), rids in on_page.items():
+        if len(rids) < 2:
+            continue
+        for rid in rids:
+            for m in LISTING_PHRASE.finditer(names[rid]):
+                if not any(LISTING_PHRASE.search(names[o]) and m.group(0).lower().rstrip("!") in names[o].lower() for o in rids if o != rid):
+                    rows.append((rid, f"name carries {m.group(0)!r}, which no other variant on {d} has"))
+                    break
+    hard(rows, name="variant-listing-phrase")

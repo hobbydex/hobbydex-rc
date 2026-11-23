@@ -120,6 +120,8 @@ from the source (the store's product handle) instead. The site then shows no
 number and builds the part URL from that slug. Left out, it means true and
 every part of the brand needs a `number`.
 
+`colour_suffix` (optional) is the end of the brand's item numbers that codes the colour of one vehicle sold in several colours, as a regular expression (ARRMA, Losi, Axial, ECX and Vaterra: `"T[1-9]"` for ARA4437T1, T2, T3; Team Corally: `"-[A-Z]"` for C-00231-G, -O, -R). The number without it is the base number. The site shows releases of one kit, kind and status that share a base number and differ in colour as one colourway group (hobbydex src/lib/colourways.ts), even where their names differ by more than the colour; a different version (V2 vs V3) never groups. Set only for a brand whose own numbering uses the code for colours.
+
 `pack_counts = false` marks a maker whose product pages state no exact piece count for a kit (RCScrewZ gives "180+ pieces" or nothing). Its hardware kits without a `pack_qty` or `includes` are counted by audit "hw-pack-count-unstated" instead of "hw-no-pack-count", which then lists only the kits a count can fill. A kit whose notes start with a minimum ("180+ pieces.") is counted the same way without the marker. Left out, the maker's counts are exact.
 
 ## company
