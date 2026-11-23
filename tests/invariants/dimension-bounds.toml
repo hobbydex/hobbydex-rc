@@ -1,0 +1,15 @@
+# The full-size bounds of a car's figures (millimetres; weight in grams), in order: a figure times its scale's divisor
+# (a weight times the divisor cubed) outside them does not fit the scale. They catch a wrong unit or a misread digit,
+# not a fine error. Read by the invariant dimension-plausible (tests/invariants/rules.py DIM_FULL_SIZE) and by the
+# tools' dimension linker, which leaves out a figure that does not fit: the one place these bounds are kept.
+full_size = [
+  ["wheelbase_mm", 800, 9000],
+  ["track_mm", 400, 5000],
+  ["track_front_mm", 400, 5000],
+  ["track_rear_mm", 400, 5000],
+  ["length_mm", 1000, 25000],
+  ["width_mm", 500, 6000],
+  ["height_mm", 300, 6000],
+  ["ground_clearance_mm", 20, 1500],
+  ["weight_g", 1e5, 1e8],
+]
