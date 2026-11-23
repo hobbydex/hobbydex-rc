@@ -9,7 +9,7 @@ released_source = "https://rc.kyosho.com/en/34475t1.html"
 kind = "rtr"
 power = "brushless"
 power_source = "doc/kyosho/34475t1_op"
-status = "announced"
+status = "released"
 gtin = "4548565527557"
 dimensions = { length_mm = 507, width_mm = 210, height_mm = 128, wheelbase_mm = 274, weight_g = 1800, source = "https://rc.kyosho.com/en/34475t1.html" }
 documents = ["doc/kyosho/34475t1-product-page", "doc/kyosho/34461-t04-fz02-chassis-kit-spop", "doc/kyosho/34461-t04-fz02-chassis-kit-im", "doc/kyosho/fazer-vol01-20191122", "doc/kyosho/34475t1_op", "doc/kyosho/youtube-q3yAzaXJo6A"]
@@ -170,3 +170,6 @@ contains = [
   { part = "part/kyosho/FGR4P", role = "option", source = "doc/kyosho/34461-t04-fz02-chassis-kit-spop" },
   { part = "part/kyosho/92508", role = "option", source = "doc/kyosho/34461-t04-fz02-chassis-kit-spop" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/34475t1.html"
