@@ -14,6 +14,15 @@ weight_g = 6.6
 notes = "Named on the maker's own product page (archived copy)."
 frequency_band = "2.4GHz"
 operating_v = [3.7, 7.4]
+compatible_transmitters = [
+  { part = "part/sanwa/M12S" },
+  { name = "M12" },
+  { part = "part/sanwa/EXZES-ZZ" },
+  { name = "EXZES Z" },
+  { name = "MT-4S" },
+  { name = "MT-4", note = "non-Compatible with SSL" },
+  { part = "part/sanwa/MT-S" },
+]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/receiver/rx-47t.html" },
 ]
@@ -23,3 +32,4 @@ name_source = "manufacturer"
 [sources]
 frequency_band = "https://www.sanwa-denshi.com/rc/car/receiver/rx-47t.html"
 operating_v = "https://www.sanwa-denshi.com/rc/car/receiver/rx-47t.html"
+compatible_transmitters = "https://www.sanwa-denshi.com/rc/car/receiver/rx-47t.html"

@@ -16,7 +16,7 @@ gyro = true
 telemetry = ["model-voltage"]
 operating_v = [3, 12]
 range_m = 600
-compatible_transmitters = ["part/radiolink/RC8X", "part/radiolink/RC6GS-V3", "part/radiolink/RC4GS-V3", "part/radiolink/RC6GS-V2", "part/radiolink/RC4GS-V2", "part/radiolink/RC6GS", "part/radiolink/RC4GS", "T16D", "T12D", "T8FB(BT)", "T8FB(OTG)", "T8S(BT)", "T8S(OTG)"]
+compatible_transmitters = [{ part = "part/radiolink/RC8X" }, { part = "part/radiolink/RC6GS-V3" }, { part = "part/radiolink/RC4GS-V3" }, { part = "part/radiolink/RC6GS-V2" }, { part = "part/radiolink/RC4GS-V2" }, { part = "part/radiolink/RC6GS" }, { part = "part/radiolink/RC4GS" }, { name = "T16D" }, { name = "T12D" }, { name = "T8FB", note = "BT" }, { name = "T8FB", note = "OTG" }, { name = "T8S", note = "BT" }, { name = "T8S", note = "OTG" }, { part = "part/radiolink/RC8P" }]
 antenna_mm = 205
 documents = ["doc/radiolink/r8fgh", "doc/radiolink/r8fgh-specifications", "doc/radiolink/r8fgh-manual", "doc/radiolink/receivers-compatible-with-transmitters"]
 links = [ { site = "RadioLink", url = "https://www.radiolink.com/r8fgh" } ]
@@ -28,5 +28,5 @@ gyro = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 telemetry = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 operating_v = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 range_m = "https://www.radiolink.com/receivers_compatible_with_transmitters"
-compatible_transmitters = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+compatible_transmitters = "https://www.radiolink.com/r8fgh_specifications"
 antenna_mm = "https://www.radiolink.com/r8fgh_specifications"

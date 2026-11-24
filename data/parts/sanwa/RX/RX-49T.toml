@@ -14,7 +14,7 @@ weight_g = 6.8
 notes = "Named on the maker's own product page (archived copy)."
 frequency_band = "2.4GHz"
 operating_v = [3.7, 7.4]
-compatible_transmitters = ["part/sanwa/M17", "part/sanwa/MT-5", "part/sanwa/MT-R"]
+compatible_transmitters = [{ part = "part/sanwa/M17" }, { part = "part/sanwa/MT-5" }, { part = "part/sanwa/MT-R" }]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/receiver/rx-49t.html" },
 ]

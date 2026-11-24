@@ -14,7 +14,7 @@ weight_g = 6.2
 notes = "Named on the maker's own product page (archived copy)."
 frequency_band = "2.4GHz"
 operating_v = [3.7, 7.4]
-compatible_transmitters = ["part/sanwa/M17", "part/sanwa/MT-5"]
+compatible_transmitters = [{ part = "part/sanwa/M17" }, { part = "part/sanwa/MT-5" }]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/receiver/rx-493i.html" },
 ]

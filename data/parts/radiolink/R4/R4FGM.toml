@@ -13,7 +13,7 @@ weight_g = 3
 outputs = ["PWM"]
 gyro = true
 range_m = 400
-compatible_transmitters = ["part/radiolink/RC8X", "part/radiolink/RC6GS-V3", "part/radiolink/RC4GS-V3", "part/radiolink/RC6GS-V2", "part/radiolink/RC4GS-V2", "part/radiolink/RC6GS", "part/radiolink/RC4GS", "T16D", "T12D", "T8FB(BT)", "T8FB(OTG)", "T8S(BT)", "T8S(OTG)"]
+compatible_transmitters = [{ part = "part/radiolink/RC8X" }, { part = "part/radiolink/RC6GS-V3" }, { part = "part/radiolink/RC4GS-V3" }, { part = "part/radiolink/RC6GS-V2" }, { part = "part/radiolink/RC4GS-V2" }, { part = "part/radiolink/RC6GS" }, { part = "part/radiolink/RC4GS" }, { name = "T16D" }, { name = "T12D" }, { name = "T8FB", note = "BT" }, { name = "T8FB", note = "OTG" }, { name = "T8S", note = "BT" }, { name = "T8S", note = "OTG" }, { part = "part/radiolink/RC8P" }]
 antenna_mm = 90
 documents = ["doc/radiolink/r4fgm", "doc/radiolink/r4fgm-specifications", "doc/radiolink/r4fgm-manual", "doc/radiolink/receivers-compatible-with-transmitters"]
 links = [ { site = "RadioLink", url = "https://www.radiolink.com/r4fgm" } ]
@@ -23,5 +23,5 @@ protocols = ["spec/protocol/radiolink-fhss"]
 outputs = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 gyro = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 range_m = "https://www.radiolink.com/receivers_compatible_with_transmitters"
-compatible_transmitters = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+compatible_transmitters = "https://www.radiolink.com/r4fgm_specifications"
 antenna_mm = "https://www.radiolink.com/r4fgm_specifications"

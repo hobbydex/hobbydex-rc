@@ -18,7 +18,7 @@ includes = [
 ]
 frequency_band = "2.4GHz"
 battery = ["AAA"]
-compatible_receivers = ["KR-415FHD", "KR-211FH", "KR-212FHG", "KR-241FH"]
+compatible_receivers = [{ part = "part/ko-propo/21009" }, { part = "part/ko-propo/21005" }, { part = "part/ko-propo/21006" }, { part = "part/ko-propo/21008" }]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/80567" },
 ]

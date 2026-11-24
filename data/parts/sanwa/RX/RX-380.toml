@@ -13,6 +13,17 @@ dimensions_mm = [37.5, 24.7, 14.1]
 weight_g = 8
 frequency_band = "2.4GHz"
 operating_v = [3.7, 7.4]
+compatible_transmitters = [
+  { part = "part/sanwa/M12S" },
+  { name = "M12" },
+  { name = "EXZES Z" },
+  { name = "M11X" },
+  { name = "EXZES X" },
+  { name = "MT-4S" },
+  { name = "MT-4" },
+  { name = "MX-3X" },
+  { name = "GEMINI X" },
+]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/receiver/24ghz_fhss3_spread_spectrum_system_3chhigh_response_model_shr_-compatible.html" },
 ]
@@ -21,3 +32,4 @@ protocols = ["spec/protocol/sanwa-fh3"]
 [sources]
 frequency_band = "https://www.sanwa-denshi.com/rc/car/receiver/24ghz_fhss3_spread_spectrum_system_3chhigh_response_model_shr_-compatible.html"
 operating_v = "https://www.sanwa-denshi.com/rc/car/receiver/24ghz_fhss3_spread_spectrum_system_3chhigh_response_model_shr_-compatible.html"
+compatible_transmitters = "https://www.sanwa-denshi.com/rc/car/receiver/24ghz_fhss3_spread_spectrum_system_3chhigh_response_model_shr_-compatible.html"

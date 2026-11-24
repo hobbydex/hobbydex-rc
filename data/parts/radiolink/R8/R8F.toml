@@ -14,7 +14,7 @@ dimensions_mm = [34, 21, 11.5]
 outputs = ["PWM", "PPM", "S.BUS"]
 telemetry = ["model-voltage"]
 range_m = 800
-compatible_transmitters = ["part/radiolink/RC8X", "part/radiolink/RC6GS-V3", "part/radiolink/RC4GS-V3", "part/radiolink/RC6GS-V2", "part/radiolink/RC4GS-V2", "part/radiolink/RC6GS", "part/radiolink/RC4GS", "T16D", "T12D", "T8FB(BT)", "T8FB(OTG)", "T8S(BT)", "T8S(OTG)"]
+compatible_transmitters = [{ part = "part/radiolink/RC8X" }, { part = "part/radiolink/RC6GS-V3" }, { part = "part/radiolink/RC4GS-V3" }, { part = "part/radiolink/RC6GS-V2" }, { part = "part/radiolink/RC4GS-V2" }, { part = "part/radiolink/RC6GS", note = "3-position switch version" }, { part = "part/radiolink/RC4GS", note = "version with P.D AFTER 180101" }, { name = "T16D" }, { name = "T12D" }, { name = "T8FB", note = "BT" }, { name = "T8FB", note = "OTG" }, { name = "T8S", note = "BT" }, { name = "T8S", note = "OTG" }]
 antenna = "dual"
 antenna_mm = 205
 documents = ["doc/radiolink/r8f", "doc/radiolink/receivers-compatible-with-transmitters"]
@@ -24,6 +24,6 @@ protocols = ["spec/protocol/radiolink-fhss"]
 outputs = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 telemetry = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 range_m = "https://www.radiolink.com/receivers_compatible_with_transmitters"
-compatible_transmitters = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+compatible_transmitters = "https://www.radiolink.com/r8f"
 antenna = "https://www.radiolink.com/r8f"
 antenna_mm = "https://www.radiolink.com/r8f"

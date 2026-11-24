@@ -13,6 +13,19 @@ dimensions_mm = [21.4, 27.6, 29.4]
 weight_g = 10.7
 frequency_band = "2.4GHz"
 operating_v = [3.7, 7.4]
+compatible_transmitters = [
+  { part = "part/sanwa/M12S" },
+  { name = "M12" },
+  { part = "part/sanwa/EXZES-ZZ" },
+  { name = "EXZES Z" },
+  { name = "M11X" },
+  { name = "EXZES X" },
+  { name = "MT-4S" },
+  { name = "MT-4" },
+  { part = "part/sanwa/MT-S" },
+  { name = "MX-3X" },
+  { name = "GEMINI X" },
+]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/receiver/rx-481_wp.html" },
 ]
@@ -21,3 +34,4 @@ protocols = ["spec/protocol/sanwa-fh4"]
 [sources]
 frequency_band = "https://www.sanwa-denshi.com/rc/car/receiver/rx-481_wp.html"
 operating_v = "https://www.sanwa-denshi.com/rc/car/receiver/rx-481_wp.html"
+compatible_transmitters = "https://www.sanwa-denshi.com/rc/car/receiver/rx-481_wp.html"

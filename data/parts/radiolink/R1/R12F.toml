@@ -13,7 +13,7 @@ weight_g = 11.8
 dimensions_mm = [35.6, 25, 13.6]
 outputs = ["PWM", "S.BUS", "CRSF"]
 operating_v = [3, 12]
-compatible_transmitters = ["part/radiolink/RC8X", "part/radiolink/RC6GS-V3", "part/radiolink/RC4GS-V3", "part/radiolink/RC6GS-V2", "part/radiolink/RC4GS-V2", "part/radiolink/RC6GS", "part/radiolink/RC4GS", "T16D", "T12D", "T8FB(BT)", "T8FB(OTG)", "T8S(BT)", "T8S(OTG)"]
+compatible_transmitters = [{ part = "part/radiolink/RC8X" }, { part = "part/radiolink/RC6GS-V3" }, { part = "part/radiolink/RC4GS-V3" }, { part = "part/radiolink/RC6GS-V2" }, { part = "part/radiolink/RC4GS-V2" }, { part = "part/radiolink/RC6GS" }, { part = "part/radiolink/RC4GS" }, { name = "T16D" }, { name = "T12D" }, { name = "T8FB", note = "BT" }, { name = "T8FB", note = "OTG" }, { name = "T8S", note = "BT" }, { name = "T8S", note = "OTG" }, { part = "part/radiolink/RC8P" }]
 antenna_mm = 205
 documents = ["doc/radiolink/r12f", "doc/radiolink/r12f-specifications", "doc/radiolink/r12f-manual", "doc/radiolink/receivers-compatible-with-transmitters"]
 protocols = ["spec/protocol/radiolink-fhss"]
@@ -21,5 +21,5 @@ protocols = ["spec/protocol/radiolink-fhss"]
 [sources]
 outputs = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 operating_v = "https://www.radiolink.com/receivers_compatible_with_transmitters"
-compatible_transmitters = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+compatible_transmitters = "https://www.radiolink.com/r12f"
 antenna_mm = "https://www.radiolink.com/r12f_specifications"

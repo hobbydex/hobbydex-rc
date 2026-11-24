@@ -28,7 +28,7 @@ class SpecFields(unittest.TestCase):
     def test_a_radio_set_with_its_spec(self):
         vals = dict(latency_ms=[3, 4, 14], operating_v=[3.4, 4.2], range_m=600, model_memory=30, battery=["18650"],
                     battery_included=True, outputs=["PWM", "S.BUS"], antenna="built-in",
-                    compatible_receivers=["part/radiolink/R8FG", "R16SM"])
+                    compatible_receivers=[{"part": "part/radiolink/R8FG", "note": "Standard"}, {"name": "R16SM"}])
         self.assertEqual(errors(sources={k: SRC for k in vals}, **vals), [])
 
     def test_a_value_without_its_page(self):
@@ -36,7 +36,7 @@ class SpecFields(unittest.TestCase):
 
     def test_bad_values(self):
         for field, v in (("outputs", ["SBUS"]), ("operating_v", [12, 3]), ("latency_ms", 3), ("antenna", "triple"),
-                         ("compatible_receivers", ["part/radiolink/NOPE"]), ("battery_included", "yes")):
+                         ("compatible_receivers", [{"part": "part/radiolink/NOPE"}]), ("compatible_receivers", ["R16SM"]), ("compatible_receivers", [{"part": "part/radiolink/R8FG", "name": "R8FG"}]), ("battery_included", "yes")):
             self.assertTrue(errors(sources={field: SRC}, **{field: v}), field)
 
     def test_a_transmitter_field_on_a_receiver(self):

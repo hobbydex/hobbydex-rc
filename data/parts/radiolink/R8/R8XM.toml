@@ -14,7 +14,7 @@ outputs = ["PPM", "S.BUS"]
 telemetry = ["model-voltage"]
 operating_v = [3, 6]
 range_m = 1100
-compatible_transmitters = ["part/radiolink/RC8X", "part/radiolink/RC6GS-V3", "part/radiolink/RC4GS-V3", "part/radiolink/RC6GS-V2", "part/radiolink/RC4GS-V2", "part/radiolink/RC6GS", "part/radiolink/RC4GS", "T16D", "T12D", "T8FB(BT)", "T8FB(OTG)", "T8S(BT)", "T8S(OTG)"]
+compatible_transmitters = [{ part = "part/radiolink/RC8X" }, { part = "part/radiolink/RC6GS-V3" }, { part = "part/radiolink/RC4GS-V3" }, { part = "part/radiolink/RC6GS-V2" }, { part = "part/radiolink/RC4GS-V2" }, { part = "part/radiolink/RC6GS" }, { part = "part/radiolink/RC4GS" }, { name = "T16D" }, { name = "T12D" }, { name = "T8FB", note = "BT" }, { name = "T8FB", note = "OTG" }, { name = "T8S", note = "BT" }, { name = "T8S", note = "OTG" }]
 antenna_mm = 90
 documents = ["doc/radiolink/r8xm", "doc/radiolink/r8xm-specifications", "doc/radiolink/r8xm-manual", "doc/radiolink/receivers-compatible-with-transmitters"]
 links = [ { site = "RadioLink", url = "https://www.radiolink.com/r8xm" } ]
@@ -25,5 +25,5 @@ outputs = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 telemetry = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 operating_v = "https://www.radiolink.com/receivers_compatible_with_transmitters"
 range_m = "https://www.radiolink.com/receivers_compatible_with_transmitters"
-compatible_transmitters = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+compatible_transmitters = "https://www.radiolink.com/r8xm_specifications"
 antenna_mm = "https://www.radiolink.com/r8xm_specifications"

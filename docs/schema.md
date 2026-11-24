@@ -654,8 +654,10 @@ A category file (data/categories/<slug>.toml) may define the spec of its parts o
 field with `field`, `label`, `type` and, where they apply, `unit`, `min`, `max`, `values` (the allowed values of an
 enum), `when` (the parts it applies to, as field = [values]: `{ radio_unit = ["receiver"] }`) and `cite`. The types:
 `int`, `number`, `range` (a number, or `[min, max]` for a stated from-to), `numbers` (a list, such as selectable
-settings), `bool`, `enum` (one of `values`), `enums` (a list of `values`), `parts` (a list of part ids, or the
-maker's model code where the data has no such part), `string` and `dims`. A field with `cite = true` names the page
+settings), `bool`, `enum` (one of `values`), `enums` (a list of `values`), `parts` (a list of rows, each
+`{ part = "part/..." }` for a model the data has or `{ name = "T16D" }` with the maker's model code for one it
+has not, and an optional `note` with what the maker writes in brackets after the model: `{ name = "T8S", note = "BT" }`,
+`{ part = "part/radiolink/RC4GS", note = "version with P.D AFTER 180101" }`), `string` and `dims`. A field with `cite = true` names the page
 that states it in the part's `sources` table (`sources.range_m = "https://..."`); fields without it are older fields
 with their own rules, listed so the spec is complete. tools/validate.py checks every part of the category against its
 category's entries, and the site shows them as the part's spec table, in the category's order.
@@ -673,7 +675,7 @@ PPM, S.BUS, S.BUS2, i-BUS, i-BUS2, CRSF, SRXL2, XBUS), `gyro`, `telemetry` ("mod
 `antenna` (built-in, single, dual) with `antenna_mm`, `compatible_receivers` on a transmitter or set and
 `compatible_transmitters` on a receiver, `weight_g` and `dimensions_mm`. hobbydex-tools
 tools/data/linkers/radio_specs.toml reads them from the maker's spec text the importers write and takes that text out
-of the notes.
+of the notes; the lists of compatible radios also from the part's own cached maker pages, and they only grow.
 
 ```toml
 radio_unit = "set"
@@ -681,7 +683,7 @@ latency_ms = [3, 4, 14]
 operating_v = [3.4, 4.2]
 battery = ["18650"]
 battery_included = true
-compatible_receivers = ["part/radiolink/R8FG", "R16SM"]
+compatible_receivers = [{ part = "part/radiolink/R8FG", note = "Standard" }, { name = "R16SM" }]
 
 [sources]
 latency_ms = "https://www.radiolink.com/comparison_of_surface_transmitters"

@@ -6,6 +6,9 @@ seen_by = "2026-09-21"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+compatible_transmitters = [
+  { name = "FS-i6", note = "transmitters with AFHDS 2A protocol" },
+]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/x8mspecifications" },
 ]
@@ -13,3 +16,6 @@ radio_unit = "receiver"
 protocol = "AFHDS 2A"
 weight_g = 0.9
 protocols = ["spec/protocol/flysky-afhds-2a"]
+
+[sources]
+compatible_transmitters = "https://www.flysky-cn.com/x8mspecifications"
