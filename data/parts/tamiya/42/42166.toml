@@ -8,6 +8,10 @@ name_source = "dealer"
 applies_to = "DB-01"
 fits = [
   { kit = "kit/tamiya/db01", type = "replaces", source = "doc/tamiya/asiatees" },
+  { kit = "kit/tamiya/tt-02b", releases = ["release/tamiya/58717"], type = "direct", source = "doc/tamiya/42166-product-page-ja" },
+  { kit = "kit/tamiya/zahhak", type = "direct", source = "doc/tamiya/42166-product-page-ja" },
+  { kit = "kit/tamiya/dt-03", releases = ["release/tamiya/58610"], type = "direct", source = "doc/tamiya/42166-product-page-ja" },
+  { kit = "kit/tamiya/trf502", releases = ["release/tamiya/42183"], type = "direct", source = "doc/tamiya/42166-product-page-ja" },
 ]
 links = [
   { site = "Tamiya", url = "https://www.tamiya.com/japan/products/42166/index.html" },
@@ -16,3 +20,4 @@ pack_qty = 4
 pack_qty_basis = "name"
 category = "shock"
 shock_part = "piston"
+documents = ["doc/tamiya/42166-product-page-ja"]

@@ -6,9 +6,25 @@ seen_by = "2013-03-16"
 seen_by_source = "https://web.archive.org/web/20130316022134/http://www.tamiya.com:80/japan/products/product_info_ex.html?col=&products_id=42245"
 category = "chassis"
 links = [{ site = "Tamiya", url = "https://www.tamiya.com/japan/products/42245/index.html" }, { site = "Tamiya Germany", url = "https://customer-service.tamiya.de/en/service/manuals/?lp=14&ln=90&ls=name-asc&ps=", kind = "maker" }]
-documents = ["doc/tamiya/42245-body-adjuster-mount"]
+documents = ["doc/tamiya/42245-body-adjuster-mount", "doc/tamiya/42245-product-page-ja"]
 fits = [
   { kit = "kit/tamiya/m-06", type = "replaces", source = "doc/tamiya/asiatees" },
+  { kit = "kit/tamiya/xm-01", type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/tt-02-type-s", releases = ["release/tamiya/58720"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/ff-04", releases = ["release/tamiya/84394", "release/tamiya/84422"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/ff-03", releases = ["release/tamiya/58463"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/ta08", releases = ["release/tamiya/58693"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/ta07", releases = ["release/tamiya/42326", "release/tamiya/58636"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/ta06", releases = ["release/tamiya/84352"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/tb-evo-6", releases = ["release/tamiya/84427"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/tb-04", releases = ["release/tamiya/84339"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/tb-03", releases = ["release/tamiya/84205"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/trf420x", releases = ["release/tamiya/42345"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/trf419", releases = ["release/tamiya/42301", "release/tamiya/42311", "release/tamiya/42316"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/tt-02", releases = ["release/tamiya/47382", "release/tamiya/47439"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/xv-02", type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/xv-01", releases = ["release/tamiya/58526", "release/tamiya/58552"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
+  { kit = "kit/tamiya/trf421", releases = ["release/tamiya/42391"], type = "direct", source = "doc/tamiya/42245-product-page-ja" },
 ]
 name_source = "manufacturer"
 material = "aluminium"
