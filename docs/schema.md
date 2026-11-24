@@ -648,6 +648,45 @@ receiver's size and weight go in `notes` as "Receiver: 35 x 21 x 12 mm,
 part is. tools/validate.py checks the values and that the part is in
 category radio, or esc for an ESC with a receiver.
 
+### Spec fields
+
+A category file (data/categories/<slug>.toml) may define the spec of its parts once, in `spec_fields`: one entry per
+field with `field`, `label`, `type` and, where they apply, `unit`, `min`, `max`, `values` (the allowed values of an
+enum), `when` (the parts it applies to, as field = [values]: `{ radio_unit = ["receiver"] }`) and `cite`. The types:
+`int`, `number`, `range` (a number, or `[min, max]` for a stated from-to), `numbers` (a list, such as selectable
+settings), `bool`, `enum` (one of `values`), `enums` (a list of `values`), `parts` (a list of part ids, or the
+maker's model code where the data has no such part), `string` and `dims`. A field with `cite = true` names the page
+that states it in the part's `sources` table (`sources.range_m = "https://..."`); fields without it are older fields
+with their own rules, listed so the spec is complete. tools/validate.py checks every part of the category against its
+category's entries, and the site shows them as the part's spec table, in the category's order.
+
+The maker's spec text is not copied into `notes` (owner, 2026-11-24): what a field holds is a field, and the rest is
+on the maker's page, which the part links. A note may keep a short plain sentence a field cannot hold (where the record
+comes from, the maker's statement of its status), never a spec list.
+
+Radios (data/categories/radio.toml) define a transmitter's and a receiver's spec: `channels`, `protocol`,
+`frequency_band` ("2.4GHz", "27MHz", ...), `range_m` (the control distance on the ground; a range in the air is not
+read), `latency_ms` (the response latencies a transmitter offers, `[3, 4, 14]`), `model_memory`, `operating_v`
+(`[min, max]` volts), `battery` (the cells or packs it takes: "18650", "AA", "AAA", "NiMH", "LiFe", "LiPo", "Li-ion")
+with `battery_included`, `outputs` (a receiver's signal outputs, or on a transmitter the ones its system supports: PWM,
+PPM, S.BUS, S.BUS2, i-BUS, i-BUS2, CRSF, SRXL2, XBUS), `gyro`, `telemetry` ("model-voltage", "rssi", ...),
+`antenna` (built-in, single, dual) with `antenna_mm`, `compatible_receivers` on a transmitter or set and
+`compatible_transmitters` on a receiver, `weight_g` and `dimensions_mm`. hobbydex-tools
+tools/data/linkers/radio_specs.toml reads them from the maker's spec text the importers write and takes that text out
+of the notes.
+
+```toml
+radio_unit = "set"
+latency_ms = [3, 4, 14]
+operating_v = [3.4, 4.2]
+battery = ["18650"]
+battery_included = true
+compatible_receivers = ["part/radiolink/R8FG", "R16SM"]
+
+[sources]
+latency_ms = "https://www.radiolink.com/comparison_of_surface_transmitters"
+```
+
 `gtin`: the product barcode (UPC-A, EAN-13 or another GTIN) as a string of
 digits, as printed by the brand; the validator checks length and check digit.
 Releases can carry a `gtin` too, the barcode on the kit's box.

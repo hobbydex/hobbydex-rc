@@ -6,10 +6,17 @@ seen_by = "2024-04-08"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+channels = 4
+battery = ["AA"]
+frequency_band = "2.4GHz"
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/fsmg4bsdescription" },
 ]
 radio_unit = "transmitter"
-notes = "Specifications (FlySky product page): Product Model： FS-MG4-BS ; Channels：4 ; Model Type：  Car, Boat ; Wireless protocol:  2A-BS ; Battery：  6V DC/1.5AA*4 ; RF: 2.4GHz ISM ; Channel Resolution: 1024 ; Antenna Type：  Built-in single antenna ; Dimensions ：118mm*73mm*145mm ; Weight： 130g"
 protocol = "2A-BS"
 protocols = ["spec/protocol/flysky-2a-bs"]
+
+[sources]
+channels = "https://www.flysky-cn.com/fsmg4bsdescription"
+battery = "https://www.flysky-cn.com/fsmg4bsdescription"
+frequency_band = "https://www.flysky-cn.com/fsmg4bsdescription"

@@ -6,12 +6,21 @@ seen_by = "2025-06-12"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "dual"
+operating_v = [3.5, 9]
+outputs = ["PWM", "PPM", "i-BUS", "S.BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/sr8c-specifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Name: FS-SR8C ; Compatible Transmitters: Adapts transmitters with ANT protocol, such as FS-ST8 ; Compatible Models: Fixed-wing aircraft, delta-wing airplanes, gliders or robots, etc. ; PWM Channels: 8 ; RF: 2.4GHz ISM ; Maximum Power: < 20dBm (e.i.r.p.) （EU） ; 2.4G Protocol: ANT ; Resolution: 4096 ; Antenna: Two antennas (ipex4) ; Input Power: 3.5~9V/DC ; Working Current: 70mA(5V) ; Data Output: PWM/PPM/i-BUS/S.BUS ; Online Update: Yes ; Temperature Range: -10℃ ~ +60℃ ; Humidity Range: 20% ~ 95% ; Dimensions: 22*15*3mm (Excluding pins and antennas) ; Weight: 1g ("
 channels = 8
 protocol = "ANT"
 weight_g = 1
 protocols = ["spec/protocol/flysky-ant"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/sr8c-specifications"
+antenna = "https://www.flysky-cn.com/sr8c-specifications"
+operating_v = "https://www.flysky-cn.com/sr8c-specifications"
+outputs = "https://www.flysky-cn.com/sr8c-specifications"

@@ -6,12 +6,23 @@ seen_by = "2022-07-21"
 seen_by_source = "https://web.archive.org/web/20220721105828/https://www.flysky-cn.com/inr6hsspecifications"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "dual"
+antenna_mm = 92.5
+operating_v = [3.5, 9]
+outputs = ["PWM", "PPM", "i-BUS", "i-BUS2", "S.BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/inr6hsspecifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Designation: INr6-HS ; PWM Channels: 6 ; RF: 2.4GHz ; 2.4G Protocol: AFHDS 3 ; Antenna: Dual Antennas （92.5mm，ipex4 interface） ; Input Power: 3.5-9V ; Data Output: PWM/PPM/i.BUS/i.BUS2/S.BUS ; BVD interface: YES ; Graduation value: 1m ; Temperature Range: -10℃ to +60℃ ; Humidity Limit: 20%-95% ; Online Update: Yes ; Dimensions: 18*16.8*6.0mm ; Weight: 3.0g ; Certification: CE，FCC ID:N4ZINR6HS00"
 channels = 6
 protocol = "AFHDS 3"
 weight_g = 3.0
 protocols = ["spec/protocol/flysky-afhds-3"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/inr6hsspecifications"
+antenna = "https://www.flysky-cn.com/inr6hsspecifications"
+antenna_mm = "https://www.flysky-cn.com/inr6hsspecifications"
+operating_v = "https://www.flysky-cn.com/inr6hsspecifications"
+outputs = "https://www.flysky-cn.com/inr6hsspecifications"

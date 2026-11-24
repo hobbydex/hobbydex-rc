@@ -6,11 +6,24 @@ seen_by = "2020-01-21"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+channels = 6
+frequency_band = "2.4GHz"
+antenna = "dual"
+antenna_mm = 150
+operating_v = [4, 6.5]
+outputs = ["PWM"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/ia6-canshu" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Product Model: FS-iA6 ; PWM channels: 6 ; Wireless frequency: 2.4GHz ; Wireless protocol: AFHDS 2A ; Range: 500 ～ 1500m (in the air) ; Antenna type: dual antenna (150mm * 2) ; Power: 4.0-6.5V ; RSSI: Not supported ; Data port: PWM ; Temperature range: 0 ℃ — + 60 ℃ ; Humidity range: 20% -95% ; Online update: Yes ; Dimensions: 40.4 * 21.1 * 7.3 mm ; Weight: 7 g ; Certification: CE, FCC ID: N4ZFLYSKYIA6"
 protocol = "AFHDS 2A"
 weight_g = 7
 protocols = ["spec/protocol/flysky-afhds-2a"]
+
+[sources]
+channels = "https://www.flysky-cn.com/ia6-canshu"
+frequency_band = "https://www.flysky-cn.com/ia6-canshu"
+antenna = "https://www.flysky-cn.com/ia6-canshu"
+antenna_mm = "https://www.flysky-cn.com/ia6-canshu"
+operating_v = "https://www.flysky-cn.com/ia6-canshu"
+outputs = "https://www.flysky-cn.com/ia6-canshu"

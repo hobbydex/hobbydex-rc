@@ -6,12 +6,23 @@ seen_by = "2022-12-30"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "single"
+range_m = 300
+outputs = ["PWM", "PPM", "i-BUS", "S.BUS"]
+operating_v = [3.5, 9]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/r7vspecifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Name: FS-R7V ; Compatible Transmitters: FS-G7P( Adapts surface transmitters with ANT protocol) ; Compatible Models: Cars or boats ; PWM Channels: 7 ; RF: 2.4GHz ISM ; Maximum Power: <20dBm (e.i.r.p.) （EU） ; Antenna: Single antenna ; Distance: ≥ 300m (Ground distance without interference) ; 2.4G Protocol: ANT ; Resolution: 4096 ; Data Output: PWM/PPM/i-BUS/S.BUS ; Input Power: 3.5 ~ 9V/DC ; Online Update: Yes ; Temperature Range: -10℃ ~ +60℃ ; Humidity Range: 20% ~ 95% ; WaterProof: PPX4 ; Dimensions: 35.0mm*23.3mm*13.3mm ; Weight: 8.0g ; Certifications: CE, FCC I"
 channels = 7
 protocol = "ANT"
 weight_g = 8.0
 protocols = ["spec/protocol/flysky-ant"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/r7vspecifications"
+antenna = "https://www.flysky-cn.com/r7vspecifications"
+range_m = "https://www.flysky-cn.com/r7vspecifications"
+outputs = "https://www.flysky-cn.com/r7vspecifications"
+operating_v = "https://www.flysky-cn.com/r7vspecifications"

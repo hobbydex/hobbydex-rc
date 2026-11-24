@@ -6,11 +6,24 @@ seen_by = "2020-01-21"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+channels = 6
+frequency_band = "2.4GHz"
+antenna = "dual"
+operating_v = [4, 8.4]
+telemetry = ["rssi"]
+outputs = ["PWM", "PPM", "i-BUS", "S.BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/x6b-canshu" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): MANUAL ; ACCESSORIES ; Product Model: FS-X6B ; PWM channels: 6 ; Wireless frequency: 2.4GHz ; Wireless protocol: AFHDS 2A ; Range: 500 ～ 1500m (in the air) ; Antenna type: dual antenna (93m * 2) ; Power: 4.0-8.4V ; RSSI: Supported ; Data port: PWM / PPM / i.bus / s.bus ; Temperature range: -10 ℃ — + 60 ℃ ; Humidity range: 20% -95% ; Online Update: Yes ; Dimensions: 36 * 22 * 7.5mm ; Weight: 4.5g ; Certification: CE, FCC ID: N4ZX6B00"
 protocol = "AFHDS 2A"
 weight_g = 4.5
 protocols = ["spec/protocol/flysky-afhds-2a"]
+
+[sources]
+channels = "https://www.flysky-cn.com/x6b-canshu"
+frequency_band = "https://www.flysky-cn.com/x6b-canshu"
+antenna = "https://www.flysky-cn.com/x6b-canshu"
+operating_v = "https://www.flysky-cn.com/x6b-canshu"
+telemetry = "https://www.flysky-cn.com/x6b-canshu"
+outputs = "https://www.flysky-cn.com/x6b-canshu"

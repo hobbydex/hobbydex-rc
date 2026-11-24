@@ -11,12 +11,22 @@ radio_unit = "set"
 channels = 4
 protocol = "FHSS"
 weight_g = 536
-notes = "End of production (KO Propo product page). KO Propo radio set (transmitter and receiver under one number). Specifications: New Steering Unit ST2; Expert Grip2; Latest version software Ver2.12; HCS compatible Receiver KR-418FH; Dimensions:230×163×107mm; Weight:536g (not included battery); Battery: RO3/AAA/UM4 battery x 4; Current: 150mA; Using time: 4 or 5 hours( with alkaline battery); Channels:4 channels; Frequency:2.4GHz(FHSS); Model memory: 35; HCS; compatible receiver KR-418FH(21011) included.; Other Compatible receivers: KR-415FHD,KR-413FH,KR-241FH,KR-211FH,KR-212FHG."
+notes = "End of production (KO Propo product page)."
 includes = [
   { part = "part/ko-propo/21011", qty = 1 },
 ]
+battery = ["AAA"]
+frequency_band = "2.4GHz"
+model_memory = 35
+compatible_receivers = ["part/ko-propo/21011", "KR-415FHD", "KR-413FH", "KR-241FH", "KR-211FH", "KR-212FHG"]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/80641" },
 ]
 documents = ["doc/ko-propo/ex-rr-ex-2-manual-en-v-2-12", "doc/ko-propo/20190410-ex-rr-ex-2-option-startup-guide-ver2-12-en", "doc/ko-propo/ex-rr-ex-2-ex-ldtseries-manual-en-v-2-15-0521-1"]
 protocols = ["spec/protocol/ko-propo-fhss"]
+
+[sources]
+battery = "https://www.kopropo.co.jp/en/products/view/80641"
+frequency_band = "https://www.kopropo.co.jp/en/products/view/80641"
+model_memory = "https://www.kopropo.co.jp/en/products/view/80641"
+compatible_receivers = "https://www.kopropo.co.jp/en/products/view/80641"

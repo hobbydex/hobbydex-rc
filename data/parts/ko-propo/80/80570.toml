@@ -10,12 +10,16 @@ category_source = "curated"
 radio_unit = "set"
 protocol = "FHSS"
 weight_g = 528
-notes = "End of production (KO Propo product page). KO Propo radio set (transmitter and receiver under one number). Specifications: Dimensions: 240×163×107mm; Weight: 528g ( Not included battery); Current: 150mA RO3/AAA/UM4 battery x 4; Using time: 6hours ( It may change by a kind of battery in use.）; 20 Model Memories.; Micro receiver KR-413FH included.; Other Compatible receivers: KR-415FHD,KR-241FH,KR-211FH,KR-212FHG."
+notes = "End of production (KO Propo product page)."
 includes = [
   { part = "part/ko-propo/21007", qty = 1 },
 ]
+compatible_receivers = ["KR-415FHD", "KR-241FH", "KR-211FH", "KR-212FHG"]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/80570" },
 ]
 documents = ["doc/ko-propo/ex-2-manual-en-b-0622", "doc/ko-propo/ex-rr-ex-2-ex-ldtseries-manual-en-v-2-15-0521-1"]
 protocols = ["spec/protocol/ko-propo-fhss"]
+
+[sources]
+compatible_receivers = "https://www.kopropo.co.jp/en/products/view/80570"

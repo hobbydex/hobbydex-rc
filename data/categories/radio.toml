@@ -8,3 +8,27 @@ key_fields = [
   { field = "channels", label = "Channels", from = "part" },
   { field = "protocol", label = "Protocol", from = "part" },
 ]
+# The spec of a transmitter and of a receiver (owner 2026-11-24): the fields a part of the category is read for, each
+# with its type, unit and allowed values, and the radio units it applies to (`when`). tools/validate.py checks the
+# parts against it, the site shows it as the part's spec table, and each value with `cite` names its page in the part's
+# `sources` table (docs/schema.md "Spec fields").
+spec_fields = [
+  { field = "channels", label = "Channels", type = "int", when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "protocol", label = "Protocol", type = "string", when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "frequency_band", label = "Frequency band", type = "enum", values = ["2.4GHz", "27MHz", "35MHz", "40MHz", "72MHz", "75MHz"], cite = true, when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "range_m", label = "Range (ground)", type = "range", unit = "m", min = 1, max = 10000, cite = true, when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "latency_ms", label = "Response latency", type = "numbers", unit = "ms", min = 0.1, max = 100, cite = true, when = { radio_unit = ["transmitter", "set"] } },
+  { field = "model_memory", label = "Model memory", type = "int", min = 1, max = 1000, cite = true, when = { radio_unit = ["transmitter", "set"] } },
+  { field = "operating_v", label = "Operating voltage", type = "range", unit = "V", min = 1, max = 60, cite = true, when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "battery", label = "Battery", type = "enums", values = ["18650", "AA", "AAA", "LiPo", "LiFe", "NiMH", "Li-ion"], cite = true, when = { radio_unit = ["transmitter", "set"] } },
+  { field = "battery_included", label = "Battery included", type = "bool", cite = true, when = { radio_unit = ["transmitter", "set"] } },
+  { field = "outputs", label = "Outputs", type = "enums", values = ["PWM", "PPM", "S.BUS", "S.BUS2", "i-BUS", "i-BUS2", "CRSF", "SRXL2", "XBUS"], cite = true, when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "gyro", label = "Built-in gyro", type = "bool", cite = true, when = { radio_unit = ["set", "receiver"] } },
+  { field = "telemetry", label = "Telemetry", type = "enums", values = ["model-voltage", "rssi", "temperature", "rpm", "speed"], cite = true, when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "antenna", label = "Antenna", type = "enum", values = ["built-in", "single", "dual"], cite = true, when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "antenna_mm", label = "Antenna length", type = "number", unit = "mm", min = 1, max = 1000, cite = true, when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "compatible_receivers", label = "Compatible receivers", type = "parts", cite = true, when = { radio_unit = ["transmitter", "set"] } },
+  { field = "compatible_transmitters", label = "Compatible transmitters", type = "parts", cite = true, when = { radio_unit = ["receiver"] } },
+  { field = "weight_g", label = "Weight", type = "number", unit = "g", when = { radio_unit = ["transmitter", "set", "receiver"] } },
+  { field = "dimensions_mm", label = "Size", type = "dims", unit = "mm", when = { radio_unit = ["transmitter", "set", "receiver"] } },
+]

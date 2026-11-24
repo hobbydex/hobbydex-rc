@@ -6,12 +6,23 @@ seen_by = "2025-06-12"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "dual"
+operating_v = [3.5, 8.4]
+telemetry = ["rssi"]
+outputs = ["PWM", "PPM", "i-BUS", "S.BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/sr8specifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Model: FS-SR8 ; PWM Channels: 8 ; RF: 2.4GHz ; Protocol: ANT ; Antenna: Dual Antenna ; Input Power: 3.5-8.4V ; RSSI: Support ; Data Output: PWM、PPM、i.BUS、s.BUS ; BVD Function :Yes, 0-70V ; Temperature Range: -10℃—+60℃ ; Humidity Limit: 20%-95% ; Online Update: Yes ; Dimensions: 44.8*26.6*11.3mm ; Weight: 10g ; Certification: CE，FCC ID:2A2UNSR800"
 channels = 8
 protocol = "ANT"
 weight_g = 10
 protocols = ["spec/protocol/flysky-ant"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/sr8specifications"
+antenna = "https://www.flysky-cn.com/sr8specifications"
+operating_v = "https://www.flysky-cn.com/sr8specifications"
+telemetry = "https://www.flysky-cn.com/sr8specifications"
+outputs = "https://www.flysky-cn.com/sr8specifications"

@@ -12,8 +12,12 @@ channels = 4
 protocol = "FHSS"
 dimensions_mm = [30, 23, 12.8]
 weight_g = 8
-notes = "End of production (KO Propo product page). KO Propo specifications: Dimensions:30 x 23 x 12.8mm; Weight:8.0g; Operation Voltage:4.8 to 7.4V; Dual Antenna FHSS. DDS compatible.; Number of channels: 4( compatible with HCS and Normal); Shield Wire antenna; Gold Plated header pins; Compatible for HCS.; EX-RR / EX-1(KIY) / EX-2(KIY) / Esprit4 / EX-5FH / RF-904FH / RF-903FH"
+notes = "End of production (KO Propo product page)."
+operating_v = [4.8, 7.4]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/21009" },
 ]
 protocols = ["spec/protocol/ko-propo-fhss"]
+
+[sources]
+operating_v = "https://www.kopropo.co.jp/en/products/view/21009"

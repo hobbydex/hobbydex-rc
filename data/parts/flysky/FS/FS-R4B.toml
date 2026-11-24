@@ -6,12 +6,23 @@ seen_by = "2022-09-12"
 seen_by_source = "https://web.archive.org/web/20220912064920/https://www.flysky-cn.com/r4bspecifications"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "single"
+operating_v = [3.5, 8.4]
+telemetry = ["rssi"]
+outputs = ["PWM"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/r4bspecifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): MANUAL ; ACCESSORIES ; Product Model: FS-R4B ; PWM Channels: 4 ; RF: 2.4GHz ; Protocol: ANT ; Antenna: Single Antenna ; Input Power: 3.5-8.4V ; RSSI: Support ; Data Output: PWM ; Temperature Range: -10℃—+60℃ ; Humidity Limit: 20%-95% ; Online Update: Yes ; Dimensions: 30.2*18.0*13.0mm ; Weight: 5g ; Certification: CE，FCC"
 channels = 4
 protocol = "ANT"
 weight_g = 5
 protocols = ["spec/protocol/flysky-ant"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/r4bspecifications"
+antenna = "https://www.flysky-cn.com/r4bspecifications"
+operating_v = "https://www.flysky-cn.com/r4bspecifications"
+telemetry = "https://www.flysky-cn.com/r4bspecifications"
+outputs = "https://www.flysky-cn.com/r4bspecifications"
