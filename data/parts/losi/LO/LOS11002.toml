@@ -15,3 +15,6 @@ motor_type = "brushed"
 equivalent_to = [
   { spec = "spec/motor/brushed-380-2.3mm", match = "functional", notes = "Brushed can size from the name; wind and speed differ" },
 ]
+fits = [
+  { kit = "kit/losi/mini-lmt", type = "direct", source = "doc/losi/horizon-part-pages" },
+]
