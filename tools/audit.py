@@ -751,11 +751,11 @@ def main():
                 rows = [r.rstrip("\n").split("\t") for r in sample]
                 flagged = [{"id": r[1], "url": r[4]} for r in rows]
                 results["maker-page-unlinked"] = {
-                    "fix": "run tools/link_maker_pages.py in hobbydex-tools (the daily derive step does it); a cached 200 page that names the part gives it the link",
+                    "fix": "run hobbydex-linkmaker --apply (the daily derive step does it); a cached 200 page that names the part gives it the link",
                     "count": sum(unlinked.values()), "examples": flagged[:args.examples],
                     "all": sorted({r["id"] for r in flagged}), "per_brand": sorted(unlinked.items(), key=lambda x: -x[1])}
                 results["maker-link-page-gone"] = {
-                    "fix": "the crawl has the page as 404 on a recheck; the daily derive step marks the link gone (tools/link_maker_pages.py) and an archive link follows once a capture is cached",
+                    "fix": "the crawl has the page as 404 on a recheck; the daily derive step marks the link gone (hobbydex-linkmaker) and an archive link follows once a capture is cached",
                     "count": sum(pruned.values()), "examples": [], "all": [], "per_brand": sorted(pruned.items(), key=lambda x: -x[1])}
     else:
         results["maker-page-unlinked"] = {"fix": "hobbydex-tools link_maker_pages.py not found (--tools)", "count": None, "examples": [], "all": []}
@@ -763,7 +763,7 @@ def main():
     # 9b. barcodes the cache states for a record that has no gtin (tools/gtin_sweep.py in hobbydex-tools finds them)
     if tools["gtin_holes"] is not None:
         miss = gtin_in_cache_not_stored(tools["gtin_holes"], by_id)
-        check("gtin-in-cache-not-stored", "rerun tools/link_gtin.py in hobbydex-tools (a barcode a cached page states for exactly this number); if it does not take it, the importer misses that page format: fix the class (tools/gtin_sweep.py report writes the file it lists)",
+        check("gtin-in-cache-not-stored", "rerun the barcode linker in hobbydex-tools (hobbydex-link run link_gtin.py; a barcode a cached page states for exactly this number); if it does not take it, the importer misses that page format: fix the class (tools/gtin_sweep.py report writes the file it lists)",
               miss)
         results["gtin-in-cache-not-stored"]["examples"] = [{"id": i, "url": url_for(by_id[i]), "gtin": tools["gtin_holes"][i][0], "file": tools["gtin_holes"][i][2]} for i in miss[:args.examples]]
     else:
@@ -830,7 +830,7 @@ def main():
         if has_foreign_link(text, swaps, gone, unavailable):
             foreign.append(path)
     if tools["english_table"]:
-        check("non-english-link", "switch the link to the maker's English address once the maker has it (tools/link_language_variants.py in hobbydex-tools; the hosts are in tools/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone, failed, answers with an error page, or names none of the record's item numbers is not listed)",
+        check("non-english-link", "switch the link to the maker's English address once the maker has it (hobbydex-link run link_language_variants.py in hobbydex-tools; the hosts are in tools/data/english_variants.toml); a link the maker never translated is listed here until its host rule is narrowed (a link whose English address the crawl found gone, failed, answers with an error page, or names none of the record's item numbers is not listed)",
               [{"id": p} for p in foreign], count=len(foreign))
     else:
         results["non-english-link"] = {"fix": ENGLISH_MISSING, "count": None, "examples": [], "all": []}
@@ -852,7 +852,7 @@ def main():
             for row in csv.DictReader(fh, delimiter="\t"):
                 if row["status"].startswith("conflict"):
                     conflicts.append({"id": row["part"]})
-    check("tamico-pack-conflict", "no pack_qty from the dealers: the dealers' counts differ or the part's name states another count; set the count from the part's own source or leave it unset (tools/link_tamico_spares.py lists the rows)",
+    check("tamico-pack-conflict", "no pack_qty from the dealers: the dealers' counts differ or the part's name states another count; set the count from the part's own source or leave it unset (the tamico_spares linker lists the rows in cache/notes/tamiya/tamico-spares.tsv)",
           conflicts, count=len(conflicts))
 
     # 29-38. names
@@ -902,7 +902,7 @@ def main():
           [x["id"] for pair in twins for x in pair], count=len(twins), per_brand=per_brand([a for a, _ in twins]))
     results["ocr-number-twins"]["examples"] = [{"id": f"{a['id']} ~ {b['id']}", "url": url_for(a)} for a, b in twins[:args.examples]]
 
-    # Horizon-owned brands: parts with no maker link (tools/link_horizon_pages.py links the item's page; a part Horizon does not list stays unlinked)
+    # Horizon-owned brands: parts with no maker link (the Horizon page linker of hobbydex-tools links the item's page; a part Horizon does not list stays unlinked)
     hz = [p for p in parts if p.get("brand") in horizon and not any(l.get("kind") not in ("dealer", "fan-site") for l in p.get("links", []))]
     hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
     gone_items = horizon_gone_items(os.path.abspath(args.tools))
@@ -910,7 +910,7 @@ def main():
     hz_nopage_ids = {p["id"] for p in hz_nopage}
     hz = [p for p in hz if p["id"] not in hz_nopage_ids]
     hz_brands = collections.Counter(p["brand"].split("/")[-1] for p in hz)
-    check("horizon-part-no-maker-link", "run tools/link_horizon_pages.py (queues the item's Horizon page first; a part Horizon lists nowhere stays unlinked)",
+    check("horizon-part-no-maker-link", "run the Horizon page linker in hobbydex-tools: hobbydex-link run link_horizon_pages.py (the crawl planner horizon-items queues the item's Horizon page first; a part Horizon lists nowhere stays unlinked)",
           hz, per_brand=hz_brands.most_common())
     check("horizon-part-no-maker-page", "no maker page exists: the part is named only by exploded views, parts lists or manuals, and its Horizon item page answers 404 (informational)",
           hz_nopage, count=len(hz_nopage), per_brand=collections.Counter(p["brand"].split("/")[-1] for p in hz_nopage).most_common(), info=True)
