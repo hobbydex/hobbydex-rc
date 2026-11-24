@@ -14,6 +14,7 @@ notes = "End of production (KO Propo product page)."
 includes = [
   { part = "part/ko-propo/21007", qty = 1 },
 ]
+model_memory = 20
 compatible_receivers = ["KR-415FHD", "KR-241FH", "KR-211FH", "KR-212FHG"]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/80570" },
@@ -22,4 +23,5 @@ documents = ["doc/ko-propo/ex-2-manual-en-b-0622", "doc/ko-propo/ex-rr-ex-2-ex-l
 protocols = ["spec/protocol/ko-propo-fhss"]
 
 [sources]
+model_memory = "https://www.kopropo.co.jp/en/products/view/80570"
 compatible_receivers = "https://www.kopropo.co.jp/en/products/view/80570"

@@ -10,9 +10,11 @@ category_source = "curated"
 radio_unit = "set"
 protocol = "FHSS"
 weight_g = 528
+notes = "Name kept as printed by the maker; its brackets are unbalanced there too."
 includes = [
   { part = "part/ko-propo/21008", qty = 1 },
 ]
+model_memory = 40
 compatible_receivers = ["KR-415FHD", "KR-418FH", "KR-413FH", "KR-211FH", "KR-212FHG"]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/80623" },
@@ -21,4 +23,5 @@ documents = ["doc/ko-propo/ex-rr-ex-2-manual-en-v-2-12", "doc/ko-propo/20190410-
 protocols = ["spec/protocol/ko-propo-fhss"]
 
 [sources]
+model_memory = "https://www.kopropo.co.jp/en/products/view/80623"
 compatible_receivers = "https://www.kopropo.co.jp/en/products/view/80623"
