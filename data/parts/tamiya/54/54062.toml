@@ -12,7 +12,7 @@ fits = [
   { kit = "kit/tamiya/db01", type = "replaces", source = "doc/tamiya/asiatees" },
 ]
 documents = ["doc/tamiya/42139-manual-usa", "doc/tamiya/54062-product-page-ja"]
-links = [ { site = "Tamiya", url = "https://www.tamiya.com/japan/products/54062/index.html" } ]
+links = [{ site = "Tamiya", url = "https://www.tamiya.com/japan/products/54062/index.html" }, { site = "TamiyaBase", url = "https://www.tamiyabase.com/parts/7969-54062", kind = "fan-site" }]
 includes = [
   { spec = "spec/pinion/48dp-13t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
   { spec = "spec/pinion/48dp-14t", qty = 1, notes = "Pitch and teeth parsed from the manufacturer's description" },
