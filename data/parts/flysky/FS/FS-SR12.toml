@@ -6,12 +6,21 @@ seen_by = "2022-12-30"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "dual"
+operating_v = [3.5, 9]
+outputs = ["PWM", "PPM", "i-BUS", "S.BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/sr12-specifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Name: FS-SR12 ; Compatible Transmitters: Adapts transmitters with ANT protocol, such as FS-ST8 ; Compatible Models: Fixed-wing aircraft, helicopters, gliders, delta-wing airplanes, multicopters, engineering vehicles, boats, robots or cars. ; PWM Channels: 12 ; RF: 2.4GHz ISM ; Maximum Power: < 20dBm (e.i.r.p.) （EU） ; 2.4G Protocol: ANT ; Resolution: 4096 ; Antenna: Two antennas ; Distance: > 1500m (Air distance without interference) ; Input Power: 3.5~9V/DC ; Working Current: 70mA/5V ; Data Output: PWM/PPM/i-BUS/S.BUS ; Online Update: Yes ; Temperature Range: -10"
 channels = 12
 protocol = "ANT"
 weight_g = 13
 protocols = ["spec/protocol/flysky-ant"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/sr12-specifications"
+antenna = "https://www.flysky-cn.com/sr12-specifications"
+operating_v = "https://www.flysky-cn.com/sr12-specifications"
+outputs = "https://www.flysky-cn.com/sr12-specifications"

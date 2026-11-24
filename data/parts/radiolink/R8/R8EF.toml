@@ -11,7 +11,18 @@ channels = 8
 protocol = "FHSS"
 weight_g = 7
 dimensions_mm = [48.5, 21, 11]
-notes = "RadioLink receiver table: 8 channels; outputs PWM, PPM, S-BUS; operating voltage 3.0V-15V; current 30mA; size 48.5*21*11mm; range ground 500 m, air 2 km. Works with: RC8X, RC6GS V3, RC4GS V3, RC6GS V2, RC4GS V2, RC6GS, RC4GS, T16D, T12D, T8FB(BT), T8FB(OTG), T8S(BT), T8S(OTG). RadioLink specifications: Operating Voltage: 3-15V; Operating Current: 38-45mA@5V; Signals: SBUS&PPM&PWM; Antenna Length: 210mm (8.27”); Section Precision: 4096, 0.25us per section."
+outputs = ["PWM", "PPM", "S.BUS"]
+operating_v = [3, 15]
+range_m = 500
+compatible_transmitters = ["part/radiolink/RC8X", "part/radiolink/RC6GS-V3", "part/radiolink/RC4GS-V3", "part/radiolink/RC6GS-V2", "part/radiolink/RC4GS-V2", "part/radiolink/RC6GS", "part/radiolink/RC4GS", "T16D", "T12D", "T8FB(BT)", "T8FB(OTG)", "T8S(BT)", "T8S(OTG)"]
+antenna_mm = 210
 documents = ["doc/radiolink/r8ef", "doc/radiolink/r8ef-specifications", "doc/radiolink/r8ef-manual", "doc/radiolink/receivers-compatible-with-transmitters"]
 links = [ { site = "RadioLink", url = "https://www.radiolink.com/r8ef" } ]
 protocols = ["spec/protocol/radiolink-fhss"]
+
+[sources]
+outputs = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+operating_v = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+range_m = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+compatible_transmitters = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+antenna_mm = "https://www.radiolink.com/r8ef_specifications"

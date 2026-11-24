@@ -6,13 +6,24 @@ seen_by = "2016-07-17"
 seen_by_source = "https://web.archive.org/web/20160717111309/http://www.flysky-cn.com:80/products_list/keyword=FS-GT2G&searchType=1.html"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+range_m = [100, 300]
+battery = ["AA"]
+antenna = "single"
+outputs = ["PPM"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/gt2g-gaishu" },
 ]
 radio_unit = "transmitter"
-notes = "Specifications (FlySky product page): Product Model: FS-GT2G ; Channels: 2 ; Model: car, boat ; Wireless frequency: 2.4G ; Transmission power: <20 dBm ; Wireless protocol: AFHDS 2A ; Range: 100 ～ 300m (ground) ; Channel resolution: 1024 ; Battery: 1.5AA * 4 ; Charging port: None ; Low voltage alarm: ＜ 4.2V ; Antenna type: external single antenna ; Data port: phone jack (PPM) ; Temperature range: 0 ℃ — + 60 ℃ ; Humidity range: 20% -95% ; Online update: No ; Color: Black ; Dimensions: 210 * 95 * 160mm ; Weight: 239g ; Certification: CE, FCC ID: N4ZFLYSKYGT2G"
 channels = 2
 protocol = "AFHDS 2A"
 weight_g = 239
 documents = ["doc/flysky/fs-gt2g-user-manual-20260731"]
 protocols = ["spec/protocol/flysky-afhds-2a"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/gt2g-gaishu"
+range_m = "https://www.flysky-cn.com/gt2g-gaishu"
+battery = "https://www.flysky-cn.com/gt2g-gaishu"
+antenna = "https://www.flysky-cn.com/gt2g-gaishu"
+outputs = "https://www.flysky-cn.com/gt2g-gaishu"

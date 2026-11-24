@@ -6,11 +6,24 @@ seen_by = "2020-03-02"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "dual"
+antenna_mm = 92.5
+operating_v = [3.5, 8.4]
+telemetry = ["rssi"]
+outputs = ["i-BUS", "S.BUS", "PPM"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/ftr16s-canshu" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): MANUAL ; ACCESSORIES ; Product Model: FTr16S ; PWM channel: None ; Wireless frequency: 2.4GHz ; Wireless protocol: AFHDS 3 ; Range: 3500m (air) ; Antenna type: dual antenna (92.5mm * 2) ; Power: 3.5-8.4V ; RSSI: Supported ; Data port: i.bus / s.bus / PPM ; Temperature range: -10 ℃ — + 60 ℃ ; Humidity range: 20% -95% ; Online Update: Yes ; Dimensions: 20 * 12 * 3.1mm ; Weight: 2g ; Certification: CE, RCM, FCC ID: N4ZFTR16S00"
 protocol = "AFHDS 3"
 weight_g = 2
 protocols = ["spec/protocol/flysky-afhds-3"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/ftr16s-canshu"
+antenna = "https://www.flysky-cn.com/ftr16s-canshu"
+antenna_mm = "https://www.flysky-cn.com/ftr16s-canshu"
+operating_v = "https://www.flysky-cn.com/ftr16s-canshu"
+telemetry = "https://www.flysky-cn.com/ftr16s-canshu"
+outputs = "https://www.flysky-cn.com/ftr16s-canshu"

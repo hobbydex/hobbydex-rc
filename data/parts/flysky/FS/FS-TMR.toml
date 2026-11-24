@@ -6,11 +6,22 @@ seen_by = "2021-08-18"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "dual"
+operating_v = [3.5, 9]
+telemetry = ["rssi"]
+outputs = ["PWM", "PPM", "i-BUS", "S.BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/tmrspecifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Designation: TMR ; RF: 2.4GHz ISM ; Protocol: AFHDS 3 ; Antenna: Dual Antennas ; Input Power: 3.5-9V ; RSSI:Support ; Data Output: PWM/PPM/i.BUS out/S.BUS ; Temperature Range: -10℃ to +60℃ ; Humidity Limit: 20%-95% ; Online Update: Yes ; Dimensions: 16*12*2mm ; Weight: 0.9g ; Certification: CE，FCC ID: N4ZTMR000"
 protocol = "AFHDS 3"
 weight_g = 0.9
 protocols = ["spec/protocol/flysky-afhds-3"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/tmrspecifications"
+antenna = "https://www.flysky-cn.com/tmrspecifications"
+operating_v = "https://www.flysky-cn.com/tmrspecifications"
+telemetry = "https://www.flysky-cn.com/tmrspecifications"
+outputs = "https://www.flysky-cn.com/tmrspecifications"

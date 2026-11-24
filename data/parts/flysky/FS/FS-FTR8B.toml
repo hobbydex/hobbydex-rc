@@ -6,12 +6,21 @@ seen_by = "2022-05-12"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "dual"
+operating_v = [3.5, 9]
+outputs = ["PWM", "PPM", "i-BUS", "S.BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/ftr8bspecifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Designation: FTr8B ; Compatible transmitters: all AFHDS 3 transmitters and RF Modules (PL18, NB4, NB4 Lite, etc.) ; Model Type: fixed wing, glider, helicopter, delta wing, engineering vehicle, etc ; PWM Channels: 8 ; RF: 2.4GHz ; 2.4G Protocol: AFHDS 3 ; Antenna: Dual Antennas ; Input Power: 3.5-9V ; Data Output: PWM/PPM/i.BUS out/S.BUS ; Temperature Range: -10℃ to +60℃ ; Humidity Limit: 20%-95% ; Online Update: Yes ; Dimensions: 46*23.8*14.8mm ; Weight: 11.3g ; Certification: CE，FCC ID: N4ZFTR8B"
 channels = 8
 protocol = "AFHDS 3"
 weight_g = 11.3
 protocols = ["spec/protocol/flysky-afhds-3"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/ftr8bspecifications"
+antenna = "https://www.flysky-cn.com/ftr8bspecifications"
+operating_v = "https://www.flysky-cn.com/ftr8bspecifications"
+outputs = "https://www.flysky-cn.com/ftr8bspecifications"

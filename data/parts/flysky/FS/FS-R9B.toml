@@ -6,11 +6,24 @@ seen_by = "2020-01-21"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+channels = 8
+frequency_band = "2.4GHz"
+antenna = "single"
+antenna_mm = 150
+operating_v = [4, 6.5]
+outputs = ["PWM"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/r9b-canshu" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Product Model: FS-R9B ; PWM channels: 8 ; Wireless frequency: 2.4GHz ; Wireless protocol: AFHDS ; Range: 500 ～ 1000m (in the air) ; Antenna type: single antenna (150mm) ; Power: 4.0 -6.5 V ; RSSI: Not supported ; Data port: PWM ; Temperature range: 0 ℃ — + 60 ℃ ; Humidity range: 20% -95% ; Online update: No ; Dimensions: 53 * 35 * 15 mm ; Weight: 18 g ; Certification: CE"
 protocol = "AFHDS"
 weight_g = 18
 protocols = ["spec/protocol/flysky-afhds"]
+
+[sources]
+channels = "https://www.flysky-cn.com/r9b-canshu"
+frequency_band = "https://www.flysky-cn.com/r9b-canshu"
+antenna = "https://www.flysky-cn.com/r9b-canshu"
+antenna_mm = "https://www.flysky-cn.com/r9b-canshu"
+operating_v = "https://www.flysky-cn.com/r9b-canshu"
+outputs = "https://www.flysky-cn.com/r9b-canshu"

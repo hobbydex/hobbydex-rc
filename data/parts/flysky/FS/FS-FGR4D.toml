@@ -6,12 +6,19 @@ seen_by = "2023-12-14"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+operating_v = [3.5, 9]
+outputs = ["PWM", "PPM", "i-BUS2", "S.BUS", "i-BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/fgr4dspecifications" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Designation: FGr4D ; Compatible transmitters: all AFHDS 3 transmitters and RF Modules (PL18, Paladin EV, NB4, NB4 Lite, etc.) ; Model Type: Car/boat etc ; PWM Channels: 4 ; RF: 2.4GHz ; Protocol: AFHDS 3 ; Antenna: Dual built-in antennas ; Input Power: 3.5-9V/DC ; Data Output: PWM/PPM/i.BUS 2/S.BUS/i.BUS ; Temperature Range: -10℃ to +60℃ ; Humidity Range: 20%-95% ; Online Update: Yes ; Dimensions: 30.3*25.8*20mm ; Weight: 7.2g ; Certification: CE，FCC ID:2A2UNFGR4D"
 channels = 4
 protocol = "AFHDS 3"
 weight_g = 7.2
 protocols = ["spec/protocol/flysky-afhds-3"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/fgr4dspecifications"
+operating_v = "https://www.flysky-cn.com/fgr4dspecifications"
+outputs = "https://www.flysky-cn.com/fgr4dspecifications"

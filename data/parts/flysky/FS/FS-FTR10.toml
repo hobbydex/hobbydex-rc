@@ -6,11 +6,26 @@ seen_by = "2020-03-02"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+channels = 10
+frequency_band = "2.4GHz"
+antenna = "dual"
+antenna_mm = 103
+operating_v = [3.5, 12]
+telemetry = ["rssi"]
+outputs = ["PWM", "PPM", "i-BUS", "S.BUS"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/ftr10-canshu" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): MANUAL ; ACCESSORIES ; Product Model: FTr10 ; PWM channel: 10 ; Wireless frequency: 2.4GHz ; Wireless protocol: AFHDS 3 ; Range: > 3500m (air) ; Antenna type: dual antenna (103mm * 2) ; Power: 3.5-12V ; RSSI: Supported ; Data port: PWM / PPM / i.bus / s.bus / UART ; Temperature range: -10 ℃ — + 60 ℃ ; Humidity range: 20% -95% ; Online Update: Yes ; Dimensions: 52 * 28 * 22mm ; Weight: 22g ; Certification: CE, RCM, FCC ID: N4ZFTR1000"
 protocol = "AFHDS 3"
 weight_g = 22
 protocols = ["spec/protocol/flysky-afhds-3"]
+
+[sources]
+channels = "https://www.flysky-cn.com/ftr10-canshu"
+frequency_band = "https://www.flysky-cn.com/ftr10-canshu"
+antenna = "https://www.flysky-cn.com/ftr10-canshu"
+antenna_mm = "https://www.flysky-cn.com/ftr10-canshu"
+operating_v = "https://www.flysky-cn.com/ftr10-canshu"
+telemetry = "https://www.flysky-cn.com/ftr10-canshu"
+outputs = "https://www.flysky-cn.com/ftr10-canshu"

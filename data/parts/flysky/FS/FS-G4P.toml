@@ -6,13 +6,18 @@ seen_by = "2020-05"
 seen_by_source = "doc/flysky/fs-g4p-user-manual-20201215"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+battery = ["AA"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/g4p-description" },
 ]
 radio_unit = "transmitter"
-notes = "Specifications (FlySky product page): Product Model: FS-G4P ; Channels: 4 ; Model: car, boat ; Wireless frequency: 2.4G ; Transmission power: <20 dBm ; Wireless protocol: ANT ; Channel resolution: 1024 ; Battery: 1.5AA * 4 ; Charging port: None ; Low voltage alarm: ＜ 4.2V ; Antenna type: built-in single antenna ; Data port: None ; Temperature range: 0 ℃ — + 60 ℃ ; Humidity range: 20% -95% ; Online update: No ; Color: Black ; Dimensions: 160*193*97mm ; Weight: 220g ; Certification: CE, FCC ID: N4ZG4P00"
 channels = 4
 protocol = "ANT"
 weight_g = 220
 documents = ["doc/flysky/fs-g4p-user-manual-20201215"]
 protocols = ["spec/protocol/flysky-ant"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/g4p-description"
+battery = "https://www.flysky-cn.com/g4p-description"

@@ -6,12 +6,23 @@ seen_by = "2025-06-12"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "single"
+antenna_mm = 150
+operating_v = [3.5, 8.4]
+outputs = ["PWM"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/b1700-specifications-1" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): MANUAL ; ACCESSORIES ; Product Model: FS-BS3B ; PWM Channel: 3 ; Wireless Frequency: 2.4GHz ; Wireless Protocol: AFHDS 2A ; Antenna Type: single antenna (150mm) ; Power: 3.5-8.4V ; RSSI: Not Supported ; Data port: PWM ; Temperature range: -10 ℃ — + 60 ℃ ; Humidity range: 20% -95% ; Online Update: No ; Dimensions: 36*22*13mm ; Weight: 5.7g ; Certification: CE"
 channels = 3
 protocol = "AFHDS 2A"
 weight_g = 5.7
 protocols = ["spec/protocol/flysky-afhds-2a"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/b1700-specifications-1"
+antenna = "https://www.flysky-cn.com/b1700-specifications-1"
+antenna_mm = "https://www.flysky-cn.com/b1700-specifications-1"
+operating_v = "https://www.flysky-cn.com/b1700-specifications-1"
+outputs = "https://www.flysky-cn.com/b1700-specifications-1"

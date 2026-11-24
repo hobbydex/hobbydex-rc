@@ -6,12 +6,23 @@ seen_by = "2025-06-12"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "single"
+operating_v = [3.5, 8.4]
+telemetry = ["rssi"]
+outputs = ["PWM"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/r7p-specifications-1" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Model: FS-R7P ; PWM Channels: 7 ; RF: 2.4GHz ; Protocol: ANT ; Antenna: Single Antenna ; Input Power: 3.5-8.4V ; RSSI: Support ; Data Output: PWM ; Temperature Range: -10℃—+60℃ ; Humidity Limit: 20%-95% ; Waterproof Level:PPX4 ; Online Update: Yes ; Dimensions: 35*23.3*13.3mm ; Weight: 8g ; Certification: CE，FCC ID:2A2UNR7P00"
 channels = 7
 protocol = "ANT"
 weight_g = 8
 protocols = ["spec/protocol/flysky-ant"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/r7p-specifications-1"
+antenna = "https://www.flysky-cn.com/r7p-specifications-1"
+operating_v = "https://www.flysky-cn.com/r7p-specifications-1"
+telemetry = "https://www.flysky-cn.com/r7p-specifications-1"
+outputs = "https://www.flysky-cn.com/r7p-specifications-1"

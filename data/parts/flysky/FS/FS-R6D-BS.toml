@@ -6,12 +6,21 @@ seen_by = "2025-03-12"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+compatible_transmitters = ["part/flysky/FS-MG6-BS"]
+frequency_band = "2.4GHz"
+operating_v = [3.5, 8.4]
+outputs = ["PWM"]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/fsr6dbsdescription" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Product model：FS-R6D-BS ; Compatible transmitter:FS-MG6-BS ; Model type:1/8th scale crawler, onroad touring car, trucks ; Channels:6 ; Number of car light groups:6(LED car light interface connected to FS-DB01 car light driver board) ; RF:2.4GHz ISM ; RF power:<20 dBm ; 2.4GHz Protocol:2A-BS ; Channel Resolution: 4096 ; Input Power：3.5~8.4V/DC ; Antenna Type: Built-in single antenna ; Data Output ：PWM ; Online Update：No ; Temperature range :-10℃ ~ +60℃ ; Humidity range:20% ~ 95% ; Waterproof :PPX4 ; Size:29.0mmX22.0mmX16.2mm ; Weight:7.7g ; Certification:CE, FCC ID：2A2UNR6D01"
 channels = 6
 weight_g = 7.7
 protocol = "2A-BS"
 protocols = ["spec/protocol/flysky-2a-bs"]
+
+[sources]
+compatible_transmitters = "https://www.flysky-cn.com/fsr6dbsdescription"
+frequency_band = "https://www.flysky-cn.com/fsr6dbsdescription"
+operating_v = "https://www.flysky-cn.com/fsr6dbsdescription"
+outputs = "https://www.flysky-cn.com/fsr6dbsdescription"

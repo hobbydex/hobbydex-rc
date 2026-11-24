@@ -11,6 +11,19 @@ channels = 8
 protocol = "FHSS"
 weight_g = 6.5
 dimensions_mm = [34, 21, 11.5]
-notes = "RadioLink receiver table: 8 channels; outputs PWM, PPM, S-BUS; model voltage telemetry; operating voltage 3.0V-12V; current 30mA; size 34*21*11.5mm; range ground 800 m. Works with: RC8X, RC6GS V3, RC4GS V3, RC6GS V2, RC4GS V2, RC6GS, RC4GS, T16D, T12D, T8FB(BT), T8FB(OTG), T8S(BT), T8S(OTG). RadioLink product page: Voltage Range: 4.8-10V DC; Operating Current: 30mA (based on power voltage); Antenna Length: Dual antenna, 205mm(8.07\")."
+outputs = ["PWM", "PPM", "S.BUS"]
+telemetry = ["model-voltage"]
+range_m = 800
+compatible_transmitters = ["part/radiolink/RC8X", "part/radiolink/RC6GS-V3", "part/radiolink/RC4GS-V3", "part/radiolink/RC6GS-V2", "part/radiolink/RC4GS-V2", "part/radiolink/RC6GS", "part/radiolink/RC4GS", "T16D", "T12D", "T8FB(BT)", "T8FB(OTG)", "T8S(BT)", "T8S(OTG)"]
+antenna = "dual"
+antenna_mm = 205
 documents = ["doc/radiolink/r8f", "doc/radiolink/receivers-compatible-with-transmitters"]
 protocols = ["spec/protocol/radiolink-fhss"]
+
+[sources]
+outputs = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+telemetry = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+range_m = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+compatible_transmitters = "https://www.radiolink.com/receivers_compatible_with_transmitters"
+antenna = "https://www.radiolink.com/r8f"
+antenna_mm = "https://www.radiolink.com/r8f"

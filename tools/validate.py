@@ -1077,6 +1077,72 @@ def check_charger(path, d):
     return errors
 
 
+# spec fields (docs/schema.md "Spec fields"): a category's `spec_fields` table is the spec of its parts, one entry per
+# field with its type; a field with `cite` names its page in the part's `sources`
+SPEC_FIELD_TYPES = {"int", "number", "range", "numbers", "bool", "enum", "enums", "parts", "string", "dims"}
+
+
+def spec_field_def_problems(path, d):
+    """The `spec_fields` of a category file: each entry a field, label and type, enums with their values."""
+    errors = []
+    seen = set()
+    for e in d.get("spec_fields", []):
+        if not (isinstance(e, dict) and isinstance(e.get("field"), str) and isinstance(e.get("label"), str) and e.get("type") in SPEC_FIELD_TYPES):
+            errors.append(f"{path}: spec_fields entry {e!r} needs field, label and type ({', '.join(sorted(SPEC_FIELD_TYPES))})")
+            continue
+        if e["field"] in seen:
+            errors.append(f"{path}: spec_fields lists {e['field']} twice")
+        seen.add(e["field"])
+        if (e["type"] in ("enum", "enums")) != bool(e.get("values")):
+            errors.append(f"{path}: spec_fields {e['field']}: values go with type enum or enums, and only with them")
+        if not isinstance(e.get("cite", False), bool):
+            errors.append(f"{path}: spec_fields {e['field']}: cite is true or false")
+        w = e.get("when", {})
+        if not (isinstance(w, dict) and all(isinstance(v, list) and v for v in w.values())):
+            errors.append(f"{path}: spec_fields {e['field']}: when is a table of field = [values]")
+    return errors
+
+
+def spec_field_problems(path, d, fields, ids):
+    """A part's values of its category's spec fields: the type, range and values each entry sets, only on the parts its
+    `when` names, and a `sources` page for each cited value. Fields without `cite` are older fields with their own
+    checks; only their place in the spec is declared here."""
+    errors = []
+
+    def num(x, lo, hi):
+        return isinstance(x, (int, float)) and not isinstance(x, bool) and lo <= x <= hi
+
+    srcs = d.get("sources") or {}
+    for e in fields:
+        f = e["field"]
+        if f not in d or not e.get("cite"):
+            continue
+        v, t = d[f], e["type"]
+        lo, hi = e.get("min", float("-inf")), e.get("max", float("inf"))
+        if any(d.get(k) not in vals for k, vals in e.get("when", {}).items()):
+            errors.append(f"{path}: {f} only on parts with " + " and ".join(f"{k} in {vals}" for k, vals in e["when"].items()))
+        ok = {
+            "int": lambda: isinstance(v, int) and num(v, lo, hi),
+            "number": lambda: num(v, lo, hi),
+            "range": lambda: num(v, lo, hi) or (isinstance(v, list) and len(v) == 2 and all(num(x, lo, hi) for x in v) and v[0] < v[1]),
+            "numbers": lambda: isinstance(v, list) and v and len(set(v)) == len(v) and all(num(x, lo, hi) for x in v),
+            "bool": lambda: isinstance(v, bool),
+            "enum": lambda: v in e["values"],
+            "enums": lambda: isinstance(v, list) and v and len(set(v)) == len(v) and all(x in e["values"] for x in v),
+            "parts": lambda: isinstance(v, list) and v and len(set(v)) == len(v) and all(isinstance(x, str) and x.strip() == x and x and "," not in x and (not x.startswith("part/") or x in ids) for x in v),
+            "string": lambda: isinstance(v, str) and v.strip() != "",
+            "dims": lambda: isinstance(v, list) and 2 <= len(v) <= 3 and all(num(x, 0.01, 10000) for x in v),
+        }[t]()
+        if not ok:
+            hint = {"range": "a number or [min, max]", "numbers": "a list of numbers", "enum": f"one of {e.get('values')}",
+                    "enums": f"a list of {e.get('values')}", "parts": "a list of part ids (part/...) or the maker's model codes"}.get(t, t)
+            bounds = f" ({lo}..{hi})" if "min" in e or "max" in e else ""
+            errors.append(f"{path}: {f} {v!r} should be {hint}{bounds}")
+        if f not in srcs:
+            errors.append(f"{path}: {f} needs sources.{f}, the maker's page that states it")
+    return errors
+
+
 def check_connectors(docs, ids, errors):
     """A wire part lists the plugs of a lead, adapter or harness in `connectors`, each a plug name with a connector
     spec; a part that is the plug itself is equivalent_to its connector spec instead, so it never has both
@@ -1356,7 +1422,13 @@ def main():
     product_urls = {d.get("id"): d["url"] for _, kind, d in docs if kind == "doc" and d.get("kind") == "product_page" and d.get("url")}   # a product page document's url
     placeholder_kits = {d.get("id") for _, kind, d in docs if kind == "kit" and d.get("placeholder") is True}
     kit_scale = {d.get("id"): d.get("scale") for _, kind, d in docs if kind == "kit"}
+    spec_defs = {str(d.get("id", "")).removeprefix("category/"): [e for e in d.get("spec_fields", []) if isinstance(e, dict) and e.get("type") in SPEC_FIELD_TYPES and isinstance(e.get("field"), str)]
+                 for _, kind, d in docs if kind == "category"}
     for path, kind, d in docs:
+        if kind == "category":
+            errors.extend(spec_field_def_problems(path, d))
+        if kind == "part" and spec_defs.get(d.get("category")):
+            errors.extend(spec_field_problems(path, d, spec_defs[d.get("category")], ids))
         if kind in ("kit", "release") and "scale" in d and not (isinstance(d["scale"], str) and SCALE_RE.fullmatch(d["scale"])):
             errors.append(f"{path}: scale {d['scale']!r} should be a fraction like \"1/10\"")
         if kind == "release" and "scale" in d and d["scale"] == kit_scale.get(d.get("kit")):

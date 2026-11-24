@@ -6,12 +6,21 @@ seen_by = "2025-06-12"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
+frequency_band = "2.4GHz"
+antenna = "single"
+outputs = ["PWM"]
+operating_v = [3.5, 9]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/r4m-specifications-1" },
 ]
 radio_unit = "receiver"
-notes = "Specifications (FlySky product page): Manual ; ACCESSORIES ; Product Model: FS-R4M ; Adaptive transmitters: Transmitters with ANT protocol, such as FS-G7P ; Adaptive Models: Mini/micro cars ; Numbers of Channels: 4 ; RF: 2.4GHz ISM ; Maximum Power: < 10dBm(e.i.r.p.) （EU） ; Antenna: Single Antenna ; 2.4G Protocol: ANT ; Resolution: 1024 ; Data Output: PWM ; Input Voltage Range: 3.5-9V/DC ; Online Update: Yes ; Temperature Range: -10℃ ～ +60℃ ; Humidity Limit: 20% ～ 95% ; Dimensions: 20.0*13.0*7.2mm ; Weight: 3g ; Certification: CE, FCC ID: 2A2UNR4M0"
 channels = 4
 protocol = "ANT"
 weight_g = 3
 protocols = ["spec/protocol/flysky-ant"]
+
+[sources]
+frequency_band = "https://www.flysky-cn.com/r4m-specifications-1"
+antenna = "https://www.flysky-cn.com/r4m-specifications-1"
+outputs = "https://www.flysky-cn.com/r4m-specifications-1"
+operating_v = "https://www.flysky-cn.com/r4m-specifications-1"
