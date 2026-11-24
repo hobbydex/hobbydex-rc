@@ -16,6 +16,10 @@ notes = "End of production (KO Propo product page)."
 battery = ["AAA", "LiFe", "LiPo"]
 frequency_band = "2.4GHz"
 model_memory = 50
+compatible_receivers = [
+  { part = "part/ko-propo/505021013" },
+  { name = "MINI-Z" },
+]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/10762" },
 ]
@@ -26,3 +30,4 @@ protocols = ["spec/protocol/ko-propo-xt"]
 battery = "https://www.kopropo.co.jp/en/products/view/10762"
 frequency_band = "https://www.kopropo.co.jp/en/products/view/10762"
 model_memory = "https://www.kopropo.co.jp/en/products/view/10762"
+compatible_receivers = "https://www.kopropo.co.jp/en/products/view/10762"

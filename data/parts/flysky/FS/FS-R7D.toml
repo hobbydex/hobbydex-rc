@@ -11,6 +11,9 @@ antenna = "single"
 operating_v = [3.5, 9]
 outputs = ["PWM", "PPM"]
 range_m = 300
+compatible_transmitters = [
+  { part = "part/flysky/FS-G7P", note = "Surface transmitters with ANT protocol" },
+]
 links = [
   { site = "FlySky", url = "https://www.flysky-cn.com/r7dspecifications" },
 ]
@@ -26,3 +29,4 @@ antenna = "https://www.flysky-cn.com/r7dspecifications"
 operating_v = "https://www.flysky-cn.com/r7dspecifications"
 outputs = "https://www.flysky-cn.com/r7dspecifications"
 range_m = "https://www.flysky-cn.com/r7dspecifications"
+compatible_transmitters = "https://www.flysky-cn.com/r7dspecifications"

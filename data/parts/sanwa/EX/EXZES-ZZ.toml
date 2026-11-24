@@ -15,8 +15,17 @@ related = [
   { part = "part/sanwa/RX-471", relation = "use-with" },
 ]
 notes = "Sanwa radio: RF modes FH4, FH3; compatible receivers RX-482, RX-481, RX-472, RX-471."
+compatible_receivers = [
+  { part = "part/sanwa/RX-482" },
+  { part = "part/sanwa/RX-481" },
+  { part = "part/sanwa/RX-472" },
+  { part = "part/sanwa/RX-471" },
+]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/propo/exzes_zz.html" },
 ]
 documents = ["doc/sanwa/exzes-zz-eng-manual-c"]
 protocols = ["spec/protocol/sanwa-fh4", "spec/protocol/sanwa-fh3"]
+
+[sources]
+compatible_receivers = "https://www.sanwa-denshi.com/rc/car/propo/exzes_zz.html"

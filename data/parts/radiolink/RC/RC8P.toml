@@ -19,7 +19,7 @@ latency_ms = [3, 4, 14]
 operating_v = [3.4, 4.2]
 model_memory = 30
 outputs = ["PWM", "S.BUS", "PPM"]
-compatible_receivers = ["part/radiolink/R8FG", "part/radiolink/R16F", "R16SM", "part/radiolink/R12F", "part/radiolink/R8FGH", "part/radiolink/R8EF", "part/radiolink/R8FM", "R8SM", "part/radiolink/R8XM", "part/radiolink/R7FG", "part/radiolink/R6FG", "part/radiolink/R6F", "part/radiolink/R4FGM"]
+compatible_receivers = [{ part = "part/radiolink/R8FG", note = "Standard" }, { part = "part/radiolink/R16F" }, { name = "R16SM" }, { part = "part/radiolink/R12F" }, { part = "part/radiolink/R8FGH" }, { part = "part/radiolink/R8EF" }, { part = "part/radiolink/R8FM" }, { name = "R8SM" }, { part = "part/radiolink/R8XM" }, { part = "part/radiolink/R7FG" }, { part = "part/radiolink/R6FG" }, { part = "part/radiolink/R6F" }, { part = "part/radiolink/R4FGM" }]
 battery = ["18650"]
 battery_included = true
 antenna = "built-in"
@@ -33,7 +33,7 @@ latency_ms = "https://www.radiolink.com/comparison_of_surface_transmitters"
 operating_v = "https://www.radiolink.com/comparison_of_surface_transmitters"
 model_memory = "https://www.radiolink.com/comparison_of_surface_transmitters"
 outputs = "https://www.radiolink.com/comparison_of_surface_transmitters"
-compatible_receivers = "https://www.radiolink.com/comparison_of_surface_transmitters"
+compatible_receivers = "https://www.radiolink.com/rc8p_specs"
 battery = "https://www.radiolink.com/rc8p_specs"
 battery_included = "https://www.radiolink.com/rc8p_specs"
 antenna = "https://www.radiolink.com/rc8p_specs"

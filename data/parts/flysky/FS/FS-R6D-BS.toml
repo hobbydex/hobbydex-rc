@@ -6,7 +6,7 @@ seen_by = "2025-03-12"
 seen_by_source = "https://www.flysky-cn.com/sitemap.xml"
 category = "radio"
 category_source = "curated"
-compatible_transmitters = ["part/flysky/FS-MG6-BS"]
+compatible_transmitters = [{ part = "part/flysky/FS-MG6-BS" }]
 frequency_band = "2.4GHz"
 operating_v = [3.5, 8.4]
 outputs = ["PWM"]

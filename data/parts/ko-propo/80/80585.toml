@@ -17,7 +17,7 @@ includes = [
 ]
 battery = ["AAA"]
 model_memory = 40
-compatible_receivers = ["KR-413FH", "KR-241FH", "KR-211FH", "KR-212FHG"]
+compatible_receivers = [{ part = "part/ko-propo/21007" }, { part = "part/ko-propo/21008" }, { part = "part/ko-propo/21005" }, { part = "part/ko-propo/21006" }, { part = "part/ko-propo/21009" }]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/80585" },
 ]

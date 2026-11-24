@@ -16,5 +16,11 @@ includes = [
   { part = "part/radiolink/R7FG", qty = 1, source = "doc/radiolink/rc6gsv2" },
 ]
 radio_unit = "set"
+compatible_receivers = [
+  { part = "part/radiolink/RC6GS-V2" },
+]
 documents = ["doc/radiolink/rc6gsv2", "doc/radiolink/rc6gsv2-manual", "doc/radiolink/comparison-of-surface-transmitters"]
 protocols = ["spec/protocol/radiolink-fhss"]
+
+[sources]
+compatible_receivers = "https://www.radiolink.com/rc6gsv2"

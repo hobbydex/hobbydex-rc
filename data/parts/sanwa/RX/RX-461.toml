@@ -11,6 +11,9 @@ protocol = "FH4"
 channels = 4
 weight_g = 9.6
 frequency_band = "2.4GHz"
+compatible_transmitters = [
+  { name = "MT-4" },
+]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/receiver/rx-461.html" },
 ]
@@ -18,3 +21,4 @@ protocols = ["spec/protocol/sanwa-fh4"]
 
 [sources]
 frequency_band = "https://www.sanwa-denshi.com/rc/car/receiver/rx-461.html"
+compatible_transmitters = "https://www.sanwa-denshi.com/rc/car/receiver/rx-461.html"

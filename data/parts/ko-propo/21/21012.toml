@@ -15,7 +15,7 @@ dimensions_mm = [27, 28, 15]
 weight_g = 7
 operating_v = [3, 6.6]
 frequency_band = "2.4GHz"
-compatible_transmitters = ["MC-8"]
+compatible_transmitters = [{ part = "part/ko-propo/500501041" }]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/21012" },
 ]

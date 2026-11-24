@@ -15,7 +15,7 @@ outputs = ["PWM"]
 gyro = true
 operating_v = [4.8, 10]
 range_m = 280
-compatible_transmitters = ["part/radiolink/RC4G", "part/radiolink/RC3S"]
+compatible_transmitters = [{ part = "part/radiolink/RC4G" }, { part = "part/radiolink/RC3S" }]
 documents = ["doc/radiolink/receivers-compatible-with-transmitters"]
 protocols = ["spec/protocol/radiolink-fhss"]
 

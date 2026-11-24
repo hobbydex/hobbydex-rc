@@ -13,6 +13,13 @@ dimensions_mm = [36.5, 24, 14.5]
 weight_g = 9
 frequency_band = "2.4GHz"
 operating_v = [4.8, 7.4]
+compatible_transmitters = [
+  { name = "M11X" },
+  { name = "EXZES X" },
+  { name = "MT-4" },
+  { name = "MX-3X" },
+  { name = "GEMINI X" },
+]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/receiver/rx-451.html" },
 ]
@@ -21,3 +28,4 @@ protocols = ["spec/protocol/sanwa-fh3"]
 [sources]
 frequency_band = "https://www.sanwa-denshi.com/rc/car/receiver/rx-451.html"
 operating_v = "https://www.sanwa-denshi.com/rc/car/receiver/rx-451.html"
+compatible_transmitters = "https://www.sanwa-denshi.com/rc/car/receiver/rx-451.html"

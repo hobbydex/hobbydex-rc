@@ -13,7 +13,7 @@ dimensions_mm = [23, 23.2, 14]
 weight_g = 5.3
 frequency_band = "2.4GHz"
 operating_v = [3.7, 7.4]
-compatible_transmitters = ["part/sanwa/M17"]
+compatible_transmitters = [{ part = "part/sanwa/M17" }]
 links = [
   { site = "Sanwa", url = "https://www.sanwa-denshi.com/rc/car/receiver/rx-491.html" },
   { site = "Red RC", url = "https://www.redrc.net/2018/05/sanwa-m17-radio-system-more-images/", kind = "press" },

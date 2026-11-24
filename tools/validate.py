@@ -1129,13 +1129,17 @@ def spec_field_problems(path, d, fields, ids):
             "bool": lambda: isinstance(v, bool),
             "enum": lambda: v in e["values"],
             "enums": lambda: isinstance(v, list) and v and len(set(v)) == len(v) and all(x in e["values"] for x in v),
-            "parts": lambda: isinstance(v, list) and v and len(set(v)) == len(v) and all(isinstance(x, str) and x.strip() == x and x and "," not in x and (not x.startswith("part/") or x in ids) for x in v),
+            "parts": lambda: isinstance(v, list) and v and all(
+                isinstance(x, dict) and set(x) <= {"part", "name", "note"} and (("part" in x) != ("name" in x))
+                and (x.get("part") in ids if "part" in x else isinstance(x["name"], str) and x["name"].strip() == x["name"] != "" and "," not in x["name"])
+                and (isinstance(x.get("note", ""), str) and x.get("note", "x").strip() != "") for x in v)
+                and len({(x.get("part") or x.get("name"), x.get("note")) for x in v if isinstance(x, dict)}) == len(v),
             "string": lambda: isinstance(v, str) and v.strip() != "",
             "dims": lambda: isinstance(v, list) and 2 <= len(v) <= 3 and all(num(x, 0.01, 10000) for x in v),
         }[t]()
         if not ok:
             hint = {"range": "a number or [min, max]", "numbers": "a list of numbers", "enum": f"one of {e.get('values')}",
-                    "enums": f"a list of {e.get('values')}", "parts": "a list of part ids (part/...) or the maker's model codes"}.get(t, t)
+                    "enums": f"a list of {e.get('values')}", "parts": "a list of rows { part = <existing part id> } or { name = <the maker's model code> }, each with an optional note"}.get(t, t)
             bounds = f" ({lo}..{hi})" if "min" in e or "max" in e else ""
             errors.append(f"{path}: {f} {v!r} should be {hint}{bounds}")
         if f not in srcs:

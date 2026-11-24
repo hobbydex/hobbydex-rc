@@ -16,6 +16,9 @@ battery = ["AAA", "NiMH", "LiFe", "LiPo"]
 battery_included = false
 frequency_band = "2.4GHz"
 model_memory = 50
+compatible_receivers = [
+  { part = "part/ko-propo/505021013" },
+]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/10663" },
 ]
@@ -27,3 +30,4 @@ battery = "https://www.kopropo.co.jp/en/products/view/10663"
 battery_included = "https://www.kopropo.co.jp/en/products/view/10663"
 frequency_band = "https://www.kopropo.co.jp/en/products/view/10663"
 model_memory = "https://www.kopropo.co.jp/en/products/view/10663"
+compatible_receivers = "https://www.kopropo.co.jp/en/products/view/10663"

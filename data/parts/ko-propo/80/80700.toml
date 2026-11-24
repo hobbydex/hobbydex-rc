@@ -12,7 +12,7 @@ channels = 4
 protocol = "FHSS"
 weight_g = 637.2
 notes = "End of production (KO Propo product page)."
-compatible_receivers = ["KR-418FH", "415FHD", "241FH", "211FH", "212FHG", "413FH", "411FH"]
+compatible_receivers = [{ part = "part/ko-propo/21011" }, { name = "415FHD" }, { name = "241FH" }, { name = "211FH" }, { name = "212FHG" }, { name = "413FH" }, { name = "411FH" }]
 frequency_band = "2.4GHz"
 battery = ["NiMH", "LiPo", "LiFe"]
 links = [

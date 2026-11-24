@@ -12,7 +12,7 @@ protocol = "MX-F"
 weight_g = 145.5
 battery = ["AAA"]
 frequency_band = "2.4GHz"
-compatible_receivers = ["MR-8"]
+compatible_receivers = [{ part = "part/ko-propo/21012" }, { name = "MR-8 MR" }]
 operating_v = [3, 7.4]
 links = [
   { site = "KO Propo", url = "https://www.kopropo.co.jp/en/products/view/80710" },

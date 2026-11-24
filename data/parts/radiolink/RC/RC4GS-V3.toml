@@ -18,7 +18,7 @@ range_m = 400
 latency_ms = [14]
 model_memory = 30
 outputs = ["PWM", "S.BUS", "PPM"]
-compatible_receivers = ["part/radiolink/R6FG", "R16SM", "part/radiolink/R16F", "part/radiolink/R12F", "part/radiolink/R8FGH", "part/radiolink/R8EF", "part/radiolink/R8FG", "part/radiolink/R7FG", "part/radiolink/R6F", "part/radiolink/R4FGM"]
+compatible_receivers = [{ part = "part/radiolink/R6FG", note = "Standard" }, { name = "R16SM" }, { part = "part/radiolink/R16F" }, { part = "part/radiolink/R12F" }, { part = "part/radiolink/R8FGH" }, { part = "part/radiolink/R8EF" }, { part = "part/radiolink/R8FG" }, { part = "part/radiolink/R7FG" }, { part = "part/radiolink/R6F" }, { part = "part/radiolink/R4FGM" }]
 antenna_mm = 106
 documents = ["doc/radiolink/rc4gsv3", "doc/radiolink/rc4gsv3-specifications", "doc/radiolink/rc4gsv3-manual", "doc/radiolink/comparison-of-surface-transmitters"]
 protocols = ["spec/protocol/radiolink-fhss"]
@@ -28,5 +28,5 @@ range_m = "https://www.radiolink.com/comparison_of_surface_transmitters"
 latency_ms = "https://www.radiolink.com/comparison_of_surface_transmitters"
 model_memory = "https://www.radiolink.com/comparison_of_surface_transmitters"
 outputs = "https://www.radiolink.com/comparison_of_surface_transmitters"
-compatible_receivers = "https://www.radiolink.com/comparison_of_surface_transmitters"
+compatible_receivers = "https://www.radiolink.com/rc4gsv3_specifications"
 antenna_mm = "https://www.radiolink.com/rc4gsv3_specifications"
