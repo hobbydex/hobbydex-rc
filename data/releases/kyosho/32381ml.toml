@@ -9,7 +9,7 @@ released_source = "https://rc.kyosho.com/en/newitem/32381ml.html"
 kind = "rtr"
 power = "brushless"
 power_source = "part/kyosho/MZ704"
-status = "announced"
+status = "released"
 gtin = "4548565527816"
 dimensions = { length_mm = 171, width_mm = 78.2, height_mm = 48, wheelbase_mm = 90, track_front_mm = 63.5, weight_g = 173.7, source = "https://rc.kyosho.com/en/32381ml.html" }
 documents = ["doc/kyosho/32381ml-product-page", "doc/kyosho/32890-mini-z-mr-04evo2-spare-and-option-parts", "doc/kyosho/32890-mini-z-mr-04evo2-manual", "doc/kyosho/youtube-D5TgenkUdpE"]
@@ -98,3 +98,6 @@ contains = [
   { part = "part/kyosho/MZW126", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
   { part = "part/kyosho/MZW127", role = "listed", source = "doc/kyosho/32890-mini-z-mr-04evo2-manual" },
 ]
+
+[sources]
+status = "https://rc.kyosho.com/en/32381ml.html"
